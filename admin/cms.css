@@ -52,7 +52,15 @@ hr { border: 0; border-top: 1px solid var(--line); margin: 1rem 0; }
 .chip { display: inline-block; padding: .08rem .5rem; border-radius: 99px; font-size: .72rem; font-weight: 700; margin-right: .2rem; background: #e8e4de; color: #4d4640; }
 .chip.ok { background: #d6efdc; color: var(--ok); }
 .chip.off { background: #ebe7e1; color: #8a837b; }
-.chip.warn, .chip.hid { text-decoration: line-through; }
+.chip.warn, .rv-parts { list-style: none; margin: .4rem 0 0; padding: 0; }
+.rv-parts li { display: flex; gap: .6rem; align-items: center; padding: .35rem 0; border-bottom: 1px solid var(--line, #e6e1da); flex-wrap: wrap; }
+.rv-parts li > span { flex: 1 1 14rem; }
+.rv-table td { vertical-align: top; }
+.rv-old { color: #6b645e; }
+.rv-new { font-weight: 600; }
+.rv-warn { color: #b3261e; font-size: .85rem; }
+.rv-table tr.is-warn { background: rgba(179, 38, 30, .05); }
+.chip.hid { text-decoration: line-through; }
 .vis { margin: 0 0 1rem; padding: .7rem 1rem; }
 .vis summary { cursor: pointer; }
 .vis-table { margin-top: .5rem; }

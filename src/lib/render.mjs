@@ -155,7 +155,7 @@ function renderCards(ctx, b) {
     const text = it.text || ctx.edit ? `<p class="card__text"${editFld(ctx, `items.${idx}.text`)}>${esc(it.text || "")}</p>` : "";
     return `<li class="card"><a class="card__link" href="${esc(href)}">` +
       (img ? `<span class="card__media">${img}</span>` : "") +
-      `<span class="card__body"><h3 class="card__title"${editFld(ctx, `items.${idx}.title`)}>${esc(title)}</h3>${text}<span class="card__more">${esc(ctx.ui.read_more || "Läs mer")}${ICON.arrow}</span></span></a></li>`;
+      `<span class="card__body"><h${ctx._cardLevel || 3} class="card__title"${editFld(ctx, `items.${idx}.title`)}>${esc(title)}</h${ctx._cardLevel || 3}>${text}<span class="card__more">${esc(ctx.ui.read_more || "Läs mer")}${ICON.arrow}</span></span></a></li>`;
   }).join("");
   return `<ul class="cards">${items}</ul>`;
 }
@@ -399,8 +399,11 @@ export function renderBlocks(ctx, blocks) {
     prose = [];
   };
   const list = blocks || [];
+  let seenHeading = false; // card titles are h2 until the page has had a heading of its own, then h3 (no skipped levels)
   for (let i = 0; i < list.length; i++) {
     const b = list[i];
+    ctx._cardLevel = seenHeading ? 3 : 2;
+    if (b.type === "heading" || b.type === "datasheet" || (b.type === "button" && b.kind === "download")) seenHeading = true;
     if (b.type === "image") { imgRun.push(b); continue; }
     flushImgs();
     if (b.type === "button" && b.kind === "download") {

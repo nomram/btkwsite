@@ -101,7 +101,7 @@ try {
   // ----- existing page: tagging, selection, inline edit, toolbar, undo -----
   await ev(`window.__bkcms.state.ed = null; document.querySelector('tr[data-edit="/produkter/tei/topphammare/te760"]').click(); 1`);
   const ready = await ev(`(async () => !!(await __until(() => __doc() && __doc().getElementById("bk-ov") && __doc().querySelectorAll("[data-bk-i]").length > 0, 20000)))()`);
-  check("editor opens with tagged blocks", ready);
+  check("editor opens with tagged blocks", ready, ready ? "" : JSON.stringify(await ev(`({ href: location.href, frame: !!document.querySelector("iframe"), ed: !!(window.__bkcms.state.ed), blocks: document.querySelector("iframe") && document.querySelector("iframe").contentDocument ? document.querySelector("iframe").contentDocument.querySelectorAll("[data-bk-i]").length : -1, ov: !!(document.querySelector("iframe") && document.querySelector("iframe").contentDocument && document.querySelector("iframe").contentDocument.getElementById("bk-ov")) })`)));
   const tagged = await ev(`(() => { const idx = new Set([...__doc().querySelectorAll("[data-bk-i]")].map((e) => e.dataset.bkI)); return { tagged: idx.size, model: __blocks().length }; })()`);
   check("every block is tagged in the canvas", tagged.tagged === tagged.model, JSON.stringify(tagged));
   check("fields are editable", (await ev(`__doc().querySelectorAll("[contenteditable]").length`)) > 3);
@@ -139,12 +139,12 @@ try {
 
   // block toolbar: move down
   const order0 = await ev(`JSON.stringify(__blocks())`);
-  await ev(`__doc().querySelector("[data-bk-i='0']").click(); 1`);
-  await sleep(250);
+  await ev(`(async () => { for (let k = 0; k < 8; k++) { __doc().querySelector("[data-bk-i='0']").click(); if (await __until(() => __ed().sel === 0 && __doc().querySelector("#bk-ov .bk-tb button[data-a='down']"), 1500)) return 1; } return 0; })()`);
   await ev(`__doc().querySelector("#bk-ov .bk-tb button[data-a='down']").click(); 1`);
   await sleep(500);
   const order1 = await ev(`JSON.stringify(__blocks())`);
-  check("toolbar ↓ reorders blocks", order0 !== order1);
+  const dbg = await ev(`JSON.stringify({ sel: __ed().sel, tb: !!__doc().querySelector("#bk-ov .bk-tb"), btn: !!__doc().querySelector("#bk-ov .bk-tb button[data-a=down]"), n: __blocks().length, types: __blocks().slice(0, 4).map((b) => b.type) })`);
+  check("toolbar ↓ reorders blocks", order0 !== order1, dbg);
   await ev(`document.getElementById("ve-undo").click(); 1`);
   await sleep(500);
   check("undo after move", (await ev(`JSON.stringify(__blocks())`)) === order0);
@@ -301,6 +301,43 @@ try {
     const sent = calls.slice(callsBefore).flatMap((b) => JSON.parse(b.messages[b.messages.length - 1].content).strings || []);
     return sent.length >= 1 && sent.length <= 2 && sent.some((s) => s.includes("Ny svensk text"));
   })());
+
+  // translation review round trip: export -> (another LLM corrects) -> import
+  await ev(`document.querySelector('[data-view="review"]').click(); 1`);
+  await sleep(500);
+  check("review view opens", (await ev(`!!document.getElementById("rv-make")`)));
+  const exported = await ev(`(() => { const f = __bkcms.review.buildFiles("en", { scope: "all", includeUi: true, chunk: 0 })[0]; return JSON.stringify(f); })()`);
+  const ex = JSON.parse(exported);
+  const mine = ex.units.filter((u) => u.id.startsWith("/zz-editor-test|"));
+  check("export has instructions, glossary and the page's units", ex.format === "betongakuten-translation-review/1" && /Never change "id"/.test(ex.instructions) && Array.isArray(ex.keepUntranslated) && mine.length >= 2, JSON.stringify({ n: mine.length }));
+  check("export carries fixed UI texts", ex.ui && Object.keys(ex.ui).length > 20);
+  // the "other LLM" corrects one string and breaks the tags of another
+  const fixed = JSON.parse(exported);
+  // only this test page goes back: the import marks every page in the file as reviewed
+  fixed.units = fixed.units.filter((u) => u.id.startsWith("/zz-editor-test|"));
+  delete fixed.ui;
+  const tgt = fixed.units.find((u) => u.id.startsWith("/zz-editor-test|"));
+  tgt.target = "Checked by the second reviewer.";
+  const second = fixed.units.filter((u) => u.id.startsWith("/zz-editor-test|"))[1];
+  const origSecond = second.target;
+  second.target = "<a href=\"https://example.com\">Injected link</a> " + origSecond;
+  await ev(`(() => { document.getElementById("rv-paste").value = ${JSON.stringify(JSON.stringify(fixed))}; document.getElementById("rv-read").click(); })()`);
+  await sleep(600);
+  check("import shows the changes before saving", (await ev(`document.querySelectorAll("#rv-result input[data-i]").length`)) >= 2);
+  check("a change that breaks HTML tags is flagged and unticked", (await ev(`document.querySelectorAll("#rv-result tr.is-warn input[data-i]:not(:checked)").length`)) >= 1);
+  const stillBefore = JSON.parse(fs.readFileSync(file, "utf8"));
+  check("nothing is written before applying", !/Checked by the second reviewer/.test(JSON.stringify(stillBefore.i18n.en)));
+  await ev(`document.getElementById("rv-apply").click(); 1`);
+  await sleep(1500);
+  const after = JSON.parse(fs.readFileSync(file, "utf8"));
+  check("approved change is saved to the page", /Checked by the second reviewer/.test(JSON.stringify(after.i18n.en)));
+  check("flagged change was not applied", !/Injected link/.test(JSON.stringify(after.i18n.en)));
+  check("page is marked as reviewed", after.i18nMeta && after.i18nMeta.en && after.i18nMeta.en.mode === "reviewed" && !after.i18n.en.noindex);
+  // back to the editor so the cleanup below can delete the page
+  await ev(`document.querySelector('[data-view="pages"]').click(); 1`);
+  await sleep(500);
+  await ev(`document.querySelector('tr[data-edit="/zz-editor-test"]').click(); 1`);
+  await sleep(1500);
 
   // cleanup: delete the test page through the UI
   await ev(`document.getElementById("ve-del").click(); 1`);

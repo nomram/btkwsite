@@ -9,6 +9,7 @@ import { openEditor, closeEditor, newPageDraft } from "./editor.js";
 import * as ai from "./ai.js";
 import { langStatus, srcLang } from "./editor-model.js";
 import { isHidden } from "./visibility.mjs";
+import { viewReview } from "./review.js";
 
 const app = $("#app");
 
@@ -334,6 +335,7 @@ function viewHelp() {
 views.pages = viewPages;
 views.settings = viewSettings;
 views.translations = viewTranslations;
+views.review = () => viewReview(app, navUI);
 views.help = viewHelp;
 
 $("#nav").addEventListener("click", (e) => {
