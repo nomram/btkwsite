@@ -7,7 +7,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import crypto from "node:crypto";
-import { renderDocument, renderNotFound, esc } from "./lib/render.mjs";
+import { renderDocument, renderNotFound, esc, flatBlocks } from "./lib/render.mjs";
 import { applyBasePath } from "./lib/apply-base.mjs";
 
 const ROOT = path.resolve(import.meta.dirname, "..");
@@ -250,7 +250,7 @@ for (const lang of languages) {
     rendered++;
     sitemapEntries.push({ p, lang, updated: page.updated || null });
     {
-      const text = (t.blocks || []).flatMap((b) => {
+      const text = flatBlocks(t.blocks).flatMap((b) => {
         if (b.type === "text") return [b.html];
         if (b.type === "heading") return [b.text];
         if (b.type === "list") return b.items;

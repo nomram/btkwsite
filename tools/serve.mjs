@@ -165,16 +165,23 @@ http.createServer(async (req, res) => {
     if (url.pathname.startsWith("/__cms/")) return await cms(req, res, url);
     const af = adminFile(url.pathname);
     if (af) {
+      let body;
+      try { body = fs.readFileSync(af); } catch { res.writeHead(503); return res.end("busy"); }
       res.writeHead(200, { "content-type": MIME[path.extname(af).toLowerCase()] || "application/octet-stream", "cache-control": "no-store" });
-      return fs.createReadStream(af).pipe(res);
+      return res.end(body);
     }
     let file = resolveFile(url.pathname);
     let status = 200;
     if (!file) { file = path.join(DIST, "404.html"); status = 404; }
     if (!fs.existsSync(file)) { res.writeHead(503); return res.end("building…"); }
     const ext = path.extname(file).toLowerCase();
-    res.writeHead(status, { "content-type": MIME[ext] || "application/octet-stream", "cache-control": "no-cache" });
-    fs.createReadStream(file).pipe(res);
+    const stream = fs.createReadStream(file);
+    stream.on("open", () => {
+      res.writeHead(status, { "content-type": MIME[ext] || "application/octet-stream", "cache-control": "no-cache" });
+      stream.pipe(res);
+    });
+    // the file can vanish while a rebuild replaces dist/: answer instead of hanging
+    stream.on("error", () => { if (!res.headersSent) { res.writeHead(503); res.end("building…"); } else res.destroy(); });
   } catch (e) {
     res.writeHead(500); res.end(String(e && e.message || e));
   }

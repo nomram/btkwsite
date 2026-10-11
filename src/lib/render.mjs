@@ -23,8 +23,14 @@ export const telHref = (v) => {
 // ---------- edit mode (CMS visual editor only; the build never sets ctx.edit) ----------
 // Every rendered block gets data-bk-i / data-bk-type on its top-level element(s) and
 // every editable text gets data-bk-field, so the editor can map clicks back to the content model.
+// ctx._fp is the field-path prefix while rendering blocks nested inside a "columns" block ("left.2.")
 const editFld = (ctx, name, kind = "plain", ph = "") =>
-  ctx.edit ? ` data-bk-field="${esc(name)}" data-bk-kind="${kind}"${ph ? ` data-bk-ph="${esc(ph)}"` : ""}` : "";
+  ctx.edit ? ` data-bk-field="${esc((ctx._fp || "") + name)}" data-bk-kind="${kind}"${ph ? ` data-bk-ph="${esc(ph)}"` : ""}` : "";
+
+// Blocks with the contents of "columns" blocks spliced in (search index, description, share image)
+export function flatBlocks(blocks) {
+  return (blocks || []).flatMap((b) => (b && b.type === "columns" ? flatBlocks([...(b.left || []), ...(b.right || [])]) : [b]));
+}
 const VOID_TAGS = new Set(["img", "br", "hr", "input", "meta", "link", "source", "area", "base", "col", "embed", "param", "track", "wbr"]);
 function tagTop(html, attrs) {
   let depth = 0, out = "", last = 0, m;
@@ -47,6 +53,7 @@ function blockIsEmpty(b) {
     case "chips": case "list": return !(b.items || []).some(Boolean);
     case "cta": return !b.title;
     case "html": return !(b.html || "").trim();
+    case "columns": return !((b.left || []).length || (b.right || []).length);
     case "heading": case "text": return false;
     default: return false;
   }
@@ -230,6 +237,31 @@ function renderDoc(ctx, b) {
     `<a class="btn btn--sm btn--ghost" href="${esc(dl)}"${external ? ' rel="noopener"' : " download"}>${ICON.down}<span>${esc(ctx.ui.download || "Ladda ner")}</span><span class="sr-only"> ${esc(b.text)}</span></a></div></li>`;
 }
 
+// Two-column section: left / right hold ordinary blocks. ratio: "60-40" (default), "40-60", "50-50", "between".
+function renderColumns(ctx, b) {
+  const side = (key) => (b[key] || []).map((nb, j) => {
+    const prev = ctx._fp;
+    ctx._fp = `${prev || ""}${key}.${j}.`;
+    try { return renderBlockInner(ctx, nb); } finally { ctx._fp = prev; }
+  }).join("\n");
+  const ratio = ["60-40", "40-60", "50-50", "between"].includes(b.ratio) ? b.ratio : "60-40";
+  return `<div class="cols cols--${ratio}${b.valign === "center" ? " cols--center" : ""}"><div class="cols__a">${side("left")}</div><div class="cols__b">${side("right")}</div></div>`;
+}
+
+const SOCIAL_ICON = {
+  facebook: '<svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="#fff" d="M13.5 21v-8h2.7l.5-3.2h-3.2V7.8c0-.9.4-1.6 1.7-1.6h1.6V3.4c-.3 0-1.3-.1-2.4-.1-2.5 0-4.1 1.5-4.1 4.2v2.3H7.6V13h2.7v8z"/></svg>',
+  instagram: '<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#fff" stroke-width="1.9" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="4.5"/><circle cx="12" cy="12" r="3.6"/><circle cx="16.8" cy="7.2" r=".7" fill="#fff"/></svg>',
+  linkedin: '<svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="#fff" d="M5.2 9.4h3.1V19H5.2zM6.8 4.6a1.8 1.8 0 1 1 0 3.6 1.8 1.8 0 0 1 0-3.6zM10.4 9.4h3v1.3c.5-.8 1.5-1.5 3-1.5 3.1 0 3.7 2 3.7 4.700V19H17v-4.600c0-1.100 0-2.500-1.500-2.500s-1.800 1.200-1.800 2.400V19h-3.300z"/></svg>'
+};
+function renderSocial(ctx) {
+  const items = (ctx.site.social || []).map((s) => {
+    const key = String(s.name || "").toLowerCase();
+    const icon = SOCIAL_ICON[key];
+    return `<a class="social__icon social__icon--${esc(key)}" href="${esc(s.url)}" rel="noopener me" target="_blank" aria-label="${esc(s.name)}">${icon || esc(String(s.name || "").slice(0, 1))}</a>`;
+  }).join("");
+  return items ? `<p class="social">${items}</p>` : "";
+}
+
 export function renderBlock(ctx, b) {
   const html = renderBlockInner(ctx, b);
   if (!ctx.edit || b.__i == null) return html;
@@ -260,13 +292,15 @@ function renderBlockInner(ctx, b) {
       const external = b.external || /^https?:/.test(b.href || "");
       if (b.kind === "download") return `<ul class="docs docs--single">${renderDoc(ctx, b)}</ul>`;
       const label = ctx.edit ? `<span${editFld(ctx, "text", "plain", "Knapptext")}>${esc(b.text)}</span>` : esc(b.text);
-      return `<p class="btn-row"><a class="btn" href="${esc(external ? b.href : localizeHref(ctx, b.href))}"${external ? ' target="_blank" rel="noopener"' : ""}>${label}${ICON.arrow}</a></p>`;
+      return `<p class="btn-row"><a class="btn${b.full ? " btn--block" : ""}" href="${esc(external ? b.href : localizeHref(ctx, b.href))}"${external ? ' target="_blank" rel="noopener"' : ""}>${label}${b.full ? "" : ICON.arrow}</a></p>`;
     }
     case "cards": return renderCards(ctx, b);
     case "video": return renderVideo(ctx, b);
     case "table": return renderTable(ctx, b);
     case "datasheet": return renderDatasheet(ctx, b);
     case "contact": return renderContact(ctx);
+    case "columns": return renderColumns(ctx, b);
+    case "social": return renderSocial(ctx);
     case "chips": return renderChips(ctx, b);
     case "cta": return renderCta(ctx, b);
     case "html": return b.html || "";
@@ -304,6 +338,7 @@ export function renderBlocks(ctx, blocks) {
       continue;
     }
     if (b.type === "cta" || b.type === "datasheet" && false) { flushProse(); out.push(renderBlock(ctx, b)); continue; }
+    if (b.type === "columns" || b.type === "social") { flushProse(); out.push(`<div class="container prose sect">${renderBlock(ctx, b)}</div>`); continue; }
     prose.push(renderBlock(ctx, b));
   }
   flushProse();
@@ -352,6 +387,16 @@ function renderLangSwitch(ctx, path) {
       `<img src="${flagSrc(code)}" alt="" width="22" height="15"><span>${esc(label(code))}</span></a></li>`).join("")}</ul></details>`;
 }
 
+// brand logos come from a section's own listing cards (so the CMS keeps them in sync)
+function brandLogoMap(ctx, root) {
+  const rootT = ctx.tr(root, ctx.lang) || ctx.tr(root, ctx.defaultLang);
+  const logos = new Map();
+  for (const b of (rootT && rootT.blocks) || []) {
+    if (b.type === "cards") for (const it of b.items) if (it.image && !logos.has(it.href)) logos.set(it.href, it.image);
+  }
+  return logos;
+}
+
 function renderHeader(ctx, current) {
   const site = ctx.site;
   const navPaths = (site.nav && site.nav.length ? site.nav : []).filter((p) => ctx.pages.has(p) && (ctx.tr(p, ctx.lang) || ctx.tr(p, ctx.defaultLang)));
@@ -361,14 +406,18 @@ function renderHeader(ctx, current) {
     const label = navTitleOf(ctx, p);
     const link = `<a href="${esc(ctx.url(p))}"${active && current === p ? ' aria-current="page"' : ""}>${esc(label)}</a>`;
     if (!kids.length || !(site.megaMenu !== false)) return `<li class="nav__item${active ? " is-active" : ""}">${link}</li>`;
-    const cols = kids.map((k) => {
-      const sub = ctx.children(k).filter((c) => ctx.tr(c, ctx.lang) || ctx.tr(c, ctx.defaultLang));
-      return `<div class="mega__col"><a class="mega__brand" href="${esc(ctx.url(k))}">${esc(navTitleOf(ctx, k))}</a>` +
-        (sub.length ? `<ul>${sub.map((s) => `<li><a href="${esc(ctx.url(s))}">${esc(navTitleOf(ctx, s))}</a></li>`).join("")}</ul>` : "") + `</div>`;
+    // dropdown = the brand logos straight away (a row that follows the mouse sideways), no section label
+    const logos = brandLogoMap(ctx, p);
+    const tiles = kids.map((k) => {
+      const src = (ctx.pages.get(k) && ctx.pages.get(k).logo) || logos.get(k);
+      const name = navTitleOf(ctx, k);
+      return `<li><a class="logorow__item" href="${esc(ctx.url(k))}">` +
+        (src ? `<span class="logorow__img">${imgTag(ctx, src, name, { cls: "logorow__logo", sizes: "160px" })}</span>` : "") +
+        `<span class="logorow__name">${esc(name)}</span></a></li>`;
     }).join("");
     return `<li class="nav__item nav__item--mega${active ? " is-active" : ""}">${link}` +
       `<button class="nav__toggle" type="button" aria-expanded="false" aria-label="${esc(ctx.ui.submenu || "Visa undermeny")}: ${esc(label)}">${ICON.chevron}</button>` +
-      `<div class="mega"><div class="container mega__grid">${cols}</div></div></li>`;
+      `<div class="mega mega--logos"><div class="container"><ul class="logorow" data-scrub>${tiles}</ul></div></div></li>`;
   }).join("");
   return `<header class="site-header" data-header><div class="container site-header__inner">` +
     `<a class="logo" href="${esc(ctx.url("/"))}" aria-label="${esc(site.name)} – ${esc(ctx.ui.home || "Startsida")}"><img src="/assets/brand/logo.svg" alt="${esc(site.name)}" width="150" height="38"></a>` +
@@ -391,11 +440,7 @@ function renderSubnav(ctx, current) {
   const act1 = l1.find((p) => isUnder(current, p));
   const link = (p, cur, extra = "") => `<li><a class="subnav__link${cur ? " is-current" : ""}${extra}" href="${esc(ctx.url(p))}"${cur ? ' aria-current="true"' : ""}>${esc(navTitleOf(ctx, p))}</a></li>`;
   // brand logos come from the section's own listing cards (so the CMS keeps them in sync)
-  const rootT = ctx.tr(root, ctx.lang) || ctx.tr(root, ctx.defaultLang);
-  const logos = new Map();
-  for (const b of (rootT && rootT.blocks) || []) {
-    if (b.type === "cards") for (const it of b.items) if (it.image && !logos.has(it.href)) logos.set(it.href, it.image);
-  }
+  const logos = brandLogoMap(ctx, root);
   const logoLink = (p, cur) => {
     const src = (ctx.pages.get(p) && ctx.pages.get(p).logo) || logos.get(p);
     const name = navTitleOf(ctx, p);
@@ -403,8 +448,8 @@ function renderSubnav(ctx, current) {
     return `<li><a class="subnav__link subnav__link--logo${cur ? " is-current" : ""}" href="${esc(ctx.url(p))}"${cur ? ' aria-current="true"' : ""}>` +
       `${imgTag(ctx, src, name, { cls: "subnav__logo", sizes: "120px" })}</a></li>`;
   };
-  const bar1 = `<nav class="subnav subnav--1" aria-label="${esc(navTitleOf(ctx, root))}"><div class="container"><ul>` +
-    `<li class="subnav__root"><a class="subnav__link${current === root ? " is-current" : ""}" href="${esc(ctx.url(root))}">${esc(navTitleOf(ctx, root))}</a></li>` +
+  // logos straight away (no "PRODUKTER" label); the row follows the mouse sideways (data-scrub)
+  const bar1 = `<nav class="subnav subnav--1" aria-label="${esc(navTitleOf(ctx, root))}"><div class="container"><ul data-scrub>` +
     l1.map((p) => logoLink(p, p === act1)).join("") + `</ul></div></nav>`;
   let bar2 = "";
   if (act1) {
@@ -471,14 +516,14 @@ export function seoTitle(ctx, page, t) {
 const clip = (s, n = 160) => (s.length <= n + 6 ? s : s.slice(0, s.lastIndexOf(" ", n - 2)).replace(/[,.;:s-]+$/, "") + "…");
 function pageDescription(ctx, page, t) {
   if (t.description && t.description.trim()) return clip(t.description.trim());
-  const first = (t.blocks || []).find((b) => b.type === "text");
+  const first = flatBlocks(t.blocks).find((b) => b.type === "text");
   const txt = first ? stripTags(first.html) : t.lead || "";
   if (txt.length > 50) return txt.length > 158 ? txt.slice(0, txt.lastIndexOf(" ", 155)) + "…" : txt;
   return `${t.h1 || t.title} – ${ctx.site.tagline || ctx.site.name}`;
 }
 
 function ogImage(ctx, page, t) {
-  const cand = (page.hero && page.hero.image) || ((t.blocks || []).find((b) => b.type === "image") || {}).src
+  const cand = (page.hero && page.hero.image) || (flatBlocks(t.blocks).find((b) => b.type === "image") || {}).src
     || ((t.blocks || []).flatMap((b) => (b.type === "cards" ? b.items : [])).find((i) => i.image) || {}).image;
   if (cand) {
     const info = ctx.image(cand);
@@ -580,8 +625,8 @@ export function renderMain(ctx, page, t) {
   const heroInner = `<div class="container hero__inner">${eyebrow}<h1 class="hero__title"${pageFld("h1")}>${esc(title)}</h1>${t.lead || (ctx.edit && heroImg) ? `<p class="hero__lead"${pageFld("lead")}>${esc(t.lead || "")}</p>` : ""}${ctas ? `<div class="hero__ctas">${ctas}</div>` : ""}</div>`;
   const hero = heroImg
     ? `<section class="hero${isHome ? " hero--home" : ""}">${imgTag(ctx, heroImg, "", { cls: "hero__img", eager: true, sizes: "100vw" })}<div class="hero__shade"></div>${heroInner}</section>`
-    : `<section class="page-head"><div class="container">${eyebrow ? eyebrow.replace("hero__eyebrow", "hero__eyebrow") : ""}<h1${pageFld("h1")}>${esc(title)}</h1></div></section>`;
-  const crumbRow = crumbs || logo ? `<div class="container crumbs">${crumbs}${logo}</div>` : "";
+    : `<section class="page-head${page.template === "about" ? " page-head--center" : ""}"><div class="container">${page.template === "about" ? "" : eyebrow}<h1${pageFld("h1")}>${esc(title)}</h1></div></section>`;
+  const crumbRow = crumbs || logo ? `<div class="container crumbs${page.template === "about" ? " crumbs--center" : ""}">${crumbs}${logo}</div>` : "";
   return `${hero}${crumbRow}<div class="page-body page--${esc(page.template || "page")}">${splitHtml}${renderBlocks(ctx, rest)}</div>`;
 }
 

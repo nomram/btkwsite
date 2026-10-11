@@ -77,14 +77,25 @@ const H = `
 
 try {
   // seed the AI config + load the CMS
+  // (wait for the page itself, not a fixed time: on a busy machine the first load can take seconds)
+  const pageReady = async (ms = 45000) => {
+    const t0 = Date.now();
+    while (Date.now() - t0 < ms) {
+      const ok = await ev(`location.pathname === "/cms/" && document.readyState === "complete" && !!document.getElementById("app")`);
+      if (ok === true) return true;
+      await sleep(250);
+    }
+    return false;
+  };
   await send("Page.navigate", { url: BASE + "/cms/" }, sessionId);
-  await sleep(1500);
+  await pageReady();
   await ev(`localStorage.setItem("bkcms.ai", JSON.stringify({baseUrl:"${MOCK}", key:"test-key", model:"openai/gpt-oss-120b", effort:"high"})); localStorage.setItem("bkcms.ui","sv");`);
   await send("Page.navigate", { url: BASE + "/cms/" }, sessionId);
-  await sleep(1500);
+  await sleep(300);
+  await pageReady();
   await ev(H);
   const loaded = await ev(`(async () => !!(await __until(() => document.querySelectorAll("table.list tbody tr").length > 5, 20000)))()`);
-  check("pages list loads", loaded);
+  check("pages list loads", loaded, loaded ? "" : JSON.stringify({ page: await ev(`location.href + " | " + document.readyState + " | " + (document.getElementById("app") ? document.getElementById("app").innerText.slice(0, 200) : "no #app")`), errors: errors.slice(0, 3) }));
   check("UI is Swedish by default", (await ev(`document.querySelector("h1").textContent`)) === "Sidor");
 
   // ----- existing page: tagging, selection, inline edit, toolbar, undo -----
@@ -141,6 +152,9 @@ try {
   // palette -> drop into canvas (synthetic drag events)
   const n0 = await ev(`__blocks().length`);
   const dropped = await ev(`(async () => {
+    // the canvas reloads after every undo/redo: wait until the new document has its editing layer
+    await __until(() => { const x = __doc(); return x && x.readyState === "complete" && x.getElementById("bk-ov"); }, 15000);
+    await __sleep(300);
     const d = __doc(), w = d.defaultView;
     const dt = new w.DataTransfer();
     dt.setData("application/x-bk-new", "heading");
@@ -168,6 +182,24 @@ try {
   // leave without saving
   await ev(`__ed().dirty = false; document.getElementById("ve-back").click(); 1`);
   await sleep(400);
+
+  // ----- text inside a two-column section is editable in place (About page) -----
+  await ev(`document.querySelector('tr[data-edit="/om-oss"]').click(); 1`);
+  await ev(`(async () => !!(await __until(() => __doc() && __doc().getElementById("bk-ov") && __doc().querySelector("[data-bk-field^='left.']"), 20000)))()`);
+  const nest = await ev(`(async () => {
+    const d = __doc(), w = d.defaultView;
+    const el = d.querySelector("[data-bk-i][data-bk-field^='left.'][data-bk-kind=plain], [data-bk-i] [data-bk-field^='left.'][data-bk-kind=plain]");
+    if (!el) return { err: "no nested plain field" };
+    const bi = +el.closest("[data-bk-i]").dataset.bkI, field = el.dataset.bkField;
+    el.focus(); const r = d.createRange(); r.selectNodeContents(el); const s = w.getSelection(); s.removeAllRanges(); s.addRange(r);
+    d.execCommand("insertText", false, "Nästlad rubrik");
+    await __sleep(300);
+    const b = __blocks()[bi]; const [side, j, k] = field.split(".");
+    return { bi, field, value: b[side][+j][k], type: b.type };
+  })()`);
+  check("text inside columns is editable in place", !!nest && nest.type === "columns" && nest.value === "Nästlad rubrik", JSON.stringify(nest));
+  await ev(`__ed().dirty = false; document.getElementById("ve-back").click(); 1`);
+  await sleep(500);
 
   // ----- wizard: new page, edit, auto-translate, save, delete -----
   await ev(`document.getElementById("new").click(); 1`);
@@ -225,7 +257,7 @@ try {
 
   // hand-editing English must protect it from the next automatic run
   await ev(`document.querySelector('.ve__langs [data-l="en"]').click(); 1`);
-  await sleep(700);
+  await ev(`(async () => !!(await __until(() => { const x = __doc(); return x && x.getElementById("bk-ov") && x.documentElement.lang === "en"; }, 20000)))()`);
   await ev(`(async () => {
     const d = __doc(), w = d.defaultView;
     const el = d.querySelector("[data-bk-field='html']");
@@ -236,7 +268,7 @@ try {
   })()`);
   check("hand edit marks the language manual", (await ev(`__ed().page.i18nMeta.en.mode`)) === "manual");
   await ev(`document.querySelector('.ve__langs [data-l="sv"]').click(); 1`);
-  await sleep(600);
+  await ev(`(async () => !!(await __until(() => { const x = __doc(); return x && x.getElementById("bk-ov") && x.documentElement.lang === "sv"; }, 20000)))()`);
   await ev(`(async () => {
     const d = __doc(), w = d.defaultView;
     const el = d.querySelector("[data-bk-field='html']");

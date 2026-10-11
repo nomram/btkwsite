@@ -411,6 +411,7 @@ function pruneEmpty(page) {
       case "list": case "chips": return !(b.items || []).some((x) => String(x).trim());
       case "table": return !(b.rows || []).some((r) => r.some((c) => String(c).trim()));
       case "cta": return !b.title;
+      case "columns": return !((b.left || []).length || (b.right || []).length);
       case "html": return !(b.html || "").trim();
       default: return false;
     }

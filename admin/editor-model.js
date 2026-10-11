@@ -17,6 +17,8 @@ export const IC = {
   chips: svg('<rect x="3" y="5" width="9" height="5" rx="2.5"/><rect x="14" y="5" width="7" height="5" rx="2.5"/><rect x="3" y="14" width="6" height="5" rx="2.5"/><rect x="11" y="14" width="10" height="5" rx="2.5"/>'),
   table: svg('<rect x="3" y="5" width="18" height="14" rx="1.5"/><path d="M3 10h18M9 5v14"/>'),
   datasheet: svg('<path d="M6 3h9l4 4v14H6z"/><path d="M9 11h7M9 15h7M9 19h4"/>'),
+  columns: svg('<rect x="3" y="4" width="8" height="16" rx="1.5"/><rect x="13" y="4" width="8" height="16" rx="1.5"/>'),
+  social: svg('<circle cx="6" cy="12" r="3"/><circle cx="18" cy="6" r="3"/><circle cx="18" cy="18" r="3"/><path d="M8.7 10.6l6.6-3.2M8.7 13.4l6.6 3.2"/>'),
   contact: svg('<rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/>'),
   html: svg('<path d="M8 8l-5 4 5 4M16 8l5 4-5 4M14 5l-4 14"/>'),
   up: svg('<path d="M12 19V5m0 0l-5 5m5-5l5 5"/>'),
@@ -47,9 +49,9 @@ export const IC = {
 export const BLOCK_TYPES = [
   { id: "text", group: "text" }, { id: "heading", group: "text" }, { id: "list", group: "text" },
   { id: "image", group: "media" }, { id: "video", group: "media" }, { id: "download", group: "media" },
-  { id: "button", group: "layout" }, { id: "cards", group: "layout" }, { id: "cta", group: "layout" }, { id: "chips", group: "layout" },
+  { id: "button", group: "layout" }, { id: "columns", group: "layout" }, { id: "cards", group: "layout" }, { id: "cta", group: "layout" }, { id: "chips", group: "layout" },
   { id: "table", group: "data" }, { id: "datasheet", group: "data" },
-  { id: "contact", group: "other" }, { id: "html", group: "other" }
+  { id: "social", group: "other" }, { id: "contact", group: "other" }, { id: "html", group: "other" }
 ];
 export const BLOCK_GROUPS = ["text", "media", "layout", "data", "other"];
 // the palette id of a stored block ("download" is a button with kind=download)
@@ -79,6 +81,8 @@ export function newBlock(id, lang) {
     case "chips": return { type: "chips", title: "", items: [""] };
     case "table": return { type: "table", header: true, rows: [["", ""], ["", ""]] };
     case "datasheet": return { type: "datasheet", title: c.tech, tagline: "", intro: [], groups: [{ title: "", rows: [{ label: "", metric: "", us: "" }] }], note: "" };
+    case "columns": return { type: "columns", ratio: "60-40", left: [{ type: "text", html: "" }], right: [{ type: "image", src: "", alt: "" }] };
+    case "social": return { type: "social" };
     case "contact": return { type: "contact" };
     default: return { type: "html", html: "" };
   }

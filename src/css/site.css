@@ -90,6 +90,16 @@ a:hover { text-decoration-thickness: 2px; }
 .mega__col ul { list-style: none; margin: 0; padding: 0; }
 .mega__col li a { display: block; font-size: .86rem; color: var(--muted); text-decoration: none; padding: .18rem 0; }
 .mega__col li a:hover { color: var(--text); }
+/* logo dropdown: brand logos straight away; the row follows the mouse sideways (site.js, data-scrub) */
+.mega--logos .container { padding-block: 1.1rem 1.35rem; }
+.logorow { display: flex; gap: .8rem; list-style: none; margin: 0; padding: .25rem 0 .4rem; overflow-x: auto; scrollbar-width: none; }
+.logorow::-webkit-scrollbar { display: none; }
+.logorow > li { flex: none; }
+.logorow__item { display: flex; flex-direction: column; align-items: center; gap: .55rem; width: 158px; padding: .95rem .6rem .75rem; border: 1px solid var(--line); border-radius: var(--radius); background: #fff; text-decoration: none; transition: border-color .15s, transform .15s, box-shadow .15s; }
+.logorow__item:hover, .logorow__item:focus-visible { border-color: var(--primary); transform: translateY(-2px); box-shadow: var(--shadow); }
+.logorow__img { display: grid; place-items: center; width: 100%; height: 58px; }
+.logorow__logo { max-height: 54px; max-width: 124px; width: auto; height: auto; object-fit: contain; }
+.logorow__name { font-size: .78rem; font-weight: 600; color: var(--muted); text-align: center; }
 
 .header-tools { display: flex; align-items: center; gap: .25rem; flex: none; }
 .icon-btn { width: 2.5rem; height: 2.5rem; display: grid; place-items: center; background: none; border: 0; border-radius: 50%; cursor: pointer; color: var(--text); }
@@ -139,6 +149,9 @@ a:hover { text-decoration-thickness: 2px; }
 .hero { position: relative; display: grid; align-items: end; min-height: clamp(230px, 24vw, 340px); color: #fff; background: var(--dark); overflow: hidden; isolation: isolate; }
 .hero--home { min-height: clamp(380px, 44vw, 580px); align-items: center; }
 .hero__img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: -2; }
+/* parallax (site.js sets --py on scroll): the picture is taller than the banner and slides down slowly,
+   so it "follows" the page for a while and then scrolls out of view */
+.hero--parallax .hero__img { top: -90px; height: calc(100% + 90px); transform: translate3d(0, var(--py, 0px), 0); will-change: transform; }
 .hero__shade { position: absolute; inset: 0; z-index: -1; background: linear-gradient(90deg, rgba(35, 31, 32, .82) 0%, rgba(35, 31, 32, .5) 55%, rgba(35, 31, 32, .22) 100%), linear-gradient(0deg, rgba(35, 31, 32, .45), rgba(35, 31, 32, 0) 50%); }
 .hero__inner { padding-block: clamp(1.75rem, 4vw, 3rem); }
 .hero__eyebrow { margin: 0 0 .7rem; font-size: .72rem; font-weight: 700; text-transform: uppercase; letter-spacing: .16em; opacity: .9; display: flex; align-items: center; gap: .6rem; }
@@ -160,7 +173,8 @@ a:hover { text-decoration-thickness: 2px; }
 .breadcrumbs a:hover { text-decoration-color: var(--primary); }
 .breadcrumbs [aria-current] { color: var(--muted); }
 .crumbs__logo { flex: none; display: block; }
-.crumbs__logo img { height: 38px; width: auto; max-width: 160px; object-fit: contain; }
+.crumbs__logo img { height: 57px; width: auto; max-width: 240px; object-fit: contain; }
+@media (max-width: 560px) { .crumbs__logo img { height: 44px; max-width: 150px; } }
 
 /* ---------- content ---------- */
 .page-body { padding-bottom: 2.5rem; }
@@ -269,6 +283,34 @@ a:hover { text-decoration-thickness: 2px; }
 .video iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
 .video noscript a { position: absolute; inset: auto 1rem 1rem 1rem; color: #fff; }
 
+/* ---------- two-column sections, social icons, centred title (About page) ---------- */
+.prose > .cols, .prose > .social { max-width: none; }
+.cols { display: grid; gap: 2rem clamp(2rem, 5vw, 4.5rem); align-items: start; margin-block: 1rem 3rem; }
+.cols--60-40 { grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr); }
+.cols--40-60 { grid-template-columns: minmax(0, 1fr) minmax(0, 1.45fr); }
+.cols--50-50 { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+.cols--center { align-items: center; }
+.cols--between { display: flex; justify-content: space-between; align-items: center; margin-block: 0 1rem; }
+.cols__a > :first-child, .cols__b > :first-child { margin-top: 0; }
+.cols img { width: 100%; height: auto; }
+.cols .figure { margin: 0 0 1.25rem; }
+.cols h2 { margin-top: 0; }
+.cols li { margin: .15rem 0; }
+.cols--between .figure { margin: 0; }
+.cols--between img { width: auto; max-width: 100%; max-height: 150px; }
+.cols--between .cols__a img { max-height: 180px; }
+.btn--block { display: flex; width: 100%; }
+@media (max-width: 800px) { .cols--60-40, .cols--40-60, .cols--50-50 { grid-template-columns: 1fr; } }
+.social { display: flex; justify-content: center; gap: .9rem; margin: .4rem 0 2.2rem; }
+.social__icon { display: grid; place-items: center; width: 44px; height: 44px; border-radius: 50%; background: var(--dark); color: #fff; font-weight: 700; text-decoration: none; transition: transform .15s; }
+.social__icon:hover { transform: translateY(-2px); }
+.social__icon--facebook { background: #1877f2; }
+.social__icon--instagram { background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fd5949 45%, #d6249f 60%, #285aeb 90%); }
+.social__icon--linkedin { background: #0a66c2; }
+.crumbs--center { justify-content: center; padding-block: .2rem .4rem; }
+.page-head--center { background: none; color: var(--text); text-align: center; padding-block: clamp(2.2rem, 5vw, 3.6rem) .6rem; }
+.page-head--center h1 { font-size: clamp(2.1rem, 1.2rem + 2.8vw, 3.2rem); font-weight: 700; }
+
 /* ---------- contact ---------- */
 .contact { margin: 1.5rem 0; padding: 1.5rem 1.75rem; background: var(--surface); border-left: 4px solid var(--primary); border-radius: var(--radius); max-width: 46rem; }
 .contact__list { list-style: none; margin: 0 0 1rem; padding: 0 !important; display: grid; gap: .6rem; }
@@ -339,6 +381,10 @@ dialog.search::backdrop { background: rgba(35, 31, 32, .6); }
   .nav__item--mega.is-open > .mega { display: block; }
   .mega .container { width: 100%; }
   .mega__grid { grid-template-columns: 1fr 1fr; padding-block: .5rem 1rem; gap: 1rem 1.25rem; }
+  .mega--logos .container { padding-block: .6rem 1rem; }
+  .logorow { flex-wrap: wrap; overflow: visible; gap: .6rem; }
+  .logorow > li { flex: 1 1 calc(50% - .6rem); }
+  .logorow__item { width: auto; }
   .logo img { width: 132px; }
 }
 @media (max-width: 480px) { .mega__grid { grid-template-columns: 1fr; } .container { width: min(100% - 2rem, var(--maxw)); } }

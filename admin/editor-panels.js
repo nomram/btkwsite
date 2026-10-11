@@ -2,7 +2,7 @@
 import { state, $, $$, esc, clone, defLang, siteLangs, langLabel, titleOf, toast, setPath, getPath } from "./core.js";
 import { t } from "./lang.js";
 import {
-  IC, BLOCK_TYPES, BLOCK_GROUPS, paletteId, curT, curBlocks, mutate, setField, moveBlock, deleteBlock, duplicateBlock,
+  IC, BLOCK_TYPES, BLOCK_GROUPS, paletteId, newBlock, curT, curBlocks, mutate, setField, moveBlock, deleteBlock, duplicateBlock,
   srcLang, metaOf, langStatus, plainText, autoDescription, ytId, humanizeFilename, insertBlock, hooks as modelHooks
 } from "./editor-model.js";
 import { pickImage, pickDoc, pickLink, thumbUrl } from "./pickers.js";
@@ -45,6 +45,7 @@ function snippet(b) {
     case "datasheet": return b.title || t("block_datasheet");
     case "chips": return (b.items || []).filter(Boolean).slice(0, 4).join(", ") || t("empty");
     case "cta": return b.title || t("empty");
+    case "columns": return plainText((((b.left || [])[0]) || {}).html || (((b.left || [])[0]) || {}).text || "") || t("block_columns");
     default: return "";
   }
 }
@@ -151,6 +152,27 @@ function panelBlock() {
     case "cta":
       body = F(t("heading"), inp("title", b.title)) + F(t("supporting_text"), inp("text", b.text)) + F(t("button_text"), inp("button", b.button)) +
         F(t("link_to"), `<div class="row nowrap"><input type="text" data-bf="href" value="${esc(b.href || "")}"><button class="btn sm ghost" data-act="pick-link" data-target="href">${esc(t("choose"))}</button></div>`);
+      break;
+    case "columns": {
+      const ratios = ["60-40", "40-60", "50-50", "between"];
+      const nested = (side) => (b[side] || []).map((nb, j) => {
+        const p = `${side}.${j}`;
+        let ctl = "";
+        if (nb.type === "image") {
+          ctl = `<div class="row nowrap">${nb.src ? `<img class="thumb" src="${esc(thumbUrl((nb.src || "").replace("/assets/img/", "")))}" alt="">` : ""}<button class="btn sm ghost" data-act="nested-image" data-path="${p}">${esc(nb.src ? t("change_image") : t("choose_image"))}</button></div>` +
+            F(t("alt_text"), inp(`${p}.alt`, nb.alt));
+        } else if (nb.type === "button") {
+          ctl = F(t("button_text"), inp(`${p}.text`, nb.text)) + F(t("link_to"), inp(`${p}.href`, nb.href));
+        } else ctl = `<p class="muted">${esc(t("edit_on_page"))}</p>`;
+        return `<div class="sub"><div class="row nowrap"><b>${esc(t("block_" + paletteId(nb)))}</b><button class="btn sm danger" data-act="nested-rm" data-path="${p}" title="${esc(t("delete"))}">${IC.trash}</button></div>${ctl}</div>`;
+      }).join("");
+      const add = (side) => `<div class="btnrow">${["text", "heading", "image", "button"].map((ty) => `<button class="btn sm ghost" data-act="nested-add" data-side="${side}" data-type="${ty}">+ ${esc(t("block_" + ty))}</button>`).join("")}</div>`;
+      body = F(t("columns_ratio"), `<select data-bf="ratio">${ratios.map((r) => `<option value="${r}" ${(b.ratio || "60-40") === r ? "selected" : ""}>${esc(t("ratio_" + r.replace("-", "_")))}</option>`).join("")}</select>`) +
+        `<h3 class="pn__h">${esc(t("left_col"))}</h3>${nested("left")}${add("left")}<h3 class="pn__h">${esc(t("right_col"))}</h3>${nested("right")}${add("right")}`;
+      break;
+    }
+    case "social":
+      body = `<p class="muted">${esc(t("social_hint"))}</p><div class="btnrow"><button class="btn sm ghost" data-act="open-settings">${esc(t("open_settings"))}</button></div>`;
       break;
     case "contact":
       body = `<p class="muted">${esc(t("contact_hint"))}</p><div class="btnrow"><button class="btn sm ghost" data-act="open-settings">${esc(t("open_settings"))}</button></div>`;
@@ -319,6 +341,9 @@ export function bindPanel(el) {
         if (v != null) { setField(i, b.dataset.target, v || undefined); panelHooks.rerender(); }
         return;
       }
+      case "nested-image": { const src = await pickImage(); if (src) { setField(i, `${b.dataset.path}.src`, src); panelHooks.rerender(); } return; }
+      case "nested-rm": { const [side, j] = b.dataset.path.split("."); mutate(() => { blk[side].splice(+j, 1); }); return panelHooks.rerender(); }
+      case "nested-add": { const side = b.dataset.side; mutate(() => { (blk[side] = blk[side] || []).push(newBlock(b.dataset.type, ed.lang)); }); return panelHooks.rerender(); }
       case "card-add": mutate(() => { blk.items.push({ href: [...state.pages.keys()].sort()[0] }); }); return panelHooks.rerender();
       case "card-rm": mutate(() => { blk.items.splice(+b.dataset.ci, 1); }); return panelHooks.rerender();
       case "card-image": { const src = await pickImage(); if (src) { setField(i, `items.${b.dataset.ci}.image`, src); panelHooks.rerender(); } return; }

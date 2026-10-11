@@ -139,7 +139,7 @@ export async function loadAll() {
     state.pages.set(data.path, { file: f.path, data });
   });
   try {
-    const r = await fetch(new URL("manifest.json", import.meta.url), { cache: "no-store" });
+    const r = await fetch(new URL("manifest.json", import.meta.url), { cache: "no-store", signal: AbortSignal.timeout(8000) }); // optional: never block start-up
     if (r.ok) state.manifest = await r.json();
   } catch { /* preview falls back to plain <img> tags */ }
 }

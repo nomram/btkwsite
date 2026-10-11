@@ -27,6 +27,49 @@
       btn.setAttribute("aria-expanded", open ? "true" : "false");
     });
   });
+  // ---------- logo rows follow the mouse sideways ----------
+  // A row of logos that is wider than its box scrolls to match the pointer, so the rest of the
+  // logos can be reached without a scrollbar. Touch keeps native swiping.
+  document.querySelectorAll("[data-scrub]").forEach(function (row) {
+    var target = null, raf = 0;
+    function step() {
+      raf = 0;
+      if (target === null) return;
+      var d = target - row.scrollLeft;
+      if (Math.abs(d) < 1) { row.scrollLeft = target; return; }
+      row.scrollLeft += d * 0.14;
+      raf = requestAnimationFrame(step);
+    }
+    row.addEventListener("pointermove", function (e) {
+      if (e.pointerType && e.pointerType !== "mouse") return;
+      var max = row.scrollWidth - row.clientWidth;
+      if (max <= 2) return;
+      var r = row.getBoundingClientRect();
+      var x = Math.min(1, Math.max(0, (e.clientX - r.left) / r.width));
+      // the outer 15 % on each side reach the ends, the middle maps smoothly
+      var p = x < 0.15 ? 0 : x > 0.85 ? 1 : (x - 0.15) / 0.7;
+      target = p * max;
+      if (!raf) raf = requestAnimationFrame(step);
+    });
+    row.addEventListener("pointerleave", function () { target = null; });
+  });
+
+  // ---------- banner: the picture follows the scroll for a while (slower than the page) ----------
+  (function () {
+    var hero = document.querySelector(".hero");
+    var img = hero && hero.querySelector(".hero__img");
+    if (!img || (window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches)) return;
+    hero.classList.add("hero--parallax");
+    var raf = 0, MAX = 90;
+    function update() {
+      raf = 0;
+      if (window.scrollY > hero.offsetTop + hero.offsetHeight + 200) return;
+      img.style.setProperty("--py", Math.min(MAX, Math.max(0, window.scrollY) * 0.4) + "px");
+    }
+    window.addEventListener("scroll", function () { if (!raf) raf = requestAnimationFrame(update); }, { passive: true });
+    update();
+  })();
+
   function closeMenus() {
     document.querySelectorAll(".nav__item.is-open").forEach(function (li) {
       li.classList.remove("is-open");
