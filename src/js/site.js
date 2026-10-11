@@ -51,6 +51,49 @@
     });
   });
 
+  // ---------- image carousels ----------
+  var reduceMotion = !!(window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches);
+  Array.prototype.forEach.call(document.querySelectorAll("[data-carousel]"), function (box) {
+    var track = box.querySelector(".carousel__track");
+    if (!track || track.children.length < 2) return;
+    var count = track.children.length;
+    var dots = box.querySelectorAll(".carousel__dot");
+    var prev = box.querySelector(".carousel__btn--prev");
+    var next = box.querySelector(".carousel__btn--next");
+    var idx = 0, stopped = false, hovering = false, visible = false, raf = 0;
+    function go(i, instant) {
+      i = Math.max(0, Math.min(count - 1, i));
+      track.scrollTo({ left: i * track.clientWidth, behavior: instant || reduceMotion ? "auto" : "smooth" });
+    }
+    function sync() {
+      idx = Math.max(0, Math.min(count - 1, Math.round(track.scrollLeft / Math.max(1, track.clientWidth))));
+      Array.prototype.forEach.call(dots, function (d, k) { if (k === idx) d.setAttribute("aria-current", "true"); else d.removeAttribute("aria-current"); });
+      if (prev) prev.disabled = idx === 0;
+      if (next) next.disabled = idx === count - 1;
+    }
+    track.addEventListener("scroll", function () {
+      if (raf) return;
+      raf = window.requestAnimationFrame(function () { raf = 0; sync(); });
+    }, { passive: true });
+    if (prev) prev.addEventListener("click", function () { stopped = true; go(idx - 1); });
+    if (next) next.addEventListener("click", function () { stopped = true; go(idx + 1); });
+    Array.prototype.forEach.call(dots, function (d, k) { d.addEventListener("click", function () { stopped = true; go(k); }); });
+    ["touchstart", "keydown", "wheel"].forEach(function (ev) { track.addEventListener(ev, function () { stopped = true; }, { passive: true }); });
+    window.addEventListener("resize", function () { go(idx, true); });
+    var ms = parseInt(box.getAttribute("data-autoplay"), 10);
+    if (ms && !reduceMotion && "IntersectionObserver" in window) {
+      new IntersectionObserver(function (e) { visible = e[0].isIntersecting; }, { threshold: 0.5 }).observe(box);
+      box.addEventListener("mouseenter", function () { hovering = true; });
+      box.addEventListener("mouseleave", function () { hovering = false; });
+      box.addEventListener("focusin", function () { stopped = true; });
+      window.setInterval(function () {
+        if (stopped || hovering || !visible || document.hidden) return;
+        go(idx >= count - 1 ? 0 : idx + 1);
+      }, Math.max(2000, ms));
+    }
+    sync();
+  });
+
   // ---------- mobile navigation ----------
   var toggle = document.querySelector(".nav-toggle");
   var nav = document.getElementById("site-nav");

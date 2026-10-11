@@ -63,13 +63,6 @@
           "right": [
             {
               "type": "image",
-              "alt": "Om oss",
-              "width": 1600,
-              "height": 899,
-              "src": "/assets/img/om-oss-1.webp"
-            },
-            {
-              "type": "image",
               "alt": "Om oss – bild 2",
               "width": 1787,
               "height": 1004,
@@ -207,13 +200,6 @@
             }
           ],
           "right": [
-            {
-              "type": "image",
-              "alt": "About us",
-              "width": 1600,
-              "height": 899,
-              "src": "/assets/img/om-oss-1.webp"
-            },
             {
               "type": "image",
               "alt": "About us – image 2",
@@ -354,13 +340,6 @@
             }
           ],
           "right": [
-            {
-              "type": "image",
-              "alt": "Sobre nosotros",
-              "width": 1600,
-              "height": 899,
-              "src": "/assets/img/om-oss-1.webp"
-            },
             {
               "type": "image",
               "alt": "Sobre nosotros – imagen 2",
@@ -504,13 +483,6 @@
           "right": [
             {
               "type": "image",
-              "alt": "Om oss",
-              "width": 1600,
-              "height": 899,
-              "src": "/assets/img/om-oss-1.webp"
-            },
-            {
-              "type": "image",
               "alt": "Om oss – bilde 2",
               "width": 1787,
               "height": 1004,
@@ -596,5 +568,8 @@
   },
   "source": {
     "url": "https://www.betongakuten.se/om-oss"
+  },
+  "hero": {
+    "image": "/assets/img/om-oss-1.webp"
   }
 }

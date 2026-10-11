@@ -41,6 +41,7 @@ function snippet(b) {
     case "image": return b.alt || (b.src || "").split("/").pop() || t("empty");
     case "button": return b.text || (b.href || "").split("/").pop() || t("empty");
     case "cards": return t("n_cards", { n: (b.items || []).length });
+    case "carousel": return t("n_images", { n: (b.items || []).length });
     case "video": return b.title || b.id || t("empty");
     case "table": return t("n_rows", { n: (b.rows || []).length });
     case "datasheet": return b.title || t("block_datasheet");
@@ -124,6 +125,15 @@ function panelBlock() {
       body = F(t("button_text"), inp("text", b.text)) +
         F(t("link_to"), `<div class="row nowrap"><input type="text" data-bf="href" value="${esc(b.href || "")}" placeholder="/kontakta-oss"><button class="btn sm ghost" data-act="pick-link" data-target="href">${esc(t("choose"))}</button></div>`);
       break;
+    case "carousel": {
+      const items = b.items || [];
+      body = items.map((it, ci) => `<div class="sub"><div class="row nowrap">${it.src ? `<img class="thumb" src="${esc(thumbUrl(it.src.replace("/assets/img/", "")))}" alt="">` : ""}<button class="btn sm ghost" data-act="car-image" data-ci="${ci}">${esc(t("change_image"))}</button>${ci > 0 ? `<button class="btn sm ghost" data-act="car-up" data-ci="${ci}" title="${esc(t("move_up"))}">${IC.up}</button>` : ""}<button class="btn sm danger" data-act="car-rm" data-ci="${ci}" title="${esc(t("delete"))}">${IC.trash}</button></div>
+        ${F(t("alt_text"), inp(`items.${ci}.alt`, it.alt))}</div>`).join("") +
+        `<div class="btnrow"><button class="btn sm primary" data-act="car-add">${IC.plus}<span>${esc(t("carousel_add"))}</span></button></div>` +
+        `<label class="chk"><input type="checkbox" data-bf="autoplay" data-t="bool" ${b.autoplay ? "checked" : ""}> ${esc(t("carousel_autoplay"))}</label>` +
+        (b.autoplay ? F(t("carousel_interval"), `<input type="number" data-bf="interval" data-t="int" min="2" max="20" value="${esc(b.interval || 5)}">`) : "");
+      break;
+    }
     case "cards": {
       const items = b.items || [];
       const pageOpts = (sel) => [...state.pages.keys()].sort().map((p) => `<option value="${esc(p)}" ${p === sel ? "selected" : ""}>${esc(titleOf(p, state.ed.lang))} — ${esc(p)}</option>`).join("");
@@ -368,6 +378,10 @@ export function bindPanel(el) {
       case "nested-image": { const src = await pickImage(); if (src) { setField(i, `${b.dataset.path}.src`, src); panelHooks.rerender(); } return; }
       case "nested-rm": { const [side, j] = b.dataset.path.split("."); mutate(() => { blk[side].splice(+j, 1); }); return panelHooks.rerender(); }
       case "nested-add": { const side = b.dataset.side; mutate(() => { (blk[side] = blk[side] || []).push(newBlock(b.dataset.type, ed.lang)); }); return panelHooks.rerender(); }
+      case "car-add": { const src = await pickImage(); if (src) { mutate(() => { (blk.items = blk.items || []).push({ src, alt: humanizeFilename(src.split("/").pop()) }); }); panelHooks.rerender(); } return; }
+      case "car-image": { const src = await pickImage(); if (src) { setField(i, `items.${b.dataset.ci}.src`, src); panelHooks.rerender(); } return; }
+      case "car-rm": mutate(() => { blk.items.splice(+b.dataset.ci, 1); }); return panelHooks.rerender();
+      case "car-up": { const ci = +b.dataset.ci; if (ci > 0) mutate(() => { const x = blk.items.splice(ci, 1)[0]; blk.items.splice(ci - 1, 0, x); }); return panelHooks.rerender(); }
       case "card-add": mutate(() => { blk.items.push({ href: [...state.pages.keys()].sort()[0] }); }); return panelHooks.rerender();
       case "card-rm": mutate(() => { blk.items.splice(+b.dataset.ci, 1); }); return panelHooks.rerender();
       case "card-image": { const src = await pickImage(); if (src) { setField(i, `items.${b.dataset.ci}.image`, src); panelHooks.rerender(); } return; }

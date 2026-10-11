@@ -41,6 +41,10 @@ function visitBlock(b, pre, P, cb) {
       });
     });
   }
+  if (b.type === "carousel") (b.items || []).forEach((it, j) => {
+    if (it.alt) cb(id(`items.${j}.alt`), it.alt, (v) => (it.alt = v));
+    if (it.caption) cb(id(`items.${j}.caption`), it.caption, (v) => (it.caption = v));
+  });
   if (b.type === "cards") (b.items || []).forEach((it, j) => {
     if (it.title) cb(id(`items.${j}.title`), it.title, (v) => (it.title = v));
     if (it.text) cb(id(`items.${j}.text`), it.text, (v) => (it.text = v));

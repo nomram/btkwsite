@@ -52,6 +52,7 @@ function blockIsEmpty(b) {
     case "datasheet": return !((b.groups || []).length || (b.intro || []).some(Boolean));
     case "chips": case "list": return !(b.items || []).some(Boolean);
     case "cta": return !b.title;
+    case "carousel": return !(b.items || []).some((x) => x && x.src);
     case "html": return !(b.html || "").trim();
     case "columns": return !((b.left || []).length || (b.right || []).length);
     case "heading": case "text": return false;
@@ -65,6 +66,8 @@ const ICON = {
   pdf: '<svg viewBox="0 0 32 40" width="32" height="40" aria-hidden="true"><path d="M2 2h20l8 8v28H2z" fill="#fff" stroke="#c9c3bb" stroke-width="1.5"/><path d="M22 2v8h8" fill="#f4f2ef" stroke="#c9c3bb" stroke-width="1.5"/><rect x="2" y="20" width="22" height="11" rx="1.5" fill="#d93025"/><text x="13" y="28.5" text-anchor="middle" font-family="Arial,sans-serif" font-size="8" font-weight="700" fill="#fff">PDF</text></svg>',
   eye: '<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1.5 12S5.5 5 12 5s10.5 7 10.5 7-4 7-10.5 7S1.5 12 1.5 12z"/><circle cx="12" cy="12" r="3"/></svg>',
   down: '<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12m0 0l-5-5m5 5l5-5M4 20h16"/></svg>',
+  prev: '<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>',
+  next: '<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>',
   external: '<svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>',
   arrow: '<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14m-6-6l6 6-6 6"/></svg>',
   mail: '<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>',
@@ -266,6 +269,32 @@ const SOCIAL_ICON = {
   instagram: '<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#fff" stroke-width="1.9" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="4.5"/><circle cx="12" cy="12" r="3.6"/><circle cx="16.8" cy="7.2" r=".7" fill="#fff"/></svg>',
   linkedin: '<svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="#fff" d="M5.2 9.4h3.1V19H5.2zM6.8 4.6a1.8 1.8 0 1 1 0 3.6 1.8 1.8 0 0 1 0-3.6zM10.4 9.4h3v1.3c.5-.8 1.5-1.5 3-1.5 3.1 0 3.7 2 3.7 4.700V19H17v-4.600c0-1.100 0-2.500-1.500-2.500s-1.800 1.200-1.800 2.400V19h-3.300z"/></svg>'
 };
+// Image carousel. Native scroll-snap: swipe, trackpad and keyboard work without JavaScript; site.js adds arrows, dots
+// and the optional autoplay (never with prefers-reduced-motion, stops as soon as the visitor touches it).
+function renderCarousel(ctx, items, o = {}) {
+  const slides = (items || []).filter((x) => x && x.src);
+  if (!slides.length) return "";
+  if (slides.length === 1) return renderBlockInner(ctx, { type: "image", ...slides[0] });
+  const u = ctx.ui;
+  const first = ctx.image(slides[0].src);
+  const ratio = first && first.w && first.h ? Math.min(2, Math.max(1, first.w / first.h)) : 4 / 3;
+  const secs = Math.max(2, Math.min(20, Number(o.interval) || 5));
+  const auto = o.autoplay ? ` data-autoplay="${secs * 1000}"` : "";
+  const li = slides.map((s, i) => {
+    const img = imgTag(ctx, s.src, s.alt || "", { cls: "carousel__img", sizes: "(min-width: 900px) 760px, 100vw" });
+    const inner = s.href ? `<a href="${esc(localizeHref(ctx, s.href))}"${/^https?:/.test(s.href) ? ' rel="noopener"' : ""}>${img}</a>` : img;
+    const label = String(u.carousel_slide || "Bild {n} av {total}").replace("{n}", i + 1).replace("{total}", slides.length);
+    return `<li class="carousel__slide" role="group" aria-roledescription="slide" aria-label="${esc(label)}">${inner}` +
+      `${s.caption ? `<span class="carousel__cap">${esc(s.caption)}</span>` : ""}</li>`;
+  }).join("");
+  const dots = slides.map((_, i) => `<button type="button" class="carousel__dot" aria-label="${i + 1}"${i === 0 ? ' aria-current="true"' : ""}></button>`).join("");
+  return `<section class="carousel" data-carousel${auto} style="--car-ar:${ratio.toFixed(3)}" aria-roledescription="carousel" aria-label="${esc(o.label || u.carousel_label || "Bildspel")}">` +
+    `<ul class="carousel__track" tabindex="0">${li}</ul>` +
+    `<button type="button" class="carousel__btn carousel__btn--prev" aria-label="${esc(u.carousel_prev || "Föregående")}">${ICON.prev}</button>` +
+    `<button type="button" class="carousel__btn carousel__btn--next" aria-label="${esc(u.carousel_next || "Nästa")}">${ICON.next}</button>` +
+    `<div class="carousel__dots">${dots}</div></section>`;
+}
+
 // Quote request form. Works without any third party: with no endpoint configured it opens the visitor's own
 // e-mail program with the filled-in text. With site.quoteForm.endpoint set, site.js posts it there instead.
 function renderQuote(ctx) {
@@ -342,6 +371,7 @@ function renderBlockInner(ctx, b) {
     case "columns": return renderColumns(ctx, b);
     case "social": return renderSocial(ctx);
     case "quote": return renderQuote(ctx);
+    case "carousel": return renderCarousel(ctx, b.items, b);
     case "chips": return renderChips(ctx, b);
     case "cta": return renderCta(ctx, b);
     case "html": return b.html || "";
@@ -357,7 +387,10 @@ export function renderBlocks(ctx, blocks) {
   let imgRun = [];
   const flushImgs = () => {
     if (!imgRun.length) return;
-    prose.push(imgRun.length === 1 ? imgRun[0] : `<div class="gallery">${imgRun.join("")}</div>`);
+    // two or more pictures in a row become a carousel (the editor keeps them as separate, directly editable blocks)
+    if (imgRun.length === 1) prose.push(renderBlock(ctx, imgRun[0]));
+    else if (ctx.edit) prose.push(`<div class="gallery">${imgRun.map((x) => renderBlock(ctx, x)).join("")}</div>`);
+    else prose.push(renderCarousel(ctx, imgRun));
     imgRun = [];
   };
   const flushProse = () => {
@@ -368,7 +401,7 @@ export function renderBlocks(ctx, blocks) {
   const list = blocks || [];
   for (let i = 0; i < list.length; i++) {
     const b = list[i];
-    if (b.type === "image") { imgRun.push(renderBlock(ctx, b)); continue; }
+    if (b.type === "image") { imgRun.push(b); continue; }
     flushImgs();
     if (b.type === "button" && b.kind === "download") {
       const run = [];
@@ -445,6 +478,15 @@ function brandLogoMap(ctx, root) {
   return logos;
 }
 
+function renderLangRow(ctx, path) {
+  const langs = Object.entries(ctx.site.languages || {}).filter(([code, l]) => l.published && (code === ctx.defaultLang || ctx.tr("/", code) || ctx.tr(path, code)));
+  if (langs.length < 2) return "";
+  const label = (c) => (ctx.site.languages[c] && ctx.site.languages[c].label) || c;
+  return `<ul class="nav__langs" aria-label="${esc(ctx.ui.language || "Språk")}">` + langs.map(([code]) =>
+    `<li><a href="${esc(langLink(ctx, code, path))}" hreflang="${esc(htmlLang(ctx, code))}" lang="${esc(htmlLang(ctx, code))}"${code === ctx.lang ? ' aria-current="true"' : ""}>` +
+    `<img src="${flagSrc(code)}" alt="" width="22" height="15"><span>${esc(label(code))}</span></a></li>`).join("") + "</ul>";
+}
+
 function renderHeader(ctx, current) {
   const site = ctx.site;
   const navPaths = (site.nav && site.nav.length ? site.nav : []).filter((p) => ctx.pages.has(p) && shown(ctx, p));
@@ -469,7 +511,7 @@ function renderHeader(ctx, current) {
   }).join("");
   return `<header class="site-header" data-header><div class="container site-header__inner">` +
     `<a class="logo" href="${esc(ctx.url("/"))}" aria-label="${esc(site.name)} – ${esc(ctx.ui.home || "Startsida")}"><img src="/assets/brand/logo.svg" alt="${esc(site.name)}" width="200" height="32"></a>` +
-    `<nav class="nav" id="site-nav" aria-label="${esc(ctx.ui.main_nav || "Huvudmeny")}"><ul class="nav__list">${items}</ul></nav>` +
+    `<nav class="nav" id="site-nav" aria-label="${esc(ctx.ui.main_nav || "Huvudmeny")}"><ul class="nav__list">${items}</ul>${renderLangRow(ctx, current)}</nav>` +
     `<div class="header-tools"><button class="icon-btn" type="button" data-search-open aria-label="${esc(ctx.ui.search || "Sök")}">${ICON.search}</button>` +
     `${renderLangSwitch(ctx, current)}` +
     `<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span class="nav-toggle__bars" aria-hidden="true"></span><span class="sr-only">${esc(ctx.ui.menu || "Meny")}</span></button></div>` +
@@ -515,7 +557,8 @@ function renderSubnav(ctx, current) {
 
 // Sticky "call us" bar for phones: visitors are often on a building site with one hand free
 function renderCallBar(ctx) {
-  const p = ((ctx.site.contact || {}).phones || [])[0];
+  const phones = (ctx.site.contact || {}).phones || [];
+  const p = phones.find((x) => /^\s*(\+?46|0)\s*-?\s*7/.test(x.value || "")) || phones.find((x) => /mobil|mobile|móvil/i.test(x.label || "")) || phones[0];
   if (!p) return "";
   return `<div class="callbar"><a class="callbar__link" href="${esc(telHref(p.value))}">${ICON.phone}<span class="callbar__text">${esc(ctx.ui.call_us || "Ring oss")}</span><span class="callbar__num">${esc(p.value)}</span></a></div>`;
 }
@@ -689,7 +732,7 @@ export function renderMain(ctx, page, t) {
   const hero = heroImg
     ? `<section class="hero${isHome ? " hero--home" : ""}">${imgTag(ctx, heroImg, "", { cls: "hero__img", eager: true, sizes: "100vw" })}<div class="hero__shade"></div>${heroInner}</section>`
     : `<section class="page-head${page.template === "about" ? " page-head--center" : ""}"><div class="container">${page.template === "about" ? "" : eyebrow}<h1${pageFld("h1")}>${esc(title)}</h1></div></section>`;
-  const crumbRow = crumbs || logo ? `<div class="container crumbs${page.template === "about" ? " crumbs--center" : ""}">${crumbs}${logo}</div>` : "";
+  const crumbRow = crumbs || logo ? `<div class="container crumbs${page.template === "about" && !heroImg ? " crumbs--center" : ""}">${crumbs}${logo}</div>` : "";
   return `${hero}${crumbRow}<div class="page-body page--${esc(page.template || "page")}">${splitHtml}${renderBlocks(ctx, rest)}${productQuoteCta(ctx, page, t, title)}</div>`;
 }
 
