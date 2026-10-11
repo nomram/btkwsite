@@ -1,7 +1,8 @@
 // Visual editor canvas: the real page, rendered by the shared renderer in an iframe, with an
 // editing layer on top (inline text editing, block toolbar, drag & drop, insert handles).
 import { renderDocument } from "./render.mjs";
-import { state, $, esc, defLang } from "./core.js";
+import { state, $, esc, defLang, SITE_ROOT } from "./core.js";
+import { rewriteHtml } from "./basepath.mjs";
 import { t } from "./lang.js";
 import {
   IC, curT, curBlocks, mutate, setField, moveBlock, deleteBlock, duplicateBlock, sanitizeInline, plainText, ytId, paletteId, hooks as modelHooks
@@ -86,10 +87,11 @@ export function canvasHtml() {
   let html = renderDocument(ctx, ed.page, tr);
   // use the stylesheet copy that ships with the CMS, so the canvas keeps working while the site rebuilds
   const css = new URL("site.css", import.meta.url).href;
-  html = html.replace("<head>", '<head><base href="/" target="_blank">')
+  html = html.replace("<head>", `<head><base href="${SITE_ROOT}/" target="_blank">`)
     .replace(/href="\/css\/site\.css[^"]*"/, `href="${css}"`)
     .replace("</head>", `<style id="bk-edit-css">${EDIT_CSS}</style></head>`)
     .replace(/<script[\s\S]*?<\/script>/g, "");
+  if (SITE_ROOT) html = rewriteHtml(html, SITE_ROOT);
   for (const [name, url] of state.pending) html = html.split(name).join(url);
   return html;
 }

@@ -8,6 +8,7 @@ import fs from "node:fs";
 import path from "node:path";
 import crypto from "node:crypto";
 import { renderDocument, renderNotFound, esc } from "./lib/render.mjs";
+import { applyBasePath } from "./lib/apply-base.mjs";
 
 const ROOT = path.resolve(import.meta.dirname, "..");
 const args = process.argv.slice(2);
@@ -307,6 +308,7 @@ if (adminPath && exists(path.join(ROOT, "admin"))) {
   copyDir(path.join(ROOT, "admin"), adminOut);
   fs.copyFileSync(path.join(ROOT, "src/lib/render.mjs"), path.join(adminOut, "render.mjs"));
   fs.copyFileSync(path.join(ROOT, "src/lib/translatable.mjs"), path.join(adminOut, "translatable.mjs"));
+  fs.copyFileSync(path.join(ROOT, "src/lib/basepath.mjs"), path.join(adminOut, "basepath.mjs"));
   fs.copyFileSync(cssSrc, path.join(adminOut, "site.css"));
   // what the visual editor needs to draw images / documents exactly like the built site
   fs.writeFileSync(path.join(adminOut, "manifest.json"), JSON.stringify({
@@ -314,6 +316,12 @@ if (adminPath && exists(path.join(ROOT, "admin"))) {
     docs: Object.fromEntries([...fileSizes].filter(([h]) => /\.pdf$/i.test(h)).map(([h, size]) => [h, { size, ...(docInfoMap.get(h) || {}) }]))
   }));
 }
+
+// ---------- sub-path deployment (GitHub project pages) ----------
+// SITE_BASE=/repo prefixes every root-absolute URL so the site works at https://user.github.io/repo/.
+// (CI does this as a separate step after the checks: tools/apply-base.mjs.) Such a build is a preview: noindex.
+const SITE_BASE = process.env.SITE_BASE || "";
+if (SITE_BASE) console.log(`base path ${SITE_BASE}: rewrote ${applyBasePath(DIST, SITE_BASE)} files (preview build, noindex)`);
 
 const mb = (n) => (n / 1e6).toFixed(1);
 let total = 0;

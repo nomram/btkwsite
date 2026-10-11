@@ -30,9 +30,16 @@ jobs:
           path: .cache
           key: img-${{ hashFiles('assets-src/img/**') }}
           restore-keys: img-
+      - name: Where will this be served from?
+        id: pages
+        uses: actions/configure-pages@v5
       - run: node src/build.mjs
       - name: SEO / link / URL-parity checks
         run: node tools/check.mjs
+      # On https://<user>.github.io/<repo>/ the site lives under a sub-path: prefix every URL and mark
+      # it noindex (preview). With a custom domain base_path is empty and this step does nothing.
+      - name: Apply sub-path (preview deployments only)
+        run: node tools/apply-base.mjs dist "${{ steps.pages.outputs.base_path }}"
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist

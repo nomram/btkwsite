@@ -1,5 +1,5 @@
 // Image / document / link pickers (promise-based modal dialogs) and file uploads.
-import { state, $, esc, slug, toast, bytesToB64, setStatus, titleOf, defLang } from "./core.js";
+import { state, $, esc, slug, toast, bytesToB64, setStatus, titleOf, defLang, SITE_ROOT } from "./core.js";
 import { t } from "./lang.js";
 
 const imageFiles = () => state.files.filter((f) => f.path.startsWith("assets-src/img/")).map((f) => f.path.replace("assets-src/img/", ""));
@@ -68,9 +68,9 @@ export function thumbUrl(file) {
   const info = state.manifest.images && state.manifest.images[src];
   if (info && info.widths && info.widths.length) {
     const w = info.widths.find((x) => x >= 300) || info.widths[info.widths.length - 1];
-    return `/assets/img/${info.name}-${w}.webp`;
+    return `${SITE_ROOT}/assets/img/${info.name}-${w}.webp`;
   }
-  return src;
+  return SITE_ROOT + src;
 }
 
 export function pickImage({ title } = {}) {

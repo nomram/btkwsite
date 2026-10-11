@@ -147,6 +147,7 @@ const ADMIN = ((JSON.parse(fs.readFileSync(path.join(ROOT, "content/site.json"),
 const ADMIN_MAP = {
   "render.mjs": path.join(ROOT, "src/lib/render.mjs"),
   "translatable.mjs": path.join(ROOT, "src/lib/translatable.mjs"),
+  "basepath.mjs": path.join(ROOT, "src/lib/basepath.mjs"),
   "site.css": path.join(ROOT, "src/css/site.css"),
   "manifest.json": path.join(DIST, ADMIN.replace(/^\/|\/$/g, ""), "manifest.json")
 };

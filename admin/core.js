@@ -4,6 +4,8 @@ import { esc } from "./render.mjs";
 import { loadAiConfig } from "./ai.js";
 
 export { esc };
+// "" on a domain root, "/repo" when the site is served from a sub-path (GitHub project pages)
+export const SITE_ROOT = new URL("../", import.meta.url).pathname.replace(/\/$/, "");
 export const $ = (s, r = document) => r.querySelector(s);
 export const $$ = (s, r = document) => [...r.querySelectorAll(s)];
 
