@@ -1,0 +1,498 @@
+{
+  "path": "/om-oss",
+  "updated": "2026-10-10",
+  "template": "page",
+  "order": 0,
+  "published": true,
+  "i18n": {
+    "sv": {
+      "title": "Om oss",
+      "h1": "Om oss",
+      "description": "Betongakuten är en leverantör och konsult inom byggindustrin, med en stark inriktning på betong, ytskydd, geoteknik, betongpumpar, borriggar och relaterade…",
+      "blocks": [
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Tjänster"
+        },
+        {
+          "type": "text",
+          "html": "Betongakuten är en leverantör och konsult inom byggindustrin, med en stark inriktning på betong, ytskydd, geoteknik, betongpumpar, borriggar och relaterade produkter. Genom åren har vi etablerat oss som en resurs för entreprenörer, konstruktörer och de som skriver föreskrifter, tack vare vår omfattande kunskap och erfarenhet."
+        },
+        {
+          "type": "text",
+          "html": "Betongakutens verktygslåda har blivit stor med åren. Vår strävan är att vara ett bollplank när det gäller information om produkter och dess användning. Oavsett var du befinner dig i byggprocessen, kan Betongakuten hjälpa dig med högkvalitativa produkter och ovärderlig kunskap. Vi är mer än bara en leverantör - vi är en partner som hjälper dig att lyckas med ditt byggprojekt."
+        },
+        {
+          "type": "text",
+          "html": "Vi hjälper till med rådgivning kring följande produkter:"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "cement",
+            "betong",
+            "impregnering",
+            "injektering",
+            "ytbeläggning",
+            "ytskydd",
+            "geoteknik",
+            "monteringsstöd",
+            "schaktsäkring",
+            "silo",
+            "betongpumpar",
+            "borriggar",
+            "vajersågar",
+            "snigeldynamit",
+            "släntstabilisering"
+          ]
+        },
+        {
+          "type": "text",
+          "html": "Tveka inte att fråga, vi löser det mesta. <a href=\"/kontakta-oss\">Kontakta oss.</a>"
+        },
+        {
+          "type": "image",
+          "alt": "Om oss",
+          "width": 1600,
+          "height": 899,
+          "src": "/assets/img/om-oss-1.webp"
+        },
+        {
+          "type": "image",
+          "alt": "Om oss – bild 2",
+          "width": 1787,
+          "height": 1004,
+          "src": "/assets/img/om-oss-2.webp"
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Företagsbroschyr",
+          "href": "/assets/docs/om-oss-foretagsbroschyr.pdf",
+          "driveId": "1804U6RvC7nFYQUTo9I1BMGxh14pqvpJ_"
+        },
+        {
+          "type": "image",
+          "alt": "Om oss – bild 3",
+          "width": 800,
+          "height": 449,
+          "src": "/assets/img/om-oss-3.webp"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Utbildningar (certifieringar)"
+        },
+        {
+          "type": "text",
+          "html": "Betongakutens representanter är utbildade inom en rad tekniska och specialiserade områden. Denna breda och djupa kunskapsbas gör att Betongakutens team kan leverera högkvalitativ service och produkter i alla skeden av byggprocessen."
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Kurs i dekorativa ytbeläggningar med färg och mönster (Ecobeton)",
+            "Betongklass II (Sveriges byggindustrier)",
+            "Härdplastutbildning för golventreprenörer (Mapei)",
+            "Grundutbildning sprutbetong (Mapei)",
+            "Injekteringsutbildning med cement och härdplastprodukter (Mapei)",
+            "Putsutbildning grundkurs (Maxit/Weber)",
+            "Påbyggnad härdplastutbildning (Mapei)",
+            "Säker arbetsmiljö på industri - (SSG Entré)",
+            "Liftutbildning enligt LLP - (Cramo)",
+            "Geoteknik grundkurs - (Byggakademin)",
+            "Kommunal geoteknik - (SGI)",
+            "Installation &amp; Design - Ischebeck GmbH",
+            "Betongakuten bär ID06",
+            "Hollow-bar school Mopntrose (TEI)"
+          ]
+        },
+        {
+          "type": "image",
+          "alt": "Om oss – bild 4",
+          "width": 709,
+          "height": 706,
+          "src": "/assets/img/om-oss-4.webp"
+        },
+        {
+          "type": "image",
+          "alt": "Om oss – bild 5",
+          "width": 86,
+          "height": 102,
+          "src": "/assets/img/om-oss-5.gif"
+        }
+      ]
+    },
+    "en": {
+      "title": "About us",
+      "h1": "About us",
+      "description": "Betongakuten is a supplier and consultant to the construction industry, with a strong focus on concrete, surface protection, geotechnics, concrete pumps, drilling rigs and related…",
+      "blocks": [
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Services"
+        },
+        {
+          "type": "text",
+          "html": "Betongakuten is a supplier and consultant to the construction industry, with a strong focus on concrete, surface protection, geotechnics, concrete pumps, drilling rigs and related products. Over the years we have established ourselves as a resource for contractors, designers and specifiers, thanks to our extensive knowledge and experience."
+        },
+        {
+          "type": "text",
+          "html": "Betongakuten’s toolbox has grown large over the years. Our aim is to be a sounding board when it comes to information about products and how they are used. Wherever you are in the construction process, Betongakuten can help you with high-quality products and invaluable knowledge. We are more than just a supplier – we are a partner that helps you succeed with your construction project."
+        },
+        {
+          "type": "text",
+          "html": "We help with advice on the following products:"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "cement",
+            "concrete",
+            "impregnation",
+            "grouting",
+            "surface coatings",
+            "surface protection",
+            "geotechnics",
+            "assembly supports",
+            "trench shoring",
+            "silos",
+            "concrete pumps",
+            "drilling rigs",
+            "wire saws",
+            "non-explosive rock splitting",
+            "slope stabilisation"
+          ]
+        },
+        {
+          "type": "text",
+          "html": "Don’t hesitate to ask – we solve most things. <a href=\"/kontakta-oss\">Contact us.</a>"
+        },
+        {
+          "type": "image",
+          "alt": "About us",
+          "width": 1600,
+          "height": 899,
+          "src": "/assets/img/om-oss-1.webp"
+        },
+        {
+          "type": "image",
+          "alt": "About us – image 2",
+          "width": 1787,
+          "height": 1004,
+          "src": "/assets/img/om-oss-2.webp"
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Company brochure",
+          "href": "/assets/docs/om-oss-foretagsbroschyr.pdf",
+          "driveId": "1804U6RvC7nFYQUTo9I1BMGxh14pqvpJ_"
+        },
+        {
+          "type": "image",
+          "alt": "About us – image 3",
+          "width": 800,
+          "height": 449,
+          "src": "/assets/img/om-oss-3.webp"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Training (certifications)"
+        },
+        {
+          "type": "text",
+          "html": "Betongakuten’s representatives are trained in a range of technical and specialised areas. This broad and deep knowledge base allows the Betongakuten team to deliver high-quality service and products at every stage of the construction process."
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Course in decorative surface coatings with colour and pattern (Ecobeton)",
+            "Concrete class II (Swedish Construction Industries)",
+            "Epoxy and thermoset training for flooring contractors (Mapei)",
+            "Basic shotcrete training (Mapei)",
+            "Grouting training with cement and thermoset products (Mapei)",
+            "Basic plastering course (Maxit/Weber)",
+            "Advanced thermoset training (Mapei)",
+            "Safe working environment in industry – (SSG Entré)",
+            "Aerial work platform training according to LLP – (Cramo)",
+            "Geotechnics basic course – (Byggakademin)",
+            "Municipal geotechnics – (SGI)",
+            "Installation &amp; Design – Ischebeck GmbH",
+            "Betongakuten holds ID06",
+            "Hollow-bar school Montrose (TEI)"
+          ]
+        },
+        {
+          "type": "image",
+          "alt": "About us – image 4",
+          "width": 709,
+          "height": 706,
+          "src": "/assets/img/om-oss-4.webp"
+        },
+        {
+          "type": "image",
+          "alt": "About us – image 5",
+          "width": 86,
+          "height": 102,
+          "src": "/assets/img/om-oss-5.gif"
+        }
+      ],
+      "published": true
+    },
+    "es": {
+      "title": "Sobre nosotros",
+      "h1": "Sobre nosotros",
+      "description": "Betongakuten es proveedor y consultor para la industria de la construcción, con un fuerte enfoque en hormigón, protección de superficies, geotecnia, bombas de hormigón, equipos de perforación y productos…",
+      "blocks": [
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Servicios"
+        },
+        {
+          "type": "text",
+          "html": "Betongakuten es proveedor y consultor para la industria de la construcción, con un fuerte enfoque en hormigón, protección de superficies, geotecnia, bombas de hormigón, equipos de perforación y productos relacionados. A lo largo de los años nos hemos consolidado como un recurso para contratistas, proyectistas y prescriptores, gracias a nuestro amplio conocimiento y experiencia."
+        },
+        {
+          "type": "text",
+          "html": "La caja de herramientas de Betongakuten ha crecido mucho con los años. Nuestro objetivo es ser un interlocutor de confianza en cuanto a información sobre productos y su uso. Esté donde esté en el proceso de construcción, Betongakuten puede ayudarle con productos de alta calidad y un conocimiento inestimable. Somos más que un proveedor: somos un socio que le ayuda a tener éxito en su proyecto de construcción."
+        },
+        {
+          "type": "text",
+          "html": "Le asesoramos sobre los siguientes productos:"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "cemento",
+            "hormigón",
+            "impregnación",
+            "inyección",
+            "recubrimientos de superficies",
+            "protección de superficies",
+            "geotecnia",
+            "soportes de montaje",
+            "entibación de zanjas",
+            "silos",
+            "bombas de hormigón",
+            "equipos de perforación",
+            "sierras de hilo",
+            "cemento expansivo",
+            "estabilización de taludes"
+          ]
+        },
+        {
+          "type": "text",
+          "html": "No dude en preguntar: solucionamos casi todo. <a href=\"/kontakta-oss\">Contáctenos.</a>"
+        },
+        {
+          "type": "image",
+          "alt": "Sobre nosotros",
+          "width": 1600,
+          "height": 899,
+          "src": "/assets/img/om-oss-1.webp"
+        },
+        {
+          "type": "image",
+          "alt": "Sobre nosotros – imagen 2",
+          "width": 1787,
+          "height": 1004,
+          "src": "/assets/img/om-oss-2.webp"
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Folleto de empresa",
+          "href": "/assets/docs/om-oss-foretagsbroschyr.pdf",
+          "driveId": "1804U6RvC7nFYQUTo9I1BMGxh14pqvpJ_"
+        },
+        {
+          "type": "image",
+          "alt": "Sobre nosotros – imagen 3",
+          "width": 800,
+          "height": 449,
+          "src": "/assets/img/om-oss-3.webp"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Formación (certificaciones)"
+        },
+        {
+          "type": "text",
+          "html": "Los representantes de Betongakuten están formados en una amplia gama de áreas técnicas y especializadas. Esta base de conocimientos amplia y profunda permite al equipo de Betongakuten ofrecer servicios y productos de alta calidad en todas las fases del proceso de construcción."
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Curso de recubrimientos decorativos de superficies con color y diseño (Ecobeton)",
+            "Hormigón clase II (Sveriges Byggindustrier)",
+            "Formación en resinas termoendurecibles para instaladores de suelos (Mapei)",
+            "Formación básica en hormigón proyectado (Mapei)",
+            "Formación en inyección con productos de cemento y resinas termoendurecibles (Mapei)",
+            "Curso básico de revoco (Maxit/Weber)",
+            "Formación avanzada en resinas termoendurecibles (Mapei)",
+            "Entorno de trabajo seguro en la industria – (SSG Entré)",
+            "Formación en plataformas elevadoras según LLP – (Cramo)",
+            "Curso básico de geotecnia – (Byggakademin)",
+            "Geotecnia municipal – (SGI)",
+            "Instalación y diseño – Ischebeck GmbH",
+            "Betongakuten cuenta con ID06",
+            "Escuela de barra hueca en Montrose (TEI)"
+          ]
+        },
+        {
+          "type": "image",
+          "alt": "Sobre nosotros – imagen 4",
+          "width": 709,
+          "height": 706,
+          "src": "/assets/img/om-oss-4.webp"
+        },
+        {
+          "type": "image",
+          "alt": "Sobre nosotros – imagen 5",
+          "width": 86,
+          "height": 102,
+          "src": "/assets/img/om-oss-5.gif"
+        }
+      ],
+      "published": true
+    },
+    "no": {
+      "title": "Om oss",
+      "h1": "Om oss",
+      "description": "Betongakuten er leverandør og rådgiver til byggebransjen, med sterk vekt på betong, overflatebeskyttelse, geoteknikk, betongpumper, borerigger og relaterte…",
+      "blocks": [
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Tjenester"
+        },
+        {
+          "type": "text",
+          "html": "Betongakuten er leverandør og rådgiver til byggebransjen, med sterk vekt på betong, overflatebeskyttelse, geoteknikk, betongpumper, borerigger og relaterte produkter. Gjennom årene har vi etablert oss som en ressurs for entreprenører, konstruktører og prosjekterende, takket være vår omfattende kunnskap og erfaring."
+        },
+        {
+          "type": "text",
+          "html": "Betongakutens verktøykasse har vokst seg stor gjennom årene. Vårt mål er å være en sparringspartner når det gjelder informasjon om produkter og bruken av dem. Uansett hvor du er i byggeprosessen, kan Betongakuten hjelpe deg med produkter av høy kvalitet og uvurderlig kunnskap. Vi er mer enn bare en leverandør – vi er en partner som hjelper deg å lykkes med byggeprosjektet ditt."
+        },
+        {
+          "type": "text",
+          "html": "Vi hjelper til med rådgivning om følgende produkter:"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "sement",
+            "betong",
+            "impregnering",
+            "injisering",
+            "overflatebelegg",
+            "overflatebeskyttelse",
+            "geoteknikk",
+            "monteringsstøtter",
+            "grøftesikring",
+            "siloer",
+            "betongpumper",
+            "borerigger",
+            "wiresager",
+            "ikke-eksplosivt sprengningsmiddel",
+            "skråningsstabilisering"
+          ]
+        },
+        {
+          "type": "text",
+          "html": "Ikke nøl med å spørre – vi løser det meste. <a href=\"/kontakta-oss\">Kontakt oss.</a>"
+        },
+        {
+          "type": "image",
+          "alt": "Om oss",
+          "width": 1600,
+          "height": 899,
+          "src": "/assets/img/om-oss-1.webp"
+        },
+        {
+          "type": "image",
+          "alt": "Om oss – bilde 2",
+          "width": 1787,
+          "height": 1004,
+          "src": "/assets/img/om-oss-2.webp"
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Firmabrosjyre",
+          "href": "/assets/docs/om-oss-foretagsbroschyr.pdf",
+          "driveId": "1804U6RvC7nFYQUTo9I1BMGxh14pqvpJ_"
+        },
+        {
+          "type": "image",
+          "alt": "Om oss – bilde 3",
+          "width": 800,
+          "height": 449,
+          "src": "/assets/img/om-oss-3.webp"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Opplæring (sertifiseringer)"
+        },
+        {
+          "type": "text",
+          "html": "Betongakutens representanter er utdannet innen en rekke tekniske og spesialiserte områder. Dette brede og dype kunnskapsgrunnlaget gjør at Betongakutens team kan levere tjenester og produkter av høy kvalitet i alle faser av byggeprosessen."
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Kurs i dekorative overflatebelegg med farge og mønster (Ecobeton)",
+            "Betongklasse II (Sveriges Byggindustrier)",
+            "Herdeplastopplæring for gulventreprenører (Mapei)",
+            "Grunnopplæring i sprøytebetong (Mapei)",
+            "Injiseringsopplæring med sement- og herdeplastprodukter (Mapei)",
+            "Grunnkurs i pussing (Maxit/Weber)",
+            "Påbyggingsopplæring i herdeplast (Mapei)",
+            "Sikkert arbeidsmiljø i industrien – (SSG Entré)",
+            "Opplæring i liftarbeid etter LLP – (Cramo)",
+            "Grunnkurs i geoteknikk – (Byggakademin)",
+            "Kommunal geoteknikk – (SGI)",
+            "Installasjon og design – Ischebeck GmbH",
+            "Betongakuten har ID06",
+            "Hollow-bar-skole i Montrose (TEI)"
+          ]
+        },
+        {
+          "type": "image",
+          "alt": "Om oss – bilde 4",
+          "width": 709,
+          "height": 706,
+          "src": "/assets/img/om-oss-4.webp"
+        },
+        {
+          "type": "image",
+          "alt": "Om oss – bilde 5",
+          "width": 86,
+          "height": 102,
+          "src": "/assets/img/om-oss-5.gif"
+        }
+      ],
+      "published": true
+    }
+  },
+  "source": {
+    "url": "https://www.betongakuten.se/om-oss"
+  },
+  "hero": {
+    "image": "/assets/img/marini-slantstabilisering-hero.webp"
+  }
+}

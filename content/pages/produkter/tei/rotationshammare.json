@@ -1,0 +1,582 @@
+{
+  "path": "/produkter/tei/rotationshammare",
+  "updated": "2026-10-10",
+  "template": "product",
+  "order": 1,
+  "published": true,
+  "hero": {
+    "image": "/assets/img/tei-rotationshammare-hero.webp"
+  },
+  "i18n": {
+    "sv": {
+      "title": "Rotationshammare",
+      "h1": "Rotationshammare",
+      "description": "Rotatationshammaren finns i olika klasser som främst beror på grävarens vikt samt den utrustning som sätts på masten.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "TEI Rock Drills – logotyp",
+          "href": "/produkter/tei",
+          "width": 1920,
+          "height": 1117,
+          "src": "/assets/img/tei-2.webp"
+        },
+        {
+          "type": "image",
+          "alt": "Rotationshammare – bild 2",
+          "width": 1500,
+          "height": 1242,
+          "src": "/assets/img/tei-rotationshammare-2.webp"
+        },
+        {
+          "type": "text",
+          "html": "Rotatationshammaren finns i olika klasser som främst beror på grävarens vikt samt den utrustning som sätts på masten."
+        },
+        {
+          "type": "text",
+          "html": "Med sin kompakta storlek och höga effekt-till-vikt-förhållande står TEI:s borrhammare ut på marknaden."
+        },
+        {
+          "type": "text",
+          "html": "Se utbudet av TEIs topphammare nedan. Längst ner finns en tabell med de teknska specifikationerna för dem."
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Kontakta oss</a> för mer information."
+        },
+        {
+          "type": "image",
+          "alt": "Rotationshammare – bild 3",
+          "width": 1920,
+          "height": 1056,
+          "src": "/assets/img/tei-rotationshammare-3.webp"
+        },
+        {
+          "type": "cards",
+          "items": [
+            {
+              "href": "/produkter/tei/rotationshammare/rds250",
+              "label": "Läs mer",
+              "image": "/assets/img/tei-rotationshammare-rds250.webp",
+              "width": 1089,
+              "height": 960,
+              "alt": "RDS250 – logotyp"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "RDS250"
+        },
+        {
+          "type": "cards",
+          "items": [
+            {
+              "href": "/produkter/tei/rotationshammare/rds350",
+              "label": "Läs mer",
+              "image": "/assets/img/tei-rotationshammare-rds350.webp",
+              "width": 1375,
+              "height": 1203,
+              "alt": "RDS350 – logotyp"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "RDS350"
+        },
+        {
+          "type": "cards",
+          "items": [
+            {
+              "href": "/produkter/tei/rotationshammare/rds550",
+              "label": "Läs mer",
+              "image": "/assets/img/tei-rotationshammare-rds550.webp",
+              "width": 1296,
+              "height": 1142,
+              "alt": "RDS550 – logotyp"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "RDS550"
+        },
+        {
+          "type": "cards",
+          "items": [
+            {
+              "href": "/produkter/tei/rotationshammare/rds1004",
+              "label": "Läs mer",
+              "image": "/assets/img/tei-rotationshammare-rds1004.webp",
+              "width": 1800,
+              "height": 1586,
+              "alt": "RDS1004 – logotyp"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "RDS1004"
+        },
+        {
+          "type": "cards",
+          "items": [
+            {
+              "href": "/produkter/tei/rotationshammare/rds1004",
+              "label": "Läs mer",
+              "html": "Taggar: topphammare, sänkhammare, rotationshammare",
+              "text": "Taggar: topphammare, sänkhammare, rotationshammare",
+              "image": "/assets/img/tei-rotationshammare-rds1004-2.webp",
+              "width": 1920,
+              "height": 1691,
+              "alt": "RDS1004 – logotyp"
+            },
+            {
+              "href": "/produkter/tei/rotationshammare/rds1500",
+              "label": "Läs mer",
+              "image": "/assets/img/tei-2.webp",
+              "width": 1920,
+              "height": 1117,
+              "text": "Kraftigt hydrauliskt rotationshuvud för större borrmaster och borrriggar.",
+              "alt": "RDS1500 – logotyp"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "RDS1500"
+        }
+      ]
+    },
+    "en": {
+      "title": "Rotary heads",
+      "h1": "Rotary heads",
+      "description": "Rotary heads come in different classes that mainly depend on the weight of the excavator and the equipment fitted to the mast.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "TEI Rock Drills – logo",
+          "href": "/produkter/tei",
+          "width": 1920,
+          "height": 1117,
+          "src": "/assets/img/tei-2.webp"
+        },
+        {
+          "type": "image",
+          "alt": "Rotary heads – image 2",
+          "width": 1500,
+          "height": 1242,
+          "src": "/assets/img/tei-rotationshammare-2.webp"
+        },
+        {
+          "type": "text",
+          "html": "Rotary heads come in different classes that mainly depend on the weight of the excavator and the equipment fitted to the mast."
+        },
+        {
+          "type": "text",
+          "html": "With their compact size and high power-to-weight ratio, TEI’s drills stand out in the market."
+        },
+        {
+          "type": "text",
+          "html": "See the range of TEI’s drifters below. At the bottom there is a table with their technical specifications."
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Contact us</a> for more information."
+        },
+        {
+          "type": "image",
+          "alt": "Rotary heads – image 3",
+          "width": 1920,
+          "height": 1056,
+          "src": "/assets/img/tei-rotationshammare-3.webp"
+        },
+        {
+          "type": "cards",
+          "items": [
+            {
+              "href": "/produkter/tei/rotationshammare/rds250",
+              "label": "Läs mer",
+              "image": "/assets/img/tei-rotationshammare-rds250.webp",
+              "width": 1089,
+              "height": 960,
+              "alt": "RDS250 – logo"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "RDS250"
+        },
+        {
+          "type": "cards",
+          "items": [
+            {
+              "href": "/produkter/tei/rotationshammare/rds350",
+              "label": "Läs mer",
+              "image": "/assets/img/tei-rotationshammare-rds350.webp",
+              "width": 1375,
+              "height": 1203,
+              "alt": "RDS350 – logo"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "RDS350"
+        },
+        {
+          "type": "cards",
+          "items": [
+            {
+              "href": "/produkter/tei/rotationshammare/rds550",
+              "label": "Läs mer",
+              "image": "/assets/img/tei-rotationshammare-rds550.webp",
+              "width": 1296,
+              "height": 1142,
+              "alt": "RDS550 – logo"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "RDS550"
+        },
+        {
+          "type": "cards",
+          "items": [
+            {
+              "href": "/produkter/tei/rotationshammare/rds1004",
+              "label": "Läs mer",
+              "image": "/assets/img/tei-rotationshammare-rds1004.webp",
+              "width": 1800,
+              "height": 1586,
+              "alt": "RDS1004 – logo"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "RDS1004"
+        },
+        {
+          "type": "cards",
+          "items": [
+            {
+              "href": "/produkter/tei/rotationshammare/rds1004",
+              "label": "Läs mer",
+              "html": "Taggar: topphammare, sänkhammare, rotationshammare",
+              "text": "Tags: top hammer, DTH hammer, rotary head",
+              "image": "/assets/img/tei-rotationshammare-rds1004-2.webp",
+              "width": 1920,
+              "height": 1691,
+              "alt": "RDS1004 – logo"
+            },
+            {
+              "href": "/produkter/tei/rotationshammare/rds1500",
+              "label": "Läs mer",
+              "image": "/assets/img/tei-2.webp",
+              "width": 1920,
+              "height": 1117,
+              "text": "Heavy-duty hydraulic rotary head for larger drill masts and drill rigs.",
+              "alt": "RDS1500 – logo"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "RDS1500"
+        }
+      ],
+      "published": true
+    },
+    "es": {
+      "title": "Cabezales de rotación",
+      "h1": "Cabezales de rotación",
+      "description": "Los cabezales de rotación existen en distintas clases que dependen principalmente del peso de la excavadora y del equipo montado en el mástil.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "TEI Rock Drills – logotipo",
+          "href": "/produkter/tei",
+          "width": 1920,
+          "height": 1117,
+          "src": "/assets/img/tei-2.webp"
+        },
+        {
+          "type": "image",
+          "alt": "Cabezales de rotación – imagen 2",
+          "width": 1500,
+          "height": 1242,
+          "src": "/assets/img/tei-rotationshammare-2.webp"
+        },
+        {
+          "type": "text",
+          "html": "Los cabezales de rotación existen en distintas clases que dependen principalmente del peso de la excavadora y del equipo montado en el mástil."
+        },
+        {
+          "type": "text",
+          "html": "Con su tamaño compacto y su alta relación potencia-peso, las perforadoras de TEI destacan en el mercado."
+        },
+        {
+          "type": "text",
+          "html": "Consulte a continuación la gama de martillos perforadores de TEI. Al final hay una tabla con sus especificaciones técnicas."
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Contáctenos</a> para más información."
+        },
+        {
+          "type": "image",
+          "alt": "Cabezales de rotación – imagen 3",
+          "width": 1920,
+          "height": 1056,
+          "src": "/assets/img/tei-rotationshammare-3.webp"
+        },
+        {
+          "type": "cards",
+          "items": [
+            {
+              "href": "/produkter/tei/rotationshammare/rds250",
+              "label": "Läs mer",
+              "image": "/assets/img/tei-rotationshammare-rds250.webp",
+              "width": 1089,
+              "height": 960,
+              "alt": "RDS250 – logotipo"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "RDS250"
+        },
+        {
+          "type": "cards",
+          "items": [
+            {
+              "href": "/produkter/tei/rotationshammare/rds350",
+              "label": "Läs mer",
+              "image": "/assets/img/tei-rotationshammare-rds350.webp",
+              "width": 1375,
+              "height": 1203,
+              "alt": "RDS350 – logotipo"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "RDS350"
+        },
+        {
+          "type": "cards",
+          "items": [
+            {
+              "href": "/produkter/tei/rotationshammare/rds550",
+              "label": "Läs mer",
+              "image": "/assets/img/tei-rotationshammare-rds550.webp",
+              "width": 1296,
+              "height": 1142,
+              "alt": "RDS550 – logotipo"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "RDS550"
+        },
+        {
+          "type": "cards",
+          "items": [
+            {
+              "href": "/produkter/tei/rotationshammare/rds1004",
+              "label": "Läs mer",
+              "image": "/assets/img/tei-rotationshammare-rds1004.webp",
+              "width": 1800,
+              "height": 1586,
+              "alt": "RDS1004 – logotipo"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "RDS1004"
+        },
+        {
+          "type": "cards",
+          "items": [
+            {
+              "href": "/produkter/tei/rotationshammare/rds1004",
+              "label": "Läs mer",
+              "html": "Taggar: topphammare, sänkhammare, rotationshammare",
+              "text": "Etiquetas: martillo en cabeza, martillo de fondo, cabezal de rotación",
+              "image": "/assets/img/tei-rotationshammare-rds1004-2.webp",
+              "width": 1920,
+              "height": 1691,
+              "alt": "RDS1004 – logotipo"
+            },
+            {
+              "href": "/produkter/tei/rotationshammare/rds1500",
+              "label": "Läs mer",
+              "image": "/assets/img/tei-2.webp",
+              "width": 1920,
+              "height": 1117,
+              "text": "Cabezal de rotación hidráulico de alta resistencia para mástiles de perforación y equipos de perforación de mayor tamaño.",
+              "alt": "RDS1500 – logotipo"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "RDS1500"
+        }
+      ],
+      "published": true
+    },
+    "no": {
+      "title": "Rotasjonshammere",
+      "h1": "Rotasjonshammere",
+      "description": "Rotasjonshammerne finnes i ulike klasser som hovedsakelig avhenger av gravemaskinens vekt og utstyret som monteres på masten.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "TEI Rock Drills – logo",
+          "href": "/produkter/tei",
+          "width": 1920,
+          "height": 1117,
+          "src": "/assets/img/tei-2.webp"
+        },
+        {
+          "type": "image",
+          "alt": "Rotasjonshammere – bilde 2",
+          "width": 1500,
+          "height": 1242,
+          "src": "/assets/img/tei-rotationshammare-2.webp"
+        },
+        {
+          "type": "text",
+          "html": "Rotasjonshammerne finnes i ulike klasser som hovedsakelig avhenger av gravemaskinens vekt og utstyret som monteres på masten."
+        },
+        {
+          "type": "text",
+          "html": "Med sin kompakte størrelse og høye effekt-til-vekt-forhold skiller TEIs borhammere seg ut i markedet."
+        },
+        {
+          "type": "text",
+          "html": "Se utvalget av TEIs topphammere nedenfor. Nederst finnes en tabell med de tekniske spesifikasjonene for dem."
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Kontakt oss</a> for mer informasjon."
+        },
+        {
+          "type": "image",
+          "alt": "Rotasjonshammere – bilde 3",
+          "width": 1920,
+          "height": 1056,
+          "src": "/assets/img/tei-rotationshammare-3.webp"
+        },
+        {
+          "type": "cards",
+          "items": [
+            {
+              "href": "/produkter/tei/rotationshammare/rds250",
+              "label": "Läs mer",
+              "image": "/assets/img/tei-rotationshammare-rds250.webp",
+              "width": 1089,
+              "height": 960,
+              "alt": "RDS250 – logo"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "RDS250"
+        },
+        {
+          "type": "cards",
+          "items": [
+            {
+              "href": "/produkter/tei/rotationshammare/rds350",
+              "label": "Läs mer",
+              "image": "/assets/img/tei-rotationshammare-rds350.webp",
+              "width": 1375,
+              "height": 1203,
+              "alt": "RDS350 – logo"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "RDS350"
+        },
+        {
+          "type": "cards",
+          "items": [
+            {
+              "href": "/produkter/tei/rotationshammare/rds550",
+              "label": "Läs mer",
+              "image": "/assets/img/tei-rotationshammare-rds550.webp",
+              "width": 1296,
+              "height": 1142,
+              "alt": "RDS550 – logo"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "RDS550"
+        },
+        {
+          "type": "cards",
+          "items": [
+            {
+              "href": "/produkter/tei/rotationshammare/rds1004",
+              "label": "Läs mer",
+              "image": "/assets/img/tei-rotationshammare-rds1004.webp",
+              "width": 1800,
+              "height": 1586,
+              "alt": "RDS1004 – logo"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "RDS1004"
+        },
+        {
+          "type": "cards",
+          "items": [
+            {
+              "href": "/produkter/tei/rotationshammare/rds1004",
+              "label": "Läs mer",
+              "html": "Taggar: topphammare, sänkhammare, rotationshammare",
+              "text": "Tagger: topphammer, senkhammer, rotasjonshammer",
+              "image": "/assets/img/tei-rotationshammare-rds1004-2.webp",
+              "width": 1920,
+              "height": 1691,
+              "alt": "RDS1004 – logo"
+            },
+            {
+              "href": "/produkter/tei/rotationshammare/rds1500",
+              "label": "Läs mer",
+              "image": "/assets/img/tei-2.webp",
+              "width": 1920,
+              "height": 1117,
+              "text": "Kraftig hydraulisk rotasjonshode for større boremaster og borerigger.",
+              "alt": "RDS1500 – logo"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "RDS1500"
+        }
+      ],
+      "published": true
+    }
+  },
+  "source": {
+    "url": "https://www.betongakuten.se/produkter/tei/rotationshammare"
+  }
+}

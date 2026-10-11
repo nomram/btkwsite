@@ -1,0 +1,98 @@
+{
+  "path": "/referenser",
+  "updated": "2026-10-11",
+  "template": "page",
+  "order": 3,
+  "published": false,
+  "hero": {
+    "image": "/assets/img/marini-slantstabilisering-hero.webp"
+  },
+  "i18n": {
+    "sv": {
+      "title": "Referenser",
+      "h1": "Referenser",
+      "navTitle": "Referenser",
+      "description": "Exempel på projekt där Betongakuten levererat produkter och kunskap: borrning i Park City, bergarbete på Nässelgrundet och betongbehandling på flygplatsplatta.",
+      "lead": "Ett urval av projekt där våra produkter och vår kunskap gjort skillnad.",
+      "blocks": [
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Borrning med Marini MR-C 90 och TEI TE1000 – Park City, Utah"
+        },
+        {
+          "type": "text",
+          "html": "<p>Marini MR-C 90 borrigg med TEI TE1000 topphammare och självborrande stång (52 mm, 6-tums borrkrona).</p>"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "TEI TE326 på BROKK 300 – Nässelgrundet, Stockholm"
+        },
+        {
+          "type": "text",
+          "html": "<p>TEI TE326 hydraulisk hammare monterad på en BROKK 300 för bergarbete nära väggar och i trånga utrymmen.</p>"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Vetrofluid – betongplatta på flygplats"
+        },
+        {
+          "type": "text",
+          "html": "<p>Behandling med Evercrete Vetrofluid av en oarmerad betongplatta, fotograferad fyra veckor efter applicering.</p>"
+        },
+        {
+          "type": "cta",
+          "title": "Har du ett liknande projekt?",
+          "text": "Berätta vad du ska bygga så hjälper vi dig välja rätt produkt.",
+          "button": "Kontakta oss",
+          "href": "/kontakta-oss"
+        }
+      ]
+    },
+    "en": {
+      "title": "References",
+      "h1": "References",
+      "navTitle": "References",
+      "description": "Examples of projects where Betongakuten supplied products and expertise: drilling in Park City, rock work at Nässelgrundet and concrete treatment on an airport slab.",
+      "lead": "A selection of projects where our products and knowledge made a difference.",
+      "blocks": [
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Drilling with Marini MR-C 90 and TEI TE1000 – Park City, Utah"
+        },
+        {
+          "type": "text",
+          "html": "<p>Marini MR-C 90 drill rig with a TEI TE1000 top hammer and self-drilling rods (52 mm, 6-inch bit).</p>"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "TEI TE326 on a BROKK 300 – Nässelgrundet, Stockholm"
+        },
+        {
+          "type": "text",
+          "html": "<p>TEI TE326 hydraulic hammer mounted on a BROKK 300 for rock work close to walls and in tight spaces.</p>"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Vetrofluid – airport concrete slab"
+        },
+        {
+          "type": "text",
+          "html": "<p>Evercrete Vetrofluid treatment of an unreinforced concrete slab, photographed four weeks after application.</p>"
+        },
+        {
+          "type": "cta",
+          "title": "Have a similar project?",
+          "text": "Tell us what you are building and we will help you choose the right product.",
+          "button": "Contact us",
+          "href": "/kontakta-oss"
+        }
+      ]
+    }
+  }
+}

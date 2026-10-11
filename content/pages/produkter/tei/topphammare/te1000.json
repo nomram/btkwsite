@@ -1,0 +1,398 @@
+{
+  "path": "/produkter/tei/topphammare/te1000",
+  "updated": "2026-10-10",
+  "template": "product",
+  "order": 7,
+  "published": true,
+  "hero": {
+    "image": "/assets/img/tei-borrmaster-hem-hero.webp"
+  },
+  "i18n": {
+    "sv": {
+      "title": "TE1000",
+      "h1": "TE1000",
+      "description": "TE1000 – 3 ackumulatorer för smidig drift; Kortaste och lägsta profilen i sin effektklass; Lågtrycksdämpare; Slagverkssystem med ASA; Uteffekt: 25 kW…",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "TEI Rock Drills – logotyp",
+          "href": "/produkter/tei",
+          "width": 1920,
+          "height": 1117,
+          "src": "/assets/img/tei-2.webp"
+        },
+        {
+          "type": "image",
+          "alt": "TE1000 – bild 2",
+          "width": 1920,
+          "height": 1130,
+          "src": "/assets/img/tei-topphammare-te1000-2.webp"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "3 ackumulatorer för smidig drift",
+            "Kortaste och lägsta profilen i sin effektklass",
+            "Lågtrycksdämpare",
+            "Slagverkssystem med ASA",
+            "Uteffekt: 25 kW",
+            "Rotationsmoment: Upp till 13 569 Nm",
+            "Vikt: 449 kg"
+          ]
+        },
+        {
+          "type": "datasheet",
+          "title": "Teknisk data",
+          "tagline": "Hydraulisk topphammare",
+          "intro": [
+            "TE1000 är den största topphammaren i TEI:s sortiment, avsedd för installation av hollow bar med hål på 3–7 tum (76,2–177,8 mm) och för borrning av mikropålar i alla jordtyper. Det kraftfulla slagverket har det patenterade ASA-systemet (automatisk slagjustering) som anpassar effekten efter varierande jord- och bergförhållanden.",
+            "Systemet har tre olika slagnivåer som kan ställas in manuellt eller automatiskt så att de följer borriggens matningskraft. En andra ackumulator för högtrycksslaget ger jämnare gång och dämpning.",
+            "Rotationen i TE1000 använder överdimensionerade lager på radial- och axialaxlarna för att klara dagens ankarriggars tryckkrafter. Systemet har två motorer för olika vridmoment och jämnare borrning."
+          ],
+          "groups": [
+            {
+              "title": "Rotation",
+              "rows": [
+                {
+                  "label": "Rotationsmoment",
+                  "metric": "6779 Nm",
+                  "us": "5,000 lbf-ft"
+                },
+                {
+                  "label": "Varvtal",
+                  "metric": "2",
+                  "us": "1"
+                }
+              ]
+            },
+            {
+              "title": "Slagverk",
+              "rows": [
+                {
+                  "label": "Uteffekt",
+                  "metric": "25 kW",
+                  "us": "33 hp"
+                },
+                {
+                  "label": "Hammarflöde",
+                  "metric": "117 lpm",
+                  "us": "31 gpm"
+                },
+                {
+                  "label": "Hammartryck",
+                  "metric": "172 bar",
+                  "us": "2500 psi"
+                },
+                {
+                  "label": "Slagfrekvens",
+                  "metric": "45 Hz",
+                  "us": "2700 bpm"
+                }
+              ]
+            }
+          ],
+          "note": "TEI:s tekniska data förutsätter 40 % hydraulisk effektförlust."
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Produktblad",
+          "href": "/assets/docs/tei-topphammare-te1000-broschyr-eng.pdf",
+          "driveId": "1s6xKWdbyezuUa9D9cnWYM92-bVQ5A1WS"
+        }
+      ]
+    },
+    "en": {
+      "title": "TE1000",
+      "h1": "TE1000",
+      "description": "TE1000 – 3 accumulators for smooth operation; Shortest and lowest profile in its power class; Low-pressure damper; Percussion system with ASA; Output power: 25 kW…",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "TEI Rock Drills – logo",
+          "href": "/produkter/tei",
+          "width": 1920,
+          "height": 1117,
+          "src": "/assets/img/tei-2.webp"
+        },
+        {
+          "type": "image",
+          "alt": "TE1000 – image 2",
+          "width": 1920,
+          "height": 1130,
+          "src": "/assets/img/tei-topphammare-te1000-2.webp"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "3 accumulators for smooth operation",
+            "Shortest and lowest profile in its power class",
+            "Low-pressure damper",
+            "Percussion system with ASA",
+            "Output power: 25 kW",
+            "Rotation torque: up to 13,569 Nm",
+            "Weight: 449 kg"
+          ]
+        },
+        {
+          "type": "datasheet",
+          "title": "Technical data",
+          "tagline": "Hydraulic drifter",
+          "intro": [
+            "TE1000 is the largest drifter in TEI’s range, intended for installing hollow bar with holes of 3–7 inches (76.2–177.8 mm) and for drilling micropiles in all soil types. The powerful percussion system has the patented ASA system (automatic stroke adjustment), which adapts the power output to varying soil and rock conditions.",
+            "The system has three different stroke levels that can be set manually or automatically so that they follow the feed force of the drill rig. A second accumulator for the high-pressure stroke gives smoother operation and damping.",
+            "The rotation of the TE1000 uses oversized bearings on the radial and axial shafts to withstand the thrust forces of today’s anchor rigs. The system has two motors for different torque levels and smoother drilling."
+          ],
+          "groups": [
+            {
+              "title": "Rotation",
+              "rows": [
+                {
+                  "label": "Rotation torque",
+                  "metric": "6779 Nm",
+                  "us": "5,000 lbf-ft"
+                },
+                {
+                  "label": "Speed",
+                  "metric": "2",
+                  "us": "1"
+                }
+              ]
+            },
+            {
+              "title": "Percussion",
+              "rows": [
+                {
+                  "label": "Output power",
+                  "metric": "25 kW",
+                  "us": "33 hp"
+                },
+                {
+                  "label": "Hammer flow",
+                  "metric": "117 lpm",
+                  "us": "31 gpm"
+                },
+                {
+                  "label": "Hammer pressure",
+                  "metric": "172 bar",
+                  "us": "2500 psi"
+                },
+                {
+                  "label": "Blow frequency",
+                  "metric": "45 Hz",
+                  "us": "2700 bpm"
+                }
+              ]
+            }
+          ],
+          "note": "TEI’s technical specifications assume a 40% hydraulic power loss."
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Data sheet",
+          "href": "/assets/docs/tei-topphammare-te1000-broschyr-eng.pdf",
+          "driveId": "1s6xKWdbyezuUa9D9cnWYM92-bVQ5A1WS"
+        }
+      ],
+      "published": true
+    },
+    "es": {
+      "title": "TE1000",
+      "h1": "TE1000",
+      "description": "TE1000 – 3 acumuladores para un funcionamiento suave; perfil más corto y bajo de su clase de potencia; amortiguador de baja presión; sistema de percusión con ASA; potencia de salida: 25 kW…",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "TEI Rock Drills – logotipo",
+          "href": "/produkter/tei",
+          "width": 1920,
+          "height": 1117,
+          "src": "/assets/img/tei-2.webp"
+        },
+        {
+          "type": "image",
+          "alt": "TE1000 – imagen 2",
+          "width": 1920,
+          "height": 1130,
+          "src": "/assets/img/tei-topphammare-te1000-2.webp"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "3 acumuladores para un funcionamiento suave",
+            "Perfil más corto y bajo de su clase de potencia",
+            "Amortiguador de baja presión",
+            "Sistema de percusión con ASA",
+            "Potencia de salida: 25 kW",
+            "Par de rotación: hasta 13 569 Nm",
+            "Peso: 449 kg"
+          ]
+        },
+        {
+          "type": "datasheet",
+          "title": "Datos técnicos",
+          "tagline": "Martillo perforador hidráulico",
+          "intro": [
+            "El TE1000 es el martillo perforador más grande de la gama de TEI, concebido para instalar barra hueca con agujeros de 3–7 pulgadas (76,2–177,8 mm) y para perforar micropilotes en todo tipo de suelos. El potente sistema de percusión incorpora el sistema ASA patentado (ajuste automático de carrera), que adapta la potencia a las distintas condiciones de suelo y roca.",
+            "El sistema tiene tres niveles de golpe diferentes que pueden ajustarse manual o automáticamente para que sigan la fuerza de avance del equipo de perforación. Un segundo acumulador para el golpe de alta presión proporciona un funcionamiento más suave y amortiguación.",
+            "La rotación del TE1000 utiliza rodamientos sobredimensionados en los ejes radial y axial para soportar las fuerzas de empuje de los equipos de anclaje actuales. El sistema tiene dos motores para distintos niveles de par y una perforación más suave."
+          ],
+          "groups": [
+            {
+              "title": "Rotación",
+              "rows": [
+                {
+                  "label": "Par de rotación",
+                  "metric": "6779 Nm",
+                  "us": "5,000 lbf-ft"
+                },
+                {
+                  "label": "Velocidad",
+                  "metric": "2",
+                  "us": "1"
+                }
+              ]
+            },
+            {
+              "title": "Percusión",
+              "rows": [
+                {
+                  "label": "Potencia de salida",
+                  "metric": "25 kW",
+                  "us": "33 hp"
+                },
+                {
+                  "label": "Caudal del martillo",
+                  "metric": "117 lpm",
+                  "us": "31 gpm"
+                },
+                {
+                  "label": "Presión del martillo",
+                  "metric": "172 bar",
+                  "us": "2500 psi"
+                },
+                {
+                  "label": "Frecuencia de golpeo",
+                  "metric": "45 Hz",
+                  "us": "2700 bpm"
+                }
+              ]
+            }
+          ],
+          "note": "Las especificaciones técnicas de TEI suponen una pérdida de potencia hidráulica del 40 %."
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Ficha de producto",
+          "href": "/assets/docs/tei-topphammare-te1000-broschyr-eng.pdf",
+          "driveId": "1s6xKWdbyezuUa9D9cnWYM92-bVQ5A1WS"
+        }
+      ],
+      "published": true
+    },
+    "no": {
+      "title": "TE1000",
+      "h1": "TE1000",
+      "description": "TE1000 – 3 akkumulatorer for smidig drift; Korteste og laveste profil i sin effektklasse; Lavtrykksdemper; Slagverk med ASA; Utgangseffekt: 25 kW…",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "TEI Rock Drills – logo",
+          "href": "/produkter/tei",
+          "width": 1920,
+          "height": 1117,
+          "src": "/assets/img/tei-2.webp"
+        },
+        {
+          "type": "image",
+          "alt": "TE1000 – bilde 2",
+          "width": 1920,
+          "height": 1130,
+          "src": "/assets/img/tei-topphammare-te1000-2.webp"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "3 akkumulatorer for smidig drift",
+            "Korteste og laveste profil i sin effektklasse",
+            "Lavtrykksdemper",
+            "Slagverk med ASA",
+            "Utgangseffekt: 25 kW",
+            "Rotasjonsmoment: opptil 13 569 Nm",
+            "Vekt: 449 kg"
+          ]
+        },
+        {
+          "type": "datasheet",
+          "title": "Tekniske data",
+          "tagline": "Hydraulisk topphammer",
+          "intro": [
+            "TE1000 er den største topphammeren i TEIs sortiment, beregnet for installasjon av hollow bar med hull på 3–7 tommer (76,2–177,8 mm) og for boring av mikropeler i alle jordtyper. Det kraftige slagverket har det patenterte ASA-systemet (automatisk slagjustering) som tilpasser effekten til varierende jord- og bergforhold.",
+            "Systemet har tre ulike slagnivåer som kan stilles inn manuelt eller automatisk slik at de følger borriggens materkraft. En andre akkumulator for høytrykksslaget gir jevnere gang og demping.",
+            "Rotasjonen i TE1000 bruker overdimensjonerte lagre på radial- og aksialakslene for å tåle trykkreftene fra dagens ankerrigger. Systemet har to motorer for ulike dreiemomenter og jevnere boring."
+          ],
+          "groups": [
+            {
+              "title": "Rotasjon",
+              "rows": [
+                {
+                  "label": "Rotasjonsmoment",
+                  "metric": "6779 Nm",
+                  "us": "5,000 lbf-ft"
+                },
+                {
+                  "label": "Turtall",
+                  "metric": "2",
+                  "us": "1"
+                }
+              ]
+            },
+            {
+              "title": "Slagverk",
+              "rows": [
+                {
+                  "label": "Utgangseffekt",
+                  "metric": "25 kW",
+                  "us": "33 hp"
+                },
+                {
+                  "label": "Hammerflyt",
+                  "metric": "117 lpm",
+                  "us": "31 gpm"
+                },
+                {
+                  "label": "Hammertrykk",
+                  "metric": "172 bar",
+                  "us": "2500 psi"
+                },
+                {
+                  "label": "Slagfrekvens",
+                  "metric": "45 Hz",
+                  "us": "2700 bpm"
+                }
+              ]
+            }
+          ],
+          "note": "TEIs tekniske data forutsetter 40 % hydraulisk effekttap."
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Produktblad",
+          "href": "/assets/docs/tei-topphammare-te1000-broschyr-eng.pdf",
+          "driveId": "1s6xKWdbyezuUa9D9cnWYM92-bVQ5A1WS"
+        }
+      ],
+      "published": true
+    }
+  },
+  "source": {
+    "url": "https://www.betongakuten.se/produkter/tei/topphammare/te1000"
+  }
+}

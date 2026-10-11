@@ -1,0 +1,755 @@
+{
+  "path": "/produkter/haeny",
+  "updated": "2026-10-10",
+  "template": "brand",
+  "order": 1,
+  "published": true,
+  "hero": {
+    "image": "/assets/img/haeny-hero.webp"
+  },
+  "i18n": {
+    "sv": {
+      "title": "HÄNY",
+      "h1": "HÄNY",
+      "description": "Häny tillverkar injektion- och omrörningssystem. Ta en titt i deras broschyr nedan eller kontakta oss för mer information.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "HÄNY",
+          "width": 832,
+          "height": 143,
+          "src": "/assets/img/haeny-1.webp"
+        },
+        {
+          "type": "text",
+          "html": "Häny tillverkar injektion- och omrörningssystem. Ta en titt i deras broschyr nedan eller <a href=\"/kontakta-oss\">kontakta oss</a> för mer information."
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Broschyr",
+          "href": "/assets/docs/haeny-ladda-ner-huvudbroschyr.pdf",
+          "driveId": "148ne9OMuPCzVDbmhU6CGsrj5TFyFTViG"
+        },
+        {
+          "type": "cards",
+          "items": [
+            {
+              "href": "/produkter/haeny/manuella-pumpar",
+              "label": "Läs mer",
+              "image": "/assets/img/haeny-manuella-pumpar.webp",
+              "width": 741,
+              "height": 871,
+              "alt": "Häny - Manuella Betongpumpar (IC) – logotyp"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Manuella pumpar"
+        },
+        {
+          "type": "cards",
+          "items": [
+            {
+              "href": "/produkter/haeny/automatiska-pumpar",
+              "label": "Läs mer",
+              "image": "/assets/img/haeny-automatiska-pumpar.webp",
+              "width": 704,
+              "height": 827,
+              "alt": "Häny - Helautomatiska pumpar (FAIC) – logotyp"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Automatiska pumpar"
+        },
+        {
+          "type": "text",
+          "html": "Hänys tekonologi"
+        },
+        {
+          "type": "image",
+          "alt": "HÄNY – bild 2",
+          "width": 351,
+          "height": 264,
+          "src": "/assets/img/haeny-2.webp"
+        },
+        {
+          "type": "text",
+          "html": "Mixer"
+        },
+        {
+          "type": "text",
+          "html": "Blandningsprincip"
+        },
+        {
+          "type": "text",
+          "html": "För effektiv blandning av cement, ultrafint cement och bentonit skapar Häny-mixers höga skjuvkrafter med högvarviga pumpar och en unik vortex-impeller. Pumparna cirkulerar hela tankinnehållet 2–4 gånger per minut, vilket genererar extrem turbulens och effektiv partikelseparation samt säkerställer fullständig hydratisering."
+        },
+        {
+          "type": "text",
+          "html": "Denna intensiva hydratisering ger en stabil och lättbearbetad suspension, även för svårblandade tillsatser. HCM-mixern eliminerar behovet av förblötläggning av bentonit eller lagringstankar."
+        },
+        {
+          "type": "image",
+          "alt": "HÄNY – bild 3",
+          "width": 599,
+          "height": 440,
+          "src": "/assets/img/haeny-3.webp"
+        },
+        {
+          "type": "text",
+          "html": "Impeller"
+        },
+        {
+          "type": "text",
+          "html": "Häny vortex-impeller har stor genomströmning (15–80 mm) och är extremt slitstark, vilket minskar slitage och igensättning. Modellerna HCM 300 och HCM 600 kan blanda sandhaltiga injekteringsbruk med upp till 8 mm partikelstorlek. Den underhållsfria axeltätningen tål torrkörning i flera minuter utan skador."
+        },
+        {
+          "type": "image",
+          "alt": "HÄNY – bild 4",
+          "width": 682,
+          "height": 1548,
+          "src": "/assets/img/haeny-4.webp"
+        },
+        {
+          "type": "text",
+          "html": "Plunger"
+        },
+        {
+          "type": "text",
+          "html": "Plungerpumpsystem"
+        },
+        {
+          "type": "text",
+          "html": "Till skillnad från kolvpumpar kräver plungerpumpar inga tätpassade delar som cylindrar eller precisa kolvtätningar. Plungern är förseglad med en underhållsfri tätning, och olika diametrar kan monteras på ZMP 700-seriens pumpar för flexibel tryck- och flödesanpassning."
+        },
+        {
+          "type": "text",
+          "html": "Ventiler"
+        },
+        {
+          "type": "text",
+          "html": "Injektionsventilerna är tillverkade av slitstarkt legerat stål med vändbara ventilsäten. Det hydrauliska systemet ger en snabb sugrörelse som håller ventilerna rena genom att spola bort tunga partiklar. Pumparna hanterar även suspensioner med låg vatten/cementhalt och hög sandandel."
+        },
+        {
+          "type": "image",
+          "alt": "HÄNY – bild 5",
+          "width": 649,
+          "height": 490,
+          "src": "/assets/img/haeny-5.webp"
+        },
+        {
+          "type": "text",
+          "html": "Kontrollblock för flödeskontroll"
+        },
+        {
+          "type": "text",
+          "html": "Automatisk tryckkontroll"
+        },
+        {
+          "type": "text",
+          "html": "ZMP 700-pumpar har ventiler för exakt inställning av maxtryck. Vid uppnått tryck justeras flödet automatiskt eller stoppas, samtidigt som trycket bibehålls. Vissa modeller kan ställas in från så lågt som 1 bar, vilket möjliggör säker injektering i känsliga formationer."
+        },
+        {
+          "type": "text",
+          "html": "Flödeskontroll"
+        },
+        {
+          "type": "text",
+          "html": "Inbyggd flödesreglering tillåter inställning av maxflöde, vilket möjliggör långsam injektering i mjuka markförhållanden utan segregation eller nya hålrum. Tillsammans med tryckkontrollen kan pumparna även användas för permeabilitetstester."
+        },
+        {
+          "type": "cards",
+          "items": [
+            {
+              "href": "/produkter/ahlm/st-5",
+              "label": "Läs mer",
+              "html": "Ofta kan det vara bra att kombinera pumpen med en silo för att säkerställa en jämn och kontinuerlig materialtillförsel. En silo minskar hanteringen av storsäckar, förbättrar arbetsflödet och kan utrustas med skruvtransportör för automatisk matning till pumpen. Klicka på \"Läs mer\" för att komma till exempel på en silo som vi rekommenderar.",
+              "text": "Ofta kan det vara bra att kombinera pumpen med en silo för att säkerställa en jämn och kontinuerlig materialtillförsel. En silo minskar hanteringen av storsäckar, förbättrar arbetsflödet och kan utrustas med skruvtransportör för automatisk matning till pumpen. Klicka på \"Läs mer\" för att komma till exempel på en silo som vi rekommenderar.",
+              "image": "/assets/img/ahlm-st-5-2.webp",
+              "width": 1502,
+              "height": 897,
+              "alt": "Silon – logotyp"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Silon"
+        },
+        {
+          "type": "image",
+          "alt": "HÄNY – bild 6",
+          "width": 1100,
+          "height": 355,
+          "src": "/assets/img/haeny-6.webp"
+        }
+      ]
+    },
+    "en": {
+      "title": "HÄNY",
+      "h1": "HÄNY",
+      "description": "Häny manufactures grouting and mixing systems. Take a look at their brochure below or contact us for more information.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "HÄNY",
+          "width": 832,
+          "height": 143,
+          "src": "/assets/img/haeny-1.webp"
+        },
+        {
+          "type": "text",
+          "html": "Häny manufactures grouting and mixing systems. Take a look at their brochure below or <a href=\"/kontakta-oss\">contact us</a> for more information."
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Brochure",
+          "href": "/assets/docs/haeny-ladda-ner-huvudbroschyr.pdf",
+          "driveId": "148ne9OMuPCzVDbmhU6CGsrj5TFyFTViG"
+        },
+        {
+          "type": "cards",
+          "items": [
+            {
+              "href": "/produkter/haeny/manuella-pumpar",
+              "label": "Läs mer",
+              "image": "/assets/img/haeny-manuella-pumpar.webp",
+              "width": 741,
+              "height": 871,
+              "alt": "Häny – Manual concrete pumps (IC) – logo"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Manual pumps"
+        },
+        {
+          "type": "cards",
+          "items": [
+            {
+              "href": "/produkter/haeny/automatiska-pumpar",
+              "label": "Läs mer",
+              "image": "/assets/img/haeny-automatiska-pumpar.webp",
+              "width": 704,
+              "height": 827,
+              "alt": "Häny – Fully automatic pumps (FAIC) – logo"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Automatic pumps"
+        },
+        {
+          "type": "text",
+          "html": "Häny’s technology"
+        },
+        {
+          "type": "image",
+          "alt": "HÄNY – image 2",
+          "width": 351,
+          "height": 264,
+          "src": "/assets/img/haeny-2.webp"
+        },
+        {
+          "type": "text",
+          "html": "Mixer"
+        },
+        {
+          "type": "text",
+          "html": "Mixing principle"
+        },
+        {
+          "type": "text",
+          "html": "For efficient mixing of cement, ultrafine cement and bentonite, Häny mixers create high shear forces with high-speed pumps and a unique vortex impeller. The pumps circulate the entire tank contents 2–4 times per minute, generating extreme turbulence and effective particle separation and ensuring complete hydration."
+        },
+        {
+          "type": "text",
+          "html": "This intense hydration gives a stable and easily workable suspension, even for difficult-to-mix additives. The HCM mixer eliminates the need for pre-soaking of bentonite or storage tanks."
+        },
+        {
+          "type": "image",
+          "alt": "HÄNY – image 3",
+          "width": 599,
+          "height": 440,
+          "src": "/assets/img/haeny-3.webp"
+        },
+        {
+          "type": "text",
+          "html": "Impeller"
+        },
+        {
+          "type": "text",
+          "html": "Häny’s vortex impeller has a large throughput (15–80 mm) and is extremely wear-resistant, which reduces wear and clogging. The HCM 300 and HCM 600 models can mix sandy grouts with particle sizes up to 8 mm. The maintenance-free shaft seal withstands dry running for several minutes without damage."
+        },
+        {
+          "type": "image",
+          "alt": "HÄNY – image 4",
+          "width": 682,
+          "height": 1548,
+          "src": "/assets/img/haeny-4.webp"
+        },
+        {
+          "type": "text",
+          "html": "Plunger"
+        },
+        {
+          "type": "text",
+          "html": "Plunger pump system"
+        },
+        {
+          "type": "text",
+          "html": "Unlike piston pumps, plunger pumps do not require close-fitting parts such as cylinders or precise piston seals. The plunger is sealed with a maintenance-free seal, and different diameters can be fitted to the ZMP 700 series pumps for flexible pressure and flow adaptation."
+        },
+        {
+          "type": "text",
+          "html": "Valves"
+        },
+        {
+          "type": "text",
+          "html": "The injection valves are made of wear-resistant alloy steel with reversible valve seats. The hydraulic system provides a fast suction stroke that keeps the valves clean by flushing away heavy particles. The pumps also handle suspensions with a low water/cement ratio and a high sand content."
+        },
+        {
+          "type": "image",
+          "alt": "HÄNY – image 5",
+          "width": 649,
+          "height": 490,
+          "src": "/assets/img/haeny-5.webp"
+        },
+        {
+          "type": "text",
+          "html": "Control block for flow control"
+        },
+        {
+          "type": "text",
+          "html": "Automatic pressure control"
+        },
+        {
+          "type": "text",
+          "html": "ZMP 700 pumps have valves for precise setting of maximum pressure. When the pressure is reached, the flow is adjusted automatically or stopped, while the pressure is maintained. Some models can be set from as low as 1 bar, which enables safe grouting in sensitive formations."
+        },
+        {
+          "type": "text",
+          "html": "Flow control"
+        },
+        {
+          "type": "text",
+          "html": "Built-in flow regulation allows the maximum flow to be set, which enables slow grouting in soft ground conditions without segregation or new voids. Together with the pressure control, the pumps can also be used for permeability tests."
+        },
+        {
+          "type": "cards",
+          "items": [
+            {
+              "href": "/produkter/ahlm/st-5",
+              "label": "Läs mer",
+              "html": "Ofta kan det vara bra att kombinera pumpen med en silo för att säkerställa en jämn och kontinuerlig materialtillförsel. En silo minskar hanteringen av storsäckar, förbättrar arbetsflödet och kan utrustas med skruvtransportör för automatisk matning till pumpen. Klicka på \"Läs mer\" för att komma till exempel på en silo som vi rekommenderar.",
+              "text": "It can often be a good idea to combine the pump with a silo to ensure an even and continuous supply of material. A silo reduces the handling of big bags, improves the workflow and can be fitted with a screw conveyor for automatic feeding to the pump. Click “Read more” to see an example of a silo that we recommend.",
+              "image": "/assets/img/ahlm-st-5-2.webp",
+              "width": 1502,
+              "height": 897,
+              "alt": "Silo – logo"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Silo"
+        },
+        {
+          "type": "image",
+          "alt": "HÄNY – image 6",
+          "width": 1100,
+          "height": 355,
+          "src": "/assets/img/haeny-6.webp"
+        }
+      ],
+      "published": true
+    },
+    "es": {
+      "title": "HÄNY",
+      "h1": "HÄNY",
+      "description": "Häny fabrica sistemas de inyección y mezcla. Consulte su folleto a continuación o contáctenos para más información.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "HÄNY",
+          "width": 832,
+          "height": 143,
+          "src": "/assets/img/haeny-1.webp"
+        },
+        {
+          "type": "text",
+          "html": "Häny fabrica sistemas de inyección y mezcla. Consulte su folleto a continuación o <a href=\"/kontakta-oss\">contáctenos</a> para más información."
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Folleto",
+          "href": "/assets/docs/haeny-ladda-ner-huvudbroschyr.pdf",
+          "driveId": "148ne9OMuPCzVDbmhU6CGsrj5TFyFTViG"
+        },
+        {
+          "type": "cards",
+          "items": [
+            {
+              "href": "/produkter/haeny/manuella-pumpar",
+              "label": "Läs mer",
+              "image": "/assets/img/haeny-manuella-pumpar.webp",
+              "width": 741,
+              "height": 871,
+              "alt": "Häny – Bombas de hormigón manuales (IC) – logotipo"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Bombas manuales"
+        },
+        {
+          "type": "cards",
+          "items": [
+            {
+              "href": "/produkter/haeny/automatiska-pumpar",
+              "label": "Läs mer",
+              "image": "/assets/img/haeny-automatiska-pumpar.webp",
+              "width": 704,
+              "height": 827,
+              "alt": "Häny – Bombas totalmente automáticas (FAIC) – logotipo"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Bombas automáticas"
+        },
+        {
+          "type": "text",
+          "html": "La tecnología de Häny"
+        },
+        {
+          "type": "image",
+          "alt": "HÄNY – imagen 2",
+          "width": 351,
+          "height": 264,
+          "src": "/assets/img/haeny-2.webp"
+        },
+        {
+          "type": "text",
+          "html": "Mezcladora"
+        },
+        {
+          "type": "text",
+          "html": "Principio de mezcla"
+        },
+        {
+          "type": "text",
+          "html": "Para una mezcla eficiente de cemento, cemento ultrafino y bentonita, las mezcladoras Häny generan elevadas fuerzas de cizallamiento con bombas de alta velocidad y un impulsor de vórtice exclusivo. Las bombas hacen circular todo el contenido del depósito de 2 a 4 veces por minuto, lo que genera una turbulencia extrema y una separación eficaz de las partículas, y garantiza una hidratación completa."
+        },
+        {
+          "type": "text",
+          "html": "Esta hidratación intensiva proporciona una suspensión estable y fácil de trabajar, incluso con aditivos difíciles de mezclar. La mezcladora HCM elimina la necesidad de pre-humedecer la bentonita o de usar depósitos de almacenamiento."
+        },
+        {
+          "type": "image",
+          "alt": "HÄNY – imagen 3",
+          "width": 599,
+          "height": 440,
+          "src": "/assets/img/haeny-3.webp"
+        },
+        {
+          "type": "text",
+          "html": "Impulsor"
+        },
+        {
+          "type": "text",
+          "html": "El impulsor de vórtice de Häny tiene un gran paso (15–80 mm) y es extremadamente resistente al desgaste, lo que reduce el desgaste y los atascos. Los modelos HCM 300 y HCM 600 pueden mezclar lechadas arenosas con tamaños de partícula de hasta 8 mm. El sello del eje, que no requiere mantenimiento, soporta el funcionamiento en seco durante varios minutos sin sufrir daños."
+        },
+        {
+          "type": "image",
+          "alt": "HÄNY – imagen 4",
+          "width": 682,
+          "height": 1548,
+          "src": "/assets/img/haeny-4.webp"
+        },
+        {
+          "type": "text",
+          "html": "Émbolo"
+        },
+        {
+          "type": "text",
+          "html": "Sistema de bomba de émbolo"
+        },
+        {
+          "type": "text",
+          "html": "A diferencia de las bombas de pistón, las bombas de émbolo no requieren piezas de ajuste preciso como cilindros o juntas de pistón exactas. El émbolo se sella con una junta que no requiere mantenimiento, y pueden montarse distintos diámetros en las bombas de la serie ZMP 700 para adaptar con flexibilidad la presión y el caudal."
+        },
+        {
+          "type": "text",
+          "html": "Válvulas"
+        },
+        {
+          "type": "text",
+          "html": "Las válvulas de inyección están fabricadas en acero aleado resistente al desgaste con asientos de válvula reversibles. El sistema hidráulico proporciona una carrera de aspiración rápida que mantiene limpias las válvulas al arrastrar las partículas pesadas. Las bombas también manejan suspensiones con una baja relación agua/cemento y un alto contenido de arena."
+        },
+        {
+          "type": "image",
+          "alt": "HÄNY – imagen 5",
+          "width": 649,
+          "height": 490,
+          "src": "/assets/img/haeny-5.webp"
+        },
+        {
+          "type": "text",
+          "html": "Bloque de control para regular el caudal"
+        },
+        {
+          "type": "text",
+          "html": "Control automático de presión"
+        },
+        {
+          "type": "text",
+          "html": "Las bombas ZMP 700 tienen válvulas para ajustar con precisión la presión máxima. Al alcanzar la presión, el caudal se ajusta automáticamente o se detiene, manteniendo la presión. Algunos modelos pueden ajustarse desde tan solo 1 bar, lo que permite inyectar con seguridad en formaciones sensibles."
+        },
+        {
+          "type": "text",
+          "html": "Control del caudal"
+        },
+        {
+          "type": "text",
+          "html": "La regulación de caudal integrada permite ajustar el caudal máximo, lo que posibilita una inyección lenta en terrenos blandos sin segregación ni nuevos huecos. Junto con el control de presión, las bombas también pueden utilizarse para ensayos de permeabilidad."
+        },
+        {
+          "type": "cards",
+          "items": [
+            {
+              "href": "/produkter/ahlm/st-5",
+              "label": "Läs mer",
+              "html": "Ofta kan det vara bra att kombinera pumpen med en silo för att säkerställa en jämn och kontinuerlig materialtillförsel. En silo minskar hanteringen av storsäckar, förbättrar arbetsflödet och kan utrustas med skruvtransportör för automatisk matning till pumpen. Klicka på \"Läs mer\" för att komma till exempel på en silo som vi rekommenderar.",
+              "text": "A menudo es recomendable combinar la bomba con un silo para garantizar un suministro de material uniforme y continuo. Un silo reduce el manejo de big bags, mejora el flujo de trabajo y puede equiparse con un tornillo transportador para la alimentación automática a la bomba. Haga clic en «Leer más» para ver un ejemplo de silo que recomendamos.",
+              "image": "/assets/img/ahlm-st-5-2.webp",
+              "width": 1502,
+              "height": 897,
+              "alt": "Silo – logotipo"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Silo"
+        },
+        {
+          "type": "image",
+          "alt": "HÄNY – imagen 6",
+          "width": 1100,
+          "height": 355,
+          "src": "/assets/img/haeny-6.webp"
+        }
+      ],
+      "published": true
+    },
+    "no": {
+      "title": "HÄNY",
+      "h1": "HÄNY",
+      "description": "Häny produserer injiserings- og røresystemer. Ta en titt i brosjyren deres nedenfor eller kontakt oss for mer informasjon.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "HÄNY",
+          "width": 832,
+          "height": 143,
+          "src": "/assets/img/haeny-1.webp"
+        },
+        {
+          "type": "text",
+          "html": "Häny produserer injiserings- og røresystemer. Ta en titt i brosjyren deres nedenfor eller <a href=\"/kontakta-oss\">kontakt oss</a> for mer informasjon."
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Brosjyre",
+          "href": "/assets/docs/haeny-ladda-ner-huvudbroschyr.pdf",
+          "driveId": "148ne9OMuPCzVDbmhU6CGsrj5TFyFTViG"
+        },
+        {
+          "type": "cards",
+          "items": [
+            {
+              "href": "/produkter/haeny/manuella-pumpar",
+              "label": "Läs mer",
+              "image": "/assets/img/haeny-manuella-pumpar.webp",
+              "width": 741,
+              "height": 871,
+              "alt": "Häny – Manuelle betongpumper (IC) – logo"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Manuelle pumper"
+        },
+        {
+          "type": "cards",
+          "items": [
+            {
+              "href": "/produkter/haeny/automatiska-pumpar",
+              "label": "Läs mer",
+              "image": "/assets/img/haeny-automatiska-pumpar.webp",
+              "width": 704,
+              "height": 827,
+              "alt": "Häny – Helautomatiske pumper (FAIC) – logo"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Automatiske pumper"
+        },
+        {
+          "type": "text",
+          "html": "Hänys teknologi"
+        },
+        {
+          "type": "image",
+          "alt": "HÄNY – bilde 2",
+          "width": 351,
+          "height": 264,
+          "src": "/assets/img/haeny-2.webp"
+        },
+        {
+          "type": "text",
+          "html": "Mikser"
+        },
+        {
+          "type": "text",
+          "html": "Blandeprinsipp"
+        },
+        {
+          "type": "text",
+          "html": "For effektiv blanding av sement, ultrafin sement og bentonitt skaper Häny-miksere høye skjærkrefter med høyturstallspumper og en unik vortex-impeller. Pumpene sirkulerer hele tankinnholdet 2–4 ganger per minutt, noe som genererer ekstrem turbulens og effektiv partikkelseparasjon samt sikrer fullstendig hydratisering."
+        },
+        {
+          "type": "text",
+          "html": "Denne intensive hydratiseringen gir en stabil og lettbearbeidet suspensjon, selv for tilsetningsstoffer som er vanskelige å blande. HCM-mikseren eliminerer behovet for forhåndsbløtlegging av bentonitt eller lagringstanker."
+        },
+        {
+          "type": "image",
+          "alt": "HÄNY – bilde 3",
+          "width": 599,
+          "height": 440,
+          "src": "/assets/img/haeny-3.webp"
+        },
+        {
+          "type": "text",
+          "html": "Impeller"
+        },
+        {
+          "type": "text",
+          "html": "Hänys vortex-impeller har stor gjennomstrømning (15–80 mm) og er ekstremt slitesterk, noe som reduserer slitasje og tilstopping. Modellene HCM 300 og HCM 600 kan blande sandholdige injiseringsmørtler med partikkelstørrelse opptil 8 mm. Den vedlikeholdsfrie akseltetningen tåler tørrkjøring i flere minutter uten skader."
+        },
+        {
+          "type": "image",
+          "alt": "HÄNY – bilde 4",
+          "width": 682,
+          "height": 1548,
+          "src": "/assets/img/haeny-4.webp"
+        },
+        {
+          "type": "text",
+          "html": "Plunger"
+        },
+        {
+          "type": "text",
+          "html": "Plungerpumpesystem"
+        },
+        {
+          "type": "text",
+          "html": "I motsetning til stempelpumper krever plungerpumper ingen tettpassede deler som sylindre eller presise stempeltetninger. Plungeren er tettet med en vedlikeholdsfri tetning, og ulike diametere kan monteres på ZMP 700-seriens pumper for fleksibel tilpasning av trykk og flyt."
+        },
+        {
+          "type": "text",
+          "html": "Ventiler"
+        },
+        {
+          "type": "text",
+          "html": "Injiseringsventilene er laget av slitesterkt legert stål med vendbare ventilseter. Det hydrauliske systemet gir en rask sugebevegelse som holder ventilene rene ved å spyle bort tunge partikler. Pumpene håndterer også suspensjoner med lavt vann/sement-innhold og høy sandandel."
+        },
+        {
+          "type": "image",
+          "alt": "HÄNY – bilde 5",
+          "width": 649,
+          "height": 490,
+          "src": "/assets/img/haeny-5.webp"
+        },
+        {
+          "type": "text",
+          "html": "Kontrollblokk for flytkontroll"
+        },
+        {
+          "type": "text",
+          "html": "Automatisk trykkontroll"
+        },
+        {
+          "type": "text",
+          "html": "ZMP 700-pumper har ventiler for nøyaktig innstilling av maksimalt trykk. Når trykket er nådd, justeres flyten automatisk eller stoppes, samtidig som trykket opprettholdes. Enkelte modeller kan stilles inn helt ned til 1 bar, noe som muliggjør sikker injisering i sensitive formasjoner."
+        },
+        {
+          "type": "text",
+          "html": "Flytkontroll"
+        },
+        {
+          "type": "text",
+          "html": "Innebygd flytregulering gjør det mulig å stille inn maksimal flyt, noe som muliggjør langsom injisering i myke grunnforhold uten segregering eller nye hulrom. Sammen med trykkontrollen kan pumpene også brukes til permeabilitetstester."
+        },
+        {
+          "type": "cards",
+          "items": [
+            {
+              "href": "/produkter/ahlm/st-5",
+              "label": "Läs mer",
+              "html": "Ofta kan det vara bra att kombinera pumpen med en silo för att säkerställa en jämn och kontinuerlig materialtillförsel. En silo minskar hanteringen av storsäckar, förbättrar arbetsflödet och kan utrustas med skruvtransportör för automatisk matning till pumpen. Klicka på \"Läs mer\" för att komma till exempel på en silo som vi rekommenderar.",
+              "text": "Det kan ofte være lurt å kombinere pumpen med en silo for å sikre jevn og kontinuerlig materialtilførsel. En silo reduserer håndteringen av storsekker, forbedrer arbeidsflyten og kan utstyres med skruetransportør for automatisk mating til pumpen. Klikk på «Les mer» for å komme til et eksempel på en silo som vi anbefaler.",
+              "image": "/assets/img/ahlm-st-5-2.webp",
+              "width": 1502,
+              "height": 897,
+              "alt": "Silo – logo"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Silo"
+        },
+        {
+          "type": "image",
+          "alt": "HÄNY – bilde 6",
+          "width": 1100,
+          "height": 355,
+          "src": "/assets/img/haeny-6.webp"
+        }
+      ],
+      "published": true
+    }
+  },
+  "source": {
+    "url": "https://www.betongakuten.se/produkter/haeny"
+  },
+  "logo": "/assets/img/logo-haeny.webp"
+}

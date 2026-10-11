@@ -1,0 +1,314 @@
+{
+  "path": "/produkter/ecobeton/ercole-ecoactive",
+  "updated": "2026-10-10",
+  "template": "product",
+  "order": 1,
+  "published": true,
+  "hero": {
+    "image": "/assets/img/ecobeton-ercole-ecoactive-hero.webp"
+  },
+  "i18n": {
+    "sv": {
+      "title": "Ercole EcoActive",
+      "h1": "Ercole EcoActive",
+      "description": "Ercole® ECOACTIVE är en fotokatalytisk cementbaserad blandning för beläggning där man vill uppnå minskad luftförorening. Den kan även tillämpas där det…",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Ecobeton – logotyp",
+          "href": "/produkter/ecobeton",
+          "width": 854,
+          "height": 497,
+          "src": "/assets/img/ecobeton-2.webp"
+        },
+        {
+          "type": "image",
+          "alt": "Ercole EcoActive – bild 2",
+          "width": 412,
+          "height": 500,
+          "src": "/assets/img/ecobeton-ercole-ecoactive-2.webp"
+        },
+        {
+          "type": "text",
+          "html": "Ercole® ECOACTIVE är en fotokatalytisk cementbaserad blandning för beläggning där man vill uppnå minskad luftförorening. Den kan även tillämpas där det krävs liten tjocklek. Ercole®ECOACTIVE aktiverar en kemisk reaktion som skapar nedbrytning av föroreningar. Ercole®ECOACTIVE ger över 60% minskning av föroreningar, säkerställer avlägsnande av partiklar och gör luften ren och frisk. Ercole®ECOACTIVE är säkert och hållbart, vattentät och resistent. Kan användas på betong, trä och asfalt, både inomhus och utomhus."
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Tekniskt datablad (TDS)",
+          "href": "/assets/docs/ecobeton-ercole-ecoactive-tekniskt-datablad-tds.pdf",
+          "driveId": "1tIUSvMaeCwyUK3pHDFC7f_dIALB9cFer"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Egenskaper"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Fotokatalytisk accelerator",
+            "Bryter ner föroreningar",
+            "Vattentät",
+            "Skapar ren och frisk luft",
+            "Minskar över 60% av föroreningar",
+            "Fungerar på både vertikala och horisontella ytor"
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Användningsområden"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Skolor, förskolor",
+            "Arbetsplatser",
+            "Offentliga byggnader",
+            "Sjukhus",
+            "Gång-/cykelvägar",
+            "Privata hus och förråd",
+            "Vägar",
+            "Torg",
+            "Parkeringsplatser och garage"
+          ]
+        },
+        {
+          "type": "text",
+          "html": "Applicering<br>Blanda med vatten (4-6 liter för självnivellering) tills önskad konsistens uppnåtts. Vertikala och takytor kräver en stuckaturliknande konsistens. Blanda med en handborr eller rotorvisp i en 20 liters hink. För större mängder kan med fördel en cementblandare användas. Applicera med en gummiskrapa, spruta, murslev eller liknande. För att uppnå önskad effekt kan slipning mellan lagren och efter slutresultat göras. Använd sandpapper eller polermaskin."
+        }
+      ]
+    },
+    "en": {
+      "title": "Ercole EcoActive",
+      "h1": "Ercole EcoActive",
+      "description": "Ercole® ECOACTIVE is a photocatalytic cement-based mix for coatings where reduced air pollution is desired. It can also be used where a small thickness is required…",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Ecobeton – logo",
+          "href": "/produkter/ecobeton",
+          "width": 854,
+          "height": 497,
+          "src": "/assets/img/ecobeton-2.webp"
+        },
+        {
+          "type": "image",
+          "alt": "Ercole EcoActive – image 2",
+          "width": 412,
+          "height": 500,
+          "src": "/assets/img/ecobeton-ercole-ecoactive-2.webp"
+        },
+        {
+          "type": "text",
+          "html": "Ercole® ECOACTIVE is a photocatalytic cement-based mix for coatings where reduced air pollution is desired. It can also be used where a small thickness is required. Ercole® ECOACTIVE triggers a chemical reaction that breaks down pollutants. Ercole® ECOACTIVE delivers over 60% reduction of pollutants, ensures the removal of particles and makes the air clean and fresh. Ercole® ECOACTIVE is safe and durable, waterproof and resistant. It can be used on concrete, wood and asphalt, both indoors and outdoors."
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Technical data sheet (TDS)",
+          "href": "/assets/docs/ecobeton-ercole-ecoactive-tekniskt-datablad-tds.pdf",
+          "driveId": "1tIUSvMaeCwyUK3pHDFC7f_dIALB9cFer"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Properties"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Photocatalytic accelerator",
+            "Breaks down pollutants",
+            "Waterproof",
+            "Creates clean and fresh air",
+            "Reduces pollutants by over 60%",
+            "Works on both vertical and horizontal surfaces"
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Areas of use"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Schools, preschools",
+            "Workplaces",
+            "Public buildings",
+            "Hospitals",
+            "Pedestrian and cycle paths",
+            "Private houses and sheds",
+            "Roads",
+            "Squares",
+            "Car parks and garages"
+          ]
+        },
+        {
+          "type": "text",
+          "html": "Application<br>Mix with water (4–6 litres for self-levelling) until the desired consistency is reached. Vertical and ceiling surfaces require a stucco-like consistency. Mix with a hand drill or paddle mixer in a 20-litre bucket. For larger quantities a cement mixer can be used to advantage. Apply with a rubber squeegee, sprayer, trowel or similar. To achieve the desired effect, sanding can be done between layers and after the final result. Use sandpaper or a polishing machine."
+        }
+      ],
+      "published": true
+    },
+    "es": {
+      "title": "Ercole EcoActive",
+      "h1": "Ercole EcoActive",
+      "description": "Ercole® ECOACTIVE es una mezcla fotocatalítica a base de cemento para recubrimientos en los que se desea reducir la contaminación del aire. También puede aplicarse donde se requiere poco espesor…",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Ecobeton – logotipo",
+          "href": "/produkter/ecobeton",
+          "width": 854,
+          "height": 497,
+          "src": "/assets/img/ecobeton-2.webp"
+        },
+        {
+          "type": "image",
+          "alt": "Ercole EcoActive – imagen 2",
+          "width": 412,
+          "height": 500,
+          "src": "/assets/img/ecobeton-ercole-ecoactive-2.webp"
+        },
+        {
+          "type": "text",
+          "html": "Ercole® ECOACTIVE es una mezcla fotocatalítica a base de cemento para recubrimientos en los que se desea reducir la contaminación del aire. También puede aplicarse donde se requiere poco espesor. Ercole® ECOACTIVE activa una reacción química que descompone los contaminantes. Ercole® ECOACTIVE logra una reducción de más del 60 % de los contaminantes, garantiza la eliminación de partículas y deja el aire limpio y fresco. Ercole® ECOACTIVE es seguro y duradero, impermeable y resistente. Puede usarse sobre hormigón, madera y asfalto, tanto en interiores como en exteriores."
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Ficha técnica (TDS)",
+          "href": "/assets/docs/ecobeton-ercole-ecoactive-tekniskt-datablad-tds.pdf",
+          "driveId": "1tIUSvMaeCwyUK3pHDFC7f_dIALB9cFer"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Propiedades"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Acelerador fotocatalítico",
+            "Descompone los contaminantes",
+            "Impermeable",
+            "Genera aire limpio y fresco",
+            "Reduce los contaminantes en más de un 60 %",
+            "Funciona tanto en superficies verticales como horizontales"
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Ámbitos de uso"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Escuelas, guarderías",
+            "Lugares de trabajo",
+            "Edificios públicos",
+            "Hospitales",
+            "Caminos peatonales y carriles bici",
+            "Viviendas particulares y trasteros",
+            "Carreteras",
+            "Plazas",
+            "Aparcamientos y garajes"
+          ]
+        },
+        {
+          "type": "text",
+          "html": "Aplicación<br>Mezcle con agua (4–6 litros para autonivelante) hasta alcanzar la consistencia deseada. Las superficies verticales y los techos requieren una consistencia similar al estuco. Mezcle con un taladro de mano o una varilla mezcladora en un cubo de 20 litros. Para cantidades mayores es recomendable usar una hormigonera. Aplique con una rasqueta de goma, pulverizador, paleta o similar. Para lograr el efecto deseado, puede lijarse entre capas y tras el resultado final. Utilice papel de lija o una pulidora."
+        }
+      ],
+      "published": true
+    },
+    "no": {
+      "title": "Ercole EcoActive",
+      "h1": "Ercole EcoActive",
+      "description": "Ercole® ECOACTIVE er en fotokatalytisk sementbasert blanding for belegg der man ønsker redusert luftforurensning. Den kan også brukes der det kreves liten tykkelse…",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Ecobeton – logo",
+          "href": "/produkter/ecobeton",
+          "width": 854,
+          "height": 497,
+          "src": "/assets/img/ecobeton-2.webp"
+        },
+        {
+          "type": "image",
+          "alt": "Ercole EcoActive – bilde 2",
+          "width": 412,
+          "height": 500,
+          "src": "/assets/img/ecobeton-ercole-ecoactive-2.webp"
+        },
+        {
+          "type": "text",
+          "html": "Ercole® ECOACTIVE er en fotokatalytisk sementbasert blanding for belegg der man ønsker redusert luftforurensning. Den kan også brukes der det kreves liten tykkelse. Ercole® ECOACTIVE aktiverer en kjemisk reaksjon som bryter ned forurensning. Ercole® ECOACTIVE gir over 60 % reduksjon av forurensning, sikrer fjerning av partikler og gjør luften ren og frisk. Ercole® ECOACTIVE er trygt og holdbart, vanntett og motstandsdyktig. Kan brukes på betong, tre og asfalt, både innendørs og utendørs."
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Teknisk datablad (TDS)",
+          "href": "/assets/docs/ecobeton-ercole-ecoactive-tekniskt-datablad-tds.pdf",
+          "driveId": "1tIUSvMaeCwyUK3pHDFC7f_dIALB9cFer"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Egenskaper"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Fotokatalytisk akselerator",
+            "Bryter ned forurensning",
+            "Vanntett",
+            "Skaper ren og frisk luft",
+            "Reduserer forurensning med over 60 %",
+            "Fungerer på både vertikale og horisontale flater"
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Bruksområder"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Skoler, barnehager",
+            "Arbeidsplasser",
+            "Offentlige bygg",
+            "Sykehus",
+            "Gang- og sykkelveier",
+            "Private hus og uthus",
+            "Veier",
+            "Torg",
+            "Parkeringsplasser og garasjer"
+          ]
+        },
+        {
+          "type": "text",
+          "html": "Påføring<br>Bland med vann (4–6 liter for selvutjevnende) til ønsket konsistens er oppnådd. Vertikale flater og tak krever en stukkaturlignende konsistens. Bland med håndbormaskin eller rørepisk i en 20 liters bøtte. For større mengder kan en sementblander med fordel brukes. Påfør med gummiraskel, sprøyte, murskje eller lignende. For å oppnå ønsket effekt kan det slipes mellom lagene og etter sluttresultatet. Bruk sandpapir eller poleringsmaskin."
+        }
+      ],
+      "published": true
+    }
+  },
+  "source": {
+    "url": "https://www.betongakuten.se/produkter/ecobeton/ercole-ecoactive"
+  }
+}

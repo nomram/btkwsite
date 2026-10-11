@@ -1,0 +1,330 @@
+{
+  "path": "/produkter/ecobeton/everwood",
+  "updated": "2026-10-10",
+  "template": "product",
+  "order": 3,
+  "published": true,
+  "hero": {
+    "image": "/assets/img/ecobeton-everwood-hero.webp"
+  },
+  "i18n": {
+    "sv": {
+      "title": "Everwood",
+      "h1": "Everwood",
+      "description": "Everwood är ett medel för att skydda alla typer av trä från försämring. Den består av vattenglas modifierat med en speciell katalysator. Produkten tränger…",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Ecobeton – logotyp",
+          "href": "/produkter/ecobeton",
+          "width": 854,
+          "height": 497,
+          "src": "/assets/img/ecobeton-2.webp"
+        },
+        {
+          "type": "image",
+          "alt": "Everwood – bild 2",
+          "width": 844,
+          "height": 1024,
+          "src": "/assets/img/ecobeton-everwood-2.webp"
+        },
+        {
+          "type": "text",
+          "html": "Everwood är ett medel för att skydda alla typer av trä från försämring. Den består av vattenglas modifierat med en speciell katalysator. Produkten tränger på djupet in i träets naturliga porositet och binder träfibrerna och bildar en permanent barriär. Everwood reducerar effektivt brännbarheten av trä. Den skyddar mot termiter och från absorptionen av vatten och fukt. Everwood förlänger hållbarheten av trä med alla ytbehandlingar."
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Tekniskt datablad (TDS)",
+          "href": "/assets/docs/ecobeton-everwood-tekniskt-datablad-tds.pdf",
+          "driveId": "10MX5EKVpLzjHdUECaxaZbybB7-BFDQQR"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Egenskaper"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Everwood är en permanent barriär för att effektivt förebygga och minska andelen fukt i virket (med minst 50 %) och förhindrar uppkomsten av mögel, svampar, bakterier, termiter och lågor vid brand, vilka är de främsta orsakerna till försämring. Den minskar penetrationen av oljor, fett och föroreningar.",
+            "Everwood producerar inte någon filmyta utan tränger in i strukturen och tillåter virket att andas normalt. Det förändrar inte träets naturliga struktur och färg, den är luktfri och färglös .",
+            "Everwood ökar hårdheten och därför motståndet av timmer för slitage och frys /tin-cykler över tiden.",
+            "Everwood minskar avsevärt brandfarligheten av trä.",
+            "Everwood förändrar inte strukturen eller den naturliga färgen på träet. Den förbättrar vidhäftningen av lacker, färgämnen, målarfärger och spackel på ett enhetligt sätt och förlänger livslängden med 300 %.",
+            "Everwood är giftfri och miljövänlig. Den är därför lämplig för användning i \" gröna byggnader \". Om den appliceras korrekt, är behandlingstiden garanterad för 8-10 år."
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Användningsområden"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Allt trä och timmer, inom och utomhus",
+            "Timmerstugor, trähus",
+            "Balkar och vindsutrymmen",
+            "Trä på trädgårdsmöbler, terrasser",
+            "Förråd",
+            "Trästaket",
+            "Fönsterkarmar, dörrar och balkonger",
+            "Behållare för växter och trästavar",
+            "Specialgolv, utomhusgolv"
+          ]
+        },
+        {
+          "type": "text",
+          "html": "Applicering"
+        },
+        {
+          "type": "text",
+          "html": "Naturliga och obehandlade träytor kräver ingen förberedelse. Everwood måste appliceras vid temperaturer över 5°C. Alla tidigare behandlingar eller målning måste tas bort för att se till penetrationens effektivitet i Everwood. Skaka ordentligt före användning. Späds eller blandas inte med någon annan vätska. Everwood bör appliceras med en lågtryckspump, rulle eller pensel. Normal applikation kräver endast en behandling och resultatet beror på porositeten i träet. Applicera fritt för att mätta materialet. Applicera nedifrån och uppåt på vertikala väggar."
+        }
+      ]
+    },
+    "en": {
+      "title": "Everwood",
+      "h1": "Everwood",
+      "description": "Everwood is an agent for protecting all types of wood from deterioration. It consists of water glass modified with a special catalyst. The product penetrates…",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Ecobeton – logo",
+          "href": "/produkter/ecobeton",
+          "width": 854,
+          "height": 497,
+          "src": "/assets/img/ecobeton-2.webp"
+        },
+        {
+          "type": "image",
+          "alt": "Everwood – image 2",
+          "width": 844,
+          "height": 1024,
+          "src": "/assets/img/ecobeton-everwood-2.webp"
+        },
+        {
+          "type": "text",
+          "html": "Everwood is an agent for protecting all types of wood from deterioration. It consists of water glass modified with a special catalyst. The product penetrates deep into the natural porosity of the wood and binds the wood fibres, forming a permanent barrier. Everwood effectively reduces the flammability of wood. It protects against termites and against the absorption of water and moisture. Everwood extends the durability of wood with all surface treatments."
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Technical data sheet (TDS)",
+          "href": "/assets/docs/ecobeton-everwood-tekniskt-datablad-tds.pdf",
+          "driveId": "10MX5EKVpLzjHdUECaxaZbybB7-BFDQQR"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Properties"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Everwood is a permanent barrier that effectively prevents and reduces the amount of moisture in the timber (by at least 50%) and prevents the formation of mould, fungi, bacteria, termites and flames in the event of fire, which are the main causes of deterioration. It reduces the penetration of oils, grease and pollutants.",
+            "Everwood does not form a surface film but penetrates into the structure and allows the timber to breathe normally. It does not change the natural structure and colour of the wood; it is odourless and colourless.",
+            "Everwood increases hardness and therefore the resistance of timber to wear and freeze/thaw cycles over time.",
+            "Everwood considerably reduces the flammability of wood.",
+            "Everwood does not change the structure or the natural colour of the wood. It improves the adhesion of varnishes, dyes, paints and fillers in a uniform way and extends service life by 300%.",
+            "Everwood is non-toxic and environmentally friendly. It is therefore suitable for use in “green buildings”. If applied correctly, the treatment is guaranteed for 8–10 years."
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Areas of use"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "All wood and timber, indoors and outdoors",
+            "Log cabins, timber houses",
+            "Beams and attics",
+            "Wood on garden furniture, decking",
+            "Sheds",
+            "Wooden fences",
+            "Window frames, doors and balconies",
+            "Planters and wooden stakes",
+            "Special floors, outdoor floors"
+          ]
+        },
+        {
+          "type": "text",
+          "html": "Application"
+        },
+        {
+          "type": "text",
+          "html": "Natural and untreated wooden surfaces require no preparation. Everwood must be applied at temperatures above 5 °C. All previous treatments or paint must be removed to ensure the effective penetration of Everwood. Shake well before use. Do not dilute or mix with any other liquid. Everwood should be applied with a low-pressure pump, roller or brush. Normal application requires only one treatment and the result depends on the porosity of the wood. Apply liberally to saturate the material. Apply from the bottom upwards on vertical walls."
+        }
+      ],
+      "published": true
+    },
+    "es": {
+      "title": "Everwood",
+      "h1": "Everwood",
+      "description": "Everwood es un producto para proteger todo tipo de madera del deterioro. Se compone de silicato sódico modificado con un catalizador especial. El producto penetra…",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Ecobeton – logotipo",
+          "href": "/produkter/ecobeton",
+          "width": 854,
+          "height": 497,
+          "src": "/assets/img/ecobeton-2.webp"
+        },
+        {
+          "type": "image",
+          "alt": "Everwood – imagen 2",
+          "width": 844,
+          "height": 1024,
+          "src": "/assets/img/ecobeton-everwood-2.webp"
+        },
+        {
+          "type": "text",
+          "html": "Everwood es un producto para proteger todo tipo de madera del deterioro. Se compone de silicato sódico modificado con un catalizador especial. El producto penetra en profundidad en la porosidad natural de la madera y une las fibras, formando una barrera permanente. Everwood reduce eficazmente la inflamabilidad de la madera. Protege frente a las termitas y frente a la absorción de agua y humedad. Everwood prolonga la durabilidad de la madera con cualquier tratamiento superficial."
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Ficha técnica (TDS)",
+          "href": "/assets/docs/ecobeton-everwood-tekniskt-datablad-tds.pdf",
+          "driveId": "10MX5EKVpLzjHdUECaxaZbybB7-BFDQQR"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Propiedades"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Everwood es una barrera permanente que previene y reduce eficazmente la humedad de la madera (al menos en un 50 %) e impide la aparición de moho, hongos, bacterias, termitas y llamas en caso de incendio, que son las principales causas de deterioro. Reduce la penetración de aceites, grasas y contaminantes.",
+            "Everwood no forma película superficial, sino que penetra en la estructura y permite que la madera respire con normalidad. No altera la estructura ni el color naturales de la madera; es inodoro e incoloro.",
+            "Everwood aumenta la dureza y, por tanto, la resistencia de la madera al desgaste y a los ciclos de hielo y deshielo con el tiempo.",
+            "Everwood reduce considerablemente la inflamabilidad de la madera.",
+            "Everwood no altera la estructura ni el color natural de la madera. Mejora la adherencia de barnices, tintes, pinturas y masillas de forma uniforme y prolonga la vida útil en un 300 %.",
+            "Everwood no es tóxico y es respetuoso con el medio ambiente. Por ello es adecuado para su uso en «edificios verdes». Si se aplica correctamente, el tratamiento está garantizado durante 8–10 años."
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Ámbitos de uso"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Toda la madera y los productos de madera, en interiores y exteriores",
+            "Cabañas de troncos, casas de madera",
+            "Vigas y buhardillas",
+            "Madera en muebles de jardín, terrazas",
+            "Cobertizos",
+            "Vallas de madera",
+            "Marcos de ventanas, puertas y balcones",
+            "Jardineras y estacas de madera",
+            "Suelos especiales, suelos de exterior"
+          ]
+        },
+        {
+          "type": "text",
+          "html": "Aplicación"
+        },
+        {
+          "type": "text",
+          "html": "Las superficies de madera naturales y sin tratar no requieren preparación. Everwood debe aplicarse a temperaturas superiores a 5 °C. Deben eliminarse todos los tratamientos o pinturas anteriores para asegurar la eficacia de la penetración de Everwood. Agitar bien antes de usar. No diluir ni mezclar con ningún otro líquido. Everwood debe aplicarse con bomba de baja presión, rodillo o brocha. La aplicación normal requiere un solo tratamiento y el resultado depende de la porosidad de la madera. Aplicar abundantemente hasta saturar el material. En paredes verticales, aplicar de abajo hacia arriba."
+        }
+      ],
+      "published": true
+    },
+    "no": {
+      "title": "Everwood",
+      "h1": "Everwood",
+      "description": "Everwood er et middel for å beskytte alle typer tre mot nedbrytning. Det består av vannglass modifisert med en spesiell katalysator. Produktet trenger…",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Ecobeton – logo",
+          "href": "/produkter/ecobeton",
+          "width": 854,
+          "height": 497,
+          "src": "/assets/img/ecobeton-2.webp"
+        },
+        {
+          "type": "image",
+          "alt": "Everwood – bilde 2",
+          "width": 844,
+          "height": 1024,
+          "src": "/assets/img/ecobeton-everwood-2.webp"
+        },
+        {
+          "type": "text",
+          "html": "Everwood er et middel for å beskytte alle typer tre mot nedbrytning. Det består av vannglass modifisert med en spesiell katalysator. Produktet trenger dypt inn i treets naturlige porøsitet, binder trefibrene og danner en permanent barriere. Everwood reduserer effektivt brennbarheten til tre. Det beskytter mot termitter og mot opptak av vann og fukt. Everwood forlenger holdbarheten til tre med alle overflatebehandlinger."
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Teknisk datablad (TDS)",
+          "href": "/assets/docs/ecobeton-everwood-tekniskt-datablad-tds.pdf",
+          "driveId": "10MX5EKVpLzjHdUECaxaZbybB7-BFDQQR"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Egenskaper"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Everwood er en permanent barriere som effektivt forebygger og reduserer fuktinnholdet i virket (med minst 50 %) og forhindrer oppkomst av mugg, sopp, bakterier, termitter og flammer ved brann, som er de viktigste årsakene til nedbrytning. Det reduserer inntrengning av oljer, fett og forurensning.",
+            "Everwood danner ikke noen filmoverflate, men trenger inn i strukturen og lar virket puste normalt. Det endrer ikke treets naturlige struktur og farge, og er luktfritt og fargeløst.",
+            "Everwood øker hardheten og dermed treverkets motstand mot slitasje og fryse-/tinesykluser over tid.",
+            "Everwood reduserer brennbarheten til tre betydelig.",
+            "Everwood endrer ikke treets struktur eller naturlige farge. Det forbedrer heftingen av lakk, beis, maling og sparkel på en jevn måte og forlenger levetiden med 300 %.",
+            "Everwood er giftfritt og miljøvennlig. Det er derfor egnet for bruk i «grønne bygg». Hvis det påføres korrekt, er behandlingen garantert i 8–10 år."
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Bruksområder"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Alt tre og virke, inne og ute",
+            "Tømmerhytter, trehus",
+            "Bjelker og loftsrom",
+            "Tre på hagemøbler, terrasser",
+            "Uthus",
+            "Tregjerder",
+            "Vindusrammer, dører og balkonger",
+            "Plantekasser og trestaker",
+            "Spesialgulv, utendørsgulv"
+          ]
+        },
+        {
+          "type": "text",
+          "html": "Påføring"
+        },
+        {
+          "type": "text",
+          "html": "Naturlige og ubehandlede trefl ater krever ingen forberedelse. Everwood må påføres ved temperaturer over 5 °C. All tidligere behandling eller maling må fjernes for å sikre at Everwood trenger effektivt inn. Rist godt før bruk. Må ikke fortynnes eller blandes med noen annen væske. Everwood bør påføres med lavtrykkspumpe, rull eller pensel. Normal påføring krever bare én behandling, og resultatet avhenger av treets porøsitet. Påfør rikelig for å mette materialet. Påfør nedenfra og opp på vertikale vegger."
+        }
+      ],
+      "published": true
+    }
+  },
+  "source": {
+    "url": "https://www.betongakuten.se/produkter/ecobeton/everwood"
+  }
+}

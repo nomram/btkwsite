@@ -1,0 +1,478 @@
+{
+  "path": "/produkter/tei/borrmaster/hemh",
+  "updated": "2026-10-10",
+  "template": "product",
+  "order": 3,
+  "published": true,
+  "hero": {
+    "image": "/assets/img/tei-borrmaster-hem-hero.webp"
+  },
+  "i18n": {
+    "sv": {
+      "title": "HEMH",
+      "h1": "HEMH",
+      "description": "Den största varianten av borrmaster är HEMH (Hydraulic Excavator Mount Heavy) och är avsedda för grävare med vikt runt 30 ton. För de allra största…",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "TEI Rock Drills – logotyp",
+          "href": "/produkter/tei",
+          "width": 1920,
+          "height": 1117,
+          "src": "/assets/img/tei-2.webp"
+        },
+        {
+          "type": "image",
+          "alt": "HEMH – bild 2",
+          "width": 775,
+          "height": 583,
+          "src": "/assets/img/tei-borrmaster-hemh-2.webp"
+        },
+        {
+          "type": "text",
+          "html": "Den största varianten av borrmaster är HEMH (Hydraulic Excavator Mount Heavy) och är avsedda för grävare med vikt runt 30 ton. För de allra största modellerna av HEMH kan ena stickan från grävaren ersättas med masten. Då kan grävaren få plats på ett ekipage."
+        },
+        {
+          "type": "datasheet",
+          "title": "Teknisk data",
+          "note": "TEI:s tekniska data förutsätter 40 % hydraulisk effektförlust.",
+          "tagline": "Hydraulisk borrenhet för tunga grävmaskiner",
+          "intro": [
+            "HEMH (Hydraulic Excavator Mount ”Heavy”) är den största och kraftfullaste av TEI:s grävmaskinsborrar. Trots sin storlek behåller HEMH fördelarna med att vara ett riktigt tillbehör som inte kräver att grävmaskinen byggs om. Konstruktionen är enkel så att utrustningen snabbt kan monteras och demonteras.",
+            "HEMH får sin hydraulkraft från grävmaskinens hammarkrets och kräver ingen extra hydraulik. TEI använder egenkonstruerade och egentillverkade komponenter för jämn kvalitet i alla delar av borrsystemet. Våra rotations- och slagsystem har den kraftfulla, lätta konstruktion som vi är kända för. HEMH är byggd för att monteras på maskiner på 25–30 ton och kan konfigureras för de flesta borrmetoder."
+          ],
+          "groups": [
+            {
+              "title": "Med topphammare (TE726 / TE760 / TE1000)",
+              "rows": [
+                {
+                  "label": "Hydraulflöde",
+                  "metric": "178 / 197 / 269 lpm",
+                  "us": "47 / 52 / 71 gpm"
+                },
+                {
+                  "label": "Hydraultryck",
+                  "metric": "172 / 172 / 207 bar",
+                  "us": "2500 / 2500 / 3000 psi"
+                },
+                {
+                  "label": "Total matningslängd",
+                  "metric": "5,23 m",
+                  "us": "206 tum"
+                },
+                {
+                  "label": "Borrslag",
+                  "metric": "3,96 m",
+                  "us": "13 ft"
+                },
+                {
+                  "label": "Dragkraft",
+                  "metric": "53 kN",
+                  "us": "12 000 lbf"
+                },
+                {
+                  "label": "Vikt",
+                  "metric": "2 839 / 2 925 / 3 134 kg",
+                  "us": "6260 / 6450 / 6910 lbs"
+                }
+              ]
+            },
+            {
+              "title": "Med rotationshuvud (RDS550 / RDS1004)",
+              "rows": [
+                {
+                  "label": "Hydraulflöde",
+                  "metric": "151 / 227 lpm",
+                  "us": "40 / 60 gpm"
+                },
+                {
+                  "label": "Hydraultryck",
+                  "metric": "207 bar",
+                  "us": "3000 psi"
+                },
+                {
+                  "label": "Total matningslängd",
+                  "metric": "5,23 m",
+                  "us": "206 tum"
+                },
+                {
+                  "label": "Borrslag",
+                  "metric": "3,96 m",
+                  "us": "13 ft"
+                },
+                {
+                  "label": "Dragkraft",
+                  "metric": "53 kN",
+                  "us": "12 000 lbf"
+                },
+                {
+                  "label": "Vikt",
+                  "metric": "2 862 / 3 040 kg",
+                  "us": "6310 / 6704 lbs"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Produktblad",
+          "href": "/assets/docs/tei-borrmaster-hemh-ladda-ner-pdf.pdf",
+          "driveId": "195_P1ktNcDOUH-Rjz5TsX0WSGZlTCS7k"
+        }
+      ]
+    },
+    "en": {
+      "title": "HEMH",
+      "h1": "HEMH",
+      "description": "The largest drill mast variant is the HEMH (Hydraulic Excavator Mount Heavy), intended for excavators weighing around 30 tonnes. For the very largest…",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "TEI Rock Drills – logo",
+          "href": "/produkter/tei",
+          "width": 1920,
+          "height": 1117,
+          "src": "/assets/img/tei-2.webp"
+        },
+        {
+          "type": "image",
+          "alt": "HEMH – image 2",
+          "width": 775,
+          "height": 583,
+          "src": "/assets/img/tei-borrmaster-hemh-2.webp"
+        },
+        {
+          "type": "text",
+          "html": "The largest drill mast variant is the HEMH (Hydraulic Excavator Mount Heavy), intended for excavators weighing around 30 tonnes. For the very largest HEMH models, one of the excavator’s sticks can be replaced by the mast. The excavator can then fit on a single transport."
+        },
+        {
+          "type": "datasheet",
+          "title": "Technical data",
+          "note": "TEI’s technical specifications assume a 40% hydraulic power loss.",
+          "tagline": "Hydraulic drilling unit for heavy excavators",
+          "intro": [
+            "HEMH (Hydraulic Excavator Mount “Heavy”) is the largest and most powerful of TEI’s excavator drills. Despite its size, HEMH retains the advantages of being a true attachment that does not require the excavator to be modified. The design is simple so that the equipment can be mounted and dismounted quickly.",
+            "HEMH receives its hydraulic power from the excavator’s hammer circuit and requires no extra hydraulics. TEI uses in-house designed and manufactured components for consistent quality in every part of the drilling system. Our rotation and percussion systems have the powerful, lightweight design we are known for. HEMH is built to be mounted on machines of 25–30 tonnes and can be configured for most drilling methods."
+          ],
+          "groups": [
+            {
+              "title": "With drifters (TE726 / TE760 / TE1000)",
+              "rows": [
+                {
+                  "label": "Hydraulic flow",
+                  "metric": "178 / 197 / 269 lpm",
+                  "us": "47 / 52 / 71 gpm"
+                },
+                {
+                  "label": "Hydraulic pressure",
+                  "metric": "172 / 172 / 207 bar",
+                  "us": "2500 / 2500 / 3000 psi"
+                },
+                {
+                  "label": "Total feed length",
+                  "metric": "5,23 m",
+                  "us": "206 in"
+                },
+                {
+                  "label": "Drill travel",
+                  "metric": "3,96 m",
+                  "us": "13 ft"
+                },
+                {
+                  "label": "Pull force",
+                  "metric": "53 kN",
+                  "us": "12 000 lbf"
+                },
+                {
+                  "label": "Weight",
+                  "metric": "2 839 / 2 925 / 3 134 kg",
+                  "us": "6260 / 6450 / 6910 lbs"
+                }
+              ]
+            },
+            {
+              "title": "With rotary head (RDS550 / RDS1004)",
+              "rows": [
+                {
+                  "label": "Hydraulic flow",
+                  "metric": "151 / 227 lpm",
+                  "us": "40 / 60 gpm"
+                },
+                {
+                  "label": "Hydraulic pressure",
+                  "metric": "207 bar",
+                  "us": "3000 psi"
+                },
+                {
+                  "label": "Total feed length",
+                  "metric": "5,23 m",
+                  "us": "206 in"
+                },
+                {
+                  "label": "Drill travel",
+                  "metric": "3,96 m",
+                  "us": "13 ft"
+                },
+                {
+                  "label": "Pull force",
+                  "metric": "53 kN",
+                  "us": "12 000 lbf"
+                },
+                {
+                  "label": "Weight",
+                  "metric": "2 862 / 3 040 kg",
+                  "us": "6310 / 6704 lbs"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Data sheet",
+          "href": "/assets/docs/tei-borrmaster-hemh-ladda-ner-pdf.pdf",
+          "driveId": "195_P1ktNcDOUH-Rjz5TsX0WSGZlTCS7k"
+        }
+      ],
+      "published": true
+    },
+    "es": {
+      "title": "HEMH",
+      "h1": "HEMH",
+      "description": "La variante más grande de mástil de perforación es el HEMH (Hydraulic Excavator Mount Heavy), pensado para excavadoras de unas 30 toneladas. Para los modelos más grandes…",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "TEI Rock Drills – logotipo",
+          "href": "/produkter/tei",
+          "width": 1920,
+          "height": 1117,
+          "src": "/assets/img/tei-2.webp"
+        },
+        {
+          "type": "image",
+          "alt": "HEMH – imagen 2",
+          "width": 775,
+          "height": 583,
+          "src": "/assets/img/tei-borrmaster-hemh-2.webp"
+        },
+        {
+          "type": "text",
+          "html": "La variante más grande de mástil de perforación es el HEMH (Hydraulic Excavator Mount Heavy), pensado para excavadoras de unas 30 toneladas. En los modelos HEMH más grandes, uno de los brazos de la excavadora puede sustituirse por el mástil. Así, la excavadora cabe en un único transporte."
+        },
+        {
+          "type": "datasheet",
+          "title": "Datos técnicos",
+          "note": "Las especificaciones técnicas de TEI suponen una pérdida de potencia hidráulica del 40 %.",
+          "tagline": "Unidad de perforación hidráulica para excavadoras pesadas",
+          "intro": [
+            "El HEMH (Hydraulic Excavator Mount «Heavy») es la mayor y más potente de las perforadoras para excavadora de TEI. A pesar de su tamaño, el HEMH conserva las ventajas de ser un verdadero accesorio que no requiere modificar la excavadora. El diseño es sencillo para que el equipo pueda montarse y desmontarse con rapidez.",
+            "El HEMH recibe su potencia hidráulica del circuito de martillo de la excavadora y no requiere hidráulica adicional. TEI utiliza componentes diseñados y fabricados internamente para lograr una calidad constante en todas las partes del sistema de perforación. Nuestros sistemas de rotación y percusión tienen el diseño potente y ligero por el que somos conocidos. El HEMH está construido para montarse en máquinas de 25–30 toneladas y puede configurarse para la mayoría de los métodos de perforación."
+          ],
+          "groups": [
+            {
+              "title": "Con martillos perforadores (TE726 / TE760 / TE1000)",
+              "rows": [
+                {
+                  "label": "Caudal hidráulico",
+                  "metric": "178 / 197 / 269 lpm",
+                  "us": "47 / 52 / 71 gpm"
+                },
+                {
+                  "label": "Presión hidráulica",
+                  "metric": "172 / 172 / 207 bar",
+                  "us": "2500 / 2500 / 3000 psi"
+                },
+                {
+                  "label": "Longitud total de avance",
+                  "metric": "5,23 m",
+                  "us": "206 pulg."
+                },
+                {
+                  "label": "Carrera de perforación",
+                  "metric": "3,96 m",
+                  "us": "13 ft"
+                },
+                {
+                  "label": "Fuerza de tracción",
+                  "metric": "53 kN",
+                  "us": "12 000 lbf"
+                },
+                {
+                  "label": "Peso",
+                  "metric": "2 839 / 2 925 / 3 134 kg",
+                  "us": "6260 / 6450 / 6910 lbs"
+                }
+              ]
+            },
+            {
+              "title": "Con cabezal de rotación (RDS550 / RDS1004)",
+              "rows": [
+                {
+                  "label": "Caudal hidráulico",
+                  "metric": "151 / 227 lpm",
+                  "us": "40 / 60 gpm"
+                },
+                {
+                  "label": "Presión hidráulica",
+                  "metric": "207 bar",
+                  "us": "3000 psi"
+                },
+                {
+                  "label": "Longitud total de avance",
+                  "metric": "5,23 m",
+                  "us": "206 pulg."
+                },
+                {
+                  "label": "Carrera de perforación",
+                  "metric": "3,96 m",
+                  "us": "13 ft"
+                },
+                {
+                  "label": "Fuerza de tracción",
+                  "metric": "53 kN",
+                  "us": "12 000 lbf"
+                },
+                {
+                  "label": "Peso",
+                  "metric": "2 862 / 3 040 kg",
+                  "us": "6310 / 6704 lbs"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Ficha de producto",
+          "href": "/assets/docs/tei-borrmaster-hemh-ladda-ner-pdf.pdf",
+          "driveId": "195_P1ktNcDOUH-Rjz5TsX0WSGZlTCS7k"
+        }
+      ],
+      "published": true
+    },
+    "no": {
+      "title": "HEMH",
+      "h1": "HEMH",
+      "description": "Den største varianten av boremaster er HEMH (Hydraulic Excavator Mount Heavy) og er beregnet for gravemaskiner på rundt 30 tonn. For de aller største…",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "TEI Rock Drills – logo",
+          "href": "/produkter/tei",
+          "width": 1920,
+          "height": 1117,
+          "src": "/assets/img/tei-2.webp"
+        },
+        {
+          "type": "image",
+          "alt": "HEMH – bilde 2",
+          "width": 775,
+          "height": 583,
+          "src": "/assets/img/tei-borrmaster-hemh-2.webp"
+        },
+        {
+          "type": "text",
+          "html": "Den største varianten av boremaster er HEMH (Hydraulic Excavator Mount Heavy) og er beregnet for gravemaskiner på rundt 30 tonn. For de aller største modellene av HEMH kan den ene stikka fra gravemaskinen erstattes med masten. Da kan gravemaskinen få plass på ett lass."
+        },
+        {
+          "type": "datasheet",
+          "title": "Tekniske data",
+          "note": "TEIs tekniske data forutsetter 40 % hydraulisk effekttap.",
+          "tagline": "Hydraulisk boreenhet for tunge gravemaskiner",
+          "intro": [
+            "HEMH (Hydraulic Excavator Mount «Heavy») er den største og kraftigste av TEIs gravemaskinbor. Til tross for størrelsen beholder HEMH fordelene ved å være et ekte tilbehør som ikke krever at gravemaskinen bygges om. Konstruksjonen er enkel, slik at utstyret raskt kan monteres og demonteres.",
+            "HEMH får hydraulikkraften sin fra gravemaskinens hammerkrets og krever ingen ekstra hydraulikk. TEI bruker egenkonstruerte og egenproduserte komponenter for jevn kvalitet i alle deler av boresystemet. Våre rotasjons- og slagsystemer har den kraftige, lette konstruksjonen som vi er kjent for. HEMH er bygget for å monteres på maskiner på 25–30 tonn og kan konfigureres for de fleste boremetoder."
+          ],
+          "groups": [
+            {
+              "title": "Med topphammere (TE726 / TE760 / TE1000)",
+              "rows": [
+                {
+                  "label": "Hydraulisk flyt",
+                  "metric": "178 / 197 / 269 lpm",
+                  "us": "47 / 52 / 71 gpm"
+                },
+                {
+                  "label": "Hydrauliktrykk",
+                  "metric": "172 / 172 / 207 bar",
+                  "us": "2500 / 2500 / 3000 psi"
+                },
+                {
+                  "label": "Total matelengde",
+                  "metric": "5,23 m",
+                  "us": "206 tommer"
+                },
+                {
+                  "label": "Borslag",
+                  "metric": "3,96 m",
+                  "us": "13 ft"
+                },
+                {
+                  "label": "Trekkraft",
+                  "metric": "53 kN",
+                  "us": "12 000 lbf"
+                },
+                {
+                  "label": "Vekt",
+                  "metric": "2 839 / 2 925 / 3 134 kg",
+                  "us": "6260 / 6450 / 6910 lbs"
+                }
+              ]
+            },
+            {
+              "title": "Med rotasjonshode (RDS550 / RDS1004)",
+              "rows": [
+                {
+                  "label": "Hydraulisk flyt",
+                  "metric": "151 / 227 lpm",
+                  "us": "40 / 60 gpm"
+                },
+                {
+                  "label": "Hydrauliktrykk",
+                  "metric": "207 bar",
+                  "us": "3000 psi"
+                },
+                {
+                  "label": "Total matelengde",
+                  "metric": "5,23 m",
+                  "us": "206 tommer"
+                },
+                {
+                  "label": "Borslag",
+                  "metric": "3,96 m",
+                  "us": "13 ft"
+                },
+                {
+                  "label": "Trekkraft",
+                  "metric": "53 kN",
+                  "us": "12 000 lbf"
+                },
+                {
+                  "label": "Vekt",
+                  "metric": "2 862 / 3 040 kg",
+                  "us": "6310 / 6704 lbs"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Produktblad",
+          "href": "/assets/docs/tei-borrmaster-hemh-ladda-ner-pdf.pdf",
+          "driveId": "195_P1ktNcDOUH-Rjz5TsX0WSGZlTCS7k"
+        }
+      ],
+      "published": true
+    }
+  },
+  "source": {
+    "url": "https://www.betongakuten.se/produkter/tei/borrmaster/hemh"
+  }
+}

@@ -1,0 +1,414 @@
+{
+  "path": "/produkter/ecobeton/microbond",
+  "updated": "2026-10-10",
+  "template": "product",
+  "order": 5,
+  "published": true,
+  "hero": {
+    "image": "/assets/img/ecobeton-microbond-hero.webp"
+  },
+  "i18n": {
+    "sv": {
+      "title": "Microbond",
+      "h1": "Microbond",
+      "description": "Microbond är ett cementitbaserat mikrocement för att förnya och skydda alla typer av ytor. Den består av en enkomponentblandning som modifierats med…",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Ecobeton – logotyp",
+          "href": "/produkter/ecobeton",
+          "width": 854,
+          "height": 497,
+          "src": "/assets/img/ecobeton-2.webp"
+        },
+        {
+          "type": "image",
+          "alt": "Microbond – bild 2",
+          "width": 1010,
+          "height": 1024,
+          "src": "/assets/img/ecobeton-microbond-2.webp"
+        },
+        {
+          "type": "text",
+          "html": "Microbond är ett cementitbaserat mikrocement för att förnya och skydda alla typer av ytor. Den består av en enkomponentblandning som modifierats med speciella polymerer och katalysatorer. Produkten appliceras i extremt tunn tjocklek och tränger in i underlagets porositet för att skapa en permanent och enhetlig yta. Microbond reducerar effektivt slitage och abrasion av befintliga ytor. Den skyddar mot vattenabsorption och fukt, samt motstår repor och nötning. När Microbond behandlas med Ecobetons skyddslacker blir ytan helt vattentät och brandbeständig enligt klass A-standarder."
+        },
+        {
+          "type": "text",
+          "html": "Microbond förlänger därmed livslängden för golv, väggar, badrum och möbler med enastående hållbarhet."
+        },
+        {
+          "type": "text",
+          "html": "Täckningen är 1,5 kg per kvm (som är ca. 15 - 16 kvadratmeter per 25 kg-hink vid tjocklek på ca. 1mm). För nybörjare kan man räkna med 1.5 - 2 kg per kvm."
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Infoblad",
+          "href": "/assets/docs/ecobeton-microbond-infoblad.pdf",
+          "driveId": "1ErQY_MYV6RJUHGiKZkwVOWwcjJn7Ejdi"
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Tekniskt datablad (TDS)",
+          "href": "/assets/docs/ecobeton-microbond-tekniskt-datablad-tds.pdf",
+          "driveId": "1_ZmXwSBHw1VcKpfyiAcG66d__lgvndpB"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Egenskaper"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Microbond är en permanent cementitbaserad barriär för att effektivt skydda och förnya alla typer av ytor (med upp till 1 mm tjocklek). Den förhindrar vattenabsorption, nötning och repor samtidigt som den motstår frys-/tincykler, vilket är de främsta orsakerna till ytförsämring. Den minskar penetrationen av oljor, fett och föroreningar när den behandlas med Ecobetons skyddslacker.",
+            "Microbond skapar inte någon filmyta utan tränger in i underlagets struktur och tillåter ytan att andas normalt. Det förändrar inte det naturliga utseendet hos underlaget utan förstärker det med en smidig, enhetlig textur. Den är luktfri och färglös i grundutförandet.",
+            "Microbond ökar hårdheten och därför motståndet av ytor för slitage och abrasion över tiden. Den minskar avsevärt brandrisken och har godkänts enligt klass A-tester.",
+            "Microbond förändrar inte strukturen eller det naturliga utseendet på underlaget. Den förbättrar vidhäftningen av färger, lacker och ytbehandlingar på ett enhetligt sätt och förlänger livslängden avsevärt. Microbond är giftfri, miljövänlig och har mycket låg VOC-halt, vilket gör den lämplig för användning vid \"gröna byggen\"."
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Användningsområden"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Alla typer av golv, väggar och tak, inom och utomhus",
+            "Betong, trä, metall, kakel och gips",
+            "Badrumsytor, kök och våtutrymmen",
+            "Möbler och inredningselement",
+            "Kommersiella ytor som barer, restauranger, showroom",
+            "Industriytor och parkeringsgarage",
+            "Terrasser och utomhustrappor",
+            "Poolområden och fontäner",
+            "Specialgolv och dekorativa ytor"
+          ]
+        },
+        {
+          "type": "text",
+          "html": "Applicering"
+        },
+        {
+          "type": "text",
+          "html": "Ytor måste vara strukturellt sunda utan sprickor eller defekter. All tidigare behandling, målning eller föroreningar måste avlägsnas för att säkerställa optimal vidhäftning. Microbond måste appliceras vid temperaturer över 5°C och lufttemperatur över 10°C, men inte över 40°C. Applicera inte om nederbörd förväntas inom 24 timmar."
+        },
+        {
+          "type": "text",
+          "html": "Skaka ordentligt före användning. Microbond blandas endast med rent vatten (5-7 liter per 25 kg) och blandas i låg hastighet med borrmaskin i ren hink tills önskad konsistens uppnås. Vänta 5 minuter innan applicering. Späds eller blandas inte med någon annan vätska."
+        },
+        {
+          "type": "text",
+          "html": "Microbond ska appliceras med spackel, trowel eller pray på en lätt fuktad yta. Normal applicering kräver två eller fler beläggningar beroende på önskad finish och underlagets porositet. Applicera fritt för att mätta materialet. Vänta 24 timmar mellan skikt. Ytan kan slipas mellan skikt för att uppnå jämn finish. Applicera nedifrån och uppåt på vertikala väggar."
+        }
+      ]
+    },
+    "en": {
+      "title": "Microbond",
+      "h1": "Microbond",
+      "description": "Microbond is a cement-based micro-cement for renewing and protecting all types of surfaces. It consists of a one-component mix modified with…",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Ecobeton – logo",
+          "href": "/produkter/ecobeton",
+          "width": 854,
+          "height": 497,
+          "src": "/assets/img/ecobeton-2.webp"
+        },
+        {
+          "type": "image",
+          "alt": "Microbond – image 2",
+          "width": 1010,
+          "height": 1024,
+          "src": "/assets/img/ecobeton-microbond-2.webp"
+        },
+        {
+          "type": "text",
+          "html": "Microbond is a cement-based micro-cement for renewing and protecting all types of surfaces. It consists of a one-component mix modified with special polymers and catalysts. The product is applied in an extremely thin layer and penetrates the porosity of the substrate to create a permanent and uniform surface. Microbond effectively reduces wear and abrasion of existing surfaces. It protects against water absorption and moisture, and resists scratches and abrasion. When Microbond is treated with Ecobeton’s protective sealers, the surface becomes completely waterproof and fire resistant according to class A standards."
+        },
+        {
+          "type": "text",
+          "html": "Microbond thus extends the life of floors, walls, bathrooms and furniture with outstanding durability."
+        },
+        {
+          "type": "text",
+          "html": "Coverage is 1.5 kg per m² (approx. 15–16 square metres per 25 kg bucket at a thickness of about 1 mm). For beginners, allow 1.5–2 kg per m²."
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Information sheet",
+          "href": "/assets/docs/ecobeton-microbond-infoblad.pdf",
+          "driveId": "1ErQY_MYV6RJUHGiKZkwVOWwcjJn7Ejdi"
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Technical data sheet (TDS)",
+          "href": "/assets/docs/ecobeton-microbond-tekniskt-datablad-tds.pdf",
+          "driveId": "1_ZmXwSBHw1VcKpfyiAcG66d__lgvndpB"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Properties"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Microbond is a permanent cement-based barrier for effectively protecting and renewing all types of surfaces (up to 1 mm thickness). It prevents water absorption, abrasion and scratches while resisting freeze/thaw cycles, which are the main causes of surface deterioration. It reduces the penetration of oils, grease and pollutants when treated with Ecobeton’s protective sealers.",
+            "Microbond does not form a surface film but penetrates the structure of the substrate and allows the surface to breathe normally. It does not change the natural appearance of the substrate but enhances it with a smooth, uniform texture. It is odourless and colourless in its basic form.",
+            "Microbond increases hardness and therefore the resistance of surfaces to wear and abrasion over time. It considerably reduces the fire risk and has been approved in class A tests.",
+            "Microbond does not change the structure or natural appearance of the substrate. It improves the adhesion of paints, varnishes and surface treatments in a uniform way and considerably extends service life. Microbond is non-toxic, environmentally friendly and has a very low VOC content, which makes it suitable for use in “green buildings”."
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Areas of use"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "All types of floors, walls and ceilings, indoors and outdoors",
+            "Concrete, wood, metal, tiles and plaster",
+            "Bathroom surfaces, kitchens and wet rooms",
+            "Furniture and interior elements",
+            "Commercial surfaces such as bars, restaurants, showrooms",
+            "Industrial surfaces and car parks",
+            "Terraces and outdoor stairs",
+            "Pool areas and fountains",
+            "Special floors and decorative surfaces"
+          ]
+        },
+        {
+          "type": "text",
+          "html": "Application"
+        },
+        {
+          "type": "text",
+          "html": "Surfaces must be structurally sound without cracks or defects. All previous treatment, paint or contaminants must be removed to ensure optimal adhesion. Microbond must be applied at substrate temperatures above 5 °C and air temperature above 10 °C, but not above 40 °C. Do not apply if precipitation is expected within 24 hours."
+        },
+        {
+          "type": "text",
+          "html": "Shake well before use. Microbond is mixed only with clean water (5–7 litres per 25 kg) and mixed at low speed with a drill in a clean bucket until the desired consistency is reached. Wait 5 minutes before application. Do not dilute or mix with any other liquid."
+        },
+        {
+          "type": "text",
+          "html": "Microbond should be applied with a filling knife, trowel or sprayer on a slightly dampened surface. Normal application requires two or more coats depending on the desired finish and the porosity of the substrate. Apply liberally to saturate the material. Wait 24 hours between coats. The surface can be sanded between coats to achieve an even finish. Apply from the bottom upwards on vertical walls."
+        }
+      ],
+      "published": true
+    },
+    "es": {
+      "title": "Microbond",
+      "h1": "Microbond",
+      "description": "Microbond es un microcemento a base de cemento para renovar y proteger todo tipo de superficies. Consiste en una mezcla monocomponente modificada con…",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Ecobeton – logotipo",
+          "href": "/produkter/ecobeton",
+          "width": 854,
+          "height": 497,
+          "src": "/assets/img/ecobeton-2.webp"
+        },
+        {
+          "type": "image",
+          "alt": "Microbond – imagen 2",
+          "width": 1010,
+          "height": 1024,
+          "src": "/assets/img/ecobeton-microbond-2.webp"
+        },
+        {
+          "type": "text",
+          "html": "Microbond es un microcemento a base de cemento para renovar y proteger todo tipo de superficies. Consiste en una mezcla monocomponente modificada con polímeros y catalizadores especiales. El producto se aplica en un espesor extremadamente fino y penetra en la porosidad del soporte para crear una superficie permanente y uniforme. Microbond reduce eficazmente el desgaste y la abrasión de las superficies existentes. Protege frente a la absorción de agua y la humedad, y resiste arañazos y abrasión. Cuando Microbond se trata con los selladores protectores de Ecobeton, la superficie se vuelve totalmente impermeable y resistente al fuego según las normas de clase A."
+        },
+        {
+          "type": "text",
+          "html": "Así, Microbond prolonga la vida útil de suelos, paredes, baños y muebles con una durabilidad excepcional."
+        },
+        {
+          "type": "text",
+          "html": "El rendimiento es de 1,5 kg por m² (aprox. 15–16 metros cuadrados por cubo de 25 kg con un espesor de unos 1 mm). Para principiantes, cuente con 1,5–2 kg por m²."
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Hoja informativa",
+          "href": "/assets/docs/ecobeton-microbond-infoblad.pdf",
+          "driveId": "1ErQY_MYV6RJUHGiKZkwVOWwcjJn7Ejdi"
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Ficha técnica (TDS)",
+          "href": "/assets/docs/ecobeton-microbond-tekniskt-datablad-tds.pdf",
+          "driveId": "1_ZmXwSBHw1VcKpfyiAcG66d__lgvndpB"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Propiedades"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Microbond es una barrera permanente a base de cemento para proteger y renovar eficazmente todo tipo de superficies (hasta 1 mm de espesor). Impide la absorción de agua, la abrasión y los arañazos y resiste los ciclos de hielo y deshielo, que son las principales causas del deterioro de las superficies. Reduce la penetración de aceites, grasas y contaminantes cuando se trata con los selladores protectores de Ecobeton.",
+            "Microbond no forma película superficial, sino que penetra en la estructura del soporte y permite que la superficie respire con normalidad. No altera el aspecto natural del soporte, sino que lo realza con una textura suave y uniforme. En su versión básica es inodoro e incoloro.",
+            "Microbond aumenta la dureza y, por tanto, la resistencia de las superficies al desgaste y a la abrasión con el tiempo. Reduce considerablemente el riesgo de incendio y ha sido aprobado en ensayos de clase A.",
+            "Microbond no altera la estructura ni el aspecto natural del soporte. Mejora la adherencia de pinturas, barnices y tratamientos superficiales de forma uniforme y prolonga considerablemente la vida útil. Microbond no es tóxico, es respetuoso con el medio ambiente y tiene un contenido de COV muy bajo, lo que lo hace adecuado para su uso en «edificios verdes»."
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Ámbitos de uso"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Todo tipo de suelos, paredes y techos, en interiores y exteriores",
+            "Hormigón, madera, metal, azulejos y yeso",
+            "Superficies de baños, cocinas y zonas húmedas",
+            "Muebles y elementos de interior",
+            "Superficies comerciales como bares, restaurantes y salas de exposición",
+            "Superficies industriales y aparcamientos",
+            "Terrazas y escaleras exteriores",
+            "Zonas de piscina y fuentes",
+            "Suelos especiales y superficies decorativas"
+          ]
+        },
+        {
+          "type": "text",
+          "html": "Aplicación"
+        },
+        {
+          "type": "text",
+          "html": "Las superficies deben estar estructuralmente sanas, sin grietas ni defectos. Deben eliminarse todos los tratamientos, pinturas o contaminantes anteriores para garantizar una adherencia óptima. Microbond debe aplicarse con el soporte a más de 5 °C y la temperatura ambiente por encima de 10 °C, pero sin superar los 40 °C. No aplicar si se esperan precipitaciones en las próximas 24 horas."
+        },
+        {
+          "type": "text",
+          "html": "Agitar bien antes de usar. Microbond se mezcla únicamente con agua limpia (5–7 litros por 25 kg) y se bate a baja velocidad con un taladro en un cubo limpio hasta alcanzar la consistencia deseada. Espere 5 minutos antes de aplicar. No diluir ni mezclar con ningún otro líquido."
+        },
+        {
+          "type": "text",
+          "html": "Microbond debe aplicarse con espátula, llana o pulverizador sobre una superficie ligeramente humedecida. La aplicación normal requiere dos o más capas según el acabado deseado y la porosidad del soporte. Aplicar abundantemente hasta saturar el material. Esperar 24 horas entre capas. La superficie puede lijarse entre capas para conseguir un acabado uniforme. En paredes verticales, aplicar de abajo hacia arriba."
+        }
+      ],
+      "published": true
+    },
+    "no": {
+      "title": "Microbond",
+      "h1": "Microbond",
+      "description": "Microbond er en sementbasert mikrosement for å fornye og beskytte alle typer flater. Den består av en énkomponentblanding modifisert med…",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Ecobeton – logo",
+          "href": "/produkter/ecobeton",
+          "width": 854,
+          "height": 497,
+          "src": "/assets/img/ecobeton-2.webp"
+        },
+        {
+          "type": "image",
+          "alt": "Microbond – bilde 2",
+          "width": 1010,
+          "height": 1024,
+          "src": "/assets/img/ecobeton-microbond-2.webp"
+        },
+        {
+          "type": "text",
+          "html": "Microbond er en sementbasert mikrosement for å fornye og beskytte alle typer flater. Den består av en énkomponentblanding modifisert med spesielle polymerer og katalysatorer. Produktet påføres i ekstremt tynn tykkelse og trenger inn i underlagets porøsitet for å skape en permanent og ensartet overflate. Microbond reduserer effektivt slitasje og abrasjon på eksisterende flater. Den beskytter mot vannopptak og fukt, og tåler riper og slitasje. Når Microbond behandles med Ecobetons beskyttelseslakker, blir overflaten helt vanntett og brannbestandig i henhold til klasse A-standarder."
+        },
+        {
+          "type": "text",
+          "html": "Microbond forlenger dermed levetiden til gulv, vegger, bad og møbler med enestående holdbarhet."
+        },
+        {
+          "type": "text",
+          "html": "Dekningen er 1,5 kg per kvm (ca. 15–16 kvadratmeter per 25 kg-bøtte ved ca. 1 mm tykkelse). For nybegynnere kan man regne med 1,5–2 kg per kvm."
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Infoblad",
+          "href": "/assets/docs/ecobeton-microbond-infoblad.pdf",
+          "driveId": "1ErQY_MYV6RJUHGiKZkwVOWwcjJn7Ejdi"
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Teknisk datablad (TDS)",
+          "href": "/assets/docs/ecobeton-microbond-tekniskt-datablad-tds.pdf",
+          "driveId": "1_ZmXwSBHw1VcKpfyiAcG66d__lgvndpB"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Egenskaper"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Microbond er en permanent sementbasert barriere for å beskytte og fornye alle typer flater effektivt (med opptil 1 mm tykkelse). Den hindrer vannopptak, slitasje og riper samtidig som den tåler fryse-/tinesykluser, som er de viktigste årsakene til overflatenedbrytning. Den reduserer inntrengning av oljer, fett og forurensning når den behandles med Ecobetons beskyttelseslakker.",
+            "Microbond danner ikke noen filmoverflate, men trenger inn i underlagets struktur og lar overflaten puste normalt. Den endrer ikke underlagets naturlige utseende, men forsterker det med en myk, ensartet tekstur. Den er luktfri og fargeløs i grunnutførelsen.",
+            "Microbond øker hardheten og dermed flatenes motstand mot slitasje og abrasjon over tid. Den reduserer brannrisikoen betydelig og er godkjent i klasse A-tester.",
+            "Microbond endrer ikke underlagets struktur eller naturlige utseende. Den forbedrer heftingen av maling, lakk og overflatebehandlinger på en jevn måte og forlenger levetiden betydelig. Microbond er giftfri, miljøvennlig og har svært lavt VOC-innhold, noe som gjør den egnet for bruk i «grønne bygg»."
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Bruksområder"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Alle typer gulv, vegger og tak, inne og ute",
+            "Betong, tre, metall, fliser og gips",
+            "Baderomsflater, kjøkken og våtrom",
+            "Møbler og interiørelementer",
+            "Kommersielle flater som barer, restauranter og showrooms",
+            "Industriflater og parkeringshus",
+            "Terrasser og utendørstrapper",
+            "Bassengområder og fontener",
+            "Spesialgulv og dekorative flater"
+          ]
+        },
+        {
+          "type": "text",
+          "html": "Påføring"
+        },
+        {
+          "type": "text",
+          "html": "Flatene må være strukturelt sunne uten sprekker eller skader. All tidligere behandling, maling eller forurensning må fjernes for å sikre optimal hefting. Microbond må påføres ved temperaturer i underlaget over 5 °C og lufttemperatur over 10 °C, men ikke over 40 °C. Må ikke påføres hvis nedbør forventes innen 24 timer."
+        },
+        {
+          "type": "text",
+          "html": "Rist godt før bruk. Microbond blandes kun med rent vann (5–7 liter per 25 kg) og blandes ved lav hastighet med bormaskin i ren bøtte til ønsket konsistens er oppnådd. Vent 5 minutter før påføring. Må ikke fortynnes eller blandes med noen annen væske."
+        },
+        {
+          "type": "text",
+          "html": "Microbond skal påføres med sparkel, murskje eller sprøyte på en lett fuktet flate. Normal påføring krever to eller flere strøk avhengig av ønsket finish og underlagets porøsitet. Påfør rikelig for å mette materialet. Vent 24 timer mellom lagene. Flaten kan slipes mellom lagene for å oppnå jevn finish. Påfør nedenfra og opp på vertikale vegger."
+        }
+      ],
+      "published": true
+    }
+  },
+  "source": {
+    "url": "https://www.betongakuten.se/produkter/ecobeton/microbond"
+  }
+}

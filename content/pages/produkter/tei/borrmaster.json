@@ -1,0 +1,678 @@
+{
+  "path": "/produkter/tei/borrmaster",
+  "updated": "2026-10-10",
+  "template": "product",
+  "order": 2,
+  "published": true,
+  "hero": {
+    "image": "/assets/img/tei-borrmaster-hero.webp"
+  },
+  "i18n": {
+    "sv": {
+      "title": "Borrmaster",
+      "h1": "Borrmaster",
+      "description": "Borrmaster från TEI finns i olikastorleksklasser som främst beror på grävarens vikt samt den utrustning som sättas på masten. Klicka dig vidare på masterna…",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "TEI Rock Drills – logotyp",
+          "href": "/produkter/tei",
+          "width": 1920,
+          "height": 1117,
+          "src": "/assets/img/tei-2.webp"
+        },
+        {
+          "type": "text",
+          "html": "Borrmaster från TEI finns i olikastorleksklasser som främst beror på grävarens vikt samt den utrustning som sättas på masten. Klicka dig vidare på masterna nedan för att komma till broschyrerna och läsa mer."
+        },
+        {
+          "type": "cards",
+          "items": [
+            {
+              "href": "/produkter/tei/borrmaster/mme",
+              "label": "Läs mer",
+              "title": "MME",
+              "image": "/assets/img/tei-borrmaster-mme.webp",
+              "width": 1280,
+              "height": 1280,
+              "alt": "MME – logotyp"
+            },
+            {
+              "href": "/produkter/tei/borrmaster/mem",
+              "label": "Läs mer",
+              "title": "MEM",
+              "image": "/assets/img/tei-borrmaster-mem.webp",
+              "width": 334,
+              "height": 334,
+              "alt": "MEM – logotyp"
+            },
+            {
+              "href": "/produkter/tei/borrmaster/hem",
+              "label": "Läs mer",
+              "title": "HEM",
+              "image": "/assets/img/tei-borrmaster-hem.webp",
+              "width": 601,
+              "height": 602,
+              "alt": "HEM – logotyp"
+            },
+            {
+              "href": "/produkter/tei/borrmaster/hemh",
+              "label": "Läs mer",
+              "title": "HEMH",
+              "html": "- För 5 - 8-tons grävmaskiner.",
+              "text": "- För 5 - 8-tons grävmaskiner.",
+              "image": "/assets/img/tei-borrmaster-hemh.webp",
+              "width": 1304,
+              "height": 1304,
+              "alt": "HEMH – logotyp"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "MME"
+        },
+        {
+          "type": "text",
+          "html": "- Rrotation- eller topphammare."
+        },
+        {
+          "type": "text",
+          "html": "- 3,2 meters slaglängd."
+        },
+        {
+          "type": "text",
+          "html": "- 102 mm hydraulisk klämma."
+        },
+        {
+          "type": "text",
+          "html": "MEM"
+        },
+        {
+          "type": "text",
+          "html": "- För 12 - 15-tons grävmaskiner."
+        },
+        {
+          "type": "text",
+          "html": "- Rrotation- eller topphammare"
+        },
+        {
+          "type": "text",
+          "html": "- 3,35 meters slaglängd"
+        },
+        {
+          "type": "text",
+          "html": "- 165 mm hydraulisk klämma"
+        },
+        {
+          "type": "text",
+          "html": "HEM"
+        },
+        {
+          "type": "text",
+          "html": "- För 20 - 25-tons grävmaskiner"
+        },
+        {
+          "type": "text",
+          "html": "- Rrotation- eller topphammare"
+        },
+        {
+          "type": "text",
+          "html": "- Mellan 3,58 och 3,89 meters"
+        },
+        {
+          "type": "text",
+          "html": "slaglängd"
+        },
+        {
+          "type": "text",
+          "html": "HEMH"
+        },
+        {
+          "type": "text",
+          "html": "- För 25 - 30-tons grävmaskin"
+        },
+        {
+          "type": "text",
+          "html": "- Enkel montering och demontering"
+        },
+        {
+          "type": "text",
+          "html": "- 3,96 meters slaglängd."
+        },
+        {
+          "type": "text",
+          "html": "- Rrotation- eller topphammare"
+        },
+        {
+          "type": "text",
+          "html": "Utöver det finns också portabla master (man portable) dessa återfinns längre ner."
+        },
+        {
+          "type": "cards",
+          "items": [
+            {
+              "href": "/produkter/tei/borrmaster/mp260",
+              "label": "Läs mer",
+              "title": "MP260",
+              "image": "/assets/img/tei-borrmaster-mp260.webp",
+              "width": 405,
+              "height": 405,
+              "alt": "MP260 – logotyp"
+            },
+            {
+              "href": "/produkter/tei/borrmaster/mph",
+              "label": "Läs mer",
+              "title": "MPH",
+              "image": "/assets/img/tei-borrmaster-mph.webp",
+              "width": 504,
+              "height": 504,
+              "alt": "MPH – logotyp"
+            }
+          ]
+        }
+      ]
+    },
+    "en": {
+      "title": "Drill masts",
+      "h1": "Drill masts",
+      "description": "TEI drill masts come in different size classes, mainly depending on the weight of the excavator and the equipment mounted on the mast. Click through on the masts…",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "TEI Rock Drills – logo",
+          "href": "/produkter/tei",
+          "width": 1920,
+          "height": 1117,
+          "src": "/assets/img/tei-2.webp"
+        },
+        {
+          "type": "text",
+          "html": "TEI drill masts come in different size classes, mainly depending on the weight of the excavator and the equipment mounted on the mast. Click through on the masts below to get to the brochures and read more."
+        },
+        {
+          "type": "cards",
+          "items": [
+            {
+              "href": "/produkter/tei/borrmaster/mme",
+              "label": "Läs mer",
+              "title": "MME",
+              "image": "/assets/img/tei-borrmaster-mme.webp",
+              "width": 1280,
+              "height": 1280,
+              "alt": "MME – logo"
+            },
+            {
+              "href": "/produkter/tei/borrmaster/mem",
+              "label": "Läs mer",
+              "title": "MEM",
+              "image": "/assets/img/tei-borrmaster-mem.webp",
+              "width": 334,
+              "height": 334,
+              "alt": "MEM – logo"
+            },
+            {
+              "href": "/produkter/tei/borrmaster/hem",
+              "label": "Läs mer",
+              "title": "HEM",
+              "image": "/assets/img/tei-borrmaster-hem.webp",
+              "width": 601,
+              "height": 602,
+              "alt": "HEM – logo"
+            },
+            {
+              "href": "/produkter/tei/borrmaster/hemh",
+              "label": "Läs mer",
+              "title": "HEMH",
+              "html": "- För 5 - 8-tons grävmaskiner.",
+              "text": "- For 5–8 tonne excavators.",
+              "image": "/assets/img/tei-borrmaster-hemh.webp",
+              "width": 1304,
+              "height": 1304,
+              "alt": "HEMH – logo"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "MME"
+        },
+        {
+          "type": "text",
+          "html": "- Rotary or top hammer."
+        },
+        {
+          "type": "text",
+          "html": "- 3.2 metre stroke length."
+        },
+        {
+          "type": "text",
+          "html": "- 102 mm hydraulic clamp."
+        },
+        {
+          "type": "text",
+          "html": "MEM"
+        },
+        {
+          "type": "text",
+          "html": "- For 12–15 tonne excavators."
+        },
+        {
+          "type": "text",
+          "html": "- Rotary or top hammer"
+        },
+        {
+          "type": "text",
+          "html": "- 3.35 metre stroke length"
+        },
+        {
+          "type": "text",
+          "html": "- 165 mm hydraulic clamp"
+        },
+        {
+          "type": "text",
+          "html": "HEM"
+        },
+        {
+          "type": "text",
+          "html": "- For 20–25 tonne excavators"
+        },
+        {
+          "type": "text",
+          "html": "- Rotary or top hammer"
+        },
+        {
+          "type": "text",
+          "html": "- Between 3.58 and 3.89 metres"
+        },
+        {
+          "type": "text",
+          "html": "stroke length"
+        },
+        {
+          "type": "text",
+          "html": "HEMH"
+        },
+        {
+          "type": "text",
+          "html": "- For 25–30 tonne excavators"
+        },
+        {
+          "type": "text",
+          "html": "- Easy mounting and dismantling"
+        },
+        {
+          "type": "text",
+          "html": "- 3.96 metre stroke length."
+        },
+        {
+          "type": "text",
+          "html": "- Rotary or top hammer"
+        },
+        {
+          "type": "text",
+          "html": "In addition there are also man-portable masts, which are found further down."
+        },
+        {
+          "type": "cards",
+          "items": [
+            {
+              "href": "/produkter/tei/borrmaster/mp260",
+              "label": "Läs mer",
+              "title": "MP260",
+              "image": "/assets/img/tei-borrmaster-mp260.webp",
+              "width": 405,
+              "height": 405,
+              "alt": "MP260 – logo"
+            },
+            {
+              "href": "/produkter/tei/borrmaster/mph",
+              "label": "Läs mer",
+              "title": "MPH",
+              "image": "/assets/img/tei-borrmaster-mph.webp",
+              "width": 504,
+              "height": 504,
+              "alt": "MPH – logo"
+            }
+          ]
+        }
+      ],
+      "published": true
+    },
+    "es": {
+      "title": "Mástiles de perforación",
+      "h1": "Mástiles de perforación",
+      "description": "Los mástiles de perforación de TEI existen en distintas clases de tamaño, que dependen principalmente del peso de la excavadora y del equipo montado en el mástil. Haga clic en los mástiles…",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "TEI Rock Drills – logotipo",
+          "href": "/produkter/tei",
+          "width": 1920,
+          "height": 1117,
+          "src": "/assets/img/tei-2.webp"
+        },
+        {
+          "type": "text",
+          "html": "Los mástiles de perforación de TEI existen en distintas clases de tamaño, que dependen principalmente del peso de la excavadora y del equipo montado en el mástil. Haga clic en los mástiles que figuran a continuación para acceder a los folletos y obtener más información."
+        },
+        {
+          "type": "cards",
+          "items": [
+            {
+              "href": "/produkter/tei/borrmaster/mme",
+              "label": "Läs mer",
+              "title": "MME",
+              "image": "/assets/img/tei-borrmaster-mme.webp",
+              "width": 1280,
+              "height": 1280,
+              "alt": "MME – logotipo"
+            },
+            {
+              "href": "/produkter/tei/borrmaster/mem",
+              "label": "Läs mer",
+              "title": "MEM",
+              "image": "/assets/img/tei-borrmaster-mem.webp",
+              "width": 334,
+              "height": 334,
+              "alt": "MEM – logotipo"
+            },
+            {
+              "href": "/produkter/tei/borrmaster/hem",
+              "label": "Läs mer",
+              "title": "HEM",
+              "image": "/assets/img/tei-borrmaster-hem.webp",
+              "width": 601,
+              "height": 602,
+              "alt": "HEM – logotipo"
+            },
+            {
+              "href": "/produkter/tei/borrmaster/hemh",
+              "label": "Läs mer",
+              "title": "HEMH",
+              "html": "- För 5 - 8-tons grävmaskiner.",
+              "text": "- Para excavadoras de 5 a 8 toneladas.",
+              "image": "/assets/img/tei-borrmaster-hemh.webp",
+              "width": 1304,
+              "height": 1304,
+              "alt": "HEMH – logotipo"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "MME"
+        },
+        {
+          "type": "text",
+          "html": "- Cabezal de rotación o martillo en cabeza."
+        },
+        {
+          "type": "text",
+          "html": "- Carrera de 3,2 metros."
+        },
+        {
+          "type": "text",
+          "html": "- Mordaza hidráulica de 102 mm."
+        },
+        {
+          "type": "text",
+          "html": "MEM"
+        },
+        {
+          "type": "text",
+          "html": "- Para excavadoras de 12 a 15 toneladas."
+        },
+        {
+          "type": "text",
+          "html": "- Cabezal de rotación o martillo en cabeza"
+        },
+        {
+          "type": "text",
+          "html": "- Carrera de 3,35 metros"
+        },
+        {
+          "type": "text",
+          "html": "- Mordaza hidráulica de 165 mm"
+        },
+        {
+          "type": "text",
+          "html": "HEM"
+        },
+        {
+          "type": "text",
+          "html": "- Para excavadoras de 20 a 25 toneladas"
+        },
+        {
+          "type": "text",
+          "html": "- Cabezal de rotación o martillo en cabeza"
+        },
+        {
+          "type": "text",
+          "html": "- Entre 3,58 y 3,89 metros"
+        },
+        {
+          "type": "text",
+          "html": "de carrera"
+        },
+        {
+          "type": "text",
+          "html": "HEMH"
+        },
+        {
+          "type": "text",
+          "html": "- Para excavadoras de 25 a 30 toneladas"
+        },
+        {
+          "type": "text",
+          "html": "- Montaje y desmontaje sencillos"
+        },
+        {
+          "type": "text",
+          "html": "- Carrera de 3,96 metros."
+        },
+        {
+          "type": "text",
+          "html": "- Cabezal de rotación o martillo en cabeza"
+        },
+        {
+          "type": "text",
+          "html": "Además, también hay mástiles portátiles (man portable), que se encuentran más abajo."
+        },
+        {
+          "type": "cards",
+          "items": [
+            {
+              "href": "/produkter/tei/borrmaster/mp260",
+              "label": "Läs mer",
+              "title": "MP260",
+              "image": "/assets/img/tei-borrmaster-mp260.webp",
+              "width": 405,
+              "height": 405,
+              "alt": "MP260 – logotipo"
+            },
+            {
+              "href": "/produkter/tei/borrmaster/mph",
+              "label": "Läs mer",
+              "title": "MPH",
+              "image": "/assets/img/tei-borrmaster-mph.webp",
+              "width": 504,
+              "height": 504,
+              "alt": "MPH – logotipo"
+            }
+          ]
+        }
+      ],
+      "published": true
+    },
+    "no": {
+      "title": "Boremaster",
+      "h1": "Boremaster",
+      "description": "Boremaster fra TEI finnes i ulike størrelsesklasser som hovedsakelig avhenger av gravemaskinens vekt og utstyret som monteres på masten. Klikk deg videre på mastene…",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "TEI Rock Drills – logo",
+          "href": "/produkter/tei",
+          "width": 1920,
+          "height": 1117,
+          "src": "/assets/img/tei-2.webp"
+        },
+        {
+          "type": "text",
+          "html": "Boremaster fra TEI finnes i ulike størrelsesklasser som hovedsakelig avhenger av gravemaskinens vekt og utstyret som monteres på masten. Klikk deg videre på mastene nedenfor for å komme til brosjyrene og lese mer."
+        },
+        {
+          "type": "cards",
+          "items": [
+            {
+              "href": "/produkter/tei/borrmaster/mme",
+              "label": "Läs mer",
+              "title": "MME",
+              "image": "/assets/img/tei-borrmaster-mme.webp",
+              "width": 1280,
+              "height": 1280,
+              "alt": "MME – logo"
+            },
+            {
+              "href": "/produkter/tei/borrmaster/mem",
+              "label": "Läs mer",
+              "title": "MEM",
+              "image": "/assets/img/tei-borrmaster-mem.webp",
+              "width": 334,
+              "height": 334,
+              "alt": "MEM – logo"
+            },
+            {
+              "href": "/produkter/tei/borrmaster/hem",
+              "label": "Läs mer",
+              "title": "HEM",
+              "image": "/assets/img/tei-borrmaster-hem.webp",
+              "width": 601,
+              "height": 602,
+              "alt": "HEM – logo"
+            },
+            {
+              "href": "/produkter/tei/borrmaster/hemh",
+              "label": "Läs mer",
+              "title": "HEMH",
+              "html": "- För 5 - 8-tons grävmaskiner.",
+              "text": "- For gravemaskiner på 5–8 tonn.",
+              "image": "/assets/img/tei-borrmaster-hemh.webp",
+              "width": 1304,
+              "height": 1304,
+              "alt": "HEMH – logo"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "MME"
+        },
+        {
+          "type": "text",
+          "html": "- Rotasjons- eller topphammer."
+        },
+        {
+          "type": "text",
+          "html": "- 3,2 meters slaglengde."
+        },
+        {
+          "type": "text",
+          "html": "- 102 mm hydraulisk klemme."
+        },
+        {
+          "type": "text",
+          "html": "MEM"
+        },
+        {
+          "type": "text",
+          "html": "- For gravemaskiner på 12–15 tonn."
+        },
+        {
+          "type": "text",
+          "html": "- Rotasjons- eller topphammer"
+        },
+        {
+          "type": "text",
+          "html": "- 3,35 meters slaglengde"
+        },
+        {
+          "type": "text",
+          "html": "- 165 mm hydraulisk klemme"
+        },
+        {
+          "type": "text",
+          "html": "HEM"
+        },
+        {
+          "type": "text",
+          "html": "- For gravemaskiner på 20–25 tonn"
+        },
+        {
+          "type": "text",
+          "html": "- Rotasjons- eller topphammer"
+        },
+        {
+          "type": "text",
+          "html": "- Mellom 3,58 og 3,89 meters"
+        },
+        {
+          "type": "text",
+          "html": "slaglengde"
+        },
+        {
+          "type": "text",
+          "html": "HEMH"
+        },
+        {
+          "type": "text",
+          "html": "- For gravemaskiner på 25–30 tonn"
+        },
+        {
+          "type": "text",
+          "html": "- Enkel montering og demontering"
+        },
+        {
+          "type": "text",
+          "html": "- 3,96 meters slaglengde."
+        },
+        {
+          "type": "text",
+          "html": "- Rotasjons- eller topphammer"
+        },
+        {
+          "type": "text",
+          "html": "I tillegg finnes også portable master (man portable), som du finner lenger ned."
+        },
+        {
+          "type": "cards",
+          "items": [
+            {
+              "href": "/produkter/tei/borrmaster/mp260",
+              "label": "Läs mer",
+              "title": "MP260",
+              "image": "/assets/img/tei-borrmaster-mp260.webp",
+              "width": 405,
+              "height": 405,
+              "alt": "MP260 – logo"
+            },
+            {
+              "href": "/produkter/tei/borrmaster/mph",
+              "label": "Läs mer",
+              "title": "MPH",
+              "image": "/assets/img/tei-borrmaster-mph.webp",
+              "width": 504,
+              "height": 504,
+              "alt": "MPH – logo"
+            }
+          ]
+        }
+      ],
+      "published": true
+    }
+  },
+  "source": {
+    "url": "https://www.betongakuten.se/produkter/tei/borrmaster"
+  }
+}

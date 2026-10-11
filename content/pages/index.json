@@ -1,0 +1,762 @@
+{
+  "path": "/",
+  "updated": "2026-10-10",
+  "template": "home",
+  "order": 100,
+  "published": true,
+  "hero": {
+    "image": "/assets/img/haeny-hero.webp"
+  },
+  "i18n": {
+    "sv": {
+      "title": "Startsida",
+      "h1": "Tillsammans bygger vi framgång.",
+      "description": "Leverantör och konsult inom byggindustrin, med en stark inriktning på betong, ytskydd, geoteknik, betongpumpar, borriggar och relaterade produkter.",
+      "blocks": [
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Våra varumärken"
+        },
+        {
+          "type": "cards",
+          "items": [
+            {
+              "href": "/produkter/haeny",
+              "label": "Läs mer",
+              "html": "Pumpar för förstärkning, tätning, förankring vid grundläggning, konstruktion och tunneldrivning.",
+              "text": "Pumpar för förstärkning, tätning, förankring vid grundläggning, konstruktion och tunneldrivning.",
+              "image": "/assets/img/haeny.webp",
+              "width": 1000,
+              "height": 1000,
+              "alt": "HÄNY – logotyp"
+            },
+            {
+              "href": "/produkter/tei",
+              "label": "Läs mer",
+              "html": "Tillverkare av borrmaster för grävmaskiner, borrtillbehör och borriggar för trånga utrymmen.",
+              "text": "Tillverkare av borrmaster för grävmaskiner, borrtillbehör och borriggar för trånga utrymmen.",
+              "image": "/assets/img/tei.webp",
+              "width": 1920,
+              "height": 1920,
+              "alt": "TEI Rock Drills – logotyp"
+            },
+            {
+              "href": "/produkter/marini",
+              "label": "Läs mer",
+              "html": "Specialmaskiner för grundläggning, stenbrott, banddrivna fordon, borriggar och vajersågar med tillbehör.",
+              "text": "Specialmaskiner för grundläggning, stenbrott, banddrivna fordon, borriggar och vajersågar med tillbehör.",
+              "image": "/assets/img/marini.webp",
+              "width": 1241,
+              "height": 1241,
+              "alt": "Marini – logotyp"
+            },
+            {
+              "href": "/produkter/geobrugg",
+              "label": "Läs mer",
+              "html": "Produkter och system för släntstabilisering och skydd mot bergskred samt blockras.",
+              "text": "Produkter och system för släntstabilisering och skydd mot bergskred samt blockras.",
+              "image": "/assets/img/geobrugg.webp",
+              "width": 1000,
+              "height": 1000,
+              "alt": "Geobrugg – logotyp"
+            },
+            {
+              "href": "/produkter/mapei",
+              "label": "Läs mer",
+              "html": "System för vattentätning, putsbruk, lim, fogmassor och andra kemiska produkter för byggindustrin.",
+              "text": "System för vattentätning, putsbruk, lim, fogmassor och andra kemiska produkter för byggindustrin.",
+              "image": "/assets/img/mapei.webp",
+              "width": 1920,
+              "height": 1920,
+              "alt": "Mapei – logotyp"
+            },
+            {
+              "href": "/produkter/weber",
+              "label": "Läs mer",
+              "html": "Helhetslösningar för system inom fasadputs, murbruk, golvavjämning och plattsättning.",
+              "text": "Helhetslösningar för system inom fasadputs, murbruk, golvavjämning och plattsättning.",
+              "image": "/assets/img/weber.webp",
+              "width": 1100,
+              "height": 1100,
+              "alt": "Weber – logotyp"
+            },
+            {
+              "href": "/produkter/ecobeton",
+              "label": "Läs mer",
+              "html": "System och lösningar till byggindustrin för produkter såsom betong, puts, tegel och trä.",
+              "text": "System och lösningar till byggindustrin för produkter såsom betong, puts, tegel och trä.",
+              "image": "/assets/img/ecobeton.webp",
+              "width": 1000,
+              "height": 1000,
+              "alt": "Ecobeton – logotyp"
+            },
+            {
+              "href": "/produkter/ram-board",
+              "label": "Läs mer",
+              "html": "Produkter som golvskydd och karmskydd som är tillverkade för återanvändning med FSC-certifikat.",
+              "text": "Produkter som golvskydd och karmskydd som är tillverkade för återanvändning med FSC-certifikat.",
+              "image": "/assets/img/ram-board.webp",
+              "width": 250,
+              "height": 250,
+              "alt": "Ram Board – logotyp"
+            },
+            {
+              "href": "/produkter/brutus",
+              "label": "Läs mer",
+              "html": "Snigeldynamit för säker spräckning av berg och sten, utan vibrationer eller buller. Perfekt för känsliga områden.",
+              "text": "Snigeldynamit för säker spräckning av berg och sten, utan vibrationer eller buller. Perfekt för känsliga områden.",
+              "image": "/assets/img/brutus.webp",
+              "width": 800,
+              "height": 800,
+              "alt": "Brutus – logotyp"
+            },
+            {
+              "href": "/produkter/terra-infrastructure",
+              "label": "Läs mer",
+              "html": "Kraftfulla topphammare och vibroenheter för borrning av stag samt drivning av spont i tuff mark.",
+              "text": "Kraftfulla topphammare och vibroenheter för borrning av stag samt drivning av spont i tuff mark.",
+              "image": "/assets/img/terra-infrastructure.webp",
+              "width": 1000,
+              "height": 1000,
+              "alt": "Terra Infrastructure – logotyp"
+            },
+            {
+              "href": "/produkter/reed",
+              "label": "Läs mer",
+              "html": "Robust utrustning för sprutbetong, betongpumpar och gunite maskiner.",
+              "text": "Robust utrustning för sprutbetong, betongpumpar och gunite maskiner.",
+              "image": "/assets/img/reed.webp",
+              "width": 1920,
+              "height": 1920,
+              "alt": "REED – logotyp"
+            },
+            {
+              "href": "/produkter/ahlm",
+              "label": "Läs mer",
+              "html": "Torrbruksilon för hantering av cement och torrbruk med slutet, damm- och vattentätt system.",
+              "text": "Torrbruksilon för hantering av cement och torrbruk med slutet, damm- och vattentätt system.",
+              "image": "/assets/img/ahlm.webp",
+              "width": 1920,
+              "height": 1920,
+              "alt": "AHLM – logotyp"
+            },
+            {
+              "href": "/produkter/kraft-tool",
+              "label": "Läs mer",
+              "html": "Produkter som slevar, putsbrädor, fogbrädor och andra minst lika viktiga byggtillbehör.",
+              "text": "Produkter som slevar, putsbrädor, fogbrädor och andra minst lika viktiga byggtillbehör.",
+              "image": "/assets/img/kraft-tool.webp",
+              "width": 300,
+              "height": 300,
+              "alt": "Kraft Tool – logotyp"
+            }
+          ]
+        },
+        {
+          "type": "chips",
+          "title": "Vi hjälper till med rådgivning kring",
+          "items": [
+            "cement",
+            "betong",
+            "impregnering",
+            "injektering",
+            "ytbeläggning",
+            "ytskydd",
+            "geoteknik",
+            "monteringsstöd",
+            "schaktsäkring",
+            "silo",
+            "betongpumpar",
+            "borriggar",
+            "vajersågar",
+            "snigeldynamit",
+            "släntstabilisering"
+          ]
+        },
+        {
+          "type": "cta",
+          "title": "Tveka inte att fråga – vi löser det mesta.",
+          "text": "Kontakta oss så hjälper vi dig vidare, var du än befinner dig i byggprocessen.",
+          "button": "Kontakta oss",
+          "href": "/kontakta-oss"
+        }
+      ],
+      "lead": "Leverantör och konsult inom byggindustrin, med en stark inriktning på betong, ytskydd, geoteknik, betongpumpar, borriggar och relaterade produkter.",
+      "ctas": [
+        {
+          "text": "Se våra produkter",
+          "href": "/produkter"
+        },
+        {
+          "text": "Kontakta oss",
+          "href": "/kontakta-oss"
+        }
+      ]
+    },
+    "en": {
+      "title": "Home",
+      "h1": "Together we build success.",
+      "description": "Supplier and consultant to the construction industry, with a strong focus on concrete, surface protection, geotechnics, concrete pumps, drilling rigs and related products.",
+      "blocks": [
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Our brands"
+        },
+        {
+          "type": "cards",
+          "items": [
+            {
+              "href": "/produkter/haeny",
+              "label": "Läs mer",
+              "html": "Pumpar för förstärkning, tätning, förankring vid grundläggning, konstruktion och tunneldrivning.",
+              "text": "Pumps for reinforcement, sealing and anchoring in foundation work, construction and tunnelling.",
+              "image": "/assets/img/haeny.webp",
+              "width": 1000,
+              "height": 1000,
+              "alt": "HÄNY – logo"
+            },
+            {
+              "href": "/produkter/tei",
+              "label": "Läs mer",
+              "html": "Tillverkare av borrmaster för grävmaskiner, borrtillbehör och borriggar för trånga utrymmen.",
+              "text": "Manufacturer of drill masts for excavators, drilling accessories and drill rigs for confined spaces.",
+              "image": "/assets/img/tei.webp",
+              "width": 1920,
+              "height": 1920,
+              "alt": "TEI Rock Drills – logo"
+            },
+            {
+              "href": "/produkter/marini",
+              "label": "Läs mer",
+              "html": "Specialmaskiner för grundläggning, stenbrott, banddrivna fordon, borriggar och vajersågar med tillbehör.",
+              "text": "Special machinery for foundation work, quarrying, tracked vehicles, drilling rigs and wire saws with accessories.",
+              "image": "/assets/img/marini.webp",
+              "width": 1241,
+              "height": 1241,
+              "alt": "Marini – logo"
+            },
+            {
+              "href": "/produkter/geobrugg",
+              "label": "Läs mer",
+              "html": "Produkter och system för släntstabilisering och skydd mot bergskred samt blockras.",
+              "text": "Products and systems for slope stabilisation and protection against rockfall and landslides.",
+              "image": "/assets/img/geobrugg.webp",
+              "width": 1000,
+              "height": 1000,
+              "alt": "Geobrugg – logo"
+            },
+            {
+              "href": "/produkter/mapei",
+              "label": "Läs mer",
+              "html": "System för vattentätning, putsbruk, lim, fogmassor och andra kemiska produkter för byggindustrin.",
+              "text": "Systems for waterproofing, plastering mortar, adhesives, sealants and other chemical products for the construction industry.",
+              "image": "/assets/img/mapei.webp",
+              "width": 1920,
+              "height": 1920,
+              "alt": "Mapei – logo"
+            },
+            {
+              "href": "/produkter/weber",
+              "label": "Läs mer",
+              "html": "Helhetslösningar för system inom fasadputs, murbruk, golvavjämning och plattsättning.",
+              "text": "Complete system solutions for façade rendering, masonry mortar, floor levelling and tiling.",
+              "image": "/assets/img/weber.webp",
+              "width": 1100,
+              "height": 1100,
+              "alt": "Weber – logo"
+            },
+            {
+              "href": "/produkter/ecobeton",
+              "label": "Läs mer",
+              "html": "System och lösningar till byggindustrin för produkter såsom betong, puts, tegel och trä.",
+              "text": "Systems and solutions for the construction industry for products such as concrete, plaster, brick and wood.",
+              "image": "/assets/img/ecobeton.webp",
+              "width": 1000,
+              "height": 1000,
+              "alt": "Ecobeton – logo"
+            },
+            {
+              "href": "/produkter/ram-board",
+              "label": "Läs mer",
+              "html": "Produkter som golvskydd och karmskydd som är tillverkade för återanvändning med FSC-certifikat.",
+              "text": "Floor and frame protection products made for reuse and with FSC certification.",
+              "image": "/assets/img/ram-board.webp",
+              "width": 250,
+              "height": 250,
+              "alt": "Ram Board – logo"
+            },
+            {
+              "href": "/produkter/brutus",
+              "label": "Läs mer",
+              "html": "Snigeldynamit för säker spräckning av berg och sten, utan vibrationer eller buller. Perfekt för känsliga områden.",
+              "text": "Non-explosive rock splitting for safe breaking of rock and stone, without vibration or noise. Perfect for sensitive areas.",
+              "image": "/assets/img/brutus.webp",
+              "width": 800,
+              "height": 800,
+              "alt": "Brutus – logo"
+            },
+            {
+              "href": "/produkter/terra-infrastructure",
+              "label": "Läs mer",
+              "html": "Kraftfulla topphammare och vibroenheter för borrning av stag samt drivning av spont i tuff mark.",
+              "text": "Powerful drifters and vibratory units for drilling anchors and driving sheet piles in tough ground.",
+              "image": "/assets/img/terra-infrastructure.webp",
+              "width": 1000,
+              "height": 1000,
+              "alt": "Terra Infrastructure – logo"
+            },
+            {
+              "href": "/produkter/reed",
+              "label": "Läs mer",
+              "html": "Robust utrustning för sprutbetong, betongpumpar och gunite maskiner.",
+              "text": "Robust equipment for shotcrete, concrete pumps and gunite machines.",
+              "image": "/assets/img/reed.webp",
+              "width": 1920,
+              "height": 1920,
+              "alt": "REED – logo"
+            },
+            {
+              "href": "/produkter/ahlm",
+              "label": "Läs mer",
+              "html": "Torrbruksilon för hantering av cement och torrbruk med slutet, damm- och vattentätt system.",
+              "text": "Dry-mix silos for handling cement and dry mortar in a closed, dust- and watertight system.",
+              "image": "/assets/img/ahlm.webp",
+              "width": 1920,
+              "height": 1920,
+              "alt": "AHLM – logo"
+            },
+            {
+              "href": "/produkter/kraft-tool",
+              "label": "Läs mer",
+              "html": "Produkter som slevar, putsbrädor, fogbrädor och andra minst lika viktiga byggtillbehör.",
+              "text": "Products such as trowels, plastering boards, float boards and other equally important construction accessories.",
+              "image": "/assets/img/kraft-tool.webp",
+              "width": 300,
+              "height": 300,
+              "alt": "Kraft Tool – logo"
+            }
+          ]
+        },
+        {
+          "type": "chips",
+          "title": "We help with advice on",
+          "items": [
+            "cement",
+            "concrete",
+            "impregnation",
+            "grouting",
+            "surface coatings",
+            "surface protection",
+            "geotechnics",
+            "assembly supports",
+            "trench shoring",
+            "silos",
+            "concrete pumps",
+            "drilling rigs",
+            "wire saws",
+            "non-explosive rock splitting",
+            "slope stabilisation"
+          ]
+        },
+        {
+          "type": "cta",
+          "title": "Don’t hesitate to ask – we solve most things.",
+          "text": "Contact us and we will help you on, wherever you are in the construction process.",
+          "button": "Contact us",
+          "href": "/kontakta-oss"
+        }
+      ],
+      "lead": "Supplier and consultant to the construction industry, with a strong focus on concrete, surface protection, geotechnics, concrete pumps, drilling rigs and related products.",
+      "ctas": [
+        {
+          "text": "See our products",
+          "href": "/produkter"
+        },
+        {
+          "text": "Contact us",
+          "href": "/kontakta-oss"
+        }
+      ],
+      "published": true
+    },
+    "es": {
+      "title": "Inicio",
+      "h1": "Juntos construimos el éxito.",
+      "description": "Proveedor y consultor para la industria de la construcción, con un fuerte enfoque en hormigón, protección de superficies, geotecnia, bombas de hormigón, equipos de perforación y productos relacionados.",
+      "blocks": [
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Nuestras marcas"
+        },
+        {
+          "type": "cards",
+          "items": [
+            {
+              "href": "/produkter/haeny",
+              "label": "Läs mer",
+              "html": "Pumpar för förstärkning, tätning, förankring vid grundläggning, konstruktion och tunneldrivning.",
+              "text": "Bombas para refuerzo, sellado y anclaje en cimentaciones, construcción y excavación de túneles.",
+              "image": "/assets/img/haeny.webp",
+              "width": 1000,
+              "height": 1000,
+              "alt": "HÄNY – logotipo"
+            },
+            {
+              "href": "/produkter/tei",
+              "label": "Läs mer",
+              "html": "Tillverkare av borrmaster för grävmaskiner, borrtillbehör och borriggar för trånga utrymmen.",
+              "text": "Fabricante de mástiles de perforación para excavadoras, accesorios de perforación y equipos de perforación para espacios reducidos.",
+              "image": "/assets/img/tei.webp",
+              "width": 1920,
+              "height": 1920,
+              "alt": "TEI Rock Drills – logotipo"
+            },
+            {
+              "href": "/produkter/marini",
+              "label": "Läs mer",
+              "html": "Specialmaskiner för grundläggning, stenbrott, banddrivna fordon, borriggar och vajersågar med tillbehör.",
+              "text": "Maquinaria especial para cimentaciones, canteras, vehículos de orugas, equipos de perforación y sierras de hilo con accesorios.",
+              "image": "/assets/img/marini.webp",
+              "width": 1241,
+              "height": 1241,
+              "alt": "Marini – logotipo"
+            },
+            {
+              "href": "/produkter/geobrugg",
+              "label": "Läs mer",
+              "html": "Produkter och system för släntstabilisering och skydd mot bergskred samt blockras.",
+              "text": "Productos y sistemas para la estabilización de taludes y la protección frente a desprendimientos y deslizamientos.",
+              "image": "/assets/img/geobrugg.webp",
+              "width": 1000,
+              "height": 1000,
+              "alt": "Geobrugg – logotipo"
+            },
+            {
+              "href": "/produkter/mapei",
+              "label": "Läs mer",
+              "html": "System för vattentätning, putsbruk, lim, fogmassor och andra kemiska produkter för byggindustrin.",
+              "text": "Sistemas de impermeabilización, morteros de revoco, adhesivos, selladores y otros productos químicos para la industria de la construcción.",
+              "image": "/assets/img/mapei.webp",
+              "width": 1920,
+              "height": 1920,
+              "alt": "Mapei – logotipo"
+            },
+            {
+              "href": "/produkter/weber",
+              "label": "Läs mer",
+              "html": "Helhetslösningar för system inom fasadputs, murbruk, golvavjämning och plattsättning.",
+              "text": "Soluciones integrales para revoco de fachadas, morteros de albañilería, nivelación de suelos y alicatado.",
+              "image": "/assets/img/weber.webp",
+              "width": 1100,
+              "height": 1100,
+              "alt": "Weber – logotipo"
+            },
+            {
+              "href": "/produkter/ecobeton",
+              "label": "Läs mer",
+              "html": "System och lösningar till byggindustrin för produkter såsom betong, puts, tegel och trä.",
+              "text": "Sistemas y soluciones para la industria de la construcción para productos como hormigón, yeso, ladrillo y madera.",
+              "image": "/assets/img/ecobeton.webp",
+              "width": 1000,
+              "height": 1000,
+              "alt": "Ecobeton – logotipo"
+            },
+            {
+              "href": "/produkter/ram-board",
+              "label": "Läs mer",
+              "html": "Produkter som golvskydd och karmskydd som är tillverkade för återanvändning med FSC-certifikat.",
+              "text": "Productos de protección de suelos y marcos fabricados para su reutilización y con certificación FSC.",
+              "image": "/assets/img/ram-board.webp",
+              "width": 250,
+              "height": 250,
+              "alt": "Ram Board – logotipo"
+            },
+            {
+              "href": "/produkter/brutus",
+              "label": "Läs mer",
+              "html": "Snigeldynamit för säker spräckning av berg och sten, utan vibrationer eller buller. Perfekt för känsliga områden.",
+              "text": "Cemento expansivo para la fragmentación segura de roca y piedra, sin vibraciones ni ruido. Perfecto para zonas sensibles.",
+              "image": "/assets/img/brutus.webp",
+              "width": 800,
+              "height": 800,
+              "alt": "Brutus – logotipo"
+            },
+            {
+              "href": "/produkter/terra-infrastructure",
+              "label": "Läs mer",
+              "html": "Kraftfulla topphammare och vibroenheter för borrning av stag samt drivning av spont i tuff mark.",
+              "text": "Potentes martillos perforadores y unidades vibratorias para perforar anclajes e hincar tablestacas en terrenos difíciles.",
+              "image": "/assets/img/terra-infrastructure.webp",
+              "width": 1000,
+              "height": 1000,
+              "alt": "Terra Infrastructure – logotipo"
+            },
+            {
+              "href": "/produkter/reed",
+              "label": "Läs mer",
+              "html": "Robust utrustning för sprutbetong, betongpumpar och gunite maskiner.",
+              "text": "Equipos robustos para hormigón proyectado, bombas de hormigón y máquinas de gunitado.",
+              "image": "/assets/img/reed.webp",
+              "width": 1920,
+              "height": 1920,
+              "alt": "REED – logotipo"
+            },
+            {
+              "href": "/produkter/ahlm",
+              "label": "Läs mer",
+              "html": "Torrbruksilon för hantering av cement och torrbruk med slutet, damm- och vattentätt system.",
+              "text": "Silos para mortero seco para el manejo de cemento y mortero seco en un sistema cerrado, estanco al polvo y al agua.",
+              "image": "/assets/img/ahlm.webp",
+              "width": 1920,
+              "height": 1920,
+              "alt": "AHLM – logotipo"
+            },
+            {
+              "href": "/produkter/kraft-tool",
+              "label": "Läs mer",
+              "html": "Produkter som slevar, putsbrädor, fogbrädor och andra minst lika viktiga byggtillbehör.",
+              "text": "Productos como llanas, tablas de enlucir, flotas y otros accesorios de construcción igual de importantes.",
+              "image": "/assets/img/kraft-tool.webp",
+              "width": 300,
+              "height": 300,
+              "alt": "Kraft Tool – logotipo"
+            }
+          ]
+        },
+        {
+          "type": "chips",
+          "title": "Le asesoramos sobre",
+          "items": [
+            "cemento",
+            "hormigón",
+            "impregnación",
+            "inyección",
+            "recubrimientos de superficies",
+            "protección de superficies",
+            "geotecnia",
+            "soportes de montaje",
+            "entibación de zanjas",
+            "silos",
+            "bombas de hormigón",
+            "equipos de perforación",
+            "sierras de hilo",
+            "cemento expansivo",
+            "estabilización de taludes"
+          ]
+        },
+        {
+          "type": "cta",
+          "title": "No dude en preguntar: solucionamos casi todo.",
+          "text": "Contáctenos y le ayudaremos, esté donde esté en el proceso de construcción.",
+          "button": "Contáctenos",
+          "href": "/kontakta-oss"
+        }
+      ],
+      "lead": "Proveedor y consultor para la industria de la construcción, con un fuerte enfoque en hormigón, protección de superficies, geotecnia, bombas de hormigón, equipos de perforación y productos relacionados.",
+      "ctas": [
+        {
+          "text": "Ver nuestros productos",
+          "href": "/produkter"
+        },
+        {
+          "text": "Contáctenos",
+          "href": "/kontakta-oss"
+        }
+      ],
+      "published": true
+    },
+    "no": {
+      "title": "Forside",
+      "h1": "Sammen bygger vi suksess.",
+      "description": "Leverandør og rådgiver til byggebransjen, med sterk vekt på betong, overflatebeskyttelse, geoteknikk, betongpumper, borerigger og relaterte produkter.",
+      "blocks": [
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Våre merker"
+        },
+        {
+          "type": "cards",
+          "items": [
+            {
+              "href": "/produkter/haeny",
+              "label": "Läs mer",
+              "html": "Pumpar för förstärkning, tätning, förankring vid grundläggning, konstruktion och tunneldrivning.",
+              "text": "Pumper for forsterkning, tetting og forankring i fundamentering, konstruksjon og tunneldriving.",
+              "image": "/assets/img/haeny.webp",
+              "width": 1000,
+              "height": 1000,
+              "alt": "HÄNY – logo"
+            },
+            {
+              "href": "/produkter/tei",
+              "label": "Läs mer",
+              "html": "Tillverkare av borrmaster för grävmaskiner, borrtillbehör och borriggar för trånga utrymmen.",
+              "text": "Produsent av boremaster for gravemaskiner, boretilbehør og borerigger for trange rom.",
+              "image": "/assets/img/tei.webp",
+              "width": 1920,
+              "height": 1920,
+              "alt": "TEI Rock Drills – logo"
+            },
+            {
+              "href": "/produkter/marini",
+              "label": "Läs mer",
+              "html": "Specialmaskiner för grundläggning, stenbrott, banddrivna fordon, borriggar och vajersågar med tillbehör.",
+              "text": "Spesialmaskiner for fundamentering, steinbrudd, beltekjøretøy, borerigger og wiresager med tilbehør.",
+              "image": "/assets/img/marini.webp",
+              "width": 1241,
+              "height": 1241,
+              "alt": "Marini – logo"
+            },
+            {
+              "href": "/produkter/geobrugg",
+              "label": "Läs mer",
+              "html": "Produkter och system för släntstabilisering och skydd mot bergskred samt blockras.",
+              "text": "Produkter og systemer for skråningsstabilisering og beskyttelse mot steinsprang og skred.",
+              "image": "/assets/img/geobrugg.webp",
+              "width": 1000,
+              "height": 1000,
+              "alt": "Geobrugg – logo"
+            },
+            {
+              "href": "/produkter/mapei",
+              "label": "Läs mer",
+              "html": "System för vattentätning, putsbruk, lim, fogmassor och andra kemiska produkter för byggindustrin.",
+              "text": "Systemer for membran og tetting, pussmørtel, lim, fugemasser og andre kjemiske produkter for byggebransjen.",
+              "image": "/assets/img/mapei.webp",
+              "width": 1920,
+              "height": 1920,
+              "alt": "Mapei – logo"
+            },
+            {
+              "href": "/produkter/weber",
+              "label": "Läs mer",
+              "html": "Helhetslösningar för system inom fasadputs, murbruk, golvavjämning och plattsättning.",
+              "text": "Helhetlige systemløsninger for fasadepuss, murmørtel, gulvavretting og flisleggning.",
+              "image": "/assets/img/weber.webp",
+              "width": 1100,
+              "height": 1100,
+              "alt": "Weber – logo"
+            },
+            {
+              "href": "/produkter/ecobeton",
+              "label": "Läs mer",
+              "html": "System och lösningar till byggindustrin för produkter såsom betong, puts, tegel och trä.",
+              "text": "Systemer og løsninger for byggebransjen til produkter som betong, puss, tegl og tre.",
+              "image": "/assets/img/ecobeton.webp",
+              "width": 1000,
+              "height": 1000,
+              "alt": "Ecobeton – logo"
+            },
+            {
+              "href": "/produkter/ram-board",
+              "label": "Läs mer",
+              "html": "Produkter som golvskydd och karmskydd som är tillverkade för återanvändning med FSC-certifikat.",
+              "text": "Gulv- og karmbeskyttelse laget for gjenbruk og med FSC-sertifisering.",
+              "image": "/assets/img/ram-board.webp",
+              "width": 250,
+              "height": 250,
+              "alt": "Ram Board – logo"
+            },
+            {
+              "href": "/produkter/brutus",
+              "label": "Läs mer",
+              "html": "Snigeldynamit för säker spräckning av berg och sten, utan vibrationer eller buller. Perfekt för känsliga områden.",
+              "text": "Ikke-eksplosivt bergsprengningsmiddel for sikker spalting av berg og stein, uten vibrasjoner eller støy. Perfekt for sensitive områder.",
+              "image": "/assets/img/brutus.webp",
+              "width": 800,
+              "height": 800,
+              "alt": "Brutus – logo"
+            },
+            {
+              "href": "/produkter/terra-infrastructure",
+              "label": "Läs mer",
+              "html": "Kraftfulla topphammare och vibroenheter för borrning av stag samt drivning av spont i tuff mark.",
+              "text": "Kraftige topphammere og vibroenheter for boring av stag og drivning av spunt i tøff grunn.",
+              "image": "/assets/img/terra-infrastructure.webp",
+              "width": 1000,
+              "height": 1000,
+              "alt": "Terra Infrastructure – logo"
+            },
+            {
+              "href": "/produkter/reed",
+              "label": "Läs mer",
+              "html": "Robust utrustning för sprutbetong, betongpumpar och gunite maskiner.",
+              "text": "Robust utstyr for sprøytebetong, betongpumper og gunittmaskiner.",
+              "image": "/assets/img/reed.webp",
+              "width": 1920,
+              "height": 1920,
+              "alt": "REED – logo"
+            },
+            {
+              "href": "/produkter/ahlm",
+              "label": "Läs mer",
+              "html": "Torrbruksilon för hantering av cement och torrbruk med slutet, damm- och vattentätt system.",
+              "text": "Tørrmørtelsiloer for håndtering av sement og tørrmørtel i et lukket, støv- og vanntett system.",
+              "image": "/assets/img/ahlm.webp",
+              "width": 1920,
+              "height": 1920,
+              "alt": "AHLM – logo"
+            },
+            {
+              "href": "/produkter/kraft-tool",
+              "label": "Läs mer",
+              "html": "Produkter som slevar, putsbrädor, fogbrädor och andra minst lika viktiga byggtillbehör.",
+              "text": "Produkter som slevtre, pussbrett, fugebrett og annet like viktig byggetilbehør.",
+              "image": "/assets/img/kraft-tool.webp",
+              "width": 300,
+              "height": 300,
+              "alt": "Kraft Tool – logo"
+            }
+          ]
+        },
+        {
+          "type": "chips",
+          "title": "Vi hjelper til med rådgivning om",
+          "items": [
+            "sement",
+            "betong",
+            "impregnering",
+            "injisering",
+            "overflatebelegg",
+            "overflatebeskyttelse",
+            "geoteknikk",
+            "monteringsstøtter",
+            "grøftesikring",
+            "siloer",
+            "betongpumper",
+            "borerigger",
+            "wiresager",
+            "ikke-eksplosivt sprengningsmiddel",
+            "skråningsstabilisering"
+          ]
+        },
+        {
+          "type": "cta",
+          "title": "Ikke nøl med å spørre – vi løser det meste.",
+          "text": "Ta kontakt, så hjelper vi deg videre, uansett hvor du er i byggeprosessen.",
+          "button": "Kontakt oss",
+          "href": "/kontakta-oss"
+        }
+      ],
+      "lead": "Leverandør og rådgiver til byggebransjen, med sterk vekt på betong, overflatebeskyttelse, geoteknikk, betongpumper, borerigger og relaterte produkter.",
+      "ctas": [
+        {
+          "text": "Se våre produkter",
+          "href": "/produkter"
+        },
+        {
+          "text": "Kontakt oss",
+          "href": "/kontakta-oss"
+        }
+      ],
+      "published": true
+    }
+  },
+  "source": {
+    "url": "https://www.betongakuten.se/"
+  }
+}

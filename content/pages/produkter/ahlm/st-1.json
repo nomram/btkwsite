@@ -1,0 +1,226 @@
+{
+  "path": "/produkter/ahlm/st-1",
+  "updated": "2026-10-10",
+  "template": "product",
+  "order": 2,
+  "published": true,
+  "hero": {
+    "image": "/assets/img/ahlm-st-1-hero.webp"
+  },
+  "i18n": {
+    "sv": {
+      "title": "ST-1",
+      "h1": "Säcktömmare ST-1",
+      "description": "ST-1 är en säcktömmare (framtagen av AHLM). Är tänkt för att monteras ovanpå en TB-10 eller HTB för tömning av stora säckar.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Säcktömmare ST-1",
+          "width": 1920,
+          "height": 961,
+          "src": "/assets/img/ahlm-st-1-1.webp"
+        },
+        {
+          "type": "image",
+          "alt": "Säcktömmare ST-1 – bild 2",
+          "width": 1920,
+          "height": 1920,
+          "src": "/assets/img/ahlm-st-1.webp"
+        },
+        {
+          "type": "text",
+          "html": "ST-1 är en säcktömmare (framtagen av AHLM). Är tänkt för att monteras ovanpå en TB-10 eller HTB för tömning av stora säckar."
+        },
+        {
+          "type": "text",
+          "html": "Den har försedd inbyggd säckspräckare och locket manövreras med avtagbart handtag. Fästjärn för säker montering av toppen på container ingår eller spännband."
+        },
+        {
+          "type": "text",
+          "html": "Storsäcken sänks ner över en inbyggd säckspräckarkniv, öppnas kontrollerat och materialet rinner ner i silon, vilket ger snabb och relativt dammfri påfyllning med kranbil eller hjullastare."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Teknisk data"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Bredd: 1500mm",
+            "Höjd: 1500mm",
+            "Längd: 1200mm",
+            "Vikt (tom): ca. 150 kg"
+          ]
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Kontakta oss</a> för mer information."
+        }
+      ]
+    },
+    "en": {
+      "title": "ST-1",
+      "h1": "Bag emptying station ST-1",
+      "description": "ST-1 is a big-bag emptying station (developed by AHLM). It is designed to be mounted on top of a TB-10 or HTB for emptying large bags.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Bag emptying station ST-1",
+          "width": 1920,
+          "height": 961,
+          "src": "/assets/img/ahlm-st-1-1.webp"
+        },
+        {
+          "type": "image",
+          "alt": "Bag emptying station ST-1 – image 2",
+          "width": 1920,
+          "height": 1920,
+          "src": "/assets/img/ahlm-st-1.webp"
+        },
+        {
+          "type": "text",
+          "html": "ST-1 is a big-bag emptying station (developed by AHLM). It is designed to be mounted on top of a TB-10 or HTB for emptying large bags."
+        },
+        {
+          "type": "text",
+          "html": "It has a built-in bag splitter and the lid is operated with a removable handle. Mounting brackets for securely fixing the top to the container, or straps, are included."
+        },
+        {
+          "type": "text",
+          "html": "The big bag is lowered over a built-in bag-splitting knife, opened in a controlled way and the material flows down into the silo, giving fast and relatively dust-free filling with a crane truck or wheel loader."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Technical data"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Width: 1500 mm",
+            "Height: 1500 mm",
+            "Length: 1200 mm",
+            "Weight (empty): approx. 150 kg"
+          ]
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Contact us</a> for more information."
+        }
+      ],
+      "published": true
+    },
+    "es": {
+      "title": "ST-1",
+      "h1": "Estación de vaciado de sacos ST-1",
+      "description": "ST-1 es una estación de vaciado de sacos grandes (desarrollada por AHLM). Está diseñada para montarse sobre un TB-10 o HTB para vaciar big bags.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Estación de vaciado de sacos ST-1",
+          "width": 1920,
+          "height": 961,
+          "src": "/assets/img/ahlm-st-1-1.webp"
+        },
+        {
+          "type": "image",
+          "alt": "Estación de vaciado de sacos ST-1 – imagen 2",
+          "width": 1920,
+          "height": 1920,
+          "src": "/assets/img/ahlm-st-1.webp"
+        },
+        {
+          "type": "text",
+          "html": "ST-1 es una estación de vaciado de sacos grandes (desarrollada por AHLM). Está diseñada para montarse sobre un TB-10 o HTB para vaciar big bags."
+        },
+        {
+          "type": "text",
+          "html": "Incorpora un abresacos integrado y la tapa se maneja con una manivela desmontable. Se incluyen soportes de fijación para montar de forma segura la parte superior al contenedor, o correas."
+        },
+        {
+          "type": "text",
+          "html": "El big bag se baja sobre una cuchilla abresacos integrada, se abre de forma controlada y el material cae al silo, lo que permite un llenado rápido y relativamente libre de polvo con camión grúa o cargadora de ruedas."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Datos técnicos"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Anchura: 1500 mm",
+            "Altura: 1500 mm",
+            "Longitud: 1200 mm",
+            "Peso (vacío): aprox. 150 kg"
+          ]
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Contáctenos</a> para más información."
+        }
+      ],
+      "published": true
+    },
+    "no": {
+      "title": "ST-1",
+      "h1": "Sekketømmer ST-1",
+      "description": "ST-1 er en storsekk-tømmer (utviklet av AHLM). Den er laget for å monteres oppå en TB-10 eller HTB for tømming av store sekker.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Sekketømmer ST-1",
+          "width": 1920,
+          "height": 961,
+          "src": "/assets/img/ahlm-st-1-1.webp"
+        },
+        {
+          "type": "image",
+          "alt": "Sekketømmer ST-1 – bilde 2",
+          "width": 1920,
+          "height": 1920,
+          "src": "/assets/img/ahlm-st-1.webp"
+        },
+        {
+          "type": "text",
+          "html": "ST-1 er en storsekk-tømmer (utviklet av AHLM). Den er laget for å monteres oppå en TB-10 eller HTB for tømming av store sekker."
+        },
+        {
+          "type": "text",
+          "html": "Den har innebygd sekkeoppskjærer, og lokket betjenes med avtakbart håndtak. Festejern for sikker montering av toppen på container, eller stroppebånd, følger med."
+        },
+        {
+          "type": "text",
+          "html": "Storsekken senkes ned over en innebygd sekkeoppskjærer, åpnes kontrollert, og materialet renner ned i siloen, noe som gir rask og relativt støvfri fylling med kranbil eller hjullaster."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Tekniske data"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Bredde: 1500 mm",
+            "Høyde: 1500 mm",
+            "Lengde: 1200 mm",
+            "Vekt (tom): ca. 150 kg"
+          ]
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Kontakt oss</a> for mer informasjon."
+        }
+      ],
+      "published": true
+    }
+  },
+  "source": {
+    "url": "https://www.betongakuten.se/produkter/ahlm/st-1"
+  }
+}

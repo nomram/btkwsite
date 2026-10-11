@@ -1,0 +1,794 @@
+{
+  "path": "/produkter/tei/borriggar/td100",
+  "updated": "2026-10-10",
+  "template": "product",
+  "order": 1,
+  "published": true,
+  "hero": {
+    "image": "/assets/img/tei-borriggar-td100-hero.webp"
+  },
+  "i18n": {
+    "sv": {
+      "title": "TD100",
+      "h1": "TD100",
+      "description": "TD100 är en elektrisk/hydraulisk borrigg för begränsad åtkomst, utformad för att säkert installera fodrade mikropålar. Borriggens modellnummer anger antal…",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "TEI Rock Drills – logotyp",
+          "href": "/produkter/tei",
+          "width": 1920,
+          "height": 1117,
+          "src": "/assets/img/tei-2.webp"
+        },
+        {
+          "type": "image",
+          "alt": "TD100 – bild 2",
+          "width": 500,
+          "height": 438,
+          "src": "/assets/img/tei-borriggar-td100-2.webp"
+        },
+        {
+          "type": "text",
+          "html": "TD100 är en elektrisk/hydraulisk borrigg för begränsad åtkomst, utformad för att säkert installera fodrade mikropålar. Borriggens modellnummer anger antal hästkrafter i den elektriska motorn."
+        },
+        {
+          "type": "text",
+          "html": "Dess gummilarver kan dra ihop sig till 1219 mm för att komma in i svåra borrpositioner. Motorn på 100 hk gör att den kan driva alla TEI-tillverkade rotationshammare."
+        },
+        {
+          "type": "datasheet",
+          "title": "Teknisk data",
+          "note": "TEI:s tekniska data förutsätter 40 % hydraulisk effektförlust.",
+          "tagline": "Borrigg för begränsade utrymmen",
+          "intro": [
+            "TD100 är en elektrisk/hydraulisk borrigg för begränsade utrymmen, konstruerad för att säkert installera mantlade mikropålar och stora mikropålar med hollow bar. Gummibanden kan dras ihop till 48 tum (1 219 mm) så att riggen kan köras in i svåråtkomliga borrpositioner.",
+            "Den 100 hk starka motorn gör att TD100 kan driva alla topphammare och rotationshuvuden från TEI. Möjligheterna med TD100 är många."
+          ],
+          "groups": [
+            {
+              "title": "Maskin",
+              "rows": [
+                {
+                  "label": "Mastens dragkraft",
+                  "metric": "25 379 N",
+                  "us": "12 000 lbf"
+                },
+                {
+                  "label": "Matningstryck",
+                  "metric": "207 bar",
+                  "us": "3000 psi"
+                },
+                {
+                  "label": "Elmotor",
+                  "metric": "75 kW",
+                  "us": "100 hp"
+                },
+                {
+                  "label": "Hydraultank",
+                  "metric": "151 l",
+                  "us": "40 gal"
+                },
+                {
+                  "label": "Elmatning",
+                  "metric": "3-fas 480 V / 50 Hz",
+                  "us": "3-fas 480 V / 60 Hz"
+                },
+                {
+                  "label": "Mjukstartsgenerator",
+                  "metric": "185 kW",
+                  "us": "185 kW"
+                },
+                {
+                  "label": "Ungefärlig vikt",
+                  "metric": "5 207 kg",
+                  "us": "11 480 lbm"
+                }
+              ]
+            },
+            {
+              "title": "TD100 med TE1000",
+              "rows": [
+                {
+                  "label": "Hydraulflöde",
+                  "metric": "276 lpm",
+                  "us": "73 gpm"
+                },
+                {
+                  "label": "Hydraultryck",
+                  "metric": "207 bar",
+                  "us": "3000 psi"
+                },
+                {
+                  "label": "Håldiameter",
+                  "metric": "76–178 mm",
+                  "us": "3–7 tum"
+                },
+                {
+                  "label": "Total matningslängd",
+                  "metric": "3,28 m",
+                  "us": "129,13 tum"
+                },
+                {
+                  "label": "Borrslag",
+                  "metric": "2,44 m",
+                  "us": "96 tum"
+                },
+                {
+                  "label": "Rotationsmoment",
+                  "metric": "13 605 Nm",
+                  "us": "10 000 lbf-ft"
+                }
+              ]
+            },
+            {
+              "title": "TD100 med RDS1004",
+              "rows": [
+                {
+                  "label": "Hydraulflöde",
+                  "metric": "227 lpm",
+                  "us": "60 gpm"
+                },
+                {
+                  "label": "Hydraultryck",
+                  "metric": "207 bar",
+                  "us": "3000 psi"
+                },
+                {
+                  "label": "Håldiameter",
+                  "metric": "127–610 mm",
+                  "us": "5–24 tum"
+                },
+                {
+                  "label": "Total matningslängd",
+                  "metric": "3,28 m",
+                  "us": "129,13 tum"
+                },
+                {
+                  "label": "Borrslag",
+                  "metric": "2,44 m",
+                  "us": "96 tum"
+                },
+                {
+                  "label": "Rotationsmoment",
+                  "metric": "13 605 Nm",
+                  "us": "10 000 lbf-ft"
+                }
+              ]
+            },
+            {
+              "title": "TD100 med RDS1500",
+              "rows": [
+                {
+                  "label": "Hydraulflöde",
+                  "metric": "227 lpm",
+                  "us": "60 gpm"
+                },
+                {
+                  "label": "Hydraultryck",
+                  "metric": "207 bar",
+                  "us": "3000 psi"
+                },
+                {
+                  "label": "Håldiameter",
+                  "metric": "127–750 mm",
+                  "us": "5–30 tum"
+                },
+                {
+                  "label": "Total matningslängd",
+                  "metric": "3,28 m",
+                  "us": "129,13 tum"
+                },
+                {
+                  "label": "Borrslag",
+                  "metric": "2,44 m",
+                  "us": "96 tum"
+                },
+                {
+                  "label": "Rotationsmoment",
+                  "metric": "20 408 Nm",
+                  "us": "15 000 lbf-ft"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Produktblad",
+          "href": "/assets/docs/tei-borriggar-td100-broschyr-eng.pdf",
+          "driveId": "1TI3oU-tDsd_CJ5BrgpfF4jErHGjt8MBn"
+        }
+      ]
+    },
+    "en": {
+      "title": "TD100",
+      "h1": "TD100",
+      "description": "TD100 is an electric/hydraulic limited-access drill rig designed to safely install cased micropiles. The rig’s model number indicates the horsepower of the electric motor…",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "TEI Rock Drills – logo",
+          "href": "/produkter/tei",
+          "width": 1920,
+          "height": 1117,
+          "src": "/assets/img/tei-2.webp"
+        },
+        {
+          "type": "image",
+          "alt": "TD100 – image 2",
+          "width": 500,
+          "height": 438,
+          "src": "/assets/img/tei-borriggar-td100-2.webp"
+        },
+        {
+          "type": "text",
+          "html": "TD100 is an electric/hydraulic limited-access drill rig designed to safely install cased micropiles. The rig’s model number indicates the horsepower of the electric motor."
+        },
+        {
+          "type": "text",
+          "html": "Its rubber tracks can contract to 1,219 mm to enter difficult drilling positions. The 100 hp motor allows it to drive all TEI-made rotary heads."
+        },
+        {
+          "type": "datasheet",
+          "title": "Technical data",
+          "note": "TEI’s technical specifications assume a 40% hydraulic power loss.",
+          "tagline": "Drill rig for confined spaces",
+          "intro": [
+            "TD100 is an electric/hydraulic drill rig for confined spaces, designed to safely install cased micropiles and large hollow-bar micropiles. The rubber tracks can be drawn in to 48 inches (1,219 mm) so that the rig can be driven into hard-to-reach drilling positions.",
+            "The 100 hp motor allows the TD100 to drive all drifters and rotary heads from TEI. The possibilities with the TD100 are many."
+          ],
+          "groups": [
+            {
+              "title": "Machine",
+              "rows": [
+                {
+                  "label": "Mast pull force",
+                  "metric": "25 379 N",
+                  "us": "12 000 lbf"
+                },
+                {
+                  "label": "Feed pressure",
+                  "metric": "207 bar",
+                  "us": "3000 psi"
+                },
+                {
+                  "label": "Electric motor",
+                  "metric": "75 kW",
+                  "us": "100 hp"
+                },
+                {
+                  "label": "Hydraulic tank",
+                  "metric": "151 l",
+                  "us": "40 gal"
+                },
+                {
+                  "label": "Power supply",
+                  "metric": "3-phase 480 V / 50 Hz",
+                  "us": "3-phase 480 V / 60 Hz"
+                },
+                {
+                  "label": "Soft-start generator",
+                  "metric": "185 kW",
+                  "us": "185 kW"
+                },
+                {
+                  "label": "Approximate weight",
+                  "metric": "5 207 kg",
+                  "us": "11 480 lbm"
+                }
+              ]
+            },
+            {
+              "title": "TD100 with TE1000",
+              "rows": [
+                {
+                  "label": "Hydraulic flow",
+                  "metric": "276 lpm",
+                  "us": "73 gpm"
+                },
+                {
+                  "label": "Hydraulic pressure",
+                  "metric": "207 bar",
+                  "us": "3000 psi"
+                },
+                {
+                  "label": "Hole diameter",
+                  "metric": "76–178 mm",
+                  "us": "3–7 in"
+                },
+                {
+                  "label": "Total feed length",
+                  "metric": "3,28 m",
+                  "us": "129.13 in"
+                },
+                {
+                  "label": "Drill travel",
+                  "metric": "2,44 m",
+                  "us": "96 in"
+                },
+                {
+                  "label": "Rotation torque",
+                  "metric": "13 605 Nm",
+                  "us": "10 000 lbf-ft"
+                }
+              ]
+            },
+            {
+              "title": "TD100 with RDS1004",
+              "rows": [
+                {
+                  "label": "Hydraulic flow",
+                  "metric": "227 lpm",
+                  "us": "60 gpm"
+                },
+                {
+                  "label": "Hydraulic pressure",
+                  "metric": "207 bar",
+                  "us": "3000 psi"
+                },
+                {
+                  "label": "Hole diameter",
+                  "metric": "127–610 mm",
+                  "us": "5–24 in"
+                },
+                {
+                  "label": "Total feed length",
+                  "metric": "3,28 m",
+                  "us": "129.13 in"
+                },
+                {
+                  "label": "Drill travel",
+                  "metric": "2,44 m",
+                  "us": "96 in"
+                },
+                {
+                  "label": "Rotation torque",
+                  "metric": "13 605 Nm",
+                  "us": "10 000 lbf-ft"
+                }
+              ]
+            },
+            {
+              "title": "TD100 with RDS1500",
+              "rows": [
+                {
+                  "label": "Hydraulic flow",
+                  "metric": "227 lpm",
+                  "us": "60 gpm"
+                },
+                {
+                  "label": "Hydraulic pressure",
+                  "metric": "207 bar",
+                  "us": "3000 psi"
+                },
+                {
+                  "label": "Hole diameter",
+                  "metric": "127–750 mm",
+                  "us": "5–30 in"
+                },
+                {
+                  "label": "Total feed length",
+                  "metric": "3,28 m",
+                  "us": "129.13 in"
+                },
+                {
+                  "label": "Drill travel",
+                  "metric": "2,44 m",
+                  "us": "96 in"
+                },
+                {
+                  "label": "Rotation torque",
+                  "metric": "20 408 Nm",
+                  "us": "15 000 lbf-ft"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Data sheet",
+          "href": "/assets/docs/tei-borriggar-td100-broschyr-eng.pdf",
+          "driveId": "1TI3oU-tDsd_CJ5BrgpfF4jErHGjt8MBn"
+        }
+      ],
+      "published": true
+    },
+    "es": {
+      "title": "TD100",
+      "h1": "TD100",
+      "description": "El TD100 es un equipo de perforación eléctrico/hidráulico de acceso limitado, diseñado para instalar con seguridad micropilotes entubados. El número de modelo del equipo indica la potencia en caballos del motor eléctrico…",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "TEI Rock Drills – logotipo",
+          "href": "/produkter/tei",
+          "width": 1920,
+          "height": 1117,
+          "src": "/assets/img/tei-2.webp"
+        },
+        {
+          "type": "image",
+          "alt": "TD100 – imagen 2",
+          "width": 500,
+          "height": 438,
+          "src": "/assets/img/tei-borriggar-td100-2.webp"
+        },
+        {
+          "type": "text",
+          "html": "El TD100 es un equipo de perforación eléctrico/hidráulico de acceso limitado, diseñado para instalar con seguridad micropilotes entubados. El número de modelo del equipo indica la potencia en caballos del motor eléctrico."
+        },
+        {
+          "type": "text",
+          "html": "Sus orugas de goma pueden contraerse hasta 1219 mm para acceder a posiciones de perforación difíciles. El motor de 100 hp le permite accionar todos los cabezales de rotación fabricados por TEI."
+        },
+        {
+          "type": "datasheet",
+          "title": "Datos técnicos",
+          "note": "Las especificaciones técnicas de TEI suponen una pérdida de potencia hidráulica del 40 %.",
+          "tagline": "Equipo de perforación para espacios reducidos",
+          "intro": [
+            "El TD100 es un equipo de perforación eléctrico/hidráulico para espacios reducidos, diseñado para instalar con seguridad micropilotes entubados y micropilotes grandes de barra hueca. Las orugas de goma pueden recogerse hasta 48 pulgadas (1219 mm) para que el equipo pueda acceder a posiciones de perforación de difícil acceso.",
+            "El motor de 100 hp permite al TD100 accionar todos los martillos perforadores y cabezales de rotación de TEI. Las posibilidades del TD100 son muchas."
+          ],
+          "groups": [
+            {
+              "title": "Máquina",
+              "rows": [
+                {
+                  "label": "Fuerza de tracción del mástil",
+                  "metric": "25 379 N",
+                  "us": "12 000 lbf"
+                },
+                {
+                  "label": "Presión de avance",
+                  "metric": "207 bar",
+                  "us": "3000 psi"
+                },
+                {
+                  "label": "Motor eléctrico",
+                  "metric": "75 kW",
+                  "us": "100 hp"
+                },
+                {
+                  "label": "Depósito hidráulico",
+                  "metric": "151 l",
+                  "us": "40 gal"
+                },
+                {
+                  "label": "Alimentación eléctrica",
+                  "metric": "Trifásica 480 V / 50 Hz",
+                  "us": "Trifásica 480 V / 60 Hz"
+                },
+                {
+                  "label": "Generador con arranque suave",
+                  "metric": "185 kW",
+                  "us": "185 kW"
+                },
+                {
+                  "label": "Peso aproximado",
+                  "metric": "5 207 kg",
+                  "us": "11 480 lbm"
+                }
+              ]
+            },
+            {
+              "title": "TD100 con TE1000",
+              "rows": [
+                {
+                  "label": "Caudal hidráulico",
+                  "metric": "276 lpm",
+                  "us": "73 gpm"
+                },
+                {
+                  "label": "Presión hidráulica",
+                  "metric": "207 bar",
+                  "us": "3000 psi"
+                },
+                {
+                  "label": "Diámetro del agujero",
+                  "metric": "76–178 mm",
+                  "us": "3–7 pulg."
+                },
+                {
+                  "label": "Longitud total de avance",
+                  "metric": "3,28 m",
+                  "us": "129,13 pulg."
+                },
+                {
+                  "label": "Carrera de perforación",
+                  "metric": "2,44 m",
+                  "us": "96 pulg."
+                },
+                {
+                  "label": "Par de rotación",
+                  "metric": "13 605 Nm",
+                  "us": "10 000 lbf-ft"
+                }
+              ]
+            },
+            {
+              "title": "TD100 con RDS1004",
+              "rows": [
+                {
+                  "label": "Caudal hidráulico",
+                  "metric": "227 lpm",
+                  "us": "60 gpm"
+                },
+                {
+                  "label": "Presión hidráulica",
+                  "metric": "207 bar",
+                  "us": "3000 psi"
+                },
+                {
+                  "label": "Diámetro del agujero",
+                  "metric": "127–610 mm",
+                  "us": "5–24 pulg."
+                },
+                {
+                  "label": "Longitud total de avance",
+                  "metric": "3,28 m",
+                  "us": "129,13 pulg."
+                },
+                {
+                  "label": "Carrera de perforación",
+                  "metric": "2,44 m",
+                  "us": "96 pulg."
+                },
+                {
+                  "label": "Par de rotación",
+                  "metric": "13 605 Nm",
+                  "us": "10 000 lbf-ft"
+                }
+              ]
+            },
+            {
+              "title": "TD100 con RDS1500",
+              "rows": [
+                {
+                  "label": "Caudal hidráulico",
+                  "metric": "227 lpm",
+                  "us": "60 gpm"
+                },
+                {
+                  "label": "Presión hidráulica",
+                  "metric": "207 bar",
+                  "us": "3000 psi"
+                },
+                {
+                  "label": "Diámetro del agujero",
+                  "metric": "127–750 mm",
+                  "us": "5–30 pulg."
+                },
+                {
+                  "label": "Longitud total de avance",
+                  "metric": "3,28 m",
+                  "us": "129,13 pulg."
+                },
+                {
+                  "label": "Carrera de perforación",
+                  "metric": "2,44 m",
+                  "us": "96 pulg."
+                },
+                {
+                  "label": "Par de rotación",
+                  "metric": "20 408 Nm",
+                  "us": "15 000 lbf-ft"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Ficha de producto",
+          "href": "/assets/docs/tei-borriggar-td100-broschyr-eng.pdf",
+          "driveId": "1TI3oU-tDsd_CJ5BrgpfF4jErHGjt8MBn"
+        }
+      ],
+      "published": true
+    },
+    "no": {
+      "title": "TD100",
+      "h1": "TD100",
+      "description": "TD100 er en elektrisk/hydraulisk borerigg for begrenset tilgang, utformet for å installere fôrede mikropeler på en sikker måte. Riggens modellnummer angir antall hestekrefter i den elektriske motoren…",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "TEI Rock Drills – logo",
+          "href": "/produkter/tei",
+          "width": 1920,
+          "height": 1117,
+          "src": "/assets/img/tei-2.webp"
+        },
+        {
+          "type": "image",
+          "alt": "TD100 – bilde 2",
+          "width": 500,
+          "height": 438,
+          "src": "/assets/img/tei-borriggar-td100-2.webp"
+        },
+        {
+          "type": "text",
+          "html": "TD100 er en elektrisk/hydraulisk borerigg for begrenset tilgang, utformet for å installere fôrede mikropeler på en sikker måte. Riggens modellnummer angir antall hestekrefter i den elektriske motoren."
+        },
+        {
+          "type": "text",
+          "html": "Gummibeltene kan trekkes sammen til 1 219 mm for å komme inn i vanskelige borposisjoner. Motoren på 100 hk gjør at den kan drive alle TEI-produserte rotasjonshammere."
+        },
+        {
+          "type": "datasheet",
+          "title": "Tekniske data",
+          "note": "TEIs tekniske data forutsetter 40 % hydraulisk effekttap.",
+          "tagline": "Borerigg for trange rom",
+          "intro": [
+            "TD100 er en elektrisk/hydraulisk borerigg for trange rom, konstruert for å installere fôrede mikropeler og store mikropeler med hollow bar på en sikker måte. Gummibeltene kan trekkes sammen til 48 tommer (1 219 mm) slik at riggen kan kjøres inn i vanskelig tilgjengelige borposisjoner.",
+            "Motoren på 100 hk gjør at TD100 kan drive alle topphammere og rotasjonshoder fra TEI. Mulighetene med TD100 er mange."
+          ],
+          "groups": [
+            {
+              "title": "Maskin",
+              "rows": [
+                {
+                  "label": "Mastens trekkraft",
+                  "metric": "25 379 N",
+                  "us": "12 000 lbf"
+                },
+                {
+                  "label": "Materrykk",
+                  "metric": "207 bar",
+                  "us": "3000 psi"
+                },
+                {
+                  "label": "Elmotor",
+                  "metric": "75 kW",
+                  "us": "100 hp"
+                },
+                {
+                  "label": "Hydraulikktank",
+                  "metric": "151 l",
+                  "us": "40 gal"
+                },
+                {
+                  "label": "Strømforsyning",
+                  "metric": "3-fase 480 V / 50 Hz",
+                  "us": "3-fase 480 V / 60 Hz"
+                },
+                {
+                  "label": "Mykstartgenerator",
+                  "metric": "185 kW",
+                  "us": "185 kW"
+                },
+                {
+                  "label": "Omtrentlig vekt",
+                  "metric": "5 207 kg",
+                  "us": "11 480 lbm"
+                }
+              ]
+            },
+            {
+              "title": "TD100 med TE1000",
+              "rows": [
+                {
+                  "label": "Hydraulisk flyt",
+                  "metric": "276 lpm",
+                  "us": "73 gpm"
+                },
+                {
+                  "label": "Hydrauliktrykk",
+                  "metric": "207 bar",
+                  "us": "3000 psi"
+                },
+                {
+                  "label": "Hulldiameter",
+                  "metric": "76–178 mm",
+                  "us": "3–7 tommer"
+                },
+                {
+                  "label": "Total matelengde",
+                  "metric": "3,28 m",
+                  "us": "129,13 tommer"
+                },
+                {
+                  "label": "Borslag",
+                  "metric": "2,44 m",
+                  "us": "96 tommer"
+                },
+                {
+                  "label": "Rotasjonsmoment",
+                  "metric": "13 605 Nm",
+                  "us": "10 000 lbf-ft"
+                }
+              ]
+            },
+            {
+              "title": "TD100 med RDS1004",
+              "rows": [
+                {
+                  "label": "Hydraulisk flyt",
+                  "metric": "227 lpm",
+                  "us": "60 gpm"
+                },
+                {
+                  "label": "Hydrauliktrykk",
+                  "metric": "207 bar",
+                  "us": "3000 psi"
+                },
+                {
+                  "label": "Hulldiameter",
+                  "metric": "127–610 mm",
+                  "us": "5–24 tommer"
+                },
+                {
+                  "label": "Total matelengde",
+                  "metric": "3,28 m",
+                  "us": "129,13 tommer"
+                },
+                {
+                  "label": "Borslag",
+                  "metric": "2,44 m",
+                  "us": "96 tommer"
+                },
+                {
+                  "label": "Rotasjonsmoment",
+                  "metric": "13 605 Nm",
+                  "us": "10 000 lbf-ft"
+                }
+              ]
+            },
+            {
+              "title": "TD100 med RDS1500",
+              "rows": [
+                {
+                  "label": "Hydraulisk flyt",
+                  "metric": "227 lpm",
+                  "us": "60 gpm"
+                },
+                {
+                  "label": "Hydrauliktrykk",
+                  "metric": "207 bar",
+                  "us": "3000 psi"
+                },
+                {
+                  "label": "Hulldiameter",
+                  "metric": "127–750 mm",
+                  "us": "5–30 tommer"
+                },
+                {
+                  "label": "Total matelengde",
+                  "metric": "3,28 m",
+                  "us": "129,13 tommer"
+                },
+                {
+                  "label": "Borslag",
+                  "metric": "2,44 m",
+                  "us": "96 tommer"
+                },
+                {
+                  "label": "Rotasjonsmoment",
+                  "metric": "20 408 Nm",
+                  "us": "15 000 lbf-ft"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Produktblad",
+          "href": "/assets/docs/tei-borriggar-td100-broschyr-eng.pdf",
+          "driveId": "1TI3oU-tDsd_CJ5BrgpfF4jErHGjt8MBn"
+        }
+      ],
+      "published": true
+    }
+  },
+  "source": {
+    "url": "https://www.betongakuten.se/produkter/tei/borriggar/td100"
+  }
+}

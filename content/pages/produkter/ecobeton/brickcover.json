@@ -1,0 +1,338 @@
+{
+  "path": "/produkter/ecobeton/brickcover",
+  "updated": "2026-10-10",
+  "template": "product",
+  "order": 4,
+  "published": true,
+  "hero": {
+    "image": "/assets/img/ecobeton-brickcover-hero.webp"
+  },
+  "i18n": {
+    "sv": {
+      "title": "Brickcover",
+      "h1": "Brickcover",
+      "description": "Brickcover® är ett speciellt impregneringsmedel som skyddar tegel och sten mot försämring. Tack vare sin speciella katalysator tränger den djupt in i alla…",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Ecobeton – logotyp",
+          "href": "/produkter/ecobeton",
+          "width": 854,
+          "height": 497,
+          "src": "/assets/img/ecobeton-2.webp"
+        },
+        {
+          "type": "image",
+          "alt": "Brickcover – bild 2",
+          "width": 844,
+          "height": 1024,
+          "src": "/assets/img/ecobeton-brickcover-2.webp"
+        },
+        {
+          "type": "text",
+          "html": "Brickcover® är ett speciellt impregneringsmedel som skyddar tegel och sten mot försämring. Tack vare sin speciella katalysator tränger den djupt in i alla absorberande material och lämnar ytan och utseendet av stenen naturligt och oförändrat. Brickcover® är icke-toxiskt och lämnar ingen ytfilm. Formulan bygger på kaliumsalt som gör att behandlingen ger en extremt lång livslängd som är effektiv både på horisontella och vertikala ytor. Brickcover® tränger in i strukturen och tillåter materialet att andas normalt. Skyddar beläggning mot försämring och gör den resistent mot frys-/tin-cykler. Vid korrekt tillämpning är behandlingen garanterad för 8-10 år."
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Tekniskt datablad (TDS)",
+          "href": "/assets/docs/ecobeton-brickcover-tekniskt-datablad-tds.pdf",
+          "driveId": "1G13h_3h3aSCe6po77zjkLJwhAi3VYQjT"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Egenskaper"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Ultimat skydd mot mögel, bakterier, nitrater, saltutfällning.",
+            "Upprätthåller en hälsosam miljö.",
+            "Tillåter materialet att andas normalt.",
+            "Skyddar mot försämring.",
+            "Resistent mot frys-/tin-cykler.",
+            "Lämnar ingen ytfilm och utseendet av stenen förblir naturligt och oförändrat.",
+            "Färglös, luktfri.",
+            "Icke-toxisk och miljövänlig.",
+            "Garanterad behandling för 8-10 år vid korrekt tillämpning."
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Användningsområden"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Terracotta och stenläggningar",
+            "Gips och betong",
+            "Tegelbeläggning",
+            "Fasadtegel",
+            "Natursten",
+            "Absorberande plattor, takpannor",
+            "Skarvar i simbassänger, duschar, terrasser etc",
+            "Statyer, skulpturer, pelare"
+          ]
+        },
+        {
+          "type": "text",
+          "html": "Applicering"
+        },
+        {
+          "type": "text",
+          "html": "Brickcover® skall appliceras på helt ren och torr yta. Rengör ytan noggrannt, den måste vara fri från avlagringar av olja, färg och damm. Låt torka tills ytan är helt torr. Applicera Brickcover® tills materialet är mättat dock utan att det blir för mycket. Applicera nedifrån och upp på vertikala ytor. Med tanke på det stora utbud av tegel som finns idag, rekommenderar vi att prova Brickcover® på en liten provyta för att verifiera driftsförhållanden."
+        }
+      ]
+    },
+    "en": {
+      "title": "Brickcover",
+      "h1": "Brickcover",
+      "description": "Brickcover® is a special impregnating agent that protects brick and stone against deterioration. Thanks to its special catalyst it penetrates deep into all…",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Ecobeton – logo",
+          "href": "/produkter/ecobeton",
+          "width": 854,
+          "height": 497,
+          "src": "/assets/img/ecobeton-2.webp"
+        },
+        {
+          "type": "image",
+          "alt": "Brickcover – image 2",
+          "width": 844,
+          "height": 1024,
+          "src": "/assets/img/ecobeton-brickcover-2.webp"
+        },
+        {
+          "type": "text",
+          "html": "Brickcover® is a special impregnating agent that protects brick and stone against deterioration. Thanks to its special catalyst it penetrates deep into all absorbent materials and leaves the surface and appearance of the stone natural and unchanged. Brickcover® is non-toxic and leaves no surface film. The formula is based on potassium salt, which gives the treatment an extremely long service life, effective on both horizontal and vertical surfaces. Brickcover® penetrates the structure and allows the material to breathe normally. It protects the surface against deterioration and makes it resistant to freeze/thaw cycles. When applied correctly, the treatment is guaranteed for 8–10 years."
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Technical data sheet (TDS)",
+          "href": "/assets/docs/ecobeton-brickcover-tekniskt-datablad-tds.pdf",
+          "driveId": "1G13h_3h3aSCe6po77zjkLJwhAi3VYQjT"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Properties"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Ultimate protection against mould, bacteria, nitrates and salt efflorescence.",
+            "Maintains a healthy environment.",
+            "Allows the material to breathe normally.",
+            "Protects against deterioration.",
+            "Resistant to freeze/thaw cycles.",
+            "Leaves no surface film and the appearance of the stone remains natural and unchanged.",
+            "Colourless, odourless.",
+            "Non-toxic and environmentally friendly.",
+            "Treatment guaranteed for 8–10 years when applied correctly."
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Areas of use"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Terracotta and paving",
+            "Plaster and concrete",
+            "Brick cladding",
+            "Facing brick",
+            "Natural stone",
+            "Absorbent tiles, roof tiles",
+            "Joints in swimming pools, showers, terraces etc.",
+            "Statues, sculptures, columns"
+          ]
+        },
+        {
+          "type": "text",
+          "html": "Application"
+        },
+        {
+          "type": "text",
+          "html": "Brickcover® must be applied to a completely clean and dry surface. Clean the surface thoroughly; it must be free from deposits of oil, paint and dust. Allow to dry until the surface is completely dry. Apply Brickcover® until the material is saturated, but without applying too much. Apply from the bottom upwards on vertical surfaces. Given the wide range of bricks available today, we recommend testing Brickcover® on a small sample area to verify working conditions."
+        }
+      ],
+      "published": true
+    },
+    "es": {
+      "title": "Brickcover",
+      "h1": "Brickcover",
+      "description": "Brickcover® es un impregnante especial que protege el ladrillo y la piedra frente al deterioro. Gracias a su catalizador especial penetra profundamente en todos los…",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Ecobeton – logotipo",
+          "href": "/produkter/ecobeton",
+          "width": 854,
+          "height": 497,
+          "src": "/assets/img/ecobeton-2.webp"
+        },
+        {
+          "type": "image",
+          "alt": "Brickcover – imagen 2",
+          "width": 844,
+          "height": 1024,
+          "src": "/assets/img/ecobeton-brickcover-2.webp"
+        },
+        {
+          "type": "text",
+          "html": "Brickcover® es un impregnante especial que protege el ladrillo y la piedra frente al deterioro. Gracias a su catalizador especial penetra profundamente en todos los materiales absorbentes y deja la superficie y el aspecto de la piedra naturales e inalterados. Brickcover® no es tóxico y no deja película superficial. La fórmula se basa en sal de potasio, lo que confiere al tratamiento una vida útil extremadamente larga, eficaz tanto en superficies horizontales como verticales. Brickcover® penetra en la estructura y permite que el material respire con normalidad. Protege el revestimiento frente al deterioro y lo hace resistente a los ciclos de hielo y deshielo. Aplicado correctamente, el tratamiento está garantizado durante 8–10 años."
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Ficha técnica (TDS)",
+          "href": "/assets/docs/ecobeton-brickcover-tekniskt-datablad-tds.pdf",
+          "driveId": "1G13h_3h3aSCe6po77zjkLJwhAi3VYQjT"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Propiedades"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Protección total frente a moho, bacterias, nitratos y eflorescencias salinas.",
+            "Mantiene un ambiente saludable.",
+            "Permite que el material respire con normalidad.",
+            "Protege frente al deterioro.",
+            "Resistente a los ciclos de hielo y deshielo.",
+            "No deja película superficial y el aspecto de la piedra permanece natural e inalterado.",
+            "Incoloro e inodoro.",
+            "No tóxico y respetuoso con el medio ambiente.",
+            "Tratamiento garantizado durante 8–10 años si se aplica correctamente."
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Ámbitos de uso"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Terracota y pavimentos de piedra",
+            "Yeso y hormigón",
+            "Revestimiento de ladrillo",
+            "Ladrillo visto",
+            "Piedra natural",
+            "Baldosas absorbentes, tejas",
+            "Juntas en piscinas, duchas, terrazas, etc.",
+            "Estatuas, esculturas, columnas"
+          ]
+        },
+        {
+          "type": "text",
+          "html": "Aplicación"
+        },
+        {
+          "type": "text",
+          "html": "Brickcover® debe aplicarse sobre una superficie completamente limpia y seca. Limpie la superficie a fondo; debe estar libre de restos de aceite, pintura y polvo. Deje secar hasta que la superficie esté completamente seca. Aplique Brickcover® hasta saturar el material, sin excederse. En superficies verticales, aplique de abajo hacia arriba. Dada la gran variedad de ladrillos que existe hoy en día, recomendamos probar Brickcover® en una pequeña zona de prueba para comprobar las condiciones de trabajo."
+        }
+      ],
+      "published": true
+    },
+    "no": {
+      "title": "Brickcover",
+      "h1": "Brickcover",
+      "description": "Brickcover® er et spesielt impregneringsmiddel som beskytter tegl og stein mot nedbrytning. Takket være sin spesielle katalysator trenger det dypt inn i alle…",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Ecobeton – logo",
+          "href": "/produkter/ecobeton",
+          "width": 854,
+          "height": 497,
+          "src": "/assets/img/ecobeton-2.webp"
+        },
+        {
+          "type": "image",
+          "alt": "Brickcover – bilde 2",
+          "width": 844,
+          "height": 1024,
+          "src": "/assets/img/ecobeton-brickcover-2.webp"
+        },
+        {
+          "type": "text",
+          "html": "Brickcover® er et spesielt impregneringsmiddel som beskytter tegl og stein mot nedbrytning. Takket være sin spesielle katalysator trenger det dypt inn i alle absorberende materialer og lar overflaten og steinens utseende forbli naturlig og uendret. Brickcover® er ikke-giftig og etterlater ingen overflatefilm. Formelen er basert på kaliumsalt, noe som gir behandlingen en ekstremt lang levetid, effektiv på både horisontale og vertikale flater. Brickcover® trenger inn i strukturen og lar materialet puste normalt. Det beskytter belegget mot nedbrytning og gjør det motstandsdyktig mot fryse-/tinesykluser. Ved korrekt påføring er behandlingen garantert i 8–10 år."
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Teknisk datablad (TDS)",
+          "href": "/assets/docs/ecobeton-brickcover-tekniskt-datablad-tds.pdf",
+          "driveId": "1G13h_3h3aSCe6po77zjkLJwhAi3VYQjT"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Egenskaper"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Ultimat beskyttelse mot mugg, bakterier, nitrater og saltutfelling.",
+            "Opprettholder et sunt miljø.",
+            "Lar materialet puste normalt.",
+            "Beskytter mot nedbrytning.",
+            "Motstandsdyktig mot fryse-/tinesykluser.",
+            "Etterlater ingen overflatefilm, og steinens utseende forblir naturlig og uendret.",
+            "Fargeløs, luktfri.",
+            "Ikke-giftig og miljøvennlig.",
+            "Behandling garantert i 8–10 år ved korrekt påføring."
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Bruksområder"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Terrakotta og steinlegging",
+            "Gips og betong",
+            "Teglbelegg",
+            "Fasadetegl",
+            "Naturstein",
+            "Absorberende fliser, takpanner",
+            "Fuger i svømmebasseng, dusjer, terrasser osv.",
+            "Statuer, skulpturer, søyler"
+          ]
+        },
+        {
+          "type": "text",
+          "html": "Påføring"
+        },
+        {
+          "type": "text",
+          "html": "Brickcover® skal påføres en helt ren og tørr flate. Rengjør flaten grundig; den må være fri for avleiringer av olje, maling og støv. La tørke til flaten er helt tørr. Påfør Brickcover® til materialet er mettet, men uten at det blir for mye. Påfør nedenfra og opp på vertikale flater. Med tanke på det store utvalget av tegl som finnes i dag, anbefaler vi å teste Brickcover® på en liten prøveflate for å kontrollere arbeidsforholdene."
+        }
+      ],
+      "published": true
+    }
+  },
+  "source": {
+    "url": "https://www.betongakuten.se/produkter/ecobeton/brickcover"
+  }
+}

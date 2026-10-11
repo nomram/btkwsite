@@ -1,0 +1,366 @@
+{
+  "path": "/produkter/ahlm/st-5",
+  "updated": "2026-10-10",
+  "template": "product",
+  "order": 0,
+  "published": true,
+  "hero": {
+    "image": "/assets/img/ahlm-st-1-hero.webp"
+  },
+  "i18n": {
+    "sv": {
+      "title": "ST-5",
+      "h1": "Silon",
+      "description": "ST-5 är en säcktömmare (framtagen av AHLM) av med transportskruv som används för dammfri och effektiv hantering av torrbruk och pulvermaterial. Påfyllning…",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Silon",
+          "width": 1920,
+          "height": 961,
+          "src": "/assets/img/ahlm-st-1-1.webp"
+        },
+        {
+          "type": "image",
+          "alt": "Silon – bild 2",
+          "width": 443,
+          "height": 500,
+          "src": "/assets/img/ahlm-st-5-2-2.webp"
+        },
+        {
+          "type": "image",
+          "alt": "Silon – bild 3",
+          "width": 853,
+          "height": 853,
+          "src": "/assets/img/ahlm-st-5-3.webp"
+        },
+        {
+          "type": "text",
+          "html": "Säcktömmare med vågcell"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Säcktömmare ST-5"
+        },
+        {
+          "type": "text",
+          "html": "ST-5 är en säcktömmare (framtagen av AHLM) av med transportskruv som används för dammfri och effektiv hantering av torrbruk och pulvermaterial. Påfyllning sker genom att en storsäck sänks ner över en inbyggd kniv, som öppnar säcken och möjliggör snabb tömning. Designad för låga utrymmen och placeras direkt på golvet, där materialet transporteras upp genom en skruv till en blandare."
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Kapacitet: 200–400 kg/min",
+            "Behållarvolym: 1 600 kubik (ca. 2.5 ton torrpulver)",
+            "Skruvmotor: 2,2 kW",
+            "Vibrator (tillval): 0,16 kW",
+            "Mått: 1 980 mm x 3 050 mm x 1 450 mm",
+            "Vikt: 450 kg"
+          ]
+        },
+        {
+          "type": "text",
+          "html": "Tillval:"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Vibrator",
+            "Omrörare för material med fiber- eller cementblandning (modell ST5-O)",
+            "Flödesmätare för vatten"
+          ]
+        },
+        {
+          "type": "text",
+          "html": "ST-5 är en effektiv och kompakt lösning för hantering av torrbruk och pulvermaterial särskilt lämpad för användning i trånga utrymmen eller inomhusmiljöer."
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Kontakta oss</a> för mer information."
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Broschyr",
+          "href": "/assets/docs/ahlm-st-5-broschyr.pdf",
+          "driveId": "1me-3H6egzxgBvzTtKiPG6_Y7m6m9sNgf"
+        },
+        {
+          "type": "video",
+          "provider": "youtube",
+          "id": "Zqluvczbj_s",
+          "title": "Ahlm Maskin | ST-5 OV | Silo för torrbruk"
+        }
+      ]
+    },
+    "en": {
+      "title": "ST-5",
+      "h1": "Silo",
+      "description": "ST-5 is a bag emptying station (developed by AHLM) with a conveyor screw, used for dust-free and efficient handling of dry mortar and powder materials. Filling…",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Silo",
+          "width": 1920,
+          "height": 961,
+          "src": "/assets/img/ahlm-st-1-1.webp"
+        },
+        {
+          "type": "image",
+          "alt": "Silo – image 2",
+          "width": 443,
+          "height": 500,
+          "src": "/assets/img/ahlm-st-5-2-2.webp"
+        },
+        {
+          "type": "image",
+          "alt": "Silo – image 3",
+          "width": 853,
+          "height": 853,
+          "src": "/assets/img/ahlm-st-5-3.webp"
+        },
+        {
+          "type": "text",
+          "html": "Bag emptying station with load cell"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Bag emptying station ST-5"
+        },
+        {
+          "type": "text",
+          "html": "ST-5 is a bag emptying station (developed by AHLM) with a conveyor screw, used for dust-free and efficient handling of dry mortar and powder materials. Filling is done by lowering a big bag over a built-in knife that opens the bag and allows fast emptying. Designed for low spaces and placed directly on the floor, where the material is conveyed up through a screw to a mixer."
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Capacity: 200–400 kg/min",
+            "Hopper volume: 1,600 litres (approx. 2.5 tonnes of dry powder)",
+            "Screw motor: 2.2 kW",
+            "Vibrator (optional): 0.16 kW",
+            "Dimensions: 1,980 mm x 3,050 mm x 1,450 mm",
+            "Weight: 450 kg"
+          ]
+        },
+        {
+          "type": "text",
+          "html": "Options:"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Vibrator",
+            "Agitator for materials with fibre or cement mix (model ST5-O)",
+            "Flow meter for water"
+          ]
+        },
+        {
+          "type": "text",
+          "html": "ST-5 is an efficient and compact solution for handling dry mortar and powder materials, particularly suited for use in confined spaces or indoor environments."
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Contact us</a> for more information."
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Brochure",
+          "href": "/assets/docs/ahlm-st-5-broschyr.pdf",
+          "driveId": "1me-3H6egzxgBvzTtKiPG6_Y7m6m9sNgf"
+        },
+        {
+          "type": "video",
+          "provider": "youtube",
+          "id": "Zqluvczbj_s",
+          "title": "Ahlm Maskin | ST-5 OV | Silo for dry mortar"
+        }
+      ],
+      "published": true
+    },
+    "es": {
+      "title": "ST-5",
+      "h1": "Silo",
+      "description": "ST-5 es una estación de vaciado de sacos (desarrollada por AHLM) con tornillo transportador, utilizada para el manejo eficiente y sin polvo de mortero seco y materiales en polvo. El llenado…",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Silo",
+          "width": 1920,
+          "height": 961,
+          "src": "/assets/img/ahlm-st-1-1.webp"
+        },
+        {
+          "type": "image",
+          "alt": "Silo – imagen 2",
+          "width": 443,
+          "height": 500,
+          "src": "/assets/img/ahlm-st-5-2-2.webp"
+        },
+        {
+          "type": "image",
+          "alt": "Silo – imagen 3",
+          "width": 853,
+          "height": 853,
+          "src": "/assets/img/ahlm-st-5-3.webp"
+        },
+        {
+          "type": "text",
+          "html": "Estación de vaciado de sacos con célula de carga"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Estación de vaciado de sacos ST-5"
+        },
+        {
+          "type": "text",
+          "html": "ST-5 es una estación de vaciado de sacos (desarrollada por AHLM) con tornillo transportador, utilizada para el manejo eficiente y sin polvo de mortero seco y materiales en polvo. El llenado se realiza bajando un big bag sobre una cuchilla integrada que abre el saco y permite un vaciado rápido. Diseñada para espacios bajos y colocada directamente sobre el suelo, donde el material se transporta hacia arriba mediante un tornillo hasta una mezcladora."
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Capacidad: 200–400 kg/min",
+            "Volumen de la tolva: 1600 litros (aprox. 2,5 toneladas de polvo seco)",
+            "Motor del tornillo: 2,2 kW",
+            "Vibrador (opcional): 0,16 kW",
+            "Dimensiones: 1980 mm x 3050 mm x 1450 mm",
+            "Peso: 450 kg"
+          ]
+        },
+        {
+          "type": "text",
+          "html": "Opciones:"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Vibrador",
+            "Agitador para materiales con fibra o mezcla de cemento (modelo ST5-O)",
+            "Caudalímetro de agua"
+          ]
+        },
+        {
+          "type": "text",
+          "html": "ST-5 es una solución eficiente y compacta para el manejo de mortero seco y materiales en polvo, especialmente adecuada para espacios reducidos o entornos interiores."
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Contáctenos</a> para más información."
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Folleto",
+          "href": "/assets/docs/ahlm-st-5-broschyr.pdf",
+          "driveId": "1me-3H6egzxgBvzTtKiPG6_Y7m6m9sNgf"
+        },
+        {
+          "type": "video",
+          "provider": "youtube",
+          "id": "Zqluvczbj_s",
+          "title": "Ahlm Maskin | ST-5 OV | Silo para mortero seco"
+        }
+      ],
+      "published": true
+    },
+    "no": {
+      "title": "ST-5",
+      "h1": "Silo",
+      "description": "ST-5 er en sekketømmer (utviklet av AHLM) med transportskrue, brukt til støvfri og effektiv håndtering av tørrmørtel og pulvermaterialer. Fylling…",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Silo",
+          "width": 1920,
+          "height": 961,
+          "src": "/assets/img/ahlm-st-1-1.webp"
+        },
+        {
+          "type": "image",
+          "alt": "Silo – bilde 2",
+          "width": 443,
+          "height": 500,
+          "src": "/assets/img/ahlm-st-5-2-2.webp"
+        },
+        {
+          "type": "image",
+          "alt": "Silo – bilde 3",
+          "width": 853,
+          "height": 853,
+          "src": "/assets/img/ahlm-st-5-3.webp"
+        },
+        {
+          "type": "text",
+          "html": "Sekketømmer med veiecelle"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Sekketømmer ST-5"
+        },
+        {
+          "type": "text",
+          "html": "ST-5 er en sekketømmer (utviklet av AHLM) med transportskrue, brukt til støvfri og effektiv håndtering av tørrmørtel og pulvermaterialer. Fylling skjer ved at en storsekk senkes ned over en innebygd kniv som åpner sekken og muliggjør rask tømming. Konstruert for lave rom og plassert direkte på gulvet, der materialet transporteres opp gjennom en skrue til en blander."
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Kapasitet: 200–400 kg/min",
+            "Beholdervolum: 1 600 liter (ca. 2,5 tonn tørrpulver)",
+            "Skruemotor: 2,2 kW",
+            "Vibrator (tilvalg): 0,16 kW",
+            "Mål: 1 980 mm x 3 050 mm x 1 450 mm",
+            "Vekt: 450 kg"
+          ]
+        },
+        {
+          "type": "text",
+          "html": "Tilvalg:"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Vibrator",
+            "Rører for materialer med fiber- eller sementblanding (modell ST5-O)",
+            "Flowmåler for vann"
+          ]
+        },
+        {
+          "type": "text",
+          "html": "ST-5 er en effektiv og kompakt løsning for håndtering av tørrmørtel og pulvermaterialer, spesielt egnet for bruk i trange rom eller innendørs."
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Kontakt oss</a> for mer informasjon."
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Brosjyre",
+          "href": "/assets/docs/ahlm-st-5-broschyr.pdf",
+          "driveId": "1me-3H6egzxgBvzTtKiPG6_Y7m6m9sNgf"
+        },
+        {
+          "type": "video",
+          "provider": "youtube",
+          "id": "Zqluvczbj_s",
+          "title": "Ahlm Maskin | ST-5 OV | Silo for tørrmørtel"
+        }
+      ],
+      "published": true
+    }
+  },
+  "source": {
+    "url": "https://www.betongakuten.se/produkter/ahlm/st-5"
+  }
+}

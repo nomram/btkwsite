@@ -1,0 +1,691 @@
+{
+  "path": "/produkter/brutus",
+  "updated": "2026-10-10",
+  "template": "brand",
+  "order": 4,
+  "published": true,
+  "hero": {
+    "image": "/assets/img/brutus-hero.webp"
+  },
+  "i18n": {
+    "sv": {
+      "title": "Brutus",
+      "h1": "Brutus",
+      "description": "BERG-SPLITT, även känt som snigeldynamit, är ett kraftfullt cementliknande pulver som blandas med vatten för att spräcka sten och berg utan sprängämnen…",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Brutus",
+          "width": 800,
+          "height": 441,
+          "src": "/assets/img/brutus-1.webp"
+        },
+        {
+          "type": "image",
+          "alt": "Brutus – bild 2",
+          "width": 394,
+          "height": 478,
+          "src": "/assets/img/brutus-2.webp"
+        },
+        {
+          "type": "text",
+          "html": "BERG-SPLITT, även känt som snigeldynamit, är ett kraftfullt cementliknande pulver som blandas med vatten för att spräcka sten och berg utan sprängämnen. Produkten levereras i 20 kg stålhinkar med 4st pulverpåsar och produkten är kalkbaserad, vilket gör den idealisk för känsliga miljöer där traditionell sprängning inte är möjlig."
+        },
+        {
+          "type": "text",
+          "html": "BERG-SPLITT fungerar perfekt i trånga utrymmen, nära byggnader, stenbrott eller gruvor och kräver inga tillstånd."
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Kontakta oss</a> för mer information."
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Broschyr (SV)",
+          "href": "/assets/docs/brutus-broschyr-sv.pdf",
+          "driveId": "1WQLzU_gIGuAf0uRpOokDisUxtTfu4Y0-"
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Säkerhetsdatablad (SV)",
+          "href": "/assets/docs/brutus-sakerhetsdatablad-sv.pdf",
+          "driveId": "1GJx2q_oH9gWdix_kLgF8oeAekH7dPA5W"
+        },
+        {
+          "type": "text",
+          "html": "Användning"
+        },
+        {
+          "type": "text",
+          "html": "Produkten finns i två varianter: en för temperaturer mellan +10°C och +25°C och en vintervariant för -5°C till +10°C (BERG-SPLITT Vinter), vilket gör den användbar året runt."
+        },
+        {
+          "type": "text",
+          "html": "Det är viktigt att notera att temperaturen i själva berget, och inte i luften, påverkar produktens prestanda."
+        },
+        {
+          "type": "text",
+          "html": "Förberedelse: Borra hål i berget eller stenen som ska spräckas. Håldiametern bör optimalt vara mellan 30 mm och 48 mm, men kan också vara större (ex. 60 mm). Avståndet mellan hålen skall vara 5-10 gånger hålets diameter vilket leder till att hålen borras med cirka 35 - 40 cm avstånd mellan varandra för optimal spräckning. Om håldiametern är mindre, krävs tätare borrhål."
+        },
+        {
+          "type": "text",
+          "html": "Blandning: Häll 1,5 liter vatten i en behållare och tillsätt 5 kg Berg-Splitt-pulver (en påse ur 20 kg-hinken) under omrörning tills du får en slät och tunn, klumpfri murbruk."
+        },
+        {
+          "type": "text",
+          "html": "OBS! Vid låga temperaturer använd ljummet vatten, vid höga temperaturer använd kallt vatten."
+        },
+        {
+          "type": "text",
+          "html": "Applicering: Häll blandningen direkt i de förborrade hålen. Täck sedan området med en presenning eller liknande för att skydda från regn och direkt solljus."
+        },
+        {
+          "type": "text",
+          "html": "Spräckning: Berget spricker vanligtvis inom 24 timmar."
+        },
+        {
+          "type": "text",
+          "html": "Åtgång: Den ungefärliga åtgången beror på djupet och diametern enligt nedan."
+        },
+        {
+          "type": "text",
+          "html": "Håldiameter (mm): 30 32 36 40 44 48"
+        },
+        {
+          "type": "text",
+          "html": "Bruk per hålmeter (kg): 1,1 1,3 1,7 2,1 2,5 3"
+        },
+        {
+          "type": "text",
+          "html": "Dvs. hål som är 40mm i diameter och är 2.5 meter djupa har följande förbrukning per hål:"
+        },
+        {
+          "type": "text",
+          "html": "2.1 kg / meter * 2.5 meter = 5.25 kg per hål"
+        },
+        {
+          "type": "image",
+          "alt": "Bildkarusell",
+          "width": 1366,
+          "height": 2048,
+          "src": "/assets/img/brutus-3.webp"
+        },
+        {
+          "type": "image",
+          "alt": "Bildkarusell",
+          "width": 1366,
+          "height": 2048,
+          "src": "/assets/img/brutus-4.webp"
+        },
+        {
+          "type": "image",
+          "alt": "Bildkarusell",
+          "width": 1366,
+          "height": 2048,
+          "src": "/assets/img/brutus-5.webp"
+        },
+        {
+          "type": "image",
+          "alt": "Bildkarusell",
+          "width": 1920,
+          "height": 1281,
+          "src": "/assets/img/brutus-6.webp"
+        },
+        {
+          "type": "image",
+          "alt": "Bildkarusell",
+          "width": 1920,
+          "height": 1281,
+          "src": "/assets/img/brutus-7.webp"
+        },
+        {
+          "type": "image",
+          "alt": "Bildkarusell",
+          "width": 1920,
+          "height": 1281,
+          "src": "/assets/img/brutus-8.webp"
+        },
+        {
+          "type": "image",
+          "alt": "Bildkarusell",
+          "width": 1920,
+          "height": 1281,
+          "src": "/assets/img/brutus-9.webp"
+        },
+        {
+          "type": "image",
+          "alt": "Bildkarusell",
+          "width": 1366,
+          "height": 2048,
+          "src": "/assets/img/brutus-10.webp"
+        },
+        {
+          "type": "image",
+          "alt": "Bildkarusell",
+          "width": 1920,
+          "height": 1281,
+          "src": "/assets/img/brutus-11.webp"
+        },
+        {
+          "type": "video",
+          "provider": "youtube",
+          "id": "DZzkKOjwsHs",
+          "title": "Instruksjonsfilm Berg-Splitt"
+        }
+      ]
+    },
+    "en": {
+      "title": "Brutus",
+      "h1": "Brutus",
+      "description": "BERG-SPLITT, also known as non-explosive rock splitter, is a powerful cement-like powder that is mixed with water to split rock and stone without explosives…",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Brutus",
+          "width": 800,
+          "height": 441,
+          "src": "/assets/img/brutus-1.webp"
+        },
+        {
+          "type": "image",
+          "alt": "Brutus – image 2",
+          "width": 394,
+          "height": 478,
+          "src": "/assets/img/brutus-2.webp"
+        },
+        {
+          "type": "text",
+          "html": "BERG-SPLITT, also known as non-explosive rock splitter, is a powerful cement-like powder that is mixed with water to split rock and stone without explosives. The product is supplied in 20 kg steel buckets with 4 powder bags and is lime-based, which makes it ideal for sensitive environments where traditional blasting is not possible."
+        },
+        {
+          "type": "text",
+          "html": "BERG-SPLITT works perfectly in confined spaces, close to buildings, in quarries or mines and requires no permits."
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Contact us</a> for more information."
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Brochure (SV)",
+          "href": "/assets/docs/brutus-broschyr-sv.pdf",
+          "driveId": "1WQLzU_gIGuAf0uRpOokDisUxtTfu4Y0-"
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Safety data sheet (SV)",
+          "href": "/assets/docs/brutus-sakerhetsdatablad-sv.pdf",
+          "driveId": "1GJx2q_oH9gWdix_kLgF8oeAekH7dPA5W"
+        },
+        {
+          "type": "text",
+          "html": "Use"
+        },
+        {
+          "type": "text",
+          "html": "The product is available in two variants: one for temperatures between +10 °C and +25 °C and a winter variant for -5 °C to +10 °C (BERG-SPLITT Winter), which makes it usable all year round."
+        },
+        {
+          "type": "text",
+          "html": "It is important to note that the temperature of the rock itself, not of the air, affects the performance of the product."
+        },
+        {
+          "type": "text",
+          "html": "Preparation: Drill holes in the rock or stone to be split. The ideal hole diameter is between 30 mm and 48 mm, but it can also be larger (e.g. 60 mm). The spacing between holes should be 5–10 times the hole diameter, which means the holes are drilled about 35–40 cm apart for optimal splitting. If the hole diameter is smaller, the holes must be closer together."
+        },
+        {
+          "type": "text",
+          "html": "Mixing: Pour 1.5 litres of water into a container and add 5 kg of Berg-Splitt powder (one bag from the 20 kg bucket) while stirring until you get a smooth, thin, lump-free mortar."
+        },
+        {
+          "type": "text",
+          "html": "NOTE! At low temperatures use lukewarm water, at high temperatures use cold water."
+        },
+        {
+          "type": "text",
+          "html": "Application: Pour the mixture directly into the pre-drilled holes. Then cover the area with a tarpaulin or similar to protect it from rain and direct sunlight."
+        },
+        {
+          "type": "text",
+          "html": "Splitting: The rock usually cracks within 24 hours."
+        },
+        {
+          "type": "text",
+          "html": "Consumption: The approximate consumption depends on the depth and diameter as shown below."
+        },
+        {
+          "type": "text",
+          "html": "Hole diameter (mm): 30 32 36 40 44 48"
+        },
+        {
+          "type": "text",
+          "html": "Mortar per metre of hole (kg): 1.1 1.3 1.7 2.1 2.5 3"
+        },
+        {
+          "type": "text",
+          "html": "That is, holes that are 40 mm in diameter and 2.5 metres deep have the following consumption per hole:"
+        },
+        {
+          "type": "text",
+          "html": "2.1 kg / metre * 2.5 metres = 5.25 kg per hole"
+        },
+        {
+          "type": "image",
+          "alt": "Image carousel",
+          "width": 1366,
+          "height": 2048,
+          "src": "/assets/img/brutus-3.webp"
+        },
+        {
+          "type": "image",
+          "alt": "Image carousel",
+          "width": 1366,
+          "height": 2048,
+          "src": "/assets/img/brutus-4.webp"
+        },
+        {
+          "type": "image",
+          "alt": "Image carousel",
+          "width": 1366,
+          "height": 2048,
+          "src": "/assets/img/brutus-5.webp"
+        },
+        {
+          "type": "image",
+          "alt": "Image carousel",
+          "width": 1920,
+          "height": 1281,
+          "src": "/assets/img/brutus-6.webp"
+        },
+        {
+          "type": "image",
+          "alt": "Image carousel",
+          "width": 1920,
+          "height": 1281,
+          "src": "/assets/img/brutus-7.webp"
+        },
+        {
+          "type": "image",
+          "alt": "Image carousel",
+          "width": 1920,
+          "height": 1281,
+          "src": "/assets/img/brutus-8.webp"
+        },
+        {
+          "type": "image",
+          "alt": "Image carousel",
+          "width": 1920,
+          "height": 1281,
+          "src": "/assets/img/brutus-9.webp"
+        },
+        {
+          "type": "image",
+          "alt": "Image carousel",
+          "width": 1366,
+          "height": 2048,
+          "src": "/assets/img/brutus-10.webp"
+        },
+        {
+          "type": "image",
+          "alt": "Image carousel",
+          "width": 1920,
+          "height": 1281,
+          "src": "/assets/img/brutus-11.webp"
+        },
+        {
+          "type": "video",
+          "provider": "youtube",
+          "id": "DZzkKOjwsHs",
+          "title": "Instruction film Berg-Splitt"
+        }
+      ],
+      "published": true
+    },
+    "es": {
+      "title": "Brutus",
+      "h1": "Brutus",
+      "description": "BERG-SPLITT, también conocido como cemento expansivo, es un potente polvo similar al cemento que se mezcla con agua para fragmentar roca y piedra sin explosivos…",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Brutus",
+          "width": 800,
+          "height": 441,
+          "src": "/assets/img/brutus-1.webp"
+        },
+        {
+          "type": "image",
+          "alt": "Brutus – imagen 2",
+          "width": 394,
+          "height": 478,
+          "src": "/assets/img/brutus-2.webp"
+        },
+        {
+          "type": "text",
+          "html": "BERG-SPLITT, también conocido como cemento expansivo, es un potente polvo similar al cemento que se mezcla con agua para fragmentar roca y piedra sin explosivos. El producto se suministra en cubos de acero de 20 kg con 4 bolsas de polvo y está basado en cal, lo que lo hace ideal para entornos sensibles donde no es posible la voladura tradicional."
+        },
+        {
+          "type": "text",
+          "html": "BERG-SPLITT funciona perfectamente en espacios reducidos, cerca de edificios, en canteras o minas y no requiere permisos."
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Contáctenos</a> para más información."
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Folleto (SV)",
+          "href": "/assets/docs/brutus-broschyr-sv.pdf",
+          "driveId": "1WQLzU_gIGuAf0uRpOokDisUxtTfu4Y0-"
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Ficha de datos de seguridad (SV)",
+          "href": "/assets/docs/brutus-sakerhetsdatablad-sv.pdf",
+          "driveId": "1GJx2q_oH9gWdix_kLgF8oeAekH7dPA5W"
+        },
+        {
+          "type": "text",
+          "html": "Uso"
+        },
+        {
+          "type": "text",
+          "html": "El producto está disponible en dos variantes: una para temperaturas entre +10 °C y +25 °C y una variante de invierno para -5 °C a +10 °C (BERG-SPLITT Invierno), lo que permite usarlo durante todo el año."
+        },
+        {
+          "type": "text",
+          "html": "Es importante tener en cuenta que la temperatura de la propia roca, y no la del aire, afecta al rendimiento del producto."
+        },
+        {
+          "type": "text",
+          "html": "Preparación: Perfore agujeros en la roca o piedra que se va a fragmentar. El diámetro óptimo del agujero es de entre 30 mm y 48 mm, aunque puede ser mayor (p. ej., 60 mm). La separación entre agujeros debe ser de 5 a 10 veces el diámetro, lo que significa que los agujeros se perforan con unos 35–40 cm de separación para una fragmentación óptima. Si el diámetro es menor, se necesitan agujeros más próximos."
+        },
+        {
+          "type": "text",
+          "html": "Mezcla: Vierta 1,5 litros de agua en un recipiente y añada 5 kg de polvo Berg-Splitt (una bolsa del cubo de 20 kg) removiendo hasta obtener un mortero liso, fluido y sin grumos."
+        },
+        {
+          "type": "text",
+          "html": "¡ATENCIÓN! Con temperaturas bajas use agua tibia; con temperaturas altas, agua fría."
+        },
+        {
+          "type": "text",
+          "html": "Aplicación: Vierta la mezcla directamente en los agujeros previamente perforados. A continuación, cubra la zona con una lona o similar para protegerla de la lluvia y de la luz solar directa."
+        },
+        {
+          "type": "text",
+          "html": "Fragmentación: La roca suele agrietarse en un plazo de 24 horas."
+        },
+        {
+          "type": "text",
+          "html": "Consumo: El consumo aproximado depende de la profundidad y del diámetro, como se muestra a continuación."
+        },
+        {
+          "type": "text",
+          "html": "Diámetro del agujero (mm): 30 32 36 40 44 48"
+        },
+        {
+          "type": "text",
+          "html": "Mortero por metro de agujero (kg): 1,1 1,3 1,7 2,1 2,5 3"
+        },
+        {
+          "type": "text",
+          "html": "Es decir, los agujeros de 40 mm de diámetro y 2,5 metros de profundidad tienen el siguiente consumo por agujero:"
+        },
+        {
+          "type": "text",
+          "html": "2,1 kg / metro * 2,5 metros = 5,25 kg por agujero"
+        },
+        {
+          "type": "image",
+          "alt": "Carrusel de imágenes",
+          "width": 1366,
+          "height": 2048,
+          "src": "/assets/img/brutus-3.webp"
+        },
+        {
+          "type": "image",
+          "alt": "Carrusel de imágenes",
+          "width": 1366,
+          "height": 2048,
+          "src": "/assets/img/brutus-4.webp"
+        },
+        {
+          "type": "image",
+          "alt": "Carrusel de imágenes",
+          "width": 1366,
+          "height": 2048,
+          "src": "/assets/img/brutus-5.webp"
+        },
+        {
+          "type": "image",
+          "alt": "Carrusel de imágenes",
+          "width": 1920,
+          "height": 1281,
+          "src": "/assets/img/brutus-6.webp"
+        },
+        {
+          "type": "image",
+          "alt": "Carrusel de imágenes",
+          "width": 1920,
+          "height": 1281,
+          "src": "/assets/img/brutus-7.webp"
+        },
+        {
+          "type": "image",
+          "alt": "Carrusel de imágenes",
+          "width": 1920,
+          "height": 1281,
+          "src": "/assets/img/brutus-8.webp"
+        },
+        {
+          "type": "image",
+          "alt": "Carrusel de imágenes",
+          "width": 1920,
+          "height": 1281,
+          "src": "/assets/img/brutus-9.webp"
+        },
+        {
+          "type": "image",
+          "alt": "Carrusel de imágenes",
+          "width": 1366,
+          "height": 2048,
+          "src": "/assets/img/brutus-10.webp"
+        },
+        {
+          "type": "image",
+          "alt": "Carrusel de imágenes",
+          "width": 1920,
+          "height": 1281,
+          "src": "/assets/img/brutus-11.webp"
+        },
+        {
+          "type": "video",
+          "provider": "youtube",
+          "id": "DZzkKOjwsHs",
+          "title": "Vídeo de instrucciones Berg-Splitt"
+        }
+      ],
+      "published": true
+    },
+    "no": {
+      "title": "Brutus",
+      "h1": "Brutus",
+      "description": "BERG-SPLITT, også kjent som ikke-eksplosivt sprengningsmiddel, er et kraftig sementlignende pulver som blandes med vann for å spalte stein og berg uten sprengstoff…",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Brutus",
+          "width": 800,
+          "height": 441,
+          "src": "/assets/img/brutus-1.webp"
+        },
+        {
+          "type": "image",
+          "alt": "Brutus – bilde 2",
+          "width": 394,
+          "height": 478,
+          "src": "/assets/img/brutus-2.webp"
+        },
+        {
+          "type": "text",
+          "html": "BERG-SPLITT, også kjent som ikke-eksplosivt sprengningsmiddel, er et kraftig sementlignende pulver som blandes med vann for å spalte stein og berg uten sprengstoff. Produktet leveres i 20 kg stålbøtter med 4 pulverposer og er kalkbasert, noe som gjør det ideelt for sensitive miljøer der tradisjonell sprengning ikke er mulig."
+        },
+        {
+          "type": "text",
+          "html": "BERG-SPLITT fungerer perfekt i trange rom, nær bygninger, steinbrudd eller gruver og krever ingen tillatelser."
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Kontakt oss</a> for mer informasjon."
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Brosjyre (SV)",
+          "href": "/assets/docs/brutus-broschyr-sv.pdf",
+          "driveId": "1WQLzU_gIGuAf0uRpOokDisUxtTfu4Y0-"
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Sikkerhetsdatablad (SV)",
+          "href": "/assets/docs/brutus-sakerhetsdatablad-sv.pdf",
+          "driveId": "1GJx2q_oH9gWdix_kLgF8oeAekH7dPA5W"
+        },
+        {
+          "type": "text",
+          "html": "Bruk"
+        },
+        {
+          "type": "text",
+          "html": "Produktet finnes i to varianter: én for temperaturer mellom +10 °C og +25 °C og en vintervariant for -5 °C til +10 °C (BERG-SPLITT Vinter), noe som gjør det anvendelig hele året."
+        },
+        {
+          "type": "text",
+          "html": "Det er viktig å merke seg at temperaturen i selve berget, og ikke i luften, påvirker produktets ytelse."
+        },
+        {
+          "type": "text",
+          "html": "Forberedelse: Bor hull i berget eller steinen som skal spaltes. Hulldiameteren bør optimalt være mellom 30 mm og 48 mm, men kan også være større (f.eks. 60 mm). Avstanden mellom hullene skal være 5–10 ganger hullets diameter, noe som betyr at hullene bores med ca. 35–40 cm avstand for optimal spalting. Hvis hulldiameteren er mindre, kreves tettere borehull."
+        },
+        {
+          "type": "text",
+          "html": "Blanding: Hell 1,5 liter vann i en beholder og tilsett 5 kg Berg-Splitt-pulver (én pose fra 20 kg-bøtten) under omrøring til du får en jevn og tynn, klumpfri mørtel."
+        },
+        {
+          "type": "text",
+          "html": "OBS! Ved lave temperaturer brukes lunkent vann, ved høye temperaturer brukes kaldt vann."
+        },
+        {
+          "type": "text",
+          "html": "Påføring: Hell blandingen rett i de forborede hullene. Dekk deretter området med en presenning eller lignende for å beskytte mot regn og direkte sollys."
+        },
+        {
+          "type": "text",
+          "html": "Spalting: Berget sprekker vanligvis innen 24 timer."
+        },
+        {
+          "type": "text",
+          "html": "Forbruk: Det omtrentlige forbruket avhenger av dybde og diameter som angitt nedenfor."
+        },
+        {
+          "type": "text",
+          "html": "Hulldiameter (mm): 30 32 36 40 44 48"
+        },
+        {
+          "type": "text",
+          "html": "Mørtel per hullmeter (kg): 1,1 1,3 1,7 2,1 2,5 3"
+        },
+        {
+          "type": "text",
+          "html": "Dvs. hull som er 40 mm i diameter og 2,5 meter dype har følgende forbruk per hull:"
+        },
+        {
+          "type": "text",
+          "html": "2,1 kg / meter * 2,5 meter = 5,25 kg per hull"
+        },
+        {
+          "type": "image",
+          "alt": "Bildekarusell",
+          "width": 1366,
+          "height": 2048,
+          "src": "/assets/img/brutus-3.webp"
+        },
+        {
+          "type": "image",
+          "alt": "Bildekarusell",
+          "width": 1366,
+          "height": 2048,
+          "src": "/assets/img/brutus-4.webp"
+        },
+        {
+          "type": "image",
+          "alt": "Bildekarusell",
+          "width": 1366,
+          "height": 2048,
+          "src": "/assets/img/brutus-5.webp"
+        },
+        {
+          "type": "image",
+          "alt": "Bildekarusell",
+          "width": 1920,
+          "height": 1281,
+          "src": "/assets/img/brutus-6.webp"
+        },
+        {
+          "type": "image",
+          "alt": "Bildekarusell",
+          "width": 1920,
+          "height": 1281,
+          "src": "/assets/img/brutus-7.webp"
+        },
+        {
+          "type": "image",
+          "alt": "Bildekarusell",
+          "width": 1920,
+          "height": 1281,
+          "src": "/assets/img/brutus-8.webp"
+        },
+        {
+          "type": "image",
+          "alt": "Bildekarusell",
+          "width": 1920,
+          "height": 1281,
+          "src": "/assets/img/brutus-9.webp"
+        },
+        {
+          "type": "image",
+          "alt": "Bildekarusell",
+          "width": 1366,
+          "height": 2048,
+          "src": "/assets/img/brutus-10.webp"
+        },
+        {
+          "type": "image",
+          "alt": "Bildekarusell",
+          "width": 1920,
+          "height": 1281,
+          "src": "/assets/img/brutus-11.webp"
+        },
+        {
+          "type": "video",
+          "provider": "youtube",
+          "id": "DZzkKOjwsHs",
+          "title": "Instruksjonsfilm Berg-Splitt"
+        }
+      ],
+      "published": true
+    }
+  },
+  "source": {
+    "url": "https://www.betongakuten.se/produkter/brutus"
+  },
+  "logo": "/assets/img/logo-brutus.webp"
+}

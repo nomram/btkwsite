@@ -1,0 +1,730 @@
+{
+  "path": "/produkter/tei/borriggar/td75",
+  "updated": "2026-10-10",
+  "template": "product",
+  "order": 0,
+  "published": true,
+  "hero": {
+    "image": "/assets/img/tei-borriggar-hero.webp"
+  },
+  "i18n": {
+    "sv": {
+      "title": "TD75",
+      "h1": "TD75",
+      "description": "TD75 är en elektrisk borrigg för begränsad tillgång, utformad för att installera mikropålar. Borrigens modellnummer anger antal hästkrafter i den…",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "TEI Rock Drills – logotyp",
+          "href": "/produkter/tei",
+          "width": 1920,
+          "height": 1117,
+          "src": "/assets/img/tei-2.webp"
+        },
+        {
+          "type": "image",
+          "alt": "TD75 – bild 2",
+          "width": 577,
+          "height": 420,
+          "src": "/assets/img/tei-borriggar-td75-2.webp"
+        },
+        {
+          "type": "text",
+          "html": "TD75 är en elektrisk borrigg för begränsad tillgång, utformad för att installera mikropålar. Borrigens modellnummer anger antal hästkrafter i den elektriska motorn. De flesta av TEIs topp-/rotationshammare kan paras med TD75. Perfekt för drift i små utrymmen, under byggnader eller i tunnlar. TEIs borriggar kräver endast en extern strömkälla, vilket minskar buller och avgaser."
+        },
+        {
+          "type": "datasheet",
+          "title": "Teknisk data",
+          "note": "TEI:s tekniska data förutsätter 40 % hydraulisk effektförlust.",
+          "tagline": "Borrigg för begränsade utrymmen",
+          "intro": [
+            "TEI tillverkar TD75, en elektriskt driven borrigg för begränsade utrymmen, konstruerad för att säkert och tyst installera mikropålar och injekteringshål. Alla modeller av TEI:s patenterade topphammare och rotationshuvuden kan kombineras med den elektriska bandborrriggen TD75.",
+            "Det breda utbudet av eldrivna borrlösningar gör riggarna för begränsade utrymmen perfekta för arbete genom smala eller låga in- och utgångar, under byggnader och i tunnlar och gruvor.",
+            "TEI:s elhydrauliska bandborriggar är fristående enheter som bara kräver en yttre elkälla, vilket minskar buller och avgaser och tar bort behovet av skrymmande hydraulslangar i borrområdet."
+          ],
+          "groups": [
+            {
+              "title": "Maskin",
+              "rows": [
+                {
+                  "label": "Mastens dragkraft",
+                  "metric": "53 379 N",
+                  "us": "12 000 lbf"
+                },
+                {
+                  "label": "Matningstryck",
+                  "metric": "207 bar",
+                  "us": "3000 psi"
+                },
+                {
+                  "label": "Elmotor",
+                  "metric": "56 kW",
+                  "us": "75 hp"
+                },
+                {
+                  "label": "Hydraultank",
+                  "metric": "151 l",
+                  "us": "40 gal"
+                },
+                {
+                  "label": "Elmatning",
+                  "metric": "3-fas 480 V / 50 Hz",
+                  "us": "3-fas 480 V / 60 Hz"
+                },
+                {
+                  "label": "Mjukstartsgenerator",
+                  "metric": "150 kW",
+                  "us": "150 kW"
+                },
+                {
+                  "label": "Ungefärlig vikt",
+                  "metric": "3 123 kg",
+                  "us": "6 886 lbm"
+                }
+              ]
+            },
+            {
+              "title": "TD75 med TE760",
+              "rows": [
+                {
+                  "label": "Hydraulflöde",
+                  "metric": "197 lpm",
+                  "us": "52 gpm"
+                },
+                {
+                  "label": "Hydraultryck",
+                  "metric": "172 bar",
+                  "us": "2500 psi"
+                },
+                {
+                  "label": "Håldiameter",
+                  "metric": "52 mm",
+                  "us": "2 tum"
+                },
+                {
+                  "label": "Total matningslängd",
+                  "metric": "2,67 m",
+                  "us": "105,13 tum"
+                },
+                {
+                  "label": "Borrslag",
+                  "metric": "1,83 m",
+                  "us": "72 tum"
+                },
+                {
+                  "label": "Rotationsmoment",
+                  "metric": "4 071 Nm",
+                  "us": "3000 lbf-ft"
+                }
+              ]
+            },
+            {
+              "title": "TD75 med RDS550",
+              "rows": [
+                {
+                  "label": "Hydraulflöde",
+                  "metric": "151 lpm",
+                  "us": "40 gpm"
+                },
+                {
+                  "label": "Hydraultryck",
+                  "metric": "207 bar",
+                  "us": "3000 psi"
+                },
+                {
+                  "label": "Håldiameter",
+                  "metric": "102–305 mm",
+                  "us": "4–12 tum"
+                },
+                {
+                  "label": "Total matningslängd",
+                  "metric": "2,67 m",
+                  "us": "105,13 tum"
+                },
+                {
+                  "label": "Borrslag",
+                  "metric": "1,83 m",
+                  "us": "72 tum"
+                },
+                {
+                  "label": "Rotationsmoment",
+                  "metric": "6 779 Nm",
+                  "us": "5000 lbf-ft"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Produktblad",
+          "href": "/assets/docs/tei-borriggar-td75-broschyr-eng.pdf",
+          "driveId": "1PLjO2-39KgvwJG2MAlKaeBAHhaNPG93F"
+        },
+        {
+          "type": "text",
+          "html": "TD75 demonstration"
+        },
+        {
+          "type": "video",
+          "provider": "youtube",
+          "id": "XiwCfNzJFxQ",
+          "start": 16,
+          "title": ""
+        },
+        {
+          "type": "text",
+          "html": "Mått"
+        },
+        {
+          "type": "image",
+          "alt": "TD75 – bild 3",
+          "width": 1920,
+          "height": 1312,
+          "src": "/assets/img/tei-borriggar-td75-3.webp"
+        }
+      ]
+    },
+    "en": {
+      "title": "TD75",
+      "h1": "TD75",
+      "description": "TD75 is an electric limited-access drill rig designed to install micropiles. The rig’s model number indicates the horsepower of the…",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "TEI Rock Drills – logo",
+          "href": "/produkter/tei",
+          "width": 1920,
+          "height": 1117,
+          "src": "/assets/img/tei-2.webp"
+        },
+        {
+          "type": "image",
+          "alt": "TD75 – image 2",
+          "width": 577,
+          "height": 420,
+          "src": "/assets/img/tei-borriggar-td75-2.webp"
+        },
+        {
+          "type": "text",
+          "html": "TD75 is an electric limited-access drill rig designed to install micropiles. The rig’s model number indicates the horsepower of the electric motor. Most of TEI’s drifters/rotary heads can be paired with the TD75. Perfect for operation in small spaces, under buildings or in tunnels. TEI’s drill rigs require only an external power source, which reduces noise and exhaust fumes."
+        },
+        {
+          "type": "datasheet",
+          "title": "Technical data",
+          "note": "TEI’s technical specifications assume a 40% hydraulic power loss.",
+          "tagline": "Drill rig for confined spaces",
+          "intro": [
+            "TEI manufactures the TD75, an electrically driven drill rig for confined spaces, designed to safely and quietly install micropiles and grout holes. All models of TEI’s patented drifters and rotary heads can be combined with the TD75 electric track drill.",
+            "The wide range of electric drilling solutions makes the confined-space rigs perfect for working through narrow or low entrances and exits, under buildings and in tunnels and mines.",
+            "TEI’s electro-hydraulic track drill rigs are self-contained units that only require an external power source, which reduces noise and exhaust fumes and removes the need for bulky hydraulic hoses in the drilling area."
+          ],
+          "groups": [
+            {
+              "title": "Machine",
+              "rows": [
+                {
+                  "label": "Mast pull force",
+                  "metric": "53 379 N",
+                  "us": "12 000 lbf"
+                },
+                {
+                  "label": "Feed pressure",
+                  "metric": "207 bar",
+                  "us": "3000 psi"
+                },
+                {
+                  "label": "Electric motor",
+                  "metric": "56 kW",
+                  "us": "75 hp"
+                },
+                {
+                  "label": "Hydraulic tank",
+                  "metric": "151 l",
+                  "us": "40 gal"
+                },
+                {
+                  "label": "Power supply",
+                  "metric": "3-phase 480 V / 50 Hz",
+                  "us": "3-phase 480 V / 60 Hz"
+                },
+                {
+                  "label": "Soft-start generator",
+                  "metric": "150 kW",
+                  "us": "150 kW"
+                },
+                {
+                  "label": "Approximate weight",
+                  "metric": "3 123 kg",
+                  "us": "6 886 lbm"
+                }
+              ]
+            },
+            {
+              "title": "TD75 with TE760",
+              "rows": [
+                {
+                  "label": "Hydraulic flow",
+                  "metric": "197 lpm",
+                  "us": "52 gpm"
+                },
+                {
+                  "label": "Hydraulic pressure",
+                  "metric": "172 bar",
+                  "us": "2500 psi"
+                },
+                {
+                  "label": "Hole diameter",
+                  "metric": "52 mm",
+                  "us": "2 in"
+                },
+                {
+                  "label": "Total feed length",
+                  "metric": "2,67 m",
+                  "us": "105.13 in"
+                },
+                {
+                  "label": "Drill travel",
+                  "metric": "1,83 m",
+                  "us": "72 in"
+                },
+                {
+                  "label": "Rotation torque",
+                  "metric": "4 071 Nm",
+                  "us": "3000 lbf-ft"
+                }
+              ]
+            },
+            {
+              "title": "TD75 with RDS550",
+              "rows": [
+                {
+                  "label": "Hydraulic flow",
+                  "metric": "151 lpm",
+                  "us": "40 gpm"
+                },
+                {
+                  "label": "Hydraulic pressure",
+                  "metric": "207 bar",
+                  "us": "3000 psi"
+                },
+                {
+                  "label": "Hole diameter",
+                  "metric": "102–305 mm",
+                  "us": "4–12 in"
+                },
+                {
+                  "label": "Total feed length",
+                  "metric": "2,67 m",
+                  "us": "105.13 in"
+                },
+                {
+                  "label": "Drill travel",
+                  "metric": "1,83 m",
+                  "us": "72 in"
+                },
+                {
+                  "label": "Rotation torque",
+                  "metric": "6 779 Nm",
+                  "us": "5000 lbf-ft"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Data sheet",
+          "href": "/assets/docs/tei-borriggar-td75-broschyr-eng.pdf",
+          "driveId": "1PLjO2-39KgvwJG2MAlKaeBAHhaNPG93F"
+        },
+        {
+          "type": "text",
+          "html": "TD75 demonstration"
+        },
+        {
+          "type": "video",
+          "provider": "youtube",
+          "id": "XiwCfNzJFxQ",
+          "start": 16,
+          "title": ""
+        },
+        {
+          "type": "text",
+          "html": "Dimensions"
+        },
+        {
+          "type": "image",
+          "alt": "TD75 – image 3",
+          "width": 1920,
+          "height": 1312,
+          "src": "/assets/img/tei-borriggar-td75-3.webp"
+        }
+      ],
+      "published": true
+    },
+    "es": {
+      "title": "TD75",
+      "h1": "TD75",
+      "description": "El TD75 es un equipo de perforación eléctrico de acceso limitado, diseñado para instalar micropilotes. El número de modelo del equipo indica la potencia en caballos del…",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "TEI Rock Drills – logotipo",
+          "href": "/produkter/tei",
+          "width": 1920,
+          "height": 1117,
+          "src": "/assets/img/tei-2.webp"
+        },
+        {
+          "type": "image",
+          "alt": "TD75 – imagen 2",
+          "width": 577,
+          "height": 420,
+          "src": "/assets/img/tei-borriggar-td75-2.webp"
+        },
+        {
+          "type": "text",
+          "html": "El TD75 es un equipo de perforación eléctrico de acceso limitado, diseñado para instalar micropilotes. El número de modelo del equipo indica la potencia en caballos del motor eléctrico. La mayoría de los martillos perforadores y cabezales de rotación de TEI pueden combinarse con el TD75. Perfecto para trabajar en espacios pequeños, bajo edificios o en túneles. Los equipos de perforación de TEI solo requieren una fuente de alimentación externa, lo que reduce el ruido y los gases de escape."
+        },
+        {
+          "type": "datasheet",
+          "title": "Datos técnicos",
+          "note": "Las especificaciones técnicas de TEI suponen una pérdida de potencia hidráulica del 40 %.",
+          "tagline": "Equipo de perforación para espacios reducidos",
+          "intro": [
+            "TEI fabrica el TD75, un equipo de perforación de accionamiento eléctrico para espacios reducidos, diseñado para instalar de forma segura y silenciosa micropilotes y agujeros de inyección. Todos los modelos de martillos perforadores y cabezales de rotación patentados de TEI pueden combinarse con la perforadora eléctrica sobre orugas TD75.",
+            "La amplia gama de soluciones de perforación eléctrica hace que los equipos para espacios reducidos sean perfectos para trabajar a través de entradas y salidas estrechas o bajas, bajo edificios y en túneles y minas.",
+            "Los equipos de perforación electrohidráulicos sobre orugas de TEI son unidades autónomas que solo requieren una fuente de energía externa, lo que reduce el ruido y los gases de escape y elimina la necesidad de voluminosas mangueras hidráulicas en la zona de perforación."
+          ],
+          "groups": [
+            {
+              "title": "Máquina",
+              "rows": [
+                {
+                  "label": "Fuerza de tracción del mástil",
+                  "metric": "53 379 N",
+                  "us": "12 000 lbf"
+                },
+                {
+                  "label": "Presión de avance",
+                  "metric": "207 bar",
+                  "us": "3000 psi"
+                },
+                {
+                  "label": "Motor eléctrico",
+                  "metric": "56 kW",
+                  "us": "75 hp"
+                },
+                {
+                  "label": "Depósito hidráulico",
+                  "metric": "151 l",
+                  "us": "40 gal"
+                },
+                {
+                  "label": "Alimentación eléctrica",
+                  "metric": "Trifásica 480 V / 50 Hz",
+                  "us": "Trifásica 480 V / 60 Hz"
+                },
+                {
+                  "label": "Generador con arranque suave",
+                  "metric": "150 kW",
+                  "us": "150 kW"
+                },
+                {
+                  "label": "Peso aproximado",
+                  "metric": "3 123 kg",
+                  "us": "6 886 lbm"
+                }
+              ]
+            },
+            {
+              "title": "TD75 con TE760",
+              "rows": [
+                {
+                  "label": "Caudal hidráulico",
+                  "metric": "197 lpm",
+                  "us": "52 gpm"
+                },
+                {
+                  "label": "Presión hidráulica",
+                  "metric": "172 bar",
+                  "us": "2500 psi"
+                },
+                {
+                  "label": "Diámetro del agujero",
+                  "metric": "52 mm",
+                  "us": "2 pulg."
+                },
+                {
+                  "label": "Longitud total de avance",
+                  "metric": "2,67 m",
+                  "us": "105,13 pulg."
+                },
+                {
+                  "label": "Carrera de perforación",
+                  "metric": "1,83 m",
+                  "us": "72 pulg."
+                },
+                {
+                  "label": "Par de rotación",
+                  "metric": "4 071 Nm",
+                  "us": "3000 lbf-ft"
+                }
+              ]
+            },
+            {
+              "title": "TD75 con RDS550",
+              "rows": [
+                {
+                  "label": "Caudal hidráulico",
+                  "metric": "151 lpm",
+                  "us": "40 gpm"
+                },
+                {
+                  "label": "Presión hidráulica",
+                  "metric": "207 bar",
+                  "us": "3000 psi"
+                },
+                {
+                  "label": "Diámetro del agujero",
+                  "metric": "102–305 mm",
+                  "us": "4–12 pulg."
+                },
+                {
+                  "label": "Longitud total de avance",
+                  "metric": "2,67 m",
+                  "us": "105,13 pulg."
+                },
+                {
+                  "label": "Carrera de perforación",
+                  "metric": "1,83 m",
+                  "us": "72 pulg."
+                },
+                {
+                  "label": "Par de rotación",
+                  "metric": "6 779 Nm",
+                  "us": "5000 lbf-ft"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Ficha de producto",
+          "href": "/assets/docs/tei-borriggar-td75-broschyr-eng.pdf",
+          "driveId": "1PLjO2-39KgvwJG2MAlKaeBAHhaNPG93F"
+        },
+        {
+          "type": "text",
+          "html": "Demostración del TD75"
+        },
+        {
+          "type": "video",
+          "provider": "youtube",
+          "id": "XiwCfNzJFxQ",
+          "start": 16,
+          "title": ""
+        },
+        {
+          "type": "text",
+          "html": "Dimensiones"
+        },
+        {
+          "type": "image",
+          "alt": "TD75 – imagen 3",
+          "width": 1920,
+          "height": 1312,
+          "src": "/assets/img/tei-borriggar-td75-3.webp"
+        }
+      ],
+      "published": true
+    },
+    "no": {
+      "title": "TD75",
+      "h1": "TD75",
+      "description": "TD75 er en elektrisk borerigg for begrenset tilgang, utformet for å installere mikropeler. Riggens modellnummer angir antall hestekrefter i den…",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "TEI Rock Drills – logo",
+          "href": "/produkter/tei",
+          "width": 1920,
+          "height": 1117,
+          "src": "/assets/img/tei-2.webp"
+        },
+        {
+          "type": "image",
+          "alt": "TD75 – bilde 2",
+          "width": 577,
+          "height": 420,
+          "src": "/assets/img/tei-borriggar-td75-2.webp"
+        },
+        {
+          "type": "text",
+          "html": "TD75 er en elektrisk borerigg for begrenset tilgang, utformet for å installere mikropeler. Riggens modellnummer angir antall hestekrefter i den elektriske motoren. De fleste av TEIs topphammere/rotasjonshammere kan kombineres med TD75. Perfekt for drift i små rom, under bygninger eller i tunneler. TEIs borerigger krever bare en ekstern strømkilde, noe som reduserer støy og eksos."
+        },
+        {
+          "type": "datasheet",
+          "title": "Tekniske data",
+          "note": "TEIs tekniske data forutsetter 40 % hydraulisk effekttap.",
+          "tagline": "Borerigg for trange rom",
+          "intro": [
+            "TEI produserer TD75, en elektrisk drevet borerigg for trange rom, konstruert for å installere mikropeler og injiseringshull på en sikker og stillegående måte. Alle modeller av TEIs patenterte topphammere og rotasjonshoder kan kombineres med den elektriske belteborriggen TD75.",
+            "Det brede utvalget av eldrevne borløsninger gjør riggene for trange rom perfekte for arbeid gjennom smale eller lave inn- og utganger, under bygninger og i tunneler og gruver.",
+            "TEIs elhydrauliske belteborerigger er selvstendige enheter som bare krever en ekstern strømkilde, noe som reduserer støy og eksos og fjerner behovet for skrymmende hydraulikkslanger i boreområdet."
+          ],
+          "groups": [
+            {
+              "title": "Maskin",
+              "rows": [
+                {
+                  "label": "Mastens trekkraft",
+                  "metric": "53 379 N",
+                  "us": "12 000 lbf"
+                },
+                {
+                  "label": "Materrykk",
+                  "metric": "207 bar",
+                  "us": "3000 psi"
+                },
+                {
+                  "label": "Elmotor",
+                  "metric": "56 kW",
+                  "us": "75 hp"
+                },
+                {
+                  "label": "Hydraulikktank",
+                  "metric": "151 l",
+                  "us": "40 gal"
+                },
+                {
+                  "label": "Strømforsyning",
+                  "metric": "3-fase 480 V / 50 Hz",
+                  "us": "3-fase 480 V / 60 Hz"
+                },
+                {
+                  "label": "Mykstartgenerator",
+                  "metric": "150 kW",
+                  "us": "150 kW"
+                },
+                {
+                  "label": "Omtrentlig vekt",
+                  "metric": "3 123 kg",
+                  "us": "6 886 lbm"
+                }
+              ]
+            },
+            {
+              "title": "TD75 med TE760",
+              "rows": [
+                {
+                  "label": "Hydraulisk flyt",
+                  "metric": "197 lpm",
+                  "us": "52 gpm"
+                },
+                {
+                  "label": "Hydrauliktrykk",
+                  "metric": "172 bar",
+                  "us": "2500 psi"
+                },
+                {
+                  "label": "Hulldiameter",
+                  "metric": "52 mm",
+                  "us": "2 tommer"
+                },
+                {
+                  "label": "Total matelengde",
+                  "metric": "2,67 m",
+                  "us": "105,13 tommer"
+                },
+                {
+                  "label": "Borslag",
+                  "metric": "1,83 m",
+                  "us": "72 tommer"
+                },
+                {
+                  "label": "Rotasjonsmoment",
+                  "metric": "4 071 Nm",
+                  "us": "3000 lbf-ft"
+                }
+              ]
+            },
+            {
+              "title": "TD75 med RDS550",
+              "rows": [
+                {
+                  "label": "Hydraulisk flyt",
+                  "metric": "151 lpm",
+                  "us": "40 gpm"
+                },
+                {
+                  "label": "Hydrauliktrykk",
+                  "metric": "207 bar",
+                  "us": "3000 psi"
+                },
+                {
+                  "label": "Hulldiameter",
+                  "metric": "102–305 mm",
+                  "us": "4–12 tommer"
+                },
+                {
+                  "label": "Total matelengde",
+                  "metric": "2,67 m",
+                  "us": "105,13 tommer"
+                },
+                {
+                  "label": "Borslag",
+                  "metric": "1,83 m",
+                  "us": "72 tommer"
+                },
+                {
+                  "label": "Rotasjonsmoment",
+                  "metric": "6 779 Nm",
+                  "us": "5000 lbf-ft"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Produktblad",
+          "href": "/assets/docs/tei-borriggar-td75-broschyr-eng.pdf",
+          "driveId": "1PLjO2-39KgvwJG2MAlKaeBAHhaNPG93F"
+        },
+        {
+          "type": "text",
+          "html": "TD75-demonstrasjon"
+        },
+        {
+          "type": "video",
+          "provider": "youtube",
+          "id": "XiwCfNzJFxQ",
+          "start": 16,
+          "title": ""
+        },
+        {
+          "type": "text",
+          "html": "Mål"
+        },
+        {
+          "type": "image",
+          "alt": "TD75 – bilde 3",
+          "width": 1920,
+          "height": 1312,
+          "src": "/assets/img/tei-borriggar-td75-3.webp"
+        }
+      ],
+      "published": true
+    }
+  },
+  "source": {
+    "url": "https://www.betongakuten.se/produkter/tei/borriggar/td75"
+  }
+}

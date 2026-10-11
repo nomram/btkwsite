@@ -1,0 +1,90 @@
+{
+  "path": "/kontakta-oss",
+  "updated": "2026-10-11",
+  "template": "contact",
+  "order": 1,
+  "published": true,
+  "i18n": {
+    "sv": {
+      "title": "Kontakta oss",
+      "h1": "Kontakta oss",
+      "description": "Vi hjälper till med information och leverans av våra produkter, var du än befinner dig i byggprocessen. Ring eller mejla Betongakuten.",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "Vi hjälper till med information och leverans av våra <a href=\"/produkter\">produkter</a>, var du än befinner dig i byggprocessen. Ring eller skriv till oss så hjälper vi dig vidare."
+        },
+        {
+          "type": "contact"
+        },
+        {
+          "type": "text",
+          "html": "Berätta gärna vad du ska bygga, var och när, så kan vi snabbare ge dig rätt rekommendation."
+        }
+      ]
+    },
+    "en": {
+      "title": "Contact us",
+      "h1": "Contact us",
+      "description": "We help with information and delivery of our products wherever you are in the construction process.",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "We help with information and delivery of our <a href=\"/produkter\">products</a> wherever you are in the construction process."
+        },
+        {
+          "type": "contact"
+        },
+        {
+          "type": "text",
+          "html": "Tell us what you are building, where and when, and we can give you the right recommendation faster."
+        }
+      ],
+      "published": true
+    },
+    "es": {
+      "title": "Contáctenos",
+      "h1": "Contáctenos",
+      "description": "Le ayudamos con información y suministro de nuestros productos, en cualquier fase del proceso de construcción en la que se encuentre.",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "Le ayudamos con información y suministro de nuestros <a href=\"/produkter\">productos</a>, en cualquier fase del proceso de construcción en la que se encuentre."
+        },
+        {
+          "type": "contact"
+        },
+        {
+          "type": "text",
+          "html": "Cuéntenos qué va a construir, dónde y cuándo, y podremos darle antes la recomendación adecuada."
+        }
+      ],
+      "published": true
+    },
+    "no": {
+      "title": "Kontakt oss",
+      "h1": "Kontakt oss",
+      "description": "Vi hjelper til med informasjon og levering av våre produkter uansett hvor du er i byggeprosessen.",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "Vi hjelper til med informasjon og levering av våre <a href=\"/produkter\">produkter</a> uansett hvor du er i byggeprosessen."
+        },
+        {
+          "type": "contact"
+        },
+        {
+          "type": "text",
+          "html": "Fortell gjerne hva du skal bygge, hvor og når, så kan vi raskere gi deg riktig anbefaling."
+        }
+      ],
+      "published": true
+    }
+  },
+  "source": {
+    "url": "https://www.betongakuten.se/kontakta-oss"
+  },
+  "hero": {
+    "image": "/assets/img/reed-hero.webp"
+  }
+}

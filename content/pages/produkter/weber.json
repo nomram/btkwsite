@@ -1,0 +1,151 @@
+{
+  "path": "/produkter/weber",
+  "updated": "2026-10-10",
+  "template": "brand",
+  "order": 9,
+  "published": true,
+  "hero": {
+    "image": "/assets/img/reed-hero.webp"
+  },
+  "i18n": {
+    "sv": {
+      "title": "Weber",
+      "h1": "Weber",
+      "description": "Weber är en ledande tillverkare av mineralbaserade byggprodukter och systemlösningar för nybyggnation och renovering. Som en del av Saint-Gobain-koncernen…",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Weber",
+          "width": 1100,
+          "height": 839,
+          "src": "/assets/img/weber-1.webp"
+        },
+        {
+          "type": "text",
+          "html": "Weber är en ledande tillverkare av mineralbaserade byggprodukter och systemlösningar för nybyggnation och renovering. Som en del av Saint-Gobain-koncernen erbjuder Weber ett omfattande sortiment inom områden som fasad, puts, murbruk, golvavjämning, betong och plattsättning. Företaget utvecklar och tillverkar produkter som LECA-block, lättklinker, fasadputs, betong och murbruk, anpassade för den svenska marknaden."
+        },
+        {
+          "type": "text",
+          "html": "Genom att erbjuda produkter och system som bidrar till energieffektivitet och minskad miljöpåverkan, positionerar sig Weber som en pålitlig partner för entreprenörer, byggföretag och arkitekter i hela Sverige."
+        },
+        {
+          "type": "text",
+          "html": "Ta en titt på deras hemsida eller <a href=\"/kontakta-oss\">kontakta oss</a> för mer information."
+        },
+        {
+          "type": "button",
+          "kind": "link",
+          "text": "Webers Produktkatalog",
+          "href": "https://www.se.weber/search-content/content_type/product/activities/betong-cement-vagglagning-39",
+          "external": true
+        }
+      ]
+    },
+    "en": {
+      "title": "Weber",
+      "h1": "Weber",
+      "description": "Weber is a leading manufacturer of mineral-based construction products and system solutions for new build and renovation. As part of the Saint-Gobain group…",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Weber",
+          "width": 1100,
+          "height": 839,
+          "src": "/assets/img/weber-1.webp"
+        },
+        {
+          "type": "text",
+          "html": "Weber is a leading manufacturer of mineral-based construction products and system solutions for new build and renovation. As part of the Saint-Gobain group, Weber offers a comprehensive range in areas such as façades, plaster, masonry mortar, floor levelling, concrete and tiling. The company develops and manufactures products such as LECA blocks, lightweight clinker, façade rendering, concrete and masonry mortar, adapted to the Swedish market."
+        },
+        {
+          "type": "text",
+          "html": "By offering products and systems that contribute to energy efficiency and reduced environmental impact, Weber positions itself as a reliable partner for contractors, construction companies and architects throughout Sweden."
+        },
+        {
+          "type": "text",
+          "html": "Take a look at their website or <a href=\"/kontakta-oss\">contact us</a> for more information."
+        },
+        {
+          "type": "button",
+          "kind": "link",
+          "text": "Weber’s product catalogue",
+          "href": "https://www.se.weber/search-content/content_type/product/activities/betong-cement-vagglagning-39",
+          "external": true
+        }
+      ],
+      "published": true
+    },
+    "es": {
+      "title": "Weber",
+      "h1": "Weber",
+      "description": "Weber es un fabricante líder de productos de construcción de base mineral y soluciones de sistemas para obra nueva y rehabilitación. Como parte del grupo Saint-Gobain…",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Weber",
+          "width": 1100,
+          "height": 839,
+          "src": "/assets/img/weber-1.webp"
+        },
+        {
+          "type": "text",
+          "html": "Weber es un fabricante líder de productos de construcción de base mineral y soluciones de sistemas para obra nueva y rehabilitación. Como parte del grupo Saint-Gobain, Weber ofrece una amplia gama en áreas como fachadas, revocos, morteros de albañilería, nivelación de suelos, hormigón y alicatado. La empresa desarrolla y fabrica productos como bloques LECA, arcilla expandida ligera, revoco de fachadas, hormigón y morteros de albañilería, adaptados al mercado sueco."
+        },
+        {
+          "type": "text",
+          "html": "Al ofrecer productos y sistemas que contribuyen a la eficiencia energética y a reducir el impacto ambiental, Weber se posiciona como un socio fiable para contratistas, empresas constructoras y arquitectos de toda Suecia."
+        },
+        {
+          "type": "text",
+          "html": "Eche un vistazo a su sitio web o <a href=\"/kontakta-oss\">contáctenos</a> para más información."
+        },
+        {
+          "type": "button",
+          "kind": "link",
+          "text": "Catálogo de productos de Weber",
+          "href": "https://www.se.weber/search-content/content_type/product/activities/betong-cement-vagglagning-39",
+          "external": true
+        }
+      ],
+      "published": true
+    },
+    "no": {
+      "title": "Weber",
+      "h1": "Weber",
+      "description": "Weber er en ledende produsent av mineralbaserte byggeprodukter og systemløsninger for nybygg og renovering. Som en del av Saint-Gobain-konsernet…",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Weber",
+          "width": 1100,
+          "height": 839,
+          "src": "/assets/img/weber-1.webp"
+        },
+        {
+          "type": "text",
+          "html": "Weber er en ledende produsent av mineralbaserte byggeprodukter og systemløsninger for nybygg og renovering. Som en del av Saint-Gobain-konsernet tilbyr Weber et omfattende sortiment innen områder som fasade, puss, murmørtel, gulvavretting, betong og flisleggning. Selskapet utvikler og produserer produkter som LECA-blokker, lettklinker, fasadepuss, betong og murmørtel, tilpasset det svenske markedet."
+        },
+        {
+          "type": "text",
+          "html": "Ved å tilby produkter og systemer som bidrar til energieffektivitet og redusert miljøpåvirkning posisjonerer Weber seg som en pålitelig partner for entreprenører, byggefirmaer og arkitekter i hele Sverige."
+        },
+        {
+          "type": "text",
+          "html": "Ta en titt på nettsiden deres eller <a href=\"/kontakta-oss\">kontakt oss</a> for mer informasjon."
+        },
+        {
+          "type": "button",
+          "kind": "link",
+          "text": "Webers produktkatalog",
+          "href": "https://www.se.weber/search-content/content_type/product/activities/betong-cement-vagglagning-39",
+          "external": true
+        }
+      ],
+      "published": true
+    }
+  },
+  "source": {
+    "url": "https://www.betongakuten.se/produkter/weber"
+  },
+  "logo": "/assets/img/logo-weber.webp"
+}

@@ -1,0 +1,362 @@
+{
+  "path": "/produkter/marini/släntstabilisering/mr-5",
+  "updated": "2026-10-10",
+  "template": "product",
+  "order": 2,
+  "published": true,
+  "hero": {
+    "image": "/assets/img/marini-slantstabilisering-hero.webp"
+  },
+  "i18n": {
+    "sv": {
+      "title": "MR 5",
+      "h1": "MARINI MR 5",
+      "description": "MR 5 är en rigg på hjul för enkel förflyttning. Kan utrustas med olika typer av hjul samt korgar för borrstängerna. MR 5 kan antingen vara hydrauliska (MR5…",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Marini – logotyp",
+          "href": "/produkter/marini",
+          "width": 1920,
+          "height": 1117,
+          "src": "/assets/img/marini-3.webp"
+        },
+        {
+          "type": "image",
+          "alt": "Bildkarusell",
+          "width": 343,
+          "height": 328,
+          "src": "/assets/img/marini-slantstabilisering-mr-5-2.webp"
+        },
+        {
+          "type": "image",
+          "alt": "Bildkarusell",
+          "width": 347,
+          "height": 324,
+          "src": "/assets/img/marini-slantstabilisering-mr-5-3.webp"
+        },
+        {
+          "type": "image",
+          "alt": "Bildkarusell",
+          "width": 348,
+          "height": 328,
+          "src": "/assets/img/marini-slantstabilisering-mr-5-4.webp"
+        },
+        {
+          "type": "text",
+          "html": "MR 5 är en rigg på hjul för enkel förflyttning. Kan utrustas med olika typer av hjul samt korgar för borrstängerna. MR 5 kan antingen vara hydrauliska (MR5 ID) eller pneumatiska (MR5 PN). Läs med i broschyrerna nedan."
+        },
+        {
+          "type": "text",
+          "html": "Varje modell i Marinis <a href=\"/produkter/marini/sl%C3%A4ntstabilisering\">MR-serie</a> erbjuder olika slaglängd, matningskrafter, dragkraft och rotationsmoment beroende på specifika krav."
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Kontakta oss</a> för detaljerade broschyrer och mer information."
+        },
+        {
+          "type": "image",
+          "alt": "MARINI MR 5 – bild 5",
+          "width": 537,
+          "height": 583,
+          "src": "/assets/img/marini-slantstabilisering-mr-5-5.webp"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "MR 5 ID"
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Broschyr",
+          "href": "/assets/docs/marini-slantstabilisering-mr-5-broschyr.pdf",
+          "driveId": "15y2j8dgF3Q-7O_RPaAqFDyaizbHVI5ek"
+        },
+        {
+          "type": "image",
+          "alt": "MARINI MR 5 – bild 6",
+          "width": 533,
+          "height": 580,
+          "src": "/assets/img/marini-slantstabilisering-mr-5-6.webp"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "MR 5 PN"
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Broschyr",
+          "href": "/assets/docs/marini-slantstabilisering-mr-5-broschyr-2.pdf",
+          "driveId": "1PDgfo7SUI7TM1F75VAjt9hwysib0ZbDW"
+        }
+      ]
+    },
+    "en": {
+      "title": "MR 5",
+      "h1": "MARINI MR 5",
+      "description": "MR 5 is a wheeled rig for easy movement. It can be fitted with different types of wheels and baskets for the drill rods. MR 5 can be either hydraulic (MR5…",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Marini – logo",
+          "href": "/produkter/marini",
+          "width": 1920,
+          "height": 1117,
+          "src": "/assets/img/marini-3.webp"
+        },
+        {
+          "type": "image",
+          "alt": "Image carousel",
+          "width": 343,
+          "height": 328,
+          "src": "/assets/img/marini-slantstabilisering-mr-5-2.webp"
+        },
+        {
+          "type": "image",
+          "alt": "Image carousel",
+          "width": 347,
+          "height": 324,
+          "src": "/assets/img/marini-slantstabilisering-mr-5-3.webp"
+        },
+        {
+          "type": "image",
+          "alt": "Image carousel",
+          "width": 348,
+          "height": 328,
+          "src": "/assets/img/marini-slantstabilisering-mr-5-4.webp"
+        },
+        {
+          "type": "text",
+          "html": "MR 5 is a wheeled rig for easy movement. It can be fitted with different types of wheels and baskets for the drill rods. MR 5 can be either hydraulic (MR5 ID) or pneumatic (MR5 PN). Read more in the brochures below."
+        },
+        {
+          "type": "text",
+          "html": "Each model in Marini’s <a href=\"/produkter/marini/sl%C3%A4ntstabilisering\">MR series</a> offers different stroke lengths, feed forces, pull-back force and rotation torque depending on specific requirements."
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Contact us</a> for detailed brochures and more information."
+        },
+        {
+          "type": "image",
+          "alt": "MARINI MR 5 – image 5",
+          "width": 537,
+          "height": 583,
+          "src": "/assets/img/marini-slantstabilisering-mr-5-5.webp"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "MR 5 ID"
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Brochure",
+          "href": "/assets/docs/marini-slantstabilisering-mr-5-broschyr.pdf",
+          "driveId": "15y2j8dgF3Q-7O_RPaAqFDyaizbHVI5ek"
+        },
+        {
+          "type": "image",
+          "alt": "MARINI MR 5 – image 6",
+          "width": 533,
+          "height": 580,
+          "src": "/assets/img/marini-slantstabilisering-mr-5-6.webp"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "MR 5 PN"
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Brochure",
+          "href": "/assets/docs/marini-slantstabilisering-mr-5-broschyr-2.pdf",
+          "driveId": "1PDgfo7SUI7TM1F75VAjt9hwysib0ZbDW"
+        }
+      ],
+      "published": true
+    },
+    "es": {
+      "title": "MR 5",
+      "h1": "MARINI MR 5",
+      "description": "El MR 5 es un equipo sobre ruedas para facilitar el desplazamiento. Puede equiparse con distintos tipos de ruedas y cestas para las barras de perforación. El MR 5 puede ser hidráulico (MR5…",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Marini – logotipo",
+          "href": "/produkter/marini",
+          "width": 1920,
+          "height": 1117,
+          "src": "/assets/img/marini-3.webp"
+        },
+        {
+          "type": "image",
+          "alt": "Carrusel de imágenes",
+          "width": 343,
+          "height": 328,
+          "src": "/assets/img/marini-slantstabilisering-mr-5-2.webp"
+        },
+        {
+          "type": "image",
+          "alt": "Carrusel de imágenes",
+          "width": 347,
+          "height": 324,
+          "src": "/assets/img/marini-slantstabilisering-mr-5-3.webp"
+        },
+        {
+          "type": "image",
+          "alt": "Carrusel de imágenes",
+          "width": 348,
+          "height": 328,
+          "src": "/assets/img/marini-slantstabilisering-mr-5-4.webp"
+        },
+        {
+          "type": "text",
+          "html": "El MR 5 es un equipo sobre ruedas para facilitar el desplazamiento. Puede equiparse con distintos tipos de ruedas y cestas para las barras de perforación. El MR 5 puede ser hidráulico (MR5 ID) o neumático (MR5 PN). Consulte más información en los folletos que figuran a continuación."
+        },
+        {
+          "type": "text",
+          "html": "Cada modelo de la <a href=\"/produkter/marini/sl%C3%A4ntstabilisering\">serie MR</a> de Marini ofrece distintas carreras, fuerzas de avance, fuerza de retroceso y par de rotación según los requisitos específicos."
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Contáctenos</a> para obtener folletos detallados y más información."
+        },
+        {
+          "type": "image",
+          "alt": "MARINI MR 5 – imagen 5",
+          "width": 537,
+          "height": 583,
+          "src": "/assets/img/marini-slantstabilisering-mr-5-5.webp"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "MR 5 ID"
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Folleto",
+          "href": "/assets/docs/marini-slantstabilisering-mr-5-broschyr.pdf",
+          "driveId": "15y2j8dgF3Q-7O_RPaAqFDyaizbHVI5ek"
+        },
+        {
+          "type": "image",
+          "alt": "MARINI MR 5 – imagen 6",
+          "width": 533,
+          "height": 580,
+          "src": "/assets/img/marini-slantstabilisering-mr-5-6.webp"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "MR 5 PN"
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Folleto",
+          "href": "/assets/docs/marini-slantstabilisering-mr-5-broschyr-2.pdf",
+          "driveId": "1PDgfo7SUI7TM1F75VAjt9hwysib0ZbDW"
+        }
+      ],
+      "published": true
+    },
+    "no": {
+      "title": "MR 5",
+      "h1": "MARINI MR 5",
+      "description": "MR 5 er en rigg på hjul for enkel forflytning. Den kan utstyres med ulike typer hjul og kurver for borstengene. MR 5 kan enten være hydraulisk (MR5…",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Marini – logo",
+          "href": "/produkter/marini",
+          "width": 1920,
+          "height": 1117,
+          "src": "/assets/img/marini-3.webp"
+        },
+        {
+          "type": "image",
+          "alt": "Bildekarusell",
+          "width": 343,
+          "height": 328,
+          "src": "/assets/img/marini-slantstabilisering-mr-5-2.webp"
+        },
+        {
+          "type": "image",
+          "alt": "Bildekarusell",
+          "width": 347,
+          "height": 324,
+          "src": "/assets/img/marini-slantstabilisering-mr-5-3.webp"
+        },
+        {
+          "type": "image",
+          "alt": "Bildekarusell",
+          "width": 348,
+          "height": 328,
+          "src": "/assets/img/marini-slantstabilisering-mr-5-4.webp"
+        },
+        {
+          "type": "text",
+          "html": "MR 5 er en rigg på hjul for enkel forflytning. Den kan utstyres med ulike typer hjul og kurver for borstengene. MR 5 kan enten være hydraulisk (MR5 ID) eller pneumatisk (MR5 PN). Les mer i brosjyrene nedenfor."
+        },
+        {
+          "type": "text",
+          "html": "Hver modell i Marinis <a href=\"/produkter/marini/sl%C3%A4ntstabilisering\">MR-serie</a> tilbyr ulike slaglengder, matekrefter, trekkraft og rotasjonsmoment avhengig av spesifikke krav."
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Kontakt oss</a> for detaljerte brosjyrer og mer informasjon."
+        },
+        {
+          "type": "image",
+          "alt": "MARINI MR 5 – bilde 5",
+          "width": 537,
+          "height": 583,
+          "src": "/assets/img/marini-slantstabilisering-mr-5-5.webp"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "MR 5 ID"
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Brosjyre",
+          "href": "/assets/docs/marini-slantstabilisering-mr-5-broschyr.pdf",
+          "driveId": "15y2j8dgF3Q-7O_RPaAqFDyaizbHVI5ek"
+        },
+        {
+          "type": "image",
+          "alt": "MARINI MR 5 – bilde 6",
+          "width": 533,
+          "height": 580,
+          "src": "/assets/img/marini-slantstabilisering-mr-5-6.webp"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "MR 5 PN"
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Brosjyre",
+          "href": "/assets/docs/marini-slantstabilisering-mr-5-broschyr-2.pdf",
+          "driveId": "1PDgfo7SUI7TM1F75VAjt9hwysib0ZbDW"
+        }
+      ],
+      "published": true
+    }
+  },
+  "source": {
+    "url": "https://www.betongakuten.se/produkter/marini/sl%C3%A4ntstabilisering/mr-5"
+  }
+}

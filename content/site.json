@@ -1,0 +1,105 @@
+{
+  "name": "Betongakuten",
+  "legalName": "Betongakuten i Sverige AB",
+  "orgNumber": "556931-7497",
+  "origin": "https://www.betongakuten.se",
+  "defaultLang": "sv",
+  "languages": {
+    "sv": {
+      "label": "Svenska",
+      "htmlLang": "sv",
+      "locale": "sv_SE",
+      "published": true
+    },
+    "en": {
+      "label": "English",
+      "htmlLang": "en",
+      "locale": "en_GB",
+      "published": true
+    },
+    "es": {
+      "label": "Español",
+      "htmlLang": "es",
+      "locale": "es_ES",
+      "published": true
+    },
+    "no": {
+      "label": "Norsk",
+      "htmlLang": "nb",
+      "locale": "nb_NO",
+      "published": true
+    }
+  },
+  "tagline": "Leverantör och konsult inom byggindustrin",
+  "contact": {
+    "email": "johnny@betongakuten.se",
+    "phones": [
+      {
+        "label": "Kontor",
+        "value": "040-15 00 57"
+      },
+      {
+        "label": "Mobil",
+        "value": "0700-37 94 11"
+      }
+    ],
+    "address": "Sidensvansvägen 2, 218 32 Bunkeflostrand",
+    "addressDetail": {
+      "street": "Sidensvansvägen 2",
+      "postalCode": "218 32",
+      "locality": "Bunkeflostrand",
+      "region": "Skåne län",
+      "country": "SE"
+    },
+    "person": {
+      "name": "Johnny Hansson",
+      "email": "johnny@betongakuten.se"
+    },
+    "hours": {
+      "opens": "07:00",
+      "closes": "17:00"
+    }
+  },
+  "social": [
+    {
+      "name": "Facebook",
+      "url": "https://www.facebook.com/betongakuten/"
+    },
+    {
+      "name": "Instagram",
+      "url": "https://www.instagram.com/betongakutenab/"
+    },
+    {
+      "name": "LinkedIn",
+      "url": "https://www.linkedin.com/company/betongakuten-ab/"
+    }
+  ],
+  "nav": [
+    "/produkter",
+    "/om-oss",
+    "/kontakta-oss"
+  ],
+  "analytics": {
+    "enabled": false,
+    "provider": "ga4",
+    "measurementId": ""
+  },
+  "theme": {
+    "primary": "#f37d03",
+    "dark": "#231f20",
+    "surface": "#f4f2ef",
+    "text": "#231f20"
+  },
+  "adminPath": "/cms/",
+  "urlStyle": "file",
+  "github": {
+    "owner": "",
+    "repo": "",
+    "branch": "main"
+  },
+  "privacyPath": "/integritetspolicy",
+  "sectionBars": [
+    "/produkter"
+  ],
+  "megaMenu": true
+}

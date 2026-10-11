@@ -1,0 +1,271 @@
+{
+  "path": "/produkter/mapei",
+  "updated": "2026-10-10",
+  "template": "brand",
+  "order": 8,
+  "published": true,
+  "hero": {
+    "image": "/assets/img/mapei-hero.webp"
+  },
+  "i18n": {
+    "sv": {
+      "title": "Mapei",
+      "h1": "Mapei",
+      "description": "Mapei har ett stort sortiment av hållbara produkter för byggindustrin. Ta en titt i deras broschyr nedan eller kontakta oss för mer information. Välkommen…",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Mapei",
+          "width": 1920,
+          "height": 493,
+          "src": "/assets/img/mapei-1.webp"
+        },
+        {
+          "type": "text",
+          "html": "Mapei har ett stort sortiment av hållbara produkter för byggindustrin. Ta en titt i deras broschyr nedan eller <a href=\"/kontakta-oss\">kontakta oss</a> för mer information. Välkommen att ta del av Mapei:s värld av produkter och systemlösningar, Du finner lösning på Ditt problem med hjälp av denna systemguide. Vid ytterligare frågor är Du varmt välkommen att <a href=\"/kontakta-oss\">kontakta oss</a>."
+        },
+        {
+          "type": "image",
+          "alt": "Mapei – bild 2",
+          "width": 500,
+          "height": 281,
+          "src": "/assets/img/mapei-2.webp"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Produktkatalog"
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Broschyr",
+          "href": "/assets/docs/mapei-ladda-ner-pdf.pdf",
+          "driveId": "1kWxR1qcQtQ5bArfCTU1OfpPaqQI9Gudu"
+        },
+        {
+          "type": "image",
+          "alt": "Mapei – bild 3",
+          "width": 825,
+          "height": 463,
+          "src": "/assets/img/mapei-3.webp"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Systemguide"
+        },
+        {
+          "type": "button",
+          "kind": "link",
+          "text": "Ladda ner PDF",
+          "href": "https://drive.google.com/uc?export=download&amp;id=1y_ynThLfKlTpQMlByM5iY8pwnYXX-QmX",
+          "external": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Broschyr",
+          "href": "/assets/docs/mapei-visa-i-ny-flik.pdf",
+          "driveId": "1y_ynThLfKlTpQMlByM5iY8pwnYXX-QmX"
+        }
+      ]
+    },
+    "en": {
+      "title": "Mapei",
+      "h1": "Mapei",
+      "description": "Mapei has a large range of sustainable products for the construction industry. Take a look at their brochure below or contact us for more information. Welcome…",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Mapei",
+          "width": 1920,
+          "height": 493,
+          "src": "/assets/img/mapei-1.webp"
+        },
+        {
+          "type": "text",
+          "html": "Mapei has a large range of sustainable products for the construction industry. Take a look at their brochure below or <a href=\"/kontakta-oss\">contact us</a> for more information. Welcome to explore Mapei’s world of products and system solutions – you will find a solution to your problem with the help of this system guide. If you have further questions you are very welcome to <a href=\"/kontakta-oss\">contact us</a>."
+        },
+        {
+          "type": "image",
+          "alt": "Mapei – image 2",
+          "width": 500,
+          "height": 281,
+          "src": "/assets/img/mapei-2.webp"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Product catalogue"
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Brochure",
+          "href": "/assets/docs/mapei-ladda-ner-pdf.pdf",
+          "driveId": "1kWxR1qcQtQ5bArfCTU1OfpPaqQI9Gudu"
+        },
+        {
+          "type": "image",
+          "alt": "Mapei – image 3",
+          "width": 825,
+          "height": 463,
+          "src": "/assets/img/mapei-3.webp"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "System guide"
+        },
+        {
+          "type": "button",
+          "kind": "link",
+          "text": "Download PDF",
+          "href": "https://drive.google.com/uc?export=download&amp;id=1y_ynThLfKlTpQMlByM5iY8pwnYXX-QmX",
+          "external": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Brochure",
+          "href": "/assets/docs/mapei-visa-i-ny-flik.pdf",
+          "driveId": "1y_ynThLfKlTpQMlByM5iY8pwnYXX-QmX"
+        }
+      ],
+      "published": true
+    },
+    "es": {
+      "title": "Mapei",
+      "h1": "Mapei",
+      "description": "Mapei dispone de una amplia gama de productos sostenibles para la industria de la construcción. Consulte su folleto a continuación o contáctenos para más información. Le invitamos a…",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Mapei",
+          "width": 1920,
+          "height": 493,
+          "src": "/assets/img/mapei-1.webp"
+        },
+        {
+          "type": "text",
+          "html": "Mapei dispone de una amplia gama de productos sostenibles para la industria de la construcción. Consulte su folleto a continuación o <a href=\"/kontakta-oss\">contáctenos</a> para más información. Le invitamos a descubrir el mundo de productos y soluciones de sistema de Mapei: con esta guía de sistemas encontrará la solución a su problema. Si tiene más preguntas, no dude en <a href=\"/kontakta-oss\">contactarnos</a>."
+        },
+        {
+          "type": "image",
+          "alt": "Mapei – imagen 2",
+          "width": 500,
+          "height": 281,
+          "src": "/assets/img/mapei-2.webp"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Catálogo de productos"
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Folleto",
+          "href": "/assets/docs/mapei-ladda-ner-pdf.pdf",
+          "driveId": "1kWxR1qcQtQ5bArfCTU1OfpPaqQI9Gudu"
+        },
+        {
+          "type": "image",
+          "alt": "Mapei – imagen 3",
+          "width": 825,
+          "height": 463,
+          "src": "/assets/img/mapei-3.webp"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Guía de sistemas"
+        },
+        {
+          "type": "button",
+          "kind": "link",
+          "text": "Descargar PDF",
+          "href": "https://drive.google.com/uc?export=download&amp;id=1y_ynThLfKlTpQMlByM5iY8pwnYXX-QmX",
+          "external": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Folleto",
+          "href": "/assets/docs/mapei-visa-i-ny-flik.pdf",
+          "driveId": "1y_ynThLfKlTpQMlByM5iY8pwnYXX-QmX"
+        }
+      ],
+      "published": true
+    },
+    "no": {
+      "title": "Mapei",
+      "h1": "Mapei",
+      "description": "Mapei har et stort sortiment av bærekraftige produkter for byggebransjen. Ta en titt i brosjyren deres nedenfor eller kontakt oss for mer informasjon. Velkommen…",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Mapei",
+          "width": 1920,
+          "height": 493,
+          "src": "/assets/img/mapei-1.webp"
+        },
+        {
+          "type": "text",
+          "html": "Mapei har et stort sortiment av bærekraftige produkter for byggebransjen. Ta en titt i brosjyren deres nedenfor eller <a href=\"/kontakta-oss\">kontakt oss</a> for mer informasjon. Velkommen til å ta del i Mapeis verden av produkter og systemløsninger – du finner løsningen på problemet ditt ved hjelp av denne systemguiden. Ved ytterligere spørsmål er du hjertelig velkommen til å <a href=\"/kontakta-oss\">kontakte oss</a>."
+        },
+        {
+          "type": "image",
+          "alt": "Mapei – bilde 2",
+          "width": 500,
+          "height": 281,
+          "src": "/assets/img/mapei-2.webp"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Produktkatalog"
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Brosjyre",
+          "href": "/assets/docs/mapei-ladda-ner-pdf.pdf",
+          "driveId": "1kWxR1qcQtQ5bArfCTU1OfpPaqQI9Gudu"
+        },
+        {
+          "type": "image",
+          "alt": "Mapei – bilde 3",
+          "width": 825,
+          "height": 463,
+          "src": "/assets/img/mapei-3.webp"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Systemguide"
+        },
+        {
+          "type": "button",
+          "kind": "link",
+          "text": "Last ned PDF",
+          "href": "https://drive.google.com/uc?export=download&amp;id=1y_ynThLfKlTpQMlByM5iY8pwnYXX-QmX",
+          "external": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Brosjyre",
+          "href": "/assets/docs/mapei-visa-i-ny-flik.pdf",
+          "driveId": "1y_ynThLfKlTpQMlByM5iY8pwnYXX-QmX"
+        }
+      ],
+      "published": true
+    }
+  },
+  "source": {
+    "url": "https://www.betongakuten.se/produkter/mapei"
+  },
+  "logo": "/assets/img/logo-mapei.webp"
+}

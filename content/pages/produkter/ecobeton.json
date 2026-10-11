@@ -1,0 +1,367 @@
+{
+  "path": "/produkter/ecobeton",
+  "updated": "2026-10-10",
+  "template": "brand",
+  "order": 5,
+  "published": true,
+  "hero": {
+    "image": "/assets/img/ecobeton-hero.webp"
+  },
+  "i18n": {
+    "sv": {
+      "title": "Ecobeton",
+      "h1": "Ecobeton",
+      "description": "Ecobeton grundades 1993 och är ett teknologiskt företag som tillhandahåller system och lösningar till byggindustrin för produkter såsom betong, puts, tegel…",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Ecobeton",
+          "width": 854,
+          "height": 185,
+          "src": "/assets/img/ecobeton-1.webp"
+        },
+        {
+          "type": "text",
+          "html": "Ecobeton grundades 1993 och är ett teknologiskt företag som tillhandahåller system och lösningar till byggindustrin för produkter såsom betong, puts, tegel och trä. Ecobeton har alltid lagt stor vikt vid FoU-verksamhet, särskilt för utveckling av miljömässigt hållbara produkter."
+        },
+        {
+          "type": "text",
+          "html": "Klicka på logotyperna för att ta dig vidare till respektive produkt. Vid frågor kan du <a href=\"/kontakta-oss\">kontakta oss</a>."
+        },
+        {
+          "type": "cards",
+          "items": [
+            {
+              "href": "/produkter/ecobeton/ercole",
+              "label": "Läs mer",
+              "html": "Cementbaserad ytbeläggning för reparation och renovering",
+              "text": "Cementbaserad ytbeläggning för reparation och renovering",
+              "image": "/assets/img/ecobeton-ercole.webp",
+              "width": 193,
+              "height": 45,
+              "alt": "Ercole – logotyp"
+            },
+            {
+              "href": "/produkter/ecobeton/ercole-ecoactive",
+              "label": "Läs mer",
+              "html": "Fotokatalytisk beläggning för minskad luftförorening",
+              "text": "Fotokatalytisk beläggning för minskad luftförorening",
+              "image": "/assets/img/ecobeton-ercole-ecoactive.webp",
+              "width": 200,
+              "height": 64,
+              "alt": "Ercole EcoActive – logotyp"
+            },
+            {
+              "href": "/produkter/ecobeton/evercrete-vetrofluid",
+              "label": "Läs mer",
+              "html": "Medel för permanent vattentätning av betong",
+              "text": "Medel för permanent vattentätning av betong",
+              "image": "/assets/img/ecobeton-evercrete-vetrofluid.webp",
+              "width": 191,
+              "height": 62,
+              "alt": "Evercrete Vetrofluid – logotyp"
+            },
+            {
+              "href": "/produkter/ecobeton/everwood",
+              "label": "Läs mer",
+              "html": "Skydd för alla typer av trä från försämring",
+              "text": "Skydd för alla typer av trä från försämring",
+              "image": "/assets/img/ecobeton-everwood.webp",
+              "width": 244,
+              "height": 36,
+              "alt": "Everwood – logotyp"
+            },
+            {
+              "href": "/produkter/ecobeton/brickcover",
+              "label": "Läs mer",
+              "html": "Impregneringsmedel som skyddar tegel och sten",
+              "text": "Impregneringsmedel som skyddar tegel och sten",
+              "image": "/assets/img/ecobeton-brickcover.webp",
+              "width": 244,
+              "height": 36,
+              "alt": "Brickcover – logotyp"
+            },
+            {
+              "href": "/produkter/ecobeton/microbond",
+              "label": "Läs mer",
+              "html": "Cementitbaserat mikrocement för att förnya och skydda alla typer av ytor",
+              "text": "Cementitbaserat mikrocement för att förnya och skydda alla typer av ytor",
+              "image": "/assets/img/ecobeton-microbond.webp",
+              "width": 581,
+              "height": 86,
+              "alt": "Microbond – logotyp"
+            }
+          ]
+        }
+      ]
+    },
+    "en": {
+      "title": "Ecobeton",
+      "h1": "Ecobeton",
+      "description": "Ecobeton was founded in 1993 and is a technology company that provides systems and solutions for the construction industry for products such as concrete, plaster, brick…",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Ecobeton",
+          "width": 854,
+          "height": 185,
+          "src": "/assets/img/ecobeton-1.webp"
+        },
+        {
+          "type": "text",
+          "html": "Ecobeton was founded in 1993 and is a technology company that provides systems and solutions for the construction industry for products such as concrete, plaster, brick and wood. Ecobeton has always placed great emphasis on R&D, particularly for the development of environmentally sustainable products."
+        },
+        {
+          "type": "text",
+          "html": "Click on the logos to go to the respective product. If you have any questions you can <a href=\"/kontakta-oss\">contact us</a>."
+        },
+        {
+          "type": "cards",
+          "items": [
+            {
+              "href": "/produkter/ecobeton/ercole",
+              "label": "Läs mer",
+              "html": "Cementbaserad ytbeläggning för reparation och renovering",
+              "text": "Cement-based surface coating for repair and renovation",
+              "image": "/assets/img/ecobeton-ercole.webp",
+              "width": 193,
+              "height": 45,
+              "alt": "Ercole – logo"
+            },
+            {
+              "href": "/produkter/ecobeton/ercole-ecoactive",
+              "label": "Läs mer",
+              "html": "Fotokatalytisk beläggning för minskad luftförorening",
+              "text": "Photocatalytic coating for reduced air pollution",
+              "image": "/assets/img/ecobeton-ercole-ecoactive.webp",
+              "width": 200,
+              "height": 64,
+              "alt": "Ercole EcoActive – logo"
+            },
+            {
+              "href": "/produkter/ecobeton/evercrete-vetrofluid",
+              "label": "Läs mer",
+              "html": "Medel för permanent vattentätning av betong",
+              "text": "Agent for permanent waterproofing of concrete",
+              "image": "/assets/img/ecobeton-evercrete-vetrofluid.webp",
+              "width": 191,
+              "height": 62,
+              "alt": "Evercrete Vetrofluid – logo"
+            },
+            {
+              "href": "/produkter/ecobeton/everwood",
+              "label": "Läs mer",
+              "html": "Skydd för alla typer av trä från försämring",
+              "text": "Protection for all types of wood against deterioration",
+              "image": "/assets/img/ecobeton-everwood.webp",
+              "width": 244,
+              "height": 36,
+              "alt": "Everwood – logo"
+            },
+            {
+              "href": "/produkter/ecobeton/brickcover",
+              "label": "Läs mer",
+              "html": "Impregneringsmedel som skyddar tegel och sten",
+              "text": "Impregnating agent that protects brick and stone",
+              "image": "/assets/img/ecobeton-brickcover.webp",
+              "width": 244,
+              "height": 36,
+              "alt": "Brickcover – logo"
+            },
+            {
+              "href": "/produkter/ecobeton/microbond",
+              "label": "Läs mer",
+              "html": "Cementitbaserat mikrocement för att förnya och skydda alla typer av ytor",
+              "text": "Cement-based micro-cement for renewing and protecting all types of surfaces",
+              "image": "/assets/img/ecobeton-microbond.webp",
+              "width": 581,
+              "height": 86,
+              "alt": "Microbond – logo"
+            }
+          ]
+        }
+      ],
+      "published": true
+    },
+    "es": {
+      "title": "Ecobeton",
+      "h1": "Ecobeton",
+      "description": "Ecobeton se fundó en 1993 y es una empresa tecnológica que ofrece sistemas y soluciones para la industria de la construcción para productos como hormigón, yeso, ladrillo…",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Ecobeton",
+          "width": 854,
+          "height": 185,
+          "src": "/assets/img/ecobeton-1.webp"
+        },
+        {
+          "type": "text",
+          "html": "Ecobeton se fundó en 1993 y es una empresa tecnológica que ofrece sistemas y soluciones para la industria de la construcción para productos como hormigón, yeso, ladrillo y madera. Ecobeton siempre ha dado gran importancia a la I+D, especialmente para el desarrollo de productos medioambientalmente sostenibles."
+        },
+        {
+          "type": "text",
+          "html": "Haga clic en los logotipos para acceder al producto correspondiente. Si tiene alguna pregunta, puede <a href=\"/kontakta-oss\">contactarnos</a>."
+        },
+        {
+          "type": "cards",
+          "items": [
+            {
+              "href": "/produkter/ecobeton/ercole",
+              "label": "Läs mer",
+              "html": "Cementbaserad ytbeläggning för reparation och renovering",
+              "text": "Recubrimiento de superficies a base de cemento para reparación y renovación",
+              "image": "/assets/img/ecobeton-ercole.webp",
+              "width": 193,
+              "height": 45,
+              "alt": "Ercole – logotipo"
+            },
+            {
+              "href": "/produkter/ecobeton/ercole-ecoactive",
+              "label": "Läs mer",
+              "html": "Fotokatalytisk beläggning för minskad luftförorening",
+              "text": "Recubrimiento fotocatalítico para reducir la contaminación del aire",
+              "image": "/assets/img/ecobeton-ercole-ecoactive.webp",
+              "width": 200,
+              "height": 64,
+              "alt": "Ercole EcoActive – logotipo"
+            },
+            {
+              "href": "/produkter/ecobeton/evercrete-vetrofluid",
+              "label": "Läs mer",
+              "html": "Medel för permanent vattentätning av betong",
+              "text": "Producto para la impermeabilización permanente del hormigón",
+              "image": "/assets/img/ecobeton-evercrete-vetrofluid.webp",
+              "width": 191,
+              "height": 62,
+              "alt": "Evercrete Vetrofluid – logotipo"
+            },
+            {
+              "href": "/produkter/ecobeton/everwood",
+              "label": "Läs mer",
+              "html": "Skydd för alla typer av trä från försämring",
+              "text": "Protección de todo tipo de madera frente al deterioro",
+              "image": "/assets/img/ecobeton-everwood.webp",
+              "width": 244,
+              "height": 36,
+              "alt": "Everwood – logotipo"
+            },
+            {
+              "href": "/produkter/ecobeton/brickcover",
+              "label": "Läs mer",
+              "html": "Impregneringsmedel som skyddar tegel och sten",
+              "text": "Impregnante que protege el ladrillo y la piedra",
+              "image": "/assets/img/ecobeton-brickcover.webp",
+              "width": 244,
+              "height": 36,
+              "alt": "Brickcover – logotipo"
+            },
+            {
+              "href": "/produkter/ecobeton/microbond",
+              "label": "Läs mer",
+              "html": "Cementitbaserat mikrocement för att förnya och skydda alla typer av ytor",
+              "text": "Microcemento a base de cemento para renovar y proteger todo tipo de superficies",
+              "image": "/assets/img/ecobeton-microbond.webp",
+              "width": 581,
+              "height": 86,
+              "alt": "Microbond – logotipo"
+            }
+          ]
+        }
+      ],
+      "published": true
+    },
+    "no": {
+      "title": "Ecobeton",
+      "h1": "Ecobeton",
+      "description": "Ecobeton ble grunnlagt i 1993 og er et teknologiselskap som leverer systemer og løsninger til byggebransjen for produkter som betong, puss, tegl…",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Ecobeton",
+          "width": 854,
+          "height": 185,
+          "src": "/assets/img/ecobeton-1.webp"
+        },
+        {
+          "type": "text",
+          "html": "Ecobeton ble grunnlagt i 1993 og er et teknologiselskap som leverer systemer og løsninger til byggebransjen for produkter som betong, puss, tegl og tre. Ecobeton har alltid lagt stor vekt på FoU, særlig for utvikling av miljømessig bærekraftige produkter."
+        },
+        {
+          "type": "text",
+          "html": "Klikk på logoene for å gå videre til det enkelte produktet. Ved spørsmål kan du <a href=\"/kontakta-oss\">kontakte oss</a>."
+        },
+        {
+          "type": "cards",
+          "items": [
+            {
+              "href": "/produkter/ecobeton/ercole",
+              "label": "Läs mer",
+              "html": "Cementbaserad ytbeläggning för reparation och renovering",
+              "text": "Sementbasert overflatebelegg for reparasjon og renovering",
+              "image": "/assets/img/ecobeton-ercole.webp",
+              "width": 193,
+              "height": 45,
+              "alt": "Ercole – logo"
+            },
+            {
+              "href": "/produkter/ecobeton/ercole-ecoactive",
+              "label": "Läs mer",
+              "html": "Fotokatalytisk beläggning för minskad luftförorening",
+              "text": "Fotokatalytisk belegg for redusert luftforurensning",
+              "image": "/assets/img/ecobeton-ercole-ecoactive.webp",
+              "width": 200,
+              "height": 64,
+              "alt": "Ercole EcoActive – logo"
+            },
+            {
+              "href": "/produkter/ecobeton/evercrete-vetrofluid",
+              "label": "Läs mer",
+              "html": "Medel för permanent vattentätning av betong",
+              "text": "Middel for permanent tetting av betong",
+              "image": "/assets/img/ecobeton-evercrete-vetrofluid.webp",
+              "width": 191,
+              "height": 62,
+              "alt": "Evercrete Vetrofluid – logo"
+            },
+            {
+              "href": "/produkter/ecobeton/everwood",
+              "label": "Läs mer",
+              "html": "Skydd för alla typer av trä från försämring",
+              "text": "Beskyttelse for alle typer tre mot nedbrytning",
+              "image": "/assets/img/ecobeton-everwood.webp",
+              "width": 244,
+              "height": 36,
+              "alt": "Everwood – logo"
+            },
+            {
+              "href": "/produkter/ecobeton/brickcover",
+              "label": "Läs mer",
+              "html": "Impregneringsmedel som skyddar tegel och sten",
+              "text": "Impregneringsmiddel som beskytter tegl og stein",
+              "image": "/assets/img/ecobeton-brickcover.webp",
+              "width": 244,
+              "height": 36,
+              "alt": "Brickcover – logo"
+            },
+            {
+              "href": "/produkter/ecobeton/microbond",
+              "label": "Läs mer",
+              "html": "Cementitbaserat mikrocement för att förnya och skydda alla typer av ytor",
+              "text": "Sementbasert mikrosement for å fornye og beskytte alle typer flater",
+              "image": "/assets/img/ecobeton-microbond.webp",
+              "width": 581,
+              "height": 86,
+              "alt": "Microbond – logo"
+            }
+          ]
+        }
+      ],
+      "published": true
+    }
+  },
+  "source": {
+    "url": "https://www.betongakuten.se/produkter/ecobeton"
+  },
+  "logo": "/assets/img/logo-ecobeton.webp"
+}
