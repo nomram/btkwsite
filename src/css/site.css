@@ -133,10 +133,12 @@ a:hover { text-decoration-thickness: 2px; }
 .subnav__link.is-current::after { transform: scaleX(1); }
 .subnav__link.is-current { color: var(--text); font-weight: 700; }
 .subnav__root .subnav__link { padding-left: 0; font-size: .7rem; font-weight: 800; text-transform: uppercase; letter-spacing: .14em; color: var(--text); }
-.subnav__root .subnav__link::after { left: 0; right: .14em; }
+.subnav__root .subnav__link::after { left: 0; right: calc(.9rem + .14em); } /* the label keeps its right padding: stop the bar at the text */
 .subnav--1 { background: #fff; border-bottom: 1px solid var(--line); }
 .subnav--1 .subnav__root { padding-right: .6rem; margin-right: .25rem; border-right: 1px solid var(--line); }
 .subnav__link--logo { padding-inline: .8rem; min-height: 52px; }
+li:first-child > .subnav__link--logo { padding-left: 0; }
+li:first-child > .subnav__link--logo::after { left: 0; }
 .subnav__link--logo::after { left: .8rem; right: .8rem; top: auto; bottom: 0; height: 3px; } /* logos are images: bar stays at the strip's edge */
 .subnav--1 ul, .subnav--2 ul { -webkit-mask-image: linear-gradient(to right, #000 calc(100% - 28px), transparent); mask-image: linear-gradient(to right, #000 calc(100% - 28px), transparent); }
 .subnav__logo { height: 28px; width: auto; max-width: 92px; object-fit: contain; filter: grayscale(1) contrast(1.05); opacity: .6; transition: filter .2s, opacity .2s; }
@@ -192,9 +194,9 @@ a:hover { text-decoration-thickness: 2px; }
 .page--home .prose > .cards { margin-top: .25rem; }
 
 .split { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 6fr); gap: clamp(1.5rem, 4vw, 4rem); align-items: center; padding-block: 1.25rem 2.5rem; }
-.split__media { display: grid; gap: 1rem; justify-items: center; }
+.split__media { display: grid; gap: 1rem; justify-items: start; }
 .split__media .figure { margin: 0; }
-.split__media img { max-height: 460px; width: auto; max-width: 100%; margin-inline: auto; object-fit: contain; }
+.split__media img { max-height: 460px; width: auto; max-width: 100%; margin-inline: 0; object-fit: contain; object-position: left center; }
 .split__body.prose { padding-block: 0; }
 .split__body.prose > * { max-width: none; }
 @media (max-width: 860px) { .split { grid-template-columns: 1fr; } }
