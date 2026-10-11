@@ -420,7 +420,7 @@ function renderHeader(ctx, current) {
       `<div class="mega mega--logos"><div class="container"><ul class="logorow" data-scrub>${tiles}</ul></div></div></li>`;
   }).join("");
   return `<header class="site-header" data-header><div class="container site-header__inner">` +
-    `<a class="logo" href="${esc(ctx.url("/"))}" aria-label="${esc(site.name)} – ${esc(ctx.ui.home || "Startsida")}"><img src="/assets/brand/logo.svg" alt="${esc(site.name)}" width="150" height="38"></a>` +
+    `<a class="logo" href="${esc(ctx.url("/"))}" aria-label="${esc(site.name)} – ${esc(ctx.ui.home || "Startsida")}"><img src="/assets/brand/logo.svg" alt="${esc(site.name)}" width="200" height="50"></a>` +
     `<nav class="nav" id="site-nav" aria-label="${esc(ctx.ui.main_nav || "Huvudmeny")}"><ul class="nav__list">${items}</ul></nav>` +
     `<div class="header-tools"><button class="icon-btn" type="button" data-search-open aria-label="${esc(ctx.ui.search || "Sök")}">${ICON.search}</button>` +
     `${renderLangSwitch(ctx, current)}` +
@@ -456,7 +456,7 @@ function renderSubnav(ctx, current) {
     const l2 = ctx.children(act1).filter(avail);
     if (l2.length) {
       const act2 = l2.find((p) => isUnder(current, p));
-      bar2 = `<nav class="subnav subnav--2" aria-label="${esc(navTitleOf(ctx, act1))}"><div class="container"><ul>` +
+      bar2 = `<nav class="subnav subnav--2" aria-label="${esc(navTitleOf(ctx, act1))}"><div class="container"><ul data-scrub>` +
         `<li class="subnav__root"><a class="subnav__link${current === act1 ? " is-current" : ""}" href="${esc(ctx.url(act1))}">${esc(navTitleOf(ctx, act1))}</a></li>` +
         l2.map((p) => link(p, p === act2)).join("") + `</ul></div></nav>`;
     }
@@ -482,7 +482,7 @@ function renderFooter(ctx) {
   const analyticsOn = s.analytics && s.analytics.enabled && s.analytics.measurementId;
   const phones = (c.phones || []).map((p) => `<li>${ICON.phone}<span class="sr-only">${esc(p.label || "")}: </span><a href="${esc(telHref(p.value))}">${esc(p.value)}</a></li>`).join("");
   return `<footer class="site-footer"><div class="container site-footer__grid">` +
-    `<div class="site-footer__about"><img class="site-footer__logo" src="/assets/brand/logo-white.svg" alt="${esc(s.name)}" width="150" height="38" loading="lazy">` +
+    `<div class="site-footer__about"><img class="site-footer__logo" src="/assets/brand/logo-white.svg" alt="${esc(s.name)}" width="190" height="48" loading="lazy">` +
     `<p>${esc(s.legalName || s.name)}</p>${s.orgNumber ? `<p class="muted">${esc(ctx.ui.org_no || "Org.nr")} ${esc(s.orgNumber)}</p>` : ""}${s.tagline ? `<p class="muted">${esc(ctx.site.tagline)}</p>` : ""}</div>` +
     (brands.length ? `<nav aria-label="${esc(navTitleOf(ctx, "/produkter"))}"><h2 class="site-footer__h">${esc(navTitleOf(ctx, "/produkter"))}</h2><ul class="site-footer__links site-footer__links--cols">${brands.map((b) => `<li><a href="${esc(ctx.url(b))}">${esc(navTitleOf(ctx, b))}</a></li>`).join("")}</ul></nav>` : "") +
     `<nav aria-label="${esc(ctx.ui.footer_nav || "Sidfot")}"><h2 class="site-footer__h">${esc(ctx.ui.company || "Företaget")}</h2><ul class="site-footer__links">${company.map((p) => `<li><a href="${esc(ctx.url(p))}">${esc(navTitleOf(ctx, p))}</a></li>`).join("")}` +
