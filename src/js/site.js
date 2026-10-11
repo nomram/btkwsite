@@ -12,6 +12,12 @@
     var form = box.querySelector("form");
     var status = box.querySelector(".qf__status");
     if (!form) return;
+    // arrived from a product page: ?produkt=<name> pre-fills the message
+    try {
+      var m = /[?&]produkt=([^&#]*)/.exec(window.location.search);
+      var ta = form.querySelector("textarea");
+      if (m && ta && !ta.value) ta.value = box.getAttribute("data-about") + " " + decodeURIComponent(m[1].replace(/\+/g, " ")).slice(0, 120) + "\n\n";
+    } catch (e) { /* ignore malformed encoding */ }
     function say(msg, bad) { status.textContent = msg; status.className = "qf__status" + (bad ? " is-bad" : " is-ok"); }
     form.addEventListener("submit", function (e) {
       e.preventDefault();
