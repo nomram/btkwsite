@@ -276,7 +276,7 @@ function renderQuote(ctx) {
     `<p class="qf__f"><label for="q-${id}">${label}${req ? ` <span class="qf__req" aria-hidden="true">*</span>` : ""}</label>` +
     `<input id="q-${id}" name="${id}" type="${type}" autocomplete="${auto}"${req ? " required" : ""}></p>`;
   const extra = Object.entries(q.extra || {}).map(([k, v]) => `<input type="hidden" name="${esc(k)}" value="${esc(v)}">`).join("");
-  return `<section class="quote" id="offert" data-quote data-endpoint="${esc(q.endpoint || "")}" data-mailto="${esc(c.email || "")}" ` +
+  return `<section class="quote" id="offert" data-quote data-endpoint="${esc(q.endpoint || "")}" data-key="${esc(q.apiKey || "")}" data-mailto="${esc(c.email || "")}" ` +
     `data-subject="${T("quote_subject", "Offertförfrågan")}" data-sending="${T("quote_sending", "Skickar…")}" data-ok="${T("quote_ok", "Tack! Vi återkommer så snart vi kan.")}" ` +
     `data-err="${T("quote_err", "Det gick inte att skicka. Ring oss eller skriv till oss direkt.")}" data-mail="${T("quote_mail", "Ditt e-postprogram öppnas med meddelandet ifyllt – tryck på Skicka där.")}">` +
     `<h2>${T("quote_title", "Begär offert")}</h2><p class="muted">${T("quote_intro", "Berätta kort vad du behöver, så återkommer vi.")}</p>` +

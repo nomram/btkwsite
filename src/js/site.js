@@ -22,7 +22,16 @@
       var btn = form.querySelector("button[type=submit]");
       if (endpoint) {
         btn.disabled = true; say(box.getAttribute("data-sending"));
-        fetch(endpoint, { method: "POST", body: data, headers: { Accept: "application/json" } })
+        var key = box.getAttribute("data-key");
+        var opts = { method: "POST", body: data, headers: { Accept: "application/json" } };
+        if (key) {
+          // Supabase REST: JSON row into the quote_requests table; the public key may only insert (row-level security)
+          var row = { message: String(data.get("message") || ""), consent: true, lang: document.documentElement.lang || "", page: location.pathname };
+          ["name", "company", "email", "phone"].forEach(function (k) { row[k] = String(data.get(k) || ""); });
+          opts = { method: "POST", body: JSON.stringify(row),
+            headers: { "Content-Type": "application/json", apikey: key, Authorization: "Bearer " + key, Prefer: "return=minimal" } };
+        }
+        fetch(endpoint, opts)
           .then(function (r) { if (!r.ok) throw new Error(String(r.status)); say(box.getAttribute("data-ok")); form.reset(); })
           .catch(function () { say(box.getAttribute("data-err"), true); })
           .then(function () { btn.disabled = false; });

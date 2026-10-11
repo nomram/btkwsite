@@ -204,6 +204,7 @@ function viewSettings() {
 
   <div class="card"><h2>${esc(t("set_quote"))}</h2><p class="muted">${esc(t("set_quote_hint"))}</p>
     <label>${esc(t("set_quote_endpoint"))}</label><input type="url" data-s="quoteForm.endpoint" value="${esc((s.quoteForm || {}).endpoint || "")}" placeholder="https://…">
+    <label>${esc(t("set_quote_key"))}</label><input type="text" data-s="quoteForm.apiKey" value="${esc((s.quoteForm || {}).apiKey || "")}" autocomplete="off">
     <label class="chk"><input type="checkbox" data-s="sectionBarLogos" data-t="bool" ${s.sectionBarLogos === true ? "checked" : ""}> ${esc(t("set_bar_logos"))}</label></div>
 
   <div class="card"><h2>${IC_SPARK} ${esc(t("ai_title"))}</h2>
