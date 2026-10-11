@@ -52,7 +52,14 @@ hr { border: 0; border-top: 1px solid var(--line); margin: 1rem 0; }
 .chip { display: inline-block; padding: .08rem .5rem; border-radius: 99px; font-size: .72rem; font-weight: 700; margin-right: .2rem; background: #e8e4de; color: #4d4640; }
 .chip.ok { background: #d6efdc; color: var(--ok); }
 .chip.off { background: #ebe7e1; color: #8a837b; }
-.chip.warn, .chip.draft { background: #fdebc8; color: #8a5200; }
+.chip.warn, .chip.hid { text-decoration: line-through; }
+.vis { margin: 0 0 1rem; padding: .7rem 1rem; }
+.vis summary { cursor: pointer; }
+.vis-table { margin-top: .5rem; }
+.vis-cell { text-align: center; width: 4.5rem; }
+.vis-cell input { width: 1.1rem; height: 1.1rem; accent-color: #f37d03; }
+.vis-row { display: flex; gap: 1.1rem; flex-wrap: wrap; margin: .2rem 0 .6rem; }
+.chip.draft { background: #fdebc8; color: #8a5200; }
 .chip.info { background: #dce8fb; color: var(--info); }
 .chip.stale { background: #f6dcda; color: var(--bad); }
 .pages-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: .5rem; }

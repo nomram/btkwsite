@@ -235,6 +235,19 @@ try {
   })()`);
   check("Enter splits the paragraph in two", Array.isArray(split) && split.length === 2 && split[0] === "Det här" && split[1] === "är en testsida om betongpumpar.", JSON.stringify(split));
 
+  // per-language visibility: "show in language" checkboxes on the page tab
+  await ev(`document.querySelector('[data-tab="page"]').click(); 1`);
+  await sleep(250);
+  check("page tab offers one visibility checkbox per extra language", (await ev(`document.querySelectorAll('[data-hide-lang]').length`)) === 3);
+  await ev(`document.querySelector('[data-hide-lang="es"]').click(); 1`);
+  await sleep(250);
+  check("unticking a language writes hideIn on the page", JSON.stringify(await ev(`__ed().page.hideIn || null`)) === '["es"]');
+  await ev(`document.querySelector('[data-hide-lang="es"]').click(); 1`);
+  await sleep(250);
+  check("ticking it again clears hideIn", (await ev(`__ed().page.hideIn === undefined`)));
+  await ev(`document.querySelector('[data-hide-lang="es"]').click(); 1`);
+  await sleep(250);
+
   // configure auto-translate in memory (not saved to site.json) and save
   await ev(`(() => { const s = __bkcms.state; s.site.ai = { autoTranslate: true, targets: ["en", "no"], noindexUntilReviewed: true }; s.ai.baseUrl = "${MOCK}"; s.ai.key = "test-key"; s.ai.model = "openai/gpt-oss-120b"; s.ai.proxy = "/__cms/ai"; })()`);
   await ev(`document.getElementById("ve-save").click(); 1`);
@@ -251,6 +264,7 @@ try {
     check("translation metadata recorded", j.i18nMeta && j.i18nMeta.en && j.i18nMeta.en.mode === "auto" && j.i18nMeta.en.srcUnits);
     check("machine translations hidden from search engines", j.i18n.en.noindex === true && !j.i18n.sv.noindex);
     check("draft stays a draft", j.published === false);
+    check("hidden language is saved with the page", Array.isArray(j.hideIn) && j.hideIn.length === 1 && j.hideIn[0] === "es", JSON.stringify(j.hideIn));
   }
   check("AI was called with high reasoning", calls.some((b) => b.reasoning_effort === "high"));
   check("AI calls went through the dev proxy (key never in repo)", !fs.readFileSync(file, "utf8").includes("test-key"));

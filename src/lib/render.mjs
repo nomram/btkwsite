@@ -65,6 +65,7 @@ const ICON = {
   pdf: '<svg viewBox="0 0 32 40" width="32" height="40" aria-hidden="true"><path d="M2 2h20l8 8v28H2z" fill="#fff" stroke="#c9c3bb" stroke-width="1.5"/><path d="M22 2v8h8" fill="#f4f2ef" stroke="#c9c3bb" stroke-width="1.5"/><rect x="2" y="20" width="22" height="11" rx="1.5" fill="#d93025"/><text x="13" y="28.5" text-anchor="middle" font-family="Arial,sans-serif" font-size="8" font-weight="700" fill="#fff">PDF</text></svg>',
   eye: '<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1.5 12S5.5 5 12 5s10.5 7 10.5 7-4 7-10.5 7S1.5 12 1.5 12z"/><circle cx="12" cy="12" r="3"/></svg>',
   down: '<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12m0 0l-5-5m5 5l5-5M4 20h16"/></svg>',
+  external: '<svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>',
   arrow: '<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14m-6-6l6 6-6 6"/></svg>',
   mail: '<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>',
   phone: '<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg>'
@@ -84,12 +85,22 @@ export function localizeHref(ctx, href) {
   if (m) { p = m[1]; tail = m[2] || ""; }
   try { p = decodeURIComponent(p); } catch { /* keep */ }
   p = p.replace(/\/+$/, "") || "/";
+  if (ctx.hidden && ctx.hidden(p, ctx.lang) && ctx.visibleAncestor) return ctx.url(ctx.visibleAncestor(p, ctx.lang), ctx.lang) + tail;
   const lang = ctx.tr(p, ctx.lang) ? ctx.lang : ctx.defaultLang;
   return ctx.url(p, lang) + tail;
 }
+// Marker for outbound links: an arrow icon (CSS .ext::after) plus a hidden label for screen readers
+const extLabel = (ctx) => `<span class="sr-only"> (${esc(ctx.ui.external_link || "extern länk")})</span>`;
 export function localizeHtml(ctx, html) {
   return String(html || "").replace(/href="(\/[^"]*)"/g, (m, h) => `href="${esc(localizeHref(ctx, h.replace(/&amp;/g, "&")))}"`)
-    .replace(/<a href="(https?:\/\/[^"]+)"/g, (m, h) => (isOwn(ctx, h) ? m : `<a href="${h}" rel="noopener"`));
+    .replace(/<a\s([^>]*?)href="(https?:\/\/[^"]+)"([^>]*)>([\s\S]*?)<\/a>/g, (m, pre, h, post, inner) => {
+      if (isOwn(ctx, h)) return m;
+      let attrs = `${pre}href="${h}"${post}`;
+      if (!/\brel=/.test(attrs)) attrs += ' rel="noopener"';
+      if (/<img\b/i.test(inner)) return `<a ${attrs.trim()}>${inner}</a>`; // image links get no icon
+      attrs = /\bclass="/.test(attrs) ? attrs.replace(/\bclass="/, 'class="ext ') : attrs + ' class="ext"';
+      return `<a ${attrs.trim()}>${inner}${extLabel(ctx)}</a>`;
+    });
 }
 function isOwn(ctx, h) {
   try { return new URL(h).origin === new URL(ctx.site.origin).origin; } catch { return false; }
@@ -113,6 +124,8 @@ export function imgTag(ctx, src, alt, o = {}) {
 }
 
 // ---------- helpers ----------
+// A page is listed (menus, cards, strips, crumbs) when it is not hidden for this language and exists in it or in the default language.
+const shown = (ctx, p) => !(ctx.hidden && ctx.hidden(p, ctx.lang)) && !!(ctx.tr(p, ctx.lang) || ctx.tr(p, ctx.defaultLang));
 function titleOf(ctx, path) {
   const t = ctx.tr(path, ctx.lang) || ctx.tr(path, ctx.defaultLang);
   return t ? (t.h1 || t.title || path) : path;
@@ -132,7 +145,7 @@ const ancestorsOf = (path) => {
 
 // ---------- blocks ----------
 function renderCards(ctx, b) {
-  const items = (b.items || []).map((it, idx) => [it, idx]).filter(([it]) => ctx.tr(it.href, ctx.lang) || ctx.tr(it.href, ctx.defaultLang)).map(([it, idx]) => {
+  const items = (b.items || []).map((it, idx) => [it, idx]).filter(([it]) => shown(ctx, it.href)).map(([it, idx]) => {
     const title = it.title || titleOf(ctx, it.href);
     const href = localizeHref(ctx, it.href);
     const img = it.image ? imgTag(ctx, it.image, it.alt || title, { cls: "card__img", sizes: "(min-width: 1000px) 280px, (min-width: 560px) 45vw, 100vw" }) : "";
@@ -200,7 +213,7 @@ function renderContact(ctx) {
   if (c.address) parts.push(`<li><span class="contact__label">${esc(ctx.ui.contact_address || "Adress")}</span><span>${esc(c.address)}</span></li>`);
   const hours = hoursText(ctx);
   if (hours) parts.push(`<li><span class="contact__label">${esc(ctx.ui.contact_hours || "Kontorstid")}</span><span>${esc(hours)}</span></li>`);
-  const social = (ctx.site.social || []).map((s) => `<a class="social__link" href="${esc(s.url)}" rel="noopener me" target="_blank">${esc(s.name)}</a>`).join("");
+  const social = (ctx.site.social || []).map((s) => `<a class="social__link ext" href="${esc(s.url)}" rel="noopener me" target="_blank">${esc(s.name)}${extLabel(ctx)}</a>`).join("");
   return `<div class="contact"><ul class="contact__list">${parts.join("")}</ul>` +
     (social ? `<p class="contact__social">${social}</p>` : "") +
     `<p class="contact__org">${esc(ctx.site.legalName || ctx.site.name)}${ctx.site.orgNumber ? ` · ${esc(ctx.ui.org_no || "Org.nr")} ${esc(ctx.site.orgNumber)}` : ""}</p></div>`;
@@ -253,6 +266,33 @@ const SOCIAL_ICON = {
   instagram: '<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#fff" stroke-width="1.9" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="4.5"/><circle cx="12" cy="12" r="3.6"/><circle cx="16.8" cy="7.2" r=".7" fill="#fff"/></svg>',
   linkedin: '<svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="#fff" d="M5.2 9.4h3.1V19H5.2zM6.8 4.6a1.8 1.8 0 1 1 0 3.6 1.8 1.8 0 0 1 0-3.6zM10.4 9.4h3v1.3c.5-.8 1.5-1.5 3-1.5 3.1 0 3.7 2 3.7 4.700V19H17v-4.600c0-1.100 0-2.500-1.500-2.500s-1.800 1.200-1.800 2.400V19h-3.300z"/></svg>'
 };
+// Quote request form. Works without any third party: with no endpoint configured it opens the visitor's own
+// e-mail program with the filled-in text. With site.quoteForm.endpoint set, site.js posts it there instead.
+function renderQuote(ctx) {
+  const u = ctx.ui, q = ctx.site.quoteForm || {}, c = ctx.site.contact || {};
+  const T = (k, d) => esc(u[k] || d);
+  const privacy = ctx.site.privacyPath && ctx.pages.has(ctx.site.privacyPath) ? ctx.url(ctx.site.privacyPath) : "";
+  const f = (id, label, type, auto, req) =>
+    `<p class="qf__f"><label for="q-${id}">${label}${req ? ` <span class="qf__req" aria-hidden="true">*</span>` : ""}</label>` +
+    `<input id="q-${id}" name="${id}" type="${type}" autocomplete="${auto}"${req ? " required" : ""}></p>`;
+  const extra = Object.entries(q.extra || {}).map(([k, v]) => `<input type="hidden" name="${esc(k)}" value="${esc(v)}">`).join("");
+  return `<section class="quote" id="offert" data-quote data-endpoint="${esc(q.endpoint || "")}" data-mailto="${esc(c.email || "")}" ` +
+    `data-subject="${T("quote_subject", "Offertförfrågan")}" data-sending="${T("quote_sending", "Skickar…")}" data-ok="${T("quote_ok", "Tack! Vi återkommer så snart vi kan.")}" ` +
+    `data-err="${T("quote_err", "Det gick inte att skicka. Ring oss eller skriv till oss direkt.")}" data-mail="${T("quote_mail", "Ditt e-postprogram öppnas med meddelandet ifyllt – tryck på Skicka där.")}">` +
+    `<h2>${T("quote_title", "Begär offert")}</h2><p class="muted">${T("quote_intro", "Berätta kort vad du behöver, så återkommer vi.")}</p>` +
+    `<form class="qf" method="post" action="${esc(q.endpoint || "#")}" novalidate>` +
+    `<div class="qf__grid">${f("name", T("quote_name", "Namn"), "text", "name", true)}${f("company", T("quote_company", "Företag"), "text", "organization")}` +
+    `${f("email", T("quote_email", "E-post"), "email", "email", true)}${f("phone", T("quote_phone", "Telefon"), "tel", "tel")}</div>` +
+    `<p class="qf__f"><label for="q-message">${T("quote_message", "Vad behöver du hjälp med?")} <span class="qf__req" aria-hidden="true">*</span></label>` +
+    `<textarea id="q-message" name="message" rows="5" required></textarea></p>` +
+    `<p class="qf__trap" aria-hidden="true"><label>Website <input name="website" type="text" tabindex="-1" autocomplete="off"></label></p>` +
+    `${extra}<input type="hidden" name="subject" value="${T("quote_subject", "Offertförfrågan")}">` +
+    `<p class="qf__consent"><label><input type="checkbox" name="consent" required> <span>${T("quote_consent", "Jag godkänner att mina uppgifter används för att besvara min förfrågan.")}` +
+    `${privacy ? ` <a href="${esc(privacy)}">${T("quote_privacy", "Läs mer i integritetspolicyn")}</a>` : ""}</span></label></p>` +
+    `<p><button class="btn" type="submit">${T("quote_send", "Skicka förfrågan")}${ICON.arrow}</button></p>` +
+    `<p class="qf__status" role="status" aria-live="polite"></p></form></section>`;
+}
+
 function renderSocial(ctx) {
   const items = (ctx.site.social || []).map((s) => {
     const key = String(s.name || "").toLowerCase();
@@ -292,7 +332,7 @@ function renderBlockInner(ctx, b) {
       const external = b.external || /^https?:/.test(b.href || "");
       if (b.kind === "download") return `<ul class="docs docs--single">${renderDoc(ctx, b)}</ul>`;
       const label = ctx.edit ? `<span${editFld(ctx, "text", "plain", "Knapptext")}>${esc(b.text)}</span>` : esc(b.text);
-      return `<p class="btn-row"><a class="btn${b.full ? " btn--block" : ""}" href="${esc(external ? b.href : localizeHref(ctx, b.href))}"${external ? ' target="_blank" rel="noopener"' : ""}>${label}${b.full ? "" : ICON.arrow}</a></p>`;
+      return `<p class="btn-row"><a class="btn${b.full ? " btn--block" : ""}" href="${esc(external ? b.href : localizeHref(ctx, b.href))}"${external ? ' target="_blank" rel="noopener"' : ""}>${label}${external ? extLabel(ctx) : ""}${b.full ? "" : external ? ICON.external : ICON.arrow}</a></p>`;
     }
     case "cards": return renderCards(ctx, b);
     case "video": return renderVideo(ctx, b);
@@ -301,6 +341,7 @@ function renderBlockInner(ctx, b) {
     case "contact": return renderContact(ctx);
     case "columns": return renderColumns(ctx, b);
     case "social": return renderSocial(ctx);
+    case "quote": return renderQuote(ctx);
     case "chips": return renderChips(ctx, b);
     case "cta": return renderCta(ctx, b);
     case "html": return b.html || "";
@@ -338,7 +379,7 @@ export function renderBlocks(ctx, blocks) {
       continue;
     }
     if (b.type === "cta" || b.type === "datasheet" && false) { flushProse(); out.push(renderBlock(ctx, b)); continue; }
-    if (b.type === "columns" || b.type === "social") { flushProse(); out.push(`<div class="container prose sect">${renderBlock(ctx, b)}</div>`); continue; }
+    if (b.type === "columns" || b.type === "social" || b.type === "quote") { flushProse(); out.push(`<div class="container prose sect">${renderBlock(ctx, b)}</div>`); continue; }
     prose.push(renderBlock(ctx, b));
   }
   flushProse();
@@ -353,7 +394,7 @@ export function breadcrumbItems(ctx, path) {
   let acc = "";
   for (const s of segs) {
     acc += "/" + s;
-    if (ctx.pages.has(acc) && (ctx.tr(acc, ctx.lang) || ctx.tr(acc, ctx.defaultLang))) items.push({ path: acc, name: navTitleOf(ctx, acc) });
+    if (ctx.pages.has(acc) && shown(ctx, acc)) items.push({ path: acc, name: navTitleOf(ctx, acc) });
   }
   return items;
 }
@@ -370,9 +411,16 @@ function renderBreadcrumbs(ctx, path) {
   return `<nav class="breadcrumbs" aria-label="${esc(ctx.ui.breadcrumbs || "Brödsmulor")}"><ol>${li}</ol></nav>`;
 }
 
+// Same page in another language; if it does not exist (or is hidden) there, the nearest page above it that does
 function langLink(ctx, code, path) {
-  const exists = ctx.tr(path, code);
-  return exists ? ctx.url(path, code) : ctx.url("/", code);
+  let p = path;
+  for (let guard = 0; guard < 12; guard++) {
+    if (ctx.tr(p, code)) return ctx.url(p, code);
+    const i = p.lastIndexOf("/");
+    if (i <= 0) break;
+    p = p.slice(0, i);
+  }
+  return ctx.url("/", code);
 }
 
 function renderLangSwitch(ctx, path) {
@@ -399,9 +447,9 @@ function brandLogoMap(ctx, root) {
 
 function renderHeader(ctx, current) {
   const site = ctx.site;
-  const navPaths = (site.nav && site.nav.length ? site.nav : []).filter((p) => ctx.pages.has(p) && (ctx.tr(p, ctx.lang) || ctx.tr(p, ctx.defaultLang)));
+  const navPaths = (site.nav && site.nav.length ? site.nav : []).filter((p) => ctx.pages.has(p) && shown(ctx, p));
   const items = navPaths.map((p) => {
-    const kids = ctx.children(p).filter((c) => ctx.tr(c, ctx.lang) || ctx.tr(c, ctx.defaultLang));
+    const kids = ctx.children(p).filter((c) => shown(ctx, c));
     const active = isUnder(current, p);
     const label = navTitleOf(ctx, p);
     const link = `<a href="${esc(ctx.url(p))}"${active && current === p ? ' aria-current="page"' : ""}>${esc(label)}</a>`;
@@ -434,7 +482,7 @@ function renderSubnav(ctx, current) {
   const roots = ctx.site.sectionBars || ["/produkter"];
   const root = roots.find((r) => isUnder(current, r) && ctx.pages.has(r));
   if (!root) return "";
-  const avail = (p) => ctx.tr(p, ctx.lang) || ctx.tr(p, ctx.defaultLang);
+  const avail = (p) => shown(ctx, p);
   const l1 = ctx.children(root).filter(avail);
   if (!l1.length) return "";
   const act1 = l1.find((p) => isUnder(current, p));
@@ -449,7 +497,8 @@ function renderSubnav(ctx, current) {
       `${imgTag(ctx, src, name, { cls: "subnav__logo", sizes: "120px" })}</a></li>`;
   };
   // logos straight away (no "PRODUKTER" label); the row follows the mouse sideways (data-scrub)
-  const bar1 = `<nav class="subnav subnav--1" aria-label="${esc(navTitleOf(ctx, root))}"><div class="container"><ul data-scrub>` +
+  // The pinned logo strip duplicates the logo dropdown in the header; kept behind a switch (site.json: sectionBarLogos)
+  const bar1 = ctx.site.sectionBarLogos !== true ? "" : `<nav class="subnav subnav--1" aria-label="${esc(navTitleOf(ctx, root))}"><div class="container"><ul data-scrub>` +
     l1.map((p) => logoLink(p, p === act1)).join("") + `</ul></div></nav>`;
   let bar2 = "";
   if (act1) {
@@ -474,11 +523,11 @@ function renderCallBar(ctx) {
 function renderFooter(ctx) {
   const s = ctx.site;
   const c = s.contact || {};
-  const avail = (p) => ctx.tr(p, ctx.lang) || ctx.tr(p, ctx.defaultLang);
+  const avail = (p) => shown(ctx, p);
   const brands = ctx.pages.has("/produkter") ? ctx.children("/produkter").filter(avail) : [];
   const company = (s.nav || []).filter((p) => p !== "/produkter" && ctx.pages.has(p) && avail(p));
   const privacyPath = s.privacyPath && ctx.pages.has(s.privacyPath) && avail(s.privacyPath) ? s.privacyPath : null;
-  const social = (s.social || []).map((x) => `<li><a href="${esc(x.url)}" rel="noopener me" target="_blank">${esc(x.name)}</a></li>`).join("");
+  const social = (s.social || []).map((x) => `<li><a class="ext" href="${esc(x.url)}" rel="noopener me" target="_blank">${esc(x.name)}${extLabel(ctx)}</a></li>`).join("");
   const analyticsOn = s.analytics && s.analytics.enabled && s.analytics.measurementId;
   const phones = (c.phones || []).map((p) => `<li>${ICON.phone}<span class="sr-only">${esc(p.label || "")}: </span><a href="${esc(telHref(p.value))}">${esc(p.value)}</a></li>`).join("");
   return `<footer class="site-footer"><div class="container site-footer__grid">` +
@@ -618,7 +667,7 @@ export function renderMain(ctx, page, t) {
   const heroImg = page.hero && page.hero.image ? page.hero.image : null;
   const title = t.h1 || t.title;
   const isHome = page.path === "/";
-  const anc = ancestorsOf(page.path).filter((p) => ctx.pages.has(p) && (ctx.tr(p, ctx.lang) || ctx.tr(p, ctx.defaultLang)));
+  const anc = ancestorsOf(page.path).filter((p) => ctx.pages.has(p) && shown(ctx, p));
   const eyebrow = !isHome && anc.length ? `<p class="hero__eyebrow">${anc.slice(-2).map((p) => esc(navTitleOf(ctx, p))).join(" · ")}</p>` : "";
   const ctas = (t.ctas || []).map((c, i) => `<a class="btn${i ? " btn--ghost-light" : ""}" href="${esc(localizeHref(ctx, c.href))}">${esc(c.text)}${i ? "" : ICON.arrow}</a>`).join("");
   const pageFld = (k) => (ctx.edit ? ` data-bk-page="${k}" data-bk-kind="plain"` : "");

@@ -8,6 +8,7 @@ import { t, setUiLang, uiLang, UI_LANGS } from "./lang.js";
 import { openEditor, closeEditor, newPageDraft } from "./editor.js";
 import * as ai from "./ai.js";
 import { langStatus, srcLang } from "./editor-model.js";
+import { isHidden } from "./visibility.mjs";
 
 const app = $("#app");
 
@@ -50,7 +51,8 @@ function langChips(page) {
     const st = langStatus(page, l, null);
     const cls = { source: "ok", missing: "off", auto: "warn", manual: "info", reviewed: "ok", legacy: "" }[st.key] || "";
     const tr = page.i18n && page.i18n[l];
-    return `<span class="chip ${cls} ${tr && tr.published === false ? "draft" : ""}" title="${esc(langLabel(l))}: ${esc(t("st_" + st.key))}">${esc(l.toUpperCase())}</span>`;
+    const hid = Array.isArray(page.hideIn) && page.hideIn.includes(l);
+    return `<span class="chip ${hid ? "off hid" : cls} ${tr && tr.published === false ? "draft" : ""}" title="${esc(langLabel(l))}: ${esc(hid ? t("vis_hidden") : t("st_" + st.key))}">${esc(l.toUpperCase())}</span>`;
   }).join("");
 }
 
@@ -63,6 +65,7 @@ function viewPages() {
   app.innerHTML = `<div class="wrap"><div class="pages-head"><h1>${esc(t("pages"))}</h1><button class="btn primary" id="new">${esc(t("new_page"))}</button></div>
   <div class="toolbar"><input type="search" id="q" placeholder="${esc(t("search_pages"))}" value="${esc(state.filter || "")}">
   <span class="muted">${esc(t("n_pages", { n: rows.length }))} · ${esc(state.backend.label)}</span></div>
+  ${visMatrix()}
   <table class="list"><thead><tr><th>${esc(t("col_title"))}</th><th>${esc(t("col_url"))}</th><th>${esc(t("col_languages"))}</th><th>${esc(t("col_status"))}</th><th></th></tr></thead><tbody>
   ${rows.map((p) => {
     const depth = p.path === "/" ? 0 : p.path.split("/").length - 2;
@@ -74,7 +77,48 @@ function viewPages() {
   </tbody></table></div>`;
   $("#q").oninput = debounce((e) => { state.filter = e.target.value; viewPages(); const q2 = $("#q"); q2.focus(); q2.setSelectionRange(99, 99); }, 200);
   $("#new").onclick = newPageDialog;
+  wireVis();
   app.querySelectorAll("tr[data-edit]").forEach((r) => (r.onclick = () => openEditor(r.dataset.edit)));
+}
+
+// Overview: which languages show which brands / groups (hideIn on the page; children follow their parent)
+function visMatrix() {
+  const def = defLang();
+  const langs = siteLangs().filter((l) => l !== def);
+  if (!langs.length) return "";
+  const pages = new Map();
+  for (const [p, x] of state.pages) pages.set(p, x.data);
+  const hasKids = (p) => [...pages.keys()].some((k) => k !== p && k.startsWith(p + "/"));
+  const rows = [...pages.keys()].filter((p) => p.startsWith("/produkter/") && (p.split("/").length <= 3 || hasKids(p)))
+    .sort((a, b) => a.localeCompare(b, "sv"));
+  if (!rows.length) return "";
+  const body = rows.map((p) => {
+    const depth = p.split("/").length - 3;
+    const parent = p.split("/").slice(0, -1).join("/") || "/";
+    return `<tr><td style="padding-left:${0.5 + depth * 1.1}rem">${depth ? "<span class='muted'>└ </span>" : ""}<b>${esc(titleOf(p))}</b></td>` +
+      langs.map((l) => {
+        const inh = isHidden(pages, parent, l, def);
+        const own = (pages.get(p).hideIn || []).includes(l);
+        return `<td class="vis-cell"><input type="checkbox" data-vis="${esc(p)}" data-lang="${esc(l)}" aria-label="${esc(titleOf(p))} – ${esc(langLabel(l))}" ${own || inh ? "" : "checked"} ${inh ? "disabled" : ""}></td>`;
+      }).join("") + "</tr>";
+  }).join("");
+  return `<details class="card vis" ${state.visOpen ? "open" : ""}><summary><b>${esc(t("vis_title"))}</b> <span class="muted">— ${esc(t("vis_summary"))}</span></summary>
+    <p class="muted">${esc(t("vis_intro"))}</p>
+    <table class="list vis-table"><thead><tr><th>${esc(t("col_title"))}</th>${langs.map((l) => `<th class="vis-cell">${esc(l.toUpperCase())}</th>`).join("")}</tr></thead><tbody>${body}</tbody></table></details>`;
+}
+function wireVis() {
+  const det = app.querySelector("details.vis");
+  if (det) det.addEventListener("toggle", () => { state.visOpen = det.open; });
+  app.querySelectorAll("input[data-vis]").forEach((cb) => (cb.onchange = async () => {
+    const path = cb.dataset.vis, lang = cb.dataset.lang;
+    const e = state.pages.get(path);
+    if (!e) return;
+    const set = new Set(e.data.hideIn || []);
+    if (cb.checked) set.delete(lang); else set.add(lang);
+    if (set.size) e.data.hideIn = [...set]; else delete e.data.hideIn;
+    try { await writeJson(e.file, e.data, `CMS: visibility ${path}`); toast(savedMessage(t)); viewPages(); }
+    catch (err) { toast(err.message, "err", 7000); }
+  }));
 }
 
 function newPageDialog() {
@@ -157,6 +201,10 @@ function viewSettings() {
     <textarea data-s="contact.phones" data-t="phones" rows="3">${esc((c.phones || []).map((p) => `${p.label}: ${p.value}`).join("\n"))}</textarea>
     <label>${esc(t("set_social"))}</label>
     <textarea data-s="social" data-t="social" rows="3">${esc((s.social || []).map((x) => `${x.name}: ${x.url}`).join("\n"))}</textarea></div>
+
+  <div class="card"><h2>${esc(t("set_quote"))}</h2><p class="muted">${esc(t("set_quote_hint"))}</p>
+    <label>${esc(t("set_quote_endpoint"))}</label><input type="url" data-s="quoteForm.endpoint" value="${esc((s.quoteForm || {}).endpoint || "")}" placeholder="https://…">
+    <label class="chk"><input type="checkbox" data-s="sectionBarLogos" data-t="bool" ${s.sectionBarLogos === true ? "checked" : ""}> ${esc(t("set_bar_logos"))}</label></div>
 
   <div class="card"><h2>${IC_SPARK} ${esc(t("ai_title"))}</h2>
     <p class="muted">${t("ai_intro")}</p>

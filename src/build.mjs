@@ -9,6 +9,7 @@ import path from "node:path";
 import crypto from "node:crypto";
 import { renderDocument, renderNotFound, esc, flatBlocks } from "./lib/render.mjs";
 import { applyBasePath } from "./lib/apply-base.mjs";
+import { isHidden, visibleAncestor } from "./lib/visibility.mjs";
 
 const ROOT = path.resolve(import.meta.dirname, "..");
 const args = process.argv.slice(2);
@@ -194,6 +195,7 @@ function fileFor(p, lang) {
 const trOf = (p, lang) => {
   const pg = pages.get(p);
   if (!pg || pg.published === false) return null;
+  if (isHidden(pages, p, lang, defaultLang)) return null; // hidden for this language (hideIn)
   const t = pg.i18n && pg.i18n[lang];
   if (!t || t.published === false) return null;
   if (lang !== defaultLang && !ALL_LANGS && !(site.languages[lang] && site.languages[lang].published)) return null;
@@ -207,6 +209,8 @@ function makeCtx(lang) {
     url: (p, l = lang) => urlFor(p, l),
     abs: (u) => origin + u,
     tr: trOf,
+    hidden: (p, l = lang) => isHidden(pages, p, l, defaultLang),
+    visibleAncestor: (p, l = lang) => visibleAncestor(pages, p, l, defaultLang),
     children: (p) => kids.get(p) || [],
     image: (src) => imageInfo.get(src) || null,
     fileSize: (href) => fileSizes.get(href) || null,
@@ -309,6 +313,7 @@ if (adminPath && exists(path.join(ROOT, "admin"))) {
   fs.copyFileSync(path.join(ROOT, "src/lib/render.mjs"), path.join(adminOut, "render.mjs"));
   fs.copyFileSync(path.join(ROOT, "src/lib/translatable.mjs"), path.join(adminOut, "translatable.mjs"));
   fs.copyFileSync(path.join(ROOT, "src/lib/basepath.mjs"), path.join(adminOut, "basepath.mjs"));
+  fs.copyFileSync(path.join(ROOT, "src/lib/visibility.mjs"), path.join(adminOut, "visibility.mjs"));
   fs.copyFileSync(cssSrc, path.join(adminOut, "site.css"));
   // what the visual editor needs to draw images / documents exactly like the built site
   fs.writeFileSync(path.join(adminOut, "manifest.json"), JSON.stringify({

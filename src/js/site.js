@@ -6,6 +6,36 @@
   try { cfg = JSON.parse(document.getElementById("bk-config").textContent) || {}; } catch (e) { /* defaults */ }
   var ui = cfg.ui || {};
 
+  // ---------- quote request form ----------
+  // Nothing leaves the page until the visitor presses send. Without an endpoint the visitor's own mail program is used.
+  Array.prototype.forEach.call(document.querySelectorAll("[data-quote]"), function (box) {
+    var form = box.querySelector("form");
+    var status = box.querySelector(".qf__status");
+    if (!form) return;
+    function say(msg, bad) { status.textContent = msg; status.className = "qf__status" + (bad ? " is-bad" : " is-ok"); }
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      if (!form.checkValidity()) { form.reportValidity(); return; }
+      var data = new FormData(form);
+      if (data.get("website")) { say(box.getAttribute("data-ok")); form.reset(); return; } // honeypot: pretend success
+      var endpoint = box.getAttribute("data-endpoint");
+      var btn = form.querySelector("button[type=submit]");
+      if (endpoint) {
+        btn.disabled = true; say(box.getAttribute("data-sending"));
+        fetch(endpoint, { method: "POST", body: data, headers: { Accept: "application/json" } })
+          .then(function (r) { if (!r.ok) throw new Error(String(r.status)); say(box.getAttribute("data-ok")); form.reset(); })
+          .catch(function () { say(box.getAttribute("data-err"), true); })
+          .then(function () { btn.disabled = false; });
+        return;
+      }
+      var to = box.getAttribute("data-mailto");
+      var body = ["name", "company", "email", "phone"].map(function (k) { return data.get(k) ? k + ": " + data.get(k) : ""; })
+        .filter(Boolean).join("\n") + "\n\n" + data.get("message");
+      say(box.getAttribute("data-mail"));
+      window.location.href = "mailto:" + to + "?subject=" + encodeURIComponent(box.getAttribute("data-subject")) + "&body=" + encodeURIComponent(body);
+    });
+  });
+
   // ---------- mobile navigation ----------
   var toggle = document.querySelector(".nav-toggle");
   var nav = document.getElementById("site-nav");

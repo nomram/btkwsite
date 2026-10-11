@@ -3,6 +3,7 @@
 import { renderDocument } from "./render.mjs";
 import { state, $, esc, defLang, SITE_ROOT } from "./core.js";
 import { rewriteHtml } from "./basepath.mjs";
+import { isHidden, visibleAncestor } from "./visibility.mjs";
 import { t } from "./lang.js";
 import {
   IC, curT, curBlocks, mutate, setField, moveBlock, deleteBlock, duplicateBlock, sanitizeInline, plainText, ytId, paletteId, hooks as modelHooks
@@ -41,6 +42,8 @@ function buildCtx(lang) {
     lang, defaultLang: def, ui: { ...(state.ui[def] || {}), ...(state.ui[lang] || {}) }, pages,
     url: (p, l = lang) => urlFor(p, l), abs: (u) => site.origin + u,
     tr: (p, l) => { const pg = pages.get(p); return pg && pg.i18n ? pg.i18n[l] || null : null; },
+    hidden: (p, l = lang) => isHidden(pages, p, l, def),
+    visibleAncestor: (p, l = lang) => visibleAncestor(pages, p, l, def),
     children: kids,
     image: (src) => (state.pending.has(src) ? null : mf.images[src] || null),
     fileSize: (h) => (mf.docs[h] && mf.docs[h].size) || null,

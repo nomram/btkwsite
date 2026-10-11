@@ -1,6 +1,7 @@
 // Visual editor sidebar: add-blocks palette, structure list, block inspector, page & SEO, languages.
 import { state, $, $$, esc, clone, defLang, siteLangs, langLabel, titleOf, toast, setPath, getPath } from "./core.js";
 import { t } from "./lang.js";
+import { isHidden } from "./visibility.mjs";
 import {
   IC, BLOCK_TYPES, BLOCK_GROUPS, paletteId, newBlock, curT, curBlocks, mutate, setField, moveBlock, deleteBlock, duplicateBlock,
   srcLang, metaOf, langStatus, plainText, autoDescription, ytId, humanizeFilename, insertBlock, hooks as modelHooks
@@ -171,6 +172,9 @@ function panelBlock() {
         `<h3 class="pn__h">${esc(t("left_col"))}</h3>${nested("left")}${add("left")}<h3 class="pn__h">${esc(t("right_col"))}</h3>${nested("right")}${add("right")}`;
       break;
     }
+    case "quote":
+      body = `<p class="muted">${esc(t("quote_hint"))}</p><div class="btnrow"><button class="btn sm ghost" data-act="open-settings">${esc(t("open_settings"))}</button></div>`;
+      break;
     case "social":
       body = `<p class="muted">${esc(t("social_hint"))}</p><div class="btnrow"><button class="btn sm ghost" data-act="open-settings">${esc(t("open_settings"))}</button></div>`;
       break;
@@ -202,6 +206,7 @@ function panelPage() {
       F(t("page_type"), `<select data-rf="template">${TEMPLATES.map((x) => `<option value="${x}" ${(p.template || "page") === x ? "selected" : ""}>${esc(t("tpl_" + x))}</option>`).concat(p.template && !TEMPLATES.includes(p.template) ? [`<option selected>${esc(p.template)}</option>`] : []).join("")}</select>`, t("page_type_hint")) +
       F(t("status"), `<select data-rf="published" data-t="boolstr"><option value="true" ${p.published !== false ? "selected" : ""}>${esc(t("published"))}</option><option value="false" ${p.published === false ? "selected" : ""}>${esc(t("draft"))}</option></select>`, t("status_hint")) +
       (ed.isNew ? `<label class="chk"><input type="checkbox" id="add-parent" ${ed.addToParent ? "checked" : ""}> ${esc(t("add_to_parent"))}</label>` : "") : "") +
+    visibilitySection(p) +
     `<h3 class="pn__h">${esc(t("search_engines"))}</h3>` +
     F(`${t("seo_title")}`, `<input type="text" data-lf="seoTitle" value="${esc(tr.seoTitle || "")}" placeholder="${esc(title)}"><span class="count" id="c-title"></span>`, t("seo_title_hint")) +
     F(t("meta_desc"), `<textarea data-lf="description" rows="3" placeholder="${esc(auto)}">${esc(desc)}</textarea><span class="count" id="c-desc"></span>
@@ -210,6 +215,22 @@ function panelPage() {
     `<label class="chk"><input type="checkbox" data-lf="noindex" data-t="bool" ${tr.noindex ? "checked" : ""}> ${esc(t("noindex"))}</label>` +
     `<h3 class="pn__h">${esc(t("address"))}</h3><p class="path">${esc(p.path)}</p><p class="muted">${esc(ed.isNew ? t("url_new_hint") : t("url_locked_hint"))}</p>` +
     (isDef ? `<details class="adv"><summary>${esc(t("advanced"))}</summary>${F(t("sort_order"), `<input type="number" data-rf="order" data-t="int" value="${esc(p.order ?? 100)}">`, t("sort_order_hint"))}</details>` : "");
+}
+
+// Which languages show this page (and everything below it). The default language always does.
+function visibilitySection(p) {
+  const def = defLang();
+  const langs = siteLangs().filter((l) => l !== def);
+  if (!langs.length) return "";
+  const pages = new Map();
+  for (const [path, x] of state.pages) pages.set(path, x.data);
+  const parent = p.path.split("/").slice(0, -1).join("/") || "/";
+  return `<h3 class="pn__h">${esc(t("vis_title"))}</h3><p class="muted">${esc(t("vis_hint"))}</p>` +
+    `<div class="vis-row">` + langs.map((l) => {
+      const inherited = p.path !== "/" && isHidden(pages, parent, l, def);
+      const own = (p.hideIn || []).includes(l);
+      return `<label class="chk"><input type="checkbox" data-hide-lang="${esc(l)}" ${own || inherited ? "" : "checked"} ${inherited ? "disabled" : ""}> ${esc(langLabel(l))}${inherited ? ` <span class="muted">(${esc(t("vis_inherited"))})</span>` : ""}</label>`;
+    }).join("") + `</div>`;
 }
 
 // ---------- languages ----------
@@ -288,6 +309,9 @@ export function bindPanel(el) {
       let v = parseValue(x);
       if (x.dataset.t === "boolnot") v = v ? undefined : false;
       mutate((pg) => { if (v === undefined) delete pg[key]; else pg[key] = v; }, { scope: "page", coalesce: "rf:" + key, noPanel: true });
+    } else if (x.dataset.hideLang !== undefined) {
+      const l = x.dataset.hideLang, show = x.checked;
+      mutate((pg) => { const s = new Set(pg.hideIn || []); if (show) s.delete(l); else s.add(l); if (s.size) pg.hideIn = [...s]; else delete pg.hideIn; }, { scope: "page", noPanel: true });
     } else if (x.id === "add-parent") ed.addToParent = x.checked;
   });
   el.addEventListener("change", (e) => {
