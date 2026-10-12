@@ -64,167 +64,146 @@
           "html": "<a href=\"/kontakta-oss\">Kontakta oss</a> för mer information."
         },
         {
-          "type": "image",
-          "alt": "Topphammare – bild 4",
-          "width": 1920,
-          "height": 1074,
-          "src": "/assets/img/tei-topphammare-4.webp"
+          "type": "table",
+          "header": true,
+          "align": "center",
+          "caption": "Rekommenderat hålstorleksintervall (mm) för TE-seriens borraggregat",
+          "rows": [
+            [
+              "Modell",
+              "Hålstorlek (mm)",
+              "Vikt (kg)",
+              "Hammarflöde (L/min)",
+              "Rotationsflöde (L/min)"
+            ],
+            [
+              "TE1000",
+              "76.2 - 177.8",
+              "449",
+              "117",
+              "114–144"
+            ],
+            [
+              "TE760",
+              "52 - 127",
+              "240",
+              "95",
+              "57–95"
+            ],
+            [
+              "TE726",
+              "52 - 101",
+              "154",
+              "102",
+              "38–76"
+            ],
+            [
+              "TE360",
+              "35 - 76",
+              "107",
+              "76",
+              "38–76"
+            ],
+            [
+              "TE326",
+              "35 - 76",
+              "81",
+              "76",
+              "19–49"
+            ],
+            [
+              "TE260HT",
+              "35 - 64",
+              "82",
+              "68",
+              "38–76"
+            ],
+            [
+              "TE260",
+              "35 - 52",
+              "68",
+              "68",
+              "19–38"
+            ],
+            [
+              "TE160HT",
+              "32 - 52",
+              "78",
+              "61",
+              "38–76"
+            ],
+            [
+              "TE160",
+              "32 - 48",
+              "48",
+              "61",
+              "23–27"
+            ]
+          ]
         },
         {
-          "type": "cards",
+          "type": "modules",
+          "layout": "compact",
           "items": [
             {
-              "href": "/produkter/tei/topphammare/te160",
-              "label": "Läs mer",
-              "title": "Topphammare",
+              "title": "TE160",
               "image": "/assets/img/tei-topphammare-te160.webp",
-              "width": 1422,
-              "height": 1422,
-              "alt": "Topphammare – logotyp"
-            }
-          ]
-        },
-        {
-          "type": "text",
-          "html": "TE160"
-        },
-        {
-          "type": "cards",
-          "items": [
+              "alt": "TE160",
+              "href": "/produkter/tei/topphammare/te160"
+            },
             {
-              "href": "/produkter/tei/topphammare/te260",
-              "label": "Läs mer",
+              "title": "TE260",
               "image": "/assets/img/tei-topphammare-te260.webp",
-              "width": 1393,
-              "height": 1393,
-              "alt": "TE260 – logotyp"
-            }
-          ]
-        },
-        {
-          "type": "text",
-          "html": "TE260"
-        },
-        {
-          "type": "cards",
-          "items": [
+              "alt": "TE260",
+              "href": "/produkter/tei/topphammare/te260"
+            },
             {
-              "href": "/produkter/tei/topphammare/te326",
-              "label": "Läs mer",
+              "title": "TE326",
               "image": "/assets/img/tei-topphammare-te326.webp",
-              "width": 1280,
-              "height": 1114,
-              "alt": "TE326 – logotyp"
-            }
-          ]
-        },
-        {
-          "type": "text",
-          "html": "TE326"
-        },
-        {
-          "type": "cards",
-          "items": [
+              "alt": "TE326",
+              "href": "/produkter/tei/topphammare/te326"
+            },
             {
-              "href": "/produkter/tei/topphammare/te360",
-              "label": "Läs mer",
+              "title": "TE360",
               "image": "/assets/img/tei-topphammare-te360.webp",
-              "width": 1280,
-              "height": 1114,
-              "alt": "TE360 – logotyp"
-            }
-          ]
-        },
-        {
-          "type": "text",
-          "html": "TE360"
-        },
-        {
-          "type": "cards",
-          "items": [
+              "alt": "TE360",
+              "href": "/produkter/tei/topphammare/te360"
+            },
             {
-              "href": "/produkter/tei/topphammare/te726",
-              "label": "Läs mer",
+              "title": "TE726",
               "image": "/assets/img/tei-topphammare-te726.webp",
-              "width": 1528,
-              "height": 1325,
-              "alt": "TE726 – logotyp"
-            }
-          ]
-        },
-        {
-          "type": "text",
-          "html": "TE726"
-        },
-        {
-          "type": "cards",
-          "items": [
+              "alt": "TE726",
+              "href": "/produkter/tei/topphammare/te726"
+            },
             {
-              "href": "/produkter/tei/topphammare/te760",
-              "label": "Läs mer",
+              "title": "TE760",
               "image": "/assets/img/tei-topphammare-te760.webp",
-              "width": 1540,
-              "height": 1329,
-              "alt": "TE760 – logotyp"
-            }
-          ]
-        },
-        {
-          "type": "text",
-          "html": "TE760"
-        },
-        {
-          "type": "cards",
-          "items": [
+              "alt": "TE760",
+              "href": "/produkter/tei/topphammare/te760"
+            },
             {
-              "href": "/produkter/tei/topphammare/te1000",
-              "label": "Läs mer",
+              "title": "TE1000",
               "image": "/assets/img/tei-topphammare-te1000.webp",
-              "width": 1339,
-              "height": 1155,
-              "alt": "TE1000 – logotyp"
-            }
-          ]
-        },
-        {
-          "type": "text",
-          "html": "TE1000"
-        },
-        {
-          "type": "cards",
-          "items": [
+              "alt": "TE1000",
+              "href": "/produkter/tei/topphammare/te1000"
+            },
             {
-              "href": "/produkter/tei/topphammare/te160ht",
-              "label": "Läs mer",
+              "title": "TE160HT",
               "image": "/assets/img/tei-topphammare-te160ht.webp",
-              "width": 1078,
-              "height": 1078,
-              "alt": "TE160HT – logotyp"
-            }
-          ]
-        },
-        {
-          "type": "text",
-          "html": "TE160HT"
-        },
-        {
-          "type": "cards",
-          "items": [
+              "alt": "TE160HT",
+              "href": "/produkter/tei/topphammare/te160ht"
+            },
             {
-              "href": "/produkter/tei/topphammare/te260ht",
-              "label": "Läs mer",
-              "html": "TEI:s tekniska specifikationer tar hänsyn till en hydraulisk effektförlust på 40%. Dessa värden kan ändras utan förvarning.",
-              "text": "TEI:s tekniska specifikationer tar hänsyn till en hydraulisk effektförlust på 40%. Dessa värden kan ändras utan förvarning.",
+              "title": "TE260HT",
               "image": "/assets/img/tei-topphammare-te260ht.webp",
-              "width": 1084,
-              "height": 1084,
-              "alt": "TE260HT – logotyp"
+              "alt": "TE260HT",
+              "href": "/produkter/tei/topphammare/te260ht"
             }
           ]
         },
         {
           "type": "text",
-          "html": "TE260HT"
+          "html": "TEI:s tekniska specifikationer tar hänsyn till en hydraulisk effektförlust på 40%. Dessa värden kan ändras utan förvarning."
         },
         {
           "type": "text",
@@ -288,167 +267,146 @@
           "html": "<a href=\"/kontakta-oss\">Contact us</a> for more information."
         },
         {
-          "type": "image",
-          "alt": "Drifters – image 4",
-          "width": 1920,
-          "height": 1074,
-          "src": "/assets/img/tei-topphammare-4.webp"
+          "type": "table",
+          "header": true,
+          "align": "center",
+          "caption": "Recommended hole size range (mm) for the TE series drill units",
+          "rows": [
+            [
+              "Model",
+              "Hole size (mm)",
+              "Weight (kg)",
+              "Hammer flow (L/min)",
+              "Rotation flow (L/min)"
+            ],
+            [
+              "TE1000",
+              "76.2 - 177.8",
+              "449",
+              "117",
+              "114–144"
+            ],
+            [
+              "TE760",
+              "52 - 127",
+              "240",
+              "95",
+              "57–95"
+            ],
+            [
+              "TE726",
+              "52 - 101",
+              "154",
+              "102",
+              "38–76"
+            ],
+            [
+              "TE360",
+              "35 - 76",
+              "107",
+              "76",
+              "38–76"
+            ],
+            [
+              "TE326",
+              "35 - 76",
+              "81",
+              "76",
+              "19–49"
+            ],
+            [
+              "TE260HT",
+              "35 - 64",
+              "82",
+              "68",
+              "38–76"
+            ],
+            [
+              "TE260",
+              "35 - 52",
+              "68",
+              "68",
+              "19–38"
+            ],
+            [
+              "TE160HT",
+              "32 - 52",
+              "78",
+              "61",
+              "38–76"
+            ],
+            [
+              "TE160",
+              "32 - 48",
+              "48",
+              "61",
+              "23–27"
+            ]
+          ]
         },
         {
-          "type": "cards",
+          "type": "modules",
+          "layout": "compact",
           "items": [
             {
-              "href": "/produkter/tei/topphammare/te160",
-              "label": "Läs mer",
-              "title": "Drifters",
+              "title": "TE160",
               "image": "/assets/img/tei-topphammare-te160.webp",
-              "width": 1422,
-              "height": 1422,
-              "alt": "Drifters – logo"
-            }
-          ]
-        },
-        {
-          "type": "text",
-          "html": "TE160"
-        },
-        {
-          "type": "cards",
-          "items": [
+              "alt": "TE160",
+              "href": "/produkter/tei/topphammare/te160"
+            },
             {
-              "href": "/produkter/tei/topphammare/te260",
-              "label": "Läs mer",
+              "title": "TE260",
               "image": "/assets/img/tei-topphammare-te260.webp",
-              "width": 1393,
-              "height": 1393,
-              "alt": "TE260 – logo"
-            }
-          ]
-        },
-        {
-          "type": "text",
-          "html": "TE260"
-        },
-        {
-          "type": "cards",
-          "items": [
+              "alt": "TE260",
+              "href": "/produkter/tei/topphammare/te260"
+            },
             {
-              "href": "/produkter/tei/topphammare/te326",
-              "label": "Läs mer",
+              "title": "TE326",
               "image": "/assets/img/tei-topphammare-te326.webp",
-              "width": 1280,
-              "height": 1114,
-              "alt": "TE326 – logo"
-            }
-          ]
-        },
-        {
-          "type": "text",
-          "html": "TE326"
-        },
-        {
-          "type": "cards",
-          "items": [
+              "alt": "TE326",
+              "href": "/produkter/tei/topphammare/te326"
+            },
             {
-              "href": "/produkter/tei/topphammare/te360",
-              "label": "Läs mer",
+              "title": "TE360",
               "image": "/assets/img/tei-topphammare-te360.webp",
-              "width": 1280,
-              "height": 1114,
-              "alt": "TE360 – logo"
-            }
-          ]
-        },
-        {
-          "type": "text",
-          "html": "TE360"
-        },
-        {
-          "type": "cards",
-          "items": [
+              "alt": "TE360",
+              "href": "/produkter/tei/topphammare/te360"
+            },
             {
-              "href": "/produkter/tei/topphammare/te726",
-              "label": "Läs mer",
+              "title": "TE726",
               "image": "/assets/img/tei-topphammare-te726.webp",
-              "width": 1528,
-              "height": 1325,
-              "alt": "TE726 – logo"
-            }
-          ]
-        },
-        {
-          "type": "text",
-          "html": "TE726"
-        },
-        {
-          "type": "cards",
-          "items": [
+              "alt": "TE726",
+              "href": "/produkter/tei/topphammare/te726"
+            },
             {
-              "href": "/produkter/tei/topphammare/te760",
-              "label": "Läs mer",
+              "title": "TE760",
               "image": "/assets/img/tei-topphammare-te760.webp",
-              "width": 1540,
-              "height": 1329,
-              "alt": "TE760 – logo"
-            }
-          ]
-        },
-        {
-          "type": "text",
-          "html": "TE760"
-        },
-        {
-          "type": "cards",
-          "items": [
+              "alt": "TE760",
+              "href": "/produkter/tei/topphammare/te760"
+            },
             {
-              "href": "/produkter/tei/topphammare/te1000",
-              "label": "Läs mer",
+              "title": "TE1000",
               "image": "/assets/img/tei-topphammare-te1000.webp",
-              "width": 1339,
-              "height": 1155,
-              "alt": "TE1000 – logo"
-            }
-          ]
-        },
-        {
-          "type": "text",
-          "html": "TE1000"
-        },
-        {
-          "type": "cards",
-          "items": [
+              "alt": "TE1000",
+              "href": "/produkter/tei/topphammare/te1000"
+            },
             {
-              "href": "/produkter/tei/topphammare/te160ht",
-              "label": "Läs mer",
+              "title": "TE160HT",
               "image": "/assets/img/tei-topphammare-te160ht.webp",
-              "width": 1078,
-              "height": 1078,
-              "alt": "TE160HT – logo"
-            }
-          ]
-        },
-        {
-          "type": "text",
-          "html": "TE160HT"
-        },
-        {
-          "type": "cards",
-          "items": [
+              "alt": "TE160HT",
+              "href": "/produkter/tei/topphammare/te160ht"
+            },
             {
-              "href": "/produkter/tei/topphammare/te260ht",
-              "label": "Läs mer",
-              "html": "TEI:s tekniska specifikationer tar hänsyn till en hydraulisk effektförlust på 40%. Dessa värden kan ändras utan förvarning.",
-              "text": "TEI’s technical specifications take into account a 40% hydraulic power loss. These values may be changed without notice.",
+              "title": "TE260HT",
               "image": "/assets/img/tei-topphammare-te260ht.webp",
-              "width": 1084,
-              "height": 1084,
-              "alt": "TE260HT – logo"
+              "alt": "TE260HT",
+              "href": "/produkter/tei/topphammare/te260ht"
             }
           ]
         },
         {
           "type": "text",
-          "html": "TE260HT"
+          "html": "TEI’s technical specifications take into account a 40% hydraulic power loss. These values may be changed without notice."
         },
         {
           "type": "text",
@@ -513,167 +471,146 @@
           "html": "<a href=\"/kontakta-oss\">Contáctenos</a> para más información."
         },
         {
-          "type": "image",
-          "alt": "Martillos perforadores – imagen 4",
-          "width": 1920,
-          "height": 1074,
-          "src": "/assets/img/tei-topphammare-4.webp"
+          "type": "table",
+          "header": true,
+          "align": "center",
+          "caption": "Rango de diámetro de perforación recomendado (mm) para los equipos de la serie TE",
+          "rows": [
+            [
+              "Modelo",
+              "Diámetro de perforación (mm)",
+              "Peso (kg)",
+              "Caudal del martillo (L/min)",
+              "Caudal de rotación (L/min)"
+            ],
+            [
+              "TE1000",
+              "76.2 - 177.8",
+              "449",
+              "117",
+              "114–144"
+            ],
+            [
+              "TE760",
+              "52 - 127",
+              "240",
+              "95",
+              "57–95"
+            ],
+            [
+              "TE726",
+              "52 - 101",
+              "154",
+              "102",
+              "38–76"
+            ],
+            [
+              "TE360",
+              "35 - 76",
+              "107",
+              "76",
+              "38–76"
+            ],
+            [
+              "TE326",
+              "35 - 76",
+              "81",
+              "76",
+              "19–49"
+            ],
+            [
+              "TE260HT",
+              "35 - 64",
+              "82",
+              "68",
+              "38–76"
+            ],
+            [
+              "TE260",
+              "35 - 52",
+              "68",
+              "68",
+              "19–38"
+            ],
+            [
+              "TE160HT",
+              "32 - 52",
+              "78",
+              "61",
+              "38–76"
+            ],
+            [
+              "TE160",
+              "32 - 48",
+              "48",
+              "61",
+              "23–27"
+            ]
+          ]
         },
         {
-          "type": "cards",
+          "type": "modules",
+          "layout": "compact",
           "items": [
             {
-              "href": "/produkter/tei/topphammare/te160",
-              "label": "Läs mer",
-              "title": "Martillos perforadores",
+              "title": "TE160",
               "image": "/assets/img/tei-topphammare-te160.webp",
-              "width": 1422,
-              "height": 1422,
-              "alt": "Martillos perforadores – logotipo"
-            }
-          ]
-        },
-        {
-          "type": "text",
-          "html": "TE160"
-        },
-        {
-          "type": "cards",
-          "items": [
+              "alt": "TE160",
+              "href": "/produkter/tei/topphammare/te160"
+            },
             {
-              "href": "/produkter/tei/topphammare/te260",
-              "label": "Läs mer",
+              "title": "TE260",
               "image": "/assets/img/tei-topphammare-te260.webp",
-              "width": 1393,
-              "height": 1393,
-              "alt": "TE260 – logotipo"
-            }
-          ]
-        },
-        {
-          "type": "text",
-          "html": "TE260"
-        },
-        {
-          "type": "cards",
-          "items": [
+              "alt": "TE260",
+              "href": "/produkter/tei/topphammare/te260"
+            },
             {
-              "href": "/produkter/tei/topphammare/te326",
-              "label": "Läs mer",
+              "title": "TE326",
               "image": "/assets/img/tei-topphammare-te326.webp",
-              "width": 1280,
-              "height": 1114,
-              "alt": "TE326 – logotipo"
-            }
-          ]
-        },
-        {
-          "type": "text",
-          "html": "TE326"
-        },
-        {
-          "type": "cards",
-          "items": [
+              "alt": "TE326",
+              "href": "/produkter/tei/topphammare/te326"
+            },
             {
-              "href": "/produkter/tei/topphammare/te360",
-              "label": "Läs mer",
+              "title": "TE360",
               "image": "/assets/img/tei-topphammare-te360.webp",
-              "width": 1280,
-              "height": 1114,
-              "alt": "TE360 – logotipo"
-            }
-          ]
-        },
-        {
-          "type": "text",
-          "html": "TE360"
-        },
-        {
-          "type": "cards",
-          "items": [
+              "alt": "TE360",
+              "href": "/produkter/tei/topphammare/te360"
+            },
             {
-              "href": "/produkter/tei/topphammare/te726",
-              "label": "Läs mer",
+              "title": "TE726",
               "image": "/assets/img/tei-topphammare-te726.webp",
-              "width": 1528,
-              "height": 1325,
-              "alt": "TE726 – logotipo"
-            }
-          ]
-        },
-        {
-          "type": "text",
-          "html": "TE726"
-        },
-        {
-          "type": "cards",
-          "items": [
+              "alt": "TE726",
+              "href": "/produkter/tei/topphammare/te726"
+            },
             {
-              "href": "/produkter/tei/topphammare/te760",
-              "label": "Läs mer",
+              "title": "TE760",
               "image": "/assets/img/tei-topphammare-te760.webp",
-              "width": 1540,
-              "height": 1329,
-              "alt": "TE760 – logotipo"
-            }
-          ]
-        },
-        {
-          "type": "text",
-          "html": "TE760"
-        },
-        {
-          "type": "cards",
-          "items": [
+              "alt": "TE760",
+              "href": "/produkter/tei/topphammare/te760"
+            },
             {
-              "href": "/produkter/tei/topphammare/te1000",
-              "label": "Läs mer",
+              "title": "TE1000",
               "image": "/assets/img/tei-topphammare-te1000.webp",
-              "width": 1339,
-              "height": 1155,
-              "alt": "TE1000 – logotipo"
-            }
-          ]
-        },
-        {
-          "type": "text",
-          "html": "TE1000"
-        },
-        {
-          "type": "cards",
-          "items": [
+              "alt": "TE1000",
+              "href": "/produkter/tei/topphammare/te1000"
+            },
             {
-              "href": "/produkter/tei/topphammare/te160ht",
-              "label": "Läs mer",
+              "title": "TE160HT",
               "image": "/assets/img/tei-topphammare-te160ht.webp",
-              "width": 1078,
-              "height": 1078,
-              "alt": "TE160HT – logotipo"
-            }
-          ]
-        },
-        {
-          "type": "text",
-          "html": "TE160HT"
-        },
-        {
-          "type": "cards",
-          "items": [
+              "alt": "TE160HT",
+              "href": "/produkter/tei/topphammare/te160ht"
+            },
             {
-              "href": "/produkter/tei/topphammare/te260ht",
-              "label": "Läs mer",
-              "html": "TEI:s tekniska specifikationer tar hänsyn till en hydraulisk effektförlust på 40%. Dessa värden kan ändras utan förvarning.",
-              "text": "Las especificaciones técnicas de TEI tienen en cuenta una pérdida de potencia hidráulica del 40 %. Estos valores pueden modificarse sin previo aviso.",
+              "title": "TE260HT",
               "image": "/assets/img/tei-topphammare-te260ht.webp",
-              "width": 1084,
-              "height": 1084,
-              "alt": "TE260HT – logotipo"
+              "alt": "TE260HT",
+              "href": "/produkter/tei/topphammare/te260ht"
             }
           ]
         },
         {
           "type": "text",
-          "html": "TE260HT"
+          "html": "Las especificaciones técnicas de TEI tienen en cuenta una pérdida de potencia hidráulica del 40 %. Estos valores pueden modificarse sin previo aviso."
         },
         {
           "type": "text",
@@ -738,167 +675,146 @@
           "html": "<a href=\"/kontakta-oss\">Kontakt oss</a> for mer informasjon."
         },
         {
-          "type": "image",
-          "alt": "Topphammere – bilde 4",
-          "width": 1920,
-          "height": 1074,
-          "src": "/assets/img/tei-topphammare-4.webp"
+          "type": "table",
+          "header": true,
+          "align": "center",
+          "caption": "Anbefalt hullstørrelsesintervall (mm) for TE-seriens borraggregater",
+          "rows": [
+            [
+              "Modell",
+              "Hullstørrelse (mm)",
+              "Vekt (kg)",
+              "Hammerflow (L/min)",
+              "Rotasjonsflow (L/min)"
+            ],
+            [
+              "TE1000",
+              "76.2 - 177.8",
+              "449",
+              "117",
+              "114–144"
+            ],
+            [
+              "TE760",
+              "52 - 127",
+              "240",
+              "95",
+              "57–95"
+            ],
+            [
+              "TE726",
+              "52 - 101",
+              "154",
+              "102",
+              "38–76"
+            ],
+            [
+              "TE360",
+              "35 - 76",
+              "107",
+              "76",
+              "38–76"
+            ],
+            [
+              "TE326",
+              "35 - 76",
+              "81",
+              "76",
+              "19–49"
+            ],
+            [
+              "TE260HT",
+              "35 - 64",
+              "82",
+              "68",
+              "38–76"
+            ],
+            [
+              "TE260",
+              "35 - 52",
+              "68",
+              "68",
+              "19–38"
+            ],
+            [
+              "TE160HT",
+              "32 - 52",
+              "78",
+              "61",
+              "38–76"
+            ],
+            [
+              "TE160",
+              "32 - 48",
+              "48",
+              "61",
+              "23–27"
+            ]
+          ]
         },
         {
-          "type": "cards",
+          "type": "modules",
+          "layout": "compact",
           "items": [
             {
-              "href": "/produkter/tei/topphammare/te160",
-              "label": "Läs mer",
-              "title": "Topphammere",
+              "title": "TE160",
               "image": "/assets/img/tei-topphammare-te160.webp",
-              "width": 1422,
-              "height": 1422,
-              "alt": "Topphammere – logo"
-            }
-          ]
-        },
-        {
-          "type": "text",
-          "html": "TE160"
-        },
-        {
-          "type": "cards",
-          "items": [
+              "alt": "TE160",
+              "href": "/produkter/tei/topphammare/te160"
+            },
             {
-              "href": "/produkter/tei/topphammare/te260",
-              "label": "Läs mer",
+              "title": "TE260",
               "image": "/assets/img/tei-topphammare-te260.webp",
-              "width": 1393,
-              "height": 1393,
-              "alt": "TE260 – logo"
-            }
-          ]
-        },
-        {
-          "type": "text",
-          "html": "TE260"
-        },
-        {
-          "type": "cards",
-          "items": [
+              "alt": "TE260",
+              "href": "/produkter/tei/topphammare/te260"
+            },
             {
-              "href": "/produkter/tei/topphammare/te326",
-              "label": "Läs mer",
+              "title": "TE326",
               "image": "/assets/img/tei-topphammare-te326.webp",
-              "width": 1280,
-              "height": 1114,
-              "alt": "TE326 – logo"
-            }
-          ]
-        },
-        {
-          "type": "text",
-          "html": "TE326"
-        },
-        {
-          "type": "cards",
-          "items": [
+              "alt": "TE326",
+              "href": "/produkter/tei/topphammare/te326"
+            },
             {
-              "href": "/produkter/tei/topphammare/te360",
-              "label": "Läs mer",
+              "title": "TE360",
               "image": "/assets/img/tei-topphammare-te360.webp",
-              "width": 1280,
-              "height": 1114,
-              "alt": "TE360 – logo"
-            }
-          ]
-        },
-        {
-          "type": "text",
-          "html": "TE360"
-        },
-        {
-          "type": "cards",
-          "items": [
+              "alt": "TE360",
+              "href": "/produkter/tei/topphammare/te360"
+            },
             {
-              "href": "/produkter/tei/topphammare/te726",
-              "label": "Läs mer",
+              "title": "TE726",
               "image": "/assets/img/tei-topphammare-te726.webp",
-              "width": 1528,
-              "height": 1325,
-              "alt": "TE726 – logo"
-            }
-          ]
-        },
-        {
-          "type": "text",
-          "html": "TE726"
-        },
-        {
-          "type": "cards",
-          "items": [
+              "alt": "TE726",
+              "href": "/produkter/tei/topphammare/te726"
+            },
             {
-              "href": "/produkter/tei/topphammare/te760",
-              "label": "Läs mer",
+              "title": "TE760",
               "image": "/assets/img/tei-topphammare-te760.webp",
-              "width": 1540,
-              "height": 1329,
-              "alt": "TE760 – logo"
-            }
-          ]
-        },
-        {
-          "type": "text",
-          "html": "TE760"
-        },
-        {
-          "type": "cards",
-          "items": [
+              "alt": "TE760",
+              "href": "/produkter/tei/topphammare/te760"
+            },
             {
-              "href": "/produkter/tei/topphammare/te1000",
-              "label": "Läs mer",
+              "title": "TE1000",
               "image": "/assets/img/tei-topphammare-te1000.webp",
-              "width": 1339,
-              "height": 1155,
-              "alt": "TE1000 – logo"
-            }
-          ]
-        },
-        {
-          "type": "text",
-          "html": "TE1000"
-        },
-        {
-          "type": "cards",
-          "items": [
+              "alt": "TE1000",
+              "href": "/produkter/tei/topphammare/te1000"
+            },
             {
-              "href": "/produkter/tei/topphammare/te160ht",
-              "label": "Läs mer",
+              "title": "TE160HT",
               "image": "/assets/img/tei-topphammare-te160ht.webp",
-              "width": 1078,
-              "height": 1078,
-              "alt": "TE160HT – logo"
-            }
-          ]
-        },
-        {
-          "type": "text",
-          "html": "TE160HT"
-        },
-        {
-          "type": "cards",
-          "items": [
+              "alt": "TE160HT",
+              "href": "/produkter/tei/topphammare/te160ht"
+            },
             {
-              "href": "/produkter/tei/topphammare/te260ht",
-              "label": "Läs mer",
-              "html": "TEI:s tekniska specifikationer tar hänsyn till en hydraulisk effektförlust på 40%. Dessa värden kan ändras utan förvarning.",
-              "text": "TEIs tekniske spesifikasjoner tar hensyn til et hydraulisk effekttap på 40 %. Disse verdiene kan endres uten varsel.",
+              "title": "TE260HT",
               "image": "/assets/img/tei-topphammare-te260ht.webp",
-              "width": 1084,
-              "height": 1084,
-              "alt": "TE260HT – logo"
+              "alt": "TE260HT",
+              "href": "/produkter/tei/topphammare/te260ht"
             }
           ]
         },
         {
           "type": "text",
-          "html": "TE260HT"
+          "html": "TEIs tekniske spesifikasjoner tar hensyn til et hydraulisk effekttap på 40 %. Disse verdiene kan endres uten varsel."
         },
         {
           "type": "text",

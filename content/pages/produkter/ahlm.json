@@ -37,64 +37,31 @@
           "html": "Klicka dig vidare på den som är intressant nedan eller <a href=\"/kontakta-oss\">kontakta oss</a> för mer information."
         },
         {
-          "type": "cards",
+          "type": "modules",
+          "layout": "cards",
           "items": [
             {
-              "href": "/produkter/ahlm/st-5",
-              "label": "Läs mer",
-              "html": "Säcktömmare med transportskruv som rymmer 1600 liter",
-              "text": "Säcktömmare med transportskruv som rymmer 1600 liter",
+              "title": "Torrbruksilo ST-5",
               "image": "/assets/img/ahlm-st-5.webp",
-              "width": 443,
-              "height": 443,
-              "alt": "Silon – logotyp"
-            }
-          ]
-        },
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "Torrbruksilo ST-5"
-        },
-        {
-          "type": "cards",
-          "items": [
+              "alt": "Torrbruksilo ST-5",
+              "text": "Säcktömmare med transportskruv som rymmer 1600 liter",
+              "href": "/produkter/ahlm/st-5"
+            },
             {
-              "href": "/produkter/ahlm/tb-10",
-              "label": "Läs mer",
-              "html": "Torrbrukssilo med transportskruv för ca. 10 ton bruk",
-              "text": "Torrbrukssilo med transportskruv för ca. 10 ton bruk",
+              "title": "Torrbrukssilo TB-10",
               "image": "/assets/img/ahlm-tb-10.webp",
-              "width": 1920,
-              "height": 1920,
-              "alt": "TB-10 – logotyp"
-            }
-          ]
-        },
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "Torrbrukssilo TB-10"
-        },
-        {
-          "type": "cards",
-          "items": [
+              "alt": "Torrbrukssilo TB-10",
+              "text": "Torrbrukssilo med transportskruv för ca. 10 ton bruk",
+              "href": "/produkter/ahlm/tb-10"
+            },
             {
-              "href": "/produkter/ahlm/st-1",
-              "label": "Läs mer",
-              "html": "Modul för placering ovanpå TB-10 för säcktömning",
-              "text": "Modul för placering ovanpå TB-10 för säcktömning",
+              "title": "Säcktömmare ST-1",
               "image": "/assets/img/ahlm-st-1.webp",
-              "width": 1920,
-              "height": 1920,
-              "alt": "Säcktömmare ST-1 – logotyp"
+              "alt": "Säcktömmare ST-1",
+              "text": "Modul för placering ovanpå TB-10 för säcktömning",
+              "href": "/produkter/ahlm/st-1"
             }
           ]
-        },
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "Säcktömmare ST-1"
         }
       ]
     },
@@ -127,64 +94,31 @@
           "html": "Click through to the one you are interested in below or <a href=\"/kontakta-oss\">contact us</a> for more information."
         },
         {
-          "type": "cards",
+          "type": "modules",
+          "layout": "cards",
           "items": [
             {
-              "href": "/produkter/ahlm/st-5",
-              "label": "Läs mer",
-              "html": "Säcktömmare med transportskruv som rymmer 1600 liter",
-              "text": "Bag emptying station with conveyor screw, 1,600 litre capacity",
+              "title": "Dry-mix silo ST-5",
               "image": "/assets/img/ahlm-st-5.webp",
-              "width": 443,
-              "height": 443,
-              "alt": "Silo – logo"
-            }
-          ]
-        },
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "Dry-mix silo ST-5"
-        },
-        {
-          "type": "cards",
-          "items": [
+              "alt": "Dry-mix silo ST-5",
+              "text": "Bag emptying station with conveyor screw, 1,600 litre capacity",
+              "href": "/produkter/ahlm/st-5"
+            },
             {
-              "href": "/produkter/ahlm/tb-10",
-              "label": "Läs mer",
-              "html": "Torrbrukssilo med transportskruv för ca. 10 ton bruk",
-              "text": "Dry-mix silo with conveyor screw for approx. 10 tonnes of mortar",
+              "title": "Dry-mix silo TB-10",
               "image": "/assets/img/ahlm-tb-10.webp",
-              "width": 1920,
-              "height": 1920,
-              "alt": "TB-10 – logo"
-            }
-          ]
-        },
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "Dry-mix silo TB-10"
-        },
-        {
-          "type": "cards",
-          "items": [
+              "alt": "Dry-mix silo TB-10",
+              "text": "Dry-mix silo with conveyor screw for approx. 10 tonnes of mortar",
+              "href": "/produkter/ahlm/tb-10"
+            },
             {
-              "href": "/produkter/ahlm/st-1",
-              "label": "Läs mer",
-              "html": "Modul för placering ovanpå TB-10 för säcktömning",
-              "text": "Module for mounting on top of TB-10 for bag emptying",
+              "title": "Bag emptying station ST-1",
               "image": "/assets/img/ahlm-st-1.webp",
-              "width": 1920,
-              "height": 1920,
-              "alt": "Bag emptying station ST-1 – logo"
+              "alt": "Bag emptying station ST-1",
+              "text": "Module for mounting on top of TB-10 for bag emptying",
+              "href": "/produkter/ahlm/st-1"
             }
           ]
-        },
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "Bag emptying station ST-1"
         }
       ],
       "published": true
@@ -218,64 +152,31 @@
           "html": "Haga clic en el que le interese a continuación o <a href=\"/kontakta-oss\">contáctenos</a> para más información."
         },
         {
-          "type": "cards",
+          "type": "modules",
+          "layout": "cards",
           "items": [
             {
-              "href": "/produkter/ahlm/st-5",
-              "label": "Läs mer",
-              "html": "Säcktömmare med transportskruv som rymmer 1600 liter",
-              "text": "Estación de vaciado de sacos con tornillo transportador, de 1600 litros",
+              "title": "Silo para mortero seco ST-5",
               "image": "/assets/img/ahlm-st-5.webp",
-              "width": 443,
-              "height": 443,
-              "alt": "Silo – logotipo"
-            }
-          ]
-        },
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "Silo para mortero seco ST-5"
-        },
-        {
-          "type": "cards",
-          "items": [
+              "alt": "Silo para mortero seco ST-5",
+              "text": "Estación de vaciado de sacos con tornillo transportador, de 1600 litros",
+              "href": "/produkter/ahlm/st-5"
+            },
             {
-              "href": "/produkter/ahlm/tb-10",
-              "label": "Läs mer",
-              "html": "Torrbrukssilo med transportskruv för ca. 10 ton bruk",
-              "text": "Silo para mortero seco con tornillo transportador para aprox. 10 toneladas de mortero",
+              "title": "Silo para mortero seco TB-10",
               "image": "/assets/img/ahlm-tb-10.webp",
-              "width": 1920,
-              "height": 1920,
-              "alt": "TB-10 – logotipo"
-            }
-          ]
-        },
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "Silo para mortero seco TB-10"
-        },
-        {
-          "type": "cards",
-          "items": [
+              "alt": "Silo para mortero seco TB-10",
+              "text": "Silo para mortero seco con tornillo transportador para aprox. 10 toneladas de mortero",
+              "href": "/produkter/ahlm/tb-10"
+            },
             {
-              "href": "/produkter/ahlm/st-1",
-              "label": "Läs mer",
-              "html": "Modul för placering ovanpå TB-10 för säcktömning",
-              "text": "Módulo para colocar sobre el TB-10 para el vaciado de sacos",
+              "title": "Estación de vaciado de sacos ST-1",
               "image": "/assets/img/ahlm-st-1.webp",
-              "width": 1920,
-              "height": 1920,
-              "alt": "Estación de vaciado de sacos ST-1 – logotipo"
+              "alt": "Estación de vaciado de sacos ST-1",
+              "text": "Módulo para colocar sobre el TB-10 para el vaciado de sacos",
+              "href": "/produkter/ahlm/st-1"
             }
           ]
-        },
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "Estación de vaciado de sacos ST-1"
         }
       ],
       "published": true
@@ -309,64 +210,31 @@
           "html": "Klikk deg videre til den som er interessant nedenfor eller <a href=\"/kontakta-oss\">kontakt oss</a> for mer informasjon."
         },
         {
-          "type": "cards",
+          "type": "modules",
+          "layout": "cards",
           "items": [
             {
-              "href": "/produkter/ahlm/st-5",
-              "label": "Läs mer",
-              "html": "Säcktömmare med transportskruv som rymmer 1600 liter",
-              "text": "Sekketømmer med transportskrue som rommer 1 600 liter",
+              "title": "Tørrmørtelsilo ST-5",
               "image": "/assets/img/ahlm-st-5.webp",
-              "width": 443,
-              "height": 443,
-              "alt": "Silo – logo"
-            }
-          ]
-        },
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "Tørrmørtelsilo ST-5"
-        },
-        {
-          "type": "cards",
-          "items": [
+              "alt": "Tørrmørtelsilo ST-5",
+              "text": "Sekketømmer med transportskrue som rommer 1 600 liter",
+              "href": "/produkter/ahlm/st-5"
+            },
             {
-              "href": "/produkter/ahlm/tb-10",
-              "label": "Läs mer",
-              "html": "Torrbrukssilo med transportskruv för ca. 10 ton bruk",
-              "text": "Tørrmørtelsilo med transportskrue for ca. 10 tonn mørtel",
+              "title": "Tørrmørtelsilo TB-10",
               "image": "/assets/img/ahlm-tb-10.webp",
-              "width": 1920,
-              "height": 1920,
-              "alt": "TB-10 – logo"
-            }
-          ]
-        },
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "Tørrmørtelsilo TB-10"
-        },
-        {
-          "type": "cards",
-          "items": [
+              "alt": "Tørrmørtelsilo TB-10",
+              "text": "Tørrmørtelsilo med transportskrue for ca. 10 tonn mørtel",
+              "href": "/produkter/ahlm/tb-10"
+            },
             {
-              "href": "/produkter/ahlm/st-1",
-              "label": "Läs mer",
-              "html": "Modul för placering ovanpå TB-10 för säcktömning",
-              "text": "Modul for plassering oppå TB-10 for sekketømming",
+              "title": "Sekketømmer ST-1",
               "image": "/assets/img/ahlm-st-1.webp",
-              "width": 1920,
-              "height": 1920,
-              "alt": "Sekketømmer ST-1 – logo"
+              "alt": "Sekketømmer ST-1",
+              "text": "Modul for plassering oppå TB-10 for sekketømming",
+              "href": "/produkter/ahlm/st-1"
             }
           ]
-        },
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "Sekketømmer ST-1"
         }
       ],
       "published": true

@@ -53,6 +53,7 @@ function blockIsEmpty(b) {
     case "chips": case "list": return !(b.items || []).some(Boolean);
     case "cta": return !b.title;
     case "carousel": return !(b.items || []).some((x) => x && x.src);
+    case "modules": return !(b.items || []).length;
     case "html": return !(b.html || "").trim();
     case "columns": return !((b.left || []).length || (b.right || []).length);
     case "heading": case "text": return false;
@@ -171,15 +172,33 @@ function renderVideo(ctx, b) {
     `<noscript><a href="${esc(watch)}" rel="noopener">${esc(ctx.ui.video_watch || "Titta på YouTube")}</a></noscript></figure>`;
 }
 
+// Data table. rows[0] is the header row (unless header:false). Optional `groups` [{text, span}] adds a banded
+// header row above it (column groups such as "Hollow bar drilling"); `caption` is the table's title.
 function renderTable(ctx, b) {
   const rows = b.rows || [];
   if (!rows.length) return "";
   const head = b.header !== false ? rows[0] : null;
   const body = head ? rows.slice(1) : rows;
   const off = head ? 1 : 0;
-  const th = head ? `<thead><tr>${head.map((c, x) => `<th scope="col"${editFld(ctx, `rows.0.${x}`)}>${esc(c)}</th>`).join("")}</tr></thead>` : "";
-  const tb = `<tbody>${body.map((r, y) => `<tr>${r.map((c, i) => (i === 0 ? `<th scope="row"${editFld(ctx, `rows.${y + off}.${i}`)}>${esc(c)}</th>` : `<td${editFld(ctx, `rows.${y + off}.${i}`)}>${esc(c)}</td>`)).join("")}</tr>`).join("")}</tbody>`;
-  return `<div class="table-wrap" tabindex="0" role="region" aria-label="${esc(b.caption || ctx.ui.table_label || "Tabell")}"><table>${b.caption ? `<caption>${esc(b.caption)}</caption>` : ""}${th}${tb}</table></div>`;
+  const groups = (Array.isArray(b.groups) ? b.groups : []).filter((g) => g && Number(g.span) > 0);
+  const colGroup = [];
+  groups.forEach((g, gi) => { for (let k = 0; k < Number(g.span); k++) colGroup.push(gi); });
+  const tone = (i) => (colGroup[i] === undefined ? "" : ` class="g${colGroup[i] % 4}${colGroup[i - 1] !== colGroup[i] ? " gs" : ""}"`);
+  const grp = groups.length
+    ? `<tr class="tbl__groups">${groups.map((g, gi) => `<th scope="colgroup" colspan="${Number(g.span)}" class="g${gi % 4}${gi ? " gs" : ""}">${esc(g.text || "")}</th>`).join("")}</tr>`
+    : "";
+  const th = head || grp
+    ? `<thead>${grp}${head ? `<tr class="tbl__cols">${head.map((c, x) => `<th scope="col"${tone(x)}${editFld(ctx, `rows.0.${x}`)}>${esc(c)}</th>`).join("")}</tr>` : ""}</thead>`
+    : "";
+  const tb = `<tbody>${body.map((r, y) => `<tr>${r.map((c, i) => (i === 0
+    ? `<th scope="row"${editFld(ctx, `rows.${y + off}.${i}`)}>${esc(c)}</th>`
+    : `<td${tone(i)}${editFld(ctx, `rows.${y + off}.${i}`)}>${esc(c)}</td>`)).join("")}</tr>`).join("")}</tbody>`;
+  // short numeric cells read better centred; text-heavy tables stay left-aligned
+  const cells = body.flatMap((r) => r.slice(1));
+  const avg = cells.length ? cells.reduce((n, c) => n + String(c).length, 0) / cells.length : 0;
+  const centre = b.align === "center" || (b.align !== "left" && avg <= 16);
+  const cls = ["table-wrap", groups.length ? "table-wrap--groups" : "", centre ? "table-wrap--center" : ""].filter(Boolean).join(" ");
+  return `<div class="${cls}" tabindex="0" role="region" aria-label="${esc(b.caption || ctx.ui.table_label || "Tabell")}"><table>${b.caption ? `<caption>${esc(b.caption)}</caption>` : ""}${th}${tb}</table></div>`;
 }
 
 // Technical data sheet: intro + one table per group (label | metric | imperial)
@@ -269,6 +288,29 @@ const SOCIAL_ICON = {
   instagram: '<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#fff" stroke-width="1.9" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="4.5"/><circle cx="12" cy="12" r="3.6"/><circle cx="16.8" cy="7.2" r=".7" fill="#fff"/></svg>',
   linkedin: '<svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="#fff" d="M5.2 9.4h3.1V19H5.2zM6.8 4.6a1.8 1.8 0 1 1 0 3.6 1.8 1.8 0 0 1 0-3.6zM10.4 9.4h3v1.3c.5-.8 1.5-1.5 3-1.5 3.1 0 3.7 2 3.7 4.700V19H17v-4.600c0-1.100 0-2.500-1.500-2.500s-1.800 1.200-1.800 2.400V19h-3.300z"/></svg>'
 };
+// A row of small "module" cards side by side: picture, title, short text, bullet points, link and optional brochure.
+// layout "cards": picture on top, up to three per row. layout "compact": picture left, text right, two per row.
+function renderModules(ctx, b) {
+  const items = (b.items || []).filter((it) => it && !(it.href && ctx.pages && ctx.pages.has(it.href) && !shown(ctx, it.href)));
+  if (!items.length) return "";
+  const layout = b.layout === "compact" ? "compact" : "cards";
+  const cols = Math.max(1, Math.min(4, Number(b.columns) || (layout === "compact" ? 2 : Math.min(items.length, 3))));
+  const lvl = ctx._cardLevel || 3;
+  const more = esc(ctx.ui.read_more || "Läs mer");
+  const li = items.map((it, i) => {
+    const href = it.href ? (/^https?:/.test(it.href) ? it.href : localizeHref(ctx, it.href)) : "";
+    const img = it.image ? imgTag(ctx, it.image, it.alt || it.title || "", { cls: "module__img", sizes: layout === "compact" ? "180px" : "(min-width: 900px) 330px, 90vw" }) : "";
+    const media = img ? (href ? `<a class="module__media" href="${esc(href)}" tabindex="-1" aria-hidden="true">${img}</a>` : `<span class="module__media">${img}</span>`) : "";
+    const title = it.title ? `<h${lvl} class="module__title"${editFld(ctx, `items.${i}.title`)}>${href ? `<a href="${esc(href)}">${esc(it.title)}</a>` : esc(it.title)}</h${lvl}>` : "";
+    const text = it.text || ctx.edit ? `<p class="module__text"${editFld(ctx, `items.${i}.text`)}>${esc(it.text || "")}</p>` : "";
+    const bullets = (it.bullets || []).length ? `<ul class="module__list">${it.bullets.map((x) => `<li>${ctx.edit ? esc(x) : localizeHtml(ctx, x)}</li>`).join("")}</ul>` : "";
+    const doc = it.doc && it.doc.href ? `<a class="btn btn--sm btn--ghost" href="${esc(localizeHref(ctx, it.doc.href))}" target="_blank" rel="noopener">${ICON.down}<span>${esc(it.doc.text || ctx.ui.documents || "PDF")}</span></a>` : "";
+    const go = href ? `<a class="btn btn--sm" href="${esc(href)}">${more}${ICON.arrow}</a>` : "";
+    return `<li class="module">${media}<div class="module__body">${title}${text}${bullets}${go || doc ? `<div class="module__actions">${go}${doc}</div>` : ""}</div></li>`;
+  }).join("");
+  return `<ul class="modules modules--${layout}" style="--cols:${cols}">${li}</ul>`;
+}
+
 // Image carousel. Native scroll-snap: swipe, trackpad and keyboard work without JavaScript; site.js adds arrows, dots
 // and the optional autoplay (never with prefers-reduced-motion, stops as soon as the visitor touches it).
 function renderCarousel(ctx, items, o = {}) {
@@ -372,6 +414,7 @@ function renderBlockInner(ctx, b) {
     case "social": return renderSocial(ctx);
     case "quote": return renderQuote(ctx);
     case "carousel": return renderCarousel(ctx, b.items, b);
+    case "modules": return renderModules(ctx, b);
     case "chips": return renderChips(ctx, b);
     case "cta": return renderCta(ctx, b);
     case "html": return b.html || "";
@@ -711,7 +754,7 @@ function productQuoteCta(ctx, page, t, name) {
   if (!ctx.pages.has("/kontakta-oss") || !shown(ctx, "/kontakta-oss")) return "";
   if (flatBlocks(t.blocks || []).some((b) => b.type === "cta" || b.type === "quote")) return "";
   const u = ctx.ui;
-  if (t.title && t.title !== name) name = `${t.title} – ${name}`; // e.g. "ST-5 – Silon"
+  if (t.title && t.title !== name && t.title.length <= 12) name = `${t.title} – ${name}`; // short model code + name, e.g. "ST-5 – Silon"
   const href = localizeHref(ctx, "/kontakta-oss") + "?produkt=" + encodeURIComponent(name) + "#offert";
   const title = String(u.quote_cta_title || "Vill du ha offert på {name}?").replace("{name}", name);
   return `<section class="cta"><div class="container cta__inner"><div class="cta__text"><h2>${esc(title)}</h2><p>${esc(u.quote_cta_text || "Berätta kort vad du behöver, så återkommer vi med pris och leveranstid.")}</p></div>` +

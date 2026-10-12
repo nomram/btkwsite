@@ -32,40 +32,22 @@
           "driveId": "148ne9OMuPCzVDbmhU6CGsrj5TFyFTViG"
         },
         {
-          "type": "cards",
+          "type": "modules",
+          "layout": "cards",
           "items": [
             {
-              "href": "/produkter/haeny/manuella-pumpar",
-              "label": "Läs mer",
+              "title": "Manuella pumpar",
               "image": "/assets/img/haeny-manuella-pumpar.webp",
-              "width": 741,
-              "height": 871,
-              "alt": "Häny - Manuella Betongpumpar (IC) – logotyp"
-            }
-          ]
-        },
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "Manuella pumpar"
-        },
-        {
-          "type": "cards",
-          "items": [
+              "alt": "Manuella pumpar",
+              "href": "/produkter/haeny/manuella-pumpar"
+            },
             {
-              "href": "/produkter/haeny/automatiska-pumpar",
-              "label": "Läs mer",
+              "title": "Automatiska pumpar",
               "image": "/assets/img/haeny-automatiska-pumpar.webp",
-              "width": 704,
-              "height": 827,
-              "alt": "Häny - Helautomatiska pumpar (FAIC) – logotyp"
+              "alt": "Automatiska pumpar",
+              "href": "/produkter/haeny/automatiska-pumpar"
             }
           ]
-        },
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "Automatiska pumpar"
         },
         {
           "type": "text",
@@ -164,6 +146,11 @@
           "html": "Inbyggd flödesreglering tillåter inställning av maxflöde, vilket möjliggör långsam injektering i mjuka markförhållanden utan segregation eller nya hålrum. Tillsammans med tryckkontrollen kan pumparna även användas för permeabilitetstester."
         },
         {
+          "type": "heading",
+          "level": 2,
+          "text": "Silon"
+        },
+        {
           "type": "cards",
           "items": [
             {
@@ -177,11 +164,6 @@
               "alt": "Silon – logotyp"
             }
           ]
-        },
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "Silon"
         },
         {
           "type": "image",
@@ -216,40 +198,22 @@
           "driveId": "148ne9OMuPCzVDbmhU6CGsrj5TFyFTViG"
         },
         {
-          "type": "cards",
+          "type": "modules",
+          "layout": "cards",
           "items": [
             {
-              "href": "/produkter/haeny/manuella-pumpar",
-              "label": "Läs mer",
+              "title": "Manual pumps",
               "image": "/assets/img/haeny-manuella-pumpar.webp",
-              "width": 741,
-              "height": 871,
-              "alt": "Häny – Manual concrete pumps (IC) – logo"
-            }
-          ]
-        },
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "Manual pumps"
-        },
-        {
-          "type": "cards",
-          "items": [
+              "alt": "Manual pumps",
+              "href": "/produkter/haeny/manuella-pumpar"
+            },
             {
-              "href": "/produkter/haeny/automatiska-pumpar",
-              "label": "Läs mer",
+              "title": "Automatic pumps",
               "image": "/assets/img/haeny-automatiska-pumpar.webp",
-              "width": 704,
-              "height": 827,
-              "alt": "Häny – Fully automatic pumps (FAIC) – logo"
+              "alt": "Automatic pumps",
+              "href": "/produkter/haeny/automatiska-pumpar"
             }
           ]
-        },
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "Automatic pumps"
         },
         {
           "type": "text",
@@ -348,6 +312,11 @@
           "html": "Built-in flow regulation allows the maximum flow to be set, which enables slow grouting in soft ground conditions without segregation or new voids. Together with the pressure control, the pumps can also be used for permeability tests."
         },
         {
+          "type": "heading",
+          "level": 2,
+          "text": "Silo"
+        },
+        {
           "type": "cards",
           "items": [
             {
@@ -361,11 +330,6 @@
               "alt": "Silo – logo"
             }
           ]
-        },
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "Silo"
         },
         {
           "type": "image",
@@ -401,40 +365,22 @@
           "driveId": "148ne9OMuPCzVDbmhU6CGsrj5TFyFTViG"
         },
         {
-          "type": "cards",
+          "type": "modules",
+          "layout": "cards",
           "items": [
             {
-              "href": "/produkter/haeny/manuella-pumpar",
-              "label": "Läs mer",
+              "title": "Bombas manuales",
               "image": "/assets/img/haeny-manuella-pumpar.webp",
-              "width": 741,
-              "height": 871,
-              "alt": "Häny – Bombas de hormigón manuales (IC) – logotipo"
-            }
-          ]
-        },
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "Bombas manuales"
-        },
-        {
-          "type": "cards",
-          "items": [
+              "alt": "Bombas manuales",
+              "href": "/produkter/haeny/manuella-pumpar"
+            },
             {
-              "href": "/produkter/haeny/automatiska-pumpar",
-              "label": "Läs mer",
+              "title": "Bombas automáticas",
               "image": "/assets/img/haeny-automatiska-pumpar.webp",
-              "width": 704,
-              "height": 827,
-              "alt": "Häny – Bombas totalmente automáticas (FAIC) – logotipo"
+              "alt": "Bombas automáticas",
+              "href": "/produkter/haeny/automatiska-pumpar"
             }
           ]
-        },
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "Bombas automáticas"
         },
         {
           "type": "text",
@@ -533,6 +479,11 @@
           "html": "La regulación de caudal integrada permite ajustar el caudal máximo, lo que posibilita una inyección lenta en terrenos blandos sin segregación ni nuevos huecos. Junto con el control de presión, las bombas también pueden utilizarse para ensayos de permeabilidad."
         },
         {
+          "type": "heading",
+          "level": 2,
+          "text": "Silo"
+        },
+        {
           "type": "cards",
           "items": [
             {
@@ -546,11 +497,6 @@
               "alt": "Silo – logotipo"
             }
           ]
-        },
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "Silo"
         },
         {
           "type": "image",
@@ -586,40 +532,22 @@
           "driveId": "148ne9OMuPCzVDbmhU6CGsrj5TFyFTViG"
         },
         {
-          "type": "cards",
+          "type": "modules",
+          "layout": "cards",
           "items": [
             {
-              "href": "/produkter/haeny/manuella-pumpar",
-              "label": "Läs mer",
+              "title": "Manuelle pumper",
               "image": "/assets/img/haeny-manuella-pumpar.webp",
-              "width": 741,
-              "height": 871,
-              "alt": "Häny – Manuelle betongpumper (IC) – logo"
-            }
-          ]
-        },
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "Manuelle pumper"
-        },
-        {
-          "type": "cards",
-          "items": [
+              "alt": "Manuelle pumper",
+              "href": "/produkter/haeny/manuella-pumpar"
+            },
             {
-              "href": "/produkter/haeny/automatiska-pumpar",
-              "label": "Läs mer",
+              "title": "Automatiske pumper",
               "image": "/assets/img/haeny-automatiska-pumpar.webp",
-              "width": 704,
-              "height": 827,
-              "alt": "Häny – Helautomatiske pumper (FAIC) – logo"
+              "alt": "Automatiske pumper",
+              "href": "/produkter/haeny/automatiska-pumpar"
             }
           ]
-        },
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "Automatiske pumper"
         },
         {
           "type": "text",
@@ -718,6 +646,11 @@
           "html": "Innebygd flytregulering gjør det mulig å stille inn maksimal flyt, noe som muliggjør langsom injisering i myke grunnforhold uten segregering eller nye hulrom. Sammen med trykkontrollen kan pumpene også brukes til permeabilitetstester."
         },
         {
+          "type": "heading",
+          "level": 2,
+          "text": "Silo"
+        },
+        {
           "type": "cards",
           "items": [
             {
@@ -731,11 +664,6 @@
               "alt": "Silo – logo"
             }
           ]
-        },
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "Silo"
         },
         {
           "type": "image",

@@ -41,52 +41,34 @@
           "html": "Navigera vidare till rigg av intresse för att se vilket passar era ändamål bäst. <a href=\"/kontakta-oss\">Kontakta oss</a> för mer information."
         },
         {
-          "type": "cards",
+          "type": "modules",
+          "layout": "cards",
           "items": [
             {
-              "href": "/produkter/tei/borriggar/td75",
-              "label": "Läs mer",
               "title": "TD75",
               "image": "/assets/img/tei-borriggar-td75.webp",
-              "width": 768,
-              "height": 768,
-              "alt": "TD75 – logotyp"
-            }
-          ]
-        },
-        {
-          "type": "list",
-          "ordered": false,
-          "items": [
-            "Kläm- och brytare",
-            "RDS550 rotationshammare och stötdämpare",
-            "180° sidledsrörelse av masten",
-            "56 kW (75HP) elektrisk motor"
-          ]
-        },
-        {
-          "type": "cards",
-          "items": [
+              "alt": "TD75",
+              "href": "/produkter/tei/borriggar/td75",
+              "bullets": [
+                "Kläm- och brytare",
+                "RDS550 rotationshammare och stötdämpare",
+                "180° sidledsrörelse av masten",
+                "56 kW (75HP) elektrisk motor"
+              ]
+            },
             {
-              "href": "/produkter/tei/borriggar/td100",
-              "label": "Läs mer",
               "title": "TD100",
               "image": "/assets/img/tei-borriggar-td100.webp",
-              "width": 1522,
-              "height": 1522,
-              "alt": "TD100 – logotyp"
+              "alt": "TD100",
+              "href": "/produkter/tei/borriggar/td100",
+              "bullets": [
+                "Kläm- och brytare",
+                "RDS1004 rotationshammare med 13 569 Nm vridmoment",
+                "120° sidledsrörelse av masten",
+                "75 kW (100HP) elektrisk motor",
+                "Fyra stabilisatorlyftar"
+              ]
             }
-          ]
-        },
-        {
-          "type": "list",
-          "ordered": false,
-          "items": [
-            "Kläm- och brytare",
-            "RDS1004 rotationshammare med 13 569 Nm vridmoment",
-            "120° sidledsrörelse av masten",
-            "75 kW (100HP) elektrisk motor",
-            "Fyra stabilisatorlyftar"
           ]
         },
         {
@@ -129,11 +111,56 @@
           ]
         },
         {
-          "type": "image",
-          "alt": "Borriggar – bild 3",
-          "width": 841,
-          "height": 242,
-          "src": "/assets/img/tei-borriggar-3.webp"
+          "type": "table",
+          "header": true,
+          "align": "left",
+          "rows": [
+            [
+              "Modell",
+              "Maskinvikt (ton)",
+              "Vikt (kg)",
+              "Borrslag (m)",
+              "Dragkraft (kN)",
+              "Möjliga borraggregat",
+              "Förkortning av"
+            ],
+            [
+              "MME",
+              "5 - 12",
+              "488",
+              "3.20",
+              "6.5",
+              "TE260, TE260HT, TE326 & RDS250",
+              "Fäste för mini- och små grävmaskiner"
+            ],
+            [
+              "MEM",
+              "12 - 16",
+              "1089",
+              "3.35",
+              "11.1",
+              "TE360, TE326 & RDS350",
+              "Fäste för medeltunga grävmaskiner"
+            ],
+            [
+              "HEM",
+              "16 - 20",
+              "1440 - 2600",
+              "3.60",
+              "33.3",
+              "TE360, TE326, TE760 & RDS350, RDS550",
+              "Fäste för hydrauliska grävmaskiner"
+            ],
+            [
+              "HEMH",
+              "25 - 30",
+              "2800 - 3100",
+              "3.6 - 3.9",
+              "53",
+              "TE726, TE760, TE1000 & RDS550, RDS1004",
+              "Fäste för tunga hydrauliska grävmaskiner"
+            ]
+          ]
         },
         {
           "type": "text",
@@ -174,52 +201,34 @@
           "html": "Navigate on to the rig of interest to see which best suits your purposes. <a href=\"/kontakta-oss\">Contact us</a> for more information."
         },
         {
-          "type": "cards",
+          "type": "modules",
+          "layout": "cards",
           "items": [
             {
-              "href": "/produkter/tei/borriggar/td75",
-              "label": "Läs mer",
               "title": "TD75",
               "image": "/assets/img/tei-borriggar-td75.webp",
-              "width": 768,
-              "height": 768,
-              "alt": "TD75 – logo"
-            }
-          ]
-        },
-        {
-          "type": "list",
-          "ordered": false,
-          "items": [
-            "Clamp and breakout",
-            "RDS550 rotary head and shock absorber",
-            "180° sideways movement of the mast",
-            "56 kW (75 HP) electric motor"
-          ]
-        },
-        {
-          "type": "cards",
-          "items": [
+              "alt": "TD75",
+              "href": "/produkter/tei/borriggar/td75",
+              "bullets": [
+                "Clamp and breakout",
+                "RDS550 rotary head and shock absorber",
+                "180° sideways movement of the mast",
+                "56 kW (75 HP) electric motor"
+              ]
+            },
             {
-              "href": "/produkter/tei/borriggar/td100",
-              "label": "Läs mer",
               "title": "TD100",
               "image": "/assets/img/tei-borriggar-td100.webp",
-              "width": 1522,
-              "height": 1522,
-              "alt": "TD100 – logo"
+              "alt": "TD100",
+              "href": "/produkter/tei/borriggar/td100",
+              "bullets": [
+                "Clamp and breakout",
+                "RDS1004 rotary head with 13,569 Nm torque",
+                "120° sideways movement of the mast",
+                "75 kW (100 HP) electric motor",
+                "Four stabiliser jacks"
+              ]
             }
-          ]
-        },
-        {
-          "type": "list",
-          "ordered": false,
-          "items": [
-            "Clamp and breakout",
-            "RDS1004 rotary head with 13,569 Nm torque",
-            "120° sideways movement of the mast",
-            "75 kW (100 HP) electric motor",
-            "Four stabiliser jacks"
           ]
         },
         {
@@ -262,11 +271,56 @@
           ]
         },
         {
-          "type": "image",
-          "alt": "Drill rigs – image 3",
-          "width": 841,
-          "height": 242,
-          "src": "/assets/img/tei-borriggar-3.webp"
+          "type": "table",
+          "header": true,
+          "align": "left",
+          "rows": [
+            [
+              "Model",
+              "Machine weight (ton)",
+              "Weight (kg)",
+              "Drill travel (m)",
+              "Pullback force (kN)",
+              "Possible drills",
+              "Abbreviation"
+            ],
+            [
+              "MME",
+              "5 - 12",
+              "488",
+              "3.20",
+              "6.5",
+              "TE260, TE260HT, TE326 & RDS250",
+              "Mini and Small Excavator Mount"
+            ],
+            [
+              "MEM",
+              "12 - 16",
+              "1089",
+              "3.35",
+              "11.1",
+              "TE360, TE326 & RDS350",
+              "Mid-weight Excavator Mount"
+            ],
+            [
+              "HEM",
+              "16 - 20",
+              "1440 - 2600",
+              "3.60",
+              "33.3",
+              "TE360, TE326, TE760 & RDS350, RDS550",
+              "Hydraulic Excavator Mount"
+            ],
+            [
+              "HEMH",
+              "25 - 30",
+              "2800 - 3100",
+              "3.6 - 3.9",
+              "53",
+              "TE726, TE760, TE1000 & RDS550, RDS1004",
+              "Hydraulic Excavator Mount Heavy"
+            ]
+          ]
         },
         {
           "type": "text",
@@ -308,52 +362,34 @@
           "html": "Acceda al equipo que le interese para ver cuál se adapta mejor a sus necesidades. <a href=\"/kontakta-oss\">Contáctenos</a> para más información."
         },
         {
-          "type": "cards",
+          "type": "modules",
+          "layout": "cards",
           "items": [
             {
-              "href": "/produkter/tei/borriggar/td75",
-              "label": "Läs mer",
               "title": "TD75",
               "image": "/assets/img/tei-borriggar-td75.webp",
-              "width": 768,
-              "height": 768,
-              "alt": "TD75 – logotipo"
-            }
-          ]
-        },
-        {
-          "type": "list",
-          "ordered": false,
-          "items": [
-            "Mordaza y llave de desenrosque",
-            "Cabezal de rotación RDS550 y amortiguador",
-            "Desplazamiento lateral de 180° del mástil",
-            "Motor eléctrico de 56 kW (75 HP)"
-          ]
-        },
-        {
-          "type": "cards",
-          "items": [
+              "alt": "TD75",
+              "href": "/produkter/tei/borriggar/td75",
+              "bullets": [
+                "Mordaza y llave de desenrosque",
+                "Cabezal de rotación RDS550 y amortiguador",
+                "Desplazamiento lateral de 180° del mástil",
+                "Motor eléctrico de 56 kW (75 HP)"
+              ]
+            },
             {
-              "href": "/produkter/tei/borriggar/td100",
-              "label": "Läs mer",
               "title": "TD100",
               "image": "/assets/img/tei-borriggar-td100.webp",
-              "width": 1522,
-              "height": 1522,
-              "alt": "TD100 – logotipo"
+              "alt": "TD100",
+              "href": "/produkter/tei/borriggar/td100",
+              "bullets": [
+                "Mordaza y llave de desenrosque",
+                "Cabezal de rotación RDS1004 con 13 569 Nm de par",
+                "Desplazamiento lateral de 120° del mástil",
+                "Motor eléctrico de 75 kW (100 HP)",
+                "Cuatro gatos estabilizadores"
+              ]
             }
-          ]
-        },
-        {
-          "type": "list",
-          "ordered": false,
-          "items": [
-            "Mordaza y llave de desenrosque",
-            "Cabezal de rotación RDS1004 con 13 569 Nm de par",
-            "Desplazamiento lateral de 120° del mástil",
-            "Motor eléctrico de 75 kW (100 HP)",
-            "Cuatro gatos estabilizadores"
           ]
         },
         {
@@ -396,11 +432,56 @@
           ]
         },
         {
-          "type": "image",
-          "alt": "Equipos de perforación – imagen 3",
-          "width": 841,
-          "height": 242,
-          "src": "/assets/img/tei-borriggar-3.webp"
+          "type": "table",
+          "header": true,
+          "align": "left",
+          "rows": [
+            [
+              "Modelo",
+              "Peso de la máquina (t)",
+              "Peso (kg)",
+              "Carrera de perforación (m)",
+              "Fuerza de retroceso (kN)",
+              "Martillos posibles",
+              "Significado"
+            ],
+            [
+              "MME",
+              "5 - 12",
+              "488",
+              "3.20",
+              "6.5",
+              "TE260, TE260HT, TE326 & RDS250",
+              "Soporte para miniexcavadoras y excavadoras pequeñas"
+            ],
+            [
+              "MEM",
+              "12 - 16",
+              "1089",
+              "3.35",
+              "11.1",
+              "TE360, TE326 & RDS350",
+              "Soporte para excavadoras de peso medio"
+            ],
+            [
+              "HEM",
+              "16 - 20",
+              "1440 - 2600",
+              "3.60",
+              "33.3",
+              "TE360, TE326, TE760 & RDS350, RDS550",
+              "Soporte para excavadoras hidráulicas"
+            ],
+            [
+              "HEMH",
+              "25 - 30",
+              "2800 - 3100",
+              "3.6 - 3.9",
+              "53",
+              "TE726, TE760, TE1000 & RDS550, RDS1004",
+              "Soporte para excavadoras hidráulicas pesadas"
+            ]
+          ]
         },
         {
           "type": "text",
@@ -442,52 +523,34 @@
           "html": "Gå videre til riggen du er interessert i for å se hvilken som passer best for deg. <a href=\"/kontakta-oss\">Kontakt oss</a> for mer informasjon."
         },
         {
-          "type": "cards",
+          "type": "modules",
+          "layout": "cards",
           "items": [
             {
-              "href": "/produkter/tei/borriggar/td75",
-              "label": "Läs mer",
               "title": "TD75",
               "image": "/assets/img/tei-borriggar-td75.webp",
-              "width": 768,
-              "height": 768,
-              "alt": "TD75 – logo"
-            }
-          ]
-        },
-        {
-          "type": "list",
-          "ordered": false,
-          "items": [
-            "Klemme og brytere",
-            "RDS550 rotasjonshammer og støtdemper",
-            "180° sidelengs bevegelse av masten",
-            "56 kW (75 HK) elektrisk motor"
-          ]
-        },
-        {
-          "type": "cards",
-          "items": [
+              "alt": "TD75",
+              "href": "/produkter/tei/borriggar/td75",
+              "bullets": [
+                "Klemme og brytere",
+                "RDS550 rotasjonshammer og støtdemper",
+                "180° sidelengs bevegelse av masten",
+                "56 kW (75 HK) elektrisk motor"
+              ]
+            },
             {
-              "href": "/produkter/tei/borriggar/td100",
-              "label": "Läs mer",
               "title": "TD100",
               "image": "/assets/img/tei-borriggar-td100.webp",
-              "width": 1522,
-              "height": 1522,
-              "alt": "TD100 – logo"
+              "alt": "TD100",
+              "href": "/produkter/tei/borriggar/td100",
+              "bullets": [
+                "Klemme og brytere",
+                "RDS1004 rotasjonshammer med 13 569 Nm dreiemoment",
+                "120° sidelengs bevegelse av masten",
+                "75 kW (100 HK) elektrisk motor",
+                "Fire stabilisatorjekker"
+              ]
             }
-          ]
-        },
-        {
-          "type": "list",
-          "ordered": false,
-          "items": [
-            "Klemme og brytere",
-            "RDS1004 rotasjonshammer med 13 569 Nm dreiemoment",
-            "120° sidelengs bevegelse av masten",
-            "75 kW (100 HK) elektrisk motor",
-            "Fire stabilisatorjekker"
           ]
         },
         {
@@ -530,11 +593,56 @@
           ]
         },
         {
-          "type": "image",
-          "alt": "Borerigger – bilde 3",
-          "width": 841,
-          "height": 242,
-          "src": "/assets/img/tei-borriggar-3.webp"
+          "type": "table",
+          "header": true,
+          "align": "left",
+          "rows": [
+            [
+              "Modell",
+              "Maskinvekt (tonn)",
+              "Vekt (kg)",
+              "Borslag (m)",
+              "Trekkraft (kN)",
+              "Mulige borehammere",
+              "Betydning"
+            ],
+            [
+              "MME",
+              "5 - 12",
+              "488",
+              "3.20",
+              "6.5",
+              "TE260, TE260HT, TE326 & RDS250",
+              "Feste for mini- og små gravemaskiner"
+            ],
+            [
+              "MEM",
+              "12 - 16",
+              "1089",
+              "3.35",
+              "11.1",
+              "TE360, TE326 & RDS350",
+              "Feste for mellomtunge gravemaskiner"
+            ],
+            [
+              "HEM",
+              "16 - 20",
+              "1440 - 2600",
+              "3.60",
+              "33.3",
+              "TE360, TE326, TE760 & RDS350, RDS550",
+              "Feste for hydrauliske gravemaskiner"
+            ],
+            [
+              "HEMH",
+              "25 - 30",
+              "2800 - 3100",
+              "3.6 - 3.9",
+              "53",
+              "TE726, TE760, TE1000 & RDS550, RDS1004",
+              "Feste for tunge hydrauliske gravemaskiner"
+            ]
+          ]
         },
         {
           "type": "text",

@@ -18,6 +18,7 @@ export const IC = {
   table: svg('<rect x="3" y="5" width="18" height="14" rx="1.5"/><path d="M3 10h18M9 5v14"/>'),
   datasheet: svg('<path d="M6 3h9l4 4v14H6z"/><path d="M9 11h7M9 15h7M9 19h4"/>'),
   columns: svg('<rect x="3" y="4" width="8" height="16" rx="1.5"/><rect x="13" y="4" width="8" height="16" rx="1.5"/>'),
+  modules: svg('<rect x="3" y="5" width="5" height="14" rx="1"/><rect x="9.5" y="5" width="5" height="14" rx="1"/><rect x="16" y="5" width="5" height="14" rx="1"/>'),
   carousel: svg('<rect x="6" y="5" width="12" height="14" rx="2"/><path d="M2.5 9v6M21.5 9v6"/>'),
   quote: svg('<rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/>'),
   social: svg('<circle cx="6" cy="12" r="3"/><circle cx="18" cy="6" r="3"/><circle cx="18" cy="18" r="3"/><path d="M8.7 10.6l6.6-3.2M8.7 13.4l6.6 3.2"/>'),
@@ -51,7 +52,7 @@ export const IC = {
 export const BLOCK_TYPES = [
   { id: "text", group: "text" }, { id: "heading", group: "text" }, { id: "list", group: "text" },
   { id: "image", group: "media" }, { id: "video", group: "media" }, { id: "download", group: "media" },
-  { id: "button", group: "layout" }, { id: "columns", group: "layout" }, { id: "cards", group: "layout" }, { id: "carousel", group: "media" }, { id: "cta", group: "layout" }, { id: "chips", group: "layout" },
+  { id: "button", group: "layout" }, { id: "columns", group: "layout" }, { id: "cards", group: "layout" }, { id: "carousel", group: "media" }, { id: "modules", group: "layout" }, { id: "cta", group: "layout" }, { id: "chips", group: "layout" },
   { id: "table", group: "data" }, { id: "datasheet", group: "data" },
   { id: "quote", group: "other" }, { id: "social", group: "other" }, { id: "contact", group: "other" }, { id: "html", group: "other" }
 ];
@@ -87,6 +88,7 @@ export function newBlock(id, lang) {
     case "social": return { type: "social" };
     case "quote": return { type: "quote" };
     case "carousel": return { type: "carousel", items: [], autoplay: false };
+    case "modules": return { type: "modules", layout: "cards", items: [{ title: "", text: "", bullets: [] }] };
     case "contact": return { type: "contact" };
     default: return { type: "html", html: "" };
   }

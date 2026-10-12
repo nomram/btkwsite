@@ -42,6 +42,7 @@ function snippet(b) {
     case "button": return b.text || (b.href || "").split("/").pop() || t("empty");
     case "cards": return t("n_cards", { n: (b.items || []).length });
     case "carousel": return t("n_images", { n: (b.items || []).length });
+    case "modules": return t("n_cards", { n: (b.items || []).length });
     case "video": return b.title || b.id || t("empty");
     case "table": return t("n_rows", { n: (b.rows || []).length });
     case "datasheet": return b.title || t("block_datasheet");
@@ -125,6 +126,18 @@ function panelBlock() {
       body = F(t("button_text"), inp("text", b.text)) +
         F(t("link_to"), `<div class="row nowrap"><input type="text" data-bf="href" value="${esc(b.href || "")}" placeholder="/kontakta-oss"><button class="btn sm ghost" data-act="pick-link" data-target="href">${esc(t("choose"))}</button></div>`);
       break;
+    case "modules": {
+      const items = b.items || [];
+      body = F(t("modules_layout"), `<select data-bf="layout"><option value="cards" ${b.layout !== "compact" ? "selected" : ""}>${esc(t("modules_cards"))}</option><option value="compact" ${b.layout === "compact" ? "selected" : ""}>${esc(t("modules_compact"))}</option></select>`) +
+        items.map((it, ci) => `<div class="sub"><div class="row nowrap">${it.image ? `<img class="thumb" src="${esc(thumbUrl(it.image.replace("/assets/img/", "")))}" alt="">` : ""}<button class="btn sm ghost" data-act="mod-image" data-ci="${ci}">${esc(it.image ? t("change_image") : t("choose_image"))}</button>${ci > 0 ? `<button class="btn sm ghost" data-act="mod-up" data-ci="${ci}" title="${esc(t("move_up"))}">${IC.up}</button>` : ""}<button class="btn sm danger" data-act="mod-rm" data-ci="${ci}" title="${esc(t("delete"))}">${IC.trash}</button></div>
+          ${F(t("card_title"), inp(`items.${ci}.title`, it.title))}
+          ${F(t("card_text"), `<textarea data-bf="items.${ci}.text" rows="2">${esc(it.text || "")}</textarea>`)}
+          ${F(t("modules_bullets"), `<textarea data-bf="items.${ci}.bullets" data-t="lines" rows="4">${esc((it.bullets || []).join("\n"))}</textarea>`, t("modules_bullets_hint"))}
+          ${F(t("link_to"), `<div class="row nowrap"><input type="text" data-bf="items.${ci}.href" value="${esc(it.href || "")}" placeholder="${esc(t("no_link"))}"><button class="btn sm ghost" data-act="mod-link" data-ci="${ci}">${esc(t("choose"))}</button></div>`)}
+        </div>`).join("") +
+        `<div class="btnrow"><button class="btn sm primary" data-act="mod-add">${IC.plus}<span>${esc(t("modules_add"))}</span></button></div>`;
+      break;
+    }
     case "carousel": {
       const items = b.items || [];
       body = items.map((it, ci) => `<div class="sub"><div class="row nowrap">${it.src ? `<img class="thumb" src="${esc(thumbUrl(it.src.replace("/assets/img/", "")))}" alt="">` : ""}<button class="btn sm ghost" data-act="car-image" data-ci="${ci}">${esc(t("change_image"))}</button>${ci > 0 ? `<button class="btn sm ghost" data-act="car-up" data-ci="${ci}" title="${esc(t("move_up"))}">${IC.up}</button>` : ""}<button class="btn sm danger" data-act="car-rm" data-ci="${ci}" title="${esc(t("delete"))}">${IC.trash}</button></div>
@@ -149,6 +162,8 @@ function panelBlock() {
       break;
     case "table":
       body = `<label class="chk"><input type="checkbox" data-bf="header" data-t="bool" ${b.header !== false ? "checked" : ""}> ${esc(t("first_row_header"))}</label>` +
+        F(t("table_caption"), inp("caption", b.caption)) +
+        F(t("table_groups"), `<textarea data-bf="groups" data-t="tablegroups" rows="3" class="mono">${esc((b.groups || []).map((g) => `${g.text} | ${g.span}`).join("\n"))}</textarea>`, t("table_groups_hint")) +
         F(t("table_rows"), `<textarea data-bf="rows" data-t="table" rows="9">${esc((b.rows || []).map((r) => r.join("\t")).join("\n"))}</textarea>`, t("table_hint"));
       break;
     case "datasheet":
@@ -291,6 +306,7 @@ function parseValue(el) {
     case "boolstr": v = v === "true"; break;
     case "lines": v = String(v).split(/\r?\n/).map((s) => s.trim()).filter(Boolean); break;
     case "yt": v = ytId(v); break;
+    case "tablegroups": v = String(v).split(/\r?\n/).filter((l) => l.trim()).map((l) => { const [txt, n] = l.split("|"); return { text: (txt || "").trim(), span: parseInt(n, 10) || 1 }; }); break;
     case "paras": v = String(v).split(/\r?\n\s*\r?\n/).map((s) => s.trim()).filter(Boolean); break;
     case "groups": v = textToGroups(v); break;
     case "table": {
@@ -378,6 +394,16 @@ export function bindPanel(el) {
       case "nested-image": { const src = await pickImage(); if (src) { setField(i, `${b.dataset.path}.src`, src); panelHooks.rerender(); } return; }
       case "nested-rm": { const [side, j] = b.dataset.path.split("."); mutate(() => { blk[side].splice(+j, 1); }); return panelHooks.rerender(); }
       case "nested-add": { const side = b.dataset.side; mutate(() => { (blk[side] = blk[side] || []).push(newBlock(b.dataset.type, ed.lang)); }); return panelHooks.rerender(); }
+      case "mod-add": mutate(() => { (blk.items = blk.items || []).push({ title: "", text: "", bullets: [] }); }); return panelHooks.rerender();
+      case "mod-rm": mutate(() => { blk.items.splice(+b.dataset.ci, 1); }); return panelHooks.rerender();
+      case "mod-up": { const ci = +b.dataset.ci; if (ci > 0) mutate(() => { const x = blk.items.splice(ci, 1)[0]; blk.items.splice(ci - 1, 0, x); }); return panelHooks.rerender(); }
+      case "mod-image": { const src = await pickImage(); if (src) { setField(i, `items.${b.dataset.ci}.image`, src); panelHooks.rerender(); } return; }
+      case "mod-link": {
+        const path = `items.${b.dataset.ci}.href`;
+        const v = await pickLink({ current: getPath(blk, path) || "", allowRemove: true });
+        if (v != null) { setField(i, path, v || undefined); panelHooks.rerender(); }
+        return;
+      }
       case "car-add": { const src = await pickImage(); if (src) { mutate(() => { (blk.items = blk.items || []).push({ src, alt: humanizeFilename(src.split("/").pop()) }); }); panelHooks.rerender(); } return; }
       case "car-image": { const src = await pickImage(); if (src) { setField(i, `items.${b.dataset.ci}.src`, src); panelHooks.rerender(); } return; }
       case "car-rm": mutate(() => { blk.items.splice(+b.dataset.ci, 1); }); return panelHooks.rerender();

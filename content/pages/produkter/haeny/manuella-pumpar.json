@@ -133,11 +133,131 @@
           "html": "Det finns flera varianter av pumpar utöver dessa tre. Nedan anges pumpspecifikationerna i tabellform. <a href=\"/kontakta-oss\">Kontakta oss</a> om du har önskemål eller funderingar."
         },
         {
-          "type": "image",
-          "alt": "Häny - Manuella Betongpumpar (IC) – bild 9",
-          "width": 1920,
-          "height": 351,
-          "src": "/assets/img/haeny-manuella-pumpar-9.webp"
+          "type": "table",
+          "header": false,
+          "align": "center",
+          "groups": [
+            {
+              "text": "Model IC",
+              "span": 2
+            },
+            {
+              "text": "310",
+              "span": 1
+            },
+            {
+              "text": "311",
+              "span": 1
+            },
+            {
+              "text": "325",
+              "span": 1
+            },
+            {
+              "text": "650",
+              "span": 3
+            },
+            {
+              "text": "1100",
+              "span": 4
+            },
+            {
+              "text": "1400",
+              "span": 4
+            }
+          ],
+          "rows": [
+            [
+              "Konfiguration",
+              "HCM/HRW",
+              "100/150",
+              "100/150",
+              "100/150",
+              "300/350",
+              "300/350",
+              "300/350",
+              "300/800",
+              "300/800",
+              "300/800",
+              "300/800",
+              "600/800",
+              "600/800",
+              "600/800",
+              "600/800"
+            ],
+            [
+              "Injekteringspump",
+              "ZMP",
+              "610",
+              "611",
+              "625",
+              "710",
+              "712",
+              "725",
+              "710",
+              "712",
+              "725",
+              "726",
+              "710",
+              "712",
+              "725",
+              "726"
+            ],
+            [
+              "Max. kapacitet",
+              "m³/h",
+              "1.5",
+              "2.0",
+              "2.0",
+              "5.0",
+              "4.9",
+              "5.0",
+              "5.0",
+              "4.9",
+              "5.0",
+              "5.0",
+              "7.5",
+              "4.9",
+              "8.0",
+              "8.0"
+            ],
+            [
+              "Max. tryck",
+              "bar",
+              "100",
+              "75",
+              "100",
+              "100",
+              "88",
+              "100",
+              "100",
+              "88",
+              "100",
+              "100",
+              "100",
+              "88",
+              "100",
+              "100"
+            ],
+            [
+              "Nominell effekt",
+              "kW",
+              "9.1",
+              "9.1",
+              "9.1",
+              "17.5",
+              "17.5",
+              "19.0",
+              "17.5",
+              "17.5",
+              "19.0",
+              "39.8",
+              "17.5",
+              "17.5",
+              "19.0",
+              "39.8"
+            ]
+          ]
         }
       ]
     },
@@ -266,11 +386,131 @@
           "html": "There are several pump variants beyond these three. The pump specifications are given in table form below. <a href=\"/kontakta-oss\">Contact us</a> if you have any wishes or questions."
         },
         {
-          "type": "image",
-          "alt": "Häny – Manual concrete pumps (IC) – image 9",
-          "width": 1920,
-          "height": 351,
-          "src": "/assets/img/haeny-manuella-pumpar-9.webp"
+          "type": "table",
+          "header": false,
+          "align": "center",
+          "groups": [
+            {
+              "text": "Model IC",
+              "span": 2
+            },
+            {
+              "text": "310",
+              "span": 1
+            },
+            {
+              "text": "311",
+              "span": 1
+            },
+            {
+              "text": "325",
+              "span": 1
+            },
+            {
+              "text": "650",
+              "span": 3
+            },
+            {
+              "text": "1100",
+              "span": 4
+            },
+            {
+              "text": "1400",
+              "span": 4
+            }
+          ],
+          "rows": [
+            [
+              "Configuration",
+              "HCM/HRW",
+              "100/150",
+              "100/150",
+              "100/150",
+              "300/350",
+              "300/350",
+              "300/350",
+              "300/800",
+              "300/800",
+              "300/800",
+              "300/800",
+              "600/800",
+              "600/800",
+              "600/800",
+              "600/800"
+            ],
+            [
+              "Grout pump",
+              "ZMP",
+              "610",
+              "611",
+              "625",
+              "710",
+              "712",
+              "725",
+              "710",
+              "712",
+              "725",
+              "726",
+              "710",
+              "712",
+              "725",
+              "726"
+            ],
+            [
+              "Max. capacity",
+              "m³/h",
+              "1.5",
+              "2.0",
+              "2.0",
+              "5.0",
+              "4.9",
+              "5.0",
+              "5.0",
+              "4.9",
+              "5.0",
+              "5.0",
+              "7.5",
+              "4.9",
+              "8.0",
+              "8.0"
+            ],
+            [
+              "Max. pressure",
+              "bar",
+              "100",
+              "75",
+              "100",
+              "100",
+              "88",
+              "100",
+              "100",
+              "88",
+              "100",
+              "100",
+              "100",
+              "88",
+              "100",
+              "100"
+            ],
+            [
+              "Nominal power",
+              "kW",
+              "9.1",
+              "9.1",
+              "9.1",
+              "17.5",
+              "17.5",
+              "19.0",
+              "17.5",
+              "17.5",
+              "19.0",
+              "39.8",
+              "17.5",
+              "17.5",
+              "19.0",
+              "39.8"
+            ]
+          ]
         }
       ],
       "published": true
@@ -400,11 +640,131 @@
           "html": "Existen varias variantes de bombas además de estas tres. A continuación se indican las especificaciones de las bombas en forma de tabla. <a href=\"/kontakta-oss\">Contáctenos</a> si tiene algún deseo o duda."
         },
         {
-          "type": "image",
-          "alt": "Häny – Bombas de hormigón manuales (IC) – imagen 9",
-          "width": 1920,
-          "height": 351,
-          "src": "/assets/img/haeny-manuella-pumpar-9.webp"
+          "type": "table",
+          "header": false,
+          "align": "center",
+          "groups": [
+            {
+              "text": "Model IC",
+              "span": 2
+            },
+            {
+              "text": "310",
+              "span": 1
+            },
+            {
+              "text": "311",
+              "span": 1
+            },
+            {
+              "text": "325",
+              "span": 1
+            },
+            {
+              "text": "650",
+              "span": 3
+            },
+            {
+              "text": "1100",
+              "span": 4
+            },
+            {
+              "text": "1400",
+              "span": 4
+            }
+          ],
+          "rows": [
+            [
+              "Configuración",
+              "HCM/HRW",
+              "100/150",
+              "100/150",
+              "100/150",
+              "300/350",
+              "300/350",
+              "300/350",
+              "300/800",
+              "300/800",
+              "300/800",
+              "300/800",
+              "600/800",
+              "600/800",
+              "600/800",
+              "600/800"
+            ],
+            [
+              "Bomba de inyección",
+              "ZMP",
+              "610",
+              "611",
+              "625",
+              "710",
+              "712",
+              "725",
+              "710",
+              "712",
+              "725",
+              "726",
+              "710",
+              "712",
+              "725",
+              "726"
+            ],
+            [
+              "Capacidad máx.",
+              "m³/h",
+              "1.5",
+              "2.0",
+              "2.0",
+              "5.0",
+              "4.9",
+              "5.0",
+              "5.0",
+              "4.9",
+              "5.0",
+              "5.0",
+              "7.5",
+              "4.9",
+              "8.0",
+              "8.0"
+            ],
+            [
+              "Presión máx.",
+              "bar",
+              "100",
+              "75",
+              "100",
+              "100",
+              "88",
+              "100",
+              "100",
+              "88",
+              "100",
+              "100",
+              "100",
+              "88",
+              "100",
+              "100"
+            ],
+            [
+              "Potencia nominal",
+              "kW",
+              "9.1",
+              "9.1",
+              "9.1",
+              "17.5",
+              "17.5",
+              "19.0",
+              "17.5",
+              "17.5",
+              "19.0",
+              "39.8",
+              "17.5",
+              "17.5",
+              "19.0",
+              "39.8"
+            ]
+          ]
         }
       ],
       "published": true
@@ -534,11 +894,131 @@
           "html": "Det finnes flere varianter av pumper utover disse tre. Nedenfor oppgis pumpespesifikasjonene i tabellform. <a href=\"/kontakta-oss\">Kontakt oss</a> hvis du har ønsker eller spørsmål."
         },
         {
-          "type": "image",
-          "alt": "Häny – Manuelle betongpumper (IC) – bilde 9",
-          "width": 1920,
-          "height": 351,
-          "src": "/assets/img/haeny-manuella-pumpar-9.webp"
+          "type": "table",
+          "header": false,
+          "align": "center",
+          "groups": [
+            {
+              "text": "Model IC",
+              "span": 2
+            },
+            {
+              "text": "310",
+              "span": 1
+            },
+            {
+              "text": "311",
+              "span": 1
+            },
+            {
+              "text": "325",
+              "span": 1
+            },
+            {
+              "text": "650",
+              "span": 3
+            },
+            {
+              "text": "1100",
+              "span": 4
+            },
+            {
+              "text": "1400",
+              "span": 4
+            }
+          ],
+          "rows": [
+            [
+              "Konfigurasjon",
+              "HCM/HRW",
+              "100/150",
+              "100/150",
+              "100/150",
+              "300/350",
+              "300/350",
+              "300/350",
+              "300/800",
+              "300/800",
+              "300/800",
+              "300/800",
+              "600/800",
+              "600/800",
+              "600/800",
+              "600/800"
+            ],
+            [
+              "Injeksjonspumpe",
+              "ZMP",
+              "610",
+              "611",
+              "625",
+              "710",
+              "712",
+              "725",
+              "710",
+              "712",
+              "725",
+              "726",
+              "710",
+              "712",
+              "725",
+              "726"
+            ],
+            [
+              "Maks. kapasitet",
+              "m³/h",
+              "1.5",
+              "2.0",
+              "2.0",
+              "5.0",
+              "4.9",
+              "5.0",
+              "5.0",
+              "4.9",
+              "5.0",
+              "5.0",
+              "7.5",
+              "4.9",
+              "8.0",
+              "8.0"
+            ],
+            [
+              "Maks. trykk",
+              "bar",
+              "100",
+              "75",
+              "100",
+              "100",
+              "88",
+              "100",
+              "100",
+              "88",
+              "100",
+              "100",
+              "100",
+              "88",
+              "100",
+              "100"
+            ],
+            [
+              "Nominell effekt",
+              "kW",
+              "9.1",
+              "9.1",
+              "9.1",
+              "17.5",
+              "17.5",
+              "19.0",
+              "17.5",
+              "17.5",
+              "19.0",
+              "39.8",
+              "17.5",
+              "17.5",
+              "19.0",
+              "39.8"
+            ]
+          ]
         }
       ],
       "published": true

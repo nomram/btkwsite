@@ -45,107 +45,101 @@
           "html": "<a href=\"/kontakta-oss\">Kontakta oss</a> för mer information."
         },
         {
-          "type": "image",
-          "alt": "Rotationshammare – bild 3",
-          "width": 1920,
-          "height": 1056,
-          "src": "/assets/img/tei-rotationshammare-3.webp"
+          "type": "table",
+          "header": true,
+          "align": "center",
+          "caption": "Rekommenderat hålstorleksintervall (mm)",
+          "rows": [
+            [
+              "Modell",
+              "Hålstorlek (mm)",
+              "Vridmoment (Nm)",
+              "Vikt (kg)",
+              "Rotationsflöde (LPM)",
+              "Spolaxelns innerdiameter (mm)"
+            ],
+            [
+              "RDS250",
+              "70 - 102",
+              "1361",
+              "48",
+              "57–76",
+              "22"
+            ],
+            [
+              "RDS350",
+              "70 - 203",
+              "2721",
+              "55",
+              "76",
+              "25"
+            ],
+            [
+              "RDS550",
+              "102 - 305",
+              "6803",
+              "177",
+              "126",
+              "38"
+            ],
+            [
+              "RDS1004",
+              "127 - 610",
+              "13605",
+              "356",
+              "144–227",
+              "51, 76, 102"
+            ],
+            [
+              "RDS1500",
+              "127 - 750",
+              "20408",
+              "442",
+              "163–227",
+              "51, 76, 102"
+            ]
+          ]
         },
         {
-          "type": "cards",
+          "type": "modules",
+          "layout": "compact",
           "items": [
             {
-              "href": "/produkter/tei/rotationshammare/rds250",
-              "label": "Läs mer",
+              "title": "RDS250",
               "image": "/assets/img/tei-rotationshammare-rds250.webp",
-              "width": 1089,
-              "height": 960,
-              "alt": "RDS250 – logotyp"
-            }
-          ]
-        },
-        {
-          "type": "text",
-          "html": "RDS250"
-        },
-        {
-          "type": "cards",
-          "items": [
-            {
-              "href": "/produkter/tei/rotationshammare/rds350",
-              "label": "Läs mer",
-              "image": "/assets/img/tei-rotationshammare-rds350.webp",
-              "width": 1375,
-              "height": 1203,
-              "alt": "RDS350 – logotyp"
-            }
-          ]
-        },
-        {
-          "type": "text",
-          "html": "RDS350"
-        },
-        {
-          "type": "cards",
-          "items": [
-            {
-              "href": "/produkter/tei/rotationshammare/rds550",
-              "label": "Läs mer",
-              "image": "/assets/img/tei-rotationshammare-rds550.webp",
-              "width": 1296,
-              "height": 1142,
-              "alt": "RDS550 – logotyp"
-            }
-          ]
-        },
-        {
-          "type": "text",
-          "html": "RDS550"
-        },
-        {
-          "type": "cards",
-          "items": [
-            {
-              "href": "/produkter/tei/rotationshammare/rds1004",
-              "label": "Läs mer",
-              "image": "/assets/img/tei-rotationshammare-rds1004.webp",
-              "width": 1800,
-              "height": 1586,
-              "alt": "RDS1004 – logotyp"
-            }
-          ]
-        },
-        {
-          "type": "text",
-          "html": "RDS1004"
-        },
-        {
-          "type": "cards",
-          "items": [
-            {
-              "href": "/produkter/tei/rotationshammare/rds1004",
-              "label": "Läs mer",
-              "html": "Taggar: topphammare, sänkhammare, rotationshammare",
-              "text": "Taggar: topphammare, sänkhammare, rotationshammare",
-              "image": "/assets/img/tei-rotationshammare-rds1004-2.webp",
-              "width": 1920,
-              "height": 1691,
-              "alt": "RDS1004 – logotyp"
+              "alt": "RDS250",
+              "href": "/produkter/tei/rotationshammare/rds250"
             },
             {
-              "href": "/produkter/tei/rotationshammare/rds1500",
-              "label": "Läs mer",
-              "image": "/assets/img/tei-2.webp",
-              "width": 1920,
-              "height": 1117,
+              "title": "RDS350",
+              "image": "/assets/img/tei-rotationshammare-rds350.webp",
+              "alt": "RDS350",
+              "href": "/produkter/tei/rotationshammare/rds350"
+            },
+            {
+              "title": "RDS550",
+              "image": "/assets/img/tei-rotationshammare-rds550.webp",
+              "alt": "RDS550",
+              "href": "/produkter/tei/rotationshammare/rds550"
+            },
+            {
+              "title": "RDS1004",
+              "image": "/assets/img/tei-rotationshammare-rds1004.webp",
+              "alt": "RDS1004",
+              "href": "/produkter/tei/rotationshammare/rds1004"
+            },
+            {
+              "title": "RDS1500",
+              "image": "/assets/img/tei-rotationshammare-rds1004-2.webp",
+              "alt": "RDS1500",
               "text": "Kraftigt hydrauliskt rotationshuvud för större borrmaster och borrriggar.",
-              "alt": "RDS1500 – logotyp"
+              "href": "/produkter/tei/rotationshammare/rds1500"
             }
           ]
         },
         {
           "type": "text",
-          "html": "RDS1500"
+          "html": "Taggar: topphammare, sänkhammare, rotationshammare"
         }
       ]
     },
@@ -186,107 +180,101 @@
           "html": "<a href=\"/kontakta-oss\">Contact us</a> for more information."
         },
         {
-          "type": "image",
-          "alt": "Rotary heads – image 3",
-          "width": 1920,
-          "height": 1056,
-          "src": "/assets/img/tei-rotationshammare-3.webp"
+          "type": "table",
+          "header": true,
+          "align": "center",
+          "caption": "Recommended hole size range (mm)",
+          "rows": [
+            [
+              "Model",
+              "Hole size (mm)",
+              "Torque (Nm)",
+              "Weight (kg)",
+              "Rotation flow (LPM)",
+              "Flush shaft ID (mm)"
+            ],
+            [
+              "RDS250",
+              "70 - 102",
+              "1361",
+              "48",
+              "57–76",
+              "22"
+            ],
+            [
+              "RDS350",
+              "70 - 203",
+              "2721",
+              "55",
+              "76",
+              "25"
+            ],
+            [
+              "RDS550",
+              "102 - 305",
+              "6803",
+              "177",
+              "126",
+              "38"
+            ],
+            [
+              "RDS1004",
+              "127 - 610",
+              "13605",
+              "356",
+              "144–227",
+              "51, 76, 102"
+            ],
+            [
+              "RDS1500",
+              "127 - 750",
+              "20408",
+              "442",
+              "163–227",
+              "51, 76, 102"
+            ]
+          ]
         },
         {
-          "type": "cards",
+          "type": "modules",
+          "layout": "compact",
           "items": [
             {
-              "href": "/produkter/tei/rotationshammare/rds250",
-              "label": "Läs mer",
+              "title": "RDS250",
               "image": "/assets/img/tei-rotationshammare-rds250.webp",
-              "width": 1089,
-              "height": 960,
-              "alt": "RDS250 – logo"
-            }
-          ]
-        },
-        {
-          "type": "text",
-          "html": "RDS250"
-        },
-        {
-          "type": "cards",
-          "items": [
-            {
-              "href": "/produkter/tei/rotationshammare/rds350",
-              "label": "Läs mer",
-              "image": "/assets/img/tei-rotationshammare-rds350.webp",
-              "width": 1375,
-              "height": 1203,
-              "alt": "RDS350 – logo"
-            }
-          ]
-        },
-        {
-          "type": "text",
-          "html": "RDS350"
-        },
-        {
-          "type": "cards",
-          "items": [
-            {
-              "href": "/produkter/tei/rotationshammare/rds550",
-              "label": "Läs mer",
-              "image": "/assets/img/tei-rotationshammare-rds550.webp",
-              "width": 1296,
-              "height": 1142,
-              "alt": "RDS550 – logo"
-            }
-          ]
-        },
-        {
-          "type": "text",
-          "html": "RDS550"
-        },
-        {
-          "type": "cards",
-          "items": [
-            {
-              "href": "/produkter/tei/rotationshammare/rds1004",
-              "label": "Läs mer",
-              "image": "/assets/img/tei-rotationshammare-rds1004.webp",
-              "width": 1800,
-              "height": 1586,
-              "alt": "RDS1004 – logo"
-            }
-          ]
-        },
-        {
-          "type": "text",
-          "html": "RDS1004"
-        },
-        {
-          "type": "cards",
-          "items": [
-            {
-              "href": "/produkter/tei/rotationshammare/rds1004",
-              "label": "Läs mer",
-              "html": "Taggar: topphammare, sänkhammare, rotationshammare",
-              "text": "Tags: top hammer, DTH hammer, rotary head",
-              "image": "/assets/img/tei-rotationshammare-rds1004-2.webp",
-              "width": 1920,
-              "height": 1691,
-              "alt": "RDS1004 – logo"
+              "alt": "RDS250",
+              "href": "/produkter/tei/rotationshammare/rds250"
             },
             {
-              "href": "/produkter/tei/rotationshammare/rds1500",
-              "label": "Läs mer",
-              "image": "/assets/img/tei-2.webp",
-              "width": 1920,
-              "height": 1117,
+              "title": "RDS350",
+              "image": "/assets/img/tei-rotationshammare-rds350.webp",
+              "alt": "RDS350",
+              "href": "/produkter/tei/rotationshammare/rds350"
+            },
+            {
+              "title": "RDS550",
+              "image": "/assets/img/tei-rotationshammare-rds550.webp",
+              "alt": "RDS550",
+              "href": "/produkter/tei/rotationshammare/rds550"
+            },
+            {
+              "title": "RDS1004",
+              "image": "/assets/img/tei-rotationshammare-rds1004.webp",
+              "alt": "RDS1004",
+              "href": "/produkter/tei/rotationshammare/rds1004"
+            },
+            {
+              "title": "RDS1500",
+              "image": "/assets/img/tei-rotationshammare-rds1004-2.webp",
+              "alt": "RDS1500",
               "text": "Heavy-duty hydraulic rotary head for larger drill masts and drill rigs.",
-              "alt": "RDS1500 – logo"
+              "href": "/produkter/tei/rotationshammare/rds1500"
             }
           ]
         },
         {
           "type": "text",
-          "html": "RDS1500"
+          "html": "Tags: top hammer, DTH hammer, rotary head"
         }
       ],
       "published": true
@@ -328,107 +316,101 @@
           "html": "<a href=\"/kontakta-oss\">Contáctenos</a> para más información."
         },
         {
-          "type": "image",
-          "alt": "Cabezales de rotación – imagen 3",
-          "width": 1920,
-          "height": 1056,
-          "src": "/assets/img/tei-rotationshammare-3.webp"
+          "type": "table",
+          "header": true,
+          "align": "center",
+          "caption": "Rango de diámetro de perforación recomendado (mm)",
+          "rows": [
+            [
+              "Modelo",
+              "Diámetro de perforación (mm)",
+              "Par (Nm)",
+              "Peso (kg)",
+              "Caudal de rotación (LPM)",
+              "Ø interior del eje de lavado (mm)"
+            ],
+            [
+              "RDS250",
+              "70 - 102",
+              "1361",
+              "48",
+              "57–76",
+              "22"
+            ],
+            [
+              "RDS350",
+              "70 - 203",
+              "2721",
+              "55",
+              "76",
+              "25"
+            ],
+            [
+              "RDS550",
+              "102 - 305",
+              "6803",
+              "177",
+              "126",
+              "38"
+            ],
+            [
+              "RDS1004",
+              "127 - 610",
+              "13605",
+              "356",
+              "144–227",
+              "51, 76, 102"
+            ],
+            [
+              "RDS1500",
+              "127 - 750",
+              "20408",
+              "442",
+              "163–227",
+              "51, 76, 102"
+            ]
+          ]
         },
         {
-          "type": "cards",
+          "type": "modules",
+          "layout": "compact",
           "items": [
             {
-              "href": "/produkter/tei/rotationshammare/rds250",
-              "label": "Läs mer",
+              "title": "RDS250",
               "image": "/assets/img/tei-rotationshammare-rds250.webp",
-              "width": 1089,
-              "height": 960,
-              "alt": "RDS250 – logotipo"
-            }
-          ]
-        },
-        {
-          "type": "text",
-          "html": "RDS250"
-        },
-        {
-          "type": "cards",
-          "items": [
-            {
-              "href": "/produkter/tei/rotationshammare/rds350",
-              "label": "Läs mer",
-              "image": "/assets/img/tei-rotationshammare-rds350.webp",
-              "width": 1375,
-              "height": 1203,
-              "alt": "RDS350 – logotipo"
-            }
-          ]
-        },
-        {
-          "type": "text",
-          "html": "RDS350"
-        },
-        {
-          "type": "cards",
-          "items": [
-            {
-              "href": "/produkter/tei/rotationshammare/rds550",
-              "label": "Läs mer",
-              "image": "/assets/img/tei-rotationshammare-rds550.webp",
-              "width": 1296,
-              "height": 1142,
-              "alt": "RDS550 – logotipo"
-            }
-          ]
-        },
-        {
-          "type": "text",
-          "html": "RDS550"
-        },
-        {
-          "type": "cards",
-          "items": [
-            {
-              "href": "/produkter/tei/rotationshammare/rds1004",
-              "label": "Läs mer",
-              "image": "/assets/img/tei-rotationshammare-rds1004.webp",
-              "width": 1800,
-              "height": 1586,
-              "alt": "RDS1004 – logotipo"
-            }
-          ]
-        },
-        {
-          "type": "text",
-          "html": "RDS1004"
-        },
-        {
-          "type": "cards",
-          "items": [
-            {
-              "href": "/produkter/tei/rotationshammare/rds1004",
-              "label": "Läs mer",
-              "html": "Taggar: topphammare, sänkhammare, rotationshammare",
-              "text": "Etiquetas: martillo en cabeza, martillo de fondo, cabezal de rotación",
-              "image": "/assets/img/tei-rotationshammare-rds1004-2.webp",
-              "width": 1920,
-              "height": 1691,
-              "alt": "RDS1004 – logotipo"
+              "alt": "RDS250",
+              "href": "/produkter/tei/rotationshammare/rds250"
             },
             {
-              "href": "/produkter/tei/rotationshammare/rds1500",
-              "label": "Läs mer",
-              "image": "/assets/img/tei-2.webp",
-              "width": 1920,
-              "height": 1117,
+              "title": "RDS350",
+              "image": "/assets/img/tei-rotationshammare-rds350.webp",
+              "alt": "RDS350",
+              "href": "/produkter/tei/rotationshammare/rds350"
+            },
+            {
+              "title": "RDS550",
+              "image": "/assets/img/tei-rotationshammare-rds550.webp",
+              "alt": "RDS550",
+              "href": "/produkter/tei/rotationshammare/rds550"
+            },
+            {
+              "title": "RDS1004",
+              "image": "/assets/img/tei-rotationshammare-rds1004.webp",
+              "alt": "RDS1004",
+              "href": "/produkter/tei/rotationshammare/rds1004"
+            },
+            {
+              "title": "RDS1500",
+              "image": "/assets/img/tei-rotationshammare-rds1004-2.webp",
+              "alt": "RDS1500",
               "text": "Cabezal de rotación hidráulico de alta resistencia para mástiles de perforación y equipos de perforación de mayor tamaño.",
-              "alt": "RDS1500 – logotipo"
+              "href": "/produkter/tei/rotationshammare/rds1500"
             }
           ]
         },
         {
           "type": "text",
-          "html": "RDS1500"
+          "html": "Etiquetas: martillo en cabeza, martillo de fondo, cabezal de rotación"
         }
       ],
       "published": true
@@ -470,107 +452,101 @@
           "html": "<a href=\"/kontakta-oss\">Kontakt oss</a> for mer informasjon."
         },
         {
-          "type": "image",
-          "alt": "Rotasjonshammere – bilde 3",
-          "width": 1920,
-          "height": 1056,
-          "src": "/assets/img/tei-rotationshammare-3.webp"
+          "type": "table",
+          "header": true,
+          "align": "center",
+          "caption": "Anbefalt hullstørrelsesintervall (mm)",
+          "rows": [
+            [
+              "Modell",
+              "Hullstørrelse (mm)",
+              "Dreiemoment (Nm)",
+              "Vekt (kg)",
+              "Rotasjonsflow (LPM)",
+              "Spylakselens indre diameter (mm)"
+            ],
+            [
+              "RDS250",
+              "70 - 102",
+              "1361",
+              "48",
+              "57–76",
+              "22"
+            ],
+            [
+              "RDS350",
+              "70 - 203",
+              "2721",
+              "55",
+              "76",
+              "25"
+            ],
+            [
+              "RDS550",
+              "102 - 305",
+              "6803",
+              "177",
+              "126",
+              "38"
+            ],
+            [
+              "RDS1004",
+              "127 - 610",
+              "13605",
+              "356",
+              "144–227",
+              "51, 76, 102"
+            ],
+            [
+              "RDS1500",
+              "127 - 750",
+              "20408",
+              "442",
+              "163–227",
+              "51, 76, 102"
+            ]
+          ]
         },
         {
-          "type": "cards",
+          "type": "modules",
+          "layout": "compact",
           "items": [
             {
-              "href": "/produkter/tei/rotationshammare/rds250",
-              "label": "Läs mer",
+              "title": "RDS250",
               "image": "/assets/img/tei-rotationshammare-rds250.webp",
-              "width": 1089,
-              "height": 960,
-              "alt": "RDS250 – logo"
-            }
-          ]
-        },
-        {
-          "type": "text",
-          "html": "RDS250"
-        },
-        {
-          "type": "cards",
-          "items": [
-            {
-              "href": "/produkter/tei/rotationshammare/rds350",
-              "label": "Läs mer",
-              "image": "/assets/img/tei-rotationshammare-rds350.webp",
-              "width": 1375,
-              "height": 1203,
-              "alt": "RDS350 – logo"
-            }
-          ]
-        },
-        {
-          "type": "text",
-          "html": "RDS350"
-        },
-        {
-          "type": "cards",
-          "items": [
-            {
-              "href": "/produkter/tei/rotationshammare/rds550",
-              "label": "Läs mer",
-              "image": "/assets/img/tei-rotationshammare-rds550.webp",
-              "width": 1296,
-              "height": 1142,
-              "alt": "RDS550 – logo"
-            }
-          ]
-        },
-        {
-          "type": "text",
-          "html": "RDS550"
-        },
-        {
-          "type": "cards",
-          "items": [
-            {
-              "href": "/produkter/tei/rotationshammare/rds1004",
-              "label": "Läs mer",
-              "image": "/assets/img/tei-rotationshammare-rds1004.webp",
-              "width": 1800,
-              "height": 1586,
-              "alt": "RDS1004 – logo"
-            }
-          ]
-        },
-        {
-          "type": "text",
-          "html": "RDS1004"
-        },
-        {
-          "type": "cards",
-          "items": [
-            {
-              "href": "/produkter/tei/rotationshammare/rds1004",
-              "label": "Läs mer",
-              "html": "Taggar: topphammare, sänkhammare, rotationshammare",
-              "text": "Tagger: topphammer, senkhammer, rotasjonshammer",
-              "image": "/assets/img/tei-rotationshammare-rds1004-2.webp",
-              "width": 1920,
-              "height": 1691,
-              "alt": "RDS1004 – logo"
+              "alt": "RDS250",
+              "href": "/produkter/tei/rotationshammare/rds250"
             },
             {
-              "href": "/produkter/tei/rotationshammare/rds1500",
-              "label": "Läs mer",
-              "image": "/assets/img/tei-2.webp",
-              "width": 1920,
-              "height": 1117,
+              "title": "RDS350",
+              "image": "/assets/img/tei-rotationshammare-rds350.webp",
+              "alt": "RDS350",
+              "href": "/produkter/tei/rotationshammare/rds350"
+            },
+            {
+              "title": "RDS550",
+              "image": "/assets/img/tei-rotationshammare-rds550.webp",
+              "alt": "RDS550",
+              "href": "/produkter/tei/rotationshammare/rds550"
+            },
+            {
+              "title": "RDS1004",
+              "image": "/assets/img/tei-rotationshammare-rds1004.webp",
+              "alt": "RDS1004",
+              "href": "/produkter/tei/rotationshammare/rds1004"
+            },
+            {
+              "title": "RDS1500",
+              "image": "/assets/img/tei-rotationshammare-rds1004-2.webp",
+              "alt": "RDS1500",
               "text": "Kraftig hydraulisk rotasjonshode for større boremaster og borerigger.",
-              "alt": "RDS1500 – logo"
+              "href": "/produkter/tei/rotationshammare/rds1500"
             }
           ]
         },
         {
           "type": "text",
-          "html": "RDS1500"
+          "html": "Tagger: topphammer, senkhammer, rotasjonshammer"
         }
       ],
       "published": true

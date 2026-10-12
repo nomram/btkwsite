@@ -35,186 +35,216 @@
           "href": "/assets/docs/terra-infrastructure-vibrodrill-broschyr.pdf"
         },
         {
-          "type": "image",
-          "alt": "VibroDrill – bild 2",
-          "width": 1762,
-          "height": 597,
-          "src": "/assets/img/terra-infrastructure-vibrodrill-2.webp"
+          "type": "table",
+          "header": true,
+          "align": "center",
+          "caption": "Borrdjup upp till 100 m",
+          "groups": [
+            {
+              "text": "",
+              "span": 1
+            },
+            {
+              "text": "Stag / mikropålar",
+              "span": 2
+            },
+            {
+              "text": "Borrning med gängad ihålig stång",
+              "span": 2
+            },
+            {
+              "text": "Geotermisk borrning",
+              "span": 1
+            },
+            {
+              "text": "Geoteknisk borrning",
+              "span": 1
+            },
+            {
+              "text": "Bergborrning",
+              "span": 1
+            },
+            {
+              "text": "Rekommenderad borrigg",
+              "span": 1
+            }
+          ],
+          "rows": [
+            [
+              "VD-typ",
+              "Max. foderrör Ø, enkelt foderrör (mm)",
+              "Överlagringsborrning, max. yttre foderrör Ø (mm)",
+              "Max. Ø gängad ihålig stång (mm)",
+              "Max. kron-Ø (mm)",
+              "Max. foderrör Ø (mm)",
+              "Max. foderrör Ø (mm)",
+              "Max. borrhåls-Ø (mm)",
+              "Vikt (t)"
+            ],
+            [
+              "VD 50",
+              "177",
+              "152",
+              "101",
+              "177",
+              "152",
+              "152",
+              "177",
+              "8-12 (105 KW)"
+            ],
+            [
+              "VD 100",
+              "228",
+              "203",
+              "152",
+              "228",
+              "203",
+              "203",
+              "228",
+              "12-16 (120 KW)"
+            ],
+            [
+              "VD 150",
+              "304",
+              "254",
+              "203",
+              "304",
+              "254",
+              "254",
+              "304",
+              "16-22 (150 KW)"
+            ]
+          ]
         },
         {
-          "type": "text",
-          "html": "VD50"
-        },
-        {
-          "type": "image",
-          "alt": "VibroDrill VD50 – logotyp",
-          "href": "/produkter/terra-infrastructure/vibrodrill/vibrodrill-vd50",
-          "width": 612,
-          "height": 612,
-          "src": "/assets/img/terra-infrastructure-vibrodrill-vibrodrill-vd50.webp"
-        },
-        {
-          "type": "text",
-          "html": "• Mikropålar upp till 133 mm"
-        },
-        {
-          "type": "text",
-          "html": "• Hammarborrning"
-        },
-        {
-          "type": "text",
-          "html": "• Stag upp till 52 mm"
-        },
-        {
-          "type": "text",
-          "html": "• Geotermisk borrning upp till 133 mm"
-        },
-        {
-          "type": "text",
-          "html": "• Vridmoment: upp till 6.8 kNm"
-        },
-        {
-          "type": "cards",
+          "type": "modules",
+          "layout": "cards",
           "items": [
             {
+              "title": "VD50",
+              "image": "/assets/img/terra-infrastructure-vibrodrill-vibrodrill-vd50.webp",
+              "alt": "VibroDrill VD50",
               "href": "/produkter/terra-infrastructure/vibrodrill/vibrodrill-vd50",
-              "label": "Läs mer",
+              "bullets": [
+                "Mikropålar upp till 133 mm",
+                "Hammarborrning",
+                "Stag upp till 52 mm",
+                "Geotermisk borrning upp till 133 mm",
+                "Vridmoment: upp till 6.8 kNm"
+              ]
+            },
+            {
               "title": "VD100",
               "image": "/assets/img/terra-infrastructure-vibrodrill-vibrodrill-vd50-2.webp",
-              "width": 547,
-              "height": 547,
-              "alt": "VD100 – logotyp"
-            }
-          ]
-        },
-        {
-          "type": "text",
-          "html": "• Mikropålar upp till 152,4 mm"
-        },
-        {
-          "type": "text",
-          "html": "• Hammarborrning"
-        },
-        {
-          "type": "text",
-          "html": "• Stag upp till 76 mm"
-        },
-        {
-          "type": "text",
-          "html": "• Geotermisk borrning"
-        },
-        {
-          "type": "text",
-          "html": "• Vridmoment: upp till 15 kNm"
-        },
-        {
-          "type": "cards",
-          "items": [
-            {
+              "alt": "VibroDrill VD100",
               "href": "/produkter/terra-infrastructure/vibrodrill/vibrodrill-vd100",
-              "label": "Läs mer",
+              "bullets": [
+                "Mikropålar upp till 152,4 mm",
+                "Hammarborrning",
+                "Stag upp till 76 mm",
+                "Geotermisk borrning",
+                "Vridmoment: upp till 15 kNm"
+              ]
+            },
+            {
               "title": "VD150",
               "image": "/assets/img/terra-infrastructure-vibrodrill-vibrodrill-vd100.webp",
-              "width": 786,
-              "height": 786,
-              "alt": "VD150 – logotyp"
-            }
-          ]
-        },
-        {
-          "type": "text",
-          "html": "• Mikropålar upp till 203 mm"
-        },
-        {
-          "type": "text",
-          "html": "• Hammarborrning"
-        },
-        {
-          "type": "text",
-          "html": "• Stag upp till 125 mm"
-        },
-        {
-          "type": "text",
-          "html": "• Geotermisk borrning upp till 152.4 mm"
-        },
-        {
-          "type": "text",
-          "html": "• Vridmoment: upp till 20.7 kNm"
-        },
-        {
-          "type": "cards",
-          "items": [
-            {
+              "alt": "VibroDrill VD150",
               "href": "/produkter/terra-infrastructure/vibrodrill/vibrodrill-vd150",
-              "label": "Läs mer",
-              "image": "/assets/img/terra-infrastructure-vibrodrill-vibrodrill-vd150-3.webp",
-              "width": 833,
-              "height": 1100,
-              "alt": "VibroDrill VD150 – logotyp"
+              "bullets": [
+                "Mikropålar upp till 203 mm",
+                "Hammarborrning",
+                "Stag upp till 125 mm",
+                "Geotermisk borrning upp till 152.4 mm",
+                "Vridmoment: upp till 20.7 kNm"
+              ]
             }
           ]
         },
         {
-          "type": "image",
-          "alt": "VibroDrill – bild 4",
-          "width": 630,
-          "height": 574,
-          "src": "/assets/img/terra-infrastructure-vibrodrill-4.webp"
+          "type": "columns",
+          "ratio": "40-60",
+          "left": [
+            {
+              "type": "image",
+              "src": "/assets/img/terra-infrastructure-vibrodrill-vibrodrill-vd150-3.webp",
+              "alt": "VibroDrill VD150",
+              "width": 833,
+              "height": 1100
+            },
+            {
+              "type": "image",
+              "alt": "VibroDrill – bild 4",
+              "width": 630,
+              "height": 574,
+              "src": "/assets/img/terra-infrastructure-vibrodrill-4.webp"
+            }
+          ],
+          "right": [
+            {
+              "type": "text",
+              "html": "Flaggskeppet"
+            },
+            {
+              "type": "text",
+              "html": "VibroDrill är byggd för stabilitet, prestanda och lång livslängd.Den är utrustad med en inbyggd dämpningsmekanism (gummi) som motverkar att vibrationerna överförs till masten. Det betyder mindre påfrestning på utrustningen, jämnare borrning och bättre kontroll i produktion."
+            },
+            {
+              "type": "text",
+              "html": "Med borrvinkel 0° till 90° kan VibroDrill VD100 användas både vertikalt och horisontellt – perfekt för allt från klassisk grundläggning till mer avancerade installationer där åtkomst och geometri kräver flexibilitet. Operatören kan även justera det excentriska momentet för att optimera prestandan beroende på markförhållanden."
+            },
+            {
+              "type": "text",
+              "html": "Frekvensalternativ"
+            },
+            {
+              "type": "text",
+              "html": "VibroDrill levereras som standard med 100 Hz, men kan även anpassas till 85 Hz eller 120 Hz beroende på applikation och önskat borrbeteende."
+            },
+            {
+              "type": "text",
+              "html": "Referenser"
+            },
+            {
+              "type": "text",
+              "html": "Efter ett mycket lyckat försök i Köpenhamn i Nordhavnstunnelen, utfört av Grundbau Nord GmbH, tar vi nu denna kraftfulla teknik till den svenska marknaden. I Sverige kommer den snart att användas av en av Sveriges största enterprenörer inom grundläggning."
+            },
+            {
+              "type": "text",
+              "html": "Ta en titt i broschyren nedan eller <a href=\"/kontakta-oss\">kontakta oss</a> för mer information."
+            }
+          ]
         },
         {
-          "type": "text",
-          "html": "Flaggskeppet"
-        },
-        {
-          "type": "text",
-          "html": "VibroDrill är byggd för stabilitet, prestanda och lång livslängd.Den är utrustad med en inbyggd dämpningsmekanism (gummi) som motverkar att vibrationerna överförs till masten. Det betyder mindre påfrestning på utrustningen, jämnare borrning och bättre kontroll i produktion."
-        },
-        {
-          "type": "text",
-          "html": "Med borrvinkel 0° till 90° kan VibroDrill VD100 användas både vertikalt och horisontellt – perfekt för allt från klassisk grundläggning till mer avancerade installationer där åtkomst och geometri kräver flexibilitet. Operatören kan även justera det excentriska momentet för att optimera prestandan beroende på markförhållanden."
-        },
-        {
-          "type": "text",
-          "html": "Frekvensalternativ"
-        },
-        {
-          "type": "text",
-          "html": "VibroDrill levereras som standard med 100 Hz, men kan även anpassas till 85 Hz eller 120 Hz beroende på applikation och önskat borrbeteende."
-        },
-        {
-          "type": "text",
-          "html": "Referenser"
-        },
-        {
-          "type": "text",
-          "html": "Efter ett mycket lyckat försök i Köpenhamn i Nordhavnstunnelen, utfört av Grundbau Nord GmbH, tar vi nu denna kraftfulla teknik till den svenska marknaden. I Sverige kommer den snart att användas av en av Sveriges största enterprenörer inom grundläggning."
-        },
-        {
-          "type": "text",
-          "html": "Ta en titt i broschyren nedan eller <a href=\"/kontakta-oss\">kontakta oss</a> för mer information."
-        },
-        {
-          "type": "text",
-          "html": "VibroDrill-serien"
-        },
-        {
-          "type": "text",
-          "html": "Serien består också av: VD50, VD100 samt VD150."
-        },
-        {
-          "type": "text",
-          "html": "Hör av dig så berättar vi mer om applikationer och vilken VibroDrill-modell (VD50, VD100 eller VD150) som passar bäst för just dina projekt."
-        },
-        {
-          "type": "text",
-          "html": "Kika i broschyren eller <a href=\"/kontakta-oss\">kontakta oss</a> för mer information."
-        },
-        {
-          "type": "image",
-          "alt": "VibroDrill – bild 5",
-          "width": 331,
-          "height": 437,
-          "src": "/assets/img/terra-infrastructure-vibrodrill-5.webp"
+          "type": "columns",
+          "ratio": "60-40",
+          "left": [
+            {
+              "type": "text",
+              "html": "VibroDrill-serien"
+            },
+            {
+              "type": "text",
+              "html": "Serien består också av: VD50, VD100 samt VD150."
+            },
+            {
+              "type": "text",
+              "html": "Hör av dig så berättar vi mer om applikationer och vilken VibroDrill-modell (VD50, VD100 eller VD150) som passar bäst för just dina projekt."
+            },
+            {
+              "type": "text",
+              "html": "Kika i broschyren eller <a href=\"/kontakta-oss\">kontakta oss</a> för mer information."
+            }
+          ],
+          "right": [
+            {
+              "type": "image",
+              "alt": "VibroDrill – bild 5",
+              "width": 331,
+              "height": 437,
+              "src": "/assets/img/terra-infrastructure-vibrodrill-5.webp"
+            }
+          ]
         },
         {
           "type": "text",
@@ -275,186 +305,216 @@
           "href": "/assets/docs/terra-infrastructure-vibrodrill-broschyr.pdf"
         },
         {
-          "type": "image",
-          "alt": "VibroDrill – image 2",
-          "width": 1762,
-          "height": 597,
-          "src": "/assets/img/terra-infrastructure-vibrodrill-2.webp"
+          "type": "table",
+          "header": true,
+          "align": "center",
+          "caption": "Depth up to 100 m",
+          "groups": [
+            {
+              "text": "",
+              "span": 1
+            },
+            {
+              "text": "Strand anchors / micropiles",
+              "span": 2
+            },
+            {
+              "text": "Threaded hollow bar drilling",
+              "span": 2
+            },
+            {
+              "text": "Geothermal drilling",
+              "span": 1
+            },
+            {
+              "text": "Geotechnical drilling",
+              "span": 1
+            },
+            {
+              "text": "Rock drilling",
+              "span": 1
+            },
+            {
+              "text": "Recommended drilling rig",
+              "span": 1
+            }
+          ],
+          "rows": [
+            [
+              "VD-Type",
+              "Max. casing Ø with single casing (mm)",
+              "Overburden drilling max. outer casing Ø (mm)",
+              "Max. Ø threaded hollow bar (mm)",
+              "Max. bit Ø (mm)",
+              "Max. casing Ø (mm)",
+              "Max. casing Ø (mm)",
+              "Max. bore hole Ø (mm)",
+              "Weight (t)"
+            ],
+            [
+              "VD 50",
+              "177",
+              "152",
+              "101",
+              "177",
+              "152",
+              "152",
+              "177",
+              "8-12 (105 KW)"
+            ],
+            [
+              "VD 100",
+              "228",
+              "203",
+              "152",
+              "228",
+              "203",
+              "203",
+              "228",
+              "12-16 (120 KW)"
+            ],
+            [
+              "VD 150",
+              "304",
+              "254",
+              "203",
+              "304",
+              "254",
+              "254",
+              "304",
+              "16-22 (150 KW)"
+            ]
+          ]
         },
         {
-          "type": "text",
-          "html": "VD50"
-        },
-        {
-          "type": "image",
-          "alt": "VibroDrill VD50 – logo",
-          "href": "/produkter/terra-infrastructure/vibrodrill/vibrodrill-vd50",
-          "width": 612,
-          "height": 612,
-          "src": "/assets/img/terra-infrastructure-vibrodrill-vibrodrill-vd50.webp"
-        },
-        {
-          "type": "text",
-          "html": "• Micropiles up to 133 mm"
-        },
-        {
-          "type": "text",
-          "html": "• Hammer drilling"
-        },
-        {
-          "type": "text",
-          "html": "• Anchors up to 52 mm"
-        },
-        {
-          "type": "text",
-          "html": "• Geothermal drilling up to 133 mm"
-        },
-        {
-          "type": "text",
-          "html": "• Torque: up to 6.8 kNm"
-        },
-        {
-          "type": "cards",
+          "type": "modules",
+          "layout": "cards",
           "items": [
             {
+              "title": "VD50",
+              "image": "/assets/img/terra-infrastructure-vibrodrill-vibrodrill-vd50.webp",
+              "alt": "VibroDrill VD50",
               "href": "/produkter/terra-infrastructure/vibrodrill/vibrodrill-vd50",
-              "label": "Läs mer",
+              "bullets": [
+                "Micropiles up to 133 mm",
+                "Hammer drilling",
+                "Anchors up to 52 mm",
+                "Geothermal drilling up to 133 mm",
+                "Torque: up to 6.8 kNm"
+              ]
+            },
+            {
               "title": "VD100",
               "image": "/assets/img/terra-infrastructure-vibrodrill-vibrodrill-vd50-2.webp",
-              "width": 547,
-              "height": 547,
-              "alt": "VD100 – logo"
-            }
-          ]
-        },
-        {
-          "type": "text",
-          "html": "• Micropiles up to 152.4 mm"
-        },
-        {
-          "type": "text",
-          "html": "• Hammer drilling"
-        },
-        {
-          "type": "text",
-          "html": "• Anchors up to 76 mm"
-        },
-        {
-          "type": "text",
-          "html": "• Geothermal drilling"
-        },
-        {
-          "type": "text",
-          "html": "• Torque: up to 15 kNm"
-        },
-        {
-          "type": "cards",
-          "items": [
-            {
+              "alt": "VibroDrill VD100",
               "href": "/produkter/terra-infrastructure/vibrodrill/vibrodrill-vd100",
-              "label": "Läs mer",
+              "bullets": [
+                "Micropiles up to 152.4 mm",
+                "Hammer drilling",
+                "Anchors up to 76 mm",
+                "Geothermal drilling",
+                "Torque: up to 15 kNm"
+              ]
+            },
+            {
               "title": "VD150",
               "image": "/assets/img/terra-infrastructure-vibrodrill-vibrodrill-vd100.webp",
-              "width": 786,
-              "height": 786,
-              "alt": "VD150 – logo"
-            }
-          ]
-        },
-        {
-          "type": "text",
-          "html": "• Micropiles up to 203 mm"
-        },
-        {
-          "type": "text",
-          "html": "• Hammer drilling"
-        },
-        {
-          "type": "text",
-          "html": "• Anchors up to 125 mm"
-        },
-        {
-          "type": "text",
-          "html": "• Geothermal drilling up to 152.4 mm"
-        },
-        {
-          "type": "text",
-          "html": "• Torque: up to 20.7 kNm"
-        },
-        {
-          "type": "cards",
-          "items": [
-            {
+              "alt": "VibroDrill VD150",
               "href": "/produkter/terra-infrastructure/vibrodrill/vibrodrill-vd150",
-              "label": "Läs mer",
-              "image": "/assets/img/terra-infrastructure-vibrodrill-vibrodrill-vd150-3.webp",
-              "width": 833,
-              "height": 1100,
-              "alt": "VibroDrill VD150 – logo"
+              "bullets": [
+                "Micropiles up to 203 mm",
+                "Hammer drilling",
+                "Anchors up to 125 mm",
+                "Geothermal drilling up to 152.4 mm",
+                "Torque: up to 20.7 kNm"
+              ]
             }
           ]
         },
         {
-          "type": "image",
-          "alt": "VibroDrill – image 4",
-          "width": 630,
-          "height": 574,
-          "src": "/assets/img/terra-infrastructure-vibrodrill-4.webp"
+          "type": "columns",
+          "ratio": "40-60",
+          "left": [
+            {
+              "type": "image",
+              "src": "/assets/img/terra-infrastructure-vibrodrill-vibrodrill-vd150-3.webp",
+              "alt": "VibroDrill VD150",
+              "width": 833,
+              "height": 1100
+            },
+            {
+              "type": "image",
+              "alt": "VibroDrill – image 4",
+              "width": 630,
+              "height": 574,
+              "src": "/assets/img/terra-infrastructure-vibrodrill-4.webp"
+            }
+          ],
+          "right": [
+            {
+              "type": "text",
+              "html": "The flagship"
+            },
+            {
+              "type": "text",
+              "html": "VibroDrill is built for stability, performance and long service life. It is equipped with a built-in damping mechanism (rubber) that prevents vibrations from being transferred to the mast. This means less strain on the equipment, smoother drilling and better control in production."
+            },
+            {
+              "type": "text",
+              "html": "With a drilling angle of 0° to 90°, VibroDrill VD100 can be used both vertically and horizontally – perfect for everything from classic foundation work to more advanced installations where access and geometry require flexibility. The operator can also adjust the eccentric moment to optimise performance depending on ground conditions."
+            },
+            {
+              "type": "text",
+              "html": "Frequency options"
+            },
+            {
+              "type": "text",
+              "html": "VibroDrill is delivered as standard with 100 Hz, but can also be adapted to 85 Hz or 120 Hz depending on application and desired drilling behaviour."
+            },
+            {
+              "type": "text",
+              "html": "References"
+            },
+            {
+              "type": "text",
+              "html": "After a very successful trial in Copenhagen in the Nordhavn tunnel, carried out by Grundbau Nord GmbH, we are now bringing this powerful technology to the Swedish market. In Sweden it will soon be used by one of Sweden’s largest foundation contractors."
+            },
+            {
+              "type": "text",
+              "html": "Take a look at the brochure below or <a href=\"/kontakta-oss\">contact us</a> for more information."
+            }
+          ]
         },
         {
-          "type": "text",
-          "html": "The flagship"
-        },
-        {
-          "type": "text",
-          "html": "VibroDrill is built for stability, performance and long service life. It is equipped with a built-in damping mechanism (rubber) that prevents vibrations from being transferred to the mast. This means less strain on the equipment, smoother drilling and better control in production."
-        },
-        {
-          "type": "text",
-          "html": "With a drilling angle of 0° to 90°, VibroDrill VD100 can be used both vertically and horizontally – perfect for everything from classic foundation work to more advanced installations where access and geometry require flexibility. The operator can also adjust the eccentric moment to optimise performance depending on ground conditions."
-        },
-        {
-          "type": "text",
-          "html": "Frequency options"
-        },
-        {
-          "type": "text",
-          "html": "VibroDrill is delivered as standard with 100 Hz, but can also be adapted to 85 Hz or 120 Hz depending on application and desired drilling behaviour."
-        },
-        {
-          "type": "text",
-          "html": "References"
-        },
-        {
-          "type": "text",
-          "html": "After a very successful trial in Copenhagen in the Nordhavn tunnel, carried out by Grundbau Nord GmbH, we are now bringing this powerful technology to the Swedish market. In Sweden it will soon be used by one of Sweden’s largest foundation contractors."
-        },
-        {
-          "type": "text",
-          "html": "Take a look at the brochure below or <a href=\"/kontakta-oss\">contact us</a> for more information."
-        },
-        {
-          "type": "text",
-          "html": "The VibroDrill series"
-        },
-        {
-          "type": "text",
-          "html": "The series also consists of: VD50, VD100 and VD150."
-        },
-        {
-          "type": "text",
-          "html": "Get in touch and we will tell you more about applications and which VibroDrill model (VD50, VD100 or VD150) suits your projects best."
-        },
-        {
-          "type": "text",
-          "html": "Take a look at the brochure or <a href=\"/kontakta-oss\">contact us</a> for more information."
-        },
-        {
-          "type": "image",
-          "alt": "VibroDrill – image 5",
-          "width": 331,
-          "height": 437,
-          "src": "/assets/img/terra-infrastructure-vibrodrill-5.webp"
+          "type": "columns",
+          "ratio": "60-40",
+          "left": [
+            {
+              "type": "text",
+              "html": "The VibroDrill series"
+            },
+            {
+              "type": "text",
+              "html": "The series also consists of: VD50, VD100 and VD150."
+            },
+            {
+              "type": "text",
+              "html": "Get in touch and we will tell you more about applications and which VibroDrill model (VD50, VD100 or VD150) suits your projects best."
+            },
+            {
+              "type": "text",
+              "html": "Take a look at the brochure or <a href=\"/kontakta-oss\">contact us</a> for more information."
+            }
+          ],
+          "right": [
+            {
+              "type": "image",
+              "alt": "VibroDrill – image 5",
+              "width": 331,
+              "height": 437,
+              "src": "/assets/img/terra-infrastructure-vibrodrill-5.webp"
+            }
+          ]
         },
         {
           "type": "text",
@@ -516,186 +576,216 @@
           "href": "/assets/docs/terra-infrastructure-vibrodrill-broschyr.pdf"
         },
         {
-          "type": "image",
-          "alt": "VibroDrill – imagen 2",
-          "width": 1762,
-          "height": 597,
-          "src": "/assets/img/terra-infrastructure-vibrodrill-2.webp"
+          "type": "table",
+          "header": true,
+          "align": "center",
+          "caption": "Profundidad hasta 100 m",
+          "groups": [
+            {
+              "text": "",
+              "span": 1
+            },
+            {
+              "text": "Anclajes de cable / micropilotes",
+              "span": 2
+            },
+            {
+              "text": "Perforación con barra hueca roscada",
+              "span": 2
+            },
+            {
+              "text": "Perforación geotérmica",
+              "span": 1
+            },
+            {
+              "text": "Perforación geotécnica",
+              "span": 1
+            },
+            {
+              "text": "Perforación en roca",
+              "span": 1
+            },
+            {
+              "text": "Equipo de perforación recomendado",
+              "span": 1
+            }
+          ],
+          "rows": [
+            [
+              "Tipo VD",
+              "Ø máx. de entubación, entubación simple (mm)",
+              "Perforación con sobrecarga: Ø exterior máx. de entubación (mm)",
+              "Ø máx. de barra hueca roscada (mm)",
+              "Ø máx. de broca (mm)",
+              "Ø máx. de entubación (mm)",
+              "Ø máx. de entubación (mm)",
+              "Ø máx. del taladro (mm)",
+              "Peso (t)"
+            ],
+            [
+              "VD 50",
+              "177",
+              "152",
+              "101",
+              "177",
+              "152",
+              "152",
+              "177",
+              "8-12 (105 KW)"
+            ],
+            [
+              "VD 100",
+              "228",
+              "203",
+              "152",
+              "228",
+              "203",
+              "203",
+              "228",
+              "12-16 (120 KW)"
+            ],
+            [
+              "VD 150",
+              "304",
+              "254",
+              "203",
+              "304",
+              "254",
+              "254",
+              "304",
+              "16-22 (150 KW)"
+            ]
+          ]
         },
         {
-          "type": "text",
-          "html": "VD50"
-        },
-        {
-          "type": "image",
-          "alt": "VibroDrill VD50 – logotipo",
-          "href": "/produkter/terra-infrastructure/vibrodrill/vibrodrill-vd50",
-          "width": 612,
-          "height": 612,
-          "src": "/assets/img/terra-infrastructure-vibrodrill-vibrodrill-vd50.webp"
-        },
-        {
-          "type": "text",
-          "html": "• Micropilotes de hasta 133 mm"
-        },
-        {
-          "type": "text",
-          "html": "• Perforación con martillo"
-        },
-        {
-          "type": "text",
-          "html": "• Anclajes de hasta 52 mm"
-        },
-        {
-          "type": "text",
-          "html": "• Perforación geotérmica de hasta 133 mm"
-        },
-        {
-          "type": "text",
-          "html": "• Par: hasta 6,8 kNm"
-        },
-        {
-          "type": "cards",
+          "type": "modules",
+          "layout": "cards",
           "items": [
             {
+              "title": "VD50",
+              "image": "/assets/img/terra-infrastructure-vibrodrill-vibrodrill-vd50.webp",
+              "alt": "VibroDrill VD50",
               "href": "/produkter/terra-infrastructure/vibrodrill/vibrodrill-vd50",
-              "label": "Läs mer",
+              "bullets": [
+                "Micropilotes de hasta 133 mm",
+                "Perforación con martillo",
+                "Anclajes de hasta 52 mm",
+                "Perforación geotérmica de hasta 133 mm",
+                "Par: hasta 6,8 kNm"
+              ]
+            },
+            {
               "title": "VD100",
               "image": "/assets/img/terra-infrastructure-vibrodrill-vibrodrill-vd50-2.webp",
-              "width": 547,
-              "height": 547,
-              "alt": "VD100 – logotipo"
-            }
-          ]
-        },
-        {
-          "type": "text",
-          "html": "• Micropilotes de hasta 152,4 mm"
-        },
-        {
-          "type": "text",
-          "html": "• Perforación con martillo"
-        },
-        {
-          "type": "text",
-          "html": "• Anclajes de hasta 76 mm"
-        },
-        {
-          "type": "text",
-          "html": "• Perforación geotérmica"
-        },
-        {
-          "type": "text",
-          "html": "• Par: hasta 15 kNm"
-        },
-        {
-          "type": "cards",
-          "items": [
-            {
+              "alt": "VibroDrill VD100",
               "href": "/produkter/terra-infrastructure/vibrodrill/vibrodrill-vd100",
-              "label": "Läs mer",
+              "bullets": [
+                "Micropilotes de hasta 152,4 mm",
+                "Perforación con martillo",
+                "Anclajes de hasta 76 mm",
+                "Perforación geotérmica",
+                "Par: hasta 15 kNm"
+              ]
+            },
+            {
               "title": "VD150",
               "image": "/assets/img/terra-infrastructure-vibrodrill-vibrodrill-vd100.webp",
-              "width": 786,
-              "height": 786,
-              "alt": "VD150 – logotipo"
-            }
-          ]
-        },
-        {
-          "type": "text",
-          "html": "• Micropilotes de hasta 203 mm"
-        },
-        {
-          "type": "text",
-          "html": "• Perforación con martillo"
-        },
-        {
-          "type": "text",
-          "html": "• Anclajes de hasta 125 mm"
-        },
-        {
-          "type": "text",
-          "html": "• Perforación geotérmica de hasta 152,4 mm"
-        },
-        {
-          "type": "text",
-          "html": "• Par: hasta 20,7 kNm"
-        },
-        {
-          "type": "cards",
-          "items": [
-            {
+              "alt": "VibroDrill VD150",
               "href": "/produkter/terra-infrastructure/vibrodrill/vibrodrill-vd150",
-              "label": "Läs mer",
-              "image": "/assets/img/terra-infrastructure-vibrodrill-vibrodrill-vd150-3.webp",
-              "width": 833,
-              "height": 1100,
-              "alt": "VibroDrill VD150 – logotipo"
+              "bullets": [
+                "Micropilotes de hasta 203 mm",
+                "Perforación con martillo",
+                "Anclajes de hasta 125 mm",
+                "Perforación geotérmica de hasta 152,4 mm",
+                "Par: hasta 20,7 kNm"
+              ]
             }
           ]
         },
         {
-          "type": "image",
-          "alt": "VibroDrill – imagen 4",
-          "width": 630,
-          "height": 574,
-          "src": "/assets/img/terra-infrastructure-vibrodrill-4.webp"
+          "type": "columns",
+          "ratio": "40-60",
+          "left": [
+            {
+              "type": "image",
+              "src": "/assets/img/terra-infrastructure-vibrodrill-vibrodrill-vd150-3.webp",
+              "alt": "VibroDrill VD150",
+              "width": 833,
+              "height": 1100
+            },
+            {
+              "type": "image",
+              "alt": "VibroDrill – imagen 4",
+              "width": 630,
+              "height": 574,
+              "src": "/assets/img/terra-infrastructure-vibrodrill-4.webp"
+            }
+          ],
+          "right": [
+            {
+              "type": "text",
+              "html": "El modelo estrella"
+            },
+            {
+              "type": "text",
+              "html": "VibroDrill está construido para ofrecer estabilidad, rendimiento y una larga vida útil. Está equipado con un mecanismo de amortiguación integrado (de goma) que evita que las vibraciones se transmitan al mástil. Esto supone menos esfuerzo para el equipo, una perforación más uniforme y mejor control en producción."
+            },
+            {
+              "type": "text",
+              "html": "Con un ángulo de perforación de 0° a 90°, el VibroDrill VD100 puede utilizarse tanto en vertical como en horizontal: perfecto para todo, desde cimentaciones clásicas hasta instalaciones más avanzadas en las que el acceso y la geometría exigen flexibilidad. El operador también puede ajustar el momento excéntrico para optimizar el rendimiento según las condiciones del terreno."
+            },
+            {
+              "type": "text",
+              "html": "Opciones de frecuencia"
+            },
+            {
+              "type": "text",
+              "html": "VibroDrill se suministra de serie con 100 Hz, pero también puede adaptarse a 85 Hz o 120 Hz según la aplicación y el comportamiento de perforación deseado."
+            },
+            {
+              "type": "text",
+              "html": "Referencias"
+            },
+            {
+              "type": "text",
+              "html": "Tras una prueba muy satisfactoria en Copenhague, en el túnel de Nordhavn, realizada por Grundbau Nord GmbH, llevamos ahora esta potente tecnología al mercado sueco. En Suecia pronto será utilizada por uno de los mayores contratistas de cimentaciones del país."
+            },
+            {
+              "type": "text",
+              "html": "Consulte el folleto que figura a continuación o <a href=\"/kontakta-oss\">contáctenos</a> para más información."
+            }
+          ]
         },
         {
-          "type": "text",
-          "html": "El modelo estrella"
-        },
-        {
-          "type": "text",
-          "html": "VibroDrill está construido para ofrecer estabilidad, rendimiento y una larga vida útil. Está equipado con un mecanismo de amortiguación integrado (de goma) que evita que las vibraciones se transmitan al mástil. Esto supone menos esfuerzo para el equipo, una perforación más uniforme y mejor control en producción."
-        },
-        {
-          "type": "text",
-          "html": "Con un ángulo de perforación de 0° a 90°, el VibroDrill VD100 puede utilizarse tanto en vertical como en horizontal: perfecto para todo, desde cimentaciones clásicas hasta instalaciones más avanzadas en las que el acceso y la geometría exigen flexibilidad. El operador también puede ajustar el momento excéntrico para optimizar el rendimiento según las condiciones del terreno."
-        },
-        {
-          "type": "text",
-          "html": "Opciones de frecuencia"
-        },
-        {
-          "type": "text",
-          "html": "VibroDrill se suministra de serie con 100 Hz, pero también puede adaptarse a 85 Hz o 120 Hz según la aplicación y el comportamiento de perforación deseado."
-        },
-        {
-          "type": "text",
-          "html": "Referencias"
-        },
-        {
-          "type": "text",
-          "html": "Tras una prueba muy satisfactoria en Copenhague, en el túnel de Nordhavn, realizada por Grundbau Nord GmbH, llevamos ahora esta potente tecnología al mercado sueco. En Suecia pronto será utilizada por uno de los mayores contratistas de cimentaciones del país."
-        },
-        {
-          "type": "text",
-          "html": "Consulte el folleto que figura a continuación o <a href=\"/kontakta-oss\">contáctenos</a> para más información."
-        },
-        {
-          "type": "text",
-          "html": "La serie VibroDrill"
-        },
-        {
-          "type": "text",
-          "html": "La serie también consta de: VD50, VD100 y VD150."
-        },
-        {
-          "type": "text",
-          "html": "Póngase en contacto con nosotros y le explicaremos más sobre las aplicaciones y qué modelo VibroDrill (VD50, VD100 o VD150) se adapta mejor a sus proyectos."
-        },
-        {
-          "type": "text",
-          "html": "Consulte el folleto o <a href=\"/kontakta-oss\">contáctenos</a> para más información."
-        },
-        {
-          "type": "image",
-          "alt": "VibroDrill – imagen 5",
-          "width": 331,
-          "height": 437,
-          "src": "/assets/img/terra-infrastructure-vibrodrill-5.webp"
+          "type": "columns",
+          "ratio": "60-40",
+          "left": [
+            {
+              "type": "text",
+              "html": "La serie VibroDrill"
+            },
+            {
+              "type": "text",
+              "html": "La serie también consta de: VD50, VD100 y VD150."
+            },
+            {
+              "type": "text",
+              "html": "Póngase en contacto con nosotros y le explicaremos más sobre las aplicaciones y qué modelo VibroDrill (VD50, VD100 o VD150) se adapta mejor a sus proyectos."
+            },
+            {
+              "type": "text",
+              "html": "Consulte el folleto o <a href=\"/kontakta-oss\">contáctenos</a> para más información."
+            }
+          ],
+          "right": [
+            {
+              "type": "image",
+              "alt": "VibroDrill – imagen 5",
+              "width": 331,
+              "height": 437,
+              "src": "/assets/img/terra-infrastructure-vibrodrill-5.webp"
+            }
+          ]
         },
         {
           "type": "text",
@@ -757,186 +847,216 @@
           "href": "/assets/docs/terra-infrastructure-vibrodrill-broschyr.pdf"
         },
         {
-          "type": "image",
-          "alt": "VibroDrill – bilde 2",
-          "width": 1762,
-          "height": 597,
-          "src": "/assets/img/terra-infrastructure-vibrodrill-2.webp"
+          "type": "table",
+          "header": true,
+          "align": "center",
+          "caption": "Dybde opptil 100 m",
+          "groups": [
+            {
+              "text": "",
+              "span": 1
+            },
+            {
+              "text": "Stag / mikropeler",
+              "span": 2
+            },
+            {
+              "text": "Boring med gjenget hul stang",
+              "span": 2
+            },
+            {
+              "text": "Geotermisk boring",
+              "span": 1
+            },
+            {
+              "text": "Geoteknisk boring",
+              "span": 1
+            },
+            {
+              "text": "Fjellboring",
+              "span": 1
+            },
+            {
+              "text": "Anbefalt borerigg",
+              "span": 1
+            }
+          ],
+          "rows": [
+            [
+              "VD-type",
+              "Maks. foringsrør Ø, enkelt foringsrør (mm)",
+              "Overlagringsboring, maks. ytre foringsrør Ø (mm)",
+              "Maks. Ø gjenget hul stang (mm)",
+              "Maks. kroneØ (mm)",
+              "Maks. foringsrør Ø (mm)",
+              "Maks. foringsrør Ø (mm)",
+              "Maks. borehulls-Ø (mm)",
+              "Vekt (t)"
+            ],
+            [
+              "VD 50",
+              "177",
+              "152",
+              "101",
+              "177",
+              "152",
+              "152",
+              "177",
+              "8-12 (105 KW)"
+            ],
+            [
+              "VD 100",
+              "228",
+              "203",
+              "152",
+              "228",
+              "203",
+              "203",
+              "228",
+              "12-16 (120 KW)"
+            ],
+            [
+              "VD 150",
+              "304",
+              "254",
+              "203",
+              "304",
+              "254",
+              "254",
+              "304",
+              "16-22 (150 KW)"
+            ]
+          ]
         },
         {
-          "type": "text",
-          "html": "VD50"
-        },
-        {
-          "type": "image",
-          "alt": "VibroDrill VD50 – logo",
-          "href": "/produkter/terra-infrastructure/vibrodrill/vibrodrill-vd50",
-          "width": 612,
-          "height": 612,
-          "src": "/assets/img/terra-infrastructure-vibrodrill-vibrodrill-vd50.webp"
-        },
-        {
-          "type": "text",
-          "html": "• Mikropeler opptil 133 mm"
-        },
-        {
-          "type": "text",
-          "html": "• Hammerboring"
-        },
-        {
-          "type": "text",
-          "html": "• Stag opptil 52 mm"
-        },
-        {
-          "type": "text",
-          "html": "• Geotermisk boring opptil 133 mm"
-        },
-        {
-          "type": "text",
-          "html": "• Dreiemoment: opptil 6,8 kNm"
-        },
-        {
-          "type": "cards",
+          "type": "modules",
+          "layout": "cards",
           "items": [
             {
+              "title": "VD50",
+              "image": "/assets/img/terra-infrastructure-vibrodrill-vibrodrill-vd50.webp",
+              "alt": "VibroDrill VD50",
               "href": "/produkter/terra-infrastructure/vibrodrill/vibrodrill-vd50",
-              "label": "Läs mer",
+              "bullets": [
+                "Mikropeler opptil 133 mm",
+                "Hammerboring",
+                "Stag opptil 52 mm",
+                "Geotermisk boring opptil 133 mm",
+                "Dreiemoment: opptil 6,8 kNm"
+              ]
+            },
+            {
               "title": "VD100",
               "image": "/assets/img/terra-infrastructure-vibrodrill-vibrodrill-vd50-2.webp",
-              "width": 547,
-              "height": 547,
-              "alt": "VD100 – logo"
-            }
-          ]
-        },
-        {
-          "type": "text",
-          "html": "• Mikropeler opptil 152,4 mm"
-        },
-        {
-          "type": "text",
-          "html": "• Hammerboring"
-        },
-        {
-          "type": "text",
-          "html": "• Stag opptil 76 mm"
-        },
-        {
-          "type": "text",
-          "html": "• Geotermisk boring"
-        },
-        {
-          "type": "text",
-          "html": "• Dreiemoment: opptil 15 kNm"
-        },
-        {
-          "type": "cards",
-          "items": [
-            {
+              "alt": "VibroDrill VD100",
               "href": "/produkter/terra-infrastructure/vibrodrill/vibrodrill-vd100",
-              "label": "Läs mer",
+              "bullets": [
+                "Mikropeler opptil 152,4 mm",
+                "Hammerboring",
+                "Stag opptil 76 mm",
+                "Geotermisk boring",
+                "Dreiemoment: opptil 15 kNm"
+              ]
+            },
+            {
               "title": "VD150",
               "image": "/assets/img/terra-infrastructure-vibrodrill-vibrodrill-vd100.webp",
-              "width": 786,
-              "height": 786,
-              "alt": "VD150 – logo"
-            }
-          ]
-        },
-        {
-          "type": "text",
-          "html": "• Mikropeler opptil 203 mm"
-        },
-        {
-          "type": "text",
-          "html": "• Hammerboring"
-        },
-        {
-          "type": "text",
-          "html": "• Stag opptil 125 mm"
-        },
-        {
-          "type": "text",
-          "html": "• Geotermisk boring opptil 152,4 mm"
-        },
-        {
-          "type": "text",
-          "html": "• Dreiemoment: opptil 20,7 kNm"
-        },
-        {
-          "type": "cards",
-          "items": [
-            {
+              "alt": "VibroDrill VD150",
               "href": "/produkter/terra-infrastructure/vibrodrill/vibrodrill-vd150",
-              "label": "Läs mer",
-              "image": "/assets/img/terra-infrastructure-vibrodrill-vibrodrill-vd150-3.webp",
-              "width": 833,
-              "height": 1100,
-              "alt": "VibroDrill VD150 – logo"
+              "bullets": [
+                "Mikropeler opptil 203 mm",
+                "Hammerboring",
+                "Stag opptil 125 mm",
+                "Geotermisk boring opptil 152,4 mm",
+                "Dreiemoment: opptil 20,7 kNm"
+              ]
             }
           ]
         },
         {
-          "type": "image",
-          "alt": "VibroDrill – bilde 4",
-          "width": 630,
-          "height": 574,
-          "src": "/assets/img/terra-infrastructure-vibrodrill-4.webp"
+          "type": "columns",
+          "ratio": "40-60",
+          "left": [
+            {
+              "type": "image",
+              "src": "/assets/img/terra-infrastructure-vibrodrill-vibrodrill-vd150-3.webp",
+              "alt": "VibroDrill VD150",
+              "width": 833,
+              "height": 1100
+            },
+            {
+              "type": "image",
+              "alt": "VibroDrill – bilde 4",
+              "width": 630,
+              "height": 574,
+              "src": "/assets/img/terra-infrastructure-vibrodrill-4.webp"
+            }
+          ],
+          "right": [
+            {
+              "type": "text",
+              "html": "Flaggskipet"
+            },
+            {
+              "type": "text",
+              "html": "VibroDrill er bygget for stabilitet, ytelse og lang levetid. Den er utstyrt med en innebygd dempingsmekanisme (gummi) som hindrer at vibrasjonene overføres til masten. Det betyr mindre belastning på utstyret, jevnere boring og bedre kontroll i produksjon."
+            },
+            {
+              "type": "text",
+              "html": "Med en borevinkel fra 0° til 90° kan VibroDrill VD100 brukes både vertikalt og horisontalt – perfekt for alt fra klassisk fundamentering til mer avanserte installasjoner der tilgang og geometri krever fleksibilitet. Operatøren kan også justere det eksentriske momentet for å optimalisere ytelsen avhengig av grunnforholdene."
+            },
+            {
+              "type": "text",
+              "html": "Frekvensalternativer"
+            },
+            {
+              "type": "text",
+              "html": "VibroDrill leveres som standard med 100 Hz, men kan også tilpasses 85 Hz eller 120 Hz avhengig av applikasjon og ønsket boreatferd."
+            },
+            {
+              "type": "text",
+              "html": "Referanser"
+            },
+            {
+              "type": "text",
+              "html": "Etter en svært vellykket test i København i Nordhavn-tunnelen, utført av Grundbau Nord GmbH, bringer vi nå denne kraftfulle teknologien til det svenske markedet. I Sverige vil den snart bli brukt av en av Sveriges største entreprenører innen fundamentering."
+            },
+            {
+              "type": "text",
+              "html": "Ta en titt i brosjyren nedenfor eller <a href=\"/kontakta-oss\">kontakt oss</a> for mer informasjon."
+            }
+          ]
         },
         {
-          "type": "text",
-          "html": "Flaggskipet"
-        },
-        {
-          "type": "text",
-          "html": "VibroDrill er bygget for stabilitet, ytelse og lang levetid. Den er utstyrt med en innebygd dempingsmekanisme (gummi) som hindrer at vibrasjonene overføres til masten. Det betyr mindre belastning på utstyret, jevnere boring og bedre kontroll i produksjon."
-        },
-        {
-          "type": "text",
-          "html": "Med en borevinkel fra 0° til 90° kan VibroDrill VD100 brukes både vertikalt og horisontalt – perfekt for alt fra klassisk fundamentering til mer avanserte installasjoner der tilgang og geometri krever fleksibilitet. Operatøren kan også justere det eksentriske momentet for å optimalisere ytelsen avhengig av grunnforholdene."
-        },
-        {
-          "type": "text",
-          "html": "Frekvensalternativer"
-        },
-        {
-          "type": "text",
-          "html": "VibroDrill leveres som standard med 100 Hz, men kan også tilpasses 85 Hz eller 120 Hz avhengig av applikasjon og ønsket boreatferd."
-        },
-        {
-          "type": "text",
-          "html": "Referanser"
-        },
-        {
-          "type": "text",
-          "html": "Etter en svært vellykket test i København i Nordhavn-tunnelen, utført av Grundbau Nord GmbH, bringer vi nå denne kraftfulle teknologien til det svenske markedet. I Sverige vil den snart bli brukt av en av Sveriges største entreprenører innen fundamentering."
-        },
-        {
-          "type": "text",
-          "html": "Ta en titt i brosjyren nedenfor eller <a href=\"/kontakta-oss\">kontakt oss</a> for mer informasjon."
-        },
-        {
-          "type": "text",
-          "html": "VibroDrill-serien"
-        },
-        {
-          "type": "text",
-          "html": "Serien består også av: VD50, VD100 samt VD150."
-        },
-        {
-          "type": "text",
-          "html": "Ta kontakt, så forteller vi mer om applikasjoner og hvilken VibroDrill-modell (VD50, VD100 eller VD150) som passer best for dine prosjekter."
-        },
-        {
-          "type": "text",
-          "html": "Se i brosjyren eller <a href=\"/kontakta-oss\">kontakt oss</a> for mer informasjon."
-        },
-        {
-          "type": "image",
-          "alt": "VibroDrill – bilde 5",
-          "width": 331,
-          "height": 437,
-          "src": "/assets/img/terra-infrastructure-vibrodrill-5.webp"
+          "type": "columns",
+          "ratio": "60-40",
+          "left": [
+            {
+              "type": "text",
+              "html": "VibroDrill-serien"
+            },
+            {
+              "type": "text",
+              "html": "Serien består også av: VD50, VD100 samt VD150."
+            },
+            {
+              "type": "text",
+              "html": "Ta kontakt, så forteller vi mer om applikasjoner og hvilken VibroDrill-modell (VD50, VD100 eller VD150) som passer best for dine prosjekter."
+            },
+            {
+              "type": "text",
+              "html": "Se i brosjyren eller <a href=\"/kontakta-oss\">kontakt oss</a> for mer informasjon."
+            }
+          ],
+          "right": [
+            {
+              "type": "image",
+              "alt": "VibroDrill – bilde 5",
+              "width": 331,
+              "height": 437,
+              "src": "/assets/img/terra-infrastructure-vibrodrill-5.webp"
+            }
+          ]
         },
         {
           "type": "text",
