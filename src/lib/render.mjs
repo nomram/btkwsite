@@ -293,19 +293,19 @@ const SOCIAL_ICON = {
 function renderModules(ctx, b) {
   const items = (b.items || []).filter((it) => it && !(it.href && ctx.pages && ctx.pages.has(it.href) && !shown(ctx, it.href)));
   if (!items.length) return "";
-  const layout = b.layout === "compact" ? "compact" : "cards";
+  const layout = b.layout === "compact" ? "compact" : b.layout === "tiles" ? "tiles" : "cards";
   const cols = Math.max(1, Math.min(4, Number(b.columns) || (layout === "compact" ? 2 : Math.min(items.length, 3))));
   const lvl = ctx._cardLevel || 3;
   const more = esc(ctx.ui.read_more || "Läs mer");
   const li = items.map((it, i) => {
     const href = it.href ? (/^https?:/.test(it.href) ? it.href : localizeHref(ctx, it.href)) : "";
-    const img = it.image ? imgTag(ctx, it.image, it.alt || it.title || "", { cls: "module__img", sizes: layout === "compact" ? "180px" : "(min-width: 900px) 330px, 90vw" }) : "";
+    const img = it.image ? imgTag(ctx, it.image, it.alt || it.title || "", { cls: "module__img", sizes: layout === "compact" ? "180px" : layout === "tiles" ? "(min-width: 900px) 560px, 100vw" : "(min-width: 900px) 330px, 90vw" }) : "";
     const media = img ? (href ? `<a class="module__media" href="${esc(href)}" tabindex="-1" aria-hidden="true">${img}</a>` : `<span class="module__media">${img}</span>`) : "";
     const title = it.title ? `<h${lvl} class="module__title"${editFld(ctx, `items.${i}.title`)}>${href ? `<a href="${esc(href)}">${esc(it.title)}</a>` : esc(it.title)}</h${lvl}>` : "";
     const text = it.text || ctx.edit ? `<p class="module__text"${editFld(ctx, `items.${i}.text`)}>${esc(it.text || "")}</p>` : "";
     const bullets = (it.bullets || []).length ? `<ul class="module__list">${it.bullets.map((x) => `<li>${ctx.edit ? esc(x) : localizeHtml(ctx, x)}</li>`).join("")}</ul>` : "";
     const doc = it.doc && it.doc.href ? `<a class="btn btn--sm btn--ghost" href="${esc(localizeHref(ctx, it.doc.href))}" target="_blank" rel="noopener">${ICON.down}<span>${esc(it.doc.text || ctx.ui.documents || "PDF")}</span></a>` : "";
-    const go = href ? `<a class="btn btn--sm" href="${esc(href)}">${more}${ICON.arrow}</a>` : "";
+    const go = href ? `<a class="btn btn--sm btn--solid" href="${esc(href)}">${more}${ICON.arrow}</a>` : "";
     return `<li class="module">${media}<div class="module__body">${title}${text}${bullets}${go || doc ? `<div class="module__actions">${go}${doc}</div>` : ""}</div></li>`;
   }).join("");
   return `<ul class="modules modules--${layout}" style="--cols:${cols}">${li}</ul>`;

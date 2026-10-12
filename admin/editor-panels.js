@@ -128,7 +128,7 @@ function panelBlock() {
       break;
     case "modules": {
       const items = b.items || [];
-      body = F(t("modules_layout"), `<select data-bf="layout"><option value="cards" ${b.layout !== "compact" ? "selected" : ""}>${esc(t("modules_cards"))}</option><option value="compact" ${b.layout === "compact" ? "selected" : ""}>${esc(t("modules_compact"))}</option></select>`) +
+      body = F(t("modules_layout"), `<select data-bf="layout"><option value="cards" ${b.layout !== "compact" ? "selected" : ""}>${esc(t("modules_cards"))}</option><option value="compact" ${b.layout === "compact" ? "selected" : ""}>${esc(t("modules_compact"))}</option><option value="tiles" ${b.layout === "tiles" ? "selected" : ""}>${esc(t("modules_tiles"))}</option></select>`) +
         items.map((it, ci) => `<div class="sub"><div class="row nowrap">${it.image ? `<img class="thumb" src="${esc(thumbUrl(it.image.replace("/assets/img/", "")))}" alt="">` : ""}<button class="btn sm ghost" data-act="mod-image" data-ci="${ci}">${esc(it.image ? t("change_image") : t("choose_image"))}</button>${ci > 0 ? `<button class="btn sm ghost" data-act="mod-up" data-ci="${ci}" title="${esc(t("move_up"))}">${IC.up}</button>` : ""}<button class="btn sm danger" data-act="mod-rm" data-ci="${ci}" title="${esc(t("delete"))}">${IC.trash}</button></div>
           ${F(t("card_title"), inp(`items.${ci}.title`, it.title))}
           ${F(t("card_text"), `<textarea data-bf="items.${ci}.text" rows="2">${esc(it.text || "")}</textarea>`)}
