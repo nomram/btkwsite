@@ -215,11 +215,19 @@ try {
   // type into the starter paragraph
   const typed2 = await ev(`(async () => {
     await __until(() => __doc() && __doc().querySelector("[data-bk-field='html']"), 8000);
-    const d = __doc(), w = d.defaultView;
-    const el = d.querySelector("[data-bk-field='html']");
-    el.focus();
-    d.execCommand("insertText", false, "Det här är en testsida om betongpumpar.");
-    await __sleep(250);
+    const want = "Det här är en testsida om betongpumpar.";
+    for (let k = 0; k < 8; k++) {
+      const d = __doc(), w = d.defaultView;
+      const el = d.querySelector("[data-bk-field='html']");
+      if (el) {
+        el.focus();
+        const r = d.createRange(); r.selectNodeContents(el); const sel = w.getSelection(); sel.removeAllRanges(); sel.addRange(r);
+        d.execCommand("insertText", false, want);
+        await __sleep(300);
+        if (__blocks()[0] && __blocks()[0].html === want) break;
+      }
+      await __sleep(400);
+    }
     return __blocks()[0].html;
   })()`);
   check("typing into a fresh page works", typed2 === "Det här är en testsida om betongpumpar.", typed2);
