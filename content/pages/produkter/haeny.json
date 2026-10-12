@@ -61,7 +61,7 @@
           "left": [
             {
               "type": "image",
-              "alt": "HÄNY – bild 2",
+              "alt": "HÄNY: bild 2",
               "width": 351,
               "height": 264,
               "src": "/assets/img/haeny-2.webp",
@@ -76,7 +76,7 @@
             },
             {
               "type": "text",
-              "html": "För effektiv blandning av cement, ultrafint cement och bentonit skapar Häny-mixers höga skjuvkrafter med högvarviga pumpar och en unik vortex-impeller. Pumparna cirkulerar hela tankinnehållet 2–4 gånger per minut, vilket genererar extrem turbulens och effektiv partikelseparation samt säkerställer fullständig hydratisering."
+              "html": "För effektiv blandning av cement, ultrafint cement och bentonit skapar Häny-mixers höga skjuvkrafter med högvarviga pumpar och en unik vortex-impeller. Pumparna cirkulerar hela tankinnehållet 2-4 gånger per minut, vilket genererar extrem turbulens och effektiv partikelseparation samt säkerställer fullständig hydratisering."
             },
             {
               "type": "text",
@@ -90,7 +90,7 @@
           "left": [
             {
               "type": "image",
-              "alt": "HÄNY – bild 3",
+              "alt": "HÄNY: bild 3",
               "width": 599,
               "height": 440,
               "src": "/assets/img/haeny-3.webp",
@@ -105,7 +105,7 @@
             },
             {
               "type": "text",
-              "html": "Häny vortex-impeller har stor genomströmning (15–80 mm) och är extremt slitstark, vilket minskar slitage och igensättning. Modellerna HCM 300 och HCM 600 kan blanda sandhaltiga injekteringsbruk med upp till 8 mm partikelstorlek. Den underhållsfria axeltätningen tål torrkörning i flera minuter utan skador."
+              "html": "Häny vortex-impeller har stor genomströmning (15-80 mm) och är extremt slitstark, vilket minskar slitage och igensättning. Modellerna HCM 300 och HCM 600 kan blanda sandhaltiga injekteringsbruk med upp till 8 mm partikelstorlek. Den underhållsfria axeltätningen tål torrkörning i flera minuter utan skador."
             }
           ]
         },
@@ -115,7 +115,7 @@
           "left": [
             {
               "type": "image",
-              "alt": "HÄNY – bild 4",
+              "alt": "HÄNY: bild 4",
               "width": 682,
               "height": 1548,
               "src": "/assets/img/haeny-4.webp",
@@ -149,7 +149,7 @@
           "left": [
             {
               "type": "image",
-              "alt": "HÄNY – bild 5",
+              "alt": "HÄNY: bild 5",
               "width": 649,
               "height": 490,
               "src": "/assets/img/haeny-5.webp",
@@ -209,10 +209,13 @@
         },
         {
           "type": "image",
-          "alt": "HÄNY – bild 6",
+          "alt": "HÄNY: bild 6",
           "width": 1100,
           "height": 355,
-          "src": "/assets/img/haeny-6.webp"
+          "src": "/assets/img/haeny-6.webp",
+          "inline": true,
+          "maxWidth": 190,
+          "align": "right"
         }
       ]
     },
@@ -269,7 +272,7 @@
           "left": [
             {
               "type": "image",
-              "alt": "HÄNY – image 2",
+              "alt": "HÄNY: image 2",
               "width": 351,
               "height": 264,
               "src": "/assets/img/haeny-2.webp",
@@ -284,7 +287,7 @@
             },
             {
               "type": "text",
-              "html": "For efficient mixing of cement, ultrafine cement and bentonite, Häny mixers create high shear forces with high-speed pumps and a unique vortex impeller. The pumps circulate the entire tank contents 2–4 times per minute, generating extreme turbulence and effective particle separation and ensuring complete hydration."
+              "html": "For efficient mixing of cement, ultrafine cement and bentonite, Häny mixers create high shear forces with high-speed pumps and a unique vortex impeller. The pumps circulate the entire tank contents 2-4 times per minute, generating extreme turbulence and effective particle separation and ensuring complete hydration."
             },
             {
               "type": "text",
@@ -298,7 +301,7 @@
           "left": [
             {
               "type": "image",
-              "alt": "HÄNY – image 3",
+              "alt": "HÄNY: image 3",
               "width": 599,
               "height": 440,
               "src": "/assets/img/haeny-3.webp",
@@ -313,7 +316,7 @@
             },
             {
               "type": "text",
-              "html": "Häny’s vortex impeller has a large throughput (15–80 mm) and is extremely wear-resistant, which reduces wear and clogging. The HCM 300 and HCM 600 models can mix sandy grouts with particle sizes up to 8 mm. The maintenance-free shaft seal withstands dry running for several minutes without damage."
+              "html": "Häny’s vortex impeller has a large throughput (15-80 mm) and is extremely wear-resistant, which reduces wear and clogging. The HCM 300 and HCM 600 models can mix sandy grouts with particle sizes up to 8 mm. The maintenance-free shaft seal withstands dry running for several minutes without damage."
             }
           ]
         },
@@ -323,7 +326,7 @@
           "left": [
             {
               "type": "image",
-              "alt": "HÄNY – image 4",
+              "alt": "HÄNY: image 4",
               "width": 682,
               "height": 1548,
               "src": "/assets/img/haeny-4.webp",
@@ -357,7 +360,7 @@
           "left": [
             {
               "type": "image",
-              "alt": "HÄNY – image 5",
+              "alt": "HÄNY: image 5",
               "width": 649,
               "height": 490,
               "src": "/assets/img/haeny-5.webp",
@@ -417,10 +420,13 @@
         },
         {
           "type": "image",
-          "alt": "HÄNY – image 6",
+          "alt": "HÄNY: image 6",
           "width": 1100,
           "height": 355,
-          "src": "/assets/img/haeny-6.webp"
+          "src": "/assets/img/haeny-6.webp",
+          "inline": true,
+          "maxWidth": 190,
+          "align": "right"
         }
       ],
       "published": true
@@ -478,7 +484,7 @@
           "left": [
             {
               "type": "image",
-              "alt": "HÄNY – imagen 2",
+              "alt": "HÄNY: imagen 2",
               "width": 351,
               "height": 264,
               "src": "/assets/img/haeny-2.webp",
@@ -507,7 +513,7 @@
           "left": [
             {
               "type": "image",
-              "alt": "HÄNY – imagen 3",
+              "alt": "HÄNY: imagen 3",
               "width": 599,
               "height": 440,
               "src": "/assets/img/haeny-3.webp",
@@ -522,7 +528,7 @@
             },
             {
               "type": "text",
-              "html": "El impulsor de vórtice de Häny tiene un gran paso (15–80 mm) y es extremadamente resistente al desgaste, lo que reduce el desgaste y los atascos. Los modelos HCM 300 y HCM 600 pueden mezclar lechadas arenosas con tamaños de partícula de hasta 8 mm. El sello del eje, que no requiere mantenimiento, soporta el funcionamiento en seco durante varios minutos sin sufrir daños."
+              "html": "El impulsor de vórtice de Häny tiene un gran paso (15-80 mm) y es extremadamente resistente al desgaste, lo que reduce el desgaste y los atascos. Los modelos HCM 300 y HCM 600 pueden mezclar lechadas arenosas con tamaños de partícula de hasta 8 mm. El sello del eje, que no requiere mantenimiento, soporta el funcionamiento en seco durante varios minutos sin sufrir daños."
             }
           ]
         },
@@ -532,7 +538,7 @@
           "left": [
             {
               "type": "image",
-              "alt": "HÄNY – imagen 4",
+              "alt": "HÄNY: imagen 4",
               "width": 682,
               "height": 1548,
               "src": "/assets/img/haeny-4.webp",
@@ -566,7 +572,7 @@
           "left": [
             {
               "type": "image",
-              "alt": "HÄNY – imagen 5",
+              "alt": "HÄNY: imagen 5",
               "width": 649,
               "height": 490,
               "src": "/assets/img/haeny-5.webp",
@@ -626,10 +632,13 @@
         },
         {
           "type": "image",
-          "alt": "HÄNY – imagen 6",
+          "alt": "HÄNY: imagen 6",
           "width": 1100,
           "height": 355,
-          "src": "/assets/img/haeny-6.webp"
+          "src": "/assets/img/haeny-6.webp",
+          "inline": true,
+          "maxWidth": 190,
+          "align": "right"
         }
       ],
       "published": true
@@ -687,7 +696,7 @@
           "left": [
             {
               "type": "image",
-              "alt": "HÄNY – bilde 2",
+              "alt": "HÄNY: bilde 2",
               "width": 351,
               "height": 264,
               "src": "/assets/img/haeny-2.webp",
@@ -702,7 +711,7 @@
             },
             {
               "type": "text",
-              "html": "For effektiv blanding av sement, ultrafin sement og bentonitt skaper Häny-miksere høye skjærkrefter med høyturstallspumper og en unik vortex-impeller. Pumpene sirkulerer hele tankinnholdet 2–4 ganger per minutt, noe som genererer ekstrem turbulens og effektiv partikkelseparasjon samt sikrer fullstendig hydratisering."
+              "html": "For effektiv blanding av sement, ultrafin sement og bentonitt skaper Häny-miksere høye skjærkrefter med høyturstallspumper og en unik vortex-impeller. Pumpene sirkulerer hele tankinnholdet 2-4 ganger per minutt, noe som genererer ekstrem turbulens og effektiv partikkelseparasjon samt sikrer fullstendig hydratisering."
             },
             {
               "type": "text",
@@ -716,7 +725,7 @@
           "left": [
             {
               "type": "image",
-              "alt": "HÄNY – bilde 3",
+              "alt": "HÄNY: bilde 3",
               "width": 599,
               "height": 440,
               "src": "/assets/img/haeny-3.webp",
@@ -731,7 +740,7 @@
             },
             {
               "type": "text",
-              "html": "Hänys vortex-impeller har stor gjennomstrømning (15–80 mm) og er ekstremt slitesterk, noe som reduserer slitasje og tilstopping. Modellene HCM 300 og HCM 600 kan blande sandholdige injiseringsmørtler med partikkelstørrelse opptil 8 mm. Den vedlikeholdsfrie akseltetningen tåler tørrkjøring i flere minutter uten skader."
+              "html": "Hänys vortex-impeller har stor gjennomstrømning (15-80 mm) og er ekstremt slitesterk, noe som reduserer slitasje og tilstopping. Modellene HCM 300 og HCM 600 kan blande sandholdige injiseringsmørtler med partikkelstørrelse opptil 8 mm. Den vedlikeholdsfrie akseltetningen tåler tørrkjøring i flere minutter uten skader."
             }
           ]
         },
@@ -741,7 +750,7 @@
           "left": [
             {
               "type": "image",
-              "alt": "HÄNY – bilde 4",
+              "alt": "HÄNY: bilde 4",
               "width": 682,
               "height": 1548,
               "src": "/assets/img/haeny-4.webp",
@@ -775,7 +784,7 @@
           "left": [
             {
               "type": "image",
-              "alt": "HÄNY – bilde 5",
+              "alt": "HÄNY: bilde 5",
               "width": 649,
               "height": 490,
               "src": "/assets/img/haeny-5.webp",
@@ -835,10 +844,13 @@
         },
         {
           "type": "image",
-          "alt": "HÄNY – bilde 6",
+          "alt": "HÄNY: bilde 6",
           "width": 1100,
           "height": 355,
-          "src": "/assets/img/haeny-6.webp"
+          "src": "/assets/img/haeny-6.webp",
+          "inline": true,
+          "maxWidth": 190,
+          "align": "right"
         }
       ],
       "published": true

@@ -15,46 +15,47 @@
       "blocks": [
         {
           "type": "image",
-          "alt": "TEI Rock Drills – logotyp",
+          "alt": "TEI Rock Drills logotyp",
           "href": "/produkter/tei",
           "width": 1920,
           "height": 1117,
           "src": "/assets/img/tei-2.webp"
         },
         {
-          "type": "image",
-          "alt": "Bildkarusell",
-          "width": 1024,
-          "height": 950,
-          "src": "/assets/img/tei-borrmaster-hem-2.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Bildkarusell",
-          "width": 708,
-          "height": 563,
-          "src": "/assets/img/tei-borrmaster-hem-3.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Bildkarusell",
-          "width": 1536,
-          "height": 2048,
-          "src": "/assets/img/tei-borrmaster-hem-4.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Bildkarusell",
-          "width": 1798,
-          "height": 1408,
-          "src": "/assets/img/tei-borrmaster-hem-5.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Bildkarusell",
-          "width": 800,
-          "height": 800,
-          "src": "/assets/img/tei-borrmaster-hem-6.webp"
+          "type": "carousel",
+          "items": [
+            {
+              "src": "/assets/img/tei-borrmaster-hem-2.webp",
+              "alt": "HEM, bild 1",
+              "width": 1024,
+              "height": 950
+            },
+            {
+              "src": "/assets/img/tei-borrmaster-hem-3.webp",
+              "alt": "HEM, bild 2",
+              "width": 708,
+              "height": 563
+            },
+            {
+              "src": "/assets/img/tei-borrmaster-hem-4.webp",
+              "alt": "HEM, bild 3",
+              "width": 1536,
+              "height": 2048
+            },
+            {
+              "src": "/assets/img/tei-borrmaster-hem-5.webp",
+              "alt": "HEM, bild 4",
+              "width": 1798,
+              "height": 1408
+            },
+            {
+              "src": "/assets/img/tei-borrmaster-hem-6.webp",
+              "alt": "HEM, bild 5",
+              "width": 800,
+              "height": 800
+            }
+          ],
+          "autoplay": false
         },
         {
           "type": "text",
@@ -89,8 +90,8 @@
                 },
                 {
                   "label": "Håldiameter",
-                  "metric": "35–76 mm",
-                  "us": "1 3/8–3 tum"
+                  "metric": "35-76 mm",
+                  "us": "1 3/8-3 tum"
                 },
                 {
                   "label": "Total längd",
@@ -134,8 +135,8 @@
                 },
                 {
                   "label": "Håldiameter",
-                  "metric": "70–203 mm",
-                  "us": "2 3/4–8 tum"
+                  "metric": "70-203 mm",
+                  "us": "2 3/4-8 tum"
                 },
                 {
                   "label": "Total längd",
@@ -179,8 +180,8 @@
                 },
                 {
                   "label": "Håldiameter",
-                  "metric": "52–127 mm",
-                  "us": "2–5 tum"
+                  "metric": "52-127 mm",
+                  "us": "2-5 tum"
                 },
                 {
                   "label": "Total längd",
@@ -224,8 +225,8 @@
                 },
                 {
                   "label": "Håldiameter",
-                  "metric": "102–305 mm",
-                  "us": "4–12 tum"
+                  "metric": "102-305 mm",
+                  "us": "4-12 tum"
                 },
                 {
                   "label": "Total längd",
@@ -278,14 +279,14 @@
         },
         {
           "type": "image",
-          "alt": "HEM – bild 7",
+          "alt": "HEM: bild 7",
           "width": 761,
           "height": 821,
           "src": "/assets/img/tei-borrmaster-hem-7.webp"
         },
         {
           "type": "image",
-          "alt": "HEM – bild 8",
+          "alt": "HEM: bild 8",
           "width": 635,
           "height": 140,
           "src": "/assets/img/tei-borrmaster-hem-8.webp"
@@ -303,46 +304,47 @@
       "blocks": [
         {
           "type": "image",
-          "alt": "TEI Rock Drills – logo",
+          "alt": "TEI Rock Drills logo",
           "href": "/produkter/tei",
           "width": 1920,
           "height": 1117,
           "src": "/assets/img/tei-2.webp"
         },
         {
-          "type": "image",
-          "alt": "Image carousel",
-          "width": 1024,
-          "height": 950,
-          "src": "/assets/img/tei-borrmaster-hem-2.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Image carousel",
-          "width": 708,
-          "height": 563,
-          "src": "/assets/img/tei-borrmaster-hem-3.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Image carousel",
-          "width": 1536,
-          "height": 2048,
-          "src": "/assets/img/tei-borrmaster-hem-4.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Image carousel",
-          "width": 1798,
-          "height": 1408,
-          "src": "/assets/img/tei-borrmaster-hem-5.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Image carousel",
-          "width": 800,
-          "height": 800,
-          "src": "/assets/img/tei-borrmaster-hem-6.webp"
+          "type": "carousel",
+          "items": [
+            {
+              "src": "/assets/img/tei-borrmaster-hem-2.webp",
+              "alt": "HEM, image 1",
+              "width": 1024,
+              "height": 950
+            },
+            {
+              "src": "/assets/img/tei-borrmaster-hem-3.webp",
+              "alt": "HEM, image 2",
+              "width": 708,
+              "height": 563
+            },
+            {
+              "src": "/assets/img/tei-borrmaster-hem-4.webp",
+              "alt": "HEM, image 3",
+              "width": 1536,
+              "height": 2048
+            },
+            {
+              "src": "/assets/img/tei-borrmaster-hem-5.webp",
+              "alt": "HEM, image 4",
+              "width": 1798,
+              "height": 1408
+            },
+            {
+              "src": "/assets/img/tei-borrmaster-hem-6.webp",
+              "alt": "HEM, image 5",
+              "width": 800,
+              "height": 800
+            }
+          ],
+          "autoplay": false
         },
         {
           "type": "text",
@@ -377,8 +379,8 @@
                 },
                 {
                   "label": "Hole diameter",
-                  "metric": "35–76 mm",
-                  "us": "1 3/8–3 in"
+                  "metric": "35-76 mm",
+                  "us": "1 3/8-3 in"
                 },
                 {
                   "label": "Total length",
@@ -422,8 +424,8 @@
                 },
                 {
                   "label": "Hole diameter",
-                  "metric": "70–203 mm",
-                  "us": "2 3/4–8 in"
+                  "metric": "70-203 mm",
+                  "us": "2 3/4-8 in"
                 },
                 {
                   "label": "Total length",
@@ -467,8 +469,8 @@
                 },
                 {
                   "label": "Hole diameter",
-                  "metric": "52–127 mm",
-                  "us": "2–5 in"
+                  "metric": "52-127 mm",
+                  "us": "2-5 in"
                 },
                 {
                   "label": "Total length",
@@ -512,8 +514,8 @@
                 },
                 {
                   "label": "Hole diameter",
-                  "metric": "102–305 mm",
-                  "us": "4–12 in"
+                  "metric": "102-305 mm",
+                  "us": "4-12 in"
                 },
                 {
                   "label": "Total length",
@@ -566,14 +568,14 @@
         },
         {
           "type": "image",
-          "alt": "HEM – image 7",
+          "alt": "HEM: image 7",
           "width": 761,
           "height": 821,
           "src": "/assets/img/tei-borrmaster-hem-7.webp"
         },
         {
           "type": "image",
-          "alt": "HEM – image 8",
+          "alt": "HEM: image 8",
           "width": 635,
           "height": 140,
           "src": "/assets/img/tei-borrmaster-hem-8.webp"
@@ -592,7 +594,7 @@
       "blocks": [
         {
           "type": "image",
-          "alt": "TEI Rock Drills – logotipo",
+          "alt": "TEI Rock Drills logotipo",
           "href": "/produkter/tei",
           "width": 1920,
           "height": 1117,
@@ -666,8 +668,8 @@
                 },
                 {
                   "label": "Diámetro del agujero",
-                  "metric": "35–76 mm",
-                  "us": "1 3/8–3 pulg."
+                  "metric": "35-76 mm",
+                  "us": "1 3/8-3 pulg."
                 },
                 {
                   "label": "Longitud total",
@@ -711,8 +713,8 @@
                 },
                 {
                   "label": "Diámetro del agujero",
-                  "metric": "70–203 mm",
-                  "us": "2 3/4–8 pulg."
+                  "metric": "70-203 mm",
+                  "us": "2 3/4-8 pulg."
                 },
                 {
                   "label": "Longitud total",
@@ -756,8 +758,8 @@
                 },
                 {
                   "label": "Diámetro del agujero",
-                  "metric": "52–127 mm",
-                  "us": "2–5 pulg."
+                  "metric": "52-127 mm",
+                  "us": "2-5 pulg."
                 },
                 {
                   "label": "Longitud total",
@@ -801,8 +803,8 @@
                 },
                 {
                   "label": "Diámetro del agujero",
-                  "metric": "102–305 mm",
-                  "us": "4–12 pulg."
+                  "metric": "102-305 mm",
+                  "us": "4-12 pulg."
                 },
                 {
                   "label": "Longitud total",
@@ -855,14 +857,14 @@
         },
         {
           "type": "image",
-          "alt": "HEM – imagen 7",
+          "alt": "HEM: imagen 7",
           "width": 761,
           "height": 821,
           "src": "/assets/img/tei-borrmaster-hem-7.webp"
         },
         {
           "type": "image",
-          "alt": "HEM – imagen 8",
+          "alt": "HEM: imagen 8",
           "width": 635,
           "height": 140,
           "src": "/assets/img/tei-borrmaster-hem-8.webp"
@@ -881,46 +883,47 @@
       "blocks": [
         {
           "type": "image",
-          "alt": "TEI Rock Drills – logo",
+          "alt": "TEI Rock Drills logo",
           "href": "/produkter/tei",
           "width": 1920,
           "height": 1117,
           "src": "/assets/img/tei-2.webp"
         },
         {
-          "type": "image",
-          "alt": "Bildekarusell",
-          "width": 1024,
-          "height": 950,
-          "src": "/assets/img/tei-borrmaster-hem-2.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Bildekarusell",
-          "width": 708,
-          "height": 563,
-          "src": "/assets/img/tei-borrmaster-hem-3.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Bildekarusell",
-          "width": 1536,
-          "height": 2048,
-          "src": "/assets/img/tei-borrmaster-hem-4.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Bildekarusell",
-          "width": 1798,
-          "height": 1408,
-          "src": "/assets/img/tei-borrmaster-hem-5.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Bildekarusell",
-          "width": 800,
-          "height": 800,
-          "src": "/assets/img/tei-borrmaster-hem-6.webp"
+          "type": "carousel",
+          "items": [
+            {
+              "src": "/assets/img/tei-borrmaster-hem-2.webp",
+              "alt": "HEM, bilde 1",
+              "width": 1024,
+              "height": 950
+            },
+            {
+              "src": "/assets/img/tei-borrmaster-hem-3.webp",
+              "alt": "HEM, bilde 2",
+              "width": 708,
+              "height": 563
+            },
+            {
+              "src": "/assets/img/tei-borrmaster-hem-4.webp",
+              "alt": "HEM, bilde 3",
+              "width": 1536,
+              "height": 2048
+            },
+            {
+              "src": "/assets/img/tei-borrmaster-hem-5.webp",
+              "alt": "HEM, bilde 4",
+              "width": 1798,
+              "height": 1408
+            },
+            {
+              "src": "/assets/img/tei-borrmaster-hem-6.webp",
+              "alt": "HEM, bilde 5",
+              "width": 800,
+              "height": 800
+            }
+          ],
+          "autoplay": false
         },
         {
           "type": "text",
@@ -955,8 +958,8 @@
                 },
                 {
                   "label": "Hulldiameter",
-                  "metric": "35–76 mm",
-                  "us": "1 3/8–3 tommer"
+                  "metric": "35-76 mm",
+                  "us": "1 3/8-3 tommer"
                 },
                 {
                   "label": "Total lengde",
@@ -1000,8 +1003,8 @@
                 },
                 {
                   "label": "Hulldiameter",
-                  "metric": "70–203 mm",
-                  "us": "2 3/4–8 tommer"
+                  "metric": "70-203 mm",
+                  "us": "2 3/4-8 tommer"
                 },
                 {
                   "label": "Total lengde",
@@ -1045,8 +1048,8 @@
                 },
                 {
                   "label": "Hulldiameter",
-                  "metric": "52–127 mm",
-                  "us": "2–5 tommer"
+                  "metric": "52-127 mm",
+                  "us": "2-5 tommer"
                 },
                 {
                   "label": "Total lengde",
@@ -1090,8 +1093,8 @@
                 },
                 {
                   "label": "Hulldiameter",
-                  "metric": "102–305 mm",
-                  "us": "4–12 tommer"
+                  "metric": "102-305 mm",
+                  "us": "4-12 tommer"
                 },
                 {
                   "label": "Total lengde",
@@ -1144,14 +1147,14 @@
         },
         {
           "type": "image",
-          "alt": "HEM – bilde 7",
+          "alt": "HEM: bilde 7",
           "width": 761,
           "height": 821,
           "src": "/assets/img/tei-borrmaster-hem-7.webp"
         },
         {
           "type": "image",
-          "alt": "HEM – bilde 8",
+          "alt": "HEM: bilde 8",
           "width": 635,
           "height": 140,
           "src": "/assets/img/tei-borrmaster-hem-8.webp"

@@ -15,32 +15,35 @@
       "blocks": [
         {
           "type": "image",
-          "alt": "Marini – logotyp",
+          "alt": "Marini logotyp",
           "href": "/produkter/marini",
-          "width": 1920,
-          "height": 1117,
-          "src": "/assets/img/marini-3.webp"
+          "width": 928,
+          "height": 542,
+          "src": "/assets/img/logo-marini-emblem.webp"
         },
         {
-          "type": "image",
-          "alt": "Bildkarusell",
-          "width": 343,
-          "height": 328,
-          "src": "/assets/img/marini-slantstabilisering-mr-5-2.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Bildkarusell",
-          "width": 347,
-          "height": 324,
-          "src": "/assets/img/marini-slantstabilisering-mr-5-3.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Bildkarusell",
-          "width": 348,
-          "height": 328,
-          "src": "/assets/img/marini-slantstabilisering-mr-5-4.webp"
+          "type": "carousel",
+          "items": [
+            {
+              "src": "/assets/img/marini-slantstabilisering-mr-5-2.webp",
+              "alt": "MARINI MR 5, bild 1",
+              "width": 343,
+              "height": 328
+            },
+            {
+              "src": "/assets/img/marini-slantstabilisering-mr-5-3.webp",
+              "alt": "MARINI MR 5, bild 2",
+              "width": 347,
+              "height": 324
+            },
+            {
+              "src": "/assets/img/marini-slantstabilisering-mr-5-4.webp",
+              "alt": "MARINI MR 5, bild 3",
+              "width": 348,
+              "height": 328
+            }
+          ],
+          "autoplay": false
         },
         {
           "type": "text",
@@ -55,42 +58,32 @@
           "html": "<a href=\"/kontakta-oss\">Kontakta oss</a> för detaljerade broschyrer och mer information."
         },
         {
-          "type": "image",
-          "alt": "MARINI MR 5 – bild 5",
-          "width": 537,
-          "height": 583,
-          "src": "/assets/img/marini-slantstabilisering-mr-5-5.webp"
-        },
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "MR 5 ID"
-        },
-        {
-          "type": "button",
-          "kind": "download",
-          "text": "Broschyr",
-          "href": "/assets/docs/marini-slantstabilisering-mr-5-broschyr.pdf",
-          "driveId": "15y2j8dgF3Q-7O_RPaAqFDyaizbHVI5ek"
-        },
-        {
-          "type": "image",
-          "alt": "MARINI MR 5 – bild 6",
-          "width": 533,
-          "height": 580,
-          "src": "/assets/img/marini-slantstabilisering-mr-5-6.webp"
-        },
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "MR 5 PN"
-        },
-        {
-          "type": "button",
-          "kind": "download",
-          "text": "Broschyr",
-          "href": "/assets/docs/marini-slantstabilisering-mr-5-broschyr-2.pdf",
-          "driveId": "1PDgfo7SUI7TM1F75VAjt9hwysib0ZbDW"
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 2,
+          "more": false,
+          "items": [
+            {
+              "title": "MR 5 ID",
+              "image": "/assets/img/marini-slantstabilisering-mr-5-5.webp",
+              "alt": "MARINI MR 5: bild 5",
+              "doc": {
+                "text": "Broschyr",
+                "href": "/assets/docs/marini-slantstabilisering-mr-5-broschyr.pdf",
+                "driveId": "15y2j8dgF3Q-7O_RPaAqFDyaizbHVI5ek"
+              }
+            },
+            {
+              "title": "MR 5 PN",
+              "image": "/assets/img/marini-slantstabilisering-mr-5-6.webp",
+              "alt": "MARINI MR 5: bild 6",
+              "doc": {
+                "text": "Broschyr",
+                "href": "/assets/docs/marini-slantstabilisering-mr-5-broschyr-2.pdf",
+                "driveId": "1PDgfo7SUI7TM1F75VAjt9hwysib0ZbDW"
+              }
+            }
+          ]
         }
       ]
     },
@@ -101,32 +94,35 @@
       "blocks": [
         {
           "type": "image",
-          "alt": "Marini – logo",
+          "alt": "Marini logo",
           "href": "/produkter/marini",
-          "width": 1920,
-          "height": 1117,
-          "src": "/assets/img/marini-3.webp"
+          "width": 928,
+          "height": 542,
+          "src": "/assets/img/logo-marini-emblem.webp"
         },
         {
-          "type": "image",
-          "alt": "Image carousel",
-          "width": 343,
-          "height": 328,
-          "src": "/assets/img/marini-slantstabilisering-mr-5-2.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Image carousel",
-          "width": 347,
-          "height": 324,
-          "src": "/assets/img/marini-slantstabilisering-mr-5-3.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Image carousel",
-          "width": 348,
-          "height": 328,
-          "src": "/assets/img/marini-slantstabilisering-mr-5-4.webp"
+          "type": "carousel",
+          "items": [
+            {
+              "src": "/assets/img/marini-slantstabilisering-mr-5-2.webp",
+              "alt": "MARINI MR 5, image 1",
+              "width": 343,
+              "height": 328
+            },
+            {
+              "src": "/assets/img/marini-slantstabilisering-mr-5-3.webp",
+              "alt": "MARINI MR 5, image 2",
+              "width": 347,
+              "height": 324
+            },
+            {
+              "src": "/assets/img/marini-slantstabilisering-mr-5-4.webp",
+              "alt": "MARINI MR 5, image 3",
+              "width": 348,
+              "height": 328
+            }
+          ],
+          "autoplay": false
         },
         {
           "type": "text",
@@ -141,42 +137,32 @@
           "html": "<a href=\"/kontakta-oss\">Contact us</a> for detailed brochures and more information."
         },
         {
-          "type": "image",
-          "alt": "MARINI MR 5 – image 5",
-          "width": 537,
-          "height": 583,
-          "src": "/assets/img/marini-slantstabilisering-mr-5-5.webp"
-        },
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "MR 5 ID"
-        },
-        {
-          "type": "button",
-          "kind": "download",
-          "text": "Brochure",
-          "href": "/assets/docs/marini-slantstabilisering-mr-5-broschyr.pdf",
-          "driveId": "15y2j8dgF3Q-7O_RPaAqFDyaizbHVI5ek"
-        },
-        {
-          "type": "image",
-          "alt": "MARINI MR 5 – image 6",
-          "width": 533,
-          "height": 580,
-          "src": "/assets/img/marini-slantstabilisering-mr-5-6.webp"
-        },
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "MR 5 PN"
-        },
-        {
-          "type": "button",
-          "kind": "download",
-          "text": "Brochure",
-          "href": "/assets/docs/marini-slantstabilisering-mr-5-broschyr-2.pdf",
-          "driveId": "1PDgfo7SUI7TM1F75VAjt9hwysib0ZbDW"
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 2,
+          "more": false,
+          "items": [
+            {
+              "title": "MR 5 ID",
+              "image": "/assets/img/marini-slantstabilisering-mr-5-5.webp",
+              "alt": "MARINI MR 5: image 5",
+              "doc": {
+                "text": "Brochure",
+                "href": "/assets/docs/marini-slantstabilisering-mr-5-broschyr.pdf",
+                "driveId": "15y2j8dgF3Q-7O_RPaAqFDyaizbHVI5ek"
+              }
+            },
+            {
+              "title": "MR 5 PN",
+              "image": "/assets/img/marini-slantstabilisering-mr-5-6.webp",
+              "alt": "MARINI MR 5: image 6",
+              "doc": {
+                "text": "Brochure",
+                "href": "/assets/docs/marini-slantstabilisering-mr-5-broschyr-2.pdf",
+                "driveId": "1PDgfo7SUI7TM1F75VAjt9hwysib0ZbDW"
+              }
+            }
+          ]
         }
       ],
       "published": true
@@ -188,11 +174,11 @@
       "blocks": [
         {
           "type": "image",
-          "alt": "Marini – logotipo",
+          "alt": "Marini logotipo",
           "href": "/produkter/marini",
-          "width": 1920,
-          "height": 1117,
-          "src": "/assets/img/marini-3.webp"
+          "width": 928,
+          "height": 542,
+          "src": "/assets/img/logo-marini-emblem.webp"
         },
         {
           "type": "image",
@@ -228,42 +214,32 @@
           "html": "<a href=\"/kontakta-oss\">Contáctenos</a> para obtener folletos detallados y más información."
         },
         {
-          "type": "image",
-          "alt": "MARINI MR 5 – imagen 5",
-          "width": 537,
-          "height": 583,
-          "src": "/assets/img/marini-slantstabilisering-mr-5-5.webp"
-        },
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "MR 5 ID"
-        },
-        {
-          "type": "button",
-          "kind": "download",
-          "text": "Folleto",
-          "href": "/assets/docs/marini-slantstabilisering-mr-5-broschyr.pdf",
-          "driveId": "15y2j8dgF3Q-7O_RPaAqFDyaizbHVI5ek"
-        },
-        {
-          "type": "image",
-          "alt": "MARINI MR 5 – imagen 6",
-          "width": 533,
-          "height": 580,
-          "src": "/assets/img/marini-slantstabilisering-mr-5-6.webp"
-        },
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "MR 5 PN"
-        },
-        {
-          "type": "button",
-          "kind": "download",
-          "text": "Folleto",
-          "href": "/assets/docs/marini-slantstabilisering-mr-5-broschyr-2.pdf",
-          "driveId": "1PDgfo7SUI7TM1F75VAjt9hwysib0ZbDW"
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 2,
+          "more": false,
+          "items": [
+            {
+              "title": "MR 5 ID",
+              "image": "/assets/img/marini-slantstabilisering-mr-5-5.webp",
+              "alt": "MARINI MR 5: imagen 5",
+              "doc": {
+                "text": "Folleto",
+                "href": "/assets/docs/marini-slantstabilisering-mr-5-broschyr.pdf",
+                "driveId": "15y2j8dgF3Q-7O_RPaAqFDyaizbHVI5ek"
+              }
+            },
+            {
+              "title": "MR 5 PN",
+              "image": "/assets/img/marini-slantstabilisering-mr-5-6.webp",
+              "alt": "MARINI MR 5: imagen 6",
+              "doc": {
+                "text": "Folleto",
+                "href": "/assets/docs/marini-slantstabilisering-mr-5-broschyr-2.pdf",
+                "driveId": "1PDgfo7SUI7TM1F75VAjt9hwysib0ZbDW"
+              }
+            }
+          ]
         }
       ],
       "published": true
@@ -275,32 +251,35 @@
       "blocks": [
         {
           "type": "image",
-          "alt": "Marini – logo",
+          "alt": "Marini logo",
           "href": "/produkter/marini",
-          "width": 1920,
-          "height": 1117,
-          "src": "/assets/img/marini-3.webp"
+          "width": 928,
+          "height": 542,
+          "src": "/assets/img/logo-marini-emblem.webp"
         },
         {
-          "type": "image",
-          "alt": "Bildekarusell",
-          "width": 343,
-          "height": 328,
-          "src": "/assets/img/marini-slantstabilisering-mr-5-2.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Bildekarusell",
-          "width": 347,
-          "height": 324,
-          "src": "/assets/img/marini-slantstabilisering-mr-5-3.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Bildekarusell",
-          "width": 348,
-          "height": 328,
-          "src": "/assets/img/marini-slantstabilisering-mr-5-4.webp"
+          "type": "carousel",
+          "items": [
+            {
+              "src": "/assets/img/marini-slantstabilisering-mr-5-2.webp",
+              "alt": "MARINI MR 5, bilde 1",
+              "width": 343,
+              "height": 328
+            },
+            {
+              "src": "/assets/img/marini-slantstabilisering-mr-5-3.webp",
+              "alt": "MARINI MR 5, bilde 2",
+              "width": 347,
+              "height": 324
+            },
+            {
+              "src": "/assets/img/marini-slantstabilisering-mr-5-4.webp",
+              "alt": "MARINI MR 5, bilde 3",
+              "width": 348,
+              "height": 328
+            }
+          ],
+          "autoplay": false
         },
         {
           "type": "text",
@@ -315,42 +294,32 @@
           "html": "<a href=\"/kontakta-oss\">Kontakt oss</a> for detaljerte brosjyrer og mer informasjon."
         },
         {
-          "type": "image",
-          "alt": "MARINI MR 5 – bilde 5",
-          "width": 537,
-          "height": 583,
-          "src": "/assets/img/marini-slantstabilisering-mr-5-5.webp"
-        },
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "MR 5 ID"
-        },
-        {
-          "type": "button",
-          "kind": "download",
-          "text": "Brosjyre",
-          "href": "/assets/docs/marini-slantstabilisering-mr-5-broschyr.pdf",
-          "driveId": "15y2j8dgF3Q-7O_RPaAqFDyaizbHVI5ek"
-        },
-        {
-          "type": "image",
-          "alt": "MARINI MR 5 – bilde 6",
-          "width": 533,
-          "height": 580,
-          "src": "/assets/img/marini-slantstabilisering-mr-5-6.webp"
-        },
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "MR 5 PN"
-        },
-        {
-          "type": "button",
-          "kind": "download",
-          "text": "Brosjyre",
-          "href": "/assets/docs/marini-slantstabilisering-mr-5-broschyr-2.pdf",
-          "driveId": "1PDgfo7SUI7TM1F75VAjt9hwysib0ZbDW"
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 2,
+          "more": false,
+          "items": [
+            {
+              "title": "MR 5 ID",
+              "image": "/assets/img/marini-slantstabilisering-mr-5-5.webp",
+              "alt": "MARINI MR 5: bilde 5",
+              "doc": {
+                "text": "Brosjyre",
+                "href": "/assets/docs/marini-slantstabilisering-mr-5-broschyr.pdf",
+                "driveId": "15y2j8dgF3Q-7O_RPaAqFDyaizbHVI5ek"
+              }
+            },
+            {
+              "title": "MR 5 PN",
+              "image": "/assets/img/marini-slantstabilisering-mr-5-6.webp",
+              "alt": "MARINI MR 5: bilde 6",
+              "doc": {
+                "text": "Brosjyre",
+                "href": "/assets/docs/marini-slantstabilisering-mr-5-broschyr-2.pdf",
+                "driveId": "1PDgfo7SUI7TM1F75VAjt9hwysib0ZbDW"
+              }
+            }
+          ]
         }
       ],
       "published": true

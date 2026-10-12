@@ -25,27 +25,26 @@
           "html": "Mapei har ett stort sortiment av hållbara produkter för byggindustrin. Ta en titt i deras broschyr nedan eller <a href=\"/kontakta-oss\">kontakta oss</a> för mer information. Välkommen att ta del av Mapei:s värld av produkter och systemlösningar, Du finner lösning på Ditt problem med hjälp av denna systemguide. Vid ytterligare frågor är Du varmt välkommen att <a href=\"/kontakta-oss\">kontakta oss</a>."
         },
         {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 1,
+          "more": false,
+          "items": [
+            {
+              "title": "Produktkatalog",
+              "image": "/assets/img/mapei-2.webp",
+              "alt": "Mapei: bild 2",
+              "doc": {
+                "text": "Broschyr",
+                "href": "/assets/docs/mapei-ladda-ner-pdf.pdf",
+                "driveId": "1kWxR1qcQtQ5bArfCTU1OfpPaqQI9Gudu"
+              }
+            }
+          ]
+        },
+        {
           "type": "image",
-          "alt": "Mapei – bild 2",
-          "width": 500,
-          "height": 281,
-          "src": "/assets/img/mapei-2.webp"
-        },
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "Produktkatalog"
-        },
-        {
-          "type": "button",
-          "kind": "download",
-          "text": "Broschyr",
-          "href": "/assets/docs/mapei-ladda-ner-pdf.pdf",
-          "driveId": "1kWxR1qcQtQ5bArfCTU1OfpPaqQI9Gudu"
-        },
-        {
-          "type": "image",
-          "alt": "Mapei – bild 3",
+          "alt": "Mapei: bild 3",
           "width": 825,
           "height": 463,
           "src": "/assets/img/mapei-3.webp"
@@ -85,30 +84,29 @@
         },
         {
           "type": "text",
-          "html": "Mapei has a large range of sustainable products for the construction industry. Take a look at their brochure below or <a href=\"/kontakta-oss\">contact us</a> for more information. Welcome to explore Mapei’s world of products and system solutions – you will find a solution to your problem with the help of this system guide. If you have further questions you are very welcome to <a href=\"/kontakta-oss\">contact us</a>."
+          "html": "Mapei has a large range of sustainable products for the construction industry. Take a look at their brochure below or <a href=\"/kontakta-oss\">contact us</a> for more information. Welcome to explore Mapei’s world of products and system solutions, you will find a solution to your problem with the help of this system guide. If you have further questions you are very welcome to <a href=\"/kontakta-oss\">contact us</a>."
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 1,
+          "more": false,
+          "items": [
+            {
+              "title": "Product catalogue",
+              "image": "/assets/img/mapei-2.webp",
+              "alt": "Mapei: image 2",
+              "doc": {
+                "text": "Brochure",
+                "href": "/assets/docs/mapei-ladda-ner-pdf.pdf",
+                "driveId": "1kWxR1qcQtQ5bArfCTU1OfpPaqQI9Gudu"
+              }
+            }
+          ]
         },
         {
           "type": "image",
-          "alt": "Mapei – image 2",
-          "width": 500,
-          "height": 281,
-          "src": "/assets/img/mapei-2.webp"
-        },
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "Product catalogue"
-        },
-        {
-          "type": "button",
-          "kind": "download",
-          "text": "Brochure",
-          "href": "/assets/docs/mapei-ladda-ner-pdf.pdf",
-          "driveId": "1kWxR1qcQtQ5bArfCTU1OfpPaqQI9Gudu"
-        },
-        {
-          "type": "image",
-          "alt": "Mapei – image 3",
+          "alt": "Mapei: image 3",
           "width": 825,
           "height": 463,
           "src": "/assets/img/mapei-3.webp"
@@ -152,27 +150,26 @@
           "html": "Mapei dispone de una amplia gama de productos sostenibles para la industria de la construcción. Consulte su folleto a continuación o <a href=\"/kontakta-oss\">contáctenos</a> para más información. Le invitamos a descubrir el mundo de productos y soluciones de sistema de Mapei: con esta guía de sistemas encontrará la solución a su problema. Si tiene más preguntas, no dude en <a href=\"/kontakta-oss\">contactarnos</a>."
         },
         {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 1,
+          "more": false,
+          "items": [
+            {
+              "title": "Catálogo de productos",
+              "image": "/assets/img/mapei-2.webp",
+              "alt": "Mapei: imagen 2",
+              "doc": {
+                "text": "Folleto",
+                "href": "/assets/docs/mapei-ladda-ner-pdf.pdf",
+                "driveId": "1kWxR1qcQtQ5bArfCTU1OfpPaqQI9Gudu"
+              }
+            }
+          ]
+        },
+        {
           "type": "image",
-          "alt": "Mapei – imagen 2",
-          "width": 500,
-          "height": 281,
-          "src": "/assets/img/mapei-2.webp"
-        },
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "Catálogo de productos"
-        },
-        {
-          "type": "button",
-          "kind": "download",
-          "text": "Folleto",
-          "href": "/assets/docs/mapei-ladda-ner-pdf.pdf",
-          "driveId": "1kWxR1qcQtQ5bArfCTU1OfpPaqQI9Gudu"
-        },
-        {
-          "type": "image",
-          "alt": "Mapei – imagen 3",
+          "alt": "Mapei: imagen 3",
           "width": 825,
           "height": 463,
           "src": "/assets/img/mapei-3.webp"
@@ -213,30 +210,29 @@
         },
         {
           "type": "text",
-          "html": "Mapei har et stort sortiment av bærekraftige produkter for byggebransjen. Ta en titt i brosjyren deres nedenfor eller <a href=\"/kontakta-oss\">kontakt oss</a> for mer informasjon. Velkommen til å ta del i Mapeis verden av produkter og systemløsninger – du finner løsningen på problemet ditt ved hjelp av denne systemguiden. Ved ytterligere spørsmål er du hjertelig velkommen til å <a href=\"/kontakta-oss\">kontakte oss</a>."
+          "html": "Mapei har et stort sortiment av bærekraftige produkter for byggebransjen. Ta en titt i brosjyren deres nedenfor eller <a href=\"/kontakta-oss\">kontakt oss</a> for mer informasjon. Velkommen til å ta del i Mapeis verden av produkter og systemløsninger, du finner løsningen på problemet ditt ved hjelp av denne systemguiden. Ved ytterligere spørsmål er du hjertelig velkommen til å <a href=\"/kontakta-oss\">kontakte oss</a>."
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 1,
+          "more": false,
+          "items": [
+            {
+              "title": "Produktkatalog",
+              "image": "/assets/img/mapei-2.webp",
+              "alt": "Mapei: bilde 2",
+              "doc": {
+                "text": "Brosjyre",
+                "href": "/assets/docs/mapei-ladda-ner-pdf.pdf",
+                "driveId": "1kWxR1qcQtQ5bArfCTU1OfpPaqQI9Gudu"
+              }
+            }
+          ]
         },
         {
           "type": "image",
-          "alt": "Mapei – bilde 2",
-          "width": 500,
-          "height": 281,
-          "src": "/assets/img/mapei-2.webp"
-        },
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "Produktkatalog"
-        },
-        {
-          "type": "button",
-          "kind": "download",
-          "text": "Brosjyre",
-          "href": "/assets/docs/mapei-ladda-ner-pdf.pdf",
-          "driveId": "1kWxR1qcQtQ5bArfCTU1OfpPaqQI9Gudu"
-        },
-        {
-          "type": "image",
-          "alt": "Mapei – bilde 3",
+          "alt": "Mapei: bilde 3",
           "width": 825,
           "height": 463,
           "src": "/assets/img/mapei-3.webp"

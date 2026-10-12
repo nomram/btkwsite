@@ -202,6 +202,10 @@ const trOf = (p, lang) => {
   return t;
 };
 
+// poster pictures of the YouTube videos (tools/fetch-yt-thumbs.mjs): shown until the visitor presses play
+const YT_SRC = path.join(ROOT, "assets-src/yt");
+const ytThumbs = new Set(exists(YT_SRC) ? fs.readdirSync(YT_SRC).filter((f) => f.endsWith(".webp")).map((f) => f.slice(0, -5)) : []);
+
 function makeCtx(lang) {
   return {
     site: siteForBuild, lang, defaultLang, ui: uiFor(lang),
@@ -215,6 +219,7 @@ function makeCtx(lang) {
     image: (src) => imageInfo.get(src) || null,
     fileSize: (href) => fileSizes.get(href) || null,
     docInfo: (href) => docInfoMap.get(href) || null,
+    ytThumb: (id) => (ytThumbs.has(id) ? `/assets/yt/${id}.webp` : null),
     searchIndexUrl: lang === defaultLang ? "/search-index.json" : `/${lang}/search-index.json`
   };
 }
@@ -222,6 +227,7 @@ function makeCtx(lang) {
 // ---------- main ----------
 fs.rmSync(DIST, { recursive: true, force: true });
 fs.mkdirSync(DIST, { recursive: true });
+if (ytThumbs.size) { fs.mkdirSync(path.join(DIST, "assets/yt"), { recursive: true }); for (const id of ytThumbs) fs.copyFileSync(path.join(YT_SRC, id + ".webp"), path.join(DIST, "assets/yt", id + ".webp")); }
 
 copyDir(path.join(ROOT, "static"), DIST);
 const made = await processImages();

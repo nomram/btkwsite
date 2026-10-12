@@ -10,3 +10,6 @@ docs-private/
 tools/firefox/
 .env*
 *.local
+
+# oversized source files (GitHub rejects files over 100 MB)
+assets-src/Kraft Tool Brochure.pdf

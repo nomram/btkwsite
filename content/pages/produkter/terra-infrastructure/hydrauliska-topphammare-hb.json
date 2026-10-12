@@ -262,7 +262,10 @@
                 "Egenvikt: 420-440 kg"
               ],
               "image": "/assets/img/terra-infrastructure-vibrodrill-vibrodrill-vd150.webp",
-              "href": "/produkter/terra-infrastructure/vibrodrill/vibrodrill-vd150"
+              "doc": {
+                "text": "Broschyr HB45",
+                "href": "/assets/docs/terra-infrastructure-drifter-hb45-en.pdf"
+              }
             },
             {
               "title": "HB50",
@@ -275,11 +278,7 @@
                 "Slagenergi: max 840 Nm",
                 "Vridmoment: upp till 21,6 kNm",
                 "Egenvikt: 670-710 kg"
-              ],
-              "doc": {
-                "text": "Broschyr HB50",
-                "href": "/assets/docs/terra-infrastructure-hydrauliska-topphammare-hb-las-mer-6.pdf"
-              }
+              ]
             },
             {
               "title": "HB60",
@@ -318,7 +317,7 @@
         },
         {
           "type": "image",
-          "alt": "Hydrauliska topphammare (HB) – bild 10",
+          "alt": "Hydrauliska topphammare (HB): bild 10",
           "width": 688,
           "height": 525,
           "src": "/assets/img/terra-infrastructure-hydrauliska-topphammare-hb-10.webp"
@@ -364,7 +363,7 @@
         },
         {
           "type": "text",
-          "html": "We offer models for every torque and drilling depth – from the agile HB5 to the powerhouse HB60."
+          "html": "We offer models for every torque and drilling depth, from the agile HB5 to the powerhouse HB60."
         },
         {
           "type": "text",
@@ -527,7 +526,7 @@
                 "Drill rods/anchors: up to 52 mm (2\")",
                 "Impact energy: max 270 Nm",
                 "Torque: up to 2.45 kNm",
-                "Recommended carrier: 12–14 t"
+                "Recommended carrier: 12-14 t"
               ],
               "image": "/assets/img/terra-infrastructure-hydrauliska-topphammare-hb-5.webp",
               "doc": {
@@ -559,7 +558,7 @@
                 "Drill rods/anchors: up to 76.2 mm (3\")",
                 "Impact energy: max 590 Nm",
                 "Torque: up to 11.7 kNm",
-                "Weight: 360–410 kg"
+                "Weight: 360-410 kg"
               ],
               "image": "/assets/img/terra-infrastructure-hydrauliska-topphammare-hb-7.webp",
               "doc": {
@@ -576,10 +575,13 @@
                 "Drill rods/anchors: up to 101.6 mm (4\")",
                 "Impact energy: max 590 Nm",
                 "Torque: up to 16.2 kNm",
-                "Weight: 420–440 kg"
+                "Weight: 420-440 kg"
               ],
               "image": "/assets/img/terra-infrastructure-vibrodrill-vibrodrill-vd150.webp",
-              "href": "/produkter/terra-infrastructure/vibrodrill/vibrodrill-vd150"
+              "doc": {
+                "text": "Brochure HB45",
+                "href": "/assets/docs/terra-infrastructure-drifter-hb45-en.pdf"
+              }
             },
             {
               "title": "HB50",
@@ -591,12 +593,8 @@
                 "Drill rods/anchors: up to 152.4 mm (6\")",
                 "Impact energy: max 840 Nm",
                 "Torque: up to 21.6 kNm",
-                "Weight: 670–710 kg"
-              ],
-              "doc": {
-                "text": "Brochure HB50",
-                "href": "/assets/docs/terra-infrastructure-hydrauliska-topphammare-hb-las-mer-6.pdf"
-              }
+                "Weight: 670-710 kg"
+              ]
             },
             {
               "title": "HB60",
@@ -607,7 +605,7 @@
                 "Drill rods/anchors: up to 203.2 mm (8\")",
                 "Impact energy: max 840 Nm",
                 "Torque: up to 42.1 kNm",
-                "Weight: approx. 1,050–1,100 kg"
+                "Weight: approx. 1,050-1,100 kg"
               ],
               "image": "/assets/img/terra-infrastructure-hydrauliska-topphammare-hb-9.webp",
               "doc": {
@@ -635,7 +633,7 @@
         },
         {
           "type": "image",
-          "alt": "Hydraulic drifters (HB) – image 10",
+          "alt": "Hydraulic drifters (HB): image 10",
           "width": 688,
           "height": 525,
           "src": "/assets/img/terra-infrastructure-hydrauliska-topphammare-hb-10.webp"
@@ -845,7 +843,7 @@
                 "Barras de perforación/anclajes: hasta 52 mm (2\")",
                 "Energía de impacto: máx. 270 Nm",
                 "Par: hasta 2,45 kNm",
-                "Vehículo portador recomendado: 12–14 t"
+                "Vehículo portador recomendado: 12-14 t"
               ],
               "image": "/assets/img/terra-infrastructure-hydrauliska-topphammare-hb-5.webp",
               "doc": {
@@ -877,7 +875,7 @@
                 "Barras de perforación/anclajes: hasta 76,2 mm (3\")",
                 "Energía de impacto: máx. 590 Nm",
                 "Par: hasta 11,7 kNm",
-                "Peso propio: 360–410 kg"
+                "Peso propio: 360-410 kg"
               ],
               "image": "/assets/img/terra-infrastructure-hydrauliska-topphammare-hb-7.webp",
               "doc": {
@@ -894,10 +892,13 @@
                 "Barras de perforación/anclajes: hasta 101,6 mm (4\")",
                 "Energía de impacto: máx. 590 Nm",
                 "Par: hasta 16,2 kNm",
-                "Peso propio: 420–440 kg"
+                "Peso propio: 420-440 kg"
               ],
               "image": "/assets/img/terra-infrastructure-vibrodrill-vibrodrill-vd150.webp",
-              "href": "/produkter/terra-infrastructure/vibrodrill/vibrodrill-vd150"
+              "doc": {
+                "text": "Folleto HB45",
+                "href": "/assets/docs/terra-infrastructure-drifter-hb45-en.pdf"
+              }
             },
             {
               "title": "HB50",
@@ -909,12 +910,8 @@
                 "Barras de perforación/anclajes: hasta 152,4 mm (6\")",
                 "Energía de impacto: máx. 840 Nm",
                 "Par: hasta 21,6 kNm",
-                "Peso propio: 670–710 kg"
-              ],
-              "doc": {
-                "text": "Folleto HB50",
-                "href": "/assets/docs/terra-infrastructure-hydrauliska-topphammare-hb-las-mer-6.pdf"
-              }
+                "Peso propio: 670-710 kg"
+              ]
             },
             {
               "title": "HB60",
@@ -925,7 +922,7 @@
                 "Barras de perforación/anclajes: hasta 203,2 mm (8\")",
                 "Energía de impacto: máx. 840 Nm",
                 "Par: hasta 42,1 kNm",
-                "Peso propio: aprox. 1050–1100 kg"
+                "Peso propio: aprox. 1050-1100 kg"
               ],
               "image": "/assets/img/terra-infrastructure-hydrauliska-topphammare-hb-9.webp",
               "doc": {
@@ -953,7 +950,7 @@
         },
         {
           "type": "image",
-          "alt": "Martillos perforadores hidráulicos (HB) – imagen 10",
+          "alt": "Martillos perforadores hidráulicos (HB), imagen 10",
           "width": 688,
           "height": 525,
           "src": "/assets/img/terra-infrastructure-hydrauliska-topphammare-hb-10.webp"
@@ -1000,7 +997,7 @@
         },
         {
           "type": "text",
-          "html": "Vi tilbyr modeller for alle dreiemoment og boredyp – fra den smidige HB5 til kraftpakken HB60."
+          "html": "Vi tilbyr modeller for alle dreiemoment og boredyp, fra den smidige HB5 til kraftpakken HB60."
         },
         {
           "type": "text",
@@ -1163,7 +1160,7 @@
                 "Borstenger/stag: opptil 52 mm (2\")",
                 "Slagenergi: maks. 270 Nm",
                 "Dreiemoment: opptil 2,45 kNm",
-                "Anbefalt bærekjøretøy: 12–14 t"
+                "Anbefalt bærekjøretøy: 12-14 t"
               ],
               "image": "/assets/img/terra-infrastructure-hydrauliska-topphammare-hb-5.webp",
               "doc": {
@@ -1195,7 +1192,7 @@
                 "Borstenger/stag: opptil 76,2 mm (3\")",
                 "Slagenergi: maks. 590 Nm",
                 "Dreiemoment: opptil 11,7 kNm",
-                "Egenvekt: 360–410 kg"
+                "Egenvekt: 360-410 kg"
               ],
               "image": "/assets/img/terra-infrastructure-hydrauliska-topphammare-hb-7.webp",
               "doc": {
@@ -1212,10 +1209,13 @@
                 "Borstenger/stag: opptil 101,6 mm (4\")",
                 "Slagenergi: maks. 590 Nm",
                 "Dreiemoment: opptil 16,2 kNm",
-                "Egenvekt: 420–440 kg"
+                "Egenvekt: 420-440 kg"
               ],
               "image": "/assets/img/terra-infrastructure-vibrodrill-vibrodrill-vd150.webp",
-              "href": "/produkter/terra-infrastructure/vibrodrill/vibrodrill-vd150"
+              "doc": {
+                "text": "Brosjyre HB45",
+                "href": "/assets/docs/terra-infrastructure-drifter-hb45-en.pdf"
+              }
             },
             {
               "title": "HB50",
@@ -1227,12 +1227,8 @@
                 "Borstenger/stag: opptil 152,4 mm (6\")",
                 "Slagenergi: maks. 840 Nm",
                 "Dreiemoment: opptil 21,6 kNm",
-                "Egenvekt: 670–710 kg"
-              ],
-              "doc": {
-                "text": "Brosjyre HB50",
-                "href": "/assets/docs/terra-infrastructure-hydrauliska-topphammare-hb-las-mer-6.pdf"
-              }
+                "Egenvekt: 670-710 kg"
+              ]
             },
             {
               "title": "HB60",
@@ -1243,7 +1239,7 @@
                 "Borstenger/stag: opptil 203,2 mm (8\")",
                 "Slagenergi: maks. 840 Nm",
                 "Dreiemoment: opptil 42,1 kNm",
-                "Egenvekt: ca. 1 050–1 100 kg"
+                "Egenvekt: ca. 1 050-1 100 kg"
               ],
               "image": "/assets/img/terra-infrastructure-hydrauliska-topphammare-hb-9.webp",
               "doc": {
@@ -1271,7 +1267,7 @@
         },
         {
           "type": "image",
-          "alt": "Hydrauliske topphammere (HB) – bilde 10",
+          "alt": "Hydrauliske topphammere (HB): bilde 10",
           "width": 688,
           "height": 525,
           "src": "/assets/img/terra-infrastructure-hydrauliska-topphammare-hb-10.webp"

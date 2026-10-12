@@ -15,15 +15,15 @@
       "blocks": [
         {
           "type": "image",
-          "alt": "Marini – logotyp",
+          "alt": "Marini logotyp",
           "href": "/produkter/marini",
-          "width": 1920,
-          "height": 1117,
-          "src": "/assets/img/marini-3.webp"
+          "width": 928,
+          "height": 542,
+          "src": "/assets/img/logo-marini-emblem.webp"
         },
         {
           "type": "image",
-          "alt": "MR-SB / Sprutbetong – bild 2",
+          "alt": "MR-SB / Sprutbetong: bild 2",
           "width": 1920,
           "height": 1350,
           "src": "/assets/img/marini-sprutbetong-2.webp"
@@ -48,32 +48,34 @@
           "driveId": "1ecMiKcn9MMZ4A09FXVKtBN1SAgcdwbvd"
         },
         {
-          "type": "image",
-          "alt": "Bildkarusell",
-          "width": 1500,
-          "height": 2000,
-          "src": "/assets/img/marini-sprutbetong-3.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Bildkarusell",
-          "width": 1600,
-          "height": 1200,
-          "src": "/assets/img/marini-sprutbetong-4.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Bildkarusell",
-          "width": 1200,
-          "height": 1600,
-          "src": "/assets/img/marini-sprutbetong-5.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Bildkarusell",
-          "width": 1920,
-          "height": 1440,
-          "src": "/assets/img/marini-sprutbetong-6.webp"
+          "type": "carousel",
+          "items": [
+            {
+              "src": "/assets/img/marini-sprutbetong-3.webp",
+              "alt": "MR-SB / Sprutbetong, bild 1",
+              "width": 1500,
+              "height": 2000
+            },
+            {
+              "src": "/assets/img/marini-sprutbetong-4.webp",
+              "alt": "MR-SB / Sprutbetong, bild 2",
+              "width": 1600,
+              "height": 1200
+            },
+            {
+              "src": "/assets/img/marini-sprutbetong-5.webp",
+              "alt": "MR-SB / Sprutbetong, bild 3",
+              "width": 1200,
+              "height": 1600
+            },
+            {
+              "src": "/assets/img/marini-sprutbetong-6.webp",
+              "alt": "MR-SB / Sprutbetong, bild 4",
+              "width": 1920,
+              "height": 1440
+            }
+          ],
+          "autoplay": false
         },
         {
           "type": "video",
@@ -103,15 +105,15 @@
       "blocks": [
         {
           "type": "image",
-          "alt": "Marini – logo",
+          "alt": "Marini logo",
           "href": "/produkter/marini",
-          "width": 1920,
-          "height": 1117,
-          "src": "/assets/img/marini-3.webp"
+          "width": 928,
+          "height": 542,
+          "src": "/assets/img/logo-marini-emblem.webp"
         },
         {
           "type": "image",
-          "alt": "MR-SB / Shotcrete – image 2",
+          "alt": "MR-SB / Shotcrete: image 2",
           "width": 1920,
           "height": 1350,
           "src": "/assets/img/marini-sprutbetong-2.webp"
@@ -136,32 +138,34 @@
           "driveId": "1ecMiKcn9MMZ4A09FXVKtBN1SAgcdwbvd"
         },
         {
-          "type": "image",
-          "alt": "Image carousel",
-          "width": 1500,
-          "height": 2000,
-          "src": "/assets/img/marini-sprutbetong-3.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Image carousel",
-          "width": 1600,
-          "height": 1200,
-          "src": "/assets/img/marini-sprutbetong-4.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Image carousel",
-          "width": 1200,
-          "height": 1600,
-          "src": "/assets/img/marini-sprutbetong-5.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Image carousel",
-          "width": 1920,
-          "height": 1440,
-          "src": "/assets/img/marini-sprutbetong-6.webp"
+          "type": "carousel",
+          "items": [
+            {
+              "src": "/assets/img/marini-sprutbetong-3.webp",
+              "alt": "MR-SB / Shotcrete, image 1",
+              "width": 1500,
+              "height": 2000
+            },
+            {
+              "src": "/assets/img/marini-sprutbetong-4.webp",
+              "alt": "MR-SB / Shotcrete, image 2",
+              "width": 1600,
+              "height": 1200
+            },
+            {
+              "src": "/assets/img/marini-sprutbetong-5.webp",
+              "alt": "MR-SB / Shotcrete, image 3",
+              "width": 1200,
+              "height": 1600
+            },
+            {
+              "src": "/assets/img/marini-sprutbetong-6.webp",
+              "alt": "MR-SB / Shotcrete, image 4",
+              "width": 1920,
+              "height": 1440
+            }
+          ],
+          "autoplay": false
         },
         {
           "type": "video",
@@ -192,15 +196,15 @@
       "blocks": [
         {
           "type": "image",
-          "alt": "Marini – logotipo",
+          "alt": "Marini logotipo",
           "href": "/produkter/marini",
-          "width": 1920,
-          "height": 1117,
-          "src": "/assets/img/marini-3.webp"
+          "width": 928,
+          "height": 542,
+          "src": "/assets/img/logo-marini-emblem.webp"
         },
         {
           "type": "image",
-          "alt": "MR-SB / Hormigón proyectado – imagen 2",
+          "alt": "MR-SB / Hormigón proyectado, imagen 2",
           "width": 1920,
           "height": 1350,
           "src": "/assets/img/marini-sprutbetong-2.webp"
@@ -281,15 +285,15 @@
       "blocks": [
         {
           "type": "image",
-          "alt": "Marini – logo",
+          "alt": "Marini logo",
           "href": "/produkter/marini",
-          "width": 1920,
-          "height": 1117,
-          "src": "/assets/img/marini-3.webp"
+          "width": 928,
+          "height": 542,
+          "src": "/assets/img/logo-marini-emblem.webp"
         },
         {
           "type": "image",
-          "alt": "MR-SB / Sprøytebetong – bilde 2",
+          "alt": "MR-SB / Sprøytebetong: bilde 2",
           "width": 1920,
           "height": 1350,
           "src": "/assets/img/marini-sprutbetong-2.webp"
@@ -314,32 +318,34 @@
           "driveId": "1ecMiKcn9MMZ4A09FXVKtBN1SAgcdwbvd"
         },
         {
-          "type": "image",
-          "alt": "Bildekarusell",
-          "width": 1500,
-          "height": 2000,
-          "src": "/assets/img/marini-sprutbetong-3.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Bildekarusell",
-          "width": 1600,
-          "height": 1200,
-          "src": "/assets/img/marini-sprutbetong-4.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Bildekarusell",
-          "width": 1200,
-          "height": 1600,
-          "src": "/assets/img/marini-sprutbetong-5.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Bildekarusell",
-          "width": 1920,
-          "height": 1440,
-          "src": "/assets/img/marini-sprutbetong-6.webp"
+          "type": "carousel",
+          "items": [
+            {
+              "src": "/assets/img/marini-sprutbetong-3.webp",
+              "alt": "MR-SB / Sprøytebetong, bilde 1",
+              "width": 1500,
+              "height": 2000
+            },
+            {
+              "src": "/assets/img/marini-sprutbetong-4.webp",
+              "alt": "MR-SB / Sprøytebetong, bilde 2",
+              "width": 1600,
+              "height": 1200
+            },
+            {
+              "src": "/assets/img/marini-sprutbetong-5.webp",
+              "alt": "MR-SB / Sprøytebetong, bilde 3",
+              "width": 1200,
+              "height": 1600
+            },
+            {
+              "src": "/assets/img/marini-sprutbetong-6.webp",
+              "alt": "MR-SB / Sprøytebetong, bilde 4",
+              "width": 1920,
+              "height": 1440
+            }
+          ],
+          "autoplay": false
         },
         {
           "type": "video",

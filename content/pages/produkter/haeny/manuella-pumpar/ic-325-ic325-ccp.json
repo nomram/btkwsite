@@ -23,7 +23,7 @@
         },
         {
           "type": "image",
-          "alt": "HÄNY IC 325 & IC325 CCP – bild 2",
+          "alt": "HÄNY IC 325 & IC325 CCP, bild 2",
           "width": 1042,
           "height": 1139,
           "src": "/assets/img/haeny-manuella-pumpar-ic-325-ic325-ccp-2.webp"
@@ -71,24 +71,28 @@
         },
         {
           "type": "image",
-          "alt": "HÄNY IC 325 & IC325 CCP – bild 3",
+          "alt": "HÄNY IC 325 & IC325 CCP, bild 3",
           "width": 800,
           "height": 753,
           "src": "/assets/img/haeny-manuella-pumpar-ic-325-ic325-ccp-3.webp"
         },
         {
-          "type": "image",
-          "alt": "Bildkarusell",
-          "width": 728,
-          "height": 815,
-          "src": "/assets/img/haeny-manuella-pumpar-ic-325-ic325-ccp-4.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Bildkarusell",
-          "width": 800,
-          "height": 800,
-          "src": "/assets/img/haeny-manuella-pumpar-ic-325-ic325-ccp-5.webp"
+          "type": "carousel",
+          "items": [
+            {
+              "src": "/assets/img/haeny-manuella-pumpar-ic-325-ic325-ccp-4.webp",
+              "alt": "HÄNY IC 325 & IC325 CCP, bild 1",
+              "width": 728,
+              "height": 815
+            },
+            {
+              "src": "/assets/img/haeny-manuella-pumpar-ic-325-ic325-ccp-5.webp",
+              "alt": "HÄNY IC 325 & IC325 CCP, bild 2",
+              "width": 800,
+              "height": 800
+            }
+          ],
+          "autoplay": false
         },
         {
           "type": "heading",
@@ -164,7 +168,7 @@
         },
         {
           "type": "image",
-          "alt": "HÄNY IC 325 & IC325 CCP – image 2",
+          "alt": "HÄNY IC 325 & IC325 CCP, image 2",
           "width": 1042,
           "height": 1139,
           "src": "/assets/img/haeny-manuella-pumpar-ic-325-ic325-ccp-2.webp"
@@ -212,24 +216,28 @@
         },
         {
           "type": "image",
-          "alt": "HÄNY IC 325 & IC325 CCP – image 3",
+          "alt": "HÄNY IC 325 & IC325 CCP, image 3",
           "width": 800,
           "height": 753,
           "src": "/assets/img/haeny-manuella-pumpar-ic-325-ic325-ccp-3.webp"
         },
         {
-          "type": "image",
-          "alt": "Image carousel",
-          "width": 728,
-          "height": 815,
-          "src": "/assets/img/haeny-manuella-pumpar-ic-325-ic325-ccp-4.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Image carousel",
-          "width": 800,
-          "height": 800,
-          "src": "/assets/img/haeny-manuella-pumpar-ic-325-ic325-ccp-5.webp"
+          "type": "carousel",
+          "items": [
+            {
+              "src": "/assets/img/haeny-manuella-pumpar-ic-325-ic325-ccp-4.webp",
+              "alt": "HÄNY IC 325 & IC325 CCP, image 1",
+              "width": 728,
+              "height": 815
+            },
+            {
+              "src": "/assets/img/haeny-manuella-pumpar-ic-325-ic325-ccp-5.webp",
+              "alt": "HÄNY IC 325 & IC325 CCP, image 2",
+              "width": 800,
+              "height": 800
+            }
+          ],
+          "autoplay": false
         },
         {
           "type": "heading",
@@ -238,7 +246,7 @@
         },
         {
           "type": "text",
-          "html": "Häny’s newest model and flagship – compact grouting platform for cement slurry as well as polyurethane injection. The IC325 CCP consists of the IC325 (from above) plus an extra unit/module with the WIWA K2 high-pressure pump for mixing/injecting polyurethane. The add-on unit also has data logging functionality."
+          "html": "Häny’s newest model and flagship, compact grouting platform for cement slurry as well as polyurethane injection. The IC325 CCP consists of the IC325 (from above) plus an extra unit/module with the WIWA K2 high-pressure pump for mixing/injecting polyurethane. The add-on unit also has data logging functionality."
         },
         {
           "type": "list",
@@ -265,7 +273,7 @@
         },
         {
           "type": "text",
-          "html": "Low maintenance level and reduced washing needs. Optimised for confined spaces – easy to move and install"
+          "html": "Low maintenance level and reduced washing needs. Optimised for confined spaces, easy to move and install"
         },
         {
           "type": "text",
@@ -306,7 +314,7 @@
         },
         {
           "type": "image",
-          "alt": "HÄNY IC 325 & IC325 CCP – imagen 2",
+          "alt": "HÄNY IC 325 & IC325 CCP, imagen 2",
           "width": 1042,
           "height": 1139,
           "src": "/assets/img/haeny-manuella-pumpar-ic-325-ic325-ccp-2.webp"
@@ -354,7 +362,7 @@
         },
         {
           "type": "image",
-          "alt": "HÄNY IC 325 & IC325 CCP – imagen 3",
+          "alt": "HÄNY IC 325 & IC325 CCP, imagen 3",
           "width": 800,
           "height": 753,
           "src": "/assets/img/haeny-manuella-pumpar-ic-325-ic325-ccp-3.webp"
@@ -448,7 +456,7 @@
         },
         {
           "type": "image",
-          "alt": "HÄNY IC 325 & IC325 CCP – bilde 2",
+          "alt": "HÄNY IC 325 & IC325 CCP, bilde 2",
           "width": 1042,
           "height": 1139,
           "src": "/assets/img/haeny-manuella-pumpar-ic-325-ic325-ccp-2.webp"
@@ -496,24 +504,28 @@
         },
         {
           "type": "image",
-          "alt": "HÄNY IC 325 & IC325 CCP – bilde 3",
+          "alt": "HÄNY IC 325 & IC325 CCP, bilde 3",
           "width": 800,
           "height": 753,
           "src": "/assets/img/haeny-manuella-pumpar-ic-325-ic325-ccp-3.webp"
         },
         {
-          "type": "image",
-          "alt": "Bildekarusell",
-          "width": 728,
-          "height": 815,
-          "src": "/assets/img/haeny-manuella-pumpar-ic-325-ic325-ccp-4.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Bildekarusell",
-          "width": 800,
-          "height": 800,
-          "src": "/assets/img/haeny-manuella-pumpar-ic-325-ic325-ccp-5.webp"
+          "type": "carousel",
+          "items": [
+            {
+              "src": "/assets/img/haeny-manuella-pumpar-ic-325-ic325-ccp-4.webp",
+              "alt": "HÄNY IC 325 & IC325 CCP, bilde 1",
+              "width": 728,
+              "height": 815
+            },
+            {
+              "src": "/assets/img/haeny-manuella-pumpar-ic-325-ic325-ccp-5.webp",
+              "alt": "HÄNY IC 325 & IC325 CCP, bilde 2",
+              "width": 800,
+              "height": 800
+            }
+          ],
+          "autoplay": false
         },
         {
           "type": "heading",
@@ -522,7 +534,7 @@
         },
         {
           "type": "text",
-          "html": "Hänys nyeste modell og flaggskip – kompakt injiseringsplattform for sementslurry samt injisering av polyuretan. IC325 CCP består av IC325 (fra ovenfor) samt en ekstra enhet/modul med høytrykkspumpen WIWA K2 for blanding/injisering av polyuretan. Tilleggsenheten har også dataloggingsfunksjon."
+          "html": "Hänys nyeste modell og flaggskip, kompakt injiseringsplattform for sementslurry samt injisering av polyuretan. IC325 CCP består av IC325 (fra ovenfor) samt en ekstra enhet/modul med høytrykkspumpen WIWA K2 for blanding/injisering av polyuretan. Tilleggsenheten har også dataloggingsfunksjon."
         },
         {
           "type": "list",
@@ -549,7 +561,7 @@
         },
         {
           "type": "text",
-          "html": "Lavt vedlikeholdsnivå og redusert vaskebehov. Optimalisert for trange rom – enkel å flytte og installere"
+          "html": "Lavt vedlikeholdsnivå og redusert vaskebehov. Optimalisert for trange rom, enkel å flytte og installere"
         },
         {
           "type": "text",

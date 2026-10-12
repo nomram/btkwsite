@@ -164,7 +164,9 @@ function renderCards(ctx, b) {
 function renderVideo(ctx, b) {
   const title = b.title || ctx.ui.video_play || "Video";
   const watch = `https://www.youtube.com/watch?v=${encodeURIComponent(b.id)}${b.start ? "&t=" + b.start + "s" : ""}`;
-  return `<figure class="video" data-yt="${esc(b.id)}"${b.start ? ` data-start="${esc(b.start)}"` : ""} data-title="${esc(title)}">` +
+  const poster = ctx.ytThumb ? ctx.ytThumb(b.id) : null;
+  return `<figure class="video${poster ? " video--poster" : ""}" data-yt="${esc(b.id)}"${b.start ? ` data-start="${esc(b.start)}"` : ""} data-title="${esc(title)}" data-watch="${esc(ctx.ui.video_watch || "Titta på YouTube")}">` +
+    (poster ? `<img class="video__poster" src="${esc(poster)}" alt="" width="960" height="540" loading="lazy" decoding="async">` : "") +
     `<button class="video__play" type="button"><span class="video__icon" aria-hidden="true"></span>` +
     `<span class="video__label">${esc(ctx.ui.video_play || "Spela upp video")}</span>` +
     (b.title ? `<span class="video__title">${esc(b.title)}</span>` : "") +
@@ -197,7 +199,7 @@ function renderTable(ctx, b) {
   const cells = body.flatMap((r) => r.slice(1));
   const avg = cells.length ? cells.reduce((n, c) => n + String(c).length, 0) / cells.length : 0;
   const centre = b.align === "center" || (b.align !== "left" && avg <= 16);
-  const cls = ["table-wrap", groups.length ? "table-wrap--groups" : "", centre ? "table-wrap--center" : ""].filter(Boolean).join(" ");
+  const cls = ["table-wrap", groups.length ? "table-wrap--groups" : "", centre ? "table-wrap--center" : "", b.narrow ? "table-wrap--narrow" : ""].filter(Boolean).join(" ");
   return `<div class="${cls}" tabindex="0" role="region" aria-label="${esc(b.caption || ctx.ui.table_label || "Tabell")}"><table>${b.caption ? `<caption>${esc(b.caption)}</caption>` : ""}${th}${tb}</table></div>`;
 }
 
@@ -223,7 +225,7 @@ function renderDatasheet(ctx, b) {
 function hoursText(ctx) {
   const h = (ctx.site.contact || {}).hours;
   if (!h || !h.opens || !h.closes) return "";
-  return `${ctx.ui.hours_weekdays || "Måndag–fredag"} ${h.opens}–${h.closes}`;
+  return `${ctx.ui.hours_weekdays || "Måndag-fredag"} ${h.opens}-${h.closes}`;
 }
 
 function renderContact(ctx) {
@@ -304,8 +306,16 @@ function renderModules(ctx, b) {
     const title = it.title ? `<h${lvl} class="module__title"${editFld(ctx, `items.${i}.title`)}>${href ? `<a href="${esc(href)}">${esc(it.title)}</a>` : esc(it.title)}</h${lvl}>` : "";
     const text = it.text || ctx.edit ? `<p class="module__text"${editFld(ctx, `items.${i}.text`)}>${esc(it.text || "")}</p>` : "";
     const bullets = (it.bullets || []).length ? `<ul class="module__list">${it.bullets.map((x) => `<li>${ctx.edit ? esc(x) : localizeHtml(ctx, x)}</li>`).join("")}</ul>` : "";
-    const doc = it.doc && it.doc.href ? `<a class="btn btn--sm btn--ghost" href="${esc(localizeHref(ctx, it.doc.href))}" target="_blank" rel="noopener">${ICON.down}<span>${esc(it.doc.text || ctx.ui.documents || "PDF")}</span></a>` : "";
-    const go = href ? `<a class="btn btn--sm btn--solid" href="${esc(href)}">${more}${ICON.arrow}</a>` : "";
+    let doc = "";
+    if (it.doc && it.doc.href) {
+      const ext = /^https?:/.test(it.doc.href);
+      const view = ext ? it.doc.href : localizeHref(ctx, it.doc.href);
+      const dl = ext && it.doc.driveId ? `https://drive.google.com/uc?export=download&id=${encodeURIComponent(it.doc.driveId)}` : view;
+      doc = `<span class="module__doc"><span class="module__doc-name">${esc(it.doc.text || ctx.ui.documents || "PDF")}</span>` +
+        `<a class="btn btn--sm btn--ghost" href="${esc(view)}" target="_blank" rel="noopener">${ICON.eye}<span>${esc(ctx.ui.doc_view || "Visa")}</span></a>` +
+        `<a class="btn btn--sm btn--ghost" href="${esc(dl)}"${ext ? ' rel="noopener"' : " download"}>${ICON.down}<span>${esc(ctx.ui.download || "Ladda ner")}</span></a></span>`;
+    }
+    const go = href && b.more !== false ? `<a class="btn btn--sm btn--solid" href="${esc(href)}">${more}${ICON.arrow}</a>` : "";
     return `<li class="module">${media}<div class="module__body">${title}${text}${bullets}${go || doc ? `<div class="module__actions">${go}${doc}</div>` : ""}</div></li>`;
   }).join("");
   return `<ul class="modules modules--${layout}" style="--cols:${cols}">${li}</ul>`;
@@ -349,7 +359,7 @@ function renderQuote(ctx) {
   const extra = Object.entries(q.extra || {}).map(([k, v]) => `<input type="hidden" name="${esc(k)}" value="${esc(v)}">`).join("");
   return `<section class="quote" id="offert" data-quote data-endpoint="${esc(q.endpoint || "")}" data-key="${esc(q.apiKey || "")}" data-mailto="${esc(c.email || "")}" ` +
     `data-subject="${T("quote_subject", "Offertförfrågan")}" data-about="${T("quote_about", "Gäller:")}" data-sending="${T("quote_sending", "Skickar…")}" data-ok="${T("quote_ok", "Tack! Vi återkommer så snart vi kan.")}" ` +
-    `data-err="${T("quote_err", "Det gick inte att skicka. Ring oss eller skriv till oss direkt.")}" data-mail="${T("quote_mail", "Ditt e-postprogram öppnas med meddelandet ifyllt – tryck på Skicka där.")}">` +
+    `data-err="${T("quote_err", "Det gick inte att skicka. Ring oss eller skriv till oss direkt.")}" data-mail="${T("quote_mail", "Ditt e-postprogram öppnas med meddelandet ifyllt, tryck på Skicka där.")}">` +
     `<h2>${T("quote_title", "Begär offert")}</h2><p class="muted">${T("quote_intro", "Berätta kort vad du behöver, så återkommer vi.")}</p>` +
     `<form class="qf" method="post" action="${esc(q.endpoint || "#")}" novalidate>` +
     `<div class="qf__grid">${f("name", T("quote_name", "Namn"), "text", "name", true)}${f("company", T("quote_company", "Företag"), "text", "organization")}` +
@@ -397,7 +407,7 @@ function renderBlockInner(ctx, b) {
     case "image": {
       const img = imgTag(ctx, b.src, b.alt || "", { sizes: "(min-width: 900px) 520px, 100vw" });
       const inner = b.href ? `<a href="${esc(localizeHref(ctx, b.href))}"${/^https?:/.test(b.href) ? ' rel="noopener"' : ""}>${img}</a>` : img;
-      return `<figure class="figure">${inner}${b.caption ? `<figcaption${editFld(ctx, "caption")}>${esc(b.caption)}</figcaption>` : ""}</figure>`;
+      return `<figure class="figure${b.align === "right" ? " figure--right" : ""}"${b.maxWidth ? ` style="max-width:${Math.round(Number(b.maxWidth))}px"` : ""}>${inner}${b.caption ? `<figcaption${editFld(ctx, "caption")}>${esc(b.caption)}</figcaption>` : ""}</figure>`;
     }
     case "button": {
       const external = b.external || /^https?:/.test(b.href || "");
@@ -455,6 +465,13 @@ export function renderBlocks(ctx, blocks) {
       i--;
       flushProse();
       out.push(`<section class="docbar" aria-label="${esc(ctx.ui.documents || "Dokument")}"><div class="container"><h2 class="docbar__title">${esc(ctx.ui.documents || "Dokument")}</h2><ul class="docs">${run.map((d) => renderDoc(ctx, d)).join("")}</ul></div></section>`);
+      continue;
+    }
+    if (!ctx.edit && b.type === "button" && b.kind !== "download") {
+      const run = [];
+      while (i < list.length && list[i].type === "button" && list[i].kind !== "download") run.push(list[i++]);
+      i--;
+      prose.push(run.length === 1 ? renderBlock(ctx, run[0]) : `<p class="btn-row btn-row--group">${run.map((x) => renderBlockInner(ctx, x).replace(/^<p class="btn-row">|<\/p>$/g, "")).join("")}</p>`);
       continue;
     }
     if (b.type === "cta" || b.type === "datasheet" && false) { flushProse(); out.push(renderBlock(ctx, b)); continue; }
@@ -556,7 +573,7 @@ function renderHeader(ctx, current) {
       `<div class="mega mega--logos"><div class="container"><ul class="logorow" data-scrub>${tiles}</ul></div></div></li>`;
   }).join("");
   return `<header class="site-header" data-header><div class="container site-header__inner">` +
-    `<a class="logo" href="${esc(ctx.url("/"))}" aria-label="${esc(site.name)} – ${esc(ctx.ui.home || "Startsida")}"><img src="/assets/brand/logo.svg" alt="${esc(site.name)}" width="200" height="32"></a>` +
+    `<a class="logo" href="${esc(ctx.url("/"))}" aria-label="${esc(site.name)}, ${esc(ctx.ui.home || "Startsida")}"><img src="/assets/brand/logo.svg" alt="${esc(site.name)}" width="200" height="32"></a>` +
     `<nav class="nav" id="site-nav" aria-label="${esc(ctx.ui.main_nav || "Huvudmeny")}"><ul class="nav__list">${items}</ul>${renderLangRow(ctx, current)}</nav>` +
     `<div class="header-tools"><button class="icon-btn" type="button" data-search-open aria-label="${esc(ctx.ui.search || "Sök")}">${ICON.search}</button>` +
     `${renderLangSwitch(ctx, current)}` +
@@ -636,7 +653,7 @@ function renderFooter(ctx) {
 export function seoTitle(ctx, page, t) {
   const s = ctx.site;
   if (t.seoTitle) return t.seoTitle;
-  if (page.path === "/") return `${s.name} – ${t.tagline || s.tagline || t.h1}`;
+  if (page.path === "/") return `${s.name} | ${t.tagline || s.tagline || t.h1}`;
   const base = t.h1 || t.title;
   const segs = page.path.split("/").filter(Boolean);
   let brand = "";
@@ -645,7 +662,7 @@ export function seoTitle(ctx, page, t) {
     const bt = ctx.tr(bp, ctx.lang) || ctx.tr(bp, ctx.defaultLang);
     if (bt) brand = bt.h1 || bt.title;
   }
-  const withBrand = brand && brand !== base ? `${base} – ${brand}` : base;
+  const withBrand = brand && brand !== base ? `${base} | ${brand}` : base;
   const full = `${withBrand} | ${s.name}`;
   return full.length <= 62 ? full : `${base} | ${s.name}`;
 }
@@ -657,7 +674,7 @@ function pageDescription(ctx, page, t) {
   const first = flatBlocks(t.blocks).find((b) => b.type === "text");
   const txt = first ? stripTags(first.html) : t.lead || "";
   if (txt.length > 50) return txt.length > 158 ? txt.slice(0, txt.lastIndexOf(" ", 155)) + "…" : txt;
-  return `${t.h1 || t.title} – ${ctx.site.tagline || ctx.site.name}`;
+  return `${t.h1 || t.title}: ${ctx.site.tagline || ctx.site.name}`;
 }
 
 function ogImage(ctx, page, t) {
@@ -734,10 +751,11 @@ function composeBody(ctx, page, t) {
   const template = page.template || "page";
   if (template === "brand" || template === "product") {
     let n = 0;
-    while (n < blocks.length && ["image", "text", "list", "heading"].includes(blocks[n].type)) n++;
+    while (n < blocks.length && ["image", "carousel", "text", "list", "heading"].includes(blocks[n].type)) n++;
     const lead = blocks.slice(0, n);
-    const media = lead.filter((b) => b.type === "image");
-    const text = lead.filter((b) => b.type !== "image");
+    const isMedia = (b) => (b.type === "image" && !b.inline) || b.type === "carousel";
+    const media = lead.filter(isMedia);
+    const text = lead.filter((b) => !isMedia(b));
     if (media.length && text.length) {
       blocks.splice(0, n);
       splitHtml = `<div class="container"><div class="split"><div class="split__media">${media.map((b) => renderBlock(ctx, b)).join("")}</div>` +
@@ -754,7 +772,7 @@ function productQuoteCta(ctx, page, t, name) {
   if (!ctx.pages.has("/kontakta-oss") || !shown(ctx, "/kontakta-oss")) return "";
   if (flatBlocks(t.blocks || []).some((b) => b.type === "cta" || b.type === "quote")) return "";
   const u = ctx.ui;
-  if (t.title && t.title !== name && t.title.length <= 12) name = `${t.title} – ${name}`; // short model code + name, e.g. "ST-5 – Silon"
+  if (t.title && t.title !== name && t.title.length <= 12) name = `${t.title}, ${name}`; // short model code + name, e.g. "ST-5, Silon"
   const href = localizeHref(ctx, "/kontakta-oss") + "?produkt=" + encodeURIComponent(name) + "#offert";
   const title = String(u.quote_cta_title || "Vill du ha offert på {name}?").replace("{name}", name);
   return `<section class="cta"><div class="container cta__inner"><div class="cta__text"><h2>${esc(title)}</h2><p>${esc(u.quote_cta_text || "Berätta kort vad du behöver, så återkommer vi med pris och leveranstid.")}</p></div>` +

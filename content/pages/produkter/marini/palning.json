@@ -15,15 +15,15 @@
       "blocks": [
         {
           "type": "image",
-          "alt": "Marini – logotyp",
+          "alt": "Marini logotyp",
           "href": "/produkter/marini",
-          "width": 1920,
-          "height": 1117,
-          "src": "/assets/img/marini-3.webp"
+          "width": 928,
+          "height": 542,
+          "src": "/assets/img/logo-marini-emblem.webp"
         },
         {
           "type": "image",
-          "alt": "MR-P / Pålning – bild 2",
+          "alt": "MR-P / Pålning: bild 2",
           "width": 1920,
           "height": 1752,
           "src": "/assets/img/marini-palning-2.webp"
@@ -59,53 +59,52 @@
           "driveId": "1ecMiKcn9MMZ4A09FXVKtBN1SAgcdwbvd"
         },
         {
-          "type": "image",
-          "alt": "Bildkarusell",
-          "width": 1024,
-          "height": 768,
-          "src": "/assets/img/marini-palning-3.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Bildkarusell",
-          "width": 1024,
-          "height": 768,
-          "src": "/assets/img/marini-palning-4.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Bildkarusell",
-          "width": 1600,
-          "height": 1200,
-          "src": "/assets/img/marini-palning-5.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Bildkarusell",
-          "width": 1600,
-          "height": 1200,
-          "src": "/assets/img/marini-palning-6.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Bildkarusell",
-          "width": 1024,
-          "height": 768,
-          "src": "/assets/img/marini-palning-7.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Bildkarusell",
-          "width": 1600,
-          "height": 1200,
-          "src": "/assets/img/marini-palning-8.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Bildkarusell",
-          "width": 768,
-          "height": 1024,
-          "src": "/assets/img/marini-palning-9.webp"
+          "type": "carousel",
+          "items": [
+            {
+              "src": "/assets/img/marini-palning-3.webp",
+              "alt": "MR-P / Pålning, bild 1",
+              "width": 1024,
+              "height": 768
+            },
+            {
+              "src": "/assets/img/marini-palning-4.webp",
+              "alt": "MR-P / Pålning, bild 2",
+              "width": 1024,
+              "height": 768
+            },
+            {
+              "src": "/assets/img/marini-palning-5.webp",
+              "alt": "MR-P / Pålning, bild 3",
+              "width": 1600,
+              "height": 1200
+            },
+            {
+              "src": "/assets/img/marini-palning-6.webp",
+              "alt": "MR-P / Pålning, bild 4",
+              "width": 1600,
+              "height": 1200
+            },
+            {
+              "src": "/assets/img/marini-palning-7.webp",
+              "alt": "MR-P / Pålning, bild 5",
+              "width": 1024,
+              "height": 768
+            },
+            {
+              "src": "/assets/img/marini-palning-8.webp",
+              "alt": "MR-P / Pålning, bild 6",
+              "width": 1600,
+              "height": 1200
+            },
+            {
+              "src": "/assets/img/marini-palning-9.webp",
+              "alt": "MR-P / Pålning, bild 7",
+              "width": 768,
+              "height": 1024
+            }
+          ],
+          "autoplay": false
         },
         {
           "type": "heading",
@@ -119,67 +118,64 @@
           "title": "Marini Srl - MR-P 350 compact piling rig"
         },
         {
-          "type": "image",
-          "alt": "Bildkarusell",
-          "width": 1920,
-          "height": 1440,
-          "src": "/assets/img/marini-palning-10.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Bildkarusell",
-          "width": 1536,
-          "height": 2048,
-          "src": "/assets/img/marini-palning-11.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Bildkarusell",
-          "width": 1536,
-          "height": 2048,
-          "src": "/assets/img/marini-palning-12.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Bildkarusell",
-          "width": 1920,
-          "height": 1440,
-          "src": "/assets/img/marini-palning-13.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Bildkarusell",
-          "width": 1536,
-          "height": 2048,
-          "src": "/assets/img/marini-palning-14.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Bildkarusell",
-          "width": 1920,
-          "height": 1440,
-          "src": "/assets/img/marini-palning-15.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Bildkarusell",
-          "width": 1920,
-          "height": 1440,
-          "src": "/assets/img/marini-palning-16.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Bildkarusell",
-          "width": 1920,
-          "height": 1440,
-          "src": "/assets/img/marini-palning-17.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Bildkarusell",
-          "width": 1536,
-          "height": 2048,
-          "src": "/assets/img/marini-palning-18.webp"
+          "type": "carousel",
+          "items": [
+            {
+              "src": "/assets/img/marini-palning-10.webp",
+              "alt": "MR-P / Pålning, bild 1",
+              "width": 1920,
+              "height": 1440
+            },
+            {
+              "src": "/assets/img/marini-palning-11.webp",
+              "alt": "MR-P / Pålning, bild 2",
+              "width": 1536,
+              "height": 2048
+            },
+            {
+              "src": "/assets/img/marini-palning-12.webp",
+              "alt": "MR-P / Pålning, bild 3",
+              "width": 1536,
+              "height": 2048
+            },
+            {
+              "src": "/assets/img/marini-palning-13.webp",
+              "alt": "MR-P / Pålning, bild 4",
+              "width": 1920,
+              "height": 1440
+            },
+            {
+              "src": "/assets/img/marini-palning-14.webp",
+              "alt": "MR-P / Pålning, bild 5",
+              "width": 1536,
+              "height": 2048
+            },
+            {
+              "src": "/assets/img/marini-palning-15.webp",
+              "alt": "MR-P / Pålning, bild 6",
+              "width": 1920,
+              "height": 1440
+            },
+            {
+              "src": "/assets/img/marini-palning-16.webp",
+              "alt": "MR-P / Pålning, bild 7",
+              "width": 1920,
+              "height": 1440
+            },
+            {
+              "src": "/assets/img/marini-palning-17.webp",
+              "alt": "MR-P / Pålning, bild 8",
+              "width": 1920,
+              "height": 1440
+            },
+            {
+              "src": "/assets/img/marini-palning-18.webp",
+              "alt": "MR-P / Pålning, bild 9",
+              "width": 1536,
+              "height": 2048
+            }
+          ],
+          "autoplay": false
         },
         {
           "type": "heading",
@@ -278,15 +274,15 @@
       "blocks": [
         {
           "type": "image",
-          "alt": "Marini – logo",
+          "alt": "Marini logo",
           "href": "/produkter/marini",
-          "width": 1920,
-          "height": 1117,
-          "src": "/assets/img/marini-3.webp"
+          "width": 928,
+          "height": 542,
+          "src": "/assets/img/logo-marini-emblem.webp"
         },
         {
           "type": "image",
-          "alt": "MR-P / Piling – image 2",
+          "alt": "MR-P / Piling: image 2",
           "width": 1920,
           "height": 1752,
           "src": "/assets/img/marini-palning-2.webp"
@@ -301,7 +297,7 @@
         },
         {
           "type": "text",
-          "html": "The rigs are compact, which makes them easy to transport and use at different worksites, while offering impressive pull and push forces for stable deep drilling. In addition to the Kelly-bar system (marked BP – bored piles), the series also includes CFA models (Continuous Flight Auger), which provide even greater flexibility for different drilling applications."
+          "html": "The rigs are compact, which makes them easy to transport and use at different worksites, while offering impressive pull and push forces for stable deep drilling. In addition to the Kelly-bar system (marked BP, bored piles), the series also includes CFA models (Continuous Flight Auger), which provide even greater flexibility for different drilling applications."
         },
         {
           "type": "text",
@@ -322,53 +318,52 @@
           "driveId": "1ecMiKcn9MMZ4A09FXVKtBN1SAgcdwbvd"
         },
         {
-          "type": "image",
-          "alt": "Image carousel",
-          "width": 1024,
-          "height": 768,
-          "src": "/assets/img/marini-palning-3.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Image carousel",
-          "width": 1024,
-          "height": 768,
-          "src": "/assets/img/marini-palning-4.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Image carousel",
-          "width": 1600,
-          "height": 1200,
-          "src": "/assets/img/marini-palning-5.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Image carousel",
-          "width": 1600,
-          "height": 1200,
-          "src": "/assets/img/marini-palning-6.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Image carousel",
-          "width": 1024,
-          "height": 768,
-          "src": "/assets/img/marini-palning-7.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Image carousel",
-          "width": 1600,
-          "height": 1200,
-          "src": "/assets/img/marini-palning-8.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Image carousel",
-          "width": 768,
-          "height": 1024,
-          "src": "/assets/img/marini-palning-9.webp"
+          "type": "carousel",
+          "items": [
+            {
+              "src": "/assets/img/marini-palning-3.webp",
+              "alt": "MR-P / Piling, image 1",
+              "width": 1024,
+              "height": 768
+            },
+            {
+              "src": "/assets/img/marini-palning-4.webp",
+              "alt": "MR-P / Piling, image 2",
+              "width": 1024,
+              "height": 768
+            },
+            {
+              "src": "/assets/img/marini-palning-5.webp",
+              "alt": "MR-P / Piling, image 3",
+              "width": 1600,
+              "height": 1200
+            },
+            {
+              "src": "/assets/img/marini-palning-6.webp",
+              "alt": "MR-P / Piling, image 4",
+              "width": 1600,
+              "height": 1200
+            },
+            {
+              "src": "/assets/img/marini-palning-7.webp",
+              "alt": "MR-P / Piling, image 5",
+              "width": 1024,
+              "height": 768
+            },
+            {
+              "src": "/assets/img/marini-palning-8.webp",
+              "alt": "MR-P / Piling, image 6",
+              "width": 1600,
+              "height": 1200
+            },
+            {
+              "src": "/assets/img/marini-palning-9.webp",
+              "alt": "MR-P / Piling, image 7",
+              "width": 768,
+              "height": 1024
+            }
+          ],
+          "autoplay": false
         },
         {
           "type": "heading",
@@ -382,67 +377,64 @@
           "title": "Marini Srl - MR-P 350 compact piling rig"
         },
         {
-          "type": "image",
-          "alt": "Image carousel",
-          "width": 1920,
-          "height": 1440,
-          "src": "/assets/img/marini-palning-10.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Image carousel",
-          "width": 1536,
-          "height": 2048,
-          "src": "/assets/img/marini-palning-11.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Image carousel",
-          "width": 1536,
-          "height": 2048,
-          "src": "/assets/img/marini-palning-12.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Image carousel",
-          "width": 1920,
-          "height": 1440,
-          "src": "/assets/img/marini-palning-13.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Image carousel",
-          "width": 1536,
-          "height": 2048,
-          "src": "/assets/img/marini-palning-14.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Image carousel",
-          "width": 1920,
-          "height": 1440,
-          "src": "/assets/img/marini-palning-15.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Image carousel",
-          "width": 1920,
-          "height": 1440,
-          "src": "/assets/img/marini-palning-16.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Image carousel",
-          "width": 1920,
-          "height": 1440,
-          "src": "/assets/img/marini-palning-17.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Image carousel",
-          "width": 1536,
-          "height": 2048,
-          "src": "/assets/img/marini-palning-18.webp"
+          "type": "carousel",
+          "items": [
+            {
+              "src": "/assets/img/marini-palning-10.webp",
+              "alt": "MR-P / Piling, image 1",
+              "width": 1920,
+              "height": 1440
+            },
+            {
+              "src": "/assets/img/marini-palning-11.webp",
+              "alt": "MR-P / Piling, image 2",
+              "width": 1536,
+              "height": 2048
+            },
+            {
+              "src": "/assets/img/marini-palning-12.webp",
+              "alt": "MR-P / Piling, image 3",
+              "width": 1536,
+              "height": 2048
+            },
+            {
+              "src": "/assets/img/marini-palning-13.webp",
+              "alt": "MR-P / Piling, image 4",
+              "width": 1920,
+              "height": 1440
+            },
+            {
+              "src": "/assets/img/marini-palning-14.webp",
+              "alt": "MR-P / Piling, image 5",
+              "width": 1536,
+              "height": 2048
+            },
+            {
+              "src": "/assets/img/marini-palning-15.webp",
+              "alt": "MR-P / Piling, image 6",
+              "width": 1920,
+              "height": 1440
+            },
+            {
+              "src": "/assets/img/marini-palning-16.webp",
+              "alt": "MR-P / Piling, image 7",
+              "width": 1920,
+              "height": 1440
+            },
+            {
+              "src": "/assets/img/marini-palning-17.webp",
+              "alt": "MR-P / Piling, image 8",
+              "width": 1920,
+              "height": 1440
+            },
+            {
+              "src": "/assets/img/marini-palning-18.webp",
+              "alt": "MR-P / Piling, image 9",
+              "width": 1536,
+              "height": 2048
+            }
+          ],
+          "autoplay": false
         },
         {
           "type": "heading",
@@ -542,15 +534,15 @@
       "blocks": [
         {
           "type": "image",
-          "alt": "Marini – logotipo",
+          "alt": "Marini logotipo",
           "href": "/produkter/marini",
-          "width": 1920,
-          "height": 1117,
-          "src": "/assets/img/marini-3.webp"
+          "width": 928,
+          "height": 542,
+          "src": "/assets/img/logo-marini-emblem.webp"
         },
         {
           "type": "image",
-          "alt": "MR-P / Pilotaje – imagen 2",
+          "alt": "MR-P / Pilotaje: imagen 2",
           "width": 1920,
           "height": 1752,
           "src": "/assets/img/marini-palning-2.webp"
@@ -806,15 +798,15 @@
       "blocks": [
         {
           "type": "image",
-          "alt": "Marini – logo",
+          "alt": "Marini logo",
           "href": "/produkter/marini",
-          "width": 1920,
-          "height": 1117,
-          "src": "/assets/img/marini-3.webp"
+          "width": 928,
+          "height": 542,
+          "src": "/assets/img/logo-marini-emblem.webp"
         },
         {
           "type": "image",
-          "alt": "MR-P / Peling – bilde 2",
+          "alt": "MR-P / Peling: bilde 2",
           "width": 1920,
           "height": 1752,
           "src": "/assets/img/marini-palning-2.webp"
@@ -829,7 +821,7 @@
         },
         {
           "type": "text",
-          "html": "Riggene er kompakte, noe som gjør dem enkle å transportere og bruke på ulike arbeidsplasser, samtidig som de tilbyr imponerende drag- og trykkrefter for stabil boring i dybden. I tillegg til Kelly-bar-systemet (merket BP – bored piles) omfatter serien også CFA-modeller (Continuous Flight Auger), som gir enda større fleksibilitet for ulike boreapplikasjoner."
+          "html": "Riggene er kompakte, noe som gjør dem enkle å transportere og bruke på ulike arbeidsplasser, samtidig som de tilbyr imponerende drag- og trykkrefter for stabil boring i dybden. I tillegg til Kelly-bar-systemet (merket BP, bored piles) omfatter serien også CFA-modeller (Continuous Flight Auger), som gir enda større fleksibilitet for ulike boreapplikasjoner."
         },
         {
           "type": "text",
@@ -850,53 +842,52 @@
           "driveId": "1ecMiKcn9MMZ4A09FXVKtBN1SAgcdwbvd"
         },
         {
-          "type": "image",
-          "alt": "Bildekarusell",
-          "width": 1024,
-          "height": 768,
-          "src": "/assets/img/marini-palning-3.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Bildekarusell",
-          "width": 1024,
-          "height": 768,
-          "src": "/assets/img/marini-palning-4.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Bildekarusell",
-          "width": 1600,
-          "height": 1200,
-          "src": "/assets/img/marini-palning-5.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Bildekarusell",
-          "width": 1600,
-          "height": 1200,
-          "src": "/assets/img/marini-palning-6.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Bildekarusell",
-          "width": 1024,
-          "height": 768,
-          "src": "/assets/img/marini-palning-7.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Bildekarusell",
-          "width": 1600,
-          "height": 1200,
-          "src": "/assets/img/marini-palning-8.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Bildekarusell",
-          "width": 768,
-          "height": 1024,
-          "src": "/assets/img/marini-palning-9.webp"
+          "type": "carousel",
+          "items": [
+            {
+              "src": "/assets/img/marini-palning-3.webp",
+              "alt": "MR-P / Peling, bilde 1",
+              "width": 1024,
+              "height": 768
+            },
+            {
+              "src": "/assets/img/marini-palning-4.webp",
+              "alt": "MR-P / Peling, bilde 2",
+              "width": 1024,
+              "height": 768
+            },
+            {
+              "src": "/assets/img/marini-palning-5.webp",
+              "alt": "MR-P / Peling, bilde 3",
+              "width": 1600,
+              "height": 1200
+            },
+            {
+              "src": "/assets/img/marini-palning-6.webp",
+              "alt": "MR-P / Peling, bilde 4",
+              "width": 1600,
+              "height": 1200
+            },
+            {
+              "src": "/assets/img/marini-palning-7.webp",
+              "alt": "MR-P / Peling, bilde 5",
+              "width": 1024,
+              "height": 768
+            },
+            {
+              "src": "/assets/img/marini-palning-8.webp",
+              "alt": "MR-P / Peling, bilde 6",
+              "width": 1600,
+              "height": 1200
+            },
+            {
+              "src": "/assets/img/marini-palning-9.webp",
+              "alt": "MR-P / Peling, bilde 7",
+              "width": 768,
+              "height": 1024
+            }
+          ],
+          "autoplay": false
         },
         {
           "type": "heading",
@@ -910,67 +901,64 @@
           "title": "Marini Srl - MR-P 350 compact piling rig"
         },
         {
-          "type": "image",
-          "alt": "Bildekarusell",
-          "width": 1920,
-          "height": 1440,
-          "src": "/assets/img/marini-palning-10.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Bildekarusell",
-          "width": 1536,
-          "height": 2048,
-          "src": "/assets/img/marini-palning-11.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Bildekarusell",
-          "width": 1536,
-          "height": 2048,
-          "src": "/assets/img/marini-palning-12.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Bildekarusell",
-          "width": 1920,
-          "height": 1440,
-          "src": "/assets/img/marini-palning-13.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Bildekarusell",
-          "width": 1536,
-          "height": 2048,
-          "src": "/assets/img/marini-palning-14.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Bildekarusell",
-          "width": 1920,
-          "height": 1440,
-          "src": "/assets/img/marini-palning-15.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Bildekarusell",
-          "width": 1920,
-          "height": 1440,
-          "src": "/assets/img/marini-palning-16.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Bildekarusell",
-          "width": 1920,
-          "height": 1440,
-          "src": "/assets/img/marini-palning-17.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Bildekarusell",
-          "width": 1536,
-          "height": 2048,
-          "src": "/assets/img/marini-palning-18.webp"
+          "type": "carousel",
+          "items": [
+            {
+              "src": "/assets/img/marini-palning-10.webp",
+              "alt": "MR-P / Peling, bilde 1",
+              "width": 1920,
+              "height": 1440
+            },
+            {
+              "src": "/assets/img/marini-palning-11.webp",
+              "alt": "MR-P / Peling, bilde 2",
+              "width": 1536,
+              "height": 2048
+            },
+            {
+              "src": "/assets/img/marini-palning-12.webp",
+              "alt": "MR-P / Peling, bilde 3",
+              "width": 1536,
+              "height": 2048
+            },
+            {
+              "src": "/assets/img/marini-palning-13.webp",
+              "alt": "MR-P / Peling, bilde 4",
+              "width": 1920,
+              "height": 1440
+            },
+            {
+              "src": "/assets/img/marini-palning-14.webp",
+              "alt": "MR-P / Peling, bilde 5",
+              "width": 1536,
+              "height": 2048
+            },
+            {
+              "src": "/assets/img/marini-palning-15.webp",
+              "alt": "MR-P / Peling, bilde 6",
+              "width": 1920,
+              "height": 1440
+            },
+            {
+              "src": "/assets/img/marini-palning-16.webp",
+              "alt": "MR-P / Peling, bilde 7",
+              "width": 1920,
+              "height": 1440
+            },
+            {
+              "src": "/assets/img/marini-palning-17.webp",
+              "alt": "MR-P / Peling, bilde 8",
+              "width": 1920,
+              "height": 1440
+            },
+            {
+              "src": "/assets/img/marini-palning-18.webp",
+              "alt": "MR-P / Peling, bilde 9",
+              "width": 1536,
+              "height": 2048
+            }
+          ],
+          "autoplay": false
         },
         {
           "type": "heading",

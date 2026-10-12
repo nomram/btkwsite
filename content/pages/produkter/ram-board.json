@@ -18,7 +18,8 @@
           "alt": "Ram Board",
           "width": 250,
           "height": 103,
-          "src": "/assets/img/ram-board-1.webp"
+          "src": "/assets/img/ram-board-1.webp",
+          "maxWidth": 300
         },
         {
           "type": "text",
@@ -30,11 +31,14 @@
         },
         {
           "type": "image",
-          "alt": "Ram Board – bild 2",
+          "alt": "Ram Board: bild 2",
           "href": "https://search.fsc.org/en/certificate/a0240000008JIyxAAG/",
           "width": 154,
           "height": 210,
-          "src": "/assets/img/ram-board-2.webp"
+          "src": "/assets/img/ram-board-2.webp",
+          "inline": true,
+          "maxWidth": 56,
+          "align": "right"
         },
         {
           "type": "button",
@@ -79,7 +83,8 @@
           "alt": "Ram Board",
           "width": 250,
           "height": 103,
-          "src": "/assets/img/ram-board-1.webp"
+          "src": "/assets/img/ram-board-1.webp",
+          "maxWidth": 300
         },
         {
           "type": "text",
@@ -91,11 +96,14 @@
         },
         {
           "type": "image",
-          "alt": "Ram Board – image 2",
+          "alt": "Ram Board: image 2",
           "href": "https://search.fsc.org/en/certificate/a0240000008JIyxAAG/",
           "width": 154,
           "height": 210,
-          "src": "/assets/img/ram-board-2.webp"
+          "src": "/assets/img/ram-board-2.webp",
+          "inline": true,
+          "maxWidth": 56,
+          "align": "right"
         },
         {
           "type": "button",
@@ -141,7 +149,8 @@
           "alt": "Ram Board",
           "width": 250,
           "height": 103,
-          "src": "/assets/img/ram-board-1.webp"
+          "src": "/assets/img/ram-board-1.webp",
+          "maxWidth": 300
         },
         {
           "type": "text",
@@ -153,11 +162,14 @@
         },
         {
           "type": "image",
-          "alt": "Ram Board – imagen 2",
+          "alt": "Ram Board: imagen 2",
           "href": "https://search.fsc.org/en/certificate/a0240000008JIyxAAG/",
           "width": 154,
           "height": 210,
-          "src": "/assets/img/ram-board-2.webp"
+          "src": "/assets/img/ram-board-2.webp",
+          "inline": true,
+          "maxWidth": 56,
+          "align": "right"
         },
         {
           "type": "button",
@@ -203,7 +215,8 @@
           "alt": "Ram Board",
           "width": 250,
           "height": 103,
-          "src": "/assets/img/ram-board-1.webp"
+          "src": "/assets/img/ram-board-1.webp",
+          "maxWidth": 300
         },
         {
           "type": "text",
@@ -215,11 +228,14 @@
         },
         {
           "type": "image",
-          "alt": "Ram Board – bilde 2",
+          "alt": "Ram Board: bilde 2",
           "href": "https://search.fsc.org/en/certificate/a0240000008JIyxAAG/",
           "width": 154,
           "height": 210,
-          "src": "/assets/img/ram-board-2.webp"
+          "src": "/assets/img/ram-board-2.webp",
+          "inline": true,
+          "maxWidth": 56,
+          "align": "right"
         },
         {
           "type": "button",

@@ -107,10 +107,11 @@ a:hover { text-decoration-thickness: 2px; }
 .mega__col li a:hover { color: var(--text); }
 /* logo dropdown: brand logos straight away; the row follows the mouse sideways (site.js, data-scrub) */
 .mega--logos .container { padding-block: 1.1rem 1.35rem; }
-.logorow { display: flex; gap: .8rem; list-style: none; margin: 0; padding: .25rem 0 .4rem; overflow-x: auto; scrollbar-width: none; }
+/* all brands visible at once (two rows of seven) instead of a strip that scrolls with the mouse: no cut-off first/last item */
+.logorow { display: flex; flex-wrap: wrap; gap: .8rem; list-style: none; margin: 0; padding: .35rem .15rem .5rem; }
 .logorow::-webkit-scrollbar { display: none; }
-.logorow > li { flex: none; }
-.logorow__item { display: flex; flex-direction: column; align-items: center; gap: .55rem; width: 158px; padding: .95rem .6rem .75rem; border: 1px solid var(--line); border-radius: var(--radius); background: #fff; text-decoration: none; transition: border-color .15s, transform .15s, box-shadow .15s; }
+.logorow > li { flex: 0 0 calc((100% - 6 * .8rem) / 7); min-width: 0; }
+.logorow__item { display: flex; flex-direction: column; align-items: center; gap: .55rem; width: 100%; padding: .95rem .6rem .75rem; border: 1px solid var(--line); border-radius: var(--radius); background: #fff; text-decoration: none; transition: border-color .15s, transform .15s, box-shadow .15s; }
 .logorow__item:hover, .logorow__item:focus-visible { border-color: var(--primary); transform: translateY(-2px); box-shadow: var(--shadow); }
 .logorow__img { display: grid; place-items: center; width: 100%; height: 58px; }
 .logorow__logo { max-height: 54px; max-width: 124px; width: auto; height: auto; object-fit: contain; }
@@ -305,6 +306,14 @@ li:first-child > .subnav__link--logo::after { left: 0; }
 }
 @media (max-width: 420px) { .prose .modules--cards, .modules--cards { grid-template-columns: 1fr; } .modules--cards .module__media { aspect-ratio: 4 / 3; } }
 
+.module__doc { display: flex; flex-wrap: wrap; gap: .45rem; align-items: center; width: 100%; }
+.module__doc-name { flex: 1 0 100%; font-size: .82rem; font-weight: 600; color: var(--muted); }
+.btn-row--group { display: flex; flex-wrap: wrap; gap: .75rem; align-items: center; }
+.figure--right { margin-left: auto; margin-top: 2.2rem; }
+.prose .figure[style*="max-width"] img, .figure[style*="max-width"] img { width: 100%; }
+.video--poster .video__poster { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.video--poster .video__play::before { content: ""; position: absolute; inset: 0; background: linear-gradient(0deg, rgba(35, 31, 32, .72), rgba(35, 31, 32, .25) 55%, rgba(35, 31, 32, .35)); }
+.video--poster .video__play > * { position: relative; }
 /* ---------- image carousel ---------- */
 .carousel { position: relative; margin: 1.5rem 0 2rem; }
 .prose > .carousel { max-width: none; }
@@ -376,6 +385,8 @@ li:first-child > .subnav__link--logo::after { left: 0; }
 .table-wrap td { min-width: 5.2rem; }
 .table-wrap tbody tr:last-child > * { border-bottom: 0; }
 .table-wrap--center td, .table-wrap--center thead th:not(:first-child) { text-align: center; }
+.table-wrap--narrow { max-width: 40rem; }
+.table-wrap--narrow table { min-width: 0; }
 /* column groups: the group colour runs down the whole column as a faint tint */
 .table-wrap--groups thead tr.tbl__groups th { text-align: center; font-size: .78rem; letter-spacing: .05em; padding: .7rem .8rem; border-bottom: 0; }
 .table-wrap--groups thead th.g0 { background: var(--dark); color: #fff; }
@@ -412,6 +423,9 @@ li:first-child > .subnav__link--logo::after { left: 0; }
 .video__title { font-size: .88rem; opacity: .9; max-width: 36rem; }
 .video__note { font-size: .74rem; opacity: .6; max-width: 30rem; }
 .video iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+/* while the embedded player runs the frame has no clipping or rounding: clipped iframes can render black (sound only) in some Chrome/GPU combinations */
+.video.is-playing { overflow: visible; border-radius: 0; background: #000; }
+.video__yt { display: inline-block; margin: -1.35rem 0 1.6rem; font-size: .85rem; color: var(--muted); }
 .video noscript a { position: absolute; inset: auto 1rem 1rem 1rem; color: #fff; }
 
 /* ---------- two-column sections, social icons, centred title (About page) ---------- */

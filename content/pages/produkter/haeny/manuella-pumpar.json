@@ -23,7 +23,7 @@
         },
         {
           "type": "image",
-          "alt": "Häny - Manuella Betongpumpar (IC) – bild 2",
+          "alt": "Häny - Manuella Betongpumpar (IC), bild 2",
           "width": 1920,
           "height": 1315,
           "src": "/assets/img/haeny-manuella-pumpar-2.webp"
@@ -45,88 +45,62 @@
           "html": "<a href=\"/kontakta-oss\">Kontakta oss</a> för mer ytterliggare information."
         },
         {
-          "type": "image",
-          "alt": "HÄNY IC 310 & IC311 – logotyp",
-          "href": "/produkter/haeny/manuella-pumpar/ic-310-ic-311",
-          "width": 1083,
-          "height": 1169,
-          "src": "/assets/img/haeny-manuella-pumpar-ic-310-ic-311.webp"
-        },
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "IC310"
-        },
-        {
-          "type": "list",
-          "ordered": false,
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 3,
+          "more": false,
           "items": [
-            "Maxtryck: 100 bar",
-            "Maxflöde: 1.5 m³/timme"
+            {
+              "title": "IC310",
+              "image": "/assets/img/haeny-manuella-pumpar-ic-310-ic-311.webp",
+              "alt": "IC310",
+              "href": "/produkter/haeny/manuella-pumpar/ic-310-ic-311",
+              "bullets": [
+                "Maxtryck: 100 bar",
+                "Maxflöde: 1.5 m³/timme"
+              ]
+            },
+            {
+              "title": "IC311",
+              "image": "/assets/img/haeny-manuella-pumpar-ic-310-ic-311.webp",
+              "alt": "IC311",
+              "href": "/produkter/haeny/manuella-pumpar/ic-310-ic-311",
+              "bullets": [
+                "Maxtryck: 75 bar",
+                "Maxflöde: 2 m³/timme"
+              ]
+            },
+            {
+              "title": "IC325",
+              "image": "/assets/img/haeny-manuella-pumpar-ic-325-ic325-ccp.webp",
+              "alt": "IC325",
+              "href": "/produkter/haeny/manuella-pumpar/ic-325-ic325-ccp",
+              "bullets": [
+                "Maxtryck: 100 bar",
+                "Maxflöde: 2 m³/timme"
+              ]
+            }
           ]
         },
         {
-          "type": "image",
-          "alt": "HÄNY IC 310 & IC311 – logotyp",
-          "href": "/produkter/haeny/manuella-pumpar/ic-310-ic-311",
-          "width": 1083,
-          "height": 1169,
-          "src": "/assets/img/haeny-manuella-pumpar-ic-310-ic-311.webp"
-        },
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "IC311"
-        },
-        {
-          "type": "list",
-          "ordered": false,
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 3,
+          "more": false,
           "items": [
-            "Maxtryck: 75 bar",
-            "Maxflöde: 2 m³/timme"
+            {
+              "image": "/assets/img/haeny-manuella-pumpar-6.webp",
+              "alt": "Häny - Manuella Betongpumpar (IC), bild 6"
+            },
+            {
+              "image": "/assets/img/haeny-manuella-pumpar-7.webp",
+              "alt": "Häny - Manuella Betongpumpar (IC), bild 7"
+            },
+            {
+              "image": "/assets/img/haeny-manuella-pumpar-8.webp",
+              "alt": "Häny - Manuella Betongpumpar (IC), bild 8"
+            }
           ]
-        },
-        {
-          "type": "image",
-          "alt": "HÄNY IC 325 & IC325 CCP – logotyp",
-          "href": "/produkter/haeny/manuella-pumpar/ic-325-ic325-ccp",
-          "width": 1013,
-          "height": 1089,
-          "src": "/assets/img/haeny-manuella-pumpar-ic-325-ic325-ccp.webp"
-        },
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "IC325"
-        },
-        {
-          "type": "list",
-          "ordered": false,
-          "items": [
-            "Maxtryck: 100 bar",
-            "Maxflöde: 2 m³/timme"
-          ]
-        },
-        {
-          "type": "image",
-          "alt": "Häny - Manuella Betongpumpar (IC) – bild 6",
-          "width": 481,
-          "height": 519,
-          "src": "/assets/img/haeny-manuella-pumpar-6.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Häny - Manuella Betongpumpar (IC) – bild 7",
-          "width": 486,
-          "height": 514,
-          "src": "/assets/img/haeny-manuella-pumpar-7.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Häny - Manuella Betongpumpar (IC) – bild 8",
-          "width": 915,
-          "height": 968,
-          "src": "/assets/img/haeny-manuella-pumpar-8.webp"
         },
         {
           "type": "text",
@@ -263,12 +237,12 @@
     },
     "en": {
       "title": "Manual pumps",
-      "h1": "Häny – Manual concrete pumps (IC)",
+      "h1": "Häny: Manual concrete pumps (IC)",
       "description": "There are several manual variants depending on volume and pressure requirements. The compact IC310, IC311 and IC325 units are best sellers. The model name gives a hint…",
       "blocks": [
         {
           "type": "image",
-          "alt": "Häny – Manual concrete pumps (IC)",
+          "alt": "Häny: Manual concrete pumps (IC)",
           "width": 876,
           "height": 510,
           "src": "/assets/img/haeny-automatiska-pumpar-1.webp",
@@ -276,7 +250,7 @@
         },
         {
           "type": "image",
-          "alt": "Häny – Manual concrete pumps (IC) – image 2",
+          "alt": "Häny: Manual concrete pumps (IC), image 2",
           "width": 1920,
           "height": 1315,
           "src": "/assets/img/haeny-manuella-pumpar-2.webp"
@@ -298,88 +272,62 @@
           "html": "<a href=\"/kontakta-oss\">Contact us</a> for further information."
         },
         {
-          "type": "image",
-          "alt": "HÄNY IC 310 & IC311 – logo",
-          "href": "/produkter/haeny/manuella-pumpar/ic-310-ic-311",
-          "width": 1083,
-          "height": 1169,
-          "src": "/assets/img/haeny-manuella-pumpar-ic-310-ic-311.webp"
-        },
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "IC310"
-        },
-        {
-          "type": "list",
-          "ordered": false,
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 3,
+          "more": false,
           "items": [
-            "Max. pressure: 100 bar",
-            "Max flow: 1.5 m³/hour"
+            {
+              "title": "IC310",
+              "image": "/assets/img/haeny-manuella-pumpar-ic-310-ic-311.webp",
+              "alt": "IC310",
+              "href": "/produkter/haeny/manuella-pumpar/ic-310-ic-311",
+              "bullets": [
+                "Max. pressure: 100 bar",
+                "Max flow: 1.5 m³/hour"
+              ]
+            },
+            {
+              "title": "IC311",
+              "image": "/assets/img/haeny-manuella-pumpar-ic-310-ic-311.webp",
+              "alt": "IC311",
+              "href": "/produkter/haeny/manuella-pumpar/ic-310-ic-311",
+              "bullets": [
+                "Max pressure: 75 bar",
+                "Max flow: 2 m³/hour"
+              ]
+            },
+            {
+              "title": "IC325",
+              "image": "/assets/img/haeny-manuella-pumpar-ic-325-ic325-ccp.webp",
+              "alt": "IC325",
+              "href": "/produkter/haeny/manuella-pumpar/ic-325-ic325-ccp",
+              "bullets": [
+                "Max. pressure: 100 bar",
+                "Max flow: 2 m³/hour"
+              ]
+            }
           ]
         },
         {
-          "type": "image",
-          "alt": "HÄNY IC 310 & IC311 – logo",
-          "href": "/produkter/haeny/manuella-pumpar/ic-310-ic-311",
-          "width": 1083,
-          "height": 1169,
-          "src": "/assets/img/haeny-manuella-pumpar-ic-310-ic-311.webp"
-        },
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "IC311"
-        },
-        {
-          "type": "list",
-          "ordered": false,
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 3,
+          "more": false,
           "items": [
-            "Max pressure: 75 bar",
-            "Max flow: 2 m³/hour"
+            {
+              "image": "/assets/img/haeny-manuella-pumpar-6.webp",
+              "alt": "Häny: Manual concrete pumps (IC), image 6"
+            },
+            {
+              "image": "/assets/img/haeny-manuella-pumpar-7.webp",
+              "alt": "Häny: Manual concrete pumps (IC), image 7"
+            },
+            {
+              "image": "/assets/img/haeny-manuella-pumpar-8.webp",
+              "alt": "Häny: Manual concrete pumps (IC), image 8"
+            }
           ]
-        },
-        {
-          "type": "image",
-          "alt": "HÄNY IC 325 & IC325 CCP – logo",
-          "href": "/produkter/haeny/manuella-pumpar/ic-325-ic325-ccp",
-          "width": 1013,
-          "height": 1089,
-          "src": "/assets/img/haeny-manuella-pumpar-ic-325-ic325-ccp.webp"
-        },
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "IC325"
-        },
-        {
-          "type": "list",
-          "ordered": false,
-          "items": [
-            "Max. pressure: 100 bar",
-            "Max flow: 2 m³/hour"
-          ]
-        },
-        {
-          "type": "image",
-          "alt": "Häny – Manual concrete pumps (IC) – image 6",
-          "width": 481,
-          "height": 519,
-          "src": "/assets/img/haeny-manuella-pumpar-6.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Häny – Manual concrete pumps (IC) – image 7",
-          "width": 486,
-          "height": 514,
-          "src": "/assets/img/haeny-manuella-pumpar-7.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Häny – Manual concrete pumps (IC) – image 8",
-          "width": 915,
-          "height": 968,
-          "src": "/assets/img/haeny-manuella-pumpar-8.webp"
         },
         {
           "type": "text",
@@ -517,12 +465,12 @@
     },
     "es": {
       "title": "Bombas manuales",
-      "h1": "Häny – Bombas de hormigón manuales (IC)",
+      "h1": "Häny: Bombas de hormigón manuales (IC)",
       "description": "Existen varias variantes manuales según el volumen y la presión necesarios. Las unidades compactas IC310, IC311 e IC325 son las más vendidas. El nombre del modelo ofrece una pista…",
       "blocks": [
         {
           "type": "image",
-          "alt": "Häny – Bombas de hormigón manuales (IC)",
+          "alt": "Häny: Bombas de hormigón manuales (IC)",
           "width": 876,
           "height": 510,
           "src": "/assets/img/haeny-automatiska-pumpar-1.webp",
@@ -530,7 +478,7 @@
         },
         {
           "type": "image",
-          "alt": "Häny – Bombas de hormigón manuales (IC) – imagen 2",
+          "alt": "Häny: Bombas de hormigón manuales (IC), imagen 2",
           "width": 1920,
           "height": 1315,
           "src": "/assets/img/haeny-manuella-pumpar-2.webp"
@@ -552,88 +500,62 @@
           "html": "<a href=\"/kontakta-oss\">Contáctenos</a> para obtener más información."
         },
         {
-          "type": "image",
-          "alt": "HÄNY IC 310 & IC311 – logotipo",
-          "href": "/produkter/haeny/manuella-pumpar/ic-310-ic-311",
-          "width": 1083,
-          "height": 1169,
-          "src": "/assets/img/haeny-manuella-pumpar-ic-310-ic-311.webp"
-        },
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "IC310"
-        },
-        {
-          "type": "list",
-          "ordered": false,
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 3,
+          "more": false,
           "items": [
-            "Presión máx.: 100 bar",
-            "Caudal máx.: 1,5 m³/hora"
+            {
+              "title": "IC310",
+              "image": "/assets/img/haeny-manuella-pumpar-ic-310-ic-311.webp",
+              "alt": "IC310",
+              "href": "/produkter/haeny/manuella-pumpar/ic-310-ic-311",
+              "bullets": [
+                "Presión máx.: 100 bar",
+                "Caudal máx.: 1,5 m³/hora"
+              ]
+            },
+            {
+              "title": "IC311",
+              "image": "/assets/img/haeny-manuella-pumpar-ic-310-ic-311.webp",
+              "alt": "IC311",
+              "href": "/produkter/haeny/manuella-pumpar/ic-310-ic-311",
+              "bullets": [
+                "Presión máx.: 75 bar",
+                "Caudal máx.: 2 m³/hora"
+              ]
+            },
+            {
+              "title": "IC325",
+              "image": "/assets/img/haeny-manuella-pumpar-ic-325-ic325-ccp.webp",
+              "alt": "IC325",
+              "href": "/produkter/haeny/manuella-pumpar/ic-325-ic325-ccp",
+              "bullets": [
+                "Presión máx.: 100 bar",
+                "Caudal máx.: 2 m³/hora"
+              ]
+            }
           ]
         },
         {
-          "type": "image",
-          "alt": "HÄNY IC 310 & IC311 – logotipo",
-          "href": "/produkter/haeny/manuella-pumpar/ic-310-ic-311",
-          "width": 1083,
-          "height": 1169,
-          "src": "/assets/img/haeny-manuella-pumpar-ic-310-ic-311.webp"
-        },
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "IC311"
-        },
-        {
-          "type": "list",
-          "ordered": false,
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 3,
+          "more": false,
           "items": [
-            "Presión máx.: 75 bar",
-            "Caudal máx.: 2 m³/hora"
+            {
+              "image": "/assets/img/haeny-manuella-pumpar-6.webp",
+              "alt": "Häny: Bombas de hormigón manuales (IC), imagen 6"
+            },
+            {
+              "image": "/assets/img/haeny-manuella-pumpar-7.webp",
+              "alt": "Häny: Bombas de hormigón manuales (IC), imagen 7"
+            },
+            {
+              "image": "/assets/img/haeny-manuella-pumpar-8.webp",
+              "alt": "Häny: Bombas de hormigón manuales (IC), imagen 8"
+            }
           ]
-        },
-        {
-          "type": "image",
-          "alt": "HÄNY IC 325 & IC325 CCP – logotipo",
-          "href": "/produkter/haeny/manuella-pumpar/ic-325-ic325-ccp",
-          "width": 1013,
-          "height": 1089,
-          "src": "/assets/img/haeny-manuella-pumpar-ic-325-ic325-ccp.webp"
-        },
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "IC325"
-        },
-        {
-          "type": "list",
-          "ordered": false,
-          "items": [
-            "Presión máx.: 100 bar",
-            "Caudal máx.: 2 m³/hora"
-          ]
-        },
-        {
-          "type": "image",
-          "alt": "Häny – Bombas de hormigón manuales (IC) – imagen 6",
-          "width": 481,
-          "height": 519,
-          "src": "/assets/img/haeny-manuella-pumpar-6.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Häny – Bombas de hormigón manuales (IC) – imagen 7",
-          "width": 486,
-          "height": 514,
-          "src": "/assets/img/haeny-manuella-pumpar-7.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Häny – Bombas de hormigón manuales (IC) – imagen 8",
-          "width": 915,
-          "height": 968,
-          "src": "/assets/img/haeny-manuella-pumpar-8.webp"
         },
         {
           "type": "text",
@@ -771,12 +693,12 @@
     },
     "no": {
       "title": "Manuelle pumper",
-      "h1": "Häny – Manuelle betongpumper (IC)",
+      "h1": "Häny: Manuelle betongpumper (IC)",
       "description": "Det finnes flere manuelle varianter avhengig av volum og trykkbehov. De kompakte enhetene IC310, IC311 og IC325 er storselgere. Modellnavnet gir et hint…",
       "blocks": [
         {
           "type": "image",
-          "alt": "Häny – Manuelle betongpumper (IC)",
+          "alt": "Häny: Manuelle betongpumper (IC)",
           "width": 876,
           "height": 510,
           "src": "/assets/img/haeny-automatiska-pumpar-1.webp",
@@ -784,7 +706,7 @@
         },
         {
           "type": "image",
-          "alt": "Häny – Manuelle betongpumper (IC) – bilde 2",
+          "alt": "Häny: Manuelle betongpumper (IC), bilde 2",
           "width": 1920,
           "height": 1315,
           "src": "/assets/img/haeny-manuella-pumpar-2.webp"
@@ -806,88 +728,62 @@
           "html": "<a href=\"/kontakta-oss\">Kontakt oss</a> for ytterligere informasjon."
         },
         {
-          "type": "image",
-          "alt": "HÄNY IC 310 & IC311 – logo",
-          "href": "/produkter/haeny/manuella-pumpar/ic-310-ic-311",
-          "width": 1083,
-          "height": 1169,
-          "src": "/assets/img/haeny-manuella-pumpar-ic-310-ic-311.webp"
-        },
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "IC310"
-        },
-        {
-          "type": "list",
-          "ordered": false,
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 3,
+          "more": false,
           "items": [
-            "Maks. trykk: 100 bar",
-            "Maks. flyt: 1,5 m³/time"
+            {
+              "title": "IC310",
+              "image": "/assets/img/haeny-manuella-pumpar-ic-310-ic-311.webp",
+              "alt": "IC310",
+              "href": "/produkter/haeny/manuella-pumpar/ic-310-ic-311",
+              "bullets": [
+                "Maks. trykk: 100 bar",
+                "Maks. flyt: 1,5 m³/time"
+              ]
+            },
+            {
+              "title": "IC311",
+              "image": "/assets/img/haeny-manuella-pumpar-ic-310-ic-311.webp",
+              "alt": "IC311",
+              "href": "/produkter/haeny/manuella-pumpar/ic-310-ic-311",
+              "bullets": [
+                "Maks. trykk: 75 bar",
+                "Maks. flyt: 2 m³/time"
+              ]
+            },
+            {
+              "title": "IC325",
+              "image": "/assets/img/haeny-manuella-pumpar-ic-325-ic325-ccp.webp",
+              "alt": "IC325",
+              "href": "/produkter/haeny/manuella-pumpar/ic-325-ic325-ccp",
+              "bullets": [
+                "Maks. trykk: 100 bar",
+                "Maks. flyt: 2 m³/time"
+              ]
+            }
           ]
         },
         {
-          "type": "image",
-          "alt": "HÄNY IC 310 & IC311 – logo",
-          "href": "/produkter/haeny/manuella-pumpar/ic-310-ic-311",
-          "width": 1083,
-          "height": 1169,
-          "src": "/assets/img/haeny-manuella-pumpar-ic-310-ic-311.webp"
-        },
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "IC311"
-        },
-        {
-          "type": "list",
-          "ordered": false,
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 3,
+          "more": false,
           "items": [
-            "Maks. trykk: 75 bar",
-            "Maks. flyt: 2 m³/time"
+            {
+              "image": "/assets/img/haeny-manuella-pumpar-6.webp",
+              "alt": "Häny: Manuelle betongpumper (IC), bilde 6"
+            },
+            {
+              "image": "/assets/img/haeny-manuella-pumpar-7.webp",
+              "alt": "Häny: Manuelle betongpumper (IC), bilde 7"
+            },
+            {
+              "image": "/assets/img/haeny-manuella-pumpar-8.webp",
+              "alt": "Häny: Manuelle betongpumper (IC), bilde 8"
+            }
           ]
-        },
-        {
-          "type": "image",
-          "alt": "HÄNY IC 325 & IC325 CCP – logo",
-          "href": "/produkter/haeny/manuella-pumpar/ic-325-ic325-ccp",
-          "width": 1013,
-          "height": 1089,
-          "src": "/assets/img/haeny-manuella-pumpar-ic-325-ic325-ccp.webp"
-        },
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "IC325"
-        },
-        {
-          "type": "list",
-          "ordered": false,
-          "items": [
-            "Maks. trykk: 100 bar",
-            "Maks. flyt: 2 m³/time"
-          ]
-        },
-        {
-          "type": "image",
-          "alt": "Häny – Manuelle betongpumper (IC) – bilde 6",
-          "width": 481,
-          "height": 519,
-          "src": "/assets/img/haeny-manuella-pumpar-6.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Häny – Manuelle betongpumper (IC) – bilde 7",
-          "width": 486,
-          "height": 514,
-          "src": "/assets/img/haeny-manuella-pumpar-7.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Häny – Manuelle betongpumper (IC) – bilde 8",
-          "width": 915,
-          "height": 968,
-          "src": "/assets/img/haeny-manuella-pumpar-8.webp"
         },
         {
           "type": "text",

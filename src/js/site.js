@@ -186,7 +186,7 @@
     var id = fig && fig.getAttribute("data-yt");
     if (!id) return;
     var start = parseInt(fig.getAttribute("data-start") || "0", 10);
-    var src = "https://www.youtube-nocookie.com/embed/" + encodeURIComponent(id) + "?autoplay=1&rel=0" + (start ? "&start=" + start : "");
+    var src = "https://www.youtube-nocookie.com/embed/" + encodeURIComponent(id) + "?autoplay=1&rel=0&playsinline=1" + (start ? "&start=" + start : "");
     var f = document.createElement("iframe");
     f.src = src;
     f.title = fig.getAttribute("data-title") || "Video";
@@ -194,7 +194,16 @@
     f.setAttribute("allowfullscreen", "");
     f.referrerPolicy = "strict-origin-when-cross-origin";
     fig.textContent = "";
+    fig.classList.add("is-playing");
     fig.appendChild(f);
+    // fallback if the embedded player cannot render in this browser: plain link to the video
+    var alt = document.createElement("a");
+    alt.className = "video__yt";
+    alt.href = "https://www.youtube.com/watch?v=" + encodeURIComponent(id) + (start ? "&t=" + start + "s" : "");
+    alt.target = "_blank";
+    alt.rel = "noopener";
+    alt.textContent = fig.getAttribute("data-watch") || "YouTube";
+    fig.insertAdjacentElement("afterend", alt);
   });
 
   // ---------- site search (static index, loaded on demand) ----------

@@ -15,15 +15,15 @@
       "blocks": [
         {
           "type": "image",
-          "alt": "Marini – logotyp",
+          "alt": "Marini logotyp",
           "href": "/produkter/marini",
-          "width": 1920,
-          "height": 1117,
-          "src": "/assets/img/marini-3.webp"
+          "width": 928,
+          "height": 542,
+          "src": "/assets/img/logo-marini-emblem.webp"
         },
         {
           "type": "image",
-          "alt": "MARINI MR 3 PN / MR 3 ID – bild 2",
+          "alt": "MARINI MR 3 PN / MR 3 ID, bild 2",
           "width": 1529,
           "height": 1667,
           "src": "/assets/img/marini-slantstabilisering-mr-3-2.webp"
@@ -45,70 +45,62 @@
           "html": "<a href=\"/kontakta-oss\">Kontakta oss</a> för detaljerade broschyrer och mer information."
         },
         {
-          "type": "image",
-          "alt": "MARINI MR 3 PN / MR 3 ID – bild 3",
-          "width": 357,
-          "height": 388,
-          "src": "/assets/img/marini-slantstabilisering-mr-3-3.webp"
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 2,
+          "more": false,
+          "items": [
+            {
+              "title": "MR 3 ID",
+              "image": "/assets/img/marini-slantstabilisering-mr-3-3.webp",
+              "alt": "MARINI MR 3 PN / MR 3 ID, bild 3",
+              "doc": {
+                "text": "Broschyr",
+                "href": "/assets/docs/marini-slantstabilisering-mr-3-broschyr.pdf",
+                "driveId": "1JUUIL7yTrK-_-04LDxxRsiPMsmLR4mWh"
+              }
+            },
+            {
+              "title": "MR 3 PN",
+              "image": "/assets/img/marini-slantstabilisering-mr-3-4.webp",
+              "alt": "MARINI MR 3 PN / MR 3 ID, bild 4",
+              "doc": {
+                "text": "Broschyr",
+                "href": "/assets/docs/marini-slantstabilisering-mr-3-broschyr-2.pdf",
+                "driveId": "1-_L1MXdlWu-ipf0Qnm3cvWxDdXKn4YDV"
+              }
+            }
+          ]
         },
         {
-          "type": "heading",
-          "level": 2,
-          "text": "MR 3 ID"
-        },
-        {
-          "type": "button",
-          "kind": "download",
-          "text": "Broschyr",
-          "href": "/assets/docs/marini-slantstabilisering-mr-3-broschyr.pdf",
-          "driveId": "1JUUIL7yTrK-_-04LDxxRsiPMsmLR4mWh"
-        },
-        {
-          "type": "image",
-          "alt": "MARINI MR 3 PN / MR 3 ID – bild 4",
-          "width": 416,
-          "height": 453,
-          "src": "/assets/img/marini-slantstabilisering-mr-3-4.webp"
-        },
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "MR 3 PN"
-        },
-        {
-          "type": "button",
-          "kind": "download",
-          "text": "Broschyr",
-          "href": "/assets/docs/marini-slantstabilisering-mr-3-broschyr-2.pdf",
-          "driveId": "1-_L1MXdlWu-ipf0Qnm3cvWxDdXKn4YDV"
-        },
-        {
-          "type": "image",
-          "alt": "Bildkarusell",
-          "width": 1620,
-          "height": 1080,
-          "src": "/assets/img/marini-slantstabilisering-mr-3-5.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Bildkarusell",
-          "width": 1024,
-          "height": 1520,
-          "src": "/assets/img/marini-slantstabilisering-mr-3-6.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Bildkarusell",
-          "width": 1280,
-          "height": 960,
-          "src": "/assets/img/marini-slantstabilisering-mr-3-7.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Bildkarusell",
-          "width": 1280,
-          "height": 960,
-          "src": "/assets/img/marini-slantstabilisering-mr-3-8.webp"
+          "type": "carousel",
+          "items": [
+            {
+              "src": "/assets/img/marini-slantstabilisering-mr-3-5.webp",
+              "alt": "MARINI MR 3 PN / MR 3 ID, bild 1",
+              "width": 1620,
+              "height": 1080
+            },
+            {
+              "src": "/assets/img/marini-slantstabilisering-mr-3-6.webp",
+              "alt": "MARINI MR 3 PN / MR 3 ID, bild 2",
+              "width": 1024,
+              "height": 1520
+            },
+            {
+              "src": "/assets/img/marini-slantstabilisering-mr-3-7.webp",
+              "alt": "MARINI MR 3 PN / MR 3 ID, bild 3",
+              "width": 1280,
+              "height": 960
+            },
+            {
+              "src": "/assets/img/marini-slantstabilisering-mr-3-8.webp",
+              "alt": "MARINI MR 3 PN / MR 3 ID, bild 4",
+              "width": 1280,
+              "height": 960
+            }
+          ],
+          "autoplay": false
         }
       ]
     },
@@ -119,15 +111,15 @@
       "blocks": [
         {
           "type": "image",
-          "alt": "Marini – logo",
+          "alt": "Marini logo",
           "href": "/produkter/marini",
-          "width": 1920,
-          "height": 1117,
-          "src": "/assets/img/marini-3.webp"
+          "width": 928,
+          "height": 542,
+          "src": "/assets/img/logo-marini-emblem.webp"
         },
         {
           "type": "image",
-          "alt": "MARINI MR 3 PN / MR 3 ID – image 2",
+          "alt": "MARINI MR 3 PN / MR 3 ID, image 2",
           "width": 1529,
           "height": 1667,
           "src": "/assets/img/marini-slantstabilisering-mr-3-2.webp"
@@ -149,70 +141,62 @@
           "html": "<a href=\"/kontakta-oss\">Contact us</a> for detailed brochures and more information."
         },
         {
-          "type": "image",
-          "alt": "MARINI MR 3 PN / MR 3 ID – image 3",
-          "width": 357,
-          "height": 388,
-          "src": "/assets/img/marini-slantstabilisering-mr-3-3.webp"
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 2,
+          "more": false,
+          "items": [
+            {
+              "title": "MR 3 ID",
+              "image": "/assets/img/marini-slantstabilisering-mr-3-3.webp",
+              "alt": "MARINI MR 3 PN / MR 3 ID, image 3",
+              "doc": {
+                "text": "Brochure",
+                "href": "/assets/docs/marini-slantstabilisering-mr-3-broschyr.pdf",
+                "driveId": "1JUUIL7yTrK-_-04LDxxRsiPMsmLR4mWh"
+              }
+            },
+            {
+              "title": "MR 3 PN",
+              "image": "/assets/img/marini-slantstabilisering-mr-3-4.webp",
+              "alt": "MARINI MR 3 PN / MR 3 ID, image 4",
+              "doc": {
+                "text": "Brochure",
+                "href": "/assets/docs/marini-slantstabilisering-mr-3-broschyr-2.pdf",
+                "driveId": "1-_L1MXdlWu-ipf0Qnm3cvWxDdXKn4YDV"
+              }
+            }
+          ]
         },
         {
-          "type": "heading",
-          "level": 2,
-          "text": "MR 3 ID"
-        },
-        {
-          "type": "button",
-          "kind": "download",
-          "text": "Brochure",
-          "href": "/assets/docs/marini-slantstabilisering-mr-3-broschyr.pdf",
-          "driveId": "1JUUIL7yTrK-_-04LDxxRsiPMsmLR4mWh"
-        },
-        {
-          "type": "image",
-          "alt": "MARINI MR 3 PN / MR 3 ID – image 4",
-          "width": 416,
-          "height": 453,
-          "src": "/assets/img/marini-slantstabilisering-mr-3-4.webp"
-        },
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "MR 3 PN"
-        },
-        {
-          "type": "button",
-          "kind": "download",
-          "text": "Brochure",
-          "href": "/assets/docs/marini-slantstabilisering-mr-3-broschyr-2.pdf",
-          "driveId": "1-_L1MXdlWu-ipf0Qnm3cvWxDdXKn4YDV"
-        },
-        {
-          "type": "image",
-          "alt": "Image carousel",
-          "width": 1620,
-          "height": 1080,
-          "src": "/assets/img/marini-slantstabilisering-mr-3-5.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Image carousel",
-          "width": 1024,
-          "height": 1520,
-          "src": "/assets/img/marini-slantstabilisering-mr-3-6.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Image carousel",
-          "width": 1280,
-          "height": 960,
-          "src": "/assets/img/marini-slantstabilisering-mr-3-7.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Image carousel",
-          "width": 1280,
-          "height": 960,
-          "src": "/assets/img/marini-slantstabilisering-mr-3-8.webp"
+          "type": "carousel",
+          "items": [
+            {
+              "src": "/assets/img/marini-slantstabilisering-mr-3-5.webp",
+              "alt": "MARINI MR 3 PN / MR 3 ID, image 1",
+              "width": 1620,
+              "height": 1080
+            },
+            {
+              "src": "/assets/img/marini-slantstabilisering-mr-3-6.webp",
+              "alt": "MARINI MR 3 PN / MR 3 ID, image 2",
+              "width": 1024,
+              "height": 1520
+            },
+            {
+              "src": "/assets/img/marini-slantstabilisering-mr-3-7.webp",
+              "alt": "MARINI MR 3 PN / MR 3 ID, image 3",
+              "width": 1280,
+              "height": 960
+            },
+            {
+              "src": "/assets/img/marini-slantstabilisering-mr-3-8.webp",
+              "alt": "MARINI MR 3 PN / MR 3 ID, image 4",
+              "width": 1280,
+              "height": 960
+            }
+          ],
+          "autoplay": false
         }
       ],
       "published": true
@@ -224,15 +208,15 @@
       "blocks": [
         {
           "type": "image",
-          "alt": "Marini – logotipo",
+          "alt": "Marini logotipo",
           "href": "/produkter/marini",
-          "width": 1920,
-          "height": 1117,
-          "src": "/assets/img/marini-3.webp"
+          "width": 928,
+          "height": 542,
+          "src": "/assets/img/logo-marini-emblem.webp"
         },
         {
           "type": "image",
-          "alt": "MARINI MR 3 PN / MR 3 ID – imagen 2",
+          "alt": "MARINI MR 3 PN / MR 3 ID, imagen 2",
           "width": 1529,
           "height": 1667,
           "src": "/assets/img/marini-slantstabilisering-mr-3-2.webp"
@@ -254,42 +238,32 @@
           "html": "<a href=\"/kontakta-oss\">Contáctenos</a> para obtener folletos detallados y más información."
         },
         {
-          "type": "image",
-          "alt": "MARINI MR 3 PN / MR 3 ID – imagen 3",
-          "width": 357,
-          "height": 388,
-          "src": "/assets/img/marini-slantstabilisering-mr-3-3.webp"
-        },
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "MR 3 ID"
-        },
-        {
-          "type": "button",
-          "kind": "download",
-          "text": "Folleto",
-          "href": "/assets/docs/marini-slantstabilisering-mr-3-broschyr.pdf",
-          "driveId": "1JUUIL7yTrK-_-04LDxxRsiPMsmLR4mWh"
-        },
-        {
-          "type": "image",
-          "alt": "MARINI MR 3 PN / MR 3 ID – imagen 4",
-          "width": 416,
-          "height": 453,
-          "src": "/assets/img/marini-slantstabilisering-mr-3-4.webp"
-        },
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "MR 3 PN"
-        },
-        {
-          "type": "button",
-          "kind": "download",
-          "text": "Folleto",
-          "href": "/assets/docs/marini-slantstabilisering-mr-3-broschyr-2.pdf",
-          "driveId": "1-_L1MXdlWu-ipf0Qnm3cvWxDdXKn4YDV"
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 2,
+          "more": false,
+          "items": [
+            {
+              "title": "MR 3 ID",
+              "image": "/assets/img/marini-slantstabilisering-mr-3-3.webp",
+              "alt": "MARINI MR 3 PN / MR 3 ID, imagen 3",
+              "doc": {
+                "text": "Folleto",
+                "href": "/assets/docs/marini-slantstabilisering-mr-3-broschyr.pdf",
+                "driveId": "1JUUIL7yTrK-_-04LDxxRsiPMsmLR4mWh"
+              }
+            },
+            {
+              "title": "MR 3 PN",
+              "image": "/assets/img/marini-slantstabilisering-mr-3-4.webp",
+              "alt": "MARINI MR 3 PN / MR 3 ID, imagen 4",
+              "doc": {
+                "text": "Folleto",
+                "href": "/assets/docs/marini-slantstabilisering-mr-3-broschyr-2.pdf",
+                "driveId": "1-_L1MXdlWu-ipf0Qnm3cvWxDdXKn4YDV"
+              }
+            }
+          ]
         },
         {
           "type": "image",
@@ -329,15 +303,15 @@
       "blocks": [
         {
           "type": "image",
-          "alt": "Marini – logo",
+          "alt": "Marini logo",
           "href": "/produkter/marini",
-          "width": 1920,
-          "height": 1117,
-          "src": "/assets/img/marini-3.webp"
+          "width": 928,
+          "height": 542,
+          "src": "/assets/img/logo-marini-emblem.webp"
         },
         {
           "type": "image",
-          "alt": "MARINI MR 3 PN / MR 3 ID – bilde 2",
+          "alt": "MARINI MR 3 PN / MR 3 ID, bilde 2",
           "width": 1529,
           "height": 1667,
           "src": "/assets/img/marini-slantstabilisering-mr-3-2.webp"
@@ -359,70 +333,62 @@
           "html": "<a href=\"/kontakta-oss\">Kontakt oss</a> for detaljerte brosjyrer og mer informasjon."
         },
         {
-          "type": "image",
-          "alt": "MARINI MR 3 PN / MR 3 ID – bilde 3",
-          "width": 357,
-          "height": 388,
-          "src": "/assets/img/marini-slantstabilisering-mr-3-3.webp"
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 2,
+          "more": false,
+          "items": [
+            {
+              "title": "MR 3 ID",
+              "image": "/assets/img/marini-slantstabilisering-mr-3-3.webp",
+              "alt": "MARINI MR 3 PN / MR 3 ID, bilde 3",
+              "doc": {
+                "text": "Brosjyre",
+                "href": "/assets/docs/marini-slantstabilisering-mr-3-broschyr.pdf",
+                "driveId": "1JUUIL7yTrK-_-04LDxxRsiPMsmLR4mWh"
+              }
+            },
+            {
+              "title": "MR 3 PN",
+              "image": "/assets/img/marini-slantstabilisering-mr-3-4.webp",
+              "alt": "MARINI MR 3 PN / MR 3 ID, bilde 4",
+              "doc": {
+                "text": "Brosjyre",
+                "href": "/assets/docs/marini-slantstabilisering-mr-3-broschyr-2.pdf",
+                "driveId": "1-_L1MXdlWu-ipf0Qnm3cvWxDdXKn4YDV"
+              }
+            }
+          ]
         },
         {
-          "type": "heading",
-          "level": 2,
-          "text": "MR 3 ID"
-        },
-        {
-          "type": "button",
-          "kind": "download",
-          "text": "Brosjyre",
-          "href": "/assets/docs/marini-slantstabilisering-mr-3-broschyr.pdf",
-          "driveId": "1JUUIL7yTrK-_-04LDxxRsiPMsmLR4mWh"
-        },
-        {
-          "type": "image",
-          "alt": "MARINI MR 3 PN / MR 3 ID – bilde 4",
-          "width": 416,
-          "height": 453,
-          "src": "/assets/img/marini-slantstabilisering-mr-3-4.webp"
-        },
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "MR 3 PN"
-        },
-        {
-          "type": "button",
-          "kind": "download",
-          "text": "Brosjyre",
-          "href": "/assets/docs/marini-slantstabilisering-mr-3-broschyr-2.pdf",
-          "driveId": "1-_L1MXdlWu-ipf0Qnm3cvWxDdXKn4YDV"
-        },
-        {
-          "type": "image",
-          "alt": "Bildekarusell",
-          "width": 1620,
-          "height": 1080,
-          "src": "/assets/img/marini-slantstabilisering-mr-3-5.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Bildekarusell",
-          "width": 1024,
-          "height": 1520,
-          "src": "/assets/img/marini-slantstabilisering-mr-3-6.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Bildekarusell",
-          "width": 1280,
-          "height": 960,
-          "src": "/assets/img/marini-slantstabilisering-mr-3-7.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Bildekarusell",
-          "width": 1280,
-          "height": 960,
-          "src": "/assets/img/marini-slantstabilisering-mr-3-8.webp"
+          "type": "carousel",
+          "items": [
+            {
+              "src": "/assets/img/marini-slantstabilisering-mr-3-5.webp",
+              "alt": "MARINI MR 3 PN / MR 3 ID, bilde 1",
+              "width": 1620,
+              "height": 1080
+            },
+            {
+              "src": "/assets/img/marini-slantstabilisering-mr-3-6.webp",
+              "alt": "MARINI MR 3 PN / MR 3 ID, bilde 2",
+              "width": 1024,
+              "height": 1520
+            },
+            {
+              "src": "/assets/img/marini-slantstabilisering-mr-3-7.webp",
+              "alt": "MARINI MR 3 PN / MR 3 ID, bilde 3",
+              "width": 1280,
+              "height": 960
+            },
+            {
+              "src": "/assets/img/marini-slantstabilisering-mr-3-8.webp",
+              "alt": "MARINI MR 3 PN / MR 3 ID, bilde 4",
+              "width": 1280,
+              "height": 960
+            }
+          ],
+          "autoplay": false
         }
       ],
       "published": true

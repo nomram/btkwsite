@@ -23,7 +23,7 @@
         },
         {
           "type": "image",
-          "alt": "HÄNY IC 310 & IC311 – bild 2",
+          "alt": "HÄNY IC 310 & IC311, bild 2",
           "width": 495,
           "height": 496,
           "src": "/assets/img/haeny-manuella-pumpar-ic-310-ic-311-2.webp"
@@ -70,32 +70,34 @@
           "driveId": "12C2EatakW1x2v675WiRWD7N99Hnhj7gq"
         },
         {
-          "type": "image",
-          "alt": "Bildkarusell",
-          "width": 1478,
-          "height": 1108,
-          "src": "/assets/img/haeny-manuella-pumpar-ic-310-ic-311-3.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Bildkarusell",
-          "width": 1108,
-          "height": 1478,
-          "src": "/assets/img/haeny-manuella-pumpar-ic-310-ic-311-4.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Bildkarusell",
-          "width": 1478,
-          "height": 1108,
-          "src": "/assets/img/haeny-manuella-pumpar-ic-310-ic-311-5.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Bildkarusell",
-          "width": 1108,
-          "height": 1478,
-          "src": "/assets/img/haeny-manuella-pumpar-ic-310-ic-311-6.webp"
+          "type": "carousel",
+          "items": [
+            {
+              "src": "/assets/img/haeny-manuella-pumpar-ic-310-ic-311-3.webp",
+              "alt": "HÄNY IC 310 & IC311, bild 1",
+              "width": 1478,
+              "height": 1108
+            },
+            {
+              "src": "/assets/img/haeny-manuella-pumpar-ic-310-ic-311-4.webp",
+              "alt": "HÄNY IC 310 & IC311, bild 2",
+              "width": 1108,
+              "height": 1478
+            },
+            {
+              "src": "/assets/img/haeny-manuella-pumpar-ic-310-ic-311-5.webp",
+              "alt": "HÄNY IC 310 & IC311, bild 3",
+              "width": 1478,
+              "height": 1108
+            },
+            {
+              "src": "/assets/img/haeny-manuella-pumpar-ic-310-ic-311-6.webp",
+              "alt": "HÄNY IC 310 & IC311, bild 4",
+              "width": 1108,
+              "height": 1478
+            }
+          ],
+          "autoplay": false
         },
         {
           "type": "text",
@@ -120,7 +122,7 @@
     "en": {
       "title": "IC 310 & IC 311",
       "h1": "HÄNY IC 310 & IC311",
-      "description": "Compact grouting platform for cement slurry – Häny’s absolute best seller.",
+      "description": "Compact grouting platform for cement slurry, Häny’s absolute best seller.",
       "blocks": [
         {
           "type": "image",
@@ -132,7 +134,7 @@
         },
         {
           "type": "image",
-          "alt": "HÄNY IC 310 & IC311 – image 2",
+          "alt": "HÄNY IC 310 & IC311, image 2",
           "width": 495,
           "height": 496,
           "src": "/assets/img/haeny-manuella-pumpar-ic-310-ic-311-2.webp"
@@ -144,7 +146,7 @@
         },
         {
           "type": "text",
-          "html": "Compact grouting platform for cement slurry – Häny’s absolute best seller."
+          "html": "Compact grouting platform for cement slurry, Häny’s absolute best seller."
         },
         {
           "type": "list",
@@ -179,32 +181,34 @@
           "driveId": "12C2EatakW1x2v675WiRWD7N99Hnhj7gq"
         },
         {
-          "type": "image",
-          "alt": "Image carousel",
-          "width": 1478,
-          "height": 1108,
-          "src": "/assets/img/haeny-manuella-pumpar-ic-310-ic-311-3.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Image carousel",
-          "width": 1108,
-          "height": 1478,
-          "src": "/assets/img/haeny-manuella-pumpar-ic-310-ic-311-4.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Image carousel",
-          "width": 1478,
-          "height": 1108,
-          "src": "/assets/img/haeny-manuella-pumpar-ic-310-ic-311-5.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Image carousel",
-          "width": 1108,
-          "height": 1478,
-          "src": "/assets/img/haeny-manuella-pumpar-ic-310-ic-311-6.webp"
+          "type": "carousel",
+          "items": [
+            {
+              "src": "/assets/img/haeny-manuella-pumpar-ic-310-ic-311-3.webp",
+              "alt": "HÄNY IC 310 & IC311, image 1",
+              "width": 1478,
+              "height": 1108
+            },
+            {
+              "src": "/assets/img/haeny-manuella-pumpar-ic-310-ic-311-4.webp",
+              "alt": "HÄNY IC 310 & IC311, image 2",
+              "width": 1108,
+              "height": 1478
+            },
+            {
+              "src": "/assets/img/haeny-manuella-pumpar-ic-310-ic-311-5.webp",
+              "alt": "HÄNY IC 310 & IC311, image 3",
+              "width": 1478,
+              "height": 1108
+            },
+            {
+              "src": "/assets/img/haeny-manuella-pumpar-ic-310-ic-311-6.webp",
+              "alt": "HÄNY IC 310 & IC311, image 4",
+              "width": 1108,
+              "height": 1478
+            }
+          ],
+          "autoplay": false
         },
         {
           "type": "text",
@@ -242,7 +246,7 @@
         },
         {
           "type": "image",
-          "alt": "HÄNY IC 310 & IC311 – imagen 2",
+          "alt": "HÄNY IC 310 & IC311, imagen 2",
           "width": 495,
           "height": 496,
           "src": "/assets/img/haeny-manuella-pumpar-ic-310-ic-311-2.webp"
@@ -340,7 +344,7 @@
     "no": {
       "title": "IC 310 & IC 311",
       "h1": "HÄNY IC 310 & IC311",
-      "description": "Kompakt injiseringsplattform for sementslurry – Hänys absolutte storselger.",
+      "description": "Kompakt injiseringsplattform for sementslurry, Hänys absolutte storselger.",
       "blocks": [
         {
           "type": "image",
@@ -352,7 +356,7 @@
         },
         {
           "type": "image",
-          "alt": "HÄNY IC 310 & IC311 – bilde 2",
+          "alt": "HÄNY IC 310 & IC311, bilde 2",
           "width": 495,
           "height": 496,
           "src": "/assets/img/haeny-manuella-pumpar-ic-310-ic-311-2.webp"
@@ -364,7 +368,7 @@
         },
         {
           "type": "text",
-          "html": "Kompakt injiseringsplattform for sementslurry – Hänys absolutte storselger."
+          "html": "Kompakt injiseringsplattform for sementslurry, Hänys absolutte storselger."
         },
         {
           "type": "list",
@@ -399,32 +403,34 @@
           "driveId": "12C2EatakW1x2v675WiRWD7N99Hnhj7gq"
         },
         {
-          "type": "image",
-          "alt": "Bildekarusell",
-          "width": 1478,
-          "height": 1108,
-          "src": "/assets/img/haeny-manuella-pumpar-ic-310-ic-311-3.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Bildekarusell",
-          "width": 1108,
-          "height": 1478,
-          "src": "/assets/img/haeny-manuella-pumpar-ic-310-ic-311-4.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Bildekarusell",
-          "width": 1478,
-          "height": 1108,
-          "src": "/assets/img/haeny-manuella-pumpar-ic-310-ic-311-5.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Bildekarusell",
-          "width": 1108,
-          "height": 1478,
-          "src": "/assets/img/haeny-manuella-pumpar-ic-310-ic-311-6.webp"
+          "type": "carousel",
+          "items": [
+            {
+              "src": "/assets/img/haeny-manuella-pumpar-ic-310-ic-311-3.webp",
+              "alt": "HÄNY IC 310 & IC311, bilde 1",
+              "width": 1478,
+              "height": 1108
+            },
+            {
+              "src": "/assets/img/haeny-manuella-pumpar-ic-310-ic-311-4.webp",
+              "alt": "HÄNY IC 310 & IC311, bilde 2",
+              "width": 1108,
+              "height": 1478
+            },
+            {
+              "src": "/assets/img/haeny-manuella-pumpar-ic-310-ic-311-5.webp",
+              "alt": "HÄNY IC 310 & IC311, bilde 3",
+              "width": 1478,
+              "height": 1108
+            },
+            {
+              "src": "/assets/img/haeny-manuella-pumpar-ic-310-ic-311-6.webp",
+              "alt": "HÄNY IC 310 & IC311, bilde 4",
+              "width": 1108,
+              "height": 1478
+            }
+          ],
+          "autoplay": false
         },
         {
           "type": "text",

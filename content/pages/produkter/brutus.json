@@ -15,14 +15,13 @@
       "blocks": [
         {
           "type": "image",
+          "src": "/assets/img/logo-brutus.webp",
           "alt": "Brutus",
-          "width": 800,
-          "height": 441,
-          "src": "/assets/img/brutus-1.webp"
+          "href": "/produkter"
         },
         {
           "type": "image",
-          "alt": "Brutus – bild 2",
+          "alt": "Brutus: bild 2",
           "width": 394,
           "height": 478,
           "src": "/assets/img/brutus-2.webp"
@@ -90,12 +89,30 @@
           "html": "Åtgång: Den ungefärliga åtgången beror på djupet och diametern enligt nedan."
         },
         {
-          "type": "text",
-          "html": "Håldiameter (mm): 30 32 36 40 44 48"
-        },
-        {
-          "type": "text",
-          "html": "Bruk per hålmeter (kg): 1,1 1,3 1,7 2,1 2,5 3"
+          "type": "table",
+          "header": false,
+          "align": "center",
+          "rows": [
+            [
+              "Håldiameter (mm)",
+              "30",
+              "32",
+              "36",
+              "40",
+              "44",
+              "48"
+            ],
+            [
+              "Bruk per hålmeter (kg)",
+              "1,1",
+              "1,3",
+              "1,7",
+              "2,1",
+              "2,5",
+              "3"
+            ]
+          ],
+          "narrow": true
         },
         {
           "type": "text",
@@ -106,67 +123,64 @@
           "html": "2.1 kg / meter * 2.5 meter = 5.25 kg per hål"
         },
         {
-          "type": "image",
-          "alt": "Bildkarusell",
-          "width": 1366,
-          "height": 2048,
-          "src": "/assets/img/brutus-3.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Bildkarusell",
-          "width": 1366,
-          "height": 2048,
-          "src": "/assets/img/brutus-4.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Bildkarusell",
-          "width": 1366,
-          "height": 2048,
-          "src": "/assets/img/brutus-5.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Bildkarusell",
-          "width": 1920,
-          "height": 1281,
-          "src": "/assets/img/brutus-6.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Bildkarusell",
-          "width": 1920,
-          "height": 1281,
-          "src": "/assets/img/brutus-7.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Bildkarusell",
-          "width": 1920,
-          "height": 1281,
-          "src": "/assets/img/brutus-8.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Bildkarusell",
-          "width": 1920,
-          "height": 1281,
-          "src": "/assets/img/brutus-9.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Bildkarusell",
-          "width": 1366,
-          "height": 2048,
-          "src": "/assets/img/brutus-10.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Bildkarusell",
-          "width": 1920,
-          "height": 1281,
-          "src": "/assets/img/brutus-11.webp"
+          "type": "carousel",
+          "items": [
+            {
+              "src": "/assets/img/brutus-3.webp",
+              "alt": "Brutus, bild 1",
+              "width": 1366,
+              "height": 2048
+            },
+            {
+              "src": "/assets/img/brutus-4.webp",
+              "alt": "Brutus, bild 2",
+              "width": 1366,
+              "height": 2048
+            },
+            {
+              "src": "/assets/img/brutus-5.webp",
+              "alt": "Brutus, bild 3",
+              "width": 1366,
+              "height": 2048
+            },
+            {
+              "src": "/assets/img/brutus-6.webp",
+              "alt": "Brutus, bild 4",
+              "width": 1920,
+              "height": 1281
+            },
+            {
+              "src": "/assets/img/brutus-7.webp",
+              "alt": "Brutus, bild 5",
+              "width": 1920,
+              "height": 1281
+            },
+            {
+              "src": "/assets/img/brutus-8.webp",
+              "alt": "Brutus, bild 6",
+              "width": 1920,
+              "height": 1281
+            },
+            {
+              "src": "/assets/img/brutus-9.webp",
+              "alt": "Brutus, bild 7",
+              "width": 1920,
+              "height": 1281
+            },
+            {
+              "src": "/assets/img/brutus-10.webp",
+              "alt": "Brutus, bild 8",
+              "width": 1366,
+              "height": 2048
+            },
+            {
+              "src": "/assets/img/brutus-11.webp",
+              "alt": "Brutus, bild 9",
+              "width": 1920,
+              "height": 1281
+            }
+          ],
+          "autoplay": false
         },
         {
           "type": "video",
@@ -183,14 +197,13 @@
       "blocks": [
         {
           "type": "image",
+          "src": "/assets/img/logo-brutus.webp",
           "alt": "Brutus",
-          "width": 800,
-          "height": 441,
-          "src": "/assets/img/brutus-1.webp"
+          "href": "/produkter"
         },
         {
           "type": "image",
-          "alt": "Brutus – image 2",
+          "alt": "Brutus: image 2",
           "width": 394,
           "height": 478,
           "src": "/assets/img/brutus-2.webp"
@@ -235,7 +248,7 @@
         },
         {
           "type": "text",
-          "html": "Preparation: Drill holes in the rock or stone to be split. The ideal hole diameter is between 30 mm and 48 mm, but it can also be larger (e.g. 60 mm). The spacing between holes should be 5–10 times the hole diameter, which means the holes are drilled about 35–40 cm apart for optimal splitting. If the hole diameter is smaller, the holes must be closer together."
+          "html": "Preparation: Drill holes in the rock or stone to be split. The ideal hole diameter is between 30 mm and 48 mm, but it can also be larger (e.g. 60 mm). The spacing between holes should be 5-10 times the hole diameter, which means the holes are drilled about 35-40 cm apart for optimal splitting. If the hole diameter is smaller, the holes must be closer together."
         },
         {
           "type": "text",
@@ -258,12 +271,30 @@
           "html": "Consumption: The approximate consumption depends on the depth and diameter as shown below."
         },
         {
-          "type": "text",
-          "html": "Hole diameter (mm): 30 32 36 40 44 48"
-        },
-        {
-          "type": "text",
-          "html": "Mortar per metre of hole (kg): 1.1 1.3 1.7 2.1 2.5 3"
+          "type": "table",
+          "header": false,
+          "align": "center",
+          "rows": [
+            [
+              "Hole diameter (mm)",
+              "30",
+              "32",
+              "36",
+              "40",
+              "44",
+              "48"
+            ],
+            [
+              "Mortar per metre of hole (kg)",
+              "1.1",
+              "1.3",
+              "1.7",
+              "2.1",
+              "2.5",
+              "3"
+            ]
+          ],
+          "narrow": true
         },
         {
           "type": "text",
@@ -274,67 +305,64 @@
           "html": "2.1 kg / metre * 2.5 metres = 5.25 kg per hole"
         },
         {
-          "type": "image",
-          "alt": "Image carousel",
-          "width": 1366,
-          "height": 2048,
-          "src": "/assets/img/brutus-3.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Image carousel",
-          "width": 1366,
-          "height": 2048,
-          "src": "/assets/img/brutus-4.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Image carousel",
-          "width": 1366,
-          "height": 2048,
-          "src": "/assets/img/brutus-5.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Image carousel",
-          "width": 1920,
-          "height": 1281,
-          "src": "/assets/img/brutus-6.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Image carousel",
-          "width": 1920,
-          "height": 1281,
-          "src": "/assets/img/brutus-7.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Image carousel",
-          "width": 1920,
-          "height": 1281,
-          "src": "/assets/img/brutus-8.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Image carousel",
-          "width": 1920,
-          "height": 1281,
-          "src": "/assets/img/brutus-9.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Image carousel",
-          "width": 1366,
-          "height": 2048,
-          "src": "/assets/img/brutus-10.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Image carousel",
-          "width": 1920,
-          "height": 1281,
-          "src": "/assets/img/brutus-11.webp"
+          "type": "carousel",
+          "items": [
+            {
+              "src": "/assets/img/brutus-3.webp",
+              "alt": "Brutus, image 1",
+              "width": 1366,
+              "height": 2048
+            },
+            {
+              "src": "/assets/img/brutus-4.webp",
+              "alt": "Brutus, image 2",
+              "width": 1366,
+              "height": 2048
+            },
+            {
+              "src": "/assets/img/brutus-5.webp",
+              "alt": "Brutus, image 3",
+              "width": 1366,
+              "height": 2048
+            },
+            {
+              "src": "/assets/img/brutus-6.webp",
+              "alt": "Brutus, image 4",
+              "width": 1920,
+              "height": 1281
+            },
+            {
+              "src": "/assets/img/brutus-7.webp",
+              "alt": "Brutus, image 5",
+              "width": 1920,
+              "height": 1281
+            },
+            {
+              "src": "/assets/img/brutus-8.webp",
+              "alt": "Brutus, image 6",
+              "width": 1920,
+              "height": 1281
+            },
+            {
+              "src": "/assets/img/brutus-9.webp",
+              "alt": "Brutus, image 7",
+              "width": 1920,
+              "height": 1281
+            },
+            {
+              "src": "/assets/img/brutus-10.webp",
+              "alt": "Brutus, image 8",
+              "width": 1366,
+              "height": 2048
+            },
+            {
+              "src": "/assets/img/brutus-11.webp",
+              "alt": "Brutus, image 9",
+              "width": 1920,
+              "height": 1281
+            }
+          ],
+          "autoplay": false
         },
         {
           "type": "video",
@@ -352,14 +380,13 @@
       "blocks": [
         {
           "type": "image",
+          "src": "/assets/img/logo-brutus.webp",
           "alt": "Brutus",
-          "width": 800,
-          "height": 441,
-          "src": "/assets/img/brutus-1.webp"
+          "href": "/produkter"
         },
         {
           "type": "image",
-          "alt": "Brutus – imagen 2",
+          "alt": "Brutus: imagen 2",
           "width": 394,
           "height": 478,
           "src": "/assets/img/brutus-2.webp"
@@ -404,7 +431,7 @@
         },
         {
           "type": "text",
-          "html": "Preparación: Perfore agujeros en la roca o piedra que se va a fragmentar. El diámetro óptimo del agujero es de entre 30 mm y 48 mm, aunque puede ser mayor (p. ej., 60 mm). La separación entre agujeros debe ser de 5 a 10 veces el diámetro, lo que significa que los agujeros se perforan con unos 35–40 cm de separación para una fragmentación óptima. Si el diámetro es menor, se necesitan agujeros más próximos."
+          "html": "Preparación: Perfore agujeros en la roca o piedra que se va a fragmentar. El diámetro óptimo del agujero es de entre 30 mm y 48 mm, aunque puede ser mayor (p. ej., 60 mm). La separación entre agujeros debe ser de 5 a 10 veces el diámetro, lo que significa que los agujeros se perforan con unos 35-40 cm de separación para una fragmentación óptima. Si el diámetro es menor, se necesitan agujeros más próximos."
         },
         {
           "type": "text",
@@ -427,12 +454,30 @@
           "html": "Consumo: El consumo aproximado depende de la profundidad y del diámetro, como se muestra a continuación."
         },
         {
-          "type": "text",
-          "html": "Diámetro del agujero (mm): 30 32 36 40 44 48"
-        },
-        {
-          "type": "text",
-          "html": "Mortero por metro de agujero (kg): 1,1 1,3 1,7 2,1 2,5 3"
+          "type": "table",
+          "header": false,
+          "align": "center",
+          "rows": [
+            [
+              "Diámetro del agujero (mm)",
+              "30",
+              "32",
+              "36",
+              "40",
+              "44",
+              "48"
+            ],
+            [
+              "Mortero por metro de agujero (kg)",
+              "1,1",
+              "1,3",
+              "1,7",
+              "2,1",
+              "2,5",
+              "3"
+            ]
+          ],
+          "narrow": true
         },
         {
           "type": "text",
@@ -521,14 +566,13 @@
       "blocks": [
         {
           "type": "image",
+          "src": "/assets/img/logo-brutus.webp",
           "alt": "Brutus",
-          "width": 800,
-          "height": 441,
-          "src": "/assets/img/brutus-1.webp"
+          "href": "/produkter"
         },
         {
           "type": "image",
-          "alt": "Brutus – bilde 2",
+          "alt": "Brutus: bilde 2",
           "width": 394,
           "height": 478,
           "src": "/assets/img/brutus-2.webp"
@@ -573,7 +617,7 @@
         },
         {
           "type": "text",
-          "html": "Forberedelse: Bor hull i berget eller steinen som skal spaltes. Hulldiameteren bør optimalt være mellom 30 mm og 48 mm, men kan også være større (f.eks. 60 mm). Avstanden mellom hullene skal være 5–10 ganger hullets diameter, noe som betyr at hullene bores med ca. 35–40 cm avstand for optimal spalting. Hvis hulldiameteren er mindre, kreves tettere borehull."
+          "html": "Forberedelse: Bor hull i berget eller steinen som skal spaltes. Hulldiameteren bør optimalt være mellom 30 mm og 48 mm, men kan også være større (f.eks. 60 mm). Avstanden mellom hullene skal være 5-10 ganger hullets diameter, noe som betyr at hullene bores med ca. 35-40 cm avstand for optimal spalting. Hvis hulldiameteren er mindre, kreves tettere borehull."
         },
         {
           "type": "text",
@@ -596,12 +640,30 @@
           "html": "Forbruk: Det omtrentlige forbruket avhenger av dybde og diameter som angitt nedenfor."
         },
         {
-          "type": "text",
-          "html": "Hulldiameter (mm): 30 32 36 40 44 48"
-        },
-        {
-          "type": "text",
-          "html": "Mørtel per hullmeter (kg): 1,1 1,3 1,7 2,1 2,5 3"
+          "type": "table",
+          "header": false,
+          "align": "center",
+          "rows": [
+            [
+              "Hulldiameter (mm)",
+              "30",
+              "32",
+              "36",
+              "40",
+              "44",
+              "48"
+            ],
+            [
+              "Mørtel per hullmeter (kg)",
+              "1,1",
+              "1,3",
+              "1,7",
+              "2,1",
+              "2,5",
+              "3"
+            ]
+          ],
+          "narrow": true
         },
         {
           "type": "text",
@@ -612,67 +674,64 @@
           "html": "2,1 kg / meter * 2,5 meter = 5,25 kg per hull"
         },
         {
-          "type": "image",
-          "alt": "Bildekarusell",
-          "width": 1366,
-          "height": 2048,
-          "src": "/assets/img/brutus-3.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Bildekarusell",
-          "width": 1366,
-          "height": 2048,
-          "src": "/assets/img/brutus-4.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Bildekarusell",
-          "width": 1366,
-          "height": 2048,
-          "src": "/assets/img/brutus-5.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Bildekarusell",
-          "width": 1920,
-          "height": 1281,
-          "src": "/assets/img/brutus-6.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Bildekarusell",
-          "width": 1920,
-          "height": 1281,
-          "src": "/assets/img/brutus-7.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Bildekarusell",
-          "width": 1920,
-          "height": 1281,
-          "src": "/assets/img/brutus-8.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Bildekarusell",
-          "width": 1920,
-          "height": 1281,
-          "src": "/assets/img/brutus-9.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Bildekarusell",
-          "width": 1366,
-          "height": 2048,
-          "src": "/assets/img/brutus-10.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Bildekarusell",
-          "width": 1920,
-          "height": 1281,
-          "src": "/assets/img/brutus-11.webp"
+          "type": "carousel",
+          "items": [
+            {
+              "src": "/assets/img/brutus-3.webp",
+              "alt": "Brutus, bilde 1",
+              "width": 1366,
+              "height": 2048
+            },
+            {
+              "src": "/assets/img/brutus-4.webp",
+              "alt": "Brutus, bilde 2",
+              "width": 1366,
+              "height": 2048
+            },
+            {
+              "src": "/assets/img/brutus-5.webp",
+              "alt": "Brutus, bilde 3",
+              "width": 1366,
+              "height": 2048
+            },
+            {
+              "src": "/assets/img/brutus-6.webp",
+              "alt": "Brutus, bilde 4",
+              "width": 1920,
+              "height": 1281
+            },
+            {
+              "src": "/assets/img/brutus-7.webp",
+              "alt": "Brutus, bilde 5",
+              "width": 1920,
+              "height": 1281
+            },
+            {
+              "src": "/assets/img/brutus-8.webp",
+              "alt": "Brutus, bilde 6",
+              "width": 1920,
+              "height": 1281
+            },
+            {
+              "src": "/assets/img/brutus-9.webp",
+              "alt": "Brutus, bilde 7",
+              "width": 1920,
+              "height": 1281
+            },
+            {
+              "src": "/assets/img/brutus-10.webp",
+              "alt": "Brutus, bilde 8",
+              "width": 1366,
+              "height": 2048
+            },
+            {
+              "src": "/assets/img/brutus-11.webp",
+              "alt": "Brutus, bilde 9",
+              "width": 1920,
+              "height": 1281
+            }
+          ],
+          "autoplay": false
         },
         {
           "type": "video",

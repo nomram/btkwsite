@@ -23,7 +23,7 @@
         },
         {
           "type": "image",
-          "alt": "Häny - Helautomatiska pumpar (FAIC) – bild 2",
+          "alt": "Häny - Helautomatiska pumpar (FAIC), bild 2",
           "width": 733,
           "height": 827,
           "src": "/assets/img/haeny-automatiska-pumpar-2.webp"
@@ -67,39 +67,33 @@
           "html": "Modellen 712 är samma som 710 med skillnaden att: FAIC 650/710 har en något högre kapacitet, högre maxtryck och större hydraultank, vilket gör den bättre lämpad för krävande injekteringsuppgifter. FAIC 650/712 är något lättare men har i övrigt samma funktionalitet."
         },
         {
-          "type": "image",
-          "alt": "Häny - Helautomatiska pumpar (FAIC) – bild 3",
-          "width": 475,
-          "height": 526,
-          "src": "/assets/img/haeny-automatiska-pumpar-3.webp"
-        },
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "FAIC 650/710"
-        },
-        {
-          "type": "image",
-          "alt": "Häny - Helautomatiska pumpar (FAIC) – bild 4",
-          "width": 473,
-          "height": 516,
-          "src": "/assets/img/haeny-automatiska-pumpar-4.webp"
-        },
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "FAIC 650/712"
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 2,
+          "more": false,
+          "items": [
+            {
+              "title": "FAIC 650/710",
+              "image": "/assets/img/haeny-automatiska-pumpar-3.webp",
+              "alt": "FAIC 650/710"
+            },
+            {
+              "title": "FAIC 650/712",
+              "image": "/assets/img/haeny-automatiska-pumpar-4.webp",
+              "alt": "FAIC 650/712"
+            }
+          ]
         }
       ]
     },
     "en": {
       "title": "Automatic pumps",
-      "h1": "Häny – Fully automatic pumps (FAIC)",
+      "h1": "Häny: Fully automatic pumps (FAIC)",
       "description": "Compact, automated grouting plant combining mixer, agitator and grout pump. It offers high production capacity, quality assurance…",
       "blocks": [
         {
           "type": "image",
-          "alt": "Häny – Fully automatic pumps (FAIC)",
+          "alt": "Häny: Fully automatic pumps (FAIC)",
           "width": 876,
           "height": 510,
           "src": "/assets/img/haeny-automatiska-pumpar-1.webp",
@@ -107,7 +101,7 @@
         },
         {
           "type": "image",
-          "alt": "Häny – Fully automatic pumps (FAIC) – image 2",
+          "alt": "Häny: Fully automatic pumps (FAIC), image 2",
           "width": 733,
           "height": 827,
           "src": "/assets/img/haeny-automatiska-pumpar-2.webp"
@@ -151,40 +145,34 @@
           "html": "Model 712 is the same as 710 with the difference that FAIC 650/710 has a somewhat higher capacity, higher maximum pressure and a larger hydraulic tank, which makes it better suited to demanding grouting tasks. FAIC 650/712 is somewhat lighter but otherwise has the same functionality."
         },
         {
-          "type": "image",
-          "alt": "Häny – Fully automatic pumps (FAIC) – image 3",
-          "width": 475,
-          "height": 526,
-          "src": "/assets/img/haeny-automatiska-pumpar-3.webp"
-        },
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "FAIC 650/710"
-        },
-        {
-          "type": "image",
-          "alt": "Häny – Fully automatic pumps (FAIC) – image 4",
-          "width": 473,
-          "height": 516,
-          "src": "/assets/img/haeny-automatiska-pumpar-4.webp"
-        },
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "FAIC 650/712"
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 2,
+          "more": false,
+          "items": [
+            {
+              "title": "FAIC 650/710",
+              "image": "/assets/img/haeny-automatiska-pumpar-3.webp",
+              "alt": "FAIC 650/710"
+            },
+            {
+              "title": "FAIC 650/712",
+              "image": "/assets/img/haeny-automatiska-pumpar-4.webp",
+              "alt": "FAIC 650/712"
+            }
+          ]
         }
       ],
       "published": true
     },
     "es": {
       "title": "Bombas automáticas",
-      "h1": "Häny – Bombas totalmente automáticas (FAIC)",
+      "h1": "Häny: Bombas totalmente automáticas (FAIC)",
       "description": "Planta de inyección compacta y automatizada que combina mezcladora, agitador y bomba de inyección. Ofrece alta capacidad de producción, aseguramiento de la calidad…",
       "blocks": [
         {
           "type": "image",
-          "alt": "Häny – Bombas totalmente automáticas (FAIC)",
+          "alt": "Häny: Bombas totalmente automáticas (FAIC)",
           "width": 876,
           "height": 510,
           "src": "/assets/img/haeny-automatiska-pumpar-1.webp",
@@ -192,7 +180,7 @@
         },
         {
           "type": "image",
-          "alt": "Häny – Bombas totalmente automáticas (FAIC) – imagen 2",
+          "alt": "Häny: Bombas totalmente automáticas (FAIC), imagen 2",
           "width": 733,
           "height": 827,
           "src": "/assets/img/haeny-automatiska-pumpar-2.webp"
@@ -236,40 +224,34 @@
           "html": "El modelo 712 es igual que el 710 con la diferencia de que el FAIC 650/710 tiene una capacidad algo mayor, una presión máxima más alta y un depósito hidráulico más grande, lo que lo hace más adecuado para trabajos de inyección exigentes. El FAIC 650/712 es algo más ligero pero, por lo demás, tiene la misma funcionalidad."
         },
         {
-          "type": "image",
-          "alt": "Häny – Bombas totalmente automáticas (FAIC) – imagen 3",
-          "width": 475,
-          "height": 526,
-          "src": "/assets/img/haeny-automatiska-pumpar-3.webp"
-        },
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "FAIC 650/710"
-        },
-        {
-          "type": "image",
-          "alt": "Häny – Bombas totalmente automáticas (FAIC) – imagen 4",
-          "width": 473,
-          "height": 516,
-          "src": "/assets/img/haeny-automatiska-pumpar-4.webp"
-        },
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "FAIC 650/712"
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 2,
+          "more": false,
+          "items": [
+            {
+              "title": "FAIC 650/710",
+              "image": "/assets/img/haeny-automatiska-pumpar-3.webp",
+              "alt": "FAIC 650/710"
+            },
+            {
+              "title": "FAIC 650/712",
+              "image": "/assets/img/haeny-automatiska-pumpar-4.webp",
+              "alt": "FAIC 650/712"
+            }
+          ]
         }
       ],
       "published": true
     },
     "no": {
       "title": "Automatiske pumper",
-      "h1": "Häny – Helautomatiske pumper (FAIC)",
+      "h1": "Häny: Helautomatiske pumper (FAIC)",
       "description": "Kompakt, automatisert injiseringsanlegg som kombinerer mikser, rører og injiseringspumpe. Det gir høy produksjonskapasitet, kvalitetssikring…",
       "blocks": [
         {
           "type": "image",
-          "alt": "Häny – Helautomatiske pumper (FAIC)",
+          "alt": "Häny: Helautomatiske pumper (FAIC)",
           "width": 876,
           "height": 510,
           "src": "/assets/img/haeny-automatiska-pumpar-1.webp",
@@ -277,7 +259,7 @@
         },
         {
           "type": "image",
-          "alt": "Häny – Helautomatiske pumper (FAIC) – bilde 2",
+          "alt": "Häny: Helautomatiske pumper (FAIC), bilde 2",
           "width": 733,
           "height": 827,
           "src": "/assets/img/haeny-automatiska-pumpar-2.webp"
@@ -321,28 +303,22 @@
           "html": "Modell 712 er den samme som 710, med den forskjellen at FAIC 650/710 har noe høyere kapasitet, høyere maksimalt trykk og større hydraulikktank, noe som gjør den bedre egnet for krevende injiseringsoppgaver. FAIC 650/712 er noe lettere, men har ellers samme funksjonalitet."
         },
         {
-          "type": "image",
-          "alt": "Häny – Helautomatiske pumper (FAIC) – bilde 3",
-          "width": 475,
-          "height": 526,
-          "src": "/assets/img/haeny-automatiska-pumpar-3.webp"
-        },
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "FAIC 650/710"
-        },
-        {
-          "type": "image",
-          "alt": "Häny – Helautomatiske pumper (FAIC) – bilde 4",
-          "width": 473,
-          "height": 516,
-          "src": "/assets/img/haeny-automatiska-pumpar-4.webp"
-        },
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "FAIC 650/712"
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 2,
+          "more": false,
+          "items": [
+            {
+              "title": "FAIC 650/710",
+              "image": "/assets/img/haeny-automatiska-pumpar-3.webp",
+              "alt": "FAIC 650/710"
+            },
+            {
+              "title": "FAIC 650/712",
+              "image": "/assets/img/haeny-automatiska-pumpar-4.webp",
+              "alt": "FAIC 650/712"
+            }
+          ]
         }
       ],
       "published": true

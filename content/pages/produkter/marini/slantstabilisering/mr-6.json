@@ -15,15 +15,15 @@
       "blocks": [
         {
           "type": "image",
-          "alt": "Marini – logotyp",
+          "alt": "Marini logotyp",
           "href": "/produkter/marini",
-          "width": 1920,
-          "height": 1117,
-          "src": "/assets/img/marini-3.webp"
+          "width": 928,
+          "height": 542,
+          "src": "/assets/img/logo-marini-emblem.webp"
         },
         {
           "type": "image",
-          "alt": "MARINI MR 6 – bild 2",
+          "alt": "MARINI MR 6: bild 2",
           "width": 900,
           "height": 809,
           "src": "/assets/img/marini-slantstabilisering-mr-6-2.webp"
@@ -45,23 +45,22 @@
           "html": "<a href=\"/kontakta-oss\">Kontakta oss</a> för mer information."
         },
         {
-          "type": "image",
-          "alt": "MARINI MR 6 – bild 3",
-          "width": 693,
-          "height": 558,
-          "src": "/assets/img/marini-slantstabilisering-mr-6-3.webp"
-        },
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "MR 6 ID"
-        },
-        {
-          "type": "button",
-          "kind": "download",
-          "text": "Broschyr",
-          "href": "/assets/docs/marini-slantstabilisering-mr-6-broschyr-ny-flik.pdf",
-          "driveId": "1TrlSuL7sVOWsZhPuovRlrsu-jU59qedZ"
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 1,
+          "more": false,
+          "items": [
+            {
+              "title": "MR 6 ID",
+              "image": "/assets/img/marini-slantstabilisering-mr-6-3.webp",
+              "alt": "MARINI MR 6: bild 3",
+              "doc": {
+                "text": "Broschyr",
+                "href": "/assets/docs/marini-slantstabilisering-mr-6-broschyr-ny-flik.pdf",
+                "driveId": "1TrlSuL7sVOWsZhPuovRlrsu-jU59qedZ"
+              }
+            }
+          ]
         },
         {
           "type": "heading",
@@ -85,23 +84,22 @@
           ]
         },
         {
-          "type": "image",
-          "alt": "MARINI MR 6 – bild 4",
-          "width": 657,
-          "height": 530,
-          "src": "/assets/img/marini-slantstabilisering-mr-6-4.webp"
-        },
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "MR 6 PN"
-        },
-        {
-          "type": "button",
-          "kind": "download",
-          "text": "Broschyr",
-          "href": "/assets/docs/marini-slantstabilisering-mr-6-broschyr-ny-flik-2.pdf",
-          "driveId": "1WCh_AgTK3cdNFVGHBJr2r_egXUyofAZJ"
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 1,
+          "more": false,
+          "items": [
+            {
+              "title": "MR 6 PN",
+              "image": "/assets/img/marini-slantstabilisering-mr-6-4.webp",
+              "alt": "MARINI MR 6: bild 4",
+              "doc": {
+                "text": "Broschyr",
+                "href": "/assets/docs/marini-slantstabilisering-mr-6-broschyr-ny-flik-2.pdf",
+                "driveId": "1WCh_AgTK3cdNFVGHBJr2r_egXUyofAZJ"
+              }
+            }
+          ]
         },
         {
           "type": "heading",
@@ -127,15 +125,15 @@
       "blocks": [
         {
           "type": "image",
-          "alt": "Marini – logo",
+          "alt": "Marini logo",
           "href": "/produkter/marini",
-          "width": 1920,
-          "height": 1117,
-          "src": "/assets/img/marini-3.webp"
+          "width": 928,
+          "height": 542,
+          "src": "/assets/img/logo-marini-emblem.webp"
         },
         {
           "type": "image",
-          "alt": "MARINI MR 6 – image 2",
+          "alt": "MARINI MR 6: image 2",
           "width": 900,
           "height": 809,
           "src": "/assets/img/marini-slantstabilisering-mr-6-2.webp"
@@ -157,23 +155,22 @@
           "html": "<a href=\"/kontakta-oss\">Contact us</a> for more information."
         },
         {
-          "type": "image",
-          "alt": "MARINI MR 6 – image 3",
-          "width": 693,
-          "height": 558,
-          "src": "/assets/img/marini-slantstabilisering-mr-6-3.webp"
-        },
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "MR 6 ID"
-        },
-        {
-          "type": "button",
-          "kind": "download",
-          "text": "Brochure",
-          "href": "/assets/docs/marini-slantstabilisering-mr-6-broschyr-ny-flik.pdf",
-          "driveId": "1TrlSuL7sVOWsZhPuovRlrsu-jU59qedZ"
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 1,
+          "more": false,
+          "items": [
+            {
+              "title": "MR 6 ID",
+              "image": "/assets/img/marini-slantstabilisering-mr-6-3.webp",
+              "alt": "MARINI MR 6: image 3",
+              "doc": {
+                "text": "Brochure",
+                "href": "/assets/docs/marini-slantstabilisering-mr-6-broschyr-ny-flik.pdf",
+                "driveId": "1TrlSuL7sVOWsZhPuovRlrsu-jU59qedZ"
+              }
+            }
+          ]
         },
         {
           "type": "heading",
@@ -197,23 +194,22 @@
           ]
         },
         {
-          "type": "image",
-          "alt": "MARINI MR 6 – image 4",
-          "width": 657,
-          "height": 530,
-          "src": "/assets/img/marini-slantstabilisering-mr-6-4.webp"
-        },
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "MR 6 PN"
-        },
-        {
-          "type": "button",
-          "kind": "download",
-          "text": "Brochure",
-          "href": "/assets/docs/marini-slantstabilisering-mr-6-broschyr-ny-flik-2.pdf",
-          "driveId": "1WCh_AgTK3cdNFVGHBJr2r_egXUyofAZJ"
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 1,
+          "more": false,
+          "items": [
+            {
+              "title": "MR 6 PN",
+              "image": "/assets/img/marini-slantstabilisering-mr-6-4.webp",
+              "alt": "MARINI MR 6: image 4",
+              "doc": {
+                "text": "Brochure",
+                "href": "/assets/docs/marini-slantstabilisering-mr-6-broschyr-ny-flik-2.pdf",
+                "driveId": "1WCh_AgTK3cdNFVGHBJr2r_egXUyofAZJ"
+              }
+            }
+          ]
         },
         {
           "type": "heading",
@@ -240,15 +236,15 @@
       "blocks": [
         {
           "type": "image",
-          "alt": "Marini – logotipo",
+          "alt": "Marini logotipo",
           "href": "/produkter/marini",
-          "width": 1920,
-          "height": 1117,
-          "src": "/assets/img/marini-3.webp"
+          "width": 928,
+          "height": 542,
+          "src": "/assets/img/logo-marini-emblem.webp"
         },
         {
           "type": "image",
-          "alt": "MARINI MR 6 – imagen 2",
+          "alt": "MARINI MR 6: imagen 2",
           "width": 900,
           "height": 809,
           "src": "/assets/img/marini-slantstabilisering-mr-6-2.webp"
@@ -270,23 +266,22 @@
           "html": "<a href=\"/kontakta-oss\">Contáctenos</a> para más información."
         },
         {
-          "type": "image",
-          "alt": "MARINI MR 6 – imagen 3",
-          "width": 693,
-          "height": 558,
-          "src": "/assets/img/marini-slantstabilisering-mr-6-3.webp"
-        },
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "MR 6 ID"
-        },
-        {
-          "type": "button",
-          "kind": "download",
-          "text": "Folleto",
-          "href": "/assets/docs/marini-slantstabilisering-mr-6-broschyr-ny-flik.pdf",
-          "driveId": "1TrlSuL7sVOWsZhPuovRlrsu-jU59qedZ"
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 1,
+          "more": false,
+          "items": [
+            {
+              "title": "MR 6 ID",
+              "image": "/assets/img/marini-slantstabilisering-mr-6-3.webp",
+              "alt": "MARINI MR 6: imagen 3",
+              "doc": {
+                "text": "Folleto",
+                "href": "/assets/docs/marini-slantstabilisering-mr-6-broschyr-ny-flik.pdf",
+                "driveId": "1TrlSuL7sVOWsZhPuovRlrsu-jU59qedZ"
+              }
+            }
+          ]
         },
         {
           "type": "heading",
@@ -310,23 +305,22 @@
           ]
         },
         {
-          "type": "image",
-          "alt": "MARINI MR 6 – imagen 4",
-          "width": 657,
-          "height": 530,
-          "src": "/assets/img/marini-slantstabilisering-mr-6-4.webp"
-        },
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "MR 6 PN"
-        },
-        {
-          "type": "button",
-          "kind": "download",
-          "text": "Folleto",
-          "href": "/assets/docs/marini-slantstabilisering-mr-6-broschyr-ny-flik-2.pdf",
-          "driveId": "1WCh_AgTK3cdNFVGHBJr2r_egXUyofAZJ"
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 1,
+          "more": false,
+          "items": [
+            {
+              "title": "MR 6 PN",
+              "image": "/assets/img/marini-slantstabilisering-mr-6-4.webp",
+              "alt": "MARINI MR 6: imagen 4",
+              "doc": {
+                "text": "Folleto",
+                "href": "/assets/docs/marini-slantstabilisering-mr-6-broschyr-ny-flik-2.pdf",
+                "driveId": "1WCh_AgTK3cdNFVGHBJr2r_egXUyofAZJ"
+              }
+            }
+          ]
         },
         {
           "type": "heading",
@@ -353,15 +347,15 @@
       "blocks": [
         {
           "type": "image",
-          "alt": "Marini – logo",
+          "alt": "Marini logo",
           "href": "/produkter/marini",
-          "width": 1920,
-          "height": 1117,
-          "src": "/assets/img/marini-3.webp"
+          "width": 928,
+          "height": 542,
+          "src": "/assets/img/logo-marini-emblem.webp"
         },
         {
           "type": "image",
-          "alt": "MARINI MR 6 – bilde 2",
+          "alt": "MARINI MR 6: bilde 2",
           "width": 900,
           "height": 809,
           "src": "/assets/img/marini-slantstabilisering-mr-6-2.webp"
@@ -383,23 +377,22 @@
           "html": "<a href=\"/kontakta-oss\">Kontakt oss</a> for mer informasjon."
         },
         {
-          "type": "image",
-          "alt": "MARINI MR 6 – bilde 3",
-          "width": 693,
-          "height": 558,
-          "src": "/assets/img/marini-slantstabilisering-mr-6-3.webp"
-        },
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "MR 6 ID"
-        },
-        {
-          "type": "button",
-          "kind": "download",
-          "text": "Brosjyre",
-          "href": "/assets/docs/marini-slantstabilisering-mr-6-broschyr-ny-flik.pdf",
-          "driveId": "1TrlSuL7sVOWsZhPuovRlrsu-jU59qedZ"
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 1,
+          "more": false,
+          "items": [
+            {
+              "title": "MR 6 ID",
+              "image": "/assets/img/marini-slantstabilisering-mr-6-3.webp",
+              "alt": "MARINI MR 6: bilde 3",
+              "doc": {
+                "text": "Brosjyre",
+                "href": "/assets/docs/marini-slantstabilisering-mr-6-broschyr-ny-flik.pdf",
+                "driveId": "1TrlSuL7sVOWsZhPuovRlrsu-jU59qedZ"
+              }
+            }
+          ]
         },
         {
           "type": "heading",
@@ -423,23 +416,22 @@
           ]
         },
         {
-          "type": "image",
-          "alt": "MARINI MR 6 – bilde 4",
-          "width": 657,
-          "height": 530,
-          "src": "/assets/img/marini-slantstabilisering-mr-6-4.webp"
-        },
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "MR 6 PN"
-        },
-        {
-          "type": "button",
-          "kind": "download",
-          "text": "Brosjyre",
-          "href": "/assets/docs/marini-slantstabilisering-mr-6-broschyr-ny-flik-2.pdf",
-          "driveId": "1WCh_AgTK3cdNFVGHBJr2r_egXUyofAZJ"
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 1,
+          "more": false,
+          "items": [
+            {
+              "title": "MR 6 PN",
+              "image": "/assets/img/marini-slantstabilisering-mr-6-4.webp",
+              "alt": "MARINI MR 6: bilde 4",
+              "doc": {
+                "text": "Brosjyre",
+                "href": "/assets/docs/marini-slantstabilisering-mr-6-broschyr-ny-flik-2.pdf",
+                "driveId": "1WCh_AgTK3cdNFVGHBJr2r_egXUyofAZJ"
+              }
+            }
+          ]
         },
         {
           "type": "heading",
