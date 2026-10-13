@@ -122,10 +122,17 @@ a:hover { text-decoration-thickness: 2px; }
 
 /* ---------- products menu: brand flyout (second level) ---------- */
 .logorow__item { position: relative; }
-.logorow__item.is-on { border-color: var(--primary); box-shadow: var(--shadow); transform: translateY(-2px); }
+.logorow__item.is-on { border-color: var(--primary); box-shadow: 0 1px 3px rgba(35, 31, 32, .14); transform: none; }
+/* waiting marker: the bottom edge fills over the settle delay; the open panel dims after a beat */
+.logorow__item.is-pending { cursor: progress; border-color: var(--primary); }
+.logorow__item.is-pending::after { content: ""; position: absolute; left: -1px; bottom: -1px; width: calc(100% + 2px); height: 3px; background: var(--primary); transform-origin: left; animation: intentFill var(--intent, 280ms) linear forwards; }
+@keyframes intentFill { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+.mega__panel.is-on { transition: opacity .12s; }
+.mega--logos.is-switching .mega__panel.is-on { opacity: .55; transition: opacity .18s .1s; }
+@media (prefers-reduced-motion: reduce) { .logorow__item.is-pending::after { transform: scaleX(.4); } }
 .logorow__item.is-on::after { content: ""; position: absolute; left: -1px; right: -1px; bottom: -1px; height: 3px; background: var(--primary); }
 .mega--logos .container.mega__panels { padding-block: 0; }
-.mega__stage { display: grid; grid-template-rows: 0fr; background: var(--surface); border-top: 1px solid transparent; transition: grid-template-rows .24s ease, border-color .24s; }
+.mega__stage { position: relative; z-index: 1; display: grid; grid-template-rows: 0fr; background: var(--surface); border-top: 1px solid transparent; transition: grid-template-rows .24s ease, border-color .24s; }
 .mega--logos.has-panel .mega__stage { grid-template-rows: 1fr; border-top-color: var(--line); }
 .mega__stage > .mega__panels { min-height: 0; overflow: hidden; }
 .mega__panel { display: none; grid-template-columns: minmax(180px, 15rem) minmax(0, 1fr); gap: 1.2rem 2.2rem; padding-block: 1.1rem 1.3rem; min-height: 9rem; }
@@ -139,7 +146,8 @@ a:hover { text-decoration-thickness: 2px; }
 .mega__desc[data-cut] { cursor: default; border-radius: 2px; }
 .mega__desc[data-cut]:hover, .mega__desc[data-cut]:focus-visible { display: block; -webkit-line-clamp: unset; line-clamp: unset; overflow: visible; font-size: .86rem; color: var(--text); }
 .mega__desc[data-cut]:focus-visible { outline-offset: 3px; }
-.mega__profile { max-width: 100%; margin: 0 0 .9rem; }
+.mega__profile { max-width: 100%; margin: 0 0 .9rem; white-space: normal; text-align: left; justify-content: flex-start; line-height: 1.25; }
+.mega__intro, .mega__panel > * { min-width: 0; }
 /* a manufacturer without ranges: text on the left, the button to its right on the same line */
 .mega__panel--solo { grid-template-columns: minmax(0, 1fr); min-height: 0; }
 .mega__panel--solo .mega__intro { display: grid; grid-template-columns: minmax(0, 36rem) auto; column-gap: 2.5rem; align-items: center; justify-content: start; }

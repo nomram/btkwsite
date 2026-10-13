@@ -139,7 +139,14 @@
     place();
     if (small.addEventListener) small.addEventListener("change", function () { reset(); place(); });
     else if (small.addListener) small.addListener(function () { reset(); place(); });
+    // "waiting for the pointer to settle" marker: the tile fills its bottom edge while the panel is about to switch,
+    // and the open panel dims a little, so the pause reads as loading and not as a lag
+    function clearPending() {
+      tiles.forEach(function (t) { t.classList.remove("is-pending"); });
+      mega.classList.remove("is-switching");
+    }
     function show(tile) {
+      clearPending();
       var id = tile.getAttribute("data-panel");
       tiles.forEach(function (t) { var on = t === tile; t.classList.toggle("is-on", on); t.setAttribute("aria-expanded", on ? "true" : "false"); });
       panels.forEach(function (p) { p.classList.toggle("is-on", p.id === id); });
@@ -156,6 +163,7 @@
     // back to the plain row of logos when the menu is left or closed
     function reset() {
       clearTimeout(timer);
+      clearPending();
       mega.classList.remove("has-panel");
       tiles.forEach(function (t) { t.classList.remove("is-on"); t.setAttribute("aria-expanded", "false"); });
       panels.forEach(function (p) { p.classList.remove("is-on"); });
@@ -190,7 +198,17 @@
       // Switching brand waits until the pointer has settled on a tile: moving down from the logos to the panel
       // crosses other tiles on the way, and the panel must not flip to them. A bit longer once a panel is open.
       var lastX = 0, lastY = 0, since = 0;
-      function arm(delay) { clearTimeout(timer); timer = setTimeout(function () { show(tile); }, delay); }
+      function arm(delay) {
+        clearTimeout(timer);
+        clearPending();
+        if (!tile.classList.contains("is-on")) {
+          tile.style.setProperty("--intent", delay + "ms");
+          void tile.offsetWidth; // restart the fill animation
+          tile.classList.add("is-pending");
+          if (mega.classList.contains("has-panel")) mega.classList.add("is-switching");
+        }
+        timer = setTimeout(function () { show(tile); }, delay);
+      }
       tile.addEventListener("pointerenter", function (e) {
         // in the narrow list a manufacturer unfolds on click (an unfolding row would move the next one under the pointer)
         if (e.pointerType === "touch" || small.matches) return;
@@ -202,7 +220,7 @@
         // still travelling across the tile: wait for it to settle (at most 600 ms after entering)
         if (Math.abs(e.clientX - lastX) + Math.abs(e.clientY - lastY) > 6) { lastX = e.clientX; lastY = e.clientY; arm(mega.classList.contains("has-panel") ? 220 : 120); }
       });
-      tile.addEventListener("pointerleave", function () { clearTimeout(timer); });
+      tile.addEventListener("pointerleave", function () { clearTimeout(timer); tile.classList.remove("is-pending"); mega.classList.remove("is-switching"); });
       // keyboard focus previews the brand; a pointer press already decides by itself (click toggles)
       tile.addEventListener("focus", function () { if (!pointerNav) show(tile); });
       tile.addEventListener("click", function (e) {
@@ -265,7 +283,7 @@
     var link = bar.querySelector(".callbar__link"), glow = bar.querySelector(".callbar__glow");
     var heroEl = document.querySelector(".hero");
     var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    var cur = 0, tgt = 0, gx = 0.5, gxT = 0.5, raf = 0;
+    var cur = 0, tgt = 0, gx = 0.5, gxT = 0.5, raf = 0, lastY = window.pageYOffset || 0, settle = 0, started = false;
     bar.classList.add("is-live");
     // the bar is fully in when most of the banner has gone; pages without a banner use a short distance
     function distance() { return Math.max(180, (heroEl ? heroEl.offsetHeight : 0) * 0.65); }
@@ -287,7 +305,16 @@
     function kick() { if (!raf) raf = requestAnimationFrame(frame); }
     function onScroll() {
       var y = window.pageYOffset || document.documentElement.scrollTop || 0;
-      tgt = Math.min(1, Math.max(0, y / distance()));
+      var dy = y - lastY;
+      lastY = y;
+      // never further in than the banner position allows (it stays out while the top banner is in view)
+      var cap = Math.min(1, Math.max(0, y / distance()));
+      if (!started) { tgt = cap; started = true; }
+      // then it follows the direction of travel wherever you are: down brings it in, up takes it out again at once
+      else tgt = Math.min(cap, Math.max(0, tgt + dy / 70));
+      // when scrolling stops it rests fully in or fully out, never half way
+      clearTimeout(settle);
+      settle = setTimeout(function () { tgt = tgt >= 0.5 ? cap : 0; kick(); }, 180);
       // scrolling also moves the embers a little, so the colour is never static
       var h = Math.max(1, document.documentElement.scrollHeight - window.innerHeight);
       gxT = 0.15 + 0.7 * Math.min(1, y / h);
