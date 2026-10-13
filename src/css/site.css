@@ -625,13 +625,13 @@ dialog.search::backdrop { background: rgba(35, 31, 32, .6); }
   .callbar.is-live { transform: translate3d(0, 110%, 0); will-change: transform; }
   .callbar__fire { position: absolute; inset: 0; overflow: hidden; pointer-events: none; }
   /* base: amber to orange; soft blobs drift slowly on top like wax in a lamp (no hard edges) */
-  .callbar__flow { position: absolute; inset: 0 -50%; background: linear-gradient(100deg, #f8a21e 0%, #f37d03 22%, #f58c10 40%, #fbb034 58%, #f37d03 78%, #f8a21e 100%); animation: cbDrift 20s ease-in-out infinite alternate; }
+  .callbar__flow { position: absolute; inset: 0 -50%; background: linear-gradient(100deg, #f37d03 0%, #f58108 24%, #f27c03 50%, #f58208 76%, #f37d03 100%); animation: cbDrift 24s ease-in-out infinite alternate; }
   .callbar__blob { position: absolute; border-radius: 50%; will-change: transform; }
-  .callbar__blob.b1 { top: -70%; left: -10%; width: 58%; height: 240%; background: radial-gradient(closest-side, rgba(255, 214, 110, .95), rgba(255, 190, 80, .5) 55%, rgba(255, 170, 60, 0) 100%); animation: cbBlobA 9s ease-in-out infinite alternate; }
-  .callbar__blob.b2 { top: -60%; left: 35%; width: 50%; height: 230%; background: radial-gradient(closest-side, rgba(240, 100, 20, .85), rgba(243, 125, 3, .4) 55%, rgba(243, 125, 3, 0) 100%); animation: cbBlobB 12s ease-in-out -4s infinite alternate; }
-  .callbar__blob.b3 { top: -80%; left: 62%; width: 46%; height: 250%; background: radial-gradient(closest-side, rgba(255, 232, 150, .9), rgba(255, 205, 100, .45) 55%, rgba(255, 190, 80, 0) 100%); animation: cbBlobC 15s ease-in-out -7s infinite alternate; }
+  .callbar__blob.b1 { top: -70%; left: -10%; width: 58%; height: 240%; background: radial-gradient(closest-side, rgba(255, 165, 50, .38), rgba(255, 160, 40, .16) 55%, rgba(255, 150, 30, 0) 100%); animation: cbBlobA 11s ease-in-out infinite alternate; }
+  .callbar__blob.b2 { top: -60%; left: 35%; width: 50%; height: 230%; background: radial-gradient(closest-side, rgba(228, 110, 0, .3), rgba(232, 114, 0, .12) 55%, rgba(236, 118, 0, 0) 100%); animation: cbBlobB 14s ease-in-out -4s infinite alternate; }
+  .callbar__blob.b3 { top: -80%; left: 62%; width: 46%; height: 250%; background: radial-gradient(closest-side, rgba(255, 172, 60, .32), rgba(255, 165, 50, .13) 55%, rgba(255, 160, 40, 0) 100%); animation: cbBlobC 17s ease-in-out -7s infinite alternate; }
   .callbar__glow { position: absolute; top: -45%; left: 0; width: 56%; height: 190%; will-change: transform; }
-  .callbar__glow i { position: absolute; inset: 0; background: radial-gradient(ellipse at center, rgba(255, 236, 160, .95) 0%, rgba(255, 190, 80, .4) 42%, rgba(255, 160, 60, 0) 70%); animation: cbFlicker 3.2s ease-in-out infinite alternate; }
+  .callbar__glow i { position: absolute; inset: 0; background: radial-gradient(ellipse at center, rgba(255, 178, 70, .4) 0%, rgba(255, 165, 50, .15) 45%, rgba(255, 150, 30, 0) 72%); animation: cbFlicker 4s ease-in-out infinite alternate; }
   .callbar:not(.is-shown) .callbar__flow, .callbar:not(.is-shown) .callbar__blob, .callbar:not(.is-shown) .callbar__glow i { animation-play-state: paused; }
   @keyframes cbDrift { from { transform: translate3d(0, 0, 0); } to { transform: translate3d(-22%, 0, 0); } }
   @keyframes cbBlobA { 0% { transform: translate3d(-8%, 4%, 0) scale(.9, 1); } 50% { transform: translate3d(60%, -6%, 0) scale(1.2, .95); } 100% { transform: translate3d(140%, 5%, 0) scale(.95, 1.1); } }
