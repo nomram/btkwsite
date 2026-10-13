@@ -179,12 +179,20 @@
     document.addEventListener("click", function (e) { if (!e.target.closest(".nav__item--mega")) reset(); });
     tiles.forEach(function (tile, i) {
       tile.addEventListener("pointerdown", function (e) { lastType = e.pointerType || "mouse"; });
-      // a short delay so sweeping the pointer across the row does not flicker through every brand
+      // Switching brand waits until the pointer has settled on a tile: moving down from the logos to the panel
+      // crosses other tiles on the way, and the panel must not flip to them. A bit longer once a panel is open.
+      var lastX = 0, lastY = 0, since = 0;
+      function arm(delay) { clearTimeout(timer); timer = setTimeout(function () { show(tile); }, delay); }
       tile.addEventListener("pointerenter", function (e) {
         // in the narrow list a manufacturer unfolds on click (an unfolding row would move the next one under the pointer)
         if (e.pointerType === "touch" || small.matches) return;
-        clearTimeout(timer);
-        timer = setTimeout(function () { show(tile); }, 90);
+        lastX = e.clientX; lastY = e.clientY; since = Date.now();
+        arm(mega.classList.contains("has-panel") ? 280 : 150);
+      });
+      tile.addEventListener("pointermove", function (e) {
+        if (e.pointerType === "touch" || small.matches || tile.classList.contains("is-on") || Date.now() - since > 600) return;
+        // still travelling across the tile: wait for it to settle (at most 600 ms after entering)
+        if (Math.abs(e.clientX - lastX) + Math.abs(e.clientY - lastY) > 6) { lastX = e.clientX; lastY = e.clientY; arm(mega.classList.contains("has-panel") ? 220 : 120); }
       });
       tile.addEventListener("pointerleave", function () { clearTimeout(timer); });
       // keyboard focus previews the brand; a pointer press already decides by itself (click toggles)
@@ -477,7 +485,7 @@
     var link = function (e) { return e.target && e.target.closest ? e.target.closest("a[href]") : null; };
     document.addEventListener("pointerover", function (e) {
       if (e.pointerType === "touch") return;
-      var a = link(e); if (a) intent(a, 70);
+      var a = link(e); if (a) intent(a, 180);
     }, { passive: true });
     document.addEventListener("pointerout", function (e) { var a = link(e); if (a) cancel(a); }, { passive: true });
     document.addEventListener("focusin", function (e) { var a = link(e); if (a) intent(a, 120); });
