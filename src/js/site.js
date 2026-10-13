@@ -115,6 +115,99 @@
       btn.setAttribute("aria-expanded", open ? "true" : "false");
     });
   });
+  // ---------- products menu: hovering a brand shows its ranges and models in the panel below ----------
+  document.querySelectorAll(".mega--logos").forEach(function (mega) {
+    var tiles = [].slice.call(mega.querySelectorAll(".logorow__item[data-panel]"));
+    var panels = [].slice.call(mega.querySelectorAll(".mega__panel"));
+    if (!tiles.length || !panels.length) return;
+    var timer = 0, lastType = "mouse";
+    var pointerNav = false;
+    document.addEventListener("pointerdown", function () { pointerNav = true; }, true);
+    document.addEventListener("keydown", function () { pointerNav = false; }, true);
+    var host = mega.querySelector(".mega__panels");
+    var small = window.matchMedia ? window.matchMedia("(max-width: 980px)") : { matches: false };
+    // small screens: every panel sits directly under its manufacturer (an accordion); wide screens: one shared panel below the row
+    function place() {
+      tiles.forEach(function (tile) {
+        var p = document.getElementById(tile.getAttribute("data-panel"));
+        var li = tile.closest("li");
+        if (!p || !li) return;
+        if (small.matches) { if (p.parentNode !== li) li.appendChild(p); }
+        else if (host && p.parentNode !== host) host.appendChild(p);
+      });
+    }
+    place();
+    if (small.addEventListener) small.addEventListener("change", function () { reset(); place(); });
+    else if (small.addListener) small.addListener(function () { reset(); place(); });
+    function show(tile) {
+      var id = tile.getAttribute("data-panel");
+      tiles.forEach(function (t) { var on = t === tile; t.classList.toggle("is-on", on); t.setAttribute("aria-expanded", on ? "true" : "false"); });
+      panels.forEach(function (p) { p.classList.toggle("is-on", p.id === id); });
+      mega.classList.add("has-panel");
+    }
+    // back to the plain row of logos when the menu is left or closed
+    function reset() {
+      clearTimeout(timer);
+      mega.classList.remove("has-panel");
+      tiles.forEach(function (t) { t.classList.remove("is-on"); t.setAttribute("aria-expanded", "false"); });
+      panels.forEach(function (p) { p.classList.remove("is-on"); });
+    }
+    // the small preview pictures load as soon as the menu is first touched, so they are ready when a brand is picked
+    var warmed = false;
+    function warm() {
+      if (warmed) return;
+      warmed = true;
+      panels.forEach(function (p) { [].forEach.call(p.querySelectorAll("img"), function (im) { im.loading = "eager"; }); });
+    }
+    var item = mega.closest(".nav__item");
+    if (item) {
+      ["pointerenter", "focusin", "touchstart"].forEach(function (ev) { item.addEventListener(ev, warm, { once: true, passive: true }); });
+      // wide layout: leaving the menu folds the panel; in the narrow list the rows stay as the visitor left them
+      item.addEventListener("pointerleave", function (e) { if (e.pointerType !== "touch" && !small.matches) reset(); });
+      item.addEventListener("focusout", function (e) { if (!item.contains(e.relatedTarget)) reset(); });
+      var tog = item.querySelector(".nav__toggle");
+      if (tog) tog.addEventListener("click", reset);
+    }
+    document.addEventListener("keydown", function (e) { if (e.key === "Escape") reset(); });
+    document.addEventListener("click", function (e) { if (!e.target.closest(".nav__item--mega")) reset(); });
+    tiles.forEach(function (tile, i) {
+      tile.addEventListener("pointerdown", function (e) { lastType = e.pointerType || "mouse"; });
+      // a short delay so sweeping the pointer across the row does not flicker through every brand
+      tile.addEventListener("pointerenter", function (e) {
+        // in the narrow list a manufacturer unfolds on click (an unfolding row would move the next one under the pointer)
+        if (e.pointerType === "touch" || small.matches) return;
+        clearTimeout(timer);
+        timer = setTimeout(function () { show(tile); }, 90);
+      });
+      tile.addEventListener("pointerleave", function () { clearTimeout(timer); });
+      // keyboard focus previews the brand; a pointer press already decides by itself (click toggles)
+      tile.addEventListener("focus", function () { if (!pointerNav) show(tile); });
+      tile.addEventListener("click", function (e) {
+        if (small.matches) {
+          // phone: a tap unfolds / folds the manufacturer; the "view full range" button inside goes to its page
+          e.preventDefault();
+          // pin the list open: it may have been opened by hovering, and unfolding a row moves things under the pointer
+          if (item) { item.classList.add("is-open"); var tg = item.querySelector(".nav__toggle"); if (tg) tg.setAttribute("aria-expanded", "true"); }
+          if (tile.classList.contains("is-on")) reset();
+          else {
+            show(tile);
+            var p = document.getElementById(tile.getAttribute("data-panel"));
+            setTimeout(function () { if (p && p.scrollIntoView) p.scrollIntoView({ block: "nearest", behavior: "smooth" }); }, 260);
+          }
+          return;
+        }
+        // wide screen with touch: the first tap previews the brand, the second one opens it
+        if (lastType === "touch" && !tile.classList.contains("is-on")) { e.preventDefault(); show(tile); }
+      });
+      tile.addEventListener("keydown", function (e) {
+        var d = e.key === "ArrowRight" ? 1 : e.key === "ArrowLeft" ? -1 : 0;
+        if (!d) return;
+        var n = tiles[i + d];
+        if (n) { e.preventDefault(); n.focus(); }
+      });
+    });
+  });
+
   // ---------- logo rows follow the mouse sideways ----------
   // A row of logos that is wider than its box scrolls to match the pointer, so the rest of the
   // logos can be reached without a scrollbar. Touch keeps native swiping.
@@ -141,6 +234,52 @@
     });
     row.addEventListener("pointerleave", function () { target = null; });
   });
+
+  // ---------- call bar (phones): slides in while the banner scrolls away, back out when you return to the top ----------
+  (function () {
+    var bar = document.querySelector("[data-callbar]");
+    if (!bar) return;
+    var link = bar.querySelector(".callbar__link"), glow = bar.querySelector(".callbar__glow");
+    var heroEl = document.querySelector(".hero");
+    var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    var cur = 0, tgt = 0, gx = 0.5, gxT = 0.5, raf = 0;
+    bar.classList.add("is-live");
+    // the bar is fully in when most of the banner has gone; pages without a banner use a short distance
+    function distance() { return Math.max(180, (heroEl ? heroEl.offsetHeight : 0) * 0.65); }
+    function frame() {
+      raf = 0;
+      cur += (tgt - cur) * (reduce ? 1 : 0.16);
+      if (Math.abs(tgt - cur) < 0.003) cur = tgt;
+      gx += (gxT - gx) * 0.1;
+      bar.style.transform = "translate3d(0," + ((1 - cur) * 110).toFixed(2) + "%,0)";
+      var w = bar.clientWidth || 360;
+      glow.style.transform = "translate3d(" + Math.round(gx * w * 1.0 - w * 0.31) + "px,0,0)";
+      var shown = cur > 0.01;
+      bar.classList.toggle("is-shown", shown);
+      var usable = cur > 0.4;
+      link.tabIndex = usable ? 0 : -1;
+      bar.setAttribute("aria-hidden", usable ? "false" : "true");
+      if (cur !== tgt || Math.abs(gxT - gx) > 0.004) raf = requestAnimationFrame(frame);
+    }
+    function kick() { if (!raf) raf = requestAnimationFrame(frame); }
+    function onScroll() {
+      var y = window.pageYOffset || document.documentElement.scrollTop || 0;
+      tgt = Math.min(1, Math.max(0, y / distance()));
+      // scrolling also moves the embers a little, so the colour is never static
+      var h = Math.max(1, document.documentElement.scrollHeight - window.innerHeight);
+      gxT = 0.15 + 0.7 * Math.min(1, y / h);
+      kick();
+    }
+    window.addEventListener("scroll", onScroll, { passive: true });
+    window.addEventListener("resize", onScroll);
+    // the pointer / finger steers the glow
+    window.addEventListener("pointermove", function (e) {
+      gxT = Math.min(1, Math.max(0, e.clientX / Math.max(1, window.innerWidth)));
+      kick();
+    }, { passive: true });
+    onScroll();
+    frame();
+  })();
 
   // ---------- banner: the picture follows the scroll for a while (slower than the page) ----------
   (function () {

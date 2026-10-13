@@ -550,6 +550,50 @@ function renderLangRow(ctx, path) {
     `<img src="${flagSrc(code)}" alt="" width="22" height="15"><span>${esc(label(code))}</span></a></li>`).join("") + "</ul>";
 }
 
+// Second level of the products dropdown: pointing at a manufacturer shows its ranges and models in a panel below the logos
+function megaPanel(ctx, k, id) {
+  const t = ctx.tr(k, ctx.lang) || ctx.tr(k, ctx.defaultLang) || {};
+  const name = navTitleOf(ctx, k);
+  const cardImg = new Map();
+  for (const b of flatBlocks(t.blocks || [])) {
+    if (b.type === "cards" || b.type === "modules") for (const it of b.items || []) if (it.href && it.image) cardImg.set(it.href.split(/[?#]/)[0], it.image);
+  }
+  // a range without a card on the brand page uses the first picture of its own page (not the small logo link)
+  const ownImage = (p) => {
+    const pt = ctx.tr(p, ctx.lang) || ctx.tr(p, ctx.defaultLang);
+    const im = pt && flatBlocks(pt.blocks || []).find((x) => (x.type === "image" && x.src && !x.href) || (x.type === "carousel" && x.items && x.items[0]));
+    return im ? (im.type === "image" ? im.src : im.items[0].src) : null;
+  };
+  const LIMIT = 6;
+  const cats = ctx.children(k).filter((c) => shown(ctx, c)).map((c) => {
+    const kids = ctx.children(c).filter((x) => shown(ctx, x));
+    const img = cardImg.get(c) || ownImage(c);
+    const lis = kids.slice(0, LIMIT).map((x) => `<li><a href="${esc(ctx.url(x))}">${esc(navTitleOf(ctx, x))}</a></li>`).join("") +
+      (kids.length > LIMIT ? `<li class="mega__more"><a href="${esc(ctx.url(c))}">${esc((ctx.ui.mega_more || "Visa alla ({n})").replace("{n}", String(kids.length)))}</a></li>` : "");
+    return `<div class="mega__cat${img ? " has-thumb" : ""}"><a class="mega__cat-title" href="${esc(ctx.url(c))}">` +
+      (img ? imgTag(ctx, img, "", { cls: "mega__thumb", sizes: "48px" }) : "") + `<span>${esc(navTitleOf(ctx, c))}</span></a>` + (lis ? `<ul>${lis}</ul>` : "") + "</div>";
+  }).join("");
+  const desc = String(t.description || "").replace(/<[^>]+>/g, "").trim();
+  // one tidy sentence: the first sentence if it is short, else cut back to the last comma (or last whole word)
+  // and never end on a dangling little word. Descriptions that were cut off with an ellipsis are treated the same way.
+  const cut = (txt) => {
+    let x = txt.replace(/(\.\.\.|…)$/, "").trim();
+    const comma = Math.max(x.lastIndexOf(","), x.lastIndexOf(";"));
+    if (comma > x.length * 0.45) x = x.slice(0, comma);
+    x = x.replace(/(\s+(?:\S{1,3}|och|med|för|som|till|från|inom|eller|samt|and|for|with|from|that|their|which|into|para|con|del|desde|como|sobre|entre|til|fra))+$/i, "").replace(/[,;:.]$/, "");
+    return x + "…";
+  };
+  const first = (desc.match(/^.{20,200}?[.!?](\s|$)/) || [""])[0].trim();
+  let short = first || desc;
+  if (/(\.\.\.|…)$/.test(short)) short = cut(short);
+  else if (short.length > 190) short = cut(short.slice(0, short.lastIndexOf(" ", 160)));
+  return `<section class="mega__panel" id="${id}" aria-label="${esc(name)}">` +
+    `<div class="mega__intro"><p class="mega__kicker">${esc(ctx.ui.mega_brand || "Tillverkare")}</p><a class="mega__name" href="${esc(ctx.url(k))}">${esc(name)}</a>` +
+    (short ? `<p class="mega__desc">${esc(short)}</p>` : "") +
+    `<a class="btn btn--sm mega__profile" href="${esc(ctx.url(k))}"><span>${esc((ctx.ui.mega_all || "Hela {name}").replace("{name}", name))}</span>${ICON.arrow}</a></div>` +
+    (cats ? `<div class="mega__cats">${cats}</div>` : "") + "</section>";
+}
+
 function renderHeader(ctx, current) {
   const site = ctx.site;
   const navPaths = (site.nav && site.nav.length ? site.nav : []).filter((p) => ctx.pages.has(p) && shown(ctx, p));
@@ -561,16 +605,17 @@ function renderHeader(ctx, current) {
     if (!kids.length || !(site.megaMenu !== false)) return `<li class="nav__item${active ? " is-active" : ""}">${link}</li>`;
     // dropdown = the brand logos straight away (a row that follows the mouse sideways), no section label
     const logos = brandLogoMap(ctx, p);
-    const tiles = kids.map((k) => {
+    const tiles = kids.map((k, n) => {
       const src = (ctx.pages.get(k) && ctx.pages.get(k).logo) || logos.get(k);
       const name = navTitleOf(ctx, k);
-      return `<li><a class="logorow__item" href="${esc(ctx.url(k))}">` +
+      return `<li><a class="logorow__item" href="${esc(ctx.url(k))}" data-panel="mp-${n}" aria-describedby="mp-${n}">` +
         (src ? `<span class="logorow__img">${imgTag(ctx, src, name, { cls: "logorow__logo", sizes: "160px" })}</span>` : "") +
         `<span class="logorow__name">${esc(name)}</span></a></li>`;
     }).join("");
     return `<li class="nav__item nav__item--mega${active ? " is-active" : ""}">${link}` +
       `<button class="nav__toggle" type="button" aria-expanded="false" aria-label="${esc(ctx.ui.submenu || "Visa undermeny")}: ${esc(label)}">${ICON.chevron}</button>` +
-      `<div class="mega mega--logos"><div class="container"><ul class="logorow" data-scrub>${tiles}</ul></div></div></li>`;
+      `<div class="mega mega--logos"><div class="container"><ul class="logorow">${tiles}</ul></div>` +
+      `<div class="mega__stage"><div class="container mega__panels">${kids.map((k, n) => megaPanel(ctx, k, `mp-${n}`)).join("")}</div></div></div></li>`;
   }).join("");
   return `<header class="site-header" data-header><div class="container site-header__inner">` +
     `<a class="logo" href="${esc(ctx.url("/"))}" aria-label="${esc(site.name)}, ${esc(ctx.ui.home || "Startsida")}"><img src="/assets/brand/logo.svg" alt="${esc(site.name)}" width="200" height="32"></a>` +
@@ -623,7 +668,7 @@ function renderCallBar(ctx) {
   const phones = (ctx.site.contact || {}).phones || [];
   const p = phones.find((x) => /^\s*(\+?46|0)\s*-?\s*7/.test(x.value || "")) || phones.find((x) => /mobil|mobile|móvil/i.test(x.label || "")) || phones[0];
   if (!p) return "";
-  return `<div class="callbar"><a class="callbar__link" href="${esc(telHref(p.value))}">${ICON.phone}<span class="callbar__text">${esc(ctx.ui.call_us || "Ring oss")}</span><span class="callbar__num">${esc(p.value)}</span></a></div>`;
+  return `<div class="callbar" data-callbar><span class="callbar__fire" aria-hidden="true"><span class="callbar__flow"></span><span class="callbar__blob b1"></span><span class="callbar__blob b2"></span><span class="callbar__blob b3"></span><span class="callbar__glow"><i></i></span></span><a class="callbar__link" href="${esc(telHref(p.value))}">${ICON.phone}<span class="callbar__text">${esc(ctx.ui.call_us || "Ring oss")}</span><span class="callbar__num">${esc(p.value)}</span></a></div>`;
 }
 
 function renderFooter(ctx) {

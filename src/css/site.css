@@ -25,6 +25,7 @@
   --maxw: 1200px;
   --header-h: 66px;
   --radius: 3px;
+  --tile-grad: linear-gradient(180deg, #fff 0%, #f7f5f2 100%);
   --shadow: 0 1px 2px rgba(35, 31, 32, .06), 0 10px 30px rgba(35, 31, 32, .10);
   --font: "Montserrat", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
@@ -93,7 +94,8 @@ a:hover { text-decoration-thickness: 2px; }
 .nav__item:hover > a::after, .nav__item.is-active > a::after { transform: scaleX(1); }
 .nav__toggle { background: none; border: 0; padding: 0 .75rem 0 .15rem; cursor: pointer; color: inherit; display: flex; align-items: center; }
 .nav__toggle svg { transition: transform .2s; }
-.nav__item--mega:hover .nav__toggle svg, .nav__item--mega.is-open .nav__toggle svg { transform: rotate(180deg); }
+.nav__item--mega.is-open .nav__toggle svg { transform: rotate(180deg); }
+@media (hover: hover) { .nav__item--mega:hover .nav__toggle svg { transform: rotate(180deg); } }
 
 /* mega menu */
 .mega { position: absolute; left: 0; right: 0; top: 100%; background: #fff; border-top: 3px solid var(--primary); box-shadow: var(--shadow); display: none; max-height: calc(100vh - var(--header-h) - 20px); overflow: auto; }
@@ -116,6 +118,37 @@ a:hover { text-decoration-thickness: 2px; }
 .logorow__img { display: grid; place-items: center; width: 100%; height: 58px; }
 .logorow__logo { max-height: 54px; max-width: 124px; width: auto; height: auto; object-fit: contain; }
 .logorow__name { font-size: .78rem; font-weight: 600; color: var(--muted); text-align: center; }
+.logorow__logo { mix-blend-mode: multiply; }
+
+/* ---------- products menu: brand flyout (second level) ---------- */
+.logorow__item { position: relative; }
+.logorow__item.is-on { border-color: var(--primary); box-shadow: var(--shadow); transform: translateY(-2px); }
+.logorow__item.is-on::after { content: ""; position: absolute; left: -1px; right: -1px; bottom: -1px; height: 3px; background: var(--primary); }
+.mega--logos .container.mega__panels { padding-block: 0; }
+.mega__stage { display: grid; grid-template-rows: 0fr; background: var(--surface); border-top: 1px solid transparent; transition: grid-template-rows .24s ease, border-color .24s; }
+.mega--logos.has-panel .mega__stage { grid-template-rows: 1fr; border-top-color: var(--line); }
+.mega__stage > .mega__panels { min-height: 0; overflow: hidden; }
+.mega__panel { display: none; grid-template-columns: minmax(190px, 17rem) minmax(0, 1fr); gap: 1.5rem 3rem; padding-block: 1.4rem 1.7rem; min-height: 11.5rem; }
+.mega__panel.is-on { display: grid; animation: panelIn .18s ease-out; }
+@keyframes panelIn { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: none; } }
+.mega__kicker { margin: 0; font-size: .68rem; font-weight: 800; letter-spacing: .16em; text-transform: uppercase; color: var(--muted); }
+.mega__name { display: block; margin: .2rem 0 .55rem; font-size: 1.3rem; line-height: 1.2; font-weight: 700; color: var(--text); text-decoration: none; transition: color .15s; }
+.mega__name:hover, .mega__name:focus-visible { color: var(--primary); text-decoration: none; }
+.mega__name::after { content: ""; display: block; width: 2.2rem; height: 3px; margin-top: .5rem; background: var(--primary); }
+.mega__desc { margin: 0 0 1rem; font-size: .85rem; line-height: 1.55; color: var(--muted); }
+.mega__profile { max-width: 100%; }
+.mega__profile svg { transition: transform .2s; }
+.mega__profile:hover svg { transform: translateX(3px); }
+.mega__cats { display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 1rem 1.8rem; align-content: start; }
+.mega__cat-title { display: flex; align-items: center; gap: .65rem; margin: 0 -.45rem; padding: .35rem .45rem; border-radius: var(--radius); font-size: .9rem; font-weight: 700; line-height: 1.3; text-decoration: none; transition: background .12s; }
+.mega__cat-title:hover, .mega__cat-title:focus-visible { background: #fff; text-decoration: none; }
+.mega__thumb { flex: none; width: 46px; height: 46px; padding: 3px; object-fit: contain; background: var(--tile-grad); border: 1px solid var(--line); border-radius: 2px; mix-blend-mode: multiply; }
+.mega__cat ul { list-style: none; margin: .1rem 0 0; padding: 0; }
+.mega__cat.has-thumb ul { padding-left: calc(46px + .65rem); }
+.mega__cat li a { display: block; margin: 0 -.45rem; padding: .16rem .45rem; border-radius: 2px; font-size: .84rem; color: var(--muted); text-decoration: none; transition: background .12s, color .12s; }
+.mega__cat li a:hover, .mega__cat li a:focus-visible { background: #fff; color: var(--text); text-decoration: none; }
+.mega__more a { color: var(--text) !important; font-weight: 700; }
+.mega__more a::after { content: " \2192"; color: var(--primary); }
 
 .header-tools { display: flex; align-items: center; gap: .25rem; flex: none; }
 .icon-btn { width: 2.5rem; height: 2.5rem; display: grid; place-items: center; background: none; border: 0; border-radius: 50%; cursor: pointer; color: var(--text); }
@@ -245,8 +278,9 @@ li:first-child > .subnav__link--logo::after { left: 0; }
 .card:hover, .card:focus-within { box-shadow: var(--shadow); transform: translateY(-3px); border-color: #d6d1ca; }
 .card:hover::before, .card:focus-within::before { transform: scaleX(1); }
 .card__link { display: flex; flex-direction: column; width: 100%; text-decoration: none; }
-.card__media { display: block; aspect-ratio: 4 / 3; background: #fff; padding: 1.1rem 1.25rem; border-bottom: 1px solid var(--line); }
-.card__img { width: 100%; height: 100%; object-fit: contain; }
+.card__media { display: block; aspect-ratio: 4 / 3; background: var(--tile-grad); padding: 1.1rem 1.25rem; border-bottom: 1px solid var(--line); overflow: hidden; }
+.card__img { width: 100%; height: 100%; object-fit: contain; mix-blend-mode: multiply; transition: transform .35s ease; }
+.card:hover .card__img, .card:focus-within .card__img { transform: scale(1.04); }
 .card__body { display: flex; flex-direction: column; gap: .5rem; padding: 1.1rem 1.25rem 1.3rem; flex: 1; }
 .card__title { margin: 0; font-size: 1.02rem; line-height: 1.3; font-weight: 700; }
 .card__text { margin: 0; font-size: .88rem; color: var(--muted); line-height: 1.6; display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; overflow: hidden; }
@@ -269,8 +303,8 @@ li:first-child > .subnav__link--logo::after { left: 0; }
 .prose .modules > li { margin: 0; }
 .module { display: flex; flex-direction: column; min-width: 0; background: #fff; border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; transition: box-shadow .25s, border-color .25s; }
 .module:hover, .module:focus-within { box-shadow: var(--shadow); border-color: #d6d1ca; }
-.module__media { display: block; aspect-ratio: 1 / 1; padding: 1rem 1.1rem; background: #fff; border-bottom: 1px solid var(--line); }
-.module__img { width: 100%; height: 100%; object-fit: contain; display: block; }
+.module__media { display: block; aspect-ratio: 1 / 1; padding: 1rem 1.1rem; background: var(--tile-grad); border-bottom: 1px solid var(--line); }
+.module__img { width: 100%; height: 100%; object-fit: contain; display: block; mix-blend-mode: multiply; }
 .module__body { display: flex; flex-direction: column; gap: .55rem; flex: 1; padding: 1.1rem 1.25rem 1.3rem; }
 .module__title { margin: 0; font-size: 1.15rem; line-height: 1.25; font-weight: 700; }
 .module__title a { text-decoration: none; }
@@ -525,14 +559,40 @@ dialog.search::backdrop { background: rgba(35, 31, 32, .6); }
   .nav__item > a::after { display: none; }
   .nav__toggle { padding: 0 .5rem 0 1rem; }
   .mega { position: static; display: none; width: 100%; box-shadow: none; border: 0; border-top: 0; max-height: none; animation: none !important; }
-  .nav__item--mega:hover > .mega, .nav__item--mega:focus-within > .mega { display: none; }
+  .nav__item--mega:focus-within > .mega { display: none; }
+  /* a device that cannot hover (touch) opens the list with a tap only, so a finger that "sticks" in :hover never half-opens it;
+     with a mouse, pointing at the row is enough and keeps it open even while a link inside has focus */
+  @media (hover: none) { .nav__item--mega:hover > .mega { display: none; } }
+  @media (hover: hover) { .nav__item--mega.nav__item--mega:hover > .mega { display: block; } }
   .nav__item--mega.is-open > .mega { display: block; }
   .mega .container { width: 100%; }
   .mega__grid { grid-template-columns: 1fr 1fr; padding-block: .5rem 1rem; gap: 1rem 1.25rem; }
   .mega--logos .container { padding-block: .6rem 1rem; }
-  .logorow { flex-wrap: wrap; overflow: visible; gap: .6rem; }
-  .logorow > li { flex: 1 1 calc(50% - .6rem); }
-  .logorow__item { width: auto; }
+  /* manufacturers as a tidy list; the one you tap unfolds right under itself */
+  .mega__stage { display: none; }
+  .logorow { flex-direction: column; flex-wrap: nowrap; overflow: visible; gap: .5rem; padding: .2rem 0 .4rem; }
+  .logorow > li { flex: none; display: block; }
+  .logorow__item { flex-direction: row; justify-content: flex-start; gap: .9rem; width: 100%; min-height: 3.6rem; padding: .55rem .95rem; text-align: left; }
+  .logorow__item:hover, .logorow__item:focus-visible { transform: none; }
+  .logorow__item.is-on { transform: none; box-shadow: none; border-color: var(--primary); background: #fff6ea; }
+  .logorow__item.is-on::after { content: none; }
+  .logorow__img { flex: none; width: 4.6rem; height: 2.4rem; }
+  .logorow__logo { max-height: 2.2rem; max-width: 100%; }
+  .logorow__name { flex: 1; margin: 0; text-align: left; font-size: .9rem; color: var(--text); }
+  .logorow__item::before { content: ""; order: 3; flex: none; width: .55rem; height: .55rem; margin-right: .2rem; border-right: 2px solid var(--muted); border-bottom: 2px solid var(--muted); transform: rotate(45deg) translateY(-2px); transition: transform .2s; }
+  .logorow__item.is-on::before { transform: rotate(225deg) translateY(-1px); border-color: var(--primary); }
+  /* the unfolded manufacturer: its ranges first, the profile button closes the section */
+  .mega__panel { display: grid; grid-template-columns: 1fr; gap: .75rem; min-height: 0; padding: 0 0 0 1rem; margin: 0 0 0 .55rem; max-height: 0; overflow: hidden; opacity: 0; border-left: 3px solid var(--primary); visibility: hidden; transition: max-height .3s ease, opacity .2s, padding .3s, margin .3s, visibility 0s .3s; animation: none; }
+  .mega__panel.is-on { max-height: 70rem; opacity: 1; visibility: visible; padding-block: .85rem 1rem; margin-block: .1rem .55rem; animation: none; transition-delay: 0s; }
+  .mega__kicker, .mega__name, .mega__desc { display: none; }
+  .mega__intro { order: 2; }
+  .mega__cats { order: 1; grid-template-columns: 1fr; gap: .7rem; }
+  .mega__intro .btn { width: 100%; justify-content: center; min-height: 2.8rem; }
+  .mega__cat-title { min-height: 3rem; margin: 0; padding: .25rem 0; font-size: .92rem; }
+  .mega__cat-title:hover { background: none; }
+  .mega__thumb { width: 40px; height: 40px; }
+  /* on a phone only the ranges are listed; the models are one tap further, on the range page */
+  .mega__cat ul { display: none; }
   .logo img { width: 164px; }
 }
 @media (max-width: 480px) { .mega__grid { grid-template-columns: 1fr; } .container { width: min(100% - 2rem, var(--maxw)); } }
@@ -556,14 +616,38 @@ dialog.search::backdrop { background: rgba(35, 31, 32, .6); }
 /* sticky call bar (phones only) */
 .callbar { display: none; }
 @media (max-width: 760px) {
-  .callbar { display: block; position: sticky; bottom: 0; z-index: 55; background: var(--primary); box-shadow: 0 -2px 12px rgba(0, 0, 0, .18); padding-bottom: env(safe-area-inset-bottom); }
-  .callbar__link { display: flex; align-items: center; justify-content: center; gap: .6rem; min-height: 52px; padding: .5rem 1rem; color: var(--dark); font-weight: 700; text-decoration: none; }
+  /* without script the bar simply sits at the bottom; with script (.is-live) it slides in as the banner scrolls away */
+  .callbar { display: block; position: fixed; left: 0; right: 0; bottom: 0; z-index: 55; overflow: hidden; background: var(--primary); box-shadow: 0 -2px 14px rgba(0, 0, 0, .2); padding-bottom: env(safe-area-inset-bottom); }
+  .callbar.is-live { transform: translate3d(0, 110%, 0); will-change: transform; }
+  .callbar__fire { position: absolute; inset: 0; overflow: hidden; pointer-events: none; }
+  /* base: amber to orange; soft blobs drift slowly on top like wax in a lamp (no hard edges) */
+  .callbar__flow { position: absolute; inset: 0 -50%; background: linear-gradient(100deg, #f8a21e 0%, #f37d03 22%, #f58c10 40%, #fbb034 58%, #f37d03 78%, #f8a21e 100%); animation: cbDrift 20s ease-in-out infinite alternate; }
+  .callbar__blob { position: absolute; border-radius: 50%; will-change: transform; }
+  .callbar__blob.b1 { top: -70%; left: -10%; width: 58%; height: 240%; background: radial-gradient(closest-side, rgba(255, 214, 110, .95), rgba(255, 190, 80, .5) 55%, rgba(255, 170, 60, 0) 100%); animation: cbBlobA 9s ease-in-out infinite alternate; }
+  .callbar__blob.b2 { top: -60%; left: 35%; width: 50%; height: 230%; background: radial-gradient(closest-side, rgba(240, 100, 20, .85), rgba(243, 125, 3, .4) 55%, rgba(243, 125, 3, 0) 100%); animation: cbBlobB 12s ease-in-out -4s infinite alternate; }
+  .callbar__blob.b3 { top: -80%; left: 62%; width: 46%; height: 250%; background: radial-gradient(closest-side, rgba(255, 232, 150, .9), rgba(255, 205, 100, .45) 55%, rgba(255, 190, 80, 0) 100%); animation: cbBlobC 15s ease-in-out -7s infinite alternate; }
+  .callbar__glow { position: absolute; top: -45%; left: 0; width: 56%; height: 190%; will-change: transform; }
+  .callbar__glow i { position: absolute; inset: 0; background: radial-gradient(ellipse at center, rgba(255, 236, 160, .95) 0%, rgba(255, 190, 80, .4) 42%, rgba(255, 160, 60, 0) 70%); animation: cbFlicker 3.2s ease-in-out infinite alternate; }
+  .callbar:not(.is-shown) .callbar__flow, .callbar:not(.is-shown) .callbar__blob, .callbar:not(.is-shown) .callbar__glow i { animation-play-state: paused; }
+  @keyframes cbDrift { from { transform: translate3d(0, 0, 0); } to { transform: translate3d(-22%, 0, 0); } }
+  @keyframes cbBlobA { 0% { transform: translate3d(-8%, 4%, 0) scale(.9, 1); } 50% { transform: translate3d(60%, -6%, 0) scale(1.2, .95); } 100% { transform: translate3d(140%, 5%, 0) scale(.95, 1.1); } }
+  @keyframes cbBlobB { 0% { transform: translate3d(70%, -5%, 0) scale(1.1, 1); } 50% { transform: translate3d(10%, 7%, 0) scale(.85, 1.15); } 100% { transform: translate3d(-70%, -3%, 0) scale(1.15, .95); } }
+  @keyframes cbBlobC { 0% { transform: translate3d(-120%, 6%, 0) scale(1, 1.05); } 50% { transform: translate3d(-40%, -6%, 0) scale(1.25, .9); } 100% { transform: translate3d(30%, 4%, 0) scale(.9, 1.1); } }
+  @keyframes cbFlicker { 0% { opacity: .5; transform: scale(.92); } 40% { opacity: .95; transform: scale(1.06); } 70% { opacity: .7; transform: scale(.98); } 100% { opacity: .9; transform: scale(1.03); } }
+  .callbar__link { position: relative; z-index: 1; display: flex; align-items: center; justify-content: center; gap: .6rem; min-height: 52px; padding: .5rem 1rem; color: var(--dark); font-weight: 700; text-decoration: none; }
+  body:has(.callbar) .site-footer { padding-bottom: calc(52px + env(safe-area-inset-bottom)); }
   .callbar__text { font-size: .95rem; }
   .callbar__num { font-size: .95rem; font-weight: 500; opacity: .95; }
   /* the bar is the last thing in the page: it floats at the bottom of the screen while scrolling and
      rests directly under the footer at the end, so there is never an empty strip below it */
   body { display: flex; flex-direction: column; min-height: 100vh; min-height: 100dvh; }
   body > main { flex: 1 0 auto; }
+}
+
+/* touch screens keep :hover after a tap; no lingering lift or zoom on cards and tiles */
+@media (hover: none) {
+  .card:hover, .module:hover, .logorow__item:hover, .social__icon:hover { transform: none; }
+  .card:hover .card__img { transform: none; }
 }
 
 @media print {
