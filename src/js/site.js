@@ -159,6 +159,13 @@
       warmed = true;
       panels.forEach(function (p) { [].forEach.call(p.querySelectorAll("img"), function (im) { im.loading = "eager"; }); });
     }
+    // on a wide screen they are fetched in a quiet moment after the page has loaded (small files, cached for every other page)
+    var lowData = navigator.connection && (navigator.connection.saveData || /(^|-)2g$/.test(navigator.connection.effectiveType || ""));
+    if (!lowData && !small.matches) {
+      var later = function () { if (document.hidden) { document.addEventListener("visibilitychange", later, { once: true }); } else warm(); };
+      var kick = function () { if (window.requestIdleCallback) window.requestIdleCallback(later, { timeout: 5000 }); else setTimeout(later, 2500); };
+      if (document.readyState === "complete") kick(); else window.addEventListener("load", kick, { once: true });
+    }
     var item = mega.closest(".nav__item");
     if (item) {
       ["pointerenter", "focusin", "touchstart"].forEach(function (ev) { item.addEventListener(ev, warm, { once: true, passive: true }); });
@@ -391,6 +398,119 @@
       input.focus();
     });
   }
+
+  // ---------- preloading: the page you are most likely to open next is already in the cache ----------
+  // Pointing at a link (or touching it) fetches that page in the background, together with its first pictures;
+  // pointing at a manufacturer in the products menu also fetches that manufacturer's range pages. After the page
+  // has loaded, the main menu pages and the cards that stay in view are fetched in quiet moments. Same site only,
+  // nothing for visitors who asked their browser to save data, small fixed budget per page view.
+  (function () {
+    var conn = navigator.connection || {};
+    if (conn.saveData || /(^|-)2g$/.test(conn.effectiveType || "") || !window.fetch || !window.URL) return;
+    var seen = {}, queue = [], active = 0, spent = 0, BUDGET = 28, PARALLEL = 2;
+    var here = location.href.split("#")[0];
+
+    function target(a) {
+      if (!a || !a.getAttribute) return null;
+      var raw = a.getAttribute("href");
+      if (!raw || raw.charAt(0) === "#" || a.hasAttribute("download") || (a.target && a.target !== "_self")) return null;
+      var u;
+      try { u = new URL(a.href, location.href); } catch (e) { return null; }
+      if (u.origin !== location.origin || !/^https?:$/.test(u.protocol)) return null;
+      if (/\.[a-z0-9]{2,5}$/i.test(u.pathname) && !/\.html?$/i.test(u.pathname)) return null; // pdf, images, archives
+      if (/\/(cms|admin)(\/|$)/.test(u.pathname)) return null;
+      u.hash = "";
+      return u.href === here ? null : u.href;
+    }
+    // the first pictures of the fetched page (banner first), picked with the same srcset/sizes the page itself uses
+    function warmImages(html, base) {
+      var doc;
+      try { doc = new DOMParser().parseFromString(html, "text/html"); } catch (e) { return; }
+      var list = doc.querySelectorAll(".hero img, main img"), n = 0, done = {};
+      for (var i = 0; i < list.length && n < 3; i++) {
+        var im = list[i], src = im.getAttribute("src");
+        if (!src || /^data:/.test(src) || done[src] || im.closest(".site-header, .mega, .site-footer")) continue;
+        done[src] = 1; n++;
+        var p = new Image();
+        p.decoding = "async";
+        if (im.getAttribute("sizes")) p.sizes = im.getAttribute("sizes");
+        if (im.getAttribute("srcset")) p.srcset = im.getAttribute("srcset");
+        p.src = new URL(src, base).href;
+      }
+    }
+    function pump() {
+      while (active < PARALLEL && queue.length) {
+        var job = queue.shift();
+        active++;
+        (function (j) {
+          fetch(j.url, { credentials: "same-origin", priority: "low" })
+            .then(function (r) { return r.ok && /text\/html/.test(r.headers.get("content-type") || "") ? r.text() : null; })
+            .then(function (html) { if (html && j.img) warmImages(html, j.url); })
+            .catch(function () { /* offline: nothing lost */ })
+            .then(function () { active--; pump(); });
+        })(job);
+      }
+    }
+    function fetchPage(url, withImages) {
+      if (!url || seen[url] || spent >= BUDGET || document.hidden) return;
+      seen[url] = 1; spent++;
+      queue.push({ url: url, img: withImages !== false });
+      pump();
+    }
+    // a manufacturer in the menu: its page now, its ranges a moment later
+    function menuIntent(a) {
+      var id = a.getAttribute("data-panel"), panel = id && document.getElementById(id);
+      if (!panel) return;
+      [].slice.call(panel.querySelectorAll(".mega__cat-title")).slice(0, 4).forEach(function (c, i) {
+        setTimeout(function () { fetchPage(target(c), i === 0); }, 250 + i * 150);
+      });
+    }
+    var timer = 0, last = null;
+    function intent(a, delay) {
+      var url = target(a);
+      if (!url) return;
+      clearTimeout(timer);
+      last = a;
+      timer = setTimeout(function () { fetchPage(url, true); if (a.hasAttribute("data-panel")) menuIntent(a); }, delay);
+    }
+    function cancel(a) { if (a === last) { clearTimeout(timer); last = null; } }
+    var link = function (e) { return e.target && e.target.closest ? e.target.closest("a[href]") : null; };
+    document.addEventListener("pointerover", function (e) {
+      if (e.pointerType === "touch") return;
+      var a = link(e); if (a) intent(a, 70);
+    }, { passive: true });
+    document.addEventListener("pointerout", function (e) { var a = link(e); if (a) cancel(a); }, { passive: true });
+    document.addEventListener("focusin", function (e) { var a = link(e); if (a) intent(a, 120); });
+    // touch: the finger is already down, the page can start loading now
+    document.addEventListener("touchstart", function (e) { var a = link(e); if (a) intent(a, 0); }, { passive: true });
+    // opening the products list: its own page is the most likely next step after the brand pages
+    document.querySelectorAll(".nav__item--mega").forEach(function (li) {
+      var a = li.querySelector(":scope > a");
+      ["pointerenter", "focusin"].forEach(function (ev) { li.addEventListener(ev, function () { setTimeout(function () { fetchPage(target(a), false); }, 150); }, { once: true, passive: true }); });
+    });
+
+    // quiet moment after load: the main menu pages, then cards that have been in view for a moment
+    function idle(fn) { if (window.requestIdleCallback) window.requestIdleCallback(fn, { timeout: 6000 }); else setTimeout(fn, 3000); }
+    function afterLoad() {
+      idle(function () {
+        [].forEach.call(document.querySelectorAll(".nav__list > .nav__item > a"), function (a, i) { setTimeout(function () { fetchPage(target(a), false); }, i * 400); });
+      });
+      if (!("IntersectionObserver" in window)) return;
+      var dwell = new WeakMap();
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (en) {
+          var a = en.target;
+          if (en.isIntersecting) {
+            dwell.set(a, setTimeout(function () { io.unobserve(a); fetchPage(target(a), false); }, 900));
+          } else { clearTimeout(dwell.get(a)); }
+        });
+      }, { threshold: 0.6 });
+      idle(function () {
+        [].slice.call(document.querySelectorAll("main .card__link, main .module a[href], .subnav a[href]")).slice(0, 40).forEach(function (a) { if (target(a)) io.observe(a); });
+      });
+    }
+    if (document.readyState === "complete") afterLoad(); else window.addEventListener("load", afterLoad, { once: true });
+  })();
 
   // ---------- consent + analytics (off unless configured; nothing stored otherwise) ----------
   var a = cfg.analytics;
