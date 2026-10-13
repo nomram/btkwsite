@@ -144,6 +144,14 @@
       tiles.forEach(function (t) { var on = t === tile; t.classList.toggle("is-on", on); t.setAttribute("aria-expanded", on ? "true" : "false"); });
       panels.forEach(function (p) { p.classList.toggle("is-on", p.id === id); });
       mega.classList.add("has-panel");
+      // a description that is cut off can be read in full by pointing at it (or tabbing to it)
+      var opened = document.getElementById(id), desc = opened && opened.querySelector(".mega__desc");
+      if (desc && !desc.hasAttribute("data-checked")) {
+        requestAnimationFrame(function () {
+          desc.setAttribute("data-checked", "");
+          if (desc.scrollHeight > desc.clientHeight + 1) { desc.setAttribute("data-cut", ""); desc.setAttribute("tabindex", "0"); }
+        });
+      }
     }
     // back to the plain row of logos when the menu is left or closed
     function reset() {

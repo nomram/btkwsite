@@ -135,7 +135,10 @@ a:hover { text-decoration-thickness: 2px; }
 .mega__name { display: block; margin: .2rem 0 .55rem; font-size: 1.3rem; line-height: 1.2; font-weight: 700; color: var(--text); text-decoration: none; transition: color .15s; }
 .mega__name:hover, .mega__name:focus-visible { color: var(--primary); text-decoration: none; }
 .mega__name::after { content: ""; display: block; width: 2.2rem; height: 3px; margin-top: .5rem; background: var(--primary); }
-.mega__desc { margin: 0; font-size: .85rem; line-height: 1.55; color: var(--muted); }
+.mega__desc { margin: 0; font-size: .78rem; line-height: 1.5; color: var(--muted); display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; line-clamp: 3; overflow: hidden; transition: color .15s, font-size .15s; }
+.mega__desc[data-cut] { cursor: default; border-radius: 2px; }
+.mega__desc[data-cut]:hover, .mega__desc[data-cut]:focus-visible { display: block; -webkit-line-clamp: unset; line-clamp: unset; overflow: visible; font-size: .86rem; color: var(--text); }
+.mega__desc[data-cut]:focus-visible { outline-offset: 3px; }
 .mega__profile { max-width: 100%; margin: 0 0 .9rem; }
 /* a manufacturer without ranges: text on the left, the button to its right on the same line */
 .mega__panel--solo { grid-template-columns: minmax(0, 1fr); min-height: 0; }
@@ -147,14 +150,12 @@ a:hover { text-decoration-thickness: 2px; }
 .mega__profile:hover svg { transform: translateX(3px); }
 .mega__cats { display: grid; grid-template-columns: repeat(4, minmax(0, 13rem)); gap: 1rem 1.4rem; align-content: start; }
 .mega__cat { min-width: 0; }
-/* small laptops: no room for the little pictures next to four columns */
-@media (min-width: 981px) and (max-width: 1140px) { .mega__panel .mega__thumb { display: none; } .mega__panel .mega__cat.has-thumb ul { padding-left: 0; } }
 .mega__cat-title span { min-width: 0; overflow-wrap: anywhere; }
-.mega__cat-title { display: flex; align-items: center; gap: .65rem; margin: 0 -.45rem; padding: .35rem .45rem; border-radius: var(--radius); font-size: .86rem; font-weight: 700; line-height: 1.3; text-decoration: none; transition: background .12s; }
+.mega__cat-title { display: flex; align-items: center; gap: .6rem; margin: 0 -.45rem; padding: .35rem .45rem; border-radius: var(--radius); font-size: .84rem; font-weight: 700; line-height: 1.3; text-decoration: none; transition: background .12s; }
 .mega__cat-title:hover, .mega__cat-title:focus-visible { background: #fff; text-decoration: none; }
-.mega__thumb { flex: none; width: 40px; height: 40px; padding: 3px; object-fit: contain; background: var(--tile-grad); border: 1px solid var(--line); border-radius: 2px; mix-blend-mode: multiply; }
+.mega__thumb { flex: none; width: 44px; height: 44px; padding: 3px; object-fit: contain; background: var(--tile-grad); border: 1px solid var(--line); border-radius: 2px; mix-blend-mode: multiply; }
 .mega__cat ul { list-style: none; margin: .1rem 0 0; padding: 0; }
-.mega__cat.has-thumb ul { padding-left: calc(40px + .65rem); }
+.mega__cat.has-thumb ul { padding-left: calc(44px + .6rem); }
 .mega__cat li a { display: block; margin: 0 -.45rem; padding: .16rem .45rem; border-radius: 2px; font-size: .84rem; color: var(--muted); text-decoration: none; transition: background .12s, color .12s; }
 .mega__cat li a:hover, .mega__cat li a:focus-visible { background: #fff; color: var(--text); text-decoration: none; }
 .mega__more a { color: var(--text) !important; font-weight: 700; }
@@ -611,6 +612,13 @@ dialog.search::backdrop { background: rgba(35, 31, 32, .6); }
 }
 @media (max-width: 480px) { .mega__grid { grid-template-columns: 1fr; } .container { width: min(100% - 2rem, var(--maxw)); } }
 
+@media (min-width: 981px) and (max-width: 1140px) {
+  .mega__panel { grid-template-columns: minmax(150px, 12rem) minmax(0, 1fr); gap: 1.2rem 1.6rem; }
+  .mega__cats { gap: 1rem 1rem; }
+  .mega__panel .mega__thumb { width: 34px; height: 34px; }
+  .mega__panel .mega__cat.has-thumb ul { padding-left: calc(34px + .5rem); }
+  .mega__panel .mega__cat-title { gap: .5rem; font-size: .78rem; }
+}
 @media (max-width: 980px) {
   .mega__panel--solo .mega__intro { display: block; }
   .mega__profile, .mega__panel--solo .mega__profile { margin: 0; }

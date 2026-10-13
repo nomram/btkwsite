@@ -583,10 +583,10 @@ function megaPanel(ctx, k, id) {
     x = x.replace(/(\s+(?:\S{1,3}|och|med|för|som|till|från|inom|eller|samt|and|for|with|from|that|their|which|into|para|con|del|desde|como|sobre|entre|til|fra))+$/i, "").replace(/[,;:.]$/, "");
     return x + "…";
   };
-  const first = (desc.match(/^.{20,120}?[.!?](\s|$)/) || [""])[0].trim();
+  const first = (desc.match(/^.{20,260}?[.!?](\s|$)/) || [""])[0].trim();
   let short = first || desc;
   if (/(\.\.\.|…)$/.test(short)) short = cut(short);
-  else if (short.length > 112) short = cut(short.slice(0, short.lastIndexOf(" ", 100)));
+  else if (short.length > 260) short = cut(short.slice(0, short.lastIndexOf(" ", 240)));
   return `<section class="mega__panel${cats ? "" : " mega__panel--solo"}" id="${id}" aria-label="${esc(name)}">` +
     `<div class="mega__intro"><p class="mega__kicker">${esc(ctx.ui.mega_brand || "Tillverkare")}</p><a class="mega__name" href="${esc(ctx.url(k))}">${esc(name)}</a>` +
     `<a class="btn btn--sm mega__profile" href="${esc(ctx.url(k))}"><span>${esc((ctx.ui.mega_all || "Hela {name}").replace("{name}", name))}</span>${ICON.arrow}</a>` +
