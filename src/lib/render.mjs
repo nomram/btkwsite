@@ -550,6 +550,13 @@ function renderLangRow(ctx, path) {
     `<img src="${flagSrc(code)}" alt="" width="22" height="15"><span>${esc(label(code))}</span></a></li>`).join("") + "</ul>";
 }
 
+// Range picture in the products panel: the baked square from the build when there is one (no blending, nothing to flash)
+function menuThumb(ctx, src) {
+  const info = ctx.image(src);
+  if (info && info.menu) return `<img class="mega__thumb" src="/assets/img/${esc(info.name)}-menu.webp" width="48" height="48" alt="" loading="lazy" decoding="async">`;
+  return imgTag(ctx, src, "", { cls: "mega__thumb", sizes: "48px" });
+}
+
 // Second level of the products dropdown: pointing at a manufacturer shows its ranges and models in a panel below the logos
 function megaPanel(ctx, k, id) {
   const t = ctx.tr(k, ctx.lang) || ctx.tr(k, ctx.defaultLang) || {};
@@ -571,7 +578,7 @@ function megaPanel(ctx, k, id) {
     const lis = kids.slice(0, LIMIT).map((x) => `<li><a href="${esc(ctx.url(x))}">${esc(navTitleOf(ctx, x))}</a></li>`).join("") +
       (kids.length > LIMIT ? `<li class="mega__more"><a href="${esc(ctx.url(c))}">${esc((ctx.ui.mega_more || "Visa alla ({n})").replace("{n}", String(kids.length)))}</a></li>` : "");
     return `<div class="mega__cat${img ? " has-thumb" : ""}"><a class="mega__cat-title" href="${esc(ctx.url(c))}">` +
-      (img ? imgTag(ctx, img, "", { cls: "mega__thumb", sizes: "48px" }) : "") + `<span>${esc(navTitleOf(ctx, c))}</span></a>` + (lis ? `<ul>${lis}</ul>` : "") + "</div>";
+      (img ? menuThumb(ctx, img) : "") + `<span>${esc(navTitleOf(ctx, c))}</span></a>` + (lis ? `<ul>${lis}</ul>` : "") + "</div>";
   }).join("");
   const desc = String(t.description || "").replace(/<[^>]+>/g, "").trim();
   // one tidy sentence: the first sentence if it is short, else cut back to the last comma (or last whole word)

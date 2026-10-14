@@ -71,7 +71,10 @@ const IMG_SRC = path.join(ROOT, "assets-src/img");
 const IMG_OUT = path.join(DIST, "assets/img");
 const CACHE = path.join(ROOT, ".cache/img");
 const WIDTHS = [480, 800, 1280, 1920];
-const imageInfo = new Map(); // "/assets/img/name.ext" -> {name, ext, w, h, widths}
+const imageInfo = new Map(); // "/assets/img/name.ext" -> {name, ext, w, h, widths, menu}
+// Products-menu pictures are baked ahead of time: the photo is fitted into a square and already multiplied onto the
+// panel colour, so the browser has nothing to blend and nothing to flash white (see megaPanel in render.mjs).
+const MENU_THUMB = { inner: 88, pad: 4, mul: [244 / 255, 242 / 255, 239 / 255], bg: "#f4f2ef" };
 
 async function processImages() {
   if (!exists(IMG_SRC)) return;
@@ -110,13 +113,28 @@ async function processImages() {
         }
         idx[f] = rec;
       }
-      imageInfo.set(`/assets/img/${f}`, { name, ext, w: rec.w, h: rec.h, widths: rec.widths });
+      if (sharp && ["webp", "jpg", "jpeg", "png"].includes(ext)) {
+        const mfile = path.join(CACHE, `${name}-menu.webp`);
+        if (!rec.menu || !exists(mfile)) {
+          try {
+            await sharp(src).flatten({ background: "#ffffff" })
+              .resize(MENU_THUMB.inner, MENU_THUMB.inner, { fit: "contain", background: "#ffffff" })
+              .linear(MENU_THUMB.mul, [0, 0, 0])
+              .extend({ top: MENU_THUMB.pad, bottom: MENU_THUMB.pad, left: MENU_THUMB.pad, right: MENU_THUMB.pad, background: MENU_THUMB.bg })
+              .webp({ quality: 82 }).toFile(mfile);
+            rec.menu = 1; idx[f] = rec; made++;
+          } catch { rec.menu = 0; }
+        }
+      }
+      imageInfo.set(`/assets/img/${f}`, { name, ext, w: rec.w, h: rec.h, widths: rec.widths, menu: !!rec.menu });
       // masters + variants to dist
       fs.copyFileSync(src, path.join(IMG_OUT, f));
       for (const w of rec.widths) {
         const c = path.join(CACHE, `${name}-${w}.webp`);
         if (exists(c)) fs.copyFileSync(c, path.join(IMG_OUT, `${name}-${w}.webp`));
       }
+      const mc = path.join(CACHE, `${name}-menu.webp`);
+      if (rec.menu && exists(mc)) fs.copyFileSync(mc, path.join(IMG_OUT, `${name}-menu.webp`));
     }
   }
   await Promise.all(Array.from({ length: 4 }, worker));

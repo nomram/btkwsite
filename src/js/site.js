@@ -173,7 +173,13 @@
     function warm() {
       if (warmed) return;
       warmed = true;
-      panels.forEach(function (p) { [].forEach.call(p.querySelectorAll("img"), function (im) { im.loading = "eager"; }); });
+      panels.forEach(function (p) {
+        [].forEach.call(p.querySelectorAll("img"), function (im) {
+          im.loading = "eager";
+          // decoded now, so showing the panel later paints them at once
+          if (im.decode) im.decode().catch(function () { /* not decodable yet: it will paint when loaded */ });
+        });
+      });
     }
     // on a wide screen they are fetched in a quiet moment after the page has loaded (small files, cached for every other page)
     var lowData = navigator.connection && (navigator.connection.saveData || /(^|-)2g$/.test(navigator.connection.effectiveType || ""));

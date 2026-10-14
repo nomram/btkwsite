@@ -118,7 +118,6 @@ a:hover { text-decoration-thickness: 2px; }
 .logorow__img { display: grid; place-items: center; width: 100%; min-width: 0; height: 40px; overflow: hidden; }
 .logorow__logo { max-height: 36px; max-width: min(88px, 100%); width: auto; height: auto; object-fit: contain; }
 .logorow__name { max-width: 100%; font-size: .72rem; font-weight: 600; line-height: 1.3; color: var(--muted); text-align: center; overflow-wrap: anywhere; }
-.logorow__logo { mix-blend-mode: multiply; }
 
 /* ---------- products menu: brand flyout (second level) ---------- */
 .logorow__item { position: relative; }
@@ -161,7 +160,7 @@ a:hover { text-decoration-thickness: 2px; }
 .mega__cat-title span { min-width: 0; overflow-wrap: anywhere; }
 .mega__cat-title { display: flex; align-items: center; gap: .6rem; margin: 0 -.45rem; padding: .35rem .45rem; border-radius: var(--radius); font-size: .84rem; font-weight: 700; line-height: 1.3; text-decoration: none; transition: background .12s; }
 .mega__cat-title:hover, .mega__cat-title:focus-visible { background: #fff; text-decoration: none; }
-.mega__thumb { flex: none; width: 44px; height: 44px; padding: 3px; object-fit: contain; background: var(--tile-grad); border: 1px solid var(--line); border-radius: 2px; mix-blend-mode: multiply; }
+.mega__thumb { flex: none; width: 44px; height: 44px; object-fit: contain; background: var(--surface); border: 1px solid var(--line); border-radius: 2px; }
 .mega__cat ul { list-style: none; margin: .1rem 0 0; padding: 0; }
 .mega__cat.has-thumb ul { padding-left: calc(44px + .6rem); }
 .mega__cat li a { display: block; margin: 0 -.45rem; padding: .16rem .45rem; border-radius: 2px; font-size: .84rem; color: var(--muted); text-decoration: none; transition: background .12s, color .12s; }
@@ -297,8 +296,12 @@ li:first-child > .subnav__link--logo::after { left: 0; }
 .card:hover, .card:focus-within { box-shadow: var(--shadow); transform: translateY(-3px); border-color: #d6d1ca; }
 .card:hover::before, .card:focus-within::before { transform: scaleX(1); }
 .card__link { display: flex; flex-direction: column; width: 100%; text-decoration: none; }
-.card__media { display: block; aspect-ratio: 4 / 3; background: var(--tile-grad); padding: 1.1rem 1.25rem; border-bottom: 1px solid var(--line); overflow: hidden; }
-.card__img { width: 100%; height: 100%; object-fit: contain; mix-blend-mode: multiply; transition: transform .35s ease; }
+/* The tile wash is multiplied over the picture by a still overlay, not by the picture itself: a picture that is blending
+   and animating (hover zoom) is re-composited when the animation starts, which showed up as a white flash. */
+.card__media, .module__media { position: relative; }
+.card__media::after, .module__media::after { content: ""; position: absolute; inset: 0; background: var(--tile-grad); mix-blend-mode: multiply; pointer-events: none; }
+.card__media { display: block; aspect-ratio: 4 / 3; background: #fff; padding: 1.1rem 1.25rem; border-bottom: 1px solid var(--line); overflow: hidden; }
+.card__img { width: 100%; height: 100%; object-fit: contain; transition: transform .35s ease; }
 .card:hover .card__img, .card:focus-within .card__img { transform: scale(1.04); }
 .card__body { display: flex; flex-direction: column; gap: .5rem; padding: 1.1rem 1.25rem 1.3rem; flex: 1; }
 .card__title { margin: 0; font-size: 1.02rem; line-height: 1.3; font-weight: 700; }
@@ -322,8 +325,8 @@ li:first-child > .subnav__link--logo::after { left: 0; }
 .prose .modules > li { margin: 0; }
 .module { display: flex; flex-direction: column; min-width: 0; background: #fff; border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; transition: box-shadow .25s, border-color .25s; }
 .module:hover, .module:focus-within { box-shadow: var(--shadow); border-color: #d6d1ca; }
-.module__media { display: block; aspect-ratio: 1 / 1; padding: 1rem 1.1rem; background: var(--tile-grad); border-bottom: 1px solid var(--line); }
-.module__img { width: 100%; height: 100%; object-fit: contain; display: block; mix-blend-mode: multiply; }
+.module__media { display: block; aspect-ratio: 1 / 1; padding: 1rem 1.1rem; background: #fff; border-bottom: 1px solid var(--line); }
+.module__img { width: 100%; height: 100%; object-fit: contain; display: block; }
 .module__body { display: flex; flex-direction: column; gap: .55rem; flex: 1; padding: 1.1rem 1.25rem 1.3rem; }
 .module__title { margin: 0; font-size: 1.15rem; line-height: 1.25; font-weight: 700; }
 .module__title a { text-decoration: none; }
@@ -343,6 +346,8 @@ li:first-child > .subnav__link--logo::after { left: 0; }
 .modules--tiles .module:hover, .modules--tiles .module:focus-within { box-shadow: none; }
 .modules--tiles .module__media { aspect-ratio: auto; padding: 0; border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; }
 .modules--tiles .module__img { height: auto; object-fit: cover; }
+.modules--tiles .module__media::after { content: none; }
+.modules--tiles .module__media { background: var(--tile-grad); }
 .modules--tiles .module__body { padding: 1rem 0 0; }
 .modules--tiles .module__title { font-size: 1.4rem; }
 @media (max-width: 640px) { .prose .modules--tiles, .modules--tiles { grid-template-columns: 1fr; } }
