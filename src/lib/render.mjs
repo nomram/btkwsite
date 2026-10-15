@@ -416,7 +416,7 @@ function renderBlockInner(ctx, b) {
     case "image": {
       const img = imgTag(ctx, b.src, b.alt || "", { sizes: "(min-width: 900px) 520px, 100vw" });
       const inner = b.href ? `<a href="${esc(localizeHref(ctx, b.href))}"${/^https?:/.test(b.href) ? ' rel="noopener"' : ""}>${img}</a>` : img;
-      return `<figure class="figure${b.align === "right" ? " figure--right" : ""}"${b.maxWidth ? ` style="max-width:${Math.round(Number(b.maxWidth))}px"` : ""}>${inner}${b.caption ? `<figcaption${editFld(ctx, "caption")}>${esc(b.caption)}</figcaption>` : ""}</figure>`;
+      return `<figure class="figure${b.align === "right" ? " figure--right" : b.align === "center" ? " figure--center" : ""}"${b.maxWidth ? ` style="max-width:${Math.round(Number(b.maxWidth))}px"` : ""}>${inner}${b.caption ? `<figcaption${editFld(ctx, "caption")}>${esc(b.caption)}</figcaption>` : ""}</figure>`;
     }
     case "button": {
       const external = b.external || /^https?:/.test(b.href || "");
@@ -844,7 +844,7 @@ export function renderMain(ctx, page, t) {
   const { crumbLogo, splitHtml, rest } = composeBody(ctx, page, t);
   const crumbs = renderBreadcrumbs(ctx, page.path);
   const logo = crumbLogo
-    ? `<a class="crumbs__logo" href="${esc(localizeHref(ctx, crumbLogo.href))}"${ctx.edit && crumbLogo.__i != null ? ` data-bk-i="${crumbLogo.__i}" data-bk-type="image"` : ""}>${imgTag(ctx, crumbLogo.src, crumbLogo.alt || "", { sizes: "120px" })}</a>`
+    ? `<a class="crumbs__logo" href="${esc(localizeHref(ctx, crumbLogo.href))}"${crumbLogo.maxWidth ? ` style="--crumb-logo-w:${Math.round(Number(crumbLogo.maxWidth))}px"` : ""}${ctx.edit && crumbLogo.__i != null ? ` data-bk-i="${crumbLogo.__i}" data-bk-type="image"` : ""}>${imgTag(ctx, crumbLogo.src, crumbLogo.alt || "", { sizes: "120px" })}</a>`
     : "";
   const heroImg = page.hero && page.hero.image ? page.hero.image : null;
   const title = t.h1 || t.title;

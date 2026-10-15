@@ -17,14 +17,16 @@
           "type": "image",
           "src": "/assets/img/logo-brutus.webp",
           "alt": "Brutus",
-          "href": "/produkter"
+          "href": "/produkter",
+          "maxWidth": 120
         },
         {
           "type": "image",
           "alt": "Brutus: bild 2",
           "width": 394,
           "height": 478,
-          "src": "/assets/img/brutus-2.webp"
+          "src": "/assets/img/brutus-2.webp",
+          "align": "center"
         },
         {
           "type": "text",
@@ -199,14 +201,16 @@
           "type": "image",
           "src": "/assets/img/logo-brutus.webp",
           "alt": "Brutus",
-          "href": "/produkter"
+          "href": "/produkter",
+          "maxWidth": 120
         },
         {
           "type": "image",
           "alt": "Brutus: image 2",
           "width": 394,
           "height": 478,
-          "src": "/assets/img/brutus-2.webp"
+          "src": "/assets/img/brutus-2.webp",
+          "align": "center"
         },
         {
           "type": "text",
@@ -382,14 +386,16 @@
           "type": "image",
           "src": "/assets/img/logo-brutus.webp",
           "alt": "Brutus",
-          "href": "/produkter"
+          "href": "/produkter",
+          "maxWidth": 120
         },
         {
           "type": "image",
           "alt": "Brutus: imagen 2",
           "width": 394,
           "height": 478,
-          "src": "/assets/img/brutus-2.webp"
+          "src": "/assets/img/brutus-2.webp",
+          "align": "center"
         },
         {
           "type": "text",
@@ -568,14 +574,16 @@
           "type": "image",
           "src": "/assets/img/logo-brutus.webp",
           "alt": "Brutus",
-          "href": "/produkter"
+          "href": "/produkter",
+          "maxWidth": 120
         },
         {
           "type": "image",
           "alt": "Brutus: bilde 2",
           "width": 394,
           "height": 478,
-          "src": "/assets/img/brutus-2.webp"
+          "src": "/assets/img/brutus-2.webp",
+          "align": "center"
         },
         {
           "type": "text",

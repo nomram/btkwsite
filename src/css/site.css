@@ -243,6 +243,7 @@ li:first-child > .subnav__link--logo::after { left: 0; }
 .breadcrumbs [aria-current] { color: var(--muted); }
 .crumbs__logo { flex: none; display: block; }
 .crumbs__logo img { height: 57px; width: auto; max-width: 240px; object-fit: contain; }
+.crumbs__logo[style*="--crumb-logo-w"] img { height: auto; width: var(--crumb-logo-w); max-width: 100%; max-height: 57px; }
 @media (max-width: 560px) { .crumbs__logo img { height: 44px; max-width: 150px; } }
 
 /* ---------- content ---------- */
@@ -260,10 +261,12 @@ li:first-child > .subnav__link--logo::after { left: 0; }
 .prose li::marker { color: var(--primary); }
 .page--home .prose > .cards { margin-top: .25rem; }
 
-.split { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 6fr); gap: clamp(1.5rem, 4vw, 4rem); align-items: center; padding-block: 1.25rem 2.5rem; }
+.split { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 6fr); gap: clamp(1.5rem, 4vw, 4rem); align-items: start; padding-block: 1.25rem 2.5rem; }
 .split__media { display: grid; gap: 1rem; justify-items: start; }
 .split__media .figure { margin: 0; }
 .split__media img { max-height: 460px; width: auto; max-width: 100%; margin-inline: 0; object-fit: contain; object-position: left center; }
+.split__media:has(.figure--center) { justify-items: center; }
+.split__media .figure--center img { margin-inline: auto; object-position: center; }
 .split__body.prose { padding-block: 0; }
 .split__body.prose > * { max-width: none; }
 @media (max-width: 860px) { .split { grid-template-columns: 1fr; } }
@@ -372,6 +375,7 @@ li:first-child > .subnav__link--logo::after { left: 0; }
 .module__doc-name { flex: 1 0 100%; font-size: .82rem; font-weight: 600; color: var(--muted); }
 .btn-row--group { display: flex; flex-wrap: wrap; gap: .75rem; align-items: center; }
 .figure--right { margin-left: auto; margin-top: 2.2rem; }
+.figure--center { margin-left: auto; margin-right: auto; }
 .prose .figure[style*="max-width"] img, .figure[style*="max-width"] img { width: 100%; }
 .video--poster .video__poster { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
 .video--poster .video__play::before { content: ""; position: absolute; inset: 0; background: linear-gradient(0deg, rgba(35, 31, 32, .72), rgba(35, 31, 32, .25) 55%, rgba(35, 31, 32, .35)); }
