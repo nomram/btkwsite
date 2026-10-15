@@ -134,6 +134,7 @@ function panelBlock() {
           ${F(t("card_text"), `<textarea data-bf="items.${ci}.text" rows="2">${esc(it.text || "")}</textarea>`)}
           ${F(t("modules_bullets"), `<textarea data-bf="items.${ci}.bullets" data-t="lines" rows="4">${esc((it.bullets || []).join("\n"))}</textarea>`, t("modules_bullets_hint"))}
           ${F(t("link_to"), `<div class="row nowrap"><input type="text" data-bf="items.${ci}.href" value="${esc(it.href || "")}" placeholder="${esc(t("no_link"))}"><button class="btn sm ghost" data-act="mod-link" data-ci="${ci}">${esc(t("choose"))}</button></div>`)}
+          ${F(t("modules_cta"), inp(`items.${ci}.cta`, it.cta))}
         </div>`).join("") +
         `<div class="btnrow"><button class="btn sm primary" data-act="mod-add">${IC.plus}<span>${esc(t("modules_add"))}</span></button></div>`;
       break;

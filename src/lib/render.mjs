@@ -315,7 +315,12 @@ function renderModules(ctx, b) {
         `<a class="btn btn--sm btn--ghost" href="${esc(view)}" target="_blank" rel="noopener">${ICON.eye}<span>${esc(ctx.ui.doc_view || "Visa")}</span></a>` +
         `<a class="btn btn--sm btn--ghost" href="${esc(dl)}"${ext ? ' rel="noopener"' : " download"}>${ICON.down}<span>${esc(ctx.ui.download || "Ladda ner")}</span></a></span>`;
     }
-    const go = href && b.more !== false ? `<a class="btn btn--sm btn--solid" href="${esc(href)}">${more}${ICON.arrow}</a>` : "";
+    const isExt = /^https?:/.test(it.href || "");
+    const go = href && b.more !== false
+      ? (isExt
+        ? `<a class="btn btn--sm btn--solid" href="${esc(href)}" target="_blank" rel="noopener"><span>${it.cta ? esc(it.cta) : more}</span>${ICON.external}</a>`
+        : `<a class="btn btn--sm btn--solid" href="${esc(href)}"><span>${it.cta ? esc(it.cta) : more}</span>${ICON.arrow}</a>`)
+      : "";
     return `<li class="module">${media}<div class="module__body">${title}${text}${bullets}${go || doc ? `<div class="module__actions">${go}${doc}</div>` : ""}</div></li>`;
   }).join("");
   return `<ul class="modules modules--${layout}" style="--cols:${cols}">${li}</ul>`;
