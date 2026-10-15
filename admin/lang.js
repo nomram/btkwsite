@@ -142,7 +142,7 @@ const sv = {
   // page + SEO
   page_content: "Sidans texter", page_title: "Titel (meny, brödsmulor)", page_title_hint: "Kort namn på sidan.", page_h1: "Huvudrubrik (H1)", page_h1_hint: "Den stora rubriken högst upp. Du kan också ändra den direkt på sidan.",
   nav_title: "Menynamn (valfritt)", nav_title_hint: "Ett kortare namn att visa i menyer.", lead: "Ingress i bannern (valfri)", lead_hint: "En kort rad under rubriken, när sidan har en bannerbild.",
-  appearance: "Utseende och publicering", hero_image: "Bannerbild", hero_hint: "Stor bild högst upp. Lämna tom för en enkel rubrik.",
+  appearance: "Utseende och publicering", hero_image: "Bannerbild", hero_anchor: "Bildens fäste i bannern", hero_anchor_hint: "Är bilden större än bannern visas den del du väljer. Utan val ligger bilden i mitten (som tidigare).", anchor_default: "Standard (mitten)", anchor_tl: "Uppe till vänster", anchor_t: "Uppe", anchor_tr: "Uppe till höger", anchor_l: "Till vänster", anchor_c: "Mitten", anchor_r: "Till höger", anchor_bl: "Nere till vänster", anchor_b: "Nere", anchor_br: "Nere till höger", hero_hint: "Stor bild högst upp. Lämna tom för en enkel rubrik.",
   page_type: "Typ av sida", page_type_hint: "Styr layouten. Produkt- och varumärkessidor får bild bredvid texten.",
   tpl_page: "Vanlig sida", tpl_product: "Produkt / modell", tpl_brand: "Varumärke", tpl_listing: "Översikt med kort",
   status: "Status", status_hint: "Utkast syns inte på webbplatsen.", add_to_parent: "Visa som kort på överordnad sida",
@@ -331,7 +331,7 @@ const en = {
   html_warn: "For advanced users only. Wrong HTML can break the page's appearance.",
   page_content: "Page texts", page_title: "Title (menus, breadcrumbs)", page_title_hint: "A short name for the page.", page_h1: "Main heading (H1)", page_h1_hint: "The big heading at the top. You can also edit it directly on the page.",
   nav_title: "Menu name (optional)", nav_title_hint: "A shorter name to show in menus.", lead: "Intro line in the banner (optional)", lead_hint: "A short line under the heading, when the page has a banner image.",
-  appearance: "Appearance and publishing", hero_image: "Banner image", hero_hint: "Large image at the top. Leave empty for a plain heading.",
+  appearance: "Appearance and publishing", hero_image: "Banner image", hero_anchor: "Picture anchor in the banner", hero_anchor_hint: "When the picture is larger than the banner, this is the part that stays in view. Without a choice the picture is centred (as before).", anchor_default: "Default (centre)", anchor_tl: "Top left", anchor_t: "Top", anchor_tr: "Top right", anchor_l: "Left", anchor_c: "Centre", anchor_r: "Right", anchor_bl: "Bottom left", anchor_b: "Bottom", anchor_br: "Bottom right", hero_hint: "Large image at the top. Leave empty for a plain heading.",
   page_type: "Page type", page_type_hint: "Controls the layout. Product and brand pages get the image next to the text.",
   tpl_page: "Ordinary page", tpl_product: "Product / model", tpl_brand: "Brand", tpl_listing: "Overview with cards",
   status: "Status", status_hint: "Drafts are not shown on the website.", add_to_parent: "Show as a card on the parent page",

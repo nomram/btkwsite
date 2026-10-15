@@ -127,6 +127,15 @@ export function imgTag(ctx, src, alt, o = {}) {
   return `<img src="${fallback}" srcset="${srcset}" sizes="${esc(sizes)}" alt="${esc(alt || "")}"${dims}${cls}${loading}>`;
 }
 
+// Banner picture. When the picture is bigger than the banner it is cropped (object-fit: cover); page.hero.anchor picks which
+// part stays in view: one of nine positions. Without it the picture is centred, as before.
+const HERO_ANCHOR = { tl: "0% 0%", t: "50% 0%", tr: "100% 0%", l: "0% 50%", c: "50% 50%", r: "100% 50%", bl: "0% 100%", b: "50% 100%", br: "100% 100%" };
+function heroImgTag(ctx, page, src) {
+  const tag = imgTag(ctx, src, "", { cls: "hero__img", eager: true, sizes: "100vw" });
+  const pos = page.hero && HERO_ANCHOR[page.hero.anchor];
+  return pos ? tag.replace("<img ", `<img style="object-position:${pos}" `) : tag;
+}
+
 // ---------- helpers ----------
 // A page is listed (menus, cards, strips, crumbs) when it is not hidden for this language and exists in it or in the default language.
 const shown = (ctx, p) => !(ctx.hidden && ctx.hidden(p, ctx.lang)) && !!(ctx.tr(p, ctx.lang) || ctx.tr(p, ctx.defaultLang));
@@ -855,7 +864,7 @@ export function renderMain(ctx, page, t) {
   const pageFld = (k) => (ctx.edit ? ` data-bk-page="${k}" data-bk-kind="plain"` : "");
   const heroInner = `<div class="container hero__inner">${eyebrow}<h1 class="hero__title"${pageFld("h1")}>${esc(title)}</h1>${t.lead || (ctx.edit && heroImg) ? `<p class="hero__lead"${pageFld("lead")}>${esc(t.lead || "")}</p>` : ""}${ctas ? `<div class="hero__ctas">${ctas}</div>` : ""}</div>`;
   const hero = heroImg
-    ? `<section class="hero${isHome ? " hero--home" : ""}">${imgTag(ctx, heroImg, "", { cls: "hero__img", eager: true, sizes: "100vw" })}<div class="hero__shade"></div>${heroInner}</section>`
+    ? `<section class="hero${isHome ? " hero--home" : ""}">${heroImgTag(ctx, page, heroImg)}<div class="hero__shade"></div>${heroInner}</section>`
     : `<section class="page-head${page.template === "about" ? " page-head--center" : ""}"><div class="container">${page.template === "about" ? "" : eyebrow}<h1${pageFld("h1")}>${esc(title)}</h1></div></section>`;
   const crumbRow = crumbs || logo ? `<div class="container crumbs${page.template === "about" && !heroImg ? " crumbs--center" : ""}">${crumbs}${logo}</div>` : "";
   return `${hero}${crumbRow}<div class="page-body page--${esc(page.template || "page")}">${splitHtml}${renderBlocks(ctx, rest)}${productQuoteCta(ctx, page, t, title)}</div>`;

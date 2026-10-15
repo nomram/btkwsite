@@ -215,6 +215,13 @@ function panelBlock() {
 }
 
 // ---------- page & SEO ----------
+const ANCHORS = ["tl", "t", "tr", "l", "c", "r", "bl", "b", "br"];
+function anchorGrid(cur) {
+  return `<div class="anchor9" role="group" aria-label="${esc(t("hero_anchor"))}">` +
+    ANCHORS.map((k) => `<button type="button" class="anchor9__b${cur === k ? " on" : ""}" data-act="hero-anchor" data-v="${k}" aria-pressed="${cur === k}" title="${esc(t("anchor_" + k))}"><span></span></button>`).join("") +
+    `</div><div class="btnrow"><button class="btn sm ghost" data-act="hero-anchor" data-v="">${esc(t("anchor_default"))}</button></div>`;
+}
+
 function panelPage() {
   const ed = state.ed, p = ed.page, lang = ed.lang, tr = curT();
   if (!tr) return `<p class="muted pn__hint">${esc(t("no_version_yet"))}</p>`;
@@ -229,6 +236,7 @@ function panelPage() {
     lf("navTitle", t("nav_title"), "", t("nav_title_hint")) + lf("lead", t("lead"), "", t("lead_hint")) +
     (isDef ? `<h3 class="pn__h">${esc(t("appearance"))}</h3>` +
       F(t("hero_image"), `<div class="row nowrap">${p.hero && p.hero.image ? `<img class="thumb" src="${esc(thumbUrl(p.hero.image.replace("/assets/img/", "")))}" alt="">` : ""}<button class="btn sm ghost" data-act="pick-hero">${esc(p.hero && p.hero.image ? t("change_image") : t("choose_image"))}</button>${p.hero && p.hero.image ? `<button class="btn sm ghost" data-act="hero-rm">${esc(t("remove"))}</button>` : ""}</div>`, t("hero_hint")) +
+      (p.hero && p.hero.image ? F(t("hero_anchor"), anchorGrid(p.hero.anchor), t("hero_anchor_hint")) : "") +
       F(t("page_type"), `<select data-rf="template">${TEMPLATES.map((x) => `<option value="${x}" ${(p.template || "page") === x ? "selected" : ""}>${esc(t("tpl_" + x))}</option>`).concat(p.template && !TEMPLATES.includes(p.template) ? [`<option selected>${esc(p.template)}</option>`] : []).join("")}</select>`, t("page_type_hint")) +
       F(t("status"), `<select data-rf="published" data-t="boolstr"><option value="true" ${p.published !== false ? "selected" : ""}>${esc(t("published"))}</option><option value="false" ${p.published === false ? "selected" : ""}>${esc(t("draft"))}</option></select>`, t("status_hint")) +
       (ed.isNew ? `<label class="chk"><input type="checkbox" id="add-parent" ${ed.addToParent ? "checked" : ""}> ${esc(t("add_to_parent"))}</label>` : "") : "") +
@@ -424,6 +432,7 @@ export function bindPanel(el) {
         return panelHooks.rerender();
       }
       case "pick-hero": { const src = await pickImage(); if (src) { mutate((pg) => { pg.hero = { image: src }; }, { scope: "page" }); panelHooks.rerender(); } return; }
+      case "hero-anchor": mutate((pg) => { if (b.dataset.v) pg.hero = { ...(pg.hero || {}), anchor: b.dataset.v }; else if (pg.hero) delete pg.hero.anchor; }, { scope: "page" }); return panelHooks.rerender();
       case "hero-rm": mutate((pg) => { delete pg.hero; }, { scope: "page" }); return panelHooks.rerender();
       case "desc-auto": { const d = autoDescription(curT()); if (d) { mutate(() => { curT().description = d; }); panelHooks.rerender(); } return; }
       case "desc-ai": return panelHooks.describeWithAi();
