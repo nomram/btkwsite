@@ -291,34 +291,33 @@ li:first-child > .subnav__link--logo::after { left: 0; }
 
 /* ---------- cards ---------- */
 .prose .cards, .cards { list-style: none; margin: 1rem 0 2rem; padding: 0; display: grid; gap: 1.5rem; grid-template-columns: repeat(auto-fill, minmax(min(100%, 255px), 1fr)); }
-.card { background: #fff; border: 1px solid var(--line); border-radius: var(--radius); display: flex; position: relative; transition: box-shadow .25s, border-color .25s, transform .25s; }
-.card::before { content: ""; position: absolute; left: -1px; right: -1px; top: -1px; height: 3px; background: var(--primary); transform: scaleX(0); transform-origin: left; transition: transform .25s; border-radius: var(--radius) var(--radius) 0 0; }
-.card:hover, .card:focus-within { box-shadow: var(--shadow); transform: translateY(-3px); border-color: #d6d1ca; }
-.card:hover::before, .card:focus-within::before { transform: scaleX(1); }
+.card { background: #fff; border: 1px solid var(--line); border-radius: var(--radius); display: flex; position: relative; transition: box-shadow .25s, border-color .25s; }
+.card::before { content: ""; position: absolute; left: -1px; right: -1px; top: -1px; height: 3px; background: var(--primary); opacity: 0; transition: opacity .2s; border-radius: var(--radius) var(--radius) 0 0; }
+.card:hover, .card:focus-within { box-shadow: var(--shadow); border-color: #d6d1ca; }
+.card:hover::before, .card:focus-within::before { opacity: 1; }
 .card__link { display: flex; flex-direction: column; width: 100%; text-decoration: none; }
-/* The tile wash is multiplied over the picture by a still overlay, not by the picture itself: a picture that is blending
-   and animating (hover zoom) is re-composited when the animation starts, which showed up as a white flash. */
-.card__media, .module__media { position: relative; }
-.card__media::after, .module__media::after { content: ""; position: absolute; inset: 0; background: var(--tile-grad); mix-blend-mode: multiply; pointer-events: none; }
-.card__media { display: block; aspect-ratio: 4 / 3; background: #fff; padding: 1.1rem 1.25rem; border-bottom: 1px solid var(--line); overflow: hidden; }
+/* Tile pictures are baked at build time (photo already multiplied onto the wash): no blending and no hover movement in
+   the page, so nothing can shimmer. The plain rules below are the fallback for pictures that could not be baked (svg, gif, editor). */
+.card__media { display: block; aspect-ratio: 4 / 3; background: var(--tile-grad); padding: 1.1rem 1.25rem; border-bottom: 1px solid var(--line); overflow: hidden; }
 .card__img { width: 100%; height: 100%; object-fit: contain; }
+.card__media:not(.card__media--tile) .card__img { mix-blend-mode: multiply; }
+.card__media--tile { padding: 0; }
+.card__media--tile .card__img { object-fit: cover; }
 .card__body { display: flex; flex-direction: column; gap: .5rem; padding: 1.1rem 1.25rem 1.3rem; flex: 1; }
 .card__title { margin: 0; font-size: 1.02rem; line-height: 1.3; font-weight: 700; }
 .card__text { margin: 0; font-size: .88rem; color: var(--muted); line-height: 1.6; display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; overflow: hidden; }
-/* "Läs mer" is the same small solid button on cards and modules */
-.card__text { margin-bottom: .7rem; }
-.card__more { align-self: flex-start; margin-top: auto; display: inline-flex; align-items: center; justify-content: space-between; gap: .55rem; min-width: 8.2rem; padding: .5rem .85rem; font: 600 .82rem/1.2 var(--font); letter-spacing: .02em; background: var(--primary); color: var(--dark); border: 2px solid var(--primary); border-radius: var(--radius); transition: background .15s, border-color .15s, color .15s; }
-.card__more svg { flex: none; color: currentColor; transition: transform .2s; }
-.card:hover .card__more, .card:focus-within .card__more { background: var(--dark); border-color: var(--dark); color: #fff; }
-.card:hover .card__more svg { transform: translateX(3px); }
+/* "Läs mer": the quiet text link with the orange arrow, the same on cards and on modules */
+.card__more, .module__more { margin-top: auto; padding-top: .6rem; font-weight: 600; font-size: .84rem; display: inline-flex; align-items: center; gap: .4rem; color: var(--text); text-decoration: none; }
+.card__more svg, .module__more svg { transition: transform .2s; color: var(--primary); }
+.card:hover .card__more svg, .module:hover .module__more svg { transform: translateX(4px); }
+.module__more:hover span { text-decoration: underline; text-decoration-color: var(--primary); text-underline-offset: .2em; }
 /* phones: two cards per row and a squarer picture, so a long listing is not a mile of scrolling */
 @media (max-width: 560px) {
   .prose .cards, .cards { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .75rem; }
-  .card__media { aspect-ratio: 1 / 1; padding: .7rem .8rem; }
+  .card__media { padding: .7rem .8rem; }
   .card__body { padding: .75rem .8rem .9rem; gap: .35rem; }
   .card__title { font-size: .95rem; overflow-wrap: anywhere; hyphens: auto; }
   .card__text { font-size: .8rem; line-height: 1.5; -webkit-line-clamp: 3; }
-  .card:hover, .card:focus-within { transform: none; }
 }
 
 /* ---------- modules: small cards side by side ---------- */
@@ -327,8 +326,11 @@ li:first-child > .subnav__link--logo::after { left: 0; }
 .prose .modules > li { margin: 0; }
 .module { display: flex; flex-direction: column; min-width: 0; background: #fff; border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; transition: box-shadow .25s, border-color .25s; }
 .module:hover, .module:focus-within { box-shadow: var(--shadow); border-color: #d6d1ca; }
-.module__media { display: block; aspect-ratio: 1 / 1; padding: 1rem 1.1rem; background: #fff; border-bottom: 1px solid var(--line); }
+.module__media { display: block; aspect-ratio: 1 / 1; padding: 1rem 1.1rem; background: var(--tile-grad); border-bottom: 1px solid var(--line); }
 .module__img { width: 100%; height: 100%; object-fit: contain; display: block; }
+.module__media:not(.module__media--tile) .module__img { mix-blend-mode: multiply; }
+.module__media--tile { padding: 0; }
+.module__media--tile .module__img { object-fit: cover; }
 .module__body { display: flex; flex-direction: column; gap: .55rem; flex: 1; padding: 1.1rem 1.25rem 1.3rem; }
 .module__title { margin: 0; font-size: 1.15rem; line-height: 1.25; font-weight: 700; }
 .module__title a { text-decoration: none; }
@@ -337,8 +339,8 @@ li:first-child > .subnav__link--logo::after { left: 0; }
 .module__list, .prose .module__list { list-style: none; margin: .15rem 0 0; padding: 0; }
 .module__list li, .prose .module__list li { position: relative; margin: .32rem 0; padding-left: 1.05rem; font-size: .92rem; line-height: 1.45; }
 .module__list li::before { content: ""; position: absolute; left: 0; top: .5em; width: .42rem; height: .42rem; background: var(--primary); }
-.module__actions { display: flex; flex-wrap: wrap; gap: .5rem; margin-top: auto; padding-top: .85rem; }
-.module__actions .btn--solid { min-width: 8.2rem; justify-content: space-between; }
+.module__actions { display: flex; flex-wrap: wrap; gap: .5rem 1rem; align-items: center; margin-top: auto; padding-top: .35rem; }
+.module__actions .module__more { margin-top: 0; padding-top: .5rem; }
 .modules--compact { grid-template-columns: repeat(var(--cols, 2), minmax(0, 1fr)); gap: 1.1rem; }
 .modules--compact .module { flex-direction: row; align-items: stretch; }
 .modules--compact .module__media { flex: 0 0 36%; aspect-ratio: auto; min-height: 9rem; border-bottom: 0; border-right: 1px solid var(--line); display: grid; place-items: center; }
@@ -349,7 +351,6 @@ li:first-child > .subnav__link--logo::after { left: 0; }
 .modules--tiles .module:hover, .modules--tiles .module:focus-within { box-shadow: none; }
 .modules--tiles .module__media { aspect-ratio: auto; padding: 0; border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; }
 .modules--tiles .module__img { height: auto; object-fit: cover; }
-.modules--tiles .module__media::after { content: none; }
 .modules--tiles .module__media { background: var(--tile-grad); }
 .modules--tiles .module__body { padding: 1rem 0 0; }
 .modules--tiles .module__title { font-size: 1.4rem; }
@@ -365,7 +366,7 @@ li:first-child > .subnav__link--logo::after { left: 0; }
   .modules--compact .module__media { flex-basis: 34%; min-height: 7.5rem; }
   .module__actions .btn { flex: 1 1 auto; justify-content: center; }
 }
-@media (max-width: 420px) { .prose .modules--cards, .modules--cards { grid-template-columns: 1fr; } .modules--cards .module__media { aspect-ratio: 4 / 3; } }
+@media (max-width: 420px) { .prose .modules--cards, .modules--cards { grid-template-columns: 1fr; } }
 
 .module__doc { display: flex; flex-wrap: wrap; gap: .45rem; align-items: center; width: 100%; }
 .module__doc-name { flex: 1 0 100%; font-size: .82rem; font-weight: 600; color: var(--muted); }

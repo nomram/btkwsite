@@ -152,10 +152,12 @@ function renderCards(ctx, b) {
   const items = (b.items || []).map((it, idx) => [it, idx]).filter(([it]) => shown(ctx, it.href)).map(([it, idx]) => {
     const title = it.title || titleOf(ctx, it.href);
     const href = localizeHref(ctx, it.href);
-    const img = it.image ? imgTag(ctx, it.image, it.alt || title, { cls: "card__img", sizes: "(min-width: 1000px) 280px, (min-width: 560px) 45vw, 100vw" }) : "";
+    const cinfo = it.image && !ctx.edit ? ctx.image(it.image) : null;
+    const cbaked = !!(cinfo && cinfo.tile43);
+    const img = cbaked ? `<img class="card__img" src="/assets/img/${esc(cinfo.name)}-tile43.webp" width="640" height="480" alt="${esc(it.alt || title)}" loading="lazy" decoding="async">` : it.image ? imgTag(ctx, it.image, it.alt || title, { cls: "card__img", sizes: "(min-width: 1000px) 280px, (min-width: 560px) 45vw, 100vw" }) : "";
     const text = it.text || ctx.edit ? `<p class="card__text"${editFld(ctx, `items.${idx}.text`)}>${esc(it.text || "")}</p>` : "";
     return `<li class="card"><a class="card__link" href="${esc(href)}">` +
-      (img ? `<span class="card__media">${img}</span>` : "") +
+      (img ? `<span class="card__media${cbaked ? " card__media--tile" : ""}">${img}</span>` : "") +
       `<span class="card__body"><h${ctx._cardLevel || 3} class="card__title"${editFld(ctx, `items.${idx}.title`)}>${esc(title)}</h${ctx._cardLevel || 3}>${text}<span class="card__more">${esc(ctx.ui.read_more || "Läs mer")}${ICON.arrow}</span></span></a></li>`;
   }).join("");
   return `<ul class="cards">${items}</ul>`;
@@ -301,8 +303,10 @@ function renderModules(ctx, b) {
   const more = esc(ctx.ui.read_more || "Läs mer");
   const li = items.map((it, i) => {
     const href = it.href ? (/^https?:/.test(it.href) ? it.href : localizeHref(ctx, it.href)) : "";
-    const img = it.image ? imgTag(ctx, it.image, it.alt || it.title || "", { cls: "module__img", sizes: layout === "compact" ? "180px" : layout === "tiles" ? "(min-width: 900px) 560px, 100vw" : "(min-width: 900px) 330px, 90vw" }) : "";
-    const media = img ? (href ? `<a class="module__media" href="${esc(href)}" tabindex="-1" aria-hidden="true">${img}</a>` : `<span class="module__media">${img}</span>`) : "";
+    const minfo = it.image && !ctx.edit && layout !== "tiles" ? ctx.image(it.image) : null;
+    const mbaked = !!(minfo && minfo.tilesq);
+    const img = mbaked ? `<img class="module__img" src="/assets/img/${esc(minfo.name)}-tilesq.webp" width="640" height="640" alt="${esc(it.alt || it.title || "")}" loading="lazy" decoding="async">` : it.image ? imgTag(ctx, it.image, it.alt || it.title || "", { cls: "module__img", sizes: layout === "compact" ? "180px" : layout === "tiles" ? "(min-width: 900px) 560px, 100vw" : "(min-width: 900px) 330px, 90vw" }) : "";
+    const media = img ? (href ? `<a class="module__media${mbaked ? " module__media--tile" : ""}" href="${esc(href)}" tabindex="-1" aria-hidden="true">${img}</a>` : `<span class="module__media${mbaked ? " module__media--tile" : ""}">${img}</span>`) : "";
     const title = it.title ? `<h${lvl} class="module__title"${editFld(ctx, `items.${i}.title`)}>${href ? `<a href="${esc(href)}">${esc(it.title)}</a>` : esc(it.title)}</h${lvl}>` : "";
     const text = it.text || ctx.edit ? `<p class="module__text"${editFld(ctx, `items.${i}.text`)}>${esc(it.text || "")}</p>` : "";
     const bullets = (it.bullets || []).length ? `<ul class="module__list">${it.bullets.map((x) => `<li>${ctx.edit ? esc(x) : localizeHtml(ctx, x)}</li>`).join("")}</ul>` : "";
@@ -318,8 +322,8 @@ function renderModules(ctx, b) {
     const isExt = /^https?:/.test(it.href || "");
     const go = href && b.more !== false
       ? (isExt
-        ? `<a class="btn btn--sm btn--solid" href="${esc(href)}" target="_blank" rel="noopener"><span>${it.cta ? esc(it.cta) : more}</span>${ICON.external}</a>`
-        : `<a class="btn btn--sm btn--solid" href="${esc(href)}"><span>${it.cta ? esc(it.cta) : more}</span>${ICON.arrow}</a>`)
+        ? `<a class="module__more" href="${esc(href)}" target="_blank" rel="noopener"><span>${it.cta ? esc(it.cta) : more}</span>${ICON.external}</a>`
+        : `<a class="module__more" href="${esc(href)}"><span>${it.cta ? esc(it.cta) : more}</span>${ICON.arrow}</a>`)
       : "";
     return `<li class="module">${media}<div class="module__body">${title}${text}${bullets}${go || doc ? `<div class="module__actions">${go}${doc}</div>` : ""}</div></li>`;
   }).join("");

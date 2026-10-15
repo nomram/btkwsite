@@ -74,6 +74,17 @@ const WIDTHS = [480, 800, 1280, 1920];
 const imageInfo = new Map(); // "/assets/img/name.ext" -> {name, ext, w, h, widths, menu}
 // Products-menu pictures are baked ahead of time: the photo is fitted into a square and already multiplied onto the
 // panel colour, so the browser has nothing to blend and nothing to flash white (see megaPanel in render.mjs).
+// Card and module pictures are baked as well: the photo is fitted into the tile, multiplied onto the soft wash and saved as
+// one finished picture, so the page needs no blending at all (blending + hover animation shimmered on some screens).
+const TILE = { w: 640, h43: 480, hsq: 640, top: "#ffffff", bottom: "#f7f5f2" };
+const tileWanted = new Map(); // "/assets/img/x.webp" -> { t43, tsq }
+{
+  const want = (src, k) => { if (!tileWanted.has(src)) tileWanted.set(src, {}); tileWanted.get(src)[k] = true; };
+  for (const pg of pages.values()) for (const t of Object.values(pg.i18n || {})) for (const b of flatBlocks(t.blocks || [])) {
+    if (b.type === "cards") for (const it of b.items || []) if (it && it.image) want(it.image, "t43");
+    if (b.type === "modules" && b.layout !== "tiles") for (const it of b.items || []) if (it && it.image) want(it.image, "tsq");
+  }
+}
 const MENU_THUMB = { inner: 88, pad: 4, mul: [244 / 255, 242 / 255, 239 / 255], bg: "#f4f2ef" };
 
 async function processImages() {
@@ -126,12 +137,34 @@ async function processImages() {
           } catch { rec.menu = 0; }
         }
       }
-      imageInfo.set(`/assets/img/${f}`, { name, ext, w: rec.w, h: rec.h, widths: rec.widths, menu: !!rec.menu });
+      const wantTile = tileWanted.get(`/assets/img/${f}`);
+      if (sharp && wantTile && ["webp", "jpg", "jpeg", "png"].includes(ext)) {
+        for (const [flag, suffix, h, padX, padY] of [["t43", "tile43", TILE.h43, 46, 38], ["tsq", "tilesq", TILE.hsq, 30, 30]]) {
+          const file = path.join(CACHE, `${name}-${suffix}.webp`);
+          if (!wantTile[flag] || (rec[flag] && exists(file))) continue;
+          try {
+            const grad = Buffer.from(`<svg xmlns="http://www.w3.org/2000/svg" width="${TILE.w}" height="${h}"><defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="${TILE.top}"/><stop offset="1" stop-color="${TILE.bottom}"/></linearGradient></defs><rect width="100%" height="100%" fill="url(#g)"/></svg>`);
+            const fitted = await sharp(src).flatten({ background: "#ffffff" })
+              .resize(TILE.w - 2 * padX, h - 2 * padY, { fit: "contain", background: "#ffffff" })
+              .extend({ top: padY, bottom: padY, left: padX, right: padX, background: "#ffffff" }).toBuffer();
+            // centre on the full tile canvas
+            const canvas = await sharp({ create: { width: TILE.w, height: h, channels: 3, background: "#ffffff" } })
+              .composite([{ input: fitted, gravity: "centre" }]).png().toBuffer();
+            await sharp(canvas).composite([{ input: grad, blend: "multiply" }]).webp({ quality: 84 }).toFile(file);
+            rec[flag] = 1; idx[f] = rec; made++;
+          } catch { rec[flag] = 0; }
+        }
+      }
+      imageInfo.set(`/assets/img/${f}`, { name, ext, w: rec.w, h: rec.h, widths: rec.widths, menu: !!rec.menu, tile43: !!rec.t43, tilesq: !!rec.tsq });
       // masters + variants to dist
       fs.copyFileSync(src, path.join(IMG_OUT, f));
       for (const w of rec.widths) {
         const c = path.join(CACHE, `${name}-${w}.webp`);
         if (exists(c)) fs.copyFileSync(c, path.join(IMG_OUT, `${name}-${w}.webp`));
+      }
+      for (const suffix of ["tile43", "tilesq"]) {
+        const tc = path.join(CACHE, `${name}-${suffix}.webp`);
+        if (rec[suffix === "tile43" ? "t43" : "tsq"] && exists(tc)) fs.copyFileSync(tc, path.join(IMG_OUT, `${name}-${suffix}.webp`));
       }
       const mc = path.join(CACHE, `${name}-menu.webp`);
       if (rec.menu && exists(mc)) fs.copyFileSync(mc, path.join(IMG_OUT, `${name}-menu.webp`));
