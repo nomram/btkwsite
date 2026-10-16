@@ -47,6 +47,19 @@ const pages = new Map();
   }
 })(path.join(ROOT, "content/pages"));
 
+// "You might also be interested in" items marked mutual: the page they point to shows a link back
+const incomingRelated = new Map();
+for (const pg of pages.values()) for (const t of Object.values(pg.i18n || {})) for (const b of flatBlocks(t.blocks || [])) {
+  if (b.type !== "related") continue;
+  for (const it of b.items || []) {
+    if (!it || !it.mutual || !it.href || /^https?:/.test(it.href)) continue;
+    const key = it.href.split(/[?#]/)[0];
+    const arr = incomingRelated.get(key) || [];
+    if (!arr.some((x) => x.href === pg.path)) arr.push({ href: pg.path });
+    incomingRelated.set(key, arr);
+  }
+}
+
 const languages = Object.entries(site.languages || { [defaultLang]: { published: true } })
   .filter(([, l]) => l.published || ALL_LANGS).map(([c]) => c);
 // A language is "live" in site-wide features (switcher/hreflang) when published or --all-langs
@@ -270,6 +283,7 @@ function makeCtx(lang) {
     image: (src) => imageInfo.get(src) || null,
     fileSize: (href) => fileSizes.get(href) || null,
     docInfo: (href) => docInfoMap.get(href) || null,
+    incomingRelated: (p) => incomingRelated.get(p) || [],
     ytThumb: (id) => (ytThumbs.has(id) ? `/assets/yt/${id}.webp` : null),
     searchIndexUrl: lang === defaultLang ? "/search-index.json" : `/${lang}/search-index.json`
   };

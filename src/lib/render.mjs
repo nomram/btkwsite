@@ -60,6 +60,7 @@ function blockIsEmpty(b) {
     case "cta": return !b.title;
     case "carousel": return !(b.items || []).some((x) => x && x.src);
     case "modules": return !(b.items || []).length;
+    case "related": return !(b.items || []).some((it) => it && it.href);
     case "html": return !(b.html || "").trim();
     case "columns": return !((b.left || []).length || (b.right || []).length);
     case "heading": case "text": return false;
@@ -310,6 +311,49 @@ const SOCIAL_ICON = {
 };
 // A row of small "module" cards side by side: picture, title, short text, bullet points, link and optional brochure.
 // layout "cards": picture on top, up to three per row. layout "compact": picture left, text right, two per row.
+// "You might also be interested in": a slim rail of linked pages. Picture, title and brand come from the target page unless
+// the item overrides them. Items marked "mutual" also show up, automatically, on the page they point to (ctx.incomingRelated).
+function relatedInfo(ctx, it) {
+  const ext = /^https?:/.test(it.href || "");
+  if (ext) return { title: it.title || it.href.replace(/^https?:\/\/(www\.)?/, "").replace(/\/$/, ""), sub: it.text || "", image: it.image || "" };
+  const p = it.href.split(/[?#]/)[0];
+  const segs = p.split("/").filter(Boolean);
+  const brand = segs.length >= 3 ? navTitleOf(ctx, "/" + segs[0] + "/" + segs[1]) : "";
+  let image = it.image || "";
+  if (!image) {
+    const par = "/" + segs.slice(0, -1).join("/");
+    const pt = ctx.tr(par, ctx.lang) || ctx.tr(par, ctx.defaultLang);
+    for (const x of flatBlocks((pt && pt.blocks) || [])) if ((x.type === "cards" || x.type === "modules") && !image) for (const c of x.items || []) if (c.image && c.href && c.href.split(/[?#]/)[0] === p) { image = c.image; break; }
+  }
+  if (!image) { const pg = ctx.pages.get(p); if (pg && pg.hero && pg.hero.image) image = pg.hero.image; }
+  if (!image) {
+    const t = ctx.tr(p, ctx.lang) || ctx.tr(p, ctx.defaultLang);
+    const im = t && flatBlocks(t.blocks || []).find((x) => (x.type === "image" && x.src && !x.href) || (x.type === "carousel" && x.items && x.items[0]));
+    if (im) image = im.type === "image" ? im.src : im.items[0].src;
+  }
+  return { title: it.title || navTitleOf(ctx, p), sub: it.text || brand, image };
+}
+function renderRelated(ctx, b) {
+  const extra = ctx._relExtra || [];
+  ctx._relExtra = [];
+  const seen = new Set();
+  const items = [...(b.items || []), ...extra].filter((it) => {
+    if (!it || !it.href || seen.has(it.href)) return false;
+    seen.add(it.href);
+    return /^https?:/.test(it.href) || (ctx.pages.has(it.href.split(/[?#]/)[0]) && shown(ctx, it.href.split(/[?#]/)[0]));
+  });
+  if (!items.length) return "";
+  const title = b.title || ctx.ui.related_title || "Du kanske också är intresserad av:";
+  const tiles = items.map((it) => {
+    const ext = /^https?:/.test(it.href);
+    const href = ext ? it.href : localizeHref(ctx, it.href);
+    const info = relatedInfo(ctx, it);
+    const img = info.image ? imgTag(ctx, info.image, "", { cls: "rel__img", sizes: "80px" }) : "";
+    return `<a class="rel__item" href="${esc(href)}"${ext ? ' target="_blank" rel="noopener"' : ""}><span class="rel__thumb">${img}</span><span class="rel__txt"><span class="rel__t">${esc(info.title)}</span>${info.sub ? `<span class="rel__s">${esc(info.sub)}</span>` : ""}</span><span class="rel__arrow">${ext ? ICON.external : ICON.arrow}</span></a>`;
+  }).join("");
+  return `<section class="related"><h2 class="related__title"${editFld(ctx, "title")}>${esc(title)}</h2><div class="related__rail">${tiles}</div></section>`;
+}
+
 function renderModules(ctx, b) {
   const items = (b.items || []).filter((it) => it && !(it.href && ctx.pages && ctx.pages.has(it.href) && !shown(ctx, it.href)));
   if (!items.length) return "";
@@ -450,6 +494,7 @@ function renderBlockInner(ctx, b) {
     case "quote": return renderQuote(ctx);
     case "carousel": return renderCarousel(ctx, b.items, b);
     case "modules": return renderModules(ctx, b);
+    case "related": return renderRelated(ctx, b);
     case "chips": return renderChips(ctx, b);
     case "cta": return renderCta(ctx, b);
     case "html": return b.html || "";
@@ -874,7 +919,13 @@ export function renderMain(ctx, page, t) {
     ? `<section class="hero${isHome ? " hero--home" : ""}">${heroImgTag(ctx, page, heroImg)}<div class="hero__shade"></div>${heroInner}</section>`
     : `<section class="page-head${page.template === "about" ? " page-head--center" : ""}"><div class="container">${page.template === "about" ? "" : eyebrow}<h1${pageFld("h1")}>${esc(title)}</h1></div></section>`;
   const crumbRow = crumbs || logo ? `<div class="container crumbs${page.template === "about" && !heroImg ? " crumbs--center" : ""}">${crumbs}${logo}</div>` : "";
-  return `${hero}${crumbRow}<div class="page-body page--${esc(page.template || "page")}">${splitHtml}${renderBlocks(ctx, rest)}${productQuoteCta(ctx, page, t, title)}</div>`;
+  const ownRel = flatBlocks(t.blocks || []).filter((x) => x.type === "related");
+  const ownHrefs = new Set(ownRel.flatMap((x) => (x.items || []).map((i) => i && i.href)));
+  ctx._relExtra = ctx.edit || !ctx.incomingRelated ? [] : ctx.incomingRelated(page.path).filter((x) => !ownHrefs.has(x.href));
+  const bodyHtml = `${splitHtml}${renderBlocks(ctx, rest)}`;
+  const autoRel = !ownRel.length && ctx._relExtra.length ? `<div class="container">${renderRelated(ctx, { type: "related", items: [] })}</div>` : "";
+  ctx._relExtra = [];
+  return `${hero}${crumbRow}<div class="page-body page--${esc(page.template || "page")}">${bodyHtml}${autoRel}${productQuoteCta(ctx, page, t, title)}</div>`;
 }
 
 export function renderDocument(ctx, page, t, opts = {}) {

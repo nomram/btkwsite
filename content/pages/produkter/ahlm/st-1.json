@@ -58,6 +58,19 @@
         {
           "type": "text",
           "html": "<a href=\"/kontakta-oss\">Kontakta oss</a> för mer information."
+        },
+        {
+          "type": "related",
+          "items": [
+            {
+              "href": "/produkter/haeny/manuella-pumpar",
+              "mutual": true
+            },
+            {
+              "href": "/produkter/haeny/automatiska-pumpar",
+              "mutual": true
+            }
+          ]
         }
       ]
     },
@@ -111,6 +124,19 @@
         {
           "type": "text",
           "html": "<a href=\"/kontakta-oss\">Contact us</a> for more information."
+        },
+        {
+          "type": "related",
+          "items": [
+            {
+              "href": "/produkter/haeny/manuella-pumpar",
+              "mutual": true
+            },
+            {
+              "href": "/produkter/haeny/automatiska-pumpar",
+              "mutual": true
+            }
+          ]
         }
       ],
       "published": true
@@ -165,6 +191,19 @@
         {
           "type": "text",
           "html": "<a href=\"/kontakta-oss\">Contáctenos</a> para más información."
+        },
+        {
+          "type": "related",
+          "items": [
+            {
+              "href": "/produkter/haeny/manuella-pumpar",
+              "mutual": true
+            },
+            {
+              "href": "/produkter/haeny/automatiska-pumpar",
+              "mutual": true
+            }
+          ]
         }
       ],
       "published": true
@@ -219,6 +258,19 @@
         {
           "type": "text",
           "html": "<a href=\"/kontakta-oss\">Kontakt oss</a> for mer informasjon."
+        },
+        {
+          "type": "related",
+          "items": [
+            {
+              "href": "/produkter/haeny/manuella-pumpar",
+              "mutual": true
+            },
+            {
+              "href": "/produkter/haeny/automatiska-pumpar",
+              "mutual": true
+            }
+          ]
         }
       ],
       "published": true

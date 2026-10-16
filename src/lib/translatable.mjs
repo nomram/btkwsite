@@ -47,6 +47,13 @@ function visitBlock(b, pre, P, cb) {
     (it.bullets || []).forEach((x, n) => cb(id(`items.${j}.bullets.${n}`), x, (v) => (it.bullets[n] = v)));
     if (it.doc && it.doc.text) cb(id(`items.${j}.doc.text`), it.doc.text, (v) => (it.doc.text = v));
   });
+  if (b.type === "related") {
+    if (b.title) cb(id("title"), b.title, (v) => (b.title = v));
+    (b.items || []).forEach((it, j) => {
+      if (it.title) cb(id(`items.${j}.title`), it.title, (v) => (it.title = v));
+      if (it.text) cb(id(`items.${j}.text`), it.text, (v) => (it.text = v));
+    });
+  }
   if (b.type === "carousel") (b.items || []).forEach((it, j) => {
     if (it.alt) cb(id(`items.${j}.alt`), it.alt, (v) => (it.alt = v));
     if (it.caption) cb(id(`items.${j}.caption`), it.caption, (v) => (it.caption = v));

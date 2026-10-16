@@ -43,6 +43,7 @@ function snippet(b) {
     case "cards": return t("n_cards", { n: (b.items || []).length });
     case "carousel": return t("n_images", { n: (b.items || []).length });
     case "modules": return t("n_cards", { n: (b.items || []).length });
+    case "related": return t("n_cards", { n: (b.items || []).length });
     case "video": return b.title || b.id || t("empty");
     case "table": return t("n_rows", { n: (b.rows || []).length });
     case "datasheet": return b.title || t("block_datasheet");
@@ -137,6 +138,17 @@ function panelBlock() {
           ${F(t("modules_cta"), inp(`items.${ci}.cta`, it.cta))}
         </div>`).join("") +
         `<div class="btnrow"><button class="btn sm primary" data-act="mod-add">${IC.plus}<span>${esc(t("modules_add"))}</span></button></div>`;
+      break;
+    }
+    case "related": {
+      const items = b.items || [];
+      body = F(t("related_heading"), inp("title", b.title, `placeholder="${esc(t("related_heading_ph"))}"`), t("related_heading_hint")) +
+        items.map((it, ci) => `<div class="sub"><div class="row nowrap"><input type="text" data-bf="items.${ci}.href" value="${esc(it.href || "")}" placeholder="${esc(t("no_link"))}"><button class="btn sm ghost" data-act="mod-link" data-ci="${ci}">${esc(t("choose"))}</button>${ci > 0 ? `<button class="btn sm ghost" data-act="mod-up" data-ci="${ci}" title="${esc(t("move_up"))}">${IC.up}</button>` : ""}<button class="btn sm danger" data-act="mod-rm" data-ci="${ci}" title="${esc(t("delete"))}">${IC.trash}</button></div>
+          ${F(t("card_title"), inp(`items.${ci}.title`, it.title, `placeholder="${esc(t("card_title_ph"))}"`))}
+          ${F(t("related_sub"), inp(`items.${ci}.text`, it.text, `placeholder="${esc(t("related_sub_ph"))}"`))}
+          <label class="chk"><input type="checkbox" data-bf="items.${ci}.mutual" data-t="bool" ${it.mutual ? "checked" : ""}> ${esc(t("related_mutual"))}</label>
+        </div>`).join("") +
+        `<div class="btnrow"><button class="btn sm primary" data-act="rel-add">${IC.plus}<span>${esc(t("related_add"))}</span></button></div>`;
       break;
     }
     case "carousel": {
@@ -407,6 +419,7 @@ export function bindPanel(el) {
       case "mod-rm": mutate(() => { blk.items.splice(+b.dataset.ci, 1); }); return panelHooks.rerender();
       case "mod-up": { const ci = +b.dataset.ci; if (ci > 0) mutate(() => { const x = blk.items.splice(ci, 1)[0]; blk.items.splice(ci - 1, 0, x); }); return panelHooks.rerender(); }
       case "mod-image": { const src = await pickImage(); if (src) { setField(i, `items.${b.dataset.ci}.image`, src); panelHooks.rerender(); } return; }
+      case "rel-add": mutate(() => { (blk.items = blk.items || []).push({ href: "" }); }); return panelHooks.rerender();
       case "mod-link": {
         const path = `items.${b.dataset.ci}.href`;
         const v = await pickLink({ current: getPath(blk, path) || "", allowRemove: true });
