@@ -905,14 +905,14 @@ function composeBody(ctx, page, t) {
   return { crumbLogo, splitHtml, rest: blocks };
 }
 
-// Closing "request a quote" band on product pages (not in the editor; skipped when the page has its own cta/quote block;
+// Closing "request a quote" band on product and brand pages (not in the editor; skipped when the page has its own cta/quote block;
 // switch off with site.productQuoteCta = false). The product name travels in ?produkt= and pre-fills the form.
 function productQuoteCta(ctx, page, t, name) {
-  if (ctx.edit || page.template !== "product" || ctx.site.productQuoteCta === false) return "";
+  if (ctx.edit || (page.template !== "product" && page.template !== "brand") || ctx.site.productQuoteCta === false) return "";
   if (!ctx.pages.has("/kontakta-oss") || !shown(ctx, "/kontakta-oss")) return "";
   if (flatBlocks(t.blocks || []).some((b) => b.type === "cta" || b.type === "quote")) return "";
   const u = ctx.ui;
-  if (t.title && t.title !== name && t.title.length <= 12) name = `${t.title}, ${name}`; // short model code + name, e.g. "ST-5, Silon"
+  if (page.template === "product" && t.title && t.title !== name && t.title.length <= 12) name = `${t.title}, ${name}`; // short model code + name, e.g. "ST-5, Silon"
   const href = localizeHref(ctx, "/kontakta-oss") + "?produkt=" + encodeURIComponent(name) + "#offert";
   const title = String(u.quote_cta_title || "Vill du ha offert på {name}?").replace("{name}", name);
   return `<section class="cta"><div class="container cta__inner"><div class="cta__text"><h2>${esc(title)}</h2><p>${esc(u.quote_cta_text || "Berätta kort vad du behöver, så återkommer vi med pris och leveranstid.")}</p></div>` +
