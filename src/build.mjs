@@ -94,7 +94,7 @@ const tileWanted = new Map(); // "/assets/img/x.webp" -> { t43, tsq }
 {
   const want = (src, k) => { if (!tileWanted.has(src)) tileWanted.set(src, {}); tileWanted.get(src)[k] = true; };
   for (const pg of pages.values()) for (const t of Object.values(pg.i18n || {})) for (const b of flatBlocks(t.blocks || [])) {
-    if (b.type === "cards") for (const it of b.items || []) if (it && it.image) want(it.image, "t43");
+    if (b.type === "cards") for (const it of b.items || []) if (it && it.image) { want(it.image, "t43"); want(it.image, "tsq"); }
     if (b.type === "modules" && b.layout !== "tiles") for (const it of b.items || []) if (it && it.image) want(it.image, "tsq");
   }
 }

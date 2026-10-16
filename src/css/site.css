@@ -305,6 +305,7 @@ li:first-child > .subnav__link--logo::after { left: 0; }
 .card__img { width: 100%; height: 100%; object-fit: contain; }
 .card__media:not(.card__media--tile) .card__img { mix-blend-mode: multiply; }
 .card__media--tile { padding: 0; }
+.cards--square .card__media { aspect-ratio: 1 / 1; }
 .card__media--tile .card__img { object-fit: cover; }
 .card__body { display: flex; flex-direction: column; gap: .5rem; padding: 1.1rem 1.25rem 1.3rem; flex: 1; }
 .card__title { margin: 0; font-size: 1.02rem; line-height: 1.3; font-weight: 700; }

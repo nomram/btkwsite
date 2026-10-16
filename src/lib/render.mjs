@@ -172,19 +172,29 @@ const ancestorsOf = (path) => {
 };
 
 // ---------- blocks ----------
+// Square pictures in a 4:3 tile leave empty bars at the sides: when every picture of the block is about square, the tiles are square too
+function cardsAreSquare(ctx, b) {
+  const ratios = (b.items || []).filter((it) => it && it.image).map((it) => {
+    const i = ctx.image && ctx.image(it.image);
+    const w = (i && i.w) || it.width, h = (i && i.h) || it.height;
+    return w && h ? w / h : null;
+  });
+  return ratios.length > 0 && ratios.every((r) => r !== null && r >= 0.85 && r <= 1.2);
+}
 function renderCards(ctx, b) {
+  const square = cardsAreSquare(ctx, b);
   const items = (b.items || []).map((it, idx) => [it, idx]).filter(([it]) => shown(ctx, it.href)).map(([it, idx]) => {
     const title = it.title || titleOf(ctx, it.href);
     const href = localizeHref(ctx, it.href);
     const cinfo = it.image && !ctx.edit ? ctx.image(it.image) : null;
-    const cbaked = !!(cinfo && cinfo.tile43);
-    const img = cbaked ? `<img class="card__img" src="/assets/img/${esc(cinfo.name)}-tile43.webp" width="640" height="480" alt="${esc(it.alt || title)}" loading="lazy" decoding="async">` : it.image ? imgTag(ctx, it.image, it.alt || title, { cls: "card__img", sizes: "(min-width: 1000px) 280px, (min-width: 560px) 45vw, 100vw" }) : "";
+    const cbaked = !!(cinfo && (square ? cinfo.tilesq : cinfo.tile43));
+    const img = cbaked ? `<img class="card__img" src="/assets/img/${esc(cinfo.name)}-${square ? "tilesq" : "tile43"}.webp" width="640" height="${square ? 640 : 480}" alt="${esc(it.alt || title)}" loading="lazy" decoding="async">` : it.image ? imgTag(ctx, it.image, it.alt || title, { cls: "card__img", sizes: "(min-width: 1000px) 280px, (min-width: 560px) 45vw, 100vw" }) : "";
     const text = it.text || ctx.edit ? `<p class="card__text"${editFld(ctx, `items.${idx}.text`)}>${esc(it.text || "")}</p>` : "";
     return `<li class="card"><a class="card__link" href="${esc(href)}">` +
       (img ? `<span class="card__media${cbaked ? " card__media--tile" : ""}">${img}</span>` : "") +
       `<span class="card__body"><h${ctx._cardLevel || 3} class="card__title"${editFld(ctx, `items.${idx}.title`)}>${esc(title)}</h${ctx._cardLevel || 3}>${text}<span class="card__more">${esc(ctx.ui.read_more || "Läs mer")}${ICON.arrow}</span></span></a></li>`;
   }).join("");
-  return `<ul class="cards">${items}</ul>`;
+  return `<ul class="cards${square ? " cards--square" : ""}">${items}</ul>`;
 }
 
 function renderVideo(ctx, b) {
@@ -913,7 +923,7 @@ export function renderMain(ctx, page, t) {
   const { crumbLogo, splitHtml, rest } = composeBody(ctx, page, t);
   const crumbs = renderBreadcrumbs(ctx, page.path);
   const logo = crumbLogo
-    ? `<a class="crumbs__logo" href="${esc(localizeHref(ctx, crumbLogo.href))}" style="--crumb-h:${crumbLogoHeight(ctx, crumbLogo)}px${crumbLogo.maxWidth ? `;--crumb-logo-w:${Math.round(Number(crumbLogo.maxWidth))}px` : ""}"${ctx.edit && crumbLogo.__i != null ? ` data-bk-i="${crumbLogo.__i}" data-bk-type="image"` : ""}>${imgTag(ctx, crumbLogo.src, crumbLogo.alt || "", { sizes: "120px" })}</a>`
+    ? `<a class="crumbs__logo" href="${esc(localizeHref(ctx, crumbLogo.href))}" style="--crumb-h:${crumbLogoHeight(ctx, crumbLogo)}px${crumbLogo.maxWidth ? `;--crumb-logo-w:${Math.round(Number(crumbLogo.maxWidth))}px` : ""}"${ctx.edit && crumbLogo.__i != null ? ` data-bk-i="${crumbLogo.__i}" data-bk-type="image"` : ""}>${imgTag(ctx, crumbLogo.src, crumbLogo.alt || "", { sizes: "120px" }).replace('loading="lazy"', 'loading="eager"')}</a>`
     : "";
   const heroImg = page.hero && page.hero.image ? page.hero.image : null;
   const title = t.h1 || t.title;
@@ -930,7 +940,10 @@ export function renderMain(ctx, page, t) {
   const ownRel = flatBlocks(t.blocks || []).filter((x) => x.type === "related");
   const ownHrefs = new Set(ownRel.flatMap((x) => (x.items || []).map((i) => i && i.href)));
   ctx._relExtra = ctx.edit || !ctx.incomingRelated ? [] : ctx.incomingRelated(page.path).filter((x) => !ownHrefs.has(x.href));
-  const bodyHtml = `${splitHtml}${renderBlocks(ctx, rest)}`;
+  // The first pictures of the page body (what is in view when the page opens) load at once; everything further down stays lazy
+  // and is fetched top to bottom in quiet time by site.js. Without a banner, the very first picture is the most important one.
+  const prioritise = (h) => { let n = 0; return h.replace(/<img ([^>]*?)loading="lazy" decoding="async"/g, (m, a) => (++n <= 3 ? `<img ${a}loading="eager" decoding="async"${n === 1 && !heroImg ? ' fetchpriority="high"' : ""}` : m)); };
+  const bodyHtml = ctx.edit ? `${splitHtml}${renderBlocks(ctx, rest)}` : prioritise(`${splitHtml}${renderBlocks(ctx, rest)}`);
   const autoRel = !ownRel.length && ctx._relExtra.length ? `<div class="container">${renderRelated(ctx, { type: "related", items: [] })}</div>` : "";
   ctx._relExtra = [];
   return `${hero}${crumbRow}<div class="page-body page--${esc(page.template || "page")}">${bodyHtml}${autoRel}${productQuoteCta(ctx, page, t, title)}</div>`;

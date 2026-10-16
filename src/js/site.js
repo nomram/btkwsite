@@ -441,6 +441,32 @@
     });
   }
 
+  // ---------- pictures further down: fetched top to bottom once the page has settled ----------
+  // The top of the page is what the visitor sees first, so its pictures load first (eager in the HTML); the rest stay lazy for the
+  // scroll position, and in quiet time they are also fetched in page order, a few at a time, nearest to the top first.
+  (function () {
+    var conn = navigator.connection || {};
+    if (conn.saveData || /(^|-)2g$/.test(conn.effectiveType || "")) return;
+    function go() {
+      var list = [].slice.call(document.querySelectorAll("main img[loading=lazy]")).filter(function (im) { return !im.closest(".mega, .site-header, .site-footer") && !im.complete; }).slice(0, 24);
+      var i = 0, active = 0;
+      function next() {
+        while (active < 2 && i < list.length) {
+          var im = list[i++];
+          active++;
+          var done = function () { active--; next(); };
+          im.addEventListener("load", done, { once: true });
+          im.addEventListener("error", done, { once: true });
+          im.loading = "eager";
+        }
+      }
+      next();
+    }
+    function later() { if (document.hidden) document.addEventListener("visibilitychange", function once() { if (!document.hidden) { document.removeEventListener("visibilitychange", once); go(); } }); else go(); }
+    function kick() { if (window.requestIdleCallback) window.requestIdleCallback(later, { timeout: 4000 }); else setTimeout(later, 2000); }
+    if (document.readyState === "complete") kick(); else window.addEventListener("load", kick, { once: true });
+  })();
+
   // ---------- preloading: the page you are most likely to open next is already in the cache ----------
   // Pointing at a link (or touching it) fetches that page in the background, together with its first pictures;
   // pointing at a manufacturer in the products menu also fetches that manufacturer's range pages. After the page
