@@ -123,7 +123,7 @@ a:hover { text-decoration-thickness: 2px; }
 .logorow__item { position: relative; }
 .logorow__item.is-on { border-color: var(--primary); box-shadow: 0 1px 3px rgba(35, 31, 32, .14); transform: none; }
 /* waiting marker: the bottom edge fills over the settle delay; the open panel dims after a beat */
-.logorow__item.is-pending { cursor: progress; border-color: var(--primary); }
+.logorow__item.is-pending { border-color: var(--primary); }
 .logorow__item.is-pending::after { content: ""; position: absolute; left: -1px; bottom: -1px; width: calc(100% + 2px); height: 3px; background: var(--primary); transform-origin: left; animation: intentFill var(--intent, 280ms) linear forwards; }
 @keyframes intentFill { from { transform: scaleX(0); } to { transform: scaleX(1); } }
 .mega__panel.is-on { transition: opacity .12s; }
@@ -445,6 +445,8 @@ li:first-child > .subnav__link--logo::after { left: 0; }
 .table-wrap caption { text-align: left; padding: .85rem 1rem .8rem; font-weight: 700; font-size: .95rem; border-bottom: 3px solid var(--primary); background: var(--surface); }
 .table-wrap th, .table-wrap td { padding: .62rem .9rem; text-align: left; border-bottom: 1px solid var(--line); vertical-align: middle; line-height: 1.35; }
 .table-wrap thead th { background: var(--dark); color: #fff; font-weight: 600; font-size: .76rem; letter-spacing: .04em; vertical-align: bottom; }
+.table-wrap tbody th a { color: inherit; text-decoration: none; }
+.table-wrap tbody th a:hover { text-decoration: underline; text-decoration-color: var(--primary); text-decoration-thickness: 2px; text-underline-offset: .2em; }
 .table-wrap tbody th { font-weight: 700; background: var(--surface); white-space: nowrap; position: sticky; left: 0; z-index: 1; box-shadow: 1px 0 0 var(--line); }
 .table-wrap tbody tr:nth-child(even) td { background: #faf9f7; }
 .table-wrap tbody tr:hover td { background: #fff4e8; }

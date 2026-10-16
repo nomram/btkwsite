@@ -203,8 +203,9 @@ function renderTable(ctx, b) {
   const th = head || grp
     ? `<thead>${grp}${head ? `<tr class="tbl__cols">${head.map((c, x) => `<th scope="col"${tone(x)}${editFld(ctx, `rows.0.${x}`)}>${esc(c)}</th>`).join("")}</tr>` : ""}</thead>`
     : "";
+  const linkOf = (y) => (!ctx.edit && Array.isArray(b.links) && b.links[y] ? localizeHref(ctx, b.links[y]) : "");
   const tb = `<tbody>${body.map((r, y) => `<tr>${r.map((c, i) => (i === 0
-    ? `<th scope="row"${editFld(ctx, `rows.${y + off}.${i}`)}>${esc(c)}</th>`
+    ? `<th scope="row"${editFld(ctx, `rows.${y + off}.${i}`)}>${linkOf(y) ? `<a href="${esc(linkOf(y))}">${esc(c)}</a>` : esc(c)}</th>`
     : `<td${tone(i)}${editFld(ctx, `rows.${y + off}.${i}`)}>${esc(c)}</td>`)).join("")}</tr>`).join("")}</tbody>`;
   // short numeric cells read better centred; text-heavy tables stay left-aligned
   const cells = body.flatMap((r) => r.slice(1));
