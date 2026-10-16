@@ -143,6 +143,14 @@ function heroImgTag(ctx, page, src) {
   return pos ? tag.replace("<img ", `<img style="object-position:${pos}" `) : tag;
 }
 
+// Corner logo height by shape: every logo gets roughly the same visual weight (area), so a compact emblem is taller than a long word-mark
+function crumbLogoHeight(ctx, b) {
+  const i = ctx.image && ctx.image(b.src);
+  const w = (i && i.w) || b.width, h = (i && i.h) || b.height;
+  const ratio = w && h ? w / h : 3;
+  return Math.round(Math.min(46, Math.max(20, Math.sqrt(3000 / ratio))));
+}
+
 // ---------- helpers ----------
 // A page is listed (menus, cards, strips, crumbs) when it is not hidden for this language and exists in it or in the default language.
 const shown = (ctx, p) => !(ctx.hidden && ctx.hidden(p, ctx.lang)) && !!(ctx.tr(p, ctx.lang) || ctx.tr(p, ctx.defaultLang));
@@ -905,7 +913,7 @@ export function renderMain(ctx, page, t) {
   const { crumbLogo, splitHtml, rest } = composeBody(ctx, page, t);
   const crumbs = renderBreadcrumbs(ctx, page.path);
   const logo = crumbLogo
-    ? `<a class="crumbs__logo" href="${esc(localizeHref(ctx, crumbLogo.href))}"${crumbLogo.maxWidth ? ` style="--crumb-logo-w:${Math.round(Number(crumbLogo.maxWidth))}px"` : ""}${ctx.edit && crumbLogo.__i != null ? ` data-bk-i="${crumbLogo.__i}" data-bk-type="image"` : ""}>${imgTag(ctx, crumbLogo.src, crumbLogo.alt || "", { sizes: "120px" })}</a>`
+    ? `<a class="crumbs__logo" href="${esc(localizeHref(ctx, crumbLogo.href))}" style="--crumb-h:${crumbLogoHeight(ctx, crumbLogo)}px${crumbLogo.maxWidth ? `;--crumb-logo-w:${Math.round(Number(crumbLogo.maxWidth))}px` : ""}"${ctx.edit && crumbLogo.__i != null ? ` data-bk-i="${crumbLogo.__i}" data-bk-type="image"` : ""}>${imgTag(ctx, crumbLogo.src, crumbLogo.alt || "", { sizes: "120px" })}</a>`
     : "";
   const heroImg = page.hero && page.hero.image ? page.hero.image : null;
   const title = t.h1 || t.title;
