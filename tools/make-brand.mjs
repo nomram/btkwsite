@@ -9,11 +9,15 @@ const B = path.join(ROOT, "static/assets/brand");
 const S = path.join(ROOT, "static");
 const logo = fs.readFileSync(path.join(B, "logo.svg"));
 let mark = fs.readFileSync(path.join(B, "mark-source.svg"), "utf8");
-// the mark lives in a 10000x18000 canvas with lots of padding: crop to the artwork
-mark = mark.replace(/viewBox="[^"]+"/, 'viewBox="1250 6200 8000 6500"');
+// the mark lives in a 10000x18000 canvas with lots of padding: crop to the artwork, with room for a white outline
+// (the dark part of the mark disappears on a dark browser tab without it). The outline is drawn behind the fill;
+// 333 path units (the group is scaled 3x) show as about 2 px at 32 px and 1 px at 16 px.
+const OUTLINE = 333;
+mark = mark.replace(/viewBox="[^"]+"/, 'viewBox="730 5680 9040 7540"');
+mark = mark.replace(/stroke: none;/g, `stroke: #ffffff; stroke-opacity: 1; stroke-width: ${OUTLINE}; stroke-linejoin: round; paint-order: stroke;`);
 fs.writeFileSync(path.join(S, "favicon.svg"), mark);
 // raster copy with explicit size: the source canvas is huge, never rasterise it at its own size
-const markSized = mark.replace("<svg ", '<svg width="800" height="650" ');
+const markSized = mark.replace("<svg ", '<svg width="904" height="754" ');
 
 await sharp(logo, { density: 300 }).resize({ width: 800 }).png().toFile(path.join(B, "logo.png"));
 const logoPng = await sharp(logo, { density: 300 }).resize({ width: 820 }).png().toBuffer();
