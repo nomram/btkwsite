@@ -645,6 +645,12 @@ function menuThumb(ctx, src) {
   return imgTag(ctx, src, "", { cls: "mega__thumb", sizes: "48px" });
 }
 
+// A long word-mark (much wider than high) gets the full tile width, otherwise it shrinks to a few pixels of height
+function logoIsWide(ctx, src) {
+  const i = ctx.image && ctx.image(src);
+  return !!(i && i.w && i.h && i.w / i.h > 7);
+}
+
 // Second level of the products dropdown: pointing at a manufacturer shows its ranges and models in a panel below the logos
 function megaPanel(ctx, k, id) {
   const t = ctx.tr(k, ctx.lang) || ctx.tr(k, ctx.defaultLang) || {};
@@ -704,7 +710,7 @@ function renderHeader(ctx, current) {
       const src = (ctx.pages.get(k) && ctx.pages.get(k).logo) || logos.get(k);
       const name = navTitleOf(ctx, k);
       return `<li><a class="logorow__item" href="${esc(ctx.url(k))}" data-panel="mp-${n}" aria-describedby="mp-${n}">` +
-        (src ? `<span class="logorow__img">${imgTag(ctx, src, name, { cls: "logorow__logo", sizes: "160px" })}</span>` : "") +
+        (src ? `<span class="logorow__img">${imgTag(ctx, src, name, { cls: logoIsWide(ctx, src) ? "logorow__logo logorow__logo--wide" : "logorow__logo", sizes: "160px" })}</span>` : "") +
         `<span class="logorow__name">${esc(name)}</span></a></li>`;
     }).join("");
     return `<li class="nav__item nav__item--mega${active ? " is-active" : ""}">${link}` +

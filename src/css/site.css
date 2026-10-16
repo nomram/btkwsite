@@ -117,6 +117,7 @@ a:hover { text-decoration-thickness: 2px; }
 .logorow__item:hover, .logorow__item:focus-visible { border-color: var(--primary); transform: translateY(-2px); box-shadow: var(--shadow); }
 .logorow__img { display: grid; place-items: center; width: 100%; min-width: 0; height: 40px; overflow: hidden; }
 .logorow__logo { max-height: 36px; max-width: min(88px, 100%); width: auto; height: auto; object-fit: contain; }
+.logorow__logo--wide { max-width: 100%; max-height: none; }
 .logorow__name { max-width: 100%; font-size: .72rem; font-weight: 600; line-height: 1.3; color: var(--muted); text-align: center; overflow-wrap: anywhere; }
 
 /* ---------- products menu: brand flyout (second level) ---------- */
@@ -639,6 +640,7 @@ dialog.search::backdrop { background: rgba(35, 31, 32, .6); }
   .logorow__item.is-on::after { content: none; }
   .logorow__img { flex: none; width: 4.6rem; height: 2.4rem; }
   .logorow__logo { max-height: 2.2rem; max-width: 100%; }
+  .logorow__item:has(.logorow__logo--wide) .logorow__img { width: 7rem; }
   .logorow__name { flex: 1; margin: 0; text-align: left; font-size: .9rem; color: var(--text); }
   .logorow__item::before { content: ""; order: 3; flex: none; width: .55rem; height: .55rem; margin-right: .2rem; border-right: 2px solid var(--muted); border-bottom: 2px solid var(--muted); transform: rotate(45deg) translateY(-2px); transition: transform .2s; }
   .logorow__item.is-on::before { transform: rotate(225deg) translateY(-1px); border-color: var(--primary); }
