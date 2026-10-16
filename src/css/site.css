@@ -242,9 +242,9 @@ li:first-child > .subnav__link--logo::after { left: 0; }
 .breadcrumbs a:hover { text-decoration-color: var(--primary); }
 .breadcrumbs [aria-current] { color: var(--muted); }
 .crumbs__logo { flex: none; display: block; }
-.crumbs__logo img { height: 57px; width: auto; max-width: 240px; object-fit: contain; }
-.crumbs__logo[style*="--crumb-logo-w"] img { height: auto; width: var(--crumb-logo-w); max-width: 100%; max-height: 57px; }
-@media (max-width: 560px) { .crumbs__logo img { height: 44px; max-width: 150px; } }
+.crumbs__logo img { height: 28px; width: auto; max-width: 120px; object-fit: contain; }
+.crumbs__logo[style*="--crumb-logo-w"] img { height: auto; width: var(--crumb-logo-w); max-width: 100%; max-height: 28px; }
+@media (max-width: 560px) { .crumbs__logo img { height: 22px; max-width: 96px; } }
 
 /* ---------- content ---------- */
 .page-body { padding-bottom: 2.5rem; }
@@ -454,6 +454,11 @@ li:first-child > .subnav__link--logo::after { left: 0; }
 .table-wrap tbody tr:last-child > * { border-bottom: 0; }
 .table-wrap--center td, .table-wrap--center thead th:not(:first-child) { text-align: center; }
 .table-wrap--narrow { max-width: 40rem; }
+/* compact: a short comparison table does not need the full page width; the label column stays slim */
+.table-wrap--compact, .prose > .table-wrap--compact { max-width: 46rem; }
+.table-wrap--compact table { min-width: 0; font-size: .86rem; }
+.table-wrap--compact th, .table-wrap--compact td { padding: .5rem .8rem; }
+.table-wrap--compact tbody th, .table-wrap--compact thead th:first-child { width: 10.5rem; }
 .table-wrap--narrow table { min-width: 0; }
 /* column groups: the group colour runs down the whole column as a faint tint */
 .table-wrap--groups thead tr.tbl__groups th { text-align: center; font-size: .78rem; letter-spacing: .05em; padding: .7rem .8rem; border-bottom: 0; }
@@ -652,11 +657,11 @@ dialog.search::backdrop { background: rgba(35, 31, 32, .6); }
 /* phone header like the original site: menu button left, wide logo, search right; flags move into the menu */
 .nav__langs { display: none; }
 @media (max-width: 980px) {
-  .site-header__inner { gap: .25rem; }
+  .site-header__inner { gap: .25rem; width: calc(100% - 1rem); }
   .header-tools { display: contents; }
   .header-tools .lang { display: none; }
-  .nav-toggle { order: -1; margin-left: -.6rem; }
-  .logo { margin-left: .3rem; }
+  .nav-toggle { order: -1; margin-left: -.5rem; }
+  .logo { margin-left: 0; }
   .logo img { width: clamp(150px, 56vw, 230px); }
   .header-tools .icon-btn { order: 3; margin-left: auto; margin-right: -.45rem; }
   .nav__langs { display: flex; flex-wrap: wrap; gap: .5rem; list-style: none; margin: 1rem 0 0; padding: 0; }

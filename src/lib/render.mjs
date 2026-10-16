@@ -16,6 +16,12 @@
 export const esc = (s) => String(s ?? "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
 const stripTags = (h) => String(h || "").replace(/<[^>]+>/g, " ").replace(/&nbsp;/g, " ").replace(/&amp;/g, "&").replace(/\s+/g, " ").trim();
 const fmtSize = (n) => (n >= 1e6 ? (n / 1e6).toFixed(1).replace(".", ",") + " MB" : Math.max(1, Math.round(n / 1e3)) + " kB");
+// Shown the Swedish way on the Swedish site and internationally (+46 ...) in every other language
+export const phoneText = (ctx, v) => {
+  const raw = String(v == null ? "" : v).trim();
+  if (!ctx || !ctx.lang || ctx.lang === ctx.defaultLang || raw.startsWith("+") || !raw.startsWith("0")) return raw;
+  return raw.replace(/^0\s*/, "+46 ").replace("-", " ");
+};
 export const telHref = (v) => {
   const d = String(v).replace(/[^\d+]/g, "");
   return "tel:" + (d.startsWith("+") ? d : d.startsWith("0") ? "+46" + d.slice(1) : d);
@@ -211,7 +217,7 @@ function renderTable(ctx, b) {
   const cells = body.flatMap((r) => r.slice(1));
   const avg = cells.length ? cells.reduce((n, c) => n + String(c).length, 0) / cells.length : 0;
   const centre = b.align === "center" || (b.align !== "left" && avg <= 16);
-  const cls = ["table-wrap", groups.length ? "table-wrap--groups" : "", centre ? "table-wrap--center" : "", b.narrow ? "table-wrap--narrow" : ""].filter(Boolean).join(" ");
+  const cls = ["table-wrap", groups.length ? "table-wrap--groups" : "", centre ? "table-wrap--center" : "", b.narrow ? "table-wrap--narrow" : "", b.compact ? "table-wrap--compact" : ""].filter(Boolean).join(" ");
   return `<div class="${cls}" tabindex="0" role="region" aria-label="${esc(b.caption || ctx.ui.table_label || "Tabell")}"><table>${b.caption ? `<caption>${esc(b.caption)}</caption>` : ""}${th}${tb}</table></div>`;
 }
 
@@ -220,7 +226,7 @@ function renderDatasheet(ctx, b) {
   const groups = (b.groups || []).map((g, gi) => {
     const hasUs = g.rows.some((r) => r.us);
     const hasMetric = g.rows.some((r) => r.metric);
-    const head = hasMetric || hasUs
+    const head = hasUs
       ? `<thead><tr><th scope="col"><span class="sr-only">${esc(ctx.ui.spec_property || "Egenskap")}</span></th>${hasMetric ? `<th scope="col">${esc(ctx.ui.spec_metric || "Metriskt")}</th>` : ""}${hasUs ? `<th scope="col">${esc(ctx.ui.spec_us || "Imperial")}</th>` : ""}</tr></thead>`
       : "";
     return `<div class="spec">${g.title ? `<h3 class="spec__title"${editFld(ctx, `groups.${gi}.title`)}>${esc(g.title)}</h3>` : ""}<table>${head}<tbody>${g.rows.map((r, ri) =>
@@ -245,7 +251,7 @@ function renderContact(ctx) {
   const parts = [];
   if (c.person && c.person.name) parts.push(`<li><span class="contact__label">${esc(ctx.ui.contact_person || "Kontaktperson")}</span><span>${esc(c.person.name)}</span></li>`);
   if (c.email) parts.push(`<li><span class="contact__label">${esc(ctx.ui.contact_email || "E-post")}</span><a href="mailto:${esc(c.email)}">${esc(c.email)}</a></li>`);
-  for (const p of c.phones || []) parts.push(`<li><span class="contact__label">${esc(p.label || ctx.ui.contact_phone || "Telefon")}</span><a href="${esc(telHref(p.value))}">${esc(p.value)}</a></li>`);
+  for (const p of c.phones || []) parts.push(`<li><span class="contact__label">${esc(p.label || ctx.ui.contact_phone || "Telefon")}</span><a href="${esc(telHref(p.value))}">${esc(phoneText(ctx, p.value))}</a></li>`);
   if (c.address) parts.push(`<li><span class="contact__label">${esc(ctx.ui.contact_address || "Adress")}</span><span>${esc(c.address)}</span></li>`);
   const hours = hoursText(ctx);
   if (hours) parts.push(`<li><span class="contact__label">${esc(ctx.ui.contact_hours || "Kontorstid")}</span><span>${esc(hours)}</span></li>`);
@@ -694,7 +700,7 @@ function renderCallBar(ctx) {
   const phones = (ctx.site.contact || {}).phones || [];
   const p = phones.find((x) => /^\s*(\+?46|0)\s*-?\s*7/.test(x.value || "")) || phones.find((x) => /mobil|mobile|móvil/i.test(x.label || "")) || phones[0];
   if (!p) return "";
-  return `<div class="callbar" data-callbar><span class="callbar__fire" aria-hidden="true"><span class="callbar__flow"></span><span class="callbar__blob b1"></span><span class="callbar__blob b2"></span><span class="callbar__blob b3"></span><span class="callbar__glow"><i></i></span></span><a class="callbar__link" href="${esc(telHref(p.value))}">${ICON.phone}<span class="callbar__text">${esc(ctx.ui.call_us || "Ring oss")}</span><span class="callbar__num">${esc(p.value)}</span></a></div>`;
+  return `<div class="callbar" data-callbar><span class="callbar__fire" aria-hidden="true"><span class="callbar__flow"></span><span class="callbar__blob b1"></span><span class="callbar__blob b2"></span><span class="callbar__blob b3"></span><span class="callbar__glow"><i></i></span></span><a class="callbar__link" href="${esc(telHref(p.value))}">${ICON.phone}<span class="callbar__text">${esc(ctx.ui.call_us || "Ring oss")}</span><span class="callbar__num">${esc(phoneText(ctx, p.value))}</span></a></div>`;
 }
 
 function renderFooter(ctx) {
@@ -706,7 +712,7 @@ function renderFooter(ctx) {
   const privacyPath = s.privacyPath && ctx.pages.has(s.privacyPath) && avail(s.privacyPath) ? s.privacyPath : null;
   const social = (s.social || []).map((x) => `<li><a class="ext" href="${esc(x.url)}" rel="noopener me" target="_blank">${esc(x.name)}${extLabel(ctx)}</a></li>`).join("");
   const analyticsOn = s.analytics && s.analytics.enabled && s.analytics.measurementId;
-  const phones = (c.phones || []).map((p) => `<li>${ICON.phone}<span class="sr-only">${esc(p.label || "")}: </span><a href="${esc(telHref(p.value))}">${esc(p.value)}</a></li>`).join("");
+  const phones = (c.phones || []).map((p) => `<li>${ICON.phone}<span class="sr-only">${esc(p.label || "")}: </span><a href="${esc(telHref(p.value))}">${esc(phoneText(ctx, p.value))}</a></li>`).join("");
   return `<footer class="site-footer"><div class="container site-footer__grid">` +
     `<div class="site-footer__about"><img class="site-footer__logo" src="/assets/brand/logo-white.svg" alt="${esc(s.name)}" width="190" height="30" loading="lazy">` +
     `<p>${esc(s.legalName || s.name)}</p>${s.orgNumber ? `<p class="muted">${esc(ctx.ui.org_no || "Org.nr")} ${esc(s.orgNumber)}</p>` : ""}${s.tagline ? `<p class="muted">${esc(ctx.site.tagline)}</p>` : ""}</div>` +

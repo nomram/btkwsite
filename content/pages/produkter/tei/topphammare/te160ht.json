@@ -55,28 +55,23 @@
               "rows": [
                 {
                   "label": "Rotationsmoment",
-                  "metric": "1357 Nm",
-                  "us": "1000 lbf-ft"
+                  "metric": "1357 Nm"
                 },
                 {
                   "label": "Rotationsflöde",
-                  "metric": "38 - 76 lpm",
-                  "us": "10 - 20 gpm"
+                  "metric": "38 - 76 lpm"
                 },
                 {
                   "label": "Rotationstryck",
-                  "metric": "175 bar",
-                  "us": "2500 psi"
+                  "metric": "175 bar"
                 },
                 {
                   "label": "Vikt",
-                  "metric": "78 kg",
-                  "us": "171 lb"
+                  "metric": "78 kg"
                 },
                 {
                   "label": "Varvtal",
-                  "metric": "200 rpm",
-                  "us": "200 rpm"
+                  "metric": "200 rpm"
                 }
               ]
             },
@@ -85,23 +80,19 @@
               "rows": [
                 {
                   "label": "Uteffekt",
-                  "metric": "9 kW",
-                  "us": "12 hp"
+                  "metric": "9 kW"
                 },
                 {
                   "label": "Hammarflöde",
-                  "metric": "61 lpm",
-                  "us": "16 gpm"
+                  "metric": "61 lpm"
                 },
                 {
                   "label": "Hammartryck",
-                  "metric": "155 bar",
-                  "us": "2250 psi"
+                  "metric": "155 bar"
                 },
                 {
                   "label": "Slagfrekvens",
-                  "metric": "110 Hz",
-                  "us": "6600 bpm"
+                  "metric": "110 Hz"
                 }
               ]
             },
@@ -110,23 +101,19 @@
               "rows": [
                 {
                   "label": "Vattentryck",
-                  "metric": "10 bar",
-                  "us": "105 psi"
+                  "metric": "10 bar"
                 },
                 {
                   "label": "Vattenflöde",
-                  "metric": "25 lpm",
-                  "us": "7 gpm"
+                  "metric": "25 lpm"
                 },
                 {
                   "label": "Lufttryck",
-                  "metric": "8 bar",
-                  "us": "110 psi"
+                  "metric": "8 bar"
                 },
                 {
                   "label": "Luftflöde",
-                  "metric": "5 m³/min",
-                  "us": "179 cfm"
+                  "metric": "5 m³/min"
                 }
               ]
             }
@@ -189,28 +176,23 @@
               "rows": [
                 {
                   "label": "Rotation torque",
-                  "metric": "1357 Nm",
-                  "us": "1000 lbf-ft"
+                  "metric": "1357 Nm"
                 },
                 {
                   "label": "Rotation flow",
-                  "metric": "38 - 76 lpm",
-                  "us": "10 - 20 gpm"
+                  "metric": "38 - 76 lpm"
                 },
                 {
                   "label": "Rotation pressure",
-                  "metric": "175 bar",
-                  "us": "2500 psi"
+                  "metric": "175 bar"
                 },
                 {
                   "label": "Weight",
-                  "metric": "78 kg",
-                  "us": "171 lb"
+                  "metric": "78 kg"
                 },
                 {
                   "label": "Speed",
-                  "metric": "200 rpm",
-                  "us": "200 rpm"
+                  "metric": "200 rpm"
                 }
               ]
             },
@@ -219,23 +201,19 @@
               "rows": [
                 {
                   "label": "Output power",
-                  "metric": "9 kW",
-                  "us": "12 hp"
+                  "metric": "9 kW"
                 },
                 {
                   "label": "Hammer flow",
-                  "metric": "61 lpm",
-                  "us": "16 gpm"
+                  "metric": "61 lpm"
                 },
                 {
                   "label": "Hammer pressure",
-                  "metric": "155 bar",
-                  "us": "2250 psi"
+                  "metric": "155 bar"
                 },
                 {
                   "label": "Blow frequency",
-                  "metric": "110 Hz",
-                  "us": "6600 bpm"
+                  "metric": "110 Hz"
                 }
               ]
             },
@@ -244,23 +222,19 @@
               "rows": [
                 {
                   "label": "Water pressure",
-                  "metric": "10 bar",
-                  "us": "105 psi"
+                  "metric": "10 bar"
                 },
                 {
                   "label": "Water flow",
-                  "metric": "25 lpm",
-                  "us": "7 gpm"
+                  "metric": "25 lpm"
                 },
                 {
                   "label": "Air pressure",
-                  "metric": "8 bar",
-                  "us": "110 psi"
+                  "metric": "8 bar"
                 },
                 {
                   "label": "Air flow",
-                  "metric": "5 m³/min",
-                  "us": "179 cfm"
+                  "metric": "5 m³/min"
                 }
               ]
             }
@@ -324,28 +298,23 @@
               "rows": [
                 {
                   "label": "Par de rotación",
-                  "metric": "1357 Nm",
-                  "us": "1000 lbf-ft"
+                  "metric": "1357 Nm"
                 },
                 {
                   "label": "Caudal de rotación",
-                  "metric": "38 - 76 lpm",
-                  "us": "10 - 20 gpm"
+                  "metric": "38 - 76 lpm"
                 },
                 {
                   "label": "Presión de rotación",
-                  "metric": "175 bar",
-                  "us": "2500 psi"
+                  "metric": "175 bar"
                 },
                 {
                   "label": "Peso",
-                  "metric": "78 kg",
-                  "us": "171 lb"
+                  "metric": "78 kg"
                 },
                 {
                   "label": "Velocidad",
-                  "metric": "200 rpm",
-                  "us": "200 rpm"
+                  "metric": "200 rpm"
                 }
               ]
             },
@@ -354,23 +323,19 @@
               "rows": [
                 {
                   "label": "Potencia de salida",
-                  "metric": "9 kW",
-                  "us": "12 hp"
+                  "metric": "9 kW"
                 },
                 {
                   "label": "Caudal del martillo",
-                  "metric": "61 lpm",
-                  "us": "16 gpm"
+                  "metric": "61 lpm"
                 },
                 {
                   "label": "Presión del martillo",
-                  "metric": "155 bar",
-                  "us": "2250 psi"
+                  "metric": "155 bar"
                 },
                 {
                   "label": "Frecuencia de golpeo",
-                  "metric": "110 Hz",
-                  "us": "6600 bpm"
+                  "metric": "110 Hz"
                 }
               ]
             },
@@ -379,23 +344,19 @@
               "rows": [
                 {
                   "label": "Presión de agua",
-                  "metric": "10 bar",
-                  "us": "105 psi"
+                  "metric": "10 bar"
                 },
                 {
                   "label": "Caudal de agua",
-                  "metric": "25 lpm",
-                  "us": "7 gpm"
+                  "metric": "25 lpm"
                 },
                 {
                   "label": "Presión de aire",
-                  "metric": "8 bar",
-                  "us": "110 psi"
+                  "metric": "8 bar"
                 },
                 {
                   "label": "Caudal de aire",
-                  "metric": "5 m³/min",
-                  "us": "179 cfm"
+                  "metric": "5 m³/min"
                 }
               ]
             }
@@ -459,28 +420,23 @@
               "rows": [
                 {
                   "label": "Rotasjonsmoment",
-                  "metric": "1357 Nm",
-                  "us": "1000 lbf-ft"
+                  "metric": "1357 Nm"
                 },
                 {
                   "label": "Rotasjonsflyt",
-                  "metric": "38 - 76 lpm",
-                  "us": "10 - 20 gpm"
+                  "metric": "38 - 76 lpm"
                 },
                 {
                   "label": "Rotasjonstrykk",
-                  "metric": "175 bar",
-                  "us": "2500 psi"
+                  "metric": "175 bar"
                 },
                 {
                   "label": "Vekt",
-                  "metric": "78 kg",
-                  "us": "171 lb"
+                  "metric": "78 kg"
                 },
                 {
                   "label": "Turtall",
-                  "metric": "200 rpm",
-                  "us": "200 rpm"
+                  "metric": "200 rpm"
                 }
               ]
             },
@@ -489,23 +445,19 @@
               "rows": [
                 {
                   "label": "Utgangseffekt",
-                  "metric": "9 kW",
-                  "us": "12 hp"
+                  "metric": "9 kW"
                 },
                 {
                   "label": "Hammerflyt",
-                  "metric": "61 lpm",
-                  "us": "16 gpm"
+                  "metric": "61 lpm"
                 },
                 {
                   "label": "Hammertrykk",
-                  "metric": "155 bar",
-                  "us": "2250 psi"
+                  "metric": "155 bar"
                 },
                 {
                   "label": "Slagfrekvens",
-                  "metric": "110 Hz",
-                  "us": "6600 bpm"
+                  "metric": "110 Hz"
                 }
               ]
             },
@@ -514,23 +466,19 @@
               "rows": [
                 {
                   "label": "Vanntrykk",
-                  "metric": "10 bar",
-                  "us": "105 psi"
+                  "metric": "10 bar"
                 },
                 {
                   "label": "Vannmengde",
-                  "metric": "25 lpm",
-                  "us": "7 gpm"
+                  "metric": "25 lpm"
                 },
                 {
                   "label": "Lufttrykk",
-                  "metric": "8 bar",
-                  "us": "110 psi"
+                  "metric": "8 bar"
                 },
                 {
                   "label": "Luftmengde",
-                  "metric": "5 m³/min",
-                  "us": "179 cfm"
+                  "metric": "5 m³/min"
                 }
               ]
             }
