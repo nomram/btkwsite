@@ -253,9 +253,9 @@ li:first-child > .subnav__link--logo::after { left: 0; }
 .prose { padding-block: 1.25rem 0; }
 .prose > * { max-width: 46rem; }
 .prose > .cards, .prose > .gallery, .prose > .table-wrap, .prose > .video, .prose > .figure, .prose > .datasheet, .prose > .chips, .prose > .contact, .prose > .docs { max-width: none; }
-.prose h2 { font-size: clamp(1.3rem, 1rem + .9vw, 1.65rem); line-height: 1.25; margin: 2.2rem 0 .8rem; font-weight: 600; letter-spacing: -.005em; }
+.prose h2 { font-size: clamp(1.3rem, 1rem + .9vw, 1.65rem); line-height: 1.25; margin: 2.2rem 0 .8rem; font-weight: 700; letter-spacing: -.005em; }
 .prose h2:first-child { margin-top: .5rem; }
-.prose h3 { font-size: 1.15rem; margin: 1.6rem 0 .5rem; font-weight: 600; }
+.prose h3 { font-size: 1.15rem; margin: 1.6rem 0 .5rem; font-weight: 700; }
 .prose p { margin: 0 0 1.1rem; }
 .prose ul, .prose ol { padding-left: 1.2rem; margin: 0 0 1.4rem; }
 .prose li { margin: .35rem 0; }
@@ -273,7 +273,8 @@ li:first-child > .subnav__link--logo::after { left: 0; }
 @media (max-width: 860px) {
   .split { grid-template-columns: 1fr; gap: .9rem; padding-block: .8rem 2rem; }
   /* stacked: a tall packshot must not fill the whole screen, the first lines of text should already be in view under it */
-  .split__media img { max-height: min(28vh, 240px); }
+  .split__media { justify-items: center; }
+  .split__media img { max-height: min(40vh, 340px); margin-inline: auto; object-position: center; }
 }
 
 .figure { margin: 0 0 1.5rem; }

@@ -61,8 +61,9 @@
           ]
         },
         {
-          "type": "text",
-          "html": "Tillval:"
+          "type": "heading",
+          "level": 3,
+          "text": "Tillval"
         },
         {
           "type": "list",
@@ -162,8 +163,9 @@
           ]
         },
         {
-          "type": "text",
-          "html": "Options:"
+          "type": "heading",
+          "level": 3,
+          "text": "Options"
         },
         {
           "type": "list",
@@ -264,8 +266,9 @@
           ]
         },
         {
-          "type": "text",
-          "html": "Opciones:"
+          "type": "heading",
+          "level": 3,
+          "text": "Opciones"
         },
         {
           "type": "list",
@@ -366,8 +369,9 @@
           ]
         },
         {
-          "type": "text",
-          "html": "Tilvalg:"
+          "type": "heading",
+          "level": 3,
+          "text": "Tilvalg"
         },
         {
           "type": "list",

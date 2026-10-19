@@ -55,8 +55,9 @@
           ]
         },
         {
-          "type": "text",
-          "html": "Övriga specifikationer:"
+          "type": "heading",
+          "level": 3,
+          "text": "Övriga specifikationer"
         },
         {
           "type": "list",
@@ -135,8 +136,9 @@
           ]
         },
         {
-          "type": "text",
-          "html": "Other specifications:"
+          "type": "heading",
+          "level": 3,
+          "text": "Other specifications"
         },
         {
           "type": "list",
@@ -216,8 +218,9 @@
           ]
         },
         {
-          "type": "text",
-          "html": "Otras especificaciones:"
+          "type": "heading",
+          "level": 3,
+          "text": "Otras especificaciones"
         },
         {
           "type": "list",
@@ -297,8 +300,9 @@
           ]
         },
         {
-          "type": "text",
-          "html": "Øvrige spesifikasjoner:"
+          "type": "heading",
+          "level": 3,
+          "text": "Øvrige spesifikasjoner"
         },
         {
           "type": "list",
