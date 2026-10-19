@@ -202,9 +202,9 @@
           "type": "list",
           "ordered": false,
           "items": [
-            "Flexibilitet: Borrning i trånga utrymmen och svårtillgängliga platser.",
-            "Kraftfull prestanda: Stabil och effektiv borrning även i tuffa miljöer.",
-            "Precision: Perfekt för bergstabilisering, källarförstärkning och grundarbeten."
+            "<strong>Flexibilitet</strong>: Borrning i trånga utrymmen och svårtillgängliga platser.",
+            "<strong>Kraftfull prestanda</strong>: Stabil och effektiv borrning även i tuffa miljöer.",
+            "<strong>Precision</strong>: Perfekt för bergstabilisering, källarförstärkning och grundarbeten."
           ]
         },
         {
@@ -480,9 +480,9 @@
           "type": "list",
           "ordered": false,
           "items": [
-            "Flexibility: Drilling in confined spaces and hard-to-reach places.",
-            "Powerful performance: Stable and efficient drilling even in tough environments.",
-            "Precision: Perfect for rock stabilisation, basement reinforcement and foundation work."
+            "<strong>Flexibility:</strong> Drilling in confined spaces and hard-to-reach places.",
+            "<strong>Powerful performance:</strong> Stable and efficient drilling even in tough environments.",
+            "<strong>Precision:</strong> Perfect for rock stabilisation, basement reinforcement and foundation work."
           ]
         },
         {
@@ -684,67 +684,64 @@
           "driveId": "1TZo_-Gk9hB1hhtZsoTcoxZSWMTvCrwkB"
         },
         {
-          "type": "image",
-          "alt": "Carrusel de imágenes",
-          "width": 332,
-          "height": 398,
-          "src": "/assets/img/tei-borrmaster-mp260-3.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Carrusel de imágenes",
-          "width": 1920,
-          "height": 1440,
-          "src": "/assets/img/tei-borrmaster-mp260-4.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Carrusel de imágenes",
-          "width": 356,
-          "height": 456,
-          "src": "/assets/img/tei-borrmaster-mp260-5.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Carrusel de imágenes",
-          "width": 243,
-          "height": 368,
-          "src": "/assets/img/tei-borrmaster-mp260-6.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Carrusel de imágenes",
-          "width": 357,
-          "height": 415,
-          "src": "/assets/img/tei-borrmaster-mp260-7.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Carrusel de imágenes",
-          "width": 306,
-          "height": 273,
-          "src": "/assets/img/tei-borrmaster-mp260-8.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Carrusel de imágenes",
-          "width": 306,
-          "height": 273,
-          "src": "/assets/img/tei-borrmaster-mp260-9.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Carrusel de imágenes",
-          "width": 332,
-          "height": 347,
-          "src": "/assets/img/tei-borrmaster-mp260-10.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Carrusel de imágenes",
-          "width": 285,
-          "height": 360,
-          "src": "/assets/img/tei-borrmaster-mp260-11.webp"
+          "type": "carousel",
+          "items": [
+            {
+              "src": "/assets/img/tei-borrmaster-mp260-3.webp",
+              "alt": "Carrusel de imágenes",
+              "width": 332,
+              "height": 398
+            },
+            {
+              "src": "/assets/img/tei-borrmaster-mp260-4.webp",
+              "alt": "Carrusel de imágenes",
+              "width": 1920,
+              "height": 1440
+            },
+            {
+              "src": "/assets/img/tei-borrmaster-mp260-5.webp",
+              "alt": "Carrusel de imágenes",
+              "width": 356,
+              "height": 456
+            },
+            {
+              "src": "/assets/img/tei-borrmaster-mp260-6.webp",
+              "alt": "Carrusel de imágenes",
+              "width": 243,
+              "height": 368
+            },
+            {
+              "src": "/assets/img/tei-borrmaster-mp260-7.webp",
+              "alt": "Carrusel de imágenes",
+              "width": 357,
+              "height": 415
+            },
+            {
+              "src": "/assets/img/tei-borrmaster-mp260-8.webp",
+              "alt": "Carrusel de imágenes",
+              "width": 306,
+              "height": 273
+            },
+            {
+              "src": "/assets/img/tei-borrmaster-mp260-9.webp",
+              "alt": "Carrusel de imágenes",
+              "width": 306,
+              "height": 273
+            },
+            {
+              "src": "/assets/img/tei-borrmaster-mp260-10.webp",
+              "alt": "Carrusel de imágenes",
+              "width": 332,
+              "height": 347
+            },
+            {
+              "src": "/assets/img/tei-borrmaster-mp260-11.webp",
+              "alt": "Carrusel de imágenes",
+              "width": 285,
+              "height": 360
+            }
+          ],
+          "autoplay": false
         },
         {
           "type": "text",
@@ -762,9 +759,9 @@
           "type": "list",
           "ordered": false,
           "items": [
-            "Flexibilidad: perforación en espacios reducidos y lugares de difícil acceso.",
-            "Rendimiento potente: perforación estable y eficiente incluso en entornos exigentes.",
-            "Precisión: perfecto para estabilización de roca, refuerzo de sótanos y trabajos de cimentación."
+            "<strong>Flexibilidad:</strong> perforación en espacios reducidos y lugares de difícil acceso.",
+            "<strong>Rendimiento potente:</strong> perforación estable y eficiente incluso en entornos exigentes.",
+            "<strong>Precisión:</strong> perfecto para estabilización de roca, refuerzo de sótanos y trabajos de cimentación."
           ]
         },
         {
@@ -1041,9 +1038,9 @@
           "type": "list",
           "ordered": false,
           "items": [
-            "Fleksibilitet: Boring i trange rom og vanskelig tilgjengelige steder.",
-            "Kraftig ytelse: Stabil og effektiv boring selv i tøffe miljøer.",
-            "Presisjon: Perfekt for bergsikring, kjellerforsterkning og grunnarbeider."
+            "<strong>Fleksibilitet:</strong> Boring i trange rom og vanskelig tilgjengelige steder.",
+            "<strong>Kraftig ytelse:</strong> Stabil og effektiv boring selv i tøffe miljøer.",
+            "<strong>Presisjon:</strong> Perfekt for bergsikring, kjellerforsterkning og grunnarbeider."
           ]
         },
         {

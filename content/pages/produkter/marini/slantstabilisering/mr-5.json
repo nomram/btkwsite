@@ -47,7 +47,7 @@
         },
         {
           "type": "text",
-          "html": "MR 5 är en rigg på hjul för enkel förflyttning. Kan utrustas med olika typer av hjul samt korgar för borrstängerna. MR 5 kan antingen vara hydrauliska (MR5 ID) eller pneumatiska (MR5 PN). Läs med i broschyrerna nedan."
+          "html": "<strong>MR 5</strong> är en rigg på hjul för enkel förflyttning. Kan utrustas med olika typer av hjul samt korgar för borrstängerna. MR 5 kan antingen vara hydrauliska (MR5 ID) eller pneumatiska (MR5 PN). Läs med i broschyrerna nedan."
         },
         {
           "type": "text",
@@ -126,7 +126,7 @@
         },
         {
           "type": "text",
-          "html": "MR 5 is a wheeled rig for easy movement. It can be fitted with different types of wheels and baskets for the drill rods. MR 5 can be either hydraulic (MR5 ID) or pneumatic (MR5 PN). Read more in the brochures below."
+          "html": "<strong>MR 5</strong> is a wheeled rig for easy movement. It can be fitted with different types of wheels and baskets for the drill rods. MR 5 can be either hydraulic (MR5 ID) or pneumatic (MR5 PN). Read more in the brochures below."
         },
         {
           "type": "text",
@@ -181,29 +181,32 @@
           "src": "/assets/img/logo-marini.webp"
         },
         {
-          "type": "image",
-          "alt": "Carrusel de imágenes",
-          "width": 343,
-          "height": 328,
-          "src": "/assets/img/marini-slantstabilisering-mr-5-2.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Carrusel de imágenes",
-          "width": 347,
-          "height": 324,
-          "src": "/assets/img/marini-slantstabilisering-mr-5-3.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Carrusel de imágenes",
-          "width": 348,
-          "height": 328,
-          "src": "/assets/img/marini-slantstabilisering-mr-5-4.webp"
+          "type": "carousel",
+          "items": [
+            {
+              "src": "/assets/img/marini-slantstabilisering-mr-5-2.webp",
+              "alt": "Carrusel de imágenes",
+              "width": 343,
+              "height": 328
+            },
+            {
+              "src": "/assets/img/marini-slantstabilisering-mr-5-3.webp",
+              "alt": "Carrusel de imágenes",
+              "width": 347,
+              "height": 324
+            },
+            {
+              "src": "/assets/img/marini-slantstabilisering-mr-5-4.webp",
+              "alt": "Carrusel de imágenes",
+              "width": 348,
+              "height": 328
+            }
+          ],
+          "autoplay": false
         },
         {
           "type": "text",
-          "html": "El MR 5 es un equipo sobre ruedas para facilitar el desplazamiento. Puede equiparse con distintos tipos de ruedas y cestas para las barras de perforación. El MR 5 puede ser hidráulico (MR5 ID) o neumático (MR5 PN). Consulte más información en los folletos que figuran a continuación."
+          "html": "El <strong>MR 5</strong> es un equipo sobre ruedas para facilitar el desplazamiento. Puede equiparse con distintos tipos de ruedas y cestas para las barras de perforación. El MR 5 puede ser hidráulico (MR5 ID) o neumático (MR5 PN). Consulte más información en los folletos que figuran a continuación."
         },
         {
           "type": "text",
@@ -283,7 +286,7 @@
         },
         {
           "type": "text",
-          "html": "MR 5 er en rigg på hjul for enkel forflytning. Den kan utstyres med ulike typer hjul og kurver for borstengene. MR 5 kan enten være hydraulisk (MR5 ID) eller pneumatisk (MR5 PN). Les mer i brosjyrene nedenfor."
+          "html": "<strong>MR 5</strong> er en rigg på hjul for enkel forflytning. Den kan utstyres med ulike typer hjul og kurver for borstengene. MR 5 kan enten være hydraulisk (MR5 ID) eller pneumatisk (MR5 PN). Les mer i brosjyrene nedenfor."
         },
         {
           "type": "text",

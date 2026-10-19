@@ -537,39 +537,40 @@
           "src": "/assets/img/tei-2.webp"
         },
         {
-          "type": "image",
-          "alt": "Carrusel de imágenes",
-          "width": 1024,
-          "height": 950,
-          "src": "/assets/img/tei-borrmaster-hem-2.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Carrusel de imágenes",
-          "width": 708,
-          "height": 563,
-          "src": "/assets/img/tei-borrmaster-hem-3.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Carrusel de imágenes",
-          "width": 1536,
-          "height": 2048,
-          "src": "/assets/img/tei-borrmaster-hem-4.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Carrusel de imágenes",
-          "width": 1798,
-          "height": 1408,
-          "src": "/assets/img/tei-borrmaster-hem-5.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Carrusel de imágenes",
-          "width": 800,
-          "height": 800,
-          "src": "/assets/img/tei-borrmaster-hem-6.webp"
+          "type": "carousel",
+          "items": [
+            {
+              "src": "/assets/img/tei-borrmaster-hem-2.webp",
+              "alt": "Carrusel de imágenes",
+              "width": 1024,
+              "height": 950
+            },
+            {
+              "src": "/assets/img/tei-borrmaster-hem-3.webp",
+              "alt": "Carrusel de imágenes",
+              "width": 708,
+              "height": 563
+            },
+            {
+              "src": "/assets/img/tei-borrmaster-hem-4.webp",
+              "alt": "Carrusel de imágenes",
+              "width": 1536,
+              "height": 2048
+            },
+            {
+              "src": "/assets/img/tei-borrmaster-hem-5.webp",
+              "alt": "Carrusel de imágenes",
+              "width": 1798,
+              "height": 1408
+            },
+            {
+              "src": "/assets/img/tei-borrmaster-hem-6.webp",
+              "alt": "Carrusel de imágenes",
+              "width": 800,
+              "height": 800
+            }
+          ],
+          "autoplay": false
         },
         {
           "type": "text",

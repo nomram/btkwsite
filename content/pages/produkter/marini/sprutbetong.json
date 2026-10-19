@@ -231,32 +231,34 @@
           "driveId": "1ecMiKcn9MMZ4A09FXVKtBN1SAgcdwbvd"
         },
         {
-          "type": "image",
-          "alt": "Carrusel de imágenes",
-          "width": 1500,
-          "height": 2000,
-          "src": "/assets/img/marini-sprutbetong-3.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Carrusel de imágenes",
-          "width": 1600,
-          "height": 1200,
-          "src": "/assets/img/marini-sprutbetong-4.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Carrusel de imágenes",
-          "width": 1200,
-          "height": 1600,
-          "src": "/assets/img/marini-sprutbetong-5.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Carrusel de imágenes",
-          "width": 1920,
-          "height": 1440,
-          "src": "/assets/img/marini-sprutbetong-6.webp"
+          "type": "carousel",
+          "items": [
+            {
+              "src": "/assets/img/marini-sprutbetong-3.webp",
+              "alt": "Carrusel de imágenes",
+              "width": 1500,
+              "height": 2000
+            },
+            {
+              "src": "/assets/img/marini-sprutbetong-4.webp",
+              "alt": "Carrusel de imágenes",
+              "width": 1600,
+              "height": 1200
+            },
+            {
+              "src": "/assets/img/marini-sprutbetong-5.webp",
+              "alt": "Carrusel de imágenes",
+              "width": 1200,
+              "height": 1600
+            },
+            {
+              "src": "/assets/img/marini-sprutbetong-6.webp",
+              "alt": "Carrusel de imágenes",
+              "width": 1920,
+              "height": 1440
+            }
+          ],
+          "autoplay": false
         },
         {
           "type": "video",

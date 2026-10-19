@@ -46,7 +46,7 @@
             "Pumpkapacitet: 2 m³/h",
             "Maxtryck: 100 bar",
             "Max partikelstorlek: 5 mm",
-            "Antal kolvar: 2 (dubbelpump)",
+            "Antal kolvar: <strong>2</strong> (dubbelpump)",
             "Vikt: 700 kg"
           ]
         },
@@ -191,7 +191,7 @@
             "Pump capacity: 2 m³/h",
             "Max. pressure: 100 bar",
             "Max. particle size: 5 mm",
-            "Number of pistons: 2 (double pump)",
+            "Number of pistons: <strong>2</strong> (double pump)",
             "Weight: 700 kg"
           ]
         },
@@ -337,7 +337,7 @@
             "Capacidad de la bomba: 2 m³/h",
             "Presión máx.: 100 bar",
             "Tamaño máx. de partícula: 5 mm",
-            "Número de pistones: 2 (bomba doble)",
+            "Número de pistones: <strong>2</strong> (bomba doble)",
             "Peso: 700 kg"
           ]
         },
@@ -368,18 +368,22 @@
           "src": "/assets/img/haeny-manuella-pumpar-ic-325-ic325-ccp-3.webp"
         },
         {
-          "type": "image",
-          "alt": "Carrusel de imágenes",
-          "width": 728,
-          "height": 815,
-          "src": "/assets/img/haeny-manuella-pumpar-ic-325-ic325-ccp-4.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Carrusel de imágenes",
-          "width": 800,
-          "height": 800,
-          "src": "/assets/img/haeny-manuella-pumpar-ic-325-ic325-ccp-5.webp"
+          "type": "carousel",
+          "items": [
+            {
+              "src": "/assets/img/haeny-manuella-pumpar-ic-325-ic325-ccp-4.webp",
+              "alt": "Carrusel de imágenes",
+              "width": 728,
+              "height": 815
+            },
+            {
+              "src": "/assets/img/haeny-manuella-pumpar-ic-325-ic325-ccp-5.webp",
+              "alt": "Carrusel de imágenes",
+              "width": 800,
+              "height": 800
+            }
+          ],
+          "autoplay": false
         },
         {
           "type": "heading",
@@ -479,7 +483,7 @@
             "Pumpekapasitet: 2 m³/t",
             "Maks. trykk: 100 bar",
             "Maks. partikkelstørrelse: 5 mm",
-            "Antall stempler: 2 (dobbeltpumpe)",
+            "Antall stempler: <strong>2</strong> (dobbeltpumpe)",
             "Vekt: 700 kg"
           ]
         },

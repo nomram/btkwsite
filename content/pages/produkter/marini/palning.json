@@ -30,7 +30,7 @@
         },
         {
           "type": "text",
-          "html": "MR - P är Marinis serie kompakta och kraftfulla pålningsriggar, designade för att leverera precision och effektivitet i krävande projekt. Dessa riggar, som arbetar med Kelly-bar-system samt jordskruv (auger), är kända för sin mångsidighet och robusta prestanda. Med borrdjup som sträcker sig från 18 meter till 32 meter och en maximal borrdiameter på upp till 1 300 mm, är MR-P serien perfekt för olika typer av markförhållanden och projekt."
+          "html": "MR - P är Marinis serie kompakta och kraftfulla pålningsriggar, designade för att leverera precision och effektivitet i krävande projekt. Dessa riggar, som arbetar med Kelly-bar-system samt jordskruv (auger), är kända för sin mångsidighet och robusta prestanda. Med borrdjup som sträcker sig från 18 meter till 32 meter och en maximal borrdiameter på upp till 1 300 mm, är <strong>MR-P</strong> serien perfekt för olika typer av markförhållanden och projekt."
         },
         {
           "type": "text",
@@ -289,7 +289,7 @@
         },
         {
           "type": "text",
-          "html": "MR-P is Marini’s series of compact and powerful piling rigs, designed to deliver precision and efficiency in demanding projects. These rigs, which work with Kelly-bar systems and augers, are known for their versatility and robust performance. With drilling depths ranging from 18 metres to 32 metres and a maximum drilling diameter of up to 1,300 mm, the MR-P series is perfect for different types of ground conditions and projects."
+          "html": "<strong>MR-P</strong> is Marini’s series of compact and powerful piling rigs, designed to deliver precision and efficiency in demanding projects. These rigs, which work with Kelly-bar systems and augers, are known for their versatility and robust performance. With drilling depths ranging from 18 metres to 32 metres and a maximum drilling diameter of up to 1,300 mm, the MR-P series is perfect for different types of ground conditions and projects."
         },
         {
           "type": "text",
@@ -549,7 +549,7 @@
         },
         {
           "type": "text",
-          "html": "MR-P es la serie de equipos de pilotaje compactos y potentes de Marini, diseñados para ofrecer precisión y eficiencia en proyectos exigentes. Estos equipos, que trabajan con sistemas Kelly y barrenas helicoidales, son conocidos por su versatilidad y su sólido rendimiento. Con profundidades de perforación de entre 18 y 32 metros y un diámetro máximo de perforación de hasta 1300 mm, la serie MR-P es perfecta para distintos tipos de terreno y proyectos."
+          "html": "<strong>MR-P</strong> es la serie de equipos de pilotaje compactos y potentes de Marini, diseñados para ofrecer precisión y eficiencia en proyectos exigentes. Estos equipos, que trabajan con sistemas Kelly y barrenas helicoidales, son conocidos por su versatilidad y su sólido rendimiento. Con profundidades de perforación de entre 18 y 32 metros y un diámetro máximo de perforación de hasta 1300 mm, la serie MR-P es perfecta para distintos tipos de terreno y proyectos."
         },
         {
           "type": "text",
@@ -578,53 +578,52 @@
           "driveId": "1ecMiKcn9MMZ4A09FXVKtBN1SAgcdwbvd"
         },
         {
-          "type": "image",
-          "alt": "Carrusel de imágenes",
-          "width": 1024,
-          "height": 768,
-          "src": "/assets/img/marini-palning-3.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Carrusel de imágenes",
-          "width": 1024,
-          "height": 768,
-          "src": "/assets/img/marini-palning-4.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Carrusel de imágenes",
-          "width": 1600,
-          "height": 1200,
-          "src": "/assets/img/marini-palning-5.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Carrusel de imágenes",
-          "width": 1600,
-          "height": 1200,
-          "src": "/assets/img/marini-palning-6.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Carrusel de imágenes",
-          "width": 1024,
-          "height": 768,
-          "src": "/assets/img/marini-palning-7.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Carrusel de imágenes",
-          "width": 1600,
-          "height": 1200,
-          "src": "/assets/img/marini-palning-8.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Carrusel de imágenes",
-          "width": 768,
-          "height": 1024,
-          "src": "/assets/img/marini-palning-9.webp"
+          "type": "carousel",
+          "items": [
+            {
+              "src": "/assets/img/marini-palning-3.webp",
+              "alt": "Carrusel de imágenes",
+              "width": 1024,
+              "height": 768
+            },
+            {
+              "src": "/assets/img/marini-palning-4.webp",
+              "alt": "Carrusel de imágenes",
+              "width": 1024,
+              "height": 768
+            },
+            {
+              "src": "/assets/img/marini-palning-5.webp",
+              "alt": "Carrusel de imágenes",
+              "width": 1600,
+              "height": 1200
+            },
+            {
+              "src": "/assets/img/marini-palning-6.webp",
+              "alt": "Carrusel de imágenes",
+              "width": 1600,
+              "height": 1200
+            },
+            {
+              "src": "/assets/img/marini-palning-7.webp",
+              "alt": "Carrusel de imágenes",
+              "width": 1024,
+              "height": 768
+            },
+            {
+              "src": "/assets/img/marini-palning-8.webp",
+              "alt": "Carrusel de imágenes",
+              "width": 1600,
+              "height": 1200
+            },
+            {
+              "src": "/assets/img/marini-palning-9.webp",
+              "alt": "Carrusel de imágenes",
+              "width": 768,
+              "height": 1024
+            }
+          ],
+          "autoplay": false
         },
         {
           "type": "heading",
@@ -638,67 +637,64 @@
           "title": "Marini Srl - MR-P 350 compact piling rig"
         },
         {
-          "type": "image",
-          "alt": "Carrusel de imágenes",
-          "width": 1920,
-          "height": 1440,
-          "src": "/assets/img/marini-palning-10.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Carrusel de imágenes",
-          "width": 1536,
-          "height": 2048,
-          "src": "/assets/img/marini-palning-11.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Carrusel de imágenes",
-          "width": 1536,
-          "height": 2048,
-          "src": "/assets/img/marini-palning-12.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Carrusel de imágenes",
-          "width": 1920,
-          "height": 1440,
-          "src": "/assets/img/marini-palning-13.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Carrusel de imágenes",
-          "width": 1536,
-          "height": 2048,
-          "src": "/assets/img/marini-palning-14.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Carrusel de imágenes",
-          "width": 1920,
-          "height": 1440,
-          "src": "/assets/img/marini-palning-15.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Carrusel de imágenes",
-          "width": 1920,
-          "height": 1440,
-          "src": "/assets/img/marini-palning-16.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Carrusel de imágenes",
-          "width": 1920,
-          "height": 1440,
-          "src": "/assets/img/marini-palning-17.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Carrusel de imágenes",
-          "width": 1536,
-          "height": 2048,
-          "src": "/assets/img/marini-palning-18.webp"
+          "type": "carousel",
+          "items": [
+            {
+              "src": "/assets/img/marini-palning-10.webp",
+              "alt": "Carrusel de imágenes",
+              "width": 1920,
+              "height": 1440
+            },
+            {
+              "src": "/assets/img/marini-palning-11.webp",
+              "alt": "Carrusel de imágenes",
+              "width": 1536,
+              "height": 2048
+            },
+            {
+              "src": "/assets/img/marini-palning-12.webp",
+              "alt": "Carrusel de imágenes",
+              "width": 1536,
+              "height": 2048
+            },
+            {
+              "src": "/assets/img/marini-palning-13.webp",
+              "alt": "Carrusel de imágenes",
+              "width": 1920,
+              "height": 1440
+            },
+            {
+              "src": "/assets/img/marini-palning-14.webp",
+              "alt": "Carrusel de imágenes",
+              "width": 1536,
+              "height": 2048
+            },
+            {
+              "src": "/assets/img/marini-palning-15.webp",
+              "alt": "Carrusel de imágenes",
+              "width": 1920,
+              "height": 1440
+            },
+            {
+              "src": "/assets/img/marini-palning-16.webp",
+              "alt": "Carrusel de imágenes",
+              "width": 1920,
+              "height": 1440
+            },
+            {
+              "src": "/assets/img/marini-palning-17.webp",
+              "alt": "Carrusel de imágenes",
+              "width": 1920,
+              "height": 1440
+            },
+            {
+              "src": "/assets/img/marini-palning-18.webp",
+              "alt": "Carrusel de imágenes",
+              "width": 1536,
+              "height": 2048
+            }
+          ],
+          "autoplay": false
         },
         {
           "type": "heading",
@@ -813,7 +809,7 @@
         },
         {
           "type": "text",
-          "html": "MR-P er Marinis serie kompakte og kraftige peleriggger, konstruert for å levere presisjon og effektivitet i krevende prosjekter. Disse riggene, som arbeider med Kelly-bar-systemer samt jordskruer (auger), er kjent for sin allsidighet og robuste ytelse. Med boredyp fra 18 meter til 32 meter og en maksimal borediameter på opptil 1 300 mm er MR-P-serien perfekt for ulike typer grunnforhold og prosjekter."
+          "html": "<strong>MR-P</strong> er Marinis serie kompakte og kraftige peleriggger, konstruert for å levere presisjon og effektivitet i krevende prosjekter. Disse riggene, som arbeider med Kelly-bar-systemer samt jordskruer (auger), er kjent for sin allsidighet og robuste ytelse. Med boredyp fra 18 meter til 32 meter og en maksimal borediameter på opptil 1 300 mm er MR-P-serien perfekt for ulike typer grunnforhold og prosjekter."
         },
         {
           "type": "text",

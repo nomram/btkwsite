@@ -293,32 +293,34 @@
           "driveId": "12C2EatakW1x2v675WiRWD7N99Hnhj7gq"
         },
         {
-          "type": "image",
-          "alt": "Carrusel de imágenes",
-          "width": 1478,
-          "height": 1108,
-          "src": "/assets/img/haeny-manuella-pumpar-ic-310-ic-311-3.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Carrusel de imágenes",
-          "width": 1108,
-          "height": 1478,
-          "src": "/assets/img/haeny-manuella-pumpar-ic-310-ic-311-4.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Carrusel de imágenes",
-          "width": 1478,
-          "height": 1108,
-          "src": "/assets/img/haeny-manuella-pumpar-ic-310-ic-311-5.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Carrusel de imágenes",
-          "width": 1108,
-          "height": 1478,
-          "src": "/assets/img/haeny-manuella-pumpar-ic-310-ic-311-6.webp"
+          "type": "carousel",
+          "items": [
+            {
+              "src": "/assets/img/haeny-manuella-pumpar-ic-310-ic-311-3.webp",
+              "alt": "Carrusel de imágenes",
+              "width": 1478,
+              "height": 1108
+            },
+            {
+              "src": "/assets/img/haeny-manuella-pumpar-ic-310-ic-311-4.webp",
+              "alt": "Carrusel de imágenes",
+              "width": 1108,
+              "height": 1478
+            },
+            {
+              "src": "/assets/img/haeny-manuella-pumpar-ic-310-ic-311-5.webp",
+              "alt": "Carrusel de imágenes",
+              "width": 1478,
+              "height": 1108
+            },
+            {
+              "src": "/assets/img/haeny-manuella-pumpar-ic-310-ic-311-6.webp",
+              "alt": "Carrusel de imágenes",
+              "width": 1108,
+              "height": 1478
+            }
+          ],
+          "autoplay": false
         },
         {
           "type": "text",
