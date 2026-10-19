@@ -151,6 +151,7 @@ function panelBlock() {
           ${F(t("link_to"), `<div class="row nowrap"><input type="text" data-bf="items.${ci}.href" value="${esc(it.href || "")}" placeholder="${esc(t("no_link"))}"><button class="btn sm ghost" data-act="mod-link" data-ci="${ci}">${esc(t("choose"))}</button></div>`)}
         </div>`).join("") +
         F(t("rc_note"), `<textarea data-bf="note" rows="2">${esc(b.note || "")}</textarea>`) +
+        F(t("rc_caution_f"), `<textarea data-bf="caution" rows="3" placeholder="${esc(t("rc_caution_ph"))}">${esc(b.caution || "")}</textarea>`, t("rc_caution_hint")) +
         `<div class="btnrow"><button class="btn sm primary" data-act="rc-add">${IC.plus}<span>${esc(t("rc_add"))}</span></button></div>`;
       break;
     }

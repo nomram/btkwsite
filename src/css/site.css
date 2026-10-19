@@ -338,7 +338,7 @@ li:first-child > .subnav__link--logo::after { left: 0; }
 .rc__title, .prose .rc__title { margin: 0 0 .35rem; font-size: 1.25rem; line-height: 1.3; font-weight: 700; }
 .rc__intro { margin: 0 0 1.1rem; max-width: 46rem; color: var(--muted); font-size: .94rem; }
 .rc__note { margin: 1rem 0 0; font-size: .8rem; color: var(--muted); max-width: 52rem; }
-.rc__chart { position: relative; --lab: 6.4rem; }
+.rc__chart { position: relative; --lab: 9.2rem; }
 .rc__axis { display: grid; grid-template-columns: var(--lab) minmax(0, 1fr); align-items: end; margin-bottom: .35rem; }
 .rc__unit { font-size: .66rem; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); line-height: 1.2; padding-right: .5rem; }
 .rc__scale { position: relative; height: 1.3rem; }
@@ -357,16 +357,33 @@ a.rc__label:hover { color: var(--primary); }
 .rc__val { font-size: .76rem; font-weight: 700; color: var(--dark); white-space: nowrap; }
 .rc__bar--out .rc__val { position: absolute; left: 100%; margin-left: .5rem; }
 .rc__row:hover .rc__bar { background: #ff8f1f; }
-.rc--selector .rc__row.is-out { opacity: .38; }
+.rc--selector .rc__row.is-out { opacity: .6; }
 .rc--selector .rc__row.is-in .rc__bar { background: var(--dark); }
 .rc--selector .rc__row.is-in .rc__val { color: #fff; }
 .rc--selector .rc__row.is-in .rc__bar--out .rc__val { color: var(--dark); }
 .rc__marker { position: absolute; top: 1.6rem; bottom: 0; left: calc(var(--lab) + (100% - var(--lab)) * var(--pos, 0)); width: 0; border-left: 2px dashed var(--dark); pointer-events: none; z-index: 0; transition: left .08s linear; }
-.rc__pick { display: grid; grid-template-columns: auto minmax(8rem, 22rem) auto; gap: .5rem 1rem; align-items: center; margin: 0 0 1rem; }
-.rc__pick label { font-weight: 700; font-size: .9rem; }
-.rc__pick input[type=range] { width: 100%; accent-color: var(--primary); }
-.rc__out { font-weight: 800; min-width: 4.5rem; font-variant-numeric: tabular-nums; }
-.rc__result { grid-column: 1 / -1; margin: 0; font-size: .95rem; font-weight: 600; min-height: 1.5em; }
+/* picker: the label, then the chosen size big, with the slider right next to it on the left */
+.rc__pick { display: grid; grid-template-columns: max-content minmax(11rem, 24rem); column-gap: 1.1rem; row-gap: .2rem; align-items: center; justify-content: start; margin: 0 0 1.2rem; }
+.rc__pick label { grid-column: 1 / -1; font-weight: 800; font-size: .72rem; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); }
+.rc__out { grid-column: 1; grid-row: 2; font-size: clamp(2rem, 1.4rem + 2vw, 2.9rem); line-height: 1.05; font-weight: 800; letter-spacing: -.01em; min-width: 6.3ch; font-variant-numeric: tabular-nums; color: var(--text); }
+.rc__slider { grid-column: 2; grid-row: 2; position: relative; padding: .7rem 0 1.5rem; }
+.rc__pick input[type=range] { width: 100%; margin: 0; accent-color: var(--primary); cursor: ew-resize; }
+.rc__result { grid-column: 1 / -1; margin: .7rem 0 0; font-size: 1.02rem; font-weight: 700; min-height: 1.5em; }
+.rc__caution { grid-column: 1 / -1; display: flex; gap: .5rem; align-items: flex-start; margin: .5rem 0 0; padding: .6rem .8rem; max-width: 46rem; font-size: .84rem; line-height: 1.45; color: var(--text); background: #fff6ea; border-left: 3px solid var(--primary); border-radius: 2px; }
+.rc__caution svg { flex: none; margin-top: .12rem; color: var(--primary); }
+/* the finger shows once how to use the slider: it slides to the right and back, then goes away for good */
+.rc__hand { position: absolute; left: calc(var(--hp, 0) * (100% - 22px) + 11px); top: 1.15rem; width: 38px; height: 38px; margin-left: -11px; pointer-events: none; opacity: 0; filter: drop-shadow(0 2px 3px rgba(35, 31, 32, .3)); }
+.rc__slider.is-demo .rc__hand { animation: rcHand 3.4s ease-in-out 2 both; }
+@keyframes rcHand { 0% { opacity: 0; transform: translate(-6px, 10px) scale(.9); } 12% { opacity: 1; transform: translate(0, 0) scale(1); } 22% { opacity: 1; transform: translate(0, 0) scale(.94); } 62% { opacity: 1; transform: translate(min(130px, 28vw), 0) scale(.94); } 78% { opacity: 1; transform: translate(0, 0) scale(.94); } 88% { opacity: 1; transform: translate(0, 0) scale(1); } 100% { opacity: 0; transform: translate(0, 8px) scale(.92); } }
+@media (prefers-reduced-motion: reduce) { .rc__slider.is-demo .rc__hand { animation: none; } }
+/* model labels with a small picture */
+.rc__lab { display: flex; align-items: center; gap: .5rem; min-width: 0; }
+.rc__ico { flex: none; width: 30px; height: 30px; border: 1px solid var(--line); border-radius: 2px; background: var(--surface); }
+/* what the slider picked, echoed in the data table and the model tiles below: the fitting ones are bright, the others stay visible but calmer */
+.is-fit, .is-dim { transition: opacity .25s ease, box-shadow .25s ease, background-color .25s ease; }
+.is-dim { opacity: .6; }
+tr.is-fit > th, tr.is-fit > td { background-color: #fff1e0 !important; }
+.module.is-fit, .card.is-fit { border-color: var(--primary); box-shadow: 0 0 0 1px var(--primary), var(--shadow); }
 .rc__scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; background: #fff; border: 1px solid var(--line); border-radius: var(--radius); }
 .rc__matrix { border-collapse: collapse; width: 100%; font-size: .85rem; min-width: 34rem; }
 .rc__matrix th, .rc__matrix td { padding: .5rem .6rem; border: 1px solid var(--line); text-align: center; }
@@ -378,14 +395,15 @@ a.rc__label:hover { color: var(--primary); }
 .rc__matrix td.is-part span { background: repeating-linear-gradient(135deg, var(--primary) 0 5px, #ffc680 5px 10px); }
 @media (max-width: 640px) {
   .rc { padding: 1.1rem 1rem; }
-  .rc__chart { --lab: 4.3rem; }
+  .rc__chart { --lab: 6.4rem; }
+  .rc__ico { width: 24px; height: 24px; }
+  .rc__lab { gap: .35rem; }
   .rc__label { font-size: .85rem; }
   .rc__unit { font-size: .58rem; }
   /* narrow screens: only the widest bars keep their value inside, the others show it beside the bar; every second scale number is dropped */
   .rc__bar:not(.rc__bar--big) .rc__val, .rc--selector .rc__row.is-in .rc__bar:not(.rc__bar--big) .rc__val { position: absolute; left: 100%; margin-left: .45rem; color: var(--dark); }
   .rc__scale span:nth-child(even):not(.is-last) { display: none; }
-  .rc__pick { grid-template-columns: 1fr auto; }
-  .rc__pick label { grid-column: 1 / -1; }
+  .rc__pick { grid-template-columns: auto minmax(0, 1fr); column-gap: 1rem; }
 }
 
 /* ---------- related pages: slim rail ---------- */

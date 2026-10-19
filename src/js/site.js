@@ -448,19 +448,36 @@
   [].forEach.call(document.querySelectorAll("[data-rc=selector]"), function (box) {
     var input = box.querySelector("input[type=range]"), out = box.querySelector(".rc__out"), res = box.querySelector(".rc__result"), marker = box.querySelector(".rc__marker");
     var rows = [].slice.call(box.querySelectorAll(".rc__row")), top = Number(box.getAttribute("data-top")) || 100, unit = res.getAttribute("data-unit") || "mm";
+    var slider = box.querySelector(".rc__slider");
+    // the data table rows and model tiles on this page that belong to the models in the chart follow the slider as well
+    function keyOf(s) { return String(s || "").replace(/\s+/g, " ").trim().toUpperCase(); }
+    var known = {}, echo = [];
+    rows.forEach(function (r) { known[keyOf(r.querySelector(".rc__label").textContent)] = 1; });
+    [].forEach.call(document.querySelectorAll("main .table-wrap tbody tr"), function (tr) { var th = tr.querySelector("th"), k = th && keyOf(th.textContent); if (k && known[k]) echo.push({ el: tr, key: k }); });
+    [].forEach.call(document.querySelectorAll("main .module, main .card"), function (m) { var t = m.querySelector(".module__title, .card__title"), k = t && keyOf(t.textContent); if (k && known[k]) echo.push({ el: m, key: k }); });
     function sync() {
-      var v = Number(input.value), fits = [];
+      var v = Number(input.value), fits = [], fitKeys = {};
       box.style.setProperty("--pos", String(v / top));
+      slider.style.setProperty("--hp", String((v - Number(input.min)) / Math.max(1, Number(input.max) - Number(input.min))));
       out.textContent = v + " " + unit;
       rows.forEach(function (r) {
         var ok = v >= Number(r.getAttribute("data-min")) && v <= Number(r.getAttribute("data-max"));
         r.classList.toggle("is-in", ok); r.classList.toggle("is-out", !ok);
-        if (ok) fits.push(r.querySelector(".rc__label").textContent);
+        if (ok) { fits.push(r.querySelector(".rc__label").textContent); fitKeys[keyOf(r.querySelector(".rc__label").textContent)] = 1; }
       });
+      echo.forEach(function (x) { var on = !!fitKeys[x.key]; x.el.classList.toggle("is-fit", fits.length > 0 && on); x.el.classList.toggle("is-dim", fits.length > 0 && !on); });
       res.textContent = fits.length ? res.getAttribute("data-fits") + ": " + fits.join(", ") : res.getAttribute("data-none");
     }
-    input.addEventListener("input", sync);
+    // the finger: shown once, when the chart comes into view; any touch of the slider ends it
+    var stopped = false;
+    function stopHint() { if (stopped) return; stopped = true; slider.classList.remove("is-demo"); }
+    input.addEventListener("input", function () { stopHint(); sync(); });
+    ["pointerdown", "keydown", "touchstart"].forEach(function (ev) { input.addEventListener(ev, stopHint, { passive: true }); });
     sync();
+    if ("IntersectionObserver" in window && !(window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches)) {
+      var io = new IntersectionObserver(function (en) { if (en[0].isIntersecting) { io.disconnect(); if (!stopped) { slider.classList.add("is-demo"); setTimeout(stopHint, 7600); } } }, { threshold: 0.6 });
+      io.observe(slider);
+    }
   });
 
   // ---------- pictures further down: fetched top to bottom once the page has settled ----------
