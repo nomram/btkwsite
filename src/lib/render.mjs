@@ -61,6 +61,7 @@ function blockIsEmpty(b) {
     case "carousel": return !(b.items || []).some((x) => x && x.src);
     case "modules": return !(b.items || []).length;
     case "related": return !(b.items || []).some((it) => it && it.href);
+    case "rangechart": return !(b.items || []).some((it) => it && it.label);
     case "html": return !(b.html || "").trim();
     case "columns": return !((b.left || []).length || (b.right || []).length);
     case "heading": case "text": return false;
@@ -351,6 +352,50 @@ function relatedInfo(ctx, it) {
   }
   return { title: it.title || navTitleOf(ctx, p), sub: it.text || brand, image };
 }
+// "Which model for my size?": every model is a bar on a shared scale (hole size in mm). Layouts: bars (default), selector (bars plus
+// a slider that marks a size and lists the models that fit) and matrix (stepped table of the size brackets each model covers).
+let _rcId = 0;
+function renderRangeChart(ctx, b) {
+  const rows = (b.items || []).filter((it) => it && it.label && Number.isFinite(Number(it.min)) && Number.isFinite(Number(it.max)) && String(it.min) !== "" && String(it.max) !== "" && Number(it.max) >= Number(it.min))
+    .map((it) => ({ ...it, min: Number(it.min), max: Number(it.max) }));
+  if (!rows.length) return "";
+  if (b.sort !== false) rows.sort((x, y) => x.min - y.min || x.max - y.max);
+  const u = ctx.ui, unit = b.unit || "mm";
+  const step = Math.max(1, Number(b.step) || 25);
+  const top = Math.max(step, Math.ceil(Math.max(...rows.map((r) => r.max)) / step) * step);
+  const layout = b.layout === "selector" || b.layout === "matrix" ? b.layout : "bars";
+  const id = "rc" + ++_rcId;
+  const pct = (v) => ((v / top) * 100).toFixed(2);
+  const fmt = (r) => (r.min === r.max ? String(r.min) : r.min + "-" + r.max) + " " + unit;
+  const label = (r) => (r.href ? `<a class="rc__label" href="${esc(localizeHref(ctx, r.href))}">${esc(r.label)}</a>` : `<span class="rc__label">${esc(r.label)}</span>`);
+  const head = `<h2 class="rc__title"${editFld(ctx, "title")}>${esc(b.title || u.rc_title || "Vilken modell passar ditt mått?")}</h2>` +
+    (b.intro || ctx.edit ? `<p class="rc__intro"${editFld(ctx, "intro")}>${esc(b.intro || "")}</p>` : "");
+  const foot = b.note || ctx.edit ? `<p class="rc__note"${editFld(ctx, "note")}>${esc(b.note || "")}</p>` : "";
+  if (layout === "matrix") {
+    const bins = []; for (let s = 0; s < top; s += step) bins.push([s, s + step]);
+    const first = bins.findIndex(([s, e]) => rows.some((r) => r.max > s && r.min < e));
+    const use = bins.slice(Math.max(0, first));
+    const th = use.map(([s, e]) => `<th scope="col">${s}-${e}</th>`).join("");
+    const body = rows.map((r) => `<tr><th scope="row">${label(r)}<span class="rc__sub">${esc(fmt(r))}</span></th>` + use.map(([s, e]) => {
+      const cov = r.max > s && r.min < e;
+      const full = r.min <= s && r.max >= e;
+      return `<td class="${cov ? (full ? "is-full" : "is-part") : ""}"${cov ? ` aria-label="${esc(r.label)} ${s}-${e} ${esc(unit)}"` : ""}>${cov ? "<span></span>" : ""}</td>`;
+    }).join("") + "</tr>").join("");
+    return `<section class="rc rc--matrix">${head}<div class="rc__scroll" tabindex="0" role="region" aria-label="${esc(b.title || u.rc_title || "")}"><table class="rc__matrix"><thead><tr><th scope="col">${esc(u.rc_hole || "Hålstorlek")} (${esc(unit)})</th>${th}</tr></thead><tbody>${body}</tbody></table></div>${foot}</section>`;
+  }
+  const ticks = []; for (let v = 0; v <= top; v += step) ticks.push(v);
+  const axis = ticks.map((v, i) => `<span style="left:${pct(v)}%"${i === 0 ? ' class="is-first"' : i === ticks.length - 1 ? ' class="is-last"' : ""}>${v}</span>`).join("");
+  const body = rows.map((r) => {
+    const w = r.max - r.min, wide = (w / top) * 100 >= 22;
+    const bar = `<span class="rc__bar${wide ? "" : " rc__bar--out"}${(w / top) * 100 >= 45 ? " rc__bar--big" : ""}" style="left:${pct(r.min)}%;width:${Math.max(((w / top) * 100), 1.2).toFixed(2)}%"><span class="rc__val">${esc(fmt(r))}</span></span>`;
+    return `<li class="rc__row" data-min="${r.min}" data-max="${r.max}">${label(r)}<div class="rc__track">${bar}</div></li>`;
+  }).join("");
+  const pick = layout === "selector"
+    ? `<div class="rc__pick"><label for="${id}">${esc(u.rc_pick || "Ditt hål")}</label><input id="${id}" type="range" min="${Math.max(0, ticks[0])}" max="${top}" step="1" value="${Math.round((rows[0].min + rows[0].max) / 2)}"><output class="rc__out" for="${id}"></output><p class="rc__result" aria-live="polite" data-fits="${esc(u.rc_fits || "Passar")}" data-none="${esc(u.rc_none || "Ingen modell täcker detta mått")}" data-unit="${esc(unit)}"></p></div>`
+    : "";
+  return `<section class="rc rc--${layout}"${layout === "selector" ? ' data-rc="selector"' : ""} data-top="${top}" style="--top:${top};--ticks:${ticks.length - 1}">${head}${pick}<div class="rc__chart"><div class="rc__axis" aria-hidden="true"><span class="rc__unit">${esc(u.rc_hole || "Hålstorlek")} (${esc(unit)})</span><div class="rc__scale">${axis}</div></div><ol class="rc__rows">${body}</ol>${layout === "selector" ? '<span class="rc__marker" aria-hidden="true"></span>' : ""}</div>${foot}</section>`;
+}
+
 function renderRelated(ctx, b) {
   const extra = ctx._relExtra || [];
   ctx._relExtra = [];
@@ -513,6 +558,7 @@ function renderBlockInner(ctx, b) {
     case "carousel": return renderCarousel(ctx, b.items, b);
     case "modules": return renderModules(ctx, b);
     case "related": return renderRelated(ctx, b);
+    case "rangechart": return renderRangeChart(ctx, b);
     case "chips": return renderChips(ctx, b);
     case "cta": return renderCta(ctx, b);
     case "html": return b.html || "";

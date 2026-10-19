@@ -47,6 +47,7 @@ function visitBlock(b, pre, P, cb) {
     (it.bullets || []).forEach((x, n) => cb(id(`items.${j}.bullets.${n}`), x, (v) => (it.bullets[n] = v)));
     if (it.doc && it.doc.text) cb(id(`items.${j}.doc.text`), it.doc.text, (v) => (it.doc.text = v));
   });
+  if (b.type === "rangechart") for (const k of ["title", "intro", "note"]) if (b[k]) cb(id(k), b[k], (v) => (b[k] = v));
   if (b.type === "related") {
     if (b.title) cb(id("title"), b.title, (v) => (b.title = v));
     (b.items || []).forEach((it, j) => {

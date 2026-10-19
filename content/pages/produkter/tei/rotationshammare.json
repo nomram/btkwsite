@@ -45,6 +45,47 @@
           "html": "<a href=\"/kontakta-oss\">Kontakta oss</a> för mer information."
         },
         {
+          "type": "rangechart",
+          "layout": "bars",
+          "unit": "mm",
+          "step": 100,
+          "title": "Vilket rotationshuvud passar ditt hål?",
+          "intro": "Varje modell täcker ett intervall av hålstorlekar. Hitta ditt mått på skalan och välj en modell vars stapel täcker det. Där staplarna överlappar passar flera modeller, välj då efter vridmoment och spolaxelns innerdiameter (se tabellen längre ner).",
+          "note": "Hålstorlekar enligt tabellen nedan (TEI:s rekommenderade intervall).",
+          "items": [
+            {
+              "label": "RDS250",
+              "min": 70,
+              "max": 102,
+              "href": "/produkter/tei/rotationshammare/rds250"
+            },
+            {
+              "label": "RDS350",
+              "min": 70,
+              "max": 203,
+              "href": "/produkter/tei/rotationshammare/rds350"
+            },
+            {
+              "label": "RDS550",
+              "min": 102,
+              "max": 305,
+              "href": "/produkter/tei/rotationshammare/rds550"
+            },
+            {
+              "label": "RDS1004",
+              "min": 127,
+              "max": 610,
+              "href": "/produkter/tei/rotationshammare/rds1004"
+            },
+            {
+              "label": "RDS1500",
+              "min": 127,
+              "max": 750,
+              "href": "/produkter/tei/rotationshammare/rds1500"
+            }
+          ]
+        },
+        {
           "type": "table",
           "header": true,
           "align": "center",
@@ -178,6 +219,47 @@
         {
           "type": "text",
           "html": "<a href=\"/kontakta-oss\">Contact us</a> for more information."
+        },
+        {
+          "type": "rangechart",
+          "layout": "bars",
+          "unit": "mm",
+          "step": 100,
+          "title": "Which rotary head fits your hole size?",
+          "intro": "Each model covers a range of hole sizes. Find your size on the scale and pick a model whose bar covers it. Where the bars overlap several models fit, so choose by torque and flush shaft bore (see the table further down).",
+          "note": "Hole sizes as in the table below (TEI's recommended ranges).",
+          "items": [
+            {
+              "label": "RDS250",
+              "min": 70,
+              "max": 102,
+              "href": "/produkter/tei/rotationshammare/rds250"
+            },
+            {
+              "label": "RDS350",
+              "min": 70,
+              "max": 203,
+              "href": "/produkter/tei/rotationshammare/rds350"
+            },
+            {
+              "label": "RDS550",
+              "min": 102,
+              "max": 305,
+              "href": "/produkter/tei/rotationshammare/rds550"
+            },
+            {
+              "label": "RDS1004",
+              "min": 127,
+              "max": 610,
+              "href": "/produkter/tei/rotationshammare/rds1004"
+            },
+            {
+              "label": "RDS1500",
+              "min": 127,
+              "max": 750,
+              "href": "/produkter/tei/rotationshammare/rds1500"
+            }
+          ]
         },
         {
           "type": "table",
@@ -316,6 +398,47 @@
           "html": "<a href=\"/kontakta-oss\">Contáctenos</a> para más información."
         },
         {
+          "type": "rangechart",
+          "layout": "bars",
+          "unit": "mm",
+          "step": 100,
+          "title": "¿Qué cabezal de rotación se adapta a su barreno?",
+          "intro": "Cada modelo cubre un rango de tamaños de barreno. Busque su medida en la escala y elija un modelo cuya barra la cubra. Donde las barras se solapan, varios modelos son adecuados: elija según el par y el diámetro interior del eje (véase la tabla más abajo).",
+          "note": "Tamaños de barreno según la tabla de abajo (rangos recomendados por TEI).",
+          "items": [
+            {
+              "label": "RDS250",
+              "min": 70,
+              "max": 102,
+              "href": "/produkter/tei/rotationshammare/rds250"
+            },
+            {
+              "label": "RDS350",
+              "min": 70,
+              "max": 203,
+              "href": "/produkter/tei/rotationshammare/rds350"
+            },
+            {
+              "label": "RDS550",
+              "min": 102,
+              "max": 305,
+              "href": "/produkter/tei/rotationshammare/rds550"
+            },
+            {
+              "label": "RDS1004",
+              "min": 127,
+              "max": 610,
+              "href": "/produkter/tei/rotationshammare/rds1004"
+            },
+            {
+              "label": "RDS1500",
+              "min": 127,
+              "max": 750,
+              "href": "/produkter/tei/rotationshammare/rds1500"
+            }
+          ]
+        },
+        {
           "type": "table",
           "header": true,
           "align": "center",
@@ -450,6 +573,47 @@
         {
           "type": "text",
           "html": "<a href=\"/kontakta-oss\">Kontakt oss</a> for mer informasjon."
+        },
+        {
+          "type": "rangechart",
+          "layout": "bars",
+          "unit": "mm",
+          "step": 100,
+          "title": "Hvilket rotasjonshode passer ditt hull?",
+          "intro": "Hver modell dekker et område av hullstørrelser. Finn ditt mål på skalaen og velg en modell hvis stolpe dekker det. Der stolpene overlapper passer flere modeller, velg da etter dreiemoment og spyleakslingens innerdiameter (se tabellen lenger ned).",
+          "note": "Hullstørrelser som i tabellen nedenfor (TEIs anbefalte områder).",
+          "items": [
+            {
+              "label": "RDS250",
+              "min": 70,
+              "max": 102,
+              "href": "/produkter/tei/rotationshammare/rds250"
+            },
+            {
+              "label": "RDS350",
+              "min": 70,
+              "max": 203,
+              "href": "/produkter/tei/rotationshammare/rds350"
+            },
+            {
+              "label": "RDS550",
+              "min": 102,
+              "max": 305,
+              "href": "/produkter/tei/rotationshammare/rds550"
+            },
+            {
+              "label": "RDS1004",
+              "min": 127,
+              "max": 610,
+              "href": "/produkter/tei/rotationshammare/rds1004"
+            },
+            {
+              "label": "RDS1500",
+              "min": 127,
+              "max": 750,
+              "href": "/produkter/tei/rotationshammare/rds1500"
+            }
+          ]
         },
         {
           "type": "table",

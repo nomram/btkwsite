@@ -44,6 +44,7 @@ function snippet(b) {
     case "carousel": return t("n_images", { n: (b.items || []).length });
     case "modules": return t("n_cards", { n: (b.items || []).length });
     case "related": return t("n_cards", { n: (b.items || []).length });
+    case "rangechart": return b.title || t("n_rows", { n: (b.items || []).length });
     case "video": return b.title || b.id || t("empty");
     case "table": return t("n_rows", { n: (b.rows || []).length });
     case "datasheet": return b.title || t("block_datasheet");
@@ -138,6 +139,19 @@ function panelBlock() {
           ${F(t("modules_cta"), inp(`items.${ci}.cta`, it.cta))}
         </div>`).join("") +
         `<div class="btnrow"><button class="btn sm primary" data-act="mod-add">${IC.plus}<span>${esc(t("modules_add"))}</span></button></div>`;
+      break;
+    }
+    case "rangechart": {
+      const items = b.items || [];
+      const num = (path, v, ph) => `<input type="number" step="any" min="0" data-bf="${esc(path)}" value="${esc(v ?? "")}" placeholder="${esc(ph)}" style="width:5.2rem">`;
+      body = F(t("rc_title_f"), inp("title", b.title, `placeholder="${esc(t("rc_title_ph"))}"`)) + F(t("rc_intro"), `<textarea data-bf="intro" rows="2">${esc(b.intro || "")}</textarea>`) +
+        F(t("rc_layout"), `<select data-bf="layout"><option value="bars" ${b.layout !== "selector" && b.layout !== "matrix" ? "selected" : ""}>${esc(t("rc_bars"))}</option><option value="selector" ${b.layout === "selector" ? "selected" : ""}>${esc(t("rc_selector"))}</option><option value="matrix" ${b.layout === "matrix" ? "selected" : ""}>${esc(t("rc_matrix"))}</option></select>`) +
+        F(t("rc_unit"), inp("unit", b.unit || "mm")) +
+        items.map((it, ci) => `<div class="sub"><div class="row nowrap">${inp(`items.${ci}.label`, it.label, `placeholder="${esc(t("rc_label_ph"))}"`)}${num(`items.${ci}.min`, it.min, t("rc_from"))}${num(`items.${ci}.max`, it.max, t("rc_to"))}${ci > 0 ? `<button class="btn sm ghost" data-act="mod-up" data-ci="${ci}" title="${esc(t("move_up"))}">${IC.up}</button>` : ""}<button class="btn sm danger" data-act="mod-rm" data-ci="${ci}" title="${esc(t("delete"))}">${IC.trash}</button></div>
+          ${F(t("link_to"), `<div class="row nowrap"><input type="text" data-bf="items.${ci}.href" value="${esc(it.href || "")}" placeholder="${esc(t("no_link"))}"><button class="btn sm ghost" data-act="mod-link" data-ci="${ci}">${esc(t("choose"))}</button></div>`)}
+        </div>`).join("") +
+        F(t("rc_note"), `<textarea data-bf="note" rows="2">${esc(b.note || "")}</textarea>`) +
+        `<div class="btnrow"><button class="btn sm primary" data-act="rc-add">${IC.plus}<span>${esc(t("rc_add"))}</span></button></div>`;
       break;
     }
     case "related": {
@@ -419,6 +433,7 @@ export function bindPanel(el) {
       case "mod-rm": mutate(() => { blk.items.splice(+b.dataset.ci, 1); }); return panelHooks.rerender();
       case "mod-up": { const ci = +b.dataset.ci; if (ci > 0) mutate(() => { const x = blk.items.splice(ci, 1)[0]; blk.items.splice(ci - 1, 0, x); }); return panelHooks.rerender(); }
       case "mod-image": { const src = await pickImage(); if (src) { setField(i, `items.${b.dataset.ci}.image`, src); panelHooks.rerender(); } return; }
+      case "rc-add": mutate(() => { (blk.items = blk.items || []).push({ label: "", min: "", max: "" }); }); return panelHooks.rerender();
       case "rel-add": mutate(() => { (blk.items = blk.items || []).push({ href: "" }); }); return panelHooks.rerender();
       case "mod-link": {
         const path = `items.${b.dataset.ci}.href`;

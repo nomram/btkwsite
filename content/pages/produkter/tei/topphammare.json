@@ -64,6 +64,71 @@
           "html": "<a href=\"/kontakta-oss\">Kontakta oss</a> för mer information."
         },
         {
+          "type": "rangechart",
+          "layout": "bars",
+          "unit": "mm",
+          "title": "Vilken topphammare passar ditt hål?",
+          "intro": "Varje modell täcker ett intervall av hålstorlekar. Hitta ditt mått på skalan och välj en modell vars stapel täcker det. Där staplarna överlappar passar flera modeller, välj då efter effekt, vridmoment och vikt (se tabellen längre ner).",
+          "note": "Hålstorlekar enligt tabellen nedan (TEI:s rekommenderade intervall).",
+          "items": [
+            {
+              "label": "TE1000",
+              "min": 76,
+              "max": 178,
+              "href": "/produkter/tei/topphammare/te1000"
+            },
+            {
+              "label": "TE760",
+              "min": 52,
+              "max": 127,
+              "href": "/produkter/tei/topphammare/te760"
+            },
+            {
+              "label": "TE726",
+              "min": 52,
+              "max": 101,
+              "href": "/produkter/tei/topphammare/te726"
+            },
+            {
+              "label": "TE360",
+              "min": 35,
+              "max": 76,
+              "href": "/produkter/tei/topphammare/te360"
+            },
+            {
+              "label": "TE326",
+              "min": 35,
+              "max": 76,
+              "href": "/produkter/tei/topphammare/te326"
+            },
+            {
+              "label": "TE260HT",
+              "min": 35,
+              "max": 64,
+              "href": "/produkter/tei/topphammare/te260ht"
+            },
+            {
+              "label": "TE260",
+              "min": 35,
+              "max": 52,
+              "href": "/produkter/tei/topphammare/te260"
+            },
+            {
+              "label": "TE160HT",
+              "min": 32,
+              "max": 52,
+              "href": "/produkter/tei/topphammare/te160ht"
+            },
+            {
+              "label": "TE160",
+              "min": 32,
+              "max": 48,
+              "href": "/produkter/tei/topphammare/te160"
+            }
+          ],
+          "step": 25
+        },
+        {
           "type": "table",
           "header": true,
           "align": "center",
@@ -265,6 +330,71 @@
         {
           "type": "text",
           "html": "<a href=\"/kontakta-oss\">Contact us</a> for more information."
+        },
+        {
+          "type": "rangechart",
+          "layout": "bars",
+          "unit": "mm",
+          "title": "Which drifter fits your hole size?",
+          "intro": "Each model covers a range of hole sizes. Find your size on the scale and pick a model whose bar covers it. Where the bars overlap several models fit, so choose by power, torque and weight (see the table further down).",
+          "note": "Hole sizes as in the table below (TEI's recommended ranges).",
+          "items": [
+            {
+              "label": "TE1000",
+              "min": 76,
+              "max": 178,
+              "href": "/produkter/tei/topphammare/te1000"
+            },
+            {
+              "label": "TE760",
+              "min": 52,
+              "max": 127,
+              "href": "/produkter/tei/topphammare/te760"
+            },
+            {
+              "label": "TE726",
+              "min": 52,
+              "max": 101,
+              "href": "/produkter/tei/topphammare/te726"
+            },
+            {
+              "label": "TE360",
+              "min": 35,
+              "max": 76,
+              "href": "/produkter/tei/topphammare/te360"
+            },
+            {
+              "label": "TE326",
+              "min": 35,
+              "max": 76,
+              "href": "/produkter/tei/topphammare/te326"
+            },
+            {
+              "label": "TE260HT",
+              "min": 35,
+              "max": 64,
+              "href": "/produkter/tei/topphammare/te260ht"
+            },
+            {
+              "label": "TE260",
+              "min": 35,
+              "max": 52,
+              "href": "/produkter/tei/topphammare/te260"
+            },
+            {
+              "label": "TE160HT",
+              "min": 32,
+              "max": 52,
+              "href": "/produkter/tei/topphammare/te160ht"
+            },
+            {
+              "label": "TE160",
+              "min": 32,
+              "max": 48,
+              "href": "/produkter/tei/topphammare/te160"
+            }
+          ],
+          "step": 25
         },
         {
           "type": "table",
@@ -471,6 +601,71 @@
           "html": "<a href=\"/kontakta-oss\">Contáctenos</a> para más información."
         },
         {
+          "type": "rangechart",
+          "layout": "bars",
+          "unit": "mm",
+          "title": "¿Qué martillo perforador se adapta a su barreno?",
+          "intro": "Cada modelo cubre un rango de tamaños de barreno. Busque su medida en la escala y elija un modelo cuya barra la cubra. Donde las barras se solapan, varios modelos son adecuados: elija según potencia, par y peso (véase la tabla más abajo).",
+          "note": "Tamaños de barreno según la tabla de abajo (rangos recomendados por TEI).",
+          "items": [
+            {
+              "label": "TE1000",
+              "min": 76,
+              "max": 178,
+              "href": "/produkter/tei/topphammare/te1000"
+            },
+            {
+              "label": "TE760",
+              "min": 52,
+              "max": 127,
+              "href": "/produkter/tei/topphammare/te760"
+            },
+            {
+              "label": "TE726",
+              "min": 52,
+              "max": 101,
+              "href": "/produkter/tei/topphammare/te726"
+            },
+            {
+              "label": "TE360",
+              "min": 35,
+              "max": 76,
+              "href": "/produkter/tei/topphammare/te360"
+            },
+            {
+              "label": "TE326",
+              "min": 35,
+              "max": 76,
+              "href": "/produkter/tei/topphammare/te326"
+            },
+            {
+              "label": "TE260HT",
+              "min": 35,
+              "max": 64,
+              "href": "/produkter/tei/topphammare/te260ht"
+            },
+            {
+              "label": "TE260",
+              "min": 35,
+              "max": 52,
+              "href": "/produkter/tei/topphammare/te260"
+            },
+            {
+              "label": "TE160HT",
+              "min": 32,
+              "max": 52,
+              "href": "/produkter/tei/topphammare/te160ht"
+            },
+            {
+              "label": "TE160",
+              "min": 32,
+              "max": 48,
+              "href": "/produkter/tei/topphammare/te160"
+            }
+          ],
+          "step": 25
+        },
+        {
           "type": "table",
           "header": true,
           "align": "center",
@@ -673,6 +868,71 @@
         {
           "type": "text",
           "html": "<a href=\"/kontakta-oss\">Kontakt oss</a> for mer informasjon."
+        },
+        {
+          "type": "rangechart",
+          "layout": "bars",
+          "unit": "mm",
+          "title": "Hvilken topphammer passer ditt hull?",
+          "intro": "Hver modell dekker et område av hullstørrelser. Finn ditt mål på skalaen og velg en modell hvis stolpe dekker det. Der stolpene overlapper passer flere modeller, velg da etter effekt, dreiemoment og vekt (se tabellen lenger ned).",
+          "note": "Hullstørrelser som i tabellen nedenfor (TEIs anbefalte områder).",
+          "items": [
+            {
+              "label": "TE1000",
+              "min": 76,
+              "max": 178,
+              "href": "/produkter/tei/topphammare/te1000"
+            },
+            {
+              "label": "TE760",
+              "min": 52,
+              "max": 127,
+              "href": "/produkter/tei/topphammare/te760"
+            },
+            {
+              "label": "TE726",
+              "min": 52,
+              "max": 101,
+              "href": "/produkter/tei/topphammare/te726"
+            },
+            {
+              "label": "TE360",
+              "min": 35,
+              "max": 76,
+              "href": "/produkter/tei/topphammare/te360"
+            },
+            {
+              "label": "TE326",
+              "min": 35,
+              "max": 76,
+              "href": "/produkter/tei/topphammare/te326"
+            },
+            {
+              "label": "TE260HT",
+              "min": 35,
+              "max": 64,
+              "href": "/produkter/tei/topphammare/te260ht"
+            },
+            {
+              "label": "TE260",
+              "min": 35,
+              "max": 52,
+              "href": "/produkter/tei/topphammare/te260"
+            },
+            {
+              "label": "TE160HT",
+              "min": 32,
+              "max": 52,
+              "href": "/produkter/tei/topphammare/te160ht"
+            },
+            {
+              "label": "TE160",
+              "min": 32,
+              "max": 48,
+              "href": "/produkter/tei/topphammare/te160"
+            }
+          ],
+          "step": 25
         },
         {
           "type": "table",

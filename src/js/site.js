@@ -444,6 +444,25 @@
     });
   }
 
+  // ---------- range chart with a slider: marks the chosen size and lists the models that fit ----------
+  [].forEach.call(document.querySelectorAll("[data-rc=selector]"), function (box) {
+    var input = box.querySelector("input[type=range]"), out = box.querySelector(".rc__out"), res = box.querySelector(".rc__result"), marker = box.querySelector(".rc__marker");
+    var rows = [].slice.call(box.querySelectorAll(".rc__row")), top = Number(box.getAttribute("data-top")) || 100, unit = res.getAttribute("data-unit") || "mm";
+    function sync() {
+      var v = Number(input.value), fits = [];
+      box.style.setProperty("--pos", String(v / top));
+      out.textContent = v + " " + unit;
+      rows.forEach(function (r) {
+        var ok = v >= Number(r.getAttribute("data-min")) && v <= Number(r.getAttribute("data-max"));
+        r.classList.toggle("is-in", ok); r.classList.toggle("is-out", !ok);
+        if (ok) fits.push(r.querySelector(".rc__label").textContent);
+      });
+      res.textContent = fits.length ? res.getAttribute("data-fits") + ": " + fits.join(", ") : res.getAttribute("data-none");
+    }
+    input.addEventListener("input", sync);
+    sync();
+  });
+
   // ---------- pictures further down: fetched top to bottom once the page has settled ----------
   // The top of the page is what the visitor sees first, so its pictures load first (eager in the HTML); the rest stay lazy for the
   // scroll position, and in quiet time they are also fetched in page order, a few at a time, nearest to the top first.

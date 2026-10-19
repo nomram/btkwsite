@@ -18,6 +18,7 @@ export const IC = {
   table: svg('<rect x="3" y="5" width="18" height="14" rx="1.5"/><path d="M3 10h18M9 5v14"/>'),
   datasheet: svg('<path d="M6 3h9l4 4v14H6z"/><path d="M9 11h7M9 15h7M9 19h4"/>'),
   columns: svg('<rect x="3" y="4" width="8" height="16" rx="1.5"/><rect x="13" y="4" width="8" height="16" rx="1.5"/>'),
+  rangechart: svg('<path d="M3 4v16h18"/><rect x="6" y="7" width="7" height="3" rx=".5"/><rect x="9" y="12" width="9" height="3" rx=".5"/><rect x="5" y="17" width="5" height="2" rx=".5"/>'),
   related: svg('<rect x="3" y="4" width="18" height="6" rx="1"/><rect x="3" y="14" width="18" height="6" rx="1"/><path d="M7 7h6M7 17h6"/>'),
   modules: svg('<rect x="3" y="5" width="5" height="14" rx="1"/><rect x="9.5" y="5" width="5" height="14" rx="1"/><rect x="16" y="5" width="5" height="14" rx="1"/>'),
   carousel: svg('<rect x="6" y="5" width="12" height="14" rx="2"/><path d="M2.5 9v6M21.5 9v6"/>'),
@@ -53,7 +54,7 @@ export const IC = {
 export const BLOCK_TYPES = [
   { id: "text", group: "text" }, { id: "heading", group: "text" }, { id: "list", group: "text" },
   { id: "image", group: "media" }, { id: "video", group: "media" }, { id: "download", group: "media" },
-  { id: "button", group: "layout" }, { id: "columns", group: "layout" }, { id: "cards", group: "layout" }, { id: "carousel", group: "media" }, { id: "modules", group: "layout" }, { id: "related", group: "layout" }, { id: "cta", group: "layout" }, { id: "chips", group: "layout" },
+  { id: "button", group: "layout" }, { id: "columns", group: "layout" }, { id: "cards", group: "layout" }, { id: "carousel", group: "media" }, { id: "modules", group: "layout" }, { id: "related", group: "layout" }, { id: "rangechart", group: "data" }, { id: "cta", group: "layout" }, { id: "chips", group: "layout" },
   { id: "table", group: "data" }, { id: "datasheet", group: "data" },
   { id: "quote", group: "other" }, { id: "social", group: "other" }, { id: "contact", group: "other" }, { id: "html", group: "other" }
 ];
@@ -91,6 +92,7 @@ export function newBlock(id, lang) {
     case "carousel": return { type: "carousel", items: [], autoplay: false };
     case "modules": return { type: "modules", layout: "cards", items: [{ title: "", text: "", bullets: [] }] };
     case "related": return { type: "related", items: [{ href: "" }] };
+    case "rangechart": return { type: "rangechart", layout: "bars", unit: "mm", items: [{ label: "", min: "", max: "" }] };
     case "contact": return { type: "contact" };
     default: return { type: "html", html: "" };
   }
