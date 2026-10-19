@@ -365,17 +365,16 @@ a.rc__label:hover { color: var(--primary); }
 /* picker: the label, then the chosen size big, with the slider right next to it on the left */
 .rc__pick { display: grid; grid-template-columns: max-content minmax(11rem, 24rem); column-gap: 1.1rem; row-gap: .2rem; align-items: center; justify-content: start; margin: 0 0 1.2rem; }
 .rc__pick label { grid-column: 1 / -1; font-weight: 800; font-size: .72rem; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); }
-.rc__out { grid-column: 1; grid-row: 2; font-size: clamp(2rem, 1.4rem + 2vw, 2.9rem); line-height: 1.05; font-weight: 800; letter-spacing: -.01em; min-width: 6.3ch; font-variant-numeric: tabular-nums; color: var(--text); }
+.rc__out { grid-column: 1; grid-row: 2; font-size: clamp(1.5rem, 1.1rem + 1.3vw, 2.1rem); line-height: 1.1; font-weight: 800; letter-spacing: -.01em; min-width: 6.2ch; font-variant-numeric: tabular-nums; color: var(--text); }
 .rc__slider { grid-column: 2; grid-row: 2; position: relative; padding: .7rem 0 1.5rem; }
 .rc__pick input[type=range] { width: 100%; margin: 0; accent-color: var(--primary); cursor: ew-resize; }
 .rc__result { grid-column: 1 / -1; margin: .7rem 0 0; font-size: 1.02rem; font-weight: 700; min-height: 1.5em; }
-.rc__caution { grid-column: 1 / -1; display: flex; gap: .5rem; align-items: flex-start; margin: .5rem 0 0; padding: .6rem .8rem; max-width: 46rem; font-size: .84rem; line-height: 1.45; color: var(--text); background: #fff6ea; border-left: 3px solid var(--primary); border-radius: 2px; }
+.rc__caution { display: flex; gap: .5rem; align-items: flex-start; margin: 1rem 0 0; padding: .6rem .8rem; max-width: 46rem; font-size: .84rem; line-height: 1.45; color: var(--text); background: #fff6ea; border-left: 3px solid var(--primary); border-radius: 2px; }
 .rc__caution svg { flex: none; margin-top: .12rem; color: var(--primary); }
 /* the finger shows once how to use the slider: it slides to the right and back, then goes away for good */
-.rc__hand { position: absolute; left: calc(var(--hp, 0) * (100% - 22px) + 11px); top: 1.15rem; width: 38px; height: 38px; margin-left: -11px; pointer-events: none; opacity: 0; filter: drop-shadow(0 2px 3px rgba(35, 31, 32, .3)); }
-.rc__slider.is-demo .rc__hand { animation: rcHand 3.4s ease-in-out 2 both; }
-@keyframes rcHand { 0% { opacity: 0; transform: translate(-6px, 10px) scale(.9); } 12% { opacity: 1; transform: translate(0, 0) scale(1); } 22% { opacity: 1; transform: translate(0, 0) scale(.94); } 62% { opacity: 1; transform: translate(min(130px, 28vw), 0) scale(.94); } 78% { opacity: 1; transform: translate(0, 0) scale(.94); } 88% { opacity: 1; transform: translate(0, 0) scale(1); } 100% { opacity: 0; transform: translate(0, 8px) scale(.92); } }
-@media (prefers-reduced-motion: reduce) { .rc__slider.is-demo .rc__hand { animation: none; } }
+.rc__hand { position: absolute; left: calc(var(--hp, 0) * (100% - 22px) + 11px); top: 1.2rem; width: 30px; height: 30px; margin-left: -9px; pointer-events: none; opacity: 0; transition: opacity .3s ease; filter: drop-shadow(0 2px 3px rgba(35, 31, 32, .3)); }
+.rc__slider.is-demo .rc__hand { opacity: 1; }
+.rc__hand svg { width: 100%; height: 100%; display: block; }
 /* model labels with a small picture */
 .rc__lab { display: flex; align-items: center; gap: .5rem; min-width: 0; }
 .rc__ico { flex: none; width: 30px; height: 30px; border: 1px solid var(--line); border-radius: 2px; background: var(--surface); }

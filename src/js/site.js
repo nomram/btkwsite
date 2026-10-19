@@ -469,13 +469,30 @@
       res.textContent = fits.length ? res.getAttribute("data-fits") + ": " + fits.join(", ") : res.getAttribute("data-none");
     }
     // the finger: shown once, when the chart comes into view; any touch of the slider ends it
-    var stopped = false;
-    function stopHint() { if (stopped) return; stopped = true; slider.classList.remove("is-demo"); }
+    var stopped = false, raf = 0;
+    function stopHint() { if (stopped) return; stopped = true; cancelAnimationFrame(raf); slider.classList.remove("is-demo"); }
+    // the finger really moves the dial: out to the right and back, twice, then the slider is left where it started
+    function demo() {
+      var min = Number(input.min), max = Number(input.max), stp = Number(input.step) || 1, start = Number(input.value), span = (max - min) * 0.3, t0 = 0, CYCLE = 2600, N = 2, LEAD = 500;
+      slider.classList.add("is-demo");
+      function frame(t) {
+        if (stopped) return;
+        if (!t0) t0 = t;
+        var el = t - t0 - LEAD;
+        if (el >= CYCLE * N) { input.value = start; sync(); stopped = true; slider.classList.remove("is-demo"); return; }
+        var p = el < 0 ? 0 : (el % CYCLE) / CYCLE;
+        var e = p < 0.12 ? 0 : (1 - Math.cos(((p - 0.12) / 0.88) * 2 * Math.PI)) / 2;
+        input.value = String(Math.round((start + span * e) / stp) * stp);
+        sync();
+        raf = requestAnimationFrame(frame);
+      }
+      raf = requestAnimationFrame(frame);
+    }
     input.addEventListener("input", function () { stopHint(); sync(); });
     ["pointerdown", "keydown", "touchstart"].forEach(function (ev) { input.addEventListener(ev, stopHint, { passive: true }); });
     sync();
     if ("IntersectionObserver" in window && !(window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches)) {
-      var io = new IntersectionObserver(function (en) { if (en[0].isIntersecting) { io.disconnect(); if (!stopped) { slider.classList.add("is-demo"); setTimeout(stopHint, 7600); } } }, { threshold: 0.6 });
+      var io = new IntersectionObserver(function (en) { if (en[0].isIntersecting) { io.disconnect(); if (!stopped) demo(); } }, { threshold: 0.6 });
       io.observe(slider);
     }
   });
