@@ -2,6 +2,9 @@
    until the visitor asks for them (video click) or consents (analytics). */
 (function () {
   "use strict";
+  // A page the browser prerenders in the background runs its scripts early: anything that costs data or counts a visit
+  // (prefetching, idle picture loading, analytics) waits until the visitor actually arrives on it.
+  function onActive(fn) { if (document.prerendering) document.addEventListener("prerenderingchange", fn, { once: true }); else fn(); }
   var cfg = {};
   try { cfg = JSON.parse(document.getElementById("bk-config").textContent) || {}; } catch (e) { /* defaults */ }
   var ui = cfg.ui || {};
@@ -464,7 +467,7 @@
     }
     function later() { if (document.hidden) document.addEventListener("visibilitychange", function once() { if (!document.hidden) { document.removeEventListener("visibilitychange", once); go(); } }); else go(); }
     function kick() { if (window.requestIdleCallback) window.requestIdleCallback(later, { timeout: 4000 }); else setTimeout(later, 2000); }
-    if (document.readyState === "complete") kick(); else window.addEventListener("load", kick, { once: true });
+    if (document.readyState === "complete") onActive(kick); else window.addEventListener("load", function () { onActive(kick); }, { once: true });
   })();
 
   // ---------- preloading: the page you are most likely to open next is already in the cache ----------
@@ -475,7 +478,7 @@
   (function () {
     var conn = navigator.connection || {};
     if (conn.saveData || /(^|-)2g$/.test(conn.effectiveType || "") || !window.fetch || !window.URL) return;
-    var seen = {}, queue = [], active = 0, spent = 0, BUDGET = 28, PARALLEL = 2;
+    var seen = {}, queue = [], active = 0, spent = 0, BUDGET = 34, PARALLEL = 2;
     var here = location.href.split("#")[0];
 
     function target(a) {
@@ -559,10 +562,16 @@
 
     // quiet moment after load: the main menu pages, then cards that have been in view for a moment
     function idle(fn) { if (window.requestIdleCallback) window.requestIdleCallback(fn, { timeout: 6000 }); else setTimeout(fn, 3000); }
+    // The start page is where visitors come back to (logo, "Startsida", the browser's back button after Contact or Products),
+    // so it is always warmed first, with its banner; then the page one level up in the breadcrumb, then the main menu.
     function afterLoad() {
       idle(function () {
-        [].forEach.call(document.querySelectorAll(".nav__list > .nav__item > a"), function (a, i) { setTimeout(function () { fetchPage(target(a), false); }, i * 400); });
+        var home = document.querySelector("a.logo"), crumbs = document.querySelectorAll(".breadcrumbs li a"), parent = crumbs.length ? crumbs[crumbs.length - 1] : null;
+        fetchPage(target(home), true);
+        setTimeout(function () { fetchPage(target(parent), false); }, 300);
+        [].forEach.call(document.querySelectorAll(".nav__list > .nav__item > a"), function (a, i) { setTimeout(function () { fetchPage(target(a), false); }, 600 + i * 400); });
       });
+      speculate();
       if (!("IntersectionObserver" in window)) return;
       var dwell = new WeakMap();
       var io = new IntersectionObserver(function (entries) {
@@ -577,7 +586,24 @@
         [].slice.call(document.querySelectorAll("main .card__link, main .module a[href], .subnav a[href]")).slice(0, 40).forEach(function (a) { if (target(a)) io.observe(a); });
       });
     }
-    if (document.readyState === "complete") afterLoad(); else window.addEventListener("load", afterLoad, { once: true });
+    // Browsers that support it (Chrome, Edge) are also told to keep the start page ready and to prepare a page completely
+    // (prerender) as soon as the pointer has rested on its link for a moment, so opening it is instant. Same site only; the
+    // pdf links, downloads, other tabs and the CMS are left out.
+    function speculate() {
+      try {
+        if (!(window.HTMLScriptElement && HTMLScriptElement.supports && HTMLScriptElement.supports("speculationrules"))) return;
+        var home = document.querySelector("a.logo"), homeUrl = target(home);
+        var rules = {
+          prerender: [{ where: { and: [{ selector_matches: "a[href^='/']" }, { not: { selector_matches: "[download], [target=_blank], [href$='.pdf'], [href*='/cms/'], [href*='/assets/'], [href*='#']" } }] }, eagerness: "moderate" }]
+        };
+        if (homeUrl) rules.prefetch = [{ urls: [homeUrl], eagerness: "immediate" }];
+        var s = document.createElement("script");
+        s.type = "speculationrules";
+        s.textContent = JSON.stringify(rules);
+        document.head.appendChild(s);
+      } catch (e) { /* not supported: the fetch based warming above still works */ }
+    }
+    if (document.readyState === "complete") onActive(afterLoad); else window.addEventListener("load", function () { onActive(afterLoad); }, { once: true });
   })();
 
   // ---------- consent + analytics (off unless configured; nothing stored otherwise) ----------
@@ -632,7 +658,7 @@
     document.body.appendChild(banner);
   }
   var saved = read();
-  if (saved && saved.analytics === true) loadGA();
+  if (saved && saved.analytics === true) onActive(loadGA);
   else if (!saved) show();
   document.addEventListener("click", function (e) {
     if (e.target.closest && e.target.closest("[data-consent-open]")) show();
