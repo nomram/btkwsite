@@ -270,7 +270,11 @@ li:first-child > .subnav__link--logo::after { left: 0; }
 .split__media .figure--center img { margin-inline: auto; object-position: center; }
 .split__body.prose { padding-block: 0; }
 .split__body.prose > * { max-width: none; }
-@media (max-width: 860px) { .split { grid-template-columns: 1fr; } }
+@media (max-width: 860px) {
+  .split { grid-template-columns: 1fr; gap: .9rem; padding-block: .8rem 2rem; }
+  /* stacked: a tall packshot must not fill the whole screen, the first lines of text should already be in view under it */
+  .split__media img { max-height: min(28vh, 240px); }
+}
 
 .figure { margin: 0 0 1.5rem; }
 .figure figcaption { font-size: .76rem; line-height: 1.3; color: var(--muted); margin-top: .2rem; }
