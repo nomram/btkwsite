@@ -390,8 +390,12 @@ function renderRangeChart(ctx, b) {
     const bar = `<span class="rc__bar${wide ? "" : " rc__bar--out"}${(w / top) * 100 >= 45 ? " rc__bar--big" : ""}" style="left:${pct(r.min)}%;width:${Math.max(((w / top) * 100), 1.2).toFixed(2)}%"><span class="rc__val">${esc(fmt(r))}</span></span>`;
     return `<li class="rc__row" data-min="${r.min}" data-max="${r.max}">${label(r)}<div class="rc__track">${bar}</div></li>`;
   }).join("");
+  // the slider starts a little below the smallest model and opens on a size that fits at least one model
+  const lo = Math.max(0, Math.floor((Math.min(...rows.map((r) => r.min)) - 5) / 5) * 5);
+  const sstep = top > 300 ? 5 : 1;
+  const mid = Math.round((rows[0].min + rows[0].max) / 2 / sstep) * sstep;
   const pick = layout === "selector"
-    ? `<div class="rc__pick"><label for="${id}">${esc(u.rc_pick || "Ditt hål")}</label><input id="${id}" type="range" min="${Math.max(0, ticks[0])}" max="${top}" step="1" value="${Math.round((rows[0].min + rows[0].max) / 2)}"><output class="rc__out" for="${id}"></output><p class="rc__result" aria-live="polite" data-fits="${esc(u.rc_fits || "Passar")}" data-none="${esc(u.rc_none || "Ingen modell täcker detta mått")}" data-unit="${esc(unit)}"></p></div>`
+    ? `<div class="rc__pick"><label for="${id}">${esc(u.rc_pick || "Ditt hål")}</label><input id="${id}" type="range" min="${lo}" max="${top}" step="${top > 300 ? 5 : 1}" value="${mid}"><output class="rc__out" for="${id}"></output><p class="rc__result" aria-live="polite" data-fits="${esc(u.rc_fits || "Passar")}" data-none="${esc(u.rc_none || "Ingen modell täcker detta mått")}" data-unit="${esc(unit)}"></p></div>`
     : "";
   return `<section class="rc rc--${layout}"${layout === "selector" ? ' data-rc="selector"' : ""} data-top="${top}" style="--top:${top};--ticks:${ticks.length - 1}">${head}${pick}<div class="rc__chart"><div class="rc__axis" aria-hidden="true"><span class="rc__unit">${esc(u.rc_hole || "Hålstorlek")} (${esc(unit)})</span><div class="rc__scale">${axis}</div></div><ol class="rc__rows">${body}</ol>${layout === "selector" ? '<span class="rc__marker" aria-hidden="true"></span>' : ""}</div>${foot}</section>`;
 }

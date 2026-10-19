@@ -46,7 +46,7 @@
         },
         {
           "type": "rangechart",
-          "layout": "bars",
+          "layout": "selector",
           "unit": "mm",
           "step": 100,
           "title": "Vilket rotationshuvud passar ditt hål?",
@@ -222,7 +222,7 @@
         },
         {
           "type": "rangechart",
-          "layout": "bars",
+          "layout": "selector",
           "unit": "mm",
           "step": 100,
           "title": "Which rotary head fits your hole size?",
@@ -399,7 +399,7 @@
         },
         {
           "type": "rangechart",
-          "layout": "bars",
+          "layout": "selector",
           "unit": "mm",
           "step": 100,
           "title": "¿Qué cabezal de rotación se adapta a su barreno?",
@@ -576,7 +576,7 @@
         },
         {
           "type": "rangechart",
-          "layout": "bars",
+          "layout": "selector",
           "unit": "mm",
           "step": 100,
           "title": "Hvilket rotasjonshode passer ditt hull?",
