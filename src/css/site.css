@@ -275,6 +275,8 @@ li:first-child > .subnav__link--logo::after { left: 0; }
 .figure { margin: 0 0 1.5rem; }
 .figure figcaption { font-size: .76rem; line-height: 1.3; color: var(--muted); margin-top: .2rem; }
 .figure a { display: block; }
+.figure > a[target="_blank"] img { transition: box-shadow .2s, transform .2s; }
+.figure > a[target="_blank"]:hover img, .figure > a[target="_blank"]:focus-visible img { box-shadow: var(--shadow); }
 .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr)); gap: 1.25rem; margin: 0 0 1.75rem; align-items: center; }
 .gallery .figure { margin: 0; }
 

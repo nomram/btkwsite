@@ -493,7 +493,7 @@ function renderBlockInner(ctx, b) {
     }
     case "image": {
       const img = imgTag(ctx, b.src, b.alt || "", { sizes: "(min-width: 900px) 520px, 100vw" });
-      const inner = b.href ? `<a href="${esc(localizeHref(ctx, b.href))}"${/^https?:/.test(b.href) ? ' rel="noopener"' : ""}>${img}</a>` : img;
+      const inner = b.href ? `<a href="${esc(localizeHref(ctx, b.href))}"${/^https?:/.test(b.href) ? ' target="_blank" rel="noopener"' : ""}>${img}</a>` : img;
       return `<figure class="figure${b.align === "right" ? " figure--right" : b.align === "center" ? " figure--center" : ""}"${b.maxWidth ? ` style="max-width:${Math.round(Number(b.maxWidth))}px"` : ""}>${inner}${b.caption ? `<figcaption${editFld(ctx, "caption")}>${esc(b.caption)}</figcaption>` : ""}</figure>`;
     }
     case "button": {
