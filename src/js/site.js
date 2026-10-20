@@ -469,8 +469,13 @@
       res.textContent = fits.length ? res.getAttribute("data-fits") + ": " + fits.join(", ") : res.getAttribute("data-none");
     }
     // the finger: shown once, when the chart comes into view; any touch of the slider ends it
-    var stopped = false, raf = 0;
-    function stopHint() { if (stopped) return; stopped = true; cancelAnimationFrame(raf); slider.classList.remove("is-demo"); }
+    // shown only once per visitor: remembered in this browser (a plain "seen" flag, nothing about the person), so a reload or
+    // another chart does not repeat it; a visitor who reaches for the slider first never gets it at all
+    var HINT_KEY = "bk_rc_hint", stopped = false, raf = 0;
+    function seen() { try { return localStorage.getItem(HINT_KEY) === "1"; } catch (e) { return false; } }
+    function mark() { try { localStorage.setItem(HINT_KEY, "1"); } catch (e) { /* private mode: the hint may show again, nothing breaks */ } }
+    function stopHint() { mark(); if (stopped) return; stopped = true; cancelAnimationFrame(raf); slider.classList.remove("is-demo"); }
+    if (seen()) stopped = true;
     // the finger really moves the dial: out to the right and back, twice, then the slider is left where it started
     function demo() {
       var min = Number(input.min), max = Number(input.max), stp = Number(input.step) || 1, start = Number(input.value), span = (max - min) * 0.3, t0 = 0, CYCLE = 2600, N = 2, LEAD = 500;
@@ -489,10 +494,10 @@
       raf = requestAnimationFrame(frame);
     }
     input.addEventListener("input", function () { stopHint(); sync(); });
-    ["pointerdown", "keydown", "touchstart"].forEach(function (ev) { input.addEventListener(ev, stopHint, { passive: true }); });
+    ["pointerenter", "pointerdown", "keydown", "touchstart", "focus"].forEach(function (ev) { box.querySelector(".rc__pick").addEventListener(ev, stopHint, { passive: true, capture: true }); });
     sync();
-    if ("IntersectionObserver" in window && !(window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches)) {
-      var io = new IntersectionObserver(function (en) { if (en[0].isIntersecting) { io.disconnect(); if (!stopped) demo(); } }, { threshold: 0.6 });
+    if (!stopped && "IntersectionObserver" in window && !(window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches)) {
+      var io = new IntersectionObserver(function (en) { if (en[0].isIntersecting) { io.disconnect(); if (!stopped) { mark(); demo(); } } }, { threshold: 0.6 });
       io.observe(slider);
     }
   });

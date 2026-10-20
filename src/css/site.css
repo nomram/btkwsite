@@ -365,10 +365,11 @@ a.rc__label:hover { color: var(--primary); }
 /* picker: the label, then the chosen size big, with the slider right next to it on the left */
 .rc__pick { display: grid; grid-template-columns: max-content minmax(11rem, 24rem); column-gap: 1.1rem; row-gap: .2rem; align-items: center; justify-content: start; margin: 0 0 1.2rem; }
 .rc__pick label { grid-column: 1 / -1; font-weight: 800; font-size: .72rem; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); }
-.rc__out { grid-column: 1; grid-row: 2; font-size: clamp(1.5rem, 1.1rem + 1.3vw, 2.1rem); line-height: 1.1; font-weight: 800; letter-spacing: -.01em; min-width: 6.2ch; font-variant-numeric: tabular-nums; color: var(--text); }
+.rc__out { grid-column: 1; grid-row: 2; font-size: clamp(1.5rem, 1.1rem + 1.3vw, 2.1rem); line-height: 1.1; font-weight: 800; letter-spacing: -.01em; width: 7.6ch; white-space: nowrap; font-variant-numeric: tabular-nums; color: var(--text); }
 .rc__slider { grid-column: 2; grid-row: 2; position: relative; padding: .7rem 0 1.5rem; }
-.rc__pick input[type=range] { width: 100%; margin: 0; accent-color: var(--primary); cursor: ew-resize; }
+.rc__pick input[type=range] { width: 100%; margin: 0; accent-color: var(--primary); cursor: ew-resize; touch-action: pan-y; }
 .rc__result { grid-column: 1 / -1; margin: .7rem 0 0; font-size: 1.02rem; font-weight: 700; min-height: 1.5em; }
+@media (max-width: 640px) { .rc__result { min-height: 3em; } }
 .rc__caution { display: flex; gap: .5rem; align-items: flex-start; margin: 1rem 0 0; padding: .6rem .8rem; max-width: 46rem; font-size: .84rem; line-height: 1.45; color: var(--text); background: #fff6ea; border-left: 3px solid var(--primary); border-radius: 2px; }
 .rc__caution svg { flex: none; margin-top: .12rem; color: var(--primary); }
 /* the finger shows once how to use the slider: it slides to the right and back, then goes away for good */
@@ -402,7 +403,10 @@ tr.is-fit > th, tr.is-fit > td { background-color: #fff1e0 !important; }
   /* narrow screens: only the widest bars keep their value inside, the others show it beside the bar; every second scale number is dropped */
   .rc__bar:not(.rc__bar--big) .rc__val, .rc--selector .rc__row.is-in .rc__bar:not(.rc__bar--big) .rc__val { position: absolute; left: 100%; margin-left: .45rem; color: var(--dark); }
   .rc__scale span:nth-child(even):not(.is-last) { display: none; }
-  .rc__pick { grid-template-columns: auto minmax(0, 1fr); column-gap: 1rem; }
+  /* phones: the slider gets the full width under the readout (longer track = finer control) */
+  .rc__pick { grid-template-columns: minmax(0, 1fr); }
+  .rc__out { grid-column: 1; grid-row: 2; }
+  .rc__slider { grid-column: 1; grid-row: 3; padding-top: .4rem; }
 }
 
 /* ---------- related pages: slim rail ---------- */
