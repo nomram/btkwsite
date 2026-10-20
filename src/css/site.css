@@ -822,8 +822,9 @@ dialog.search::backdrop { background: rgba(35, 31, 32, .6); }
 /* "reported against requirements from …" row: small, desaturated, visible but out of focus */
 .accepted { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem .9rem; margin: 1.25rem 0; padding-top: 1rem; border-top: 1px solid var(--line, #e3dfda); color: var(--muted, #6b655f); font-size: .85rem; }
 .accepted__logos { display: inline-flex; flex-wrap: wrap; align-items: center; gap: .5rem 1.1rem; }
-.accepted__logos img { width: auto; max-width: none; display: block; filter: grayscale(1); opacity: .5; transition: opacity .2s; }
+.accepted__logos img { max-width: none; display: block; filter: grayscale(1); opacity: .5; transition: opacity .2s; }
 .accepted:hover .accepted__logos img { opacity: .75; }
 @media (max-width: 640px) { .accepted__logos { gap: .4rem .8rem; } .accepted__logos img { zoom: .78; } }
 .accepted__lead { flex: 1 0 100%; }
 .accepted__etc { margin-left: -.2rem; }
+.accepted__logos img { height: auto; aspect-ratio: auto; max-height: 2.2rem; object-fit: contain; }
