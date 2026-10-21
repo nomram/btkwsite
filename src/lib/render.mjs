@@ -70,6 +70,7 @@ function blockIsEmpty(b) {
 }
 
 const ICON = {
+  chevronDown: '<svg viewBox="0 0 24 12" width="26" height="13" aria-hidden="true"><path d="M2 2l10 8 10-8" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>',
   chevron: '<svg viewBox="0 0 12 12" width="12" height="12" aria-hidden="true"><path d="M2 4l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>',
   search: '<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>',
   pdf: '<svg viewBox="0 0 32 40" width="32" height="40" aria-hidden="true"><path d="M2 2h20l8 8v28H2z" fill="#fff" stroke="#c9c3bb" stroke-width="1.5"/><path d="M22 2v8h8" fill="#f4f2ef" stroke="#c9c3bb" stroke-width="1.5"/><rect x="2" y="20" width="22" height="11" rx="1.5" fill="#d93025"/><text x="13" y="28.5" text-anchor="middle" font-family="Arial,sans-serif" font-size="8" font-weight="700" fill="#fff">PDF</text></svg>',
@@ -1000,7 +1001,7 @@ export function renderMain(ctx, page, t) {
   const pageFld = (k) => (ctx.edit ? ` data-bk-page="${k}" data-bk-kind="plain"` : "");
   const heroInner = `<div class="container hero__inner">${eyebrow}<h1 class="hero__title"${pageFld("h1")}>${esc(title)}</h1>${t.lead || (ctx.edit && heroImg) ? `<p class="hero__lead"${pageFld("lead")}>${esc(t.lead || "")}</p>` : ""}${ctas ? `<div class="hero__ctas">${ctas}</div>` : ""}</div>`;
   const hero = heroImg
-    ? `<section class="hero${isHome ? " hero--home" : ""}">${heroImgTag(ctx, page, heroImg)}<div class="hero__shade"></div>${heroInner}</section>`
+    ? `<section class="hero${isHome ? " hero--home" : ""}">${heroImgTag(ctx, page, heroImg)}<div class="hero__shade"></div>${heroInner}${isHome && !ctx.edit ? `<a class="hero__scroll" href="#start" aria-label="${esc(ctx.ui.scroll_down || "Scrolla ner")}">${ICON.chevronDown}</a>` : ""}</section>`
     : `<section class="page-head${page.template === "about" ? " page-head--center" : ""}"><div class="container">${page.template === "about" ? "" : eyebrow}<h1${pageFld("h1")}>${esc(title)}</h1></div></section>`;
   const crumbRow = crumbs || logo ? `<div class="container crumbs${page.template === "about" && !heroImg ? " crumbs--center" : ""}">${crumbs}${logo}</div>` : "";
   const ownRel = flatBlocks(t.blocks || []).filter((x) => x.type === "related");
@@ -1012,7 +1013,7 @@ export function renderMain(ctx, page, t) {
   const bodyHtml = ctx.edit ? `${splitHtml}${renderBlocks(ctx, rest)}` : prioritise(`${splitHtml}${renderBlocks(ctx, rest)}`);
   const autoRel = !ownRel.length && ctx._relExtra.length ? `<div class="container">${renderRelated(ctx, { type: "related", items: [] })}</div>` : "";
   ctx._relExtra = [];
-  return `${hero}${crumbRow}<div class="page-body page--${esc(page.template || "page")}">${bodyHtml}${autoRel}${productQuoteCta(ctx, page, t, title)}</div>`;
+  return `${hero}${crumbRow}<div class="page-body page--${esc(page.template || "page")}"${isHome ? ' id="start"' : ""}>${bodyHtml}${autoRel}${productQuoteCta(ctx, page, t, title)}</div>`;
 }
 
 export function renderDocument(ctx, page, t, opts = {}) {

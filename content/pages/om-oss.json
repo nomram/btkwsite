@@ -121,26 +121,12 @@
           ]
         },
         {
-          "type": "columns",
-          "ratio": "between",
-          "left": [
-            {
-              "type": "image",
-              "alt": "Om oss: bild 4",
-              "width": 709,
-              "height": 706,
-              "src": "/assets/img/om-oss-4.webp"
-            }
-          ],
-          "right": [
-            {
-              "type": "image",
-              "alt": "Om oss: bild 5",
-              "width": 86,
-              "height": 102,
-              "src": "/assets/img/om-oss-5.gif"
-            }
-          ]
+          "type": "image",
+          "alt": "ID06",
+          "width": 86,
+          "height": 102,
+          "src": "/assets/img/om-oss-5.gif",
+          "maxWidth": 86
         }
       ]
     },
@@ -260,26 +246,12 @@
           ]
         },
         {
-          "type": "columns",
-          "ratio": "between",
-          "left": [
-            {
-              "type": "image",
-              "alt": "About us: image 4",
-              "width": 709,
-              "height": 706,
-              "src": "/assets/img/om-oss-4.webp"
-            }
-          ],
-          "right": [
-            {
-              "type": "image",
-              "alt": "About us: image 5",
-              "width": 86,
-              "height": 102,
-              "src": "/assets/img/om-oss-5.gif"
-            }
-          ]
+          "type": "image",
+          "alt": "ID06",
+          "width": 86,
+          "height": 102,
+          "src": "/assets/img/om-oss-5.gif",
+          "maxWidth": 86
         }
       ],
       "published": true
@@ -400,26 +372,12 @@
           ]
         },
         {
-          "type": "columns",
-          "ratio": "between",
-          "left": [
-            {
-              "type": "image",
-              "alt": "Sobre nosotros: imagen 4",
-              "width": 709,
-              "height": 706,
-              "src": "/assets/img/om-oss-4.webp"
-            }
-          ],
-          "right": [
-            {
-              "type": "image",
-              "alt": "Sobre nosotros: imagen 5",
-              "width": 86,
-              "height": 102,
-              "src": "/assets/img/om-oss-5.gif"
-            }
-          ]
+          "type": "image",
+          "alt": "ID06",
+          "width": 86,
+          "height": 102,
+          "src": "/assets/img/om-oss-5.gif",
+          "maxWidth": 86
         }
       ],
       "published": true,
@@ -541,26 +499,12 @@
           ]
         },
         {
-          "type": "columns",
-          "ratio": "between",
-          "left": [
-            {
-              "type": "image",
-              "alt": "Om oss: bilde 4",
-              "width": 709,
-              "height": 706,
-              "src": "/assets/img/om-oss-4.webp"
-            }
-          ],
-          "right": [
-            {
-              "type": "image",
-              "alt": "Om oss: bilde 5",
-              "width": 86,
-              "height": 102,
-              "src": "/assets/img/om-oss-5.gif"
-            }
-          ]
+          "type": "image",
+          "alt": "ID06",
+          "width": 86,
+          "height": 102,
+          "src": "/assets/img/om-oss-5.gif",
+          "maxWidth": 86
         }
       ],
       "published": true

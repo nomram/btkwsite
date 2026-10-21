@@ -35,10 +35,6 @@
     "email": "johnny@betongakuten.se",
     "phones": [
       {
-        "label": "Kontor",
-        "value": "040-15 00 57"
-      },
-      {
         "label": "Mobil",
         "value": "0700-37 94 11"
       }
@@ -99,7 +95,9 @@
   },
   "privacyPath": "/integritetspolicy",
   "sectionBarLogos": false,
-  "quoteForm": { "endpoint": "" },
+  "quoteForm": {
+    "endpoint": ""
+  },
   "sectionBars": [
     "/produkter"
   ],

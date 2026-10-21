@@ -444,6 +444,20 @@
     });
   }
 
+  // ---------- start page: the little arrow under the banner scrolls to the content and fades out once the page moves ----------
+  (function () {
+    var cue = document.querySelector(".hero__scroll"), target = document.getElementById("start");
+    if (!cue) return;
+    function fade() { cue.classList.toggle("is-gone", (window.pageYOffset || document.documentElement.scrollTop) > 40); }
+    window.addEventListener("scroll", fade, { passive: true });
+    fade();
+    cue.addEventListener("click", function (e) {
+      if (!target || !target.scrollIntoView || (window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches)) return;
+      e.preventDefault();
+      target.scrollIntoView({ behavior: "smooth", block: "start" });
+    });
+  })();
+
   // ---------- range chart with a slider: marks the chosen size and lists the models that fit ----------
   [].forEach.call(document.querySelectorAll("[data-rc=selector]"), function (box) {
     var input = box.querySelector("input[type=range]"), out = box.querySelector(".rc__out"), res = box.querySelector(".rc__result"), marker = box.querySelector(".rc__marker");
@@ -487,11 +501,12 @@
       res.textContent = fits.length ? res.getAttribute("data-fits") + ": " + fits.join(", ") : res.getAttribute("data-none");
     }
     // the finger: shown once, when the chart comes into view; any touch of the slider ends it
-    // shown only once per visitor: remembered in this browser (a plain "seen" flag, nothing about the person), so a reload or
-    // another chart does not repeat it; a visitor who reaches for the slider first never gets it at all
-    var HINT_KEY = "bk_rc_hint", stopped = false, raf = 0;
-    function seen() { try { return localStorage.getItem(HINT_KEY) === "1"; } catch (e) { return false; } }
-    function mark() { try { localStorage.setItem(HINT_KEY, "1"); } catch (e) { /* private mode: the hint may show again, nothing breaks */ } }
+    // shown once, then remembered in this browser for a week (only the time it was last shown, nothing about the person), so a reload
+    // or another chart does not repeat it but a returning visitor gets the reminder again; a visitor who reaches for the slider first
+    // never gets it. Adding ?hint=1 to the address shows it regardless (handy for checking it).
+    var HINT_KEY = "bk_rc_hint", WEEK = 7 * 864e5, stopped = false, raf = 0, forced = /[?&]hint=1(&|$)/.test(location.search);
+    function seen() { if (forced) return false; try { var t = Number(localStorage.getItem(HINT_KEY)); return t > 1e12 && Date.now() - t < WEEK; } catch (e) { return false; } }
+    function mark() { try { localStorage.setItem(HINT_KEY, String(Date.now())); } catch (e) { /* private mode: the hint may show again, nothing breaks */ } }
     function stopHint() { mark(); if (stopped) return; stopped = true; cancelAnimationFrame(raf); slider.classList.remove("is-demo"); }
     if (seen()) stopped = true;
     // the finger really moves the dial: out to the right and back, twice, then the slider is left where it started
