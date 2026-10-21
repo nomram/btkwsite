@@ -455,6 +455,24 @@
     rows.forEach(function (r) { known[keyOf(r.querySelector(".rc__label").textContent)] = 1; });
     [].forEach.call(document.querySelectorAll("main .table-wrap tbody tr"), function (tr) { var th = tr.querySelector("th"), k = th && keyOf(th.textContent); if (k && known[k]) echo.push({ el: tr, key: k }); });
     [].forEach.call(document.querySelectorAll("main .module, main .card"), function (m) { var t = m.querySelector(".module__title, .card__title"), k = t && keyOf(t.textContent); if (k && known[k]) echo.push({ el: m, key: k }); });
+    // the sentence under the slider is different for every size; the box keeps the height of the longest one
+    // (measured per screen width), so nothing below it moves while the slider is dragged
+    function sentenceFor(v) {
+      var fits = rows.filter(function (r) { return v >= Number(r.getAttribute("data-min")) && v <= Number(r.getAttribute("data-max")); }).map(function (r) { return r.querySelector(".rc__label").textContent; });
+      return fits.length ? res.getAttribute("data-fits") + ": " + fits.join(", ") : res.getAttribute("data-none");
+    }
+    function reserve() {
+      var keep = res.textContent, seen = {}, tallest = 0, min = Number(input.min), max = Number(input.max), stp = Number(input.step) || 1;
+      res.style.minHeight = "0";
+      for (var v = min; v <= max; v += stp) {
+        var t = sentenceFor(v);
+        if (seen[t]) continue;
+        seen[t] = 1; res.textContent = t;
+        tallest = Math.max(tallest, Math.ceil(res.getBoundingClientRect().height));
+      }
+      res.textContent = keep;
+      res.style.minHeight = tallest + "px";
+    }
     function sync() {
       var v = Number(input.value), fits = [], fitKeys = {};
       box.style.setProperty("--pos", String(v / top));
@@ -496,6 +514,11 @@
     input.addEventListener("input", function () { stopHint(); sync(); });
     ["pointerenter", "pointerdown", "keydown", "touchstart", "focus"].forEach(function (ev) { box.querySelector(".rc__pick").addEventListener(ev, stopHint, { passive: true, capture: true }); });
     sync();
+    reserve();
+    var rw = 0, rt = 0;
+    window.addEventListener("resize", function () { if (window.innerWidth === rw) return; rw = window.innerWidth; clearTimeout(rt); rt = setTimeout(reserve, 150); });
+    rw = window.innerWidth;
+    if (document.fonts && document.fonts.ready) document.fonts.ready.then(reserve);
     if (!stopped && "IntersectionObserver" in window && !(window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches)) {
       var io = new IntersectionObserver(function (en) { if (en[0].isIntersecting) { io.disconnect(); if (!stopped) { mark(); demo(); } } }, { threshold: 0.6 });
       io.observe(slider);

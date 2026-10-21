@@ -363,17 +363,17 @@ a.rc__label:hover { color: var(--primary); }
 .rc--selector .rc__row.is-in .rc__bar--out .rc__val { color: var(--dark); }
 .rc__marker { position: absolute; top: 1.6rem; bottom: 0; left: calc(var(--lab) + (100% - var(--lab)) * var(--pos, 0)); width: 0; border-left: 2px dashed var(--dark); pointer-events: none; z-index: 0; transition: left .08s linear; }
 /* picker: the label, then the chosen size big, with the slider right next to it on the left */
-.rc__pick { display: grid; grid-template-columns: max-content minmax(11rem, 24rem); column-gap: 1.1rem; row-gap: .2rem; align-items: center; justify-content: start; margin: 0 0 1.2rem; }
+.rc__pick { display: grid; grid-template-columns: max-content minmax(11rem, 24rem) minmax(0, 1fr); column-gap: 1.1rem; row-gap: .2rem; align-items: center; justify-content: start; margin: 0 0 1.2rem; }
 .rc__pick label { grid-column: 1 / -1; font-weight: 800; font-size: .72rem; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); }
 .rc__out { grid-column: 1; grid-row: 2; font-size: clamp(1.5rem, 1.1rem + 1.3vw, 2.1rem); line-height: 1.1; font-weight: 800; letter-spacing: -.01em; width: 7.6ch; white-space: nowrap; font-variant-numeric: tabular-nums; color: var(--text); }
-.rc__slider { grid-column: 2; grid-row: 2; position: relative; padding: .7rem 0 1.5rem; }
-.rc__pick input[type=range] { width: 100%; margin: 0; accent-color: var(--primary); cursor: ew-resize; touch-action: pan-y; }
-.rc__result { grid-column: 1 / -1; margin: .7rem 0 0; font-size: 1.02rem; font-weight: 700; min-height: 1.5em; }
+.rc__slider { grid-column: 2; grid-row: 2; position: relative; padding: 1.5rem 0; } /* equal padding: the track sits on the same centre line as the big number */
+.rc__pick input[type=range] { display: block; width: 100%; margin: 0; accent-color: var(--primary); cursor: ew-resize; touch-action: pan-y; }
+.rc__result { grid-column: 1 / -1; width: 0; min-width: 100%; margin: .7rem 0 0; font-size: 1.02rem; font-weight: 700; min-height: 1.5em; }
 @media (max-width: 640px) { .rc__result { min-height: 3em; } }
 .rc__caution { display: flex; gap: .5rem; align-items: flex-start; margin: 1rem 0 0; padding: .6rem .8rem; max-width: 46rem; font-size: .84rem; line-height: 1.45; color: var(--text); background: #fff6ea; border-left: 3px solid var(--primary); border-radius: 2px; }
 .rc__caution svg { flex: none; margin-top: .12rem; color: var(--primary); }
 /* the finger shows once how to use the slider: it slides to the right and back, then goes away for good */
-.rc__hand { position: absolute; left: calc(var(--hp, 0) * (100% - 22px) + 11px); top: 1.2rem; width: 30px; height: 30px; margin-left: -9px; pointer-events: none; opacity: 0; transition: opacity .3s ease; filter: drop-shadow(0 2px 3px rgba(35, 31, 32, .3)); }
+.rc__hand { position: absolute; left: calc(var(--hp, 0) * (100% - 22px) + 11px); top: 2rem; width: 30px; height: 30px; margin-left: -9px; pointer-events: none; opacity: 0; transition: opacity .3s ease; filter: drop-shadow(0 2px 3px rgba(35, 31, 32, .3)); }
 .rc__slider.is-demo .rc__hand { opacity: 1; }
 .rc__hand svg { width: 100%; height: 100%; display: block; }
 /* model labels with a small picture */
@@ -406,7 +406,8 @@ tr.is-fit > th, tr.is-fit > td { background-color: #fff1e0 !important; }
   /* phones: the slider gets the full width under the readout (longer track = finer control) */
   .rc__pick { grid-template-columns: minmax(0, 1fr); }
   .rc__out { grid-column: 1; grid-row: 2; }
-  .rc__slider { grid-column: 1; grid-row: 3; padding-top: .4rem; }
+  .rc__slider { grid-column: 1; grid-row: 3; padding: .4rem 0 1.5rem; }
+  .rc__hand { top: 1.2rem; }
 }
 
 /* ---------- related pages: slim rail ---------- */

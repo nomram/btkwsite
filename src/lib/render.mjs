@@ -767,7 +767,7 @@ function renderHeader(ctx, current) {
     // dropdown = the brand logos straight away (a row that follows the mouse sideways), no section label
     const logos = brandLogoMap(ctx, p);
     const tiles = kids.map((k, n) => {
-      const src = (ctx.pages.get(k) && ctx.pages.get(k).logo) || logos.get(k);
+      const src = (ctx.pages.get(k) && (ctx.pages.get(k).menuLogo || ctx.pages.get(k).logo)) || logos.get(k);
       const name = navTitleOf(ctx, k);
       return `<li><a class="logorow__item" href="${esc(ctx.url(k))}" data-panel="mp-${n}" aria-describedby="mp-${n}">` +
         (src ? `<span class="logorow__img">${imgTag(ctx, src, name, { cls: logoIsWide(ctx, src) ? "logorow__logo logorow__logo--wide" : "logorow__logo", sizes: "160px" })}</span>` : "") +
