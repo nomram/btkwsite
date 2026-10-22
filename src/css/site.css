@@ -381,9 +381,8 @@ a.rc__label:hover { color: var(--primary); }
 .rc__ico { flex: none; width: 30px; height: 30px; border: 1px solid var(--line); border-radius: 2px; background: var(--surface); }
 /* what the slider picked, echoed in the data table and the model tiles below: the fitting ones are bright, the others stay visible but calmer */
 .is-fit, .is-dim { transition: opacity .25s ease, box-shadow .25s ease, background-color .25s ease; }
-.is-dim { opacity: .6; }
+.is-dim { opacity: .78; }
 tr.is-fit > th, tr.is-fit > td { background-color: #fff1e0 !important; }
-.module.is-fit, .card.is-fit { border-color: var(--primary); box-shadow: 0 0 0 1px var(--primary), var(--shadow); }
 .rc__scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; background: #fff; border: 1px solid var(--line); border-radius: var(--radius); }
 .rc__matrix { border-collapse: collapse; width: 100%; font-size: .85rem; min-width: 34rem; }
 .rc__matrix th, .rc__matrix td { padding: .5rem .6rem; border: 1px solid var(--line); text-align: center; }
