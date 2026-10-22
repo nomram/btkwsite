@@ -27,7 +27,13 @@
         {
           "type": "button",
           "kind": "download",
-          "text": "Broschyr",
+          "text": "Huvudbroschyr (produktportfölj)",
+          "href": "/assets/docs/haeny-portfolio-brochure-en.pdf"
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Broschyr (översikt)",
           "href": "/assets/docs/haeny-ladda-ner-huvudbroschyr.pdf",
           "driveId": "148ne9OMuPCzVDbmhU6CGsrj5TFyFTViG"
         },
@@ -35,6 +41,12 @@
           "type": "modules",
           "layout": "tiles",
           "items": [
+            {
+              "title": "Hitta rätt maskin",
+              "image": "/assets/img/haeny-finder-ic.webp",
+              "alt": "Hitta rätt maskin",
+              "href": "/produkter/haeny/hitta-ratt-maskin"
+            },
             {
               "title": "Manuella pumpar",
               "image": "/assets/img/haeny-manuella-pumpar.webp",
@@ -238,7 +250,13 @@
         {
           "type": "button",
           "kind": "download",
-          "text": "Brochure",
+          "text": "Main brochure (product portfolio)",
+          "href": "/assets/docs/haeny-portfolio-brochure-en.pdf"
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Brochure (overview)",
           "href": "/assets/docs/haeny-ladda-ner-huvudbroschyr.pdf",
           "driveId": "148ne9OMuPCzVDbmhU6CGsrj5TFyFTViG"
         },
@@ -450,7 +468,13 @@
         {
           "type": "button",
           "kind": "download",
-          "text": "Folleto",
+          "text": "Folleto principal (cartera de productos)",
+          "href": "/assets/docs/haeny-portfolio-brochure-en.pdf"
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Folleto (resumen)",
           "href": "/assets/docs/haeny-ladda-ner-huvudbroschyr.pdf",
           "driveId": "148ne9OMuPCzVDbmhU6CGsrj5TFyFTViG"
         },
@@ -662,7 +686,13 @@
         {
           "type": "button",
           "kind": "download",
-          "text": "Brosjyre",
+          "text": "Hovedbrosjyre (produktportefølje)",
+          "href": "/assets/docs/haeny-portfolio-brochure-en.pdf"
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Brosjyre (oversikt)",
           "href": "/assets/docs/haeny-ladda-ner-huvudbroschyr.pdf",
           "driveId": "148ne9OMuPCzVDbmhU6CGsrj5TFyFTViG"
         },

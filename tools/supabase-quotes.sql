@@ -14,7 +14,6 @@ create table if not exists public.quote_requests (
   lang_label  text,
   page        text,
   product     text check (char_length(product) <= 200),
-  hole_mm     integer check (hole_mm between 1 and 999),
   -- human check (see src/js/quote-guard.js): proof of work tied to the drand beacon round, time spent on the form, hold-and-release result
   pow_round   bigint,
   pow_ts      bigint,
@@ -26,7 +25,7 @@ create table if not exists public.quote_requests (
 );
 -- If the table already exists from an earlier version, add the new columns:
 alter table public.quote_requests
-  add column if not exists lang_label text, add column if not exists product text, add column if not exists hole_mm integer,
+  add column if not exists lang_label text, add column if not exists product text,
   add column if not exists pow_round bigint, add column if not exists pow_ts bigint, add column if not exists pow_nonce bigint, add column if not exists fill_ms integer,
   add column if not exists game_hits integer, add column if not exists game_misses integer, add column if not exists game_ms integer;
 

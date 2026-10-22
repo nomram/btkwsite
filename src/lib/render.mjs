@@ -60,6 +60,7 @@ function blockIsEmpty(b) {
     case "cta": return !b.title;
     case "carousel": return !(b.items || []).some((x) => x && x.src);
     case "compare": return !b.src || !b.src2;
+    case "finder": return !(b.groups || []).some((g) => g && g.title);
     case "modules": return !(b.items || []).length;
     case "related": return !(b.items || []).some((it) => it && it.href);
     case "rangechart": return !(b.items || []).some((it) => it && it.label);
@@ -472,6 +473,28 @@ function renderModules(ctx, b) {
 
 // Image carousel. Native scroll-snap: swipe, trackpad and keyboard work without JavaScript; site.js adds arrows, dots
 // and the optional autoplay (never with prefers-reduced-motion, stops as soon as the visitor touches it).
+// "Find the right machine": cards for the product families; choosing one shows its models, each with its brochure. Without JavaScript
+// every family is listed one after the other, so nothing is hidden from a visitor or a search engine.
+function renderFinder(ctx, b) {
+  const groups = (b.groups || []).filter((g) => g && g.title);
+  if (!groups.length) return "";
+  const u = ctx.ui;
+  const slug = (g, i) => "fn-" + String(g.key || g.title).normalize("NFKD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "") + "-" + i;
+  const count = (g) => { const n = (g.items || []).length; return n ? (n === 1 ? u.finder_count_one || "1 broschyr" : String(u.finder_count_many || "{n} broschyrer").replace("{n}", String(n))) : u.finder_count_none || "På begäran"; };
+  const cards = groups.map((g, i) => `<a class="finder__card" href="#${slug(g, i)}">` +
+    `<span class="finder__img">${g.image ? imgTag(ctx, g.image, "", { sizes: "(min-width: 900px) 200px, 45vw" }) : ""}</span>` +
+    `<span class="finder__name">${esc(g.title)}</span><span class="finder__count">${esc(count(g))}</span></a>`).join("");
+  const panels = groups.map((g, i) => {
+    const items = (g.items || []).filter((x) => x && x.href);
+    const list = items.length
+      ? `<ul class="docs finder__docs">${items.map((x) => renderDoc(ctx, { text: x.label || x.href.split("/").pop(), href: x.href, external: /^https?:/.test(x.href) })).join("")}</ul>`
+      : `<p class="finder__none">${esc(u.finder_none || "Broschyr på begäran. Kontakta oss så skickar vi den.")} <a href="${esc(localizeHref(ctx, "/kontakta-oss"))}">${esc(u.contact_us || "Kontakta oss")}</a></p>`;
+    return `<section class="finder__panel" id="${slug(g, i)}" aria-label="${esc(g.title)}"><h3>${esc(g.title)}</h3>${g.text ? `<p class="finder__text">${esc(g.text)}</p>` : ""}${list}</section>`;
+  }).join("");
+  return `<section class="finder" data-finder>${b.title ? `<h2${editFld(ctx, "title", "plain")}>${esc(b.title)}</h2>` : ""}${b.intro ? `<p class="finder__intro"${editFld(ctx, "intro")}>${esc(b.intro)}</p>` : ""}` +
+    `<div class="finder__cards">${cards}</div><p class="finder__hint" hidden>${esc(b.hint || u.finder_hint || "Välj en produkttyp ovan för att se modeller och broschyrer.")}</p><div class="finder__panels">${panels}</div></section>`;
+}
+
 // Two pictures of the same thing in the same pose on top of each other, with a divider the visitor drags (before / after, outside / inside).
 // The stage takes the proportions of the first picture and both are fitted inside it, so the join stays seamless at any width.
 function renderCompare(ctx, b) {
@@ -540,7 +563,6 @@ function renderQuote(ctx) {
     `${f("email", T("quote_email", "E-post"), "email", "email", true)}${f("phone", T("quote_phone", "Telefon"), "tel", "tel")}</div>` +
     `<p class="qf__f"><label for="q-message">${T("quote_message", "Vad behöver du hjälp med?")} <span class="qf__req" aria-hidden="true">*</span></label>` +
     `<textarea id="q-message" name="message" rows="5" required></textarea></p>` +
-    `<p class="qf__f qf__f--hole"><label for="q-hole">${T("quote_hole", "Håldiameter (mm), valfritt")}</label><input id="q-hole" name="hole" type="number" inputmode="numeric" min="1" max="999" step="1"></p>` +
     `<input type="hidden" name="product" value=""><input type="hidden" name="lang" value="${esc(ctx.lang)}"><input type="hidden" name="lang_label" value="${esc(langLabel)}">` +
     `<p class="qf__trap" aria-hidden="true"><label>Website <input name="website" type="text" tabindex="-1" autocomplete="off"></label></p>` +
     `${extra}<input type="hidden" name="subject" value="${T("quote_subject", "Offertförfrågan")}">` +
@@ -601,6 +623,7 @@ function renderBlockInner(ctx, b) {
     case "quote": return renderQuote(ctx);
     case "carousel": return renderCarousel(ctx, b.items, b);
     case "compare": return renderCompare(ctx, b);
+    case "finder": return renderFinder(ctx, b);
     case "modules": return renderModules(ctx, b);
     case "related": return renderRelated(ctx, b);
     case "rangechart": return renderRangeChart(ctx, b);

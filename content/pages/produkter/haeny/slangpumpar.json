@@ -1,0 +1,47 @@
+{
+  "path": "/produkter/haeny/slangpumpar",
+  "updated": "2026-10-23",
+  "template": "product",
+  "order": 5,
+  "published": false,
+  "i18n": {
+    "sv": {
+      "title": "Slangpumpar",
+      "h1": "Slangpumpar",
+      "description": "Slangpumpar från Häny.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "HÄNY",
+          "href": "/produkter/haeny",
+          "width": 832,
+          "height": 143,
+          "src": "/assets/img/haeny-1.webp"
+        },
+        {
+          "type": "text",
+          "html": "Slangpumpar från Häny. Mer information kommer. <a href=\"/kontakta-oss\">Kontakta oss</a> om du vill veta mer."
+        }
+      ]
+    },
+    "en": {
+      "title": "Hose pumps",
+      "h1": "Hose pumps",
+      "description": "Hose pumps from Häny.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "HÄNY",
+          "href": "/produkter/haeny",
+          "width": 832,
+          "height": 143,
+          "src": "/assets/img/haeny-1.webp"
+        },
+        {
+          "type": "text",
+          "html": "Hose pumps from Häny. More information is coming. <a href=\"/kontakta-oss\">Contact us</a> to learn more."
+        }
+      ]
+    }
+  }
+}

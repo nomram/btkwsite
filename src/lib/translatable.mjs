@@ -20,6 +20,10 @@ function visitBlock(b, pre, P, cb) {
   if (b.type === "button") cb(id("text"), b.text, (v) => (b.text = v));
   if (b.type === "image") { if (b.alt) cb(id("alt"), b.alt, (v) => (b.alt = v)); if (b.caption) cb(id("caption"), b.caption, (v) => (b.caption = v)); }
   if (b.type === "compare") for (const k of ["alt", "alt2", "label", "label2", "caption"]) if (b[k]) cb(id(k), b[k], (v) => (b[k] = v));
+  if (b.type === "finder") {
+    for (const k of ["title", "intro", "hint"]) if (b[k]) cb(id(k), b[k], (v) => (b[k] = v));
+    (b.groups || []).forEach((g, j) => { if (g.title) cb(id(`groups.${j}.title`), g.title, (v) => (g.title = v)); if (g.text) cb(id(`groups.${j}.text`), g.text, (v) => (g.text = v)); });
+  }
   if (b.type === "video" && b.title) cb(id("title"), b.title, (v) => (b.title = v));
   if (b.type === "table") (b.rows || []).forEach((r, y) => r.forEach((c, x) => { if (c && /[A-Za-zÅÄÖåäö]{4,}/.test(c)) cb(id(`rows.${y}.${x}`), c, (v) => (b.rows[y][x] = v)); }));
   if (b.type === "chips") {

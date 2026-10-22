@@ -20,12 +20,11 @@
     var form = box.querySelector("form");
     var status = box.querySelector(".qf__status");
     if (!form) return;
-    var holeInput = form.querySelector("[name=hole]"), productInput = form.querySelector("[name=product]"), ta = form.querySelector("textarea");
-    // arrived from a product page: ?produkt=<name> (and the size picked in a chart, ?hal=<mm>) pre-fill the form
+    var productInput = form.querySelector("[name=product]"), ta = form.querySelector("textarea");
+    // arrived from a product page: ?produkt=<name> (and the size picked in a chart, ?hal=<mm>) pre-fill the message text (no separate field)
     var product = "", hole = holeFromUrl();
     try { var m = /[?&]produkt=([^&#]*)/.exec(window.location.search); if (m) product = decodeURIComponent(m[1].replace(/\+/g, " ")).slice(0, 120); } catch (e) { /* ignore malformed encoding */ }
     if (productInput) productInput.value = product;
-    if (holeInput && hole) holeInput.value = String(hole);
     if (ta && !ta.value && (product || hole)) {
       var about = (product || "") + (product && hole ? ", " : "") + (hole ? box.getAttribute("data-hole-short") + " " + hole + " mm" : "");
       ta.value = box.getAttribute("data-about") + " " + about + "\n\n";
@@ -58,7 +57,7 @@
       var btn = form.querySelector("button[type=submit]");
       if (window.bkGuard && guard && !guard.passed()) { say(tx.need || "", true); guard.nudge(); return; }
       var langLabel = box.getAttribute("data-lang-label") || "", lang = document.documentElement.lang || "";
-      var holeVal = String(data.get("hole") || "").replace(/[^\d]/g, "").slice(0, 4), prod = String(data.get("product") || "");
+      var prod = String(data.get("product") || "");
       btn.disabled = true; say(tx.checking || box.getAttribute("data-sending"));
       var email = String(data.get("email") || "").trim();
       proof(email).then(function (extra) {
@@ -68,7 +67,7 @@
           var opts = { method: "POST", body: data, headers: { Accept: "application/json" } };
           if (key) {
             // Supabase REST: JSON row into the quote_requests table; the public key may only insert (row-level security)
-            var row = { message: String(data.get("message") || ""), consent: true, lang: lang, lang_label: langLabel, page: location.pathname, product: prod || null, hole_mm: holeVal ? Number(holeVal) : null };
+            var row = { message: String(data.get("message") || ""), consent: true, lang: lang, lang_label: langLabel, page: location.pathname, product: prod || null };
             ["name", "company", "email", "phone"].forEach(function (k) { row[k] = String(data.get(k) || ""); });
             row.email = email;
             Object.keys(extra).forEach(function (k) { row[k] = extra[k]; });
@@ -79,7 +78,7 @@
         }
         var to = box.getAttribute("data-mailto");
         var lines = ["name", "company", "email", "phone"].map(function (k) { return data.get(k) ? k + ": " + data.get(k) : ""; });
-        lines.push(prod ? "product: " + prod : "", holeVal ? "hole diameter: " + holeVal + " mm" : "", langLabel ? "language: " + langLabel + " (" + lang + ")" : "");
+        lines.push(prod ? "product: " + prod : "", langLabel ? "language: " + langLabel + " (" + lang + ")" : "");
         var body = lines.filter(Boolean).join("\n") + "\n\n" + data.get("message");
         say(box.getAttribute("data-mail"));
         window.location.href = "mailto:" + to + "?subject=" + encodeURIComponent(box.getAttribute("data-subject")) + "&body=" + encodeURIComponent(body);
@@ -493,6 +492,24 @@
       input.focus();
     });
   }
+
+  // ---------- finder: choosing a product family shows its models and brochures ----------
+  [].forEach.call(document.querySelectorAll("[data-finder]"), function (box) {
+    var cards = [].slice.call(box.querySelectorAll(".finder__card")), panels = [].slice.call(box.querySelectorAll(".finder__panel")), hint = box.querySelector(".finder__hint");
+    if (!cards.length) return;
+    function show(id, scroll) {
+      var found = false;
+      cards.forEach(function (c) { var on = c.getAttribute("href") === "#" + id; if (on) found = true; c.classList.toggle("is-on", on); if (on) c.setAttribute("aria-current", "true"); else c.removeAttribute("aria-current"); });
+      panels.forEach(function (p) { p.classList.toggle("is-on", p.id === id); });
+      if (hint) hint.hidden = found;
+      if (found && scroll) { var p = document.getElementById(id); if (p && p.scrollIntoView) p.scrollIntoView({ behavior: reduceMotion ? "auto" : "smooth", block: "nearest" }); }
+      if (found) { try { history.replaceState(null, "", "#" + id); } catch (e) { /* ignore */ } }
+    }
+    cards.forEach(function (c) { c.addEventListener("click", function (e) { e.preventDefault(); show(c.getAttribute("href").slice(1), true); }); });
+    var h = (location.hash || "").slice(1);
+    show(h, false);
+    if (hint && !h) hint.hidden = false;
+  });
 
   // ---------- before / after pictures: drag anywhere on the picture (mouse, finger or pen); vertical swipes still scroll the page ----------
   // A mouse or pen puts the divider where it is pressed; a finger moves it relative to where the divider was, and only once the

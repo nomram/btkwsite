@@ -17,6 +17,19 @@ export const panelHooks = {
 };
 
 const groupsToText = (groups) => (groups || []).map((g) => "## " + (g.title || "") + "\n" + (g.rows || []).map((r) => [r.label, r.metric || "", r.us || ""].join(" | ")).join("\n")).join("\n\n");
+// finder blocks: "## Family | /assets/img/x.webp | short text" followed by one "Model | /assets/docs/x.pdf" line per brochure
+const finderToText = (groups) => (groups || []).map((g) => "## " + [g.title || "", g.image || "", g.text || ""].join(" | ") + "\n" + (g.items || []).map((r) => [r.label || "", r.href || ""].join(" | ")).join("\n")).join("\n\n");
+function textToFinder(txt) {
+  const groups = []; let cur = null;
+  for (const raw of String(txt).split(/\r?\n/)) {
+    const line = raw.trim(); if (!line) continue;
+    if (line.startsWith("##")) { const [title, image, text] = line.replace(/^#+\s*/, "").split("|").map((x) => x.trim()); cur = { title: title || "", ...(image ? { image } : {}), ...(text ? { text } : {}), items: [] }; groups.push(cur); continue; }
+    if (!cur) { cur = { title: "", items: [] }; groups.push(cur); }
+    const [label, href] = line.split("|").map((x) => x.trim());
+    if (label || href) cur.items.push({ label: label || "", href: href || "" });
+  }
+  return groups;
+}
 function textToGroups(txt) {
   const groups = [];
   let cur = null;
@@ -42,6 +55,7 @@ function snippet(b) {
     case "button": return b.text || (b.href || "").split("/").pop() || t("empty");
     case "cards": return t("n_cards", { n: (b.items || []).length });
     case "carousel": return t("n_images", { n: (b.items || []).length });
+    case "finder": return b.title || t("n_cards", { n: (b.groups || []).length });
     case "compare": return b.caption || b.alt || t("empty");
     case "modules": return t("n_cards", { n: (b.items || []).length });
     case "related": return t("n_cards", { n: (b.items || []).length });
@@ -167,6 +181,10 @@ function panelBlock() {
         `<div class="btnrow"><button class="btn sm primary" data-act="rel-add">${IC.plus}<span>${esc(t("related_add"))}</span></button></div>`;
       break;
     }
+    case "finder":
+      body = F(t("heading"), inp("title", b.title)) + F(t("intro_text"), `<textarea data-bf="intro" rows="3">${esc(b.intro || "")}</textarea>`) +
+        F(t("finder_groups"), `<textarea data-bf="groups" data-t="finder" rows="16" class="mono">${esc(finderToText(b.groups))}</textarea>`, t("finder_hint_text"));
+      break;
     case "compare": {
       const pic = (k, ak) => `<div class="sub"><div class="row nowrap">${b[k] ? `<img class="thumb" src="${esc(thumbUrl((b[k] || "").replace("/assets/img/", "")))}" alt="">` : ""}<button class="btn sm ghost" data-act="cmp-image" data-f="${k}">${esc(b[k] ? t("change_image") : t("choose_image"))}</button></div>${F(t("alt_text"), inp(ak, b[ak]))}</div>`;
       body = F(t("compare_first"), pic("src", "alt"), t("compare_hint")) + F(t("compare_second"), pic("src2", "alt2")) +
@@ -353,6 +371,7 @@ function parseValue(el) {
     case "tablegroups": v = String(v).split(/\r?\n/).filter((l) => l.trim()).map((l) => { const [txt, n] = l.split("|"); return { text: (txt || "").trim(), span: parseInt(n, 10) || 1 }; }); break;
     case "paras": v = String(v).split(/\r?\n\s*\r?\n/).map((s) => s.trim()).filter(Boolean); break;
     case "groups": v = textToGroups(v); break;
+    case "finder": v = textToFinder(v); break;
     case "table": {
       const rows = String(v).split(/\r?\n/).map((r) => r.split(/\t|;/).map((c) => c.trim())).filter((r) => r.some(Boolean));
       const w = Math.max(1, ...rows.map((r) => r.length));
