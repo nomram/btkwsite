@@ -19,6 +19,7 @@ function visitBlock(b, pre, P, cb) {
   if (b.type === "list") (b.items || []).forEach((it, j) => cb(id(`items.${j}`), it, (v) => (b.items[j] = v)));
   if (b.type === "button") cb(id("text"), b.text, (v) => (b.text = v));
   if (b.type === "image") { if (b.alt) cb(id("alt"), b.alt, (v) => (b.alt = v)); if (b.caption) cb(id("caption"), b.caption, (v) => (b.caption = v)); }
+  if (b.type === "compare") for (const k of ["alt", "alt2", "label", "label2", "caption"]) if (b[k]) cb(id(k), b[k], (v) => (b[k] = v));
   if (b.type === "video" && b.title) cb(id("title"), b.title, (v) => (b.title = v));
   if (b.type === "table") (b.rows || []).forEach((r, y) => r.forEach((c, x) => { if (c && /[A-Za-zÅÄÖåäö]{4,}/.test(c)) cb(id(`rows.${y}.${x}`), c, (v) => (b.rows[y][x] = v)); }));
   if (b.type === "chips") {

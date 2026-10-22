@@ -771,7 +771,7 @@ dialog.search::backdrop { background: rgba(35, 31, 32, .6); }
   .nav__langs { display: flex; flex-wrap: wrap; gap: .5rem; list-style: none; margin: 1rem 0 0; padding: 0; }
   .nav__langs a { display: flex; align-items: center; gap: .5rem; padding: .5rem .75rem; border: 1px solid var(--line); border-radius: var(--radius); text-decoration: none; font-size: .88rem; }
   .nav__langs a[aria-current] { border-color: var(--primary); font-weight: 700; }
-  .nav__langs img { border-radius: 2px; box-shadow: 0 0 0 1px rgba(35, 31, 32, .18); }
+  .nav__langs img { border-radius: 2px; box-shadow: 0 0 0 1px rgba(35, 31, 32, .18); object-fit: cover; }
 }
 
 /* sticky call bar (phones only) */
@@ -839,3 +839,19 @@ dialog.search::backdrop { background: rgba(35, 31, 32, .6); }
 #start { scroll-margin-top: 4rem; }
 @media (max-width: 640px) { .hero--home .hero__inner { padding-bottom: 3.2rem; } }
 @media print { .hero__scroll { display: none; } }
+
+/* before / after picture: drag the divider (pointer events on the picture; a hidden range input keeps it usable with the keyboard) */
+.cmp { margin: 0; width: 100%; max-width: 640px; }
+.cmp__stage { position: relative; aspect-ratio: var(--ar, 1.45); background: #fff; overflow: hidden; border-radius: var(--radius); touch-action: pan-y; user-select: none; -webkit-user-select: none; -webkit-touch-callout: none; cursor: ew-resize; --p: 50%; }
+.cmp .cmp__img { position: absolute; inset: 0; width: 100%; height: 100%; max-width: none; max-height: none; margin: 0; object-fit: contain; object-position: center; -webkit-user-drag: none; pointer-events: none; }
+.cmp__over { position: absolute; inset: 0; background: #fff; clip-path: inset(0 calc(100% - var(--p)) 0 0); }
+.cmp__bar { position: absolute; top: 0; bottom: 0; left: var(--p); width: 2px; margin-left: -1px; background: #fff; box-shadow: 0 0 0 1px rgba(35, 31, 32, .16), 0 0 10px rgba(0, 0, 0, .22); pointer-events: none; }
+.cmp__knob { position: absolute; top: 50%; left: 50%; width: 44px; height: 44px; margin: -22px 0 0 -22px; border-radius: 50%; background: #fff; color: var(--primary); display: grid; place-items: center; box-shadow: 0 2px 8px rgba(0, 0, 0, .3); transition: transform .15s ease; }
+.cmp.is-drag .cmp__knob { transform: scale(1.08); }
+.cmp__range { position: absolute; left: 0; bottom: 0; width: 1px; height: 1px; margin: 0; opacity: 0; pointer-events: none; }
+.cmp:has(.cmp__range:focus-visible) .cmp__knob { outline: 3px solid var(--primary); outline-offset: 2px; }
+.cmp__tag { position: absolute; bottom: .6rem; padding: .25rem .55rem; font-size: .68rem; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; color: #fff; background: rgba(35, 31, 32, .7); border-radius: 2px; pointer-events: none; }
+.cmp__tag--l { left: .6rem; }
+.cmp__tag--r { right: .6rem; }
+.no-js .cmp__range { display: none; }
+.cmp figcaption { margin-top: .5rem; font-size: .85rem; color: var(--muted); }

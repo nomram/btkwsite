@@ -42,6 +42,7 @@ function snippet(b) {
     case "button": return b.text || (b.href || "").split("/").pop() || t("empty");
     case "cards": return t("n_cards", { n: (b.items || []).length });
     case "carousel": return t("n_images", { n: (b.items || []).length });
+    case "compare": return b.caption || b.alt || t("empty");
     case "modules": return t("n_cards", { n: (b.items || []).length });
     case "related": return t("n_cards", { n: (b.items || []).length });
     case "rangechart": return b.title || t("n_rows", { n: (b.items || []).length });
@@ -164,6 +165,13 @@ function panelBlock() {
           <label class="chk"><input type="checkbox" data-bf="items.${ci}.mutual" data-t="bool" ${it.mutual ? "checked" : ""}> ${esc(t("related_mutual"))}</label>
         </div>`).join("") +
         `<div class="btnrow"><button class="btn sm primary" data-act="rel-add">${IC.plus}<span>${esc(t("related_add"))}</span></button></div>`;
+      break;
+    }
+    case "compare": {
+      const pic = (k, ak) => `<div class="sub"><div class="row nowrap">${b[k] ? `<img class="thumb" src="${esc(thumbUrl((b[k] || "").replace("/assets/img/", "")))}" alt="">` : ""}<button class="btn sm ghost" data-act="cmp-image" data-f="${k}">${esc(b[k] ? t("change_image") : t("choose_image"))}</button></div>${F(t("alt_text"), inp(ak, b[ak]))}</div>`;
+      body = F(t("compare_first"), pic("src", "alt"), t("compare_hint")) + F(t("compare_second"), pic("src2", "alt2")) +
+        F(t("compare_labels"), `<div class="row nowrap">${inp("label", b.label, `placeholder="${esc(t("compare_label_l"))}"`)}${inp("label2", b.label2, `placeholder="${esc(t("compare_label_r"))}"`)}</div>`) +
+        F(t("caption"), inp("caption", b.caption));
       break;
     }
     case "carousel": {
@@ -419,6 +427,7 @@ export function bindPanel(el) {
       case "open-settings": return panelHooks.openSettings();
       case "to-heading": mutate(() => { curBlocks()[i] = { type: "heading", level: 2, text: plainText(blk.html) }; }); return panelHooks.rerender();
       case "to-list": mutate(() => { curBlocks()[i] = { type: "list", ordered: false, items: String(blk.html || "").split(/<br\s*\/?>/i).map((s) => s.trim()).filter(Boolean) }; }); return panelHooks.rerender();
+      case "cmp-image": { const src = await pickImage(); if (src) { setField(i, b.dataset.f, src); const ak = b.dataset.f === "src" ? "alt" : "alt2"; if (!blk[ak]) setField(i, ak, humanizeFilename(src.split("/").pop())); panelHooks.rerender(); } return; }
       case "pick-image": { const src = await pickImage(); if (src) { setField(i, "src", src); if (!blk.alt) setField(i, "alt", humanizeFilename(src.split("/").pop()) ); panelHooks.rerender(); } return; }
       case "pick-doc": { const href = await pickDoc(); if (href) { setField(i, "href", href); if (!blk.text) setField(i, "text", humanizeFilename(href.split("/").pop())); panelHooks.rerender(); } return; }
       case "pick-link": {

@@ -36,7 +36,7 @@ function buildCtx(lang) {
     .sort((a, b) => (pages.get(a).order ?? 999) - (pages.get(b).order ?? 999) || a.localeCompare(b));
   const mf = state.manifest || { images: {}, docs: {} };
   const labels = {};
-  for (const id of ["image", "video", "carousel", "modules", "related", "rangechart", "cards", "table", "datasheet", "chips", "cta", "html", "list"]) labels[id] = t("empty_" + id);
+  for (const id of ["image", "video", "carousel", "compare", "modules", "related", "rangechart", "cards", "table", "datasheet", "chips", "cta", "html", "list"]) labels[id] = t("empty_" + id);
   return {
     site: { ...site, languages: Object.fromEntries(Object.entries(site.languages).map(([c, l]) => [c, { ...l, published: true }])) },
     lang, defaultLang: def, ui: { ...(state.ui[def] || {}), ...(state.ui[lang] || {}) }, pages,

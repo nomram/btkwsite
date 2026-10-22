@@ -185,6 +185,15 @@
         {
           "type": "text",
           "html": "Taggar: topphammare, sänkhammare, rotationshammare"
+        },
+        {
+          "type": "related",
+          "items": [
+            {
+              "href": "/produkter/tei/borrmaster",
+              "mutual": true
+            }
+          ]
         }
       ]
     },
@@ -365,6 +374,15 @@
         {
           "type": "text",
           "html": "Tags: top hammer, DTH hammer, rotary head"
+        },
+        {
+          "type": "related",
+          "items": [
+            {
+              "href": "/produkter/tei/borrmaster",
+              "mutual": true
+            }
+          ]
         }
       ],
       "published": true
@@ -546,6 +564,15 @@
         {
           "type": "text",
           "html": "Etiquetas: martillo en cabeza, martillo de fondo, cabezal de rotación"
+        },
+        {
+          "type": "related",
+          "items": [
+            {
+              "href": "/produkter/tei/borrmaster",
+              "mutual": true
+            }
+          ]
         }
       ],
       "published": true
@@ -727,6 +754,15 @@
         {
           "type": "text",
           "html": "Tagger: topphammer, senkhammer, rotasjonshammer"
+        },
+        {
+          "type": "related",
+          "items": [
+            {
+              "href": "/produkter/tei/borrmaster",
+              "mutual": true
+            }
+          ]
         }
       ],
       "published": true

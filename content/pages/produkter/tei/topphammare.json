@@ -22,22 +22,16 @@
           "src": "/assets/img/tei-2.webp"
         },
         {
-          "type": "image",
-          "alt": "Topphammare: bild 2",
+          "type": "compare",
+          "src": "/assets/img/tei-topphammare-2.webp",
+          "alt": "TE1000 topphammare, utsida",
+          "src2": "/assets/img/tei-topphammare-3.webp",
+          "alt2": "TE1000 topphammare i genomskärning",
+          "label": "Utsida",
+          "label2": "Genomskärning",
+          "caption": "TE1000 utanpå och i genomskärning",
           "width": 1734,
-          "height": 1191,
-          "src": "/assets/img/tei-topphammare-2.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Topphammare: bild 3",
-          "width": 1920,
-          "height": 1325,
-          "src": "/assets/img/tei-topphammare-3.webp"
-        },
-        {
-          "type": "text",
-          "html": "TE1000 och TE1000 i genomskärning"
+          "height": 1191
         },
         {
           "type": "text",
@@ -282,6 +276,15 @@
         {
           "type": "text",
           "html": "Taggar: topphammare/sänkhammare, rotationshammare"
+        },
+        {
+          "type": "related",
+          "items": [
+            {
+              "href": "/produkter/tei/borrmaster",
+              "mutual": true
+            }
+          ]
         }
       ]
     },
@@ -299,22 +302,16 @@
           "src": "/assets/img/tei-2.webp"
         },
         {
-          "type": "image",
-          "alt": "Drifters: image 2",
+          "type": "compare",
+          "src": "/assets/img/tei-topphammare-2.webp",
+          "alt": "TE1000 drifter, exterior",
+          "src2": "/assets/img/tei-topphammare-3.webp",
+          "alt2": "TE1000 drifter in cross-section",
+          "label": "Outside",
+          "label2": "Cross-section",
+          "caption": "TE1000 from the outside and in cross-section",
           "width": 1734,
-          "height": 1191,
-          "src": "/assets/img/tei-topphammare-2.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Drifters: image 3",
-          "width": 1920,
-          "height": 1325,
-          "src": "/assets/img/tei-topphammare-3.webp"
-        },
-        {
-          "type": "text",
-          "html": "TE1000 and TE1000 in cross-section"
+          "height": 1191
         },
         {
           "type": "text",
@@ -559,6 +556,15 @@
         {
           "type": "text",
           "html": "Tags: top hammer/DTH hammer, rotary head"
+        },
+        {
+          "type": "related",
+          "items": [
+            {
+              "href": "/produkter/tei/borrmaster",
+              "mutual": true
+            }
+          ]
         }
       ],
       "published": true
@@ -577,22 +583,16 @@
           "src": "/assets/img/tei-2.webp"
         },
         {
-          "type": "image",
-          "alt": "Martillos perforadores: imagen 2",
+          "type": "compare",
+          "src": "/assets/img/tei-topphammare-2.webp",
+          "alt": "Martillo perforador TE1000, exterior",
+          "src2": "/assets/img/tei-topphammare-3.webp",
+          "alt2": "Martillo perforador TE1000 en sección",
+          "label": "Exterior",
+          "label2": "Sección",
+          "caption": "TE1000 por fuera y en sección",
           "width": 1734,
-          "height": 1191,
-          "src": "/assets/img/tei-topphammare-2.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Martillos perforadores: imagen 3",
-          "width": 1920,
-          "height": 1325,
-          "src": "/assets/img/tei-topphammare-3.webp"
-        },
-        {
-          "type": "text",
-          "html": "TE1000 y TE1000 en sección"
+          "height": 1191
         },
         {
           "type": "text",
@@ -837,6 +837,15 @@
         {
           "type": "text",
           "html": "Etiquetas: martillo en cabeza/martillo de fondo, cabezal de rotación"
+        },
+        {
+          "type": "related",
+          "items": [
+            {
+              "href": "/produkter/tei/borrmaster",
+              "mutual": true
+            }
+          ]
         }
       ],
       "published": true
@@ -855,22 +864,16 @@
           "src": "/assets/img/tei-2.webp"
         },
         {
-          "type": "image",
-          "alt": "Topphammere: bilde 2",
+          "type": "compare",
+          "src": "/assets/img/tei-topphammare-2.webp",
+          "alt": "TE1000 topphammer, utside",
+          "src2": "/assets/img/tei-topphammare-3.webp",
+          "alt2": "TE1000 topphammer i tverrsnitt",
+          "label": "Utside",
+          "label2": "Tverrsnitt",
+          "caption": "TE1000 utvendig og i tverrsnitt",
           "width": 1734,
-          "height": 1191,
-          "src": "/assets/img/tei-topphammare-2.webp"
-        },
-        {
-          "type": "image",
-          "alt": "Topphammere: bilde 3",
-          "width": 1920,
-          "height": 1325,
-          "src": "/assets/img/tei-topphammare-3.webp"
-        },
-        {
-          "type": "text",
-          "html": "TE1000 og TE1000 i snitt"
+          "height": 1191
         },
         {
           "type": "text",
@@ -1115,6 +1118,15 @@
         {
           "type": "text",
           "html": "Tagger: topphammer/senkhammer, rotasjonshammer"
+        },
+        {
+          "type": "related",
+          "items": [
+            {
+              "href": "/produkter/tei/borrmaster",
+              "mutual": true
+            }
+          ]
         }
       ],
       "published": true

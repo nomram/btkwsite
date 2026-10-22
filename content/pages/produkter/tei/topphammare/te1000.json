@@ -56,11 +56,11 @@
               "rows": [
                 {
                   "label": "Rotationsmoment",
-                  "metric": "6779 Nm"
+                  "metric": "6779 Nm (standard), 13 569 Nm (tillval)"
                 },
                 {
-                  "label": "Varvtal",
-                  "metric": "2"
+                  "label": "Varvtal (växel 1 / 2)",
+                  "metric": "196 / 98 rpm (standard), 98 / 49 rpm (tillval)"
                 }
               ]
             },
@@ -86,7 +86,7 @@
               ]
             }
           ],
-          "note": "TEI:s tekniska data förutsätter 40 % hydraulisk effektförlust."
+          "note": "Tillgängliga gängtyper (shanks): standard T76LH, tillval H90RH, H90LH, T73RH. TEI:s tekniska data förutsätter 40 % hydraulisk effektförlust."
         },
         {
           "type": "button",
@@ -145,11 +145,11 @@
               "rows": [
                 {
                   "label": "Rotation torque",
-                  "metric": "6779 Nm"
+                  "metric": "6779 Nm (standard), 13,569 Nm (optional)"
                 },
                 {
-                  "label": "Speed",
-                  "metric": "2"
+                  "label": "Speed (gear 1 / 2)",
+                  "metric": "196 / 98 rpm (standard), 98 / 49 rpm (optional)"
                 }
               ]
             },
@@ -175,7 +175,7 @@
               ]
             }
           ],
-          "note": "TEI’s technical specifications assume a 40% hydraulic power loss."
+          "note": "Available shank types: standard T76LH, optional H90RH, H90LH, T73RH. TEI’s technical specifications assume a 40% hydraulic power loss."
         },
         {
           "type": "button",
@@ -235,11 +235,11 @@
               "rows": [
                 {
                   "label": "Par de rotación",
-                  "metric": "6779 Nm"
+                  "metric": "6779 Nm (estándar), 13 569 Nm (opcional)"
                 },
                 {
-                  "label": "Velocidad",
-                  "metric": "2"
+                  "label": "Velocidad (marcha 1 / 2)",
+                  "metric": "196 / 98 rpm (estándar), 98 / 49 rpm (opcional)"
                 }
               ]
             },
@@ -265,7 +265,7 @@
               ]
             }
           ],
-          "note": "Las especificaciones técnicas de TEI suponen una pérdida de potencia hidráulica del 40 %."
+          "note": "Tipos de enmangue disponibles (shanks): estándar T76LH, opcionales H90RH, H90LH, T73RH. Las especificaciones técnicas de TEI suponen una pérdida de potencia hidráulica del 40 %."
         },
         {
           "type": "button",
@@ -325,11 +325,11 @@
               "rows": [
                 {
                   "label": "Rotasjonsmoment",
-                  "metric": "6779 Nm"
+                  "metric": "6779 Nm (standard), 13 569 Nm (tilvalg)"
                 },
                 {
-                  "label": "Turtall",
-                  "metric": "2"
+                  "label": "Turtall (gir 1 / 2)",
+                  "metric": "196 / 98 rpm (standard), 98 / 49 rpm (tilvalg)"
                 }
               ]
             },
@@ -355,7 +355,7 @@
               ]
             }
           ],
-          "note": "TEIs tekniske data forutsetter 40 % hydraulisk effekttap."
+          "note": "Tilgjengelige gjengetyper (shanks): standard T76LH, tilvalg H90RH, H90LH, T73RH. TEIs tekniske data forutsetter 40 % hydraulisk effekttap."
         },
         {
           "type": "button",

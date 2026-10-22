@@ -444,6 +444,58 @@
     });
   }
 
+  // ---------- before / after pictures: drag anywhere on the picture (mouse, finger or pen); vertical swipes still scroll the page ----------
+  // A mouse or pen puts the divider where it is pressed; a finger moves it relative to where the divider was, and only once the
+  // swipe is clearly sideways, so scrolling past the picture never nudges it. The hidden range input mirrors the value for the keyboard.
+  [].forEach.call(document.querySelectorAll("[data-cmp]"), function (fig) {
+    var stage = fig.querySelector(".cmp__stage"), input = fig.querySelector(".cmp__range"), raf = 0, stopped = false;
+    if (!stage || !input) return;
+    var p = 50;
+    function set(v) { p = Math.max(0, Math.min(100, v)); stage.style.setProperty("--p", p + "%"); input.value = String(p); }
+    function stop() { stopped = true; cancelAnimationFrame(raf); }
+    var down = null;
+    stage.addEventListener("pointerdown", function (e) {
+      if (e.pointerType === "mouse" && e.button !== 0) return;
+      stop();
+      var r = stage.getBoundingClientRect();
+      down = { id: e.pointerId, x: e.clientX, y: e.clientY, p: p, w: r.width, left: r.left, touch: e.pointerType === "touch", on: false };
+      if (!down.touch) { down.on = true; set(((e.clientX - r.left) / r.width) * 100); fig.classList.add("is-drag"); try { stage.setPointerCapture(e.pointerId); } catch (x) { /* older browsers */ } }
+    });
+    stage.addEventListener("pointermove", function (e) {
+      if (!down || e.pointerId !== down.id) return;
+      var dx = e.clientX - down.x, dy = e.clientY - down.y;
+      if (!down.on) {
+        if (Math.abs(dx) < 6 || Math.abs(dx) < Math.abs(dy)) return;
+        down.on = true; down.x = e.clientX; fig.classList.add("is-drag"); try { stage.setPointerCapture(e.pointerId); } catch (x) { /* ignore */ }
+        return;
+      }
+      set(down.touch ? down.p + ((e.clientX - down.x) / down.w) * 100 : ((e.clientX - down.left) / down.w) * 100);
+    });
+    function end(e) { if (down && e.pointerId === down.id) { down = null; fig.classList.remove("is-drag"); } }
+    stage.addEventListener("pointerup", end);
+    stage.addEventListener("pointercancel", end);
+    stage.addEventListener("lostpointercapture", end);
+    input.addEventListener("input", function () { stop(); set(Number(input.value)); });
+    input.addEventListener("keydown", stop, { passive: true });
+    set(50);
+    // a short nudge the first time the picture comes into view shows that it moves
+    if ("IntersectionObserver" in window && !(window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches)) {
+      var io = new IntersectionObserver(function (en) {
+        if (!en[0].isIntersecting) return;
+        io.disconnect();
+        var t0 = 0, DUR = 2200;
+        (function frame(t) {
+          if (stopped) return;
+          if (!t0) t0 = t;
+          var q = Math.min(1, (t - t0) / DUR);
+          set(q < 1 ? 50 + 22 * Math.sin(q * 2 * Math.PI) * (1 - q * 0.4) : 50);
+          if (q < 1) raf = requestAnimationFrame(frame);
+        })(performance.now());
+      }, { threshold: 0.7 });
+      io.observe(stage);
+    }
+  });
+
   // ---------- start page: the little arrow under the banner scrolls to the content and fades out once the page moves ----------
   (function () {
     var cue = document.querySelector(".hero__scroll"), target = document.getElementById("start");

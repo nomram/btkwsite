@@ -59,6 +59,7 @@ function blockIsEmpty(b) {
     case "chips": case "list": return !(b.items || []).some(Boolean);
     case "cta": return !b.title;
     case "carousel": return !(b.items || []).some((x) => x && x.src);
+    case "compare": return !b.src || !b.src2;
     case "modules": return !(b.items || []).length;
     case "related": return !(b.items || []).some((it) => it && it.href);
     case "rangechart": return !(b.items || []).some((it) => it && it.label);
@@ -70,6 +71,7 @@ function blockIsEmpty(b) {
 }
 
 const ICON = {
+  swap: '<svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M9 6l-6 6 6 6M15 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>',
   chevronDown: '<svg viewBox="0 0 24 12" width="26" height="13" aria-hidden="true"><path d="M2 2l10 8 10-8" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>',
   chevron: '<svg viewBox="0 0 12 12" width="12" height="12" aria-hidden="true"><path d="M2 4l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>',
   search: '<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>',
@@ -350,8 +352,8 @@ function relatedInfo(ctx, it) {
   if (!image) { const pg = ctx.pages.get(p); if (pg && pg.hero && pg.hero.image) image = pg.hero.image; }
   if (!image) {
     const t = ctx.tr(p, ctx.lang) || ctx.tr(p, ctx.defaultLang);
-    const im = t && flatBlocks(t.blocks || []).find((x) => (x.type === "image" && x.src && !x.href) || (x.type === "carousel" && x.items && x.items[0]));
-    if (im) image = im.type === "image" ? im.src : im.items[0].src;
+    const im = t && flatBlocks(t.blocks || []).find((x) => (x.type === "image" && x.src && !x.href) || (x.type === "carousel" && x.items && x.items[0]) || (x.type === "compare" && x.src));
+    if (im) image = im.type === "carousel" ? im.items[0].src : im.src;
   }
   return { title: it.title || navTitleOf(ctx, p), sub: it.text || brand, image };
 }
@@ -470,6 +472,24 @@ function renderModules(ctx, b) {
 
 // Image carousel. Native scroll-snap: swipe, trackpad and keyboard work without JavaScript; site.js adds arrows, dots
 // and the optional autoplay (never with prefers-reduced-motion, stops as soon as the visitor touches it).
+// Two pictures of the same thing in the same pose on top of each other, with a divider the visitor drags (before / after, outside / inside).
+// The stage takes the proportions of the first picture and both are fitted inside it, so the join stays seamless at any width.
+function renderCompare(ctx, b) {
+  if (!b.src || !b.src2) return "";
+  const info = ctx.image(b.src);
+  const ratio = info && info.w && info.h ? info.w / info.h : b.width && b.height ? b.width / b.height : 1.4;
+  const sizes = "(min-width: 900px) 520px, 100vw";
+  const tag = (k, cls) => (b[k] ? `<span class="cmp__tag cmp__tag--${cls}">${esc(b[k])}</span>` : "");
+  const label = b.ariaLabel || (ctx.ui && ctx.ui.compare_label) || "Dra reglaget för att jämföra bilderna";
+  return `<figure class="cmp" data-cmp style="--ar:${ratio.toFixed(4)}"><div class="cmp__stage">` +
+    imgTag(ctx, b.src2, b.alt2 || "", { cls: "cmp__img", sizes }) +
+    `<div class="cmp__over">${imgTag(ctx, b.src, b.alt || "", { cls: "cmp__img", sizes })}</div>` +
+    tag("label", "l") + tag("label2", "r") +
+    `<span class="cmp__bar" aria-hidden="true"><span class="cmp__knob">${ICON.swap}</span></span>` +
+    (ctx.edit ? "" : `<input class="cmp__range" type="range" min="0" max="100" step="0.5" value="50" aria-label="${esc(label)}">`) +
+    `</div>${b.caption ? `<figcaption${editFld(ctx, "caption")}>${esc(b.caption)}</figcaption>` : ""}</figure>`;
+}
+
 function renderCarousel(ctx, items, o = {}) {
   const slides = (items || []).filter((x) => x && x.src);
   if (!slides.length) return "";
@@ -571,6 +591,7 @@ function renderBlockInner(ctx, b) {
     case "social": return renderSocial(ctx);
     case "quote": return renderQuote(ctx);
     case "carousel": return renderCarousel(ctx, b.items, b);
+    case "compare": return renderCompare(ctx, b);
     case "modules": return renderModules(ctx, b);
     case "related": return renderRelated(ctx, b);
     case "rangechart": return renderRangeChart(ctx, b);
@@ -723,8 +744,8 @@ function megaPanel(ctx, k, id) {
   // a range without a card on the brand page uses the first picture of its own page (not the small logo link)
   const ownImage = (p) => {
     const pt = ctx.tr(p, ctx.lang) || ctx.tr(p, ctx.defaultLang);
-    const im = pt && flatBlocks(pt.blocks || []).find((x) => (x.type === "image" && x.src && !x.href) || (x.type === "carousel" && x.items && x.items[0]));
-    return im ? (im.type === "image" ? im.src : im.items[0].src) : null;
+    const im = pt && flatBlocks(pt.blocks || []).find((x) => (x.type === "image" && x.src && !x.href) || (x.type === "carousel" && x.items && x.items[0]) || (x.type === "compare" && x.src));
+    return im ? (im.type === "carousel" ? im.items[0].src : im.src) : null;
   };
   const LIMIT = 6;
   const cats = ctx.children(k).filter((c) => shown(ctx, c)).map((c) => {
@@ -958,9 +979,9 @@ function composeBody(ctx, page, t) {
   const template = page.template || "page";
   if (template === "brand" || template === "product") {
     let n = 0;
-    while (n < blocks.length && ["image", "carousel", "text", "list", "heading"].includes(blocks[n].type)) n++;
+    while (n < blocks.length && ["image", "carousel", "compare", "text", "list", "heading"].includes(blocks[n].type)) n++;
     const lead = blocks.slice(0, n);
-    const isMedia = (b) => (b.type === "image" && !b.inline) || b.type === "carousel";
+    const isMedia = (b) => (b.type === "image" && !b.inline) || b.type === "carousel" || b.type === "compare";
     const media = lead.filter(isMedia);
     const text = lead.filter((b) => !isMedia(b));
     if (media.length && text.length) {
