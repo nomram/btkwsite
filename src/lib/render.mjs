@@ -160,7 +160,7 @@ function crumbLogoHeight(ctx, b) {
 
 // ---------- helpers ----------
 // A page is listed (menus, cards, strips, crumbs) when it is not hidden for this language and exists in it or in the default language.
-const shown = (ctx, p) => !(ctx.hidden && ctx.hidden(p, ctx.lang)) && !!(ctx.tr(p, ctx.lang) || ctx.tr(p, ctx.defaultLang));
+const shown = (ctx, p) => !(ctx.hidden && ctx.hidden(p, ctx.lang)) && !(ctx.pages.get(p) && ctx.pages.get(p).unlisted) && !!(ctx.tr(p, ctx.lang) || ctx.tr(p, ctx.defaultLang));
 function titleOf(ctx, path) {
   const t = ctx.tr(path, ctx.lang) || ctx.tr(path, ctx.defaultLang);
   return t ? (t.h1 || t.title || path) : path;
@@ -539,7 +539,7 @@ function renderCarousel(ctx, items, o = {}) {
 
 // Quote request form. Works without any third party: with no endpoint configured it opens the visitor's own
 // e-mail program with the filled-in text. With site.quoteForm.endpoint set, site.js posts it there instead.
-function renderQuote(ctx) {
+function renderQuote(ctx, b = {}) {
   const u = ctx.ui, q = ctx.site.quoteForm || {}, c = ctx.site.contact || {};
   const T = (k, d) => esc(u[k] || d);
   const privacy = ctx.site.privacyPath && ctx.pages.has(ctx.site.privacyPath) ? ctx.url(ctx.site.privacyPath) : "";
@@ -557,7 +557,7 @@ function renderQuote(ctx) {
   return `<section class="quote" id="offert" data-quote data-endpoint="${esc(q.endpoint || "")}" data-key="${esc(q.apiKey || "")}" data-mailto="${esc(c.email || "")}" data-lang-label="${esc(langLabel)}" data-hole-short="${T("quote_hole_short", "håldiameter")}" data-guard="${esc(JSON.stringify(guard))}" ` +
     `data-subject="${T("quote_subject", "Offertförfrågan")}" data-about="${T("quote_about", "Gäller:")}" data-sending="${T("quote_sending", "Skickar…")}" data-ok="${T("quote_ok", "Tack! Vi återkommer så snart vi kan.")}" ` +
     `data-err="${T("quote_err", "Det gick inte att skicka. Ring oss eller skriv till oss direkt.")}" data-mail="${T("quote_mail", "Ditt e-postprogram öppnas med meddelandet ifyllt, tryck på Skicka där.")}">` +
-    `<h2>${T("quote_title", "Få offert")}</h2><p class="muted">${T("quote_intro", "Berätta kort vad du behöver, så återkommer vi.")}</p>` +
+    `${b.bare ? "" : `<h2>${T("quote_title", "Få offert")}</h2>`}<p class="muted">${T("quote_intro", "Berätta kort vad du behöver, så återkommer vi.")}</p>` +
     `<form class="qf" method="post" action="${esc(q.endpoint || "#")}" novalidate>` +
     `<div class="qf__grid">${f("name", T("quote_name", "Namn"), "text", "name", true)}${f("company", T("quote_company", "Företag"), "text", "organization")}` +
     `${f("email", T("quote_email", "E-post"), "email", "email", true)}${f("phone", T("quote_phone", "Telefon"), "tel", "tel")}</div>` +
@@ -620,7 +620,7 @@ function renderBlockInner(ctx, b) {
     case "contact": return renderContact(ctx);
     case "columns": return renderColumns(ctx, b);
     case "social": return renderSocial(ctx);
-    case "quote": return renderQuote(ctx);
+    case "quote": return renderQuote(ctx, b);
     case "carousel": return renderCarousel(ctx, b.items, b);
     case "compare": return renderCompare(ctx, b);
     case "finder": return renderFinder(ctx, b);
@@ -1029,11 +1029,11 @@ function composeBody(ctx, page, t) {
 // switch off with site.productQuoteCta = false). The product name travels in ?produkt= and pre-fills the form.
 function productQuoteCta(ctx, page, t, name) {
   if (ctx.edit || (page.template !== "product" && page.template !== "brand") || ctx.site.productQuoteCta === false) return "";
-  if (!ctx.pages.has("/kontakta-oss") || !shown(ctx, "/kontakta-oss")) return "";
+  if (!ctx.pages.has("/offert")) return "";
   if (flatBlocks(t.blocks || []).some((b) => b.type === "cta" || b.type === "quote")) return "";
   const u = ctx.ui;
   if (page.template === "product" && t.title && t.title !== name && t.title.length <= 12) name = `${t.title}, ${name}`; // short model code + name, e.g. "ST-5, Silon"
-  const href = localizeHref(ctx, "/kontakta-oss") + "?produkt=" + encodeURIComponent(name) + "#offert";
+  const href = localizeHref(ctx, "/offert") + "?produkt=" + encodeURIComponent(name);
   // the product name gets a slow orange underline when the band scrolls into view (site.js adds .is-seen): a quiet nudge, not an alarm
   const titleHtml = String(u.quote_cta_title || "Få offert på {name}").split("{name}").map(esc).join(`<span class="cta__name">${esc(name)}</span>`);
   return `<section class="cta"><div class="container cta__inner"><div class="cta__text"><h2>${titleHtml}</h2><p>${esc(u.quote_cta_text || "Berätta kort vad du behöver, så återkommer vi med pris och leveranstid.")}</p></div>` +
@@ -1078,7 +1078,7 @@ export function renderDocument(ctx, page, t, opts = {}) {
   const title = seoTitle(ctx, page, t);
   const desc = pageDescription(ctx, page, t);
   const img = ogImage(ctx, page, t);
-  const robots = page.published === false || t.noindex ? "noindex,nofollow" : "index,follow,max-image-preview:large,max-snippet:-1";
+  const robots = page.unlisted ? "noindex,nofollow,noarchive,nosnippet,noimageai" : page.published === false || t.noindex ? "noindex,nofollow" : "index,follow,max-image-preview:large,max-snippet:-1";
   const alts = Object.entries(s.languages || {}).filter(([code, l]) => l.published && ctx.tr(page.path, code));
   const alternates = alts.length > 1
     ? alts.map(([code]) => `<link rel="alternate" hreflang="${esc(htmlLang(ctx, code))}" href="${esc(ctx.abs(ctx.url(page.path, code)))}">`).join("\n") +

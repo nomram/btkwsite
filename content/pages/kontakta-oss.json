@@ -22,7 +22,10 @@
           "html": "Berätta gärna vad du ska bygga, var och när, så kan vi snabbare ge dig rätt rekommendation."
         },
         {
-          "type": "quote"
+          "type": "button",
+          "kind": "link",
+          "text": "Få offert",
+          "href": "/offert"
         }
       ]
     },
@@ -43,7 +46,10 @@
           "html": "Tell us what you are building, where and when, and we can give you the right recommendation faster."
         },
         {
-          "type": "quote"
+          "type": "button",
+          "kind": "link",
+          "text": "Get a quote",
+          "href": "/offert"
         }
       ],
       "published": true
@@ -65,7 +71,10 @@
           "html": "Cuéntenos qué va a construir, dónde y cuándo, y podremos darle antes la recomendación adecuada."
         },
         {
-          "type": "quote"
+          "type": "button",
+          "kind": "link",
+          "text": "Obtener presupuesto",
+          "href": "/offert"
         }
       ],
       "published": true,
@@ -88,7 +97,10 @@
           "html": "Fortell gjerne hva du skal bygge, hvor og når, så kan vi raskere gi deg riktig anbefaling."
         },
         {
-          "type": "quote"
+          "type": "button",
+          "kind": "link",
+          "text": "Få tilbud",
+          "href": "/offert"
         }
       ],
       "published": true

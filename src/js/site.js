@@ -90,7 +90,7 @@
   // ---------- the size picked in a chart travels with the quote buttons ----------
   // On the TEI pages the links to the quote form get ?hal=<mm> as soon as a size has been picked (here or earlier in this visit);
   // the number is kept only for this browser tab (sessionStorage), nothing is sent anywhere until a quote is submitted.
-  function quoteLinks() { if (!/\/produkter\/tei(\/|$)/.test(location.pathname)) return []; return [].slice.call(document.querySelectorAll("a[href*='kontakta-oss']")).filter(function (a) { return /[?&]produkt=|#offert/.test(a.getAttribute("href") || ""); }); }
+  function quoteLinks() { if (!/\/produkter\/tei(\/|$)/.test(location.pathname)) return []; return [].slice.call(document.querySelectorAll("a[href*='/offert']")).filter(function (a) { return /[?&]produkt=/.test(a.getAttribute("href") || ""); }); }
   window.bkHole = {
     set: function (mm) {
       try { if (mm > 0) sessionStorage.setItem(HOLE_KEY, String(mm)); } catch (e) { /* private mode: the links still get it below */ }

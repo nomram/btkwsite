@@ -310,6 +310,7 @@ const assetVersion = crypto.createHash("md5").update(fs.readFileSync(cssSrc)).up
 
 let rendered = 0;
 const sitemapEntries = [];
+const unlistedUrls = [];
 const searchIndexes = {};
 const hl = (code) => (siteForBuild.languages[code] && siteForBuild.languages[code].htmlLang) || code;
 const writePage = (rel, html) => {
@@ -325,6 +326,7 @@ for (const lang of languages) {
     if (!t) continue;
     writePage(fileFor(p, lang), renderDocument(ctx, page, t, { assetVersion }));
     rendered++;
+    if (page.unlisted) { unlistedUrls.push(urlFor(p, lang)); continue; } // reachable by link only: no sitemap, no search
     sitemapEntries.push({ p, lang, updated: page.updated || null });
     {
       const text = flatBlocks(t.blocks).flatMap((b) => {
@@ -365,7 +367,14 @@ for (const [p, es] of byPath) {
   }
 }
 writePage("sitemap.xml", `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n${sm.join("\n")}\n</urlset>\n`);
-writePage("robots.txt", `User-agent: *\nAllow: /\n\nSitemap: ${origin}/sitemap.xml\n`);
+// robots.txt: everything is open except the unlisted pages (the quote form). Those are closed to every crawler and, by name,
+// to the AI crawlers and AI agents that act for a user (a specific group replaces the "*" group for those, so they repeat the rules).
+// robots.txt is a request that well-behaved crawlers honour, not a lock; the quote form has its own human check as well.
+const AI_AGENTS = ["GPTBot", "ChatGPT-User", "OAI-SearchBot", "ClaudeBot", "Claude-User", "Claude-SearchBot", "anthropic-ai", "PerplexityBot", "Perplexity-User", "Google-Extended", "Google-CloudVertexBot", "GoogleOther", "Applebot-Extended", "Amazonbot", "Bytespider", "CCBot", "FacebookBot", "meta-externalagent", "meta-externalfetcher", "cohere-ai", "DuckAssistBot", "MistralAI-User", "Diffbot", "ImagesiftBot", "Omgilibot", "PetalBot", "YouBot", "Timpibot", "ICC-Crawler", "AI2Bot"];
+const closed = [...new Set(unlistedUrls)].sort().map((u) => "Disallow: " + u.replace(/\/index\.html$/, "/").replace(/\.html$/, "")).join("\n");
+writePage("robots.txt", closed
+  ? `User-agent: *\nAllow: /\n${closed}\n\n${AI_AGENTS.map((a) => "User-agent: " + a).join("\n")}\n${closed}\n\nSitemap: ${origin}/sitemap.xml\n`
+  : `User-agent: *\nAllow: /\n\nSitemap: ${origin}/sitemap.xml\n`);
 for (const [lang, idx] of Object.entries(searchIndexes)) writePage(lang === defaultLang ? "search-index.json" : path.join(lang, "search-index.json"), JSON.stringify(idx));
 writePage(".nojekyll", "");
 try {

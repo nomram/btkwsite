@@ -1,0 +1,54 @@
+{
+  "path": "/offert",
+  "updated": "2026-10-23",
+  "template": "page",
+  "order": 99,
+  "published": true,
+  "unlisted": true,
+  "i18n": {
+    "sv": {
+      "title": "Få offert",
+      "h1": "Få offert",
+      "description": "Berätta kort vad du behöver, så återkommer vi med pris och leveranstid.",
+      "blocks": [
+        {
+          "type": "quote",
+          "bare": true
+        }
+      ]
+    },
+    "en": {
+      "title": "Get a quote",
+      "h1": "Get a quote",
+      "description": "Tell us briefly what you need and we will come back with price and delivery time.",
+      "blocks": [
+        {
+          "type": "quote",
+          "bare": true
+        }
+      ]
+    },
+    "es": {
+      "title": "Obtener presupuesto",
+      "h1": "Obtener presupuesto",
+      "description": "Cuéntenos brevemente qué necesita y le enviaremos precio y plazo de entrega.",
+      "blocks": [
+        {
+          "type": "quote",
+          "bare": true
+        }
+      ]
+    },
+    "no": {
+      "title": "Få tilbud",
+      "h1": "Få tilbud",
+      "description": "Fortell kort hva du trenger, så kommer vi tilbake med pris og leveringstid.",
+      "blocks": [
+        {
+          "type": "quote",
+          "bare": true
+        }
+      ]
+    }
+  }
+}
