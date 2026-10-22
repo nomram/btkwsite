@@ -81,5 +81,18 @@
   "rc_none": "Ingen modell dekker dette målet",
   "rc_caution": "Hullstørrelsen er bare et utgangspunkt. Ta også hensyn til effekt, dreiemoment, vekt, oljestrøm og hva gravemaskinen eller riggen din tåler før du velger modell.",
   "scroll_down": "Rull ned",
-  "compare_label": "Dra i glidebryteren for å sammenligne bildene"
+  "compare_label": "Dra i glidebryteren for å sammenligne bildene",
+  "quote_hole": "Hulldiameter (mm), valgfritt",
+  "quote_hole_short": "hulldiameter",
+  "guard_title": "Er du et menneske? To raske.",
+  "guard_help": "Trykk Stopp når boret er rett over det oransje hullet. To ganger på rad.",
+  "guard_stop": "Stopp",
+  "guard_ok": "Verifisert",
+  "guard_next": "Bra! En gang til.",
+  "guard_miss": "Nesten! Begynn på nytt, boret er raskt.",
+  "guard_lock": "For mange bom. Vent {s} s.",
+  "guard_need": "Gjør den lille kontrollen først (Stopp når boret er over hullet).",
+  "guard_alt": "Får du ikke til kontrollen? Skriv til oss på",
+  "guard_canvas": "Spill: et bor beveger seg frem og tilbake over et oransje hull",
+  "guard_checking": "Kontrollerer…"
 }

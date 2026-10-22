@@ -523,8 +523,15 @@ function renderQuote(ctx) {
   const f = (id, label, type, auto, req) =>
     `<p class="qf__f"><label for="q-${id}">${label}${req ? ` <span class="qf__req" aria-hidden="true">*</span>` : ""}</label>` +
     `<input id="q-${id}" name="${id}" type="${type}" autocomplete="${auto}"${req ? " required" : ""}></p>`;
+  const langLabel = (ctx.site.languages && ctx.site.languages[ctx.lang] && ctx.site.languages[ctx.lang].label) || ctx.lang;
+  const guard = {
+    title: u.guard_title || "Är du människa? Två snabba.", help: u.guard_help || "Tryck på Stopp när borren är rakt över det orangea hålet. Två gånger i rad.", stop: u.guard_stop || "Stopp",
+    ok: u.guard_ok || "Verifierad", next: u.guard_next || "Bra! En gång till.", miss: u.guard_miss || "Nästan! Börja om, borren är snabb.", lock: u.guard_lock || "För många missar. Vänta {s} s.",
+    need: u.guard_need || "Gör den lilla kontrollen först (Stopp när borren är över hålet).", alt: u.guard_alt || "Går det inte att göra kontrollen? Skriv till oss på",
+    canvas: u.guard_canvas || "Spel: en borr rör sig fram och tillbaka över ett orange hål", checking: u.guard_checking || "Kontrollerar…", mail: c.email || ""
+  };
   const extra = Object.entries(q.extra || {}).map(([k, v]) => `<input type="hidden" name="${esc(k)}" value="${esc(v)}">`).join("");
-  return `<section class="quote" id="offert" data-quote data-endpoint="${esc(q.endpoint || "")}" data-key="${esc(q.apiKey || "")}" data-mailto="${esc(c.email || "")}" ` +
+  return `<section class="quote" id="offert" data-quote data-endpoint="${esc(q.endpoint || "")}" data-key="${esc(q.apiKey || "")}" data-mailto="${esc(c.email || "")}" data-lang-label="${esc(langLabel)}" data-hole-short="${T("quote_hole_short", "håldiameter")}" data-guard="${esc(JSON.stringify(guard))}" ` +
     `data-subject="${T("quote_subject", "Offertförfrågan")}" data-about="${T("quote_about", "Gäller:")}" data-sending="${T("quote_sending", "Skickar…")}" data-ok="${T("quote_ok", "Tack! Vi återkommer så snart vi kan.")}" ` +
     `data-err="${T("quote_err", "Det gick inte att skicka. Ring oss eller skriv till oss direkt.")}" data-mail="${T("quote_mail", "Ditt e-postprogram öppnas med meddelandet ifyllt, tryck på Skicka där.")}">` +
     `<h2>${T("quote_title", "Begär offert")}</h2><p class="muted">${T("quote_intro", "Berätta kort vad du behöver, så återkommer vi.")}</p>` +
@@ -533,6 +540,8 @@ function renderQuote(ctx) {
     `${f("email", T("quote_email", "E-post"), "email", "email", true)}${f("phone", T("quote_phone", "Telefon"), "tel", "tel")}</div>` +
     `<p class="qf__f"><label for="q-message">${T("quote_message", "Vad behöver du hjälp med?")} <span class="qf__req" aria-hidden="true">*</span></label>` +
     `<textarea id="q-message" name="message" rows="5" required></textarea></p>` +
+    `<p class="qf__f qf__f--hole"><label for="q-hole">${T("quote_hole", "Håldiameter (mm), valfritt")}</label><input id="q-hole" name="hole" type="number" inputmode="numeric" min="1" max="999" step="1"></p>` +
+    `<input type="hidden" name="product" value=""><input type="hidden" name="lang" value="${esc(ctx.lang)}"><input type="hidden" name="lang_label" value="${esc(langLabel)}">` +
     `<p class="qf__trap" aria-hidden="true"><label>Website <input name="website" type="text" tabindex="-1" autocomplete="off"></label></p>` +
     `${extra}<input type="hidden" name="subject" value="${T("quote_subject", "Offertförfrågan")}">` +
     `<p class="qf__consent"><label><input type="checkbox" name="consent" required> <span>${T("quote_consent", "Jag godkänner att mina uppgifter används för att besvara min förfrågan.")}` +
@@ -1064,6 +1073,7 @@ export function renderDocument(ctx, page, t, opts = {}) {
   const privacyPath = s.privacyPath && ctx.pages.has(s.privacyPath) && (ctx.tr(s.privacyPath, lang) || ctx.tr(s.privacyPath, ctx.defaultLang)) ? ctx.url(s.privacyPath) : "";
   const cfg = JSON.stringify({ analytics, ui: uiForJs, privacy: privacyPath, searchIndex: ctx.searchIndexUrl ? ctx.searchIndexUrl : "/search-index.json" }).replace(/</g, "\\u003c");
   const ver = opts.assetVersion ? `?v=${opts.assetVersion}` : "";
+  const hasQuote = flatBlocks(t.blocks || []).some((x) => x.type === "quote");
   return `<!doctype html>
 <html lang="${esc(htmlLang(ctx, lang))}" class="no-js">
 <head>
@@ -1103,7 +1113,7 @@ ${renderMain(ctx, page, t)}
 ${renderFooter(ctx)}
 ${renderCallBar(ctx)}
 <script type="application/json" id="bk-config">${cfg}</script>
-<script src="/js/site.js${ver}" defer></script>
+<script src="/js/site.js${ver}" defer></script>${hasQuote ? `<script src="/js/quote-guard.js${ver}" defer></script>` : ""}
 </body>
 </html>
 `;

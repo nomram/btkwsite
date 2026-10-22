@@ -81,5 +81,18 @@
   "rc_none": "Ingen modell täcker detta mått",
   "rc_caution": "Hålstorleken är bara en startpunkt. Ta också hänsyn till effekt, vridmoment, vikt, oljeflöde och vad din grävmaskin eller borrigg klarar innan du väljer modell.",
   "scroll_down": "Scrolla ner",
-  "compare_label": "Dra reglaget för att se insidan"
+  "compare_label": "Dra reglaget för att se insidan",
+  "quote_hole": "Håldiameter (mm), valfritt",
+  "quote_hole_short": "håldiameter",
+  "guard_title": "Är du människa? Två snabba.",
+  "guard_help": "Tryck på Stopp när borren är rakt över det orangea hålet. Två gånger i rad.",
+  "guard_stop": "Stopp",
+  "guard_ok": "Verifierad",
+  "guard_next": "Bra! En gång till.",
+  "guard_miss": "Nästan! Börja om, borren är snabb.",
+  "guard_lock": "För många missar. Vänta {s} s.",
+  "guard_need": "Gör den lilla kontrollen först (Stopp när borren är över hålet).",
+  "guard_alt": "Går det inte att göra kontrollen? Skriv till oss på",
+  "guard_canvas": "Spel: en borr rör sig fram och tillbaka över ett orange hål",
+  "guard_checking": "Kontrollerar…"
 }

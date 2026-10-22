@@ -25,7 +25,7 @@
           "type": "compare",
           "src": "/assets/img/tei-topphammare-2.webp",
           "alt": "TE1000 topphammare, utsida",
-          "src2": "/assets/img/tei-topphammare-3.webp",
+          "src2": "/assets/img/tei-topphammare-3-aligned.webp",
           "alt2": "TE1000 topphammare i genomskärning",
           "label": "Utsida",
           "label2": "Genomskärning",
@@ -281,6 +281,10 @@
           "type": "related",
           "items": [
             {
+              "href": "/produkter/tei/rotationshammare",
+              "mutual": true
+            },
+            {
               "href": "/produkter/tei/borrmaster",
               "mutual": true
             }
@@ -305,7 +309,7 @@
           "type": "compare",
           "src": "/assets/img/tei-topphammare-2.webp",
           "alt": "TE1000 drifter, exterior",
-          "src2": "/assets/img/tei-topphammare-3.webp",
+          "src2": "/assets/img/tei-topphammare-3-aligned.webp",
           "alt2": "TE1000 drifter in cross-section",
           "label": "Outside",
           "label2": "Cross-section",
@@ -561,6 +565,10 @@
           "type": "related",
           "items": [
             {
+              "href": "/produkter/tei/rotationshammare",
+              "mutual": true
+            },
+            {
               "href": "/produkter/tei/borrmaster",
               "mutual": true
             }
@@ -586,7 +594,7 @@
           "type": "compare",
           "src": "/assets/img/tei-topphammare-2.webp",
           "alt": "Martillo perforador TE1000, exterior",
-          "src2": "/assets/img/tei-topphammare-3.webp",
+          "src2": "/assets/img/tei-topphammare-3-aligned.webp",
           "alt2": "Martillo perforador TE1000 en sección",
           "label": "Exterior",
           "label2": "Sección",
@@ -842,6 +850,10 @@
           "type": "related",
           "items": [
             {
+              "href": "/produkter/tei/rotationshammare",
+              "mutual": true
+            },
+            {
               "href": "/produkter/tei/borrmaster",
               "mutual": true
             }
@@ -867,7 +879,7 @@
           "type": "compare",
           "src": "/assets/img/tei-topphammare-2.webp",
           "alt": "TE1000 topphammer, utside",
-          "src2": "/assets/img/tei-topphammare-3.webp",
+          "src2": "/assets/img/tei-topphammare-3-aligned.webp",
           "alt2": "TE1000 topphammer i tverrsnitt",
           "label": "Utside",
           "label2": "Tverrsnitt",
@@ -1122,6 +1134,10 @@
         {
           "type": "related",
           "items": [
+            {
+              "href": "/produkter/tei/rotationshammare",
+              "mutual": true
+            },
             {
               "href": "/produkter/tei/borrmaster",
               "mutual": true

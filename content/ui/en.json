@@ -81,5 +81,18 @@
   "rc_none": "No model covers this size",
   "rc_caution": "Hole size is only a starting point. Also consider power, torque, weight, oil flow and what your excavator or rig can carry before you choose a model.",
   "scroll_down": "Scroll down",
-  "compare_label": "Drag the slider to compare the pictures"
+  "compare_label": "Drag the slider to compare the pictures",
+  "quote_hole": "Hole diameter (mm), optional",
+  "quote_hole_short": "hole diameter",
+  "guard_title": "Are you human? Two quick ones.",
+  "guard_help": "Press Stop when the drill is right above the orange hole. Twice in a row.",
+  "guard_stop": "Stop",
+  "guard_ok": "Verified",
+  "guard_next": "Good! Once more.",
+  "guard_miss": "Almost! Start over, the drill is quick.",
+  "guard_lock": "Too many misses. Wait {s} s.",
+  "guard_need": "Do the quick check first (press Stop when the drill is over the hole).",
+  "guard_alt": "Can't do the check? Write to us at",
+  "guard_canvas": "Game: a drill moves back and forth above an orange hole",
+  "guard_checking": "Checking…"
 }

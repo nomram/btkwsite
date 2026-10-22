@@ -81,5 +81,18 @@
   "rc_none": "Ningún modelo cubre esta medida",
   "rc_caution": "El tamaño del barreno es solo un punto de partida. Tenga en cuenta también la potencia, el par, el peso, el caudal de aceite y lo que admite su excavadora o equipo antes de elegir un modelo.",
   "scroll_down": "Desplazarse hacia abajo",
-  "compare_label": "Arrastre el control para comparar las imágenes"
+  "compare_label": "Arrastre el control para comparar las imágenes",
+  "quote_hole": "Diámetro del barreno (mm), opcional",
+  "quote_hole_short": "diámetro del barreno",
+  "guard_title": "¿Es usted una persona? Dos rápidas.",
+  "guard_help": "Pulse Parar cuando el taladro esté justo sobre el orificio naranja. Dos veces seguidas.",
+  "guard_stop": "Parar",
+  "guard_ok": "Verificado",
+  "guard_next": "¡Bien! Una más.",
+  "guard_miss": "¡Casi! Empiece de nuevo, el taladro es rápido.",
+  "guard_lock": "Demasiados fallos. Espere {s} s.",
+  "guard_need": "Haga primero la comprobación rápida (pulse Parar cuando el taladro esté sobre el orificio).",
+  "guard_alt": "¿No puede hacer la comprobación? Escríbanos a",
+  "guard_canvas": "Juego: un taladro se mueve de un lado a otro sobre un orificio naranja",
+  "guard_checking": "Comprobando…"
 }

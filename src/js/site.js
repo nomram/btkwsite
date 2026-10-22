@@ -11,17 +11,42 @@
 
   // ---------- quote request form ----------
   // Nothing leaves the page until the visitor presses send. Without an endpoint the visitor's own mail program is used.
+  // The request carries its context: which product it is about, the hole diameter picked in a size chart (if any) and the language of
+  // the page the visitor was reading. quote-guard.js adds the human check (a small reaction game, a minimum fill time, a proof of work).
+  var HOLE_KEY = "bk_hole";
+  function storedHole() { try { var v = Number(sessionStorage.getItem(HOLE_KEY)); return v > 0 ? v : 0; } catch (e) { return 0; } }
+  function holeFromUrl() { var m = /[?&]hal=(\d{1,4})(?:[&#]|$)/.exec(window.location.search); return m ? Number(m[1]) : 0; }
   Array.prototype.forEach.call(document.querySelectorAll("[data-quote]"), function (box) {
     var form = box.querySelector("form");
     var status = box.querySelector(".qf__status");
     if (!form) return;
-    // arrived from a product page: ?produkt=<name> pre-fills the message
-    try {
-      var m = /[?&]produkt=([^&#]*)/.exec(window.location.search);
-      var ta = form.querySelector("textarea");
-      if (m && ta && !ta.value) ta.value = box.getAttribute("data-about") + " " + decodeURIComponent(m[1].replace(/\+/g, " ")).slice(0, 120) + "\n\n";
-    } catch (e) { /* ignore malformed encoding */ }
+    var holeInput = form.querySelector("[name=hole]"), productInput = form.querySelector("[name=product]"), ta = form.querySelector("textarea");
+    // arrived from a product page: ?produkt=<name> (and the size picked in a chart, ?hal=<mm>) pre-fill the form
+    var product = "", hole = holeFromUrl();
+    try { var m = /[?&]produkt=([^&#]*)/.exec(window.location.search); if (m) product = decodeURIComponent(m[1].replace(/\+/g, " ")).slice(0, 120); } catch (e) { /* ignore malformed encoding */ }
+    if (productInput) productInput.value = product;
+    if (holeInput && hole) holeInput.value = String(hole);
+    if (ta && !ta.value && (product || hole)) {
+      var about = (product || "") + (product && hole ? ", " : "") + (hole ? box.getAttribute("data-hole-short") + " " + hole + " mm" : "");
+      ta.value = box.getAttribute("data-about") + " " + about + "\n\n";
+    }
     function say(msg, bad) { status.textContent = msg; status.className = "qf__status" + (bad ? " is-bad" : " is-ok"); }
+    // human check
+    var guard = null, touched = 0, MIN_FILL = 7000, tx = {};
+    try { tx = JSON.parse(box.getAttribute("data-guard") || "{}"); } catch (e) { tx = {}; }
+    function mountGuard() { if (!guard && window.bkGuard) guard = window.bkGuard.mount(form, tx); }
+    ["focusin", "input"].forEach(function (ev) { form.addEventListener(ev, function () { if (!touched) touched = Date.now(); mountGuard(); }, { passive: true }); });
+    if (document.readyState === "complete") mountGuard(); else window.addEventListener("load", mountGuard);
+    function proof(email) {
+      if (!window.bkGuard || !guard) return Promise.resolve({});
+      var ts = Math.floor(Date.now() / 1000);
+      return window.bkGuard.work(email + "|" + ts).then(function (n) {
+        var wait = Math.max(0, MIN_FILL - (Date.now() - (touched || Date.now())));
+        return new Promise(function (res) {
+          setTimeout(function () { var s = guard.stats(); res({ pow_ts: ts, pow_nonce: n, fill_ms: Date.now() - (touched || Date.now()), game_hits: s.hits, game_misses: s.misses, game_ms: s.game_ms }); }, wait);
+        });
+      });
+    }
     form.addEventListener("submit", function (e) {
       e.preventDefault();
       if (!form.checkValidity()) { form.reportValidity(); return; }
@@ -29,30 +54,53 @@
       if (data.get("website")) { say(box.getAttribute("data-ok")); form.reset(); return; } // honeypot: pretend success
       var endpoint = box.getAttribute("data-endpoint");
       var btn = form.querySelector("button[type=submit]");
-      if (endpoint) {
-        btn.disabled = true; say(box.getAttribute("data-sending"));
-        var key = box.getAttribute("data-key");
-        var opts = { method: "POST", body: data, headers: { Accept: "application/json" } };
-        if (key) {
-          // Supabase REST: JSON row into the quote_requests table; the public key may only insert (row-level security)
-          var row = { message: String(data.get("message") || ""), consent: true, lang: document.documentElement.lang || "", page: location.pathname };
-          ["name", "company", "email", "phone"].forEach(function (k) { row[k] = String(data.get(k) || ""); });
-          opts = { method: "POST", body: JSON.stringify(row),
-            headers: { "Content-Type": "application/json", apikey: key, Authorization: "Bearer " + key, Prefer: "return=minimal" } };
+      if (window.bkGuard && guard && !guard.passed()) { say(tx.need || "", true); guard.nudge(); return; }
+      var langLabel = box.getAttribute("data-lang-label") || "", lang = document.documentElement.lang || "";
+      var holeVal = String(data.get("hole") || "").replace(/[^\d]/g, "").slice(0, 4), prod = String(data.get("product") || "");
+      btn.disabled = true; say(tx.checking || box.getAttribute("data-sending"));
+      var email = String(data.get("email") || "").trim();
+      proof(email).then(function (extra) {
+        if (endpoint) {
+          say(box.getAttribute("data-sending"));
+          var key = box.getAttribute("data-key");
+          var opts = { method: "POST", body: data, headers: { Accept: "application/json" } };
+          if (key) {
+            // Supabase REST: JSON row into the quote_requests table; the public key may only insert (row-level security)
+            var row = { message: String(data.get("message") || ""), consent: true, lang: lang, lang_label: langLabel, page: location.pathname, product: prod || null, hole_mm: holeVal ? Number(holeVal) : null };
+            ["name", "company", "email", "phone"].forEach(function (k) { row[k] = String(data.get(k) || ""); });
+            row.email = email;
+            Object.keys(extra).forEach(function (k) { row[k] = extra[k]; });
+            opts = { method: "POST", body: JSON.stringify(row),
+              headers: { "Content-Type": "application/json", apikey: key, Authorization: "Bearer " + key, Prefer: "return=minimal" } };
+          }
+          return fetch(endpoint, opts).then(function (r) { if (!r.ok) throw new Error(String(r.status)); say(box.getAttribute("data-ok")); form.reset(); });
         }
-        fetch(endpoint, opts)
-          .then(function (r) { if (!r.ok) throw new Error(String(r.status)); say(box.getAttribute("data-ok")); form.reset(); })
-          .catch(function () { say(box.getAttribute("data-err"), true); })
-          .then(function () { btn.disabled = false; });
-        return;
-      }
-      var to = box.getAttribute("data-mailto");
-      var body = ["name", "company", "email", "phone"].map(function (k) { return data.get(k) ? k + ": " + data.get(k) : ""; })
-        .filter(Boolean).join("\n") + "\n\n" + data.get("message");
-      say(box.getAttribute("data-mail"));
-      window.location.href = "mailto:" + to + "?subject=" + encodeURIComponent(box.getAttribute("data-subject")) + "&body=" + encodeURIComponent(body);
+        var to = box.getAttribute("data-mailto");
+        var lines = ["name", "company", "email", "phone"].map(function (k) { return data.get(k) ? k + ": " + data.get(k) : ""; });
+        lines.push(prod ? "product: " + prod : "", holeVal ? "hole diameter: " + holeVal + " mm" : "", langLabel ? "language: " + langLabel + " (" + lang + ")" : "");
+        var body = lines.filter(Boolean).join("\n") + "\n\n" + data.get("message");
+        say(box.getAttribute("data-mail"));
+        window.location.href = "mailto:" + to + "?subject=" + encodeURIComponent(box.getAttribute("data-subject")) + "&body=" + encodeURIComponent(body);
+      }).catch(function () { say(box.getAttribute("data-err"), true); })
+        .then(function () { btn.disabled = false; });
     });
   });
+
+  // ---------- the size picked in a chart travels with the quote buttons ----------
+  // On the TEI pages the links to the quote form get ?hal=<mm> as soon as a size has been picked (here or earlier in this visit);
+  // the number is kept only for this browser tab (sessionStorage), nothing is sent anywhere until a quote is submitted.
+  function quoteLinks() { if (!/\/produkter\/tei(\/|$)/.test(location.pathname)) return []; return [].slice.call(document.querySelectorAll("a[href*='kontakta-oss']")).filter(function (a) { return /[?&]produkt=|#offert/.test(a.getAttribute("href") || ""); }); }
+  window.bkHole = {
+    set: function (mm) {
+      try { if (mm > 0) sessionStorage.setItem(HOLE_KEY, String(mm)); } catch (e) { /* private mode: the links still get it below */ }
+      quoteLinks().forEach(function (a) {
+        var href = a.getAttribute("href").replace(/([?&])hal=\d*&?/, "$1").replace(/[?&]$/, "");
+        var hash = ""; var i = href.indexOf("#"); if (i >= 0) { hash = href.slice(i); href = href.slice(0, i); }
+        a.setAttribute("href", href + (href.indexOf("?") >= 0 ? "&" : "?") + "hal=" + mm + hash);
+      });
+    }
+  };
+  if (storedHole()) window.bkHole.set(storedHole());
 
   // ---------- image carousels ----------
   var reduceMotion = !!(window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches);
@@ -451,7 +499,10 @@
     var stage = fig.querySelector(".cmp__stage"), input = fig.querySelector(".cmp__range"), raf = 0, stopped = false;
     if (!stage || !input) return;
     var p = 50;
-    function set(v) { p = Math.max(0, Math.min(100, v)); stage.style.setProperty("--p", p + "%"); input.value = String(p); }
+    function set(v) {
+      p = Math.max(0, Math.min(100, v)); stage.style.setProperty("--p", p + "%"); input.value = String(p);
+      fig.classList.toggle("is-hide-l", p < 26); fig.classList.toggle("is-hide-r", p > 74); // a label gives way when the divider gets close to it
+    }
     function stop() { stopped = true; cancelAnimationFrame(raf); }
     var down = null;
     stage.addEventListener("pointerdown", function (e) {
@@ -578,7 +629,7 @@
       }
       raf = requestAnimationFrame(frame);
     }
-    input.addEventListener("input", function () { stopHint(); sync(); });
+    input.addEventListener("input", function () { stopHint(); sync(); if (window.bkHole) window.bkHole.set(Number(input.value)); });
     ["pointerenter", "pointerdown", "keydown", "touchstart", "focus"].forEach(function (ev) { box.querySelector(".rc__pick").addEventListener(ev, stopHint, { passive: true, capture: true }); });
     sync();
     reserve();

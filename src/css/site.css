@@ -517,7 +517,7 @@ tr.is-fit > th, tr.is-fit > td { background-color: #fff1e0 !important; }
 .qf__f { margin: 0 0 1rem; }
 .qf__f label { display: block; font-weight: 600; font-size: .9rem; margin-bottom: .3rem; }
 .qf__req { color: var(--primary); }
-.qf input[type=text], .qf input[type=email], .qf input[type=tel], .qf textarea { width: 100%; font: inherit; padding: .7rem .8rem; border: 1px solid #cfc9c1; border-radius: 6px; background: #fff; color: var(--text); }
+.qf input[type=text], .qf input[type=email], .qf input[type=tel], .qf input[type=number], .qf textarea { width: 100%; font: inherit; padding: .7rem .8rem; border: 1px solid #cfc9c1; border-radius: 6px; background: #fff; color: var(--text); }
 .qf textarea { resize: vertical; min-height: 7rem; }
 .qf input:focus-visible, .qf textarea:focus-visible { outline: 2px solid var(--primary); outline-offset: 1px; border-color: transparent; }
 .qf__trap { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
@@ -850,8 +850,26 @@ dialog.search::backdrop { background: rgba(35, 31, 32, .6); }
 .cmp.is-drag .cmp__knob { transform: scale(1.08); }
 .cmp__range { position: absolute; left: 0; bottom: 0; width: 1px; height: 1px; margin: 0; opacity: 0; pointer-events: none; }
 .cmp:has(.cmp__range:focus-visible) .cmp__knob { outline: 3px solid var(--primary); outline-offset: 2px; }
-.cmp__tag { position: absolute; bottom: .6rem; padding: .25rem .55rem; font-size: .68rem; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; color: #fff; background: rgba(35, 31, 32, .7); border-radius: 2px; pointer-events: none; }
-.cmp__tag--l { left: .6rem; }
-.cmp__tag--r { right: .6rem; }
+.cmp__tag { position: absolute; top: .65rem; padding: .32rem .65rem .32rem .6rem; font-size: .7rem; font-weight: 700; line-height: 1; letter-spacing: .1em; text-transform: uppercase; color: var(--text); background: rgba(255, 255, 255, .94); border-left: 3px solid var(--primary); border-radius: 0 2px 2px 0; box-shadow: 0 1px 4px rgba(35, 31, 32, .18); pointer-events: none; transition: opacity .2s ease; }
+.cmp__tag--l { left: 0; }
+.cmp__tag--r { right: 0; border-left: 0; border-right: 3px solid var(--primary); border-radius: 2px 0 0 2px; padding: .32rem .6rem .32rem .65rem; }
+.cmp.is-hide-l .cmp__tag--l, .cmp.is-hide-r .cmp__tag--r { opacity: 0; }
 .no-js .cmp__range { display: none; }
 .cmp figcaption { margin-top: .5rem; font-size: .85rem; color: var(--muted); }
+
+/* quote form: optional hole diameter, and the human check (a small reaction game) */
+.qf__f--hole { max-width: 16rem; }
+.qf__f--hole input { width: 100%; }
+.qg { margin: 0 0 1.1rem; padding: .9rem 1rem 1rem; background: #fff; border: 1px solid var(--line); border-left: 3px solid var(--primary); border-radius: var(--radius); }
+.qg__t { margin: 0 0 .15rem; display: flex; gap: .7rem; align-items: baseline; justify-content: space-between; font-size: .95rem; }
+.qg__dots { color: var(--primary); letter-spacing: .15em; }
+.qg__h { margin: 0 0 .7rem; font-size: .85rem; color: var(--muted); }
+.qg__c { display: block; max-width: 100%; border-radius: 3px; touch-action: manipulation; cursor: pointer; }
+.qg__row { display: flex; gap: 1rem; align-items: center; margin-top: .7rem; flex-wrap: wrap; }
+.qg__stop { min-width: 7rem; justify-content: center; }
+.qg__msg { font-size: .88rem; font-weight: 600; min-height: 1.3em; }
+.qg__alt { margin: .7rem 0 0; font-size: .8rem; color: var(--muted); }
+.qg.is-ok { border-left-color: #2ea043; }
+.qg.is-need { animation: qgNeed .5s ease 2; }
+@keyframes qgNeed { 0%, 100% { box-shadow: 0 0 0 0 rgba(245, 130, 32, 0); } 50% { box-shadow: 0 0 0 4px rgba(245, 130, 32, .35); } }
+@media (prefers-reduced-motion: reduce) { .qg.is-need { animation: none; box-shadow: 0 0 0 3px rgba(245, 130, 32, .35); } }
