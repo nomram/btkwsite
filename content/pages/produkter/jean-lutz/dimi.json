@@ -1,0 +1,357 @@
+{
+  "path": "/produkter/jean-lutz/dimi",
+  "updated": "2026-10-22",
+  "template": "product",
+  "order": 2,
+  "published": true,
+  "i18n": {
+    "sv": {
+      "title": "DIMI",
+      "h1": "DIMI",
+      "description": "DIMI är en displayenhet för gruvor och stenbrott. Den ger enkel och exakt övervakning av mastens lutning i två axlar. I kombination med en NORMA2 övervakas även azimut i tre axlar.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Jean Lutz logotyp",
+          "href": "/produkter/jean-lutz",
+          "width": 572,
+          "height": 128,
+          "src": "/assets/img/logo-jean-lutz.webp"
+        },
+        {
+          "type": "image",
+          "alt": "DIMI",
+          "width": 1200,
+          "height": 1200,
+          "src": "/assets/img/jean-lutz-dimi.webp"
+        },
+        {
+          "type": "text",
+          "html": "DIMI är en displayenhet för gruvor och stenbrott. Den ger enkel och exakt övervakning av mastens lutning i två axlar. I kombination med en NORMA2 övervakas även azimut i tre axlar."
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Dedikerad display för övervakning av mastlutning i två axlar",
+            "Övervakning av azimut i tre axlar tillsammans med en NORMA2",
+            "Tydligt färggränssnitt anpassat för arbetsplatsens förhållanden",
+            "Display- och övervakningsenhet: DIMI har ingen registreringsfunktion"
+          ]
+        },
+        {
+          "type": "chips",
+          "title": "Kompatibla processer",
+          "items": [
+            "Gruvdrift",
+            "Stenbrott",
+            "Produktionsborrning"
+          ]
+        },
+        {
+          "type": "text",
+          "html": "DIMI är en övervakningsdisplay avsedd för gruvor och stenbrott."
+        },
+        {
+          "type": "datasheet",
+          "title": "Teknisk data",
+          "tagline": "Display för mastlutning",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Teknisk data",
+              "rows": [
+                {
+                  "label": "Strömförsörjning",
+                  "metric": "12–36 V DC eller 24 V AC"
+                },
+                {
+                  "label": "Vikt",
+                  "metric": "2,3 kg"
+                },
+                {
+                  "label": "Drifttemperatur",
+                  "metric": "−20 °C / 60 °C"
+                },
+                {
+                  "label": "Kapslingsklass",
+                  "metric": "IP65"
+                },
+                {
+                  "label": "Färgskärm",
+                  "metric": "5,7″"
+                }
+              ]
+            }
+          ],
+          "note": "Uppgifterna är hämtade från tillverkarens webbplats."
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Kontakta oss</a> för mer information eller för hjälp att välja rätt enhet för din process."
+        }
+      ]
+    },
+    "en": {
+      "title": "DIMI",
+      "h1": "DIMI",
+      "description": "The DIMI is a display unit designed for mines and quarries. It provides simple, accurate monitoring of mast inclination on 2 axes. Combined with a NORMA2, it also monitors azimuth on 3 axes.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Jean Lutz logo",
+          "href": "/produkter/jean-lutz",
+          "width": 572,
+          "height": 128,
+          "src": "/assets/img/logo-jean-lutz.webp"
+        },
+        {
+          "type": "image",
+          "alt": "DIMI",
+          "width": 1200,
+          "height": 1200,
+          "src": "/assets/img/jean-lutz-dimi.webp"
+        },
+        {
+          "type": "text",
+          "html": "The DIMI is a display unit designed for mines and quarries. It provides simple, accurate monitoring of mast inclination on 2 axes. Combined with a NORMA2, it also monitors azimuth on 3 axes."
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Dedicated display for monitoring mast inclination on 2 axes",
+            "Azimuth monitoring on 3 axes when combined with a NORMA2",
+            "Clear colour interface suited to jobsite conditions",
+            "Display and monitoring device: the DIMI has no recording function"
+          ]
+        },
+        {
+          "type": "chips",
+          "title": "Compatible processes",
+          "items": [
+            "Mining",
+            "Quarrying",
+            "Production drilling"
+          ]
+        },
+        {
+          "type": "text",
+          "html": "The DIMI is a monitoring display designed for mining and quarrying applications."
+        },
+        {
+          "type": "datasheet",
+          "title": "Technical data",
+          "tagline": "Mast inclination display",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Technical data",
+              "rows": [
+                {
+                  "label": "Power supply",
+                  "metric": "12–36 V DC or 24 V AC"
+                },
+                {
+                  "label": "Weight",
+                  "metric": "2.3 kg"
+                },
+                {
+                  "label": "Operating temperature",
+                  "metric": "−20 °C / 60 °C"
+                },
+                {
+                  "label": "Ingress protection",
+                  "metric": "IP65"
+                },
+                {
+                  "label": "Colour screen",
+                  "metric": "5.7″"
+                }
+              ]
+            }
+          ],
+          "note": "Information from the manufacturer's website."
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Contact us</a> for more information or help choosing the right device for your process."
+        }
+      ]
+    },
+    "es": {
+      "title": "DIMI",
+      "h1": "DIMI",
+      "description": "El DIMI es una unidad de visualización diseñada para minas y canteras. Ofrece un control sencillo y preciso de la inclinación del mástil en 2 ejes. Combinado con un NORMA2, también controla el acimut en 3 ejes.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Jean Lutz logotipo",
+          "href": "/produkter/jean-lutz",
+          "width": 572,
+          "height": 128,
+          "src": "/assets/img/logo-jean-lutz.webp"
+        },
+        {
+          "type": "image",
+          "alt": "DIMI",
+          "width": 1200,
+          "height": 1200,
+          "src": "/assets/img/jean-lutz-dimi.webp"
+        },
+        {
+          "type": "text",
+          "html": "El DIMI es una unidad de visualización diseñada para minas y canteras. Ofrece un control sencillo y preciso de la inclinación del mástil en 2 ejes. Combinado con un NORMA2, también controla el acimut en 3 ejes."
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Pantalla dedicada al control de la inclinación del mástil en 2 ejes",
+            "Control del acimut en 3 ejes combinado con un NORMA2",
+            "Interfaz en color clara, adaptada a las condiciones de obra",
+            "Equipo de visualización y control: el DIMI no tiene función de registro"
+          ]
+        },
+        {
+          "type": "chips",
+          "title": "Procesos compatibles",
+          "items": [
+            "Minería",
+            "Canteras",
+            "Perforación de producción"
+          ]
+        },
+        {
+          "type": "text",
+          "html": "El DIMI es una pantalla de control diseñada para aplicaciones de minería y canteras."
+        },
+        {
+          "type": "datasheet",
+          "title": "Datos técnicos",
+          "tagline": "Pantalla de inclinación del mástil",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Datos técnicos",
+              "rows": [
+                {
+                  "label": "Alimentación",
+                  "metric": "12–36 V CC o 24 V CA"
+                },
+                {
+                  "label": "Peso",
+                  "metric": "2,3 kg"
+                },
+                {
+                  "label": "Temperatura de funcionamiento",
+                  "metric": "−20 °C / 60 °C"
+                },
+                {
+                  "label": "Grado de protección",
+                  "metric": "IP65"
+                },
+                {
+                  "label": "Pantalla en color",
+                  "metric": "5,7″"
+                }
+              ]
+            }
+          ],
+          "note": "Información del sitio web del fabricante."
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Contáctenos</a> para más información o ayuda para elegir el equipo adecuado para su proceso."
+        }
+      ]
+    },
+    "no": {
+      "title": "DIMI",
+      "h1": "DIMI",
+      "description": "DIMI er en displayenhet for gruver og steinbrudd. Den gir enkel og nøyaktig overvåking av mastehelningen i 2 akser. Sammen med en NORMA2 overvåkes også asimut i 3 akser.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Jean Lutz logo",
+          "href": "/produkter/jean-lutz",
+          "width": 572,
+          "height": 128,
+          "src": "/assets/img/logo-jean-lutz.webp"
+        },
+        {
+          "type": "image",
+          "alt": "DIMI",
+          "width": 1200,
+          "height": 1200,
+          "src": "/assets/img/jean-lutz-dimi.webp"
+        },
+        {
+          "type": "text",
+          "html": "DIMI er en displayenhet for gruver og steinbrudd. Den gir enkel og nøyaktig overvåking av mastehelningen i 2 akser. Sammen med en NORMA2 overvåkes også asimut i 3 akser."
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Dedikert display for overvåking av mastehelning i 2 akser",
+            "Overvåking av asimut i 3 akser sammen med en NORMA2",
+            "Tydelig fargegrensesnitt tilpasset forholdene på arbeidsplassen",
+            "Display- og overvåkingsenhet: DIMI har ingen registreringsfunksjon"
+          ]
+        },
+        {
+          "type": "chips",
+          "title": "Kompatible prosesser",
+          "items": [
+            "Gruvedrift",
+            "Steinbrudd",
+            "Produksjonsboring"
+          ]
+        },
+        {
+          "type": "text",
+          "html": "DIMI er en overvåkingsdisplay beregnet for gruve- og steinbruddsapplikasjoner."
+        },
+        {
+          "type": "datasheet",
+          "title": "Tekniske data",
+          "tagline": "Display for mastehelning",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Tekniske data",
+              "rows": [
+                {
+                  "label": "Strømforsyning",
+                  "metric": "12–36 V DC eller 24 V AC"
+                },
+                {
+                  "label": "Vekt",
+                  "metric": "2,3 kg"
+                },
+                {
+                  "label": "Driftstemperatur",
+                  "metric": "−20 °C / 60 °C"
+                },
+                {
+                  "label": "Kapslingsgrad",
+                  "metric": "IP65"
+                },
+                {
+                  "label": "Fargeskjerm",
+                  "metric": "5,7″"
+                }
+              ]
+            }
+          ],
+          "note": "Opplysningene er hentet fra produsentens nettsted."
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Kontakt oss</a> for mer informasjon eller hjelp til å velge riktig enhet for prosessen din."
+        }
+      ]
+    }
+  }
+}

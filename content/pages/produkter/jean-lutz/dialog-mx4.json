@@ -1,0 +1,421 @@
+{
+  "path": "/produkter/jean-lutz/dialog-mx4",
+  "updated": "2026-10-22",
+  "template": "product",
+  "order": 0,
+  "published": true,
+  "i18n": {
+    "sv": {
+      "title": "DIALOG MX4",
+      "h1": "DIALOG MX4",
+      "description": "DIALOG MX4 är en enhet för att mäta och styra processer inom specialgrundläggning. Den registrerar mätvärden mot både tid och djup samtidigt, överför data i realtid och kan konfigureras på distans.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Jean Lutz logotyp",
+          "href": "/produkter/jean-lutz",
+          "width": 572,
+          "height": 128,
+          "src": "/assets/img/logo-jean-lutz.webp"
+        },
+        {
+          "type": "image",
+          "alt": "DIALOG MX4",
+          "width": 1200,
+          "height": 1200,
+          "src": "/assets/img/jean-lutz-dialog-mx4.webp"
+        },
+        {
+          "type": "text",
+          "html": "DIALOG MX4 är en enhet för att mäta och styra processer inom specialgrundläggning. Den registrerar mätvärden mot både tid och djup samtidigt, överför data i realtid och kan konfigureras på distans."
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Färgpekskärm på 10,4″ som kombinerar robusthet och enkel användning",
+            "Samtidig registrering av mätvärden mot tid och djup",
+            "Dataöverföring via Wi‑Fi, Ethernet, mobildata eller USB",
+            "Inbyggd GPS för geolokalisering, med möjlighet att övervaka maskinkomponenter"
+          ]
+        },
+        {
+          "type": "chips",
+          "title": "Kompatibla processer",
+          "items": [
+            "Jet grouting",
+            "CFA-pålar",
+            "Kelly-pålar",
+            "Borrade pålar",
+            "Soil mixing",
+            "Slitsmurar",
+            "Vertikala dräner",
+            "Borrning",
+            "Vibrokompaktering",
+            "Vibrodrivning",
+            "Drivna pålar"
+          ]
+        },
+        {
+          "type": "text",
+          "html": "DIALOG MX4 är den mest mångsidiga och skalbara lösningen i sortimentet."
+        },
+        {
+          "type": "datasheet",
+          "title": "Teknisk data",
+          "tagline": "Dataloggare för specialgrundläggning",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Teknisk data",
+              "rows": [
+                {
+                  "label": "Strömförsörjning",
+                  "metric": "12–36 V DC eller 24 V AC"
+                },
+                {
+                  "label": "Vikt",
+                  "metric": "4,8 kg"
+                },
+                {
+                  "label": "Drifttemperatur",
+                  "metric": "−20 °C / 60 °C"
+                },
+                {
+                  "label": "Kapslingsklass",
+                  "metric": "IP65"
+                },
+                {
+                  "label": "Inbyggd GPS, noggrannhet",
+                  "metric": "30 m"
+                },
+                {
+                  "label": "Färgpekskärm",
+                  "metric": "10,4″"
+                },
+                {
+                  "label": "Dataåtkomst",
+                  "metric": "Wi‑Fi · Ethernet · mobildata · USB"
+                }
+              ]
+            }
+          ],
+          "note": "Uppgifterna är hämtade från tillverkarens webbplats."
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Kontakta oss</a> för mer information eller för hjälp att välja rätt enhet för din process."
+        }
+      ]
+    },
+    "en": {
+      "title": "DIALOG MX4",
+      "h1": "DIALOG MX4",
+      "description": "The DIALOG MX4 is a device designed for measuring and controlling special foundations processes. It records measurements against both time and depth simultaneously, transmits data in real time and can be configured remotely.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Jean Lutz logo",
+          "href": "/produkter/jean-lutz",
+          "width": 572,
+          "height": 128,
+          "src": "/assets/img/logo-jean-lutz.webp"
+        },
+        {
+          "type": "image",
+          "alt": "DIALOG MX4",
+          "width": 1200,
+          "height": 1200,
+          "src": "/assets/img/jean-lutz-dialog-mx4.webp"
+        },
+        {
+          "type": "text",
+          "html": "The DIALOG MX4 is a device designed for measuring and controlling special foundations processes. It records measurements against both time and depth simultaneously, transmits data in real time and can be configured remotely."
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "10.4″ colour touchscreen combining ruggedness and ease of use",
+            "Simultaneous recording of measurements against time and depth",
+            "Data transmission via Wi‑Fi, Ethernet, mobile data or USB",
+            "Built-in GPS for geolocation, with the option to monitor machine components"
+          ]
+        },
+        {
+          "type": "chips",
+          "title": "Compatible processes",
+          "items": [
+            "Jet grouting",
+            "CFA piles",
+            "Kelly piles",
+            "Bored piles",
+            "Soil mixing",
+            "Diaphragm walls",
+            "Vertical drains",
+            "Drilling",
+            "Vibro compaction",
+            "Vibro driving",
+            "Driven piles"
+          ]
+        },
+        {
+          "type": "text",
+          "html": "The DIALOG MX4 is the most versatile and scalable solution in the range."
+        },
+        {
+          "type": "datasheet",
+          "title": "Technical data",
+          "tagline": "Data logger for special foundations",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Technical data",
+              "rows": [
+                {
+                  "label": "Power supply",
+                  "metric": "12–36 V DC or 24 V AC"
+                },
+                {
+                  "label": "Weight",
+                  "metric": "4.8 kg"
+                },
+                {
+                  "label": "Operating temperature",
+                  "metric": "−20 °C / 60 °C"
+                },
+                {
+                  "label": "Ingress protection",
+                  "metric": "IP65"
+                },
+                {
+                  "label": "Built-in GPS accuracy",
+                  "metric": "30 m"
+                },
+                {
+                  "label": "Colour touchscreen",
+                  "metric": "10.4″"
+                },
+                {
+                  "label": "Data retrieval",
+                  "metric": "Wi‑Fi · Ethernet · mobile data · USB"
+                }
+              ]
+            }
+          ],
+          "note": "Information from the manufacturer's website."
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Contact us</a> for more information or help choosing the right device for your process."
+        }
+      ]
+    },
+    "es": {
+      "title": "DIALOG MX4",
+      "h1": "DIALOG MX4",
+      "description": "El DIALOG MX4 es un equipo diseñado para medir y controlar procesos de cimentaciones especiales. Registra las mediciones simultáneamente respecto al tiempo y a la profundidad, transmite datos en tiempo real y se puede configurar a distancia.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Jean Lutz logotipo",
+          "href": "/produkter/jean-lutz",
+          "width": 572,
+          "height": 128,
+          "src": "/assets/img/logo-jean-lutz.webp"
+        },
+        {
+          "type": "image",
+          "alt": "DIALOG MX4",
+          "width": 1200,
+          "height": 1200,
+          "src": "/assets/img/jean-lutz-dialog-mx4.webp"
+        },
+        {
+          "type": "text",
+          "html": "El DIALOG MX4 es un equipo diseñado para medir y controlar procesos de cimentaciones especiales. Registra las mediciones simultáneamente respecto al tiempo y a la profundidad, transmite datos en tiempo real y se puede configurar a distancia."
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Pantalla táctil en color de 10,4″ que combina robustez y facilidad de uso",
+            "Registro simultáneo de las mediciones respecto al tiempo y a la profundidad",
+            "Transmisión de datos por Wi‑Fi, Ethernet, datos móviles o USB",
+            "GPS integrado para la geolocalización, con la opción de supervisar componentes de la máquina"
+          ]
+        },
+        {
+          "type": "chips",
+          "title": "Procesos compatibles",
+          "items": [
+            "Jet grouting",
+            "Pilotes CFA",
+            "Pilotes Kelly",
+            "Pilotes perforados",
+            "Soil mixing",
+            "Muros pantalla",
+            "Drenes verticales",
+            "Perforación",
+            "Vibrocompactación",
+            "Vibrohincado",
+            "Pilotes hincados"
+          ]
+        },
+        {
+          "type": "text",
+          "html": "El DIALOG MX4 es la solución más versátil y escalable de la gama."
+        },
+        {
+          "type": "datasheet",
+          "title": "Datos técnicos",
+          "tagline": "Registrador de datos para cimentaciones especiales",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Datos técnicos",
+              "rows": [
+                {
+                  "label": "Alimentación",
+                  "metric": "12–36 V CC o 24 V CA"
+                },
+                {
+                  "label": "Peso",
+                  "metric": "4,8 kg"
+                },
+                {
+                  "label": "Temperatura de funcionamiento",
+                  "metric": "−20 °C / 60 °C"
+                },
+                {
+                  "label": "Grado de protección",
+                  "metric": "IP65"
+                },
+                {
+                  "label": "Precisión del GPS integrado",
+                  "metric": "30 m"
+                },
+                {
+                  "label": "Pantalla táctil en color",
+                  "metric": "10,4″"
+                },
+                {
+                  "label": "Obtención de datos",
+                  "metric": "Wi‑Fi · Ethernet · datos móviles · USB"
+                }
+              ]
+            }
+          ],
+          "note": "Información del sitio web del fabricante."
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Contáctenos</a> para más información o ayuda para elegir el equipo adecuado para su proceso."
+        }
+      ]
+    },
+    "no": {
+      "title": "DIALOG MX4",
+      "h1": "DIALOG MX4",
+      "description": "DIALOG MX4 er en enhet for måling og styring av prosesser innen spesialfundamentering. Den registrerer målinger mot både tid og dybde samtidig, overfører data i sanntid og kan konfigureres på avstand.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Jean Lutz logo",
+          "href": "/produkter/jean-lutz",
+          "width": 572,
+          "height": 128,
+          "src": "/assets/img/logo-jean-lutz.webp"
+        },
+        {
+          "type": "image",
+          "alt": "DIALOG MX4",
+          "width": 1200,
+          "height": 1200,
+          "src": "/assets/img/jean-lutz-dialog-mx4.webp"
+        },
+        {
+          "type": "text",
+          "html": "DIALOG MX4 er en enhet for måling og styring av prosesser innen spesialfundamentering. Den registrerer målinger mot både tid og dybde samtidig, overfører data i sanntid og kan konfigureres på avstand."
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Fargeberøringsskjerm på 10,4″ som kombinerer robusthet og enkel bruk",
+            "Samtidig registrering av målinger mot tid og dybde",
+            "Dataoverføring via Wi‑Fi, Ethernet, mobildata eller USB",
+            "Innebygd GPS for geolokalisering, med mulighet til å overvåke maskinkomponenter"
+          ]
+        },
+        {
+          "type": "chips",
+          "title": "Kompatible prosesser",
+          "items": [
+            "Jet grouting",
+            "CFA-peler",
+            "Kelly-peler",
+            "Borede peler",
+            "Soil mixing",
+            "Slissmurer",
+            "Vertikale dren",
+            "Boring",
+            "Vibrokompaktering",
+            "Vibrodrivning",
+            "Drevne peler"
+          ]
+        },
+        {
+          "type": "text",
+          "html": "DIALOG MX4 er den mest allsidige og skalerbare løsningen i sortimentet."
+        },
+        {
+          "type": "datasheet",
+          "title": "Tekniske data",
+          "tagline": "Datalogger for spesialfundamentering",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Tekniske data",
+              "rows": [
+                {
+                  "label": "Strømforsyning",
+                  "metric": "12–36 V DC eller 24 V AC"
+                },
+                {
+                  "label": "Vekt",
+                  "metric": "4,8 kg"
+                },
+                {
+                  "label": "Driftstemperatur",
+                  "metric": "−20 °C / 60 °C"
+                },
+                {
+                  "label": "Kapslingsgrad",
+                  "metric": "IP65"
+                },
+                {
+                  "label": "Innebygd GPS, nøyaktighet",
+                  "metric": "30 m"
+                },
+                {
+                  "label": "Fargeberøringsskjerm",
+                  "metric": "10,4″"
+                },
+                {
+                  "label": "Datauthenting",
+                  "metric": "Wi‑Fi · Ethernet · mobildata · USB"
+                }
+              ]
+            }
+          ],
+          "note": "Opplysningene er hentet fra produsentens nettsted."
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Kontakt oss</a> for mer informasjon eller hjelp til å velge riktig enhet for prosessen din."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,242 @@
+{
+  "path": "/produkter/jean-lutz",
+  "updated": "2026-10-22",
+  "template": "brand",
+  "order": 14,
+  "published": true,
+  "logo": "/assets/img/logo-jean-lutz.webp",
+  "i18n": {
+    "sv": {
+      "title": "Jean Lutz",
+      "h1": "Jean Lutz",
+      "description": "Jean Lutz utvecklar och tillverkar givare, dataloggare och programvara för specialgrundläggning: mätning, styrning och registrering vid jet grouting, injektering, borrning, pålning och soil mixing. Företaget är familjeägt och bygger sina instrument i Jurançon i Frankrike, med cirka 50 års erfarenhet.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Jean Lutz logotyp",
+          "width": 572,
+          "height": 128,
+          "src": "/assets/img/logo-jean-lutz.webp",
+          "maxWidth": 360
+        },
+        {
+          "type": "text",
+          "html": "Jean Lutz utvecklar och tillverkar givare, dataloggare och programvara för specialgrundläggning: mätning, styrning och registrering vid jet grouting, injektering, borrning, pålning och soil mixing. Företaget är familjeägt och bygger sina instrument i Jurançon i Frankrike, med cirka 50 års erfarenhet."
+        },
+        {
+          "type": "modules",
+          "layout": "cards",
+          "columns": 3,
+          "items": [
+            {
+              "title": "DIALOG MX4",
+              "image": "/assets/img/jean-lutz-dialog-mx4.webp",
+              "alt": "DIALOG MX4",
+              "text": "Flaggskeppet: multiprocess-enhet för mätning, styrning och registrering.",
+              "href": "/produkter/jean-lutz/dialog-mx4"
+            },
+            {
+              "title": "DPV",
+              "image": "/assets/img/jean-lutz-dpv.webp",
+              "alt": "DPV",
+              "text": "Robust display för tryck, flöde och volym hos en injekteringspump.",
+              "href": "/produkter/jean-lutz/dpv"
+            },
+            {
+              "title": "DIMI",
+              "image": "/assets/img/jean-lutz-dimi.webp",
+              "alt": "DIMI",
+              "text": "Display för mastlutning i två axlar, för gruvor och stenbrott.",
+              "href": "/produkter/jean-lutz/dimi"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "Ta en titt på deras hemsida nedan eller <a href=\"/kontakta-oss\">kontakta oss</a> för mer information."
+        },
+        {
+          "type": "button",
+          "kind": "link",
+          "text": "Läs mer",
+          "href": "https://www.jeanlutzsa.fr/en/",
+          "external": true
+        }
+      ]
+    },
+    "en": {
+      "title": "Jean Lutz",
+      "h1": "Jean Lutz",
+      "description": "Jean Lutz designs and manufactures sensors, data loggers and software for special foundations: measuring, controlling and recording for jet grouting, grouting, drilling, piling and soil mixing. The company is family-owned and builds its instruments in Jurançon, France, with about 50 years of experience.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Jean Lutz logo",
+          "width": 572,
+          "height": 128,
+          "src": "/assets/img/logo-jean-lutz.webp",
+          "maxWidth": 360
+        },
+        {
+          "type": "text",
+          "html": "Jean Lutz designs and manufactures sensors, data loggers and software for special foundations: measuring, controlling and recording for jet grouting, grouting, drilling, piling and soil mixing. The company is family-owned and builds its instruments in Jurançon, France, with about 50 years of experience."
+        },
+        {
+          "type": "modules",
+          "layout": "cards",
+          "columns": 3,
+          "items": [
+            {
+              "title": "DIALOG MX4",
+              "image": "/assets/img/jean-lutz-dialog-mx4.webp",
+              "alt": "DIALOG MX4",
+              "text": "The flagship: a multi-process device for measuring, controlling and recording.",
+              "href": "/produkter/jean-lutz/dialog-mx4"
+            },
+            {
+              "title": "DPV",
+              "image": "/assets/img/jean-lutz-dpv.webp",
+              "alt": "DPV",
+              "text": "Rugged display for the pressure, flow rate and volume of a grout pump.",
+              "href": "/produkter/jean-lutz/dpv"
+            },
+            {
+              "title": "DIMI",
+              "image": "/assets/img/jean-lutz-dimi.webp",
+              "alt": "DIMI",
+              "text": "Display for mast inclination on two axes, for mines and quarries.",
+              "href": "/produkter/jean-lutz/dimi"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "Have a look at their website below or <a href=\"/kontakta-oss\">contact us</a> for more information."
+        },
+        {
+          "type": "button",
+          "kind": "link",
+          "text": "Read more",
+          "href": "https://www.jeanlutzsa.fr/en/",
+          "external": true
+        }
+      ]
+    },
+    "es": {
+      "title": "Jean Lutz",
+      "h1": "Jean Lutz",
+      "description": "Jean Lutz diseña y fabrica sensores, registradores de datos y software para cimentaciones especiales: medición, control y registro en jet grouting, inyección, perforación, pilotaje y soil mixing. Es una empresa familiar que fabrica sus instrumentos en Jurançon, Francia, con unos 50 años de experiencia.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Jean Lutz logotipo",
+          "width": 572,
+          "height": 128,
+          "src": "/assets/img/logo-jean-lutz.webp",
+          "maxWidth": 360
+        },
+        {
+          "type": "text",
+          "html": "Jean Lutz diseña y fabrica sensores, registradores de datos y software para cimentaciones especiales: medición, control y registro en jet grouting, inyección, perforación, pilotaje y soil mixing. Es una empresa familiar que fabrica sus instrumentos en Jurançon, Francia, con unos 50 años de experiencia."
+        },
+        {
+          "type": "modules",
+          "layout": "cards",
+          "columns": 3,
+          "items": [
+            {
+              "title": "DIALOG MX4",
+              "image": "/assets/img/jean-lutz-dialog-mx4.webp",
+              "alt": "DIALOG MX4",
+              "text": "El buque insignia: equipo multiproceso para medir, controlar y registrar.",
+              "href": "/produkter/jean-lutz/dialog-mx4"
+            },
+            {
+              "title": "DPV",
+              "image": "/assets/img/jean-lutz-dpv.webp",
+              "alt": "DPV",
+              "text": "Pantalla robusta para la presión, el caudal y el volumen de una bomba de inyección.",
+              "href": "/produkter/jean-lutz/dpv"
+            },
+            {
+              "title": "DIMI",
+              "image": "/assets/img/jean-lutz-dimi.webp",
+              "alt": "DIMI",
+              "text": "Pantalla para la inclinación del mástil en dos ejes, para minas y canteras.",
+              "href": "/produkter/jean-lutz/dimi"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "Eche un vistazo a su sitio web o <a href=\"/kontakta-oss\">contáctenos</a> para más información."
+        },
+        {
+          "type": "button",
+          "kind": "link",
+          "text": "Leer más",
+          "href": "https://www.jeanlutzsa.fr/en/",
+          "external": true
+        }
+      ]
+    },
+    "no": {
+      "title": "Jean Lutz",
+      "h1": "Jean Lutz",
+      "description": "Jean Lutz utvikler og produserer givere, dataloggere og programvare for spesialfundamentering: måling, styring og registrering ved jet grouting, injeksjon, boring, peling og soil mixing. Selskapet er familieeid og bygger instrumentene sine i Jurançon i Frankrike, med rundt 50 års erfaring.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Jean Lutz logo",
+          "width": 572,
+          "height": 128,
+          "src": "/assets/img/logo-jean-lutz.webp",
+          "maxWidth": 360
+        },
+        {
+          "type": "text",
+          "html": "Jean Lutz utvikler og produserer givere, dataloggere og programvare for spesialfundamentering: måling, styring og registrering ved jet grouting, injeksjon, boring, peling og soil mixing. Selskapet er familieeid og bygger instrumentene sine i Jurançon i Frankrike, med rundt 50 års erfaring."
+        },
+        {
+          "type": "modules",
+          "layout": "cards",
+          "columns": 3,
+          "items": [
+            {
+              "title": "DIALOG MX4",
+              "image": "/assets/img/jean-lutz-dialog-mx4.webp",
+              "alt": "DIALOG MX4",
+              "text": "Flaggskipet: multiprosess-enhet for måling, styring og registrering.",
+              "href": "/produkter/jean-lutz/dialog-mx4"
+            },
+            {
+              "title": "DPV",
+              "image": "/assets/img/jean-lutz-dpv.webp",
+              "alt": "DPV",
+              "text": "Robust display for trykk, flyt og volum på en injeksjonspumpe.",
+              "href": "/produkter/jean-lutz/dpv"
+            },
+            {
+              "title": "DIMI",
+              "image": "/assets/img/jean-lutz-dimi.webp",
+              "alt": "DIMI",
+              "text": "Display for mastehelning i to akser, for gruver og steinbrudd.",
+              "href": "/produkter/jean-lutz/dimi"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "Ta en titt på nettsiden deres nedenfor eller <a href=\"/kontakta-oss\">kontakt oss</a> for mer informasjon."
+        },
+        {
+          "type": "button",
+          "kind": "link",
+          "text": "Les mer",
+          "href": "https://www.jeanlutzsa.fr/en/",
+          "external": true
+        }
+      ]
+    }
+  }
+}

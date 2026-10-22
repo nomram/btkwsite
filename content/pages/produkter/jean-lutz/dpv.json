@@ -1,0 +1,373 @@
+{
+  "path": "/produkter/jean-lutz/dpv",
+  "updated": "2026-10-22",
+  "template": "product",
+  "order": 1,
+  "published": true,
+  "i18n": {
+    "sv": {
+      "title": "DPV",
+      "h1": "DPV",
+      "description": "DPV är en robust och lättanvänd lösning för realtidsvisning och övervakning av tryck, flöde och volym hos en injekteringspump. Föraren kan visa värdena som mätare eller som grafiska kurvor.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Jean Lutz logotyp",
+          "href": "/produkter/jean-lutz",
+          "width": 572,
+          "height": 128,
+          "src": "/assets/img/logo-jean-lutz.webp"
+        },
+        {
+          "type": "image",
+          "alt": "DPV",
+          "width": 1200,
+          "height": 1200,
+          "src": "/assets/img/jean-lutz-dpv.webp"
+        },
+        {
+          "type": "text",
+          "html": "DPV är en robust och lättanvänd lösning för realtidsvisning och övervakning av tryck, flöde och volym hos en injekteringspump. Föraren kan visa värdena som mätare eller som grafiska kurvor."
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Visning av tryck, flöde och volym i realtid",
+            "Användarvänligt gränssnitt med visning som mätare eller grafiska kurvor",
+            "Avsedd för övervakning av en enskild injekteringsledning",
+            "Dataåtkomst via USB"
+          ]
+        },
+        {
+          "type": "chips",
+          "title": "Kompatibla processer",
+          "items": [
+            "Injektering",
+            "Jet grouting",
+            "Tester och dedikerade injekteringsstationer"
+          ]
+        },
+        {
+          "type": "text",
+          "html": "DPV är avsedd för omedelbar visning och övervakning av de viktigaste parametrarna i en injekteringsledning."
+        },
+        {
+          "type": "datasheet",
+          "title": "Teknisk data",
+          "tagline": "Display och övervakning för injektering",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Teknisk data",
+              "rows": [
+                {
+                  "label": "Strömförsörjning",
+                  "metric": "12–36 V DC eller 24 V AC"
+                },
+                {
+                  "label": "Vikt",
+                  "metric": "2,3 kg"
+                },
+                {
+                  "label": "Drifttemperatur",
+                  "metric": "−20 °C / 60 °C"
+                },
+                {
+                  "label": "Kapslingsklass",
+                  "metric": "IP65"
+                },
+                {
+                  "label": "Färgskärm",
+                  "metric": "5,7″"
+                },
+                {
+                  "label": "Dataåtkomst",
+                  "metric": "USB"
+                }
+              ]
+            }
+          ],
+          "note": "Uppgifterna är hämtade från tillverkarens webbplats."
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Kontakta oss</a> för mer information eller för hjälp att välja rätt enhet för din process."
+        }
+      ]
+    },
+    "en": {
+      "title": "DPV",
+      "h1": "DPV",
+      "description": "The DPV is a rugged, easy-to-use solution for real-time display and monitoring of the pressure, flow rate and volume of a grout pump. The operator can display values as gauges or graphical curves.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Jean Lutz logo",
+          "href": "/produkter/jean-lutz",
+          "width": 572,
+          "height": 128,
+          "src": "/assets/img/logo-jean-lutz.webp"
+        },
+        {
+          "type": "image",
+          "alt": "DPV",
+          "width": 1200,
+          "height": 1200,
+          "src": "/assets/img/jean-lutz-dpv.webp"
+        },
+        {
+          "type": "text",
+          "html": "The DPV is a rugged, easy-to-use solution for real-time display and monitoring of the pressure, flow rate and volume of a grout pump. The operator can display values as gauges or graphical curves."
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Real-time display of pressure, flow rate and volume",
+            "User-friendly interface with gauge or graphical curve display",
+            "Designed for monitoring a single grouting line",
+            "Data retrieval via USB"
+          ]
+        },
+        {
+          "type": "chips",
+          "title": "Compatible processes",
+          "items": [
+            "Grouting",
+            "Jet grouting",
+            "Tests and dedicated grouting stations"
+          ]
+        },
+        {
+          "type": "text",
+          "html": "The DPV is dedicated to the immediate display and monitoring of the main parameters of a grouting line."
+        },
+        {
+          "type": "datasheet",
+          "title": "Technical data",
+          "tagline": "Display and monitoring for grouting",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Technical data",
+              "rows": [
+                {
+                  "label": "Power supply",
+                  "metric": "12–36 V DC or 24 V AC"
+                },
+                {
+                  "label": "Weight",
+                  "metric": "2.3 kg"
+                },
+                {
+                  "label": "Operating temperature",
+                  "metric": "−20 °C / 60 °C"
+                },
+                {
+                  "label": "Ingress protection",
+                  "metric": "IP65"
+                },
+                {
+                  "label": "Colour screen",
+                  "metric": "5.7″"
+                },
+                {
+                  "label": "Data retrieval",
+                  "metric": "USB"
+                }
+              ]
+            }
+          ],
+          "note": "Information from the manufacturer's website."
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Contact us</a> for more information or help choosing the right device for your process."
+        }
+      ]
+    },
+    "es": {
+      "title": "DPV",
+      "h1": "DPV",
+      "description": "El DPV es una solución robusta y fácil de usar para la visualización y el control en tiempo real de la presión, el caudal y el volumen de una bomba de inyección. El operador puede mostrar los valores como indicadores o como curvas gráficas.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Jean Lutz logotipo",
+          "href": "/produkter/jean-lutz",
+          "width": 572,
+          "height": 128,
+          "src": "/assets/img/logo-jean-lutz.webp"
+        },
+        {
+          "type": "image",
+          "alt": "DPV",
+          "width": 1200,
+          "height": 1200,
+          "src": "/assets/img/jean-lutz-dpv.webp"
+        },
+        {
+          "type": "text",
+          "html": "El DPV es una solución robusta y fácil de usar para la visualización y el control en tiempo real de la presión, el caudal y el volumen de una bomba de inyección. El operador puede mostrar los valores como indicadores o como curvas gráficas."
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Visualización en tiempo real de presión, caudal y volumen",
+            "Interfaz fácil de usar con visualización en indicadores o curvas gráficas",
+            "Diseñado para supervisar una única línea de inyección",
+            "Obtención de datos por USB"
+          ]
+        },
+        {
+          "type": "chips",
+          "title": "Procesos compatibles",
+          "items": [
+            "Inyección",
+            "Jet grouting",
+            "Ensayos y estaciones de inyección dedicadas"
+          ]
+        },
+        {
+          "type": "text",
+          "html": "El DPV está dedicado a la visualización y el control inmediatos de los parámetros principales de una línea de inyección."
+        },
+        {
+          "type": "datasheet",
+          "title": "Datos técnicos",
+          "tagline": "Visualización y control para inyección",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Datos técnicos",
+              "rows": [
+                {
+                  "label": "Alimentación",
+                  "metric": "12–36 V CC o 24 V CA"
+                },
+                {
+                  "label": "Peso",
+                  "metric": "2,3 kg"
+                },
+                {
+                  "label": "Temperatura de funcionamiento",
+                  "metric": "−20 °C / 60 °C"
+                },
+                {
+                  "label": "Grado de protección",
+                  "metric": "IP65"
+                },
+                {
+                  "label": "Pantalla en color",
+                  "metric": "5,7″"
+                },
+                {
+                  "label": "Obtención de datos",
+                  "metric": "USB"
+                }
+              ]
+            }
+          ],
+          "note": "Información del sitio web del fabricante."
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Contáctenos</a> para más información o ayuda para elegir el equipo adecuado para su proceso."
+        }
+      ]
+    },
+    "no": {
+      "title": "DPV",
+      "h1": "DPV",
+      "description": "DPV er en robust og brukervennlig løsning for visning og overvåking i sanntid av trykk, flyt og volum på en injeksjonspumpe. Operatøren kan vise verdiene som målere eller som grafiske kurver.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Jean Lutz logo",
+          "href": "/produkter/jean-lutz",
+          "width": 572,
+          "height": 128,
+          "src": "/assets/img/logo-jean-lutz.webp"
+        },
+        {
+          "type": "image",
+          "alt": "DPV",
+          "width": 1200,
+          "height": 1200,
+          "src": "/assets/img/jean-lutz-dpv.webp"
+        },
+        {
+          "type": "text",
+          "html": "DPV er en robust og brukervennlig løsning for visning og overvåking i sanntid av trykk, flyt og volum på en injeksjonspumpe. Operatøren kan vise verdiene som målere eller som grafiske kurver."
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Visning av trykk, flyt og volum i sanntid",
+            "Brukervennlig grensesnitt med visning som målere eller grafiske kurver",
+            "Beregnet for overvåking av én enkelt injeksjonsledning",
+            "Datauthenting via USB"
+          ]
+        },
+        {
+          "type": "chips",
+          "title": "Kompatible prosesser",
+          "items": [
+            "Injeksjon",
+            "Jet grouting",
+            "Tester og dedikerte injeksjonsstasjoner"
+          ]
+        },
+        {
+          "type": "text",
+          "html": "DPV er beregnet for umiddelbar visning og overvåking av de viktigste parametrene i en injeksjonsledning."
+        },
+        {
+          "type": "datasheet",
+          "title": "Tekniske data",
+          "tagline": "Display og overvåking for injeksjon",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Tekniske data",
+              "rows": [
+                {
+                  "label": "Strømforsyning",
+                  "metric": "12–36 V DC eller 24 V AC"
+                },
+                {
+                  "label": "Vekt",
+                  "metric": "2,3 kg"
+                },
+                {
+                  "label": "Driftstemperatur",
+                  "metric": "−20 °C / 60 °C"
+                },
+                {
+                  "label": "Kapslingsgrad",
+                  "metric": "IP65"
+                },
+                {
+                  "label": "Fargeskjerm",
+                  "metric": "5,7″"
+                },
+                {
+                  "label": "Datauthenting",
+                  "metric": "USB"
+                }
+              ]
+            }
+          ],
+          "note": "Opplysningene er hentet fra produsentens nettsted."
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Kontakt oss</a> for mer informasjon eller hjelp til å velge riktig enhet for prosessen din."
+        }
+      ]
+    }
+  }
+}
