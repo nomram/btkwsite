@@ -860,16 +860,35 @@ dialog.search::backdrop { background: rgba(35, 31, 32, .6); }
 /* quote form: optional hole diameter, and the human check (a small reaction game) */
 .qf__f--hole { max-width: 16rem; }
 .qf__f--hole input { width: 100%; }
-.qg { margin: 0 0 1.1rem; padding: .9rem 1rem 1rem; background: #fff; border: 1px solid var(--line); border-left: 3px solid var(--primary); border-radius: var(--radius); }
-.qg__t { margin: 0 0 .15rem; display: flex; gap: .7rem; align-items: baseline; justify-content: space-between; font-size: .95rem; }
-.qg__dots { color: var(--primary); letter-spacing: .15em; }
-.qg__h { margin: 0 0 .7rem; font-size: .85rem; color: var(--muted); }
-.qg__c { display: block; max-width: 100%; border-radius: 3px; touch-action: manipulation; cursor: pointer; }
-.qg__row { display: flex; gap: 1rem; align-items: center; margin-top: .7rem; flex-wrap: wrap; }
-.qg__stop { min-width: 7rem; justify-content: center; }
-.qg__msg { font-size: .88rem; font-weight: 600; min-height: 1.3em; }
-.qg__alt { margin: .7rem 0 0; font-size: .8rem; color: var(--muted); }
-.qg.is-ok { border-left-color: #2ea043; }
-.qg.is-need { animation: qgNeed .5s ease 2; }
-@keyframes qgNeed { 0%, 100% { box-shadow: 0 0 0 0 rgba(245, 130, 32, 0); } 50% { box-shadow: 0 0 0 4px rgba(245, 130, 32, .35); } }
-@media (prefers-reduced-motion: reduce) { .qg.is-need { animation: none; box-shadow: 0 0 0 3px rgba(245, 130, 32, .35); } }
+.qg { margin: 0 0 1.2rem; }
+.qg__btn { position: relative; display: inline-flex; align-items: center; gap: .8rem; min-height: 3.5rem; padding: .5rem 1.3rem .5rem .55rem; font: inherit; font-size: .95rem; font-weight: 700; color: var(--text); background: #fff; border: 1px solid #cfc9c1; border-radius: 999px; cursor: pointer; user-select: none; -webkit-user-select: none; -webkit-touch-callout: none; touch-action: manipulation; transition: border-color .2s ease, background-color .2s ease, box-shadow .2s ease; }
+.qg__btn:hover { border-color: var(--primary); }
+.qg__btn:focus-visible { outline: 2px solid var(--primary); outline-offset: 2px; }
+.qg__ring { width: 2.5rem; height: 2.5rem; flex: none; }
+.qg__track, .qg__prog { fill: none; stroke-width: 4; transform: rotate(-90deg); transform-origin: 22px 22px; }
+.qg__track { stroke: #e4e0da; }
+.qg__prog { stroke: var(--primary); stroke-linecap: round; stroke-dasharray: 100; stroke-dashoffset: 100; }
+.qg__tick { fill: none; stroke: #fff; stroke-width: 3.4; stroke-linecap: round; stroke-linejoin: round; opacity: 0; transition: opacity .25s ease; }
+.qg[data-phase="hold"] .qg__btn { border-color: var(--primary); background: #fff8f0; }
+.qg[data-phase="go"] .qg__btn { border-color: #2ea043; background: #f0faf2; }
+.qg[data-phase="go"] .qg__prog { stroke: #2ea043; }
+.qg[data-phase="late"] .qg__btn, .qg[data-phase="miss"] .qg__btn { border-color: #b3261e; }
+.qg[data-phase="late"] .qg__prog { stroke: #b3261e; }
+.qg[data-phase="miss"] .qg__btn { animation: qgShake .35s ease; }
+.qg.is-ok .qg__btn { border-color: #2ea043; background: #f0faf2; cursor: default; }
+.qg.is-ok .qg__track { fill: #2ea043; stroke: #2ea043; }
+.qg.is-ok .qg__prog { stroke: #2ea043; }
+.qg.is-ok .qg__tick { opacity: 1; }
+.qg__help { margin: .55rem 0 0; min-height: 1.3em; font-size: .85rem; color: var(--muted); }
+.qg__alt { margin: .15rem 0 0; font-size: .78rem; color: var(--muted); }
+.qg.is-need .qg__btn { animation: qgNeed .5s ease 2; }
+@keyframes qgNeed { 0%, 100% { box-shadow: 0 0 0 0 rgba(245, 130, 32, 0); } 50% { box-shadow: 0 0 0 5px rgba(245, 130, 32, .35); } }
+@keyframes qgShake { 0%, 100% { transform: none; } 25% { transform: translateX(-4px); } 75% { transform: translateX(4px); } }
+@media (prefers-reduced-motion: reduce) { .qg[data-phase="miss"] .qg__btn, .qg.is-need .qg__btn { animation: none; } .qg.is-need .qg__btn { box-shadow: 0 0 0 3px rgba(245, 130, 32, .35); } }
+@media (max-width: 560px) { .qg__btn { width: 100%; } }
+/* the product name in the quote band: an orange line draws itself slowly under it once, then fades (a quiet nudge to look here) */
+.cta__name { position: relative; display: inline-block; }
+.cta__name::after { content: ""; position: absolute; left: 0; right: 0; bottom: -.12em; height: .12em; background: var(--primary); border-radius: 2px; transform: scaleX(0); transform-origin: left center; opacity: 0; }
+.cta.is-seen .cta__name::after { animation: ctaUnderline 5.2s ease-in-out both; }
+@keyframes ctaUnderline { 0% { transform: scaleX(0); opacity: 1; } 30% { transform: scaleX(1); opacity: 1; } 78% { transform: scaleX(1); opacity: 1; } 100% { transform: scaleX(1); opacity: 0; } }
+@media (prefers-reduced-motion: reduce) { .cta.is-seen .cta__name::after { animation: none; transform: scaleX(1); opacity: .9; } }

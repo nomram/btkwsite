@@ -1,12 +1,16 @@
-/* Human check for the quote form. No third parties, no cookies, nothing stored.
-   Friction rather than a wall, in three layers:
-     1. a short reaction game on a canvas: press Stop when the moving drill is over the hole, twice in a row. The target and speed are
-        random every round and live only inside the canvas, so there is nothing in the page text for a script to read, and a screenshot
-        a second later is already out of date. The game is easy for people (wide target, slow motion, unlimited tries, a keyboard
-        works) and the e-mail address is always offered as the way around it.
-     2. the form cannot be sent faster than a person could write it (minimum fill time).
-     3. a small proof of work (a few tenths of a second for one visitor, expensive for thousands of submissions) whose result travels
-        with the request so the database can check it itself (see tools/supabase-quotes.sql). */
+/* Human check for the quote form. No third parties except one optional public clock, no cookies, nothing stored.
+   Three light layers, friction rather than a wall:
+     1. "Press and hold, release when it turns green": one familiar gesture, no text to read or puzzle to solve. The moment it turns
+        green is random (about 1 to 2 seconds in) and lives only inside this script, so a script that fires instantly or a screenshot
+        taken a few seconds later misses the window. People have a generous 1.5 seconds; keyboard (Space/Enter) works as well, and the
+        e-mail address is always offered as the way around it.
+     2. the form cannot be sent faster than a person could write it (minimum fill time, checked in the browser).
+     3. a small proof of work tied to a public clock: the browser asks the drand randomness beacon (a free, public service run by a
+        consortium of universities and companies) for its latest round. Each round carries a value nobody can know in advance, so the
+        proof can only have been computed AFTER that round was published: proofs cannot be stockpiled or sold, and they go stale by
+        themselves after a few minutes. Anyone can re-check a proof later with tools/verify-quotes.mjs. No database trigger and no
+        server of ours is needed for that. If the beacon cannot be reached the page falls back to its own clock (weaker, and marked
+        as such in the data). */
 (function () {
   "use strict";
 
@@ -43,129 +47,116 @@
     return [h0, h1, h2, h3, h4, h5, h6, h7].map(function (x) { return ("00000000" + (x >>> 0).toString(16)).slice(-8); }).join("");
   }
 
-  // ---------- proof of work: find a number so that sha256(email|time|number) starts with four zero hex digits (16 bits) ----------
-  function work(seed, onTick) {
+  // ---------- the public clock: latest drand round (quicknet: a new round every 3 s, value unknowable before it is published) ----------
+  var BEACON = "https://api.drand.sh/v2/beacons/quicknet/rounds/latest";
+  function beacon() {
     return new Promise(function (resolve) {
-      var n = 0;
-      (function chunk() {
-        var stop = n + 3000;
-        for (; n < stop; n++) if (sha256(seed + "|" + n).slice(0, 4) === "0000") { resolve(n); return; }
-        if (onTick) onTick(n);
-        setTimeout(chunk, 0);
-      })();
+      if (!window.fetch) { resolve(null); return; }
+      var done = false, timer = setTimeout(function () { if (!done) { done = true; resolve(null); } }, 2500);
+      fetch(BEACON, { cache: "no-store", credentials: "omit", referrerPolicy: "no-referrer" })
+        .then(function (r) { if (!r.ok) throw new Error("beacon"); return r.json(); })
+        .then(function (j) { if (!done) { done = true; clearTimeout(timer); resolve(j && j.round && j.signature ? { round: Number(j.round), sig: String(j.signature) } : null); } })
+        .catch(function () { if (!done) { done = true; clearTimeout(timer); resolve(null); } });
     });
   }
 
-  // ---------- the reaction game ----------
+  // ---------- proof of work: sha256(seed|nonce) must start with four zero hex digits (16 bits) ----------
+  // seed = <round>:<beacon signature>|<e-mail>  (or "local:<time>|<e-mail>" without the beacon)
+  function work(email) {
+    return beacon().then(function (b) {
+      var ts = Math.floor(Date.now() / 1000);
+      var seed = (b ? b.round + ":" + b.sig : "local:" + ts) + "|" + email;
+      return new Promise(function (resolve) {
+        var n = 0;
+        (function chunk() {
+          var stop = n + 3000;
+          for (; n < stop; n++) if (sha256(seed + "|" + n).slice(0, 4) === "0000") { resolve({ pow_round: b ? b.round : 0, pow_ts: ts, pow_nonce: n }); return; }
+          setTimeout(chunk, 0);
+        })();
+      });
+    });
+  }
+
+  // ---------- the control: press and hold, release when it turns green ----------
   function mount(form, tx) {
     var T = tx || {};
     var box = document.createElement("div");
     box.className = "qg";
     box.innerHTML =
-      '<p class="qg__t"><b></b> <span class="qg__dots" aria-hidden="true"></span></p>' +
-      '<p class="qg__h"></p>' +
-      '<canvas class="qg__c" width="420" height="96" role="img"></canvas>' +
-      '<div class="qg__row"><button type="button" class="btn qg__stop"></button><span class="qg__msg" role="status" aria-live="polite"></span></div>' +
+      '<button type="button" class="qg__btn" aria-describedby="qg-help">' +
+        '<svg class="qg__ring" viewBox="0 0 44 44" aria-hidden="true"><circle class="qg__track" cx="22" cy="22" r="18"/><circle class="qg__prog" cx="22" cy="22" r="18" pathLength="100"/><path class="qg__tick" d="M14 23l6 6 11-13"/></svg>' +
+        '<span class="qg__label"></span>' +
+      '</button>' +
+      '<p class="qg__help" id="qg-help"></p><span class="sr-only qg__sr" role="status" aria-live="polite"></span>' +
       '<p class="qg__alt"></p>';
     var anchor = form.querySelector(".qf__consent") || form.querySelector("button[type=submit]");
     anchor.parentNode.insertBefore(box, anchor);
-    box.querySelector(".qg__t b").textContent = T.title || "";
-    box.querySelector(".qg__h").textContent = T.help || "";
-    var canvas = box.querySelector("canvas"), stopBtn = box.querySelector(".qg__stop"), msg = box.querySelector(".qg__msg"), dots = box.querySelector(".qg__dots");
-    canvas.setAttribute("aria-label", T.canvas || "");
-    stopBtn.textContent = T.stop || "Stop";
+    var btn = box.querySelector(".qg__btn"), label = box.querySelector(".qg__label"), help = box.querySelector(".qg__help"), prog = box.querySelector(".qg__prog"), sr = box.querySelector(".qg__sr");
     var alt = box.querySelector(".qg__alt");
-    if (T.mail) { alt.innerHTML = ""; alt.appendChild(document.createTextNode((T.alt || "") + " ")); var a = document.createElement("a"); a.href = "mailto:" + T.mail; a.textContent = T.mail; alt.appendChild(a); } else alt.hidden = true;
+    if (T.mail) { alt.appendChild(document.createTextNode((T.alt || "") + " ")); var a = document.createElement("a"); a.href = "mailto:" + T.mail; a.textContent = T.mail; alt.appendChild(a); } else alt.hidden = true;
 
-    var ctx = canvas.getContext("2d"), ratio = Math.min(2, window.devicePixelRatio || 1), cw = 0, chh = 0;
-    function size() {
-      var w = Math.max(240, Math.min(560, canvas.parentNode.clientWidth)), h = 96;
-      cw = w; chh = h; canvas.style.width = w + "px"; canvas.style.height = h + "px";
-      canvas.width = Math.round(w * ratio); canvas.height = Math.round(h * ratio); ctx.setTransform(ratio, 0, 0, ratio, 0, 0);
+    var S = { passed: false, down: false, t0: 0, fill: 0, win: 1500, phase: "idle", fails: 0, lock: 0, reaction: 0, raf: 0 };
+    function say(txt) { help.textContent = txt || ""; if (txt) sr.textContent = txt; }
+    function setPhase(p, text, helpText) {
+      S.phase = p; box.setAttribute("data-phase", p);
+      if (text != null) label.textContent = text;
+      if (helpText !== undefined) say(helpText);
     }
-    size();
-    window.addEventListener("resize", function () { size(); draw(performance.now()); });
+    function ring(frac) { prog.style.strokeDashoffset = String(100 - Math.max(0, Math.min(1, frac)) * 100); }
+    function reset(helpText) { cancelAnimationFrame(S.raf); S.down = false; ring(0); setPhase("idle", T.start || "", helpText === undefined ? T.help : helpText); }
+    reset();
 
-    var NEED = 2, state = { hits: 0, misses: 0, passed: false, running: false, lockUntil: 0, t0: 0, started: 0 };
-    var round = null, flash = null, raf = 0;
-    function rnd(a, b) { return a + Math.random() * (b - a); }
-    function newRound(now) {
-      var slow = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-      var zw = slow ? 0.3 : 0.25;
-      round = { period: rnd(2.3, 3.4) * 1000 * (slow ? 1.2 : 1), phase: Math.random(), zc: rnd(zw / 2 + 0.08, 1 - zw / 2 - 0.08), zw: zw, t0: now };
+    function frame(now) {
+      if (!S.down) return;
+      var el = now - S.t0;
+      if (el < S.fill) { ring(el / S.fill); }
+      else if (el < S.fill + S.win) { if (S.phase !== "go") { ring(1); setPhase("go", T.go || "", ""); sr.textContent = T.go || ""; } }
+      else if (S.phase !== "late") { setPhase("late", T.late || "", T.late || ""); }
+      S.raf = requestAnimationFrame(frame);
     }
-    function posAt(now) { var q = ((now - round.t0) / round.period + round.phase) % 1; return q < 0.5 ? q * 2 : 2 - q * 2; } // 0..1..0
-    function paintDots() { var s = ""; for (var i = 0; i < NEED; i++) s += i < state.hits ? "● " : "○ "; dots.textContent = s.trim(); }
-    paintDots();
-
-    function draw(now) {
-      var w = cw, h = chh, pad = 14, bit = 30, x0 = pad + bit / 2, x1 = w - pad - bit / 2;
-      ctx.clearRect(0, 0, w, h);
-      // ground
-      ctx.fillStyle = "#231f20"; ctx.fillRect(0, 0, w, h);
-      var gy = h - 26;
-      ctx.fillStyle = "#4a4446"; ctx.fillRect(0, gy, w, 26);
-      if (round) {
-        // the hole in the ground
-        var zx = x0 + (round.zc - round.zw / 2) * (x1 - x0), zwpx = round.zw * (x1 - x0);
-        ctx.fillStyle = "#f58220"; ctx.fillRect(zx, gy, zwpx, 26);
-        ctx.fillStyle = "rgba(0,0,0,.28)"; for (var i = 0; i < zwpx; i += 8) ctx.fillRect(zx + i, gy, 3, 26);
-        // the drill
-        var x = state.passed ? w / 2 : x0 + posAt(now) * (x1 - x0);
-        ctx.fillStyle = "#ffffff"; ctx.fillRect(x - bit / 2, 10, bit, 24);
-        ctx.fillStyle = "#f58220"; ctx.fillRect(x - bit / 2, 10, bit, 6);
-        ctx.fillStyle = "#d9d5d0"; ctx.beginPath(); ctx.moveTo(x - 7, 34); ctx.lineTo(x + 7, 34); ctx.lineTo(x, gy - 2); ctx.closePath(); ctx.fill();
-      }
-      if (flash && now - flash.t < 450) {
-        ctx.fillStyle = flash.ok ? "rgba(46,160,67,.35)" : "rgba(179,38,30,.4)"; ctx.fillRect(0, 0, w, h);
-      }
-      if (state.passed) {
-        ctx.fillStyle = "rgba(46,160,67,.9)"; ctx.fillRect(0, 0, w, h);
-        ctx.fillStyle = "#fff"; ctx.font = "700 18px sans-serif"; ctx.textAlign = "center"; ctx.textBaseline = "middle"; ctx.fillText("✓ " + (T.ok || "OK"), w / 2, h / 2);
-      }
-    }
-    function loop(now) {
-      if (!state.running) return;
-      draw(now); raf = requestAnimationFrame(loop);
-      if (state.lockUntil) {
-        var left = Math.ceil((state.lockUntil - now) / 1000);
-        if (left <= 0) { state.lockUntil = 0; stopBtn.disabled = false; msg.textContent = ""; }
-        else msg.textContent = (T.lock || "Wait {s} s").replace("{s}", String(left));
-      }
-    }
-    function start() { if (state.running || state.passed) return; state.running = true; state.started = state.started || performance.now(); if (!round) newRound(performance.now()); raf = requestAnimationFrame(loop); }
-    function pause() { state.running = false; cancelAnimationFrame(raf); }
-    function press() {
-      if (state.passed) return;
+    function begin() {
+      if (S.passed || S.down) return;
       var now = performance.now();
-      if (!state.running) { start(); return; }
-      if (state.lockUntil && now < state.lockUntil) return;
-      var x = posAt(now), hit = Math.abs(x - round.zc) <= round.zw / 2;
-      flash = { t: now, ok: hit };
-      if (hit) {
-        state.hits++; paintDots();
-        if (state.hits >= NEED) { state.passed = true; state.ms = Math.round(now - state.started); pause(); draw(now); msg.textContent = T.ok || ""; box.classList.add("is-ok"); stopBtn.disabled = true; return; }
-        msg.textContent = T.next || "";
-        newRound(now);
+      if (S.lock && now < S.lock) { say((T.lock || "").replace("{s}", String(Math.ceil((S.lock - now) / 1000)))); return; }
+      S.down = true; S.t0 = now; S.fill = 1100 + Math.random() * 900; S.win = 1500;
+      setPhase("hold", T.hold || "", T.holdHelp);
+      S.raf = requestAnimationFrame(frame);
+    }
+    function finish() {
+      if (!S.down || S.passed) return;
+      var now = performance.now(), el = now - S.t0;
+      cancelAnimationFrame(S.raf); S.down = false;
+      if (el >= S.fill && el < S.fill + S.win) {
+        S.passed = true; S.reaction = Math.round(el - S.fill);
+        ring(1); setPhase("ok", T.ok || "", ""); sr.textContent = T.ok || ""; box.classList.add("is-ok"); btn.disabled = false; btn.setAttribute("aria-disabled", "true");
       } else {
-        state.misses++; state.hits = 0; paintDots(); newRound(now);
-        msg.textContent = T.miss || "";
-        if (state.misses % 4 === 0) { state.lockUntil = now + 10000; stopBtn.disabled = true; }
+        S.fails++; ring(0);
+        if (S.fails % 4 === 0) S.lock = now + 6000;
+        setPhase("miss", T.start || "", el < S.fill ? T.early : T.late);
+        setTimeout(function () { if (S.phase === "miss") reset(T.help); }, 1800);
       }
     }
-    stopBtn.addEventListener("click", press);
-    canvas.addEventListener("pointerdown", function (e) { if (e.pointerType === "mouse" && e.button !== 0) return; press(); });
-    // it only moves while it is on screen, and starts when the visitor reaches the form
-    if ("IntersectionObserver" in window) new IntersectionObserver(function (en) { if (state.passed) return; if (en[0].isIntersecting) start(); else pause(); }, { threshold: 0.4 }).observe(box);
-    else start();
-    draw(performance.now());
+    // mouse / finger / pen
+    btn.addEventListener("pointerdown", function (e) {
+      if (e.pointerType === "mouse" && e.button !== 0) return;
+      try { btn.setPointerCapture(e.pointerId); } catch (x) { /* older browsers */ }
+      begin();
+    });
+    btn.addEventListener("pointerup", finish);
+    btn.addEventListener("pointercancel", function () { if (S.down) { cancelAnimationFrame(S.raf); S.down = false; reset(T.help); } });
+    btn.addEventListener("contextmenu", function (e) { e.preventDefault(); }); // a long press must not open the phone's context menu
+    // keyboard: hold Space or Enter
+    btn.addEventListener("keydown", function (e) { if ((e.key === " " || e.key === "Enter") && !e.repeat) { e.preventDefault(); begin(); } });
+    btn.addEventListener("keyup", function (e) { if (e.key === " " || e.key === "Enter") { e.preventDefault(); finish(); } });
+    btn.addEventListener("blur", function () { if (S.down) { cancelAnimationFrame(S.raf); S.down = false; reset(T.help); } });
+    btn.addEventListener("click", function (e) { e.preventDefault(); }); // a plain click does nothing: it has to be held
 
     return {
-      passed: function () { return state.passed; },
-      nudge: function () { box.classList.add("is-need"); setTimeout(function () { box.classList.remove("is-need"); }, 1600); try { box.scrollIntoView({ block: "center", behavior: "smooth" }); } catch (e) { /* ignore */ } stopBtn.focus({ preventScroll: true }); },
-      stats: function () { return { hits: state.hits, misses: state.misses, game_ms: state.ms || 0 }; }
+      passed: function () { return S.passed; },
+      nudge: function () { box.classList.add("is-need"); setTimeout(function () { box.classList.remove("is-need"); }, 1600); try { box.scrollIntoView({ block: "center", behavior: "smooth" }); } catch (e) { /* ignore */ } btn.focus({ preventScroll: true }); },
+      stats: function () { return { game_hits: S.passed ? 1 : 0, game_misses: S.fails, game_ms: S.reaction }; }
     };
   }
 
-  window.bkGuard = { mount: mount, work: work, sha256: sha256 };
+  window.bkGuard = { mount: mount, work: work, sha256: sha256, beacon: beacon };
 })();

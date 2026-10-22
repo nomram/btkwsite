@@ -525,16 +525,16 @@ function renderQuote(ctx) {
     `<input id="q-${id}" name="${id}" type="${type}" autocomplete="${auto}"${req ? " required" : ""}></p>`;
   const langLabel = (ctx.site.languages && ctx.site.languages[ctx.lang] && ctx.site.languages[ctx.lang].label) || ctx.lang;
   const guard = {
-    title: u.guard_title || "Är du människa? Två snabba.", help: u.guard_help || "Tryck på Stopp när borren är rakt över det orangea hålet. Två gånger i rad.", stop: u.guard_stop || "Stopp",
-    ok: u.guard_ok || "Verifierad", next: u.guard_next || "Bra! En gång till.", miss: u.guard_miss || "Nästan! Börja om, borren är snabb.", lock: u.guard_lock || "För många missar. Vänta {s} s.",
-    need: u.guard_need || "Gör den lilla kontrollen först (Stopp när borren är över hålet).", alt: u.guard_alt || "Går det inte att göra kontrollen? Skriv till oss på",
-    canvas: u.guard_canvas || "Spel: en borr rör sig fram och tillbaka över ett orange hål", checking: u.guard_checking || "Kontrollerar…", mail: c.email || ""
+    start: u.guard_start || "Håll nere för att verifiera", help: u.guard_help || "Håll nere knappen tills cirkeln blir grön, släpp sedan.", hold: u.guard_hold || "Håll…",
+    holdHelp: u.guard_hold_help || "Fortsätt hålla, snart blir den grön.", go: u.guard_go || "Släpp nu", early: u.guard_early || "Du släppte för tidigt. Försök igen.",
+    late: u.guard_late || "För sent. Försök igen, släpp när den är grön.", ok: u.guard_ok || "Verifierad", lock: u.guard_lock || "Vila en stund. Försök igen om {s} s.",
+    need: u.guard_need || "En sak kvar: håll nere knappen ovan tills den blir grön och släpp.", alt: u.guard_alt || "Funkar det inte för dig? Skriv till oss på", checking: u.guard_checking || "Kontrollerar…", mail: c.email || ""
   };
   const extra = Object.entries(q.extra || {}).map(([k, v]) => `<input type="hidden" name="${esc(k)}" value="${esc(v)}">`).join("");
   return `<section class="quote" id="offert" data-quote data-endpoint="${esc(q.endpoint || "")}" data-key="${esc(q.apiKey || "")}" data-mailto="${esc(c.email || "")}" data-lang-label="${esc(langLabel)}" data-hole-short="${T("quote_hole_short", "håldiameter")}" data-guard="${esc(JSON.stringify(guard))}" ` +
     `data-subject="${T("quote_subject", "Offertförfrågan")}" data-about="${T("quote_about", "Gäller:")}" data-sending="${T("quote_sending", "Skickar…")}" data-ok="${T("quote_ok", "Tack! Vi återkommer så snart vi kan.")}" ` +
     `data-err="${T("quote_err", "Det gick inte att skicka. Ring oss eller skriv till oss direkt.")}" data-mail="${T("quote_mail", "Ditt e-postprogram öppnas med meddelandet ifyllt, tryck på Skicka där.")}">` +
-    `<h2>${T("quote_title", "Begär offert")}</h2><p class="muted">${T("quote_intro", "Berätta kort vad du behöver, så återkommer vi.")}</p>` +
+    `<h2>${T("quote_title", "Få offert")}</h2><p class="muted">${T("quote_intro", "Berätta kort vad du behöver, så återkommer vi.")}</p>` +
     `<form class="qf" method="post" action="${esc(q.endpoint || "#")}" novalidate>` +
     `<div class="qf__grid">${f("name", T("quote_name", "Namn"), "text", "name", true)}${f("company", T("quote_company", "Företag"), "text", "organization")}` +
     `${f("email", T("quote_email", "E-post"), "email", "email", true)}${f("phone", T("quote_phone", "Telefon"), "tel", "tel")}</div>` +
@@ -1011,9 +1011,10 @@ function productQuoteCta(ctx, page, t, name) {
   const u = ctx.ui;
   if (page.template === "product" && t.title && t.title !== name && t.title.length <= 12) name = `${t.title}, ${name}`; // short model code + name, e.g. "ST-5, Silon"
   const href = localizeHref(ctx, "/kontakta-oss") + "?produkt=" + encodeURIComponent(name) + "#offert";
-  const title = String(u.quote_cta_title || "Vill du ha offert på {name}?").replace("{name}", name);
-  return `<section class="cta"><div class="container cta__inner"><div class="cta__text"><h2>${esc(title)}</h2><p>${esc(u.quote_cta_text || "Berätta kort vad du behöver, så återkommer vi med pris och leveranstid.")}</p></div>` +
-    `<a class="btn btn--light" href="${esc(href)}">${esc(u.quote_title || "Begär offert")}${ICON.arrow}</a></div></section>`;
+  // the product name gets a slow orange underline when the band scrolls into view (site.js adds .is-seen): a quiet nudge, not an alarm
+  const titleHtml = String(u.quote_cta_title || "Få offert på {name}").split("{name}").map(esc).join(`<span class="cta__name">${esc(name)}</span>`);
+  return `<section class="cta"><div class="container cta__inner"><div class="cta__text"><h2>${titleHtml}</h2><p>${esc(u.quote_cta_text || "Berätta kort vad du behöver, så återkommer vi med pris och leveranstid.")}</p></div>` +
+    `<a class="btn btn--light" href="${esc(href)}">${esc(u.quote_title || "Få offert")}${ICON.arrow}</a></div></section>`;
 }
 
 export function renderMain(ctx, page, t) {

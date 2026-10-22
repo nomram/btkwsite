@@ -39,11 +39,13 @@
     if (document.readyState === "complete") mountGuard(); else window.addEventListener("load", mountGuard);
     function proof(email) {
       if (!window.bkGuard || !guard) return Promise.resolve({});
-      var ts = Math.floor(Date.now() / 1000);
-      return window.bkGuard.work(email + "|" + ts).then(function (n) {
+      return window.bkGuard.work(email).then(function (pw) {
         var wait = Math.max(0, MIN_FILL - (Date.now() - (touched || Date.now())));
         return new Promise(function (res) {
-          setTimeout(function () { var s = guard.stats(); res({ pow_ts: ts, pow_nonce: n, fill_ms: Date.now() - (touched || Date.now()), game_hits: s.hits, game_misses: s.misses, game_ms: s.game_ms }); }, wait);
+          setTimeout(function () {
+            var s = guard.stats();
+            res({ pow_round: pw.pow_round, pow_ts: pw.pow_ts, pow_nonce: pw.pow_nonce, fill_ms: Date.now() - (touched || Date.now()), game_hits: s.game_hits, game_misses: s.game_misses, game_ms: s.game_ms });
+          }, wait);
         });
       });
     }
@@ -545,6 +547,13 @@
       }, { threshold: 0.7 });
       io.observe(stage);
     }
+  });
+
+  // ---------- quote band: the underline under the product name starts when the band is mostly in view ----------
+  [].forEach.call(document.querySelectorAll(".cta"), function (band) {
+    if (!band.querySelector(".cta__name") || !("IntersectionObserver" in window)) { band.classList.add("is-seen"); return; }
+    var io = new IntersectionObserver(function (en) { if (en[0].isIntersecting) { io.disconnect(); setTimeout(function () { band.classList.add("is-seen"); }, 350); } }, { threshold: 0.6 });
+    io.observe(band);
   });
 
   // ---------- start page: the little arrow under the banner scrolls to the content and fades out once the page moves ----------
