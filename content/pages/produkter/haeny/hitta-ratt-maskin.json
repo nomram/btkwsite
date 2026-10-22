@@ -8,7 +8,7 @@
     "sv": {
       "title": "Hitta rätt maskin",
       "h1": "Hitta rätt maskin",
-      "description": "Välj produkttyp och modell från Häny (blandare, omrörare, injekteringspumpar, kompakta och automatiska injekteringsanläggningar) och gå direkt till rätt broschyr.",
+      "description": "Häny har ett komplett sortiment för blandning och injektering. Börja med att välja: enskilda delar (blandare, omrörare, pumpar) eller kompletta enheter där allt sitter ihop. Varje sida visar översikt,",
       "blocks": [
         {
           "type": "image",
@@ -20,255 +20,116 @@
         },
         {
           "type": "text",
-          "html": "Häny har ett komplett sortiment för blandning och injektering. Välj produkttyp nedan, så ser du modellerna och kommer direkt till rätt broschyr. Osäker på vilken maskin som passar ditt jobb? <a href=\"/kontakta-oss\">Kontakta oss</a>, så hjälper vi dig välja."
+          "html": "Häny har ett komplett sortiment för blandning och injektering. Börja med att välja: enskilda delar (blandare, omrörare, pumpar) eller kompletta enheter där allt sitter ihop. Varje sida visar översikt, modeller, teknisk data, diagram och broschyrer. Osäker? <a href=\"/kontakta-oss\">Kontakta oss</a>, så hjälper vi dig välja."
         },
         {
-          "type": "finder",
-          "title": "Välj produkttyp",
-          "intro": "",
-          "groups": [
+          "type": "heading",
+          "level": 2,
+          "text": "Delar"
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 4,
+          "more": false,
+          "items": [
             {
               "title": "Blandare (HCM)",
-              "text": "Högskjuvande kolloidblandare för cement, ultrafint cement, bentonit och andra tillsatser. Utmärkt blandningskvalitet, hög kapacitet och lågt slitage.",
               "image": "/assets/img/haeny-finder-hcm.webp",
-              "items": [
-                {
-                  "label": "HCM100",
-                  "href": "/assets/docs/haeny-hcm100-brochure-en.pdf"
-                },
-                {
-                  "label": "HCM300",
-                  "href": "/assets/docs/haeny-hcm300-brochure-en.pdf"
-                },
-                {
-                  "label": "HCM600",
-                  "href": "/assets/docs/haeny-hcm600-brochure-en.pdf"
-                },
-                {
-                  "label": "HCM800",
-                  "href": "/assets/docs/haeny-hcm800-brochure-en.pdf"
-                },
-                {
-                  "label": "HCM2500",
-                  "href": "/assets/docs/haeny-hcm2500-brochure-en.pdf"
-                }
-              ]
+              "alt": "Blandare (HCM)",
+              "href": "/produkter/haeny/hitta-ratt-maskin/blandare",
+              "width": 1000,
+              "height": 1000
             },
             {
               "title": "Omrörare (HRW)",
-              "text": "Används som mellanlager mellan blandaren och pumpen. I den långsamt roterande omröraren homogeniseras injekteringsmassan och eventuella luftbubblor avlägsnas.",
               "image": "/assets/img/haeny-finder-hrw.webp",
-              "items": [
-                {
-                  "label": "HRW150",
-                  "href": "/assets/docs/haeny-hrw150-brochure-en.pdf"
-                },
-                {
-                  "label": "HRW350",
-                  "href": "/assets/docs/haeny-hrw350-brochure-en.pdf"
-                },
-                {
-                  "label": "HRW800",
-                  "href": "/assets/docs/haeny-hrw800-brochure-en.pdf"
-                },
-                {
-                  "label": "HRW1200",
-                  "href": "/assets/docs/haeny-hrw1200-brochure-en.pdf"
-                },
-                {
-                  "label": "HRW2000",
-                  "href": "/assets/docs/haeny-hrw2000-brochure-en.pdf"
-                },
-                {
-                  "label": "HRW3000",
-                  "href": "/assets/docs/haeny-hrw3000-brochure-en.pdf"
-                }
-              ]
+              "alt": "Omrörare (HRW)",
+              "href": "/produkter/haeny/hitta-ratt-maskin/omrorare",
+              "width": 1000,
+              "height": 1000
             },
             {
               "title": "Injekteringspumpar (ZMP)",
-              "text": "Slitagesnåla kolvpumpar, enkel- eller dubbelverkande. Tryck upp till 200 bar, flöde upp till 13 m³/h och partikelstorlek upp till 8 mm. Automatiskt tryckkontrollsystem (APC).",
               "image": "/assets/img/haeny-finder-zmp.webp",
-              "items": [
-                {
-                  "label": "ZMP610",
-                  "href": "/assets/docs/haeny-zmp610-brochure-en.pdf"
-                },
-                {
-                  "label": "ZMP611",
-                  "href": "/assets/docs/haeny-zmp611-brochure-en.pdf"
-                },
-                {
-                  "label": "ZMP625",
-                  "href": "/assets/docs/haeny-zmp625-brochure-en.pdf"
-                },
-                {
-                  "label": "ZMP710",
-                  "href": "/assets/docs/haeny-zmp710-brochure-en.pdf"
-                },
-                {
-                  "label": "ZMP712",
-                  "href": "/assets/docs/haeny-zmp712-brochure-en.pdf"
-                },
-                {
-                  "label": "ZMP725",
-                  "href": "/assets/docs/haeny-zmp725-brochure-en.pdf"
-                },
-                {
-                  "label": "ZMP726",
-                  "href": "/assets/docs/haeny-zmp726-brochure-en.pdf"
-                }
-              ]
+              "alt": "Injekteringspumpar (ZMP)",
+              "href": "/produkter/haeny/hitta-ratt-maskin/injekteringspumpar",
+              "width": 1000,
+              "height": 1000
             },
             {
               "title": "Triplexpump (ZMP 936)",
-              "text": "Slitagesnål kolvpump av triplextyp med hög tillförlitlighet, lågt underhåll, pulsation under 1 % och kylvattenanslutning för kontinuerlig drift.",
               "image": "/assets/img/haeny-finder-zmp936.webp",
-              "items": [
-                {
-                  "label": "ZMP936 Triplex",
-                  "href": "/assets/docs/haeny-zmp936-brochure-en.pdf"
-                }
-              ]
-            },
-            {
-              "title": "Kompakta anläggningar (IC)",
-              "text": "INJECTO-COMPACT: blandare, omrörare och pump i en enhet. För all injektering med cement och ultrafint cement samt bentonit för mikrotunnling, rörpressning och styrd borrning.",
-              "image": "/assets/img/haeny-finder-ic.webp",
-              "items": [
-                {
-                  "label": "IC310",
-                  "href": "/assets/docs/haeny-ic310-brochure-en.pdf"
-                },
-                {
-                  "label": "IC311",
-                  "href": "/assets/docs/haeny-ic311-brochure-en.pdf"
-                },
-                {
-                  "label": "IC325",
-                  "href": "/assets/docs/haeny-ic325-brochure-en.pdf"
-                },
-                {
-                  "label": "IC650-710V",
-                  "href": "/assets/docs/haeny-ic650-710v-brochure-en.pdf"
-                },
-                {
-                  "label": "IC650-712V",
-                  "href": "/assets/docs/haeny-ic650-712v-brochure-en.pdf"
-                },
-                {
-                  "label": "IC650-725V",
-                  "href": "/assets/docs/haeny-ic650-725v-brochure-en.pdf"
-                },
-                {
-                  "label": "IC1100-710V",
-                  "href": "/assets/docs/haeny-ic1100-710v-brochure-en.pdf"
-                },
-                {
-                  "label": "IC1100-712V",
-                  "href": "/assets/docs/haeny-ic1100-712v-brochure-en.pdf"
-                },
-                {
-                  "label": "IC1100-725V",
-                  "href": "/assets/docs/haeny-ic1100-725v-brochure-en.pdf"
-                },
-                {
-                  "label": "IC1400-710V",
-                  "href": "/assets/docs/haeny-ic1400-710v-brochure-en.pdf"
-                },
-                {
-                  "label": "IC1400-712V",
-                  "href": "/assets/docs/haeny-ic1400-712v-brochure-en.pdf"
-                },
-                {
-                  "label": "IC1400-725V",
-                  "href": "/assets/docs/haeny-ic1400-725v-brochure-en.pdf"
-                },
-                {
-                  "label": "IC1400-726V",
-                  "href": "/assets/docs/haeny-ic1400-726v-brochure-en.pdf"
-                }
-              ]
-            },
-            {
-              "title": "Kompakta PU-anläggningar (CCP)",
-              "text": "Optimerad för trånga arbetsytor och för integration på TBM, SBM och andra system. Hanterar cementslurry, 2K-polyuretan och kombinationen cement + PU.",
-              "image": "/assets/img/haeny-finder-ccp.webp",
-              "items": [
-                {
-                  "label": "IC325 CCP",
-                  "href": "/assets/docs/haeny-ccp-brochure-en.pdf"
-                },
-                {
-                  "label": "CCP, tekniskt blad (DE/EN)",
-                  "href": "/assets/docs/haeny-ccp-spez-brochure-en.pdf"
-                }
-              ]
-            },
-            {
-              "title": "Automatiska anläggningar (FAIC)",
-              "text": "Automatiserade anläggningar för cement, bentonit, mikrofina bindemedel och bruk, med noggrann dosering, förbrukningsregistrering, tryck- och flödesregistrering samt radiostyrning.",
-              "image": "/assets/img/haeny-finder-faic.webp",
-              "items": [
-                {
-                  "label": "FAIC 650-710",
-                  "href": "/assets/docs/haeny-faic650-710-brochure-en.pdf"
-                },
-                {
-                  "label": "FAIC 650-712",
-                  "href": "/assets/docs/haeny-faic650-712-brochure-en.pdf"
-                },
-                {
-                  "label": "FAIC 650-725",
-                  "href": "/assets/docs/haeny-faic650-725-brochure-en.pdf"
-                },
-                {
-                  "label": "FAIC 1100-725",
-                  "href": "/assets/docs/haeny-faic1100-725-brochure-en.pdf"
-                },
-                {
-                  "label": "FAIC 1400-725",
-                  "href": "/assets/docs/haeny-faic1400-725-brochure-en.pdf"
-                }
-              ]
-            },
-            {
-              "title": "Mobila anläggningar (MCM)",
-              "text": "Mobila anläggningar för bentonit, flygaska, cement, filler, lera och liknande suspensioner till slitsmurar, jet grouting och alla typer av injektering. Broschyr på begäran.",
-              "image": "/assets/img/haeny-finder-mcm.webp",
-              "items": []
-            },
-            {
-              "title": "Huvudbroschyrer",
-              "text": "Hela sortimentet i en broschyr.",
-              "image": "/assets/img/haeny-1.webp",
-              "items": [
-                {
-                  "label": "Produktportfölj",
-                  "href": "/assets/docs/haeny-portfolio-brochure-en.pdf"
-                },
-                {
-                  "label": "Komplett broschyr: blandning och injektering",
-                  "href": "/assets/docs/haeny-gesamt-mit-brochure-en.pdf"
-                },
-                {
-                  "label": "Översikt (äldre version)",
-                  "href": "/assets/docs/haeny-ladda-ner-huvudbroschyr.pdf"
-                }
-              ]
+              "alt": "Triplexpump (ZMP 936)",
+              "href": "/produkter/haeny/hitta-ratt-maskin/triplexpump",
+              "width": 1000,
+              "height": 1000
             }
           ]
         },
         {
-          "type": "text",
-          "html": "Saknar du en broschyr eller en modell? <a href=\"/kontakta-oss\">Kontakta oss</a>."
+          "type": "heading",
+          "level": 2,
+          "text": "Kompletta enheter"
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 4,
+          "more": false,
+          "items": [
+            {
+              "title": "Kompakta anläggningar (IC)",
+              "image": "/assets/img/haeny-manuella-pumpar-ic-310-ic-311.webp",
+              "alt": "Kompakta anläggningar (IC)",
+              "href": "/produkter/haeny/hitta-ratt-maskin/kompakta-anlaggningar",
+              "width": 1083,
+              "height": 1169
+            },
+            {
+              "title": "Kompakta PU-anläggningar (IC 325 CCP)",
+              "image": "/assets/img/haeny-finder-ccp.webp",
+              "alt": "Kompakta PU-anläggningar (IC 325 CCP)",
+              "href": "/produkter/haeny/manuella-pumpar/ic-325-ic325-ccp#ic325-ccp",
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "Automatiska anläggningar (FAIC)",
+              "image": "/assets/img/haeny-finder-faic.webp",
+              "alt": "Automatiska anläggningar (FAIC)",
+              "href": "/produkter/haeny/hitta-ratt-maskin/automatiska-anlaggningar",
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "Mobila anläggningar (MCM)",
+              "image": "/assets/img/haeny-finder-mcm.webp",
+              "alt": "Mobila anläggningar (MCM)",
+              "href": "/produkter/haeny/hitta-ratt-maskin/mobila-anlaggningar",
+              "width": 1000,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Huvudbroschyr (produktportfölj)",
+          "href": "/assets/docs/haeny-portfolio-brochure-en.pdf"
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Komplett broschyr: blandning och injektering",
+          "href": "/assets/docs/haeny-gesamt-mit-brochure-en.pdf"
         }
       ]
     },
     "en": {
-      "title": "Hitta rätt maskin",
-      "h1": "Hitta rätt maskin",
-      "description": "Välj produkttyp och modell från Häny (blandare, omrörare, injekteringspumpar, kompakta och automatiska injekteringsanläggningar) och gå direkt till rätt broschyr.",
+      "title": "Find the right machine",
+      "h1": "Find the right machine",
+      "description": "Häny has a complete range for mixing and injection. Start by choosing: individual parts (mixers, agitators, pumps) or complete units where everything is combined. Every page shows an overview, the mod",
       "blocks": [
         {
           "type": "image",
@@ -280,255 +141,116 @@
         },
         {
           "type": "text",
-          "html": "Häny har ett komplett sortiment för blandning och injektering. Välj produkttyp nedan, så ser du modellerna och kommer direkt till rätt broschyr. Osäker på vilken maskin som passar ditt jobb? <a href=\"/kontakta-oss\">Kontakta oss</a>, så hjälper vi dig välja."
+          "html": "Häny has a complete range for mixing and injection. Start by choosing: individual parts (mixers, agitators, pumps) or complete units where everything is combined. Every page shows an overview, the models, technical data, diagrams and brochures. Not sure? <a href=\"/kontakta-oss\">Contact us</a> and we will help you choose."
         },
         {
-          "type": "finder",
-          "title": "Välj produkttyp",
-          "intro": "",
-          "groups": [
+          "type": "heading",
+          "level": 2,
+          "text": "Parts"
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 4,
+          "more": false,
+          "items": [
             {
-              "title": "Blandare (HCM)",
-              "text": "Högskjuvande kolloidblandare för cement, ultrafint cement, bentonit och andra tillsatser. Utmärkt blandningskvalitet, hög kapacitet och lågt slitage.",
+              "title": "Mixers (HCM)",
               "image": "/assets/img/haeny-finder-hcm.webp",
-              "items": [
-                {
-                  "label": "HCM100",
-                  "href": "/assets/docs/haeny-hcm100-brochure-en.pdf"
-                },
-                {
-                  "label": "HCM300",
-                  "href": "/assets/docs/haeny-hcm300-brochure-en.pdf"
-                },
-                {
-                  "label": "HCM600",
-                  "href": "/assets/docs/haeny-hcm600-brochure-en.pdf"
-                },
-                {
-                  "label": "HCM800",
-                  "href": "/assets/docs/haeny-hcm800-brochure-en.pdf"
-                },
-                {
-                  "label": "HCM2500",
-                  "href": "/assets/docs/haeny-hcm2500-brochure-en.pdf"
-                }
-              ]
+              "alt": "Mixers (HCM)",
+              "href": "/produkter/haeny/hitta-ratt-maskin/blandare",
+              "width": 1000,
+              "height": 1000
             },
             {
-              "title": "Omrörare (HRW)",
-              "text": "Används som mellanlager mellan blandaren och pumpen. I den långsamt roterande omröraren homogeniseras injekteringsmassan och eventuella luftbubblor avlägsnas.",
+              "title": "Agitators (HRW)",
               "image": "/assets/img/haeny-finder-hrw.webp",
-              "items": [
-                {
-                  "label": "HRW150",
-                  "href": "/assets/docs/haeny-hrw150-brochure-en.pdf"
-                },
-                {
-                  "label": "HRW350",
-                  "href": "/assets/docs/haeny-hrw350-brochure-en.pdf"
-                },
-                {
-                  "label": "HRW800",
-                  "href": "/assets/docs/haeny-hrw800-brochure-en.pdf"
-                },
-                {
-                  "label": "HRW1200",
-                  "href": "/assets/docs/haeny-hrw1200-brochure-en.pdf"
-                },
-                {
-                  "label": "HRW2000",
-                  "href": "/assets/docs/haeny-hrw2000-brochure-en.pdf"
-                },
-                {
-                  "label": "HRW3000",
-                  "href": "/assets/docs/haeny-hrw3000-brochure-en.pdf"
-                }
-              ]
+              "alt": "Agitators (HRW)",
+              "href": "/produkter/haeny/hitta-ratt-maskin/omrorare",
+              "width": 1000,
+              "height": 1000
             },
             {
-              "title": "Injekteringspumpar (ZMP)",
-              "text": "Slitagesnåla kolvpumpar, enkel- eller dubbelverkande. Tryck upp till 200 bar, flöde upp till 13 m³/h och partikelstorlek upp till 8 mm. Automatiskt tryckkontrollsystem (APC).",
+              "title": "Grout pumps (ZMP)",
               "image": "/assets/img/haeny-finder-zmp.webp",
-              "items": [
-                {
-                  "label": "ZMP610",
-                  "href": "/assets/docs/haeny-zmp610-brochure-en.pdf"
-                },
-                {
-                  "label": "ZMP611",
-                  "href": "/assets/docs/haeny-zmp611-brochure-en.pdf"
-                },
-                {
-                  "label": "ZMP625",
-                  "href": "/assets/docs/haeny-zmp625-brochure-en.pdf"
-                },
-                {
-                  "label": "ZMP710",
-                  "href": "/assets/docs/haeny-zmp710-brochure-en.pdf"
-                },
-                {
-                  "label": "ZMP712",
-                  "href": "/assets/docs/haeny-zmp712-brochure-en.pdf"
-                },
-                {
-                  "label": "ZMP725",
-                  "href": "/assets/docs/haeny-zmp725-brochure-en.pdf"
-                },
-                {
-                  "label": "ZMP726",
-                  "href": "/assets/docs/haeny-zmp726-brochure-en.pdf"
-                }
-              ]
+              "alt": "Grout pumps (ZMP)",
+              "href": "/produkter/haeny/hitta-ratt-maskin/injekteringspumpar",
+              "width": 1000,
+              "height": 1000
             },
             {
-              "title": "Triplexpump (ZMP 936)",
-              "text": "Slitagesnål kolvpump av triplextyp med hög tillförlitlighet, lågt underhåll, pulsation under 1 % och kylvattenanslutning för kontinuerlig drift.",
+              "title": "Triplex grout pump (ZMP 936)",
               "image": "/assets/img/haeny-finder-zmp936.webp",
-              "items": [
-                {
-                  "label": "ZMP936 Triplex",
-                  "href": "/assets/docs/haeny-zmp936-brochure-en.pdf"
-                }
-              ]
-            },
-            {
-              "title": "Kompakta anläggningar (IC)",
-              "text": "INJECTO-COMPACT: blandare, omrörare och pump i en enhet. För all injektering med cement och ultrafint cement samt bentonit för mikrotunnling, rörpressning och styrd borrning.",
-              "image": "/assets/img/haeny-finder-ic.webp",
-              "items": [
-                {
-                  "label": "IC310",
-                  "href": "/assets/docs/haeny-ic310-brochure-en.pdf"
-                },
-                {
-                  "label": "IC311",
-                  "href": "/assets/docs/haeny-ic311-brochure-en.pdf"
-                },
-                {
-                  "label": "IC325",
-                  "href": "/assets/docs/haeny-ic325-brochure-en.pdf"
-                },
-                {
-                  "label": "IC650-710V",
-                  "href": "/assets/docs/haeny-ic650-710v-brochure-en.pdf"
-                },
-                {
-                  "label": "IC650-712V",
-                  "href": "/assets/docs/haeny-ic650-712v-brochure-en.pdf"
-                },
-                {
-                  "label": "IC650-725V",
-                  "href": "/assets/docs/haeny-ic650-725v-brochure-en.pdf"
-                },
-                {
-                  "label": "IC1100-710V",
-                  "href": "/assets/docs/haeny-ic1100-710v-brochure-en.pdf"
-                },
-                {
-                  "label": "IC1100-712V",
-                  "href": "/assets/docs/haeny-ic1100-712v-brochure-en.pdf"
-                },
-                {
-                  "label": "IC1100-725V",
-                  "href": "/assets/docs/haeny-ic1100-725v-brochure-en.pdf"
-                },
-                {
-                  "label": "IC1400-710V",
-                  "href": "/assets/docs/haeny-ic1400-710v-brochure-en.pdf"
-                },
-                {
-                  "label": "IC1400-712V",
-                  "href": "/assets/docs/haeny-ic1400-712v-brochure-en.pdf"
-                },
-                {
-                  "label": "IC1400-725V",
-                  "href": "/assets/docs/haeny-ic1400-725v-brochure-en.pdf"
-                },
-                {
-                  "label": "IC1400-726V",
-                  "href": "/assets/docs/haeny-ic1400-726v-brochure-en.pdf"
-                }
-              ]
-            },
-            {
-              "title": "Kompakta PU-anläggningar (CCP)",
-              "text": "Optimerad för trånga arbetsytor och för integration på TBM, SBM och andra system. Hanterar cementslurry, 2K-polyuretan och kombinationen cement + PU.",
-              "image": "/assets/img/haeny-finder-ccp.webp",
-              "items": [
-                {
-                  "label": "IC325 CCP",
-                  "href": "/assets/docs/haeny-ccp-brochure-en.pdf"
-                },
-                {
-                  "label": "CCP, tekniskt blad (DE/EN)",
-                  "href": "/assets/docs/haeny-ccp-spez-brochure-en.pdf"
-                }
-              ]
-            },
-            {
-              "title": "Automatiska anläggningar (FAIC)",
-              "text": "Automatiserade anläggningar för cement, bentonit, mikrofina bindemedel och bruk, med noggrann dosering, förbrukningsregistrering, tryck- och flödesregistrering samt radiostyrning.",
-              "image": "/assets/img/haeny-finder-faic.webp",
-              "items": [
-                {
-                  "label": "FAIC 650-710",
-                  "href": "/assets/docs/haeny-faic650-710-brochure-en.pdf"
-                },
-                {
-                  "label": "FAIC 650-712",
-                  "href": "/assets/docs/haeny-faic650-712-brochure-en.pdf"
-                },
-                {
-                  "label": "FAIC 650-725",
-                  "href": "/assets/docs/haeny-faic650-725-brochure-en.pdf"
-                },
-                {
-                  "label": "FAIC 1100-725",
-                  "href": "/assets/docs/haeny-faic1100-725-brochure-en.pdf"
-                },
-                {
-                  "label": "FAIC 1400-725",
-                  "href": "/assets/docs/haeny-faic1400-725-brochure-en.pdf"
-                }
-              ]
-            },
-            {
-              "title": "Mobila anläggningar (MCM)",
-              "text": "Mobila anläggningar för bentonit, flygaska, cement, filler, lera och liknande suspensioner till slitsmurar, jet grouting och alla typer av injektering. Broschyr på begäran.",
-              "image": "/assets/img/haeny-finder-mcm.webp",
-              "items": []
-            },
-            {
-              "title": "Huvudbroschyrer",
-              "text": "Hela sortimentet i en broschyr.",
-              "image": "/assets/img/haeny-1.webp",
-              "items": [
-                {
-                  "label": "Produktportfölj",
-                  "href": "/assets/docs/haeny-portfolio-brochure-en.pdf"
-                },
-                {
-                  "label": "Komplett broschyr: blandning och injektering",
-                  "href": "/assets/docs/haeny-gesamt-mit-brochure-en.pdf"
-                },
-                {
-                  "label": "Översikt (äldre version)",
-                  "href": "/assets/docs/haeny-ladda-ner-huvudbroschyr.pdf"
-                }
-              ]
+              "alt": "Triplex grout pump (ZMP 936)",
+              "href": "/produkter/haeny/hitta-ratt-maskin/triplexpump",
+              "width": 1000,
+              "height": 1000
             }
           ]
         },
         {
-          "type": "text",
-          "html": "Saknar du en broschyr eller en modell? <a href=\"/kontakta-oss\">Kontakta oss</a>."
+          "type": "heading",
+          "level": 2,
+          "text": "Complete units"
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 4,
+          "more": false,
+          "items": [
+            {
+              "title": "Compact grout plants (IC)",
+              "image": "/assets/img/haeny-manuella-pumpar-ic-310-ic-311.webp",
+              "alt": "Compact grout plants (IC)",
+              "href": "/produkter/haeny/hitta-ratt-maskin/kompakta-anlaggningar",
+              "width": 1083,
+              "height": 1169
+            },
+            {
+              "title": "Compact PU plants (IC 325 CCP)",
+              "image": "/assets/img/haeny-finder-ccp.webp",
+              "alt": "Compact PU plants (IC 325 CCP)",
+              "href": "/produkter/haeny/manuella-pumpar/ic-325-ic325-ccp#ic325-ccp",
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "Automated grout plants (FAIC)",
+              "image": "/assets/img/haeny-finder-faic.webp",
+              "alt": "Automated grout plants (FAIC)",
+              "href": "/produkter/haeny/hitta-ratt-maskin/automatiska-anlaggningar",
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "Portable mixing plants (MCM)",
+              "image": "/assets/img/haeny-finder-mcm.webp",
+              "alt": "Portable mixing plants (MCM)",
+              "href": "/produkter/haeny/hitta-ratt-maskin/mobila-anlaggningar",
+              "width": 1000,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Main brochure (product portfolio)",
+          "href": "/assets/docs/haeny-portfolio-brochure-en.pdf"
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Complete brochure: mixing and injection",
+          "href": "/assets/docs/haeny-gesamt-mit-brochure-en.pdf"
         }
       ]
     },
     "es": {
-      "title": "Hitta rätt maskin",
-      "h1": "Hitta rätt maskin",
-      "description": "Välj produkttyp och modell från Häny (blandare, omrörare, injekteringspumpar, kompakta och automatiska injekteringsanläggningar) och gå direkt till rätt broschyr.",
+      "title": "Encuentre la máquina adecuada",
+      "h1": "Encuentre la máquina adecuada",
+      "description": "Häny ofrece una gama completa para mezcla e inyección. Empiece eligiendo: componentes individuales (mezcladoras, agitadores, bombas) o equipos completos. Cada página muestra un resumen, los modelos, d",
       "blocks": [
         {
           "type": "image",
@@ -540,255 +262,116 @@
         },
         {
           "type": "text",
-          "html": "Häny har ett komplett sortiment för blandning och injektering. Välj produkttyp nedan, så ser du modellerna och kommer direkt till rätt broschyr. Osäker på vilken maskin som passar ditt jobb? <a href=\"/kontakta-oss\">Kontakta oss</a>, så hjälper vi dig välja."
+          "html": "Häny ofrece una gama completa para mezcla e inyección. Empiece eligiendo: componentes individuales (mezcladoras, agitadores, bombas) o equipos completos. Cada página muestra un resumen, los modelos, datos técnicos, diagramas y folletos. ¿Duda? <a href=\"/kontakta-oss\">Contáctenos</a> y le ayudamos a elegir."
         },
         {
-          "type": "finder",
-          "title": "Välj produkttyp",
-          "intro": "",
-          "groups": [
+          "type": "heading",
+          "level": 2,
+          "text": "Componentes"
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 4,
+          "more": false,
+          "items": [
             {
-              "title": "Blandare (HCM)",
-              "text": "Högskjuvande kolloidblandare för cement, ultrafint cement, bentonit och andra tillsatser. Utmärkt blandningskvalitet, hög kapacitet och lågt slitage.",
+              "title": "Mezcladores (HCM)",
               "image": "/assets/img/haeny-finder-hcm.webp",
-              "items": [
-                {
-                  "label": "HCM100",
-                  "href": "/assets/docs/haeny-hcm100-brochure-en.pdf"
-                },
-                {
-                  "label": "HCM300",
-                  "href": "/assets/docs/haeny-hcm300-brochure-en.pdf"
-                },
-                {
-                  "label": "HCM600",
-                  "href": "/assets/docs/haeny-hcm600-brochure-en.pdf"
-                },
-                {
-                  "label": "HCM800",
-                  "href": "/assets/docs/haeny-hcm800-brochure-en.pdf"
-                },
-                {
-                  "label": "HCM2500",
-                  "href": "/assets/docs/haeny-hcm2500-brochure-en.pdf"
-                }
-              ]
+              "alt": "Mezcladores (HCM)",
+              "href": "/produkter/haeny/hitta-ratt-maskin/blandare",
+              "width": 1000,
+              "height": 1000
             },
             {
-              "title": "Omrörare (HRW)",
-              "text": "Används som mellanlager mellan blandaren och pumpen. I den långsamt roterande omröraren homogeniseras injekteringsmassan och eventuella luftbubblor avlägsnas.",
+              "title": "Agitadores (HRW)",
               "image": "/assets/img/haeny-finder-hrw.webp",
-              "items": [
-                {
-                  "label": "HRW150",
-                  "href": "/assets/docs/haeny-hrw150-brochure-en.pdf"
-                },
-                {
-                  "label": "HRW350",
-                  "href": "/assets/docs/haeny-hrw350-brochure-en.pdf"
-                },
-                {
-                  "label": "HRW800",
-                  "href": "/assets/docs/haeny-hrw800-brochure-en.pdf"
-                },
-                {
-                  "label": "HRW1200",
-                  "href": "/assets/docs/haeny-hrw1200-brochure-en.pdf"
-                },
-                {
-                  "label": "HRW2000",
-                  "href": "/assets/docs/haeny-hrw2000-brochure-en.pdf"
-                },
-                {
-                  "label": "HRW3000",
-                  "href": "/assets/docs/haeny-hrw3000-brochure-en.pdf"
-                }
-              ]
+              "alt": "Agitadores (HRW)",
+              "href": "/produkter/haeny/hitta-ratt-maskin/omrorare",
+              "width": 1000,
+              "height": 1000
             },
             {
-              "title": "Injekteringspumpar (ZMP)",
-              "text": "Slitagesnåla kolvpumpar, enkel- eller dubbelverkande. Tryck upp till 200 bar, flöde upp till 13 m³/h och partikelstorlek upp till 8 mm. Automatiskt tryckkontrollsystem (APC).",
+              "title": "Bombas de inyección (ZMP)",
               "image": "/assets/img/haeny-finder-zmp.webp",
-              "items": [
-                {
-                  "label": "ZMP610",
-                  "href": "/assets/docs/haeny-zmp610-brochure-en.pdf"
-                },
-                {
-                  "label": "ZMP611",
-                  "href": "/assets/docs/haeny-zmp611-brochure-en.pdf"
-                },
-                {
-                  "label": "ZMP625",
-                  "href": "/assets/docs/haeny-zmp625-brochure-en.pdf"
-                },
-                {
-                  "label": "ZMP710",
-                  "href": "/assets/docs/haeny-zmp710-brochure-en.pdf"
-                },
-                {
-                  "label": "ZMP712",
-                  "href": "/assets/docs/haeny-zmp712-brochure-en.pdf"
-                },
-                {
-                  "label": "ZMP725",
-                  "href": "/assets/docs/haeny-zmp725-brochure-en.pdf"
-                },
-                {
-                  "label": "ZMP726",
-                  "href": "/assets/docs/haeny-zmp726-brochure-en.pdf"
-                }
-              ]
+              "alt": "Bombas de inyección (ZMP)",
+              "href": "/produkter/haeny/hitta-ratt-maskin/injekteringspumpar",
+              "width": 1000,
+              "height": 1000
             },
             {
-              "title": "Triplexpump (ZMP 936)",
-              "text": "Slitagesnål kolvpump av triplextyp med hög tillförlitlighet, lågt underhåll, pulsation under 1 % och kylvattenanslutning för kontinuerlig drift.",
+              "title": "Bomba de inyección triplex (ZMP 936)",
               "image": "/assets/img/haeny-finder-zmp936.webp",
-              "items": [
-                {
-                  "label": "ZMP936 Triplex",
-                  "href": "/assets/docs/haeny-zmp936-brochure-en.pdf"
-                }
-              ]
-            },
-            {
-              "title": "Kompakta anläggningar (IC)",
-              "text": "INJECTO-COMPACT: blandare, omrörare och pump i en enhet. För all injektering med cement och ultrafint cement samt bentonit för mikrotunnling, rörpressning och styrd borrning.",
-              "image": "/assets/img/haeny-finder-ic.webp",
-              "items": [
-                {
-                  "label": "IC310",
-                  "href": "/assets/docs/haeny-ic310-brochure-en.pdf"
-                },
-                {
-                  "label": "IC311",
-                  "href": "/assets/docs/haeny-ic311-brochure-en.pdf"
-                },
-                {
-                  "label": "IC325",
-                  "href": "/assets/docs/haeny-ic325-brochure-en.pdf"
-                },
-                {
-                  "label": "IC650-710V",
-                  "href": "/assets/docs/haeny-ic650-710v-brochure-en.pdf"
-                },
-                {
-                  "label": "IC650-712V",
-                  "href": "/assets/docs/haeny-ic650-712v-brochure-en.pdf"
-                },
-                {
-                  "label": "IC650-725V",
-                  "href": "/assets/docs/haeny-ic650-725v-brochure-en.pdf"
-                },
-                {
-                  "label": "IC1100-710V",
-                  "href": "/assets/docs/haeny-ic1100-710v-brochure-en.pdf"
-                },
-                {
-                  "label": "IC1100-712V",
-                  "href": "/assets/docs/haeny-ic1100-712v-brochure-en.pdf"
-                },
-                {
-                  "label": "IC1100-725V",
-                  "href": "/assets/docs/haeny-ic1100-725v-brochure-en.pdf"
-                },
-                {
-                  "label": "IC1400-710V",
-                  "href": "/assets/docs/haeny-ic1400-710v-brochure-en.pdf"
-                },
-                {
-                  "label": "IC1400-712V",
-                  "href": "/assets/docs/haeny-ic1400-712v-brochure-en.pdf"
-                },
-                {
-                  "label": "IC1400-725V",
-                  "href": "/assets/docs/haeny-ic1400-725v-brochure-en.pdf"
-                },
-                {
-                  "label": "IC1400-726V",
-                  "href": "/assets/docs/haeny-ic1400-726v-brochure-en.pdf"
-                }
-              ]
-            },
-            {
-              "title": "Kompakta PU-anläggningar (CCP)",
-              "text": "Optimerad för trånga arbetsytor och för integration på TBM, SBM och andra system. Hanterar cementslurry, 2K-polyuretan och kombinationen cement + PU.",
-              "image": "/assets/img/haeny-finder-ccp.webp",
-              "items": [
-                {
-                  "label": "IC325 CCP",
-                  "href": "/assets/docs/haeny-ccp-brochure-en.pdf"
-                },
-                {
-                  "label": "CCP, tekniskt blad (DE/EN)",
-                  "href": "/assets/docs/haeny-ccp-spez-brochure-en.pdf"
-                }
-              ]
-            },
-            {
-              "title": "Automatiska anläggningar (FAIC)",
-              "text": "Automatiserade anläggningar för cement, bentonit, mikrofina bindemedel och bruk, med noggrann dosering, förbrukningsregistrering, tryck- och flödesregistrering samt radiostyrning.",
-              "image": "/assets/img/haeny-finder-faic.webp",
-              "items": [
-                {
-                  "label": "FAIC 650-710",
-                  "href": "/assets/docs/haeny-faic650-710-brochure-en.pdf"
-                },
-                {
-                  "label": "FAIC 650-712",
-                  "href": "/assets/docs/haeny-faic650-712-brochure-en.pdf"
-                },
-                {
-                  "label": "FAIC 650-725",
-                  "href": "/assets/docs/haeny-faic650-725-brochure-en.pdf"
-                },
-                {
-                  "label": "FAIC 1100-725",
-                  "href": "/assets/docs/haeny-faic1100-725-brochure-en.pdf"
-                },
-                {
-                  "label": "FAIC 1400-725",
-                  "href": "/assets/docs/haeny-faic1400-725-brochure-en.pdf"
-                }
-              ]
-            },
-            {
-              "title": "Mobila anläggningar (MCM)",
-              "text": "Mobila anläggningar för bentonit, flygaska, cement, filler, lera och liknande suspensioner till slitsmurar, jet grouting och alla typer av injektering. Broschyr på begäran.",
-              "image": "/assets/img/haeny-finder-mcm.webp",
-              "items": []
-            },
-            {
-              "title": "Huvudbroschyrer",
-              "text": "Hela sortimentet i en broschyr.",
-              "image": "/assets/img/haeny-1.webp",
-              "items": [
-                {
-                  "label": "Produktportfölj",
-                  "href": "/assets/docs/haeny-portfolio-brochure-en.pdf"
-                },
-                {
-                  "label": "Komplett broschyr: blandning och injektering",
-                  "href": "/assets/docs/haeny-gesamt-mit-brochure-en.pdf"
-                },
-                {
-                  "label": "Översikt (äldre version)",
-                  "href": "/assets/docs/haeny-ladda-ner-huvudbroschyr.pdf"
-                }
-              ]
+              "alt": "Bomba de inyección triplex (ZMP 936)",
+              "href": "/produkter/haeny/hitta-ratt-maskin/triplexpump",
+              "width": 1000,
+              "height": 1000
             }
           ]
         },
         {
-          "type": "text",
-          "html": "Saknar du en broschyr eller en modell? <a href=\"/kontakta-oss\">Kontakta oss</a>."
+          "type": "heading",
+          "level": 2,
+          "text": "Equipos completos"
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 4,
+          "more": false,
+          "items": [
+            {
+              "title": "Plantas de inyección compactas (IC)",
+              "image": "/assets/img/haeny-manuella-pumpar-ic-310-ic-311.webp",
+              "alt": "Plantas de inyección compactas (IC)",
+              "href": "/produkter/haeny/hitta-ratt-maskin/kompakta-anlaggningar",
+              "width": 1083,
+              "height": 1169
+            },
+            {
+              "title": "Plantas compactas PU (IC 325 CCP)",
+              "image": "/assets/img/haeny-finder-ccp.webp",
+              "alt": "Plantas compactas PU (IC 325 CCP)",
+              "href": "/produkter/haeny/manuella-pumpar/ic-325-ic325-ccp#ic325-ccp",
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "Plantas de inyección automáticas (FAIC)",
+              "image": "/assets/img/haeny-finder-faic.webp",
+              "alt": "Plantas de inyección automáticas (FAIC)",
+              "href": "/produkter/haeny/hitta-ratt-maskin/automatiska-anlaggningar",
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "Plantas de mezcla móviles (MCM)",
+              "image": "/assets/img/haeny-finder-mcm.webp",
+              "alt": "Plantas de mezcla móviles (MCM)",
+              "href": "/produkter/haeny/hitta-ratt-maskin/mobila-anlaggningar",
+              "width": 1000,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Folleto principal (cartera de productos)",
+          "href": "/assets/docs/haeny-portfolio-brochure-en.pdf"
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Folleto completo: mezcla e inyección",
+          "href": "/assets/docs/haeny-gesamt-mit-brochure-en.pdf"
         }
       ]
     },
     "no": {
-      "title": "Hitta rätt maskin",
-      "h1": "Hitta rätt maskin",
-      "description": "Välj produkttyp och modell från Häny (blandare, omrörare, injekteringspumpar, kompakta och automatiska injekteringsanläggningar) och gå direkt till rätt broschyr.",
+      "title": "Finn riktig maskin",
+      "h1": "Finn riktig maskin",
+      "description": "Häny har et komplett sortiment for blanding og injeksjon. Start med å velge: enkeltdeler (miksere, røreverk, pumper) eller komplette enheter. Hver side viser oversikt, modeller, tekniske data, diagram",
       "blocks": [
         {
           "type": "image",
@@ -800,248 +383,109 @@
         },
         {
           "type": "text",
-          "html": "Häny har ett komplett sortiment för blandning och injektering. Välj produkttyp nedan, så ser du modellerna och kommer direkt till rätt broschyr. Osäker på vilken maskin som passar ditt jobb? <a href=\"/kontakta-oss\">Kontakta oss</a>, så hjälper vi dig välja."
+          "html": "Häny har et komplett sortiment for blanding og injeksjon. Start med å velge: enkeltdeler (miksere, røreverk, pumper) eller komplette enheter. Hver side viser oversikt, modeller, tekniske data, diagrammer og brosjyrer. Usikker? <a href=\"/kontakta-oss\">Kontakt oss</a>, så hjelper vi deg å velge."
         },
         {
-          "type": "finder",
-          "title": "Välj produkttyp",
-          "intro": "",
-          "groups": [
+          "type": "heading",
+          "level": 2,
+          "text": "Deler"
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 4,
+          "more": false,
+          "items": [
             {
-              "title": "Blandare (HCM)",
-              "text": "Högskjuvande kolloidblandare för cement, ultrafint cement, bentonit och andra tillsatser. Utmärkt blandningskvalitet, hög kapacitet och lågt slitage.",
+              "title": "Miksere (HCM)",
               "image": "/assets/img/haeny-finder-hcm.webp",
-              "items": [
-                {
-                  "label": "HCM100",
-                  "href": "/assets/docs/haeny-hcm100-brochure-en.pdf"
-                },
-                {
-                  "label": "HCM300",
-                  "href": "/assets/docs/haeny-hcm300-brochure-en.pdf"
-                },
-                {
-                  "label": "HCM600",
-                  "href": "/assets/docs/haeny-hcm600-brochure-en.pdf"
-                },
-                {
-                  "label": "HCM800",
-                  "href": "/assets/docs/haeny-hcm800-brochure-en.pdf"
-                },
-                {
-                  "label": "HCM2500",
-                  "href": "/assets/docs/haeny-hcm2500-brochure-en.pdf"
-                }
-              ]
+              "alt": "Miksere (HCM)",
+              "href": "/produkter/haeny/hitta-ratt-maskin/blandare",
+              "width": 1000,
+              "height": 1000
             },
             {
-              "title": "Omrörare (HRW)",
-              "text": "Används som mellanlager mellan blandaren och pumpen. I den långsamt roterande omröraren homogeniseras injekteringsmassan och eventuella luftbubblor avlägsnas.",
+              "title": "Røreverk (HRW)",
               "image": "/assets/img/haeny-finder-hrw.webp",
-              "items": [
-                {
-                  "label": "HRW150",
-                  "href": "/assets/docs/haeny-hrw150-brochure-en.pdf"
-                },
-                {
-                  "label": "HRW350",
-                  "href": "/assets/docs/haeny-hrw350-brochure-en.pdf"
-                },
-                {
-                  "label": "HRW800",
-                  "href": "/assets/docs/haeny-hrw800-brochure-en.pdf"
-                },
-                {
-                  "label": "HRW1200",
-                  "href": "/assets/docs/haeny-hrw1200-brochure-en.pdf"
-                },
-                {
-                  "label": "HRW2000",
-                  "href": "/assets/docs/haeny-hrw2000-brochure-en.pdf"
-                },
-                {
-                  "label": "HRW3000",
-                  "href": "/assets/docs/haeny-hrw3000-brochure-en.pdf"
-                }
-              ]
+              "alt": "Røreverk (HRW)",
+              "href": "/produkter/haeny/hitta-ratt-maskin/omrorare",
+              "width": 1000,
+              "height": 1000
             },
             {
-              "title": "Injekteringspumpar (ZMP)",
-              "text": "Slitagesnåla kolvpumpar, enkel- eller dubbelverkande. Tryck upp till 200 bar, flöde upp till 13 m³/h och partikelstorlek upp till 8 mm. Automatiskt tryckkontrollsystem (APC).",
+              "title": "Injeksjonspumper (ZMP)",
               "image": "/assets/img/haeny-finder-zmp.webp",
-              "items": [
-                {
-                  "label": "ZMP610",
-                  "href": "/assets/docs/haeny-zmp610-brochure-en.pdf"
-                },
-                {
-                  "label": "ZMP611",
-                  "href": "/assets/docs/haeny-zmp611-brochure-en.pdf"
-                },
-                {
-                  "label": "ZMP625",
-                  "href": "/assets/docs/haeny-zmp625-brochure-en.pdf"
-                },
-                {
-                  "label": "ZMP710",
-                  "href": "/assets/docs/haeny-zmp710-brochure-en.pdf"
-                },
-                {
-                  "label": "ZMP712",
-                  "href": "/assets/docs/haeny-zmp712-brochure-en.pdf"
-                },
-                {
-                  "label": "ZMP725",
-                  "href": "/assets/docs/haeny-zmp725-brochure-en.pdf"
-                },
-                {
-                  "label": "ZMP726",
-                  "href": "/assets/docs/haeny-zmp726-brochure-en.pdf"
-                }
-              ]
+              "alt": "Injeksjonspumper (ZMP)",
+              "href": "/produkter/haeny/hitta-ratt-maskin/injekteringspumpar",
+              "width": 1000,
+              "height": 1000
             },
             {
-              "title": "Triplexpump (ZMP 936)",
-              "text": "Slitagesnål kolvpump av triplextyp med hög tillförlitlighet, lågt underhåll, pulsation under 1 % och kylvattenanslutning för kontinuerlig drift.",
+              "title": "Triplex injeksjonspumpe (ZMP 936)",
               "image": "/assets/img/haeny-finder-zmp936.webp",
-              "items": [
-                {
-                  "label": "ZMP936 Triplex",
-                  "href": "/assets/docs/haeny-zmp936-brochure-en.pdf"
-                }
-              ]
-            },
-            {
-              "title": "Kompakta anläggningar (IC)",
-              "text": "INJECTO-COMPACT: blandare, omrörare och pump i en enhet. För all injektering med cement och ultrafint cement samt bentonit för mikrotunnling, rörpressning och styrd borrning.",
-              "image": "/assets/img/haeny-finder-ic.webp",
-              "items": [
-                {
-                  "label": "IC310",
-                  "href": "/assets/docs/haeny-ic310-brochure-en.pdf"
-                },
-                {
-                  "label": "IC311",
-                  "href": "/assets/docs/haeny-ic311-brochure-en.pdf"
-                },
-                {
-                  "label": "IC325",
-                  "href": "/assets/docs/haeny-ic325-brochure-en.pdf"
-                },
-                {
-                  "label": "IC650-710V",
-                  "href": "/assets/docs/haeny-ic650-710v-brochure-en.pdf"
-                },
-                {
-                  "label": "IC650-712V",
-                  "href": "/assets/docs/haeny-ic650-712v-brochure-en.pdf"
-                },
-                {
-                  "label": "IC650-725V",
-                  "href": "/assets/docs/haeny-ic650-725v-brochure-en.pdf"
-                },
-                {
-                  "label": "IC1100-710V",
-                  "href": "/assets/docs/haeny-ic1100-710v-brochure-en.pdf"
-                },
-                {
-                  "label": "IC1100-712V",
-                  "href": "/assets/docs/haeny-ic1100-712v-brochure-en.pdf"
-                },
-                {
-                  "label": "IC1100-725V",
-                  "href": "/assets/docs/haeny-ic1100-725v-brochure-en.pdf"
-                },
-                {
-                  "label": "IC1400-710V",
-                  "href": "/assets/docs/haeny-ic1400-710v-brochure-en.pdf"
-                },
-                {
-                  "label": "IC1400-712V",
-                  "href": "/assets/docs/haeny-ic1400-712v-brochure-en.pdf"
-                },
-                {
-                  "label": "IC1400-725V",
-                  "href": "/assets/docs/haeny-ic1400-725v-brochure-en.pdf"
-                },
-                {
-                  "label": "IC1400-726V",
-                  "href": "/assets/docs/haeny-ic1400-726v-brochure-en.pdf"
-                }
-              ]
-            },
-            {
-              "title": "Kompakta PU-anläggningar (CCP)",
-              "text": "Optimerad för trånga arbetsytor och för integration på TBM, SBM och andra system. Hanterar cementslurry, 2K-polyuretan och kombinationen cement + PU.",
-              "image": "/assets/img/haeny-finder-ccp.webp",
-              "items": [
-                {
-                  "label": "IC325 CCP",
-                  "href": "/assets/docs/haeny-ccp-brochure-en.pdf"
-                },
-                {
-                  "label": "CCP, tekniskt blad (DE/EN)",
-                  "href": "/assets/docs/haeny-ccp-spez-brochure-en.pdf"
-                }
-              ]
-            },
-            {
-              "title": "Automatiska anläggningar (FAIC)",
-              "text": "Automatiserade anläggningar för cement, bentonit, mikrofina bindemedel och bruk, med noggrann dosering, förbrukningsregistrering, tryck- och flödesregistrering samt radiostyrning.",
-              "image": "/assets/img/haeny-finder-faic.webp",
-              "items": [
-                {
-                  "label": "FAIC 650-710",
-                  "href": "/assets/docs/haeny-faic650-710-brochure-en.pdf"
-                },
-                {
-                  "label": "FAIC 650-712",
-                  "href": "/assets/docs/haeny-faic650-712-brochure-en.pdf"
-                },
-                {
-                  "label": "FAIC 650-725",
-                  "href": "/assets/docs/haeny-faic650-725-brochure-en.pdf"
-                },
-                {
-                  "label": "FAIC 1100-725",
-                  "href": "/assets/docs/haeny-faic1100-725-brochure-en.pdf"
-                },
-                {
-                  "label": "FAIC 1400-725",
-                  "href": "/assets/docs/haeny-faic1400-725-brochure-en.pdf"
-                }
-              ]
-            },
-            {
-              "title": "Mobila anläggningar (MCM)",
-              "text": "Mobila anläggningar för bentonit, flygaska, cement, filler, lera och liknande suspensioner till slitsmurar, jet grouting och alla typer av injektering. Broschyr på begäran.",
-              "image": "/assets/img/haeny-finder-mcm.webp",
-              "items": []
-            },
-            {
-              "title": "Huvudbroschyrer",
-              "text": "Hela sortimentet i en broschyr.",
-              "image": "/assets/img/haeny-1.webp",
-              "items": [
-                {
-                  "label": "Produktportfölj",
-                  "href": "/assets/docs/haeny-portfolio-brochure-en.pdf"
-                },
-                {
-                  "label": "Komplett broschyr: blandning och injektering",
-                  "href": "/assets/docs/haeny-gesamt-mit-brochure-en.pdf"
-                },
-                {
-                  "label": "Översikt (äldre version)",
-                  "href": "/assets/docs/haeny-ladda-ner-huvudbroschyr.pdf"
-                }
-              ]
+              "alt": "Triplex injeksjonspumpe (ZMP 936)",
+              "href": "/produkter/haeny/hitta-ratt-maskin/triplexpump",
+              "width": 1000,
+              "height": 1000
             }
           ]
         },
         {
-          "type": "text",
-          "html": "Saknar du en broschyr eller en modell? <a href=\"/kontakta-oss\">Kontakta oss</a>."
+          "type": "heading",
+          "level": 2,
+          "text": "Komplette enheter"
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 4,
+          "more": false,
+          "items": [
+            {
+              "title": "Kompakte injeksjonsanlegg (IC)",
+              "image": "/assets/img/haeny-manuella-pumpar-ic-310-ic-311.webp",
+              "alt": "Kompakte injeksjonsanlegg (IC)",
+              "href": "/produkter/haeny/hitta-ratt-maskin/kompakta-anlaggningar",
+              "width": 1083,
+              "height": 1169
+            },
+            {
+              "title": "Kompakte PU-anlegg (IC 325 CCP)",
+              "image": "/assets/img/haeny-finder-ccp.webp",
+              "alt": "Kompakte PU-anlegg (IC 325 CCP)",
+              "href": "/produkter/haeny/manuella-pumpar/ic-325-ic325-ccp#ic325-ccp",
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "Automatiske injeksjonsanlegg (FAIC)",
+              "image": "/assets/img/haeny-finder-faic.webp",
+              "alt": "Automatiske injeksjonsanlegg (FAIC)",
+              "href": "/produkter/haeny/hitta-ratt-maskin/automatiska-anlaggningar",
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "Mobile blandeanlegg (MCM)",
+              "image": "/assets/img/haeny-finder-mcm.webp",
+              "alt": "Mobile blandeanlegg (MCM)",
+              "href": "/produkter/haeny/hitta-ratt-maskin/mobila-anlaggningar",
+              "width": 1000,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Hovedbrosjyre (produktportefølje)",
+          "href": "/assets/docs/haeny-portfolio-brochure-en.pdf"
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Komplett brosjyre: blanding og injeksjon",
+          "href": "/assets/docs/haeny-gesamt-mit-brochure-en.pdf"
         }
       ]
     }

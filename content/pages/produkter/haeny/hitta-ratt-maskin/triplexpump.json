@@ -1,0 +1,1153 @@
+{
+  "path": "/produkter/haeny/hitta-ratt-maskin/triplexpump",
+  "updated": "2026-10-23",
+  "template": "product",
+  "order": 3,
+  "published": true,
+  "i18n": {
+    "sv": {
+      "title": "Triplexpump (ZMP 936)",
+      "h1": "Triplexpump (ZMP 936)",
+      "description": "Slitagesnål kolvpump av triplextyp med hög tillförlitlighet, lågt underhåll, pulsation under 1 % och kylvattenanslutning för kontinuerlig drift.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "HÄNY",
+          "href": "/produkter/haeny",
+          "width": 832,
+          "height": 143,
+          "src": "/assets/img/haeny-1.webp"
+        },
+        {
+          "type": "image",
+          "alt": "Triplexpump (ZMP 936)",
+          "width": 1000,
+          "height": 1000,
+          "src": "/assets/img/haeny-finder-zmp936.webp"
+        },
+        {
+          "type": "text",
+          "html": "Slitagesnål kolvpump av triplextyp med hög tillförlitlighet, lågt underhåll, pulsation under 1 % och kylvattenanslutning för kontinuerlig drift."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Översikt"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "High reliability and low-maintenance operation with good accessibility to the wear parts.",
+            "Pulsation in the capacity &lt; 1%",
+            "Cooling water connection for continuous operation and elevated ambient temperature."
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Modeller"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "<a href=\"#zmp936\">ZMP 936</a>: 1,000 l/min (60 m³/h) · 40 bar"
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Användning"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Transfer pump for various media",
+            "Slurry wall suspensions",
+            "High-volume backfilling",
+            "Soil mixing"
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "ZMP 936",
+          "anchor": "zmp936"
+        },
+        {
+          "type": "columns",
+          "ratio": "40-60",
+          "left": [
+            {
+              "type": "image",
+              "alt": "Grout Pump ZMP 936",
+              "width": 1000,
+              "height": 1000,
+              "src": "/assets/img/haeny-finder-zmp936.webp"
+            }
+          ],
+          "right": [
+            {
+              "type": "text",
+              "html": "High volume standalone triplex plunger pump for constant delivery with minimal pulsation. The highly efficient hydraulic system is mounted onto a space saving frame and can be used for various applications."
+            },
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "High reliability and low-maintenance operation with good accessibility to the wear parts.",
+                "Pulsation in the capacity &lt; 1%",
+                "Cooling water connection for continuous operation and elevated ambient temperature."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Användning"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Transfer pump for various media",
+            "Slurry wall suspensions",
+            "High-volume backfilling",
+            "Soil mixing"
+          ]
+        },
+        {
+          "type": "datasheet",
+          "title": "Teknisk data",
+          "tagline": "Grout Pump ZMP 936",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Grout pump",
+              "rows": [
+                {
+                  "label": "Max. capacity",
+                  "metric": "1,000 l/min (60 m³/h)"
+                },
+                {
+                  "label": "Min. capacity",
+                  "metric": "200 l/min (12 m³/h)"
+                },
+                {
+                  "label": "Max. pressure (at max. output)",
+                  "metric": "40 bar"
+                },
+                {
+                  "label": "Motor rating",
+                  "metric": "121 kW"
+                },
+                {
+                  "label": "Plunger Ø",
+                  "metric": "210 mm"
+                },
+                {
+                  "label": "Max. aggregate size",
+                  "metric": "8 mm"
+                },
+                {
+                  "label": "No. of plunger pumps",
+                  "metric": "3"
+                },
+                {
+                  "label": "Suction connection",
+                  "metric": "3x BSP 3\""
+                },
+                {
+                  "label": "Discharge manifold",
+                  "metric": "BSP 3\" or Ø 100 mm, connection GF 45M-LC 4-1/2\""
+                }
+              ]
+            },
+            {
+              "title": "Electrical data",
+              "rows": [
+                {
+                  "label": "Voltage",
+                  "metric": "3x 400 V"
+                },
+                {
+                  "label": "Frequency",
+                  "metric": "50 Hz"
+                },
+                {
+                  "label": "Electric motor",
+                  "metric": "1x 110 kW; 1x 11 kW"
+                },
+                {
+                  "label": "Protection",
+                  "metric": "250 A"
+                }
+              ]
+            },
+            {
+              "title": "Hydraulic system",
+              "rows": [
+                {
+                  "label": "Hydraulic tank",
+                  "metric": "400 l"
+                },
+                {
+                  "label": "Counterflow oil/water cooler, consumption",
+                  "metric": "27 l/min"
+                },
+                {
+                  "label": "Cooling water connection",
+                  "metric": "IN G¾\", GEKA; OUT G1\", GEKA"
+                }
+              ]
+            },
+            {
+              "title": "Weight and dimensions",
+              "rows": [
+                {
+                  "label": "Total weight",
+                  "metric": "4,400 kg"
+                },
+                {
+                  "label": "Width",
+                  "metric": "1,997 mm"
+                },
+                {
+                  "label": "Height",
+                  "metric": "2,260 mm"
+                },
+                {
+                  "label": "Length",
+                  "metric": "2,688 mm"
+                }
+              ]
+            }
+          ],
+          "note": "1: Water to cement ratio = 1"
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Standard- och tillvalsutrustning"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Included as standard (Grout pump): Suction side: Check valve",
+            "Included as standard (Grout pump): Pressure side: hydraulically controlled valves",
+            "Included as standard (Grout pump): Automatic pressure and flow control",
+            "Optional (Grout pump): Suction side: hydraulically controlled valves",
+            "Optional (Control system): Remote control with 50 m cable, pump ON-OFF, emergency stop",
+            "Optional (Control system): Remote control with 50 m cable, pump ON-OFF, output +/-, emergency stop",
+            "Optional (Control system): Data logger including pressure and flow rate",
+            "Optional (Control system): IOT connection",
+            "Control system: PLC control with touch display",
+            "Control system: Phase sequence relay, emergency stop",
+            "Control system: Hydraulic ON-OFF, pump ON-OFF, output +/-",
+            "Control system: Remote maintenance",
+            "Included as standard (Hydraulic system): Oil level and temperature sensor",
+            "Included as standard (Hydraulic system): Automatic cooling water control unit"
+          ]
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 2,
+          "more": false,
+          "items": [
+            {
+              "title": "Pumpprestanda",
+              "image": "/assets/img/haeny-zmp936-chart.webp",
+              "alt": "Pumpprestanda ZMP 936",
+              "width": 641,
+              "height": 756
+            },
+            {
+              "title": "Mått och ritning",
+              "image": "/assets/img/haeny-zmp936-dim.webp",
+              "alt": "Mått och ritning ZMP 936",
+              "width": 1124,
+              "height": 955
+            }
+          ]
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Broschyr ZMP 936 (PDF, engelska)",
+          "href": "/assets/docs/haeny-zmp936-brochure-en.pdf"
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Kontakta oss</a> för pris, leveranstid eller hjälp att välja rätt modell."
+        },
+        {
+          "type": "text",
+          "html": "<small>Uppgifterna är hämtade ur tillverkarens broschyrer (engelska).</small>"
+        }
+      ]
+    },
+    "en": {
+      "title": "Triplex grout pump (ZMP 936)",
+      "h1": "Triplex grout pump (ZMP 936)",
+      "description": "A low-wear triplex plunger pump with high reliability, low maintenance, pulsation below 1 % and a cooling water connection for continuous operation.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "HÄNY",
+          "href": "/produkter/haeny",
+          "width": 832,
+          "height": 143,
+          "src": "/assets/img/haeny-1.webp"
+        },
+        {
+          "type": "image",
+          "alt": "Triplex grout pump (ZMP 936)",
+          "width": 1000,
+          "height": 1000,
+          "src": "/assets/img/haeny-finder-zmp936.webp"
+        },
+        {
+          "type": "text",
+          "html": "A low-wear triplex plunger pump with high reliability, low maintenance, pulsation below 1 % and a cooling water connection for continuous operation."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Overview"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "High reliability and low-maintenance operation with good accessibility to the wear parts.",
+            "Pulsation in the capacity &lt; 1%",
+            "Cooling water connection for continuous operation and elevated ambient temperature."
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Models"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "<a href=\"#zmp936\">ZMP 936</a>: 1,000 l/min (60 m³/h) · 40 bar"
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Typical applications"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Transfer pump for various media",
+            "Slurry wall suspensions",
+            "High-volume backfilling",
+            "Soil mixing"
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "ZMP 936",
+          "anchor": "zmp936"
+        },
+        {
+          "type": "columns",
+          "ratio": "40-60",
+          "left": [
+            {
+              "type": "image",
+              "alt": "Grout Pump ZMP 936",
+              "width": 1000,
+              "height": 1000,
+              "src": "/assets/img/haeny-finder-zmp936.webp"
+            }
+          ],
+          "right": [
+            {
+              "type": "text",
+              "html": "High volume standalone triplex plunger pump for constant delivery with minimal pulsation. The highly efficient hydraulic system is mounted onto a space saving frame and can be used for various applications."
+            },
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "High reliability and low-maintenance operation with good accessibility to the wear parts.",
+                "Pulsation in the capacity &lt; 1%",
+                "Cooling water connection for continuous operation and elevated ambient temperature."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Typical applications"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Transfer pump for various media",
+            "Slurry wall suspensions",
+            "High-volume backfilling",
+            "Soil mixing"
+          ]
+        },
+        {
+          "type": "datasheet",
+          "title": "Technical data",
+          "tagline": "Grout Pump ZMP 936",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Grout pump",
+              "rows": [
+                {
+                  "label": "Max. capacity",
+                  "metric": "1,000 l/min (60 m³/h)"
+                },
+                {
+                  "label": "Min. capacity",
+                  "metric": "200 l/min (12 m³/h)"
+                },
+                {
+                  "label": "Max. pressure (at max. output)",
+                  "metric": "40 bar"
+                },
+                {
+                  "label": "Motor rating",
+                  "metric": "121 kW"
+                },
+                {
+                  "label": "Plunger Ø",
+                  "metric": "210 mm"
+                },
+                {
+                  "label": "Max. aggregate size",
+                  "metric": "8 mm"
+                },
+                {
+                  "label": "No. of plunger pumps",
+                  "metric": "3"
+                },
+                {
+                  "label": "Suction connection",
+                  "metric": "3x BSP 3\""
+                },
+                {
+                  "label": "Discharge manifold",
+                  "metric": "BSP 3\" or Ø 100 mm, connection GF 45M-LC 4-1/2\""
+                }
+              ]
+            },
+            {
+              "title": "Electrical data",
+              "rows": [
+                {
+                  "label": "Voltage",
+                  "metric": "3x 400 V"
+                },
+                {
+                  "label": "Frequency",
+                  "metric": "50 Hz"
+                },
+                {
+                  "label": "Electric motor",
+                  "metric": "1x 110 kW; 1x 11 kW"
+                },
+                {
+                  "label": "Protection",
+                  "metric": "250 A"
+                }
+              ]
+            },
+            {
+              "title": "Hydraulic system",
+              "rows": [
+                {
+                  "label": "Hydraulic tank",
+                  "metric": "400 l"
+                },
+                {
+                  "label": "Counterflow oil/water cooler, consumption",
+                  "metric": "27 l/min"
+                },
+                {
+                  "label": "Cooling water connection",
+                  "metric": "IN G¾\", GEKA; OUT G1\", GEKA"
+                }
+              ]
+            },
+            {
+              "title": "Weight and dimensions",
+              "rows": [
+                {
+                  "label": "Total weight",
+                  "metric": "4,400 kg"
+                },
+                {
+                  "label": "Width",
+                  "metric": "1,997 mm"
+                },
+                {
+                  "label": "Height",
+                  "metric": "2,260 mm"
+                },
+                {
+                  "label": "Length",
+                  "metric": "2,688 mm"
+                }
+              ]
+            }
+          ],
+          "note": "1: Water to cement ratio = 1"
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Standard and optional equipment"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Included as standard (Grout pump): Suction side: Check valve",
+            "Included as standard (Grout pump): Pressure side: hydraulically controlled valves",
+            "Included as standard (Grout pump): Automatic pressure and flow control",
+            "Optional (Grout pump): Suction side: hydraulically controlled valves",
+            "Optional (Control system): Remote control with 50 m cable, pump ON-OFF, emergency stop",
+            "Optional (Control system): Remote control with 50 m cable, pump ON-OFF, output +/-, emergency stop",
+            "Optional (Control system): Data logger including pressure and flow rate",
+            "Optional (Control system): IOT connection",
+            "Control system: PLC control with touch display",
+            "Control system: Phase sequence relay, emergency stop",
+            "Control system: Hydraulic ON-OFF, pump ON-OFF, output +/-",
+            "Control system: Remote maintenance",
+            "Included as standard (Hydraulic system): Oil level and temperature sensor",
+            "Included as standard (Hydraulic system): Automatic cooling water control unit"
+          ]
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 2,
+          "more": false,
+          "items": [
+            {
+              "title": "Pump performance",
+              "image": "/assets/img/haeny-zmp936-chart.webp",
+              "alt": "Pump performance ZMP 936",
+              "width": 641,
+              "height": 756
+            },
+            {
+              "title": "Dimensions and drawing",
+              "image": "/assets/img/haeny-zmp936-dim.webp",
+              "alt": "Dimensions and drawing ZMP 936",
+              "width": 1124,
+              "height": 955
+            }
+          ]
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Brochure ZMP 936 (PDF)",
+          "href": "/assets/docs/haeny-zmp936-brochure-en.pdf"
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Contact us</a> for price, delivery time or help choosing the right model."
+        },
+        {
+          "type": "text",
+          "html": "<small>Information taken from the manufacturer's brochures.</small>"
+        }
+      ]
+    },
+    "es": {
+      "title": "Bomba de inyección triplex (ZMP 936)",
+      "h1": "Bomba de inyección triplex (ZMP 936)",
+      "description": "Bomba de émbolo triplex de bajo desgaste, muy fiable y de bajo mantenimiento, con pulsación inferior al 1 % y conexión de agua de refrigeración para funcionamiento continuo.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "HÄNY",
+          "href": "/produkter/haeny",
+          "width": 832,
+          "height": 143,
+          "src": "/assets/img/haeny-1.webp"
+        },
+        {
+          "type": "image",
+          "alt": "Bomba de inyección triplex (ZMP 936)",
+          "width": 1000,
+          "height": 1000,
+          "src": "/assets/img/haeny-finder-zmp936.webp"
+        },
+        {
+          "type": "text",
+          "html": "Bomba de émbolo triplex de bajo desgaste, muy fiable y de bajo mantenimiento, con pulsación inferior al 1 % y conexión de agua de refrigeración para funcionamiento continuo."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Resumen"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "High reliability and low-maintenance operation with good accessibility to the wear parts.",
+            "Pulsation in the capacity &lt; 1%",
+            "Cooling water connection for continuous operation and elevated ambient temperature."
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Modelos"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "<a href=\"#zmp936\">ZMP 936</a>: 1,000 l/min (60 m³/h) · 40 bar"
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Aplicaciones típicas"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Transfer pump for various media",
+            "Slurry wall suspensions",
+            "High-volume backfilling",
+            "Soil mixing"
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "ZMP 936",
+          "anchor": "zmp936"
+        },
+        {
+          "type": "columns",
+          "ratio": "40-60",
+          "left": [
+            {
+              "type": "image",
+              "alt": "Grout Pump ZMP 936",
+              "width": 1000,
+              "height": 1000,
+              "src": "/assets/img/haeny-finder-zmp936.webp"
+            }
+          ],
+          "right": [
+            {
+              "type": "text",
+              "html": "High volume standalone triplex plunger pump for constant delivery with minimal pulsation. The highly efficient hydraulic system is mounted onto a space saving frame and can be used for various applications."
+            },
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "High reliability and low-maintenance operation with good accessibility to the wear parts.",
+                "Pulsation in the capacity &lt; 1%",
+                "Cooling water connection for continuous operation and elevated ambient temperature."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Aplicaciones típicas"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Transfer pump for various media",
+            "Slurry wall suspensions",
+            "High-volume backfilling",
+            "Soil mixing"
+          ]
+        },
+        {
+          "type": "datasheet",
+          "title": "Datos técnicos",
+          "tagline": "Grout Pump ZMP 936",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Grout pump",
+              "rows": [
+                {
+                  "label": "Max. capacity",
+                  "metric": "1,000 l/min (60 m³/h)"
+                },
+                {
+                  "label": "Min. capacity",
+                  "metric": "200 l/min (12 m³/h)"
+                },
+                {
+                  "label": "Max. pressure (at max. output)",
+                  "metric": "40 bar"
+                },
+                {
+                  "label": "Motor rating",
+                  "metric": "121 kW"
+                },
+                {
+                  "label": "Plunger Ø",
+                  "metric": "210 mm"
+                },
+                {
+                  "label": "Max. aggregate size",
+                  "metric": "8 mm"
+                },
+                {
+                  "label": "No. of plunger pumps",
+                  "metric": "3"
+                },
+                {
+                  "label": "Suction connection",
+                  "metric": "3x BSP 3\""
+                },
+                {
+                  "label": "Discharge manifold",
+                  "metric": "BSP 3\" or Ø 100 mm, connection GF 45M-LC 4-1/2\""
+                }
+              ]
+            },
+            {
+              "title": "Electrical data",
+              "rows": [
+                {
+                  "label": "Voltage",
+                  "metric": "3x 400 V"
+                },
+                {
+                  "label": "Frequency",
+                  "metric": "50 Hz"
+                },
+                {
+                  "label": "Electric motor",
+                  "metric": "1x 110 kW; 1x 11 kW"
+                },
+                {
+                  "label": "Protection",
+                  "metric": "250 A"
+                }
+              ]
+            },
+            {
+              "title": "Hydraulic system",
+              "rows": [
+                {
+                  "label": "Hydraulic tank",
+                  "metric": "400 l"
+                },
+                {
+                  "label": "Counterflow oil/water cooler, consumption",
+                  "metric": "27 l/min"
+                },
+                {
+                  "label": "Cooling water connection",
+                  "metric": "IN G¾\", GEKA; OUT G1\", GEKA"
+                }
+              ]
+            },
+            {
+              "title": "Weight and dimensions",
+              "rows": [
+                {
+                  "label": "Total weight",
+                  "metric": "4,400 kg"
+                },
+                {
+                  "label": "Width",
+                  "metric": "1,997 mm"
+                },
+                {
+                  "label": "Height",
+                  "metric": "2,260 mm"
+                },
+                {
+                  "label": "Length",
+                  "metric": "2,688 mm"
+                }
+              ]
+            }
+          ],
+          "note": "1: Water to cement ratio = 1"
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Equipamiento estándar y opcional"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Included as standard (Grout pump): Suction side: Check valve",
+            "Included as standard (Grout pump): Pressure side: hydraulically controlled valves",
+            "Included as standard (Grout pump): Automatic pressure and flow control",
+            "Optional (Grout pump): Suction side: hydraulically controlled valves",
+            "Optional (Control system): Remote control with 50 m cable, pump ON-OFF, emergency stop",
+            "Optional (Control system): Remote control with 50 m cable, pump ON-OFF, output +/-, emergency stop",
+            "Optional (Control system): Data logger including pressure and flow rate",
+            "Optional (Control system): IOT connection",
+            "Control system: PLC control with touch display",
+            "Control system: Phase sequence relay, emergency stop",
+            "Control system: Hydraulic ON-OFF, pump ON-OFF, output +/-",
+            "Control system: Remote maintenance",
+            "Included as standard (Hydraulic system): Oil level and temperature sensor",
+            "Included as standard (Hydraulic system): Automatic cooling water control unit"
+          ]
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 2,
+          "more": false,
+          "items": [
+            {
+              "title": "Rendimiento de la bomba",
+              "image": "/assets/img/haeny-zmp936-chart.webp",
+              "alt": "Rendimiento de la bomba ZMP 936",
+              "width": 641,
+              "height": 756
+            },
+            {
+              "title": "Dimensiones y plano",
+              "image": "/assets/img/haeny-zmp936-dim.webp",
+              "alt": "Dimensiones y plano ZMP 936",
+              "width": 1124,
+              "height": 955
+            }
+          ]
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Folleto ZMP 936 (PDF, inglés)",
+          "href": "/assets/docs/haeny-zmp936-brochure-en.pdf"
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Contáctenos</a> para precio, plazo de entrega o ayuda para elegir el modelo adecuado."
+        },
+        {
+          "type": "text",
+          "html": "<small>Información tomada de los folletos del fabricante (en inglés).</small>"
+        }
+      ]
+    },
+    "no": {
+      "title": "Triplex injeksjonspumpe (ZMP 936)",
+      "h1": "Triplex injeksjonspumpe (ZMP 936)",
+      "description": "Slitesvak triplex stempelpumpe med høy pålitelighet, lite vedlikehold, pulsering under 1 % og kjølevanntilkobling for kontinuerlig drift.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "HÄNY",
+          "href": "/produkter/haeny",
+          "width": 832,
+          "height": 143,
+          "src": "/assets/img/haeny-1.webp"
+        },
+        {
+          "type": "image",
+          "alt": "Triplex injeksjonspumpe (ZMP 936)",
+          "width": 1000,
+          "height": 1000,
+          "src": "/assets/img/haeny-finder-zmp936.webp"
+        },
+        {
+          "type": "text",
+          "html": "Slitesvak triplex stempelpumpe med høy pålitelighet, lite vedlikehold, pulsering under 1 % og kjølevanntilkobling for kontinuerlig drift."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Oversikt"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "High reliability and low-maintenance operation with good accessibility to the wear parts.",
+            "Pulsation in the capacity &lt; 1%",
+            "Cooling water connection for continuous operation and elevated ambient temperature."
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Modeller"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "<a href=\"#zmp936\">ZMP 936</a>: 1,000 l/min (60 m³/h) · 40 bar"
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Bruksområder"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Transfer pump for various media",
+            "Slurry wall suspensions",
+            "High-volume backfilling",
+            "Soil mixing"
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "ZMP 936",
+          "anchor": "zmp936"
+        },
+        {
+          "type": "columns",
+          "ratio": "40-60",
+          "left": [
+            {
+              "type": "image",
+              "alt": "Grout Pump ZMP 936",
+              "width": 1000,
+              "height": 1000,
+              "src": "/assets/img/haeny-finder-zmp936.webp"
+            }
+          ],
+          "right": [
+            {
+              "type": "text",
+              "html": "High volume standalone triplex plunger pump for constant delivery with minimal pulsation. The highly efficient hydraulic system is mounted onto a space saving frame and can be used for various applications."
+            },
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "High reliability and low-maintenance operation with good accessibility to the wear parts.",
+                "Pulsation in the capacity &lt; 1%",
+                "Cooling water connection for continuous operation and elevated ambient temperature."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Bruksområder"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Transfer pump for various media",
+            "Slurry wall suspensions",
+            "High-volume backfilling",
+            "Soil mixing"
+          ]
+        },
+        {
+          "type": "datasheet",
+          "title": "Tekniske data",
+          "tagline": "Grout Pump ZMP 936",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Grout pump",
+              "rows": [
+                {
+                  "label": "Max. capacity",
+                  "metric": "1,000 l/min (60 m³/h)"
+                },
+                {
+                  "label": "Min. capacity",
+                  "metric": "200 l/min (12 m³/h)"
+                },
+                {
+                  "label": "Max. pressure (at max. output)",
+                  "metric": "40 bar"
+                },
+                {
+                  "label": "Motor rating",
+                  "metric": "121 kW"
+                },
+                {
+                  "label": "Plunger Ø",
+                  "metric": "210 mm"
+                },
+                {
+                  "label": "Max. aggregate size",
+                  "metric": "8 mm"
+                },
+                {
+                  "label": "No. of plunger pumps",
+                  "metric": "3"
+                },
+                {
+                  "label": "Suction connection",
+                  "metric": "3x BSP 3\""
+                },
+                {
+                  "label": "Discharge manifold",
+                  "metric": "BSP 3\" or Ø 100 mm, connection GF 45M-LC 4-1/2\""
+                }
+              ]
+            },
+            {
+              "title": "Electrical data",
+              "rows": [
+                {
+                  "label": "Voltage",
+                  "metric": "3x 400 V"
+                },
+                {
+                  "label": "Frequency",
+                  "metric": "50 Hz"
+                },
+                {
+                  "label": "Electric motor",
+                  "metric": "1x 110 kW; 1x 11 kW"
+                },
+                {
+                  "label": "Protection",
+                  "metric": "250 A"
+                }
+              ]
+            },
+            {
+              "title": "Hydraulic system",
+              "rows": [
+                {
+                  "label": "Hydraulic tank",
+                  "metric": "400 l"
+                },
+                {
+                  "label": "Counterflow oil/water cooler, consumption",
+                  "metric": "27 l/min"
+                },
+                {
+                  "label": "Cooling water connection",
+                  "metric": "IN G¾\", GEKA; OUT G1\", GEKA"
+                }
+              ]
+            },
+            {
+              "title": "Weight and dimensions",
+              "rows": [
+                {
+                  "label": "Total weight",
+                  "metric": "4,400 kg"
+                },
+                {
+                  "label": "Width",
+                  "metric": "1,997 mm"
+                },
+                {
+                  "label": "Height",
+                  "metric": "2,260 mm"
+                },
+                {
+                  "label": "Length",
+                  "metric": "2,688 mm"
+                }
+              ]
+            }
+          ],
+          "note": "1: Water to cement ratio = 1"
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Standard- og tilvalgsutstyr"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Included as standard (Grout pump): Suction side: Check valve",
+            "Included as standard (Grout pump): Pressure side: hydraulically controlled valves",
+            "Included as standard (Grout pump): Automatic pressure and flow control",
+            "Optional (Grout pump): Suction side: hydraulically controlled valves",
+            "Optional (Control system): Remote control with 50 m cable, pump ON-OFF, emergency stop",
+            "Optional (Control system): Remote control with 50 m cable, pump ON-OFF, output +/-, emergency stop",
+            "Optional (Control system): Data logger including pressure and flow rate",
+            "Optional (Control system): IOT connection",
+            "Control system: PLC control with touch display",
+            "Control system: Phase sequence relay, emergency stop",
+            "Control system: Hydraulic ON-OFF, pump ON-OFF, output +/-",
+            "Control system: Remote maintenance",
+            "Included as standard (Hydraulic system): Oil level and temperature sensor",
+            "Included as standard (Hydraulic system): Automatic cooling water control unit"
+          ]
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 2,
+          "more": false,
+          "items": [
+            {
+              "title": "Pumpeytelse",
+              "image": "/assets/img/haeny-zmp936-chart.webp",
+              "alt": "Pumpeytelse ZMP 936",
+              "width": 641,
+              "height": 756
+            },
+            {
+              "title": "Mål og tegning",
+              "image": "/assets/img/haeny-zmp936-dim.webp",
+              "alt": "Mål og tegning ZMP 936",
+              "width": 1124,
+              "height": 955
+            }
+          ]
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Brosjyre ZMP 936 (PDF, engelsk)",
+          "href": "/assets/docs/haeny-zmp936-brochure-en.pdf"
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Kontakt oss</a> for pris, leveringstid eller hjelp til å velge riktig modell."
+        },
+        {
+          "type": "text",
+          "html": "<small>Opplysningene er hentet fra produsentens brosjyrer (engelsk).</small>"
+        }
+      ]
+    }
+  }
+}

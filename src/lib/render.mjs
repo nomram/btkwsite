@@ -594,7 +594,7 @@ function renderBlockInner(ctx, b) {
   switch (b.type) {
     case "heading": {
       const lvl = Math.min(4, Math.max(2, b.level || 2));
-      return `<h${lvl}${editFld(ctx, "text", "plain", "Rubrik")}>${esc(b.text)}</h${lvl}>`;
+      return `<h${lvl}${b.anchor ? ` id="${esc(b.anchor)}"` : ""}${editFld(ctx, "text", "plain", "Rubrik")}>${esc(b.text)}</h${lvl}>`;
     }
     case "text":
       return `<p${editFld(ctx, "html", "inline", "Skriv text här…")}>${ctx.edit ? b.html || "" : localizeHtml(ctx, b.html)}</p>`;

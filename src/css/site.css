@@ -917,3 +917,4 @@ html:not(.no-js) .finder__panel.is-on { display: block; animation: finderIn .25s
 @keyframes finderIn { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
 @media (prefers-reduced-motion: reduce) { html:not(.no-js) .finder__panel.is-on { animation: none; } }
 @media (max-width: 560px) { .finder__cards { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+h2[id], h3[id] { scroll-margin-top: 5rem; }
