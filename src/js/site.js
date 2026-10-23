@@ -48,9 +48,33 @@
         });
       });
     }
+    // The browser's own "please tick this box" bubble is English whatever the page says and sits far out at the field; the message
+    // is written next to the field instead, in the language of the page.
+    function wrapOf(el) { return el.closest(".qf__f, .qf__consent"); }
+    function clearErr(el) { var w = wrapOf(el); if (!w) return; el.removeAttribute("aria-invalid"); var x = w.querySelector(".qf__err"); if (x) x.parentNode.removeChild(x); }
+    function msgFor(el) {
+      if (el.type === "checkbox") return box.getAttribute("data-v-consent");
+      if (el.validity.typeMismatch || el.validity.patternMismatch) return box.getAttribute("data-v-email");
+      return box.getAttribute("data-v-required");
+    }
+    function validate() {
+      var first = null;
+      [].forEach.call(form.querySelectorAll("input, textarea, select"), function (el) {
+        if (el.type === "hidden" || el.name === "website") return;
+        clearErr(el);
+        if (el.checkValidity()) return;
+        var w = wrapOf(el); if (!w) return;
+        el.setAttribute("aria-invalid", "true");
+        var p = document.createElement("p"); p.className = "qf__err"; p.setAttribute("role", "alert"); p.textContent = msgFor(el); w.appendChild(p);
+        if (!first) first = el;
+      });
+      if (first) { say(""); try { first.focus({ preventScroll: true }); first.scrollIntoView({ block: "center", behavior: "smooth" }); } catch (e) { /* ignore */ } return false; }
+      return true;
+    }
+    ["input", "change"].forEach(function (ev) { form.addEventListener(ev, function (e) { if (e.target && e.target.getAttribute && e.target.getAttribute("aria-invalid")) { if (e.target.checkValidity()) clearErr(e.target); } }); });
     form.addEventListener("submit", function (e) {
       e.preventDefault();
-      if (!form.checkValidity()) { form.reportValidity(); return; }
+      if (!validate()) return;
       var data = new FormData(form);
       if (data.get("website")) { say(box.getAttribute("data-ok")); form.reset(); return; } // honeypot: pretend success
       var endpoint = box.getAttribute("data-endpoint");
@@ -150,6 +174,7 @@
   var toggle = document.querySelector(".nav-toggle");
   var nav = document.getElementById("site-nav");
   if (toggle && nav) {
+    ["touchstart", "pointerdown", "focus"].forEach(function (ev) { toggle.addEventListener(ev, function () { document.dispatchEvent(new Event("bk-warm-menu")); }, { once: true, passive: true }); });
     toggle.addEventListener("click", function () {
       var open = nav.classList.toggle("is-open");
       toggle.setAttribute("aria-expanded", open ? "true" : "false");
@@ -161,6 +186,7 @@
 
   // ---------- mega menu (hover works in CSS; this adds touch + keyboard) ----------
   document.querySelectorAll(".nav__toggle").forEach(function (btn) {
+    ["touchstart", "pointerdown"].forEach(function (ev) { btn.addEventListener(ev, function () { document.dispatchEvent(new Event("bk-warm-menu")); }, { once: true, passive: true }); });
     btn.addEventListener("click", function () {
       var li = btn.closest(".nav__item");
       var open = li.classList.toggle("is-open");
@@ -225,6 +251,7 @@
     function warm() {
       if (warmed) return;
       warmed = true;
+      [].forEach.call(mega.querySelectorAll(".logorow img"), function (im) { im.loading = "eager"; if (im.decode) im.decode().catch(function () { /* paints when loaded */ }); });
       panels.forEach(function (p) {
         [].forEach.call(p.querySelectorAll("img"), function (im) {
           im.loading = "eager";
@@ -235,7 +262,8 @@
     }
     // on a wide screen they are fetched in a quiet moment after the page has loaded (small files, cached for every other page)
     var lowData = navigator.connection && (navigator.connection.saveData || /(^|-)2g$/.test(navigator.connection.effectiveType || ""));
-    if (!lowData && !small.matches) {
+    document.addEventListener("bk-warm-menu", warm); // the hamburger button was touched: the logos are needed next
+    if (!lowData) {
       var later = function () { if (document.hidden) { document.addEventListener("visibilitychange", later, { once: true }); } else warm(); };
       var kick = function () { if (window.requestIdleCallback) window.requestIdleCallback(later, { timeout: 5000 }); else setTimeout(later, 2500); };
       if (document.readyState === "complete") kick(); else window.addEventListener("load", kick, { once: true });
