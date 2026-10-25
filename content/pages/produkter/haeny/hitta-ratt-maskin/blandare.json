@@ -32,7 +32,8 @@
         {
           "type": "heading",
           "level": 2,
-          "text": "Översikt"
+          "text": "Översikt",
+          "gen": true
         },
         {
           "type": "list",
@@ -42,12 +43,14 @@
             "Mixing tank with conical bottom and recirculation line",
             "Automatic lubrication of the shaft seal and lubricated 3-way valve for switching between mixing or transfer",
             "Optional additional mixer for water/cement ratio &lt; 0.5 and microcements"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Modeller"
+          "text": "Modeller",
+          "gen": true
         },
         {
           "type": "list",
@@ -58,12 +61,14 @@
             "<a href=\"#hcm600\">HCM 600</a>: 8 m³/h · 550 l · 9.2 / 10.5 kW",
             "<a href=\"#hcm800\">HCM 800</a>: 20 m³/h · 800 l · 22 / 25 kW",
             "<a href=\"#hcm2500\">HCM 2500</a>: 40 m³/h · 2,500 l · 45 / 53 kW"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Användning"
+          "text": "Användning",
+          "gen": true
         },
         {
           "type": "list",
@@ -71,7 +76,8 @@
           "items": [
             "Preparation of suspensions consisting of water, cement, ultra-fine binder, bentonite, sand, and other materials",
             "As a stand-alone system or in combination with agitator and injection pump"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "modules",
@@ -119,13 +125,15 @@
               "width": 629,
               "height": 662
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "heading",
           "level": 2,
           "text": "HCM 100",
-          "anchor": "hcm100"
+          "anchor": "hcm100",
+          "gen": true
         },
         {
           "type": "columns",
@@ -154,12 +162,14 @@
                 "Optional additional mixer for water/cement ratio &lt; 0.5 and microcements"
               ]
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Användning"
+          "text": "Användning",
+          "gen": true
         },
         {
           "type": "list",
@@ -167,7 +177,8 @@
           "items": [
             "Preparation of suspensions consisting of water, cement, ultra-fine binder, bentonite, sand, and other materials",
             "As a stand-alone system or in combination with agitator and injection pump"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "datasheet",
@@ -255,12 +266,14 @@
               ]
             }
           ],
-          "note": "1: Water to cement ratio = 1"
+          "note": "1: Water to cement ratio = 1",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Standard- och tillvalsutrustning"
+          "text": "Standard- och tillvalsutrustning",
+          "gen": true
         },
         {
           "type": "list",
@@ -269,7 +282,8 @@
             "Optional (High shear mixer): Water meter 3/4\" for exact water dosing (manual shut-off)",
             "Optional (High shear mixer): Automatic water meter 3/4\" with adjustable counter for exact water dosing",
             "Optional (High shear mixer): Auxiliary mixing unit 3x 400/460 V, 50/60 Hz (3.0/3.6 kW)"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "modules",
@@ -284,19 +298,22 @@
               "width": 946,
               "height": 1262
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "button",
           "kind": "download",
           "text": "Broschyr HCM 100 (PDF, engelska)",
-          "href": "/assets/docs/haeny-hcm100-brochure-en.pdf"
+          "href": "/assets/docs/haeny-hcm100-brochure-en.pdf",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 2,
           "text": "HCM 300",
-          "anchor": "hcm300"
+          "anchor": "hcm300",
+          "gen": true
         },
         {
           "type": "columns",
@@ -325,12 +342,14 @@
                 "Optional additional mixer for water/cement ratio &lt; 0.5 and microcements"
               ]
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Användning"
+          "text": "Användning",
+          "gen": true
         },
         {
           "type": "list",
@@ -338,7 +357,8 @@
           "items": [
             "Preparation of suspensions consisting of water, cement, ultra-fine binder, bentonite, sand, and other materials",
             "As a stand-alone system or in combination with agitator and injection pump"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "datasheet",
@@ -426,12 +446,14 @@
               ]
             }
           ],
-          "note": "1: Water to cement ratio = 1"
+          "note": "1: Water to cement ratio = 1",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Standard- och tillvalsutrustning"
+          "text": "Standard- och tillvalsutrustning",
+          "gen": true
         },
         {
           "type": "list",
@@ -440,7 +462,8 @@
             "Optional (High shear mixer): Water meter 1\" for exact water dosing (manual shut-off)",
             "Optional (High shear mixer): Automatic water meter 1\" with adjustable counter for exact water dosing",
             "Optional (High shear mixer): Auxiliary mixing unit 3x 400/460 V, 50/60 Hz (3.0/3.6 kW)"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "modules",
@@ -455,19 +478,22 @@
               "width": 1021,
               "height": 1262
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "button",
           "kind": "download",
           "text": "Broschyr HCM 300 (PDF, engelska)",
-          "href": "/assets/docs/haeny-hcm300-brochure-en.pdf"
+          "href": "/assets/docs/haeny-hcm300-brochure-en.pdf",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 2,
           "text": "HCM 600",
-          "anchor": "hcm600"
+          "anchor": "hcm600",
+          "gen": true
         },
         {
           "type": "columns",
@@ -496,12 +522,14 @@
                 "Optional additional mixer for water/cement ratio &lt; 0.5 and microcements"
               ]
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Användning"
+          "text": "Användning",
+          "gen": true
         },
         {
           "type": "list",
@@ -509,7 +537,8 @@
           "items": [
             "Preparation of suspensions consisting of water, cement, ultra-fine binder, bentonite, sand, and other materials",
             "As a stand-alone system or in combination with agitator and injection pump"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "datasheet",
@@ -597,12 +626,14 @@
               ]
             }
           ],
-          "note": "1: Water to cement ratio = 1"
+          "note": "1: Water to cement ratio = 1",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Standard- och tillvalsutrustning"
+          "text": "Standard- och tillvalsutrustning",
+          "gen": true
         },
         {
           "type": "list",
@@ -611,7 +642,8 @@
             "Optional (High shear mixer): Water meter 1½\" for exact water dosing (manual shut-off)",
             "Optional (High shear mixer): Automatic water meter 1½\" with adjustable counter for exact water dosing",
             "Optional (High shear mixer): Auxiliary mixing unit 3x 400/460 V, 50/60 Hz (3.0/3.6 kW)"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "modules",
@@ -626,19 +658,22 @@
               "width": 948,
               "height": 1262
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "button",
           "kind": "download",
           "text": "Broschyr HCM 600 (PDF, engelska)",
-          "href": "/assets/docs/haeny-hcm600-brochure-en.pdf"
+          "href": "/assets/docs/haeny-hcm600-brochure-en.pdf",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 2,
           "text": "HCM 800",
-          "anchor": "hcm800"
+          "anchor": "hcm800",
+          "gen": true
         },
         {
           "type": "columns",
@@ -668,12 +703,14 @@
                 "Cleaning opening (manhole) for easy cleaning"
               ]
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Användning"
+          "text": "Användning",
+          "gen": true
         },
         {
           "type": "list",
@@ -681,7 +718,8 @@
           "items": [
             "Preparation of suspensions consisting of water, cement, ultra-fine binder, bentonite, and other materials",
             "As a stand-alone system or in combination with agitator and injection pump"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "datasheet",
@@ -773,7 +811,8 @@
               ]
             }
           ],
-          "note": "1: Water to cement ratio = 1"
+          "note": "1: Water to cement ratio = 1",
+          "gen": true
         },
         {
           "type": "modules",
@@ -788,19 +827,22 @@
               "width": 574,
               "height": 1252
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "button",
           "kind": "download",
           "text": "Broschyr HCM 800 (PDF, engelska)",
-          "href": "/assets/docs/haeny-hcm800-brochure-en.pdf"
+          "href": "/assets/docs/haeny-hcm800-brochure-en.pdf",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 2,
           "text": "HCM 2500",
-          "anchor": "hcm2500"
+          "anchor": "hcm2500",
+          "gen": true
         },
         {
           "type": "columns",
@@ -830,12 +872,14 @@
                 "Cleaning opening (manhole) for easy cleaning"
               ]
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Användning"
+          "text": "Användning",
+          "gen": true
         },
         {
           "type": "list",
@@ -843,7 +887,8 @@
           "items": [
             "Preparation of suspensions consisting of water, cement, ultra-fine binder, bentonite, and other materials",
             "As a stand-alone system or in combination with agitator and injection pump"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "datasheet",
@@ -931,7 +976,8 @@
               ]
             }
           ],
-          "note": "1: Water to cement ratio = 1"
+          "note": "1: Water to cement ratio = 1",
+          "gen": true
         },
         {
           "type": "modules",
@@ -946,13 +992,15 @@
               "width": 670,
               "height": 1256
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "button",
           "kind": "download",
           "text": "Broschyr HCM 2500 (PDF, engelska)",
-          "href": "/assets/docs/haeny-hcm2500-brochure-en.pdf"
+          "href": "/assets/docs/haeny-hcm2500-brochure-en.pdf",
+          "gen": true
         },
         {
           "type": "text",
@@ -991,7 +1039,8 @@
         {
           "type": "heading",
           "level": 2,
-          "text": "Overview"
+          "text": "Overview",
+          "gen": true
         },
         {
           "type": "list",
@@ -1001,12 +1050,14 @@
             "Mixing tank with conical bottom and recirculation line",
             "Automatic lubrication of the shaft seal and lubricated 3-way valve for switching between mixing or transfer",
             "Optional additional mixer for water/cement ratio &lt; 0.5 and microcements"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Models"
+          "text": "Models",
+          "gen": true
         },
         {
           "type": "list",
@@ -1017,12 +1068,14 @@
             "<a href=\"#hcm600\">HCM 600</a>: 8 m³/h · 550 l · 9.2 / 10.5 kW",
             "<a href=\"#hcm800\">HCM 800</a>: 20 m³/h · 800 l · 22 / 25 kW",
             "<a href=\"#hcm2500\">HCM 2500</a>: 40 m³/h · 2,500 l · 45 / 53 kW"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Typical applications"
+          "text": "Typical applications",
+          "gen": true
         },
         {
           "type": "list",
@@ -1030,7 +1083,8 @@
           "items": [
             "Preparation of suspensions consisting of water, cement, ultra-fine binder, bentonite, sand, and other materials",
             "As a stand-alone system or in combination with agitator and injection pump"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "modules",
@@ -1078,13 +1132,15 @@
               "width": 629,
               "height": 662
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "heading",
           "level": 2,
           "text": "HCM 100",
-          "anchor": "hcm100"
+          "anchor": "hcm100",
+          "gen": true
         },
         {
           "type": "columns",
@@ -1113,12 +1169,14 @@
                 "Optional additional mixer for water/cement ratio &lt; 0.5 and microcements"
               ]
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Typical applications"
+          "text": "Typical applications",
+          "gen": true
         },
         {
           "type": "list",
@@ -1126,7 +1184,8 @@
           "items": [
             "Preparation of suspensions consisting of water, cement, ultra-fine binder, bentonite, sand, and other materials",
             "As a stand-alone system or in combination with agitator and injection pump"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "datasheet",
@@ -1214,12 +1273,14 @@
               ]
             }
           ],
-          "note": "1: Water to cement ratio = 1"
+          "note": "1: Water to cement ratio = 1",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Standard and optional equipment"
+          "text": "Standard and optional equipment",
+          "gen": true
         },
         {
           "type": "list",
@@ -1228,7 +1289,8 @@
             "Optional (High shear mixer): Water meter 3/4\" for exact water dosing (manual shut-off)",
             "Optional (High shear mixer): Automatic water meter 3/4\" with adjustable counter for exact water dosing",
             "Optional (High shear mixer): Auxiliary mixing unit 3x 400/460 V, 50/60 Hz (3.0/3.6 kW)"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "modules",
@@ -1243,19 +1305,22 @@
               "width": 946,
               "height": 1262
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "button",
           "kind": "download",
           "text": "Brochure HCM 100 (PDF)",
-          "href": "/assets/docs/haeny-hcm100-brochure-en.pdf"
+          "href": "/assets/docs/haeny-hcm100-brochure-en.pdf",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 2,
           "text": "HCM 300",
-          "anchor": "hcm300"
+          "anchor": "hcm300",
+          "gen": true
         },
         {
           "type": "columns",
@@ -1284,12 +1349,14 @@
                 "Optional additional mixer for water/cement ratio &lt; 0.5 and microcements"
               ]
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Typical applications"
+          "text": "Typical applications",
+          "gen": true
         },
         {
           "type": "list",
@@ -1297,7 +1364,8 @@
           "items": [
             "Preparation of suspensions consisting of water, cement, ultra-fine binder, bentonite, sand, and other materials",
             "As a stand-alone system or in combination with agitator and injection pump"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "datasheet",
@@ -1385,12 +1453,14 @@
               ]
             }
           ],
-          "note": "1: Water to cement ratio = 1"
+          "note": "1: Water to cement ratio = 1",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Standard and optional equipment"
+          "text": "Standard and optional equipment",
+          "gen": true
         },
         {
           "type": "list",
@@ -1399,7 +1469,8 @@
             "Optional (High shear mixer): Water meter 1\" for exact water dosing (manual shut-off)",
             "Optional (High shear mixer): Automatic water meter 1\" with adjustable counter for exact water dosing",
             "Optional (High shear mixer): Auxiliary mixing unit 3x 400/460 V, 50/60 Hz (3.0/3.6 kW)"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "modules",
@@ -1414,19 +1485,22 @@
               "width": 1021,
               "height": 1262
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "button",
           "kind": "download",
           "text": "Brochure HCM 300 (PDF)",
-          "href": "/assets/docs/haeny-hcm300-brochure-en.pdf"
+          "href": "/assets/docs/haeny-hcm300-brochure-en.pdf",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 2,
           "text": "HCM 600",
-          "anchor": "hcm600"
+          "anchor": "hcm600",
+          "gen": true
         },
         {
           "type": "columns",
@@ -1455,12 +1529,14 @@
                 "Optional additional mixer for water/cement ratio &lt; 0.5 and microcements"
               ]
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Typical applications"
+          "text": "Typical applications",
+          "gen": true
         },
         {
           "type": "list",
@@ -1468,7 +1544,8 @@
           "items": [
             "Preparation of suspensions consisting of water, cement, ultra-fine binder, bentonite, sand, and other materials",
             "As a stand-alone system or in combination with agitator and injection pump"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "datasheet",
@@ -1556,12 +1633,14 @@
               ]
             }
           ],
-          "note": "1: Water to cement ratio = 1"
+          "note": "1: Water to cement ratio = 1",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Standard and optional equipment"
+          "text": "Standard and optional equipment",
+          "gen": true
         },
         {
           "type": "list",
@@ -1570,7 +1649,8 @@
             "Optional (High shear mixer): Water meter 1½\" for exact water dosing (manual shut-off)",
             "Optional (High shear mixer): Automatic water meter 1½\" with adjustable counter for exact water dosing",
             "Optional (High shear mixer): Auxiliary mixing unit 3x 400/460 V, 50/60 Hz (3.0/3.6 kW)"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "modules",
@@ -1585,19 +1665,22 @@
               "width": 948,
               "height": 1262
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "button",
           "kind": "download",
           "text": "Brochure HCM 600 (PDF)",
-          "href": "/assets/docs/haeny-hcm600-brochure-en.pdf"
+          "href": "/assets/docs/haeny-hcm600-brochure-en.pdf",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 2,
           "text": "HCM 800",
-          "anchor": "hcm800"
+          "anchor": "hcm800",
+          "gen": true
         },
         {
           "type": "columns",
@@ -1627,12 +1710,14 @@
                 "Cleaning opening (manhole) for easy cleaning"
               ]
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Typical applications"
+          "text": "Typical applications",
+          "gen": true
         },
         {
           "type": "list",
@@ -1640,7 +1725,8 @@
           "items": [
             "Preparation of suspensions consisting of water, cement, ultra-fine binder, bentonite, and other materials",
             "As a stand-alone system or in combination with agitator and injection pump"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "datasheet",
@@ -1732,7 +1818,8 @@
               ]
             }
           ],
-          "note": "1: Water to cement ratio = 1"
+          "note": "1: Water to cement ratio = 1",
+          "gen": true
         },
         {
           "type": "modules",
@@ -1747,19 +1834,22 @@
               "width": 574,
               "height": 1252
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "button",
           "kind": "download",
           "text": "Brochure HCM 800 (PDF)",
-          "href": "/assets/docs/haeny-hcm800-brochure-en.pdf"
+          "href": "/assets/docs/haeny-hcm800-brochure-en.pdf",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 2,
           "text": "HCM 2500",
-          "anchor": "hcm2500"
+          "anchor": "hcm2500",
+          "gen": true
         },
         {
           "type": "columns",
@@ -1789,12 +1879,14 @@
                 "Cleaning opening (manhole) for easy cleaning"
               ]
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Typical applications"
+          "text": "Typical applications",
+          "gen": true
         },
         {
           "type": "list",
@@ -1802,7 +1894,8 @@
           "items": [
             "Preparation of suspensions consisting of water, cement, ultra-fine binder, bentonite, and other materials",
             "As a stand-alone system or in combination with agitator and injection pump"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "datasheet",
@@ -1890,7 +1983,8 @@
               ]
             }
           ],
-          "note": "1: Water to cement ratio = 1"
+          "note": "1: Water to cement ratio = 1",
+          "gen": true
         },
         {
           "type": "modules",
@@ -1905,13 +1999,15 @@
               "width": 670,
               "height": 1256
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "button",
           "kind": "download",
           "text": "Brochure HCM 2500 (PDF)",
-          "href": "/assets/docs/haeny-hcm2500-brochure-en.pdf"
+          "href": "/assets/docs/haeny-hcm2500-brochure-en.pdf",
+          "gen": true
         },
         {
           "type": "text",
@@ -1950,7 +2046,8 @@
         {
           "type": "heading",
           "level": 2,
-          "text": "Resumen"
+          "text": "Resumen",
+          "gen": true
         },
         {
           "type": "list",
@@ -1960,12 +2057,14 @@
             "Mixing tank with conical bottom and recirculation line",
             "Automatic lubrication of the shaft seal and lubricated 3-way valve for switching between mixing or transfer",
             "Optional additional mixer for water/cement ratio &lt; 0.5 and microcements"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Modelos"
+          "text": "Modelos",
+          "gen": true
         },
         {
           "type": "list",
@@ -1976,12 +2075,14 @@
             "<a href=\"#hcm600\">HCM 600</a>: 8 m³/h · 550 l · 9.2 / 10.5 kW",
             "<a href=\"#hcm800\">HCM 800</a>: 20 m³/h · 800 l · 22 / 25 kW",
             "<a href=\"#hcm2500\">HCM 2500</a>: 40 m³/h · 2,500 l · 45 / 53 kW"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Aplicaciones típicas"
+          "text": "Aplicaciones típicas",
+          "gen": true
         },
         {
           "type": "list",
@@ -1989,7 +2090,8 @@
           "items": [
             "Preparation of suspensions consisting of water, cement, ultra-fine binder, bentonite, sand, and other materials",
             "As a stand-alone system or in combination with agitator and injection pump"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "modules",
@@ -2037,13 +2139,15 @@
               "width": 629,
               "height": 662
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "heading",
           "level": 2,
           "text": "HCM 100",
-          "anchor": "hcm100"
+          "anchor": "hcm100",
+          "gen": true
         },
         {
           "type": "columns",
@@ -2072,12 +2176,14 @@
                 "Optional additional mixer for water/cement ratio &lt; 0.5 and microcements"
               ]
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Aplicaciones típicas"
+          "text": "Aplicaciones típicas",
+          "gen": true
         },
         {
           "type": "list",
@@ -2085,7 +2191,8 @@
           "items": [
             "Preparation of suspensions consisting of water, cement, ultra-fine binder, bentonite, sand, and other materials",
             "As a stand-alone system or in combination with agitator and injection pump"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "datasheet",
@@ -2173,12 +2280,14 @@
               ]
             }
           ],
-          "note": "1: Water to cement ratio = 1"
+          "note": "1: Water to cement ratio = 1",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Equipamiento estándar y opcional"
+          "text": "Equipamiento estándar y opcional",
+          "gen": true
         },
         {
           "type": "list",
@@ -2187,7 +2296,8 @@
             "Optional (High shear mixer): Water meter 3/4\" for exact water dosing (manual shut-off)",
             "Optional (High shear mixer): Automatic water meter 3/4\" with adjustable counter for exact water dosing",
             "Optional (High shear mixer): Auxiliary mixing unit 3x 400/460 V, 50/60 Hz (3.0/3.6 kW)"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "modules",
@@ -2202,19 +2312,22 @@
               "width": 946,
               "height": 1262
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "button",
           "kind": "download",
           "text": "Folleto HCM 100 (PDF, inglés)",
-          "href": "/assets/docs/haeny-hcm100-brochure-en.pdf"
+          "href": "/assets/docs/haeny-hcm100-brochure-en.pdf",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 2,
           "text": "HCM 300",
-          "anchor": "hcm300"
+          "anchor": "hcm300",
+          "gen": true
         },
         {
           "type": "columns",
@@ -2243,12 +2356,14 @@
                 "Optional additional mixer for water/cement ratio &lt; 0.5 and microcements"
               ]
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Aplicaciones típicas"
+          "text": "Aplicaciones típicas",
+          "gen": true
         },
         {
           "type": "list",
@@ -2256,7 +2371,8 @@
           "items": [
             "Preparation of suspensions consisting of water, cement, ultra-fine binder, bentonite, sand, and other materials",
             "As a stand-alone system or in combination with agitator and injection pump"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "datasheet",
@@ -2344,12 +2460,14 @@
               ]
             }
           ],
-          "note": "1: Water to cement ratio = 1"
+          "note": "1: Water to cement ratio = 1",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Equipamiento estándar y opcional"
+          "text": "Equipamiento estándar y opcional",
+          "gen": true
         },
         {
           "type": "list",
@@ -2358,7 +2476,8 @@
             "Optional (High shear mixer): Water meter 1\" for exact water dosing (manual shut-off)",
             "Optional (High shear mixer): Automatic water meter 1\" with adjustable counter for exact water dosing",
             "Optional (High shear mixer): Auxiliary mixing unit 3x 400/460 V, 50/60 Hz (3.0/3.6 kW)"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "modules",
@@ -2373,19 +2492,22 @@
               "width": 1021,
               "height": 1262
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "button",
           "kind": "download",
           "text": "Folleto HCM 300 (PDF, inglés)",
-          "href": "/assets/docs/haeny-hcm300-brochure-en.pdf"
+          "href": "/assets/docs/haeny-hcm300-brochure-en.pdf",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 2,
           "text": "HCM 600",
-          "anchor": "hcm600"
+          "anchor": "hcm600",
+          "gen": true
         },
         {
           "type": "columns",
@@ -2414,12 +2536,14 @@
                 "Optional additional mixer for water/cement ratio &lt; 0.5 and microcements"
               ]
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Aplicaciones típicas"
+          "text": "Aplicaciones típicas",
+          "gen": true
         },
         {
           "type": "list",
@@ -2427,7 +2551,8 @@
           "items": [
             "Preparation of suspensions consisting of water, cement, ultra-fine binder, bentonite, sand, and other materials",
             "As a stand-alone system or in combination with agitator and injection pump"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "datasheet",
@@ -2515,12 +2640,14 @@
               ]
             }
           ],
-          "note": "1: Water to cement ratio = 1"
+          "note": "1: Water to cement ratio = 1",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Equipamiento estándar y opcional"
+          "text": "Equipamiento estándar y opcional",
+          "gen": true
         },
         {
           "type": "list",
@@ -2529,7 +2656,8 @@
             "Optional (High shear mixer): Water meter 1½\" for exact water dosing (manual shut-off)",
             "Optional (High shear mixer): Automatic water meter 1½\" with adjustable counter for exact water dosing",
             "Optional (High shear mixer): Auxiliary mixing unit 3x 400/460 V, 50/60 Hz (3.0/3.6 kW)"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "modules",
@@ -2544,19 +2672,22 @@
               "width": 948,
               "height": 1262
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "button",
           "kind": "download",
           "text": "Folleto HCM 600 (PDF, inglés)",
-          "href": "/assets/docs/haeny-hcm600-brochure-en.pdf"
+          "href": "/assets/docs/haeny-hcm600-brochure-en.pdf",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 2,
           "text": "HCM 800",
-          "anchor": "hcm800"
+          "anchor": "hcm800",
+          "gen": true
         },
         {
           "type": "columns",
@@ -2586,12 +2717,14 @@
                 "Cleaning opening (manhole) for easy cleaning"
               ]
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Aplicaciones típicas"
+          "text": "Aplicaciones típicas",
+          "gen": true
         },
         {
           "type": "list",
@@ -2599,7 +2732,8 @@
           "items": [
             "Preparation of suspensions consisting of water, cement, ultra-fine binder, bentonite, and other materials",
             "As a stand-alone system or in combination with agitator and injection pump"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "datasheet",
@@ -2691,7 +2825,8 @@
               ]
             }
           ],
-          "note": "1: Water to cement ratio = 1"
+          "note": "1: Water to cement ratio = 1",
+          "gen": true
         },
         {
           "type": "modules",
@@ -2706,19 +2841,22 @@
               "width": 574,
               "height": 1252
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "button",
           "kind": "download",
           "text": "Folleto HCM 800 (PDF, inglés)",
-          "href": "/assets/docs/haeny-hcm800-brochure-en.pdf"
+          "href": "/assets/docs/haeny-hcm800-brochure-en.pdf",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 2,
           "text": "HCM 2500",
-          "anchor": "hcm2500"
+          "anchor": "hcm2500",
+          "gen": true
         },
         {
           "type": "columns",
@@ -2748,12 +2886,14 @@
                 "Cleaning opening (manhole) for easy cleaning"
               ]
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Aplicaciones típicas"
+          "text": "Aplicaciones típicas",
+          "gen": true
         },
         {
           "type": "list",
@@ -2761,7 +2901,8 @@
           "items": [
             "Preparation of suspensions consisting of water, cement, ultra-fine binder, bentonite, and other materials",
             "As a stand-alone system or in combination with agitator and injection pump"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "datasheet",
@@ -2849,7 +2990,8 @@
               ]
             }
           ],
-          "note": "1: Water to cement ratio = 1"
+          "note": "1: Water to cement ratio = 1",
+          "gen": true
         },
         {
           "type": "modules",
@@ -2864,13 +3006,15 @@
               "width": 670,
               "height": 1256
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "button",
           "kind": "download",
           "text": "Folleto HCM 2500 (PDF, inglés)",
-          "href": "/assets/docs/haeny-hcm2500-brochure-en.pdf"
+          "href": "/assets/docs/haeny-hcm2500-brochure-en.pdf",
+          "gen": true
         },
         {
           "type": "text",
@@ -2909,7 +3053,8 @@
         {
           "type": "heading",
           "level": 2,
-          "text": "Oversikt"
+          "text": "Oversikt",
+          "gen": true
         },
         {
           "type": "list",
@@ -2919,12 +3064,14 @@
             "Mixing tank with conical bottom and recirculation line",
             "Automatic lubrication of the shaft seal and lubricated 3-way valve for switching between mixing or transfer",
             "Optional additional mixer for water/cement ratio &lt; 0.5 and microcements"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Modeller"
+          "text": "Modeller",
+          "gen": true
         },
         {
           "type": "list",
@@ -2935,12 +3082,14 @@
             "<a href=\"#hcm600\">HCM 600</a>: 8 m³/h · 550 l · 9.2 / 10.5 kW",
             "<a href=\"#hcm800\">HCM 800</a>: 20 m³/h · 800 l · 22 / 25 kW",
             "<a href=\"#hcm2500\">HCM 2500</a>: 40 m³/h · 2,500 l · 45 / 53 kW"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Bruksområder"
+          "text": "Bruksområder",
+          "gen": true
         },
         {
           "type": "list",
@@ -2948,7 +3097,8 @@
           "items": [
             "Preparation of suspensions consisting of water, cement, ultra-fine binder, bentonite, sand, and other materials",
             "As a stand-alone system or in combination with agitator and injection pump"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "modules",
@@ -2996,13 +3146,15 @@
               "width": 629,
               "height": 662
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "heading",
           "level": 2,
           "text": "HCM 100",
-          "anchor": "hcm100"
+          "anchor": "hcm100",
+          "gen": true
         },
         {
           "type": "columns",
@@ -3031,12 +3183,14 @@
                 "Optional additional mixer for water/cement ratio &lt; 0.5 and microcements"
               ]
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Bruksområder"
+          "text": "Bruksområder",
+          "gen": true
         },
         {
           "type": "list",
@@ -3044,7 +3198,8 @@
           "items": [
             "Preparation of suspensions consisting of water, cement, ultra-fine binder, bentonite, sand, and other materials",
             "As a stand-alone system or in combination with agitator and injection pump"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "datasheet",
@@ -3132,12 +3287,14 @@
               ]
             }
           ],
-          "note": "1: Water to cement ratio = 1"
+          "note": "1: Water to cement ratio = 1",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Standard- og tilvalgsutstyr"
+          "text": "Standard- og tilvalgsutstyr",
+          "gen": true
         },
         {
           "type": "list",
@@ -3146,7 +3303,8 @@
             "Optional (High shear mixer): Water meter 3/4\" for exact water dosing (manual shut-off)",
             "Optional (High shear mixer): Automatic water meter 3/4\" with adjustable counter for exact water dosing",
             "Optional (High shear mixer): Auxiliary mixing unit 3x 400/460 V, 50/60 Hz (3.0/3.6 kW)"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "modules",
@@ -3161,19 +3319,22 @@
               "width": 946,
               "height": 1262
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "button",
           "kind": "download",
           "text": "Brosjyre HCM 100 (PDF, engelsk)",
-          "href": "/assets/docs/haeny-hcm100-brochure-en.pdf"
+          "href": "/assets/docs/haeny-hcm100-brochure-en.pdf",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 2,
           "text": "HCM 300",
-          "anchor": "hcm300"
+          "anchor": "hcm300",
+          "gen": true
         },
         {
           "type": "columns",
@@ -3202,12 +3363,14 @@
                 "Optional additional mixer for water/cement ratio &lt; 0.5 and microcements"
               ]
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Bruksområder"
+          "text": "Bruksområder",
+          "gen": true
         },
         {
           "type": "list",
@@ -3215,7 +3378,8 @@
           "items": [
             "Preparation of suspensions consisting of water, cement, ultra-fine binder, bentonite, sand, and other materials",
             "As a stand-alone system or in combination with agitator and injection pump"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "datasheet",
@@ -3303,12 +3467,14 @@
               ]
             }
           ],
-          "note": "1: Water to cement ratio = 1"
+          "note": "1: Water to cement ratio = 1",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Standard- og tilvalgsutstyr"
+          "text": "Standard- og tilvalgsutstyr",
+          "gen": true
         },
         {
           "type": "list",
@@ -3317,7 +3483,8 @@
             "Optional (High shear mixer): Water meter 1\" for exact water dosing (manual shut-off)",
             "Optional (High shear mixer): Automatic water meter 1\" with adjustable counter for exact water dosing",
             "Optional (High shear mixer): Auxiliary mixing unit 3x 400/460 V, 50/60 Hz (3.0/3.6 kW)"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "modules",
@@ -3332,19 +3499,22 @@
               "width": 1021,
               "height": 1262
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "button",
           "kind": "download",
           "text": "Brosjyre HCM 300 (PDF, engelsk)",
-          "href": "/assets/docs/haeny-hcm300-brochure-en.pdf"
+          "href": "/assets/docs/haeny-hcm300-brochure-en.pdf",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 2,
           "text": "HCM 600",
-          "anchor": "hcm600"
+          "anchor": "hcm600",
+          "gen": true
         },
         {
           "type": "columns",
@@ -3373,12 +3543,14 @@
                 "Optional additional mixer for water/cement ratio &lt; 0.5 and microcements"
               ]
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Bruksområder"
+          "text": "Bruksområder",
+          "gen": true
         },
         {
           "type": "list",
@@ -3386,7 +3558,8 @@
           "items": [
             "Preparation of suspensions consisting of water, cement, ultra-fine binder, bentonite, sand, and other materials",
             "As a stand-alone system or in combination with agitator and injection pump"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "datasheet",
@@ -3474,12 +3647,14 @@
               ]
             }
           ],
-          "note": "1: Water to cement ratio = 1"
+          "note": "1: Water to cement ratio = 1",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Standard- og tilvalgsutstyr"
+          "text": "Standard- og tilvalgsutstyr",
+          "gen": true
         },
         {
           "type": "list",
@@ -3488,7 +3663,8 @@
             "Optional (High shear mixer): Water meter 1½\" for exact water dosing (manual shut-off)",
             "Optional (High shear mixer): Automatic water meter 1½\" with adjustable counter for exact water dosing",
             "Optional (High shear mixer): Auxiliary mixing unit 3x 400/460 V, 50/60 Hz (3.0/3.6 kW)"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "modules",
@@ -3503,19 +3679,22 @@
               "width": 948,
               "height": 1262
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "button",
           "kind": "download",
           "text": "Brosjyre HCM 600 (PDF, engelsk)",
-          "href": "/assets/docs/haeny-hcm600-brochure-en.pdf"
+          "href": "/assets/docs/haeny-hcm600-brochure-en.pdf",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 2,
           "text": "HCM 800",
-          "anchor": "hcm800"
+          "anchor": "hcm800",
+          "gen": true
         },
         {
           "type": "columns",
@@ -3545,12 +3724,14 @@
                 "Cleaning opening (manhole) for easy cleaning"
               ]
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Bruksområder"
+          "text": "Bruksområder",
+          "gen": true
         },
         {
           "type": "list",
@@ -3558,7 +3739,8 @@
           "items": [
             "Preparation of suspensions consisting of water, cement, ultra-fine binder, bentonite, and other materials",
             "As a stand-alone system or in combination with agitator and injection pump"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "datasheet",
@@ -3650,7 +3832,8 @@
               ]
             }
           ],
-          "note": "1: Water to cement ratio = 1"
+          "note": "1: Water to cement ratio = 1",
+          "gen": true
         },
         {
           "type": "modules",
@@ -3665,19 +3848,22 @@
               "width": 574,
               "height": 1252
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "button",
           "kind": "download",
           "text": "Brosjyre HCM 800 (PDF, engelsk)",
-          "href": "/assets/docs/haeny-hcm800-brochure-en.pdf"
+          "href": "/assets/docs/haeny-hcm800-brochure-en.pdf",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 2,
           "text": "HCM 2500",
-          "anchor": "hcm2500"
+          "anchor": "hcm2500",
+          "gen": true
         },
         {
           "type": "columns",
@@ -3707,12 +3893,14 @@
                 "Cleaning opening (manhole) for easy cleaning"
               ]
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Bruksområder"
+          "text": "Bruksområder",
+          "gen": true
         },
         {
           "type": "list",
@@ -3720,7 +3908,8 @@
           "items": [
             "Preparation of suspensions consisting of water, cement, ultra-fine binder, bentonite, and other materials",
             "As a stand-alone system or in combination with agitator and injection pump"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "datasheet",
@@ -3808,7 +3997,8 @@
               ]
             }
           ],
-          "note": "1: Water to cement ratio = 1"
+          "note": "1: Water to cement ratio = 1",
+          "gen": true
         },
         {
           "type": "modules",
@@ -3823,13 +4013,15 @@
               "width": 670,
               "height": 1256
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "button",
           "kind": "download",
           "text": "Brosjyre HCM 2500 (PDF, engelsk)",
-          "href": "/assets/docs/haeny-hcm2500-brochure-en.pdf"
+          "href": "/assets/docs/haeny-hcm2500-brochure-en.pdf",
+          "gen": true
         },
         {
           "type": "text",

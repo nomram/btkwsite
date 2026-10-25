@@ -2,7 +2,7 @@
   "path": "/produkter/haeny/hitta-ratt-maskin/kompakta-anlaggningar",
   "updated": "2026-10-23",
   "template": "product",
-  "order": 4,
+  "order": 3,
   "published": true,
   "i18n": {
     "sv": {
@@ -32,7 +32,8 @@
         {
           "type": "heading",
           "level": 2,
-          "text": "Översikt"
+          "text": "Översikt",
+          "gen": true
         },
         {
           "type": "list",
@@ -42,12 +43,14 @@
             "High productivity due to ergonomically positioned operating elements",
             "High reliability and low-maintenance operation with good accessibility to the wear parts",
             "Independent of pressure ratios, the suction stroke is always carried out at high velocity in order to flush the valves and to avoid clogging"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Modeller"
+          "text": "Modeller",
+          "gen": true
         },
         {
           "type": "list",
@@ -66,12 +69,14 @@
             "<a href=\"#ic1400-712v\">IC 1400/712</a> (ZMP 712): 4.9 m³/h · 88 bar · 550 l",
             "<a href=\"#ic1400-725v\">IC 1400/725</a> (ZMP 725): 8 m³/h · 100 bar · 550 l",
             "<a href=\"#ic1400-726v\">IC 1400/726</a> (ZMP 726): 8 m³/h · 100 bar · 550 l"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Användning"
+          "text": "Användning",
+          "gen": true
         },
         {
           "type": "list",
@@ -79,13 +84,15 @@
           "items": [
             "Grouting of anchors, soil nails, tension cables as well as for sleeve pipe, rock, and contact injections",
             "Preparation and pumping of bentonite suspensions for pipe jacking and microtunneling"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "heading",
           "level": 2,
           "text": "IC 310",
-          "anchor": "ic310"
+          "anchor": "ic310",
+          "gen": true
         },
         {
           "type": "columns",
@@ -94,9 +101,9 @@
             {
               "type": "image",
               "alt": "Compact Grout Plant IC 310",
-              "width": 1083,
-              "height": 1169,
-              "src": "/assets/img/haeny-manuella-pumpar-ic-310-ic-311.webp"
+              "width": 409,
+              "height": 495,
+              "src": "/assets/img/haeny-ic310-unit.webp"
             }
           ],
           "right": [
@@ -114,12 +121,14 @@
                 "Independent of pressure ratios, the suction stroke is always carried out at high velocity in order to flush the valves and to avoid clogging"
               ]
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Användning"
+          "text": "Användning",
+          "gen": true
         },
         {
           "type": "list",
@@ -127,7 +136,8 @@
           "items": [
             "Grouting of anchors, soil nails, tension cables as well as for sleeve pipe, rock, and contact injections",
             "Preparation and pumping of bentonite suspensions for pipe jacking and microtunneling"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "datasheet",
@@ -232,12 +242,14 @@
               ]
             }
           ],
-          "note": "1: Water to cement ratio = 1"
+          "note": "1: Water to cement ratio = 1",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Standard- och tillvalsutrustning"
+          "text": "Standard- och tillvalsutrustning",
+          "gen": true
         },
         {
           "type": "list",
@@ -254,7 +266,8 @@
             "Control: Mixer ON-OFF",
             "Control: Agitator ON-OFF",
             "Control: Pump ON-OFF"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "modules",
@@ -276,19 +289,22 @@
               "width": 1124,
               "height": 986
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "button",
           "kind": "download",
           "text": "Broschyr IC 310 (PDF, engelska)",
-          "href": "/assets/docs/haeny-ic310-brochure-en.pdf"
+          "href": "/assets/docs/haeny-ic310-brochure-en.pdf",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 2,
           "text": "IC 311",
-          "anchor": "ic311"
+          "anchor": "ic311",
+          "gen": true
         },
         {
           "type": "columns",
@@ -297,9 +313,9 @@
             {
               "type": "image",
               "alt": "Compact Grout Plant IC 311",
-              "width": 1083,
-              "height": 1169,
-              "src": "/assets/img/haeny-manuella-pumpar-ic-310-ic-311.webp"
+              "width": 422,
+              "height": 517,
+              "src": "/assets/img/haeny-ic311-unit.webp"
             }
           ],
           "right": [
@@ -317,12 +333,14 @@
                 "Independent of pressure ratios, the suction stroke is always carried out at high velocity in order to flush the valves and to avoid clogging"
               ]
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Användning"
+          "text": "Användning",
+          "gen": true
         },
         {
           "type": "list",
@@ -330,7 +348,8 @@
           "items": [
             "Grouting of anchors, soil nails, tension cables as well as for sleeve pipe, rock, and contact injections",
             "Preparation and pumping of bentonite suspensions for pipe jacking and microtunneling"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "datasheet",
@@ -435,12 +454,14 @@
               ]
             }
           ],
-          "note": "1: Water to cement ratio = 1"
+          "note": "1: Water to cement ratio = 1",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Standard- och tillvalsutrustning"
+          "text": "Standard- och tillvalsutrustning",
+          "gen": true
         },
         {
           "type": "list",
@@ -457,7 +478,8 @@
             "Control: Mixer ON-OFF",
             "Control: Agitator ON-OFF",
             "Control: Pump ON-OFF"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "modules",
@@ -479,19 +501,22 @@
               "width": 1124,
               "height": 985
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "button",
           "kind": "download",
           "text": "Broschyr IC 311 (PDF, engelska)",
-          "href": "/assets/docs/haeny-ic311-brochure-en.pdf"
+          "href": "/assets/docs/haeny-ic311-brochure-en.pdf",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 2,
           "text": "IC 325",
-          "anchor": "ic325"
+          "anchor": "ic325",
+          "gen": true
         },
         {
           "type": "columns",
@@ -500,9 +525,9 @@
             {
               "type": "image",
               "alt": "Compact Grout Plant IC 325",
-              "width": 1083,
-              "height": 1169,
-              "src": "/assets/img/haeny-manuella-pumpar-ic-310-ic-311.webp"
+              "width": 391,
+              "height": 463,
+              "src": "/assets/img/haeny-ic325-unit.webp"
             }
           ],
           "right": [
@@ -520,12 +545,14 @@
                 "Independent of pressure ratios, the suction stroke is always carried out at high velocity in order to flush the valves and to avoid clogging"
               ]
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Användning"
+          "text": "Användning",
+          "gen": true
         },
         {
           "type": "list",
@@ -533,7 +560,8 @@
           "items": [
             "Grouting of anchors, soil nails, tension cables as well as for sleeve pipe, rock, and contact injections",
             "Preparation and pumping of bentonite suspensions for pipe jacking and microtunneling"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "datasheet",
@@ -638,12 +666,14 @@
               ]
             }
           ],
-          "note": "1: Water to cement ratio = 1"
+          "note": "1: Water to cement ratio = 1",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Standard- och tillvalsutrustning"
+          "text": "Standard- och tillvalsutrustning",
+          "gen": true
         },
         {
           "type": "list",
@@ -660,7 +690,8 @@
             "Control: Mixer ON-OFF",
             "Control: Agitator ON-OFF",
             "Control: Pump ON-OFF"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "modules",
@@ -682,19 +713,22 @@
               "width": 1124,
               "height": 994
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "button",
           "kind": "download",
           "text": "Broschyr IC 325 (PDF, engelska)",
-          "href": "/assets/docs/haeny-ic325-brochure-en.pdf"
+          "href": "/assets/docs/haeny-ic325-brochure-en.pdf",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 2,
           "text": "IC 650/710",
-          "anchor": "ic650-710v"
+          "anchor": "ic650-710v",
+          "gen": true
         },
         {
           "type": "columns",
@@ -703,9 +737,9 @@
             {
               "type": "image",
               "alt": "Compact Grout Plant IC 650/710",
-              "width": 1000,
-              "height": 1000,
-              "src": "/assets/img/haeny-finder-ic.webp"
+              "width": 581,
+              "height": 430,
+              "src": "/assets/img/haeny-ic650-710v-unit.webp"
             }
           ],
           "right": [
@@ -723,12 +757,14 @@
                 "Independent of pressure ratios, the suction stroke is always carried out at high velocity in order to flush the valves and to avoid clogging"
               ]
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Användning"
+          "text": "Användning",
+          "gen": true
         },
         {
           "type": "list",
@@ -736,7 +772,8 @@
           "items": [
             "Grouting of anchors, soil nails, tension cables as well as for sleeve pipe, rock, and contact injections",
             "Preparation and pumping of bentonite suspensions for pipe jacking and microtunneling"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "datasheet",
@@ -841,12 +878,14 @@
               ]
             }
           ],
-          "note": "1: Water to cement ratio = 1"
+          "note": "1: Water to cement ratio = 1",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Standard- och tillvalsutrustning"
+          "text": "Standard- och tillvalsutrustning",
+          "gen": true
         },
         {
           "type": "list",
@@ -865,7 +904,8 @@
             "Control: Mixer ON-OFF",
             "Control: Agitator ON-OFF",
             "Control: Pump ON-OFF"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "modules",
@@ -887,19 +927,22 @@
               "width": 1124,
               "height": 932
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "button",
           "kind": "download",
           "text": "Broschyr IC 650/710 (PDF, engelska)",
-          "href": "/assets/docs/haeny-ic650-710v-brochure-en.pdf"
+          "href": "/assets/docs/haeny-ic650-710v-brochure-en.pdf",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 2,
           "text": "IC 650/712",
-          "anchor": "ic650-712v"
+          "anchor": "ic650-712v",
+          "gen": true
         },
         {
           "type": "columns",
@@ -908,9 +951,9 @@
             {
               "type": "image",
               "alt": "Compact Grout Plant IC 650/712",
-              "width": 1000,
-              "height": 1000,
-              "src": "/assets/img/haeny-finder-ic.webp"
+              "width": 538,
+              "height": 398,
+              "src": "/assets/img/haeny-ic650-712v-unit.webp"
             }
           ],
           "right": [
@@ -928,12 +971,14 @@
                 "Independent of pressure ratios, the suction stroke is always carried out at high velocity in order to flush the valves and to avoid clogging"
               ]
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Användning"
+          "text": "Användning",
+          "gen": true
         },
         {
           "type": "list",
@@ -941,7 +986,8 @@
           "items": [
             "Grouting of anchors, soil nails, tension cables as well as for sleeve pipe, rock, and contact injections",
             "Preparation and pumping of bentonite suspensions for pipe jacking and microtunneling"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "datasheet",
@@ -1046,12 +1092,14 @@
               ]
             }
           ],
-          "note": "1: Water to cement ratio = 1"
+          "note": "1: Water to cement ratio = 1",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Standard- och tillvalsutrustning"
+          "text": "Standard- och tillvalsutrustning",
+          "gen": true
         },
         {
           "type": "list",
@@ -1069,7 +1117,8 @@
             "Control: Mixer ON-OFF",
             "Control: Agitator ON-OFF",
             "Control: Pump ON-OFF"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "modules",
@@ -1091,19 +1140,22 @@
               "width": 1124,
               "height": 935
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "button",
           "kind": "download",
           "text": "Broschyr IC 650/712 (PDF, engelska)",
-          "href": "/assets/docs/haeny-ic650-712v-brochure-en.pdf"
+          "href": "/assets/docs/haeny-ic650-712v-brochure-en.pdf",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 2,
           "text": "IC 650/725",
-          "anchor": "ic650-725v"
+          "anchor": "ic650-725v",
+          "gen": true
         },
         {
           "type": "columns",
@@ -1112,9 +1164,9 @@
             {
               "type": "image",
               "alt": "Compact Grout Plant IC 650/725",
-              "width": 1000,
-              "height": 1000,
-              "src": "/assets/img/haeny-finder-ic.webp"
+              "width": 518,
+              "height": 370,
+              "src": "/assets/img/haeny-ic650-725v-unit.webp"
             }
           ],
           "right": [
@@ -1132,12 +1184,14 @@
                 "Independent of pressure ratios, the suction stroke is always carried out at high velocity in order to flush the valves and to avoid clogging"
               ]
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Användning"
+          "text": "Användning",
+          "gen": true
         },
         {
           "type": "list",
@@ -1145,7 +1199,8 @@
           "items": [
             "Grouting of anchors, soil nails, tension cables as well as for sleeve pipe, rock, and contact injections",
             "Preparation and pumping of bentonite suspensions for pipe jacking and microtunneling"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "datasheet",
@@ -1250,12 +1305,14 @@
               ]
             }
           ],
-          "note": "1: Water to cement ratio = 1"
+          "note": "1: Water to cement ratio = 1",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Standard- och tillvalsutrustning"
+          "text": "Standard- och tillvalsutrustning",
+          "gen": true
         },
         {
           "type": "list",
@@ -1274,7 +1331,8 @@
             "Control: Mixer ON-OFF",
             "Control: Agitator ON-OFF",
             "Control: Pump ON-OFF"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "modules",
@@ -1296,19 +1354,22 @@
               "width": 1124,
               "height": 926
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "button",
           "kind": "download",
           "text": "Broschyr IC 650/725 (PDF, engelska)",
-          "href": "/assets/docs/haeny-ic650-725v-brochure-en.pdf"
+          "href": "/assets/docs/haeny-ic650-725v-brochure-en.pdf",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 2,
           "text": "IC 1100/710",
-          "anchor": "ic1100-710v"
+          "anchor": "ic1100-710v",
+          "gen": true
         },
         {
           "type": "columns",
@@ -1317,9 +1378,9 @@
             {
               "type": "image",
               "alt": "Compact Grout Plant IC 1100/710",
-              "width": 1000,
-              "height": 1000,
-              "src": "/assets/img/haeny-finder-ic1100.webp"
+              "width": 541,
+              "height": 518,
+              "src": "/assets/img/haeny-ic1100-710v-unit.webp"
             }
           ],
           "right": [
@@ -1337,12 +1398,14 @@
                 "Independent of pressure ratios, the suction stroke is always carried out at high velocity in order to flush the valves and to avoid clogging"
               ]
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Användning"
+          "text": "Användning",
+          "gen": true
         },
         {
           "type": "list",
@@ -1350,7 +1413,8 @@
           "items": [
             "Grouting of anchors, soil nails, tension cables as well as for sleeve pipe, rock, and contact injections",
             "Preparation and pumping of bentonite suspensions for pipe jacking and microtunneling"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "datasheet",
@@ -1455,12 +1519,14 @@
               ]
             }
           ],
-          "note": "1: Water to cement ratio = 1"
+          "note": "1: Water to cement ratio = 1",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Standard- och tillvalsutrustning"
+          "text": "Standard- och tillvalsutrustning",
+          "gen": true
         },
         {
           "type": "list",
@@ -1479,7 +1545,8 @@
             "Control: Mixer ON-OFF",
             "Control: Agitator ON-OFF",
             "Control: Pump ON-OFF"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "modules",
@@ -1501,19 +1568,22 @@
               "width": 1124,
               "height": 898
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "button",
           "kind": "download",
           "text": "Broschyr IC 1100/710 (PDF, engelska)",
-          "href": "/assets/docs/haeny-ic1100-710v-brochure-en.pdf"
+          "href": "/assets/docs/haeny-ic1100-710v-brochure-en.pdf",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 2,
           "text": "IC 1100/712",
-          "anchor": "ic1100-712v"
+          "anchor": "ic1100-712v",
+          "gen": true
         },
         {
           "type": "columns",
@@ -1522,9 +1592,9 @@
             {
               "type": "image",
               "alt": "Compact Grout Plant IC 1100/712",
-              "width": 1000,
-              "height": 1000,
-              "src": "/assets/img/haeny-finder-ic1100.webp"
+              "width": 541,
+              "height": 517,
+              "src": "/assets/img/haeny-ic1100-712v-unit.webp"
             }
           ],
           "right": [
@@ -1542,12 +1612,14 @@
                 "Independent of pressure ratios, the suction stroke is always carried out at high velocity in order to flush the valves and to avoid clogging"
               ]
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Användning"
+          "text": "Användning",
+          "gen": true
         },
         {
           "type": "list",
@@ -1555,7 +1627,8 @@
           "items": [
             "Grouting of anchors, soil nails, tension cables as well as for sleeve pipe, rock, and contact injections",
             "Preparation and pumping of bentonite suspensions for pipe jacking and microtunneling"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "datasheet",
@@ -1660,12 +1733,14 @@
               ]
             }
           ],
-          "note": "1: Water to cement ratio = 1"
+          "note": "1: Water to cement ratio = 1",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Standard- och tillvalsutrustning"
+          "text": "Standard- och tillvalsutrustning",
+          "gen": true
         },
         {
           "type": "list",
@@ -1683,7 +1758,8 @@
             "Control: Mixer ON-OFF",
             "Control: Agitator ON-OFF",
             "Control: Pump ON-OFF"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "modules",
@@ -1705,19 +1781,22 @@
               "width": 1124,
               "height": 921
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "button",
           "kind": "download",
           "text": "Broschyr IC 1100/712 (PDF, engelska)",
-          "href": "/assets/docs/haeny-ic1100-712v-brochure-en.pdf"
+          "href": "/assets/docs/haeny-ic1100-712v-brochure-en.pdf",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 2,
           "text": "IC 1100/725",
-          "anchor": "ic1100-725v"
+          "anchor": "ic1100-725v",
+          "gen": true
         },
         {
           "type": "columns",
@@ -1726,9 +1805,9 @@
             {
               "type": "image",
               "alt": "Compact Grout Plant IC 1100/725",
-              "width": 1000,
-              "height": 1000,
-              "src": "/assets/img/haeny-finder-ic1100.webp"
+              "width": 560,
+              "height": 515,
+              "src": "/assets/img/haeny-ic1100-725v-unit.webp"
             }
           ],
           "right": [
@@ -1746,12 +1825,14 @@
                 "Independent of pressure ratios, the suction stroke is always carried out at high velocity in order to flush the valves and to avoid clogging"
               ]
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Användning"
+          "text": "Användning",
+          "gen": true
         },
         {
           "type": "list",
@@ -1759,7 +1840,8 @@
           "items": [
             "Grouting of anchors, soil nails, tension cables as well as for sleeve pipe, rock, and contact injections",
             "Preparation and pumping of bentonite suspensions for pipe jacking and microtunneling"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "datasheet",
@@ -1864,12 +1946,14 @@
               ]
             }
           ],
-          "note": "1: Water to cement ratio = 1"
+          "note": "1: Water to cement ratio = 1",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Standard- och tillvalsutrustning"
+          "text": "Standard- och tillvalsutrustning",
+          "gen": true
         },
         {
           "type": "list",
@@ -1888,7 +1972,8 @@
             "Control: Mixer ON-OFF",
             "Control: Agitator ON-OFF",
             "Control: Pump ON-OFF"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "modules",
@@ -1910,19 +1995,22 @@
               "width": 1124,
               "height": 917
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "button",
           "kind": "download",
           "text": "Broschyr IC 1100/725 (PDF, engelska)",
-          "href": "/assets/docs/haeny-ic1100-725v-brochure-en.pdf"
+          "href": "/assets/docs/haeny-ic1100-725v-brochure-en.pdf",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 2,
           "text": "IC 1400/710",
-          "anchor": "ic1400-710v"
+          "anchor": "ic1400-710v",
+          "gen": true
         },
         {
           "type": "columns",
@@ -1931,9 +2019,9 @@
             {
               "type": "image",
               "alt": "Compact Grout Plant IC 1400/710",
-              "width": 1000,
-              "height": 1000,
-              "src": "/assets/img/haeny-finder-ic1100.webp"
+              "width": 483,
+              "height": 443,
+              "src": "/assets/img/haeny-ic1400-710v-unit.webp"
             }
           ],
           "right": [
@@ -1951,12 +2039,14 @@
                 "Independent of pressure ratios, the suction stroke is always carried out at high velocity in order to flush the valves and to avoid clogging"
               ]
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Användning"
+          "text": "Användning",
+          "gen": true
         },
         {
           "type": "list",
@@ -1964,7 +2054,8 @@
           "items": [
             "Grouting of anchors, soil nails, tension cables as well as for sleeve pipe, rock, and contact injections",
             "Preparation and pumping of bentonite suspensions for pipe jacking and microtunneling"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "datasheet",
@@ -2069,12 +2160,14 @@
               ]
             }
           ],
-          "note": "1: Water to cement ratio = 1"
+          "note": "1: Water to cement ratio = 1",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Standard- och tillvalsutrustning"
+          "text": "Standard- och tillvalsutrustning",
+          "gen": true
         },
         {
           "type": "list",
@@ -2093,7 +2186,8 @@
             "Control: Mixer ON-OFF",
             "Control: Agitator ON-OFF",
             "Control: Pump ON-OFF"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "modules",
@@ -2115,19 +2209,22 @@
               "width": 1124,
               "height": 920
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "button",
           "kind": "download",
           "text": "Broschyr IC 1400/710 (PDF, engelska)",
-          "href": "/assets/docs/haeny-ic1400-710v-brochure-en.pdf"
+          "href": "/assets/docs/haeny-ic1400-710v-brochure-en.pdf",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 2,
           "text": "IC 1400/712",
-          "anchor": "ic1400-712v"
+          "anchor": "ic1400-712v",
+          "gen": true
         },
         {
           "type": "columns",
@@ -2136,9 +2233,9 @@
             {
               "type": "image",
               "alt": "Compact Grout Plant IC 1400/712",
-              "width": 1000,
-              "height": 1000,
-              "src": "/assets/img/haeny-finder-ic1100.webp"
+              "width": 536,
+              "height": 492,
+              "src": "/assets/img/haeny-ic1400-712v-unit.webp"
             }
           ],
           "right": [
@@ -2156,12 +2253,14 @@
                 "Independent of pressure ratios, the suction stroke is always carried out at high velocity in order to flush the valves and to avoid clogging"
               ]
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Användning"
+          "text": "Användning",
+          "gen": true
         },
         {
           "type": "list",
@@ -2169,7 +2268,8 @@
           "items": [
             "Grouting of anchors, soil nails, tension cables as well as for sleeve pipe, rock, and contact injections",
             "Preparation and pumping of bentonite suspensions for pipe jacking and microtunneling"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "datasheet",
@@ -2274,12 +2374,14 @@
               ]
             }
           ],
-          "note": "1: Water to cement ratio = 1"
+          "note": "1: Water to cement ratio = 1",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Standard- och tillvalsutrustning"
+          "text": "Standard- och tillvalsutrustning",
+          "gen": true
         },
         {
           "type": "list",
@@ -2297,7 +2399,8 @@
             "Control: Mixer ON-OFF",
             "Control: Agitator ON-OFF",
             "Control: Pump ON-OFF"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "modules",
@@ -2319,19 +2422,22 @@
               "width": 1124,
               "height": 943
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "button",
           "kind": "download",
           "text": "Broschyr IC 1400/712 (PDF, engelska)",
-          "href": "/assets/docs/haeny-ic1400-712v-brochure-en.pdf"
+          "href": "/assets/docs/haeny-ic1400-712v-brochure-en.pdf",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 2,
           "text": "IC 1400/725",
-          "anchor": "ic1400-725v"
+          "anchor": "ic1400-725v",
+          "gen": true
         },
         {
           "type": "columns",
@@ -2340,9 +2446,9 @@
             {
               "type": "image",
               "alt": "Compact Grout Plant IC 1400/725",
-              "width": 1000,
-              "height": 1000,
-              "src": "/assets/img/haeny-finder-ic1100.webp"
+              "width": 561,
+              "height": 495,
+              "src": "/assets/img/haeny-ic1400-725v-unit.webp"
             }
           ],
           "right": [
@@ -2360,12 +2466,14 @@
                 "Independent of pressure ratios, the suction stroke is always carried out at high velocity in order to flush the valves and to avoid clogging"
               ]
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Användning"
+          "text": "Användning",
+          "gen": true
         },
         {
           "type": "list",
@@ -2373,7 +2481,8 @@
           "items": [
             "Grouting of anchors, soil nails, tension cables as well as for sleeve pipe, rock, and contact injections",
             "Preparation and pumping of bentonite suspensions for pipe jacking and microtunneling"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "datasheet",
@@ -2478,12 +2587,14 @@
               ]
             }
           ],
-          "note": "1: Water to cement ratio = 1"
+          "note": "1: Water to cement ratio = 1",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Standard- och tillvalsutrustning"
+          "text": "Standard- och tillvalsutrustning",
+          "gen": true
         },
         {
           "type": "list",
@@ -2502,7 +2613,8 @@
             "Control: Mixer ON-OFF",
             "Control: Agitator ON-OFF",
             "Control: Pump ON-OFF"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "modules",
@@ -2524,19 +2636,22 @@
               "width": 1124,
               "height": 957
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "button",
           "kind": "download",
           "text": "Broschyr IC 1400/725 (PDF, engelska)",
-          "href": "/assets/docs/haeny-ic1400-725v-brochure-en.pdf"
+          "href": "/assets/docs/haeny-ic1400-725v-brochure-en.pdf",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 2,
           "text": "IC 1400/726",
-          "anchor": "ic1400-726v"
+          "anchor": "ic1400-726v",
+          "gen": true
         },
         {
           "type": "columns",
@@ -2545,9 +2660,9 @@
             {
               "type": "image",
               "alt": "Compact Grout Plant IC 1400/726",
-              "width": 1000,
-              "height": 1000,
-              "src": "/assets/img/haeny-finder-ic1100.webp"
+              "width": 551,
+              "height": 499,
+              "src": "/assets/img/haeny-ic1400-726v-unit.webp"
             }
           ],
           "right": [
@@ -2565,12 +2680,14 @@
                 "Independent of pressure ratios, the suction stroke is always carried out at high velocity in order to flush the valves and to avoid clogging"
               ]
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Användning"
+          "text": "Användning",
+          "gen": true
         },
         {
           "type": "list",
@@ -2578,7 +2695,8 @@
           "items": [
             "Grouting of anchors, soil nails, tension cables as well as for sleeve pipe, rock, and contact injections",
             "Preparation and pumping of bentonite suspensions for pipe jacking and microtunneling"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "datasheet",
@@ -2683,12 +2801,14 @@
               ]
             }
           ],
-          "note": "1: Water to cement ratio = 1"
+          "note": "1: Water to cement ratio = 1",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Standard- och tillvalsutrustning"
+          "text": "Standard- och tillvalsutrustning",
+          "gen": true
         },
         {
           "type": "list",
@@ -2706,7 +2826,8 @@
             "Control: Mixer ON-OFF",
             "Control: Agitator ON-OFF",
             "Control: Pump ON-OFF"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "modules",
@@ -2728,13 +2849,15 @@
               "width": 1124,
               "height": 932
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "button",
           "kind": "download",
           "text": "Broschyr IC 1400/726 (PDF, engelska)",
-          "href": "/assets/docs/haeny-ic1400-726v-brochure-en.pdf"
+          "href": "/assets/docs/haeny-ic1400-726v-brochure-en.pdf",
+          "gen": true
         },
         {
           "type": "related",
@@ -2743,7 +2866,8 @@
               "href": "/produkter/haeny/manuella-pumpar",
               "mutual": true
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "text",
@@ -2782,7 +2906,8 @@
         {
           "type": "heading",
           "level": 2,
-          "text": "Overview"
+          "text": "Overview",
+          "gen": true
         },
         {
           "type": "list",
@@ -2792,12 +2917,14 @@
             "High productivity due to ergonomically positioned operating elements",
             "High reliability and low-maintenance operation with good accessibility to the wear parts",
             "Independent of pressure ratios, the suction stroke is always carried out at high velocity in order to flush the valves and to avoid clogging"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Models"
+          "text": "Models",
+          "gen": true
         },
         {
           "type": "list",
@@ -2816,12 +2943,14 @@
             "<a href=\"#ic1400-712v\">IC 1400/712</a> (ZMP 712): 4.9 m³/h · 88 bar · 550 l",
             "<a href=\"#ic1400-725v\">IC 1400/725</a> (ZMP 725): 8 m³/h · 100 bar · 550 l",
             "<a href=\"#ic1400-726v\">IC 1400/726</a> (ZMP 726): 8 m³/h · 100 bar · 550 l"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Typical applications"
+          "text": "Typical applications",
+          "gen": true
         },
         {
           "type": "list",
@@ -2829,13 +2958,15 @@
           "items": [
             "Grouting of anchors, soil nails, tension cables as well as for sleeve pipe, rock, and contact injections",
             "Preparation and pumping of bentonite suspensions for pipe jacking and microtunneling"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "heading",
           "level": 2,
           "text": "IC 310",
-          "anchor": "ic310"
+          "anchor": "ic310",
+          "gen": true
         },
         {
           "type": "columns",
@@ -2844,9 +2975,9 @@
             {
               "type": "image",
               "alt": "Compact Grout Plant IC 310",
-              "width": 1083,
-              "height": 1169,
-              "src": "/assets/img/haeny-manuella-pumpar-ic-310-ic-311.webp"
+              "width": 409,
+              "height": 495,
+              "src": "/assets/img/haeny-ic310-unit.webp"
             }
           ],
           "right": [
@@ -2864,12 +2995,14 @@
                 "Independent of pressure ratios, the suction stroke is always carried out at high velocity in order to flush the valves and to avoid clogging"
               ]
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Typical applications"
+          "text": "Typical applications",
+          "gen": true
         },
         {
           "type": "list",
@@ -2877,7 +3010,8 @@
           "items": [
             "Grouting of anchors, soil nails, tension cables as well as for sleeve pipe, rock, and contact injections",
             "Preparation and pumping of bentonite suspensions for pipe jacking and microtunneling"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "datasheet",
@@ -2982,12 +3116,14 @@
               ]
             }
           ],
-          "note": "1: Water to cement ratio = 1"
+          "note": "1: Water to cement ratio = 1",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Standard and optional equipment"
+          "text": "Standard and optional equipment",
+          "gen": true
         },
         {
           "type": "list",
@@ -3004,7 +3140,8 @@
             "Control: Mixer ON-OFF",
             "Control: Agitator ON-OFF",
             "Control: Pump ON-OFF"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "modules",
@@ -3026,19 +3163,22 @@
               "width": 1124,
               "height": 986
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "button",
           "kind": "download",
           "text": "Brochure IC 310 (PDF)",
-          "href": "/assets/docs/haeny-ic310-brochure-en.pdf"
+          "href": "/assets/docs/haeny-ic310-brochure-en.pdf",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 2,
           "text": "IC 311",
-          "anchor": "ic311"
+          "anchor": "ic311",
+          "gen": true
         },
         {
           "type": "columns",
@@ -3047,9 +3187,9 @@
             {
               "type": "image",
               "alt": "Compact Grout Plant IC 311",
-              "width": 1083,
-              "height": 1169,
-              "src": "/assets/img/haeny-manuella-pumpar-ic-310-ic-311.webp"
+              "width": 422,
+              "height": 517,
+              "src": "/assets/img/haeny-ic311-unit.webp"
             }
           ],
           "right": [
@@ -3067,12 +3207,14 @@
                 "Independent of pressure ratios, the suction stroke is always carried out at high velocity in order to flush the valves and to avoid clogging"
               ]
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Typical applications"
+          "text": "Typical applications",
+          "gen": true
         },
         {
           "type": "list",
@@ -3080,7 +3222,8 @@
           "items": [
             "Grouting of anchors, soil nails, tension cables as well as for sleeve pipe, rock, and contact injections",
             "Preparation and pumping of bentonite suspensions for pipe jacking and microtunneling"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "datasheet",
@@ -3185,12 +3328,14 @@
               ]
             }
           ],
-          "note": "1: Water to cement ratio = 1"
+          "note": "1: Water to cement ratio = 1",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Standard and optional equipment"
+          "text": "Standard and optional equipment",
+          "gen": true
         },
         {
           "type": "list",
@@ -3207,7 +3352,8 @@
             "Control: Mixer ON-OFF",
             "Control: Agitator ON-OFF",
             "Control: Pump ON-OFF"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "modules",
@@ -3229,19 +3375,22 @@
               "width": 1124,
               "height": 985
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "button",
           "kind": "download",
           "text": "Brochure IC 311 (PDF)",
-          "href": "/assets/docs/haeny-ic311-brochure-en.pdf"
+          "href": "/assets/docs/haeny-ic311-brochure-en.pdf",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 2,
           "text": "IC 325",
-          "anchor": "ic325"
+          "anchor": "ic325",
+          "gen": true
         },
         {
           "type": "columns",
@@ -3250,9 +3399,9 @@
             {
               "type": "image",
               "alt": "Compact Grout Plant IC 325",
-              "width": 1083,
-              "height": 1169,
-              "src": "/assets/img/haeny-manuella-pumpar-ic-310-ic-311.webp"
+              "width": 391,
+              "height": 463,
+              "src": "/assets/img/haeny-ic325-unit.webp"
             }
           ],
           "right": [
@@ -3270,12 +3419,14 @@
                 "Independent of pressure ratios, the suction stroke is always carried out at high velocity in order to flush the valves and to avoid clogging"
               ]
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Typical applications"
+          "text": "Typical applications",
+          "gen": true
         },
         {
           "type": "list",
@@ -3283,7 +3434,8 @@
           "items": [
             "Grouting of anchors, soil nails, tension cables as well as for sleeve pipe, rock, and contact injections",
             "Preparation and pumping of bentonite suspensions for pipe jacking and microtunneling"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "datasheet",
@@ -3388,12 +3540,14 @@
               ]
             }
           ],
-          "note": "1: Water to cement ratio = 1"
+          "note": "1: Water to cement ratio = 1",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Standard and optional equipment"
+          "text": "Standard and optional equipment",
+          "gen": true
         },
         {
           "type": "list",
@@ -3410,7 +3564,8 @@
             "Control: Mixer ON-OFF",
             "Control: Agitator ON-OFF",
             "Control: Pump ON-OFF"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "modules",
@@ -3432,19 +3587,22 @@
               "width": 1124,
               "height": 994
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "button",
           "kind": "download",
           "text": "Brochure IC 325 (PDF)",
-          "href": "/assets/docs/haeny-ic325-brochure-en.pdf"
+          "href": "/assets/docs/haeny-ic325-brochure-en.pdf",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 2,
           "text": "IC 650/710",
-          "anchor": "ic650-710v"
+          "anchor": "ic650-710v",
+          "gen": true
         },
         {
           "type": "columns",
@@ -3453,9 +3611,9 @@
             {
               "type": "image",
               "alt": "Compact Grout Plant IC 650/710",
-              "width": 1000,
-              "height": 1000,
-              "src": "/assets/img/haeny-finder-ic.webp"
+              "width": 581,
+              "height": 430,
+              "src": "/assets/img/haeny-ic650-710v-unit.webp"
             }
           ],
           "right": [
@@ -3473,12 +3631,14 @@
                 "Independent of pressure ratios, the suction stroke is always carried out at high velocity in order to flush the valves and to avoid clogging"
               ]
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Typical applications"
+          "text": "Typical applications",
+          "gen": true
         },
         {
           "type": "list",
@@ -3486,7 +3646,8 @@
           "items": [
             "Grouting of anchors, soil nails, tension cables as well as for sleeve pipe, rock, and contact injections",
             "Preparation and pumping of bentonite suspensions for pipe jacking and microtunneling"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "datasheet",
@@ -3591,12 +3752,14 @@
               ]
             }
           ],
-          "note": "1: Water to cement ratio = 1"
+          "note": "1: Water to cement ratio = 1",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Standard and optional equipment"
+          "text": "Standard and optional equipment",
+          "gen": true
         },
         {
           "type": "list",
@@ -3615,7 +3778,8 @@
             "Control: Mixer ON-OFF",
             "Control: Agitator ON-OFF",
             "Control: Pump ON-OFF"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "modules",
@@ -3637,19 +3801,22 @@
               "width": 1124,
               "height": 932
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "button",
           "kind": "download",
           "text": "Brochure IC 650/710 (PDF)",
-          "href": "/assets/docs/haeny-ic650-710v-brochure-en.pdf"
+          "href": "/assets/docs/haeny-ic650-710v-brochure-en.pdf",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 2,
           "text": "IC 650/712",
-          "anchor": "ic650-712v"
+          "anchor": "ic650-712v",
+          "gen": true
         },
         {
           "type": "columns",
@@ -3658,9 +3825,9 @@
             {
               "type": "image",
               "alt": "Compact Grout Plant IC 650/712",
-              "width": 1000,
-              "height": 1000,
-              "src": "/assets/img/haeny-finder-ic.webp"
+              "width": 538,
+              "height": 398,
+              "src": "/assets/img/haeny-ic650-712v-unit.webp"
             }
           ],
           "right": [
@@ -3678,12 +3845,14 @@
                 "Independent of pressure ratios, the suction stroke is always carried out at high velocity in order to flush the valves and to avoid clogging"
               ]
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Typical applications"
+          "text": "Typical applications",
+          "gen": true
         },
         {
           "type": "list",
@@ -3691,7 +3860,8 @@
           "items": [
             "Grouting of anchors, soil nails, tension cables as well as for sleeve pipe, rock, and contact injections",
             "Preparation and pumping of bentonite suspensions for pipe jacking and microtunneling"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "datasheet",
@@ -3796,12 +3966,14 @@
               ]
             }
           ],
-          "note": "1: Water to cement ratio = 1"
+          "note": "1: Water to cement ratio = 1",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Standard and optional equipment"
+          "text": "Standard and optional equipment",
+          "gen": true
         },
         {
           "type": "list",
@@ -3819,7 +3991,8 @@
             "Control: Mixer ON-OFF",
             "Control: Agitator ON-OFF",
             "Control: Pump ON-OFF"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "modules",
@@ -3841,19 +4014,22 @@
               "width": 1124,
               "height": 935
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "button",
           "kind": "download",
           "text": "Brochure IC 650/712 (PDF)",
-          "href": "/assets/docs/haeny-ic650-712v-brochure-en.pdf"
+          "href": "/assets/docs/haeny-ic650-712v-brochure-en.pdf",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 2,
           "text": "IC 650/725",
-          "anchor": "ic650-725v"
+          "anchor": "ic650-725v",
+          "gen": true
         },
         {
           "type": "columns",
@@ -3862,9 +4038,9 @@
             {
               "type": "image",
               "alt": "Compact Grout Plant IC 650/725",
-              "width": 1000,
-              "height": 1000,
-              "src": "/assets/img/haeny-finder-ic.webp"
+              "width": 518,
+              "height": 370,
+              "src": "/assets/img/haeny-ic650-725v-unit.webp"
             }
           ],
           "right": [
@@ -3882,12 +4058,14 @@
                 "Independent of pressure ratios, the suction stroke is always carried out at high velocity in order to flush the valves and to avoid clogging"
               ]
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Typical applications"
+          "text": "Typical applications",
+          "gen": true
         },
         {
           "type": "list",
@@ -3895,7 +4073,8 @@
           "items": [
             "Grouting of anchors, soil nails, tension cables as well as for sleeve pipe, rock, and contact injections",
             "Preparation and pumping of bentonite suspensions for pipe jacking and microtunneling"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "datasheet",
@@ -4000,12 +4179,14 @@
               ]
             }
           ],
-          "note": "1: Water to cement ratio = 1"
+          "note": "1: Water to cement ratio = 1",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Standard and optional equipment"
+          "text": "Standard and optional equipment",
+          "gen": true
         },
         {
           "type": "list",
@@ -4024,7 +4205,8 @@
             "Control: Mixer ON-OFF",
             "Control: Agitator ON-OFF",
             "Control: Pump ON-OFF"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "modules",
@@ -4046,19 +4228,22 @@
               "width": 1124,
               "height": 926
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "button",
           "kind": "download",
           "text": "Brochure IC 650/725 (PDF)",
-          "href": "/assets/docs/haeny-ic650-725v-brochure-en.pdf"
+          "href": "/assets/docs/haeny-ic650-725v-brochure-en.pdf",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 2,
           "text": "IC 1100/710",
-          "anchor": "ic1100-710v"
+          "anchor": "ic1100-710v",
+          "gen": true
         },
         {
           "type": "columns",
@@ -4067,9 +4252,9 @@
             {
               "type": "image",
               "alt": "Compact Grout Plant IC 1100/710",
-              "width": 1000,
-              "height": 1000,
-              "src": "/assets/img/haeny-finder-ic1100.webp"
+              "width": 541,
+              "height": 518,
+              "src": "/assets/img/haeny-ic1100-710v-unit.webp"
             }
           ],
           "right": [
@@ -4087,12 +4272,14 @@
                 "Independent of pressure ratios, the suction stroke is always carried out at high velocity in order to flush the valves and to avoid clogging"
               ]
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Typical applications"
+          "text": "Typical applications",
+          "gen": true
         },
         {
           "type": "list",
@@ -4100,7 +4287,8 @@
           "items": [
             "Grouting of anchors, soil nails, tension cables as well as for sleeve pipe, rock, and contact injections",
             "Preparation and pumping of bentonite suspensions for pipe jacking and microtunneling"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "datasheet",
@@ -4205,12 +4393,14 @@
               ]
             }
           ],
-          "note": "1: Water to cement ratio = 1"
+          "note": "1: Water to cement ratio = 1",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Standard and optional equipment"
+          "text": "Standard and optional equipment",
+          "gen": true
         },
         {
           "type": "list",
@@ -4229,7 +4419,8 @@
             "Control: Mixer ON-OFF",
             "Control: Agitator ON-OFF",
             "Control: Pump ON-OFF"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "modules",
@@ -4251,19 +4442,22 @@
               "width": 1124,
               "height": 898
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "button",
           "kind": "download",
           "text": "Brochure IC 1100/710 (PDF)",
-          "href": "/assets/docs/haeny-ic1100-710v-brochure-en.pdf"
+          "href": "/assets/docs/haeny-ic1100-710v-brochure-en.pdf",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 2,
           "text": "IC 1100/712",
-          "anchor": "ic1100-712v"
+          "anchor": "ic1100-712v",
+          "gen": true
         },
         {
           "type": "columns",
@@ -4272,9 +4466,9 @@
             {
               "type": "image",
               "alt": "Compact Grout Plant IC 1100/712",
-              "width": 1000,
-              "height": 1000,
-              "src": "/assets/img/haeny-finder-ic1100.webp"
+              "width": 541,
+              "height": 517,
+              "src": "/assets/img/haeny-ic1100-712v-unit.webp"
             }
           ],
           "right": [
@@ -4292,12 +4486,14 @@
                 "Independent of pressure ratios, the suction stroke is always carried out at high velocity in order to flush the valves and to avoid clogging"
               ]
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Typical applications"
+          "text": "Typical applications",
+          "gen": true
         },
         {
           "type": "list",
@@ -4305,7 +4501,8 @@
           "items": [
             "Grouting of anchors, soil nails, tension cables as well as for sleeve pipe, rock, and contact injections",
             "Preparation and pumping of bentonite suspensions for pipe jacking and microtunneling"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "datasheet",
@@ -4410,12 +4607,14 @@
               ]
             }
           ],
-          "note": "1: Water to cement ratio = 1"
+          "note": "1: Water to cement ratio = 1",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Standard and optional equipment"
+          "text": "Standard and optional equipment",
+          "gen": true
         },
         {
           "type": "list",
@@ -4433,7 +4632,8 @@
             "Control: Mixer ON-OFF",
             "Control: Agitator ON-OFF",
             "Control: Pump ON-OFF"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "modules",
@@ -4455,19 +4655,22 @@
               "width": 1124,
               "height": 921
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "button",
           "kind": "download",
           "text": "Brochure IC 1100/712 (PDF)",
-          "href": "/assets/docs/haeny-ic1100-712v-brochure-en.pdf"
+          "href": "/assets/docs/haeny-ic1100-712v-brochure-en.pdf",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 2,
           "text": "IC 1100/725",
-          "anchor": "ic1100-725v"
+          "anchor": "ic1100-725v",
+          "gen": true
         },
         {
           "type": "columns",
@@ -4476,9 +4679,9 @@
             {
               "type": "image",
               "alt": "Compact Grout Plant IC 1100/725",
-              "width": 1000,
-              "height": 1000,
-              "src": "/assets/img/haeny-finder-ic1100.webp"
+              "width": 560,
+              "height": 515,
+              "src": "/assets/img/haeny-ic1100-725v-unit.webp"
             }
           ],
           "right": [
@@ -4496,12 +4699,14 @@
                 "Independent of pressure ratios, the suction stroke is always carried out at high velocity in order to flush the valves and to avoid clogging"
               ]
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Typical applications"
+          "text": "Typical applications",
+          "gen": true
         },
         {
           "type": "list",
@@ -4509,7 +4714,8 @@
           "items": [
             "Grouting of anchors, soil nails, tension cables as well as for sleeve pipe, rock, and contact injections",
             "Preparation and pumping of bentonite suspensions for pipe jacking and microtunneling"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "datasheet",
@@ -4614,12 +4820,14 @@
               ]
             }
           ],
-          "note": "1: Water to cement ratio = 1"
+          "note": "1: Water to cement ratio = 1",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Standard and optional equipment"
+          "text": "Standard and optional equipment",
+          "gen": true
         },
         {
           "type": "list",
@@ -4638,7 +4846,8 @@
             "Control: Mixer ON-OFF",
             "Control: Agitator ON-OFF",
             "Control: Pump ON-OFF"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "modules",
@@ -4660,19 +4869,22 @@
               "width": 1124,
               "height": 917
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "button",
           "kind": "download",
           "text": "Brochure IC 1100/725 (PDF)",
-          "href": "/assets/docs/haeny-ic1100-725v-brochure-en.pdf"
+          "href": "/assets/docs/haeny-ic1100-725v-brochure-en.pdf",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 2,
           "text": "IC 1400/710",
-          "anchor": "ic1400-710v"
+          "anchor": "ic1400-710v",
+          "gen": true
         },
         {
           "type": "columns",
@@ -4681,9 +4893,9 @@
             {
               "type": "image",
               "alt": "Compact Grout Plant IC 1400/710",
-              "width": 1000,
-              "height": 1000,
-              "src": "/assets/img/haeny-finder-ic1100.webp"
+              "width": 483,
+              "height": 443,
+              "src": "/assets/img/haeny-ic1400-710v-unit.webp"
             }
           ],
           "right": [
@@ -4701,12 +4913,14 @@
                 "Independent of pressure ratios, the suction stroke is always carried out at high velocity in order to flush the valves and to avoid clogging"
               ]
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Typical applications"
+          "text": "Typical applications",
+          "gen": true
         },
         {
           "type": "list",
@@ -4714,7 +4928,8 @@
           "items": [
             "Grouting of anchors, soil nails, tension cables as well as for sleeve pipe, rock, and contact injections",
             "Preparation and pumping of bentonite suspensions for pipe jacking and microtunneling"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "datasheet",
@@ -4819,12 +5034,14 @@
               ]
             }
           ],
-          "note": "1: Water to cement ratio = 1"
+          "note": "1: Water to cement ratio = 1",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Standard and optional equipment"
+          "text": "Standard and optional equipment",
+          "gen": true
         },
         {
           "type": "list",
@@ -4843,7 +5060,8 @@
             "Control: Mixer ON-OFF",
             "Control: Agitator ON-OFF",
             "Control: Pump ON-OFF"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "modules",
@@ -4865,19 +5083,22 @@
               "width": 1124,
               "height": 920
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "button",
           "kind": "download",
           "text": "Brochure IC 1400/710 (PDF)",
-          "href": "/assets/docs/haeny-ic1400-710v-brochure-en.pdf"
+          "href": "/assets/docs/haeny-ic1400-710v-brochure-en.pdf",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 2,
           "text": "IC 1400/712",
-          "anchor": "ic1400-712v"
+          "anchor": "ic1400-712v",
+          "gen": true
         },
         {
           "type": "columns",
@@ -4886,9 +5107,9 @@
             {
               "type": "image",
               "alt": "Compact Grout Plant IC 1400/712",
-              "width": 1000,
-              "height": 1000,
-              "src": "/assets/img/haeny-finder-ic1100.webp"
+              "width": 536,
+              "height": 492,
+              "src": "/assets/img/haeny-ic1400-712v-unit.webp"
             }
           ],
           "right": [
@@ -4906,12 +5127,14 @@
                 "Independent of pressure ratios, the suction stroke is always carried out at high velocity in order to flush the valves and to avoid clogging"
               ]
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Typical applications"
+          "text": "Typical applications",
+          "gen": true
         },
         {
           "type": "list",
@@ -4919,7 +5142,8 @@
           "items": [
             "Grouting of anchors, soil nails, tension cables as well as for sleeve pipe, rock, and contact injections",
             "Preparation and pumping of bentonite suspensions for pipe jacking and microtunneling"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "datasheet",
@@ -5024,12 +5248,14 @@
               ]
             }
           ],
-          "note": "1: Water to cement ratio = 1"
+          "note": "1: Water to cement ratio = 1",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Standard and optional equipment"
+          "text": "Standard and optional equipment",
+          "gen": true
         },
         {
           "type": "list",
@@ -5047,7 +5273,8 @@
             "Control: Mixer ON-OFF",
             "Control: Agitator ON-OFF",
             "Control: Pump ON-OFF"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "modules",
@@ -5069,19 +5296,22 @@
               "width": 1124,
               "height": 943
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "button",
           "kind": "download",
           "text": "Brochure IC 1400/712 (PDF)",
-          "href": "/assets/docs/haeny-ic1400-712v-brochure-en.pdf"
+          "href": "/assets/docs/haeny-ic1400-712v-brochure-en.pdf",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 2,
           "text": "IC 1400/725",
-          "anchor": "ic1400-725v"
+          "anchor": "ic1400-725v",
+          "gen": true
         },
         {
           "type": "columns",
@@ -5090,9 +5320,9 @@
             {
               "type": "image",
               "alt": "Compact Grout Plant IC 1400/725",
-              "width": 1000,
-              "height": 1000,
-              "src": "/assets/img/haeny-finder-ic1100.webp"
+              "width": 561,
+              "height": 495,
+              "src": "/assets/img/haeny-ic1400-725v-unit.webp"
             }
           ],
           "right": [
@@ -5110,12 +5340,14 @@
                 "Independent of pressure ratios, the suction stroke is always carried out at high velocity in order to flush the valves and to avoid clogging"
               ]
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Typical applications"
+          "text": "Typical applications",
+          "gen": true
         },
         {
           "type": "list",
@@ -5123,7 +5355,8 @@
           "items": [
             "Grouting of anchors, soil nails, tension cables as well as for sleeve pipe, rock, and contact injections",
             "Preparation and pumping of bentonite suspensions for pipe jacking and microtunneling"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "datasheet",
@@ -5228,12 +5461,14 @@
               ]
             }
           ],
-          "note": "1: Water to cement ratio = 1"
+          "note": "1: Water to cement ratio = 1",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Standard and optional equipment"
+          "text": "Standard and optional equipment",
+          "gen": true
         },
         {
           "type": "list",
@@ -5252,7 +5487,8 @@
             "Control: Mixer ON-OFF",
             "Control: Agitator ON-OFF",
             "Control: Pump ON-OFF"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "modules",
@@ -5274,19 +5510,22 @@
               "width": 1124,
               "height": 957
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "button",
           "kind": "download",
           "text": "Brochure IC 1400/725 (PDF)",
-          "href": "/assets/docs/haeny-ic1400-725v-brochure-en.pdf"
+          "href": "/assets/docs/haeny-ic1400-725v-brochure-en.pdf",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 2,
           "text": "IC 1400/726",
-          "anchor": "ic1400-726v"
+          "anchor": "ic1400-726v",
+          "gen": true
         },
         {
           "type": "columns",
@@ -5295,9 +5534,9 @@
             {
               "type": "image",
               "alt": "Compact Grout Plant IC 1400/726",
-              "width": 1000,
-              "height": 1000,
-              "src": "/assets/img/haeny-finder-ic1100.webp"
+              "width": 551,
+              "height": 499,
+              "src": "/assets/img/haeny-ic1400-726v-unit.webp"
             }
           ],
           "right": [
@@ -5315,12 +5554,14 @@
                 "Independent of pressure ratios, the suction stroke is always carried out at high velocity in order to flush the valves and to avoid clogging"
               ]
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Typical applications"
+          "text": "Typical applications",
+          "gen": true
         },
         {
           "type": "list",
@@ -5328,7 +5569,8 @@
           "items": [
             "Grouting of anchors, soil nails, tension cables as well as for sleeve pipe, rock, and contact injections",
             "Preparation and pumping of bentonite suspensions for pipe jacking and microtunneling"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "datasheet",
@@ -5433,12 +5675,14 @@
               ]
             }
           ],
-          "note": "1: Water to cement ratio = 1"
+          "note": "1: Water to cement ratio = 1",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Standard and optional equipment"
+          "text": "Standard and optional equipment",
+          "gen": true
         },
         {
           "type": "list",
@@ -5456,7 +5700,8 @@
             "Control: Mixer ON-OFF",
             "Control: Agitator ON-OFF",
             "Control: Pump ON-OFF"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "modules",
@@ -5478,13 +5723,15 @@
               "width": 1124,
               "height": 932
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "button",
           "kind": "download",
           "text": "Brochure IC 1400/726 (PDF)",
-          "href": "/assets/docs/haeny-ic1400-726v-brochure-en.pdf"
+          "href": "/assets/docs/haeny-ic1400-726v-brochure-en.pdf",
+          "gen": true
         },
         {
           "type": "related",
@@ -5493,7 +5740,8 @@
               "href": "/produkter/haeny/manuella-pumpar",
               "mutual": true
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "text",
@@ -5532,7 +5780,8 @@
         {
           "type": "heading",
           "level": 2,
-          "text": "Resumen"
+          "text": "Resumen",
+          "gen": true
         },
         {
           "type": "list",
@@ -5542,12 +5791,14 @@
             "High productivity due to ergonomically positioned operating elements",
             "High reliability and low-maintenance operation with good accessibility to the wear parts",
             "Independent of pressure ratios, the suction stroke is always carried out at high velocity in order to flush the valves and to avoid clogging"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Modelos"
+          "text": "Modelos",
+          "gen": true
         },
         {
           "type": "list",
@@ -5566,12 +5817,14 @@
             "<a href=\"#ic1400-712v\">IC 1400/712</a> (ZMP 712): 4.9 m³/h · 88 bar · 550 l",
             "<a href=\"#ic1400-725v\">IC 1400/725</a> (ZMP 725): 8 m³/h · 100 bar · 550 l",
             "<a href=\"#ic1400-726v\">IC 1400/726</a> (ZMP 726): 8 m³/h · 100 bar · 550 l"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Aplicaciones típicas"
+          "text": "Aplicaciones típicas",
+          "gen": true
         },
         {
           "type": "list",
@@ -5579,13 +5832,15 @@
           "items": [
             "Grouting of anchors, soil nails, tension cables as well as for sleeve pipe, rock, and contact injections",
             "Preparation and pumping of bentonite suspensions for pipe jacking and microtunneling"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "heading",
           "level": 2,
           "text": "IC 310",
-          "anchor": "ic310"
+          "anchor": "ic310",
+          "gen": true
         },
         {
           "type": "columns",
@@ -5594,9 +5849,9 @@
             {
               "type": "image",
               "alt": "Compact Grout Plant IC 310",
-              "width": 1083,
-              "height": 1169,
-              "src": "/assets/img/haeny-manuella-pumpar-ic-310-ic-311.webp"
+              "width": 409,
+              "height": 495,
+              "src": "/assets/img/haeny-ic310-unit.webp"
             }
           ],
           "right": [
@@ -5614,12 +5869,14 @@
                 "Independent of pressure ratios, the suction stroke is always carried out at high velocity in order to flush the valves and to avoid clogging"
               ]
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Aplicaciones típicas"
+          "text": "Aplicaciones típicas",
+          "gen": true
         },
         {
           "type": "list",
@@ -5627,7 +5884,8 @@
           "items": [
             "Grouting of anchors, soil nails, tension cables as well as for sleeve pipe, rock, and contact injections",
             "Preparation and pumping of bentonite suspensions for pipe jacking and microtunneling"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "datasheet",
@@ -5732,12 +5990,14 @@
               ]
             }
           ],
-          "note": "1: Water to cement ratio = 1"
+          "note": "1: Water to cement ratio = 1",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Equipamiento estándar y opcional"
+          "text": "Equipamiento estándar y opcional",
+          "gen": true
         },
         {
           "type": "list",
@@ -5754,7 +6014,8 @@
             "Control: Mixer ON-OFF",
             "Control: Agitator ON-OFF",
             "Control: Pump ON-OFF"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "modules",
@@ -5776,19 +6037,22 @@
               "width": 1124,
               "height": 986
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "button",
           "kind": "download",
           "text": "Folleto IC 310 (PDF, inglés)",
-          "href": "/assets/docs/haeny-ic310-brochure-en.pdf"
+          "href": "/assets/docs/haeny-ic310-brochure-en.pdf",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 2,
           "text": "IC 311",
-          "anchor": "ic311"
+          "anchor": "ic311",
+          "gen": true
         },
         {
           "type": "columns",
@@ -5797,9 +6061,9 @@
             {
               "type": "image",
               "alt": "Compact Grout Plant IC 311",
-              "width": 1083,
-              "height": 1169,
-              "src": "/assets/img/haeny-manuella-pumpar-ic-310-ic-311.webp"
+              "width": 422,
+              "height": 517,
+              "src": "/assets/img/haeny-ic311-unit.webp"
             }
           ],
           "right": [
@@ -5817,12 +6081,14 @@
                 "Independent of pressure ratios, the suction stroke is always carried out at high velocity in order to flush the valves and to avoid clogging"
               ]
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Aplicaciones típicas"
+          "text": "Aplicaciones típicas",
+          "gen": true
         },
         {
           "type": "list",
@@ -5830,7 +6096,8 @@
           "items": [
             "Grouting of anchors, soil nails, tension cables as well as for sleeve pipe, rock, and contact injections",
             "Preparation and pumping of bentonite suspensions for pipe jacking and microtunneling"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "datasheet",
@@ -5935,12 +6202,14 @@
               ]
             }
           ],
-          "note": "1: Water to cement ratio = 1"
+          "note": "1: Water to cement ratio = 1",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Equipamiento estándar y opcional"
+          "text": "Equipamiento estándar y opcional",
+          "gen": true
         },
         {
           "type": "list",
@@ -5957,7 +6226,8 @@
             "Control: Mixer ON-OFF",
             "Control: Agitator ON-OFF",
             "Control: Pump ON-OFF"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "modules",
@@ -5979,19 +6249,22 @@
               "width": 1124,
               "height": 985
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "button",
           "kind": "download",
           "text": "Folleto IC 311 (PDF, inglés)",
-          "href": "/assets/docs/haeny-ic311-brochure-en.pdf"
+          "href": "/assets/docs/haeny-ic311-brochure-en.pdf",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 2,
           "text": "IC 325",
-          "anchor": "ic325"
+          "anchor": "ic325",
+          "gen": true
         },
         {
           "type": "columns",
@@ -6000,9 +6273,9 @@
             {
               "type": "image",
               "alt": "Compact Grout Plant IC 325",
-              "width": 1083,
-              "height": 1169,
-              "src": "/assets/img/haeny-manuella-pumpar-ic-310-ic-311.webp"
+              "width": 391,
+              "height": 463,
+              "src": "/assets/img/haeny-ic325-unit.webp"
             }
           ],
           "right": [
@@ -6020,12 +6293,14 @@
                 "Independent of pressure ratios, the suction stroke is always carried out at high velocity in order to flush the valves and to avoid clogging"
               ]
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Aplicaciones típicas"
+          "text": "Aplicaciones típicas",
+          "gen": true
         },
         {
           "type": "list",
@@ -6033,7 +6308,8 @@
           "items": [
             "Grouting of anchors, soil nails, tension cables as well as for sleeve pipe, rock, and contact injections",
             "Preparation and pumping of bentonite suspensions for pipe jacking and microtunneling"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "datasheet",
@@ -6138,12 +6414,14 @@
               ]
             }
           ],
-          "note": "1: Water to cement ratio = 1"
+          "note": "1: Water to cement ratio = 1",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Equipamiento estándar y opcional"
+          "text": "Equipamiento estándar y opcional",
+          "gen": true
         },
         {
           "type": "list",
@@ -6160,7 +6438,8 @@
             "Control: Mixer ON-OFF",
             "Control: Agitator ON-OFF",
             "Control: Pump ON-OFF"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "modules",
@@ -6182,19 +6461,22 @@
               "width": 1124,
               "height": 994
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "button",
           "kind": "download",
           "text": "Folleto IC 325 (PDF, inglés)",
-          "href": "/assets/docs/haeny-ic325-brochure-en.pdf"
+          "href": "/assets/docs/haeny-ic325-brochure-en.pdf",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 2,
           "text": "IC 650/710",
-          "anchor": "ic650-710v"
+          "anchor": "ic650-710v",
+          "gen": true
         },
         {
           "type": "columns",
@@ -6203,9 +6485,9 @@
             {
               "type": "image",
               "alt": "Compact Grout Plant IC 650/710",
-              "width": 1000,
-              "height": 1000,
-              "src": "/assets/img/haeny-finder-ic.webp"
+              "width": 581,
+              "height": 430,
+              "src": "/assets/img/haeny-ic650-710v-unit.webp"
             }
           ],
           "right": [
@@ -6223,12 +6505,14 @@
                 "Independent of pressure ratios, the suction stroke is always carried out at high velocity in order to flush the valves and to avoid clogging"
               ]
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Aplicaciones típicas"
+          "text": "Aplicaciones típicas",
+          "gen": true
         },
         {
           "type": "list",
@@ -6236,7 +6520,8 @@
           "items": [
             "Grouting of anchors, soil nails, tension cables as well as for sleeve pipe, rock, and contact injections",
             "Preparation and pumping of bentonite suspensions for pipe jacking and microtunneling"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "datasheet",
@@ -6341,12 +6626,14 @@
               ]
             }
           ],
-          "note": "1: Water to cement ratio = 1"
+          "note": "1: Water to cement ratio = 1",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Equipamiento estándar y opcional"
+          "text": "Equipamiento estándar y opcional",
+          "gen": true
         },
         {
           "type": "list",
@@ -6365,7 +6652,8 @@
             "Control: Mixer ON-OFF",
             "Control: Agitator ON-OFF",
             "Control: Pump ON-OFF"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "modules",
@@ -6387,19 +6675,22 @@
               "width": 1124,
               "height": 932
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "button",
           "kind": "download",
           "text": "Folleto IC 650/710 (PDF, inglés)",
-          "href": "/assets/docs/haeny-ic650-710v-brochure-en.pdf"
+          "href": "/assets/docs/haeny-ic650-710v-brochure-en.pdf",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 2,
           "text": "IC 650/712",
-          "anchor": "ic650-712v"
+          "anchor": "ic650-712v",
+          "gen": true
         },
         {
           "type": "columns",
@@ -6408,9 +6699,9 @@
             {
               "type": "image",
               "alt": "Compact Grout Plant IC 650/712",
-              "width": 1000,
-              "height": 1000,
-              "src": "/assets/img/haeny-finder-ic.webp"
+              "width": 538,
+              "height": 398,
+              "src": "/assets/img/haeny-ic650-712v-unit.webp"
             }
           ],
           "right": [
@@ -6428,12 +6719,14 @@
                 "Independent of pressure ratios, the suction stroke is always carried out at high velocity in order to flush the valves and to avoid clogging"
               ]
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Aplicaciones típicas"
+          "text": "Aplicaciones típicas",
+          "gen": true
         },
         {
           "type": "list",
@@ -6441,7 +6734,8 @@
           "items": [
             "Grouting of anchors, soil nails, tension cables as well as for sleeve pipe, rock, and contact injections",
             "Preparation and pumping of bentonite suspensions for pipe jacking and microtunneling"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "datasheet",
@@ -6546,12 +6840,14 @@
               ]
             }
           ],
-          "note": "1: Water to cement ratio = 1"
+          "note": "1: Water to cement ratio = 1",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Equipamiento estándar y opcional"
+          "text": "Equipamiento estándar y opcional",
+          "gen": true
         },
         {
           "type": "list",
@@ -6569,7 +6865,8 @@
             "Control: Mixer ON-OFF",
             "Control: Agitator ON-OFF",
             "Control: Pump ON-OFF"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "modules",
@@ -6591,19 +6888,22 @@
               "width": 1124,
               "height": 935
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "button",
           "kind": "download",
           "text": "Folleto IC 650/712 (PDF, inglés)",
-          "href": "/assets/docs/haeny-ic650-712v-brochure-en.pdf"
+          "href": "/assets/docs/haeny-ic650-712v-brochure-en.pdf",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 2,
           "text": "IC 650/725",
-          "anchor": "ic650-725v"
+          "anchor": "ic650-725v",
+          "gen": true
         },
         {
           "type": "columns",
@@ -6612,9 +6912,9 @@
             {
               "type": "image",
               "alt": "Compact Grout Plant IC 650/725",
-              "width": 1000,
-              "height": 1000,
-              "src": "/assets/img/haeny-finder-ic.webp"
+              "width": 518,
+              "height": 370,
+              "src": "/assets/img/haeny-ic650-725v-unit.webp"
             }
           ],
           "right": [
@@ -6632,12 +6932,14 @@
                 "Independent of pressure ratios, the suction stroke is always carried out at high velocity in order to flush the valves and to avoid clogging"
               ]
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Aplicaciones típicas"
+          "text": "Aplicaciones típicas",
+          "gen": true
         },
         {
           "type": "list",
@@ -6645,7 +6947,8 @@
           "items": [
             "Grouting of anchors, soil nails, tension cables as well as for sleeve pipe, rock, and contact injections",
             "Preparation and pumping of bentonite suspensions for pipe jacking and microtunneling"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "datasheet",
@@ -6750,12 +7053,14 @@
               ]
             }
           ],
-          "note": "1: Water to cement ratio = 1"
+          "note": "1: Water to cement ratio = 1",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Equipamiento estándar y opcional"
+          "text": "Equipamiento estándar y opcional",
+          "gen": true
         },
         {
           "type": "list",
@@ -6774,7 +7079,8 @@
             "Control: Mixer ON-OFF",
             "Control: Agitator ON-OFF",
             "Control: Pump ON-OFF"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "modules",
@@ -6796,19 +7102,22 @@
               "width": 1124,
               "height": 926
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "button",
           "kind": "download",
           "text": "Folleto IC 650/725 (PDF, inglés)",
-          "href": "/assets/docs/haeny-ic650-725v-brochure-en.pdf"
+          "href": "/assets/docs/haeny-ic650-725v-brochure-en.pdf",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 2,
           "text": "IC 1100/710",
-          "anchor": "ic1100-710v"
+          "anchor": "ic1100-710v",
+          "gen": true
         },
         {
           "type": "columns",
@@ -6817,9 +7126,9 @@
             {
               "type": "image",
               "alt": "Compact Grout Plant IC 1100/710",
-              "width": 1000,
-              "height": 1000,
-              "src": "/assets/img/haeny-finder-ic1100.webp"
+              "width": 541,
+              "height": 518,
+              "src": "/assets/img/haeny-ic1100-710v-unit.webp"
             }
           ],
           "right": [
@@ -6837,12 +7146,14 @@
                 "Independent of pressure ratios, the suction stroke is always carried out at high velocity in order to flush the valves and to avoid clogging"
               ]
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Aplicaciones típicas"
+          "text": "Aplicaciones típicas",
+          "gen": true
         },
         {
           "type": "list",
@@ -6850,7 +7161,8 @@
           "items": [
             "Grouting of anchors, soil nails, tension cables as well as for sleeve pipe, rock, and contact injections",
             "Preparation and pumping of bentonite suspensions for pipe jacking and microtunneling"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "datasheet",
@@ -6955,12 +7267,14 @@
               ]
             }
           ],
-          "note": "1: Water to cement ratio = 1"
+          "note": "1: Water to cement ratio = 1",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Equipamiento estándar y opcional"
+          "text": "Equipamiento estándar y opcional",
+          "gen": true
         },
         {
           "type": "list",
@@ -6979,7 +7293,8 @@
             "Control: Mixer ON-OFF",
             "Control: Agitator ON-OFF",
             "Control: Pump ON-OFF"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "modules",
@@ -7001,19 +7316,22 @@
               "width": 1124,
               "height": 898
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "button",
           "kind": "download",
           "text": "Folleto IC 1100/710 (PDF, inglés)",
-          "href": "/assets/docs/haeny-ic1100-710v-brochure-en.pdf"
+          "href": "/assets/docs/haeny-ic1100-710v-brochure-en.pdf",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 2,
           "text": "IC 1100/712",
-          "anchor": "ic1100-712v"
+          "anchor": "ic1100-712v",
+          "gen": true
         },
         {
           "type": "columns",
@@ -7022,9 +7340,9 @@
             {
               "type": "image",
               "alt": "Compact Grout Plant IC 1100/712",
-              "width": 1000,
-              "height": 1000,
-              "src": "/assets/img/haeny-finder-ic1100.webp"
+              "width": 541,
+              "height": 517,
+              "src": "/assets/img/haeny-ic1100-712v-unit.webp"
             }
           ],
           "right": [
@@ -7042,12 +7360,14 @@
                 "Independent of pressure ratios, the suction stroke is always carried out at high velocity in order to flush the valves and to avoid clogging"
               ]
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Aplicaciones típicas"
+          "text": "Aplicaciones típicas",
+          "gen": true
         },
         {
           "type": "list",
@@ -7055,7 +7375,8 @@
           "items": [
             "Grouting of anchors, soil nails, tension cables as well as for sleeve pipe, rock, and contact injections",
             "Preparation and pumping of bentonite suspensions for pipe jacking and microtunneling"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "datasheet",
@@ -7160,12 +7481,14 @@
               ]
             }
           ],
-          "note": "1: Water to cement ratio = 1"
+          "note": "1: Water to cement ratio = 1",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Equipamiento estándar y opcional"
+          "text": "Equipamiento estándar y opcional",
+          "gen": true
         },
         {
           "type": "list",
@@ -7183,7 +7506,8 @@
             "Control: Mixer ON-OFF",
             "Control: Agitator ON-OFF",
             "Control: Pump ON-OFF"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "modules",
@@ -7205,19 +7529,22 @@
               "width": 1124,
               "height": 921
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "button",
           "kind": "download",
           "text": "Folleto IC 1100/712 (PDF, inglés)",
-          "href": "/assets/docs/haeny-ic1100-712v-brochure-en.pdf"
+          "href": "/assets/docs/haeny-ic1100-712v-brochure-en.pdf",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 2,
           "text": "IC 1100/725",
-          "anchor": "ic1100-725v"
+          "anchor": "ic1100-725v",
+          "gen": true
         },
         {
           "type": "columns",
@@ -7226,9 +7553,9 @@
             {
               "type": "image",
               "alt": "Compact Grout Plant IC 1100/725",
-              "width": 1000,
-              "height": 1000,
-              "src": "/assets/img/haeny-finder-ic1100.webp"
+              "width": 560,
+              "height": 515,
+              "src": "/assets/img/haeny-ic1100-725v-unit.webp"
             }
           ],
           "right": [
@@ -7246,12 +7573,14 @@
                 "Independent of pressure ratios, the suction stroke is always carried out at high velocity in order to flush the valves and to avoid clogging"
               ]
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Aplicaciones típicas"
+          "text": "Aplicaciones típicas",
+          "gen": true
         },
         {
           "type": "list",
@@ -7259,7 +7588,8 @@
           "items": [
             "Grouting of anchors, soil nails, tension cables as well as for sleeve pipe, rock, and contact injections",
             "Preparation and pumping of bentonite suspensions for pipe jacking and microtunneling"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "datasheet",
@@ -7364,12 +7694,14 @@
               ]
             }
           ],
-          "note": "1: Water to cement ratio = 1"
+          "note": "1: Water to cement ratio = 1",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Equipamiento estándar y opcional"
+          "text": "Equipamiento estándar y opcional",
+          "gen": true
         },
         {
           "type": "list",
@@ -7388,7 +7720,8 @@
             "Control: Mixer ON-OFF",
             "Control: Agitator ON-OFF",
             "Control: Pump ON-OFF"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "modules",
@@ -7410,19 +7743,22 @@
               "width": 1124,
               "height": 917
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "button",
           "kind": "download",
           "text": "Folleto IC 1100/725 (PDF, inglés)",
-          "href": "/assets/docs/haeny-ic1100-725v-brochure-en.pdf"
+          "href": "/assets/docs/haeny-ic1100-725v-brochure-en.pdf",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 2,
           "text": "IC 1400/710",
-          "anchor": "ic1400-710v"
+          "anchor": "ic1400-710v",
+          "gen": true
         },
         {
           "type": "columns",
@@ -7431,9 +7767,9 @@
             {
               "type": "image",
               "alt": "Compact Grout Plant IC 1400/710",
-              "width": 1000,
-              "height": 1000,
-              "src": "/assets/img/haeny-finder-ic1100.webp"
+              "width": 483,
+              "height": 443,
+              "src": "/assets/img/haeny-ic1400-710v-unit.webp"
             }
           ],
           "right": [
@@ -7451,12 +7787,14 @@
                 "Independent of pressure ratios, the suction stroke is always carried out at high velocity in order to flush the valves and to avoid clogging"
               ]
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Aplicaciones típicas"
+          "text": "Aplicaciones típicas",
+          "gen": true
         },
         {
           "type": "list",
@@ -7464,7 +7802,8 @@
           "items": [
             "Grouting of anchors, soil nails, tension cables as well as for sleeve pipe, rock, and contact injections",
             "Preparation and pumping of bentonite suspensions for pipe jacking and microtunneling"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "datasheet",
@@ -7569,12 +7908,14 @@
               ]
             }
           ],
-          "note": "1: Water to cement ratio = 1"
+          "note": "1: Water to cement ratio = 1",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Equipamiento estándar y opcional"
+          "text": "Equipamiento estándar y opcional",
+          "gen": true
         },
         {
           "type": "list",
@@ -7593,7 +7934,8 @@
             "Control: Mixer ON-OFF",
             "Control: Agitator ON-OFF",
             "Control: Pump ON-OFF"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "modules",
@@ -7615,19 +7957,22 @@
               "width": 1124,
               "height": 920
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "button",
           "kind": "download",
           "text": "Folleto IC 1400/710 (PDF, inglés)",
-          "href": "/assets/docs/haeny-ic1400-710v-brochure-en.pdf"
+          "href": "/assets/docs/haeny-ic1400-710v-brochure-en.pdf",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 2,
           "text": "IC 1400/712",
-          "anchor": "ic1400-712v"
+          "anchor": "ic1400-712v",
+          "gen": true
         },
         {
           "type": "columns",
@@ -7636,9 +7981,9 @@
             {
               "type": "image",
               "alt": "Compact Grout Plant IC 1400/712",
-              "width": 1000,
-              "height": 1000,
-              "src": "/assets/img/haeny-finder-ic1100.webp"
+              "width": 536,
+              "height": 492,
+              "src": "/assets/img/haeny-ic1400-712v-unit.webp"
             }
           ],
           "right": [
@@ -7656,12 +8001,14 @@
                 "Independent of pressure ratios, the suction stroke is always carried out at high velocity in order to flush the valves and to avoid clogging"
               ]
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Aplicaciones típicas"
+          "text": "Aplicaciones típicas",
+          "gen": true
         },
         {
           "type": "list",
@@ -7669,7 +8016,8 @@
           "items": [
             "Grouting of anchors, soil nails, tension cables as well as for sleeve pipe, rock, and contact injections",
             "Preparation and pumping of bentonite suspensions for pipe jacking and microtunneling"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "datasheet",
@@ -7774,12 +8122,14 @@
               ]
             }
           ],
-          "note": "1: Water to cement ratio = 1"
+          "note": "1: Water to cement ratio = 1",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Equipamiento estándar y opcional"
+          "text": "Equipamiento estándar y opcional",
+          "gen": true
         },
         {
           "type": "list",
@@ -7797,7 +8147,8 @@
             "Control: Mixer ON-OFF",
             "Control: Agitator ON-OFF",
             "Control: Pump ON-OFF"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "modules",
@@ -7819,19 +8170,22 @@
               "width": 1124,
               "height": 943
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "button",
           "kind": "download",
           "text": "Folleto IC 1400/712 (PDF, inglés)",
-          "href": "/assets/docs/haeny-ic1400-712v-brochure-en.pdf"
+          "href": "/assets/docs/haeny-ic1400-712v-brochure-en.pdf",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 2,
           "text": "IC 1400/725",
-          "anchor": "ic1400-725v"
+          "anchor": "ic1400-725v",
+          "gen": true
         },
         {
           "type": "columns",
@@ -7840,9 +8194,9 @@
             {
               "type": "image",
               "alt": "Compact Grout Plant IC 1400/725",
-              "width": 1000,
-              "height": 1000,
-              "src": "/assets/img/haeny-finder-ic1100.webp"
+              "width": 561,
+              "height": 495,
+              "src": "/assets/img/haeny-ic1400-725v-unit.webp"
             }
           ],
           "right": [
@@ -7860,12 +8214,14 @@
                 "Independent of pressure ratios, the suction stroke is always carried out at high velocity in order to flush the valves and to avoid clogging"
               ]
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Aplicaciones típicas"
+          "text": "Aplicaciones típicas",
+          "gen": true
         },
         {
           "type": "list",
@@ -7873,7 +8229,8 @@
           "items": [
             "Grouting of anchors, soil nails, tension cables as well as for sleeve pipe, rock, and contact injections",
             "Preparation and pumping of bentonite suspensions for pipe jacking and microtunneling"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "datasheet",
@@ -7978,12 +8335,14 @@
               ]
             }
           ],
-          "note": "1: Water to cement ratio = 1"
+          "note": "1: Water to cement ratio = 1",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Equipamiento estándar y opcional"
+          "text": "Equipamiento estándar y opcional",
+          "gen": true
         },
         {
           "type": "list",
@@ -8002,7 +8361,8 @@
             "Control: Mixer ON-OFF",
             "Control: Agitator ON-OFF",
             "Control: Pump ON-OFF"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "modules",
@@ -8024,19 +8384,22 @@
               "width": 1124,
               "height": 957
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "button",
           "kind": "download",
           "text": "Folleto IC 1400/725 (PDF, inglés)",
-          "href": "/assets/docs/haeny-ic1400-725v-brochure-en.pdf"
+          "href": "/assets/docs/haeny-ic1400-725v-brochure-en.pdf",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 2,
           "text": "IC 1400/726",
-          "anchor": "ic1400-726v"
+          "anchor": "ic1400-726v",
+          "gen": true
         },
         {
           "type": "columns",
@@ -8045,9 +8408,9 @@
             {
               "type": "image",
               "alt": "Compact Grout Plant IC 1400/726",
-              "width": 1000,
-              "height": 1000,
-              "src": "/assets/img/haeny-finder-ic1100.webp"
+              "width": 551,
+              "height": 499,
+              "src": "/assets/img/haeny-ic1400-726v-unit.webp"
             }
           ],
           "right": [
@@ -8065,12 +8428,14 @@
                 "Independent of pressure ratios, the suction stroke is always carried out at high velocity in order to flush the valves and to avoid clogging"
               ]
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Aplicaciones típicas"
+          "text": "Aplicaciones típicas",
+          "gen": true
         },
         {
           "type": "list",
@@ -8078,7 +8443,8 @@
           "items": [
             "Grouting of anchors, soil nails, tension cables as well as for sleeve pipe, rock, and contact injections",
             "Preparation and pumping of bentonite suspensions for pipe jacking and microtunneling"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "datasheet",
@@ -8183,12 +8549,14 @@
               ]
             }
           ],
-          "note": "1: Water to cement ratio = 1"
+          "note": "1: Water to cement ratio = 1",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Equipamiento estándar y opcional"
+          "text": "Equipamiento estándar y opcional",
+          "gen": true
         },
         {
           "type": "list",
@@ -8206,7 +8574,8 @@
             "Control: Mixer ON-OFF",
             "Control: Agitator ON-OFF",
             "Control: Pump ON-OFF"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "modules",
@@ -8228,13 +8597,15 @@
               "width": 1124,
               "height": 932
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "button",
           "kind": "download",
           "text": "Folleto IC 1400/726 (PDF, inglés)",
-          "href": "/assets/docs/haeny-ic1400-726v-brochure-en.pdf"
+          "href": "/assets/docs/haeny-ic1400-726v-brochure-en.pdf",
+          "gen": true
         },
         {
           "type": "related",
@@ -8243,7 +8614,8 @@
               "href": "/produkter/haeny/manuella-pumpar",
               "mutual": true
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "text",
@@ -8282,7 +8654,8 @@
         {
           "type": "heading",
           "level": 2,
-          "text": "Oversikt"
+          "text": "Oversikt",
+          "gen": true
         },
         {
           "type": "list",
@@ -8292,12 +8665,14 @@
             "High productivity due to ergonomically positioned operating elements",
             "High reliability and low-maintenance operation with good accessibility to the wear parts",
             "Independent of pressure ratios, the suction stroke is always carried out at high velocity in order to flush the valves and to avoid clogging"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Modeller"
+          "text": "Modeller",
+          "gen": true
         },
         {
           "type": "list",
@@ -8316,12 +8691,14 @@
             "<a href=\"#ic1400-712v\">IC 1400/712</a> (ZMP 712): 4.9 m³/h · 88 bar · 550 l",
             "<a href=\"#ic1400-725v\">IC 1400/725</a> (ZMP 725): 8 m³/h · 100 bar · 550 l",
             "<a href=\"#ic1400-726v\">IC 1400/726</a> (ZMP 726): 8 m³/h · 100 bar · 550 l"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Bruksområder"
+          "text": "Bruksområder",
+          "gen": true
         },
         {
           "type": "list",
@@ -8329,13 +8706,15 @@
           "items": [
             "Grouting of anchors, soil nails, tension cables as well as for sleeve pipe, rock, and contact injections",
             "Preparation and pumping of bentonite suspensions for pipe jacking and microtunneling"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "heading",
           "level": 2,
           "text": "IC 310",
-          "anchor": "ic310"
+          "anchor": "ic310",
+          "gen": true
         },
         {
           "type": "columns",
@@ -8344,9 +8723,9 @@
             {
               "type": "image",
               "alt": "Compact Grout Plant IC 310",
-              "width": 1083,
-              "height": 1169,
-              "src": "/assets/img/haeny-manuella-pumpar-ic-310-ic-311.webp"
+              "width": 409,
+              "height": 495,
+              "src": "/assets/img/haeny-ic310-unit.webp"
             }
           ],
           "right": [
@@ -8364,12 +8743,14 @@
                 "Independent of pressure ratios, the suction stroke is always carried out at high velocity in order to flush the valves and to avoid clogging"
               ]
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Bruksområder"
+          "text": "Bruksområder",
+          "gen": true
         },
         {
           "type": "list",
@@ -8377,7 +8758,8 @@
           "items": [
             "Grouting of anchors, soil nails, tension cables as well as for sleeve pipe, rock, and contact injections",
             "Preparation and pumping of bentonite suspensions for pipe jacking and microtunneling"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "datasheet",
@@ -8482,12 +8864,14 @@
               ]
             }
           ],
-          "note": "1: Water to cement ratio = 1"
+          "note": "1: Water to cement ratio = 1",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Standard- og tilvalgsutstyr"
+          "text": "Standard- og tilvalgsutstyr",
+          "gen": true
         },
         {
           "type": "list",
@@ -8504,7 +8888,8 @@
             "Control: Mixer ON-OFF",
             "Control: Agitator ON-OFF",
             "Control: Pump ON-OFF"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "modules",
@@ -8526,19 +8911,22 @@
               "width": 1124,
               "height": 986
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "button",
           "kind": "download",
           "text": "Brosjyre IC 310 (PDF, engelsk)",
-          "href": "/assets/docs/haeny-ic310-brochure-en.pdf"
+          "href": "/assets/docs/haeny-ic310-brochure-en.pdf",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 2,
           "text": "IC 311",
-          "anchor": "ic311"
+          "anchor": "ic311",
+          "gen": true
         },
         {
           "type": "columns",
@@ -8547,9 +8935,9 @@
             {
               "type": "image",
               "alt": "Compact Grout Plant IC 311",
-              "width": 1083,
-              "height": 1169,
-              "src": "/assets/img/haeny-manuella-pumpar-ic-310-ic-311.webp"
+              "width": 422,
+              "height": 517,
+              "src": "/assets/img/haeny-ic311-unit.webp"
             }
           ],
           "right": [
@@ -8567,12 +8955,14 @@
                 "Independent of pressure ratios, the suction stroke is always carried out at high velocity in order to flush the valves and to avoid clogging"
               ]
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Bruksområder"
+          "text": "Bruksområder",
+          "gen": true
         },
         {
           "type": "list",
@@ -8580,7 +8970,8 @@
           "items": [
             "Grouting of anchors, soil nails, tension cables as well as for sleeve pipe, rock, and contact injections",
             "Preparation and pumping of bentonite suspensions for pipe jacking and microtunneling"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "datasheet",
@@ -8685,12 +9076,14 @@
               ]
             }
           ],
-          "note": "1: Water to cement ratio = 1"
+          "note": "1: Water to cement ratio = 1",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Standard- og tilvalgsutstyr"
+          "text": "Standard- og tilvalgsutstyr",
+          "gen": true
         },
         {
           "type": "list",
@@ -8707,7 +9100,8 @@
             "Control: Mixer ON-OFF",
             "Control: Agitator ON-OFF",
             "Control: Pump ON-OFF"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "modules",
@@ -8729,19 +9123,22 @@
               "width": 1124,
               "height": 985
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "button",
           "kind": "download",
           "text": "Brosjyre IC 311 (PDF, engelsk)",
-          "href": "/assets/docs/haeny-ic311-brochure-en.pdf"
+          "href": "/assets/docs/haeny-ic311-brochure-en.pdf",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 2,
           "text": "IC 325",
-          "anchor": "ic325"
+          "anchor": "ic325",
+          "gen": true
         },
         {
           "type": "columns",
@@ -8750,9 +9147,9 @@
             {
               "type": "image",
               "alt": "Compact Grout Plant IC 325",
-              "width": 1083,
-              "height": 1169,
-              "src": "/assets/img/haeny-manuella-pumpar-ic-310-ic-311.webp"
+              "width": 391,
+              "height": 463,
+              "src": "/assets/img/haeny-ic325-unit.webp"
             }
           ],
           "right": [
@@ -8770,12 +9167,14 @@
                 "Independent of pressure ratios, the suction stroke is always carried out at high velocity in order to flush the valves and to avoid clogging"
               ]
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Bruksområder"
+          "text": "Bruksområder",
+          "gen": true
         },
         {
           "type": "list",
@@ -8783,7 +9182,8 @@
           "items": [
             "Grouting of anchors, soil nails, tension cables as well as for sleeve pipe, rock, and contact injections",
             "Preparation and pumping of bentonite suspensions for pipe jacking and microtunneling"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "datasheet",
@@ -8888,12 +9288,14 @@
               ]
             }
           ],
-          "note": "1: Water to cement ratio = 1"
+          "note": "1: Water to cement ratio = 1",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Standard- og tilvalgsutstyr"
+          "text": "Standard- og tilvalgsutstyr",
+          "gen": true
         },
         {
           "type": "list",
@@ -8910,7 +9312,8 @@
             "Control: Mixer ON-OFF",
             "Control: Agitator ON-OFF",
             "Control: Pump ON-OFF"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "modules",
@@ -8932,19 +9335,22 @@
               "width": 1124,
               "height": 994
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "button",
           "kind": "download",
           "text": "Brosjyre IC 325 (PDF, engelsk)",
-          "href": "/assets/docs/haeny-ic325-brochure-en.pdf"
+          "href": "/assets/docs/haeny-ic325-brochure-en.pdf",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 2,
           "text": "IC 650/710",
-          "anchor": "ic650-710v"
+          "anchor": "ic650-710v",
+          "gen": true
         },
         {
           "type": "columns",
@@ -8953,9 +9359,9 @@
             {
               "type": "image",
               "alt": "Compact Grout Plant IC 650/710",
-              "width": 1000,
-              "height": 1000,
-              "src": "/assets/img/haeny-finder-ic.webp"
+              "width": 581,
+              "height": 430,
+              "src": "/assets/img/haeny-ic650-710v-unit.webp"
             }
           ],
           "right": [
@@ -8973,12 +9379,14 @@
                 "Independent of pressure ratios, the suction stroke is always carried out at high velocity in order to flush the valves and to avoid clogging"
               ]
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Bruksområder"
+          "text": "Bruksområder",
+          "gen": true
         },
         {
           "type": "list",
@@ -8986,7 +9394,8 @@
           "items": [
             "Grouting of anchors, soil nails, tension cables as well as for sleeve pipe, rock, and contact injections",
             "Preparation and pumping of bentonite suspensions for pipe jacking and microtunneling"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "datasheet",
@@ -9091,12 +9500,14 @@
               ]
             }
           ],
-          "note": "1: Water to cement ratio = 1"
+          "note": "1: Water to cement ratio = 1",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Standard- og tilvalgsutstyr"
+          "text": "Standard- og tilvalgsutstyr",
+          "gen": true
         },
         {
           "type": "list",
@@ -9115,7 +9526,8 @@
             "Control: Mixer ON-OFF",
             "Control: Agitator ON-OFF",
             "Control: Pump ON-OFF"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "modules",
@@ -9137,19 +9549,22 @@
               "width": 1124,
               "height": 932
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "button",
           "kind": "download",
           "text": "Brosjyre IC 650/710 (PDF, engelsk)",
-          "href": "/assets/docs/haeny-ic650-710v-brochure-en.pdf"
+          "href": "/assets/docs/haeny-ic650-710v-brochure-en.pdf",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 2,
           "text": "IC 650/712",
-          "anchor": "ic650-712v"
+          "anchor": "ic650-712v",
+          "gen": true
         },
         {
           "type": "columns",
@@ -9158,9 +9573,9 @@
             {
               "type": "image",
               "alt": "Compact Grout Plant IC 650/712",
-              "width": 1000,
-              "height": 1000,
-              "src": "/assets/img/haeny-finder-ic.webp"
+              "width": 538,
+              "height": 398,
+              "src": "/assets/img/haeny-ic650-712v-unit.webp"
             }
           ],
           "right": [
@@ -9178,12 +9593,14 @@
                 "Independent of pressure ratios, the suction stroke is always carried out at high velocity in order to flush the valves and to avoid clogging"
               ]
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Bruksområder"
+          "text": "Bruksområder",
+          "gen": true
         },
         {
           "type": "list",
@@ -9191,7 +9608,8 @@
           "items": [
             "Grouting of anchors, soil nails, tension cables as well as for sleeve pipe, rock, and contact injections",
             "Preparation and pumping of bentonite suspensions for pipe jacking and microtunneling"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "datasheet",
@@ -9296,12 +9714,14 @@
               ]
             }
           ],
-          "note": "1: Water to cement ratio = 1"
+          "note": "1: Water to cement ratio = 1",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Standard- og tilvalgsutstyr"
+          "text": "Standard- og tilvalgsutstyr",
+          "gen": true
         },
         {
           "type": "list",
@@ -9319,7 +9739,8 @@
             "Control: Mixer ON-OFF",
             "Control: Agitator ON-OFF",
             "Control: Pump ON-OFF"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "modules",
@@ -9341,19 +9762,22 @@
               "width": 1124,
               "height": 935
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "button",
           "kind": "download",
           "text": "Brosjyre IC 650/712 (PDF, engelsk)",
-          "href": "/assets/docs/haeny-ic650-712v-brochure-en.pdf"
+          "href": "/assets/docs/haeny-ic650-712v-brochure-en.pdf",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 2,
           "text": "IC 650/725",
-          "anchor": "ic650-725v"
+          "anchor": "ic650-725v",
+          "gen": true
         },
         {
           "type": "columns",
@@ -9362,9 +9786,9 @@
             {
               "type": "image",
               "alt": "Compact Grout Plant IC 650/725",
-              "width": 1000,
-              "height": 1000,
-              "src": "/assets/img/haeny-finder-ic.webp"
+              "width": 518,
+              "height": 370,
+              "src": "/assets/img/haeny-ic650-725v-unit.webp"
             }
           ],
           "right": [
@@ -9382,12 +9806,14 @@
                 "Independent of pressure ratios, the suction stroke is always carried out at high velocity in order to flush the valves and to avoid clogging"
               ]
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Bruksområder"
+          "text": "Bruksområder",
+          "gen": true
         },
         {
           "type": "list",
@@ -9395,7 +9821,8 @@
           "items": [
             "Grouting of anchors, soil nails, tension cables as well as for sleeve pipe, rock, and contact injections",
             "Preparation and pumping of bentonite suspensions for pipe jacking and microtunneling"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "datasheet",
@@ -9500,12 +9927,14 @@
               ]
             }
           ],
-          "note": "1: Water to cement ratio = 1"
+          "note": "1: Water to cement ratio = 1",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Standard- og tilvalgsutstyr"
+          "text": "Standard- og tilvalgsutstyr",
+          "gen": true
         },
         {
           "type": "list",
@@ -9524,7 +9953,8 @@
             "Control: Mixer ON-OFF",
             "Control: Agitator ON-OFF",
             "Control: Pump ON-OFF"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "modules",
@@ -9546,19 +9976,22 @@
               "width": 1124,
               "height": 926
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "button",
           "kind": "download",
           "text": "Brosjyre IC 650/725 (PDF, engelsk)",
-          "href": "/assets/docs/haeny-ic650-725v-brochure-en.pdf"
+          "href": "/assets/docs/haeny-ic650-725v-brochure-en.pdf",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 2,
           "text": "IC 1100/710",
-          "anchor": "ic1100-710v"
+          "anchor": "ic1100-710v",
+          "gen": true
         },
         {
           "type": "columns",
@@ -9567,9 +10000,9 @@
             {
               "type": "image",
               "alt": "Compact Grout Plant IC 1100/710",
-              "width": 1000,
-              "height": 1000,
-              "src": "/assets/img/haeny-finder-ic1100.webp"
+              "width": 541,
+              "height": 518,
+              "src": "/assets/img/haeny-ic1100-710v-unit.webp"
             }
           ],
           "right": [
@@ -9587,12 +10020,14 @@
                 "Independent of pressure ratios, the suction stroke is always carried out at high velocity in order to flush the valves and to avoid clogging"
               ]
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Bruksområder"
+          "text": "Bruksområder",
+          "gen": true
         },
         {
           "type": "list",
@@ -9600,7 +10035,8 @@
           "items": [
             "Grouting of anchors, soil nails, tension cables as well as for sleeve pipe, rock, and contact injections",
             "Preparation and pumping of bentonite suspensions for pipe jacking and microtunneling"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "datasheet",
@@ -9705,12 +10141,14 @@
               ]
             }
           ],
-          "note": "1: Water to cement ratio = 1"
+          "note": "1: Water to cement ratio = 1",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Standard- og tilvalgsutstyr"
+          "text": "Standard- og tilvalgsutstyr",
+          "gen": true
         },
         {
           "type": "list",
@@ -9729,7 +10167,8 @@
             "Control: Mixer ON-OFF",
             "Control: Agitator ON-OFF",
             "Control: Pump ON-OFF"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "modules",
@@ -9751,19 +10190,22 @@
               "width": 1124,
               "height": 898
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "button",
           "kind": "download",
           "text": "Brosjyre IC 1100/710 (PDF, engelsk)",
-          "href": "/assets/docs/haeny-ic1100-710v-brochure-en.pdf"
+          "href": "/assets/docs/haeny-ic1100-710v-brochure-en.pdf",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 2,
           "text": "IC 1100/712",
-          "anchor": "ic1100-712v"
+          "anchor": "ic1100-712v",
+          "gen": true
         },
         {
           "type": "columns",
@@ -9772,9 +10214,9 @@
             {
               "type": "image",
               "alt": "Compact Grout Plant IC 1100/712",
-              "width": 1000,
-              "height": 1000,
-              "src": "/assets/img/haeny-finder-ic1100.webp"
+              "width": 541,
+              "height": 517,
+              "src": "/assets/img/haeny-ic1100-712v-unit.webp"
             }
           ],
           "right": [
@@ -9792,12 +10234,14 @@
                 "Independent of pressure ratios, the suction stroke is always carried out at high velocity in order to flush the valves and to avoid clogging"
               ]
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Bruksområder"
+          "text": "Bruksområder",
+          "gen": true
         },
         {
           "type": "list",
@@ -9805,7 +10249,8 @@
           "items": [
             "Grouting of anchors, soil nails, tension cables as well as for sleeve pipe, rock, and contact injections",
             "Preparation and pumping of bentonite suspensions for pipe jacking and microtunneling"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "datasheet",
@@ -9910,12 +10355,14 @@
               ]
             }
           ],
-          "note": "1: Water to cement ratio = 1"
+          "note": "1: Water to cement ratio = 1",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Standard- og tilvalgsutstyr"
+          "text": "Standard- og tilvalgsutstyr",
+          "gen": true
         },
         {
           "type": "list",
@@ -9933,7 +10380,8 @@
             "Control: Mixer ON-OFF",
             "Control: Agitator ON-OFF",
             "Control: Pump ON-OFF"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "modules",
@@ -9955,19 +10403,22 @@
               "width": 1124,
               "height": 921
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "button",
           "kind": "download",
           "text": "Brosjyre IC 1100/712 (PDF, engelsk)",
-          "href": "/assets/docs/haeny-ic1100-712v-brochure-en.pdf"
+          "href": "/assets/docs/haeny-ic1100-712v-brochure-en.pdf",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 2,
           "text": "IC 1100/725",
-          "anchor": "ic1100-725v"
+          "anchor": "ic1100-725v",
+          "gen": true
         },
         {
           "type": "columns",
@@ -9976,9 +10427,9 @@
             {
               "type": "image",
               "alt": "Compact Grout Plant IC 1100/725",
-              "width": 1000,
-              "height": 1000,
-              "src": "/assets/img/haeny-finder-ic1100.webp"
+              "width": 560,
+              "height": 515,
+              "src": "/assets/img/haeny-ic1100-725v-unit.webp"
             }
           ],
           "right": [
@@ -9996,12 +10447,14 @@
                 "Independent of pressure ratios, the suction stroke is always carried out at high velocity in order to flush the valves and to avoid clogging"
               ]
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Bruksområder"
+          "text": "Bruksområder",
+          "gen": true
         },
         {
           "type": "list",
@@ -10009,7 +10462,8 @@
           "items": [
             "Grouting of anchors, soil nails, tension cables as well as for sleeve pipe, rock, and contact injections",
             "Preparation and pumping of bentonite suspensions for pipe jacking and microtunneling"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "datasheet",
@@ -10114,12 +10568,14 @@
               ]
             }
           ],
-          "note": "1: Water to cement ratio = 1"
+          "note": "1: Water to cement ratio = 1",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Standard- og tilvalgsutstyr"
+          "text": "Standard- og tilvalgsutstyr",
+          "gen": true
         },
         {
           "type": "list",
@@ -10138,7 +10594,8 @@
             "Control: Mixer ON-OFF",
             "Control: Agitator ON-OFF",
             "Control: Pump ON-OFF"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "modules",
@@ -10160,19 +10617,22 @@
               "width": 1124,
               "height": 917
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "button",
           "kind": "download",
           "text": "Brosjyre IC 1100/725 (PDF, engelsk)",
-          "href": "/assets/docs/haeny-ic1100-725v-brochure-en.pdf"
+          "href": "/assets/docs/haeny-ic1100-725v-brochure-en.pdf",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 2,
           "text": "IC 1400/710",
-          "anchor": "ic1400-710v"
+          "anchor": "ic1400-710v",
+          "gen": true
         },
         {
           "type": "columns",
@@ -10181,9 +10641,9 @@
             {
               "type": "image",
               "alt": "Compact Grout Plant IC 1400/710",
-              "width": 1000,
-              "height": 1000,
-              "src": "/assets/img/haeny-finder-ic1100.webp"
+              "width": 483,
+              "height": 443,
+              "src": "/assets/img/haeny-ic1400-710v-unit.webp"
             }
           ],
           "right": [
@@ -10201,12 +10661,14 @@
                 "Independent of pressure ratios, the suction stroke is always carried out at high velocity in order to flush the valves and to avoid clogging"
               ]
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Bruksområder"
+          "text": "Bruksområder",
+          "gen": true
         },
         {
           "type": "list",
@@ -10214,7 +10676,8 @@
           "items": [
             "Grouting of anchors, soil nails, tension cables as well as for sleeve pipe, rock, and contact injections",
             "Preparation and pumping of bentonite suspensions for pipe jacking and microtunneling"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "datasheet",
@@ -10319,12 +10782,14 @@
               ]
             }
           ],
-          "note": "1: Water to cement ratio = 1"
+          "note": "1: Water to cement ratio = 1",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Standard- og tilvalgsutstyr"
+          "text": "Standard- og tilvalgsutstyr",
+          "gen": true
         },
         {
           "type": "list",
@@ -10343,7 +10808,8 @@
             "Control: Mixer ON-OFF",
             "Control: Agitator ON-OFF",
             "Control: Pump ON-OFF"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "modules",
@@ -10365,19 +10831,22 @@
               "width": 1124,
               "height": 920
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "button",
           "kind": "download",
           "text": "Brosjyre IC 1400/710 (PDF, engelsk)",
-          "href": "/assets/docs/haeny-ic1400-710v-brochure-en.pdf"
+          "href": "/assets/docs/haeny-ic1400-710v-brochure-en.pdf",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 2,
           "text": "IC 1400/712",
-          "anchor": "ic1400-712v"
+          "anchor": "ic1400-712v",
+          "gen": true
         },
         {
           "type": "columns",
@@ -10386,9 +10855,9 @@
             {
               "type": "image",
               "alt": "Compact Grout Plant IC 1400/712",
-              "width": 1000,
-              "height": 1000,
-              "src": "/assets/img/haeny-finder-ic1100.webp"
+              "width": 536,
+              "height": 492,
+              "src": "/assets/img/haeny-ic1400-712v-unit.webp"
             }
           ],
           "right": [
@@ -10406,12 +10875,14 @@
                 "Independent of pressure ratios, the suction stroke is always carried out at high velocity in order to flush the valves and to avoid clogging"
               ]
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Bruksområder"
+          "text": "Bruksområder",
+          "gen": true
         },
         {
           "type": "list",
@@ -10419,7 +10890,8 @@
           "items": [
             "Grouting of anchors, soil nails, tension cables as well as for sleeve pipe, rock, and contact injections",
             "Preparation and pumping of bentonite suspensions for pipe jacking and microtunneling"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "datasheet",
@@ -10524,12 +10996,14 @@
               ]
             }
           ],
-          "note": "1: Water to cement ratio = 1"
+          "note": "1: Water to cement ratio = 1",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Standard- og tilvalgsutstyr"
+          "text": "Standard- og tilvalgsutstyr",
+          "gen": true
         },
         {
           "type": "list",
@@ -10547,7 +11021,8 @@
             "Control: Mixer ON-OFF",
             "Control: Agitator ON-OFF",
             "Control: Pump ON-OFF"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "modules",
@@ -10569,19 +11044,22 @@
               "width": 1124,
               "height": 943
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "button",
           "kind": "download",
           "text": "Brosjyre IC 1400/712 (PDF, engelsk)",
-          "href": "/assets/docs/haeny-ic1400-712v-brochure-en.pdf"
+          "href": "/assets/docs/haeny-ic1400-712v-brochure-en.pdf",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 2,
           "text": "IC 1400/725",
-          "anchor": "ic1400-725v"
+          "anchor": "ic1400-725v",
+          "gen": true
         },
         {
           "type": "columns",
@@ -10590,9 +11068,9 @@
             {
               "type": "image",
               "alt": "Compact Grout Plant IC 1400/725",
-              "width": 1000,
-              "height": 1000,
-              "src": "/assets/img/haeny-finder-ic1100.webp"
+              "width": 561,
+              "height": 495,
+              "src": "/assets/img/haeny-ic1400-725v-unit.webp"
             }
           ],
           "right": [
@@ -10610,12 +11088,14 @@
                 "Independent of pressure ratios, the suction stroke is always carried out at high velocity in order to flush the valves and to avoid clogging"
               ]
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Bruksområder"
+          "text": "Bruksområder",
+          "gen": true
         },
         {
           "type": "list",
@@ -10623,7 +11103,8 @@
           "items": [
             "Grouting of anchors, soil nails, tension cables as well as for sleeve pipe, rock, and contact injections",
             "Preparation and pumping of bentonite suspensions for pipe jacking and microtunneling"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "datasheet",
@@ -10728,12 +11209,14 @@
               ]
             }
           ],
-          "note": "1: Water to cement ratio = 1"
+          "note": "1: Water to cement ratio = 1",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Standard- og tilvalgsutstyr"
+          "text": "Standard- og tilvalgsutstyr",
+          "gen": true
         },
         {
           "type": "list",
@@ -10752,7 +11235,8 @@
             "Control: Mixer ON-OFF",
             "Control: Agitator ON-OFF",
             "Control: Pump ON-OFF"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "modules",
@@ -10774,19 +11258,22 @@
               "width": 1124,
               "height": 957
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "button",
           "kind": "download",
           "text": "Brosjyre IC 1400/725 (PDF, engelsk)",
-          "href": "/assets/docs/haeny-ic1400-725v-brochure-en.pdf"
+          "href": "/assets/docs/haeny-ic1400-725v-brochure-en.pdf",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 2,
           "text": "IC 1400/726",
-          "anchor": "ic1400-726v"
+          "anchor": "ic1400-726v",
+          "gen": true
         },
         {
           "type": "columns",
@@ -10795,9 +11282,9 @@
             {
               "type": "image",
               "alt": "Compact Grout Plant IC 1400/726",
-              "width": 1000,
-              "height": 1000,
-              "src": "/assets/img/haeny-finder-ic1100.webp"
+              "width": 551,
+              "height": 499,
+              "src": "/assets/img/haeny-ic1400-726v-unit.webp"
             }
           ],
           "right": [
@@ -10815,12 +11302,14 @@
                 "Independent of pressure ratios, the suction stroke is always carried out at high velocity in order to flush the valves and to avoid clogging"
               ]
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Bruksområder"
+          "text": "Bruksområder",
+          "gen": true
         },
         {
           "type": "list",
@@ -10828,7 +11317,8 @@
           "items": [
             "Grouting of anchors, soil nails, tension cables as well as for sleeve pipe, rock, and contact injections",
             "Preparation and pumping of bentonite suspensions for pipe jacking and microtunneling"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "datasheet",
@@ -10933,12 +11423,14 @@
               ]
             }
           ],
-          "note": "1: Water to cement ratio = 1"
+          "note": "1: Water to cement ratio = 1",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Standard- og tilvalgsutstyr"
+          "text": "Standard- og tilvalgsutstyr",
+          "gen": true
         },
         {
           "type": "list",
@@ -10956,7 +11448,8 @@
             "Control: Mixer ON-OFF",
             "Control: Agitator ON-OFF",
             "Control: Pump ON-OFF"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "modules",
@@ -10978,13 +11471,15 @@
               "width": 1124,
               "height": 932
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "button",
           "kind": "download",
           "text": "Brosjyre IC 1400/726 (PDF, engelsk)",
-          "href": "/assets/docs/haeny-ic1400-726v-brochure-en.pdf"
+          "href": "/assets/docs/haeny-ic1400-726v-brochure-en.pdf",
+          "gen": true
         },
         {
           "type": "related",
@@ -10993,7 +11488,8 @@
               "href": "/produkter/haeny/manuella-pumpar",
               "mutual": true
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "text",

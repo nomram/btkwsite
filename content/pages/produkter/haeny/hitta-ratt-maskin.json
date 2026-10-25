@@ -25,12 +25,13 @@
         {
           "type": "heading",
           "level": 2,
-          "text": "Delar"
+          "text": "Delar",
+          "gen": true
         },
         {
           "type": "modules",
           "layout": "tiles",
-          "columns": 4,
+          "columns": 3,
           "more": false,
           "items": [
             {
@@ -56,21 +57,15 @@
               "href": "/produkter/haeny/hitta-ratt-maskin/injekteringspumpar",
               "width": 1000,
               "height": 1000
-            },
-            {
-              "title": "Triplexpump (ZMP 936)",
-              "image": "/assets/img/haeny-finder-zmp936.webp",
-              "alt": "Triplexpump (ZMP 936)",
-              "href": "/produkter/haeny/hitta-ratt-maskin/triplexpump",
-              "width": 1000,
-              "height": 1000
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "heading",
           "level": 2,
-          "text": "Kompletta enheter"
+          "text": "Kompletta enheter",
+          "gen": true
         },
         {
           "type": "modules",
@@ -98,7 +93,7 @@
               "title": "Automatiska anläggningar (FAIC)",
               "image": "/assets/img/haeny-finder-faic.webp",
               "alt": "Automatiska anläggningar (FAIC)",
-              "href": "/produkter/haeny/hitta-ratt-maskin/automatiska-anlaggningar",
+              "href": "/produkter/haeny/automatiska-pumpar",
               "width": 1000,
               "height": 1000
             },
@@ -110,7 +105,31 @@
               "width": 1000,
               "height": 1000
             }
-          ]
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Registrering och styrning",
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 4,
+          "more": false,
+          "items": [
+            {
+              "title": "Dataloggare (DPV-H)",
+              "image": "/assets/img/haeny-manuella-pumpar-dataloggare-dpv-2.webp",
+              "alt": "Dataloggare (DPV-H)",
+              "href": "/produkter/haeny/manuella-pumpar/dataloggare-dpv",
+              "width": 504,
+              "height": 495
+            }
+          ],
+          "gen": true
         },
         {
           "type": "button",
@@ -146,12 +165,13 @@
         {
           "type": "heading",
           "level": 2,
-          "text": "Parts"
+          "text": "Parts",
+          "gen": true
         },
         {
           "type": "modules",
           "layout": "tiles",
-          "columns": 4,
+          "columns": 3,
           "more": false,
           "items": [
             {
@@ -177,21 +197,15 @@
               "href": "/produkter/haeny/hitta-ratt-maskin/injekteringspumpar",
               "width": 1000,
               "height": 1000
-            },
-            {
-              "title": "Triplex grout pump (ZMP 936)",
-              "image": "/assets/img/haeny-finder-zmp936.webp",
-              "alt": "Triplex grout pump (ZMP 936)",
-              "href": "/produkter/haeny/hitta-ratt-maskin/triplexpump",
-              "width": 1000,
-              "height": 1000
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "heading",
           "level": 2,
-          "text": "Complete units"
+          "text": "Complete units",
+          "gen": true
         },
         {
           "type": "modules",
@@ -219,7 +233,7 @@
               "title": "Automated grout plants (FAIC)",
               "image": "/assets/img/haeny-finder-faic.webp",
               "alt": "Automated grout plants (FAIC)",
-              "href": "/produkter/haeny/hitta-ratt-maskin/automatiska-anlaggningar",
+              "href": "/produkter/haeny/automatiska-pumpar",
               "width": 1000,
               "height": 1000
             },
@@ -231,7 +245,31 @@
               "width": 1000,
               "height": 1000
             }
-          ]
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Recording and control",
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 4,
+          "more": false,
+          "items": [
+            {
+              "title": "Data logger (DPV-H)",
+              "image": "/assets/img/haeny-manuella-pumpar-dataloggare-dpv-2.webp",
+              "alt": "Data logger (DPV-H)",
+              "href": "/produkter/haeny/manuella-pumpar/dataloggare-dpv",
+              "width": 504,
+              "height": 495
+            }
+          ],
+          "gen": true
         },
         {
           "type": "button",
@@ -267,12 +305,13 @@
         {
           "type": "heading",
           "level": 2,
-          "text": "Componentes"
+          "text": "Componentes",
+          "gen": true
         },
         {
           "type": "modules",
           "layout": "tiles",
-          "columns": 4,
+          "columns": 3,
           "more": false,
           "items": [
             {
@@ -298,21 +337,15 @@
               "href": "/produkter/haeny/hitta-ratt-maskin/injekteringspumpar",
               "width": 1000,
               "height": 1000
-            },
-            {
-              "title": "Bomba de inyección triplex (ZMP 936)",
-              "image": "/assets/img/haeny-finder-zmp936.webp",
-              "alt": "Bomba de inyección triplex (ZMP 936)",
-              "href": "/produkter/haeny/hitta-ratt-maskin/triplexpump",
-              "width": 1000,
-              "height": 1000
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "heading",
           "level": 2,
-          "text": "Equipos completos"
+          "text": "Equipos completos",
+          "gen": true
         },
         {
           "type": "modules",
@@ -340,7 +373,7 @@
               "title": "Plantas de inyección automáticas (FAIC)",
               "image": "/assets/img/haeny-finder-faic.webp",
               "alt": "Plantas de inyección automáticas (FAIC)",
-              "href": "/produkter/haeny/hitta-ratt-maskin/automatiska-anlaggningar",
+              "href": "/produkter/haeny/automatiska-pumpar",
               "width": 1000,
               "height": 1000
             },
@@ -352,7 +385,31 @@
               "width": 1000,
               "height": 1000
             }
-          ]
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Registro y control",
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 4,
+          "more": false,
+          "items": [
+            {
+              "title": "Registrador de datos (DPV-H)",
+              "image": "/assets/img/haeny-manuella-pumpar-dataloggare-dpv-2.webp",
+              "alt": "Registrador de datos (DPV-H)",
+              "href": "/produkter/haeny/manuella-pumpar/dataloggare-dpv",
+              "width": 504,
+              "height": 495
+            }
+          ],
+          "gen": true
         },
         {
           "type": "button",
@@ -388,12 +445,13 @@
         {
           "type": "heading",
           "level": 2,
-          "text": "Deler"
+          "text": "Deler",
+          "gen": true
         },
         {
           "type": "modules",
           "layout": "tiles",
-          "columns": 4,
+          "columns": 3,
           "more": false,
           "items": [
             {
@@ -419,21 +477,15 @@
               "href": "/produkter/haeny/hitta-ratt-maskin/injekteringspumpar",
               "width": 1000,
               "height": 1000
-            },
-            {
-              "title": "Triplex injeksjonspumpe (ZMP 936)",
-              "image": "/assets/img/haeny-finder-zmp936.webp",
-              "alt": "Triplex injeksjonspumpe (ZMP 936)",
-              "href": "/produkter/haeny/hitta-ratt-maskin/triplexpump",
-              "width": 1000,
-              "height": 1000
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "heading",
           "level": 2,
-          "text": "Komplette enheter"
+          "text": "Komplette enheter",
+          "gen": true
         },
         {
           "type": "modules",
@@ -461,7 +513,7 @@
               "title": "Automatiske injeksjonsanlegg (FAIC)",
               "image": "/assets/img/haeny-finder-faic.webp",
               "alt": "Automatiske injeksjonsanlegg (FAIC)",
-              "href": "/produkter/haeny/hitta-ratt-maskin/automatiska-anlaggningar",
+              "href": "/produkter/haeny/automatiska-pumpar",
               "width": 1000,
               "height": 1000
             },
@@ -473,7 +525,31 @@
               "width": 1000,
               "height": 1000
             }
-          ]
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Registrering og styring",
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 4,
+          "more": false,
+          "items": [
+            {
+              "title": "Datalogger (DPV-H)",
+              "image": "/assets/img/haeny-manuella-pumpar-dataloggare-dpv-2.webp",
+              "alt": "Datalogger (DPV-H)",
+              "href": "/produkter/haeny/manuella-pumpar/dataloggare-dpv",
+              "width": 504,
+              "height": 495
+            }
+          ],
+          "gen": true
         },
         {
           "type": "button",

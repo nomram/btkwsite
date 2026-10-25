@@ -32,16 +32,14 @@ const FAMILIES = [
   { slug: "omrorare", group: "parts", image: "haeny-finder-hrw", models: ["hrw150", "hrw350", "hrw800", "hrw1200", "hrw2000", "hrw3000"], tiles: true,
     title: { sv: "Omrörare (HRW)", en: "Agitators (HRW)", es: "Agitadores (HRW)", no: "Røreverk (HRW)" },
     intro: { sv: "Häny HRW används som mellanlager mellan blandaren och pumpen. I den långsamt roterande omröraren homogeniseras injekteringsmassan och eventuella luftbubblor avlägsnas.", en: "The Häny HRW agitators are used as holding tanks between the HCM mixer and the pump. In the slowly revolving agitator the grout suspension is homogenised and air bubbles are removed.", es: "Los agitadores Häny HRW se utilizan como depósito intermedio entre la mezcladora HCM y la bomba. En el agitador, de giro lento, la suspensión se homogeneiza y se eliminan las burbujas de aire.", no: "Häny HRW brukes som mellomlager mellom blanderen og pumpen. I det sakte roterende røreverket homogeniseres injeksjonsmassen og luftbobler fjernes." } },
-  { slug: "injekteringspumpar", group: "parts", image: "haeny-finder-zmp", models: ["zmp610", "zmp611", "zmp625", "zmp710", "zmp712", "zmp725", "zmp726"],
+  { slug: "injekteringspumpar", group: "parts", image: "haeny-finder-zmp", models: ["zmp610", "zmp611", "zmp625", "zmp710", "zmp712", "zmp725", "zmp726", "zmp936"],
+    extra: { sv: "Längst ner finns triplexpumpen ZMP 936 för de största flödena: slitagesnål, med pulsation under 1 % och kylvattenanslutning för kontinuerlig drift.", en: "At the end is the triplex pump ZMP 936 for the largest flows: low wear, pulsation below 1 % and a cooling water connection for continuous operation.", es: "Al final está la bomba triplex ZMP 936 para los mayores caudales: poco desgaste, pulsación inferior al 1 % y conexión de agua de refrigeración para funcionamiento continuo.", no: "Til slutt kommer triplexpumpen ZMP 936 for de største ytelsene: lite slitasje, pulsering under 1 % og kjølevanntilkobling for kontinuerlig drift." },
     title: { sv: "Injekteringspumpar (ZMP)", en: "Grout pumps (ZMP)", es: "Bombas de inyección (ZMP)", no: "Injeksjonspumper (ZMP)" },
     intro: { sv: "Slitagesnåla kolvpumpar från Häny, enkel- eller dubbelverkande. Tryck upp till 200 bar, flöde upp till 13 m³/h och partikelstorlek upp till 8 mm. ZMP 600-serien är kompakta stående pumpar, ZMP 700-serien är kraftigare.", en: "Low-wear plunger pumps from Häny, single or double acting. Pressures up to 200 bar, output up to 13 m³/h and particle size up to 8 mm. The ZMP 600 series are compact vertical pumps, the ZMP 700 series are the heavier ones.", es: "Bombas de émbolo de bajo desgaste de Häny, de simple o doble efecto. Presiones de hasta 200 bar, caudal de hasta 13 m³/h y tamaño de partícula de hasta 8 mm. La serie ZMP 600 son bombas verticales compactas; la serie ZMP 700, las más potentes.", no: "Slitesvake stempelpumper fra Häny, enkelt- eller dobbeltvirkende. Trykk opptil 200 bar, ytelse opptil 13 m³/h og partikkelstørrelse opptil 8 mm. ZMP 600-serien er kompakte stående pumper, ZMP 700-serien er de kraftigere." } },
-  { slug: "triplexpump", group: "parts", image: "haeny-finder-zmp936", models: ["zmp936"],
-    title: { sv: "Triplexpump (ZMP 936)", en: "Triplex grout pump (ZMP 936)", es: "Bomba de inyección triplex (ZMP 936)", no: "Triplex injeksjonspumpe (ZMP 936)" },
-    intro: { sv: "Slitagesnål kolvpump av triplextyp med hög tillförlitlighet, lågt underhåll, pulsation under 1 % och kylvattenanslutning för kontinuerlig drift.", en: "A low-wear triplex plunger pump with high reliability, low maintenance, pulsation below 1 % and a cooling water connection for continuous operation.", es: "Bomba de émbolo triplex de bajo desgaste, muy fiable y de bajo mantenimiento, con pulsación inferior al 1 % y conexión de agua de refrigeración para funcionamiento continuo.", no: "Slitesvak triplex stempelpumpe med høy pålitelighet, lite vedlikehold, pulsering under 1 % og kjølevanntilkobling for kontinuerlig drift." } },
   { slug: "kompakta-anlaggningar", group: "units", image: "haeny-manuella-pumpar-ic-310-ic-311", models: ["ic310", "ic311", "ic325", "ic650-710v", "ic650-712v", "ic650-725v", "ic1100-710v", "ic1100-712v", "ic1100-725v", "ic1400-710v", "ic1400-712v", "ic1400-725v", "ic1400-726v"], see: "/produkter/haeny/manuella-pumpar",
     title: { sv: "Kompakta anläggningar (IC)", en: "Compact grout plants (IC)", es: "Plantas de inyección compactas (IC)", no: "Kompakte injeksjonsanlegg (IC)" },
     intro: { sv: "INJECTO-COMPACT: blandare, omrörare och pump i en enhet. För all injektering med cement och ultrafint cement samt bentonit för mikrotunnling, rörpressning och styrd borrning. Ergonomiska, platsbesparande och med central lyftpunkt.", en: "INJECTO-COMPACT: a mixer, an agitator and a grout pump in one unit. For all grouting with cement and ultra-fine cement, and bentonite suspensions for microtunnelling, pipe jacking and directional drilling. Ergonomic, space-saving, with a central lifting point.", es: "INJECTO-COMPACT: mezcladora, agitador y bomba de inyección en una sola unidad. Para toda inyección con cemento y cemento ultrafino y suspensiones de bentonita para microtúneles, hincado de tuberías y perforación dirigida.", no: "INJECTO-COMPACT: blander, røreverk og pumpe i én enhet. For all injeksjon med sement og ultrafin sement samt bentonitt for mikrotunnelering, rørpressing og styrt boring." } },
-  { slug: "automatiska-anlaggningar", group: "units", image: "haeny-finder-faic", models: ["faic650-710", "faic650-712", "faic650-725", "faic1100-725", "faic1400-725"], see: "/produkter/haeny/automatiska-pumpar",
+  { slug: "automatiska-anlaggningar", base: "/produkter/haeny/automatiska-pumpar", group: "units", image: "haeny-finder-faic", models: ["faic650-710", "faic650-712", "faic650-725", "faic1100-725", "faic1400-725"],
     title: { sv: "Automatiska anläggningar (FAIC)", en: "Automated grout plants (FAIC)", es: "Plantas de inyección automáticas (FAIC)", no: "Automatiske injeksjonsanlegg (FAIC)" },
     intro: { sv: "Automatiserade anläggningar för att bereda och injektera cement, bentonit, mikrofina bindemedel och bruk. Noggrann dosering, förbrukningsregistrering, integrerad tryck- och flödesregistrering samt radiostyrning.", en: "Automated plants for preparing and injecting cement, bentonite, microfine binders and mortar. Accurate dosing, consumption record, integrated pressure and flow recording and radio remote control.", es: "Plantas automatizadas para preparar e inyectar cemento, bentonita, ligantes microfinos y mortero. Dosificación precisa, registro de consumo, registro integrado de presión y caudal y mando por radio.", no: "Automatiserte anlegg for klargjøring og injeksjon av sement, bentonitt, mikrofine bindemidler og mørtel. Nøyaktig dosering, forbruksregistrering, integrert trykk- og strømningsregistrering og radiostyring." } }
 ];
@@ -78,7 +76,7 @@ const pumpOf = (d) => { const t = d.tables.find((x) => /grout pump/i.test(x.titl
 
 function modelBlocks(l, fam, k, d) {
   const T = L[l]; const out = [];
-  const img = d.images.model ? d.images.model : null;
+  const img = d.images.model || d.images.unit || null;
   const fallback = MODEL_IMG(k);
   out.push({ type: "heading", level: 2, text: d.model || k.toUpperCase(), anchor: k });
   out.push({ type: "__cols", img: img ? { src: img.file, width: img.width, height: img.height } : fallback ? { src: `/assets/img/${fallback}.webp` } : null, alt: `${d.title} ${d.model}`,
@@ -119,28 +117,47 @@ const date = "2026-10-23";
 const HUB = "/produkter/haeny/hitta-ratt-maskin";
 
 // ---------- family pages ----------
+// A family that has an older page of its own (base) keeps that page: its address, its translated text and its brochure stay,
+// and the generated overview and model sections are added to it. Generated blocks carry "gen": true so a re-run replaces them.
+const genBlocks = (arr) => arr.map((b) => ({ ...b, gen: true }));
 let order = 0;
 for (const fam of FAMILIES) {
   const data = Object.fromEntries(fam.models.map((k) => [k, fixData(k, load(k))]));
+  const baseFile = fam.base ? path.join(ROOT, "content/pages", fam.base + ".json") : null;
+  const baseJson = baseFile && fs.existsSync(baseFile) ? JSON.parse(fs.readFileSync(baseFile, "utf8")) : null;
   const i18n = {};
   for (const l of LANGS) {
     const T = L[l];
-    const blocks = [{ ...crumb }, { type: "image", alt: fam.title[l], ...(await dim(`/assets/img/${fam.image}.webp`)), src: `/assets/img/${fam.image}.webp` }, { type: "text", html: esc(fam.intro[l]) }];
-    // overview: shared features first, then one bullet per model with its key figures (each links to its section below)
+    const introText = fam.intro[l] + (fam.extra ? " " + fam.extra[l] : "");
+    const head = [{ ...crumb }, { type: "image", alt: fam.title[l], ...(await dim(`/assets/img/${fam.image}.webp`)), src: `/assets/img/${fam.image}.webp` }, { type: "text", html: esc(introText) }];
+    const body = [];
     const first = data[fam.models[0]];
-    blocks.push({ type: "heading", level: 2, text: T.overview });
-    if (first.features.length) blocks.push({ type: "list", ordered: false, items: first.features.map(clean) });
-    blocks.push({ type: "heading", level: 3, text: T.models });
-    blocks.push({ type: "list", ordered: false, items: fam.models.map((k) => { const d = data[k]; const p = pumpOf(d); return `<a href="#${k}">${esc(d.model)}</a>${p ? ` (${esc(p)})` : ""}: ${keyFigures(d).map(esc).join(" · ")}`; }) });
-    if (first.applications.length) { blocks.push({ type: "heading", level: 3, text: T.uses }); blocks.push({ type: "list", ordered: false, items: first.applications.map(clean) }); }
-    if (fam.tiles) blocks.push({ type: "modules", layout: "tiles", columns: 3, more: false, items: await Promise.all(fam.models.map(async (k) => { const d = data[k]; const im = d.images.model ? d.images.model.file : `/assets/img/${fam.image}.webp`; return { title: d.model, image: im, alt: d.model, href: `${HUB}/${fam.slug}#${k}`, ...(d.images.model ? { width: d.images.model.width, height: d.images.model.height } : await dim(im)) }; })) });
-    for (const k of fam.models) blocks.push(...(await resolveBlocks(modelBlocks(l, fam, k, data[k]))));
-    if (fam.see) blocks.push({ type: "related", items: [{ href: fam.see, mutual: true }] });
-    blocks.push({ type: "text", html: T.contact });
-    blocks.push({ type: "text", html: `<small>${esc(T.note)}</small>` });
-    i18n[l] = { title: fam.title[l], h1: fam.title[l], description: fam.intro[l].slice(0, 200), blocks };
+    body.push({ type: "heading", level: 2, text: T.overview });
+    if (first.features.length) body.push({ type: "list", ordered: false, items: first.features.map(clean) });
+    body.push({ type: "heading", level: 3, text: T.models });
+    body.push({ type: "list", ordered: false, items: fam.models.map((k) => { const d = data[k]; const p = pumpOf(d); return `<a href="#${k}">${esc(d.model)}</a>${p ? ` (${esc(p)})` : ""}: ${keyFigures(d).map(esc).join(" · ")}`; }) });
+    if (first.applications.length) { body.push({ type: "heading", level: 3, text: T.uses }); body.push({ type: "list", ordered: false, items: first.applications.map(clean) }); }
+    const pagePath = fam.base || `${HUB}/${fam.slug}`;
+    if (fam.tiles) body.push({ type: "modules", layout: "tiles", columns: 3, more: false, items: await Promise.all(fam.models.map(async (k) => { const d = data[k]; const im = d.images.model ? d.images.model.file : `/assets/img/${fam.image}.webp`; return { title: d.model, image: im, alt: d.model, href: `${pagePath}#${k}`, ...(d.images.model ? { width: d.images.model.width, height: d.images.model.height } : await dim(im)) }; })) });
+    for (const k of fam.models) body.push(...(await resolveBlocks(modelBlocks(l, fam, k, data[k]))));
+    if (fam.see) body.push({ type: "related", items: [{ href: fam.see, mutual: true }] });
+    let blocks;
+    if (baseJson && baseJson.i18n[l]) {
+      // the existing page is the base: its picture, heading and introduction first, the generated sections, then its brochure and notes
+      const old = baseJson.i18n[l].blocks.filter((b) => !b.gen);
+      const li = old.findIndex((b) => b.type === "list");
+      const top = old.slice(0, li < 0 ? 4 : li).map((b) => (b.type === "heading" && /FAIC/.test(b.text) ? { ...b, text: "Häny FAIC" } : b));
+      const tail = old.slice(li < 0 ? 4 : li + 1).filter((b) => b.type !== "modules" && !(b.type === "text" && /kontakta-oss/.test(b.html) && b.html.length < 140));
+      blocks = [...top, ...genBlocks(body), ...tail, { type: "text", html: T.contact }, ...genBlocks([{ type: "text", html: `<small>${esc(T.note)}</small>` }])];
+      blocks = blocks.filter((b, i, a) => !(b.type === "text" && b.html === T.contact && a.findIndex((x) => x.type === "text" && x.html === T.contact) !== i));
+    } else {
+      blocks = [...head, ...genBlocks(body), { type: "text", html: T.contact }, { type: "text", html: `<small>${esc(T.note)}</small>` }];
+    }
+    i18n[l] = { title: fam.title[l], h1: fam.title[l], description: introText.slice(0, 200), blocks };
   }
-  out(`produkter/haeny/hitta-ratt-maskin/${fam.slug}.json`, { path: `${HUB}/${fam.slug}`, updated: date, template: "product", order: order++, published: true, i18n });
+  if (baseJson) {
+    fs.writeFileSync(baseFile, JSON.stringify({ ...baseJson, updated: date, i18n }, null, 2) + "\n"); console.log("merged into", fam.base);
+  } else out(`produkter/haeny/hitta-ratt-maskin/${fam.slug}.json`, { path: `${HUB}/${fam.slug}`, updated: date, template: "product", order: order++, published: true, i18n });
 }
 
 // ---------- MCM: no brochure, short page ----------
@@ -156,37 +173,72 @@ for (const fam of FAMILIES) {
   out("produkter/haeny/hitta-ratt-maskin/mobila-anlaggningar.json", { path: `${HUB}/mobila-anlaggningar`, updated: date, template: "product", order: order++, published: true, i18n });
 }
 
-// ---------- the landing page: parts and complete units as picture tiles ----------
-{
-  const tile = async (fam, l) => ({ title: fam.title[l], image: `/assets/img/${fam.image}.webp`, alt: fam.title[l], href: `${HUB}/${fam.slug}`, text: undefined, ...(await dim(`/assets/img/${fam.image}.webp`)) });
-  const parts = FAMILIES.filter((f) => f.group === "parts"), units = FAMILIES.filter((f) => f.group === "units");
+// ---------- the tile groups (parts / complete units / registration), used by the landing page and the Häny brand page ----------
+const famHref = (fam) => fam.base || `${HUB}/${fam.slug}`;
+async function tileGroups(l) {
+  const T = L[l];
+  const tile = async (fam) => ({ title: fam.title[l], image: `/assets/img/${fam.image}.webp`, alt: fam.title[l], href: famHref(fam), ...(await dim(`/assets/img/${fam.image}.webp`)) });
   const ccpTitle = { sv: "Kompakta PU-anläggningar (IC 325 CCP)", en: "Compact PU plants (IC 325 CCP)", es: "Plantas compactas PU (IC 325 CCP)", no: "Kompakte PU-anlegg (IC 325 CCP)" };
   const mcmTitle = { sv: "Mobila anläggningar (MCM)", en: "Portable mixing plants (MCM)", es: "Plantas de mezcla móviles (MCM)", no: "Mobile blandeanlegg (MCM)" };
+  const dpvTitle = { sv: "Dataloggare (DPV-H)", en: "Data logger (DPV-H)", es: "Registrador de datos (DPV-H)", no: "Datalogger (DPV-H)" };
+  const regTitle = { sv: "Registrering och styrning", en: "Recording and control", es: "Registro y control", no: "Registrering og styring" };
+  const parts = FAMILIES.filter((f) => f.group === "parts"), units = FAMILIES.filter((f) => f.group === "units");
+  const unitItems = [];
+  for (const f of units) {
+    unitItems.push(await tile(f));
+    if (f.slug === "kompakta-anlaggningar") unitItems.push({ title: ccpTitle[l], image: "/assets/img/haeny-finder-ccp.webp", alt: ccpTitle[l], href: "/produkter/haeny/manuella-pumpar/ic-325-ic325-ccp#ic325-ccp", ...(await dim("/assets/img/haeny-finder-ccp.webp")) });
+  }
+  unitItems.push({ title: mcmTitle[l], image: "/assets/img/haeny-finder-mcm.webp", alt: mcmTitle[l], href: `${HUB}/mobila-anlaggningar`, ...(await dim("/assets/img/haeny-finder-mcm.webp")) });
+  const dpvImg = "/assets/img/haeny-manuella-pumpar-dataloggare-dpv-2.webp";
+  return genBlocks([
+    { type: "heading", level: 2, text: T.parts }, { type: "modules", layout: "tiles", columns: 3, more: false, items: await Promise.all(parts.map(tile)) },
+    { type: "heading", level: 2, text: T.units }, { type: "modules", layout: "tiles", columns: 4, more: false, items: unitItems },
+    { type: "heading", level: 2, text: regTitle[l] }, { type: "modules", layout: "tiles", columns: 4, more: false, items: [{ title: dpvTitle[l], image: dpvImg, alt: dpvTitle[l], href: "/produkter/haeny/manuella-pumpar/dataloggare-dpv", ...(await dim(dpvImg)) }] }
+  ]);
+}
+
+// ---------- the landing page ----------
+{
   const intro = {
     sv: "Häny har ett komplett sortiment för blandning och injektering. Börja med att välja: enskilda delar (blandare, omrörare, pumpar) eller kompletta enheter där allt sitter ihop. Varje sida visar översikt, modeller, teknisk data, diagram och broschyrer. Osäker? <a href=\"/kontakta-oss\">Kontakta oss</a>, så hjälper vi dig välja.",
     en: "Häny has a complete range for mixing and injection. Start by choosing: individual parts (mixers, agitators, pumps) or complete units where everything is combined. Every page shows an overview, the models, technical data, diagrams and brochures. Not sure? <a href=\"/kontakta-oss\">Contact us</a> and we will help you choose.",
     es: "Häny ofrece una gama completa para mezcla e inyección. Empiece eligiendo: componentes individuales (mezcladoras, agitadores, bombas) o equipos completos. Cada página muestra un resumen, los modelos, datos técnicos, diagramas y folletos. ¿Duda? <a href=\"/kontakta-oss\">Contáctenos</a> y le ayudamos a elegir.",
     no: "Häny har et komplett sortiment for blanding og injeksjon. Start med å velge: enkeltdeler (miksere, røreverk, pumper) eller komplette enheter. Hver side viser oversikt, modeller, tekniske data, diagrammer og brosjyrer. Usikker? <a href=\"/kontakta-oss\">Kontakt oss</a>, så hjelper vi deg å velge."
   };
+  const name = { sv: "Hitta rätt maskin", en: "Find the right machine", es: "Encuentre la máquina adecuada", no: "Finn riktig maskin" };
   const i18n = {};
   for (const l of LANGS) {
-    const T = L[l];
-    const unitItems = [];
-    for (const f of units) {
-      unitItems.push(await tile(f, l));
-      if (f.slug === "kompakta-anlaggningar") unitItems.push({ title: ccpTitle[l], image: "/assets/img/haeny-finder-ccp.webp", alt: ccpTitle[l], href: "/produkter/haeny/manuella-pumpar/ic-325-ic325-ccp#ic325-ccp", ...(await dim("/assets/img/haeny-finder-ccp.webp")) });
-    }
-    unitItems.push({ title: mcmTitle[l], image: "/assets/img/haeny-finder-mcm.webp", alt: mcmTitle[l], href: `${HUB}/mobila-anlaggningar`, ...(await dim("/assets/img/haeny-finder-mcm.webp")) });
     i18n[l] = {
-      title: { sv: "Hitta rätt maskin", en: "Find the right machine", es: "Encuentre la máquina adecuada", no: "Finn riktig maskin" }[l],
-      h1: { sv: "Hitta rätt maskin", en: "Find the right machine", es: "Encuentre la máquina adecuada", no: "Finn riktig maskin" }[l],
-      description: intro[l].replace(/<[^>]+>/g, "").slice(0, 200),
-      blocks: [{ ...crumb }, { type: "text", html: intro[l] },
-        { type: "heading", level: 2, text: T.parts }, { type: "modules", layout: "tiles", columns: 4, more: false, items: await Promise.all(parts.map((f) => tile(f, l))) },
-        { type: "heading", level: 2, text: T.units }, { type: "modules", layout: "tiles", columns: 4, more: false, items: unitItems },
+      title: name[l], h1: name[l], description: intro[l].replace(/<[^>]+>/g, "").slice(0, 200),
+      blocks: [{ ...crumb }, { type: "text", html: intro[l] }, ...(await tileGroups(l)),
         { type: "button", kind: "download", text: { sv: "Huvudbroschyr (produktportfölj)", en: "Main brochure (product portfolio)", es: "Folleto principal (cartera de productos)", no: "Hovedbrosjyre (produktportefølje)" }[l], href: "/assets/docs/haeny-portfolio-brochure-en.pdf" },
         { type: "button", kind: "download", text: { sv: "Komplett broschyr: blandning och injektering", en: "Complete brochure: mixing and injection", es: "Folleto completo: mezcla e inyección", no: "Komplett brosjyre: blanding og injeksjon" }[l], href: "/assets/docs/haeny-gesamt-mit-brochure-en.pdf" }]
     };
   }
   out("produkter/haeny/hitta-ratt-maskin.json", { path: HUB, updated: date, template: "product", order: 0, published: true, i18n });
+}
+
+// ---------- the Häny brand page: the same tile groups replace its old tiles ----------
+{
+  const bf = path.join(ROOT, "content/pages/produkter/haeny.json");
+  const raw = fs.readFileSync(bf, "utf8"); const eol = raw.includes("\r\n") ? "\r\n" : "\n";
+  const j = JSON.parse(raw);
+  for (const l of LANGS) {
+    const all = j.i18n[l].blocks;
+    let at = all.findIndex((b) => b.gen), replace = 0;
+    const bl = all.filter((b) => !b.gen);
+    if (at < 0) { at = bl.findIndex((b) => b.type === "modules"); replace = 1; }
+    if (at < 0) continue;
+    bl.splice(at, replace, ...(await tileGroups(l)));
+    j.i18n[l].blocks = bl;
+  }
+  fs.writeFileSync(bf, JSON.stringify(j, null, 2).replace(/\n/g, eol) + eol); console.log("updated produkter/haeny.json");
+}
+
+// ---------- tidy up what the merge made obsolete ----------
+for (const gone of ["triplexpump", "automatiska-anlaggningar"]) { const p = path.join(PAGES, gone + ".json"); if (fs.existsSync(p)) { fs.rmSync(p); console.log("removed", gone); } }
+{
+  const rf = path.join(ROOT, "content/redirects.json"); const r = JSON.parse(fs.readFileSync(rf, "utf8"));
+  r[`${HUB}/triplexpump`] = `${HUB}/injekteringspumpar`; r[`${HUB}/automatiska-anlaggningar`] = "/produkter/haeny/automatiska-pumpar";
+  fs.writeFileSync(rf, JSON.stringify(r, null, 2) + "\n");
 }

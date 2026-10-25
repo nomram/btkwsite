@@ -141,6 +141,16 @@ async function extract(file, key) {
       const lists = Object.fromEntries(Object.entries(s.lists).filter(([, v]) => v.length).map(([k, v]) => [k, v.map(tidy)]));
       if (rows.length || Object.keys(lists).length) res.tables.push({ title: s.title, subtitle: s.subtitle, rows, lists, page: i + 1 });
     }
+    // the picture of the unit itself (a render on white, bottom of page 3): it differs from model to model
+    if (i === 2) {
+      const j = JSON.parse(page.toStructuredText("preserve-images").asJSON());
+      const blocks = j.blocks.filter((q) => q.type === "image" && q.bbox.w > 80 && q.bbox.w < 400 && q.bbox.h > 80 && q.bbox.h < 400 && q.bbox.y > 300).sort((p, q) => q.bbox.w * q.bbox.h - p.bbox.w * p.bbox.h);
+      if (blocks[0]) {
+        const bb = blocks[0].bbox;
+        const img = await cropImage(png, pw, ph, { x0: bb.x, y0: bb.y, x1: bb.x + bb.w, y1: bb.y + bb.h }, `haeny-${key}-unit`);
+        if (img) res.images.unit = img;
+      }
+    }
     // dimension drawing: from the "Design/Construction and dimensions" caption to the footer
     const cap = capLine;
     if (cap) {

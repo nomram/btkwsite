@@ -32,7 +32,8 @@
         {
           "type": "heading",
           "level": 2,
-          "text": "Översikt"
+          "text": "Översikt",
+          "gen": true
         },
         {
           "type": "list",
@@ -41,12 +42,14 @@
             "Slowly rotating paddle for homogenization of the mixed material and removal of existing air bubbles",
             "Cleaning opening with protective grid and splash guard",
             "Inclined bottom for complete emptying with drain plug"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Modeller"
+          "text": "Modeller",
+          "gen": true
         },
         {
           "type": "list",
@@ -58,19 +61,22 @@
             "<a href=\"#hrw1200\">HRW 1200</a>: 1050 l · 1.5 / 1.8 kW",
             "<a href=\"#hrw2000\">HRW 2000</a>: 2,000 l · 3.0 / 3.6 kW",
             "<a href=\"#hrw3000\">HRW 3000</a>: 3,000 l · 3.0 / 3.6 kW"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Användning"
+          "text": "Användning",
+          "gen": true
         },
         {
           "type": "list",
           "ordered": false,
           "items": [
             "Holding tank between mixer and injection pump"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "modules",
@@ -126,13 +132,15 @@
               "width": 537,
               "height": 577
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "heading",
           "level": 2,
           "text": "HRW 150",
-          "anchor": "hrw150"
+          "anchor": "hrw150",
+          "gen": true
         },
         {
           "type": "columns",
@@ -160,19 +168,22 @@
                 "Inclined bottom for complete emptying with drain plug"
               ]
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Användning"
+          "text": "Användning",
+          "gen": true
         },
         {
           "type": "list",
           "ordered": false,
           "items": [
             "Holding tank between mixer and injection pump"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "datasheet",
@@ -252,7 +263,8 @@
               ]
             }
           ],
-          "note": ""
+          "note": "",
+          "gen": true
         },
         {
           "type": "modules",
@@ -267,19 +279,22 @@
               "width": 753,
               "height": 1260
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "button",
           "kind": "download",
           "text": "Broschyr HRW 150 (PDF, engelska)",
-          "href": "/assets/docs/haeny-hrw150-brochure-en.pdf"
+          "href": "/assets/docs/haeny-hrw150-brochure-en.pdf",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 2,
           "text": "HRW 350",
-          "anchor": "hrw350"
+          "anchor": "hrw350",
+          "gen": true
         },
         {
           "type": "columns",
@@ -309,19 +324,22 @@
                 "Optional level sensors for consumption-dependent and fully automatic operation"
               ]
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Användning"
+          "text": "Användning",
+          "gen": true
         },
         {
           "type": "list",
           "ordered": false,
           "items": [
             "Holding tank between mixer and injection pump"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "datasheet",
@@ -393,12 +411,14 @@
               ]
             }
           ],
-          "note": ""
+          "note": "",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Standard- och tillvalsutrustning"
+          "text": "Standard- och tillvalsutrustning",
+          "gen": true
         },
         {
           "type": "list",
@@ -406,7 +426,8 @@
           "items": [
             "Optional (Agitator): Level sensors 1\", \"full - empty\"",
             "Optional (Agitator): Flange connection with butterfly valve 2½\""
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "modules",
@@ -421,19 +442,22 @@
               "width": 599,
               "height": 1261
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "button",
           "kind": "download",
           "text": "Broschyr HRW 350 (PDF, engelska)",
-          "href": "/assets/docs/haeny-hrw350-brochure-en.pdf"
+          "href": "/assets/docs/haeny-hrw350-brochure-en.pdf",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 2,
           "text": "HRW 800",
-          "anchor": "hrw800"
+          "anchor": "hrw800",
+          "gen": true
         },
         {
           "type": "columns",
@@ -463,19 +487,22 @@
                 "Optional level sensors for consumption-dependent and fully automatic operation"
               ]
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Användning"
+          "text": "Användning",
+          "gen": true
         },
         {
           "type": "list",
           "ordered": false,
           "items": [
             "Holding tank between mixer and injection pump"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "datasheet",
@@ -547,12 +574,14 @@
               ]
             }
           ],
-          "note": ""
+          "note": "",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Standard- och tillvalsutrustning"
+          "text": "Standard- och tillvalsutrustning",
+          "gen": true
         },
         {
           "type": "list",
@@ -560,7 +589,8 @@
           "items": [
             "Optional (Agitator): Level sensors 1\", \"full - empty\"",
             "Optional (Agitator): Flange connection with butterfly valve 2½\""
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "modules",
@@ -575,19 +605,22 @@
               "width": 608,
               "height": 1262
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "button",
           "kind": "download",
           "text": "Broschyr HRW 800 (PDF, engelska)",
-          "href": "/assets/docs/haeny-hrw800-brochure-en.pdf"
+          "href": "/assets/docs/haeny-hrw800-brochure-en.pdf",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 2,
           "text": "HRW 1200",
-          "anchor": "hrw1200"
+          "anchor": "hrw1200",
+          "gen": true
         },
         {
           "type": "columns",
@@ -617,19 +650,22 @@
                 "Level sensors for fully automatic operation"
               ]
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Användning"
+          "text": "Användning",
+          "gen": true
         },
         {
           "type": "list",
           "ordered": false,
           "items": [
             "Holding tank between mixer and injection pump"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "datasheet",
@@ -701,12 +737,14 @@
               ]
             }
           ],
-          "note": ""
+          "note": "",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Standard- och tillvalsutrustning"
+          "text": "Standard- och tillvalsutrustning",
+          "gen": true
         },
         {
           "type": "list",
@@ -714,7 +752,8 @@
           "items": [
             "Optional (Agitator): Level sensors 1\", \"full - empty\"",
             "Optional (Agitator): Flange connection with butterfly valve 2½\""
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "modules",
@@ -729,19 +768,22 @@
               "width": 548,
               "height": 1251
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "button",
           "kind": "download",
           "text": "Broschyr HRW 1200 (PDF, engelska)",
-          "href": "/assets/docs/haeny-hrw1200-brochure-en.pdf"
+          "href": "/assets/docs/haeny-hrw1200-brochure-en.pdf",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 2,
           "text": "HRW 2000",
-          "anchor": "hrw2000"
+          "anchor": "hrw2000",
+          "gen": true
         },
         {
           "type": "columns",
@@ -771,19 +813,22 @@
                 "Level sensors for fully automatic operation"
               ]
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Användning"
+          "text": "Användning",
+          "gen": true
         },
         {
           "type": "list",
           "ordered": false,
           "items": [
             "Holding tank between mixer and injection pump"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "datasheet",
@@ -855,12 +900,14 @@
               ]
             }
           ],
-          "note": ""
+          "note": "",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Standard- och tillvalsutrustning"
+          "text": "Standard- och tillvalsutrustning",
+          "gen": true
         },
         {
           "type": "list",
@@ -868,7 +915,8 @@
           "items": [
             "Optional (Agitator): Level sensors 1\", \"full - empty\"",
             "Optional (Agitator): Flange connection with butterfly valve 2½\""
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "modules",
@@ -883,19 +931,22 @@
               "width": 629,
               "height": 1258
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "button",
           "kind": "download",
           "text": "Broschyr HRW 2000 (PDF, engelska)",
-          "href": "/assets/docs/haeny-hrw2000-brochure-en.pdf"
+          "href": "/assets/docs/haeny-hrw2000-brochure-en.pdf",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 2,
           "text": "HRW 3000",
-          "anchor": "hrw3000"
+          "anchor": "hrw3000",
+          "gen": true
         },
         {
           "type": "columns",
@@ -925,19 +976,22 @@
                 "Level sensors for fully automatic operation"
               ]
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Användning"
+          "text": "Användning",
+          "gen": true
         },
         {
           "type": "list",
           "ordered": false,
           "items": [
             "Holding tank between mixer and injection pump"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "datasheet",
@@ -1009,12 +1063,14 @@
               ]
             }
           ],
-          "note": ""
+          "note": "",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Standard- och tillvalsutrustning"
+          "text": "Standard- och tillvalsutrustning",
+          "gen": true
         },
         {
           "type": "list",
@@ -1022,7 +1078,8 @@
           "items": [
             "Optional (Agitator): Level sensors 1\", \"full - empty\"",
             "Optional (Agitator): Flange connection with butterfly valve 2½\""
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "modules",
@@ -1037,13 +1094,15 @@
               "width": 700,
               "height": 1250
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "button",
           "kind": "download",
           "text": "Broschyr HRW 3000 (PDF, engelska)",
-          "href": "/assets/docs/haeny-hrw3000-brochure-en.pdf"
+          "href": "/assets/docs/haeny-hrw3000-brochure-en.pdf",
+          "gen": true
         },
         {
           "type": "text",
@@ -1082,7 +1141,8 @@
         {
           "type": "heading",
           "level": 2,
-          "text": "Overview"
+          "text": "Overview",
+          "gen": true
         },
         {
           "type": "list",
@@ -1091,12 +1151,14 @@
             "Slowly rotating paddle for homogenization of the mixed material and removal of existing air bubbles",
             "Cleaning opening with protective grid and splash guard",
             "Inclined bottom for complete emptying with drain plug"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Models"
+          "text": "Models",
+          "gen": true
         },
         {
           "type": "list",
@@ -1108,19 +1170,22 @@
             "<a href=\"#hrw1200\">HRW 1200</a>: 1050 l · 1.5 / 1.8 kW",
             "<a href=\"#hrw2000\">HRW 2000</a>: 2,000 l · 3.0 / 3.6 kW",
             "<a href=\"#hrw3000\">HRW 3000</a>: 3,000 l · 3.0 / 3.6 kW"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Typical applications"
+          "text": "Typical applications",
+          "gen": true
         },
         {
           "type": "list",
           "ordered": false,
           "items": [
             "Holding tank between mixer and injection pump"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "modules",
@@ -1176,13 +1241,15 @@
               "width": 537,
               "height": 577
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "heading",
           "level": 2,
           "text": "HRW 150",
-          "anchor": "hrw150"
+          "anchor": "hrw150",
+          "gen": true
         },
         {
           "type": "columns",
@@ -1210,19 +1277,22 @@
                 "Inclined bottom for complete emptying with drain plug"
               ]
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Typical applications"
+          "text": "Typical applications",
+          "gen": true
         },
         {
           "type": "list",
           "ordered": false,
           "items": [
             "Holding tank between mixer and injection pump"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "datasheet",
@@ -1302,7 +1372,8 @@
               ]
             }
           ],
-          "note": ""
+          "note": "",
+          "gen": true
         },
         {
           "type": "modules",
@@ -1317,19 +1388,22 @@
               "width": 753,
               "height": 1260
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "button",
           "kind": "download",
           "text": "Brochure HRW 150 (PDF)",
-          "href": "/assets/docs/haeny-hrw150-brochure-en.pdf"
+          "href": "/assets/docs/haeny-hrw150-brochure-en.pdf",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 2,
           "text": "HRW 350",
-          "anchor": "hrw350"
+          "anchor": "hrw350",
+          "gen": true
         },
         {
           "type": "columns",
@@ -1359,19 +1433,22 @@
                 "Optional level sensors for consumption-dependent and fully automatic operation"
               ]
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Typical applications"
+          "text": "Typical applications",
+          "gen": true
         },
         {
           "type": "list",
           "ordered": false,
           "items": [
             "Holding tank between mixer and injection pump"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "datasheet",
@@ -1443,12 +1520,14 @@
               ]
             }
           ],
-          "note": ""
+          "note": "",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Standard and optional equipment"
+          "text": "Standard and optional equipment",
+          "gen": true
         },
         {
           "type": "list",
@@ -1456,7 +1535,8 @@
           "items": [
             "Optional (Agitator): Level sensors 1\", \"full - empty\"",
             "Optional (Agitator): Flange connection with butterfly valve 2½\""
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "modules",
@@ -1471,19 +1551,22 @@
               "width": 599,
               "height": 1261
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "button",
           "kind": "download",
           "text": "Brochure HRW 350 (PDF)",
-          "href": "/assets/docs/haeny-hrw350-brochure-en.pdf"
+          "href": "/assets/docs/haeny-hrw350-brochure-en.pdf",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 2,
           "text": "HRW 800",
-          "anchor": "hrw800"
+          "anchor": "hrw800",
+          "gen": true
         },
         {
           "type": "columns",
@@ -1513,19 +1596,22 @@
                 "Optional level sensors for consumption-dependent and fully automatic operation"
               ]
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Typical applications"
+          "text": "Typical applications",
+          "gen": true
         },
         {
           "type": "list",
           "ordered": false,
           "items": [
             "Holding tank between mixer and injection pump"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "datasheet",
@@ -1597,12 +1683,14 @@
               ]
             }
           ],
-          "note": ""
+          "note": "",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Standard and optional equipment"
+          "text": "Standard and optional equipment",
+          "gen": true
         },
         {
           "type": "list",
@@ -1610,7 +1698,8 @@
           "items": [
             "Optional (Agitator): Level sensors 1\", \"full - empty\"",
             "Optional (Agitator): Flange connection with butterfly valve 2½\""
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "modules",
@@ -1625,19 +1714,22 @@
               "width": 608,
               "height": 1262
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "button",
           "kind": "download",
           "text": "Brochure HRW 800 (PDF)",
-          "href": "/assets/docs/haeny-hrw800-brochure-en.pdf"
+          "href": "/assets/docs/haeny-hrw800-brochure-en.pdf",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 2,
           "text": "HRW 1200",
-          "anchor": "hrw1200"
+          "anchor": "hrw1200",
+          "gen": true
         },
         {
           "type": "columns",
@@ -1667,19 +1759,22 @@
                 "Level sensors for fully automatic operation"
               ]
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Typical applications"
+          "text": "Typical applications",
+          "gen": true
         },
         {
           "type": "list",
           "ordered": false,
           "items": [
             "Holding tank between mixer and injection pump"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "datasheet",
@@ -1751,12 +1846,14 @@
               ]
             }
           ],
-          "note": ""
+          "note": "",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Standard and optional equipment"
+          "text": "Standard and optional equipment",
+          "gen": true
         },
         {
           "type": "list",
@@ -1764,7 +1861,8 @@
           "items": [
             "Optional (Agitator): Level sensors 1\", \"full - empty\"",
             "Optional (Agitator): Flange connection with butterfly valve 2½\""
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "modules",
@@ -1779,19 +1877,22 @@
               "width": 548,
               "height": 1251
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "button",
           "kind": "download",
           "text": "Brochure HRW 1200 (PDF)",
-          "href": "/assets/docs/haeny-hrw1200-brochure-en.pdf"
+          "href": "/assets/docs/haeny-hrw1200-brochure-en.pdf",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 2,
           "text": "HRW 2000",
-          "anchor": "hrw2000"
+          "anchor": "hrw2000",
+          "gen": true
         },
         {
           "type": "columns",
@@ -1821,19 +1922,22 @@
                 "Level sensors for fully automatic operation"
               ]
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Typical applications"
+          "text": "Typical applications",
+          "gen": true
         },
         {
           "type": "list",
           "ordered": false,
           "items": [
             "Holding tank between mixer and injection pump"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "datasheet",
@@ -1905,12 +2009,14 @@
               ]
             }
           ],
-          "note": ""
+          "note": "",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Standard and optional equipment"
+          "text": "Standard and optional equipment",
+          "gen": true
         },
         {
           "type": "list",
@@ -1918,7 +2024,8 @@
           "items": [
             "Optional (Agitator): Level sensors 1\", \"full - empty\"",
             "Optional (Agitator): Flange connection with butterfly valve 2½\""
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "modules",
@@ -1933,19 +2040,22 @@
               "width": 629,
               "height": 1258
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "button",
           "kind": "download",
           "text": "Brochure HRW 2000 (PDF)",
-          "href": "/assets/docs/haeny-hrw2000-brochure-en.pdf"
+          "href": "/assets/docs/haeny-hrw2000-brochure-en.pdf",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 2,
           "text": "HRW 3000",
-          "anchor": "hrw3000"
+          "anchor": "hrw3000",
+          "gen": true
         },
         {
           "type": "columns",
@@ -1975,19 +2085,22 @@
                 "Level sensors for fully automatic operation"
               ]
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Typical applications"
+          "text": "Typical applications",
+          "gen": true
         },
         {
           "type": "list",
           "ordered": false,
           "items": [
             "Holding tank between mixer and injection pump"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "datasheet",
@@ -2059,12 +2172,14 @@
               ]
             }
           ],
-          "note": ""
+          "note": "",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Standard and optional equipment"
+          "text": "Standard and optional equipment",
+          "gen": true
         },
         {
           "type": "list",
@@ -2072,7 +2187,8 @@
           "items": [
             "Optional (Agitator): Level sensors 1\", \"full - empty\"",
             "Optional (Agitator): Flange connection with butterfly valve 2½\""
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "modules",
@@ -2087,13 +2203,15 @@
               "width": 700,
               "height": 1250
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "button",
           "kind": "download",
           "text": "Brochure HRW 3000 (PDF)",
-          "href": "/assets/docs/haeny-hrw3000-brochure-en.pdf"
+          "href": "/assets/docs/haeny-hrw3000-brochure-en.pdf",
+          "gen": true
         },
         {
           "type": "text",
@@ -2132,7 +2250,8 @@
         {
           "type": "heading",
           "level": 2,
-          "text": "Resumen"
+          "text": "Resumen",
+          "gen": true
         },
         {
           "type": "list",
@@ -2141,12 +2260,14 @@
             "Slowly rotating paddle for homogenization of the mixed material and removal of existing air bubbles",
             "Cleaning opening with protective grid and splash guard",
             "Inclined bottom for complete emptying with drain plug"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Modelos"
+          "text": "Modelos",
+          "gen": true
         },
         {
           "type": "list",
@@ -2158,19 +2279,22 @@
             "<a href=\"#hrw1200\">HRW 1200</a>: 1050 l · 1.5 / 1.8 kW",
             "<a href=\"#hrw2000\">HRW 2000</a>: 2,000 l · 3.0 / 3.6 kW",
             "<a href=\"#hrw3000\">HRW 3000</a>: 3,000 l · 3.0 / 3.6 kW"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Aplicaciones típicas"
+          "text": "Aplicaciones típicas",
+          "gen": true
         },
         {
           "type": "list",
           "ordered": false,
           "items": [
             "Holding tank between mixer and injection pump"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "modules",
@@ -2226,13 +2350,15 @@
               "width": 537,
               "height": 577
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "heading",
           "level": 2,
           "text": "HRW 150",
-          "anchor": "hrw150"
+          "anchor": "hrw150",
+          "gen": true
         },
         {
           "type": "columns",
@@ -2260,19 +2386,22 @@
                 "Inclined bottom for complete emptying with drain plug"
               ]
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Aplicaciones típicas"
+          "text": "Aplicaciones típicas",
+          "gen": true
         },
         {
           "type": "list",
           "ordered": false,
           "items": [
             "Holding tank between mixer and injection pump"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "datasheet",
@@ -2352,7 +2481,8 @@
               ]
             }
           ],
-          "note": ""
+          "note": "",
+          "gen": true
         },
         {
           "type": "modules",
@@ -2367,19 +2497,22 @@
               "width": 753,
               "height": 1260
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "button",
           "kind": "download",
           "text": "Folleto HRW 150 (PDF, inglés)",
-          "href": "/assets/docs/haeny-hrw150-brochure-en.pdf"
+          "href": "/assets/docs/haeny-hrw150-brochure-en.pdf",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 2,
           "text": "HRW 350",
-          "anchor": "hrw350"
+          "anchor": "hrw350",
+          "gen": true
         },
         {
           "type": "columns",
@@ -2409,19 +2542,22 @@
                 "Optional level sensors for consumption-dependent and fully automatic operation"
               ]
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Aplicaciones típicas"
+          "text": "Aplicaciones típicas",
+          "gen": true
         },
         {
           "type": "list",
           "ordered": false,
           "items": [
             "Holding tank between mixer and injection pump"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "datasheet",
@@ -2493,12 +2629,14 @@
               ]
             }
           ],
-          "note": ""
+          "note": "",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Equipamiento estándar y opcional"
+          "text": "Equipamiento estándar y opcional",
+          "gen": true
         },
         {
           "type": "list",
@@ -2506,7 +2644,8 @@
           "items": [
             "Optional (Agitator): Level sensors 1\", \"full - empty\"",
             "Optional (Agitator): Flange connection with butterfly valve 2½\""
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "modules",
@@ -2521,19 +2660,22 @@
               "width": 599,
               "height": 1261
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "button",
           "kind": "download",
           "text": "Folleto HRW 350 (PDF, inglés)",
-          "href": "/assets/docs/haeny-hrw350-brochure-en.pdf"
+          "href": "/assets/docs/haeny-hrw350-brochure-en.pdf",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 2,
           "text": "HRW 800",
-          "anchor": "hrw800"
+          "anchor": "hrw800",
+          "gen": true
         },
         {
           "type": "columns",
@@ -2563,19 +2705,22 @@
                 "Optional level sensors for consumption-dependent and fully automatic operation"
               ]
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Aplicaciones típicas"
+          "text": "Aplicaciones típicas",
+          "gen": true
         },
         {
           "type": "list",
           "ordered": false,
           "items": [
             "Holding tank between mixer and injection pump"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "datasheet",
@@ -2647,12 +2792,14 @@
               ]
             }
           ],
-          "note": ""
+          "note": "",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Equipamiento estándar y opcional"
+          "text": "Equipamiento estándar y opcional",
+          "gen": true
         },
         {
           "type": "list",
@@ -2660,7 +2807,8 @@
           "items": [
             "Optional (Agitator): Level sensors 1\", \"full - empty\"",
             "Optional (Agitator): Flange connection with butterfly valve 2½\""
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "modules",
@@ -2675,19 +2823,22 @@
               "width": 608,
               "height": 1262
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "button",
           "kind": "download",
           "text": "Folleto HRW 800 (PDF, inglés)",
-          "href": "/assets/docs/haeny-hrw800-brochure-en.pdf"
+          "href": "/assets/docs/haeny-hrw800-brochure-en.pdf",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 2,
           "text": "HRW 1200",
-          "anchor": "hrw1200"
+          "anchor": "hrw1200",
+          "gen": true
         },
         {
           "type": "columns",
@@ -2717,19 +2868,22 @@
                 "Level sensors for fully automatic operation"
               ]
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Aplicaciones típicas"
+          "text": "Aplicaciones típicas",
+          "gen": true
         },
         {
           "type": "list",
           "ordered": false,
           "items": [
             "Holding tank between mixer and injection pump"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "datasheet",
@@ -2801,12 +2955,14 @@
               ]
             }
           ],
-          "note": ""
+          "note": "",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Equipamiento estándar y opcional"
+          "text": "Equipamiento estándar y opcional",
+          "gen": true
         },
         {
           "type": "list",
@@ -2814,7 +2970,8 @@
           "items": [
             "Optional (Agitator): Level sensors 1\", \"full - empty\"",
             "Optional (Agitator): Flange connection with butterfly valve 2½\""
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "modules",
@@ -2829,19 +2986,22 @@
               "width": 548,
               "height": 1251
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "button",
           "kind": "download",
           "text": "Folleto HRW 1200 (PDF, inglés)",
-          "href": "/assets/docs/haeny-hrw1200-brochure-en.pdf"
+          "href": "/assets/docs/haeny-hrw1200-brochure-en.pdf",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 2,
           "text": "HRW 2000",
-          "anchor": "hrw2000"
+          "anchor": "hrw2000",
+          "gen": true
         },
         {
           "type": "columns",
@@ -2871,19 +3031,22 @@
                 "Level sensors for fully automatic operation"
               ]
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Aplicaciones típicas"
+          "text": "Aplicaciones típicas",
+          "gen": true
         },
         {
           "type": "list",
           "ordered": false,
           "items": [
             "Holding tank between mixer and injection pump"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "datasheet",
@@ -2955,12 +3118,14 @@
               ]
             }
           ],
-          "note": ""
+          "note": "",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Equipamiento estándar y opcional"
+          "text": "Equipamiento estándar y opcional",
+          "gen": true
         },
         {
           "type": "list",
@@ -2968,7 +3133,8 @@
           "items": [
             "Optional (Agitator): Level sensors 1\", \"full - empty\"",
             "Optional (Agitator): Flange connection with butterfly valve 2½\""
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "modules",
@@ -2983,19 +3149,22 @@
               "width": 629,
               "height": 1258
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "button",
           "kind": "download",
           "text": "Folleto HRW 2000 (PDF, inglés)",
-          "href": "/assets/docs/haeny-hrw2000-brochure-en.pdf"
+          "href": "/assets/docs/haeny-hrw2000-brochure-en.pdf",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 2,
           "text": "HRW 3000",
-          "anchor": "hrw3000"
+          "anchor": "hrw3000",
+          "gen": true
         },
         {
           "type": "columns",
@@ -3025,19 +3194,22 @@
                 "Level sensors for fully automatic operation"
               ]
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Aplicaciones típicas"
+          "text": "Aplicaciones típicas",
+          "gen": true
         },
         {
           "type": "list",
           "ordered": false,
           "items": [
             "Holding tank between mixer and injection pump"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "datasheet",
@@ -3109,12 +3281,14 @@
               ]
             }
           ],
-          "note": ""
+          "note": "",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Equipamiento estándar y opcional"
+          "text": "Equipamiento estándar y opcional",
+          "gen": true
         },
         {
           "type": "list",
@@ -3122,7 +3296,8 @@
           "items": [
             "Optional (Agitator): Level sensors 1\", \"full - empty\"",
             "Optional (Agitator): Flange connection with butterfly valve 2½\""
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "modules",
@@ -3137,13 +3312,15 @@
               "width": 700,
               "height": 1250
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "button",
           "kind": "download",
           "text": "Folleto HRW 3000 (PDF, inglés)",
-          "href": "/assets/docs/haeny-hrw3000-brochure-en.pdf"
+          "href": "/assets/docs/haeny-hrw3000-brochure-en.pdf",
+          "gen": true
         },
         {
           "type": "text",
@@ -3182,7 +3359,8 @@
         {
           "type": "heading",
           "level": 2,
-          "text": "Oversikt"
+          "text": "Oversikt",
+          "gen": true
         },
         {
           "type": "list",
@@ -3191,12 +3369,14 @@
             "Slowly rotating paddle for homogenization of the mixed material and removal of existing air bubbles",
             "Cleaning opening with protective grid and splash guard",
             "Inclined bottom for complete emptying with drain plug"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Modeller"
+          "text": "Modeller",
+          "gen": true
         },
         {
           "type": "list",
@@ -3208,19 +3388,22 @@
             "<a href=\"#hrw1200\">HRW 1200</a>: 1050 l · 1.5 / 1.8 kW",
             "<a href=\"#hrw2000\">HRW 2000</a>: 2,000 l · 3.0 / 3.6 kW",
             "<a href=\"#hrw3000\">HRW 3000</a>: 3,000 l · 3.0 / 3.6 kW"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Bruksområder"
+          "text": "Bruksområder",
+          "gen": true
         },
         {
           "type": "list",
           "ordered": false,
           "items": [
             "Holding tank between mixer and injection pump"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "modules",
@@ -3276,13 +3459,15 @@
               "width": 537,
               "height": 577
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "heading",
           "level": 2,
           "text": "HRW 150",
-          "anchor": "hrw150"
+          "anchor": "hrw150",
+          "gen": true
         },
         {
           "type": "columns",
@@ -3310,19 +3495,22 @@
                 "Inclined bottom for complete emptying with drain plug"
               ]
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Bruksområder"
+          "text": "Bruksområder",
+          "gen": true
         },
         {
           "type": "list",
           "ordered": false,
           "items": [
             "Holding tank between mixer and injection pump"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "datasheet",
@@ -3402,7 +3590,8 @@
               ]
             }
           ],
-          "note": ""
+          "note": "",
+          "gen": true
         },
         {
           "type": "modules",
@@ -3417,19 +3606,22 @@
               "width": 753,
               "height": 1260
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "button",
           "kind": "download",
           "text": "Brosjyre HRW 150 (PDF, engelsk)",
-          "href": "/assets/docs/haeny-hrw150-brochure-en.pdf"
+          "href": "/assets/docs/haeny-hrw150-brochure-en.pdf",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 2,
           "text": "HRW 350",
-          "anchor": "hrw350"
+          "anchor": "hrw350",
+          "gen": true
         },
         {
           "type": "columns",
@@ -3459,19 +3651,22 @@
                 "Optional level sensors for consumption-dependent and fully automatic operation"
               ]
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Bruksområder"
+          "text": "Bruksområder",
+          "gen": true
         },
         {
           "type": "list",
           "ordered": false,
           "items": [
             "Holding tank between mixer and injection pump"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "datasheet",
@@ -3543,12 +3738,14 @@
               ]
             }
           ],
-          "note": ""
+          "note": "",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Standard- og tilvalgsutstyr"
+          "text": "Standard- og tilvalgsutstyr",
+          "gen": true
         },
         {
           "type": "list",
@@ -3556,7 +3753,8 @@
           "items": [
             "Optional (Agitator): Level sensors 1\", \"full - empty\"",
             "Optional (Agitator): Flange connection with butterfly valve 2½\""
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "modules",
@@ -3571,19 +3769,22 @@
               "width": 599,
               "height": 1261
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "button",
           "kind": "download",
           "text": "Brosjyre HRW 350 (PDF, engelsk)",
-          "href": "/assets/docs/haeny-hrw350-brochure-en.pdf"
+          "href": "/assets/docs/haeny-hrw350-brochure-en.pdf",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 2,
           "text": "HRW 800",
-          "anchor": "hrw800"
+          "anchor": "hrw800",
+          "gen": true
         },
         {
           "type": "columns",
@@ -3613,19 +3814,22 @@
                 "Optional level sensors for consumption-dependent and fully automatic operation"
               ]
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Bruksområder"
+          "text": "Bruksområder",
+          "gen": true
         },
         {
           "type": "list",
           "ordered": false,
           "items": [
             "Holding tank between mixer and injection pump"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "datasheet",
@@ -3697,12 +3901,14 @@
               ]
             }
           ],
-          "note": ""
+          "note": "",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Standard- og tilvalgsutstyr"
+          "text": "Standard- og tilvalgsutstyr",
+          "gen": true
         },
         {
           "type": "list",
@@ -3710,7 +3916,8 @@
           "items": [
             "Optional (Agitator): Level sensors 1\", \"full - empty\"",
             "Optional (Agitator): Flange connection with butterfly valve 2½\""
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "modules",
@@ -3725,19 +3932,22 @@
               "width": 608,
               "height": 1262
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "button",
           "kind": "download",
           "text": "Brosjyre HRW 800 (PDF, engelsk)",
-          "href": "/assets/docs/haeny-hrw800-brochure-en.pdf"
+          "href": "/assets/docs/haeny-hrw800-brochure-en.pdf",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 2,
           "text": "HRW 1200",
-          "anchor": "hrw1200"
+          "anchor": "hrw1200",
+          "gen": true
         },
         {
           "type": "columns",
@@ -3767,19 +3977,22 @@
                 "Level sensors for fully automatic operation"
               ]
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Bruksområder"
+          "text": "Bruksområder",
+          "gen": true
         },
         {
           "type": "list",
           "ordered": false,
           "items": [
             "Holding tank between mixer and injection pump"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "datasheet",
@@ -3851,12 +4064,14 @@
               ]
             }
           ],
-          "note": ""
+          "note": "",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Standard- og tilvalgsutstyr"
+          "text": "Standard- og tilvalgsutstyr",
+          "gen": true
         },
         {
           "type": "list",
@@ -3864,7 +4079,8 @@
           "items": [
             "Optional (Agitator): Level sensors 1\", \"full - empty\"",
             "Optional (Agitator): Flange connection with butterfly valve 2½\""
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "modules",
@@ -3879,19 +4095,22 @@
               "width": 548,
               "height": 1251
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "button",
           "kind": "download",
           "text": "Brosjyre HRW 1200 (PDF, engelsk)",
-          "href": "/assets/docs/haeny-hrw1200-brochure-en.pdf"
+          "href": "/assets/docs/haeny-hrw1200-brochure-en.pdf",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 2,
           "text": "HRW 2000",
-          "anchor": "hrw2000"
+          "anchor": "hrw2000",
+          "gen": true
         },
         {
           "type": "columns",
@@ -3921,19 +4140,22 @@
                 "Level sensors for fully automatic operation"
               ]
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Bruksområder"
+          "text": "Bruksområder",
+          "gen": true
         },
         {
           "type": "list",
           "ordered": false,
           "items": [
             "Holding tank between mixer and injection pump"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "datasheet",
@@ -4005,12 +4227,14 @@
               ]
             }
           ],
-          "note": ""
+          "note": "",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Standard- og tilvalgsutstyr"
+          "text": "Standard- og tilvalgsutstyr",
+          "gen": true
         },
         {
           "type": "list",
@@ -4018,7 +4242,8 @@
           "items": [
             "Optional (Agitator): Level sensors 1\", \"full - empty\"",
             "Optional (Agitator): Flange connection with butterfly valve 2½\""
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "modules",
@@ -4033,19 +4258,22 @@
               "width": 629,
               "height": 1258
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "button",
           "kind": "download",
           "text": "Brosjyre HRW 2000 (PDF, engelsk)",
-          "href": "/assets/docs/haeny-hrw2000-brochure-en.pdf"
+          "href": "/assets/docs/haeny-hrw2000-brochure-en.pdf",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 2,
           "text": "HRW 3000",
-          "anchor": "hrw3000"
+          "anchor": "hrw3000",
+          "gen": true
         },
         {
           "type": "columns",
@@ -4075,19 +4303,22 @@
                 "Level sensors for fully automatic operation"
               ]
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Bruksområder"
+          "text": "Bruksområder",
+          "gen": true
         },
         {
           "type": "list",
           "ordered": false,
           "items": [
             "Holding tank between mixer and injection pump"
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "datasheet",
@@ -4159,12 +4390,14 @@
               ]
             }
           ],
-          "note": ""
+          "note": "",
+          "gen": true
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "Standard- og tilvalgsutstyr"
+          "text": "Standard- og tilvalgsutstyr",
+          "gen": true
         },
         {
           "type": "list",
@@ -4172,7 +4405,8 @@
           "items": [
             "Optional (Agitator): Level sensors 1\", \"full - empty\"",
             "Optional (Agitator): Flange connection with butterfly valve 2½\""
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "modules",
@@ -4187,13 +4421,15 @@
               "width": 700,
               "height": 1250
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "button",
           "kind": "download",
           "text": "Brosjyre HRW 3000 (PDF, engelsk)",
-          "href": "/assets/docs/haeny-hrw3000-brochure-en.pdf"
+          "href": "/assets/docs/haeny-hrw3000-brochure-en.pdf",
+          "gen": true
         },
         {
           "type": "text",
