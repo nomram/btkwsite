@@ -40,6 +40,53 @@
         {
           "type": "heading",
           "level": 2,
+          "text": "Kompletta enheter",
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 4,
+          "more": false,
+          "items": [
+            {
+              "title": "Kompakta anläggningar (IC)",
+              "image": "/assets/img/haeny-manuella-pumpar-ic-310-ic-311.webp",
+              "alt": "Kompakta anläggningar (IC)",
+              "href": "/produkter/haeny/hitta-ratt-maskin/kompakta-anlaggningar",
+              "width": 1083,
+              "height": 1169
+            },
+            {
+              "title": "Kompakta PU-anläggningar (IC 325 CCP)",
+              "image": "/assets/img/haeny-finder-ccp.webp",
+              "alt": "Kompakta PU-anläggningar (IC 325 CCP)",
+              "href": "/produkter/haeny/manuella-pumpar/ic-325-ic325-ccp#ic325-ccp",
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "Automatiska anläggningar (FAIC)",
+              "image": "/assets/img/haeny-automatiska-pumpar.webp",
+              "alt": "Automatiska anläggningar (FAIC)",
+              "href": "/produkter/haeny/automatiska-pumpar",
+              "width": 704,
+              "height": 827
+            },
+            {
+              "title": "Mobila anläggningar (MCM)",
+              "image": "/assets/img/haeny-finder-mcm.webp",
+              "alt": "Mobila anläggningar (MCM)",
+              "href": "/produkter/haeny/hitta-ratt-maskin/mobila-anlaggningar",
+              "width": 1000,
+              "height": 1000
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 2,
           "text": "Delar",
           "gen": true
         },
@@ -70,53 +117,6 @@
               "image": "/assets/img/haeny-finder-zmp.webp",
               "alt": "Injekteringspumpar (ZMP)",
               "href": "/produkter/haeny/hitta-ratt-maskin/injekteringspumpar",
-              "width": 1000,
-              "height": 1000
-            }
-          ],
-          "gen": true
-        },
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "Kompletta enheter",
-          "gen": true
-        },
-        {
-          "type": "modules",
-          "layout": "tiles",
-          "columns": 4,
-          "more": false,
-          "items": [
-            {
-              "title": "Kompakta anläggningar (IC)",
-              "image": "/assets/img/haeny-manuella-pumpar-ic-310-ic-311.webp",
-              "alt": "Kompakta anläggningar (IC)",
-              "href": "/produkter/haeny/hitta-ratt-maskin/kompakta-anlaggningar",
-              "width": 1083,
-              "height": 1169
-            },
-            {
-              "title": "Kompakta PU-anläggningar (IC 325 CCP)",
-              "image": "/assets/img/haeny-finder-ccp.webp",
-              "alt": "Kompakta PU-anläggningar (IC 325 CCP)",
-              "href": "/produkter/haeny/manuella-pumpar/ic-325-ic325-ccp#ic325-ccp",
-              "width": 1000,
-              "height": 1000
-            },
-            {
-              "title": "Automatiska anläggningar (FAIC)",
-              "image": "/assets/img/haeny-finder-faic.webp",
-              "alt": "Automatiska anläggningar (FAIC)",
-              "href": "/produkter/haeny/automatiska-pumpar",
-              "width": 1000,
-              "height": 1000
-            },
-            {
-              "title": "Mobila anläggningar (MCM)",
-              "image": "/assets/img/haeny-finder-mcm.webp",
-              "alt": "Mobila anläggningar (MCM)",
-              "href": "/produkter/haeny/hitta-ratt-maskin/mobila-anlaggningar",
               "width": 1000,
               "height": 1000
             }
@@ -158,9 +158,9 @@
             {
               "type": "image",
               "alt": "HÄNY: bild 2",
-              "width": 351,
-              "height": 264,
-              "src": "/assets/img/haeny-2.webp",
+              "width": 744,
+              "height": 920,
+              "src": "/assets/img/haeny-tech-mixer.webp",
               "caption": "Mixer"
             }
           ],
@@ -177,6 +177,16 @@
             {
               "type": "text",
               "html": "Denna intensiva hydratisering ger en stabil och lättbearbetad suspension, även för svårblandade tillsatser. HCM-mixern eliminerar behovet av förblötläggning av bentonit eller lagringstankar."
+            },
+            {
+              "type": "related",
+              "title": "Se produkten:",
+              "items": [
+                {
+                  "href": "/produkter/haeny/hitta-ratt-maskin/blandare"
+                }
+              ],
+              "tech": true
             }
           ]
         },
@@ -202,6 +212,51 @@
             {
               "type": "text",
               "html": "Häny vortex-impeller har stor genomströmning (15-80 mm) och är extremt slitstark, vilket minskar slitage och igensättning. Modellerna HCM 300 och HCM 600 kan blanda sandhaltiga injekteringsbruk med upp till 8 mm partikelstorlek. Den underhållsfria axeltätningen tål torrkörning i flera minuter utan skador."
+            },
+            {
+              "type": "related",
+              "title": "Se produkten:",
+              "items": [
+                {
+                  "href": "/produkter/haeny/hitta-ratt-maskin/blandare"
+                }
+              ],
+              "tech": true
+            }
+          ]
+        },
+        {
+          "type": "columns",
+          "ratio": "40-60",
+          "left": [
+            {
+              "type": "image",
+              "alt": "Omrörare",
+              "width": 782,
+              "height": 921,
+              "src": "/assets/img/haeny-tech-agitator.webp",
+              "caption": "Omrörare"
+            }
+          ],
+          "right": [
+            {
+              "type": "heading",
+              "level": 3,
+              "text": "Omrörare"
+            },
+            {
+              "type": "text",
+              "html": "Omröraren används som mellanlager mellan blandaren och pumpen. I den långsamt roterande omröraren homogeniseras injekteringsmassan och eventuella luftbubblor avlägsnas, så att pumpen kan arbeta kontinuerligt. Med nivågivare (tillval) går det att köra helt automatiskt."
+            },
+            {
+              "type": "related",
+              "title": "Se produkten:",
+              "items": [
+                {
+                  "href": "/produkter/haeny/hitta-ratt-maskin/omrorare"
+                }
+              ],
+              "tech": true
             }
           ]
         },
@@ -212,10 +267,10 @@
             {
               "type": "image",
               "alt": "HÄNY: bild 4",
-              "width": 682,
-              "height": 1548,
-              "src": "/assets/img/haeny-4.webp",
-              "caption": "Plunger"
+              "width": 894,
+              "height": 786,
+              "src": "/assets/img/haeny-tech-plunger.webp",
+              "caption": "Enkel (ZMP 610) och dubbel pumpmodul (ZMP 625)"
             }
           ],
           "right": [
@@ -236,6 +291,16 @@
             {
               "type": "text",
               "html": "Injektionsventilerna är tillverkade av slitstarkt legerat stål med vändbara ventilsäten. Det hydrauliska systemet ger en snabb sugrörelse som håller ventilerna rena genom att spola bort tunga partiklar. Pumparna hanterar även suspensioner med låg vatten/cementhalt och hög sandandel."
+            },
+            {
+              "type": "related",
+              "title": "Se produkten:",
+              "items": [
+                {
+                  "href": "/produkter/haeny/hitta-ratt-maskin/injekteringspumpar"
+                }
+              ],
+              "tech": true
             }
           ]
         },
@@ -270,6 +335,16 @@
             {
               "type": "text",
               "html": "Inbyggd flödesreglering tillåter inställning av maxflöde, vilket möjliggör långsam injektering i mjuka markförhållanden utan segregation eller nya hålrum. Tillsammans med tryckkontrollen kan pumparna även användas för permeabilitetstester."
+            },
+            {
+              "type": "related",
+              "title": "Se produkten:",
+              "items": [
+                {
+                  "href": "/produkter/haeny/hitta-ratt-maskin/injekteringspumpar"
+                }
+              ],
+              "tech": true
             }
           ]
         },
@@ -347,6 +422,53 @@
         {
           "type": "heading",
           "level": 2,
+          "text": "Complete units",
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 4,
+          "more": false,
+          "items": [
+            {
+              "title": "Compact grout plants (IC)",
+              "image": "/assets/img/haeny-manuella-pumpar-ic-310-ic-311.webp",
+              "alt": "Compact grout plants (IC)",
+              "href": "/produkter/haeny/hitta-ratt-maskin/kompakta-anlaggningar",
+              "width": 1083,
+              "height": 1169
+            },
+            {
+              "title": "Compact PU plants (IC 325 CCP)",
+              "image": "/assets/img/haeny-finder-ccp.webp",
+              "alt": "Compact PU plants (IC 325 CCP)",
+              "href": "/produkter/haeny/manuella-pumpar/ic-325-ic325-ccp#ic325-ccp",
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "Automated grout plants (FAIC)",
+              "image": "/assets/img/haeny-automatiska-pumpar.webp",
+              "alt": "Automated grout plants (FAIC)",
+              "href": "/produkter/haeny/automatiska-pumpar",
+              "width": 704,
+              "height": 827
+            },
+            {
+              "title": "Portable mixing plants (MCM)",
+              "image": "/assets/img/haeny-finder-mcm.webp",
+              "alt": "Portable mixing plants (MCM)",
+              "href": "/produkter/haeny/hitta-ratt-maskin/mobila-anlaggningar",
+              "width": 1000,
+              "height": 1000
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 2,
           "text": "Parts",
           "gen": true
         },
@@ -377,53 +499,6 @@
               "image": "/assets/img/haeny-finder-zmp.webp",
               "alt": "Grout pumps (ZMP)",
               "href": "/produkter/haeny/hitta-ratt-maskin/injekteringspumpar",
-              "width": 1000,
-              "height": 1000
-            }
-          ],
-          "gen": true
-        },
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "Complete units",
-          "gen": true
-        },
-        {
-          "type": "modules",
-          "layout": "tiles",
-          "columns": 4,
-          "more": false,
-          "items": [
-            {
-              "title": "Compact grout plants (IC)",
-              "image": "/assets/img/haeny-manuella-pumpar-ic-310-ic-311.webp",
-              "alt": "Compact grout plants (IC)",
-              "href": "/produkter/haeny/hitta-ratt-maskin/kompakta-anlaggningar",
-              "width": 1083,
-              "height": 1169
-            },
-            {
-              "title": "Compact PU plants (IC 325 CCP)",
-              "image": "/assets/img/haeny-finder-ccp.webp",
-              "alt": "Compact PU plants (IC 325 CCP)",
-              "href": "/produkter/haeny/manuella-pumpar/ic-325-ic325-ccp#ic325-ccp",
-              "width": 1000,
-              "height": 1000
-            },
-            {
-              "title": "Automated grout plants (FAIC)",
-              "image": "/assets/img/haeny-finder-faic.webp",
-              "alt": "Automated grout plants (FAIC)",
-              "href": "/produkter/haeny/automatiska-pumpar",
-              "width": 1000,
-              "height": 1000
-            },
-            {
-              "title": "Portable mixing plants (MCM)",
-              "image": "/assets/img/haeny-finder-mcm.webp",
-              "alt": "Portable mixing plants (MCM)",
-              "href": "/produkter/haeny/hitta-ratt-maskin/mobila-anlaggningar",
               "width": 1000,
               "height": 1000
             }
@@ -465,9 +540,9 @@
             {
               "type": "image",
               "alt": "HÄNY: image 2",
-              "width": 351,
-              "height": 264,
-              "src": "/assets/img/haeny-2.webp",
+              "width": 744,
+              "height": 920,
+              "src": "/assets/img/haeny-tech-mixer.webp",
               "caption": "Mixer"
             }
           ],
@@ -484,6 +559,16 @@
             {
               "type": "text",
               "html": "This intense hydration gives a stable and easily workable suspension, even for difficult-to-mix additives. The HCM mixer eliminates the need for pre-soaking of bentonite or storage tanks."
+            },
+            {
+              "type": "related",
+              "title": "See the product:",
+              "items": [
+                {
+                  "href": "/produkter/haeny/hitta-ratt-maskin/blandare"
+                }
+              ],
+              "tech": true
             }
           ]
         },
@@ -509,6 +594,51 @@
             {
               "type": "text",
               "html": "Häny’s vortex impeller has a large throughput (15-80 mm) and is extremely wear-resistant, which reduces wear and clogging. The HCM 300 and HCM 600 models can mix sandy grouts with particle sizes up to 8 mm. The maintenance-free shaft seal withstands dry running for several minutes without damage."
+            },
+            {
+              "type": "related",
+              "title": "See the product:",
+              "items": [
+                {
+                  "href": "/produkter/haeny/hitta-ratt-maskin/blandare"
+                }
+              ],
+              "tech": true
+            }
+          ]
+        },
+        {
+          "type": "columns",
+          "ratio": "40-60",
+          "left": [
+            {
+              "type": "image",
+              "alt": "Agitator",
+              "width": 782,
+              "height": 921,
+              "src": "/assets/img/haeny-tech-agitator.webp",
+              "caption": "Agitator"
+            }
+          ],
+          "right": [
+            {
+              "type": "heading",
+              "level": 3,
+              "text": "Agitator"
+            },
+            {
+              "type": "text",
+              "html": "The agitator is used as a holding tank between the mixer and the pump. In the slowly revolving agitator the grout is homogenised and any air bubbles are removed, so the pump can work continuously. With level sensors (optional) it can run fully automatically."
+            },
+            {
+              "type": "related",
+              "title": "See the product:",
+              "items": [
+                {
+                  "href": "/produkter/haeny/hitta-ratt-maskin/omrorare"
+                }
+              ],
+              "tech": true
             }
           ]
         },
@@ -519,10 +649,10 @@
             {
               "type": "image",
               "alt": "HÄNY: image 4",
-              "width": 682,
-              "height": 1548,
-              "src": "/assets/img/haeny-4.webp",
-              "caption": "Plunger"
+              "width": 894,
+              "height": 786,
+              "src": "/assets/img/haeny-tech-plunger.webp",
+              "caption": "Single (ZMP 610) and double pump module (ZMP 625)"
             }
           ],
           "right": [
@@ -543,6 +673,16 @@
             {
               "type": "text",
               "html": "The injection valves are made of wear-resistant alloy steel with reversible valve seats. The hydraulic system provides a fast suction stroke that keeps the valves clean by flushing away heavy particles. The pumps also handle suspensions with a low water/cement ratio and a high sand content."
+            },
+            {
+              "type": "related",
+              "title": "See the product:",
+              "items": [
+                {
+                  "href": "/produkter/haeny/hitta-ratt-maskin/injekteringspumpar"
+                }
+              ],
+              "tech": true
             }
           ]
         },
@@ -577,6 +717,16 @@
             {
               "type": "text",
               "html": "Built-in flow regulation allows the maximum flow to be set, which enables slow grouting in soft ground conditions without segregation or new voids. Together with the pressure control, the pumps can also be used for permeability tests."
+            },
+            {
+              "type": "related",
+              "title": "See the product:",
+              "items": [
+                {
+                  "href": "/produkter/haeny/hitta-ratt-maskin/injekteringspumpar"
+                }
+              ],
+              "tech": true
             }
           ]
         },
@@ -655,6 +805,53 @@
         {
           "type": "heading",
           "level": 2,
+          "text": "Equipos completos",
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 4,
+          "more": false,
+          "items": [
+            {
+              "title": "Plantas de inyección compactas (IC)",
+              "image": "/assets/img/haeny-manuella-pumpar-ic-310-ic-311.webp",
+              "alt": "Plantas de inyección compactas (IC)",
+              "href": "/produkter/haeny/hitta-ratt-maskin/kompakta-anlaggningar",
+              "width": 1083,
+              "height": 1169
+            },
+            {
+              "title": "Plantas compactas PU (IC 325 CCP)",
+              "image": "/assets/img/haeny-finder-ccp.webp",
+              "alt": "Plantas compactas PU (IC 325 CCP)",
+              "href": "/produkter/haeny/manuella-pumpar/ic-325-ic325-ccp#ic325-ccp",
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "Plantas de inyección automáticas (FAIC)",
+              "image": "/assets/img/haeny-automatiska-pumpar.webp",
+              "alt": "Plantas de inyección automáticas (FAIC)",
+              "href": "/produkter/haeny/automatiska-pumpar",
+              "width": 704,
+              "height": 827
+            },
+            {
+              "title": "Plantas de mezcla móviles (MCM)",
+              "image": "/assets/img/haeny-finder-mcm.webp",
+              "alt": "Plantas de mezcla móviles (MCM)",
+              "href": "/produkter/haeny/hitta-ratt-maskin/mobila-anlaggningar",
+              "width": 1000,
+              "height": 1000
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 2,
           "text": "Componentes",
           "gen": true
         },
@@ -685,53 +882,6 @@
               "image": "/assets/img/haeny-finder-zmp.webp",
               "alt": "Bombas de inyección (ZMP)",
               "href": "/produkter/haeny/hitta-ratt-maskin/injekteringspumpar",
-              "width": 1000,
-              "height": 1000
-            }
-          ],
-          "gen": true
-        },
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "Equipos completos",
-          "gen": true
-        },
-        {
-          "type": "modules",
-          "layout": "tiles",
-          "columns": 4,
-          "more": false,
-          "items": [
-            {
-              "title": "Plantas de inyección compactas (IC)",
-              "image": "/assets/img/haeny-manuella-pumpar-ic-310-ic-311.webp",
-              "alt": "Plantas de inyección compactas (IC)",
-              "href": "/produkter/haeny/hitta-ratt-maskin/kompakta-anlaggningar",
-              "width": 1083,
-              "height": 1169
-            },
-            {
-              "title": "Plantas compactas PU (IC 325 CCP)",
-              "image": "/assets/img/haeny-finder-ccp.webp",
-              "alt": "Plantas compactas PU (IC 325 CCP)",
-              "href": "/produkter/haeny/manuella-pumpar/ic-325-ic325-ccp#ic325-ccp",
-              "width": 1000,
-              "height": 1000
-            },
-            {
-              "title": "Plantas de inyección automáticas (FAIC)",
-              "image": "/assets/img/haeny-finder-faic.webp",
-              "alt": "Plantas de inyección automáticas (FAIC)",
-              "href": "/produkter/haeny/automatiska-pumpar",
-              "width": 1000,
-              "height": 1000
-            },
-            {
-              "title": "Plantas de mezcla móviles (MCM)",
-              "image": "/assets/img/haeny-finder-mcm.webp",
-              "alt": "Plantas de mezcla móviles (MCM)",
-              "href": "/produkter/haeny/hitta-ratt-maskin/mobila-anlaggningar",
               "width": 1000,
               "height": 1000
             }
@@ -773,9 +923,9 @@
             {
               "type": "image",
               "alt": "HÄNY: imagen 2",
-              "width": 351,
-              "height": 264,
-              "src": "/assets/img/haeny-2.webp",
+              "width": 744,
+              "height": 920,
+              "src": "/assets/img/haeny-tech-mixer.webp",
               "caption": "Mezcladora"
             }
           ],
@@ -792,6 +942,16 @@
             {
               "type": "text",
               "html": "Esta hidratación intensiva proporciona una suspensión estable y fácil de trabajar, incluso con aditivos difíciles de mezclar. La mezcladora HCM elimina la necesidad de pre-humedecer la bentonita o de usar depósitos de almacenamiento."
+            },
+            {
+              "type": "related",
+              "title": "Ver el producto:",
+              "items": [
+                {
+                  "href": "/produkter/haeny/hitta-ratt-maskin/blandare"
+                }
+              ],
+              "tech": true
             }
           ]
         },
@@ -817,6 +977,51 @@
             {
               "type": "text",
               "html": "El impulsor de vórtice de Häny tiene un gran paso (15-80 mm) y es extremadamente resistente al desgaste, lo que reduce el desgaste y los atascos. Los modelos HCM 300 y HCM 600 pueden mezclar lechadas arenosas con tamaños de partícula de hasta 8 mm. El sello del eje, que no requiere mantenimiento, soporta el funcionamiento en seco durante varios minutos sin sufrir daños."
+            },
+            {
+              "type": "related",
+              "title": "Ver el producto:",
+              "items": [
+                {
+                  "href": "/produkter/haeny/hitta-ratt-maskin/blandare"
+                }
+              ],
+              "tech": true
+            }
+          ]
+        },
+        {
+          "type": "columns",
+          "ratio": "40-60",
+          "left": [
+            {
+              "type": "image",
+              "alt": "Agitador",
+              "width": 782,
+              "height": 921,
+              "src": "/assets/img/haeny-tech-agitator.webp",
+              "caption": "Agitador"
+            }
+          ],
+          "right": [
+            {
+              "type": "heading",
+              "level": 3,
+              "text": "Agitador"
+            },
+            {
+              "type": "text",
+              "html": "El agitador se utiliza como depósito intermedio entre la mezcladora y la bomba. En el agitador, de giro lento, la lechada se homogeneiza y se eliminan las burbujas de aire, de modo que la bomba puede trabajar de forma continua. Con sensores de nivel (opcionales) puede funcionar de forma totalmente automática."
+            },
+            {
+              "type": "related",
+              "title": "Ver el producto:",
+              "items": [
+                {
+                  "href": "/produkter/haeny/hitta-ratt-maskin/omrorare"
+                }
+              ],
+              "tech": true
             }
           ]
         },
@@ -827,10 +1032,10 @@
             {
               "type": "image",
               "alt": "HÄNY: imagen 4",
-              "width": 682,
-              "height": 1548,
-              "src": "/assets/img/haeny-4.webp",
-              "caption": "Émbolo"
+              "width": 894,
+              "height": 786,
+              "src": "/assets/img/haeny-tech-plunger.webp",
+              "caption": "Módulo de bomba simple (ZMP 610) y doble (ZMP 625)"
             }
           ],
           "right": [
@@ -851,6 +1056,16 @@
             {
               "type": "text",
               "html": "Las válvulas de inyección están fabricadas en acero aleado resistente al desgaste con asientos de válvula reversibles. El sistema hidráulico proporciona una carrera de aspiración rápida que mantiene limpias las válvulas al arrastrar las partículas pesadas. Las bombas también manejan suspensiones con una baja relación agua/cemento y un alto contenido de arena."
+            },
+            {
+              "type": "related",
+              "title": "Ver el producto:",
+              "items": [
+                {
+                  "href": "/produkter/haeny/hitta-ratt-maskin/injekteringspumpar"
+                }
+              ],
+              "tech": true
             }
           ]
         },
@@ -885,6 +1100,16 @@
             {
               "type": "text",
               "html": "La regulación de caudal integrada permite ajustar el caudal máximo, lo que posibilita una inyección lenta en terrenos blandos sin segregación ni nuevos huecos. Junto con el control de presión, las bombas también pueden utilizarse para ensayos de permeabilidad."
+            },
+            {
+              "type": "related",
+              "title": "Ver el producto:",
+              "items": [
+                {
+                  "href": "/produkter/haeny/hitta-ratt-maskin/injekteringspumpar"
+                }
+              ],
+              "tech": true
             }
           ]
         },
@@ -963,6 +1188,53 @@
         {
           "type": "heading",
           "level": 2,
+          "text": "Komplette enheter",
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 4,
+          "more": false,
+          "items": [
+            {
+              "title": "Kompakte injeksjonsanlegg (IC)",
+              "image": "/assets/img/haeny-manuella-pumpar-ic-310-ic-311.webp",
+              "alt": "Kompakte injeksjonsanlegg (IC)",
+              "href": "/produkter/haeny/hitta-ratt-maskin/kompakta-anlaggningar",
+              "width": 1083,
+              "height": 1169
+            },
+            {
+              "title": "Kompakte PU-anlegg (IC 325 CCP)",
+              "image": "/assets/img/haeny-finder-ccp.webp",
+              "alt": "Kompakte PU-anlegg (IC 325 CCP)",
+              "href": "/produkter/haeny/manuella-pumpar/ic-325-ic325-ccp#ic325-ccp",
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "Automatiske injeksjonsanlegg (FAIC)",
+              "image": "/assets/img/haeny-automatiska-pumpar.webp",
+              "alt": "Automatiske injeksjonsanlegg (FAIC)",
+              "href": "/produkter/haeny/automatiska-pumpar",
+              "width": 704,
+              "height": 827
+            },
+            {
+              "title": "Mobile blandeanlegg (MCM)",
+              "image": "/assets/img/haeny-finder-mcm.webp",
+              "alt": "Mobile blandeanlegg (MCM)",
+              "href": "/produkter/haeny/hitta-ratt-maskin/mobila-anlaggningar",
+              "width": 1000,
+              "height": 1000
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 2,
           "text": "Deler",
           "gen": true
         },
@@ -993,53 +1265,6 @@
               "image": "/assets/img/haeny-finder-zmp.webp",
               "alt": "Injeksjonspumper (ZMP)",
               "href": "/produkter/haeny/hitta-ratt-maskin/injekteringspumpar",
-              "width": 1000,
-              "height": 1000
-            }
-          ],
-          "gen": true
-        },
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "Komplette enheter",
-          "gen": true
-        },
-        {
-          "type": "modules",
-          "layout": "tiles",
-          "columns": 4,
-          "more": false,
-          "items": [
-            {
-              "title": "Kompakte injeksjonsanlegg (IC)",
-              "image": "/assets/img/haeny-manuella-pumpar-ic-310-ic-311.webp",
-              "alt": "Kompakte injeksjonsanlegg (IC)",
-              "href": "/produkter/haeny/hitta-ratt-maskin/kompakta-anlaggningar",
-              "width": 1083,
-              "height": 1169
-            },
-            {
-              "title": "Kompakte PU-anlegg (IC 325 CCP)",
-              "image": "/assets/img/haeny-finder-ccp.webp",
-              "alt": "Kompakte PU-anlegg (IC 325 CCP)",
-              "href": "/produkter/haeny/manuella-pumpar/ic-325-ic325-ccp#ic325-ccp",
-              "width": 1000,
-              "height": 1000
-            },
-            {
-              "title": "Automatiske injeksjonsanlegg (FAIC)",
-              "image": "/assets/img/haeny-finder-faic.webp",
-              "alt": "Automatiske injeksjonsanlegg (FAIC)",
-              "href": "/produkter/haeny/automatiska-pumpar",
-              "width": 1000,
-              "height": 1000
-            },
-            {
-              "title": "Mobile blandeanlegg (MCM)",
-              "image": "/assets/img/haeny-finder-mcm.webp",
-              "alt": "Mobile blandeanlegg (MCM)",
-              "href": "/produkter/haeny/hitta-ratt-maskin/mobila-anlaggningar",
               "width": 1000,
               "height": 1000
             }
@@ -1081,9 +1306,9 @@
             {
               "type": "image",
               "alt": "HÄNY: bilde 2",
-              "width": 351,
-              "height": 264,
-              "src": "/assets/img/haeny-2.webp",
+              "width": 744,
+              "height": 920,
+              "src": "/assets/img/haeny-tech-mixer.webp",
               "caption": "Mikser"
             }
           ],
@@ -1100,6 +1325,16 @@
             {
               "type": "text",
               "html": "Denne intensive hydratiseringen gir en stabil og lettbearbeidet suspensjon, selv for tilsetningsstoffer som er vanskelige å blande. HCM-mikseren eliminerer behovet for forhåndsbløtlegging av bentonitt eller lagringstanker."
+            },
+            {
+              "type": "related",
+              "title": "Se produktet:",
+              "items": [
+                {
+                  "href": "/produkter/haeny/hitta-ratt-maskin/blandare"
+                }
+              ],
+              "tech": true
             }
           ]
         },
@@ -1125,6 +1360,51 @@
             {
               "type": "text",
               "html": "Hänys vortex-impeller har stor gjennomstrømning (15-80 mm) og er ekstremt slitesterk, noe som reduserer slitasje og tilstopping. Modellene HCM 300 og HCM 600 kan blande sandholdige injiseringsmørtler med partikkelstørrelse opptil 8 mm. Den vedlikeholdsfrie akseltetningen tåler tørrkjøring i flere minutter uten skader."
+            },
+            {
+              "type": "related",
+              "title": "Se produktet:",
+              "items": [
+                {
+                  "href": "/produkter/haeny/hitta-ratt-maskin/blandare"
+                }
+              ],
+              "tech": true
+            }
+          ]
+        },
+        {
+          "type": "columns",
+          "ratio": "40-60",
+          "left": [
+            {
+              "type": "image",
+              "alt": "Røreverk",
+              "width": 782,
+              "height": 921,
+              "src": "/assets/img/haeny-tech-agitator.webp",
+              "caption": "Røreverk"
+            }
+          ],
+          "right": [
+            {
+              "type": "heading",
+              "level": 3,
+              "text": "Røreverk"
+            },
+            {
+              "type": "text",
+              "html": "Røreverket brukes som mellomlager mellom blanderen og pumpen. I det sakte roterende røreverket homogeniseres injeksjonsmassen og luftbobler fjernes, slik at pumpen kan arbeide kontinuerlig. Med nivåfølere (tilvalg) kan det kjøres helautomatisk."
+            },
+            {
+              "type": "related",
+              "title": "Se produktet:",
+              "items": [
+                {
+                  "href": "/produkter/haeny/hitta-ratt-maskin/omrorare"
+                }
+              ],
+              "tech": true
             }
           ]
         },
@@ -1135,10 +1415,10 @@
             {
               "type": "image",
               "alt": "HÄNY: bilde 4",
-              "width": 682,
-              "height": 1548,
-              "src": "/assets/img/haeny-4.webp",
-              "caption": "Plunger"
+              "width": 894,
+              "height": 786,
+              "src": "/assets/img/haeny-tech-plunger.webp",
+              "caption": "Enkel (ZMP 610) og dobbel pumpemodul (ZMP 625)"
             }
           ],
           "right": [
@@ -1159,6 +1439,16 @@
             {
               "type": "text",
               "html": "Injiseringsventilene er laget av slitesterkt legert stål med vendbare ventilseter. Det hydrauliske systemet gir en rask sugebevegelse som holder ventilene rene ved å spyle bort tunge partikler. Pumpene håndterer også suspensjoner med lavt vann/sement-innhold og høy sandandel."
+            },
+            {
+              "type": "related",
+              "title": "Se produktet:",
+              "items": [
+                {
+                  "href": "/produkter/haeny/hitta-ratt-maskin/injekteringspumpar"
+                }
+              ],
+              "tech": true
             }
           ]
         },
@@ -1193,6 +1483,16 @@
             {
               "type": "text",
               "html": "Innebygd flytregulering gjør det mulig å stille inn maksimal flyt, noe som muliggjør langsom injisering i myke grunnforhold uten segregering eller nye hulrom. Sammen med trykkontrollen kan pumpene også brukes til permeabilitetstester."
+            },
+            {
+              "type": "related",
+              "title": "Se produktet:",
+              "items": [
+                {
+                  "href": "/produkter/haeny/hitta-ratt-maskin/injekteringspumpar"
+                }
+              ],
+              "tech": true
             }
           ]
         },

@@ -921,3 +921,7 @@ h2[id], h3[id] { scroll-margin-top: 5rem; }
 .qf__err { margin: .35rem 0 0; font-size: .85rem; font-weight: 600; color: #b3261e; }
 .qf__consent .qf__err { padding-left: 1.7rem; }
 .qf [aria-invalid="true"] { border-color: #b3261e; }
+/* "see the product" link inside a text column: one row, as wide as the text allows */
+.cols__b .related { margin: 1.1rem 0 .4rem; }
+.cols__b .related__title { margin: 0 0 .5rem; font-size: .95rem; }
+.cols__b .related__rail { grid-template-columns: minmax(0, 24rem); }
