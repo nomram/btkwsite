@@ -147,6 +147,7 @@ const ADMIN = ((JSON.parse(fs.readFileSync(path.join(ROOT, "content/site.json"),
 const ADMIN_MAP = {
   "render.mjs": path.join(ROOT, "src/lib/render.mjs"),
   "translatable.mjs": path.join(ROOT, "src/lib/translatable.mjs"),
+  "perfchart.mjs": path.join(ROOT, "src/lib/perfchart.mjs"),
   "basepath.mjs": path.join(ROOT, "src/lib/basepath.mjs"),
   "visibility.mjs": path.join(ROOT, "src/lib/visibility.mjs"),
   "site.css": path.join(ROOT, "src/css/site.css"),

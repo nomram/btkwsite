@@ -118,6 +118,66 @@
           ]
         },
         {
+          "type": "heading",
+          "level": 2,
+          "text": "Matningssystem och dragkraft",
+          "feeds": true
+        },
+        {
+          "type": "text",
+          "html": "TEI bygger sina master i aluminium och stål. Matningen (feed) väljs efter hur stor dragkraft, pullback, som behövs: ju tyngre borrhuvud och ju djupare hål, desto kraftigare matning. De lätta masterna har aluminiummatning med kedja (ACF), mellanklassen har den nyare, lättare SCF-matningen och de stora grävarburna masterna har kraftigare hydrauliska matningar.",
+          "feeds": true
+        },
+        {
+          "type": "table",
+          "header": true,
+          "caption": "Matningssystem i jämförelse",
+          "rows": [
+            [
+              "Matning",
+              "Typ",
+              "Dragkraft",
+              "Används på"
+            ],
+            [
+              "ACF",
+              "Kedjematning i aluminium (lätt)",
+              "6,7 kN (1 500 lbf)",
+              "MP260, MME"
+            ],
+            [
+              "SCF",
+              "Ny lättare matning",
+              "11,1 kN (2 500 lbf)",
+              "MPH (SCF5, 2 m borrslag), MEM"
+            ],
+            [
+              "PCF",
+              "Hydraulisk kedjematning",
+              "15,6 kN (3 500 lbf)",
+              "Kraftigare TEI-master"
+            ],
+            [
+              "HCF",
+              "Hydraulisk cylindermatning",
+              "16,7-32,7 kN (3 750-7 350 lbf)",
+              "HEM (33 kN)"
+            ],
+            [
+              "PCFH / HCFH",
+              "Tunga varianter av kedje- och cylindermatning",
+              "Högre dragkraft",
+              "HEMH (53 kN)"
+            ]
+          ],
+          "feeds": true
+        },
+        {
+          "type": "text",
+          "html": "<small>Tabellens värden är TEI:s uppgifter per matningstyp; exakt dragkraft för din mast anges på respektive produktsida.</small>",
+          "feeds": true
+        },
+        {
           "type": "text",
           "html": "Utöver det finns också portabla master (man portable) dessa återfinns längre ner."
         },
@@ -145,6 +205,11 @@
               "text": "Portabel mast (man portable)"
             }
           ]
+        },
+        {
+          "type": "text",
+          "html": "De bärbara masterna skiljer sig åt i matning: MP260 har ACF-matning (aluminium, 6,7 kN), medan MPH har den nyare SCF5-matningen (11,1 kN och 2 m borrslag). MPH ger därför kraftigare matning och kan köras med både 300- och 200-serien av borrhuvuden.",
+          "feeds": true
         }
       ]
     },
@@ -258,6 +323,66 @@
           ]
         },
         {
+          "type": "heading",
+          "level": 2,
+          "text": "Feed systems and pull-back",
+          "feeds": true
+        },
+        {
+          "type": "text",
+          "html": "TEI builds its masts in aluminium and steel. The feed is chosen by the pull-back force you need: the heavier the drill head and the deeper the hole, the stronger the feed. The light masts have an aluminium chain feed (ACF), the mid-size masts have the newer, lighter SCF feed and the large excavator-mounted masts have heavier hydraulic feeds.",
+          "feeds": true
+        },
+        {
+          "type": "table",
+          "header": true,
+          "caption": "Feed systems compared",
+          "rows": [
+            [
+              "Feed",
+              "Type",
+              "Pull-back",
+              "Used on"
+            ],
+            [
+              "ACF",
+              "Aluminium chain feed (light)",
+              "6.7 kN (1,500 lbf)",
+              "MP260, MME"
+            ],
+            [
+              "SCF",
+              "New lighter feed",
+              "11.1 kN (2,500 lbf)",
+              "MPH (SCF5, 2 m stroke), MEM"
+            ],
+            [
+              "PCF",
+              "Hydraulic chain feed",
+              "15.6 kN (3,500 lbf)",
+              "Heavier TEI masts"
+            ],
+            [
+              "HCF",
+              "Hydraulic cylinder feed",
+              "16.7-32.7 kN (3,750-7,350 lbf)",
+              "HEM (33 kN)"
+            ],
+            [
+              "PCFH / HCFH",
+              "Heavy versions of the chain and cylinder feeds",
+              "Higher pull-back",
+              "HEMH (53 kN)"
+            ]
+          ],
+          "feeds": true
+        },
+        {
+          "type": "text",
+          "html": "<small>The values are TEI's figures per feed type; the exact pull-back of your mast is given on its product page.</small>",
+          "feeds": true
+        },
+        {
           "type": "text",
           "html": "In addition there are also man-portable masts, which are found further down."
         },
@@ -285,6 +410,11 @@
               "text": "Man-portable mast"
             }
           ]
+        },
+        {
+          "type": "text",
+          "html": "The man-portable masts differ in their feed: MP260 has the ACF feed (aluminium, 6.7 kN), while MPH has the newer SCF5 feed (11.1 kN and 2 m stroke). MPH therefore gives a stronger feed and can run both the 300 and the 200 series of drill heads.",
+          "feeds": true
         }
       ],
       "published": true
@@ -399,6 +529,66 @@
           ]
         },
         {
+          "type": "heading",
+          "level": 2,
+          "text": "Sistemas de avance y fuerza de tracción",
+          "feeds": true
+        },
+        {
+          "type": "text",
+          "html": "TEI fabrica sus mástiles en aluminio y acero. El avance (feed) se elige según la fuerza de tracción (pullback) necesaria: cuanto más pesado es el cabezal y más profundo el barreno, más potente debe ser el avance. Los mástiles ligeros llevan avance de cadena de aluminio (ACF), los de tamaño medio el avance SCF, más nuevo y ligero, y los grandes mástiles para excavadora avances hidráulicos más potentes.",
+          "feeds": true
+        },
+        {
+          "type": "table",
+          "header": true,
+          "caption": "Comparación de sistemas de avance",
+          "rows": [
+            [
+              "Avance",
+              "Tipo",
+              "Fuerza de tracción",
+              "Se usa en"
+            ],
+            [
+              "ACF",
+              "Avance de cadena de aluminio (ligero)",
+              "6,7 kN (1 500 lbf)",
+              "MP260, MME"
+            ],
+            [
+              "SCF",
+              "Nuevo avance más ligero",
+              "11,1 kN (2 500 lbf)",
+              "MPH (SCF5, carrera de 2 m), MEM"
+            ],
+            [
+              "PCF",
+              "Avance hidráulico de cadena",
+              "15,6 kN (3 500 lbf)",
+              "Mástiles TEI más potentes"
+            ],
+            [
+              "HCF",
+              "Avance hidráulico de cilindro",
+              "16,7-32,7 kN (3 750-7 350 lbf)",
+              "HEM (33 kN)"
+            ],
+            [
+              "PCFH / HCFH",
+              "Versiones pesadas de los avances de cadena y de cilindro",
+              "Mayor fuerza de tracción",
+              "HEMH (53 kN)"
+            ]
+          ],
+          "feeds": true
+        },
+        {
+          "type": "text",
+          "html": "<small>Los valores son los datos de TEI por tipo de avance; la fuerza de tracción exacta de su mástil figura en la página del producto.</small>",
+          "feeds": true
+        },
+        {
           "type": "text",
           "html": "Además, también hay mástiles portátiles (man portable), que se encuentran más abajo."
         },
@@ -426,6 +616,11 @@
               "text": "Mástil portátil (man portable)"
             }
           ]
+        },
+        {
+          "type": "text",
+          "html": "Los mástiles portátiles se diferencian en el avance: el MP260 lleva avance ACF (aluminio, 6,7 kN), mientras que el MPH lleva el avance SCF5, más nuevo (11,1 kN y carrera de 2 m). Por eso el MPH ofrece un avance más potente y admite tanto la serie 300 como la serie 200 de cabezales.",
+          "feeds": true
         }
       ],
       "published": true
@@ -540,6 +735,66 @@
           ]
         },
         {
+          "type": "heading",
+          "level": 2,
+          "text": "Matesystemer og trekkraft",
+          "feeds": true
+        },
+        {
+          "type": "text",
+          "html": "TEI bygger mastene sine i aluminium og stål. Matingen (feed) velges etter hvor stor trekkraft, pullback, du trenger: jo tyngre borhode og jo dypere hull, desto kraftigere mating. De lette mastene har kjedemating i aluminium (ACF), mellomklassen har den nyere, lettere SCF-matingen, og de store gravemaskinmonterte mastene har kraftigere hydrauliske matinger.",
+          "feeds": true
+        },
+        {
+          "type": "table",
+          "header": true,
+          "caption": "Matesystemer sammenlignet",
+          "rows": [
+            [
+              "Mating",
+              "Type",
+              "Trekkraft",
+              "Brukes på"
+            ],
+            [
+              "ACF",
+              "Kjedemating i aluminium (lett)",
+              "6,7 kN (1 500 lbf)",
+              "MP260, MME"
+            ],
+            [
+              "SCF",
+              "Ny, lettere mating",
+              "11,1 kN (2 500 lbf)",
+              "MPH (SCF5, 2 m slaglengde), MEM"
+            ],
+            [
+              "PCF",
+              "Hydraulisk kjedemating",
+              "15,6 kN (3 500 lbf)",
+              "Kraftigere TEI-master"
+            ],
+            [
+              "HCF",
+              "Hydraulisk sylindermating",
+              "16,7-32,7 kN (3 750-7 350 lbf)",
+              "HEM (33 kN)"
+            ],
+            [
+              "PCFH / HCFH",
+              "Tunge varianter av kjede- og sylindermating",
+              "Høyere trekkraft",
+              "HEMH (53 kN)"
+            ]
+          ],
+          "feeds": true
+        },
+        {
+          "type": "text",
+          "html": "<small>Verdiene er TEIs opplysninger per matetype; nøyaktig trekkraft for din mast står på produktsiden.</small>",
+          "feeds": true
+        },
+        {
           "type": "text",
           "html": "I tillegg finnes også portable master (man portable), som du finner lenger ned."
         },
@@ -567,6 +822,11 @@
               "text": "Portabel mast (man portable)"
             }
           ]
+        },
+        {
+          "type": "text",
+          "html": "De bærbare mastene skiller seg i mating: MP260 har ACF-mating (aluminium, 6,7 kN), mens MPH har den nyere SCF5-matingen (11,1 kN og 2 m slaglengde). MPH gir derfor kraftigere mating og kan kjøres med både 300- og 200-serien av borhoder.",
+          "feeds": true
         }
       ],
       "published": true

@@ -132,6 +132,80 @@ async function saveNative(c, name) {
   return { file: `/assets/img/${name}.webp`, width: r.info.width, height: r.info.height, source: `${c.image.getWidth()}x${c.image.getHeight()}` };
 }
 
+// ---------- the performance chart as data ----------
+// The brochure chart is vector art: grid lines, one stroked path per curve, the tick numbers and the curve names as text. Read them back
+// (device callbacks of mupdf), calibrate the axes from the grid lines and the tick numbers, and keep the curves as points in real units.
+const cmykToHex = ([c, m, y, k]) => "#" + [(1 - c) * (1 - k), (1 - m) * (1 - k), (1 - y) * (1 - k)].map((v) => Math.round(v * 255).toString(16).padStart(2, "0")).join("");
+function chartData(page, box, lines) {
+  const strokes = [], fills = [];
+  const grab = (path, ctm) => {
+    const T = (x, y) => [ctm[0] * x + ctm[2] * y + ctm[4], ctm[1] * x + ctm[3] * y + ctm[5]];
+    const subs = []; let cur = null, last = null;
+    path.walk({
+      moveTo(x, y) { cur = [T(x, y)]; subs.push(cur); last = [x, y]; },
+      lineTo(x, y) { if (!cur) return; cur.push(T(x, y)); last = [x, y]; },
+      curveTo(x1, y1, x2, y2, x3, y3) {
+        if (!cur) return;
+        for (let i = 1; i <= 12; i++) { const t = i / 12, u = 1 - t; cur.push(T(u * u * u * last[0] + 3 * u * u * t * x1 + 3 * u * t * t * x2 + t * t * t * x3, u * u * u * last[1] + 3 * u * u * t * y1 + 3 * u * t * t * y2 + t * t * t * y3)); }
+        last = [x3, y3];
+      },
+      closePath() { if (cur && cur.length) cur.push(cur[0]); }
+    });
+    return subs;
+  };
+  const dev = new mupdf.Device({
+    strokePath(path, stroke, ctm, cs, color) { const sc = Math.sqrt(Math.abs(ctm[0] * ctm[3] - ctm[1] * ctm[2])); for (const pts of grab(path, ctm)) strokes.push({ color: cs.getName() === "DeviceCMYK" ? color : cs.getName() === "DeviceGray" ? [0, 0, 0, 1 - color[0]] : [1 - color[0], 1 - color[1], 1 - color[2], 0], w: stroke.getLineWidth() * sc, pts }); },
+    fillPath(path, even, ctm, cs, color) { for (const pts of grab(path, ctm)) fills.push({ color: cs.getName() === "DeviceCMYK" ? color : cs.getName() === "DeviceGray" ? [0, 0, 0, 1 - color[0]] : [1 - color[0], 1 - color[1], 1 - color[2], 0], pts }); }
+  });
+  page.run(dev, mupdf.Matrix.identity);
+  dev.close();
+  const pad = 4;
+  const inside = (pts) => pts.every(([x, y]) => x >= box.x0 - pad && x <= box.x1 + pad && y >= box.y0 - pad && y <= box.y1 + pad);
+  const mine = strokes.filter((q) => inside(q.pts));
+  const uniq = (a) => a.sort((p, q) => p - q).filter((v, i, r) => !i || Math.abs(v - r[i - 1]) > 0.6);
+  const thin = mine.filter((q) => q.w < 0.6 && q.pts.length === 2);
+  const vert = uniq(thin.filter((q) => Math.abs(q.pts[0][0] - q.pts[1][0]) < 0.05 && Math.abs(q.pts[0][1] - q.pts[1][1]) > 40).map((q) => q.pts[0][0]));
+  const horiz = uniq(thin.filter((q) => Math.abs(q.pts[0][1] - q.pts[1][1]) < 0.05 && Math.abs(q.pts[0][0] - q.pts[1][0]) > 40).map((q) => q.pts[0][1])).reverse(); // bottom first
+  if (process.env.HDEBUG) console.log("chart", JSON.stringify(box), "strokes", strokes.length, "mine", mine.length, "thin", thin.length, "vert", vert.length, "horiz", horiz.length);
+  if (vert.length < 3 || horiz.length < 3) return null;
+  const inBox = lines.filter((l) => l.x >= box.x0 - 12 && l.x <= box.x1 + 12 && l.y >= box.y0 - 12 && l.y <= box.y1 + 30);
+  const num = (t) => (/^-?\d+([.,]\d+)?$/.test(t) ? parseFloat(t.replace(",", ".")) : NaN);
+  const ylab = inBox.filter((l) => !isNaN(num(l.text)) && l.x + l.w <= vert[0] + 3 && l.y + l.h / 2 < horiz[0] + 6).sort((a, b) => b.y - a.y);
+  const xlab = inBox.filter((l) => l.y > horiz[0] - 2 && l.x >= vert[0] - 8).flatMap((l) => l.text.split(" ").map((t, i, a) => ({ v: num(t), x: l.x, w: l.w, n: a.length }))).filter((q) => !isNaN(q.v)).sort((a, b) => a.x - b.x);
+  if (process.env.HDEBUG) console.log("labels", ylab.length, xlab.length, "v0", vert[0], "h0", horiz[0], "inBox", inBox.length);
+  if (ylab.length < 2 || xlab.length < 2) return null;
+  const y0v = num(ylab[0].text), ystep = num(ylab[1].text) - y0v, x0v = xlab[0].v, xstep = xlab[1].v - x0v;
+  if (!(ystep > 0) || !(xstep > 0)) return null;
+  const toX = (px) => x0v + ((px - vert[0]) / (vert[1] - vert[0])) * xstep;
+  const toY = (py) => y0v + ((horiz[0] - py) / (horiz[0] - horiz[1])) * ystep;
+  const xmax = x0v + (vert.length - 1) * xstep, ymax = y0v + (horiz.length - 1) * ystep;
+  const r = (v) => Math.round(v * 10) / 10;
+  const curves = mine.filter((q) => q.w >= 0.6 && q.pts.length >= 3 && Math.max(...q.pts.map((p) => p[0])) - Math.min(...q.pts.map((p) => p[0])) > 20 && q.pts.every(([x, y]) => x >= vert[0] - 2 && x <= vert[vert.length - 1] + 2 && y <= horiz[0] + 2 && y >= horiz[horiz.length - 1] - 2));
+  // the curve's name is the legend text nearest to it
+  const labels = inBox.filter((l) => isNaN(num(l.text)) && !/\[.*\]/.test(l.text) && l.x > vert[0] - 2 && l.x < vert[vert.length - 1] && l.y > horiz[horiz.length - 1] - 4 && l.y < horiz[0]);
+  const dist = (l, q) => Math.min(...q.pts.map(([x, y]) => Math.hypot(x - (l.x + l.w / 2), y - (l.y + l.h / 2))));
+  const series = curves.map((q) => ({ q, color: cmykToHex(q.color), name: "" }));
+  const free = new Set(series.keys());
+  for (const l of labels.map((l) => ({ l, d: series.map((sr, i) => [dist(l, sr.q), i]).sort((a, b) => a[0] - b[0]) })).sort((a, b) => a.d[0][0] - b.d[0][0])) {
+    const hit = l.d.find(([, i]) => free.has(i)); if (hit && hit[0] < 70) { series[hit[1]].name = clean(l.l.text); free.delete(hit[1]); }
+  }
+  // a curve still without a name takes the nearest legend text that is still unused, however far it is
+  for (const i of [...free]) {
+    const spare = labels.filter((l) => !series.some((sr) => sr.name === clean(l.text))).sort((p, q) => dist(p, series[i].q) - dist(q, series[i].q))[0];
+    if (spare) { series[i].name = clean(spare.text); free.delete(i); }
+  }
+  const xt = inBox.find((l) => /pressure/i.test(l.text) && /\[/.test(l.text)), yt = inBox.find((l) => /(output|flow)/i.test(l.text) && /\[/.test(l.text));
+  const unit = (l, d) => { const m = l && l.text.match(/\[(.*?)\]/); return m ? m[1] : d; };
+  const area = fills.filter((q) => q.pts.length >= 4 && inside(q.pts) && !(q.color[3] > 0.9) && q.color.slice(0, 3).some((v) => v > 0.05) && Math.max(...q.pts.map((p) => p[0])) - Math.min(...q.pts.map((p) => p[0])) > 40);
+  const out = {
+    x: { label: "Pressure", unit: unit(xt, "bar"), min: x0v, max: xmax, step: xstep },
+    y: { label: yt ? yt.text.replace(/\s*\[.*$/, "") : "Output", unit: unit(yt, "l/min"), min: y0v, max: ymax, step: ystep },
+    series: series.map((sr, i) => ({ name: sr.name || `#${i + 1}`, color: sr.color, points: sr.q.pts.map(([px, py]) => [r(toX(px)), r(toY(py))]).filter((p, i, a) => !i || p[0] !== a[i - 1][0] || p[1] !== a[i - 1][1]) })).sort((a, b) => b.points[0][1] - a.points[0][1])
+  };
+  if (area.length) { const q = area.sort((a, b) => b.pts.length - a.pts.length)[0]; out.areas = [{ color: cmykToHex(q.color), points: q.pts.map(([px, py]) => [r(toX(px)), r(toY(py))]) }]; }
+  return out;
+}
+
 async function extract(file, key) {
   const doc = mupdf.Document.openDocument(fs.readFileSync(file), "application/pdf");
   const n = doc.countPages();
@@ -170,6 +244,8 @@ async function extract(file, key) {
       if (t === "3d model" || /performance/.test(t)) {
         const kind = t === "3d model" ? "model" : "chart";
         if (kind === "model") continue;
+        const cd = kind === "chart" ? chartData(page, { x0, y0: s.y + 14, x1, y1: Math.min(s.yEnd, 520) }, lines) : null;
+        if (cd) res.chartData = cd;
         const img = await cropImage(png, pw, ph, { x0, y0: s.y + 14, x1, y1: Math.min(s.yEnd, 520) }, `haeny-${key}-${kind}`);
         if (img) res.images[kind] = img;
         continue;

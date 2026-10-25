@@ -13,6 +13,8 @@
 //   docInfo(href) -> { pages, thumb } | null
 // }
 
+import { renderPerfChart, perfChartEmpty } from "./perfchart.mjs";
+
 export const esc = (s) => String(s ?? "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
 const stripTags = (h) => String(h || "").replace(/<[^>]+>/g, " ").replace(/&nbsp;/g, " ").replace(/&amp;/g, "&").replace(/\s+/g, " ").trim();
 const fmtSize = (n) => (n >= 1e6 ? (n / 1e6).toFixed(1).replace(".", ",") + " MB" : Math.max(1, Math.round(n / 1e3)) + " kB");
@@ -60,6 +62,7 @@ function blockIsEmpty(b) {
     case "cta": return !b.title;
     case "carousel": return !(b.items || []).some((x) => x && x.src);
     case "compare": return !b.src || !b.src2;
+    case "perfchart": return perfChartEmpty(b);
     case "finder": return !(b.groups || []).some((g) => g && g.title);
     case "modules": return !(b.items || []).length;
     case "related": return !(b.items || []).some((it) => it && it.href);
@@ -623,6 +626,7 @@ function renderBlockInner(ctx, b) {
     case "quote": return renderQuote(ctx, b);
     case "carousel": return renderCarousel(ctx, b.items, b);
     case "compare": return renderCompare(ctx, b);
+    case "perfchart": return renderPerfChart(ctx, b, (n) => editFld(ctx, n));
     case "finder": return renderFinder(ctx, b);
     case "modules": return renderModules(ctx, b);
     case "related": return renderRelated(ctx, b);

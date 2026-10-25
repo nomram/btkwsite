@@ -394,6 +394,7 @@ if (adminPath && exists(path.join(ROOT, "admin"))) {
   copyDir(path.join(ROOT, "admin"), adminOut);
   fs.copyFileSync(path.join(ROOT, "src/lib/render.mjs"), path.join(adminOut, "render.mjs"));
   fs.copyFileSync(path.join(ROOT, "src/lib/translatable.mjs"), path.join(adminOut, "translatable.mjs"));
+  fs.copyFileSync(path.join(ROOT, "src/lib/perfchart.mjs"), path.join(adminOut, "perfchart.mjs"));
   fs.copyFileSync(path.join(ROOT, "src/lib/basepath.mjs"), path.join(adminOut, "basepath.mjs"));
   fs.copyFileSync(path.join(ROOT, "src/lib/visibility.mjs"), path.join(adminOut, "visibility.mjs"));
   fs.copyFileSync(cssSrc, path.join(adminOut, "site.css"));

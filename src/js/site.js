@@ -697,6 +697,71 @@
     }
   });
 
+  // ---------- performance charts: switch curves on and off, read the values at any pressure ----------
+  [].forEach.call(document.querySelectorAll("[data-pc]"), function (box) {
+    var node = box.querySelector(".pc__data"), svg = box.querySelector(".pc__svg"), read = box.querySelector(".pc__read");
+    if (!node || !svg) return;
+    var d; try { d = JSON.parse(node.textContent); } catch (e) { return; }
+    var g = d.geo, hint = read.innerHTML, on = d.series.map(function () { return true; }), pos = null;
+    var cursor = svg.querySelector(".pc__cursor"), dots = [].slice.call(svg.querySelectorAll(".pc__dot")), lines = [].slice.call(svg.querySelectorAll(".pc__line"));
+    var chips = [].slice.call(box.querySelectorAll(".pc__chip"));
+    function num(v) { return (Math.round(v * 10) / 10).toString().replace(".", ","); }
+    // y of the curve at pressure px: the lowest point of a steep fall, nothing beyond the end of the curve
+    function at(s, px) {
+      var p = s.p, best = null;
+      for (var i = 1; i < p.length; i++) {
+        var a = p[i - 1], b = p[i], lo = Math.min(a[0], b[0]), hi = Math.max(a[0], b[0]);
+        if (px < lo - 1e-9 || px > hi + 1e-9) continue;
+        var y = hi - lo < 1e-9 ? Math.min(a[1], b[1]) : a[1] + (b[1] - a[1]) * (px - a[0]) / (b[0] - a[0]);
+        if (best === null || y < best) best = y;
+      }
+      return best;
+    }
+    function xOf(v) { return g.ml + (v - d.x.min) / (d.x.max - d.x.min) * g.pw; }
+    function yOf(v) { return g.mt + g.ph - (v - d.y.min) / (d.y.max - d.y.min) * g.ph; }
+    function show(px) {
+      pos = Math.max(d.x.min, Math.min(d.x.max, px));
+      cursor.setAttribute("x1", xOf(pos)); cursor.setAttribute("x2", xOf(pos));
+      var out = "<b>" + num(pos) + " " + d.x.unit + "</b>";
+      d.series.forEach(function (s, i) {
+        var y = on[i] ? at(s, pos) : null;
+        if (y === null) { dots[i].setAttribute("cx", -20); dots[i].setAttribute("cy", -20); }
+        else { dots[i].setAttribute("cx", xOf(pos)); dots[i].setAttribute("cy", yOf(y)); }
+        if (on[i]) out += '<span class="pc__val"><i style="background:' + s.c + '"></i>' + (d.series.length > 1 ? s.n + ": " : "") + (y === null ? "-" : "<b>" + num(y) + " " + d.y.unit + "</b>") + "</span>";
+      });
+      read.innerHTML = out;
+    }
+    function clear() { pos = null; cursor.setAttribute("x1", -20); cursor.setAttribute("x2", -20); dots.forEach(function (c) { c.setAttribute("cx", -20); c.setAttribute("cy", -20); }); read.innerHTML = hint; }
+    function fromEvent(e) { var r = svg.getBoundingClientRect(), vx = (e.clientX - r.left) / r.width * g.W; return d.x.min + (vx - g.ml) / g.pw * (d.x.max - d.x.min); }
+    svg.addEventListener("pointermove", function (e) { if (e.pointerType === "touch" && !(e.buttons & 1)) return; show(fromEvent(e)); });
+    svg.addEventListener("pointerdown", function (e) { show(fromEvent(e)); });
+    svg.addEventListener("pointerleave", function (e) { if (e.pointerType === "mouse") clear(); });
+    svg.addEventListener("keydown", function (e) {
+      var step = (d.x.max - d.x.min) / 44;
+      if (e.key === "ArrowRight" || e.key === "ArrowLeft") { e.preventDefault(); show((pos === null ? d.x.min : pos) + (e.key === "ArrowRight" ? step : -step)); }
+      else if (e.key === "Home") { e.preventDefault(); show(d.x.min); }
+      else if (e.key === "End") { e.preventDefault(); show(d.x.max); }
+      else if (e.key === "Escape") clear();
+    });
+    chips.forEach(function (c) {
+      c.addEventListener("click", function () {
+        var i = Number(c.getAttribute("data-s")), now = on.filter(Boolean).length;
+        if (on[i] && now === 1) return; // one curve always stays
+        on[i] = !on[i];
+        c.setAttribute("aria-pressed", on[i] ? "true" : "false");
+        lines[i].classList.toggle("is-off", !on[i]);
+        if (pos !== null) show(pos);
+      });
+      // double click / long press: only this one
+      c.addEventListener("dblclick", function () {
+        var i = Number(c.getAttribute("data-s"));
+        on = on.map(function (_, k) { return k === i; });
+        chips.forEach(function (o, k) { o.setAttribute("aria-pressed", on[k] ? "true" : "false"); lines[k].classList.toggle("is-off", !on[k]); });
+        if (pos !== null) show(pos);
+      });
+    });
+  });
+
   // ---------- pictures further down: fetched top to bottom once the page has settled ----------
   // The top of the page is what the visitor sees first, so its pictures load first (eager in the HTML); the rest stay lazy for the
   // scroll position, and in quiet time they are also fetched in page order, a few at a time, nearest to the top first.

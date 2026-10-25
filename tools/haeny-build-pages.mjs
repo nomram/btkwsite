@@ -43,6 +43,14 @@ const FAMILIES = [
     title: { sv: "Automatiska anläggningar (FAIC)", en: "Automated grout plants (FAIC)", es: "Plantas de inyección automáticas (FAIC)", no: "Automatiske injeksjonsanlegg (FAIC)" },
     intro: { sv: "Automatiserade anläggningar för att bereda och injektera cement, bentonit, mikrofina bindemedel och bruk. Noggrann dosering, förbrukningsregistrering, integrerad tryck- och flödesregistrering samt radiostyrning.", en: "Automated plants for preparing and injecting cement, bentonite, microfine binders and mortar. Accurate dosing, consumption record, integrated pressure and flow recording and radio remote control.", es: "Plantas automatizadas para preparar e inyectar cemento, bentonita, ligantes microfinos y mortero. Dosificación precisa, registro de consumo, registro integrado de presión y caudal y mando por radio.", no: "Automatiserte anlegg for klargjøring og injeksjon av sement, bentonitt, mikrofine bindemidler og mørtel. Nøyaktig dosering, forbruksregistrering, integrert trykk- og strømningsregistrering og radiostyring." } }
 ];
+const PC = {
+  sv: { x: "Tryck", y: "Flöde", plunger: "Kolv", low: "Lågt tryck", high: "Högt tryck", chips: "Visa kurvor", hint: "Håll muspekaren över diagrammet, tryck på det eller använd piltangenterna för att läsa av värden. Klicka på en kolvstorlek för att dölja eller visa den (dubbelklicka för att visa bara den)." },
+  en: { x: "Pressure", y: "Output", plunger: "Plunger", low: "Low pressure", high: "High pressure", chips: "Show curves", hint: "Hover over the chart, tap it or use the arrow keys to read values. Click a plunger size to hide or show it (double-click to show only that one)." },
+  es: { x: "Presión", y: "Caudal", plunger: "Émbolo", low: "Baja presión", high: "Alta presión", chips: "Mostrar curvas", hint: "Pase el cursor sobre el gráfico, púlselo o use las flechas del teclado para leer valores. Pulse un tamaño de émbolo para ocultarlo o mostrarlo (doble clic para mostrar solo ese)." },
+  no: { x: "Trykk", y: "Ytelse", plunger: "Stempel", low: "Lavt trykk", high: "Høyt trykk", chips: "Vis kurver", hint: "Hold musepekeren over diagrammet, trykk på det eller bruk piltastene for å lese av verdier. Klikk på en stempelstørrelse for å skjule eller vise den (dobbeltklikk for å vise bare den)." }
+};
+const PC_COLOR = { "#0000ff": "#2f5aa8", "#ff0000": "#cf3a2e", "#000000": "#2b2b2b" };
+const seriesName = (l, n) => n.replace(/^Plunger/i, PC[l].plunger).replace(/^Low pressure/i, PC[l].low).replace(/^High pressure/i, PC[l].high);
 Object.assign(L.sv, { compare: "Jämförelse av modellerna", reg: "Registrering och styrning", dpv: "Dataloggare (DPV-H)" });
 Object.assign(L.en, { compare: "Model comparison", reg: "Recording and control", dpv: "Data logger (DPV-H)" });
 Object.assign(L.es, { compare: "Comparación de modelos", reg: "Registro y control", dpv: "Registrador de datos (DPV-H)" });
@@ -114,7 +122,13 @@ function dataBlocks(l, k, d, { download = true } = {}) {
   for (const t of d.tables) for (const [name, items] of Object.entries(t.lists || {})) for (const it of items) lists.push(name ? `${tr(l, name)} (${tr(l, t.title)}): ${tr(l, it)}` : `${tr(l, t.title)}: ${tr(l, it)}`);
   if (lists.length) { out.push({ type: "heading", level: 3, text: T.opts }); out.push({ type: "list", ordered: false, items: lists.map(clean) }); }
   const tiles = [];
-  if (d.images.chart) tiles.push({ title: T.perf, image: d.images.chart.file, alt: `${T.perf} ${d.model}` });
+  // a closed box in the chart (the ZMP 936 working range) is an area, not a curve: that chart stays a picture
+  const curves = d.chartData ? d.chartData.series.filter((q) => !(q.points.length <= 6 && q.points[0][0] === q.points[q.points.length - 1][0] && q.points[0][1] === q.points[q.points.length - 1][1])) : [];
+  const cd = d.chartData && curves.length ? { ...d.chartData, series: curves } : null;
+  if (cd) {
+    out.push({ type: "perfchart", title: `${T.perf}: ${d.model}`, hint: PC[l].hint, chipsLabel: PC[l].chips, xName: PC[l].x, yName: PC[l].y, x: cd.x, y: cd.y,
+      series: cd.series.map((q) => ({ name: seriesName(l, q.name), color: PC_COLOR[q.color] || q.color, points: q.points })), ...(cd.areas ? { areas: cd.areas } : {}) });
+  } else if (d.images.chart) tiles.push({ title: T.perf, image: d.images.chart.file, alt: `${T.perf} ${d.model}` });
   if (d.images.dim) tiles.push({ title: T.dims, image: d.images.dim.file, alt: `${T.dims} ${d.model}` });
   if (tiles.length) out.push({ type: "modules", layout: "tiles", columns: Math.min(2, tiles.length), more: false, items: tiles });
   if (download) out.push({ type: "button", kind: "download", text: T.pdfName(d.model), href: d.file });
