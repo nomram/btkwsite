@@ -1,0 +1,829 @@
+{
+  "path": "/produkter/haeny/blandare/hcm-800",
+  "updated": "2026-10-25",
+  "template": "product",
+  "order": 3,
+  "published": true,
+  "i18n": {
+    "sv": {
+      "title": "Häny HCM 800",
+      "h1": "Häny HCM 800",
+      "description": "Högskjuvande blandare HCM 800. Den kolloidala blandaren lämpar sig särskilt för framställning av suspensioner av vatten, cement, ultrafint bindemedel, bentonit, sand och andra material. En robust blan",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "HÄNY",
+          "href": "/produkter/haeny",
+          "width": 832,
+          "height": 143,
+          "src": "/assets/img/haeny-1.webp",
+          "gen": true
+        },
+        {
+          "type": "columns",
+          "ratio": "40-60",
+          "left": [
+            {
+              "type": "image",
+              "alt": "Högskjuvande blandare HCM 800",
+              "width": 806,
+              "height": 1084,
+              "src": "/assets/img/haeny-hcm800-model.webp"
+            }
+          ],
+          "right": [
+            {
+              "type": "text",
+              "html": "Den kolloidala blandaren lämpar sig särskilt för framställning av suspensioner av vatten, cement, ultrafint bindemedel, bentonit, sand och andra material. En robust blandningstank och mycket slitstarka material i blandningspumpen ger lång livslängd och störningsfri drift."
+            },
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "Utmärkt blandningsresultat tack vare den höga turbulens som den snabbgående blandningspumpen skapar",
+                "Blandningstank med konisk botten och pneumatiska klämventiler för omkoppling mellan blandning och överföring",
+                "Automatisk smörjning av axeltätningen",
+                "Vägceller för automatisk invägning av vatten och torra komponenter",
+                "Rengöringsöppning (mansluck) för enkel rengöring"
+              ]
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Användning",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Framställning av suspensioner av vatten, cement, ultrafint bindemedel, bentonit och andra material",
+            "Som fristående system eller tillsammans med omrörare och injekteringspump"
+          ],
+          "gen": true
+        },
+        {
+          "type": "datasheet",
+          "title": "Teknisk data",
+          "tagline": "Högskjuvande blandare HCM 800",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Högskjuvande blandare",
+              "rows": [
+                {
+                  "label": "Blandningspump",
+                  "metric": "TMP 40"
+                },
+                {
+                  "label": "Ungefärlig kapacitet",
+                  "metric": "20 m³/h"
+                },
+                {
+                  "label": "Cirkulationskapacitet",
+                  "metric": "2,400 l/min"
+                },
+                {
+                  "label": "Användbar volym",
+                  "metric": "800 l"
+                },
+                {
+                  "label": "Max. kornstorlek",
+                  "metric": "3 mm"
+                },
+                {
+                  "label": "Vätsketemperatur",
+                  "metric": "Max. 40°C"
+                },
+                {
+                  "label": "Vattengenomföring",
+                  "metric": "DN50/100"
+                },
+                {
+                  "label": "Matning av torra komponenter",
+                  "metric": "2x DN200"
+                }
+              ]
+            },
+            {
+              "title": "Elektriska data",
+              "rows": [
+                {
+                  "label": "Spänning",
+                  "metric": "3x 400/460 V"
+                },
+                {
+                  "label": "Frekvens",
+                  "metric": "50 / 60 Hz"
+                },
+                {
+                  "label": "Märkeffekt",
+                  "metric": "22 / 25 kW"
+                },
+                {
+                  "label": "Märkström",
+                  "metric": "40.1 / 41.0 A"
+                },
+                {
+                  "label": "Varvtal",
+                  "metric": "1,475 / 1,770 min⁻¹"
+                }
+              ]
+            },
+            {
+              "title": "Vikt och mått",
+              "rows": [
+                {
+                  "label": "Ungefärlig vikt",
+                  "metric": "1225 kg"
+                },
+                {
+                  "label": "Bredd",
+                  "metric": "1,390 mm"
+                },
+                {
+                  "label": "Höjd",
+                  "metric": "1,993 mm"
+                },
+                {
+                  "label": "Längd",
+                  "metric": "1,710 mm"
+                }
+              ]
+            }
+          ],
+          "note": "1: Vatten/cement-tal = 1",
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 1,
+          "more": false,
+          "items": [
+            {
+              "title": "Mått och ritning",
+              "image": "/assets/img/haeny-hcm800-dim.webp",
+              "alt": "Mått och ritning HCM 800",
+              "width": 940,
+              "height": 2072
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Broschyr HCM 800 (PDF, engelska)",
+          "href": "/assets/docs/haeny-hcm800-brochure-en.pdf",
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Kontakta oss</a> för pris, leveranstid eller hjälp att välja rätt modell.",
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<small>Uppgifterna är hämtade ur tillverkarens broschyrer (engelska).</small>",
+          "gen": true
+        },
+        {
+          "type": "related",
+          "title": "Se även",
+          "items": [
+            {
+              "href": "/produkter/haeny/blandare",
+              "mutual": false
+            },
+            {
+              "href": "/produkter/haeny/blandare/hcm-600"
+            },
+            {
+              "href": "/produkter/haeny/blandare/hcm-2500"
+            }
+          ],
+          "gen": true
+        }
+      ]
+    },
+    "en": {
+      "title": "Häny HCM 800",
+      "h1": "Häny HCM 800",
+      "description": "High Shear Mixer HCM 800. The colloidal mixer is particularly suitable for the production of suspensions consisting of water, cement, ultra-fine binder, bentonite, sand, and other materials. A robust ",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "HÄNY",
+          "href": "/produkter/haeny",
+          "width": 832,
+          "height": 143,
+          "src": "/assets/img/haeny-1.webp",
+          "gen": true
+        },
+        {
+          "type": "columns",
+          "ratio": "40-60",
+          "left": [
+            {
+              "type": "image",
+              "alt": "High Shear Mixer HCM 800",
+              "width": 806,
+              "height": 1084,
+              "src": "/assets/img/haeny-hcm800-model.webp"
+            }
+          ],
+          "right": [
+            {
+              "type": "text",
+              "html": "The colloidal mixer is particularly suitable for the production of suspensions consisting of water, cement, ultra-fine binder, bentonite, sand, and other materials. A robust mixing tank combined with highly wear-resistant materials in the mixing pump guarantee a long service life and trouble-free operation."
+            },
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "Excellent mixing results thanks to the high turbulence generated by the high-speed mixing pump",
+                "Mixing tank with conical bottom and pneumatic pinch valves for switching between mixing and transfer",
+                "Automatic lubrication of the shaft seal",
+                "Weighing cells for automatic batching of water and dry components",
+                "Cleaning opening (manhole) for easy cleaning"
+              ]
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Typical applications",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Preparation of suspensions consisting of water, cement, ultra-fine binder, bentonite, and other materials",
+            "As a stand-alone system or in combination with agitator and injection pump"
+          ],
+          "gen": true
+        },
+        {
+          "type": "datasheet",
+          "title": "Technical data",
+          "tagline": "High Shear Mixer HCM 800",
+          "intro": [],
+          "groups": [
+            {
+              "title": "High shear mixer",
+              "rows": [
+                {
+                  "label": "Mixing pump",
+                  "metric": "TMP 40"
+                },
+                {
+                  "label": "Approx. capacity",
+                  "metric": "20 m³/h"
+                },
+                {
+                  "label": "Circulation capacity",
+                  "metric": "2,400 l/min"
+                },
+                {
+                  "label": "Usable content",
+                  "metric": "800 l"
+                },
+                {
+                  "label": "Max. aggregate size",
+                  "metric": "3 mm"
+                },
+                {
+                  "label": "Liquid temperature",
+                  "metric": "Max. 40°C"
+                },
+                {
+                  "label": "Water feedthrough",
+                  "metric": "DN50/100"
+                },
+                {
+                  "label": "Dry component feed-through",
+                  "metric": "2x DN200"
+                }
+              ]
+            },
+            {
+              "title": "Electrical data",
+              "rows": [
+                {
+                  "label": "Voltage",
+                  "metric": "3x 400/460 V"
+                },
+                {
+                  "label": "Frequency",
+                  "metric": "50 / 60 Hz"
+                },
+                {
+                  "label": "Nominal power",
+                  "metric": "22 / 25 kW"
+                },
+                {
+                  "label": "Nominal current",
+                  "metric": "40.1 / 41.0 A"
+                },
+                {
+                  "label": "Speed",
+                  "metric": "1,475 / 1,770 min⁻¹"
+                }
+              ]
+            },
+            {
+              "title": "Weight and dimensions",
+              "rows": [
+                {
+                  "label": "Approx. weight",
+                  "metric": "1225 kg"
+                },
+                {
+                  "label": "Width",
+                  "metric": "1,390 mm"
+                },
+                {
+                  "label": "Height",
+                  "metric": "1,993 mm"
+                },
+                {
+                  "label": "Length",
+                  "metric": "1,710 mm"
+                }
+              ]
+            }
+          ],
+          "note": "1: Water to cement ratio = 1",
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 1,
+          "more": false,
+          "items": [
+            {
+              "title": "Dimensions and drawing",
+              "image": "/assets/img/haeny-hcm800-dim.webp",
+              "alt": "Dimensions and drawing HCM 800",
+              "width": 940,
+              "height": 2072
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Brochure HCM 800 (PDF)",
+          "href": "/assets/docs/haeny-hcm800-brochure-en.pdf",
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Contact us</a> for price, delivery time or help choosing the right model.",
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<small>Information taken from the manufacturer's brochures.</small>",
+          "gen": true
+        },
+        {
+          "type": "related",
+          "title": "See also",
+          "items": [
+            {
+              "href": "/produkter/haeny/blandare",
+              "mutual": false
+            },
+            {
+              "href": "/produkter/haeny/blandare/hcm-600"
+            },
+            {
+              "href": "/produkter/haeny/blandare/hcm-2500"
+            }
+          ],
+          "gen": true
+        }
+      ]
+    },
+    "es": {
+      "title": "Häny HCM 800",
+      "h1": "Häny HCM 800",
+      "description": "Mezcladora de alta cizalladura HCM 800. La mezcladora coloidal es especialmente adecuada para producir suspensiones de agua, cemento, ligante ultrafino, bentonita, arena y otros materiales. Un depósit",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "HÄNY",
+          "href": "/produkter/haeny",
+          "width": 832,
+          "height": 143,
+          "src": "/assets/img/haeny-1.webp",
+          "gen": true
+        },
+        {
+          "type": "columns",
+          "ratio": "40-60",
+          "left": [
+            {
+              "type": "image",
+              "alt": "Mezcladora de alta cizalladura HCM 800",
+              "width": 806,
+              "height": 1084,
+              "src": "/assets/img/haeny-hcm800-model.webp"
+            }
+          ],
+          "right": [
+            {
+              "type": "text",
+              "html": "La mezcladora coloidal es especialmente adecuada para producir suspensiones de agua, cemento, ligante ultrafino, bentonita, arena y otros materiales. Un depósito de mezcla robusto y materiales muy resistentes al desgaste en la bomba mezcladora garantizan una larga vida útil y un funcionamiento sin averías."
+            },
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "Excelentes resultados de mezcla gracias a la gran turbulencia que genera la bomba mezcladora de alta velocidad",
+                "Depósito de mezcla con fondo cónico y válvulas de pinzamiento neumáticas para conmutar entre mezcla y transferencia",
+                "Lubricación automática del retén del eje",
+                "Células de pesaje para la dosificación automática de agua y componentes secos",
+                "Abertura de limpieza (boca de hombre) para una limpieza sencilla"
+              ]
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Aplicaciones típicas",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Preparación de suspensiones de agua, cemento, ligante ultrafino, bentonita y otros materiales",
+            "Como sistema independiente o combinado con agitador y bomba de inyección"
+          ],
+          "gen": true
+        },
+        {
+          "type": "datasheet",
+          "title": "Datos técnicos",
+          "tagline": "Mezcladora de alta cizalladura HCM 800",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Mezcladora de alta cizalladura",
+              "rows": [
+                {
+                  "label": "Bomba mezcladora",
+                  "metric": "TMP 40"
+                },
+                {
+                  "label": "Capacidad aprox.",
+                  "metric": "20 m³/h"
+                },
+                {
+                  "label": "Capacidad de circulación",
+                  "metric": "2,400 l/min"
+                },
+                {
+                  "label": "Volumen útil",
+                  "metric": "800 l"
+                },
+                {
+                  "label": "Tamaño máx. de partícula",
+                  "metric": "3 mm"
+                },
+                {
+                  "label": "Temperatura del líquido",
+                  "metric": "Max. 40°C"
+                },
+                {
+                  "label": "Paso de agua",
+                  "metric": "DN50/100"
+                },
+                {
+                  "label": "Alimentación de componentes secos",
+                  "metric": "2x DN200"
+                }
+              ]
+            },
+            {
+              "title": "Datos eléctricos",
+              "rows": [
+                {
+                  "label": "Tensión",
+                  "metric": "3x 400/460 V"
+                },
+                {
+                  "label": "Frecuencia",
+                  "metric": "50 / 60 Hz"
+                },
+                {
+                  "label": "Potencia nominal",
+                  "metric": "22 / 25 kW"
+                },
+                {
+                  "label": "Corriente nominal",
+                  "metric": "40.1 / 41.0 A"
+                },
+                {
+                  "label": "Velocidad",
+                  "metric": "1,475 / 1,770 min⁻¹"
+                }
+              ]
+            },
+            {
+              "title": "Peso y dimensiones",
+              "rows": [
+                {
+                  "label": "Peso aprox.",
+                  "metric": "1225 kg"
+                },
+                {
+                  "label": "Anchura",
+                  "metric": "1,390 mm"
+                },
+                {
+                  "label": "Altura",
+                  "metric": "1,993 mm"
+                },
+                {
+                  "label": "Longitud",
+                  "metric": "1,710 mm"
+                }
+              ]
+            }
+          ],
+          "note": "1: Relación agua/cemento = 1",
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 1,
+          "more": false,
+          "items": [
+            {
+              "title": "Dimensiones y plano",
+              "image": "/assets/img/haeny-hcm800-dim.webp",
+              "alt": "Dimensiones y plano HCM 800",
+              "width": 940,
+              "height": 2072
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Folleto HCM 800 (PDF, inglés)",
+          "href": "/assets/docs/haeny-hcm800-brochure-en.pdf",
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Contáctenos</a> para precio, plazo de entrega o ayuda para elegir el modelo adecuado.",
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<small>Información tomada de los folletos del fabricante (en inglés).</small>",
+          "gen": true
+        },
+        {
+          "type": "related",
+          "title": "Véase también",
+          "items": [
+            {
+              "href": "/produkter/haeny/blandare",
+              "mutual": false
+            },
+            {
+              "href": "/produkter/haeny/blandare/hcm-600"
+            },
+            {
+              "href": "/produkter/haeny/blandare/hcm-2500"
+            }
+          ],
+          "gen": true
+        }
+      ]
+    },
+    "no": {
+      "title": "Häny HCM 800",
+      "h1": "Häny HCM 800",
+      "description": "Høyskjærende mikser HCM 800. Den kolloidale mikseren egner seg særlig for fremstilling av suspensjoner av vann, sement, ultrafint bindemiddel, bentonitt, sand og andre materialer. En robust blandetank",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "HÄNY",
+          "href": "/produkter/haeny",
+          "width": 832,
+          "height": 143,
+          "src": "/assets/img/haeny-1.webp",
+          "gen": true
+        },
+        {
+          "type": "columns",
+          "ratio": "40-60",
+          "left": [
+            {
+              "type": "image",
+              "alt": "Høyskjærende mikser HCM 800",
+              "width": 806,
+              "height": 1084,
+              "src": "/assets/img/haeny-hcm800-model.webp"
+            }
+          ],
+          "right": [
+            {
+              "type": "text",
+              "html": "Den kolloidale mikseren egner seg særlig for fremstilling av suspensjoner av vann, sement, ultrafint bindemiddel, bentonitt, sand og andre materialer. En robust blandetank og svært slitesterke materialer i blandepumpen gir lang levetid og problemfri drift."
+            },
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "Utmerket blanderesultat takket være den høye turbulensen fra den høyturtallige blandepumpen",
+                "Blandetank med konisk bunn og pneumatiske klemventiler for omkobling mellom blanding og overføring",
+                "Automatisk smøring av akseltetningen",
+                "Veieceller for automatisk innveiing av vann og tørre komponenter",
+                "Rengjøringsåpning (mannhull) for enkel rengjøring"
+              ]
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Bruksområder",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Fremstilling av suspensjoner av vann, sement, ultrafint bindemiddel, bentonitt og andre materialer",
+            "Som frittstående system eller sammen med røreverk og injeksjonspumpe"
+          ],
+          "gen": true
+        },
+        {
+          "type": "datasheet",
+          "title": "Tekniske data",
+          "tagline": "Høyskjærende mikser HCM 800",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Høyskjærende mikser",
+              "rows": [
+                {
+                  "label": "Blandepumpe",
+                  "metric": "TMP 40"
+                },
+                {
+                  "label": "Omtrentlig kapasitet",
+                  "metric": "20 m³/h"
+                },
+                {
+                  "label": "Sirkulasjonskapasitet",
+                  "metric": "2,400 l/min"
+                },
+                {
+                  "label": "Nyttbart volum",
+                  "metric": "800 l"
+                },
+                {
+                  "label": "Maks. kornstørrelse",
+                  "metric": "3 mm"
+                },
+                {
+                  "label": "Væsketemperatur",
+                  "metric": "Max. 40°C"
+                },
+                {
+                  "label": "Vanngjennomføring",
+                  "metric": "DN50/100"
+                },
+                {
+                  "label": "Mating av tørre komponenter",
+                  "metric": "2x DN200"
+                }
+              ]
+            },
+            {
+              "title": "Elektriske data",
+              "rows": [
+                {
+                  "label": "Spenning",
+                  "metric": "3x 400/460 V"
+                },
+                {
+                  "label": "Frekvens",
+                  "metric": "50 / 60 Hz"
+                },
+                {
+                  "label": "Merkeeffekt",
+                  "metric": "22 / 25 kW"
+                },
+                {
+                  "label": "Merkestrøm",
+                  "metric": "40.1 / 41.0 A"
+                },
+                {
+                  "label": "Turtall",
+                  "metric": "1,475 / 1,770 min⁻¹"
+                }
+              ]
+            },
+            {
+              "title": "Vekt og mål",
+              "rows": [
+                {
+                  "label": "Omtrentlig vekt",
+                  "metric": "1225 kg"
+                },
+                {
+                  "label": "Bredde",
+                  "metric": "1,390 mm"
+                },
+                {
+                  "label": "Høyde",
+                  "metric": "1,993 mm"
+                },
+                {
+                  "label": "Lengde",
+                  "metric": "1,710 mm"
+                }
+              ]
+            }
+          ],
+          "note": "1: Vann/sement-tall = 1",
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 1,
+          "more": false,
+          "items": [
+            {
+              "title": "Mål og tegning",
+              "image": "/assets/img/haeny-hcm800-dim.webp",
+              "alt": "Mål og tegning HCM 800",
+              "width": 940,
+              "height": 2072
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Brosjyre HCM 800 (PDF, engelsk)",
+          "href": "/assets/docs/haeny-hcm800-brochure-en.pdf",
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Kontakt oss</a> for pris, leveringstid eller hjelp til å velge riktig modell.",
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<small>Opplysningene er hentet fra produsentens brosjyrer (engelsk).</small>",
+          "gen": true
+        },
+        {
+          "type": "related",
+          "title": "Se også",
+          "items": [
+            {
+              "href": "/produkter/haeny/blandare",
+              "mutual": false
+            },
+            {
+              "href": "/produkter/haeny/blandare/hcm-600"
+            },
+            {
+              "href": "/produkter/haeny/blandare/hcm-2500"
+            }
+          ],
+          "gen": true
+        }
+      ]
+    }
+  }
+}

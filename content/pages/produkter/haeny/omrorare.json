@@ -1,0 +1,1065 @@
+{
+  "path": "/produkter/haeny/omrorare",
+  "updated": "2026-10-25",
+  "template": "product",
+  "order": 4,
+  "published": true,
+  "i18n": {
+    "sv": {
+      "title": "Omrörare (HRW)",
+      "h1": "Omrörare (HRW)",
+      "description": "Häny HRW används som mellanlager mellan blandaren och pumpen. I den långsamt roterande omröraren homogeniseras injekteringsmassan och eventuella luftbubblor avlägsnas.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "HÄNY",
+          "href": "/produkter/haeny",
+          "width": 832,
+          "height": 143,
+          "src": "/assets/img/haeny-1.webp"
+        },
+        {
+          "type": "columns",
+          "ratio": "40-60",
+          "left": [
+            {
+              "type": "image",
+              "alt": "Omrörare (HRW)",
+              "width": 1000,
+              "height": 1000,
+              "src": "/assets/img/haeny-tile-hrw.webp"
+            }
+          ],
+          "right": [
+            {
+              "type": "text",
+              "html": "Häny HRW används som mellanlager mellan blandaren och pumpen. I den långsamt roterande omröraren homogeniseras injekteringsmassan och eventuella luftbubblor avlägsnas."
+            },
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "Långsamt roterande skovel som homogeniserar den blandade massan och avlägsnar luftbubblor",
+                "Rengöringsöppning med skyddsgaller och stänkskydd",
+                "Sluttande botten för fullständig tömning med avtappningsplugg"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Modeller",
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 3,
+          "square": true,
+          "more": false,
+          "items": [
+            {
+              "title": "HRW 150",
+              "image": "/assets/img/haeny-hrw150-tile.webp",
+              "alt": "Agitator HRW 150",
+              "href": "/produkter/haeny/omrorare/hrw-150",
+              "bullets": [
+                "150 l",
+                "0.55 / 0.62 kW"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "HRW 350",
+              "image": "/assets/img/haeny-hrw350-tile.webp",
+              "alt": "Agitator HRW 350",
+              "href": "/produkter/haeny/omrorare/hrw-350",
+              "bullets": [
+                "350 l",
+                "0.55 / 0.66 kW"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "HRW 800",
+              "image": "/assets/img/haeny-hrw800-tile.webp",
+              "alt": "Agitator HRW 800",
+              "href": "/produkter/haeny/omrorare/hrw-800",
+              "bullets": [
+                "800 l",
+                "0.55 / 0.66 kW"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "HRW 1200",
+              "image": "/assets/img/haeny-hrw1200-tile.webp",
+              "alt": "Agitator HRW 1200",
+              "href": "/produkter/haeny/omrorare/hrw-1200",
+              "bullets": [
+                "1050 l",
+                "1.5 / 1.8 kW"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "HRW 2000",
+              "image": "/assets/img/haeny-hrw2000-tile.webp",
+              "alt": "Agitator HRW 2000",
+              "href": "/produkter/haeny/omrorare/hrw-2000",
+              "bullets": [
+                "2,000 l",
+                "3.0 / 3.6 kW"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "HRW 3000",
+              "image": "/assets/img/haeny-hrw3000-tile.webp",
+              "alt": "Agitator HRW 3000",
+              "href": "/produkter/haeny/omrorare/hrw-3000",
+              "bullets": [
+                "3,000 l",
+                "3.0 / 3.6 kW"
+              ],
+              "width": 1000,
+              "height": 1000
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Användning",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Mellantank mellan blandare och injekteringspump"
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Jämförelse av modellerna",
+          "gen": true
+        },
+        {
+          "type": "table",
+          "header": true,
+          "align": "center",
+          "caption": "Jämförelse av modellerna",
+          "rows": [
+            [
+              "",
+              "HRW 150",
+              "HRW 350",
+              "HRW 800",
+              "HRW 1200",
+              "HRW 2000",
+              "HRW 3000"
+            ],
+            [
+              "Användbar volym",
+              "150 l",
+              "350 l",
+              "800 l",
+              "1050 l",
+              "2,000 l",
+              "3,000 l"
+            ],
+            [
+              "Vätsketemperatur",
+              "Max. 40°C",
+              "Max. 40°C",
+              "Max. 40°C",
+              "Max. 40°C",
+              "Max. 40°C",
+              "Max. 40°C"
+            ],
+            [
+              "Spänning",
+              "3x 400/460",
+              "3x 400/460",
+              "3x 400/460",
+              "3x 400/460",
+              "3x 400/460",
+              "3x 400/460"
+            ],
+            [
+              "Frekvens",
+              "50 / 60 Hz",
+              "50 / 60 Hz",
+              "50 / 60 Hz",
+              "50 / 60 Hz",
+              "50 / 60 Hz",
+              "50 / 60 Hz"
+            ],
+            [
+              "Märkeffekt",
+              "0.55 / 0.62 kW",
+              "0.55 / 0.66 kW",
+              "0.55 / 0.66 kW",
+              "1.5 / 1.8 kW",
+              "3.0 / 3.6 kW",
+              "3.0 / 3.6 kW"
+            ],
+            [
+              "Varvtal",
+              "690 / 830 min⁻¹",
+              "46.7 / 56.7 min⁻¹",
+              "46.7 / 56.7 min⁻¹",
+              "34 / 40 min⁻¹",
+              "32 / 38 min⁻¹",
+              "32 / 38 min⁻¹"
+            ],
+            [
+              "Ungefärlig vikt",
+              "82.5 kg",
+              "158 kg",
+              "233 kg",
+              "450 kg",
+              "950 kg",
+              "1,025 kg"
+            ],
+            [
+              "Bredd",
+              "562 mm",
+              "953 mm",
+              "1,144 mm",
+              "1,343 mm",
+              "1,600 mm",
+              "1,913 mm"
+            ],
+            [
+              "Höjd",
+              "1,321 mm",
+              "1,221 mm",
+              "1,666 mm",
+              "2,216 mm",
+              "2,117 mm",
+              "2,117 mm"
+            ],
+            [
+              "Längd",
+              "797 mm",
+              "1,055 mm",
+              "1,232 mm",
+              "1,198 mm",
+              "1,600 mm",
+              "1,913 mm"
+            ]
+          ],
+          "links": [],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Kontakta oss</a> för pris, leveranstid eller hjälp att välja rätt modell."
+        }
+      ]
+    },
+    "en": {
+      "title": "Agitators (HRW)",
+      "h1": "Agitators (HRW)",
+      "description": "The Häny HRW agitators are used as holding tanks between the HCM mixer and the pump. In the slowly revolving agitator the grout suspension is homogenised and air bubbles are removed.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "HÄNY",
+          "href": "/produkter/haeny",
+          "width": 832,
+          "height": 143,
+          "src": "/assets/img/haeny-1.webp"
+        },
+        {
+          "type": "columns",
+          "ratio": "40-60",
+          "left": [
+            {
+              "type": "image",
+              "alt": "Agitators (HRW)",
+              "width": 1000,
+              "height": 1000,
+              "src": "/assets/img/haeny-tile-hrw.webp"
+            }
+          ],
+          "right": [
+            {
+              "type": "text",
+              "html": "The Häny HRW agitators are used as holding tanks between the HCM mixer and the pump. In the slowly revolving agitator the grout suspension is homogenised and air bubbles are removed."
+            },
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "Slowly rotating paddle for homogenization of the mixed material and removal of existing air bubbles",
+                "Cleaning opening with protective grid and splash guard",
+                "Inclined bottom for complete emptying with drain plug"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Models",
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 3,
+          "square": true,
+          "more": false,
+          "items": [
+            {
+              "title": "HRW 150",
+              "image": "/assets/img/haeny-hrw150-tile.webp",
+              "alt": "Agitator HRW 150",
+              "href": "/produkter/haeny/omrorare/hrw-150",
+              "bullets": [
+                "150 l",
+                "0.55 / 0.62 kW"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "HRW 350",
+              "image": "/assets/img/haeny-hrw350-tile.webp",
+              "alt": "Agitator HRW 350",
+              "href": "/produkter/haeny/omrorare/hrw-350",
+              "bullets": [
+                "350 l",
+                "0.55 / 0.66 kW"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "HRW 800",
+              "image": "/assets/img/haeny-hrw800-tile.webp",
+              "alt": "Agitator HRW 800",
+              "href": "/produkter/haeny/omrorare/hrw-800",
+              "bullets": [
+                "800 l",
+                "0.55 / 0.66 kW"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "HRW 1200",
+              "image": "/assets/img/haeny-hrw1200-tile.webp",
+              "alt": "Agitator HRW 1200",
+              "href": "/produkter/haeny/omrorare/hrw-1200",
+              "bullets": [
+                "1050 l",
+                "1.5 / 1.8 kW"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "HRW 2000",
+              "image": "/assets/img/haeny-hrw2000-tile.webp",
+              "alt": "Agitator HRW 2000",
+              "href": "/produkter/haeny/omrorare/hrw-2000",
+              "bullets": [
+                "2,000 l",
+                "3.0 / 3.6 kW"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "HRW 3000",
+              "image": "/assets/img/haeny-hrw3000-tile.webp",
+              "alt": "Agitator HRW 3000",
+              "href": "/produkter/haeny/omrorare/hrw-3000",
+              "bullets": [
+                "3,000 l",
+                "3.0 / 3.6 kW"
+              ],
+              "width": 1000,
+              "height": 1000
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Typical applications",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Holding tank between mixer and injection pump"
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Model comparison",
+          "gen": true
+        },
+        {
+          "type": "table",
+          "header": true,
+          "align": "center",
+          "caption": "Model comparison",
+          "rows": [
+            [
+              "",
+              "HRW 150",
+              "HRW 350",
+              "HRW 800",
+              "HRW 1200",
+              "HRW 2000",
+              "HRW 3000"
+            ],
+            [
+              "Usable content",
+              "150 l",
+              "350 l",
+              "800 l",
+              "1050 l",
+              "2,000 l",
+              "3,000 l"
+            ],
+            [
+              "Liquid temperature",
+              "Max. 40°C",
+              "Max. 40°C",
+              "Max. 40°C",
+              "Max. 40°C",
+              "Max. 40°C",
+              "Max. 40°C"
+            ],
+            [
+              "Voltage",
+              "3x 400/460",
+              "3x 400/460",
+              "3x 400/460",
+              "3x 400/460",
+              "3x 400/460",
+              "3x 400/460"
+            ],
+            [
+              "Frequency",
+              "50 / 60 Hz",
+              "50 / 60 Hz",
+              "50 / 60 Hz",
+              "50 / 60 Hz",
+              "50 / 60 Hz",
+              "50 / 60 Hz"
+            ],
+            [
+              "Nominal power",
+              "0.55 / 0.62 kW",
+              "0.55 / 0.66 kW",
+              "0.55 / 0.66 kW",
+              "1.5 / 1.8 kW",
+              "3.0 / 3.6 kW",
+              "3.0 / 3.6 kW"
+            ],
+            [
+              "Speed",
+              "690 / 830 min⁻¹",
+              "46.7 / 56.7 min⁻¹",
+              "46.7 / 56.7 min⁻¹",
+              "34 / 40 min⁻¹",
+              "32 / 38 min⁻¹",
+              "32 / 38 min⁻¹"
+            ],
+            [
+              "Approx. weight",
+              "82.5 kg",
+              "158 kg",
+              "233 kg",
+              "450 kg",
+              "950 kg",
+              "1,025 kg"
+            ],
+            [
+              "Width",
+              "562 mm",
+              "953 mm",
+              "1,144 mm",
+              "1,343 mm",
+              "1,600 mm",
+              "1,913 mm"
+            ],
+            [
+              "Height",
+              "1,321 mm",
+              "1,221 mm",
+              "1,666 mm",
+              "2,216 mm",
+              "2,117 mm",
+              "2,117 mm"
+            ],
+            [
+              "Length",
+              "797 mm",
+              "1,055 mm",
+              "1,232 mm",
+              "1,198 mm",
+              "1,600 mm",
+              "1,913 mm"
+            ]
+          ],
+          "links": [],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Contact us</a> for price, delivery time or help choosing the right model."
+        }
+      ]
+    },
+    "es": {
+      "title": "Agitadores (HRW)",
+      "h1": "Agitadores (HRW)",
+      "description": "Los agitadores Häny HRW se utilizan como depósito intermedio entre la mezcladora HCM y la bomba. En el agitador, de giro lento, la suspensión se homogeneiza y se eliminan las burbujas de aire.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "HÄNY",
+          "href": "/produkter/haeny",
+          "width": 832,
+          "height": 143,
+          "src": "/assets/img/haeny-1.webp"
+        },
+        {
+          "type": "columns",
+          "ratio": "40-60",
+          "left": [
+            {
+              "type": "image",
+              "alt": "Agitadores (HRW)",
+              "width": 1000,
+              "height": 1000,
+              "src": "/assets/img/haeny-tile-hrw.webp"
+            }
+          ],
+          "right": [
+            {
+              "type": "text",
+              "html": "Los agitadores Häny HRW se utilizan como depósito intermedio entre la mezcladora HCM y la bomba. En el agitador, de giro lento, la suspensión se homogeneiza y se eliminan las burbujas de aire."
+            },
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "Paleta de giro lento para homogeneizar el material mezclado y eliminar las burbujas de aire",
+                "Abertura de limpieza con rejilla de protección y protector contra salpicaduras",
+                "Fondo inclinado para el vaciado completo con tapón de vaciado"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Modelos",
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 3,
+          "square": true,
+          "more": false,
+          "items": [
+            {
+              "title": "HRW 150",
+              "image": "/assets/img/haeny-hrw150-tile.webp",
+              "alt": "Agitator HRW 150",
+              "href": "/produkter/haeny/omrorare/hrw-150",
+              "bullets": [
+                "150 l",
+                "0.55 / 0.62 kW"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "HRW 350",
+              "image": "/assets/img/haeny-hrw350-tile.webp",
+              "alt": "Agitator HRW 350",
+              "href": "/produkter/haeny/omrorare/hrw-350",
+              "bullets": [
+                "350 l",
+                "0.55 / 0.66 kW"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "HRW 800",
+              "image": "/assets/img/haeny-hrw800-tile.webp",
+              "alt": "Agitator HRW 800",
+              "href": "/produkter/haeny/omrorare/hrw-800",
+              "bullets": [
+                "800 l",
+                "0.55 / 0.66 kW"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "HRW 1200",
+              "image": "/assets/img/haeny-hrw1200-tile.webp",
+              "alt": "Agitator HRW 1200",
+              "href": "/produkter/haeny/omrorare/hrw-1200",
+              "bullets": [
+                "1050 l",
+                "1.5 / 1.8 kW"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "HRW 2000",
+              "image": "/assets/img/haeny-hrw2000-tile.webp",
+              "alt": "Agitator HRW 2000",
+              "href": "/produkter/haeny/omrorare/hrw-2000",
+              "bullets": [
+                "2,000 l",
+                "3.0 / 3.6 kW"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "HRW 3000",
+              "image": "/assets/img/haeny-hrw3000-tile.webp",
+              "alt": "Agitator HRW 3000",
+              "href": "/produkter/haeny/omrorare/hrw-3000",
+              "bullets": [
+                "3,000 l",
+                "3.0 / 3.6 kW"
+              ],
+              "width": 1000,
+              "height": 1000
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Aplicaciones típicas",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Depósito intermedio entre la mezcladora y la bomba de inyección"
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Comparación de modelos",
+          "gen": true
+        },
+        {
+          "type": "table",
+          "header": true,
+          "align": "center",
+          "caption": "Comparación de modelos",
+          "rows": [
+            [
+              "",
+              "HRW 150",
+              "HRW 350",
+              "HRW 800",
+              "HRW 1200",
+              "HRW 2000",
+              "HRW 3000"
+            ],
+            [
+              "Volumen útil",
+              "150 l",
+              "350 l",
+              "800 l",
+              "1050 l",
+              "2,000 l",
+              "3,000 l"
+            ],
+            [
+              "Temperatura del líquido",
+              "Max. 40°C",
+              "Max. 40°C",
+              "Max. 40°C",
+              "Max. 40°C",
+              "Max. 40°C",
+              "Max. 40°C"
+            ],
+            [
+              "Tensión",
+              "3x 400/460",
+              "3x 400/460",
+              "3x 400/460",
+              "3x 400/460",
+              "3x 400/460",
+              "3x 400/460"
+            ],
+            [
+              "Frecuencia",
+              "50 / 60 Hz",
+              "50 / 60 Hz",
+              "50 / 60 Hz",
+              "50 / 60 Hz",
+              "50 / 60 Hz",
+              "50 / 60 Hz"
+            ],
+            [
+              "Potencia nominal",
+              "0.55 / 0.62 kW",
+              "0.55 / 0.66 kW",
+              "0.55 / 0.66 kW",
+              "1.5 / 1.8 kW",
+              "3.0 / 3.6 kW",
+              "3.0 / 3.6 kW"
+            ],
+            [
+              "Velocidad",
+              "690 / 830 min⁻¹",
+              "46.7 / 56.7 min⁻¹",
+              "46.7 / 56.7 min⁻¹",
+              "34 / 40 min⁻¹",
+              "32 / 38 min⁻¹",
+              "32 / 38 min⁻¹"
+            ],
+            [
+              "Peso aprox.",
+              "82.5 kg",
+              "158 kg",
+              "233 kg",
+              "450 kg",
+              "950 kg",
+              "1,025 kg"
+            ],
+            [
+              "Anchura",
+              "562 mm",
+              "953 mm",
+              "1,144 mm",
+              "1,343 mm",
+              "1,600 mm",
+              "1,913 mm"
+            ],
+            [
+              "Altura",
+              "1,321 mm",
+              "1,221 mm",
+              "1,666 mm",
+              "2,216 mm",
+              "2,117 mm",
+              "2,117 mm"
+            ],
+            [
+              "Longitud",
+              "797 mm",
+              "1,055 mm",
+              "1,232 mm",
+              "1,198 mm",
+              "1,600 mm",
+              "1,913 mm"
+            ]
+          ],
+          "links": [],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Contáctenos</a> para precio, plazo de entrega o ayuda para elegir el modelo adecuado."
+        }
+      ]
+    },
+    "no": {
+      "title": "Røreverk (HRW)",
+      "h1": "Røreverk (HRW)",
+      "description": "Häny HRW brukes som mellomlager mellom blanderen og pumpen. I det sakte roterende røreverket homogeniseres injeksjonsmassen og luftbobler fjernes.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "HÄNY",
+          "href": "/produkter/haeny",
+          "width": 832,
+          "height": 143,
+          "src": "/assets/img/haeny-1.webp"
+        },
+        {
+          "type": "columns",
+          "ratio": "40-60",
+          "left": [
+            {
+              "type": "image",
+              "alt": "Røreverk (HRW)",
+              "width": 1000,
+              "height": 1000,
+              "src": "/assets/img/haeny-tile-hrw.webp"
+            }
+          ],
+          "right": [
+            {
+              "type": "text",
+              "html": "Häny HRW brukes som mellomlager mellom blanderen og pumpen. I det sakte roterende røreverket homogeniseres injeksjonsmassen og luftbobler fjernes."
+            },
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "Sakte roterende padle som homogeniserer det blandede materialet og fjerner luftbobler",
+                "Rengjøringsåpning med beskyttelsesgitter og sprutskjerm",
+                "Skrå bunn for full tømming med avtappingsplugg"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Modeller",
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 3,
+          "square": true,
+          "more": false,
+          "items": [
+            {
+              "title": "HRW 150",
+              "image": "/assets/img/haeny-hrw150-tile.webp",
+              "alt": "Agitator HRW 150",
+              "href": "/produkter/haeny/omrorare/hrw-150",
+              "bullets": [
+                "150 l",
+                "0.55 / 0.62 kW"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "HRW 350",
+              "image": "/assets/img/haeny-hrw350-tile.webp",
+              "alt": "Agitator HRW 350",
+              "href": "/produkter/haeny/omrorare/hrw-350",
+              "bullets": [
+                "350 l",
+                "0.55 / 0.66 kW"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "HRW 800",
+              "image": "/assets/img/haeny-hrw800-tile.webp",
+              "alt": "Agitator HRW 800",
+              "href": "/produkter/haeny/omrorare/hrw-800",
+              "bullets": [
+                "800 l",
+                "0.55 / 0.66 kW"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "HRW 1200",
+              "image": "/assets/img/haeny-hrw1200-tile.webp",
+              "alt": "Agitator HRW 1200",
+              "href": "/produkter/haeny/omrorare/hrw-1200",
+              "bullets": [
+                "1050 l",
+                "1.5 / 1.8 kW"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "HRW 2000",
+              "image": "/assets/img/haeny-hrw2000-tile.webp",
+              "alt": "Agitator HRW 2000",
+              "href": "/produkter/haeny/omrorare/hrw-2000",
+              "bullets": [
+                "2,000 l",
+                "3.0 / 3.6 kW"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "HRW 3000",
+              "image": "/assets/img/haeny-hrw3000-tile.webp",
+              "alt": "Agitator HRW 3000",
+              "href": "/produkter/haeny/omrorare/hrw-3000",
+              "bullets": [
+                "3,000 l",
+                "3.0 / 3.6 kW"
+              ],
+              "width": 1000,
+              "height": 1000
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Bruksområder",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Mellomtank mellom mikser og injeksjonspumpe"
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Sammenligning av modellene",
+          "gen": true
+        },
+        {
+          "type": "table",
+          "header": true,
+          "align": "center",
+          "caption": "Sammenligning av modellene",
+          "rows": [
+            [
+              "",
+              "HRW 150",
+              "HRW 350",
+              "HRW 800",
+              "HRW 1200",
+              "HRW 2000",
+              "HRW 3000"
+            ],
+            [
+              "Nyttbart volum",
+              "150 l",
+              "350 l",
+              "800 l",
+              "1050 l",
+              "2,000 l",
+              "3,000 l"
+            ],
+            [
+              "Væsketemperatur",
+              "Max. 40°C",
+              "Max. 40°C",
+              "Max. 40°C",
+              "Max. 40°C",
+              "Max. 40°C",
+              "Max. 40°C"
+            ],
+            [
+              "Spenning",
+              "3x 400/460",
+              "3x 400/460",
+              "3x 400/460",
+              "3x 400/460",
+              "3x 400/460",
+              "3x 400/460"
+            ],
+            [
+              "Frekvens",
+              "50 / 60 Hz",
+              "50 / 60 Hz",
+              "50 / 60 Hz",
+              "50 / 60 Hz",
+              "50 / 60 Hz",
+              "50 / 60 Hz"
+            ],
+            [
+              "Merkeeffekt",
+              "0.55 / 0.62 kW",
+              "0.55 / 0.66 kW",
+              "0.55 / 0.66 kW",
+              "1.5 / 1.8 kW",
+              "3.0 / 3.6 kW",
+              "3.0 / 3.6 kW"
+            ],
+            [
+              "Turtall",
+              "690 / 830 min⁻¹",
+              "46.7 / 56.7 min⁻¹",
+              "46.7 / 56.7 min⁻¹",
+              "34 / 40 min⁻¹",
+              "32 / 38 min⁻¹",
+              "32 / 38 min⁻¹"
+            ],
+            [
+              "Omtrentlig vekt",
+              "82.5 kg",
+              "158 kg",
+              "233 kg",
+              "450 kg",
+              "950 kg",
+              "1,025 kg"
+            ],
+            [
+              "Bredde",
+              "562 mm",
+              "953 mm",
+              "1,144 mm",
+              "1,343 mm",
+              "1,600 mm",
+              "1,913 mm"
+            ],
+            [
+              "Høyde",
+              "1,321 mm",
+              "1,221 mm",
+              "1,666 mm",
+              "2,216 mm",
+              "2,117 mm",
+              "2,117 mm"
+            ],
+            [
+              "Lengde",
+              "797 mm",
+              "1,055 mm",
+              "1,232 mm",
+              "1,198 mm",
+              "1,600 mm",
+              "1,913 mm"
+            ]
+          ],
+          "links": [],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Kontakt oss</a> for pris, leveringstid eller hjelp til å velge riktig modell."
+        }
+      ]
+    }
+  }
+}

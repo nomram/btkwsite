@@ -1,8 +1,8 @@
 {
-  "path": "/produkter/haeny/hitta-ratt-maskin/mobila-anlaggningar",
-  "updated": "2026-10-23",
+  "path": "/produkter/haeny/mobila-anlaggningar",
+  "updated": "2026-10-25",
   "template": "product",
-  "order": 4,
+  "order": 2,
   "published": true,
   "i18n": {
     "sv": {
@@ -23,7 +23,7 @@
           "alt": "Mobila anläggningar (MCM)",
           "width": 1000,
           "height": 1000,
-          "src": "/assets/img/haeny-finder-mcm.webp"
+          "src": "/assets/img/haeny-tile-mcm.webp"
         },
         {
           "type": "text",
@@ -53,7 +53,7 @@
           "alt": "Portable mixing plants (MCM)",
           "width": 1000,
           "height": 1000,
-          "src": "/assets/img/haeny-finder-mcm.webp"
+          "src": "/assets/img/haeny-tile-mcm.webp"
         },
         {
           "type": "text",
@@ -83,7 +83,7 @@
           "alt": "Plantas de mezcla móviles (MCM)",
           "width": 1000,
           "height": 1000,
-          "src": "/assets/img/haeny-finder-mcm.webp"
+          "src": "/assets/img/haeny-tile-mcm.webp"
         },
         {
           "type": "text",
@@ -98,7 +98,7 @@
     "no": {
       "title": "Mobile blandeanlegg (MCM)",
       "h1": "Mobile blandeanlegg (MCM)",
-      "description": "Härnys mobile MCM-blandeanlegg egner seg for blanding av bentonitt, flyveaske, sement, filler, leire og lignende suspensjoner til slissemurer, jet grouting og alle typer injeksjonsprosjekter. Brosjyre",
+      "description": "Häny MCM-blandeanlegg er mobile og egner seg for blanding av bentonitt, flyveaske, sement, filler, leire og lignende suspensjoner til slissemurer, jet grouting og alle typer injeksjonsprosjekter. Bros",
       "blocks": [
         {
           "type": "image",
@@ -113,11 +113,11 @@
           "alt": "Mobile blandeanlegg (MCM)",
           "width": 1000,
           "height": 1000,
-          "src": "/assets/img/haeny-finder-mcm.webp"
+          "src": "/assets/img/haeny-tile-mcm.webp"
         },
         {
           "type": "text",
-          "html": "Härnys mobile MCM-blandeanlegg egner seg for blanding av bentonitt, flyveaske, sement, filler, leire og lignende suspensjoner til slissemurer, jet grouting og alle typer injeksjonsprosjekter. Brosjyre på forespørsel."
+          "html": "Häny MCM-blandeanlegg er mobile og egner seg for blanding av bentonitt, flyveaske, sement, filler, leire og lignende suspensjoner til slissemurer, jet grouting og alle typer injeksjonsprosjekter. Brosjyre på forespørsel."
         },
         {
           "type": "text",

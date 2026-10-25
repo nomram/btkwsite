@@ -1,6 +1,6 @@
 {
   "path": "/produkter/haeny/manuella-pumpar",
-  "updated": "2026-10-10",
+  "updated": "2026-10-25",
   "template": "product",
   "order": 0,
   "published": true,
@@ -45,42 +45,202 @@
           "html": "<a href=\"/kontakta-oss\">Kontakta oss</a> för mer ytterliggare information."
         },
         {
+          "type": "heading",
+          "level": 2,
+          "text": "Modeller",
+          "gen": true
+        },
+        {
           "type": "modules",
           "layout": "tiles",
-          "columns": 3,
+          "columns": 4,
+          "square": true,
           "more": false,
           "items": [
             {
-              "title": "IC310",
-              "image": "/assets/img/haeny-manuella-pumpar-ic-310-ic-311.webp",
-              "alt": "IC310",
+              "title": "IC 310",
+              "image": "/assets/img/haeny-ic310-tile.webp",
+              "alt": "Compact Grout Plant IC 310",
               "href": "/produkter/haeny/manuella-pumpar/ic-310-ic-311",
               "bullets": [
-                "Maxtryck: 100 bar",
-                "Maxflöde: 1.5 m³/timme"
-              ]
+                "ZMP 610",
+                "1.5 m³/h",
+                "100 bar",
+                "100 l"
+              ],
+              "width": 1000,
+              "height": 1000
             },
             {
-              "title": "IC311",
-              "image": "/assets/img/haeny-manuella-pumpar-ic-310-ic-311.webp",
-              "alt": "IC311",
-              "href": "/produkter/haeny/manuella-pumpar/ic-310-ic-311",
+              "title": "IC 311",
+              "image": "/assets/img/haeny-ic311-tile.webp",
+              "alt": "Compact Grout Plant IC 311",
+              "href": "/produkter/haeny/manuella-pumpar/ic-311",
               "bullets": [
-                "Maxtryck: 75 bar",
-                "Maxflöde: 2 m³/timme"
-              ]
+                "ZMP 611",
+                "2 m³/h",
+                "75 bar",
+                "100 l"
+              ],
+              "width": 1000,
+              "height": 1000
             },
             {
-              "title": "IC325",
-              "image": "/assets/img/haeny-manuella-pumpar-ic-325-ic325-ccp.webp",
-              "alt": "IC325",
+              "title": "IC 325",
+              "image": "/assets/img/haeny-ic325-tile.webp",
+              "alt": "Compact Grout Plant IC 325",
               "href": "/produkter/haeny/manuella-pumpar/ic-325-ic325-ccp",
               "bullets": [
-                "Maxtryck: 100 bar",
-                "Maxflöde: 2 m³/timme"
-              ]
+                "ZMP 625",
+                "2 m³/h",
+                "100 bar",
+                "100 l"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "IC 650/710",
+              "image": "/assets/img/haeny-ic650-710v-tile.webp",
+              "alt": "Compact Grout Plant IC 650/710",
+              "href": "/produkter/haeny/manuella-pumpar/ic-650-710v",
+              "bullets": [
+                "ZMP 710",
+                "5 m³/h",
+                "100 bar",
+                "260 l"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "IC 650/712",
+              "image": "/assets/img/haeny-ic650-712v-tile.webp",
+              "alt": "Compact Grout Plant IC 650/712",
+              "href": "/produkter/haeny/manuella-pumpar/ic-650-712v",
+              "bullets": [
+                "ZMP 712",
+                "4.9 m³/h",
+                "88 bar",
+                "260 l"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "IC 650/725",
+              "image": "/assets/img/haeny-ic650-725v-tile.webp",
+              "alt": "Compact Grout Plant IC 650/725",
+              "href": "/produkter/haeny/manuella-pumpar/ic-650-725v",
+              "bullets": [
+                "ZMP 725",
+                "5 m³/h",
+                "100 bar",
+                "260 l"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "IC 1100/710",
+              "image": "/assets/img/haeny-ic1100-710v-tile.webp",
+              "alt": "Compact Grout Plant IC 1100/710",
+              "href": "/produkter/haeny/manuella-pumpar/ic-1100-710v",
+              "bullets": [
+                "ZMP 710",
+                "5 m³/h",
+                "100 bar",
+                "260 l"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "IC 1100/712",
+              "image": "/assets/img/haeny-ic1100-712v-tile.webp",
+              "alt": "Compact Grout Plant IC 1100/712",
+              "href": "/produkter/haeny/manuella-pumpar/ic-1100-712v",
+              "bullets": [
+                "ZMP 712",
+                "4.9 m³/h",
+                "88 bar",
+                "260 l"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "IC 1100/725",
+              "image": "/assets/img/haeny-ic1100-725v-tile.webp",
+              "alt": "Compact Grout Plant IC 1100/725",
+              "href": "/produkter/haeny/manuella-pumpar/ic-1100-725v",
+              "bullets": [
+                "ZMP 725",
+                "5 m³/h",
+                "100 bar",
+                "260 l"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "IC 1400/710",
+              "image": "/assets/img/haeny-ic1400-710v-tile.webp",
+              "alt": "Compact Grout Plant IC 1400/710",
+              "href": "/produkter/haeny/manuella-pumpar/ic-1400-710v",
+              "bullets": [
+                "ZMP 710",
+                "7.5 m³/h",
+                "100 bar",
+                "550 l"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "IC 1400/712",
+              "image": "/assets/img/haeny-ic1400-712v-tile.webp",
+              "alt": "Compact Grout Plant IC 1400/712",
+              "href": "/produkter/haeny/manuella-pumpar/ic-1400-712v",
+              "bullets": [
+                "ZMP 712",
+                "4.9 m³/h",
+                "88 bar",
+                "550 l"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "IC 1400/725",
+              "image": "/assets/img/haeny-ic1400-725v-tile.webp",
+              "alt": "Compact Grout Plant IC 1400/725",
+              "href": "/produkter/haeny/manuella-pumpar/ic-1400-725v",
+              "bullets": [
+                "ZMP 725",
+                "8 m³/h",
+                "100 bar",
+                "550 l"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "IC 1400/726",
+              "image": "/assets/img/haeny-ic1400-726v-tile.webp",
+              "alt": "Compact Grout Plant IC 1400/726",
+              "href": "/produkter/haeny/manuella-pumpar/ic-1400-726v",
+              "bullets": [
+                "ZMP 726",
+                "8 m³/h",
+                "100 bar",
+                "550 l"
+              ],
+              "width": 1000,
+              "height": 1000
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "modules",
@@ -272,42 +432,202 @@
           "html": "<a href=\"/kontakta-oss\">Contact us</a> for further information."
         },
         {
+          "type": "heading",
+          "level": 2,
+          "text": "Models",
+          "gen": true
+        },
+        {
           "type": "modules",
           "layout": "tiles",
-          "columns": 3,
+          "columns": 4,
+          "square": true,
           "more": false,
           "items": [
             {
-              "title": "IC310",
-              "image": "/assets/img/haeny-manuella-pumpar-ic-310-ic-311.webp",
-              "alt": "IC310",
+              "title": "IC 310",
+              "image": "/assets/img/haeny-ic310-tile.webp",
+              "alt": "Compact Grout Plant IC 310",
               "href": "/produkter/haeny/manuella-pumpar/ic-310-ic-311",
               "bullets": [
-                "Max. pressure: 100 bar",
-                "Max flow: 1.5 m³/hour"
-              ]
+                "ZMP 610",
+                "1.5 m³/h",
+                "100 bar",
+                "100 l"
+              ],
+              "width": 1000,
+              "height": 1000
             },
             {
-              "title": "IC311",
-              "image": "/assets/img/haeny-manuella-pumpar-ic-310-ic-311.webp",
-              "alt": "IC311",
-              "href": "/produkter/haeny/manuella-pumpar/ic-310-ic-311",
+              "title": "IC 311",
+              "image": "/assets/img/haeny-ic311-tile.webp",
+              "alt": "Compact Grout Plant IC 311",
+              "href": "/produkter/haeny/manuella-pumpar/ic-311",
               "bullets": [
-                "Max pressure: 75 bar",
-                "Max flow: 2 m³/hour"
-              ]
+                "ZMP 611",
+                "2 m³/h",
+                "75 bar",
+                "100 l"
+              ],
+              "width": 1000,
+              "height": 1000
             },
             {
-              "title": "IC325",
-              "image": "/assets/img/haeny-manuella-pumpar-ic-325-ic325-ccp.webp",
-              "alt": "IC325",
+              "title": "IC 325",
+              "image": "/assets/img/haeny-ic325-tile.webp",
+              "alt": "Compact Grout Plant IC 325",
               "href": "/produkter/haeny/manuella-pumpar/ic-325-ic325-ccp",
               "bullets": [
-                "Max. pressure: 100 bar",
-                "Max flow: 2 m³/hour"
-              ]
+                "ZMP 625",
+                "2 m³/h",
+                "100 bar",
+                "100 l"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "IC 650/710",
+              "image": "/assets/img/haeny-ic650-710v-tile.webp",
+              "alt": "Compact Grout Plant IC 650/710",
+              "href": "/produkter/haeny/manuella-pumpar/ic-650-710v",
+              "bullets": [
+                "ZMP 710",
+                "5 m³/h",
+                "100 bar",
+                "260 l"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "IC 650/712",
+              "image": "/assets/img/haeny-ic650-712v-tile.webp",
+              "alt": "Compact Grout Plant IC 650/712",
+              "href": "/produkter/haeny/manuella-pumpar/ic-650-712v",
+              "bullets": [
+                "ZMP 712",
+                "4.9 m³/h",
+                "88 bar",
+                "260 l"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "IC 650/725",
+              "image": "/assets/img/haeny-ic650-725v-tile.webp",
+              "alt": "Compact Grout Plant IC 650/725",
+              "href": "/produkter/haeny/manuella-pumpar/ic-650-725v",
+              "bullets": [
+                "ZMP 725",
+                "5 m³/h",
+                "100 bar",
+                "260 l"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "IC 1100/710",
+              "image": "/assets/img/haeny-ic1100-710v-tile.webp",
+              "alt": "Compact Grout Plant IC 1100/710",
+              "href": "/produkter/haeny/manuella-pumpar/ic-1100-710v",
+              "bullets": [
+                "ZMP 710",
+                "5 m³/h",
+                "100 bar",
+                "260 l"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "IC 1100/712",
+              "image": "/assets/img/haeny-ic1100-712v-tile.webp",
+              "alt": "Compact Grout Plant IC 1100/712",
+              "href": "/produkter/haeny/manuella-pumpar/ic-1100-712v",
+              "bullets": [
+                "ZMP 712",
+                "4.9 m³/h",
+                "88 bar",
+                "260 l"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "IC 1100/725",
+              "image": "/assets/img/haeny-ic1100-725v-tile.webp",
+              "alt": "Compact Grout Plant IC 1100/725",
+              "href": "/produkter/haeny/manuella-pumpar/ic-1100-725v",
+              "bullets": [
+                "ZMP 725",
+                "5 m³/h",
+                "100 bar",
+                "260 l"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "IC 1400/710",
+              "image": "/assets/img/haeny-ic1400-710v-tile.webp",
+              "alt": "Compact Grout Plant IC 1400/710",
+              "href": "/produkter/haeny/manuella-pumpar/ic-1400-710v",
+              "bullets": [
+                "ZMP 710",
+                "7.5 m³/h",
+                "100 bar",
+                "550 l"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "IC 1400/712",
+              "image": "/assets/img/haeny-ic1400-712v-tile.webp",
+              "alt": "Compact Grout Plant IC 1400/712",
+              "href": "/produkter/haeny/manuella-pumpar/ic-1400-712v",
+              "bullets": [
+                "ZMP 712",
+                "4.9 m³/h",
+                "88 bar",
+                "550 l"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "IC 1400/725",
+              "image": "/assets/img/haeny-ic1400-725v-tile.webp",
+              "alt": "Compact Grout Plant IC 1400/725",
+              "href": "/produkter/haeny/manuella-pumpar/ic-1400-725v",
+              "bullets": [
+                "ZMP 725",
+                "8 m³/h",
+                "100 bar",
+                "550 l"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "IC 1400/726",
+              "image": "/assets/img/haeny-ic1400-726v-tile.webp",
+              "alt": "Compact Grout Plant IC 1400/726",
+              "href": "/produkter/haeny/manuella-pumpar/ic-1400-726v",
+              "bullets": [
+                "ZMP 726",
+                "8 m³/h",
+                "100 bar",
+                "550 l"
+              ],
+              "width": 1000,
+              "height": 1000
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "modules",
@@ -460,8 +780,7 @@
             ]
           ]
         }
-      ],
-      "published": true
+      ]
     },
     "es": {
       "title": "Bombas manuales",
@@ -500,42 +819,202 @@
           "html": "<a href=\"/kontakta-oss\">Contáctenos</a> para obtener más información."
         },
         {
+          "type": "heading",
+          "level": 2,
+          "text": "Modelos",
+          "gen": true
+        },
+        {
           "type": "modules",
           "layout": "tiles",
-          "columns": 3,
+          "columns": 4,
+          "square": true,
           "more": false,
           "items": [
             {
-              "title": "IC310",
-              "image": "/assets/img/haeny-manuella-pumpar-ic-310-ic-311.webp",
-              "alt": "IC310",
+              "title": "IC 310",
+              "image": "/assets/img/haeny-ic310-tile.webp",
+              "alt": "Compact Grout Plant IC 310",
               "href": "/produkter/haeny/manuella-pumpar/ic-310-ic-311",
               "bullets": [
-                "Presión máx.: 100 bar",
-                "Caudal máx.: 1,5 m³/hora"
-              ]
+                "ZMP 610",
+                "1.5 m³/h",
+                "100 bar",
+                "100 l"
+              ],
+              "width": 1000,
+              "height": 1000
             },
             {
-              "title": "IC311",
-              "image": "/assets/img/haeny-manuella-pumpar-ic-310-ic-311.webp",
-              "alt": "IC311",
-              "href": "/produkter/haeny/manuella-pumpar/ic-310-ic-311",
+              "title": "IC 311",
+              "image": "/assets/img/haeny-ic311-tile.webp",
+              "alt": "Compact Grout Plant IC 311",
+              "href": "/produkter/haeny/manuella-pumpar/ic-311",
               "bullets": [
-                "Presión máx.: 75 bar",
-                "Caudal máx.: 2 m³/hora"
-              ]
+                "ZMP 611",
+                "2 m³/h",
+                "75 bar",
+                "100 l"
+              ],
+              "width": 1000,
+              "height": 1000
             },
             {
-              "title": "IC325",
-              "image": "/assets/img/haeny-manuella-pumpar-ic-325-ic325-ccp.webp",
-              "alt": "IC325",
+              "title": "IC 325",
+              "image": "/assets/img/haeny-ic325-tile.webp",
+              "alt": "Compact Grout Plant IC 325",
               "href": "/produkter/haeny/manuella-pumpar/ic-325-ic325-ccp",
               "bullets": [
-                "Presión máx.: 100 bar",
-                "Caudal máx.: 2 m³/hora"
-              ]
+                "ZMP 625",
+                "2 m³/h",
+                "100 bar",
+                "100 l"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "IC 650/710",
+              "image": "/assets/img/haeny-ic650-710v-tile.webp",
+              "alt": "Compact Grout Plant IC 650/710",
+              "href": "/produkter/haeny/manuella-pumpar/ic-650-710v",
+              "bullets": [
+                "ZMP 710",
+                "5 m³/h",
+                "100 bar",
+                "260 l"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "IC 650/712",
+              "image": "/assets/img/haeny-ic650-712v-tile.webp",
+              "alt": "Compact Grout Plant IC 650/712",
+              "href": "/produkter/haeny/manuella-pumpar/ic-650-712v",
+              "bullets": [
+                "ZMP 712",
+                "4.9 m³/h",
+                "88 bar",
+                "260 l"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "IC 650/725",
+              "image": "/assets/img/haeny-ic650-725v-tile.webp",
+              "alt": "Compact Grout Plant IC 650/725",
+              "href": "/produkter/haeny/manuella-pumpar/ic-650-725v",
+              "bullets": [
+                "ZMP 725",
+                "5 m³/h",
+                "100 bar",
+                "260 l"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "IC 1100/710",
+              "image": "/assets/img/haeny-ic1100-710v-tile.webp",
+              "alt": "Compact Grout Plant IC 1100/710",
+              "href": "/produkter/haeny/manuella-pumpar/ic-1100-710v",
+              "bullets": [
+                "ZMP 710",
+                "5 m³/h",
+                "100 bar",
+                "260 l"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "IC 1100/712",
+              "image": "/assets/img/haeny-ic1100-712v-tile.webp",
+              "alt": "Compact Grout Plant IC 1100/712",
+              "href": "/produkter/haeny/manuella-pumpar/ic-1100-712v",
+              "bullets": [
+                "ZMP 712",
+                "4.9 m³/h",
+                "88 bar",
+                "260 l"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "IC 1100/725",
+              "image": "/assets/img/haeny-ic1100-725v-tile.webp",
+              "alt": "Compact Grout Plant IC 1100/725",
+              "href": "/produkter/haeny/manuella-pumpar/ic-1100-725v",
+              "bullets": [
+                "ZMP 725",
+                "5 m³/h",
+                "100 bar",
+                "260 l"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "IC 1400/710",
+              "image": "/assets/img/haeny-ic1400-710v-tile.webp",
+              "alt": "Compact Grout Plant IC 1400/710",
+              "href": "/produkter/haeny/manuella-pumpar/ic-1400-710v",
+              "bullets": [
+                "ZMP 710",
+                "7.5 m³/h",
+                "100 bar",
+                "550 l"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "IC 1400/712",
+              "image": "/assets/img/haeny-ic1400-712v-tile.webp",
+              "alt": "Compact Grout Plant IC 1400/712",
+              "href": "/produkter/haeny/manuella-pumpar/ic-1400-712v",
+              "bullets": [
+                "ZMP 712",
+                "4.9 m³/h",
+                "88 bar",
+                "550 l"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "IC 1400/725",
+              "image": "/assets/img/haeny-ic1400-725v-tile.webp",
+              "alt": "Compact Grout Plant IC 1400/725",
+              "href": "/produkter/haeny/manuella-pumpar/ic-1400-725v",
+              "bullets": [
+                "ZMP 725",
+                "8 m³/h",
+                "100 bar",
+                "550 l"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "IC 1400/726",
+              "image": "/assets/img/haeny-ic1400-726v-tile.webp",
+              "alt": "Compact Grout Plant IC 1400/726",
+              "href": "/produkter/haeny/manuella-pumpar/ic-1400-726v",
+              "bullets": [
+                "ZMP 726",
+                "8 m³/h",
+                "100 bar",
+                "550 l"
+              ],
+              "width": 1000,
+              "height": 1000
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "modules",
@@ -688,8 +1167,7 @@
             ]
           ]
         }
-      ],
-      "published": true
+      ]
     },
     "no": {
       "title": "Manuelle pumper",
@@ -728,42 +1206,202 @@
           "html": "<a href=\"/kontakta-oss\">Kontakt oss</a> for ytterligere informasjon."
         },
         {
+          "type": "heading",
+          "level": 2,
+          "text": "Modeller",
+          "gen": true
+        },
+        {
           "type": "modules",
           "layout": "tiles",
-          "columns": 3,
+          "columns": 4,
+          "square": true,
           "more": false,
           "items": [
             {
-              "title": "IC310",
-              "image": "/assets/img/haeny-manuella-pumpar-ic-310-ic-311.webp",
-              "alt": "IC310",
+              "title": "IC 310",
+              "image": "/assets/img/haeny-ic310-tile.webp",
+              "alt": "Compact Grout Plant IC 310",
               "href": "/produkter/haeny/manuella-pumpar/ic-310-ic-311",
               "bullets": [
-                "Maks. trykk: 100 bar",
-                "Maks. flyt: 1,5 m³/time"
-              ]
+                "ZMP 610",
+                "1.5 m³/h",
+                "100 bar",
+                "100 l"
+              ],
+              "width": 1000,
+              "height": 1000
             },
             {
-              "title": "IC311",
-              "image": "/assets/img/haeny-manuella-pumpar-ic-310-ic-311.webp",
-              "alt": "IC311",
-              "href": "/produkter/haeny/manuella-pumpar/ic-310-ic-311",
+              "title": "IC 311",
+              "image": "/assets/img/haeny-ic311-tile.webp",
+              "alt": "Compact Grout Plant IC 311",
+              "href": "/produkter/haeny/manuella-pumpar/ic-311",
               "bullets": [
-                "Maks. trykk: 75 bar",
-                "Maks. flyt: 2 m³/time"
-              ]
+                "ZMP 611",
+                "2 m³/h",
+                "75 bar",
+                "100 l"
+              ],
+              "width": 1000,
+              "height": 1000
             },
             {
-              "title": "IC325",
-              "image": "/assets/img/haeny-manuella-pumpar-ic-325-ic325-ccp.webp",
-              "alt": "IC325",
+              "title": "IC 325",
+              "image": "/assets/img/haeny-ic325-tile.webp",
+              "alt": "Compact Grout Plant IC 325",
               "href": "/produkter/haeny/manuella-pumpar/ic-325-ic325-ccp",
               "bullets": [
-                "Maks. trykk: 100 bar",
-                "Maks. flyt: 2 m³/time"
-              ]
+                "ZMP 625",
+                "2 m³/h",
+                "100 bar",
+                "100 l"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "IC 650/710",
+              "image": "/assets/img/haeny-ic650-710v-tile.webp",
+              "alt": "Compact Grout Plant IC 650/710",
+              "href": "/produkter/haeny/manuella-pumpar/ic-650-710v",
+              "bullets": [
+                "ZMP 710",
+                "5 m³/h",
+                "100 bar",
+                "260 l"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "IC 650/712",
+              "image": "/assets/img/haeny-ic650-712v-tile.webp",
+              "alt": "Compact Grout Plant IC 650/712",
+              "href": "/produkter/haeny/manuella-pumpar/ic-650-712v",
+              "bullets": [
+                "ZMP 712",
+                "4.9 m³/h",
+                "88 bar",
+                "260 l"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "IC 650/725",
+              "image": "/assets/img/haeny-ic650-725v-tile.webp",
+              "alt": "Compact Grout Plant IC 650/725",
+              "href": "/produkter/haeny/manuella-pumpar/ic-650-725v",
+              "bullets": [
+                "ZMP 725",
+                "5 m³/h",
+                "100 bar",
+                "260 l"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "IC 1100/710",
+              "image": "/assets/img/haeny-ic1100-710v-tile.webp",
+              "alt": "Compact Grout Plant IC 1100/710",
+              "href": "/produkter/haeny/manuella-pumpar/ic-1100-710v",
+              "bullets": [
+                "ZMP 710",
+                "5 m³/h",
+                "100 bar",
+                "260 l"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "IC 1100/712",
+              "image": "/assets/img/haeny-ic1100-712v-tile.webp",
+              "alt": "Compact Grout Plant IC 1100/712",
+              "href": "/produkter/haeny/manuella-pumpar/ic-1100-712v",
+              "bullets": [
+                "ZMP 712",
+                "4.9 m³/h",
+                "88 bar",
+                "260 l"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "IC 1100/725",
+              "image": "/assets/img/haeny-ic1100-725v-tile.webp",
+              "alt": "Compact Grout Plant IC 1100/725",
+              "href": "/produkter/haeny/manuella-pumpar/ic-1100-725v",
+              "bullets": [
+                "ZMP 725",
+                "5 m³/h",
+                "100 bar",
+                "260 l"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "IC 1400/710",
+              "image": "/assets/img/haeny-ic1400-710v-tile.webp",
+              "alt": "Compact Grout Plant IC 1400/710",
+              "href": "/produkter/haeny/manuella-pumpar/ic-1400-710v",
+              "bullets": [
+                "ZMP 710",
+                "7.5 m³/h",
+                "100 bar",
+                "550 l"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "IC 1400/712",
+              "image": "/assets/img/haeny-ic1400-712v-tile.webp",
+              "alt": "Compact Grout Plant IC 1400/712",
+              "href": "/produkter/haeny/manuella-pumpar/ic-1400-712v",
+              "bullets": [
+                "ZMP 712",
+                "4.9 m³/h",
+                "88 bar",
+                "550 l"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "IC 1400/725",
+              "image": "/assets/img/haeny-ic1400-725v-tile.webp",
+              "alt": "Compact Grout Plant IC 1400/725",
+              "href": "/produkter/haeny/manuella-pumpar/ic-1400-725v",
+              "bullets": [
+                "ZMP 725",
+                "8 m³/h",
+                "100 bar",
+                "550 l"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "IC 1400/726",
+              "image": "/assets/img/haeny-ic1400-726v-tile.webp",
+              "alt": "Compact Grout Plant IC 1400/726",
+              "href": "/produkter/haeny/manuella-pumpar/ic-1400-726v",
+              "bullets": [
+                "ZMP 726",
+                "8 m³/h",
+                "100 bar",
+                "550 l"
+              ],
+              "width": 1000,
+              "height": 1000
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "modules",
@@ -916,8 +1554,7 @@
             ]
           ]
         }
-      ],
-      "published": true
+      ]
     }
   },
   "source": {

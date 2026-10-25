@@ -1,0 +1,997 @@
+{
+  "path": "/produkter/haeny/automatiska-pumpar/faic-1100-725",
+  "updated": "2026-10-25",
+  "template": "product",
+  "order": 3,
+  "published": true,
+  "i18n": {
+    "sv": {
+      "title": "Häny FAIC 1100/725",
+      "h1": "Häny FAIC 1100/725",
+      "description": "Automatisk injekteringsanläggning FAIC 1100/725. De kompakta injekteringsanläggningarna består av Hänys beprövade standardkomponenter: blandare, omrörare och injekteringspump. I automatiserat utförand",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "HÄNY",
+          "href": "/produkter/haeny",
+          "width": 832,
+          "height": 143,
+          "src": "/assets/img/haeny-1.webp",
+          "gen": true
+        },
+        {
+          "type": "columns",
+          "ratio": "40-60",
+          "left": [
+            {
+              "type": "image",
+              "alt": "Automatisk injekteringsanläggning FAIC 1100/725",
+              "width": 757,
+              "height": 826,
+              "src": "/assets/img/haeny-faic1100-725-model.webp"
+            }
+          ],
+          "right": [
+            {
+              "type": "text",
+              "html": "De kompakta injekteringsanläggningarna består av Hänys beprövade standardkomponenter: blandare, omrörare och injekteringspump. I automatiserat utförande ger anläggningen stora besparingar i personalkostnader, hög produktionskapacitet, kvalitetsövervakning och en bättre arbetsmiljö."
+            },
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "Extremt kompakt blandnings- och injekteringssystem med central lyftpunkt för enkel transport och kort installationstid",
+                "Hög produktionskapacitet, kvalitetsövervakning och lägre personalkostnader tack vare helt automatiserad blandning",
+                "Exakt dosering av enskilda komponenter säkras av ett avancerat vägningssystem i blandaren (vanligen matning av torra komponenter via silor/skruv)",
+                "Blandningsrecept kan matas in och väljas via pekskärm efter behov",
+                "Satsprotokoll för varje blandningscykel med förbrukningsregistrering (summa förbrukade komponenter) sparas och kan överföras via USB"
+              ]
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Användning",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Injektering av ankare, jordspik och spännkablar samt manschettrör, berg- och kontaktinjektering",
+            "Beredning och pumpning av bentonitsuspensioner för rörpressning och mikrotunnling"
+          ],
+          "gen": true
+        },
+        {
+          "type": "datasheet",
+          "title": "Teknisk data",
+          "tagline": "Automatisk injekteringsanläggning FAIC 1100/725",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Injekteringspump (ZMP 725)",
+              "rows": [
+                {
+                  "label": "Kapacitet FAIC",
+                  "metric": "5 m³/h"
+                },
+                {
+                  "label": "Max. tryck",
+                  "metric": "100 bar"
+                },
+                {
+                  "label": "Max. kornstorlek",
+                  "metric": "8 mm"
+                },
+                {
+                  "label": "Hydraultank",
+                  "metric": "140 l"
+                },
+                {
+                  "label": "Pumpmodul",
+                  "metric": "dubbel"
+                },
+                {
+                  "label": "Kylvattenflöde",
+                  "metric": "5–6 l/min"
+                },
+                {
+                  "label": "Kylvattenanslutning",
+                  "metric": "BSP ½\""
+                },
+                {
+                  "label": "Tryckanslutning",
+                  "metric": "BSP 2\""
+                }
+              ]
+            },
+            {
+              "title": "Blandare / omrörare",
+              "rows": [
+                {
+                  "label": "Användbar volym blandare",
+                  "metric": "260 l"
+                },
+                {
+                  "label": "Cirkulationskapacitet",
+                  "metric": "1,400 l/min"
+                },
+                {
+                  "label": "Vattenanslutning",
+                  "metric": "BSP 1,5\""
+                },
+                {
+                  "label": "Omrörarens kapacitet",
+                  "metric": "800 l"
+                }
+              ]
+            },
+            {
+              "title": "Elektriska data",
+              "rows": [
+                {
+                  "label": "Spänning",
+                  "metric": "3x 400/460 V"
+                },
+                {
+                  "label": "Frekvens",
+                  "metric": "50 / 60 Hz"
+                },
+                {
+                  "label": "Märkeffekt",
+                  "metric": "19 / 22 kW"
+                }
+              ]
+            },
+            {
+              "title": "Vikt och mått",
+              "rows": [
+                {
+                  "label": "Total vikt",
+                  "metric": "2,248 kg"
+                },
+                {
+                  "label": "Bredd",
+                  "metric": "2,410 mm"
+                },
+                {
+                  "label": "Höjd",
+                  "metric": "2,211 mm"
+                },
+                {
+                  "label": "Längd",
+                  "metric": "2,461 mm"
+                }
+              ]
+            }
+          ],
+          "note": "1: Vatten/cement-tal = 1",
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Standard- och tillvalsutrustning",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Ingår som standard (Injekteringspump): Manuell tryck- och flödesreglering",
+            "Ingår som standard (Injekteringspump): Oljenivå- och temperaturgivare",
+            "Tillval (Blandare / omrörare): Extra blandningsenhet (rekommenderas vid vct &lt; 0,45)",
+            "Tillval (Styrning): Fjärrstyrning PÅ/AV",
+            "Tillval (Styrning): P/Q-registrering (tryck/flöde)",
+            "Styrning: PLC-styrd invägning med pekskärm",
+            "Styrning: Receptstyrning",
+            "Styrning: Automatisk blandningscykel PÅ/AV",
+            "Styrning: Pump PÅ/AV"
+          ],
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 2,
+          "more": false,
+          "items": [
+            {
+              "title": "Pumpprestanda",
+              "image": "/assets/img/haeny-faic1100-725-chart.webp",
+              "alt": "Pumpprestanda FAIC 1100/725",
+              "width": 1052,
+              "height": 1229
+            },
+            {
+              "title": "Mått och ritning",
+              "image": "/assets/img/haeny-faic1100-725-dim.webp",
+              "alt": "Mått och ritning FAIC 1100/725",
+              "width": 1824,
+              "height": 1095
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Broschyr FAIC 1100/725 (PDF, engelska)",
+          "href": "/assets/docs/haeny-faic1100-725-brochure-en.pdf",
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Kontakta oss</a> för pris, leveranstid eller hjälp att välja rätt modell.",
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<small>Uppgifterna är hämtade ur tillverkarens broschyrer (engelska).</small>",
+          "gen": true
+        },
+        {
+          "type": "related",
+          "title": "Se även",
+          "items": [
+            {
+              "href": "/produkter/haeny/automatiska-pumpar",
+              "mutual": false
+            },
+            {
+              "href": "/produkter/haeny/automatiska-pumpar/faic-650-725"
+            },
+            {
+              "href": "/produkter/haeny/automatiska-pumpar/faic-1400-725"
+            }
+          ],
+          "gen": true
+        }
+      ]
+    },
+    "en": {
+      "title": "Häny FAIC 1100/725",
+      "h1": "Häny FAIC 1100/725",
+      "description": "Automated Grout Plant FAIC 1100/725. The compact grout plants consist of the proven, standard Häny components of a mixer, agitator, and grout pump. In its automated execution the plant provides enormo",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "HÄNY",
+          "href": "/produkter/haeny",
+          "width": 832,
+          "height": 143,
+          "src": "/assets/img/haeny-1.webp",
+          "gen": true
+        },
+        {
+          "type": "columns",
+          "ratio": "40-60",
+          "left": [
+            {
+              "type": "image",
+              "alt": "Automated Grout Plant FAIC 1100/725",
+              "width": 757,
+              "height": 826,
+              "src": "/assets/img/haeny-faic1100-725-model.webp"
+            }
+          ],
+          "right": [
+            {
+              "type": "text",
+              "html": "The compact grout plants consist of the proven, standard Häny components of a mixer, agitator, and grout pump. In its automated execution the plant provides enormous savings in terms of personnel costs, high production outputs, quality monitoring and enhanced working conditions."
+            },
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "Extremely compact mixing and injection system with central lifting point for easy transport and minimum installation time",
+                "High production output, quality monitoring and cost savings in terms of personnel costs due to fully automated mixing process",
+                "Precise dosing of individual components is guaranteed by a sophisticated weighing system in the mixer (typical feed of dry components via silos/screw)",
+                "Mixing recipes can be entered and selected via touch screen as required",
+                "Batch records of each mixing cycle with consumption records (total of consumed components) is stored and can be transferred via a USB interface"
+              ]
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Typical applications",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Grouting of anchors, soil nails, tension cables as well as for sleeve pipe, rock, and contact injections",
+            "Preparation and pumping of bentonite suspensions for pipe jacking and microtunneling"
+          ],
+          "gen": true
+        },
+        {
+          "type": "datasheet",
+          "title": "Technical data",
+          "tagline": "Automated Grout Plant FAIC 1100/725",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Grout pump (ZMP 725)",
+              "rows": [
+                {
+                  "label": "Capacity FAIC",
+                  "metric": "5 m³/h"
+                },
+                {
+                  "label": "Max. pressure",
+                  "metric": "100 bar"
+                },
+                {
+                  "label": "Max. aggregate size",
+                  "metric": "8 mm"
+                },
+                {
+                  "label": "Hydraulic tank",
+                  "metric": "140 l"
+                },
+                {
+                  "label": "Pump module",
+                  "metric": "double"
+                },
+                {
+                  "label": "Cooling water flow rate",
+                  "metric": "5–6 l/min"
+                },
+                {
+                  "label": "Cooling water connection",
+                  "metric": "BSP ½\""
+                },
+                {
+                  "label": "Pressure connection",
+                  "metric": "BSP 2\""
+                }
+              ]
+            },
+            {
+              "title": "Mixer / Agitator",
+              "rows": [
+                {
+                  "label": "Usable content mixer",
+                  "metric": "260 l"
+                },
+                {
+                  "label": "Circulation capacity",
+                  "metric": "1,400 l/min"
+                },
+                {
+                  "label": "Water connection",
+                  "metric": "BSP 1,5\""
+                },
+                {
+                  "label": "Holding capacity agitator",
+                  "metric": "800 l"
+                }
+              ]
+            },
+            {
+              "title": "Electrical data",
+              "rows": [
+                {
+                  "label": "Voltage",
+                  "metric": "3x 400/460 V"
+                },
+                {
+                  "label": "Frequency",
+                  "metric": "50 / 60 Hz"
+                },
+                {
+                  "label": "Nominal power",
+                  "metric": "19 / 22 kW"
+                }
+              ]
+            },
+            {
+              "title": "Weight and dimensions",
+              "rows": [
+                {
+                  "label": "Total weight",
+                  "metric": "2,248 kg"
+                },
+                {
+                  "label": "Width",
+                  "metric": "2,410 mm"
+                },
+                {
+                  "label": "Height",
+                  "metric": "2,211 mm"
+                },
+                {
+                  "label": "Length",
+                  "metric": "2,461 mm"
+                }
+              ]
+            }
+          ],
+          "note": "1: Water to cement ratio = 1",
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Standard and optional equipment",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Included as standard (Grout pump): Manual pressure and flow control",
+            "Included as standard (Grout pump): Oil level and temperature sensor",
+            "Optional (Mixer / Agitator): Auxiliary mixing unit (recommended for W/C &lt; 0.45)",
+            "Optional (Control): Remote control ON-OFF",
+            "Optional (Control): P/Q-Registration",
+            "Control: PLC weigh batch control with touch screen",
+            "Control: Recipe management",
+            "Control: Automated mixing cycle ON-OFF",
+            "Control: Pump ON-OFF"
+          ],
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 2,
+          "more": false,
+          "items": [
+            {
+              "title": "Pump performance",
+              "image": "/assets/img/haeny-faic1100-725-chart.webp",
+              "alt": "Pump performance FAIC 1100/725",
+              "width": 1052,
+              "height": 1229
+            },
+            {
+              "title": "Dimensions and drawing",
+              "image": "/assets/img/haeny-faic1100-725-dim.webp",
+              "alt": "Dimensions and drawing FAIC 1100/725",
+              "width": 1824,
+              "height": 1095
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Brochure FAIC 1100/725 (PDF)",
+          "href": "/assets/docs/haeny-faic1100-725-brochure-en.pdf",
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Contact us</a> for price, delivery time or help choosing the right model.",
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<small>Information taken from the manufacturer's brochures.</small>",
+          "gen": true
+        },
+        {
+          "type": "related",
+          "title": "See also",
+          "items": [
+            {
+              "href": "/produkter/haeny/automatiska-pumpar",
+              "mutual": false
+            },
+            {
+              "href": "/produkter/haeny/automatiska-pumpar/faic-650-725"
+            },
+            {
+              "href": "/produkter/haeny/automatiska-pumpar/faic-1400-725"
+            }
+          ],
+          "gen": true
+        }
+      ]
+    },
+    "es": {
+      "title": "Häny FAIC 1100/725",
+      "h1": "Häny FAIC 1100/725",
+      "description": "Planta de inyección automática FAIC 1100/725. Las plantas de inyección compactas constan de los componentes estándar probados de Häny: mezcladora, agitador y bomba de inyección. En su versión automati",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "HÄNY",
+          "href": "/produkter/haeny",
+          "width": 832,
+          "height": 143,
+          "src": "/assets/img/haeny-1.webp",
+          "gen": true
+        },
+        {
+          "type": "columns",
+          "ratio": "40-60",
+          "left": [
+            {
+              "type": "image",
+              "alt": "Planta de inyección automática FAIC 1100/725",
+              "width": 757,
+              "height": 826,
+              "src": "/assets/img/haeny-faic1100-725-model.webp"
+            }
+          ],
+          "right": [
+            {
+              "type": "text",
+              "html": "Las plantas de inyección compactas constan de los componentes estándar probados de Häny: mezcladora, agitador y bomba de inyección. En su versión automatizada, la planta ofrece enormes ahorros en costes de personal, alta producción, control de calidad y mejores condiciones de trabajo."
+            },
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "Sistema de mezcla e inyección extremadamente compacto con punto de elevación central para un transporte sencillo y un tiempo de instalación mínimo",
+                "Alta producción, control de calidad y ahorro en costes de personal gracias al proceso de mezcla totalmente automatizado",
+                "La dosificación precisa de cada componente está garantizada por un sofisticado sistema de pesaje en la mezcladora (alimentación típica de componentes secos mediante silos/tornillo)",
+                "Las recetas de mezcla pueden introducirse y seleccionarse en la pantalla táctil según se necesite",
+                "Los registros de cada ciclo de mezcla con el consumo (total de componentes consumidos) se guardan y pueden transferirse por USB"
+              ]
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Aplicaciones típicas",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Inyección de anclajes, clavos de suelo y cables tensores, así como inyecciones con tubo manguito, en roca y de contacto",
+            "Preparación y bombeo de suspensiones de bentonita para el hincado de tuberías y microtúneles"
+          ],
+          "gen": true
+        },
+        {
+          "type": "datasheet",
+          "title": "Datos técnicos",
+          "tagline": "Planta de inyección automática FAIC 1100/725",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Bomba de inyección (ZMP 725)",
+              "rows": [
+                {
+                  "label": "Capacidad FAIC",
+                  "metric": "5 m³/h"
+                },
+                {
+                  "label": "Presión máx.",
+                  "metric": "100 bar"
+                },
+                {
+                  "label": "Tamaño máx. de partícula",
+                  "metric": "8 mm"
+                },
+                {
+                  "label": "Depósito hidráulico",
+                  "metric": "140 l"
+                },
+                {
+                  "label": "Módulo de bomba",
+                  "metric": "doble"
+                },
+                {
+                  "label": "Caudal de agua de refrigeración",
+                  "metric": "5–6 l/min"
+                },
+                {
+                  "label": "Conexión de agua de refrigeración",
+                  "metric": "BSP ½\""
+                },
+                {
+                  "label": "Conexión de presión",
+                  "metric": "BSP 2\""
+                }
+              ]
+            },
+            {
+              "title": "Mezcladora / agitador",
+              "rows": [
+                {
+                  "label": "Volumen útil de la mezcladora",
+                  "metric": "260 l"
+                },
+                {
+                  "label": "Capacidad de circulación",
+                  "metric": "1,400 l/min"
+                },
+                {
+                  "label": "Conexión de agua",
+                  "metric": "BSP 1,5\""
+                },
+                {
+                  "label": "Capacidad de retención del agitador",
+                  "metric": "800 l"
+                }
+              ]
+            },
+            {
+              "title": "Datos eléctricos",
+              "rows": [
+                {
+                  "label": "Tensión",
+                  "metric": "3x 400/460 V"
+                },
+                {
+                  "label": "Frecuencia",
+                  "metric": "50 / 60 Hz"
+                },
+                {
+                  "label": "Potencia nominal",
+                  "metric": "19 / 22 kW"
+                }
+              ]
+            },
+            {
+              "title": "Peso y dimensiones",
+              "rows": [
+                {
+                  "label": "Peso total",
+                  "metric": "2,248 kg"
+                },
+                {
+                  "label": "Anchura",
+                  "metric": "2,410 mm"
+                },
+                {
+                  "label": "Altura",
+                  "metric": "2,211 mm"
+                },
+                {
+                  "label": "Longitud",
+                  "metric": "2,461 mm"
+                }
+              ]
+            }
+          ],
+          "note": "1: Relación agua/cemento = 1",
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Equipamiento estándar y opcional",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Incluido de serie (Bomba de inyección): Control manual de presión y caudal",
+            "Incluido de serie (Bomba de inyección): Sensor de nivel y temperatura del aceite",
+            "Opcional (Mezcladora / agitador): Unidad de mezcla auxiliar (recomendada para A/C &lt; 0,45)",
+            "Opcional (Control): Mando a distancia ON/OFF",
+            "Opcional (Control): Registro P/Q (presión/caudal)",
+            "Control: Control PLC de dosificación por pesaje con pantalla táctil",
+            "Control: Gestión de recetas",
+            "Control: Ciclo de mezcla automático ON/OFF",
+            "Control: Bomba ON/OFF"
+          ],
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 2,
+          "more": false,
+          "items": [
+            {
+              "title": "Rendimiento de la bomba",
+              "image": "/assets/img/haeny-faic1100-725-chart.webp",
+              "alt": "Rendimiento de la bomba FAIC 1100/725",
+              "width": 1052,
+              "height": 1229
+            },
+            {
+              "title": "Dimensiones y plano",
+              "image": "/assets/img/haeny-faic1100-725-dim.webp",
+              "alt": "Dimensiones y plano FAIC 1100/725",
+              "width": 1824,
+              "height": 1095
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Folleto FAIC 1100/725 (PDF, inglés)",
+          "href": "/assets/docs/haeny-faic1100-725-brochure-en.pdf",
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Contáctenos</a> para precio, plazo de entrega o ayuda para elegir el modelo adecuado.",
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<small>Información tomada de los folletos del fabricante (en inglés).</small>",
+          "gen": true
+        },
+        {
+          "type": "related",
+          "title": "Véase también",
+          "items": [
+            {
+              "href": "/produkter/haeny/automatiska-pumpar",
+              "mutual": false
+            },
+            {
+              "href": "/produkter/haeny/automatiska-pumpar/faic-650-725"
+            },
+            {
+              "href": "/produkter/haeny/automatiska-pumpar/faic-1400-725"
+            }
+          ],
+          "gen": true
+        }
+      ]
+    },
+    "no": {
+      "title": "Häny FAIC 1100/725",
+      "h1": "Häny FAIC 1100/725",
+      "description": "Automatisk injeksjonsanlegg FAIC 1100/725. De kompakte injeksjonsanleggene består av Hänys velprøvde standardkomponenter: mikser, røreverk og injeksjonspumpe. I automatisert utførelse gir anlegget sto",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "HÄNY",
+          "href": "/produkter/haeny",
+          "width": 832,
+          "height": 143,
+          "src": "/assets/img/haeny-1.webp",
+          "gen": true
+        },
+        {
+          "type": "columns",
+          "ratio": "40-60",
+          "left": [
+            {
+              "type": "image",
+              "alt": "Automatisk injeksjonsanlegg FAIC 1100/725",
+              "width": 757,
+              "height": 826,
+              "src": "/assets/img/haeny-faic1100-725-model.webp"
+            }
+          ],
+          "right": [
+            {
+              "type": "text",
+              "html": "De kompakte injeksjonsanleggene består av Hänys velprøvde standardkomponenter: mikser, røreverk og injeksjonspumpe. I automatisert utførelse gir anlegget store besparelser i personalkostnader, høy produksjonskapasitet, kvalitetsovervåking og bedre arbeidsforhold."
+            },
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "Ekstremt kompakt blande- og injeksjonssystem med sentralt løftepunkt for enkel transport og minimal installasjonstid",
+                "Høy produksjonskapasitet, kvalitetsovervåking og lavere personalkostnader takket være helautomatisert blanding",
+                "Nøyaktig dosering av enkeltkomponenter sikres av et avansert veiesystem i mikseren (vanlig mating av tørre komponenter via siloer/skrue)",
+                "Blandeoppskrifter kan legges inn og velges via berøringsskjerm etter behov",
+                "Satsprotokoll for hver blandesyklus med forbruksregistrering (sum forbrukte komponenter) lagres og kan overføres via USB"
+              ]
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Bruksområder",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Injeksjon av ankere, jordnagler og spennkabler samt mansjettrør-, fjell- og kontaktinjeksjon",
+            "Klargjøring og pumping av bentonittsuspensjoner for rørpressing og mikrotunnelering"
+          ],
+          "gen": true
+        },
+        {
+          "type": "datasheet",
+          "title": "Tekniske data",
+          "tagline": "Automatisk injeksjonsanlegg FAIC 1100/725",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Injeksjonspumpe (ZMP 725)",
+              "rows": [
+                {
+                  "label": "Kapasitet FAIC",
+                  "metric": "5 m³/h"
+                },
+                {
+                  "label": "Maks. trykk",
+                  "metric": "100 bar"
+                },
+                {
+                  "label": "Maks. kornstørrelse",
+                  "metric": "8 mm"
+                },
+                {
+                  "label": "Hydrauliktank",
+                  "metric": "140 l"
+                },
+                {
+                  "label": "Pumpemodul",
+                  "metric": "dobbel"
+                },
+                {
+                  "label": "Kjølevannstrøm",
+                  "metric": "5–6 l/min"
+                },
+                {
+                  "label": "Kjølevanntilkobling",
+                  "metric": "BSP ½\""
+                },
+                {
+                  "label": "Trykktilkobling",
+                  "metric": "BSP 2\""
+                }
+              ]
+            },
+            {
+              "title": "Mikser / røreverk",
+              "rows": [
+                {
+                  "label": "Nyttbart volum mikser",
+                  "metric": "260 l"
+                },
+                {
+                  "label": "Sirkulasjonskapasitet",
+                  "metric": "1,400 l/min"
+                },
+                {
+                  "label": "Vanntilkobling",
+                  "metric": "BSP 1,5\""
+                },
+                {
+                  "label": "Røreverkets kapasitet",
+                  "metric": "800 l"
+                }
+              ]
+            },
+            {
+              "title": "Elektriske data",
+              "rows": [
+                {
+                  "label": "Spenning",
+                  "metric": "3x 400/460 V"
+                },
+                {
+                  "label": "Frekvens",
+                  "metric": "50 / 60 Hz"
+                },
+                {
+                  "label": "Merkeeffekt",
+                  "metric": "19 / 22 kW"
+                }
+              ]
+            },
+            {
+              "title": "Vekt og mål",
+              "rows": [
+                {
+                  "label": "Total vekt",
+                  "metric": "2,248 kg"
+                },
+                {
+                  "label": "Bredde",
+                  "metric": "2,410 mm"
+                },
+                {
+                  "label": "Høyde",
+                  "metric": "2,211 mm"
+                },
+                {
+                  "label": "Lengde",
+                  "metric": "2,461 mm"
+                }
+              ]
+            }
+          ],
+          "note": "1: Vann/sement-tall = 1",
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Standard- og tilvalgsutstyr",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Inkludert som standard (Injeksjonspumpe): Manuell trykk- og strømningsregulering",
+            "Inkludert som standard (Injeksjonspumpe): Oljenivå- og temperaturføler",
+            "Tilvalg (Mikser / røreverk): Ekstra blandeenhet (anbefalt ved v/s &lt; 0,45)",
+            "Tilvalg (Styring): Fjernkontroll PÅ/AV",
+            "Tilvalg (Styring): P/Q-registrering (trykk/strømning)",
+            "Styring: PLS-styrt innveiing med berøringsskjerm",
+            "Styring: Oppskriftshåndtering",
+            "Styring: Automatisk blandesyklus PÅ/AV",
+            "Styring: Pumpe PÅ/AV"
+          ],
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 2,
+          "more": false,
+          "items": [
+            {
+              "title": "Pumpeytelse",
+              "image": "/assets/img/haeny-faic1100-725-chart.webp",
+              "alt": "Pumpeytelse FAIC 1100/725",
+              "width": 1052,
+              "height": 1229
+            },
+            {
+              "title": "Mål og tegning",
+              "image": "/assets/img/haeny-faic1100-725-dim.webp",
+              "alt": "Mål og tegning FAIC 1100/725",
+              "width": 1824,
+              "height": 1095
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Brosjyre FAIC 1100/725 (PDF, engelsk)",
+          "href": "/assets/docs/haeny-faic1100-725-brochure-en.pdf",
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Kontakt oss</a> for pris, leveringstid eller hjelp til å velge riktig modell.",
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<small>Opplysningene er hentet fra produsentens brosjyrer (engelsk).</small>",
+          "gen": true
+        },
+        {
+          "type": "related",
+          "title": "Se også",
+          "items": [
+            {
+              "href": "/produkter/haeny/automatiska-pumpar",
+              "mutual": false
+            },
+            {
+              "href": "/produkter/haeny/automatiska-pumpar/faic-650-725"
+            },
+            {
+              "href": "/produkter/haeny/automatiska-pumpar/faic-1400-725"
+            }
+          ],
+          "gen": true
+        }
+      ]
+    }
+  }
+}

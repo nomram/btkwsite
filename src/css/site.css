@@ -925,3 +925,11 @@ h2[id], h3[id] { scroll-margin-top: 5rem; }
 .cols__b .related { margin: 1.1rem 0 .4rem; }
 .cols__b .related__title { margin: 0 0 .5rem; font-size: .95rem; }
 .cols__b .related__rail { grid-template-columns: minmax(0, 24rem); }
+/* hand-made panel (menu on the brand page): a small heading above each group of links */
+.mega__group { grid-column: 1 / -1; margin: .4rem 0 -.2rem; font-size: .7rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+.mega__group:first-child { margin-top: 0; }
+.mega__cats .mega__cat:not(.has-thumb) { padding-block: .35rem; }
+/* square pictures: every tile frame is the same square whatever the length of the name below it */
+.modules--sq .module__media { flex: 0 0 auto; aspect-ratio: 1 / 1; align-content: stretch; }
+.modules--sq .module__img { height: 100%; object-fit: contain; }
+.modules--sq .module__body { justify-content: flex-start; }

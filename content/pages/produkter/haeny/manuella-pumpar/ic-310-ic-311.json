@@ -1,6 +1,6 @@
 {
   "path": "/produkter/haeny/manuella-pumpar/ic-310-ic-311",
-  "updated": "2026-10-10",
+  "updated": "2026-10-25",
   "template": "product",
   "order": 0,
   "published": true,
@@ -9,8 +9,8 @@
   },
   "i18n": {
     "sv": {
-      "title": "IC 310 & IC 311",
-      "h1": "HÄNY IC 310 & IC311",
+      "title": "IC 310",
+      "h1": "HÄNY IC 310",
       "description": "Kompakt injekteringsplatform för cementslurry - Hänys absoluta storsäljare.",
       "blocks": [
         {
@@ -70,6 +70,165 @@
           "driveId": "12C2EatakW1x2v675WiRWD7N99Hnhj7gq"
         },
         {
+          "type": "heading",
+          "level": 2,
+          "text": "Teknisk data: IC 310",
+          "gen": true
+        },
+        {
+          "type": "datasheet",
+          "title": "Teknisk data",
+          "tagline": "Kompakt injekteringsanläggning IC 310",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Injekteringspump (ZMP 610)",
+              "rows": [
+                {
+                  "label": "Kapacitet IC",
+                  "metric": "1.5 m³/h"
+                },
+                {
+                  "label": "Max. tryck",
+                  "metric": "100 bar"
+                },
+                {
+                  "label": "Max. kornstorlek",
+                  "metric": "5 mm"
+                },
+                {
+                  "label": "Hydraultank",
+                  "metric": "52 l"
+                },
+                {
+                  "label": "Pumpmodul",
+                  "metric": "enkel"
+                },
+                {
+                  "label": "Kylvattenflöde",
+                  "metric": "2–3 l/min"
+                },
+                {
+                  "label": "Kylvattenanslutning",
+                  "metric": "BSP ⅜\""
+                },
+                {
+                  "label": "Tryckanslutning",
+                  "metric": "BSP 1\""
+                }
+              ]
+            },
+            {
+              "title": "Blandare / omrörare",
+              "rows": [
+                {
+                  "label": "Användbar volym blandare",
+                  "metric": "100 l"
+                },
+                {
+                  "label": "Cirkulationskapacitet",
+                  "metric": "540 l/min"
+                },
+                {
+                  "label": "Vattenanslutning",
+                  "metric": "BSP ¾\""
+                },
+                {
+                  "label": "Omrörarens kapacitet",
+                  "metric": "150 l"
+                }
+              ]
+            },
+            {
+              "title": "Elektriska data",
+              "rows": [
+                {
+                  "label": "Spänning",
+                  "metric": "3x 400/460"
+                },
+                {
+                  "label": "Frekvens",
+                  "metric": "50 / 60 Hz"
+                },
+                {
+                  "label": "Märkeffekt",
+                  "metric": "9.1 / 10.5 kW"
+                }
+              ]
+            },
+            {
+              "title": "Vikt och mått",
+              "rows": [
+                {
+                  "label": "Total vikt",
+                  "metric": "625 kg"
+                },
+                {
+                  "label": "Bredd",
+                  "metric": "800 mm"
+                },
+                {
+                  "label": "Höjd",
+                  "metric": "1,658 mm"
+                },
+                {
+                  "label": "Längd",
+                  "metric": "1,600 mm"
+                }
+              ]
+            }
+          ],
+          "note": "1: Vatten/cement-tal = 1",
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Standard- och tillvalsutrustning",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Ingår som standard (Injekteringspump): Manuell tryck- och flödesreglering",
+            "Ingår som standard (Injekteringspump): Oljenivåindikator med termometer",
+            "Tillval (Blandare / omrörare): Extra blandningsenhet (rekommenderas vid vct &lt; 0,45)",
+            "Tillval (Blandare / omrörare): Automatisk vattenmätare",
+            "Tillval (Styrning): Fjärrstyrning med 50 m kabel, PÅ/AV",
+            "Tillval (Styrning): P/Q-registrering (tryck/flöde)",
+            "Styrning: PLC med slagräknare",
+            "Styrning: Låsbar huvudbrytare, nödstopp",
+            "Styrning: Blandare PÅ/AV",
+            "Styrning: Omrörare PÅ/AV",
+            "Styrning: Pump PÅ/AV"
+          ],
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 2,
+          "more": false,
+          "items": [
+            {
+              "title": "Pumpprestanda",
+              "image": "/assets/img/haeny-ic310-chart.webp",
+              "alt": "Pumpprestanda IC 310",
+              "width": 1065,
+              "height": 1241
+            },
+            {
+              "title": "Mått och ritning",
+              "image": "/assets/img/haeny-ic310-dim.webp",
+              "alt": "Mått och ritning IC 310",
+              "width": 1509,
+              "height": 2016
+            }
+          ],
+          "gen": true
+        },
+        {
           "type": "carousel",
           "items": [
             {
@@ -120,8 +279,8 @@
       ]
     },
     "en": {
-      "title": "IC 310 & IC 311",
-      "h1": "HÄNY IC 310 & IC311",
+      "title": "IC 310",
+      "h1": "HÄNY IC 310",
       "description": "Compact grouting platform for cement slurry, Häny’s absolute best seller.",
       "blocks": [
         {
@@ -181,6 +340,165 @@
           "driveId": "12C2EatakW1x2v675WiRWD7N99Hnhj7gq"
         },
         {
+          "type": "heading",
+          "level": 2,
+          "text": "Technical data: IC 310",
+          "gen": true
+        },
+        {
+          "type": "datasheet",
+          "title": "Technical data",
+          "tagline": "Compact Grout Plant IC 310",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Grout pump (ZMP 610)",
+              "rows": [
+                {
+                  "label": "Capacity IC",
+                  "metric": "1.5 m³/h"
+                },
+                {
+                  "label": "Max. pressure",
+                  "metric": "100 bar"
+                },
+                {
+                  "label": "Max. aggregate size",
+                  "metric": "5 mm"
+                },
+                {
+                  "label": "Hydraulic tank",
+                  "metric": "52 l"
+                },
+                {
+                  "label": "Pump module",
+                  "metric": "single"
+                },
+                {
+                  "label": "Cooling water flow rate",
+                  "metric": "2–3 l/min"
+                },
+                {
+                  "label": "Cooling water connection",
+                  "metric": "BSP ⅜\""
+                },
+                {
+                  "label": "Pressure connection",
+                  "metric": "BSP 1\""
+                }
+              ]
+            },
+            {
+              "title": "Mixer / Agitator",
+              "rows": [
+                {
+                  "label": "Usable content mixer",
+                  "metric": "100 l"
+                },
+                {
+                  "label": "Circulation capacity",
+                  "metric": "540 l/min"
+                },
+                {
+                  "label": "Water connection",
+                  "metric": "BSP ¾\""
+                },
+                {
+                  "label": "Holding capacity agitator",
+                  "metric": "150 l"
+                }
+              ]
+            },
+            {
+              "title": "Electrical data",
+              "rows": [
+                {
+                  "label": "Voltage",
+                  "metric": "3x 400/460"
+                },
+                {
+                  "label": "Frequency",
+                  "metric": "50 / 60 Hz"
+                },
+                {
+                  "label": "Nominal power",
+                  "metric": "9.1 / 10.5 kW"
+                }
+              ]
+            },
+            {
+              "title": "Weight and dimensions",
+              "rows": [
+                {
+                  "label": "Total weight",
+                  "metric": "625 kg"
+                },
+                {
+                  "label": "Width",
+                  "metric": "800 mm"
+                },
+                {
+                  "label": "Height",
+                  "metric": "1,658 mm"
+                },
+                {
+                  "label": "Length",
+                  "metric": "1,600 mm"
+                }
+              ]
+            }
+          ],
+          "note": "1: Water to cement ratio = 1",
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Standard and optional equipment",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Included as standard (Grout pump): Manual pressure and flow control",
+            "Included as standard (Grout pump): Oil level indicator with thermometer",
+            "Optional (Mixer / Agitator): Auxiliary mixing unit (recommended for W/C &lt; 0.45)",
+            "Optional (Mixer / Agitator): Automatic water meter",
+            "Optional (Control): Remote control with 50 m cable, ON-OFF",
+            "Optional (Control): P/Q-Registration",
+            "Control: PLC with stroke counter",
+            "Control: Lockable main switch, emergency stop",
+            "Control: Mixer ON-OFF",
+            "Control: Agitator ON-OFF",
+            "Control: Pump ON-OFF"
+          ],
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 2,
+          "more": false,
+          "items": [
+            {
+              "title": "Pump performance",
+              "image": "/assets/img/haeny-ic310-chart.webp",
+              "alt": "Pump performance IC 310",
+              "width": 1065,
+              "height": 1241
+            },
+            {
+              "title": "Dimensions and drawing",
+              "image": "/assets/img/haeny-ic310-dim.webp",
+              "alt": "Dimensions and drawing IC 310",
+              "width": 1509,
+              "height": 2016
+            }
+          ],
+          "gen": true
+        },
+        {
           "type": "carousel",
           "items": [
             {
@@ -232,8 +550,8 @@
       "published": true
     },
     "es": {
-      "title": "IC 310 & IC 311",
-      "h1": "HÄNY IC 310 & IC311",
+      "title": "IC 310",
+      "h1": "HÄNY IC 310",
       "description": "Plataforma de inyección compacta para lechada de cemento: el producto más vendido de Häny.",
       "blocks": [
         {
@@ -293,6 +611,165 @@
           "driveId": "12C2EatakW1x2v675WiRWD7N99Hnhj7gq"
         },
         {
+          "type": "heading",
+          "level": 2,
+          "text": "Datos técnicos: IC 310",
+          "gen": true
+        },
+        {
+          "type": "datasheet",
+          "title": "Datos técnicos",
+          "tagline": "Planta de inyección compacta IC 310",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Bomba de inyección (ZMP 610)",
+              "rows": [
+                {
+                  "label": "Capacidad IC",
+                  "metric": "1.5 m³/h"
+                },
+                {
+                  "label": "Presión máx.",
+                  "metric": "100 bar"
+                },
+                {
+                  "label": "Tamaño máx. de partícula",
+                  "metric": "5 mm"
+                },
+                {
+                  "label": "Depósito hidráulico",
+                  "metric": "52 l"
+                },
+                {
+                  "label": "Módulo de bomba",
+                  "metric": "simple"
+                },
+                {
+                  "label": "Caudal de agua de refrigeración",
+                  "metric": "2–3 l/min"
+                },
+                {
+                  "label": "Conexión de agua de refrigeración",
+                  "metric": "BSP ⅜\""
+                },
+                {
+                  "label": "Conexión de presión",
+                  "metric": "BSP 1\""
+                }
+              ]
+            },
+            {
+              "title": "Mezcladora / agitador",
+              "rows": [
+                {
+                  "label": "Volumen útil de la mezcladora",
+                  "metric": "100 l"
+                },
+                {
+                  "label": "Capacidad de circulación",
+                  "metric": "540 l/min"
+                },
+                {
+                  "label": "Conexión de agua",
+                  "metric": "BSP ¾\""
+                },
+                {
+                  "label": "Capacidad de retención del agitador",
+                  "metric": "150 l"
+                }
+              ]
+            },
+            {
+              "title": "Datos eléctricos",
+              "rows": [
+                {
+                  "label": "Tensión",
+                  "metric": "3x 400/460"
+                },
+                {
+                  "label": "Frecuencia",
+                  "metric": "50 / 60 Hz"
+                },
+                {
+                  "label": "Potencia nominal",
+                  "metric": "9.1 / 10.5 kW"
+                }
+              ]
+            },
+            {
+              "title": "Peso y dimensiones",
+              "rows": [
+                {
+                  "label": "Peso total",
+                  "metric": "625 kg"
+                },
+                {
+                  "label": "Anchura",
+                  "metric": "800 mm"
+                },
+                {
+                  "label": "Altura",
+                  "metric": "1,658 mm"
+                },
+                {
+                  "label": "Longitud",
+                  "metric": "1,600 mm"
+                }
+              ]
+            }
+          ],
+          "note": "1: Relación agua/cemento = 1",
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Equipamiento estándar y opcional",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Incluido de serie (Bomba de inyección): Control manual de presión y caudal",
+            "Incluido de serie (Bomba de inyección): Indicador de nivel de aceite con termómetro",
+            "Opcional (Mezcladora / agitador): Unidad de mezcla auxiliar (recomendada para A/C &lt; 0,45)",
+            "Opcional (Mezcladora / agitador): Contador de agua automático",
+            "Opcional (Control): Mando a distancia con cable de 50 m, ON/OFF",
+            "Opcional (Control): Registro P/Q (presión/caudal)",
+            "Control: PLC con contador de carreras",
+            "Control: Interruptor principal con candado, parada de emergencia",
+            "Control: Mezcladora ON/OFF",
+            "Control: Agitador ON/OFF",
+            "Control: Bomba ON/OFF"
+          ],
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 2,
+          "more": false,
+          "items": [
+            {
+              "title": "Rendimiento de la bomba",
+              "image": "/assets/img/haeny-ic310-chart.webp",
+              "alt": "Rendimiento de la bomba IC 310",
+              "width": 1065,
+              "height": 1241
+            },
+            {
+              "title": "Dimensiones y plano",
+              "image": "/assets/img/haeny-ic310-dim.webp",
+              "alt": "Dimensiones y plano IC 310",
+              "width": 1509,
+              "height": 2016
+            }
+          ],
+          "gen": true
+        },
+        {
           "type": "carousel",
           "items": [
             {
@@ -344,8 +821,8 @@
       "published": true
     },
     "no": {
-      "title": "IC 310 & IC 311",
-      "h1": "HÄNY IC 310 & IC311",
+      "title": "IC 310",
+      "h1": "HÄNY IC 310",
       "description": "Kompakt injiseringsplattform for sementslurry, Hänys absolutte storselger.",
       "blocks": [
         {
@@ -403,6 +880,165 @@
           "text": "Brosjyre",
           "href": "/assets/docs/haeny-manuella-pumpar-ic-310-ic-311-broschyr-eng.pdf",
           "driveId": "12C2EatakW1x2v675WiRWD7N99Hnhj7gq"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Tekniske data: IC 310",
+          "gen": true
+        },
+        {
+          "type": "datasheet",
+          "title": "Tekniske data",
+          "tagline": "Kompakt injeksjonsanlegg IC 310",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Injeksjonspumpe (ZMP 610)",
+              "rows": [
+                {
+                  "label": "Kapasitet IC",
+                  "metric": "1.5 m³/h"
+                },
+                {
+                  "label": "Maks. trykk",
+                  "metric": "100 bar"
+                },
+                {
+                  "label": "Maks. kornstørrelse",
+                  "metric": "5 mm"
+                },
+                {
+                  "label": "Hydrauliktank",
+                  "metric": "52 l"
+                },
+                {
+                  "label": "Pumpemodul",
+                  "metric": "enkel"
+                },
+                {
+                  "label": "Kjølevannstrøm",
+                  "metric": "2–3 l/min"
+                },
+                {
+                  "label": "Kjølevanntilkobling",
+                  "metric": "BSP ⅜\""
+                },
+                {
+                  "label": "Trykktilkobling",
+                  "metric": "BSP 1\""
+                }
+              ]
+            },
+            {
+              "title": "Mikser / røreverk",
+              "rows": [
+                {
+                  "label": "Nyttbart volum mikser",
+                  "metric": "100 l"
+                },
+                {
+                  "label": "Sirkulasjonskapasitet",
+                  "metric": "540 l/min"
+                },
+                {
+                  "label": "Vanntilkobling",
+                  "metric": "BSP ¾\""
+                },
+                {
+                  "label": "Røreverkets kapasitet",
+                  "metric": "150 l"
+                }
+              ]
+            },
+            {
+              "title": "Elektriske data",
+              "rows": [
+                {
+                  "label": "Spenning",
+                  "metric": "3x 400/460"
+                },
+                {
+                  "label": "Frekvens",
+                  "metric": "50 / 60 Hz"
+                },
+                {
+                  "label": "Merkeeffekt",
+                  "metric": "9.1 / 10.5 kW"
+                }
+              ]
+            },
+            {
+              "title": "Vekt og mål",
+              "rows": [
+                {
+                  "label": "Total vekt",
+                  "metric": "625 kg"
+                },
+                {
+                  "label": "Bredde",
+                  "metric": "800 mm"
+                },
+                {
+                  "label": "Høyde",
+                  "metric": "1,658 mm"
+                },
+                {
+                  "label": "Lengde",
+                  "metric": "1,600 mm"
+                }
+              ]
+            }
+          ],
+          "note": "1: Vann/sement-tall = 1",
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Standard- og tilvalgsutstyr",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Inkludert som standard (Injeksjonspumpe): Manuell trykk- og strømningsregulering",
+            "Inkludert som standard (Injeksjonspumpe): Oljenivåindikator med termometer",
+            "Tilvalg (Mikser / røreverk): Ekstra blandeenhet (anbefalt ved v/s &lt; 0,45)",
+            "Tilvalg (Mikser / røreverk): Automatisk vannmåler",
+            "Tilvalg (Styring): Fjernkontroll med 50 m kabel, PÅ/AV",
+            "Tilvalg (Styring): P/Q-registrering (trykk/strømning)",
+            "Styring: PLS med slagteller",
+            "Styring: Låsbar hovedbryter, nødstopp",
+            "Styring: Mikser PÅ/AV",
+            "Styring: Røreverk PÅ/AV",
+            "Styring: Pumpe PÅ/AV"
+          ],
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 2,
+          "more": false,
+          "items": [
+            {
+              "title": "Pumpeytelse",
+              "image": "/assets/img/haeny-ic310-chart.webp",
+              "alt": "Pumpeytelse IC 310",
+              "width": 1065,
+              "height": 1241
+            },
+            {
+              "title": "Mål og tegning",
+              "image": "/assets/img/haeny-ic310-dim.webp",
+              "alt": "Mål og tegning IC 310",
+              "width": 1509,
+              "height": 2016
+            }
+          ],
+          "gen": true
         },
         {
           "type": "carousel",

@@ -1,0 +1,1161 @@
+{
+  "path": "/produkter/haeny/blandare",
+  "updated": "2026-10-25",
+  "template": "product",
+  "order": 3,
+  "published": true,
+  "i18n": {
+    "sv": {
+      "title": "Blandare (HCM)",
+      "h1": "Blandare (HCM)",
+      "description": "Häny HCM är högskjuvande kolloidblandare för cement, ultrafint cement, bentonit och andra tillsatser. Utmärkt blandningskvalitet, hög kapacitet och lågt slitage. Blandarna kan användas fristående elle",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "HÄNY",
+          "href": "/produkter/haeny",
+          "width": 832,
+          "height": 143,
+          "src": "/assets/img/haeny-1.webp"
+        },
+        {
+          "type": "columns",
+          "ratio": "40-60",
+          "left": [
+            {
+              "type": "image",
+              "alt": "Blandare (HCM)",
+              "width": 1000,
+              "height": 1000,
+              "src": "/assets/img/haeny-tile-hcm.webp"
+            }
+          ],
+          "right": [
+            {
+              "type": "text",
+              "html": "Häny HCM är högskjuvande kolloidblandare för cement, ultrafint cement, bentonit och andra tillsatser. Utmärkt blandningskvalitet, hög kapacitet och lågt slitage. Blandarna kan användas fristående eller tillsammans med omrörare och injekteringspump, med manuell drift eller automatisk invägning."
+            },
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "Utmärkt blandningsresultat tack vare den höga turbulens som den snabbgående blandningspumpen skapar",
+                "Blandningstank med konisk botten och recirkulationsledning",
+                "Automatisk smörjning av axeltätningen och smord 3-vägsventil för omkoppling mellan blandning och överföring",
+                "Extra blandare (tillval) för vct-tal &lt; 0,5 och mikrocement"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Modeller",
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 3,
+          "square": true,
+          "more": false,
+          "items": [
+            {
+              "title": "HCM 100",
+              "image": "/assets/img/haeny-hcm100-tile.webp",
+              "alt": "High Shear Mixer HCM 100",
+              "href": "/produkter/haeny/blandare/hcm-100",
+              "bullets": [
+                "2 m³/h",
+                "100 l",
+                "3.0 / 3.6 kW"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "HCM 300",
+              "image": "/assets/img/haeny-hcm300-tile.webp",
+              "alt": "High Shear Mixer HCM 300",
+              "href": "/produkter/haeny/blandare/hcm-300",
+              "bullets": [
+                "5 m³/h",
+                "260 l",
+                "9.2 / 10.5 kW"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "HCM 600",
+              "image": "/assets/img/haeny-hcm600-tile.webp",
+              "alt": "High Shear Mixer HCM 600",
+              "href": "/produkter/haeny/blandare/hcm-600",
+              "bullets": [
+                "8 m³/h",
+                "550 l",
+                "9.2 / 10.5 kW"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "HCM 800",
+              "image": "/assets/img/haeny-hcm800-tile.webp",
+              "alt": "High Shear Mixer HCM 800",
+              "href": "/produkter/haeny/blandare/hcm-800",
+              "bullets": [
+                "20 m³/h",
+                "800 l",
+                "22 / 25 kW"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "HCM 2500",
+              "image": "/assets/img/haeny-hcm2500-tile.webp",
+              "alt": "High Shear Mixer HCM 2500",
+              "href": "/produkter/haeny/blandare/hcm-2500",
+              "bullets": [
+                "40 m³/h",
+                "2,500 l",
+                "45 / 53 kW"
+              ],
+              "width": 1000,
+              "height": 1000
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Användning",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Framställning av suspensioner av vatten, cement, ultrafint bindemedel, bentonit, sand och andra material",
+            "Som fristående system eller tillsammans med omrörare och injekteringspump"
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Jämförelse av modellerna",
+          "gen": true
+        },
+        {
+          "type": "table",
+          "header": true,
+          "align": "center",
+          "caption": "Jämförelse av modellerna",
+          "rows": [
+            [
+              "",
+              "HCM 100",
+              "HCM 300",
+              "HCM 600",
+              "HCM 800",
+              "HCM 2500"
+            ],
+            [
+              "Blandningspump",
+              "TMP 9",
+              "TMP 22",
+              "TMP 22",
+              "TMP 40",
+              "TMP 60"
+            ],
+            [
+              "Ungefärlig kapacitet",
+              "2 m³/h",
+              "5 m³/h",
+              "8 m³/h",
+              "20 m³/h",
+              "40 m³/h"
+            ],
+            [
+              "Cirkulationskapacitet",
+              "540 l/min",
+              "1,400 l/min",
+              "1,400 l/min",
+              "2,400 l/min",
+              "4,800 l/min"
+            ],
+            [
+              "Användbar volym",
+              "100 l",
+              "260 l",
+              "550 l",
+              "800 l",
+              "2,500 l"
+            ],
+            [
+              "Max. kornstorlek",
+              "5 mm",
+              "8 mm",
+              "8 mm",
+              "3 mm",
+              "-"
+            ],
+            [
+              "Vätsketemperatur",
+              "Max. 40°C",
+              "Max. 40°C",
+              "Max. 40°C",
+              "Max. 40°C",
+              "Max. 40°C"
+            ],
+            [
+              "Spänning",
+              "3x 400/460 V",
+              "3x 400/460 V",
+              "3x 400/460 V",
+              "3x 400/460 V",
+              "3x 400/460 V"
+            ],
+            [
+              "Frekvens",
+              "50 / 60 Hz",
+              "50 / 60 Hz",
+              "50 / 60 Hz",
+              "50 / 60 Hz",
+              "50 / 60 Hz"
+            ],
+            [
+              "Märkeffekt",
+              "3.0 / 3.6 kW",
+              "9.2 / 10.5 kW",
+              "9.2 / 10.5 kW",
+              "22 / 25 kW",
+              "45 / 53 kW"
+            ],
+            [
+              "Märkström",
+              "6.15 / 6.45 A",
+              "16.8 / 17.6 A",
+              "16.8 / 17.6 A",
+              "40.1 / 41.0 A",
+              "70.0 / 82.4 A"
+            ],
+            [
+              "Varvtal",
+              "1,440 / 1,695 min⁻¹",
+              "1,465 / 1,765 min⁻¹",
+              "1,465 / 1,765 min⁻¹",
+              "1,475 / 1,770 min⁻¹",
+              "1,475 / 1,770 min⁻¹"
+            ],
+            [
+              "Ungefärlig vikt",
+              "130 kg",
+              "325 kg",
+              "370 kg",
+              "1225 kg",
+              "2,500 kg"
+            ],
+            [
+              "Bredd",
+              "675 mm",
+              "925 mm",
+              "1,025 mm",
+              "1,390 mm",
+              "2,220 mm"
+            ],
+            [
+              "Höjd",
+              "1,335 mm",
+              "1,395 mm",
+              "1,750 mm",
+              "1,993 mm",
+              "1,893 mm"
+            ],
+            [
+              "Längd",
+              "814 mm",
+              "1,225 mm",
+              "1,360 mm",
+              "1,710 mm",
+              "2,585 mm"
+            ]
+          ],
+          "links": [],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Kontakta oss</a> för pris, leveranstid eller hjälp att välja rätt modell."
+        }
+      ]
+    },
+    "en": {
+      "title": "Mixers (HCM)",
+      "h1": "Mixers (HCM)",
+      "description": "Häny HCM high-shear (colloidal) mixers are made for cement, ultra-fine cement, bentonite and other admixtures: excellent mixing quality, high capacity and low wear. Use them stand-alone or together wi",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "HÄNY",
+          "href": "/produkter/haeny",
+          "width": 832,
+          "height": 143,
+          "src": "/assets/img/haeny-1.webp"
+        },
+        {
+          "type": "columns",
+          "ratio": "40-60",
+          "left": [
+            {
+              "type": "image",
+              "alt": "Mixers (HCM)",
+              "width": 1000,
+              "height": 1000,
+              "src": "/assets/img/haeny-tile-hcm.webp"
+            }
+          ],
+          "right": [
+            {
+              "type": "text",
+              "html": "Häny HCM high-shear (colloidal) mixers are made for cement, ultra-fine cement, bentonite and other admixtures: excellent mixing quality, high capacity and low wear. Use them stand-alone or together with an agitator and a grout pump, manually operated or with automatic weigh-batching."
+            },
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "Excellent mixing results thanks to the high turbulence generated by the high-speed mixing pump",
+                "Mixing tank with conical bottom and recirculation line",
+                "Automatic lubrication of the shaft seal and lubricated 3-way valve for switching between mixing or transfer",
+                "Optional additional mixer for water/cement ratio &lt; 0.5 and microcements"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Models",
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 3,
+          "square": true,
+          "more": false,
+          "items": [
+            {
+              "title": "HCM 100",
+              "image": "/assets/img/haeny-hcm100-tile.webp",
+              "alt": "High Shear Mixer HCM 100",
+              "href": "/produkter/haeny/blandare/hcm-100",
+              "bullets": [
+                "2 m³/h",
+                "100 l",
+                "3.0 / 3.6 kW"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "HCM 300",
+              "image": "/assets/img/haeny-hcm300-tile.webp",
+              "alt": "High Shear Mixer HCM 300",
+              "href": "/produkter/haeny/blandare/hcm-300",
+              "bullets": [
+                "5 m³/h",
+                "260 l",
+                "9.2 / 10.5 kW"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "HCM 600",
+              "image": "/assets/img/haeny-hcm600-tile.webp",
+              "alt": "High Shear Mixer HCM 600",
+              "href": "/produkter/haeny/blandare/hcm-600",
+              "bullets": [
+                "8 m³/h",
+                "550 l",
+                "9.2 / 10.5 kW"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "HCM 800",
+              "image": "/assets/img/haeny-hcm800-tile.webp",
+              "alt": "High Shear Mixer HCM 800",
+              "href": "/produkter/haeny/blandare/hcm-800",
+              "bullets": [
+                "20 m³/h",
+                "800 l",
+                "22 / 25 kW"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "HCM 2500",
+              "image": "/assets/img/haeny-hcm2500-tile.webp",
+              "alt": "High Shear Mixer HCM 2500",
+              "href": "/produkter/haeny/blandare/hcm-2500",
+              "bullets": [
+                "40 m³/h",
+                "2,500 l",
+                "45 / 53 kW"
+              ],
+              "width": 1000,
+              "height": 1000
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Typical applications",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Preparation of suspensions consisting of water, cement, ultra-fine binder, bentonite, sand, and other materials",
+            "As a stand-alone system or in combination with agitator and injection pump"
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Model comparison",
+          "gen": true
+        },
+        {
+          "type": "table",
+          "header": true,
+          "align": "center",
+          "caption": "Model comparison",
+          "rows": [
+            [
+              "",
+              "HCM 100",
+              "HCM 300",
+              "HCM 600",
+              "HCM 800",
+              "HCM 2500"
+            ],
+            [
+              "Mixing pump",
+              "TMP 9",
+              "TMP 22",
+              "TMP 22",
+              "TMP 40",
+              "TMP 60"
+            ],
+            [
+              "Approx. capacity",
+              "2 m³/h",
+              "5 m³/h",
+              "8 m³/h",
+              "20 m³/h",
+              "40 m³/h"
+            ],
+            [
+              "Circulation capacity",
+              "540 l/min",
+              "1,400 l/min",
+              "1,400 l/min",
+              "2,400 l/min",
+              "4,800 l/min"
+            ],
+            [
+              "Usable content",
+              "100 l",
+              "260 l",
+              "550 l",
+              "800 l",
+              "2,500 l"
+            ],
+            [
+              "Max. aggregate size",
+              "5 mm",
+              "8 mm",
+              "8 mm",
+              "3 mm",
+              "-"
+            ],
+            [
+              "Liquid temperature",
+              "Max. 40°C",
+              "Max. 40°C",
+              "Max. 40°C",
+              "Max. 40°C",
+              "Max. 40°C"
+            ],
+            [
+              "Voltage",
+              "3x 400/460 V",
+              "3x 400/460 V",
+              "3x 400/460 V",
+              "3x 400/460 V",
+              "3x 400/460 V"
+            ],
+            [
+              "Frequency",
+              "50 / 60 Hz",
+              "50 / 60 Hz",
+              "50 / 60 Hz",
+              "50 / 60 Hz",
+              "50 / 60 Hz"
+            ],
+            [
+              "Nominal power",
+              "3.0 / 3.6 kW",
+              "9.2 / 10.5 kW",
+              "9.2 / 10.5 kW",
+              "22 / 25 kW",
+              "45 / 53 kW"
+            ],
+            [
+              "Nominal current",
+              "6.15 / 6.45 A",
+              "16.8 / 17.6 A",
+              "16.8 / 17.6 A",
+              "40.1 / 41.0 A",
+              "70.0 / 82.4 A"
+            ],
+            [
+              "Speed",
+              "1,440 / 1,695 min⁻¹",
+              "1,465 / 1,765 min⁻¹",
+              "1,465 / 1,765 min⁻¹",
+              "1,475 / 1,770 min⁻¹",
+              "1,475 / 1,770 min⁻¹"
+            ],
+            [
+              "Approx. weight",
+              "130 kg",
+              "325 kg",
+              "370 kg",
+              "1225 kg",
+              "2,500 kg"
+            ],
+            [
+              "Width",
+              "675 mm",
+              "925 mm",
+              "1,025 mm",
+              "1,390 mm",
+              "2,220 mm"
+            ],
+            [
+              "Height",
+              "1,335 mm",
+              "1,395 mm",
+              "1,750 mm",
+              "1,993 mm",
+              "1,893 mm"
+            ],
+            [
+              "Length",
+              "814 mm",
+              "1,225 mm",
+              "1,360 mm",
+              "1,710 mm",
+              "2,585 mm"
+            ]
+          ],
+          "links": [],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Contact us</a> for price, delivery time or help choosing the right model."
+        }
+      ]
+    },
+    "es": {
+      "title": "Mezcladores (HCM)",
+      "h1": "Mezcladores (HCM)",
+      "description": "Los mezcladores coloidales de alta cizalladura Häny HCM están pensados para cemento, cemento ultrafino, bentonita y otros aditivos: excelente calidad de mezcla, gran capacidad y poco desgaste. Se pued",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "HÄNY",
+          "href": "/produkter/haeny",
+          "width": 832,
+          "height": 143,
+          "src": "/assets/img/haeny-1.webp"
+        },
+        {
+          "type": "columns",
+          "ratio": "40-60",
+          "left": [
+            {
+              "type": "image",
+              "alt": "Mezcladores (HCM)",
+              "width": 1000,
+              "height": 1000,
+              "src": "/assets/img/haeny-tile-hcm.webp"
+            }
+          ],
+          "right": [
+            {
+              "type": "text",
+              "html": "Los mezcladores coloidales de alta cizalladura Häny HCM están pensados para cemento, cemento ultrafino, bentonita y otros aditivos: excelente calidad de mezcla, gran capacidad y poco desgaste. Se pueden usar solos o junto con un agitador y una bomba de inyección."
+            },
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "Excelentes resultados de mezcla gracias a la gran turbulencia que genera la bomba mezcladora de alta velocidad",
+                "Depósito de mezcla con fondo cónico y línea de recirculación",
+                "Lubricación automática del retén del eje y válvula de 3 vías lubricada para conmutar entre mezcla y transferencia",
+                "Mezcladora adicional opcional para relación agua/cemento &lt; 0,5 y microcementos"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Modelos",
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 3,
+          "square": true,
+          "more": false,
+          "items": [
+            {
+              "title": "HCM 100",
+              "image": "/assets/img/haeny-hcm100-tile.webp",
+              "alt": "High Shear Mixer HCM 100",
+              "href": "/produkter/haeny/blandare/hcm-100",
+              "bullets": [
+                "2 m³/h",
+                "100 l",
+                "3.0 / 3.6 kW"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "HCM 300",
+              "image": "/assets/img/haeny-hcm300-tile.webp",
+              "alt": "High Shear Mixer HCM 300",
+              "href": "/produkter/haeny/blandare/hcm-300",
+              "bullets": [
+                "5 m³/h",
+                "260 l",
+                "9.2 / 10.5 kW"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "HCM 600",
+              "image": "/assets/img/haeny-hcm600-tile.webp",
+              "alt": "High Shear Mixer HCM 600",
+              "href": "/produkter/haeny/blandare/hcm-600",
+              "bullets": [
+                "8 m³/h",
+                "550 l",
+                "9.2 / 10.5 kW"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "HCM 800",
+              "image": "/assets/img/haeny-hcm800-tile.webp",
+              "alt": "High Shear Mixer HCM 800",
+              "href": "/produkter/haeny/blandare/hcm-800",
+              "bullets": [
+                "20 m³/h",
+                "800 l",
+                "22 / 25 kW"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "HCM 2500",
+              "image": "/assets/img/haeny-hcm2500-tile.webp",
+              "alt": "High Shear Mixer HCM 2500",
+              "href": "/produkter/haeny/blandare/hcm-2500",
+              "bullets": [
+                "40 m³/h",
+                "2,500 l",
+                "45 / 53 kW"
+              ],
+              "width": 1000,
+              "height": 1000
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Aplicaciones típicas",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Preparación de suspensiones de agua, cemento, ligante ultrafino, bentonita, arena y otros materiales",
+            "Como sistema independiente o combinado con agitador y bomba de inyección"
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Comparación de modelos",
+          "gen": true
+        },
+        {
+          "type": "table",
+          "header": true,
+          "align": "center",
+          "caption": "Comparación de modelos",
+          "rows": [
+            [
+              "",
+              "HCM 100",
+              "HCM 300",
+              "HCM 600",
+              "HCM 800",
+              "HCM 2500"
+            ],
+            [
+              "Bomba mezcladora",
+              "TMP 9",
+              "TMP 22",
+              "TMP 22",
+              "TMP 40",
+              "TMP 60"
+            ],
+            [
+              "Capacidad aprox.",
+              "2 m³/h",
+              "5 m³/h",
+              "8 m³/h",
+              "20 m³/h",
+              "40 m³/h"
+            ],
+            [
+              "Capacidad de circulación",
+              "540 l/min",
+              "1,400 l/min",
+              "1,400 l/min",
+              "2,400 l/min",
+              "4,800 l/min"
+            ],
+            [
+              "Volumen útil",
+              "100 l",
+              "260 l",
+              "550 l",
+              "800 l",
+              "2,500 l"
+            ],
+            [
+              "Tamaño máx. de partícula",
+              "5 mm",
+              "8 mm",
+              "8 mm",
+              "3 mm",
+              "-"
+            ],
+            [
+              "Temperatura del líquido",
+              "Max. 40°C",
+              "Max. 40°C",
+              "Max. 40°C",
+              "Max. 40°C",
+              "Max. 40°C"
+            ],
+            [
+              "Tensión",
+              "3x 400/460 V",
+              "3x 400/460 V",
+              "3x 400/460 V",
+              "3x 400/460 V",
+              "3x 400/460 V"
+            ],
+            [
+              "Frecuencia",
+              "50 / 60 Hz",
+              "50 / 60 Hz",
+              "50 / 60 Hz",
+              "50 / 60 Hz",
+              "50 / 60 Hz"
+            ],
+            [
+              "Potencia nominal",
+              "3.0 / 3.6 kW",
+              "9.2 / 10.5 kW",
+              "9.2 / 10.5 kW",
+              "22 / 25 kW",
+              "45 / 53 kW"
+            ],
+            [
+              "Corriente nominal",
+              "6.15 / 6.45 A",
+              "16.8 / 17.6 A",
+              "16.8 / 17.6 A",
+              "40.1 / 41.0 A",
+              "70.0 / 82.4 A"
+            ],
+            [
+              "Velocidad",
+              "1,440 / 1,695 min⁻¹",
+              "1,465 / 1,765 min⁻¹",
+              "1,465 / 1,765 min⁻¹",
+              "1,475 / 1,770 min⁻¹",
+              "1,475 / 1,770 min⁻¹"
+            ],
+            [
+              "Peso aprox.",
+              "130 kg",
+              "325 kg",
+              "370 kg",
+              "1225 kg",
+              "2,500 kg"
+            ],
+            [
+              "Anchura",
+              "675 mm",
+              "925 mm",
+              "1,025 mm",
+              "1,390 mm",
+              "2,220 mm"
+            ],
+            [
+              "Altura",
+              "1,335 mm",
+              "1,395 mm",
+              "1,750 mm",
+              "1,993 mm",
+              "1,893 mm"
+            ],
+            [
+              "Longitud",
+              "814 mm",
+              "1,225 mm",
+              "1,360 mm",
+              "1,710 mm",
+              "2,585 mm"
+            ]
+          ],
+          "links": [],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Contáctenos</a> para precio, plazo de entrega o ayuda para elegir el modelo adecuado."
+        }
+      ]
+    },
+    "no": {
+      "title": "Miksere (HCM)",
+      "h1": "Miksere (HCM)",
+      "description": "Häny HCM er høyskjærende kolloidmiksere for sement, ultrafin sement, bentonitt og andre tilsetninger: utmerket blandekvalitet, høy kapasitet og lite slitasje. Kan brukes alene eller sammen med rørever",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "HÄNY",
+          "href": "/produkter/haeny",
+          "width": 832,
+          "height": 143,
+          "src": "/assets/img/haeny-1.webp"
+        },
+        {
+          "type": "columns",
+          "ratio": "40-60",
+          "left": [
+            {
+              "type": "image",
+              "alt": "Miksere (HCM)",
+              "width": 1000,
+              "height": 1000,
+              "src": "/assets/img/haeny-tile-hcm.webp"
+            }
+          ],
+          "right": [
+            {
+              "type": "text",
+              "html": "Häny HCM er høyskjærende kolloidmiksere for sement, ultrafin sement, bentonitt og andre tilsetninger: utmerket blandekvalitet, høy kapasitet og lite slitasje. Kan brukes alene eller sammen med røreverk og injeksjonspumpe."
+            },
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "Utmerket blanderesultat takket være den høye turbulensen fra den høyturtallige blandepumpen",
+                "Blandetank med konisk bunn og resirkulasjonsledning",
+                "Automatisk smøring av akseltetningen og smurt 3-veisventil for omkobling mellom blanding og overføring",
+                "Ekstra mikser (tilvalg) for v/s-tall &lt; 0,5 og mikrosement"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Modeller",
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 3,
+          "square": true,
+          "more": false,
+          "items": [
+            {
+              "title": "HCM 100",
+              "image": "/assets/img/haeny-hcm100-tile.webp",
+              "alt": "High Shear Mixer HCM 100",
+              "href": "/produkter/haeny/blandare/hcm-100",
+              "bullets": [
+                "2 m³/h",
+                "100 l",
+                "3.0 / 3.6 kW"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "HCM 300",
+              "image": "/assets/img/haeny-hcm300-tile.webp",
+              "alt": "High Shear Mixer HCM 300",
+              "href": "/produkter/haeny/blandare/hcm-300",
+              "bullets": [
+                "5 m³/h",
+                "260 l",
+                "9.2 / 10.5 kW"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "HCM 600",
+              "image": "/assets/img/haeny-hcm600-tile.webp",
+              "alt": "High Shear Mixer HCM 600",
+              "href": "/produkter/haeny/blandare/hcm-600",
+              "bullets": [
+                "8 m³/h",
+                "550 l",
+                "9.2 / 10.5 kW"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "HCM 800",
+              "image": "/assets/img/haeny-hcm800-tile.webp",
+              "alt": "High Shear Mixer HCM 800",
+              "href": "/produkter/haeny/blandare/hcm-800",
+              "bullets": [
+                "20 m³/h",
+                "800 l",
+                "22 / 25 kW"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "HCM 2500",
+              "image": "/assets/img/haeny-hcm2500-tile.webp",
+              "alt": "High Shear Mixer HCM 2500",
+              "href": "/produkter/haeny/blandare/hcm-2500",
+              "bullets": [
+                "40 m³/h",
+                "2,500 l",
+                "45 / 53 kW"
+              ],
+              "width": 1000,
+              "height": 1000
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Bruksområder",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Fremstilling av suspensjoner av vann, sement, ultrafint bindemiddel, bentonitt, sand og andre materialer",
+            "Som frittstående system eller sammen med røreverk og injeksjonspumpe"
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Sammenligning av modellene",
+          "gen": true
+        },
+        {
+          "type": "table",
+          "header": true,
+          "align": "center",
+          "caption": "Sammenligning av modellene",
+          "rows": [
+            [
+              "",
+              "HCM 100",
+              "HCM 300",
+              "HCM 600",
+              "HCM 800",
+              "HCM 2500"
+            ],
+            [
+              "Blandepumpe",
+              "TMP 9",
+              "TMP 22",
+              "TMP 22",
+              "TMP 40",
+              "TMP 60"
+            ],
+            [
+              "Omtrentlig kapasitet",
+              "2 m³/h",
+              "5 m³/h",
+              "8 m³/h",
+              "20 m³/h",
+              "40 m³/h"
+            ],
+            [
+              "Sirkulasjonskapasitet",
+              "540 l/min",
+              "1,400 l/min",
+              "1,400 l/min",
+              "2,400 l/min",
+              "4,800 l/min"
+            ],
+            [
+              "Nyttbart volum",
+              "100 l",
+              "260 l",
+              "550 l",
+              "800 l",
+              "2,500 l"
+            ],
+            [
+              "Maks. kornstørrelse",
+              "5 mm",
+              "8 mm",
+              "8 mm",
+              "3 mm",
+              "-"
+            ],
+            [
+              "Væsketemperatur",
+              "Max. 40°C",
+              "Max. 40°C",
+              "Max. 40°C",
+              "Max. 40°C",
+              "Max. 40°C"
+            ],
+            [
+              "Spenning",
+              "3x 400/460 V",
+              "3x 400/460 V",
+              "3x 400/460 V",
+              "3x 400/460 V",
+              "3x 400/460 V"
+            ],
+            [
+              "Frekvens",
+              "50 / 60 Hz",
+              "50 / 60 Hz",
+              "50 / 60 Hz",
+              "50 / 60 Hz",
+              "50 / 60 Hz"
+            ],
+            [
+              "Merkeeffekt",
+              "3.0 / 3.6 kW",
+              "9.2 / 10.5 kW",
+              "9.2 / 10.5 kW",
+              "22 / 25 kW",
+              "45 / 53 kW"
+            ],
+            [
+              "Merkestrøm",
+              "6.15 / 6.45 A",
+              "16.8 / 17.6 A",
+              "16.8 / 17.6 A",
+              "40.1 / 41.0 A",
+              "70.0 / 82.4 A"
+            ],
+            [
+              "Turtall",
+              "1,440 / 1,695 min⁻¹",
+              "1,465 / 1,765 min⁻¹",
+              "1,465 / 1,765 min⁻¹",
+              "1,475 / 1,770 min⁻¹",
+              "1,475 / 1,770 min⁻¹"
+            ],
+            [
+              "Omtrentlig vekt",
+              "130 kg",
+              "325 kg",
+              "370 kg",
+              "1225 kg",
+              "2,500 kg"
+            ],
+            [
+              "Bredde",
+              "675 mm",
+              "925 mm",
+              "1,025 mm",
+              "1,390 mm",
+              "2,220 mm"
+            ],
+            [
+              "Høyde",
+              "1,335 mm",
+              "1,395 mm",
+              "1,750 mm",
+              "1,993 mm",
+              "1,893 mm"
+            ],
+            [
+              "Lengde",
+              "814 mm",
+              "1,225 mm",
+              "1,360 mm",
+              "1,710 mm",
+              "2,585 mm"
+            ]
+          ],
+          "links": [],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Kontakt oss</a> for pris, leveringstid eller hjelp til å velge riktig modell."
+        }
+      ]
+    }
+  }
+}

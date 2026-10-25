@@ -1,0 +1,1009 @@
+{
+  "path": "/produkter/haeny/manuella-pumpar/ic-1400-725v",
+  "updated": "2026-10-25",
+  "template": "product",
+  "order": 11,
+  "published": true,
+  "i18n": {
+    "sv": {
+      "title": "Häny IC 1400/725",
+      "h1": "Häny IC 1400/725",
+      "description": "Kompakt injekteringsanläggning IC 1400/725. De kompakta injekteringsanläggningarna består av Hänys beprövade standardkomponenter: blandare, omrörare och injekteringspump. Uppställningen passar många a",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "HÄNY",
+          "href": "/produkter/haeny",
+          "width": 832,
+          "height": 143,
+          "src": "/assets/img/haeny-1.webp",
+          "gen": true
+        },
+        {
+          "type": "columns",
+          "ratio": "40-60",
+          "left": [
+            {
+              "type": "image",
+              "alt": "Kompakt injekteringsanläggning IC 1400/725",
+              "width": 1084,
+              "height": 954,
+              "src": "/assets/img/haeny-ic1400-725v-model.webp"
+            }
+          ],
+          "right": [
+            {
+              "type": "text",
+              "html": "De kompakta injekteringsanläggningarna består av Hänys beprövade standardkomponenter: blandare, omrörare och injekteringspump. Uppställningen passar många användningar, till exempel ankar-, manschettrörs-, kontakt- och utfyllnadsinjektering. För högre kapacitet och bättre kvalitetskontroll finns anläggningarna även i halvautomatiska och helautomatiska versioner."
+            },
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "Extremt kompakt blandnings- och injekteringssystem med central lyftpunkt för enkel transport och kort installationstid",
+                "Hög produktivitet tack vare ergonomiskt placerade reglage",
+                "Hög tillförlitlighet och lågt underhåll med god åtkomst till slitdelarna",
+                "Oberoende av tryckförhållandena sker sugslaget alltid med hög hastighet för att spola ventilerna och undvika igensättning"
+              ]
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Användning",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Injektering av ankare, jordspik och spännkablar samt manschettrör, berg- och kontaktinjektering",
+            "Beredning och pumpning av bentonitsuspensioner för rörpressning och mikrotunnling"
+          ],
+          "gen": true
+        },
+        {
+          "type": "datasheet",
+          "title": "Teknisk data",
+          "tagline": "Kompakt injekteringsanläggning IC 1400/725",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Injekteringspump (ZMP 725)",
+              "rows": [
+                {
+                  "label": "Kapacitet IC",
+                  "metric": "8 m³/h"
+                },
+                {
+                  "label": "Max. tryck",
+                  "metric": "100 bar"
+                },
+                {
+                  "label": "Max. kornstorlek",
+                  "metric": "8 mm"
+                },
+                {
+                  "label": "Hydraultank",
+                  "metric": "140 l"
+                },
+                {
+                  "label": "Pumpmodul",
+                  "metric": "dubbel"
+                },
+                {
+                  "label": "Kylvattenflöde",
+                  "metric": "5–6 l/min"
+                },
+                {
+                  "label": "Kylvattenanslutning",
+                  "metric": "BSP ½\""
+                },
+                {
+                  "label": "Tryckanslutning",
+                  "metric": "BSP 2\""
+                }
+              ]
+            },
+            {
+              "title": "Blandare / omrörare",
+              "rows": [
+                {
+                  "label": "Användbar volym blandare",
+                  "metric": "550 l"
+                },
+                {
+                  "label": "Cirkulationskapacitet",
+                  "metric": "2,400 l/min"
+                },
+                {
+                  "label": "Vattenanslutning",
+                  "metric": "BSP 1½\""
+                },
+                {
+                  "label": "Omrörarens kapacitet",
+                  "metric": "800 l"
+                }
+              ]
+            },
+            {
+              "title": "Elektriska data",
+              "rows": [
+                {
+                  "label": "Spänning",
+                  "metric": "3x 400/460"
+                },
+                {
+                  "label": "Frekvens",
+                  "metric": "50 / 60 Hz"
+                },
+                {
+                  "label": "Märkeffekt",
+                  "metric": "19.0 / 22.0 kW"
+                }
+              ]
+            },
+            {
+              "title": "Vikt och mått",
+              "rows": [
+                {
+                  "label": "Total vikt",
+                  "metric": "1,620 kg"
+                },
+                {
+                  "label": "Bredd",
+                  "metric": "1,980 mm"
+                },
+                {
+                  "label": "Höjd",
+                  "metric": "2,098 mm"
+                },
+                {
+                  "label": "Längd",
+                  "metric": "2,294 mm"
+                }
+              ]
+            }
+          ],
+          "note": "1: Vatten/cement-tal = 1",
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Standard- och tillvalsutrustning",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Ingår som standard (Injekteringspump): Manuell tryck- och flödesreglering",
+            "Ingår som standard (Injekteringspump): Oljenivå- och temperaturgivare",
+            "Tillval (Injekteringspump): Övertrycksventil injekteringspump - omrörare, manuell",
+            "Tillval (Injekteringspump): Lågtrycksreglerpatron",
+            "Tillval (Blandare / omrörare): Extra blandningsenhet (rekommenderas vid vct &lt; 0,45)",
+            "Tillval (Blandare / omrörare): Automatisk vattenmätare 1½\"",
+            "Tillval (Styrning): Fjärrstyrning med 50 m kabel, PÅ/AV",
+            "Tillval (Styrning): P/Q-registrering (tryck/flöde)",
+            "Styrning: PLC med slagräknare",
+            "Styrning: Låsbar huvudbrytare, nödstopp",
+            "Styrning: Blandare PÅ/AV",
+            "Styrning: Omrörare PÅ/AV",
+            "Styrning: Pump PÅ/AV"
+          ],
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 2,
+          "more": false,
+          "items": [
+            {
+              "title": "Pumpprestanda",
+              "image": "/assets/img/haeny-ic1400-725v-chart.webp",
+              "alt": "Pumpprestanda IC 1400/725",
+              "width": 1052,
+              "height": 1229
+            },
+            {
+              "title": "Mått och ritning",
+              "image": "/assets/img/haeny-ic1400-725v-dim.webp",
+              "alt": "Mått och ritning IC 1400/725",
+              "width": 1824,
+              "height": 1552
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Broschyr IC 1400/725 (PDF, engelska)",
+          "href": "/assets/docs/haeny-ic1400-725v-brochure-en.pdf",
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Kontakta oss</a> för pris, leveranstid eller hjälp att välja rätt modell.",
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<small>Uppgifterna är hämtade ur tillverkarens broschyrer (engelska).</small>",
+          "gen": true
+        },
+        {
+          "type": "related",
+          "title": "Se även",
+          "items": [
+            {
+              "href": "/produkter/haeny/manuella-pumpar",
+              "mutual": false
+            },
+            {
+              "href": "/produkter/haeny/manuella-pumpar/ic-1400-712v"
+            },
+            {
+              "href": "/produkter/haeny/manuella-pumpar/ic-1400-726v"
+            }
+          ],
+          "gen": true
+        }
+      ]
+    },
+    "en": {
+      "title": "Häny IC 1400/725",
+      "h1": "Häny IC 1400/725",
+      "description": "Compact Grout Plant IC 1400/725. The compact grout plants consist of the proven, standard Häny components of a mixer, agitator, and grout pump. This setup is suitable for a wide range of applications ",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "HÄNY",
+          "href": "/produkter/haeny",
+          "width": 832,
+          "height": 143,
+          "src": "/assets/img/haeny-1.webp",
+          "gen": true
+        },
+        {
+          "type": "columns",
+          "ratio": "40-60",
+          "left": [
+            {
+              "type": "image",
+              "alt": "Compact Grout Plant IC 1400/725",
+              "width": 1084,
+              "height": 954,
+              "src": "/assets/img/haeny-ic1400-725v-model.webp"
+            }
+          ],
+          "right": [
+            {
+              "type": "text",
+              "html": "The compact grout plants consist of the proven, standard Häny components of a mixer, agitator, and grout pump. This setup is suitable for a wide range of applications such as anchoring, sleeve pipe, contact, and backfill grouting. For higher outputs and increased quality control, the plants are also available in semi-automated and fully automated versions."
+            },
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "Extremely compact mixing and injection system with central lifting point for easy transport and minimum installation time",
+                "High productivity due to ergonomically positioned operating elements",
+                "High reliability and low-maintenance operation with good accessibility to the wear parts",
+                "Independent of pressure ratios, the suction stroke is always carried out at high velocity in order to flush the valves and to avoid clogging"
+              ]
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Typical applications",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Grouting of anchors, soil nails, tension cables as well as for sleeve pipe, rock, and contact injections",
+            "Preparation and pumping of bentonite suspensions for pipe jacking and microtunneling"
+          ],
+          "gen": true
+        },
+        {
+          "type": "datasheet",
+          "title": "Technical data",
+          "tagline": "Compact Grout Plant IC 1400/725",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Grout pump (ZMP 725)",
+              "rows": [
+                {
+                  "label": "Capacity IC",
+                  "metric": "8 m³/h"
+                },
+                {
+                  "label": "Max. pressure",
+                  "metric": "100 bar"
+                },
+                {
+                  "label": "Max. aggregate size",
+                  "metric": "8 mm"
+                },
+                {
+                  "label": "Hydraulic tank",
+                  "metric": "140 l"
+                },
+                {
+                  "label": "Pump module",
+                  "metric": "double"
+                },
+                {
+                  "label": "Cooling water flow rate",
+                  "metric": "5–6 l/min"
+                },
+                {
+                  "label": "Cooling water connection",
+                  "metric": "BSP ½\""
+                },
+                {
+                  "label": "Pressure connection",
+                  "metric": "BSP 2\""
+                }
+              ]
+            },
+            {
+              "title": "Mixer / Agitator",
+              "rows": [
+                {
+                  "label": "Usable content mixer",
+                  "metric": "550 l"
+                },
+                {
+                  "label": "Circulation capacity",
+                  "metric": "2,400 l/min"
+                },
+                {
+                  "label": "Water connection",
+                  "metric": "BSP 1½\""
+                },
+                {
+                  "label": "Holding capacity agitator",
+                  "metric": "800 l"
+                }
+              ]
+            },
+            {
+              "title": "Electrical data",
+              "rows": [
+                {
+                  "label": "Voltage",
+                  "metric": "3x 400/460"
+                },
+                {
+                  "label": "Frequency",
+                  "metric": "50 / 60 Hz"
+                },
+                {
+                  "label": "Nominal power",
+                  "metric": "19.0 / 22.0 kW"
+                }
+              ]
+            },
+            {
+              "title": "Weight and dimensions",
+              "rows": [
+                {
+                  "label": "Total weight",
+                  "metric": "1,620 kg"
+                },
+                {
+                  "label": "Width",
+                  "metric": "1,980 mm"
+                },
+                {
+                  "label": "Height",
+                  "metric": "2,098 mm"
+                },
+                {
+                  "label": "Length",
+                  "metric": "2,294 mm"
+                }
+              ]
+            }
+          ],
+          "note": "1: Water to cement ratio = 1",
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Standard and optional equipment",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Included as standard (Grout pump): Manual pressure and flow control",
+            "Included as standard (Grout pump): Oil level and temperature sensor",
+            "Optional (Grout pump): Pressure relief valve Grout pump - Agitator, manual",
+            "Optional (Grout pump): Low pressure control cartridge",
+            "Optional (Mixer / Agitator): Auxiliary mixing unit (recommended for W/C &lt; 0.45)",
+            "Optional (Mixer / Agitator): Automatic water meter 1½\"",
+            "Optional (Control): Remote control with 50 m cable, ON-OFF",
+            "Optional (Control): P/Q-Registration",
+            "Control: PLC with stroke counter",
+            "Control: Lockable main switch, emergency stop",
+            "Control: Mixer ON-OFF",
+            "Control: Agitator ON-OFF",
+            "Control: Pump ON-OFF"
+          ],
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 2,
+          "more": false,
+          "items": [
+            {
+              "title": "Pump performance",
+              "image": "/assets/img/haeny-ic1400-725v-chart.webp",
+              "alt": "Pump performance IC 1400/725",
+              "width": 1052,
+              "height": 1229
+            },
+            {
+              "title": "Dimensions and drawing",
+              "image": "/assets/img/haeny-ic1400-725v-dim.webp",
+              "alt": "Dimensions and drawing IC 1400/725",
+              "width": 1824,
+              "height": 1552
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Brochure IC 1400/725 (PDF)",
+          "href": "/assets/docs/haeny-ic1400-725v-brochure-en.pdf",
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Contact us</a> for price, delivery time or help choosing the right model.",
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<small>Information taken from the manufacturer's brochures.</small>",
+          "gen": true
+        },
+        {
+          "type": "related",
+          "title": "See also",
+          "items": [
+            {
+              "href": "/produkter/haeny/manuella-pumpar",
+              "mutual": false
+            },
+            {
+              "href": "/produkter/haeny/manuella-pumpar/ic-1400-712v"
+            },
+            {
+              "href": "/produkter/haeny/manuella-pumpar/ic-1400-726v"
+            }
+          ],
+          "gen": true
+        }
+      ]
+    },
+    "es": {
+      "title": "Häny IC 1400/725",
+      "h1": "Häny IC 1400/725",
+      "description": "Planta de inyección compacta IC 1400/725. Las plantas de inyección compactas constan de los componentes estándar probados de Häny: mezcladora, agitador y bomba de inyección. Esta configuración es adec",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "HÄNY",
+          "href": "/produkter/haeny",
+          "width": 832,
+          "height": 143,
+          "src": "/assets/img/haeny-1.webp",
+          "gen": true
+        },
+        {
+          "type": "columns",
+          "ratio": "40-60",
+          "left": [
+            {
+              "type": "image",
+              "alt": "Planta de inyección compacta IC 1400/725",
+              "width": 1084,
+              "height": 954,
+              "src": "/assets/img/haeny-ic1400-725v-model.webp"
+            }
+          ],
+          "right": [
+            {
+              "type": "text",
+              "html": "Las plantas de inyección compactas constan de los componentes estándar probados de Häny: mezcladora, agitador y bomba de inyección. Esta configuración es adecuada para múltiples aplicaciones, como anclajes, tubo manguito, inyecciones de contacto y de relleno. Para mayores producciones y un mejor control de calidad, las plantas también están disponibles en versiones semiautomáticas y totalmente automáticas."
+            },
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "Sistema de mezcla e inyección extremadamente compacto con punto de elevación central para un transporte sencillo y un tiempo de instalación mínimo",
+                "Alta productividad gracias a los elementos de mando colocados de forma ergonómica",
+                "Alta fiabilidad y bajo mantenimiento con buen acceso a las piezas de desgaste",
+                "Con independencia de las presiones, la carrera de aspiración se realiza siempre a gran velocidad para enjuagar las válvulas y evitar obstrucciones"
+              ]
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Aplicaciones típicas",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Inyección de anclajes, clavos de suelo y cables tensores, así como inyecciones con tubo manguito, en roca y de contacto",
+            "Preparación y bombeo de suspensiones de bentonita para el hincado de tuberías y microtúneles"
+          ],
+          "gen": true
+        },
+        {
+          "type": "datasheet",
+          "title": "Datos técnicos",
+          "tagline": "Planta de inyección compacta IC 1400/725",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Bomba de inyección (ZMP 725)",
+              "rows": [
+                {
+                  "label": "Capacidad IC",
+                  "metric": "8 m³/h"
+                },
+                {
+                  "label": "Presión máx.",
+                  "metric": "100 bar"
+                },
+                {
+                  "label": "Tamaño máx. de partícula",
+                  "metric": "8 mm"
+                },
+                {
+                  "label": "Depósito hidráulico",
+                  "metric": "140 l"
+                },
+                {
+                  "label": "Módulo de bomba",
+                  "metric": "doble"
+                },
+                {
+                  "label": "Caudal de agua de refrigeración",
+                  "metric": "5–6 l/min"
+                },
+                {
+                  "label": "Conexión de agua de refrigeración",
+                  "metric": "BSP ½\""
+                },
+                {
+                  "label": "Conexión de presión",
+                  "metric": "BSP 2\""
+                }
+              ]
+            },
+            {
+              "title": "Mezcladora / agitador",
+              "rows": [
+                {
+                  "label": "Volumen útil de la mezcladora",
+                  "metric": "550 l"
+                },
+                {
+                  "label": "Capacidad de circulación",
+                  "metric": "2,400 l/min"
+                },
+                {
+                  "label": "Conexión de agua",
+                  "metric": "BSP 1½\""
+                },
+                {
+                  "label": "Capacidad de retención del agitador",
+                  "metric": "800 l"
+                }
+              ]
+            },
+            {
+              "title": "Datos eléctricos",
+              "rows": [
+                {
+                  "label": "Tensión",
+                  "metric": "3x 400/460"
+                },
+                {
+                  "label": "Frecuencia",
+                  "metric": "50 / 60 Hz"
+                },
+                {
+                  "label": "Potencia nominal",
+                  "metric": "19.0 / 22.0 kW"
+                }
+              ]
+            },
+            {
+              "title": "Peso y dimensiones",
+              "rows": [
+                {
+                  "label": "Peso total",
+                  "metric": "1,620 kg"
+                },
+                {
+                  "label": "Anchura",
+                  "metric": "1,980 mm"
+                },
+                {
+                  "label": "Altura",
+                  "metric": "2,098 mm"
+                },
+                {
+                  "label": "Longitud",
+                  "metric": "2,294 mm"
+                }
+              ]
+            }
+          ],
+          "note": "1: Relación agua/cemento = 1",
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Equipamiento estándar y opcional",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Incluido de serie (Bomba de inyección): Control manual de presión y caudal",
+            "Incluido de serie (Bomba de inyección): Sensor de nivel y temperatura del aceite",
+            "Opcional (Bomba de inyección): Válvula de alivio de presión bomba de inyección - agitador, manual",
+            "Opcional (Bomba de inyección): Cartucho de regulación de baja presión",
+            "Opcional (Mezcladora / agitador): Unidad de mezcla auxiliar (recomendada para A/C &lt; 0,45)",
+            "Opcional (Mezcladora / agitador): Contador de agua automático 1½\"",
+            "Opcional (Control): Mando a distancia con cable de 50 m, ON/OFF",
+            "Opcional (Control): Registro P/Q (presión/caudal)",
+            "Control: PLC con contador de carreras",
+            "Control: Interruptor principal con candado, parada de emergencia",
+            "Control: Mezcladora ON/OFF",
+            "Control: Agitador ON/OFF",
+            "Control: Bomba ON/OFF"
+          ],
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 2,
+          "more": false,
+          "items": [
+            {
+              "title": "Rendimiento de la bomba",
+              "image": "/assets/img/haeny-ic1400-725v-chart.webp",
+              "alt": "Rendimiento de la bomba IC 1400/725",
+              "width": 1052,
+              "height": 1229
+            },
+            {
+              "title": "Dimensiones y plano",
+              "image": "/assets/img/haeny-ic1400-725v-dim.webp",
+              "alt": "Dimensiones y plano IC 1400/725",
+              "width": 1824,
+              "height": 1552
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Folleto IC 1400/725 (PDF, inglés)",
+          "href": "/assets/docs/haeny-ic1400-725v-brochure-en.pdf",
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Contáctenos</a> para precio, plazo de entrega o ayuda para elegir el modelo adecuado.",
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<small>Información tomada de los folletos del fabricante (en inglés).</small>",
+          "gen": true
+        },
+        {
+          "type": "related",
+          "title": "Véase también",
+          "items": [
+            {
+              "href": "/produkter/haeny/manuella-pumpar",
+              "mutual": false
+            },
+            {
+              "href": "/produkter/haeny/manuella-pumpar/ic-1400-712v"
+            },
+            {
+              "href": "/produkter/haeny/manuella-pumpar/ic-1400-726v"
+            }
+          ],
+          "gen": true
+        }
+      ]
+    },
+    "no": {
+      "title": "Häny IC 1400/725",
+      "h1": "Häny IC 1400/725",
+      "description": "Kompakt injeksjonsanlegg IC 1400/725. De kompakte injeksjonsanleggene består av Hänys velprøvde standardkomponenter: mikser, røreverk og injeksjonspumpe. Oppsettet passer til mange bruksområder, som a",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "HÄNY",
+          "href": "/produkter/haeny",
+          "width": 832,
+          "height": 143,
+          "src": "/assets/img/haeny-1.webp",
+          "gen": true
+        },
+        {
+          "type": "columns",
+          "ratio": "40-60",
+          "left": [
+            {
+              "type": "image",
+              "alt": "Kompakt injeksjonsanlegg IC 1400/725",
+              "width": 1084,
+              "height": 954,
+              "src": "/assets/img/haeny-ic1400-725v-model.webp"
+            }
+          ],
+          "right": [
+            {
+              "type": "text",
+              "html": "De kompakte injeksjonsanleggene består av Hänys velprøvde standardkomponenter: mikser, røreverk og injeksjonspumpe. Oppsettet passer til mange bruksområder, som anker-, mansjettrør-, kontakt- og utfyllingsinjeksjon. For høyere ytelse og bedre kvalitetskontroll finnes anleggene også i halvautomatiske og helautomatiske versjoner."
+            },
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "Ekstremt kompakt blande- og injeksjonssystem med sentralt løftepunkt for enkel transport og minimal installasjonstid",
+                "Høy produktivitet takket være ergonomisk plasserte betjeningselementer",
+                "Høy pålitelighet og lite vedlikehold med god tilgang til slitedelene",
+                "Uavhengig av trykkforholdene skjer sugeslaget alltid med høy hastighet for å skylle ventilene og unngå tilstopping"
+              ]
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Bruksområder",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Injeksjon av ankere, jordnagler og spennkabler samt mansjettrør-, fjell- og kontaktinjeksjon",
+            "Klargjøring og pumping av bentonittsuspensjoner for rørpressing og mikrotunnelering"
+          ],
+          "gen": true
+        },
+        {
+          "type": "datasheet",
+          "title": "Tekniske data",
+          "tagline": "Kompakt injeksjonsanlegg IC 1400/725",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Injeksjonspumpe (ZMP 725)",
+              "rows": [
+                {
+                  "label": "Kapasitet IC",
+                  "metric": "8 m³/h"
+                },
+                {
+                  "label": "Maks. trykk",
+                  "metric": "100 bar"
+                },
+                {
+                  "label": "Maks. kornstørrelse",
+                  "metric": "8 mm"
+                },
+                {
+                  "label": "Hydrauliktank",
+                  "metric": "140 l"
+                },
+                {
+                  "label": "Pumpemodul",
+                  "metric": "dobbel"
+                },
+                {
+                  "label": "Kjølevannstrøm",
+                  "metric": "5–6 l/min"
+                },
+                {
+                  "label": "Kjølevanntilkobling",
+                  "metric": "BSP ½\""
+                },
+                {
+                  "label": "Trykktilkobling",
+                  "metric": "BSP 2\""
+                }
+              ]
+            },
+            {
+              "title": "Mikser / røreverk",
+              "rows": [
+                {
+                  "label": "Nyttbart volum mikser",
+                  "metric": "550 l"
+                },
+                {
+                  "label": "Sirkulasjonskapasitet",
+                  "metric": "2,400 l/min"
+                },
+                {
+                  "label": "Vanntilkobling",
+                  "metric": "BSP 1½\""
+                },
+                {
+                  "label": "Røreverkets kapasitet",
+                  "metric": "800 l"
+                }
+              ]
+            },
+            {
+              "title": "Elektriske data",
+              "rows": [
+                {
+                  "label": "Spenning",
+                  "metric": "3x 400/460"
+                },
+                {
+                  "label": "Frekvens",
+                  "metric": "50 / 60 Hz"
+                },
+                {
+                  "label": "Merkeeffekt",
+                  "metric": "19.0 / 22.0 kW"
+                }
+              ]
+            },
+            {
+              "title": "Vekt og mål",
+              "rows": [
+                {
+                  "label": "Total vekt",
+                  "metric": "1,620 kg"
+                },
+                {
+                  "label": "Bredde",
+                  "metric": "1,980 mm"
+                },
+                {
+                  "label": "Høyde",
+                  "metric": "2,098 mm"
+                },
+                {
+                  "label": "Lengde",
+                  "metric": "2,294 mm"
+                }
+              ]
+            }
+          ],
+          "note": "1: Vann/sement-tall = 1",
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Standard- og tilvalgsutstyr",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Inkludert som standard (Injeksjonspumpe): Manuell trykk- og strømningsregulering",
+            "Inkludert som standard (Injeksjonspumpe): Oljenivå- og temperaturføler",
+            "Tilvalg (Injeksjonspumpe): Trykkavlastningsventil injeksjonspumpe - røreverk, manuell",
+            "Tilvalg (Injeksjonspumpe): Lavtrykks reguleringspatron",
+            "Tilvalg (Mikser / røreverk): Ekstra blandeenhet (anbefalt ved v/s &lt; 0,45)",
+            "Tilvalg (Mikser / røreverk): Automatisk vannmåler 1½\"",
+            "Tilvalg (Styring): Fjernkontroll med 50 m kabel, PÅ/AV",
+            "Tilvalg (Styring): P/Q-registrering (trykk/strømning)",
+            "Styring: PLS med slagteller",
+            "Styring: Låsbar hovedbryter, nødstopp",
+            "Styring: Mikser PÅ/AV",
+            "Styring: Røreverk PÅ/AV",
+            "Styring: Pumpe PÅ/AV"
+          ],
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 2,
+          "more": false,
+          "items": [
+            {
+              "title": "Pumpeytelse",
+              "image": "/assets/img/haeny-ic1400-725v-chart.webp",
+              "alt": "Pumpeytelse IC 1400/725",
+              "width": 1052,
+              "height": 1229
+            },
+            {
+              "title": "Mål og tegning",
+              "image": "/assets/img/haeny-ic1400-725v-dim.webp",
+              "alt": "Mål og tegning IC 1400/725",
+              "width": 1824,
+              "height": 1552
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Brosjyre IC 1400/725 (PDF, engelsk)",
+          "href": "/assets/docs/haeny-ic1400-725v-brochure-en.pdf",
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Kontakt oss</a> for pris, leveringstid eller hjelp til å velge riktig modell.",
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<small>Opplysningene er hentet fra produsentens brosjyrer (engelsk).</small>",
+          "gen": true
+        },
+        {
+          "type": "related",
+          "title": "Se også",
+          "items": [
+            {
+              "href": "/produkter/haeny/manuella-pumpar",
+              "mutual": false
+            },
+            {
+              "href": "/produkter/haeny/manuella-pumpar/ic-1400-712v"
+            },
+            {
+              "href": "/produkter/haeny/manuella-pumpar/ic-1400-726v"
+            }
+          ],
+          "gen": true
+        }
+      ]
+    }
+  }
+}

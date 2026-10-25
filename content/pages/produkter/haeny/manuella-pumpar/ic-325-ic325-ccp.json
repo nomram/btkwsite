@@ -1,6 +1,6 @@
 {
   "path": "/produkter/haeny/manuella-pumpar/ic-325-ic325-ccp",
-  "updated": "2026-10-10",
+  "updated": "2026-10-25",
   "template": "product",
   "order": 1,
   "published": true,
@@ -68,6 +68,165 @@
           "text": "Broschyr",
           "href": "/assets/docs/haeny-manuella-pumpar-ic-325-ic325-ccp-broschyr-eng.pdf",
           "driveId": "1fNL77EuIJqvhxDTVYxPL6AbzUiSP-Ui1"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Teknisk data: IC 325",
+          "gen": true
+        },
+        {
+          "type": "datasheet",
+          "title": "Teknisk data",
+          "tagline": "Kompakt injekteringsanläggning IC 325",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Injekteringspump (ZMP 625)",
+              "rows": [
+                {
+                  "label": "Kapacitet IC",
+                  "metric": "2 m³/h"
+                },
+                {
+                  "label": "Max. tryck",
+                  "metric": "100 bar"
+                },
+                {
+                  "label": "Max. kornstorlek",
+                  "metric": "5 mm"
+                },
+                {
+                  "label": "Hydraultank",
+                  "metric": "52 l"
+                },
+                {
+                  "label": "Pumpmodul",
+                  "metric": "dubbel"
+                },
+                {
+                  "label": "Kylvattenflöde",
+                  "metric": "2–3 l/min"
+                },
+                {
+                  "label": "Kylvattenanslutning",
+                  "metric": "BSP ⅜\""
+                },
+                {
+                  "label": "Tryckanslutning",
+                  "metric": "BSP 1\""
+                }
+              ]
+            },
+            {
+              "title": "Blandare / omrörare",
+              "rows": [
+                {
+                  "label": "Användbar volym blandare",
+                  "metric": "100 l"
+                },
+                {
+                  "label": "Cirkulationskapacitet",
+                  "metric": "540 l/min"
+                },
+                {
+                  "label": "Vattenanslutning",
+                  "metric": "BSP ¾\""
+                },
+                {
+                  "label": "Omrörarens kapacitet",
+                  "metric": "150 l"
+                }
+              ]
+            },
+            {
+              "title": "Elektriska data",
+              "rows": [
+                {
+                  "label": "Spänning",
+                  "metric": "3x 400/460"
+                },
+                {
+                  "label": "Frekvens",
+                  "metric": "50 / 60 Hz"
+                },
+                {
+                  "label": "Märkeffekt",
+                  "metric": "9.1 / 10.5 kW"
+                }
+              ]
+            },
+            {
+              "title": "Vikt och mått",
+              "rows": [
+                {
+                  "label": "Total vikt",
+                  "metric": "700 kg"
+                },
+                {
+                  "label": "Bredd",
+                  "metric": "800 mm"
+                },
+                {
+                  "label": "Höjd",
+                  "metric": "1,658 mm"
+                },
+                {
+                  "label": "Längd",
+                  "metric": "1,600 mm"
+                }
+              ]
+            }
+          ],
+          "note": "1: Vatten/cement-tal = 1",
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Standard- och tillvalsutrustning",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Ingår som standard (Injekteringspump): Manuell tryck- och flödesreglering",
+            "Ingår som standard (Injekteringspump): Oljenivåindikator med termometer",
+            "Tillval (Blandare / omrörare): Extra blandningsenhet (rekommenderas vid vct &lt; 0,45)",
+            "Tillval (Blandare / omrörare): Automatisk vattenmätare",
+            "Tillval (Styrning): Fjärrstyrning med 50 m kabel, PÅ/AV",
+            "Tillval (Styrning): P/Q-registrering (tryck/flöde)",
+            "Styrning: PLC med slagräknare",
+            "Styrning: Låsbar huvudbrytare, nödstopp",
+            "Styrning: Blandare PÅ/AV",
+            "Styrning: Omrörare PÅ/AV",
+            "Styrning: Pump PÅ/AV"
+          ],
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 2,
+          "more": false,
+          "items": [
+            {
+              "title": "Pumpprestanda",
+              "image": "/assets/img/haeny-ic325-chart.webp",
+              "alt": "Pumpprestanda IC 325",
+              "width": 1053,
+              "height": 1229
+            },
+            {
+              "title": "Mått och ritning",
+              "image": "/assets/img/haeny-ic325-dim.webp",
+              "alt": "Mått och ritning IC 325",
+              "width": 1509,
+              "height": 2015
+            }
+          ],
+          "gen": true
         },
         {
           "type": "image",
@@ -151,6 +310,203 @@
         {
           "type": "text",
           "html": "På videon bredvid kan du få mer information kring funktionaliteten av IC325 CCP av Hänys specialist. Klicka på videon och titta på vår kanal på YouTube."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Teknisk data: IC 325CCP",
+          "gen": true
+        },
+        {
+          "type": "datasheet",
+          "title": "Teknisk data",
+          "tagline": "Kompakt injekteringsanläggning IC 325CCP",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Injekteringspump (ZMP 625)",
+              "rows": [
+                {
+                  "label": "Kapacitet IC",
+                  "metric": "2 m³/h"
+                },
+                {
+                  "label": "Max. tryck",
+                  "metric": "100 bar"
+                },
+                {
+                  "label": "Max. kornstorlek",
+                  "metric": "5 mm"
+                },
+                {
+                  "label": "Hydraultank",
+                  "metric": "52 l"
+                },
+                {
+                  "label": "Pumpmodul",
+                  "metric": "dubbel"
+                },
+                {
+                  "label": "Kylvattenflöde",
+                  "metric": "2–3 l/min"
+                },
+                {
+                  "label": "Kylvattenanslutning",
+                  "metric": "BSP ⅜\""
+                },
+                {
+                  "label": "Tryckanslutning",
+                  "metric": "BSP 1\""
+                }
+              ]
+            },
+            {
+              "title": "Blandare / omrörare",
+              "rows": [
+                {
+                  "label": "Användbar volym blandare",
+                  "metric": "100 l"
+                },
+                {
+                  "label": "Cirkulationskapacitet",
+                  "metric": "540 l/min"
+                },
+                {
+                  "label": "Vattenanslutning",
+                  "metric": "BSP ¾\""
+                },
+                {
+                  "label": "Omrörarens kapacitet",
+                  "metric": "150 l"
+                }
+              ]
+            },
+            {
+              "title": "PU-injekteringspump",
+              "rows": [
+                {
+                  "label": "Max. kapacitet",
+                  "metric": "14 l/min"
+                },
+                {
+                  "label": "Max. tryck",
+                  "metric": "195 bar"
+                },
+                {
+                  "label": "Blandningsförhållande",
+                  "metric": "1:1"
+                },
+                {
+                  "label": "Tryckförhållande",
+                  "metric": "30:1"
+                }
+              ]
+            },
+            {
+              "title": "Vikt och mått",
+              "rows": [
+                {
+                  "label": "Ungefärlig vikt",
+                  "metric": "840 kg"
+                },
+                {
+                  "label": "Bredd",
+                  "metric": "885 mm"
+                },
+                {
+                  "label": "Höjd",
+                  "metric": "1,590 mm"
+                },
+                {
+                  "label": "Längd",
+                  "metric": "2,110 mm"
+                }
+              ]
+            },
+            {
+              "title": "Elektriska data",
+              "rows": [
+                {
+                  "label": "Spänning",
+                  "metric": "3x 400/460"
+                },
+                {
+                  "label": "Frekvens",
+                  "metric": "50 / 60 Hz"
+                },
+                {
+                  "label": "Märkeffekt",
+                  "metric": "9.1 / 10.5 kW"
+                }
+              ]
+            },
+            {
+              "title": "Pneumatiska data",
+              "rows": [
+                {
+                  "label": "Max. lufttryck in",
+                  "metric": "6.5 bar"
+                },
+                {
+                  "label": "Max. luftförbrukning",
+                  "metric": "2500 l/min"
+                },
+                {
+                  "label": "Luftanslutning",
+                  "metric": "BSP 1\""
+                }
+              ]
+            }
+          ],
+          "note": "1: Vatten/cement-tal = 1",
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Standard- och tillvalsutrustning",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Ingår som standard (Injekteringspump): Manuell tryck- och flödesreglering",
+            "Ingår som standard (Injekteringspump): Oljenivåindikator med termometer",
+            "Tillval (Blandare / omrörare): Extra blandningsenhet (rekommenderas vid vct &lt; 0,45)",
+            "Tillval (Blandare / omrörare): Automatisk vattenmätare",
+            "Styrning: PLC med slagräknare",
+            "Styrning: Låsbar huvudbrytare, nödstopp",
+            "Styrning: Blandare PÅ/AV",
+            "Styrning: Omrörare PÅ/AV",
+            "Styrning: Pump PÅ/AV",
+            "CCP-styrenhet: Steglös styrning av blandningsförhållandet 0 till 30 %",
+            "CCP-styrenhet: P-Q-registrering av cementsuspension och polyuretan"
+          ],
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 2,
+          "more": false,
+          "items": [
+            {
+              "title": "Pumpprestanda",
+              "image": "/assets/img/haeny-ccp-chart.webp",
+              "alt": "Pumpprestanda IC 325CCP",
+              "width": 1053,
+              "height": 1229
+            },
+            {
+              "title": "Mått och ritning",
+              "image": "/assets/img/haeny-ccp-dim.webp",
+              "alt": "Mått och ritning IC 325CCP",
+              "width": 1278,
+              "height": 1856
+            }
+          ],
+          "gen": true
         }
       ]
     },
@@ -214,6 +570,165 @@
           "text": "Brochure",
           "href": "/assets/docs/haeny-manuella-pumpar-ic-325-ic325-ccp-broschyr-eng.pdf",
           "driveId": "1fNL77EuIJqvhxDTVYxPL6AbzUiSP-Ui1"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Technical data: IC 325",
+          "gen": true
+        },
+        {
+          "type": "datasheet",
+          "title": "Technical data",
+          "tagline": "Compact Grout Plant IC 325",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Grout pump (ZMP 625)",
+              "rows": [
+                {
+                  "label": "Capacity IC",
+                  "metric": "2 m³/h"
+                },
+                {
+                  "label": "Max. pressure",
+                  "metric": "100 bar"
+                },
+                {
+                  "label": "Max. aggregate size",
+                  "metric": "5 mm"
+                },
+                {
+                  "label": "Hydraulic tank",
+                  "metric": "52 l"
+                },
+                {
+                  "label": "Pump module",
+                  "metric": "double"
+                },
+                {
+                  "label": "Cooling water flow rate",
+                  "metric": "2–3 l/min"
+                },
+                {
+                  "label": "Cooling water connection",
+                  "metric": "BSP ⅜\""
+                },
+                {
+                  "label": "Pressure connection",
+                  "metric": "BSP 1\""
+                }
+              ]
+            },
+            {
+              "title": "Mixer / Agitator",
+              "rows": [
+                {
+                  "label": "Usable content mixer",
+                  "metric": "100 l"
+                },
+                {
+                  "label": "Circulation capacity",
+                  "metric": "540 l/min"
+                },
+                {
+                  "label": "Water connection",
+                  "metric": "BSP ¾\""
+                },
+                {
+                  "label": "Holding capacity agitator",
+                  "metric": "150 l"
+                }
+              ]
+            },
+            {
+              "title": "Electrical data",
+              "rows": [
+                {
+                  "label": "Voltage",
+                  "metric": "3x 400/460"
+                },
+                {
+                  "label": "Frequency",
+                  "metric": "50 / 60 Hz"
+                },
+                {
+                  "label": "Nominal power",
+                  "metric": "9.1 / 10.5 kW"
+                }
+              ]
+            },
+            {
+              "title": "Weight and dimensions",
+              "rows": [
+                {
+                  "label": "Total weight",
+                  "metric": "700 kg"
+                },
+                {
+                  "label": "Width",
+                  "metric": "800 mm"
+                },
+                {
+                  "label": "Height",
+                  "metric": "1,658 mm"
+                },
+                {
+                  "label": "Length",
+                  "metric": "1,600 mm"
+                }
+              ]
+            }
+          ],
+          "note": "1: Water to cement ratio = 1",
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Standard and optional equipment",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Included as standard (Grout pump): Manual pressure and flow control",
+            "Included as standard (Grout pump): Oil level indicator with thermometer",
+            "Optional (Mixer / Agitator): Auxiliary mixing unit (recommended for W/C &lt; 0.45)",
+            "Optional (Mixer / Agitator): Automatic water meter",
+            "Optional (Control): Remote control with 50 m cable, ON-OFF",
+            "Optional (Control): P/Q-Registration",
+            "Control: PLC with stroke counter",
+            "Control: Lockable main switch, emergency stop",
+            "Control: Mixer ON-OFF",
+            "Control: Agitator ON-OFF",
+            "Control: Pump ON-OFF"
+          ],
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 2,
+          "more": false,
+          "items": [
+            {
+              "title": "Pump performance",
+              "image": "/assets/img/haeny-ic325-chart.webp",
+              "alt": "Pump performance IC 325",
+              "width": 1053,
+              "height": 1229
+            },
+            {
+              "title": "Dimensions and drawing",
+              "image": "/assets/img/haeny-ic325-dim.webp",
+              "alt": "Dimensions and drawing IC 325",
+              "width": 1509,
+              "height": 2015
+            }
+          ],
+          "gen": true
         },
         {
           "type": "image",
@@ -297,6 +812,203 @@
         {
           "type": "text",
           "html": "In the video next to this text you can get more information about the functionality of the IC325 CCP from Häny’s specialist. Click the video and watch it on our YouTube channel."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Technical data: IC 325CCP",
+          "gen": true
+        },
+        {
+          "type": "datasheet",
+          "title": "Technical data",
+          "tagline": "Compact Grout Plant IC 325CCP",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Grout pump (ZMP 625)",
+              "rows": [
+                {
+                  "label": "Capacity IC",
+                  "metric": "2 m³/h"
+                },
+                {
+                  "label": "Max. pressure",
+                  "metric": "100 bar"
+                },
+                {
+                  "label": "Max. aggregate size",
+                  "metric": "5 mm"
+                },
+                {
+                  "label": "Hydraulic tank",
+                  "metric": "52 l"
+                },
+                {
+                  "label": "Pump module",
+                  "metric": "double"
+                },
+                {
+                  "label": "Cooling water flow rate",
+                  "metric": "2–3 l/min"
+                },
+                {
+                  "label": "Cooling water connection",
+                  "metric": "BSP ⅜\""
+                },
+                {
+                  "label": "Pressure connection",
+                  "metric": "BSP 1\""
+                }
+              ]
+            },
+            {
+              "title": "Mixer / Agitator",
+              "rows": [
+                {
+                  "label": "Usable content mixer",
+                  "metric": "100 l"
+                },
+                {
+                  "label": "Circulation capacity",
+                  "metric": "540 l/min"
+                },
+                {
+                  "label": "Water connection",
+                  "metric": "BSP ¾\""
+                },
+                {
+                  "label": "Holding capacity agitator",
+                  "metric": "150 l"
+                }
+              ]
+            },
+            {
+              "title": "PU injection pump",
+              "rows": [
+                {
+                  "label": "Max. capacity",
+                  "metric": "14 l/min"
+                },
+                {
+                  "label": "Max. pressure",
+                  "metric": "195 bar"
+                },
+                {
+                  "label": "Mixing ratio",
+                  "metric": "1:1"
+                },
+                {
+                  "label": "Pressure ratio",
+                  "metric": "30:1"
+                }
+              ]
+            },
+            {
+              "title": "Weight and dimensions",
+              "rows": [
+                {
+                  "label": "Approx. weight",
+                  "metric": "840 kg"
+                },
+                {
+                  "label": "Width",
+                  "metric": "885 mm"
+                },
+                {
+                  "label": "Height",
+                  "metric": "1,590 mm"
+                },
+                {
+                  "label": "Length",
+                  "metric": "2,110 mm"
+                }
+              ]
+            },
+            {
+              "title": "Electrical data",
+              "rows": [
+                {
+                  "label": "Voltage",
+                  "metric": "3x 400/460"
+                },
+                {
+                  "label": "Frequency",
+                  "metric": "50 / 60 Hz"
+                },
+                {
+                  "label": "Nominal power",
+                  "metric": "9.1 / 10.5 kW"
+                }
+              ]
+            },
+            {
+              "title": "Pneumatic data",
+              "rows": [
+                {
+                  "label": "Max. air inlet pressure",
+                  "metric": "6.5 bar"
+                },
+                {
+                  "label": "Max. air consumption",
+                  "metric": "2500 l/min"
+                },
+                {
+                  "label": "Air connection",
+                  "metric": "BSP 1\""
+                }
+              ]
+            }
+          ],
+          "note": "1: Water to cement ratio = 1",
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Standard and optional equipment",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Included as standard (Grout pump): Manual pressure and flow control",
+            "Included as standard (Grout pump): Oil level indicator with thermometer",
+            "Optional (Mixer / Agitator): Auxiliary mixing unit (recommended for W/C &lt; 0.45)",
+            "Optional (Mixer / Agitator): Automatic water meter",
+            "Control: PLC with stroke counter",
+            "Control: Lockable main switch, emergency stop",
+            "Control: Mixer ON-OFF",
+            "Control: Agitator ON-OFF",
+            "Control: Pump ON-OFF",
+            "CCP control unit: Stepless control mixing ratio 0 to 30%",
+            "CCP control unit: P-Q registration Cement suspension &amp; polyurethane"
+          ],
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 2,
+          "more": false,
+          "items": [
+            {
+              "title": "Pump performance",
+              "image": "/assets/img/haeny-ccp-chart.webp",
+              "alt": "Pump performance IC 325CCP",
+              "width": 1053,
+              "height": 1229
+            },
+            {
+              "title": "Dimensions and drawing",
+              "image": "/assets/img/haeny-ccp-dim.webp",
+              "alt": "Dimensions and drawing IC 325CCP",
+              "width": 1278,
+              "height": 1856
+            }
+          ],
+          "gen": true
         }
       ],
       "published": true
@@ -361,6 +1073,165 @@
           "text": "Folleto",
           "href": "/assets/docs/haeny-manuella-pumpar-ic-325-ic325-ccp-broschyr-eng.pdf",
           "driveId": "1fNL77EuIJqvhxDTVYxPL6AbzUiSP-Ui1"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Datos técnicos: IC 325",
+          "gen": true
+        },
+        {
+          "type": "datasheet",
+          "title": "Datos técnicos",
+          "tagline": "Planta de inyección compacta IC 325",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Bomba de inyección (ZMP 625)",
+              "rows": [
+                {
+                  "label": "Capacidad IC",
+                  "metric": "2 m³/h"
+                },
+                {
+                  "label": "Presión máx.",
+                  "metric": "100 bar"
+                },
+                {
+                  "label": "Tamaño máx. de partícula",
+                  "metric": "5 mm"
+                },
+                {
+                  "label": "Depósito hidráulico",
+                  "metric": "52 l"
+                },
+                {
+                  "label": "Módulo de bomba",
+                  "metric": "doble"
+                },
+                {
+                  "label": "Caudal de agua de refrigeración",
+                  "metric": "2–3 l/min"
+                },
+                {
+                  "label": "Conexión de agua de refrigeración",
+                  "metric": "BSP ⅜\""
+                },
+                {
+                  "label": "Conexión de presión",
+                  "metric": "BSP 1\""
+                }
+              ]
+            },
+            {
+              "title": "Mezcladora / agitador",
+              "rows": [
+                {
+                  "label": "Volumen útil de la mezcladora",
+                  "metric": "100 l"
+                },
+                {
+                  "label": "Capacidad de circulación",
+                  "metric": "540 l/min"
+                },
+                {
+                  "label": "Conexión de agua",
+                  "metric": "BSP ¾\""
+                },
+                {
+                  "label": "Capacidad de retención del agitador",
+                  "metric": "150 l"
+                }
+              ]
+            },
+            {
+              "title": "Datos eléctricos",
+              "rows": [
+                {
+                  "label": "Tensión",
+                  "metric": "3x 400/460"
+                },
+                {
+                  "label": "Frecuencia",
+                  "metric": "50 / 60 Hz"
+                },
+                {
+                  "label": "Potencia nominal",
+                  "metric": "9.1 / 10.5 kW"
+                }
+              ]
+            },
+            {
+              "title": "Peso y dimensiones",
+              "rows": [
+                {
+                  "label": "Peso total",
+                  "metric": "700 kg"
+                },
+                {
+                  "label": "Anchura",
+                  "metric": "800 mm"
+                },
+                {
+                  "label": "Altura",
+                  "metric": "1,658 mm"
+                },
+                {
+                  "label": "Longitud",
+                  "metric": "1,600 mm"
+                }
+              ]
+            }
+          ],
+          "note": "1: Relación agua/cemento = 1",
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Equipamiento estándar y opcional",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Incluido de serie (Bomba de inyección): Control manual de presión y caudal",
+            "Incluido de serie (Bomba de inyección): Indicador de nivel de aceite con termómetro",
+            "Opcional (Mezcladora / agitador): Unidad de mezcla auxiliar (recomendada para A/C &lt; 0,45)",
+            "Opcional (Mezcladora / agitador): Contador de agua automático",
+            "Opcional (Control): Mando a distancia con cable de 50 m, ON/OFF",
+            "Opcional (Control): Registro P/Q (presión/caudal)",
+            "Control: PLC con contador de carreras",
+            "Control: Interruptor principal con candado, parada de emergencia",
+            "Control: Mezcladora ON/OFF",
+            "Control: Agitador ON/OFF",
+            "Control: Bomba ON/OFF"
+          ],
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 2,
+          "more": false,
+          "items": [
+            {
+              "title": "Rendimiento de la bomba",
+              "image": "/assets/img/haeny-ic325-chart.webp",
+              "alt": "Rendimiento de la bomba IC 325",
+              "width": 1053,
+              "height": 1229
+            },
+            {
+              "title": "Dimensiones y plano",
+              "image": "/assets/img/haeny-ic325-dim.webp",
+              "alt": "Dimensiones y plano IC 325",
+              "width": 1509,
+              "height": 2015
+            }
+          ],
+          "gen": true
         },
         {
           "type": "image",
@@ -444,6 +1315,203 @@
         {
           "type": "text",
           "html": "En el vídeo situado junto a este texto puede obtener más información sobre el funcionamiento del IC325 CCP de la mano del especialista de Häny. Haga clic en el vídeo y véalo en nuestro canal de YouTube."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Datos técnicos: IC 325CCP",
+          "gen": true
+        },
+        {
+          "type": "datasheet",
+          "title": "Datos técnicos",
+          "tagline": "Planta de inyección compacta IC 325CCP",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Bomba de inyección (ZMP 625)",
+              "rows": [
+                {
+                  "label": "Capacidad IC",
+                  "metric": "2 m³/h"
+                },
+                {
+                  "label": "Presión máx.",
+                  "metric": "100 bar"
+                },
+                {
+                  "label": "Tamaño máx. de partícula",
+                  "metric": "5 mm"
+                },
+                {
+                  "label": "Depósito hidráulico",
+                  "metric": "52 l"
+                },
+                {
+                  "label": "Módulo de bomba",
+                  "metric": "doble"
+                },
+                {
+                  "label": "Caudal de agua de refrigeración",
+                  "metric": "2–3 l/min"
+                },
+                {
+                  "label": "Conexión de agua de refrigeración",
+                  "metric": "BSP ⅜\""
+                },
+                {
+                  "label": "Conexión de presión",
+                  "metric": "BSP 1\""
+                }
+              ]
+            },
+            {
+              "title": "Mezcladora / agitador",
+              "rows": [
+                {
+                  "label": "Volumen útil de la mezcladora",
+                  "metric": "100 l"
+                },
+                {
+                  "label": "Capacidad de circulación",
+                  "metric": "540 l/min"
+                },
+                {
+                  "label": "Conexión de agua",
+                  "metric": "BSP ¾\""
+                },
+                {
+                  "label": "Capacidad de retención del agitador",
+                  "metric": "150 l"
+                }
+              ]
+            },
+            {
+              "title": "Bomba de inyección de PU",
+              "rows": [
+                {
+                  "label": "Capacidad máx.",
+                  "metric": "14 l/min"
+                },
+                {
+                  "label": "Presión máx.",
+                  "metric": "195 bar"
+                },
+                {
+                  "label": "Proporción de mezcla",
+                  "metric": "1:1"
+                },
+                {
+                  "label": "Relación de presión",
+                  "metric": "30:1"
+                }
+              ]
+            },
+            {
+              "title": "Peso y dimensiones",
+              "rows": [
+                {
+                  "label": "Peso aprox.",
+                  "metric": "840 kg"
+                },
+                {
+                  "label": "Anchura",
+                  "metric": "885 mm"
+                },
+                {
+                  "label": "Altura",
+                  "metric": "1,590 mm"
+                },
+                {
+                  "label": "Longitud",
+                  "metric": "2,110 mm"
+                }
+              ]
+            },
+            {
+              "title": "Datos eléctricos",
+              "rows": [
+                {
+                  "label": "Tensión",
+                  "metric": "3x 400/460"
+                },
+                {
+                  "label": "Frecuencia",
+                  "metric": "50 / 60 Hz"
+                },
+                {
+                  "label": "Potencia nominal",
+                  "metric": "9.1 / 10.5 kW"
+                }
+              ]
+            },
+            {
+              "title": "Datos neumáticos",
+              "rows": [
+                {
+                  "label": "Presión máx. de entrada de aire",
+                  "metric": "6.5 bar"
+                },
+                {
+                  "label": "Consumo máx. de aire",
+                  "metric": "2500 l/min"
+                },
+                {
+                  "label": "Conexión de aire",
+                  "metric": "BSP 1\""
+                }
+              ]
+            }
+          ],
+          "note": "1: Relación agua/cemento = 1",
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Equipamiento estándar y opcional",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Incluido de serie (Bomba de inyección): Control manual de presión y caudal",
+            "Incluido de serie (Bomba de inyección): Indicador de nivel de aceite con termómetro",
+            "Opcional (Mezcladora / agitador): Unidad de mezcla auxiliar (recomendada para A/C &lt; 0,45)",
+            "Opcional (Mezcladora / agitador): Contador de agua automático",
+            "Control: PLC con contador de carreras",
+            "Control: Interruptor principal con candado, parada de emergencia",
+            "Control: Mezcladora ON/OFF",
+            "Control: Agitador ON/OFF",
+            "Control: Bomba ON/OFF",
+            "Unidad de control CCP: Control continuo de la proporción de mezcla de 0 a 30 %",
+            "Unidad de control CCP: Registro P-Q de suspensión de cemento y poliuretano"
+          ],
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 2,
+          "more": false,
+          "items": [
+            {
+              "title": "Rendimiento de la bomba",
+              "image": "/assets/img/haeny-ccp-chart.webp",
+              "alt": "Rendimiento de la bomba IC 325CCP",
+              "width": 1053,
+              "height": 1229
+            },
+            {
+              "title": "Dimensiones y plano",
+              "image": "/assets/img/haeny-ccp-dim.webp",
+              "alt": "Dimensiones y plano IC 325CCP",
+              "width": 1278,
+              "height": 1856
+            }
+          ],
+          "gen": true
         }
       ],
       "published": true
@@ -508,6 +1576,165 @@
           "text": "Brosjyre",
           "href": "/assets/docs/haeny-manuella-pumpar-ic-325-ic325-ccp-broschyr-eng.pdf",
           "driveId": "1fNL77EuIJqvhxDTVYxPL6AbzUiSP-Ui1"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Tekniske data: IC 325",
+          "gen": true
+        },
+        {
+          "type": "datasheet",
+          "title": "Tekniske data",
+          "tagline": "Kompakt injeksjonsanlegg IC 325",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Injeksjonspumpe (ZMP 625)",
+              "rows": [
+                {
+                  "label": "Kapasitet IC",
+                  "metric": "2 m³/h"
+                },
+                {
+                  "label": "Maks. trykk",
+                  "metric": "100 bar"
+                },
+                {
+                  "label": "Maks. kornstørrelse",
+                  "metric": "5 mm"
+                },
+                {
+                  "label": "Hydrauliktank",
+                  "metric": "52 l"
+                },
+                {
+                  "label": "Pumpemodul",
+                  "metric": "dobbel"
+                },
+                {
+                  "label": "Kjølevannstrøm",
+                  "metric": "2–3 l/min"
+                },
+                {
+                  "label": "Kjølevanntilkobling",
+                  "metric": "BSP ⅜\""
+                },
+                {
+                  "label": "Trykktilkobling",
+                  "metric": "BSP 1\""
+                }
+              ]
+            },
+            {
+              "title": "Mikser / røreverk",
+              "rows": [
+                {
+                  "label": "Nyttbart volum mikser",
+                  "metric": "100 l"
+                },
+                {
+                  "label": "Sirkulasjonskapasitet",
+                  "metric": "540 l/min"
+                },
+                {
+                  "label": "Vanntilkobling",
+                  "metric": "BSP ¾\""
+                },
+                {
+                  "label": "Røreverkets kapasitet",
+                  "metric": "150 l"
+                }
+              ]
+            },
+            {
+              "title": "Elektriske data",
+              "rows": [
+                {
+                  "label": "Spenning",
+                  "metric": "3x 400/460"
+                },
+                {
+                  "label": "Frekvens",
+                  "metric": "50 / 60 Hz"
+                },
+                {
+                  "label": "Merkeeffekt",
+                  "metric": "9.1 / 10.5 kW"
+                }
+              ]
+            },
+            {
+              "title": "Vekt og mål",
+              "rows": [
+                {
+                  "label": "Total vekt",
+                  "metric": "700 kg"
+                },
+                {
+                  "label": "Bredde",
+                  "metric": "800 mm"
+                },
+                {
+                  "label": "Høyde",
+                  "metric": "1,658 mm"
+                },
+                {
+                  "label": "Lengde",
+                  "metric": "1,600 mm"
+                }
+              ]
+            }
+          ],
+          "note": "1: Vann/sement-tall = 1",
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Standard- og tilvalgsutstyr",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Inkludert som standard (Injeksjonspumpe): Manuell trykk- og strømningsregulering",
+            "Inkludert som standard (Injeksjonspumpe): Oljenivåindikator med termometer",
+            "Tilvalg (Mikser / røreverk): Ekstra blandeenhet (anbefalt ved v/s &lt; 0,45)",
+            "Tilvalg (Mikser / røreverk): Automatisk vannmåler",
+            "Tilvalg (Styring): Fjernkontroll med 50 m kabel, PÅ/AV",
+            "Tilvalg (Styring): P/Q-registrering (trykk/strømning)",
+            "Styring: PLS med slagteller",
+            "Styring: Låsbar hovedbryter, nødstopp",
+            "Styring: Mikser PÅ/AV",
+            "Styring: Røreverk PÅ/AV",
+            "Styring: Pumpe PÅ/AV"
+          ],
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 2,
+          "more": false,
+          "items": [
+            {
+              "title": "Pumpeytelse",
+              "image": "/assets/img/haeny-ic325-chart.webp",
+              "alt": "Pumpeytelse IC 325",
+              "width": 1053,
+              "height": 1229
+            },
+            {
+              "title": "Mål og tegning",
+              "image": "/assets/img/haeny-ic325-dim.webp",
+              "alt": "Mål og tegning IC 325",
+              "width": 1509,
+              "height": 2015
+            }
+          ],
+          "gen": true
         },
         {
           "type": "image",
@@ -591,6 +1818,203 @@
         {
           "type": "text",
           "html": "I videoen ved siden av kan du få mer informasjon om funksjonaliteten til IC325 CCP fra Hänys spesialist. Klikk på videoen og se den på kanalen vår på YouTube."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Tekniske data: IC 325CCP",
+          "gen": true
+        },
+        {
+          "type": "datasheet",
+          "title": "Tekniske data",
+          "tagline": "Kompakt injeksjonsanlegg IC 325CCP",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Injeksjonspumpe (ZMP 625)",
+              "rows": [
+                {
+                  "label": "Kapasitet IC",
+                  "metric": "2 m³/h"
+                },
+                {
+                  "label": "Maks. trykk",
+                  "metric": "100 bar"
+                },
+                {
+                  "label": "Maks. kornstørrelse",
+                  "metric": "5 mm"
+                },
+                {
+                  "label": "Hydrauliktank",
+                  "metric": "52 l"
+                },
+                {
+                  "label": "Pumpemodul",
+                  "metric": "dobbel"
+                },
+                {
+                  "label": "Kjølevannstrøm",
+                  "metric": "2–3 l/min"
+                },
+                {
+                  "label": "Kjølevanntilkobling",
+                  "metric": "BSP ⅜\""
+                },
+                {
+                  "label": "Trykktilkobling",
+                  "metric": "BSP 1\""
+                }
+              ]
+            },
+            {
+              "title": "Mikser / røreverk",
+              "rows": [
+                {
+                  "label": "Nyttbart volum mikser",
+                  "metric": "100 l"
+                },
+                {
+                  "label": "Sirkulasjonskapasitet",
+                  "metric": "540 l/min"
+                },
+                {
+                  "label": "Vanntilkobling",
+                  "metric": "BSP ¾\""
+                },
+                {
+                  "label": "Røreverkets kapasitet",
+                  "metric": "150 l"
+                }
+              ]
+            },
+            {
+              "title": "PU-injeksjonspumpe",
+              "rows": [
+                {
+                  "label": "Maks. kapasitet",
+                  "metric": "14 l/min"
+                },
+                {
+                  "label": "Maks. trykk",
+                  "metric": "195 bar"
+                },
+                {
+                  "label": "Blandingsforhold",
+                  "metric": "1:1"
+                },
+                {
+                  "label": "Trykkforhold",
+                  "metric": "30:1"
+                }
+              ]
+            },
+            {
+              "title": "Vekt og mål",
+              "rows": [
+                {
+                  "label": "Omtrentlig vekt",
+                  "metric": "840 kg"
+                },
+                {
+                  "label": "Bredde",
+                  "metric": "885 mm"
+                },
+                {
+                  "label": "Høyde",
+                  "metric": "1,590 mm"
+                },
+                {
+                  "label": "Lengde",
+                  "metric": "2,110 mm"
+                }
+              ]
+            },
+            {
+              "title": "Elektriske data",
+              "rows": [
+                {
+                  "label": "Spenning",
+                  "metric": "3x 400/460"
+                },
+                {
+                  "label": "Frekvens",
+                  "metric": "50 / 60 Hz"
+                },
+                {
+                  "label": "Merkeeffekt",
+                  "metric": "9.1 / 10.5 kW"
+                }
+              ]
+            },
+            {
+              "title": "Pneumatiske data",
+              "rows": [
+                {
+                  "label": "Maks. lufttrykk inn",
+                  "metric": "6.5 bar"
+                },
+                {
+                  "label": "Maks. luftforbruk",
+                  "metric": "2500 l/min"
+                },
+                {
+                  "label": "Luftilkobling",
+                  "metric": "BSP 1\""
+                }
+              ]
+            }
+          ],
+          "note": "1: Vann/sement-tall = 1",
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Standard- og tilvalgsutstyr",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Inkludert som standard (Injeksjonspumpe): Manuell trykk- og strømningsregulering",
+            "Inkludert som standard (Injeksjonspumpe): Oljenivåindikator med termometer",
+            "Tilvalg (Mikser / røreverk): Ekstra blandeenhet (anbefalt ved v/s &lt; 0,45)",
+            "Tilvalg (Mikser / røreverk): Automatisk vannmåler",
+            "Styring: PLS med slagteller",
+            "Styring: Låsbar hovedbryter, nødstopp",
+            "Styring: Mikser PÅ/AV",
+            "Styring: Røreverk PÅ/AV",
+            "Styring: Pumpe PÅ/AV",
+            "CCP-styreenhet: Trinnløs styring av blandingsforholdet 0 til 30 %",
+            "CCP-styreenhet: P-Q-registrering av sementsuspensjon og polyuretan"
+          ],
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 2,
+          "more": false,
+          "items": [
+            {
+              "title": "Pumpeytelse",
+              "image": "/assets/img/haeny-ccp-chart.webp",
+              "alt": "Pumpeytelse IC 325CCP",
+              "width": 1053,
+              "height": 1229
+            },
+            {
+              "title": "Mål og tegning",
+              "image": "/assets/img/haeny-ccp-dim.webp",
+              "alt": "Mål og tegning IC 325CCP",
+              "width": 1278,
+              "height": 1856
+            }
+          ],
+          "gen": true
         }
       ],
       "published": true

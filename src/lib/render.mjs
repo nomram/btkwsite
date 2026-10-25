@@ -468,7 +468,7 @@ function renderModules(ctx, b) {
       : "";
     return `<li class="module">${media}<div class="module__body">${title}${text}${bullets}${go || doc ? `<div class="module__actions">${go}${doc}</div>` : ""}</div></li>`;
   }).join("");
-  return `<ul class="modules modules--${layout}" style="--cols:${cols}">${li}</ul>`;
+  return `<ul class="modules modules--${layout}${b.square ? " modules--sq" : ""}" style="--cols:${cols}">${li}</ul>`;
 }
 
 // Image carousel. Native scroll-snap: swipe, trackpad and keyboard work without JavaScript; site.js adds arrows, dots
@@ -780,7 +780,16 @@ function megaPanel(ctx, k, id) {
     return im ? (im.type === "carousel" ? im.items[0].src : im.src) : null;
   };
   const LIMIT = 6;
-  const cats = ctx.children(k).filter((c) => shown(ctx, c)).map((c) => {
+  // A brand page can lay its panel out by hand ("menu": [{title, items: [{title, href, image}]}]): groups with a heading, one link
+  // with a picture per item and no list of sub pages. Without it the panel lists the child pages and their children.
+  const curated = Array.isArray(t.menu) && t.menu.length ? t.menu.map((g) =>
+    (g.title ? `<p class="mega__group">${esc(g.title)}</p>` : "") + (g.items || []).map((it) => {
+      const base = String(it.href || "").split(/[?#]/)[0];
+      if (!/^https?:/.test(base) && !(ctx.pages.has(base) && shown(ctx, base))) return "";
+      const img = it.image || cardImg.get(base) || ownImage(base);
+      return `<div class="mega__cat${img ? " has-thumb" : ""}"><a class="mega__cat-title" href="${esc(localizeHref(ctx, it.href))}">` + (img ? menuThumb(ctx, img) : "") + `<span>${esc(it.title || navTitleOf(ctx, base))}</span></a></div>`;
+    }).join("")).join("") : "";
+  const cats = curated || ctx.children(k).filter((c) => shown(ctx, c)).map((c) => {
     const kids = ctx.children(c).filter((x) => shown(ctx, x));
     const img = cardImg.get(c) || ownImage(c);
     const lis = kids.slice(0, LIMIT).map((x) => `<li><a href="${esc(ctx.url(x))}">${esc(navTitleOf(ctx, x))}</a></li>`).join("") +

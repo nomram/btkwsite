@@ -1,21 +1,21 @@
 #!/usr/bin/env node
-// Builds the Häny product-family pages from the data pulled out of the brochures (tools/haeny-extract.mjs -> crawl/haeny/*.json):
-//   /produkter/haeny/hitta-ratt-maskin                       landing page: parts and complete units as picture tiles
-//   /produkter/haeny/hitta-ratt-maskin/<family>              one page per family: overview (bullets), then every model with picture,
-//                                                            key features, technical data, performance chart, dimension drawing, brochure
-// The brochure text is English; headings and labels are written in all four languages. es/no model text stays English until it is translated.
-//   node tools/haeny-extract.mjs && node tools/haeny-build-pages.mjs
+// Builds the Häny product pages from the data pulled out of the brochures (tools/haeny-extract.mjs -> crawl/haeny/*.json):
+//   /produkter/haeny                     the brand page: complete units, parts, technology, recording equipment (picture tiles)
+//   /produkter/haeny/<family>            one page per family: overview, a tile for every model, comparison of the models
+//   /produkter/haeny/<family>/<model>    one page per model: picture, key features, technical data, performance chart, dimension drawing, brochure
+// IC 310 and IC 325 (with the CCP version) keep their older pages and get the brochure data added after the brochure button.
+// The brochure text is English; headings and labels are written in all four languages, the brochure text goes through tools/haeny-i18n*.json.
+//   node tools/haeny-extract.mjs && node tools/haeny-tiles.mjs && node tools/haeny-build-pages.mjs
 import fs from "node:fs";
 import path from "node:path";
 import sharp from "sharp";
 
 const ROOT = path.resolve(import.meta.dirname, "..");
-const DATA = path.join(ROOT, "crawl/haeny");
-const PAGES = path.join(ROOT, "content/pages/produkter/haeny/hitta-ratt-maskin");
+const CRAWL = path.join(ROOT, "crawl/haeny");
 const LANGS = ["sv", "en", "es", "no"];
 const esc = (s) => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
 const dim = async (src) => { const m = await sharp(path.join(ROOT, "assets-src", src.replace(/^\/assets\//, ""))).metadata(); return { width: m.width, height: m.height }; };
-const load = (k) => JSON.parse(fs.readFileSync(path.join(DATA, k + ".json"), "utf8"));
+const load = (k) => JSON.parse(fs.readFileSync(path.join(CRAWL, k + ".json"), "utf8"));
 
 // ---------- labels ----------
 const L = {
@@ -43,8 +43,10 @@ const FAMILIES = [
     title: { sv: "Automatiska anläggningar (FAIC)", en: "Automated grout plants (FAIC)", es: "Plantas de inyección automáticas (FAIC)", no: "Automatiske injeksjonsanlegg (FAIC)" },
     intro: { sv: "Automatiserade anläggningar för att bereda och injektera cement, bentonit, mikrofina bindemedel och bruk. Noggrann dosering, förbrukningsregistrering, integrerad tryck- och flödesregistrering samt radiostyrning.", en: "Automated plants for preparing and injecting cement, bentonite, microfine binders and mortar. Accurate dosing, consumption record, integrated pressure and flow recording and radio remote control.", es: "Plantas automatizadas para preparar e inyectar cemento, bentonita, ligantes microfinos y mortero. Dosificación precisa, registro de consumo, registro integrado de presión y caudal y mando por radio.", no: "Automatiserte anlegg for klargjøring og injeksjon av sement, bentonitt, mikrofine bindemidler og mørtel. Nøyaktig dosering, forbruksregistrering, integrert trykk- og strømningsregistrering og radiostyring." } }
 ];
-const MODEL_IMG = (k) => /^ic(310|311|325)$/.test(k) ? "haeny-manuella-pumpar-ic-310-ic-311" : /^ic650/.test(k) ? "haeny-finder-ic" : /^ic(1100|1400)/.test(k) ? "haeny-finder-ic1100" : /^zmp6/.test(k) ? "haeny-finder-zmp600" : /^zmp7/.test(k) ? "haeny-finder-zmp" : k === "zmp936" ? "haeny-finder-zmp936" : /^faic/.test(k) ? "haeny-finder-faic" : null;
-
+Object.assign(L.sv, { compare: "Jämförelse av modellerna", reg: "Registrering och styrning", dpv: "Dataloggare (DPV-H)" });
+Object.assign(L.en, { compare: "Model comparison", reg: "Recording and control", dpv: "Data logger (DPV-H)" });
+Object.assign(L.es, { compare: "Comparación de modelos", reg: "Registro y control", dpv: "Registrador de datos (DPV-H)" });
+Object.assign(L.no, { compare: "Sammenligning av modellene", reg: "Registrering og styring", dpv: "Datalogger (DPV-H)" });
 // ---------- translations of the brochure text (tools/haeny-i18n.json: English text -> sv / es / no) ----------
 const I18N = Object.assign({}, ...fs.readdirSync(path.join(ROOT, "tools")).filter((x) => /^haeny-i18n.*.json$/.test(x)).map((x) => JSON.parse(fs.readFileSync(path.join(ROOT, "tools", x), "utf8"))));
 const tr = (l, text) => (l === "en" || !text ? text : (I18N[text] && I18N[text][l]) || text);
@@ -85,13 +87,27 @@ const keyFigures = (d) => {
 };
 const pumpOf = (d) => { const t = d.tables.find((x) => /grout pump/i.test(x.title) && x.subtitle); return t ? t.subtitle : ""; };
 
-function modelBlocks(l, fam, k, d) {
+
+// ---------- addresses ----------
+const BASE = "/produkter/haeny";
+const FAM_PATH = { blandare: `${BASE}/blandare`, omrorare: `${BASE}/omrorare`, injekteringspumpar: `${BASE}/injekteringspumpar`, "kompakta-anlaggningar": `${BASE}/manuella-pumpar`, "automatiska-anlaggningar": `${BASE}/automatiska-pumpar` };
+const FAM_TILE = { blandare: "hcm", omrorare: "hrw", injekteringspumpar: "zmp", "kompakta-anlaggningar": "ic", "automatiska-anlaggningar": "faic" };
+const slugOf = (k) => k.replace(/^([a-z]+)/, "$1-");
+// the two older IC pages stay where they were (the ranking addresses): IC 310 (the page that also described IC311) and IC 325 together with the CCP version
+const MODEL_PATH = (fam, k) => (k === "ic310" ? `${FAM_PATH[fam.slug]}/ic-310-ic-311` : k === "ic325" ? `${FAM_PATH[fam.slug]}/ic-325-ic325-ccp` : `${FAM_PATH[fam.slug]}/${slugOf(k)}`);
+const famOf = (k) => FAMILIES.find((f) => f.models.includes(k));
+
+// ---------- blocks of one model ----------
+const tileOf = (k) => `/assets/img/haeny-${k}-tile.webp`;
+function topBlocks(l, k, d) {
   const T = L[l]; const out = [];
   const img = d.images.model || d.images.unit || null;
-  const fallback = MODEL_IMG(k);
-  out.push({ type: "heading", level: 2, text: d.model || k.toUpperCase(), anchor: k });
-  out.push({ type: "__cols", img: img ? { src: img.file, width: img.width, height: img.height } : fallback ? { src: `/assets/img/${fallback}.webp` } : null, alt: `${tr(l, d.title)} ${d.model}`,
+  out.push({ type: "__cols", img: img ? { src: img.file, width: img.width, height: img.height } : null, alt: `${tr(l, d.title)} ${d.model}`,
     html: clean(tr(l, d.intro)), features: d.features.map((x) => clean(tr(l, x))), uses: d.applications.map((x) => clean(tr(l, x))), usesLabel: T.uses });
+  return out;
+}
+function dataBlocks(l, k, d, { download = true } = {}) {
+  const T = L[l]; const out = [];
   const groups = d.tables.filter((t) => t.rows.length).map((t) => ({ title: tr(l, t.title) + (t.subtitle ? ` (${t.subtitle})` : ""), rows: t.rows.map(([label, metric]) => ({ label: tr(l, label), metric: tr(l, metric) })) }));
   if (groups.length) out.push({ type: "datasheet", title: T.data, tagline: `${tr(l, d.title)} ${d.model}`, intro: [], groups, note: d.notes.length ? d.notes.map((n, i) => `${i + 1}: ${tr(l, n)}`).join(" · ") : "" });
   const lists = [];
@@ -101,7 +117,7 @@ function modelBlocks(l, fam, k, d) {
   if (d.images.chart) tiles.push({ title: T.perf, image: d.images.chart.file, alt: `${T.perf} ${d.model}` });
   if (d.images.dim) tiles.push({ title: T.dims, image: d.images.dim.file, alt: `${T.dims} ${d.model}` });
   if (tiles.length) out.push({ type: "modules", layout: "tiles", columns: Math.min(2, tiles.length), more: false, items: tiles });
-  out.push({ type: "button", kind: "download", text: T.pdfName(d.model), href: d.file });
+  if (download) out.push({ type: "button", kind: "download", text: T.pdfName(d.model), href: d.file });
   return out;
 }
 
@@ -124,51 +140,126 @@ async function resolveBlocks(blocks) {
 
 const out = (rel, o) => { const f = path.join(ROOT, "content/pages", rel); fs.mkdirSync(path.dirname(f), { recursive: true }); fs.writeFileSync(f, JSON.stringify(o, null, 2) + "\n"); console.log("wrote", rel); };
 const crumb = { type: "image", alt: "HÄNY", href: "/produkter/haeny", width: 832, height: 143, src: "/assets/img/haeny-1.webp" };
-const date = "2026-10-23";
-const HUB = "/produkter/haeny/hitta-ratt-maskin";
-
-// ---------- family pages ----------
-// A family that has an older page of its own (base) keeps that page: its address, its translated text and its brochure stay,
-// and the generated overview and model sections are added to it. Generated blocks carry "gen": true so a re-run replaces them.
+const date = "2026-10-25";
 const genBlocks = (arr) => arr.map((b) => ({ ...b, gen: true }));
-let order = 0;
+const readJson = (p) => JSON.parse(fs.readFileSync(p, "utf8"));
+const writeJson = (p, j) => { const raw = fs.existsSync(p) ? fs.readFileSync(p, "utf8") : ""; const eol = raw.includes("\r\n") ? "\r\n" : "\n"; fs.mkdirSync(path.dirname(p), { recursive: true }); fs.writeFileSync(p, JSON.stringify(j, null, 2).replace(/\n/g, eol) + eol); };
+const pageFile = (p) => path.join(ROOT, "content/pages", p + ".json");
+
+// ---------- the data of every model ----------
+const DATA = {};
+for (const fam of FAMILIES) for (const k of fam.models) DATA[k] = fixData(k, load(k));
+const CCP = fixData("ccp", load("ccp"));
+
+const modelTitle = (d) => `Häny ${d.model}`;
+
+// ---------- one page per model ----------
+// New pages are generated whole. The two older IC pages (IC 310 and IC 325 with CCP) keep their own text; the brochure data is added
+// after their brochure button (gen blocks, replaced on every run).
+const stripGen = (bl) => bl.filter((b) => !b.gen);
+function insertAfterDownload(blocks, nth, add) {
+  let seen = -1, at = -1;
+  blocks.forEach((b, i) => { if (b.type === "button" && b.kind === "download") { seen++; if (seen === nth) at = i; } });
+  if (at < 0) at = blocks.length - 1;
+  return [...blocks.slice(0, at + 1), ...add, ...blocks.slice(at + 1)];
+}
 for (const fam of FAMILIES) {
-  const data = Object.fromEntries(fam.models.map((k) => [k, fixData(k, load(k))]));
-  const baseFile = fam.base ? path.join(ROOT, "content/pages", fam.base + ".json") : null;
-  const baseJson = baseFile && fs.existsSync(baseFile) ? JSON.parse(fs.readFileSync(baseFile, "utf8")) : null;
+  let n = 0;
+  for (const k of fam.models) {
+    const d = DATA[k]; const p = MODEL_PATH(fam, k); const file = pageFile(p);
+    const sibs = fam.models.filter((x) => x !== k);
+    const i18n = {};
+    const existing = fs.existsSync(file) ? readJson(file) : null;
+    for (const l of LANGS) {
+      const T = L[l];
+      const relatedItems = [{ href: FAM_PATH[fam.slug], mutual: false }, ...sibs.slice(Math.max(0, fam.models.indexOf(k) - 1), Math.max(0, fam.models.indexOf(k) - 1) + 3).map((x) => ({ href: MODEL_PATH(fam, x) }))];
+      const keepOld = existing && existing.i18n[l] && (k === "ic310" || k === "ic325");
+      if (keepOld) {
+        const old = stripGen(existing.i18n[l].blocks);
+        const add = genBlocks([{ type: "heading", level: 2, text: `${T.data}: ${d.model}` }, ...(await resolveBlocks(dataBlocks(l, k, d, { download: false })))]);
+        let blocks = insertAfterDownload(old, 0, add);
+        if (k === "ic325") {
+          const addC = genBlocks([{ type: "heading", level: 2, text: `${T.data}: ${CCP.model}` }, ...(await resolveBlocks([...topBlocks(l, "ccp", CCP).slice(0, 0), ...dataBlocks(l, "ccp", CCP, { download: false })]))]);
+          blocks = insertAfterDownload(blocks, 2, addC);
+        }
+        const last = blocks[blocks.length - 1];
+        i18n[l] = { ...existing.i18n[l], title: k === "ic310" ? "IC 310" : existing.i18n[l].title, h1: k === "ic310" ? "HÄNY IC 310" : existing.i18n[l].h1, blocks };
+      } else {
+        const blocks = [{ ...crumb }, ...(await resolveBlocks([...topBlocks(l, k, d), ...dataBlocks(l, k, d)])), { type: "text", html: T.contact }, { type: "text", html: `<small>${esc(T.note)}</small>` }, { type: "related", title: T.back, items: relatedItems }];
+        i18n[l] = { title: modelTitle(d), h1: modelTitle(d), description: `${tr(l, d.title)} ${d.model}. ${tr(l, d.intro)}`.slice(0, 200), blocks: genBlocks(blocks) };
+        // the crumb picture is not generated content that a later run may drop: keep every block marked, the page is rebuilt whole
+      }
+    }
+    writeJson(file, existing && (k === "ic310" || k === "ic325") ? { ...existing, path: p, updated: date, i18n } : { path: p, updated: date, template: "product", order: n, published: true, i18n });
+    n++;
+  }
+}
+
+// ---------- the family pages ----------
+const keyOf = (fam, k) => { const d = DATA[k]; const p = pumpOf(d); return { title: d.model, image: tileOf(k), alt: `${d.title} ${d.model}`, href: MODEL_PATH(fam, k), bullets: [...(p ? [p] : []), ...keyFigures(d)] }; };
+async function modelTiles(fam) {
+  const items = [];
+  for (const k of fam.models) {
+    const it = keyOf(fam, k); const dd = await dim(it.image); items.push({ ...it, ...dd });
+  }
+  return { type: "modules", layout: "tiles", columns: fam.models.length > 8 ? 4 : 3, square: true, more: false, items };
+}
+// a comparison of the models: the labels that most models share, one column per model
+function comparison(l, fam) {
+  const ds = fam.models.map((k) => DATA[k]);
+  const labels = [];
+  const val = ds.map((d) => { const m = new Map(); for (const t of d.tables) for (const [lab, v] of t.rows) if (v && !m.has(lab)) m.set(lab, v); return m; });
+  for (const m of val) for (const lab of m.keys()) if (!labels.includes(lab)) labels.push(lab);
+  const keep = labels.filter((lab) => val.filter((m) => m.has(lab)).length >= Math.max(2, Math.ceil(ds.length * 0.6)) && !/connection|manifold/i.test(lab));
+  if (ds.length < 2 || keep.length < 3) return null;
+  return { type: "table", header: true, align: "center", caption: L[l].compare, rows: [[""].concat(ds.map((d) => d.model)), ...keep.map((lab) => [tr(l, lab)].concat(val.map((m) => (m.has(lab) ? tr(l, m.get(lab)) : "-"))))], links: [] };
+}
+for (const fam of FAMILIES) {
+  const first = DATA[fam.models[0]];
+  const pagePath = FAM_PATH[fam.slug];
+  const file = pageFile(pagePath);
+  const existing = fs.existsSync(file) ? readJson(file) : null;
+  const tilesBlock = await modelTiles(fam);
   const i18n = {};
   for (const l of LANGS) {
     const T = L[l];
     const introText = fam.intro[l] + (fam.extra ? " " + fam.extra[l] : "");
-    const head = [{ ...crumb }, { type: "image", alt: fam.title[l], ...(await dim(`/assets/img/${fam.image}.webp`)), src: `/assets/img/${fam.image}.webp` }, { type: "text", html: esc(introText) }];
-    const body = [];
-    const first = data[fam.models[0]];
-    body.push({ type: "heading", level: 2, text: T.overview });
-    if (first.features.length) body.push({ type: "list", ordered: false, items: first.features.map((x) => clean(tr(l, x))) });
-    body.push({ type: "heading", level: 3, text: T.models });
-    body.push({ type: "list", ordered: false, items: fam.models.map((k) => { const d = data[k]; const p = pumpOf(d); return `<a href="#${k}">${esc(d.model)}</a>${p ? ` (${esc(p)})` : ""}: ${keyFigures(d).map(esc).join(" · ")}`; }) });
-    if (first.applications.length) { body.push({ type: "heading", level: 3, text: T.uses }); body.push({ type: "list", ordered: false, items: first.applications.map((x) => clean(tr(l, x))) }); }
-    const pagePath = fam.base || `${HUB}/${fam.slug}`;
-    if (fam.tiles) body.push({ type: "modules", layout: "tiles", columns: 3, more: false, items: await Promise.all(fam.models.map(async (k) => { const d = data[k]; const im = d.images.model ? d.images.model.file : `/assets/img/${fam.image}.webp`; return { title: d.model, image: im, alt: d.model, href: `${pagePath}#${k}`, ...(d.images.model ? { width: d.images.model.width, height: d.images.model.height } : await dim(im)) }; })) });
-    for (const k of fam.models) body.push(...(await resolveBlocks(modelBlocks(l, fam, k, data[k]))));
-    if (fam.see) body.push({ type: "related", items: [{ href: fam.see, mutual: true }] });
+    const tileImg = `/assets/img/haeny-tile-${FAM_TILE[fam.slug]}.webp`;
+    const overview = [{ type: "heading", level: 2, text: T.overview }];
+    if (first.features.length) overview.push({ type: "list", ordered: false, items: first.features.map((x) => clean(tr(l, x))) });
+    const models = [{ type: "heading", level: 2, text: T.models }, { ...tilesBlock, items: tilesBlock.items.map((it) => ({ ...it, title: it.title, alt: it.alt, bullets: it.bullets.map((x) => tr(l, x)) })) }];
+    const uses = first.applications.length ? [{ type: "heading", level: 3, text: T.uses }, { type: "list", ordered: false, items: first.applications.map((x) => clean(tr(l, x))) }] : [];
+    const cmp = fam.slug === "kompakta-anlaggningar" ? null : comparison(l, fam);
+    const compare = cmp ? [{ type: "heading", level: 2, text: T.compare }, cmp] : [];
+    const see = fam.see ? [{ type: "related", items: [{ href: fam.see, mutual: true }] }] : [];
     let blocks;
-    if (baseJson && baseJson.i18n[l]) {
-      // the existing page is the base: its picture, heading and introduction first, the generated sections, then its brochure and notes
-      const old = baseJson.i18n[l].blocks.filter((b) => !b.gen);
+    if (existing && fam.base) {
+      // the older page is the base: its picture, heading and text stay, the generated sections come after the introduction
+      const old = stripGen(existing.i18n[l].blocks);
       const li = old.findIndex((b) => b.type === "list");
       const top = old.slice(0, li < 0 ? 4 : li).map((b) => (b.type === "heading" && /FAIC/.test(b.text) ? { ...b, text: "Häny FAIC" } : b));
       const tail = old.slice(li < 0 ? 4 : li + 1).filter((b) => b.type !== "modules" && !(b.type === "text" && /kontakta-oss/.test(b.html) && b.html.length < 140));
-      blocks = [...top, ...genBlocks(body), ...tail, { type: "text", html: T.contact }, ...genBlocks([{ type: "text", html: `<small>${esc(T.note)}</small>` }])];
+      blocks = [...top, ...genBlocks([...overview, ...models, ...uses, ...compare]), ...tail, { type: "text", html: T.contact }, ...genBlocks([{ type: "text", html: `<small>${esc(T.note)}</small>` }])];
       blocks = blocks.filter((b, i, a) => !(b.type === "text" && b.html === T.contact && a.findIndex((x) => x.type === "text" && x.html === T.contact) !== i));
+    } else if (existing && fam.slug === "kompakta-anlaggningar") {
+      // the IC page keeps its own text and its specification table: the three model tiles are replaced by tiles for every IC model
+      const all = existing.i18n[l].blocks;
+      let at = all.findIndex((b) => b.gen);
+      const old = stripGen(all);
+      let replace = 0;
+      if (at < 0) { at = old.findIndex((b) => b.type === "modules"); replace = 1; }
+      old.splice(at, replace, ...genBlocks([{ type: "heading", level: 2, text: T.models }, models[1]]));
+      blocks = old;
     } else {
-      blocks = [...head, ...genBlocks(body), { type: "text", html: T.contact }, { type: "text", html: `<small>${esc(T.note)}</small>` }];
+      blocks = [{ ...crumb }, { type: "columns", ratio: "40-60", left: [{ type: "image", alt: fam.title[l], ...(await dim(tileImg)), src: tileImg }], right: [{ type: "text", html: esc(introText) }, ...(first.features.length ? [{ type: "list", ordered: false, items: first.features.map((x) => clean(tr(l, x))) }] : [])] },
+        ...genBlocks([{ type: "heading", level: 2, text: T.models }, models[1], ...uses, ...compare]), { type: "text", html: T.contact }, ...see];
     }
-    i18n[l] = { title: fam.title[l], h1: fam.title[l], description: introText.slice(0, 200), blocks };
+    i18n[l] = { title: existing && fam.base ? existing.i18n[l].title : fam.title[l], h1: existing && fam.base ? (fam.base ? fam.title[l] : existing.i18n[l].h1) : fam.title[l], description: introText.slice(0, 200), blocks };
+    if (existing && fam.slug === "kompakta-anlaggningar") { i18n[l].title = existing.i18n[l].title; i18n[l].h1 = existing.i18n[l].h1; i18n[l].description = existing.i18n[l].description; }
   }
-  if (baseJson) {
-    fs.writeFileSync(baseFile, JSON.stringify({ ...baseJson, updated: date, i18n }, null, 2) + "\n"); console.log("merged into", fam.base);
-  } else out(`produkter/haeny/hitta-ratt-maskin/${fam.slug}.json`, { path: `${HUB}/${fam.slug}`, updated: date, template: "product", order: order++, published: true, i18n });
+  if (existing) writeJson(file, { ...existing, updated: date, i18n });
+  else writeJson(file, { path: pagePath, updated: date, template: "product", order: { blandare: 3, omrorare: 4, injekteringspumpar: 5 }[fam.slug] ?? 6, published: true, i18n });
+  console.log("family", pagePath);
 }
 
 // ---------- MCM: no brochure, short page ----------
@@ -177,80 +268,76 @@ for (const fam of FAMILIES) {
     sv: { title: "Mobila anläggningar (MCM)", text: "Häny MCM är mobila blandningsanläggningar för bentonit, flygaska, cement, filler, lera och liknande suspensioner till slitsmurar, jet grouting och alla typer av injekteringsprojekt. Broschyr finns på begäran." },
     en: { title: "Portable mixing plants (MCM)", text: "Häny's range of portable MCM mixing plants is suitable for mixing bentonite, fly ash, cement, filler, clay and similar suspensions for diaphragm walls, slurry walls, jet grouting and all types of grouting projects. A brochure is available on request." },
     es: { title: "Plantas de mezcla móviles (MCM)", text: "Las plantas de mezcla móviles Häny MCM son adecuadas para mezclar bentonita, cenizas volantes, cemento, filler, arcilla y suspensiones similares para muros pantalla, jet grouting y todo tipo de proyectos de inyección. Folleto disponible bajo pedido." },
-    no: { title: "Mobile blandeanlegg (MCM)", text: "Härnys mobile MCM-blandeanlegg egner seg for blanding av bentonitt, flyveaske, sement, filler, leire og lignende suspensjoner til slissemurer, jet grouting og alle typer injeksjonsprosjekter. Brosjyre på forespørsel." }
+    no: { title: "Mobile blandeanlegg (MCM)", text: "Häny MCM-blandeanlegg er mobile og egner seg for blanding av bentonitt, flyveaske, sement, filler, leire og lignende suspensjoner til slissemurer, jet grouting og alle typer injeksjonsprosjekter. Brosjyre på forespørsel." }
   };
   const i18n = {};
-  for (const l of LANGS) i18n[l] = { title: T[l].title, h1: T[l].title, description: T[l].text.slice(0, 200), blocks: [{ ...crumb }, { type: "image", alt: T[l].title, ...(await dim("/assets/img/haeny-finder-mcm.webp")), src: "/assets/img/haeny-finder-mcm.webp" }, { type: "text", html: esc(T[l].text) }, { type: "text", html: L[l].contact }] };
-  out("produkter/haeny/hitta-ratt-maskin/mobila-anlaggningar.json", { path: `${HUB}/mobila-anlaggningar`, updated: date, template: "product", order: order++, published: true, i18n });
+  for (const l of LANGS) i18n[l] = { title: T[l].title, h1: T[l].title, description: T[l].text.slice(0, 200), blocks: [{ ...crumb }, { type: "image", alt: T[l].title, ...(await dim("/assets/img/haeny-tile-mcm.webp")), src: "/assets/img/haeny-tile-mcm.webp" }, { type: "text", html: esc(T[l].text) }, { type: "text", html: L[l].contact }] };
+  writeJson(pageFile(`${BASE}/mobila-anlaggningar`), { path: `${BASE}/mobila-anlaggningar`, updated: date, template: "product", order: 2, published: true, i18n });
 }
 
-// ---------- the tile groups (parts / complete units / registration), used by the landing page and the Häny brand page ----------
-const famHref = (fam) => fam.base || `${HUB}/${fam.slug}`;
+// ---------- the Häny brand page: units, parts and (above the silos) the recording equipment as picture tiles ----------
+const tileImage = (n) => `/assets/img/haeny-tile-${n}.webp`;
 async function tileGroups(l) {
   const T = L[l];
-  const tile = async (fam) => ({ title: fam.title[l], image: `/assets/img/${fam.image}.webp`, alt: fam.title[l], href: famHref(fam), ...(await dim(`/assets/img/${fam.image}.webp`)) });
-  const ccpTitle = { sv: "Kompakta PU-anläggningar (IC 325 CCP)", en: "Compact PU plants (IC 325 CCP)", es: "Plantas compactas PU (IC 325 CCP)", no: "Kompakte PU-anlegg (IC 325 CCP)" };
+  const tile = async (title, img, href) => ({ title, image: tileImage(img), alt: title, href, ...(await dim(tileImage(img))) });
+  const fam = (slug) => FAMILIES.find((f) => f.slug === slug);
+  const ccpTitle = { sv: "Kompakta PU-anläggningar (CCP)", en: "Compact PU plants (CCP)", es: "Plantas compactas PU (CCP)", no: "Kompakte PU-anlegg (CCP)" };
   const mcmTitle = { sv: "Mobila anläggningar (MCM)", en: "Portable mixing plants (MCM)", es: "Plantas de mezcla móviles (MCM)", no: "Mobile blandeanlegg (MCM)" };
-  const dpvTitle = { sv: "Dataloggare (DPV-H)", en: "Data logger (DPV-H)", es: "Registrador de datos (DPV-H)", no: "Datalogger (DPV-H)" };
-  const regTitle = { sv: "Registrering och styrning", en: "Recording and control", es: "Registro y control", no: "Registrering og styring" };
-  const parts = FAMILIES.filter((f) => f.group === "parts"), units = FAMILIES.filter((f) => f.group === "units");
-  const unitItems = [];
-  for (const f of units) {
-    unitItems.push(await tile(f));
-    if (f.slug === "kompakta-anlaggningar") unitItems.push({ title: ccpTitle[l], image: "/assets/img/haeny-finder-ccp.webp", alt: ccpTitle[l], href: "/produkter/haeny/manuella-pumpar/ic-325-ic325-ccp#ic325-ccp", ...(await dim("/assets/img/haeny-finder-ccp.webp")) });
-  }
-  unitItems.push({ title: mcmTitle[l], image: "/assets/img/haeny-finder-mcm.webp", alt: mcmTitle[l], href: `${HUB}/mobila-anlaggningar`, ...(await dim("/assets/img/haeny-finder-mcm.webp")) });
-  const dpvImg = "/assets/img/haeny-manuella-pumpar-dataloggare-dpv-2.webp";
-  return genBlocks([
-    { type: "heading", level: 2, text: T.units }, { type: "modules", layout: "tiles", columns: 4, more: false, items: unitItems },
-    { type: "heading", level: 2, text: T.parts }, { type: "modules", layout: "tiles", columns: 3, more: false, items: await Promise.all(parts.map(tile)) },
-    { type: "heading", level: 2, text: regTitle[l] }, { type: "modules", layout: "tiles", columns: 4, more: false, items: [{ title: dpvTitle[l], image: dpvImg, alt: dpvTitle[l], href: "/produkter/haeny/manuella-pumpar/dataloggare-dpv", ...(await dim(dpvImg)) }] }
-  ]);
-}
-
-// ---------- the landing page ----------
-{
-  const intro = {
-    sv: "Häny har ett komplett sortiment för blandning och injektering. Börja med att välja: enskilda delar (blandare, omrörare, pumpar) eller kompletta enheter där allt sitter ihop. Varje sida visar översikt, modeller, teknisk data, diagram och broschyrer. Osäker? <a href=\"/kontakta-oss\">Kontakta oss</a>, så hjälper vi dig välja.",
-    en: "Häny has a complete range for mixing and injection. Start by choosing: individual parts (mixers, agitators, pumps) or complete units where everything is combined. Every page shows an overview, the models, technical data, diagrams and brochures. Not sure? <a href=\"/kontakta-oss\">Contact us</a> and we will help you choose.",
-    es: "Häny ofrece una gama completa para mezcla e inyección. Empiece eligiendo: componentes individuales (mezcladoras, agitadores, bombas) o equipos completos. Cada página muestra un resumen, los modelos, datos técnicos, diagramas y folletos. ¿Duda? <a href=\"/kontakta-oss\">Contáctenos</a> y le ayudamos a elegir.",
-    no: "Häny har et komplett sortiment for blanding og injeksjon. Start med å velge: enkeltdeler (miksere, røreverk, pumper) eller komplette enheter. Hver side viser oversikt, modeller, tekniske data, diagrammer og brosjyrer. Usikker? <a href=\"/kontakta-oss\">Kontakt oss</a>, så hjelper vi deg å velge."
+  // complete units: IC, FAIC, CCP, MCM (CCP is the third)
+  const units = [
+    await tile(fam("kompakta-anlaggningar").title[l], "ic", FAM_PATH["kompakta-anlaggningar"]),
+    await tile(fam("automatiska-anlaggningar").title[l], "faic", FAM_PATH["automatiska-anlaggningar"]),
+    await tile(ccpTitle[l], "ccp", `${BASE}/manuella-pumpar/ic-325-ic325-ccp#ic325-ccp`),
+    await tile(mcmTitle[l], "mcm", `${BASE}/mobila-anlaggningar`)
+  ];
+  const parts = [];
+  for (const slug of ["blandare", "omrorare", "injekteringspumpar"]) parts.push(await tile(fam(slug).title[l], FAM_TILE[slug], FAM_PATH[slug]));
+  const dpvTile = await tile(T.dpv, "dpv", `${BASE}/manuella-pumpar/dataloggare-dpv`);
+  const mi = (it) => ({ title: it.title, href: it.href, image: it.image });
+  return {
+    menu: [{ title: T.units, items: units.map(mi) }, { title: T.parts, items: parts.map(mi) }, { title: T.reg, items: [mi(dpvTile)] }],
+    main: genBlocks([{ type: "heading", level: 2, text: T.units }, { type: "modules", layout: "tiles", columns: 4, square: true, more: false, items: units }, { type: "heading", level: 2, text: T.parts }, { type: "modules", layout: "tiles", columns: 3, square: true, more: false, items: parts }]),
+    reg: genBlocks([{ type: "heading", level: 2, text: T.reg }, { type: "modules", layout: "tiles", columns: 4, square: true, more: false, items: [await tile(T.dpv, "dpv", `${BASE}/manuella-pumpar/dataloggare-dpv`)] }])
   };
-  const name = { sv: "Hitta rätt maskin", en: "Find the right machine", es: "Encuentre la máquina adecuada", no: "Finn riktig maskin" };
-  const i18n = {};
-  for (const l of LANGS) {
-    i18n[l] = {
-      title: name[l], h1: name[l], description: intro[l].replace(/<[^>]+>/g, "").slice(0, 200),
-      blocks: [{ ...crumb }, { type: "text", html: intro[l] }, ...(await tileGroups(l)),
-        { type: "button", kind: "download", text: { sv: "Huvudbroschyr (produktportfölj)", en: "Main brochure (product portfolio)", es: "Folleto principal (cartera de productos)", no: "Hovedbrosjyre (produktportefølje)" }[l], href: "/assets/docs/haeny-portfolio-brochure-en.pdf" },
-        { type: "button", kind: "download", text: { sv: "Komplett broschyr: blandning och injektering", en: "Complete brochure: mixing and injection", es: "Folleto completo: mezcla e inyección", no: "Komplett brosjyre: blanding og injeksjon" }[l], href: "/assets/docs/haeny-gesamt-mit-brochure-en.pdf" }]
-    };
-  }
-  out("produkter/haeny/hitta-ratt-maskin.json", { path: HUB, updated: date, template: "product", order: 0, published: true, i18n });
 }
-
-// ---------- the Häny brand page: the same tile groups replace its old tiles ----------
 {
   const bf = path.join(ROOT, "content/pages/produkter/haeny.json");
-  const raw = fs.readFileSync(bf, "utf8"); const eol = raw.includes("\r\n") ? "\r\n" : "\n";
-  const j = JSON.parse(raw);
+  const j = readJson(bf);
+  const REL = { mixer: "blandare", impeller: "blandare", agitator: "omrorare", plunger: "injekteringspumpar", pressure: "injekteringspumpar" };
+  const OLD_PLUNGER = { sv: "Genomskärning av pumpmodulen", en: "Cross-section of the pump module", es: "Sección de la unidad de bomba", no: "Tverrsnitt av pumpemodulen" };
   for (const l of LANGS) {
-    const all = j.i18n[l].blocks;
-    let at = all.findIndex((b) => b.gen), replace = 0;
-    const bl = all.filter((b) => !b.gen);
-    if (at < 0) { at = bl.findIndex((b) => b.type === "modules"); replace = 1; }
-    if (at < 0) continue;
-    bl.splice(at, replace, ...(await tileGroups(l)));
+    const bl = j.i18n[l].blocks.filter((b) => !b.gen);
+    // where the old tile blocks were: before the technology heading
+    const techAt = (() => { const c = bl.findIndex((b) => b.type === "columns"); return c > 0 && bl[c - 1].type === "heading" ? c - 1 : c; })();
+    const tg = await tileGroups(l);
+    bl.splice(techAt, 0, ...tg.main);
+    const silo = bl.findIndex((b) => b.type === "columns" && b.left && b.left[0] && /ahlm-st-5-2/.test(b.left[0].src || ""));
+    bl.splice(silo < 0 ? bl.length : silo, 0, ...tg.reg);
+    // links of the technology sections now go to the family pages
+    for (const b of bl) if (b.type === "columns") {
+      const src = (b.left[0] && b.left[0].src) || "";
+      const key = /tech-mixer|haeny-2\./.test(src) ? "mixer" : /haeny-3\./.test(src) ? "impeller" : /tech-agitator/.test(src) ? "agitator" : /tech-plunger|haeny-4\./.test(src) ? "plunger" : /haeny-5\./.test(src) ? "pressure" : null;
+      if (!key) continue;
+      for (const x of b.right) if (x.type === "related" && x.tech) x.items = [{ href: FAM_PATH[REL[key]] }];
+      // the plunger: the new single/double picture and, below it, the old cross-section drawing
+      if (key === "plunger" && !b.left.some((x) => /haeny-4\.webp$/.test(x.src || ""))) {
+        b.left.push({ type: "image", alt: OLD_PLUNGER[l], ...(await dim("/assets/img/haeny-4.webp")), src: "/assets/img/haeny-4.webp", caption: OLD_PLUNGER[l] });
+      }
+    }
     j.i18n[l].blocks = bl;
+    j.i18n[l].menu = tg.menu;
   }
-  fs.writeFileSync(bf, JSON.stringify(j, null, 2).replace(/\n/g, eol) + eol); console.log("updated produkter/haeny.json");
+  writeJson(bf, j); console.log("updated produkter/haeny.json");
 }
 
-// ---------- tidy up what the merge made obsolete ----------
-for (const gone of ["triplexpump", "automatiska-anlaggningar"]) { const p = path.join(PAGES, gone + ".json"); if (fs.existsSync(p)) { fs.rmSync(p); console.log("removed", gone); } }
+// ---------- tidy up: the finder hub and its sub pages are gone, their addresses forward to the pages that replace them ----------
 {
-  const rf = path.join(ROOT, "content/redirects.json"); const r = JSON.parse(fs.readFileSync(rf, "utf8"));
-  r[`${HUB}/triplexpump`] = `${HUB}/injekteringspumpar`; r[`${HUB}/automatiska-anlaggningar`] = "/produkter/haeny/automatiska-pumpar";
+  const HUB = `${BASE}/hitta-ratt-maskin`;
+  const gone = [["", BASE], ["/blandare", FAM_PATH.blandare], ["/omrorare", FAM_PATH.omrorare], ["/injekteringspumpar", FAM_PATH.injekteringspumpar], ["/kompakta-anlaggningar", FAM_PATH["kompakta-anlaggningar"]], ["/mobila-anlaggningar", `${BASE}/mobila-anlaggningar`], ["/triplexpump", FAM_PATH.injekteringspumpar], ["/automatiska-anlaggningar", FAM_PATH["automatiska-anlaggningar"]]];
+  for (const [sub] of gone) { const q = path.join(ROOT, "content/pages/produkter/haeny/hitta-ratt-maskin" + sub + ".json"); if (fs.existsSync(q)) { fs.rmSync(q); console.log("removed", HUB + sub); } }
+  const dir = path.join(ROOT, "content/pages/produkter/haeny/hitta-ratt-maskin"); if (fs.existsSync(dir) && !fs.readdirSync(dir).length) fs.rmdirSync(dir);
+  const rf = path.join(ROOT, "content/redirects.json"); const r = readJson(rf);
+  for (const [sub, to] of gone) r[HUB + sub] = to;
   fs.writeFileSync(rf, JSON.stringify(r, null, 2) + "\n");
 }
 

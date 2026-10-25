@@ -47,37 +47,38 @@
           "type": "modules",
           "layout": "tiles",
           "columns": 4,
+          "square": true,
           "more": false,
           "items": [
             {
               "title": "Kompakta anläggningar (IC)",
-              "image": "/assets/img/haeny-manuella-pumpar-ic-310-ic-311.webp",
+              "image": "/assets/img/haeny-tile-ic.webp",
               "alt": "Kompakta anläggningar (IC)",
-              "href": "/produkter/haeny/hitta-ratt-maskin/kompakta-anlaggningar",
-              "width": 1083,
-              "height": 1169
-            },
-            {
-              "title": "Kompakta PU-anläggningar (IC 325 CCP)",
-              "image": "/assets/img/haeny-finder-ccp.webp",
-              "alt": "Kompakta PU-anläggningar (IC 325 CCP)",
-              "href": "/produkter/haeny/manuella-pumpar/ic-325-ic325-ccp#ic325-ccp",
+              "href": "/produkter/haeny/manuella-pumpar",
               "width": 1000,
               "height": 1000
             },
             {
               "title": "Automatiska anläggningar (FAIC)",
-              "image": "/assets/img/haeny-automatiska-pumpar.webp",
+              "image": "/assets/img/haeny-tile-faic.webp",
               "alt": "Automatiska anläggningar (FAIC)",
               "href": "/produkter/haeny/automatiska-pumpar",
-              "width": 704,
-              "height": 827
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "Kompakta PU-anläggningar (CCP)",
+              "image": "/assets/img/haeny-tile-ccp.webp",
+              "alt": "Kompakta PU-anläggningar (CCP)",
+              "href": "/produkter/haeny/manuella-pumpar/ic-325-ic325-ccp#ic325-ccp",
+              "width": 1000,
+              "height": 1000
             },
             {
               "title": "Mobila anläggningar (MCM)",
-              "image": "/assets/img/haeny-finder-mcm.webp",
+              "image": "/assets/img/haeny-tile-mcm.webp",
               "alt": "Mobila anläggningar (MCM)",
-              "href": "/produkter/haeny/hitta-ratt-maskin/mobila-anlaggningar",
+              "href": "/produkter/haeny/mobila-anlaggningar",
               "width": 1000,
               "height": 1000
             }
@@ -94,54 +95,32 @@
           "type": "modules",
           "layout": "tiles",
           "columns": 3,
+          "square": true,
           "more": false,
           "items": [
             {
               "title": "Blandare (HCM)",
-              "image": "/assets/img/haeny-finder-hcm.webp",
+              "image": "/assets/img/haeny-tile-hcm.webp",
               "alt": "Blandare (HCM)",
-              "href": "/produkter/haeny/hitta-ratt-maskin/blandare",
+              "href": "/produkter/haeny/blandare",
               "width": 1000,
               "height": 1000
             },
             {
               "title": "Omrörare (HRW)",
-              "image": "/assets/img/haeny-finder-hrw.webp",
+              "image": "/assets/img/haeny-tile-hrw.webp",
               "alt": "Omrörare (HRW)",
-              "href": "/produkter/haeny/hitta-ratt-maskin/omrorare",
+              "href": "/produkter/haeny/omrorare",
               "width": 1000,
               "height": 1000
             },
             {
               "title": "Injekteringspumpar (ZMP)",
-              "image": "/assets/img/haeny-finder-zmp.webp",
+              "image": "/assets/img/haeny-tile-zmp.webp",
               "alt": "Injekteringspumpar (ZMP)",
-              "href": "/produkter/haeny/hitta-ratt-maskin/injekteringspumpar",
+              "href": "/produkter/haeny/injekteringspumpar",
               "width": 1000,
               "height": 1000
-            }
-          ],
-          "gen": true
-        },
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "Registrering och styrning",
-          "gen": true
-        },
-        {
-          "type": "modules",
-          "layout": "tiles",
-          "columns": 4,
-          "more": false,
-          "items": [
-            {
-              "title": "Dataloggare (DPV-H)",
-              "image": "/assets/img/haeny-manuella-pumpar-dataloggare-dpv-2.webp",
-              "alt": "Dataloggare (DPV-H)",
-              "href": "/produkter/haeny/manuella-pumpar/dataloggare-dpv",
-              "width": 504,
-              "height": 495
             }
           ],
           "gen": true
@@ -183,7 +162,7 @@
               "title": "Se produkten:",
               "items": [
                 {
-                  "href": "/produkter/haeny/hitta-ratt-maskin/blandare"
+                  "href": "/produkter/haeny/blandare"
                 }
               ],
               "tech": true
@@ -218,7 +197,7 @@
               "title": "Se produkten:",
               "items": [
                 {
-                  "href": "/produkter/haeny/hitta-ratt-maskin/blandare"
+                  "href": "/produkter/haeny/blandare"
                 }
               ],
               "tech": true
@@ -253,7 +232,7 @@
               "title": "Se produkten:",
               "items": [
                 {
-                  "href": "/produkter/haeny/hitta-ratt-maskin/omrorare"
+                  "href": "/produkter/haeny/omrorare"
                 }
               ],
               "tech": true
@@ -271,6 +250,14 @@
               "height": 786,
               "src": "/assets/img/haeny-tech-plunger.webp",
               "caption": "Enkel (ZMP 610) och dubbel pumpmodul (ZMP 625)"
+            },
+            {
+              "type": "image",
+              "alt": "Genomskärning av pumpmodulen",
+              "width": 682,
+              "height": 1548,
+              "src": "/assets/img/haeny-4.webp",
+              "caption": "Genomskärning av pumpmodulen"
             }
           ],
           "right": [
@@ -297,7 +284,7 @@
               "title": "Se produkten:",
               "items": [
                 {
-                  "href": "/produkter/haeny/hitta-ratt-maskin/injekteringspumpar"
+                  "href": "/produkter/haeny/injekteringspumpar"
                 }
               ],
               "tech": true
@@ -341,12 +328,36 @@
               "title": "Se produkten:",
               "items": [
                 {
-                  "href": "/produkter/haeny/hitta-ratt-maskin/injekteringspumpar"
+                  "href": "/produkter/haeny/injekteringspumpar"
                 }
               ],
               "tech": true
             }
           ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Registrering och styrning",
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 4,
+          "square": true,
+          "more": false,
+          "items": [
+            {
+              "title": "Dataloggare (DPV-H)",
+              "image": "/assets/img/haeny-tile-dpv.webp",
+              "alt": "Dataloggare (DPV-H)",
+              "href": "/produkter/haeny/manuella-pumpar/dataloggare-dpv",
+              "width": 1000,
+              "height": 1000
+            }
+          ],
+          "gen": true
         },
         {
           "type": "columns",
@@ -387,6 +398,63 @@
           "inline": true,
           "maxWidth": 190,
           "align": "right"
+        }
+      ],
+      "menu": [
+        {
+          "title": "Kompletta enheter",
+          "items": [
+            {
+              "title": "Kompakta anläggningar (IC)",
+              "href": "/produkter/haeny/manuella-pumpar",
+              "image": "/assets/img/haeny-tile-ic.webp"
+            },
+            {
+              "title": "Automatiska anläggningar (FAIC)",
+              "href": "/produkter/haeny/automatiska-pumpar",
+              "image": "/assets/img/haeny-tile-faic.webp"
+            },
+            {
+              "title": "Kompakta PU-anläggningar (CCP)",
+              "href": "/produkter/haeny/manuella-pumpar/ic-325-ic325-ccp#ic325-ccp",
+              "image": "/assets/img/haeny-tile-ccp.webp"
+            },
+            {
+              "title": "Mobila anläggningar (MCM)",
+              "href": "/produkter/haeny/mobila-anlaggningar",
+              "image": "/assets/img/haeny-tile-mcm.webp"
+            }
+          ]
+        },
+        {
+          "title": "Delar",
+          "items": [
+            {
+              "title": "Blandare (HCM)",
+              "href": "/produkter/haeny/blandare",
+              "image": "/assets/img/haeny-tile-hcm.webp"
+            },
+            {
+              "title": "Omrörare (HRW)",
+              "href": "/produkter/haeny/omrorare",
+              "image": "/assets/img/haeny-tile-hrw.webp"
+            },
+            {
+              "title": "Injekteringspumpar (ZMP)",
+              "href": "/produkter/haeny/injekteringspumpar",
+              "image": "/assets/img/haeny-tile-zmp.webp"
+            }
+          ]
+        },
+        {
+          "title": "Registrering och styrning",
+          "items": [
+            {
+              "title": "Dataloggare (DPV-H)",
+              "href": "/produkter/haeny/manuella-pumpar/dataloggare-dpv",
+              "image": "/assets/img/haeny-tile-dpv.webp"
+            }
+          ]
         }
       ]
     },
@@ -429,37 +497,38 @@
           "type": "modules",
           "layout": "tiles",
           "columns": 4,
+          "square": true,
           "more": false,
           "items": [
             {
               "title": "Compact grout plants (IC)",
-              "image": "/assets/img/haeny-manuella-pumpar-ic-310-ic-311.webp",
+              "image": "/assets/img/haeny-tile-ic.webp",
               "alt": "Compact grout plants (IC)",
-              "href": "/produkter/haeny/hitta-ratt-maskin/kompakta-anlaggningar",
-              "width": 1083,
-              "height": 1169
-            },
-            {
-              "title": "Compact PU plants (IC 325 CCP)",
-              "image": "/assets/img/haeny-finder-ccp.webp",
-              "alt": "Compact PU plants (IC 325 CCP)",
-              "href": "/produkter/haeny/manuella-pumpar/ic-325-ic325-ccp#ic325-ccp",
+              "href": "/produkter/haeny/manuella-pumpar",
               "width": 1000,
               "height": 1000
             },
             {
               "title": "Automated grout plants (FAIC)",
-              "image": "/assets/img/haeny-automatiska-pumpar.webp",
+              "image": "/assets/img/haeny-tile-faic.webp",
               "alt": "Automated grout plants (FAIC)",
               "href": "/produkter/haeny/automatiska-pumpar",
-              "width": 704,
-              "height": 827
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "Compact PU plants (CCP)",
+              "image": "/assets/img/haeny-tile-ccp.webp",
+              "alt": "Compact PU plants (CCP)",
+              "href": "/produkter/haeny/manuella-pumpar/ic-325-ic325-ccp#ic325-ccp",
+              "width": 1000,
+              "height": 1000
             },
             {
               "title": "Portable mixing plants (MCM)",
-              "image": "/assets/img/haeny-finder-mcm.webp",
+              "image": "/assets/img/haeny-tile-mcm.webp",
               "alt": "Portable mixing plants (MCM)",
-              "href": "/produkter/haeny/hitta-ratt-maskin/mobila-anlaggningar",
+              "href": "/produkter/haeny/mobila-anlaggningar",
               "width": 1000,
               "height": 1000
             }
@@ -476,54 +545,32 @@
           "type": "modules",
           "layout": "tiles",
           "columns": 3,
+          "square": true,
           "more": false,
           "items": [
             {
               "title": "Mixers (HCM)",
-              "image": "/assets/img/haeny-finder-hcm.webp",
+              "image": "/assets/img/haeny-tile-hcm.webp",
               "alt": "Mixers (HCM)",
-              "href": "/produkter/haeny/hitta-ratt-maskin/blandare",
+              "href": "/produkter/haeny/blandare",
               "width": 1000,
               "height": 1000
             },
             {
               "title": "Agitators (HRW)",
-              "image": "/assets/img/haeny-finder-hrw.webp",
+              "image": "/assets/img/haeny-tile-hrw.webp",
               "alt": "Agitators (HRW)",
-              "href": "/produkter/haeny/hitta-ratt-maskin/omrorare",
+              "href": "/produkter/haeny/omrorare",
               "width": 1000,
               "height": 1000
             },
             {
               "title": "Grout pumps (ZMP)",
-              "image": "/assets/img/haeny-finder-zmp.webp",
+              "image": "/assets/img/haeny-tile-zmp.webp",
               "alt": "Grout pumps (ZMP)",
-              "href": "/produkter/haeny/hitta-ratt-maskin/injekteringspumpar",
+              "href": "/produkter/haeny/injekteringspumpar",
               "width": 1000,
               "height": 1000
-            }
-          ],
-          "gen": true
-        },
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "Recording and control",
-          "gen": true
-        },
-        {
-          "type": "modules",
-          "layout": "tiles",
-          "columns": 4,
-          "more": false,
-          "items": [
-            {
-              "title": "Data logger (DPV-H)",
-              "image": "/assets/img/haeny-manuella-pumpar-dataloggare-dpv-2.webp",
-              "alt": "Data logger (DPV-H)",
-              "href": "/produkter/haeny/manuella-pumpar/dataloggare-dpv",
-              "width": 504,
-              "height": 495
             }
           ],
           "gen": true
@@ -565,7 +612,7 @@
               "title": "See the product:",
               "items": [
                 {
-                  "href": "/produkter/haeny/hitta-ratt-maskin/blandare"
+                  "href": "/produkter/haeny/blandare"
                 }
               ],
               "tech": true
@@ -600,7 +647,7 @@
               "title": "See the product:",
               "items": [
                 {
-                  "href": "/produkter/haeny/hitta-ratt-maskin/blandare"
+                  "href": "/produkter/haeny/blandare"
                 }
               ],
               "tech": true
@@ -635,7 +682,7 @@
               "title": "See the product:",
               "items": [
                 {
-                  "href": "/produkter/haeny/hitta-ratt-maskin/omrorare"
+                  "href": "/produkter/haeny/omrorare"
                 }
               ],
               "tech": true
@@ -653,6 +700,14 @@
               "height": 786,
               "src": "/assets/img/haeny-tech-plunger.webp",
               "caption": "Single (ZMP 610) and double pump module (ZMP 625)"
+            },
+            {
+              "type": "image",
+              "alt": "Cross-section of the pump module",
+              "width": 682,
+              "height": 1548,
+              "src": "/assets/img/haeny-4.webp",
+              "caption": "Cross-section of the pump module"
             }
           ],
           "right": [
@@ -679,7 +734,7 @@
               "title": "See the product:",
               "items": [
                 {
-                  "href": "/produkter/haeny/hitta-ratt-maskin/injekteringspumpar"
+                  "href": "/produkter/haeny/injekteringspumpar"
                 }
               ],
               "tech": true
@@ -723,12 +778,36 @@
               "title": "See the product:",
               "items": [
                 {
-                  "href": "/produkter/haeny/hitta-ratt-maskin/injekteringspumpar"
+                  "href": "/produkter/haeny/injekteringspumpar"
                 }
               ],
               "tech": true
             }
           ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Recording and control",
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 4,
+          "square": true,
+          "more": false,
+          "items": [
+            {
+              "title": "Data logger (DPV-H)",
+              "image": "/assets/img/haeny-tile-dpv.webp",
+              "alt": "Data logger (DPV-H)",
+              "href": "/produkter/haeny/manuella-pumpar/dataloggare-dpv",
+              "width": 1000,
+              "height": 1000
+            }
+          ],
+          "gen": true
         },
         {
           "type": "columns",
@@ -771,7 +850,64 @@
           "align": "right"
         }
       ],
-      "published": true
+      "published": true,
+      "menu": [
+        {
+          "title": "Complete units",
+          "items": [
+            {
+              "title": "Compact grout plants (IC)",
+              "href": "/produkter/haeny/manuella-pumpar",
+              "image": "/assets/img/haeny-tile-ic.webp"
+            },
+            {
+              "title": "Automated grout plants (FAIC)",
+              "href": "/produkter/haeny/automatiska-pumpar",
+              "image": "/assets/img/haeny-tile-faic.webp"
+            },
+            {
+              "title": "Compact PU plants (CCP)",
+              "href": "/produkter/haeny/manuella-pumpar/ic-325-ic325-ccp#ic325-ccp",
+              "image": "/assets/img/haeny-tile-ccp.webp"
+            },
+            {
+              "title": "Portable mixing plants (MCM)",
+              "href": "/produkter/haeny/mobila-anlaggningar",
+              "image": "/assets/img/haeny-tile-mcm.webp"
+            }
+          ]
+        },
+        {
+          "title": "Parts",
+          "items": [
+            {
+              "title": "Mixers (HCM)",
+              "href": "/produkter/haeny/blandare",
+              "image": "/assets/img/haeny-tile-hcm.webp"
+            },
+            {
+              "title": "Agitators (HRW)",
+              "href": "/produkter/haeny/omrorare",
+              "image": "/assets/img/haeny-tile-hrw.webp"
+            },
+            {
+              "title": "Grout pumps (ZMP)",
+              "href": "/produkter/haeny/injekteringspumpar",
+              "image": "/assets/img/haeny-tile-zmp.webp"
+            }
+          ]
+        },
+        {
+          "title": "Recording and control",
+          "items": [
+            {
+              "title": "Data logger (DPV-H)",
+              "href": "/produkter/haeny/manuella-pumpar/dataloggare-dpv",
+              "image": "/assets/img/haeny-tile-dpv.webp"
+            }
+          ]
+        }
+      ]
     },
     "es": {
       "title": "HÄNY",
@@ -812,37 +948,38 @@
           "type": "modules",
           "layout": "tiles",
           "columns": 4,
+          "square": true,
           "more": false,
           "items": [
             {
               "title": "Plantas de inyección compactas (IC)",
-              "image": "/assets/img/haeny-manuella-pumpar-ic-310-ic-311.webp",
+              "image": "/assets/img/haeny-tile-ic.webp",
               "alt": "Plantas de inyección compactas (IC)",
-              "href": "/produkter/haeny/hitta-ratt-maskin/kompakta-anlaggningar",
-              "width": 1083,
-              "height": 1169
-            },
-            {
-              "title": "Plantas compactas PU (IC 325 CCP)",
-              "image": "/assets/img/haeny-finder-ccp.webp",
-              "alt": "Plantas compactas PU (IC 325 CCP)",
-              "href": "/produkter/haeny/manuella-pumpar/ic-325-ic325-ccp#ic325-ccp",
+              "href": "/produkter/haeny/manuella-pumpar",
               "width": 1000,
               "height": 1000
             },
             {
               "title": "Plantas de inyección automáticas (FAIC)",
-              "image": "/assets/img/haeny-automatiska-pumpar.webp",
+              "image": "/assets/img/haeny-tile-faic.webp",
               "alt": "Plantas de inyección automáticas (FAIC)",
               "href": "/produkter/haeny/automatiska-pumpar",
-              "width": 704,
-              "height": 827
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "Plantas compactas PU (CCP)",
+              "image": "/assets/img/haeny-tile-ccp.webp",
+              "alt": "Plantas compactas PU (CCP)",
+              "href": "/produkter/haeny/manuella-pumpar/ic-325-ic325-ccp#ic325-ccp",
+              "width": 1000,
+              "height": 1000
             },
             {
               "title": "Plantas de mezcla móviles (MCM)",
-              "image": "/assets/img/haeny-finder-mcm.webp",
+              "image": "/assets/img/haeny-tile-mcm.webp",
               "alt": "Plantas de mezcla móviles (MCM)",
-              "href": "/produkter/haeny/hitta-ratt-maskin/mobila-anlaggningar",
+              "href": "/produkter/haeny/mobila-anlaggningar",
               "width": 1000,
               "height": 1000
             }
@@ -859,54 +996,32 @@
           "type": "modules",
           "layout": "tiles",
           "columns": 3,
+          "square": true,
           "more": false,
           "items": [
             {
               "title": "Mezcladores (HCM)",
-              "image": "/assets/img/haeny-finder-hcm.webp",
+              "image": "/assets/img/haeny-tile-hcm.webp",
               "alt": "Mezcladores (HCM)",
-              "href": "/produkter/haeny/hitta-ratt-maskin/blandare",
+              "href": "/produkter/haeny/blandare",
               "width": 1000,
               "height": 1000
             },
             {
               "title": "Agitadores (HRW)",
-              "image": "/assets/img/haeny-finder-hrw.webp",
+              "image": "/assets/img/haeny-tile-hrw.webp",
               "alt": "Agitadores (HRW)",
-              "href": "/produkter/haeny/hitta-ratt-maskin/omrorare",
+              "href": "/produkter/haeny/omrorare",
               "width": 1000,
               "height": 1000
             },
             {
               "title": "Bombas de inyección (ZMP)",
-              "image": "/assets/img/haeny-finder-zmp.webp",
+              "image": "/assets/img/haeny-tile-zmp.webp",
               "alt": "Bombas de inyección (ZMP)",
-              "href": "/produkter/haeny/hitta-ratt-maskin/injekteringspumpar",
+              "href": "/produkter/haeny/injekteringspumpar",
               "width": 1000,
               "height": 1000
-            }
-          ],
-          "gen": true
-        },
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "Registro y control",
-          "gen": true
-        },
-        {
-          "type": "modules",
-          "layout": "tiles",
-          "columns": 4,
-          "more": false,
-          "items": [
-            {
-              "title": "Registrador de datos (DPV-H)",
-              "image": "/assets/img/haeny-manuella-pumpar-dataloggare-dpv-2.webp",
-              "alt": "Registrador de datos (DPV-H)",
-              "href": "/produkter/haeny/manuella-pumpar/dataloggare-dpv",
-              "width": 504,
-              "height": 495
             }
           ],
           "gen": true
@@ -948,7 +1063,7 @@
               "title": "Ver el producto:",
               "items": [
                 {
-                  "href": "/produkter/haeny/hitta-ratt-maskin/blandare"
+                  "href": "/produkter/haeny/blandare"
                 }
               ],
               "tech": true
@@ -983,7 +1098,7 @@
               "title": "Ver el producto:",
               "items": [
                 {
-                  "href": "/produkter/haeny/hitta-ratt-maskin/blandare"
+                  "href": "/produkter/haeny/blandare"
                 }
               ],
               "tech": true
@@ -1018,7 +1133,7 @@
               "title": "Ver el producto:",
               "items": [
                 {
-                  "href": "/produkter/haeny/hitta-ratt-maskin/omrorare"
+                  "href": "/produkter/haeny/omrorare"
                 }
               ],
               "tech": true
@@ -1036,6 +1151,14 @@
               "height": 786,
               "src": "/assets/img/haeny-tech-plunger.webp",
               "caption": "Módulo de bomba simple (ZMP 610) y doble (ZMP 625)"
+            },
+            {
+              "type": "image",
+              "alt": "Sección de la unidad de bomba",
+              "width": 682,
+              "height": 1548,
+              "src": "/assets/img/haeny-4.webp",
+              "caption": "Sección de la unidad de bomba"
             }
           ],
           "right": [
@@ -1062,7 +1185,7 @@
               "title": "Ver el producto:",
               "items": [
                 {
-                  "href": "/produkter/haeny/hitta-ratt-maskin/injekteringspumpar"
+                  "href": "/produkter/haeny/injekteringspumpar"
                 }
               ],
               "tech": true
@@ -1106,12 +1229,36 @@
               "title": "Ver el producto:",
               "items": [
                 {
-                  "href": "/produkter/haeny/hitta-ratt-maskin/injekteringspumpar"
+                  "href": "/produkter/haeny/injekteringspumpar"
                 }
               ],
               "tech": true
             }
           ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Registro y control",
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 4,
+          "square": true,
+          "more": false,
+          "items": [
+            {
+              "title": "Registrador de datos (DPV-H)",
+              "image": "/assets/img/haeny-tile-dpv.webp",
+              "alt": "Registrador de datos (DPV-H)",
+              "href": "/produkter/haeny/manuella-pumpar/dataloggare-dpv",
+              "width": 1000,
+              "height": 1000
+            }
+          ],
+          "gen": true
         },
         {
           "type": "columns",
@@ -1154,7 +1301,64 @@
           "align": "right"
         }
       ],
-      "published": true
+      "published": true,
+      "menu": [
+        {
+          "title": "Equipos completos",
+          "items": [
+            {
+              "title": "Plantas de inyección compactas (IC)",
+              "href": "/produkter/haeny/manuella-pumpar",
+              "image": "/assets/img/haeny-tile-ic.webp"
+            },
+            {
+              "title": "Plantas de inyección automáticas (FAIC)",
+              "href": "/produkter/haeny/automatiska-pumpar",
+              "image": "/assets/img/haeny-tile-faic.webp"
+            },
+            {
+              "title": "Plantas compactas PU (CCP)",
+              "href": "/produkter/haeny/manuella-pumpar/ic-325-ic325-ccp#ic325-ccp",
+              "image": "/assets/img/haeny-tile-ccp.webp"
+            },
+            {
+              "title": "Plantas de mezcla móviles (MCM)",
+              "href": "/produkter/haeny/mobila-anlaggningar",
+              "image": "/assets/img/haeny-tile-mcm.webp"
+            }
+          ]
+        },
+        {
+          "title": "Componentes",
+          "items": [
+            {
+              "title": "Mezcladores (HCM)",
+              "href": "/produkter/haeny/blandare",
+              "image": "/assets/img/haeny-tile-hcm.webp"
+            },
+            {
+              "title": "Agitadores (HRW)",
+              "href": "/produkter/haeny/omrorare",
+              "image": "/assets/img/haeny-tile-hrw.webp"
+            },
+            {
+              "title": "Bombas de inyección (ZMP)",
+              "href": "/produkter/haeny/injekteringspumpar",
+              "image": "/assets/img/haeny-tile-zmp.webp"
+            }
+          ]
+        },
+        {
+          "title": "Registro y control",
+          "items": [
+            {
+              "title": "Registrador de datos (DPV-H)",
+              "href": "/produkter/haeny/manuella-pumpar/dataloggare-dpv",
+              "image": "/assets/img/haeny-tile-dpv.webp"
+            }
+          ]
+        }
+      ]
     },
     "no": {
       "title": "HÄNY",
@@ -1195,37 +1399,38 @@
           "type": "modules",
           "layout": "tiles",
           "columns": 4,
+          "square": true,
           "more": false,
           "items": [
             {
               "title": "Kompakte injeksjonsanlegg (IC)",
-              "image": "/assets/img/haeny-manuella-pumpar-ic-310-ic-311.webp",
+              "image": "/assets/img/haeny-tile-ic.webp",
               "alt": "Kompakte injeksjonsanlegg (IC)",
-              "href": "/produkter/haeny/hitta-ratt-maskin/kompakta-anlaggningar",
-              "width": 1083,
-              "height": 1169
-            },
-            {
-              "title": "Kompakte PU-anlegg (IC 325 CCP)",
-              "image": "/assets/img/haeny-finder-ccp.webp",
-              "alt": "Kompakte PU-anlegg (IC 325 CCP)",
-              "href": "/produkter/haeny/manuella-pumpar/ic-325-ic325-ccp#ic325-ccp",
+              "href": "/produkter/haeny/manuella-pumpar",
               "width": 1000,
               "height": 1000
             },
             {
               "title": "Automatiske injeksjonsanlegg (FAIC)",
-              "image": "/assets/img/haeny-automatiska-pumpar.webp",
+              "image": "/assets/img/haeny-tile-faic.webp",
               "alt": "Automatiske injeksjonsanlegg (FAIC)",
               "href": "/produkter/haeny/automatiska-pumpar",
-              "width": 704,
-              "height": 827
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "Kompakte PU-anlegg (CCP)",
+              "image": "/assets/img/haeny-tile-ccp.webp",
+              "alt": "Kompakte PU-anlegg (CCP)",
+              "href": "/produkter/haeny/manuella-pumpar/ic-325-ic325-ccp#ic325-ccp",
+              "width": 1000,
+              "height": 1000
             },
             {
               "title": "Mobile blandeanlegg (MCM)",
-              "image": "/assets/img/haeny-finder-mcm.webp",
+              "image": "/assets/img/haeny-tile-mcm.webp",
               "alt": "Mobile blandeanlegg (MCM)",
-              "href": "/produkter/haeny/hitta-ratt-maskin/mobila-anlaggningar",
+              "href": "/produkter/haeny/mobila-anlaggningar",
               "width": 1000,
               "height": 1000
             }
@@ -1242,54 +1447,32 @@
           "type": "modules",
           "layout": "tiles",
           "columns": 3,
+          "square": true,
           "more": false,
           "items": [
             {
               "title": "Miksere (HCM)",
-              "image": "/assets/img/haeny-finder-hcm.webp",
+              "image": "/assets/img/haeny-tile-hcm.webp",
               "alt": "Miksere (HCM)",
-              "href": "/produkter/haeny/hitta-ratt-maskin/blandare",
+              "href": "/produkter/haeny/blandare",
               "width": 1000,
               "height": 1000
             },
             {
               "title": "Røreverk (HRW)",
-              "image": "/assets/img/haeny-finder-hrw.webp",
+              "image": "/assets/img/haeny-tile-hrw.webp",
               "alt": "Røreverk (HRW)",
-              "href": "/produkter/haeny/hitta-ratt-maskin/omrorare",
+              "href": "/produkter/haeny/omrorare",
               "width": 1000,
               "height": 1000
             },
             {
               "title": "Injeksjonspumper (ZMP)",
-              "image": "/assets/img/haeny-finder-zmp.webp",
+              "image": "/assets/img/haeny-tile-zmp.webp",
               "alt": "Injeksjonspumper (ZMP)",
-              "href": "/produkter/haeny/hitta-ratt-maskin/injekteringspumpar",
+              "href": "/produkter/haeny/injekteringspumpar",
               "width": 1000,
               "height": 1000
-            }
-          ],
-          "gen": true
-        },
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "Registrering og styring",
-          "gen": true
-        },
-        {
-          "type": "modules",
-          "layout": "tiles",
-          "columns": 4,
-          "more": false,
-          "items": [
-            {
-              "title": "Datalogger (DPV-H)",
-              "image": "/assets/img/haeny-manuella-pumpar-dataloggare-dpv-2.webp",
-              "alt": "Datalogger (DPV-H)",
-              "href": "/produkter/haeny/manuella-pumpar/dataloggare-dpv",
-              "width": 504,
-              "height": 495
             }
           ],
           "gen": true
@@ -1331,7 +1514,7 @@
               "title": "Se produktet:",
               "items": [
                 {
-                  "href": "/produkter/haeny/hitta-ratt-maskin/blandare"
+                  "href": "/produkter/haeny/blandare"
                 }
               ],
               "tech": true
@@ -1366,7 +1549,7 @@
               "title": "Se produktet:",
               "items": [
                 {
-                  "href": "/produkter/haeny/hitta-ratt-maskin/blandare"
+                  "href": "/produkter/haeny/blandare"
                 }
               ],
               "tech": true
@@ -1401,7 +1584,7 @@
               "title": "Se produktet:",
               "items": [
                 {
-                  "href": "/produkter/haeny/hitta-ratt-maskin/omrorare"
+                  "href": "/produkter/haeny/omrorare"
                 }
               ],
               "tech": true
@@ -1419,6 +1602,14 @@
               "height": 786,
               "src": "/assets/img/haeny-tech-plunger.webp",
               "caption": "Enkel (ZMP 610) og dobbel pumpemodul (ZMP 625)"
+            },
+            {
+              "type": "image",
+              "alt": "Tverrsnitt av pumpemodulen",
+              "width": 682,
+              "height": 1548,
+              "src": "/assets/img/haeny-4.webp",
+              "caption": "Tverrsnitt av pumpemodulen"
             }
           ],
           "right": [
@@ -1445,7 +1636,7 @@
               "title": "Se produktet:",
               "items": [
                 {
-                  "href": "/produkter/haeny/hitta-ratt-maskin/injekteringspumpar"
+                  "href": "/produkter/haeny/injekteringspumpar"
                 }
               ],
               "tech": true
@@ -1489,12 +1680,36 @@
               "title": "Se produktet:",
               "items": [
                 {
-                  "href": "/produkter/haeny/hitta-ratt-maskin/injekteringspumpar"
+                  "href": "/produkter/haeny/injekteringspumpar"
                 }
               ],
               "tech": true
             }
           ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Registrering og styring",
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 4,
+          "square": true,
+          "more": false,
+          "items": [
+            {
+              "title": "Datalogger (DPV-H)",
+              "image": "/assets/img/haeny-tile-dpv.webp",
+              "alt": "Datalogger (DPV-H)",
+              "href": "/produkter/haeny/manuella-pumpar/dataloggare-dpv",
+              "width": 1000,
+              "height": 1000
+            }
+          ],
+          "gen": true
         },
         {
           "type": "columns",
@@ -1537,7 +1752,64 @@
           "align": "right"
         }
       ],
-      "published": true
+      "published": true,
+      "menu": [
+        {
+          "title": "Komplette enheter",
+          "items": [
+            {
+              "title": "Kompakte injeksjonsanlegg (IC)",
+              "href": "/produkter/haeny/manuella-pumpar",
+              "image": "/assets/img/haeny-tile-ic.webp"
+            },
+            {
+              "title": "Automatiske injeksjonsanlegg (FAIC)",
+              "href": "/produkter/haeny/automatiska-pumpar",
+              "image": "/assets/img/haeny-tile-faic.webp"
+            },
+            {
+              "title": "Kompakte PU-anlegg (CCP)",
+              "href": "/produkter/haeny/manuella-pumpar/ic-325-ic325-ccp#ic325-ccp",
+              "image": "/assets/img/haeny-tile-ccp.webp"
+            },
+            {
+              "title": "Mobile blandeanlegg (MCM)",
+              "href": "/produkter/haeny/mobila-anlaggningar",
+              "image": "/assets/img/haeny-tile-mcm.webp"
+            }
+          ]
+        },
+        {
+          "title": "Deler",
+          "items": [
+            {
+              "title": "Miksere (HCM)",
+              "href": "/produkter/haeny/blandare",
+              "image": "/assets/img/haeny-tile-hcm.webp"
+            },
+            {
+              "title": "Røreverk (HRW)",
+              "href": "/produkter/haeny/omrorare",
+              "image": "/assets/img/haeny-tile-hrw.webp"
+            },
+            {
+              "title": "Injeksjonspumper (ZMP)",
+              "href": "/produkter/haeny/injekteringspumpar",
+              "image": "/assets/img/haeny-tile-zmp.webp"
+            }
+          ]
+        },
+        {
+          "title": "Registrering og styring",
+          "items": [
+            {
+              "title": "Datalogger (DPV-H)",
+              "href": "/produkter/haeny/manuella-pumpar/dataloggare-dpv",
+              "image": "/assets/img/haeny-tile-dpv.webp"
+            }
+          ]
+        }
+      ]
     }
   },
   "source": {
