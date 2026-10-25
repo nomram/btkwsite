@@ -47,11 +47,11 @@
           "type": "list",
           "ordered": false,
           "items": [
-            "Extremely compact mixing and injection system with central lifting point for easy transport and minimum installation time",
-            "High production output, quality monitoring and cost savings in terms of personnel costs due to fully automated mixing process",
-            "Precise dosing of individual components is guaranteed by a sophisticated weighing system in the mixer (typical feed of dry components via silos/screw)",
-            "Mixing recipes can be entered and selected via touch screen as required",
-            "Batch records of each mixing cycle with consumption records (total of consumed components) is stored and can be transferred via a USB interface"
+            "Extremt kompakt blandnings- och injekteringssystem med central lyftpunkt för enkel transport och kort installationstid",
+            "Hög produktionskapacitet, kvalitetsövervakning och lägre personalkostnader tack vare helt automatiserad blandning",
+            "Exakt dosering av enskilda komponenter säkras av ett avancerat vägningssystem i blandaren (vanligen matning av torra komponenter via silor/skruv)",
+            "Blandningsrecept kan matas in och väljas via pekskärm efter behov",
+            "Satsprotokoll för varje blandningscykel med förbrukningsregistrering (summa förbrukade komponenter) sparas och kan överföras via USB"
           ],
           "gen": true
         },
@@ -83,8 +83,8 @@
           "type": "list",
           "ordered": false,
           "items": [
-            "Grouting of anchors, soil nails, tension cables as well as for sleeve pipe, rock, and contact injections",
-            "Preparation and pumping of bentonite suspensions for pipe jacking and microtunneling"
+            "Injektering av ankare, jordspik och spännkablar samt manschettrör, berg- och kontaktinjektering",
+            "Beredning och pumpning av bentonitsuspensioner för rörpressning och mikrotunnling"
           ],
           "gen": true
         },
@@ -101,7 +101,7 @@
           "left": [
             {
               "type": "image",
-              "alt": "Automated Grout Plant FAIC 650/710",
+              "alt": "Automatisk injekteringsanläggning FAIC 650/710",
               "width": 506,
               "height": 561,
               "src": "/assets/img/haeny-faic650-710-unit.webp"
@@ -110,17 +110,17 @@
           "right": [
             {
               "type": "text",
-              "html": "The compact grout plants consist of the proven, standard Häny components of a mixer, agitator, and grout pump. In its automated execution the plant provides enormous savings in terms of personnel costs, high production outputs, quality monitoring and enhanced working conditions."
+              "html": "De kompakta injekteringsanläggningarna består av Hänys beprövade standardkomponenter: blandare, omrörare och injekteringspump. I automatiserat utförande ger anläggningen stora besparingar i personalkostnader, hög produktionskapacitet, kvalitetsövervakning och en bättre arbetsmiljö."
             },
             {
               "type": "list",
               "ordered": false,
               "items": [
-                "Extremely compact mixing and injection system with central lifting point for easy transport and minimum installation time",
-                "High production output, quality monitoring and cost savings in terms of personnel costs due to fully automated mixing process",
-                "Precise dosing of individual components is guaranteed by a sophisticated weighing system in the mixer (typical feed of dry components via silos/screw)",
-                "Mixing recipes can be entered and selected via touch screen as required",
-                "Batch records of each mixing cycle with consumption records (total of consumed components) is stored and can be transferred via a USB interface"
+                "Extremt kompakt blandnings- och injekteringssystem med central lyftpunkt för enkel transport och kort installationstid",
+                "Hög produktionskapacitet, kvalitetsövervakning och lägre personalkostnader tack vare helt automatiserad blandning",
+                "Exakt dosering av enskilda komponenter säkras av ett avancerat vägningssystem i blandaren (vanligen matning av torra komponenter via silor/skruv)",
+                "Blandningsrecept kan matas in och väljas via pekskärm efter behov",
+                "Satsprotokoll för varje blandningscykel med förbrukningsregistrering (summa förbrukade komponenter) sparas och kan överföras via USB"
               ]
             }
           ],
@@ -136,115 +136,115 @@
           "type": "list",
           "ordered": false,
           "items": [
-            "Grouting of anchors, soil nails, tension cables as well as for sleeve pipe, rock, and contact injections",
-            "Preparation and pumping of bentonite suspensions for pipe jacking and microtunneling"
+            "Injektering av ankare, jordspik och spännkablar samt manschettrör, berg- och kontaktinjektering",
+            "Beredning och pumpning av bentonitsuspensioner för rörpressning och mikrotunnling"
           ],
           "gen": true
         },
         {
           "type": "datasheet",
           "title": "Teknisk data",
-          "tagline": "Automated Grout Plant FAIC 650/710",
+          "tagline": "Automatisk injekteringsanläggning FAIC 650/710",
           "intro": [],
           "groups": [
             {
-              "title": "Grout pump (ZMP 710)",
+              "title": "Injekteringspump (ZMP 710)",
               "rows": [
                 {
-                  "label": "Capacity FAIC",
+                  "label": "Kapacitet FAIC",
                   "metric": "5 m³/h"
                 },
                 {
-                  "label": "Max. pressure",
+                  "label": "Max. tryck",
                   "metric": "100 bar"
                 },
                 {
-                  "label": "Max. aggregate size",
+                  "label": "Max. kornstorlek",
                   "metric": "8 mm"
                 },
                 {
-                  "label": "Hydraulic tank",
+                  "label": "Hydraultank",
                   "metric": "140 l"
                 },
                 {
-                  "label": "Pump module",
-                  "metric": "single"
+                  "label": "Pumpmodul",
+                  "metric": "enkel"
                 },
                 {
-                  "label": "Cooling water flow rate",
+                  "label": "Kylvattenflöde",
                   "metric": "3–4 l/min"
                 },
                 {
-                  "label": "Cooling water connection",
+                  "label": "Kylvattenanslutning",
                   "metric": "BSP ½\""
                 },
                 {
-                  "label": "Pressure connection",
+                  "label": "Tryckanslutning",
                   "metric": "BSP 2\""
                 }
               ]
             },
             {
-              "title": "Mixer / Agitator",
+              "title": "Blandare / omrörare",
               "rows": [
                 {
-                  "label": "Usable content mixer",
+                  "label": "Användbar volym blandare",
                   "metric": "260 l"
                 },
                 {
-                  "label": "Circulation capacity",
+                  "label": "Cirkulationskapacitet",
                   "metric": "1,400 l/min"
                 },
                 {
-                  "label": "Water connection",
+                  "label": "Vattenanslutning",
                   "metric": "BSP 1\""
                 },
                 {
-                  "label": "Holding capacity agitator",
+                  "label": "Omrörarens kapacitet",
                   "metric": "350 l"
                 }
               ]
             },
             {
-              "title": "Electrical data",
+              "title": "Elektriska data",
               "rows": [
                 {
-                  "label": "Voltage",
+                  "label": "Spänning",
                   "metric": "3x 400/460 V"
                 },
                 {
-                  "label": "Frequency",
+                  "label": "Frekvens",
                   "metric": "50 / 60 Hz"
                 },
                 {
-                  "label": "Nominal power",
+                  "label": "Märkeffekt",
                   "metric": "18.5 / 21 kW"
                 }
               ]
             },
             {
-              "title": "Weight and dimensions",
+              "title": "Vikt och mått",
               "rows": [
                 {
-                  "label": "Total weight",
+                  "label": "Total vikt",
                   "metric": "1,665 kg"
                 },
                 {
-                  "label": "Width",
+                  "label": "Bredd",
                   "metric": "2,031 mm"
                 },
                 {
-                  "label": "Height",
+                  "label": "Höjd",
                   "metric": "1,992 mm"
                 },
                 {
-                  "label": "Length",
+                  "label": "Längd",
                   "metric": "2,156 mm"
                 }
               ]
             }
           ],
-          "note": "1: Water to cement ratio = 1",
+          "note": "1: Vatten/cement-tal = 1",
           "gen": true
         },
         {
@@ -257,15 +257,15 @@
           "type": "list",
           "ordered": false,
           "items": [
-            "Included as standard (Grout pump): Manual pressure and flow control",
-            "Included as standard (Grout pump): Oil level and temperature sensor",
-            "Optional (Mixer / Agitator): Auxiliary mixing unit (recommended for W/C &lt; 0.45)",
-            "Optional (Control): Remote control ON-OFF",
-            "Optional (Control): P/Q-Registration",
-            "Control: PLC weigh batch control with touch screen",
-            "Control: Recipe management",
-            "Control: Automated mixing cycle ON-OFF",
-            "Control: Pump ON-OFF"
+            "Ingår som standard (Injekteringspump): Manuell tryck- och flödesreglering",
+            "Ingår som standard (Injekteringspump): Oljenivå- och temperaturgivare",
+            "Tillval (Blandare / omrörare): Extra blandningsenhet (rekommenderas vid vct &lt; 0,45)",
+            "Tillval (Styrning): Fjärrstyrning PÅ/AV",
+            "Tillval (Styrning): P/Q-registrering (tryck/flöde)",
+            "Styrning: PLC-styrd invägning med pekskärm",
+            "Styrning: Receptstyrning",
+            "Styrning: Automatisk blandningscykel PÅ/AV",
+            "Styrning: Pump PÅ/AV"
           ],
           "gen": true
         },
@@ -312,7 +312,7 @@
           "left": [
             {
               "type": "image",
-              "alt": "Automated Grout Plant FAIC 650/712",
+              "alt": "Automatisk injekteringsanläggning FAIC 650/712",
               "width": 495,
               "height": 555,
               "src": "/assets/img/haeny-faic650-712-unit.webp"
@@ -321,17 +321,17 @@
           "right": [
             {
               "type": "text",
-              "html": "The compact grout plants consist of the proven, standard Häny components of a mixer, agitator, and grout pump. In its automated execution the plant provides enormous savings in terms of personnel costs, high production outputs, quality monitoring and enhanced working conditions."
+              "html": "De kompakta injekteringsanläggningarna består av Hänys beprövade standardkomponenter: blandare, omrörare och injekteringspump. I automatiserat utförande ger anläggningen stora besparingar i personalkostnader, hög produktionskapacitet, kvalitetsövervakning och en bättre arbetsmiljö."
             },
             {
               "type": "list",
               "ordered": false,
               "items": [
-                "Extremely compact mixing and injection system with central lifting point for easy transport and minimum installation time",
-                "High production output, quality monitoring and cost savings in terms of personnel costs due to fully automated mixing process",
-                "Precise dosing of individual components is guaranteed by a sophisticated weighing system in the mixer (typical feed of dry components via silos/screw)",
-                "Mixing recipes can be entered and selected via touch screen as required",
-                "Batch records of each mixing cycle with consumption records (total of consumed components) is stored and can be transferred via a USB interface"
+                "Extremt kompakt blandnings- och injekteringssystem med central lyftpunkt för enkel transport och kort installationstid",
+                "Hög produktionskapacitet, kvalitetsövervakning och lägre personalkostnader tack vare helt automatiserad blandning",
+                "Exakt dosering av enskilda komponenter säkras av ett avancerat vägningssystem i blandaren (vanligen matning av torra komponenter via silor/skruv)",
+                "Blandningsrecept kan matas in och väljas via pekskärm efter behov",
+                "Satsprotokoll för varje blandningscykel med förbrukningsregistrering (summa förbrukade komponenter) sparas och kan överföras via USB"
               ]
             }
           ],
@@ -347,115 +347,115 @@
           "type": "list",
           "ordered": false,
           "items": [
-            "Grouting of anchors, soil nails, tension cables as well as for sleeve pipe, rock, and contact injections",
-            "Preparation and pumping of bentonite suspensions for pipe jacking and microtunneling"
+            "Injektering av ankare, jordspik och spännkablar samt manschettrör, berg- och kontaktinjektering",
+            "Beredning och pumpning av bentonitsuspensioner för rörpressning och mikrotunnling"
           ],
           "gen": true
         },
         {
           "type": "datasheet",
           "title": "Teknisk data",
-          "tagline": "Automated Grout Plant FAIC 650/712",
+          "tagline": "Automatisk injekteringsanläggning FAIC 650/712",
           "intro": [],
           "groups": [
             {
-              "title": "Grout pump (ZMP 712)",
+              "title": "Injekteringspump (ZMP 712)",
               "rows": [
                 {
-                  "label": "Capacity FAIC",
+                  "label": "Kapacitet FAIC",
                   "metric": "4.9 m³/h"
                 },
                 {
-                  "label": "Max. pressure",
+                  "label": "Max. tryck",
                   "metric": "88 bar"
                 },
                 {
-                  "label": "Max. aggregate size",
+                  "label": "Max. kornstorlek",
                   "metric": "8 mm"
                 },
                 {
-                  "label": "Hydraulic tank",
+                  "label": "Hydraultank",
                   "metric": "110 l"
                 },
                 {
-                  "label": "Pump module",
-                  "metric": "single"
+                  "label": "Pumpmodul",
+                  "metric": "enkel"
                 },
                 {
-                  "label": "Cooling water flow rate",
+                  "label": "Kylvattenflöde",
                   "metric": "3–4 l/min"
                 },
                 {
-                  "label": "Cooling water connection",
+                  "label": "Kylvattenanslutning",
                   "metric": "BSP ½\""
                 },
                 {
-                  "label": "Pressure connection",
+                  "label": "Tryckanslutning",
                   "metric": "BSP 2\""
                 }
               ]
             },
             {
-              "title": "Mixer / Agitator",
+              "title": "Blandare / omrörare",
               "rows": [
                 {
-                  "label": "Usable content mixer",
+                  "label": "Användbar volym blandare",
                   "metric": "260 l"
                 },
                 {
-                  "label": "Circulation capacity",
+                  "label": "Cirkulationskapacitet",
                   "metric": "1,400 l/min"
                 },
                 {
-                  "label": "Water connection",
+                  "label": "Vattenanslutning",
                   "metric": "BSP 1\""
                 },
                 {
-                  "label": "Holding capacity agitator",
+                  "label": "Omrörarens kapacitet",
                   "metric": "350 l"
                 }
               ]
             },
             {
-              "title": "Electrical data",
+              "title": "Elektriska data",
               "rows": [
                 {
-                  "label": "Voltage",
+                  "label": "Spänning",
                   "metric": "3x 400/460 V"
                 },
                 {
-                  "label": "Frequency",
+                  "label": "Frekvens",
                   "metric": "50 / 60 Hz"
                 },
                 {
-                  "label": "Nominal power",
+                  "label": "Märkeffekt",
                   "metric": "18.5 / 21 kW"
                 }
               ]
             },
             {
-              "title": "Weight and dimensions",
+              "title": "Vikt och mått",
               "rows": [
                 {
-                  "label": "Total weight",
+                  "label": "Total vikt",
                   "metric": "1,615 kg"
                 },
                 {
-                  "label": "Width",
+                  "label": "Bredd",
                   "metric": "2,031 mm"
                 },
                 {
-                  "label": "Height",
+                  "label": "Höjd",
                   "metric": "1,992 mm"
                 },
                 {
-                  "label": "Length",
+                  "label": "Längd",
                   "metric": "2,156 mm"
                 }
               ]
             }
           ],
-          "note": "1: Water to cement ratio = 1",
+          "note": "1: Vatten/cement-tal = 1",
           "gen": true
         },
         {
@@ -468,15 +468,15 @@
           "type": "list",
           "ordered": false,
           "items": [
-            "Included as standard (Grout pump): Manual pressure and flow control",
-            "Included as standard (Grout pump): Oil level and temperature sensor",
-            "Optional (Mixer / Agitator): Auxiliary mixing unit (recommended for W/C &lt; 0.45)",
-            "Optional (Control): Remote control ON-OFF",
-            "Optional (Control): P/Q-Registration",
-            "Control: PLC weigh batch control with touch screen",
-            "Control: Recipe management",
-            "Control: Automated mixing cycle ON-OFF",
-            "Control: Pump ON-OFF"
+            "Ingår som standard (Injekteringspump): Manuell tryck- och flödesreglering",
+            "Ingår som standard (Injekteringspump): Oljenivå- och temperaturgivare",
+            "Tillval (Blandare / omrörare): Extra blandningsenhet (rekommenderas vid vct &lt; 0,45)",
+            "Tillval (Styrning): Fjärrstyrning PÅ/AV",
+            "Tillval (Styrning): P/Q-registrering (tryck/flöde)",
+            "Styrning: PLC-styrd invägning med pekskärm",
+            "Styrning: Receptstyrning",
+            "Styrning: Automatisk blandningscykel PÅ/AV",
+            "Styrning: Pump PÅ/AV"
           ],
           "gen": true
         },
@@ -523,7 +523,7 @@
           "left": [
             {
               "type": "image",
-              "alt": "Automated Grout Plant FAIC 650/725",
+              "alt": "Automatisk injekteringsanläggning FAIC 650/725",
               "width": 488,
               "height": 546,
               "src": "/assets/img/haeny-faic650-725-unit.webp"
@@ -532,17 +532,17 @@
           "right": [
             {
               "type": "text",
-              "html": "The compact grout plants consist of the proven, standard Häny components of a mixer, agitator, and grout pump. In its automated execution the plant provides enormous savings in terms of personnel costs, high production outputs, quality monitoring and enhanced working conditions."
+              "html": "De kompakta injekteringsanläggningarna består av Hänys beprövade standardkomponenter: blandare, omrörare och injekteringspump. I automatiserat utförande ger anläggningen stora besparingar i personalkostnader, hög produktionskapacitet, kvalitetsövervakning och en bättre arbetsmiljö."
             },
             {
               "type": "list",
               "ordered": false,
               "items": [
-                "Extremely compact mixing and injection system with central lifting point for easy transport and minimum installation time",
-                "High production output, quality monitoring and cost savings in terms of personnel costs due to fully automated mixing process",
-                "Precise dosing of individual components is guaranteed by a sophisticated weighing system in the mixer (typical feed of dry components via silos/screw)",
-                "Mixing recipes can be entered and selected via touch screen as required",
-                "Batch records of each mixing cycle with consumption records (total of consumed components) is stored and can be transferred via a USB interface"
+                "Extremt kompakt blandnings- och injekteringssystem med central lyftpunkt för enkel transport och kort installationstid",
+                "Hög produktionskapacitet, kvalitetsövervakning och lägre personalkostnader tack vare helt automatiserad blandning",
+                "Exakt dosering av enskilda komponenter säkras av ett avancerat vägningssystem i blandaren (vanligen matning av torra komponenter via silor/skruv)",
+                "Blandningsrecept kan matas in och väljas via pekskärm efter behov",
+                "Satsprotokoll för varje blandningscykel med förbrukningsregistrering (summa förbrukade komponenter) sparas och kan överföras via USB"
               ]
             }
           ],
@@ -558,115 +558,115 @@
           "type": "list",
           "ordered": false,
           "items": [
-            "Grouting of anchors, soil nails, tension cables as well as for sleeve pipe, rock, and contact injections",
-            "Preparation and pumping of bentonite suspensions for pipe jacking and microtunneling"
+            "Injektering av ankare, jordspik och spännkablar samt manschettrör, berg- och kontaktinjektering",
+            "Beredning och pumpning av bentonitsuspensioner för rörpressning och mikrotunnling"
           ],
           "gen": true
         },
         {
           "type": "datasheet",
           "title": "Teknisk data",
-          "tagline": "Automated Grout Plant FAIC 650/725",
+          "tagline": "Automatisk injekteringsanläggning FAIC 650/725",
           "intro": [],
           "groups": [
             {
-              "title": "Grout pump (ZMP 725)",
+              "title": "Injekteringspump (ZMP 725)",
               "rows": [
                 {
-                  "label": "Capacity FAIC",
+                  "label": "Kapacitet FAIC",
                   "metric": "5 m³/h"
                 },
                 {
-                  "label": "Max. pressure",
+                  "label": "Max. tryck",
                   "metric": "100 bar"
                 },
                 {
-                  "label": "Max. aggregate size",
+                  "label": "Max. kornstorlek",
                   "metric": "8 mm"
                 },
                 {
-                  "label": "Hydraulic tank",
+                  "label": "Hydraultank",
                   "metric": "140 l"
                 },
                 {
-                  "label": "Pump module",
-                  "metric": "double"
+                  "label": "Pumpmodul",
+                  "metric": "dubbel"
                 },
                 {
-                  "label": "Cooling water flow rate",
+                  "label": "Kylvattenflöde",
                   "metric": "5–6 l/min"
                 },
                 {
-                  "label": "Cooling water connection",
+                  "label": "Kylvattenanslutning",
                   "metric": "BSP ½\""
                 },
                 {
-                  "label": "Pressure connection",
+                  "label": "Tryckanslutning",
                   "metric": "BSP 2\""
                 }
               ]
             },
             {
-              "title": "Mixer / Agitator",
+              "title": "Blandare / omrörare",
               "rows": [
                 {
-                  "label": "Usable content mixer",
+                  "label": "Användbar volym blandare",
                   "metric": "260 l"
                 },
                 {
-                  "label": "Circulation capacity",
+                  "label": "Cirkulationskapacitet",
                   "metric": "1,400 l/min"
                 },
                 {
-                  "label": "Water connection",
+                  "label": "Vattenanslutning",
                   "metric": "BSP 1\""
                 },
                 {
-                  "label": "Holding capacity agitator",
+                  "label": "Omrörarens kapacitet",
                   "metric": "350 l"
                 }
               ]
             },
             {
-              "title": "Electrical data",
+              "title": "Elektriska data",
               "rows": [
                 {
-                  "label": "Voltage",
+                  "label": "Spänning",
                   "metric": "3x 400/460 V"
                 },
                 {
-                  "label": "Frequency",
+                  "label": "Frekvens",
                   "metric": "50 / 60 Hz"
                 },
                 {
-                  "label": "Nominal power",
+                  "label": "Märkeffekt",
                   "metric": "19 / 22 kW"
                 }
               ]
             },
             {
-              "title": "Weight and dimensions",
+              "title": "Vikt och mått",
               "rows": [
                 {
-                  "label": "Total weight",
+                  "label": "Total vikt",
                   "metric": "1,950 kg"
                 },
                 {
-                  "label": "Width",
+                  "label": "Bredd",
                   "metric": "2,031 mm"
                 },
                 {
-                  "label": "Height",
+                  "label": "Höjd",
                   "metric": "1,992 mm"
                 },
                 {
-                  "label": "Length",
+                  "label": "Längd",
                   "metric": "2,156 mm"
                 }
               ]
             }
           ],
-          "note": "1: Water to cement ratio = 1",
+          "note": "1: Vatten/cement-tal = 1",
           "gen": true
         },
         {
@@ -679,15 +679,15 @@
           "type": "list",
           "ordered": false,
           "items": [
-            "Included as standard (Grout pump): Manual pressure and flow control",
-            "Included as standard (Grout pump): Oil level and temperature sensor",
-            "Optional (Mixer / Agitator): Auxiliary mixing unit (recommended for W/C &lt; 0.45)",
-            "Optional (Control): Remote control ON-OFF",
-            "Optional (Control): P/Q-Registration",
-            "Control: PLC weigh batch control with touch screen",
-            "Control: Recipe management",
-            "Control: Automated mixing cycle ON-OFF",
-            "Control: Pump ON-OFF"
+            "Ingår som standard (Injekteringspump): Manuell tryck- och flödesreglering",
+            "Ingår som standard (Injekteringspump): Oljenivå- och temperaturgivare",
+            "Tillval (Blandare / omrörare): Extra blandningsenhet (rekommenderas vid vct &lt; 0,45)",
+            "Tillval (Styrning): Fjärrstyrning PÅ/AV",
+            "Tillval (Styrning): P/Q-registrering (tryck/flöde)",
+            "Styrning: PLC-styrd invägning med pekskärm",
+            "Styrning: Receptstyrning",
+            "Styrning: Automatisk blandningscykel PÅ/AV",
+            "Styrning: Pump PÅ/AV"
           ],
           "gen": true
         },
@@ -734,7 +734,7 @@
           "left": [
             {
               "type": "image",
-              "alt": "Automated Grout Plant FAIC 1100/725",
+              "alt": "Automatisk injekteringsanläggning FAIC 1100/725",
               "width": 535,
               "height": 584,
               "src": "/assets/img/haeny-faic1100-725-unit.webp"
@@ -743,17 +743,17 @@
           "right": [
             {
               "type": "text",
-              "html": "The compact grout plants consist of the proven, standard Häny components of a mixer, agitator, and grout pump. In its automated execution the plant provides enormous savings in terms of personnel costs, high production outputs, quality monitoring and enhanced working conditions."
+              "html": "De kompakta injekteringsanläggningarna består av Hänys beprövade standardkomponenter: blandare, omrörare och injekteringspump. I automatiserat utförande ger anläggningen stora besparingar i personalkostnader, hög produktionskapacitet, kvalitetsövervakning och en bättre arbetsmiljö."
             },
             {
               "type": "list",
               "ordered": false,
               "items": [
-                "Extremely compact mixing and injection system with central lifting point for easy transport and minimum installation time",
-                "High production output, quality monitoring and cost savings in terms of personnel costs due to fully automated mixing process",
-                "Precise dosing of individual components is guaranteed by a sophisticated weighing system in the mixer (typical feed of dry components via silos/screw)",
-                "Mixing recipes can be entered and selected via touch screen as required",
-                "Batch records of each mixing cycle with consumption records (total of consumed components) is stored and can be transferred via a USB interface"
+                "Extremt kompakt blandnings- och injekteringssystem med central lyftpunkt för enkel transport och kort installationstid",
+                "Hög produktionskapacitet, kvalitetsövervakning och lägre personalkostnader tack vare helt automatiserad blandning",
+                "Exakt dosering av enskilda komponenter säkras av ett avancerat vägningssystem i blandaren (vanligen matning av torra komponenter via silor/skruv)",
+                "Blandningsrecept kan matas in och väljas via pekskärm efter behov",
+                "Satsprotokoll för varje blandningscykel med förbrukningsregistrering (summa förbrukade komponenter) sparas och kan överföras via USB"
               ]
             }
           ],
@@ -769,115 +769,115 @@
           "type": "list",
           "ordered": false,
           "items": [
-            "Grouting of anchors, soil nails, tension cables as well as for sleeve pipe, rock, and contact injections",
-            "Preparation and pumping of bentonite suspensions for pipe jacking and microtunneling"
+            "Injektering av ankare, jordspik och spännkablar samt manschettrör, berg- och kontaktinjektering",
+            "Beredning och pumpning av bentonitsuspensioner för rörpressning och mikrotunnling"
           ],
           "gen": true
         },
         {
           "type": "datasheet",
           "title": "Teknisk data",
-          "tagline": "Automated Grout Plant FAIC 1100/725",
+          "tagline": "Automatisk injekteringsanläggning FAIC 1100/725",
           "intro": [],
           "groups": [
             {
-              "title": "Grout pump (ZMP 725)",
+              "title": "Injekteringspump (ZMP 725)",
               "rows": [
                 {
-                  "label": "Capacity FAIC",
+                  "label": "Kapacitet FAIC",
                   "metric": "5 m³/h"
                 },
                 {
-                  "label": "Max. pressure",
+                  "label": "Max. tryck",
                   "metric": "100 bar"
                 },
                 {
-                  "label": "Max. aggregate size",
+                  "label": "Max. kornstorlek",
                   "metric": "8 mm"
                 },
                 {
-                  "label": "Hydraulic tank",
+                  "label": "Hydraultank",
                   "metric": "140 l"
                 },
                 {
-                  "label": "Pump module",
-                  "metric": "double"
+                  "label": "Pumpmodul",
+                  "metric": "dubbel"
                 },
                 {
-                  "label": "Cooling water flow rate",
+                  "label": "Kylvattenflöde",
                   "metric": "5–6 l/min"
                 },
                 {
-                  "label": "Cooling water connection",
+                  "label": "Kylvattenanslutning",
                   "metric": "BSP ½\""
                 },
                 {
-                  "label": "Pressure connection",
+                  "label": "Tryckanslutning",
                   "metric": "BSP 2\""
                 }
               ]
             },
             {
-              "title": "Mixer / Agitator",
+              "title": "Blandare / omrörare",
               "rows": [
                 {
-                  "label": "Usable content mixer",
+                  "label": "Användbar volym blandare",
                   "metric": "260 l"
                 },
                 {
-                  "label": "Circulation capacity",
+                  "label": "Cirkulationskapacitet",
                   "metric": "1,400 l/min"
                 },
                 {
-                  "label": "Water connection",
+                  "label": "Vattenanslutning",
                   "metric": "BSP 1,5\""
                 },
                 {
-                  "label": "Holding capacity agitator",
+                  "label": "Omrörarens kapacitet",
                   "metric": "800 l"
                 }
               ]
             },
             {
-              "title": "Electrical data",
+              "title": "Elektriska data",
               "rows": [
                 {
-                  "label": "Voltage",
+                  "label": "Spänning",
                   "metric": "3x 400/460 V"
                 },
                 {
-                  "label": "Frequency",
+                  "label": "Frekvens",
                   "metric": "50 / 60 Hz"
                 },
                 {
-                  "label": "Nominal power",
+                  "label": "Märkeffekt",
                   "metric": "19 / 22 kW"
                 }
               ]
             },
             {
-              "title": "Weight and dimensions",
+              "title": "Vikt och mått",
               "rows": [
                 {
-                  "label": "Total weight",
+                  "label": "Total vikt",
                   "metric": "2,248 kg"
                 },
                 {
-                  "label": "Width",
+                  "label": "Bredd",
                   "metric": "2,410 mm"
                 },
                 {
-                  "label": "Height",
+                  "label": "Höjd",
                   "metric": "2,211 mm"
                 },
                 {
-                  "label": "Length",
+                  "label": "Längd",
                   "metric": "2,461 mm"
                 }
               ]
             }
           ],
-          "note": "1: Water to cement ratio = 1",
+          "note": "1: Vatten/cement-tal = 1",
           "gen": true
         },
         {
@@ -890,15 +890,15 @@
           "type": "list",
           "ordered": false,
           "items": [
-            "Included as standard (Grout pump): Manual pressure and flow control",
-            "Included as standard (Grout pump): Oil level and temperature sensor",
-            "Optional (Mixer / Agitator): Auxiliary mixing unit (recommended for W/C &lt; 0.45)",
-            "Optional (Control): Remote control ON-OFF",
-            "Optional (Control): P/Q-Registration",
-            "Control: PLC weigh batch control with touch screen",
-            "Control: Recipe management",
-            "Control: Automated mixing cycle ON-OFF",
-            "Control: Pump ON-OFF"
+            "Ingår som standard (Injekteringspump): Manuell tryck- och flödesreglering",
+            "Ingår som standard (Injekteringspump): Oljenivå- och temperaturgivare",
+            "Tillval (Blandare / omrörare): Extra blandningsenhet (rekommenderas vid vct &lt; 0,45)",
+            "Tillval (Styrning): Fjärrstyrning PÅ/AV",
+            "Tillval (Styrning): P/Q-registrering (tryck/flöde)",
+            "Styrning: PLC-styrd invägning med pekskärm",
+            "Styrning: Receptstyrning",
+            "Styrning: Automatisk blandningscykel PÅ/AV",
+            "Styrning: Pump PÅ/AV"
           ],
           "gen": true
         },
@@ -945,7 +945,7 @@
           "left": [
             {
               "type": "image",
-              "alt": "Automated Grout Plant FAIC 1400/725",
+              "alt": "Automatisk injekteringsanläggning FAIC 1400/725",
               "width": 535,
               "height": 565,
               "src": "/assets/img/haeny-faic1400-725-unit.webp"
@@ -954,17 +954,17 @@
           "right": [
             {
               "type": "text",
-              "html": "The compact grout plants consist of the proven, standard Häny components of a mixer, agitator, and grout pump. In its automated execution the plant provides enormous savings in terms of personnel costs, high production outputs, quality monitoring and enhanced working conditions."
+              "html": "De kompakta injekteringsanläggningarna består av Hänys beprövade standardkomponenter: blandare, omrörare och injekteringspump. I automatiserat utförande ger anläggningen stora besparingar i personalkostnader, hög produktionskapacitet, kvalitetsövervakning och en bättre arbetsmiljö."
             },
             {
               "type": "list",
               "ordered": false,
               "items": [
-                "Extremely compact mixing and injection system with central lifting point for easy transport and minimum installation time",
-                "High production output, quality monitoring and cost savings in terms of personnel costs due to fully automated mixing process",
-                "Precise dosing of individual components is guaranteed by a sophisticated weighing system in the mixer (typical feed of dry components via silos/screw)",
-                "Mixing recipes can be entered and selected via touch screen as required",
-                "Batch records of each mixing cycle with consumption records (total of consumed components) is stored and can be transferred via a USB interface"
+                "Extremt kompakt blandnings- och injekteringssystem med central lyftpunkt för enkel transport och kort installationstid",
+                "Hög produktionskapacitet, kvalitetsövervakning och lägre personalkostnader tack vare helt automatiserad blandning",
+                "Exakt dosering av enskilda komponenter säkras av ett avancerat vägningssystem i blandaren (vanligen matning av torra komponenter via silor/skruv)",
+                "Blandningsrecept kan matas in och väljas via pekskärm efter behov",
+                "Satsprotokoll för varje blandningscykel med förbrukningsregistrering (summa förbrukade komponenter) sparas och kan överföras via USB"
               ]
             }
           ],
@@ -980,115 +980,115 @@
           "type": "list",
           "ordered": false,
           "items": [
-            "Grouting of anchors, soil nails, tension cables as well as for sleeve pipe, rock, and contact injections",
-            "Preparation and pumping of bentonite suspensions for pipe jacking and microtunneling"
+            "Injektering av ankare, jordspik och spännkablar samt manschettrör, berg- och kontaktinjektering",
+            "Beredning och pumpning av bentonitsuspensioner för rörpressning och mikrotunnling"
           ],
           "gen": true
         },
         {
           "type": "datasheet",
           "title": "Teknisk data",
-          "tagline": "Automated Grout Plant FAIC 1400/725",
+          "tagline": "Automatisk injekteringsanläggning FAIC 1400/725",
           "intro": [],
           "groups": [
             {
-              "title": "Grout pump (ZMP 725)",
+              "title": "Injekteringspump (ZMP 725)",
               "rows": [
                 {
-                  "label": "Capacity FAIC",
+                  "label": "Kapacitet FAIC",
                   "metric": "5 m³/h"
                 },
                 {
-                  "label": "Max. pressure",
+                  "label": "Max. tryck",
                   "metric": "100 bar"
                 },
                 {
-                  "label": "Max. aggregate size",
+                  "label": "Max. kornstorlek",
                   "metric": "8 mm"
                 },
                 {
-                  "label": "Hydraulic tank",
+                  "label": "Hydraultank",
                   "metric": "140 l"
                 },
                 {
-                  "label": "Pump module",
-                  "metric": "double"
+                  "label": "Pumpmodul",
+                  "metric": "dubbel"
                 },
                 {
-                  "label": "Cooling water flow rate",
+                  "label": "Kylvattenflöde",
                   "metric": "5–6 l/min"
                 },
                 {
-                  "label": "Cooling water connection",
+                  "label": "Kylvattenanslutning",
                   "metric": "BSP ½\""
                 },
                 {
-                  "label": "Pressure connection",
+                  "label": "Tryckanslutning",
                   "metric": "BSP 2\""
                 }
               ]
             },
             {
-              "title": "Mixer / Agitator",
+              "title": "Blandare / omrörare",
               "rows": [
                 {
-                  "label": "Usable content mixer",
+                  "label": "Användbar volym blandare",
                   "metric": "550 l"
                 },
                 {
-                  "label": "Circulation capacity",
+                  "label": "Cirkulationskapacitet",
                   "metric": "2,400 l/min"
                 },
                 {
-                  "label": "Water connection",
+                  "label": "Vattenanslutning",
                   "metric": "BSP 1½\""
                 },
                 {
-                  "label": "Holding capacity agitator",
+                  "label": "Omrörarens kapacitet",
                   "metric": "800 l"
                 }
               ]
             },
             {
-              "title": "Electrical data",
+              "title": "Elektriska data",
               "rows": [
                 {
-                  "label": "Voltage",
+                  "label": "Spänning",
                   "metric": "3x 400/460 V"
                 },
                 {
-                  "label": "Frequency",
+                  "label": "Frekvens",
                   "metric": "50 / 60 Hz"
                 },
                 {
-                  "label": "Nominal power",
+                  "label": "Märkeffekt",
                   "metric": "19 / 22 kW"
                 }
               ]
             },
             {
-              "title": "Weight and dimensions",
+              "title": "Vikt och mått",
               "rows": [
                 {
-                  "label": "Total weight",
+                  "label": "Total vikt",
                   "metric": "2,300 kg"
                 },
                 {
-                  "label": "Width",
+                  "label": "Bredd",
                   "metric": "2,262 mm"
                 },
                 {
-                  "label": "Height",
+                  "label": "Höjd",
                   "metric": "2,346 mm"
                 },
                 {
-                  "label": "Length",
+                  "label": "Längd",
                   "metric": "2,725 mm"
                 }
               ]
             }
           ],
-          "note": "1: Water to cement ratio = 1",
+          "note": "1: Vatten/cement-tal = 1",
           "gen": true
         },
         {
@@ -1101,15 +1101,15 @@
           "type": "list",
           "ordered": false,
           "items": [
-            "Included as standard (Grout pump): Manual pressure and flow control",
-            "Included as standard (Grout pump): Oil level and temperature sensor",
-            "Optional (Mixer / Agitator): Auxiliary mixing unit (recommended for W/C &lt; 0.45)",
-            "Optional (Control): Remote control ON-OFF",
-            "Optional (Control): P/Q-Registration",
-            "Control: PLC weigh batch control with touch screen",
-            "Control: Recipe management",
-            "Control: Automated mixing cycle ON-OFF",
-            "Control: Pump ON-OFF"
+            "Ingår som standard (Injekteringspump): Manuell tryck- och flödesreglering",
+            "Ingår som standard (Injekteringspump): Oljenivå- och temperaturgivare",
+            "Tillval (Blandare / omrörare): Extra blandningsenhet (rekommenderas vid vct &lt; 0,45)",
+            "Tillval (Styrning): Fjärrstyrning PÅ/AV",
+            "Tillval (Styrning): P/Q-registrering (tryck/flöde)",
+            "Styrning: PLC-styrd invägning med pekskärm",
+            "Styrning: Receptstyrning",
+            "Styrning: Automatisk blandningscykel PÅ/AV",
+            "Styrning: Pump PÅ/AV"
           ],
           "gen": true
         },
@@ -2361,11 +2361,11 @@
           "type": "list",
           "ordered": false,
           "items": [
-            "Extremely compact mixing and injection system with central lifting point for easy transport and minimum installation time",
-            "High production output, quality monitoring and cost savings in terms of personnel costs due to fully automated mixing process",
-            "Precise dosing of individual components is guaranteed by a sophisticated weighing system in the mixer (typical feed of dry components via silos/screw)",
-            "Mixing recipes can be entered and selected via touch screen as required",
-            "Batch records of each mixing cycle with consumption records (total of consumed components) is stored and can be transferred via a USB interface"
+            "Sistema de mezcla e inyección extremadamente compacto con punto de elevación central para un transporte sencillo y un tiempo de instalación mínimo",
+            "Alta producción, control de calidad y ahorro en costes de personal gracias al proceso de mezcla totalmente automatizado",
+            "La dosificación precisa de cada componente está garantizada por un sofisticado sistema de pesaje en la mezcladora (alimentación típica de componentes secos mediante silos/tornillo)",
+            "Las recetas de mezcla pueden introducirse y seleccionarse en la pantalla táctil según se necesite",
+            "Los registros de cada ciclo de mezcla con el consumo (total de componentes consumidos) se guardan y pueden transferirse por USB"
           ],
           "gen": true
         },
@@ -2397,8 +2397,8 @@
           "type": "list",
           "ordered": false,
           "items": [
-            "Grouting of anchors, soil nails, tension cables as well as for sleeve pipe, rock, and contact injections",
-            "Preparation and pumping of bentonite suspensions for pipe jacking and microtunneling"
+            "Inyección de anclajes, clavos de suelo y cables tensores, así como inyecciones con tubo manguito, en roca y de contacto",
+            "Preparación y bombeo de suspensiones de bentonita para el hincado de tuberías y microtúneles"
           ],
           "gen": true
         },
@@ -2415,7 +2415,7 @@
           "left": [
             {
               "type": "image",
-              "alt": "Automated Grout Plant FAIC 650/710",
+              "alt": "Planta de inyección automática FAIC 650/710",
               "width": 506,
               "height": 561,
               "src": "/assets/img/haeny-faic650-710-unit.webp"
@@ -2424,17 +2424,17 @@
           "right": [
             {
               "type": "text",
-              "html": "The compact grout plants consist of the proven, standard Häny components of a mixer, agitator, and grout pump. In its automated execution the plant provides enormous savings in terms of personnel costs, high production outputs, quality monitoring and enhanced working conditions."
+              "html": "Las plantas de inyección compactas constan de los componentes estándar probados de Häny: mezcladora, agitador y bomba de inyección. En su versión automatizada, la planta ofrece enormes ahorros en costes de personal, alta producción, control de calidad y mejores condiciones de trabajo."
             },
             {
               "type": "list",
               "ordered": false,
               "items": [
-                "Extremely compact mixing and injection system with central lifting point for easy transport and minimum installation time",
-                "High production output, quality monitoring and cost savings in terms of personnel costs due to fully automated mixing process",
-                "Precise dosing of individual components is guaranteed by a sophisticated weighing system in the mixer (typical feed of dry components via silos/screw)",
-                "Mixing recipes can be entered and selected via touch screen as required",
-                "Batch records of each mixing cycle with consumption records (total of consumed components) is stored and can be transferred via a USB interface"
+                "Sistema de mezcla e inyección extremadamente compacto con punto de elevación central para un transporte sencillo y un tiempo de instalación mínimo",
+                "Alta producción, control de calidad y ahorro en costes de personal gracias al proceso de mezcla totalmente automatizado",
+                "La dosificación precisa de cada componente está garantizada por un sofisticado sistema de pesaje en la mezcladora (alimentación típica de componentes secos mediante silos/tornillo)",
+                "Las recetas de mezcla pueden introducirse y seleccionarse en la pantalla táctil según se necesite",
+                "Los registros de cada ciclo de mezcla con el consumo (total de componentes consumidos) se guardan y pueden transferirse por USB"
               ]
             }
           ],
@@ -2450,115 +2450,115 @@
           "type": "list",
           "ordered": false,
           "items": [
-            "Grouting of anchors, soil nails, tension cables as well as for sleeve pipe, rock, and contact injections",
-            "Preparation and pumping of bentonite suspensions for pipe jacking and microtunneling"
+            "Inyección de anclajes, clavos de suelo y cables tensores, así como inyecciones con tubo manguito, en roca y de contacto",
+            "Preparación y bombeo de suspensiones de bentonita para el hincado de tuberías y microtúneles"
           ],
           "gen": true
         },
         {
           "type": "datasheet",
           "title": "Datos técnicos",
-          "tagline": "Automated Grout Plant FAIC 650/710",
+          "tagline": "Planta de inyección automática FAIC 650/710",
           "intro": [],
           "groups": [
             {
-              "title": "Grout pump (ZMP 710)",
+              "title": "Bomba de inyección (ZMP 710)",
               "rows": [
                 {
-                  "label": "Capacity FAIC",
+                  "label": "Capacidad FAIC",
                   "metric": "5 m³/h"
                 },
                 {
-                  "label": "Max. pressure",
+                  "label": "Presión máx.",
                   "metric": "100 bar"
                 },
                 {
-                  "label": "Max. aggregate size",
+                  "label": "Tamaño máx. de partícula",
                   "metric": "8 mm"
                 },
                 {
-                  "label": "Hydraulic tank",
+                  "label": "Depósito hidráulico",
                   "metric": "140 l"
                 },
                 {
-                  "label": "Pump module",
-                  "metric": "single"
+                  "label": "Módulo de bomba",
+                  "metric": "simple"
                 },
                 {
-                  "label": "Cooling water flow rate",
+                  "label": "Caudal de agua de refrigeración",
                   "metric": "3–4 l/min"
                 },
                 {
-                  "label": "Cooling water connection",
+                  "label": "Conexión de agua de refrigeración",
                   "metric": "BSP ½\""
                 },
                 {
-                  "label": "Pressure connection",
+                  "label": "Conexión de presión",
                   "metric": "BSP 2\""
                 }
               ]
             },
             {
-              "title": "Mixer / Agitator",
+              "title": "Mezcladora / agitador",
               "rows": [
                 {
-                  "label": "Usable content mixer",
+                  "label": "Volumen útil de la mezcladora",
                   "metric": "260 l"
                 },
                 {
-                  "label": "Circulation capacity",
+                  "label": "Capacidad de circulación",
                   "metric": "1,400 l/min"
                 },
                 {
-                  "label": "Water connection",
+                  "label": "Conexión de agua",
                   "metric": "BSP 1\""
                 },
                 {
-                  "label": "Holding capacity agitator",
+                  "label": "Capacidad de retención del agitador",
                   "metric": "350 l"
                 }
               ]
             },
             {
-              "title": "Electrical data",
+              "title": "Datos eléctricos",
               "rows": [
                 {
-                  "label": "Voltage",
+                  "label": "Tensión",
                   "metric": "3x 400/460 V"
                 },
                 {
-                  "label": "Frequency",
+                  "label": "Frecuencia",
                   "metric": "50 / 60 Hz"
                 },
                 {
-                  "label": "Nominal power",
+                  "label": "Potencia nominal",
                   "metric": "18.5 / 21 kW"
                 }
               ]
             },
             {
-              "title": "Weight and dimensions",
+              "title": "Peso y dimensiones",
               "rows": [
                 {
-                  "label": "Total weight",
+                  "label": "Peso total",
                   "metric": "1,665 kg"
                 },
                 {
-                  "label": "Width",
+                  "label": "Anchura",
                   "metric": "2,031 mm"
                 },
                 {
-                  "label": "Height",
+                  "label": "Altura",
                   "metric": "1,992 mm"
                 },
                 {
-                  "label": "Length",
+                  "label": "Longitud",
                   "metric": "2,156 mm"
                 }
               ]
             }
           ],
-          "note": "1: Water to cement ratio = 1",
+          "note": "1: Relación agua/cemento = 1",
           "gen": true
         },
         {
@@ -2571,15 +2571,15 @@
           "type": "list",
           "ordered": false,
           "items": [
-            "Included as standard (Grout pump): Manual pressure and flow control",
-            "Included as standard (Grout pump): Oil level and temperature sensor",
-            "Optional (Mixer / Agitator): Auxiliary mixing unit (recommended for W/C &lt; 0.45)",
-            "Optional (Control): Remote control ON-OFF",
-            "Optional (Control): P/Q-Registration",
-            "Control: PLC weigh batch control with touch screen",
-            "Control: Recipe management",
-            "Control: Automated mixing cycle ON-OFF",
-            "Control: Pump ON-OFF"
+            "Incluido de serie (Bomba de inyección): Control manual de presión y caudal",
+            "Incluido de serie (Bomba de inyección): Sensor de nivel y temperatura del aceite",
+            "Opcional (Mezcladora / agitador): Unidad de mezcla auxiliar (recomendada para A/C &lt; 0,45)",
+            "Opcional (Control): Mando a distancia ON/OFF",
+            "Opcional (Control): Registro P/Q (presión/caudal)",
+            "Control: Control PLC de dosificación por pesaje con pantalla táctil",
+            "Control: Gestión de recetas",
+            "Control: Ciclo de mezcla automático ON/OFF",
+            "Control: Bomba ON/OFF"
           ],
           "gen": true
         },
@@ -2626,7 +2626,7 @@
           "left": [
             {
               "type": "image",
-              "alt": "Automated Grout Plant FAIC 650/712",
+              "alt": "Planta de inyección automática FAIC 650/712",
               "width": 495,
               "height": 555,
               "src": "/assets/img/haeny-faic650-712-unit.webp"
@@ -2635,17 +2635,17 @@
           "right": [
             {
               "type": "text",
-              "html": "The compact grout plants consist of the proven, standard Häny components of a mixer, agitator, and grout pump. In its automated execution the plant provides enormous savings in terms of personnel costs, high production outputs, quality monitoring and enhanced working conditions."
+              "html": "Las plantas de inyección compactas constan de los componentes estándar probados de Häny: mezcladora, agitador y bomba de inyección. En su versión automatizada, la planta ofrece enormes ahorros en costes de personal, alta producción, control de calidad y mejores condiciones de trabajo."
             },
             {
               "type": "list",
               "ordered": false,
               "items": [
-                "Extremely compact mixing and injection system with central lifting point for easy transport and minimum installation time",
-                "High production output, quality monitoring and cost savings in terms of personnel costs due to fully automated mixing process",
-                "Precise dosing of individual components is guaranteed by a sophisticated weighing system in the mixer (typical feed of dry components via silos/screw)",
-                "Mixing recipes can be entered and selected via touch screen as required",
-                "Batch records of each mixing cycle with consumption records (total of consumed components) is stored and can be transferred via a USB interface"
+                "Sistema de mezcla e inyección extremadamente compacto con punto de elevación central para un transporte sencillo y un tiempo de instalación mínimo",
+                "Alta producción, control de calidad y ahorro en costes de personal gracias al proceso de mezcla totalmente automatizado",
+                "La dosificación precisa de cada componente está garantizada por un sofisticado sistema de pesaje en la mezcladora (alimentación típica de componentes secos mediante silos/tornillo)",
+                "Las recetas de mezcla pueden introducirse y seleccionarse en la pantalla táctil según se necesite",
+                "Los registros de cada ciclo de mezcla con el consumo (total de componentes consumidos) se guardan y pueden transferirse por USB"
               ]
             }
           ],
@@ -2661,115 +2661,115 @@
           "type": "list",
           "ordered": false,
           "items": [
-            "Grouting of anchors, soil nails, tension cables as well as for sleeve pipe, rock, and contact injections",
-            "Preparation and pumping of bentonite suspensions for pipe jacking and microtunneling"
+            "Inyección de anclajes, clavos de suelo y cables tensores, así como inyecciones con tubo manguito, en roca y de contacto",
+            "Preparación y bombeo de suspensiones de bentonita para el hincado de tuberías y microtúneles"
           ],
           "gen": true
         },
         {
           "type": "datasheet",
           "title": "Datos técnicos",
-          "tagline": "Automated Grout Plant FAIC 650/712",
+          "tagline": "Planta de inyección automática FAIC 650/712",
           "intro": [],
           "groups": [
             {
-              "title": "Grout pump (ZMP 712)",
+              "title": "Bomba de inyección (ZMP 712)",
               "rows": [
                 {
-                  "label": "Capacity FAIC",
+                  "label": "Capacidad FAIC",
                   "metric": "4.9 m³/h"
                 },
                 {
-                  "label": "Max. pressure",
+                  "label": "Presión máx.",
                   "metric": "88 bar"
                 },
                 {
-                  "label": "Max. aggregate size",
+                  "label": "Tamaño máx. de partícula",
                   "metric": "8 mm"
                 },
                 {
-                  "label": "Hydraulic tank",
+                  "label": "Depósito hidráulico",
                   "metric": "110 l"
                 },
                 {
-                  "label": "Pump module",
-                  "metric": "single"
+                  "label": "Módulo de bomba",
+                  "metric": "simple"
                 },
                 {
-                  "label": "Cooling water flow rate",
+                  "label": "Caudal de agua de refrigeración",
                   "metric": "3–4 l/min"
                 },
                 {
-                  "label": "Cooling water connection",
+                  "label": "Conexión de agua de refrigeración",
                   "metric": "BSP ½\""
                 },
                 {
-                  "label": "Pressure connection",
+                  "label": "Conexión de presión",
                   "metric": "BSP 2\""
                 }
               ]
             },
             {
-              "title": "Mixer / Agitator",
+              "title": "Mezcladora / agitador",
               "rows": [
                 {
-                  "label": "Usable content mixer",
+                  "label": "Volumen útil de la mezcladora",
                   "metric": "260 l"
                 },
                 {
-                  "label": "Circulation capacity",
+                  "label": "Capacidad de circulación",
                   "metric": "1,400 l/min"
                 },
                 {
-                  "label": "Water connection",
+                  "label": "Conexión de agua",
                   "metric": "BSP 1\""
                 },
                 {
-                  "label": "Holding capacity agitator",
+                  "label": "Capacidad de retención del agitador",
                   "metric": "350 l"
                 }
               ]
             },
             {
-              "title": "Electrical data",
+              "title": "Datos eléctricos",
               "rows": [
                 {
-                  "label": "Voltage",
+                  "label": "Tensión",
                   "metric": "3x 400/460 V"
                 },
                 {
-                  "label": "Frequency",
+                  "label": "Frecuencia",
                   "metric": "50 / 60 Hz"
                 },
                 {
-                  "label": "Nominal power",
+                  "label": "Potencia nominal",
                   "metric": "18.5 / 21 kW"
                 }
               ]
             },
             {
-              "title": "Weight and dimensions",
+              "title": "Peso y dimensiones",
               "rows": [
                 {
-                  "label": "Total weight",
+                  "label": "Peso total",
                   "metric": "1,615 kg"
                 },
                 {
-                  "label": "Width",
+                  "label": "Anchura",
                   "metric": "2,031 mm"
                 },
                 {
-                  "label": "Height",
+                  "label": "Altura",
                   "metric": "1,992 mm"
                 },
                 {
-                  "label": "Length",
+                  "label": "Longitud",
                   "metric": "2,156 mm"
                 }
               ]
             }
           ],
-          "note": "1: Water to cement ratio = 1",
+          "note": "1: Relación agua/cemento = 1",
           "gen": true
         },
         {
@@ -2782,15 +2782,15 @@
           "type": "list",
           "ordered": false,
           "items": [
-            "Included as standard (Grout pump): Manual pressure and flow control",
-            "Included as standard (Grout pump): Oil level and temperature sensor",
-            "Optional (Mixer / Agitator): Auxiliary mixing unit (recommended for W/C &lt; 0.45)",
-            "Optional (Control): Remote control ON-OFF",
-            "Optional (Control): P/Q-Registration",
-            "Control: PLC weigh batch control with touch screen",
-            "Control: Recipe management",
-            "Control: Automated mixing cycle ON-OFF",
-            "Control: Pump ON-OFF"
+            "Incluido de serie (Bomba de inyección): Control manual de presión y caudal",
+            "Incluido de serie (Bomba de inyección): Sensor de nivel y temperatura del aceite",
+            "Opcional (Mezcladora / agitador): Unidad de mezcla auxiliar (recomendada para A/C &lt; 0,45)",
+            "Opcional (Control): Mando a distancia ON/OFF",
+            "Opcional (Control): Registro P/Q (presión/caudal)",
+            "Control: Control PLC de dosificación por pesaje con pantalla táctil",
+            "Control: Gestión de recetas",
+            "Control: Ciclo de mezcla automático ON/OFF",
+            "Control: Bomba ON/OFF"
           ],
           "gen": true
         },
@@ -2837,7 +2837,7 @@
           "left": [
             {
               "type": "image",
-              "alt": "Automated Grout Plant FAIC 650/725",
+              "alt": "Planta de inyección automática FAIC 650/725",
               "width": 488,
               "height": 546,
               "src": "/assets/img/haeny-faic650-725-unit.webp"
@@ -2846,17 +2846,17 @@
           "right": [
             {
               "type": "text",
-              "html": "The compact grout plants consist of the proven, standard Häny components of a mixer, agitator, and grout pump. In its automated execution the plant provides enormous savings in terms of personnel costs, high production outputs, quality monitoring and enhanced working conditions."
+              "html": "Las plantas de inyección compactas constan de los componentes estándar probados de Häny: mezcladora, agitador y bomba de inyección. En su versión automatizada, la planta ofrece enormes ahorros en costes de personal, alta producción, control de calidad y mejores condiciones de trabajo."
             },
             {
               "type": "list",
               "ordered": false,
               "items": [
-                "Extremely compact mixing and injection system with central lifting point for easy transport and minimum installation time",
-                "High production output, quality monitoring and cost savings in terms of personnel costs due to fully automated mixing process",
-                "Precise dosing of individual components is guaranteed by a sophisticated weighing system in the mixer (typical feed of dry components via silos/screw)",
-                "Mixing recipes can be entered and selected via touch screen as required",
-                "Batch records of each mixing cycle with consumption records (total of consumed components) is stored and can be transferred via a USB interface"
+                "Sistema de mezcla e inyección extremadamente compacto con punto de elevación central para un transporte sencillo y un tiempo de instalación mínimo",
+                "Alta producción, control de calidad y ahorro en costes de personal gracias al proceso de mezcla totalmente automatizado",
+                "La dosificación precisa de cada componente está garantizada por un sofisticado sistema de pesaje en la mezcladora (alimentación típica de componentes secos mediante silos/tornillo)",
+                "Las recetas de mezcla pueden introducirse y seleccionarse en la pantalla táctil según se necesite",
+                "Los registros de cada ciclo de mezcla con el consumo (total de componentes consumidos) se guardan y pueden transferirse por USB"
               ]
             }
           ],
@@ -2872,115 +2872,115 @@
           "type": "list",
           "ordered": false,
           "items": [
-            "Grouting of anchors, soil nails, tension cables as well as for sleeve pipe, rock, and contact injections",
-            "Preparation and pumping of bentonite suspensions for pipe jacking and microtunneling"
+            "Inyección de anclajes, clavos de suelo y cables tensores, así como inyecciones con tubo manguito, en roca y de contacto",
+            "Preparación y bombeo de suspensiones de bentonita para el hincado de tuberías y microtúneles"
           ],
           "gen": true
         },
         {
           "type": "datasheet",
           "title": "Datos técnicos",
-          "tagline": "Automated Grout Plant FAIC 650/725",
+          "tagline": "Planta de inyección automática FAIC 650/725",
           "intro": [],
           "groups": [
             {
-              "title": "Grout pump (ZMP 725)",
+              "title": "Bomba de inyección (ZMP 725)",
               "rows": [
                 {
-                  "label": "Capacity FAIC",
+                  "label": "Capacidad FAIC",
                   "metric": "5 m³/h"
                 },
                 {
-                  "label": "Max. pressure",
+                  "label": "Presión máx.",
                   "metric": "100 bar"
                 },
                 {
-                  "label": "Max. aggregate size",
+                  "label": "Tamaño máx. de partícula",
                   "metric": "8 mm"
                 },
                 {
-                  "label": "Hydraulic tank",
+                  "label": "Depósito hidráulico",
                   "metric": "140 l"
                 },
                 {
-                  "label": "Pump module",
-                  "metric": "double"
+                  "label": "Módulo de bomba",
+                  "metric": "doble"
                 },
                 {
-                  "label": "Cooling water flow rate",
+                  "label": "Caudal de agua de refrigeración",
                   "metric": "5–6 l/min"
                 },
                 {
-                  "label": "Cooling water connection",
+                  "label": "Conexión de agua de refrigeración",
                   "metric": "BSP ½\""
                 },
                 {
-                  "label": "Pressure connection",
+                  "label": "Conexión de presión",
                   "metric": "BSP 2\""
                 }
               ]
             },
             {
-              "title": "Mixer / Agitator",
+              "title": "Mezcladora / agitador",
               "rows": [
                 {
-                  "label": "Usable content mixer",
+                  "label": "Volumen útil de la mezcladora",
                   "metric": "260 l"
                 },
                 {
-                  "label": "Circulation capacity",
+                  "label": "Capacidad de circulación",
                   "metric": "1,400 l/min"
                 },
                 {
-                  "label": "Water connection",
+                  "label": "Conexión de agua",
                   "metric": "BSP 1\""
                 },
                 {
-                  "label": "Holding capacity agitator",
+                  "label": "Capacidad de retención del agitador",
                   "metric": "350 l"
                 }
               ]
             },
             {
-              "title": "Electrical data",
+              "title": "Datos eléctricos",
               "rows": [
                 {
-                  "label": "Voltage",
+                  "label": "Tensión",
                   "metric": "3x 400/460 V"
                 },
                 {
-                  "label": "Frequency",
+                  "label": "Frecuencia",
                   "metric": "50 / 60 Hz"
                 },
                 {
-                  "label": "Nominal power",
+                  "label": "Potencia nominal",
                   "metric": "19 / 22 kW"
                 }
               ]
             },
             {
-              "title": "Weight and dimensions",
+              "title": "Peso y dimensiones",
               "rows": [
                 {
-                  "label": "Total weight",
+                  "label": "Peso total",
                   "metric": "1,950 kg"
                 },
                 {
-                  "label": "Width",
+                  "label": "Anchura",
                   "metric": "2,031 mm"
                 },
                 {
-                  "label": "Height",
+                  "label": "Altura",
                   "metric": "1,992 mm"
                 },
                 {
-                  "label": "Length",
+                  "label": "Longitud",
                   "metric": "2,156 mm"
                 }
               ]
             }
           ],
-          "note": "1: Water to cement ratio = 1",
+          "note": "1: Relación agua/cemento = 1",
           "gen": true
         },
         {
@@ -2993,15 +2993,15 @@
           "type": "list",
           "ordered": false,
           "items": [
-            "Included as standard (Grout pump): Manual pressure and flow control",
-            "Included as standard (Grout pump): Oil level and temperature sensor",
-            "Optional (Mixer / Agitator): Auxiliary mixing unit (recommended for W/C &lt; 0.45)",
-            "Optional (Control): Remote control ON-OFF",
-            "Optional (Control): P/Q-Registration",
-            "Control: PLC weigh batch control with touch screen",
-            "Control: Recipe management",
-            "Control: Automated mixing cycle ON-OFF",
-            "Control: Pump ON-OFF"
+            "Incluido de serie (Bomba de inyección): Control manual de presión y caudal",
+            "Incluido de serie (Bomba de inyección): Sensor de nivel y temperatura del aceite",
+            "Opcional (Mezcladora / agitador): Unidad de mezcla auxiliar (recomendada para A/C &lt; 0,45)",
+            "Opcional (Control): Mando a distancia ON/OFF",
+            "Opcional (Control): Registro P/Q (presión/caudal)",
+            "Control: Control PLC de dosificación por pesaje con pantalla táctil",
+            "Control: Gestión de recetas",
+            "Control: Ciclo de mezcla automático ON/OFF",
+            "Control: Bomba ON/OFF"
           ],
           "gen": true
         },
@@ -3048,7 +3048,7 @@
           "left": [
             {
               "type": "image",
-              "alt": "Automated Grout Plant FAIC 1100/725",
+              "alt": "Planta de inyección automática FAIC 1100/725",
               "width": 535,
               "height": 584,
               "src": "/assets/img/haeny-faic1100-725-unit.webp"
@@ -3057,17 +3057,17 @@
           "right": [
             {
               "type": "text",
-              "html": "The compact grout plants consist of the proven, standard Häny components of a mixer, agitator, and grout pump. In its automated execution the plant provides enormous savings in terms of personnel costs, high production outputs, quality monitoring and enhanced working conditions."
+              "html": "Las plantas de inyección compactas constan de los componentes estándar probados de Häny: mezcladora, agitador y bomba de inyección. En su versión automatizada, la planta ofrece enormes ahorros en costes de personal, alta producción, control de calidad y mejores condiciones de trabajo."
             },
             {
               "type": "list",
               "ordered": false,
               "items": [
-                "Extremely compact mixing and injection system with central lifting point for easy transport and minimum installation time",
-                "High production output, quality monitoring and cost savings in terms of personnel costs due to fully automated mixing process",
-                "Precise dosing of individual components is guaranteed by a sophisticated weighing system in the mixer (typical feed of dry components via silos/screw)",
-                "Mixing recipes can be entered and selected via touch screen as required",
-                "Batch records of each mixing cycle with consumption records (total of consumed components) is stored and can be transferred via a USB interface"
+                "Sistema de mezcla e inyección extremadamente compacto con punto de elevación central para un transporte sencillo y un tiempo de instalación mínimo",
+                "Alta producción, control de calidad y ahorro en costes de personal gracias al proceso de mezcla totalmente automatizado",
+                "La dosificación precisa de cada componente está garantizada por un sofisticado sistema de pesaje en la mezcladora (alimentación típica de componentes secos mediante silos/tornillo)",
+                "Las recetas de mezcla pueden introducirse y seleccionarse en la pantalla táctil según se necesite",
+                "Los registros de cada ciclo de mezcla con el consumo (total de componentes consumidos) se guardan y pueden transferirse por USB"
               ]
             }
           ],
@@ -3083,115 +3083,115 @@
           "type": "list",
           "ordered": false,
           "items": [
-            "Grouting of anchors, soil nails, tension cables as well as for sleeve pipe, rock, and contact injections",
-            "Preparation and pumping of bentonite suspensions for pipe jacking and microtunneling"
+            "Inyección de anclajes, clavos de suelo y cables tensores, así como inyecciones con tubo manguito, en roca y de contacto",
+            "Preparación y bombeo de suspensiones de bentonita para el hincado de tuberías y microtúneles"
           ],
           "gen": true
         },
         {
           "type": "datasheet",
           "title": "Datos técnicos",
-          "tagline": "Automated Grout Plant FAIC 1100/725",
+          "tagline": "Planta de inyección automática FAIC 1100/725",
           "intro": [],
           "groups": [
             {
-              "title": "Grout pump (ZMP 725)",
+              "title": "Bomba de inyección (ZMP 725)",
               "rows": [
                 {
-                  "label": "Capacity FAIC",
+                  "label": "Capacidad FAIC",
                   "metric": "5 m³/h"
                 },
                 {
-                  "label": "Max. pressure",
+                  "label": "Presión máx.",
                   "metric": "100 bar"
                 },
                 {
-                  "label": "Max. aggregate size",
+                  "label": "Tamaño máx. de partícula",
                   "metric": "8 mm"
                 },
                 {
-                  "label": "Hydraulic tank",
+                  "label": "Depósito hidráulico",
                   "metric": "140 l"
                 },
                 {
-                  "label": "Pump module",
-                  "metric": "double"
+                  "label": "Módulo de bomba",
+                  "metric": "doble"
                 },
                 {
-                  "label": "Cooling water flow rate",
+                  "label": "Caudal de agua de refrigeración",
                   "metric": "5–6 l/min"
                 },
                 {
-                  "label": "Cooling water connection",
+                  "label": "Conexión de agua de refrigeración",
                   "metric": "BSP ½\""
                 },
                 {
-                  "label": "Pressure connection",
+                  "label": "Conexión de presión",
                   "metric": "BSP 2\""
                 }
               ]
             },
             {
-              "title": "Mixer / Agitator",
+              "title": "Mezcladora / agitador",
               "rows": [
                 {
-                  "label": "Usable content mixer",
+                  "label": "Volumen útil de la mezcladora",
                   "metric": "260 l"
                 },
                 {
-                  "label": "Circulation capacity",
+                  "label": "Capacidad de circulación",
                   "metric": "1,400 l/min"
                 },
                 {
-                  "label": "Water connection",
+                  "label": "Conexión de agua",
                   "metric": "BSP 1,5\""
                 },
                 {
-                  "label": "Holding capacity agitator",
+                  "label": "Capacidad de retención del agitador",
                   "metric": "800 l"
                 }
               ]
             },
             {
-              "title": "Electrical data",
+              "title": "Datos eléctricos",
               "rows": [
                 {
-                  "label": "Voltage",
+                  "label": "Tensión",
                   "metric": "3x 400/460 V"
                 },
                 {
-                  "label": "Frequency",
+                  "label": "Frecuencia",
                   "metric": "50 / 60 Hz"
                 },
                 {
-                  "label": "Nominal power",
+                  "label": "Potencia nominal",
                   "metric": "19 / 22 kW"
                 }
               ]
             },
             {
-              "title": "Weight and dimensions",
+              "title": "Peso y dimensiones",
               "rows": [
                 {
-                  "label": "Total weight",
+                  "label": "Peso total",
                   "metric": "2,248 kg"
                 },
                 {
-                  "label": "Width",
+                  "label": "Anchura",
                   "metric": "2,410 mm"
                 },
                 {
-                  "label": "Height",
+                  "label": "Altura",
                   "metric": "2,211 mm"
                 },
                 {
-                  "label": "Length",
+                  "label": "Longitud",
                   "metric": "2,461 mm"
                 }
               ]
             }
           ],
-          "note": "1: Water to cement ratio = 1",
+          "note": "1: Relación agua/cemento = 1",
           "gen": true
         },
         {
@@ -3204,15 +3204,15 @@
           "type": "list",
           "ordered": false,
           "items": [
-            "Included as standard (Grout pump): Manual pressure and flow control",
-            "Included as standard (Grout pump): Oil level and temperature sensor",
-            "Optional (Mixer / Agitator): Auxiliary mixing unit (recommended for W/C &lt; 0.45)",
-            "Optional (Control): Remote control ON-OFF",
-            "Optional (Control): P/Q-Registration",
-            "Control: PLC weigh batch control with touch screen",
-            "Control: Recipe management",
-            "Control: Automated mixing cycle ON-OFF",
-            "Control: Pump ON-OFF"
+            "Incluido de serie (Bomba de inyección): Control manual de presión y caudal",
+            "Incluido de serie (Bomba de inyección): Sensor de nivel y temperatura del aceite",
+            "Opcional (Mezcladora / agitador): Unidad de mezcla auxiliar (recomendada para A/C &lt; 0,45)",
+            "Opcional (Control): Mando a distancia ON/OFF",
+            "Opcional (Control): Registro P/Q (presión/caudal)",
+            "Control: Control PLC de dosificación por pesaje con pantalla táctil",
+            "Control: Gestión de recetas",
+            "Control: Ciclo de mezcla automático ON/OFF",
+            "Control: Bomba ON/OFF"
           ],
           "gen": true
         },
@@ -3259,7 +3259,7 @@
           "left": [
             {
               "type": "image",
-              "alt": "Automated Grout Plant FAIC 1400/725",
+              "alt": "Planta de inyección automática FAIC 1400/725",
               "width": 535,
               "height": 565,
               "src": "/assets/img/haeny-faic1400-725-unit.webp"
@@ -3268,17 +3268,17 @@
           "right": [
             {
               "type": "text",
-              "html": "The compact grout plants consist of the proven, standard Häny components of a mixer, agitator, and grout pump. In its automated execution the plant provides enormous savings in terms of personnel costs, high production outputs, quality monitoring and enhanced working conditions."
+              "html": "Las plantas de inyección compactas constan de los componentes estándar probados de Häny: mezcladora, agitador y bomba de inyección. En su versión automatizada, la planta ofrece enormes ahorros en costes de personal, alta producción, control de calidad y mejores condiciones de trabajo."
             },
             {
               "type": "list",
               "ordered": false,
               "items": [
-                "Extremely compact mixing and injection system with central lifting point for easy transport and minimum installation time",
-                "High production output, quality monitoring and cost savings in terms of personnel costs due to fully automated mixing process",
-                "Precise dosing of individual components is guaranteed by a sophisticated weighing system in the mixer (typical feed of dry components via silos/screw)",
-                "Mixing recipes can be entered and selected via touch screen as required",
-                "Batch records of each mixing cycle with consumption records (total of consumed components) is stored and can be transferred via a USB interface"
+                "Sistema de mezcla e inyección extremadamente compacto con punto de elevación central para un transporte sencillo y un tiempo de instalación mínimo",
+                "Alta producción, control de calidad y ahorro en costes de personal gracias al proceso de mezcla totalmente automatizado",
+                "La dosificación precisa de cada componente está garantizada por un sofisticado sistema de pesaje en la mezcladora (alimentación típica de componentes secos mediante silos/tornillo)",
+                "Las recetas de mezcla pueden introducirse y seleccionarse en la pantalla táctil según se necesite",
+                "Los registros de cada ciclo de mezcla con el consumo (total de componentes consumidos) se guardan y pueden transferirse por USB"
               ]
             }
           ],
@@ -3294,115 +3294,115 @@
           "type": "list",
           "ordered": false,
           "items": [
-            "Grouting of anchors, soil nails, tension cables as well as for sleeve pipe, rock, and contact injections",
-            "Preparation and pumping of bentonite suspensions for pipe jacking and microtunneling"
+            "Inyección de anclajes, clavos de suelo y cables tensores, así como inyecciones con tubo manguito, en roca y de contacto",
+            "Preparación y bombeo de suspensiones de bentonita para el hincado de tuberías y microtúneles"
           ],
           "gen": true
         },
         {
           "type": "datasheet",
           "title": "Datos técnicos",
-          "tagline": "Automated Grout Plant FAIC 1400/725",
+          "tagline": "Planta de inyección automática FAIC 1400/725",
           "intro": [],
           "groups": [
             {
-              "title": "Grout pump (ZMP 725)",
+              "title": "Bomba de inyección (ZMP 725)",
               "rows": [
                 {
-                  "label": "Capacity FAIC",
+                  "label": "Capacidad FAIC",
                   "metric": "5 m³/h"
                 },
                 {
-                  "label": "Max. pressure",
+                  "label": "Presión máx.",
                   "metric": "100 bar"
                 },
                 {
-                  "label": "Max. aggregate size",
+                  "label": "Tamaño máx. de partícula",
                   "metric": "8 mm"
                 },
                 {
-                  "label": "Hydraulic tank",
+                  "label": "Depósito hidráulico",
                   "metric": "140 l"
                 },
                 {
-                  "label": "Pump module",
-                  "metric": "double"
+                  "label": "Módulo de bomba",
+                  "metric": "doble"
                 },
                 {
-                  "label": "Cooling water flow rate",
+                  "label": "Caudal de agua de refrigeración",
                   "metric": "5–6 l/min"
                 },
                 {
-                  "label": "Cooling water connection",
+                  "label": "Conexión de agua de refrigeración",
                   "metric": "BSP ½\""
                 },
                 {
-                  "label": "Pressure connection",
+                  "label": "Conexión de presión",
                   "metric": "BSP 2\""
                 }
               ]
             },
             {
-              "title": "Mixer / Agitator",
+              "title": "Mezcladora / agitador",
               "rows": [
                 {
-                  "label": "Usable content mixer",
+                  "label": "Volumen útil de la mezcladora",
                   "metric": "550 l"
                 },
                 {
-                  "label": "Circulation capacity",
+                  "label": "Capacidad de circulación",
                   "metric": "2,400 l/min"
                 },
                 {
-                  "label": "Water connection",
+                  "label": "Conexión de agua",
                   "metric": "BSP 1½\""
                 },
                 {
-                  "label": "Holding capacity agitator",
+                  "label": "Capacidad de retención del agitador",
                   "metric": "800 l"
                 }
               ]
             },
             {
-              "title": "Electrical data",
+              "title": "Datos eléctricos",
               "rows": [
                 {
-                  "label": "Voltage",
+                  "label": "Tensión",
                   "metric": "3x 400/460 V"
                 },
                 {
-                  "label": "Frequency",
+                  "label": "Frecuencia",
                   "metric": "50 / 60 Hz"
                 },
                 {
-                  "label": "Nominal power",
+                  "label": "Potencia nominal",
                   "metric": "19 / 22 kW"
                 }
               ]
             },
             {
-              "title": "Weight and dimensions",
+              "title": "Peso y dimensiones",
               "rows": [
                 {
-                  "label": "Total weight",
+                  "label": "Peso total",
                   "metric": "2,300 kg"
                 },
                 {
-                  "label": "Width",
+                  "label": "Anchura",
                   "metric": "2,262 mm"
                 },
                 {
-                  "label": "Height",
+                  "label": "Altura",
                   "metric": "2,346 mm"
                 },
                 {
-                  "label": "Length",
+                  "label": "Longitud",
                   "metric": "2,725 mm"
                 }
               ]
             }
           ],
-          "note": "1: Water to cement ratio = 1",
+          "note": "1: Relación agua/cemento = 1",
           "gen": true
         },
         {
@@ -3415,15 +3415,15 @@
           "type": "list",
           "ordered": false,
           "items": [
-            "Included as standard (Grout pump): Manual pressure and flow control",
-            "Included as standard (Grout pump): Oil level and temperature sensor",
-            "Optional (Mixer / Agitator): Auxiliary mixing unit (recommended for W/C &lt; 0.45)",
-            "Optional (Control): Remote control ON-OFF",
-            "Optional (Control): P/Q-Registration",
-            "Control: PLC weigh batch control with touch screen",
-            "Control: Recipe management",
-            "Control: Automated mixing cycle ON-OFF",
-            "Control: Pump ON-OFF"
+            "Incluido de serie (Bomba de inyección): Control manual de presión y caudal",
+            "Incluido de serie (Bomba de inyección): Sensor de nivel y temperatura del aceite",
+            "Opcional (Mezcladora / agitador): Unidad de mezcla auxiliar (recomendada para A/C &lt; 0,45)",
+            "Opcional (Control): Mando a distancia ON/OFF",
+            "Opcional (Control): Registro P/Q (presión/caudal)",
+            "Control: Control PLC de dosificación por pesaje con pantalla táctil",
+            "Control: Gestión de recetas",
+            "Control: Ciclo de mezcla automático ON/OFF",
+            "Control: Bomba ON/OFF"
           ],
           "gen": true
         },
@@ -3518,11 +3518,11 @@
           "type": "list",
           "ordered": false,
           "items": [
-            "Extremely compact mixing and injection system with central lifting point for easy transport and minimum installation time",
-            "High production output, quality monitoring and cost savings in terms of personnel costs due to fully automated mixing process",
-            "Precise dosing of individual components is guaranteed by a sophisticated weighing system in the mixer (typical feed of dry components via silos/screw)",
-            "Mixing recipes can be entered and selected via touch screen as required",
-            "Batch records of each mixing cycle with consumption records (total of consumed components) is stored and can be transferred via a USB interface"
+            "Ekstremt kompakt blande- og injeksjonssystem med sentralt løftepunkt for enkel transport og minimal installasjonstid",
+            "Høy produksjonskapasitet, kvalitetsovervåking og lavere personalkostnader takket være helautomatisert blanding",
+            "Nøyaktig dosering av enkeltkomponenter sikres av et avansert veiesystem i mikseren (vanlig mating av tørre komponenter via siloer/skrue)",
+            "Blandeoppskrifter kan legges inn og velges via berøringsskjerm etter behov",
+            "Satsprotokoll for hver blandesyklus med forbruksregistrering (sum forbrukte komponenter) lagres og kan overføres via USB"
           ],
           "gen": true
         },
@@ -3554,8 +3554,8 @@
           "type": "list",
           "ordered": false,
           "items": [
-            "Grouting of anchors, soil nails, tension cables as well as for sleeve pipe, rock, and contact injections",
-            "Preparation and pumping of bentonite suspensions for pipe jacking and microtunneling"
+            "Injeksjon av ankere, jordnagler og spennkabler samt mansjettrør-, fjell- og kontaktinjeksjon",
+            "Klargjøring og pumping av bentonittsuspensjoner for rørpressing og mikrotunnelering"
           ],
           "gen": true
         },
@@ -3572,7 +3572,7 @@
           "left": [
             {
               "type": "image",
-              "alt": "Automated Grout Plant FAIC 650/710",
+              "alt": "Automatisk injeksjonsanlegg FAIC 650/710",
               "width": 506,
               "height": 561,
               "src": "/assets/img/haeny-faic650-710-unit.webp"
@@ -3581,17 +3581,17 @@
           "right": [
             {
               "type": "text",
-              "html": "The compact grout plants consist of the proven, standard Häny components of a mixer, agitator, and grout pump. In its automated execution the plant provides enormous savings in terms of personnel costs, high production outputs, quality monitoring and enhanced working conditions."
+              "html": "De kompakte injeksjonsanleggene består av Hänys velprøvde standardkomponenter: mikser, røreverk og injeksjonspumpe. I automatisert utførelse gir anlegget store besparelser i personalkostnader, høy produksjonskapasitet, kvalitetsovervåking og bedre arbeidsforhold."
             },
             {
               "type": "list",
               "ordered": false,
               "items": [
-                "Extremely compact mixing and injection system with central lifting point for easy transport and minimum installation time",
-                "High production output, quality monitoring and cost savings in terms of personnel costs due to fully automated mixing process",
-                "Precise dosing of individual components is guaranteed by a sophisticated weighing system in the mixer (typical feed of dry components via silos/screw)",
-                "Mixing recipes can be entered and selected via touch screen as required",
-                "Batch records of each mixing cycle with consumption records (total of consumed components) is stored and can be transferred via a USB interface"
+                "Ekstremt kompakt blande- og injeksjonssystem med sentralt løftepunkt for enkel transport og minimal installasjonstid",
+                "Høy produksjonskapasitet, kvalitetsovervåking og lavere personalkostnader takket være helautomatisert blanding",
+                "Nøyaktig dosering av enkeltkomponenter sikres av et avansert veiesystem i mikseren (vanlig mating av tørre komponenter via siloer/skrue)",
+                "Blandeoppskrifter kan legges inn og velges via berøringsskjerm etter behov",
+                "Satsprotokoll for hver blandesyklus med forbruksregistrering (sum forbrukte komponenter) lagres og kan overføres via USB"
               ]
             }
           ],
@@ -3607,115 +3607,115 @@
           "type": "list",
           "ordered": false,
           "items": [
-            "Grouting of anchors, soil nails, tension cables as well as for sleeve pipe, rock, and contact injections",
-            "Preparation and pumping of bentonite suspensions for pipe jacking and microtunneling"
+            "Injeksjon av ankere, jordnagler og spennkabler samt mansjettrør-, fjell- og kontaktinjeksjon",
+            "Klargjøring og pumping av bentonittsuspensjoner for rørpressing og mikrotunnelering"
           ],
           "gen": true
         },
         {
           "type": "datasheet",
           "title": "Tekniske data",
-          "tagline": "Automated Grout Plant FAIC 650/710",
+          "tagline": "Automatisk injeksjonsanlegg FAIC 650/710",
           "intro": [],
           "groups": [
             {
-              "title": "Grout pump (ZMP 710)",
+              "title": "Injeksjonspumpe (ZMP 710)",
               "rows": [
                 {
-                  "label": "Capacity FAIC",
+                  "label": "Kapasitet FAIC",
                   "metric": "5 m³/h"
                 },
                 {
-                  "label": "Max. pressure",
+                  "label": "Maks. trykk",
                   "metric": "100 bar"
                 },
                 {
-                  "label": "Max. aggregate size",
+                  "label": "Maks. kornstørrelse",
                   "metric": "8 mm"
                 },
                 {
-                  "label": "Hydraulic tank",
+                  "label": "Hydrauliktank",
                   "metric": "140 l"
                 },
                 {
-                  "label": "Pump module",
-                  "metric": "single"
+                  "label": "Pumpemodul",
+                  "metric": "enkel"
                 },
                 {
-                  "label": "Cooling water flow rate",
+                  "label": "Kjølevannstrøm",
                   "metric": "3–4 l/min"
                 },
                 {
-                  "label": "Cooling water connection",
+                  "label": "Kjølevanntilkobling",
                   "metric": "BSP ½\""
                 },
                 {
-                  "label": "Pressure connection",
+                  "label": "Trykktilkobling",
                   "metric": "BSP 2\""
                 }
               ]
             },
             {
-              "title": "Mixer / Agitator",
+              "title": "Mikser / røreverk",
               "rows": [
                 {
-                  "label": "Usable content mixer",
+                  "label": "Nyttbart volum mikser",
                   "metric": "260 l"
                 },
                 {
-                  "label": "Circulation capacity",
+                  "label": "Sirkulasjonskapasitet",
                   "metric": "1,400 l/min"
                 },
                 {
-                  "label": "Water connection",
+                  "label": "Vanntilkobling",
                   "metric": "BSP 1\""
                 },
                 {
-                  "label": "Holding capacity agitator",
+                  "label": "Røreverkets kapasitet",
                   "metric": "350 l"
                 }
               ]
             },
             {
-              "title": "Electrical data",
+              "title": "Elektriske data",
               "rows": [
                 {
-                  "label": "Voltage",
+                  "label": "Spenning",
                   "metric": "3x 400/460 V"
                 },
                 {
-                  "label": "Frequency",
+                  "label": "Frekvens",
                   "metric": "50 / 60 Hz"
                 },
                 {
-                  "label": "Nominal power",
+                  "label": "Merkeeffekt",
                   "metric": "18.5 / 21 kW"
                 }
               ]
             },
             {
-              "title": "Weight and dimensions",
+              "title": "Vekt og mål",
               "rows": [
                 {
-                  "label": "Total weight",
+                  "label": "Total vekt",
                   "metric": "1,665 kg"
                 },
                 {
-                  "label": "Width",
+                  "label": "Bredde",
                   "metric": "2,031 mm"
                 },
                 {
-                  "label": "Height",
+                  "label": "Høyde",
                   "metric": "1,992 mm"
                 },
                 {
-                  "label": "Length",
+                  "label": "Lengde",
                   "metric": "2,156 mm"
                 }
               ]
             }
           ],
-          "note": "1: Water to cement ratio = 1",
+          "note": "1: Vann/sement-tall = 1",
           "gen": true
         },
         {
@@ -3728,15 +3728,15 @@
           "type": "list",
           "ordered": false,
           "items": [
-            "Included as standard (Grout pump): Manual pressure and flow control",
-            "Included as standard (Grout pump): Oil level and temperature sensor",
-            "Optional (Mixer / Agitator): Auxiliary mixing unit (recommended for W/C &lt; 0.45)",
-            "Optional (Control): Remote control ON-OFF",
-            "Optional (Control): P/Q-Registration",
-            "Control: PLC weigh batch control with touch screen",
-            "Control: Recipe management",
-            "Control: Automated mixing cycle ON-OFF",
-            "Control: Pump ON-OFF"
+            "Inkludert som standard (Injeksjonspumpe): Manuell trykk- og strømningsregulering",
+            "Inkludert som standard (Injeksjonspumpe): Oljenivå- og temperaturføler",
+            "Tilvalg (Mikser / røreverk): Ekstra blandeenhet (anbefalt ved v/s &lt; 0,45)",
+            "Tilvalg (Styring): Fjernkontroll PÅ/AV",
+            "Tilvalg (Styring): P/Q-registrering (trykk/strømning)",
+            "Styring: PLS-styrt innveiing med berøringsskjerm",
+            "Styring: Oppskriftshåndtering",
+            "Styring: Automatisk blandesyklus PÅ/AV",
+            "Styring: Pumpe PÅ/AV"
           ],
           "gen": true
         },
@@ -3783,7 +3783,7 @@
           "left": [
             {
               "type": "image",
-              "alt": "Automated Grout Plant FAIC 650/712",
+              "alt": "Automatisk injeksjonsanlegg FAIC 650/712",
               "width": 495,
               "height": 555,
               "src": "/assets/img/haeny-faic650-712-unit.webp"
@@ -3792,17 +3792,17 @@
           "right": [
             {
               "type": "text",
-              "html": "The compact grout plants consist of the proven, standard Häny components of a mixer, agitator, and grout pump. In its automated execution the plant provides enormous savings in terms of personnel costs, high production outputs, quality monitoring and enhanced working conditions."
+              "html": "De kompakte injeksjonsanleggene består av Hänys velprøvde standardkomponenter: mikser, røreverk og injeksjonspumpe. I automatisert utførelse gir anlegget store besparelser i personalkostnader, høy produksjonskapasitet, kvalitetsovervåking og bedre arbeidsforhold."
             },
             {
               "type": "list",
               "ordered": false,
               "items": [
-                "Extremely compact mixing and injection system with central lifting point for easy transport and minimum installation time",
-                "High production output, quality monitoring and cost savings in terms of personnel costs due to fully automated mixing process",
-                "Precise dosing of individual components is guaranteed by a sophisticated weighing system in the mixer (typical feed of dry components via silos/screw)",
-                "Mixing recipes can be entered and selected via touch screen as required",
-                "Batch records of each mixing cycle with consumption records (total of consumed components) is stored and can be transferred via a USB interface"
+                "Ekstremt kompakt blande- og injeksjonssystem med sentralt løftepunkt for enkel transport og minimal installasjonstid",
+                "Høy produksjonskapasitet, kvalitetsovervåking og lavere personalkostnader takket være helautomatisert blanding",
+                "Nøyaktig dosering av enkeltkomponenter sikres av et avansert veiesystem i mikseren (vanlig mating av tørre komponenter via siloer/skrue)",
+                "Blandeoppskrifter kan legges inn og velges via berøringsskjerm etter behov",
+                "Satsprotokoll for hver blandesyklus med forbruksregistrering (sum forbrukte komponenter) lagres og kan overføres via USB"
               ]
             }
           ],
@@ -3818,115 +3818,115 @@
           "type": "list",
           "ordered": false,
           "items": [
-            "Grouting of anchors, soil nails, tension cables as well as for sleeve pipe, rock, and contact injections",
-            "Preparation and pumping of bentonite suspensions for pipe jacking and microtunneling"
+            "Injeksjon av ankere, jordnagler og spennkabler samt mansjettrør-, fjell- og kontaktinjeksjon",
+            "Klargjøring og pumping av bentonittsuspensjoner for rørpressing og mikrotunnelering"
           ],
           "gen": true
         },
         {
           "type": "datasheet",
           "title": "Tekniske data",
-          "tagline": "Automated Grout Plant FAIC 650/712",
+          "tagline": "Automatisk injeksjonsanlegg FAIC 650/712",
           "intro": [],
           "groups": [
             {
-              "title": "Grout pump (ZMP 712)",
+              "title": "Injeksjonspumpe (ZMP 712)",
               "rows": [
                 {
-                  "label": "Capacity FAIC",
+                  "label": "Kapasitet FAIC",
                   "metric": "4.9 m³/h"
                 },
                 {
-                  "label": "Max. pressure",
+                  "label": "Maks. trykk",
                   "metric": "88 bar"
                 },
                 {
-                  "label": "Max. aggregate size",
+                  "label": "Maks. kornstørrelse",
                   "metric": "8 mm"
                 },
                 {
-                  "label": "Hydraulic tank",
+                  "label": "Hydrauliktank",
                   "metric": "110 l"
                 },
                 {
-                  "label": "Pump module",
-                  "metric": "single"
+                  "label": "Pumpemodul",
+                  "metric": "enkel"
                 },
                 {
-                  "label": "Cooling water flow rate",
+                  "label": "Kjølevannstrøm",
                   "metric": "3–4 l/min"
                 },
                 {
-                  "label": "Cooling water connection",
+                  "label": "Kjølevanntilkobling",
                   "metric": "BSP ½\""
                 },
                 {
-                  "label": "Pressure connection",
+                  "label": "Trykktilkobling",
                   "metric": "BSP 2\""
                 }
               ]
             },
             {
-              "title": "Mixer / Agitator",
+              "title": "Mikser / røreverk",
               "rows": [
                 {
-                  "label": "Usable content mixer",
+                  "label": "Nyttbart volum mikser",
                   "metric": "260 l"
                 },
                 {
-                  "label": "Circulation capacity",
+                  "label": "Sirkulasjonskapasitet",
                   "metric": "1,400 l/min"
                 },
                 {
-                  "label": "Water connection",
+                  "label": "Vanntilkobling",
                   "metric": "BSP 1\""
                 },
                 {
-                  "label": "Holding capacity agitator",
+                  "label": "Røreverkets kapasitet",
                   "metric": "350 l"
                 }
               ]
             },
             {
-              "title": "Electrical data",
+              "title": "Elektriske data",
               "rows": [
                 {
-                  "label": "Voltage",
+                  "label": "Spenning",
                   "metric": "3x 400/460 V"
                 },
                 {
-                  "label": "Frequency",
+                  "label": "Frekvens",
                   "metric": "50 / 60 Hz"
                 },
                 {
-                  "label": "Nominal power",
+                  "label": "Merkeeffekt",
                   "metric": "18.5 / 21 kW"
                 }
               ]
             },
             {
-              "title": "Weight and dimensions",
+              "title": "Vekt og mål",
               "rows": [
                 {
-                  "label": "Total weight",
+                  "label": "Total vekt",
                   "metric": "1,615 kg"
                 },
                 {
-                  "label": "Width",
+                  "label": "Bredde",
                   "metric": "2,031 mm"
                 },
                 {
-                  "label": "Height",
+                  "label": "Høyde",
                   "metric": "1,992 mm"
                 },
                 {
-                  "label": "Length",
+                  "label": "Lengde",
                   "metric": "2,156 mm"
                 }
               ]
             }
           ],
-          "note": "1: Water to cement ratio = 1",
+          "note": "1: Vann/sement-tall = 1",
           "gen": true
         },
         {
@@ -3939,15 +3939,15 @@
           "type": "list",
           "ordered": false,
           "items": [
-            "Included as standard (Grout pump): Manual pressure and flow control",
-            "Included as standard (Grout pump): Oil level and temperature sensor",
-            "Optional (Mixer / Agitator): Auxiliary mixing unit (recommended for W/C &lt; 0.45)",
-            "Optional (Control): Remote control ON-OFF",
-            "Optional (Control): P/Q-Registration",
-            "Control: PLC weigh batch control with touch screen",
-            "Control: Recipe management",
-            "Control: Automated mixing cycle ON-OFF",
-            "Control: Pump ON-OFF"
+            "Inkludert som standard (Injeksjonspumpe): Manuell trykk- og strømningsregulering",
+            "Inkludert som standard (Injeksjonspumpe): Oljenivå- og temperaturføler",
+            "Tilvalg (Mikser / røreverk): Ekstra blandeenhet (anbefalt ved v/s &lt; 0,45)",
+            "Tilvalg (Styring): Fjernkontroll PÅ/AV",
+            "Tilvalg (Styring): P/Q-registrering (trykk/strømning)",
+            "Styring: PLS-styrt innveiing med berøringsskjerm",
+            "Styring: Oppskriftshåndtering",
+            "Styring: Automatisk blandesyklus PÅ/AV",
+            "Styring: Pumpe PÅ/AV"
           ],
           "gen": true
         },
@@ -3994,7 +3994,7 @@
           "left": [
             {
               "type": "image",
-              "alt": "Automated Grout Plant FAIC 650/725",
+              "alt": "Automatisk injeksjonsanlegg FAIC 650/725",
               "width": 488,
               "height": 546,
               "src": "/assets/img/haeny-faic650-725-unit.webp"
@@ -4003,17 +4003,17 @@
           "right": [
             {
               "type": "text",
-              "html": "The compact grout plants consist of the proven, standard Häny components of a mixer, agitator, and grout pump. In its automated execution the plant provides enormous savings in terms of personnel costs, high production outputs, quality monitoring and enhanced working conditions."
+              "html": "De kompakte injeksjonsanleggene består av Hänys velprøvde standardkomponenter: mikser, røreverk og injeksjonspumpe. I automatisert utførelse gir anlegget store besparelser i personalkostnader, høy produksjonskapasitet, kvalitetsovervåking og bedre arbeidsforhold."
             },
             {
               "type": "list",
               "ordered": false,
               "items": [
-                "Extremely compact mixing and injection system with central lifting point for easy transport and minimum installation time",
-                "High production output, quality monitoring and cost savings in terms of personnel costs due to fully automated mixing process",
-                "Precise dosing of individual components is guaranteed by a sophisticated weighing system in the mixer (typical feed of dry components via silos/screw)",
-                "Mixing recipes can be entered and selected via touch screen as required",
-                "Batch records of each mixing cycle with consumption records (total of consumed components) is stored and can be transferred via a USB interface"
+                "Ekstremt kompakt blande- og injeksjonssystem med sentralt løftepunkt for enkel transport og minimal installasjonstid",
+                "Høy produksjonskapasitet, kvalitetsovervåking og lavere personalkostnader takket være helautomatisert blanding",
+                "Nøyaktig dosering av enkeltkomponenter sikres av et avansert veiesystem i mikseren (vanlig mating av tørre komponenter via siloer/skrue)",
+                "Blandeoppskrifter kan legges inn og velges via berøringsskjerm etter behov",
+                "Satsprotokoll for hver blandesyklus med forbruksregistrering (sum forbrukte komponenter) lagres og kan overføres via USB"
               ]
             }
           ],
@@ -4029,115 +4029,115 @@
           "type": "list",
           "ordered": false,
           "items": [
-            "Grouting of anchors, soil nails, tension cables as well as for sleeve pipe, rock, and contact injections",
-            "Preparation and pumping of bentonite suspensions for pipe jacking and microtunneling"
+            "Injeksjon av ankere, jordnagler og spennkabler samt mansjettrør-, fjell- og kontaktinjeksjon",
+            "Klargjøring og pumping av bentonittsuspensjoner for rørpressing og mikrotunnelering"
           ],
           "gen": true
         },
         {
           "type": "datasheet",
           "title": "Tekniske data",
-          "tagline": "Automated Grout Plant FAIC 650/725",
+          "tagline": "Automatisk injeksjonsanlegg FAIC 650/725",
           "intro": [],
           "groups": [
             {
-              "title": "Grout pump (ZMP 725)",
+              "title": "Injeksjonspumpe (ZMP 725)",
               "rows": [
                 {
-                  "label": "Capacity FAIC",
+                  "label": "Kapasitet FAIC",
                   "metric": "5 m³/h"
                 },
                 {
-                  "label": "Max. pressure",
+                  "label": "Maks. trykk",
                   "metric": "100 bar"
                 },
                 {
-                  "label": "Max. aggregate size",
+                  "label": "Maks. kornstørrelse",
                   "metric": "8 mm"
                 },
                 {
-                  "label": "Hydraulic tank",
+                  "label": "Hydrauliktank",
                   "metric": "140 l"
                 },
                 {
-                  "label": "Pump module",
-                  "metric": "double"
+                  "label": "Pumpemodul",
+                  "metric": "dobbel"
                 },
                 {
-                  "label": "Cooling water flow rate",
+                  "label": "Kjølevannstrøm",
                   "metric": "5–6 l/min"
                 },
                 {
-                  "label": "Cooling water connection",
+                  "label": "Kjølevanntilkobling",
                   "metric": "BSP ½\""
                 },
                 {
-                  "label": "Pressure connection",
+                  "label": "Trykktilkobling",
                   "metric": "BSP 2\""
                 }
               ]
             },
             {
-              "title": "Mixer / Agitator",
+              "title": "Mikser / røreverk",
               "rows": [
                 {
-                  "label": "Usable content mixer",
+                  "label": "Nyttbart volum mikser",
                   "metric": "260 l"
                 },
                 {
-                  "label": "Circulation capacity",
+                  "label": "Sirkulasjonskapasitet",
                   "metric": "1,400 l/min"
                 },
                 {
-                  "label": "Water connection",
+                  "label": "Vanntilkobling",
                   "metric": "BSP 1\""
                 },
                 {
-                  "label": "Holding capacity agitator",
+                  "label": "Røreverkets kapasitet",
                   "metric": "350 l"
                 }
               ]
             },
             {
-              "title": "Electrical data",
+              "title": "Elektriske data",
               "rows": [
                 {
-                  "label": "Voltage",
+                  "label": "Spenning",
                   "metric": "3x 400/460 V"
                 },
                 {
-                  "label": "Frequency",
+                  "label": "Frekvens",
                   "metric": "50 / 60 Hz"
                 },
                 {
-                  "label": "Nominal power",
+                  "label": "Merkeeffekt",
                   "metric": "19 / 22 kW"
                 }
               ]
             },
             {
-              "title": "Weight and dimensions",
+              "title": "Vekt og mål",
               "rows": [
                 {
-                  "label": "Total weight",
+                  "label": "Total vekt",
                   "metric": "1,950 kg"
                 },
                 {
-                  "label": "Width",
+                  "label": "Bredde",
                   "metric": "2,031 mm"
                 },
                 {
-                  "label": "Height",
+                  "label": "Høyde",
                   "metric": "1,992 mm"
                 },
                 {
-                  "label": "Length",
+                  "label": "Lengde",
                   "metric": "2,156 mm"
                 }
               ]
             }
           ],
-          "note": "1: Water to cement ratio = 1",
+          "note": "1: Vann/sement-tall = 1",
           "gen": true
         },
         {
@@ -4150,15 +4150,15 @@
           "type": "list",
           "ordered": false,
           "items": [
-            "Included as standard (Grout pump): Manual pressure and flow control",
-            "Included as standard (Grout pump): Oil level and temperature sensor",
-            "Optional (Mixer / Agitator): Auxiliary mixing unit (recommended for W/C &lt; 0.45)",
-            "Optional (Control): Remote control ON-OFF",
-            "Optional (Control): P/Q-Registration",
-            "Control: PLC weigh batch control with touch screen",
-            "Control: Recipe management",
-            "Control: Automated mixing cycle ON-OFF",
-            "Control: Pump ON-OFF"
+            "Inkludert som standard (Injeksjonspumpe): Manuell trykk- og strømningsregulering",
+            "Inkludert som standard (Injeksjonspumpe): Oljenivå- og temperaturføler",
+            "Tilvalg (Mikser / røreverk): Ekstra blandeenhet (anbefalt ved v/s &lt; 0,45)",
+            "Tilvalg (Styring): Fjernkontroll PÅ/AV",
+            "Tilvalg (Styring): P/Q-registrering (trykk/strømning)",
+            "Styring: PLS-styrt innveiing med berøringsskjerm",
+            "Styring: Oppskriftshåndtering",
+            "Styring: Automatisk blandesyklus PÅ/AV",
+            "Styring: Pumpe PÅ/AV"
           ],
           "gen": true
         },
@@ -4205,7 +4205,7 @@
           "left": [
             {
               "type": "image",
-              "alt": "Automated Grout Plant FAIC 1100/725",
+              "alt": "Automatisk injeksjonsanlegg FAIC 1100/725",
               "width": 535,
               "height": 584,
               "src": "/assets/img/haeny-faic1100-725-unit.webp"
@@ -4214,17 +4214,17 @@
           "right": [
             {
               "type": "text",
-              "html": "The compact grout plants consist of the proven, standard Häny components of a mixer, agitator, and grout pump. In its automated execution the plant provides enormous savings in terms of personnel costs, high production outputs, quality monitoring and enhanced working conditions."
+              "html": "De kompakte injeksjonsanleggene består av Hänys velprøvde standardkomponenter: mikser, røreverk og injeksjonspumpe. I automatisert utførelse gir anlegget store besparelser i personalkostnader, høy produksjonskapasitet, kvalitetsovervåking og bedre arbeidsforhold."
             },
             {
               "type": "list",
               "ordered": false,
               "items": [
-                "Extremely compact mixing and injection system with central lifting point for easy transport and minimum installation time",
-                "High production output, quality monitoring and cost savings in terms of personnel costs due to fully automated mixing process",
-                "Precise dosing of individual components is guaranteed by a sophisticated weighing system in the mixer (typical feed of dry components via silos/screw)",
-                "Mixing recipes can be entered and selected via touch screen as required",
-                "Batch records of each mixing cycle with consumption records (total of consumed components) is stored and can be transferred via a USB interface"
+                "Ekstremt kompakt blande- og injeksjonssystem med sentralt løftepunkt for enkel transport og minimal installasjonstid",
+                "Høy produksjonskapasitet, kvalitetsovervåking og lavere personalkostnader takket være helautomatisert blanding",
+                "Nøyaktig dosering av enkeltkomponenter sikres av et avansert veiesystem i mikseren (vanlig mating av tørre komponenter via siloer/skrue)",
+                "Blandeoppskrifter kan legges inn og velges via berøringsskjerm etter behov",
+                "Satsprotokoll for hver blandesyklus med forbruksregistrering (sum forbrukte komponenter) lagres og kan overføres via USB"
               ]
             }
           ],
@@ -4240,115 +4240,115 @@
           "type": "list",
           "ordered": false,
           "items": [
-            "Grouting of anchors, soil nails, tension cables as well as for sleeve pipe, rock, and contact injections",
-            "Preparation and pumping of bentonite suspensions for pipe jacking and microtunneling"
+            "Injeksjon av ankere, jordnagler og spennkabler samt mansjettrør-, fjell- og kontaktinjeksjon",
+            "Klargjøring og pumping av bentonittsuspensjoner for rørpressing og mikrotunnelering"
           ],
           "gen": true
         },
         {
           "type": "datasheet",
           "title": "Tekniske data",
-          "tagline": "Automated Grout Plant FAIC 1100/725",
+          "tagline": "Automatisk injeksjonsanlegg FAIC 1100/725",
           "intro": [],
           "groups": [
             {
-              "title": "Grout pump (ZMP 725)",
+              "title": "Injeksjonspumpe (ZMP 725)",
               "rows": [
                 {
-                  "label": "Capacity FAIC",
+                  "label": "Kapasitet FAIC",
                   "metric": "5 m³/h"
                 },
                 {
-                  "label": "Max. pressure",
+                  "label": "Maks. trykk",
                   "metric": "100 bar"
                 },
                 {
-                  "label": "Max. aggregate size",
+                  "label": "Maks. kornstørrelse",
                   "metric": "8 mm"
                 },
                 {
-                  "label": "Hydraulic tank",
+                  "label": "Hydrauliktank",
                   "metric": "140 l"
                 },
                 {
-                  "label": "Pump module",
-                  "metric": "double"
+                  "label": "Pumpemodul",
+                  "metric": "dobbel"
                 },
                 {
-                  "label": "Cooling water flow rate",
+                  "label": "Kjølevannstrøm",
                   "metric": "5–6 l/min"
                 },
                 {
-                  "label": "Cooling water connection",
+                  "label": "Kjølevanntilkobling",
                   "metric": "BSP ½\""
                 },
                 {
-                  "label": "Pressure connection",
+                  "label": "Trykktilkobling",
                   "metric": "BSP 2\""
                 }
               ]
             },
             {
-              "title": "Mixer / Agitator",
+              "title": "Mikser / røreverk",
               "rows": [
                 {
-                  "label": "Usable content mixer",
+                  "label": "Nyttbart volum mikser",
                   "metric": "260 l"
                 },
                 {
-                  "label": "Circulation capacity",
+                  "label": "Sirkulasjonskapasitet",
                   "metric": "1,400 l/min"
                 },
                 {
-                  "label": "Water connection",
+                  "label": "Vanntilkobling",
                   "metric": "BSP 1,5\""
                 },
                 {
-                  "label": "Holding capacity agitator",
+                  "label": "Røreverkets kapasitet",
                   "metric": "800 l"
                 }
               ]
             },
             {
-              "title": "Electrical data",
+              "title": "Elektriske data",
               "rows": [
                 {
-                  "label": "Voltage",
+                  "label": "Spenning",
                   "metric": "3x 400/460 V"
                 },
                 {
-                  "label": "Frequency",
+                  "label": "Frekvens",
                   "metric": "50 / 60 Hz"
                 },
                 {
-                  "label": "Nominal power",
+                  "label": "Merkeeffekt",
                   "metric": "19 / 22 kW"
                 }
               ]
             },
             {
-              "title": "Weight and dimensions",
+              "title": "Vekt og mål",
               "rows": [
                 {
-                  "label": "Total weight",
+                  "label": "Total vekt",
                   "metric": "2,248 kg"
                 },
                 {
-                  "label": "Width",
+                  "label": "Bredde",
                   "metric": "2,410 mm"
                 },
                 {
-                  "label": "Height",
+                  "label": "Høyde",
                   "metric": "2,211 mm"
                 },
                 {
-                  "label": "Length",
+                  "label": "Lengde",
                   "metric": "2,461 mm"
                 }
               ]
             }
           ],
-          "note": "1: Water to cement ratio = 1",
+          "note": "1: Vann/sement-tall = 1",
           "gen": true
         },
         {
@@ -4361,15 +4361,15 @@
           "type": "list",
           "ordered": false,
           "items": [
-            "Included as standard (Grout pump): Manual pressure and flow control",
-            "Included as standard (Grout pump): Oil level and temperature sensor",
-            "Optional (Mixer / Agitator): Auxiliary mixing unit (recommended for W/C &lt; 0.45)",
-            "Optional (Control): Remote control ON-OFF",
-            "Optional (Control): P/Q-Registration",
-            "Control: PLC weigh batch control with touch screen",
-            "Control: Recipe management",
-            "Control: Automated mixing cycle ON-OFF",
-            "Control: Pump ON-OFF"
+            "Inkludert som standard (Injeksjonspumpe): Manuell trykk- og strømningsregulering",
+            "Inkludert som standard (Injeksjonspumpe): Oljenivå- og temperaturføler",
+            "Tilvalg (Mikser / røreverk): Ekstra blandeenhet (anbefalt ved v/s &lt; 0,45)",
+            "Tilvalg (Styring): Fjernkontroll PÅ/AV",
+            "Tilvalg (Styring): P/Q-registrering (trykk/strømning)",
+            "Styring: PLS-styrt innveiing med berøringsskjerm",
+            "Styring: Oppskriftshåndtering",
+            "Styring: Automatisk blandesyklus PÅ/AV",
+            "Styring: Pumpe PÅ/AV"
           ],
           "gen": true
         },
@@ -4416,7 +4416,7 @@
           "left": [
             {
               "type": "image",
-              "alt": "Automated Grout Plant FAIC 1400/725",
+              "alt": "Automatisk injeksjonsanlegg FAIC 1400/725",
               "width": 535,
               "height": 565,
               "src": "/assets/img/haeny-faic1400-725-unit.webp"
@@ -4425,17 +4425,17 @@
           "right": [
             {
               "type": "text",
-              "html": "The compact grout plants consist of the proven, standard Häny components of a mixer, agitator, and grout pump. In its automated execution the plant provides enormous savings in terms of personnel costs, high production outputs, quality monitoring and enhanced working conditions."
+              "html": "De kompakte injeksjonsanleggene består av Hänys velprøvde standardkomponenter: mikser, røreverk og injeksjonspumpe. I automatisert utførelse gir anlegget store besparelser i personalkostnader, høy produksjonskapasitet, kvalitetsovervåking og bedre arbeidsforhold."
             },
             {
               "type": "list",
               "ordered": false,
               "items": [
-                "Extremely compact mixing and injection system with central lifting point for easy transport and minimum installation time",
-                "High production output, quality monitoring and cost savings in terms of personnel costs due to fully automated mixing process",
-                "Precise dosing of individual components is guaranteed by a sophisticated weighing system in the mixer (typical feed of dry components via silos/screw)",
-                "Mixing recipes can be entered and selected via touch screen as required",
-                "Batch records of each mixing cycle with consumption records (total of consumed components) is stored and can be transferred via a USB interface"
+                "Ekstremt kompakt blande- og injeksjonssystem med sentralt løftepunkt for enkel transport og minimal installasjonstid",
+                "Høy produksjonskapasitet, kvalitetsovervåking og lavere personalkostnader takket være helautomatisert blanding",
+                "Nøyaktig dosering av enkeltkomponenter sikres av et avansert veiesystem i mikseren (vanlig mating av tørre komponenter via siloer/skrue)",
+                "Blandeoppskrifter kan legges inn og velges via berøringsskjerm etter behov",
+                "Satsprotokoll for hver blandesyklus med forbruksregistrering (sum forbrukte komponenter) lagres og kan overføres via USB"
               ]
             }
           ],
@@ -4451,115 +4451,115 @@
           "type": "list",
           "ordered": false,
           "items": [
-            "Grouting of anchors, soil nails, tension cables as well as for sleeve pipe, rock, and contact injections",
-            "Preparation and pumping of bentonite suspensions for pipe jacking and microtunneling"
+            "Injeksjon av ankere, jordnagler og spennkabler samt mansjettrør-, fjell- og kontaktinjeksjon",
+            "Klargjøring og pumping av bentonittsuspensjoner for rørpressing og mikrotunnelering"
           ],
           "gen": true
         },
         {
           "type": "datasheet",
           "title": "Tekniske data",
-          "tagline": "Automated Grout Plant FAIC 1400/725",
+          "tagline": "Automatisk injeksjonsanlegg FAIC 1400/725",
           "intro": [],
           "groups": [
             {
-              "title": "Grout pump (ZMP 725)",
+              "title": "Injeksjonspumpe (ZMP 725)",
               "rows": [
                 {
-                  "label": "Capacity FAIC",
+                  "label": "Kapasitet FAIC",
                   "metric": "5 m³/h"
                 },
                 {
-                  "label": "Max. pressure",
+                  "label": "Maks. trykk",
                   "metric": "100 bar"
                 },
                 {
-                  "label": "Max. aggregate size",
+                  "label": "Maks. kornstørrelse",
                   "metric": "8 mm"
                 },
                 {
-                  "label": "Hydraulic tank",
+                  "label": "Hydrauliktank",
                   "metric": "140 l"
                 },
                 {
-                  "label": "Pump module",
-                  "metric": "double"
+                  "label": "Pumpemodul",
+                  "metric": "dobbel"
                 },
                 {
-                  "label": "Cooling water flow rate",
+                  "label": "Kjølevannstrøm",
                   "metric": "5–6 l/min"
                 },
                 {
-                  "label": "Cooling water connection",
+                  "label": "Kjølevanntilkobling",
                   "metric": "BSP ½\""
                 },
                 {
-                  "label": "Pressure connection",
+                  "label": "Trykktilkobling",
                   "metric": "BSP 2\""
                 }
               ]
             },
             {
-              "title": "Mixer / Agitator",
+              "title": "Mikser / røreverk",
               "rows": [
                 {
-                  "label": "Usable content mixer",
+                  "label": "Nyttbart volum mikser",
                   "metric": "550 l"
                 },
                 {
-                  "label": "Circulation capacity",
+                  "label": "Sirkulasjonskapasitet",
                   "metric": "2,400 l/min"
                 },
                 {
-                  "label": "Water connection",
+                  "label": "Vanntilkobling",
                   "metric": "BSP 1½\""
                 },
                 {
-                  "label": "Holding capacity agitator",
+                  "label": "Røreverkets kapasitet",
                   "metric": "800 l"
                 }
               ]
             },
             {
-              "title": "Electrical data",
+              "title": "Elektriske data",
               "rows": [
                 {
-                  "label": "Voltage",
+                  "label": "Spenning",
                   "metric": "3x 400/460 V"
                 },
                 {
-                  "label": "Frequency",
+                  "label": "Frekvens",
                   "metric": "50 / 60 Hz"
                 },
                 {
-                  "label": "Nominal power",
+                  "label": "Merkeeffekt",
                   "metric": "19 / 22 kW"
                 }
               ]
             },
             {
-              "title": "Weight and dimensions",
+              "title": "Vekt og mål",
               "rows": [
                 {
-                  "label": "Total weight",
+                  "label": "Total vekt",
                   "metric": "2,300 kg"
                 },
                 {
-                  "label": "Width",
+                  "label": "Bredde",
                   "metric": "2,262 mm"
                 },
                 {
-                  "label": "Height",
+                  "label": "Høyde",
                   "metric": "2,346 mm"
                 },
                 {
-                  "label": "Length",
+                  "label": "Lengde",
                   "metric": "2,725 mm"
                 }
               ]
             }
           ],
-          "note": "1: Water to cement ratio = 1",
+          "note": "1: Vann/sement-tall = 1",
           "gen": true
         },
         {
@@ -4572,15 +4572,15 @@
           "type": "list",
           "ordered": false,
           "items": [
-            "Included as standard (Grout pump): Manual pressure and flow control",
-            "Included as standard (Grout pump): Oil level and temperature sensor",
-            "Optional (Mixer / Agitator): Auxiliary mixing unit (recommended for W/C &lt; 0.45)",
-            "Optional (Control): Remote control ON-OFF",
-            "Optional (Control): P/Q-Registration",
-            "Control: PLC weigh batch control with touch screen",
-            "Control: Recipe management",
-            "Control: Automated mixing cycle ON-OFF",
-            "Control: Pump ON-OFF"
+            "Inkludert som standard (Injeksjonspumpe): Manuell trykk- og strømningsregulering",
+            "Inkludert som standard (Injeksjonspumpe): Oljenivå- og temperaturføler",
+            "Tilvalg (Mikser / røreverk): Ekstra blandeenhet (anbefalt ved v/s &lt; 0,45)",
+            "Tilvalg (Styring): Fjernkontroll PÅ/AV",
+            "Tilvalg (Styring): P/Q-registrering (trykk/strømning)",
+            "Styring: PLS-styrt innveiing med berøringsskjerm",
+            "Styring: Oppskriftshåndtering",
+            "Styring: Automatisk blandesyklus PÅ/AV",
+            "Styring: Pumpe PÅ/AV"
           ],
           "gen": true
         },

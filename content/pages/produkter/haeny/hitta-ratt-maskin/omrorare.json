@@ -39,9 +39,9 @@
           "type": "list",
           "ordered": false,
           "items": [
-            "Slowly rotating paddle for homogenization of the mixed material and removal of existing air bubbles",
-            "Cleaning opening with protective grid and splash guard",
-            "Inclined bottom for complete emptying with drain plug"
+            "Långsamt roterande skovel som homogeniserar den blandade massan och avlägsnar luftbubblor",
+            "Rengöringsöppning med skyddsgaller och stänkskydd",
+            "Sluttande botten för fullständig tömning med avtappningsplugg"
           ],
           "gen": true
         },
@@ -74,7 +74,7 @@
           "type": "list",
           "ordered": false,
           "items": [
-            "Holding tank between mixer and injection pump"
+            "Mellantank mellan blandare och injekteringspump"
           ],
           "gen": true
         },
@@ -148,7 +148,7 @@
           "left": [
             {
               "type": "image",
-              "alt": "Agitator HRW 150",
+              "alt": "Omrörare HRW 150",
               "width": 355,
               "height": 595,
               "src": "/assets/img/haeny-hrw150-model.webp"
@@ -157,15 +157,15 @@
           "right": [
             {
               "type": "text",
-              "html": "Agitators ensure continuous operation by holding and homogenizing the mixed suspension and removing any air bubbles by means of a slowly rotating paddle."
+              "html": "Omrörarna säkerställer kontinuerlig drift genom att hålla och homogenisera den blandade suspensionen och avlägsna luftbubblor med en långsamt roterande skovel."
             },
             {
               "type": "list",
               "ordered": false,
               "items": [
-                "Slowly rotating paddle for homogenization of the mixed material and removal of existing air bubbles",
-                "Cleaning opening with protective grid and splash guard",
-                "Inclined bottom for complete emptying with drain plug"
+                "Långsamt roterande skovel som homogeniserar den blandade massan och avlägsnar luftbubblor",
+                "Rengöringsöppning med skyddsgaller och stänkskydd",
+                "Sluttande botten för fullständig tömning med avtappningsplugg"
               ]
             }
           ],
@@ -181,83 +181,83 @@
           "type": "list",
           "ordered": false,
           "items": [
-            "Holding tank between mixer and injection pump"
+            "Mellantank mellan blandare och injekteringspump"
           ],
           "gen": true
         },
         {
           "type": "datasheet",
           "title": "Teknisk data",
-          "tagline": "Agitator HRW 150",
+          "tagline": "Omrörare HRW 150",
           "intro": [],
           "groups": [
             {
-              "title": "Agitator",
+              "title": "Omrörare",
               "rows": [
                 {
-                  "label": "Usable content",
+                  "label": "Användbar volym",
                   "metric": "150 l"
                 },
                 {
-                  "label": "Liquid temperature",
+                  "label": "Vätsketemperatur",
                   "metric": "Max. 40°C"
                 },
                 {
-                  "label": "Inlet connection",
-                  "metric": "hose connection 60 mm"
+                  "label": "Inloppsanslutning",
+                  "metric": "slanganslutning 60 mm"
                 },
                 {
-                  "label": "Outlet connection",
+                  "label": "Utloppsanslutning",
                   "metric": "1\" / 1½\""
                 },
                 {
-                  "label": "Drain plug",
+                  "label": "Avtappningsplugg",
                   "metric": "2\""
                 }
               ]
             },
             {
-              "title": "Electrical data",
+              "title": "Elektriska data",
               "rows": [
                 {
-                  "label": "Voltage",
+                  "label": "Spänning",
                   "metric": "3x 400/460"
                 },
                 {
-                  "label": "Frequency",
+                  "label": "Frekvens",
                   "metric": "50 / 60 Hz"
                 },
                 {
-                  "label": "Nominal power",
+                  "label": "Märkeffekt",
                   "metric": "0.55 / 0.62 kW"
                 },
                 {
-                  "label": "Nominal current",
+                  "label": "Märkström",
                   "metric": "1.62 / 1.59 A"
                 },
                 {
-                  "label": "Speed",
+                  "label": "Varvtal",
                   "metric": "690 / 830 min⁻¹"
                 }
               ]
             },
             {
-              "title": "Weight and dimensions",
+              "title": "Vikt och mått",
               "rows": [
                 {
-                  "label": "Approx. weight",
+                  "label": "Ungefärlig vikt",
                   "metric": "82.5 kg"
                 },
                 {
-                  "label": "Width",
+                  "label": "Bredd",
                   "metric": "562 mm"
                 },
                 {
-                  "label": "Height",
+                  "label": "Höjd",
                   "metric": "1,321 mm"
                 },
                 {
-                  "label": "Length",
+                  "label": "Längd",
                   "metric": "797 mm"
                 }
               ]
@@ -302,7 +302,7 @@
           "left": [
             {
               "type": "image",
-              "alt": "Agitator HRW 350",
+              "alt": "Omrörare HRW 350",
               "width": 426,
               "height": 666,
               "src": "/assets/img/haeny-hrw350-model.webp"
@@ -311,17 +311,17 @@
           "right": [
             {
               "type": "text",
-              "html": "Agitators ensure continuous operation by holding and homogenizing the mixed suspension and removing any air bubbles by means of a slowly rotating paddle. Optional level sensors enable fully automatic operation."
+              "html": "Omrörarna säkerställer kontinuerlig drift genom att hålla och homogenisera den blandade suspensionen och avlägsna luftbubblor med en långsamt roterande skovel. Nivågivare (tillval) möjliggör helt automatisk drift."
             },
             {
               "type": "list",
               "ordered": false,
               "items": [
-                "Complete circulation of the tank contents by means of an agitator shaft arranged angled to the tank with mixing paddle (no hard-to-clean static paddles)",
-                "Slowly rotating paddle for homogenization of the mixed material and removal of existing air bubbles",
-                "Cleaning opening with safety switch",
-                "Central hitching point for easy transportation",
-                "Optional level sensors for consumption-dependent and fully automatic operation"
+                "Full cirkulation av tankinnehållet med en omröraraxel monterad vinklad mot tanken med blandningsskovel (inga svårrengjorda statiska skovlar)",
+                "Långsamt roterande skovel som homogeniserar den blandade massan och avlägsnar luftbubblor",
+                "Rengöringsöppning med säkerhetsbrytare",
+                "Central lyftpunkt för enkel transport",
+                "Nivågivare (tillval) för förbrukningsstyrd och helt automatisk drift"
               ]
             }
           ],
@@ -337,75 +337,75 @@
           "type": "list",
           "ordered": false,
           "items": [
-            "Holding tank between mixer and injection pump"
+            "Mellantank mellan blandare och injekteringspump"
           ],
           "gen": true
         },
         {
           "type": "datasheet",
           "title": "Teknisk data",
-          "tagline": "Agitator HRW 350",
+          "tagline": "Omrörare HRW 350",
           "intro": [],
           "groups": [
             {
-              "title": "Agitator",
+              "title": "Omrörare",
               "rows": [
                 {
-                  "label": "Usable content",
+                  "label": "Användbar volym",
                   "metric": "350 l"
                 },
                 {
-                  "label": "Liquid temperature",
+                  "label": "Vätsketemperatur",
                   "metric": "Max. 40°C"
                 },
                 {
-                  "label": "Inlet connection",
+                  "label": "Inloppsanslutning",
                   "metric": "2½\""
                 },
                 {
-                  "label": "Outlet connection",
+                  "label": "Utloppsanslutning",
                   "metric": "2½\""
                 }
               ]
             },
             {
-              "title": "Electrical data",
+              "title": "Elektriska data",
               "rows": [
                 {
-                  "label": "Voltage",
+                  "label": "Spänning",
                   "metric": "3x 400/460"
                 },
                 {
-                  "label": "Frequency",
+                  "label": "Frekvens",
                   "metric": "50 / 60 Hz"
                 },
                 {
-                  "label": "Nominal power",
+                  "label": "Märkeffekt",
                   "metric": "0.55 / 0.66 kW"
                 },
                 {
-                  "label": "Speed",
+                  "label": "Varvtal",
                   "metric": "46.7 / 56.7 min⁻¹"
                 }
               ]
             },
             {
-              "title": "Weight and dimensions",
+              "title": "Vikt och mått",
               "rows": [
                 {
-                  "label": "Approx. weight",
+                  "label": "Ungefärlig vikt",
                   "metric": "158 kg"
                 },
                 {
-                  "label": "Width",
+                  "label": "Bredd",
                   "metric": "953 mm"
                 },
                 {
-                  "label": "Height",
+                  "label": "Höjd",
                   "metric": "1,221 mm"
                 },
                 {
-                  "label": "Length",
+                  "label": "Längd",
                   "metric": "1,055 mm"
                 }
               ]
@@ -424,8 +424,8 @@
           "type": "list",
           "ordered": false,
           "items": [
-            "Optional (Agitator): Level sensors 1\", \"full - empty\"",
-            "Optional (Agitator): Flange connection with butterfly valve 2½\""
+            "Tillval (Omrörare): Nivågivare 1\", \"full - tom\"",
+            "Tillval (Omrörare): Flänsanslutning med spjällventil 2½\""
           ],
           "gen": true
         },
@@ -465,7 +465,7 @@
           "left": [
             {
               "type": "image",
-              "alt": "Agitator HRW 800",
+              "alt": "Omrörare HRW 800",
               "width": 403,
               "height": 665,
               "src": "/assets/img/haeny-hrw800-model.webp"
@@ -474,17 +474,17 @@
           "right": [
             {
               "type": "text",
-              "html": "Agitators ensure continuous operation by holding and homogenizing the mixed suspension and removing any air bubbles by means of a slowly rotating paddle. Optional level sensors enable fully automatic operation."
+              "html": "Omrörarna säkerställer kontinuerlig drift genom att hålla och homogenisera den blandade suspensionen och avlägsna luftbubblor med en långsamt roterande skovel. Nivågivare (tillval) möjliggör helt automatisk drift."
             },
             {
               "type": "list",
               "ordered": false,
               "items": [
-                "Complete circulation of the tank contents by means of an agitator shaft arranged angled to the tank with mixing paddle (no hard-to-clean static paddles)",
-                "Slowly rotating paddle for homogenization of the mixed material and removal of existing air bubbles",
-                "Cleaning opening with safety switch",
-                "Central hitching point for easy transportation",
-                "Optional level sensors for consumption-dependent and fully automatic operation"
+                "Full cirkulation av tankinnehållet med en omröraraxel monterad vinklad mot tanken med blandningsskovel (inga svårrengjorda statiska skovlar)",
+                "Långsamt roterande skovel som homogeniserar den blandade massan och avlägsnar luftbubblor",
+                "Rengöringsöppning med säkerhetsbrytare",
+                "Central lyftpunkt för enkel transport",
+                "Nivågivare (tillval) för förbrukningsstyrd och helt automatisk drift"
               ]
             }
           ],
@@ -500,75 +500,75 @@
           "type": "list",
           "ordered": false,
           "items": [
-            "Holding tank between mixer and injection pump"
+            "Mellantank mellan blandare och injekteringspump"
           ],
           "gen": true
         },
         {
           "type": "datasheet",
           "title": "Teknisk data",
-          "tagline": "Agitator HRW 800",
+          "tagline": "Omrörare HRW 800",
           "intro": [],
           "groups": [
             {
-              "title": "Agitator",
+              "title": "Omrörare",
               "rows": [
                 {
-                  "label": "Usable content",
+                  "label": "Användbar volym",
                   "metric": "800 l"
                 },
                 {
-                  "label": "Liquid temperature",
+                  "label": "Vätsketemperatur",
                   "metric": "Max. 40°C"
                 },
                 {
-                  "label": "Inlet connection",
+                  "label": "Inloppsanslutning",
                   "metric": "2½\""
                 },
                 {
-                  "label": "Outlet connection",
+                  "label": "Utloppsanslutning",
                   "metric": "2½\""
                 }
               ]
             },
             {
-              "title": "Electrical data",
+              "title": "Elektriska data",
               "rows": [
                 {
-                  "label": "Voltage",
+                  "label": "Spänning",
                   "metric": "3x 400/460"
                 },
                 {
-                  "label": "Frequency",
+                  "label": "Frekvens",
                   "metric": "50 / 60 Hz"
                 },
                 {
-                  "label": "Nominal power",
+                  "label": "Märkeffekt",
                   "metric": "0.55 / 0.66 kW"
                 },
                 {
-                  "label": "Speed",
+                  "label": "Varvtal",
                   "metric": "46.7 / 56.7 min⁻¹"
                 }
               ]
             },
             {
-              "title": "Weight and dimensions",
+              "title": "Vikt och mått",
               "rows": [
                 {
-                  "label": "Approx. weight",
+                  "label": "Ungefärlig vikt",
                   "metric": "233 kg"
                 },
                 {
-                  "label": "Width",
+                  "label": "Bredd",
                   "metric": "1,144 mm"
                 },
                 {
-                  "label": "Height",
+                  "label": "Höjd",
                   "metric": "1,666 mm"
                 },
                 {
-                  "label": "Length",
+                  "label": "Längd",
                   "metric": "1,232 mm"
                 }
               ]
@@ -587,8 +587,8 @@
           "type": "list",
           "ordered": false,
           "items": [
-            "Optional (Agitator): Level sensors 1\", \"full - empty\"",
-            "Optional (Agitator): Flange connection with butterfly valve 2½\""
+            "Tillval (Omrörare): Nivågivare 1\", \"full - tom\"",
+            "Tillval (Omrörare): Flänsanslutning med spjällventil 2½\""
           ],
           "gen": true
         },
@@ -628,7 +628,7 @@
           "left": [
             {
               "type": "image",
-              "alt": "Agitator HRW 1200",
+              "alt": "Omrörare HRW 1200",
               "width": 439,
               "height": 666,
               "src": "/assets/img/haeny-hrw1200-model.webp"
@@ -637,17 +637,17 @@
           "right": [
             {
               "type": "text",
-              "html": "Agitators ensure continuous operation by holding and homogenizing the mixed suspension and removing any air bubbles by means of a slowly rotating paddle. Optional level sensors enable fully automatic operation."
+              "html": "Omrörarna säkerställer kontinuerlig drift genom att hålla och homogenisera den blandade suspensionen och avlägsna luftbubblor med en långsamt roterande skovel. Nivågivare (tillval) möjliggör helt automatisk drift."
             },
             {
               "type": "list",
               "ordered": false,
               "items": [
-                "Complete circulation of the tank contents by means of an agitator shaft arranged angled to the tank with mixing paddle (no hard-to-clean static paddles)",
-                "Slowly rotating paddle for homogenization of the mixed material and removal of existing air bubbles",
-                "Cleaning opening with safety switch",
-                "Central hitching point for easy transportation",
-                "Level sensors for fully automatic operation"
+                "Full cirkulation av tankinnehållet med en omröraraxel monterad vinklad mot tanken med blandningsskovel (inga svårrengjorda statiska skovlar)",
+                "Långsamt roterande skovel som homogeniserar den blandade massan och avlägsnar luftbubblor",
+                "Rengöringsöppning med säkerhetsbrytare",
+                "Central lyftpunkt för enkel transport",
+                "Nivågivare för helt automatisk drift"
               ]
             }
           ],
@@ -663,75 +663,75 @@
           "type": "list",
           "ordered": false,
           "items": [
-            "Holding tank between mixer and injection pump"
+            "Mellantank mellan blandare och injekteringspump"
           ],
           "gen": true
         },
         {
           "type": "datasheet",
           "title": "Teknisk data",
-          "tagline": "Agitator HRW 1200",
+          "tagline": "Omrörare HRW 1200",
           "intro": [],
           "groups": [
             {
-              "title": "Agitator",
+              "title": "Omrörare",
               "rows": [
                 {
-                  "label": "Usable content",
+                  "label": "Användbar volym",
                   "metric": "1050 l"
                 },
                 {
-                  "label": "Liquid temperature",
+                  "label": "Vätsketemperatur",
                   "metric": "Max. 40°C"
                 },
                 {
-                  "label": "Inlet connection",
+                  "label": "Inloppsanslutning",
                   "metric": "2½\""
                 },
                 {
-                  "label": "Outlet connection",
+                  "label": "Utloppsanslutning",
                   "metric": "2\""
                 }
               ]
             },
             {
-              "title": "Electrical data",
+              "title": "Elektriska data",
               "rows": [
                 {
-                  "label": "Voltage",
+                  "label": "Spänning",
                   "metric": "3x 400/460"
                 },
                 {
-                  "label": "Frequency",
+                  "label": "Frekvens",
                   "metric": "50 / 60 Hz"
                 },
                 {
-                  "label": "Nominal power",
+                  "label": "Märkeffekt",
                   "metric": "1.5 / 1.8 kW"
                 },
                 {
-                  "label": "Speed",
+                  "label": "Varvtal",
                   "metric": "34 / 40 min⁻¹"
                 }
               ]
             },
             {
-              "title": "Weight and dimensions",
+              "title": "Vikt och mått",
               "rows": [
                 {
-                  "label": "Approx. weight",
+                  "label": "Ungefärlig vikt",
                   "metric": "450 kg"
                 },
                 {
-                  "label": "Width",
+                  "label": "Bredd",
                   "metric": "1,343 mm"
                 },
                 {
-                  "label": "Height",
+                  "label": "Höjd",
                   "metric": "2,216 mm"
                 },
                 {
-                  "label": "Length",
+                  "label": "Längd",
                   "metric": "1,198 mm"
                 }
               ]
@@ -750,8 +750,8 @@
           "type": "list",
           "ordered": false,
           "items": [
-            "Optional (Agitator): Level sensors 1\", \"full - empty\"",
-            "Optional (Agitator): Flange connection with butterfly valve 2½\""
+            "Tillval (Omrörare): Nivågivare 1\", \"full - tom\"",
+            "Tillval (Omrörare): Flänsanslutning med spjällventil 2½\""
           ],
           "gen": true
         },
@@ -791,7 +791,7 @@
           "left": [
             {
               "type": "image",
-              "alt": "Agitator HRW 2000",
+              "alt": "Omrörare HRW 2000",
               "width": 425,
               "height": 558,
               "src": "/assets/img/haeny-hrw2000-model.webp"
@@ -800,17 +800,17 @@
           "right": [
             {
               "type": "text",
-              "html": "Agitators ensure continuous operation by holding and homogenizing the mixed suspension and removing any air bubbles by means of a slowly rotating paddle. Optional level sensors enable fully automatic operation."
+              "html": "Omrörarna säkerställer kontinuerlig drift genom att hålla och homogenisera den blandade suspensionen och avlägsna luftbubblor med en långsamt roterande skovel. Nivågivare (tillval) möjliggör helt automatisk drift."
             },
             {
               "type": "list",
               "ordered": false,
               "items": [
-                "Complete circulation of the tank contents by means of an agitator shaft arranged angled to the tank with mixing paddle (no hard-to-clean static paddles)",
-                "Slowly rotating paddle for homogenization of the mixed material and removal of existing air bubbles",
-                "Cleaning opening with safety switch",
-                "Central hitching point for easy transportation",
-                "Level sensors for fully automatic operation"
+                "Full cirkulation av tankinnehållet med en omröraraxel monterad vinklad mot tanken med blandningsskovel (inga svårrengjorda statiska skovlar)",
+                "Långsamt roterande skovel som homogeniserar den blandade massan och avlägsnar luftbubblor",
+                "Rengöringsöppning med säkerhetsbrytare",
+                "Central lyftpunkt för enkel transport",
+                "Nivågivare för helt automatisk drift"
               ]
             }
           ],
@@ -826,75 +826,75 @@
           "type": "list",
           "ordered": false,
           "items": [
-            "Holding tank between mixer and injection pump"
+            "Mellantank mellan blandare och injekteringspump"
           ],
           "gen": true
         },
         {
           "type": "datasheet",
           "title": "Teknisk data",
-          "tagline": "Agitator HRW 2000",
+          "tagline": "Omrörare HRW 2000",
           "intro": [],
           "groups": [
             {
-              "title": "Agitator",
+              "title": "Omrörare",
               "rows": [
                 {
-                  "label": "Usable content",
+                  "label": "Användbar volym",
                   "metric": "2,000 l"
                 },
                 {
-                  "label": "Liquid temperature",
+                  "label": "Vätsketemperatur",
                   "metric": "Max. 40°C"
                 },
                 {
-                  "label": "Inlet connection",
+                  "label": "Inloppsanslutning",
                   "metric": "3\""
                 },
                 {
-                  "label": "Outlet connection",
+                  "label": "Utloppsanslutning",
                   "metric": "2\""
                 }
               ]
             },
             {
-              "title": "Electrical data",
+              "title": "Elektriska data",
               "rows": [
                 {
-                  "label": "Voltage",
+                  "label": "Spänning",
                   "metric": "3x 400/460"
                 },
                 {
-                  "label": "Frequency",
+                  "label": "Frekvens",
                   "metric": "50 / 60 Hz"
                 },
                 {
-                  "label": "Nominal power",
+                  "label": "Märkeffekt",
                   "metric": "3.0 / 3.6 kW"
                 },
                 {
-                  "label": "Speed",
+                  "label": "Varvtal",
                   "metric": "32 / 38 min⁻¹"
                 }
               ]
             },
             {
-              "title": "Weight and dimensions",
+              "title": "Vikt och mått",
               "rows": [
                 {
-                  "label": "Approx. weight",
+                  "label": "Ungefärlig vikt",
                   "metric": "950 kg"
                 },
                 {
-                  "label": "Width",
+                  "label": "Bredd",
                   "metric": "1,600 mm"
                 },
                 {
-                  "label": "Height",
+                  "label": "Höjd",
                   "metric": "2,117 mm"
                 },
                 {
-                  "label": "Length",
+                  "label": "Längd",
                   "metric": "1,600 mm"
                 }
               ]
@@ -913,8 +913,8 @@
           "type": "list",
           "ordered": false,
           "items": [
-            "Optional (Agitator): Level sensors 1\", \"full - empty\"",
-            "Optional (Agitator): Flange connection with butterfly valve 2½\""
+            "Tillval (Omrörare): Nivågivare 1\", \"full - tom\"",
+            "Tillval (Omrörare): Flänsanslutning med spjällventil 2½\""
           ],
           "gen": true
         },
@@ -954,7 +954,7 @@
           "left": [
             {
               "type": "image",
-              "alt": "Agitator HRW 3000",
+              "alt": "Omrörare HRW 3000",
               "width": 537,
               "height": 577,
               "src": "/assets/img/haeny-hrw3000-model.webp"
@@ -963,17 +963,17 @@
           "right": [
             {
               "type": "text",
-              "html": "Agitators ensure continuous operation by holding and homogenizing the mixed suspension and removing any air bubbles by means of a slowly rotating paddle. Optional level sensors enable fully automatic operation."
+              "html": "Omrörarna säkerställer kontinuerlig drift genom att hålla och homogenisera den blandade suspensionen och avlägsna luftbubblor med en långsamt roterande skovel. Nivågivare (tillval) möjliggör helt automatisk drift."
             },
             {
               "type": "list",
               "ordered": false,
               "items": [
-                "Complete circulation of the tank contents by means of an agitator shaft arranged angled to the tank with mixing paddle (no hard-to-clean static paddles)",
-                "Slowly rotating paddle for homogenization of the mixed material and removal of existing air bubbles",
-                "Cleaning opening with safety switch",
-                "Central hitching point for easy transportation",
-                "Level sensors for fully automatic operation"
+                "Full cirkulation av tankinnehållet med en omröraraxel monterad vinklad mot tanken med blandningsskovel (inga svårrengjorda statiska skovlar)",
+                "Långsamt roterande skovel som homogeniserar den blandade massan och avlägsnar luftbubblor",
+                "Rengöringsöppning med säkerhetsbrytare",
+                "Central lyftpunkt för enkel transport",
+                "Nivågivare för helt automatisk drift"
               ]
             }
           ],
@@ -989,75 +989,75 @@
           "type": "list",
           "ordered": false,
           "items": [
-            "Holding tank between mixer and injection pump"
+            "Mellantank mellan blandare och injekteringspump"
           ],
           "gen": true
         },
         {
           "type": "datasheet",
           "title": "Teknisk data",
-          "tagline": "Agitator HRW 3000",
+          "tagline": "Omrörare HRW 3000",
           "intro": [],
           "groups": [
             {
-              "title": "Agitator",
+              "title": "Omrörare",
               "rows": [
                 {
-                  "label": "Usable content",
+                  "label": "Användbar volym",
                   "metric": "3,000 l"
                 },
                 {
-                  "label": "Liquid temperature",
+                  "label": "Vätsketemperatur",
                   "metric": "Max. 40°C"
                 },
                 {
-                  "label": "Inlet connection",
+                  "label": "Inloppsanslutning",
                   "metric": "4\""
                 },
                 {
-                  "label": "Outlet connection",
+                  "label": "Utloppsanslutning",
                   "metric": "DN100 / PN16"
                 }
               ]
             },
             {
-              "title": "Electrical data",
+              "title": "Elektriska data",
               "rows": [
                 {
-                  "label": "Voltage",
+                  "label": "Spänning",
                   "metric": "3x 400/460"
                 },
                 {
-                  "label": "Frequency",
+                  "label": "Frekvens",
                   "metric": "50 / 60 Hz"
                 },
                 {
-                  "label": "Nominal power",
+                  "label": "Märkeffekt",
                   "metric": "3.0 / 3.6 kW"
                 },
                 {
-                  "label": "Speed",
+                  "label": "Varvtal",
                   "metric": "32 / 38 min⁻¹"
                 }
               ]
             },
             {
-              "title": "Weight and dimensions",
+              "title": "Vikt och mått",
               "rows": [
                 {
-                  "label": "Approx. weight",
+                  "label": "Ungefärlig vikt",
                   "metric": "1,025 kg"
                 },
                 {
-                  "label": "Width",
+                  "label": "Bredd",
                   "metric": "1,913 mm"
                 },
                 {
-                  "label": "Height",
+                  "label": "Höjd",
                   "metric": "2,117 mm"
                 },
                 {
-                  "label": "Length",
+                  "label": "Längd",
                   "metric": "1,913 mm"
                 }
               ]
@@ -1076,8 +1076,8 @@
           "type": "list",
           "ordered": false,
           "items": [
-            "Optional (Agitator): Level sensors 1\", \"full - empty\"",
-            "Optional (Agitator): Flange connection with butterfly valve 2½\""
+            "Tillval (Omrörare): Nivågivare 1\", \"full - tom\"",
+            "Tillval (Omrörare): Flänsanslutning med spjällventil 2½\""
           ],
           "gen": true
         },
@@ -2257,9 +2257,9 @@
           "type": "list",
           "ordered": false,
           "items": [
-            "Slowly rotating paddle for homogenization of the mixed material and removal of existing air bubbles",
-            "Cleaning opening with protective grid and splash guard",
-            "Inclined bottom for complete emptying with drain plug"
+            "Paleta de giro lento para homogeneizar el material mezclado y eliminar las burbujas de aire",
+            "Abertura de limpieza con rejilla de protección y protector contra salpicaduras",
+            "Fondo inclinado para el vaciado completo con tapón de vaciado"
           ],
           "gen": true
         },
@@ -2292,7 +2292,7 @@
           "type": "list",
           "ordered": false,
           "items": [
-            "Holding tank between mixer and injection pump"
+            "Depósito intermedio entre la mezcladora y la bomba de inyección"
           ],
           "gen": true
         },
@@ -2366,7 +2366,7 @@
           "left": [
             {
               "type": "image",
-              "alt": "Agitator HRW 150",
+              "alt": "Agitador HRW 150",
               "width": 355,
               "height": 595,
               "src": "/assets/img/haeny-hrw150-model.webp"
@@ -2375,15 +2375,15 @@
           "right": [
             {
               "type": "text",
-              "html": "Agitators ensure continuous operation by holding and homogenizing the mixed suspension and removing any air bubbles by means of a slowly rotating paddle."
+              "html": "Los agitadores garantizan el funcionamiento continuo al mantener y homogeneizar la suspensión mezclada y eliminar las burbujas de aire mediante una paleta de giro lento."
             },
             {
               "type": "list",
               "ordered": false,
               "items": [
-                "Slowly rotating paddle for homogenization of the mixed material and removal of existing air bubbles",
-                "Cleaning opening with protective grid and splash guard",
-                "Inclined bottom for complete emptying with drain plug"
+                "Paleta de giro lento para homogeneizar el material mezclado y eliminar las burbujas de aire",
+                "Abertura de limpieza con rejilla de protección y protector contra salpicaduras",
+                "Fondo inclinado para el vaciado completo con tapón de vaciado"
               ]
             }
           ],
@@ -2399,83 +2399,83 @@
           "type": "list",
           "ordered": false,
           "items": [
-            "Holding tank between mixer and injection pump"
+            "Depósito intermedio entre la mezcladora y la bomba de inyección"
           ],
           "gen": true
         },
         {
           "type": "datasheet",
           "title": "Datos técnicos",
-          "tagline": "Agitator HRW 150",
+          "tagline": "Agitador HRW 150",
           "intro": [],
           "groups": [
             {
-              "title": "Agitator",
+              "title": "Agitador",
               "rows": [
                 {
-                  "label": "Usable content",
+                  "label": "Volumen útil",
                   "metric": "150 l"
                 },
                 {
-                  "label": "Liquid temperature",
+                  "label": "Temperatura del líquido",
                   "metric": "Max. 40°C"
                 },
                 {
-                  "label": "Inlet connection",
-                  "metric": "hose connection 60 mm"
+                  "label": "Conexión de entrada",
+                  "metric": "conexión de manguera 60 mm"
                 },
                 {
-                  "label": "Outlet connection",
+                  "label": "Conexión de salida",
                   "metric": "1\" / 1½\""
                 },
                 {
-                  "label": "Drain plug",
+                  "label": "Tapón de vaciado",
                   "metric": "2\""
                 }
               ]
             },
             {
-              "title": "Electrical data",
+              "title": "Datos eléctricos",
               "rows": [
                 {
-                  "label": "Voltage",
+                  "label": "Tensión",
                   "metric": "3x 400/460"
                 },
                 {
-                  "label": "Frequency",
+                  "label": "Frecuencia",
                   "metric": "50 / 60 Hz"
                 },
                 {
-                  "label": "Nominal power",
+                  "label": "Potencia nominal",
                   "metric": "0.55 / 0.62 kW"
                 },
                 {
-                  "label": "Nominal current",
+                  "label": "Corriente nominal",
                   "metric": "1.62 / 1.59 A"
                 },
                 {
-                  "label": "Speed",
+                  "label": "Velocidad",
                   "metric": "690 / 830 min⁻¹"
                 }
               ]
             },
             {
-              "title": "Weight and dimensions",
+              "title": "Peso y dimensiones",
               "rows": [
                 {
-                  "label": "Approx. weight",
+                  "label": "Peso aprox.",
                   "metric": "82.5 kg"
                 },
                 {
-                  "label": "Width",
+                  "label": "Anchura",
                   "metric": "562 mm"
                 },
                 {
-                  "label": "Height",
+                  "label": "Altura",
                   "metric": "1,321 mm"
                 },
                 {
-                  "label": "Length",
+                  "label": "Longitud",
                   "metric": "797 mm"
                 }
               ]
@@ -2520,7 +2520,7 @@
           "left": [
             {
               "type": "image",
-              "alt": "Agitator HRW 350",
+              "alt": "Agitador HRW 350",
               "width": 426,
               "height": 666,
               "src": "/assets/img/haeny-hrw350-model.webp"
@@ -2529,17 +2529,17 @@
           "right": [
             {
               "type": "text",
-              "html": "Agitators ensure continuous operation by holding and homogenizing the mixed suspension and removing any air bubbles by means of a slowly rotating paddle. Optional level sensors enable fully automatic operation."
+              "html": "Los agitadores garantizan el funcionamiento continuo al mantener y homogeneizar la suspensión mezclada y eliminar las burbujas de aire mediante una paleta de giro lento. Los sensores de nivel opcionales permiten un funcionamiento totalmente automático."
             },
             {
               "type": "list",
               "ordered": false,
               "items": [
-                "Complete circulation of the tank contents by means of an agitator shaft arranged angled to the tank with mixing paddle (no hard-to-clean static paddles)",
-                "Slowly rotating paddle for homogenization of the mixed material and removal of existing air bubbles",
-                "Cleaning opening with safety switch",
-                "Central hitching point for easy transportation",
-                "Optional level sensors for consumption-dependent and fully automatic operation"
+                "Circulación completa del contenido del depósito mediante un eje agitador inclinado respecto al depósito con paleta mezcladora (sin paletas estáticas difíciles de limpiar)",
+                "Paleta de giro lento para homogeneizar el material mezclado y eliminar las burbujas de aire",
+                "Abertura de limpieza con interruptor de seguridad",
+                "Punto de enganche central para facilitar el transporte",
+                "Sensores de nivel opcionales para un funcionamiento totalmente automático en función del consumo"
               ]
             }
           ],
@@ -2555,75 +2555,75 @@
           "type": "list",
           "ordered": false,
           "items": [
-            "Holding tank between mixer and injection pump"
+            "Depósito intermedio entre la mezcladora y la bomba de inyección"
           ],
           "gen": true
         },
         {
           "type": "datasheet",
           "title": "Datos técnicos",
-          "tagline": "Agitator HRW 350",
+          "tagline": "Agitador HRW 350",
           "intro": [],
           "groups": [
             {
-              "title": "Agitator",
+              "title": "Agitador",
               "rows": [
                 {
-                  "label": "Usable content",
+                  "label": "Volumen útil",
                   "metric": "350 l"
                 },
                 {
-                  "label": "Liquid temperature",
+                  "label": "Temperatura del líquido",
                   "metric": "Max. 40°C"
                 },
                 {
-                  "label": "Inlet connection",
+                  "label": "Conexión de entrada",
                   "metric": "2½\""
                 },
                 {
-                  "label": "Outlet connection",
+                  "label": "Conexión de salida",
                   "metric": "2½\""
                 }
               ]
             },
             {
-              "title": "Electrical data",
+              "title": "Datos eléctricos",
               "rows": [
                 {
-                  "label": "Voltage",
+                  "label": "Tensión",
                   "metric": "3x 400/460"
                 },
                 {
-                  "label": "Frequency",
+                  "label": "Frecuencia",
                   "metric": "50 / 60 Hz"
                 },
                 {
-                  "label": "Nominal power",
+                  "label": "Potencia nominal",
                   "metric": "0.55 / 0.66 kW"
                 },
                 {
-                  "label": "Speed",
+                  "label": "Velocidad",
                   "metric": "46.7 / 56.7 min⁻¹"
                 }
               ]
             },
             {
-              "title": "Weight and dimensions",
+              "title": "Peso y dimensiones",
               "rows": [
                 {
-                  "label": "Approx. weight",
+                  "label": "Peso aprox.",
                   "metric": "158 kg"
                 },
                 {
-                  "label": "Width",
+                  "label": "Anchura",
                   "metric": "953 mm"
                 },
                 {
-                  "label": "Height",
+                  "label": "Altura",
                   "metric": "1,221 mm"
                 },
                 {
-                  "label": "Length",
+                  "label": "Longitud",
                   "metric": "1,055 mm"
                 }
               ]
@@ -2642,8 +2642,8 @@
           "type": "list",
           "ordered": false,
           "items": [
-            "Optional (Agitator): Level sensors 1\", \"full - empty\"",
-            "Optional (Agitator): Flange connection with butterfly valve 2½\""
+            "Opcional (Agitador): Sensores de nivel 1\", \"lleno - vacío\"",
+            "Opcional (Agitador): Conexión de brida con válvula de mariposa 2½\""
           ],
           "gen": true
         },
@@ -2683,7 +2683,7 @@
           "left": [
             {
               "type": "image",
-              "alt": "Agitator HRW 800",
+              "alt": "Agitador HRW 800",
               "width": 403,
               "height": 665,
               "src": "/assets/img/haeny-hrw800-model.webp"
@@ -2692,17 +2692,17 @@
           "right": [
             {
               "type": "text",
-              "html": "Agitators ensure continuous operation by holding and homogenizing the mixed suspension and removing any air bubbles by means of a slowly rotating paddle. Optional level sensors enable fully automatic operation."
+              "html": "Los agitadores garantizan el funcionamiento continuo al mantener y homogeneizar la suspensión mezclada y eliminar las burbujas de aire mediante una paleta de giro lento. Los sensores de nivel opcionales permiten un funcionamiento totalmente automático."
             },
             {
               "type": "list",
               "ordered": false,
               "items": [
-                "Complete circulation of the tank contents by means of an agitator shaft arranged angled to the tank with mixing paddle (no hard-to-clean static paddles)",
-                "Slowly rotating paddle for homogenization of the mixed material and removal of existing air bubbles",
-                "Cleaning opening with safety switch",
-                "Central hitching point for easy transportation",
-                "Optional level sensors for consumption-dependent and fully automatic operation"
+                "Circulación completa del contenido del depósito mediante un eje agitador inclinado respecto al depósito con paleta mezcladora (sin paletas estáticas difíciles de limpiar)",
+                "Paleta de giro lento para homogeneizar el material mezclado y eliminar las burbujas de aire",
+                "Abertura de limpieza con interruptor de seguridad",
+                "Punto de enganche central para facilitar el transporte",
+                "Sensores de nivel opcionales para un funcionamiento totalmente automático en función del consumo"
               ]
             }
           ],
@@ -2718,75 +2718,75 @@
           "type": "list",
           "ordered": false,
           "items": [
-            "Holding tank between mixer and injection pump"
+            "Depósito intermedio entre la mezcladora y la bomba de inyección"
           ],
           "gen": true
         },
         {
           "type": "datasheet",
           "title": "Datos técnicos",
-          "tagline": "Agitator HRW 800",
+          "tagline": "Agitador HRW 800",
           "intro": [],
           "groups": [
             {
-              "title": "Agitator",
+              "title": "Agitador",
               "rows": [
                 {
-                  "label": "Usable content",
+                  "label": "Volumen útil",
                   "metric": "800 l"
                 },
                 {
-                  "label": "Liquid temperature",
+                  "label": "Temperatura del líquido",
                   "metric": "Max. 40°C"
                 },
                 {
-                  "label": "Inlet connection",
+                  "label": "Conexión de entrada",
                   "metric": "2½\""
                 },
                 {
-                  "label": "Outlet connection",
+                  "label": "Conexión de salida",
                   "metric": "2½\""
                 }
               ]
             },
             {
-              "title": "Electrical data",
+              "title": "Datos eléctricos",
               "rows": [
                 {
-                  "label": "Voltage",
+                  "label": "Tensión",
                   "metric": "3x 400/460"
                 },
                 {
-                  "label": "Frequency",
+                  "label": "Frecuencia",
                   "metric": "50 / 60 Hz"
                 },
                 {
-                  "label": "Nominal power",
+                  "label": "Potencia nominal",
                   "metric": "0.55 / 0.66 kW"
                 },
                 {
-                  "label": "Speed",
+                  "label": "Velocidad",
                   "metric": "46.7 / 56.7 min⁻¹"
                 }
               ]
             },
             {
-              "title": "Weight and dimensions",
+              "title": "Peso y dimensiones",
               "rows": [
                 {
-                  "label": "Approx. weight",
+                  "label": "Peso aprox.",
                   "metric": "233 kg"
                 },
                 {
-                  "label": "Width",
+                  "label": "Anchura",
                   "metric": "1,144 mm"
                 },
                 {
-                  "label": "Height",
+                  "label": "Altura",
                   "metric": "1,666 mm"
                 },
                 {
-                  "label": "Length",
+                  "label": "Longitud",
                   "metric": "1,232 mm"
                 }
               ]
@@ -2805,8 +2805,8 @@
           "type": "list",
           "ordered": false,
           "items": [
-            "Optional (Agitator): Level sensors 1\", \"full - empty\"",
-            "Optional (Agitator): Flange connection with butterfly valve 2½\""
+            "Opcional (Agitador): Sensores de nivel 1\", \"lleno - vacío\"",
+            "Opcional (Agitador): Conexión de brida con válvula de mariposa 2½\""
           ],
           "gen": true
         },
@@ -2846,7 +2846,7 @@
           "left": [
             {
               "type": "image",
-              "alt": "Agitator HRW 1200",
+              "alt": "Agitador HRW 1200",
               "width": 439,
               "height": 666,
               "src": "/assets/img/haeny-hrw1200-model.webp"
@@ -2855,17 +2855,17 @@
           "right": [
             {
               "type": "text",
-              "html": "Agitators ensure continuous operation by holding and homogenizing the mixed suspension and removing any air bubbles by means of a slowly rotating paddle. Optional level sensors enable fully automatic operation."
+              "html": "Los agitadores garantizan el funcionamiento continuo al mantener y homogeneizar la suspensión mezclada y eliminar las burbujas de aire mediante una paleta de giro lento. Los sensores de nivel opcionales permiten un funcionamiento totalmente automático."
             },
             {
               "type": "list",
               "ordered": false,
               "items": [
-                "Complete circulation of the tank contents by means of an agitator shaft arranged angled to the tank with mixing paddle (no hard-to-clean static paddles)",
-                "Slowly rotating paddle for homogenization of the mixed material and removal of existing air bubbles",
-                "Cleaning opening with safety switch",
-                "Central hitching point for easy transportation",
-                "Level sensors for fully automatic operation"
+                "Circulación completa del contenido del depósito mediante un eje agitador inclinado respecto al depósito con paleta mezcladora (sin paletas estáticas difíciles de limpiar)",
+                "Paleta de giro lento para homogeneizar el material mezclado y eliminar las burbujas de aire",
+                "Abertura de limpieza con interruptor de seguridad",
+                "Punto de enganche central para facilitar el transporte",
+                "Sensores de nivel para un funcionamiento totalmente automático"
               ]
             }
           ],
@@ -2881,75 +2881,75 @@
           "type": "list",
           "ordered": false,
           "items": [
-            "Holding tank between mixer and injection pump"
+            "Depósito intermedio entre la mezcladora y la bomba de inyección"
           ],
           "gen": true
         },
         {
           "type": "datasheet",
           "title": "Datos técnicos",
-          "tagline": "Agitator HRW 1200",
+          "tagline": "Agitador HRW 1200",
           "intro": [],
           "groups": [
             {
-              "title": "Agitator",
+              "title": "Agitador",
               "rows": [
                 {
-                  "label": "Usable content",
+                  "label": "Volumen útil",
                   "metric": "1050 l"
                 },
                 {
-                  "label": "Liquid temperature",
+                  "label": "Temperatura del líquido",
                   "metric": "Max. 40°C"
                 },
                 {
-                  "label": "Inlet connection",
+                  "label": "Conexión de entrada",
                   "metric": "2½\""
                 },
                 {
-                  "label": "Outlet connection",
+                  "label": "Conexión de salida",
                   "metric": "2\""
                 }
               ]
             },
             {
-              "title": "Electrical data",
+              "title": "Datos eléctricos",
               "rows": [
                 {
-                  "label": "Voltage",
+                  "label": "Tensión",
                   "metric": "3x 400/460"
                 },
                 {
-                  "label": "Frequency",
+                  "label": "Frecuencia",
                   "metric": "50 / 60 Hz"
                 },
                 {
-                  "label": "Nominal power",
+                  "label": "Potencia nominal",
                   "metric": "1.5 / 1.8 kW"
                 },
                 {
-                  "label": "Speed",
+                  "label": "Velocidad",
                   "metric": "34 / 40 min⁻¹"
                 }
               ]
             },
             {
-              "title": "Weight and dimensions",
+              "title": "Peso y dimensiones",
               "rows": [
                 {
-                  "label": "Approx. weight",
+                  "label": "Peso aprox.",
                   "metric": "450 kg"
                 },
                 {
-                  "label": "Width",
+                  "label": "Anchura",
                   "metric": "1,343 mm"
                 },
                 {
-                  "label": "Height",
+                  "label": "Altura",
                   "metric": "2,216 mm"
                 },
                 {
-                  "label": "Length",
+                  "label": "Longitud",
                   "metric": "1,198 mm"
                 }
               ]
@@ -2968,8 +2968,8 @@
           "type": "list",
           "ordered": false,
           "items": [
-            "Optional (Agitator): Level sensors 1\", \"full - empty\"",
-            "Optional (Agitator): Flange connection with butterfly valve 2½\""
+            "Opcional (Agitador): Sensores de nivel 1\", \"lleno - vacío\"",
+            "Opcional (Agitador): Conexión de brida con válvula de mariposa 2½\""
           ],
           "gen": true
         },
@@ -3009,7 +3009,7 @@
           "left": [
             {
               "type": "image",
-              "alt": "Agitator HRW 2000",
+              "alt": "Agitador HRW 2000",
               "width": 425,
               "height": 558,
               "src": "/assets/img/haeny-hrw2000-model.webp"
@@ -3018,17 +3018,17 @@
           "right": [
             {
               "type": "text",
-              "html": "Agitators ensure continuous operation by holding and homogenizing the mixed suspension and removing any air bubbles by means of a slowly rotating paddle. Optional level sensors enable fully automatic operation."
+              "html": "Los agitadores garantizan el funcionamiento continuo al mantener y homogeneizar la suspensión mezclada y eliminar las burbujas de aire mediante una paleta de giro lento. Los sensores de nivel opcionales permiten un funcionamiento totalmente automático."
             },
             {
               "type": "list",
               "ordered": false,
               "items": [
-                "Complete circulation of the tank contents by means of an agitator shaft arranged angled to the tank with mixing paddle (no hard-to-clean static paddles)",
-                "Slowly rotating paddle for homogenization of the mixed material and removal of existing air bubbles",
-                "Cleaning opening with safety switch",
-                "Central hitching point for easy transportation",
-                "Level sensors for fully automatic operation"
+                "Circulación completa del contenido del depósito mediante un eje agitador inclinado respecto al depósito con paleta mezcladora (sin paletas estáticas difíciles de limpiar)",
+                "Paleta de giro lento para homogeneizar el material mezclado y eliminar las burbujas de aire",
+                "Abertura de limpieza con interruptor de seguridad",
+                "Punto de enganche central para facilitar el transporte",
+                "Sensores de nivel para un funcionamiento totalmente automático"
               ]
             }
           ],
@@ -3044,75 +3044,75 @@
           "type": "list",
           "ordered": false,
           "items": [
-            "Holding tank between mixer and injection pump"
+            "Depósito intermedio entre la mezcladora y la bomba de inyección"
           ],
           "gen": true
         },
         {
           "type": "datasheet",
           "title": "Datos técnicos",
-          "tagline": "Agitator HRW 2000",
+          "tagline": "Agitador HRW 2000",
           "intro": [],
           "groups": [
             {
-              "title": "Agitator",
+              "title": "Agitador",
               "rows": [
                 {
-                  "label": "Usable content",
+                  "label": "Volumen útil",
                   "metric": "2,000 l"
                 },
                 {
-                  "label": "Liquid temperature",
+                  "label": "Temperatura del líquido",
                   "metric": "Max. 40°C"
                 },
                 {
-                  "label": "Inlet connection",
+                  "label": "Conexión de entrada",
                   "metric": "3\""
                 },
                 {
-                  "label": "Outlet connection",
+                  "label": "Conexión de salida",
                   "metric": "2\""
                 }
               ]
             },
             {
-              "title": "Electrical data",
+              "title": "Datos eléctricos",
               "rows": [
                 {
-                  "label": "Voltage",
+                  "label": "Tensión",
                   "metric": "3x 400/460"
                 },
                 {
-                  "label": "Frequency",
+                  "label": "Frecuencia",
                   "metric": "50 / 60 Hz"
                 },
                 {
-                  "label": "Nominal power",
+                  "label": "Potencia nominal",
                   "metric": "3.0 / 3.6 kW"
                 },
                 {
-                  "label": "Speed",
+                  "label": "Velocidad",
                   "metric": "32 / 38 min⁻¹"
                 }
               ]
             },
             {
-              "title": "Weight and dimensions",
+              "title": "Peso y dimensiones",
               "rows": [
                 {
-                  "label": "Approx. weight",
+                  "label": "Peso aprox.",
                   "metric": "950 kg"
                 },
                 {
-                  "label": "Width",
+                  "label": "Anchura",
                   "metric": "1,600 mm"
                 },
                 {
-                  "label": "Height",
+                  "label": "Altura",
                   "metric": "2,117 mm"
                 },
                 {
-                  "label": "Length",
+                  "label": "Longitud",
                   "metric": "1,600 mm"
                 }
               ]
@@ -3131,8 +3131,8 @@
           "type": "list",
           "ordered": false,
           "items": [
-            "Optional (Agitator): Level sensors 1\", \"full - empty\"",
-            "Optional (Agitator): Flange connection with butterfly valve 2½\""
+            "Opcional (Agitador): Sensores de nivel 1\", \"lleno - vacío\"",
+            "Opcional (Agitador): Conexión de brida con válvula de mariposa 2½\""
           ],
           "gen": true
         },
@@ -3172,7 +3172,7 @@
           "left": [
             {
               "type": "image",
-              "alt": "Agitator HRW 3000",
+              "alt": "Agitador HRW 3000",
               "width": 537,
               "height": 577,
               "src": "/assets/img/haeny-hrw3000-model.webp"
@@ -3181,17 +3181,17 @@
           "right": [
             {
               "type": "text",
-              "html": "Agitators ensure continuous operation by holding and homogenizing the mixed suspension and removing any air bubbles by means of a slowly rotating paddle. Optional level sensors enable fully automatic operation."
+              "html": "Los agitadores garantizan el funcionamiento continuo al mantener y homogeneizar la suspensión mezclada y eliminar las burbujas de aire mediante una paleta de giro lento. Los sensores de nivel opcionales permiten un funcionamiento totalmente automático."
             },
             {
               "type": "list",
               "ordered": false,
               "items": [
-                "Complete circulation of the tank contents by means of an agitator shaft arranged angled to the tank with mixing paddle (no hard-to-clean static paddles)",
-                "Slowly rotating paddle for homogenization of the mixed material and removal of existing air bubbles",
-                "Cleaning opening with safety switch",
-                "Central hitching point for easy transportation",
-                "Level sensors for fully automatic operation"
+                "Circulación completa del contenido del depósito mediante un eje agitador inclinado respecto al depósito con paleta mezcladora (sin paletas estáticas difíciles de limpiar)",
+                "Paleta de giro lento para homogeneizar el material mezclado y eliminar las burbujas de aire",
+                "Abertura de limpieza con interruptor de seguridad",
+                "Punto de enganche central para facilitar el transporte",
+                "Sensores de nivel para un funcionamiento totalmente automático"
               ]
             }
           ],
@@ -3207,75 +3207,75 @@
           "type": "list",
           "ordered": false,
           "items": [
-            "Holding tank between mixer and injection pump"
+            "Depósito intermedio entre la mezcladora y la bomba de inyección"
           ],
           "gen": true
         },
         {
           "type": "datasheet",
           "title": "Datos técnicos",
-          "tagline": "Agitator HRW 3000",
+          "tagline": "Agitador HRW 3000",
           "intro": [],
           "groups": [
             {
-              "title": "Agitator",
+              "title": "Agitador",
               "rows": [
                 {
-                  "label": "Usable content",
+                  "label": "Volumen útil",
                   "metric": "3,000 l"
                 },
                 {
-                  "label": "Liquid temperature",
+                  "label": "Temperatura del líquido",
                   "metric": "Max. 40°C"
                 },
                 {
-                  "label": "Inlet connection",
+                  "label": "Conexión de entrada",
                   "metric": "4\""
                 },
                 {
-                  "label": "Outlet connection",
+                  "label": "Conexión de salida",
                   "metric": "DN100 / PN16"
                 }
               ]
             },
             {
-              "title": "Electrical data",
+              "title": "Datos eléctricos",
               "rows": [
                 {
-                  "label": "Voltage",
+                  "label": "Tensión",
                   "metric": "3x 400/460"
                 },
                 {
-                  "label": "Frequency",
+                  "label": "Frecuencia",
                   "metric": "50 / 60 Hz"
                 },
                 {
-                  "label": "Nominal power",
+                  "label": "Potencia nominal",
                   "metric": "3.0 / 3.6 kW"
                 },
                 {
-                  "label": "Speed",
+                  "label": "Velocidad",
                   "metric": "32 / 38 min⁻¹"
                 }
               ]
             },
             {
-              "title": "Weight and dimensions",
+              "title": "Peso y dimensiones",
               "rows": [
                 {
-                  "label": "Approx. weight",
+                  "label": "Peso aprox.",
                   "metric": "1,025 kg"
                 },
                 {
-                  "label": "Width",
+                  "label": "Anchura",
                   "metric": "1,913 mm"
                 },
                 {
-                  "label": "Height",
+                  "label": "Altura",
                   "metric": "2,117 mm"
                 },
                 {
-                  "label": "Length",
+                  "label": "Longitud",
                   "metric": "1,913 mm"
                 }
               ]
@@ -3294,8 +3294,8 @@
           "type": "list",
           "ordered": false,
           "items": [
-            "Optional (Agitator): Level sensors 1\", \"full - empty\"",
-            "Optional (Agitator): Flange connection with butterfly valve 2½\""
+            "Opcional (Agitador): Sensores de nivel 1\", \"lleno - vacío\"",
+            "Opcional (Agitador): Conexión de brida con válvula de mariposa 2½\""
           ],
           "gen": true
         },
@@ -3366,9 +3366,9 @@
           "type": "list",
           "ordered": false,
           "items": [
-            "Slowly rotating paddle for homogenization of the mixed material and removal of existing air bubbles",
-            "Cleaning opening with protective grid and splash guard",
-            "Inclined bottom for complete emptying with drain plug"
+            "Sakte roterende padle som homogeniserer det blandede materialet og fjerner luftbobler",
+            "Rengjøringsåpning med beskyttelsesgitter og sprutskjerm",
+            "Skrå bunn for full tømming med avtappingsplugg"
           ],
           "gen": true
         },
@@ -3401,7 +3401,7 @@
           "type": "list",
           "ordered": false,
           "items": [
-            "Holding tank between mixer and injection pump"
+            "Mellomtank mellom mikser og injeksjonspumpe"
           ],
           "gen": true
         },
@@ -3475,7 +3475,7 @@
           "left": [
             {
               "type": "image",
-              "alt": "Agitator HRW 150",
+              "alt": "Røreverk HRW 150",
               "width": 355,
               "height": 595,
               "src": "/assets/img/haeny-hrw150-model.webp"
@@ -3484,15 +3484,15 @@
           "right": [
             {
               "type": "text",
-              "html": "Agitators ensure continuous operation by holding and homogenizing the mixed suspension and removing any air bubbles by means of a slowly rotating paddle."
+              "html": "Røreverkene sikrer kontinuerlig drift ved å holde og homogenisere den blandede suspensjonen og fjerne luftbobler med en sakte roterende padle."
             },
             {
               "type": "list",
               "ordered": false,
               "items": [
-                "Slowly rotating paddle for homogenization of the mixed material and removal of existing air bubbles",
-                "Cleaning opening with protective grid and splash guard",
-                "Inclined bottom for complete emptying with drain plug"
+                "Sakte roterende padle som homogeniserer det blandede materialet og fjerner luftbobler",
+                "Rengjøringsåpning med beskyttelsesgitter og sprutskjerm",
+                "Skrå bunn for full tømming med avtappingsplugg"
               ]
             }
           ],
@@ -3508,83 +3508,83 @@
           "type": "list",
           "ordered": false,
           "items": [
-            "Holding tank between mixer and injection pump"
+            "Mellomtank mellom mikser og injeksjonspumpe"
           ],
           "gen": true
         },
         {
           "type": "datasheet",
           "title": "Tekniske data",
-          "tagline": "Agitator HRW 150",
+          "tagline": "Røreverk HRW 150",
           "intro": [],
           "groups": [
             {
-              "title": "Agitator",
+              "title": "Røreverk",
               "rows": [
                 {
-                  "label": "Usable content",
+                  "label": "Nyttbart volum",
                   "metric": "150 l"
                 },
                 {
-                  "label": "Liquid temperature",
+                  "label": "Væsketemperatur",
                   "metric": "Max. 40°C"
                 },
                 {
-                  "label": "Inlet connection",
-                  "metric": "hose connection 60 mm"
+                  "label": "Innløpstilkobling",
+                  "metric": "slangetilkobling 60 mm"
                 },
                 {
-                  "label": "Outlet connection",
+                  "label": "Utløpstilkobling",
                   "metric": "1\" / 1½\""
                 },
                 {
-                  "label": "Drain plug",
+                  "label": "Avtappingsplugg",
                   "metric": "2\""
                 }
               ]
             },
             {
-              "title": "Electrical data",
+              "title": "Elektriske data",
               "rows": [
                 {
-                  "label": "Voltage",
+                  "label": "Spenning",
                   "metric": "3x 400/460"
                 },
                 {
-                  "label": "Frequency",
+                  "label": "Frekvens",
                   "metric": "50 / 60 Hz"
                 },
                 {
-                  "label": "Nominal power",
+                  "label": "Merkeeffekt",
                   "metric": "0.55 / 0.62 kW"
                 },
                 {
-                  "label": "Nominal current",
+                  "label": "Merkestrøm",
                   "metric": "1.62 / 1.59 A"
                 },
                 {
-                  "label": "Speed",
+                  "label": "Turtall",
                   "metric": "690 / 830 min⁻¹"
                 }
               ]
             },
             {
-              "title": "Weight and dimensions",
+              "title": "Vekt og mål",
               "rows": [
                 {
-                  "label": "Approx. weight",
+                  "label": "Omtrentlig vekt",
                   "metric": "82.5 kg"
                 },
                 {
-                  "label": "Width",
+                  "label": "Bredde",
                   "metric": "562 mm"
                 },
                 {
-                  "label": "Height",
+                  "label": "Høyde",
                   "metric": "1,321 mm"
                 },
                 {
-                  "label": "Length",
+                  "label": "Lengde",
                   "metric": "797 mm"
                 }
               ]
@@ -3629,7 +3629,7 @@
           "left": [
             {
               "type": "image",
-              "alt": "Agitator HRW 350",
+              "alt": "Røreverk HRW 350",
               "width": 426,
               "height": 666,
               "src": "/assets/img/haeny-hrw350-model.webp"
@@ -3638,17 +3638,17 @@
           "right": [
             {
               "type": "text",
-              "html": "Agitators ensure continuous operation by holding and homogenizing the mixed suspension and removing any air bubbles by means of a slowly rotating paddle. Optional level sensors enable fully automatic operation."
+              "html": "Røreverkene sikrer kontinuerlig drift ved å holde og homogenisere den blandede suspensjonen og fjerne luftbobler med en sakte roterende padle. Nivåfølere (tilvalg) gir helautomatisk drift."
             },
             {
               "type": "list",
               "ordered": false,
               "items": [
-                "Complete circulation of the tank contents by means of an agitator shaft arranged angled to the tank with mixing paddle (no hard-to-clean static paddles)",
-                "Slowly rotating paddle for homogenization of the mixed material and removal of existing air bubbles",
-                "Cleaning opening with safety switch",
-                "Central hitching point for easy transportation",
-                "Optional level sensors for consumption-dependent and fully automatic operation"
+                "Full sirkulasjon av tankinnholdet med en røreaksel montert på skrå i tanken med blandepadle (ingen vanskelig å rengjøre statiske padler)",
+                "Sakte roterende padle som homogeniserer det blandede materialet og fjerner luftbobler",
+                "Rengjøringsåpning med sikkerhetsbryter",
+                "Sentralt løftepunkt for enkel transport",
+                "Nivåfølere (tilvalg) for forbruksstyrt og helautomatisk drift"
               ]
             }
           ],
@@ -3664,75 +3664,75 @@
           "type": "list",
           "ordered": false,
           "items": [
-            "Holding tank between mixer and injection pump"
+            "Mellomtank mellom mikser og injeksjonspumpe"
           ],
           "gen": true
         },
         {
           "type": "datasheet",
           "title": "Tekniske data",
-          "tagline": "Agitator HRW 350",
+          "tagline": "Røreverk HRW 350",
           "intro": [],
           "groups": [
             {
-              "title": "Agitator",
+              "title": "Røreverk",
               "rows": [
                 {
-                  "label": "Usable content",
+                  "label": "Nyttbart volum",
                   "metric": "350 l"
                 },
                 {
-                  "label": "Liquid temperature",
+                  "label": "Væsketemperatur",
                   "metric": "Max. 40°C"
                 },
                 {
-                  "label": "Inlet connection",
+                  "label": "Innløpstilkobling",
                   "metric": "2½\""
                 },
                 {
-                  "label": "Outlet connection",
+                  "label": "Utløpstilkobling",
                   "metric": "2½\""
                 }
               ]
             },
             {
-              "title": "Electrical data",
+              "title": "Elektriske data",
               "rows": [
                 {
-                  "label": "Voltage",
+                  "label": "Spenning",
                   "metric": "3x 400/460"
                 },
                 {
-                  "label": "Frequency",
+                  "label": "Frekvens",
                   "metric": "50 / 60 Hz"
                 },
                 {
-                  "label": "Nominal power",
+                  "label": "Merkeeffekt",
                   "metric": "0.55 / 0.66 kW"
                 },
                 {
-                  "label": "Speed",
+                  "label": "Turtall",
                   "metric": "46.7 / 56.7 min⁻¹"
                 }
               ]
             },
             {
-              "title": "Weight and dimensions",
+              "title": "Vekt og mål",
               "rows": [
                 {
-                  "label": "Approx. weight",
+                  "label": "Omtrentlig vekt",
                   "metric": "158 kg"
                 },
                 {
-                  "label": "Width",
+                  "label": "Bredde",
                   "metric": "953 mm"
                 },
                 {
-                  "label": "Height",
+                  "label": "Høyde",
                   "metric": "1,221 mm"
                 },
                 {
-                  "label": "Length",
+                  "label": "Lengde",
                   "metric": "1,055 mm"
                 }
               ]
@@ -3751,8 +3751,8 @@
           "type": "list",
           "ordered": false,
           "items": [
-            "Optional (Agitator): Level sensors 1\", \"full - empty\"",
-            "Optional (Agitator): Flange connection with butterfly valve 2½\""
+            "Tilvalg (Røreverk): Nivåfølere 1\", \"full - tom\"",
+            "Tilvalg (Røreverk): Flenstilkobling med spjeldventil 2½\""
           ],
           "gen": true
         },
@@ -3792,7 +3792,7 @@
           "left": [
             {
               "type": "image",
-              "alt": "Agitator HRW 800",
+              "alt": "Røreverk HRW 800",
               "width": 403,
               "height": 665,
               "src": "/assets/img/haeny-hrw800-model.webp"
@@ -3801,17 +3801,17 @@
           "right": [
             {
               "type": "text",
-              "html": "Agitators ensure continuous operation by holding and homogenizing the mixed suspension and removing any air bubbles by means of a slowly rotating paddle. Optional level sensors enable fully automatic operation."
+              "html": "Røreverkene sikrer kontinuerlig drift ved å holde og homogenisere den blandede suspensjonen og fjerne luftbobler med en sakte roterende padle. Nivåfølere (tilvalg) gir helautomatisk drift."
             },
             {
               "type": "list",
               "ordered": false,
               "items": [
-                "Complete circulation of the tank contents by means of an agitator shaft arranged angled to the tank with mixing paddle (no hard-to-clean static paddles)",
-                "Slowly rotating paddle for homogenization of the mixed material and removal of existing air bubbles",
-                "Cleaning opening with safety switch",
-                "Central hitching point for easy transportation",
-                "Optional level sensors for consumption-dependent and fully automatic operation"
+                "Full sirkulasjon av tankinnholdet med en røreaksel montert på skrå i tanken med blandepadle (ingen vanskelig å rengjøre statiske padler)",
+                "Sakte roterende padle som homogeniserer det blandede materialet og fjerner luftbobler",
+                "Rengjøringsåpning med sikkerhetsbryter",
+                "Sentralt løftepunkt for enkel transport",
+                "Nivåfølere (tilvalg) for forbruksstyrt og helautomatisk drift"
               ]
             }
           ],
@@ -3827,75 +3827,75 @@
           "type": "list",
           "ordered": false,
           "items": [
-            "Holding tank between mixer and injection pump"
+            "Mellomtank mellom mikser og injeksjonspumpe"
           ],
           "gen": true
         },
         {
           "type": "datasheet",
           "title": "Tekniske data",
-          "tagline": "Agitator HRW 800",
+          "tagline": "Røreverk HRW 800",
           "intro": [],
           "groups": [
             {
-              "title": "Agitator",
+              "title": "Røreverk",
               "rows": [
                 {
-                  "label": "Usable content",
+                  "label": "Nyttbart volum",
                   "metric": "800 l"
                 },
                 {
-                  "label": "Liquid temperature",
+                  "label": "Væsketemperatur",
                   "metric": "Max. 40°C"
                 },
                 {
-                  "label": "Inlet connection",
+                  "label": "Innløpstilkobling",
                   "metric": "2½\""
                 },
                 {
-                  "label": "Outlet connection",
+                  "label": "Utløpstilkobling",
                   "metric": "2½\""
                 }
               ]
             },
             {
-              "title": "Electrical data",
+              "title": "Elektriske data",
               "rows": [
                 {
-                  "label": "Voltage",
+                  "label": "Spenning",
                   "metric": "3x 400/460"
                 },
                 {
-                  "label": "Frequency",
+                  "label": "Frekvens",
                   "metric": "50 / 60 Hz"
                 },
                 {
-                  "label": "Nominal power",
+                  "label": "Merkeeffekt",
                   "metric": "0.55 / 0.66 kW"
                 },
                 {
-                  "label": "Speed",
+                  "label": "Turtall",
                   "metric": "46.7 / 56.7 min⁻¹"
                 }
               ]
             },
             {
-              "title": "Weight and dimensions",
+              "title": "Vekt og mål",
               "rows": [
                 {
-                  "label": "Approx. weight",
+                  "label": "Omtrentlig vekt",
                   "metric": "233 kg"
                 },
                 {
-                  "label": "Width",
+                  "label": "Bredde",
                   "metric": "1,144 mm"
                 },
                 {
-                  "label": "Height",
+                  "label": "Høyde",
                   "metric": "1,666 mm"
                 },
                 {
-                  "label": "Length",
+                  "label": "Lengde",
                   "metric": "1,232 mm"
                 }
               ]
@@ -3914,8 +3914,8 @@
           "type": "list",
           "ordered": false,
           "items": [
-            "Optional (Agitator): Level sensors 1\", \"full - empty\"",
-            "Optional (Agitator): Flange connection with butterfly valve 2½\""
+            "Tilvalg (Røreverk): Nivåfølere 1\", \"full - tom\"",
+            "Tilvalg (Røreverk): Flenstilkobling med spjeldventil 2½\""
           ],
           "gen": true
         },
@@ -3955,7 +3955,7 @@
           "left": [
             {
               "type": "image",
-              "alt": "Agitator HRW 1200",
+              "alt": "Røreverk HRW 1200",
               "width": 439,
               "height": 666,
               "src": "/assets/img/haeny-hrw1200-model.webp"
@@ -3964,17 +3964,17 @@
           "right": [
             {
               "type": "text",
-              "html": "Agitators ensure continuous operation by holding and homogenizing the mixed suspension and removing any air bubbles by means of a slowly rotating paddle. Optional level sensors enable fully automatic operation."
+              "html": "Røreverkene sikrer kontinuerlig drift ved å holde og homogenisere den blandede suspensjonen og fjerne luftbobler med en sakte roterende padle. Nivåfølere (tilvalg) gir helautomatisk drift."
             },
             {
               "type": "list",
               "ordered": false,
               "items": [
-                "Complete circulation of the tank contents by means of an agitator shaft arranged angled to the tank with mixing paddle (no hard-to-clean static paddles)",
-                "Slowly rotating paddle for homogenization of the mixed material and removal of existing air bubbles",
-                "Cleaning opening with safety switch",
-                "Central hitching point for easy transportation",
-                "Level sensors for fully automatic operation"
+                "Full sirkulasjon av tankinnholdet med en røreaksel montert på skrå i tanken med blandepadle (ingen vanskelig å rengjøre statiske padler)",
+                "Sakte roterende padle som homogeniserer det blandede materialet og fjerner luftbobler",
+                "Rengjøringsåpning med sikkerhetsbryter",
+                "Sentralt løftepunkt for enkel transport",
+                "Nivåfølere for helautomatisk drift"
               ]
             }
           ],
@@ -3990,75 +3990,75 @@
           "type": "list",
           "ordered": false,
           "items": [
-            "Holding tank between mixer and injection pump"
+            "Mellomtank mellom mikser og injeksjonspumpe"
           ],
           "gen": true
         },
         {
           "type": "datasheet",
           "title": "Tekniske data",
-          "tagline": "Agitator HRW 1200",
+          "tagline": "Røreverk HRW 1200",
           "intro": [],
           "groups": [
             {
-              "title": "Agitator",
+              "title": "Røreverk",
               "rows": [
                 {
-                  "label": "Usable content",
+                  "label": "Nyttbart volum",
                   "metric": "1050 l"
                 },
                 {
-                  "label": "Liquid temperature",
+                  "label": "Væsketemperatur",
                   "metric": "Max. 40°C"
                 },
                 {
-                  "label": "Inlet connection",
+                  "label": "Innløpstilkobling",
                   "metric": "2½\""
                 },
                 {
-                  "label": "Outlet connection",
+                  "label": "Utløpstilkobling",
                   "metric": "2\""
                 }
               ]
             },
             {
-              "title": "Electrical data",
+              "title": "Elektriske data",
               "rows": [
                 {
-                  "label": "Voltage",
+                  "label": "Spenning",
                   "metric": "3x 400/460"
                 },
                 {
-                  "label": "Frequency",
+                  "label": "Frekvens",
                   "metric": "50 / 60 Hz"
                 },
                 {
-                  "label": "Nominal power",
+                  "label": "Merkeeffekt",
                   "metric": "1.5 / 1.8 kW"
                 },
                 {
-                  "label": "Speed",
+                  "label": "Turtall",
                   "metric": "34 / 40 min⁻¹"
                 }
               ]
             },
             {
-              "title": "Weight and dimensions",
+              "title": "Vekt og mål",
               "rows": [
                 {
-                  "label": "Approx. weight",
+                  "label": "Omtrentlig vekt",
                   "metric": "450 kg"
                 },
                 {
-                  "label": "Width",
+                  "label": "Bredde",
                   "metric": "1,343 mm"
                 },
                 {
-                  "label": "Height",
+                  "label": "Høyde",
                   "metric": "2,216 mm"
                 },
                 {
-                  "label": "Length",
+                  "label": "Lengde",
                   "metric": "1,198 mm"
                 }
               ]
@@ -4077,8 +4077,8 @@
           "type": "list",
           "ordered": false,
           "items": [
-            "Optional (Agitator): Level sensors 1\", \"full - empty\"",
-            "Optional (Agitator): Flange connection with butterfly valve 2½\""
+            "Tilvalg (Røreverk): Nivåfølere 1\", \"full - tom\"",
+            "Tilvalg (Røreverk): Flenstilkobling med spjeldventil 2½\""
           ],
           "gen": true
         },
@@ -4118,7 +4118,7 @@
           "left": [
             {
               "type": "image",
-              "alt": "Agitator HRW 2000",
+              "alt": "Røreverk HRW 2000",
               "width": 425,
               "height": 558,
               "src": "/assets/img/haeny-hrw2000-model.webp"
@@ -4127,17 +4127,17 @@
           "right": [
             {
               "type": "text",
-              "html": "Agitators ensure continuous operation by holding and homogenizing the mixed suspension and removing any air bubbles by means of a slowly rotating paddle. Optional level sensors enable fully automatic operation."
+              "html": "Røreverkene sikrer kontinuerlig drift ved å holde og homogenisere den blandede suspensjonen og fjerne luftbobler med en sakte roterende padle. Nivåfølere (tilvalg) gir helautomatisk drift."
             },
             {
               "type": "list",
               "ordered": false,
               "items": [
-                "Complete circulation of the tank contents by means of an agitator shaft arranged angled to the tank with mixing paddle (no hard-to-clean static paddles)",
-                "Slowly rotating paddle for homogenization of the mixed material and removal of existing air bubbles",
-                "Cleaning opening with safety switch",
-                "Central hitching point for easy transportation",
-                "Level sensors for fully automatic operation"
+                "Full sirkulasjon av tankinnholdet med en røreaksel montert på skrå i tanken med blandepadle (ingen vanskelig å rengjøre statiske padler)",
+                "Sakte roterende padle som homogeniserer det blandede materialet og fjerner luftbobler",
+                "Rengjøringsåpning med sikkerhetsbryter",
+                "Sentralt løftepunkt for enkel transport",
+                "Nivåfølere for helautomatisk drift"
               ]
             }
           ],
@@ -4153,75 +4153,75 @@
           "type": "list",
           "ordered": false,
           "items": [
-            "Holding tank between mixer and injection pump"
+            "Mellomtank mellom mikser og injeksjonspumpe"
           ],
           "gen": true
         },
         {
           "type": "datasheet",
           "title": "Tekniske data",
-          "tagline": "Agitator HRW 2000",
+          "tagline": "Røreverk HRW 2000",
           "intro": [],
           "groups": [
             {
-              "title": "Agitator",
+              "title": "Røreverk",
               "rows": [
                 {
-                  "label": "Usable content",
+                  "label": "Nyttbart volum",
                   "metric": "2,000 l"
                 },
                 {
-                  "label": "Liquid temperature",
+                  "label": "Væsketemperatur",
                   "metric": "Max. 40°C"
                 },
                 {
-                  "label": "Inlet connection",
+                  "label": "Innløpstilkobling",
                   "metric": "3\""
                 },
                 {
-                  "label": "Outlet connection",
+                  "label": "Utløpstilkobling",
                   "metric": "2\""
                 }
               ]
             },
             {
-              "title": "Electrical data",
+              "title": "Elektriske data",
               "rows": [
                 {
-                  "label": "Voltage",
+                  "label": "Spenning",
                   "metric": "3x 400/460"
                 },
                 {
-                  "label": "Frequency",
+                  "label": "Frekvens",
                   "metric": "50 / 60 Hz"
                 },
                 {
-                  "label": "Nominal power",
+                  "label": "Merkeeffekt",
                   "metric": "3.0 / 3.6 kW"
                 },
                 {
-                  "label": "Speed",
+                  "label": "Turtall",
                   "metric": "32 / 38 min⁻¹"
                 }
               ]
             },
             {
-              "title": "Weight and dimensions",
+              "title": "Vekt og mål",
               "rows": [
                 {
-                  "label": "Approx. weight",
+                  "label": "Omtrentlig vekt",
                   "metric": "950 kg"
                 },
                 {
-                  "label": "Width",
+                  "label": "Bredde",
                   "metric": "1,600 mm"
                 },
                 {
-                  "label": "Height",
+                  "label": "Høyde",
                   "metric": "2,117 mm"
                 },
                 {
-                  "label": "Length",
+                  "label": "Lengde",
                   "metric": "1,600 mm"
                 }
               ]
@@ -4240,8 +4240,8 @@
           "type": "list",
           "ordered": false,
           "items": [
-            "Optional (Agitator): Level sensors 1\", \"full - empty\"",
-            "Optional (Agitator): Flange connection with butterfly valve 2½\""
+            "Tilvalg (Røreverk): Nivåfølere 1\", \"full - tom\"",
+            "Tilvalg (Røreverk): Flenstilkobling med spjeldventil 2½\""
           ],
           "gen": true
         },
@@ -4281,7 +4281,7 @@
           "left": [
             {
               "type": "image",
-              "alt": "Agitator HRW 3000",
+              "alt": "Røreverk HRW 3000",
               "width": 537,
               "height": 577,
               "src": "/assets/img/haeny-hrw3000-model.webp"
@@ -4290,17 +4290,17 @@
           "right": [
             {
               "type": "text",
-              "html": "Agitators ensure continuous operation by holding and homogenizing the mixed suspension and removing any air bubbles by means of a slowly rotating paddle. Optional level sensors enable fully automatic operation."
+              "html": "Røreverkene sikrer kontinuerlig drift ved å holde og homogenisere den blandede suspensjonen og fjerne luftbobler med en sakte roterende padle. Nivåfølere (tilvalg) gir helautomatisk drift."
             },
             {
               "type": "list",
               "ordered": false,
               "items": [
-                "Complete circulation of the tank contents by means of an agitator shaft arranged angled to the tank with mixing paddle (no hard-to-clean static paddles)",
-                "Slowly rotating paddle for homogenization of the mixed material and removal of existing air bubbles",
-                "Cleaning opening with safety switch",
-                "Central hitching point for easy transportation",
-                "Level sensors for fully automatic operation"
+                "Full sirkulasjon av tankinnholdet med en røreaksel montert på skrå i tanken med blandepadle (ingen vanskelig å rengjøre statiske padler)",
+                "Sakte roterende padle som homogeniserer det blandede materialet og fjerner luftbobler",
+                "Rengjøringsåpning med sikkerhetsbryter",
+                "Sentralt løftepunkt for enkel transport",
+                "Nivåfølere for helautomatisk drift"
               ]
             }
           ],
@@ -4316,75 +4316,75 @@
           "type": "list",
           "ordered": false,
           "items": [
-            "Holding tank between mixer and injection pump"
+            "Mellomtank mellom mikser og injeksjonspumpe"
           ],
           "gen": true
         },
         {
           "type": "datasheet",
           "title": "Tekniske data",
-          "tagline": "Agitator HRW 3000",
+          "tagline": "Røreverk HRW 3000",
           "intro": [],
           "groups": [
             {
-              "title": "Agitator",
+              "title": "Røreverk",
               "rows": [
                 {
-                  "label": "Usable content",
+                  "label": "Nyttbart volum",
                   "metric": "3,000 l"
                 },
                 {
-                  "label": "Liquid temperature",
+                  "label": "Væsketemperatur",
                   "metric": "Max. 40°C"
                 },
                 {
-                  "label": "Inlet connection",
+                  "label": "Innløpstilkobling",
                   "metric": "4\""
                 },
                 {
-                  "label": "Outlet connection",
+                  "label": "Utløpstilkobling",
                   "metric": "DN100 / PN16"
                 }
               ]
             },
             {
-              "title": "Electrical data",
+              "title": "Elektriske data",
               "rows": [
                 {
-                  "label": "Voltage",
+                  "label": "Spenning",
                   "metric": "3x 400/460"
                 },
                 {
-                  "label": "Frequency",
+                  "label": "Frekvens",
                   "metric": "50 / 60 Hz"
                 },
                 {
-                  "label": "Nominal power",
+                  "label": "Merkeeffekt",
                   "metric": "3.0 / 3.6 kW"
                 },
                 {
-                  "label": "Speed",
+                  "label": "Turtall",
                   "metric": "32 / 38 min⁻¹"
                 }
               ]
             },
             {
-              "title": "Weight and dimensions",
+              "title": "Vekt og mål",
               "rows": [
                 {
-                  "label": "Approx. weight",
+                  "label": "Omtrentlig vekt",
                   "metric": "1,025 kg"
                 },
                 {
-                  "label": "Width",
+                  "label": "Bredde",
                   "metric": "1,913 mm"
                 },
                 {
-                  "label": "Height",
+                  "label": "Høyde",
                   "metric": "2,117 mm"
                 },
                 {
-                  "label": "Length",
+                  "label": "Lengde",
                   "metric": "1,913 mm"
                 }
               ]
@@ -4403,8 +4403,8 @@
           "type": "list",
           "ordered": false,
           "items": [
-            "Optional (Agitator): Level sensors 1\", \"full - empty\"",
-            "Optional (Agitator): Flange connection with butterfly valve 2½\""
+            "Tilvalg (Røreverk): Nivåfølere 1\", \"full - tom\"",
+            "Tilvalg (Røreverk): Flenstilkobling med spjeldventil 2½\""
           ],
           "gen": true
         },

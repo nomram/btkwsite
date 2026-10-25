@@ -45,6 +45,16 @@ const FAMILIES = [
 ];
 const MODEL_IMG = (k) => /^ic(310|311|325)$/.test(k) ? "haeny-manuella-pumpar-ic-310-ic-311" : /^ic650/.test(k) ? "haeny-finder-ic" : /^ic(1100|1400)/.test(k) ? "haeny-finder-ic1100" : /^zmp6/.test(k) ? "haeny-finder-zmp600" : /^zmp7/.test(k) ? "haeny-finder-zmp" : k === "zmp936" ? "haeny-finder-zmp936" : /^faic/.test(k) ? "haeny-finder-faic" : null;
 
+// ---------- translations of the brochure text (tools/haeny-i18n.json: English text -> sv / es / no) ----------
+const I18N = Object.assign({}, ...fs.readdirSync(path.join(ROOT, "tools")).filter((x) => /^haeny-i18n.*.json$/.test(x)).map((x) => JSON.parse(fs.readFileSync(path.join(ROOT, "tools", x), "utf8"))));
+const tr = (l, text) => (l === "en" || !text ? text : (I18N[text] && I18N[text][l]) || text);
+const STRINGS = new Set(), MISSING = new Set();
+const collect = (d) => {
+  const add = (x) => { if (x && /[A-Za-z]{3,}/.test(x)) STRINGS.add(x); };
+  add(d.title); add(d.intro); d.features.forEach(add); d.applications.forEach(add); d.notes.forEach(add);
+  for (const t of d.tables) { add(t.title); t.rows.forEach(([a, b]) => { add(a); add(b); }); for (const [n, items] of Object.entries(t.lists || {})) { add(n); items.forEach(add); } }
+};
+
 // ---------- data fixes for the few wrapped rows ----------
 function fixData(k, d) {
   for (const t of d.tables) {
@@ -63,6 +73,7 @@ function fixData(k, d) {
     // "Control" tables are lists of functions, not label/value pairs
     if (/control/i.test(t.title)) { t.lists = { ...t.lists, [""]: t.rows.map(([l, v]) => (v ? l + ": " + v : l)) }; t.rows = []; }
   }
+  collect(d);
   return d;
 }
 
@@ -79,12 +90,12 @@ function modelBlocks(l, fam, k, d) {
   const img = d.images.model || d.images.unit || null;
   const fallback = MODEL_IMG(k);
   out.push({ type: "heading", level: 2, text: d.model || k.toUpperCase(), anchor: k });
-  out.push({ type: "__cols", img: img ? { src: img.file, width: img.width, height: img.height } : fallback ? { src: `/assets/img/${fallback}.webp` } : null, alt: `${d.title} ${d.model}`,
-    html: clean(d.intro), features: d.features.map(clean), uses: d.applications.map(clean), usesLabel: T.uses });
-  const groups = d.tables.filter((t) => t.rows.length).map((t) => ({ title: t.title + (t.subtitle ? ` (${t.subtitle})` : ""), rows: t.rows.map(([label, metric]) => ({ label, metric })) }));
-  if (groups.length) out.push({ type: "datasheet", title: T.data, tagline: `${d.title} ${d.model}`, intro: [], groups, note: d.notes.length ? d.notes.map((n, i) => `${i + 1}: ${n}`).join(" · ") : "" });
+  out.push({ type: "__cols", img: img ? { src: img.file, width: img.width, height: img.height } : fallback ? { src: `/assets/img/${fallback}.webp` } : null, alt: `${tr(l, d.title)} ${d.model}`,
+    html: clean(tr(l, d.intro)), features: d.features.map((x) => clean(tr(l, x))), uses: d.applications.map((x) => clean(tr(l, x))), usesLabel: T.uses });
+  const groups = d.tables.filter((t) => t.rows.length).map((t) => ({ title: tr(l, t.title) + (t.subtitle ? ` (${t.subtitle})` : ""), rows: t.rows.map(([label, metric]) => ({ label: tr(l, label), metric: tr(l, metric) })) }));
+  if (groups.length) out.push({ type: "datasheet", title: T.data, tagline: `${tr(l, d.title)} ${d.model}`, intro: [], groups, note: d.notes.length ? d.notes.map((n, i) => `${i + 1}: ${tr(l, n)}`).join(" · ") : "" });
   const lists = [];
-  for (const t of d.tables) for (const [name, items] of Object.entries(t.lists || {})) for (const it of items) lists.push(name ? `${name} (${t.title}): ${it}` : `${t.title}: ${it}`);
+  for (const t of d.tables) for (const [name, items] of Object.entries(t.lists || {})) for (const it of items) lists.push(name ? `${tr(l, name)} (${tr(l, t.title)}): ${tr(l, it)}` : `${tr(l, t.title)}: ${tr(l, it)}`);
   if (lists.length) { out.push({ type: "heading", level: 3, text: T.opts }); out.push({ type: "list", ordered: false, items: lists.map(clean) }); }
   const tiles = [];
   if (d.images.chart) tiles.push({ title: T.perf, image: d.images.chart.file, alt: `${T.perf} ${d.model}` });
@@ -133,10 +144,10 @@ for (const fam of FAMILIES) {
     const body = [];
     const first = data[fam.models[0]];
     body.push({ type: "heading", level: 2, text: T.overview });
-    if (first.features.length) body.push({ type: "list", ordered: false, items: first.features.map(clean) });
+    if (first.features.length) body.push({ type: "list", ordered: false, items: first.features.map((x) => clean(tr(l, x))) });
     body.push({ type: "heading", level: 3, text: T.models });
     body.push({ type: "list", ordered: false, items: fam.models.map((k) => { const d = data[k]; const p = pumpOf(d); return `<a href="#${k}">${esc(d.model)}</a>${p ? ` (${esc(p)})` : ""}: ${keyFigures(d).map(esc).join(" · ")}`; }) });
-    if (first.applications.length) { body.push({ type: "heading", level: 3, text: T.uses }); body.push({ type: "list", ordered: false, items: first.applications.map(clean) }); }
+    if (first.applications.length) { body.push({ type: "heading", level: 3, text: T.uses }); body.push({ type: "list", ordered: false, items: first.applications.map((x) => clean(tr(l, x))) }); }
     const pagePath = fam.base || `${HUB}/${fam.slug}`;
     if (fam.tiles) body.push({ type: "modules", layout: "tiles", columns: 3, more: false, items: await Promise.all(fam.models.map(async (k) => { const d = data[k]; const im = d.images.model ? d.images.model.file : `/assets/img/${fam.image}.webp`; return { title: d.model, image: im, alt: d.model, href: `${pagePath}#${k}`, ...(d.images.model ? { width: d.images.model.width, height: d.images.model.height } : await dim(im)) }; })) });
     for (const k of fam.models) body.push(...(await resolveBlocks(modelBlocks(l, fam, k, data[k]))));
@@ -242,3 +253,7 @@ for (const gone of ["triplexpump", "automatiska-anlaggningar"]) { const p = path
   r[`${HUB}/triplexpump`] = `${HUB}/injekteringspumpar`; r[`${HUB}/automatiska-anlaggningar`] = "/produkter/haeny/automatiska-pumpar";
   fs.writeFileSync(rf, JSON.stringify(r, null, 2) + "\n");
 }
+
+if (process.argv.includes("--strings")) { fs.writeFileSync(path.join(ROOT, "crawl/haeny-strings.json"), JSON.stringify([...STRINGS].sort(), null, 1)); console.log(STRINGS.size, "texts to translate -> crawl/haeny-strings.json"); }
+const NOISE = /(BSP|TMP|GEKA|OUT|IN|GF|LC|min|bar|kVA|mm|Max)/g;
+const untranslated = [...STRINGS].filter((x) => !I18N[x] && /[A-Za-z]{4,}/.test(x.replace(NOISE, ""))); if (untranslated.length) console.log("not translated yet:", untranslated.length, JSON.stringify(untranslated, null, 1));
