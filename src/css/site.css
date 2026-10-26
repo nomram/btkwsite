@@ -980,3 +980,22 @@ h2[id], h3[id] { scroll-margin-top: 5rem; }
   .pc__list .pc__v { text-align: right; }
   .pc__alt { display: block; text-align: center; }
 }
+/* masts under the hole-size chart: the ones that take the machines for the chosen size light up */
+.rc__masts { margin: 1.4rem 0 .2rem; }
+.rc__mtitle { margin: 0 0 .3rem; font-size: 1.05rem; }
+.rc__mhint { margin: 0 0 .8rem; color: var(--muted); font-size: .88rem; min-height: 1.4em; }
+.rc__mlist { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .7rem; margin: 0; padding: 0; list-style: none; }
+.rc__mast a { position: relative; display: grid; grid-template-columns: 44px minmax(0, 1fr); gap: .7rem; align-items: center; min-height: 4.2rem; padding: .6rem .8rem; border: 1px solid var(--line); border-radius: var(--radius); background: #fff; color: var(--text); text-decoration: none; transition: opacity .25s ease, border-color .25s ease, box-shadow .25s ease, background-color .25s ease; }
+.rc__mast a:hover, .rc__mast a:focus-visible { border-color: var(--muted); text-decoration: none; }
+.rc__mthumb img { display: block; width: 44px; height: 44px; object-fit: contain; }
+.rc__mtxt b { display: block; font-size: 1rem; }
+.rc__mtxt small { display: block; color: var(--muted); font-size: .8rem; line-height: 1.3; }
+.rc__mfor { display: block; margin-top: .15rem; font-style: normal; font-size: .78rem; font-weight: 600; color: var(--primary-dark, #b85a00); }
+.rc__mfor:empty { display: none; }
+.rc__mbadge { position: absolute; top: .45rem; right: .55rem; padding: .08rem .5rem; border-radius: 999px; background: var(--primary, #f47c20); color: #fff; font-size: .68rem; font-weight: 700; letter-spacing: .02em; opacity: 0; transform: scale(.85); transition: opacity .2s, transform .2s; }
+.rc__mast.is-rec a { border-color: var(--primary, #f47c20); background: #fff6ea; box-shadow: 0 0 0 1px var(--primary, #f47c20), 0 4px 14px rgba(244, 124, 32, .18); }
+.rc__mast.is-rec .rc__mbadge { opacity: 1; transform: none; }
+.rc__mast.is-dim a { opacity: .45; }
+@media (max-width: 900px) { .rc__mlist { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 520px) { .rc__mlist { grid-template-columns: 1fr; } }
+.rc__mast.is-dim { opacity: 1; }

@@ -82,40 +82,80 @@
             [
               "Mast",
               "Grävmaskin",
-              "Slaglängd",
+              "Borrslag",
+              "Dragkraft (kN)",
+              "Vikt (kg)",
+              "Möjliga borraggregat",
               "Utrustning / övrigt"
             ],
             [
               "MME",
               "5-8 ton",
               "3,2 m",
+              "6,5",
+              "488",
+              "TE260, TE260HT, TE326 & RDS250",
               "102 mm hydraulisk klämma"
             ],
             [
               "MEM",
               "12-15 ton",
               "3,35 m",
+              "11,1",
+              "1089",
+              "TE360, TE326 & RDS350",
               "165 mm hydraulisk klämma"
             ],
             [
               "HEM",
               "20-25 ton",
               "3,58-3,89 m",
+              "33,3",
+              "1440 - 2600",
+              "TE360, TE326, TE760 & RDS350, RDS550",
               "-"
             ],
             [
               "HEMH",
               "25-30 ton",
               "3,96 m",
+              "53",
+              "2800 - 3100",
+              "TE726, TE760, TE1000 & RDS550, RDS1004",
               "Enkel montering och demontering"
+            ],
+            [
+              "MP260",
+              "Bärbar",
+              "1,67 m",
+              "6,7",
+              "-",
+              "TE260HT, TE260 & RDS250",
+              "ACF-matning (aluminium)"
+            ],
+            [
+              "MPH",
+              "Bärbar",
+              "2 m (SCF5)",
+              "11,1",
+              "435",
+              "TE260, TE260HT, TE326, TE360 & RDS250, RDS350",
+              "SCF5-matning"
             ]
           ],
           "links": [
             "/produkter/tei/borrmaster/mme",
             "/produkter/tei/borrmaster/mem",
             "/produkter/tei/borrmaster/hem",
-            "/produkter/tei/borrmaster/hemh"
+            "/produkter/tei/borrmaster/hemh",
+            "/produkter/tei/borrmaster/mp260",
+            "/produkter/tei/borrmaster/mph"
           ]
+        },
+        {
+          "type": "text",
+          "html": "<small>TEI:s tekniska specifikationer tar hänsyn till en hydraulisk effektförlust på 40%. Dessa värden kan ändras utan förvarning.</small>",
+          "tableNote": true
         },
         {
           "type": "heading",
@@ -287,40 +327,80 @@
             [
               "Mast",
               "Excavator",
-              "Stroke length",
+              "Stroke",
+              "Pullback force (kN)",
+              "Weight (kg)",
+              "Possible drills",
               "Equipment / notes"
             ],
             [
               "MME",
               "5-8 tonnes",
               "3.2 m",
+              "6.5",
+              "488",
+              "TE260, TE260HT, TE326 & RDS250",
               "102 mm hydraulic clamp"
             ],
             [
               "MEM",
               "12-15 tonnes",
               "3.35 m",
+              "11.1",
+              "1089",
+              "TE360, TE326 & RDS350",
               "165 mm hydraulic clamp"
             ],
             [
               "HEM",
               "20-25 tonnes",
               "3.58-3.89 m",
+              "33.3",
+              "1440 - 2600",
+              "TE360, TE326, TE760 & RDS350, RDS550",
               "-"
             ],
             [
               "HEMH",
               "25-30 tonnes",
               "3.96 m",
+              "53",
+              "2800 - 3100",
+              "TE726, TE760, TE1000 & RDS550, RDS1004",
               "Easy mounting and dismantling"
+            ],
+            [
+              "MP260",
+              "Man portable",
+              "1,67 m",
+              "6,7",
+              "-",
+              "TE260HT, TE260 & RDS250",
+              "ACF feed (aluminium)"
+            ],
+            [
+              "MPH",
+              "Man portable",
+              "2 m (SCF5)",
+              "11,1",
+              "435",
+              "TE260, TE260HT, TE326, TE360 & RDS250, RDS350",
+              "SCF5 feed"
             ]
           ],
           "links": [
             "/produkter/tei/borrmaster/mme",
             "/produkter/tei/borrmaster/mem",
             "/produkter/tei/borrmaster/hem",
-            "/produkter/tei/borrmaster/hemh"
+            "/produkter/tei/borrmaster/hemh",
+            "/produkter/tei/borrmaster/mp260",
+            "/produkter/tei/borrmaster/mph"
           ]
+        },
+        {
+          "type": "text",
+          "html": "<small>TEI’s technical specifications take into account a 40% hydraulic power loss. These values may be changed without notice.</small>",
+          "tableNote": true
         },
         {
           "type": "heading",
@@ -494,39 +574,79 @@
               "Mástil",
               "Excavadora",
               "Carrera",
+              "Fuerza de retroceso (kN)",
+              "Peso (kg)",
+              "Martillos posibles",
               "Equipamiento / observaciones"
             ],
             [
               "MME",
               "5-8 toneladas",
               "3,2 m",
+              "6,5",
+              "488",
+              "TE260, TE260HT, TE326 & RDS250",
               "Mordaza hidráulica de 102 mm"
             ],
             [
               "MEM",
               "12-15 toneladas",
               "3,35 m",
+              "11,1",
+              "1089",
+              "TE360, TE326 & RDS350",
               "Mordaza hidráulica de 165 mm"
             ],
             [
               "HEM",
               "20-25 toneladas",
               "3,58-3,89 m",
+              "33,3",
+              "1440 - 2600",
+              "TE360, TE326, TE760 & RDS350, RDS550",
               "-"
             ],
             [
               "HEMH",
               "25-30 toneladas",
               "3,96 m",
+              "53",
+              "2800 - 3100",
+              "TE726, TE760, TE1000 & RDS550, RDS1004",
               "Montaje y desmontaje sencillos"
+            ],
+            [
+              "MP260",
+              "Portátil",
+              "1,67 m",
+              "6,7",
+              "-",
+              "TE260HT, TE260 & RDS250",
+              "Avance ACF (aluminio)"
+            ],
+            [
+              "MPH",
+              "Portátil",
+              "2 m (SCF5)",
+              "11,1",
+              "435",
+              "TE260, TE260HT, TE326, TE360 & RDS250, RDS350",
+              "Avance SCF5"
             ]
           ],
           "links": [
             "/produkter/tei/borrmaster/mme",
             "/produkter/tei/borrmaster/mem",
             "/produkter/tei/borrmaster/hem",
-            "/produkter/tei/borrmaster/hemh"
+            "/produkter/tei/borrmaster/hemh",
+            "/produkter/tei/borrmaster/mp260",
+            "/produkter/tei/borrmaster/mph"
           ]
+        },
+        {
+          "type": "text",
+          "html": "<small>Las especificaciones técnicas de TEI tienen en cuenta una pérdida de potencia hidráulica del 40 %. Estos valores pueden modificarse sin previo aviso.</small>",
+          "tableNote": true
         },
         {
           "type": "heading",
@@ -700,39 +820,79 @@
               "Mast",
               "Gravemaskin",
               "Slaglengde",
+              "Trekkraft (kN)",
+              "Vekt (kg)",
+              "Mulige borehammere",
               "Utstyr / merknader"
             ],
             [
               "MME",
               "5-8 tonn",
               "3,2 m",
+              "6,5",
+              "488",
+              "TE260, TE260HT, TE326 & RDS250",
               "102 mm hydraulisk klemme"
             ],
             [
               "MEM",
               "12-15 tonn",
               "3,35 m",
+              "11,1",
+              "1089",
+              "TE360, TE326 & RDS350",
               "165 mm hydraulisk klemme"
             ],
             [
               "HEM",
               "20-25 tonn",
               "3,58-3,89 m",
+              "33,3",
+              "1440 - 2600",
+              "TE360, TE326, TE760 & RDS350, RDS550",
               "-"
             ],
             [
               "HEMH",
               "25-30 tonn",
               "3,96 m",
+              "53",
+              "2800 - 3100",
+              "TE726, TE760, TE1000 & RDS550, RDS1004",
               "Enkel montering og demontering"
+            ],
+            [
+              "MP260",
+              "Bærbar",
+              "1,67 m",
+              "6,7",
+              "-",
+              "TE260HT, TE260 & RDS250",
+              "ACF-mating (aluminium)"
+            ],
+            [
+              "MPH",
+              "Bærbar",
+              "2 m (SCF5)",
+              "11,1",
+              "435",
+              "TE260, TE260HT, TE326, TE360 & RDS250, RDS350",
+              "SCF5-mating"
             ]
           ],
           "links": [
             "/produkter/tei/borrmaster/mme",
             "/produkter/tei/borrmaster/mem",
             "/produkter/tei/borrmaster/hem",
-            "/produkter/tei/borrmaster/hemh"
+            "/produkter/tei/borrmaster/hemh",
+            "/produkter/tei/borrmaster/mp260",
+            "/produkter/tei/borrmaster/mph"
           ]
+        },
+        {
+          "type": "text",
+          "html": "<small>TEIs tekniske spesifikasjoner tar hensyn til et hydraulisk effekttap på 40 %. Disse verdiene kan endres uten varsel.</small>",
+          "tableNote": true
         },
         {
           "type": "heading",

@@ -414,7 +414,15 @@ function renderRangeChart(ctx, b) {
   const pick = layout === "selector"
     ? `<div class="rc__pick"><label for="${id}">${esc(u.rc_pick || "Ditt hål")}</label><output class="rc__out" for="${id}"></output><div class="rc__slider"><input id="${id}" type="range" min="${lo}" max="${top}" step="${top > 300 ? 5 : 1}" value="${mid}"><span class="rc__hand" aria-hidden="true">${ICON.hand}</span></div><p class="rc__result" aria-live="polite" data-fits="${esc(u.rc_fits || "Passar")}" data-none="${esc(u.rc_none || "Ingen modell täcker detta mått")}" data-unit="${esc(unit)}"></p></div>`
     : "";
-  return `<section class="rc rc--${layout}"${layout === "selector" ? ' data-rc="selector"' : ""} data-top="${top}" style="--top:${top};--ticks:${ticks.length - 1}">${head}${pick}<div class="rc__chart"><div class="rc__axis" aria-hidden="true"><span class="rc__unit">${esc(u.rc_hole || "Hålstorlek")} (${esc(unit)})</span><div class="rc__scale">${axis}</div></div><ol class="rc__rows">${body}</ol>${layout === "selector" ? '<span class="rc__marker" aria-hidden="true"></span>' : ""}</div>${foot}${layout === "selector" ? `<p class="rc__caution">${ICON.info}<span${editFld(ctx, "caution")}>${esc(b.caution || u.rc_caution || "")}</span></p>` : ""}</section>`;
+  // masts that fit: every mast of the list, lit up by site.js for the machines that cover the chosen size (data-for = the models it takes)
+  const mm = layout === "selector" && b.masts && (b.masts.items || []).length ? b.masts : null;
+  const mastsHtml = mm ? `<div class="rc__masts" data-masts data-more="${esc(mm.more || "")}" data-none="${esc(mm.none || "")}" data-hint="${esc(mm.hint || "")}" data-for-label="${esc(mm.forLabel || "")}"><h3 class="rc__mtitle">${esc(mm.title || "")}</h3><p class="rc__mhint" aria-live="polite">${esc(mm.hint || "")}</p><ul class="rc__mlist">` +
+    mm.items.map((m) => {
+      const im = m.image && ctx.image(m.image);
+      const thumb = im && im.menu ? `<img src="/assets/img/${esc(im.name)}-menu.webp" width="44" height="44" alt="" loading="lazy" decoding="async">` : m.image ? imgTag(ctx, m.image, "", { cls: "rc__mimg", sizes: "44px" }) : "";
+      return `<li class="rc__mast" data-for="${esc((m.for || []).join(" "))}"><a href="${esc(localizeHref(ctx, m.href))}"><span class="rc__mthumb">${thumb}</span><span class="rc__mtxt"><b>${esc(m.title)}</b><small>${esc(m.sub || "")}</small><em class="rc__mfor"></em></span><span class="rc__mbadge">${esc(mm.fit || "")}</span></a></li>`;
+    }).join("") + "</ul></div>" : "";
+  return `<section class="rc rc--${layout}"${layout === "selector" ? ' data-rc="selector"' : ""} data-top="${top}" style="--top:${top};--ticks:${ticks.length - 1}">${head}${pick}<div class="rc__chart"><div class="rc__axis" aria-hidden="true"><span class="rc__unit">${esc(u.rc_hole || "Hålstorlek")} (${esc(unit)})</span><div class="rc__scale">${axis}</div></div><ol class="rc__rows">${body}</ol>${layout === "selector" ? '<span class="rc__marker" aria-hidden="true"></span>' : ""}</div>${mastsHtml}${foot}${layout === "selector" ? `<p class="rc__caution">${ICON.info}<span${editFld(ctx, "caution")}>${esc(b.caution || u.rc_caution || "")}</span></p>` : ""}</section>`;
 }
 
 function renderRelated(ctx, b) {

@@ -74,25 +74,18 @@
         {
           "type": "heading",
           "level": 2,
-          "text": "Specifications"
+          "text": "Specifikationer"
         },
         {
           "type": "table",
           "header": true,
           "rows": [
             [
-              "Model",
-              "Rotary torque (Nm)",
-              "Electric motor (kW)",
-              "Generator need (kW)",
-              "Weight (kg)"
-            ],
-            [
-              "TD50",
-              "2700",
-              "37",
-              "125",
-              "2060"
+              "Modell",
+              "Vridmoment (Nm)",
+              "Elmotor (kW)",
+              "Generatorbehov (kW)",
+              "Vikt (kg)"
             ],
             [
               "TD75",
@@ -109,62 +102,6 @@
               "5207"
             ]
           ]
-        },
-        {
-          "type": "table",
-          "header": true,
-          "align": "left",
-          "rows": [
-            [
-              "Modell",
-              "Maskinvikt (ton)",
-              "Vikt (kg)",
-              "Borrslag (m)",
-              "Dragkraft (kN)",
-              "Möjliga borraggregat",
-              "Förkortning av"
-            ],
-            [
-              "MME",
-              "5 - 12",
-              "488",
-              "3.20",
-              "6.5",
-              "TE260, TE260HT, TE326 & RDS250",
-              "Fäste för mini- och små grävmaskiner"
-            ],
-            [
-              "MEM",
-              "12 - 16",
-              "1089",
-              "3.35",
-              "11.1",
-              "TE360, TE326 & RDS350",
-              "Fäste för medeltunga grävmaskiner"
-            ],
-            [
-              "HEM",
-              "16 - 20",
-              "1440 - 2600",
-              "3.60",
-              "33.3",
-              "TE360, TE326, TE760 & RDS350, RDS550",
-              "Fäste för hydrauliska grävmaskiner"
-            ],
-            [
-              "HEMH",
-              "25 - 30",
-              "2800 - 3100",
-              "3.6 - 3.9",
-              "53",
-              "TE726, TE760, TE1000 & RDS550, RDS1004",
-              "Fäste för tunga hydrauliska grävmaskiner"
-            ]
-          ]
-        },
-        {
-          "type": "text",
-          "html": "TEI:s tekniska specifikationer tar hänsyn till en hydraulisk effektförlust på 40%. Dessa värden kan ändras utan förvarning."
         }
       ]
     },
@@ -248,13 +185,6 @@
               "Weight (kg)"
             ],
             [
-              "TD50",
-              "2700",
-              "37",
-              "125",
-              "2060"
-            ],
-            [
               "TD75",
               "6780",
               "56",
@@ -269,62 +199,6 @@
               "5207"
             ]
           ]
-        },
-        {
-          "type": "table",
-          "header": true,
-          "align": "left",
-          "rows": [
-            [
-              "Model",
-              "Machine weight (ton)",
-              "Weight (kg)",
-              "Drill travel (m)",
-              "Pullback force (kN)",
-              "Possible drills",
-              "Abbreviation"
-            ],
-            [
-              "MME",
-              "5 - 12",
-              "488",
-              "3.20",
-              "6.5",
-              "TE260, TE260HT, TE326 & RDS250",
-              "Mini and Small Excavator Mount"
-            ],
-            [
-              "MEM",
-              "12 - 16",
-              "1089",
-              "3.35",
-              "11.1",
-              "TE360, TE326 & RDS350",
-              "Mid-weight Excavator Mount"
-            ],
-            [
-              "HEM",
-              "16 - 20",
-              "1440 - 2600",
-              "3.60",
-              "33.3",
-              "TE360, TE326, TE760 & RDS350, RDS550",
-              "Hydraulic Excavator Mount"
-            ],
-            [
-              "HEMH",
-              "25 - 30",
-              "2800 - 3100",
-              "3.6 - 3.9",
-              "53",
-              "TE726, TE760, TE1000 & RDS550, RDS1004",
-              "Hydraulic Excavator Mount Heavy"
-            ]
-          ]
-        },
-        {
-          "type": "text",
-          "html": "TEI’s technical specifications take into account a 40% hydraulic power loss. These values may be changed without notice."
         }
       ],
       "published": true
@@ -409,13 +283,6 @@
               "Peso (kg)"
             ],
             [
-              "TD50",
-              "2700",
-              "37",
-              "125",
-              "2060"
-            ],
-            [
               "TD75",
               "6780",
               "56",
@@ -430,62 +297,6 @@
               "5207"
             ]
           ]
-        },
-        {
-          "type": "table",
-          "header": true,
-          "align": "left",
-          "rows": [
-            [
-              "Modelo",
-              "Peso de la máquina (t)",
-              "Peso (kg)",
-              "Carrera de perforación (m)",
-              "Fuerza de retroceso (kN)",
-              "Martillos posibles",
-              "Significado"
-            ],
-            [
-              "MME",
-              "5 - 12",
-              "488",
-              "3.20",
-              "6.5",
-              "TE260, TE260HT, TE326 & RDS250",
-              "Soporte para miniexcavadoras y excavadoras pequeñas"
-            ],
-            [
-              "MEM",
-              "12 - 16",
-              "1089",
-              "3.35",
-              "11.1",
-              "TE360, TE326 & RDS350",
-              "Soporte para excavadoras de peso medio"
-            ],
-            [
-              "HEM",
-              "16 - 20",
-              "1440 - 2600",
-              "3.60",
-              "33.3",
-              "TE360, TE326, TE760 & RDS350, RDS550",
-              "Soporte para excavadoras hidráulicas"
-            ],
-            [
-              "HEMH",
-              "25 - 30",
-              "2800 - 3100",
-              "3.6 - 3.9",
-              "53",
-              "TE726, TE760, TE1000 & RDS550, RDS1004",
-              "Soporte para excavadoras hidráulicas pesadas"
-            ]
-          ]
-        },
-        {
-          "type": "text",
-          "html": "Las especificaciones técnicas de TEI tienen en cuenta una pérdida de potencia hidráulica del 40 %. Estos valores pueden modificarse sin previo aviso."
         }
       ],
       "published": true
@@ -570,13 +381,6 @@
               "Vekt (kg)"
             ],
             [
-              "TD50",
-              "2700",
-              "37",
-              "125",
-              "2060"
-            ],
-            [
               "TD75",
               "6780",
               "56",
@@ -591,62 +395,6 @@
               "5207"
             ]
           ]
-        },
-        {
-          "type": "table",
-          "header": true,
-          "align": "left",
-          "rows": [
-            [
-              "Modell",
-              "Maskinvekt (tonn)",
-              "Vekt (kg)",
-              "Borslag (m)",
-              "Trekkraft (kN)",
-              "Mulige borehammere",
-              "Betydning"
-            ],
-            [
-              "MME",
-              "5 - 12",
-              "488",
-              "3.20",
-              "6.5",
-              "TE260, TE260HT, TE326 & RDS250",
-              "Feste for mini- og små gravemaskiner"
-            ],
-            [
-              "MEM",
-              "12 - 16",
-              "1089",
-              "3.35",
-              "11.1",
-              "TE360, TE326 & RDS350",
-              "Feste for mellomtunge gravemaskiner"
-            ],
-            [
-              "HEM",
-              "16 - 20",
-              "1440 - 2600",
-              "3.60",
-              "33.3",
-              "TE360, TE326, TE760 & RDS350, RDS550",
-              "Feste for hydrauliske gravemaskiner"
-            ],
-            [
-              "HEMH",
-              "25 - 30",
-              "2800 - 3100",
-              "3.6 - 3.9",
-              "53",
-              "TE726, TE760, TE1000 & RDS550, RDS1004",
-              "Feste for tunge hydrauliske gravemaskiner"
-            ]
-          ]
-        },
-        {
-          "type": "text",
-          "html": "TEIs tekniske spesifikasjoner tar hensyn til et hydraulisk effekttap på 40 %. Disse verdiene kan endres uten varsel."
         }
       ],
       "published": true

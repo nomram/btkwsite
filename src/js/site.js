@@ -626,6 +626,19 @@
     rows.forEach(function (r) { known[keyOf(r.querySelector(".rc__label").textContent)] = 1; });
     [].forEach.call(document.querySelectorAll("main .table-wrap tbody tr"), function (tr) { var th = tr.querySelector("th"), k = th && keyOf(th.textContent); if (k && known[k]) echo.push({ el: tr, key: k }); });
     [].forEach.call(document.querySelectorAll("main .module, main .card"), function (m) { var t = m.querySelector(".module__title, .card__title"), k = t && keyOf(t.textContent); if (k && known[k]) echo.push({ el: m, key: k }); });
+    // the masts under the chart light up for the machines that cover the chosen size
+    var masts = [].slice.call(box.querySelectorAll(".rc__mast")), mbox = box.querySelector("[data-masts]"), mhint = mbox && mbox.querySelector(".rc__mhint");
+    function lightMasts(fits) {
+      if (!mbox) return;
+      var any = false;
+      masts.forEach(function (m) {
+        var take = (m.getAttribute("data-for") || "").split(" "), hit = fits.filter(function (f) { return take.indexOf(keyOf(f)) >= 0 || take.indexOf(f) >= 0; });
+        var on = hit.length > 0; if (on) any = true;
+        m.classList.toggle("is-rec", on); m.classList.toggle("is-dim", fits.length > 0 && !on);
+        var line = m.querySelector(".rc__mfor"); if (line) line.textContent = on ? (mbox.getAttribute("data-for-label") || "") + " " + hit.join(", ") : "";
+      });
+      if (mhint) mhint.textContent = !fits.length ? mbox.getAttribute("data-hint") : any ? mbox.getAttribute("data-more") + " " + fits.join(", ") : mbox.getAttribute("data-none");
+    }
     // the sentence under the slider is different for every size; the box keeps the height of the longest one
     // (measured per screen width), so nothing below it moves while the slider is dragged
     function sentenceFor(v) {
@@ -656,6 +669,7 @@
       });
       echo.forEach(function (x) { var on = !!fitKeys[x.key]; x.el.classList.toggle("is-fit", fits.length > 0 && on); x.el.classList.toggle("is-dim", fits.length > 0 && !on); });
       res.textContent = fits.length ? res.getAttribute("data-fits") + ": " + fits.join(", ") : res.getAttribute("data-none");
+      lightMasts(fits);
     }
     // the finger: shown once, when the chart comes into view; any touch of the slider ends it
     // shown once, then remembered in this browser for a week (only the time it was last shown, nothing about the person), so a reload

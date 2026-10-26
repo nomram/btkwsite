@@ -120,7 +120,82 @@
               "href": "/produkter/tei/topphammare/te160"
             }
           ],
-          "step": 25
+          "step": 25,
+          "masts": {
+            "title": "Kompatibla master",
+            "hint": "Välj ett hål med reglaget ovan: de master som passar maskinerna för hålet lyser upp.",
+            "fit": "Passar",
+            "forLabel": "För",
+            "none": "Ingen mast i listan passar den här storleken.",
+            "more": "Markerade master passar",
+            "items": [
+              {
+                "href": "/produkter/tei/borrmaster/mme",
+                "title": "MME",
+                "image": "/assets/img/tei-borrmaster-mme.webp",
+                "sub": "För grävare: 5-8 ton",
+                "for": [
+                  "TE260",
+                  "TE260HT",
+                  "TE326"
+                ]
+              },
+              {
+                "href": "/produkter/tei/borrmaster/mem",
+                "title": "MEM",
+                "image": "/assets/img/tei-borrmaster-mem.webp",
+                "sub": "För grävare: 12-15 ton",
+                "for": [
+                  "TE360",
+                  "TE326"
+                ]
+              },
+              {
+                "href": "/produkter/tei/borrmaster/hem",
+                "title": "HEM",
+                "image": "/assets/img/tei-borrmaster-hem.webp",
+                "sub": "För grävare: 20-25 ton",
+                "for": [
+                  "TE360",
+                  "TE326",
+                  "TE760"
+                ]
+              },
+              {
+                "href": "/produkter/tei/borrmaster/hemh",
+                "title": "HEMH",
+                "image": "/assets/img/tei-borrmaster-hemh.webp",
+                "sub": "För grävare: 25-30 ton",
+                "for": [
+                  "TE726",
+                  "TE760",
+                  "TE1000"
+                ]
+              },
+              {
+                "href": "/produkter/tei/borrmaster/mp260",
+                "title": "MP260",
+                "image": "/assets/img/tei-borrmaster-mp260.webp",
+                "sub": "Bärbar mast",
+                "for": [
+                  "TE260HT",
+                  "TE260"
+                ]
+              },
+              {
+                "href": "/produkter/tei/borrmaster/mph",
+                "title": "MPH",
+                "image": "/assets/img/tei-borrmaster-mph.webp",
+                "sub": "Bärbar mast",
+                "for": [
+                  "TE260",
+                  "TE260HT",
+                  "TE326",
+                  "TE360"
+                ]
+              }
+            ]
+          }
         },
         {
           "type": "table",
@@ -404,7 +479,82 @@
               "href": "/produkter/tei/topphammare/te160"
             }
           ],
-          "step": 25
+          "step": 25,
+          "masts": {
+            "title": "Compatible masts",
+            "hint": "Choose a hole with the slider above: the masts that fit the machines for that hole light up.",
+            "fit": "Fits",
+            "forLabel": "For",
+            "none": "No mast in the list fits this size.",
+            "more": "Highlighted masts fit",
+            "items": [
+              {
+                "href": "/produkter/tei/borrmaster/mme",
+                "title": "MME",
+                "image": "/assets/img/tei-borrmaster-mme.webp",
+                "sub": "For excavators: 5-8 tonnes",
+                "for": [
+                  "TE260",
+                  "TE260HT",
+                  "TE326"
+                ]
+              },
+              {
+                "href": "/produkter/tei/borrmaster/mem",
+                "title": "MEM",
+                "image": "/assets/img/tei-borrmaster-mem.webp",
+                "sub": "For excavators: 12-15 tonnes",
+                "for": [
+                  "TE360",
+                  "TE326"
+                ]
+              },
+              {
+                "href": "/produkter/tei/borrmaster/hem",
+                "title": "HEM",
+                "image": "/assets/img/tei-borrmaster-hem.webp",
+                "sub": "For excavators: 20-25 tonnes",
+                "for": [
+                  "TE360",
+                  "TE326",
+                  "TE760"
+                ]
+              },
+              {
+                "href": "/produkter/tei/borrmaster/hemh",
+                "title": "HEMH",
+                "image": "/assets/img/tei-borrmaster-hemh.webp",
+                "sub": "For excavators: 25-30 tonnes",
+                "for": [
+                  "TE726",
+                  "TE760",
+                  "TE1000"
+                ]
+              },
+              {
+                "href": "/produkter/tei/borrmaster/mp260",
+                "title": "MP260",
+                "image": "/assets/img/tei-borrmaster-mp260.webp",
+                "sub": "Man-portable mast",
+                "for": [
+                  "TE260HT",
+                  "TE260"
+                ]
+              },
+              {
+                "href": "/produkter/tei/borrmaster/mph",
+                "title": "MPH",
+                "image": "/assets/img/tei-borrmaster-mph.webp",
+                "sub": "Man-portable mast",
+                "for": [
+                  "TE260",
+                  "TE260HT",
+                  "TE326",
+                  "TE360"
+                ]
+              }
+            ]
+          }
         },
         {
           "type": "table",
@@ -689,7 +839,82 @@
               "href": "/produkter/tei/topphammare/te160"
             }
           ],
-          "step": 25
+          "step": 25,
+          "masts": {
+            "title": "Mástiles compatibles",
+            "hint": "Elija un barreno con el control deslizante: se iluminan los mástiles que admiten las máquinas para ese barreno.",
+            "fit": "Compatible",
+            "forLabel": "Para",
+            "none": "Ningún mástil de la lista admite este tamaño.",
+            "more": "Los mástiles resaltados admiten",
+            "items": [
+              {
+                "href": "/produkter/tei/borrmaster/mme",
+                "title": "MME",
+                "image": "/assets/img/tei-borrmaster-mme.webp",
+                "sub": "Para excavadoras: 5-8 toneladas",
+                "for": [
+                  "TE260",
+                  "TE260HT",
+                  "TE326"
+                ]
+              },
+              {
+                "href": "/produkter/tei/borrmaster/mem",
+                "title": "MEM",
+                "image": "/assets/img/tei-borrmaster-mem.webp",
+                "sub": "Para excavadoras: 12-15 toneladas",
+                "for": [
+                  "TE360",
+                  "TE326"
+                ]
+              },
+              {
+                "href": "/produkter/tei/borrmaster/hem",
+                "title": "HEM",
+                "image": "/assets/img/tei-borrmaster-hem.webp",
+                "sub": "Para excavadoras: 20-25 toneladas",
+                "for": [
+                  "TE360",
+                  "TE326",
+                  "TE760"
+                ]
+              },
+              {
+                "href": "/produkter/tei/borrmaster/hemh",
+                "title": "HEMH",
+                "image": "/assets/img/tei-borrmaster-hemh.webp",
+                "sub": "Para excavadoras: 25-30 toneladas",
+                "for": [
+                  "TE726",
+                  "TE760",
+                  "TE1000"
+                ]
+              },
+              {
+                "href": "/produkter/tei/borrmaster/mp260",
+                "title": "MP260",
+                "image": "/assets/img/tei-borrmaster-mp260.webp",
+                "sub": "Mástil portátil",
+                "for": [
+                  "TE260HT",
+                  "TE260"
+                ]
+              },
+              {
+                "href": "/produkter/tei/borrmaster/mph",
+                "title": "MPH",
+                "image": "/assets/img/tei-borrmaster-mph.webp",
+                "sub": "Mástil portátil",
+                "for": [
+                  "TE260",
+                  "TE260HT",
+                  "TE326",
+                  "TE360"
+                ]
+              }
+            ]
+          }
         },
         {
           "type": "table",
@@ -974,7 +1199,82 @@
               "href": "/produkter/tei/topphammare/te160"
             }
           ],
-          "step": 25
+          "step": 25,
+          "masts": {
+            "title": "Kompatible master",
+            "hint": "Velg et hull med glideren over: mastene som passer maskinene for hullet lyser opp.",
+            "fit": "Passer",
+            "forLabel": "For",
+            "none": "Ingen mast i listen passer denne størrelsen.",
+            "more": "Markerte master passer",
+            "items": [
+              {
+                "href": "/produkter/tei/borrmaster/mme",
+                "title": "MME",
+                "image": "/assets/img/tei-borrmaster-mme.webp",
+                "sub": "For gravemaskiner: 5-8 tonn",
+                "for": [
+                  "TE260",
+                  "TE260HT",
+                  "TE326"
+                ]
+              },
+              {
+                "href": "/produkter/tei/borrmaster/mem",
+                "title": "MEM",
+                "image": "/assets/img/tei-borrmaster-mem.webp",
+                "sub": "For gravemaskiner: 12-15 tonn",
+                "for": [
+                  "TE360",
+                  "TE326"
+                ]
+              },
+              {
+                "href": "/produkter/tei/borrmaster/hem",
+                "title": "HEM",
+                "image": "/assets/img/tei-borrmaster-hem.webp",
+                "sub": "For gravemaskiner: 20-25 tonn",
+                "for": [
+                  "TE360",
+                  "TE326",
+                  "TE760"
+                ]
+              },
+              {
+                "href": "/produkter/tei/borrmaster/hemh",
+                "title": "HEMH",
+                "image": "/assets/img/tei-borrmaster-hemh.webp",
+                "sub": "For gravemaskiner: 25-30 tonn",
+                "for": [
+                  "TE726",
+                  "TE760",
+                  "TE1000"
+                ]
+              },
+              {
+                "href": "/produkter/tei/borrmaster/mp260",
+                "title": "MP260",
+                "image": "/assets/img/tei-borrmaster-mp260.webp",
+                "sub": "Bærbar mast",
+                "for": [
+                  "TE260HT",
+                  "TE260"
+                ]
+              },
+              {
+                "href": "/produkter/tei/borrmaster/mph",
+                "title": "MPH",
+                "image": "/assets/img/tei-borrmaster-mph.webp",
+                "sub": "Bærbar mast",
+                "for": [
+                  "TE260",
+                  "TE260HT",
+                  "TE326",
+                  "TE360"
+                ]
+              }
+            ]
+          }
         },
         {
           "type": "table",
