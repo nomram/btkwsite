@@ -37,6 +37,7 @@
           "label": "Åtgång",
           "value": "6-8 m²",
           "unit": "per liter",
+          "meta": "1 behandling, tills ytan är mättad",
           "note": "Beror på träets porositet.",
           "usage": true
         },
@@ -124,6 +125,7 @@
           "label": "Consumption",
           "value": "6-8 m²",
           "unit": "per litre",
+          "meta": "1 treatment, until the surface is saturated",
           "note": "Depends on the porosity of the wood.",
           "usage": true
         },
@@ -212,6 +214,7 @@
           "label": "Consumo",
           "value": "6-8 m²",
           "unit": "por litro",
+          "meta": "1 tratamiento, hasta saturar la superficie",
           "note": "Depende de la porosidad de la madera.",
           "usage": true
         },
@@ -300,6 +303,7 @@
           "label": "Forbruk",
           "value": "6-8 m²",
           "unit": "per liter",
+          "meta": "1 behandling, til underlaget er mettet",
           "note": "Avhenger av trevirkets porøsitet.",
           "usage": true
         },

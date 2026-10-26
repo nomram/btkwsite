@@ -55,6 +55,7 @@
           "label": "Åtgång",
           "value": "2-4 m²",
           "unit": "per liter",
+          "meta": "2 lager, det andra när det första torkat",
           "note": "Beror på hur sugande betongen är. Tekniska data gäller dosering 400 g/m².",
           "usage": true
         },
@@ -136,6 +137,7 @@
           "label": "Consumption",
           "value": "2-4 m²",
           "unit": "per litre",
+          "meta": "2 coats, the second once the first has dried",
           "note": "Depends on how absorbent the concrete is. The technical data apply to a dosage of 400 g/m².",
           "usage": true
         },
@@ -218,6 +220,7 @@
           "label": "Consumo",
           "value": "2-4 m²",
           "unit": "por litro",
+          "meta": "2 capas, la segunda cuando la primera se ha secado",
           "note": "Depende de lo absorbente que sea el hormigón. Los datos técnicos corresponden a una dosificación de 400 g/m².",
           "usage": true
         },
@@ -300,6 +303,7 @@
           "label": "Forbruk",
           "value": "2-4 m²",
           "unit": "per liter",
+          "meta": "2 lag, det andre når det første har tørket",
           "note": "Avhenger av hvor sugende betongen er. De tekniske dataene gjelder dosering 400 g/m².",
           "usage": true
         },

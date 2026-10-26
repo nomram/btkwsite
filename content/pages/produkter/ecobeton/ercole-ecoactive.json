@@ -36,7 +36,8 @@
           "type": "stat",
           "label": "Åtgång",
           "value": "1,5 kg/m²",
-          "unit": "(två skikt)",
+          "unit": "",
+          "meta": "2 skikt",
           "note": "På slät, oskadad yta. Verklig täckning beror på underlag och porositet.",
           "usage": true
         },
@@ -123,7 +124,8 @@
           "type": "stat",
           "label": "Consumption",
           "value": "1.5 kg/m²",
-          "unit": "(two coats)",
+          "unit": "",
+          "meta": "2 coats",
           "note": "On a smooth, undamaged surface. The actual coverage depends on the substrate and its porosity.",
           "usage": true
         },
@@ -211,7 +213,8 @@
           "type": "stat",
           "label": "Consumo",
           "value": "1,5 kg/m²",
-          "unit": "(dos capas)",
+          "unit": "",
+          "meta": "2 capas",
           "note": "Sobre una superficie lisa y sin daños. El rendimiento real depende del soporte y de su porosidad.",
           "usage": true
         },
@@ -299,7 +302,8 @@
           "type": "stat",
           "label": "Forbruk",
           "value": "1,5 kg/m²",
-          "unit": "(to strøk)",
+          "unit": "",
+          "meta": "2 strøk",
           "note": "På glatt, uskadet underlag. Faktisk dekning avhenger av underlaget og dets porøsitet.",
           "usage": true
         },

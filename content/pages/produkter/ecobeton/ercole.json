@@ -37,7 +37,8 @@
           "label": "Åtgång",
           "value": "15 m²",
           "unit": "per 25 kg hink",
-          "note": "Två skikt på jämnt underlag, ca 1,5 kg/m². Verklig täckning beror på underlagets förhållanden och porositet.",
+          "meta": "2 skikt, ca 1,5 kg/m²",
+          "note": "På jämnt underlag. Tekniska data gäller 3,5 liter vatten per 25 kg. Verklig täckning beror på underlagets förhållanden och porositet.",
           "usage": true
         },
         {
@@ -120,7 +121,8 @@
           "label": "Consumption",
           "value": "15 m²",
           "unit": "per 25 kg bucket",
-          "note": "Two coats on an even substrate, about 1.5 kg/m². The actual coverage depends on the substrate and its porosity.",
+          "meta": "2 coats, about 1.5 kg/m²",
+          "note": "On an even substrate. The technical data apply to 3.5 litres of water per 25 kg. The actual coverage depends on the substrate and its porosity.",
           "usage": true
         },
         {
@@ -204,7 +206,8 @@
           "label": "Consumo",
           "value": "15 m²",
           "unit": "por cubo de 25 kg",
-          "note": "Dos capas sobre un soporte regular, unos 1,5 kg/m². El rendimiento real depende del soporte y de su porosidad.",
+          "meta": "2 capas, unos 1,5 kg/m²",
+          "note": "Sobre un soporte regular. Los datos técnicos corresponden a 3,5 litros de agua por 25 kg. El rendimiento real depende del soporte y de su porosidad.",
           "usage": true
         },
         {
@@ -288,7 +291,8 @@
           "label": "Forbruk",
           "value": "15 m²",
           "unit": "per 25 kg bøtte",
-          "note": "To strøk på jevnt underlag, ca. 1,5 kg/m². Faktisk dekning avhenger av underlaget og dets porøsitet.",
+          "meta": "2 strøk, ca. 1,5 kg/m²",
+          "note": "På jevnt underlag. De tekniske dataene gjelder 3,5 liter vann per 25 kg. Faktisk dekning avhenger av underlaget og dets porøsitet.",
           "usage": true
         },
         {

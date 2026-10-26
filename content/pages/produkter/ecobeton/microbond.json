@@ -45,7 +45,8 @@
           "label": "Åtgång",
           "value": "30 m²",
           "unit": "per 25 kg hink",
-          "note": "Tunt skikt. Vid ca 1 mm går det åt ca 1,5 kg/m² (15-16 m² per hink).",
+          "meta": "Flera tunna skikt tills ytan är slät",
+          "note": "Vid ca 1 mm går det åt ca 1,5 kg/m² (15-16 m² per hink).",
           "usage": true
         },
         {
@@ -153,7 +154,8 @@
           "label": "Consumption",
           "value": "30 m²",
           "unit": "per 25 kg bucket",
-          "note": "Thin coat. At about 1 mm it takes about 1.5 kg/m² (15-16 m² per bucket).",
+          "meta": "Several thin coats until the surface is smooth",
+          "note": "At about 1 mm it takes about 1.5 kg/m² (15-16 m² per bucket).",
           "usage": true
         },
         {
@@ -262,7 +264,8 @@
           "label": "Consumo",
           "value": "30 m²",
           "unit": "por cubo de 25 kg",
-          "note": "Capa fina. Con unos 1 mm se necesitan unos 1,5 kg/m² (15-16 m² por cubo).",
+          "meta": "Varias capas finas hasta lograr una superficie lisa",
+          "note": "Con unos 1 mm se necesitan unos 1,5 kg/m² (15-16 m² por cubo).",
           "usage": true
         },
         {
@@ -371,7 +374,8 @@
           "label": "Forbruk",
           "value": "30 m²",
           "unit": "per 25 kg bøtte",
-          "note": "Tynt lag. Ved ca. 1 mm går det med ca. 1,5 kg/m² (15-16 m² per bøtte).",
+          "meta": "Flere tynne lag til flaten er glatt",
+          "note": "Ved ca. 1 mm går det med ca. 1,5 kg/m² (15-16 m² per bøtte).",
           "usage": true
         },
         {

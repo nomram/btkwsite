@@ -37,6 +37,7 @@
           "label": "Åtgång",
           "value": "4-7 m²",
           "unit": "per liter",
+          "meta": "1 skikt, lägg inte på ett andra",
           "note": "Beror på materialets porositet.",
           "usage": true
         },
@@ -126,6 +127,7 @@
           "label": "Consumption",
           "value": "4-7 m²",
           "unit": "per litre",
+          "meta": "1 coat, do not apply a second",
           "note": "Depends on the porosity of the material.",
           "usage": true
         },
@@ -216,6 +218,7 @@
           "label": "Consumo",
           "value": "4-7 m²",
           "unit": "por litro",
+          "meta": "1 capa, no aplicar una segunda",
           "note": "Depende de la porosidad del material.",
           "usage": true
         },
@@ -306,6 +309,7 @@
           "label": "Forbruk",
           "value": "4-7 m²",
           "unit": "per liter",
+          "meta": "1 strøk, ikke legg på et andre",
           "note": "Avhenger av materialets porøsitet.",
           "usage": true
         },

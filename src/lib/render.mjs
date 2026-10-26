@@ -299,7 +299,7 @@ function renderChips(ctx, b) {
 // Key figure that sits at the bottom right of the text above it (consumption of a product): label, big value, unit, small note
 function renderStat(ctx, b) {
   const f = (n, v, cls, tag = "span") => (v || ctx.edit ? `<${tag} class="${cls}"${editFld(ctx, n)}>${esc(v || "")}</${tag}>` : "");
-  return `<aside class="stat" aria-label="${esc(b.label || "")}"><div class="stat__card"><span class="stat__ico" aria-hidden="true">${ICON.layers || ICON.info}</span><div class="stat__body">${f("label", b.label, "stat__label")}<p class="stat__main"><b class="stat__value"${editFld(ctx, "value")}>${esc(b.value || "")}</b>${f("unit", b.unit, "stat__unit")}</p>${f("note", b.note, "stat__note", "p")}</div></div></aside>`;
+  return `<aside class="stat" aria-label="${esc(b.label || "")}"><div class="stat__card">${f("label", b.label, "stat__label")}<p class="stat__main"><b class="stat__value"${editFld(ctx, "value")}>${esc(b.value || "")}</b>${f("unit", b.unit, "stat__unit")}</p>${f("meta", b.meta, "stat__meta", "p")}${f("note", b.note, "stat__note", "p")}</div></aside>`;
 }
 
 function renderCta(ctx, b) {
@@ -1041,7 +1041,7 @@ function composeBody(ctx, page, t) {
   const template = page.template || "page";
   if (template === "brand" || template === "product") {
     let n = 0;
-    while (n < blocks.length && ["image", "carousel", "compare", "text", "list", "heading"].includes(blocks[n].type)) n++;
+    while (n < blocks.length && ["image", "carousel", "compare", "text", "list", "heading", "stat"].includes(blocks[n].type)) n++;
     const lead = blocks.slice(0, n);
     const isMedia = (b) => (b.type === "image" && !b.inline) || b.type === "carousel" || b.type === "compare";
     const media = lead.filter(isMedia);

@@ -231,7 +231,7 @@ function panelBlock() {
       body = F(t("heading"), inp("title", b.title)) + F(t("one_per_line"), `<textarea data-bf="items" data-t="lines" rows="7">${esc((b.items || []).join("\n"))}</textarea>`);
       break;
     case "stat":
-      body = F(t("stat_label"), inp("label", b.label)) + F(t("stat_value"), inp("value", b.value)) + F(t("stat_unit"), inp("unit", b.unit)) + F(t("stat_note"), inp("note", b.note));
+      body = F(t("stat_label"), inp("label", b.label)) + F(t("stat_value"), inp("value", b.value)) + F(t("stat_unit"), inp("unit", b.unit)) + F(t("stat_meta"), inp("meta", b.meta)) + F(t("stat_note"), inp("note", b.note));
       break;
     case "cta":
       body = F(t("heading"), inp("title", b.title)) + F(t("supporting_text"), inp("text", b.text)) + F(t("button_text"), inp("button", b.button)) +
