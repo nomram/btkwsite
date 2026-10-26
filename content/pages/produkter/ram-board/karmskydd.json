@@ -1,0 +1,357 @@
+{
+  "path": "/produkter/ram-board/karmskydd",
+  "updated": "2026-10-26",
+  "template": "product",
+  "order": 1,
+  "published": true,
+  "i18n": {
+    "sv": {
+      "title": "Karmskydd",
+      "h1": "Ram Board Karmskydd",
+      "description": "Karmskydd frÃ¥n Ram Board i Ã¥tervunnet material, Ã¥teranvÃ¤ndbart och kraftigt. 1,65 m x 0,91 m och 1,65 m x 1,52 m. 102 mm - 228 mm karmbredd, Kraftig, Ã…teranvÃ¤ndbar, Ã…tervunnet material.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Ram Board",
+          "href": "/produkter/ram-board",
+          "width": 250,
+          "height": 103,
+          "src": "/assets/img/ram-board-1.webp",
+          "maxWidth": 300
+        },
+        {
+          "type": "image",
+          "alt": "Ram Board Karmskydd",
+          "src": "/assets/img/ram-board-karmskydd-main.webp",
+          "width": 405,
+          "height": 501
+        },
+        {
+          "type": "text",
+          "html": "Karmskydd frÃ¥n Ram Board i Ã¥tervunnet material, Ã¥teranvÃ¤ndbart och kraftigt."
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Storlekar: 1,65 m x 0,91 m och 1,65 m x 1,52 m",
+            "102 mm - 228 mm karmbredd",
+            "Kraftig",
+            "Ã…teranvÃ¤ndbar",
+            "Ã…tervunnet material"
+          ]
+        },
+        {
+          "type": "carousel",
+          "autoplay": false,
+          "items": [
+            {
+              "src": "/assets/img/ram-board-karmskydd-1.webp",
+              "alt": "Ram Board Karmskydd, bilder 1",
+              "width": 300,
+              "height": 300
+            },
+            {
+              "src": "/assets/img/ram-board-karmskydd-2.webp",
+              "alt": "Ram Board Karmskydd, bilder 2",
+              "width": 300,
+              "height": 300
+            },
+            {
+              "src": "/assets/img/ram-board-karmskydd-3.webp",
+              "alt": "Ram Board Karmskydd, bilder 3",
+              "width": 256,
+              "height": 384
+            }
+          ]
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Broschyr (pÃ¥ svenska)",
+          "href": "/assets/docs/ram-board-broschyr-svenska.pdf"
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Kontakta oss</a> fÃ¶r pris, leveranstid och mer information."
+        },
+        {
+          "type": "related",
+          "title": "Se Ã¤ven",
+          "items": [
+            {
+              "href": "/produkter/ram-board/golvskydd"
+            },
+            {
+              "href": "/produkter/ram-board/seam-tape"
+            },
+            {
+              "href": "/produkter/ram-board/edge-tape"
+            }
+          ]
+        }
+      ]
+    },
+    "en": {
+      "title": "Door frame protection",
+      "h1": "Ram Board Door frame protection",
+      "description": "Ram Board door frame protection in recycled material: strong and reusable. 1.65 m x 0.91 m and 1.65 m x 1.52 m. 102 mm - 228 mm frame width, Strong, Reusable, Recycled material.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Ram Board",
+          "href": "/produkter/ram-board",
+          "width": 250,
+          "height": 103,
+          "src": "/assets/img/ram-board-1.webp",
+          "maxWidth": 300
+        },
+        {
+          "type": "image",
+          "alt": "Ram Board Door frame protection",
+          "src": "/assets/img/ram-board-karmskydd-main.webp",
+          "width": 405,
+          "height": 501
+        },
+        {
+          "type": "text",
+          "html": "Ram Board door frame protection in recycled material: strong and reusable."
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Sizes: 1.65 m x 0.91 m and 1.65 m x 1.52 m",
+            "102 mm - 228 mm frame width",
+            "Strong",
+            "Reusable",
+            "Recycled material"
+          ]
+        },
+        {
+          "type": "carousel",
+          "autoplay": false,
+          "items": [
+            {
+              "src": "/assets/img/ram-board-karmskydd-1.webp",
+              "alt": "Ram Board Door frame protection, pictures 1",
+              "width": 300,
+              "height": 300
+            },
+            {
+              "src": "/assets/img/ram-board-karmskydd-2.webp",
+              "alt": "Ram Board Door frame protection, pictures 2",
+              "width": 300,
+              "height": 300
+            },
+            {
+              "src": "/assets/img/ram-board-karmskydd-3.webp",
+              "alt": "Ram Board Door frame protection, pictures 3",
+              "width": 256,
+              "height": 384
+            }
+          ]
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Brochure (in Swedish)",
+          "href": "/assets/docs/ram-board-broschyr-svenska.pdf"
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Contact us</a> for price, delivery time and more information."
+        },
+        {
+          "type": "related",
+          "title": "See also",
+          "items": [
+            {
+              "href": "/produkter/ram-board/golvskydd"
+            },
+            {
+              "href": "/produkter/ram-board/seam-tape"
+            },
+            {
+              "href": "/produkter/ram-board/edge-tape"
+            }
+          ]
+        }
+      ]
+    },
+    "es": {
+      "title": "ProtecciÃ³n de marcos",
+      "h1": "Ram Board ProtecciÃ³n de marcos",
+      "description": "ProtecciÃ³n de marcos Ram Board en material reciclado: resistente y reutilizable. 1,65 m x 0,91 m y 1,65 m x 1,52 m. Ancho de marco de 102 mm a 228 mm, Resistente, Reutilizable, Material reciclado.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Ram Board",
+          "href": "/produkter/ram-board",
+          "width": 250,
+          "height": 103,
+          "src": "/assets/img/ram-board-1.webp",
+          "maxWidth": 300
+        },
+        {
+          "type": "image",
+          "alt": "Ram Board ProtecciÃ³n de marcos",
+          "src": "/assets/img/ram-board-karmskydd-main.webp",
+          "width": 405,
+          "height": 501
+        },
+        {
+          "type": "text",
+          "html": "ProtecciÃ³n de marcos Ram Board en material reciclado: resistente y reutilizable."
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "TamaÃ±os: 1,65 m x 0,91 m y 1,65 m x 1,52 m",
+            "Ancho de marco de 102 mm a 228 mm",
+            "Resistente",
+            "Reutilizable",
+            "Material reciclado"
+          ]
+        },
+        {
+          "type": "carousel",
+          "autoplay": false,
+          "items": [
+            {
+              "src": "/assets/img/ram-board-karmskydd-1.webp",
+              "alt": "Ram Board ProtecciÃ³n de marcos, imã¡genes 1",
+              "width": 300,
+              "height": 300
+            },
+            {
+              "src": "/assets/img/ram-board-karmskydd-2.webp",
+              "alt": "Ram Board ProtecciÃ³n de marcos, imã¡genes 2",
+              "width": 300,
+              "height": 300
+            },
+            {
+              "src": "/assets/img/ram-board-karmskydd-3.webp",
+              "alt": "Ram Board ProtecciÃ³n de marcos, imã¡genes 3",
+              "width": 256,
+              "height": 384
+            }
+          ]
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Folleto (en sueco)",
+          "href": "/assets/docs/ram-board-broschyr-svenska.pdf"
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">ContÃ¡ctenos</a> para precio, plazo de entrega y mÃ¡s informaciÃ³n."
+        },
+        {
+          "type": "related",
+          "title": "VÃ©ase tambiÃ©n",
+          "items": [
+            {
+              "href": "/produkter/ram-board/golvskydd"
+            },
+            {
+              "href": "/produkter/ram-board/seam-tape"
+            },
+            {
+              "href": "/produkter/ram-board/edge-tape"
+            }
+          ]
+        }
+      ]
+    },
+    "no": {
+      "title": "Karmbeskyttelse",
+      "h1": "Ram Board Karmbeskyttelse",
+      "description": "Karmbeskyttelse fra Ram Board i resirkulert materiale: kraftig og gjenbrukbar. 1,65 m x 0,91 m og 1,65 m x 1,52 m. 102 mm - 228 mm karmbredde, Kraftig, Gjenbrukbar, Resirkulert materiale.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Ram Board",
+          "href": "/produkter/ram-board",
+          "width": 250,
+          "height": 103,
+          "src": "/assets/img/ram-board-1.webp",
+          "maxWidth": 300
+        },
+        {
+          "type": "image",
+          "alt": "Ram Board Karmbeskyttelse",
+          "src": "/assets/img/ram-board-karmskydd-main.webp",
+          "width": 405,
+          "height": 501
+        },
+        {
+          "type": "text",
+          "html": "Karmbeskyttelse fra Ram Board i resirkulert materiale: kraftig og gjenbrukbar."
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "StÃ¸rrelser: 1,65 m x 0,91 m og 1,65 m x 1,52 m",
+            "102 mm - 228 mm karmbredde",
+            "Kraftig",
+            "Gjenbrukbar",
+            "Resirkulert materiale"
+          ]
+        },
+        {
+          "type": "carousel",
+          "autoplay": false,
+          "items": [
+            {
+              "src": "/assets/img/ram-board-karmskydd-1.webp",
+              "alt": "Ram Board Karmbeskyttelse, bilder 1",
+              "width": 300,
+              "height": 300
+            },
+            {
+              "src": "/assets/img/ram-board-karmskydd-2.webp",
+              "alt": "Ram Board Karmbeskyttelse, bilder 2",
+              "width": 300,
+              "height": 300
+            },
+            {
+              "src": "/assets/img/ram-board-karmskydd-3.webp",
+              "alt": "Ram Board Karmbeskyttelse, bilder 3",
+              "width": 256,
+              "height": 384
+            }
+          ]
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Brosjyre (pÃ¥ svensk)",
+          "href": "/assets/docs/ram-board-broschyr-svenska.pdf"
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Kontakt oss</a> for pris, leveringstid og mer informasjon."
+        },
+        {
+          "type": "related",
+          "title": "Se ogsÃ¥",
+          "items": [
+            {
+              "href": "/produkter/ram-board/golvskydd"
+            },
+            {
+              "href": "/produkter/ram-board/seam-tape"
+            },
+            {
+              "href": "/produkter/ram-board/edge-tape"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

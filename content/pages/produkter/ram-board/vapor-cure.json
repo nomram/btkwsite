@@ -1,0 +1,373 @@
+{
+  "path": "/produkter/ram-board/vapor-cure",
+  "updated": "2026-10-26",
+  "template": "product",
+  "order": 4,
+  "published": true,
+  "i18n": {
+    "sv": {
+      "title": "Vapor-Cure",
+      "h1": "Ram Board Vapor-Cure",
+      "description": "DiffusionsÃ¶ppen skarvtejp fÃ¶r Ram Board golvskydd. 76 mm x 50 m. Skarvtejp, TÃ¥lig, DiffusionsÃ¶ppen.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Ram Board",
+          "href": "/produkter/ram-board",
+          "width": 250,
+          "height": 103,
+          "src": "/assets/img/ram-board-1.webp",
+          "maxWidth": 300
+        },
+        {
+          "type": "image",
+          "alt": "Ram Board Vapor-Cure",
+          "src": "/assets/img/ram-board-vapor-cure-main.webp",
+          "width": 500,
+          "height": 500
+        },
+        {
+          "type": "text",
+          "html": "DiffusionsÃ¶ppen skarvtejp fÃ¶r Ram Board golvskydd."
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "MÃ¥tt: 76 mm x 50 m",
+            "Vikt: 0,35 kg",
+            "Skarvtejp",
+            "TÃ¥lig",
+            "DiffusionsÃ¶ppen"
+          ]
+        },
+        {
+          "type": "text",
+          "html": "<strong>OBS! Skall inte tejpas direkt pÃ¥ golvet.</strong>"
+        },
+        {
+          "type": "carousel",
+          "autoplay": false,
+          "items": [
+            {
+              "src": "/assets/img/ram-board-vapor-cure-1.webp",
+              "alt": "Ram Board Vapor-Cure, bilder 1",
+              "width": 233,
+              "height": 195
+            },
+            {
+              "src": "/assets/img/ram-board-vapor-cure-2.webp",
+              "alt": "Ram Board Vapor-Cure, bilder 2",
+              "width": 150,
+              "height": 150
+            },
+            {
+              "src": "/assets/img/ram-board-vapor-cure-3.webp",
+              "alt": "Ram Board Vapor-Cure, bilder 3",
+              "width": 300,
+              "height": 300
+            }
+          ]
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Broschyr (pÃ¥ svenska)",
+          "href": "/assets/docs/ram-board-broschyr-svenska.pdf"
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Kontakta oss</a> fÃ¶r pris, leveranstid och mer information."
+        },
+        {
+          "type": "related",
+          "title": "Se Ã¤ven",
+          "items": [
+            {
+              "href": "/produkter/ram-board/golvskydd"
+            },
+            {
+              "href": "/produkter/ram-board/karmskydd"
+            },
+            {
+              "href": "/produkter/ram-board/seam-tape"
+            }
+          ]
+        }
+      ]
+    },
+    "en": {
+      "title": "Vapor-Cure",
+      "h1": "Ram Board Vapor-Cure",
+      "description": "Breathable (vapour permeable) seam tape for Ram Board floor protection. 76 mm x 50 m. Seam tape, Durable, Breathable (vapour permeable).",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Ram Board",
+          "href": "/produkter/ram-board",
+          "width": 250,
+          "height": 103,
+          "src": "/assets/img/ram-board-1.webp",
+          "maxWidth": 300
+        },
+        {
+          "type": "image",
+          "alt": "Ram Board Vapor-Cure",
+          "src": "/assets/img/ram-board-vapor-cure-main.webp",
+          "width": 500,
+          "height": 500
+        },
+        {
+          "type": "text",
+          "html": "Breathable (vapour permeable) seam tape for Ram Board floor protection."
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Size: 76 mm x 50 m",
+            "Weight: 0.35 kg",
+            "Seam tape",
+            "Durable",
+            "Breathable (vapour permeable)"
+          ]
+        },
+        {
+          "type": "text",
+          "html": "<strong>Note: do not tape directly onto the floor.</strong>"
+        },
+        {
+          "type": "carousel",
+          "autoplay": false,
+          "items": [
+            {
+              "src": "/assets/img/ram-board-vapor-cure-1.webp",
+              "alt": "Ram Board Vapor-Cure, pictures 1",
+              "width": 233,
+              "height": 195
+            },
+            {
+              "src": "/assets/img/ram-board-vapor-cure-2.webp",
+              "alt": "Ram Board Vapor-Cure, pictures 2",
+              "width": 150,
+              "height": 150
+            },
+            {
+              "src": "/assets/img/ram-board-vapor-cure-3.webp",
+              "alt": "Ram Board Vapor-Cure, pictures 3",
+              "width": 300,
+              "height": 300
+            }
+          ]
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Brochure (in Swedish)",
+          "href": "/assets/docs/ram-board-broschyr-svenska.pdf"
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Contact us</a> for price, delivery time and more information."
+        },
+        {
+          "type": "related",
+          "title": "See also",
+          "items": [
+            {
+              "href": "/produkter/ram-board/golvskydd"
+            },
+            {
+              "href": "/produkter/ram-board/karmskydd"
+            },
+            {
+              "href": "/produkter/ram-board/seam-tape"
+            }
+          ]
+        }
+      ]
+    },
+    "es": {
+      "title": "Vapor-Cure",
+      "h1": "Ram Board Vapor-Cure",
+      "description": "Cinta para uniones permeable al vapor para el protector de suelos Ram Board. 76 mm x 50 m. Cinta para uniones, Resistente, Permeable al vapor.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Ram Board",
+          "href": "/produkter/ram-board",
+          "width": 250,
+          "height": 103,
+          "src": "/assets/img/ram-board-1.webp",
+          "maxWidth": 300
+        },
+        {
+          "type": "image",
+          "alt": "Ram Board Vapor-Cure",
+          "src": "/assets/img/ram-board-vapor-cure-main.webp",
+          "width": 500,
+          "height": 500
+        },
+        {
+          "type": "text",
+          "html": "Cinta para uniones permeable al vapor para el protector de suelos Ram Board."
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Medidas: 76 mm x 50 m",
+            "Peso: 0,35 kg",
+            "Cinta para uniones",
+            "Resistente",
+            "Permeable al vapor"
+          ]
+        },
+        {
+          "type": "text",
+          "html": "<strong>AtenciÃ³n: no pegar directamente sobre el suelo.</strong>"
+        },
+        {
+          "type": "carousel",
+          "autoplay": false,
+          "items": [
+            {
+              "src": "/assets/img/ram-board-vapor-cure-1.webp",
+              "alt": "Ram Board Vapor-Cure, imã¡genes 1",
+              "width": 233,
+              "height": 195
+            },
+            {
+              "src": "/assets/img/ram-board-vapor-cure-2.webp",
+              "alt": "Ram Board Vapor-Cure, imã¡genes 2",
+              "width": 150,
+              "height": 150
+            },
+            {
+              "src": "/assets/img/ram-board-vapor-cure-3.webp",
+              "alt": "Ram Board Vapor-Cure, imã¡genes 3",
+              "width": 300,
+              "height": 300
+            }
+          ]
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Folleto (en sueco)",
+          "href": "/assets/docs/ram-board-broschyr-svenska.pdf"
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">ContÃ¡ctenos</a> para precio, plazo de entrega y mÃ¡s informaciÃ³n."
+        },
+        {
+          "type": "related",
+          "title": "VÃ©ase tambiÃ©n",
+          "items": [
+            {
+              "href": "/produkter/ram-board/golvskydd"
+            },
+            {
+              "href": "/produkter/ram-board/karmskydd"
+            },
+            {
+              "href": "/produkter/ram-board/seam-tape"
+            }
+          ]
+        }
+      ]
+    },
+    "no": {
+      "title": "Vapor-Cure",
+      "h1": "Ram Board Vapor-Cure",
+      "description": "DiffusjonsÃ¥pen skjÃ¸tetape for Ram Board gulvbeskyttelse. 76 mm x 50 m. SkjÃ¸tetape, Slitesterk, DiffusjonsÃ¥pen.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Ram Board",
+          "href": "/produkter/ram-board",
+          "width": 250,
+          "height": 103,
+          "src": "/assets/img/ram-board-1.webp",
+          "maxWidth": 300
+        },
+        {
+          "type": "image",
+          "alt": "Ram Board Vapor-Cure",
+          "src": "/assets/img/ram-board-vapor-cure-main.webp",
+          "width": 500,
+          "height": 500
+        },
+        {
+          "type": "text",
+          "html": "DiffusjonsÃ¥pen skjÃ¸tetape for Ram Board gulvbeskyttelse."
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "MÃ¥l: 76 mm x 50 m",
+            "Vekt: 0,35 kg",
+            "SkjÃ¸tetape",
+            "Slitesterk",
+            "DiffusjonsÃ¥pen"
+          ]
+        },
+        {
+          "type": "text",
+          "html": "<strong>Obs! Skal ikke teipes direkte pÃ¥ gulvet.</strong>"
+        },
+        {
+          "type": "carousel",
+          "autoplay": false,
+          "items": [
+            {
+              "src": "/assets/img/ram-board-vapor-cure-1.webp",
+              "alt": "Ram Board Vapor-Cure, bilder 1",
+              "width": 233,
+              "height": 195
+            },
+            {
+              "src": "/assets/img/ram-board-vapor-cure-2.webp",
+              "alt": "Ram Board Vapor-Cure, bilder 2",
+              "width": 150,
+              "height": 150
+            },
+            {
+              "src": "/assets/img/ram-board-vapor-cure-3.webp",
+              "alt": "Ram Board Vapor-Cure, bilder 3",
+              "width": 300,
+              "height": 300
+            }
+          ]
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Brosjyre (pÃ¥ svensk)",
+          "href": "/assets/docs/ram-board-broschyr-svenska.pdf"
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Kontakt oss</a> for pris, leveringstid og mer informasjon."
+        },
+        {
+          "type": "related",
+          "title": "Se ogsÃ¥",
+          "items": [
+            {
+              "href": "/produkter/ram-board/golvskydd"
+            },
+            {
+              "href": "/produkter/ram-board/karmskydd"
+            },
+            {
+              "href": "/produkter/ram-board/seam-tape"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

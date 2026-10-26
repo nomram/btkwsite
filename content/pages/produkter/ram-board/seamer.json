@@ -1,0 +1,353 @@
+{
+  "path": "/produkter/ram-board/seamer",
+  "updated": "2026-10-26",
+  "template": "product",
+  "order": 5,
+  "published": true,
+  "i18n": {
+    "sv": {
+      "title": "Seamer",
+      "h1": "Ram Board Seamer",
+      "description": "Skarvrullare fÃ¶r att lÃ¤gga tejp pÃ¥ skarvarna i golvskyddet. 116 Ã— 20 Ã— 15 cm. Skarvrullare, 60 % snabbare installation.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Ram Board",
+          "href": "/produkter/ram-board",
+          "width": 250,
+          "height": 103,
+          "src": "/assets/img/ram-board-1.webp",
+          "maxWidth": 300
+        },
+        {
+          "type": "image",
+          "alt": "Ram Board Seamer",
+          "src": "/assets/img/ram-board-seamer-main.webp",
+          "width": 534,
+          "height": 460
+        },
+        {
+          "type": "text",
+          "html": "Skarvrullare fÃ¶r att lÃ¤gga tejp pÃ¥ skarvarna i golvskyddet."
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "MÃ¥tt: 116 Ã— 20 Ã— 15 cm",
+            "Vikt: 4,5 kg",
+            "Skarvrullare",
+            "60 % snabbare installation"
+          ]
+        },
+        {
+          "type": "carousel",
+          "autoplay": false,
+          "items": [
+            {
+              "src": "/assets/img/ram-board-seamer-1.webp",
+              "alt": "Ram Board Seamer, bilder 1",
+              "width": 300,
+              "height": 300
+            },
+            {
+              "src": "/assets/img/ram-board-seamer-2.webp",
+              "alt": "Ram Board Seamer, bilder 2",
+              "width": 233,
+              "height": 195
+            },
+            {
+              "src": "/assets/img/ram-board-seamer-3.webp",
+              "alt": "Ram Board Seamer, bilder 3",
+              "width": 300,
+              "height": 300
+            }
+          ]
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Broschyr (pÃ¥ svenska)",
+          "href": "/assets/docs/ram-board-broschyr-svenska.pdf"
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Kontakta oss</a> fÃ¶r pris, leveranstid och mer information."
+        },
+        {
+          "type": "related",
+          "title": "Se Ã¤ven",
+          "items": [
+            {
+              "href": "/produkter/ram-board/golvskydd"
+            },
+            {
+              "href": "/produkter/ram-board/karmskydd"
+            },
+            {
+              "href": "/produkter/ram-board/seam-tape"
+            }
+          ]
+        }
+      ]
+    },
+    "en": {
+      "title": "Seamer",
+      "h1": "Ram Board Seamer",
+      "description": "Seam roller for applying tape to the seams of the floor protection. 116 Ã— 20 Ã— 15 cm. Seam roller, 60 % faster installation.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Ram Board",
+          "href": "/produkter/ram-board",
+          "width": 250,
+          "height": 103,
+          "src": "/assets/img/ram-board-1.webp",
+          "maxWidth": 300
+        },
+        {
+          "type": "image",
+          "alt": "Ram Board Seamer",
+          "src": "/assets/img/ram-board-seamer-main.webp",
+          "width": 534,
+          "height": 460
+        },
+        {
+          "type": "text",
+          "html": "Seam roller for applying tape to the seams of the floor protection."
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Size: 116 Ã— 20 Ã— 15 cm",
+            "Weight: 4.5 kg",
+            "Seam roller",
+            "60 % faster installation"
+          ]
+        },
+        {
+          "type": "carousel",
+          "autoplay": false,
+          "items": [
+            {
+              "src": "/assets/img/ram-board-seamer-1.webp",
+              "alt": "Ram Board Seamer, pictures 1",
+              "width": 300,
+              "height": 300
+            },
+            {
+              "src": "/assets/img/ram-board-seamer-2.webp",
+              "alt": "Ram Board Seamer, pictures 2",
+              "width": 233,
+              "height": 195
+            },
+            {
+              "src": "/assets/img/ram-board-seamer-3.webp",
+              "alt": "Ram Board Seamer, pictures 3",
+              "width": 300,
+              "height": 300
+            }
+          ]
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Brochure (in Swedish)",
+          "href": "/assets/docs/ram-board-broschyr-svenska.pdf"
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Contact us</a> for price, delivery time and more information."
+        },
+        {
+          "type": "related",
+          "title": "See also",
+          "items": [
+            {
+              "href": "/produkter/ram-board/golvskydd"
+            },
+            {
+              "href": "/produkter/ram-board/karmskydd"
+            },
+            {
+              "href": "/produkter/ram-board/seam-tape"
+            }
+          ]
+        }
+      ]
+    },
+    "es": {
+      "title": "Seamer",
+      "h1": "Ram Board Seamer",
+      "description": "Rodillo para colocar la cinta en las uniones del protector de suelos. 116 Ã— 20 Ã— 15 cm. Rodillo para uniones, InstalaciÃ³n un 60 % mÃ¡s rÃ¡pida.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Ram Board",
+          "href": "/produkter/ram-board",
+          "width": 250,
+          "height": 103,
+          "src": "/assets/img/ram-board-1.webp",
+          "maxWidth": 300
+        },
+        {
+          "type": "image",
+          "alt": "Ram Board Seamer",
+          "src": "/assets/img/ram-board-seamer-main.webp",
+          "width": 534,
+          "height": 460
+        },
+        {
+          "type": "text",
+          "html": "Rodillo para colocar la cinta en las uniones del protector de suelos."
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Medidas: 116 Ã— 20 Ã— 15 cm",
+            "Peso: 4,5 kg",
+            "Rodillo para uniones",
+            "InstalaciÃ³n un 60 % mÃ¡s rÃ¡pida"
+          ]
+        },
+        {
+          "type": "carousel",
+          "autoplay": false,
+          "items": [
+            {
+              "src": "/assets/img/ram-board-seamer-1.webp",
+              "alt": "Ram Board Seamer, imã¡genes 1",
+              "width": 300,
+              "height": 300
+            },
+            {
+              "src": "/assets/img/ram-board-seamer-2.webp",
+              "alt": "Ram Board Seamer, imã¡genes 2",
+              "width": 233,
+              "height": 195
+            },
+            {
+              "src": "/assets/img/ram-board-seamer-3.webp",
+              "alt": "Ram Board Seamer, imã¡genes 3",
+              "width": 300,
+              "height": 300
+            }
+          ]
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Folleto (en sueco)",
+          "href": "/assets/docs/ram-board-broschyr-svenska.pdf"
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">ContÃ¡ctenos</a> para precio, plazo de entrega y mÃ¡s informaciÃ³n."
+        },
+        {
+          "type": "related",
+          "title": "VÃ©ase tambiÃ©n",
+          "items": [
+            {
+              "href": "/produkter/ram-board/golvskydd"
+            },
+            {
+              "href": "/produkter/ram-board/karmskydd"
+            },
+            {
+              "href": "/produkter/ram-board/seam-tape"
+            }
+          ]
+        }
+      ]
+    },
+    "no": {
+      "title": "Seamer",
+      "h1": "Ram Board Seamer",
+      "description": "SkjÃ¸terulle for Ã¥ legge tape pÃ¥ skjÃ¸tene i gulvbeskyttelsen. 116 Ã— 20 Ã— 15 cm. SkjÃ¸terulle, 60 % raskere montering.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Ram Board",
+          "href": "/produkter/ram-board",
+          "width": 250,
+          "height": 103,
+          "src": "/assets/img/ram-board-1.webp",
+          "maxWidth": 300
+        },
+        {
+          "type": "image",
+          "alt": "Ram Board Seamer",
+          "src": "/assets/img/ram-board-seamer-main.webp",
+          "width": 534,
+          "height": 460
+        },
+        {
+          "type": "text",
+          "html": "SkjÃ¸terulle for Ã¥ legge tape pÃ¥ skjÃ¸tene i gulvbeskyttelsen."
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "MÃ¥l: 116 Ã— 20 Ã— 15 cm",
+            "Vekt: 4,5 kg",
+            "SkjÃ¸terulle",
+            "60 % raskere montering"
+          ]
+        },
+        {
+          "type": "carousel",
+          "autoplay": false,
+          "items": [
+            {
+              "src": "/assets/img/ram-board-seamer-1.webp",
+              "alt": "Ram Board Seamer, bilder 1",
+              "width": 300,
+              "height": 300
+            },
+            {
+              "src": "/assets/img/ram-board-seamer-2.webp",
+              "alt": "Ram Board Seamer, bilder 2",
+              "width": 233,
+              "height": 195
+            },
+            {
+              "src": "/assets/img/ram-board-seamer-3.webp",
+              "alt": "Ram Board Seamer, bilder 3",
+              "width": 300,
+              "height": 300
+            }
+          ]
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Brosjyre (pÃ¥ svensk)",
+          "href": "/assets/docs/ram-board-broschyr-svenska.pdf"
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Kontakt oss</a> for pris, leveringstid og mer informasjon."
+        },
+        {
+          "type": "related",
+          "title": "Se ogsÃ¥",
+          "items": [
+            {
+              "href": "/produkter/ram-board/golvskydd"
+            },
+            {
+              "href": "/produkter/ram-board/karmskydd"
+            },
+            {
+              "href": "/produkter/ram-board/seam-tape"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

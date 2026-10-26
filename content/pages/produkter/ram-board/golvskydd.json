@@ -1,0 +1,369 @@
+{
+  "path": "/produkter/ram-board/golvskydd",
+  "updated": "2026-10-26",
+  "template": "product",
+  "order": 0,
+  "published": true,
+  "i18n": {
+    "sv": {
+      "title": "Golvskydd",
+      "h1": "Ram Board Golvskydd",
+      "description": "Golvskydd frÃ¥n Ram Board pÃ¥ rulle, gjort av 100 % Ã¥tervunnet material och tillverkat fÃ¶r Ã¥teranvÃ¤ndning. 1 mm x 965 mm x 30,48 m (29,4 mÂ²). Ã…teranvÃ¤ndbar, DiffusionsÃ¶ppen, Vikbar, Vatten- oc",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Ram Board",
+          "href": "/produkter/ram-board",
+          "width": 250,
+          "height": 103,
+          "src": "/assets/img/ram-board-1.webp",
+          "maxWidth": 300
+        },
+        {
+          "type": "image",
+          "alt": "Ram Board Golvskydd",
+          "src": "/assets/img/ram-board-golvskydd-main.webp",
+          "width": 429,
+          "height": 496
+        },
+        {
+          "type": "text",
+          "html": "Golvskydd frÃ¥n Ram Board pÃ¥ rulle, gjort av 100 % Ã¥tervunnet material och tillverkat fÃ¶r Ã¥teranvÃ¤ndning."
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "MÃ¥tt: 1 mm x 965 mm x 30,48 m (29,4 mÂ²)",
+            "Vikt: 22 kg",
+            "Ã…teranvÃ¤ndbar",
+            "DiffusionsÃ¶ppen",
+            "Vikbar",
+            "Vatten- och smutsavvisande",
+            "TrucktÃ¥lig",
+            "100 % Ã¥tervunnet material"
+          ]
+        },
+        {
+          "type": "carousel",
+          "autoplay": false,
+          "items": [
+            {
+              "src": "/assets/img/ram-board-golvskydd-1.webp",
+              "alt": "Ram Board Golvskydd, bilder 1",
+              "width": 300,
+              "height": 300
+            },
+            {
+              "src": "/assets/img/ram-board-golvskydd-2.webp",
+              "alt": "Ram Board Golvskydd, bilder 2",
+              "width": 300,
+              "height": 201
+            },
+            {
+              "src": "/assets/img/ram-board-golvskydd-3.webp",
+              "alt": "Ram Board Golvskydd, bilder 3",
+              "width": 300,
+              "height": 300
+            }
+          ]
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Broschyr (pÃ¥ svenska)",
+          "href": "/assets/docs/ram-board-broschyr-svenska.pdf"
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Kontakta oss</a> fÃ¶r pris, leveranstid och mer information."
+        },
+        {
+          "type": "related",
+          "title": "Se Ã¤ven",
+          "items": [
+            {
+              "href": "/produkter/ram-board/karmskydd"
+            },
+            {
+              "href": "/produkter/ram-board/seam-tape"
+            },
+            {
+              "href": "/produkter/ram-board/edge-tape"
+            }
+          ]
+        }
+      ]
+    },
+    "en": {
+      "title": "Floor protection",
+      "h1": "Ram Board Floor protection",
+      "description": "Ram Board floor protection on a roll, made of 100 % recycled material and designed to be reused. 1 mm x 965 mm x 30.48 m (29.4 mÂ²). Reusable, Breathable (vapour permeable), Foldable, Water and dirt r",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Ram Board",
+          "href": "/produkter/ram-board",
+          "width": 250,
+          "height": 103,
+          "src": "/assets/img/ram-board-1.webp",
+          "maxWidth": 300
+        },
+        {
+          "type": "image",
+          "alt": "Ram Board Floor protection",
+          "src": "/assets/img/ram-board-golvskydd-main.webp",
+          "width": 429,
+          "height": 496
+        },
+        {
+          "type": "text",
+          "html": "Ram Board floor protection on a roll, made of 100 % recycled material and designed to be reused."
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Size: 1 mm x 965 mm x 30.48 m (29.4 mÂ²)",
+            "Weight: 22 kg",
+            "Reusable",
+            "Breathable (vapour permeable)",
+            "Foldable",
+            "Water and dirt repellent",
+            "Forklift-proof",
+            "100 % recycled material"
+          ]
+        },
+        {
+          "type": "carousel",
+          "autoplay": false,
+          "items": [
+            {
+              "src": "/assets/img/ram-board-golvskydd-1.webp",
+              "alt": "Ram Board Floor protection, pictures 1",
+              "width": 300,
+              "height": 300
+            },
+            {
+              "src": "/assets/img/ram-board-golvskydd-2.webp",
+              "alt": "Ram Board Floor protection, pictures 2",
+              "width": 300,
+              "height": 201
+            },
+            {
+              "src": "/assets/img/ram-board-golvskydd-3.webp",
+              "alt": "Ram Board Floor protection, pictures 3",
+              "width": 300,
+              "height": 300
+            }
+          ]
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Brochure (in Swedish)",
+          "href": "/assets/docs/ram-board-broschyr-svenska.pdf"
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Contact us</a> for price, delivery time and more information."
+        },
+        {
+          "type": "related",
+          "title": "See also",
+          "items": [
+            {
+              "href": "/produkter/ram-board/karmskydd"
+            },
+            {
+              "href": "/produkter/ram-board/seam-tape"
+            },
+            {
+              "href": "/produkter/ram-board/edge-tape"
+            }
+          ]
+        }
+      ]
+    },
+    "es": {
+      "title": "ProtecciÃ³n de suelos",
+      "h1": "Ram Board ProtecciÃ³n de suelos",
+      "description": "ProtecciÃ³n de suelos Ram Board en rollo, de material 100 % reciclado y pensada para reutilizarse. 1 mm x 965 mm x 30,48 m (29,4 mÂ²). Reutilizable, Permeable al vapor, Plegable, Repele el agua y la s",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Ram Board",
+          "href": "/produkter/ram-board",
+          "width": 250,
+          "height": 103,
+          "src": "/assets/img/ram-board-1.webp",
+          "maxWidth": 300
+        },
+        {
+          "type": "image",
+          "alt": "Ram Board ProtecciÃ³n de suelos",
+          "src": "/assets/img/ram-board-golvskydd-main.webp",
+          "width": 429,
+          "height": 496
+        },
+        {
+          "type": "text",
+          "html": "ProtecciÃ³n de suelos Ram Board en rollo, de material 100 % reciclado y pensada para reutilizarse."
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Medidas: 1 mm x 965 mm x 30,48 m (29,4 mÂ²)",
+            "Peso: 22 kg",
+            "Reutilizable",
+            "Permeable al vapor",
+            "Plegable",
+            "Repele el agua y la suciedad",
+            "Resistente a carretillas",
+            "100 % material reciclado"
+          ]
+        },
+        {
+          "type": "carousel",
+          "autoplay": false,
+          "items": [
+            {
+              "src": "/assets/img/ram-board-golvskydd-1.webp",
+              "alt": "Ram Board ProtecciÃ³n de suelos, imã¡genes 1",
+              "width": 300,
+              "height": 300
+            },
+            {
+              "src": "/assets/img/ram-board-golvskydd-2.webp",
+              "alt": "Ram Board ProtecciÃ³n de suelos, imã¡genes 2",
+              "width": 300,
+              "height": 201
+            },
+            {
+              "src": "/assets/img/ram-board-golvskydd-3.webp",
+              "alt": "Ram Board ProtecciÃ³n de suelos, imã¡genes 3",
+              "width": 300,
+              "height": 300
+            }
+          ]
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Folleto (en sueco)",
+          "href": "/assets/docs/ram-board-broschyr-svenska.pdf"
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">ContÃ¡ctenos</a> para precio, plazo de entrega y mÃ¡s informaciÃ³n."
+        },
+        {
+          "type": "related",
+          "title": "VÃ©ase tambiÃ©n",
+          "items": [
+            {
+              "href": "/produkter/ram-board/karmskydd"
+            },
+            {
+              "href": "/produkter/ram-board/seam-tape"
+            },
+            {
+              "href": "/produkter/ram-board/edge-tape"
+            }
+          ]
+        }
+      ]
+    },
+    "no": {
+      "title": "Gulvbeskyttelse",
+      "h1": "Ram Board Gulvbeskyttelse",
+      "description": "Gulvbeskyttelse fra Ram Board pÃ¥ rull, laget av 100 % resirkulert materiale og laget for gjenbruk. 1 mm x 965 mm x 30,48 m (29,4 mÂ²). Gjenbrukbar, DiffusjonsÃ¥pen, Foldbar, Vann- og smussavvisende, ",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Ram Board",
+          "href": "/produkter/ram-board",
+          "width": 250,
+          "height": 103,
+          "src": "/assets/img/ram-board-1.webp",
+          "maxWidth": 300
+        },
+        {
+          "type": "image",
+          "alt": "Ram Board Gulvbeskyttelse",
+          "src": "/assets/img/ram-board-golvskydd-main.webp",
+          "width": 429,
+          "height": 496
+        },
+        {
+          "type": "text",
+          "html": "Gulvbeskyttelse fra Ram Board pÃ¥ rull, laget av 100 % resirkulert materiale og laget for gjenbruk."
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "MÃ¥l: 1 mm x 965 mm x 30,48 m (29,4 mÂ²)",
+            "Vekt: 22 kg",
+            "Gjenbrukbar",
+            "DiffusjonsÃ¥pen",
+            "Foldbar",
+            "Vann- og smussavvisende",
+            "TrucktÃ¥lig",
+            "100 % resirkulert materiale"
+          ]
+        },
+        {
+          "type": "carousel",
+          "autoplay": false,
+          "items": [
+            {
+              "src": "/assets/img/ram-board-golvskydd-1.webp",
+              "alt": "Ram Board Gulvbeskyttelse, bilder 1",
+              "width": 300,
+              "height": 300
+            },
+            {
+              "src": "/assets/img/ram-board-golvskydd-2.webp",
+              "alt": "Ram Board Gulvbeskyttelse, bilder 2",
+              "width": 300,
+              "height": 201
+            },
+            {
+              "src": "/assets/img/ram-board-golvskydd-3.webp",
+              "alt": "Ram Board Gulvbeskyttelse, bilder 3",
+              "width": 300,
+              "height": 300
+            }
+          ]
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Brosjyre (pÃ¥ svensk)",
+          "href": "/assets/docs/ram-board-broschyr-svenska.pdf"
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Kontakt oss</a> for pris, leveringstid og mer informasjon."
+        },
+        {
+          "type": "related",
+          "title": "Se ogsÃ¥",
+          "items": [
+            {
+              "href": "/produkter/ram-board/karmskydd"
+            },
+            {
+              "href": "/produkter/ram-board/seam-tape"
+            },
+            {
+              "href": "/produkter/ram-board/edge-tape"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

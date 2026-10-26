@@ -38,11 +38,11 @@ export function renderPerfChart(ctx, b, editFld = () => "", imgTag = () => "") {
   }
   const summary = series.map((s) => { const top = Math.max(...s.points.map((p) => p[1])), maxX = Math.max(...s.points.map((p) => p[0])); return `${s.name}: ${fix(top)} ${y.unit}, ${fix(maxX)} ${x.unit}`; }).join("; ");
   return `<figure class="pc" data-pc>${b.title ? `<figcaption class="pc__title"${editFld("title")}>${esc(b.title)}</figcaption>` : ""}${chips}` +
-    `<svg class="pc__svg" viewBox="0 0 ${W} ${H}" role="img" tabindex="0" aria-label="${esc((b.title || "") + (summary ? ". " + summary : ""))}">` +
+    `<div class="pc__plot" style="--rows:${series.length}"><svg class="pc__svg" viewBox="0 0 ${W} ${H}" role="img" tabindex="0" aria-label="${esc((b.title || "") + (summary ? ". " + summary : ""))}">` +
     `<g class="pc__grid">${grid}</g>${areas}<g class="pc__axis"><line x1="${M.l}" y1="${M.t}" x2="${M.l}" y2="${M.t + PH}"/><line x1="${M.l}" y1="${M.t + PH}" x2="${M.l + PW}" y2="${M.t + PH}"/></g>` +
     `<g class="pc__ticks">${labels}</g><text class="pc__ax" x="${M.l + PW / 2}" y="${H - 6}" text-anchor="middle">${esc((b.xName || "") + (x.unit ? " [" + x.unit + "]" : ""))}</text>` +
     `<text class="pc__ax" transform="translate(12 ${M.t + PH / 2}) rotate(-90)" text-anchor="middle">${esc((b.yName || "") + (y.unit ? " [" + y.unit + "]" : ""))}</text>` +
-    `${lines}<line class="pc__cursor" x1="-20" y1="${M.t}" x2="-20" y2="${M.t + PH}"/>${dots}</svg>` +
-    `<div class="pc__read" aria-live="polite">${b.hint ? `<span class="pc__hint">${esc(b.hint)}</span>` : ""}</div>` + alt +
+    `${lines}<line class="pc__cursor" x1="-20" y1="${M.t}" x2="-20" y2="${M.t + PH}"/>${dots}</svg><div class="pc__tip" hidden aria-hidden="true"></div></div>` +
+    `<div class="pc__read">${b.hint ? `<span class="pc__hint">${esc(b.hint)}</span>` : ""}<span class="pc__sr sr-only" aria-live="polite"></span></div>` + alt +
     `<script type="application/json" class="pc__data">${JSON.stringify(data).replace(/</g, "\\u003c")}</script></figure>`;
 }

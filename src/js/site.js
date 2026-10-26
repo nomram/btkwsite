@@ -716,7 +716,7 @@
     var node = box.querySelector(".pc__data"), svg = box.querySelector(".pc__svg"), read = box.querySelector(".pc__read");
     if (!node || !svg) return;
     var d; try { d = JSON.parse(node.textContent); } catch (e) { return; }
-    var g = d.geo, hint = read.innerHTML, on = d.series.map(function () { return true; }), pos = null;
+    var g = d.geo, plot = box.querySelector(".pc__plot"), tip = box.querySelector(".pc__tip"), sr = box.querySelector(".pc__sr"), on = d.series.map(function () { return true; }), pos = null;
     var cursor = svg.querySelector(".pc__cursor"), dots = [].slice.call(svg.querySelectorAll(".pc__dot")), lines = [].slice.call(svg.querySelectorAll(".pc__line"));
     var chips = [].slice.call(box.querySelectorAll(".pc__chip"));
     function num(v) { return (Math.round(v * 10) / 10).toString().replace(".", ","); }
@@ -736,17 +736,23 @@
     function show(px) {
       pos = Math.max(d.x.min, Math.min(d.x.max, px));
       cursor.setAttribute("x1", xOf(pos)); cursor.setAttribute("x2", xOf(pos));
-      var out = '<span class="pc__at">' + num(pos) + " " + d.x.unit + '</span><ul class="pc__list">';
+      var out = '<span class="pc__at">' + num(pos) + " " + d.x.unit + '</span><ul class="pc__list">', spoken = num(pos) + " " + d.x.unit;
       d.series.forEach(function (s, i) {
         var y = on[i] ? at(s, pos) : null;
         if (y === null) { dots[i].setAttribute("cx", -20); dots[i].setAttribute("cy", -20); }
         else { dots[i].setAttribute("cx", xOf(pos)); dots[i].setAttribute("cy", yOf(y)); }
+        if (on[i]) spoken += ", " + (d.series.length > 1 ? s.n : d.y.name) + " " + (y === null ? "-" : num(y) + " " + d.y.unit);
         if (on[i]) out += '<li><i style="background:' + s.c + '"></i><span class="pc__n">' + (d.series.length > 1 ? s.n : d.y.name) + '</span><b class="pc__v">' + (y === null ? "-" : num(y) + " " + d.y.unit) + "</b></li>";
       });
       out += "</ul>";
-      read.innerHTML = out;
+      // the values float inside the chart, beside the cursor, so they stay in view however tall the chart is
+      tip.innerHTML = out; tip.hidden = false;
+      var pr = plot.getBoundingClientRect(), cx = xOf(pos) / g.W * pr.width, tw = tip.offsetWidth;
+      tip.style.left = Math.max(4, Math.min(pr.width - tw - 4, cx + 14 + tw > pr.width ? cx - tw - 14 : cx + 14)) + "px";
+      tip.style.top = (g.mt / g.H * pr.height + 8) + "px";
+      sr.textContent = spoken;
     }
-    function clear() { pos = null; cursor.setAttribute("x1", -20); cursor.setAttribute("x2", -20); dots.forEach(function (c) { c.setAttribute("cx", -20); c.setAttribute("cy", -20); }); read.innerHTML = hint; }
+    function clear() { pos = null; cursor.setAttribute("x1", -20); cursor.setAttribute("x2", -20); dots.forEach(function (c) { c.setAttribute("cx", -20); c.setAttribute("cy", -20); }); tip.hidden = true; sr.textContent = ""; }
     function fromEvent(e) { var r = svg.getBoundingClientRect(), vx = (e.clientX - r.left) / r.width * g.W; return d.x.min + (vx - g.ml) / g.pw * (d.x.max - d.x.min); }
     svg.addEventListener("pointermove", function (e) { if (e.pointerType === "touch" && !(e.buttons & 1)) return; show(fromEvent(e)); });
     svg.addEventListener("pointerdown", function (e) { show(fromEvent(e)); });

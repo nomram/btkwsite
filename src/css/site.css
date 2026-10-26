@@ -953,15 +953,17 @@ h2[id], h3[id] { scroll-margin-top: 5rem; }
 .pc__area { opacity: .35; }
 .pc__cursor { stroke: var(--muted); stroke-width: 1; stroke-dasharray: 3 3; }
 .pc__dot { stroke: #fff; stroke-width: 1.6; }
-.pc__read { min-height: 3.4rem; padding-top: .6rem; font-size: .9rem; }
-.pc__hint { color: var(--muted); font-size: .84rem; }
-.pc__at { display: block; margin-bottom: .25rem; font-weight: 700; font-size: .95rem; }
-.pc__list { display: flex; flex-wrap: wrap; align-items: center; margin: 0; padding: 0; list-style: none; }
-.pc__list li { display: inline-flex; align-items: center; gap: .45rem; padding: .15rem 0; }
-.pc__list li + li::before { content: "•"; margin: 0 .8rem; color: var(--muted); font-size: .7em; }
-.pc__list i { width: .65rem; height: .65rem; border-radius: 50%; flex: none; }
-.pc__n { color: var(--muted); }
-.pc__v { font-variant-numeric: tabular-nums; }
+.pc__plot { position: relative; }
+.pc__tip { position: absolute; z-index: 2; min-width: 8.5rem; padding: .5rem .7rem .55rem; border: 1px solid var(--line); border-radius: var(--radius); background: rgba(255, 255, 255, .96); box-shadow: 0 6px 20px -8px rgba(0, 0, 0, .35); font-size: .84rem; pointer-events: none; }
+.pc__tip[hidden] { display: none; }
+.pc__at { display: block; margin-bottom: .3rem; font-weight: 700; font-size: .9rem; }
+.pc__list { display: grid; grid-template-columns: auto auto auto; justify-content: start; align-items: center; column-gap: .5rem; row-gap: .25rem; margin: 0; padding: 0; list-style: none; }
+.pc__list li { display: contents; }
+.pc__list i { width: .65rem; height: .65rem; border-radius: 50%; }
+.pc__n { color: var(--muted); white-space: nowrap; }
+.pc__v { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.pc__read { padding-top: .5rem; }
+.pc__hint { color: var(--muted); font-size: .82rem; }
 .pc__alt { display: inline-block; margin: .5rem 0 0; padding: .25rem .1rem; font-size: .8rem; color: var(--muted); opacity: .75; text-decoration: underline; text-underline-offset: .2em; cursor: pointer; }
 .pc__alt:hover, .pc__alt:focus-visible { opacity: 1; color: var(--text); }
 .pc__origbox { margin-top: .6rem; }
@@ -971,13 +973,7 @@ h2[id], h3[id] { scroll-margin-top: 5rem; }
 .prose > .pc { max-width: 56rem; }
 @media (max-width: 640px) {
   .pc__ticks text, .pc__ax { font-size: 14px; } .pc__line { stroke-width: 3; }
-  .pc__read { display: grid; justify-content: center; text-align: left; }
-  .pc__hint { text-align: center; }
-  .pc__at { margin-bottom: .45rem; }
-  .pc__list { display: grid; grid-template-columns: auto auto auto; justify-content: start; align-items: center; column-gap: .55rem; row-gap: .4rem; }
-  .pc__list li { display: contents; }
-  .pc__list li + li::before { content: none; }
-  .pc__list .pc__v { text-align: right; }
+  .pc__hint { display: block; text-align: center; }
   .pc__alt { display: block; text-align: center; }
 }
 /* masts under the hole-size chart: the ones that take the machines for the chosen size light up */
@@ -1018,3 +1014,11 @@ h2[id], h3[id] { scroll-margin-top: 5rem; }
 .prose .stat p { margin: .25rem 0 0; }
 .prose .stat .stat__main { margin: 0; }
 .prose .stat .stat__meta { margin-top: .3rem; }
+/* phones: the values do not float over the small chart, they sit in a strip right above it (its height is reserved, so nothing jumps) */
+@media (max-width: 640px) {
+  .pc__plot { display: flex; flex-direction: column; }
+  .pc__tip, .pc__tip[hidden] { position: static; order: -1; display: block; min-width: 0; min-height: calc(1.9rem + var(--rows, 3) * 1.45rem); margin: 0 0 .5rem; padding: .5rem .7rem; border: 0; border-radius: var(--radius); background: #f5f2ee; box-shadow: none; font-size: .82rem; }
+  .pc__tip[hidden] { visibility: hidden; }
+  .pc__at { margin-bottom: .25rem; font-size: .88rem; }
+  .pc__list { column-gap: .45rem; row-gap: .2rem; }
+}

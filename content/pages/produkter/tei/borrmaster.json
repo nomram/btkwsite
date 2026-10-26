@@ -11,7 +11,7 @@
     "sv": {
       "title": "Borrmaster",
       "h1": "Borrmaster",
-      "description": "Borrmaster från TEI finns i olikastorleksklasser som främst beror på grävarens vikt samt den utrustning som sättas på masten. Klicka dig vidare på masterna…",
+      "description": "Borrmaster från TEI finns i olika storleksklasser som främst beror på grävarens vikt samt den utrustning som sättas på masten. Klicka dig vidare på masterna…",
       "blocks": [
         {
           "type": "image",
@@ -23,7 +23,7 @@
         },
         {
           "type": "text",
-          "html": "Borrmaster från TEI finns i olikastorleksklasser som främst beror på grävarens vikt samt den utrustning som sättas på masten. Klicka dig vidare på masterna nedan för att komma till broschyrerna och läsa mer."
+          "html": "Borrmaster från TEI finns i olika storleksklasser som främst beror på grävarens vikt samt den utrustning som sättas på masten. Klicka dig vidare på masterna nedan för att komma till broschyrerna och läsa mer."
         },
         {
           "type": "cards",
@@ -73,6 +73,40 @@
         {
           "type": "text",
           "html": "Alla master kan användas med rotations- eller topphammare."
+        },
+        {
+          "type": "text",
+          "html": "Utöver det finns också portabla master (man portable) dessa återfinns längre ner."
+        },
+        {
+          "type": "cards",
+          "items": [
+            {
+              "href": "/produkter/tei/borrmaster/mp260",
+              "label": "Läs mer",
+              "title": "MP260",
+              "image": "/assets/img/tei-borrmaster-mp260.webp",
+              "width": 405,
+              "height": 405,
+              "alt": "MP260 logotyp",
+              "text": "Portabel mast (man portable)"
+            },
+            {
+              "href": "/produkter/tei/borrmaster/mph",
+              "label": "Läs mer",
+              "title": "MPH",
+              "image": "/assets/img/tei-borrmaster-mph.webp",
+              "width": 504,
+              "height": 504,
+              "alt": "MPH logotyp",
+              "text": "Portabel mast (man portable)"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "De bärbara masterna skiljer sig åt i matning: MP260 har ACF-matning (aluminium, 6,7 kN), medan MPH har den nyare SCF5-matningen (11,1 kN och 2 m borrslag). MPH ger därför kraftigare matning och kan köras med både 300- och 200-serien av borrhuvuden.",
+          "feeds": true
         },
         {
           "type": "table",
@@ -216,40 +250,6 @@
           "type": "text",
           "html": "<small>Tabellens värden är TEI:s uppgifter per matningstyp; exakt dragkraft för din mast anges på respektive produktsida.</small>",
           "feeds": true
-        },
-        {
-          "type": "text",
-          "html": "Utöver det finns också portabla master (man portable) dessa återfinns längre ner."
-        },
-        {
-          "type": "cards",
-          "items": [
-            {
-              "href": "/produkter/tei/borrmaster/mp260",
-              "label": "Läs mer",
-              "title": "MP260",
-              "image": "/assets/img/tei-borrmaster-mp260.webp",
-              "width": 405,
-              "height": 405,
-              "alt": "MP260 logotyp",
-              "text": "Portabel mast (man portable)"
-            },
-            {
-              "href": "/produkter/tei/borrmaster/mph",
-              "label": "Läs mer",
-              "title": "MPH",
-              "image": "/assets/img/tei-borrmaster-mph.webp",
-              "width": 504,
-              "height": 504,
-              "alt": "MPH logotyp",
-              "text": "Portabel mast (man portable)"
-            }
-          ]
-        },
-        {
-          "type": "text",
-          "html": "De bärbara masterna skiljer sig åt i matning: MP260 har ACF-matning (aluminium, 6,7 kN), medan MPH har den nyare SCF5-matningen (11,1 kN och 2 m borrslag). MPH ger därför kraftigare matning och kan köras med både 300- och 200-serien av borrhuvuden.",
-          "feeds": true
         }
       ]
     },
@@ -318,6 +318,40 @@
         {
           "type": "text",
           "html": "All masts can be used with a rotary or top hammer drill."
+        },
+        {
+          "type": "text",
+          "html": "In addition there are also man-portable masts, which are found further down."
+        },
+        {
+          "type": "cards",
+          "items": [
+            {
+              "href": "/produkter/tei/borrmaster/mp260",
+              "label": "Läs mer",
+              "title": "MP260",
+              "image": "/assets/img/tei-borrmaster-mp260.webp",
+              "width": 405,
+              "height": 405,
+              "alt": "MP260 logo",
+              "text": "Man-portable mast"
+            },
+            {
+              "href": "/produkter/tei/borrmaster/mph",
+              "label": "Läs mer",
+              "title": "MPH",
+              "image": "/assets/img/tei-borrmaster-mph.webp",
+              "width": 504,
+              "height": 504,
+              "alt": "MPH logo",
+              "text": "Man-portable mast"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "The man-portable masts differ in their feed: MP260 has the ACF feed (aluminium, 6.7 kN), while MPH has the newer SCF5 feed (11.1 kN and 2 m stroke). MPH therefore gives a stronger feed and can run both the 300 and the 200 series of drill heads.",
+          "feeds": true
         },
         {
           "type": "table",
@@ -461,40 +495,6 @@
           "type": "text",
           "html": "<small>The values are TEI's figures per feed type; the exact pull-back of your mast is given on its product page.</small>",
           "feeds": true
-        },
-        {
-          "type": "text",
-          "html": "In addition there are also man-portable masts, which are found further down."
-        },
-        {
-          "type": "cards",
-          "items": [
-            {
-              "href": "/produkter/tei/borrmaster/mp260",
-              "label": "Läs mer",
-              "title": "MP260",
-              "image": "/assets/img/tei-borrmaster-mp260.webp",
-              "width": 405,
-              "height": 405,
-              "alt": "MP260 logo",
-              "text": "Man-portable mast"
-            },
-            {
-              "href": "/produkter/tei/borrmaster/mph",
-              "label": "Läs mer",
-              "title": "MPH",
-              "image": "/assets/img/tei-borrmaster-mph.webp",
-              "width": 504,
-              "height": 504,
-              "alt": "MPH logo",
-              "text": "Man-portable mast"
-            }
-          ]
-        },
-        {
-          "type": "text",
-          "html": "The man-portable masts differ in their feed: MP260 has the ACF feed (aluminium, 6.7 kN), while MPH has the newer SCF5 feed (11.1 kN and 2 m stroke). MPH therefore gives a stronger feed and can run both the 300 and the 200 series of drill heads.",
-          "feeds": true
         }
       ],
       "published": true
@@ -564,6 +564,40 @@
         {
           "type": "text",
           "html": "Todos los mástiles pueden usarse con cabezal de rotación o martillo en cabeza."
+        },
+        {
+          "type": "text",
+          "html": "Además, también hay mástiles portátiles (man portable), que se encuentran más abajo."
+        },
+        {
+          "type": "cards",
+          "items": [
+            {
+              "href": "/produkter/tei/borrmaster/mp260",
+              "label": "Läs mer",
+              "title": "MP260",
+              "image": "/assets/img/tei-borrmaster-mp260.webp",
+              "width": 405,
+              "height": 405,
+              "alt": "MP260 logotipo",
+              "text": "Mástil portátil (man portable)"
+            },
+            {
+              "href": "/produkter/tei/borrmaster/mph",
+              "label": "Läs mer",
+              "title": "MPH",
+              "image": "/assets/img/tei-borrmaster-mph.webp",
+              "width": 504,
+              "height": 504,
+              "alt": "MPH logotipo",
+              "text": "Mástil portátil (man portable)"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "Los mástiles portátiles se diferencian en el avance: el MP260 lleva avance ACF (aluminio, 6,7 kN), mientras que el MPH lleva el avance SCF5, más nuevo (11,1 kN y carrera de 2 m). Por eso el MPH ofrece un avance más potente y admite tanto la serie 300 como la serie 200 de cabezales.",
+          "feeds": true
         },
         {
           "type": "table",
@@ -707,40 +741,6 @@
           "type": "text",
           "html": "<small>Los valores son los datos de TEI por tipo de avance; la fuerza de tracción exacta de su mástil figura en la página del producto.</small>",
           "feeds": true
-        },
-        {
-          "type": "text",
-          "html": "Además, también hay mástiles portátiles (man portable), que se encuentran más abajo."
-        },
-        {
-          "type": "cards",
-          "items": [
-            {
-              "href": "/produkter/tei/borrmaster/mp260",
-              "label": "Läs mer",
-              "title": "MP260",
-              "image": "/assets/img/tei-borrmaster-mp260.webp",
-              "width": 405,
-              "height": 405,
-              "alt": "MP260 logotipo",
-              "text": "Mástil portátil (man portable)"
-            },
-            {
-              "href": "/produkter/tei/borrmaster/mph",
-              "label": "Läs mer",
-              "title": "MPH",
-              "image": "/assets/img/tei-borrmaster-mph.webp",
-              "width": 504,
-              "height": 504,
-              "alt": "MPH logotipo",
-              "text": "Mástil portátil (man portable)"
-            }
-          ]
-        },
-        {
-          "type": "text",
-          "html": "Los mástiles portátiles se diferencian en el avance: el MP260 lleva avance ACF (aluminio, 6,7 kN), mientras que el MPH lleva el avance SCF5, más nuevo (11,1 kN y carrera de 2 m). Por eso el MPH ofrece un avance más potente y admite tanto la serie 300 como la serie 200 de cabezales.",
-          "feeds": true
         }
       ],
       "published": true
@@ -810,6 +810,40 @@
         {
           "type": "text",
           "html": "Alle master kan brukes med rotasjons- eller topphammer."
+        },
+        {
+          "type": "text",
+          "html": "I tillegg finnes også portable master (man portable), som du finner lenger ned."
+        },
+        {
+          "type": "cards",
+          "items": [
+            {
+              "href": "/produkter/tei/borrmaster/mp260",
+              "label": "Läs mer",
+              "title": "MP260",
+              "image": "/assets/img/tei-borrmaster-mp260.webp",
+              "width": 405,
+              "height": 405,
+              "alt": "MP260 logo",
+              "text": "Portabel mast (man portable)"
+            },
+            {
+              "href": "/produkter/tei/borrmaster/mph",
+              "label": "Läs mer",
+              "title": "MPH",
+              "image": "/assets/img/tei-borrmaster-mph.webp",
+              "width": 504,
+              "height": 504,
+              "alt": "MPH logo",
+              "text": "Portabel mast (man portable)"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "De bærbare mastene skiller seg i mating: MP260 har ACF-mating (aluminium, 6,7 kN), mens MPH har den nyere SCF5-matingen (11,1 kN og 2 m slaglengde). MPH gir derfor kraftigere mating og kan kjøres med både 300- og 200-serien av borhoder.",
+          "feeds": true
         },
         {
           "type": "table",
@@ -952,40 +986,6 @@
         {
           "type": "text",
           "html": "<small>Verdiene er TEIs opplysninger per matetype; nøyaktig trekkraft for din mast står på produktsiden.</small>",
-          "feeds": true
-        },
-        {
-          "type": "text",
-          "html": "I tillegg finnes også portable master (man portable), som du finner lenger ned."
-        },
-        {
-          "type": "cards",
-          "items": [
-            {
-              "href": "/produkter/tei/borrmaster/mp260",
-              "label": "Läs mer",
-              "title": "MP260",
-              "image": "/assets/img/tei-borrmaster-mp260.webp",
-              "width": 405,
-              "height": 405,
-              "alt": "MP260 logo",
-              "text": "Portabel mast (man portable)"
-            },
-            {
-              "href": "/produkter/tei/borrmaster/mph",
-              "label": "Läs mer",
-              "title": "MPH",
-              "image": "/assets/img/tei-borrmaster-mph.webp",
-              "width": 504,
-              "height": 504,
-              "alt": "MPH logo",
-              "text": "Portabel mast (man portable)"
-            }
-          ]
-        },
-        {
-          "type": "text",
-          "html": "De bærbare mastene skiller seg i mating: MP260 har ACF-mating (aluminium, 6,7 kN), mens MPH har den nyere SCF5-matingen (11,1 kN og 2 m slaglengde). MPH gir derfor kraftigere mating og kan kjøres med både 300- og 200-serien av borhoder.",
           "feeds": true
         }
       ],

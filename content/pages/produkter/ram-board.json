@@ -43,9 +43,81 @@
         {
           "type": "button",
           "kind": "download",
-          "text": "Broschyr",
+          "text": "Broschyr (pÃ¥ svenska)",
           "href": "/assets/docs/ram-board-broschyr-svenska.pdf",
           "driveId": "1MTHnNsFSXpWAMHhMGAwmOZz5FmTnw0Jr"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Produkter",
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 4,
+          "square": true,
+          "more": false,
+          "items": [
+            {
+              "title": "Golvskydd",
+              "image": "/assets/img/ram-board-golvskydd-tile.webp",
+              "alt": "Golvskydd",
+              "href": "/produkter/ram-board/golvskydd",
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "Karmskydd",
+              "image": "/assets/img/ram-board-karmskydd-tile.webp",
+              "alt": "Karmskydd",
+              "href": "/produkter/ram-board/karmskydd",
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "Seam tape",
+              "image": "/assets/img/ram-board-seam-tape-tile.webp",
+              "alt": "Seam tape",
+              "href": "/produkter/ram-board/seam-tape",
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "Edge Tape 90-day",
+              "image": "/assets/img/ram-board-edge-tape-tile.webp",
+              "alt": "Edge Tape 90-day",
+              "href": "/produkter/ram-board/edge-tape",
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "Vapor-Cure",
+              "image": "/assets/img/ram-board-vapor-cure-tile.webp",
+              "alt": "Vapor-Cure",
+              "href": "/produkter/ram-board/vapor-cure",
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "Seamer",
+              "image": "/assets/img/ram-board-seamer-tile.webp",
+              "alt": "Seamer",
+              "href": "/produkter/ram-board/seamer",
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "Multi Cutter",
+              "image": "/assets/img/ram-board-multi-cutter-tile.webp",
+              "alt": "Multi Cutter",
+              "href": "/produkter/ram-board/multi-cutter",
+              "width": 1000,
+              "height": 1000
+            }
+          ],
+          "gen": true
         },
         {
           "type": "video",
@@ -108,9 +180,81 @@
         {
           "type": "button",
           "kind": "download",
-          "text": "Brochure",
+          "text": "Brochure (in Swedish)",
           "href": "/assets/docs/ram-board-broschyr-svenska.pdf",
           "driveId": "1MTHnNsFSXpWAMHhMGAwmOZz5FmTnw0Jr"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Products",
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 4,
+          "square": true,
+          "more": false,
+          "items": [
+            {
+              "title": "Floor protection",
+              "image": "/assets/img/ram-board-golvskydd-tile.webp",
+              "alt": "Floor protection",
+              "href": "/produkter/ram-board/golvskydd",
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "Door frame protection",
+              "image": "/assets/img/ram-board-karmskydd-tile.webp",
+              "alt": "Door frame protection",
+              "href": "/produkter/ram-board/karmskydd",
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "Seam tape",
+              "image": "/assets/img/ram-board-seam-tape-tile.webp",
+              "alt": "Seam tape",
+              "href": "/produkter/ram-board/seam-tape",
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "Edge Tape 90-day",
+              "image": "/assets/img/ram-board-edge-tape-tile.webp",
+              "alt": "Edge Tape 90-day",
+              "href": "/produkter/ram-board/edge-tape",
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "Vapor-Cure",
+              "image": "/assets/img/ram-board-vapor-cure-tile.webp",
+              "alt": "Vapor-Cure",
+              "href": "/produkter/ram-board/vapor-cure",
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "Seamer",
+              "image": "/assets/img/ram-board-seamer-tile.webp",
+              "alt": "Seamer",
+              "href": "/produkter/ram-board/seamer",
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "Multi Cutter",
+              "image": "/assets/img/ram-board-multi-cutter-tile.webp",
+              "alt": "Multi Cutter",
+              "href": "/produkter/ram-board/multi-cutter",
+              "width": 1000,
+              "height": 1000
+            }
+          ],
+          "gen": true
         },
         {
           "type": "video",
@@ -174,9 +318,81 @@
         {
           "type": "button",
           "kind": "download",
-          "text": "Folleto",
+          "text": "Folleto (en sueco)",
           "href": "/assets/docs/ram-board-broschyr-svenska.pdf",
           "driveId": "1MTHnNsFSXpWAMHhMGAwmOZz5FmTnw0Jr"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Productos",
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 4,
+          "square": true,
+          "more": false,
+          "items": [
+            {
+              "title": "ProtecciÃ³n de suelos",
+              "image": "/assets/img/ram-board-golvskydd-tile.webp",
+              "alt": "ProtecciÃ³n de suelos",
+              "href": "/produkter/ram-board/golvskydd",
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "ProtecciÃ³n de marcos",
+              "image": "/assets/img/ram-board-karmskydd-tile.webp",
+              "alt": "ProtecciÃ³n de marcos",
+              "href": "/produkter/ram-board/karmskydd",
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "Seam tape",
+              "image": "/assets/img/ram-board-seam-tape-tile.webp",
+              "alt": "Seam tape",
+              "href": "/produkter/ram-board/seam-tape",
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "Edge Tape 90-day",
+              "image": "/assets/img/ram-board-edge-tape-tile.webp",
+              "alt": "Edge Tape 90-day",
+              "href": "/produkter/ram-board/edge-tape",
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "Vapor-Cure",
+              "image": "/assets/img/ram-board-vapor-cure-tile.webp",
+              "alt": "Vapor-Cure",
+              "href": "/produkter/ram-board/vapor-cure",
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "Seamer",
+              "image": "/assets/img/ram-board-seamer-tile.webp",
+              "alt": "Seamer",
+              "href": "/produkter/ram-board/seamer",
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "Multi Cutter",
+              "image": "/assets/img/ram-board-multi-cutter-tile.webp",
+              "alt": "Multi Cutter",
+              "href": "/produkter/ram-board/multi-cutter",
+              "width": 1000,
+              "height": 1000
+            }
+          ],
+          "gen": true
         },
         {
           "type": "video",
@@ -240,9 +456,81 @@
         {
           "type": "button",
           "kind": "download",
-          "text": "Brosjyre",
+          "text": "Brosjyre (pÃ¥ svensk)",
           "href": "/assets/docs/ram-board-broschyr-svenska.pdf",
           "driveId": "1MTHnNsFSXpWAMHhMGAwmOZz5FmTnw0Jr"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Produkter",
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 4,
+          "square": true,
+          "more": false,
+          "items": [
+            {
+              "title": "Gulvbeskyttelse",
+              "image": "/assets/img/ram-board-golvskydd-tile.webp",
+              "alt": "Gulvbeskyttelse",
+              "href": "/produkter/ram-board/golvskydd",
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "Karmbeskyttelse",
+              "image": "/assets/img/ram-board-karmskydd-tile.webp",
+              "alt": "Karmbeskyttelse",
+              "href": "/produkter/ram-board/karmskydd",
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "Seam tape",
+              "image": "/assets/img/ram-board-seam-tape-tile.webp",
+              "alt": "Seam tape",
+              "href": "/produkter/ram-board/seam-tape",
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "Edge Tape 90-day",
+              "image": "/assets/img/ram-board-edge-tape-tile.webp",
+              "alt": "Edge Tape 90-day",
+              "href": "/produkter/ram-board/edge-tape",
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "Vapor-Cure",
+              "image": "/assets/img/ram-board-vapor-cure-tile.webp",
+              "alt": "Vapor-Cure",
+              "href": "/produkter/ram-board/vapor-cure",
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "Seamer",
+              "image": "/assets/img/ram-board-seamer-tile.webp",
+              "alt": "Seamer",
+              "href": "/produkter/ram-board/seamer",
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "Multi Cutter",
+              "image": "/assets/img/ram-board-multi-cutter-tile.webp",
+              "alt": "Multi Cutter",
+              "href": "/produkter/ram-board/multi-cutter",
+              "width": 1000,
+              "height": 1000
+            }
+          ],
+          "gen": true
         },
         {
           "type": "video",

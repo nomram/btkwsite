@@ -1,0 +1,373 @@
+{
+  "path": "/produkter/ram-board/seam-tape",
+  "updated": "2026-10-26",
+  "template": "product",
+  "order": 2,
+  "published": true,
+  "i18n": {
+    "sv": {
+      "title": "Seam tape",
+      "h1": "Ram Board Seam tape",
+      "description": "Skarvtejp fÃ¶r Ram Board golvskydd. 72 mm x 50 m. Skarvtejp, TÃ¥lig, Vattenavvisande.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Ram Board",
+          "href": "/produkter/ram-board",
+          "width": 250,
+          "height": 103,
+          "src": "/assets/img/ram-board-1.webp",
+          "maxWidth": 300
+        },
+        {
+          "type": "image",
+          "alt": "Ram Board Seam tape",
+          "src": "/assets/img/ram-board-seam-tape-main.webp",
+          "width": 500,
+          "height": 500
+        },
+        {
+          "type": "text",
+          "html": "Skarvtejp fÃ¶r Ram Board golvskydd."
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "MÃ¥tt: 72 mm x 50 m",
+            "Vikt: 0,4 kg",
+            "Skarvtejp",
+            "TÃ¥lig",
+            "Vattenavvisande"
+          ]
+        },
+        {
+          "type": "text",
+          "html": "<strong>OBS! Skall inte tejpas direkt pÃ¥ golvet.</strong>"
+        },
+        {
+          "type": "carousel",
+          "autoplay": false,
+          "items": [
+            {
+              "src": "/assets/img/ram-board-seam-tape-1.webp",
+              "alt": "Ram Board Seam tape, bilder 1",
+              "width": 600,
+              "height": 600
+            },
+            {
+              "src": "/assets/img/ram-board-seam-tape-2.webp",
+              "alt": "Ram Board Seam tape, bilder 2",
+              "width": 400,
+              "height": 400
+            },
+            {
+              "src": "/assets/img/ram-board-seam-tape-3.webp",
+              "alt": "Ram Board Seam tape, bilder 3",
+              "width": 300,
+              "height": 300
+            }
+          ]
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Broschyr (pÃ¥ svenska)",
+          "href": "/assets/docs/ram-board-broschyr-svenska.pdf"
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Kontakta oss</a> fÃ¶r pris, leveranstid och mer information."
+        },
+        {
+          "type": "related",
+          "title": "Se Ã¤ven",
+          "items": [
+            {
+              "href": "/produkter/ram-board/golvskydd"
+            },
+            {
+              "href": "/produkter/ram-board/karmskydd"
+            },
+            {
+              "href": "/produkter/ram-board/edge-tape"
+            }
+          ]
+        }
+      ]
+    },
+    "en": {
+      "title": "Seam tape",
+      "h1": "Ram Board Seam tape",
+      "description": "Seam tape for Ram Board floor protection. 72 mm x 50 m. Seam tape, Durable, Water repellent.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Ram Board",
+          "href": "/produkter/ram-board",
+          "width": 250,
+          "height": 103,
+          "src": "/assets/img/ram-board-1.webp",
+          "maxWidth": 300
+        },
+        {
+          "type": "image",
+          "alt": "Ram Board Seam tape",
+          "src": "/assets/img/ram-board-seam-tape-main.webp",
+          "width": 500,
+          "height": 500
+        },
+        {
+          "type": "text",
+          "html": "Seam tape for Ram Board floor protection."
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Size: 72 mm x 50 m",
+            "Weight: 0.4 kg",
+            "Seam tape",
+            "Durable",
+            "Water repellent"
+          ]
+        },
+        {
+          "type": "text",
+          "html": "<strong>Note: do not tape directly onto the floor.</strong>"
+        },
+        {
+          "type": "carousel",
+          "autoplay": false,
+          "items": [
+            {
+              "src": "/assets/img/ram-board-seam-tape-1.webp",
+              "alt": "Ram Board Seam tape, pictures 1",
+              "width": 600,
+              "height": 600
+            },
+            {
+              "src": "/assets/img/ram-board-seam-tape-2.webp",
+              "alt": "Ram Board Seam tape, pictures 2",
+              "width": 400,
+              "height": 400
+            },
+            {
+              "src": "/assets/img/ram-board-seam-tape-3.webp",
+              "alt": "Ram Board Seam tape, pictures 3",
+              "width": 300,
+              "height": 300
+            }
+          ]
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Brochure (in Swedish)",
+          "href": "/assets/docs/ram-board-broschyr-svenska.pdf"
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Contact us</a> for price, delivery time and more information."
+        },
+        {
+          "type": "related",
+          "title": "See also",
+          "items": [
+            {
+              "href": "/produkter/ram-board/golvskydd"
+            },
+            {
+              "href": "/produkter/ram-board/karmskydd"
+            },
+            {
+              "href": "/produkter/ram-board/edge-tape"
+            }
+          ]
+        }
+      ]
+    },
+    "es": {
+      "title": "Seam tape",
+      "h1": "Ram Board Seam tape",
+      "description": "Cinta para uniones del protector de suelos Ram Board. 72 mm x 50 m. Cinta para uniones, Resistente, Repele el agua.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Ram Board",
+          "href": "/produkter/ram-board",
+          "width": 250,
+          "height": 103,
+          "src": "/assets/img/ram-board-1.webp",
+          "maxWidth": 300
+        },
+        {
+          "type": "image",
+          "alt": "Ram Board Seam tape",
+          "src": "/assets/img/ram-board-seam-tape-main.webp",
+          "width": 500,
+          "height": 500
+        },
+        {
+          "type": "text",
+          "html": "Cinta para uniones del protector de suelos Ram Board."
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Medidas: 72 mm x 50 m",
+            "Peso: 0,4 kg",
+            "Cinta para uniones",
+            "Resistente",
+            "Repele el agua"
+          ]
+        },
+        {
+          "type": "text",
+          "html": "<strong>AtenciÃ³n: no pegar directamente sobre el suelo.</strong>"
+        },
+        {
+          "type": "carousel",
+          "autoplay": false,
+          "items": [
+            {
+              "src": "/assets/img/ram-board-seam-tape-1.webp",
+              "alt": "Ram Board Seam tape, imã¡genes 1",
+              "width": 600,
+              "height": 600
+            },
+            {
+              "src": "/assets/img/ram-board-seam-tape-2.webp",
+              "alt": "Ram Board Seam tape, imã¡genes 2",
+              "width": 400,
+              "height": 400
+            },
+            {
+              "src": "/assets/img/ram-board-seam-tape-3.webp",
+              "alt": "Ram Board Seam tape, imã¡genes 3",
+              "width": 300,
+              "height": 300
+            }
+          ]
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Folleto (en sueco)",
+          "href": "/assets/docs/ram-board-broschyr-svenska.pdf"
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">ContÃ¡ctenos</a> para precio, plazo de entrega y mÃ¡s informaciÃ³n."
+        },
+        {
+          "type": "related",
+          "title": "VÃ©ase tambiÃ©n",
+          "items": [
+            {
+              "href": "/produkter/ram-board/golvskydd"
+            },
+            {
+              "href": "/produkter/ram-board/karmskydd"
+            },
+            {
+              "href": "/produkter/ram-board/edge-tape"
+            }
+          ]
+        }
+      ]
+    },
+    "no": {
+      "title": "Seam tape",
+      "h1": "Ram Board Seam tape",
+      "description": "SkjÃ¸tetape for Ram Board gulvbeskyttelse. 72 mm x 50 m. SkjÃ¸tetape, Slitesterk, Vannavvisende.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Ram Board",
+          "href": "/produkter/ram-board",
+          "width": 250,
+          "height": 103,
+          "src": "/assets/img/ram-board-1.webp",
+          "maxWidth": 300
+        },
+        {
+          "type": "image",
+          "alt": "Ram Board Seam tape",
+          "src": "/assets/img/ram-board-seam-tape-main.webp",
+          "width": 500,
+          "height": 500
+        },
+        {
+          "type": "text",
+          "html": "SkjÃ¸tetape for Ram Board gulvbeskyttelse."
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "MÃ¥l: 72 mm x 50 m",
+            "Vekt: 0,4 kg",
+            "SkjÃ¸tetape",
+            "Slitesterk",
+            "Vannavvisende"
+          ]
+        },
+        {
+          "type": "text",
+          "html": "<strong>Obs! Skal ikke teipes direkte pÃ¥ gulvet.</strong>"
+        },
+        {
+          "type": "carousel",
+          "autoplay": false,
+          "items": [
+            {
+              "src": "/assets/img/ram-board-seam-tape-1.webp",
+              "alt": "Ram Board Seam tape, bilder 1",
+              "width": 600,
+              "height": 600
+            },
+            {
+              "src": "/assets/img/ram-board-seam-tape-2.webp",
+              "alt": "Ram Board Seam tape, bilder 2",
+              "width": 400,
+              "height": 400
+            },
+            {
+              "src": "/assets/img/ram-board-seam-tape-3.webp",
+              "alt": "Ram Board Seam tape, bilder 3",
+              "width": 300,
+              "height": 300
+            }
+          ]
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Brosjyre (pÃ¥ svensk)",
+          "href": "/assets/docs/ram-board-broschyr-svenska.pdf"
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Kontakt oss</a> for pris, leveringstid og mer informasjon."
+        },
+        {
+          "type": "related",
+          "title": "Se ogsÃ¥",
+          "items": [
+            {
+              "href": "/produkter/ram-board/golvskydd"
+            },
+            {
+              "href": "/produkter/ram-board/karmskydd"
+            },
+            {
+              "href": "/produkter/ram-board/edge-tape"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

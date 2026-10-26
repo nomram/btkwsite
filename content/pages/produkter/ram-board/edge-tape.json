@@ -1,0 +1,357 @@
+{
+  "path": "/produkter/ram-board/edge-tape",
+  "updated": "2026-10-26",
+  "template": "product",
+  "order": 3,
+  "published": true,
+  "i18n": {
+    "sv": {
+      "title": "Edge Tape 90-day",
+      "h1": "Ram Board Edge Tape 90-day",
+      "description": "Golv- och kanttejp som kan sitta i upp till 90 dagar utan att lÃ¤mna mÃ¤rken. 50 mm x 25 m. Kanttejp, MÃ¤rkfri i upp till 90 dagar, Golv och kanttejp.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Ram Board",
+          "href": "/produkter/ram-board",
+          "width": 250,
+          "height": 103,
+          "src": "/assets/img/ram-board-1.webp",
+          "maxWidth": 300
+        },
+        {
+          "type": "image",
+          "alt": "Ram Board Edge Tape 90-day",
+          "src": "/assets/img/ram-board-edge-tape-main.webp",
+          "width": 500,
+          "height": 500
+        },
+        {
+          "type": "text",
+          "html": "Golv- och kanttejp som kan sitta i upp till 90 dagar utan att lÃ¤mna mÃ¤rken."
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "MÃ¥tt: 50 mm x 25 m",
+            "Vikt: 0,45 kg",
+            "Kanttejp",
+            "MÃ¤rkfri i upp till 90 dagar",
+            "Golv och kanttejp"
+          ]
+        },
+        {
+          "type": "carousel",
+          "autoplay": false,
+          "items": [
+            {
+              "src": "/assets/img/ram-board-edge-tape-1.webp",
+              "alt": "Ram Board Edge Tape 90-day, bilder 1",
+              "width": 300,
+              "height": 300
+            },
+            {
+              "src": "/assets/img/ram-board-edge-tape-2.webp",
+              "alt": "Ram Board Edge Tape 90-day, bilder 2",
+              "width": 300,
+              "height": 300
+            },
+            {
+              "src": "/assets/img/ram-board-edge-tape-3.webp",
+              "alt": "Ram Board Edge Tape 90-day, bilder 3",
+              "width": 300,
+              "height": 300
+            }
+          ]
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Broschyr (pÃ¥ svenska)",
+          "href": "/assets/docs/ram-board-broschyr-svenska.pdf"
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Kontakta oss</a> fÃ¶r pris, leveranstid och mer information."
+        },
+        {
+          "type": "related",
+          "title": "Se Ã¤ven",
+          "items": [
+            {
+              "href": "/produkter/ram-board/golvskydd"
+            },
+            {
+              "href": "/produkter/ram-board/karmskydd"
+            },
+            {
+              "href": "/produkter/ram-board/seam-tape"
+            }
+          ]
+        }
+      ]
+    },
+    "en": {
+      "title": "Edge Tape 90-day",
+      "h1": "Ram Board Edge Tape 90-day",
+      "description": "Floor and edge tape that can stay on for up to 90 days without leaving marks. 50 mm x 25 m. Edge tape, Mark-free for up to 90 days, Floor and edge tape.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Ram Board",
+          "href": "/produkter/ram-board",
+          "width": 250,
+          "height": 103,
+          "src": "/assets/img/ram-board-1.webp",
+          "maxWidth": 300
+        },
+        {
+          "type": "image",
+          "alt": "Ram Board Edge Tape 90-day",
+          "src": "/assets/img/ram-board-edge-tape-main.webp",
+          "width": 500,
+          "height": 500
+        },
+        {
+          "type": "text",
+          "html": "Floor and edge tape that can stay on for up to 90 days without leaving marks."
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Size: 50 mm x 25 m",
+            "Weight: 0.45 kg",
+            "Edge tape",
+            "Mark-free for up to 90 days",
+            "Floor and edge tape"
+          ]
+        },
+        {
+          "type": "carousel",
+          "autoplay": false,
+          "items": [
+            {
+              "src": "/assets/img/ram-board-edge-tape-1.webp",
+              "alt": "Ram Board Edge Tape 90-day, pictures 1",
+              "width": 300,
+              "height": 300
+            },
+            {
+              "src": "/assets/img/ram-board-edge-tape-2.webp",
+              "alt": "Ram Board Edge Tape 90-day, pictures 2",
+              "width": 300,
+              "height": 300
+            },
+            {
+              "src": "/assets/img/ram-board-edge-tape-3.webp",
+              "alt": "Ram Board Edge Tape 90-day, pictures 3",
+              "width": 300,
+              "height": 300
+            }
+          ]
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Brochure (in Swedish)",
+          "href": "/assets/docs/ram-board-broschyr-svenska.pdf"
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Contact us</a> for price, delivery time and more information."
+        },
+        {
+          "type": "related",
+          "title": "See also",
+          "items": [
+            {
+              "href": "/produkter/ram-board/golvskydd"
+            },
+            {
+              "href": "/produkter/ram-board/karmskydd"
+            },
+            {
+              "href": "/produkter/ram-board/seam-tape"
+            }
+          ]
+        }
+      ]
+    },
+    "es": {
+      "title": "Edge Tape 90-day",
+      "h1": "Ram Board Edge Tape 90-day",
+      "description": "Cinta para suelos y bordes que puede dejarse hasta 90 dÃ­as sin dejar marcas. 50 mm x 25 m. Cinta de borde, Sin marcas hasta 90 dÃ­as, Cinta para suelo y bordes.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Ram Board",
+          "href": "/produkter/ram-board",
+          "width": 250,
+          "height": 103,
+          "src": "/assets/img/ram-board-1.webp",
+          "maxWidth": 300
+        },
+        {
+          "type": "image",
+          "alt": "Ram Board Edge Tape 90-day",
+          "src": "/assets/img/ram-board-edge-tape-main.webp",
+          "width": 500,
+          "height": 500
+        },
+        {
+          "type": "text",
+          "html": "Cinta para suelos y bordes que puede dejarse hasta 90 dÃ­as sin dejar marcas."
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Medidas: 50 mm x 25 m",
+            "Peso: 0,45 kg",
+            "Cinta de borde",
+            "Sin marcas hasta 90 dÃ­as",
+            "Cinta para suelo y bordes"
+          ]
+        },
+        {
+          "type": "carousel",
+          "autoplay": false,
+          "items": [
+            {
+              "src": "/assets/img/ram-board-edge-tape-1.webp",
+              "alt": "Ram Board Edge Tape 90-day, imã¡genes 1",
+              "width": 300,
+              "height": 300
+            },
+            {
+              "src": "/assets/img/ram-board-edge-tape-2.webp",
+              "alt": "Ram Board Edge Tape 90-day, imã¡genes 2",
+              "width": 300,
+              "height": 300
+            },
+            {
+              "src": "/assets/img/ram-board-edge-tape-3.webp",
+              "alt": "Ram Board Edge Tape 90-day, imã¡genes 3",
+              "width": 300,
+              "height": 300
+            }
+          ]
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Folleto (en sueco)",
+          "href": "/assets/docs/ram-board-broschyr-svenska.pdf"
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">ContÃ¡ctenos</a> para precio, plazo de entrega y mÃ¡s informaciÃ³n."
+        },
+        {
+          "type": "related",
+          "title": "VÃ©ase tambiÃ©n",
+          "items": [
+            {
+              "href": "/produkter/ram-board/golvskydd"
+            },
+            {
+              "href": "/produkter/ram-board/karmskydd"
+            },
+            {
+              "href": "/produkter/ram-board/seam-tape"
+            }
+          ]
+        }
+      ]
+    },
+    "no": {
+      "title": "Edge Tape 90-day",
+      "h1": "Ram Board Edge Tape 90-day",
+      "description": "Gulv- og kanttape som kan sitte i opptil 90 dager uten Ã¥ sette merker. 50 mm x 25 m. Kanttape, Merkefri i opptil 90 dager, Gulv- og kanttape.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Ram Board",
+          "href": "/produkter/ram-board",
+          "width": 250,
+          "height": 103,
+          "src": "/assets/img/ram-board-1.webp",
+          "maxWidth": 300
+        },
+        {
+          "type": "image",
+          "alt": "Ram Board Edge Tape 90-day",
+          "src": "/assets/img/ram-board-edge-tape-main.webp",
+          "width": 500,
+          "height": 500
+        },
+        {
+          "type": "text",
+          "html": "Gulv- og kanttape som kan sitte i opptil 90 dager uten Ã¥ sette merker."
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "MÃ¥l: 50 mm x 25 m",
+            "Vekt: 0,45 kg",
+            "Kanttape",
+            "Merkefri i opptil 90 dager",
+            "Gulv- og kanttape"
+          ]
+        },
+        {
+          "type": "carousel",
+          "autoplay": false,
+          "items": [
+            {
+              "src": "/assets/img/ram-board-edge-tape-1.webp",
+              "alt": "Ram Board Edge Tape 90-day, bilder 1",
+              "width": 300,
+              "height": 300
+            },
+            {
+              "src": "/assets/img/ram-board-edge-tape-2.webp",
+              "alt": "Ram Board Edge Tape 90-day, bilder 2",
+              "width": 300,
+              "height": 300
+            },
+            {
+              "src": "/assets/img/ram-board-edge-tape-3.webp",
+              "alt": "Ram Board Edge Tape 90-day, bilder 3",
+              "width": 300,
+              "height": 300
+            }
+          ]
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Brosjyre (pÃ¥ svensk)",
+          "href": "/assets/docs/ram-board-broschyr-svenska.pdf"
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Kontakt oss</a> for pris, leveringstid og mer informasjon."
+        },
+        {
+          "type": "related",
+          "title": "Se ogsÃ¥",
+          "items": [
+            {
+              "href": "/produkter/ram-board/golvskydd"
+            },
+            {
+              "href": "/produkter/ram-board/karmskydd"
+            },
+            {
+              "href": "/produkter/ram-board/seam-tape"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

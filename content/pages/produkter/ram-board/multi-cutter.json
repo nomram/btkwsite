@@ -1,0 +1,353 @@
+{
+  "path": "/produkter/ram-board/multi-cutter",
+  "updated": "2026-10-26",
+  "template": "product",
+  "order": 6,
+  "published": true,
+  "i18n": {
+    "sv": {
+      "title": "Multi Cutter",
+      "h1": "Ram Board Multi Cutter",
+      "description": "Multikniv fÃ¶r att skÃ¤ra golvskyddet utan att skada golvet under. 23 Ã— 6 Ã— 3 cm. Multikniv, SkÃ¤r utan att skada golvet.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Ram Board",
+          "href": "/produkter/ram-board",
+          "width": 250,
+          "height": 103,
+          "src": "/assets/img/ram-board-1.webp",
+          "maxWidth": 300
+        },
+        {
+          "type": "image",
+          "alt": "Ram Board Multi Cutter",
+          "src": "/assets/img/ram-board-multi-cutter-main.webp",
+          "width": 500,
+          "height": 500
+        },
+        {
+          "type": "text",
+          "html": "Multikniv fÃ¶r att skÃ¤ra golvskyddet utan att skada golvet under."
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "MÃ¥tt: 23 Ã— 6 Ã— 3 cm",
+            "Vikt: 0,2 kg",
+            "Multikniv",
+            "SkÃ¤r utan att skada golvet"
+          ]
+        },
+        {
+          "type": "carousel",
+          "autoplay": false,
+          "items": [
+            {
+              "src": "/assets/img/ram-board-multi-cutter-1.webp",
+              "alt": "Ram Board Multi Cutter, bilder 1",
+              "width": 300,
+              "height": 300
+            },
+            {
+              "src": "/assets/img/ram-board-multi-cutter-2.webp",
+              "alt": "Ram Board Multi Cutter, bilder 2",
+              "width": 300,
+              "height": 300
+            },
+            {
+              "src": "/assets/img/ram-board-multi-cutter-3.webp",
+              "alt": "Ram Board Multi Cutter, bilder 3",
+              "width": 300,
+              "height": 300
+            }
+          ]
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Broschyr (pÃ¥ svenska)",
+          "href": "/assets/docs/ram-board-broschyr-svenska.pdf"
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Kontakta oss</a> fÃ¶r pris, leveranstid och mer information."
+        },
+        {
+          "type": "related",
+          "title": "Se Ã¤ven",
+          "items": [
+            {
+              "href": "/produkter/ram-board/golvskydd"
+            },
+            {
+              "href": "/produkter/ram-board/karmskydd"
+            },
+            {
+              "href": "/produkter/ram-board/seam-tape"
+            }
+          ]
+        }
+      ]
+    },
+    "en": {
+      "title": "Multi Cutter",
+      "h1": "Ram Board Multi Cutter",
+      "description": "Multi knife for cutting the floor protection without damaging the floor underneath. 23 Ã— 6 Ã— 3 cm. Multi knife, Cuts without damaging the floor.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Ram Board",
+          "href": "/produkter/ram-board",
+          "width": 250,
+          "height": 103,
+          "src": "/assets/img/ram-board-1.webp",
+          "maxWidth": 300
+        },
+        {
+          "type": "image",
+          "alt": "Ram Board Multi Cutter",
+          "src": "/assets/img/ram-board-multi-cutter-main.webp",
+          "width": 500,
+          "height": 500
+        },
+        {
+          "type": "text",
+          "html": "Multi knife for cutting the floor protection without damaging the floor underneath."
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Size: 23 Ã— 6 Ã— 3 cm",
+            "Weight: 0.2 kg",
+            "Multi knife",
+            "Cuts without damaging the floor"
+          ]
+        },
+        {
+          "type": "carousel",
+          "autoplay": false,
+          "items": [
+            {
+              "src": "/assets/img/ram-board-multi-cutter-1.webp",
+              "alt": "Ram Board Multi Cutter, pictures 1",
+              "width": 300,
+              "height": 300
+            },
+            {
+              "src": "/assets/img/ram-board-multi-cutter-2.webp",
+              "alt": "Ram Board Multi Cutter, pictures 2",
+              "width": 300,
+              "height": 300
+            },
+            {
+              "src": "/assets/img/ram-board-multi-cutter-3.webp",
+              "alt": "Ram Board Multi Cutter, pictures 3",
+              "width": 300,
+              "height": 300
+            }
+          ]
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Brochure (in Swedish)",
+          "href": "/assets/docs/ram-board-broschyr-svenska.pdf"
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Contact us</a> for price, delivery time and more information."
+        },
+        {
+          "type": "related",
+          "title": "See also",
+          "items": [
+            {
+              "href": "/produkter/ram-board/golvskydd"
+            },
+            {
+              "href": "/produkter/ram-board/karmskydd"
+            },
+            {
+              "href": "/produkter/ram-board/seam-tape"
+            }
+          ]
+        }
+      ]
+    },
+    "es": {
+      "title": "Multi Cutter",
+      "h1": "Ram Board Multi Cutter",
+      "description": "Cuchilla multiuso para cortar el protector sin daÃ±ar el suelo. 23 Ã— 6 Ã— 3 cm. Cuchilla multiuso, Corta sin daÃ±ar el suelo.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Ram Board",
+          "href": "/produkter/ram-board",
+          "width": 250,
+          "height": 103,
+          "src": "/assets/img/ram-board-1.webp",
+          "maxWidth": 300
+        },
+        {
+          "type": "image",
+          "alt": "Ram Board Multi Cutter",
+          "src": "/assets/img/ram-board-multi-cutter-main.webp",
+          "width": 500,
+          "height": 500
+        },
+        {
+          "type": "text",
+          "html": "Cuchilla multiuso para cortar el protector sin daÃ±ar el suelo."
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Medidas: 23 Ã— 6 Ã— 3 cm",
+            "Peso: 0,2 kg",
+            "Cuchilla multiuso",
+            "Corta sin daÃ±ar el suelo"
+          ]
+        },
+        {
+          "type": "carousel",
+          "autoplay": false,
+          "items": [
+            {
+              "src": "/assets/img/ram-board-multi-cutter-1.webp",
+              "alt": "Ram Board Multi Cutter, imã¡genes 1",
+              "width": 300,
+              "height": 300
+            },
+            {
+              "src": "/assets/img/ram-board-multi-cutter-2.webp",
+              "alt": "Ram Board Multi Cutter, imã¡genes 2",
+              "width": 300,
+              "height": 300
+            },
+            {
+              "src": "/assets/img/ram-board-multi-cutter-3.webp",
+              "alt": "Ram Board Multi Cutter, imã¡genes 3",
+              "width": 300,
+              "height": 300
+            }
+          ]
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Folleto (en sueco)",
+          "href": "/assets/docs/ram-board-broschyr-svenska.pdf"
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">ContÃ¡ctenos</a> para precio, plazo de entrega y mÃ¡s informaciÃ³n."
+        },
+        {
+          "type": "related",
+          "title": "VÃ©ase tambiÃ©n",
+          "items": [
+            {
+              "href": "/produkter/ram-board/golvskydd"
+            },
+            {
+              "href": "/produkter/ram-board/karmskydd"
+            },
+            {
+              "href": "/produkter/ram-board/seam-tape"
+            }
+          ]
+        }
+      ]
+    },
+    "no": {
+      "title": "Multi Cutter",
+      "h1": "Ram Board Multi Cutter",
+      "description": "Multikniv for Ã¥ skjÃ¦re gulvbeskyttelsen uten Ã¥ skade gulvet under. 23 Ã— 6 Ã— 3 cm. Multikniv, SkjÃ¦rer uten Ã¥ skade gulvet.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Ram Board",
+          "href": "/produkter/ram-board",
+          "width": 250,
+          "height": 103,
+          "src": "/assets/img/ram-board-1.webp",
+          "maxWidth": 300
+        },
+        {
+          "type": "image",
+          "alt": "Ram Board Multi Cutter",
+          "src": "/assets/img/ram-board-multi-cutter-main.webp",
+          "width": 500,
+          "height": 500
+        },
+        {
+          "type": "text",
+          "html": "Multikniv for Ã¥ skjÃ¦re gulvbeskyttelsen uten Ã¥ skade gulvet under."
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "MÃ¥l: 23 Ã— 6 Ã— 3 cm",
+            "Vekt: 0,2 kg",
+            "Multikniv",
+            "SkjÃ¦rer uten Ã¥ skade gulvet"
+          ]
+        },
+        {
+          "type": "carousel",
+          "autoplay": false,
+          "items": [
+            {
+              "src": "/assets/img/ram-board-multi-cutter-1.webp",
+              "alt": "Ram Board Multi Cutter, bilder 1",
+              "width": 300,
+              "height": 300
+            },
+            {
+              "src": "/assets/img/ram-board-multi-cutter-2.webp",
+              "alt": "Ram Board Multi Cutter, bilder 2",
+              "width": 300,
+              "height": 300
+            },
+            {
+              "src": "/assets/img/ram-board-multi-cutter-3.webp",
+              "alt": "Ram Board Multi Cutter, bilder 3",
+              "width": 300,
+              "height": 300
+            }
+          ]
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Brosjyre (pÃ¥ svensk)",
+          "href": "/assets/docs/ram-board-broschyr-svenska.pdf"
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Kontakt oss</a> for pris, leveringstid og mer informasjon."
+        },
+        {
+          "type": "related",
+          "title": "Se ogsÃ¥",
+          "items": [
+            {
+              "href": "/produkter/ram-board/golvskydd"
+            },
+            {
+              "href": "/produkter/ram-board/karmskydd"
+            },
+            {
+              "href": "/produkter/ram-board/seam-tape"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
