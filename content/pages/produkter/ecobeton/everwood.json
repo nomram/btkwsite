@@ -33,6 +33,14 @@
           "html": "Everwood är ett medel för att skydda alla typer av trä från försämring. Den består av vattenglas modifierat med en speciell katalysator. Produkten tränger på djupet in i träets naturliga porositet och binder träfibrerna och bildar en permanent barriär. Everwood reducerar effektivt brännbarheten av trä. Den skyddar mot termiter och från absorptionen av vatten och fukt. Everwood förlänger hållbarheten av trä med alla ytbehandlingar."
         },
         {
+          "type": "stat",
+          "label": "Åtgång",
+          "value": "6-8 m²",
+          "unit": "per liter",
+          "note": "Beror på träets porositet.",
+          "usage": true
+        },
+        {
           "type": "button",
           "kind": "download",
           "text": "Tekniskt datablad (TDS)",
@@ -110,6 +118,14 @@
         {
           "type": "text",
           "html": "Everwood is an agent for protecting all types of wood from deterioration. It consists of water glass modified with a special catalyst. The product penetrates deep into the natural porosity of the wood and binds the wood fibres, forming a permanent barrier. Everwood effectively reduces the flammability of wood. It protects against termites and against the absorption of water and moisture. Everwood extends the durability of wood with all surface treatments."
+        },
+        {
+          "type": "stat",
+          "label": "Consumption",
+          "value": "6-8 m²",
+          "unit": "per litre",
+          "note": "Depends on the porosity of the wood.",
+          "usage": true
         },
         {
           "type": "button",
@@ -192,6 +208,14 @@
           "html": "Everwood es un producto para proteger todo tipo de madera del deterioro. Se compone de silicato sódico modificado con un catalizador especial. El producto penetra en profundidad en la porosidad natural de la madera y une las fibras, formando una barrera permanente. Everwood reduce eficazmente la inflamabilidad de la madera. Protege frente a las termitas y frente a la absorción de agua y humedad. Everwood prolonga la durabilidad de la madera con cualquier tratamiento superficial."
         },
         {
+          "type": "stat",
+          "label": "Consumo",
+          "value": "6-8 m²",
+          "unit": "por litro",
+          "note": "Depende de la porosidad de la madera.",
+          "usage": true
+        },
+        {
           "type": "button",
           "kind": "download",
           "text": "Ficha técnica (TDS)",
@@ -270,6 +294,14 @@
         {
           "type": "text",
           "html": "Everwood er et middel for å beskytte alle typer tre mot nedbrytning. Det består av vannglass modifisert med en spesiell katalysator. Produktet trenger dypt inn i treets naturlige porøsitet, binder trefibrene og danner en permanent barriere. Everwood reduserer effektivt brennbarheten til tre. Det beskytter mot termitter og mot opptak av vann og fukt. Everwood forlenger holdbarheten til tre med alle overflatebehandlinger."
+        },
+        {
+          "type": "stat",
+          "label": "Forbruk",
+          "value": "6-8 m²",
+          "unit": "per liter",
+          "note": "Avhenger av trevirkets porøsitet.",
+          "usage": true
         },
         {
           "type": "button",

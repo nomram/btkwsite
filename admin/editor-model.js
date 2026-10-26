@@ -13,6 +13,7 @@ export const IC = {
   download: svg('<path d="M12 4v11m0 0l-4-4m4 4l4-4M5 20h14"/>'),
   button: svg('<rect x="3" y="8" width="18" height="8" rx="4"/><path d="M9 12h6"/>'),
   cards: svg('<rect x="3" y="4" width="8" height="7" rx="1.5"/><rect x="13" y="4" width="8" height="7" rx="1.5"/><rect x="3" y="14" width="8" height="6" rx="1.5"/><rect x="13" y="14" width="8" height="6" rx="1.5"/>'),
+  stat: svg('<path d="M12 3l9 5-9 5-9-5 9-5z"/><path d="M3 13l9 5 9-5M3 17.5l9 5 9-5"/>'),
   cta: svg('<rect x="3" y="6" width="18" height="12" rx="2"/><path d="M7 12h6m-2-2l2 2-2 2"/>'),
   chips: svg('<rect x="3" y="5" width="9" height="5" rx="2.5"/><rect x="14" y="5" width="7" height="5" rx="2.5"/><rect x="3" y="14" width="6" height="5" rx="2.5"/><rect x="11" y="14" width="10" height="5" rx="2.5"/>'),
   table: svg('<rect x="3" y="5" width="18" height="14" rx="1.5"/><path d="M3 10h18M9 5v14"/>'),
@@ -54,7 +55,7 @@ export const IC = {
 
 // ---------- block catalogue ----------
 export const BLOCK_TYPES = [
-  { id: "text", group: "text" }, { id: "heading", group: "text" }, { id: "list", group: "text" },
+  { id: "text", group: "text" }, { id: "heading", group: "text" }, { id: "list", group: "text" }, { id: "stat", group: "text" },
   { id: "image", group: "media" }, { id: "video", group: "media" }, { id: "download", group: "media" },
   { id: "button", group: "layout" }, { id: "columns", group: "layout" }, { id: "cards", group: "layout" }, { id: "carousel", group: "media" }, { id: "compare", group: "media" }, { id: "finder", group: "data" }, { id: "modules", group: "layout" }, { id: "related", group: "layout" }, { id: "rangechart", group: "data" }, { id: "cta", group: "layout" }, { id: "chips", group: "layout" },
   { id: "table", group: "data" }, { id: "datasheet", group: "data" },
@@ -84,6 +85,7 @@ export function newBlock(id, lang) {
     case "download": return { type: "button", kind: "download", text: "", href: "" };
     case "button": return { type: "button", kind: "link", text: "", href: "" };
     case "cards": return { type: "cards", items: [] };
+    case "stat": return { type: "stat", label: "Åtgång", value: "", unit: "", note: "" };
     case "cta": return { type: "cta", title: c.cta_title, text: c.cta_text, button: c.cta_button, href: "/kontakta-oss" };
     case "chips": return { type: "chips", title: "", items: [""] };
     case "table": return { type: "table", header: true, rows: [["", ""], ["", ""]] };

@@ -33,6 +33,14 @@
           "html": "Ercole® är ett cementbaserat pulver ( färdigmix ), som eliminerar behovet av att ta bort gammal eller skadad betong genom renovering med en slitstark och flexibel beläggning. Den är klar att använda, endast vatten tillsätts. Det är en ny generation av material som appliceras med ca 1-3 mm och ger en hög prestanda. Ercole® har en hög mågsidighet och är lätt att applicera. Tack vare sin extraordinära vidhäftning kan den användas till beläggning på asfalt, gips, trä, metall, betong och andra ytor. Ercole® har utvecklats i samarbete med Super-Krete Int. Inc. i San Diego, Kalifornien, USA."
         },
         {
+          "type": "stat",
+          "label": "Åtgång",
+          "value": "15 m²",
+          "unit": "per 25 kg hink",
+          "note": "Två skikt på jämnt underlag, ca 1,5 kg/m². Verklig täckning beror på underlagets förhållanden och porositet.",
+          "usage": true
+        },
+        {
           "type": "button",
           "kind": "download",
           "text": "Tekniskt datablad (TDS)",
@@ -106,6 +114,14 @@
         {
           "type": "text",
           "html": "Ercole® is a cement-based powder (ready mix) that eliminates the need to remove old or damaged concrete by renovating with a durable and flexible coating. It is ready to use, only water is added. It is a new generation of material applied at about 1-3 mm that delivers high performance. Ercole® is highly versatile and easy to apply. Thanks to its extraordinary adhesion it can be used as a coating on asphalt, plaster, wood, metal, concrete and other surfaces. Ercole® was developed in cooperation with Super-Krete Int. Inc. in San Diego, California, USA."
+        },
+        {
+          "type": "stat",
+          "label": "Consumption",
+          "value": "15 m²",
+          "unit": "per 25 kg bucket",
+          "note": "Two coats on an even substrate, about 1.5 kg/m². The actual coverage depends on the substrate and its porosity.",
+          "usage": true
         },
         {
           "type": "button",
@@ -184,6 +200,14 @@
           "html": "Ercole® es un polvo a base de cemento (mezcla lista para usar) que elimina la necesidad de retirar hormigón viejo o dañado mediante su renovación con un recubrimiento duradero y flexible. Está listo para usar: solo hay que añadir agua. Es una nueva generación de material que se aplica con unos 1-3 mm de espesor y ofrece un alto rendimiento. Ercole® es muy versátil y fácil de aplicar. Gracias a su extraordinaria adherencia, puede utilizarse como recubrimiento sobre asfalto, yeso, madera, metal, hormigón y otras superficies. Ercole® se desarrolló en colaboración con Super-Krete Int. Inc. en San Diego, California (EE. UU.)."
         },
         {
+          "type": "stat",
+          "label": "Consumo",
+          "value": "15 m²",
+          "unit": "por cubo de 25 kg",
+          "note": "Dos capas sobre un soporte regular, unos 1,5 kg/m². El rendimiento real depende del soporte y de su porosidad.",
+          "usage": true
+        },
+        {
           "type": "button",
           "kind": "download",
           "text": "Ficha técnica (TDS)",
@@ -258,6 +282,14 @@
         {
           "type": "text",
           "html": "Ercole® er et sementbasert pulver (ferdigblanding) som eliminerer behovet for å fjerne gammel eller skadet betong ved renovering med et slitesterkt og fleksibelt belegg. Det er klart til bruk, det tilsettes bare vann. Det er en ny generasjon materiale som påføres med ca. 1-3 mm og gir høy ytelse. Ercole® er svært allsidig og lett å påføre. Takket være den ekstraordinære heftingen kan det brukes som belegg på asfalt, gips, tre, metall, betong og andre flater. Ercole® er utviklet i samarbeid med Super-Krete Int. Inc. i San Diego, California, USA."
+        },
+        {
+          "type": "stat",
+          "label": "Forbruk",
+          "value": "15 m²",
+          "unit": "per 25 kg bøtte",
+          "note": "To strøk på jevnt underlag, ca. 1,5 kg/m². Faktisk dekning avhenger av underlaget og dets porøsitet.",
+          "usage": true
         },
         {
           "type": "button",

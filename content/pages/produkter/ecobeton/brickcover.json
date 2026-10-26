@@ -33,6 +33,14 @@
           "html": "Brickcover® är ett speciellt impregneringsmedel som skyddar tegel och sten mot försämring. Tack vare sin speciella katalysator tränger den djupt in i alla absorberande material och lämnar ytan och utseendet av stenen naturligt och oförändrat. Brickcover® är icke-toxiskt och lämnar ingen ytfilm. Formulan bygger på kaliumsalt som gör att behandlingen ger en extremt lång livslängd som är effektiv både på horisontella och vertikala ytor. Brickcover® tränger in i strukturen och tillåter materialet att andas normalt. Skyddar beläggning mot försämring och gör den resistent mot frys-/tin-cykler. Vid korrekt tillämpning är behandlingen garanterad för 8-10 år."
         },
         {
+          "type": "stat",
+          "label": "Åtgång",
+          "value": "4-7 m²",
+          "unit": "per liter",
+          "note": "Beror på materialets porositet.",
+          "usage": true
+        },
+        {
           "type": "button",
           "kind": "download",
           "text": "Tekniskt datablad (TDS)",
@@ -112,6 +120,14 @@
         {
           "type": "text",
           "html": "Brickcover® is a special impregnating agent that protects brick and stone against deterioration. Thanks to its special catalyst it penetrates deep into all absorbent materials and leaves the surface and appearance of the stone natural and unchanged. Brickcover® is non-toxic and leaves no surface film. The formula is based on potassium salt, which gives the treatment an extremely long service life, effective on both horizontal and vertical surfaces. Brickcover® penetrates the structure and allows the material to breathe normally. It protects the surface against deterioration and makes it resistant to freeze/thaw cycles. When applied correctly, the treatment is guaranteed for 8-10 years."
+        },
+        {
+          "type": "stat",
+          "label": "Consumption",
+          "value": "4-7 m²",
+          "unit": "per litre",
+          "note": "Depends on the porosity of the material.",
+          "usage": true
         },
         {
           "type": "button",
@@ -196,6 +212,14 @@
           "html": "Brickcover® es un impregnante especial que protege el ladrillo y la piedra frente al deterioro. Gracias a su catalizador especial penetra profundamente en todos los materiales absorbentes y deja la superficie y el aspecto de la piedra naturales e inalterados. Brickcover® no es tóxico y no deja película superficial. La fórmula se basa en sal de potasio, lo que confiere al tratamiento una vida útil extremadamente larga, eficaz tanto en superficies horizontales como verticales. Brickcover® penetra en la estructura y permite que el material respire con normalidad. Protege el revestimiento frente al deterioro y lo hace resistente a los ciclos de hielo y deshielo. Aplicado correctamente, el tratamiento está garantizado durante 8-10 años."
         },
         {
+          "type": "stat",
+          "label": "Consumo",
+          "value": "4-7 m²",
+          "unit": "por litro",
+          "note": "Depende de la porosidad del material.",
+          "usage": true
+        },
+        {
           "type": "button",
           "kind": "download",
           "text": "Ficha técnica (TDS)",
@@ -276,6 +300,14 @@
         {
           "type": "text",
           "html": "Brickcover® er et spesielt impregneringsmiddel som beskytter tegl og stein mot nedbrytning. Takket være sin spesielle katalysator trenger det dypt inn i alle absorberende materialer og lar overflaten og steinens utseende forbli naturlig og uendret. Brickcover® er ikke-giftig og etterlater ingen overflatefilm. Formelen er basert på kaliumsalt, noe som gir behandlingen en ekstremt lang levetid, effektiv på både horisontale og vertikale flater. Brickcover® trenger inn i strukturen og lar materialet puste normalt. Det beskytter belegget mot nedbrytning og gjør det motstandsdyktig mot fryse-/tinesykluser. Ved korrekt påføring er behandlingen garantert i 8-10 år."
+        },
+        {
+          "type": "stat",
+          "label": "Forbruk",
+          "value": "4-7 m²",
+          "unit": "per liter",
+          "note": "Avhenger av materialets porøsitet.",
+          "usage": true
         },
         {
           "type": "button",

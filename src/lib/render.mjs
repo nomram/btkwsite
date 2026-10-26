@@ -60,6 +60,7 @@ function blockIsEmpty(b) {
     case "datasheet": return !((b.groups || []).length || (b.intro || []).some(Boolean));
     case "chips": case "list": return !(b.items || []).some(Boolean);
     case "cta": return !b.title;
+    case "stat": return !b.value;
     case "carousel": return !(b.items || []).some((x) => x && x.src);
     case "compare": return !b.src || !b.src2;
     case "perfchart": return perfChartEmpty(b);
@@ -89,6 +90,7 @@ const ICON = {
   external: '<svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>',
   arrow: '<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14m-6-6l6 6-6 6"/></svg>',
   mail: '<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>',
+  layers: '<svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l9 5-9 5-9-5 9-5z"/><path d="M3 12.5l9 5 9-5M3 17l9 5 9-5"/></svg>',
   phone: '<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg>'
 };
 
@@ -292,6 +294,12 @@ function renderContact(ctx) {
 
 function renderChips(ctx, b) {
   return `<section class="chips">${b.title ? `<h2${editFld(ctx, "title")}>${esc(b.title)}</h2>` : ""}<ul class="chips__list">${(b.items || []).map((i, j) => `<li${editFld(ctx, `items.${j}`)}>${esc(i)}</li>`).join("")}</ul></section>`;
+}
+
+// Key figure that sits at the bottom right of the text above it (consumption of a product): label, big value, unit, small note
+function renderStat(ctx, b) {
+  const f = (n, v, cls, tag = "span") => (v || ctx.edit ? `<${tag} class="${cls}"${editFld(ctx, n)}>${esc(v || "")}</${tag}>` : "");
+  return `<aside class="stat" aria-label="${esc(b.label || "")}"><div class="stat__card"><span class="stat__ico" aria-hidden="true">${ICON.layers || ICON.info}</span><div class="stat__body">${f("label", b.label, "stat__label")}<p class="stat__main"><b class="stat__value"${editFld(ctx, "value")}>${esc(b.value || "")}</b>${f("unit", b.unit, "stat__unit")}</p>${f("note", b.note, "stat__note", "p")}</div></div></aside>`;
 }
 
 function renderCta(ctx, b) {
@@ -641,6 +649,7 @@ function renderBlockInner(ctx, b) {
     case "rangechart": return renderRangeChart(ctx, b);
     case "chips": return renderChips(ctx, b);
     case "cta": return renderCta(ctx, b);
+    case "stat": return renderStat(ctx, b);
     case "html": return b.html || "";
     default: return "";
   }

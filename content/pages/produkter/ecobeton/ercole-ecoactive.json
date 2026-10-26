@@ -33,6 +33,14 @@
           "html": "Ercole® ECOACTIVE är en fotokatalytisk cementbaserad blandning för beläggning där man vill uppnå minskad luftförorening. Den kan även tillämpas där det krävs liten tjocklek. Ercole®ECOACTIVE aktiverar en kemisk reaktion som skapar nedbrytning av föroreningar. Ercole®ECOACTIVE ger över 60% minskning av föroreningar, säkerställer avlägsnande av partiklar och gör luften ren och frisk. Ercole®ECOACTIVE är säkert och hållbart, vattentät och resistent. Kan användas på betong, trä och asfalt, både inomhus och utomhus."
         },
         {
+          "type": "stat",
+          "label": "Åtgång",
+          "value": "1,5 kg/m²",
+          "unit": "(två skikt)",
+          "note": "På slät, oskadad yta. Verklig täckning beror på underlag och porositet.",
+          "usage": true
+        },
+        {
           "type": "button",
           "kind": "download",
           "text": "Tekniskt datablad (TDS)",
@@ -110,6 +118,14 @@
         {
           "type": "text",
           "html": "Ercole® ECOACTIVE is a photocatalytic cement-based mix for coatings where reduced air pollution is desired. It can also be used where a small thickness is required. Ercole® ECOACTIVE triggers a chemical reaction that breaks down pollutants. Ercole® ECOACTIVE delivers over 60% reduction of pollutants, ensures the removal of particles and makes the air clean and fresh. Ercole® ECOACTIVE is safe and durable, waterproof and resistant. It can be used on concrete, wood and asphalt, both indoors and outdoors."
+        },
+        {
+          "type": "stat",
+          "label": "Consumption",
+          "value": "1.5 kg/m²",
+          "unit": "(two coats)",
+          "note": "On a smooth, undamaged surface. The actual coverage depends on the substrate and its porosity.",
+          "usage": true
         },
         {
           "type": "button",
@@ -192,6 +208,14 @@
           "html": "Ercole® ECOACTIVE es una mezcla fotocatalítica a base de cemento para recubrimientos en los que se desea reducir la contaminación del aire. También puede aplicarse donde se requiere poco espesor. Ercole® ECOACTIVE activa una reacción química que descompone los contaminantes. Ercole® ECOACTIVE logra una reducción de más del 60 % de los contaminantes, garantiza la eliminación de partículas y deja el aire limpio y fresco. Ercole® ECOACTIVE es seguro y duradero, impermeable y resistente. Puede usarse sobre hormigón, madera y asfalto, tanto en interiores como en exteriores."
         },
         {
+          "type": "stat",
+          "label": "Consumo",
+          "value": "1,5 kg/m²",
+          "unit": "(dos capas)",
+          "note": "Sobre una superficie lisa y sin daños. El rendimiento real depende del soporte y de su porosidad.",
+          "usage": true
+        },
+        {
           "type": "button",
           "kind": "download",
           "text": "Ficha técnica (TDS)",
@@ -270,6 +294,14 @@
         {
           "type": "text",
           "html": "Ercole® ECOACTIVE er en fotokatalytisk sementbasert blanding for belegg der man ønsker redusert luftforurensning. Den kan også brukes der det kreves liten tykkelse. Ercole® ECOACTIVE aktiverer en kjemisk reaksjon som bryter ned forurensning. Ercole® ECOACTIVE gir over 60 % reduksjon av forurensning, sikrer fjerning av partikler og gjør luften ren og frisk. Ercole® ECOACTIVE er trygt og holdbart, vanntett og motstandsdyktig. Kan brukes på betong, tre og asfalt, både innendørs og utendørs."
+        },
+        {
+          "type": "stat",
+          "label": "Forbruk",
+          "value": "1,5 kg/m²",
+          "unit": "(to strøk)",
+          "note": "På glatt, uskadet underlag. Faktisk dekning avhenger av underlaget og dets porøsitet.",
+          "usage": true
         },
         {
           "type": "button",

@@ -51,6 +51,14 @@
           "html": "EverCrete® Vetrofluid överensstämmer med föreskrifterna i EG-direktivet 89/106 och uppfyller kraven i standarden EN 1504-2."
         },
         {
+          "type": "stat",
+          "label": "Åtgång",
+          "value": "2-4 m²",
+          "unit": "per liter",
+          "note": "Beror på hur sugande betongen är. Tekniska data gäller dosering 400 g/m².",
+          "usage": true
+        },
+        {
           "type": "html",
           "html": "<p class=\"accepted\"><span class=\"accepted__lead\">Redovisad i BASTA mot krav från bland andra</span> <span class=\"accepted__logos\"><img src=\"/assets/partners/trafikverket.svg\" alt=\"Trafikverket\" width=\"84\" height=\"18\" loading=\"lazy\"><img src=\"/assets/partners/svenska-kraftnat.svg\" alt=\"Svenska kraftnät\" width=\"84\" height=\"24\" loading=\"lazy\"><img src=\"/assets/partners/miljobyggnad.svg\" alt=\"Miljöbyggnad\" width=\"26\" height=\"34\" loading=\"lazy\"><img src=\"/assets/partners/breeam.svg\" alt=\"BREEAM\" width=\"84\" height=\"15\" loading=\"lazy\"></span> <span class=\"accepted__etc\">m.fl.</span></p>"
         },
@@ -122,6 +130,14 @@
         {
           "type": "text",
           "html": "EverCrete® Vetrofluid complies with the provisions of EC Directive 89/106 and meets the requirements of standard EN 1504-2."
+        },
+        {
+          "type": "stat",
+          "label": "Consumption",
+          "value": "2-4 m²",
+          "unit": "per litre",
+          "note": "Depends on how absorbent the concrete is. The technical data apply to a dosage of 400 g/m².",
+          "usage": true
         },
         {
           "type": "html",
@@ -198,6 +214,14 @@
           "html": "EverCrete® Vetrofluid cumple las disposiciones de la Directiva CE 89/106 y los requisitos de la norma EN 1504-2."
         },
         {
+          "type": "stat",
+          "label": "Consumo",
+          "value": "2-4 m²",
+          "unit": "por litro",
+          "note": "Depende de lo absorbente que sea el hormigón. Los datos técnicos corresponden a una dosificación de 400 g/m².",
+          "usage": true
+        },
+        {
           "type": "html",
           "html": "<p class=\"accepted\"><span class=\"accepted__lead\">Declarado en BASTA frente a los requisitos de, entre otros,</span> <span class=\"accepted__logos\"><img src=\"/assets/partners/trafikverket.svg\" alt=\"Trafikverket\" width=\"84\" height=\"18\" loading=\"lazy\"><img src=\"/assets/partners/svenska-kraftnat.svg\" alt=\"Svenska kraftnät\" width=\"84\" height=\"24\" loading=\"lazy\"><img src=\"/assets/partners/miljobyggnad.svg\" alt=\"Miljöbyggnad\" width=\"26\" height=\"34\" loading=\"lazy\"><img src=\"/assets/partners/breeam.svg\" alt=\"BREEAM\" width=\"84\" height=\"15\" loading=\"lazy\"></span> <span class=\"accepted__etc\">etc.</span></p>"
         },
@@ -270,6 +294,14 @@
         {
           "type": "text",
           "html": "EverCrete® Vetrofluid er i samsvar med bestemmelsene i EF-direktiv 89/106 og oppfyller kravene i standarden EN 1504-2."
+        },
+        {
+          "type": "stat",
+          "label": "Forbruk",
+          "value": "2-4 m²",
+          "unit": "per liter",
+          "note": "Avhenger av hvor sugende betongen er. De tekniske dataene gjelder dosering 400 g/m².",
+          "usage": true
         },
         {
           "type": "html",

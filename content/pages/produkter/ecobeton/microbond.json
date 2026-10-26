@@ -41,6 +41,14 @@
           "html": "Täckningen är 1,5 kg per kvm (som är ca. 15 - 16 kvadratmeter per 25 kg-hink vid tjocklek på ca. 1mm). För nybörjare kan man räkna med 1.5 - 2 kg per kvm."
         },
         {
+          "type": "stat",
+          "label": "Åtgång",
+          "value": "30 m²",
+          "unit": "per 25 kg hink",
+          "note": "Tunt skikt. Vid ca 1 mm går det åt ca 1,5 kg/m² (15-16 m² per hink).",
+          "usage": true
+        },
+        {
           "type": "button",
           "kind": "download",
           "text": "Infoblad",
@@ -139,6 +147,14 @@
         {
           "type": "text",
           "html": "Coverage is 1.5 kg per m² (approx. 15-16 square metres per 25 kg bucket at a thickness of about 1 mm). For beginners, allow 1.5-2 kg per m²."
+        },
+        {
+          "type": "stat",
+          "label": "Consumption",
+          "value": "30 m²",
+          "unit": "per 25 kg bucket",
+          "note": "Thin coat. At about 1 mm it takes about 1.5 kg/m² (15-16 m² per bucket).",
+          "usage": true
         },
         {
           "type": "button",
@@ -242,6 +258,14 @@
           "html": "El rendimiento es de 1,5 kg por m² (aprox. 15-16 metros cuadrados por cubo de 25 kg con un espesor de unos 1 mm). Para principiantes, cuente con 1,5-2 kg por m²."
         },
         {
+          "type": "stat",
+          "label": "Consumo",
+          "value": "30 m²",
+          "unit": "por cubo de 25 kg",
+          "note": "Capa fina. Con unos 1 mm se necesitan unos 1,5 kg/m² (15-16 m² por cubo).",
+          "usage": true
+        },
+        {
           "type": "button",
           "kind": "download",
           "text": "Hoja informativa",
@@ -341,6 +365,14 @@
         {
           "type": "text",
           "html": "Dekningen er 1,5 kg per kvm (ca. 15-16 kvadratmeter per 25 kg-bøtte ved ca. 1 mm tykkelse). For nybegynnere kan man regne med 1,5-2 kg per kvm."
+        },
+        {
+          "type": "stat",
+          "label": "Forbruk",
+          "value": "30 m²",
+          "unit": "per 25 kg bøtte",
+          "note": "Tynt lag. Ved ca. 1 mm går det med ca. 1,5 kg/m² (15-16 m² per bøtte).",
+          "usage": true
         },
         {
           "type": "button",

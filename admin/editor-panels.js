@@ -65,6 +65,7 @@ function snippet(b) {
     case "datasheet": return b.title || t("block_datasheet");
     case "chips": return (b.items || []).filter(Boolean).slice(0, 4).join(", ") || t("empty");
     case "cta": return b.title || t("empty");
+    case "stat": return [b.value, b.unit].filter(Boolean).join(" ") || t("empty");
     case "columns": return plainText((((b.left || [])[0]) || {}).html || (((b.left || [])[0]) || {}).text || "") || t("block_columns");
     default: return "";
   }
@@ -228,6 +229,9 @@ function panelBlock() {
       break;
     case "chips":
       body = F(t("heading"), inp("title", b.title)) + F(t("one_per_line"), `<textarea data-bf="items" data-t="lines" rows="7">${esc((b.items || []).join("\n"))}</textarea>`);
+      break;
+    case "stat":
+      body = F(t("stat_label"), inp("label", b.label)) + F(t("stat_value"), inp("value", b.value)) + F(t("stat_unit"), inp("unit", b.unit)) + F(t("stat_note"), inp("note", b.note));
       break;
     case "cta":
       body = F(t("heading"), inp("title", b.title)) + F(t("supporting_text"), inp("text", b.text)) + F(t("button_text"), inp("button", b.button)) +
