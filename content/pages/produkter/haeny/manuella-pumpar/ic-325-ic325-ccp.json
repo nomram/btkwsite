@@ -24,9 +24,9 @@
         {
           "type": "image",
           "alt": "HÄNY IC 325 & IC325 CCP, bild 2",
-          "width": 1800,
-          "height": 1800,
-          "src": "/assets/img/haeny-ic325-ccp-combo.webp"
+          "width": 1042,
+          "height": 1139,
+          "src": "/assets/img/haeny-manuella-pumpar-ic-325-ic325-ccp-2.webp"
         },
         {
           "type": "heading",
@@ -693,12 +693,14 @@
           "layout": "tiles",
           "columns": 1,
           "narrow": true,
+          "zoom": true,
           "more": false,
           "items": [
             {
               "title": "Mått och ritning",
               "image": "/assets/img/haeny-ic325-dim.webp",
               "alt": "Mått och ritning IC 325",
+              "text": "Håll muspekaren över ritningen (eller tryck och dra) för 2× förstoring.",
               "width": 1509,
               "height": 2015
             }
@@ -706,11 +708,60 @@
           "gen": true
         },
         {
-          "type": "image",
-          "alt": "HÄNY IC 325 & IC325 CCP, bild 3",
-          "width": 800,
-          "height": 753,
-          "src": "/assets/img/haeny-manuella-pumpar-ic-325-ic325-ccp-3.webp"
+          "type": "columns",
+          "ratio": "40-60",
+          "left": [
+            {
+              "type": "image",
+              "alt": "Häny IC325 CCP: IC325 med CCP-modul",
+              "src": "/assets/img/haeny-ic325-ccp-combo.webp",
+              "width": 1800,
+              "height": 1800
+            }
+          ],
+          "right": [
+            {
+              "type": "heading",
+              "level": 2,
+              "text": "Häny IC325 CCP",
+              "anchor": "ic325-ccp"
+            },
+            {
+              "type": "text",
+              "html": "Hänys nyaste modell och flaggskepp - kompakt injekteringsplatform för cementslurry samt injektering at polyuretan. IC325 CCP består av IC325 (från ovan) samt en extra enhet/modul med högtryckspumpen WIWA K2 för blandning/injektering av polyuretan. Tilltagsenheten har också data-loggningsfunktionalitet."
+            },
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "Kapacitet: upp till 2 m³/h",
+                "Maxtryck: 100 bar",
+                "Vatten-cementförhållande: ≤ 0.35",
+                "Max partikelstorlek: 5 mm",
+                "Antal kolvar: 2 (dubbelpump)",
+                "Vikt: 840 kg",
+                "Mått: 2110 x 885 x 1590 mm"
+              ]
+            },
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "Stödjer tre metoder i samma system: endast cementslurry, endast 2K polyuretan (PU) eller kombinerad cement + PU (CCP-metod).",
+                "Integrerad WIWA K2-högtryckspump för exakt dosering",
+                "RASCOR statisk mixer för jämn och säker blandning",
+                "Helautomatisk styrning med realtidsloggning och full spårbarhet"
+              ]
+            },
+            {
+              "type": "text",
+              "html": "Låg underhållsnivå och minskat tvättbehov. Optimerad för trånga utrymmen - enkel att flytta och installera"
+            },
+            {
+              "type": "text",
+              "html": "<a href=\"/kontakta-oss\">Kontakta oss</a> för mer information."
+            }
+          ]
         },
         {
           "type": "carousel",
@@ -729,47 +780,6 @@
             }
           ],
           "autoplay": false
-        },
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "Häny IC325 CCP",
-          "anchor": "ic325-ccp"
-        },
-        {
-          "type": "text",
-          "html": "Hänys nyaste modell och flaggskepp - kompakt injekteringsplatform för cementslurry samt injektering at polyuretan. IC325 CCP består av IC325 (från ovan) samt en extra enhet/modul med högtryckspumpen WIWA K2 för blandning/injektering av polyuretan. Tilltagsenheten har också data-loggningsfunktionalitet."
-        },
-        {
-          "type": "list",
-          "ordered": false,
-          "items": [
-            "Kapacitet: upp till 2 m³/h",
-            "Maxtryck: 100 bar",
-            "Vatten-cementförhållande: ≤ 0.35",
-            "Max partikelstorlek: 5 mm",
-            "Antal kolvar: 2 (dubbelpump)",
-            "Vikt: 840 kg",
-            "Mått: 2110 x 885 x 1590 mm"
-          ]
-        },
-        {
-          "type": "list",
-          "ordered": false,
-          "items": [
-            "Stödjer tre metoder i samma systemEndast cementslurryEndast 2K polyuretan (PU)Kombinerad cement + PU (CCP-metod)",
-            "Integrerad WIWA K2-högtryckspump för exakt dosering",
-            "RASCOR statisk mixer för jämn och säker blandning",
-            "Helautomatisk styrning med realtidsloggning och full spårbarhet"
-          ]
-        },
-        {
-          "type": "text",
-          "html": "Låg underhållsnivå och minskat tvättbehov. Optimerad för trånga utrymmen - enkel att flytta och installera"
-        },
-        {
-          "type": "text",
-          "html": "<a href=\"/kontakta-oss\">Kontakta oss</a> för mer information."
         },
         {
           "type": "button",
@@ -1450,12 +1460,14 @@
           "layout": "tiles",
           "columns": 1,
           "narrow": true,
+          "zoom": true,
           "more": false,
           "items": [
             {
               "title": "Mått och ritning",
               "image": "/assets/img/haeny-ccp-dim.webp",
               "alt": "Mått och ritning IC 325CCP",
+              "text": "Håll muspekaren över ritningen (eller tryck och dra) för 2× förstoring.",
               "width": 1278,
               "height": 1856
             }
@@ -1480,9 +1492,9 @@
         {
           "type": "image",
           "alt": "HÄNY IC 325 & IC325 CCP, image 2",
-          "width": 1800,
-          "height": 1800,
-          "src": "/assets/img/haeny-ic325-ccp-combo.webp"
+          "width": 1042,
+          "height": 1139,
+          "src": "/assets/img/haeny-manuella-pumpar-ic-325-ic325-ccp-2.webp"
         },
         {
           "type": "heading",
@@ -2149,12 +2161,14 @@
           "layout": "tiles",
           "columns": 1,
           "narrow": true,
+          "zoom": true,
           "more": false,
           "items": [
             {
               "title": "Dimensions and drawing",
               "image": "/assets/img/haeny-ic325-dim.webp",
               "alt": "Dimensions and drawing IC 325",
+              "text": "Hover over the drawing (or touch and drag) for a 2× magnifier.",
               "width": 1509,
               "height": 2015
             }
@@ -2162,11 +2176,60 @@
           "gen": true
         },
         {
-          "type": "image",
-          "alt": "HÄNY IC 325 & IC325 CCP, image 3",
-          "width": 800,
-          "height": 753,
-          "src": "/assets/img/haeny-manuella-pumpar-ic-325-ic325-ccp-3.webp"
+          "type": "columns",
+          "ratio": "40-60",
+          "left": [
+            {
+              "type": "image",
+              "alt": "Häny IC325 CCP: IC325 with CCP module",
+              "src": "/assets/img/haeny-ic325-ccp-combo.webp",
+              "width": 1800,
+              "height": 1800
+            }
+          ],
+          "right": [
+            {
+              "type": "heading",
+              "level": 2,
+              "text": "Häny IC325 CCP",
+              "anchor": "ic325-ccp"
+            },
+            {
+              "type": "text",
+              "html": "Häny’s newest model and flagship, compact grouting platform for cement slurry as well as polyurethane injection. The IC325 CCP consists of the IC325 (from above) plus an extra unit/module with the WIWA K2 high-pressure pump for mixing/injecting polyurethane. The add-on unit also has data logging functionality."
+            },
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "Capacity: up to 2 m³/h",
+                "Max. pressure: 100 bar",
+                "Water/cement ratio: ≤ 0.35",
+                "Max. particle size: 5 mm",
+                "Number of pistons: 2 (double pump)",
+                "Weight: 840 kg",
+                "Dimensions: 2,110 x 885 x 1,590 mm"
+              ]
+            },
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "Supports three methods in the same system: cement slurry only; 2K polyurethane (PU) only; combined cement + PU (CCP method).",
+                "Integrated WIWA K2 high-pressure pump for precise dosing",
+                "RASCOR static mixer for even and reliable mixing",
+                "Fully automatic control with real-time logging and full traceability"
+              ]
+            },
+            {
+              "type": "text",
+              "html": "Low maintenance level and reduced washing needs. Optimised for confined spaces, easy to move and install"
+            },
+            {
+              "type": "text",
+              "html": "<a href=\"/kontakta-oss\">Contact us</a> for more information."
+            }
+          ]
         },
         {
           "type": "carousel",
@@ -2185,47 +2248,6 @@
             }
           ],
           "autoplay": false
-        },
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "Häny IC325 CCP",
-          "anchor": "ic325-ccp"
-        },
-        {
-          "type": "text",
-          "html": "Häny’s newest model and flagship, compact grouting platform for cement slurry as well as polyurethane injection. The IC325 CCP consists of the IC325 (from above) plus an extra unit/module with the WIWA K2 high-pressure pump for mixing/injecting polyurethane. The add-on unit also has data logging functionality."
-        },
-        {
-          "type": "list",
-          "ordered": false,
-          "items": [
-            "Capacity: up to 2 m³/h",
-            "Max. pressure: 100 bar",
-            "Water/cement ratio: ≤ 0.35",
-            "Max. particle size: 5 mm",
-            "Number of pistons: 2 (double pump)",
-            "Weight: 840 kg",
-            "Dimensions: 2,110 x 885 x 1,590 mm"
-          ]
-        },
-        {
-          "type": "list",
-          "ordered": false,
-          "items": [
-            "Supports three methods in the same system: cement slurry only; 2K polyurethane (PU) only; combined cement + PU (CCP method).",
-            "Integrated WIWA K2 high-pressure pump for precise dosing",
-            "RASCOR static mixer for even and reliable mixing",
-            "Fully automatic control with real-time logging and full traceability"
-          ]
-        },
-        {
-          "type": "text",
-          "html": "Low maintenance level and reduced washing needs. Optimised for confined spaces, easy to move and install"
-        },
-        {
-          "type": "text",
-          "html": "<a href=\"/kontakta-oss\">Contact us</a> for more information."
         },
         {
           "type": "button",
@@ -2906,12 +2928,14 @@
           "layout": "tiles",
           "columns": 1,
           "narrow": true,
+          "zoom": true,
           "more": false,
           "items": [
             {
               "title": "Dimensions and drawing",
               "image": "/assets/img/haeny-ccp-dim.webp",
               "alt": "Dimensions and drawing IC 325CCP",
+              "text": "Hover over the drawing (or touch and drag) for a 2× magnifier.",
               "width": 1278,
               "height": 1856
             }
@@ -2937,9 +2961,9 @@
         {
           "type": "image",
           "alt": "HÄNY IC 325 & IC325 CCP, imagen 2",
-          "width": 1800,
-          "height": 1800,
-          "src": "/assets/img/haeny-ic325-ccp-combo.webp"
+          "width": 1042,
+          "height": 1139,
+          "src": "/assets/img/haeny-manuella-pumpar-ic-325-ic325-ccp-2.webp"
         },
         {
           "type": "heading",
@@ -3606,12 +3630,14 @@
           "layout": "tiles",
           "columns": 1,
           "narrow": true,
+          "zoom": true,
           "more": false,
           "items": [
             {
               "title": "Dimensiones y plano",
               "image": "/assets/img/haeny-ic325-dim.webp",
               "alt": "Dimensiones y plano IC 325",
+              "text": "Pase el cursor sobre el plano (o toque y arrastre) para una lupa 2×.",
               "width": 1509,
               "height": 2015
             }
@@ -3619,11 +3645,60 @@
           "gen": true
         },
         {
-          "type": "image",
-          "alt": "HÄNY IC 325 & IC325 CCP, imagen 3",
-          "width": 800,
-          "height": 753,
-          "src": "/assets/img/haeny-manuella-pumpar-ic-325-ic325-ccp-3.webp"
+          "type": "columns",
+          "ratio": "40-60",
+          "left": [
+            {
+              "type": "image",
+              "alt": "Häny IC325 CCP: IC325 con módulo CCP",
+              "src": "/assets/img/haeny-ic325-ccp-combo.webp",
+              "width": 1800,
+              "height": 1800
+            }
+          ],
+          "right": [
+            {
+              "type": "heading",
+              "level": 2,
+              "text": "Häny IC325 CCP",
+              "anchor": "ic325-ccp"
+            },
+            {
+              "type": "text",
+              "html": "El modelo más reciente y buque insignia de Häny: plataforma de inyección compacta para lechada de cemento e inyección de poliuretano. El IC325 CCP consta del IC325 (descrito arriba) y una unidad/módulo adicional con la bomba de alta presión WIWA K2 para mezclar/inyectar poliuretano. La unidad adicional también tiene función de registro de datos."
+            },
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "Capacidad: hasta 2 m³/h",
+                "Presión máx.: 100 bar",
+                "Relación agua/cemento: ≤ 0,35",
+                "Tamaño máx. de partícula: 5 mm",
+                "Número de pistones: 2 (bomba doble)",
+                "Peso: 840 kg",
+                "Dimensiones: 2110 x 885 x 1590 mm"
+              ]
+            },
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "Admite tres métodos en el mismo sistema: solo lechada de cemento; solo poliuretano (PU) de 2 componentes; cemento + PU combinados (método CCP).",
+                "Bomba de alta presión WIWA K2 integrada para una dosificación precisa",
+                "Mezclador estático RASCOR para una mezcla uniforme y segura",
+                "Control totalmente automático con registro en tiempo real y trazabilidad completa"
+              ]
+            },
+            {
+              "type": "text",
+              "html": "Bajo nivel de mantenimiento y menor necesidad de lavado. Optimizada para espacios reducidos: fácil de trasladar e instalar"
+            },
+            {
+              "type": "text",
+              "html": "<a href=\"/kontakta-oss\">Contáctenos</a> para más información."
+            }
+          ]
         },
         {
           "type": "carousel",
@@ -3642,47 +3717,6 @@
             }
           ],
           "autoplay": false
-        },
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "Häny IC325 CCP",
-          "anchor": "ic325-ccp"
-        },
-        {
-          "type": "text",
-          "html": "El modelo más reciente y buque insignia de Häny: plataforma de inyección compacta para lechada de cemento e inyección de poliuretano. El IC325 CCP consta del IC325 (descrito arriba) y una unidad/módulo adicional con la bomba de alta presión WIWA K2 para mezclar/inyectar poliuretano. La unidad adicional también tiene función de registro de datos."
-        },
-        {
-          "type": "list",
-          "ordered": false,
-          "items": [
-            "Capacidad: hasta 2 m³/h",
-            "Presión máx.: 100 bar",
-            "Relación agua/cemento: ≤ 0,35",
-            "Tamaño máx. de partícula: 5 mm",
-            "Número de pistones: 2 (bomba doble)",
-            "Peso: 840 kg",
-            "Dimensiones: 2110 x 885 x 1590 mm"
-          ]
-        },
-        {
-          "type": "list",
-          "ordered": false,
-          "items": [
-            "Admite tres métodos en el mismo sistema: solo lechada de cemento; solo poliuretano (PU) de 2 componentes; cemento + PU combinados (método CCP).",
-            "Bomba de alta presión WIWA K2 integrada para una dosificación precisa",
-            "Mezclador estático RASCOR para una mezcla uniforme y segura",
-            "Control totalmente automático con registro en tiempo real y trazabilidad completa"
-          ]
-        },
-        {
-          "type": "text",
-          "html": "Bajo nivel de mantenimiento y menor necesidad de lavado. Optimizada para espacios reducidos: fácil de trasladar e instalar"
-        },
-        {
-          "type": "text",
-          "html": "<a href=\"/kontakta-oss\">Contáctenos</a> para más información."
         },
         {
           "type": "button",
@@ -4363,12 +4397,14 @@
           "layout": "tiles",
           "columns": 1,
           "narrow": true,
+          "zoom": true,
           "more": false,
           "items": [
             {
               "title": "Dimensiones y plano",
               "image": "/assets/img/haeny-ccp-dim.webp",
               "alt": "Dimensiones y plano IC 325CCP",
+              "text": "Pase el cursor sobre el plano (o toque y arrastre) para una lupa 2×.",
               "width": 1278,
               "height": 1856
             }
@@ -4394,9 +4430,9 @@
         {
           "type": "image",
           "alt": "HÄNY IC 325 & IC325 CCP, bilde 2",
-          "width": 1800,
-          "height": 1800,
-          "src": "/assets/img/haeny-ic325-ccp-combo.webp"
+          "width": 1042,
+          "height": 1139,
+          "src": "/assets/img/haeny-manuella-pumpar-ic-325-ic325-ccp-2.webp"
         },
         {
           "type": "heading",
@@ -5063,12 +5099,14 @@
           "layout": "tiles",
           "columns": 1,
           "narrow": true,
+          "zoom": true,
           "more": false,
           "items": [
             {
               "title": "Mål og tegning",
               "image": "/assets/img/haeny-ic325-dim.webp",
               "alt": "Mål og tegning IC 325",
+              "text": "Hold musepekeren over tegningen (eller trykk og dra) for 2× forstørrelse.",
               "width": 1509,
               "height": 2015
             }
@@ -5076,11 +5114,60 @@
           "gen": true
         },
         {
-          "type": "image",
-          "alt": "HÄNY IC 325 & IC325 CCP, bilde 3",
-          "width": 800,
-          "height": 753,
-          "src": "/assets/img/haeny-manuella-pumpar-ic-325-ic325-ccp-3.webp"
+          "type": "columns",
+          "ratio": "40-60",
+          "left": [
+            {
+              "type": "image",
+              "alt": "Häny IC325 CCP: IC325 med CCP-modul",
+              "src": "/assets/img/haeny-ic325-ccp-combo.webp",
+              "width": 1800,
+              "height": 1800
+            }
+          ],
+          "right": [
+            {
+              "type": "heading",
+              "level": 2,
+              "text": "Häny IC325 CCP",
+              "anchor": "ic325-ccp"
+            },
+            {
+              "type": "text",
+              "html": "Hänys nyeste modell og flaggskip, kompakt injiseringsplattform for sementslurry samt injisering av polyuretan. IC325 CCP består av IC325 (fra ovenfor) samt en ekstra enhet/modul med høytrykkspumpen WIWA K2 for blanding/injisering av polyuretan. Tilleggsenheten har også dataloggingsfunksjon."
+            },
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "Kapasitet: opptil 2 m³/t",
+                "Maks. trykk: 100 bar",
+                "Vann/sement-forhold: ≤ 0,35",
+                "Maks. partikkelstørrelse: 5 mm",
+                "Antall stempler: 2 (dobbeltpumpe)",
+                "Vekt: 840 kg",
+                "Mål: 2 110 x 885 x 1 590 mm"
+              ]
+            },
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "Støtter tre metoder i samme system: kun sementslurry; kun 2K polyuretan (PU); kombinert sement + PU (CCP-metode).",
+                "Integrert WIWA K2 høytrykkspumpe for nøyaktig dosering",
+                "RASCOR statisk mikser for jevn og sikker blanding",
+                "Helautomatisk styring med sanntidslogging og full sporbarhet"
+              ]
+            },
+            {
+              "type": "text",
+              "html": "Lavt vedlikeholdsnivå og redusert vaskebehov. Optimalisert for trange rom, enkel å flytte og installere"
+            },
+            {
+              "type": "text",
+              "html": "<a href=\"/kontakta-oss\">Kontakt oss</a> for mer informasjon."
+            }
+          ]
         },
         {
           "type": "carousel",
@@ -5099,47 +5186,6 @@
             }
           ],
           "autoplay": false
-        },
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "Häny IC325 CCP",
-          "anchor": "ic325-ccp"
-        },
-        {
-          "type": "text",
-          "html": "Hänys nyeste modell og flaggskip, kompakt injiseringsplattform for sementslurry samt injisering av polyuretan. IC325 CCP består av IC325 (fra ovenfor) samt en ekstra enhet/modul med høytrykkspumpen WIWA K2 for blanding/injisering av polyuretan. Tilleggsenheten har også dataloggingsfunksjon."
-        },
-        {
-          "type": "list",
-          "ordered": false,
-          "items": [
-            "Kapasitet: opptil 2 m³/t",
-            "Maks. trykk: 100 bar",
-            "Vann/sement-forhold: ≤ 0,35",
-            "Maks. partikkelstørrelse: 5 mm",
-            "Antall stempler: 2 (dobbeltpumpe)",
-            "Vekt: 840 kg",
-            "Mål: 2 110 x 885 x 1 590 mm"
-          ]
-        },
-        {
-          "type": "list",
-          "ordered": false,
-          "items": [
-            "Støtter tre metoder i samme system: kun sementslurry; kun 2K polyuretan (PU); kombinert sement + PU (CCP-metode).",
-            "Integrert WIWA K2 høytrykkspumpe for nøyaktig dosering",
-            "RASCOR statisk mikser for jevn og sikker blanding",
-            "Helautomatisk styring med sanntidslogging og full sporbarhet"
-          ]
-        },
-        {
-          "type": "text",
-          "html": "Lavt vedlikeholdsnivå og redusert vaskebehov. Optimalisert for trange rom, enkel å flytte og installere"
-        },
-        {
-          "type": "text",
-          "html": "<a href=\"/kontakta-oss\">Kontakt oss</a> for mer informasjon."
         },
         {
           "type": "button",
@@ -5820,12 +5866,14 @@
           "layout": "tiles",
           "columns": 1,
           "narrow": true,
+          "zoom": true,
           "more": false,
           "items": [
             {
               "title": "Mål og tegning",
               "image": "/assets/img/haeny-ccp-dim.webp",
               "alt": "Mål og tegning IC 325CCP",
+              "text": "Hold musepekeren over tegningen (eller trykk og dra) for 2× forstørrelse.",
               "width": 1278,
               "height": 1856
             }

@@ -1024,3 +1024,15 @@ h2[id], h3[id] { scroll-margin-top: 5rem; }
 }
 /* the dimension drawings are small reference pictures */
 .modules.modules--narrow, .prose .modules.modules--narrow { max-width: 27rem; grid-template-columns: minmax(0, 1fr); }
+/* 2x magnifier on the drawings: a small crosshair at the pointer, the lens off to one side */
+.modules--zoom .module__media { position: relative; cursor: crosshair; touch-action: pan-y; }
+.zoom__cross { position: absolute; z-index: 2; width: 30px; height: 30px; margin: -15px 0 0 -15px; pointer-events: none; }
+.zoom__cross[hidden] { display: none; }
+.zoom__cross::before, .zoom__cross::after { content: ""; position: absolute; background: #d4380d; box-shadow: 0 0 0 1px rgba(255, 255, 255, .9); }
+.zoom__cross::before { left: 0; right: 0; top: 14px; height: 2px; -webkit-mask: linear-gradient(90deg, #000 0 10px, transparent 10px 20px, #000 20px); mask: linear-gradient(90deg, #000 0 10px, transparent 10px 20px, #000 20px); }
+.zoom__cross::after { top: 0; bottom: 0; left: 14px; width: 2px; -webkit-mask: linear-gradient(180deg, #000 0 10px, transparent 10px 20px, #000 20px); mask: linear-gradient(180deg, #000 0 10px, transparent 10px 20px, #000 20px); }
+.zoom__lens { position: fixed; z-index: 70; width: 150px; height: 150px; border: 3px solid #fff; border-radius: 50%; background: #fff no-repeat; box-shadow: 0 0 0 1px rgba(0, 0, 0, .35), 0 10px 28px rgba(0, 0, 0, .3); pointer-events: none; }
+.zoom__lens[hidden] { display: none; }
+.zoom__lens::before, .zoom__lens::after { content: ""; position: absolute; background: #d4380d; }
+.zoom__lens::before { left: 50%; top: 50%; width: 14px; height: 2px; margin: -1px 0 0 -7px; }
+.zoom__lens::after { left: 50%; top: 50%; width: 2px; height: 14px; margin: -7px 0 0 -1px; }

@@ -819,6 +819,43 @@
     }
   });
 
+  // ---------- drawings: a 2x magnifying glass beside a small crosshair ----------
+  // The crosshair marks the point under the pointer; the lens shows that point at twice the size and sits a little way off, up and to the
+  // right of the crosshair (or on the other side near an edge), so it never covers it. Mouse: hover. Touch: touch and drag sideways.
+  [].forEach.call(document.querySelectorAll(".modules--zoom .module__media"), function (media) {
+    var img = media.querySelector("img");
+    if (!img) return;
+    var LENS = 150, GAP = 26, hideTimer = 0;
+    var cross = document.createElement("span"); cross.className = "zoom__cross"; cross.hidden = true; cross.setAttribute("aria-hidden", "true");
+    var lens = document.createElement("div"); lens.className = "zoom__lens"; lens.hidden = true; lens.setAttribute("aria-hidden", "true");
+    media.appendChild(cross); document.body.appendChild(lens);
+    function big() {
+      var best = img.currentSrc || img.src, w = 0;
+      String(img.getAttribute("srcset") || "").split(",").forEach(function (p) { var m = /(\S+)\s+(\d+)w/.exec(p.trim()); if (m && Number(m[2]) > w) { w = Number(m[2]); best = m[1]; } });
+      return best;
+    }
+    function hide() { cross.hidden = true; lens.hidden = true; }
+    function show(e) {
+      clearTimeout(hideTimer);
+      var r = img.getBoundingClientRect(), x = e.clientX - r.left, y = e.clientY - r.top;
+      if (x < 0 || y < 0 || x > r.width || y > r.height) { hide(); return; }
+      var mr = media.getBoundingClientRect();
+      cross.style.left = (e.clientX - mr.left) + "px"; cross.style.top = (e.clientY - mr.top) + "px"; cross.hidden = false;
+      lens.style.backgroundImage = "url(" + big() + ")";
+      lens.style.backgroundSize = (r.width * 2) + "px " + (r.height * 2) + "px";
+      lens.style.backgroundPosition = (LENS / 2 - x * 2) + "px " + (LENS / 2 - y * 2) + "px";
+      var left = e.clientX + GAP, top = e.clientY - GAP - LENS;
+      if (left + LENS > window.innerWidth - 8) left = e.clientX - GAP - LENS;
+      if (top < 8) top = e.clientY + GAP;
+      lens.style.left = Math.max(8, left) + "px"; lens.style.top = top + "px"; lens.hidden = false;
+    }
+    media.addEventListener("pointermove", function (e) { if (e.pointerType === "touch" && !(e.buttons & 1)) return; show(e); });
+    media.addEventListener("pointerdown", function (e) { show(e); });
+    media.addEventListener("pointerup", function (e) { if (e.pointerType === "touch") hideTimer = setTimeout(hide, 1600); });
+    media.addEventListener("pointerleave", function (e) { if (e.pointerType !== "touch") hide(); });
+    media.addEventListener("pointercancel", hide); // a touch that turns into a scroll cancels the pointer
+  });
+
   // ---------- pictures further down: fetched top to bottom once the page has settled ----------
   // The top of the page is what the visitor sees first, so its pictures load first (eager in the HTML); the rest stay lazy for the
   // scroll position, and in quiet time they are also fetched in page order, a few at a time, nearest to the top first.

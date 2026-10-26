@@ -51,10 +51,10 @@ const PC = {
 };
 const PC_COLOR = { "#0000ff": "#2f5aa8", "#ff0000": "#cf3a2e", "#000000": "#2b2b2b" };
 const seriesName = (l, n) => n.replace(/^Plunger/i, PC[l].plunger).replace(/^Low pressure/i, PC[l].low).replace(/^High pressure/i, PC[l].high);
-Object.assign(L.sv, { compare: "Jämförelse av modellerna", reg: "Registrering och styrning", dpv: "Dataloggare (DPV-H)" });
-Object.assign(L.en, { compare: "Model comparison", reg: "Recording and control", dpv: "Data logger (DPV-H)" });
-Object.assign(L.es, { compare: "Comparación de modelos", reg: "Registro y control", dpv: "Registrador de datos (DPV-H)" });
-Object.assign(L.no, { compare: "Sammenligning av modellene", reg: "Registrering og styring", dpv: "Datalogger (DPV-H)" });
+Object.assign(L.sv, { zoomHint: "Håll muspekaren över ritningen (eller tryck och dra) för 2× förstoring.", compare: "Jämförelse av modellerna", reg: "Registrering och styrning", dpv: "Dataloggare (DPV-H)" });
+Object.assign(L.en, { zoomHint: "Hover over the drawing (or touch and drag) for a 2× magnifier.", compare: "Model comparison", reg: "Recording and control", dpv: "Data logger (DPV-H)" });
+Object.assign(L.es, { zoomHint: "Pase el cursor sobre el plano (o toque y arrastre) para una lupa 2×.", compare: "Comparación de modelos", reg: "Registro y control", dpv: "Registrador de datos (DPV-H)" });
+Object.assign(L.no, { zoomHint: "Hold musepekeren over tegningen (eller trykk og dra) for 2× forstørrelse.", compare: "Sammenligning av modellene", reg: "Registrering og styring", dpv: "Datalogger (DPV-H)" });
 // ---------- translations of the brochure text (tools/haeny-i18n.json: English text -> sv / es / no) ----------
 const I18N = Object.assign({}, ...fs.readdirSync(path.join(ROOT, "tools")).filter((x) => /^haeny-i18n.*.json$/.test(x)).map((x) => JSON.parse(fs.readFileSync(path.join(ROOT, "tools", x), "utf8"))));
 const tr = (l, text) => (l === "en" || !text ? text : (I18N[text] && I18N[text][l]) || text);
@@ -130,8 +130,8 @@ function dataBlocks(l, k, d, { download = true } = {}) {
       series: cd.series.map((q) => ({ name: seriesName(l, q.name), color: PC_COLOR[q.color] || q.color, points: q.points.map(([px, py]) => [Math.max(cd.x.min, px), Math.max(cd.y.min, py)]) })), ...(cd.areas ? { areas: cd.areas } : {}),
       ...(d.images.chart ? { alt: { src: d.images.chart.file, text: `${T.perf} ${d.model}`, show: PC[l].show, hide: PC[l].hide } } : {}) });
   } else if (d.images.chart) tiles.push({ title: T.perf, image: d.images.chart.file, alt: `${T.perf} ${d.model}` });
-  if (d.images.dim) tiles.push({ title: T.dims, image: d.images.dim.file, alt: `${T.dims} ${d.model}` });
-  if (tiles.length) out.push({ type: "modules", layout: "tiles", columns: Math.min(2, tiles.length), ...(tiles.length === 1 ? { narrow: true } : {}), more: false, items: tiles });
+  if (d.images.dim) tiles.push({ title: T.dims, image: d.images.dim.file, alt: `${T.dims} ${d.model}`, text: T.zoomHint });
+  if (tiles.length) out.push({ type: "modules", layout: "tiles", columns: Math.min(2, tiles.length), ...(tiles.length === 1 ? { narrow: true, zoom: true } : {}), more: false, items: tiles });
   if (download) out.push({ type: "button", kind: "download", text: T.pdfName(d.model), href: d.file });
   return out;
 }
@@ -334,12 +334,15 @@ async function tileGroups(l) {
       const key = /tech-mixer|haeny-2\./.test(src) ? "mixer" : /haeny-3\./.test(src) ? "impeller" : /tech-agitator/.test(src) ? "agitator" : /tech-plunger|haeny-4\./.test(src) ? "plunger" : /haeny-5\./.test(src) ? "pressure" : null;
       if (!key) continue;
       // the flow-control section (picture 5) has no link to the pumps: the pumps are one section up
-      if (key === "pressure") { b.right = b.right.filter((x) => !(x.type === "related" && x.tech)); continue; }
+      // (and the impeller is part of the mixer: the one link under the mixer is enough)
+      if (key === "pressure" || key === "impeller") { b.right = b.right.filter((x) => !(x.type === "related" && x.tech)); continue; }
       for (const x of b.right) if (x.type === "related" && x.tech) x.items = [{ href: FAM_PATH[REL[key]] }];
       // the plunger: the new single/double picture and, below it, the old cross-section drawing
       if (key === "plunger" && !b.left.some((x) => /haeny-4\.webp$/.test(x.src || ""))) {
         b.left.push({ type: "image", alt: OLD_PLUNGER[l], ...(await dim("/assets/img/haeny-4.webp")), src: "/assets/img/haeny-4.webp", caption: OLD_PLUNGER[l] });
       }
+      // the cross-section is a tall drawing: shown at about half the width of the column
+      if (key === "plunger") for (const x of b.left) if (/haeny-4\.webp$/.test(x.src || "")) Object.assign(x, { maxWidth: 235, align: "center" });
     }
     j.i18n[l].blocks = bl;
     j.i18n[l].menu = tg.menu;

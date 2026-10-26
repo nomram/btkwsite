@@ -686,12 +686,14 @@
           "layout": "tiles",
           "columns": 1,
           "narrow": true,
+          "zoom": true,
           "more": false,
           "items": [
             {
               "title": "Mått och ritning",
               "image": "/assets/img/haeny-zmp710-dim.webp",
               "alt": "Mått och ritning ZMP 710",
+              "text": "Håll muspekaren över ritningen (eller tryck och dra) för 2× förstoring.",
               "width": 1731,
               "height": 1973
             }
@@ -1418,12 +1420,14 @@
           "layout": "tiles",
           "columns": 1,
           "narrow": true,
+          "zoom": true,
           "more": false,
           "items": [
             {
               "title": "Dimensions and drawing",
               "image": "/assets/img/haeny-zmp710-dim.webp",
               "alt": "Dimensions and drawing ZMP 710",
+              "text": "Hover over the drawing (or touch and drag) for a 2× magnifier.",
               "width": 1731,
               "height": 1973
             }
@@ -2150,12 +2154,14 @@
           "layout": "tiles",
           "columns": 1,
           "narrow": true,
+          "zoom": true,
           "more": false,
           "items": [
             {
               "title": "Dimensiones y plano",
               "image": "/assets/img/haeny-zmp710-dim.webp",
               "alt": "Dimensiones y plano ZMP 710",
+              "text": "Pase el cursor sobre el plano (o toque y arrastre) para una lupa 2×.",
               "width": 1731,
               "height": 1973
             }
@@ -2882,12 +2888,14 @@
           "layout": "tiles",
           "columns": 1,
           "narrow": true,
+          "zoom": true,
           "more": false,
           "items": [
             {
               "title": "Mål og tegning",
               "image": "/assets/img/haeny-zmp710-dim.webp",
               "alt": "Mål og tegning ZMP 710",
+              "text": "Hold musepekeren over tegningen (eller trykk og dra) for 2× forstørrelse.",
               "width": 1731,
               "height": 1973
             }

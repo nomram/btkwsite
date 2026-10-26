@@ -487,7 +487,7 @@ function renderModules(ctx, b) {
       : "";
     return `<li class="module">${media}<div class="module__body">${title}${text}${bullets}${go || doc ? `<div class="module__actions">${go}${doc}</div>` : ""}</div></li>`;
   }).join("");
-  return `<ul class="modules modules--${layout}${b.square ? " modules--sq" : ""}${b.narrow ? " modules--narrow" : ""}" style="--cols:${cols}">${li}</ul>`;
+  return `<ul class="modules modules--${layout}${b.square ? " modules--sq" : ""}${b.narrow ? " modules--narrow" : ""}${b.zoom ? " modules--zoom" : ""}" style="--cols:${cols}">${li}</ul>`;
 }
 
 // Image carousel. Native scroll-snap: swipe, trackpad and keyboard work without JavaScript; site.js adds arrows, dots

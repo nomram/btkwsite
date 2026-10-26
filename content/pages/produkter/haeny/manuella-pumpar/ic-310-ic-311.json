@@ -605,12 +605,14 @@
           "layout": "tiles",
           "columns": 1,
           "narrow": true,
+          "zoom": true,
           "more": false,
           "items": [
             {
               "title": "Mått och ritning",
               "image": "/assets/img/haeny-ic310-dim.webp",
               "alt": "Mått och ritning IC 310",
+              "text": "Håll muspekaren över ritningen (eller tryck och dra) för 2× förstoring.",
               "width": 1509,
               "height": 2016
             }
@@ -1264,12 +1266,14 @@
           "layout": "tiles",
           "columns": 1,
           "narrow": true,
+          "zoom": true,
           "more": false,
           "items": [
             {
               "title": "Dimensions and drawing",
               "image": "/assets/img/haeny-ic310-dim.webp",
               "alt": "Dimensions and drawing IC 310",
+              "text": "Hover over the drawing (or touch and drag) for a 2× magnifier.",
               "width": 1509,
               "height": 2016
             }
@@ -1924,12 +1928,14 @@
           "layout": "tiles",
           "columns": 1,
           "narrow": true,
+          "zoom": true,
           "more": false,
           "items": [
             {
               "title": "Dimensiones y plano",
               "image": "/assets/img/haeny-ic310-dim.webp",
               "alt": "Dimensiones y plano IC 310",
+              "text": "Pase el cursor sobre el plano (o toque y arrastre) para una lupa 2×.",
               "width": 1509,
               "height": 2016
             }
@@ -2584,12 +2590,14 @@
           "layout": "tiles",
           "columns": 1,
           "narrow": true,
+          "zoom": true,
           "more": false,
           "items": [
             {
               "title": "Mål og tegning",
               "image": "/assets/img/haeny-ic310-dim.webp",
               "alt": "Mål og tegning IC 310",
+              "text": "Hold musepekeren over tegningen (eller trykk og dra) for 2× forstørrelse.",
               "width": 1509,
               "height": 2016
             }
