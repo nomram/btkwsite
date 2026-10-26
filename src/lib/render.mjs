@@ -626,7 +626,7 @@ function renderBlockInner(ctx, b) {
     case "quote": return renderQuote(ctx, b);
     case "carousel": return renderCarousel(ctx, b.items, b);
     case "compare": return renderCompare(ctx, b);
-    case "perfchart": return renderPerfChart(ctx, b, (n) => editFld(ctx, n));
+    case "perfchart": return renderPerfChart(ctx, b, (n) => editFld(ctx, n), (src, alt, o) => imgTag(ctx, src, alt, o));
     case "finder": return renderFinder(ctx, b);
     case "modules": return renderModules(ctx, b);
     case "related": return renderRelated(ctx, b);

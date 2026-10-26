@@ -10,7 +10,7 @@ const fix = (v) => (Math.round(v * 10) / 10).toString();
 
 export function perfChartEmpty(b) { return !(b.series || []).some((s) => s && (s.points || []).length > 1); }
 
-export function renderPerfChart(ctx, b, editFld = () => "") {
+export function renderPerfChart(ctx, b, editFld = () => "", imgTag = () => "") {
   const series = (b.series || []).filter((s) => s && (s.points || []).length > 1);
   if (!series.length) return "";
   const x = b.x, y = b.y;
@@ -29,6 +29,13 @@ export function renderPerfChart(ctx, b, editFld = () => "") {
     ? `<div class="pc__chips" role="group" aria-label="${esc(b.chipsLabel || "")}">` + series.map((s, i) => `<button type="button" class="pc__chip" aria-pressed="true" data-s="${i}"><i style="background:${esc(s.color)}"></i><span>${esc(s.name)}</span></button>`).join("") + "</div>"
     : "";
   const data = { x: { min: x.min, max: x.max, unit: x.unit, name: b.xName || "" }, y: { min: y.min, max: y.max, unit: y.unit, name: b.yName || "" }, series: series.map((s) => ({ n: s.name, c: s.color, p: s.points })) , geo: { W, H, ml: M.l, mt: M.t, pw: PW, ph: PH } };
+  // the chart as printed in the brochure, kept as a second view: a dimmed link; the picture is only fetched when it is opened
+  let alt = "";
+  if (b.alt && b.alt.src) {
+    const tag = imgTag(b.alt.src, b.alt.text || "", { cls: "pc__orig", sizes: "(min-width: 900px) 560px, 100vw" });
+    const href = (tag.match(/ src="([^"]+)"/) || [])[1] || b.alt.src;
+    alt = `<a class="pc__alt" href="${esc(href)}" target="_blank" rel="noopener" data-show="${esc(b.alt.show || "")}" data-hide="${esc(b.alt.hide || "")}">${esc(b.alt.show || "Original")}</a><template class="pc__tpl">${tag}</template>`;
+  }
   const summary = series.map((s) => { const top = Math.max(...s.points.map((p) => p[1])), maxX = Math.max(...s.points.map((p) => p[0])); return `${s.name}: ${fix(top)} ${y.unit}, ${fix(maxX)} ${x.unit}`; }).join("; ");
   return `<figure class="pc" data-pc>${b.title ? `<figcaption class="pc__title"${editFld("title")}>${esc(b.title)}</figcaption>` : ""}${chips}` +
     `<svg class="pc__svg" viewBox="0 0 ${W} ${H}" role="img" tabindex="0" aria-label="${esc((b.title || "") + (summary ? ". " + summary : ""))}">` +
@@ -36,6 +43,6 @@ export function renderPerfChart(ctx, b, editFld = () => "") {
     `<g class="pc__ticks">${labels}</g><text class="pc__ax" x="${M.l + PW / 2}" y="${H - 6}" text-anchor="middle">${esc((b.xName || "") + (x.unit ? " [" + x.unit + "]" : ""))}</text>` +
     `<text class="pc__ax" transform="translate(12 ${M.t + PH / 2}) rotate(-90)" text-anchor="middle">${esc((b.yName || "") + (y.unit ? " [" + y.unit + "]" : ""))}</text>` +
     `${lines}<line class="pc__cursor" x1="-20" y1="${M.t}" x2="-20" y2="${M.t + PH}"/>${dots}</svg>` +
-    `<div class="pc__read" aria-live="polite">${b.hint ? `<span class="pc__hint">${esc(b.hint)}</span>` : ""}</div>` +
+    `<div class="pc__read" aria-live="polite">${b.hint ? `<span class="pc__hint">${esc(b.hint)}</span>` : ""}</div>` + alt +
     `<script type="application/json" class="pc__data">${JSON.stringify(data).replace(/</g, "\\u003c")}</script></figure>`;
 }

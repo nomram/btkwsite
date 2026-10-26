@@ -180,7 +180,38 @@ function chartData(page, box, lines) {
   const toY = (py) => y0v + ((horiz[0] - py) / (horiz[0] - horiz[1])) * ystep;
   const xmax = x0v + (vert.length - 1) * xstep, ymax = y0v + (horiz.length - 1) * ystep;
   const r = (v) => Math.round(v * 10) / 10;
-  const curves = mine.filter((q) => q.w >= 0.6 && q.pts.length >= 3 && Math.max(...q.pts.map((p) => p[0])) - Math.min(...q.pts.map((p) => p[0])) > 20 && q.pts.every(([x, y]) => x >= vert[0] - 2 && x <= vert[vert.length - 1] + 2 && y <= horiz[0] + 2 && y >= horiz[horiz.length - 1] - 2));
+  // A curve is drawn in several pieces (a thin and a thick stroke, a straight drop at the end), so every stroke that is not a grid line
+  // counts: the grid has its own colour. Pieces of one colour are chained end to end into one polyline.
+  const ck = (q) => q.color.map((v) => v.toFixed(2)).join(",");
+  const gridKeys = new Set(thin.filter((q) => vert.concat(horiz).length).map(ck));
+  const gridKey = [...gridKeys].sort((a, b) => thin.filter((q) => ck(q) === b).length - thin.filter((q) => ck(q) === a).length)[0];
+  const plot = { x0: vert[0], x1: vert[vert.length - 1], y0: horiz[horiz.length - 1], y1: horiz[0] };
+  const inPlot = (q) => q.pts.every(([x, y]) => x >= plot.x0 - 2 && x <= plot.x1 + 2 && y >= plot.y0 - 2 && y <= plot.y1 + 2);
+  const bent = (q) => q.pts.some((p, i) => i && Math.abs(p[0] - q.pts[i - 1][0]) > 0.3 && Math.abs(p[1] - q.pts[i - 1][1]) > 0.3);
+  const pieces = mine.filter((q) => ck(q) !== gridKey && inPlot(q) && q.pts.length >= 2);
+  const byColour = {};
+  for (const q of pieces) (byColour[ck(q)] ||= { color: q.color, list: [] }).list.push(q.pts.slice());
+  const curves = [];
+  for (const g of Object.values(byColour)) {
+    const list = g.list.filter((p) => Math.max(...p.map((a) => a[0])) - Math.min(...p.map((a) => a[0])) > 0.3 || Math.max(...p.map((a) => a[1])) - Math.min(...p.map((a) => a[1])) > 6);
+    const chains = [];
+    while (list.length) {
+      list.sort((a, b) => Math.min(a[0][0], a[a.length - 1][0]) - Math.min(b[0][0], b[b.length - 1][0]));
+      let cur = list.shift(); if (cur[0][0] > cur[cur.length - 1][0]) cur.reverse();
+      for (let grew = true; grew;) {
+        grew = false;
+        const e = cur[cur.length - 1];
+        for (let i = 0; i < list.length; i++) {
+          const p = list[i];
+          if (Math.hypot(e[0] - p[0][0], e[1] - p[0][1]) < 3) { cur = cur.concat(p.slice(1)); list.splice(i, 1); grew = true; break; }
+          if (Math.hypot(e[0] - p[p.length - 1][0], e[1] - p[p.length - 1][1]) < 3) { cur = cur.concat(p.slice(0, -1).reverse()); list.splice(i, 1); grew = true; break; }
+        }
+      }
+      chains.push(cur);
+    }
+    const good = chains.filter((c) => Math.max(...c.map((a) => a[0])) - Math.min(...c.map((a) => a[0])) > 20 || c.length > 6);
+    if (good.length) curves.push({ color: g.color, pts: good.sort((a, b) => a[0][0] - b[0][0]).flat() });
+  }
   // the curve's name is the legend text nearest to it
   const labels = inBox.filter((l) => isNaN(num(l.text)) && !/\[.*\]/.test(l.text) && l.x > vert[0] - 2 && l.x < vert[vert.length - 1] && l.y > horiz[horiz.length - 1] - 4 && l.y < horiz[0]);
   const dist = (l, q) => Math.min(...q.pts.map(([x, y]) => Math.hypot(x - (l.x + l.w / 2), y - (l.y + l.h / 2))));

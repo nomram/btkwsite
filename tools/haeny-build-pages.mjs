@@ -44,10 +44,10 @@ const FAMILIES = [
     intro: { sv: "Automatiserade anläggningar för att bereda och injektera cement, bentonit, mikrofina bindemedel och bruk. Noggrann dosering, förbrukningsregistrering, integrerad tryck- och flödesregistrering samt radiostyrning.", en: "Automated plants for preparing and injecting cement, bentonite, microfine binders and mortar. Accurate dosing, consumption record, integrated pressure and flow recording and radio remote control.", es: "Plantas automatizadas para preparar e inyectar cemento, bentonita, ligantes microfinos y mortero. Dosificación precisa, registro de consumo, registro integrado de presión y caudal y mando por radio.", no: "Automatiserte anlegg for klargjøring og injeksjon av sement, bentonitt, mikrofine bindemidler og mørtel. Nøyaktig dosering, forbruksregistrering, integrert trykk- og strømningsregistrering og radiostyring." } }
 ];
 const PC = {
-  sv: { x: "Tryck", y: "Flöde", plunger: "Kolv", low: "Lågt tryck", high: "Högt tryck", chips: "Visa kurvor", hint: "Håll muspekaren över diagrammet, tryck på det eller använd piltangenterna för att läsa av värden. Klicka på en kolvstorlek för att dölja eller visa den (dubbelklicka för att visa bara den)." },
-  en: { x: "Pressure", y: "Output", plunger: "Plunger", low: "Low pressure", high: "High pressure", chips: "Show curves", hint: "Hover over the chart, tap it or use the arrow keys to read values. Click a plunger size to hide or show it (double-click to show only that one)." },
-  es: { x: "Presión", y: "Caudal", plunger: "Émbolo", low: "Baja presión", high: "Alta presión", chips: "Mostrar curvas", hint: "Pase el cursor sobre el gráfico, púlselo o use las flechas del teclado para leer valores. Pulse un tamaño de émbolo para ocultarlo o mostrarlo (doble clic para mostrar solo ese)." },
-  no: { x: "Trykk", y: "Ytelse", plunger: "Stempel", low: "Lavt trykk", high: "Høyt trykk", chips: "Vis kurver", hint: "Hold musepekeren over diagrammet, trykk på det eller bruk piltastene for å lese av verdier. Klikk på en stempelstørrelse for å skjule eller vise den (dobbeltklikk for å vise bare den)." }
+  sv: { x: "Tryck", y: "Flöde", plunger: "Kolv", low: "Lågt tryck", high: "Högt tryck", chips: "Visa kurvor", show: "Visa originaldiagrammet från broschyren", hide: "Dölj originaldiagrammet", hint: "Håll muspekaren över diagrammet, tryck på det eller använd piltangenterna för att läsa av värden. Klicka på en kolvstorlek för att dölja eller visa den (dubbelklicka för att visa bara den)." },
+  en: { x: "Pressure", y: "Output", plunger: "Plunger", low: "Low pressure", high: "High pressure", chips: "Show curves", show: "Show the original chart from the brochure", hide: "Hide the original chart", hint: "Hover over the chart, tap it or use the arrow keys to read values. Click a plunger size to hide or show it (double-click to show only that one)." },
+  es: { x: "Presión", y: "Caudal", plunger: "Émbolo", low: "Baja presión", high: "Alta presión", chips: "Mostrar curvas", show: "Ver el diagrama original del folleto", hide: "Ocultar el diagrama original", hint: "Pase el cursor sobre el gráfico, púlselo o use las flechas del teclado para leer valores. Pulse un tamaño de émbolo para ocultarlo o mostrarlo (doble clic para mostrar solo ese)." },
+  no: { x: "Trykk", y: "Ytelse", plunger: "Stempel", low: "Lavt trykk", high: "Høyt trykk", chips: "Vis kurver", show: "Vis originaldiagrammet fra brosjyren", hide: "Skjul originaldiagrammet", hint: "Hold musepekeren over diagrammet, trykk på det eller bruk piltastene for å lese av verdier. Klikk på en stempelstørrelse for å skjule eller vise den (dobbeltklikk for å vise bare den)." }
 };
 const PC_COLOR = { "#0000ff": "#2f5aa8", "#ff0000": "#cf3a2e", "#000000": "#2b2b2b" };
 const seriesName = (l, n) => n.replace(/^Plunger/i, PC[l].plunger).replace(/^Low pressure/i, PC[l].low).replace(/^High pressure/i, PC[l].high);
@@ -127,7 +127,8 @@ function dataBlocks(l, k, d, { download = true } = {}) {
   const cd = d.chartData && curves.length ? { ...d.chartData, series: curves } : null;
   if (cd) {
     out.push({ type: "perfchart", title: `${T.perf}: ${d.model}`, hint: PC[l].hint, chipsLabel: PC[l].chips, xName: PC[l].x, yName: PC[l].y, x: cd.x, y: cd.y,
-      series: cd.series.map((q) => ({ name: seriesName(l, q.name), color: PC_COLOR[q.color] || q.color, points: q.points })), ...(cd.areas ? { areas: cd.areas } : {}) });
+      series: cd.series.map((q) => ({ name: seriesName(l, q.name), color: PC_COLOR[q.color] || q.color, points: q.points.map(([px, py]) => [Math.max(cd.x.min, px), Math.max(cd.y.min, py)]) })), ...(cd.areas ? { areas: cd.areas } : {}),
+      ...(d.images.chart ? { alt: { src: d.images.chart.file, text: `${T.perf} ${d.model}`, show: PC[l].show, hide: PC[l].hide } } : {}) });
   } else if (d.images.chart) tiles.push({ title: T.perf, image: d.images.chart.file, alt: `${T.perf} ${d.model}` });
   if (d.images.dim) tiles.push({ title: T.dims, image: d.images.dim.file, alt: `${T.dims} ${d.model}` });
   if (tiles.length) out.push({ type: "modules", layout: "tiles", columns: Math.min(2, tiles.length), more: false, items: tiles });
@@ -332,6 +333,8 @@ async function tileGroups(l) {
       const src = (b.left[0] && b.left[0].src) || "";
       const key = /tech-mixer|haeny-2\./.test(src) ? "mixer" : /haeny-3\./.test(src) ? "impeller" : /tech-agitator/.test(src) ? "agitator" : /tech-plunger|haeny-4\./.test(src) ? "plunger" : /haeny-5\./.test(src) ? "pressure" : null;
       if (!key) continue;
+      // the flow-control section (picture 5) has no link to the pumps: the pumps are one section up
+      if (key === "pressure") { b.right = b.right.filter((x) => !(x.type === "related" && x.tech)); continue; }
       for (const x of b.right) if (x.type === "related" && x.tech) x.items = [{ href: FAM_PATH[REL[key]] }];
       // the plunger: the new single/double picture and, below it, the old cross-section drawing
       if (key === "plunger" && !b.left.some((x) => /haeny-4\.webp$/.test(x.src || ""))) {

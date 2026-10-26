@@ -722,13 +722,14 @@
     function show(px) {
       pos = Math.max(d.x.min, Math.min(d.x.max, px));
       cursor.setAttribute("x1", xOf(pos)); cursor.setAttribute("x2", xOf(pos));
-      var out = "<b>" + num(pos) + " " + d.x.unit + "</b>";
+      var out = '<span class="pc__at">' + num(pos) + " " + d.x.unit + '</span><ul class="pc__list">';
       d.series.forEach(function (s, i) {
         var y = on[i] ? at(s, pos) : null;
         if (y === null) { dots[i].setAttribute("cx", -20); dots[i].setAttribute("cy", -20); }
         else { dots[i].setAttribute("cx", xOf(pos)); dots[i].setAttribute("cy", yOf(y)); }
-        if (on[i]) out += '<span class="pc__val"><i style="background:' + s.c + '"></i>' + (d.series.length > 1 ? s.n + ": " : "") + (y === null ? "-" : "<b>" + num(y) + " " + d.y.unit + "</b>") + "</span>";
+        if (on[i]) out += '<li><i style="background:' + s.c + '"></i><span class="pc__n">' + (d.series.length > 1 ? s.n : d.y.name) + '</span><b class="pc__v">' + (y === null ? "-" : num(y) + " " + d.y.unit) + "</b></li>";
       });
+      out += "</ul>";
       read.innerHTML = out;
     }
     function clear() { pos = null; cursor.setAttribute("x1", -20); cursor.setAttribute("x2", -20); dots.forEach(function (c) { c.setAttribute("cx", -20); c.setAttribute("cy", -20); }); read.innerHTML = hint; }
@@ -760,6 +761,17 @@
         if (pos !== null) show(pos);
       });
     });
+    var alt = box.querySelector(".pc__alt"), tpl = box.querySelector(".pc__tpl"), shown = null;
+    if (alt && tpl && tpl.content) {
+      alt.addEventListener("click", function (e) {
+        e.preventDefault();
+        if (!shown) { shown = document.createElement("div"); shown.className = "pc__origbox"; shown.appendChild(tpl.content.cloneNode(true)); alt.parentNode.insertBefore(shown, alt.nextSibling); alt.textContent = alt.getAttribute("data-hide") || alt.textContent; alt.setAttribute("aria-expanded", "true"); return; }
+        var open = !shown.hidden; shown.hidden = open;
+        alt.textContent = (open ? alt.getAttribute("data-show") : alt.getAttribute("data-hide")) || alt.textContent;
+        alt.setAttribute("aria-expanded", open ? "false" : "true");
+      });
+      alt.setAttribute("role", "button"); alt.setAttribute("aria-expanded", "false");
+    }
   });
 
   // ---------- pictures further down: fetched top to bottom once the page has settled ----------
