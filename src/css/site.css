@@ -970,7 +970,7 @@ h2[id], h3[id] { scroll-margin-top: 5rem; }
 .pc__origbox[hidden] { display: none; }
 .pc__orig { display: block; width: 100%; max-width: 34rem; height: auto; margin-inline: auto; }
 @media (max-width: 640px) { .pc { padding: .8rem .6rem .6rem; } .pc__chip { min-height: 2.5rem; } }
-.prose > .pc { max-width: 56rem; }
+.prose > .pc { max-width: 34rem; } /* about 40 % smaller than before */
 @media (max-width: 640px) {
   .pc__ticks text, .pc__ax { font-size: 14px; } .pc__line { stroke-width: 3; }
   .pc__hint { display: block; text-align: center; }
@@ -1022,3 +1022,5 @@ h2[id], h3[id] { scroll-margin-top: 5rem; }
   .pc__at { margin-bottom: .25rem; font-size: .88rem; }
   .pc__list { column-gap: .45rem; row-gap: .2rem; }
 }
+/* the dimension drawings are small reference pictures */
+.modules.modules--narrow, .prose .modules.modules--narrow { max-width: 27rem; grid-template-columns: minmax(0, 1fr); }

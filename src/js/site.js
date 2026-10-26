@@ -733,6 +733,33 @@
     }
     function xOf(v) { return g.ml + (v - d.x.min) / (d.x.max - d.x.min) * g.pw; }
     function yOf(v) { return g.mt + g.ph - (v - d.y.min) / (d.y.max - d.y.min) * g.ph; }
+    // The box goes where it covers no curve: beside the cursor line, on either side, at several heights inside the plot; the spot
+    // with the fewest curve points under it wins (the first choice is the top, right of the cursor). Curves that end near the
+    // x axis leave the upper part free, curves that start high leave the lower part free.
+    function placeTip() {
+      var pr = plot.getBoundingClientRect(), k = pr.width / g.W, tw = tip.offsetWidth / k, th = tip.offsetHeight / k;
+      var cx = xOf(pos), x0 = g.ml + 3, x1 = g.ml + g.pw - 3, y0 = g.mt + 3, y1 = g.mt + g.ph - 3, pts = [];
+      d.series.forEach(function (s, i) {
+        if (!on[i]) return;
+        for (var j = 1; j < s.p.length; j++) {
+          var ax = xOf(s.p[j - 1][0]), ay = yOf(s.p[j - 1][1]), bx = xOf(s.p[j][0]), by = yOf(s.p[j][1]), n = Math.max(1, Math.ceil(Math.hypot(bx - ax, by - ay) / 3));
+          for (var q = 0; q <= n; q++) pts.push([ax + (bx - ax) * q / n, ay + (by - ay) * q / n]);
+        }
+      });
+      var best = null, sides = [cx + 10, cx - 10 - tw];
+      for (var si = 0; si < 2; si++) {
+        var left = sides[si];
+        if (left < x0 || left + tw > x1) continue;
+        for (var r = 0; r <= 8; r++) {
+          var top = y0 + (y1 - y0 - th) * r / 8, hit = 0;
+          for (var p = 0; p < pts.length; p++) if (pts[p][0] > left - 4 && pts[p][0] < left + tw + 4 && pts[p][1] > top - 4 && pts[p][1] < top + th + 4) hit++;
+          var score = hit * 1000 + r * 3 + si * 2;
+          if (!best || score < best.score) best = { score: score, left: left, top: top };
+        }
+      }
+      if (!best) best = { left: Math.max(x0, Math.min(x1 - tw, cx + 10)), top: y0 };
+      tip.style.left = (best.left * k) + "px"; tip.style.top = (best.top * k) + "px";
+    }
     function show(px) {
       pos = Math.max(d.x.min, Math.min(d.x.max, px));
       cursor.setAttribute("x1", xOf(pos)); cursor.setAttribute("x2", xOf(pos));
@@ -747,9 +774,7 @@
       out += "</ul>";
       // the values float inside the chart, beside the cursor, so they stay in view however tall the chart is
       tip.innerHTML = out; tip.hidden = false;
-      var pr = plot.getBoundingClientRect(), cx = xOf(pos) / g.W * pr.width, tw = tip.offsetWidth;
-      tip.style.left = Math.max(4, Math.min(pr.width - tw - 4, cx + 14 + tw > pr.width ? cx - tw - 14 : cx + 14)) + "px";
-      tip.style.top = (g.mt / g.H * pr.height + 8) + "px";
+      placeTip();
       sr.textContent = spoken;
     }
     function clear() { pos = null; cursor.setAttribute("x1", -20); cursor.setAttribute("x2", -20); dots.forEach(function (c) { c.setAttribute("cx", -20); c.setAttribute("cy", -20); }); tip.hidden = true; sr.textContent = ""; }

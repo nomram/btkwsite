@@ -131,7 +131,7 @@ function dataBlocks(l, k, d, { download = true } = {}) {
       ...(d.images.chart ? { alt: { src: d.images.chart.file, text: `${T.perf} ${d.model}`, show: PC[l].show, hide: PC[l].hide } } : {}) });
   } else if (d.images.chart) tiles.push({ title: T.perf, image: d.images.chart.file, alt: `${T.perf} ${d.model}` });
   if (d.images.dim) tiles.push({ title: T.dims, image: d.images.dim.file, alt: `${T.dims} ${d.model}` });
-  if (tiles.length) out.push({ type: "modules", layout: "tiles", columns: Math.min(2, tiles.length), more: false, items: tiles });
+  if (tiles.length) out.push({ type: "modules", layout: "tiles", columns: Math.min(2, tiles.length), ...(tiles.length === 1 ? { narrow: true } : {}), more: false, items: tiles });
   if (download) out.push({ type: "button", kind: "download", text: T.pdfName(d.model), href: d.file });
   return out;
 }
