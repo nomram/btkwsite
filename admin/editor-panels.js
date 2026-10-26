@@ -127,7 +127,8 @@ function panelBlock() {
       break;
     case "list":
       body = F(t("one_per_line"), `<textarea data-bf="items" data-t="lines" rows="7">${esc((b.items || []).join("\n"))}</textarea>`) +
-        `<label class="chk"><input type="checkbox" data-bf="ordered" data-t="bool" ${b.ordered ? "checked" : ""}> ${esc(t("numbered"))}</label>`;
+        `<label class="chk"><input type="checkbox" data-bf="ordered" data-t="bool" ${b.ordered ? "checked" : ""}> ${esc(t("numbered"))}</label>` +
+        `<label class="chk"><input type="checkbox" data-bf="collapsible" data-t="bool" ${b.collapsible ? "checked" : ""}> ${esc(t("collapsible"))}</label>` + F(t("collapsible_title"), inp("title", b.title));
       break;
     case "image":
       body = `<div class="imgprev">${b.src ? `<img src="${esc(thumbUrl((b.src || "").replace("/assets/img/", "")))}" alt="">` : `<div class="imgprev__none">${IC.image}</div>`}</div>

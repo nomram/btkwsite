@@ -30,7 +30,13 @@ for (const l of Object.keys(j.i18n)) {
   // the opening picture is the regular IC325 again
   const top = bl.find((b, i) => i <= 2 && b.type === "image" && !b.href);
   Object.assign(top, { src: REGULAR, width: regular.width, height: regular.height });
-  if (bl.some((b) => b.type === "columns" && b.left && b.left.some((x) => x.src && x.src.includes(NAME)))) continue; // already restructured
+  const done = bl.findIndex((b) => b.type === "columns" && b.left && b.left.some((x) => x.src && x.src.includes(NAME)));
+  if (done >= 0) { // already restructured: the photos still go under the picture (a carousel that plays by itself) if they are a block of their own
+    const own = bl.findIndex((b, i) => i > done && b.type === "carousel");
+    if (own >= 0 && own <= done + 2) bl[done].left.push(...bl.splice(own, 1));
+    for (const x of bl[done].left) if (x.type === "carousel") Object.assign(x, { autoplay: true, interval: 5 });
+    continue;
+  }
   const h = bl.findIndex((b) => b.type === "heading" && b.anchor === "ic325-ccp");
   if (h < 0) throw new Error("CCP heading missing in " + l);
   const btn = bl.findIndex((b, i) => i > h && b.type === "button");
@@ -38,7 +44,8 @@ for (const l of Object.keys(j.i18n)) {
   const oldPic = bl.findIndex((b, i) => i < h && b.type === "image" && /-ic325-ccp-3\.webp$/.test(b.src || ""));
   const right = bl.slice(h, btn);
   const columns = { type: "columns", ratio: "40-60", left: [{ type: "image", alt: ALT[l], src: `/assets/img/${NAME}.webp`, width: combo.width, height: combo.height }], right };
-  const keepPhotos = photos >= 0 ? [bl[photos]] : [];
+  if (photos >= 0) columns.left.push({ ...bl[photos], autoplay: true, interval: 5 }); // under the picture, left of the text, plays by itself
+  const keepPhotos = [];
   const drop = new Set([oldPic, photos, ...Array.from({ length: btn - h }, (_, k) => h + k)]);
   const before = bl.filter((_, i) => i < h && !drop.has(i));
   const after = bl.filter((_, i) => i >= btn);

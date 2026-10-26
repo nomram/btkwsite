@@ -120,18 +120,26 @@ function dataBlocks(l, k, d, { download = true } = {}) {
   if (groups.length) out.push({ type: "datasheet", title: T.data, tagline: `${tr(l, d.title)} ${d.model}`, intro: [], groups, note: d.notes.length ? d.notes.map((n, i) => `${i + 1}: ${tr(l, n)}`).join(" · ") : "" });
   const lists = [];
   for (const t of d.tables) for (const [name, items] of Object.entries(t.lists || {})) for (const it of items) lists.push(name ? `${tr(l, name)} (${tr(l, t.title)}): ${tr(l, it)}` : `${tr(l, t.title)}: ${tr(l, it)}`);
-  if (lists.length) { out.push({ type: "heading", level: 3, text: T.opts }); out.push({ type: "list", ordered: false, items: lists.map(clean) }); }
   const tiles = [];
+  let chartBlock = null;
   // a closed box in the chart (the ZMP 936 working range) is an area, not a curve: that chart stays a picture
   const curves = d.chartData ? d.chartData.series.filter((q) => !(q.points.length <= 6 && q.points[0][0] === q.points[q.points.length - 1][0] && q.points[0][1] === q.points[q.points.length - 1][1])) : [];
   const cd = d.chartData && curves.length ? { ...d.chartData, series: curves } : null;
   if (cd) {
-    out.push({ type: "perfchart", title: `${T.perf}: ${d.model}`, hint: PC[l].hint, chipsLabel: PC[l].chips, xName: PC[l].x, yName: PC[l].y, x: cd.x, y: cd.y,
+    chartBlock = { type: "perfchart", title: `${T.perf}: ${d.model}`, hint: PC[l].hint, chipsLabel: PC[l].chips, xName: PC[l].x, yName: PC[l].y, x: cd.x, y: cd.y,
       series: cd.series.map((q) => ({ name: seriesName(l, q.name), color: PC_COLOR[q.color] || q.color, points: q.points.map(([px, py]) => [Math.max(cd.x.min, px), Math.max(cd.y.min, py)]) })), ...(cd.areas ? { areas: cd.areas } : {}),
-      ...(d.images.chart ? { alt: { src: d.images.chart.file, text: `${T.perf} ${d.model}`, show: PC[l].show, hide: PC[l].hide } } : {}) });
+      ...(d.images.chart ? { alt: { src: d.images.chart.file, text: `${T.perf} ${d.model}`, show: PC[l].show, hide: PC[l].hide } } : {}) };
   } else if (d.images.chart) tiles.push({ title: T.perf, image: d.images.chart.file, alt: `${T.perf} ${d.model}` });
-  if (d.images.dim) tiles.push({ title: T.dims, image: d.images.dim.file, alt: `${T.dims} ${d.model}`, text: T.zoomHint });
-  if (tiles.length) out.push({ type: "modules", layout: "tiles", columns: Math.min(2, tiles.length), ...(tiles.length === 1 ? { narrow: true, zoom: true } : {}), more: false, items: tiles });
+  const dimTile = d.images.dim ? { title: T.dims, image: d.images.dim.file, alt: `${T.dims} ${d.model}`, text: T.zoomHint } : null;
+  // after the technical data: the graph and the drawing on one row (stacked on a phone) ...
+  if (chartBlock && dimTile) out.push({ type: "columns", ratio: "50-50", left: [chartBlock], right: [{ type: "modules", layout: "tiles", columns: 1, narrow: true, zoom: true, more: false, items: [dimTile] }] });
+  else if (chartBlock) out.push(chartBlock);
+  else {
+    const all = dimTile ? [...tiles, dimTile] : tiles;
+    if (all.length) out.push({ type: "modules", layout: "tiles", columns: Math.min(2, all.length), ...(all.length === 1 ? { narrow: true, zoom: true } : {}), more: false, items: all });
+  }
+  // ... and under them, closed, the standard and optional equipment
+  if (lists.length) out.push({ type: "list", ordered: false, collapsible: true, title: T.opts, items: lists.map(clean) });
   if (download) out.push({ type: "button", kind: "download", text: T.pdfName(d.model), href: d.file });
   return out;
 }
@@ -148,6 +156,7 @@ async function resolveBlocks(blocks) {
       continue;
     }
     if (b.type === "modules") { for (const it of b.items) Object.assign(it, await dim(it.image)); }
+    if (b.type === "columns") for (const side of ["left", "right"]) for (const x of b[side] || []) if (x.type === "modules") for (const it of x.items) Object.assign(it, await dim(it.image));
     res.push(b);
   }
   return res;
@@ -341,8 +350,8 @@ async function tileGroups(l) {
       if (key === "plunger" && !b.left.some((x) => /haeny-4\.webp$/.test(x.src || ""))) {
         b.left.push({ type: "image", alt: OLD_PLUNGER[l], ...(await dim("/assets/img/haeny-4.webp")), src: "/assets/img/haeny-4.webp", caption: OLD_PLUNGER[l] });
       }
-      // the cross-section is a tall drawing: shown at about half the width of the column
-      if (key === "plunger") for (const x of b.left) if (/haeny-4\.webp$/.test(x.src || "")) Object.assign(x, { maxWidth: 235, align: "center" });
+      // the cross-section is a tall drawing: shown at about a quarter of the width of the column (half of its earlier size)
+      if (key === "plunger") for (const x of b.left) if (/haeny-4\.webp$/.test(x.src || "")) { delete x.maxWidth; delete x.align; x.imgWidth = 120; };
     }
     j.i18n[l].blocks = bl;
     j.i18n[l].menu = tg.menu;

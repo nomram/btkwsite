@@ -619,12 +619,16 @@ function renderBlockInner(ctx, b) {
       return `<p${editFld(ctx, "html", "inline", "Skriv text här…")}>${ctx.edit ? b.html || "" : localizeHtml(ctx, b.html)}</p>`;
     case "list": {
       const tag = b.ordered ? "ol" : "ul";
-      return `<${tag}>${(b.items || []).map((x, j) => `<li${editFld(ctx, `items.${j}`, "inline")}>${ctx.edit ? x : localizeHtml(ctx, x)}</li>`).join("")}</${tag}>`;
+      const list = `<${tag}>${(b.items || []).map((x, j) => `<li${editFld(ctx, `items.${j}`, "inline")}>${ctx.edit ? x : localizeHtml(ctx, x)}</li>`).join("")}</${tag}>`;
+      // a list that is a closed section with a heading (the standard and optional equipment of a pump): <details>
+      if (b.collapsible && b.title) return `<details class="collapse"><summary class="collapse__sum"><span class="collapse__t"${editFld(ctx, "title")}>${esc(b.title)}</span><span class="collapse__chev" aria-hidden="true">${ICON.chevron}</span></summary><div class="collapse__body">${list}</div></details>`;
+      return list;
     }
     case "image": {
-      const img = imgTag(ctx, b.src, b.alt || "", { sizes: "(min-width: 900px) 520px, 100vw" });
+      // imgWidth: a small picture (px) centred in its column while the caption keeps the full width
+      const img = imgTag(ctx, b.src, b.alt || "", { sizes: "(min-width: 900px) 520px, 100vw" }).replace("<img ", b.imgWidth ? `<img style="max-width:${Math.round(Number(b.imgWidth))}px" ` : "<img ");
       const inner = b.href ? `<a href="${esc(localizeHref(ctx, b.href))}"${/^https?:/.test(b.href) ? ' target="_blank" rel="noopener"' : ""}>${img}</a>` : img;
-      return `<figure class="figure${b.align === "right" ? " figure--right" : b.align === "center" ? " figure--center" : ""}"${b.maxWidth ? ` style="max-width:${Math.round(Number(b.maxWidth))}px"` : ""}>${inner}${b.caption ? `<figcaption${editFld(ctx, "caption")}>${esc(b.caption)}</figcaption>` : ""}</figure>`;
+      return `<figure class="figure${b.align === "right" ? " figure--right" : b.align === "center" ? " figure--center" : ""}${b.imgWidth ? " figure--small" : ""}"${b.maxWidth ? ` style="max-width:${Math.round(Number(b.maxWidth))}px"` : ""}>${inner}${b.caption ? `<figcaption${editFld(ctx, "caption")}>${esc(b.caption)}</figcaption>` : ""}</figure>`;
     }
     case "button": {
       const external = b.external || /^https?:/.test(b.href || "");

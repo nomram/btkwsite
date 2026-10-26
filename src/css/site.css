@@ -1036,3 +1036,16 @@ h2[id], h3[id] { scroll-margin-top: 5rem; }
 .zoom__lens::before, .zoom__lens::after { content: ""; position: absolute; background: #d4380d; }
 .zoom__lens::before { left: 50%; top: 50%; width: 14px; height: 2px; margin: -1px 0 0 -7px; }
 .zoom__lens::after { left: 50%; top: 50%; width: 2px; height: 14px; margin: -7px 0 0 -1px; }
+.figure--small img { display: block; margin-inline: auto; }
+.cols .figure--small img { width: auto; }
+/* a closed section (standard and optional equipment): <details> with a heading row and a chevron */
+.collapse { margin: 1.4rem 0; border: 1px solid var(--line); border-radius: var(--radius); background: #fff; }
+.collapse__sum { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: .9rem 1.1rem; font-weight: 700; font-size: 1.02rem; cursor: pointer; list-style: none; }
+.collapse__sum::-webkit-details-marker { display: none; }
+.collapse__sum:hover, .collapse__sum:focus-visible { background: #faf8f5; }
+.collapse__chev { display: grid; place-items: center; flex: none; width: 1.8rem; height: 1.8rem; border-radius: 50%; color: var(--primary); transition: transform .2s ease; }
+.collapse[open] > .collapse__sum .collapse__chev { transform: rotate(180deg); }
+.collapse[open] > .collapse__sum { border-bottom: 1px solid var(--line); }
+.collapse__body { padding: .4rem 1.1rem 1rem; }
+.collapse__body ul { margin: .6rem 0 0; }
+.prose > .collapse { max-width: none; }

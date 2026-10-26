@@ -138,21 +138,6 @@
           "gen": true
         },
         {
-          "type": "heading",
-          "level": 3,
-          "text": "Standard- och tillvalsutrustning",
-          "gen": true
-        },
-        {
-          "type": "list",
-          "ordered": false,
-          "items": [
-            "Tillval (Omrörare): Nivågivare 1\", \"full - tom\"",
-            "Tillval (Omrörare): Flänsanslutning med spjällventil 2½\""
-          ],
-          "gen": true
-        },
-        {
           "type": "modules",
           "layout": "tiles",
           "columns": 1,
@@ -168,6 +153,17 @@
               "width": 899,
               "height": 2068
             }
+          ],
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "collapsible": true,
+          "title": "Standard- och tillvalsutrustning",
+          "items": [
+            "Tillval (Omrörare): Nivågivare 1\", \"full - tom\"",
+            "Tillval (Omrörare): Flänsanslutning med spjällventil 2½\""
           ],
           "gen": true
         },
@@ -343,21 +339,6 @@
           "gen": true
         },
         {
-          "type": "heading",
-          "level": 3,
-          "text": "Standard and optional equipment",
-          "gen": true
-        },
-        {
-          "type": "list",
-          "ordered": false,
-          "items": [
-            "Optional (Agitator): Level sensors 1\", \"full - empty\"",
-            "Optional (Agitator): Flange connection with butterfly valve 2½\""
-          ],
-          "gen": true
-        },
-        {
           "type": "modules",
           "layout": "tiles",
           "columns": 1,
@@ -373,6 +354,17 @@
               "width": 899,
               "height": 2068
             }
+          ],
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "collapsible": true,
+          "title": "Standard and optional equipment",
+          "items": [
+            "Optional (Agitator): Level sensors 1\", \"full - empty\"",
+            "Optional (Agitator): Flange connection with butterfly valve 2½\""
           ],
           "gen": true
         },
@@ -548,21 +540,6 @@
           "gen": true
         },
         {
-          "type": "heading",
-          "level": 3,
-          "text": "Equipamiento estándar y opcional",
-          "gen": true
-        },
-        {
-          "type": "list",
-          "ordered": false,
-          "items": [
-            "Opcional (Agitador): Sensores de nivel 1\", \"lleno - vacío\"",
-            "Opcional (Agitador): Conexión de brida con válvula de mariposa 2½\""
-          ],
-          "gen": true
-        },
-        {
           "type": "modules",
           "layout": "tiles",
           "columns": 1,
@@ -578,6 +555,17 @@
               "width": 899,
               "height": 2068
             }
+          ],
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "collapsible": true,
+          "title": "Equipamiento estándar y opcional",
+          "items": [
+            "Opcional (Agitador): Sensores de nivel 1\", \"lleno - vacío\"",
+            "Opcional (Agitador): Conexión de brida con válvula de mariposa 2½\""
           ],
           "gen": true
         },
@@ -753,21 +741,6 @@
           "gen": true
         },
         {
-          "type": "heading",
-          "level": 3,
-          "text": "Standard- og tilvalgsutstyr",
-          "gen": true
-        },
-        {
-          "type": "list",
-          "ordered": false,
-          "items": [
-            "Tilvalg (Røreverk): Nivåfølere 1\", \"full - tom\"",
-            "Tilvalg (Røreverk): Flenstilkobling med spjeldventil 2½\""
-          ],
-          "gen": true
-        },
-        {
           "type": "modules",
           "layout": "tiles",
           "columns": 1,
@@ -783,6 +756,17 @@
               "width": 899,
               "height": 2068
             }
+          ],
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "collapsible": true,
+          "title": "Standard- og tilvalgsutstyr",
+          "items": [
+            "Tilvalg (Røreverk): Nivåfølere 1\", \"full - tom\"",
+            "Tilvalg (Røreverk): Flenstilkobling med spjeldventil 2½\""
           ],
           "gen": true
         },
