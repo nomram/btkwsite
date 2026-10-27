@@ -294,7 +294,7 @@ li:first-child > .subnav__link--logo::after { left: 0; }
 .doc:hover { box-shadow: 0 6px 18px rgba(35, 31, 32, .10); border-color: #cfcac3; }
 .doc__thumb { flex: none; width: 36px; height: 48px; display: grid; place-items: center; background: #f6f5f3; border: 1px solid #e3e0db; border-radius: 2px; overflow: hidden; }
 .doc__thumb img { width: 100%; height: 100%; object-fit: cover; object-position: top; }
-.doc__info { flex: 1 1 9rem; min-width: 9rem; display: grid; gap: 0; }
+.doc__info { flex: 1 1 6.5rem; min-width: 6.5rem; display: grid; gap: 0; }
 .doc__name { font-weight: 600; font-size: .88rem; line-height: 1.25; overflow-wrap: break-word; }
 .doc__meta { font-size: .7rem; color: var(--muted); letter-spacing: .02em; }
 .doc__actions { display: flex; gap: .35rem; flex: 0 0 auto; margin-left: auto; }
@@ -1054,3 +1054,5 @@ h2[id], h3[id] { scroll-margin-top: 5rem; }
 .datasheet__source { margin: .4rem 0 0; font-size: .74rem; font-style: italic; color: var(--muted); }
 /* the points under a tile name are centred as a group, each point left-aligned (not every line on its own centre) */
 .modules--tiles .module__list, .prose .modules--tiles .module__list { width: fit-content; max-width: 100%; margin-inline: auto; text-align: left; }
+/* drawings sit on plain white, not on the warm tile wash */
+.modules--zoom .module__media, .modules--tiles.modules--zoom .module__media { background: #fff; }
