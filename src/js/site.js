@@ -1006,6 +1006,12 @@
     });
   })();
 
+  // ---------- "Product of ...": tap to open (hover opens it in CSS) ----------
+  [].forEach.call(document.querySelectorAll(".origin__btn"), function (b) {
+    b.addEventListener("click", function () { var o = !b.classList.contains("is-open"); b.classList.toggle("is-open", o); b.setAttribute("aria-expanded", String(o)); });
+    document.addEventListener("click", function (e) { if (!b.contains(e.target)) { b.classList.remove("is-open"); b.setAttribute("aria-expanded", "false"); } });
+  });
+
   // ---------- pictures further down: fetched top to bottom once the page has settled ----------
   // The top of the page is what the visitor sees first, so its pictures load first (eager in the HTML); the rest stay lazy for the
   // scroll position, and in quiet time they are also fetched in page order, a few at a time, nearest to the top first.

@@ -2,6 +2,16 @@
   "path": "/produkter/haeny",
   "updated": "2026-10-10",
   "template": "brand",
+  "origin": {
+    "country": "ch",
+    "since": 1875,
+    "more": {
+      "sv": "Konstruerad och byggd i Jona",
+      "en": "Designed and built in Jona",
+      "es": "Diseñada y fabricada en Jona",
+      "no": "Konstruert og bygget i Jona"
+    }
+  },
   "order": 1,
   "published": true,
   "hero": {
@@ -70,7 +80,7 @@
               "title": "Kompakta PU-anläggningar (CCP)",
               "image": "/assets/img/haeny-tile-ccp.webp",
               "alt": "Kompakta PU-anläggningar (CCP)",
-              "href": "/produkter/haeny/manuella-pumpar/ic-325-ic325-ccp#ic325-ccp",
+              "href": "/produkter/haeny/manuella-pumpar/ic-325-ccp",
               "width": 1000,
               "height": 1000
             },
@@ -397,7 +407,7 @@
             },
             {
               "title": "Kompakta PU-anläggningar (CCP)",
-              "href": "/produkter/haeny/manuella-pumpar/ic-325-ic325-ccp#ic325-ccp",
+              "href": "/produkter/haeny/manuella-pumpar/ic-325-ccp",
               "image": "/assets/img/haeny-tile-ccp.webp"
             },
             {
@@ -501,7 +511,7 @@
               "title": "Compact PU plants (CCP)",
               "image": "/assets/img/haeny-tile-ccp.webp",
               "alt": "Compact PU plants (CCP)",
-              "href": "/produkter/haeny/manuella-pumpar/ic-325-ic325-ccp#ic325-ccp",
+              "href": "/produkter/haeny/manuella-pumpar/ic-325-ccp",
               "width": 1000,
               "height": 1000
             },
@@ -829,7 +839,7 @@
             },
             {
               "title": "Compact PU plants (CCP)",
-              "href": "/produkter/haeny/manuella-pumpar/ic-325-ic325-ccp#ic325-ccp",
+              "href": "/produkter/haeny/manuella-pumpar/ic-325-ccp",
               "image": "/assets/img/haeny-tile-ccp.webp"
             },
             {
@@ -933,7 +943,7 @@
               "title": "Plantas compactas PU (CCP)",
               "image": "/assets/img/haeny-tile-ccp.webp",
               "alt": "Plantas compactas PU (CCP)",
-              "href": "/produkter/haeny/manuella-pumpar/ic-325-ic325-ccp#ic325-ccp",
+              "href": "/produkter/haeny/manuella-pumpar/ic-325-ccp",
               "width": 1000,
               "height": 1000
             },
@@ -1261,7 +1271,7 @@
             },
             {
               "title": "Plantas compactas PU (CCP)",
-              "href": "/produkter/haeny/manuella-pumpar/ic-325-ic325-ccp#ic325-ccp",
+              "href": "/produkter/haeny/manuella-pumpar/ic-325-ccp",
               "image": "/assets/img/haeny-tile-ccp.webp"
             },
             {
@@ -1365,7 +1375,7 @@
               "title": "Kompakte PU-anlegg (CCP)",
               "image": "/assets/img/haeny-tile-ccp.webp",
               "alt": "Kompakte PU-anlegg (CCP)",
-              "href": "/produkter/haeny/manuella-pumpar/ic-325-ic325-ccp#ic325-ccp",
+              "href": "/produkter/haeny/manuella-pumpar/ic-325-ccp",
               "width": 1000,
               "height": 1000
             },
@@ -1693,7 +1703,7 @@
             },
             {
               "title": "Kompakte PU-anlegg (CCP)",
-              "href": "/produkter/haeny/manuella-pumpar/ic-325-ic325-ccp#ic325-ccp",
+              "href": "/produkter/haeny/manuella-pumpar/ic-325-ccp",
               "image": "/assets/img/haeny-tile-ccp.webp"
             },
             {

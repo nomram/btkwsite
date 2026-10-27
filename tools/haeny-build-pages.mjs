@@ -3,7 +3,7 @@
 //   /produkter/haeny                     the brand page: complete units, parts, technology, recording equipment (picture tiles)
 //   /produkter/haeny/<family>            one page per family: overview, a tile for every model, comparison of the models
 //   /produkter/haeny/<family>/<model>    one page per model: picture, key features, technical data, performance chart, dimension drawing, brochure
-// IC 310 and IC 325 (with the CCP version) keep their older pages and get the brochure data added after the brochure button.
+// IC 310, IC 325 and IC 325 CCP (tools/ic325-split.mjs) keep their older pages and get the brochure data added after the brochure button.
 // The brochure text is English; headings and labels are written in all four languages, the brochure text goes through tools/haeny-i18n*.json.
 //   node tools/haeny-extract.mjs && node tools/haeny-tiles.mjs && node tools/haeny-build-pages.mjs
 import fs from "node:fs";
@@ -112,7 +112,8 @@ const BASE = "/produkter/haeny";
 const FAM_PATH = { blandare: `${BASE}/blandare`, omrorare: `${BASE}/omrorare`, injekteringspumpar: `${BASE}/injekteringspumpar`, "kompakta-anlaggningar": `${BASE}/manuella-pumpar`, "automatiska-anlaggningar": `${BASE}/automatiska-pumpar` };
 const FAM_TILE = { blandare: "hcm", omrorare: "hrw", injekteringspumpar: "zmp", "kompakta-anlaggningar": "ic", "automatiska-anlaggningar": "faic" };
 const slugOf = (k) => k.replace(/^([a-z]+)/, "$1-");
-// the two older IC pages stay where they were (the ranking addresses): IC 310 (the page that also described IC311) and IC 325 together with the CCP version
+// the two older IC pages stay where they were (the ranking addresses): IC 310 (the page that also described IC311) and IC 325; the CCP has a page of its own
+const CCP_PATH = `${BASE}/manuella-pumpar/ic-325-ccp`;
 const MODEL_PATH = (fam, k) => (k === "ic310" ? `${FAM_PATH[fam.slug]}/ic-310-ic-311` : k === "ic325" ? `${FAM_PATH[fam.slug]}/ic-325-ic325-ccp` : `${FAM_PATH[fam.slug]}/${slugOf(k)}`);
 const famOf = (k) => FAMILIES.find((f) => f.models.includes(k));
 
@@ -212,12 +213,8 @@ for (const fam of FAMILIES) {
       const keepOld = existing && existing.i18n[l] && (k === "ic310" || k === "ic325");
       if (keepOld) {
         const old = stripGen(existing.i18n[l].blocks);
-        const add = genBlocks([{ type: "heading", level: 2, text: `${T.data}: ${d.model}` }, ...(await resolveBlocks(dataBlocks(l, k, d, { download: false })))]);
+        const add = genBlocks([...(await resolveBlocks(dataBlocks(l, k, d, { download: false })))]);
         let blocks = insertAfterDownload(old, 0, add);
-        if (k === "ic325") {
-          const addC = genBlocks([{ type: "heading", level: 2, text: `${T.data}: ${CCP.model}` }, ...(await resolveBlocks([...topBlocks(l, "ccp", CCP).slice(0, 0), ...dataBlocks(l, "ccp", CCP, { download: false })]))]);
-          blocks = insertAfterDownload(blocks, 2, addC);
-        }
         const last = blocks[blocks.length - 1];
         i18n[l] = { ...existing.i18n[l], title: k === "ic310" ? "IC 310" : existing.i18n[l].title, h1: k === "ic310" ? "HÄNY IC 310" : existing.i18n[l].h1, blocks };
       } else {
@@ -231,12 +228,32 @@ for (const fam of FAMILIES) {
   }
 }
 
+// ---------- IC 325 CCP: its own page (made by tools/ic325-split.mjs); the brochure data goes in before the link back to the IC 325 ----------
+{
+  const file = pageFile(CCP_PATH);
+  if (fs.existsSync(file)) {
+    const page = readJson(file);
+    for (const l of LANGS) {
+      const T = L[l], old = stripGen(page.i18n[l].blocks);
+      const add = genBlocks([...(await resolveBlocks(dataBlocks(l, "ccp", CCP, { download: false })))]);
+      const at = old.findIndex((b) => b.type === "related");
+      old.splice(at < 0 ? old.length : at, 0, ...add);
+      page.i18n[l].blocks = old;
+    }
+    writeJson(file, { ...page, updated: date });
+  }
+}
+
 // ---------- the family pages ----------
 const keyOf = (fam, k, l) => { const d = DATA[k]; const p = pumpOf(d); return { title: d.model, image: tileOf(k), alt: `${d.title} ${d.model}`, href: MODEL_PATH(fam, k), bullets: [...(p ? [p] : []), ...keyFigures(d, l)] }; };
 async function modelTiles(fam, l) {
   const items = [];
   for (const k of fam.models) {
     const it = keyOf(fam, k, l); const dd = await dim(it.image); items.push({ ...it, ...dd });
+    if (k === "ic325") { // the CCP is the upgrade of the IC 325: a tile of its own right after it
+      const im = tileOf("ccp");
+      items.push({ title: "IC 325 CCP", image: im, alt: `${CCP.title} ${CCP.model}`, href: CCP_PATH, bullets: [pumpOf(CCP), ...keyFigures(CCP, l)].filter(Boolean), ...(await dim(im)) });
+    }
   }
   return { type: "modules", layout: "tiles", columns: fam.models.length > 8 ? 4 : 3, square: true, more: false, items };
 }
@@ -324,7 +341,7 @@ async function tileGroups(l) {
   const units = [
     await tile(fam("kompakta-anlaggningar").title[l], "ic", FAM_PATH["kompakta-anlaggningar"]),
     await tile(fam("automatiska-anlaggningar").title[l], "faic", FAM_PATH["automatiska-anlaggningar"]),
-    await tile(ccpTitle[l], "ccp", `${BASE}/manuella-pumpar/ic-325-ic325-ccp#ic325-ccp`),
+    await tile(ccpTitle[l], "ccp", CCP_PATH),
     await tile(mcmTitle[l], "mcm", `${BASE}/mobila-anlaggningar`)
   ];
   const parts = [];

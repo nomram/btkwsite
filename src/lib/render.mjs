@@ -1092,12 +1092,26 @@ function productQuoteCta(ctx, page, t, name) {
     `<a class="btn btn--light" href="${esc(href)}">${esc(u.quote_title || "Få offert")}${ICON.arrow}</a></div></section>`;
 }
 
+// "Product of Switzerland": only on the first page of a brand (the brand page; further down the small logo sits in this place). Quiet by default,
+// it opens on hover, focus or tap with what else is known: page.origin = { country: "ch", since: 1875, more: { sv: "…", en: "…" } }
+function renderOrigin(ctx, page, t) {
+  const o = page.template === "brand" ? page.origin : null;
+  if (!o || !o.country) return "";
+  let name = ""; try { name = new Intl.DisplayNames([ctx.lang || "sv"], { type: "region" }).of(String(o.country).toUpperCase()) || ""; } catch { /* no region names */ }
+  if (!name) return "";
+  const years = o.since ? new Date().getFullYear() - Number(o.since) : 0;
+  const more = [(o.more && (o.more[ctx.lang] || o.more[ctx.defaultLang] || o.more.en)) || "", o.since ? fmtTpl(ctx.ui.origin_since || "Since {y} ({n} years)", { y: o.since, n: years }) : ""].filter(Boolean);
+  return `<div class="origin"><button type="button" class="origin__btn" aria-expanded="false"><img src="${flagSrc(o.country)}" alt="" width="20" height="14"><span class="origin__main">${esc(ctx.ui.origin_of || "Product of")} <b>${esc(name)}</b></span>${more.length ? `<span class="origin__more">${more.map((x) => "· " + esc(x)).join(" ")}</span>` : ""}</button></div>`;
+}
+const fmtTpl = (s, o) => String(s).replace(/\{(\w+)\}/g, (m, k) => (o[k] != null ? o[k] : m));
+
 export function renderMain(ctx, page, t) {
   const { crumbLogo, splitHtml, rest } = composeBody(ctx, page, t);
   const crumbs = renderBreadcrumbs(ctx, page.path);
   const logo = crumbLogo
     ? `<a class="crumbs__logo" href="${esc(localizeHref(ctx, crumbLogo.href))}" style="--crumb-h:${crumbLogoHeight(ctx, crumbLogo)}px${crumbLogo.maxWidth ? `;--crumb-logo-w:${Math.round(Number(crumbLogo.maxWidth))}px` : ""}"${ctx.edit && crumbLogo.__i != null ? ` data-bk-i="${crumbLogo.__i}" data-bk-type="image"` : ""}>${imgTag(ctx, crumbLogo.src, crumbLogo.alt || "", { sizes: "120px" }).replace('loading="lazy"', 'loading="eager"')}</a>`
     : "";
+  const origin = renderOrigin(ctx, page, t);
   const heroImg = page.hero && page.hero.image ? page.hero.image : null;
   const title = t.h1 || t.title;
   const isHome = page.path === "/";
@@ -1109,7 +1123,7 @@ export function renderMain(ctx, page, t) {
   const hero = heroImg
     ? `<section class="hero${isHome ? " hero--home" : ""}">${heroImgTag(ctx, page, heroImg)}<div class="hero__shade"></div>${heroInner}${isHome && !ctx.edit ? `<a class="hero__scroll" href="#start" aria-label="${esc(ctx.ui.scroll_down || "Scrolla ner")}">${ICON.chevronDown}</a>` : ""}</section>`
     : `<section class="page-head${page.template === "about" ? " page-head--center" : ""}"><div class="container">${page.template === "about" ? "" : eyebrow}<h1${pageFld("h1")}>${esc(title)}</h1></div></section>`;
-  const crumbRow = crumbs || logo ? `<div class="container crumbs${page.template === "about" && !heroImg ? " crumbs--center" : ""}">${crumbs}${logo}</div>` : "";
+  const crumbRow = crumbs || logo || origin ? `<div class="container crumbs${page.template === "about" && !heroImg ? " crumbs--center" : ""}">${crumbs}${logo}${origin}</div>` : "";
   const ownRel = flatBlocks(t.blocks || []).filter((x) => x.type === "related");
   const ownHrefs = new Set(ownRel.flatMap((x) => (x.items || []).map((i) => i && i.href)));
   ctx._relExtra = ctx.edit || !ctx.incomingRelated ? [] : ctx.incomingRelated(page.path).filter((x) => !ownHrefs.has(x.href));
