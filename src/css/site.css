@@ -288,7 +288,7 @@ li:first-child > .subnav__link--logo::after { left: 0; }
 /* ---------- document band (grey) ---------- */
 .docbar { background: var(--band); border-block: 1px solid #e1dfdb; padding-block: .85rem 1rem; margin-block: 1.1rem; }
 .docbar__title { margin: 0 0 .55rem; font-size: .68rem; font-weight: 800; text-transform: uppercase; letter-spacing: .16em; color: var(--muted); }
-.docs { list-style: none; margin: 0; padding: 0; display: grid; gap: .6rem; grid-template-columns: repeat(auto-fill, minmax(min(100%, 24rem), 1fr)); }
+.docs { list-style: none; margin: 0; padding: 0; display: grid; gap: .6rem; grid-template-columns: repeat(auto-fill, minmax(min(100%, 27rem), 1fr)); }
 .docs--single { margin: 0 0 1.25rem; max-width: 34rem; display: block; }
 .doc { display: flex; flex-wrap: wrap; align-items: center; gap: .4rem .8rem; background: #fff; border: 1px solid #dedbd6; border-radius: var(--radius); padding: .4rem .6rem; transition: box-shadow .2s, border-color .2s; }
 .doc:hover { box-shadow: 0 6px 18px rgba(35, 31, 32, .10); border-color: #cfcac3; }

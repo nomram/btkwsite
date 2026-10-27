@@ -190,7 +190,33 @@ async function processImages() {
 
 // ---------- docs ----------
 const fileSizes = new Map();
-const docInfoMap = new Map(); // "/assets/docs/x.pdf" -> {pages, thumb, thumbW, thumbH}
+const docInfoMap = new Map(); // "/assets/docs/x.pdf" -> {pages, lang, thumb, thumbW, thumbH}
+// Which language a brochure is written in: stop-word count over the first pages; a PDF without a usable text layer falls back to the file name
+const STOP = {
+  sv: "och att det är för med som på en ett av har inte till från den de om kan vid eller också när sig vi ska så mer",
+  en: "the and of to is for with that this are as be on by or can from it an at which your you will all more",
+  de: "und der die das nicht für mit ist von zu den sich auf dem ein eine auch als bei werden kann oder sie",
+  fi: "ja on että ei se oli kun mutta myös tai kuin voi ovat sekä jos tämä joka mukaan vain",
+  es: "el la de que los las para con por una un es se del en su al más como también puede",
+  no: "og som er til på det en av for med ikke har fra kan eller også ved den de om vi skal",
+  it: "il di che per con una un del della le sono non è anche come più può dei gli nel",
+  fr: "le la les des du un une pour avec est sont pas que qui dans sur plus ou par aux ce",
+  da: "og at det er for med som på en af har ikke til fra den de om kan eller også ved vi skal"
+};
+const STOPSETS = Object.fromEntries(Object.entries(STOP).map(([k, v]) => [k, new Set(v.split(" "))]));
+function detectLang(text, file) {
+  const words = String(text || "").toLowerCase().match(/[a-zåäöüéèàñøæß]+/g) || [];
+  const score = Object.fromEntries(Object.keys(STOPSETS).map((k) => [k, 0]));
+  for (const w of words) for (const k of Object.keys(STOPSETS)) if (STOPSETS[k].has(w)) score[k]++;
+  const ranked = Object.entries(score).sort((a, b) => b[1] - a[1]);
+  const [best, second] = ranked;
+  // Swedish and Norwegian/Danish share many words: only call it Swedish with a clear lead
+  if (best && best[1] >= 25 && best[1] > (second ? second[1] : 0) * 1.4) return best[0];
+  const n = String(file || "").toLowerCase();
+  if (/(^|[-_ .])(eng|en)([-_ .]|$)|english/.test(n)) return "en";
+  if (/(^|[-_ .])(sv|se)([-_ .]|$)|svenska/.test(n)) return "sv";
+  return best && best[1] >= 12 && best[1] > (second ? second[1] : 0) * 1.4 ? best[0] : null;
+}
 async function processDocs() {
   const src = path.join(ROOT, "assets-src/docs");
   if (!exists(src)) return 0;
@@ -204,6 +230,7 @@ async function processDocs() {
   try { mupdf = await import("mupdf"); sharp = (await import("sharp")).default; } catch { console.warn("! mupdf/sharp missing: no PDF thumbnails"); }
   const idxFile = path.join(ROOT, ".cache/docs-index.json");
   const idx = exists(idxFile) ? readJson(idxFile) : {};
+  const langOverride = exists(path.join(ROOT, "content/doc-langs.json")) ? readJson(path.join(ROOT, "content/doc-langs.json")) : {};
   let made = 0;
   for (const f of fs.readdirSync(src)) {
     const p = path.join(src, f);
@@ -212,7 +239,7 @@ async function processDocs() {
     const href = `/assets/docs/${f}`;
     fileSizes.set(href, st.size);
     if (!mupdf || !/.pdf$/i.test(f)) continue;
-    const key = `${st.size}-${Math.round(st.mtimeMs)}`;
+    const key = `${st.size}-${Math.round(st.mtimeMs)}-l2`;
     const name = f.replace(/.pdf$/i, "");
     const thumbFile = path.join(cacheDir, name + ".webp");
     let rec = idx[f];
@@ -226,15 +253,17 @@ async function processDocs() {
         const pix = page.toPixmap(mupdf.Matrix.scale(scale, scale), mupdf.ColorSpace.DeviceRGB, false, true);
         const png = Buffer.from(pix.asPNG());
         const out = await sharp(png).webp({ quality: 72 }).toFile(thumbFile);
-        rec = { key, pages, w: out.width, h: out.height };
+        let text = "";
+        try { for (let i = 0; i < Math.min(pages, 3); i++) text += " " + doc.loadPage(i).toStructuredText().asText(); } catch { /* a page without text */ }
+        rec = { key, pages, w: out.width, h: out.height, lang: detectLang(text, f) };
         made++;
       } catch (e) { rec = { key, pages: 0, w: 0, h: 0, error: String(e.message || e) }; }
       idx[f] = rec;
     }
     if (rec.w) {
       fs.copyFileSync(thumbFile, path.join(thumbDst, name + ".webp"));
-      docInfoMap.set(href, { pages: rec.pages, thumb: `/assets/doc-thumbs/${name}.webp`, thumbW: rec.w, thumbH: rec.h });
-    } else if (rec.pages) docInfoMap.set(href, { pages: rec.pages });
+      docInfoMap.set(href, { pages: rec.pages, lang: langOverride[f] || rec.lang || null, thumb: `/assets/doc-thumbs/${name}.webp`, thumbW: rec.w, thumbH: rec.h });
+    } else if (rec.pages) docInfoMap.set(href, { pages: rec.pages, lang: langOverride[f] || rec.lang || null });
   }
   fs.writeFileSync(idxFile, JSON.stringify(idx));
   return made;

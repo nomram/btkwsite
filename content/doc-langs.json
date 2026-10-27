@@ -1,0 +1,23 @@
+{
+  "_note": "Language of a brochure when the text of the PDF cannot tell (no text layer, or two languages in one): filename -> code, or two codes joined with +. Everything else is detected from the PDF text at build time (src/build.mjs).",
+  "ecobeton-brickcover-tekniskt-datablad-tds.pdf": "sv",
+  "ecobeton-ercole-ecoactive-tekniskt-datablad-tds.pdf": "en",
+  "ecobeton-ercole-tekniskt-datablad-tds.pdf": "sv",
+  "ecobeton-evercrete-vetrofluid-tekniskt-datablad-tds.pdf": "sv",
+  "ecobeton-everwood-tekniskt-datablad-tds.pdf": "sv",
+  "ecobeton-microbond-tekniskt-datablad-tds.pdf": "sv",
+  "flexo-tekniikka-visa-broschyr.pdf": "sv",
+  "mapei-ladda-ner-pdf.pdf": "sv",
+  "om-oss-foretagsbroschyr.pdf": "sv",
+  "marini-crawlers-produktkatalog.pdf": "it+en",
+  "marini-slantstabilisering-las-mer.pdf": "it+en",
+  "marini-slantstabilisering-las-mer-2.pdf": "en",
+  "marini-slantstabilisering-mr-2-broschyr.pdf": "en",
+  "marini-slantstabilisering-mr-2-broschyr-2.pdf": "en",
+  "marini-slantstabilisering-mr-3-broschyr.pdf": "en",
+  "marini-slantstabilisering-mr-3-broschyr-2.pdf": "en",
+  "marini-slantstabilisering-mr-5-broschyr.pdf": "en",
+  "marini-slantstabilisering-mr-5-broschyr-2.pdf": "en",
+  "marini-slantstabilisering-mr-6-broschyr-ny-flik.pdf": "en",
+  "marini-slantstabilisering-mr-6-broschyr-ny-flik-2.pdf": "en"
+}

@@ -311,11 +311,17 @@ function renderCta(ctx, b) {
 }
 
 // One document row: thumbnail, name, meta, View + Download
+// the language of a brochure is shown on its own (meta line), so a tag such as "(ENG)" or "(PDF, engelska)" at the end of the name goes
+const DOC_TAG = /\s*\((?:pdf,?\s*)?(?:eng|en|sv|se|de|fi|english|engelska|swedish|svenska|engelsk|svensk|inglés|ingles|sueco|englisch)\)\s*$/i;
+const docName = (t) => String(t || "").replace(DOC_TAG, "").trim() || String(t || "");
+const docLang = (ctx, b) => b.lang || (!/^https?:/.test(b.href || "") && ctx.docInfo && ctx.docInfo(b.href) ? ctx.docInfo(b.href).lang : null) || null;
+const langName = (ctx, code) => String(code).split("+").map((c) => { try { const n = new Intl.DisplayNames([ctx.lang || "sv"], { type: "language" }).of(c); return n ? n.charAt(0).toUpperCase() + n.slice(1) : ""; } catch { return ""; } }).filter(Boolean).join(" / ");
 function renderDoc(ctx, b) {
   const external = b.external || /^https?:/.test(b.href || "");
   const info = !external && ctx.docInfo ? ctx.docInfo(b.href) : null;
   const size = !external && ctx.fileSize ? ctx.fileSize(b.href) : null;
   const meta = ["PDF"];
+  const lg = docLang(ctx, b); if (lg) meta.push(langName(ctx, lg));
   if (info && info.pages) meta.push(`${info.pages} ${info.pages === 1 ? ctx.ui.page_one || "sida" : ctx.ui.page_many || "sidor"}`);
   if (size) meta.push(fmtSize(size));
   const view = external ? b.href : localizeHref(ctx, b.href);
@@ -325,7 +331,7 @@ function renderDoc(ctx, b) {
     : ICON.pdf;
   const dattr = ctx.edit && b.__i != null ? ` data-bk-i="${b.__i}" data-bk-type="button"` : "";
   return `<li class="doc"${dattr}><a class="doc__thumb" href="${esc(view)}" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">${thumb}</a>` +
-    `<div class="doc__info"><span class="doc__name"${editFld(ctx, "text")}>${esc(b.text)}</span><span class="doc__meta">${esc(meta.join(" · "))}</span></div>` +
+    `<div class="doc__info"><span class="doc__name"${editFld(ctx, "text")}>${esc(ctx.edit ? b.text : docName(b.text))}</span><span class="doc__meta">${esc(meta.join(" · "))}</span></div>` +
     `<div class="doc__actions"><a class="btn btn--sm" href="${esc(view)}" target="_blank" rel="noopener">${ICON.eye}<span>${esc(ctx.ui.doc_view || "Visa")}</span><span class="sr-only"> ${esc(b.text)}</span></a>` +
     `<a class="btn btn--sm btn--ghost" href="${esc(dl)}"${external ? ' rel="noopener"' : " download"}>${ICON.down}<span>${esc(ctx.ui.download || "Ladda ner")}</span><span class="sr-only"> ${esc(b.text)}</span></a></div></li>`;
 }
@@ -688,10 +694,12 @@ export function renderBlocks(ctx, blocks) {
     if (b.type === "image") { imgRun.push(b); continue; }
     flushImgs();
     if (b.type === "button" && b.kind === "download") {
-      const run = [];
+      let run = [];
       while (i < list.length && list[i].type === "button" && list[i].kind === "download") run.push(list[i++]);
       i--;
       flushProse();
+      // outside Swedish a Swedish brochure is left out when the page has one in another language
+      if (!ctx.edit && ctx.lang !== "sv" && run.some((d) => { const l = docLang(ctx, d); return l && l !== "sv"; })) run = run.filter((d) => docLang(ctx, d) !== "sv");
       out.push(`<section class="docbar" aria-label="${esc(ctx.ui.documents || "Dokument")}"><div class="container"><h2 class="docbar__title">${esc(ctx.ui.documents || "Dokument")}</h2><ul class="docs">${run.map((d) => renderDoc(ctx, d)).join("")}</ul></div></section>`);
       continue;
     }

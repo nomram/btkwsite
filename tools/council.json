@@ -1,0 +1,9 @@
+{
+  "_note": "The council. Any OpenAI-compatible endpoint works (provider openrouter / nvidia, or give url + keyEnv). The models change over time: check the free tiers at openrouter.ai/models?max_price=0 and build.nvidia.com. Prefer three experts from different model families so they do not share the same blind spots.",
+  "experts": [
+    { "provider": "openrouter", "model": "meta-llama/llama-3.3-70b-instruct:free" },
+    { "provider": "openrouter", "model": "qwen/qwen-2.5-72b-instruct:free" },
+    { "provider": "nvidia", "model": "meta/llama-3.1-405b-instruct" }
+  ],
+  "chair": { "provider": "nvidia", "model": "nvidia/llama-3.1-nemotron-70b-instruct" }
+}

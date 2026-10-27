@@ -66,7 +66,11 @@ const collect = (d) => {
 };
 
 // ---------- data fixes for the few wrapped rows ----------
+// the brochure bullets are long sentences: tools/haeny-short.json holds a short English version of each (the translations are made from the short one)
+const SHORT = JSON.parse(fs.readFileSync(path.join(ROOT, "tools/haeny-short.json"), "utf8"));
+const shorten = (list) => [...new Set(list.map((x) => SHORT[x] || x))];
 function fixData(k, d) {
+  d.features = shorten(d.features); d.applications = shorten(d.applications);
   for (const t of d.tables) {
     t.title = t.title.replace(/^Electrical system$/i, "Electrical data");
     t.rows = t.rows.map(([l, v]) => [l.replace(/^Tension$/i, "Voltage"), v]);
