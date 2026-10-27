@@ -51,10 +51,10 @@ const PC = {
 };
 const PC_COLOR = { "#0000ff": "#2f5aa8", "#ff0000": "#cf3a2e", "#000000": "#2b2b2b" };
 const seriesName = (l, n) => n.replace(/^Plunger/i, PC[l].plunger).replace(/^Low pressure/i, PC[l].low).replace(/^High pressure/i, PC[l].high);
-Object.assign(L.sv, { zoomHint: "Håll muspekaren över ritningen (eller tryck och dra) för 2× förstoring.", compare: "Jämförelse av modellerna", reg: "Registrering och styrning", dpv: "Dataloggare (DPV-H)" });
-Object.assign(L.en, { zoomHint: "Hover over the drawing (or touch and drag) for a 2× magnifier.", compare: "Model comparison", reg: "Recording and control", dpv: "Data logger (DPV-H)" });
-Object.assign(L.es, { zoomHint: "Pase el cursor sobre el plano (o toque y arrastre) para una lupa 2×.", compare: "Comparación de modelos", reg: "Registro y control", dpv: "Registrador de datos (DPV-H)" });
-Object.assign(L.no, { zoomHint: "Hold musepekeren over tegningen (eller trykk og dra) for 2× forstørrelse.", compare: "Sammenligning av modellene", reg: "Registrering og styring", dpv: "Datalogger (DPV-H)" });
+Object.assign(L.sv, { kPlunger: "Kolv Ø", kFlow: "Flöde", kPressure: "Tryck", kContent: "Volym", kPower: "Effekt", zoomHint: "Håll muspekaren över ritningen (eller tryck och dra) för 2× förstoring.", compare: "Jämförelse av modellerna", reg: "Registrering och styrning", dpv: "Dataloggare (DPV-H)" });
+Object.assign(L.en, { kPlunger: "Plunger Ø", kFlow: "Flow", kPressure: "Pressure", kContent: "Volume", kPower: "Power", zoomHint: "Hover over the drawing (or touch and drag) for a 2× magnifier.", compare: "Model comparison", reg: "Recording and control", dpv: "Data logger (DPV-H)" });
+Object.assign(L.es, { kPlunger: "Émbolo Ø", kFlow: "Caudal", kPressure: "Presión", kContent: "Volumen", kPower: "Potencia", zoomHint: "Pase el cursor sobre el plano (o toque y arrastre) para una lupa 2×.", compare: "Comparación de modelos", reg: "Registro y control", dpv: "Registrador de datos (DPV-H)" });
+Object.assign(L.no, { kPlunger: "Stempel Ø", kFlow: "Ytelse", kPressure: "Trykk", kContent: "Volum", kPower: "Effekt", zoomHint: "Hold musepekeren over tegningen (eller trykk og dra) for 2× forstørrelse.", compare: "Sammenligning av modellene", reg: "Registrering og styring", dpv: "Datalogger (DPV-H)" });
 // ---------- translations of the brochure text (tools/haeny-i18n.json: English text -> sv / es / no) ----------
 const I18N = Object.assign({}, ...fs.readdirSync(path.join(ROOT, "tools")).filter((x) => /^haeny-i18n.*.json$/.test(x)).map((x) => JSON.parse(fs.readFileSync(path.join(ROOT, "tools", x), "utf8"))));
 const tr = (l, text) => (l === "en" || !text ? text : (I18N[text] && I18N[text][l]) || text);
@@ -70,6 +70,9 @@ const collect = (d) => {
 const SHORT = JSON.parse(fs.readFileSync(path.join(ROOT, "tools/haeny-short.json"), "utf8"));
 const shorten = (list) => [...new Set(list.map((x) => SHORT[x] || x))];
 function fixData(k, d) {
+  // one row can hold the values of several plunger sizes: write them as "85 / 105 / 120 mm", not "85 105 120 mm"
+  const slashed = (v) => { const m = String(v).match(/^(\d+(?:[.,]\d+)?(?: \d+(?:[.,]\d+)?)+)(\s*[^\d\s].*)?$/); return m ? m[1].split(" ").join(" / ") + (m[2] || "") : v; };
+  for (const t of d.tables) t.rows = t.rows.map(([a, b]) => [a, slashed(b)]);
   d.features = shorten(d.features); d.applications = shorten(d.applications);
   for (const t of d.tables) {
     t.title = t.title.replace(/^Electrical system$/i, "Electrical data");
@@ -92,10 +95,11 @@ function fixData(k, d) {
 }
 
 const clean = (s) => esc(s).replace(/\s+/g, " ").trim();
-const keyFigures = (d) => {
+const keyFigures = (d, l) => {
   const rows = d.tables.flatMap((t) => t.rows);
-  const pick = (re) => { const r = rows.find(([l]) => re.test(l)); return r ? r[1] : null; };
-  return [pick(/^(approx\. )?capacity|^max\. capacity/i), pick(/^max\. pressure/i), pick(/circulation capacity/i) && null, pick(/usable content( mixer)?$/i), pick(/^nominal power/i)].filter(Boolean).slice(0, 3);
+  const pick = (re) => { const r = rows.find(([lab, v]) => re.test(lab) && v && v !== "-"); return r ? r[1] : null; };
+  const lab = (k, v) => (v ? `${L[l][k]}: ${tr(l, v)}` : null);
+  return [lab("kPlunger", /^plunger/i.test((rows.find(([x]) => /^plunger/i.test(x)) || [""])[0]) ? pick(/^plunger/i) : null), lab("kFlow", pick(/^(approx. )?capacity|^max. capacity/i)), lab("kPressure", pick(/^max. pressure/i)), lab("kContent", pick(/usable content( mixer)?$/i)), lab("kPower", pick(/^nominal power/i))].filter(Boolean).slice(0, 3);
 };
 const pumpOf = (d) => { const t = d.tables.find((x) => /grout pump/i.test(x.title) && x.subtitle); return t ? t.subtitle : ""; };
 
@@ -224,11 +228,11 @@ for (const fam of FAMILIES) {
 }
 
 // ---------- the family pages ----------
-const keyOf = (fam, k) => { const d = DATA[k]; const p = pumpOf(d); return { title: d.model, image: tileOf(k), alt: `${d.title} ${d.model}`, href: MODEL_PATH(fam, k), bullets: [...(p ? [p] : []), ...keyFigures(d)] }; };
-async function modelTiles(fam) {
+const keyOf = (fam, k, l) => { const d = DATA[k]; const p = pumpOf(d); return { title: d.model, image: tileOf(k), alt: `${d.title} ${d.model}`, href: MODEL_PATH(fam, k), bullets: [...(p ? [p] : []), ...keyFigures(d, l)] }; };
+async function modelTiles(fam, l) {
   const items = [];
   for (const k of fam.models) {
-    const it = keyOf(fam, k); const dd = await dim(it.image); items.push({ ...it, ...dd });
+    const it = keyOf(fam, k, l); const dd = await dim(it.image); items.push({ ...it, ...dd });
   }
   return { type: "modules", layout: "tiles", columns: fam.models.length > 8 ? 4 : 3, square: true, more: false, items };
 }
@@ -247,7 +251,6 @@ for (const fam of FAMILIES) {
   const pagePath = FAM_PATH[fam.slug];
   const file = pageFile(pagePath);
   const existing = fs.existsSync(file) ? readJson(file) : null;
-  const tilesBlock = await modelTiles(fam);
   const i18n = {};
   for (const l of LANGS) {
     const T = L[l];
@@ -255,7 +258,8 @@ for (const fam of FAMILIES) {
     const tileImg = `/assets/img/haeny-tile-${FAM_TILE[fam.slug]}.webp`;
     const overview = [{ type: "heading", level: 2, text: T.overview }];
     if (first.features.length) overview.push({ type: "list", ordered: false, items: first.features.map((x) => clean(tr(l, x))) });
-    const models = [{ type: "heading", level: 2, text: T.models }, { ...tilesBlock, items: tilesBlock.items.map((it) => ({ ...it, title: it.title, alt: it.alt, bullets: it.bullets.map((x) => tr(l, x)) })) }];
+    const tilesBlock = await modelTiles(fam, l);
+    const models = [{ type: "heading", level: 2, text: T.models }, tilesBlock];
     const uses = first.applications.length ? [{ type: "heading", level: 3, text: T.uses }, { type: "list", ordered: false, items: first.applications.map((x) => clean(tr(l, x))) }] : [];
     const cmp = fam.slug === "kompakta-anlaggningar" ? null : comparison(l, fam);
     const compare = cmp ? [{ type: "heading", level: 2, text: T.compare }, cmp] : [];

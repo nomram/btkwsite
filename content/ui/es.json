@@ -103,5 +103,17 @@
   "finder_hint": "Elija un tipo de producto arriba para ver modelos y folletos.",
   "quote_v_required": "Complete este campo.",
   "quote_v_email": "Introduzca una dirección de correo electrónico válida.",
-  "quote_v_consent": "Marque la casilla para que podamos usar sus datos y así podrá enviar su solicitud."
+  "quote_v_consent": "Marque la casilla para que podamos usar sus datos y así podrá enviar su solicitud.",
+  "cmp_hint": "Seleccione filas o columnas pulsando sus encabezados: el resto se atenúa y puede comparar la selección lado a lado.",
+  "cmp_selected": "{n} seleccionados",
+  "cmp_pick_more": "Seleccione al menos uno más para comparar",
+  "cmp_compare": "Comparar",
+  "cmp_clear": "Borrar",
+  "cmp_title": "Comparación",
+  "cmp_only_diff": "Mostrar solo diferencias",
+  "cmp_close": "Cerrar",
+  "cmp_remove": "Quitar {name}",
+  "cmp_same": "No hay diferencias entre los seleccionados.",
+  "cmp_select": "Seleccionar {name} para comparar",
+  "cmp_differs": "Difiere"
 }

@@ -103,5 +103,17 @@
   "finder_hint": "Choose a product type above to see models and brochures.",
   "quote_v_required": "Please fill in this field.",
   "quote_v_email": "Please enter a valid e-mail address.",
-  "quote_v_consent": "Please tick the box to let us use your details, then you can send your request."
+  "quote_v_consent": "Please tick the box to let us use your details, then you can send your request.",
+  "cmp_hint": "Select rows or columns by clicking their headings: the rest fades and you can compare the selection side by side.",
+  "cmp_selected": "{n} selected",
+  "cmp_pick_more": "Select at least one more to compare",
+  "cmp_compare": "Compare",
+  "cmp_clear": "Clear",
+  "cmp_title": "Comparison",
+  "cmp_only_diff": "Show only differences",
+  "cmp_close": "Close",
+  "cmp_remove": "Remove {name}",
+  "cmp_same": "No differences between the selected.",
+  "cmp_select": "Select {name} for comparison",
+  "cmp_differs": "Differs"
 }

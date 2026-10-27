@@ -64,9 +64,9 @@
               "href": "/produkter/haeny/manuella-pumpar/ic-310-ic-311",
               "bullets": [
                 "ZMP 610",
-                "1.5 m³/h",
-                "100 bar",
-                "100 l"
+                "Flöde: 1.5 m³/h",
+                "Tryck: 100 bar",
+                "Volym: 100 l"
               ],
               "width": 1000,
               "height": 1000
@@ -78,9 +78,9 @@
               "href": "/produkter/haeny/manuella-pumpar/ic-311",
               "bullets": [
                 "ZMP 611",
-                "2 m³/h",
-                "75 bar",
-                "100 l"
+                "Flöde: 2 m³/h",
+                "Tryck: 75 bar",
+                "Volym: 100 l"
               ],
               "width": 1000,
               "height": 1000
@@ -92,9 +92,9 @@
               "href": "/produkter/haeny/manuella-pumpar/ic-325-ic325-ccp",
               "bullets": [
                 "ZMP 625",
-                "2 m³/h",
-                "100 bar",
-                "100 l"
+                "Flöde: 2 m³/h",
+                "Tryck: 100 bar",
+                "Volym: 100 l"
               ],
               "width": 1000,
               "height": 1000
@@ -106,9 +106,9 @@
               "href": "/produkter/haeny/manuella-pumpar/ic-650-710v",
               "bullets": [
                 "ZMP 710",
-                "5 m³/h",
-                "100 bar",
-                "260 l"
+                "Flöde: 5 m³/h",
+                "Tryck: 100 bar",
+                "Volym: 260 l"
               ],
               "width": 1000,
               "height": 1000
@@ -120,9 +120,9 @@
               "href": "/produkter/haeny/manuella-pumpar/ic-650-712v",
               "bullets": [
                 "ZMP 712",
-                "4.9 m³/h",
-                "88 bar",
-                "260 l"
+                "Flöde: 4.9 m³/h",
+                "Tryck: 88 bar",
+                "Volym: 260 l"
               ],
               "width": 1000,
               "height": 1000
@@ -134,9 +134,9 @@
               "href": "/produkter/haeny/manuella-pumpar/ic-650-725v",
               "bullets": [
                 "ZMP 725",
-                "5 m³/h",
-                "100 bar",
-                "260 l"
+                "Flöde: 5 m³/h",
+                "Tryck: 100 bar",
+                "Volym: 260 l"
               ],
               "width": 1000,
               "height": 1000
@@ -148,9 +148,9 @@
               "href": "/produkter/haeny/manuella-pumpar/ic-1100-710v",
               "bullets": [
                 "ZMP 710",
-                "5 m³/h",
-                "100 bar",
-                "260 l"
+                "Flöde: 5 m³/h",
+                "Tryck: 100 bar",
+                "Volym: 260 l"
               ],
               "width": 1000,
               "height": 1000
@@ -162,9 +162,9 @@
               "href": "/produkter/haeny/manuella-pumpar/ic-1100-712v",
               "bullets": [
                 "ZMP 712",
-                "4.9 m³/h",
-                "88 bar",
-                "260 l"
+                "Flöde: 4.9 m³/h",
+                "Tryck: 88 bar",
+                "Volym: 260 l"
               ],
               "width": 1000,
               "height": 1000
@@ -176,9 +176,9 @@
               "href": "/produkter/haeny/manuella-pumpar/ic-1100-725v",
               "bullets": [
                 "ZMP 725",
-                "5 m³/h",
-                "100 bar",
-                "260 l"
+                "Flöde: 5 m³/h",
+                "Tryck: 100 bar",
+                "Volym: 260 l"
               ],
               "width": 1000,
               "height": 1000
@@ -190,9 +190,9 @@
               "href": "/produkter/haeny/manuella-pumpar/ic-1400-710v",
               "bullets": [
                 "ZMP 710",
-                "7.5 m³/h",
-                "100 bar",
-                "550 l"
+                "Flöde: 7.5 m³/h",
+                "Tryck: 100 bar",
+                "Volym: 550 l"
               ],
               "width": 1000,
               "height": 1000
@@ -204,9 +204,9 @@
               "href": "/produkter/haeny/manuella-pumpar/ic-1400-712v",
               "bullets": [
                 "ZMP 712",
-                "4.9 m³/h",
-                "88 bar",
-                "550 l"
+                "Flöde: 4.9 m³/h",
+                "Tryck: 88 bar",
+                "Volym: 550 l"
               ],
               "width": 1000,
               "height": 1000
@@ -218,9 +218,9 @@
               "href": "/produkter/haeny/manuella-pumpar/ic-1400-725v",
               "bullets": [
                 "ZMP 725",
-                "8 m³/h",
-                "100 bar",
-                "550 l"
+                "Flöde: 8 m³/h",
+                "Tryck: 100 bar",
+                "Volym: 550 l"
               ],
               "width": 1000,
               "height": 1000
@@ -232,9 +232,9 @@
               "href": "/produkter/haeny/manuella-pumpar/ic-1400-726v",
               "bullets": [
                 "ZMP 726",
-                "8 m³/h",
-                "100 bar",
-                "550 l"
+                "Flöde: 8 m³/h",
+                "Tryck: 100 bar",
+                "Volym: 550 l"
               ],
               "width": 1000,
               "height": 1000
@@ -268,7 +268,7 @@
         },
         {
           "type": "table",
-          "header": false,
+          "header": true,
           "align": "center",
           "groups": [
             {
@@ -301,6 +301,24 @@
             }
           ],
           "rows": [
+            [
+              "Modell",
+              "",
+              "IC 310",
+              "IC 311",
+              "IC 325",
+              "IC 650/710",
+              "IC 650/712",
+              "IC 650/725",
+              "IC 1100/710",
+              "IC 1100/712",
+              "IC 1100/725",
+              "IC 1100/726",
+              "IC 1400/710",
+              "IC 1400/712",
+              "IC 1400/725",
+              "IC 1400/726"
+            ],
             [
               "Konfiguration",
               "HCM/HRW",
@@ -451,9 +469,9 @@
               "href": "/produkter/haeny/manuella-pumpar/ic-310-ic-311",
               "bullets": [
                 "ZMP 610",
-                "1.5 m³/h",
-                "100 bar",
-                "100 l"
+                "Flow: 1.5 m³/h",
+                "Pressure: 100 bar",
+                "Volume: 100 l"
               ],
               "width": 1000,
               "height": 1000
@@ -465,9 +483,9 @@
               "href": "/produkter/haeny/manuella-pumpar/ic-311",
               "bullets": [
                 "ZMP 611",
-                "2 m³/h",
-                "75 bar",
-                "100 l"
+                "Flow: 2 m³/h",
+                "Pressure: 75 bar",
+                "Volume: 100 l"
               ],
               "width": 1000,
               "height": 1000
@@ -479,9 +497,9 @@
               "href": "/produkter/haeny/manuella-pumpar/ic-325-ic325-ccp",
               "bullets": [
                 "ZMP 625",
-                "2 m³/h",
-                "100 bar",
-                "100 l"
+                "Flow: 2 m³/h",
+                "Pressure: 100 bar",
+                "Volume: 100 l"
               ],
               "width": 1000,
               "height": 1000
@@ -493,9 +511,9 @@
               "href": "/produkter/haeny/manuella-pumpar/ic-650-710v",
               "bullets": [
                 "ZMP 710",
-                "5 m³/h",
-                "100 bar",
-                "260 l"
+                "Flow: 5 m³/h",
+                "Pressure: 100 bar",
+                "Volume: 260 l"
               ],
               "width": 1000,
               "height": 1000
@@ -507,9 +525,9 @@
               "href": "/produkter/haeny/manuella-pumpar/ic-650-712v",
               "bullets": [
                 "ZMP 712",
-                "4.9 m³/h",
-                "88 bar",
-                "260 l"
+                "Flow: 4.9 m³/h",
+                "Pressure: 88 bar",
+                "Volume: 260 l"
               ],
               "width": 1000,
               "height": 1000
@@ -521,9 +539,9 @@
               "href": "/produkter/haeny/manuella-pumpar/ic-650-725v",
               "bullets": [
                 "ZMP 725",
-                "5 m³/h",
-                "100 bar",
-                "260 l"
+                "Flow: 5 m³/h",
+                "Pressure: 100 bar",
+                "Volume: 260 l"
               ],
               "width": 1000,
               "height": 1000
@@ -535,9 +553,9 @@
               "href": "/produkter/haeny/manuella-pumpar/ic-1100-710v",
               "bullets": [
                 "ZMP 710",
-                "5 m³/h",
-                "100 bar",
-                "260 l"
+                "Flow: 5 m³/h",
+                "Pressure: 100 bar",
+                "Volume: 260 l"
               ],
               "width": 1000,
               "height": 1000
@@ -549,9 +567,9 @@
               "href": "/produkter/haeny/manuella-pumpar/ic-1100-712v",
               "bullets": [
                 "ZMP 712",
-                "4.9 m³/h",
-                "88 bar",
-                "260 l"
+                "Flow: 4.9 m³/h",
+                "Pressure: 88 bar",
+                "Volume: 260 l"
               ],
               "width": 1000,
               "height": 1000
@@ -563,9 +581,9 @@
               "href": "/produkter/haeny/manuella-pumpar/ic-1100-725v",
               "bullets": [
                 "ZMP 725",
-                "5 m³/h",
-                "100 bar",
-                "260 l"
+                "Flow: 5 m³/h",
+                "Pressure: 100 bar",
+                "Volume: 260 l"
               ],
               "width": 1000,
               "height": 1000
@@ -577,9 +595,9 @@
               "href": "/produkter/haeny/manuella-pumpar/ic-1400-710v",
               "bullets": [
                 "ZMP 710",
-                "7.5 m³/h",
-                "100 bar",
-                "550 l"
+                "Flow: 7.5 m³/h",
+                "Pressure: 100 bar",
+                "Volume: 550 l"
               ],
               "width": 1000,
               "height": 1000
@@ -591,9 +609,9 @@
               "href": "/produkter/haeny/manuella-pumpar/ic-1400-712v",
               "bullets": [
                 "ZMP 712",
-                "4.9 m³/h",
-                "88 bar",
-                "550 l"
+                "Flow: 4.9 m³/h",
+                "Pressure: 88 bar",
+                "Volume: 550 l"
               ],
               "width": 1000,
               "height": 1000
@@ -605,9 +623,9 @@
               "href": "/produkter/haeny/manuella-pumpar/ic-1400-725v",
               "bullets": [
                 "ZMP 725",
-                "8 m³/h",
-                "100 bar",
-                "550 l"
+                "Flow: 8 m³/h",
+                "Pressure: 100 bar",
+                "Volume: 550 l"
               ],
               "width": 1000,
               "height": 1000
@@ -619,9 +637,9 @@
               "href": "/produkter/haeny/manuella-pumpar/ic-1400-726v",
               "bullets": [
                 "ZMP 726",
-                "8 m³/h",
-                "100 bar",
-                "550 l"
+                "Flow: 8 m³/h",
+                "Pressure: 100 bar",
+                "Volume: 550 l"
               ],
               "width": 1000,
               "height": 1000
@@ -655,7 +673,7 @@
         },
         {
           "type": "table",
-          "header": false,
+          "header": true,
           "align": "center",
           "groups": [
             {
@@ -688,6 +706,24 @@
             }
           ],
           "rows": [
+            [
+              "Model",
+              "",
+              "IC 310",
+              "IC 311",
+              "IC 325",
+              "IC 650/710",
+              "IC 650/712",
+              "IC 650/725",
+              "IC 1100/710",
+              "IC 1100/712",
+              "IC 1100/725",
+              "IC 1100/726",
+              "IC 1400/710",
+              "IC 1400/712",
+              "IC 1400/725",
+              "IC 1400/726"
+            ],
             [
               "Configuration",
               "HCM/HRW",
@@ -838,9 +874,9 @@
               "href": "/produkter/haeny/manuella-pumpar/ic-310-ic-311",
               "bullets": [
                 "ZMP 610",
-                "1.5 m³/h",
-                "100 bar",
-                "100 l"
+                "Caudal: 1.5 m³/h",
+                "Presión: 100 bar",
+                "Volumen: 100 l"
               ],
               "width": 1000,
               "height": 1000
@@ -852,9 +888,9 @@
               "href": "/produkter/haeny/manuella-pumpar/ic-311",
               "bullets": [
                 "ZMP 611",
-                "2 m³/h",
-                "75 bar",
-                "100 l"
+                "Caudal: 2 m³/h",
+                "Presión: 75 bar",
+                "Volumen: 100 l"
               ],
               "width": 1000,
               "height": 1000
@@ -866,9 +902,9 @@
               "href": "/produkter/haeny/manuella-pumpar/ic-325-ic325-ccp",
               "bullets": [
                 "ZMP 625",
-                "2 m³/h",
-                "100 bar",
-                "100 l"
+                "Caudal: 2 m³/h",
+                "Presión: 100 bar",
+                "Volumen: 100 l"
               ],
               "width": 1000,
               "height": 1000
@@ -880,9 +916,9 @@
               "href": "/produkter/haeny/manuella-pumpar/ic-650-710v",
               "bullets": [
                 "ZMP 710",
-                "5 m³/h",
-                "100 bar",
-                "260 l"
+                "Caudal: 5 m³/h",
+                "Presión: 100 bar",
+                "Volumen: 260 l"
               ],
               "width": 1000,
               "height": 1000
@@ -894,9 +930,9 @@
               "href": "/produkter/haeny/manuella-pumpar/ic-650-712v",
               "bullets": [
                 "ZMP 712",
-                "4.9 m³/h",
-                "88 bar",
-                "260 l"
+                "Caudal: 4.9 m³/h",
+                "Presión: 88 bar",
+                "Volumen: 260 l"
               ],
               "width": 1000,
               "height": 1000
@@ -908,9 +944,9 @@
               "href": "/produkter/haeny/manuella-pumpar/ic-650-725v",
               "bullets": [
                 "ZMP 725",
-                "5 m³/h",
-                "100 bar",
-                "260 l"
+                "Caudal: 5 m³/h",
+                "Presión: 100 bar",
+                "Volumen: 260 l"
               ],
               "width": 1000,
               "height": 1000
@@ -922,9 +958,9 @@
               "href": "/produkter/haeny/manuella-pumpar/ic-1100-710v",
               "bullets": [
                 "ZMP 710",
-                "5 m³/h",
-                "100 bar",
-                "260 l"
+                "Caudal: 5 m³/h",
+                "Presión: 100 bar",
+                "Volumen: 260 l"
               ],
               "width": 1000,
               "height": 1000
@@ -936,9 +972,9 @@
               "href": "/produkter/haeny/manuella-pumpar/ic-1100-712v",
               "bullets": [
                 "ZMP 712",
-                "4.9 m³/h",
-                "88 bar",
-                "260 l"
+                "Caudal: 4.9 m³/h",
+                "Presión: 88 bar",
+                "Volumen: 260 l"
               ],
               "width": 1000,
               "height": 1000
@@ -950,9 +986,9 @@
               "href": "/produkter/haeny/manuella-pumpar/ic-1100-725v",
               "bullets": [
                 "ZMP 725",
-                "5 m³/h",
-                "100 bar",
-                "260 l"
+                "Caudal: 5 m³/h",
+                "Presión: 100 bar",
+                "Volumen: 260 l"
               ],
               "width": 1000,
               "height": 1000
@@ -964,9 +1000,9 @@
               "href": "/produkter/haeny/manuella-pumpar/ic-1400-710v",
               "bullets": [
                 "ZMP 710",
-                "7.5 m³/h",
-                "100 bar",
-                "550 l"
+                "Caudal: 7.5 m³/h",
+                "Presión: 100 bar",
+                "Volumen: 550 l"
               ],
               "width": 1000,
               "height": 1000
@@ -978,9 +1014,9 @@
               "href": "/produkter/haeny/manuella-pumpar/ic-1400-712v",
               "bullets": [
                 "ZMP 712",
-                "4.9 m³/h",
-                "88 bar",
-                "550 l"
+                "Caudal: 4.9 m³/h",
+                "Presión: 88 bar",
+                "Volumen: 550 l"
               ],
               "width": 1000,
               "height": 1000
@@ -992,9 +1028,9 @@
               "href": "/produkter/haeny/manuella-pumpar/ic-1400-725v",
               "bullets": [
                 "ZMP 725",
-                "8 m³/h",
-                "100 bar",
-                "550 l"
+                "Caudal: 8 m³/h",
+                "Presión: 100 bar",
+                "Volumen: 550 l"
               ],
               "width": 1000,
               "height": 1000
@@ -1006,9 +1042,9 @@
               "href": "/produkter/haeny/manuella-pumpar/ic-1400-726v",
               "bullets": [
                 "ZMP 726",
-                "8 m³/h",
-                "100 bar",
-                "550 l"
+                "Caudal: 8 m³/h",
+                "Presión: 100 bar",
+                "Volumen: 550 l"
               ],
               "width": 1000,
               "height": 1000
@@ -1042,7 +1078,7 @@
         },
         {
           "type": "table",
-          "header": false,
+          "header": true,
           "align": "center",
           "groups": [
             {
@@ -1075,6 +1111,24 @@
             }
           ],
           "rows": [
+            [
+              "Modelo",
+              "",
+              "IC 310",
+              "IC 311",
+              "IC 325",
+              "IC 650/710",
+              "IC 650/712",
+              "IC 650/725",
+              "IC 1100/710",
+              "IC 1100/712",
+              "IC 1100/725",
+              "IC 1100/726",
+              "IC 1400/710",
+              "IC 1400/712",
+              "IC 1400/725",
+              "IC 1400/726"
+            ],
             [
               "Configuración",
               "HCM/HRW",
@@ -1225,9 +1279,9 @@
               "href": "/produkter/haeny/manuella-pumpar/ic-310-ic-311",
               "bullets": [
                 "ZMP 610",
-                "1.5 m³/h",
-                "100 bar",
-                "100 l"
+                "Ytelse: 1.5 m³/h",
+                "Trykk: 100 bar",
+                "Volum: 100 l"
               ],
               "width": 1000,
               "height": 1000
@@ -1239,9 +1293,9 @@
               "href": "/produkter/haeny/manuella-pumpar/ic-311",
               "bullets": [
                 "ZMP 611",
-                "2 m³/h",
-                "75 bar",
-                "100 l"
+                "Ytelse: 2 m³/h",
+                "Trykk: 75 bar",
+                "Volum: 100 l"
               ],
               "width": 1000,
               "height": 1000
@@ -1253,9 +1307,9 @@
               "href": "/produkter/haeny/manuella-pumpar/ic-325-ic325-ccp",
               "bullets": [
                 "ZMP 625",
-                "2 m³/h",
-                "100 bar",
-                "100 l"
+                "Ytelse: 2 m³/h",
+                "Trykk: 100 bar",
+                "Volum: 100 l"
               ],
               "width": 1000,
               "height": 1000
@@ -1267,9 +1321,9 @@
               "href": "/produkter/haeny/manuella-pumpar/ic-650-710v",
               "bullets": [
                 "ZMP 710",
-                "5 m³/h",
-                "100 bar",
-                "260 l"
+                "Ytelse: 5 m³/h",
+                "Trykk: 100 bar",
+                "Volum: 260 l"
               ],
               "width": 1000,
               "height": 1000
@@ -1281,9 +1335,9 @@
               "href": "/produkter/haeny/manuella-pumpar/ic-650-712v",
               "bullets": [
                 "ZMP 712",
-                "4.9 m³/h",
-                "88 bar",
-                "260 l"
+                "Ytelse: 4.9 m³/h",
+                "Trykk: 88 bar",
+                "Volum: 260 l"
               ],
               "width": 1000,
               "height": 1000
@@ -1295,9 +1349,9 @@
               "href": "/produkter/haeny/manuella-pumpar/ic-650-725v",
               "bullets": [
                 "ZMP 725",
-                "5 m³/h",
-                "100 bar",
-                "260 l"
+                "Ytelse: 5 m³/h",
+                "Trykk: 100 bar",
+                "Volum: 260 l"
               ],
               "width": 1000,
               "height": 1000
@@ -1309,9 +1363,9 @@
               "href": "/produkter/haeny/manuella-pumpar/ic-1100-710v",
               "bullets": [
                 "ZMP 710",
-                "5 m³/h",
-                "100 bar",
-                "260 l"
+                "Ytelse: 5 m³/h",
+                "Trykk: 100 bar",
+                "Volum: 260 l"
               ],
               "width": 1000,
               "height": 1000
@@ -1323,9 +1377,9 @@
               "href": "/produkter/haeny/manuella-pumpar/ic-1100-712v",
               "bullets": [
                 "ZMP 712",
-                "4.9 m³/h",
-                "88 bar",
-                "260 l"
+                "Ytelse: 4.9 m³/h",
+                "Trykk: 88 bar",
+                "Volum: 260 l"
               ],
               "width": 1000,
               "height": 1000
@@ -1337,9 +1391,9 @@
               "href": "/produkter/haeny/manuella-pumpar/ic-1100-725v",
               "bullets": [
                 "ZMP 725",
-                "5 m³/h",
-                "100 bar",
-                "260 l"
+                "Ytelse: 5 m³/h",
+                "Trykk: 100 bar",
+                "Volum: 260 l"
               ],
               "width": 1000,
               "height": 1000
@@ -1351,9 +1405,9 @@
               "href": "/produkter/haeny/manuella-pumpar/ic-1400-710v",
               "bullets": [
                 "ZMP 710",
-                "7.5 m³/h",
-                "100 bar",
-                "550 l"
+                "Ytelse: 7.5 m³/h",
+                "Trykk: 100 bar",
+                "Volum: 550 l"
               ],
               "width": 1000,
               "height": 1000
@@ -1365,9 +1419,9 @@
               "href": "/produkter/haeny/manuella-pumpar/ic-1400-712v",
               "bullets": [
                 "ZMP 712",
-                "4.9 m³/h",
-                "88 bar",
-                "550 l"
+                "Ytelse: 4.9 m³/h",
+                "Trykk: 88 bar",
+                "Volum: 550 l"
               ],
               "width": 1000,
               "height": 1000
@@ -1379,9 +1433,9 @@
               "href": "/produkter/haeny/manuella-pumpar/ic-1400-725v",
               "bullets": [
                 "ZMP 725",
-                "8 m³/h",
-                "100 bar",
-                "550 l"
+                "Ytelse: 8 m³/h",
+                "Trykk: 100 bar",
+                "Volum: 550 l"
               ],
               "width": 1000,
               "height": 1000
@@ -1393,9 +1447,9 @@
               "href": "/produkter/haeny/manuella-pumpar/ic-1400-726v",
               "bullets": [
                 "ZMP 726",
-                "8 m³/h",
-                "100 bar",
-                "550 l"
+                "Ytelse: 8 m³/h",
+                "Trykk: 100 bar",
+                "Volum: 550 l"
               ],
               "width": 1000,
               "height": 1000
@@ -1429,7 +1483,7 @@
         },
         {
           "type": "table",
-          "header": false,
+          "header": true,
           "align": "center",
           "groups": [
             {
@@ -1462,6 +1516,24 @@
             }
           ],
           "rows": [
+            [
+              "Modell",
+              "",
+              "IC 310",
+              "IC 311",
+              "IC 325",
+              "IC 650/710",
+              "IC 650/712",
+              "IC 650/725",
+              "IC 1100/710",
+              "IC 1100/712",
+              "IC 1100/725",
+              "IC 1100/726",
+              "IC 1400/710",
+              "IC 1400/712",
+              "IC 1400/725",
+              "IC 1400/726"
+            ],
             [
               "Konfigurasjon",
               "HCM/HRW",

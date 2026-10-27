@@ -249,7 +249,9 @@ function renderTable(ctx, b) {
   const avg = cells.length ? cells.reduce((n, c) => n + String(c).length, 0) / cells.length : 0;
   const centre = b.align === "center" || (b.align !== "left" && avg <= 16);
   const cls = ["table-wrap", groups.length ? "table-wrap--groups" : "", centre ? "table-wrap--center" : "", b.narrow ? "table-wrap--narrow" : "", b.compact ? "table-wrap--compact" : ""].filter(Boolean).join(" ");
-  return `<div class="${cls}" tabindex="0" role="region" aria-label="${esc(b.caption || ctx.ui.table_label || "Tabell")}"><table>${b.caption ? `<caption>${esc(b.caption)}</caption>` : ""}${th}${tb}</table></div>`;
+  const nCols = Math.max(...rows.map((r) => r.length)), canCompare = !ctx.edit && b.compare !== false && body.length >= 3 && nCols >= 3;
+  const cmpUi = canCompare ? " data-compare data-cmp=\"" + esc(JSON.stringify(Object.fromEntries(Object.entries(ctx.ui).filter(([k]) => k.startsWith("cmp_"))))) + "\"" : "";
+  return `<div class="${cls}" tabindex="0" role="region" aria-label="${esc(b.caption || ctx.ui.table_label || "Tabell")}"${cmpUi}><table>${b.caption ? `<caption>${esc(b.caption)}</caption>` : ""}${th}${tb}</table></div>`;
 }
 
 // Technical data sheet: intro + one table per group (label | metric | imperial)
