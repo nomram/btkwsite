@@ -190,10 +190,21 @@
           "gen": true
         },
         {
+          "type": "sizeselect",
+          "label": "Kolv Ø",
+          "all": "Alla",
+          "unit": "mm",
+          "sizes": [
+            85,
+            105,
+            120
+          ],
+          "gen": true
+        },
+        {
           "type": "table",
           "header": true,
           "align": "center",
-          "caption": "Jämförelse av modellerna",
           "rows": [
             [
               "",
@@ -577,10 +588,21 @@
           "gen": true
         },
         {
+          "type": "sizeselect",
+          "label": "Plunger Ø",
+          "all": "All",
+          "unit": "mm",
+          "sizes": [
+            85,
+            105,
+            120
+          ],
+          "gen": true
+        },
+        {
           "type": "table",
           "header": true,
           "align": "center",
-          "caption": "Model comparison",
           "rows": [
             [
               "",
@@ -964,10 +986,21 @@
           "gen": true
         },
         {
+          "type": "sizeselect",
+          "label": "Émbolo Ø",
+          "all": "Todos",
+          "unit": "mm",
+          "sizes": [
+            85,
+            105,
+            120
+          ],
+          "gen": true
+        },
+        {
           "type": "table",
           "header": true,
           "align": "center",
-          "caption": "Comparación de modelos",
           "rows": [
             [
               "",
@@ -1351,10 +1384,21 @@
           "gen": true
         },
         {
+          "type": "sizeselect",
+          "label": "Stempel Ø",
+          "all": "Alle",
+          "unit": "mm",
+          "sizes": [
+            85,
+            105,
+            120
+          ],
+          "gen": true
+        },
+        {
           "type": "table",
           "header": true,
           "align": "center",
-          "caption": "Sammenligning av modellene",
           "rows": [
             [
               "",

@@ -73,6 +73,18 @@
           "gen": true
         },
         {
+          "type": "sizeselect",
+          "label": "Kolv Ø",
+          "all": "Alla",
+          "unit": "mm",
+          "sizes": [
+            85,
+            105,
+            120
+          ],
+          "gen": true
+        },
+        {
           "type": "datasheet",
           "title": "Teknisk data",
           "tagline": "Injekteringspump ZMP 726",
@@ -760,6 +772,18 @@
           "kind": "download",
           "text": "Brochure ZMP 726 (PDF)",
           "href": "/assets/docs/haeny-zmp726-brochure-en.pdf",
+          "gen": true
+        },
+        {
+          "type": "sizeselect",
+          "label": "Plunger Ø",
+          "all": "All",
+          "unit": "mm",
+          "sizes": [
+            85,
+            105,
+            120
+          ],
           "gen": true
         },
         {
@@ -1453,6 +1477,18 @@
           "gen": true
         },
         {
+          "type": "sizeselect",
+          "label": "Émbolo Ø",
+          "all": "Todos",
+          "unit": "mm",
+          "sizes": [
+            85,
+            105,
+            120
+          ],
+          "gen": true
+        },
+        {
           "type": "datasheet",
           "title": "Datos técnicos",
           "tagline": "Bomba de inyección ZMP 726",
@@ -2140,6 +2176,18 @@
           "kind": "download",
           "text": "Brosjyre ZMP 726 (PDF, engelsk)",
           "href": "/assets/docs/haeny-zmp726-brochure-en.pdf",
+          "gen": true
+        },
+        {
+          "type": "sizeselect",
+          "label": "Stempel Ø",
+          "all": "Alle",
+          "unit": "mm",
+          "sizes": [
+            85,
+            105,
+            120
+          ],
           "gen": true
         },
         {

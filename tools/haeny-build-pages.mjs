@@ -51,10 +51,10 @@ const PC = {
 };
 const PC_COLOR = { "#0000ff": "#2f5aa8", "#ff0000": "#cf3a2e", "#000000": "#2b2b2b" };
 const seriesName = (l, n) => n.replace(/^Plunger/i, PC[l].plunger).replace(/^Low pressure/i, PC[l].low).replace(/^High pressure/i, PC[l].high);
-Object.assign(L.sv, { kPlunger: "Kolv Ø", kFlow: "Flöde", kPressure: "Tryck", kContent: "Volym", kPower: "Effekt", zoomHint: "Håll muspekaren över ritningen (eller tryck och dra) för 2× förstoring.", compare: "Jämförelse av modellerna", reg: "Registrering och styrning", dpv: "Dataloggare (DPV-H)" });
-Object.assign(L.en, { kPlunger: "Plunger Ø", kFlow: "Flow", kPressure: "Pressure", kContent: "Volume", kPower: "Power", zoomHint: "Hover over the drawing (or touch and drag) for a 2× magnifier.", compare: "Model comparison", reg: "Recording and control", dpv: "Data logger (DPV-H)" });
-Object.assign(L.es, { kPlunger: "Émbolo Ø", kFlow: "Caudal", kPressure: "Presión", kContent: "Volumen", kPower: "Potencia", zoomHint: "Pase el cursor sobre el plano (o toque y arrastre) para una lupa 2×.", compare: "Comparación de modelos", reg: "Registro y control", dpv: "Registrador de datos (DPV-H)" });
-Object.assign(L.no, { kPlunger: "Stempel Ø", kFlow: "Ytelse", kPressure: "Trykk", kContent: "Volum", kPower: "Effekt", zoomHint: "Hold musepekeren over tegningen (eller trykk og dra) for 2× forstørrelse.", compare: "Sammenligning av modellene", reg: "Registrering og styring", dpv: "Datalogger (DPV-H)" });
+Object.assign(L.sv, { sizeAll: "Alla", kPlunger: "Kolv Ø", kFlow: "Flöde", kPressure: "Tryck", kContent: "Volym", kPower: "Effekt", zoomHint: "Håll muspekaren över ritningen (eller tryck och dra) för 2× förstoring.", compare: "Jämförelse av modellerna", reg: "Registrering och styrning", dpv: "Dataloggare (DPV-H)" });
+Object.assign(L.en, { sizeAll: "All", kPlunger: "Plunger Ø", kFlow: "Flow", kPressure: "Pressure", kContent: "Volume", kPower: "Power", zoomHint: "Hover over the drawing (or touch and drag) for a 2× magnifier.", compare: "Model comparison", reg: "Recording and control", dpv: "Data logger (DPV-H)" });
+Object.assign(L.es, { sizeAll: "Todos", kPlunger: "Émbolo Ø", kFlow: "Caudal", kPressure: "Presión", kContent: "Volumen", kPower: "Potencia", zoomHint: "Pase el cursor sobre el plano (o toque y arrastre) para una lupa 2×.", compare: "Comparación de modelos", reg: "Registro y control", dpv: "Registrador de datos (DPV-H)" });
+Object.assign(L.no, { sizeAll: "Alle", kPlunger: "Stempel Ø", kFlow: "Ytelse", kPressure: "Trykk", kContent: "Volum", kPower: "Effekt", zoomHint: "Hold musepekeren over tegningen (eller trykk og dra) for 2× forstørrelse.", compare: "Sammenligning av modellene", reg: "Registrering og styring", dpv: "Datalogger (DPV-H)" });
 // ---------- translations of the brochure text (tools/haeny-i18n.json: English text -> sv / es / no) ----------
 const I18N = Object.assign({}, ...fs.readdirSync(path.join(ROOT, "tools")).filter((x) => /^haeny-i18n.*.json$/.test(x)).map((x) => JSON.parse(fs.readFileSync(path.join(ROOT, "tools", x), "utf8"))));
 const tr = (l, text) => (l === "en" || !text ? text : (I18N[text] && I18N[text][l]) || text);
@@ -101,6 +101,9 @@ const keyFigures = (d, l) => {
   const lab = (k, v) => (v ? `${L[l][k]}: ${tr(l, v)}` : null);
   return [lab("kPlunger", /^plunger/i.test((rows.find(([x]) => /^plunger/i.test(x)) || [""])[0]) ? pick(/^plunger/i) : null), lab("kFlow", pick(/^(approx. )?capacity|^max. capacity/i)), lab("kPressure", pick(/^max. pressure/i)), lab("kContent", pick(/usable content( mixer)?$/i)), lab("kPower", pick(/^nominal power/i))].filter(Boolean).slice(0, 3);
 };
+// the plunger sizes of a pump ("85 / 105 / 120 mm" -> [85, 105, 120]); a pump with one size has none to choose
+const sizesOf = (d) => { const r = d.tables.flatMap((t) => t.rows).find(([lab]) => /^plunger/i.test(lab)); const m = r && String(r[1]).match(/^(\d+(?: \/ \d+)+)/); return m ? m[1].split(" / ").map(Number) : []; };
+const sizeBlock = (l, sizes) => (sizes.length > 1 ? { type: "sizeselect", label: L[l].kPlunger, all: L[l].sizeAll, unit: "mm", sizes } : null);
 const pumpOf = (d) => { const t = d.tables.find((x) => /grout pump/i.test(x.title) && x.subtitle); return t ? t.subtitle : ""; };
 
 
@@ -125,6 +128,7 @@ function topBlocks(l, k, d) {
 function dataBlocks(l, k, d, { download = true } = {}) {
   const T = L[l]; const out = [];
   const groups = d.tables.filter((t) => t.rows.length).map((t) => ({ title: tr(l, t.title) + (t.subtitle ? ` (${t.subtitle})` : ""), rows: t.rows.map(([label, metric]) => ({ label: tr(l, label), metric: tr(l, metric) })) }));
+  const sb = sizeBlock(l, sizesOf(d)); if (sb) out.push(sb);
   if (groups.length) out.push({ type: "datasheet", title: T.data, tagline: `${tr(l, d.title)} ${d.model}`, intro: [], groups, note: d.notes.length ? d.notes.map((n, i) => `${i + 1}: ${tr(l, n)}`).join(" · ") : "", source: T.note });
   const lists = [];
   for (const t of d.tables) for (const [name, items] of Object.entries(t.lists || {})) for (const it of items) lists.push(name ? `${tr(l, name)} (${tr(l, t.title)}): ${tr(l, it)}` : `${tr(l, t.title)}: ${tr(l, it)}`);
@@ -244,7 +248,7 @@ function comparison(l, fam) {
   for (const m of val) for (const lab of m.keys()) if (!labels.includes(lab)) labels.push(lab);
   const keep = labels.filter((lab) => val.filter((m) => m.has(lab)).length >= Math.max(2, Math.ceil(ds.length * 0.6)) && !/connection|manifold/i.test(lab));
   if (ds.length < 2 || keep.length < 3) return null;
-  return { type: "table", header: true, align: "center", caption: L[l].compare, rows: [[""].concat(ds.map((d) => d.model)), ...keep.map((lab) => [tr(l, lab)].concat(val.map((m) => (m.has(lab) ? tr(l, m.get(lab)) : "-"))))], links: [] };
+  return { type: "table", header: true, align: "center", rows: [[""].concat(ds.map((d) => d.model)), ...keep.map((lab) => [tr(l, lab)].concat(val.map((m) => (m.has(lab) ? tr(l, m.get(lab)) : "-"))))], links: [] };
 }
 for (const fam of FAMILIES) {
   const first = DATA[fam.models[0]];
@@ -262,7 +266,8 @@ for (const fam of FAMILIES) {
     const models = [{ type: "heading", level: 2, text: T.models }, tilesBlock];
     const uses = first.applications.length ? [{ type: "heading", level: 3, text: T.uses }, { type: "list", ordered: false, items: first.applications.map((x) => clean(tr(l, x))) }] : [];
     const cmp = fam.slug === "kompakta-anlaggningar" ? null : comparison(l, fam);
-    const compare = cmp ? [{ type: "heading", level: 2, text: T.compare }, cmp] : [];
+    const famSizes = [...new Set(fam.models.flatMap((k) => sizesOf(DATA[k])))].sort((a, b) => a - b);
+    const compare = cmp ? [{ type: "heading", level: 2, text: T.compare }, ...(sizeBlock(l, famSizes) ? [sizeBlock(l, famSizes)] : []), cmp] : [];
     const see = fam.see ? [{ type: "related", items: [{ href: fam.see, mutual: true }] }] : [];
     let blocks;
     if (existing && fam.base) {

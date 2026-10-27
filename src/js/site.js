@@ -806,6 +806,15 @@
         if (pos !== null) show(pos);
       });
     });
+    // a plunger size chosen in the size selector shows only that curve (the others come back with "all")
+    document.addEventListener("bk-size", function (e) {
+      var k = e.detail.index, want = k < 0 ? "" : String(e.detail.sizes[k]), hit = 0;
+      var next = d.series.map(function (s) { var m = k < 0 || new RegExp("(^|\\D)" + want + "(\\D|$)").test(s.n); if (m) hit++; return m; });
+      if (!hit) next = d.series.map(function () { return true; });
+      on = next;
+      chips.forEach(function (c, i) { c.setAttribute("aria-pressed", on[i] ? "true" : "false"); lines[i].classList.toggle("is-off", !on[i]); });
+      if (pos !== null) show(pos); else clear();
+    });
     var alt = box.querySelector(".pc__alt"), tpl = box.querySelector(".pc__tpl"), shown = null;
     if (alt && tpl && tpl.content) {
       alt.addEventListener("click", function (e) {
@@ -856,34 +865,29 @@
     media.addEventListener("pointercancel", hide); // a touch that turns into a scroll cancels the pointer
   });
 
-  // ---------- tables: select rows or columns, the rest fades, and the selection is compared side by side ----------
-  // A table marked data-compare gets a small tick in every row and column heading. The first heading clicked decides what the items are
-  // (rows or columns); the unselected ones fade; a bar offers "Compare", which opens the selection as columns next to each other with the
-  // rows that differ marked and an "only differences" switch.
+  // ---------- tables: select rows or columns, the rest fades, and the selection is compared in place ----------
+  // A table marked data-compare lets you click a heading (a small tick shows on hover, and on every heading once something is selected). The first
+  // click decides what the items are (rows or columns, see axes()); the unselected ones fade. "Compare" removes the unselected rows or columns so the
+  // selection sits side by side in the table itself, marks what differs and can hide what is equal. Nothing opens on top of the page.
   (function () {
     var wraps = [].slice.call(document.querySelectorAll("[data-compare]"));
-    if (!wraps.length || !window.HTMLDialogElement) return;
-    var tables = [], bar, dlg, active = null;
+    if (!wraps.length) return;
+    var tables = [], bar, active = null;
     function fmt(s, o) { return String(s || "").replace(/\{(\w+)\}/g, function (m, k) { return o && o[k] != null ? o[k] : m; }); }
-    function esc(s) { return String(s).replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); }
     function txt(el) { var c = el.cloneNode(true); [].forEach.call(c.querySelectorAll(".tc__tog"), function (x) { x.remove(); }); return c.textContent.replace(/\s+/g, " ").trim(); }
     function ensureBar() {
       if (bar) return;
       bar = document.createElement("div"); bar.className = "tc__bar"; bar.hidden = true; bar.setAttribute("role", "region");
-      bar.innerHTML = '<span class="tc__count" aria-live="polite"></span><button type="button" class="btn btn--sm tc__go"></button><button type="button" class="tc__clear"></button>';
+      bar.innerHTML = '<span class="tc__count" aria-live="polite"></span><button type="button" class="btn btn--sm tc__go"></button>' +
+        '<label class="tc__diff" hidden><input type="checkbox"><span></span></label><button type="button" class="tc__clear"></button>';
       document.body.appendChild(bar);
-      bar.querySelector(".tc__go").addEventListener("click", function () { if (active) openDialog(active); });
-      bar.querySelector(".tc__clear").addEventListener("click", function () { if (active) { active.sel = []; active.mode = null; paint(active); refresh(); } });
-    }
-    function ensureDialog() {
-      if (dlg) return;
-      dlg = document.createElement("dialog"); dlg.className = "tc__dlg";
-      dlg.innerHTML = '<div class="tc__head"><h2 class="tc__title"></h2><label class="tc__diff"><input type="checkbox"><span></span></label><button type="button" class="tc__x"></button></div><div class="tc__scroll"></div>';
-      document.body.appendChild(dlg);
-      dlg.addEventListener("click", function (e) { if (e.target === dlg) dlg.close(); });
-      dlg.querySelector(".tc__x").addEventListener("click", function () { dlg.close(); });
-      dlg.querySelector("input").addEventListener("change", function () { if (active) renderDialog(active); });
-      dlg.addEventListener("close", function () { document.documentElement.classList.remove("tc-open"); if (active && active.opener) active.opener.focus(); });
+      bar.querySelector(".tc__go").addEventListener("click", function () {
+        if (!active) return;
+        active.only = !active.only; paint(active); refresh();
+        if (active.only && active.w.scrollIntoView) { var r = active.w.getBoundingClientRect(); if (r.top < 70 || r.bottom > window.innerHeight) active.w.scrollIntoView({ behavior: window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth", block: "center" }); }
+      });
+      bar.querySelector("input").addEventListener("change", function (e) { if (active) { active.diffOnly = e.target.checked; paint(active); } });
+      bar.querySelector(".tc__clear").addEventListener("click", function () { if (active) { active.sel = []; active.mode = null; active.only = false; active.diffOnly = false; paint(active); refresh(); } });
     }
     function parse(w) {
       var table = w.querySelector("table"), headRow = table && table.querySelector("thead tr:last-child");
@@ -891,8 +895,7 @@
       var rows = [].slice.call(table.querySelectorAll("tbody tr"));
       if (rows.length < 3) return null;
       var ui = {}; try { ui = JSON.parse(w.getAttribute("data-cmp") || "{}"); } catch (e) { /* defaults */ }
-      var cap = table.querySelector("caption");
-      return { w: w, table: table, headRow: headRow, rows: rows, ui: ui, title: cap ? cap.textContent.trim() : "", mode: null, sel: [], visible: false, opener: null, cols: headRow.children.length };
+      return { w: w, table: table, headRow: headRow, rows: rows, ui: ui, mode: null, sel: [], only: false, diffOnly: false, visible: false, cols: headRow.children.length };
     }
     function names(t) {
       return {
@@ -900,6 +903,7 @@
         row: t.rows.map(function (r) { var h = r.querySelector("th"); return h ? txt(h) : ""; })
       };
     }
+    // Which axis holds the items: the one whose headings look like model names (MME, ZMP 712, IC 650/710); the other holds attributes
     var CODE = /^(?:[A-ZÅÄÖ0-9][A-ZÅÄÖ0-9 \/.+\-]{1,16}|.{1,20}\d.{0,10})$/;
     function axes(t) {
       var nm = names(t), share = function (a) { var v = a.filter(Boolean); return v.length ? v.filter(function (x) { return CODE.test(x); }).length / v.length : 0; };
@@ -909,25 +913,41 @@
       return { col: true, row: true };
     }
     function toggle(t, mode, i) {
-      if (t.mode !== mode) { t.mode = mode; t.sel = []; }
+      if (t.mode !== mode) { t.mode = mode; t.sel = []; t.only = false; }
       var k = t.sel.indexOf(i); if (k >= 0) t.sel.splice(k, 1); else t.sel.push(i);
-      if (!t.sel.length) t.mode = null;
+      if (!t.sel.length) { t.mode = null; t.only = false; }
+      if (t.sel.length < 2) t.only = false;
       active = t; paint(t); refresh();
     }
+    function same(vals) { return vals.every(function (v) { return v === vals[0]; }); }
     function paint(t) {
-      var on = t.sel.length > 0;
-      t.w.classList.toggle("tc--on", on);
-      [].forEach.call(t.table.querySelectorAll("th, td"), function (c) { c.classList.remove("is-sel", "is-off"); });
+      var on = t.sel.length > 0, cmp = t.only && t.sel.length > 1, i;
+      t.w.classList.toggle("tc--on", on); t.w.classList.toggle("tc--only", cmp);
+      [].forEach.call(t.table.querySelectorAll("tr, th, td"), function (c) { c.classList.remove("is-sel", "is-off", "tc-hide", "tc-same", "tc-diff"); });
       if (on) {
-        if (t.mode === "row") t.rows.forEach(function (r, ri) { var s = t.sel.indexOf(ri) >= 0; [].forEach.call(r.children, function (c) { c.classList.add(s ? "is-sel" : "is-off"); }); });
+        if (t.mode === "row") t.rows.forEach(function (r, ri) { var s = t.sel.indexOf(ri) >= 0; [].forEach.call(r.children, function (c) { c.classList.add(s ? "is-sel" : "is-off"); }); if (cmp && !s) r.classList.add("tc-hide"); });
         else {
-          [].forEach.call(t.headRow.children, function (c, ci) { if (ci) c.classList.add(t.sel.indexOf(ci) >= 0 ? "is-sel" : "is-off"); });
-          t.rows.forEach(function (r) { [].forEach.call(r.children, function (c, ci) { if (ci) c.classList.add(t.sel.indexOf(ci) >= 0 ? "is-sel" : "is-off"); }); });
+          [].forEach.call(t.headRow.children, function (c, ci) { if (ci) { c.classList.add(t.sel.indexOf(ci) >= 0 ? "is-sel" : "is-off"); if (cmp && t.sel.indexOf(ci) < 0) c.classList.add("tc-hide"); } });
+          t.rows.forEach(function (r) { [].forEach.call(r.children, function (c, ci) { if (ci) { var s = t.sel.indexOf(ci) >= 0; c.classList.add(s ? "is-sel" : "is-off"); if (cmp && !s) c.classList.add("tc-hide"); } }); });
+        }
+      }
+      if (cmp) {
+        if (t.mode === "col") {
+          t.rows.forEach(function (r) {
+            var vals = t.sel.map(function (ci) { return r.children[ci] ? txt(r.children[ci]) : ""; }), eq = same(vals);
+            r.classList.add(eq ? "tc-same" : "tc-diff"); if (eq && t.diffOnly) r.classList.add("tc-hide");
+          });
+        } else {
+          for (i = 1; i < t.cols; i++) {
+            var vals = t.sel.map(function (ri) { return t.rows[ri].children[i] ? txt(t.rows[ri].children[i]) : ""; }), eq = same(vals);
+            (function (ci) {
+              [t.headRow.children[ci]].concat(t.rows.map(function (r) { return r.children[ci]; })).forEach(function (c) { if (!c) return; c.classList.add(eq ? "tc-same" : "tc-diff"); if (eq && t.diffOnly) c.classList.add("tc-hide"); });
+            })(i);
+          }
         }
       }
       [].forEach.call(t.table.querySelectorAll(".tc__tog"), function (b) {
-        var m = b.getAttribute("data-m"), i = Number(b.getAttribute("data-i"));
-        b.setAttribute("aria-pressed", t.mode === m && t.sel.indexOf(i) >= 0 ? "true" : "false");
+        b.setAttribute("aria-pressed", t.mode === b.getAttribute("data-m") && t.sel.indexOf(Number(b.getAttribute("data-i"))) >= 0 ? "true" : "false");
       });
     }
     function refresh() {
@@ -935,61 +955,21 @@
       var pick = (active && active.sel.length && active.visible) ? active : tables.filter(function (t) { return t.sel.length && t.visible; })[0];
       if (!pick) { bar.hidden = true; return; }
       active = pick;
-      var n = pick.sel.length, ui = pick.ui;
+      var n = pick.sel.length, ui = pick.ui, go = bar.querySelector(".tc__go"), lab = bar.querySelector(".tc__diff");
       bar.setAttribute("aria-label", ui.cmp_title || "");
       bar.querySelector(".tc__count").textContent = fmt(ui.cmp_selected, { n: n }) + (n < 2 ? " · " + (ui.cmp_pick_more || "") : "");
-      var go = bar.querySelector(".tc__go"); go.textContent = ui.cmp_compare || "Compare"; go.disabled = n < 2;
+      go.textContent = pick.only ? (ui.cmp_all || "Show all") : (ui.cmp_compare || "Compare"); go.disabled = n < 2;
+      lab.hidden = !pick.only; lab.querySelector("span").textContent = ui.cmp_only_diff || ""; lab.querySelector("input").checked = pick.diffOnly;
       bar.querySelector(".tc__clear").textContent = ui.cmp_clear || "Clear";
       bar.hidden = false;
     }
-    function data(t) {
-      var nm = names(t), items, attrs, val, order = t.sel.slice().sort(function (a, b) { return a - b; });
-      if (t.mode === "row") {
-        items = order.map(function (ri) { return { id: ri, name: nm.row[ri] }; });
-        attrs = []; for (var c = 1; c < t.cols; c++) attrs.push({ label: nm.col[c], at: c });
-        val = function (it, a) { var cell = t.rows[it.id].children[a.at]; return cell ? txt(cell) : ""; };
-      } else {
-        items = order.map(function (ci) { return { id: ci, name: nm.col[ci] }; });
-        attrs = t.rows.map(function (r, ri) { return { label: nm.row[ri], at: ri }; }).filter(function (a) { return a.label; });
-        val = function (it, a) { var cell = t.rows[a.at].children[it.id]; return cell ? txt(cell) : ""; };
-      }
-      return { items: items, attrs: attrs, val: val };
-    }
-    function renderDialog(t) {
-      var ui = t.ui, d = data(t), only = dlg.querySelector("input").checked;
-      dlg.querySelector(".tc__title").textContent = t.title || ui.cmp_title || "";
-      dlg.querySelector(".tc__diff span").textContent = ui.cmp_only_diff || "";
-      dlg.querySelector(".tc__x").textContent = ui.cmp_close || "Close";
-      var head = '<tr><th scope="col"></th>' + d.items.map(function (it) {
-        return '<th scope="col"><span class="tc__name">' + esc(it.name) + '</span><button type="button" class="tc__rm" data-id="' + it.id + '" aria-label="' + esc(fmt(ui.cmp_remove, { name: it.name })) + '">×</button></th>';
-      }).join("") + "</tr>";
-      var shown = 0, body = d.attrs.map(function (a) {
-        var vs = d.items.map(function (it) { return d.val(it, a); }), diff = vs.some(function (v) { return v !== vs[0]; });
-        if (only && !diff) return "";
-        shown++;
-        return '<tr class="' + (diff ? "is-diff" : "") + '"><th scope="row">' + esc(a.label) + (diff ? '<span class="sr-only"> (' + esc(ui.cmp_differs || "") + ")</span>" : "") + "</th>" +
-          vs.map(function (v) { return "<td>" + (esc(v) || "–") + "</td>"; }).join("") + "</tr>";
-      }).join("");
-      dlg.querySelector(".tc__scroll").innerHTML = '<table class="tc__tbl"><thead>' + head + "</thead><tbody>" + body + "</tbody></table>" + (only && !shown ? '<p class="tc__same">' + esc(ui.cmp_same || "") + "</p>" : "");
-      [].forEach.call(dlg.querySelectorAll(".tc__rm"), function (b) {
-        b.addEventListener("click", function () {
-          var id = Number(b.getAttribute("data-id")), k = t.sel.indexOf(id); if (k >= 0) t.sel.splice(k, 1);
-          paint(t); refresh();
-          if (t.sel.length < 2) dlg.close(); else renderDialog(t);
-        });
-      });
-    }
-    function openDialog(t) {
-      ensureDialog(); t.opener = bar.querySelector(".tc__go");
-      renderDialog(t);
-      document.documentElement.classList.add("tc-open");
-      if (!dlg.open) dlg.showModal();
-    }
+    // a plunger size picked elsewhere on the page changes the text of the cells: the comparison is worked out again
+    document.addEventListener("bk-size", function () { tables.forEach(function (t) { if (t.sel.length) paint(t); }); });
 
     wraps.forEach(function (w) {
       var t = parse(w); if (!t) return;
       tables.push(t);
-      var nm = names(t);
+      var nm = names(t), ax = axes(t);
       function addTog(th, mode, i, name) {
         var b = document.createElement("button"); b.type = "button"; b.className = "tc__tog"; b.setAttribute("data-m", mode); b.setAttribute("data-i", i);
         b.setAttribute("aria-pressed", "false"); b.setAttribute("aria-label", fmt(t.ui.cmp_select, { name: name })); b.innerHTML = "<i></i>";
@@ -997,12 +977,32 @@
         th.addEventListener("click", function (e) { if (e.target.closest("a") || e.target.closest(".tc__tog")) return; toggle(t, mode, i); });
         b.addEventListener("click", function () { toggle(t, mode, i); });
       }
-      var ax = axes(t);
       if (ax.col) [].forEach.call(t.headRow.children, function (th, ci) { if (ci && nm.col[ci]) addTog(th, "col", ci, nm.col[ci]); });
       if (ax.row) t.rows.forEach(function (r, ri) { var th = r.querySelector("th"); if (th && nm.row[ri]) addTog(th, "row", ri, nm.row[ri]); });
       var hint = document.createElement("p"); hint.className = "tc__hint"; hint.textContent = t.ui.cmp_hint || "";
       w.parentNode.insertBefore(hint, w);
       if ("IntersectionObserver" in window) new IntersectionObserver(function (en) { t.visible = en[0].isIntersecting; refresh(); }, { rootMargin: "0px 0px -10% 0px" }).observe(w); else t.visible = true;
+    });
+  })();
+
+  // ---------- plunger size: show all sizes, or the values of one ----------
+  // A pump with several plunger sizes writes its values as "85 / 105 / 120 mm". The selector shows all of them (default) or only the value of one size
+  // in every table cell of the page that has that many values, and tells the performance chart to show only that curve.
+  (function () {
+    var boxes = [].slice.call(document.querySelectorAll("[data-sizesel]"));
+    if (!boxes.length) return;
+    var cells = [].slice.call(document.querySelectorAll("main .spec td, main .table-wrap td")).map(function (td) {
+      var m = /^(-?\d[\d.,]*(?: \/ -?\d[\d.,]*)+)(\s*[^\d\s\/].*)?$/.exec(td.textContent.trim());
+      return m ? { td: td, parts: m[1].split(" / "), unit: m[2] || "", orig: td.textContent } : null;
+    }).filter(Boolean);
+    function apply(sizes, k) {
+      cells.forEach(function (x) { if (x.parts.length === sizes.length) { x.td.textContent = k < 0 ? x.orig : x.parts[k] + x.unit; x.td.classList.toggle("is-sized", k >= 0); } });
+      boxes.forEach(function (b) { if (b.getAttribute("data-sizesel").split(",").length === sizes.length) [].forEach.call(b.querySelectorAll("[role=radio]"), function (r) { r.setAttribute("aria-checked", String(Number(r.getAttribute("data-k")) === k)); }); });
+      document.dispatchEvent(new CustomEvent("bk-size", { detail: { index: k, sizes: sizes } }));
+    }
+    boxes.forEach(function (b) {
+      var sizes = b.getAttribute("data-sizesel").split(",");
+      [].forEach.call(b.querySelectorAll("[role=radio]"), function (r) { r.addEventListener("click", function () { apply(sizes, Number(r.getAttribute("data-k"))); }); });
     });
   })();
 

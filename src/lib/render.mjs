@@ -61,6 +61,7 @@ function blockIsEmpty(b) {
     case "chips": case "list": return !(b.items || []).some(Boolean);
     case "cta": return !b.title;
     case "stat": return !b.value;
+    case "sizeselect": return !(b.sizes || []).length;
     case "carousel": return !(b.items || []).some((x) => x && x.src);
     case "compare": return !b.src || !b.src2;
     case "perfchart": return perfChartEmpty(b);
@@ -663,6 +664,10 @@ function renderBlockInner(ctx, b) {
     case "chips": return renderChips(ctx, b);
     case "cta": return renderCta(ctx, b);
     case "stat": return renderStat(ctx, b);
+    case "sizeselect": {
+      const sizes = (b.sizes || []).map(String);
+      return `<div class="sizesel" data-sizesel="${esc(sizes.join(","))}"><span class="sizesel__label"${editFld(ctx, "label")}>${esc(b.label || "")}</span><div class="sizesel__seg" role="radiogroup" aria-label="${esc(b.label || "")}"><button type="button" role="radio" aria-checked="true" data-k="-1">${esc(b.all || "Alla")}</button>${sizes.map((x, k) => `<button type="button" role="radio" aria-checked="false" data-k="${k}">${esc(x)}${b.unit ? " " + esc(b.unit) : ""}</button>`).join("")}</div></div>`;
+    }
     case "html": return b.html || "";
     default: return "";
   }
