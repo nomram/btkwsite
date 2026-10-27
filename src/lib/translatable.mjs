@@ -38,7 +38,7 @@ function visitBlock(b, pre, P, cb) {
     for (const k of ["title", "text", "button"]) if (b[k]) cb(id(k), b[k], (v) => (b[k] = v));
   }
   if (b.type === "datasheet") {
-    for (const k of ["title", "tagline", "note"]) if (b[k]) cb(id(k), b[k], (v) => (b[k] = v));
+    for (const k of ["title", "tagline", "note", "source"]) if (b[k]) cb(id(k), b[k], (v) => (b[k] = v));
     (b.intro || []).forEach((p, j) => cb(id(`intro.${j}`), p, (v) => (b.intro[j] = v)));
     (b.groups || []).forEach((g, gi) => {
       if (g.title) cb(id(`groups.${gi}.title`), g.title, (v) => (g.title = v));

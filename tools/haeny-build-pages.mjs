@@ -117,7 +117,7 @@ function topBlocks(l, k, d) {
 function dataBlocks(l, k, d, { download = true } = {}) {
   const T = L[l]; const out = [];
   const groups = d.tables.filter((t) => t.rows.length).map((t) => ({ title: tr(l, t.title) + (t.subtitle ? ` (${t.subtitle})` : ""), rows: t.rows.map(([label, metric]) => ({ label: tr(l, label), metric: tr(l, metric) })) }));
-  if (groups.length) out.push({ type: "datasheet", title: T.data, tagline: `${tr(l, d.title)} ${d.model}`, intro: [], groups, note: d.notes.length ? d.notes.map((n, i) => `${i + 1}: ${tr(l, n)}`).join(" · ") : "" });
+  if (groups.length) out.push({ type: "datasheet", title: T.data, tagline: `${tr(l, d.title)} ${d.model}`, intro: [], groups, note: d.notes.length ? d.notes.map((n, i) => `${i + 1}: ${tr(l, n)}`).join(" · ") : "", source: T.note });
   const lists = [];
   for (const t of d.tables) for (const [name, items] of Object.entries(t.lists || {})) for (const it of items) lists.push(name ? `${tr(l, name)} (${tr(l, t.title)}): ${tr(l, it)}` : `${tr(l, t.title)}: ${tr(l, it)}`);
   const tiles = [];
@@ -209,7 +209,7 @@ for (const fam of FAMILIES) {
         const last = blocks[blocks.length - 1];
         i18n[l] = { ...existing.i18n[l], title: k === "ic310" ? "IC 310" : existing.i18n[l].title, h1: k === "ic310" ? "HÄNY IC 310" : existing.i18n[l].h1, blocks };
       } else {
-        const blocks = [{ ...crumb }, ...(await resolveBlocks([...topBlocks(l, k, d), ...dataBlocks(l, k, d)])), { type: "text", html: T.contact }, { type: "text", html: `<small>${esc(T.note)}</small>` }, { type: "related", title: T.back, items: relatedItems }];
+        const blocks = [{ ...crumb }, ...(await resolveBlocks([...topBlocks(l, k, d), { type: "button", kind: "download", text: T.pdfName(d.model), href: d.file }, ...dataBlocks(l, k, d, { download: false })])), { type: "text", html: T.contact }, { type: "related", title: T.back, items: relatedItems }];
         i18n[l] = { title: modelTitle(d), h1: modelTitle(d), description: `${tr(l, d.title)} ${d.model}. ${tr(l, d.intro)}`.slice(0, 200), blocks: genBlocks(blocks) };
         // the crumb picture is not generated content that a later run may drop: keep every block marked, the page is rebuilt whole
       }
@@ -263,7 +263,7 @@ for (const fam of FAMILIES) {
       const li = old.findIndex((b) => b.type === "list");
       const top = old.slice(0, li < 0 ? 4 : li).map((b) => (b.type === "heading" && /FAIC/.test(b.text) ? { ...b, text: "Häny FAIC" } : b));
       const tail = old.slice(li < 0 ? 4 : li + 1).filter((b) => b.type !== "modules" && !(b.type === "text" && /kontakta-oss/.test(b.html) && b.html.length < 140));
-      blocks = [...top, ...genBlocks([...overview, ...models, ...uses, ...compare]), ...tail, { type: "text", html: T.contact }, ...genBlocks([{ type: "text", html: `<small>${esc(T.note)}</small>` }])];
+      blocks = [...top, ...genBlocks([...overview, ...models, ...uses, ...compare]), ...tail, { type: "text", html: T.contact }];
       blocks = blocks.filter((b, i, a) => !(b.type === "text" && b.html === T.contact && a.findIndex((x) => x.type === "text" && x.html === T.contact) !== i));
     } else if (existing && fam.slug === "kompakta-anlaggningar") {
       // the IC page keeps its own text and its specification table: the three model tiles are replaced by tiles for every IC model

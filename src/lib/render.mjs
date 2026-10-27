@@ -268,7 +268,8 @@ function renderDatasheet(ctx, b) {
     (b.tagline ? `<p class="datasheet__tag"${editFld(ctx, "tagline")}>${esc(b.tagline)}</p>` : "") +
     (intro ? `<div class="datasheet__intro">${intro}</div>` : "") +
     (groups ? `<div class="spec-grid">${groups}</div>` : "") +
-    (b.note ? `<p class="datasheet__note"${editFld(ctx, "note")}>${esc(b.note)}</p>` : "") + `</section>`;
+    (b.note ? `<p class="datasheet__note"${editFld(ctx, "note")}>${esc(b.note)}</p>` : "") +
+    (b.source ? `<p class="datasheet__source"${editFld(ctx, "source")}>${esc(b.source)}</p>` : "") + `</section>`;
 }
 
 function hoursText(ctx) {
@@ -1046,6 +1047,8 @@ function composeBody(ctx, page, t) {
   if (template === "brand" || template === "product") {
     let n = 0;
     while (n < blocks.length && ["image", "carousel", "compare", "text", "list", "heading", "stat"].includes(blocks[n].type)) n++;
+    // a heading that introduces what comes after the opening split (a row of tiles, a table, ...) belongs to that, not to the text column
+    while (n > 0 && blocks[n - 1].type === "heading" && n < blocks.length) n--;
     const lead = blocks.slice(0, n);
     const isMedia = (b) => (b.type === "image" && !b.inline) || b.type === "carousel" || b.type === "compare";
     const media = lead.filter(isMedia);
