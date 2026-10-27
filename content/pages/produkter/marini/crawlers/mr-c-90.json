@@ -1,0 +1,820 @@
+{
+  "path": "/produkter/marini/crawlers/mr-c-90",
+  "updated": "2026-10-27",
+  "template": "product",
+  "order": 11,
+  "published": true,
+  "hero": {
+    "image": "/assets/img/marini-crawlers-hero.webp"
+  },
+  "i18n": {
+    "sv": {
+      "title": "MR-C 90",
+      "h1": "Marini MR-C 90",
+      "description": "MR-C 90 är en hydraulisk larvrigg ur Marinis MR-C-serie med 103 - 115 kW motor och en vikt på 14 500 kg. Konstruerad för större och djupare borrhål, med högre kapacitet och kraft.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Marini logotyp",
+          "href": "/produkter/marini",
+          "width": 637,
+          "height": 86,
+          "src": "/assets/img/logo-marini.webp",
+          "gen": true
+        },
+        {
+          "type": "image",
+          "alt": "Marini MR-C 90",
+          "file": "/assets/img/marini-mrc-mr-c-90-iso.webp",
+          "width": 374,
+          "height": 318,
+          "source": "377x331",
+          "src": "/assets/img/marini-mrc-mr-c-90-iso.webp",
+          "gen": true
+        },
+        {
+          "type": "carousel",
+          "autoplay": true,
+          "interval": 6,
+          "items": [
+            {
+              "src": "/assets/img/marini-mrc-mr-c-90-p1.webp",
+              "alt": "Marini MR-C 90 (1/2)",
+              "width": 529,
+              "height": 328
+            },
+            {
+              "src": "/assets/img/marini-mrc-mr-c-90-photo.webp",
+              "alt": "Marini MR-C 90 (2/2)",
+              "width": 330,
+              "height": 438
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "MR-C 90 är en hydraulisk larvrigg ur Marinis MR-C-serie med 103 - 115 kW motor och en vikt på 14 500 kg. Konstruerad för större och djupare borrhål, med högre kapacitet och kraft.",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Motoreffekt: 103 - 115 kW (140 - 154 hp)",
+            "Matningskraft: 60 kN",
+            "Vridmoment: 16 000 Nm",
+            "Mastens slaglängd: 1 800 - 3 500 mm",
+            "Vikt: 14 500 kg"
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Borrmetoder",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Rotationsborrning",
+            "Slagborrning",
+            "Slagborrning med självborrande stänger (hollow bar)"
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Kontakta oss</a> för pris, leveranstid eller hjälp att välja rätt modell.",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Kort Broschyr (ENG)",
+          "href": "/assets/docs/marini-crawlers-kort-broschyr-eng.pdf",
+          "driveId": "1ieWNcqMvkkbHi3IYedIFbdB5CFFLiKLR",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Produktkatalog",
+          "href": "/assets/docs/marini-crawlers-produktkatalog.pdf",
+          "driveId": "1ecMiKcn9MMZ4A09FXVKtBN1SAgcdwbvd",
+          "gen": true
+        },
+        {
+          "type": "datasheet",
+          "title": "Teknisk data",
+          "tagline": "Marini MR-C 90",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Specifikationer",
+              "rows": [
+                {
+                  "label": "Motoreffekt",
+                  "metric": "103 - 115 kW",
+                  "us": "140 - 154 hp"
+                },
+                {
+                  "label": "Mastens slaglängd",
+                  "metric": "1 800 - 3 500 mm",
+                  "us": "5,9 - 11,5 ft"
+                },
+                {
+                  "label": "Matningskraft",
+                  "metric": "6 000 daN",
+                  "us": "13 330 lbf"
+                },
+                {
+                  "label": "Dragkraft (indragning)",
+                  "metric": "6 000 daN",
+                  "us": "13 330 lbf"
+                },
+                {
+                  "label": "Vridmoment, rotation",
+                  "metric": "1 600 daNm",
+                  "us": "11 800 ft·lb"
+                },
+                {
+                  "label": "Varvtal, rotation",
+                  "metric": "40 - 160 rpm"
+                },
+                {
+                  "label": "Klämområde",
+                  "metric": "25 - 330 mm",
+                  "us": "0,98 - 13 in"
+                },
+                {
+                  "label": "Vikt",
+                  "metric": "14 500 kg",
+                  "us": "31 970 lbs"
+                }
+              ]
+            }
+          ],
+          "note": "",
+          "source": "Uppgifterna är hämtade ur Marinis katalog och broschyr (engelska).",
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 1,
+          "narrow": true,
+          "zoom": true,
+          "more": false,
+          "items": [
+            {
+              "title": "Sidovy",
+              "image": "/assets/img/marini-mrc-mr-c-90-side.webp",
+              "alt": "Sidovy MR-C 90",
+              "text": "Håll muspekaren över ritningen (eller tryck och dra) för 2× förstoring.",
+              "file": "/assets/img/marini-mrc-mr-c-90-side.webp",
+              "width": 974,
+              "height": 674
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "video",
+          "provider": "youtube",
+          "id": "lh-WhCWMr9I",
+          "title": "Marini Srl - MR-C 90 long reach drill rig (technical info)",
+          "gen": true
+        },
+        {
+          "type": "related",
+          "title": "Se även",
+          "items": [
+            {
+              "href": "/produkter/marini/crawlers",
+              "mutual": false
+            },
+            {
+              "href": "/produkter/marini/crawlers/mr-c-85"
+            },
+            {
+              "href": "/produkter/marini/crawlers/mr-c-95"
+            },
+            {
+              "href": "/produkter/marini/crawlers/mr-c-95p"
+            }
+          ],
+          "gen": true
+        }
+      ]
+    },
+    "en": {
+      "title": "MR-C 90",
+      "h1": "Marini MR-C 90",
+      "description": "MR-C 90 is a hydraulic crawler drill rig from Marini's MR-C line with a 103 - 115 kW engine and a weight of 14,500 kg. Built for larger and deeper holes, with higher capacity and force.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Marini logotyp",
+          "href": "/produkter/marini",
+          "width": 637,
+          "height": 86,
+          "src": "/assets/img/logo-marini.webp",
+          "gen": true
+        },
+        {
+          "type": "image",
+          "alt": "Marini MR-C 90",
+          "file": "/assets/img/marini-mrc-mr-c-90-iso.webp",
+          "width": 374,
+          "height": 318,
+          "source": "377x331",
+          "src": "/assets/img/marini-mrc-mr-c-90-iso.webp",
+          "gen": true
+        },
+        {
+          "type": "carousel",
+          "autoplay": true,
+          "interval": 6,
+          "items": [
+            {
+              "src": "/assets/img/marini-mrc-mr-c-90-p1.webp",
+              "alt": "Marini MR-C 90 (1/2)",
+              "width": 529,
+              "height": 328
+            },
+            {
+              "src": "/assets/img/marini-mrc-mr-c-90-photo.webp",
+              "alt": "Marini MR-C 90 (2/2)",
+              "width": 330,
+              "height": 438
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "MR-C 90 is a hydraulic crawler drill rig from Marini's MR-C line with a 103 - 115 kW engine and a weight of 14,500 kg. Built for larger and deeper holes, with higher capacity and force.",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Engine power: 103 - 115 kW (140 - 154 hp)",
+            "Feed force: 60 kN",
+            "Rotary torque: 16,000 Nm",
+            "Mast stroke: 1,800 - 3,500 mm",
+            "Weight: 14,500 kg"
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Drilling methods",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Rotation drilling",
+            "Percussion drilling",
+            "Percussion drilling with hollow bars"
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Contact us</a> for price, delivery time or help choosing the right model.",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Short brochure (ENG)",
+          "href": "/assets/docs/marini-crawlers-kort-broschyr-eng.pdf",
+          "driveId": "1ieWNcqMvkkbHi3IYedIFbdB5CFFLiKLR",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Product catalogue",
+          "href": "/assets/docs/marini-crawlers-produktkatalog.pdf",
+          "driveId": "1ecMiKcn9MMZ4A09FXVKtBN1SAgcdwbvd",
+          "gen": true
+        },
+        {
+          "type": "datasheet",
+          "title": "Technical data",
+          "tagline": "Marini MR-C 90",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Specifications",
+              "rows": [
+                {
+                  "label": "Engine power",
+                  "metric": "103 - 115 kW",
+                  "us": "140 - 154 hp"
+                },
+                {
+                  "label": "Mast stroke",
+                  "metric": "1,800 - 3,500 mm",
+                  "us": "5.9 - 11.5 ft"
+                },
+                {
+                  "label": "Feed force",
+                  "metric": "6,000 daN",
+                  "us": "13,330 lbf"
+                },
+                {
+                  "label": "Retract force",
+                  "metric": "6,000 daN",
+                  "us": "13,330 lbf"
+                },
+                {
+                  "label": "Rotary torque",
+                  "metric": "1,600 daNm",
+                  "us": "11,800 ft·lb"
+                },
+                {
+                  "label": "Rotary speed range",
+                  "metric": "40 - 160 rpm"
+                },
+                {
+                  "label": "Clamp range",
+                  "metric": "25 - 330 mm",
+                  "us": "0.98 - 13 in"
+                },
+                {
+                  "label": "Weight",
+                  "metric": "14,500 kg",
+                  "us": "31,970 lbs"
+                }
+              ]
+            }
+          ],
+          "note": "",
+          "source": "Information taken from Marini's catalogue and brochure.",
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 1,
+          "narrow": true,
+          "zoom": true,
+          "more": false,
+          "items": [
+            {
+              "title": "Side view",
+              "image": "/assets/img/marini-mrc-mr-c-90-side.webp",
+              "alt": "Side view MR-C 90",
+              "text": "Hover over the drawing (or touch and drag) for a 2× magnifier.",
+              "file": "/assets/img/marini-mrc-mr-c-90-side.webp",
+              "width": 974,
+              "height": 674
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "video",
+          "provider": "youtube",
+          "id": "lh-WhCWMr9I",
+          "title": "Marini Srl - MR-C 90 long reach drill rig (technical info)",
+          "gen": true
+        },
+        {
+          "type": "related",
+          "title": "See also",
+          "items": [
+            {
+              "href": "/produkter/marini/crawlers",
+              "mutual": false
+            },
+            {
+              "href": "/produkter/marini/crawlers/mr-c-85"
+            },
+            {
+              "href": "/produkter/marini/crawlers/mr-c-95"
+            },
+            {
+              "href": "/produkter/marini/crawlers/mr-c-95p"
+            }
+          ],
+          "gen": true
+        }
+      ]
+    },
+    "es": {
+      "title": "MR-C 90",
+      "h1": "Marini MR-C 90",
+      "description": "MR-C 90 es una perforadora hidráulica de orugas de la serie MR-C de Marini, con motor de 103 - 115 kW y un peso de 14.500 kg. Diseñada para barrenos más grandes y profundos, con mayor capacidad y fuer",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Marini logotyp",
+          "href": "/produkter/marini",
+          "width": 637,
+          "height": 86,
+          "src": "/assets/img/logo-marini.webp",
+          "gen": true
+        },
+        {
+          "type": "image",
+          "alt": "Marini MR-C 90",
+          "file": "/assets/img/marini-mrc-mr-c-90-iso.webp",
+          "width": 374,
+          "height": 318,
+          "source": "377x331",
+          "src": "/assets/img/marini-mrc-mr-c-90-iso.webp",
+          "gen": true
+        },
+        {
+          "type": "carousel",
+          "autoplay": true,
+          "interval": 6,
+          "items": [
+            {
+              "src": "/assets/img/marini-mrc-mr-c-90-p1.webp",
+              "alt": "Marini MR-C 90 (1/2)",
+              "width": 529,
+              "height": 328
+            },
+            {
+              "src": "/assets/img/marini-mrc-mr-c-90-photo.webp",
+              "alt": "Marini MR-C 90 (2/2)",
+              "width": 330,
+              "height": 438
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "MR-C 90 es una perforadora hidráulica de orugas de la serie MR-C de Marini, con motor de 103 - 115 kW y un peso de 14.500 kg. Diseñada para barrenos más grandes y profundos, con mayor capacidad y fuerza.",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Potencia del motor: 103 - 115 kW (140 - 154 hp)",
+            "Fuerza de empuje: 60 kN",
+            "Par de rotación: 16.000 Nm",
+            "Carrera del mástil: 1.800 - 3.500 mm",
+            "Peso: 14.500 kg"
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Métodos de perforación",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Perforación a rotación",
+            "Perforación a percusión",
+            "Perforación a percusión con barras huecas"
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Contáctenos</a> para precio, plazo de entrega o ayuda para elegir el modelo adecuado.",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Folleto breve (ENG)",
+          "href": "/assets/docs/marini-crawlers-kort-broschyr-eng.pdf",
+          "driveId": "1ieWNcqMvkkbHi3IYedIFbdB5CFFLiKLR",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Catálogo de productos",
+          "href": "/assets/docs/marini-crawlers-produktkatalog.pdf",
+          "driveId": "1ecMiKcn9MMZ4A09FXVKtBN1SAgcdwbvd",
+          "gen": true
+        },
+        {
+          "type": "datasheet",
+          "title": "Datos técnicos",
+          "tagline": "Marini MR-C 90",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Especificaciones",
+              "rows": [
+                {
+                  "label": "Potencia del motor",
+                  "metric": "103 - 115 kW",
+                  "us": "140 - 154 hp"
+                },
+                {
+                  "label": "Carrera del mástil",
+                  "metric": "1.800 - 3.500 mm",
+                  "us": "5,9 - 11,5 ft"
+                },
+                {
+                  "label": "Fuerza de empuje",
+                  "metric": "6.000 daN",
+                  "us": "13.330 lbf"
+                },
+                {
+                  "label": "Fuerza de retroceso",
+                  "metric": "6.000 daN",
+                  "us": "13.330 lbf"
+                },
+                {
+                  "label": "Par de rotación",
+                  "metric": "1.600 daNm",
+                  "us": "11.800 ft·lb"
+                },
+                {
+                  "label": "Velocidad de rotación",
+                  "metric": "40 - 160 rpm"
+                },
+                {
+                  "label": "Rango de mordaza",
+                  "metric": "25 - 330 mm",
+                  "us": "0,98 - 13 in"
+                },
+                {
+                  "label": "Peso",
+                  "metric": "14.500 kg",
+                  "us": "31.970 lbs"
+                }
+              ]
+            }
+          ],
+          "note": "",
+          "source": "Información tomada del catálogo y del folleto de Marini.",
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 1,
+          "narrow": true,
+          "zoom": true,
+          "more": false,
+          "items": [
+            {
+              "title": "Vista lateral",
+              "image": "/assets/img/marini-mrc-mr-c-90-side.webp",
+              "alt": "Vista lateral MR-C 90",
+              "text": "Pase el cursor sobre el plano (o toque y arrastre) para una lupa 2×.",
+              "file": "/assets/img/marini-mrc-mr-c-90-side.webp",
+              "width": 974,
+              "height": 674
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "video",
+          "provider": "youtube",
+          "id": "lh-WhCWMr9I",
+          "title": "Marini Srl - MR-C 90 long reach drill rig (technical info)",
+          "gen": true
+        },
+        {
+          "type": "related",
+          "title": "Véase también",
+          "items": [
+            {
+              "href": "/produkter/marini/crawlers",
+              "mutual": false
+            },
+            {
+              "href": "/produkter/marini/crawlers/mr-c-85"
+            },
+            {
+              "href": "/produkter/marini/crawlers/mr-c-95"
+            },
+            {
+              "href": "/produkter/marini/crawlers/mr-c-95p"
+            }
+          ],
+          "gen": true
+        }
+      ]
+    },
+    "no": {
+      "title": "MR-C 90",
+      "h1": "Marini MR-C 90",
+      "description": "MR-C 90 er en hydraulisk beltegående borerigg i Marinis MR-C-serie med 103 - 115 kW motor og en vekt på 14 500 kg. Konstruert for større og dypere borehull, med høyere kapasitet og kraft.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Marini logotyp",
+          "href": "/produkter/marini",
+          "width": 637,
+          "height": 86,
+          "src": "/assets/img/logo-marini.webp",
+          "gen": true
+        },
+        {
+          "type": "image",
+          "alt": "Marini MR-C 90",
+          "file": "/assets/img/marini-mrc-mr-c-90-iso.webp",
+          "width": 374,
+          "height": 318,
+          "source": "377x331",
+          "src": "/assets/img/marini-mrc-mr-c-90-iso.webp",
+          "gen": true
+        },
+        {
+          "type": "carousel",
+          "autoplay": true,
+          "interval": 6,
+          "items": [
+            {
+              "src": "/assets/img/marini-mrc-mr-c-90-p1.webp",
+              "alt": "Marini MR-C 90 (1/2)",
+              "width": 529,
+              "height": 328
+            },
+            {
+              "src": "/assets/img/marini-mrc-mr-c-90-photo.webp",
+              "alt": "Marini MR-C 90 (2/2)",
+              "width": 330,
+              "height": 438
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "MR-C 90 er en hydraulisk beltegående borerigg i Marinis MR-C-serie med 103 - 115 kW motor og en vekt på 14 500 kg. Konstruert for større og dypere borehull, med høyere kapasitet og kraft.",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Motoreffekt: 103 - 115 kW (140 - 154 hp)",
+            "Matekraft: 60 kN",
+            "Dreiemoment: 16 000 Nm",
+            "Mastens slaglengde: 1 800 - 3 500 mm",
+            "Vekt: 14 500 kg"
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Boremetoder",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Rotasjonsboring",
+            "Slagboring",
+            "Slagboring med hule stenger (hollow bar)"
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Kontakt oss</a> for pris, leveringstid eller hjelp til å velge riktig modell.",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Kort brosjyre (ENG)",
+          "href": "/assets/docs/marini-crawlers-kort-broschyr-eng.pdf",
+          "driveId": "1ieWNcqMvkkbHi3IYedIFbdB5CFFLiKLR",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Produktkatalog",
+          "href": "/assets/docs/marini-crawlers-produktkatalog.pdf",
+          "driveId": "1ecMiKcn9MMZ4A09FXVKtBN1SAgcdwbvd",
+          "gen": true
+        },
+        {
+          "type": "datasheet",
+          "title": "Tekniske data",
+          "tagline": "Marini MR-C 90",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Spesifikasjoner",
+              "rows": [
+                {
+                  "label": "Motoreffekt",
+                  "metric": "103 - 115 kW",
+                  "us": "140 - 154 hp"
+                },
+                {
+                  "label": "Mastens slaglengde",
+                  "metric": "1 800 - 3 500 mm",
+                  "us": "5,9 - 11,5 ft"
+                },
+                {
+                  "label": "Matekraft",
+                  "metric": "6 000 daN",
+                  "us": "13 330 lbf"
+                },
+                {
+                  "label": "Trekkraft (inndraging)",
+                  "metric": "6 000 daN",
+                  "us": "13 330 lbf"
+                },
+                {
+                  "label": "Dreiemoment, rotasjon",
+                  "metric": "1 600 daNm",
+                  "us": "11 800 ft·lb"
+                },
+                {
+                  "label": "Turtall, rotasjon",
+                  "metric": "40 - 160 rpm"
+                },
+                {
+                  "label": "Klemmeområde",
+                  "metric": "25 - 330 mm",
+                  "us": "0,98 - 13 in"
+                },
+                {
+                  "label": "Vekt",
+                  "metric": "14 500 kg",
+                  "us": "31 970 lbs"
+                }
+              ]
+            }
+          ],
+          "note": "",
+          "source": "Opplysningene er hentet fra Marinis katalog og brosjyre (engelsk).",
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 1,
+          "narrow": true,
+          "zoom": true,
+          "more": false,
+          "items": [
+            {
+              "title": "Sideriss",
+              "image": "/assets/img/marini-mrc-mr-c-90-side.webp",
+              "alt": "Sideriss MR-C 90",
+              "text": "Hold musepekeren over tegningen (eller trykk og dra) for 2× forstørrelse.",
+              "file": "/assets/img/marini-mrc-mr-c-90-side.webp",
+              "width": 974,
+              "height": 674
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "video",
+          "provider": "youtube",
+          "id": "lh-WhCWMr9I",
+          "title": "Marini Srl - MR-C 90 long reach drill rig (technical info)",
+          "gen": true
+        },
+        {
+          "type": "related",
+          "title": "Se også",
+          "items": [
+            {
+              "href": "/produkter/marini/crawlers",
+              "mutual": false
+            },
+            {
+              "href": "/produkter/marini/crawlers/mr-c-85"
+            },
+            {
+              "href": "/produkter/marini/crawlers/mr-c-95"
+            },
+            {
+              "href": "/produkter/marini/crawlers/mr-c-95p"
+            }
+          ],
+          "gen": true
+        }
+      ]
+    }
+  }
+}

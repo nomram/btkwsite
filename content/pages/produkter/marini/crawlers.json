@@ -1,6 +1,6 @@
 {
   "path": "/produkter/marini/crawlers",
-  "updated": "2026-10-10",
+  "updated": "2026-10-27",
   "template": "product",
   "order": 1,
   "published": true,
@@ -39,6 +39,190 @@
         {
           "type": "text",
           "html": "<a href=\"/kontakta-oss\">Kontakta oss</a> för mer information."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Modeller",
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 4,
+          "square": true,
+          "more": false,
+          "items": [
+            {
+              "title": "MR-C 10",
+              "image": "/assets/img/marini-mrc-mr-c-10-tile.webp",
+              "alt": "Marini MR-C 10",
+              "href": "/produkter/marini/crawlers/mr-c-10",
+              "bullets": [
+                "Motoreffekt: 17 kW",
+                "Vikt: 1 300 kg"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "MR-C 15",
+              "image": "/assets/img/marini-mrc-mr-c-15-tile.webp",
+              "alt": "Marini MR-C 15",
+              "href": "/produkter/marini/crawlers/mr-c-15",
+              "bullets": [
+                "Motoreffekt: 17 kW",
+                "Vikt: 1 500 kg"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "MR-C 20",
+              "image": "/assets/img/marini-mrc-mr-c-20-tile.webp",
+              "alt": "Marini MR-C 20",
+              "href": "/produkter/marini/crawlers/mr-c-20",
+              "bullets": [
+                "Motoreffekt: 22 kW",
+                "Vikt: 3 100 kg"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "MR-C 20P",
+              "image": "/assets/img/marini-mrc-mr-c-20p-tile.webp",
+              "alt": "Marini MR-C 20P",
+              "href": "/produkter/marini/crawlers/mr-c-20p",
+              "bullets": [
+                "Motoreffekt: 33 kW",
+                "Vikt: 3 800 kg"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "MR-C 30",
+              "image": "/assets/img/marini-mrc-mr-c-30-tile.webp",
+              "alt": "Marini MR-C 30",
+              "href": "/produkter/marini/crawlers/mr-c-30",
+              "bullets": [
+                "Motoreffekt: 33 - 55 kW",
+                "Vikt: 3 000 + 2 000 kg"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "MR-C 35A",
+              "image": "/assets/img/marini-mrc-mr-c-35a-tile.webp",
+              "alt": "Marini MR-C 35A",
+              "href": "/produkter/marini/crawlers/mr-c-35a",
+              "bullets": [
+                "Motoreffekt: 55 kW",
+                "Vikt: 6 500 - 14 330 kg"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "MR-C 35",
+              "image": "/assets/img/marini-mrc-mr-c-35-tile.webp",
+              "alt": "Marini MR-C 35",
+              "href": "/produkter/marini/crawlers/mr-c-35",
+              "bullets": [
+                "Motoreffekt: 55 kW",
+                "Vikt: 7 000 kg"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "MR-C 50",
+              "image": "/assets/img/marini-mrc-mr-c-50-tile.webp",
+              "alt": "Marini MR-C 50",
+              "href": "/produkter/marini/crawlers/mr-c-50",
+              "bullets": [
+                "Motoreffekt: 85 - 103 kW",
+                "Vikt: 9 000 kg"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "MR-C 80",
+              "image": "/assets/img/marini-mrc-mr-c-80-tile.webp",
+              "alt": "Marini MR-C 80",
+              "href": "/produkter/marini/crawlers/mr-c-80",
+              "bullets": [
+                "Motoreffekt: 85 kW",
+                "Vikt: 11 000 kg"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "MR-C 85A",
+              "image": "/assets/img/marini-mrc-mr-c-85a-tile.webp",
+              "alt": "Marini MR-C 85A",
+              "href": "/produkter/marini/crawlers/mr-c-85a",
+              "bullets": [
+                "Motoreffekt: 85 kW",
+                "Vikt: 11 800 kg"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "MR-C 85",
+              "image": "/assets/img/marini-mrc-mr-c-85-tile.webp",
+              "alt": "Marini MR-C 85",
+              "href": "/produkter/marini/crawlers/mr-c-85",
+              "bullets": [
+                "Motoreffekt: 85 kW",
+                "Vikt: 11 500 kg"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "MR-C 90",
+              "image": "/assets/img/marini-mrc-mr-c-90-tile.webp",
+              "alt": "Marini MR-C 90",
+              "href": "/produkter/marini/crawlers/mr-c-90",
+              "bullets": [
+                "Motoreffekt: 103 - 115 kW",
+                "Vikt: 14 500 kg"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "MR-C 95",
+              "image": "/assets/img/marini-mrc-mr-c-95-tile.webp",
+              "alt": "Marini MR-C 95",
+              "href": "/produkter/marini/crawlers/mr-c-95",
+              "bullets": [
+                "Motoreffekt: 103 - 115 kW",
+                "Vikt: 22 000 kg"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "MR-C 95P",
+              "image": "/assets/img/marini-mrc-mr-c-95p-tile.webp",
+              "alt": "Marini MR-C 95P",
+              "href": "/produkter/marini/crawlers/mr-c-95p",
+              "bullets": [
+                "Motoreffekt: 128 kW",
+                "Vikt: 24 000 kg"
+              ],
+              "width": 1000,
+              "height": 1000
+            }
+          ],
+          "gen": true
         },
         {
           "type": "button",
@@ -109,7 +293,7 @@
               "23",
               "1300",
               "1260 - 1760",
-              "350",
+              "3500",
               "40",
               "25 - 188"
             ],
@@ -120,7 +304,7 @@
               "23",
               "1500",
               "1260 - 1760",
-              "350",
+              "3500",
               "40",
               "25 - 188"
             ],
@@ -131,7 +315,7 @@
               "30",
               "3100",
               "1300 - 1800",
-              "500",
+              "5000",
               "40 - 80",
               "25 - 188"
             ],
@@ -142,7 +326,7 @@
               "45",
               "3800",
               "1300 - 1800",
-              "500",
+              "5000",
               "40 - 80",
               "25 - 230"
             ],
@@ -151,9 +335,9 @@
               "35",
               "33-55",
               "45-75",
-              "6615",
+              "3000 + 2000",
               "1200 - 2200",
-              "500 - 1000",
+              "5000 - 10000",
               "40 - 90",
               "25 - 310"
             ],
@@ -162,9 +346,9 @@
               "25",
               "55",
               "75",
-              "6500",
+              "6500 + 14330",
               "1800 - 3500",
-              "500",
+              "5000",
               "40 - 80",
               "25 - 188"
             ],
@@ -175,7 +359,7 @@
               "75",
               "7000",
               "1800 - 3300",
-              "1000",
+              "10000",
               "40 - 90",
               "25 - 310"
             ],
@@ -186,7 +370,7 @@
               "115-140",
               "9000",
               "1800 - 3500",
-              "1350",
+              "13500",
               "45 - 160",
               "25 - 310"
             ],
@@ -197,7 +381,7 @@
               "115",
               "11000",
               "1800 - 3500",
-              "500",
+              "5000",
               "40 - 80",
               "25 - 188"
             ],
@@ -208,7 +392,7 @@
               "115",
               "11800",
               "1800 - 3500",
-              "1000",
+              "10000",
               "40 - 90",
               "25 - 230"
             ],
@@ -219,7 +403,7 @@
               "115",
               "11500",
               "1800 - 3500",
-              "1000",
+              "10000",
               "40 - 90",
               "25 - 230"
             ],
@@ -230,7 +414,7 @@
               "140-154",
               "14500",
               "1800 - 3500",
-              "1600",
+              "16000",
               "40 - 160",
               "25 - 330"
             ],
@@ -241,7 +425,7 @@
               "140-154",
               "22000",
               "2500 - 7500",
-              "2400",
+              "24000",
               "40 - 140",
               "70 - 420"
             ],
@@ -252,11 +436,28 @@
               "175",
               "24000",
               "2500 - 7500",
-              "2400",
+              "24000",
               "40 - 140",
               "70 - 520"
             ]
-          ]
+          ],
+          "links": [
+            "/produkter/marini/crawlers/mr-c-10",
+            "/produkter/marini/crawlers/mr-c-15",
+            "/produkter/marini/crawlers/mr-c-20",
+            "/produkter/marini/crawlers/mr-c-20p",
+            "/produkter/marini/crawlers/mr-c-30",
+            "/produkter/marini/crawlers/mr-c-35a",
+            "/produkter/marini/crawlers/mr-c-35",
+            "/produkter/marini/crawlers/mr-c-50",
+            "/produkter/marini/crawlers/mr-c-80",
+            "/produkter/marini/crawlers/mr-c-85a",
+            "/produkter/marini/crawlers/mr-c-85",
+            "/produkter/marini/crawlers/mr-c-90",
+            "/produkter/marini/crawlers/mr-c-95",
+            "/produkter/marini/crawlers/mr-c-95p"
+          ],
+          "gen": true
         },
         {
           "type": "heading",
@@ -313,6 +514,190 @@
         {
           "type": "text",
           "html": "<a href=\"/kontakta-oss\">Contact us</a> for more information."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Models",
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 4,
+          "square": true,
+          "more": false,
+          "items": [
+            {
+              "title": "MR-C 10",
+              "image": "/assets/img/marini-mrc-mr-c-10-tile.webp",
+              "alt": "Marini MR-C 10",
+              "href": "/produkter/marini/crawlers/mr-c-10",
+              "bullets": [
+                "Engine power: 17 kW",
+                "Weight: 1,300 kg"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "MR-C 15",
+              "image": "/assets/img/marini-mrc-mr-c-15-tile.webp",
+              "alt": "Marini MR-C 15",
+              "href": "/produkter/marini/crawlers/mr-c-15",
+              "bullets": [
+                "Engine power: 17 kW",
+                "Weight: 1,500 kg"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "MR-C 20",
+              "image": "/assets/img/marini-mrc-mr-c-20-tile.webp",
+              "alt": "Marini MR-C 20",
+              "href": "/produkter/marini/crawlers/mr-c-20",
+              "bullets": [
+                "Engine power: 22 kW",
+                "Weight: 3,100 kg"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "MR-C 20P",
+              "image": "/assets/img/marini-mrc-mr-c-20p-tile.webp",
+              "alt": "Marini MR-C 20P",
+              "href": "/produkter/marini/crawlers/mr-c-20p",
+              "bullets": [
+                "Engine power: 33 kW",
+                "Weight: 3,800 kg"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "MR-C 30",
+              "image": "/assets/img/marini-mrc-mr-c-30-tile.webp",
+              "alt": "Marini MR-C 30",
+              "href": "/produkter/marini/crawlers/mr-c-30",
+              "bullets": [
+                "Engine power: 33 - 55 kW",
+                "Weight: 3,000 + 2,000 kg"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "MR-C 35A",
+              "image": "/assets/img/marini-mrc-mr-c-35a-tile.webp",
+              "alt": "Marini MR-C 35A",
+              "href": "/produkter/marini/crawlers/mr-c-35a",
+              "bullets": [
+                "Engine power: 55 kW",
+                "Weight: 6,500 - 14,330 kg"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "MR-C 35",
+              "image": "/assets/img/marini-mrc-mr-c-35-tile.webp",
+              "alt": "Marini MR-C 35",
+              "href": "/produkter/marini/crawlers/mr-c-35",
+              "bullets": [
+                "Engine power: 55 kW",
+                "Weight: 7,000 kg"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "MR-C 50",
+              "image": "/assets/img/marini-mrc-mr-c-50-tile.webp",
+              "alt": "Marini MR-C 50",
+              "href": "/produkter/marini/crawlers/mr-c-50",
+              "bullets": [
+                "Engine power: 85 - 103 kW",
+                "Weight: 9,000 kg"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "MR-C 80",
+              "image": "/assets/img/marini-mrc-mr-c-80-tile.webp",
+              "alt": "Marini MR-C 80",
+              "href": "/produkter/marini/crawlers/mr-c-80",
+              "bullets": [
+                "Engine power: 85 kW",
+                "Weight: 11,000 kg"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "MR-C 85A",
+              "image": "/assets/img/marini-mrc-mr-c-85a-tile.webp",
+              "alt": "Marini MR-C 85A",
+              "href": "/produkter/marini/crawlers/mr-c-85a",
+              "bullets": [
+                "Engine power: 85 kW",
+                "Weight: 11,800 kg"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "MR-C 85",
+              "image": "/assets/img/marini-mrc-mr-c-85-tile.webp",
+              "alt": "Marini MR-C 85",
+              "href": "/produkter/marini/crawlers/mr-c-85",
+              "bullets": [
+                "Engine power: 85 kW",
+                "Weight: 11,500 kg"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "MR-C 90",
+              "image": "/assets/img/marini-mrc-mr-c-90-tile.webp",
+              "alt": "Marini MR-C 90",
+              "href": "/produkter/marini/crawlers/mr-c-90",
+              "bullets": [
+                "Engine power: 103 - 115 kW",
+                "Weight: 14,500 kg"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "MR-C 95",
+              "image": "/assets/img/marini-mrc-mr-c-95-tile.webp",
+              "alt": "Marini MR-C 95",
+              "href": "/produkter/marini/crawlers/mr-c-95",
+              "bullets": [
+                "Engine power: 103 - 115 kW",
+                "Weight: 22,000 kg"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "MR-C 95P",
+              "image": "/assets/img/marini-mrc-mr-c-95p-tile.webp",
+              "alt": "Marini MR-C 95P",
+              "href": "/produkter/marini/crawlers/mr-c-95p",
+              "bullets": [
+                "Engine power: 128 kW",
+                "Weight: 24,000 kg"
+              ],
+              "width": 1000,
+              "height": 1000
+            }
+          ],
+          "gen": true
         },
         {
           "type": "button",
@@ -383,7 +768,7 @@
               "23",
               "1300",
               "1260 - 1760",
-              "350",
+              "3500",
               "40",
               "25 - 188"
             ],
@@ -394,7 +779,7 @@
               "23",
               "1500",
               "1260 - 1760",
-              "350",
+              "3500",
               "40",
               "25 - 188"
             ],
@@ -405,7 +790,7 @@
               "30",
               "3100",
               "1300 - 1800",
-              "500",
+              "5000",
               "40 - 80",
               "25 - 188"
             ],
@@ -416,7 +801,7 @@
               "45",
               "3800",
               "1300 - 1800",
-              "500",
+              "5000",
               "40 - 80",
               "25 - 230"
             ],
@@ -425,9 +810,9 @@
               "35",
               "33-55",
               "45-75",
-              "6615",
+              "3000 + 2000",
               "1200 - 2200",
-              "500 - 1000",
+              "5000 - 10000",
               "40 - 90",
               "25 - 310"
             ],
@@ -436,9 +821,9 @@
               "25",
               "55",
               "75",
-              "6500",
+              "6500 + 14330",
               "1800 - 3500",
-              "500",
+              "5000",
               "40 - 80",
               "25 - 188"
             ],
@@ -449,7 +834,7 @@
               "75",
               "7000",
               "1800 - 3300",
-              "1000",
+              "10000",
               "40 - 90",
               "25 - 310"
             ],
@@ -460,7 +845,7 @@
               "115-140",
               "9000",
               "1800 - 3500",
-              "1350",
+              "13500",
               "45 - 160",
               "25 - 310"
             ],
@@ -471,7 +856,7 @@
               "115",
               "11000",
               "1800 - 3500",
-              "500",
+              "5000",
               "40 - 80",
               "25 - 188"
             ],
@@ -482,7 +867,7 @@
               "115",
               "11800",
               "1800 - 3500",
-              "1000",
+              "10000",
               "40 - 90",
               "25 - 230"
             ],
@@ -493,7 +878,7 @@
               "115",
               "11500",
               "1800 - 3500",
-              "1000",
+              "10000",
               "40 - 90",
               "25 - 230"
             ],
@@ -504,7 +889,7 @@
               "140-154",
               "14500",
               "1800 - 3500",
-              "1600",
+              "16000",
               "40 - 160",
               "25 - 330"
             ],
@@ -515,7 +900,7 @@
               "140-154",
               "22000",
               "2500 - 7500",
-              "2400",
+              "24000",
               "40 - 140",
               "70 - 420"
             ],
@@ -526,11 +911,28 @@
               "175",
               "24000",
               "2500 - 7500",
-              "2400",
+              "24000",
               "40 - 140",
               "70 - 520"
             ]
-          ]
+          ],
+          "links": [
+            "/produkter/marini/crawlers/mr-c-10",
+            "/produkter/marini/crawlers/mr-c-15",
+            "/produkter/marini/crawlers/mr-c-20",
+            "/produkter/marini/crawlers/mr-c-20p",
+            "/produkter/marini/crawlers/mr-c-30",
+            "/produkter/marini/crawlers/mr-c-35a",
+            "/produkter/marini/crawlers/mr-c-35",
+            "/produkter/marini/crawlers/mr-c-50",
+            "/produkter/marini/crawlers/mr-c-80",
+            "/produkter/marini/crawlers/mr-c-85a",
+            "/produkter/marini/crawlers/mr-c-85",
+            "/produkter/marini/crawlers/mr-c-90",
+            "/produkter/marini/crawlers/mr-c-95",
+            "/produkter/marini/crawlers/mr-c-95p"
+          ],
+          "gen": true
         },
         {
           "type": "heading",
@@ -588,6 +990,190 @@
         {
           "type": "text",
           "html": "<a href=\"/kontakta-oss\">Contáctenos</a> para más información."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Modelos",
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 4,
+          "square": true,
+          "more": false,
+          "items": [
+            {
+              "title": "MR-C 10",
+              "image": "/assets/img/marini-mrc-mr-c-10-tile.webp",
+              "alt": "Marini MR-C 10",
+              "href": "/produkter/marini/crawlers/mr-c-10",
+              "bullets": [
+                "Potencia del motor: 17 kW",
+                "Peso: 1.300 kg"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "MR-C 15",
+              "image": "/assets/img/marini-mrc-mr-c-15-tile.webp",
+              "alt": "Marini MR-C 15",
+              "href": "/produkter/marini/crawlers/mr-c-15",
+              "bullets": [
+                "Potencia del motor: 17 kW",
+                "Peso: 1.500 kg"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "MR-C 20",
+              "image": "/assets/img/marini-mrc-mr-c-20-tile.webp",
+              "alt": "Marini MR-C 20",
+              "href": "/produkter/marini/crawlers/mr-c-20",
+              "bullets": [
+                "Potencia del motor: 22 kW",
+                "Peso: 3.100 kg"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "MR-C 20P",
+              "image": "/assets/img/marini-mrc-mr-c-20p-tile.webp",
+              "alt": "Marini MR-C 20P",
+              "href": "/produkter/marini/crawlers/mr-c-20p",
+              "bullets": [
+                "Potencia del motor: 33 kW",
+                "Peso: 3.800 kg"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "MR-C 30",
+              "image": "/assets/img/marini-mrc-mr-c-30-tile.webp",
+              "alt": "Marini MR-C 30",
+              "href": "/produkter/marini/crawlers/mr-c-30",
+              "bullets": [
+                "Potencia del motor: 33 - 55 kW",
+                "Peso: 3.000 + 2.000 kg"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "MR-C 35A",
+              "image": "/assets/img/marini-mrc-mr-c-35a-tile.webp",
+              "alt": "Marini MR-C 35A",
+              "href": "/produkter/marini/crawlers/mr-c-35a",
+              "bullets": [
+                "Potencia del motor: 55 kW",
+                "Peso: 6.500 - 14.330 kg"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "MR-C 35",
+              "image": "/assets/img/marini-mrc-mr-c-35-tile.webp",
+              "alt": "Marini MR-C 35",
+              "href": "/produkter/marini/crawlers/mr-c-35",
+              "bullets": [
+                "Potencia del motor: 55 kW",
+                "Peso: 7.000 kg"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "MR-C 50",
+              "image": "/assets/img/marini-mrc-mr-c-50-tile.webp",
+              "alt": "Marini MR-C 50",
+              "href": "/produkter/marini/crawlers/mr-c-50",
+              "bullets": [
+                "Potencia del motor: 85 - 103 kW",
+                "Peso: 9.000 kg"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "MR-C 80",
+              "image": "/assets/img/marini-mrc-mr-c-80-tile.webp",
+              "alt": "Marini MR-C 80",
+              "href": "/produkter/marini/crawlers/mr-c-80",
+              "bullets": [
+                "Potencia del motor: 85 kW",
+                "Peso: 11.000 kg"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "MR-C 85A",
+              "image": "/assets/img/marini-mrc-mr-c-85a-tile.webp",
+              "alt": "Marini MR-C 85A",
+              "href": "/produkter/marini/crawlers/mr-c-85a",
+              "bullets": [
+                "Potencia del motor: 85 kW",
+                "Peso: 11.800 kg"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "MR-C 85",
+              "image": "/assets/img/marini-mrc-mr-c-85-tile.webp",
+              "alt": "Marini MR-C 85",
+              "href": "/produkter/marini/crawlers/mr-c-85",
+              "bullets": [
+                "Potencia del motor: 85 kW",
+                "Peso: 11.500 kg"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "MR-C 90",
+              "image": "/assets/img/marini-mrc-mr-c-90-tile.webp",
+              "alt": "Marini MR-C 90",
+              "href": "/produkter/marini/crawlers/mr-c-90",
+              "bullets": [
+                "Potencia del motor: 103 - 115 kW",
+                "Peso: 14.500 kg"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "MR-C 95",
+              "image": "/assets/img/marini-mrc-mr-c-95-tile.webp",
+              "alt": "Marini MR-C 95",
+              "href": "/produkter/marini/crawlers/mr-c-95",
+              "bullets": [
+                "Potencia del motor: 103 - 115 kW",
+                "Peso: 22.000 kg"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "MR-C 95P",
+              "image": "/assets/img/marini-mrc-mr-c-95p-tile.webp",
+              "alt": "Marini MR-C 95P",
+              "href": "/produkter/marini/crawlers/mr-c-95p",
+              "bullets": [
+                "Potencia del motor: 128 kW",
+                "Peso: 24.000 kg"
+              ],
+              "width": 1000,
+              "height": 1000
+            }
+          ],
+          "gen": true
         },
         {
           "type": "button",
@@ -658,7 +1244,7 @@
               "23",
               "1300",
               "1260 - 1760",
-              "350",
+              "3500",
               "40",
               "25 - 188"
             ],
@@ -669,7 +1255,7 @@
               "23",
               "1500",
               "1260 - 1760",
-              "350",
+              "3500",
               "40",
               "25 - 188"
             ],
@@ -680,7 +1266,7 @@
               "30",
               "3100",
               "1300 - 1800",
-              "500",
+              "5000",
               "40 - 80",
               "25 - 188"
             ],
@@ -691,7 +1277,7 @@
               "45",
               "3800",
               "1300 - 1800",
-              "500",
+              "5000",
               "40 - 80",
               "25 - 230"
             ],
@@ -700,9 +1286,9 @@
               "35",
               "33-55",
               "45-75",
-              "6615",
+              "3000 + 2000",
               "1200 - 2200",
-              "500 - 1000",
+              "5000 - 10000",
               "40 - 90",
               "25 - 310"
             ],
@@ -711,9 +1297,9 @@
               "25",
               "55",
               "75",
-              "6500",
+              "6500 + 14330",
               "1800 - 3500",
-              "500",
+              "5000",
               "40 - 80",
               "25 - 188"
             ],
@@ -724,7 +1310,7 @@
               "75",
               "7000",
               "1800 - 3300",
-              "1000",
+              "10000",
               "40 - 90",
               "25 - 310"
             ],
@@ -735,7 +1321,7 @@
               "115-140",
               "9000",
               "1800 - 3500",
-              "1350",
+              "13500",
               "45 - 160",
               "25 - 310"
             ],
@@ -746,7 +1332,7 @@
               "115",
               "11000",
               "1800 - 3500",
-              "500",
+              "5000",
               "40 - 80",
               "25 - 188"
             ],
@@ -757,7 +1343,7 @@
               "115",
               "11800",
               "1800 - 3500",
-              "1000",
+              "10000",
               "40 - 90",
               "25 - 230"
             ],
@@ -768,7 +1354,7 @@
               "115",
               "11500",
               "1800 - 3500",
-              "1000",
+              "10000",
               "40 - 90",
               "25 - 230"
             ],
@@ -779,7 +1365,7 @@
               "140-154",
               "14500",
               "1800 - 3500",
-              "1600",
+              "16000",
               "40 - 160",
               "25 - 330"
             ],
@@ -790,7 +1376,7 @@
               "140-154",
               "22000",
               "2500 - 7500",
-              "2400",
+              "24000",
               "40 - 140",
               "70 - 420"
             ],
@@ -801,11 +1387,28 @@
               "175",
               "24000",
               "2500 - 7500",
-              "2400",
+              "24000",
               "40 - 140",
               "70 - 520"
             ]
-          ]
+          ],
+          "links": [
+            "/produkter/marini/crawlers/mr-c-10",
+            "/produkter/marini/crawlers/mr-c-15",
+            "/produkter/marini/crawlers/mr-c-20",
+            "/produkter/marini/crawlers/mr-c-20p",
+            "/produkter/marini/crawlers/mr-c-30",
+            "/produkter/marini/crawlers/mr-c-35a",
+            "/produkter/marini/crawlers/mr-c-35",
+            "/produkter/marini/crawlers/mr-c-50",
+            "/produkter/marini/crawlers/mr-c-80",
+            "/produkter/marini/crawlers/mr-c-85a",
+            "/produkter/marini/crawlers/mr-c-85",
+            "/produkter/marini/crawlers/mr-c-90",
+            "/produkter/marini/crawlers/mr-c-95",
+            "/produkter/marini/crawlers/mr-c-95p"
+          ],
+          "gen": true
         },
         {
           "type": "heading",
@@ -864,6 +1467,190 @@
         {
           "type": "text",
           "html": "<a href=\"/kontakta-oss\">Kontakt oss</a> for mer informasjon."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Modeller",
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 4,
+          "square": true,
+          "more": false,
+          "items": [
+            {
+              "title": "MR-C 10",
+              "image": "/assets/img/marini-mrc-mr-c-10-tile.webp",
+              "alt": "Marini MR-C 10",
+              "href": "/produkter/marini/crawlers/mr-c-10",
+              "bullets": [
+                "Motoreffekt: 17 kW",
+                "Vekt: 1 300 kg"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "MR-C 15",
+              "image": "/assets/img/marini-mrc-mr-c-15-tile.webp",
+              "alt": "Marini MR-C 15",
+              "href": "/produkter/marini/crawlers/mr-c-15",
+              "bullets": [
+                "Motoreffekt: 17 kW",
+                "Vekt: 1 500 kg"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "MR-C 20",
+              "image": "/assets/img/marini-mrc-mr-c-20-tile.webp",
+              "alt": "Marini MR-C 20",
+              "href": "/produkter/marini/crawlers/mr-c-20",
+              "bullets": [
+                "Motoreffekt: 22 kW",
+                "Vekt: 3 100 kg"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "MR-C 20P",
+              "image": "/assets/img/marini-mrc-mr-c-20p-tile.webp",
+              "alt": "Marini MR-C 20P",
+              "href": "/produkter/marini/crawlers/mr-c-20p",
+              "bullets": [
+                "Motoreffekt: 33 kW",
+                "Vekt: 3 800 kg"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "MR-C 30",
+              "image": "/assets/img/marini-mrc-mr-c-30-tile.webp",
+              "alt": "Marini MR-C 30",
+              "href": "/produkter/marini/crawlers/mr-c-30",
+              "bullets": [
+                "Motoreffekt: 33 - 55 kW",
+                "Vekt: 3 000 + 2 000 kg"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "MR-C 35A",
+              "image": "/assets/img/marini-mrc-mr-c-35a-tile.webp",
+              "alt": "Marini MR-C 35A",
+              "href": "/produkter/marini/crawlers/mr-c-35a",
+              "bullets": [
+                "Motoreffekt: 55 kW",
+                "Vekt: 6 500 - 14 330 kg"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "MR-C 35",
+              "image": "/assets/img/marini-mrc-mr-c-35-tile.webp",
+              "alt": "Marini MR-C 35",
+              "href": "/produkter/marini/crawlers/mr-c-35",
+              "bullets": [
+                "Motoreffekt: 55 kW",
+                "Vekt: 7 000 kg"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "MR-C 50",
+              "image": "/assets/img/marini-mrc-mr-c-50-tile.webp",
+              "alt": "Marini MR-C 50",
+              "href": "/produkter/marini/crawlers/mr-c-50",
+              "bullets": [
+                "Motoreffekt: 85 - 103 kW",
+                "Vekt: 9 000 kg"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "MR-C 80",
+              "image": "/assets/img/marini-mrc-mr-c-80-tile.webp",
+              "alt": "Marini MR-C 80",
+              "href": "/produkter/marini/crawlers/mr-c-80",
+              "bullets": [
+                "Motoreffekt: 85 kW",
+                "Vekt: 11 000 kg"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "MR-C 85A",
+              "image": "/assets/img/marini-mrc-mr-c-85a-tile.webp",
+              "alt": "Marini MR-C 85A",
+              "href": "/produkter/marini/crawlers/mr-c-85a",
+              "bullets": [
+                "Motoreffekt: 85 kW",
+                "Vekt: 11 800 kg"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "MR-C 85",
+              "image": "/assets/img/marini-mrc-mr-c-85-tile.webp",
+              "alt": "Marini MR-C 85",
+              "href": "/produkter/marini/crawlers/mr-c-85",
+              "bullets": [
+                "Motoreffekt: 85 kW",
+                "Vekt: 11 500 kg"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "MR-C 90",
+              "image": "/assets/img/marini-mrc-mr-c-90-tile.webp",
+              "alt": "Marini MR-C 90",
+              "href": "/produkter/marini/crawlers/mr-c-90",
+              "bullets": [
+                "Motoreffekt: 103 - 115 kW",
+                "Vekt: 14 500 kg"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "MR-C 95",
+              "image": "/assets/img/marini-mrc-mr-c-95-tile.webp",
+              "alt": "Marini MR-C 95",
+              "href": "/produkter/marini/crawlers/mr-c-95",
+              "bullets": [
+                "Motoreffekt: 103 - 115 kW",
+                "Vekt: 22 000 kg"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "MR-C 95P",
+              "image": "/assets/img/marini-mrc-mr-c-95p-tile.webp",
+              "alt": "Marini MR-C 95P",
+              "href": "/produkter/marini/crawlers/mr-c-95p",
+              "bullets": [
+                "Motoreffekt: 128 kW",
+                "Vekt: 24 000 kg"
+              ],
+              "width": 1000,
+              "height": 1000
+            }
+          ],
+          "gen": true
         },
         {
           "type": "button",
@@ -934,7 +1721,7 @@
               "23",
               "1300",
               "1260 - 1760",
-              "350",
+              "3500",
               "40",
               "25 - 188"
             ],
@@ -945,7 +1732,7 @@
               "23",
               "1500",
               "1260 - 1760",
-              "350",
+              "3500",
               "40",
               "25 - 188"
             ],
@@ -956,7 +1743,7 @@
               "30",
               "3100",
               "1300 - 1800",
-              "500",
+              "5000",
               "40 - 80",
               "25 - 188"
             ],
@@ -967,7 +1754,7 @@
               "45",
               "3800",
               "1300 - 1800",
-              "500",
+              "5000",
               "40 - 80",
               "25 - 230"
             ],
@@ -976,9 +1763,9 @@
               "35",
               "33-55",
               "45-75",
-              "6615",
+              "3000 + 2000",
               "1200 - 2200",
-              "500 - 1000",
+              "5000 - 10000",
               "40 - 90",
               "25 - 310"
             ],
@@ -987,9 +1774,9 @@
               "25",
               "55",
               "75",
-              "6500",
+              "6500 + 14330",
               "1800 - 3500",
-              "500",
+              "5000",
               "40 - 80",
               "25 - 188"
             ],
@@ -1000,7 +1787,7 @@
               "75",
               "7000",
               "1800 - 3300",
-              "1000",
+              "10000",
               "40 - 90",
               "25 - 310"
             ],
@@ -1011,7 +1798,7 @@
               "115-140",
               "9000",
               "1800 - 3500",
-              "1350",
+              "13500",
               "45 - 160",
               "25 - 310"
             ],
@@ -1022,7 +1809,7 @@
               "115",
               "11000",
               "1800 - 3500",
-              "500",
+              "5000",
               "40 - 80",
               "25 - 188"
             ],
@@ -1033,7 +1820,7 @@
               "115",
               "11800",
               "1800 - 3500",
-              "1000",
+              "10000",
               "40 - 90",
               "25 - 230"
             ],
@@ -1044,7 +1831,7 @@
               "115",
               "11500",
               "1800 - 3500",
-              "1000",
+              "10000",
               "40 - 90",
               "25 - 230"
             ],
@@ -1055,7 +1842,7 @@
               "140-154",
               "14500",
               "1800 - 3500",
-              "1600",
+              "16000",
               "40 - 160",
               "25 - 330"
             ],
@@ -1066,7 +1853,7 @@
               "140-154",
               "22000",
               "2500 - 7500",
-              "2400",
+              "24000",
               "40 - 140",
               "70 - 420"
             ],
@@ -1077,11 +1864,28 @@
               "175",
               "24000",
               "2500 - 7500",
-              "2400",
+              "24000",
               "40 - 140",
               "70 - 520"
             ]
-          ]
+          ],
+          "links": [
+            "/produkter/marini/crawlers/mr-c-10",
+            "/produkter/marini/crawlers/mr-c-15",
+            "/produkter/marini/crawlers/mr-c-20",
+            "/produkter/marini/crawlers/mr-c-20p",
+            "/produkter/marini/crawlers/mr-c-30",
+            "/produkter/marini/crawlers/mr-c-35a",
+            "/produkter/marini/crawlers/mr-c-35",
+            "/produkter/marini/crawlers/mr-c-50",
+            "/produkter/marini/crawlers/mr-c-80",
+            "/produkter/marini/crawlers/mr-c-85a",
+            "/produkter/marini/crawlers/mr-c-85",
+            "/produkter/marini/crawlers/mr-c-90",
+            "/produkter/marini/crawlers/mr-c-95",
+            "/produkter/marini/crawlers/mr-c-95p"
+          ],
+          "gen": true
         },
         {
           "type": "heading",

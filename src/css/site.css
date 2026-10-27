@@ -1117,3 +1117,7 @@ td.is-sized { font-weight: 700; }
 @media (hover: hover) { .origin__btn:hover { opacity: 1; border-color: var(--muted); color: var(--text); } .origin__btn:hover .origin__more { max-width: 36rem; opacity: 1; } }
 @media (max-width: 700px) { .crumbs:has(.origin) { flex-wrap: wrap; gap: .5rem 1rem; } .origin { max-width: 100%; } .origin__btn { max-width: 100%; text-align: left; } .origin__btn.is-open { border-radius: 14px; flex-wrap: wrap; } .origin__btn.is-open .origin__more { white-space: normal; max-width: 100%; flex-basis: 100%; padding: 0 0 .1rem 1.9rem; } }
 @media (prefers-reduced-motion: reduce) { .origin__more, .origin__btn { transition: none; } }
+/* the round flag shows the middle of a 3:2 flag: Nordic crosses sit toward the hoist, the US flag shows its canton */
+.origin__btn img[src$="/se.svg"], .origin__btn img[src$="/fi.svg"] { object-position: 10% 50%; }
+.origin__btn img[src$="/no.svg"] { object-position: 0% 50%; }
+.origin__btn img[src$="/us.svg"] { object-position: 4% 50%; }

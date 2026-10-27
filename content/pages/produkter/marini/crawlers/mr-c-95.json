@@ -1,0 +1,804 @@
+{
+  "path": "/produkter/marini/crawlers/mr-c-95",
+  "updated": "2026-10-27",
+  "template": "product",
+  "order": 12,
+  "published": true,
+  "hero": {
+    "image": "/assets/img/marini-crawlers-hero.webp"
+  },
+  "i18n": {
+    "sv": {
+      "title": "MR-C 95",
+      "h1": "Marini MR-C 95",
+      "description": "MR-C 95 är en hydraulisk larvrigg ur Marinis MR-C-serie med 103 - 115 kW motor och en vikt på 22 000 kg. Konstruerad för större och djupare borrhål, med högre kapacitet och kraft.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Marini logotyp",
+          "href": "/produkter/marini",
+          "width": 637,
+          "height": 86,
+          "src": "/assets/img/logo-marini.webp",
+          "gen": true
+        },
+        {
+          "type": "image",
+          "alt": "Marini MR-C 95",
+          "file": "/assets/img/marini-mrc-mr-c-95-iso.webp",
+          "width": 279,
+          "height": 403,
+          "source": "348x379",
+          "src": "/assets/img/marini-mrc-mr-c-95-iso.webp",
+          "gen": true
+        },
+        {
+          "type": "carousel",
+          "autoplay": true,
+          "interval": 6,
+          "items": [
+            {
+              "src": "/assets/img/marini-mrc-mr-c-95-p1.webp",
+              "alt": "Marini MR-C 95 (1/3)",
+              "width": 347,
+              "height": 324
+            },
+            {
+              "src": "/assets/img/marini-mrc-mr-c-95-p2.webp",
+              "alt": "Marini MR-C 95 (2/3)",
+              "width": 343,
+              "height": 328
+            },
+            {
+              "src": "/assets/img/marini-mrc-mr-c-95-photo.webp",
+              "alt": "Marini MR-C 95 (3/3)",
+              "width": 330,
+              "height": 438
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "MR-C 95 är en hydraulisk larvrigg ur Marinis MR-C-serie med 103 - 115 kW motor och en vikt på 22 000 kg. Konstruerad för större och djupare borrhål, med högre kapacitet och kraft.",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Motoreffekt: 103 - 115 kW (140 - 154 hp)",
+            "Matningskraft: 80 kN",
+            "Vridmoment: 24 000 Nm",
+            "Mastens slaglängd: 2 500 - 7 500 mm",
+            "Vikt: 22 000 kg"
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Borrmetoder",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Rotationsborrning",
+            "Slagborrning",
+            "Jet grouting"
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Kontakta oss</a> för pris, leveranstid eller hjälp att välja rätt modell.",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Kort Broschyr (ENG)",
+          "href": "/assets/docs/marini-crawlers-kort-broschyr-eng.pdf",
+          "driveId": "1ieWNcqMvkkbHi3IYedIFbdB5CFFLiKLR",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Produktkatalog",
+          "href": "/assets/docs/marini-crawlers-produktkatalog.pdf",
+          "driveId": "1ecMiKcn9MMZ4A09FXVKtBN1SAgcdwbvd",
+          "gen": true
+        },
+        {
+          "type": "datasheet",
+          "title": "Teknisk data",
+          "tagline": "Marini MR-C 95",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Specifikationer",
+              "rows": [
+                {
+                  "label": "Motoreffekt",
+                  "metric": "103 - 115 kW",
+                  "us": "140 - 154 hp"
+                },
+                {
+                  "label": "Mastens slaglängd",
+                  "metric": "2 500 - 7 500 mm",
+                  "us": "8,2 - 24,6 ft"
+                },
+                {
+                  "label": "Matningskraft",
+                  "metric": "8 000 daN",
+                  "us": "17 637 lbf"
+                },
+                {
+                  "label": "Dragkraft (indragning)",
+                  "metric": "8 000 daN",
+                  "us": "17 637 lbf"
+                },
+                {
+                  "label": "Vridmoment, rotation",
+                  "metric": "2 400 daNm",
+                  "us": "17 700 ft·lb"
+                },
+                {
+                  "label": "Varvtal, rotation",
+                  "metric": "40 - 140 rpm"
+                },
+                {
+                  "label": "Klämområde",
+                  "metric": "70 - 420 mm",
+                  "us": "2,75 - 16,53 in"
+                },
+                {
+                  "label": "Vikt",
+                  "metric": "22 000 kg",
+                  "us": "48 500 lbs"
+                }
+              ]
+            }
+          ],
+          "note": "",
+          "source": "Uppgifterna är hämtade ur Marinis katalog och broschyr (engelska).",
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 1,
+          "narrow": true,
+          "zoom": true,
+          "more": false,
+          "items": [
+            {
+              "title": "Sidovy",
+              "image": "/assets/img/marini-mrc-mr-c-95-side.webp",
+              "alt": "Sidovy MR-C 95",
+              "text": "Håll muspekaren över ritningen (eller tryck och dra) för 2× förstoring.",
+              "file": "/assets/img/marini-mrc-mr-c-95-side.webp",
+              "width": 655,
+              "height": 718
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "related",
+          "title": "Se även",
+          "items": [
+            {
+              "href": "/produkter/marini/crawlers",
+              "mutual": false
+            },
+            {
+              "href": "/produkter/marini/crawlers/mr-c-95p"
+            },
+            {
+              "href": "/produkter/marini/crawlers/mr-c-90"
+            }
+          ],
+          "gen": true
+        }
+      ]
+    },
+    "en": {
+      "title": "MR-C 95",
+      "h1": "Marini MR-C 95",
+      "description": "MR-C 95 is a hydraulic crawler drill rig from Marini's MR-C line with a 103 - 115 kW engine and a weight of 22,000 kg. Built for larger and deeper holes, with higher capacity and force.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Marini logotyp",
+          "href": "/produkter/marini",
+          "width": 637,
+          "height": 86,
+          "src": "/assets/img/logo-marini.webp",
+          "gen": true
+        },
+        {
+          "type": "image",
+          "alt": "Marini MR-C 95",
+          "file": "/assets/img/marini-mrc-mr-c-95-iso.webp",
+          "width": 279,
+          "height": 403,
+          "source": "348x379",
+          "src": "/assets/img/marini-mrc-mr-c-95-iso.webp",
+          "gen": true
+        },
+        {
+          "type": "carousel",
+          "autoplay": true,
+          "interval": 6,
+          "items": [
+            {
+              "src": "/assets/img/marini-mrc-mr-c-95-p1.webp",
+              "alt": "Marini MR-C 95 (1/3)",
+              "width": 347,
+              "height": 324
+            },
+            {
+              "src": "/assets/img/marini-mrc-mr-c-95-p2.webp",
+              "alt": "Marini MR-C 95 (2/3)",
+              "width": 343,
+              "height": 328
+            },
+            {
+              "src": "/assets/img/marini-mrc-mr-c-95-photo.webp",
+              "alt": "Marini MR-C 95 (3/3)",
+              "width": 330,
+              "height": 438
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "MR-C 95 is a hydraulic crawler drill rig from Marini's MR-C line with a 103 - 115 kW engine and a weight of 22,000 kg. Built for larger and deeper holes, with higher capacity and force.",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Engine power: 103 - 115 kW (140 - 154 hp)",
+            "Feed force: 80 kN",
+            "Rotary torque: 24,000 Nm",
+            "Mast stroke: 2,500 - 7,500 mm",
+            "Weight: 22,000 kg"
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Drilling methods",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Rotation drilling",
+            "Percussion drilling",
+            "Jet grouting"
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Contact us</a> for price, delivery time or help choosing the right model.",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Short brochure (ENG)",
+          "href": "/assets/docs/marini-crawlers-kort-broschyr-eng.pdf",
+          "driveId": "1ieWNcqMvkkbHi3IYedIFbdB5CFFLiKLR",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Product catalogue",
+          "href": "/assets/docs/marini-crawlers-produktkatalog.pdf",
+          "driveId": "1ecMiKcn9MMZ4A09FXVKtBN1SAgcdwbvd",
+          "gen": true
+        },
+        {
+          "type": "datasheet",
+          "title": "Technical data",
+          "tagline": "Marini MR-C 95",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Specifications",
+              "rows": [
+                {
+                  "label": "Engine power",
+                  "metric": "103 - 115 kW",
+                  "us": "140 - 154 hp"
+                },
+                {
+                  "label": "Mast stroke",
+                  "metric": "2,500 - 7,500 mm",
+                  "us": "8.2 - 24.6 ft"
+                },
+                {
+                  "label": "Feed force",
+                  "metric": "8,000 daN",
+                  "us": "17,637 lbf"
+                },
+                {
+                  "label": "Retract force",
+                  "metric": "8,000 daN",
+                  "us": "17,637 lbf"
+                },
+                {
+                  "label": "Rotary torque",
+                  "metric": "2,400 daNm",
+                  "us": "17,700 ft·lb"
+                },
+                {
+                  "label": "Rotary speed range",
+                  "metric": "40 - 140 rpm"
+                },
+                {
+                  "label": "Clamp range",
+                  "metric": "70 - 420 mm",
+                  "us": "2.75 - 16.53 in"
+                },
+                {
+                  "label": "Weight",
+                  "metric": "22,000 kg",
+                  "us": "48,500 lbs"
+                }
+              ]
+            }
+          ],
+          "note": "",
+          "source": "Information taken from Marini's catalogue and brochure.",
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 1,
+          "narrow": true,
+          "zoom": true,
+          "more": false,
+          "items": [
+            {
+              "title": "Side view",
+              "image": "/assets/img/marini-mrc-mr-c-95-side.webp",
+              "alt": "Side view MR-C 95",
+              "text": "Hover over the drawing (or touch and drag) for a 2× magnifier.",
+              "file": "/assets/img/marini-mrc-mr-c-95-side.webp",
+              "width": 655,
+              "height": 718
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "related",
+          "title": "See also",
+          "items": [
+            {
+              "href": "/produkter/marini/crawlers",
+              "mutual": false
+            },
+            {
+              "href": "/produkter/marini/crawlers/mr-c-95p"
+            },
+            {
+              "href": "/produkter/marini/crawlers/mr-c-90"
+            }
+          ],
+          "gen": true
+        }
+      ]
+    },
+    "es": {
+      "title": "MR-C 95",
+      "h1": "Marini MR-C 95",
+      "description": "MR-C 95 es una perforadora hidráulica de orugas de la serie MR-C de Marini, con motor de 103 - 115 kW y un peso de 22.000 kg. Diseñada para barrenos más grandes y profundos, con mayor capacidad y fuer",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Marini logotyp",
+          "href": "/produkter/marini",
+          "width": 637,
+          "height": 86,
+          "src": "/assets/img/logo-marini.webp",
+          "gen": true
+        },
+        {
+          "type": "image",
+          "alt": "Marini MR-C 95",
+          "file": "/assets/img/marini-mrc-mr-c-95-iso.webp",
+          "width": 279,
+          "height": 403,
+          "source": "348x379",
+          "src": "/assets/img/marini-mrc-mr-c-95-iso.webp",
+          "gen": true
+        },
+        {
+          "type": "carousel",
+          "autoplay": true,
+          "interval": 6,
+          "items": [
+            {
+              "src": "/assets/img/marini-mrc-mr-c-95-p1.webp",
+              "alt": "Marini MR-C 95 (1/3)",
+              "width": 347,
+              "height": 324
+            },
+            {
+              "src": "/assets/img/marini-mrc-mr-c-95-p2.webp",
+              "alt": "Marini MR-C 95 (2/3)",
+              "width": 343,
+              "height": 328
+            },
+            {
+              "src": "/assets/img/marini-mrc-mr-c-95-photo.webp",
+              "alt": "Marini MR-C 95 (3/3)",
+              "width": 330,
+              "height": 438
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "MR-C 95 es una perforadora hidráulica de orugas de la serie MR-C de Marini, con motor de 103 - 115 kW y un peso de 22.000 kg. Diseñada para barrenos más grandes y profundos, con mayor capacidad y fuerza.",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Potencia del motor: 103 - 115 kW (140 - 154 hp)",
+            "Fuerza de empuje: 80 kN",
+            "Par de rotación: 24.000 Nm",
+            "Carrera del mástil: 2.500 - 7.500 mm",
+            "Peso: 22.000 kg"
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Métodos de perforación",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Perforación a rotación",
+            "Perforación a percusión",
+            "Jet grouting"
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Contáctenos</a> para precio, plazo de entrega o ayuda para elegir el modelo adecuado.",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Folleto breve (ENG)",
+          "href": "/assets/docs/marini-crawlers-kort-broschyr-eng.pdf",
+          "driveId": "1ieWNcqMvkkbHi3IYedIFbdB5CFFLiKLR",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Catálogo de productos",
+          "href": "/assets/docs/marini-crawlers-produktkatalog.pdf",
+          "driveId": "1ecMiKcn9MMZ4A09FXVKtBN1SAgcdwbvd",
+          "gen": true
+        },
+        {
+          "type": "datasheet",
+          "title": "Datos técnicos",
+          "tagline": "Marini MR-C 95",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Especificaciones",
+              "rows": [
+                {
+                  "label": "Potencia del motor",
+                  "metric": "103 - 115 kW",
+                  "us": "140 - 154 hp"
+                },
+                {
+                  "label": "Carrera del mástil",
+                  "metric": "2.500 - 7.500 mm",
+                  "us": "8,2 - 24,6 ft"
+                },
+                {
+                  "label": "Fuerza de empuje",
+                  "metric": "8.000 daN",
+                  "us": "17.637 lbf"
+                },
+                {
+                  "label": "Fuerza de retroceso",
+                  "metric": "8.000 daN",
+                  "us": "17.637 lbf"
+                },
+                {
+                  "label": "Par de rotación",
+                  "metric": "2.400 daNm",
+                  "us": "17.700 ft·lb"
+                },
+                {
+                  "label": "Velocidad de rotación",
+                  "metric": "40 - 140 rpm"
+                },
+                {
+                  "label": "Rango de mordaza",
+                  "metric": "70 - 420 mm",
+                  "us": "2,75 - 16,53 in"
+                },
+                {
+                  "label": "Peso",
+                  "metric": "22.000 kg",
+                  "us": "48.500 lbs"
+                }
+              ]
+            }
+          ],
+          "note": "",
+          "source": "Información tomada del catálogo y del folleto de Marini.",
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 1,
+          "narrow": true,
+          "zoom": true,
+          "more": false,
+          "items": [
+            {
+              "title": "Vista lateral",
+              "image": "/assets/img/marini-mrc-mr-c-95-side.webp",
+              "alt": "Vista lateral MR-C 95",
+              "text": "Pase el cursor sobre el plano (o toque y arrastre) para una lupa 2×.",
+              "file": "/assets/img/marini-mrc-mr-c-95-side.webp",
+              "width": 655,
+              "height": 718
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "related",
+          "title": "Véase también",
+          "items": [
+            {
+              "href": "/produkter/marini/crawlers",
+              "mutual": false
+            },
+            {
+              "href": "/produkter/marini/crawlers/mr-c-95p"
+            },
+            {
+              "href": "/produkter/marini/crawlers/mr-c-90"
+            }
+          ],
+          "gen": true
+        }
+      ]
+    },
+    "no": {
+      "title": "MR-C 95",
+      "h1": "Marini MR-C 95",
+      "description": "MR-C 95 er en hydraulisk beltegående borerigg i Marinis MR-C-serie med 103 - 115 kW motor og en vekt på 22 000 kg. Konstruert for større og dypere borehull, med høyere kapasitet og kraft.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Marini logotyp",
+          "href": "/produkter/marini",
+          "width": 637,
+          "height": 86,
+          "src": "/assets/img/logo-marini.webp",
+          "gen": true
+        },
+        {
+          "type": "image",
+          "alt": "Marini MR-C 95",
+          "file": "/assets/img/marini-mrc-mr-c-95-iso.webp",
+          "width": 279,
+          "height": 403,
+          "source": "348x379",
+          "src": "/assets/img/marini-mrc-mr-c-95-iso.webp",
+          "gen": true
+        },
+        {
+          "type": "carousel",
+          "autoplay": true,
+          "interval": 6,
+          "items": [
+            {
+              "src": "/assets/img/marini-mrc-mr-c-95-p1.webp",
+              "alt": "Marini MR-C 95 (1/3)",
+              "width": 347,
+              "height": 324
+            },
+            {
+              "src": "/assets/img/marini-mrc-mr-c-95-p2.webp",
+              "alt": "Marini MR-C 95 (2/3)",
+              "width": 343,
+              "height": 328
+            },
+            {
+              "src": "/assets/img/marini-mrc-mr-c-95-photo.webp",
+              "alt": "Marini MR-C 95 (3/3)",
+              "width": 330,
+              "height": 438
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "MR-C 95 er en hydraulisk beltegående borerigg i Marinis MR-C-serie med 103 - 115 kW motor og en vekt på 22 000 kg. Konstruert for større og dypere borehull, med høyere kapasitet og kraft.",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Motoreffekt: 103 - 115 kW (140 - 154 hp)",
+            "Matekraft: 80 kN",
+            "Dreiemoment: 24 000 Nm",
+            "Mastens slaglengde: 2 500 - 7 500 mm",
+            "Vekt: 22 000 kg"
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Boremetoder",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Rotasjonsboring",
+            "Slagboring",
+            "Jet grouting"
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Kontakt oss</a> for pris, leveringstid eller hjelp til å velge riktig modell.",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Kort brosjyre (ENG)",
+          "href": "/assets/docs/marini-crawlers-kort-broschyr-eng.pdf",
+          "driveId": "1ieWNcqMvkkbHi3IYedIFbdB5CFFLiKLR",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Produktkatalog",
+          "href": "/assets/docs/marini-crawlers-produktkatalog.pdf",
+          "driveId": "1ecMiKcn9MMZ4A09FXVKtBN1SAgcdwbvd",
+          "gen": true
+        },
+        {
+          "type": "datasheet",
+          "title": "Tekniske data",
+          "tagline": "Marini MR-C 95",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Spesifikasjoner",
+              "rows": [
+                {
+                  "label": "Motoreffekt",
+                  "metric": "103 - 115 kW",
+                  "us": "140 - 154 hp"
+                },
+                {
+                  "label": "Mastens slaglengde",
+                  "metric": "2 500 - 7 500 mm",
+                  "us": "8,2 - 24,6 ft"
+                },
+                {
+                  "label": "Matekraft",
+                  "metric": "8 000 daN",
+                  "us": "17 637 lbf"
+                },
+                {
+                  "label": "Trekkraft (inndraging)",
+                  "metric": "8 000 daN",
+                  "us": "17 637 lbf"
+                },
+                {
+                  "label": "Dreiemoment, rotasjon",
+                  "metric": "2 400 daNm",
+                  "us": "17 700 ft·lb"
+                },
+                {
+                  "label": "Turtall, rotasjon",
+                  "metric": "40 - 140 rpm"
+                },
+                {
+                  "label": "Klemmeområde",
+                  "metric": "70 - 420 mm",
+                  "us": "2,75 - 16,53 in"
+                },
+                {
+                  "label": "Vekt",
+                  "metric": "22 000 kg",
+                  "us": "48 500 lbs"
+                }
+              ]
+            }
+          ],
+          "note": "",
+          "source": "Opplysningene er hentet fra Marinis katalog og brosjyre (engelsk).",
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 1,
+          "narrow": true,
+          "zoom": true,
+          "more": false,
+          "items": [
+            {
+              "title": "Sideriss",
+              "image": "/assets/img/marini-mrc-mr-c-95-side.webp",
+              "alt": "Sideriss MR-C 95",
+              "text": "Hold musepekeren over tegningen (eller trykk og dra) for 2× forstørrelse.",
+              "file": "/assets/img/marini-mrc-mr-c-95-side.webp",
+              "width": 655,
+              "height": 718
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "related",
+          "title": "Se også",
+          "items": [
+            {
+              "href": "/produkter/marini/crawlers",
+              "mutual": false
+            },
+            {
+              "href": "/produkter/marini/crawlers/mr-c-95p"
+            },
+            {
+              "href": "/produkter/marini/crawlers/mr-c-90"
+            }
+          ],
+          "gen": true
+        }
+      ]
+    }
+  }
+}
