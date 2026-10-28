@@ -175,7 +175,7 @@ http.createServer(async (req, res) => {
     let file = resolveFile(url.pathname);
     let status = 200;
     if (!file) { file = path.join(DIST, "404.html"); status = 404; }
-    if (!fs.existsSync(file)) { res.writeHead(503); return res.end("building…"); }
+    if (!fs.existsSync(file)) { res.writeHead(503, { "Content-Type": "text/plain; charset=utf-8" }); return res.end("building…"); }
     const ext = path.extname(file).toLowerCase();
     const stream = fs.createReadStream(file);
     stream.on("open", () => {
@@ -183,7 +183,7 @@ http.createServer(async (req, res) => {
       stream.pipe(res);
     });
     // the file can vanish while a rebuild replaces dist/: answer instead of hanging
-    stream.on("error", () => { if (!res.headersSent) { res.writeHead(503); res.end("building…"); } else res.destroy(); });
+    stream.on("error", () => { if (!res.headersSent) { res.writeHead(503, { "Content-Type": "text/plain; charset=utf-8" }); res.end("building…"); } else res.destroy(); });
   } catch (e) {
     res.writeHead(500); res.end(String(e && e.message || e));
   }

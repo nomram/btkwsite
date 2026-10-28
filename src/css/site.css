@@ -244,8 +244,8 @@ li:first-child > .subnav__link--logo::after { left: 0; }
 .breadcrumbs [aria-current] { color: var(--muted); }
 .crumbs__logo { flex: none; display: block; }
 .crumbs__logo img { height: var(--crumb-h, 28px); width: auto; max-width: 130px; object-fit: contain; }
-.crumbs__logo[style*="--crumb-logo-w"] img { height: auto; width: var(--crumb-logo-w); max-width: 100%; max-height: var(--crumb-h, 28px); }
-@media (max-width: 560px) { .crumbs__logo img { height: calc(var(--crumb-h, 28px) * .8); max-width: 100px; } }
+.crumbs__logo[style*="--crumb-logo-w"] img { height: var(--crumb-h, 28px); width: auto; max-width: min(100%, var(--crumb-logo-w)); }
+@media (max-width: 560px) { .crumbs__logo img, .crumbs__logo[style*="--crumb-logo-w"] img { height: calc(var(--crumb-h, 28px) * .8); max-width: 100px; } }
 
 /* ---------- content ---------- */
 .page-body { padding-bottom: 2.5rem; }
@@ -1117,7 +1117,13 @@ td.is-sized { font-weight: 700; }
 @media (hover: hover) { .origin__btn:hover { opacity: 1; border-color: var(--muted); color: var(--text); } .origin__btn:hover .origin__more { max-width: 36rem; opacity: 1; } }
 @media (max-width: 700px) { .crumbs:has(.origin) { flex-wrap: wrap; gap: .5rem 1rem; } .origin { max-width: 100%; } .origin__btn { max-width: 100%; text-align: left; } .origin__btn.is-open { border-radius: 14px; flex-wrap: wrap; } .origin__btn.is-open .origin__more { white-space: normal; max-width: 100%; flex-basis: 100%; padding: 0 0 .1rem 1.9rem; } }
 @media (prefers-reduced-motion: reduce) { .origin__more, .origin__btn { transition: none; } }
-/* the round flag shows the middle of a 3:2 flag: Nordic crosses sit toward the hoist, the US flag shows its canton */
+/* brand logo top right with "Product of ..." as a quiet caption line under it (no pill): flag, grey text, a little more on hover */
+.crumbs__brand { flex: none; display: flex; flex-direction: column; align-items: flex-end; gap: .3rem; }
+.crumbs__brand .origin__btn { padding: 0; border: 0; border-radius: 0; background: none; font-size: .74rem; gap: .4rem; }
+.crumbs__brand .origin__btn img { width: 14px; height: 14px; }
+.crumbs__brand .origin__btn:focus-visible, .crumbs__brand .origin__btn.is-open { border-color: transparent; }
+@media (hover: hover) { .crumbs__brand .origin__btn:hover { border-color: transparent; } }
+@media (max-width: 700px) { .crumbs__brand { align-items: flex-start; } .crumbs__brand .origin__btn.is-open { border-radius: 0; } .crumbs__brand .origin__btn.is-open .origin__more { padding-left: 1.4rem; } }/* the round flag shows the middle of a 3:2 flag: Nordic crosses sit toward the hoist, the US flag shows its canton */
 .origin__btn img[src$="/se.svg"], .origin__btn img[src$="/fi.svg"] { object-position: 10% 50%; }
 .origin__btn img[src$="/no.svg"] { object-position: 0% 50%; }
 .origin__btn img[src$="/us.svg"] { object-position: 4% 50%; }
