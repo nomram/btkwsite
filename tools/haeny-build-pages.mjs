@@ -137,7 +137,8 @@ function dataBlocks(l, k, d, { download = true } = {}) {
   let chartBlock = null;
   // a closed box in the chart (the ZMP 936 working range) is an area, not a curve: that chart stays a picture
   const curves = d.chartData ? d.chartData.series.filter((q) => !(q.points.length <= 6 && q.points[0][0] === q.points[q.points.length - 1][0] && q.points[0][1] === q.points[q.points.length - 1][1])) : [];
-  const cd = d.chartData && curves.length ? { ...d.chartData, series: curves } : null;
+  const CHART_AS_IMAGE = new Set(["zmp936"]); // the drawn graph does not reproduce this one: show the brochure's own picture
+  const cd = d.chartData && curves.length && !CHART_AS_IMAGE.has(k) ? { ...d.chartData, series: curves } : null;
   if (cd) {
     chartBlock = { type: "perfchart", title: `${T.perf}: ${d.model}`, hint: PC[l].hint, chipsLabel: PC[l].chips, xName: PC[l].x, yName: PC[l].y, x: cd.x, y: cd.y,
       series: cd.series.map((q) => ({ name: seriesName(l, q.name), color: PC_COLOR[q.color] || q.color, points: q.points.map(([px, py]) => [Math.max(cd.x.min, px), Math.max(cd.y.min, py)]) })), ...(cd.areas ? { areas: cd.areas } : {}),
@@ -147,6 +148,7 @@ function dataBlocks(l, k, d, { download = true } = {}) {
   // after the technical data: the graph and the drawing on one row (stacked on a phone) ...
   if (chartBlock && dimTile) out.push({ type: "columns", ratio: "50-50", left: [chartBlock], right: [{ type: "modules", layout: "tiles", columns: 1, narrow: true, zoom: true, more: false, items: [dimTile] }] });
   else if (chartBlock) out.push(chartBlock);
+  else if (CHART_AS_IMAGE.has(k) && tiles.length === 1 && dimTile) out.push({ type: "columns", ratio: "50-50", left: [{ type: "modules", layout: "tiles", columns: 1, narrow: true, more: false, items: [{ ...tiles[0], title: `${T.perf}: ${d.model}`, width: d.images.chart.width, height: d.images.chart.height }] }], right: [{ type: "modules", layout: "tiles", columns: 1, narrow: true, zoom: true, more: false, items: [dimTile] }] });
   else {
     const all = dimTile ? [...tiles, dimTile] : tiles;
     if (all.length) out.push({ type: "modules", layout: "tiles", columns: Math.min(2, all.length), ...(all.length === 1 ? { narrow: true, zoom: true } : {}), more: false, items: all });

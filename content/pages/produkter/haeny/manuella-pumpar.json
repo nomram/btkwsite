@@ -38,10 +38,6 @@
         },
         {
           "type": "text",
-          "html": "Nedan syns pump-flödesgraferna för respektive pump. Klicka på den pump som är av intresse för att komma till broschyren och få mer info om pumpen."
-        },
-        {
-          "type": "text",
           "html": "<a href=\"/kontakta-oss\">Kontakta oss</a> för mer ytterliggare information."
         },
         {
@@ -257,28 +253,8 @@
           "gen": true
         },
         {
-          "type": "modules",
-          "layout": "tiles",
-          "columns": 3,
-          "more": false,
-          "items": [
-            {
-              "image": "/assets/img/haeny-manuella-pumpar-6.webp",
-              "alt": "Häny - Manuella Betongpumpar (IC), bild 6"
-            },
-            {
-              "image": "/assets/img/haeny-manuella-pumpar-7.webp",
-              "alt": "Häny - Manuella Betongpumpar (IC), bild 7"
-            },
-            {
-              "image": "/assets/img/haeny-manuella-pumpar-8.webp",
-              "alt": "Häny - Manuella Betongpumpar (IC), bild 8"
-            }
-          ]
-        },
-        {
           "type": "text",
-          "html": "Det finns flera varianter av pumpar utöver dessa tre. Nedan anges pumpspecifikationerna i tabellform. <a href=\"/kontakta-oss\">Kontakta oss</a> om du har önskemål eller funderingar."
+          "html": "Det finns flera varianter av pumpar utöver dessa. Nedan anges pumpspecifikationerna i tabellform. <a href=\"/kontakta-oss\">Kontakta oss</a> om du har önskemål eller funderingar."
         },
         {
           "type": "table",
@@ -454,10 +430,6 @@
         {
           "type": "text",
           "html": "The <a href=\"/produkter/haeny/manuella-pumpar/ic-325-ic325-ccp\">IC325</a> variant, unlike the IC310, has two piston pumps, which gives a smoother flow. The maximum pressure is 100 bar and the maximum flow is 2 m³/hour. This model can also be combined with a module for PU injection."
-        },
-        {
-          "type": "text",
-          "html": "Below are the pump flow graphs for each pump. Click the pump of interest to go to the brochure and get more information about the pump."
         },
         {
           "type": "text",
@@ -676,28 +648,8 @@
           "gen": true
         },
         {
-          "type": "modules",
-          "layout": "tiles",
-          "columns": 3,
-          "more": false,
-          "items": [
-            {
-              "image": "/assets/img/haeny-manuella-pumpar-6.webp",
-              "alt": "Häny: Manual concrete pumps (IC), image 6"
-            },
-            {
-              "image": "/assets/img/haeny-manuella-pumpar-7.webp",
-              "alt": "Häny: Manual concrete pumps (IC), image 7"
-            },
-            {
-              "image": "/assets/img/haeny-manuella-pumpar-8.webp",
-              "alt": "Häny: Manual concrete pumps (IC), image 8"
-            }
-          ]
-        },
-        {
           "type": "text",
-          "html": "There are several pump variants beyond these three. The pump specifications are given in table form below. <a href=\"/kontakta-oss\">Contact us</a> if you have any wishes or questions."
+          "html": "There are several pump variants beyond these. The pump specifications are given in table form below. <a href=\"/kontakta-oss\">Contact us</a> if you have any wishes or questions."
         },
         {
           "type": "table",
@@ -873,10 +825,6 @@
         {
           "type": "text",
           "html": "La variante <a href=\"/produkter/haeny/manuella-pumpar/ic-325-ic325-ccp\">IC325</a>, a diferencia del IC310, tiene dos bombas de pistón, lo que proporciona un caudal más uniforme. La presión máxima es de 100 bar y el caudal máximo de 2 m³/hora. Este modelo también puede combinarse con un módulo para inyección de PU."
-        },
-        {
-          "type": "text",
-          "html": "A continuación se muestran los gráficos de caudal de cada bomba. Haga clic en la bomba que le interese para acceder al folleto y obtener más información sobre ella."
         },
         {
           "type": "text",
@@ -1095,28 +1043,8 @@
           "gen": true
         },
         {
-          "type": "modules",
-          "layout": "tiles",
-          "columns": 3,
-          "more": false,
-          "items": [
-            {
-              "image": "/assets/img/haeny-manuella-pumpar-6.webp",
-              "alt": "Häny: Bombas de hormigón manuales (IC), imagen 6"
-            },
-            {
-              "image": "/assets/img/haeny-manuella-pumpar-7.webp",
-              "alt": "Häny: Bombas de hormigón manuales (IC), imagen 7"
-            },
-            {
-              "image": "/assets/img/haeny-manuella-pumpar-8.webp",
-              "alt": "Häny: Bombas de hormigón manuales (IC), imagen 8"
-            }
-          ]
-        },
-        {
           "type": "text",
-          "html": "Existen varias variantes de bombas además de estas tres. A continuación se indican las especificaciones de las bombas en forma de tabla. <a href=\"/kontakta-oss\">Contáctenos</a> si tiene algún deseo o duda."
+          "html": "Existen varias variantes de bombas además de estas. A continuación se indican las especificaciones de las bombas en forma de tabla. <a href=\"/kontakta-oss\">Contáctenos</a> si tiene algún deseo o duda."
         },
         {
           "type": "table",
@@ -1292,10 +1220,6 @@
         {
           "type": "text",
           "html": "Varianten <a href=\"/produkter/haeny/manuella-pumpar/ic-325-ic325-ccp\">IC325</a> har, til forskjell fra IC310, to stempelpumper, noe som gir jevnere flyt. Maksimalt trykk er 100 bar og maksimal flyt er 2 m³/time. Denne modellen kan også kombineres med en modul for PU-injisering."
-        },
-        {
-          "type": "text",
-          "html": "Nedenfor vises pumpe-flytgrafene for hver pumpe. Klikk på pumpen du er interessert i for å komme til brosjyren og få mer info om pumpen."
         },
         {
           "type": "text",
@@ -1514,28 +1438,8 @@
           "gen": true
         },
         {
-          "type": "modules",
-          "layout": "tiles",
-          "columns": 3,
-          "more": false,
-          "items": [
-            {
-              "image": "/assets/img/haeny-manuella-pumpar-6.webp",
-              "alt": "Häny: Manuelle betongpumper (IC), bilde 6"
-            },
-            {
-              "image": "/assets/img/haeny-manuella-pumpar-7.webp",
-              "alt": "Häny: Manuelle betongpumper (IC), bilde 7"
-            },
-            {
-              "image": "/assets/img/haeny-manuella-pumpar-8.webp",
-              "alt": "Häny: Manuelle betongpumper (IC), bilde 8"
-            }
-          ]
-        },
-        {
           "type": "text",
-          "html": "Det finnes flere varianter av pumper utover disse tre. Nedenfor oppgis pumpespesifikasjonene i tabellform. <a href=\"/kontakta-oss\">Kontakt oss</a> hvis du har ønsker eller spørsmål."
+          "html": "Det finnes flere varianter av pumper utover disse. Nedenfor oppgis pumpespesifikasjonene i tabellform. <a href=\"/kontakta-oss\">Kontakt oss</a> hvis du har ønsker eller spørsmål."
         },
         {
           "type": "table",

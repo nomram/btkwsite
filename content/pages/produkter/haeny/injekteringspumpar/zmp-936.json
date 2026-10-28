@@ -188,99 +188,20 @@
           "ratio": "50-50",
           "left": [
             {
-              "type": "perfchart",
-              "title": "Pumpprestanda: ZMP 936",
-              "hint": "Håll muspekaren över diagrammet, tryck på det eller använd piltangenterna för att läsa av värden. Klicka på en kolvstorlek för att dölja eller visa den (dubbelklicka för att visa bara den).",
-              "chipsLabel": "Visa kurvor",
-              "xName": "Tryck",
-              "yName": "Flöde",
-              "x": {
-                "label": "Pressure",
-                "unit": "bar",
-                "min": 0,
-                "max": 60,
-                "step": 10
-              },
-              "y": {
-                "label": "Output",
-                "unit": "l/min",
-                "min": 0,
-                "max": 1000,
-                "step": 100
-              },
-              "series": [
+              "type": "modules",
+              "layout": "tiles",
+              "columns": 1,
+              "narrow": true,
+              "more": false,
+              "items": [
                 {
-                  "name": "#1",
-                  "color": "#2b2b2b",
-                  "points": [
-                    [
-                      0,
-                      996.9
-                    ],
-                    [
-                      0,
-                      0
-                    ],
-                    [
-                      60.1,
-                      0
-                    ],
-                    [
-                      40.1,
-                      200
-                    ],
-                    [
-                      0,
-                      200
-                    ],
-                    [
-                      0,
-                      996.9
-                    ],
-                    [
-                      40.1,
-                      996.9
-                    ],
-                    [
-                      40.1,
-                      200
-                    ]
-                  ]
+                  "title": "Pumpprestanda: ZMP 936",
+                  "image": "/assets/img/haeny-zmp936-chart.webp",
+                  "alt": "Pumpprestanda ZMP 936",
+                  "width": 1053,
+                  "height": 1242
                 }
-              ],
-              "areas": [
-                {
-                  "color": "#ffd900",
-                  "points": [
-                    [
-                      0,
-                      200
-                    ],
-                    [
-                      40.1,
-                      200
-                    ],
-                    [
-                      40.1,
-                      996.9
-                    ],
-                    [
-                      0,
-                      996.9
-                    ],
-                    [
-                      0,
-                      200
-                    ]
-                  ]
-                }
-              ],
-              "alt": {
-                "src": "/assets/img/haeny-zmp936-chart.webp",
-                "text": "Pumpprestanda ZMP 936",
-                "show": "Visa originaldiagrammet från broschyren",
-                "hide": "Dölj originaldiagrammet"
-              }
+              ]
             }
           ],
           "right": [
@@ -532,99 +453,20 @@
           "ratio": "50-50",
           "left": [
             {
-              "type": "perfchart",
-              "title": "Pump performance: ZMP 936",
-              "hint": "Hover over the chart, tap it or use the arrow keys to read values. Click a plunger size to hide or show it (double-click to show only that one).",
-              "chipsLabel": "Show curves",
-              "xName": "Pressure",
-              "yName": "Output",
-              "x": {
-                "label": "Pressure",
-                "unit": "bar",
-                "min": 0,
-                "max": 60,
-                "step": 10
-              },
-              "y": {
-                "label": "Output",
-                "unit": "l/min",
-                "min": 0,
-                "max": 1000,
-                "step": 100
-              },
-              "series": [
+              "type": "modules",
+              "layout": "tiles",
+              "columns": 1,
+              "narrow": true,
+              "more": false,
+              "items": [
                 {
-                  "name": "#1",
-                  "color": "#2b2b2b",
-                  "points": [
-                    [
-                      0,
-                      996.9
-                    ],
-                    [
-                      0,
-                      0
-                    ],
-                    [
-                      60.1,
-                      0
-                    ],
-                    [
-                      40.1,
-                      200
-                    ],
-                    [
-                      0,
-                      200
-                    ],
-                    [
-                      0,
-                      996.9
-                    ],
-                    [
-                      40.1,
-                      996.9
-                    ],
-                    [
-                      40.1,
-                      200
-                    ]
-                  ]
+                  "title": "Pump performance: ZMP 936",
+                  "image": "/assets/img/haeny-zmp936-chart.webp",
+                  "alt": "Pump performance ZMP 936",
+                  "width": 1053,
+                  "height": 1242
                 }
-              ],
-              "areas": [
-                {
-                  "color": "#ffd900",
-                  "points": [
-                    [
-                      0,
-                      200
-                    ],
-                    [
-                      40.1,
-                      200
-                    ],
-                    [
-                      40.1,
-                      996.9
-                    ],
-                    [
-                      0,
-                      996.9
-                    ],
-                    [
-                      0,
-                      200
-                    ]
-                  ]
-                }
-              ],
-              "alt": {
-                "src": "/assets/img/haeny-zmp936-chart.webp",
-                "text": "Pump performance ZMP 936",
-                "show": "Show the original chart from the brochure",
-                "hide": "Hide the original chart"
-              }
+              ]
             }
           ],
           "right": [
@@ -876,99 +718,20 @@
           "ratio": "50-50",
           "left": [
             {
-              "type": "perfchart",
-              "title": "Rendimiento de la bomba: ZMP 936",
-              "hint": "Pase el cursor sobre el gráfico, púlselo o use las flechas del teclado para leer valores. Pulse un tamaño de émbolo para ocultarlo o mostrarlo (doble clic para mostrar solo ese).",
-              "chipsLabel": "Mostrar curvas",
-              "xName": "Presión",
-              "yName": "Caudal",
-              "x": {
-                "label": "Pressure",
-                "unit": "bar",
-                "min": 0,
-                "max": 60,
-                "step": 10
-              },
-              "y": {
-                "label": "Output",
-                "unit": "l/min",
-                "min": 0,
-                "max": 1000,
-                "step": 100
-              },
-              "series": [
+              "type": "modules",
+              "layout": "tiles",
+              "columns": 1,
+              "narrow": true,
+              "more": false,
+              "items": [
                 {
-                  "name": "#1",
-                  "color": "#2b2b2b",
-                  "points": [
-                    [
-                      0,
-                      996.9
-                    ],
-                    [
-                      0,
-                      0
-                    ],
-                    [
-                      60.1,
-                      0
-                    ],
-                    [
-                      40.1,
-                      200
-                    ],
-                    [
-                      0,
-                      200
-                    ],
-                    [
-                      0,
-                      996.9
-                    ],
-                    [
-                      40.1,
-                      996.9
-                    ],
-                    [
-                      40.1,
-                      200
-                    ]
-                  ]
+                  "title": "Rendimiento de la bomba: ZMP 936",
+                  "image": "/assets/img/haeny-zmp936-chart.webp",
+                  "alt": "Rendimiento de la bomba ZMP 936",
+                  "width": 1053,
+                  "height": 1242
                 }
-              ],
-              "areas": [
-                {
-                  "color": "#ffd900",
-                  "points": [
-                    [
-                      0,
-                      200
-                    ],
-                    [
-                      40.1,
-                      200
-                    ],
-                    [
-                      40.1,
-                      996.9
-                    ],
-                    [
-                      0,
-                      996.9
-                    ],
-                    [
-                      0,
-                      200
-                    ]
-                  ]
-                }
-              ],
-              "alt": {
-                "src": "/assets/img/haeny-zmp936-chart.webp",
-                "text": "Rendimiento de la bomba ZMP 936",
-                "show": "Ver el diagrama original del folleto",
-                "hide": "Ocultar el diagrama original"
-              }
+              ]
             }
           ],
           "right": [
@@ -1220,99 +983,20 @@
           "ratio": "50-50",
           "left": [
             {
-              "type": "perfchart",
-              "title": "Pumpeytelse: ZMP 936",
-              "hint": "Hold musepekeren over diagrammet, trykk på det eller bruk piltastene for å lese av verdier. Klikk på en stempelstørrelse for å skjule eller vise den (dobbeltklikk for å vise bare den).",
-              "chipsLabel": "Vis kurver",
-              "xName": "Trykk",
-              "yName": "Ytelse",
-              "x": {
-                "label": "Pressure",
-                "unit": "bar",
-                "min": 0,
-                "max": 60,
-                "step": 10
-              },
-              "y": {
-                "label": "Output",
-                "unit": "l/min",
-                "min": 0,
-                "max": 1000,
-                "step": 100
-              },
-              "series": [
+              "type": "modules",
+              "layout": "tiles",
+              "columns": 1,
+              "narrow": true,
+              "more": false,
+              "items": [
                 {
-                  "name": "#1",
-                  "color": "#2b2b2b",
-                  "points": [
-                    [
-                      0,
-                      996.9
-                    ],
-                    [
-                      0,
-                      0
-                    ],
-                    [
-                      60.1,
-                      0
-                    ],
-                    [
-                      40.1,
-                      200
-                    ],
-                    [
-                      0,
-                      200
-                    ],
-                    [
-                      0,
-                      996.9
-                    ],
-                    [
-                      40.1,
-                      996.9
-                    ],
-                    [
-                      40.1,
-                      200
-                    ]
-                  ]
+                  "title": "Pumpeytelse: ZMP 936",
+                  "image": "/assets/img/haeny-zmp936-chart.webp",
+                  "alt": "Pumpeytelse ZMP 936",
+                  "width": 1053,
+                  "height": 1242
                 }
-              ],
-              "areas": [
-                {
-                  "color": "#ffd900",
-                  "points": [
-                    [
-                      0,
-                      200
-                    ],
-                    [
-                      40.1,
-                      200
-                    ],
-                    [
-                      40.1,
-                      996.9
-                    ],
-                    [
-                      0,
-                      996.9
-                    ],
-                    [
-                      0,
-                      200
-                    ]
-                  ]
-                }
-              ],
-              "alt": {
-                "src": "/assets/img/haeny-zmp936-chart.webp",
-                "text": "Pumpeytelse ZMP 936",
-                "show": "Vis originaldiagrammet fra brosjyren",
-                "hide": "Skjul originaldiagrammet"
-              }
+              ]
             }
           ],
           "right": [
