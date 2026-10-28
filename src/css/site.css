@@ -1063,7 +1063,7 @@ h2[id], h3[id] { scroll-margin-top: 5rem; }
 .table-wrap thead th.tc__pick { white-space: nowrap; }
 .table-wrap thead th.tc__pick, .table-wrap tbody th.tc__pick { padding-right: 1.6rem; }
 /* the tick sits in the top right corner of the heading (it never moves the text) and only shows on hover, or on every heading once something is selected */
-.tc__tog { position: absolute; top: 50%; transform: translateY(-50%); right: .45rem; display: grid; place-items: center; width: .95rem; height: .95rem; margin: 0; padding: 0; border: 1.5px solid currentColor; border-radius: 50%; background: transparent; color: inherit; cursor: pointer; opacity: 0; transition: opacity .12s, background-color .12s, border-color .12s; }
+.tc__tog { position: absolute; top: 50%; transform: translateY(calc(-50% - 1px)); right: .45rem; display: grid; place-items: center; width: .95rem; height: .95rem; margin: 0; padding: 0; border: 1.5px solid currentColor; border-radius: 50%; background: transparent; color: inherit; cursor: pointer; opacity: 0; transition: opacity .12s, background-color .12s, border-color .12s; }
 .tc__tog i { width: .5rem; height: .26rem; margin-top: -.1rem; border-left: 2px solid #fff; border-bottom: 2px solid #fff; transform: rotate(-45deg) scale(0); transition: transform .12s; }
 .tc__pick:hover .tc__tog, .tc__tog:focus-visible, .tc--on .tc__tog { opacity: .75; }
 .tc__tog:focus-visible { opacity: 1; outline: 2px solid var(--primary); outline-offset: 2px; }
