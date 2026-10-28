@@ -37,28 +37,28 @@ function pair(raw, l, key) {
 
 // ---------- texts ----------
 const TX = {
-  sv: { data: "Teknisk data", spec: "Specifikationer", methods: "Borrmetoder", docs: "Dokument", source: "Uppgifterna är hämtade ur Marinis katalog och broschyr (engelska).", side: "Sidovy", sideHint: "Håll muspekaren över ritningen (eller tryck och dra) för 2× förstoring.", variants: "Varianter", up: "Se även", all: "Alla larvriggar", contact: '<a href="/kontakta-oss">Kontakta oss</a> för pris, leveranstid eller hjälp att välja rätt modell.', models: "Modeller", family: "Larvriggar i MR-C-serien",
+  sv: { data: "Teknisk data", spec: "Specifikationer", methods: "Borrmetoder", docs: "Dokument", source: "Uppgifterna är hämtade ur Marinis produktkatalog (engelska).", side: "Sidovy", sideHint: "Håll muspekaren över ritningen (eller tryck och dra) för 2× förstoring.", variants: "Varianter", up: "Se även", all: "Alla larvriggar", contact: '<a href="/kontakta-oss">Kontakta oss</a> för pris, leveranstid eller hjälp att välja rätt modell.', models: "Modeller", family: "Larvriggar i MR-C-serien",
     lab: { engine: "Motoreffekt", stroke: "Mastens slaglängd", feed: "Matningskraft", retract: "Dragkraft (indragning)", torque: "Vridmoment, rotation", speed: "Varvtal, rotation", clamp: "Klämområde", weight: "Vikt" },
     key: { engine: "Motoreffekt", feed: "Matningskraft", torque: "Vridmoment", weight: "Vikt", stroke: "Mastens slaglängd" },
     meth: { rotation: "Rotationsborrning", percussion: "Slagborrning", doubleHead: "Dubbelhuvud (två borrhuvuden)", jet: "Jet grouting", hollow: "Slagborrning med självborrande stänger (hollow bar)" },
     intro: (d, e, w) => `${d} är en hydraulisk larvrigg ur Marinis MR-C-serie med ${e} motor och en vikt på ${w}.`,
     A: "A efter modellnumret står för Attachment: masten är avtagbar, vilket gör riggen lättare att transportera.", P: "P efter modellnumret står för Power: en kraftfullare version av modellen med högre motoreffekt.",
     use: { small: "Kompakt och kraftfull nog för mindre projekt.", indoor: "Optimal modell, specialanpassad för inomhusarbete.", big: "Konstruerad för större och djupare borrhål, med högre kapacitet och kraft." } },
-  en: { data: "Technical data", spec: "Specifications", methods: "Drilling methods", docs: "Documents", source: "Information taken from Marini's catalogue and brochure.", side: "Side view", sideHint: "Hover over the drawing (or touch and drag) for a 2× magnifier.", variants: "Variants", up: "See also", all: "All crawler rigs", contact: '<a href="/kontakta-oss">Contact us</a> for price, delivery time or help choosing the right model.', models: "Models", family: "Crawler drill rigs of the MR-C line",
+  en: { data: "Technical data", spec: "Specifications", methods: "Drilling methods", docs: "Documents", source: "Information taken from Marini's product catalogue.", side: "Side view", sideHint: "Hover over the drawing (or touch and drag) for a 2× magnifier.", variants: "Variants", up: "See also", all: "All crawler rigs", contact: '<a href="/kontakta-oss">Contact us</a> for price, delivery time or help choosing the right model.', models: "Models", family: "Crawler drill rigs of the MR-C line",
     lab: { engine: "Engine power", stroke: "Mast stroke", feed: "Feed force", retract: "Retract force", torque: "Rotary torque", speed: "Rotary speed range", clamp: "Clamp range", weight: "Weight" },
     key: { engine: "Engine power", feed: "Feed force", torque: "Rotary torque", weight: "Weight", stroke: "Mast stroke" },
     meth: { rotation: "Rotation drilling", percussion: "Percussion drilling", doubleHead: "Double head (two drill heads)", jet: "Jet grouting", hollow: "Percussion drilling with hollow bars" },
     intro: (d, e, w) => `${d} is a hydraulic crawler drill rig from Marini's MR-C line with a ${e} engine and a weight of ${w}.`,
     A: "The A after the model number stands for Attachment: the mast can be removed, which makes the rig easier to transport.", P: "The P after the model number stands for Power: a stronger version of the model with a higher engine output.",
     use: { small: "Compact and powerful enough for smaller projects.", indoor: "The optimal model, specially adapted for indoor work.", big: "Built for larger and deeper holes, with higher capacity and force." } },
-  es: { data: "Datos técnicos", spec: "Especificaciones", methods: "Métodos de perforación", docs: "Documentos", source: "Información tomada del catálogo y del folleto de Marini.", side: "Vista lateral", sideHint: "Pase el cursor sobre el plano (o toque y arrastre) para una lupa 2×.", variants: "Variantes", up: "Véase también", all: "Todas las perforadoras de orugas", contact: '<a href="/kontakta-oss">Contáctenos</a> para precio, plazo de entrega o ayuda para elegir el modelo adecuado.', models: "Modelos", family: "Perforadoras de orugas de la serie MR-C",
+  es: { data: "Datos técnicos", spec: "Especificaciones", methods: "Métodos de perforación", docs: "Documentos", source: "Información tomada del catálogo de productos de Marini.", side: "Vista lateral", sideHint: "Pase el cursor sobre el plano (o toque y arrastre) para una lupa 2×.", variants: "Variantes", up: "Véase también", all: "Todas las perforadoras de orugas", contact: '<a href="/kontakta-oss">Contáctenos</a> para precio, plazo de entrega o ayuda para elegir el modelo adecuado.', models: "Modelos", family: "Perforadoras de orugas de la serie MR-C",
     lab: { engine: "Potencia del motor", stroke: "Carrera del mástil", feed: "Fuerza de empuje", retract: "Fuerza de retroceso", torque: "Par de rotación", speed: "Velocidad de rotación", clamp: "Rango de mordaza", weight: "Peso" },
     key: { engine: "Potencia del motor", feed: "Fuerza de empuje", torque: "Par de rotación", weight: "Peso", stroke: "Carrera del mástil" },
     meth: { rotation: "Perforación a rotación", percussion: "Perforación a percusión", doubleHead: "Doble cabezal (dos cabezales de perforación)", jet: "Jet grouting", hollow: "Perforación a percusión con barras huecas" },
     intro: (d, e, w) => `${d} es una perforadora hidráulica de orugas de la serie MR-C de Marini, con motor de ${e} y un peso de ${w}.`,
     A: "La A tras el número del modelo significa Attachment: el mástil es desmontable, lo que facilita el transporte de la máquina.", P: "La P tras el número del modelo significa Power: una versión más potente del modelo, con mayor potencia de motor.",
     use: { small: "Compacta y lo bastante potente para proyectos pequeños.", indoor: "El modelo óptimo, adaptado especialmente para trabajos en interiores.", big: "Diseñada para barrenos más grandes y profundos, con mayor capacidad y fuerza." } },
-  no: { data: "Tekniske data", spec: "Spesifikasjoner", methods: "Boremetoder", docs: "Dokumenter", source: "Opplysningene er hentet fra Marinis katalog og brosjyre (engelsk).", side: "Sideriss", sideHint: "Hold musepekeren over tegningen (eller trykk og dra) for 2× forstørrelse.", variants: "Varianter", up: "Se også", all: "Alle beltegående borerigger", contact: '<a href="/kontakta-oss">Kontakt oss</a> for pris, leveringstid eller hjelp til å velge riktig modell.', models: "Modeller", family: "Beltegående borerigger i MR-C-serien",
+  no: { data: "Tekniske data", spec: "Spesifikasjoner", methods: "Boremetoder", docs: "Dokumenter", source: "Opplysningene er hentet fra Marinis produktkatalog (engelsk).", side: "Sideriss", sideHint: "Hold musepekeren over tegningen (eller trykk og dra) for 2× forstørrelse.", variants: "Varianter", up: "Se også", all: "Alle beltegående borerigger", contact: '<a href="/kontakta-oss">Kontakt oss</a> for pris, leveringstid eller hjelp til å velge riktig modell.', models: "Modeller", family: "Beltegående borerigger i MR-C-serien",
     lab: { engine: "Motoreffekt", stroke: "Mastens slaglengde", feed: "Matekraft", retract: "Trekkraft (inndraging)", torque: "Dreiemoment, rotasjon", speed: "Turtall, rotasjon", clamp: "Klemmeområde", weight: "Vekt" },
     key: { engine: "Motoreffekt", feed: "Matekraft", torque: "Dreiemoment", weight: "Vekt", stroke: "Mastens slaglengde" },
     meth: { rotation: "Rotasjonsboring", percussion: "Slagboring", doubleHead: "Dobbelthode (to borhoder)", jet: "Jet grouting", hollow: "Slagboring med hule stenger (hollow bar)" },
@@ -90,7 +90,7 @@ const writeJson = (f, o) => { fs.mkdirSync(path.dirname(f), { recursive: true })
 const bullet = (l, m) => {
   const s = metricOf(m.spec), T = TX[l];
   const out = [];
-  out.push(`${T.key.engine}: ${rng(s.engine, l)} kW (${rng(hpOf(m.spec), l)} hp)`);
+  out.push(`${T.key.engine}: ${rng(s.engine, l)} kW`);
   out.push(`${T.key.feed}: ${rng(s.feed, l, (x) => x / 100)} kN`);
   out.push(`${T.key.torque}: ${rng(s.torque, l, (x) => x * 10)} Nm`);
   out.push(`${T.key.stroke}: ${rng(s.stroke, l)} mm`);
@@ -112,8 +112,8 @@ for (const m of DATA.models) {
     const methods = [];
     for (const k of ["rotation", "percussion", "doubleHead", "jet"]) if (m.apps[k]) methods.push(T.meth[k]);
     if (m.hollowBars) methods.push(T.meth.hollow);
-    const rows = Object.keys(T.lab).map((k) => ({ label: T.lab[k], ...pair(m.spec[k], l, k) })).map((r) => ({ label: r.label, metric: r.metric, ...(r.us ? { us: r.us } : {}) }));
-    const docsBlocks = fam.i18n[l].blocks.filter((b) => b.type === "button" && b.kind === "download");
+    const rows = Object.keys(T.lab).map((k) => ({ label: T.lab[k], metric: pair(m.spec[k], l, k).metric })); // metric only, the catalogue's imperial figures are left out
+    const docsBlocks = fam.i18n[l].blocks.filter((b) => b.type === "button" && b.kind === "download" && /produktkatalog/.test(b.href)); // the full catalogue, not the short brochure
     const blocks = [
       { type: "image", alt: "Marini logotyp", href: "/produkter/marini", width: 637, height: 86, src: "/assets/img/logo-marini.webp" },
       { type: "image", alt: `Marini ${m.name}`, ...iso, src: iso.file },
@@ -139,13 +139,13 @@ const tileItems = async (l) => Promise.all(DATA.models.map(async (m) => ({ title
 const tableRows = (head) => {
   const plain = (s, f) => nums(s).map((x) => Math.round(f(x) * 100) / 100);
   const join = (a, sp) => a.join(sp);
-  return [head, ...DATA.models.map((m) => {
+  return [head.filter((h) => !/horsepower|\bhp\b|hästkrafter|caballos|hestekrefter/i.test(h)), ...DATA.models.map((m) => {
     const s = metricOf(m.spec), id = (x) => x;
-    return [m.name, join(plain(s.feed, (x) => x / 100), "-"), join(plain(s.engine, id), "-"), join(plain(hpOf(m.spec), id), "-"), join(plain(s.weight, id), " + "), join(plain(s.stroke, id), " - "), join(plain(s.torque, (x) => x * 10), " - "), join(plain(s.speed, id), " - "), join(plain(s.clamp, id), " - ")];
+    return [m.name, join(plain(s.feed, (x) => x / 100), "-"), join(plain(s.engine, id), "-"), join(plain(s.weight, id), " + "), join(plain(s.stroke, id), " - "), join(plain(s.torque, (x) => x * 10), " - "), join(plain(s.speed, id), " - "), join(plain(s.clamp, id), " - ")];
   })];
 };
 for (const l of LANGS) {
-  const bl = fam.i18n[l].blocks.filter((b) => !(b.gen && b.type !== "table")); // (the table stays where it is and is rebuilt in place)
+  const bl = fam.i18n[l].blocks.filter((b) => !(b.gen && b.type !== "table") && !(b.type === "button" && /kort-broschyr/.test(b.href || ""))); // (the table stays where it is and is rebuilt in place)
   const ti = bl.findIndex((b) => b.type === "table");
   const old = bl[ti];
   bl[ti] = { ...old, rows: tableRows(old.rows[0]), links: DATA.models.map((m) => pathOf(m.slug)), gen: true };

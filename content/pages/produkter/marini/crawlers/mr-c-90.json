@@ -1,6 +1,6 @@
 {
   "path": "/produkter/marini/crawlers/mr-c-90",
-  "updated": "2026-10-27",
+  "updated": "2026-10-28",
   "template": "product",
   "order": 11,
   "published": true,
@@ -61,7 +61,7 @@
           "type": "list",
           "ordered": false,
           "items": [
-            "Motoreffekt: 103 - 115 kW (140 - 154 hp)",
+            "Motoreffekt: 103 - 115 kW",
             "Matningskraft: 60 kN",
             "Vridmoment: 16 000 Nm",
             "Mastens slaglängd: 1 800 - 3 500 mm",
@@ -93,14 +93,6 @@
         {
           "type": "button",
           "kind": "download",
-          "text": "Kort Broschyr (ENG)",
-          "href": "/assets/docs/marini-crawlers-kort-broschyr-eng.pdf",
-          "driveId": "1ieWNcqMvkkbHi3IYedIFbdB5CFFLiKLR",
-          "gen": true
-        },
-        {
-          "type": "button",
-          "kind": "download",
           "text": "Produktkatalog",
           "href": "/assets/docs/marini-crawlers-produktkatalog.pdf",
           "driveId": "1ecMiKcn9MMZ4A09FXVKtBN1SAgcdwbvd",
@@ -117,28 +109,23 @@
               "rows": [
                 {
                   "label": "Motoreffekt",
-                  "metric": "103 - 115 kW",
-                  "us": "140 - 154 hp"
+                  "metric": "103 - 115 kW"
                 },
                 {
                   "label": "Mastens slaglängd",
-                  "metric": "1 800 - 3 500 mm",
-                  "us": "5,9 - 11,5 ft"
+                  "metric": "1 800 - 3 500 mm"
                 },
                 {
                   "label": "Matningskraft",
-                  "metric": "6 000 daN",
-                  "us": "13 330 lbf"
+                  "metric": "6 000 daN"
                 },
                 {
                   "label": "Dragkraft (indragning)",
-                  "metric": "6 000 daN",
-                  "us": "13 330 lbf"
+                  "metric": "6 000 daN"
                 },
                 {
                   "label": "Vridmoment, rotation",
-                  "metric": "1 600 daNm",
-                  "us": "11 800 ft·lb"
+                  "metric": "1 600 daNm"
                 },
                 {
                   "label": "Varvtal, rotation",
@@ -146,19 +133,17 @@
                 },
                 {
                   "label": "Klämområde",
-                  "metric": "25 - 330 mm",
-                  "us": "0,98 - 13 in"
+                  "metric": "25 - 330 mm"
                 },
                 {
                   "label": "Vikt",
-                  "metric": "14 500 kg",
-                  "us": "31 970 lbs"
+                  "metric": "14 500 kg"
                 }
               ]
             }
           ],
           "note": "",
-          "source": "Uppgifterna är hämtade ur Marinis katalog och broschyr (engelska).",
+          "source": "Uppgifterna är hämtade ur Marinis produktkatalog (engelska).",
           "gen": true
         },
         {
@@ -263,7 +248,7 @@
           "type": "list",
           "ordered": false,
           "items": [
-            "Engine power: 103 - 115 kW (140 - 154 hp)",
+            "Engine power: 103 - 115 kW",
             "Feed force: 60 kN",
             "Rotary torque: 16,000 Nm",
             "Mast stroke: 1,800 - 3,500 mm",
@@ -295,14 +280,6 @@
         {
           "type": "button",
           "kind": "download",
-          "text": "Short brochure (ENG)",
-          "href": "/assets/docs/marini-crawlers-kort-broschyr-eng.pdf",
-          "driveId": "1ieWNcqMvkkbHi3IYedIFbdB5CFFLiKLR",
-          "gen": true
-        },
-        {
-          "type": "button",
-          "kind": "download",
           "text": "Product catalogue",
           "href": "/assets/docs/marini-crawlers-produktkatalog.pdf",
           "driveId": "1ecMiKcn9MMZ4A09FXVKtBN1SAgcdwbvd",
@@ -319,28 +296,23 @@
               "rows": [
                 {
                   "label": "Engine power",
-                  "metric": "103 - 115 kW",
-                  "us": "140 - 154 hp"
+                  "metric": "103 - 115 kW"
                 },
                 {
                   "label": "Mast stroke",
-                  "metric": "1,800 - 3,500 mm",
-                  "us": "5.9 - 11.5 ft"
+                  "metric": "1,800 - 3,500 mm"
                 },
                 {
                   "label": "Feed force",
-                  "metric": "6,000 daN",
-                  "us": "13,330 lbf"
+                  "metric": "6,000 daN"
                 },
                 {
                   "label": "Retract force",
-                  "metric": "6,000 daN",
-                  "us": "13,330 lbf"
+                  "metric": "6,000 daN"
                 },
                 {
                   "label": "Rotary torque",
-                  "metric": "1,600 daNm",
-                  "us": "11,800 ft·lb"
+                  "metric": "1,600 daNm"
                 },
                 {
                   "label": "Rotary speed range",
@@ -348,19 +320,17 @@
                 },
                 {
                   "label": "Clamp range",
-                  "metric": "25 - 330 mm",
-                  "us": "0.98 - 13 in"
+                  "metric": "25 - 330 mm"
                 },
                 {
                   "label": "Weight",
-                  "metric": "14,500 kg",
-                  "us": "31,970 lbs"
+                  "metric": "14,500 kg"
                 }
               ]
             }
           ],
           "note": "",
-          "source": "Information taken from Marini's catalogue and brochure.",
+          "source": "Information taken from Marini's product catalogue.",
           "gen": true
         },
         {
@@ -465,7 +435,7 @@
           "type": "list",
           "ordered": false,
           "items": [
-            "Potencia del motor: 103 - 115 kW (140 - 154 hp)",
+            "Potencia del motor: 103 - 115 kW",
             "Fuerza de empuje: 60 kN",
             "Par de rotación: 16.000 Nm",
             "Carrera del mástil: 1.800 - 3.500 mm",
@@ -497,14 +467,6 @@
         {
           "type": "button",
           "kind": "download",
-          "text": "Folleto breve (ENG)",
-          "href": "/assets/docs/marini-crawlers-kort-broschyr-eng.pdf",
-          "driveId": "1ieWNcqMvkkbHi3IYedIFbdB5CFFLiKLR",
-          "gen": true
-        },
-        {
-          "type": "button",
-          "kind": "download",
           "text": "Catálogo de productos",
           "href": "/assets/docs/marini-crawlers-produktkatalog.pdf",
           "driveId": "1ecMiKcn9MMZ4A09FXVKtBN1SAgcdwbvd",
@@ -521,28 +483,23 @@
               "rows": [
                 {
                   "label": "Potencia del motor",
-                  "metric": "103 - 115 kW",
-                  "us": "140 - 154 hp"
+                  "metric": "103 - 115 kW"
                 },
                 {
                   "label": "Carrera del mástil",
-                  "metric": "1.800 - 3.500 mm",
-                  "us": "5,9 - 11,5 ft"
+                  "metric": "1.800 - 3.500 mm"
                 },
                 {
                   "label": "Fuerza de empuje",
-                  "metric": "6.000 daN",
-                  "us": "13.330 lbf"
+                  "metric": "6.000 daN"
                 },
                 {
                   "label": "Fuerza de retroceso",
-                  "metric": "6.000 daN",
-                  "us": "13.330 lbf"
+                  "metric": "6.000 daN"
                 },
                 {
                   "label": "Par de rotación",
-                  "metric": "1.600 daNm",
-                  "us": "11.800 ft·lb"
+                  "metric": "1.600 daNm"
                 },
                 {
                   "label": "Velocidad de rotación",
@@ -550,19 +507,17 @@
                 },
                 {
                   "label": "Rango de mordaza",
-                  "metric": "25 - 330 mm",
-                  "us": "0,98 - 13 in"
+                  "metric": "25 - 330 mm"
                 },
                 {
                   "label": "Peso",
-                  "metric": "14.500 kg",
-                  "us": "31.970 lbs"
+                  "metric": "14.500 kg"
                 }
               ]
             }
           ],
           "note": "",
-          "source": "Información tomada del catálogo y del folleto de Marini.",
+          "source": "Información tomada del catálogo de productos de Marini.",
           "gen": true
         },
         {
@@ -667,7 +622,7 @@
           "type": "list",
           "ordered": false,
           "items": [
-            "Motoreffekt: 103 - 115 kW (140 - 154 hp)",
+            "Motoreffekt: 103 - 115 kW",
             "Matekraft: 60 kN",
             "Dreiemoment: 16 000 Nm",
             "Mastens slaglengde: 1 800 - 3 500 mm",
@@ -699,14 +654,6 @@
         {
           "type": "button",
           "kind": "download",
-          "text": "Kort brosjyre (ENG)",
-          "href": "/assets/docs/marini-crawlers-kort-broschyr-eng.pdf",
-          "driveId": "1ieWNcqMvkkbHi3IYedIFbdB5CFFLiKLR",
-          "gen": true
-        },
-        {
-          "type": "button",
-          "kind": "download",
           "text": "Produktkatalog",
           "href": "/assets/docs/marini-crawlers-produktkatalog.pdf",
           "driveId": "1ecMiKcn9MMZ4A09FXVKtBN1SAgcdwbvd",
@@ -723,28 +670,23 @@
               "rows": [
                 {
                   "label": "Motoreffekt",
-                  "metric": "103 - 115 kW",
-                  "us": "140 - 154 hp"
+                  "metric": "103 - 115 kW"
                 },
                 {
                   "label": "Mastens slaglengde",
-                  "metric": "1 800 - 3 500 mm",
-                  "us": "5,9 - 11,5 ft"
+                  "metric": "1 800 - 3 500 mm"
                 },
                 {
                   "label": "Matekraft",
-                  "metric": "6 000 daN",
-                  "us": "13 330 lbf"
+                  "metric": "6 000 daN"
                 },
                 {
                   "label": "Trekkraft (inndraging)",
-                  "metric": "6 000 daN",
-                  "us": "13 330 lbf"
+                  "metric": "6 000 daN"
                 },
                 {
                   "label": "Dreiemoment, rotasjon",
-                  "metric": "1 600 daNm",
-                  "us": "11 800 ft·lb"
+                  "metric": "1 600 daNm"
                 },
                 {
                   "label": "Turtall, rotasjon",
@@ -752,19 +694,17 @@
                 },
                 {
                   "label": "Klemmeområde",
-                  "metric": "25 - 330 mm",
-                  "us": "0,98 - 13 in"
+                  "metric": "25 - 330 mm"
                 },
                 {
                   "label": "Vekt",
-                  "metric": "14 500 kg",
-                  "us": "31 970 lbs"
+                  "metric": "14 500 kg"
                 }
               ]
             }
           ],
           "note": "",
-          "source": "Opplysningene er hentet fra Marinis katalog og brosjyre (engelsk).",
+          "source": "Opplysningene er hentet fra Marinis produktkatalog (engelsk).",
           "gen": true
         },
         {
