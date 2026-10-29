@@ -1,0 +1,1172 @@
+{
+  "path": "/produkter/weber/exm-725",
+  "updated": "2026-10-29",
+  "template": "product",
+  "order": 9,
+  "published": true,
+  "hero": {
+    "image": "/assets/img/reed-hero.webp"
+  },
+  "i18n": {
+    "sv": {
+      "title": "EXM 725",
+      "h1": "weber EXM 725",
+      "description": "weber EXM 725 (expanderbetong grov, anläggning) är en torrbetong som blandas bara med vatten till ett användningsfärdigt, lättrinnande, expanderande och frostbeständigt undergjutningsbruk.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "weber logotyp",
+          "href": "/produkter/weber",
+          "width": 880,
+          "height": 262,
+          "src": "/assets/img/weber-logo.webp",
+          "gen": true
+        },
+        {
+          "type": "image",
+          "alt": "weber EXM 725",
+          "src": "/assets/img/weber-exm-725-main.webp",
+          "width": 735,
+          "height": 1048,
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "weber EXM 725 (expanderbetong grov, anläggning) är en torrbetong som blandas bara med vatten till ett användningsfärdigt, lättrinnande, expanderande och frostbeständigt undergjutningsbruk. Tryckhållfasthetsklass C50/60. Anläggningscementet är lågalkaliskt och gör produkten sulfatbeständig. Använd i många stora anläggningsprojekt och certifierad enligt CR 059, CE-märkt enligt EN 1504-6.",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Pumpbar",
+            "Sulfatresistent",
+            "Uppfyller kraven enligt AMA Anläggning",
+            "Skikt 30-300 mm, särskilt där total utfyllnad krävs",
+            "Certifierad enligt CR 059",
+            "Registrerad i BASTA, bedömd Accepteras i Byggvarubedömningen"
+          ],
+          "gen": true
+        },
+        {
+          "type": "stat",
+          "label": "Åtgång",
+          "value": "ca 2,1 kg/l",
+          "unit": "färdigt bruk",
+          "meta": "skikt 30-300 mm",
+          "note": "Utbyte ca 9,5 liter per 20 kg säck, vattenbehov 2,2 liter.",
+          "usage": true,
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Tekniskt datablad (TDS)",
+          "href": "/assets/docs/weber-exm-725-tekniskt-datablad.pdf",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Säkerhetsdatablad (SDS)",
+          "href": "/assets/docs/weber-exm-725-sakerhetsdatablad.pdf",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Prestandadeklaration (DoP)",
+          "href": "/assets/docs/weber-exm-725-prestandadeklaration.pdf",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Miljövarudeklaration (EPD)",
+          "href": "/assets/docs/weber-exm-725-epd.pdf",
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Användningsområden",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Undergjutning, fastgjutning och kringgjutning av brolager, cisterner m.m.",
+            "Skikttjocklekar 30-300 mm, särskilt där total utfyllnad krävs",
+            "Horisontella betonglagningar och injekteringsarbeten",
+            "Lättflytande konsistens, lämplig för pumpning. Använd i bland annat Storebältsbron, Öresundsbron och Citybanan"
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Begränsningar",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Använd inte när temperaturen riskerar att gå under +5 °C"
+          ],
+          "gen": true
+        },
+        {
+          "type": "datasheet",
+          "title": "Teknisk data",
+          "tagline": "weber EXM 725",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Applicering",
+              "rows": [
+                {
+                  "label": "Vattenbehov",
+                  "metric": "2,2 l / 20 kg"
+                },
+                {
+                  "label": "Utbyte",
+                  "metric": "ca 9,5 l / 20 kg"
+                },
+                {
+                  "label": "Skikttjocklek",
+                  "metric": "30-300 mm"
+                },
+                {
+                  "label": "Appliceringstemperatur",
+                  "metric": ">+5 °C"
+                },
+                {
+                  "label": "Användningstid",
+                  "metric": "ca 30 min (20 °C / 50 % RF)"
+                },
+                {
+                  "label": "Öppentid",
+                  "metric": "0,5 N/mm² efter 200 min enl. SS 137126"
+                },
+                {
+                  "label": "Börjar härda",
+                  "metric": "ca 4 tim"
+                },
+                {
+                  "label": "Konsistens",
+                  "metric": "365-445 mm enl. SP-metod 1651"
+                }
+              ]
+            },
+            {
+              "title": "Material",
+              "rows": [
+                {
+                  "label": "Bindemedel",
+                  "metric": "CEM I Portlandcement"
+                },
+                {
+                  "label": "Cementtyp och -klass",
+                  "metric": "CEM I 42,5 N MH/SR 3/LA enl. EN 197-1"
+                },
+                {
+                  "label": "Ballast",
+                  "metric": "Natursand 0-4 mm"
+                }
+              ]
+            },
+            {
+              "title": "Hållfasthet och beständighet",
+              "rows": [
+                {
+                  "label": "Tryckhållfasthetsklass",
+                  "metric": "C50/60 enl. SS-EN 206-1"
+                },
+                {
+                  "label": "Tryckhållfasthet 1 dygn",
+                  "metric": "≥20 MPa enl. EN 12190"
+                },
+                {
+                  "label": "Tryckhållfasthet 7 dygn",
+                  "metric": "≥40 MPa enl. EN 12190"
+                },
+                {
+                  "label": "Tryckhållfasthet 28 dygn",
+                  "metric": "≥60 MPa enl. EN 12190"
+                },
+                {
+                  "label": "Krympning",
+                  "metric": "<0,8 ‰ efter 28 dygn, 1,2 ‰ efter 231 dygn (SS 137215)"
+                },
+                {
+                  "label": "Exponeringsklass",
+                  "metric": "X0 / XC4 / XS3 / XD3 / XF4 / XA2 enl. SS-EN 206-1"
+                },
+                {
+                  "label": "Resistivitet (våtlagrad)",
+                  "metric": "10 000 Ωcm"
+                },
+                {
+                  "label": "Frostbeständighet",
+                  "metric": "mycket god (SS 137244, klass 1A)"
+                },
+                {
+                  "label": "Vattentäthet",
+                  "metric": "Ja (SS 137214)"
+                },
+                {
+                  "label": "Lufthalt",
+                  "metric": "ca 2-5 % enl. SS-EN 1015-7"
+                },
+                {
+                  "label": "Kloridhalt",
+                  "metric": "≤0,1 % enl. SS-EN 196-2"
+                },
+                {
+                  "label": "Expansion",
+                  "metric": "0,5-2,5 % enl. SS-EN 137540"
+                },
+                {
+                  "label": "Vattencementtal (VCT)",
+                  "metric": "ca 0,31"
+                }
+              ]
+            },
+            {
+              "title": "Förpackning och miljö",
+              "rows": [
+                {
+                  "label": "Förpackning",
+                  "metric": "20 kg säck, 1 000 kg storsäck"
+                },
+                {
+                  "label": "CE-märkning",
+                  "metric": "EN 1504-6"
+                },
+                {
+                  "label": "P-märkning",
+                  "metric": "Klass CR 059"
+                },
+                {
+                  "label": "Klimatpåverkan (GWP, EPD A1-A3)",
+                  "metric": "0,328 kg CO₂e/kg"
+                },
+                {
+                  "label": "Lagring",
+                  "metric": "Torrt och frostfritt, 12 månader"
+                }
+              ]
+            }
+          ],
+          "note": "",
+          "source": "Uppgifterna är hämtade ur Webers produktblad (svenska).",
+          "gen": true
+        },
+        {
+          "type": "video",
+          "provider": "youtube",
+          "id": "R2Eb6eQ8GOQ",
+          "title": "weber: Hur man gjuter fast ett brofundament med betong",
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Kontakta oss</a> för pris, leveranstid och mer information.",
+          "gen": true
+        },
+        {
+          "type": "related",
+          "title": "Se även",
+          "items": [
+            {
+              "href": "/produkter/weber",
+              "mutual": false
+            },
+            {
+              "href": "/produkter/weber/exm-701"
+            },
+            {
+              "href": "/produkter/weber/exm-702"
+            },
+            {
+              "href": "/produkter/weber/exm-703"
+            }
+          ],
+          "gen": true
+        }
+      ]
+    },
+    "en": {
+      "title": "EXM 725",
+      "h1": "weber EXM 725",
+      "description": "weber EXM 725 (coarse expanding concrete, civil engineering) is a dry concrete that is mixed with water only into a ready-to-use, free-flowing, expanding and frost-resistant grout.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "weber logotyp",
+          "href": "/produkter/weber",
+          "width": 880,
+          "height": 262,
+          "src": "/assets/img/weber-logo.webp",
+          "gen": true
+        },
+        {
+          "type": "image",
+          "alt": "weber EXM 725",
+          "src": "/assets/img/weber-exm-725-main.webp",
+          "width": 735,
+          "height": 1048,
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "weber EXM 725 (coarse expanding concrete, civil engineering) is a dry concrete that is mixed with water only into a ready-to-use, free-flowing, expanding and frost-resistant grout. Compressive strength class C50/60. The civil-engineering cement is low-alkali and makes the product sulphate resistant. Used in many large civil-engineering projects, certified to CR 059 and CE marked to EN 1504-6.",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Pumpable",
+            "Sulphate resistant",
+            "Meets the requirements of AMA Anläggning",
+            "Layers 30-300 mm, especially where complete filling is required",
+            "Certified to CR 059",
+            "Registered in BASTA, rated Accepted in Byggvarubedömningen"
+          ],
+          "gen": true
+        },
+        {
+          "type": "stat",
+          "label": "Consumption",
+          "value": "approx. 2.1 kg/l",
+          "unit": "of mixed mortar",
+          "meta": "layers 30-300 mm",
+          "note": "Yield approx. 9.5 litres per 20 kg bag, water demand 2.2 litres.",
+          "usage": true,
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Technical data sheet (TDS)",
+          "href": "/assets/docs/weber-exm-725-tekniskt-datablad.pdf",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Safety data sheet (SDS)",
+          "href": "/assets/docs/weber-exm-725-sakerhetsdatablad.pdf",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Declaration of performance (DoP)",
+          "href": "/assets/docs/weber-exm-725-prestandadeklaration.pdf",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Environmental product declaration (EPD)",
+          "href": "/assets/docs/weber-exm-725-epd.pdf",
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Areas of use",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Grouting under, casting in and around bridge bearings, tanks etc.",
+            "Layer thicknesses of 30-300 mm, especially where complete filling is required",
+            "Horizontal concrete repairs and injection work",
+            "Flowable consistency, suitable for pumping. Used in, among others, the Great Belt Bridge, the Øresund Bridge and the Stockholm City Line"
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Limitations",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Do not use when the temperature may fall below +5 °C"
+          ],
+          "gen": true
+        },
+        {
+          "type": "datasheet",
+          "title": "Technical data",
+          "tagline": "weber EXM 725",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Application",
+              "rows": [
+                {
+                  "label": "Water demand",
+                  "metric": "2.2 l / 20 kg"
+                },
+                {
+                  "label": "Yield",
+                  "metric": "approx. 9.5 l / 20 kg"
+                },
+                {
+                  "label": "Layer thickness",
+                  "metric": "30-300 mm"
+                },
+                {
+                  "label": "Application temperature",
+                  "metric": ">+5 °C"
+                },
+                {
+                  "label": "Working time",
+                  "metric": "approx. 30 min (20 °C / 50 % RF)"
+                },
+                {
+                  "label": "Open time",
+                  "metric": "0.5 N/mm² efter 200 min acc. to SS 137126"
+                },
+                {
+                  "label": "Starts to harden",
+                  "metric": "approx. 4 tim"
+                },
+                {
+                  "label": "Consistency",
+                  "metric": "365-445 mm acc. to SP-metod 1651"
+                }
+              ]
+            },
+            {
+              "title": "Material",
+              "rows": [
+                {
+                  "label": "Binder",
+                  "metric": "CEM I Portlandcement"
+                },
+                {
+                  "label": "Cement type and class",
+                  "metric": "CEM I 42.5 N MH/SR 3/LA acc. to EN 197-1"
+                },
+                {
+                  "label": "Aggregate",
+                  "metric": "Natural sand 0-4 mm"
+                }
+              ]
+            },
+            {
+              "title": "Strength and durability",
+              "rows": [
+                {
+                  "label": "Compressive strength class",
+                  "metric": "C50/60 acc. to SS-EN 206-1"
+                },
+                {
+                  "label": "Compressive strength 1 days",
+                  "metric": "≥20 MPa acc. to EN 12190"
+                },
+                {
+                  "label": "Compressive strength 7 days",
+                  "metric": "≥40 MPa acc. to EN 12190"
+                },
+                {
+                  "label": "Compressive strength 28 days",
+                  "metric": "≥60 MPa acc. to EN 12190"
+                },
+                {
+                  "label": "Shrinkage",
+                  "metric": "<0.8 ‰ after 28 days, 1.2 ‰ after 231 days (SS 137215)"
+                },
+                {
+                  "label": "Exposure class",
+                  "metric": "X0 / XC4 / XS3 / XD3 / XF4 / XA2 acc. to SS-EN 206-1"
+                },
+                {
+                  "label": "Resistivity (wet cured)",
+                  "metric": "10.000 Ωcm"
+                },
+                {
+                  "label": "Frost resistance",
+                  "metric": "very good (SS 137244, class 1A)"
+                },
+                {
+                  "label": "Watertightness",
+                  "metric": "Yes (SS 137214)"
+                },
+                {
+                  "label": "Air content",
+                  "metric": "ca 2-5 % acc. to SS-EN 1015-7"
+                },
+                {
+                  "label": "Chloride content",
+                  "metric": "≤0.1 % acc. to SS-EN 196-2"
+                },
+                {
+                  "label": "Expansion",
+                  "metric": "0.5-2.5 % acc. to SS-EN 137540"
+                },
+                {
+                  "label": "Water-cement ratio (w/c)",
+                  "metric": "ca 0.31"
+                }
+              ]
+            },
+            {
+              "title": "Packaging and environment",
+              "rows": [
+                {
+                  "label": "Packaging",
+                  "metric": "20 kg bag, 1,000 kg big bag"
+                },
+                {
+                  "label": "CE marking",
+                  "metric": "EN 1504-6"
+                },
+                {
+                  "label": "P marking",
+                  "metric": "Class CR 059"
+                },
+                {
+                  "label": "Climate impact (GWP, EPD A1-A3)",
+                  "metric": "0.328 kg CO₂e/kg"
+                },
+                {
+                  "label": "Storage",
+                  "metric": "Dry and frost-free, 12 months"
+                }
+              ]
+            }
+          ],
+          "note": "",
+          "source": "Information taken from weber's product data sheets (in Swedish).",
+          "gen": true
+        },
+        {
+          "type": "video",
+          "provider": "youtube",
+          "id": "R2Eb6eQ8GOQ",
+          "title": "weber: Hur man gjuter fast ett brofundament med betong",
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Contact us</a> for price, delivery time and more information.",
+          "gen": true
+        },
+        {
+          "type": "related",
+          "title": "See also",
+          "items": [
+            {
+              "href": "/produkter/weber",
+              "mutual": false
+            },
+            {
+              "href": "/produkter/weber/exm-701"
+            },
+            {
+              "href": "/produkter/weber/exm-702"
+            },
+            {
+              "href": "/produkter/weber/exm-703"
+            }
+          ],
+          "gen": true
+        }
+      ]
+    },
+    "es": {
+      "title": "EXM 725",
+      "h1": "weber EXM 725",
+      "description": "weber EXM 725 (hormigón expansivo grueso, obra civil) es un hormigón seco que se mezcla solo con agua para obtener un mortero de relleno fluido, expansivo y resistente a las heladas, listo para usar.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "weber logotyp",
+          "href": "/produkter/weber",
+          "width": 880,
+          "height": 262,
+          "src": "/assets/img/weber-logo.webp",
+          "gen": true
+        },
+        {
+          "type": "image",
+          "alt": "weber EXM 725",
+          "src": "/assets/img/weber-exm-725-main.webp",
+          "width": 735,
+          "height": 1048,
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "weber EXM 725 (hormigón expansivo grueso, obra civil) es un hormigón seco que se mezcla solo con agua para obtener un mortero de relleno fluido, expansivo y resistente a las heladas, listo para usar. Clase de resistencia C50/60. El cemento para obra civil es de bajo contenido en álcalis y hace al producto resistente a los sulfatos. Usado en muchos grandes proyectos de obra civil, certificado según CR 059 y con marcado CE según EN 1504-6.",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Bombeable",
+            "Resistente a los sulfatos",
+            "Cumple los requisitos de AMA Anläggning",
+            "Capas de 30-300 mm, especialmente donde se exige relleno total",
+            "Certificado según CR 059",
+            "Registrado en BASTA, valorado «Acepta» en Byggvarubedömningen"
+          ],
+          "gen": true
+        },
+        {
+          "type": "stat",
+          "label": "Consumo",
+          "value": "aprox. 2,1 kg/l",
+          "unit": "de mortero mezclado",
+          "meta": "capas de 30-300 mm",
+          "note": "Rendimiento aprox. 9,5 litros por saco de 20 kg, demanda de agua 2,2 litros.",
+          "usage": true,
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Ficha técnica (TDS)",
+          "href": "/assets/docs/weber-exm-725-tekniskt-datablad.pdf",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Ficha de datos de seguridad (SDS)",
+          "href": "/assets/docs/weber-exm-725-sakerhetsdatablad.pdf",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Declaración de prestaciones (DoP)",
+          "href": "/assets/docs/weber-exm-725-prestandadeklaration.pdf",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Declaración ambiental de producto (EPD)",
+          "href": "/assets/docs/weber-exm-725-epd.pdf",
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Campos de aplicación",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Relleno bajo, fijación y relleno alrededor de apoyos de puente, cisternas, etc.",
+            "Espesores de capa de 30-300 mm, especialmente donde se exige relleno total",
+            "Reparaciones horizontales de hormigón e inyecciones",
+            "Consistencia fluida, apta para bombeo. Usado, entre otros, en el puente del Gran Belt, el puente de Øresund y Citybanan (Estocolmo)"
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Limitaciones",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "No usar cuando la temperatura pueda bajar de +5 °C"
+          ],
+          "gen": true
+        },
+        {
+          "type": "datasheet",
+          "title": "Datos técnicos",
+          "tagline": "weber EXM 725",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Aplicación",
+              "rows": [
+                {
+                  "label": "Demanda de agua",
+                  "metric": "2,2 l / 20 kg"
+                },
+                {
+                  "label": "Rendimiento",
+                  "metric": "aprox. 9,5 l / 20 kg"
+                },
+                {
+                  "label": "Espesor de capa",
+                  "metric": "30-300 mm"
+                },
+                {
+                  "label": "Temperatura de aplicación",
+                  "metric": ">+5 °C"
+                },
+                {
+                  "label": "Tiempo de trabajabilidad",
+                  "metric": "aprox. 30 min (20 °C / 50 % RF)"
+                },
+                {
+                  "label": "Tiempo abierto",
+                  "metric": "0,5 N/mm² efter 200 min según SS 137126"
+                },
+                {
+                  "label": "Inicio del fraguado",
+                  "metric": "aprox. 4 tim"
+                },
+                {
+                  "label": "Consistencia",
+                  "metric": "365-445 mm según SP-metod 1651"
+                }
+              ]
+            },
+            {
+              "title": "Material",
+              "rows": [
+                {
+                  "label": "Ligante",
+                  "metric": "CEM I Portlandcement"
+                },
+                {
+                  "label": "Tipo y clase de cemento",
+                  "metric": "CEM I 42,5 N MH/SR 3/LA según EN 197-1"
+                },
+                {
+                  "label": "Árido",
+                  "metric": "Arena natural 0-4 mm"
+                }
+              ]
+            },
+            {
+              "title": "Resistencia y durabilidad",
+              "rows": [
+                {
+                  "label": "Clase de resistencia a compresión",
+                  "metric": "C50/60 según SS-EN 206-1"
+                },
+                {
+                  "label": "Resistencia a compresión 1 días",
+                  "metric": "≥20 MPa según EN 12190"
+                },
+                {
+                  "label": "Resistencia a compresión 7 días",
+                  "metric": "≥40 MPa según EN 12190"
+                },
+                {
+                  "label": "Resistencia a compresión 28 días",
+                  "metric": "≥60 MPa según EN 12190"
+                },
+                {
+                  "label": "Retracción",
+                  "metric": "<0,8 ‰ a los 28 días, 1,2 ‰ a los 231 días (SS 137215)"
+                },
+                {
+                  "label": "Clase de exposición",
+                  "metric": "X0 / XC4 / XS3 / XD3 / XF4 / XA2 según SS-EN 206-1"
+                },
+                {
+                  "label": "Resistividad (curado húmedo)",
+                  "metric": "10.000 Ωcm"
+                },
+                {
+                  "label": "Resistencia a las heladas",
+                  "metric": "muy buena (SS 137244, clase 1A)"
+                },
+                {
+                  "label": "Estanquidad",
+                  "metric": "Sí (SS 137214)"
+                },
+                {
+                  "label": "Contenido de aire",
+                  "metric": "ca 2-5 % según SS-EN 1015-7"
+                },
+                {
+                  "label": "Contenido de cloruros",
+                  "metric": "≤0,1 % según SS-EN 196-2"
+                },
+                {
+                  "label": "Expansión",
+                  "metric": "0,5-2,5 % según SS-EN 137540"
+                },
+                {
+                  "label": "Relación agua/cemento (a/c)",
+                  "metric": "ca 0,31"
+                }
+              ]
+            },
+            {
+              "title": "Envase y medio ambiente",
+              "rows": [
+                {
+                  "label": "Envase",
+                  "metric": "saco de 20 kg, big bag de 1.000 kg"
+                },
+                {
+                  "label": "Marcado CE",
+                  "metric": "EN 1504-6"
+                },
+                {
+                  "label": "Marca P",
+                  "metric": "Clase CR 059"
+                },
+                {
+                  "label": "Impacto climático (GWP, EPD A1-A3)",
+                  "metric": "0,328 kg CO₂e/kg"
+                },
+                {
+                  "label": "Almacenamiento",
+                  "metric": "En seco y sin helada, 12 meses"
+                }
+              ]
+            }
+          ],
+          "note": "",
+          "source": "Información tomada de las fichas técnicas de weber (en sueco).",
+          "gen": true
+        },
+        {
+          "type": "video",
+          "provider": "youtube",
+          "id": "R2Eb6eQ8GOQ",
+          "title": "weber: Hur man gjuter fast ett brofundament med betong",
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Contáctenos</a> para precio, plazo de entrega y más información.",
+          "gen": true
+        },
+        {
+          "type": "related",
+          "title": "Véase también",
+          "items": [
+            {
+              "href": "/produkter/weber",
+              "mutual": false
+            },
+            {
+              "href": "/produkter/weber/exm-701"
+            },
+            {
+              "href": "/produkter/weber/exm-702"
+            },
+            {
+              "href": "/produkter/weber/exm-703"
+            }
+          ],
+          "gen": true
+        }
+      ]
+    },
+    "no": {
+      "title": "EXM 725",
+      "h1": "weber EXM 725",
+      "description": "weber EXM 725 (ekspanderbetong grov, anlegg) er en tørr betong som blandes kun med vann til en bruksferdig, lettflytende, ekspanderende og frostbestandig understøpningsmørtel.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "weber logotyp",
+          "href": "/produkter/weber",
+          "width": 880,
+          "height": 262,
+          "src": "/assets/img/weber-logo.webp",
+          "gen": true
+        },
+        {
+          "type": "image",
+          "alt": "weber EXM 725",
+          "src": "/assets/img/weber-exm-725-main.webp",
+          "width": 735,
+          "height": 1048,
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "weber EXM 725 (ekspanderbetong grov, anlegg) er en tørr betong som blandes kun med vann til en bruksferdig, lettflytende, ekspanderende og frostbestandig understøpningsmørtel. Trykkfasthetsklasse C50/60. Anleggssementet er lavalkalisk og gjør produktet sulfatbestandig. Brukt i mange store anleggsprosjekter, sertifisert etter CR 059 og CE-merket etter EN 1504-6.",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Pumpbar",
+            "Sulfatbestandig",
+            "Oppfyller kravene etter AMA Anläggning",
+            "Lag 30-300 mm, særlig der total utfylling kreves",
+            "Sertifisert etter CR 059",
+            "Registrert i BASTA, vurdert «Aksepteres» i Byggvarubedömningen"
+          ],
+          "gen": true
+        },
+        {
+          "type": "stat",
+          "label": "Forbruk",
+          "value": "ca. 2,1 kg/l",
+          "unit": "ferdig mørtel",
+          "meta": "lag 30-300 mm",
+          "note": "Utbytte ca. 9,5 liter per 20 kg sekk, vannbehov 2,2 liter.",
+          "usage": true,
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Teknisk datablad (TDS)",
+          "href": "/assets/docs/weber-exm-725-tekniskt-datablad.pdf",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Sikkerhetsdatablad (SDS)",
+          "href": "/assets/docs/weber-exm-725-sakerhetsdatablad.pdf",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Ytelseserklæring (DoP)",
+          "href": "/assets/docs/weber-exm-725-prestandadeklaration.pdf",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Miljødeklarasjon (EPD)",
+          "href": "/assets/docs/weber-exm-725-epd.pdf",
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Bruksområder",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Understøpning, fastgjøring og omstøpning av brolagre, tanker m.m.",
+            "Lagtykkelser på 30-300 mm, særlig der total utfylling kreves",
+            "Horisontale betongreparasjoner og injeksjonsarbeider",
+            "Lettflytende konsistens, egnet for pumping. Brukt blant annet i Storebæltsbroen, Øresundsbroen og Citybanan"
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Begrensninger",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Må ikke brukes når temperaturen kan gå under +5 °C"
+          ],
+          "gen": true
+        },
+        {
+          "type": "datasheet",
+          "title": "Tekniske data",
+          "tagline": "weber EXM 725",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Påføring",
+              "rows": [
+                {
+                  "label": "Vannbehov",
+                  "metric": "2,2 l / 20 kg"
+                },
+                {
+                  "label": "Utbytte",
+                  "metric": "ca. 9,5 l / 20 kg"
+                },
+                {
+                  "label": "Lagtykkelse",
+                  "metric": "30-300 mm"
+                },
+                {
+                  "label": "Påføringstemperatur",
+                  "metric": ">+5 °C"
+                },
+                {
+                  "label": "Brukstid",
+                  "metric": "ca. 30 min (20 °C / 50 % RF)"
+                },
+                {
+                  "label": "Åpen tid",
+                  "metric": "0,5 N/mm² efter 200 min iht. SS 137126"
+                },
+                {
+                  "label": "Begynner å herde",
+                  "metric": "ca. 4 tim"
+                },
+                {
+                  "label": "Konsistens",
+                  "metric": "365-445 mm iht. SP-metod 1651"
+                }
+              ]
+            },
+            {
+              "title": "Materiale",
+              "rows": [
+                {
+                  "label": "Bindemiddel",
+                  "metric": "CEM I Portlandcement"
+                },
+                {
+                  "label": "Sementtype og -klasse",
+                  "metric": "CEM I 42,5 N MH/SR 3/LA iht. EN 197-1"
+                },
+                {
+                  "label": "Tilslag",
+                  "metric": "Naturlig sand 0-4 mm"
+                }
+              ]
+            },
+            {
+              "title": "Fasthet og holdbarhet",
+              "rows": [
+                {
+                  "label": "Trykkfasthetsklasse",
+                  "metric": "C50/60 iht. SS-EN 206-1"
+                },
+                {
+                  "label": "Trykkfasthet 1 døgn",
+                  "metric": "≥20 MPa iht. EN 12190"
+                },
+                {
+                  "label": "Trykkfasthet 7 døgn",
+                  "metric": "≥40 MPa iht. EN 12190"
+                },
+                {
+                  "label": "Trykkfasthet 28 døgn",
+                  "metric": "≥60 MPa iht. EN 12190"
+                },
+                {
+                  "label": "Svinn",
+                  "metric": "<0,8 ‰ etter 28 døgn, 1,2 ‰ etter 231 døgn (SS 137215)"
+                },
+                {
+                  "label": "Eksponeringsklasse",
+                  "metric": "X0 / XC4 / XS3 / XD3 / XF4 / XA2 iht. SS-EN 206-1"
+                },
+                {
+                  "label": "Resistivitet (våtlagret)",
+                  "metric": "10 000 Ωcm"
+                },
+                {
+                  "label": "Frostbestandighet",
+                  "metric": "svært god (SS 137244, klasse 1A)"
+                },
+                {
+                  "label": "Vanntetthet",
+                  "metric": "Ja (SS 137214)"
+                },
+                {
+                  "label": "Luftinnhold",
+                  "metric": "ca 2-5 % iht. SS-EN 1015-7"
+                },
+                {
+                  "label": "Kloridinnhold",
+                  "metric": "≤0,1 % iht. SS-EN 196-2"
+                },
+                {
+                  "label": "Ekspansjon",
+                  "metric": "0,5-2,5 % iht. SS-EN 137540"
+                },
+                {
+                  "label": "Vannsementtall (VCT)",
+                  "metric": "ca 0,31"
+                }
+              ]
+            },
+            {
+              "title": "Emballasje og miljø",
+              "rows": [
+                {
+                  "label": "Emballasje",
+                  "metric": "20 kg sekk, 1 000 kg storsekk"
+                },
+                {
+                  "label": "CE-merking",
+                  "metric": "EN 1504-6"
+                },
+                {
+                  "label": "P-merking",
+                  "metric": "Klasse CR 059"
+                },
+                {
+                  "label": "Klimapåvirkning (GWP, EPD A1-A3)",
+                  "metric": "0,328 kg CO₂e/kg"
+                },
+                {
+                  "label": "Lagring",
+                  "metric": "Tørt og frostfritt, 12 måneder"
+                }
+              ]
+            }
+          ],
+          "note": "",
+          "source": "Opplysningene er hentet fra Webers produktblader (på svensk).",
+          "gen": true
+        },
+        {
+          "type": "video",
+          "provider": "youtube",
+          "id": "R2Eb6eQ8GOQ",
+          "title": "weber: Hur man gjuter fast ett brofundament med betong",
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Kontakt oss</a> for pris, leveringstid og mer informasjon.",
+          "gen": true
+        },
+        {
+          "type": "related",
+          "title": "Se også",
+          "items": [
+            {
+              "href": "/produkter/weber",
+              "mutual": false
+            },
+            {
+              "href": "/produkter/weber/exm-701"
+            },
+            {
+              "href": "/produkter/weber/exm-702"
+            },
+            {
+              "href": "/produkter/weber/exm-703"
+            }
+          ],
+          "gen": true
+        }
+      ]
+    }
+  }
+}

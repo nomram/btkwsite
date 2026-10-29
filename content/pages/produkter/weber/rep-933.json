@@ -1,0 +1,1060 @@
+{
+  "path": "/produkter/weber/rep-933",
+  "updated": "2026-10-29",
+  "template": "product",
+  "order": 5,
+  "published": true,
+  "hero": {
+    "image": "/assets/img/reed-hero.webp"
+  },
+  "i18n": {
+    "sv": {
+      "title": "REP 933",
+      "h1": "weber REP 933",
+      "description": "weber REP 933 (pumpbetong 0-8 mm, C40/50) är en torrbetong som blandas bara med vatten till en användningsfärdig, pumpbar betongmassa.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "weber logotyp",
+          "href": "/produkter/weber",
+          "width": 880,
+          "height": 262,
+          "src": "/assets/img/weber-logo.webp",
+          "gen": true
+        },
+        {
+          "type": "image",
+          "alt": "weber REP 933",
+          "src": "/assets/img/weber-rep-933-main.webp",
+          "width": 735,
+          "height": 1048,
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "weber REP 933 (pumpbetong 0-8 mm, C40/50) är en torrbetong som blandas bara med vatten till en användningsfärdig, pumpbar betongmassa. Den lättflytande konsistensen gör den särskilt lämplig vid tät armering, och den har god beständighet mot bland annat tösalt. Reparationsklass R4 enligt EN 1504-3. Avsedd för grova konstruktioner från 50 mm och anpassad för kolvpump.",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Reparationsbetong, pumpbar",
+            "Lättflytande, lämplig vid tät armering",
+            "Reparationsklass R4 enligt EN 1504-3",
+            "Hållfasthetsklass C40/50",
+            "För gjutning från 50 mm",
+            "Registrerad i BASTA, bedömd Accepteras i Byggvarubedömningen"
+          ],
+          "gen": true
+        },
+        {
+          "type": "stat",
+          "label": "Åtgång",
+          "value": "2 kg/m²",
+          "unit": "per mm tjocklek",
+          "meta": "gjutning från 50 mm",
+          "note": "Vattenbehov ca 2,1 liter per 20 kg säck, utbyte ca 11 liter.",
+          "usage": true,
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Tekniskt datablad (TDS)",
+          "href": "/assets/docs/weber-rep-933-tekniskt-datablad.pdf",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Säkerhetsdatablad (SDS)",
+          "href": "/assets/docs/weber-rep-933-sakerhetsdatablad.pdf",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Prestandadeklaration (DoP)",
+          "href": "/assets/docs/weber-rep-933-prestandadeklaration.pdf",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Miljövarudeklaration (EPD)",
+          "href": "/assets/docs/weber-rep-933-epd.pdf",
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Användningsområden",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Betonglagnings- och gjutningsarbeten där en högvärdig och frostbeständig betong krävs",
+            "Gjutning av grova konstruktioner från 50 mm",
+            "Pumpning med kolvpump, men kan även appliceras på vanligt sätt"
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Begränsningar",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Använd inte när temperaturen riskerar att gå under +5 °C"
+          ],
+          "gen": true
+        },
+        {
+          "type": "datasheet",
+          "title": "Teknisk data",
+          "tagline": "weber REP 933",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Applicering",
+              "rows": [
+                {
+                  "label": "Vattenbehov",
+                  "metric": "ca 2,1 l / 20 kg"
+                },
+                {
+                  "label": "Utbyte",
+                  "metric": "ca 11 l / 20 kg"
+                },
+                {
+                  "label": "Användningstid",
+                  "metric": "ca 30 min (20 °C / 50 % RF)"
+                },
+                {
+                  "label": "Börjar härda",
+                  "metric": "ca 5 tim"
+                }
+              ]
+            },
+            {
+              "title": "Material",
+              "rows": [
+                {
+                  "label": "Bindemedel",
+                  "metric": "CEM I Portlandcement"
+                },
+                {
+                  "label": "Cementtyp och -klass",
+                  "metric": "CEM I 42,5 N MH/SR3/LA enl. EN 197-1"
+                },
+                {
+                  "label": "Ballast",
+                  "metric": "Natursand 0-8 mm"
+                }
+              ]
+            },
+            {
+              "title": "Hållfasthet och beständighet",
+              "rows": [
+                {
+                  "label": "Vidhäftningsstyrka 28 dygn",
+                  "metric": ">2 MPa enl. EN 1542"
+                },
+                {
+                  "label": "Tryckhållfasthetsklass",
+                  "metric": "C40/50 enl. EN 206-1"
+                },
+                {
+                  "label": "Tryckhållfasthet 1 dygn",
+                  "metric": ">20 MPa enl. EN 12390-3"
+                },
+                {
+                  "label": "Tryckhållfasthet 3 dygn",
+                  "metric": ">25 MPa enl. EN 12390-3"
+                },
+                {
+                  "label": "Tryckhållfasthet 7 dygn",
+                  "metric": ">40 MPa enl. EN 12390-3"
+                },
+                {
+                  "label": "Tryckhållfasthet 28 dygn",
+                  "metric": ">60 MPa enl. EN 12390-3"
+                },
+                {
+                  "label": "Exponeringsklass",
+                  "metric": "X0 / XC4 / XS2 / XD3 / XF4 / XA2"
+                },
+                {
+                  "label": "Resistivitet (våtlagrad)",
+                  "metric": "9 400 Ωcm"
+                },
+                {
+                  "label": "Frostbeständighet",
+                  "metric": "mycket god (SS 137244, klass 1A)"
+                },
+                {
+                  "label": "Elasticitetsmodul",
+                  "metric": ">20 GPa enl. EN 13412"
+                },
+                {
+                  "label": "Vattentäthet",
+                  "metric": "Ja (SS 137214)"
+                },
+                {
+                  "label": "Lufthalt",
+                  "metric": "ca 7 % enl. EN 1015-7"
+                },
+                {
+                  "label": "Vattencementtal (VCT)",
+                  "metric": "ca 0,40"
+                }
+              ]
+            },
+            {
+              "title": "Förpackning och miljö",
+              "rows": [
+                {
+                  "label": "Förpackning",
+                  "metric": "20 kg säck, 1 000 kg storsäck, bulk"
+                },
+                {
+                  "label": "CE-märkning",
+                  "metric": "EN 1504-3"
+                },
+                {
+                  "label": "Klimatpåverkan (GWP, EPD A1-A3)",
+                  "metric": "0,2 kg CO₂e/kg"
+                },
+                {
+                  "label": "Lagring",
+                  "metric": "Torrt och frostfritt, 12 månader"
+                }
+              ]
+            }
+          ],
+          "note": "",
+          "source": "Uppgifterna är hämtade ur Webers produktblad (svenska).",
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Kontakta oss</a> för pris, leveranstid och mer information.",
+          "gen": true
+        },
+        {
+          "type": "related",
+          "title": "Se även",
+          "items": [
+            {
+              "href": "/produkter/weber",
+              "mutual": false
+            },
+            {
+              "href": "/produkter/weber/rep-930"
+            },
+            {
+              "href": "/produkter/weber/rep-931"
+            },
+            {
+              "href": "/produkter/weber/rep-932"
+            }
+          ],
+          "gen": true
+        }
+      ]
+    },
+    "en": {
+      "title": "REP 933",
+      "h1": "weber REP 933",
+      "description": "weber REP 933 (pump concrete 0-8 mm, C40/50) is a dry concrete that is mixed with water only into a ready-to-use, pumpable concrete.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "weber logotyp",
+          "href": "/produkter/weber",
+          "width": 880,
+          "height": 262,
+          "src": "/assets/img/weber-logo.webp",
+          "gen": true
+        },
+        {
+          "type": "image",
+          "alt": "weber REP 933",
+          "src": "/assets/img/weber-rep-933-main.webp",
+          "width": 735,
+          "height": 1048,
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "weber REP 933 (pump concrete 0-8 mm, C40/50) is a dry concrete that is mixed with water only into a ready-to-use, pumpable concrete. Its flowable consistency makes it particularly suitable for dense reinforcement, and it has good resistance to de-icing salt, among other things. Repair class R4 to EN 1504-3. Intended for heavy structures from 50 mm and designed for piston pumps.",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Repair concrete, pumpable",
+            "Flowable, suitable for dense reinforcement",
+            "Repair class R4 to EN 1504-3",
+            "Strength class C40/50",
+            "For casting from 50 mm",
+            "Registered in BASTA, rated Accepted in Byggvarubedömningen"
+          ],
+          "gen": true
+        },
+        {
+          "type": "stat",
+          "label": "Consumption",
+          "value": "2 kg/m²",
+          "unit": "per mm of thickness",
+          "meta": "casting from 50 mm",
+          "note": "Water demand approx. 2.1 litres per 20 kg bag, yield approx. 11 litres.",
+          "usage": true,
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Technical data sheet (TDS)",
+          "href": "/assets/docs/weber-rep-933-tekniskt-datablad.pdf",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Safety data sheet (SDS)",
+          "href": "/assets/docs/weber-rep-933-sakerhetsdatablad.pdf",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Declaration of performance (DoP)",
+          "href": "/assets/docs/weber-rep-933-prestandadeklaration.pdf",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Environmental product declaration (EPD)",
+          "href": "/assets/docs/weber-rep-933-epd.pdf",
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Areas of use",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Concrete repair and casting where a high-grade, frost-resistant concrete is required",
+            "Casting of heavy structures from 50 mm",
+            "Pumping with a piston pump, but can also be applied in the usual way"
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Limitations",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Do not use when the temperature may fall below +5 °C"
+          ],
+          "gen": true
+        },
+        {
+          "type": "datasheet",
+          "title": "Technical data",
+          "tagline": "weber REP 933",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Application",
+              "rows": [
+                {
+                  "label": "Water demand",
+                  "metric": "approx. 2.1 l / 20 kg"
+                },
+                {
+                  "label": "Yield",
+                  "metric": "approx. 11 l / 20 kg"
+                },
+                {
+                  "label": "Working time",
+                  "metric": "approx. 30 min (20 °C / 50 % RF)"
+                },
+                {
+                  "label": "Starts to harden",
+                  "metric": "approx. 5 tim"
+                }
+              ]
+            },
+            {
+              "title": "Material",
+              "rows": [
+                {
+                  "label": "Binder",
+                  "metric": "CEM I Portlandcement"
+                },
+                {
+                  "label": "Cement type and class",
+                  "metric": "CEM I 42.5 N MH/SR3/LA acc. to EN 197-1"
+                },
+                {
+                  "label": "Aggregate",
+                  "metric": "Natural sand 0-8 mm"
+                }
+              ]
+            },
+            {
+              "title": "Strength and durability",
+              "rows": [
+                {
+                  "label": "Bond strength 28 days",
+                  "metric": ">2 MPa acc. to EN 1542"
+                },
+                {
+                  "label": "Compressive strength class",
+                  "metric": "C40/50 acc. to EN 206-1"
+                },
+                {
+                  "label": "Compressive strength 1 days",
+                  "metric": ">20 MPa acc. to EN 12390-3"
+                },
+                {
+                  "label": "Compressive strength 3 days",
+                  "metric": ">25 MPa acc. to EN 12390-3"
+                },
+                {
+                  "label": "Compressive strength 7 days",
+                  "metric": ">40 MPa acc. to EN 12390-3"
+                },
+                {
+                  "label": "Compressive strength 28 days",
+                  "metric": ">60 MPa acc. to EN 12390-3"
+                },
+                {
+                  "label": "Exposure class",
+                  "metric": "X0 / XC4 / XS2 / XD3 / XF4 / XA2"
+                },
+                {
+                  "label": "Resistivity (wet cured)",
+                  "metric": "9.400 Ωcm"
+                },
+                {
+                  "label": "Frost resistance",
+                  "metric": "very good (SS 137244, class 1A)"
+                },
+                {
+                  "label": "Modulus of elasticity",
+                  "metric": ">20 GPa acc. to EN 13412"
+                },
+                {
+                  "label": "Watertightness",
+                  "metric": "Yes (SS 137214)"
+                },
+                {
+                  "label": "Air content",
+                  "metric": "ca 7 % acc. to EN 1015-7"
+                },
+                {
+                  "label": "Water-cement ratio (w/c)",
+                  "metric": "ca 0.40"
+                }
+              ]
+            },
+            {
+              "title": "Packaging and environment",
+              "rows": [
+                {
+                  "label": "Packaging",
+                  "metric": "20 kg bag, 1,000 kg big bag, bulk"
+                },
+                {
+                  "label": "CE marking",
+                  "metric": "EN 1504-3"
+                },
+                {
+                  "label": "Climate impact (GWP, EPD A1-A3)",
+                  "metric": "0.2 kg CO₂e/kg"
+                },
+                {
+                  "label": "Storage",
+                  "metric": "Dry and frost-free, 12 months"
+                }
+              ]
+            }
+          ],
+          "note": "",
+          "source": "Information taken from weber's product data sheets (in Swedish).",
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Contact us</a> for price, delivery time and more information.",
+          "gen": true
+        },
+        {
+          "type": "related",
+          "title": "See also",
+          "items": [
+            {
+              "href": "/produkter/weber",
+              "mutual": false
+            },
+            {
+              "href": "/produkter/weber/rep-930"
+            },
+            {
+              "href": "/produkter/weber/rep-931"
+            },
+            {
+              "href": "/produkter/weber/rep-932"
+            }
+          ],
+          "gen": true
+        }
+      ]
+    },
+    "es": {
+      "title": "REP 933",
+      "h1": "weber REP 933",
+      "description": "weber REP 933 (hormigón bombeable 0-8 mm, C40/50) es un hormigón seco que se mezcla solo con agua para obtener un hormigón bombeable listo para usar.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "weber logotyp",
+          "href": "/produkter/weber",
+          "width": 880,
+          "height": 262,
+          "src": "/assets/img/weber-logo.webp",
+          "gen": true
+        },
+        {
+          "type": "image",
+          "alt": "weber REP 933",
+          "src": "/assets/img/weber-rep-933-main.webp",
+          "width": 735,
+          "height": 1048,
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "weber REP 933 (hormigón bombeable 0-8 mm, C40/50) es un hormigón seco que se mezcla solo con agua para obtener un hormigón bombeable listo para usar. Su consistencia fluida lo hace especialmente adecuado con armadura densa, y tiene buena resistencia, entre otras cosas, a las sales fundentes. Clase de reparación R4 según EN 1504-3. Pensado para estructuras gruesas desde 50 mm y preparado para bombas de pistón.",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Hormigón de reparación, bombeable",
+            "Fluido, adecuado con armadura densa",
+            "Clase de reparación R4 según EN 1504-3",
+            "Clase de resistencia C40/50",
+            "Para vertidos desde 50 mm",
+            "Registrado en BASTA, valorado «Acepta» en Byggvarubedömningen"
+          ],
+          "gen": true
+        },
+        {
+          "type": "stat",
+          "label": "Consumo",
+          "value": "2 kg/m²",
+          "unit": "por mm de espesor",
+          "meta": "vertidos desde 50 mm",
+          "note": "Demanda de agua aprox. 2,1 litros por saco de 20 kg, rendimiento aprox. 11 litros.",
+          "usage": true,
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Ficha técnica (TDS)",
+          "href": "/assets/docs/weber-rep-933-tekniskt-datablad.pdf",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Ficha de datos de seguridad (SDS)",
+          "href": "/assets/docs/weber-rep-933-sakerhetsdatablad.pdf",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Declaración de prestaciones (DoP)",
+          "href": "/assets/docs/weber-rep-933-prestandadeklaration.pdf",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Declaración ambiental de producto (EPD)",
+          "href": "/assets/docs/weber-rep-933-epd.pdf",
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Campos de aplicación",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Reparación y vertido de hormigón donde se exige un hormigón de alta calidad y resistente a las heladas",
+            "Vertido de estructuras gruesas desde 50 mm",
+            "Bombeo con bomba de pistón, pero también puede aplicarse de la forma habitual"
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Limitaciones",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "No usar cuando la temperatura pueda bajar de +5 °C"
+          ],
+          "gen": true
+        },
+        {
+          "type": "datasheet",
+          "title": "Datos técnicos",
+          "tagline": "weber REP 933",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Aplicación",
+              "rows": [
+                {
+                  "label": "Demanda de agua",
+                  "metric": "aprox. 2,1 l / 20 kg"
+                },
+                {
+                  "label": "Rendimiento",
+                  "metric": "aprox. 11 l / 20 kg"
+                },
+                {
+                  "label": "Tiempo de trabajabilidad",
+                  "metric": "aprox. 30 min (20 °C / 50 % RF)"
+                },
+                {
+                  "label": "Inicio del fraguado",
+                  "metric": "aprox. 5 tim"
+                }
+              ]
+            },
+            {
+              "title": "Material",
+              "rows": [
+                {
+                  "label": "Ligante",
+                  "metric": "CEM I Portlandcement"
+                },
+                {
+                  "label": "Tipo y clase de cemento",
+                  "metric": "CEM I 42,5 N MH/SR3/LA según EN 197-1"
+                },
+                {
+                  "label": "Árido",
+                  "metric": "Arena natural 0-8 mm"
+                }
+              ]
+            },
+            {
+              "title": "Resistencia y durabilidad",
+              "rows": [
+                {
+                  "label": "Resistencia de adherencia 28 días",
+                  "metric": ">2 MPa según EN 1542"
+                },
+                {
+                  "label": "Clase de resistencia a compresión",
+                  "metric": "C40/50 según EN 206-1"
+                },
+                {
+                  "label": "Resistencia a compresión 1 días",
+                  "metric": ">20 MPa según EN 12390-3"
+                },
+                {
+                  "label": "Resistencia a compresión 3 días",
+                  "metric": ">25 MPa según EN 12390-3"
+                },
+                {
+                  "label": "Resistencia a compresión 7 días",
+                  "metric": ">40 MPa según EN 12390-3"
+                },
+                {
+                  "label": "Resistencia a compresión 28 días",
+                  "metric": ">60 MPa según EN 12390-3"
+                },
+                {
+                  "label": "Clase de exposición",
+                  "metric": "X0 / XC4 / XS2 / XD3 / XF4 / XA2"
+                },
+                {
+                  "label": "Resistividad (curado húmedo)",
+                  "metric": "9.400 Ωcm"
+                },
+                {
+                  "label": "Resistencia a las heladas",
+                  "metric": "muy buena (SS 137244, clase 1A)"
+                },
+                {
+                  "label": "Módulo de elasticidad",
+                  "metric": ">20 GPa según EN 13412"
+                },
+                {
+                  "label": "Estanquidad",
+                  "metric": "Sí (SS 137214)"
+                },
+                {
+                  "label": "Contenido de aire",
+                  "metric": "ca 7 % según EN 1015-7"
+                },
+                {
+                  "label": "Relación agua/cemento (a/c)",
+                  "metric": "ca 0,40"
+                }
+              ]
+            },
+            {
+              "title": "Envase y medio ambiente",
+              "rows": [
+                {
+                  "label": "Envase",
+                  "metric": "saco de 20 kg, big bag de 1.000 kg, a granel"
+                },
+                {
+                  "label": "Marcado CE",
+                  "metric": "EN 1504-3"
+                },
+                {
+                  "label": "Impacto climático (GWP, EPD A1-A3)",
+                  "metric": "0,2 kg CO₂e/kg"
+                },
+                {
+                  "label": "Almacenamiento",
+                  "metric": "En seco y sin helada, 12 meses"
+                }
+              ]
+            }
+          ],
+          "note": "",
+          "source": "Información tomada de las fichas técnicas de weber (en sueco).",
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Contáctenos</a> para precio, plazo de entrega y más información.",
+          "gen": true
+        },
+        {
+          "type": "related",
+          "title": "Véase también",
+          "items": [
+            {
+              "href": "/produkter/weber",
+              "mutual": false
+            },
+            {
+              "href": "/produkter/weber/rep-930"
+            },
+            {
+              "href": "/produkter/weber/rep-931"
+            },
+            {
+              "href": "/produkter/weber/rep-932"
+            }
+          ],
+          "gen": true
+        }
+      ]
+    },
+    "no": {
+      "title": "REP 933",
+      "h1": "weber REP 933",
+      "description": "weber REP 933 (pumpebetong 0-8 mm, C40/50) er en tørr betong som blandes kun med vann til en bruksferdig, pumpbar betongmasse.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "weber logotyp",
+          "href": "/produkter/weber",
+          "width": 880,
+          "height": 262,
+          "src": "/assets/img/weber-logo.webp",
+          "gen": true
+        },
+        {
+          "type": "image",
+          "alt": "weber REP 933",
+          "src": "/assets/img/weber-rep-933-main.webp",
+          "width": 735,
+          "height": 1048,
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "weber REP 933 (pumpebetong 0-8 mm, C40/50) er en tørr betong som blandes kun med vann til en bruksferdig, pumpbar betongmasse. Den lettflytende konsistensen gjør den særlig egnet ved tett armering, og den har god bestandighet mot blant annet tinesalt. Reparasjonsklasse R4 etter EN 1504-3. Beregnet for grove konstruksjoner fra 50 mm og tilpasset stempelpumpe.",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Reparasjonsbetong, pumpbar",
+            "Lettflytende, egnet ved tett armering",
+            "Reparasjonsklasse R4 etter EN 1504-3",
+            "Fasthetsklasse C40/50",
+            "For støping fra 50 mm",
+            "Registrert i BASTA, vurdert «Aksepteres» i Byggvarubedömningen"
+          ],
+          "gen": true
+        },
+        {
+          "type": "stat",
+          "label": "Forbruk",
+          "value": "2 kg/m²",
+          "unit": "per mm tykkelse",
+          "meta": "støping fra 50 mm",
+          "note": "Vannbehov ca. 2,1 liter per 20 kg sekk, utbytte ca. 11 liter.",
+          "usage": true,
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Teknisk datablad (TDS)",
+          "href": "/assets/docs/weber-rep-933-tekniskt-datablad.pdf",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Sikkerhetsdatablad (SDS)",
+          "href": "/assets/docs/weber-rep-933-sakerhetsdatablad.pdf",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Ytelseserklæring (DoP)",
+          "href": "/assets/docs/weber-rep-933-prestandadeklaration.pdf",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Miljødeklarasjon (EPD)",
+          "href": "/assets/docs/weber-rep-933-epd.pdf",
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Bruksområder",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Betongreparasjon og støping der en høyverdig og frostbestandig betong kreves",
+            "Støping av grove konstruksjoner fra 50 mm",
+            "Pumping med stempelpumpe, men kan også påføres på vanlig måte"
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Begrensninger",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Må ikke brukes når temperaturen kan gå under +5 °C"
+          ],
+          "gen": true
+        },
+        {
+          "type": "datasheet",
+          "title": "Tekniske data",
+          "tagline": "weber REP 933",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Påføring",
+              "rows": [
+                {
+                  "label": "Vannbehov",
+                  "metric": "ca. 2,1 l / 20 kg"
+                },
+                {
+                  "label": "Utbytte",
+                  "metric": "ca. 11 l / 20 kg"
+                },
+                {
+                  "label": "Brukstid",
+                  "metric": "ca. 30 min (20 °C / 50 % RF)"
+                },
+                {
+                  "label": "Begynner å herde",
+                  "metric": "ca. 5 tim"
+                }
+              ]
+            },
+            {
+              "title": "Materiale",
+              "rows": [
+                {
+                  "label": "Bindemiddel",
+                  "metric": "CEM I Portlandcement"
+                },
+                {
+                  "label": "Sementtype og -klasse",
+                  "metric": "CEM I 42,5 N MH/SR3/LA iht. EN 197-1"
+                },
+                {
+                  "label": "Tilslag",
+                  "metric": "Naturlig sand 0-8 mm"
+                }
+              ]
+            },
+            {
+              "title": "Fasthet og holdbarhet",
+              "rows": [
+                {
+                  "label": "Heftfasthet 28 døgn",
+                  "metric": ">2 MPa iht. EN 1542"
+                },
+                {
+                  "label": "Trykkfasthetsklasse",
+                  "metric": "C40/50 iht. EN 206-1"
+                },
+                {
+                  "label": "Trykkfasthet 1 døgn",
+                  "metric": ">20 MPa iht. EN 12390-3"
+                },
+                {
+                  "label": "Trykkfasthet 3 døgn",
+                  "metric": ">25 MPa iht. EN 12390-3"
+                },
+                {
+                  "label": "Trykkfasthet 7 døgn",
+                  "metric": ">40 MPa iht. EN 12390-3"
+                },
+                {
+                  "label": "Trykkfasthet 28 døgn",
+                  "metric": ">60 MPa iht. EN 12390-3"
+                },
+                {
+                  "label": "Eksponeringsklasse",
+                  "metric": "X0 / XC4 / XS2 / XD3 / XF4 / XA2"
+                },
+                {
+                  "label": "Resistivitet (våtlagret)",
+                  "metric": "9 400 Ωcm"
+                },
+                {
+                  "label": "Frostbestandighet",
+                  "metric": "svært god (SS 137244, klasse 1A)"
+                },
+                {
+                  "label": "Elastisitetsmodul",
+                  "metric": ">20 GPa iht. EN 13412"
+                },
+                {
+                  "label": "Vanntetthet",
+                  "metric": "Ja (SS 137214)"
+                },
+                {
+                  "label": "Luftinnhold",
+                  "metric": "ca 7 % iht. EN 1015-7"
+                },
+                {
+                  "label": "Vannsementtall (VCT)",
+                  "metric": "ca 0,40"
+                }
+              ]
+            },
+            {
+              "title": "Emballasje og miljø",
+              "rows": [
+                {
+                  "label": "Emballasje",
+                  "metric": "20 kg sekk, 1 000 kg storsekk, bulk"
+                },
+                {
+                  "label": "CE-merking",
+                  "metric": "EN 1504-3"
+                },
+                {
+                  "label": "Klimapåvirkning (GWP, EPD A1-A3)",
+                  "metric": "0,2 kg CO₂e/kg"
+                },
+                {
+                  "label": "Lagring",
+                  "metric": "Tørt og frostfritt, 12 måneder"
+                }
+              ]
+            }
+          ],
+          "note": "",
+          "source": "Opplysningene er hentet fra Webers produktblader (på svensk).",
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Kontakt oss</a> for pris, leveringstid og mer informasjon.",
+          "gen": true
+        },
+        {
+          "type": "related",
+          "title": "Se også",
+          "items": [
+            {
+              "href": "/produkter/weber",
+              "mutual": false
+            },
+            {
+              "href": "/produkter/weber/rep-930"
+            },
+            {
+              "href": "/produkter/weber/rep-931"
+            },
+            {
+              "href": "/produkter/weber/rep-932"
+            }
+          ],
+          "gen": true
+        }
+      ]
+    }
+  }
+}

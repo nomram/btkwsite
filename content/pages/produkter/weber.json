@@ -1,6 +1,6 @@
 {
   "path": "/produkter/weber",
-  "updated": "2026-10-10",
+  "updated": "2026-10-29",
   "template": "brand",
   "origin": {
     "country": "fr"
@@ -36,6 +36,158 @@
           "html": "Ta en titt på deras hemsida eller <a href=\"/kontakta-oss\">kontakta oss</a> för mer information."
         },
         {
+          "type": "heading",
+          "level": 2,
+          "text": "Reparationsbetong och anläggningsbetong",
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 4,
+          "square": true,
+          "more": false,
+          "gen": true,
+          "items": [
+            {
+              "title": "REP 25",
+              "image": "/assets/img/weber-rep-25-tile.webp",
+              "alt": "weber REP 25",
+              "href": "/produkter/weber/rep-25",
+              "bullets": [
+                "Reparationsbruk R3, 5-50 mm",
+                "Åtgång: 20 kg/m² per 10 mm"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "REP 45",
+              "image": "/assets/img/weber-rep-45-tile.webp",
+              "alt": "weber REP 45",
+              "href": "/produkter/weber/rep-45",
+              "bullets": [
+                "Reparationsbruk R4, 5-50 mm",
+                "Åtgång: 20 kg/m² per 10 mm"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "REP 930",
+              "image": "/assets/img/weber-rep-930-tile.webp",
+              "alt": "weber REP 930",
+              "href": "/produkter/weber/rep-930",
+              "bullets": [
+                "Anläggningsbetong 0-4 mm, C40/50",
+                "Åtgång: 20 kg/m² per 10 mm"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "REP 931",
+              "image": "/assets/img/weber-rep-931-tile.webp",
+              "alt": "weber REP 931",
+              "href": "/produkter/weber/rep-931",
+              "bullets": [
+                "Pumpbetong 0-4 mm, C40/50",
+                "Åtgång: 2 kg/m² per mm"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "REP 932",
+              "image": "/assets/img/weber-rep-932-tile.webp",
+              "alt": "weber REP 932",
+              "href": "/produkter/weber/rep-932",
+              "bullets": [
+                "Anläggningsbetong 0-12 mm, C50/60",
+                "Åtgång: 20 kg/m² per 10 mm"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "REP 933",
+              "image": "/assets/img/weber-rep-933-tile.webp",
+              "alt": "weber REP 933",
+              "href": "/produkter/weber/rep-933",
+              "bullets": [
+                "Pumpbetong 0-8 mm, C40/50",
+                "Åtgång: 2 kg/m² per mm"
+              ],
+              "width": 1000,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Expanderbetong för undergjutning",
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 4,
+          "square": true,
+          "more": false,
+          "gen": true,
+          "items": [
+            {
+              "title": "EXM 701",
+              "image": "/assets/img/weber-exm-701-tile.webp",
+              "alt": "weber EXM 701",
+              "href": "/produkter/weber/exm-701",
+              "bullets": [
+                "Expanderbetong, tunna skikt 5-50 mm",
+                "Åtgång: ca 2 kg/l"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "EXM 702",
+              "image": "/assets/img/weber-exm-702-tile.webp",
+              "alt": "weber EXM 702",
+              "href": "/produkter/weber/exm-702",
+              "bullets": [
+                "Expanderbetong fin, 10-100 mm",
+                "Åtgång: ca 2 kg/l"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "EXM 703",
+              "image": "/assets/img/weber-exm-703-tile.webp",
+              "alt": "weber EXM 703",
+              "href": "/produkter/weber/exm-703",
+              "bullets": [
+                "Expanderbetong grov, 30-300 mm",
+                "Åtgång: ca 2 kg/l"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "EXM 725",
+              "image": "/assets/img/weber-exm-725-tile.webp",
+              "alt": "weber EXM 725",
+              "href": "/produkter/weber/exm-725",
+              "bullets": [
+                "Expanderbetong grov, anläggning, C50/60",
+                "Åtgång: ca 2,1 kg/l"
+              ],
+              "width": 1000,
+              "height": 1000
+            }
+          ]
+        },
+        {
           "type": "button",
           "kind": "link",
           "text": "Webers Produktkatalog",
@@ -67,6 +219,158 @@
         {
           "type": "text",
           "html": "Take a look at their website or <a href=\"/kontakta-oss\">contact us</a> for more information."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Repair and civil-engineering concrete",
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 4,
+          "square": true,
+          "more": false,
+          "gen": true,
+          "items": [
+            {
+              "title": "REP 25",
+              "image": "/assets/img/weber-rep-25-tile.webp",
+              "alt": "weber REP 25",
+              "href": "/produkter/weber/rep-25",
+              "bullets": [
+                "Repair mortar R3, 5-50 mm",
+                "Consumption: 20 kg/m² per 10 mm"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "REP 45",
+              "image": "/assets/img/weber-rep-45-tile.webp",
+              "alt": "weber REP 45",
+              "href": "/produkter/weber/rep-45",
+              "bullets": [
+                "Repair mortar R4, 5-50 mm",
+                "Consumption: 20 kg/m² per 10 mm"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "REP 930",
+              "image": "/assets/img/weber-rep-930-tile.webp",
+              "alt": "weber REP 930",
+              "href": "/produkter/weber/rep-930",
+              "bullets": [
+                "Civil-engineering concrete 0-4 mm, C40/50",
+                "Consumption: 20 kg/m² per 10 mm"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "REP 931",
+              "image": "/assets/img/weber-rep-931-tile.webp",
+              "alt": "weber REP 931",
+              "href": "/produkter/weber/rep-931",
+              "bullets": [
+                "Pump concrete 0-4 mm, C40/50",
+                "Consumption: 2 kg/m² per mm"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "REP 932",
+              "image": "/assets/img/weber-rep-932-tile.webp",
+              "alt": "weber REP 932",
+              "href": "/produkter/weber/rep-932",
+              "bullets": [
+                "Civil-engineering concrete 0-12 mm, C50/60",
+                "Consumption: 20 kg/m² per 10 mm"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "REP 933",
+              "image": "/assets/img/weber-rep-933-tile.webp",
+              "alt": "weber REP 933",
+              "href": "/produkter/weber/rep-933",
+              "bullets": [
+                "Pump concrete 0-8 mm, C40/50",
+                "Consumption: 2 kg/m² per mm"
+              ],
+              "width": 1000,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Expanding concrete for grouting",
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 4,
+          "square": true,
+          "more": false,
+          "gen": true,
+          "items": [
+            {
+              "title": "EXM 701",
+              "image": "/assets/img/weber-exm-701-tile.webp",
+              "alt": "weber EXM 701",
+              "href": "/produkter/weber/exm-701",
+              "bullets": [
+                "Expanding concrete, thin layers 5-50 mm",
+                "Consumption: approx. 2 kg/l"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "EXM 702",
+              "image": "/assets/img/weber-exm-702-tile.webp",
+              "alt": "weber EXM 702",
+              "href": "/produkter/weber/exm-702",
+              "bullets": [
+                "Fine expanding concrete, 10-100 mm",
+                "Consumption: approx. 2 kg/l"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "EXM 703",
+              "image": "/assets/img/weber-exm-703-tile.webp",
+              "alt": "weber EXM 703",
+              "href": "/produkter/weber/exm-703",
+              "bullets": [
+                "Coarse expanding concrete, 30-300 mm",
+                "Consumption: approx. 2 kg/l"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "EXM 725",
+              "image": "/assets/img/weber-exm-725-tile.webp",
+              "alt": "weber EXM 725",
+              "href": "/produkter/weber/exm-725",
+              "bullets": [
+                "Coarse expanding concrete, civil, C50/60",
+                "Consumption: approx. 2.1 kg/l"
+              ],
+              "width": 1000,
+              "height": 1000
+            }
+          ]
         },
         {
           "type": "button",
@@ -103,6 +407,158 @@
           "html": "Eche un vistazo a su sitio web o <a href=\"/kontakta-oss\">contáctenos</a> para más información."
         },
         {
+          "type": "heading",
+          "level": 2,
+          "text": "Hormigón de reparación y de obra civil",
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 4,
+          "square": true,
+          "more": false,
+          "gen": true,
+          "items": [
+            {
+              "title": "REP 25",
+              "image": "/assets/img/weber-rep-25-tile.webp",
+              "alt": "weber REP 25",
+              "href": "/produkter/weber/rep-25",
+              "bullets": [
+                "Mortero de reparación R3, 5-50 mm",
+                "Consumo: 20 kg/m² por 10 mm"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "REP 45",
+              "image": "/assets/img/weber-rep-45-tile.webp",
+              "alt": "weber REP 45",
+              "href": "/produkter/weber/rep-45",
+              "bullets": [
+                "Mortero de reparación R4, 5-50 mm",
+                "Consumo: 20 kg/m² por 10 mm"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "REP 930",
+              "image": "/assets/img/weber-rep-930-tile.webp",
+              "alt": "weber REP 930",
+              "href": "/produkter/weber/rep-930",
+              "bullets": [
+                "Hormigón de obra civil 0-4 mm, C40/50",
+                "Consumo: 20 kg/m² por 10 mm"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "REP 931",
+              "image": "/assets/img/weber-rep-931-tile.webp",
+              "alt": "weber REP 931",
+              "href": "/produkter/weber/rep-931",
+              "bullets": [
+                "Hormigón bombeable 0-4 mm, C40/50",
+                "Consumo: 2 kg/m² por mm"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "REP 932",
+              "image": "/assets/img/weber-rep-932-tile.webp",
+              "alt": "weber REP 932",
+              "href": "/produkter/weber/rep-932",
+              "bullets": [
+                "Hormigón de obra civil 0-12 mm, C50/60",
+                "Consumo: 20 kg/m² por 10 mm"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "REP 933",
+              "image": "/assets/img/weber-rep-933-tile.webp",
+              "alt": "weber REP 933",
+              "href": "/produkter/weber/rep-933",
+              "bullets": [
+                "Hormigón bombeable 0-8 mm, C40/50",
+                "Consumo: 2 kg/m² por mm"
+              ],
+              "width": 1000,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Hormigón expansivo para rellenos",
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 4,
+          "square": true,
+          "more": false,
+          "gen": true,
+          "items": [
+            {
+              "title": "EXM 701",
+              "image": "/assets/img/weber-exm-701-tile.webp",
+              "alt": "weber EXM 701",
+              "href": "/produkter/weber/exm-701",
+              "bullets": [
+                "Hormigón expansivo, capas finas 5-50 mm",
+                "Consumo: aprox. 2 kg/l"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "EXM 702",
+              "image": "/assets/img/weber-exm-702-tile.webp",
+              "alt": "weber EXM 702",
+              "href": "/produkter/weber/exm-702",
+              "bullets": [
+                "Hormigón expansivo fino, 10-100 mm",
+                "Consumo: aprox. 2 kg/l"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "EXM 703",
+              "image": "/assets/img/weber-exm-703-tile.webp",
+              "alt": "weber EXM 703",
+              "href": "/produkter/weber/exm-703",
+              "bullets": [
+                "Hormigón expansivo grueso, 30-300 mm",
+                "Consumo: aprox. 2 kg/l"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "EXM 725",
+              "image": "/assets/img/weber-exm-725-tile.webp",
+              "alt": "weber EXM 725",
+              "href": "/produkter/weber/exm-725",
+              "bullets": [
+                "Hormigón expansivo grueso, obra civil, C50/60",
+                "Consumo: aprox. 2,1 kg/l"
+              ],
+              "width": 1000,
+              "height": 1000
+            }
+          ]
+        },
+        {
           "type": "button",
           "kind": "link",
           "text": "Catálogo de productos de Weber",
@@ -135,6 +591,158 @@
         {
           "type": "text",
           "html": "Ta en titt på nettsiden deres eller <a href=\"/kontakta-oss\">kontakt oss</a> for mer informasjon."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Reparasjonsbetong og anleggsbetong",
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 4,
+          "square": true,
+          "more": false,
+          "gen": true,
+          "items": [
+            {
+              "title": "REP 25",
+              "image": "/assets/img/weber-rep-25-tile.webp",
+              "alt": "weber REP 25",
+              "href": "/produkter/weber/rep-25",
+              "bullets": [
+                "Reparasjonsmørtel R3, 5-50 mm",
+                "Forbruk: 20 kg/m² per 10 mm"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "REP 45",
+              "image": "/assets/img/weber-rep-45-tile.webp",
+              "alt": "weber REP 45",
+              "href": "/produkter/weber/rep-45",
+              "bullets": [
+                "Reparasjonsmørtel R4, 5-50 mm",
+                "Forbruk: 20 kg/m² per 10 mm"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "REP 930",
+              "image": "/assets/img/weber-rep-930-tile.webp",
+              "alt": "weber REP 930",
+              "href": "/produkter/weber/rep-930",
+              "bullets": [
+                "Anleggsbetong 0-4 mm, C40/50",
+                "Forbruk: 20 kg/m² per 10 mm"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "REP 931",
+              "image": "/assets/img/weber-rep-931-tile.webp",
+              "alt": "weber REP 931",
+              "href": "/produkter/weber/rep-931",
+              "bullets": [
+                "Pumpebetong 0-4 mm, C40/50",
+                "Forbruk: 2 kg/m² per mm"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "REP 932",
+              "image": "/assets/img/weber-rep-932-tile.webp",
+              "alt": "weber REP 932",
+              "href": "/produkter/weber/rep-932",
+              "bullets": [
+                "Anleggsbetong 0-12 mm, C50/60",
+                "Forbruk: 20 kg/m² per 10 mm"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "REP 933",
+              "image": "/assets/img/weber-rep-933-tile.webp",
+              "alt": "weber REP 933",
+              "href": "/produkter/weber/rep-933",
+              "bullets": [
+                "Pumpebetong 0-8 mm, C40/50",
+                "Forbruk: 2 kg/m² per mm"
+              ],
+              "width": 1000,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Ekspanderbetong for understøpning",
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 4,
+          "square": true,
+          "more": false,
+          "gen": true,
+          "items": [
+            {
+              "title": "EXM 701",
+              "image": "/assets/img/weber-exm-701-tile.webp",
+              "alt": "weber EXM 701",
+              "href": "/produkter/weber/exm-701",
+              "bullets": [
+                "Ekspanderbetong, tynne lag 5-50 mm",
+                "Forbruk: ca. 2 kg/l"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "EXM 702",
+              "image": "/assets/img/weber-exm-702-tile.webp",
+              "alt": "weber EXM 702",
+              "href": "/produkter/weber/exm-702",
+              "bullets": [
+                "Ekspanderbetong fin, 10-100 mm",
+                "Forbruk: ca. 2 kg/l"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "EXM 703",
+              "image": "/assets/img/weber-exm-703-tile.webp",
+              "alt": "weber EXM 703",
+              "href": "/produkter/weber/exm-703",
+              "bullets": [
+                "Ekspanderbetong grov, 30-300 mm",
+                "Forbruk: ca. 2 kg/l"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "EXM 725",
+              "image": "/assets/img/weber-exm-725-tile.webp",
+              "alt": "weber EXM 725",
+              "href": "/produkter/weber/exm-725",
+              "bullets": [
+                "Ekspanderbetong grov, anlegg, C50/60",
+                "Forbruk: ca. 2,1 kg/l"
+              ],
+              "width": 1000,
+              "height": 1000
+            }
+          ]
         },
         {
           "type": "button",

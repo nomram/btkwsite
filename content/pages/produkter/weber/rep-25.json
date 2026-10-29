@@ -1,0 +1,1060 @@
+{
+  "path": "/produkter/weber/rep-25",
+  "updated": "2026-10-29",
+  "template": "product",
+  "order": 0,
+  "published": true,
+  "hero": {
+    "image": "/assets/img/reed-hero.webp"
+  },
+  "i18n": {
+    "sv": {
+      "title": "REP 25",
+      "h1": "weber REP 25",
+      "description": "weber REP 25 är ett byggbart reparationsbruk (PCC) med plastfiber för lagning av betong utan formsättning, både utomhus och inomhus.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "weber logotyp",
+          "href": "/produkter/weber",
+          "width": 880,
+          "height": 262,
+          "src": "/assets/img/weber-logo.webp",
+          "gen": true
+        },
+        {
+          "type": "image",
+          "alt": "weber REP 25",
+          "src": "/assets/img/weber-rep-25-main.webp",
+          "width": 641,
+          "height": 952,
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "weber REP 25 är ett byggbart reparationsbruk (PCC) med plastfiber för lagning av betong utan formsättning, både utomhus och inomhus. Det blandas bara med vatten och ger ett användningsfärdigt bruk med god hållfasthet och normalt god vidhäftning och beständighet. Avsett för betong med normal hållfasthet, lägst cirka 20 MPa.",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Reparationsklass R3 enligt EN 1504-3",
+            "Plastfiber (polypropylen) minskar risken för sprickor",
+            "Lagning utan formsättning, 5-50 mm per skikt",
+            "Ett 20 mm skikt motstår genomkarbonatisering i 20 år",
+            "Registrerad i BASTA, bedömd Accepteras i Byggvarubedömningen"
+          ],
+          "gen": true
+        },
+        {
+          "type": "stat",
+          "label": "Åtgång",
+          "value": "20 kg/m²",
+          "unit": "per 10 mm tjocklek",
+          "meta": "5-50 mm per skikt",
+          "note": "Vattenbehov 3,0 liter per 20 kg säck, utbyte ca 11 liter.",
+          "usage": true,
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Tekniskt datablad (TDS)",
+          "href": "/assets/docs/weber-rep-25-tekniskt-datablad.pdf",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Säkerhetsdatablad (SDS)",
+          "href": "/assets/docs/weber-rep-25-sakerhetsdatablad.pdf",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Prestandadeklaration (DoP)",
+          "href": "/assets/docs/weber-rep-25-prestandadeklaration.pdf",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Miljövarudeklaration (EPD)",
+          "href": "/assets/docs/weber-rep-25-epd.pdf",
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Användningsområden",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Rekonditionering och reparation av betong, utomhus och inomhus",
+            "Lagning utan formsättning i skikt om 5-50 mm, tjocka lagningar i flera skikt",
+            "Horisontella ytor, eller ytor med horisontellt stöd, kan lagas i ett skikt",
+            "Betong med normal hållfasthet (lägst cirka 20 MPa). För mer högvärdig betong används REP 45"
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Begränsningar",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Använd inte när temperaturen riskerar att gå under +5 °C"
+          ],
+          "gen": true
+        },
+        {
+          "type": "datasheet",
+          "title": "Teknisk data",
+          "tagline": "weber REP 25",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Applicering",
+              "rows": [
+                {
+                  "label": "Vattenbehov",
+                  "metric": "3,0 l / 20 kg"
+                },
+                {
+                  "label": "Utbyte",
+                  "metric": "ca 11 l / 20 kg"
+                },
+                {
+                  "label": "Skikttjocklek",
+                  "metric": "5-50 mm"
+                },
+                {
+                  "label": "Användningstid",
+                  "metric": "ca 60 min (20 °C / 50 % RF)"
+                },
+                {
+                  "label": "Börjar härda",
+                  "metric": "ca 4-8 tim"
+                }
+              ]
+            },
+            {
+              "title": "Material",
+              "rows": [
+                {
+                  "label": "Bindemedel",
+                  "metric": "Bascement"
+                },
+                {
+                  "label": "Cementtyp och -klass",
+                  "metric": "CEM II 52,5 N (EN 197-1)"
+                },
+                {
+                  "label": "Fiberförstärkt",
+                  "metric": "Polypropylenfiber"
+                },
+                {
+                  "label": "Ballast",
+                  "metric": "Natursand 0-2 mm"
+                }
+              ]
+            },
+            {
+              "title": "Hållfasthet och beständighet",
+              "rows": [
+                {
+                  "label": "Vidhäftningsstyrka 28 dygn",
+                  "metric": ">1,5 MPa enl. EN 1541"
+                },
+                {
+                  "label": "Tryckhållfasthet 3 dygn",
+                  "metric": ">15 MPa enl. EN 12390-3"
+                },
+                {
+                  "label": "Tryckhållfasthet 7 dygn",
+                  "metric": ">25 MPa enl. EN 12390-3"
+                },
+                {
+                  "label": "Tryckhållfasthet 28 dygn",
+                  "metric": ">30 MPa enl. EN 12390-3"
+                },
+                {
+                  "label": "Böjdraghållfasthet 28 dygn",
+                  "metric": "> 6 MPa enl. EN 1015-11"
+                },
+                {
+                  "label": "Reparationsklass",
+                  "metric": "R3 enl. EN 1504-3"
+                },
+                {
+                  "label": "Exponeringsklass",
+                  "metric": "X0 / XD2 / XC4 / XF3 / XA1"
+                },
+                {
+                  "label": "Frostbeständighet",
+                  "metric": "mycket god (SS 137244, klass 1A)"
+                },
+                {
+                  "label": "Vattentäthet",
+                  "metric": "Ja (SS 137214)"
+                },
+                {
+                  "label": "Lufthalt",
+                  "metric": "5-8,5 % enl. EN 1015-7"
+                },
+                {
+                  "label": "Densitet",
+                  "metric": "ca 1 960 kg/m³"
+                },
+                {
+                  "label": "Vattencementtal (VCT)",
+                  "metric": "ca 0,50"
+                }
+              ]
+            },
+            {
+              "title": "Förpackning och miljö",
+              "rows": [
+                {
+                  "label": "CE-märkning",
+                  "metric": "EN 1504-3"
+                },
+                {
+                  "label": "Klimatpåverkan (GWP, EPD A1-A3)",
+                  "metric": "0,228 kg CO₂e/kg"
+                },
+                {
+                  "label": "Lagring",
+                  "metric": "Torrt och frostfritt, 12 månader"
+                }
+              ]
+            }
+          ],
+          "note": "",
+          "source": "Uppgifterna är hämtade ur Webers produktblad (svenska).",
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Kontakta oss</a> för pris, leveranstid och mer information.",
+          "gen": true
+        },
+        {
+          "type": "related",
+          "title": "Se även",
+          "items": [
+            {
+              "href": "/produkter/weber",
+              "mutual": false
+            },
+            {
+              "href": "/produkter/weber/rep-45"
+            },
+            {
+              "href": "/produkter/weber/rep-931"
+            },
+            {
+              "href": "/produkter/weber/rep-932"
+            }
+          ],
+          "gen": true
+        }
+      ]
+    },
+    "en": {
+      "title": "REP 25",
+      "h1": "weber REP 25",
+      "description": "weber REP 25 is a buildable repair mortar (PCC) with plastic fibre for repairing concrete without formwork, outdoors and indoors.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "weber logotyp",
+          "href": "/produkter/weber",
+          "width": 880,
+          "height": 262,
+          "src": "/assets/img/weber-logo.webp",
+          "gen": true
+        },
+        {
+          "type": "image",
+          "alt": "weber REP 25",
+          "src": "/assets/img/weber-rep-25-main.webp",
+          "width": 641,
+          "height": 952,
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "weber REP 25 is a buildable repair mortar (PCC) with plastic fibre for repairing concrete without formwork, outdoors and indoors. It is mixed with water only and gives a ready-to-use mortar with good strength and normally good adhesion and durability. Intended for concrete of normal strength, at least about 20 MPa.",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Repair class R3 to EN 1504-3",
+            "Plastic (polypropylene) fibre reduces the risk of cracking",
+            "Repairs without formwork, 5-50 mm per layer",
+            "A 20 mm layer resists carbonation through the layer for 20 years",
+            "Registered in BASTA, rated Accepted in Byggvarubedömningen"
+          ],
+          "gen": true
+        },
+        {
+          "type": "stat",
+          "label": "Consumption",
+          "value": "20 kg/m²",
+          "unit": "per 10 mm of thickness",
+          "meta": "5-50 mm per layer",
+          "note": "Water demand 3.0 litres per 20 kg bag, yield approx. 11 litres.",
+          "usage": true,
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Technical data sheet (TDS)",
+          "href": "/assets/docs/weber-rep-25-tekniskt-datablad.pdf",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Safety data sheet (SDS)",
+          "href": "/assets/docs/weber-rep-25-sakerhetsdatablad.pdf",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Declaration of performance (DoP)",
+          "href": "/assets/docs/weber-rep-25-prestandadeklaration.pdf",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Environmental product declaration (EPD)",
+          "href": "/assets/docs/weber-rep-25-epd.pdf",
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Areas of use",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Reconditioning and repair of concrete, outdoors and indoors",
+            "Repairs without formwork in layers of 5-50 mm, thick repairs in several layers",
+            "Horizontal surfaces, or surfaces with horizontal support, can be repaired in one layer",
+            "Concrete of normal strength (at least about 20 MPa). For higher-grade concrete use REP 45"
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Limitations",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Do not use when the temperature may fall below +5 °C"
+          ],
+          "gen": true
+        },
+        {
+          "type": "datasheet",
+          "title": "Technical data",
+          "tagline": "weber REP 25",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Application",
+              "rows": [
+                {
+                  "label": "Water demand",
+                  "metric": "3.0 l / 20 kg"
+                },
+                {
+                  "label": "Yield",
+                  "metric": "approx. 11 l / 20 kg"
+                },
+                {
+                  "label": "Layer thickness",
+                  "metric": "5-50 mm"
+                },
+                {
+                  "label": "Working time",
+                  "metric": "approx. 60 min (20 °C / 50 % RF)"
+                },
+                {
+                  "label": "Starts to harden",
+                  "metric": "approx. 4-8 tim"
+                }
+              ]
+            },
+            {
+              "title": "Material",
+              "rows": [
+                {
+                  "label": "Binder",
+                  "metric": "Bascement"
+                },
+                {
+                  "label": "Cement type and class",
+                  "metric": "CEM II 52.5 N (EN 197-1)"
+                },
+                {
+                  "label": "Fibre reinforced",
+                  "metric": "Polypropylene fibre"
+                },
+                {
+                  "label": "Aggregate",
+                  "metric": "Natural sand 0-2 mm"
+                }
+              ]
+            },
+            {
+              "title": "Strength and durability",
+              "rows": [
+                {
+                  "label": "Bond strength 28 days",
+                  "metric": ">1.5 MPa acc. to EN 1541"
+                },
+                {
+                  "label": "Compressive strength 3 days",
+                  "metric": ">15 MPa acc. to EN 12390-3"
+                },
+                {
+                  "label": "Compressive strength 7 days",
+                  "metric": ">25 MPa acc. to EN 12390-3"
+                },
+                {
+                  "label": "Compressive strength 28 days",
+                  "metric": ">30 MPa acc. to EN 12390-3"
+                },
+                {
+                  "label": "Flexural strength 28 days",
+                  "metric": "> 6 MPa acc. to EN 1015-11"
+                },
+                {
+                  "label": "Repair class",
+                  "metric": "R3 acc. to EN 1504-3"
+                },
+                {
+                  "label": "Exposure class",
+                  "metric": "X0 / XD2 / XC4 / XF3 / XA1"
+                },
+                {
+                  "label": "Frost resistance",
+                  "metric": "very good (SS 137244, class 1A)"
+                },
+                {
+                  "label": "Watertightness",
+                  "metric": "Yes (SS 137214)"
+                },
+                {
+                  "label": "Air content",
+                  "metric": "5-8.5 % acc. to EN 1015-7"
+                },
+                {
+                  "label": "Density",
+                  "metric": "approx. 1.960 kg/m³"
+                },
+                {
+                  "label": "Water-cement ratio (w/c)",
+                  "metric": "ca 0.50"
+                }
+              ]
+            },
+            {
+              "title": "Packaging and environment",
+              "rows": [
+                {
+                  "label": "CE marking",
+                  "metric": "EN 1504-3"
+                },
+                {
+                  "label": "Climate impact (GWP, EPD A1-A3)",
+                  "metric": "0.228 kg CO₂e/kg"
+                },
+                {
+                  "label": "Storage",
+                  "metric": "Dry and frost-free, 12 months"
+                }
+              ]
+            }
+          ],
+          "note": "",
+          "source": "Information taken from weber's product data sheets (in Swedish).",
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Contact us</a> for price, delivery time and more information.",
+          "gen": true
+        },
+        {
+          "type": "related",
+          "title": "See also",
+          "items": [
+            {
+              "href": "/produkter/weber",
+              "mutual": false
+            },
+            {
+              "href": "/produkter/weber/rep-45"
+            },
+            {
+              "href": "/produkter/weber/rep-931"
+            },
+            {
+              "href": "/produkter/weber/rep-932"
+            }
+          ],
+          "gen": true
+        }
+      ]
+    },
+    "es": {
+      "title": "REP 25",
+      "h1": "weber REP 25",
+      "description": "weber REP 25 es un mortero de reparación aplicable en capas gruesas (PCC) con fibra plástica para reparar hormigón sin encofrado, en exterior e interior.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "weber logotyp",
+          "href": "/produkter/weber",
+          "width": 880,
+          "height": 262,
+          "src": "/assets/img/weber-logo.webp",
+          "gen": true
+        },
+        {
+          "type": "image",
+          "alt": "weber REP 25",
+          "src": "/assets/img/weber-rep-25-main.webp",
+          "width": 641,
+          "height": 952,
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "weber REP 25 es un mortero de reparación aplicable en capas gruesas (PCC) con fibra plástica para reparar hormigón sin encofrado, en exterior e interior. Se mezcla solo con agua y da un mortero listo para usar con buena resistencia y normalmente buena adherencia y durabilidad. Pensado para hormigón de resistencia normal, como mínimo unos 20 MPa.",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Clase de reparación R3 según EN 1504-3",
+            "La fibra plástica (polipropileno) reduce el riesgo de fisuras",
+            "Reparaciones sin encofrado, 5-50 mm por capa",
+            "Una capa de 20 mm resiste la carbonatación durante 20 años",
+            "Registrado en BASTA, valorado «Acepta» en Byggvarubedömningen"
+          ],
+          "gen": true
+        },
+        {
+          "type": "stat",
+          "label": "Consumo",
+          "value": "20 kg/m²",
+          "unit": "por 10 mm de espesor",
+          "meta": "5-50 mm por capa",
+          "note": "Demanda de agua 3,0 litros por saco de 20 kg, rendimiento aprox. 11 litros.",
+          "usage": true,
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Ficha técnica (TDS)",
+          "href": "/assets/docs/weber-rep-25-tekniskt-datablad.pdf",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Ficha de datos de seguridad (SDS)",
+          "href": "/assets/docs/weber-rep-25-sakerhetsdatablad.pdf",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Declaración de prestaciones (DoP)",
+          "href": "/assets/docs/weber-rep-25-prestandadeklaration.pdf",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Declaración ambiental de producto (EPD)",
+          "href": "/assets/docs/weber-rep-25-epd.pdf",
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Campos de aplicación",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Reacondicionamiento y reparación de hormigón, en exterior e interior",
+            "Reparaciones sin encofrado en capas de 5-50 mm, reparaciones gruesas en varias capas",
+            "Las superficies horizontales, o con apoyo horizontal, pueden repararse en una sola capa",
+            "Hormigón de resistencia normal (como mínimo unos 20 MPa). Para hormigón de mayor calidad se usa REP 45"
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Limitaciones",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "No usar cuando la temperatura pueda bajar de +5 °C"
+          ],
+          "gen": true
+        },
+        {
+          "type": "datasheet",
+          "title": "Datos técnicos",
+          "tagline": "weber REP 25",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Aplicación",
+              "rows": [
+                {
+                  "label": "Demanda de agua",
+                  "metric": "3,0 l / 20 kg"
+                },
+                {
+                  "label": "Rendimiento",
+                  "metric": "aprox. 11 l / 20 kg"
+                },
+                {
+                  "label": "Espesor de capa",
+                  "metric": "5-50 mm"
+                },
+                {
+                  "label": "Tiempo de trabajabilidad",
+                  "metric": "aprox. 60 min (20 °C / 50 % RF)"
+                },
+                {
+                  "label": "Inicio del fraguado",
+                  "metric": "aprox. 4-8 tim"
+                }
+              ]
+            },
+            {
+              "title": "Material",
+              "rows": [
+                {
+                  "label": "Ligante",
+                  "metric": "Bascement"
+                },
+                {
+                  "label": "Tipo y clase de cemento",
+                  "metric": "CEM II 52,5 N (EN 197-1)"
+                },
+                {
+                  "label": "Reforzado con fibras",
+                  "metric": "Fibra de polipropileno"
+                },
+                {
+                  "label": "Árido",
+                  "metric": "Arena natural 0-2 mm"
+                }
+              ]
+            },
+            {
+              "title": "Resistencia y durabilidad",
+              "rows": [
+                {
+                  "label": "Resistencia de adherencia 28 días",
+                  "metric": ">1,5 MPa según EN 1541"
+                },
+                {
+                  "label": "Resistencia a compresión 3 días",
+                  "metric": ">15 MPa según EN 12390-3"
+                },
+                {
+                  "label": "Resistencia a compresión 7 días",
+                  "metric": ">25 MPa según EN 12390-3"
+                },
+                {
+                  "label": "Resistencia a compresión 28 días",
+                  "metric": ">30 MPa según EN 12390-3"
+                },
+                {
+                  "label": "Resistencia a flexión 28 días",
+                  "metric": "> 6 MPa según EN 1015-11"
+                },
+                {
+                  "label": "Clase de reparación",
+                  "metric": "R3 según EN 1504-3"
+                },
+                {
+                  "label": "Clase de exposición",
+                  "metric": "X0 / XD2 / XC4 / XF3 / XA1"
+                },
+                {
+                  "label": "Resistencia a las heladas",
+                  "metric": "muy buena (SS 137244, clase 1A)"
+                },
+                {
+                  "label": "Estanquidad",
+                  "metric": "Sí (SS 137214)"
+                },
+                {
+                  "label": "Contenido de aire",
+                  "metric": "5-8,5 % según EN 1015-7"
+                },
+                {
+                  "label": "Densidad",
+                  "metric": "aprox. 1.960 kg/m³"
+                },
+                {
+                  "label": "Relación agua/cemento (a/c)",
+                  "metric": "ca 0,50"
+                }
+              ]
+            },
+            {
+              "title": "Envase y medio ambiente",
+              "rows": [
+                {
+                  "label": "Marcado CE",
+                  "metric": "EN 1504-3"
+                },
+                {
+                  "label": "Impacto climático (GWP, EPD A1-A3)",
+                  "metric": "0,228 kg CO₂e/kg"
+                },
+                {
+                  "label": "Almacenamiento",
+                  "metric": "En seco y sin helada, 12 meses"
+                }
+              ]
+            }
+          ],
+          "note": "",
+          "source": "Información tomada de las fichas técnicas de weber (en sueco).",
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Contáctenos</a> para precio, plazo de entrega y más información.",
+          "gen": true
+        },
+        {
+          "type": "related",
+          "title": "Véase también",
+          "items": [
+            {
+              "href": "/produkter/weber",
+              "mutual": false
+            },
+            {
+              "href": "/produkter/weber/rep-45"
+            },
+            {
+              "href": "/produkter/weber/rep-931"
+            },
+            {
+              "href": "/produkter/weber/rep-932"
+            }
+          ],
+          "gen": true
+        }
+      ]
+    },
+    "no": {
+      "title": "REP 25",
+      "h1": "weber REP 25",
+      "description": "weber REP 25 er en oppbyggbar reparasjonsmørtel (PCC) med plastfiber for utbedring av betong uten forskaling, ute og inne.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "weber logotyp",
+          "href": "/produkter/weber",
+          "width": 880,
+          "height": 262,
+          "src": "/assets/img/weber-logo.webp",
+          "gen": true
+        },
+        {
+          "type": "image",
+          "alt": "weber REP 25",
+          "src": "/assets/img/weber-rep-25-main.webp",
+          "width": 641,
+          "height": 952,
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "weber REP 25 er en oppbyggbar reparasjonsmørtel (PCC) med plastfiber for utbedring av betong uten forskaling, ute og inne. Den blandes kun med vann og gir en bruksferdig mørtel med god fasthet og normalt god heft og holdbarhet. Beregnet for betong med normal fasthet, minst ca. 20 MPa.",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Reparasjonsklasse R3 etter EN 1504-3",
+            "Plastfiber (polypropylen) reduserer risikoen for sprekker",
+            "Utbedring uten forskaling, 5-50 mm per lag",
+            "Et 20 mm lag motstår gjennomkarbonatisering i 20 år",
+            "Registrert i BASTA, vurdert «Aksepteres» i Byggvarubedömningen"
+          ],
+          "gen": true
+        },
+        {
+          "type": "stat",
+          "label": "Forbruk",
+          "value": "20 kg/m²",
+          "unit": "per 10 mm tykkelse",
+          "meta": "5-50 mm per lag",
+          "note": "Vannbehov 3,0 liter per 20 kg sekk, utbytte ca. 11 liter.",
+          "usage": true,
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Teknisk datablad (TDS)",
+          "href": "/assets/docs/weber-rep-25-tekniskt-datablad.pdf",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Sikkerhetsdatablad (SDS)",
+          "href": "/assets/docs/weber-rep-25-sakerhetsdatablad.pdf",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Ytelseserklæring (DoP)",
+          "href": "/assets/docs/weber-rep-25-prestandadeklaration.pdf",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Miljødeklarasjon (EPD)",
+          "href": "/assets/docs/weber-rep-25-epd.pdf",
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Bruksområder",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Rehabilitering og reparasjon av betong, ute og inne",
+            "Utbedring uten forskaling i lag på 5-50 mm, tykke utbedringer i flere lag",
+            "Horisontale flater, eller flater med horisontal støtte, kan utbedres i ett lag",
+            "Betong med normal fasthet (minst ca. 20 MPa). For mer høyverdig betong brukes REP 45"
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Begrensninger",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Må ikke brukes når temperaturen kan gå under +5 °C"
+          ],
+          "gen": true
+        },
+        {
+          "type": "datasheet",
+          "title": "Tekniske data",
+          "tagline": "weber REP 25",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Påføring",
+              "rows": [
+                {
+                  "label": "Vannbehov",
+                  "metric": "3,0 l / 20 kg"
+                },
+                {
+                  "label": "Utbytte",
+                  "metric": "ca. 11 l / 20 kg"
+                },
+                {
+                  "label": "Lagtykkelse",
+                  "metric": "5-50 mm"
+                },
+                {
+                  "label": "Brukstid",
+                  "metric": "ca. 60 min (20 °C / 50 % RF)"
+                },
+                {
+                  "label": "Begynner å herde",
+                  "metric": "ca. 4-8 tim"
+                }
+              ]
+            },
+            {
+              "title": "Materiale",
+              "rows": [
+                {
+                  "label": "Bindemiddel",
+                  "metric": "Bascement"
+                },
+                {
+                  "label": "Sementtype og -klasse",
+                  "metric": "CEM II 52,5 N (EN 197-1)"
+                },
+                {
+                  "label": "Fiberarmert",
+                  "metric": "Polypropylenfiber"
+                },
+                {
+                  "label": "Tilslag",
+                  "metric": "Naturlig sand 0-2 mm"
+                }
+              ]
+            },
+            {
+              "title": "Fasthet og holdbarhet",
+              "rows": [
+                {
+                  "label": "Heftfasthet 28 døgn",
+                  "metric": ">1,5 MPa iht. EN 1541"
+                },
+                {
+                  "label": "Trykkfasthet 3 døgn",
+                  "metric": ">15 MPa iht. EN 12390-3"
+                },
+                {
+                  "label": "Trykkfasthet 7 døgn",
+                  "metric": ">25 MPa iht. EN 12390-3"
+                },
+                {
+                  "label": "Trykkfasthet 28 døgn",
+                  "metric": ">30 MPa iht. EN 12390-3"
+                },
+                {
+                  "label": "Bøyestrekkfasthet 28 døgn",
+                  "metric": "> 6 MPa iht. EN 1015-11"
+                },
+                {
+                  "label": "Reparasjonsklasse",
+                  "metric": "R3 iht. EN 1504-3"
+                },
+                {
+                  "label": "Eksponeringsklasse",
+                  "metric": "X0 / XD2 / XC4 / XF3 / XA1"
+                },
+                {
+                  "label": "Frostbestandighet",
+                  "metric": "svært god (SS 137244, klasse 1A)"
+                },
+                {
+                  "label": "Vanntetthet",
+                  "metric": "Ja (SS 137214)"
+                },
+                {
+                  "label": "Luftinnhold",
+                  "metric": "5-8,5 % iht. EN 1015-7"
+                },
+                {
+                  "label": "Densitet",
+                  "metric": "ca. 1 960 kg/m³"
+                },
+                {
+                  "label": "Vannsementtall (VCT)",
+                  "metric": "ca 0,50"
+                }
+              ]
+            },
+            {
+              "title": "Emballasje og miljø",
+              "rows": [
+                {
+                  "label": "CE-merking",
+                  "metric": "EN 1504-3"
+                },
+                {
+                  "label": "Klimapåvirkning (GWP, EPD A1-A3)",
+                  "metric": "0,228 kg CO₂e/kg"
+                },
+                {
+                  "label": "Lagring",
+                  "metric": "Tørt og frostfritt, 12 måneder"
+                }
+              ]
+            }
+          ],
+          "note": "",
+          "source": "Opplysningene er hentet fra Webers produktblader (på svensk).",
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Kontakt oss</a> for pris, leveringstid og mer informasjon.",
+          "gen": true
+        },
+        {
+          "type": "related",
+          "title": "Se også",
+          "items": [
+            {
+              "href": "/produkter/weber",
+              "mutual": false
+            },
+            {
+              "href": "/produkter/weber/rep-45"
+            },
+            {
+              "href": "/produkter/weber/rep-931"
+            },
+            {
+              "href": "/produkter/weber/rep-932"
+            }
+          ],
+          "gen": true
+        }
+      ]
+    }
+  }
+}
