@@ -1,6 +1,6 @@
 {
   "path": "/produkter/marini/crawlers/mr-c-35a",
-  "updated": "2026-10-28",
+  "updated": "2026-10-29",
   "template": "product",
   "order": 5,
   "published": true,
@@ -34,14 +34,56 @@
         },
         {
           "type": "carousel",
-          "autoplay": false,
+          "autoplay": true,
           "interval": 6,
           "items": [
             {
-              "src": "/assets/img/marini-mrc-mr-c-35a-p1.webp",
-              "alt": "Marini MR-C 35A (1/1)",
-              "width": 534,
-              "height": 328
+              "src": "/assets/img/marini-mrc-mr-c-35-p1.webp",
+              "alt": "Marini MR-C 35A (1/8)",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/marini-mrc-mr-c-35-p2.webp",
+              "alt": "Marini MR-C 35A (2/8)",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/marini-mrc-mr-c-35-p3.webp",
+              "alt": "Marini MR-C 35A (3/8)",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/marini-mrc-mr-c-35-p4.webp",
+              "alt": "Marini MR-C 35A (4/8)",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/marini-mrc-mr-c-35-p5.webp",
+              "alt": "Marini MR-C 35A (5/8)",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/marini-mrc-mr-c-35-p6.webp",
+              "alt": "Marini MR-C 35A (6/8)",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/marini-mrc-mr-c-35-p7.webp",
+              "alt": "Marini MR-C 35A (7/8)",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/marini-mrc-mr-c-35-p8.webp",
+              "alt": "Marini MR-C 35A (8/8)",
+              "width": 1400,
+              "height": 1050
             }
           ],
           "gen": true
@@ -208,14 +250,56 @@
         },
         {
           "type": "carousel",
-          "autoplay": false,
+          "autoplay": true,
           "interval": 6,
           "items": [
             {
-              "src": "/assets/img/marini-mrc-mr-c-35a-p1.webp",
-              "alt": "Marini MR-C 35A (1/1)",
-              "width": 534,
-              "height": 328
+              "src": "/assets/img/marini-mrc-mr-c-35-p1.webp",
+              "alt": "Marini MR-C 35A (1/8)",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/marini-mrc-mr-c-35-p2.webp",
+              "alt": "Marini MR-C 35A (2/8)",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/marini-mrc-mr-c-35-p3.webp",
+              "alt": "Marini MR-C 35A (3/8)",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/marini-mrc-mr-c-35-p4.webp",
+              "alt": "Marini MR-C 35A (4/8)",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/marini-mrc-mr-c-35-p5.webp",
+              "alt": "Marini MR-C 35A (5/8)",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/marini-mrc-mr-c-35-p6.webp",
+              "alt": "Marini MR-C 35A (6/8)",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/marini-mrc-mr-c-35-p7.webp",
+              "alt": "Marini MR-C 35A (7/8)",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/marini-mrc-mr-c-35-p8.webp",
+              "alt": "Marini MR-C 35A (8/8)",
+              "width": 1400,
+              "height": 1050
             }
           ],
           "gen": true
@@ -382,14 +466,56 @@
         },
         {
           "type": "carousel",
-          "autoplay": false,
+          "autoplay": true,
           "interval": 6,
           "items": [
             {
-              "src": "/assets/img/marini-mrc-mr-c-35a-p1.webp",
-              "alt": "Marini MR-C 35A (1/1)",
-              "width": 534,
-              "height": 328
+              "src": "/assets/img/marini-mrc-mr-c-35-p1.webp",
+              "alt": "Marini MR-C 35A (1/8)",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/marini-mrc-mr-c-35-p2.webp",
+              "alt": "Marini MR-C 35A (2/8)",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/marini-mrc-mr-c-35-p3.webp",
+              "alt": "Marini MR-C 35A (3/8)",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/marini-mrc-mr-c-35-p4.webp",
+              "alt": "Marini MR-C 35A (4/8)",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/marini-mrc-mr-c-35-p5.webp",
+              "alt": "Marini MR-C 35A (5/8)",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/marini-mrc-mr-c-35-p6.webp",
+              "alt": "Marini MR-C 35A (6/8)",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/marini-mrc-mr-c-35-p7.webp",
+              "alt": "Marini MR-C 35A (7/8)",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/marini-mrc-mr-c-35-p8.webp",
+              "alt": "Marini MR-C 35A (8/8)",
+              "width": 1400,
+              "height": 1050
             }
           ],
           "gen": true
@@ -556,14 +682,56 @@
         },
         {
           "type": "carousel",
-          "autoplay": false,
+          "autoplay": true,
           "interval": 6,
           "items": [
             {
-              "src": "/assets/img/marini-mrc-mr-c-35a-p1.webp",
-              "alt": "Marini MR-C 35A (1/1)",
-              "width": 534,
-              "height": 328
+              "src": "/assets/img/marini-mrc-mr-c-35-p1.webp",
+              "alt": "Marini MR-C 35A (1/8)",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/marini-mrc-mr-c-35-p2.webp",
+              "alt": "Marini MR-C 35A (2/8)",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/marini-mrc-mr-c-35-p3.webp",
+              "alt": "Marini MR-C 35A (3/8)",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/marini-mrc-mr-c-35-p4.webp",
+              "alt": "Marini MR-C 35A (4/8)",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/marini-mrc-mr-c-35-p5.webp",
+              "alt": "Marini MR-C 35A (5/8)",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/marini-mrc-mr-c-35-p6.webp",
+              "alt": "Marini MR-C 35A (6/8)",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/marini-mrc-mr-c-35-p7.webp",
+              "alt": "Marini MR-C 35A (7/8)",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/marini-mrc-mr-c-35-p8.webp",
+              "alt": "Marini MR-C 35A (8/8)",
+              "width": 1400,
+              "height": 1050
             }
           ],
           "gen": true
