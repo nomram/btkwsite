@@ -1,0 +1,932 @@
+{
+  "path": "/produkter/mapei/mapepoxy-l",
+  "updated": "2026-10-29",
+  "template": "product",
+  "order": 0,
+  "published": true,
+  "hero": {
+    "image": "/assets/img/mapei-hero.webp"
+  },
+  "i18n": {
+    "sv": {
+      "title": "Mapepoxy L",
+      "h1": "Mapei Mapepoxy L",
+      "description": "Mapepoxy L är ett tvåkomponents, snabbhärdande epoxilim för kraftöverförande limning av färsk betong mot gammal betong, gammal betong mot gammal betong samt stål mot betong.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Mapei logotyp",
+          "href": "/produkter/mapei",
+          "width": 1920,
+          "height": 493,
+          "src": "/assets/img/mapei-1.webp",
+          "gen": true
+        },
+        {
+          "type": "image",
+          "alt": "Mapei Mapepoxy L",
+          "src": "/assets/img/mapei-mapepoxy-l-main.webp",
+          "width": 830,
+          "height": 516,
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "Mapepoxy L är ett tvåkomponents, snabbhärdande epoxilim för kraftöverförande limning av färsk betong mot gammal betong, gammal betong mot gammal betong samt stål mot betong. Det kan också användas som slitstark skyddsbeläggning på betong och stål och för förankring av bultar i borrade hål. Endast för professionellt bruk.",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Låg emission, uppfyller M1",
+            "God vidhäftning till betong, även i fuktig miljö",
+            "Inga mjukgörare eller benzylalkohol",
+            "Uppfyller EN 1504-4",
+            "Appliceras med pensel, rakel eller trattspruta",
+            "Färg: grå"
+          ],
+          "gen": true
+        },
+        {
+          "type": "stat",
+          "label": "Åtgång",
+          "value": "0,5-1,5 kg/m²",
+          "unit": "som lim",
+          "meta": "beroende på ytans jämnhet",
+          "note": "Åtgången varierar med ytans jämnhet, temperaturen och appliceringssättet.",
+          "usage": true,
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Tekniskt datablad (TDS)",
+          "href": "/assets/docs/mapei-mapepoxy-l-tekniskt-datablad.pdf",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Säkerhetsdatablad (SDS)",
+          "href": "/assets/docs/mapei-mapepoxy-l-sakerhetsdatablad.pdf",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Prestandadeklaration (DoP)",
+          "href": "/assets/docs/mapei-mapepoxy-l-prestandadeklaration.pdf",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Miljövarudeklaration (EPD)",
+          "href": "/assets/docs/mapei-mapepoxy-l-epd.pdf",
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Användningsområden",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Limning av färsk betong på härdad betong",
+            "Limning av härdad betong på härdad betong",
+            "Limning av stål på betong eller stål på stål (endast vågräta ytor)",
+            "Förankring av bultar i borrade hål",
+            "Skyddsbeläggning på betong och stål, minst 2 lager med sandavströning emellan"
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Applicering",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Betongen ska vara ren, dammfri och fast, helst sandblästrad. Stål ska vara fritt från rost (sandblästring till SA 2½)",
+            "Häll komponent B i komponent A och blanda i cirka 3 minuter med borrvisp på låg hastighet. Produkten får inte spädas",
+            "Applicera med pensel, rakel eller trattspruta inom brukstiden",
+            "Färsk betong ska gjutas inom öppentiden, annars strös limmet av med sand och ett nytt skikt läggs"
+          ],
+          "gen": true
+        },
+        {
+          "type": "datasheet",
+          "title": "Teknisk data",
+          "tagline": "Mapei Mapepoxy L",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Applicering",
+              "rows": [
+                {
+                  "label": "Blandningsförhållande",
+                  "metric": "8 : 1 (A : B)"
+                },
+                {
+                  "label": "Färg",
+                  "metric": "grå"
+                },
+                {
+                  "label": "Konsistens",
+                  "metric": "tjock vätska"
+                },
+                {
+                  "label": "Densitet, färsk blandning",
+                  "metric": "ca 1 530 kg/m³"
+                },
+                {
+                  "label": "Appliceringstemperatur",
+                  "metric": "+5 °C till +30 °C"
+                },
+                {
+                  "label": "Brukstid (+5 / +20 / +30 °C)",
+                  "metric": "28 / 20 / 14 min"
+                },
+                {
+                  "label": "Öppentid (+5 / +20 / +30 °C)",
+                  "metric": "240 / 70 / 60 min"
+                }
+              ]
+            },
+            {
+              "title": "Slutegenskaper",
+              "rows": [
+                {
+                  "label": "Tryckhållfasthet (+20 °C, 2,5 tim / 7 d)",
+                  "metric": "40 / 110 N/mm²"
+                },
+                {
+                  "label": "Tryckhållfasthet (+5 °C, 16 tim / 28 d)",
+                  "metric": "60 / 95 N/mm²"
+                },
+                {
+                  "label": "Böjhållfasthet (7 d)",
+                  "metric": "39,5 N/mm²"
+                },
+                {
+                  "label": "Skjuvhållfasthet",
+                  "metric": "23 N/mm²"
+                },
+                {
+                  "label": "Elasticitetsmodul",
+                  "metric": "7 680 N/mm²"
+                },
+                {
+                  "label": "Glasomvandlingstemperatur",
+                  "metric": "50,8 °C"
+                },
+                {
+                  "label": "Brandklass",
+                  "metric": "B-s1"
+                }
+              ]
+            },
+            {
+              "title": "Förpackning och lagring",
+              "rows": [
+                {
+                  "label": "Förpackning",
+                  "metric": "Satser om 1,25 / 4,5 / 9 kg (komponent A + B)"
+                },
+                {
+                  "label": "Lagring",
+                  "metric": "24 månader, +5 °C till +30 °C, oöppnad förpackning"
+                }
+              ]
+            }
+          ],
+          "note": "",
+          "source": "Uppgifterna är hämtade ur Mapeis tekniska datablad (svenska).",
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Kontakta oss</a> för pris, leveranstid och mer information.",
+          "gen": true
+        },
+        {
+          "type": "related",
+          "title": "Se även",
+          "items": [
+            {
+              "href": "/produkter/mapei",
+              "mutual": false
+            },
+            {
+              "href": "/produkter/mapei/redirep-45-rsf"
+            },
+            {
+              "href": "/produkter/mapei/planitop-rasa-ripara-r4"
+            },
+            {
+              "href": "/produkter/mapei/montocryl"
+            }
+          ],
+          "gen": true
+        }
+      ]
+    },
+    "en": {
+      "title": "Mapepoxy L",
+      "h1": "Mapei Mapepoxy L",
+      "description": "Mapepoxy L is a two-component, fast-curing epoxy adhesive for load-bearing bonding of fresh concrete to old concrete, old concrete to old concrete and steel to concrete.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Mapei logotyp",
+          "href": "/produkter/mapei",
+          "width": 1920,
+          "height": 493,
+          "src": "/assets/img/mapei-1.webp",
+          "gen": true
+        },
+        {
+          "type": "image",
+          "alt": "Mapei Mapepoxy L",
+          "src": "/assets/img/mapei-mapepoxy-l-main.webp",
+          "width": 830,
+          "height": 516,
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "Mapepoxy L is a two-component, fast-curing epoxy adhesive for load-bearing bonding of fresh concrete to old concrete, old concrete to old concrete and steel to concrete. It can also be used as a hard-wearing protective coating on concrete and steel and for anchoring bolts in drilled holes. For professional use only.",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Low emission, meets M1",
+            "Good adhesion to concrete, also in damp conditions",
+            "No plasticisers or benzyl alcohol",
+            "Meets EN 1504-4",
+            "Applied by brush, trowel or funnel sprayer",
+            "Colour: grey"
+          ],
+          "gen": true
+        },
+        {
+          "type": "stat",
+          "label": "Consumption",
+          "value": "0.5-1.5 kg/m²",
+          "unit": "as adhesive",
+          "meta": "depending on the surface",
+          "note": "Consumption varies with the evenness of the surface, the temperature and the method of application.",
+          "usage": true,
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Technical data sheet (TDS)",
+          "href": "/assets/docs/mapei-mapepoxy-l-tekniskt-datablad.pdf",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Safety data sheet (SDS)",
+          "href": "/assets/docs/mapei-mapepoxy-l-sakerhetsdatablad.pdf",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Declaration of performance (DoP)",
+          "href": "/assets/docs/mapei-mapepoxy-l-prestandadeklaration.pdf",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Environmental product declaration (EPD)",
+          "href": "/assets/docs/mapei-mapepoxy-l-epd.pdf",
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Areas of use",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Bonding fresh concrete to hardened concrete",
+            "Bonding hardened concrete to hardened concrete",
+            "Bonding steel to concrete or steel to steel (horizontal surfaces only)",
+            "Anchoring bolts in drilled holes",
+            "Protective coating on concrete and steel, at least 2 coats with a sand broadcast in between"
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Application",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "The concrete must be clean, dust-free and sound, preferably sandblasted. Steel must be free of rust (sandblasting to SA 2½)",
+            "Pour component B into component A and mix for about 3 minutes with a drill and paddle at low speed. Do not dilute the product",
+            "Apply with a brush, trowel or funnel sprayer within the pot life",
+            "Fresh concrete must be placed within the open time, otherwise sand is broadcast over the adhesive and a new coat is applied"
+          ],
+          "gen": true
+        },
+        {
+          "type": "datasheet",
+          "title": "Technical data",
+          "tagline": "Mapei Mapepoxy L",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Application",
+              "rows": [
+                {
+                  "label": "Mixing ratio",
+                  "metric": "8 : 1 (A : B)"
+                },
+                {
+                  "label": "Colour",
+                  "metric": "grey"
+                },
+                {
+                  "label": "Consistency",
+                  "metric": "thick liquid"
+                },
+                {
+                  "label": "Density, fresh mix",
+                  "metric": "ca 1.530 kg/m³"
+                },
+                {
+                  "label": "Application temperature",
+                  "metric": "+5 °C till +30 °C"
+                },
+                {
+                  "label": "Pot life (+5 / +20 / +30 °C)",
+                  "metric": "28 / 20 / 14 min"
+                },
+                {
+                  "label": "Open time (+5 / +20 / +30 °C)",
+                  "metric": "240 / 70 / 60 min"
+                }
+              ]
+            },
+            {
+              "title": "Final properties",
+              "rows": [
+                {
+                  "label": "Compressive strength (+20 °C, 2.5 tim / 7 d)",
+                  "metric": "40 / 110 N/mm²"
+                },
+                {
+                  "label": "Compressive strength (+5 °C, 16 tim / 28 d)",
+                  "metric": "60 / 95 N/mm²"
+                },
+                {
+                  "label": "Flexural strength (7 d)",
+                  "metric": "39.5 N/mm²"
+                },
+                {
+                  "label": "Shear strength",
+                  "metric": "23 N/mm²"
+                },
+                {
+                  "label": "Modulus of elasticity",
+                  "metric": "7.680 N/mm²"
+                },
+                {
+                  "label": "Glass transition temperature",
+                  "metric": "50.8 °C"
+                },
+                {
+                  "label": "Reaction to fire",
+                  "metric": "B-s1"
+                }
+              ]
+            },
+            {
+              "title": "Packaging and storage",
+              "rows": [
+                {
+                  "label": "Packaging",
+                  "metric": "Kits of 1.25 / 4.5 / 9 kg (component A + B)"
+                },
+                {
+                  "label": "Storage",
+                  "metric": "24 months, +5 °C to +30 °C, unopened packaging"
+                }
+              ]
+            }
+          ],
+          "note": "",
+          "source": "Information taken from Mapei's technical data sheets (in Swedish).",
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Contact us</a> for price, delivery time and more information.",
+          "gen": true
+        },
+        {
+          "type": "related",
+          "title": "See also",
+          "items": [
+            {
+              "href": "/produkter/mapei",
+              "mutual": false
+            },
+            {
+              "href": "/produkter/mapei/redirep-45-rsf"
+            },
+            {
+              "href": "/produkter/mapei/planitop-rasa-ripara-r4"
+            },
+            {
+              "href": "/produkter/mapei/montocryl"
+            }
+          ],
+          "gen": true
+        }
+      ]
+    },
+    "es": {
+      "title": "Mapepoxy L",
+      "h1": "Mapei Mapepoxy L",
+      "description": "Mapepoxy L es un adhesivo epoxi bicomponente de curado rápido para el pegado estructural de hormigón fresco sobre hormigón antiguo, hormigón antiguo sobre hormigón antiguo y acero sobre hormigón.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Mapei logotyp",
+          "href": "/produkter/mapei",
+          "width": 1920,
+          "height": 493,
+          "src": "/assets/img/mapei-1.webp",
+          "gen": true
+        },
+        {
+          "type": "image",
+          "alt": "Mapei Mapepoxy L",
+          "src": "/assets/img/mapei-mapepoxy-l-main.webp",
+          "width": 830,
+          "height": 516,
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "Mapepoxy L es un adhesivo epoxi bicomponente de curado rápido para el pegado estructural de hormigón fresco sobre hormigón antiguo, hormigón antiguo sobre hormigón antiguo y acero sobre hormigón. También puede usarse como revestimiento protector resistente al desgaste sobre hormigón y acero y para anclar pernos en agujeros taladrados. Solo para uso profesional.",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Bajas emisiones, cumple M1",
+            "Buena adherencia al hormigón, también en ambiente húmedo",
+            "Sin plastificantes ni alcohol bencílico",
+            "Cumple EN 1504-4",
+            "Se aplica con brocha, espátula o pistola de embudo",
+            "Color: gris"
+          ],
+          "gen": true
+        },
+        {
+          "type": "stat",
+          "label": "Consumo",
+          "value": "0,5-1,5 kg/m²",
+          "unit": "como adhesivo",
+          "meta": "según la superficie",
+          "note": "El consumo varía con la regularidad de la superficie, la temperatura y el método de aplicación.",
+          "usage": true,
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Ficha técnica (TDS)",
+          "href": "/assets/docs/mapei-mapepoxy-l-tekniskt-datablad.pdf",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Ficha de datos de seguridad (SDS)",
+          "href": "/assets/docs/mapei-mapepoxy-l-sakerhetsdatablad.pdf",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Declaración de prestaciones (DoP)",
+          "href": "/assets/docs/mapei-mapepoxy-l-prestandadeklaration.pdf",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Declaración ambiental de producto (EPD)",
+          "href": "/assets/docs/mapei-mapepoxy-l-epd.pdf",
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Campos de aplicación",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Pegado de hormigón fresco sobre hormigón endurecido",
+            "Pegado de hormigón endurecido sobre hormigón endurecido",
+            "Pegado de acero sobre hormigón o acero sobre acero (solo superficies horizontales)",
+            "Anclaje de pernos en agujeros taladrados",
+            "Revestimiento protector sobre hormigón y acero, al menos 2 capas con espolvoreo de arena entre ellas"
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Aplicación",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "El hormigón debe estar limpio, sin polvo y firme, preferiblemente arenado. El acero debe estar libre de óxido (chorreado a SA 2½)",
+            "Vierta el componente B en el componente A y mezcle unos 3 minutos con taladro y mezclador a baja velocidad. No diluir el producto",
+            "Aplique con brocha, espátula o pistola de embudo dentro del tiempo de trabajabilidad",
+            "El hormigón fresco debe colocarse dentro del tiempo abierto; de lo contrario se espolvorea arena sobre el adhesivo y se aplica una nueva capa"
+          ],
+          "gen": true
+        },
+        {
+          "type": "datasheet",
+          "title": "Datos técnicos",
+          "tagline": "Mapei Mapepoxy L",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Aplicación",
+              "rows": [
+                {
+                  "label": "Proporción de mezcla",
+                  "metric": "8 : 1 (A : B)"
+                },
+                {
+                  "label": "Color",
+                  "metric": "gris"
+                },
+                {
+                  "label": "Consistencia",
+                  "metric": "líquido espeso"
+                },
+                {
+                  "label": "Densidad de la mezcla fresca",
+                  "metric": "ca 1.530 kg/m³"
+                },
+                {
+                  "label": "Temperatura de aplicación",
+                  "metric": "+5 °C till +30 °C"
+                },
+                {
+                  "label": "Tiempo de trabajabilidad (+5 / +20 / +30 °C)",
+                  "metric": "28 / 20 / 14 min"
+                },
+                {
+                  "label": "Tiempo abierto (+5 / +20 / +30 °C)",
+                  "metric": "240 / 70 / 60 min"
+                }
+              ]
+            },
+            {
+              "title": "Propiedades finales",
+              "rows": [
+                {
+                  "label": "Resistencia a compresión (+20 °C, 2,5 tim / 7 d)",
+                  "metric": "40 / 110 N/mm²"
+                },
+                {
+                  "label": "Resistencia a compresión (+5 °C, 16 tim / 28 d)",
+                  "metric": "60 / 95 N/mm²"
+                },
+                {
+                  "label": "Resistencia a flexión (7 d)",
+                  "metric": "39,5 N/mm²"
+                },
+                {
+                  "label": "Resistencia a cortante",
+                  "metric": "23 N/mm²"
+                },
+                {
+                  "label": "Módulo de elasticidad",
+                  "metric": "7.680 N/mm²"
+                },
+                {
+                  "label": "Temperatura de transición vítrea",
+                  "metric": "50,8 °C"
+                },
+                {
+                  "label": "Reacción al fuego",
+                  "metric": "B-s1"
+                }
+              ]
+            },
+            {
+              "title": "Envase y almacenamiento",
+              "rows": [
+                {
+                  "label": "Envase",
+                  "metric": "Kits de 1,25 / 4,5 / 9 kg (componente A + B)"
+                },
+                {
+                  "label": "Almacenamiento",
+                  "metric": "24 meses, +5 °C a +30 °C, envase cerrado"
+                }
+              ]
+            }
+          ],
+          "note": "",
+          "source": "Información tomada de las fichas técnicas de Mapei (en sueco).",
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Contáctenos</a> para precio, plazo de entrega y más información.",
+          "gen": true
+        },
+        {
+          "type": "related",
+          "title": "Véase también",
+          "items": [
+            {
+              "href": "/produkter/mapei",
+              "mutual": false
+            },
+            {
+              "href": "/produkter/mapei/redirep-45-rsf"
+            },
+            {
+              "href": "/produkter/mapei/planitop-rasa-ripara-r4"
+            },
+            {
+              "href": "/produkter/mapei/montocryl"
+            }
+          ],
+          "gen": true
+        }
+      ]
+    },
+    "no": {
+      "title": "Mapepoxy L",
+      "h1": "Mapei Mapepoxy L",
+      "description": "Mapepoxy L er en todelt, hurtigherdende epoksylim for kraftoverførende liming av fersk betong mot gammel betong, gammel betong mot gammel betong og stål mot betong.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Mapei logotyp",
+          "href": "/produkter/mapei",
+          "width": 1920,
+          "height": 493,
+          "src": "/assets/img/mapei-1.webp",
+          "gen": true
+        },
+        {
+          "type": "image",
+          "alt": "Mapei Mapepoxy L",
+          "src": "/assets/img/mapei-mapepoxy-l-main.webp",
+          "width": 830,
+          "height": 516,
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "Mapepoxy L er en todelt, hurtigherdende epoksylim for kraftoverførende liming av fersk betong mot gammel betong, gammel betong mot gammel betong og stål mot betong. Den kan også brukes som slitesterkt beskyttelsesbelegg på betong og stål og til forankring av bolter i borede hull. Kun for profesjonell bruk.",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Lave utslipp, oppfyller M1",
+            "God heft til betong, også i fuktig miljø",
+            "Ingen myknere eller benzylalkohol",
+            "Oppfyller EN 1504-4",
+            "Påføres med pensel, rakel eller traktspray",
+            "Farge: grå"
+          ],
+          "gen": true
+        },
+        {
+          "type": "stat",
+          "label": "Forbruk",
+          "value": "0,5-1,5 kg/m²",
+          "unit": "som lim",
+          "meta": "avhengig av underlaget",
+          "note": "Forbruket varierer med underlagets jevnhet, temperaturen og påføringsmåten.",
+          "usage": true,
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Teknisk datablad (TDS)",
+          "href": "/assets/docs/mapei-mapepoxy-l-tekniskt-datablad.pdf",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Sikkerhetsdatablad (SDS)",
+          "href": "/assets/docs/mapei-mapepoxy-l-sakerhetsdatablad.pdf",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Ytelseserklæring (DoP)",
+          "href": "/assets/docs/mapei-mapepoxy-l-prestandadeklaration.pdf",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Miljødeklarasjon (EPD)",
+          "href": "/assets/docs/mapei-mapepoxy-l-epd.pdf",
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Bruksområder",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Liming av fersk betong på herdet betong",
+            "Liming av herdet betong på herdet betong",
+            "Liming av stål på betong eller stål på stål (kun horisontale flater)",
+            "Forankring av bolter i borede hull",
+            "Beskyttelsesbelegg på betong og stål, minst 2 lag med sandstrø imellom"
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Påføring",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Betongen skal være ren, støvfri og fast, helst sandblåst. Stål skal være fritt for rust (sandblåsing til SA 2½)",
+            "Hell komponent B i komponent A og bland i omtrent 3 minutter med visp på lav hastighet. Produktet skal ikke tynnes",
+            "Påfør med pensel, rakel eller traktspray innenfor brukstiden",
+            "Fersk betong skal støpes innenfor åpen tid, ellers strøs limet med sand og et nytt lag legges"
+          ],
+          "gen": true
+        },
+        {
+          "type": "datasheet",
+          "title": "Tekniske data",
+          "tagline": "Mapei Mapepoxy L",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Påføring",
+              "rows": [
+                {
+                  "label": "Blandingsforhold",
+                  "metric": "8 : 1 (A : B)"
+                },
+                {
+                  "label": "Farge",
+                  "metric": "grå"
+                },
+                {
+                  "label": "Konsistens",
+                  "metric": "tykk væske"
+                },
+                {
+                  "label": "Densitet, fersk blanding",
+                  "metric": "ca 1 530 kg/m³"
+                },
+                {
+                  "label": "Påføringstemperatur",
+                  "metric": "+5 °C till +30 °C"
+                },
+                {
+                  "label": "Brukstid (+5 / +20 / +30 °C)",
+                  "metric": "28 / 20 / 14 min"
+                },
+                {
+                  "label": "Åpen tid (+5 / +20 / +30 °C)",
+                  "metric": "240 / 70 / 60 min"
+                }
+              ]
+            },
+            {
+              "title": "Sluttegenskaper",
+              "rows": [
+                {
+                  "label": "Trykkfasthet (+20 °C, 2,5 tim / 7 d)",
+                  "metric": "40 / 110 N/mm²"
+                },
+                {
+                  "label": "Trykkfasthet (+5 °C, 16 tim / 28 d)",
+                  "metric": "60 / 95 N/mm²"
+                },
+                {
+                  "label": "Bøyefasthet (7 d)",
+                  "metric": "39,5 N/mm²"
+                },
+                {
+                  "label": "Skjærfasthet",
+                  "metric": "23 N/mm²"
+                },
+                {
+                  "label": "Elastisitetsmodul",
+                  "metric": "7 680 N/mm²"
+                },
+                {
+                  "label": "Glassovergangstemperatur",
+                  "metric": "50,8 °C"
+                },
+                {
+                  "label": "Brannklasse",
+                  "metric": "B-s1"
+                }
+              ]
+            },
+            {
+              "title": "Emballasje og lagring",
+              "rows": [
+                {
+                  "label": "Emballasje",
+                  "metric": "Sett på 1,25 / 4,5 / 9 kg (komponent A + B)"
+                },
+                {
+                  "label": "Lagring",
+                  "metric": "24 måneder, +5 °C til +30 °C, uåpnet emballasje"
+                }
+              ]
+            }
+          ],
+          "note": "",
+          "source": "Opplysningene er hentet fra Mapeis tekniske datablader (på svensk).",
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Kontakt oss</a> for pris, leveringstid og mer informasjon.",
+          "gen": true
+        },
+        {
+          "type": "related",
+          "title": "Se også",
+          "items": [
+            {
+              "href": "/produkter/mapei",
+              "mutual": false
+            },
+            {
+              "href": "/produkter/mapei/redirep-45-rsf"
+            },
+            {
+              "href": "/produkter/mapei/planitop-rasa-ripara-r4"
+            },
+            {
+              "href": "/produkter/mapei/montocryl"
+            }
+          ],
+          "gen": true
+        }
+      ]
+    }
+  }
+}

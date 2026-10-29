@@ -1,6 +1,6 @@
 {
   "path": "/produkter/mapei",
-  "updated": "2026-10-10",
+  "updated": "2026-10-29",
   "template": "brand",
   "origin": {
     "country": "it"
@@ -26,6 +26,70 @@
         {
           "type": "text",
           "html": "Mapei har ett stort sortiment av hållbara produkter för byggindustrin. Ta en titt i deras broschyr nedan eller <a href=\"/kontakta-oss\">kontakta oss</a> för mer information. Välkommen att ta del av Mapei:s värld av produkter och systemlösningar, Du finner lösning på Ditt problem med hjälp av denna systemguide. Vid ytterligare frågor är Du varmt välkommen att <a href=\"/kontakta-oss\">kontakta oss</a>."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Produkter",
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 4,
+          "square": true,
+          "more": false,
+          "gen": true,
+          "items": [
+            {
+              "title": "Mapepoxy L",
+              "image": "/assets/img/mapei-mapepoxy-l-tile.webp",
+              "alt": "Mapei Mapepoxy L",
+              "href": "/produkter/mapei/mapepoxy-l",
+              "bullets": [
+                "Epoxilim, 2 komponenter",
+                "Åtgång: 0,5-1,5 kg/m²"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "Redirep 45 RSF",
+              "image": "/assets/img/mapei-redirep-45-rsf-tile.webp",
+              "alt": "Mapei Redirep 45 RSF",
+              "href": "/produkter/mapei/redirep-45-rsf",
+              "bullets": [
+                "Reparationsbruk R4, 25 kg",
+                "Åtgång: 2 kg/m² per mm"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "Planitop Rasa & Ripara R4",
+              "image": "/assets/img/mapei-planitop-rasa-ripara-r4-tile.webp",
+              "alt": "Mapei Planitop Rasa & Ripara R4",
+              "href": "/produkter/mapei/planitop-rasa-ripara-r4",
+              "bullets": [
+                "Strukturbruk R4, 25 kg",
+                "Åtgång: 17 kg/m² per cm"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "Montocryl",
+              "image": "/assets/img/mapei-montocryl-tile.webp",
+              "alt": "Mapei Montocryl",
+              "href": "/produkter/mapei/montocryl",
+              "bullets": [
+                "Förankringsbruk (PMMA), 13,9 kg",
+                "Åtgång: 2,3 kg/l"
+              ],
+              "width": 1000,
+              "height": 1000
+            }
+          ]
         },
         {
           "type": "modules",
@@ -88,6 +152,70 @@
         {
           "type": "text",
           "html": "Mapei has a large range of sustainable products for the construction industry. Take a look at their brochure below or <a href=\"/kontakta-oss\">contact us</a> for more information. Welcome to explore Mapei’s world of products and system solutions, you will find a solution to your problem with the help of this system guide. If you have further questions you are very welcome to <a href=\"/kontakta-oss\">contact us</a>."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Products",
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 4,
+          "square": true,
+          "more": false,
+          "gen": true,
+          "items": [
+            {
+              "title": "Mapepoxy L",
+              "image": "/assets/img/mapei-mapepoxy-l-tile.webp",
+              "alt": "Mapei Mapepoxy L",
+              "href": "/produkter/mapei/mapepoxy-l",
+              "bullets": [
+                "Epoxy adhesive, 2 components",
+                "Consumption: 0.5-1.5 kg/m²"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "Redirep 45 RSF",
+              "image": "/assets/img/mapei-redirep-45-rsf-tile.webp",
+              "alt": "Mapei Redirep 45 RSF",
+              "href": "/produkter/mapei/redirep-45-rsf",
+              "bullets": [
+                "Repair mortar R4, 25 kg",
+                "Consumption: 2 kg/m² per mm"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "Planitop Rasa & Ripara R4",
+              "image": "/assets/img/mapei-planitop-rasa-ripara-r4-tile.webp",
+              "alt": "Mapei Planitop Rasa & Ripara R4",
+              "href": "/produkter/mapei/planitop-rasa-ripara-r4",
+              "bullets": [
+                "Structural mortar R4, 25 kg",
+                "Consumption: 17 kg/m² per cm"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "Montocryl",
+              "image": "/assets/img/mapei-montocryl-tile.webp",
+              "alt": "Mapei Montocryl",
+              "href": "/produkter/mapei/montocryl",
+              "bullets": [
+                "Anchoring mortar (PMMA), 13.9 kg",
+                "Consumption: 2.3 kg/l"
+              ],
+              "width": 1000,
+              "height": 1000
+            }
+          ]
         },
         {
           "type": "modules",
@@ -153,6 +281,70 @@
           "html": "Mapei dispone de una amplia gama de productos sostenibles para la industria de la construcción. Consulte su folleto a continuación o <a href=\"/kontakta-oss\">contáctenos</a> para más información. Le invitamos a descubrir el mundo de productos y soluciones de sistema de Mapei: con esta guía de sistemas encontrará la solución a su problema. Si tiene más preguntas, no dude en <a href=\"/kontakta-oss\">contactarnos</a>."
         },
         {
+          "type": "heading",
+          "level": 2,
+          "text": "Productos",
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 4,
+          "square": true,
+          "more": false,
+          "gen": true,
+          "items": [
+            {
+              "title": "Mapepoxy L",
+              "image": "/assets/img/mapei-mapepoxy-l-tile.webp",
+              "alt": "Mapei Mapepoxy L",
+              "href": "/produkter/mapei/mapepoxy-l",
+              "bullets": [
+                "Adhesivo epoxi, 2 componentes",
+                "Consumo: 0,5-1,5 kg/m²"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "Redirep 45 RSF",
+              "image": "/assets/img/mapei-redirep-45-rsf-tile.webp",
+              "alt": "Mapei Redirep 45 RSF",
+              "href": "/produkter/mapei/redirep-45-rsf",
+              "bullets": [
+                "Mortero de reparación R4, 25 kg",
+                "Consumo: 2 kg/m² por mm"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "Planitop Rasa & Ripara R4",
+              "image": "/assets/img/mapei-planitop-rasa-ripara-r4-tile.webp",
+              "alt": "Mapei Planitop Rasa & Ripara R4",
+              "href": "/produkter/mapei/planitop-rasa-ripara-r4",
+              "bullets": [
+                "Mortero estructural R4, 25 kg",
+                "Consumo: 17 kg/m² por cm"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "Montocryl",
+              "image": "/assets/img/mapei-montocryl-tile.webp",
+              "alt": "Mapei Montocryl",
+              "href": "/produkter/mapei/montocryl",
+              "bullets": [
+                "Mortero de anclaje (PMMA), 13,9 kg",
+                "Consumo: 2,3 kg/l"
+              ],
+              "width": 1000,
+              "height": 1000
+            }
+          ]
+        },
+        {
           "type": "modules",
           "layout": "tiles",
           "columns": 1,
@@ -214,6 +406,70 @@
         {
           "type": "text",
           "html": "Mapei har et stort sortiment av bærekraftige produkter for byggebransjen. Ta en titt i brosjyren deres nedenfor eller <a href=\"/kontakta-oss\">kontakt oss</a> for mer informasjon. Velkommen til å ta del i Mapeis verden av produkter og systemløsninger, du finner løsningen på problemet ditt ved hjelp av denne systemguiden. Ved ytterligere spørsmål er du hjertelig velkommen til å <a href=\"/kontakta-oss\">kontakte oss</a>."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Produkter",
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 4,
+          "square": true,
+          "more": false,
+          "gen": true,
+          "items": [
+            {
+              "title": "Mapepoxy L",
+              "image": "/assets/img/mapei-mapepoxy-l-tile.webp",
+              "alt": "Mapei Mapepoxy L",
+              "href": "/produkter/mapei/mapepoxy-l",
+              "bullets": [
+                "Epoksylim, 2 komponenter",
+                "Forbruk: 0,5-1,5 kg/m²"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "Redirep 45 RSF",
+              "image": "/assets/img/mapei-redirep-45-rsf-tile.webp",
+              "alt": "Mapei Redirep 45 RSF",
+              "href": "/produkter/mapei/redirep-45-rsf",
+              "bullets": [
+                "Reparasjonsmørtel R4, 25 kg",
+                "Forbruk: 2 kg/m² per mm"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "Planitop Rasa & Ripara R4",
+              "image": "/assets/img/mapei-planitop-rasa-ripara-r4-tile.webp",
+              "alt": "Mapei Planitop Rasa & Ripara R4",
+              "href": "/produkter/mapei/planitop-rasa-ripara-r4",
+              "bullets": [
+                "Strukturmørtel R4, 25 kg",
+                "Forbruk: 17 kg/m² per cm"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "Montocryl",
+              "image": "/assets/img/mapei-montocryl-tile.webp",
+              "alt": "Mapei Montocryl",
+              "href": "/produkter/mapei/montocryl",
+              "bullets": [
+                "Forankringsmørtel (PMMA), 13,9 kg",
+                "Forbruk: 2,3 kg/l"
+              ],
+              "width": 1000,
+              "height": 1000
+            }
+          ]
         },
         {
           "type": "modules",

@@ -1,0 +1,1040 @@
+{
+  "path": "/produkter/mapei/redirep-45-rsf",
+  "updated": "2026-10-29",
+  "template": "product",
+  "order": 1,
+  "published": true,
+  "hero": {
+    "image": "/assets/img/mapei-hero.webp"
+  },
+  "i18n": {
+    "sv": {
+      "title": "Redirep 45 RSF",
+      "h1": "Mapei Redirep 45 RSF",
+      "description": "Redirep 45 RSF är ett fiberarmerat, krympkompenserat och tixotropt reparationsbruk för betong med snabb bindning och hög frostbeständighet.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Mapei logotyp",
+          "href": "/produkter/mapei",
+          "width": 1920,
+          "height": 493,
+          "src": "/assets/img/mapei-1.webp",
+          "gen": true
+        },
+        {
+          "type": "image",
+          "alt": "Mapei Redirep 45 RSF",
+          "src": "/assets/img/mapei-redirep-45-rsf-main.webp",
+          "width": 439,
+          "height": 830,
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "Redirep 45 RSF är ett fiberarmerat, krympkompenserat och tixotropt reparationsbruk för betong med snabb bindning och hög frostbeständighet. Det är avsett för reparation av sår och skador i betongunderlag och uppfyller EN 1504-3, klass R4. Levereras i 25 kg säck.",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Snabb bindning och snabb hållfasthetsutveckling",
+            "Krympkompenserat, formstabilt",
+            "Mycket god vidhäftning mot betong",
+            "Frostbeständigt, lämpar sig för nordiskt klimat",
+            "Låg permeabilitet, tål marin miljö",
+            "Klass R4 enligt EN 1504-3, EC1 Plus"
+          ],
+          "gen": true
+        },
+        {
+          "type": "stat",
+          "label": "Åtgång",
+          "value": "2 kg/m²",
+          "unit": "per mm tjocklek",
+          "meta": "3-40 mm per skikt",
+          "note": "Teoretisk åtgång. Verklig åtgång beror på underlagets ojämnheter.",
+          "usage": true,
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Tekniskt datablad (TDS)",
+          "href": "/assets/docs/mapei-redirep-45-rsf-tekniskt-datablad.pdf",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Säkerhetsdatablad (SDS)",
+          "href": "/assets/docs/mapei-redirep-45-rsf-sakerhetsdatablad.pdf",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Prestandadeklaration (DoP)",
+          "href": "/assets/docs/mapei-redirep-45-rsf-prestandadeklaration.pdf",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Miljövarudeklaration (EPD)",
+          "href": "/assets/docs/mapei-redirep-45-rsf-epd.pdf",
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Användningsområden",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Reparation av sår och skador i betongunderlag",
+            "Bärande och icke bärande reparationer (klass R4)",
+            "Reparationer där frostbeständighet och tätt bruk krävs, även i marin miljö"
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Applicering",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Rengör ytan från damm och lösa partiklar och förvattna sugande underlag. Inget fritt vatten får finnas kvar",
+            "Blanda 3,2-3,45 liter vatten per 25 kg säck maskinellt i 2-3 minuter, låt dra i 3 minuter och blanda igen",
+            "Vid behov, lägg ett vidhäftningsskikt av Redisit eller Mapepoxy L och applicera bruket vått i vått",
+            "Applicera för hand med murarverktyg eller med spruta, 3-40 mm per skikt. Brukstid cirka 20 minuter vid +20 °C"
+          ],
+          "gen": true
+        },
+        {
+          "type": "datasheet",
+          "title": "Teknisk data",
+          "tagline": "Mapei Redirep 45 RSF",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Produkt",
+              "rows": [
+                {
+                  "label": "Hållfasthetsklass (EN 1504-3)",
+                  "metric": "R4"
+                },
+                {
+                  "label": "Typ",
+                  "metric": "PCC"
+                },
+                {
+                  "label": "Konsistens",
+                  "metric": "pulver"
+                },
+                {
+                  "label": "Färg",
+                  "metric": "grå"
+                },
+                {
+                  "label": "Största kornstorlek",
+                  "metric": "1,0 mm"
+                },
+                {
+                  "label": "Kloridjoninnehåll",
+                  "metric": "≤ 0,05 %"
+                },
+                {
+                  "label": "EMICODE",
+                  "metric": "EC1 Plus"
+                }
+              ]
+            },
+            {
+              "title": "Applicering",
+              "rows": [
+                {
+                  "label": "Blandningsförhållande",
+                  "metric": "12,8-13,8 delar vatten per 100 delar (3,2-3,45 l per 25 kg)"
+                },
+                {
+                  "label": "Densitet, färsk blandning",
+                  "metric": "2,05 g/cm³"
+                },
+                {
+                  "label": "pH",
+                  "metric": "> 12"
+                },
+                {
+                  "label": "Appliceringstemperatur",
+                  "metric": "+5 °C till +35 °C"
+                },
+                {
+                  "label": "Brukstid",
+                  "metric": "ca 20 min (+20 °C), ca 35 min (+10 °C)"
+                },
+                {
+                  "label": "Skikttjocklek",
+                  "metric": "3-40 mm"
+                }
+              ]
+            },
+            {
+              "title": "Slutegenskaper",
+              "rows": [
+                {
+                  "label": "Tryckhållfasthet (EN 12190, 1 / 7 / 28 d)",
+                  "metric": "> 20 / > 30 / > 45 N/mm²"
+                },
+                {
+                  "label": "Böjhållfasthet (EN 196-1, 1 / 7 / 28 d)",
+                  "metric": "> 3 / > 4 / > 6 N/mm²"
+                },
+                {
+                  "label": "Elasticitetsmodul (28 d)",
+                  "metric": "22 GPa"
+                },
+                {
+                  "label": "Vidhäftning mot betong (EN 1542, 28 d)",
+                  "metric": "> 2,0 N/mm²"
+                },
+                {
+                  "label": "Kapillärsugning (EN 13057)",
+                  "metric": "0,11 kg/m²·h⁰˒⁵"
+                },
+                {
+                  "label": "Frys-/töcykler med tösalter (50 cykler)",
+                  "metric": "3,5 N/mm²"
+                },
+                {
+                  "label": "Brandklass",
+                  "metric": "A1"
+                }
+              ]
+            },
+            {
+              "title": "Förpackning och lagring",
+              "rows": [
+                {
+                  "label": "Förpackning",
+                  "metric": "25 kg säck"
+                },
+                {
+                  "label": "Lagring",
+                  "metric": "12 månader, oöppnad originalförpackning, torr miljö"
+                }
+              ]
+            }
+          ],
+          "note": "",
+          "source": "Uppgifterna är hämtade ur Mapeis tekniska datablad (svenska).",
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Kontakta oss</a> för pris, leveranstid och mer information.",
+          "gen": true
+        },
+        {
+          "type": "related",
+          "title": "Se även",
+          "items": [
+            {
+              "href": "/produkter/mapei",
+              "mutual": false
+            },
+            {
+              "href": "/produkter/mapei/mapepoxy-l"
+            },
+            {
+              "href": "/produkter/mapei/planitop-rasa-ripara-r4"
+            },
+            {
+              "href": "/produkter/mapei/montocryl"
+            }
+          ],
+          "gen": true
+        }
+      ]
+    },
+    "en": {
+      "title": "Redirep 45 RSF",
+      "h1": "Mapei Redirep 45 RSF",
+      "description": "Redirep 45 RSF is a fibre-reinforced, shrinkage-compensated, thixotropic repair mortar for concrete with fast setting and high frost resistance.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Mapei logotyp",
+          "href": "/produkter/mapei",
+          "width": 1920,
+          "height": 493,
+          "src": "/assets/img/mapei-1.webp",
+          "gen": true
+        },
+        {
+          "type": "image",
+          "alt": "Mapei Redirep 45 RSF",
+          "src": "/assets/img/mapei-redirep-45-rsf-main.webp",
+          "width": 439,
+          "height": 830,
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "Redirep 45 RSF is a fibre-reinforced, shrinkage-compensated, thixotropic repair mortar for concrete with fast setting and high frost resistance. It is intended for repairing damage in concrete substrates and meets EN 1504-3, class R4. Supplied in 25 kg bags.",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Fast setting and fast strength development",
+            "Shrinkage-compensated, dimensionally stable",
+            "Very good adhesion to concrete",
+            "Frost resistant, suited to the Nordic climate",
+            "Low permeability, withstands marine environments",
+            "Class R4 to EN 1504-3, EC1 Plus"
+          ],
+          "gen": true
+        },
+        {
+          "type": "stat",
+          "label": "Consumption",
+          "value": "2 kg/m²",
+          "unit": "per mm of thickness",
+          "meta": "3-40 mm per layer",
+          "note": "Theoretical consumption. Actual consumption depends on the unevenness of the substrate.",
+          "usage": true,
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Technical data sheet (TDS)",
+          "href": "/assets/docs/mapei-redirep-45-rsf-tekniskt-datablad.pdf",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Safety data sheet (SDS)",
+          "href": "/assets/docs/mapei-redirep-45-rsf-sakerhetsdatablad.pdf",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Declaration of performance (DoP)",
+          "href": "/assets/docs/mapei-redirep-45-rsf-prestandadeklaration.pdf",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Environmental product declaration (EPD)",
+          "href": "/assets/docs/mapei-redirep-45-rsf-epd.pdf",
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Areas of use",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Repair of damage and defects in concrete substrates",
+            "Structural and non-structural repairs (class R4)",
+            "Repairs where frost resistance and a dense mortar are required, also in marine environments"
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Application",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Clean the surface of dust and loose particles and pre-wet absorbent substrates. No free water may remain",
+            "Mix 3.2-3.45 litres of water per 25 kg bag with a machine for 2-3 minutes, let it rest for 3 minutes and mix again",
+            "If needed, apply a bonding layer of Redisit or Mapepoxy L and apply the mortar wet-on-wet",
+            "Apply by hand with a trowel or by spray, 3-40 mm per layer. Pot life about 20 minutes at +20 °C"
+          ],
+          "gen": true
+        },
+        {
+          "type": "datasheet",
+          "title": "Technical data",
+          "tagline": "Mapei Redirep 45 RSF",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Product",
+              "rows": [
+                {
+                  "label": "Strength class (EN 1504-3)",
+                  "metric": "R4"
+                },
+                {
+                  "label": "Type",
+                  "metric": "PCC"
+                },
+                {
+                  "label": "Consistency",
+                  "metric": "powder"
+                },
+                {
+                  "label": "Colour",
+                  "metric": "grey"
+                },
+                {
+                  "label": "Maximum grain size",
+                  "metric": "1.0 mm"
+                },
+                {
+                  "label": "Chloride ion content",
+                  "metric": "≤ 0.05 %"
+                },
+                {
+                  "label": "EMICODE",
+                  "metric": "EC1 Plus"
+                }
+              ]
+            },
+            {
+              "title": "Application",
+              "rows": [
+                {
+                  "label": "Mixing ratio",
+                  "metric": "12.8-13.8 parts water per 100 parts (3.2-3.45 l per 25 kg)"
+                },
+                {
+                  "label": "Density, fresh mix",
+                  "metric": "2.05 g/cm³"
+                },
+                {
+                  "label": "pH",
+                  "metric": "> 12"
+                },
+                {
+                  "label": "Application temperature",
+                  "metric": "+5 °C till +35 °C"
+                },
+                {
+                  "label": "Pot life",
+                  "metric": "about 20 min (+20 °C), about 35 min (+10 °C)"
+                },
+                {
+                  "label": "Layer thickness",
+                  "metric": "3-40 mm"
+                }
+              ]
+            },
+            {
+              "title": "Final properties",
+              "rows": [
+                {
+                  "label": "Compressive strength (EN 12190, 1 / 7 / 28 d)",
+                  "metric": "> 20 / > 30 / > 45 N/mm²"
+                },
+                {
+                  "label": "Flexural strength (EN 196-1, 1 / 7 / 28 d)",
+                  "metric": "> 3 / > 4 / > 6 N/mm²"
+                },
+                {
+                  "label": "Modulus of elasticity (28 d)",
+                  "metric": "22 GPa"
+                },
+                {
+                  "label": "Adhesion to concrete (EN 1542, 28 d)",
+                  "metric": "> 2.0 N/mm²"
+                },
+                {
+                  "label": "Capillary absorption (EN 13057)",
+                  "metric": "0.11 kg/m²·h⁰˒⁵"
+                },
+                {
+                  "label": "Freeze-thaw cycles with de-icing salts (50 cycles)",
+                  "metric": "3.5 N/mm²"
+                },
+                {
+                  "label": "Reaction to fire",
+                  "metric": "A1"
+                }
+              ]
+            },
+            {
+              "title": "Packaging and storage",
+              "rows": [
+                {
+                  "label": "Packaging",
+                  "metric": "25 kg bag"
+                },
+                {
+                  "label": "Storage",
+                  "metric": "12 months, unopened original packaging, dry conditions"
+                }
+              ]
+            }
+          ],
+          "note": "",
+          "source": "Information taken from Mapei's technical data sheets (in Swedish).",
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Contact us</a> for price, delivery time and more information.",
+          "gen": true
+        },
+        {
+          "type": "related",
+          "title": "See also",
+          "items": [
+            {
+              "href": "/produkter/mapei",
+              "mutual": false
+            },
+            {
+              "href": "/produkter/mapei/mapepoxy-l"
+            },
+            {
+              "href": "/produkter/mapei/planitop-rasa-ripara-r4"
+            },
+            {
+              "href": "/produkter/mapei/montocryl"
+            }
+          ],
+          "gen": true
+        }
+      ]
+    },
+    "es": {
+      "title": "Redirep 45 RSF",
+      "h1": "Mapei Redirep 45 RSF",
+      "description": "Redirep 45 RSF es un mortero de reparación para hormigón reforzado con fibras, de retracción compensada y tixotrópico, de fraguado rápido y alta resistencia a las heladas.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Mapei logotyp",
+          "href": "/produkter/mapei",
+          "width": 1920,
+          "height": 493,
+          "src": "/assets/img/mapei-1.webp",
+          "gen": true
+        },
+        {
+          "type": "image",
+          "alt": "Mapei Redirep 45 RSF",
+          "src": "/assets/img/mapei-redirep-45-rsf-main.webp",
+          "width": 439,
+          "height": 830,
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "Redirep 45 RSF es un mortero de reparación para hormigón reforzado con fibras, de retracción compensada y tixotrópico, de fraguado rápido y alta resistencia a las heladas. Está pensado para reparar daños en soportes de hormigón y cumple EN 1504-3, clase R4. Se suministra en sacos de 25 kg.",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Fraguado rápido y rápido desarrollo de resistencia",
+            "Retracción compensada, estable dimensionalmente",
+            "Muy buena adherencia al hormigón",
+            "Resistente a las heladas, apto para el clima nórdico",
+            "Baja permeabilidad, resiste el ambiente marino",
+            "Clase R4 según EN 1504-3, EC1 Plus"
+          ],
+          "gen": true
+        },
+        {
+          "type": "stat",
+          "label": "Consumo",
+          "value": "2 kg/m²",
+          "unit": "por mm de espesor",
+          "meta": "3-40 mm por capa",
+          "note": "Consumo teórico. El consumo real depende de las irregularidades del soporte.",
+          "usage": true,
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Ficha técnica (TDS)",
+          "href": "/assets/docs/mapei-redirep-45-rsf-tekniskt-datablad.pdf",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Ficha de datos de seguridad (SDS)",
+          "href": "/assets/docs/mapei-redirep-45-rsf-sakerhetsdatablad.pdf",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Declaración de prestaciones (DoP)",
+          "href": "/assets/docs/mapei-redirep-45-rsf-prestandadeklaration.pdf",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Declaración ambiental de producto (EPD)",
+          "href": "/assets/docs/mapei-redirep-45-rsf-epd.pdf",
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Campos de aplicación",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Reparación de daños y defectos en soportes de hormigón",
+            "Reparaciones estructurales y no estructurales (clase R4)",
+            "Reparaciones que requieren resistencia a las heladas y un mortero denso, también en ambiente marino"
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Aplicación",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Limpie la superficie de polvo y partículas sueltas y humedezca previamente los soportes absorbentes. No debe quedar agua libre",
+            "Mezcle 3,2-3,45 litros de agua por saco de 25 kg con máquina durante 2-3 minutos, deje reposar 3 minutos y vuelva a mezclar",
+            "Si es necesario, aplique una capa de adherencia de Redisit o Mapepoxy L y aplique el mortero fresco sobre fresco",
+            "Aplique a mano con llana o con proyección, 3-40 mm por capa. Tiempo de trabajabilidad de unos 20 minutos a +20 °C"
+          ],
+          "gen": true
+        },
+        {
+          "type": "datasheet",
+          "title": "Datos técnicos",
+          "tagline": "Mapei Redirep 45 RSF",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Producto",
+              "rows": [
+                {
+                  "label": "Clase de resistencia (EN 1504-3)",
+                  "metric": "R4"
+                },
+                {
+                  "label": "Tipo",
+                  "metric": "PCC"
+                },
+                {
+                  "label": "Consistencia",
+                  "metric": "polvo"
+                },
+                {
+                  "label": "Color",
+                  "metric": "gris"
+                },
+                {
+                  "label": "Tamaño máximo de grano",
+                  "metric": "1,0 mm"
+                },
+                {
+                  "label": "Contenido de iones cloruro",
+                  "metric": "≤ 0,05 %"
+                },
+                {
+                  "label": "EMICODE",
+                  "metric": "EC1 Plus"
+                }
+              ]
+            },
+            {
+              "title": "Aplicación",
+              "rows": [
+                {
+                  "label": "Proporción de mezcla",
+                  "metric": "12,8-13,8 partes de agua por 100 partes (3,2-3,45 l por 25 kg)"
+                },
+                {
+                  "label": "Densidad de la mezcla fresca",
+                  "metric": "2,05 g/cm³"
+                },
+                {
+                  "label": "pH",
+                  "metric": "> 12"
+                },
+                {
+                  "label": "Temperatura de aplicación",
+                  "metric": "+5 °C till +35 °C"
+                },
+                {
+                  "label": "Tiempo de trabajabilidad",
+                  "metric": "unos 20 min (+20 °C), unos 35 min (+10 °C)"
+                },
+                {
+                  "label": "Espesor de capa",
+                  "metric": "3-40 mm"
+                }
+              ]
+            },
+            {
+              "title": "Propiedades finales",
+              "rows": [
+                {
+                  "label": "Resistencia a compresión (EN 12190, 1 / 7 / 28 d)",
+                  "metric": "> 20 / > 30 / > 45 N/mm²"
+                },
+                {
+                  "label": "Resistencia a flexión (EN 196-1, 1 / 7 / 28 d)",
+                  "metric": "> 3 / > 4 / > 6 N/mm²"
+                },
+                {
+                  "label": "Módulo de elasticidad (28 d)",
+                  "metric": "22 GPa"
+                },
+                {
+                  "label": "Adherencia al hormigón (EN 1542, 28 d)",
+                  "metric": "> 2,0 N/mm²"
+                },
+                {
+                  "label": "Absorción capilar (EN 13057)",
+                  "metric": "0,11 kg/m²·h⁰˒⁵"
+                },
+                {
+                  "label": "Ciclos hielo-deshielo con sales fundentes (50 ciclos)",
+                  "metric": "3,5 N/mm²"
+                },
+                {
+                  "label": "Reacción al fuego",
+                  "metric": "A1"
+                }
+              ]
+            },
+            {
+              "title": "Envase y almacenamiento",
+              "rows": [
+                {
+                  "label": "Envase",
+                  "metric": "saco de 25 kg"
+                },
+                {
+                  "label": "Almacenamiento",
+                  "metric": "12 meses, envase original cerrado, en seco"
+                }
+              ]
+            }
+          ],
+          "note": "",
+          "source": "Información tomada de las fichas técnicas de Mapei (en sueco).",
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Contáctenos</a> para precio, plazo de entrega y más información.",
+          "gen": true
+        },
+        {
+          "type": "related",
+          "title": "Véase también",
+          "items": [
+            {
+              "href": "/produkter/mapei",
+              "mutual": false
+            },
+            {
+              "href": "/produkter/mapei/mapepoxy-l"
+            },
+            {
+              "href": "/produkter/mapei/planitop-rasa-ripara-r4"
+            },
+            {
+              "href": "/produkter/mapei/montocryl"
+            }
+          ],
+          "gen": true
+        }
+      ]
+    },
+    "no": {
+      "title": "Redirep 45 RSF",
+      "h1": "Mapei Redirep 45 RSF",
+      "description": "Redirep 45 RSF er en fiberarmert, krympkompensert og tiksotrop reparasjonsmørtel for betong med rask binding og høy frostbestandighet.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Mapei logotyp",
+          "href": "/produkter/mapei",
+          "width": 1920,
+          "height": 493,
+          "src": "/assets/img/mapei-1.webp",
+          "gen": true
+        },
+        {
+          "type": "image",
+          "alt": "Mapei Redirep 45 RSF",
+          "src": "/assets/img/mapei-redirep-45-rsf-main.webp",
+          "width": 439,
+          "height": 830,
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "Redirep 45 RSF er en fiberarmert, krympkompensert og tiksotrop reparasjonsmørtel for betong med rask binding og høy frostbestandighet. Den er beregnet for reparasjon av skader i betongunderlag og oppfyller EN 1504-3, klasse R4. Leveres i 25 kg sekk.",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Rask binding og rask fasthetsutvikling",
+            "Krympkompensert, formstabil",
+            "Svært god heft til betong",
+            "Frostbestandig, egnet for nordisk klima",
+            "Lav permeabilitet, tåler marint miljø",
+            "Klasse R4 etter EN 1504-3, EC1 Plus"
+          ],
+          "gen": true
+        },
+        {
+          "type": "stat",
+          "label": "Forbruk",
+          "value": "2 kg/m²",
+          "unit": "per mm tykkelse",
+          "meta": "3-40 mm per lag",
+          "note": "Teoretisk forbruk. Faktisk forbruk avhenger av underlagets ujevnheter.",
+          "usage": true,
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Teknisk datablad (TDS)",
+          "href": "/assets/docs/mapei-redirep-45-rsf-tekniskt-datablad.pdf",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Sikkerhetsdatablad (SDS)",
+          "href": "/assets/docs/mapei-redirep-45-rsf-sakerhetsdatablad.pdf",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Ytelseserklæring (DoP)",
+          "href": "/assets/docs/mapei-redirep-45-rsf-prestandadeklaration.pdf",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Miljødeklarasjon (EPD)",
+          "href": "/assets/docs/mapei-redirep-45-rsf-epd.pdf",
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Bruksområder",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Reparasjon av skader og feil i betongunderlag",
+            "Bærende og ikke-bærende reparasjoner (klasse R4)",
+            "Reparasjoner der frostbestandighet og tett mørtel kreves, også i marint miljø"
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Påføring",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Rengjør overflaten for støv og løse partikler og forvann sugende underlag. Det må ikke stå fritt vann igjen",
+            "Bland 3,2-3,45 liter vann per 25 kg sekk maskinelt i 2-3 minutter, la den trekke i 3 minutter og bland igjen",
+            "Ved behov legges et heftsjikt av Redisit eller Mapepoxy L, og mørtelen påføres vått i vått",
+            "Påfør for hånd med murerverktøy eller med sprøyte, 3-40 mm per lag. Brukstid cirka 20 minutter ved +20 °C"
+          ],
+          "gen": true
+        },
+        {
+          "type": "datasheet",
+          "title": "Tekniske data",
+          "tagline": "Mapei Redirep 45 RSF",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Produkt",
+              "rows": [
+                {
+                  "label": "Fasthetsklasse (EN 1504-3)",
+                  "metric": "R4"
+                },
+                {
+                  "label": "Type",
+                  "metric": "PCC"
+                },
+                {
+                  "label": "Konsistens",
+                  "metric": "pulver"
+                },
+                {
+                  "label": "Farge",
+                  "metric": "grå"
+                },
+                {
+                  "label": "Største kornstørrelse",
+                  "metric": "1,0 mm"
+                },
+                {
+                  "label": "Kloridinnhold",
+                  "metric": "≤ 0,05 %"
+                },
+                {
+                  "label": "EMICODE",
+                  "metric": "EC1 Plus"
+                }
+              ]
+            },
+            {
+              "title": "Påføring",
+              "rows": [
+                {
+                  "label": "Blandingsforhold",
+                  "metric": "12,8-13,8 deler vann per 100 deler (3,2-3,45 l per 25 kg)"
+                },
+                {
+                  "label": "Densitet, fersk blanding",
+                  "metric": "2,05 g/cm³"
+                },
+                {
+                  "label": "pH",
+                  "metric": "> 12"
+                },
+                {
+                  "label": "Påføringstemperatur",
+                  "metric": "+5 °C till +35 °C"
+                },
+                {
+                  "label": "Brukstid",
+                  "metric": "ca. 20 min (+20 °C), ca. 35 min (+10 °C)"
+                },
+                {
+                  "label": "Lagtykkelse",
+                  "metric": "3-40 mm"
+                }
+              ]
+            },
+            {
+              "title": "Sluttegenskaper",
+              "rows": [
+                {
+                  "label": "Trykkfasthet (EN 12190, 1 / 7 / 28 d)",
+                  "metric": "> 20 / > 30 / > 45 N/mm²"
+                },
+                {
+                  "label": "Bøyefasthet (EN 196-1, 1 / 7 / 28 d)",
+                  "metric": "> 3 / > 4 / > 6 N/mm²"
+                },
+                {
+                  "label": "Elastisitetsmodul (28 d)",
+                  "metric": "22 GPa"
+                },
+                {
+                  "label": "Heft til betong (EN 1542, 28 d)",
+                  "metric": "> 2,0 N/mm²"
+                },
+                {
+                  "label": "Kapillær sugning (EN 13057)",
+                  "metric": "0,11 kg/m²·h⁰˒⁵"
+                },
+                {
+                  "label": "Frost-/tinesykluser med tinesalter (50 sykluser)",
+                  "metric": "3,5 N/mm²"
+                },
+                {
+                  "label": "Brannklasse",
+                  "metric": "A1"
+                }
+              ]
+            },
+            {
+              "title": "Emballasje og lagring",
+              "rows": [
+                {
+                  "label": "Emballasje",
+                  "metric": "25 kg sekk"
+                },
+                {
+                  "label": "Lagring",
+                  "metric": "12 måneder, uåpnet originalemballasje, tørt"
+                }
+              ]
+            }
+          ],
+          "note": "",
+          "source": "Opplysningene er hentet fra Mapeis tekniske datablader (på svensk).",
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Kontakt oss</a> for pris, leveringstid og mer informasjon.",
+          "gen": true
+        },
+        {
+          "type": "related",
+          "title": "Se også",
+          "items": [
+            {
+              "href": "/produkter/mapei",
+              "mutual": false
+            },
+            {
+              "href": "/produkter/mapei/mapepoxy-l"
+            },
+            {
+              "href": "/produkter/mapei/planitop-rasa-ripara-r4"
+            },
+            {
+              "href": "/produkter/mapei/montocryl"
+            }
+          ],
+          "gen": true
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,852 @@
+{
+  "path": "/produkter/mapei/planitop-rasa-ripara-r4",
+  "updated": "2026-10-29",
+  "template": "product",
+  "order": 2,
+  "published": true,
+  "hero": {
+    "image": "/assets/img/mapei-hero.webp"
+  },
+  "i18n": {
+    "sv": {
+      "title": "Planitop Rasa & Ripara R4",
+      "h1": "Mapei Planitop Rasa & Ripara R4",
+      "description": "Planitop Rasa & Ripara R4 (Planitop Smooth & Repair R4) är ett snabbhärdande, tixotropt och fiberarmerat cementbruk i klass R4 för strukturella reparationer och skrapning av inre och yttre betongytor, både horisontella o",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Mapei logotyp",
+          "href": "/produkter/mapei",
+          "width": 1920,
+          "height": 493,
+          "src": "/assets/img/mapei-1.webp",
+          "gen": true
+        },
+        {
+          "type": "image",
+          "alt": "Mapei Planitop Rasa & Ripara R4",
+          "src": "/assets/img/mapei-planitop-rasa-ripara-r4-main.webp",
+          "width": 535,
+          "height": 828,
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "Planitop Rasa &amp; Ripara R4 (Planitop Smooth &amp; Repair R4) är ett snabbhärdande, tixotropt och fiberarmerat cementbruk i klass R4 för strukturella reparationer och skrapning av inre och yttre betongytor, både horisontella och vertikala. Bruket har mycket god utmattningshållfasthet, minst 300 000 cykler, och är klimatkompenserat över hela livscykeln.",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Klass R4 enligt EN 1504-3, typ CC",
+            "Snabb härdning, kan appliceras i tunna skikt",
+            "Förbättrad vidhäftning och lätt att bygga upp i tjocka skikt",
+            "Slät finish",
+            "Utmärkt utmattningsbeteende, minst 300 000 cykler",
+            "Uppfyller även EN 1504-2 (beläggning)"
+          ],
+          "gen": true
+        },
+        {
+          "type": "stat",
+          "label": "Åtgång",
+          "value": "17 kg/m²",
+          "unit": "per cm tjocklek",
+          "meta": "3-40 mm per skikt",
+          "note": "Ungefärlig åtgång. Verklig åtgång beror på underlagets ojämnheter.",
+          "usage": true,
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Tekniskt datablad (TDS)",
+          "href": "/assets/docs/mapei-planitop-rasa-ripara-r4-tekniskt-datablad.pdf",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Säkerhetsdatablad (SDS)",
+          "href": "/assets/docs/mapei-planitop-rasa-ripara-r4-sakerhetsdatablad.pdf",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Prestandadeklaration (DoP), EN 1504-3",
+          "href": "/assets/docs/mapei-planitop-rasa-ripara-r4-prestandadeklaration-en-1504-3.pdf",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Prestandadeklaration (DoP), EN 1504-2",
+          "href": "/assets/docs/mapei-planitop-rasa-ripara-r4-prestandadeklaration-en-1504-2.pdf",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Miljövarudeklaration (EPD)",
+          "href": "/assets/docs/mapei-planitop-rasa-ripara-r4-epd.pdf",
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Användningsområden",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Strukturella reparationer av betong, invändigt och utvändigt",
+            "Skrapning och avjämning av horisontella och vertikala betongytor",
+            "Reparation av konstruktioner som utsätts för luft eller är i permanent kontakt med vatten"
+          ],
+          "gen": true
+        },
+        {
+          "type": "datasheet",
+          "title": "Teknisk data",
+          "tagline": "Mapei Planitop Rasa & Ripara R4",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Produkt",
+              "rows": [
+                {
+                  "label": "Klassificering",
+                  "metric": "EN 1504-3, klass R4"
+                },
+                {
+                  "label": "Typ",
+                  "metric": "CC (EN 1504-1)"
+                },
+                {
+                  "label": "Färg",
+                  "metric": "grå"
+                },
+                {
+                  "label": "Konsistens",
+                  "metric": "pulver"
+                },
+                {
+                  "label": "Största kornstorlek",
+                  "metric": "0,4 mm"
+                },
+                {
+                  "label": "Kloridjoninnehåll",
+                  "metric": "≤ 0,05 %"
+                }
+              ]
+            },
+            {
+              "title": "Applicering",
+              "rows": [
+                {
+                  "label": "Blandningsförhållande",
+                  "metric": "100 delar produkt + 18 % vatten"
+                },
+                {
+                  "label": "Densitet, färsk blandning",
+                  "metric": "ca 2 000 kg/m³"
+                },
+                {
+                  "label": "Skikttjocklek",
+                  "metric": "3-40 mm"
+                },
+                {
+                  "label": "Brukstid (+20 °C)",
+                  "metric": "ca 10 min"
+                },
+                {
+                  "label": "Härdningstid",
+                  "metric": "ca 30 min"
+                },
+                {
+                  "label": "Appliceringstemperatur",
+                  "metric": "+5 °C till +35 °C"
+                }
+              ]
+            },
+            {
+              "title": "Förpackning och lagring",
+              "rows": [
+                {
+                  "label": "Förpackning",
+                  "metric": "25 kg säckar"
+                },
+                {
+                  "label": "Lagring",
+                  "metric": "upp till 12 månader, torrt och skyddat, +5 °C till +35 °C"
+                }
+              ]
+            }
+          ],
+          "note": "",
+          "source": "Uppgifterna är hämtade ur Mapeis tekniska datablad (svenska).",
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Kontakta oss</a> för pris, leveranstid och mer information.",
+          "gen": true
+        },
+        {
+          "type": "related",
+          "title": "Se även",
+          "items": [
+            {
+              "href": "/produkter/mapei",
+              "mutual": false
+            },
+            {
+              "href": "/produkter/mapei/mapepoxy-l"
+            },
+            {
+              "href": "/produkter/mapei/redirep-45-rsf"
+            },
+            {
+              "href": "/produkter/mapei/montocryl"
+            }
+          ],
+          "gen": true
+        }
+      ]
+    },
+    "en": {
+      "title": "Planitop Rasa & Ripara R4",
+      "h1": "Mapei Planitop Rasa & Ripara R4",
+      "description": "Planitop Rasa & Ripara R4 (Planitop Smooth & Repair R4) is a fast-curing, thixotropic, fibre-reinforced cementitious mortar of class R4 for structural repairs and skim-coating of interior and exterior concrete surfaces, ",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Mapei logotyp",
+          "href": "/produkter/mapei",
+          "width": 1920,
+          "height": 493,
+          "src": "/assets/img/mapei-1.webp",
+          "gen": true
+        },
+        {
+          "type": "image",
+          "alt": "Mapei Planitop Rasa & Ripara R4",
+          "src": "/assets/img/mapei-planitop-rasa-ripara-r4-main.webp",
+          "width": 535,
+          "height": 828,
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "Planitop Rasa &amp; Ripara R4 (Planitop Smooth &amp; Repair R4) is a fast-curing, thixotropic, fibre-reinforced cementitious mortar of class R4 for structural repairs and skim-coating of interior and exterior concrete surfaces, both horizontal and vertical. The mortar has very good fatigue behaviour, at least 300.000 cycles, and is climate-compensated over its whole life cycle.",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Class R4 to EN 1504-3, type CC",
+            "Fast curing, can be applied in thin layers",
+            "Improved adhesion and easy to build up in thick layers",
+            "Smooth finish",
+            "Excellent fatigue behaviour, at least 300.000 cycles",
+            "Also meets EN 1504-2 (coating)"
+          ],
+          "gen": true
+        },
+        {
+          "type": "stat",
+          "label": "Consumption",
+          "value": "17 kg/m²",
+          "unit": "per cm of thickness",
+          "meta": "3-40 mm per layer",
+          "note": "Approximate consumption. Actual consumption depends on the unevenness of the substrate.",
+          "usage": true,
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Technical data sheet (TDS)",
+          "href": "/assets/docs/mapei-planitop-rasa-ripara-r4-tekniskt-datablad.pdf",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Safety data sheet (SDS)",
+          "href": "/assets/docs/mapei-planitop-rasa-ripara-r4-sakerhetsdatablad.pdf",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Declaration of performance (DoP), EN 1504-3",
+          "href": "/assets/docs/mapei-planitop-rasa-ripara-r4-prestandadeklaration-en-1504-3.pdf",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Declaration of performance (DoP), EN 1504-2",
+          "href": "/assets/docs/mapei-planitop-rasa-ripara-r4-prestandadeklaration-en-1504-2.pdf",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Environmental product declaration (EPD)",
+          "href": "/assets/docs/mapei-planitop-rasa-ripara-r4-epd.pdf",
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Areas of use",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Structural repairs of concrete, indoors and outdoors",
+            "Skim-coating and levelling of horizontal and vertical concrete surfaces",
+            "Repair of structures exposed to air or in permanent contact with water"
+          ],
+          "gen": true
+        },
+        {
+          "type": "datasheet",
+          "title": "Technical data",
+          "tagline": "Mapei Planitop Rasa & Ripara R4",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Product",
+              "rows": [
+                {
+                  "label": "Classification",
+                  "metric": "EN 1504-3, klass R4"
+                },
+                {
+                  "label": "Type",
+                  "metric": "CC (EN 1504-1)"
+                },
+                {
+                  "label": "Colour",
+                  "metric": "grey"
+                },
+                {
+                  "label": "Consistency",
+                  "metric": "powder"
+                },
+                {
+                  "label": "Maximum grain size",
+                  "metric": "0.4 mm"
+                },
+                {
+                  "label": "Chloride ion content",
+                  "metric": "≤ 0.05 %"
+                }
+              ]
+            },
+            {
+              "title": "Application",
+              "rows": [
+                {
+                  "label": "Mixing ratio",
+                  "metric": "100 parts product + 18 % water"
+                },
+                {
+                  "label": "Density, fresh mix",
+                  "metric": "ca 2.000 kg/m³"
+                },
+                {
+                  "label": "Layer thickness",
+                  "metric": "3-40 mm"
+                },
+                {
+                  "label": "Pot life (+20 °C)",
+                  "metric": "ca 10 min"
+                },
+                {
+                  "label": "Curing time",
+                  "metric": "ca 30 min"
+                },
+                {
+                  "label": "Application temperature",
+                  "metric": "+5 °C till +35 °C"
+                }
+              ]
+            },
+            {
+              "title": "Packaging and storage",
+              "rows": [
+                {
+                  "label": "Packaging",
+                  "metric": "25 kg bags"
+                },
+                {
+                  "label": "Storage",
+                  "metric": "up to 12 months, dry and protected, +5 °C to +35 °C"
+                }
+              ]
+            }
+          ],
+          "note": "",
+          "source": "Information taken from Mapei's technical data sheets (in Swedish).",
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Contact us</a> for price, delivery time and more information.",
+          "gen": true
+        },
+        {
+          "type": "related",
+          "title": "See also",
+          "items": [
+            {
+              "href": "/produkter/mapei",
+              "mutual": false
+            },
+            {
+              "href": "/produkter/mapei/mapepoxy-l"
+            },
+            {
+              "href": "/produkter/mapei/redirep-45-rsf"
+            },
+            {
+              "href": "/produkter/mapei/montocryl"
+            }
+          ],
+          "gen": true
+        }
+      ]
+    },
+    "es": {
+      "title": "Planitop Rasa & Ripara R4",
+      "h1": "Mapei Planitop Rasa & Ripara R4",
+      "description": "Planitop Rasa & Ripara R4 (Planitop Smooth & Repair R4) es un mortero cementoso de curado rápido, tixotrópico y reforzado con fibras, de clase R4, para reparaciones estructurales y enlucido de superficies de hormigón int",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Mapei logotyp",
+          "href": "/produkter/mapei",
+          "width": 1920,
+          "height": 493,
+          "src": "/assets/img/mapei-1.webp",
+          "gen": true
+        },
+        {
+          "type": "image",
+          "alt": "Mapei Planitop Rasa & Ripara R4",
+          "src": "/assets/img/mapei-planitop-rasa-ripara-r4-main.webp",
+          "width": 535,
+          "height": 828,
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "Planitop Rasa &amp; Ripara R4 (Planitop Smooth &amp; Repair R4) es un mortero cementoso de curado rápido, tixotrópico y reforzado con fibras, de clase R4, para reparaciones estructurales y enlucido de superficies de hormigón interiores y exteriores, tanto horizontales como verticales. El mortero tiene un comportamiento a fatiga muy bueno, al menos 300.000 ciclos, y está compensado climáticamente durante todo su ciclo de vida.",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Clase R4 según EN 1504-3, tipo CC",
+            "Curado rápido, aplicable en capas finas",
+            "Mejor adherencia y fácil de aplicar en capas gruesas",
+            "Acabado liso",
+            "Excelente comportamiento a fatiga, al menos 300.000 ciclos",
+            "Cumple también EN 1504-2 (revestimiento)"
+          ],
+          "gen": true
+        },
+        {
+          "type": "stat",
+          "label": "Consumo",
+          "value": "17 kg/m²",
+          "unit": "por cm de espesor",
+          "meta": "3-40 mm por capa",
+          "note": "Consumo aproximado. El consumo real depende de las irregularidades del soporte.",
+          "usage": true,
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Ficha técnica (TDS)",
+          "href": "/assets/docs/mapei-planitop-rasa-ripara-r4-tekniskt-datablad.pdf",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Ficha de datos de seguridad (SDS)",
+          "href": "/assets/docs/mapei-planitop-rasa-ripara-r4-sakerhetsdatablad.pdf",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Declaración de prestaciones (DoP), EN 1504-3",
+          "href": "/assets/docs/mapei-planitop-rasa-ripara-r4-prestandadeklaration-en-1504-3.pdf",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Declaración de prestaciones (DoP), EN 1504-2",
+          "href": "/assets/docs/mapei-planitop-rasa-ripara-r4-prestandadeklaration-en-1504-2.pdf",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Declaración ambiental de producto (EPD)",
+          "href": "/assets/docs/mapei-planitop-rasa-ripara-r4-epd.pdf",
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Campos de aplicación",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Reparaciones estructurales de hormigón, en interior y exterior",
+            "Enlucido y nivelación de superficies de hormigón horizontales y verticales",
+            "Reparación de estructuras expuestas al aire o en contacto permanente con agua"
+          ],
+          "gen": true
+        },
+        {
+          "type": "datasheet",
+          "title": "Datos técnicos",
+          "tagline": "Mapei Planitop Rasa & Ripara R4",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Producto",
+              "rows": [
+                {
+                  "label": "Clasificación",
+                  "metric": "EN 1504-3, klass R4"
+                },
+                {
+                  "label": "Tipo",
+                  "metric": "CC (EN 1504-1)"
+                },
+                {
+                  "label": "Color",
+                  "metric": "gris"
+                },
+                {
+                  "label": "Consistencia",
+                  "metric": "polvo"
+                },
+                {
+                  "label": "Tamaño máximo de grano",
+                  "metric": "0,4 mm"
+                },
+                {
+                  "label": "Contenido de iones cloruro",
+                  "metric": "≤ 0,05 %"
+                }
+              ]
+            },
+            {
+              "title": "Aplicación",
+              "rows": [
+                {
+                  "label": "Proporción de mezcla",
+                  "metric": "100 partes de producto + 18 % de agua"
+                },
+                {
+                  "label": "Densidad de la mezcla fresca",
+                  "metric": "ca 2.000 kg/m³"
+                },
+                {
+                  "label": "Espesor de capa",
+                  "metric": "3-40 mm"
+                },
+                {
+                  "label": "Tiempo de trabajabilidad (+20 °C)",
+                  "metric": "ca 10 min"
+                },
+                {
+                  "label": "Tiempo de curado",
+                  "metric": "ca 30 min"
+                },
+                {
+                  "label": "Temperatura de aplicación",
+                  "metric": "+5 °C till +35 °C"
+                }
+              ]
+            },
+            {
+              "title": "Envase y almacenamiento",
+              "rows": [
+                {
+                  "label": "Envase",
+                  "metric": "sacos de 25 kg"
+                },
+                {
+                  "label": "Almacenamiento",
+                  "metric": "hasta 12 meses, en seco y protegido, +5 °C a +35 °C"
+                }
+              ]
+            }
+          ],
+          "note": "",
+          "source": "Información tomada de las fichas técnicas de Mapei (en sueco).",
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Contáctenos</a> para precio, plazo de entrega y más información.",
+          "gen": true
+        },
+        {
+          "type": "related",
+          "title": "Véase también",
+          "items": [
+            {
+              "href": "/produkter/mapei",
+              "mutual": false
+            },
+            {
+              "href": "/produkter/mapei/mapepoxy-l"
+            },
+            {
+              "href": "/produkter/mapei/redirep-45-rsf"
+            },
+            {
+              "href": "/produkter/mapei/montocryl"
+            }
+          ],
+          "gen": true
+        }
+      ]
+    },
+    "no": {
+      "title": "Planitop Rasa & Ripara R4",
+      "h1": "Mapei Planitop Rasa & Ripara R4",
+      "description": "Planitop Rasa & Ripara R4 (Planitop Smooth & Repair R4) er en hurtigherdende, tiksotrop og fiberarmert sementmørtel i klasse R4 for strukturelle reparasjoner og avretting av innvendige og utvendige betongflater, både hor",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Mapei logotyp",
+          "href": "/produkter/mapei",
+          "width": 1920,
+          "height": 493,
+          "src": "/assets/img/mapei-1.webp",
+          "gen": true
+        },
+        {
+          "type": "image",
+          "alt": "Mapei Planitop Rasa & Ripara R4",
+          "src": "/assets/img/mapei-planitop-rasa-ripara-r4-main.webp",
+          "width": 535,
+          "height": 828,
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "Planitop Rasa &amp; Ripara R4 (Planitop Smooth &amp; Repair R4) er en hurtigherdende, tiksotrop og fiberarmert sementmørtel i klasse R4 for strukturelle reparasjoner og avretting av innvendige og utvendige betongflater, både horisontale og vertikale. Mørtelen har svært god utmattingsfasthet, minst 300 000 sykluser, og er klimakompensert over hele livssyklusen.",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Klasse R4 etter EN 1504-3, type CC",
+            "Hurtigherdende, kan påføres i tynne lag",
+            "Bedre heft og lett å bygge opp i tykke lag",
+            "Glatt finish",
+            "Utmerket utmattingsfasthet, minst 300 000 sykluser",
+            "Oppfyller også EN 1504-2 (belegg)"
+          ],
+          "gen": true
+        },
+        {
+          "type": "stat",
+          "label": "Forbruk",
+          "value": "17 kg/m²",
+          "unit": "per cm tykkelse",
+          "meta": "3-40 mm per lag",
+          "note": "Omtrentlig forbruk. Faktisk forbruk avhenger av underlagets ujevnheter.",
+          "usage": true,
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Teknisk datablad (TDS)",
+          "href": "/assets/docs/mapei-planitop-rasa-ripara-r4-tekniskt-datablad.pdf",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Sikkerhetsdatablad (SDS)",
+          "href": "/assets/docs/mapei-planitop-rasa-ripara-r4-sakerhetsdatablad.pdf",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Ytelseserklæring (DoP), EN 1504-3",
+          "href": "/assets/docs/mapei-planitop-rasa-ripara-r4-prestandadeklaration-en-1504-3.pdf",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Ytelseserklæring (DoP), EN 1504-2",
+          "href": "/assets/docs/mapei-planitop-rasa-ripara-r4-prestandadeklaration-en-1504-2.pdf",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Miljødeklarasjon (EPD)",
+          "href": "/assets/docs/mapei-planitop-rasa-ripara-r4-epd.pdf",
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Bruksområder",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Strukturelle reparasjoner av betong, innvendig og utvendig",
+            "Avretting og utjevning av horisontale og vertikale betongflater",
+            "Reparasjon av konstruksjoner som utsettes for luft eller er i permanent kontakt med vann"
+          ],
+          "gen": true
+        },
+        {
+          "type": "datasheet",
+          "title": "Tekniske data",
+          "tagline": "Mapei Planitop Rasa & Ripara R4",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Produkt",
+              "rows": [
+                {
+                  "label": "Klassifisering",
+                  "metric": "EN 1504-3, klass R4"
+                },
+                {
+                  "label": "Type",
+                  "metric": "CC (EN 1504-1)"
+                },
+                {
+                  "label": "Farge",
+                  "metric": "grå"
+                },
+                {
+                  "label": "Konsistens",
+                  "metric": "pulver"
+                },
+                {
+                  "label": "Største kornstørrelse",
+                  "metric": "0,4 mm"
+                },
+                {
+                  "label": "Kloridinnhold",
+                  "metric": "≤ 0,05 %"
+                }
+              ]
+            },
+            {
+              "title": "Påføring",
+              "rows": [
+                {
+                  "label": "Blandingsforhold",
+                  "metric": "100 deler produkt + 18 % vann"
+                },
+                {
+                  "label": "Densitet, fersk blanding",
+                  "metric": "ca 2 000 kg/m³"
+                },
+                {
+                  "label": "Lagtykkelse",
+                  "metric": "3-40 mm"
+                },
+                {
+                  "label": "Brukstid (+20 °C)",
+                  "metric": "ca 10 min"
+                },
+                {
+                  "label": "Herdetid",
+                  "metric": "ca 30 min"
+                },
+                {
+                  "label": "Påføringstemperatur",
+                  "metric": "+5 °C till +35 °C"
+                }
+              ]
+            },
+            {
+              "title": "Emballasje og lagring",
+              "rows": [
+                {
+                  "label": "Emballasje",
+                  "metric": "25 kg sekker"
+                },
+                {
+                  "label": "Lagring",
+                  "metric": "opptil 12 måneder, tørt og beskyttet, +5 °C til +35 °C"
+                }
+              ]
+            }
+          ],
+          "note": "",
+          "source": "Opplysningene er hentet fra Mapeis tekniske datablader (på svensk).",
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Kontakt oss</a> for pris, leveringstid og mer informasjon.",
+          "gen": true
+        },
+        {
+          "type": "related",
+          "title": "Se også",
+          "items": [
+            {
+              "href": "/produkter/mapei",
+              "mutual": false
+            },
+            {
+              "href": "/produkter/mapei/mapepoxy-l"
+            },
+            {
+              "href": "/produkter/mapei/redirep-45-rsf"
+            },
+            {
+              "href": "/produkter/mapei/montocryl"
+            }
+          ],
+          "gen": true
+        }
+      ]
+    }
+  }
+}

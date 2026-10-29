@@ -1,0 +1,1236 @@
+{
+  "path": "/produkter/mapei/montocryl",
+  "updated": "2026-10-29",
+  "template": "product",
+  "order": 3,
+  "published": true,
+  "hero": {
+    "image": "/assets/img/mapei-hero.webp"
+  },
+  "i18n": {
+    "sv": {
+      "title": "Montocryl",
+      "h1": "Mapei Montocryl",
+      "description": "Montocryl är ett tvåkomponents, snabbhärdande monteringsbruk baserat på metylmetakrylat (PMMA) för förankring av bultar och armeringsjärn i berg och betong och för montering av betongelement.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Mapei logotyp",
+          "href": "/produkter/mapei",
+          "width": 1920,
+          "height": 493,
+          "src": "/assets/img/mapei-1.webp",
+          "gen": true
+        },
+        {
+          "type": "image",
+          "alt": "Mapei Montocryl",
+          "src": "/assets/img/mapei-montocryl-main.webp",
+          "width": 508,
+          "height": 830,
+          "gen": true
+        },
+        {
+          "type": "image",
+          "alt": "BASTA: Montocryl är registrerad i BASTA",
+          "href": "https://www.bastaonline.se/foretag/206-mapei-ab/artiklar/736738-montocryl-comp-b",
+          "width": 960,
+          "height": 546,
+          "src": "/assets/img/mapei-basta-montocryl-se.webp",
+          "maxWidth": 250,
+          "caption": "Klicka för att se registreringen hos BASTA",
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "Montocryl är ett tvåkomponents, snabbhärdande monteringsbruk baserat på metylmetakrylat (PMMA) för förankring av bultar och armeringsjärn i berg och betong och för montering av betongelement. Det fungerar även vid låga temperaturer, ned till -15 °C, och kan användas som reparationsbruk på horisontella betongytor och för undergjutning av mindre fundament.",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Härdar snabbt, även vid -15 °C",
+            "Hög hållfasthet: tryckhållfasthet 80 N/mm² efter 1 timme (+20 °C)",
+            "Förankring av bultar och armeringsjärn i berg och betong",
+            "Montering av betongelement, ingjutna hylsor och kärnborrade hål",
+            "Följer EN 1504-6",
+            "Montocryl Comp. B är registrerad i BASTA"
+          ],
+          "gen": true
+        },
+        {
+          "type": "stat",
+          "label": "Åtgång",
+          "value": "2,3 kg/l",
+          "unit": "färdig massa",
+          "meta": "vid undergjutning",
+          "note": "Vid bultförankring beror åtgången på hål- och bultdiameter och förankringsdjup, se tabellen nedan.",
+          "usage": true,
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Tekniskt datablad (TDS)",
+          "href": "/assets/docs/mapei-montocryl-tekniskt-datablad.pdf",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Säkerhetsdatablad (SDS)",
+          "href": "/assets/docs/mapei-montocryl-sakerhetsdatablad.pdf",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Prestandadeklaration (DoP)",
+          "href": "/assets/docs/mapei-montocryl-prestandadeklaration.pdf",
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Användningsområden",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Förankring av bultar och armeringsjärn i berg och betong",
+            "Montering av betongelement: ingjutna hylsor och kärnborrade hål",
+            "Undergjutning av mindre fundament som kräver bruk med hög hållfasthet och snabb härdning",
+            "Reparationsbruk på horisontella betongytor"
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Applicering",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Betongen eller stenen ska vara ren och torr, fri från damm, olja och andra föroreningar. Luft och underlag ska vara varmare än -15 °C",
+            "Häll komponent A i komponent B och blanda med långsamgående borr och visp i minst 3 minuter. Produkten får inte spädas. Brukstid cirka 10 minuter",
+            "Vid bultförankring: borra hålet minst 10 mm större än bultens diameter, rengör hålet och häll i Montocryl, t.ex. med tratt. Pressa bulten på plats och fixera tills bruket härdat"
+          ],
+          "gen": true
+        },
+        {
+          "type": "datasheet",
+          "title": "Teknisk data",
+          "tagline": "Mapei Montocryl",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Produkt",
+              "rows": [
+                {
+                  "label": "Komponent A",
+                  "metric": "transparent vätska"
+                },
+                {
+                  "label": "Komponent B",
+                  "metric": "grå, pulver"
+                }
+              ]
+            },
+            {
+              "title": "Applicering",
+              "rows": [
+                {
+                  "label": "Blandningsförhållande",
+                  "metric": "1,7 : 12,2 (A : B)"
+                },
+                {
+                  "label": "Färg efter blandning",
+                  "metric": "grå"
+                },
+                {
+                  "label": "Konsistens",
+                  "metric": "tjock vätska"
+                },
+                {
+                  "label": "Densitet, färsk blandning",
+                  "metric": "2 250 kg/m³"
+                },
+                {
+                  "label": "Brukstemperatur",
+                  "metric": "-15 °C till +20 °C"
+                },
+                {
+                  "label": "Brukstid",
+                  "metric": "ca 10 min"
+                }
+              ]
+            },
+            {
+              "title": "Förpackning och lagring",
+              "rows": [
+                {
+                  "label": "Förpackning",
+                  "metric": "13,9 kg sats (komponent A 1,7 kg + komponent B 12,2 kg)"
+                },
+                {
+                  "label": "Lagring",
+                  "metric": "6 månader, torrt och svalt, skyddat mot värmekällor"
+                }
+              ]
+            }
+          ],
+          "note": "",
+          "source": "Uppgifterna är hämtade ur Mapeis tekniska datablad (svenska).",
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Åtgång vid bultförankring",
+          "gen": true
+        },
+        {
+          "type": "table",
+          "header": true,
+          "align": "center",
+          "rows": [
+            [
+              "Bult Ø (mm)",
+              "Hål Ø (mm)",
+              "Djup (mm)",
+              "Åtgång per bult (kg)"
+            ],
+            [
+              "16",
+              "26",
+              "500",
+              "0,37"
+            ],
+            [
+              "20",
+              "30",
+              "500",
+              "0,44"
+            ],
+            [
+              "24",
+              "34",
+              "500",
+              "0,51"
+            ],
+            [
+              "32",
+              "42",
+              "500",
+              "0,65"
+            ]
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Hållfasthetsutveckling",
+          "gen": true
+        },
+        {
+          "type": "table",
+          "header": true,
+          "align": "center",
+          "rows": [
+            [
+              "N/mm²",
+              "1 tim",
+              "2 tim",
+              "3 tim",
+              "24 tim",
+              "7 dygn"
+            ],
+            [
+              "Tryckhållfasthet +20 °C",
+              "80",
+              "85",
+              "87",
+              "93",
+              "98"
+            ],
+            [
+              "Tryckhållfasthet -15 °C",
+              "-",
+              "40",
+              "50",
+              "66",
+              "85"
+            ],
+            [
+              "Böjhållfasthet +20 °C",
+              "21",
+              "24",
+              "24",
+              "24",
+              "27"
+            ],
+            [
+              "Böjhållfasthet -15 °C",
+              "-",
+              "19",
+              "23",
+              "26",
+              "28"
+            ]
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Kontakta oss</a> för pris, leveranstid och mer information.",
+          "gen": true
+        },
+        {
+          "type": "related",
+          "title": "Se även",
+          "items": [
+            {
+              "href": "/produkter/mapei",
+              "mutual": false
+            },
+            {
+              "href": "/produkter/mapei/mapepoxy-l"
+            },
+            {
+              "href": "/produkter/mapei/redirep-45-rsf"
+            },
+            {
+              "href": "/produkter/mapei/planitop-rasa-ripara-r4"
+            }
+          ],
+          "gen": true
+        }
+      ]
+    },
+    "en": {
+      "title": "Montocryl",
+      "h1": "Mapei Montocryl",
+      "description": "Montocryl is a two-component, fast-curing mounting mortar based on methyl methacrylate (PMMA) for anchoring bolts and reinforcing bars in rock and concrete and for fixing concrete elements.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Mapei logotyp",
+          "href": "/produkter/mapei",
+          "width": 1920,
+          "height": 493,
+          "src": "/assets/img/mapei-1.webp",
+          "gen": true
+        },
+        {
+          "type": "image",
+          "alt": "Mapei Montocryl",
+          "src": "/assets/img/mapei-montocryl-main.webp",
+          "width": 508,
+          "height": 830,
+          "gen": true
+        },
+        {
+          "type": "image",
+          "alt": "BASTA: Montocryl is registered in BASTA",
+          "href": "https://www.bastaonline.se/foretag/206-mapei-ab/artiklar/736738-montocryl-comp-b",
+          "width": 960,
+          "height": 546,
+          "src": "/assets/img/mapei-basta-montocryl-en.webp",
+          "maxWidth": 250,
+          "caption": "Click to see the registration at BASTA",
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "Montocryl is a two-component, fast-curing mounting mortar based on methyl methacrylate (PMMA) for anchoring bolts and reinforcing bars in rock and concrete and for fixing concrete elements. It also works at low temperatures, down to -15 °C, and can be used as a repair mortar on horizontal concrete surfaces and for grouting under small foundations.",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Cures fast, even at -15 °C",
+            "High strength: compressive strength 80 N/mm² after 1 hour (+20 °C)",
+            "Anchoring of bolts and reinforcing bars in rock and concrete",
+            "Fixing of concrete elements, cast-in sleeves and core-drilled holes",
+            "Complies with EN 1504-6",
+            "Montocryl Comp. B is registered in BASTA"
+          ],
+          "gen": true
+        },
+        {
+          "type": "stat",
+          "label": "Consumption",
+          "value": "2.3 kg/l",
+          "unit": "of mixed mortar",
+          "meta": "for grouting",
+          "note": "For bolt anchoring the consumption depends on the hole and bolt diameters and the anchoring depth, see the table below.",
+          "usage": true,
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Technical data sheet (TDS)",
+          "href": "/assets/docs/mapei-montocryl-tekniskt-datablad.pdf",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Safety data sheet (SDS)",
+          "href": "/assets/docs/mapei-montocryl-sakerhetsdatablad.pdf",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Declaration of performance (DoP)",
+          "href": "/assets/docs/mapei-montocryl-prestandadeklaration.pdf",
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Areas of use",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Anchoring of bolts and reinforcing bars in rock and concrete",
+            "Fixing of concrete elements: cast-in sleeves and core-drilled holes",
+            "Grouting under small foundations that need a high-strength, fast-curing mortar",
+            "Repair mortar on horizontal concrete surfaces"
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Application",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "The concrete or stone must be clean and dry, free of dust, oil and other contaminants. Air and substrate must be warmer than -15 °C",
+            "Pour component A into component B and mix with a slow-speed drill and paddle for at least 3 minutes. Do not dilute the product. Pot life about 10 minutes",
+            "For bolt anchoring: drill the hole at least 10 mm larger than the bolt diameter, clean the hole and pour in Montocryl, e.g. with a funnel. Press the bolt into place and fix it until the mortar has cured"
+          ],
+          "gen": true
+        },
+        {
+          "type": "datasheet",
+          "title": "Technical data",
+          "tagline": "Mapei Montocryl",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Product",
+              "rows": [
+                {
+                  "label": "Component A",
+                  "metric": "transparent liquid"
+                },
+                {
+                  "label": "Component B",
+                  "metric": "grey, powder"
+                }
+              ]
+            },
+            {
+              "title": "Application",
+              "rows": [
+                {
+                  "label": "Mixing ratio",
+                  "metric": "1.7 : 12.2 (A : B)"
+                },
+                {
+                  "label": "Colour after mixing",
+                  "metric": "grey"
+                },
+                {
+                  "label": "Consistency",
+                  "metric": "thick liquid"
+                },
+                {
+                  "label": "Density, fresh mix",
+                  "metric": "2.250 kg/m³"
+                },
+                {
+                  "label": "Working temperature",
+                  "metric": "-15 °C till +20 °C"
+                },
+                {
+                  "label": "Pot life",
+                  "metric": "ca 10 min"
+                }
+              ]
+            },
+            {
+              "title": "Packaging and storage",
+              "rows": [
+                {
+                  "label": "Packaging",
+                  "metric": "13.9 kg kit (component A 1.7 kg + component B 12.2 kg)"
+                },
+                {
+                  "label": "Storage",
+                  "metric": "6 months, dry and cool, protected from heat sources"
+                }
+              ]
+            }
+          ],
+          "note": "",
+          "source": "Information taken from Mapei's technical data sheets (in Swedish).",
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Consumption for bolt anchoring",
+          "gen": true
+        },
+        {
+          "type": "table",
+          "header": true,
+          "align": "center",
+          "rows": [
+            [
+              "Bolt Ø (mm)",
+              "Hole Ø (mm)",
+              "Depth (mm)",
+              "Consumption per bolt (kg)"
+            ],
+            [
+              "16",
+              "26",
+              "500",
+              "0.37"
+            ],
+            [
+              "20",
+              "30",
+              "500",
+              "0.44"
+            ],
+            [
+              "24",
+              "34",
+              "500",
+              "0.51"
+            ],
+            [
+              "32",
+              "42",
+              "500",
+              "0.65"
+            ]
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Strength development",
+          "gen": true
+        },
+        {
+          "type": "table",
+          "header": true,
+          "align": "center",
+          "rows": [
+            [
+              "N/mm²",
+              "1 h",
+              "2 h",
+              "3 h",
+              "24 h",
+              "7 days"
+            ],
+            [
+              "Compressive strength +20 °C",
+              "80",
+              "85",
+              "87",
+              "93",
+              "98"
+            ],
+            [
+              "Compressive strength -15 °C",
+              "-",
+              "40",
+              "50",
+              "66",
+              "85"
+            ],
+            [
+              "Flexural strength +20 °C",
+              "21",
+              "24",
+              "24",
+              "24",
+              "27"
+            ],
+            [
+              "Flexural strength -15 °C",
+              "-",
+              "19",
+              "23",
+              "26",
+              "28"
+            ]
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Contact us</a> for price, delivery time and more information.",
+          "gen": true
+        },
+        {
+          "type": "related",
+          "title": "See also",
+          "items": [
+            {
+              "href": "/produkter/mapei",
+              "mutual": false
+            },
+            {
+              "href": "/produkter/mapei/mapepoxy-l"
+            },
+            {
+              "href": "/produkter/mapei/redirep-45-rsf"
+            },
+            {
+              "href": "/produkter/mapei/planitop-rasa-ripara-r4"
+            }
+          ],
+          "gen": true
+        }
+      ]
+    },
+    "es": {
+      "title": "Montocryl",
+      "h1": "Mapei Montocryl",
+      "description": "Montocryl es un mortero de montaje bicomponente de curado rápido a base de metacrilato de metilo (PMMA) para el anclaje de pernos y barras de armadura en roca y hormigón y para el montaje de elementos de hormigón.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Mapei logotyp",
+          "href": "/produkter/mapei",
+          "width": 1920,
+          "height": 493,
+          "src": "/assets/img/mapei-1.webp",
+          "gen": true
+        },
+        {
+          "type": "image",
+          "alt": "Mapei Montocryl",
+          "src": "/assets/img/mapei-montocryl-main.webp",
+          "width": 508,
+          "height": 830,
+          "gen": true
+        },
+        {
+          "type": "image",
+          "alt": "BASTA: Montocryl está registrado en BASTA",
+          "href": "https://www.bastaonline.se/foretag/206-mapei-ab/artiklar/736738-montocryl-comp-b",
+          "width": 960,
+          "height": 546,
+          "src": "/assets/img/mapei-basta-montocryl-en.webp",
+          "maxWidth": 250,
+          "caption": "Haga clic para ver el registro en BASTA",
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "Montocryl es un mortero de montaje bicomponente de curado rápido a base de metacrilato de metilo (PMMA) para el anclaje de pernos y barras de armadura en roca y hormigón y para el montaje de elementos de hormigón. También funciona a bajas temperaturas, hasta -15 °C, y puede usarse como mortero de reparación en superficies horizontales de hormigón y para el relleno bajo pequeñas cimentaciones.",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Cura rápido, incluso a -15 °C",
+            "Alta resistencia: resistencia a compresión de 80 N/mm² tras 1 hora (+20 °C)",
+            "Anclaje de pernos y barras de armadura en roca y hormigón",
+            "Montaje de elementos de hormigón, manguitos embebidos y taladros con corona",
+            "Cumple EN 1504-6",
+            "Montocryl Comp. B está registrado en BASTA"
+          ],
+          "gen": true
+        },
+        {
+          "type": "stat",
+          "label": "Consumo",
+          "value": "2,3 kg/l",
+          "unit": "de mortero mezclado",
+          "meta": "para relleno bajo placas",
+          "note": "En el anclaje de pernos el consumo depende de los diámetros del agujero y del perno y de la profundidad de anclaje, véase la tabla siguiente.",
+          "usage": true,
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Ficha técnica (TDS)",
+          "href": "/assets/docs/mapei-montocryl-tekniskt-datablad.pdf",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Ficha de datos de seguridad (SDS)",
+          "href": "/assets/docs/mapei-montocryl-sakerhetsdatablad.pdf",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Declaración de prestaciones (DoP)",
+          "href": "/assets/docs/mapei-montocryl-prestandadeklaration.pdf",
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Campos de aplicación",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Anclaje de pernos y barras de armadura en roca y hormigón",
+            "Montaje de elementos de hormigón: manguitos embebidos y taladros con corona",
+            "Relleno bajo pequeñas cimentaciones que requieren un mortero de alta resistencia y curado rápido",
+            "Mortero de reparación en superficies horizontales de hormigón"
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Aplicación",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "El hormigón o la piedra debe estar limpio y seco, sin polvo, aceite ni otros contaminantes. El aire y el soporte deben estar por encima de -15 °C",
+            "Vierta el componente A en el componente B y mezcle con un taladro de baja velocidad y mezclador durante al menos 3 minutos. No diluir el producto. Tiempo de trabajabilidad de unos 10 minutos",
+            "Para el anclaje de pernos: taladre el agujero al menos 10 mm mayor que el diámetro del perno, límpielo y vierta Montocryl, p. ej. con un embudo. Presione el perno en su sitio y fíjelo hasta que el mortero haya curado"
+          ],
+          "gen": true
+        },
+        {
+          "type": "datasheet",
+          "title": "Datos técnicos",
+          "tagline": "Mapei Montocryl",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Producto",
+              "rows": [
+                {
+                  "label": "Componente A",
+                  "metric": "líquido transparente"
+                },
+                {
+                  "label": "Componente B",
+                  "metric": "gris, polvo"
+                }
+              ]
+            },
+            {
+              "title": "Aplicación",
+              "rows": [
+                {
+                  "label": "Proporción de mezcla",
+                  "metric": "1,7 : 12,2 (A : B)"
+                },
+                {
+                  "label": "Color tras la mezcla",
+                  "metric": "gris"
+                },
+                {
+                  "label": "Consistencia",
+                  "metric": "líquido espeso"
+                },
+                {
+                  "label": "Densidad de la mezcla fresca",
+                  "metric": "2.250 kg/m³"
+                },
+                {
+                  "label": "Temperatura de trabajo",
+                  "metric": "-15 °C till +20 °C"
+                },
+                {
+                  "label": "Tiempo de trabajabilidad",
+                  "metric": "ca 10 min"
+                }
+              ]
+            },
+            {
+              "title": "Envase y almacenamiento",
+              "rows": [
+                {
+                  "label": "Envase",
+                  "metric": "kit de 13,9 kg (componente A 1,7 kg + componente B 12,2 kg)"
+                },
+                {
+                  "label": "Almacenamiento",
+                  "metric": "6 meses, en seco y fresco, protegido de fuentes de calor"
+                }
+              ]
+            }
+          ],
+          "note": "",
+          "source": "Información tomada de las fichas técnicas de Mapei (en sueco).",
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Consumo en el anclaje de pernos",
+          "gen": true
+        },
+        {
+          "type": "table",
+          "header": true,
+          "align": "center",
+          "rows": [
+            [
+              "Perno Ø (mm)",
+              "Agujero Ø (mm)",
+              "Profundidad (mm)",
+              "Consumo por perno (kg)"
+            ],
+            [
+              "16",
+              "26",
+              "500",
+              "0,37"
+            ],
+            [
+              "20",
+              "30",
+              "500",
+              "0,44"
+            ],
+            [
+              "24",
+              "34",
+              "500",
+              "0,51"
+            ],
+            [
+              "32",
+              "42",
+              "500",
+              "0,65"
+            ]
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Desarrollo de la resistencia",
+          "gen": true
+        },
+        {
+          "type": "table",
+          "header": true,
+          "align": "center",
+          "rows": [
+            [
+              "N/mm²",
+              "1 h",
+              "2 h",
+              "3 h",
+              "24 h",
+              "7 días"
+            ],
+            [
+              "Resistencia a compresión +20 °C",
+              "80",
+              "85",
+              "87",
+              "93",
+              "98"
+            ],
+            [
+              "Resistencia a compresión -15 °C",
+              "-",
+              "40",
+              "50",
+              "66",
+              "85"
+            ],
+            [
+              "Resistencia a flexión +20 °C",
+              "21",
+              "24",
+              "24",
+              "24",
+              "27"
+            ],
+            [
+              "Resistencia a flexión -15 °C",
+              "-",
+              "19",
+              "23",
+              "26",
+              "28"
+            ]
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Contáctenos</a> para precio, plazo de entrega y más información.",
+          "gen": true
+        },
+        {
+          "type": "related",
+          "title": "Véase también",
+          "items": [
+            {
+              "href": "/produkter/mapei",
+              "mutual": false
+            },
+            {
+              "href": "/produkter/mapei/mapepoxy-l"
+            },
+            {
+              "href": "/produkter/mapei/redirep-45-rsf"
+            },
+            {
+              "href": "/produkter/mapei/planitop-rasa-ripara-r4"
+            }
+          ],
+          "gen": true
+        }
+      ]
+    },
+    "no": {
+      "title": "Montocryl",
+      "h1": "Mapei Montocryl",
+      "description": "Montocryl er en todelt, hurtigherdende monteringsmørtel basert på metylmetakrylat (PMMA) for forankring av bolter og armeringsjern i berg og betong og for montering av betongelementer.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Mapei logotyp",
+          "href": "/produkter/mapei",
+          "width": 1920,
+          "height": 493,
+          "src": "/assets/img/mapei-1.webp",
+          "gen": true
+        },
+        {
+          "type": "image",
+          "alt": "Mapei Montocryl",
+          "src": "/assets/img/mapei-montocryl-main.webp",
+          "width": 508,
+          "height": 830,
+          "gen": true
+        },
+        {
+          "type": "image",
+          "alt": "BASTA: Montocryl er registrert i BASTA",
+          "href": "https://www.bastaonline.se/foretag/206-mapei-ab/artiklar/736738-montocryl-comp-b",
+          "width": 960,
+          "height": 546,
+          "src": "/assets/img/mapei-basta-montocryl-en.webp",
+          "maxWidth": 250,
+          "caption": "Klikk for å se registreringen hos BASTA",
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "Montocryl er en todelt, hurtigherdende monteringsmørtel basert på metylmetakrylat (PMMA) for forankring av bolter og armeringsjern i berg og betong og for montering av betongelementer. Den fungerer også ved lave temperaturer, ned til -15 °C, og kan brukes som reparasjonsmørtel på horisontale betongflater og til understøpning av mindre fundamenter.",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Herder raskt, selv ved -15 °C",
+            "Høy fasthet: trykkfasthet 80 N/mm² etter 1 time (+20 °C)",
+            "Forankring av bolter og armeringsjern i berg og betong",
+            "Montering av betongelementer, innstøpte hylser og kjernebor-hull",
+            "Følger EN 1504-6",
+            "Montocryl Comp. B er registrert i BASTA"
+          ],
+          "gen": true
+        },
+        {
+          "type": "stat",
+          "label": "Forbruk",
+          "value": "2,3 kg/l",
+          "unit": "ferdig masse",
+          "meta": "ved understøpning",
+          "note": "Ved boltforankring avhenger forbruket av hull- og boltdiameter og forankringsdybde, se tabellen nedenfor.",
+          "usage": true,
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Teknisk datablad (TDS)",
+          "href": "/assets/docs/mapei-montocryl-tekniskt-datablad.pdf",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Sikkerhetsdatablad (SDS)",
+          "href": "/assets/docs/mapei-montocryl-sakerhetsdatablad.pdf",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Ytelseserklæring (DoP)",
+          "href": "/assets/docs/mapei-montocryl-prestandadeklaration.pdf",
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Bruksområder",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Forankring av bolter og armeringsjern i berg og betong",
+            "Montering av betongelementer: innstøpte hylser og kjerneborede hull",
+            "Understøpning av mindre fundamenter som krever mørtel med høy fasthet og rask herding",
+            "Reparasjonsmørtel på horisontale betongflater"
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Påføring",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Betongen eller steinen skal være ren og tørr, fri for støv, olje og andre forurensninger. Luft og underlag skal være varmere enn -15 °C",
+            "Hell komponent A i komponent B og bland med saktegående bor og visp i minst 3 minutter. Produktet skal ikke tynnes. Brukstid cirka 10 minutter",
+            "Ved boltforankring: bor hullet minst 10 mm større enn boltens diameter, rengjør hullet og hell i Montocryl, f.eks. med trakt. Press bolten på plass og fikser den til mørtelen er herdet"
+          ],
+          "gen": true
+        },
+        {
+          "type": "datasheet",
+          "title": "Tekniske data",
+          "tagline": "Mapei Montocryl",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Produkt",
+              "rows": [
+                {
+                  "label": "Komponent A",
+                  "metric": "gjennomsiktig væske"
+                },
+                {
+                  "label": "Komponent B",
+                  "metric": "grå, pulver"
+                }
+              ]
+            },
+            {
+              "title": "Påføring",
+              "rows": [
+                {
+                  "label": "Blandingsforhold",
+                  "metric": "1,7 : 12,2 (A : B)"
+                },
+                {
+                  "label": "Farge etter blanding",
+                  "metric": "grå"
+                },
+                {
+                  "label": "Konsistens",
+                  "metric": "tykk væske"
+                },
+                {
+                  "label": "Densitet, fersk blanding",
+                  "metric": "2 250 kg/m³"
+                },
+                {
+                  "label": "Brukstemperatur",
+                  "metric": "-15 °C till +20 °C"
+                },
+                {
+                  "label": "Brukstid",
+                  "metric": "ca 10 min"
+                }
+              ]
+            },
+            {
+              "title": "Emballasje og lagring",
+              "rows": [
+                {
+                  "label": "Emballasje",
+                  "metric": "13,9 kg sett (komponent A 1,7 kg + komponent B 12,2 kg)"
+                },
+                {
+                  "label": "Lagring",
+                  "metric": "6 måneder, tørt og kjølig, beskyttet mot varmekilder"
+                }
+              ]
+            }
+          ],
+          "note": "",
+          "source": "Opplysningene er hentet fra Mapeis tekniske datablader (på svensk).",
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Forbruk ved boltforankring",
+          "gen": true
+        },
+        {
+          "type": "table",
+          "header": true,
+          "align": "center",
+          "rows": [
+            [
+              "Bolt Ø (mm)",
+              "Hull Ø (mm)",
+              "Dybde (mm)",
+              "Forbruk per bolt (kg)"
+            ],
+            [
+              "16",
+              "26",
+              "500",
+              "0,37"
+            ],
+            [
+              "20",
+              "30",
+              "500",
+              "0,44"
+            ],
+            [
+              "24",
+              "34",
+              "500",
+              "0,51"
+            ],
+            [
+              "32",
+              "42",
+              "500",
+              "0,65"
+            ]
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Fasthetsutvikling",
+          "gen": true
+        },
+        {
+          "type": "table",
+          "header": true,
+          "align": "center",
+          "rows": [
+            [
+              "N/mm²",
+              "1 t",
+              "2 t",
+              "3 t",
+              "24 t",
+              "7 døgn"
+            ],
+            [
+              "Trykkfasthet +20 °C",
+              "80",
+              "85",
+              "87",
+              "93",
+              "98"
+            ],
+            [
+              "Trykkfasthet -15 °C",
+              "-",
+              "40",
+              "50",
+              "66",
+              "85"
+            ],
+            [
+              "Bøyefasthet +20 °C",
+              "21",
+              "24",
+              "24",
+              "24",
+              "27"
+            ],
+            [
+              "Bøyefasthet -15 °C",
+              "-",
+              "19",
+              "23",
+              "26",
+              "28"
+            ]
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Kontakt oss</a> for pris, leveringstid og mer informasjon.",
+          "gen": true
+        },
+        {
+          "type": "related",
+          "title": "Se også",
+          "items": [
+            {
+              "href": "/produkter/mapei",
+              "mutual": false
+            },
+            {
+              "href": "/produkter/mapei/mapepoxy-l"
+            },
+            {
+              "href": "/produkter/mapei/redirep-45-rsf"
+            },
+            {
+              "href": "/produkter/mapei/planitop-rasa-ripara-r4"
+            }
+          ],
+          "gen": true
+        }
+      ]
+    }
+  }
+}
