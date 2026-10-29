@@ -92,6 +92,11 @@ const ICON = {
   arrow: '<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14m-6-6l6 6-6 6"/></svg>',
   mail: '<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>',
   layers: '<svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l9 5-9 5-9-5 9-5z"/><path d="M3 12.5l9 5 9-5M3 17l9 5 9-5"/></svg>',
+  rig: '<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="2.5" y="17" width="14" height="4" rx="2"/><path d="M5 17v-4.5h7V17M16 3v14M14 6.5h4M14 11h4M12 12.5l4-5"/></svg>',
+  silo: '<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 7c0-2.2 2.2-4 5-4s5 1.8 5 4v7H7z"/><path d="M7 10.5h10M7 14l3.5 4.5h3L17 14M9.5 18.5 8 21.5M14.5 18.5l1.5 3"/></svg>',
+  boxes: '<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="7.5" y="3.5" width="9" height="8" rx="1"/><rect x="2.5" y="12.5" width="9" height="8" rx="1"/><rect x="12.5" y="12.5" width="9" height="8" rx="1"/><path d="M10 7.5h4M5 16.5h4M15 16.5h4"/></svg>',
+  bucket: '<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 9h14l-1.6 11a1 1 0 0 1-1 .86H7.6a1 1 0 0 1-1-.86z"/><path d="M5 9c.3-3.2 3.2-5.5 7-5.5s6.7 2.3 7 5.5M8.3 13.5h7.4"/></svg>',
+  check: '<svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>',
   phone: '<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg>'
 };
 
@@ -196,7 +201,8 @@ function cardsAreSquare(ctx, b) {
 }
 function renderCards(ctx, b) {
   const square = cardsAreSquare(ctx, b);
-  const items = (b.items || []).map((it, idx) => [it, idx]).filter(([it]) => shown(ctx, it.href)).map(([it, idx]) => {
+  const shownItems = (b.items || []).map((it, idx) => [it, idx]).filter(([it]) => shown(ctx, it.href));
+  const li = ([it, idx]) => {
     const title = it.title || titleOf(ctx, it.href);
     const href = localizeHref(ctx, it.href);
     const cinfo = it.image && !ctx.edit ? ctx.image(it.image) : null;
@@ -206,8 +212,20 @@ function renderCards(ctx, b) {
     return `<li class="card"><a class="card__link" href="${esc(href)}">` +
       (img ? `<span class="card__media${cbaked ? " card__media--tile" : ""}">${img}</span>` : "") +
       `<span class="card__body"><h${ctx._cardLevel || 3} class="card__title"${editFld(ctx, `items.${idx}.title`)}>${esc(title)}</h${ctx._cardLevel || 3}>${text}<span class="card__more">${esc(ctx.ui.read_more || "Läs mer")}${ICON.arrow}</span></span></a></li>`;
-  }).join("");
-  return `<ul class="cards${square ? " cards--square" : ""}">${items}</ul>`;
+  };
+  const ul = (list) => `<ul class="cards${square ? " cards--square" : ""}">${list.map(li).join("")}</ul>`;
+  // Items marked with a group (machines / material) are listed under a heading each; site.js adds the buttons that show or hide a group
+  const groups = ["machines", "material"].filter((g) => shownItems.some(([it]) => it.group === g));
+  if (ctx.edit || !groups.length) return ul(shownItems);
+  const label = { machines: ctx.ui.filter_machines || "Maskiner", material: ctx.ui.filter_material || "Material" };
+  const unit = (n) => `${n} ${esc(n === 1 ? ctx.ui.filter_supplier || "leverantör" : ctx.ui.filter_suppliers || "leverantörer")}`;
+  const part = (g) => shownItems.filter(([it]) => it.group === g);
+  const rest = shownItems.filter(([it]) => !groups.includes(it.group));
+  const ICONS = { machines: [ICON.rig, ICON.silo], material: [ICON.boxes, ICON.bucket] };
+  // the buttons go into the breadcrumb row (renderMain picks them up from ctx._pfilter); two pictures per button roll over on hover
+  ctx._pfilter = `<div class="pfilter" role="group" aria-label="${esc(ctx.ui.filter_show || "Visa")}">` +
+    groups.map((g) => `<button class="pfilter__btn" type="button" aria-pressed="true" data-g="${g}"><span class="pfilter__ico"><span class="pfilter__roll">${ICONS[g].join("")}</span></span><span class="pfilter__txt">${esc(label[g])}</span><em>${part(g).length}</em><span class="pfilter__ck">${ICON.check}</span></button>`).join("") + "</div>";
+  return groups.map((g) => `<section class="pgroup" id="${g === "machines" ? "maskiner" : "material"}" data-g="${g}"><h2 class="pgroup__h"><span class="pgroup__ico">${ICONS[g][0]}</span>${esc(label[g])}<span class="pgroup__n">${unit(part(g).length)}</span></h2>${ul(part(g))}</section>`).join("") + (rest.length ? ul(rest) : "");
 }
 
 function renderVideo(ctx, b) {
@@ -1123,14 +1141,15 @@ export function renderMain(ctx, page, t) {
   const hero = heroImg
     ? `<section class="hero${isHome ? " hero--home" : ""}">${heroImgTag(ctx, page, heroImg)}<div class="hero__shade"></div>${heroInner}${isHome && !ctx.edit ? `<a class="hero__scroll" href="#start" aria-label="${esc(ctx.ui.scroll_down || "Scrolla ner")}">${ICON.chevronDown}</a>` : ""}</section>`
     : `<section class="page-head${page.template === "about" ? " page-head--center" : ""}"><div class="container">${page.template === "about" ? "" : eyebrow}<h1${pageFld("h1")}>${esc(title)}</h1></div></section>`;
-  const crumbRow = crumbs || logo || origin ? `<div class="container crumbs${page.template === "about" && !heroImg ? " crumbs--center" : ""}">${crumbs}${logo && origin ? `<div class="crumbs__brand">${logo}${origin}</div>` : `${logo}${origin}`}</div>` : "";
   const ownRel = flatBlocks(t.blocks || []).filter((x) => x.type === "related");
   const ownHrefs = new Set(ownRel.flatMap((x) => (x.items || []).map((i) => i && i.href)));
   ctx._relExtra = ctx.edit || !ctx.incomingRelated ? [] : ctx.incomingRelated(page.path).filter((x) => !ownHrefs.has(x.href));
   // The first pictures of the page body (what is in view when the page opens) load at once; everything further down stays lazy
   // and is fetched top to bottom in quiet time by site.js. Without a banner, the very first picture is the most important one.
   const prioritise = (h) => { let n = 0; return h.replace(/<img ([^>]*?)loading="lazy" decoding="async"/g, (m, a) => (++n <= 3 ? `<img ${a}loading="eager" decoding="async"${n === 1 && !heroImg ? ' fetchpriority="high"' : ""}` : m)); };
+  ctx._pfilter = "";
   const bodyHtml = ctx.edit ? `${splitHtml}${renderBlocks(ctx, rest)}` : prioritise(`${splitHtml}${renderBlocks(ctx, rest)}`);
+  const crumbRow = crumbs || logo || origin || ctx._pfilter ? `<div class="container crumbs${page.template === "about" && !heroImg ? " crumbs--center" : ""}">${crumbs}${ctx._pfilter || ""}${logo && origin ? `<div class="crumbs__brand">${logo}${origin}</div>` : `${logo}${origin}`}</div>` : "";
   const autoRel = !ownRel.length && ctx._relExtra.length ? `<div class="container">${renderRelated(ctx, { type: "related", items: [] })}</div>` : "";
   ctx._relExtra = [];
   return `${hero}${crumbRow}<div class="page-body page--${esc(page.template || "page")}"${isHome ? ' id="start"' : ""}>${bodyHtml}${autoRel}${productQuoteCta(ctx, page, t, title)}</div>`;
@@ -1158,7 +1177,9 @@ export function renderDocument(ctx, page, t, opts = {}) {
   const uiForJs = {
     title: ctx.ui.cookie_title, text: ctx.ui.cookie_text, accept: ctx.ui.cookie_accept, reject: ctx.ui.cookie_reject,
     policy: ctx.ui.cookie_policy_link, play: ctx.ui.video_play, loading: ctx.ui.video_loading,
-    search: ctx.ui.search, searchPlaceholder: ctx.ui.search_placeholder, searchNone: ctx.ui.search_no_results, searchClose: ctx.ui.search_close
+    search: ctx.ui.search, searchPlaceholder: ctx.ui.search_placeholder, searchNone: ctx.ui.search_no_results, searchClose: ctx.ui.search_close,
+    searchClear: ctx.ui.search_clear, searchNav: ctx.ui.search_nav, searchOpen: ctx.ui.search_open, searchSuppliers: ctx.ui.search_suppliers, searchBrowse: ctx.ui.search_browse,
+    searchDym: ctx.ui.search_dym, searchHit: ctx.ui.search_hit, searchHits: ctx.ui.search_hits, loading: ctx.ui.video_loading
   };
   const privacyPath = s.privacyPath && ctx.pages.has(s.privacyPath) && (ctx.tr(s.privacyPath, lang) || ctx.tr(s.privacyPath, ctx.defaultLang)) ? ctx.url(s.privacyPath) : "";
   const cfg = JSON.stringify({ analytics, ui: uiForJs, privacy: privacyPath, searchIndex: ctx.searchIndexUrl ? ctx.searchIndexUrl : "/search-index.json" }).replace(/</g, "\\u003c");

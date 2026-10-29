@@ -11,6 +11,7 @@ import { renderDocument, renderNotFound, esc, flatBlocks } from "./lib/render.mj
 import { applyBasePath } from "./lib/apply-base.mjs";
 import { isHidden, visibleAncestor } from "./lib/visibility.mjs";
 import { videoIds, ensureThumbs } from "./lib/yt-thumbs.mjs";
+import { searchEntry } from "./lib/search-index.mjs";
 
 const ROOT = path.resolve(import.meta.dirname, "..");
 const args = process.argv.slice(2);
@@ -368,18 +369,7 @@ for (const lang of languages) {
     rendered++;
     if (page.unlisted) { unlistedUrls.push(urlFor(p, lang)); continue; } // reachable by link only: no sitemap, no search
     sitemapEntries.push({ p, lang, updated: page.updated || null });
-    {
-      const text = flatBlocks(t.blocks).flatMap((b) => {
-        if (b.type === "text") return [b.html];
-        if (b.type === "heading") return [b.text];
-        if (b.type === "list") return b.items;
-        if (b.type === "cards") return b.items.map((i) => (i.title || "") + " " + (i.text || ""));
-        if (b.type === "datasheet") return [...(b.intro || []), ...(b.groups || []).flatMap((g) => g.rows.map((r) => r.label + " " + (r.metric || "") + " " + (r.us || "")))];
-        if (b.type === "chips") return b.items;
-        return [];
-      }).join(" ").replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim();
-      (searchIndexes[lang] = searchIndexes[lang] || []).push({ u: urlFor(p, lang), t: t.h1 || t.title, x: text.slice(0, 600) });
-    }
+    (searchIndexes[lang] = searchIndexes[lang] || []).push(searchEntry(ctx, page, t, urlFor(p, lang), (pp) => { const x = trOf(pp, lang); return x && (x.h1 || x.title); }));
   }
 }
 

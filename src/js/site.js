@@ -474,52 +474,294 @@
     fig.insertAdjacentElement("afterend", alt);
   });
 
-  // ---------- site search (static index, loaded on demand) ----------
+  // ---------- site search: the index is loaded when the search is opened and ranked in the browser ----------
+  // Ranking works like a small search engine: every query word is matched against the title, the breadcrumb, the headings and the body
+  // (exact word, same stem, beginning of a word, end of a compound such as "betongpump", or a slip of the finger), each field counts
+  // for a different share (BM25 style, rare words count more than common ones), pages that hold every word come first, and a title that
+  // is the query, starts with it or contains all of its words is lifted. The last word is also treated as a beginning (search as you type).
   var searchBtn = document.querySelector("[data-search-open]");
-  var dlg, input, list, index;
+  var dlg, input, body, clearBtn, index, avgLen, vocab, suppliers, active = -1, hitEls = [];
+  var LANG = (document.documentElement.lang || "sv").slice(0, 2).toLowerCase();
+  var SUFFIX_LISTS = {
+    sv: "ningarna ningar ningen ning arna erna orna ande ende heter het ene ar er or en et na ad at as a e s",
+    en: "ations ation ings ing ers er ies es ed ly s",
+    es: "aciones acion amientos amiento mente ores or es as os a o s"
+  };
+  SUFFIX_LISTS.no = SUFFIX_LISTS.nb = SUFFIX_LISTS.sv;
+  var SUFFIXES = (SUFFIX_LISTS[LANG] || SUFFIX_LISTS.sv).split(" ").sort(function (a, b) { return b.length - a.length; });
+  var STOP_LISTS = {
+    sv: "och i for av pa med en ett att som till de det den", en: "the and of for to in a an on with", es: "de la el los las y en para con un una por"
+  };
+  STOP_LISTS.no = STOP_LISTS.nb = "og i for av pa med en et at som til de det den";
+  var STOP = {};
+  (STOP_LISTS[LANG] || STOP_LISTS.sv).split(" ").forEach(function (w) { STOP[w] = 1; });
+  var FIELD_W = [10, 2.2, 4, 1]; // title, breadcrumb, headings, body
+
   function esc(s) { return String(s).replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); }
-  function norm(s) { return String(s).toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, ""); }
+  function fold(s) { return String(s).toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/æ/g, "ae").replace(/ø/g, "o").replace(/ß/g, "ss"); }
+  function words(s) { return String(s).match(/[\p{L}\p{N}]+/gu) || []; }
+  function stem(w) {
+    if (w.length < 5) return w;
+    for (var i = 0; i < SUFFIXES.length; i++) { var x = SUFFIXES[i]; if (w.length - x.length >= 4 && w.slice(-x.length) === x) return w.slice(0, -x.length); }
+    return w;
+  }
+  // Damerau-Levenshtein distance (a swapped pair of letters counts once), given up as soon as it is above max
+  function dist(a, b, max) {
+    var la = a.length, lb = b.length, i, j;
+    if (Math.abs(la - lb) > max) return max + 1;
+    var p2 = null, p = [], c;
+    for (j = 0; j <= lb; j++) p[j] = j;
+    for (i = 1; i <= la; i++) {
+      c = [i];
+      var low = i;
+      for (j = 1; j <= lb; j++) {
+        var v = Math.min(p[j] + 1, c[j - 1] + 1, p[j - 1] + (a.charCodeAt(i - 1) === b.charCodeAt(j - 1) ? 0 : 1));
+        if (p2 && i > 1 && j > 1 && a.charCodeAt(i - 1) === b.charCodeAt(j - 2) && a.charCodeAt(i - 2) === b.charCodeAt(j - 1)) v = Math.min(v, p2[j - 2] + 1);
+        c[j] = v;
+        if (v < low) low = v;
+      }
+      if (low > max) return max + 1;
+      p2 = p; p = c;
+    }
+    return p[lb];
+  }
+  // how well a document word (folded, with its stem) answers a query word: 0 = not at all, 1 = the same word
+  function match(t, tok, ts) {
+    if (tok === t.q) return 1;
+    var ql = t.q.length;
+    if (t.s.length >= 4 && ts === t.s) return 0.9;
+    if (tok.indexOf(t.q) === 0 && (t.last ? ql >= 2 : ql >= 3)) return t.last ? 0.85 : 0.7;
+    if (t.s.length >= 4 && tok.indexOf(t.s) === 0) return 0.7;
+    if (ql >= 4 && tok.indexOf(t.q) > 0) return 0.5;
+    if (ql >= 5) { var m = ql >= 9 ? 2 : 1; if (dist(t.q, tok, m) <= m) return 0.45; }
+    return 0;
+  }
+  function field(text) {
+    var toks = words(text), m = Object.create(null);
+    toks.forEach(function (o) {
+      var f = fold(o), e = m[f];
+      if (e) e.c++; else { m[f] = { c: 1, s: stem(f) }; if (!vocab[f]) vocab[f] = { w: o.toLowerCase(), df: 0 }; }
+    });
+    return { m: m, n: toks.length };
+  }
+  function prepare(data) {
+    vocab = Object.create(null);
+    var sum = [0, 0, 0, 0];
+    data.forEach(function (d) {
+      d.f = [field(d.t), field(d.c || ""), field(d.h || ""), field(d.x || "")];
+      d.tf = fold(d.t); d.xf = fold(d.t + " " + (d.h || "") + " " + (d.x || ""));
+      d.f.forEach(function (f, i) { sum[i] += f.n; });
+      var seen = Object.create(null);
+      d.f.forEach(function (f) { Object.keys(f.m).forEach(function (k) { if (!seen[k]) { seen[k] = 1; vocab[k].df++; } }); });
+    });
+    avgLen = sum.map(function (s) { return Math.max(1, s / Math.max(1, data.length)); });
+    suppliers = data.filter(function (d) { return d.w === 1.25; }).sort(function (a, b) { return a.t.localeCompare(b.t); });
+    return data;
+  }
+  function parse(q) {
+    var terms = words(q).map(function (o) { var f = fold(o); return { q: f, s: stem(f) }; });
+    if (terms.length > 1) { var kept = terms.filter(function (t) { return !STOP[t.q]; }); if (kept.length) terms = kept; }
+    if (terms.length) terms[terms.length - 1].last = true;
+    return terms;
+  }
+  function rank(terms, qf) {
+    var N = index.length, rows = [], df = terms.map(function () { return 0; });
+    index.forEach(function (d) {
+      var tf = terms.map(function (t) {
+        var sum = 0;
+        for (var i = 0; i < 4; i++) {
+          var fld = d.f[i], part = 0, norm = i === 3 ? 0.4 + 0.6 * (fld.n / avgLen[3]) : 1;
+          for (var k in fld.m) { var e = fld.m[k], w = match(t, k, e.s); if (w) part += w * Math.min(e.c, 4); }
+          sum += FIELD_W[i] * part / norm;
+        }
+        return sum;
+      });
+      var covered = 0;
+      tf.forEach(function (v, i) { if (v > 0) { covered++; df[i]++; } });
+      if (covered) rows.push({ d: d, tf: tf, covered: covered });
+    });
+    var idf = df.map(function (n) { return Math.log(1 + (N - n + 0.5) / (n + 0.5)); });
+    var all = rows.filter(function (r) { return r.covered === terms.length; });
+    if (all.length) rows = all; else rows = rows.filter(function (r) { return r.covered >= Math.ceil(terms.length / 2); });
+    rows.forEach(function (r) {
+      var s = 0;
+      r.tf.forEach(function (v, i) { s += idf[i] * v / (v + 1.2); });
+      s *= Math.pow(r.covered / terms.length, 2);
+      var tt = r.d.tf;
+      if (tt === qf) s *= 3; else if (tt.indexOf(qf) === 0) s *= 1.8;
+      else if (terms.length > 1 && terms.every(function (t) { return Object.keys(r.d.f[0].m).some(function (k) { return match(t, k, r.d.f[0].m[k].s) >= 0.7; }); })) s *= 1.5;
+      if (terms.length > 1 && r.d.xf.indexOf(qf) >= 0) s *= 1.25;
+      r.s = s * (r.d.w || 1);
+    });
+    rows.sort(function (a, b) { return b.s - a.s || a.d.t.length - b.d.t.length; });
+    return rows;
+  }
+  // one piece of text with the words that answered the query marked
+  function mark(text, terms) {
+    var out = "", last = 0, re = /[\p{L}\p{N}]+/gu, m;
+    while ((m = re.exec(text))) {
+      var f = fold(m[0]), s = stem(f), hit = false;
+      for (var i = 0; i < terms.length && !hit; i++) hit = match(terms[i], f, s) >= 0.5;
+      out += esc(text.slice(last, m.index)) + (hit ? "<mark>" + esc(m[0]) + "</mark>" : esc(m[0]));
+      last = m.index + m[0].length;
+    }
+    return out + esc(text.slice(last));
+  }
+  // the stretch of the page text (about 24 words) that holds most of the query words
+  function snippet(text, terms) {
+    var re = /[\p{L}\p{N}]+/gu, m, toks = [];
+    while ((m = re.exec(text))) {
+      var f = fold(m[0]), s = stem(f), which = -1;
+      for (var i = 0; i < terms.length; i++) if (match(terms[i], f, s) >= 0.5) { which = i; break; }
+      toks.push({ a: m.index, b: m.index + m[0].length, t: which });
+    }
+    var W = 24, best = 0, bestScore = -1;
+    for (var st = 0; st < Math.max(1, toks.length - W + 1); st++) {
+      var seen = {}, n = 0, sc = 0;
+      for (var j = st; j < Math.min(toks.length, st + W); j++) if (toks[j].t >= 0) { sc += 1; if (!seen[toks[j].t]) { seen[toks[j].t] = 1; n++; } }
+      sc = n * 10 + sc;
+      if (sc > bestScore) { bestScore = sc; best = st; }
+    }
+    if (!toks.length) return "";
+    var from = bestScore > 0 ? Math.max(0, best - 3) : 0, to = Math.min(toks.length, from + W);
+    var seg = text.slice(toks[from].a, toks[to - 1].b);
+    return (from > 0 ? "… " : "") + mark(seg, terms) + (to < toks.length ? " …" : "");
+  }
+  function suggest(terms) {
+    // closest word on the site for each query word, for "did you mean"
+    var out = [], changed = false;
+    terms.forEach(function (t) {
+      var best = null, bd = 99, bdf = 0;
+      if (t.q.length >= 4) for (var k in vocab) {
+        if (Math.abs(k.length - t.q.length) > 2) continue;
+        var d = dist(t.q, k, 2);
+        if (d > 0 && d <= 2 && (d < bd || (d === bd && vocab[k].df > bdf))) { best = k; bd = d; bdf = vocab[k].df; }
+      }
+      if (best && !(vocab[t.q])) { out.push(vocab[best].w); changed = true; } else out.push(vocab[t.q] ? vocab[t.q].w : t.q);
+    });
+    return changed ? out.join(" ") : "";
+  }
+
   function build() {
     dlg = document.createElement("dialog");
     dlg.className = "search";
     dlg.setAttribute("aria-label", ui.search || "Sök");
-    dlg.innerHTML = '<div class="search__bar"><input class="search__input" type="search" autocomplete="off" placeholder="' + esc(ui.searchPlaceholder || "Sök…") +
-      '" aria-label="' + esc(ui.search || "Sök") + '"><button class="search__close" type="button">' + esc(ui.searchClose || "Stäng") + '</button></div><ul class="search__results"></ul>';
+    dlg.innerHTML = '<div class="search__bar"><svg class="search__icon" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>' +
+      '<input class="search__input" type="search" role="combobox" aria-expanded="false" aria-controls="search-list" aria-autocomplete="list" autocomplete="off" autocapitalize="off" spellcheck="false" enterkeyhint="search" placeholder="' + esc(ui.searchPlaceholder || "Sök…") + '" aria-label="' + esc(ui.search || "Sök") + '">' +
+      '<button class="search__clear" type="button" hidden aria-label="' + esc(ui.searchClear || "Rensa") + '"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>' +
+      '<button class="search__close" type="button"><span>' + esc(ui.searchClose || "Stäng") + '</span><kbd>Esc</kbd></button></div>' +
+      '<div class="search__body" id="search-list"></div>' +
+      '<div class="search__foot" aria-hidden="true"><span><kbd>↑</kbd><kbd>↓</kbd> ' + esc(ui.searchNav || "bläddra") + '</span><span><kbd>Enter</kbd> ' + esc(ui.searchOpen || "öppna") + '</span><span><kbd>Esc</kbd> ' + esc(ui.searchClose || "Stäng").toLowerCase() + '</span></div>';
     document.body.appendChild(dlg);
     input = dlg.querySelector(".search__input");
-    list = dlg.querySelector(".search__results");
+    body = dlg.querySelector(".search__body");
+    clearBtn = dlg.querySelector(".search__clear");
     dlg.querySelector(".search__close").addEventListener("click", function () { dlg.close(); });
     dlg.addEventListener("click", function (e) { if (e.target === dlg) dlg.close(); });
+    clearBtn.addEventListener("click", function () { input.value = ""; run(); input.focus(); });
     input.addEventListener("input", run);
+    body.addEventListener("click", function (e) {
+      var s = e.target.closest && e.target.closest("[data-q]");
+      if (s) { input.value = s.getAttribute("data-q"); run(); input.focus(); }
+    });
+    input.addEventListener("keydown", function (e) {
+      if (e.key === "ArrowDown" || e.key === "ArrowUp") {
+        if (!hitEls.length) return;
+        e.preventDefault();
+        setActive(active + (e.key === "ArrowDown" ? 1 : -1));
+      } else if (e.key === "Enter") {
+        var el = hitEls[active >= 0 ? active : 0];
+        if (el) { e.preventDefault(); el.querySelector("a").click(); }
+      }
+    });
+  }
+  function setActive(i) {
+    if (!hitEls.length) return;
+    active = (i + hitEls.length) % hitEls.length;
+    hitEls.forEach(function (el, n) { el.classList.toggle("is-active", n === active); el.setAttribute("aria-selected", n === active ? "true" : "false"); });
+    input.setAttribute("aria-activedescendant", hitEls[active].id);
+    hitEls[active].scrollIntoView({ block: "nearest" });
+  }
+  function chips(label) {
+    return suppliers && suppliers.length
+      ? '<div class="search__suppliers"><p class="search__label">' + esc(label) + '</p><ul class="search__chips">' + suppliers.map(function (s) { return '<li><a href="' + esc(s.u) + '">' + esc(s.t) + "</a></li>"; }).join("") + "</ul></div>"
+      : "";
   }
   function run() {
-    var q = norm(input.value.trim());
-    if (!index || q.length < 2) { list.innerHTML = ""; return; }
-    var terms = q.split(/\s+/);
-    var hits = [];
-    index.forEach(function (it) {
-      var title = norm(it.t), body = norm(it.x);
-      var score = 0;
-      for (var i = 0; i < terms.length; i++) {
-        var inT = title.indexOf(terms[i]) >= 0, inB = body.indexOf(terms[i]) >= 0;
-        if (!inT && !inB) return;
-        score += (inT ? 5 : 0) + (inB ? 1 : 0);
-      }
-      hits.push({ it: it, s: score });
-    });
-    hits.sort(function (a, b) { return b.s - a.s; });
-    list.innerHTML = hits.length
-      ? hits.slice(0, 12).map(function (h) { return '<li><a href="' + esc(h.it.u) + '"><strong>' + esc(h.it.t) + "</strong><span>" + esc(h.it.x.slice(0, 110)) + "…</span></a></li>"; }).join("")
-      : '<li class="search__empty">' + esc(ui.searchNone || "Inga träffar.") + "</li>";
+    var raw = input.value.trim();
+    clearBtn.hidden = !input.value;
+    hitEls = []; active = -1;
+    input.removeAttribute("aria-activedescendant");
+    if (!index) { body.innerHTML = '<p class="search__none">' + esc(ui.loading || "…") + "</p>"; return; }
+    var terms = raw.length >= 2 ? parse(raw) : [];
+    if (!terms.length) { input.setAttribute("aria-expanded", "false"); body.innerHTML = chips(ui.searchSuppliers || "Leverantörer"); return; }
+    var qf = terms.map(function (t) { return t.q; }).join(" ");
+    var rows = rank(terms, qf);
+    input.setAttribute("aria-expanded", rows.length ? "true" : "false");
+    if (!rows.length) {
+      var dym = suggest(terms);
+      body.innerHTML = '<p class="search__none">' + esc((ui.searchNone || "Inga träffar.").replace(/\.$/, "")) + " “" + esc(raw) + "”.</p>" +
+        (dym ? '<p class="search__dym">' + esc(ui.searchDym || "Menade du") + ' <button type="button" data-q="' + esc(dym) + '">' + esc(dym) + "</button>?</p>" : "") + chips(ui.searchBrowse || "Bläddra bland leverantörer");
+      return;
+    }
+    var shown = rows.slice(0, 10);
+    body.innerHTML = '<p class="search__meta" aria-live="polite">' + esc((rows.length === 1 ? ui.searchHit || "{n} träff" : ui.searchHits || "{n} träffar").replace("{n}", rows.length)) + '</p><ul class="search__results" role="listbox">' +
+      shown.map(function (r, n) {
+        var d = r.d, snip = snippet(d.x || "", terms);
+        return '<li class="search__item" role="option" id="sr-' + n + '" aria-selected="false"><a href="' + esc(d.u) + '">' +
+          '<span class="search__thumb">' + (d.i ? '<img src="' + esc(d.i) + '" alt="" width="64" height="64" loading="lazy">' : '<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h9l4 4v14H6z"/><path d="M14 3v5h5M9 13h7M9 17h5"/></svg>') + "</span>" +
+          '<span class="search__txt"><strong>' + mark(d.t, terms) + "</strong>" + (d.c ? '<span class="search__crumb">' + esc(d.c) + "</span>" : "") + (snip ? '<span class="search__snip">' + snip + "</span>" : "") + "</span></a></li>";
+      }).join("") + "</ul>";
+    hitEls = [].slice.call(body.querySelectorAll(".search__item"));
+    hitEls.forEach(function (el, n) { el.addEventListener("mousemove", function () { if (active !== n) { active = n; hitEls.forEach(function (x, k) { x.classList.toggle("is-active", k === n); x.setAttribute("aria-selected", k === n ? "true" : "false"); }); } }); });
+    setActive(0);
+  }
+  function openSearch() {
+    if (!dlg) build();
+    if (!index) {
+      fetch(cfg.searchIndex || "/search-index.json").then(function (r) { return r.json(); }).then(function (j) { index = prepare(j); run(); }).catch(function () { body.innerHTML = '<p class="search__none">' + esc(ui.searchNone || "Inga träffar.") + "</p>"; });
+    }
+    if (!dlg.open) dlg.showModal();
+    run();
+    input.focus();
+    input.select();
   }
   if (searchBtn) {
-    searchBtn.addEventListener("click", function () {
-      if (!dlg) build();
-      if (!index) fetch(cfg.searchIndex || "/search-index.json").then(function (r) { return r.json(); }).then(function (j) { index = j; run(); }).catch(function () { /* offline */ });
-      dlg.showModal();
-      input.focus();
+    searchBtn.addEventListener("click", openSearch);
+    // "/" and Ctrl/Cmd+K open the search from anywhere on the page
+    document.addEventListener("keydown", function (e) {
+      var t = e.target, typing = t && (/^(input|textarea|select)$/i.test(t.tagName) || t.isContentEditable);
+      if ((e.key === "/" && !typing && !e.ctrlKey && !e.metaKey && !e.altKey) || ((e.ctrlKey || e.metaKey) && (e.key === "k" || e.key === "K"))) { e.preventDefault(); openSearch(); }
     });
   }
+
+  // ---------- products page: machines / material filter ----------
+  // Both groups are in the page for search engines and without scripts; the buttons only hide a group. One group always stays on.
+  [].forEach.call(document.querySelectorAll(".pfilter"), function (bar) {
+    var btns = [].slice.call(bar.querySelectorAll(".pfilter__btn")), groups = {}, on = {};
+    [].forEach.call(document.querySelectorAll(".pgroup"), function (g) { groups[g.getAttribute("data-g")] = g; });
+    btns.forEach(function (b) { on[b.getAttribute("data-g")] = true; });
+    function paint(keepUrl) {
+      btns.forEach(function (b) {
+        var k = b.getAttribute("data-g");
+        b.setAttribute("aria-pressed", on[k] ? "true" : "false");
+        if (groups[k]) groups[k].hidden = !on[k];
+      });
+      var only = btns.filter(function (b) { return on[b.getAttribute("data-g")]; });
+      if (!keepUrl) try { history.replaceState(null, "", only.length === 1 ? "#" + groups[only[0].getAttribute("data-g")].id : location.pathname + location.search); } catch (e) { /* ignore */ }
+    }
+    btns.forEach(function (b) {
+      b.addEventListener("click", function () {
+        var k = b.getAttribute("data-g"), live = btns.filter(function (x) { return on[x.getAttribute("data-g")]; }).length;
+        if (on[k] && live === 1) return; // the last group stays on
+        on[k] = !on[k];
+        paint();
+      });
+    });
+    var h = location.hash.slice(1);
+    btns.forEach(function (b) { var k = b.getAttribute("data-g"); if (groups[k] && groups[k].id === h) btns.forEach(function (x) { on[x.getAttribute("data-g")] = x === b; }); });
+    paint(true);
+  });
 
   // ---------- finder: choosing a product family shows its models and brochures ----------
   [].forEach.call(document.querySelectorAll("[data-finder]"), function (box) {
