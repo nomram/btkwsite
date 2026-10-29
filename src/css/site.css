@@ -268,6 +268,9 @@ li:first-child > .subnav__link--logo::after { left: 0; }
 .split__media img { max-height: 460px; width: auto; max-width: 100%; margin-inline: 0; object-fit: contain; object-position: left center; }
 .split__media:has(.figure--center) { justify-items: center; }
 .split__media .figure--center img { margin-inline: auto; object-position: center; }
+/* product pages: the picture sits in the middle of its column (a narrow pack shot left a wide empty strip before the text) */
+.page--product .split__media { justify-items: center; }
+.page--product .split__media img { margin-inline: auto; object-position: center; }
 .split__body.prose { padding-block: 0; }
 .split__body.prose > * { max-width: none; }
 @media (max-width: 860px) {
