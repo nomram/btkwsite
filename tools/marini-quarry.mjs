@@ -198,7 +198,7 @@ const DI = {};
 
 // ====================================================================================================================
 // saw pages
-const GROUPS = ["granite", "marble", "mobile"];
+const GROUPS = ["granite", "mobile"]; // the tiles of the saws page (the marble group is left off the page for now; its pages still exist)
 const RAIL = { sv: (kg, g) => `2 × 3 m, ${kg} kg per skena${g ? `, spårvidd ${g} mm` : ""}`, en: (kg, g) => `2 × 3 m, ${kg} kg each${g ? `, gauge ${g} mm` : ""}`, es: (kg, g) => `2 × 3 m, ${kg} kg cada uno${g ? `, ancho de vía ${g} mm` : ""}`, no: (kg, g) => `2 × 3 m, ${kg} kg per skinne${g ? `, sporvidde ${g} mm` : ""}` };
 const GUIDE = { sv: (n) => (n === 2 ? "två styrhjul 350 mm" : "styrhjul 350 mm"), en: (n) => (n === 2 ? "two guide wheels 350 mm" : "guide wheel 350 mm"), es: (n) => (n === 2 ? "dos poleas guía de 350 mm" : "polea guía de 350 mm"), no: (n) => (n === 2 ? "to styrehjul 350 mm" : "styrehjul 350 mm") };
 const sawPath = (s) => `${SAWFAM}/${s.slug}`;
