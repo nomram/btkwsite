@@ -10,12 +10,12 @@ import os from "node:os";
 import path from "node:path";
 import * as mupdf from "mupdf";
 import sharp from "sharp";
-import { SAWS, DRILLS, LANGS, TX, DRILL_TEXT, RL, PHRASES } from "./marini-quarry-data.mjs";
+import { SAWS, LANGS, TX, DRILL_TEXT, RL, PHRASES } from "./marini-quarry-data.mjs";
 
 const ROOT = path.resolve(import.meta.dirname, "..");
 const IMG = path.join(ROOT, "assets-src/img"), DOCS = path.join(ROOT, "assets-src/docs"), PAGES = path.join(ROOT, "content/pages/produkter/marini");
 const DL = process.env.MARINI_PDF_DIR || path.join(os.homedir(), "Downloads");
-const SAWFAM = "/produkter/marini/vajersågar", DRILLFAM = "/produkter/marini/stenbrottsborrning";
+const SAWFAM = "/produkter/marini/vajersågar";
 const date = new Date().toISOString().slice(0, 10);
 
 // ---------- the PDFs (name in the folder -> name on the site) ----------
@@ -167,21 +167,26 @@ for (const s of SAWS) {
 // ---------- pictures: drills ----------
 const DI = {};
 {
-  const mk = async (slug, mainSrc, opts = {}, extras = [], tilePhoto = false) => {
+  const mk = async (slug, mainSrc, opts = {}, extras = [], noTile = false) => {
     const buf = await grab(mainSrc);
     const d = { main: await save(buf, `marini-drill-${slug}.webp`, { trim: !opts.photo, pad: opts.photo ? 0 : 0.03, max: 1800, rotate: opts.rotate || 0, quality: opts.photo ? 80 : 86 }) };
-    d.tile = await tile(opts.rotate ? await sharp(buf).rotate(opts.rotate).png().toBuffer() : buf, `marini-drill-${slug}-tile.webp`, tilePhoto);
+    if (!noTile) d.tile = await tile(buf, `marini-drill-${slug}-tile.webp`);
     d.photos = [];
     for (const [k, src] of extras.entries()) d.photos.push(await save(await grab(src), `marini-drill-${slug}-p${k + 1}.webp`, { max: 1800, quality: 80 }));
     DI[slug] = d;
   };
   await mk("voyager", ["voy", 1, 1], { photo: true, rotate: 90 }, [["voy", 2, 1], ["voy", 2, 2]], true);
+  { // the Voyager is the MR-C 10: its render is the main picture, its photos follow the quarry photos of the brochure
+    const crawlers = JSON.parse(fs.readFileSync(path.join(ROOT, "crawl/marini/crawlers.json"), "utf8")).models.find((m) => m.slug === "mr-c-10");
+    const iso = crawlers.images.iso;
+    DI.voyager.photos = [DI.voyager.main, ...DI.voyager.photos, ...crawlers.images.photos.map((p) => ({ file: p.file, width: p.width, height: p.height }))];
+    DI.voyager.main = { file: iso.file, width: iso.width, height: iso.height };
+  }
   await mk("big-driller", ["big", 2, 1], {}, [["big", 3, 1], ["big", 1, 1]]);
   await mk("driller", ["drl", 2, 1]);
-  await mk("driller-id", ["drl", 2, 4]);
+  await mk("driller-id", ["drl", 2, 4], {}, [], true);
   await mk("hor-drill", ["hor", 2, 1], {}, [["hor", 2, 3]]);
-  await mk("hor-drill-id", ["hor", 2, 2], {}, [["hor", 2, 5], ["hor", 2, 6]]);
-  DI.family = { main: await save(await grab(["cat", 8, 1]), "marini-drill-family.webp", { max: 1800, quality: 80 }) };
+  await mk("hor-drill-id", ["hor", 2, 2], {}, [["hor", 2, 5], ["hor", 2, 6]], true);
   // drawings of the Voyager (dimensions, working area) and the blind-cut picture of the Big Driller
   const dr = async (src, name) => save(await grab(src), name, { max: 1600, quality: 90 });
   DI.voyagerDraw = {
@@ -283,92 +288,93 @@ for (const s of SAWS) {
 }
 
 // ====================================================================================================================
-// quarry drill rigs
-const drillPath = (d) => `${DRILLFAM}/${d.slug}`;
+// quarry drill rigs: direct children of the Marini page. Driller and Hor Drill each come in two versions, pneumatic and hydraulic
+// ("ID" in the model name = hydraulic); both are written out on one page. Voyager is the same machine as the MR-C 10 and borrows its pictures.
+const BASE = "/produkter/marini";
+const drillPath = (slug) => `${BASE}/${slug}`;
+const MRC10 = "/produkter/marini/crawlers/mr-c-10";
+const PAGESET = [
+  { slug: "voyager", name: "Voyager", parts: ["voyager"], order: 8 },
+  { slug: "big-driller", name: "Big Driller", parts: ["big-driller"], order: 9 },
+  { slug: "driller", name: "Driller", parts: ["driller", "driller-id"], order: 10 },
+  { slug: "hor-drill", name: "Hor Drill", parts: ["hor-drill", "hor-drill-id"], order: 11 }
+];
+const VX = {
+  sv: { two: "Två versioner", pneu: "Pneumatisk", hyd: "Hydraulisk", idNote: "ID i modellnamnet står för den hydrauliska versionen.", both: "Pneumatisk och hydraulisk (ID)", section: "Borrenheter för stenbrott", same: (a) => `Voyager är samma maskin som ${a} i Marinis larvriggsserie.` },
+  en: { two: "Two versions", pneu: "Pneumatic", hyd: "Hydraulic", idNote: "ID in the model name stands for the hydraulic version.", both: "Pneumatic and hydraulic (ID)", section: "Quarry drilling units", same: (a) => `Voyager is the same machine as the ${a} in Marini's crawler rig line.` },
+  es: { two: "Dos versiones", pneu: "Neumática", hyd: "Hidráulica", idNote: "ID en el nombre del modelo indica la versión hidráulica.", both: "Neumática e hidráulica (ID)", section: "Unidades de perforación para canteras", same: (a) => `Voyager es la misma máquina que la ${a} de la serie de perforadoras de orugas de Marini.` },
+  no: { two: "To utgaver", pneu: "Pneumatisk", hyd: "Hydraulisk", idNote: "ID i modellnavnet står for den hydrauliske utgaven.", both: "Pneumatisk og hydraulisk (ID)", section: "Borenheter for steinbrudd", same: (a) => `Voyager er den samme maskinen som ${a} i Marinis serie med beltegående borerigger.` }
+};
 const KL = { engine: { sv: "Motor", en: "Engine", es: "Motor", no: "Motor" }, torque: { sv: "Vridmoment", en: "Rotary torque", es: "Par de rotación", no: "Dreiemoment" }, hole: { sv: "Håldiameter", en: "Hole diameter", es: "Diámetro del barreno", no: "Hulldiameter" } };
 const keyLabel = (k, l) => (KL[k] ? KL[k][l] : RL[k][l]);
-const drillBullets = (d, l) => DRILL_TEXT[d.slug].key.map(([k, v]) => `${keyLabel(k, l)}: ${nl(v, l)}`);
-const drillOrder = ["voyager", "big-driller", "driller-id", "hor-drill-id", "driller", "hor-drill"];
-const BROCHURE = { voyager: "voy", "big-driller": "big", driller: "drl", "driller-id": "drl", "hor-drill": "hor", "hor-drill-id": "hor" };
-const COUNTER = { driller: "driller-id", "driller-id": "driller", "hor-drill": "hor-drill-id", "hor-drill-id": "hor-drill" };
-const TEXTS_FAMILY = {
-  card: { sv: "Hydrauliska och pneumatiska borrenheter för stenbrott: Voyager, Big Driller, Driller och Hor Drill.", en: "Hydraulic and pneumatic drilling units for quarries: Voyager, Big Driller, Driller and Hor Drill.", es: "Unidades de perforación hidráulicas y neumáticas para canteras: Voyager, Big Driller, Driller y Hor Drill.", no: "Hydrauliske og pneumatiske borenheter for steinbrudd: Voyager, Big Driller, Driller og Hor Drill." }
-};
-for (const d of DRILLS) {
-  const X = DRILL_TEXT[d.slug], im = DI[d.slug];
+const keyText = (slug, l) => DRILL_TEXT[slug].key.map(([k, v]) => `${keyLabel(k, l)}: ${nl(v, l)}`);
+const BROCHURE = { voyager: "voy", "big-driller": "big", driller: "drl", "hor-drill": "hor" };
+
+// stale pages of the first layout (a family page "Quarry drill rigs" with six pages below it)
+fs.rmSync(path.join(PAGES, "stenbrottsborrning"), { recursive: true, force: true });
+fs.rmSync(path.join(PAGES, "stenbrottsborrning.json"), { force: true });
+for (const f of ["marini-drill-family.webp", "marini-drill-driller-id-tile.webp", "marini-drill-hor-drill-id-tile.webp"]) fs.rmSync(path.join(IMG, f), { force: true });
+{
+  const f = path.join(ROOT, "content/redirects.json");
+  const raw = fs.readFileSync(f, "utf8"), eol = eolOf(raw), r = JSON.parse(raw), old = "/produkter/marini/stenbrottsborrning";
+  Object.assign(r, { [old]: BASE, [`${old}/voyager`]: drillPath("voyager"), [`${old}/big-driller`]: drillPath("big-driller"), [`${old}/driller`]: drillPath("driller"), [`${old}/driller-id`]: drillPath("driller"), [`${old}/hor-drill`]: drillPath("hor-drill"), [`${old}/hor-drill-id`]: drillPath("hor-drill") });
+  fs.writeFileSync(f, JSON.stringify(r, null, 2).replace(/\n/g, eol) + eol);
+}
+
+for (const pg of PAGESET) {
+  const parts = pg.parts.map((s) => ({ slug: s, X: DRILL_TEXT[s], im: DI[s] }));
+  const base = parts[0], two = parts.length === 2;
   const i18n = {};
-  const near = [COUNTER[d.slug], ...drillOrder].filter((x, i, a) => x && x !== d.slug && a.indexOf(x) === i).slice(0, 3);
+  const near = PAGESET.filter((x) => x.slug !== pg.slug).map((x) => x.slug);
   for (const l of LANGS) {
-    const T = TX[l];
-    const groups = X.groups.map((g) => ({ title: g.t[l], rows: g.rows.map(([k, v]) => ({ label: RL[k][l], metric: val(v, l) })) }));
-    const draws = d.slug === "voyager"
-      ? [[T.drawings, null], ["v", DI.voyagerDraw.vertical, { sv: "Vertikal borrning: mått", en: "Vertical drilling: dimensions", es: "Perforación vertical: dimensiones", no: "Vertikal boring: mål" }], ["h", DI.voyagerDraw.horizontal, { sv: "Horisontell borrning: mått", en: "Horizontal drilling: dimensions", es: "Perforación horizontal: dimensiones", no: "Horisontal boring: mål" }],
+    const T = TX[l], V = VX[l], X = base.X;
+    const groups = parts.flatMap((p, i) => p.X.groups.map((g) => ({ title: two ? `${i === 0 ? V.pneu : V.hyd} (${p.X.title[l]})` : g.t[l], rows: g.rows.map(([k, v]) => ({ label: RL[k][l], metric: val(v, l) })) })));
+    const draws = pg.slug === "voyager"
+      ? [["v", DI.voyagerDraw.vertical, { sv: "Vertikal borrning: mått", en: "Vertical drilling: dimensions", es: "Perforación vertical: dimensiones", no: "Vertikal boring: mål" }], ["h", DI.voyagerDraw.horizontal, { sv: "Horisontell borrning: mått", en: "Horizontal drilling: dimensions", es: "Perforación horizontal: dimensiones", no: "Horisontal boring: mål" }],
         ["s", DI.voyagerDraw.areaSide, { sv: "Arbetsområde, sidovy", en: "Working area, side view", es: "Área de trabajo, vista lateral", no: "Arbeidsområde, sideriss" }], ["p", DI.voyagerDraw.areaPlan, { sv: "Arbetsområde, planvy (250°)", en: "Working area, plan view (250°)", es: "Área de trabajo, vista en planta (250°)", no: "Arbeidsområde, planriss (250°)" }]]
-      : d.slug === "big-driller" ? [[T.drawings, null], ["b", DI.blind, { sv: "Hål för blinda snitt (principbild)", en: "Holes for blind cuts (principle)", es: "Barrenos para cortes ciegos (esquema)", no: "Hull for blinde snitt (prinsippskisse)" }]] : [];
-    const drawBlock = draws.length ? [{ type: "modules", layout: "tiles", columns: d.slug === "voyager" ? 2 : 1, narrow: d.slug !== "voyager", zoom: true, more: false, items: draws.slice(1).map(([, img, title]) => ({ title: title[l], image: img.file, alt: `${X.title[l]}: ${title[l]}`, width: img.width, height: img.height })) }] : [];
+      : pg.slug === "big-driller" ? [["b", DI.blind, { sv: "Hål för blinda snitt (principbild)", en: "Holes for blind cuts (principle)", es: "Barrenos para cortes ciegos (esquema)", no: "Hull for blinde snitt (prinsippskisse)" }]] : [];
+    const drawBlock = draws.length ? [{ type: "modules", layout: "tiles", columns: pg.slug === "voyager" ? 2 : 1, narrow: pg.slug !== "voyager", zoom: true, more: false, items: draws.map(([, img, title]) => ({ title: title[l], image: img.file, alt: `${X.title[l]}: ${title[l]}`, width: img.width, height: img.height })) }] : [];
+    // the pictures: the first part's picture is the main one, the other versions and the extra photos follow in the slideshow
+    const main = base.im.main, extra = [...parts.slice(1).map((p) => p.im.main), ...parts.flatMap((p) => p.im.photos || [])];
+    const altOf = (img) => { const p = parts.find((x) => x.im.main === img); return `Marini ${p ? p.X.title[l] : X.title[l]}`; };
+    const versionBullets = two ? parts.map((p, i) => `${i === 0 ? V.pneu : V.hyd} (${p.X.title[l]}): ${p.X.key.map(([k, v]) => `${keyLabel(k, l).toLowerCase()} ${nl(v, l)}`).join(", ")}`) : keyText(base.slug, l);
     const blocks = [
       logoBlock,
-      { type: "image", alt: `Marini ${X.title[l]}`, ...im.main, src: im.main.file },
-      ...carousel(im.photos, `Marini ${X.title[l]}`),
+      { type: "image", alt: `Marini ${X.title[l]}`, ...main, src: main.file },
+      ...(extra.length ? [{ type: "carousel", autoplay: false, interval: 6, items: extra.map((p, k) => ({ src: p.file, alt: `${altOf(p)} (${k + 1}/${extra.length})`, width: p.width, height: p.height })) }] : []),
       { type: "text", html: esc(X.intro[l]) },
       { type: "text", html: esc(X.body[l]) },
-      { type: "list", ordered: false, items: drillBullets(d, l) },
+      ...(pg.slug === "voyager" ? [{ type: "text", html: V.same(`<a href="${MRC10}">MR-C 10</a>`) }] : []),
+      ...(two ? [{ type: "heading", level: 3, text: V.two }, { type: "text", html: esc(V.idNote) }] : []),
+      { type: "list", ordered: false, items: versionBullets },
       { type: "text", html: T.contact },
-      dl(T.docModel(X.title[l]), PDF[BROCHURE[d.slug]].to), dl(T.docCat, PDF.cat.to),
+      dl(T.docModel(X.title[l]), PDF[BROCHURE[pg.slug]].to), dl(T.docCat, PDF.cat.to),
       { type: "datasheet", title: T.data, tagline: `Marini ${X.title[l]}`, intro: [], groups, note: "", source: T.source },
       ...drawBlock,
-      { type: "related", title: T.up, items: [{ href: DRILLFAM, mutual: false }, ...near.map((x) => ({ href: drillPath({ slug: x }) }))] }
+      { type: "related", title: T.up, items: [...(pg.slug === "voyager" ? [{ href: MRC10, mutual: true }] : []), { href: BASE, mutual: false }, ...near.map((x) => ({ href: drillPath(x) }))].slice(0, 4) }
     ];
     i18n[l] = { title: X.title[l], h1: `Marini ${X.title[l]}`, description: X.intro[l].slice(0, 200), blocks: tag(blocks) };
   }
-  writeJson(path.join(PAGES, "stenbrottsborrning", d.slug + ".json"), { path: drillPath(d), updated: date, template: "product", order: drillOrder.indexOf(d.slug), published: true, hero: heroDrill, i18n });
+  writeJson(path.join(PAGES, pg.slug + ".json"), { path: drillPath(pg.slug), updated: date, template: "product", order: pg.order, published: true, hero: heroDrill, i18n });
 }
 
-// the family page
+// the Marini page: the family card of the first layout goes, the four machines get tiles of their own below the cards
 {
-  const i18n = {};
-  const rows = (l) => {
-    const T = TX[l];
-    const r = [[T.tbl.model, T.tbl.type, T.tbl.stroke, T.tbl.head, T.tbl.torque, T.tbl.rpm, T.tbl.weight]];
-    const data = {
-      voyager: ["hydraulic", "1 260 - 1 760 mm", "ID 160", "1 600 Nm", "35 - 100 rpm", "1 400 kg"], "big-driller": ["hydraulic", "1 260 mm", "ID 300", "3 000 Nm", "20 - 40 rpm", dash],
-      "driller-id": ["hydraulic", "1 760 mm", "ID 160", "1 600 Nm", "35 - 100 rpm", "145 kg"], "hor-drill-id": ["hydraulic", "1 760 mm", "ID 160", "1 600 Nm", "35 - 100 rpm", "230 kg"],
-      driller: ["pneumatic", "1 000 - 1 500 mm", "EP 95", "850 Nm", "40 rpm", "180 kg"], "hor-drill": ["pneumatic", "1 000 - 1 500 mm", "EP 95", "850 Nm", "40 rpm", "230 kg"]
-    };
-    for (const d of DRILLS) { const [kind, ...rest] = data[d.slug]; r.push([d.name, T[kind], ...rest.map((v) => nl(v, l))]); }
-    return r;
-  };
-  const famNames = { sv: "Borriggar för stenbrott", en: "Quarry drill rigs", es: "Perforadoras para canteras", no: "Borerigger for steinbrudd" };
-  for (const l of LANGS) {
-    const T = TX[l];
-    const blocks = [
-      logoBlock,
-      { type: "image", alt: `Marini ${famNames[l]}`, ...DI.family.main, src: DI.family.main.file },
-      { type: "text", html: esc(T.drillFamilyIntro) },
-      { type: "text", html: T.contact },
-      dl(T.docCat, PDF.cat.to), dl(T.docModel("Voyager"), PDF.voy.to), dl(T.docModel("Big Driller"), PDF.big.to), dl(T.docModel("Driller"), PDF.drl.to), dl(T.docModel("Hor Drill"), PDF.hor.to),
-      { type: "heading", level: 2, text: T.models },
-      { type: "modules", layout: "tiles", columns: 3, square: true, more: false, items: drillOrder.map((slug) => { const d = DRILLS.find((x) => x.slug === slug); return { title: d.name, image: DI[slug].tile.file, alt: `Marini ${d.name}`, href: drillPath(d), bullets: drillBullets(d, l).slice(0, 2), width: 1000, height: 1000 }; }) },
-      { type: "table", header: true, rows: rows(l) },
-      { type: "text", html: esc(T.tblNote) }
-    ];
-    // row links: one per model row (the header has none)
-    const tb = blocks.find((b) => b.type === "table");
-    tb.links = drillOrder.map((slug) => drillPath({ slug }));
-    tb.rows = (() => { const r = rows(l); const byName = Object.fromEntries(r.slice(1).map((x) => [x[0], x])); return [r[0], ...drillOrder.map((slug) => byName[DRILLS.find((x) => x.slug === slug).name])]; })();
-    i18n[l] = { title: famNames[l], h1: `Marini ${famNames[l]}`, description: T.drillFamilyIntro.slice(0, 200), blocks: tag(blocks) };
-  }
-  writeJson(path.join(PAGES, "stenbrottsborrning.json"), { path: DRILLFAM, updated: date, template: "product", order: 8, published: true, hero: heroDrill, i18n });
-  // brand page card
   const f = path.join(PAGES, "..", "marini.json");
   const { eol, j } = readPage(f);
   for (const l of LANGS) {
+    const V = VX[l], T = TX[l];
     const cards = j.i18n[l].blocks.find((b) => b.type === "cards");
-    cards.items = cards.items.filter((it) => it.href !== DRILLFAM);
-    const ref = cards.items.find((it) => /rustica/.test(it.href)) || cards.items[0];
-    const idx = cards.items.findIndex((it) => /rustica/.test(it.href));
-    const item = { href: DRILLFAM, label: ref.label, title: famNames[l], html: TEXTS_FAMILY.card[l], text: TEXTS_FAMILY.card[l], image: DI.voyager.tile.file, width: 1000, height: 1000, alt: `Marini ${famNames[l]}` };
-    cards.items.splice(idx >= 0 ? idx + 1 : cards.items.length, 0, item);
+    cards.items = cards.items.filter((it) => it.href !== "/produkter/marini/stenbrottsborrning");
+    const tileOf = {
+      voyager: { image: "/assets/img/marini-mrc-mr-c-10-tile.webp", bullets: [T.hydraulic, `${KL.engine[l]}: ${nl("17 kW / 15 kW", l)}`] },
+      "big-driller": { image: DI["big-driller"].tile.file, bullets: [T.hydraulic, `${KL.hole[l]}: 255 mm`] },
+      driller: { image: DI.driller.tile.file, bullets: [V.both, `${RL.weight[l]}: ${nl("145 - 180 kg", l)}`] },
+      "hor-drill": { image: DI["hor-drill"].tile.file, bullets: [V.both, `${RL.weight[l]}: 230 kg`] }
+    };
+    const bl = j.i18n[l].blocks.filter((b) => !b.gen || b.type === "button"); // (the generated catalogue button stays)
+    const tiles = [{ type: "heading", level: 2, text: V.section }, { type: "modules", layout: "tiles", columns: 4, square: true, more: false, items: PAGESET.map((pg) => ({ title: pg.name, image: tileOf[pg.slug].image, alt: `Marini ${pg.name}`, href: drillPath(pg.slug), bullets: tileOf[pg.slug].bullets, width: 1000, height: 1000 })) }];
+    j.i18n[l].blocks = [...bl, ...tag(tiles)];
   }
   j.updated = date;
   writeJson(f, j, eol);
@@ -394,4 +400,4 @@ for (const d of DRILLS) {
   }
   console.log(`old quarry brochure: ${hidden} buttons hidden`);
 }
-console.log(`Marini quarry: ${SAWS.length} wire saw pages, ${DRILLS.length} drill rig pages, 2 family pages updated or added`);
+console.log(`Marini quarry: ${SAWS.length} wire saw pages, ${PAGESET.length} drill rig pages (Voyager, Big Driller, Driller, Hor Drill)`);

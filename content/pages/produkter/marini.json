@@ -142,17 +142,6 @@
               "alt": "RUSTICA logotyp"
             },
             {
-              "href": "/produkter/marini/stenbrottsborrning",
-              "label": "Läs mer",
-              "title": "Borriggar för stenbrott",
-              "html": "Hydrauliska och pneumatiska borrenheter för stenbrott: Voyager, Big Driller, Driller och Hor Drill.",
-              "text": "Hydrauliska och pneumatiska borrenheter för stenbrott: Voyager, Big Driller, Driller och Hor Drill.",
-              "image": "/assets/img/marini-drill-voyager-tile.webp",
-              "width": 1000,
-              "height": 1000,
-              "alt": "Marini Borriggar för stenbrott"
-            },
-            {
               "href": "/produkter/marini/sprutbetong",
               "label": "Läs mer",
               "title": "Sprutbetong",
@@ -164,6 +153,70 @@
               "alt": "Sprutbetong logotyp"
             }
           ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Borrenheter för stenbrott",
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 4,
+          "square": true,
+          "more": false,
+          "items": [
+            {
+              "title": "Voyager",
+              "image": "/assets/img/marini-mrc-mr-c-10-tile.webp",
+              "alt": "Marini Voyager",
+              "href": "/produkter/marini/voyager",
+              "bullets": [
+                "Hydraulisk",
+                "Motor: 17 kW / 15 kW"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "Big Driller",
+              "image": "/assets/img/marini-drill-big-driller-tile.webp",
+              "alt": "Marini Big Driller",
+              "href": "/produkter/marini/big-driller",
+              "bullets": [
+                "Hydraulisk",
+                "Håldiameter: 255 mm"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "Driller",
+              "image": "/assets/img/marini-drill-driller-tile.webp",
+              "alt": "Marini Driller",
+              "href": "/produkter/marini/driller",
+              "bullets": [
+                "Pneumatisk och hydraulisk (ID)",
+                "Vikt: 145 - 180 kg"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "Hor Drill",
+              "image": "/assets/img/marini-drill-hor-drill-tile.webp",
+              "alt": "Marini Hor Drill",
+              "href": "/produkter/marini/hor-drill",
+              "bullets": [
+                "Pneumatisk och hydraulisk (ID)",
+                "Vikt: 230 kg"
+              ],
+              "width": 1000,
+              "height": 1000
+            }
+          ],
+          "gen": true
         }
       ]
     },
@@ -298,17 +351,6 @@
               "alt": "RUSTICA logo"
             },
             {
-              "href": "/produkter/marini/stenbrottsborrning",
-              "label": "Läs mer",
-              "title": "Quarry drill rigs",
-              "html": "Hydraulic and pneumatic drilling units for quarries: Voyager, Big Driller, Driller and Hor Drill.",
-              "text": "Hydraulic and pneumatic drilling units for quarries: Voyager, Big Driller, Driller and Hor Drill.",
-              "image": "/assets/img/marini-drill-voyager-tile.webp",
-              "width": 1000,
-              "height": 1000,
-              "alt": "Marini Quarry drill rigs"
-            },
-            {
               "href": "/produkter/marini/sprutbetong",
               "label": "Läs mer",
               "title": "Shotcrete",
@@ -320,6 +362,70 @@
               "alt": "Shotcrete logo"
             }
           ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Quarry drilling units",
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 4,
+          "square": true,
+          "more": false,
+          "items": [
+            {
+              "title": "Voyager",
+              "image": "/assets/img/marini-mrc-mr-c-10-tile.webp",
+              "alt": "Marini Voyager",
+              "href": "/produkter/marini/voyager",
+              "bullets": [
+                "Hydraulic",
+                "Engine: 17 kW / 15 kW"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "Big Driller",
+              "image": "/assets/img/marini-drill-big-driller-tile.webp",
+              "alt": "Marini Big Driller",
+              "href": "/produkter/marini/big-driller",
+              "bullets": [
+                "Hydraulic",
+                "Hole diameter: 255 mm"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "Driller",
+              "image": "/assets/img/marini-drill-driller-tile.webp",
+              "alt": "Marini Driller",
+              "href": "/produkter/marini/driller",
+              "bullets": [
+                "Pneumatic and hydraulic (ID)",
+                "Weight: 145 - 180 kg"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "Hor Drill",
+              "image": "/assets/img/marini-drill-hor-drill-tile.webp",
+              "alt": "Marini Hor Drill",
+              "href": "/produkter/marini/hor-drill",
+              "bullets": [
+                "Pneumatic and hydraulic (ID)",
+                "Weight: 230 kg"
+              ],
+              "width": 1000,
+              "height": 1000
+            }
+          ],
+          "gen": true
         }
       ],
       "published": true
@@ -455,17 +561,6 @@
               "alt": "RUSTICA logotipo"
             },
             {
-              "href": "/produkter/marini/stenbrottsborrning",
-              "label": "Läs mer",
-              "title": "Perforadoras para canteras",
-              "html": "Unidades de perforación hidráulicas y neumáticas para canteras: Voyager, Big Driller, Driller y Hor Drill.",
-              "text": "Unidades de perforación hidráulicas y neumáticas para canteras: Voyager, Big Driller, Driller y Hor Drill.",
-              "image": "/assets/img/marini-drill-voyager-tile.webp",
-              "width": 1000,
-              "height": 1000,
-              "alt": "Marini Perforadoras para canteras"
-            },
-            {
               "href": "/produkter/marini/sprutbetong",
               "label": "Läs mer",
               "title": "Hormigón proyectado",
@@ -477,6 +572,70 @@
               "alt": "Hormigón proyectado logotipo"
             }
           ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Unidades de perforación para canteras",
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 4,
+          "square": true,
+          "more": false,
+          "items": [
+            {
+              "title": "Voyager",
+              "image": "/assets/img/marini-mrc-mr-c-10-tile.webp",
+              "alt": "Marini Voyager",
+              "href": "/produkter/marini/voyager",
+              "bullets": [
+                "Hidráulica",
+                "Motor: 17 kW / 15 kW"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "Big Driller",
+              "image": "/assets/img/marini-drill-big-driller-tile.webp",
+              "alt": "Marini Big Driller",
+              "href": "/produkter/marini/big-driller",
+              "bullets": [
+                "Hidráulica",
+                "Diámetro del barreno: 255 mm"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "Driller",
+              "image": "/assets/img/marini-drill-driller-tile.webp",
+              "alt": "Marini Driller",
+              "href": "/produkter/marini/driller",
+              "bullets": [
+                "Neumática e hidráulica (ID)",
+                "Peso: 145 - 180 kg"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "Hor Drill",
+              "image": "/assets/img/marini-drill-hor-drill-tile.webp",
+              "alt": "Marini Hor Drill",
+              "href": "/produkter/marini/hor-drill",
+              "bullets": [
+                "Neumática e hidráulica (ID)",
+                "Peso: 230 kg"
+              ],
+              "width": 1000,
+              "height": 1000
+            }
+          ],
+          "gen": true
         }
       ],
       "published": true
@@ -612,17 +771,6 @@
               "alt": "RUSTICA logo"
             },
             {
-              "href": "/produkter/marini/stenbrottsborrning",
-              "label": "Läs mer",
-              "title": "Borerigger for steinbrudd",
-              "html": "Hydrauliske og pneumatiske borenheter for steinbrudd: Voyager, Big Driller, Driller og Hor Drill.",
-              "text": "Hydrauliske og pneumatiske borenheter for steinbrudd: Voyager, Big Driller, Driller og Hor Drill.",
-              "image": "/assets/img/marini-drill-voyager-tile.webp",
-              "width": 1000,
-              "height": 1000,
-              "alt": "Marini Borerigger for steinbrudd"
-            },
-            {
               "href": "/produkter/marini/sprutbetong",
               "label": "Läs mer",
               "title": "Sprøytebetong",
@@ -634,6 +782,70 @@
               "alt": "Sprøytebetong logo"
             }
           ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Borenheter for steinbrudd",
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 4,
+          "square": true,
+          "more": false,
+          "items": [
+            {
+              "title": "Voyager",
+              "image": "/assets/img/marini-mrc-mr-c-10-tile.webp",
+              "alt": "Marini Voyager",
+              "href": "/produkter/marini/voyager",
+              "bullets": [
+                "Hydraulisk",
+                "Motor: 17 kW / 15 kW"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "Big Driller",
+              "image": "/assets/img/marini-drill-big-driller-tile.webp",
+              "alt": "Marini Big Driller",
+              "href": "/produkter/marini/big-driller",
+              "bullets": [
+                "Hydraulisk",
+                "Hulldiameter: 255 mm"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "Driller",
+              "image": "/assets/img/marini-drill-driller-tile.webp",
+              "alt": "Marini Driller",
+              "href": "/produkter/marini/driller",
+              "bullets": [
+                "Pneumatisk og hydraulisk (ID)",
+                "Vekt: 145 - 180 kg"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "Hor Drill",
+              "image": "/assets/img/marini-drill-hor-drill-tile.webp",
+              "alt": "Marini Hor Drill",
+              "href": "/produkter/marini/hor-drill",
+              "bullets": [
+                "Pneumatisk og hydraulisk (ID)",
+                "Vekt: 230 kg"
+              ],
+              "width": 1000,
+              "height": 1000
+            }
+          ],
+          "gen": true
         }
       ],
       "published": true

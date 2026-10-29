@@ -1,8 +1,8 @@
 {
-  "path": "/produkter/marini/stenbrottsborrning/voyager",
+  "path": "/produkter/marini/voyager",
   "updated": "2026-10-29",
   "template": "product",
-  "order": 0,
+  "order": 8,
   "published": true,
   "hero": {
     "image": "/assets/img/marini-rustica-hero.webp"
@@ -25,28 +25,64 @@
         {
           "type": "image",
           "alt": "Marini Voyager",
-          "file": "/assets/img/marini-drill-voyager.webp",
-          "width": 1259,
-          "height": 1800,
-          "src": "/assets/img/marini-drill-voyager.webp",
+          "file": "/assets/img/marini-mrc-mr-c-10-iso.webp",
+          "width": 1522,
+          "height": 2021,
+          "src": "/assets/img/marini-mrc-mr-c-10-iso.webp",
           "gen": true
         },
         {
           "type": "carousel",
-          "autoplay": true,
+          "autoplay": false,
           "interval": 6,
           "items": [
             {
+              "src": "/assets/img/marini-drill-voyager.webp",
+              "alt": "Marini Voyager (1/8)",
+              "width": 1259,
+              "height": 1800
+            },
+            {
               "src": "/assets/img/marini-drill-voyager-p1.webp",
-              "alt": "Marini Voyager (1/2)",
+              "alt": "Marini Voyager (2/8)",
               "width": 1043,
               "height": 720
             },
             {
               "src": "/assets/img/marini-drill-voyager-p2.webp",
-              "alt": "Marini Voyager (2/2)",
+              "alt": "Marini Voyager (3/8)",
               "width": 1043,
               "height": 720
+            },
+            {
+              "src": "/assets/img/marini-mrc-mr-c-10-p1.webp",
+              "alt": "Marini Voyager (4/8)",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/marini-mrc-mr-c-10-p2.webp",
+              "alt": "Marini Voyager (5/8)",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/marini-mrc-mr-c-10-p3.webp",
+              "alt": "Marini Voyager (6/8)",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/marini-mrc-mr-c-10-p4.webp",
+              "alt": "Marini Voyager (7/8)",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/marini-mrc-mr-c-10-p5.webp",
+              "alt": "Marini Voyager (8/8)",
+              "width": 1400,
+              "height": 1050
             }
           ],
           "gen": true
@@ -59,6 +95,11 @@
         {
           "type": "text",
           "html": "Med hydrauliskt rotationshuvud och pneumatisk sänkhammare (DTH) borrar den stora hål för diamantvajern. Med rotationshuvud och diamantkronor kärnborrar den över 30 meter med diametrar på 64 - 90 mm, och med hydro-pneumatiska bergborrmaskiner borrar den hål med olika diametrar.",
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "Voyager är samma maskin som <a href=\"/produkter/marini/crawlers/mr-c-10\">MR-C 10</a> i Marinis larvriggsserie.",
           "gen": true
         },
         {
@@ -283,17 +324,18 @@
           "title": "Se även",
           "items": [
             {
-              "href": "/produkter/marini/stenbrottsborrning",
+              "href": "/produkter/marini/crawlers/mr-c-10",
+              "mutual": true
+            },
+            {
+              "href": "/produkter/marini",
               "mutual": false
             },
             {
-              "href": "/produkter/marini/stenbrottsborrning/big-driller"
+              "href": "/produkter/marini/big-driller"
             },
             {
-              "href": "/produkter/marini/stenbrottsborrning/driller-id"
-            },
-            {
-              "href": "/produkter/marini/stenbrottsborrning/hor-drill-id"
+              "href": "/produkter/marini/driller"
             }
           ],
           "gen": true
@@ -317,28 +359,64 @@
         {
           "type": "image",
           "alt": "Marini Voyager",
-          "file": "/assets/img/marini-drill-voyager.webp",
-          "width": 1259,
-          "height": 1800,
-          "src": "/assets/img/marini-drill-voyager.webp",
+          "file": "/assets/img/marini-mrc-mr-c-10-iso.webp",
+          "width": 1522,
+          "height": 2021,
+          "src": "/assets/img/marini-mrc-mr-c-10-iso.webp",
           "gen": true
         },
         {
           "type": "carousel",
-          "autoplay": true,
+          "autoplay": false,
           "interval": 6,
           "items": [
             {
+              "src": "/assets/img/marini-drill-voyager.webp",
+              "alt": "Marini Voyager (1/8)",
+              "width": 1259,
+              "height": 1800
+            },
+            {
               "src": "/assets/img/marini-drill-voyager-p1.webp",
-              "alt": "Marini Voyager (1/2)",
+              "alt": "Marini Voyager (2/8)",
               "width": 1043,
               "height": 720
             },
             {
               "src": "/assets/img/marini-drill-voyager-p2.webp",
-              "alt": "Marini Voyager (2/2)",
+              "alt": "Marini Voyager (3/8)",
               "width": 1043,
               "height": 720
+            },
+            {
+              "src": "/assets/img/marini-mrc-mr-c-10-p1.webp",
+              "alt": "Marini Voyager (4/8)",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/marini-mrc-mr-c-10-p2.webp",
+              "alt": "Marini Voyager (5/8)",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/marini-mrc-mr-c-10-p3.webp",
+              "alt": "Marini Voyager (6/8)",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/marini-mrc-mr-c-10-p4.webp",
+              "alt": "Marini Voyager (7/8)",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/marini-mrc-mr-c-10-p5.webp",
+              "alt": "Marini Voyager (8/8)",
+              "width": 1400,
+              "height": 1050
             }
           ],
           "gen": true
@@ -351,6 +429,11 @@
         {
           "type": "text",
           "html": "With the hydraulic rotary head and a pneumatic down-the-hole (DTH) hammer it drills large holes for the diamond wire. With the rotary head and diamond crowns it core drills more than 30 metres with diameters of 64 - 90 mm, and with hydro-pneumatic rock drills it makes holes of various diameters.",
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "Voyager is the same machine as the <a href=\"/produkter/marini/crawlers/mr-c-10\">MR-C 10</a> in Marini's crawler rig line.",
           "gen": true
         },
         {
@@ -575,17 +658,18 @@
           "title": "See also",
           "items": [
             {
-              "href": "/produkter/marini/stenbrottsborrning",
+              "href": "/produkter/marini/crawlers/mr-c-10",
+              "mutual": true
+            },
+            {
+              "href": "/produkter/marini",
               "mutual": false
             },
             {
-              "href": "/produkter/marini/stenbrottsborrning/big-driller"
+              "href": "/produkter/marini/big-driller"
             },
             {
-              "href": "/produkter/marini/stenbrottsborrning/driller-id"
-            },
-            {
-              "href": "/produkter/marini/stenbrottsborrning/hor-drill-id"
+              "href": "/produkter/marini/driller"
             }
           ],
           "gen": true
@@ -609,28 +693,64 @@
         {
           "type": "image",
           "alt": "Marini Voyager",
-          "file": "/assets/img/marini-drill-voyager.webp",
-          "width": 1259,
-          "height": 1800,
-          "src": "/assets/img/marini-drill-voyager.webp",
+          "file": "/assets/img/marini-mrc-mr-c-10-iso.webp",
+          "width": 1522,
+          "height": 2021,
+          "src": "/assets/img/marini-mrc-mr-c-10-iso.webp",
           "gen": true
         },
         {
           "type": "carousel",
-          "autoplay": true,
+          "autoplay": false,
           "interval": 6,
           "items": [
             {
+              "src": "/assets/img/marini-drill-voyager.webp",
+              "alt": "Marini Voyager (1/8)",
+              "width": 1259,
+              "height": 1800
+            },
+            {
               "src": "/assets/img/marini-drill-voyager-p1.webp",
-              "alt": "Marini Voyager (1/2)",
+              "alt": "Marini Voyager (2/8)",
               "width": 1043,
               "height": 720
             },
             {
               "src": "/assets/img/marini-drill-voyager-p2.webp",
-              "alt": "Marini Voyager (2/2)",
+              "alt": "Marini Voyager (3/8)",
               "width": 1043,
               "height": 720
+            },
+            {
+              "src": "/assets/img/marini-mrc-mr-c-10-p1.webp",
+              "alt": "Marini Voyager (4/8)",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/marini-mrc-mr-c-10-p2.webp",
+              "alt": "Marini Voyager (5/8)",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/marini-mrc-mr-c-10-p3.webp",
+              "alt": "Marini Voyager (6/8)",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/marini-mrc-mr-c-10-p4.webp",
+              "alt": "Marini Voyager (7/8)",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/marini-mrc-mr-c-10-p5.webp",
+              "alt": "Marini Voyager (8/8)",
+              "width": 1400,
+              "height": 1050
             }
           ],
           "gen": true
@@ -643,6 +763,11 @@
         {
           "type": "text",
           "html": "Con el cabezal de rotación hidráulico y un martillo de fondo (DTH) neumático perfora barrenos grandes para el hilo diamantado. Con el cabezal y coronas diamantadas realiza sondeos de más de 30 metros con diámetros de 64 - 90 mm, y con perforadoras hidroneumáticas hace barrenos de distintos diámetros.",
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "Voyager es la misma máquina que la <a href=\"/produkter/marini/crawlers/mr-c-10\">MR-C 10</a> de la serie de perforadoras de orugas de Marini.",
           "gen": true
         },
         {
@@ -867,17 +992,18 @@
           "title": "Véase también",
           "items": [
             {
-              "href": "/produkter/marini/stenbrottsborrning",
+              "href": "/produkter/marini/crawlers/mr-c-10",
+              "mutual": true
+            },
+            {
+              "href": "/produkter/marini",
               "mutual": false
             },
             {
-              "href": "/produkter/marini/stenbrottsborrning/big-driller"
+              "href": "/produkter/marini/big-driller"
             },
             {
-              "href": "/produkter/marini/stenbrottsborrning/driller-id"
-            },
-            {
-              "href": "/produkter/marini/stenbrottsborrning/hor-drill-id"
+              "href": "/produkter/marini/driller"
             }
           ],
           "gen": true
@@ -901,28 +1027,64 @@
         {
           "type": "image",
           "alt": "Marini Voyager",
-          "file": "/assets/img/marini-drill-voyager.webp",
-          "width": 1259,
-          "height": 1800,
-          "src": "/assets/img/marini-drill-voyager.webp",
+          "file": "/assets/img/marini-mrc-mr-c-10-iso.webp",
+          "width": 1522,
+          "height": 2021,
+          "src": "/assets/img/marini-mrc-mr-c-10-iso.webp",
           "gen": true
         },
         {
           "type": "carousel",
-          "autoplay": true,
+          "autoplay": false,
           "interval": 6,
           "items": [
             {
+              "src": "/assets/img/marini-drill-voyager.webp",
+              "alt": "Marini Voyager (1/8)",
+              "width": 1259,
+              "height": 1800
+            },
+            {
               "src": "/assets/img/marini-drill-voyager-p1.webp",
-              "alt": "Marini Voyager (1/2)",
+              "alt": "Marini Voyager (2/8)",
               "width": 1043,
               "height": 720
             },
             {
               "src": "/assets/img/marini-drill-voyager-p2.webp",
-              "alt": "Marini Voyager (2/2)",
+              "alt": "Marini Voyager (3/8)",
               "width": 1043,
               "height": 720
+            },
+            {
+              "src": "/assets/img/marini-mrc-mr-c-10-p1.webp",
+              "alt": "Marini Voyager (4/8)",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/marini-mrc-mr-c-10-p2.webp",
+              "alt": "Marini Voyager (5/8)",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/marini-mrc-mr-c-10-p3.webp",
+              "alt": "Marini Voyager (6/8)",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/marini-mrc-mr-c-10-p4.webp",
+              "alt": "Marini Voyager (7/8)",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/marini-mrc-mr-c-10-p5.webp",
+              "alt": "Marini Voyager (8/8)",
+              "width": 1400,
+              "height": 1050
             }
           ],
           "gen": true
@@ -935,6 +1097,11 @@
         {
           "type": "text",
           "html": "Med hydraulisk rotasjonshode og pneumatisk senkhammer (DTH) borer den store hull for diamantwiren. Med rotasjonshode og diamantkroner kjerneborer den over 30 meter med diametre på 64 - 90 mm, og med hydropneumatiske bergboremaskiner borer den hull med ulike diametre.",
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "Voyager er den samme maskinen som <a href=\"/produkter/marini/crawlers/mr-c-10\">MR-C 10</a> i Marinis serie med beltegående borerigger.",
           "gen": true
         },
         {
@@ -1159,17 +1326,18 @@
           "title": "Se også",
           "items": [
             {
-              "href": "/produkter/marini/stenbrottsborrning",
+              "href": "/produkter/marini/crawlers/mr-c-10",
+              "mutual": true
+            },
+            {
+              "href": "/produkter/marini",
               "mutual": false
             },
             {
-              "href": "/produkter/marini/stenbrottsborrning/big-driller"
+              "href": "/produkter/marini/big-driller"
             },
             {
-              "href": "/produkter/marini/stenbrottsborrning/driller-id"
-            },
-            {
-              "href": "/produkter/marini/stenbrottsborrning/hor-drill-id"
+              "href": "/produkter/marini/driller"
             }
           ],
           "gen": true

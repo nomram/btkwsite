@@ -1,8 +1,8 @@
 {
-  "path": "/produkter/marini/stenbrottsborrning/driller",
+  "path": "/produkter/marini/driller",
   "updated": "2026-10-29",
   "template": "product",
-  "order": 4,
+  "order": 10,
   "published": true,
   "hero": {
     "image": "/assets/img/marini-rustica-hero.webp"
@@ -32,6 +32,20 @@
           "gen": true
         },
         {
+          "type": "carousel",
+          "autoplay": false,
+          "interval": 6,
+          "items": [
+            {
+              "src": "/assets/img/marini-drill-driller-id.webp",
+              "alt": "Marini Driller ID (1/1)",
+              "width": 597,
+              "height": 332
+            }
+          ],
+          "gen": true
+        },
+        {
           "type": "text",
           "html": "Driller är en pneumatisk borrenhet för hål där diamantvajern ska passera. Med pneumatiskt rotationshuvud och sänkhammare (DTH) når den 25 - 30 meters djup även i berg med naturliga ojämnheter, med hög borrhastighet.",
           "gen": true
@@ -42,13 +56,22 @@
           "gen": true
         },
         {
+          "type": "heading",
+          "level": 3,
+          "text": "Två versioner",
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "ID i modellnamnet står för den hydrauliska versionen.",
+          "gen": true
+        },
+        {
           "type": "list",
           "ordered": false,
           "items": [
-            "Slaglängd: 1 000 - 1 500 mm",
-            "Vridmoment: 850 Nm",
-            "Luftförbrukning: 8 m³/min",
-            "Vikt: 180 kg"
+            "Pneumatisk (Driller): slaglängd 1 000 - 1 500 mm, vridmoment 850 Nm, luftförbrukning 8 m³/min, vikt 180 kg",
+            "Hydraulisk (Driller ID): slaglängd 1 760 mm, vridmoment 1 600 Nm, varvtal 35 - 100 rpm, vikt 145 kg"
           ],
           "gen": true
         },
@@ -78,7 +101,7 @@
           "intro": [],
           "groups": [
             {
-              "title": "Grundenhet",
+              "title": "Pneumatisk (Driller)",
               "rows": [
                 {
                   "label": "Slaglängd",
@@ -137,6 +160,43 @@
                   "metric": "16 kg per stång (Ø 76 mm, längd 1 500 mm)"
                 }
               ]
+            },
+            {
+              "title": "Hydraulisk (Driller ID)",
+              "rows": [
+                {
+                  "label": "Slaglängd",
+                  "metric": "1 760 mm"
+                },
+                {
+                  "label": "Rotationshuvud",
+                  "metric": "ID 160"
+                },
+                {
+                  "label": "Max vridmoment",
+                  "metric": "1 600 Nm"
+                },
+                {
+                  "label": "Varvtal",
+                  "metric": "35 - 100 rpm"
+                },
+                {
+                  "label": "Kompressor",
+                  "metric": "Separat"
+                },
+                {
+                  "label": "Dammuppsamling",
+                  "metric": "Finns som tillval"
+                },
+                {
+                  "label": "Vikt",
+                  "metric": "145 kg"
+                },
+                {
+                  "label": "Sänkhammare (DTH)",
+                  "metric": "upp till 3 tum, hål upp till 95 mm"
+                }
+              ]
             }
           ],
           "note": "",
@@ -148,17 +208,17 @@
           "title": "Se även",
           "items": [
             {
-              "href": "/produkter/marini/stenbrottsborrning",
+              "href": "/produkter/marini",
               "mutual": false
             },
             {
-              "href": "/produkter/marini/stenbrottsborrning/driller-id"
+              "href": "/produkter/marini/voyager"
             },
             {
-              "href": "/produkter/marini/stenbrottsborrning/voyager"
+              "href": "/produkter/marini/big-driller"
             },
             {
-              "href": "/produkter/marini/stenbrottsborrning/big-driller"
+              "href": "/produkter/marini/hor-drill"
             }
           ],
           "gen": true
@@ -189,6 +249,20 @@
           "gen": true
         },
         {
+          "type": "carousel",
+          "autoplay": false,
+          "interval": 6,
+          "items": [
+            {
+              "src": "/assets/img/marini-drill-driller-id.webp",
+              "alt": "Marini Driller ID (1/1)",
+              "width": 597,
+              "height": 332
+            }
+          ],
+          "gen": true
+        },
+        {
           "type": "text",
           "html": "Driller is a pneumatic drilling unit for the holes the diamond wire passes through. With a pneumatic rotary head and a down-the-hole (DTH) hammer it reaches depths of 25 - 30 metres even in rock with natural irregularities, at a high drilling speed.",
           "gen": true
@@ -199,13 +273,22 @@
           "gen": true
         },
         {
+          "type": "heading",
+          "level": 3,
+          "text": "Two versions",
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "ID in the model name stands for the hydraulic version.",
+          "gen": true
+        },
+        {
           "type": "list",
           "ordered": false,
           "items": [
-            "Feed stroke: 1,000 - 1,500 mm",
-            "Rotary torque: 850 Nm",
-            "Air consumption: 8 m³/min",
-            "Weight: 180 kg"
+            "Pneumatic (Driller): feed stroke 1,000 - 1,500 mm, rotary torque 850 Nm, air consumption 8 m³/min, weight 180 kg",
+            "Hydraulic (Driller ID): feed stroke 1,760 mm, rotary torque 1,600 Nm, rotary speed 35 - 100 rpm, weight 145 kg"
           ],
           "gen": true
         },
@@ -235,7 +318,7 @@
           "intro": [],
           "groups": [
             {
-              "title": "Base unit",
+              "title": "Pneumatic (Driller)",
               "rows": [
                 {
                   "label": "Feed stroke",
@@ -294,6 +377,43 @@
                   "metric": "16 kg each (Ø 76 mm, length 1,500 mm)"
                 }
               ]
+            },
+            {
+              "title": "Hydraulic (Driller ID)",
+              "rows": [
+                {
+                  "label": "Feed stroke",
+                  "metric": "1,760 mm"
+                },
+                {
+                  "label": "Rotary head",
+                  "metric": "ID 160"
+                },
+                {
+                  "label": "Max. torque",
+                  "metric": "1,600 Nm"
+                },
+                {
+                  "label": "Rotary speed",
+                  "metric": "35 - 100 rpm"
+                },
+                {
+                  "label": "Compressor",
+                  "metric": "Separate"
+                },
+                {
+                  "label": "Dust collector",
+                  "metric": "Available as an option"
+                },
+                {
+                  "label": "Weight",
+                  "metric": "145 kg"
+                },
+                {
+                  "label": "DTH hammer",
+                  "metric": "up to 3 inches, holes up to 95 mm"
+                }
+              ]
             }
           ],
           "note": "",
@@ -305,17 +425,17 @@
           "title": "See also",
           "items": [
             {
-              "href": "/produkter/marini/stenbrottsborrning",
+              "href": "/produkter/marini",
               "mutual": false
             },
             {
-              "href": "/produkter/marini/stenbrottsborrning/driller-id"
+              "href": "/produkter/marini/voyager"
             },
             {
-              "href": "/produkter/marini/stenbrottsborrning/voyager"
+              "href": "/produkter/marini/big-driller"
             },
             {
-              "href": "/produkter/marini/stenbrottsborrning/big-driller"
+              "href": "/produkter/marini/hor-drill"
             }
           ],
           "gen": true
@@ -346,6 +466,20 @@
           "gen": true
         },
         {
+          "type": "carousel",
+          "autoplay": false,
+          "interval": 6,
+          "items": [
+            {
+              "src": "/assets/img/marini-drill-driller-id.webp",
+              "alt": "Marini Driller ID (1/1)",
+              "width": 597,
+              "height": 332
+            }
+          ],
+          "gen": true
+        },
+        {
           "type": "text",
           "html": "Driller es una unidad de perforación neumática para los barrenos por los que pasa el hilo diamantado. Con cabezal de rotación neumático y martillo de fondo (DTH) alcanza profundidades de 25 - 30 metros incluso en roca con irregularidades naturales, con una alta velocidad de perforación.",
           "gen": true
@@ -356,13 +490,22 @@
           "gen": true
         },
         {
+          "type": "heading",
+          "level": 3,
+          "text": "Dos versiones",
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "ID en el nombre del modelo indica la versión hidráulica.",
+          "gen": true
+        },
+        {
           "type": "list",
           "ordered": false,
           "items": [
-            "Carrera: 1.000 - 1.500 mm",
-            "Par de rotación: 850 Nm",
-            "Consumo de aire: 8 m³/min",
-            "Peso: 180 kg"
+            "Neumática (Driller): carrera 1.000 - 1.500 mm, par de rotación 850 Nm, consumo de aire 8 m³/min, peso 180 kg",
+            "Hidráulica (Driller ID): carrera 1.760 mm, par de rotación 1.600 Nm, velocidad de rotación 35 - 100 rpm, peso 145 kg"
           ],
           "gen": true
         },
@@ -392,7 +535,7 @@
           "intro": [],
           "groups": [
             {
-              "title": "Unidad básica",
+              "title": "Neumática (Driller)",
               "rows": [
                 {
                   "label": "Carrera",
@@ -451,6 +594,43 @@
                   "metric": "16 kg cada una (Ø 76 mm, longitud 1.500 mm)"
                 }
               ]
+            },
+            {
+              "title": "Hidráulica (Driller ID)",
+              "rows": [
+                {
+                  "label": "Carrera",
+                  "metric": "1.760 mm"
+                },
+                {
+                  "label": "Cabezal de rotación",
+                  "metric": "ID 160"
+                },
+                {
+                  "label": "Par máximo",
+                  "metric": "1.600 Nm"
+                },
+                {
+                  "label": "Velocidad de rotación",
+                  "metric": "35 - 100 rpm"
+                },
+                {
+                  "label": "Compresor",
+                  "metric": "Separado"
+                },
+                {
+                  "label": "Aspirador de polvo",
+                  "metric": "Disponible como opción"
+                },
+                {
+                  "label": "Peso",
+                  "metric": "145 kg"
+                },
+                {
+                  "label": "Martillo de fondo (DTH)",
+                  "metric": "hasta 3 pulgadas, barrenos de hasta 95 mm"
+                }
+              ]
             }
           ],
           "note": "",
@@ -462,17 +642,17 @@
           "title": "Véase también",
           "items": [
             {
-              "href": "/produkter/marini/stenbrottsborrning",
+              "href": "/produkter/marini",
               "mutual": false
             },
             {
-              "href": "/produkter/marini/stenbrottsborrning/driller-id"
+              "href": "/produkter/marini/voyager"
             },
             {
-              "href": "/produkter/marini/stenbrottsborrning/voyager"
+              "href": "/produkter/marini/big-driller"
             },
             {
-              "href": "/produkter/marini/stenbrottsborrning/big-driller"
+              "href": "/produkter/marini/hor-drill"
             }
           ],
           "gen": true
@@ -503,6 +683,20 @@
           "gen": true
         },
         {
+          "type": "carousel",
+          "autoplay": false,
+          "interval": 6,
+          "items": [
+            {
+              "src": "/assets/img/marini-drill-driller-id.webp",
+              "alt": "Marini Driller ID (1/1)",
+              "width": 597,
+              "height": 332
+            }
+          ],
+          "gen": true
+        },
+        {
           "type": "text",
           "html": "Driller er en pneumatisk borenhet for hull som diamantwiren skal gå gjennom. Med pneumatisk rotasjonshode og senkhammer (DTH) når den 25 - 30 meters dybde selv i fjell med naturlige ujevnheter, med høy borehastighet.",
           "gen": true
@@ -513,13 +707,22 @@
           "gen": true
         },
         {
+          "type": "heading",
+          "level": 3,
+          "text": "To utgaver",
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "ID i modellnavnet står for den hydrauliske utgaven.",
+          "gen": true
+        },
+        {
           "type": "list",
           "ordered": false,
           "items": [
-            "Slaglengde: 1 000 - 1 500 mm",
-            "Dreiemoment: 850 Nm",
-            "Luftforbruk: 8 m³/min",
-            "Vekt: 180 kg"
+            "Pneumatisk (Driller): slaglengde 1 000 - 1 500 mm, dreiemoment 850 Nm, luftforbruk 8 m³/min, vekt 180 kg",
+            "Hydraulisk (Driller ID): slaglengde 1 760 mm, dreiemoment 1 600 Nm, turtall 35 - 100 rpm, vekt 145 kg"
           ],
           "gen": true
         },
@@ -549,7 +752,7 @@
           "intro": [],
           "groups": [
             {
-              "title": "Grunnenhet",
+              "title": "Pneumatisk (Driller)",
               "rows": [
                 {
                   "label": "Slaglengde",
@@ -608,6 +811,43 @@
                   "metric": "16 kg per stang (Ø 76 mm, lengde 1 500 mm)"
                 }
               ]
+            },
+            {
+              "title": "Hydraulisk (Driller ID)",
+              "rows": [
+                {
+                  "label": "Slaglengde",
+                  "metric": "1 760 mm"
+                },
+                {
+                  "label": "Rotasjonshode",
+                  "metric": "ID 160"
+                },
+                {
+                  "label": "Maks. dreiemoment",
+                  "metric": "1 600 Nm"
+                },
+                {
+                  "label": "Turtall",
+                  "metric": "35 - 100 rpm"
+                },
+                {
+                  "label": "Kompressor",
+                  "metric": "Separat"
+                },
+                {
+                  "label": "Støvsuger",
+                  "metric": "Finnes som tilvalg"
+                },
+                {
+                  "label": "Vekt",
+                  "metric": "145 kg"
+                },
+                {
+                  "label": "Senkhammer (DTH)",
+                  "metric": "opptil 3 tommer, hull opptil 95 mm"
+                }
+              ]
             }
           ],
           "note": "",
@@ -619,17 +859,17 @@
           "title": "Se også",
           "items": [
             {
-              "href": "/produkter/marini/stenbrottsborrning",
+              "href": "/produkter/marini",
               "mutual": false
             },
             {
-              "href": "/produkter/marini/stenbrottsborrning/driller-id"
+              "href": "/produkter/marini/voyager"
             },
             {
-              "href": "/produkter/marini/stenbrottsborrning/voyager"
+              "href": "/produkter/marini/big-driller"
             },
             {
-              "href": "/produkter/marini/stenbrottsborrning/big-driller"
+              "href": "/produkter/marini/hor-drill"
             }
           ],
           "gen": true

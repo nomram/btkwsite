@@ -1,8 +1,8 @@
 {
-  "path": "/produkter/marini/stenbrottsborrning/big-driller",
+  "path": "/produkter/marini/big-driller",
   "updated": "2026-10-29",
   "template": "product",
-  "order": 1,
+  "order": 9,
   "published": true,
   "hero": {
     "image": "/assets/img/marini-rustica-hero.webp"
@@ -33,7 +33,7 @@
         },
         {
           "type": "carousel",
-          "autoplay": true,
+          "autoplay": false,
           "interval": 6,
           "items": [
             {
@@ -183,17 +183,17 @@
           "title": "Se även",
           "items": [
             {
-              "href": "/produkter/marini/stenbrottsborrning",
+              "href": "/produkter/marini",
               "mutual": false
             },
             {
-              "href": "/produkter/marini/stenbrottsborrning/voyager"
+              "href": "/produkter/marini/voyager"
             },
             {
-              "href": "/produkter/marini/stenbrottsborrning/driller-id"
+              "href": "/produkter/marini/driller"
             },
             {
-              "href": "/produkter/marini/stenbrottsborrning/hor-drill-id"
+              "href": "/produkter/marini/hor-drill"
             }
           ],
           "gen": true
@@ -225,7 +225,7 @@
         },
         {
           "type": "carousel",
-          "autoplay": true,
+          "autoplay": false,
           "interval": 6,
           "items": [
             {
@@ -375,17 +375,17 @@
           "title": "See also",
           "items": [
             {
-              "href": "/produkter/marini/stenbrottsborrning",
+              "href": "/produkter/marini",
               "mutual": false
             },
             {
-              "href": "/produkter/marini/stenbrottsborrning/voyager"
+              "href": "/produkter/marini/voyager"
             },
             {
-              "href": "/produkter/marini/stenbrottsborrning/driller-id"
+              "href": "/produkter/marini/driller"
             },
             {
-              "href": "/produkter/marini/stenbrottsborrning/hor-drill-id"
+              "href": "/produkter/marini/hor-drill"
             }
           ],
           "gen": true
@@ -417,7 +417,7 @@
         },
         {
           "type": "carousel",
-          "autoplay": true,
+          "autoplay": false,
           "interval": 6,
           "items": [
             {
@@ -567,17 +567,17 @@
           "title": "Véase también",
           "items": [
             {
-              "href": "/produkter/marini/stenbrottsborrning",
+              "href": "/produkter/marini",
               "mutual": false
             },
             {
-              "href": "/produkter/marini/stenbrottsborrning/voyager"
+              "href": "/produkter/marini/voyager"
             },
             {
-              "href": "/produkter/marini/stenbrottsborrning/driller-id"
+              "href": "/produkter/marini/driller"
             },
             {
-              "href": "/produkter/marini/stenbrottsborrning/hor-drill-id"
+              "href": "/produkter/marini/hor-drill"
             }
           ],
           "gen": true
@@ -609,7 +609,7 @@
         },
         {
           "type": "carousel",
-          "autoplay": true,
+          "autoplay": false,
           "interval": 6,
           "items": [
             {
@@ -759,17 +759,17 @@
           "title": "Se også",
           "items": [
             {
-              "href": "/produkter/marini/stenbrottsborrning",
+              "href": "/produkter/marini",
               "mutual": false
             },
             {
-              "href": "/produkter/marini/stenbrottsborrning/voyager"
+              "href": "/produkter/marini/voyager"
             },
             {
-              "href": "/produkter/marini/stenbrottsborrning/driller-id"
+              "href": "/produkter/marini/driller"
             },
             {
-              "href": "/produkter/marini/stenbrottsborrning/hor-drill-id"
+              "href": "/produkter/marini/hor-drill"
             }
           ],
           "gen": true
