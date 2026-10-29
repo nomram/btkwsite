@@ -1,0 +1,584 @@
+{
+  "path": "/produkter/marini/vajersågar/mar-fil",
+  "updated": "2026-10-29",
+  "template": "product",
+  "order": 7,
+  "published": true,
+  "hero": {
+    "image": "/assets/img/marini-vajersagar-hero.webp"
+  },
+  "i18n": {
+    "sv": {
+      "title": "Mar Fil",
+      "h1": "Marini Mar Fil",
+      "description": "Mar Fil är en vajersåg ur Marinis marmorserie med fast trådhastighet (38 m/s). Huvudmotor 37 / 45 kW, vikt 1 480 / 1 560 kg.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Marini logotyp",
+          "href": "/produkter/marini",
+          "width": 637,
+          "height": 86,
+          "src": "/assets/img/logo-marini.webp",
+          "gen": true
+        },
+        {
+          "type": "image",
+          "alt": "Marini Mar Fil",
+          "file": "/assets/img/marini-saw-mar-fil.webp",
+          "width": 463,
+          "height": 340,
+          "src": "/assets/img/marini-saw-mar-fil.webp",
+          "gen": true
+        },
+        {
+          "type": "carousel",
+          "autoplay": false,
+          "interval": 6,
+          "items": [
+            {
+              "src": "/assets/img/marini-quarry-marble-photo.webp",
+              "alt": "Marini Mar Fil (1/1)",
+              "width": 1800,
+              "height": 1098
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "Mar Fil är en vajersåg ur Marinis marmorserie med fast trådhastighet (38 m/s). Huvudmotor 37 / 45 kW, vikt 1 480 / 1 560 kg.",
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "Marmorserien saknar frekvensomriktare och arbetar med fast trådhastighet. Start sker med stjärn-triangelkoppling och maskinen styrs från en kabelansluten tryckknappspanel, vilket ger enkel och säker användning samt jämn och tillförlitlig skärprestanda.",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Huvudmotor: 37 / 45 kW",
+            "Vikt: 1 480 / 1 560 kg",
+            "Trådhastighet: 38 m/s"
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Kontakta oss</a> för pris, leveranstid eller hjälp att välja rätt modell.",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Produktkatalog stenbrott (ENG)",
+          "href": "/assets/docs/marini-stenbrott-produktkatalog.pdf",
+          "gen": true
+        },
+        {
+          "type": "datasheet",
+          "title": "Teknisk data",
+          "tagline": "Marini Mar Fil",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Specifikationer",
+              "rows": [
+                {
+                  "label": "Huvudmotor (el)",
+                  "metric": "37 / 45 kW"
+                },
+                {
+                  "label": "Längd",
+                  "metric": "2 100 mm"
+                },
+                {
+                  "label": "Bredd",
+                  "metric": "1 350 mm"
+                },
+                {
+                  "label": "Höjd",
+                  "metric": "1 500 mm"
+                },
+                {
+                  "label": "Vikt",
+                  "metric": "1 480 / 1 560 kg"
+                },
+                {
+                  "label": "Trådhastighet",
+                  "metric": "38 m/s"
+                },
+                {
+                  "label": "Rotation av svänghjulsgrupp (360°)",
+                  "metric": "Elektrisk"
+                },
+                {
+                  "label": "Förflyttning av svänghjul",
+                  "metric": "Elektrisk"
+                },
+                {
+                  "label": "Styrning",
+                  "metric": "Via kabel"
+                }
+              ]
+            }
+          ],
+          "note": "Motorer och vikter anges i samma ordning.",
+          "source": "Uppgifterna är hämtade ur Marinis produktkatalog för stenbrott och broschyrer (engelska).",
+          "gen": true
+        },
+        {
+          "type": "related",
+          "title": "Se även",
+          "items": [
+            {
+              "href": "/produkter/marini/vajersågar",
+              "mutual": false
+            },
+            {
+              "href": "/produkter/marini/vajersågar/min-fil"
+            },
+            {
+              "href": "/produkter/marini/vajersågar/min-fil-super"
+            },
+            {
+              "href": "/produkter/marini/vajersågar/mar-fil-super"
+            }
+          ],
+          "gen": true
+        }
+      ]
+    },
+    "en": {
+      "title": "Mar Fil",
+      "h1": "Marini Mar Fil",
+      "description": "Mar Fil is a diamond wire saw from Marini's marble line with a fixed wire speed (38 m/s). Main motor 37 / 45 kW, weight 1,480 / 1,560 kg.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Marini logotyp",
+          "href": "/produkter/marini",
+          "width": 637,
+          "height": 86,
+          "src": "/assets/img/logo-marini.webp",
+          "gen": true
+        },
+        {
+          "type": "image",
+          "alt": "Marini Mar Fil",
+          "file": "/assets/img/marini-saw-mar-fil.webp",
+          "width": 463,
+          "height": 340,
+          "src": "/assets/img/marini-saw-mar-fil.webp",
+          "gen": true
+        },
+        {
+          "type": "carousel",
+          "autoplay": false,
+          "interval": 6,
+          "items": [
+            {
+              "src": "/assets/img/marini-quarry-marble-photo.webp",
+              "alt": "Marini Mar Fil (1/1)",
+              "width": 1800,
+              "height": 1098
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "Mar Fil is a diamond wire saw from Marini's marble line with a fixed wire speed (38 m/s). Main motor 37 / 45 kW, weight 1,480 / 1,560 kg.",
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "The marble line has no inverter and works at a fixed wire speed. It starts with a star-delta system and is operated from a wired push-button panel, which gives simple, safe use and consistent, reliable cutting.",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Main motor: 37 / 45 kW",
+            "Weight: 1,480 / 1,560 kg",
+            "Wire speed: 38 m/s"
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Contact us</a> for price, delivery time or help choosing the right model.",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Quarry product catalogue (ENG)",
+          "href": "/assets/docs/marini-stenbrott-produktkatalog.pdf",
+          "gen": true
+        },
+        {
+          "type": "datasheet",
+          "title": "Technical data",
+          "tagline": "Marini Mar Fil",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Specifications",
+              "rows": [
+                {
+                  "label": "Main motor (electric)",
+                  "metric": "37 / 45 kW"
+                },
+                {
+                  "label": "Length",
+                  "metric": "2,100 mm"
+                },
+                {
+                  "label": "Width",
+                  "metric": "1,350 mm"
+                },
+                {
+                  "label": "Height",
+                  "metric": "1,500 mm"
+                },
+                {
+                  "label": "Weight",
+                  "metric": "1,480 / 1,560 kg"
+                },
+                {
+                  "label": "Wire speed",
+                  "metric": "38 m/s"
+                },
+                {
+                  "label": "Flywheel group rotation (360°)",
+                  "metric": "Electric"
+                },
+                {
+                  "label": "Flywheel translation",
+                  "metric": "Electric"
+                },
+                {
+                  "label": "Control",
+                  "metric": "Wired"
+                }
+              ]
+            }
+          ],
+          "note": "Motors and weights are listed in the same order.",
+          "source": "Information taken from Marini's quarry product catalogue and the model brochures.",
+          "gen": true
+        },
+        {
+          "type": "related",
+          "title": "See also",
+          "items": [
+            {
+              "href": "/produkter/marini/vajersågar",
+              "mutual": false
+            },
+            {
+              "href": "/produkter/marini/vajersågar/min-fil"
+            },
+            {
+              "href": "/produkter/marini/vajersågar/min-fil-super"
+            },
+            {
+              "href": "/produkter/marini/vajersågar/mar-fil-super"
+            }
+          ],
+          "gen": true
+        }
+      ]
+    },
+    "es": {
+      "title": "Mar Fil",
+      "h1": "Marini Mar Fil",
+      "description": "Mar Fil es una sierra de hilo diamantado de la línea de mármol de Marini, con velocidad de hilo fija (38 m/s). Motor principal de 37 / 45 kW y un peso de 1.480 / 1.560 kg.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Marini logotyp",
+          "href": "/produkter/marini",
+          "width": 637,
+          "height": 86,
+          "src": "/assets/img/logo-marini.webp",
+          "gen": true
+        },
+        {
+          "type": "image",
+          "alt": "Marini Mar Fil",
+          "file": "/assets/img/marini-saw-mar-fil.webp",
+          "width": 463,
+          "height": 340,
+          "src": "/assets/img/marini-saw-mar-fil.webp",
+          "gen": true
+        },
+        {
+          "type": "carousel",
+          "autoplay": false,
+          "interval": 6,
+          "items": [
+            {
+              "src": "/assets/img/marini-quarry-marble-photo.webp",
+              "alt": "Marini Mar Fil (1/1)",
+              "width": 1800,
+              "height": 1098
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "Mar Fil es una sierra de hilo diamantado de la línea de mármol de Marini, con velocidad de hilo fija (38 m/s). Motor principal de 37 / 45 kW y un peso de 1.480 / 1.560 kg.",
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "La línea para mármol no lleva inversor y trabaja a velocidad de hilo fija. El arranque es estrella-triángulo y el manejo se hace desde una botonera con cable, lo que ofrece un uso sencillo y seguro y un corte constante y fiable.",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Motor principal: 37 / 45 kW",
+            "Peso: 1.480 / 1.560 kg",
+            "Velocidad del hilo: 38 m/s"
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Contáctenos</a> para precio, plazo de entrega o ayuda para elegir el modelo adecuado.",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Catálogo de productos para canteras (ENG)",
+          "href": "/assets/docs/marini-stenbrott-produktkatalog.pdf",
+          "gen": true
+        },
+        {
+          "type": "datasheet",
+          "title": "Datos técnicos",
+          "tagline": "Marini Mar Fil",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Especificaciones",
+              "rows": [
+                {
+                  "label": "Motor principal (eléctrico)",
+                  "metric": "37 / 45 kW"
+                },
+                {
+                  "label": "Longitud",
+                  "metric": "2.100 mm"
+                },
+                {
+                  "label": "Anchura",
+                  "metric": "1.350 mm"
+                },
+                {
+                  "label": "Altura",
+                  "metric": "1.500 mm"
+                },
+                {
+                  "label": "Peso",
+                  "metric": "1.480 / 1.560 kg"
+                },
+                {
+                  "label": "Velocidad del hilo",
+                  "metric": "38 m/s"
+                },
+                {
+                  "label": "Rotación del grupo del volante (360°)",
+                  "metric": "Eléctrica"
+                },
+                {
+                  "label": "Traslación del volante",
+                  "metric": "Eléctrica"
+                },
+                {
+                  "label": "Mando",
+                  "metric": "Con cable"
+                }
+              ]
+            }
+          ],
+          "note": "Los motores y los pesos se indican en el mismo orden.",
+          "source": "Información tomada del catálogo de productos para canteras de Marini y de los folletos de los modelos.",
+          "gen": true
+        },
+        {
+          "type": "related",
+          "title": "Véase también",
+          "items": [
+            {
+              "href": "/produkter/marini/vajersågar",
+              "mutual": false
+            },
+            {
+              "href": "/produkter/marini/vajersågar/min-fil"
+            },
+            {
+              "href": "/produkter/marini/vajersågar/min-fil-super"
+            },
+            {
+              "href": "/produkter/marini/vajersågar/mar-fil-super"
+            }
+          ],
+          "gen": true
+        }
+      ]
+    },
+    "no": {
+      "title": "Mar Fil",
+      "h1": "Marini Mar Fil",
+      "description": "Mar Fil er en diamantwiresag fra Marinis marmorserie med fast wirehastighet (38 m/s). Hovedmotor 37 / 45 kW, vekt 1 480 / 1 560 kg.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Marini logotyp",
+          "href": "/produkter/marini",
+          "width": 637,
+          "height": 86,
+          "src": "/assets/img/logo-marini.webp",
+          "gen": true
+        },
+        {
+          "type": "image",
+          "alt": "Marini Mar Fil",
+          "file": "/assets/img/marini-saw-mar-fil.webp",
+          "width": 463,
+          "height": 340,
+          "src": "/assets/img/marini-saw-mar-fil.webp",
+          "gen": true
+        },
+        {
+          "type": "carousel",
+          "autoplay": false,
+          "interval": 6,
+          "items": [
+            {
+              "src": "/assets/img/marini-quarry-marble-photo.webp",
+              "alt": "Marini Mar Fil (1/1)",
+              "width": 1800,
+              "height": 1098
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "Mar Fil er en diamantwiresag fra Marinis marmorserie med fast wirehastighet (38 m/s). Hovedmotor 37 / 45 kW, vekt 1 480 / 1 560 kg.",
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "Marmorserien har ingen frekvensomformer og arbeider med fast wirehastighet. Starten skjer med stjerne-trekant-kobling, og maskinen styres fra et kablet trykknappepanel, noe som gir enkel og sikker bruk og jevn, pålitelig skjæreytelse.",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Hovedmotor: 37 / 45 kW",
+            "Vekt: 1 480 / 1 560 kg",
+            "Wirehastighet: 38 m/s"
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Kontakt oss</a> for pris, leveringstid eller hjelp til å velge riktig modell.",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Produktkatalog steinbrudd (ENG)",
+          "href": "/assets/docs/marini-stenbrott-produktkatalog.pdf",
+          "gen": true
+        },
+        {
+          "type": "datasheet",
+          "title": "Tekniske data",
+          "tagline": "Marini Mar Fil",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Spesifikasjoner",
+              "rows": [
+                {
+                  "label": "Hovedmotor (el)",
+                  "metric": "37 / 45 kW"
+                },
+                {
+                  "label": "Lengde",
+                  "metric": "2 100 mm"
+                },
+                {
+                  "label": "Bredde",
+                  "metric": "1 350 mm"
+                },
+                {
+                  "label": "Høyde",
+                  "metric": "1 500 mm"
+                },
+                {
+                  "label": "Vekt",
+                  "metric": "1 480 / 1 560 kg"
+                },
+                {
+                  "label": "Wirehastighet",
+                  "metric": "38 m/s"
+                },
+                {
+                  "label": "Rotasjon av svinghjulsgruppe (360°)",
+                  "metric": "Elektrisk"
+                },
+                {
+                  "label": "Forflytting av svinghjul",
+                  "metric": "Elektrisk"
+                },
+                {
+                  "label": "Styring",
+                  "metric": "Med kabel"
+                }
+              ]
+            }
+          ],
+          "note": "Motorer og vekter er oppgitt i samme rekkefølge.",
+          "source": "Opplysningene er hentet fra Marinis produktkatalog for steinbrudd og brosjyrene for modellene (engelsk).",
+          "gen": true
+        },
+        {
+          "type": "related",
+          "title": "Se også",
+          "items": [
+            {
+              "href": "/produkter/marini/vajersågar",
+              "mutual": false
+            },
+            {
+              "href": "/produkter/marini/vajersågar/min-fil"
+            },
+            {
+              "href": "/produkter/marini/vajersågar/min-fil-super"
+            },
+            {
+              "href": "/produkter/marini/vajersågar/mar-fil-super"
+            }
+          ],
+          "gen": true
+        }
+      ]
+    }
+  }
+}

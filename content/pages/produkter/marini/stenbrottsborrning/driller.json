@@ -1,0 +1,640 @@
+{
+  "path": "/produkter/marini/stenbrottsborrning/driller",
+  "updated": "2026-10-29",
+  "template": "product",
+  "order": 4,
+  "published": true,
+  "hero": {
+    "image": "/assets/img/marini-rustica-hero.webp"
+  },
+  "i18n": {
+    "sv": {
+      "title": "Driller",
+      "h1": "Marini Driller",
+      "description": "Driller är en pneumatisk borrenhet för hål där diamantvajern ska passera. Med pneumatiskt rotationshuvud och sänkhammare (DTH) når den 25 - 30 meters djup även i berg med naturliga ojämnheter, med hög",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Marini logotyp",
+          "href": "/produkter/marini",
+          "width": 637,
+          "height": 86,
+          "src": "/assets/img/logo-marini.webp",
+          "gen": true
+        },
+        {
+          "type": "image",
+          "alt": "Marini Driller",
+          "file": "/assets/img/marini-drill-driller.webp",
+          "width": 307,
+          "height": 454,
+          "src": "/assets/img/marini-drill-driller.webp",
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "Driller är en pneumatisk borrenhet för hål där diamantvajern ska passera. Med pneumatiskt rotationshuvud och sänkhammare (DTH) når den 25 - 30 meters djup även i berg med naturliga ojämnheter, med hög borrhastighet.",
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "Lätt och mångsidig konstruktion för borrning i alla riktningar och i plan med brottbotten. Kolonn för förlängningsstänger på 1 000 eller 1 500 mm, sänkhammare upp till 3 tum för hål upp till 95 mm och ett stöd med kulled för att borra i valfri riktning. Pneumatiskt manöverorgan med centralsmörjning kan riktas som man vill. Med matningsmotor med kolvar (8,5 kN) eller lameller (4,8 kN). Hydraulisk version finns som Driller ID.",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Slaglängd: 1 000 - 1 500 mm",
+            "Vridmoment: 850 Nm",
+            "Luftförbrukning: 8 m³/min",
+            "Vikt: 180 kg"
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Kontakta oss</a> för pris, leveranstid eller hjälp att välja rätt modell.",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Broschyr Driller (ENG)",
+          "href": "/assets/docs/marini-driller-broschyr.pdf",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Produktkatalog stenbrott (ENG)",
+          "href": "/assets/docs/marini-stenbrott-produktkatalog.pdf",
+          "gen": true
+        },
+        {
+          "type": "datasheet",
+          "title": "Teknisk data",
+          "tagline": "Marini Driller",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Grundenhet",
+              "rows": [
+                {
+                  "label": "Slaglängd",
+                  "metric": "1 000 - 1 500 mm"
+                },
+                {
+                  "label": "Kolonnlängd, stänger 1 000 mm",
+                  "metric": "2 500 mm"
+                },
+                {
+                  "label": "Kolonnlängd, stänger 1 500 mm",
+                  "metric": "3 000 mm"
+                },
+                {
+                  "label": "Rotationshuvud",
+                  "metric": "EP 95"
+                },
+                {
+                  "label": "Max vridmoment",
+                  "metric": "850 Nm"
+                },
+                {
+                  "label": "Varvtal",
+                  "metric": "40 rpm"
+                },
+                {
+                  "label": "Matningskraft, kolvmotor",
+                  "metric": "8,5 kN"
+                },
+                {
+                  "label": "Matningskraft, lamellmotor",
+                  "metric": "4,8 kN"
+                },
+                {
+                  "label": "Sänkhammare (DTH)",
+                  "metric": "upp till 3 tum, hål upp till 95 mm"
+                },
+                {
+                  "label": "Luftförbrukning",
+                  "metric": "8 m³/min (8 000 l/min vid 7 bar)"
+                },
+                {
+                  "label": "Dammuppsamling",
+                  "metric": "Finns som tillval"
+                },
+                {
+                  "label": "Vikt",
+                  "metric": "180 kg"
+                },
+                {
+                  "label": "Sänkhammare med krona",
+                  "metric": "35 kg (3 tum, krona 90 mm)"
+                },
+                {
+                  "label": "Borrstång",
+                  "metric": "16 kg per stång (Ø 76 mm, längd 1 500 mm)"
+                }
+              ]
+            }
+          ],
+          "note": "",
+          "source": "Uppgifterna är hämtade ur Marinis produktkatalog för stenbrott och broschyrer (engelska).",
+          "gen": true
+        },
+        {
+          "type": "related",
+          "title": "Se även",
+          "items": [
+            {
+              "href": "/produkter/marini/stenbrottsborrning",
+              "mutual": false
+            },
+            {
+              "href": "/produkter/marini/stenbrottsborrning/driller-id"
+            },
+            {
+              "href": "/produkter/marini/stenbrottsborrning/voyager"
+            },
+            {
+              "href": "/produkter/marini/stenbrottsborrning/big-driller"
+            }
+          ],
+          "gen": true
+        }
+      ]
+    },
+    "en": {
+      "title": "Driller",
+      "h1": "Marini Driller",
+      "description": "Driller is a pneumatic drilling unit for the holes the diamond wire passes through. With a pneumatic rotary head and a down-the-hole (DTH) hammer it reaches depths of 25 - 30 metres even in rock with ",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Marini logotyp",
+          "href": "/produkter/marini",
+          "width": 637,
+          "height": 86,
+          "src": "/assets/img/logo-marini.webp",
+          "gen": true
+        },
+        {
+          "type": "image",
+          "alt": "Marini Driller",
+          "file": "/assets/img/marini-drill-driller.webp",
+          "width": 307,
+          "height": 454,
+          "src": "/assets/img/marini-drill-driller.webp",
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "Driller is a pneumatic drilling unit for the holes the diamond wire passes through. With a pneumatic rotary head and a down-the-hole (DTH) hammer it reaches depths of 25 - 30 metres even in rock with natural irregularities, at a high drilling speed.",
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "Light and versatile structure for drilling in any direction and flush with the quarry floor. Column for extension rods of 1,000 or 1,500 mm, a down-the-hole hammer up to 3 inches for holes up to 95 mm, and a down jack with a ball joint for drilling in any direction. The pneumatic control panel with centralised lubrication can be turned in any direction. Feed by a piston motor (8.5 kN) or a vane motor (4.8 kN). A hydraulic version is available as Driller ID.",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Feed stroke: 1,000 - 1,500 mm",
+            "Rotary torque: 850 Nm",
+            "Air consumption: 8 m³/min",
+            "Weight: 180 kg"
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Contact us</a> for price, delivery time or help choosing the right model.",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Driller brochure (ENG)",
+          "href": "/assets/docs/marini-driller-broschyr.pdf",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Quarry product catalogue (ENG)",
+          "href": "/assets/docs/marini-stenbrott-produktkatalog.pdf",
+          "gen": true
+        },
+        {
+          "type": "datasheet",
+          "title": "Technical data",
+          "tagline": "Marini Driller",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Base unit",
+              "rows": [
+                {
+                  "label": "Feed stroke",
+                  "metric": "1,000 - 1,500 mm"
+                },
+                {
+                  "label": "Column length, rods 1,000 mm",
+                  "metric": "2,500 mm"
+                },
+                {
+                  "label": "Column length, rods 1,500 mm",
+                  "metric": "3,000 mm"
+                },
+                {
+                  "label": "Rotary head",
+                  "metric": "EP 95"
+                },
+                {
+                  "label": "Max. torque",
+                  "metric": "850 Nm"
+                },
+                {
+                  "label": "Rotary speed",
+                  "metric": "40 rpm"
+                },
+                {
+                  "label": "Feed force, piston motor",
+                  "metric": "8.5 kN"
+                },
+                {
+                  "label": "Feed force, vane motor",
+                  "metric": "4.8 kN"
+                },
+                {
+                  "label": "DTH hammer",
+                  "metric": "up to 3 inches, holes up to 95 mm"
+                },
+                {
+                  "label": "Air consumption",
+                  "metric": "8 m³/min (8,000 l/min at 7 bar)"
+                },
+                {
+                  "label": "Dust collector",
+                  "metric": "Available as an option"
+                },
+                {
+                  "label": "Weight",
+                  "metric": "180 kg"
+                },
+                {
+                  "label": "DTH hammer with bit",
+                  "metric": "35 kg (3 inch, 90 mm bit)"
+                },
+                {
+                  "label": "Drill rod",
+                  "metric": "16 kg each (Ø 76 mm, length 1,500 mm)"
+                }
+              ]
+            }
+          ],
+          "note": "",
+          "source": "Information taken from Marini's quarry product catalogue and the model brochures.",
+          "gen": true
+        },
+        {
+          "type": "related",
+          "title": "See also",
+          "items": [
+            {
+              "href": "/produkter/marini/stenbrottsborrning",
+              "mutual": false
+            },
+            {
+              "href": "/produkter/marini/stenbrottsborrning/driller-id"
+            },
+            {
+              "href": "/produkter/marini/stenbrottsborrning/voyager"
+            },
+            {
+              "href": "/produkter/marini/stenbrottsborrning/big-driller"
+            }
+          ],
+          "gen": true
+        }
+      ]
+    },
+    "es": {
+      "title": "Driller",
+      "h1": "Marini Driller",
+      "description": "Driller es una unidad de perforación neumática para los barrenos por los que pasa el hilo diamantado. Con cabezal de rotación neumático y martillo de fondo (DTH) alcanza profundidades de 25 - 30 metro",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Marini logotyp",
+          "href": "/produkter/marini",
+          "width": 637,
+          "height": 86,
+          "src": "/assets/img/logo-marini.webp",
+          "gen": true
+        },
+        {
+          "type": "image",
+          "alt": "Marini Driller",
+          "file": "/assets/img/marini-drill-driller.webp",
+          "width": 307,
+          "height": 454,
+          "src": "/assets/img/marini-drill-driller.webp",
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "Driller es una unidad de perforación neumática para los barrenos por los que pasa el hilo diamantado. Con cabezal de rotación neumático y martillo de fondo (DTH) alcanza profundidades de 25 - 30 metros incluso en roca con irregularidades naturales, con una alta velocidad de perforación.",
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "Estructura ligera y versátil para perforar en cualquier dirección y a ras del suelo de la cantera. Columna para varillas de prolongación de 1.000 o 1.500 mm, martillo de fondo de hasta 3 pulgadas para barrenos de hasta 95 mm y un puntal con rótula para perforar en cualquier dirección. El panel de mando neumático con lubricación centralizada puede orientarse como se desee. Avance con motor de pistones (8,5 kN) o de paletas (4,8 kN). Existe una versión hidráulica, Driller ID.",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Carrera: 1.000 - 1.500 mm",
+            "Par de rotación: 850 Nm",
+            "Consumo de aire: 8 m³/min",
+            "Peso: 180 kg"
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Contáctenos</a> para precio, plazo de entrega o ayuda para elegir el modelo adecuado.",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Folleto Driller (ENG)",
+          "href": "/assets/docs/marini-driller-broschyr.pdf",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Catálogo de productos para canteras (ENG)",
+          "href": "/assets/docs/marini-stenbrott-produktkatalog.pdf",
+          "gen": true
+        },
+        {
+          "type": "datasheet",
+          "title": "Datos técnicos",
+          "tagline": "Marini Driller",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Unidad básica",
+              "rows": [
+                {
+                  "label": "Carrera",
+                  "metric": "1.000 - 1.500 mm"
+                },
+                {
+                  "label": "Longitud de columna, varillas de 1.000 mm",
+                  "metric": "2.500 mm"
+                },
+                {
+                  "label": "Longitud de columna, varillas de 1.500 mm",
+                  "metric": "3.000 mm"
+                },
+                {
+                  "label": "Cabezal de rotación",
+                  "metric": "EP 95"
+                },
+                {
+                  "label": "Par máximo",
+                  "metric": "850 Nm"
+                },
+                {
+                  "label": "Velocidad de rotación",
+                  "metric": "40 rpm"
+                },
+                {
+                  "label": "Fuerza de empuje, motor de pistones",
+                  "metric": "8,5 kN"
+                },
+                {
+                  "label": "Fuerza de empuje, motor de paletas",
+                  "metric": "4,8 kN"
+                },
+                {
+                  "label": "Martillo de fondo (DTH)",
+                  "metric": "hasta 3 pulgadas, barrenos de hasta 95 mm"
+                },
+                {
+                  "label": "Consumo de aire",
+                  "metric": "8 m³/min (8.000 l/min a 7 bar)"
+                },
+                {
+                  "label": "Aspirador de polvo",
+                  "metric": "Disponible como opción"
+                },
+                {
+                  "label": "Peso",
+                  "metric": "180 kg"
+                },
+                {
+                  "label": "Martillo de fondo con broca",
+                  "metric": "35 kg (3 pulgadas, broca de 90 mm)"
+                },
+                {
+                  "label": "Varilla de perforación",
+                  "metric": "16 kg cada una (Ø 76 mm, longitud 1.500 mm)"
+                }
+              ]
+            }
+          ],
+          "note": "",
+          "source": "Información tomada del catálogo de productos para canteras de Marini y de los folletos de los modelos.",
+          "gen": true
+        },
+        {
+          "type": "related",
+          "title": "Véase también",
+          "items": [
+            {
+              "href": "/produkter/marini/stenbrottsborrning",
+              "mutual": false
+            },
+            {
+              "href": "/produkter/marini/stenbrottsborrning/driller-id"
+            },
+            {
+              "href": "/produkter/marini/stenbrottsborrning/voyager"
+            },
+            {
+              "href": "/produkter/marini/stenbrottsborrning/big-driller"
+            }
+          ],
+          "gen": true
+        }
+      ]
+    },
+    "no": {
+      "title": "Driller",
+      "h1": "Marini Driller",
+      "description": "Driller er en pneumatisk borenhet for hull som diamantwiren skal gå gjennom. Med pneumatisk rotasjonshode og senkhammer (DTH) når den 25 - 30 meters dybde selv i fjell med naturlige ujevnheter, med hø",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Marini logotyp",
+          "href": "/produkter/marini",
+          "width": 637,
+          "height": 86,
+          "src": "/assets/img/logo-marini.webp",
+          "gen": true
+        },
+        {
+          "type": "image",
+          "alt": "Marini Driller",
+          "file": "/assets/img/marini-drill-driller.webp",
+          "width": 307,
+          "height": 454,
+          "src": "/assets/img/marini-drill-driller.webp",
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "Driller er en pneumatisk borenhet for hull som diamantwiren skal gå gjennom. Med pneumatisk rotasjonshode og senkhammer (DTH) når den 25 - 30 meters dybde selv i fjell med naturlige ujevnheter, med høy borehastighet.",
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "Lett og allsidig konstruksjon for boring i alle retninger og i plan med bruddbunnen. Kolonne for skjøtestenger på 1 000 eller 1 500 mm, senkhammer opptil 3 tommer for hull opptil 95 mm og en støtte med kuleledd for boring i valgfri retning. Det pneumatiske betjeningspanelet med sentralsmøring kan vendes i alle retninger. Matemotor med stempler (8,5 kN) eller lameller (4,8 kN). En hydraulisk utgave finnes som Driller ID.",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Slaglengde: 1 000 - 1 500 mm",
+            "Dreiemoment: 850 Nm",
+            "Luftforbruk: 8 m³/min",
+            "Vekt: 180 kg"
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Kontakt oss</a> for pris, leveringstid eller hjelp til å velge riktig modell.",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Brosjyre Driller (ENG)",
+          "href": "/assets/docs/marini-driller-broschyr.pdf",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Produktkatalog steinbrudd (ENG)",
+          "href": "/assets/docs/marini-stenbrott-produktkatalog.pdf",
+          "gen": true
+        },
+        {
+          "type": "datasheet",
+          "title": "Tekniske data",
+          "tagline": "Marini Driller",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Grunnenhet",
+              "rows": [
+                {
+                  "label": "Slaglengde",
+                  "metric": "1 000 - 1 500 mm"
+                },
+                {
+                  "label": "Kolonnelengde, stenger 1 000 mm",
+                  "metric": "2 500 mm"
+                },
+                {
+                  "label": "Kolonnelengde, stenger 1 500 mm",
+                  "metric": "3 000 mm"
+                },
+                {
+                  "label": "Rotasjonshode",
+                  "metric": "EP 95"
+                },
+                {
+                  "label": "Maks. dreiemoment",
+                  "metric": "850 Nm"
+                },
+                {
+                  "label": "Turtall",
+                  "metric": "40 rpm"
+                },
+                {
+                  "label": "Matekraft, stempelmotor",
+                  "metric": "8,5 kN"
+                },
+                {
+                  "label": "Matekraft, lamellmotor",
+                  "metric": "4,8 kN"
+                },
+                {
+                  "label": "Senkhammer (DTH)",
+                  "metric": "opptil 3 tommer, hull opptil 95 mm"
+                },
+                {
+                  "label": "Luftforbruk",
+                  "metric": "8 m³/min (8 000 l/min ved 7 bar)"
+                },
+                {
+                  "label": "Støvsuger",
+                  "metric": "Finnes som tilvalg"
+                },
+                {
+                  "label": "Vekt",
+                  "metric": "180 kg"
+                },
+                {
+                  "label": "Senkhammer med krone",
+                  "metric": "35 kg (3 tommer, krone 90 mm)"
+                },
+                {
+                  "label": "Borstang",
+                  "metric": "16 kg per stang (Ø 76 mm, lengde 1 500 mm)"
+                }
+              ]
+            }
+          ],
+          "note": "",
+          "source": "Opplysningene er hentet fra Marinis produktkatalog for steinbrudd og brosjyrene for modellene (engelsk).",
+          "gen": true
+        },
+        {
+          "type": "related",
+          "title": "Se også",
+          "items": [
+            {
+              "href": "/produkter/marini/stenbrottsborrning",
+              "mutual": false
+            },
+            {
+              "href": "/produkter/marini/stenbrottsborrning/driller-id"
+            },
+            {
+              "href": "/produkter/marini/stenbrottsborrning/voyager"
+            },
+            {
+              "href": "/produkter/marini/stenbrottsborrning/big-driller"
+            }
+          ],
+          "gen": true
+        }
+      ]
+    }
+  }
+}

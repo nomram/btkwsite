@@ -1,6 +1,6 @@
 {
   "path": "/produkter/marini/vajersågar",
-  "updated": "2026-10-10",
+  "updated": "2026-10-29",
   "template": "product",
   "order": 4,
   "published": true,
@@ -41,8 +41,214 @@
           "html": "För marmor och liknande mjukare stenar i stenbrott används vajersågar med fast trådhastighet, såsom sågar med beteckningen MAR i namnet, som: MAR FIL SUPER SP - den har motorer på 75 eller 100 hästkrafter. Dessa maskiner är idealiska för precisa snitt med jämn spänning på vajern, och de kan arbeta på lutande ytor och horisontella snitt nära marknivå."
         },
         {
+          "type": "heading",
+          "level": 2,
+          "text": "Granit: variabel trådhastighet",
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 4,
+          "square": true,
+          "more": false,
+          "items": [
+            {
+              "title": "Mini Fil Electronic",
+              "image": "/assets/img/marini-saw-mini-fil-electronic-tile.webp",
+              "alt": "Marini Mini Fil Electronic",
+              "href": "/produkter/marini/vajersågar/mini-fil-electronic",
+              "bullets": [
+                "Huvudmotor: 11 / 15 / 18 kW",
+                "Vikt: 800 / 820 / 850 kg"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "Mini Fil Super Electronic",
+              "image": "/assets/img/marini-saw-mini-fil-super-electronic-tile.webp",
+              "alt": "Marini Mini Fil Super Electronic",
+              "href": "/produkter/marini/vajersågar/mini-fil-super-electronic",
+              "bullets": [
+                "Huvudmotor: 11 / 15 / 18 kW",
+                "Vikt: 900 / 920 / 950 kg"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "Gran Fil Electronic",
+              "image": "/assets/img/marini-saw-gran-fil-electronic-tile.webp",
+              "alt": "Marini Gran Fil Electronic",
+              "href": "/produkter/marini/vajersågar/gran-fil-electronic",
+              "bullets": [
+                "Huvudmotor: 37 / 45 kW",
+                "Vikt: 1 620 / 1 700 kg"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "Gran Fil Super Electronic",
+              "image": "/assets/img/marini-saw-gran-fil-super-electronic-tile.webp",
+              "alt": "Marini Gran Fil Super Electronic",
+              "href": "/produkter/marini/vajersågar/gran-fil-super-electronic",
+              "bullets": [
+                "Huvudmotor: 45 / 55 kW",
+                "Vikt: 1 860 / 1 900 kg"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "Gran Fil Super Electronic SP",
+              "image": "/assets/img/marini-saw-gran-fil-super-electronic-sp-tile.webp",
+              "alt": "Marini Gran Fil Super Electronic SP",
+              "href": "/produkter/marini/vajersågar/gran-fil-super-electronic-sp",
+              "bullets": [
+                "Huvudmotor: 55 / 75 kW",
+                "Vikt: 2 200 / 2 400 kg"
+              ],
+              "width": 1000,
+              "height": 1000
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Marmor: fast trådhastighet",
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 4,
+          "square": true,
+          "more": false,
+          "items": [
+            {
+              "title": "Min Fil",
+              "image": "/assets/img/marini-saw-min-fil-tile.webp",
+              "alt": "Marini Min Fil",
+              "href": "/produkter/marini/vajersågar/min-fil",
+              "bullets": [
+                "Huvudmotor: 11 / 15 / 18 kW",
+                "Vikt: 700 / 720 / 750 kg"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "Min Fil Super",
+              "image": "/assets/img/marini-saw-min-fil-super-tile.webp",
+              "alt": "Marini Min Fil Super",
+              "href": "/produkter/marini/vajersågar/min-fil-super",
+              "bullets": [
+                "Huvudmotor: 11 / 15 / 18 kW",
+                "Vikt: 800 / 820 / 850 kg"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "Mar Fil",
+              "image": "/assets/img/marini-saw-mar-fil-tile.webp",
+              "alt": "Marini Mar Fil",
+              "href": "/produkter/marini/vajersågar/mar-fil",
+              "bullets": [
+                "Huvudmotor: 37 / 45 kW",
+                "Vikt: 1 480 / 1 560 kg"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "Mar Fil Super",
+              "image": "/assets/img/marini-saw-mar-fil-super-tile.webp",
+              "alt": "Marini Mar Fil Super",
+              "href": "/produkter/marini/vajersågar/mar-fil-super",
+              "bullets": [
+                "Huvudmotor: 45 / 55 kW",
+                "Vikt: 1 760 / 1 820 kg"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "Mar Fil Super SP",
+              "image": "/assets/img/marini-saw-mar-fil-super-sp-tile.webp",
+              "alt": "Marini Mar Fil Super SP",
+              "href": "/produkter/marini/vajersågar/mar-fil-super-sp",
+              "bullets": [
+                "Huvudmotor: 55 / 75 kW",
+                "Vikt: 2 100 / 2 300 kg"
+              ],
+              "width": 1000,
+              "height": 1000
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Mobila plattformar",
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 4,
+          "square": true,
+          "more": false,
+          "items": [
+            {
+              "title": "Mini Mobil Fil",
+              "image": "/assets/img/marini-saw-mini-mobil-fil-tile.webp",
+              "alt": "Marini Mini Mobil Fil",
+              "href": "/produkter/marini/vajersågar/mini-mobil-fil",
+              "bullets": [
+                "Motor: 17 kW",
+                "Längd: 3 100 - 8 400 mm"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "Mobil Fil",
+              "image": "/assets/img/marini-saw-mobil-fil-tile.webp",
+              "alt": "Marini Mobil Fil",
+              "href": "/produkter/marini/vajersågar/mobil-fil",
+              "bullets": [
+                "Motor: 33 kW",
+                "Längd: 4 500 - 9 000 mm"
+              ],
+              "width": 1000,
+              "height": 1000
+            }
+          ],
+          "gen": true
+        },
+        {
           "type": "text",
           "html": "<a href=\"/kontakta-oss\">Kontakta oss</a> för broschyr och mer information."
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Broschyr vajersågar för granit (ENG)",
+          "href": "/assets/docs/marini-vajersagar-granit-broschyr.pdf",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Produktkatalog stenbrott (ENG)",
+          "href": "/assets/docs/marini-stenbrott-produktkatalog.pdf",
+          "gen": true
         },
         {
           "type": "button",
@@ -115,8 +321,214 @@
           "html": "For marble and similar softer stones in quarries, wire saws with fixed wire speed are used, such as saws designated MAR in the name, for example: MAR FIL SUPER SP, which has motors of 75 or 100 horsepower. These machines are ideal for precise cuts with even wire tension, and they can work on sloping surfaces and horizontal cuts near ground level."
         },
         {
+          "type": "heading",
+          "level": 2,
+          "text": "Granite: variable wire speed",
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 4,
+          "square": true,
+          "more": false,
+          "items": [
+            {
+              "title": "Mini Fil Electronic",
+              "image": "/assets/img/marini-saw-mini-fil-electronic-tile.webp",
+              "alt": "Marini Mini Fil Electronic",
+              "href": "/produkter/marini/vajersågar/mini-fil-electronic",
+              "bullets": [
+                "Main motor: 11 / 15 / 18 kW",
+                "Weight: 800 / 820 / 850 kg"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "Mini Fil Super Electronic",
+              "image": "/assets/img/marini-saw-mini-fil-super-electronic-tile.webp",
+              "alt": "Marini Mini Fil Super Electronic",
+              "href": "/produkter/marini/vajersågar/mini-fil-super-electronic",
+              "bullets": [
+                "Main motor: 11 / 15 / 18 kW",
+                "Weight: 900 / 920 / 950 kg"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "Gran Fil Electronic",
+              "image": "/assets/img/marini-saw-gran-fil-electronic-tile.webp",
+              "alt": "Marini Gran Fil Electronic",
+              "href": "/produkter/marini/vajersågar/gran-fil-electronic",
+              "bullets": [
+                "Main motor: 37 / 45 kW",
+                "Weight: 1,620 / 1,700 kg"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "Gran Fil Super Electronic",
+              "image": "/assets/img/marini-saw-gran-fil-super-electronic-tile.webp",
+              "alt": "Marini Gran Fil Super Electronic",
+              "href": "/produkter/marini/vajersågar/gran-fil-super-electronic",
+              "bullets": [
+                "Main motor: 45 / 55 kW",
+                "Weight: 1,860 / 1,900 kg"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "Gran Fil Super Electronic SP",
+              "image": "/assets/img/marini-saw-gran-fil-super-electronic-sp-tile.webp",
+              "alt": "Marini Gran Fil Super Electronic SP",
+              "href": "/produkter/marini/vajersågar/gran-fil-super-electronic-sp",
+              "bullets": [
+                "Main motor: 55 / 75 kW",
+                "Weight: 2,200 / 2,400 kg"
+              ],
+              "width": 1000,
+              "height": 1000
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Marble: fixed wire speed",
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 4,
+          "square": true,
+          "more": false,
+          "items": [
+            {
+              "title": "Min Fil",
+              "image": "/assets/img/marini-saw-min-fil-tile.webp",
+              "alt": "Marini Min Fil",
+              "href": "/produkter/marini/vajersågar/min-fil",
+              "bullets": [
+                "Main motor: 11 / 15 / 18 kW",
+                "Weight: 700 / 720 / 750 kg"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "Min Fil Super",
+              "image": "/assets/img/marini-saw-min-fil-super-tile.webp",
+              "alt": "Marini Min Fil Super",
+              "href": "/produkter/marini/vajersågar/min-fil-super",
+              "bullets": [
+                "Main motor: 11 / 15 / 18 kW",
+                "Weight: 800 / 820 / 850 kg"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "Mar Fil",
+              "image": "/assets/img/marini-saw-mar-fil-tile.webp",
+              "alt": "Marini Mar Fil",
+              "href": "/produkter/marini/vajersågar/mar-fil",
+              "bullets": [
+                "Main motor: 37 / 45 kW",
+                "Weight: 1,480 / 1,560 kg"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "Mar Fil Super",
+              "image": "/assets/img/marini-saw-mar-fil-super-tile.webp",
+              "alt": "Marini Mar Fil Super",
+              "href": "/produkter/marini/vajersågar/mar-fil-super",
+              "bullets": [
+                "Main motor: 45 / 55 kW",
+                "Weight: 1,760 / 1,820 kg"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "Mar Fil Super SP",
+              "image": "/assets/img/marini-saw-mar-fil-super-sp-tile.webp",
+              "alt": "Marini Mar Fil Super SP",
+              "href": "/produkter/marini/vajersågar/mar-fil-super-sp",
+              "bullets": [
+                "Main motor: 55 / 75 kW",
+                "Weight: 2,100 / 2,300 kg"
+              ],
+              "width": 1000,
+              "height": 1000
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Mobile platforms",
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 4,
+          "square": true,
+          "more": false,
+          "items": [
+            {
+              "title": "Mini Mobil Fil",
+              "image": "/assets/img/marini-saw-mini-mobil-fil-tile.webp",
+              "alt": "Marini Mini Mobil Fil",
+              "href": "/produkter/marini/vajersågar/mini-mobil-fil",
+              "bullets": [
+                "Engine: 17 kW",
+                "Length: 3,100 - 8,400 mm"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "Mobil Fil",
+              "image": "/assets/img/marini-saw-mobil-fil-tile.webp",
+              "alt": "Marini Mobil Fil",
+              "href": "/produkter/marini/vajersågar/mobil-fil",
+              "bullets": [
+                "Engine: 33 kW",
+                "Length: 4,500 - 9,000 mm"
+              ],
+              "width": 1000,
+              "height": 1000
+            }
+          ],
+          "gen": true
+        },
+        {
           "type": "text",
           "html": "<a href=\"/kontakta-oss\">Contact us</a> for a brochure and more information."
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Granite wire saws brochure (ENG)",
+          "href": "/assets/docs/marini-vajersagar-granit-broschyr.pdf",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Quarry product catalogue (ENG)",
+          "href": "/assets/docs/marini-stenbrott-produktkatalog.pdf",
+          "gen": true
         },
         {
           "type": "button",
@@ -190,8 +602,214 @@
           "html": "Para mármol y piedras más blandas similares en canteras se utilizan sierras de hilo con velocidad de hilo fija, como las sierras con la designación MAR en el nombre, por ejemplo: MAR FIL SUPER SP, que tiene motores de 75 o 100 caballos de potencia. Estas máquinas son ideales para cortes precisos con tensión uniforme del hilo y pueden trabajar sobre superficies inclinadas y en cortes horizontales cerca del nivel del suelo."
         },
         {
+          "type": "heading",
+          "level": 2,
+          "text": "Granito: velocidad de hilo variable",
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 4,
+          "square": true,
+          "more": false,
+          "items": [
+            {
+              "title": "Mini Fil Electronic",
+              "image": "/assets/img/marini-saw-mini-fil-electronic-tile.webp",
+              "alt": "Marini Mini Fil Electronic",
+              "href": "/produkter/marini/vajersågar/mini-fil-electronic",
+              "bullets": [
+                "Motor principal: 11 / 15 / 18 kW",
+                "Peso: 800 / 820 / 850 kg"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "Mini Fil Super Electronic",
+              "image": "/assets/img/marini-saw-mini-fil-super-electronic-tile.webp",
+              "alt": "Marini Mini Fil Super Electronic",
+              "href": "/produkter/marini/vajersågar/mini-fil-super-electronic",
+              "bullets": [
+                "Motor principal: 11 / 15 / 18 kW",
+                "Peso: 900 / 920 / 950 kg"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "Gran Fil Electronic",
+              "image": "/assets/img/marini-saw-gran-fil-electronic-tile.webp",
+              "alt": "Marini Gran Fil Electronic",
+              "href": "/produkter/marini/vajersågar/gran-fil-electronic",
+              "bullets": [
+                "Motor principal: 37 / 45 kW",
+                "Peso: 1.620 / 1.700 kg"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "Gran Fil Super Electronic",
+              "image": "/assets/img/marini-saw-gran-fil-super-electronic-tile.webp",
+              "alt": "Marini Gran Fil Super Electronic",
+              "href": "/produkter/marini/vajersågar/gran-fil-super-electronic",
+              "bullets": [
+                "Motor principal: 45 / 55 kW",
+                "Peso: 1.860 / 1.900 kg"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "Gran Fil Super Electronic SP",
+              "image": "/assets/img/marini-saw-gran-fil-super-electronic-sp-tile.webp",
+              "alt": "Marini Gran Fil Super Electronic SP",
+              "href": "/produkter/marini/vajersågar/gran-fil-super-electronic-sp",
+              "bullets": [
+                "Motor principal: 55 / 75 kW",
+                "Peso: 2.200 / 2.400 kg"
+              ],
+              "width": 1000,
+              "height": 1000
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Mármol: velocidad de hilo fija",
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 4,
+          "square": true,
+          "more": false,
+          "items": [
+            {
+              "title": "Min Fil",
+              "image": "/assets/img/marini-saw-min-fil-tile.webp",
+              "alt": "Marini Min Fil",
+              "href": "/produkter/marini/vajersågar/min-fil",
+              "bullets": [
+                "Motor principal: 11 / 15 / 18 kW",
+                "Peso: 700 / 720 / 750 kg"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "Min Fil Super",
+              "image": "/assets/img/marini-saw-min-fil-super-tile.webp",
+              "alt": "Marini Min Fil Super",
+              "href": "/produkter/marini/vajersågar/min-fil-super",
+              "bullets": [
+                "Motor principal: 11 / 15 / 18 kW",
+                "Peso: 800 / 820 / 850 kg"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "Mar Fil",
+              "image": "/assets/img/marini-saw-mar-fil-tile.webp",
+              "alt": "Marini Mar Fil",
+              "href": "/produkter/marini/vajersågar/mar-fil",
+              "bullets": [
+                "Motor principal: 37 / 45 kW",
+                "Peso: 1.480 / 1.560 kg"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "Mar Fil Super",
+              "image": "/assets/img/marini-saw-mar-fil-super-tile.webp",
+              "alt": "Marini Mar Fil Super",
+              "href": "/produkter/marini/vajersågar/mar-fil-super",
+              "bullets": [
+                "Motor principal: 45 / 55 kW",
+                "Peso: 1.760 / 1.820 kg"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "Mar Fil Super SP",
+              "image": "/assets/img/marini-saw-mar-fil-super-sp-tile.webp",
+              "alt": "Marini Mar Fil Super SP",
+              "href": "/produkter/marini/vajersågar/mar-fil-super-sp",
+              "bullets": [
+                "Motor principal: 55 / 75 kW",
+                "Peso: 2.100 / 2.300 kg"
+              ],
+              "width": 1000,
+              "height": 1000
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Plataformas móviles",
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 4,
+          "square": true,
+          "more": false,
+          "items": [
+            {
+              "title": "Mini Mobil Fil",
+              "image": "/assets/img/marini-saw-mini-mobil-fil-tile.webp",
+              "alt": "Marini Mini Mobil Fil",
+              "href": "/produkter/marini/vajersågar/mini-mobil-fil",
+              "bullets": [
+                "Motor: 17 kW",
+                "Longitud: 3.100 - 8.400 mm"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "Mobil Fil",
+              "image": "/assets/img/marini-saw-mobil-fil-tile.webp",
+              "alt": "Marini Mobil Fil",
+              "href": "/produkter/marini/vajersågar/mobil-fil",
+              "bullets": [
+                "Motor: 33 kW",
+                "Longitud: 4.500 - 9.000 mm"
+              ],
+              "width": 1000,
+              "height": 1000
+            }
+          ],
+          "gen": true
+        },
+        {
           "type": "text",
           "html": "<a href=\"/kontakta-oss\">Contáctenos</a> para obtener un folleto y más información."
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Folleto sierras de hilo para granito (ENG)",
+          "href": "/assets/docs/marini-vajersagar-granit-broschyr.pdf",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Catálogo de productos para canteras (ENG)",
+          "href": "/assets/docs/marini-stenbrott-produktkatalog.pdf",
+          "gen": true
         },
         {
           "type": "button",
@@ -265,8 +883,214 @@
           "html": "For marmor og lignende mykere steinarter i steinbrudd brukes wiresager med fast wirehastighet, for eksempel sager med betegnelsen MAR i navnet, som MAR FIL SUPER SP, som har motorer på 75 eller 100 hestekrefter. Disse maskinene er ideelle for presise snitt med jevn spenning på wiren, og de kan arbeide på skrå flater og horisontale snitt nær bakkenivå."
         },
         {
+          "type": "heading",
+          "level": 2,
+          "text": "Granitt: variabel wirehastighet",
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 4,
+          "square": true,
+          "more": false,
+          "items": [
+            {
+              "title": "Mini Fil Electronic",
+              "image": "/assets/img/marini-saw-mini-fil-electronic-tile.webp",
+              "alt": "Marini Mini Fil Electronic",
+              "href": "/produkter/marini/vajersågar/mini-fil-electronic",
+              "bullets": [
+                "Hovedmotor: 11 / 15 / 18 kW",
+                "Vekt: 800 / 820 / 850 kg"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "Mini Fil Super Electronic",
+              "image": "/assets/img/marini-saw-mini-fil-super-electronic-tile.webp",
+              "alt": "Marini Mini Fil Super Electronic",
+              "href": "/produkter/marini/vajersågar/mini-fil-super-electronic",
+              "bullets": [
+                "Hovedmotor: 11 / 15 / 18 kW",
+                "Vekt: 900 / 920 / 950 kg"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "Gran Fil Electronic",
+              "image": "/assets/img/marini-saw-gran-fil-electronic-tile.webp",
+              "alt": "Marini Gran Fil Electronic",
+              "href": "/produkter/marini/vajersågar/gran-fil-electronic",
+              "bullets": [
+                "Hovedmotor: 37 / 45 kW",
+                "Vekt: 1 620 / 1 700 kg"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "Gran Fil Super Electronic",
+              "image": "/assets/img/marini-saw-gran-fil-super-electronic-tile.webp",
+              "alt": "Marini Gran Fil Super Electronic",
+              "href": "/produkter/marini/vajersågar/gran-fil-super-electronic",
+              "bullets": [
+                "Hovedmotor: 45 / 55 kW",
+                "Vekt: 1 860 / 1 900 kg"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "Gran Fil Super Electronic SP",
+              "image": "/assets/img/marini-saw-gran-fil-super-electronic-sp-tile.webp",
+              "alt": "Marini Gran Fil Super Electronic SP",
+              "href": "/produkter/marini/vajersågar/gran-fil-super-electronic-sp",
+              "bullets": [
+                "Hovedmotor: 55 / 75 kW",
+                "Vekt: 2 200 / 2 400 kg"
+              ],
+              "width": 1000,
+              "height": 1000
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Marmor: fast wirehastighet",
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 4,
+          "square": true,
+          "more": false,
+          "items": [
+            {
+              "title": "Min Fil",
+              "image": "/assets/img/marini-saw-min-fil-tile.webp",
+              "alt": "Marini Min Fil",
+              "href": "/produkter/marini/vajersågar/min-fil",
+              "bullets": [
+                "Hovedmotor: 11 / 15 / 18 kW",
+                "Vekt: 700 / 720 / 750 kg"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "Min Fil Super",
+              "image": "/assets/img/marini-saw-min-fil-super-tile.webp",
+              "alt": "Marini Min Fil Super",
+              "href": "/produkter/marini/vajersågar/min-fil-super",
+              "bullets": [
+                "Hovedmotor: 11 / 15 / 18 kW",
+                "Vekt: 800 / 820 / 850 kg"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "Mar Fil",
+              "image": "/assets/img/marini-saw-mar-fil-tile.webp",
+              "alt": "Marini Mar Fil",
+              "href": "/produkter/marini/vajersågar/mar-fil",
+              "bullets": [
+                "Hovedmotor: 37 / 45 kW",
+                "Vekt: 1 480 / 1 560 kg"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "Mar Fil Super",
+              "image": "/assets/img/marini-saw-mar-fil-super-tile.webp",
+              "alt": "Marini Mar Fil Super",
+              "href": "/produkter/marini/vajersågar/mar-fil-super",
+              "bullets": [
+                "Hovedmotor: 45 / 55 kW",
+                "Vekt: 1 760 / 1 820 kg"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "Mar Fil Super SP",
+              "image": "/assets/img/marini-saw-mar-fil-super-sp-tile.webp",
+              "alt": "Marini Mar Fil Super SP",
+              "href": "/produkter/marini/vajersågar/mar-fil-super-sp",
+              "bullets": [
+                "Hovedmotor: 55 / 75 kW",
+                "Vekt: 2 100 / 2 300 kg"
+              ],
+              "width": 1000,
+              "height": 1000
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Mobile plattformer",
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 4,
+          "square": true,
+          "more": false,
+          "items": [
+            {
+              "title": "Mini Mobil Fil",
+              "image": "/assets/img/marini-saw-mini-mobil-fil-tile.webp",
+              "alt": "Marini Mini Mobil Fil",
+              "href": "/produkter/marini/vajersågar/mini-mobil-fil",
+              "bullets": [
+                "Motor: 17 kW",
+                "Lengde: 3 100 - 8 400 mm"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "Mobil Fil",
+              "image": "/assets/img/marini-saw-mobil-fil-tile.webp",
+              "alt": "Marini Mobil Fil",
+              "href": "/produkter/marini/vajersågar/mobil-fil",
+              "bullets": [
+                "Motor: 33 kW",
+                "Lengde: 4 500 - 9 000 mm"
+              ],
+              "width": 1000,
+              "height": 1000
+            }
+          ],
+          "gen": true
+        },
+        {
           "type": "text",
           "html": "<a href=\"/kontakta-oss\">Kontakt oss</a> for brosjyre og mer informasjon."
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Brosjyre wiresager for granitt (ENG)",
+          "href": "/assets/docs/marini-vajersagar-granit-broschyr.pdf",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Produktkatalog steinbrudd (ENG)",
+          "href": "/assets/docs/marini-stenbrott-produktkatalog.pdf",
+          "gen": true
         },
         {
           "type": "button",

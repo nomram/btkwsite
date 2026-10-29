@@ -1,6 +1,6 @@
 {
   "path": "/produkter/marini",
-  "updated": "2026-10-10",
+  "updated": "2026-10-29",
   "template": "brand",
   "origin": {
     "country": "it"
@@ -41,16 +41,25 @@
         {
           "type": "button",
           "kind": "download",
+          "text": "Produktkatalog stenbrott (ENG)",
+          "href": "/assets/docs/marini-stenbrott-produktkatalog.pdf",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
           "text": "Broschyr Stenbrott (ENG)",
           "href": "/assets/docs/marini-broschyr-stenbrott-eng.pdf",
-          "driveId": "1NwBqKOiwQcQtmr_S6MaMLX74eP8h6h1C"
+          "driveId": "1NwBqKOiwQcQtmr_S6MaMLX74eP8h6h1C",
+          "hidden": true
         },
         {
           "type": "button",
           "kind": "download",
           "text": "Broschyr Stenbrott (SV)",
           "href": "/assets/docs/marini-broschyr-stenbrott-sv.pdf",
-          "driveId": "10EjXyLpVSTh4RGNbGmudQ7sdDhKMxp98"
+          "driveId": "10EjXyLpVSTh4RGNbGmudQ7sdDhKMxp98",
+          "hidden": true
         },
         {
           "type": "cards",
@@ -133,6 +142,17 @@
               "alt": "RUSTICA logotyp"
             },
             {
+              "href": "/produkter/marini/stenbrottsborrning",
+              "label": "Läs mer",
+              "title": "Borriggar för stenbrott",
+              "html": "Hydrauliska och pneumatiska borrenheter för stenbrott: Voyager, Big Driller, Driller och Hor Drill.",
+              "text": "Hydrauliska och pneumatiska borrenheter för stenbrott: Voyager, Big Driller, Driller och Hor Drill.",
+              "image": "/assets/img/marini-drill-voyager-tile.webp",
+              "width": 1000,
+              "height": 1000,
+              "alt": "Marini Borriggar för stenbrott"
+            },
+            {
               "href": "/produkter/marini/sprutbetong",
               "label": "Läs mer",
               "title": "Sprutbetong",
@@ -177,16 +197,25 @@
         {
           "type": "button",
           "kind": "download",
+          "text": "Quarry product catalogue (ENG)",
+          "href": "/assets/docs/marini-stenbrott-produktkatalog.pdf",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
           "text": "Brochure Quarrying (ENG)",
           "href": "/assets/docs/marini-broschyr-stenbrott-eng.pdf",
-          "driveId": "1NwBqKOiwQcQtmr_S6MaMLX74eP8h6h1C"
+          "driveId": "1NwBqKOiwQcQtmr_S6MaMLX74eP8h6h1C",
+          "hidden": true
         },
         {
           "type": "button",
           "kind": "download",
           "text": "Brochure Quarrying (SV)",
           "href": "/assets/docs/marini-broschyr-stenbrott-sv.pdf",
-          "driveId": "10EjXyLpVSTh4RGNbGmudQ7sdDhKMxp98"
+          "driveId": "10EjXyLpVSTh4RGNbGmudQ7sdDhKMxp98",
+          "hidden": true
         },
         {
           "type": "cards",
@@ -269,6 +298,17 @@
               "alt": "RUSTICA logo"
             },
             {
+              "href": "/produkter/marini/stenbrottsborrning",
+              "label": "Läs mer",
+              "title": "Quarry drill rigs",
+              "html": "Hydraulic and pneumatic drilling units for quarries: Voyager, Big Driller, Driller and Hor Drill.",
+              "text": "Hydraulic and pneumatic drilling units for quarries: Voyager, Big Driller, Driller and Hor Drill.",
+              "image": "/assets/img/marini-drill-voyager-tile.webp",
+              "width": 1000,
+              "height": 1000,
+              "alt": "Marini Quarry drill rigs"
+            },
+            {
               "href": "/produkter/marini/sprutbetong",
               "label": "Läs mer",
               "title": "Shotcrete",
@@ -314,16 +354,25 @@
         {
           "type": "button",
           "kind": "download",
+          "text": "Catálogo de productos para canteras (ENG)",
+          "href": "/assets/docs/marini-stenbrott-produktkatalog.pdf",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
           "text": "Folleto Canteras (ENG)",
           "href": "/assets/docs/marini-broschyr-stenbrott-eng.pdf",
-          "driveId": "1NwBqKOiwQcQtmr_S6MaMLX74eP8h6h1C"
+          "driveId": "1NwBqKOiwQcQtmr_S6MaMLX74eP8h6h1C",
+          "hidden": true
         },
         {
           "type": "button",
           "kind": "download",
           "text": "Folleto Canteras (SV)",
           "href": "/assets/docs/marini-broschyr-stenbrott-sv.pdf",
-          "driveId": "10EjXyLpVSTh4RGNbGmudQ7sdDhKMxp98"
+          "driveId": "10EjXyLpVSTh4RGNbGmudQ7sdDhKMxp98",
+          "hidden": true
         },
         {
           "type": "cards",
@@ -406,6 +455,17 @@
               "alt": "RUSTICA logotipo"
             },
             {
+              "href": "/produkter/marini/stenbrottsborrning",
+              "label": "Läs mer",
+              "title": "Perforadoras para canteras",
+              "html": "Unidades de perforación hidráulicas y neumáticas para canteras: Voyager, Big Driller, Driller y Hor Drill.",
+              "text": "Unidades de perforación hidráulicas y neumáticas para canteras: Voyager, Big Driller, Driller y Hor Drill.",
+              "image": "/assets/img/marini-drill-voyager-tile.webp",
+              "width": 1000,
+              "height": 1000,
+              "alt": "Marini Perforadoras para canteras"
+            },
+            {
               "href": "/produkter/marini/sprutbetong",
               "label": "Läs mer",
               "title": "Hormigón proyectado",
@@ -451,16 +511,25 @@
         {
           "type": "button",
           "kind": "download",
+          "text": "Produktkatalog steinbrudd (ENG)",
+          "href": "/assets/docs/marini-stenbrott-produktkatalog.pdf",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
           "text": "Brosjyre Steinbrudd (ENG)",
           "href": "/assets/docs/marini-broschyr-stenbrott-eng.pdf",
-          "driveId": "1NwBqKOiwQcQtmr_S6MaMLX74eP8h6h1C"
+          "driveId": "1NwBqKOiwQcQtmr_S6MaMLX74eP8h6h1C",
+          "hidden": true
         },
         {
           "type": "button",
           "kind": "download",
           "text": "Brosjyre Steinbrudd (SV)",
           "href": "/assets/docs/marini-broschyr-stenbrott-sv.pdf",
-          "driveId": "10EjXyLpVSTh4RGNbGmudQ7sdDhKMxp98"
+          "driveId": "10EjXyLpVSTh4RGNbGmudQ7sdDhKMxp98",
+          "hidden": true
         },
         {
           "type": "cards",
@@ -541,6 +610,17 @@
               "width": 541,
               "height": 541,
               "alt": "RUSTICA logo"
+            },
+            {
+              "href": "/produkter/marini/stenbrottsborrning",
+              "label": "Läs mer",
+              "title": "Borerigger for steinbrudd",
+              "html": "Hydrauliske og pneumatiske borenheter for steinbrudd: Voyager, Big Driller, Driller og Hor Drill.",
+              "text": "Hydrauliske og pneumatiske borenheter for steinbrudd: Voyager, Big Driller, Driller og Hor Drill.",
+              "image": "/assets/img/marini-drill-voyager-tile.webp",
+              "width": 1000,
+              "height": 1000,
+              "alt": "Marini Borerigger for steinbrudd"
             },
             {
               "href": "/produkter/marini/sprutbetong",

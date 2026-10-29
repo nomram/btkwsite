@@ -25,11 +25,11 @@ function weightOf(path) {
 }
 
 export function searchEntry(ctx, page, t, url, titleOf) {
-  const blocks = flatBlocks(t.blocks);
+  const blocks = flatBlocks(t.blocks).filter((b) => !(b && b.hidden));
   const heads = [], body = [];
   for (const b of blocks) {
     if (b.type === "heading") heads.push(plain(b.text || ""));
-    else if (b.type === "button" && b.kind === "download") body.push(plain(b.label || ""));
+    else if (b.type === "button" && b.kind === "download") body.push(plain(b.text || b.label || ""));
     else body.push(...strings(b, []));
   }
   const crumbs = [];

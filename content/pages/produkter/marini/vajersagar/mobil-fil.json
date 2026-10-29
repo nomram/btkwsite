@@ -1,0 +1,600 @@
+{
+  "path": "/produkter/marini/vajersågar/mobil-fil",
+  "updated": "2026-10-29",
+  "template": "product",
+  "order": 11,
+  "published": true,
+  "hero": {
+    "image": "/assets/img/marini-vajersagar-hero.webp"
+  },
+  "i18n": {
+    "sv": {
+      "title": "Mobil Fil",
+      "h1": "Marini Mobil Fil",
+      "description": "Mobil Fil är en mobil plattform för Marinis vajersågar, med motor 33 kW och vikt 5 900 kg.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Marini logotyp",
+          "href": "/produkter/marini",
+          "width": 637,
+          "height": 86,
+          "src": "/assets/img/logo-marini.webp",
+          "gen": true
+        },
+        {
+          "type": "image",
+          "alt": "Marini Mobil Fil",
+          "file": "/assets/img/marini-saw-mobil-fil.webp",
+          "width": 886,
+          "height": 721,
+          "src": "/assets/img/marini-saw-mobil-fil.webp",
+          "gen": true
+        },
+        {
+          "type": "carousel",
+          "autoplay": true,
+          "interval": 6,
+          "items": [
+            {
+              "src": "/assets/img/marini-quarry-mobile-photo.webp",
+              "alt": "Marini Mobil Fil (1/2)",
+              "width": 1800,
+              "height": 1076
+            },
+            {
+              "src": "/assets/img/marini-quarry-mobile-photo-2.webp",
+              "alt": "Marini Mobil Fil (2/2)",
+              "width": 1284,
+              "height": 647
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "Mobil Fil är en mobil plattform för Marinis vajersågar, med motor 33 kW och vikt 5 900 kg.",
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "Plattformen gör att vajersågen kan flyttas i stenbrottet och ställas upp för nästa snitt. Längd och höjd anges med plattformen stängd (hopfälld) och utfälld (öppen).",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Motor: 33 kW",
+            "Längd: 4 500 - 9 000 mm",
+            "Bredd: 2 500 mm",
+            "Vikt: 5 900 kg"
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Kontakta oss</a> för pris, leveranstid eller hjälp att välja rätt modell.",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Produktkatalog stenbrott (ENG)",
+          "href": "/assets/docs/marini-stenbrott-produktkatalog.pdf",
+          "gen": true
+        },
+        {
+          "type": "datasheet",
+          "title": "Teknisk data",
+          "tagline": "Marini Mobil Fil",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Specifikationer",
+              "rows": [
+                {
+                  "label": "Motor",
+                  "metric": "33 kW"
+                },
+                {
+                  "label": "Längd",
+                  "metric": "4 500 mm (stängd) - 9 000 mm (utfälld)"
+                },
+                {
+                  "label": "Bredd",
+                  "metric": "2 500 mm"
+                },
+                {
+                  "label": "Höjd",
+                  "metric": "3 200 mm (stängd) - 1 800 mm (utfälld)"
+                },
+                {
+                  "label": "Vikt",
+                  "metric": "5 900 kg"
+                }
+              ]
+            }
+          ],
+          "note": "",
+          "source": "Uppgifterna är hämtade ur Marinis produktkatalog för stenbrott och broschyrer (engelska).",
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 1,
+          "narrow": true,
+          "zoom": true,
+          "more": false,
+          "items": [
+            {
+              "title": "Sidovy",
+              "image": "/assets/img/marini-saw-mobil-fil-side.webp",
+              "alt": "Sidovy Mobil Fil",
+              "text": "Håll muspekaren över ritningen (eller tryck och dra) för 2× förstoring.",
+              "width": 625,
+              "height": 414
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "related",
+          "title": "Se även",
+          "items": [
+            {
+              "href": "/produkter/marini/vajersågar",
+              "mutual": false
+            },
+            {
+              "href": "/produkter/marini/vajersågar/mini-mobil-fil"
+            }
+          ],
+          "gen": true
+        }
+      ]
+    },
+    "en": {
+      "title": "Mobil Fil",
+      "h1": "Marini Mobil Fil",
+      "description": "Mobil Fil is a mobile platform for Marini's wire saws, with a 33 kW engine and a weight of 5,900 kg.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Marini logotyp",
+          "href": "/produkter/marini",
+          "width": 637,
+          "height": 86,
+          "src": "/assets/img/logo-marini.webp",
+          "gen": true
+        },
+        {
+          "type": "image",
+          "alt": "Marini Mobil Fil",
+          "file": "/assets/img/marini-saw-mobil-fil.webp",
+          "width": 886,
+          "height": 721,
+          "src": "/assets/img/marini-saw-mobil-fil.webp",
+          "gen": true
+        },
+        {
+          "type": "carousel",
+          "autoplay": true,
+          "interval": 6,
+          "items": [
+            {
+              "src": "/assets/img/marini-quarry-mobile-photo.webp",
+              "alt": "Marini Mobil Fil (1/2)",
+              "width": 1800,
+              "height": 1076
+            },
+            {
+              "src": "/assets/img/marini-quarry-mobile-photo-2.webp",
+              "alt": "Marini Mobil Fil (2/2)",
+              "width": 1284,
+              "height": 647
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "Mobil Fil is a mobile platform for Marini's wire saws, with a 33 kW engine and a weight of 5,900 kg.",
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "The platform lets the wire saw be moved around the quarry and set up for the next cut. Length and height are given with the platform closed (folded) and open (unfolded).",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Engine: 33 kW",
+            "Length: 4,500 - 9,000 mm",
+            "Width: 2,500 mm",
+            "Weight: 5,900 kg"
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Contact us</a> for price, delivery time or help choosing the right model.",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Quarry product catalogue (ENG)",
+          "href": "/assets/docs/marini-stenbrott-produktkatalog.pdf",
+          "gen": true
+        },
+        {
+          "type": "datasheet",
+          "title": "Technical data",
+          "tagline": "Marini Mobil Fil",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Specifications",
+              "rows": [
+                {
+                  "label": "Engine",
+                  "metric": "33 kW"
+                },
+                {
+                  "label": "Length",
+                  "metric": "4,500 mm (closed) - 9,000 mm (open)"
+                },
+                {
+                  "label": "Width",
+                  "metric": "2,500 mm"
+                },
+                {
+                  "label": "Height",
+                  "metric": "3,200 mm (closed) - 1,800 mm (open)"
+                },
+                {
+                  "label": "Weight",
+                  "metric": "5,900 kg"
+                }
+              ]
+            }
+          ],
+          "note": "",
+          "source": "Information taken from Marini's quarry product catalogue and the model brochures.",
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 1,
+          "narrow": true,
+          "zoom": true,
+          "more": false,
+          "items": [
+            {
+              "title": "Side view",
+              "image": "/assets/img/marini-saw-mobil-fil-side.webp",
+              "alt": "Side view Mobil Fil",
+              "text": "Hover over the drawing (or touch and drag) for a 2× magnifier.",
+              "width": 625,
+              "height": 414
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "related",
+          "title": "See also",
+          "items": [
+            {
+              "href": "/produkter/marini/vajersågar",
+              "mutual": false
+            },
+            {
+              "href": "/produkter/marini/vajersågar/mini-mobil-fil"
+            }
+          ],
+          "gen": true
+        }
+      ]
+    },
+    "es": {
+      "title": "Mobil Fil",
+      "h1": "Marini Mobil Fil",
+      "description": "Mobil Fil es una plataforma móvil para las sierras de hilo de Marini, con un motor de 33 kW y un peso de 5.900 kg.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Marini logotyp",
+          "href": "/produkter/marini",
+          "width": 637,
+          "height": 86,
+          "src": "/assets/img/logo-marini.webp",
+          "gen": true
+        },
+        {
+          "type": "image",
+          "alt": "Marini Mobil Fil",
+          "file": "/assets/img/marini-saw-mobil-fil.webp",
+          "width": 886,
+          "height": 721,
+          "src": "/assets/img/marini-saw-mobil-fil.webp",
+          "gen": true
+        },
+        {
+          "type": "carousel",
+          "autoplay": true,
+          "interval": 6,
+          "items": [
+            {
+              "src": "/assets/img/marini-quarry-mobile-photo.webp",
+              "alt": "Marini Mobil Fil (1/2)",
+              "width": 1800,
+              "height": 1076
+            },
+            {
+              "src": "/assets/img/marini-quarry-mobile-photo-2.webp",
+              "alt": "Marini Mobil Fil (2/2)",
+              "width": 1284,
+              "height": 647
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "Mobil Fil es una plataforma móvil para las sierras de hilo de Marini, con un motor de 33 kW y un peso de 5.900 kg.",
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "La plataforma permite trasladar la sierra de hilo por la cantera y prepararla para el siguiente corte. La longitud y la altura se indican con la plataforma cerrada (plegada) y abierta (desplegada).",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Motor: 33 kW",
+            "Longitud: 4.500 - 9.000 mm",
+            "Anchura: 2.500 mm",
+            "Peso: 5.900 kg"
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Contáctenos</a> para precio, plazo de entrega o ayuda para elegir el modelo adecuado.",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Catálogo de productos para canteras (ENG)",
+          "href": "/assets/docs/marini-stenbrott-produktkatalog.pdf",
+          "gen": true
+        },
+        {
+          "type": "datasheet",
+          "title": "Datos técnicos",
+          "tagline": "Marini Mobil Fil",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Especificaciones",
+              "rows": [
+                {
+                  "label": "Motor",
+                  "metric": "33 kW"
+                },
+                {
+                  "label": "Longitud",
+                  "metric": "4.500 mm (cerrada) - 9.000 mm (abierta)"
+                },
+                {
+                  "label": "Anchura",
+                  "metric": "2.500 mm"
+                },
+                {
+                  "label": "Altura",
+                  "metric": "3.200 mm (cerrada) - 1.800 mm (abierta)"
+                },
+                {
+                  "label": "Peso",
+                  "metric": "5.900 kg"
+                }
+              ]
+            }
+          ],
+          "note": "",
+          "source": "Información tomada del catálogo de productos para canteras de Marini y de los folletos de los modelos.",
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 1,
+          "narrow": true,
+          "zoom": true,
+          "more": false,
+          "items": [
+            {
+              "title": "Vista lateral",
+              "image": "/assets/img/marini-saw-mobil-fil-side.webp",
+              "alt": "Vista lateral Mobil Fil",
+              "text": "Pase el cursor sobre el plano (o toque y arrastre) para una lupa 2×.",
+              "width": 625,
+              "height": 414
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "related",
+          "title": "Véase también",
+          "items": [
+            {
+              "href": "/produkter/marini/vajersågar",
+              "mutual": false
+            },
+            {
+              "href": "/produkter/marini/vajersågar/mini-mobil-fil"
+            }
+          ],
+          "gen": true
+        }
+      ]
+    },
+    "no": {
+      "title": "Mobil Fil",
+      "h1": "Marini Mobil Fil",
+      "description": "Mobil Fil er en mobil plattform for Marinis wiresager, med motor på 33 kW og vekt 5 900 kg.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Marini logotyp",
+          "href": "/produkter/marini",
+          "width": 637,
+          "height": 86,
+          "src": "/assets/img/logo-marini.webp",
+          "gen": true
+        },
+        {
+          "type": "image",
+          "alt": "Marini Mobil Fil",
+          "file": "/assets/img/marini-saw-mobil-fil.webp",
+          "width": 886,
+          "height": 721,
+          "src": "/assets/img/marini-saw-mobil-fil.webp",
+          "gen": true
+        },
+        {
+          "type": "carousel",
+          "autoplay": true,
+          "interval": 6,
+          "items": [
+            {
+              "src": "/assets/img/marini-quarry-mobile-photo.webp",
+              "alt": "Marini Mobil Fil (1/2)",
+              "width": 1800,
+              "height": 1076
+            },
+            {
+              "src": "/assets/img/marini-quarry-mobile-photo-2.webp",
+              "alt": "Marini Mobil Fil (2/2)",
+              "width": 1284,
+              "height": 647
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "Mobil Fil er en mobil plattform for Marinis wiresager, med motor på 33 kW og vekt 5 900 kg.",
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "Plattformen gjør at wiresagen kan flyttes rundt i steinbruddet og settes opp for neste snitt. Lengde og høyde er oppgitt med plattformen lukket (sammenfoldet) og utfoldet (åpen).",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Motor: 33 kW",
+            "Lengde: 4 500 - 9 000 mm",
+            "Bredde: 2 500 mm",
+            "Vekt: 5 900 kg"
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Kontakt oss</a> for pris, leveringstid eller hjelp til å velge riktig modell.",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Produktkatalog steinbrudd (ENG)",
+          "href": "/assets/docs/marini-stenbrott-produktkatalog.pdf",
+          "gen": true
+        },
+        {
+          "type": "datasheet",
+          "title": "Tekniske data",
+          "tagline": "Marini Mobil Fil",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Spesifikasjoner",
+              "rows": [
+                {
+                  "label": "Motor",
+                  "metric": "33 kW"
+                },
+                {
+                  "label": "Lengde",
+                  "metric": "4 500 mm (lukket) - 9 000 mm (utfoldet)"
+                },
+                {
+                  "label": "Bredde",
+                  "metric": "2 500 mm"
+                },
+                {
+                  "label": "Høyde",
+                  "metric": "3 200 mm (lukket) - 1 800 mm (utfoldet)"
+                },
+                {
+                  "label": "Vekt",
+                  "metric": "5 900 kg"
+                }
+              ]
+            }
+          ],
+          "note": "",
+          "source": "Opplysningene er hentet fra Marinis produktkatalog for steinbrudd og brosjyrene for modellene (engelsk).",
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 1,
+          "narrow": true,
+          "zoom": true,
+          "more": false,
+          "items": [
+            {
+              "title": "Sideriss",
+              "image": "/assets/img/marini-saw-mobil-fil-side.webp",
+              "alt": "Sideriss Mobil Fil",
+              "text": "Hold musepekeren over tegningen (eller trykk og dra) for 2× forstørrelse.",
+              "width": 625,
+              "height": 414
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "related",
+          "title": "Se også",
+          "items": [
+            {
+              "href": "/produkter/marini/vajersågar",
+              "mutual": false
+            },
+            {
+              "href": "/produkter/marini/vajersågar/mini-mobil-fil"
+            }
+          ],
+          "gen": true
+        }
+      ]
+    }
+  }
+}

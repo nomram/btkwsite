@@ -1,0 +1,500 @@
+{
+  "path": "/produkter/marini/vajersågar/mini-mobil-fil",
+  "updated": "2026-10-29",
+  "template": "product",
+  "order": 10,
+  "published": true,
+  "hero": {
+    "image": "/assets/img/marini-vajersagar-hero.webp"
+  },
+  "i18n": {
+    "sv": {
+      "title": "Mini Mobil Fil",
+      "h1": "Marini Mini Mobil Fil",
+      "description": "Mini Mobil Fil är en mobil plattform för Marinis vajersågar, med motor 17 kW och vikt 1 650 kg.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Marini logotyp",
+          "href": "/produkter/marini",
+          "width": 637,
+          "height": 86,
+          "src": "/assets/img/logo-marini.webp",
+          "gen": true
+        },
+        {
+          "type": "image",
+          "alt": "Marini Mini Mobil Fil",
+          "file": "/assets/img/marini-saw-mini-mobil-fil.webp",
+          "width": 512,
+          "height": 412,
+          "src": "/assets/img/marini-saw-mini-mobil-fil.webp",
+          "gen": true
+        },
+        {
+          "type": "carousel",
+          "autoplay": false,
+          "interval": 6,
+          "items": [
+            {
+              "src": "/assets/img/marini-quarry-mobile-photo-2.webp",
+              "alt": "Marini Mini Mobil Fil (1/1)",
+              "width": 1284,
+              "height": 647
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "Mini Mobil Fil är en mobil plattform för Marinis vajersågar, med motor 17 kW och vikt 1 650 kg.",
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "Plattformen gör att vajersågen kan flyttas i stenbrottet och ställas upp för nästa snitt. Längd och höjd anges med plattformen stängd (hopfälld) och utfälld (öppen).",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Motor: 17 kW",
+            "Längd: 3 100 - 8 400 mm",
+            "Bredd: 2 000 mm",
+            "Vikt: 1 650 kg"
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Kontakta oss</a> för pris, leveranstid eller hjälp att välja rätt modell.",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Produktkatalog stenbrott (ENG)",
+          "href": "/assets/docs/marini-stenbrott-produktkatalog.pdf",
+          "gen": true
+        },
+        {
+          "type": "datasheet",
+          "title": "Teknisk data",
+          "tagline": "Marini Mini Mobil Fil",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Specifikationer",
+              "rows": [
+                {
+                  "label": "Motor",
+                  "metric": "17 kW"
+                },
+                {
+                  "label": "Längd",
+                  "metric": "3 100 mm (stängd) - 8 400 mm (utfälld)"
+                },
+                {
+                  "label": "Bredd",
+                  "metric": "2 000 mm"
+                },
+                {
+                  "label": "Höjd",
+                  "metric": "3 900 mm (stängd) - 1 420 mm (utfälld)"
+                },
+                {
+                  "label": "Vikt",
+                  "metric": "1 650 kg"
+                }
+              ]
+            }
+          ],
+          "note": "",
+          "source": "Uppgifterna är hämtade ur Marinis produktkatalog för stenbrott och broschyrer (engelska).",
+          "gen": true
+        },
+        {
+          "type": "related",
+          "title": "Se även",
+          "items": [
+            {
+              "href": "/produkter/marini/vajersågar",
+              "mutual": false
+            },
+            {
+              "href": "/produkter/marini/vajersågar/mobil-fil"
+            }
+          ],
+          "gen": true
+        }
+      ]
+    },
+    "en": {
+      "title": "Mini Mobil Fil",
+      "h1": "Marini Mini Mobil Fil",
+      "description": "Mini Mobil Fil is a mobile platform for Marini's wire saws, with a 17 kW engine and a weight of 1,650 kg.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Marini logotyp",
+          "href": "/produkter/marini",
+          "width": 637,
+          "height": 86,
+          "src": "/assets/img/logo-marini.webp",
+          "gen": true
+        },
+        {
+          "type": "image",
+          "alt": "Marini Mini Mobil Fil",
+          "file": "/assets/img/marini-saw-mini-mobil-fil.webp",
+          "width": 512,
+          "height": 412,
+          "src": "/assets/img/marini-saw-mini-mobil-fil.webp",
+          "gen": true
+        },
+        {
+          "type": "carousel",
+          "autoplay": false,
+          "interval": 6,
+          "items": [
+            {
+              "src": "/assets/img/marini-quarry-mobile-photo-2.webp",
+              "alt": "Marini Mini Mobil Fil (1/1)",
+              "width": 1284,
+              "height": 647
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "Mini Mobil Fil is a mobile platform for Marini's wire saws, with a 17 kW engine and a weight of 1,650 kg.",
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "The platform lets the wire saw be moved around the quarry and set up for the next cut. Length and height are given with the platform closed (folded) and open (unfolded).",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Engine: 17 kW",
+            "Length: 3,100 - 8,400 mm",
+            "Width: 2,000 mm",
+            "Weight: 1,650 kg"
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Contact us</a> for price, delivery time or help choosing the right model.",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Quarry product catalogue (ENG)",
+          "href": "/assets/docs/marini-stenbrott-produktkatalog.pdf",
+          "gen": true
+        },
+        {
+          "type": "datasheet",
+          "title": "Technical data",
+          "tagline": "Marini Mini Mobil Fil",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Specifications",
+              "rows": [
+                {
+                  "label": "Engine",
+                  "metric": "17 kW"
+                },
+                {
+                  "label": "Length",
+                  "metric": "3,100 mm (closed) - 8,400 mm (open)"
+                },
+                {
+                  "label": "Width",
+                  "metric": "2,000 mm"
+                },
+                {
+                  "label": "Height",
+                  "metric": "3,900 mm (closed) - 1,420 mm (open)"
+                },
+                {
+                  "label": "Weight",
+                  "metric": "1,650 kg"
+                }
+              ]
+            }
+          ],
+          "note": "",
+          "source": "Information taken from Marini's quarry product catalogue and the model brochures.",
+          "gen": true
+        },
+        {
+          "type": "related",
+          "title": "See also",
+          "items": [
+            {
+              "href": "/produkter/marini/vajersågar",
+              "mutual": false
+            },
+            {
+              "href": "/produkter/marini/vajersågar/mobil-fil"
+            }
+          ],
+          "gen": true
+        }
+      ]
+    },
+    "es": {
+      "title": "Mini Mobil Fil",
+      "h1": "Marini Mini Mobil Fil",
+      "description": "Mini Mobil Fil es una plataforma móvil para las sierras de hilo de Marini, con un motor de 17 kW y un peso de 1.650 kg.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Marini logotyp",
+          "href": "/produkter/marini",
+          "width": 637,
+          "height": 86,
+          "src": "/assets/img/logo-marini.webp",
+          "gen": true
+        },
+        {
+          "type": "image",
+          "alt": "Marini Mini Mobil Fil",
+          "file": "/assets/img/marini-saw-mini-mobil-fil.webp",
+          "width": 512,
+          "height": 412,
+          "src": "/assets/img/marini-saw-mini-mobil-fil.webp",
+          "gen": true
+        },
+        {
+          "type": "carousel",
+          "autoplay": false,
+          "interval": 6,
+          "items": [
+            {
+              "src": "/assets/img/marini-quarry-mobile-photo-2.webp",
+              "alt": "Marini Mini Mobil Fil (1/1)",
+              "width": 1284,
+              "height": 647
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "Mini Mobil Fil es una plataforma móvil para las sierras de hilo de Marini, con un motor de 17 kW y un peso de 1.650 kg.",
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "La plataforma permite trasladar la sierra de hilo por la cantera y prepararla para el siguiente corte. La longitud y la altura se indican con la plataforma cerrada (plegada) y abierta (desplegada).",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Motor: 17 kW",
+            "Longitud: 3.100 - 8.400 mm",
+            "Anchura: 2.000 mm",
+            "Peso: 1.650 kg"
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Contáctenos</a> para precio, plazo de entrega o ayuda para elegir el modelo adecuado.",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Catálogo de productos para canteras (ENG)",
+          "href": "/assets/docs/marini-stenbrott-produktkatalog.pdf",
+          "gen": true
+        },
+        {
+          "type": "datasheet",
+          "title": "Datos técnicos",
+          "tagline": "Marini Mini Mobil Fil",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Especificaciones",
+              "rows": [
+                {
+                  "label": "Motor",
+                  "metric": "17 kW"
+                },
+                {
+                  "label": "Longitud",
+                  "metric": "3.100 mm (cerrada) - 8.400 mm (abierta)"
+                },
+                {
+                  "label": "Anchura",
+                  "metric": "2.000 mm"
+                },
+                {
+                  "label": "Altura",
+                  "metric": "3.900 mm (cerrada) - 1.420 mm (abierta)"
+                },
+                {
+                  "label": "Peso",
+                  "metric": "1.650 kg"
+                }
+              ]
+            }
+          ],
+          "note": "",
+          "source": "Información tomada del catálogo de productos para canteras de Marini y de los folletos de los modelos.",
+          "gen": true
+        },
+        {
+          "type": "related",
+          "title": "Véase también",
+          "items": [
+            {
+              "href": "/produkter/marini/vajersågar",
+              "mutual": false
+            },
+            {
+              "href": "/produkter/marini/vajersågar/mobil-fil"
+            }
+          ],
+          "gen": true
+        }
+      ]
+    },
+    "no": {
+      "title": "Mini Mobil Fil",
+      "h1": "Marini Mini Mobil Fil",
+      "description": "Mini Mobil Fil er en mobil plattform for Marinis wiresager, med motor på 17 kW og vekt 1 650 kg.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Marini logotyp",
+          "href": "/produkter/marini",
+          "width": 637,
+          "height": 86,
+          "src": "/assets/img/logo-marini.webp",
+          "gen": true
+        },
+        {
+          "type": "image",
+          "alt": "Marini Mini Mobil Fil",
+          "file": "/assets/img/marini-saw-mini-mobil-fil.webp",
+          "width": 512,
+          "height": 412,
+          "src": "/assets/img/marini-saw-mini-mobil-fil.webp",
+          "gen": true
+        },
+        {
+          "type": "carousel",
+          "autoplay": false,
+          "interval": 6,
+          "items": [
+            {
+              "src": "/assets/img/marini-quarry-mobile-photo-2.webp",
+              "alt": "Marini Mini Mobil Fil (1/1)",
+              "width": 1284,
+              "height": 647
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "Mini Mobil Fil er en mobil plattform for Marinis wiresager, med motor på 17 kW og vekt 1 650 kg.",
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "Plattformen gjør at wiresagen kan flyttes rundt i steinbruddet og settes opp for neste snitt. Lengde og høyde er oppgitt med plattformen lukket (sammenfoldet) og utfoldet (åpen).",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Motor: 17 kW",
+            "Lengde: 3 100 - 8 400 mm",
+            "Bredde: 2 000 mm",
+            "Vekt: 1 650 kg"
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Kontakt oss</a> for pris, leveringstid eller hjelp til å velge riktig modell.",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Produktkatalog steinbrudd (ENG)",
+          "href": "/assets/docs/marini-stenbrott-produktkatalog.pdf",
+          "gen": true
+        },
+        {
+          "type": "datasheet",
+          "title": "Tekniske data",
+          "tagline": "Marini Mini Mobil Fil",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Spesifikasjoner",
+              "rows": [
+                {
+                  "label": "Motor",
+                  "metric": "17 kW"
+                },
+                {
+                  "label": "Lengde",
+                  "metric": "3 100 mm (lukket) - 8 400 mm (utfoldet)"
+                },
+                {
+                  "label": "Bredde",
+                  "metric": "2 000 mm"
+                },
+                {
+                  "label": "Høyde",
+                  "metric": "3 900 mm (lukket) - 1 420 mm (utfoldet)"
+                },
+                {
+                  "label": "Vekt",
+                  "metric": "1 650 kg"
+                }
+              ]
+            }
+          ],
+          "note": "",
+          "source": "Opplysningene er hentet fra Marinis produktkatalog for steinbrudd og brosjyrene for modellene (engelsk).",
+          "gen": true
+        },
+        {
+          "type": "related",
+          "title": "Se også",
+          "items": [
+            {
+              "href": "/produkter/marini/vajersågar",
+              "mutual": false
+            },
+            {
+              "href": "/produkter/marini/vajersågar/mobil-fil"
+            }
+          ],
+          "gen": true
+        }
+      ]
+    }
+  }
+}

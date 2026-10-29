@@ -1,0 +1,852 @@
+{
+  "path": "/produkter/marini/vajersågar/gran-fil-electronic",
+  "updated": "2026-10-29",
+  "template": "product",
+  "order": 2,
+  "published": true,
+  "hero": {
+    "image": "/assets/img/marini-vajersagar-hero.webp"
+  },
+  "i18n": {
+    "sv": {
+      "title": "Gran Fil Electronic",
+      "h1": "Marini Gran Fil Electronic",
+      "description": "Gran Fil Electronic är en vajersåg ur Marinis granitserie med variabel trådhastighet (0 - 40 m/s) som styrs av frekvensomriktare. Huvudmotor 37 / 45 kW, vikt 1 620 / 1 700 kg.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Marini logotyp",
+          "href": "/produkter/marini",
+          "width": 637,
+          "height": 86,
+          "src": "/assets/img/logo-marini.webp",
+          "gen": true
+        },
+        {
+          "type": "image",
+          "alt": "Marini Gran Fil Electronic",
+          "file": "/assets/img/marini-saw-gran-fil-electronic.webp",
+          "width": 1238,
+          "height": 1142,
+          "src": "/assets/img/marini-saw-gran-fil-electronic.webp",
+          "gen": true
+        },
+        {
+          "type": "carousel",
+          "autoplay": false,
+          "interval": 6,
+          "items": [
+            {
+              "src": "/assets/img/marini-quarry-granite-photo.webp",
+              "alt": "Marini Gran Fil Electronic (1/1)",
+              "width": 1800,
+              "height": 1102
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "Gran Fil Electronic är en vajersåg ur Marinis granitserie med variabel trådhastighet (0 - 40 m/s) som styrs av frekvensomriktare. Huvudmotor 37 / 45 kW, vikt 1 620 / 1 700 kg.",
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "Maskinen positioneras snabbt på skenor och håller diamantvajern jämnt och noggrant spänd under sågningen. Svänghjulsgruppen kan vridas 360° och förflyttas med elmotorer (beroende på utförande), så att sågen snabbt riktas in och parallella snitt kan göras utan att skenorna flyttas. Den kan såga på lutande ytor i alla riktningar och i plan med brottbotten. Den lätta manöverpanelen kan placeras på säkert avstånd från sågen.",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Huvudmotor: 37 / 45 kW",
+            "Vikt: 1 620 / 1 700 kg",
+            "Trådhastighet: 0 - 40 m/s"
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Kontakta oss</a> för pris, leveranstid eller hjälp att välja rätt modell.",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Broschyr vajersågar för granit (ENG)",
+          "href": "/assets/docs/marini-vajersagar-granit-broschyr.pdf",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Produktkatalog stenbrott (ENG)",
+          "href": "/assets/docs/marini-stenbrott-produktkatalog.pdf",
+          "gen": true
+        },
+        {
+          "type": "datasheet",
+          "title": "Teknisk data",
+          "tagline": "Marini Gran Fil Electronic",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Specifikationer",
+              "rows": [
+                {
+                  "label": "Huvudmotor (el)",
+                  "metric": "37 / 45 kW"
+                },
+                {
+                  "label": "Längd",
+                  "metric": "2 100 mm"
+                },
+                {
+                  "label": "Bredd",
+                  "metric": "1 350 mm"
+                },
+                {
+                  "label": "Höjd",
+                  "metric": "1 500 mm"
+                },
+                {
+                  "label": "Vikt",
+                  "metric": "1 620 / 1 700 kg"
+                },
+                {
+                  "label": "Trådhastighet",
+                  "metric": "0 - 40 m/s"
+                },
+                {
+                  "label": "Svänghjul",
+                  "metric": "820 mm, två styrhjul 350 mm"
+                },
+                {
+                  "label": "Skenor",
+                  "metric": "2 × 3 m, 55/59 kg per skena"
+                },
+                {
+                  "label": "Rotation av svänghjulsgrupp (360°)",
+                  "metric": "Manuell eller elektrisk"
+                },
+                {
+                  "label": "Förflyttning av svänghjul",
+                  "metric": "Manuell eller elektrisk"
+                },
+                {
+                  "label": "Styrning",
+                  "metric": "Via kabel (fjärrkontroll som tillval)"
+                }
+              ]
+            }
+          ],
+          "note": "Motorer och vikter anges i samma ordning.",
+          "source": "Uppgifterna är hämtade ur Marinis produktkatalog för stenbrott och broschyrer (engelska).",
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Utföranden",
+          "gen": true
+        },
+        {
+          "type": "table",
+          "header": true,
+          "rows": [
+            [
+              "Modell",
+              "Rotation av svänghjulsgrupp (360°)",
+              "Förflyttning av svänghjul"
+            ],
+            [
+              "Gran Fil Electronic",
+              "Manuell",
+              "Manuell"
+            ],
+            [
+              "Gran Fil Electronic R 360°",
+              "Elektrisk",
+              "Manuell"
+            ],
+            [
+              "Gran Fil Electronic Standard",
+              "Elektrisk",
+              "Elektrisk"
+            ]
+          ],
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 1,
+          "narrow": true,
+          "zoom": true,
+          "more": false,
+          "items": [
+            {
+              "title": "Sidovy",
+              "image": "/assets/img/marini-saw-gran-fil-electronic-side.webp",
+              "alt": "Sidovy Gran Fil Electronic",
+              "text": "Håll muspekaren över ritningen (eller tryck och dra) för 2× förstoring.",
+              "width": 429,
+              "height": 286
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "related",
+          "title": "Se även",
+          "items": [
+            {
+              "href": "/produkter/marini/vajersågar",
+              "mutual": false
+            },
+            {
+              "href": "/produkter/marini/vajersågar/mini-fil-electronic"
+            },
+            {
+              "href": "/produkter/marini/vajersågar/mini-fil-super-electronic"
+            },
+            {
+              "href": "/produkter/marini/vajersågar/gran-fil-super-electronic"
+            }
+          ],
+          "gen": true
+        }
+      ]
+    },
+    "en": {
+      "title": "Gran Fil Electronic",
+      "h1": "Marini Gran Fil Electronic",
+      "description": "Gran Fil Electronic is a diamond wire saw from Marini's granite line with variable wire speed (0 - 40 m/s) controlled by an inverter. Main motor 37 / 45 kW, weight 1,620 / 1,700 kg.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Marini logotyp",
+          "href": "/produkter/marini",
+          "width": 637,
+          "height": 86,
+          "src": "/assets/img/logo-marini.webp",
+          "gen": true
+        },
+        {
+          "type": "image",
+          "alt": "Marini Gran Fil Electronic",
+          "file": "/assets/img/marini-saw-gran-fil-electronic.webp",
+          "width": 1238,
+          "height": 1142,
+          "src": "/assets/img/marini-saw-gran-fil-electronic.webp",
+          "gen": true
+        },
+        {
+          "type": "carousel",
+          "autoplay": false,
+          "interval": 6,
+          "items": [
+            {
+              "src": "/assets/img/marini-quarry-granite-photo.webp",
+              "alt": "Marini Gran Fil Electronic (1/1)",
+              "width": 1800,
+              "height": 1102
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "Gran Fil Electronic is a diamond wire saw from Marini's granite line with variable wire speed (0 - 40 m/s) controlled by an inverter. Main motor 37 / 45 kW, weight 1,620 / 1,700 kg.",
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "The machine positions quickly on its rails and keeps the diamond wire evenly and accurately tensioned during the cut. The flywheel group can rotate 360° and move on electric motors (depending on version), so the saw is aligned quickly and parallel cuts can be made without moving the rails. It can cut on inclined surfaces in any direction and flush with the quarry floor. The light control panel can be placed at a safe distance from the saw.",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Main motor: 37 / 45 kW",
+            "Weight: 1,620 / 1,700 kg",
+            "Wire speed: 0 - 40 m/s"
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Contact us</a> for price, delivery time or help choosing the right model.",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Granite wire saws brochure (ENG)",
+          "href": "/assets/docs/marini-vajersagar-granit-broschyr.pdf",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Quarry product catalogue (ENG)",
+          "href": "/assets/docs/marini-stenbrott-produktkatalog.pdf",
+          "gen": true
+        },
+        {
+          "type": "datasheet",
+          "title": "Technical data",
+          "tagline": "Marini Gran Fil Electronic",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Specifications",
+              "rows": [
+                {
+                  "label": "Main motor (electric)",
+                  "metric": "37 / 45 kW"
+                },
+                {
+                  "label": "Length",
+                  "metric": "2,100 mm"
+                },
+                {
+                  "label": "Width",
+                  "metric": "1,350 mm"
+                },
+                {
+                  "label": "Height",
+                  "metric": "1,500 mm"
+                },
+                {
+                  "label": "Weight",
+                  "metric": "1,620 / 1,700 kg"
+                },
+                {
+                  "label": "Wire speed",
+                  "metric": "0 - 40 m/s"
+                },
+                {
+                  "label": "Flywheel",
+                  "metric": "820 mm, two guide wheels 350 mm"
+                },
+                {
+                  "label": "Rails",
+                  "metric": "2 × 3 m, 55/59 kg each"
+                },
+                {
+                  "label": "Flywheel group rotation (360°)",
+                  "metric": "Manual or electric"
+                },
+                {
+                  "label": "Flywheel translation",
+                  "metric": "Manual or electric"
+                },
+                {
+                  "label": "Control",
+                  "metric": "Wired (remote control optional)"
+                }
+              ]
+            }
+          ],
+          "note": "Motors and weights are listed in the same order.",
+          "source": "Information taken from Marini's quarry product catalogue and the model brochures.",
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Versions",
+          "gen": true
+        },
+        {
+          "type": "table",
+          "header": true,
+          "rows": [
+            [
+              "Model",
+              "Flywheel group rotation (360°)",
+              "Flywheel translation"
+            ],
+            [
+              "Gran Fil Electronic",
+              "Manual",
+              "Manual"
+            ],
+            [
+              "Gran Fil Electronic R 360°",
+              "Electric",
+              "Manual"
+            ],
+            [
+              "Gran Fil Electronic Standard",
+              "Electric",
+              "Electric"
+            ]
+          ],
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 1,
+          "narrow": true,
+          "zoom": true,
+          "more": false,
+          "items": [
+            {
+              "title": "Side view",
+              "image": "/assets/img/marini-saw-gran-fil-electronic-side.webp",
+              "alt": "Side view Gran Fil Electronic",
+              "text": "Hover over the drawing (or touch and drag) for a 2× magnifier.",
+              "width": 429,
+              "height": 286
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "related",
+          "title": "See also",
+          "items": [
+            {
+              "href": "/produkter/marini/vajersågar",
+              "mutual": false
+            },
+            {
+              "href": "/produkter/marini/vajersågar/mini-fil-electronic"
+            },
+            {
+              "href": "/produkter/marini/vajersågar/mini-fil-super-electronic"
+            },
+            {
+              "href": "/produkter/marini/vajersågar/gran-fil-super-electronic"
+            }
+          ],
+          "gen": true
+        }
+      ]
+    },
+    "es": {
+      "title": "Gran Fil Electronic",
+      "h1": "Marini Gran Fil Electronic",
+      "description": "Gran Fil Electronic es una sierra de hilo diamantado de la línea de granito de Marini, con velocidad de hilo variable (0 - 40 m/s) controlada por inversor. Motor principal de 37 / 45 kW y un peso de 1",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Marini logotyp",
+          "href": "/produkter/marini",
+          "width": 637,
+          "height": 86,
+          "src": "/assets/img/logo-marini.webp",
+          "gen": true
+        },
+        {
+          "type": "image",
+          "alt": "Marini Gran Fil Electronic",
+          "file": "/assets/img/marini-saw-gran-fil-electronic.webp",
+          "width": 1238,
+          "height": 1142,
+          "src": "/assets/img/marini-saw-gran-fil-electronic.webp",
+          "gen": true
+        },
+        {
+          "type": "carousel",
+          "autoplay": false,
+          "interval": 6,
+          "items": [
+            {
+              "src": "/assets/img/marini-quarry-granite-photo.webp",
+              "alt": "Marini Gran Fil Electronic (1/1)",
+              "width": 1800,
+              "height": 1102
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "Gran Fil Electronic es una sierra de hilo diamantado de la línea de granito de Marini, con velocidad de hilo variable (0 - 40 m/s) controlada por inversor. Motor principal de 37 / 45 kW y un peso de 1.620 / 1.700 kg.",
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "La máquina se posiciona con rapidez sobre los carriles y mantiene el hilo diamantado tensado de forma uniforme y precisa durante el corte. El grupo del volante puede girar 360° y desplazarse con motores eléctricos (según la versión), de modo que la sierra se alinea con rapidez y se pueden hacer cortes paralelos sin mover los carriles. Puede cortar sobre superficies inclinadas en cualquier dirección y a ras del suelo de la cantera. El panel de mando, ligero, puede colocarse a una distancia segura de la sierra.",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Motor principal: 37 / 45 kW",
+            "Peso: 1.620 / 1.700 kg",
+            "Velocidad del hilo: 0 - 40 m/s"
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Contáctenos</a> para precio, plazo de entrega o ayuda para elegir el modelo adecuado.",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Folleto sierras de hilo para granito (ENG)",
+          "href": "/assets/docs/marini-vajersagar-granit-broschyr.pdf",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Catálogo de productos para canteras (ENG)",
+          "href": "/assets/docs/marini-stenbrott-produktkatalog.pdf",
+          "gen": true
+        },
+        {
+          "type": "datasheet",
+          "title": "Datos técnicos",
+          "tagline": "Marini Gran Fil Electronic",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Especificaciones",
+              "rows": [
+                {
+                  "label": "Motor principal (eléctrico)",
+                  "metric": "37 / 45 kW"
+                },
+                {
+                  "label": "Longitud",
+                  "metric": "2.100 mm"
+                },
+                {
+                  "label": "Anchura",
+                  "metric": "1.350 mm"
+                },
+                {
+                  "label": "Altura",
+                  "metric": "1.500 mm"
+                },
+                {
+                  "label": "Peso",
+                  "metric": "1.620 / 1.700 kg"
+                },
+                {
+                  "label": "Velocidad del hilo",
+                  "metric": "0 - 40 m/s"
+                },
+                {
+                  "label": "Volante",
+                  "metric": "820 mm, dos poleas guía de 350 mm"
+                },
+                {
+                  "label": "Carriles",
+                  "metric": "2 × 3 m, 55/59 kg cada uno"
+                },
+                {
+                  "label": "Rotación del grupo del volante (360°)",
+                  "metric": "Manual o eléctrica"
+                },
+                {
+                  "label": "Traslación del volante",
+                  "metric": "Manual o eléctrica"
+                },
+                {
+                  "label": "Mando",
+                  "metric": "Con cable (radiomando opcional)"
+                }
+              ]
+            }
+          ],
+          "note": "Los motores y los pesos se indican en el mismo orden.",
+          "source": "Información tomada del catálogo de productos para canteras de Marini y de los folletos de los modelos.",
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Versiones",
+          "gen": true
+        },
+        {
+          "type": "table",
+          "header": true,
+          "rows": [
+            [
+              "Modelo",
+              "Rotación del grupo del volante (360°)",
+              "Traslación del volante"
+            ],
+            [
+              "Gran Fil Electronic",
+              "Manual",
+              "Manual"
+            ],
+            [
+              "Gran Fil Electronic R 360°",
+              "Eléctrica",
+              "Manual"
+            ],
+            [
+              "Gran Fil Electronic Standard",
+              "Eléctrica",
+              "Eléctrica"
+            ]
+          ],
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 1,
+          "narrow": true,
+          "zoom": true,
+          "more": false,
+          "items": [
+            {
+              "title": "Vista lateral",
+              "image": "/assets/img/marini-saw-gran-fil-electronic-side.webp",
+              "alt": "Vista lateral Gran Fil Electronic",
+              "text": "Pase el cursor sobre el plano (o toque y arrastre) para una lupa 2×.",
+              "width": 429,
+              "height": 286
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "related",
+          "title": "Véase también",
+          "items": [
+            {
+              "href": "/produkter/marini/vajersågar",
+              "mutual": false
+            },
+            {
+              "href": "/produkter/marini/vajersågar/mini-fil-electronic"
+            },
+            {
+              "href": "/produkter/marini/vajersågar/mini-fil-super-electronic"
+            },
+            {
+              "href": "/produkter/marini/vajersågar/gran-fil-super-electronic"
+            }
+          ],
+          "gen": true
+        }
+      ]
+    },
+    "no": {
+      "title": "Gran Fil Electronic",
+      "h1": "Marini Gran Fil Electronic",
+      "description": "Gran Fil Electronic er en diamantwiresag fra Marinis granittserie med variabel wirehastighet (0 - 40 m/s) styrt av frekvensomformer. Hovedmotor 37 / 45 kW, vekt 1 620 / 1 700 kg.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Marini logotyp",
+          "href": "/produkter/marini",
+          "width": 637,
+          "height": 86,
+          "src": "/assets/img/logo-marini.webp",
+          "gen": true
+        },
+        {
+          "type": "image",
+          "alt": "Marini Gran Fil Electronic",
+          "file": "/assets/img/marini-saw-gran-fil-electronic.webp",
+          "width": 1238,
+          "height": 1142,
+          "src": "/assets/img/marini-saw-gran-fil-electronic.webp",
+          "gen": true
+        },
+        {
+          "type": "carousel",
+          "autoplay": false,
+          "interval": 6,
+          "items": [
+            {
+              "src": "/assets/img/marini-quarry-granite-photo.webp",
+              "alt": "Marini Gran Fil Electronic (1/1)",
+              "width": 1800,
+              "height": 1102
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "Gran Fil Electronic er en diamantwiresag fra Marinis granittserie med variabel wirehastighet (0 - 40 m/s) styrt av frekvensomformer. Hovedmotor 37 / 45 kW, vekt 1 620 / 1 700 kg.",
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "Maskinen posisjoneres raskt på skinnene og holder diamantwiren jevnt og nøyaktig stram under kappingen. Svinghjulsgruppen kan dreies 360° og forflyttes med elektriske motorer (avhengig av utførelse), slik at sagen raskt rettes inn og parallelle snitt kan tas uten å flytte skinnene. Den kan sage på skrå flater i alle retninger og i plan med bruddbunnen. Det lette betjeningspanelet kan plasseres i trygg avstand fra sagen.",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Hovedmotor: 37 / 45 kW",
+            "Vekt: 1 620 / 1 700 kg",
+            "Wirehastighet: 0 - 40 m/s"
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Kontakt oss</a> for pris, leveringstid eller hjelp til å velge riktig modell.",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Brosjyre wiresager for granitt (ENG)",
+          "href": "/assets/docs/marini-vajersagar-granit-broschyr.pdf",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Produktkatalog steinbrudd (ENG)",
+          "href": "/assets/docs/marini-stenbrott-produktkatalog.pdf",
+          "gen": true
+        },
+        {
+          "type": "datasheet",
+          "title": "Tekniske data",
+          "tagline": "Marini Gran Fil Electronic",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Spesifikasjoner",
+              "rows": [
+                {
+                  "label": "Hovedmotor (el)",
+                  "metric": "37 / 45 kW"
+                },
+                {
+                  "label": "Lengde",
+                  "metric": "2 100 mm"
+                },
+                {
+                  "label": "Bredde",
+                  "metric": "1 350 mm"
+                },
+                {
+                  "label": "Høyde",
+                  "metric": "1 500 mm"
+                },
+                {
+                  "label": "Vekt",
+                  "metric": "1 620 / 1 700 kg"
+                },
+                {
+                  "label": "Wirehastighet",
+                  "metric": "0 - 40 m/s"
+                },
+                {
+                  "label": "Svinghjul",
+                  "metric": "820 mm, to styrehjul 350 mm"
+                },
+                {
+                  "label": "Skinner",
+                  "metric": "2 × 3 m, 55/59 kg per skinne"
+                },
+                {
+                  "label": "Rotasjon av svinghjulsgruppe (360°)",
+                  "metric": "Manuell eller elektrisk"
+                },
+                {
+                  "label": "Forflytting av svinghjul",
+                  "metric": "Manuell eller elektrisk"
+                },
+                {
+                  "label": "Styring",
+                  "metric": "Med kabel (fjernkontroll som tilvalg)"
+                }
+              ]
+            }
+          ],
+          "note": "Motorer og vekter er oppgitt i samme rekkefølge.",
+          "source": "Opplysningene er hentet fra Marinis produktkatalog for steinbrudd og brosjyrene for modellene (engelsk).",
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Utførelser",
+          "gen": true
+        },
+        {
+          "type": "table",
+          "header": true,
+          "rows": [
+            [
+              "Modell",
+              "Rotasjon av svinghjulsgruppe (360°)",
+              "Forflytting av svinghjul"
+            ],
+            [
+              "Gran Fil Electronic",
+              "Manuell",
+              "Manuell"
+            ],
+            [
+              "Gran Fil Electronic R 360°",
+              "Elektrisk",
+              "Manuell"
+            ],
+            [
+              "Gran Fil Electronic Standard",
+              "Elektrisk",
+              "Elektrisk"
+            ]
+          ],
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 1,
+          "narrow": true,
+          "zoom": true,
+          "more": false,
+          "items": [
+            {
+              "title": "Sideriss",
+              "image": "/assets/img/marini-saw-gran-fil-electronic-side.webp",
+              "alt": "Sideriss Gran Fil Electronic",
+              "text": "Hold musepekeren over tegningen (eller trykk og dra) for 2× forstørrelse.",
+              "width": 429,
+              "height": 286
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "related",
+          "title": "Se også",
+          "items": [
+            {
+              "href": "/produkter/marini/vajersågar",
+              "mutual": false
+            },
+            {
+              "href": "/produkter/marini/vajersågar/mini-fil-electronic"
+            },
+            {
+              "href": "/produkter/marini/vajersågar/mini-fil-super-electronic"
+            },
+            {
+              "href": "/produkter/marini/vajersågar/gran-fil-super-electronic"
+            }
+          ],
+          "gen": true
+        }
+      ]
+    }
+  }
+}

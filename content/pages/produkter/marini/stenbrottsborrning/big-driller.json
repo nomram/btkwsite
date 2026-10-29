@@ -1,0 +1,780 @@
+{
+  "path": "/produkter/marini/stenbrottsborrning/big-driller",
+  "updated": "2026-10-29",
+  "template": "product",
+  "order": 1,
+  "published": true,
+  "hero": {
+    "image": "/assets/img/marini-rustica-hero.webp"
+  },
+  "i18n": {
+    "sv": {
+      "title": "Big Driller",
+      "h1": "Marini Big Driller",
+      "description": "Big Driller är en oljepneumatisk borrenhet för hål med stor diameter (255 mm) till så kallade blinda snitt. Den har hydrauliskt rotationshuvud och drivs av ett hydraulaggregat med diesel- eller bensin",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Marini logotyp",
+          "href": "/produkter/marini",
+          "width": 637,
+          "height": 86,
+          "src": "/assets/img/logo-marini.webp",
+          "gen": true
+        },
+        {
+          "type": "image",
+          "alt": "Marini Big Driller",
+          "file": "/assets/img/marini-drill-big-driller.webp",
+          "width": 1276,
+          "height": 1348,
+          "src": "/assets/img/marini-drill-big-driller.webp",
+          "gen": true
+        },
+        {
+          "type": "carousel",
+          "autoplay": true,
+          "interval": 6,
+          "items": [
+            {
+              "src": "/assets/img/marini-drill-big-driller-p1.webp",
+              "alt": "Marini Big Driller (1/2)",
+              "width": 1800,
+              "height": 1267
+            },
+            {
+              "src": "/assets/img/marini-drill-big-driller-p2.webp",
+              "alt": "Marini Big Driller (2/2)",
+              "width": 1266,
+              "height": 1800
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "Big Driller är en oljepneumatisk borrenhet för hål med stor diameter (255 mm) till så kallade blinda snitt. Den har hydrauliskt rotationshuvud och drivs av ett hydraulaggregat med diesel- eller bensinmotor på 17 kW eller elmotor på 15 kW.",
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "Robust konstruktion för att borra i olika riktningar. Borrsläden CID 120 tar förlängningsstänger på 1 200 mm och bär rotationshuvudet ID 300. Hålen borras med en 6-tums sänkhammare (DTH) med knappkrona på 255 mm. Ett stöd förankrar enheten i marken, och ett hydrauliskt manöverorgan styr matning och rotation medan hammaren styrs pneumatiskt.",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Slaglängd: 1 260 mm",
+            "Vridmoment: 3 000 Nm",
+            "Håldiameter: 255 mm",
+            "Motor: 17 kW / 15 kW"
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Kontakta oss</a> för pris, leveranstid eller hjälp att välja rätt modell.",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Broschyr Big Driller (ENG)",
+          "href": "/assets/docs/marini-big-driller-broschyr.pdf",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Produktkatalog stenbrott (ENG)",
+          "href": "/assets/docs/marini-stenbrott-produktkatalog.pdf",
+          "gen": true
+        },
+        {
+          "type": "datasheet",
+          "title": "Teknisk data",
+          "tagline": "Marini Big Driller",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Borrenhet",
+              "rows": [
+                {
+                  "label": "Borrsläde",
+                  "metric": "CID 120"
+                },
+                {
+                  "label": "Slaglängd",
+                  "metric": "1 260 mm"
+                },
+                {
+                  "label": "Total längd",
+                  "metric": "3 000 mm (med stänger på 1 270 mm)"
+                },
+                {
+                  "label": "Rotationshuvud",
+                  "metric": "ID 300"
+                },
+                {
+                  "label": "Max vridmoment",
+                  "metric": "3 000 Nm"
+                },
+                {
+                  "label": "Varvtal",
+                  "metric": "20 - 40 rpm"
+                },
+                {
+                  "label": "Sänkhammare (DTH)",
+                  "metric": "6 tum, krona 255 mm"
+                },
+                {
+                  "label": "Luftförbrukning",
+                  "metric": "10 000 l/min vid 7 bar"
+                }
+              ]
+            },
+            {
+              "title": "Vikter",
+              "rows": [
+                {
+                  "label": "Borrsläde med rotationshuvud",
+                  "metric": "550 kg"
+                },
+                {
+                  "label": "Hydraulaggregat (diesel / bensin / el)",
+                  "metric": "280 / 150 / 260 kg"
+                },
+                {
+                  "label": "Sänkhammare med krona",
+                  "metric": "150 kg"
+                },
+                {
+                  "label": "Borrstång",
+                  "metric": "40 kg per stång (Ø 127 mm, längd 1 200 mm)"
+                }
+              ]
+            }
+          ],
+          "note": "",
+          "source": "Uppgifterna är hämtade ur Marinis produktkatalog för stenbrott och broschyrer (engelska).",
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 1,
+          "narrow": true,
+          "zoom": true,
+          "more": false,
+          "items": [
+            {
+              "title": "Hål för blinda snitt (principbild)",
+              "image": "/assets/img/marini-drill-big-driller-blind-cut.webp",
+              "alt": "Big Driller: Hål för blinda snitt (principbild)",
+              "width": 1307,
+              "height": 798
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "related",
+          "title": "Se även",
+          "items": [
+            {
+              "href": "/produkter/marini/stenbrottsborrning",
+              "mutual": false
+            },
+            {
+              "href": "/produkter/marini/stenbrottsborrning/voyager"
+            },
+            {
+              "href": "/produkter/marini/stenbrottsborrning/driller-id"
+            },
+            {
+              "href": "/produkter/marini/stenbrottsborrning/hor-drill-id"
+            }
+          ],
+          "gen": true
+        }
+      ]
+    },
+    "en": {
+      "title": "Big Driller",
+      "h1": "Marini Big Driller",
+      "description": "Big Driller is an oleopneumatic drilling unit for large-diameter holes (255 mm) used for so-called blind cuts. It has a hydraulic rotary head and is powered by a hydraulic power pack with a 17 kW dies",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Marini logotyp",
+          "href": "/produkter/marini",
+          "width": 637,
+          "height": 86,
+          "src": "/assets/img/logo-marini.webp",
+          "gen": true
+        },
+        {
+          "type": "image",
+          "alt": "Marini Big Driller",
+          "file": "/assets/img/marini-drill-big-driller.webp",
+          "width": 1276,
+          "height": 1348,
+          "src": "/assets/img/marini-drill-big-driller.webp",
+          "gen": true
+        },
+        {
+          "type": "carousel",
+          "autoplay": true,
+          "interval": 6,
+          "items": [
+            {
+              "src": "/assets/img/marini-drill-big-driller-p1.webp",
+              "alt": "Marini Big Driller (1/2)",
+              "width": 1800,
+              "height": 1267
+            },
+            {
+              "src": "/assets/img/marini-drill-big-driller-p2.webp",
+              "alt": "Marini Big Driller (2/2)",
+              "width": 1266,
+              "height": 1800
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "Big Driller is an oleopneumatic drilling unit for large-diameter holes (255 mm) used for so-called blind cuts. It has a hydraulic rotary head and is powered by a hydraulic power pack with a 17 kW diesel or petrol engine or a 15 kW electric motor.",
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "Sturdy structure for drilling in various directions. The CID 120 drilling slide takes extension rods of 1,200 mm and carries the ID 300 rotary head. Holes are drilled with a 6-inch down-the-hole (DTH) hammer with a 255 mm button bit. A base frame anchors the unit to the ground, and a hydraulic control panel runs feed and rotation while the hammer is controlled pneumatically.",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Feed stroke: 1,260 mm",
+            "Rotary torque: 3,000 Nm",
+            "Hole diameter: 255 mm",
+            "Engine: 17 kW / 15 kW"
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Contact us</a> for price, delivery time or help choosing the right model.",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Big Driller brochure (ENG)",
+          "href": "/assets/docs/marini-big-driller-broschyr.pdf",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Quarry product catalogue (ENG)",
+          "href": "/assets/docs/marini-stenbrott-produktkatalog.pdf",
+          "gen": true
+        },
+        {
+          "type": "datasheet",
+          "title": "Technical data",
+          "tagline": "Marini Big Driller",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Drilling unit",
+              "rows": [
+                {
+                  "label": "Drilling slide",
+                  "metric": "CID 120"
+                },
+                {
+                  "label": "Feed stroke",
+                  "metric": "1,260 mm"
+                },
+                {
+                  "label": "Total length",
+                  "metric": "3,000 mm (with 1,270 mm rods)"
+                },
+                {
+                  "label": "Rotary head",
+                  "metric": "ID 300"
+                },
+                {
+                  "label": "Max. torque",
+                  "metric": "3,000 Nm"
+                },
+                {
+                  "label": "Rotary speed",
+                  "metric": "20 - 40 rpm"
+                },
+                {
+                  "label": "DTH hammer",
+                  "metric": "6 inch, 255 mm bit"
+                },
+                {
+                  "label": "Air consumption",
+                  "metric": "10,000 l/min vid 7 bar"
+                }
+              ]
+            },
+            {
+              "title": "Weights",
+              "rows": [
+                {
+                  "label": "Drilling slide with rotary head",
+                  "metric": "550 kg"
+                },
+                {
+                  "label": "Power pack (diesel / petrol / electric)",
+                  "metric": "280 / 150 / 260 kg"
+                },
+                {
+                  "label": "DTH hammer with bit",
+                  "metric": "150 kg"
+                },
+                {
+                  "label": "Drill rod",
+                  "metric": "40 kg each (Ø 127 mm, length 1,200 mm)"
+                }
+              ]
+            }
+          ],
+          "note": "",
+          "source": "Information taken from Marini's quarry product catalogue and the model brochures.",
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 1,
+          "narrow": true,
+          "zoom": true,
+          "more": false,
+          "items": [
+            {
+              "title": "Holes for blind cuts (principle)",
+              "image": "/assets/img/marini-drill-big-driller-blind-cut.webp",
+              "alt": "Big Driller: Holes for blind cuts (principle)",
+              "width": 1307,
+              "height": 798
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "related",
+          "title": "See also",
+          "items": [
+            {
+              "href": "/produkter/marini/stenbrottsborrning",
+              "mutual": false
+            },
+            {
+              "href": "/produkter/marini/stenbrottsborrning/voyager"
+            },
+            {
+              "href": "/produkter/marini/stenbrottsborrning/driller-id"
+            },
+            {
+              "href": "/produkter/marini/stenbrottsborrning/hor-drill-id"
+            }
+          ],
+          "gen": true
+        }
+      ]
+    },
+    "es": {
+      "title": "Big Driller",
+      "h1": "Marini Big Driller",
+      "description": "Big Driller es una unidad de perforación oleoneumática para barrenos de gran diámetro (255 mm) destinados a los llamados cortes ciegos. Lleva un cabezal de rotación hidráulico y la acciona un grupo hi",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Marini logotyp",
+          "href": "/produkter/marini",
+          "width": 637,
+          "height": 86,
+          "src": "/assets/img/logo-marini.webp",
+          "gen": true
+        },
+        {
+          "type": "image",
+          "alt": "Marini Big Driller",
+          "file": "/assets/img/marini-drill-big-driller.webp",
+          "width": 1276,
+          "height": 1348,
+          "src": "/assets/img/marini-drill-big-driller.webp",
+          "gen": true
+        },
+        {
+          "type": "carousel",
+          "autoplay": true,
+          "interval": 6,
+          "items": [
+            {
+              "src": "/assets/img/marini-drill-big-driller-p1.webp",
+              "alt": "Marini Big Driller (1/2)",
+              "width": 1800,
+              "height": 1267
+            },
+            {
+              "src": "/assets/img/marini-drill-big-driller-p2.webp",
+              "alt": "Marini Big Driller (2/2)",
+              "width": 1266,
+              "height": 1800
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "Big Driller es una unidad de perforación oleoneumática para barrenos de gran diámetro (255 mm) destinados a los llamados cortes ciegos. Lleva un cabezal de rotación hidráulico y la acciona un grupo hidráulico con motor diésel o de gasolina de 17 kW o con motor eléctrico de 15 kW.",
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "Estructura robusta para perforar en distintas direcciones. La corredera CID 120 admite varillas de prolongación de 1.200 mm y lleva el cabezal de rotación ID 300. Los barrenos se perforan con un martillo de fondo (DTH) de 6 pulgadas con broca de botones de 255 mm. Un bastidor ancla la unidad al suelo y un panel de mando hidráulico controla el avance y la rotación, mientras que el martillo se controla de forma neumática.",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Carrera: 1.260 mm",
+            "Par de rotación: 3.000 Nm",
+            "Diámetro del barreno: 255 mm",
+            "Motor: 17 kW / 15 kW"
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Contáctenos</a> para precio, plazo de entrega o ayuda para elegir el modelo adecuado.",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Folleto Big Driller (ENG)",
+          "href": "/assets/docs/marini-big-driller-broschyr.pdf",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Catálogo de productos para canteras (ENG)",
+          "href": "/assets/docs/marini-stenbrott-produktkatalog.pdf",
+          "gen": true
+        },
+        {
+          "type": "datasheet",
+          "title": "Datos técnicos",
+          "tagline": "Marini Big Driller",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Unidad de perforación",
+              "rows": [
+                {
+                  "label": "Corredera de perforación",
+                  "metric": "CID 120"
+                },
+                {
+                  "label": "Carrera",
+                  "metric": "1.260 mm"
+                },
+                {
+                  "label": "Longitud total",
+                  "metric": "3.000 mm (con varillas de 1.270 mm)"
+                },
+                {
+                  "label": "Cabezal de rotación",
+                  "metric": "ID 300"
+                },
+                {
+                  "label": "Par máximo",
+                  "metric": "3.000 Nm"
+                },
+                {
+                  "label": "Velocidad de rotación",
+                  "metric": "20 - 40 rpm"
+                },
+                {
+                  "label": "Martillo de fondo (DTH)",
+                  "metric": "6 pulgadas, broca de 255 mm"
+                },
+                {
+                  "label": "Consumo de aire",
+                  "metric": "10.000 l/min vid 7 bar"
+                }
+              ]
+            },
+            {
+              "title": "Pesos",
+              "rows": [
+                {
+                  "label": "Corredera con cabezal de rotación",
+                  "metric": "550 kg"
+                },
+                {
+                  "label": "Grupo hidráulico (diésel / gasolina / eléctrico)",
+                  "metric": "280 / 150 / 260 kg"
+                },
+                {
+                  "label": "Martillo de fondo con broca",
+                  "metric": "150 kg"
+                },
+                {
+                  "label": "Varilla de perforación",
+                  "metric": "40 kg cada una (Ø 127 mm, longitud 1.200 mm)"
+                }
+              ]
+            }
+          ],
+          "note": "",
+          "source": "Información tomada del catálogo de productos para canteras de Marini y de los folletos de los modelos.",
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 1,
+          "narrow": true,
+          "zoom": true,
+          "more": false,
+          "items": [
+            {
+              "title": "Barrenos para cortes ciegos (esquema)",
+              "image": "/assets/img/marini-drill-big-driller-blind-cut.webp",
+              "alt": "Big Driller: Barrenos para cortes ciegos (esquema)",
+              "width": 1307,
+              "height": 798
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "related",
+          "title": "Véase también",
+          "items": [
+            {
+              "href": "/produkter/marini/stenbrottsborrning",
+              "mutual": false
+            },
+            {
+              "href": "/produkter/marini/stenbrottsborrning/voyager"
+            },
+            {
+              "href": "/produkter/marini/stenbrottsborrning/driller-id"
+            },
+            {
+              "href": "/produkter/marini/stenbrottsborrning/hor-drill-id"
+            }
+          ],
+          "gen": true
+        }
+      ]
+    },
+    "no": {
+      "title": "Big Driller",
+      "h1": "Marini Big Driller",
+      "description": "Big Driller er en oljepneumatisk borenhet for hull med stor diameter (255 mm) til såkalte blinde snitt. Den har hydraulisk rotasjonshode og drives av et hydraulikkaggregat med diesel- eller bensinmoto",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Marini logotyp",
+          "href": "/produkter/marini",
+          "width": 637,
+          "height": 86,
+          "src": "/assets/img/logo-marini.webp",
+          "gen": true
+        },
+        {
+          "type": "image",
+          "alt": "Marini Big Driller",
+          "file": "/assets/img/marini-drill-big-driller.webp",
+          "width": 1276,
+          "height": 1348,
+          "src": "/assets/img/marini-drill-big-driller.webp",
+          "gen": true
+        },
+        {
+          "type": "carousel",
+          "autoplay": true,
+          "interval": 6,
+          "items": [
+            {
+              "src": "/assets/img/marini-drill-big-driller-p1.webp",
+              "alt": "Marini Big Driller (1/2)",
+              "width": 1800,
+              "height": 1267
+            },
+            {
+              "src": "/assets/img/marini-drill-big-driller-p2.webp",
+              "alt": "Marini Big Driller (2/2)",
+              "width": 1266,
+              "height": 1800
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "Big Driller er en oljepneumatisk borenhet for hull med stor diameter (255 mm) til såkalte blinde snitt. Den har hydraulisk rotasjonshode og drives av et hydraulikkaggregat med diesel- eller bensinmotor på 17 kW eller elmotor på 15 kW.",
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "Robust konstruksjon for boring i ulike retninger. Borslæden CID 120 tar skjøtestenger på 1 200 mm og bærer rotasjonshodet ID 300. Hullene bores med en 6-tommers senkhammer (DTH) med knappekrone på 255 mm. Et fundament forankrer enheten i bakken, og et hydraulisk betjeningspanel styrer mating og rotasjon, mens hammeren styres pneumatisk.",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Slaglengde: 1 260 mm",
+            "Dreiemoment: 3 000 Nm",
+            "Hulldiameter: 255 mm",
+            "Motor: 17 kW / 15 kW"
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Kontakt oss</a> for pris, leveringstid eller hjelp til å velge riktig modell.",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Brosjyre Big Driller (ENG)",
+          "href": "/assets/docs/marini-big-driller-broschyr.pdf",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Produktkatalog steinbrudd (ENG)",
+          "href": "/assets/docs/marini-stenbrott-produktkatalog.pdf",
+          "gen": true
+        },
+        {
+          "type": "datasheet",
+          "title": "Tekniske data",
+          "tagline": "Marini Big Driller",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Borenhet",
+              "rows": [
+                {
+                  "label": "Borslede",
+                  "metric": "CID 120"
+                },
+                {
+                  "label": "Slaglengde",
+                  "metric": "1 260 mm"
+                },
+                {
+                  "label": "Total lengde",
+                  "metric": "3 000 mm (med stenger på 1 270 mm)"
+                },
+                {
+                  "label": "Rotasjonshode",
+                  "metric": "ID 300"
+                },
+                {
+                  "label": "Maks. dreiemoment",
+                  "metric": "3 000 Nm"
+                },
+                {
+                  "label": "Turtall",
+                  "metric": "20 - 40 rpm"
+                },
+                {
+                  "label": "Senkhammer (DTH)",
+                  "metric": "6 tommer, krone 255 mm"
+                },
+                {
+                  "label": "Luftforbruk",
+                  "metric": "10 000 l/min vid 7 bar"
+                }
+              ]
+            },
+            {
+              "title": "Vekter",
+              "rows": [
+                {
+                  "label": "Borslede med rotasjonshode",
+                  "metric": "550 kg"
+                },
+                {
+                  "label": "Hydraulikkaggregat (diesel / bensin / el)",
+                  "metric": "280 / 150 / 260 kg"
+                },
+                {
+                  "label": "Senkhammer med krone",
+                  "metric": "150 kg"
+                },
+                {
+                  "label": "Borstang",
+                  "metric": "40 kg per stang (Ø 127 mm, lengde 1 200 mm)"
+                }
+              ]
+            }
+          ],
+          "note": "",
+          "source": "Opplysningene er hentet fra Marinis produktkatalog for steinbrudd og brosjyrene for modellene (engelsk).",
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 1,
+          "narrow": true,
+          "zoom": true,
+          "more": false,
+          "items": [
+            {
+              "title": "Hull for blinde snitt (prinsippskisse)",
+              "image": "/assets/img/marini-drill-big-driller-blind-cut.webp",
+              "alt": "Big Driller: Hull for blinde snitt (prinsippskisse)",
+              "width": 1307,
+              "height": 798
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "related",
+          "title": "Se også",
+          "items": [
+            {
+              "href": "/produkter/marini/stenbrottsborrning",
+              "mutual": false
+            },
+            {
+              "href": "/produkter/marini/stenbrottsborrning/voyager"
+            },
+            {
+              "href": "/produkter/marini/stenbrottsborrning/driller-id"
+            },
+            {
+              "href": "/produkter/marini/stenbrottsborrning/hor-drill-id"
+            }
+          ],
+          "gen": true
+        }
+      ]
+    }
+  }
+}

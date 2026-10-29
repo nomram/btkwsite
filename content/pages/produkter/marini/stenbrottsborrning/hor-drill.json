@@ -1,0 +1,664 @@
+{
+  "path": "/produkter/marini/stenbrottsborrning/hor-drill",
+  "updated": "2026-10-29",
+  "template": "product",
+  "order": 5,
+  "published": true,
+  "hero": {
+    "image": "/assets/img/marini-rustica-hero.webp"
+  },
+  "i18n": {
+    "sv": {
+      "title": "Hor Drill",
+      "h1": "Marini Hor Drill",
+      "description": "Hor Drill är en pneumatisk borrenhet för horisontella hål där diamantvajern ska passera. Med pneumatiskt rotationshuvud och sänkhammare (DTH) når den 25 - 30 meters djup även i berg med naturliga ojäm",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Marini logotyp",
+          "href": "/produkter/marini",
+          "width": 637,
+          "height": 86,
+          "src": "/assets/img/logo-marini.webp",
+          "gen": true
+        },
+        {
+          "type": "image",
+          "alt": "Marini Hor Drill",
+          "file": "/assets/img/marini-drill-hor-drill.webp",
+          "width": 1049,
+          "height": 743,
+          "src": "/assets/img/marini-drill-hor-drill.webp",
+          "gen": true
+        },
+        {
+          "type": "carousel",
+          "autoplay": false,
+          "interval": 6,
+          "items": [
+            {
+              "src": "/assets/img/marini-drill-hor-drill-p1.webp",
+              "alt": "Marini Hor Drill (1/1)",
+              "width": 1268,
+              "height": 817
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "Hor Drill är en pneumatisk borrenhet för horisontella hål där diamantvajern ska passera. Med pneumatiskt rotationshuvud och sänkhammare (DTH) når den 25 - 30 meters djup även i berg med naturliga ojämnheter.",
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "Lätt konstruktion som är enkel att placera för horisontell borrning i plan med blocket. Kolonn för sänkhammarstänger på 1 500 mm och för borrstål på 2 400 mm. Samma enhet kan utrustas med en pneumatisk bergborrmaskin MA 90 för hål med liten diameter med borrstål eller koniska stänger. Ett stöd med horisontell bärpelare gör att kolonnen kan flyttas i borrlinjen.",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Slaglängd: 1 000 - 1 500 mm",
+            "Vridmoment: 850 Nm",
+            "Luftförbrukning: 8 m³/min",
+            "Vikt: 230 kg"
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Kontakta oss</a> för pris, leveranstid eller hjälp att välja rätt modell.",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Broschyr Hor Drill (ENG)",
+          "href": "/assets/docs/marini-hor-drill-broschyr.pdf",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Produktkatalog stenbrott (ENG)",
+          "href": "/assets/docs/marini-stenbrott-produktkatalog.pdf",
+          "gen": true
+        },
+        {
+          "type": "datasheet",
+          "title": "Teknisk data",
+          "tagline": "Marini Hor Drill",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Grundenhet",
+              "rows": [
+                {
+                  "label": "Slaglängd",
+                  "metric": "1 000 - 1 500 mm"
+                },
+                {
+                  "label": "Kolonn för sänkhammarstänger",
+                  "metric": "1 500 mm"
+                },
+                {
+                  "label": "Kolonn för borrstål",
+                  "metric": "2 400 mm"
+                },
+                {
+                  "label": "Rotationshuvud",
+                  "metric": "EP 95"
+                },
+                {
+                  "label": "Max vridmoment",
+                  "metric": "850 Nm"
+                },
+                {
+                  "label": "Varvtal",
+                  "metric": "40 rpm"
+                },
+                {
+                  "label": "Matningskraft, lamellmotor",
+                  "metric": "4,8 kN"
+                },
+                {
+                  "label": "Sänkhammare (DTH)",
+                  "metric": "upp till 3 tum, hål upp till 95 mm"
+                },
+                {
+                  "label": "Bergborrmaskin",
+                  "metric": "MA 90, skaft 22x108 eller 25x108 mm (tillval)"
+                },
+                {
+                  "label": "Luftförbrukning",
+                  "metric": "8 m³/min (8 000 l/min vid 7 bar)"
+                },
+                {
+                  "label": "Dammuppsamling",
+                  "metric": "Finns som tillval"
+                },
+                {
+                  "label": "Vikt",
+                  "metric": "230 kg"
+                }
+              ]
+            }
+          ],
+          "note": "",
+          "source": "Uppgifterna är hämtade ur Marinis produktkatalog för stenbrott och broschyrer (engelska).",
+          "gen": true
+        },
+        {
+          "type": "related",
+          "title": "Se även",
+          "items": [
+            {
+              "href": "/produkter/marini/stenbrottsborrning",
+              "mutual": false
+            },
+            {
+              "href": "/produkter/marini/stenbrottsborrning/hor-drill-id"
+            },
+            {
+              "href": "/produkter/marini/stenbrottsborrning/voyager"
+            },
+            {
+              "href": "/produkter/marini/stenbrottsborrning/big-driller"
+            }
+          ],
+          "gen": true
+        }
+      ]
+    },
+    "en": {
+      "title": "Hor Drill",
+      "h1": "Marini Hor Drill",
+      "description": "Hor Drill is a pneumatic drilling unit for horizontal holes the diamond wire passes through. With a pneumatic rotary head and a down-the-hole (DTH) hammer it reaches depths of 25 - 30 metres even in r",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Marini logotyp",
+          "href": "/produkter/marini",
+          "width": 637,
+          "height": 86,
+          "src": "/assets/img/logo-marini.webp",
+          "gen": true
+        },
+        {
+          "type": "image",
+          "alt": "Marini Hor Drill",
+          "file": "/assets/img/marini-drill-hor-drill.webp",
+          "width": 1049,
+          "height": 743,
+          "src": "/assets/img/marini-drill-hor-drill.webp",
+          "gen": true
+        },
+        {
+          "type": "carousel",
+          "autoplay": false,
+          "interval": 6,
+          "items": [
+            {
+              "src": "/assets/img/marini-drill-hor-drill-p1.webp",
+              "alt": "Marini Hor Drill (1/1)",
+              "width": 1268,
+              "height": 817
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "Hor Drill is a pneumatic drilling unit for horizontal holes the diamond wire passes through. With a pneumatic rotary head and a down-the-hole (DTH) hammer it reaches depths of 25 - 30 metres even in rock with natural irregularities.",
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "Light structure that is easy to position for horizontal drilling flush with the block. Column for DTH hammer rods of 1,500 mm and for drill steel of 2,400 mm. The same unit can be fitted with a pneumatic rock drill MA 90 for small-diameter holes with drill steel or conical rods. A down jack with a horizontal pipe lets the column be moved along the drilling line.",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Feed stroke: 1,000 - 1,500 mm",
+            "Rotary torque: 850 Nm",
+            "Air consumption: 8 m³/min",
+            "Weight: 230 kg"
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Contact us</a> for price, delivery time or help choosing the right model.",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Hor Drill brochure (ENG)",
+          "href": "/assets/docs/marini-hor-drill-broschyr.pdf",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Quarry product catalogue (ENG)",
+          "href": "/assets/docs/marini-stenbrott-produktkatalog.pdf",
+          "gen": true
+        },
+        {
+          "type": "datasheet",
+          "title": "Technical data",
+          "tagline": "Marini Hor Drill",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Base unit",
+              "rows": [
+                {
+                  "label": "Feed stroke",
+                  "metric": "1,000 - 1,500 mm"
+                },
+                {
+                  "label": "Column for DTH hammer rods",
+                  "metric": "1,500 mm"
+                },
+                {
+                  "label": "Column for drill steel",
+                  "metric": "2,400 mm"
+                },
+                {
+                  "label": "Rotary head",
+                  "metric": "EP 95"
+                },
+                {
+                  "label": "Max. torque",
+                  "metric": "850 Nm"
+                },
+                {
+                  "label": "Rotary speed",
+                  "metric": "40 rpm"
+                },
+                {
+                  "label": "Feed force, vane motor",
+                  "metric": "4.8 kN"
+                },
+                {
+                  "label": "DTH hammer",
+                  "metric": "up to 3 inches, holes up to 95 mm"
+                },
+                {
+                  "label": "Rock drill",
+                  "metric": "MA 90, shank 22x108 or 25x108 mm (option)"
+                },
+                {
+                  "label": "Air consumption",
+                  "metric": "8 m³/min (8,000 l/min at 7 bar)"
+                },
+                {
+                  "label": "Dust collector",
+                  "metric": "Available as an option"
+                },
+                {
+                  "label": "Weight",
+                  "metric": "230 kg"
+                }
+              ]
+            }
+          ],
+          "note": "",
+          "source": "Information taken from Marini's quarry product catalogue and the model brochures.",
+          "gen": true
+        },
+        {
+          "type": "related",
+          "title": "See also",
+          "items": [
+            {
+              "href": "/produkter/marini/stenbrottsborrning",
+              "mutual": false
+            },
+            {
+              "href": "/produkter/marini/stenbrottsborrning/hor-drill-id"
+            },
+            {
+              "href": "/produkter/marini/stenbrottsborrning/voyager"
+            },
+            {
+              "href": "/produkter/marini/stenbrottsborrning/big-driller"
+            }
+          ],
+          "gen": true
+        }
+      ]
+    },
+    "es": {
+      "title": "Hor Drill",
+      "h1": "Marini Hor Drill",
+      "description": "Hor Drill es una unidad de perforación neumática para barrenos horizontales por los que pasa el hilo diamantado. Con cabezal de rotación neumático y martillo de fondo (DTH) alcanza profundidades de 25",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Marini logotyp",
+          "href": "/produkter/marini",
+          "width": 637,
+          "height": 86,
+          "src": "/assets/img/logo-marini.webp",
+          "gen": true
+        },
+        {
+          "type": "image",
+          "alt": "Marini Hor Drill",
+          "file": "/assets/img/marini-drill-hor-drill.webp",
+          "width": 1049,
+          "height": 743,
+          "src": "/assets/img/marini-drill-hor-drill.webp",
+          "gen": true
+        },
+        {
+          "type": "carousel",
+          "autoplay": false,
+          "interval": 6,
+          "items": [
+            {
+              "src": "/assets/img/marini-drill-hor-drill-p1.webp",
+              "alt": "Marini Hor Drill (1/1)",
+              "width": 1268,
+              "height": 817
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "Hor Drill es una unidad de perforación neumática para barrenos horizontales por los que pasa el hilo diamantado. Con cabezal de rotación neumático y martillo de fondo (DTH) alcanza profundidades de 25 - 30 metros incluso en roca con irregularidades naturales.",
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "Estructura ligera y fácil de colocar para perforar en horizontal a ras del bloque. Columna para varillas de martillo de fondo de 1.500 mm y para barrenas de 2.400 mm. La misma unidad puede equiparse con una perforadora neumática MA 90 para barrenos de pequeño diámetro con barrenas o varillas cónicas. Un puntal con barra horizontal permite desplazar la columna sobre la línea de perforación.",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Carrera: 1.000 - 1.500 mm",
+            "Par de rotación: 850 Nm",
+            "Consumo de aire: 8 m³/min",
+            "Peso: 230 kg"
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Contáctenos</a> para precio, plazo de entrega o ayuda para elegir el modelo adecuado.",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Folleto Hor Drill (ENG)",
+          "href": "/assets/docs/marini-hor-drill-broschyr.pdf",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Catálogo de productos para canteras (ENG)",
+          "href": "/assets/docs/marini-stenbrott-produktkatalog.pdf",
+          "gen": true
+        },
+        {
+          "type": "datasheet",
+          "title": "Datos técnicos",
+          "tagline": "Marini Hor Drill",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Unidad básica",
+              "rows": [
+                {
+                  "label": "Carrera",
+                  "metric": "1.000 - 1.500 mm"
+                },
+                {
+                  "label": "Columna para varillas de martillo de fondo",
+                  "metric": "1.500 mm"
+                },
+                {
+                  "label": "Columna para barrenas",
+                  "metric": "2.400 mm"
+                },
+                {
+                  "label": "Cabezal de rotación",
+                  "metric": "EP 95"
+                },
+                {
+                  "label": "Par máximo",
+                  "metric": "850 Nm"
+                },
+                {
+                  "label": "Velocidad de rotación",
+                  "metric": "40 rpm"
+                },
+                {
+                  "label": "Fuerza de empuje, motor de paletas",
+                  "metric": "4,8 kN"
+                },
+                {
+                  "label": "Martillo de fondo (DTH)",
+                  "metric": "hasta 3 pulgadas, barrenos de hasta 95 mm"
+                },
+                {
+                  "label": "Perforadora",
+                  "metric": "MA 90, mango 22x108 o 25x108 mm (opcional)"
+                },
+                {
+                  "label": "Consumo de aire",
+                  "metric": "8 m³/min (8.000 l/min a 7 bar)"
+                },
+                {
+                  "label": "Aspirador de polvo",
+                  "metric": "Disponible como opción"
+                },
+                {
+                  "label": "Peso",
+                  "metric": "230 kg"
+                }
+              ]
+            }
+          ],
+          "note": "",
+          "source": "Información tomada del catálogo de productos para canteras de Marini y de los folletos de los modelos.",
+          "gen": true
+        },
+        {
+          "type": "related",
+          "title": "Véase también",
+          "items": [
+            {
+              "href": "/produkter/marini/stenbrottsborrning",
+              "mutual": false
+            },
+            {
+              "href": "/produkter/marini/stenbrottsborrning/hor-drill-id"
+            },
+            {
+              "href": "/produkter/marini/stenbrottsborrning/voyager"
+            },
+            {
+              "href": "/produkter/marini/stenbrottsborrning/big-driller"
+            }
+          ],
+          "gen": true
+        }
+      ]
+    },
+    "no": {
+      "title": "Hor Drill",
+      "h1": "Marini Hor Drill",
+      "description": "Hor Drill er en pneumatisk borenhet for horisontale hull som diamantwiren skal gå gjennom. Med pneumatisk rotasjonshode og senkhammer (DTH) når den 25 - 30 meters dybde selv i fjell med naturlige ujev",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Marini logotyp",
+          "href": "/produkter/marini",
+          "width": 637,
+          "height": 86,
+          "src": "/assets/img/logo-marini.webp",
+          "gen": true
+        },
+        {
+          "type": "image",
+          "alt": "Marini Hor Drill",
+          "file": "/assets/img/marini-drill-hor-drill.webp",
+          "width": 1049,
+          "height": 743,
+          "src": "/assets/img/marini-drill-hor-drill.webp",
+          "gen": true
+        },
+        {
+          "type": "carousel",
+          "autoplay": false,
+          "interval": 6,
+          "items": [
+            {
+              "src": "/assets/img/marini-drill-hor-drill-p1.webp",
+              "alt": "Marini Hor Drill (1/1)",
+              "width": 1268,
+              "height": 817
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "Hor Drill er en pneumatisk borenhet for horisontale hull som diamantwiren skal gå gjennom. Med pneumatisk rotasjonshode og senkhammer (DTH) når den 25 - 30 meters dybde selv i fjell med naturlige ujevnheter.",
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "Lett konstruksjon som er enkel å plassere for horisontal boring i plan med blokken. Kolonne for senkhammerstenger på 1 500 mm og for borstål på 2 400 mm. Den samme enheten kan utstyres med en pneumatisk bergboremaskin MA 90 for hull med liten diameter med borstål eller koniske stenger. En støtte med horisontal bjelke gjør at kolonnen kan flyttes langs boringslinjen.",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Slaglengde: 1 000 - 1 500 mm",
+            "Dreiemoment: 850 Nm",
+            "Luftforbruk: 8 m³/min",
+            "Vekt: 230 kg"
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Kontakt oss</a> for pris, leveringstid eller hjelp til å velge riktig modell.",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Brosjyre Hor Drill (ENG)",
+          "href": "/assets/docs/marini-hor-drill-broschyr.pdf",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Produktkatalog steinbrudd (ENG)",
+          "href": "/assets/docs/marini-stenbrott-produktkatalog.pdf",
+          "gen": true
+        },
+        {
+          "type": "datasheet",
+          "title": "Tekniske data",
+          "tagline": "Marini Hor Drill",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Grunnenhet",
+              "rows": [
+                {
+                  "label": "Slaglengde",
+                  "metric": "1 000 - 1 500 mm"
+                },
+                {
+                  "label": "Kolonne for senkhammerstenger",
+                  "metric": "1 500 mm"
+                },
+                {
+                  "label": "Kolonne for borstål",
+                  "metric": "2 400 mm"
+                },
+                {
+                  "label": "Rotasjonshode",
+                  "metric": "EP 95"
+                },
+                {
+                  "label": "Maks. dreiemoment",
+                  "metric": "850 Nm"
+                },
+                {
+                  "label": "Turtall",
+                  "metric": "40 rpm"
+                },
+                {
+                  "label": "Matekraft, lamellmotor",
+                  "metric": "4,8 kN"
+                },
+                {
+                  "label": "Senkhammer (DTH)",
+                  "metric": "opptil 3 tommer, hull opptil 95 mm"
+                },
+                {
+                  "label": "Bergboremaskin",
+                  "metric": "MA 90, skaft 22x108 eller 25x108 mm (tilvalg)"
+                },
+                {
+                  "label": "Luftforbruk",
+                  "metric": "8 m³/min (8 000 l/min ved 7 bar)"
+                },
+                {
+                  "label": "Støvsuger",
+                  "metric": "Finnes som tilvalg"
+                },
+                {
+                  "label": "Vekt",
+                  "metric": "230 kg"
+                }
+              ]
+            }
+          ],
+          "note": "",
+          "source": "Opplysningene er hentet fra Marinis produktkatalog for steinbrudd og brosjyrene for modellene (engelsk).",
+          "gen": true
+        },
+        {
+          "type": "related",
+          "title": "Se også",
+          "items": [
+            {
+              "href": "/produkter/marini/stenbrottsborrning",
+              "mutual": false
+            },
+            {
+              "href": "/produkter/marini/stenbrottsborrning/hor-drill-id"
+            },
+            {
+              "href": "/produkter/marini/stenbrottsborrning/voyager"
+            },
+            {
+              "href": "/produkter/marini/stenbrottsborrning/big-driller"
+            }
+          ],
+          "gen": true
+        }
+      ]
+    }
+  }
+}

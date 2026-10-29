@@ -1070,7 +1070,8 @@ function jsonLd(ctx, page, t, canonical, crumbs) {
 // the way the original page was laid out. The brand logo that links back to the
 // brand moves into the breadcrumb row.
 function composeBody(ctx, page, t) {
-  const blocks = (t.blocks || []).map((b, i) => (ctx.edit ? { ...b, __i: i } : b));
+  // a block with "hidden": true is kept in the content but not shown on the site (the editor still shows it)
+  const blocks = (ctx.edit ? t.blocks || [] : (t.blocks || []).filter((b) => !(b && b.hidden))).map((b, i) => (ctx.edit ? { ...b, __i: i } : b));
   let crumbLogo = null;
   const anc = ancestorsOf(page.path);
   const li = blocks.findIndex((b) => b.type === "image" && b.href && anc.includes(b.href));

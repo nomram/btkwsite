@@ -1,0 +1,832 @@
+{
+  "path": "/produkter/marini/vajersågar/mini-fil-electronic",
+  "updated": "2026-10-29",
+  "template": "product",
+  "order": 0,
+  "published": true,
+  "hero": {
+    "image": "/assets/img/marini-vajersagar-hero.webp"
+  },
+  "i18n": {
+    "sv": {
+      "title": "Mini Fil Electronic",
+      "h1": "Marini Mini Fil Electronic",
+      "description": "Mini Fil Electronic är en vajersåg ur Marinis granitserie med variabel trådhastighet (0 - 33 m/s) som styrs av frekvensomriktare. Huvudmotor 11 / 15 / 18 kW, vikt 800 / 820 / 850 kg.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Marini logotyp",
+          "href": "/produkter/marini",
+          "width": 637,
+          "height": 86,
+          "src": "/assets/img/logo-marini.webp",
+          "gen": true
+        },
+        {
+          "type": "image",
+          "alt": "Marini Mini Fil Electronic",
+          "file": "/assets/img/marini-saw-mini-fil-electronic.webp",
+          "width": 542,
+          "height": 451,
+          "src": "/assets/img/marini-saw-mini-fil-electronic.webp",
+          "gen": true
+        },
+        {
+          "type": "carousel",
+          "autoplay": false,
+          "interval": 6,
+          "items": [
+            {
+              "src": "/assets/img/marini-quarry-granite-photo.webp",
+              "alt": "Marini Mini Fil Electronic (1/1)",
+              "width": 1800,
+              "height": 1102
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "Mini Fil Electronic är en vajersåg ur Marinis granitserie med variabel trådhastighet (0 - 33 m/s) som styrs av frekvensomriktare. Huvudmotor 11 / 15 / 18 kW, vikt 800 / 820 / 850 kg.",
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "Maskinen positioneras snabbt på skenor och håller diamantvajern jämnt och noggrant spänd under sågningen. Svänghjulsgruppen kan vridas 360° och förflyttas med elmotorer (beroende på utförande), så att sågen snabbt riktas in och parallella snitt kan göras utan att skenorna flyttas. Den kan såga på lutande ytor i alla riktningar och i plan med brottbotten. Den lätta manöverpanelen kan placeras på säkert avstånd från sågen.",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Huvudmotor: 11 / 15 / 18 kW",
+            "Vikt: 800 / 820 / 850 kg",
+            "Trådhastighet: 0 - 33 m/s"
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Kontakta oss</a> för pris, leveranstid eller hjälp att välja rätt modell.",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Broschyr vajersågar för granit (ENG)",
+          "href": "/assets/docs/marini-vajersagar-granit-broschyr.pdf",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Produktkatalog stenbrott (ENG)",
+          "href": "/assets/docs/marini-stenbrott-produktkatalog.pdf",
+          "gen": true
+        },
+        {
+          "type": "datasheet",
+          "title": "Teknisk data",
+          "tagline": "Marini Mini Fil Electronic",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Specifikationer",
+              "rows": [
+                {
+                  "label": "Huvudmotor (el)",
+                  "metric": "11 / 15 / 18 kW"
+                },
+                {
+                  "label": "Längd",
+                  "metric": "1 300 mm"
+                },
+                {
+                  "label": "Bredd",
+                  "metric": "900 mm"
+                },
+                {
+                  "label": "Höjd",
+                  "metric": "1 000 mm"
+                },
+                {
+                  "label": "Vikt",
+                  "metric": "800 / 820 / 850 kg"
+                },
+                {
+                  "label": "Trådhastighet",
+                  "metric": "0 - 33 m/s"
+                },
+                {
+                  "label": "Svänghjul",
+                  "metric": "420 / 550 mm, styrhjul 350 mm"
+                },
+                {
+                  "label": "Skenor",
+                  "metric": "2 × 3 m, 49 kg per skena, spårvidd 800 mm"
+                },
+                {
+                  "label": "Rotation av svänghjulsgrupp (360°)",
+                  "metric": "Manuell eller elektrisk"
+                },
+                {
+                  "label": "Förflyttning av svänghjul",
+                  "metric": "Ingen"
+                },
+                {
+                  "label": "Styrning",
+                  "metric": "Via kabel"
+                }
+              ]
+            }
+          ],
+          "note": "Motorer och vikter anges i samma ordning.",
+          "source": "Uppgifterna är hämtade ur Marinis produktkatalog för stenbrott och broschyrer (engelska).",
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Utföranden",
+          "gen": true
+        },
+        {
+          "type": "table",
+          "header": true,
+          "rows": [
+            [
+              "Modell",
+              "Rotation av svänghjulsgrupp (360°)",
+              "Förflyttning av svänghjul"
+            ],
+            [
+              "Mini Fil Electronic",
+              "Manuell",
+              "–"
+            ],
+            [
+              "Mini Fil Electronic R 360°",
+              "Elektrisk",
+              "–"
+            ]
+          ],
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 1,
+          "narrow": true,
+          "zoom": true,
+          "more": false,
+          "items": [
+            {
+              "title": "Sidovy",
+              "image": "/assets/img/marini-saw-mini-fil-electronic-side.webp",
+              "alt": "Sidovy Mini Fil Electronic",
+              "text": "Håll muspekaren över ritningen (eller tryck och dra) för 2× förstoring.",
+              "width": 459,
+              "height": 302
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "related",
+          "title": "Se även",
+          "items": [
+            {
+              "href": "/produkter/marini/vajersågar",
+              "mutual": false
+            },
+            {
+              "href": "/produkter/marini/vajersågar/mini-fil-super-electronic"
+            },
+            {
+              "href": "/produkter/marini/vajersågar/gran-fil-electronic"
+            },
+            {
+              "href": "/produkter/marini/vajersågar/gran-fil-super-electronic"
+            }
+          ],
+          "gen": true
+        }
+      ]
+    },
+    "en": {
+      "title": "Mini Fil Electronic",
+      "h1": "Marini Mini Fil Electronic",
+      "description": "Mini Fil Electronic is a diamond wire saw from Marini's granite line with variable wire speed (0 - 33 m/s) controlled by an inverter. Main motor 11 / 15 / 18 kW, weight 800 / 820 / 850 kg.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Marini logotyp",
+          "href": "/produkter/marini",
+          "width": 637,
+          "height": 86,
+          "src": "/assets/img/logo-marini.webp",
+          "gen": true
+        },
+        {
+          "type": "image",
+          "alt": "Marini Mini Fil Electronic",
+          "file": "/assets/img/marini-saw-mini-fil-electronic.webp",
+          "width": 542,
+          "height": 451,
+          "src": "/assets/img/marini-saw-mini-fil-electronic.webp",
+          "gen": true
+        },
+        {
+          "type": "carousel",
+          "autoplay": false,
+          "interval": 6,
+          "items": [
+            {
+              "src": "/assets/img/marini-quarry-granite-photo.webp",
+              "alt": "Marini Mini Fil Electronic (1/1)",
+              "width": 1800,
+              "height": 1102
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "Mini Fil Electronic is a diamond wire saw from Marini's granite line with variable wire speed (0 - 33 m/s) controlled by an inverter. Main motor 11 / 15 / 18 kW, weight 800 / 820 / 850 kg.",
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "The machine positions quickly on its rails and keeps the diamond wire evenly and accurately tensioned during the cut. The flywheel group can rotate 360° and move on electric motors (depending on version), so the saw is aligned quickly and parallel cuts can be made without moving the rails. It can cut on inclined surfaces in any direction and flush with the quarry floor. The light control panel can be placed at a safe distance from the saw.",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Main motor: 11 / 15 / 18 kW",
+            "Weight: 800 / 820 / 850 kg",
+            "Wire speed: 0 - 33 m/s"
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Contact us</a> for price, delivery time or help choosing the right model.",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Granite wire saws brochure (ENG)",
+          "href": "/assets/docs/marini-vajersagar-granit-broschyr.pdf",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Quarry product catalogue (ENG)",
+          "href": "/assets/docs/marini-stenbrott-produktkatalog.pdf",
+          "gen": true
+        },
+        {
+          "type": "datasheet",
+          "title": "Technical data",
+          "tagline": "Marini Mini Fil Electronic",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Specifications",
+              "rows": [
+                {
+                  "label": "Main motor (electric)",
+                  "metric": "11 / 15 / 18 kW"
+                },
+                {
+                  "label": "Length",
+                  "metric": "1,300 mm"
+                },
+                {
+                  "label": "Width",
+                  "metric": "900 mm"
+                },
+                {
+                  "label": "Height",
+                  "metric": "1,000 mm"
+                },
+                {
+                  "label": "Weight",
+                  "metric": "800 / 820 / 850 kg"
+                },
+                {
+                  "label": "Wire speed",
+                  "metric": "0 - 33 m/s"
+                },
+                {
+                  "label": "Flywheel",
+                  "metric": "420 / 550 mm, guide wheel 350 mm"
+                },
+                {
+                  "label": "Rails",
+                  "metric": "2 × 3 m, 49 kg each, gauge 800 mm"
+                },
+                {
+                  "label": "Flywheel group rotation (360°)",
+                  "metric": "Manual or electric"
+                },
+                {
+                  "label": "Flywheel translation",
+                  "metric": "None"
+                },
+                {
+                  "label": "Control",
+                  "metric": "Wired"
+                }
+              ]
+            }
+          ],
+          "note": "Motors and weights are listed in the same order.",
+          "source": "Information taken from Marini's quarry product catalogue and the model brochures.",
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Versions",
+          "gen": true
+        },
+        {
+          "type": "table",
+          "header": true,
+          "rows": [
+            [
+              "Model",
+              "Flywheel group rotation (360°)",
+              "Flywheel translation"
+            ],
+            [
+              "Mini Fil Electronic",
+              "Manual",
+              "–"
+            ],
+            [
+              "Mini Fil Electronic R 360°",
+              "Electric",
+              "–"
+            ]
+          ],
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 1,
+          "narrow": true,
+          "zoom": true,
+          "more": false,
+          "items": [
+            {
+              "title": "Side view",
+              "image": "/assets/img/marini-saw-mini-fil-electronic-side.webp",
+              "alt": "Side view Mini Fil Electronic",
+              "text": "Hover over the drawing (or touch and drag) for a 2× magnifier.",
+              "width": 459,
+              "height": 302
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "related",
+          "title": "See also",
+          "items": [
+            {
+              "href": "/produkter/marini/vajersågar",
+              "mutual": false
+            },
+            {
+              "href": "/produkter/marini/vajersågar/mini-fil-super-electronic"
+            },
+            {
+              "href": "/produkter/marini/vajersågar/gran-fil-electronic"
+            },
+            {
+              "href": "/produkter/marini/vajersågar/gran-fil-super-electronic"
+            }
+          ],
+          "gen": true
+        }
+      ]
+    },
+    "es": {
+      "title": "Mini Fil Electronic",
+      "h1": "Marini Mini Fil Electronic",
+      "description": "Mini Fil Electronic es una sierra de hilo diamantado de la línea de granito de Marini, con velocidad de hilo variable (0 - 33 m/s) controlada por inversor. Motor principal de 11 / 15 / 18 kW y un peso",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Marini logotyp",
+          "href": "/produkter/marini",
+          "width": 637,
+          "height": 86,
+          "src": "/assets/img/logo-marini.webp",
+          "gen": true
+        },
+        {
+          "type": "image",
+          "alt": "Marini Mini Fil Electronic",
+          "file": "/assets/img/marini-saw-mini-fil-electronic.webp",
+          "width": 542,
+          "height": 451,
+          "src": "/assets/img/marini-saw-mini-fil-electronic.webp",
+          "gen": true
+        },
+        {
+          "type": "carousel",
+          "autoplay": false,
+          "interval": 6,
+          "items": [
+            {
+              "src": "/assets/img/marini-quarry-granite-photo.webp",
+              "alt": "Marini Mini Fil Electronic (1/1)",
+              "width": 1800,
+              "height": 1102
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "Mini Fil Electronic es una sierra de hilo diamantado de la línea de granito de Marini, con velocidad de hilo variable (0 - 33 m/s) controlada por inversor. Motor principal de 11 / 15 / 18 kW y un peso de 800 / 820 / 850 kg.",
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "La máquina se posiciona con rapidez sobre los carriles y mantiene el hilo diamantado tensado de forma uniforme y precisa durante el corte. El grupo del volante puede girar 360° y desplazarse con motores eléctricos (según la versión), de modo que la sierra se alinea con rapidez y se pueden hacer cortes paralelos sin mover los carriles. Puede cortar sobre superficies inclinadas en cualquier dirección y a ras del suelo de la cantera. El panel de mando, ligero, puede colocarse a una distancia segura de la sierra.",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Motor principal: 11 / 15 / 18 kW",
+            "Peso: 800 / 820 / 850 kg",
+            "Velocidad del hilo: 0 - 33 m/s"
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Contáctenos</a> para precio, plazo de entrega o ayuda para elegir el modelo adecuado.",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Folleto sierras de hilo para granito (ENG)",
+          "href": "/assets/docs/marini-vajersagar-granit-broschyr.pdf",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Catálogo de productos para canteras (ENG)",
+          "href": "/assets/docs/marini-stenbrott-produktkatalog.pdf",
+          "gen": true
+        },
+        {
+          "type": "datasheet",
+          "title": "Datos técnicos",
+          "tagline": "Marini Mini Fil Electronic",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Especificaciones",
+              "rows": [
+                {
+                  "label": "Motor principal (eléctrico)",
+                  "metric": "11 / 15 / 18 kW"
+                },
+                {
+                  "label": "Longitud",
+                  "metric": "1.300 mm"
+                },
+                {
+                  "label": "Anchura",
+                  "metric": "900 mm"
+                },
+                {
+                  "label": "Altura",
+                  "metric": "1.000 mm"
+                },
+                {
+                  "label": "Peso",
+                  "metric": "800 / 820 / 850 kg"
+                },
+                {
+                  "label": "Velocidad del hilo",
+                  "metric": "0 - 33 m/s"
+                },
+                {
+                  "label": "Volante",
+                  "metric": "420 / 550 mm, polea guía de 350 mm"
+                },
+                {
+                  "label": "Carriles",
+                  "metric": "2 × 3 m, 49 kg cada uno, ancho de vía 800 mm"
+                },
+                {
+                  "label": "Rotación del grupo del volante (360°)",
+                  "metric": "Manual o eléctrica"
+                },
+                {
+                  "label": "Traslación del volante",
+                  "metric": "Ninguna"
+                },
+                {
+                  "label": "Mando",
+                  "metric": "Con cable"
+                }
+              ]
+            }
+          ],
+          "note": "Los motores y los pesos se indican en el mismo orden.",
+          "source": "Información tomada del catálogo de productos para canteras de Marini y de los folletos de los modelos.",
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Versiones",
+          "gen": true
+        },
+        {
+          "type": "table",
+          "header": true,
+          "rows": [
+            [
+              "Modelo",
+              "Rotación del grupo del volante (360°)",
+              "Traslación del volante"
+            ],
+            [
+              "Mini Fil Electronic",
+              "Manual",
+              "–"
+            ],
+            [
+              "Mini Fil Electronic R 360°",
+              "Eléctrica",
+              "–"
+            ]
+          ],
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 1,
+          "narrow": true,
+          "zoom": true,
+          "more": false,
+          "items": [
+            {
+              "title": "Vista lateral",
+              "image": "/assets/img/marini-saw-mini-fil-electronic-side.webp",
+              "alt": "Vista lateral Mini Fil Electronic",
+              "text": "Pase el cursor sobre el plano (o toque y arrastre) para una lupa 2×.",
+              "width": 459,
+              "height": 302
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "related",
+          "title": "Véase también",
+          "items": [
+            {
+              "href": "/produkter/marini/vajersågar",
+              "mutual": false
+            },
+            {
+              "href": "/produkter/marini/vajersågar/mini-fil-super-electronic"
+            },
+            {
+              "href": "/produkter/marini/vajersågar/gran-fil-electronic"
+            },
+            {
+              "href": "/produkter/marini/vajersågar/gran-fil-super-electronic"
+            }
+          ],
+          "gen": true
+        }
+      ]
+    },
+    "no": {
+      "title": "Mini Fil Electronic",
+      "h1": "Marini Mini Fil Electronic",
+      "description": "Mini Fil Electronic er en diamantwiresag fra Marinis granittserie med variabel wirehastighet (0 - 33 m/s) styrt av frekvensomformer. Hovedmotor 11 / 15 / 18 kW, vekt 800 / 820 / 850 kg.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Marini logotyp",
+          "href": "/produkter/marini",
+          "width": 637,
+          "height": 86,
+          "src": "/assets/img/logo-marini.webp",
+          "gen": true
+        },
+        {
+          "type": "image",
+          "alt": "Marini Mini Fil Electronic",
+          "file": "/assets/img/marini-saw-mini-fil-electronic.webp",
+          "width": 542,
+          "height": 451,
+          "src": "/assets/img/marini-saw-mini-fil-electronic.webp",
+          "gen": true
+        },
+        {
+          "type": "carousel",
+          "autoplay": false,
+          "interval": 6,
+          "items": [
+            {
+              "src": "/assets/img/marini-quarry-granite-photo.webp",
+              "alt": "Marini Mini Fil Electronic (1/1)",
+              "width": 1800,
+              "height": 1102
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "Mini Fil Electronic er en diamantwiresag fra Marinis granittserie med variabel wirehastighet (0 - 33 m/s) styrt av frekvensomformer. Hovedmotor 11 / 15 / 18 kW, vekt 800 / 820 / 850 kg.",
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "Maskinen posisjoneres raskt på skinnene og holder diamantwiren jevnt og nøyaktig stram under kappingen. Svinghjulsgruppen kan dreies 360° og forflyttes med elektriske motorer (avhengig av utførelse), slik at sagen raskt rettes inn og parallelle snitt kan tas uten å flytte skinnene. Den kan sage på skrå flater i alle retninger og i plan med bruddbunnen. Det lette betjeningspanelet kan plasseres i trygg avstand fra sagen.",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Hovedmotor: 11 / 15 / 18 kW",
+            "Vekt: 800 / 820 / 850 kg",
+            "Wirehastighet: 0 - 33 m/s"
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Kontakt oss</a> for pris, leveringstid eller hjelp til å velge riktig modell.",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Brosjyre wiresager for granitt (ENG)",
+          "href": "/assets/docs/marini-vajersagar-granit-broschyr.pdf",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Produktkatalog steinbrudd (ENG)",
+          "href": "/assets/docs/marini-stenbrott-produktkatalog.pdf",
+          "gen": true
+        },
+        {
+          "type": "datasheet",
+          "title": "Tekniske data",
+          "tagline": "Marini Mini Fil Electronic",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Spesifikasjoner",
+              "rows": [
+                {
+                  "label": "Hovedmotor (el)",
+                  "metric": "11 / 15 / 18 kW"
+                },
+                {
+                  "label": "Lengde",
+                  "metric": "1 300 mm"
+                },
+                {
+                  "label": "Bredde",
+                  "metric": "900 mm"
+                },
+                {
+                  "label": "Høyde",
+                  "metric": "1 000 mm"
+                },
+                {
+                  "label": "Vekt",
+                  "metric": "800 / 820 / 850 kg"
+                },
+                {
+                  "label": "Wirehastighet",
+                  "metric": "0 - 33 m/s"
+                },
+                {
+                  "label": "Svinghjul",
+                  "metric": "420 / 550 mm, styrehjul 350 mm"
+                },
+                {
+                  "label": "Skinner",
+                  "metric": "2 × 3 m, 49 kg per skinne, sporvidde 800 mm"
+                },
+                {
+                  "label": "Rotasjon av svinghjulsgruppe (360°)",
+                  "metric": "Manuell eller elektrisk"
+                },
+                {
+                  "label": "Forflytting av svinghjul",
+                  "metric": "Ingen"
+                },
+                {
+                  "label": "Styring",
+                  "metric": "Med kabel"
+                }
+              ]
+            }
+          ],
+          "note": "Motorer og vekter er oppgitt i samme rekkefølge.",
+          "source": "Opplysningene er hentet fra Marinis produktkatalog for steinbrudd og brosjyrene for modellene (engelsk).",
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Utførelser",
+          "gen": true
+        },
+        {
+          "type": "table",
+          "header": true,
+          "rows": [
+            [
+              "Modell",
+              "Rotasjon av svinghjulsgruppe (360°)",
+              "Forflytting av svinghjul"
+            ],
+            [
+              "Mini Fil Electronic",
+              "Manuell",
+              "–"
+            ],
+            [
+              "Mini Fil Electronic R 360°",
+              "Elektrisk",
+              "–"
+            ]
+          ],
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 1,
+          "narrow": true,
+          "zoom": true,
+          "more": false,
+          "items": [
+            {
+              "title": "Sideriss",
+              "image": "/assets/img/marini-saw-mini-fil-electronic-side.webp",
+              "alt": "Sideriss Mini Fil Electronic",
+              "text": "Hold musepekeren over tegningen (eller trykk og dra) for 2× forstørrelse.",
+              "width": 459,
+              "height": 302
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "related",
+          "title": "Se også",
+          "items": [
+            {
+              "href": "/produkter/marini/vajersågar",
+              "mutual": false
+            },
+            {
+              "href": "/produkter/marini/vajersågar/mini-fil-super-electronic"
+            },
+            {
+              "href": "/produkter/marini/vajersågar/gran-fil-electronic"
+            },
+            {
+              "href": "/produkter/marini/vajersågar/gran-fil-super-electronic"
+            }
+          ],
+          "gen": true
+        }
+      ]
+    }
+  }
+}

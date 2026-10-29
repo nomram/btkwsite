@@ -1,0 +1,1180 @@
+{
+  "path": "/produkter/marini/stenbrottsborrning/voyager",
+  "updated": "2026-10-29",
+  "template": "product",
+  "order": 0,
+  "published": true,
+  "hero": {
+    "image": "/assets/img/marini-rustica-hero.webp"
+  },
+  "i18n": {
+    "sv": {
+      "title": "Voyager",
+      "h1": "Marini Voyager",
+      "description": "Voyager är en hydraulisk, självgående borrenhet på gummiband för horisontella, vertikala och lutande hål. Den drivs av ett hydraulaggregat med diesel- eller bensinmotor på 17 kW eller en elmotor på 15",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Marini logotyp",
+          "href": "/produkter/marini",
+          "width": 637,
+          "height": 86,
+          "src": "/assets/img/logo-marini.webp",
+          "gen": true
+        },
+        {
+          "type": "image",
+          "alt": "Marini Voyager",
+          "file": "/assets/img/marini-drill-voyager.webp",
+          "width": 1259,
+          "height": 1800,
+          "src": "/assets/img/marini-drill-voyager.webp",
+          "gen": true
+        },
+        {
+          "type": "carousel",
+          "autoplay": true,
+          "interval": 6,
+          "items": [
+            {
+              "src": "/assets/img/marini-drill-voyager-p1.webp",
+              "alt": "Marini Voyager (1/2)",
+              "width": 1043,
+              "height": 720
+            },
+            {
+              "src": "/assets/img/marini-drill-voyager-p2.webp",
+              "alt": "Marini Voyager (2/2)",
+              "width": 1043,
+              "height": 720
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "Voyager är en hydraulisk, självgående borrenhet på gummiband för horisontella, vertikala och lutande hål. Den drivs av ett hydraulaggregat med diesel- eller bensinmotor på 17 kW eller en elmotor på 15 kW.",
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "Med hydrauliskt rotationshuvud och pneumatisk sänkhammare (DTH) borrar den stora hål för diamantvajern. Med rotationshuvud och diamantkronor kärnborrar den över 30 meter med diametrar på 64 - 90 mm, och med hydro-pneumatiska bergborrmaskiner borrar den hål med olika diametrar.",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Motor: 17 kW / 15 kW",
+            "Slaglängd: 1 260 - 1 760 mm",
+            "Vridmoment: 1 600 Nm",
+            "Vikt: 1 400 kg"
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Kontakta oss</a> för pris, leveranstid eller hjälp att välja rätt modell.",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Broschyr Voyager (ENG)",
+          "href": "/assets/docs/marini-voyager-broschyr.pdf",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Produktkatalog stenbrott (ENG)",
+          "href": "/assets/docs/marini-stenbrott-produktkatalog.pdf",
+          "gen": true
+        },
+        {
+          "type": "datasheet",
+          "title": "Teknisk data",
+          "tagline": "Marini Voyager",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Underrede",
+              "rows": [
+                {
+                  "label": "Axelavstånd",
+                  "metric": "1 080 mm"
+                },
+                {
+                  "label": "Spårvidd",
+                  "metric": "1 000 mm"
+                },
+                {
+                  "label": "Bandplattornas bredd",
+                  "metric": "230 mm"
+                },
+                {
+                  "label": "Max stigförmåga",
+                  "metric": "80 %"
+                },
+                {
+                  "label": "Max hastighet",
+                  "metric": "1,67 km/h"
+                }
+              ]
+            },
+            {
+              "title": "Hydraulaggregat",
+              "rows": [
+                {
+                  "label": "Dieselmotor",
+                  "metric": "Lombardini LDW 1003, 17 kW vid 3 000 rpm"
+                },
+                {
+                  "label": "Elmotor",
+                  "metric": "15 kW vid 2 900 rpm"
+                },
+                {
+                  "label": "Huvudpump",
+                  "metric": "40 l/min vid 200 bar"
+                },
+                {
+                  "label": "Oljetank",
+                  "metric": "50 l"
+                },
+                {
+                  "label": "Bränsletank",
+                  "metric": "20 l"
+                },
+                {
+                  "label": "Bränsleförbrukning",
+                  "metric": "2,5 l/h"
+                },
+                {
+                  "label": "Kylning",
+                  "metric": "Separat olje-/luftkylare"
+                }
+              ]
+            },
+            {
+              "title": "Mast",
+              "rows": [
+                {
+                  "label": "Mast",
+                  "metric": "CID 80 / CID 100"
+                },
+                {
+                  "label": "Slaglängd",
+                  "metric": "1 760 mm"
+                },
+                {
+                  "label": "Total längd",
+                  "metric": "3 300 mm / 3 400 mm"
+                },
+                {
+                  "label": "Matningskraft",
+                  "metric": "6 kN / 10 kN"
+                },
+                {
+                  "label": "Dragkraft (indragning)",
+                  "metric": "10 kN / 15 kN"
+                }
+              ]
+            },
+            {
+              "title": "Rotationshuvud",
+              "rows": [
+                {
+                  "label": "Rotationshuvud",
+                  "metric": "ID 160 / ID CD (kärnborrning)"
+                },
+                {
+                  "label": "Max vridmoment",
+                  "metric": "1 600 Nm / 35 Nm"
+                },
+                {
+                  "label": "Varvtal",
+                  "metric": "60 / 1 300 rpm"
+                },
+                {
+                  "label": "Växlar",
+                  "metric": "1"
+                },
+                {
+                  "label": "Genomgång i huvudet",
+                  "metric": "1 tum"
+                }
+              ]
+            },
+            {
+              "title": "Bergborrmaskin",
+              "rows": [
+                {
+                  "label": "Typ",
+                  "metric": "MA 90 / MA 100 S ID"
+                },
+                {
+                  "label": "Max vridmoment",
+                  "metric": "- / 1 000 Nm"
+                },
+                {
+                  "label": "Max varvtal",
+                  "metric": "190 / 100 rpm"
+                },
+                {
+                  "label": "Slagenergi",
+                  "metric": "180 Nm"
+                },
+                {
+                  "label": "Slagfrekvens",
+                  "metric": "2 500 / 2 800 slag/min"
+                },
+                {
+                  "label": "Gängade och självborrande stänger",
+                  "metric": "R32 / R38 LH, skaft 22x108 eller 25x108 mm"
+                }
+              ]
+            }
+          ],
+          "note": "",
+          "source": "Uppgifterna är hämtade ur Marinis produktkatalog för stenbrott och broschyrer (engelska).",
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 2,
+          "narrow": false,
+          "zoom": true,
+          "more": false,
+          "items": [
+            {
+              "title": "Vertikal borrning: mått",
+              "image": "/assets/img/marini-drill-voyager-vertical.webp",
+              "alt": "Voyager: Vertikal borrning: mått",
+              "width": 493,
+              "height": 485
+            },
+            {
+              "title": "Horisontell borrning: mått",
+              "image": "/assets/img/marini-drill-voyager-horizontal.webp",
+              "alt": "Voyager: Horisontell borrning: mått",
+              "width": 667,
+              "height": 639
+            },
+            {
+              "title": "Arbetsområde, sidovy",
+              "image": "/assets/img/marini-drill-voyager-area-side.webp",
+              "alt": "Voyager: Arbetsområde, sidovy",
+              "width": 736,
+              "height": 678
+            },
+            {
+              "title": "Arbetsområde, planvy (250°)",
+              "image": "/assets/img/marini-drill-voyager-area-plan.webp",
+              "alt": "Voyager: Arbetsområde, planvy (250°)",
+              "width": 525,
+              "height": 496
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "related",
+          "title": "Se även",
+          "items": [
+            {
+              "href": "/produkter/marini/stenbrottsborrning",
+              "mutual": false
+            },
+            {
+              "href": "/produkter/marini/stenbrottsborrning/big-driller"
+            },
+            {
+              "href": "/produkter/marini/stenbrottsborrning/driller-id"
+            },
+            {
+              "href": "/produkter/marini/stenbrottsborrning/hor-drill-id"
+            }
+          ],
+          "gen": true
+        }
+      ]
+    },
+    "en": {
+      "title": "Voyager",
+      "h1": "Marini Voyager",
+      "description": "Voyager is a hydraulic, self-propelled drilling unit on rubber tracks for horizontal, vertical and inclined holes. It is powered by a hydraulic power pack with a 17 kW diesel or petrol engine or a 15 ",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Marini logotyp",
+          "href": "/produkter/marini",
+          "width": 637,
+          "height": 86,
+          "src": "/assets/img/logo-marini.webp",
+          "gen": true
+        },
+        {
+          "type": "image",
+          "alt": "Marini Voyager",
+          "file": "/assets/img/marini-drill-voyager.webp",
+          "width": 1259,
+          "height": 1800,
+          "src": "/assets/img/marini-drill-voyager.webp",
+          "gen": true
+        },
+        {
+          "type": "carousel",
+          "autoplay": true,
+          "interval": 6,
+          "items": [
+            {
+              "src": "/assets/img/marini-drill-voyager-p1.webp",
+              "alt": "Marini Voyager (1/2)",
+              "width": 1043,
+              "height": 720
+            },
+            {
+              "src": "/assets/img/marini-drill-voyager-p2.webp",
+              "alt": "Marini Voyager (2/2)",
+              "width": 1043,
+              "height": 720
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "Voyager is a hydraulic, self-propelled drilling unit on rubber tracks for horizontal, vertical and inclined holes. It is powered by a hydraulic power pack with a 17 kW diesel or petrol engine or a 15 kW electric motor.",
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "With the hydraulic rotary head and a pneumatic down-the-hole (DTH) hammer it drills large holes for the diamond wire. With the rotary head and diamond crowns it core drills more than 30 metres with diameters of 64 - 90 mm, and with hydro-pneumatic rock drills it makes holes of various diameters.",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Engine: 17 kW / 15 kW",
+            "Feed stroke: 1,260 - 1,760 mm",
+            "Rotary torque: 1,600 Nm",
+            "Weight: 1,400 kg"
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Contact us</a> for price, delivery time or help choosing the right model.",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Voyager brochure (ENG)",
+          "href": "/assets/docs/marini-voyager-broschyr.pdf",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Quarry product catalogue (ENG)",
+          "href": "/assets/docs/marini-stenbrott-produktkatalog.pdf",
+          "gen": true
+        },
+        {
+          "type": "datasheet",
+          "title": "Technical data",
+          "tagline": "Marini Voyager",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Undercarriage",
+              "rows": [
+                {
+                  "label": "Wheel base",
+                  "metric": "1,080 mm"
+                },
+                {
+                  "label": "Track",
+                  "metric": "1,000 mm"
+                },
+                {
+                  "label": "Pad width",
+                  "metric": "230 mm"
+                },
+                {
+                  "label": "Max. climbing ability",
+                  "metric": "80 %"
+                },
+                {
+                  "label": "Max. speed",
+                  "metric": "1.67 km/h"
+                }
+              ]
+            },
+            {
+              "title": "Power pack",
+              "rows": [
+                {
+                  "label": "Diesel engine",
+                  "metric": "Lombardini LDW 1003, 17 kW at 3,000 rpm"
+                },
+                {
+                  "label": "Electric motor",
+                  "metric": "15 kW at 2,900 rpm"
+                },
+                {
+                  "label": "Main pump",
+                  "metric": "40 l/min at 200 bar"
+                },
+                {
+                  "label": "Oil tank",
+                  "metric": "50 l"
+                },
+                {
+                  "label": "Fuel tank",
+                  "metric": "20 l"
+                },
+                {
+                  "label": "Fuel consumption",
+                  "metric": "2.5 l/h"
+                },
+                {
+                  "label": "Cooling",
+                  "metric": "Separate oil/air cooler"
+                }
+              ]
+            },
+            {
+              "title": "Mast",
+              "rows": [
+                {
+                  "label": "Mast",
+                  "metric": "CID 80 / CID 100"
+                },
+                {
+                  "label": "Feed stroke",
+                  "metric": "1,760 mm"
+                },
+                {
+                  "label": "Total length",
+                  "metric": "3,300 mm / 3,400 mm"
+                },
+                {
+                  "label": "Feed force",
+                  "metric": "6 kN / 10 kN"
+                },
+                {
+                  "label": "Retract force",
+                  "metric": "10 kN / 15 kN"
+                }
+              ]
+            },
+            {
+              "title": "Rotary head",
+              "rows": [
+                {
+                  "label": "Rotary head",
+                  "metric": "ID 160 / ID CD (coring)"
+                },
+                {
+                  "label": "Max. torque",
+                  "metric": "1,600 Nm / 35 Nm"
+                },
+                {
+                  "label": "Rotary speed",
+                  "metric": "60 / 1,300 rpm"
+                },
+                {
+                  "label": "Gears",
+                  "metric": "1"
+                },
+                {
+                  "label": "Head passage",
+                  "metric": "1 inch"
+                }
+              ]
+            },
+            {
+              "title": "Rock drill",
+              "rows": [
+                {
+                  "label": "Type",
+                  "metric": "MA 90 / MA 100 S ID"
+                },
+                {
+                  "label": "Max. torque",
+                  "metric": "- / 1,000 Nm"
+                },
+                {
+                  "label": "Max. speed",
+                  "metric": "190 / 100 rpm"
+                },
+                {
+                  "label": "Impact energy",
+                  "metric": "180 Nm"
+                },
+                {
+                  "label": "Impact frequency",
+                  "metric": "2,500 / 2,800 blows/min"
+                },
+                {
+                  "label": "Threaded and self-anchoring rods",
+                  "metric": "R32 / R38 LH, shank 22x108 or 25x108 mm"
+                }
+              ]
+            }
+          ],
+          "note": "",
+          "source": "Information taken from Marini's quarry product catalogue and the model brochures.",
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 2,
+          "narrow": false,
+          "zoom": true,
+          "more": false,
+          "items": [
+            {
+              "title": "Vertical drilling: dimensions",
+              "image": "/assets/img/marini-drill-voyager-vertical.webp",
+              "alt": "Voyager: Vertical drilling: dimensions",
+              "width": 493,
+              "height": 485
+            },
+            {
+              "title": "Horizontal drilling: dimensions",
+              "image": "/assets/img/marini-drill-voyager-horizontal.webp",
+              "alt": "Voyager: Horizontal drilling: dimensions",
+              "width": 667,
+              "height": 639
+            },
+            {
+              "title": "Working area, side view",
+              "image": "/assets/img/marini-drill-voyager-area-side.webp",
+              "alt": "Voyager: Working area, side view",
+              "width": 736,
+              "height": 678
+            },
+            {
+              "title": "Working area, plan view (250°)",
+              "image": "/assets/img/marini-drill-voyager-area-plan.webp",
+              "alt": "Voyager: Working area, plan view (250°)",
+              "width": 525,
+              "height": 496
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "related",
+          "title": "See also",
+          "items": [
+            {
+              "href": "/produkter/marini/stenbrottsborrning",
+              "mutual": false
+            },
+            {
+              "href": "/produkter/marini/stenbrottsborrning/big-driller"
+            },
+            {
+              "href": "/produkter/marini/stenbrottsborrning/driller-id"
+            },
+            {
+              "href": "/produkter/marini/stenbrottsborrning/hor-drill-id"
+            }
+          ],
+          "gen": true
+        }
+      ]
+    },
+    "es": {
+      "title": "Voyager",
+      "h1": "Marini Voyager",
+      "description": "Voyager es una unidad de perforación hidráulica autopropulsada sobre orugas de goma para barrenos horizontales, verticales e inclinados. La acciona un grupo hidráulico con motor diésel o de gasolina d",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Marini logotyp",
+          "href": "/produkter/marini",
+          "width": 637,
+          "height": 86,
+          "src": "/assets/img/logo-marini.webp",
+          "gen": true
+        },
+        {
+          "type": "image",
+          "alt": "Marini Voyager",
+          "file": "/assets/img/marini-drill-voyager.webp",
+          "width": 1259,
+          "height": 1800,
+          "src": "/assets/img/marini-drill-voyager.webp",
+          "gen": true
+        },
+        {
+          "type": "carousel",
+          "autoplay": true,
+          "interval": 6,
+          "items": [
+            {
+              "src": "/assets/img/marini-drill-voyager-p1.webp",
+              "alt": "Marini Voyager (1/2)",
+              "width": 1043,
+              "height": 720
+            },
+            {
+              "src": "/assets/img/marini-drill-voyager-p2.webp",
+              "alt": "Marini Voyager (2/2)",
+              "width": 1043,
+              "height": 720
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "Voyager es una unidad de perforación hidráulica autopropulsada sobre orugas de goma para barrenos horizontales, verticales e inclinados. La acciona un grupo hidráulico con motor diésel o de gasolina de 17 kW o con motor eléctrico de 15 kW.",
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "Con el cabezal de rotación hidráulico y un martillo de fondo (DTH) neumático perfora barrenos grandes para el hilo diamantado. Con el cabezal y coronas diamantadas realiza sondeos de más de 30 metros con diámetros de 64 - 90 mm, y con perforadoras hidroneumáticas hace barrenos de distintos diámetros.",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Motor: 17 kW / 15 kW",
+            "Carrera: 1.260 - 1.760 mm",
+            "Par de rotación: 1.600 Nm",
+            "Peso: 1.400 kg"
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Contáctenos</a> para precio, plazo de entrega o ayuda para elegir el modelo adecuado.",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Folleto Voyager (ENG)",
+          "href": "/assets/docs/marini-voyager-broschyr.pdf",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Catálogo de productos para canteras (ENG)",
+          "href": "/assets/docs/marini-stenbrott-produktkatalog.pdf",
+          "gen": true
+        },
+        {
+          "type": "datasheet",
+          "title": "Datos técnicos",
+          "tagline": "Marini Voyager",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Tren de rodaje",
+              "rows": [
+                {
+                  "label": "Distancia entre ejes",
+                  "metric": "1.080 mm"
+                },
+                {
+                  "label": "Ancho de vía",
+                  "metric": "1.000 mm"
+                },
+                {
+                  "label": "Ancho de las zapatas",
+                  "metric": "230 mm"
+                },
+                {
+                  "label": "Pendiente máxima",
+                  "metric": "80 %"
+                },
+                {
+                  "label": "Velocidad máxima",
+                  "metric": "1,67 km/h"
+                }
+              ]
+            },
+            {
+              "title": "Grupo hidráulico",
+              "rows": [
+                {
+                  "label": "Motor diésel",
+                  "metric": "Lombardini LDW 1003, 17 kW a 3.000 rpm"
+                },
+                {
+                  "label": "Motor eléctrico",
+                  "metric": "15 kW a 2.900 rpm"
+                },
+                {
+                  "label": "Bomba principal",
+                  "metric": "40 l/min a 200 bar"
+                },
+                {
+                  "label": "Depósito de aceite",
+                  "metric": "50 l"
+                },
+                {
+                  "label": "Depósito de combustible",
+                  "metric": "20 l"
+                },
+                {
+                  "label": "Consumo de combustible",
+                  "metric": "2,5 l/h"
+                },
+                {
+                  "label": "Refrigeración",
+                  "metric": "Enfriador aceite/aire independiente"
+                }
+              ]
+            },
+            {
+              "title": "Mástil",
+              "rows": [
+                {
+                  "label": "Mástil",
+                  "metric": "CID 80 / CID 100"
+                },
+                {
+                  "label": "Carrera",
+                  "metric": "1.760 mm"
+                },
+                {
+                  "label": "Longitud total",
+                  "metric": "3.300 mm / 3.400 mm"
+                },
+                {
+                  "label": "Fuerza de empuje",
+                  "metric": "6 kN / 10 kN"
+                },
+                {
+                  "label": "Fuerza de retroceso",
+                  "metric": "10 kN / 15 kN"
+                }
+              ]
+            },
+            {
+              "title": "Cabezal de rotación",
+              "rows": [
+                {
+                  "label": "Cabezal de rotación",
+                  "metric": "ID 160 / ID CD (sondeo)"
+                },
+                {
+                  "label": "Par máximo",
+                  "metric": "1.600 Nm / 35 Nm"
+                },
+                {
+                  "label": "Velocidad de rotación",
+                  "metric": "60 / 1.300 rpm"
+                },
+                {
+                  "label": "Marchas",
+                  "metric": "1"
+                },
+                {
+                  "label": "Paso del cabezal",
+                  "metric": "1 pulgada"
+                }
+              ]
+            },
+            {
+              "title": "Perforadora",
+              "rows": [
+                {
+                  "label": "Tipo",
+                  "metric": "MA 90 / MA 100 S ID"
+                },
+                {
+                  "label": "Par máximo",
+                  "metric": "- / 1.000 Nm"
+                },
+                {
+                  "label": "Velocidad máxima",
+                  "metric": "190 / 100 rpm"
+                },
+                {
+                  "label": "Energía de impacto",
+                  "metric": "180 Nm"
+                },
+                {
+                  "label": "Frecuencia de golpeo",
+                  "metric": "2.500 / 2.800 golpes/min"
+                },
+                {
+                  "label": "Varillas roscadas y autoperforantes",
+                  "metric": "R32 / R38 LH, mango 22x108 o 25x108 mm"
+                }
+              ]
+            }
+          ],
+          "note": "",
+          "source": "Información tomada del catálogo de productos para canteras de Marini y de los folletos de los modelos.",
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 2,
+          "narrow": false,
+          "zoom": true,
+          "more": false,
+          "items": [
+            {
+              "title": "Perforación vertical: dimensiones",
+              "image": "/assets/img/marini-drill-voyager-vertical.webp",
+              "alt": "Voyager: Perforación vertical: dimensiones",
+              "width": 493,
+              "height": 485
+            },
+            {
+              "title": "Perforación horizontal: dimensiones",
+              "image": "/assets/img/marini-drill-voyager-horizontal.webp",
+              "alt": "Voyager: Perforación horizontal: dimensiones",
+              "width": 667,
+              "height": 639
+            },
+            {
+              "title": "Área de trabajo, vista lateral",
+              "image": "/assets/img/marini-drill-voyager-area-side.webp",
+              "alt": "Voyager: Área de trabajo, vista lateral",
+              "width": 736,
+              "height": 678
+            },
+            {
+              "title": "Área de trabajo, vista en planta (250°)",
+              "image": "/assets/img/marini-drill-voyager-area-plan.webp",
+              "alt": "Voyager: Área de trabajo, vista en planta (250°)",
+              "width": 525,
+              "height": 496
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "related",
+          "title": "Véase también",
+          "items": [
+            {
+              "href": "/produkter/marini/stenbrottsborrning",
+              "mutual": false
+            },
+            {
+              "href": "/produkter/marini/stenbrottsborrning/big-driller"
+            },
+            {
+              "href": "/produkter/marini/stenbrottsborrning/driller-id"
+            },
+            {
+              "href": "/produkter/marini/stenbrottsborrning/hor-drill-id"
+            }
+          ],
+          "gen": true
+        }
+      ]
+    },
+    "no": {
+      "title": "Voyager",
+      "h1": "Marini Voyager",
+      "description": "Voyager er en hydraulisk, selvgående borenhet på gummibelter for horisontale, vertikale og skrå hull. Den drives av et hydraulikkaggregat med diesel- eller bensinmotor på 17 kW eller en elmotor på 15 ",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Marini logotyp",
+          "href": "/produkter/marini",
+          "width": 637,
+          "height": 86,
+          "src": "/assets/img/logo-marini.webp",
+          "gen": true
+        },
+        {
+          "type": "image",
+          "alt": "Marini Voyager",
+          "file": "/assets/img/marini-drill-voyager.webp",
+          "width": 1259,
+          "height": 1800,
+          "src": "/assets/img/marini-drill-voyager.webp",
+          "gen": true
+        },
+        {
+          "type": "carousel",
+          "autoplay": true,
+          "interval": 6,
+          "items": [
+            {
+              "src": "/assets/img/marini-drill-voyager-p1.webp",
+              "alt": "Marini Voyager (1/2)",
+              "width": 1043,
+              "height": 720
+            },
+            {
+              "src": "/assets/img/marini-drill-voyager-p2.webp",
+              "alt": "Marini Voyager (2/2)",
+              "width": 1043,
+              "height": 720
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "Voyager er en hydraulisk, selvgående borenhet på gummibelter for horisontale, vertikale og skrå hull. Den drives av et hydraulikkaggregat med diesel- eller bensinmotor på 17 kW eller en elmotor på 15 kW.",
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "Med hydraulisk rotasjonshode og pneumatisk senkhammer (DTH) borer den store hull for diamantwiren. Med rotasjonshode og diamantkroner kjerneborer den over 30 meter med diametre på 64 - 90 mm, og med hydropneumatiske bergboremaskiner borer den hull med ulike diametre.",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Motor: 17 kW / 15 kW",
+            "Slaglengde: 1 260 - 1 760 mm",
+            "Dreiemoment: 1 600 Nm",
+            "Vekt: 1 400 kg"
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Kontakt oss</a> for pris, leveringstid eller hjelp til å velge riktig modell.",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Brosjyre Voyager (ENG)",
+          "href": "/assets/docs/marini-voyager-broschyr.pdf",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Produktkatalog steinbrudd (ENG)",
+          "href": "/assets/docs/marini-stenbrott-produktkatalog.pdf",
+          "gen": true
+        },
+        {
+          "type": "datasheet",
+          "title": "Tekniske data",
+          "tagline": "Marini Voyager",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Understell",
+              "rows": [
+                {
+                  "label": "Akselavstand",
+                  "metric": "1 080 mm"
+                },
+                {
+                  "label": "Sporvidde",
+                  "metric": "1 000 mm"
+                },
+                {
+                  "label": "Bredde på beltepanelene",
+                  "metric": "230 mm"
+                },
+                {
+                  "label": "Maks. stigningsevne",
+                  "metric": "80 %"
+                },
+                {
+                  "label": "Maks. hastighet",
+                  "metric": "1,67 km/h"
+                }
+              ]
+            },
+            {
+              "title": "Hydraulikkaggregat",
+              "rows": [
+                {
+                  "label": "Dieselmotor",
+                  "metric": "Lombardini LDW 1003, 17 kW ved 3 000 rpm"
+                },
+                {
+                  "label": "Elmotor",
+                  "metric": "15 kW ved 2 900 rpm"
+                },
+                {
+                  "label": "Hovedpumpe",
+                  "metric": "40 l/min ved 200 bar"
+                },
+                {
+                  "label": "Oljetank",
+                  "metric": "50 l"
+                },
+                {
+                  "label": "Drivstofftank",
+                  "metric": "20 l"
+                },
+                {
+                  "label": "Drivstofforbruk",
+                  "metric": "2,5 l/h"
+                },
+                {
+                  "label": "Kjøling",
+                  "metric": "Separat olje-/luftkjøler"
+                }
+              ]
+            },
+            {
+              "title": "Mast",
+              "rows": [
+                {
+                  "label": "Mast",
+                  "metric": "CID 80 / CID 100"
+                },
+                {
+                  "label": "Slaglengde",
+                  "metric": "1 760 mm"
+                },
+                {
+                  "label": "Total lengde",
+                  "metric": "3 300 mm / 3 400 mm"
+                },
+                {
+                  "label": "Matekraft",
+                  "metric": "6 kN / 10 kN"
+                },
+                {
+                  "label": "Trekkraft (inndraging)",
+                  "metric": "10 kN / 15 kN"
+                }
+              ]
+            },
+            {
+              "title": "Rotasjonshode",
+              "rows": [
+                {
+                  "label": "Rotasjonshode",
+                  "metric": "ID 160 / ID CD (kjerneboring)"
+                },
+                {
+                  "label": "Maks. dreiemoment",
+                  "metric": "1 600 Nm / 35 Nm"
+                },
+                {
+                  "label": "Turtall",
+                  "metric": "60 / 1 300 rpm"
+                },
+                {
+                  "label": "Gir",
+                  "metric": "1"
+                },
+                {
+                  "label": "Gjennomgang i hodet",
+                  "metric": "1 tomme"
+                }
+              ]
+            },
+            {
+              "title": "Bergboremaskin",
+              "rows": [
+                {
+                  "label": "Type",
+                  "metric": "MA 90 / MA 100 S ID"
+                },
+                {
+                  "label": "Maks. dreiemoment",
+                  "metric": "- / 1 000 Nm"
+                },
+                {
+                  "label": "Maks. turtall",
+                  "metric": "190 / 100 rpm"
+                },
+                {
+                  "label": "Slagenergi",
+                  "metric": "180 Nm"
+                },
+                {
+                  "label": "Slagfrekvens",
+                  "metric": "2 500 / 2 800 slag/min"
+                },
+                {
+                  "label": "Gjengede og selvborrende stenger",
+                  "metric": "R32 / R38 LH, skaft 22x108 eller 25x108 mm"
+                }
+              ]
+            }
+          ],
+          "note": "",
+          "source": "Opplysningene er hentet fra Marinis produktkatalog for steinbrudd og brosjyrene for modellene (engelsk).",
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 2,
+          "narrow": false,
+          "zoom": true,
+          "more": false,
+          "items": [
+            {
+              "title": "Vertikal boring: mål",
+              "image": "/assets/img/marini-drill-voyager-vertical.webp",
+              "alt": "Voyager: Vertikal boring: mål",
+              "width": 493,
+              "height": 485
+            },
+            {
+              "title": "Horisontal boring: mål",
+              "image": "/assets/img/marini-drill-voyager-horizontal.webp",
+              "alt": "Voyager: Horisontal boring: mål",
+              "width": 667,
+              "height": 639
+            },
+            {
+              "title": "Arbeidsområde, sideriss",
+              "image": "/assets/img/marini-drill-voyager-area-side.webp",
+              "alt": "Voyager: Arbeidsområde, sideriss",
+              "width": 736,
+              "height": 678
+            },
+            {
+              "title": "Arbeidsområde, planriss (250°)",
+              "image": "/assets/img/marini-drill-voyager-area-plan.webp",
+              "alt": "Voyager: Arbeidsområde, planriss (250°)",
+              "width": 525,
+              "height": 496
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "related",
+          "title": "Se også",
+          "items": [
+            {
+              "href": "/produkter/marini/stenbrottsborrning",
+              "mutual": false
+            },
+            {
+              "href": "/produkter/marini/stenbrottsborrning/big-driller"
+            },
+            {
+              "href": "/produkter/marini/stenbrottsborrning/driller-id"
+            },
+            {
+              "href": "/produkter/marini/stenbrottsborrning/hor-drill-id"
+            }
+          ],
+          "gen": true
+        }
+      ]
+    }
+  }
+}
