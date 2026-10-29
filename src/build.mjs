@@ -10,6 +10,7 @@ import crypto from "node:crypto";
 import { renderDocument, renderNotFound, esc, flatBlocks } from "./lib/render.mjs";
 import { applyBasePath } from "./lib/apply-base.mjs";
 import { isHidden, visibleAncestor } from "./lib/visibility.mjs";
+import { videoIds, ensureThumbs } from "./lib/yt-thumbs.mjs";
 
 const ROOT = path.resolve(import.meta.dirname, "..");
 const args = process.argv.slice(2);
@@ -297,6 +298,16 @@ const trOf = (p, lang) => {
 
 // poster pictures of the YouTube videos (tools/fetch-yt-thumbs.mjs): shown until the visitor presses play
 const YT_SRC = path.join(ROOT, "assets-src/yt");
+{
+  // a video added to a page gets its picture here (needs the network once; a failure only leaves that video without a picture)
+  const ids = new Set();
+  for (const pg of pages.values()) videoIds(pg.i18n, ids);
+  try {
+    const r = await ensureThumbs(ids, YT_SRC, { timeoutMs: 6000 });
+    if (r.got) console.log(`video thumbnails: ${r.got} fetched`);
+    if (r.missing.length) console.warn(`! no poster picture for video ${r.missing.join(", ")}`);
+  } catch (e) { console.warn("! video thumbnails skipped: " + e.message); }
+}
 const ytThumbs = new Set(exists(YT_SRC) ? fs.readdirSync(YT_SRC).filter((f) => f.endsWith(".webp")).map((f) => f.slice(0, -5)) : []);
 
 function makeCtx(lang) {

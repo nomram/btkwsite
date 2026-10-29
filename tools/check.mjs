@@ -61,6 +61,7 @@ for (const f of htmlFiles) {
   if (h1s !== 1) err(`${rel}: ${h1s} <h1> elements`);
   if (!/<link rel="canonical" href="https?:\/\//.test(html)) err(`${rel}: missing canonical`);
   if (!/<html lang="[a-z-]+"/.test(html)) err(`${rel}: missing html lang`);
+  for (const m of html.matchAll(/<figure class="video" data-yt="([^"]+)"/g)) err(`${rel}: video ${m[1]} has no poster picture (node tools/fetch-yt-thumbs.mjs)`);
   for (const m of html.matchAll(/<img\b[^>]*>/g)) {
     if (!/\balt="/.test(m[0])) err(`${rel}: <img> without alt: ${m[0].slice(0, 80)}`);
     for (const s of m[0].matchAll(/\b(?:src|srcset)="([^"]+)"/g)) {
