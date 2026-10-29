@@ -29,6 +29,28 @@
       var about = (product || "") + (product && hole ? ", " : "") + (hole ? box.getAttribute("data-hole-short") + " " + hole + " mm" : "");
       ta.value = box.getAttribute("data-about") + " " + about + "\n\n";
     }
+    // after a request has been sent: the form gives way to a thank-you that repeats what happens next and, when the visitor came from a
+    // product page (?doc=<file>&dn=<name> in the address), offers that page's document to read in the meantime
+    // pending: no server takes the request, the visitor's mail program opens with the text and the visitor still has to press Send there:
+    // the form stays, the panel only says so and repeats what comes next
+    function thanks(pending) {
+      var panel = box.querySelector(".qf__thanks");
+      if (!pending) form.reset();
+      if (!panel) { if (!pending) say(box.getAttribute("data-ok")); return; }
+      if (!pending) say("");
+      if (pending) { var t = panel.querySelector("h2"); if (t && panel.getAttribute("data-pending")) t.textContent = panel.getAttribute("data-pending"); }
+      else {
+        form.hidden = true;
+        var intro = box.querySelector(".qf__intro"); if (intro) intro.hidden = true;
+        var h2 = box.querySelector(":scope > h2"); if (h2) h2.hidden = true;
+      }
+      try {
+        var q = new URLSearchParams(location.search), file = q.get("doc") || "", name = (q.get("dn") || "").slice(0, 90), line = panel.querySelector(".qf__thanks-doc"), a = line && line.querySelector("a");
+        if (a && /^[A-Za-z0-9._-]+\.pdf$/.test(file)) { a.href = (box.getAttribute("data-docbase") || "/assets/docs/") + file; a.textContent = name || file; a.target = "_blank"; a.rel = "noopener"; line.hidden = false; }
+      } catch (e) { /* no document line */ }
+      panel.hidden = false;
+      try { panel.focus({ preventScroll: true }); panel.scrollIntoView({ block: "center", behavior: "smooth" }); } catch (e) { /* ignore */ }
+    }
     function say(msg, bad) { status.textContent = msg; status.className = "qf__status" + (bad ? " is-bad" : " is-ok"); }
     // human check
     var guard = null, touched = 0, MIN_FILL = 7000, tx = {};
@@ -76,7 +98,7 @@
       e.preventDefault();
       if (!validate()) return;
       var data = new FormData(form);
-      if (data.get("website")) { say(box.getAttribute("data-ok")); form.reset(); return; } // honeypot: pretend success
+      if (data.get("website")) { thanks(); return; } // honeypot: pretend success
       var endpoint = box.getAttribute("data-endpoint");
       var btn = form.querySelector("button[type=submit]");
       if (window.bkGuard && guard && !guard.passed()) { say(tx.need || "", true); guard.nudge(); return; }
@@ -98,13 +120,14 @@
             opts = { method: "POST", body: JSON.stringify(row),
               headers: { "Content-Type": "application/json", apikey: key, Authorization: "Bearer " + key, Prefer: "return=minimal" } };
           }
-          return fetch(endpoint, opts).then(function (r) { if (!r.ok) throw new Error(String(r.status)); say(box.getAttribute("data-ok")); form.reset(); });
+          return fetch(endpoint, opts).then(function (r) { if (!r.ok) throw new Error(String(r.status)); thanks(); });
         }
         var to = box.getAttribute("data-mailto");
         var lines = ["name", "company", "email", "phone"].map(function (k) { return data.get(k) ? k + ": " + data.get(k) : ""; });
         lines.push(prod ? "product: " + prod : "", langLabel ? "language: " + langLabel + " (" + lang + ")" : "");
         var body = lines.filter(Boolean).join("\n") + "\n\n" + data.get("message");
         say(box.getAttribute("data-mail"));
+        thanks(true);
         window.location.href = "mailto:" + to + "?subject=" + encodeURIComponent(box.getAttribute("data-subject")) + "&body=" + encodeURIComponent(body);
       }).catch(function () { say(box.getAttribute("data-err"), true); })
         .then(function () { btn.disabled = false; });

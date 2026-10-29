@@ -369,6 +369,7 @@ function renderColumns(ctx, b) {
 }
 
 const SOCIAL_ICON = {
+  youtube: '<svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="#fff" fill-rule="evenodd" d="M21.6 7.2a2.5 2.5 0 0 0-1.8-1.8C18.2 5 12 5 12 5s-6.2 0-7.8.4A2.5 2.5 0 0 0 2.4 7.2C2 8.8 2 12 2 12s0 3.2.4 4.8a2.5 2.5 0 0 0 1.8 1.8C5.8 19 12 19 12 19s6.2 0 7.8-.4a2.5 2.5 0 0 0 1.8-1.8c.4-1.6.4-4.8.4-4.8s0-3.2-.4-4.8zM10 15V9l5.2 3z"/></svg>',
   facebook: '<svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="#fff" d="M13.5 21v-8h2.7l.5-3.2h-3.2V7.8c0-.9.4-1.6 1.7-1.6h1.6V3.4c-.3 0-1.3-.1-2.4-.1-2.5 0-4.1 1.5-4.1 4.2v2.3H7.6V13h2.7v8z"/></svg>',
   instagram: '<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#fff" stroke-width="1.9" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="4.5"/><circle cx="12" cy="12" r="3.6"/><circle cx="16.8" cy="7.2" r=".7" fill="#fff"/></svg>',
   linkedin: '<svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="#fff" d="M5.2 9.4h3.1V19H5.2zM6.8 4.6a1.8 1.8 0 1 1 0 3.6 1.8 1.8 0 0 1 0-3.6zM10.4 9.4h3v1.3c.5-.8 1.5-1.5 3-1.5 3.1 0 3.7 2 3.7 4.700V19H17v-4.600c0-1.100 0-2.500-1.500-2.500s-1.800 1.200-1.800 2.400V19h-3.300z"/></svg>'
@@ -601,10 +602,10 @@ function renderQuote(ctx, b = {}) {
     need: u.guard_need || "En sak kvar: håll nere knappen ovan tills den blir grön och släpp.", alt: u.guard_alt || "Funkar det inte för dig? Skriv till oss på", checking: u.guard_checking || "Kontrollerar…", mail: c.email || ""
   };
   const extra = Object.entries(q.extra || {}).map(([k, v]) => `<input type="hidden" name="${esc(k)}" value="${esc(v)}">`).join("");
-  return `<section class="quote" id="offert" data-quote data-endpoint="${esc(q.endpoint || "")}" data-key="${esc(q.apiKey || "")}" data-mailto="${esc(c.email || "")}" data-lang-label="${esc(langLabel)}" data-hole-short="${T("quote_hole_short", "håldiameter")}" data-v-required="${T("quote_v_required", "Fyll i det här fältet.")}" data-v-email="${T("quote_v_email", "Ange en giltig e-postadress.")}" data-v-consent="${T("quote_v_consent", "Bocka i rutan för att godkänna att vi använder dina uppgifter, så kan du skicka förfrågan.")}" data-guard="${esc(JSON.stringify(guard))}" ` +
+  return `<section class="quote" id="offert" data-quote data-endpoint="${esc(q.endpoint || "")}" data-key="${esc(q.apiKey || "")}" data-mailto="${esc(c.email || "")}" data-docbase="/assets/docs/" data-lang-label="${esc(langLabel)}" data-hole-short="${T("quote_hole_short", "håldiameter")}" data-v-required="${T("quote_v_required", "Fyll i det här fältet.")}" data-v-email="${T("quote_v_email", "Ange en giltig e-postadress.")}" data-v-consent="${T("quote_v_consent", "Bocka i rutan för att godkänna att vi använder dina uppgifter, så kan du skicka förfrågan.")}" data-guard="${esc(JSON.stringify(guard))}" ` +
     `data-subject="${T("quote_subject", "Offertförfrågan")}" data-about="${T("quote_about", "Gäller:")}" data-sending="${T("quote_sending", "Skickar…")}" data-ok="${T("quote_ok", "Tack! Vi återkommer så snart vi kan.")}" ` +
     `data-err="${T("quote_err", "Det gick inte att skicka. Ring oss eller skriv till oss direkt.")}" data-mail="${T("quote_mail", "Ditt e-postprogram öppnas med meddelandet ifyllt, tryck på Skicka där.")}">` +
-    `${b.bare ? "" : `<h2>${T("quote_title", "Få offert")}</h2>`}<p class="muted">${T("quote_intro", "Berätta kort vad du behöver, så återkommer vi.")}</p>` +
+    `${b.bare ? "" : `<h2>${T("quote_title", "Få offert")}</h2>`}<p class="muted qf__intro">${esc(fmtTpl(u.quote_intro || "Berätta kort vad du behöver, så återkommer vi.", personOf(ctx)))}</p>` +
     `<form class="qf" method="post" action="${esc(q.endpoint || "#")}" novalidate>` +
     `<div class="qf__grid">${f("name", T("quote_name", "Namn"), "text", "name", true)}${f("company", T("quote_company", "Företag"), "text", "organization")}` +
     `${f("email", T("quote_email", "E-post"), "email", "email", true)}${f("phone", T("quote_phone", "Telefon"), "tel", "tel")}</div>` +
@@ -616,7 +617,10 @@ function renderQuote(ctx, b = {}) {
     `<p class="qf__consent"><label><input type="checkbox" name="consent" required> <span>${T("quote_consent", "Jag godkänner att mina uppgifter används för att besvara min förfrågan.")}` +
     `${privacy ? ` <a href="${esc(privacy)}">${T("quote_privacy", "Läs mer i integritetspolicyn")}</a>` : ""}</span></label></p>` +
     `<p><button class="btn" type="submit">${T("quote_send", "Skicka förfrågan")}${ICON.arrow}</button></p>` +
-    `<p class="qf__status" role="status" aria-live="polite"></p></form></section>`;
+    `<p class="qf__status" role="status" aria-live="polite"></p></form>` +
+    `<div class="qf__thanks" role="status" tabindex="-1" data-pending="${esc(u.quote_pending_title || "Nästan klart: tryck på Skicka i ditt e-postprogram")}" hidden><h2>${esc(u.quote_thanks_title || "Tack, vi har fått din förfrågan")}</h2><p>${esc(fmtTpl(u.quote_thanks_text || "Du får svar normalt inom en arbetsdag.", personOf(ctx)))}</p>` +
+    `<p class="qf__thanks-doc" hidden><span>${esc(u.quote_thanks_doc || "Medan du väntar kan du läsa:")}</span> <a class="btn btn--ghost btn--sm" href="#"></a></p>` +
+    `<p><a class="qf__thanks-more" href="${esc(ctx.url("/produkter"))}">${esc(u.quote_thanks_more || "Se fler produkter")}</a></p></div></section>`;
 }
 
 function renderSocial(ctx) {
@@ -1103,11 +1107,15 @@ function productQuoteCta(ctx, page, t, name) {
   if (!ctx.pages.has("/offert")) return "";
   if (flatBlocks(t.blocks || []).some((b) => b.type === "cta" || b.type === "quote")) return "";
   const u = ctx.ui;
-  if (page.template === "product" && t.title && t.title !== name && t.title.length <= 12) name = `${t.title}, ${name}`; // short model code + name, e.g. "ST-5, Silon"
-  const href = localizeHref(ctx, "/offert") + "?produkt=" + encodeURIComponent(name);
+  if (page.template === "product" && t.title && t.title !== name && t.title.length <= 12 && !name.toLowerCase().includes(t.title.toLowerCase())) name = `${t.title}, ${name}`; // short model code + name, e.g. "ST-5, Silon"
+  // the first document of the page that is shown in this language goes along: the thank-you step after sending offers it
+  const docs = flatBlocks(t.blocks || []).filter((b) => b.type === "button" && b.kind === "download" && !b.hidden && /^\/assets\/docs\/[A-Za-z0-9._-]+\.pdf$/.test(b.href || "") && !(ctx.lang !== ctx.defaultLang && docLang(ctx, b) === "sv"));
+  const doc = docs.find((b) => /datablad|datasheet|tds|broschyr|brochure|katalog|catalog/i.test(b.text || b.label || "")) || docs[0];
+  const href = localizeHref(ctx, "/offert") + "?produkt=" + encodeURIComponent(name) + (doc && String(doc.text || doc.label || "").length <= 80 ? "&doc=" + encodeURIComponent(doc.href.split("/").pop()) + "&dn=" + encodeURIComponent(doc.text || doc.label) : "");
+  const stock = page.stock === "stock" ? u.stock_in || "Lagerförs" : page.stock === "order" ? u.stock_order || "Levereras på beställning" : "";
   // the product name gets a slow orange underline when the band scrolls into view (site.js adds .is-seen): a quiet nudge, not an alarm
   const titleHtml = String(u.quote_cta_title || "Få offert på {name}").split("{name}").map(esc).join(`<span class="cta__name">${esc(name)}</span>`);
-  return `<section class="cta"><div class="container cta__inner"><div class="cta__text"><h2>${titleHtml}</h2><p>${esc(u.quote_cta_text || "Berätta kort vad du behöver, så återkommer vi med pris och leveranstid.")}</p></div>` +
+  return `<section class="cta"><div class="container cta__inner"><div class="cta__text"><h2>${titleHtml}</h2>${stock ? `<p class="cta__stock cta__stock--${esc(page.stock)}"><span aria-hidden="true"></span>${esc(stock)}</p>` : ""}<p>${esc(fmtTpl(u.quote_cta_text || "Berätta kort vad du behöver, så återkommer vi med pris och leveranstid.", personOf(ctx)))}</p></div>` +
     `<a class="btn btn--light" href="${esc(href)}">${esc(u.quote_title || "Få offert")}${ICON.arrow}</a></div></section>`;
 }
 
@@ -1122,6 +1130,11 @@ function renderOrigin(ctx, page, t) {
   const more = [(o.more && (o.more[ctx.lang] || o.more[ctx.defaultLang] || o.more.en)) || "", o.since ? fmtTpl(ctx.ui.origin_since || "Since {y} ({n} years)", { y: o.since, n: years }) : ""].filter(Boolean);
   return `<div class="origin"><button type="button" class="origin__btn" aria-expanded="false"><img src="${flagSrc(o.country)}" alt="" width="20" height="14"><span class="origin__main">${esc(ctx.ui.origin_of || "Product of")} <b>${esc(name)}</b></span>${more.length ? `<span class="origin__more">${more.map((x) => "· " + esc(x)).join(" ")}</span>` : ""}</button></div>`;
 }
+const personOf = (ctx) => {
+  const c = (ctx.site && ctx.site.contact) || {};
+  const full = (c.person && c.person.name) || "";
+  return { person: full.split(/\s+/)[0] || "", phone: (c.phones && c.phones[0] && c.phones[0].value) || "" };
+};
 const fmtTpl = (s, o) => String(s).replace(/\{(\w+)\}/g, (m, k) => (o[k] != null ? o[k] : m));
 
 export function renderMain(ctx, page, t) {

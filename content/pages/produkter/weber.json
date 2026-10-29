@@ -758,5 +758,10 @@
   "source": {
     "url": "https://www.betongakuten.se/produkter/weber"
   },
-  "logo": "/assets/img/logo-weber.webp"
+  "logo": "/assets/img/logo-weber.webp",
+  "hideIn": [
+    "en",
+    "es",
+    "no"
+  ]
 }

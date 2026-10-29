@@ -8,7 +8,8 @@
   "order": 8,
   "published": true,
   "hero": {
-    "image": "/assets/img/mapei-hero.webp"
+    "image": "/assets/img/mapei-hero.webp",
+    "anchor": "r"
   },
   "i18n": {
     "sv": {
@@ -522,5 +523,10 @@
   "source": {
     "url": "https://www.betongakuten.se/produkter/mapei"
   },
-  "logo": "/assets/img/logo-mapei.webp"
+  "logo": "/assets/img/logo-mapei.webp",
+  "hideIn": [
+    "en",
+    "es",
+    "no"
+  ]
 }
