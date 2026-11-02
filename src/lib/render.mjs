@@ -199,6 +199,20 @@ function cardsAreSquare(ctx, b) {
   });
   return ratios.length > 0 && ratios.every((r) => r !== null && r >= 0.85 && r <= 1.2);
 }
+// Products page: a compact card with a photo (3:2), name, two lines of text, and a footer row with "Read more" at one end and the small logo of the brand at
+// the other. Item fields: photo (picture), photoX / photoY (percent: the part of the picture that stays in view), photoZoom (1 = the whole frame).
+// Without a photo the logo is shown large on a light surface. Set by the alignment app (tools/fx-align.mjs, tab Thumbnails).
+const numOr = (v, d) => (v !== undefined && v !== null && v !== "" && Number.isFinite(Number(v)) ? Number(v) : d);
+function compactCard(ctx, it, idx, title, href) {
+  const pg = ctx.pages && ctx.pages.get(it.href), logo = pg && pg.logo;
+  const lvl = ctx._cardLevel || 3;
+  const mini = logo ? imgTag(ctx, logo, "", { cls: "card__mini", sizes: "96px" }) : "";
+  const media = it.photo
+    ? `<span class="card__media card__media--photo">${imgTag(ctx, it.photo, it.photoAlt || "", { cls: "card__photo", sizes: "(min-width: 1000px) 300px, (min-width: 560px) 45vw, 100vw" }).replace("<img ", `<img style="--px:${numOr(it.photoX, 50)}%;--py:${numOr(it.photoY, 50)}%;--pz:${numOr(it.photoZoom, 1)}" `)}</span>`
+    : `<span class="card__media card__media--logo">${logo ? imgTag(ctx, logo, it.alt || title, { cls: "card__logo", sizes: "240px" }) : ""}</span>`;
+  const text = it.text || ctx.edit ? `<p class="card__text"${editFld(ctx, `items.${idx}.text`)}>${esc(it.text || "")}</p>` : "";
+  return `<li class="card card--photo"><a class="card__link" href="${esc(href)}">${media}<span class="card__body"><h${lvl} class="card__title"${editFld(ctx, `items.${idx}.title`)}>${esc(title)}</h${lvl}>${text}<span class="card__foot"><span class="card__more">${esc(ctx.ui.read_more || "Läs mer")}${ICON.arrow}</span>${mini}</span></span></a></li>`;
+}
 function renderCards(ctx, b) {
   const square = cardsAreSquare(ctx, b);
   const shownItems = (b.items || []).map((it, idx) => [it, idx]).filter(([it]) => shown(ctx, it.href));
@@ -208,12 +222,13 @@ function renderCards(ctx, b) {
     const cinfo = it.image && !ctx.edit ? ctx.image(it.image) : null;
     const cbaked = !!(cinfo && (square ? cinfo.tilesq : cinfo.tile43));
     const img = cbaked ? `<img class="card__img" src="/assets/img/${esc(cinfo.name)}-${square ? "tilesq" : "tile43"}.webp" width="640" height="${square ? 640 : 480}" alt="${esc(it.alt || title)}" loading="lazy" decoding="async">` : it.image ? imgTag(ctx, it.image, it.alt || title, { cls: "card__img", sizes: "(min-width: 1000px) 280px, (min-width: 560px) 45vw, 100vw" }) : "";
+    if (it.group) return compactCard(ctx, it, idx, title, href);
     const text = it.text || ctx.edit ? `<p class="card__text"${editFld(ctx, `items.${idx}.text`)}>${esc(it.text || "")}</p>` : "";
     return `<li class="card"><a class="card__link" href="${esc(href)}">` +
       (img ? `<span class="card__media${cbaked ? " card__media--tile" : ""}">${img}</span>` : "") +
       `<span class="card__body"><h${ctx._cardLevel || 3} class="card__title"${editFld(ctx, `items.${idx}.title`)}>${esc(title)}</h${ctx._cardLevel || 3}>${text}<span class="card__more">${esc(ctx.ui.read_more || "Läs mer")}${ICON.arrow}</span></span></a></li>`;
   };
-  const ul = (list) => `<ul class="cards${square ? " cards--square" : ""}">${list.map(li).join("")}</ul>`;
+  const ul = (list) => `<ul class="cards${square ? " cards--square" : ""}${list.some(([it]) => it.group) ? " cards--photo" : ""}">${list.map(li).join("")}</ul>`;
   // Items marked with a group (machines / material) are listed under a heading each; site.js adds the buttons that show or hide a group
   const groups = ["machines", "material"].filter((g) => shownItems.some(([it]) => it.group === g));
   if (ctx.edit || !groups.length) return ul(shownItems);
@@ -651,13 +666,15 @@ function renderFxImage(ctx, b) {
     const x = Number(c.x), y = Number(c.y), lx = Number(c.lx), ly = Number(c.ly), len = Math.hypot(px(lx - x, W), px(ly - y, H));
     return `<span class="fx__c" data-dir="${c.dir === "l" ? "l" : "r"}"><button type="button" class="fx__dot" style="left:${x}%;top:${y}%" aria-label="${esc(c.text)}"></button>` +
       `<svg class="fx__line" viewBox="0 0 ${W} ${H}" aria-hidden="true"><path d="M${px(x, W).toFixed(1)} ${px(y, H).toFixed(1)}L${px(lx, W).toFixed(1)} ${px(ly, H).toFixed(1)}" style="--len:${Math.ceil(len) + 1}"/></svg>` +
-      `<span class="fx__label" style="left:${lx}%;top:${ly}%">${esc(c.text)}</span></span>`;
+      (c.image
+        ? `<span class="fx__label fx__card${c.v === "d" ? " is-below" : ""}" style="left:${lx}%;top:${ly}%;width:${Number(c.iw) || 30}%"><span class="fx__cap">${esc(c.text)}</span>${imgTag(ctx, c.image, c.alt || c.text, { sizes: "(min-width: 900px) 300px, 60vw" })}</span></span>`
+        : `<span class="fx__label" style="left:${lx}%;top:${ly}%">${esc(c.text)}</span></span>`);
   }).join("");
   // labels outside the picture need room above or below it (percent of the width: the picture's height is W/H of its width)
   const ys = calls.map((c) => Number(c.ly)), up = Math.max(0, -Math.min(0, ...ys, 0)), down = Math.max(0, Math.max(100, ...ys) - 100);
   const room = (n) => (n ? Math.round(((n + 4) / 100) * (H / W) * 1000) / 10 : 0);
   const style = `aspect-ratio:${W} / ${H}${up ? `;margin-top:${room(up)}%` : ""}${down ? `;margin-bottom:${room(down)}%` : ""}`;
-  const hint = b.overlay && b.hint ? `<p class="fx__hint">${ICON.eye}<span>${esc(b.hint)}</span></p>` : "";
+  const hint = b.hint ? `<p class="fx__hint">${ICON.eye}<span>${esc(b.hint)}</span></p>` : "";
   return `<figure class="figure figure--fx"><div class="fx" data-fx${area ? ` data-area="${area}"` : ""} style="${style}">${base}${over}${over ? '<span class="fx__lens" aria-hidden="true"></span>' : ""}${dots}</div>${b.caption ? `<figcaption>${esc(b.caption)}</figcaption>` : ""}${hint}</figure>`;
 }
 

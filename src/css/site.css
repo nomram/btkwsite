@@ -1227,3 +1227,25 @@ td.is-sized { font-weight: 700; }
 .fx__dot:hover ~ .fx__label, .fx__dot:focus-visible ~ .fx__label, .fx__c.is-open .fx__label { clip-path: inset(-12px -2px -12px 0); }
 .fx__c[data-dir="l"] .fx__dot:hover ~ .fx__label, .fx__c[data-dir="l"] .fx__dot:focus-visible ~ .fx__label, .fx__c[data-dir="l"].is-open .fx__label { clip-path: inset(-12px 0 -12px -2px); }
 .fx__dot:hover::before, .fx__dot:focus-visible::before, .fx__c.is-open .fx__dot::before { transform: scale(1.3); }
+
+/* products page: compact photo cards */
+.cards--photo { grid-template-columns: repeat(auto-fill, minmax(min(100%, 250px), 1fr)); gap: 1.1rem; }
+.card--photo .card__media { aspect-ratio: 3 / 2; padding: 0; background: var(--tile-grad); overflow: hidden; border-bottom: 1px solid var(--line); }
+.card__photo { width: 100%; height: 100%; object-fit: cover; object-position: var(--px, 50%) var(--py, 50%); transform: scale(var(--pz, 1)); transform-origin: var(--px, 50%) var(--py, 50%); transition: transform .5s; }
+.card:hover .card__photo { transform: scale(calc(var(--pz, 1) * 1.04)); }
+.card--photo .card__media--logo { display: grid; place-items: center; background: #f7f5f2; }
+.card__logo { width: 62%; height: auto; max-height: 60%; object-fit: contain; }
+.card--photo .card__body { padding: .85rem 1rem 1rem; gap: .35rem; }
+.card--photo .card__text { -webkit-line-clamp: 2; }
+.card__foot { display: flex; align-items: center; justify-content: space-between; gap: .6rem; margin-top: auto; padding-top: .55rem; }
+.card__foot .card__more { margin: 0; padding: 0; }
+.card__mini { height: 22px; width: auto; max-width: 92px; object-fit: contain; object-position: right center; flex: none; }
+@media (max-width: 640px) { .card--photo .card__body { padding: .65rem .75rem .8rem; } .card__mini { height: 18px; max-width: 70px; } }
+/* a callout whose label is a picture */
+.fx__card { padding: .35rem; background: #fff; border: 2px solid var(--dark); border-bottom-width: 2px; white-space: normal; text-transform: none; letter-spacing: 0; box-shadow: 0 8px 24px rgba(35, 31, 32, .25); }
+.fx__card img { display: block; width: 100%; height: auto; }
+.fx__cap { display: block; margin: 0 0 .3rem; font-size: .72rem; font-weight: 700; letter-spacing: .07em; text-transform: uppercase; }
+.fx__card.is-below { transform: none; }
+.fx__c[data-dir="l"] .fx__card.is-below { transform: translateX(-100%); }
+.cards .card--photo .card__title { margin: 0; font-size: 1.02rem; line-height: 1.3; }
+@media (max-width: 640px) { .cards .card--photo .card__title { font-size: .95rem; } }

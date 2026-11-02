@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Alignment app: dots and x-ray</title>
+<title>Alignment app</title>
 <style>
   :root { --o: #f37d03; --d: #231f20; --line: #ddd8d1; --bg: #f4f2ef; }
   * { box-sizing: border-box; }
@@ -38,29 +38,62 @@
   .crosshair { cursor: move; }
   @media (max-width: 1150px) { main { grid-template-columns: minmax(0, 1fr); } }
   .stage { max-width: 100%; }
+
+  select.sel { font: inherit; padding: .35rem .5rem; border: 1px solid #cfc9c1; border-radius: 3px; background: #fff; }
+  .tgrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: .6rem; margin-top: .8rem; }
+  .tcard { border: 2px solid var(--line); border-radius: 3px; background: #fff; cursor: pointer; overflow: hidden; }
+  .tcard.sel { border-color: var(--o); box-shadow: 0 0 0 2px rgba(243,125,3,.25); }
+  .tcard .fr { aspect-ratio: 3 / 2; overflow: hidden; background: #eee; }
+  .tcard .fr img, .tframe img { width: 100%; height: 100%; object-fit: cover; display: block; pointer-events: none; max-width: none; }
+  .tcard b { display: block; padding: .25rem .5rem; font-size: .8rem; }
+  .tframe { width: 480px; max-width: 100%; aspect-ratio: 3 / 2; overflow: hidden; background: #eee; border: 1px solid var(--line); cursor: grab; touch-action: none; user-select: none; position: relative; }
+  .tframe:active { cursor: grabbing; }
+  .tframe .grid { position: absolute; inset: 0; pointer-events: none; background: linear-gradient(90deg, transparent 33%, rgba(243,125,3,.35) 33%, rgba(243,125,3,.35) calc(33% + 1px), transparent calc(33% + 1px), transparent 66%, rgba(243,125,3,.35) 66%, rgba(243,125,3,.35) calc(66% + 1px), transparent calc(66% + 1px)), linear-gradient(0deg, transparent 33%, rgba(243,125,3,.35) 33%, rgba(243,125,3,.35) calc(33% + 1px), transparent calc(33% + 1px), transparent 66%, rgba(243,125,3,.35) 66%, rgba(243,125,3,.35) calc(66% + 1px), transparent calc(66% + 1px)); }
 </style>
 </head>
 <body>
 <header>
   <h1>Alignment app</h1>
-  <button id="tab-dots" class="on">Dots (IC 310)</button>
-  <button id="tab-xray">X-ray (pump module)</button>
+  <button id="tab-dots" class="on">Dots</button>
+  <button id="tab-thumbs">Thumbnails</button>
+  <button id="tab-xray">X-ray (on hold)</button>
 </header>
 
 <main id="dots">
   <div>
     <div class="panel">
-      <h2>Drag the orange dots onto the parts, and the dark squares to where the name should be written</h2>
-      <p class="muted">The line goes from the dot to the square, the name sits on a short rule that starts at the square (direction: to the right or to the left). The square may be outside the picture. On the site the line and the name only show while the pointer is on the dot.</p>
+      <p style="margin:0 0 .6rem"><label>Picture: <select id="target" class="sel"><option value="ic310">IC 310 machine (mixer, agitator, pump)</option><option value="haeny">Häny pumps (the cutaway picture)</option></select></label></p>
+      <h2>Drag the orange dots onto the parts, and the dark squares to where the label should be</h2>
+      <p class="muted">The line goes from the dot to the square. A name is written on a short rule that starts at the square; a picture sits on the square with its corner (up/down and left/right as chosen). The square may be outside the picture. On the site the line and the label only show while the pointer is on the dot.</p>
       <svg id="svg" class="edit"></svg>
     </div>
   </div>
   <div class="panel">
     <h2>Dots</h2>
     <div id="list"></div>
-    <p><button class="btn small" id="add">+ Add a dot</button></p>
+    <p><button class="btn small" id="add">+ Add a dot</button> <button class="btn small hide" id="add-pic">+ Add a dot with the picture</button></p>
     <p><button class="btn primary" id="save-dots">Save (all four languages)</button></p>
     <div id="status-dots" class="muted"></div>
+  </div>
+</main>
+
+<main id="thumbs" class="hide">
+  <div>
+    <div class="panel">
+      <h2>Placement and zoom of the card photos on the products page</h2>
+      <p class="muted"><b>Drag</b> the photo to choose which part stays in view, <b>mouse wheel</b> (or the slider) to zoom. The frame has the same proportions (3:2) as on the site; the thin lines are thirds. Click another photo below to adjust it. Nothing is saved until you press Save.</p>
+      <div class="tframe" id="tframe"></div>
+      <div class="tgrid" id="tgrid"></div>
+    </div>
+  </div>
+  <div class="panel">
+    <h2 id="tname">Photo</h2>
+    <div class="num"><label>Zoom</label><input type="range" id="t-zoom" min="1" max="4" step="0.01"><input type="number" id="n-zoom" step="0.01"></div>
+    <div class="num"><label>Left / right (%)</label><input type="range" id="t-x" min="0" max="100" step="0.1"><input type="number" id="n-x" step="0.1"></div>
+    <div class="num"><label>Up / down (%)</label><input type="range" id="t-y" min="0" max="100" step="0.1"><input type="number" id="n-y" step="0.1"></div>
+    <p><button class="btn small" id="t-reset">Reset this photo</button></p>
+    <p><button class="btn primary" id="save-thumbs">Save all photos</button></p>
+    <div id="status-thumbs" class="muted"></div>
   </div>
 </main>
 
@@ -96,36 +129,47 @@ const $ = (s, r = document) => r.querySelector(s);
 const LANGS = ["sv", "en", "es", "no"];
 let S = null, saved = null;
 const say = (id, msg, cls) => { const e = $(id); e.textContent = msg; e.className = cls || "muted"; };
-
-// ---------------------------------------------------------------- tabs
-for (const t of ["dots", "xray"]) $("#tab-" + t).onclick = () => { for (const u of ["dots", "xray"]) { $("#tab-" + u).classList.toggle("on", u === t); $("#" + u).classList.toggle("hide", u !== t); } };
+const TABS = ["dots", "thumbs", "xray"];
+for (const t of TABS) $("#tab-" + t).onclick = () => { for (const u of TABS) { $("#tab-" + u).classList.toggle("on", u === t); $("#" + u).classList.toggle("hide", u !== t); } if (t === "thumbs" && !T) initThumbs(); };
 
 // ---------------------------------------------------------------- dots
-let calls = [], sel = 0;
-const PADX = 80, PADY = 80;
+let calls = [], sel = 0, target = "ic310";
+const PADX = 90, PADY = 90;
 const svg = $("#svg");
 function pointer(e) { const p = svg.createSVGPoint(); p.x = e.clientX; p.y = e.clientY; return p.matrixTransform(svg.getScreenCTM().inverse()); }
 const r1 = (n) => Math.round(n * 10) / 10;
+const esc = (s) => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/"/g, "&quot;");
+function boxOf(c) { // the picture box of a callout, in picture units
+  const { width: W, height: H } = S.machine, bw = c.iw * W / 100, ph = bw * (S.pic ? S.pic.height / S.pic.width : 1) + 22, lx = c.lx * W / 100, ly = c.ly * H / 100;
+  return { x: c.dir === "l" ? lx - bw : lx, y: c.v === "d" ? ly : ly - ph, w: bw, h: ph };
+}
 function draw() {
   const { width: W, height: H, src } = S.machine;
   svg.setAttribute("viewBox", `${-PADX} ${-PADY} ${W + 2 * PADX} ${H + 2 * PADY}`);
   let h = `<rect x="${-PADX}" y="${-PADY}" width="${W + 2 * PADX}" height="${H + 2 * PADY}" fill="#fafafa"/><rect x="0" y="0" width="${W}" height="${H}" fill="#fff" stroke="#ddd"/><image href="/img/${src}" x="0" y="0" width="${W}" height="${H}"/>`;
   calls.forEach((c, i) => {
     const x = c.x * W / 100, y = c.y * H / 100, lx = c.lx * W / 100, ly = c.ly * H / 100, l = i === sel, txt = (c.text.sv || "").toUpperCase();
-    const tw = Math.max(40, txt.length * 8.6) + 6, ex = c.dir === "l" ? lx - tw : lx + tw;
-    h += `<g data-i="${i}"><line x1="${x}" y1="${y}" x2="${lx}" y2="${ly}" stroke="#231f20" stroke-width="1.7" stroke-linecap="round"/>` +
-      `<line x1="${lx}" y1="${ly}" x2="${ex}" y2="${ly}" stroke="#231f20" stroke-width="2"/>` +
-      `<text x="${c.dir === "l" ? lx - 3 : lx + 3}" y="${ly - 5}" font-size="12" font-weight="700" letter-spacing=".8" text-anchor="${c.dir === "l" ? "end" : "start"}" fill="#231f20">${txt.replace(/&/g, "&amp;").replace(/</g, "&lt;")}</text>` +
-      `<rect class="anc" data-i="${i}" x="${lx - 6}" y="${ly - 6}" width="12" height="12" fill="#231f20" stroke="${l ? "#f37d03" : "#fff"}" stroke-width="2.5" style="cursor:move"/>` +
+    h += `<g><line x1="${x}" y1="${y}" x2="${lx}" y2="${ly}" stroke="#231f20" stroke-width="1.7" stroke-linecap="round"/>`;
+    if (c.image) {
+      const b = boxOf(c);
+      h += `<rect x="${b.x}" y="${b.y}" width="${b.w}" height="${b.h}" fill="#fff" stroke="#231f20" stroke-width="2" opacity=".96"/><text x="${b.x + 6}" y="${b.y + 14}" font-size="11" font-weight="700" fill="#231f20">${esc(txt)}</text><image href="${esc(c.image)}" x="${b.x + 5}" y="${b.y + 20}" width="${b.w - 10}" height="${b.h - 25}" preserveAspectRatio="xMidYMid meet"/>`;
+    } else {
+      const tw = Math.max(40, txt.length * 8.6) + 6, ex = c.dir === "l" ? lx - tw : lx + tw;
+      h += `<line x1="${lx}" y1="${ly}" x2="${ex}" y2="${ly}" stroke="#231f20" stroke-width="2"/><text x="${c.dir === "l" ? lx - 3 : lx + 3}" y="${ly - 5}" font-size="12" font-weight="700" letter-spacing=".8" text-anchor="${c.dir === "l" ? "end" : "start"}" fill="#231f20">${esc(txt)}</text>`;
+    }
+    h += `<rect class="anc" data-i="${i}" x="${lx - 6}" y="${ly - 6}" width="12" height="12" fill="#231f20" stroke="${l ? "#f37d03" : "#fff"}" stroke-width="2.5" style="cursor:move"/>` +
       `<circle class="dot" data-i="${i}" cx="${x}" cy="${y}" r="8" fill="#f37d03" stroke="${l ? "#231f20" : "#fff"}" stroke-width="2.5" style="cursor:move"/>` +
       `<text x="${x + 11}" y="${y - 9}" font-size="11" font-weight="700" fill="#f37d03" stroke="#fff" stroke-width="3" paint-order="stroke">${i + 1}</text></g>`;
   });
   svg.innerHTML = h;
 }
 function list() {
-  $("#list").innerHTML = calls.map((c, i) => `<div class="card ${i === sel ? "sel" : ""}" data-i="${i}"><div class="top"><span>Dot ${i + 1}</span><button class="btn small" data-del="${i}">Remove</button></div>` +
-    LANGS.map((l) => `<div class="row"><span class="muted">${l}</span><input type="text" data-i="${i}" data-l="${l}" value="${(c.text[l] || "").replace(/"/g, "&quot;")}"></div>`).join("") +
-    `<div class="row"><span class="muted">dir</span><select data-dir="${i}" style="font:inherit;padding:.2rem"><option value="r" ${c.dir === "r" ? "selected" : ""}>name goes to the right of the square</option><option value="l" ${c.dir === "l" ? "selected" : ""}>name goes to the left of the square</option></select></div>` +
+  $("#list").innerHTML = calls.map((c, i) => `<div class="card ${i === sel ? "sel" : ""}" data-i="${i}"><div class="top"><span>Dot ${i + 1}${c.image ? " (picture)" : ""}</span><button class="btn small" data-del="${i}">Remove</button></div>` +
+    LANGS.map((l) => `<div class="row"><span class="muted">${l}</span><input type="text" data-i="${i}" data-l="${l}" value="${esc(c.text[l] || "")}"></div>`).join("") +
+    (c.image
+      ? `<div class="row"><span class="muted">size</span><input type="range" min="8" max="70" step="0.5" data-iw="${i}" value="${c.iw}"></div><div class="row"><span class="muted">place</span><select data-v="${i}" style="font:inherit;padding:.2rem"><option value="u" ${c.v === "u" ? "selected" : ""}>the picture goes above the square</option><option value="d" ${c.v === "d" ? "selected" : ""}>the picture goes below the square</option></select></div>`
+      : "") +
+    `<div class="row"><span class="muted">dir</span><select data-dir="${i}" style="font:inherit;padding:.2rem"><option value="r" ${c.dir === "r" ? "selected" : ""}>to the right of the square</option><option value="l" ${c.dir === "l" ? "selected" : ""}>to the left of the square</option></select></div>` +
     `<div class="muted">dot ${c.x}, ${c.y} %  square ${c.lx}, ${c.ly} %</div></div>`).join("");
 }
 let drag = null;
@@ -141,17 +185,61 @@ svg.addEventListener("pointermove", (e) => {
   draw(); const card = $(`.card[data-i="${drag.i}"] .muted:last-child`); if (card) card.textContent = `dot ${c.x}, ${c.y} %  square ${c.lx}, ${c.ly} %`;
 });
 svg.addEventListener("pointerup", () => { drag = null; list(); });
-$("#list").addEventListener("input", (e) => { const t = e.target; if (t.dataset.l) { calls[+t.dataset.i].text[t.dataset.l] = t.value; draw(); } });
-$("#list").addEventListener("change", (e) => { const t = e.target; if (t.dataset.dir !== undefined) { calls[+t.dataset.dir].dir = t.value; draw(); } });
+$("#list").addEventListener("input", (e) => { const t = e.target; if (t.dataset.l) { calls[+t.dataset.i].text[t.dataset.l] = t.value; draw(); } if (t.dataset.iw !== undefined) { calls[+t.dataset.iw].iw = +t.value; draw(); } });
+$("#list").addEventListener("change", (e) => { const t = e.target; if (t.dataset.dir !== undefined) { calls[+t.dataset.dir].dir = t.value; draw(); } if (t.dataset.v !== undefined) { calls[+t.dataset.v].v = t.value; draw(); } });
 $("#list").addEventListener("click", (e) => {
   const d = e.target.dataset.del; if (d !== undefined) { calls.splice(+d, 1); sel = 0; draw(); list(); return; }
   const card = e.target.closest(".card"); if (card && sel !== +card.dataset.i) { sel = +card.dataset.i; draw(); list(); }
 });
-$("#add").onclick = () => { calls.push({ x: 50, y: 50, lx: 50, ly: 104, dir: "r", text: { sv: "Ny", en: "New", es: "Nuevo", no: "Ny" } }); sel = calls.length - 1; draw(); list(); };
+$("#add").onclick = () => { calls.push({ x: 50, y: 50, lx: 50, ly: 104, dir: "r", v: "u", iw: 30, image: "", text: { sv: "Ny", en: "New", es: "Nuevo", no: "Ny" } }); sel = calls.length - 1; draw(); list(); };
+$("#add-pic").onclick = () => { const first = calls.find((c) => c.image); calls.push({ x: 50, y: 50, lx: 55, ly: 96, dir: "r", v: "u", iw: first ? first.iw : 26, image: first ? first.image : "", text: { sv: "Genomskärning", en: "Cutaway", es: "Corte", no: "Snitt" } }); sel = calls.length - 1; draw(); list(); };
 $("#save-dots").onclick = async () => {
   say("#status-dots", "Saving…");
-  const r = await (await fetch("/api/callouts", { method: "POST", body: JSON.stringify({ callouts: calls }) })).json();
+  const r = await (await fetch("/api/callouts", { method: "POST", body: JSON.stringify({ target, callouts: calls }) })).json();
   say("#status-dots", r.ok ? "Saved in the content files. Run the dev server or the build to see it on the site." : "Could not save: " + r.error, r.ok ? "ok" : "bad");
+};
+async function loadTarget(t) {
+  target = t; S = await (await fetch("/api/state?target=" + t)).json(); calls = S.callouts; sel = 0;
+  $("#add-pic").classList.toggle("hide", !calls.some((c) => c.image));
+  draw(); list();
+}
+$("#target").onchange = (e) => loadTarget(e.target.value);
+
+// ---------------------------------------------------------------- thumbnails
+let T = null, ti = 0;
+const tframe = $("#tframe");
+function frameStyle(t) { return `object-position:${t.x}% ${t.y}%;transform:scale(${t.zoom});transform-origin:${t.x}% ${t.y}%`; }
+function drawT() {
+  const t = T[ti];
+  $("#tname").textContent = t.name;
+  tframe.innerHTML = `<img src="/img/${t.file}" style="${frameStyle(t)}"><div class="grid"></div>`;
+  $("#t-zoom").value = $("#n-zoom").value = t.zoom; $("#t-x").value = $("#n-x").value = t.x; $("#t-y").value = $("#n-y").value = t.y;
+  [].forEach.call(document.querySelectorAll(".tcard"), (c, i) => { c.classList.toggle("sel", i === ti); const im = c.querySelector("img"); im.style.cssText = frameStyle(T[i]); });
+}
+function gridT() {
+  $("#tgrid").innerHTML = T.map((t, i) => `<div class="tcard" data-i="${i}"><div class="fr"><img src="/img/${t.file}" style="${frameStyle(t)}"></div><b>${esc(t.name)}</b></div>`).join("");
+}
+async function initThumbs() { T = await (await fetch("/api/thumbs")).json(); T.forEach((t) => (t.orig = { x: t.x, y: t.y, zoom: t.zoom })); gridT(); drawT(); }
+$("#tgrid").addEventListener("click", (e) => { const c = e.target.closest(".tcard"); if (c) { ti = +c.dataset.i; drawT(); } });
+let tdrag = null;
+tframe.addEventListener("pointerdown", (e) => { const t = T[ti]; tdrag = { px: e.clientX, py: e.clientY, x: t.x, y: t.y }; tframe.setPointerCapture(e.pointerId); });
+tframe.addEventListener("pointermove", (e) => {
+  if (!tdrag) return;
+  const t = T[ti], r = tframe.getBoundingClientRect(), fw = r.width, fh = r.height, sC = Math.max(fw / t.width, fh / t.height);
+  const ox = t.width * sC - fw, oy = t.height * sC - fh, z = t.zoom;
+  const dx = e.clientX - tdrag.px, dy = e.clientY - tdrag.py, dnx = z * ox + fw * (z - 1), dny = z * oy + fh * (z - 1);
+  if (dnx > 0.5) t.x = Math.min(100, Math.max(0, Math.round((tdrag.x - 100 * dx / dnx) * 10) / 10));
+  if (dny > 0.5) t.y = Math.min(100, Math.max(0, Math.round((tdrag.y - 100 * dy / dny) * 10) / 10));
+  drawT();
+});
+tframe.addEventListener("pointerup", () => { tdrag = null; });
+tframe.addEventListener("wheel", (e) => { e.preventDefault(); const t = T[ti]; t.zoom = Math.min(4, Math.max(1, Math.round(t.zoom * Math.pow(1.0012, -e.deltaY) * 100) / 100)); drawT(); }, { passive: false });
+for (const [k, id] of [["zoom", "zoom"], ["x", "x"], ["y", "y"]]) { $("#t-" + id).oninput = (e) => { T[ti][k] = +e.target.value; drawT(); }; $("#n-" + id).onchange = (e) => { T[ti][k] = +e.target.value; drawT(); }; }
+$("#t-reset").onclick = () => { Object.assign(T[ti], { x: 50, y: 50, zoom: 1 }); drawT(); };
+$("#save-thumbs").onclick = async () => {
+  say("#status-thumbs", "Saving…");
+  const r = await (await fetch("/api/thumbs", { method: "POST", body: JSON.stringify({ thumbs: T.map((t) => ({ slug: t.slug, x: t.x, y: t.y, zoom: t.zoom })) }) })).json();
+  say("#status-thumbs", r.ok ? "Saved in the content file. Run the dev server or the build to see it on the site." : "Could not save: " + r.error, r.ok ? "ok" : "bad");
 };
 
 // ---------------------------------------------------------------- x-ray
@@ -220,12 +308,9 @@ $("#save-xray").onclick = async () => {
 
 // ---------------------------------------------------------------- start
 (async () => {
-  S = await (await fetch("/api/state")).json();
-  calls = S.callouts; draw(); list(); initX();
-  new MutationObserver(() => {}).observe(document.body, {});
-  // the lens mask must survive a redraw
-  const w = () => stage.querySelector(".ovwrap");
-  const old = drawX; void old; void w;
+  await loadTarget("ic310");
+  // the x-ray tab needs the cutaway's size and the saved placement, which every state carries
+  initX();
 })();
 </script>
 </body>

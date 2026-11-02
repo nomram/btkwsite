@@ -260,14 +260,20 @@
               "height": 786,
               "src": "/assets/img/haeny-tech-plunger.webp",
               "caption": "Enkel (ZMP 610) och dubbel pumpmodul (ZMP 625)",
-              "overlay": "/assets/img/haeny-tech-plunger-xray.webp",
-              "overlayArea": {
-                "x": 22.2,
-                "y": 14,
-                "w": 23.6,
-                "h": 76.4
-              },
-              "hint": "Håll muspekaren över (eller tryck på) ZMP 610 till vänster för att se genomskärningen av pumpmodulen."
+              "hint": "Håll muspekaren över (eller tryck på) pricken på ZMP 610 för att se genomskärningen av pumpmodulen.",
+              "callouts": [
+                {
+                  "x": 35,
+                  "y": 50,
+                  "lx": 50,
+                  "ly": 97,
+                  "dir": "r",
+                  "v": "u",
+                  "iw": 34,
+                  "image": "/assets/img/haeny-4.webp",
+                  "text": "Genomskärning"
+                }
+              ]
             }
           ],
           "right": [
@@ -700,14 +706,20 @@
               "height": 786,
               "src": "/assets/img/haeny-tech-plunger.webp",
               "caption": "Single (ZMP 610) and double pump module (ZMP 625)",
-              "overlay": "/assets/img/haeny-tech-plunger-xray.webp",
-              "overlayArea": {
-                "x": 22.2,
-                "y": 14,
-                "w": 23.6,
-                "h": 76.4
-              },
-              "hint": "Hold the pointer over (or tap) the ZMP 610 on the left to see the cutaway of the pump module."
+              "hint": "Hold the pointer over (or tap) the dot on the ZMP 610 to see the cutaway of the pump module.",
+              "callouts": [
+                {
+                  "x": 35,
+                  "y": 50,
+                  "lx": 50,
+                  "ly": 97,
+                  "dir": "r",
+                  "v": "u",
+                  "iw": 34,
+                  "image": "/assets/img/haeny-4.webp",
+                  "text": "Cutaway"
+                }
+              ]
             }
           ],
           "right": [
@@ -1141,14 +1153,20 @@
               "height": 786,
               "src": "/assets/img/haeny-tech-plunger.webp",
               "caption": "Módulo de bomba simple (ZMP 610) y doble (ZMP 625)",
-              "overlay": "/assets/img/haeny-tech-plunger-xray.webp",
-              "overlayArea": {
-                "x": 22.2,
-                "y": 14,
-                "w": 23.6,
-                "h": 76.4
-              },
-              "hint": "Pase el cursor sobre la ZMP 610 de la izquierda (o tóquela) para ver el corte de la unidad de bomba."
+              "hint": "Pase el cursor sobre el punto de la ZMP 610 (o tóquelo) para ver el corte de la unidad de bomba.",
+              "callouts": [
+                {
+                  "x": 35,
+                  "y": 50,
+                  "lx": 50,
+                  "ly": 97,
+                  "dir": "r",
+                  "v": "u",
+                  "iw": 34,
+                  "image": "/assets/img/haeny-4.webp",
+                  "text": "Corte"
+                }
+              ]
             }
           ],
           "right": [
@@ -1582,14 +1600,20 @@
               "height": 786,
               "src": "/assets/img/haeny-tech-plunger.webp",
               "caption": "Enkel (ZMP 610) og dobbel pumpemodul (ZMP 625)",
-              "overlay": "/assets/img/haeny-tech-plunger-xray.webp",
-              "overlayArea": {
-                "x": 22.2,
-                "y": 14,
-                "w": 23.6,
-                "h": 76.4
-              },
-              "hint": "Hold musepekeren over (eller trykk på) ZMP 610 til venstre for å se tverrsnittet av pumpemodulen."
+              "hint": "Hold musepekeren over (eller trykk på) prikken på ZMP 610 for å se tverrsnittet av pumpemodulen.",
+              "callouts": [
+                {
+                  "x": 35,
+                  "y": 50,
+                  "lx": 50,
+                  "ly": 97,
+                  "dir": "r",
+                  "v": "u",
+                  "iw": 34,
+                  "image": "/assets/img/haeny-4.webp",
+                  "text": "Snitt"
+                }
+              ]
             }
           ],
           "right": [
