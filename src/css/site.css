@@ -1254,3 +1254,15 @@ td.is-sized { font-weight: 700; }
 .card:hover .card__mini, .card:focus-within .card__mini { filter: none; opacity: 1; }
 .card__mini--s { height: 16px; max-width: 68px; }
 @media (max-width: 640px) { .card__mini--s { height: 14px; max-width: 56px; } }
+
+/* callouts: line thickness that follows the picture's size, and brackets */
+.fx__line path { stroke-width: calc(1.7 * var(--fxk, 1)); }
+.fx__line--b path { stroke-width: calc(2.4 * var(--fxk, 1)); stroke-linejoin: round; stroke-linecap: round; }
+.fx__blabel { position: absolute; z-index: 1; padding: .12rem .5rem; font-size: .76rem; font-weight: 700; letter-spacing: .07em; text-transform: uppercase; line-height: 1.25; white-space: nowrap; color: var(--dark); background: rgba(255, 255, 255, .92); border-radius: 2px; box-shadow: 0 1px 6px rgba(35, 31, 32, .15); opacity: 0; transition: opacity .25s ease .16s; pointer-events: none; }
+.fx__blabel--below { transform: translate(-50%, 12px); }
+.fx__blabel--above { transform: translate(-50%, calc(-100% - 12px)); }
+.fx__blabel--right { transform: translate(12px, -50%); }
+.fx__blabel--left { transform: translate(calc(-100% - 12px), -50%); }
+.fx__dot:hover ~ .fx__blabel, .fx__dot:focus-visible ~ .fx__blabel, .fx__c.is-open .fx__blabel { opacity: 1; }
+/* video posters: the play button must not paint its own dark background over the picture (the picture is below it; the button's gradient overlay darkens it for the text) */
+.video--poster .video__play { background: none; }

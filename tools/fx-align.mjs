@@ -27,6 +27,7 @@ const read = (f) => JSON.parse(fs.readFileSync(path.join(ROOT, f), "utf8"));
 // the pictures that carry callouts: where they are in the content
 const TARGETS = {
   ic310: { file: IC_FILE, find: (j, l) => j.i18n[l].blocks.find((b) => b.type === "image" && /ic-310-ic-311-2\.webp$/.test(b.src || "")) },
+  ic325: { file: "content/pages/produkter/haeny/manuella-pumpar/ic-325-ccp.json", find: (j, l) => j.i18n[l].blocks.find((b) => b.type === "image" && /haeny-ic325-ccp-combo\.webp$/.test(b.src || "")) },
   haeny: { file: HAENY_FILE, find: (j, l) => j.i18n[l].blocks.flatMap((b) => b.left || []).find((x) => x.type === "image" && /haeny-tech-plunger\.webp$/.test(x.src || "")) }
 };
 
@@ -34,7 +35,7 @@ async function state(target = "ic310") {
   const t = TARGETS[target], j = read(t.file), img = t.find(j, "sv");
   const baseMeta = await sharp(BASE).metadata(), cut = await cutout();
   const callouts = (img.callouts || []).map((c, i) => ({
-    x: c.x, y: c.y, lx: c.lx, ly: c.ly, dir: c.dir || "r", v: c.v || "u", iw: c.iw || 30, image: c.image || "", text: Object.fromEntries(LANGS.map((l) => [l, ((t.find(j, l).callouts || [])[i] || {}).text || ""]))
+    kind: c.kind || "", x: c.x, y: c.y, lx: c.lx, ly: c.ly, x1: c.x1, y1: c.y1, x2: c.x2, y2: c.y2, tick: c.tick || 3, side: c.side === -1 ? -1 : 1, dir: c.dir || "r", v: c.v || "u", iw: c.iw || 30, image: c.image || "", text: Object.fromEntries(LANGS.map((l) => [l, ((t.find(j, l).callouts || [])[i] || {}).text || ""]))
   }));
   const meta = await sharp(path.join(ROOT, "assets-src/img", img.src.split("/").pop())).metadata();
   let pic = null;
@@ -47,7 +48,10 @@ function saveCallouts(target, list) {
   rw(t.file, (j) => {
     for (const l of LANGS) {
       const img = t.find(j, l);
-      img.callouts = list.map((c) => ({
+      img.callouts = list.map((c) => c.kind === "bracket" ? ({
+        kind: "bracket", x: +c.x, y: +c.y, x1: +c.x1, y1: +c.y1, x2: +c.x2, y2: +c.y2, tick: +c.tick || 3, side: +c.side === -1 ? -1 : 1,
+        text: String((c.text && c.text[l]) || (c.text && c.text.sv) || "")
+      }) : ({
         x: +c.x, y: +c.y, lx: +c.lx, ly: +c.ly, dir: c.dir === "l" ? "l" : "r",
         ...(c.image ? { v: c.v === "d" ? "d" : "u", iw: +c.iw || 30, image: c.image } : {}),
         text: String((c.text && c.text[l]) || (c.text && c.text.sv) || "")

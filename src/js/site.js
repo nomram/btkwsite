@@ -760,6 +760,11 @@
 
   // ---------- pictures with an effect: x-ray lens and labelled dots ----------
   [].forEach.call(document.querySelectorAll("[data-fx]"), function (box) {
+    // lines are drawn in the picture's own pixels: --fxk (picture width / shown width) keeps them as thick on a phone as on a desktop screen
+    var pw = Number(box.getAttribute("data-w")) || 0;
+    function fxk() { if (pw && box.clientWidth) box.style.setProperty("--fxk", (pw / box.clientWidth).toFixed(3)); }
+    fxk();
+    if (window.ResizeObserver) new ResizeObserver(fxk).observe(box); else window.addEventListener("resize", fxk);
     var a = (box.getAttribute("data-area") || "").split(",").map(Number);
     if (box.querySelector(".fx__over") && a.length === 4) {
       // the cutaway shows through a round lens that follows the pointer, while the pointer is over the part of the picture that has one

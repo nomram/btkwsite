@@ -62,7 +62,7 @@
 <main id="dots">
   <div>
     <div class="panel">
-      <p style="margin:0 0 .6rem"><label>Picture: <select id="target" class="sel"><option value="ic310">IC 310 machine (mixer, agitator, pump)</option><option value="haeny">Häny pumps (the cutaway picture)</option></select></label></p>
+      <p style="margin:0 0 .6rem"><label>Picture: <select id="target" class="sel"><option value="ic310">IC 310 machine (mixer, agitator, pump)</option><option value="ic325">IC 325 CCP (brackets: IC 325 and WIWA 2K)</option><option value="haeny">Häny pumps (the cutaway picture)</option></select></label></p>
       <h2>Drag the orange dots onto the parts, and the dark squares to where the label should be</h2>
       <p class="muted">The line goes from the dot to the square. A name is written on a short rule that starts at the square; a picture sits on the square with its corner (up/down and left/right as chosen). The square may be outside the picture. On the site the line and the label only show while the pointer is on the dot.</p>
       <svg id="svg" class="edit"></svg>
@@ -71,7 +71,7 @@
   <div class="panel">
     <h2>Dots</h2>
     <div id="list"></div>
-    <p><button class="btn small" id="add">+ Add a dot</button> <button class="btn small hide" id="add-pic">+ Add a dot with the picture</button></p>
+    <p><button class="btn small" id="add">+ Add a dot</button> <button class="btn small hide" id="add-brk">+ Add a bracket</button> <button class="btn small hide" id="add-pic">+ Add a dot with the picture</button></p>
     <p><button class="btn primary" id="save-dots">Save (all four languages)</button></p>
     <div id="status-dots" class="muted"></div>
   </div>
@@ -143,11 +143,27 @@ function boxOf(c) { // the picture box of a callout, in picture units
   const { width: W, height: H } = S.machine, bw = c.iw * W / 100, ph = bw * (S.pic ? S.pic.height / S.pic.width : 1) + 22, lx = c.lx * W / 100, ly = c.ly * H / 100;
   return { x: c.dir === "l" ? lx - bw : lx, y: c.v === "d" ? ly : ly - ph, w: bw, h: ph };
 }
+function brk(c) {
+  const { width: W, height: H } = S.machine, P1 = [c.x1 * W / 100, c.y1 * H / 100], P2 = [c.x2 * W / 100, c.y2 * H / 100], dx = P2[0] - P1[0], dy = P2[1] - P1[1], len = Math.hypot(dx, dy) || 1;
+  const side = +c.side === -1 ? -1 : 1, t = (+c.tick || 3) * W / 100 * side, nx = dy / len, ny = -dx / len;
+  return { P1, P2, A: [P1[0] + nx * t, P1[1] + ny * t], B: [P2[0] + nx * t, P2[1] + ny * t], M: [(P1[0] + P2[0]) / 2, (P1[1] + P2[1]) / 2], ox: -nx * side, oy: -ny * side };
+}
+function bracketSvg(c, i, l) {
+  const { width: W, height: H } = S.machine, g = brk(c), f = (p) => p[0].toFixed(1) + "," + p[1].toFixed(1), txt = (c.text.sv || "").toUpperCase();
+  const tx = g.M[0] + g.ox * 16, ty = g.M[1] + g.oy * 16 + 4, anchor = Math.abs(g.oy) >= Math.abs(g.ox) ? "middle" : g.ox > 0 ? "start" : "end";
+  return `<g><polyline points="${f(g.A)} ${f(g.P1)} ${f(g.P2)} ${f(g.B)}" fill="none" stroke="#231f20" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/>` +
+    `<text x="${tx}" y="${ty}" font-size="12" font-weight="700" letter-spacing=".8" text-anchor="${anchor}" fill="#231f20" stroke="#fff" stroke-width="3" paint-order="stroke">${esc(txt)}</text>` +
+    `<rect class="bs" data-i="${i}" x="${g.P1[0] - 6}" y="${g.P1[1] - 6}" width="12" height="12" fill="#2e7d32" stroke="${l ? "#231f20" : "#fff"}" stroke-width="2.5" style="cursor:move"/>` +
+    `<rect class="be" data-i="${i}" x="${g.P2[0] - 6}" y="${g.P2[1] - 6}" width="12" height="12" fill="#c62828" stroke="${l ? "#231f20" : "#fff"}" stroke-width="2.5" style="cursor:move"/>` +
+    `<circle class="dot" data-i="${i}" cx="${c.x * W / 100}" cy="${c.y * H / 100}" r="8" fill="#f37d03" stroke="${l ? "#231f20" : "#fff"}" stroke-width="2.5" style="cursor:move"/>` +
+    `<text x="${c.x * W / 100 + 11}" y="${c.y * H / 100 - 9}" font-size="11" font-weight="700" fill="#f37d03" stroke="#fff" stroke-width="3" paint-order="stroke">${i + 1}</text></g>`;
+}
 function draw() {
   const { width: W, height: H, src } = S.machine;
   svg.setAttribute("viewBox", `${-PADX} ${-PADY} ${W + 2 * PADX} ${H + 2 * PADY}`);
   let h = `<rect x="${-PADX}" y="${-PADY}" width="${W + 2 * PADX}" height="${H + 2 * PADY}" fill="#fafafa"/><rect x="0" y="0" width="${W}" height="${H}" fill="#fff" stroke="#ddd"/><image href="/img/${src}" x="0" y="0" width="${W}" height="${H}"/>`;
   calls.forEach((c, i) => {
+    if (c.kind === "bracket") { h += bracketSvg(c, i, i === sel); return; }
     const x = c.x * W / 100, y = c.y * H / 100, lx = c.lx * W / 100, ly = c.ly * H / 100, l = i === sel, txt = (c.text.sv || "").toUpperCase();
     h += `<g><line x1="${x}" y1="${y}" x2="${lx}" y2="${ly}" stroke="#231f20" stroke-width="1.7" stroke-linecap="round"/>`;
     if (c.image) {
@@ -163,8 +179,15 @@ function draw() {
   });
   svg.innerHTML = h;
 }
+function bracketCard(c, i) {
+  return `<div class="card ${i === sel ? "sel" : ""}" data-i="${i}"><div class="top"><span>Bracket ${i + 1}</span><button class="btn small" data-del="${i}">Remove</button></div>` +
+    LANGS.map((l) => `<div class="row"><span class="muted">${l}</span><input type="text" data-i="${i}" data-l="${l}" value="${esc(c.text[l] || "")}"></div>`).join("") +
+    `<div class="row"><span class="muted">ticks</span><input type="range" min="0.5" max="10" step="0.1" data-tick="${i}" value="${c.tick}"></div>` +
+    `<div class="row"><span class="muted">side</span><select data-side="${i}" style="font:inherit;padding:.2rem"><option value="1" ${+c.side !== -1 ? "selected" : ""}>ticks on the left of the direction (green start to red end)</option><option value="-1" ${+c.side === -1 ? "selected" : ""}>ticks on the other side</option></select></div>` +
+    `<div class="muted">green = start, red = end, orange = the dot the pointer touches. start ${c.x1}, ${c.y1} %  end ${c.x2}, ${c.y2} %  dot ${c.x}, ${c.y} %</div></div>`;
+}
 function list() {
-  $("#list").innerHTML = calls.map((c, i) => `<div class="card ${i === sel ? "sel" : ""}" data-i="${i}"><div class="top"><span>Dot ${i + 1}${c.image ? " (picture)" : ""}</span><button class="btn small" data-del="${i}">Remove</button></div>` +
+  $("#list").innerHTML = calls.map((c, i) => c.kind === "bracket" ? bracketCard(c, i) : `<div class="card ${i === sel ? "sel" : ""}" data-i="${i}"><div class="top"><span>Dot ${i + 1}${c.image ? " (picture)" : ""}</span><button class="btn small" data-del="${i}">Remove</button></div>` +
     LANGS.map((l) => `<div class="row"><span class="muted">${l}</span><input type="text" data-i="${i}" data-l="${l}" value="${esc(c.text[l] || "")}"></div>`).join("") +
     (c.image
       ? `<div class="row"><span class="muted">size</span><input type="range" min="8" max="70" step="0.5" data-iw="${i}" value="${c.iw}"></div><div class="row"><span class="muted">place</span><select data-v="${i}" style="font:inherit;padding:.2rem"><option value="u" ${c.v === "u" ? "selected" : ""}>the picture goes above the square</option><option value="d" ${c.v === "d" ? "selected" : ""}>the picture goes below the square</option></select></div>`
@@ -175,22 +198,23 @@ function list() {
 let drag = null;
 svg.addEventListener("pointerdown", (e) => {
   const t = e.target; if (!t.dataset || t.dataset.i === undefined) return;
-  drag = { i: +t.dataset.i, what: t.classList.contains("dot") ? "dot" : "anc" }; sel = drag.i; svg.setPointerCapture(e.pointerId); draw(); list(); e.preventDefault();
+  drag = { i: +t.dataset.i, what: t.classList.contains("dot") ? "dot" : t.classList.contains("bs") ? "bs" : t.classList.contains("be") ? "be" : "anc" }; sel = drag.i; svg.setPointerCapture(e.pointerId); draw(); list(); e.preventDefault();
 });
 svg.addEventListener("pointermove", (e) => {
   if (!drag) return;
   const p = pointer(e), c = calls[drag.i], { width: W, height: H } = S.machine;
   const x = r1(p.x / W * 100), y = r1(p.y / H * 100);
-  if (drag.what === "dot") { c.x = Math.min(100, Math.max(0, x)); c.y = Math.min(100, Math.max(0, y)); } else { c.lx = x; c.ly = y; }
+  if (drag.what === "dot") { c.x = Math.min(100, Math.max(0, x)); c.y = Math.min(100, Math.max(0, y)); } else if (drag.what === "bs") { c.x1 = x; c.y1 = y; } else if (drag.what === "be") { c.x2 = x; c.y2 = y; } else { c.lx = x; c.ly = y; }
   draw(); const card = $(`.card[data-i="${drag.i}"] .muted:last-child`); if (card) card.textContent = `dot ${c.x}, ${c.y} %  square ${c.lx}, ${c.ly} %`;
 });
 svg.addEventListener("pointerup", () => { drag = null; list(); });
-$("#list").addEventListener("input", (e) => { const t = e.target; if (t.dataset.l) { calls[+t.dataset.i].text[t.dataset.l] = t.value; draw(); } if (t.dataset.iw !== undefined) { calls[+t.dataset.iw].iw = +t.value; draw(); } });
-$("#list").addEventListener("change", (e) => { const t = e.target; if (t.dataset.dir !== undefined) { calls[+t.dataset.dir].dir = t.value; draw(); } if (t.dataset.v !== undefined) { calls[+t.dataset.v].v = t.value; draw(); } });
+$("#list").addEventListener("input", (e) => { const t = e.target; if (t.dataset.l) { calls[+t.dataset.i].text[t.dataset.l] = t.value; draw(); } if (t.dataset.iw !== undefined) { calls[+t.dataset.iw].iw = +t.value; draw(); } if (t.dataset.tick !== undefined) { calls[+t.dataset.tick].tick = +t.value; draw(); } });
+$("#list").addEventListener("change", (e) => { const t = e.target; if (t.dataset.dir !== undefined) { calls[+t.dataset.dir].dir = t.value; draw(); } if (t.dataset.v !== undefined) { calls[+t.dataset.v].v = t.value; draw(); } if (t.dataset.side !== undefined) { calls[+t.dataset.side].side = +t.value; draw(); } });
 $("#list").addEventListener("click", (e) => {
   const d = e.target.dataset.del; if (d !== undefined) { calls.splice(+d, 1); sel = 0; draw(); list(); return; }
   const card = e.target.closest(".card"); if (card && sel !== +card.dataset.i) { sel = +card.dataset.i; draw(); list(); }
 });
+$("#add-brk").onclick = () => { calls.push({ kind: "bracket", x: 50, y: 50, x1: 30, y1: 60, x2: 70, y2: 60, tick: 3, side: 1, text: { sv: "Ny", en: "New", es: "Nuevo", no: "Ny" } }); sel = calls.length - 1; draw(); list(); };
 $("#add").onclick = () => { calls.push({ x: 50, y: 50, lx: 50, ly: 104, dir: "r", v: "u", iw: 30, image: "", text: { sv: "Ny", en: "New", es: "Nuevo", no: "Ny" } }); sel = calls.length - 1; draw(); list(); };
 $("#add-pic").onclick = () => { const first = calls.find((c) => c.image); calls.push({ x: 50, y: 50, lx: 55, ly: 96, dir: "r", v: "u", iw: first ? first.iw : 26, image: first ? first.image : "", text: { sv: "Genomskärning", en: "Cutaway", es: "Corte", no: "Snitt" } }); sel = calls.length - 1; draw(); list(); };
 $("#save-dots").onclick = async () => {
@@ -201,6 +225,8 @@ $("#save-dots").onclick = async () => {
 async function loadTarget(t) {
   target = t; S = await (await fetch("/api/state?target=" + t)).json(); calls = S.callouts; sel = 0;
   $("#add-pic").classList.toggle("hide", !calls.some((c) => c.image));
+  $("#add-brk").classList.toggle("hide", t !== "ic325");
+  calls.forEach((c) => { if (c.kind === "bracket" && (c.x === undefined || c.x === null || c.x === "")) { c.x = Math.round((c.x1 + c.x2) / 2 * 10) / 10; c.y = Math.round((c.y1 + c.y2) / 2 * 10) / 10; } });
   draw(); list();
 }
 $("#target").onchange = (e) => loadTarget(e.target.value);

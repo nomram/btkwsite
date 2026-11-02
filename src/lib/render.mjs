@@ -662,7 +662,24 @@ function renderFxImage(ctx, b) {
   const area = b.overlay && b.overlayArea ? ["x", "y", "w", "h"].map((k) => Number(b.overlayArea[k]) || 0).join(",") : "";
   const calls = (Array.isArray(b.callouts) ? b.callouts : []).filter((c) => c && c.text);
   const px = (pct, total) => (Number(pct) / 100) * total;
+  // a bracket: from (x1, y1) to (x2, y2) with a short tick at each end (tick = length in percent of the width, side = 1 or -1: which side the ticks point to).
+  // The dot (x, y; by default the middle) is what the pointer touches; the bracket is then drawn from its middle out to both ends and the text appears beside it.
+  const bracket = (c) => {
+    const P1 = [px(c.x1, W), px(c.y1, H)], P2 = [px(c.x2, W), px(c.y2, H)], dx = P2[0] - P1[0], dy = P2[1] - P1[1], len = Math.hypot(dx, dy) || 1;
+    const side = Number(c.side) === -1 ? -1 : 1, t = px(Number(c.tick) || 3, W) * side;
+    const nx = dy / len, ny = -dx / len, M = [(P1[0] + P2[0]) / 2, (P1[1] + P2[1]) / 2];
+    const tk = (P) => [P[0] + nx * t, P[1] + ny * t], f = (p) => p.map((v) => v.toFixed(1)).join(" ");
+    const dA = `M${f(M)}L${f(P1)}L${f(tk(P1))}`, dB = `M${f(M)}L${f(P2)}L${f(tk(P2))}`, lenA = Math.ceil(len / 2 + Math.abs(t)) + 1;
+    const ox = -nx * side, oy = -ny * side; // the text goes to the side the ticks do not point to
+    const place = Math.abs(oy) >= Math.abs(ox) ? (oy > 0 ? "below" : "above") : ox > 0 ? "right" : "left";
+    const mx = ((c.x1 + c.x2) / 2).toFixed(2), my = ((c.y1 + c.y2) / 2).toFixed(2), dotX = c.x !== undefined && c.x !== "" ? c.x : mx, dotY = c.y !== undefined && c.y !== "" ? c.y : my;
+    return `<span class="fx__c fx__c--b"><button type="button" class="fx__dot" style="left:${dotX}%;top:${dotY}%" aria-label="${esc(c.text)}"></button>` +
+      `<svg class="fx__line fx__line--b" viewBox="0 0 ${W} ${H}" aria-hidden="true"><path d="${dA}" style="--len:${lenA}"/><path d="${dB}" style="--len:${lenA}"/></svg>` +
+      `<span class="fx__blabel fx__blabel--${place}" style="left:${mx}%;top:${my}%">${esc(c.text)}</span></span>`;
+  };
+  const hasBracket = calls.some((c) => c.kind === "bracket");
   const dots = calls.map((c) => {
+    if (c.kind === "bracket") return bracket(c);
     const x = Number(c.x), y = Number(c.y), lx = Number(c.lx), ly = Number(c.ly), len = Math.hypot(px(lx - x, W), px(ly - y, H));
     return `<span class="fx__c" data-dir="${c.dir === "l" ? "l" : "r"}"><button type="button" class="fx__dot" style="left:${x}%;top:${y}%" aria-label="${esc(c.text)}"></button>` +
       `<svg class="fx__line" viewBox="0 0 ${W} ${H}" aria-hidden="true"><path d="M${px(x, W).toFixed(1)} ${px(y, H).toFixed(1)}L${px(lx, W).toFixed(1)} ${px(ly, H).toFixed(1)}" style="--len:${Math.ceil(len) + 1}"/></svg>` +
@@ -673,9 +690,9 @@ function renderFxImage(ctx, b) {
   // labels outside the picture need room above or below it (percent of the width: the picture's height is W/H of its width)
   const ys = calls.map((c) => Number(c.ly)), up = Math.max(0, -Math.min(0, ...ys, 0)), down = Math.max(0, Math.max(100, ...ys) - 100);
   const room = (n) => (n ? Math.round(((n + 4) / 100) * (H / W) * 1000) / 10 : 0);
-  const style = `aspect-ratio:${W} / ${H}${up ? `;margin-top:${room(up)}%` : ""}${down ? `;margin-bottom:${room(down)}%` : ""}`;
+  const style = `aspect-ratio:${W} / ${H}${hasBracket ? ";margin-bottom:1.9rem" : ""}${up ? `;margin-top:${room(up)}%` : ""}${down ? `;margin-bottom:${room(down)}%` : ""}`;
   const hint = b.hint ? `<p class="fx__hint">${ICON.eye}<span>${esc(b.hint)}</span></p>` : "";
-  return `<figure class="figure figure--fx"><div class="fx" data-fx${area ? ` data-area="${area}"` : ""} style="${style}">${base}${over}${over ? '<span class="fx__lens" aria-hidden="true"></span>' : ""}${dots}</div>${b.caption ? `<figcaption>${esc(b.caption)}</figcaption>` : ""}${hint}</figure>`;
+  return `<figure class="figure figure--fx"><div class="fx" data-fx data-w="${W}"${area ? ` data-area="${area}"` : ""} style="${style}">${base}${over}${over ? '<span class="fx__lens" aria-hidden="true"></span>' : ""}${dots}</div>${b.caption ? `<figcaption>${esc(b.caption)}</figcaption>` : ""}${hint}</figure>`;
 }
 
 export function renderBlock(ctx, b) {

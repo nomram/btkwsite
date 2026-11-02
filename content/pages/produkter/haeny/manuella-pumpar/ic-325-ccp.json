@@ -26,7 +26,33 @@
           "alt": "Häny IC325 CCP: IC325 med CCP-modul",
           "src": "/assets/img/haeny-ic325-ccp-combo.webp",
           "width": 1800,
-          "height": 1800
+          "height": 1800,
+          "callouts": [
+            {
+              "kind": "bracket",
+              "x": 26,
+              "y": 50,
+              "x1": 1.5,
+              "y1": 60,
+              "x2": 40,
+              "y2": 79.5,
+              "tick": 3,
+              "side": 1,
+              "text": "IC 325"
+            },
+            {
+              "kind": "bracket",
+              "x": 62,
+              "y": 56,
+              "x1": 41.5,
+              "y1": 79.5,
+              "x2": 77,
+              "y2": 72.5,
+              "tick": 3,
+              "side": 1,
+              "text": "WIWA 2K"
+            }
+          ]
         },
         {
           "type": "carousel",
@@ -808,7 +834,33 @@
           "alt": "Häny IC325 CCP: IC325 with CCP module",
           "src": "/assets/img/haeny-ic325-ccp-combo.webp",
           "width": 1800,
-          "height": 1800
+          "height": 1800,
+          "callouts": [
+            {
+              "kind": "bracket",
+              "x": 26,
+              "y": 50,
+              "x1": 1.5,
+              "y1": 60,
+              "x2": 40,
+              "y2": 79.5,
+              "tick": 3,
+              "side": 1,
+              "text": "IC 325"
+            },
+            {
+              "kind": "bracket",
+              "x": 62,
+              "y": 56,
+              "x1": 41.5,
+              "y1": 79.5,
+              "x2": 77,
+              "y2": 72.5,
+              "tick": 3,
+              "side": 1,
+              "text": "WIWA 2K"
+            }
+          ]
         },
         {
           "type": "carousel",
@@ -1590,7 +1642,33 @@
           "alt": "Häny IC325 CCP: IC325 con módulo CCP",
           "src": "/assets/img/haeny-ic325-ccp-combo.webp",
           "width": 1800,
-          "height": 1800
+          "height": 1800,
+          "callouts": [
+            {
+              "kind": "bracket",
+              "x": 26,
+              "y": 50,
+              "x1": 1.5,
+              "y1": 60,
+              "x2": 40,
+              "y2": 79.5,
+              "tick": 3,
+              "side": 1,
+              "text": "IC 325"
+            },
+            {
+              "kind": "bracket",
+              "x": 62,
+              "y": 56,
+              "x1": 41.5,
+              "y1": 79.5,
+              "x2": 77,
+              "y2": 72.5,
+              "tick": 3,
+              "side": 1,
+              "text": "WIWA 2K"
+            }
+          ]
         },
         {
           "type": "carousel",
@@ -2372,7 +2450,33 @@
           "alt": "Häny IC325 CCP: IC325 med CCP-modul",
           "src": "/assets/img/haeny-ic325-ccp-combo.webp",
           "width": 1800,
-          "height": 1800
+          "height": 1800,
+          "callouts": [
+            {
+              "kind": "bracket",
+              "x": 26,
+              "y": 50,
+              "x1": 1.5,
+              "y1": 60,
+              "x2": 40,
+              "y2": 79.5,
+              "tick": 3,
+              "side": 1,
+              "text": "IC 325"
+            },
+            {
+              "kind": "bracket",
+              "x": 62,
+              "y": 56,
+              "x1": 41.5,
+              "y1": 79.5,
+              "x2": 77,
+              "y2": 72.5,
+              "tick": 3,
+              "side": 1,
+              "text": "WIWA 2K"
+            }
+          ]
         },
         {
           "type": "carousel",
