@@ -632,6 +632,35 @@ function renderSocial(ctx) {
   return items ? `<p class="social">${items}</p>` : "";
 }
 
+// A picture with an effect:
+//  overlay: "<picture>"  with  overlayArea: { x, y, w, h } (percent) + hint  = a second picture (same size, transparent where it shows nothing) that is
+//     seen through a round "x-ray" lens following the pointer, as long as the pointer is over overlayArea
+//  callouts: [{ x, y, lx, ly, dir: "r"|"l", text }]  = dots on the picture (x, y in percent); the pointer on a dot draws a line to (lx, ly), which
+//     may lie outside the picture, and writes the text on a short rule there (as in a parts diagram)
+// The first picture of the block is the ordinary one, so search engines and screen readers get it as it is.
+const isFxImage = (b) => !!(b && b.type === "image" && (b.overlay || (Array.isArray(b.callouts) && b.callouts.length)));
+function renderFxImage(ctx, b) {
+  const info = ctx.image && ctx.image(b.src);
+  const W = (info && info.w) || b.width || 1000, H = (info && info.h) || b.height || 1000;
+  const base = imgTag(ctx, b.src, b.alt || "", { sizes: "(min-width: 900px) 520px, 100vw" });
+  const over = b.overlay ? imgTag(ctx, b.overlay, "", { cls: "fx__over", sizes: "(min-width: 900px) 520px, 100vw" }).replace("<img ", '<img aria-hidden="true" ') : "";
+  const area = b.overlay && b.overlayArea ? ["x", "y", "w", "h"].map((k) => Number(b.overlayArea[k]) || 0).join(",") : "";
+  const calls = (Array.isArray(b.callouts) ? b.callouts : []).filter((c) => c && c.text);
+  const px = (pct, total) => (Number(pct) / 100) * total;
+  const dots = calls.map((c) => {
+    const x = Number(c.x), y = Number(c.y), lx = Number(c.lx), ly = Number(c.ly), len = Math.hypot(px(lx - x, W), px(ly - y, H));
+    return `<span class="fx__c" data-dir="${c.dir === "l" ? "l" : "r"}"><button type="button" class="fx__dot" style="left:${x}%;top:${y}%" aria-label="${esc(c.text)}"></button>` +
+      `<svg class="fx__line" viewBox="0 0 ${W} ${H}" aria-hidden="true"><path d="M${px(x, W).toFixed(1)} ${px(y, H).toFixed(1)}L${px(lx, W).toFixed(1)} ${px(ly, H).toFixed(1)}" style="--len:${Math.ceil(len) + 1}"/></svg>` +
+      `<span class="fx__label" style="left:${lx}%;top:${ly}%">${esc(c.text)}</span></span>`;
+  }).join("");
+  // labels outside the picture need room above or below it (percent of the width: the picture's height is W/H of its width)
+  const ys = calls.map((c) => Number(c.ly)), up = Math.max(0, -Math.min(0, ...ys, 0)), down = Math.max(0, Math.max(100, ...ys) - 100);
+  const room = (n) => (n ? Math.round(((n + 4) / 100) * (H / W) * 1000) / 10 : 0);
+  const style = `aspect-ratio:${W} / ${H}${up ? `;margin-top:${room(up)}%` : ""}${down ? `;margin-bottom:${room(down)}%` : ""}`;
+  const hint = b.overlay && b.hint ? `<p class="fx__hint">${ICON.eye}<span>${esc(b.hint)}</span></p>` : "";
+  return `<figure class="figure figure--fx"><div class="fx" data-fx${area ? ` data-area="${area}"` : ""} style="${style}">${base}${over}${over ? '<span class="fx__lens" aria-hidden="true"></span>' : ""}${dots}</div>${b.caption ? `<figcaption>${esc(b.caption)}</figcaption>` : ""}${hint}</figure>`;
+}
+
 export function renderBlock(ctx, b) {
   const html = renderBlockInner(ctx, b);
   if (!ctx.edit || b.__i == null) return html;
@@ -657,6 +686,7 @@ function renderBlockInner(ctx, b) {
       return list;
     }
     case "image": {
+      if (isFxImage(b) && !ctx.edit) return renderFxImage(ctx, b);
       // imgWidth: a small picture (px) centred in its column while the caption keeps the full width
       const img = imgTag(ctx, b.src, b.alt || "", { sizes: "(min-width: 900px) 520px, 100vw" }).replace("<img ", b.imgWidth ? `<img style="max-width:${Math.round(Number(b.imgWidth))}px" ` : "<img ");
       const inner = b.href ? `<a href="${esc(localizeHref(ctx, b.href))}"${/^https?:/.test(b.href) ? ' target="_blank" rel="noopener"' : ""}>${img}</a>` : img;
@@ -720,7 +750,7 @@ export function renderBlocks(ctx, blocks) {
     const b = list[i];
     ctx._cardLevel = seenHeading ? 3 : 2;
     if (b.type === "heading" || b.type === "datasheet" || (b.type === "button" && b.kind === "download")) seenHeading = true;
-    if (b.type === "image") { imgRun.push(b); continue; }
+    if (b.type === "image" && !(isFxImage(b) && !ctx.edit)) { imgRun.push(b); continue; }
     flushImgs();
     if (b.type === "button" && b.kind === "download") {
       let run = [];

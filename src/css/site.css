@@ -1198,3 +1198,32 @@ td.is-sized { font-weight: 700; }
 .cta__stock { display: inline-flex; align-items: center; gap: .5rem; margin: 0 0 .5rem; font-size: .82rem; font-weight: 700; letter-spacing: .02em; }
 .cta__stock span { width: .6rem; height: .6rem; border-radius: 50%; background: #4fb477; }
 .cta__stock--order span { background: #e8b84a; }
+
+/* pictures with an effect: x-ray lens (overlay) and labelled dots (callouts) */
+.fx { position: relative; }
+.fx > img:first-child { display: block; width: 100%; height: auto; }
+.fx__over { position: absolute; inset: 0; width: 100%; height: 100%; max-width: none; pointer-events: none; opacity: 0; transition: opacity .18s;
+  -webkit-mask-image: radial-gradient(circle var(--fx-r, 90px) at var(--fx-x, -999px) var(--fx-y, -999px), #000 0, #000 78%, transparent 100%);
+  mask-image: radial-gradient(circle var(--fx-r, 90px) at var(--fx-x, -999px) var(--fx-y, -999px), #000 0, #000 78%, transparent 100%); }
+.fx.is-lens .fx__over { opacity: 1; }
+.fx.is-full .fx__over { opacity: 1; -webkit-mask-image: none; mask-image: none; }
+.fx__lens { position: absolute; left: var(--fx-x, -999px); top: var(--fx-y, -999px); width: calc(var(--fx-r, 90px) * 1.56); height: calc(var(--fx-r, 90px) * 1.56); transform: translate(-50%, -50%); border-radius: 50%; border: 2px solid rgba(35, 31, 32, .5); box-shadow: 0 0 0 1px rgba(255, 255, 255, .7), inset 0 0 18px rgba(255, 255, 255, .35); pointer-events: none; opacity: 0; transition: opacity .18s; }
+.fx.is-lens .fx__lens { opacity: 1; }
+.fx.is-full .fx__lens { display: none; }
+.fx[data-area] { cursor: crosshair; touch-action: manipulation; }
+.fx__hint { display: flex; align-items: center; gap: .45rem; margin: .5rem 0 0; font-size: .8rem; color: var(--muted); }
+.fx__hint svg { flex: none; color: var(--primary); }
+.fx__c { position: absolute; inset: 0; pointer-events: none; }
+.fx__dot { position: absolute; width: 26px; height: 26px; margin: -13px 0 0 -13px; padding: 0; border: 0; border-radius: 50%; background: transparent; cursor: pointer; pointer-events: auto; z-index: 2; }
+.fx__dot::before { content: ""; position: absolute; inset: 6px; border-radius: 50%; background: var(--primary); box-shadow: 0 0 0 2px #fff, 0 1px 5px rgba(0, 0, 0, .4); transition: transform .15s; }
+.fx__dot::after { content: ""; position: absolute; inset: 2px; border-radius: 50%; border: 2px solid var(--primary); opacity: 0; animation: fxPulse 2.6s ease-out infinite; }
+@keyframes fxPulse { 0% { transform: scale(.55); opacity: .85; } 100% { transform: scale(1.35); opacity: 0; } }
+.fx__dot:focus-visible { outline: 2px solid var(--dark); outline-offset: 1px; }
+.fx__line { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; pointer-events: none; }
+.fx__line path { fill: none; stroke: var(--dark); stroke-width: 1.7; stroke-linecap: round; stroke-dasharray: var(--len); stroke-dashoffset: var(--len); transition: stroke-dashoffset .26s ease-out; }
+.fx__label { position: absolute; z-index: 1; transform: translateY(-100%); padding: .1rem .35rem .22rem 0; font-size: .76rem; font-weight: 700; letter-spacing: .07em; text-transform: uppercase; line-height: 1.2; white-space: nowrap; color: var(--dark); background: rgba(255, 255, 255, .88); border-bottom: 2px solid var(--dark); pointer-events: none; clip-path: inset(-12px 100% -12px 0); transition: clip-path .28s ease-out .12s; }
+.fx__c[data-dir="l"] .fx__label { transform: translate(-100%, -100%); padding: .1rem 0 .22rem .35rem; text-align: right; clip-path: inset(-12px 0 -12px 100%); }
+.fx__dot:hover ~ .fx__line path, .fx__dot:focus-visible ~ .fx__line path, .fx__c.is-open .fx__line path { stroke-dashoffset: 0; }
+.fx__dot:hover ~ .fx__label, .fx__dot:focus-visible ~ .fx__label, .fx__c.is-open .fx__label { clip-path: inset(-12px -2px -12px 0); }
+.fx__c[data-dir="l"] .fx__dot:hover ~ .fx__label, .fx__c[data-dir="l"] .fx__dot:focus-visible ~ .fx__label, .fx__c[data-dir="l"].is-open .fx__label { clip-path: inset(-12px 0 -12px -2px); }
+.fx__dot:hover::before, .fx__dot:focus-visible::before, .fx__c.is-open .fx__dot::before { transform: scale(1.3); }

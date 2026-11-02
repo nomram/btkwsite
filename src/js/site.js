@@ -758,6 +758,35 @@
     });
   }
 
+  // ---------- pictures with an effect: x-ray lens and labelled dots ----------
+  [].forEach.call(document.querySelectorAll("[data-fx]"), function (box) {
+    var a = (box.getAttribute("data-area") || "").split(",").map(Number);
+    if (box.querySelector(".fx__over") && a.length === 4) {
+      // the cutaway shows through a round lens that follows the pointer, while the pointer is over the part of the picture that has one
+      function place(e) {
+        var r = box.getBoundingClientRect(), px = e.clientX - r.left, py = e.clientY - r.top, fx = px / r.width * 100, fy = py / r.height * 100;
+        var hit = fx >= a[0] && fx <= a[0] + a[2] && fy >= a[1] && fy <= a[1] + a[3];
+        box.style.setProperty("--fx-x", px + "px"); box.style.setProperty("--fx-y", py + "px"); box.style.setProperty("--fx-r", Math.round(r.width * 0.2) + "px");
+        box.classList.toggle("is-lens", hit);
+        return hit;
+      }
+      box.addEventListener("pointermove", function (e) { if (e.pointerType === "touch") return; place(e); });
+      box.addEventListener("pointerleave", function () { box.classList.remove("is-lens"); });
+      // touch: a tap on the pump shows the whole cutaway, another tap puts it away
+      box.addEventListener("click", function (e) { if (e.pointerType === "mouse" || !e.pointerType && e.detail === 0) return; if (place(e) || box.classList.contains("is-full")) box.classList.toggle("is-full"); box.classList.remove("is-lens"); });
+    }
+    var cs = [].slice.call(box.querySelectorAll(".fx__c"));
+    cs.forEach(function (c) {
+      c.querySelector(".fx__dot").addEventListener("click", function (e) {
+        e.stopPropagation();
+        var on = c.classList.contains("is-open");
+        cs.forEach(function (x) { x.classList.remove("is-open"); });
+        if (!on) c.classList.add("is-open");
+      });
+    });
+    if (cs.length) document.addEventListener("click", function () { cs.forEach(function (x) { x.classList.remove("is-open"); }); });
+  });
+
   // ---------- products page: machines / material filter ----------
   // Both groups are in the page for search engines and without scripts; the buttons only hide a group. One group always stays on.
   [].forEach.call(document.querySelectorAll(".pfilter"), function (bar) {

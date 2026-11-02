@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Alignment app: dots and x-ray</title>
+<style>
+  :root { --o: #f37d03; --d: #231f20; --line: #ddd8d1; --bg: #f4f2ef; }
+  * { box-sizing: border-box; }
+  body { margin: 0; font: 14px/1.5 system-ui, "Segoe UI", sans-serif; color: var(--d); background: var(--bg); }
+  header { display: flex; align-items: center; gap: 1.25rem; padding: .7rem 1.25rem; background: var(--d); color: #fff; }
+  header h1 { font-size: 1rem; margin: 0 1rem 0 0; }
+  header button { background: none; border: 0; color: #cfc9c1; font: inherit; font-weight: 600; padding: .35rem .2rem; cursor: pointer; border-bottom: 3px solid transparent; }
+  header button.on { color: #fff; border-color: var(--o); }
+  main { display: grid; grid-template-columns: minmax(0, 1fr) 360px; gap: 1.25rem; padding: 1.25rem; align-items: start; }
+  .panel { background: #fff; border: 1px solid var(--line); border-radius: 4px; padding: 1rem; }
+  .panel h2 { margin: 0 0 .5rem; font-size: .95rem; }
+  .muted { color: #6b645f; font-size: .85rem; }
+  .stage { position: relative; background: #fff; border: 1px solid var(--line); overflow: hidden; user-select: none; touch-action: none; }
+  .stage img { display: block; pointer-events: none; }
+  svg.edit { display: block; width: 100%; height: auto; background: #fff; touch-action: none; }
+  .card { border: 1px solid var(--line); border-radius: 4px; padding: .6rem; margin: 0 0 .6rem; }
+  .card.sel { border-color: var(--o); box-shadow: 0 0 0 2px rgba(243,125,3,.2); }
+  .card .row { display: grid; grid-template-columns: 2.2rem 1fr; gap: .3rem .5rem; align-items: center; margin: .15rem 0; }
+  .card input[type=text], .num input, .num select { width: 100%; font: inherit; padding: .25rem .4rem; border: 1px solid #cfc9c1; border-radius: 3px; }
+  .card .top { display: flex; justify-content: space-between; align-items: center; margin-bottom: .3rem; font-weight: 700; }
+  button.btn { font: inherit; font-weight: 600; padding: .5rem .9rem; border-radius: 3px; border: 1.5px solid var(--d); background: #fff; cursor: pointer; }
+  button.btn.primary { background: var(--o); border-color: var(--o); color: #fff; }
+  button.btn.small { padding: .15rem .5rem; font-size: .8rem; }
+  .num { display: grid; grid-template-columns: 7rem 1fr 5.5rem; gap: .4rem .6rem; align-items: center; margin: .35rem 0; }
+  .num label { font-weight: 600; }
+  .num input[type=range] { width: 100%; }
+  #status { margin-top: .7rem; font-weight: 600; min-height: 1.4em; }
+  #status.ok { color: #2e7d32; } #status.bad { color: #b3261e; }
+  .hide { display: none !important; }
+  .ovwrap { position: absolute; inset: 0; pointer-events: none; }
+  .ovwrap img { position: absolute; max-width: none; }
+  .crosshair { cursor: move; }
+  @media (max-width: 1150px) { main { grid-template-columns: minmax(0, 1fr); } }
+  .stage { max-width: 100%; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Alignment app</h1>
+  <button id="tab-dots" class="on">Dots (IC 310)</button>
+  <button id="tab-xray">X-ray (pump module)</button>
+</header>
+
+<main id="dots">
+  <div>
+    <div class="panel">
+      <h2>Drag the orange dots onto the parts, and the dark squares to where the name should be written</h2>
+      <p class="muted">The line goes from the dot to the square, the name sits on a short rule that starts at the square (direction: to the right or to the left). The square may be outside the picture. On the site the line and the name only show while the pointer is on the dot.</p>
+      <svg id="svg" class="edit"></svg>
+    </div>
+  </div>
+  <div class="panel">
+    <h2>Dots</h2>
+    <div id="list"></div>
+    <p><button class="btn small" id="add">+ Add a dot</button></p>
+    <p><button class="btn primary" id="save-dots">Save (all four languages)</button></p>
+    <div id="status-dots" class="muted"></div>
+  </div>
+</main>
+
+<main id="xray" class="hide">
+  <div>
+    <div class="panel">
+      <h2>Move the mirrored cutaway over the ZMP 610 (left pump)</h2>
+      <p class="muted">Drag on the picture to move it, mouse wheel to scale, arrow keys to nudge (Shift = 5 px). Use <b>lean</b> and <b>lean starts at</b> to bend the lower part of the pump (it is seen from an angle in the photo). Match the pressure gauge, the outlet on the right, the ball valves and the inlet at the bottom.</p>
+      <div class="stage crosshair" id="xstage"></div>
+    </div>
+  </div>
+  <div class="panel">
+    <h2>Placement</h2>
+    <div class="num"><label>Opacity</label><input type="range" id="c-op" min="0" max="1" step="0.01" value="0.55"><input type="text" id="n-op" readonly></div>
+    <div class="num"><label>Scale</label><input type="range" id="c-scale" min="0.15" max="0.6" step="0.001"><input type="number" id="n-scale" step="0.001"></div>
+    <div class="num"><label>Left (px)</label><input type="range" id="c-left" min="-100" max="600" step="0.5"><input type="number" id="n-left" step="0.5"></div>
+    <div class="num"><label>Top (px)</label><input type="range" id="c-top" min="-300" max="500" step="0.5"><input type="number" id="n-top" step="0.5"></div>
+    <div class="num"><label>Lean</label><input type="range" id="c-shear" min="-0.3" max="0.5" step="0.002"><input type="number" id="n-shear" step="0.002"></div>
+    <div class="num"><label>Lean starts at</label><input type="range" id="c-splitY" min="0" max="1548" step="1"><input type="number" id="n-splitY" step="1"></div>
+    <p><label><input type="checkbox" id="lens"> Try the round lens (as on the site)</label></p>
+    <p><button class="btn primary" id="save-xray">Save and make the picture</button> <button class="btn small" id="reset">Back to saved</button></p>
+    <div id="status-xray" class="muted"></div>
+  </div>
+</main>
+
+<script>
+"use strict";
+const $ = (s, r = document) => r.querySelector(s);
+const LANGS = ["sv", "en", "es", "no"];
+let S = null, saved = null;
+const say = (id, msg, cls) => { const e = $(id); e.textContent = msg; e.className = cls || "muted"; };
+
+// ---------------------------------------------------------------- tabs
+for (const t of ["dots", "xray"]) $("#tab-" + t).onclick = () => { for (const u of ["dots", "xray"]) { $("#tab-" + u).classList.toggle("on", u === t); $("#" + u).classList.toggle("hide", u !== t); } };
+
+// ---------------------------------------------------------------- dots
+let calls = [], sel = 0;
+const PADX = 80, PADY = 80;
+const svg = $("#svg");
+function pointer(e) { const p = svg.createSVGPoint(); p.x = e.clientX; p.y = e.clientY; return p.matrixTransform(svg.getScreenCTM().inverse()); }
+const r1 = (n) => Math.round(n * 10) / 10;
+function draw() {
+  const { width: W, height: H, src } = S.machine;
+  svg.setAttribute("viewBox", `${-PADX} ${-PADY} ${W + 2 * PADX} ${H + 2 * PADY}`);
+  let h = `<rect x="${-PADX}" y="${-PADY}" width="${W + 2 * PADX}" height="${H + 2 * PADY}" fill="#fafafa"/><rect x="0" y="0" width="${W}" height="${H}" fill="#fff" stroke="#ddd"/><image href="/img/${src}" x="0" y="0" width="${W}" height="${H}"/>`;
+  calls.forEach((c, i) => {
+    const x = c.x * W / 100, y = c.y * H / 100, lx = c.lx * W / 100, ly = c.ly * H / 100, l = i === sel, txt = (c.text.sv || "").toUpperCase();
+    const tw = Math.max(40, txt.length * 8.6) + 6, ex = c.dir === "l" ? lx - tw : lx + tw;
+    h += `<g data-i="${i}"><line x1="${x}" y1="${y}" x2="${lx}" y2="${ly}" stroke="#231f20" stroke-width="1.7" stroke-linecap="round"/>` +
+      `<line x1="${lx}" y1="${ly}" x2="${ex}" y2="${ly}" stroke="#231f20" stroke-width="2"/>` +
+      `<text x="${c.dir === "l" ? lx - 3 : lx + 3}" y="${ly - 5}" font-size="12" font-weight="700" letter-spacing=".8" text-anchor="${c.dir === "l" ? "end" : "start"}" fill="#231f20">${txt.replace(/&/g, "&amp;").replace(/</g, "&lt;")}</text>` +
+      `<rect class="anc" data-i="${i}" x="${lx - 6}" y="${ly - 6}" width="12" height="12" fill="#231f20" stroke="${l ? "#f37d03" : "#fff"}" stroke-width="2.5" style="cursor:move"/>` +
+      `<circle class="dot" data-i="${i}" cx="${x}" cy="${y}" r="8" fill="#f37d03" stroke="${l ? "#231f20" : "#fff"}" stroke-width="2.5" style="cursor:move"/>` +
+      `<text x="${x + 11}" y="${y - 9}" font-size="11" font-weight="700" fill="#f37d03" stroke="#fff" stroke-width="3" paint-order="stroke">${i + 1}</text></g>`;
+  });
+  svg.innerHTML = h;
+}
+function list() {
+  $("#list").innerHTML = calls.map((c, i) => `<div class="card ${i === sel ? "sel" : ""}" data-i="${i}"><div class="top"><span>Dot ${i + 1}</span><button class="btn small" data-del="${i}">Remove</button></div>` +
+    LANGS.map((l) => `<div class="row"><span class="muted">${l}</span><input type="text" data-i="${i}" data-l="${l}" value="${(c.text[l] || "").replace(/"/g, "&quot;")}"></div>`).join("") +
+    `<div class="row"><span class="muted">dir</span><select data-dir="${i}" style="font:inherit;padding:.2rem"><option value="r" ${c.dir === "r" ? "selected" : ""}>name goes to the right of the square</option><option value="l" ${c.dir === "l" ? "selected" : ""}>name goes to the left of the square</option></select></div>` +
+    `<div class="muted">dot ${c.x}, ${c.y} %  square ${c.lx}, ${c.ly} %</div></div>`).join("");
+}
+let drag = null;
+svg.addEventListener("pointerdown", (e) => {
+  const t = e.target; if (!t.dataset || t.dataset.i === undefined) return;
+  drag = { i: +t.dataset.i, what: t.classList.contains("dot") ? "dot" : "anc" }; sel = drag.i; svg.setPointerCapture(e.pointerId); draw(); list(); e.preventDefault();
+});
+svg.addEventListener("pointermove", (e) => {
+  if (!drag) return;
+  const p = pointer(e), c = calls[drag.i], { width: W, height: H } = S.machine;
+  const x = r1(p.x / W * 100), y = r1(p.y / H * 100);
+  if (drag.what === "dot") { c.x = Math.min(100, Math.max(0, x)); c.y = Math.min(100, Math.max(0, y)); } else { c.lx = x; c.ly = y; }
+  draw(); const card = $(`.card[data-i="${drag.i}"] .muted:last-child`); if (card) card.textContent = `dot ${c.x}, ${c.y} %  square ${c.lx}, ${c.ly} %`;
+});
+svg.addEventListener("pointerup", () => { drag = null; list(); });
+$("#list").addEventListener("input", (e) => { const t = e.target; if (t.dataset.l) { calls[+t.dataset.i].text[t.dataset.l] = t.value; draw(); } });
+$("#list").addEventListener("change", (e) => { const t = e.target; if (t.dataset.dir !== undefined) { calls[+t.dataset.dir].dir = t.value; draw(); } });
+$("#list").addEventListener("click", (e) => {
+  const d = e.target.dataset.del; if (d !== undefined) { calls.splice(+d, 1); sel = 0; draw(); list(); return; }
+  const card = e.target.closest(".card"); if (card && sel !== +card.dataset.i) { sel = +card.dataset.i; draw(); list(); }
+});
+$("#add").onclick = () => { calls.push({ x: 50, y: 50, lx: 50, ly: 104, dir: "r", text: { sv: "Ny", en: "New", es: "Nuevo", no: "Ny" } }); sel = calls.length - 1; draw(); list(); };
+$("#save-dots").onclick = async () => {
+  say("#status-dots", "Saving…");
+  const r = await (await fetch("/api/callouts", { method: "POST", body: JSON.stringify({ callouts: calls }) })).json();
+  say("#status-dots", r.ok ? "Saved in the content files. Run the dev server or the build to see it on the site." : "Could not save: " + r.error, r.ok ? "ok" : "bad");
+};
+
+// ---------------------------------------------------------------- x-ray
+const DISP = 700;
+let P = null, f = 1;
+const stage = $("#xstage");
+function drawX() {
+  const { base, cut } = S, sw = cut.width * P.scale * f, sh = cut.height * P.scale * f, yh = Math.max(0, Math.min(sh, P.splitY * P.scale * f));
+  const common = `left:${P.left * f}px;top:${P.top * f}px;width:${sw}px;height:${sh}px;opacity:${$("#c-op").value}`;
+  stage.querySelector(".ovwrap").innerHTML =
+    `<img src="/cutout.png" style="${common};clip-path:inset(0 0 ${sh - yh}px 0)">` +
+    `<img src="/cutout.png" style="${common};clip-path:inset(${yh}px 0 0 0);transform-origin:0 ${yh}px;transform:skewX(${Math.atan(P.shear)}rad)">`;
+  for (const k of ["scale", "left", "top", "shear", "splitY"]) { $("#c-" + k).value = P[k]; $("#n-" + k).value = k === "scale" || k === "shear" ? (+P[k]).toFixed(3) : Math.round(P[k] * 10) / 10; }
+  $("#n-op").value = $("#c-op").value;
+}
+function initX() {
+  f = DISP / S.base.width;
+  stage.style.width = DISP + "px"; stage.style.height = S.base.height * f + "px";
+  stage.innerHTML = `<img src="/img/haeny-tech-plunger.webp" width="${DISP}"><div class="ovwrap"></div>`;
+  P = { ...S.place }; saved = { ...S.place }; drawX();
+}
+for (const k of ["scale", "left", "top", "shear", "splitY"]) {
+  $("#c-" + k).oninput = (e) => { P[k] = +e.target.value; drawX(); };
+  $("#n-" + k).onchange = (e) => { P[k] = +e.target.value; drawX(); };
+}
+$("#c-op").oninput = drawX;
+let mv = null;
+stage.addEventListener("pointerdown", (e) => { mv = { x: e.clientX, y: e.clientY, l: P.left, t: P.top }; stage.setPointerCapture(e.pointerId); });
+stage.addEventListener("pointermove", (e) => {
+  const r = stage.getBoundingClientRect(); stage.style.setProperty("--mx", e.clientX - r.left + "px"); stage.style.setProperty("--my", e.clientY - r.top + "px");
+  if (!mv) return; P.left = Math.round((mv.l + (e.clientX - mv.x) / f) * 2) / 2; P.top = Math.round((mv.t + (e.clientY - mv.y) / f) * 2) / 2; drawX();
+});
+stage.addEventListener("pointerup", () => { mv = null; });
+stage.addEventListener("wheel", (e) => {
+  e.preventDefault();
+  const r = stage.getBoundingClientRect(), cx = (e.clientX - r.left) / f, cy = (e.clientY - r.top) / f, ns = Math.min(0.6, Math.max(0.15, P.scale * Math.pow(1.0015, -e.deltaY))), k = ns / P.scale;
+  P.left = Math.round((cx - (cx - P.left) * k) * 2) / 2; P.top = Math.round((cy - (cy - P.top) * k) * 2) / 2; P.scale = Math.round(ns * 1000) / 1000; drawX();
+}, { passive: false });
+addEventListener("keydown", (e) => {
+  if ($("#xray").classList.contains("hide") || /INPUT|SELECT|TEXTAREA/.test(document.activeElement.tagName)) return;
+  const d = e.shiftKey ? 5 : 1, m = { ArrowLeft: [-d, 0], ArrowRight: [d, 0], ArrowUp: [0, -d], ArrowDown: [0, d] }[e.key];
+  if (m) { P.left += m[0]; P.top += m[1]; drawX(); e.preventDefault(); }
+});
+$("#lens").onchange = (e) => {
+  const w = stage.querySelector(".ovwrap"), m = "radial-gradient(circle 80px at var(--mx,-999px) var(--my,-999px), #000 0, #000 78%, transparent 100%)";
+  w.style.webkitMaskImage = w.style.maskImage = e.target.checked ? m : "none";
+};
+$("#reset").onclick = () => { P = { ...saved }; drawX(); };
+$("#save-xray").onclick = async () => {
+  say("#status-xray", "Making the picture…");
+  const r = await (await fetch("/api/xray", { method: "POST", body: JSON.stringify({ place: P }) })).json();
+  if (r.ok) { saved = { ...P }; say("#status-xray", `Saved. The lens works in x ${r.area.x}-${r.area.x + r.area.w} %, y ${r.area.y}-${r.area.y + r.area.h} %. Run the dev server or the build to see it on the site.`, "ok"); }
+  else say("#status-xray", "Could not save: " + r.error, "bad");
+};
+
+// ---------------------------------------------------------------- start
+(async () => {
+  S = await (await fetch("/api/state")).json();
+  calls = S.callouts; draw(); list(); initX();
+  new MutationObserver(() => {}).observe(document.body, {});
+  // the lens mask must survive a redraw
+  const w = () => stage.querySelector(".ovwrap");
+  const old = drawX; void old; void w;
+})();
+</script>
+</body>
+</html>

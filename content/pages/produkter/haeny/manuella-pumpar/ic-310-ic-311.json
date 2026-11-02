@@ -26,7 +26,33 @@
           "alt": "HÄNY IC 310 & IC311, bild 2",
           "width": 495,
           "height": 496,
-          "src": "/assets/img/haeny-manuella-pumpar-ic-310-ic-311-2.webp"
+          "src": "/assets/img/haeny-manuella-pumpar-ic-310-ic-311-2.webp",
+          "callouts": [
+            {
+              "x": 24,
+              "y": 27.5,
+              "lx": 3,
+              "ly": 14,
+              "dir": "r",
+              "text": "Blandare"
+            },
+            {
+              "x": 44,
+              "y": 55,
+              "lx": 40,
+              "ly": 106,
+              "dir": "r",
+              "text": "Omrörare"
+            },
+            {
+              "x": 73,
+              "y": 52,
+              "lx": 94,
+              "ly": 106,
+              "dir": "l",
+              "text": "Pump"
+            }
+          ]
         },
         {
           "type": "heading",
@@ -685,7 +711,33 @@
           "alt": "HÄNY IC 310 & IC311, image 2",
           "width": 495,
           "height": 496,
-          "src": "/assets/img/haeny-manuella-pumpar-ic-310-ic-311-2.webp"
+          "src": "/assets/img/haeny-manuella-pumpar-ic-310-ic-311-2.webp",
+          "callouts": [
+            {
+              "x": 24,
+              "y": 27.5,
+              "lx": 3,
+              "ly": 14,
+              "dir": "r",
+              "text": "Mixer"
+            },
+            {
+              "x": 44,
+              "y": 55,
+              "lx": 40,
+              "ly": 106,
+              "dir": "r",
+              "text": "Agitator"
+            },
+            {
+              "x": 73,
+              "y": 52,
+              "lx": 94,
+              "ly": 106,
+              "dir": "l",
+              "text": "Pump"
+            }
+          ]
         },
         {
           "type": "heading",
@@ -1345,7 +1397,33 @@
           "alt": "HÄNY IC 310 & IC311, imagen 2",
           "width": 495,
           "height": 496,
-          "src": "/assets/img/haeny-manuella-pumpar-ic-310-ic-311-2.webp"
+          "src": "/assets/img/haeny-manuella-pumpar-ic-310-ic-311-2.webp",
+          "callouts": [
+            {
+              "x": 24,
+              "y": 27.5,
+              "lx": 3,
+              "ly": 14,
+              "dir": "r",
+              "text": "Mezclador"
+            },
+            {
+              "x": 44,
+              "y": 55,
+              "lx": 40,
+              "ly": 106,
+              "dir": "r",
+              "text": "Agitador"
+            },
+            {
+              "x": 73,
+              "y": 52,
+              "lx": 94,
+              "ly": 106,
+              "dir": "l",
+              "text": "Bomba"
+            }
+          ]
         },
         {
           "type": "heading",
@@ -2005,7 +2083,33 @@
           "alt": "HÄNY IC 310 & IC311, bilde 2",
           "width": 495,
           "height": 496,
-          "src": "/assets/img/haeny-manuella-pumpar-ic-310-ic-311-2.webp"
+          "src": "/assets/img/haeny-manuella-pumpar-ic-310-ic-311-2.webp",
+          "callouts": [
+            {
+              "x": 24,
+              "y": 27.5,
+              "lx": 3,
+              "ly": 14,
+              "dir": "r",
+              "text": "Mikser"
+            },
+            {
+              "x": 44,
+              "y": 55,
+              "lx": 40,
+              "ly": 106,
+              "dir": "r",
+              "text": "Rører"
+            },
+            {
+              "x": 73,
+              "y": 52,
+              "lx": 94,
+              "ly": 106,
+              "dir": "l",
+              "text": "Pumpe"
+            }
+          ]
         },
         {
           "type": "heading",
