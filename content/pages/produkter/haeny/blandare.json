@@ -1152,6 +1152,1158 @@
           "html": "<a href=\"/kontakta-oss\">Kontakt oss</a> for pris, leveringstid eller hjelp til å velge riktig modell."
         }
       ]
+    },
+    "lt": {
+      "title": "Maišyklės (HCM)",
+      "h1": "Maišyklės (HCM)",
+      "description": "Häny HCM yra didelės šlyties koloidinės maišyklės cementui, itin smulkiam cementui, bentonitui ir kitiems priedams. Puiki mišinio kokybė, didelis našumas ir mažas dilimas. Maišykles galima naudoti atskirai arba…",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "HÄNY",
+          "href": "/produkter/haeny",
+          "width": 832,
+          "height": 143,
+          "src": "/assets/img/haeny-1.webp"
+        },
+        {
+          "type": "columns",
+          "ratio": "40-60",
+          "left": [
+            {
+              "type": "image",
+              "alt": "Maišyklės (HCM)",
+              "width": 1000,
+              "height": 1000,
+              "src": "/assets/img/haeny-tile-hcm.webp"
+            }
+          ],
+          "right": [
+            {
+              "type": "text",
+              "html": "Häny HCM yra didelės šlyties koloidinės maišyklės cementui, itin smulkiam cementui, bentonitui ir kitiems priedams. Puiki mišinio kokybė, didelis našumas ir mažas dilimas. Maišykles galima naudoti atskirai arba kartu su maišikliu ir injektavimo siurbliu, valdant rankiniu būdu arba su automatiniu svėrimu-dozavimu."
+            },
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "Puiki mišinio kokybė iš greitaeigio maišymo siurblio",
+                "Kūginis bakas su recirkuliacijos linija",
+                "Automatinis veleno sandariklio tepimas, 3 krypčių vožtuvas maišymui arba perpylimui",
+                "Papildoma maišyklė (pasirinktinai), kai W/C &lt; 0,5, ir mikrocementams"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Modeliai",
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 3,
+          "square": true,
+          "more": false,
+          "items": [
+            {
+              "title": "HCM 100",
+              "image": "/assets/img/haeny-hcm100-tile.webp",
+              "alt": "Didelės šlyties maišyklė HCM 100",
+              "href": "/produkter/haeny/blandare/hcm-100",
+              "bullets": [
+                "Debitas: 2 m³/h",
+                "Tūris: 100 l",
+                "Galia: 3,0 / 3,6 kW"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "HCM 300",
+              "image": "/assets/img/haeny-hcm300-tile.webp",
+              "alt": "Didelės šlyties maišyklė HCM 300",
+              "href": "/produkter/haeny/blandare/hcm-300",
+              "bullets": [
+                "Debitas: 5 m³/h",
+                "Tūris: 260 l",
+                "Galia: 9,2 / 10,5 kW"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "HCM 600",
+              "image": "/assets/img/haeny-hcm600-tile.webp",
+              "alt": "Didelės šlyties maišyklė HCM 600",
+              "href": "/produkter/haeny/blandare/hcm-600",
+              "bullets": [
+                "Debitas: 8 m³/h",
+                "Tūris: 550 l",
+                "Galia: 9,2 / 10,5 kW"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "HCM 800",
+              "image": "/assets/img/haeny-hcm800-tile.webp",
+              "alt": "Didelės šlyties maišyklė HCM 800",
+              "href": "/produkter/haeny/blandare/hcm-800",
+              "bullets": [
+                "Debitas: 20 m³/h",
+                "Tūris: 800 l",
+                "Galia: 22 / 25 kW"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "HCM 2500",
+              "image": "/assets/img/haeny-hcm2500-tile.webp",
+              "alt": "Didelės šlyties maišyklė HCM 2500",
+              "href": "/produkter/haeny/blandare/hcm-2500",
+              "bullets": [
+                "Debitas: 40 m³/h",
+                "Tūris: 2 500 l",
+                "Galia: 45 / 53 kW"
+              ],
+              "width": 1000,
+              "height": 1000
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Naudojimas",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Cemento, itin smulkaus rišiklio, bentonito, smėlio ir kitų medžiagų suspensijos",
+            "Atskirai arba kartu su maišikliu ir siurbliu"
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Modelių palyginimas",
+          "gen": true
+        },
+        {
+          "type": "table",
+          "header": true,
+          "align": "center",
+          "rows": [
+            [
+              "",
+              "HCM 100",
+              "HCM 300",
+              "HCM 600",
+              "HCM 800",
+              "HCM 2500"
+            ],
+            [
+              "Maišymo siurblys",
+              "TMP 9",
+              "TMP 22",
+              "TMP 22",
+              "TMP 40",
+              "TMP 60"
+            ],
+            [
+              "Apytikslis našumas",
+              "2 m³/h",
+              "5 m³/h",
+              "8 m³/h",
+              "20 m³/h",
+              "40 m³/h"
+            ],
+            [
+              "Cirkuliacijos našumas",
+              "540 l/min",
+              "1,400 l/min",
+              "1,400 l/min",
+              "2,400 l/min",
+              "4,800 l/min"
+            ],
+            [
+              "Naudingasis tūris",
+              "100 l",
+              "260 l",
+              "550 l",
+              "800 l",
+              "2,500 l"
+            ],
+            [
+              "Maks. dalelių dydis",
+              "5 mm",
+              "8 mm",
+              "8 mm",
+              "3 mm",
+              "-"
+            ],
+            [
+              "Skysčio temperatūra",
+              "Max. 40°C",
+              "Max. 40°C",
+              "Max. 40°C",
+              "Max. 40°C",
+              "Max. 40°C"
+            ],
+            [
+              "Įtampa",
+              "3x 400/460 V",
+              "3x 400/460 V",
+              "3x 400/460 V",
+              "3x 400/460 V",
+              "3x 400/460 V"
+            ],
+            [
+              "Dažnis",
+              "50 / 60 Hz",
+              "50 / 60 Hz",
+              "50 / 60 Hz",
+              "50 / 60 Hz",
+              "50 / 60 Hz"
+            ],
+            [
+              "Nominalioji galia",
+              "3.0 / 3.6 kW",
+              "9.2 / 10.5 kW",
+              "9.2 / 10.5 kW",
+              "22 / 25 kW",
+              "45 / 53 kW"
+            ],
+            [
+              "Nominalioji srovė",
+              "6.15 / 6.45 A",
+              "16.8 / 17.6 A",
+              "16.8 / 17.6 A",
+              "40.1 / 41.0 A",
+              "70.0 / 82.4 A"
+            ],
+            [
+              "Apsukų skaičius",
+              "1,440 / 1,695 min⁻¹",
+              "1,465 / 1,765 min⁻¹",
+              "1,465 / 1,765 min⁻¹",
+              "1,475 / 1,770 min⁻¹",
+              "1,475 / 1,770 min⁻¹"
+            ],
+            [
+              "Apytikslis svoris",
+              "130 kg",
+              "325 kg",
+              "370 kg",
+              "1225 kg",
+              "2,500 kg"
+            ],
+            [
+              "Plotis",
+              "675 mm",
+              "925 mm",
+              "1,025 mm",
+              "1,390 mm",
+              "2,220 mm"
+            ],
+            [
+              "Aukštis",
+              "1,335 mm",
+              "1,395 mm",
+              "1,750 mm",
+              "1,993 mm",
+              "1,893 mm"
+            ],
+            [
+              "Ilgis",
+              "814 mm",
+              "1,225 mm",
+              "1,360 mm",
+              "1,710 mm",
+              "2,585 mm"
+            ]
+          ],
+          "links": [],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Susisiekite su mumis</a> dėl kainos, pristatymo laiko ar pagalbos renkantis tinkamą modelį."
+        }
+      ],
+      "published": true
+    },
+    "lv": {
+      "title": "Mikseri (HCM)",
+      "h1": "Mikseri (HCM)",
+      "description": "Häny HCM ir augstas bīdes koloidālie mikseri cementam, īpaši smalkam cementam, bentonītam un citām piedevām. Lieliska maisījuma kvalitāte, augsta ražība un mazs nodilums. Miksērus var izmantot atsevišķi vai…",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "HÄNY",
+          "href": "/produkter/haeny",
+          "width": 832,
+          "height": 143,
+          "src": "/assets/img/haeny-1.webp"
+        },
+        {
+          "type": "columns",
+          "ratio": "40-60",
+          "left": [
+            {
+              "type": "image",
+              "alt": "Mikseri (HCM)",
+              "width": 1000,
+              "height": 1000,
+              "src": "/assets/img/haeny-tile-hcm.webp"
+            }
+          ],
+          "right": [
+            {
+              "type": "text",
+              "html": "Häny HCM ir augstas bīdes koloidālie mikseri cementam, īpaši smalkam cementam, bentonītam un citām piedevām. Lieliska maisījuma kvalitāte, augsta ražība un mazs nodilums. Miksērus var izmantot atsevišķi vai kopā ar maisītāju un injektēšanas sūkni, ar manuālu darbību vai automātisku svēršanu un dozēšanu."
+            },
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "Lieliska maisījuma kvalitāte no ātrgaitas maisīšanas sūkņa",
+                "Koniska tvertne ar recirkulācijas līniju",
+                "Automātiska vārpstas blīvējuma eļļošana, 3 virzienu vārsts maisīšanai vai pārsūknēšanai",
+                "Papildu mikseris (opcija), ja W/C &lt; 0,5, un mikrocementiem"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Modeļi",
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 3,
+          "square": true,
+          "more": false,
+          "items": [
+            {
+              "title": "HCM 100",
+              "image": "/assets/img/haeny-hcm100-tile.webp",
+              "alt": "Augstas bīdes mikseris HCM 100",
+              "href": "/produkter/haeny/blandare/hcm-100",
+              "bullets": [
+                "Caurplūde: 2 m³/h",
+                "Tilpums: 100 l",
+                "Jauda: 3,0 / 3,6 kW"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "HCM 300",
+              "image": "/assets/img/haeny-hcm300-tile.webp",
+              "alt": "Augstas bīdes mikseris HCM 300",
+              "href": "/produkter/haeny/blandare/hcm-300",
+              "bullets": [
+                "Caurplūde: 5 m³/h",
+                "Tilpums: 260 l",
+                "Jauda: 9,2 / 10,5 kW"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "HCM 600",
+              "image": "/assets/img/haeny-hcm600-tile.webp",
+              "alt": "Augstas bīdes mikseris HCM 600",
+              "href": "/produkter/haeny/blandare/hcm-600",
+              "bullets": [
+                "Caurplūde: 8 m³/h",
+                "Tilpums: 550 l",
+                "Jauda: 9,2 / 10,5 kW"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "HCM 800",
+              "image": "/assets/img/haeny-hcm800-tile.webp",
+              "alt": "Augstas bīdes mikseris HCM 800",
+              "href": "/produkter/haeny/blandare/hcm-800",
+              "bullets": [
+                "Caurplūde: 20 m³/h",
+                "Tilpums: 800 l",
+                "Jauda: 22 / 25 kW"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "HCM 2500",
+              "image": "/assets/img/haeny-hcm2500-tile.webp",
+              "alt": "Augstas bīdes mikseris HCM 2500",
+              "href": "/produkter/haeny/blandare/hcm-2500",
+              "bullets": [
+                "Caurplūde: 40 m³/h",
+                "Tilpums: 2 500 l",
+                "Jauda: 45 / 53 kW"
+              ],
+              "width": 1000,
+              "height": 1000
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Lietojums",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Cementa, īpaši smalkas saistvielas, bentonīta, smilts u. c. suspensijas",
+            "Atsevišķi vai kopā ar maisītāju un sūkni"
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Modeļu salīdzinājums",
+          "gen": true
+        },
+        {
+          "type": "table",
+          "header": true,
+          "align": "center",
+          "rows": [
+            [
+              "",
+              "HCM 100",
+              "HCM 300",
+              "HCM 600",
+              "HCM 800",
+              "HCM 2500"
+            ],
+            [
+              "Maisīšanas sūknis",
+              "TMP 9",
+              "TMP 22",
+              "TMP 22",
+              "TMP 40",
+              "TMP 60"
+            ],
+            [
+              "Aptuvenā ražība",
+              "2 m³/h",
+              "5 m³/h",
+              "8 m³/h",
+              "20 m³/h",
+              "40 m³/h"
+            ],
+            [
+              "Cirkulācijas ražība",
+              "540 l/min",
+              "1,400 l/min",
+              "1,400 l/min",
+              "2,400 l/min",
+              "4,800 l/min"
+            ],
+            [
+              "Lietderīgais tilpums",
+              "100 l",
+              "260 l",
+              "550 l",
+              "800 l",
+              "2,500 l"
+            ],
+            [
+              "Maks. graudu izmērs",
+              "5 mm",
+              "8 mm",
+              "8 mm",
+              "3 mm",
+              "-"
+            ],
+            [
+              "Šķidruma temperatūra",
+              "Max. 40°C",
+              "Max. 40°C",
+              "Max. 40°C",
+              "Max. 40°C",
+              "Max. 40°C"
+            ],
+            [
+              "Spriegums",
+              "3x 400/460 V",
+              "3x 400/460 V",
+              "3x 400/460 V",
+              "3x 400/460 V",
+              "3x 400/460 V"
+            ],
+            [
+              "Frekvence",
+              "50 / 60 Hz",
+              "50 / 60 Hz",
+              "50 / 60 Hz",
+              "50 / 60 Hz",
+              "50 / 60 Hz"
+            ],
+            [
+              "Nominālā jauda",
+              "3.0 / 3.6 kW",
+              "9.2 / 10.5 kW",
+              "9.2 / 10.5 kW",
+              "22 / 25 kW",
+              "45 / 53 kW"
+            ],
+            [
+              "Nominālā strāva",
+              "6.15 / 6.45 A",
+              "16.8 / 17.6 A",
+              "16.8 / 17.6 A",
+              "40.1 / 41.0 A",
+              "70.0 / 82.4 A"
+            ],
+            [
+              "Apgriezieni",
+              "1,440 / 1,695 min⁻¹",
+              "1,465 / 1,765 min⁻¹",
+              "1,465 / 1,765 min⁻¹",
+              "1,475 / 1,770 min⁻¹",
+              "1,475 / 1,770 min⁻¹"
+            ],
+            [
+              "Aptuvenais svars",
+              "130 kg",
+              "325 kg",
+              "370 kg",
+              "1225 kg",
+              "2,500 kg"
+            ],
+            [
+              "Platums",
+              "675 mm",
+              "925 mm",
+              "1,025 mm",
+              "1,390 mm",
+              "2,220 mm"
+            ],
+            [
+              "Augstums",
+              "1,335 mm",
+              "1,395 mm",
+              "1,750 mm",
+              "1,993 mm",
+              "1,893 mm"
+            ],
+            [
+              "Garums",
+              "814 mm",
+              "1,225 mm",
+              "1,360 mm",
+              "1,710 mm",
+              "2,585 mm"
+            ]
+          ],
+          "links": [],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Sazinieties ar mums</a> par cenu, piegādes laiku vai palīdzību pareizā modeļa izvēlē."
+        }
+      ],
+      "published": true
+    },
+    "et": {
+      "title": "Segistid (HCM)",
+      "h1": "Segistid (HCM)",
+      "description": "Häny HCM on kõrgnihke kolloidsegistid tsemendi, ülipeene tsemendi, bentoniidi ja muude lisandite jaoks. Suurepärane segukvaliteet, suur jõudlus ja väike kulumine. Segisteid saab kasutada eraldi või…",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "HÄNY",
+          "href": "/produkter/haeny",
+          "width": 832,
+          "height": 143,
+          "src": "/assets/img/haeny-1.webp"
+        },
+        {
+          "type": "columns",
+          "ratio": "40-60",
+          "left": [
+            {
+              "type": "image",
+              "alt": "Segistid (HCM)",
+              "width": 1000,
+              "height": 1000,
+              "src": "/assets/img/haeny-tile-hcm.webp"
+            }
+          ],
+          "right": [
+            {
+              "type": "text",
+              "html": "Häny HCM on kõrgnihke kolloidsegistid tsemendi, ülipeene tsemendi, bentoniidi ja muude lisandite jaoks. Suurepärane segukvaliteet, suur jõudlus ja väike kulumine. Segisteid saab kasutada eraldiseisvalt või koos seguri ja injekteerimispumbaga, käsitsi juhitavana või automaatse kaalumisdoseerimisega."
+            },
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "Suurepärane segukvaliteet kiirelt töötavast segamispumbast",
+                "Koonusekujuline paak retsirkulatsioonitoruga",
+                "Võlli tihendi automaatne määrimine, 3-tee ventiil segamiseks või ülekandeks",
+                "Lisasegisti (lisavarustus) W/C &lt; 0,5 ja mikrotsementide jaoks"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Mudelid",
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 3,
+          "square": true,
+          "more": false,
+          "items": [
+            {
+              "title": "HCM 100",
+              "image": "/assets/img/haeny-hcm100-tile.webp",
+              "alt": "Kõrgnihkesegisti HCM 100",
+              "href": "/produkter/haeny/blandare/hcm-100",
+              "bullets": [
+                "Vooluhulk: 2 m³/h",
+                "Maht: 100 l",
+                "Võimsus: 3,0 / 3,6 kW"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "HCM 300",
+              "image": "/assets/img/haeny-hcm300-tile.webp",
+              "alt": "Kõrgnihkesegisti HCM 300",
+              "href": "/produkter/haeny/blandare/hcm-300",
+              "bullets": [
+                "Vooluhulk: 5 m³/h",
+                "Maht: 260 l",
+                "Võimsus: 9,2 / 10,5 kW"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "HCM 600",
+              "image": "/assets/img/haeny-hcm600-tile.webp",
+              "alt": "Kõrgnihkesegisti HCM 600",
+              "href": "/produkter/haeny/blandare/hcm-600",
+              "bullets": [
+                "Vooluhulk: 8 m³/h",
+                "Maht: 550 l",
+                "Võimsus: 9,2 / 10,5 kW"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "HCM 800",
+              "image": "/assets/img/haeny-hcm800-tile.webp",
+              "alt": "Kõrgnihkesegisti HCM 800",
+              "href": "/produkter/haeny/blandare/hcm-800",
+              "bullets": [
+                "Vooluhulk: 20 m³/h",
+                "Maht: 800 l",
+                "Võimsus: 22 / 25 kW"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "HCM 2500",
+              "image": "/assets/img/haeny-hcm2500-tile.webp",
+              "alt": "Kõrgnihkesegisti HCM 2500",
+              "href": "/produkter/haeny/blandare/hcm-2500",
+              "bullets": [
+                "Vooluhulk: 40 m³/h",
+                "Maht: 2 500 l",
+                "Võimsus: 45 / 53 kW"
+              ],
+              "width": 1000,
+              "height": 1000
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Kasutus",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Tsemendi, ülipeene sideaine, bentoniidi, liiva ja muu suspensioonid",
+            "Eraldiseisvana või koos seguri ja pumbaga"
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Mudelite võrdlus",
+          "gen": true
+        },
+        {
+          "type": "table",
+          "header": true,
+          "align": "center",
+          "rows": [
+            [
+              "",
+              "HCM 100",
+              "HCM 300",
+              "HCM 600",
+              "HCM 800",
+              "HCM 2500"
+            ],
+            [
+              "Segamispump",
+              "TMP 9",
+              "TMP 22",
+              "TMP 22",
+              "TMP 40",
+              "TMP 60"
+            ],
+            [
+              "Ligikaudne jõudlus",
+              "2 m³/h",
+              "5 m³/h",
+              "8 m³/h",
+              "20 m³/h",
+              "40 m³/h"
+            ],
+            [
+              "Ringluse jõudlus",
+              "540 l/min",
+              "1,400 l/min",
+              "1,400 l/min",
+              "2,400 l/min",
+              "4,800 l/min"
+            ],
+            [
+              "Kasulik maht",
+              "100 l",
+              "260 l",
+              "550 l",
+              "800 l",
+              "2,500 l"
+            ],
+            [
+              "Maks. terasuurus",
+              "5 mm",
+              "8 mm",
+              "8 mm",
+              "3 mm",
+              "-"
+            ],
+            [
+              "Vedeliku temperatuur",
+              "Max. 40°C",
+              "Max. 40°C",
+              "Max. 40°C",
+              "Max. 40°C",
+              "Max. 40°C"
+            ],
+            [
+              "Pinge",
+              "3x 400/460 V",
+              "3x 400/460 V",
+              "3x 400/460 V",
+              "3x 400/460 V",
+              "3x 400/460 V"
+            ],
+            [
+              "Sagedus",
+              "50 / 60 Hz",
+              "50 / 60 Hz",
+              "50 / 60 Hz",
+              "50 / 60 Hz",
+              "50 / 60 Hz"
+            ],
+            [
+              "Nimivõimsus",
+              "3.0 / 3.6 kW",
+              "9.2 / 10.5 kW",
+              "9.2 / 10.5 kW",
+              "22 / 25 kW",
+              "45 / 53 kW"
+            ],
+            [
+              "Nimivool",
+              "6.15 / 6.45 A",
+              "16.8 / 17.6 A",
+              "16.8 / 17.6 A",
+              "40.1 / 41.0 A",
+              "70.0 / 82.4 A"
+            ],
+            [
+              "Pöörded",
+              "1,440 / 1,695 min⁻¹",
+              "1,465 / 1,765 min⁻¹",
+              "1,465 / 1,765 min⁻¹",
+              "1,475 / 1,770 min⁻¹",
+              "1,475 / 1,770 min⁻¹"
+            ],
+            [
+              "Ligikaudne kaal",
+              "130 kg",
+              "325 kg",
+              "370 kg",
+              "1225 kg",
+              "2,500 kg"
+            ],
+            [
+              "Laius",
+              "675 mm",
+              "925 mm",
+              "1,025 mm",
+              "1,390 mm",
+              "2,220 mm"
+            ],
+            [
+              "Kõrgus",
+              "1,335 mm",
+              "1,395 mm",
+              "1,750 mm",
+              "1,993 mm",
+              "1,893 mm"
+            ],
+            [
+              "Pikkus",
+              "814 mm",
+              "1,225 mm",
+              "1,360 mm",
+              "1,710 mm",
+              "2,585 mm"
+            ]
+          ],
+          "links": [],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Võta meiega ühendust</a> hinna, tarneaja või õige mudeli valikul abi saamiseks."
+        }
+      ],
+      "published": true
+    },
+    "ru": {
+      "title": "Смесители (HCM)",
+      "h1": "Смесители (HCM)",
+      "description": "Häny HCM — высокосдвиговые коллоидные смесители для цемента, ультратонкого цемента, бентонита и других добавок. Превосходное качество смешивания, высокая производительность и низкий износ. Смесители можно использовать отдельно или…",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "HÄNY",
+          "href": "/produkter/haeny",
+          "width": 832,
+          "height": 143,
+          "src": "/assets/img/haeny-1.webp"
+        },
+        {
+          "type": "columns",
+          "ratio": "40-60",
+          "left": [
+            {
+              "type": "image",
+              "alt": "Смесители (HCM)",
+              "width": 1000,
+              "height": 1000,
+              "src": "/assets/img/haeny-tile-hcm.webp"
+            }
+          ],
+          "right": [
+            {
+              "type": "text",
+              "html": "Häny HCM — высокосдвиговые коллоидные смесители для цемента, ультратонкого цемента, бентонита и других добавок. Превосходное качество смешивания, высокая производительность и низкий износ. Смесители можно использовать отдельно или вместе с мешалкой и инъекционным насосом, с ручным управлением или автоматическим весовым дозированием."
+            },
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "Превосходное качество смеси благодаря высокоскоростному смесительному насосу",
+                "Конический бак с линией рециркуляции",
+                "Автоматическая смазка уплотнения вала, трёхходовой клапан для смешивания или перекачки",
+                "Дополнительный смеситель (опция) при В/Ц &lt; 0,5 и для микроцементов"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Модели",
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 3,
+          "square": true,
+          "more": false,
+          "items": [
+            {
+              "title": "HCM 100",
+              "image": "/assets/img/haeny-hcm100-tile.webp",
+              "alt": "Высокосдвиговый смеситель HCM 100",
+              "href": "/produkter/haeny/blandare/hcm-100",
+              "bullets": [
+                "Расход: 2 м³/ч",
+                "Объём: 100 л",
+                "Мощность: 3,0 / 3,6 кВт"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "HCM 300",
+              "image": "/assets/img/haeny-hcm300-tile.webp",
+              "alt": "Высокосдвиговый смеситель HCM 300",
+              "href": "/produkter/haeny/blandare/hcm-300",
+              "bullets": [
+                "Расход: 5 м³/ч",
+                "Объём: 260 л",
+                "Мощность: 9,2 / 10,5 кВт"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "HCM 600",
+              "image": "/assets/img/haeny-hcm600-tile.webp",
+              "alt": "Высокосдвиговый смеситель HCM 600",
+              "href": "/produkter/haeny/blandare/hcm-600",
+              "bullets": [
+                "Расход: 8 м³/ч",
+                "Объём: 550 л",
+                "Мощность: 9,2 / 10,5 кВт"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "HCM 800",
+              "image": "/assets/img/haeny-hcm800-tile.webp",
+              "alt": "Высокосдвиговый смеситель HCM 800",
+              "href": "/produkter/haeny/blandare/hcm-800",
+              "bullets": [
+                "Расход: 20 м³/ч",
+                "Объём: 800 л",
+                "Мощность: 22 / 25 кВт"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "HCM 2500",
+              "image": "/assets/img/haeny-hcm2500-tile.webp",
+              "alt": "Высокосдвиговый смеситель HCM 2500",
+              "href": "/produkter/haeny/blandare/hcm-2500",
+              "bullets": [
+                "Расход: 40 м³/ч",
+                "Объём: 2 500 л",
+                "Мощность: 45 / 53 кВт"
+              ],
+              "width": 1000,
+              "height": 1000
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Применение",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Суспензии из цемента, ультратонкого вяжущего, бентонита, песка и других материалов",
+            "Отдельно или в комплекте с мешалкой и насосом"
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Сравнение моделей",
+          "gen": true
+        },
+        {
+          "type": "table",
+          "header": true,
+          "align": "center",
+          "rows": [
+            [
+              "",
+              "HCM 100",
+              "HCM 300",
+              "HCM 600",
+              "HCM 800",
+              "HCM 2500"
+            ],
+            [
+              "Смесительный насос",
+              "TMP 9",
+              "TMP 22",
+              "TMP 22",
+              "TMP 40",
+              "TMP 60"
+            ],
+            [
+              "Ориентировочная производительность",
+              "2 m³/h",
+              "5 m³/h",
+              "8 m³/h",
+              "20 m³/h",
+              "40 m³/h"
+            ],
+            [
+              "Производительность циркуляции",
+              "540 l/min",
+              "1,400 l/min",
+              "1,400 l/min",
+              "2,400 l/min",
+              "4,800 l/min"
+            ],
+            [
+              "Полезный объём",
+              "100 l",
+              "260 l",
+              "550 l",
+              "800 l",
+              "2,500 l"
+            ],
+            [
+              "Макс. размер зерна",
+              "5 mm",
+              "8 mm",
+              "8 mm",
+              "3 mm",
+              "-"
+            ],
+            [
+              "Температура жидкости",
+              "Max. 40°C",
+              "Max. 40°C",
+              "Max. 40°C",
+              "Max. 40°C",
+              "Max. 40°C"
+            ],
+            [
+              "Напряжение",
+              "3x 400/460 V",
+              "3x 400/460 V",
+              "3x 400/460 V",
+              "3x 400/460 V",
+              "3x 400/460 V"
+            ],
+            [
+              "Частота",
+              "50 / 60 Hz",
+              "50 / 60 Hz",
+              "50 / 60 Hz",
+              "50 / 60 Hz",
+              "50 / 60 Hz"
+            ],
+            [
+              "Номинальная мощность",
+              "3.0 / 3.6 kW",
+              "9.2 / 10.5 kW",
+              "9.2 / 10.5 kW",
+              "22 / 25 kW",
+              "45 / 53 kW"
+            ],
+            [
+              "Номинальный ток",
+              "6.15 / 6.45 A",
+              "16.8 / 17.6 A",
+              "16.8 / 17.6 A",
+              "40.1 / 41.0 A",
+              "70.0 / 82.4 A"
+            ],
+            [
+              "Частота вращения",
+              "1,440 / 1,695 min⁻¹",
+              "1,465 / 1,765 min⁻¹",
+              "1,465 / 1,765 min⁻¹",
+              "1,475 / 1,770 min⁻¹",
+              "1,475 / 1,770 min⁻¹"
+            ],
+            [
+              "Ориентировочная масса",
+              "130 kg",
+              "325 kg",
+              "370 kg",
+              "1225 kg",
+              "2,500 kg"
+            ],
+            [
+              "Ширина",
+              "675 mm",
+              "925 mm",
+              "1,025 mm",
+              "1,390 mm",
+              "2,220 mm"
+            ],
+            [
+              "Высота",
+              "1,335 mm",
+              "1,395 mm",
+              "1,750 mm",
+              "1,993 mm",
+              "1,893 mm"
+            ],
+            [
+              "Длина",
+              "814 mm",
+              "1,225 mm",
+              "1,360 mm",
+              "1,710 mm",
+              "2,585 mm"
+            ]
+          ],
+          "links": [],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Свяжитесь с нами</a>, чтобы узнать цену, срок поставки или получить помощь в выборе подходящей модели."
+        }
+      ],
+      "published": true
     }
   }
 }

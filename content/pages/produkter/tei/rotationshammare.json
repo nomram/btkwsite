@@ -1050,6 +1050,1050 @@
         }
       ],
       "published": true
+    },
+    "lt": {
+      "title": "Sukamosios galvutės",
+      "h1": "Sukamosios galvutės",
+      "description": "Sukamosios galvutės būna skirtingų klasių, kurios pirmiausia priklauso nuo ekskavatoriaus svorio ir ant stiebo montuojamos įrangos.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "TEI Rock Drills logotipas",
+          "href": "/produkter/tei",
+          "width": 1920,
+          "height": 1117,
+          "src": "/assets/img/tei-2.webp"
+        },
+        {
+          "type": "image",
+          "alt": "Sukamosios galvutės: 2 paveikslėlis",
+          "width": 1500,
+          "height": 1242,
+          "src": "/assets/img/tei-rotationshammare-2.webp"
+        },
+        {
+          "type": "text",
+          "html": "Sukamosios galvutės būna skirtingų klasių, kurios pirmiausia priklauso nuo ekskavatoriaus svorio ir ant stiebo montuojamos įrangos."
+        },
+        {
+          "type": "text",
+          "html": "Dėl kompaktiško dydžio ir didelio galios ir svorio santykio TEI gręžimo plaktukai išsiskiria rinkoje."
+        },
+        {
+          "type": "text",
+          "html": "Žemiau pateikiamas TEI viršutinio smūgio plaktukų asortimentas. Pačioje apačioje yra jų techninių specifikacijų lentelė."
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Susisiekite su mumis</a> dėl daugiau informacijos."
+        },
+        {
+          "type": "rangechart",
+          "layout": "selector",
+          "unit": "mm",
+          "step": 100,
+          "title": "Kuri sukamoji galvutė tinka jūsų skylei?",
+          "intro": "Kiekvienas modelis apima tam tikrą skylių dydžių diapazoną. Raskite savo dydį skalėje ir pasirinkite modelį, kurio stulpelis jį apima. Kai stulpeliai persidengia, tinka keli modeliai – tada rinkitės pagal sukimo momentą ir praplovimo veleno vidinį skersmenį (žr. lentelę žemiau).",
+          "note": "Skylių dydžiai pagal žemiau esančią lentelę (TEI rekomenduojami diapazonai).",
+          "items": [
+            {
+              "label": "RDS250",
+              "min": 70,
+              "max": 102,
+              "href": "/produkter/tei/rotationshammare/rds250"
+            },
+            {
+              "label": "RDS350",
+              "min": 70,
+              "max": 203,
+              "href": "/produkter/tei/rotationshammare/rds350"
+            },
+            {
+              "label": "RDS550",
+              "min": 102,
+              "max": 305,
+              "href": "/produkter/tei/rotationshammare/rds550"
+            },
+            {
+              "label": "RDS1004",
+              "min": 127,
+              "max": 610,
+              "href": "/produkter/tei/rotationshammare/rds1004"
+            },
+            {
+              "label": "RDS1500",
+              "min": 127,
+              "max": 750,
+              "href": "/produkter/tei/rotationshammare/rds1500"
+            }
+          ],
+          "masts": {
+            "title": "Suderinami stiebai",
+            "hint": "Pasirinkite skylę slankikliu aukščiau: pašvies stiebai, tinkantys šiai skylei skirtoms mašinoms.",
+            "fit": "Tinka",
+            "forLabel": "För",
+            "none": "Joks sąraše esantis stiebas netinka šiam dydžiui.",
+            "more": "Pažymėti stiebai tinka",
+            "items": [
+              {
+                "href": "/produkter/tei/borrmaster/mme",
+                "title": "MME",
+                "image": "/assets/img/tei-borrmaster-mme.webp",
+                "sub": "Ekskavatoriams: 5–8 t",
+                "for": [
+                  "RDS250"
+                ]
+              },
+              {
+                "href": "/produkter/tei/borrmaster/mem",
+                "title": "MEM",
+                "image": "/assets/img/tei-borrmaster-mem.webp",
+                "sub": "Ekskavatoriams: 12–15 t",
+                "for": [
+                  "RDS350"
+                ]
+              },
+              {
+                "href": "/produkter/tei/borrmaster/hem",
+                "title": "HEM",
+                "image": "/assets/img/tei-borrmaster-hem.webp",
+                "sub": "Ekskavatoriams: 20–25 t",
+                "for": [
+                  "RDS350",
+                  "RDS550"
+                ]
+              },
+              {
+                "href": "/produkter/tei/borrmaster/hemh",
+                "title": "HEMH",
+                "image": "/assets/img/tei-borrmaster-hemh.webp",
+                "sub": "Ekskavatoriams: 25–30 t",
+                "for": [
+                  "RDS550",
+                  "RDS1004"
+                ]
+              },
+              {
+                "href": "/produkter/tei/borrmaster/mp260",
+                "title": "MP260",
+                "image": "/assets/img/tei-borrmaster-mp260.webp",
+                "sub": "Nešiojamas stiebas",
+                "for": [
+                  "RDS250"
+                ]
+              },
+              {
+                "href": "/produkter/tei/borrmaster/mph",
+                "title": "MPH",
+                "image": "/assets/img/tei-borrmaster-mph.webp",
+                "sub": "Nešiojamas stiebas",
+                "for": [
+                  "RDS250",
+                  "RDS350"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "table",
+          "header": true,
+          "align": "center",
+          "caption": "Rekomenduojamas skylės dydžio diapazonas (mm)",
+          "rows": [
+            [
+              "Modelis",
+              "Skylės dydis (mm)",
+              "Sukimo momentas (Nm)",
+              "Svoris (kg)",
+              "Sukimosi debitas (l/min)",
+              "Praplovimo veleno vidinis skersmuo (mm)"
+            ],
+            [
+              "RDS250",
+              "70 - 102",
+              "1361",
+              "48",
+              "57-76",
+              "22"
+            ],
+            [
+              "RDS350",
+              "70 - 203",
+              "2721",
+              "55",
+              "76",
+              "25"
+            ],
+            [
+              "RDS550",
+              "102 - 305",
+              "6803",
+              "177",
+              "126",
+              "38"
+            ],
+            [
+              "RDS1004",
+              "127 - 610",
+              "13605",
+              "356",
+              "144-227",
+              "51, 76, 102"
+            ],
+            [
+              "RDS1500",
+              "127 - 750",
+              "20408",
+              "442",
+              "163-227",
+              "51, 76, 102"
+            ]
+          ]
+        },
+        {
+          "type": "modules",
+          "layout": "compact",
+          "items": [
+            {
+              "title": "RDS250",
+              "image": "/assets/img/tei-rotationshammare-rds250.webp",
+              "alt": "RDS250",
+              "href": "/produkter/tei/rotationshammare/rds250",
+              "text": "Kompaktiška sukamoji galvutė nešiojamiems gręžtuvams ir ankštoms erdvėms."
+            },
+            {
+              "title": "RDS350",
+              "image": "/assets/img/tei-rotationshammare-rds350.webp",
+              "alt": "RDS350",
+              "href": "/produkter/tei/rotationshammare/rds350",
+              "text": "Kompaktiška sukamoji galvutė vidutinio dydžio gręžimo stiebams ir ankštoms erdvėms."
+            },
+            {
+              "title": "RDS550",
+              "image": "/assets/img/tei-rotationshammare-rds550.webp",
+              "alt": "RDS550",
+              "href": "/produkter/tei/rotationshammare/rds550",
+              "text": "Lengva ir kompaktiška sukamoji galvutė su smūgių slopintuvu."
+            },
+            {
+              "title": "RDS1004",
+              "image": "/assets/img/tei-rotationshammare-rds1004.webp",
+              "alt": "RDS1004",
+              "href": "/produkter/tei/rotationshammare/rds1004",
+              "text": "Sukamoji galvutė didesniems gręžimo stiebams ir gręžimo įrenginiams, su 2 greičių sukimu."
+            },
+            {
+              "title": "RDS1500",
+              "image": "/assets/img/tei-rotationshammare-rds1004-2.webp",
+              "alt": "RDS1500",
+              "text": "Galinga hidraulinė sukamoji galvutė didesniems gręžimo stiebams ir gręžimo įrenginiams.",
+              "href": "/produkter/tei/rotationshammare/rds1500"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "Žymos: viršutinio smūgio plaktukas, panardinamasis plaktukas (DTH), sukamoji galvutė"
+        },
+        {
+          "type": "related",
+          "items": [
+            {
+              "href": "/produkter/tei/topphammare",
+              "mutual": true
+            },
+            {
+              "href": "/produkter/tei/borrmaster",
+              "mutual": true
+            }
+          ]
+        }
+      ],
+      "published": true
+    },
+    "lv": {
+      "title": "Rotācijas galvas",
+      "h1": "Rotācijas galvas",
+      "description": "Rotācijas galvas ir dažādās klasēs, kas galvenokārt atkarīgas no ekskavatora svara un uz masta uzstādītā aprīkojuma.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "TEI Rock Drills logotips",
+          "href": "/produkter/tei",
+          "width": 1920,
+          "height": 1117,
+          "src": "/assets/img/tei-2.webp"
+        },
+        {
+          "type": "image",
+          "alt": "Rotācijas galvas: 2. attēls",
+          "width": 1500,
+          "height": 1242,
+          "src": "/assets/img/tei-rotationshammare-2.webp"
+        },
+        {
+          "type": "text",
+          "html": "Rotācijas galvas ir dažādās klasēs, kas galvenokārt atkarīgas no ekskavatora svara un uz masta uzstādītā aprīkojuma."
+        },
+        {
+          "type": "text",
+          "html": "Pateicoties kompaktajam izmēram un augstajai jaudas un svara attiecībai, TEI urbšanas āmuri izceļas tirgū."
+        },
+        {
+          "type": "text",
+          "html": "Zemāk redzams TEI augšējā āmura urbju klāsts. Apakšā ir tabula ar to tehniskajām specifikācijām."
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Sazinieties ar mums</a>, lai uzzinātu vairāk."
+        },
+        {
+          "type": "rangechart",
+          "layout": "selector",
+          "unit": "mm",
+          "step": 100,
+          "title": "Kura rotācijas galva der jūsu urbumam?",
+          "intro": "Katrs modelis aptver noteiktu atveru izmēru diapazonu. Atrodiet savu izmēru skalā un izvēlieties modeli, kura josla to aptver. Kur joslas pārklājas, der vairāki modeļi — izvēlieties pēc griezes momenta un skalošanas vārpstas iekšējā diametra (skatiet tabulu zemāk).",
+          "note": "Atveru izmēri atbilstoši zemāk esošajai tabulai (TEI ieteicamie diapazoni).",
+          "items": [
+            {
+              "label": "RDS250",
+              "min": 70,
+              "max": 102,
+              "href": "/produkter/tei/rotationshammare/rds250"
+            },
+            {
+              "label": "RDS350",
+              "min": 70,
+              "max": 203,
+              "href": "/produkter/tei/rotationshammare/rds350"
+            },
+            {
+              "label": "RDS550",
+              "min": 102,
+              "max": 305,
+              "href": "/produkter/tei/rotationshammare/rds550"
+            },
+            {
+              "label": "RDS1004",
+              "min": 127,
+              "max": 610,
+              "href": "/produkter/tei/rotationshammare/rds1004"
+            },
+            {
+              "label": "RDS1500",
+              "min": 127,
+              "max": 750,
+              "href": "/produkter/tei/rotationshammare/rds1500"
+            }
+          ],
+          "masts": {
+            "title": "Saderīgie masti",
+            "hint": "Izvēlieties urbumu ar augstāk esošo slīdni: iedegsies masti, kas der šim urbumam paredzētajām iekārtām.",
+            "fit": "Der",
+            "forLabel": "För",
+            "none": "Neviens saraksta masts neder šim izmēram.",
+            "more": "Atzīmētie masti der",
+            "items": [
+              {
+                "href": "/produkter/tei/borrmaster/mme",
+                "title": "MME",
+                "image": "/assets/img/tei-borrmaster-mme.webp",
+                "sub": "Ekskavatoriem: 5–8 t",
+                "for": [
+                  "RDS250"
+                ]
+              },
+              {
+                "href": "/produkter/tei/borrmaster/mem",
+                "title": "MEM",
+                "image": "/assets/img/tei-borrmaster-mem.webp",
+                "sub": "Ekskavatoriem: 12–15 t",
+                "for": [
+                  "RDS350"
+                ]
+              },
+              {
+                "href": "/produkter/tei/borrmaster/hem",
+                "title": "HEM",
+                "image": "/assets/img/tei-borrmaster-hem.webp",
+                "sub": "Ekskavatoriem: 20–25 t",
+                "for": [
+                  "RDS350",
+                  "RDS550"
+                ]
+              },
+              {
+                "href": "/produkter/tei/borrmaster/hemh",
+                "title": "HEMH",
+                "image": "/assets/img/tei-borrmaster-hemh.webp",
+                "sub": "Ekskavatoriem: 25–30 t",
+                "for": [
+                  "RDS550",
+                  "RDS1004"
+                ]
+              },
+              {
+                "href": "/produkter/tei/borrmaster/mp260",
+                "title": "MP260",
+                "image": "/assets/img/tei-borrmaster-mp260.webp",
+                "sub": "Pārnēsājams masts",
+                "for": [
+                  "RDS250"
+                ]
+              },
+              {
+                "href": "/produkter/tei/borrmaster/mph",
+                "title": "MPH",
+                "image": "/assets/img/tei-borrmaster-mph.webp",
+                "sub": "Pārnēsājams masts",
+                "for": [
+                  "RDS250",
+                  "RDS350"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "table",
+          "header": true,
+          "align": "center",
+          "caption": "Ieteicamais atveres izmēru diapazons (mm)",
+          "rows": [
+            [
+              "Modelis",
+              "Atveres izmērs (mm)",
+              "Griezes moments (Nm)",
+              "Svars (kg)",
+              "Rotācijas caurplūde (l/min)",
+              "Skalošanas vārpstas iekšējais diametrs (mm)"
+            ],
+            [
+              "RDS250",
+              "70 - 102",
+              "1361",
+              "48",
+              "57-76",
+              "22"
+            ],
+            [
+              "RDS350",
+              "70 - 203",
+              "2721",
+              "55",
+              "76",
+              "25"
+            ],
+            [
+              "RDS550",
+              "102 - 305",
+              "6803",
+              "177",
+              "126",
+              "38"
+            ],
+            [
+              "RDS1004",
+              "127 - 610",
+              "13605",
+              "356",
+              "144-227",
+              "51, 76, 102"
+            ],
+            [
+              "RDS1500",
+              "127 - 750",
+              "20408",
+              "442",
+              "163-227",
+              "51, 76, 102"
+            ]
+          ]
+        },
+        {
+          "type": "modules",
+          "layout": "compact",
+          "items": [
+            {
+              "title": "RDS250",
+              "image": "/assets/img/tei-rotationshammare-rds250.webp",
+              "alt": "RDS250",
+              "href": "/produkter/tei/rotationshammare/rds250",
+              "text": "Kompakta rotācijas galva pārnēsājamiem urbjiem un šaurām vietām."
+            },
+            {
+              "title": "RDS350",
+              "image": "/assets/img/tei-rotationshammare-rds350.webp",
+              "alt": "RDS350",
+              "href": "/produkter/tei/rotationshammare/rds350",
+              "text": "Kompakta rotācijas galva vidēja izmēra urbšanas mastiem un šaurām vietām."
+            },
+            {
+              "title": "RDS550",
+              "image": "/assets/img/tei-rotationshammare-rds550.webp",
+              "alt": "RDS550",
+              "href": "/produkter/tei/rotationshammare/rds550",
+              "text": "Viegla un kompakta rotācijas galva ar triecienu slāpētāju."
+            },
+            {
+              "title": "RDS1004",
+              "image": "/assets/img/tei-rotationshammare-rds1004.webp",
+              "alt": "RDS1004",
+              "href": "/produkter/tei/rotationshammare/rds1004",
+              "text": "Rotācijas galva lielākiem urbšanas mastiem un urbjiekārtām ar 2 ātrumu rotāciju."
+            },
+            {
+              "title": "RDS1500",
+              "image": "/assets/img/tei-rotationshammare-rds1004-2.webp",
+              "alt": "RDS1500",
+              "text": "Jaudīga hidrauliskā rotācijas galva lielākiem urbšanas mastiem un urbjiekārtām.",
+              "href": "/produkter/tei/rotationshammare/rds1500"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "Atzīmes: augšējā āmura urbis, iegremdējamais āmurs (DTH), rotācijas galva"
+        },
+        {
+          "type": "related",
+          "items": [
+            {
+              "href": "/produkter/tei/topphammare",
+              "mutual": true
+            },
+            {
+              "href": "/produkter/tei/borrmaster",
+              "mutual": true
+            }
+          ]
+        }
+      ],
+      "published": true
+    },
+    "et": {
+      "title": "Pöörlemispead",
+      "h1": "Pöörlemispead",
+      "description": "Pöörlemispead on erinevates klassides, mis sõltuvad peamiselt ekskavaatori kaalust ja mastile paigaldatavast varustusest.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "TEI Rock Drills logo",
+          "href": "/produkter/tei",
+          "width": 1920,
+          "height": 1117,
+          "src": "/assets/img/tei-2.webp"
+        },
+        {
+          "type": "image",
+          "alt": "Pöörlemispead: pilt 2",
+          "width": 1500,
+          "height": 1242,
+          "src": "/assets/img/tei-rotationshammare-2.webp"
+        },
+        {
+          "type": "text",
+          "html": "Pöörlemispead on erinevates klassides, mis sõltuvad peamiselt ekskavaatori kaalust ja mastile paigaldatavast varustusest."
+        },
+        {
+          "type": "text",
+          "html": "Kompaktse suuruse ja kõrge võimsuse-kaalu suhtega paistavad TEI puurvasarad turul silma."
+        },
+        {
+          "type": "text",
+          "html": "Allpool on TEI ülavasarate valik. Lehe lõpus on tabel nende tehniliste andmetega."
+        },
+        {
+          "type": "text",
+          "html": "Lisateabe saamiseks <a href=\"/kontakta-oss\">võta meiega ühendust</a>."
+        },
+        {
+          "type": "rangechart",
+          "layout": "selector",
+          "unit": "mm",
+          "step": 100,
+          "title": "Milline pöörlemispea sobib sinu augu jaoks?",
+          "intro": "Iga mudel katab teatud vahemiku augu suurusi. Leia skaalalt oma mõõt ja vali mudel, mille riba seda katab. Kus ribad kattuvad, sobib mitu mudelit – vali siis pöördemomendi ja loputusvõlli siseläbimõõdu järgi (vt tabelit allpool).",
+          "note": "Augude suurused vastavalt allolevale tabelile (TEI soovitatavad vahemikud).",
+          "items": [
+            {
+              "label": "RDS250",
+              "min": 70,
+              "max": 102,
+              "href": "/produkter/tei/rotationshammare/rds250"
+            },
+            {
+              "label": "RDS350",
+              "min": 70,
+              "max": 203,
+              "href": "/produkter/tei/rotationshammare/rds350"
+            },
+            {
+              "label": "RDS550",
+              "min": 102,
+              "max": 305,
+              "href": "/produkter/tei/rotationshammare/rds550"
+            },
+            {
+              "label": "RDS1004",
+              "min": 127,
+              "max": 610,
+              "href": "/produkter/tei/rotationshammare/rds1004"
+            },
+            {
+              "label": "RDS1500",
+              "min": 127,
+              "max": 750,
+              "href": "/produkter/tei/rotationshammare/rds1500"
+            }
+          ],
+          "masts": {
+            "title": "Ühilduvad mastid",
+            "hint": "Vali auk ülaloleva liuguriga: valgustuvad mastid, mis sobivad selle augu masinatele.",
+            "fit": "Sobib",
+            "forLabel": "För",
+            "none": "Ükski loendi mast ei sobi sellele suurusele.",
+            "more": "Märgitud mastid sobivad",
+            "items": [
+              {
+                "href": "/produkter/tei/borrmaster/mme",
+                "title": "MME",
+                "image": "/assets/img/tei-borrmaster-mme.webp",
+                "sub": "Ekskavaatoritele: 5–8 t",
+                "for": [
+                  "RDS250"
+                ]
+              },
+              {
+                "href": "/produkter/tei/borrmaster/mem",
+                "title": "MEM",
+                "image": "/assets/img/tei-borrmaster-mem.webp",
+                "sub": "Ekskavaatoritele: 12–15 t",
+                "for": [
+                  "RDS350"
+                ]
+              },
+              {
+                "href": "/produkter/tei/borrmaster/hem",
+                "title": "HEM",
+                "image": "/assets/img/tei-borrmaster-hem.webp",
+                "sub": "Ekskavaatoritele: 20–25 t",
+                "for": [
+                  "RDS350",
+                  "RDS550"
+                ]
+              },
+              {
+                "href": "/produkter/tei/borrmaster/hemh",
+                "title": "HEMH",
+                "image": "/assets/img/tei-borrmaster-hemh.webp",
+                "sub": "Ekskavaatoritele: 25–30 t",
+                "for": [
+                  "RDS550",
+                  "RDS1004"
+                ]
+              },
+              {
+                "href": "/produkter/tei/borrmaster/mp260",
+                "title": "MP260",
+                "image": "/assets/img/tei-borrmaster-mp260.webp",
+                "sub": "Kantav mast",
+                "for": [
+                  "RDS250"
+                ]
+              },
+              {
+                "href": "/produkter/tei/borrmaster/mph",
+                "title": "MPH",
+                "image": "/assets/img/tei-borrmaster-mph.webp",
+                "sub": "Kantav mast",
+                "for": [
+                  "RDS250",
+                  "RDS350"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "table",
+          "header": true,
+          "align": "center",
+          "caption": "Soovitatav augu suuruse vahemik (mm)",
+          "rows": [
+            [
+              "Mudel",
+              "Augu suurus (mm)",
+              "Pöördemoment (Nm)",
+              "Kaal (kg)",
+              "Pöörlemise vooluhulk (l/min)",
+              "Loputusvõlli siseläbimõõt (mm)"
+            ],
+            [
+              "RDS250",
+              "70 - 102",
+              "1361",
+              "48",
+              "57-76",
+              "22"
+            ],
+            [
+              "RDS350",
+              "70 - 203",
+              "2721",
+              "55",
+              "76",
+              "25"
+            ],
+            [
+              "RDS550",
+              "102 - 305",
+              "6803",
+              "177",
+              "126",
+              "38"
+            ],
+            [
+              "RDS1004",
+              "127 - 610",
+              "13605",
+              "356",
+              "144-227",
+              "51, 76, 102"
+            ],
+            [
+              "RDS1500",
+              "127 - 750",
+              "20408",
+              "442",
+              "163-227",
+              "51, 76, 102"
+            ]
+          ]
+        },
+        {
+          "type": "modules",
+          "layout": "compact",
+          "items": [
+            {
+              "title": "RDS250",
+              "image": "/assets/img/tei-rotationshammare-rds250.webp",
+              "alt": "RDS250",
+              "href": "/produkter/tei/rotationshammare/rds250",
+              "text": "Kompaktne pöörlemispea kantavatele puuridele ja kitsastele kohtadele."
+            },
+            {
+              "title": "RDS350",
+              "image": "/assets/img/tei-rotationshammare-rds350.webp",
+              "alt": "RDS350",
+              "href": "/produkter/tei/rotationshammare/rds350",
+              "text": "Kompaktne pöörlemispea keskmise suurusega puurimismastidele ja kitsastele kohtadele."
+            },
+            {
+              "title": "RDS550",
+              "image": "/assets/img/tei-rotationshammare-rds550.webp",
+              "alt": "RDS550",
+              "href": "/produkter/tei/rotationshammare/rds550",
+              "text": "Kerge ja kompaktne pöörlemispea põrutusvaigistiga."
+            },
+            {
+              "title": "RDS1004",
+              "image": "/assets/img/tei-rotationshammare-rds1004.webp",
+              "alt": "RDS1004",
+              "href": "/produkter/tei/rotationshammare/rds1004",
+              "text": "Pöörlemispea suurematele puurimismastidele ja puurimisseadmetele, 2-käigulise pöörlemisega."
+            },
+            {
+              "title": "RDS1500",
+              "image": "/assets/img/tei-rotationshammare-rds1004-2.webp",
+              "alt": "RDS1500",
+              "text": "Võimas hüdrauliline pöörlemispea suurematele puurimismastidele ja puurimisseadmetele.",
+              "href": "/produkter/tei/rotationshammare/rds1500"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "Sildid: ülavasar, süvisvasar (DTH), pöörlemispea"
+        },
+        {
+          "type": "related",
+          "items": [
+            {
+              "href": "/produkter/tei/topphammare",
+              "mutual": true
+            },
+            {
+              "href": "/produkter/tei/borrmaster",
+              "mutual": true
+            }
+          ]
+        }
+      ],
+      "published": true
+    },
+    "ru": {
+      "title": "Вращатели",
+      "h1": "Вращатели",
+      "description": "Вращатели выпускаются в разных классах, которые зависят в основном от массы экскаватора и оборудования, устанавливаемого на мачту.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Логотип TEI Rock Drills",
+          "href": "/produkter/tei",
+          "width": 1920,
+          "height": 1117,
+          "src": "/assets/img/tei-2.webp"
+        },
+        {
+          "type": "image",
+          "alt": "Вращатели: изображение 2",
+          "width": 1500,
+          "height": 1242,
+          "src": "/assets/img/tei-rotationshammare-2.webp"
+        },
+        {
+          "type": "text",
+          "html": "Вращатели выпускаются в разных классах, которые зависят в основном от массы экскаватора и оборудования, устанавливаемого на мачту."
+        },
+        {
+          "type": "text",
+          "html": "Благодаря компактным размерам и высокому соотношению мощности и массы буровые молоты TEI выделяются на рынке."
+        },
+        {
+          "type": "text",
+          "html": "Ниже представлен ассортимент верхних перфораторов TEI. В самом низу находится таблица с их техническими характеристиками."
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Свяжитесь с нами</a> для получения дополнительной информации."
+        },
+        {
+          "type": "rangechart",
+          "layout": "selector",
+          "unit": "mm",
+          "step": 100,
+          "title": "Какой вращатель подходит для вашего отверстия?",
+          "intro": "Каждая модель охватывает определённый диапазон размеров отверстий. Найдите свой размер на шкале и выберите модель, чья полоса его покрывает. Там, где полосы перекрываются, подходят несколько моделей — выбирайте по крутящему моменту и внутреннему диаметру промывочного вала (см. таблицу ниже).",
+          "note": "Размеры отверстий согласно таблице ниже (рекомендуемые диапазоны TEI).",
+          "items": [
+            {
+              "label": "RDS250",
+              "min": 70,
+              "max": 102,
+              "href": "/produkter/tei/rotationshammare/rds250"
+            },
+            {
+              "label": "RDS350",
+              "min": 70,
+              "max": 203,
+              "href": "/produkter/tei/rotationshammare/rds350"
+            },
+            {
+              "label": "RDS550",
+              "min": 102,
+              "max": 305,
+              "href": "/produkter/tei/rotationshammare/rds550"
+            },
+            {
+              "label": "RDS1004",
+              "min": 127,
+              "max": 610,
+              "href": "/produkter/tei/rotationshammare/rds1004"
+            },
+            {
+              "label": "RDS1500",
+              "min": 127,
+              "max": 750,
+              "href": "/produkter/tei/rotationshammare/rds1500"
+            }
+          ],
+          "masts": {
+            "title": "Совместимые мачты",
+            "hint": "Выберите отверстие ползунком выше: подсветятся мачты, подходящие для машин под это отверстие.",
+            "fit": "Подходит",
+            "forLabel": "För",
+            "none": "Ни одна мачта из списка не подходит для этого размера.",
+            "more": "Выделенные мачты подходят",
+            "items": [
+              {
+                "href": "/produkter/tei/borrmaster/mme",
+                "title": "MME",
+                "image": "/assets/img/tei-borrmaster-mme.webp",
+                "sub": "Для экскаваторов: 5–8 т",
+                "for": [
+                  "RDS250"
+                ]
+              },
+              {
+                "href": "/produkter/tei/borrmaster/mem",
+                "title": "MEM",
+                "image": "/assets/img/tei-borrmaster-mem.webp",
+                "sub": "Для экскаваторов: 12–15 т",
+                "for": [
+                  "RDS350"
+                ]
+              },
+              {
+                "href": "/produkter/tei/borrmaster/hem",
+                "title": "HEM",
+                "image": "/assets/img/tei-borrmaster-hem.webp",
+                "sub": "Для экскаваторов: 20–25 т",
+                "for": [
+                  "RDS350",
+                  "RDS550"
+                ]
+              },
+              {
+                "href": "/produkter/tei/borrmaster/hemh",
+                "title": "HEMH",
+                "image": "/assets/img/tei-borrmaster-hemh.webp",
+                "sub": "Для экскаваторов: 25–30 т",
+                "for": [
+                  "RDS550",
+                  "RDS1004"
+                ]
+              },
+              {
+                "href": "/produkter/tei/borrmaster/mp260",
+                "title": "MP260",
+                "image": "/assets/img/tei-borrmaster-mp260.webp",
+                "sub": "Переносная мачта",
+                "for": [
+                  "RDS250"
+                ]
+              },
+              {
+                "href": "/produkter/tei/borrmaster/mph",
+                "title": "MPH",
+                "image": "/assets/img/tei-borrmaster-mph.webp",
+                "sub": "Переносная мачта",
+                "for": [
+                  "RDS250",
+                  "RDS350"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "table",
+          "header": true,
+          "align": "center",
+          "caption": "Рекомендуемый диапазон размеров отверстия (мм)",
+          "rows": [
+            [
+              "Модель",
+              "Размер отверстия (мм)",
+              "Крутящий момент (Нм)",
+              "Масса (кг)",
+              "Расход вращения (л/мин)",
+              "Внутренний диаметр промывочного вала (мм)"
+            ],
+            [
+              "RDS250",
+              "70 - 102",
+              "1361",
+              "48",
+              "57-76",
+              "22"
+            ],
+            [
+              "RDS350",
+              "70 - 203",
+              "2721",
+              "55",
+              "76",
+              "25"
+            ],
+            [
+              "RDS550",
+              "102 - 305",
+              "6803",
+              "177",
+              "126",
+              "38"
+            ],
+            [
+              "RDS1004",
+              "127 - 610",
+              "13605",
+              "356",
+              "144-227",
+              "51, 76, 102"
+            ],
+            [
+              "RDS1500",
+              "127 - 750",
+              "20408",
+              "442",
+              "163-227",
+              "51, 76, 102"
+            ]
+          ]
+        },
+        {
+          "type": "modules",
+          "layout": "compact",
+          "items": [
+            {
+              "title": "RDS250",
+              "image": "/assets/img/tei-rotationshammare-rds250.webp",
+              "alt": "RDS250",
+              "href": "/produkter/tei/rotationshammare/rds250",
+              "text": "Компактный вращатель для переносных буров и стеснённых условий."
+            },
+            {
+              "title": "RDS350",
+              "image": "/assets/img/tei-rotationshammare-rds350.webp",
+              "alt": "RDS350",
+              "href": "/produkter/tei/rotationshammare/rds350",
+              "text": "Компактный вращатель для буровых мачт среднего размера и стеснённых условий."
+            },
+            {
+              "title": "RDS550",
+              "image": "/assets/img/tei-rotationshammare-rds550.webp",
+              "alt": "RDS550",
+              "href": "/produkter/tei/rotationshammare/rds550",
+              "text": "Лёгкий и компактный вращатель с амортизатором."
+            },
+            {
+              "title": "RDS1004",
+              "image": "/assets/img/tei-rotationshammare-rds1004.webp",
+              "alt": "RDS1004",
+              "href": "/produkter/tei/rotationshammare/rds1004",
+              "text": "Вращатель для крупных буровых мачт и буровых установок с двухскоростным вращением."
+            },
+            {
+              "title": "RDS1500",
+              "image": "/assets/img/tei-rotationshammare-rds1004-2.webp",
+              "alt": "RDS1500",
+              "text": "Мощный гидравлический вращатель для крупных буровых мачт и буровых установок.",
+              "href": "/produkter/tei/rotationshammare/rds1500"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "Теги: верхний перфоратор, погружной пневмоударник (DTH), вращатель"
+        },
+        {
+          "type": "related",
+          "items": [
+            {
+              "href": "/produkter/tei/topphammare",
+              "mutual": true
+            },
+            {
+              "href": "/produkter/tei/borrmaster",
+              "mutual": true
+            }
+          ]
+        }
+      ],
+      "published": true
     }
   },
   "source": {

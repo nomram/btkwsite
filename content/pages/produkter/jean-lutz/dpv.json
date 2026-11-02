@@ -368,6 +368,374 @@
           "html": "<a href=\"/kontakta-oss\">Kontakt oss</a> for mer informasjon eller hjelp til å velge riktig enhet for prosessen din."
         }
       ]
+    },
+    "lt": {
+      "title": "DPV",
+      "h1": "DPV",
+      "description": "DPV yra tvirtas ir paprastai naudojamas sprendimas realiuoju laiku rodyti ir stebėti injektavimo siurblio slėgį, debitą ir tūrį. Operatorius gali rodyti reikšmes kaip matuoklius arba grafines kreives.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Jean Lutz logotipas",
+          "href": "/produkter/jean-lutz",
+          "width": 572,
+          "height": 128,
+          "src": "/assets/img/logo-jean-lutz.webp"
+        },
+        {
+          "type": "image",
+          "alt": "DPV",
+          "width": 1200,
+          "height": 1200,
+          "src": "/assets/img/jean-lutz-dpv.webp"
+        },
+        {
+          "type": "text",
+          "html": "DPV yra tvirtas ir paprastai naudojamas sprendimas realiuoju laiku rodyti ir stebėti injektavimo siurblio slėgį, debitą ir tūrį. Operatorius gali rodyti reikšmes kaip matuoklius arba grafines kreives."
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Slėgio, debito ir tūrio rodymas realiuoju laiku",
+            "Patogi naudoti sąsaja su rodymu matuokliais arba grafinėmis kreivėmis",
+            "Skirta vienai injektavimo linijai stebėti",
+            "Prieiga prie duomenų per USB"
+          ]
+        },
+        {
+          "type": "chips",
+          "title": "Suderinami procesai",
+          "items": [
+            "Injektavimas",
+            "Jet grouting",
+            "Bandymai ir specialios injektavimo stotys"
+          ]
+        },
+        {
+          "type": "text",
+          "html": "DPV skirtas pagrindinių injektavimo linijos parametrų tiesioginiam rodymui ir stebėsenai."
+        },
+        {
+          "type": "datasheet",
+          "title": "Techniniai duomenys",
+          "tagline": "Injektavimo ekranas ir stebėsena",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Techniniai duomenys",
+              "rows": [
+                {
+                  "label": "Maitinimas",
+                  "metric": "12–36 V nuolatinė srovė arba 24 V kintamoji srovė"
+                },
+                {
+                  "label": "Svoris",
+                  "metric": "2,3 kg"
+                },
+                {
+                  "label": "Darbinė temperatūra",
+                  "metric": "−20 °C / 60 °C"
+                },
+                {
+                  "label": "Apsaugos klasė (IP)",
+                  "metric": "IP65"
+                },
+                {
+                  "label": "Spalvotas ekranas",
+                  "metric": "5,7″"
+                },
+                {
+                  "label": "Prieiga prie duomenų",
+                  "metric": "USB"
+                }
+              ]
+            }
+          ],
+          "note": "Duomenys paimti iš gamintojo svetainės."
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Susisiekite su mumis</a> dėl daugiau informacijos arba pagalbos parenkant jūsų procesui tinkamą įrenginį."
+        }
+      ],
+      "published": true
+    },
+    "lv": {
+      "title": "DPV",
+      "h1": "DPV",
+      "description": "DPV ir izturīgs un viegli lietojams risinājums injektēšanas sūkņa spiediena, caurplūdes un tilpuma attēlošanai un uzraudzībai reāllaikā. Operators var attēlot vērtības kā mērierīces vai grafiskas līknes.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Jean Lutz logotips",
+          "href": "/produkter/jean-lutz",
+          "width": 572,
+          "height": 128,
+          "src": "/assets/img/logo-jean-lutz.webp"
+        },
+        {
+          "type": "image",
+          "alt": "DPV",
+          "width": 1200,
+          "height": 1200,
+          "src": "/assets/img/jean-lutz-dpv.webp"
+        },
+        {
+          "type": "text",
+          "html": "DPV ir izturīgs un viegli lietojams risinājums injektēšanas sūkņa spiediena, caurplūdes un tilpuma attēlošanai un uzraudzībai reāllaikā. Operators var attēlot vērtības kā mērierīces vai grafiskas līknes."
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Spiediena, caurplūdes un tilpuma attēlošana reāllaikā",
+            "Lietotājam draudzīga saskarne ar attēlošanu kā mērierīces vai grafiskas līknes",
+            "Paredzēts vienas injektēšanas līnijas uzraudzībai",
+            "Piekļuve datiem pa USB"
+          ]
+        },
+        {
+          "type": "chips",
+          "title": "Saderīgie procesi",
+          "items": [
+            "Injektēšana",
+            "Jet grouting",
+            "Testi un īpašas injektēšanas stacijas"
+          ]
+        },
+        {
+          "type": "text",
+          "html": "DPV ir paredzēts injektēšanas līnijas galveno parametru tūlītējai attēlošanai un uzraudzībai."
+        },
+        {
+          "type": "datasheet",
+          "title": "Tehniskie dati",
+          "tagline": "Displejs un uzraudzība injektēšanai",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Tehniskie dati",
+              "rows": [
+                {
+                  "label": "Barošana",
+                  "metric": "12–36 V līdzstrāva vai 24 V maiņstrāva"
+                },
+                {
+                  "label": "Svars",
+                  "metric": "2,3 kg"
+                },
+                {
+                  "label": "Darba temperatūra",
+                  "metric": "−20 °C / 60 °C"
+                },
+                {
+                  "label": "Aizsardzības klase (IP)",
+                  "metric": "IP65"
+                },
+                {
+                  "label": "Krāsu displejs",
+                  "metric": "5,7″"
+                },
+                {
+                  "label": "Piekļuve datiem",
+                  "metric": "USB"
+                }
+              ]
+            }
+          ],
+          "note": "Dati ņemti no ražotāja vietnes."
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Sazinieties ar mums</a>, lai uzzinātu vairāk vai saņemtu palīdzību piemērotas ierīces izvēlē jūsu procesam."
+        }
+      ],
+      "published": true
+    },
+    "et": {
+      "title": "DPV",
+      "h1": "DPV",
+      "description": "DPV on töökindel ja lihtsasti kasutatav lahendus injekteerimispumba rõhu, vooluhulga ja mahu reaalajas kuvamiseks ja jälgimiseks. Operaator saab väärtusi kuvada mõõturitena või graafiliste kõveratena.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Jean Lutz logo",
+          "href": "/produkter/jean-lutz",
+          "width": 572,
+          "height": 128,
+          "src": "/assets/img/logo-jean-lutz.webp"
+        },
+        {
+          "type": "image",
+          "alt": "DPV",
+          "width": 1200,
+          "height": 1200,
+          "src": "/assets/img/jean-lutz-dpv.webp"
+        },
+        {
+          "type": "text",
+          "html": "DPV on töökindel ja lihtsasti kasutatav lahendus injekteerimispumba rõhu, vooluhulga ja mahu reaalajas kuvamiseks ja jälgimiseks. Operaator saab väärtusi kuvada mõõturitena või graafiliste kõveratena."
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Rõhu, vooluhulga ja mahu reaalajas kuvamine",
+            "Kasutajasõbralik liides, kus väärtused kuvatakse mõõturitena või graafiliste kõveratena",
+            "Mõeldud ühe injekteerimisliini jälgimiseks",
+            "Juurdepääs andmetele USB kaudu"
+          ]
+        },
+        {
+          "type": "chips",
+          "title": "Ühilduvad protsessid",
+          "items": [
+            "Injekteerimine",
+            "Jet grouting",
+            "Katsed ja spetsiaalsed injekteerimisjaamad"
+          ]
+        },
+        {
+          "type": "text",
+          "html": "DPV on mõeldud injekteerimisliini peamiste parameetrite viivitamatuks kuvamiseks ja jälgimiseks."
+        },
+        {
+          "type": "datasheet",
+          "title": "Tehnilised andmed",
+          "tagline": "Ekraan ja jälgimine injekteerimiseks",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Tehnilised andmed",
+              "rows": [
+                {
+                  "label": "Toide",
+                  "metric": "12–36 V alalisvool või 24 V vahelduvvool"
+                },
+                {
+                  "label": "Kaal",
+                  "metric": "2,3 kg"
+                },
+                {
+                  "label": "Töötemperatuur",
+                  "metric": "−20 °C / 60 °C"
+                },
+                {
+                  "label": "Kaitseaste (IP)",
+                  "metric": "IP65"
+                },
+                {
+                  "label": "Värviline ekraan",
+                  "metric": "5,7″"
+                },
+                {
+                  "label": "Juurdepääs andmetele",
+                  "metric": "USB"
+                }
+              ]
+            }
+          ],
+          "note": "Andmed on võetud tootja veebilehelt."
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Võta meiega ühendust</a> lisateabe saamiseks või abi saamiseks oma protsessile sobiva seadme valimisel."
+        }
+      ],
+      "published": true
+    },
+    "ru": {
+      "title": "DPV",
+      "h1": "DPV",
+      "description": "DPV — прочное и простое в использовании решение для отображения и контроля давления, расхода и объёма инъекционного насоса в реальном времени. Оператор может выводить значения в виде стрелочных индикаторов или графических кривых.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Логотип Jean Lutz",
+          "href": "/produkter/jean-lutz",
+          "width": 572,
+          "height": 128,
+          "src": "/assets/img/logo-jean-lutz.webp"
+        },
+        {
+          "type": "image",
+          "alt": "DPV",
+          "width": 1200,
+          "height": 1200,
+          "src": "/assets/img/jean-lutz-dpv.webp"
+        },
+        {
+          "type": "text",
+          "html": "DPV — прочное и простое в использовании решение для отображения и контроля давления, расхода и объёма инъекционного насоса в реальном времени. Оператор может выводить значения в виде стрелочных индикаторов или графических кривых."
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Отображение давления, расхода и объёма в реальном времени",
+            "Удобный интерфейс с отображением в виде индикаторов или графических кривых",
+            "Предназначен для контроля одной линии инъектирования",
+            "Доступ к данным по USB"
+          ]
+        },
+        {
+          "type": "chips",
+          "title": "Совместимые процессы",
+          "items": [
+            "Инъектирование",
+            "Струйная цементация (jet grouting)",
+            "Испытания и специализированные станции инъектирования"
+          ]
+        },
+        {
+          "type": "text",
+          "html": "DPV предназначен для мгновенного отображения и контроля основных параметров линии инъектирования."
+        },
+        {
+          "type": "datasheet",
+          "title": "Технические данные",
+          "tagline": "Дисплей и контроль для инъектирования",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Технические данные",
+              "rows": [
+                {
+                  "label": "Электропитание",
+                  "metric": "12–36 В постоянного тока или 24 В переменного тока"
+                },
+                {
+                  "label": "Масса",
+                  "metric": "2,3 kg"
+                },
+                {
+                  "label": "Рабочая температура",
+                  "metric": "−20 °C / 60 °C"
+                },
+                {
+                  "label": "Степень защиты (IP)",
+                  "metric": "IP65"
+                },
+                {
+                  "label": "Цветной экран",
+                  "metric": "5,7″"
+                },
+                {
+                  "label": "Доступ к данным",
+                  "metric": "USB"
+                }
+              ]
+            }
+          ],
+          "note": "Данные взяты с сайта производителя."
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Свяжитесь с нами</a> для получения дополнительной информации или помощи в выборе подходящего устройства для вашего процесса."
+        }
+      ],
+      "published": true
     }
   },
   "hero": {

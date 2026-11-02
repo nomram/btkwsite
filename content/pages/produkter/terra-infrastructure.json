@@ -284,5 +284,11 @@
   "source": {
     "url": "https://www.betongakuten.se/produkter/terra-infrastructure"
   },
-  "logo": "/assets/img/logo-terra-infrastructure.webp"
+  "logo": "/assets/img/logo-terra-infrastructure.webp",
+  "hideIn": [
+    "lt",
+    "lv",
+    "et",
+    "ru"
+  ]
 }

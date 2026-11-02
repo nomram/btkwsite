@@ -1271,6 +1271,1274 @@
           "html": "<a href=\"/kontakta-oss\">Kontakt oss</a> for pris, leveringstid eller hjelp til å velge riktig modell."
         }
       ]
+    },
+    "lt": {
+      "title": "Automatinė įranga (FAIC)",
+      "h1": "Automatinė įranga (FAIC)",
+      "description": "Automatinė įranga cementui, bentonitui, mikrodispersiniams rišikliams ir skiediniams ruošti bei injektuoti. Tikslus dozavimas, sunaudojimo registravimas, integruotas slėgio ir debito registravimas bei nuotolinis valdymas radijo ryšiu.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Häny: visiškai automatiniai siurbliai (FAIC)",
+          "width": 876,
+          "height": 510,
+          "src": "/assets/img/haeny-automatiska-pumpar-1.webp",
+          "href": "/produkter/haeny"
+        },
+        {
+          "type": "image",
+          "alt": "Häny: visiškai automatiniai siurbliai (FAIC), 2 paveikslėlis",
+          "width": 733,
+          "height": 827,
+          "src": "/assets/img/haeny-automatiska-pumpar-2.webp"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Häny FAIC"
+        },
+        {
+          "type": "text",
+          "html": "Kompaktiška automatinė injektavimo įranga, jungianti maišyklę, maišiklį ir injektavimo siurblį. Ji pasižymi dideliu našumu, kokybės užtikrinimu ir sąnaudų taupymu dėl automatizuoto veikimo. Įranga dirba su medžiagomis, kuriose daug smėlio ir mažas vandens ir cemento santykis (W/C), ir tinka įvairiems injektavimo darbams, pavyzdžiui, uolienų inkaravimui, sandarinimui ir mikrotuneliavimui."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Apžvalga",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Labai kompaktiška sistema su centriniu kėlimo tašku",
+            "Didelis našumas ir kokybės kontrolė su visiškai automatiniu maišymu",
+            "Tikslus dozavimas sveriant maišyklėje (sausi komponentai iš siloso / sraigto)",
+            "Maišymo receptai saugomi ir pasirenkami jutikliniame ekrane",
+            "Partijų ir sunaudojimo protokolai, eksportuojami per USB"
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Modeliai",
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 3,
+          "square": true,
+          "more": false,
+          "items": [
+            {
+              "title": "FAIC 650/710",
+              "image": "/assets/img/haeny-faic650-710-tile.webp",
+              "alt": "Automatinė injektavimo įranga FAIC 650/710",
+              "href": "/produkter/haeny/automatiska-pumpar/faic-650-710",
+              "bullets": [
+                "ZMP 710",
+                "Debitas: 5 m³/h",
+                "Slėgis: 100 bar",
+                "Tūris: 260 l"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "FAIC 650/712",
+              "image": "/assets/img/haeny-faic650-712-tile.webp",
+              "alt": "Automatinė injektavimo įranga FAIC 650/712",
+              "href": "/produkter/haeny/automatiska-pumpar/faic-650-712",
+              "bullets": [
+                "ZMP 712",
+                "Debitas: 4,9 m³/h",
+                "Slėgis: 88 bar",
+                "Tūris: 260 l"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "FAIC 650/725",
+              "image": "/assets/img/haeny-faic650-725-tile.webp",
+              "alt": "Automatinė injektavimo įranga FAIC 650/725",
+              "href": "/produkter/haeny/automatiska-pumpar/faic-650-725",
+              "bullets": [
+                "ZMP 725",
+                "Debitas: 5 m³/h",
+                "Slėgis: 100 bar",
+                "Tūris: 260 l"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "FAIC 1100/725",
+              "image": "/assets/img/haeny-faic1100-725-tile.webp",
+              "alt": "Automatinė injektavimo įranga FAIC 1100/725",
+              "href": "/produkter/haeny/automatiska-pumpar/faic-1100-725",
+              "bullets": [
+                "ZMP 725",
+                "Debitas: 5 m³/h",
+                "Slėgis: 100 bar",
+                "Tūris: 260 l"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "FAIC 1400/725",
+              "image": "/assets/img/haeny-faic1400-725-tile.webp",
+              "alt": "Automatinė injektavimo įranga FAIC 1400/725",
+              "href": "/produkter/haeny/automatiska-pumpar/faic-1400-725",
+              "bullets": [
+                "ZMP 725",
+                "Debitas: 5 m³/h",
+                "Slėgis: 100 bar",
+                "Tūris: 550 l"
+              ],
+              "width": 1000,
+              "height": 1000
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Naudojimas",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Inkarai, grunto vinys, įtempimo kabeliai, manžetiniai vamzdžiai, uolienų ir kontaktinis injektavimas",
+            "Bentonito suspensijos vamzdžių stūmimui ir mikrotuneliavimui"
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Modelių palyginimas",
+          "gen": true
+        },
+        {
+          "type": "table",
+          "header": true,
+          "align": "center",
+          "rows": [
+            [
+              "",
+              "FAIC 650/710",
+              "FAIC 650/712",
+              "FAIC 650/725",
+              "FAIC 1100/725",
+              "FAIC 1400/725"
+            ],
+            [
+              "FAIC našumas",
+              "5 m³/h",
+              "4.9 m³/h",
+              "5 m³/h",
+              "5 m³/h",
+              "5 m³/h"
+            ],
+            [
+              "Maks. slėgis",
+              "100 bar",
+              "88 bar",
+              "100 bar",
+              "100 bar",
+              "100 bar"
+            ],
+            [
+              "Maks. dalelių dydis",
+              "8 mm",
+              "8 mm",
+              "8 mm",
+              "8 mm",
+              "8 mm"
+            ],
+            [
+              "Hidraulinis bakas",
+              "140 l",
+              "110 l",
+              "140 l",
+              "140 l",
+              "140 l"
+            ],
+            [
+              "Siurblio modulis",
+              "viengubas",
+              "viengubas",
+              "dvigubas",
+              "dvigubas",
+              "dvigubas"
+            ],
+            [
+              "Aušinimo vandens debitas",
+              "3–4 l/min",
+              "3–4 l/min",
+              "5–6 l/min",
+              "5–6 l/min",
+              "5–6 l/min"
+            ],
+            [
+              "Naudingasis maišyklės tūris",
+              "260 l",
+              "260 l",
+              "260 l",
+              "260 l",
+              "550 l"
+            ],
+            [
+              "Cirkuliacijos našumas",
+              "1,400 l/min",
+              "1,400 l/min",
+              "1,400 l/min",
+              "1,400 l/min",
+              "2,400 l/min"
+            ],
+            [
+              "Maišiklio našumas",
+              "350 l",
+              "350 l",
+              "350 l",
+              "800 l",
+              "800 l"
+            ],
+            [
+              "Įtampa",
+              "3x 400/460 V",
+              "3x 400/460 V",
+              "3x 400/460 V",
+              "3x 400/460 V",
+              "3x 400/460 V"
+            ],
+            [
+              "Dažnis",
+              "50 / 60 Hz",
+              "50 / 60 Hz",
+              "50 / 60 Hz",
+              "50 / 60 Hz",
+              "50 / 60 Hz"
+            ],
+            [
+              "Nominalioji galia",
+              "18.5 / 21 kW",
+              "18.5 / 21 kW",
+              "19 / 22 kW",
+              "19 / 22 kW",
+              "19 / 22 kW"
+            ],
+            [
+              "Bendras svoris",
+              "1,665 kg",
+              "1,615 kg",
+              "1,950 kg",
+              "2,248 kg",
+              "2,300 kg"
+            ],
+            [
+              "Plotis",
+              "2,031 mm",
+              "2,031 mm",
+              "2,031 mm",
+              "2,410 mm",
+              "2,262 mm"
+            ],
+            [
+              "Aukštis",
+              "1,992 mm",
+              "1,992 mm",
+              "1,992 mm",
+              "2,211 mm",
+              "2,346 mm"
+            ],
+            [
+              "Ilgis",
+              "2,156 mm",
+              "2,156 mm",
+              "2,156 mm",
+              "2,461 mm",
+              "2,725 mm"
+            ]
+          ],
+          "links": [],
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Brošiūra",
+          "href": "/assets/docs/haeny-automatiska-pumpar-broschyr-eng.pdf",
+          "driveId": "1VxTNcdZ3S3U9E6bC--w_8pWHik6_RPhu"
+        },
+        {
+          "type": "text",
+          "html": "712 modelis yra toks pat kaip 710, tik FAIC 650/710 turi šiek tiek didesnį našumą, didesnį maksimalų slėgį ir didesnį hidraulinį baką, todėl jis geriau tinka sudėtingoms injektavimo užduotims. FAIC 650/712 yra šiek tiek lengvesnis, bet kitaip turi tas pačias funkcijas."
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Susisiekite su mumis</a> dėl kainos, pristatymo laiko ar pagalbos renkantis tinkamą modelį."
+        }
+      ],
+      "published": true
+    },
+    "lv": {
+      "title": "Automātiskās iekārtas (FAIC)",
+      "h1": "Automātiskās iekārtas (FAIC)",
+      "description": "Automatizētas iekārtas cementa, bentonīta, mikrosmalko saistvielu un javu sagatavošanai un injektēšanai. Precīza dozēšana, patēriņa reģistrēšana, integrēta spiediena un caurplūdes reģistrēšana un tālvadība pa radio.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Häny: pilnībā automātiski sūkņi (FAIC)",
+          "width": 876,
+          "height": 510,
+          "src": "/assets/img/haeny-automatiska-pumpar-1.webp",
+          "href": "/produkter/haeny"
+        },
+        {
+          "type": "image",
+          "alt": "Häny: pilnībā automātiski sūkņi (FAIC), 2. attēls",
+          "width": 733,
+          "height": 827,
+          "src": "/assets/img/haeny-automatiska-pumpar-2.webp"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Häny FAIC"
+        },
+        {
+          "type": "text",
+          "html": "Kompakta automatizēta injektēšanas iekārta, kas apvieno mikseri, maisītāju un injektēšanas sūkni. Tā piedāvā augstu ražību, kvalitātes nodrošināšanu un izmaksu ietaupījumu, pateicoties automātiskai darbībai. Tā apstrādā materiālus ar augstu smilšu saturu un zemu ūdens/cementa attiecību (W/C) un ir piemērota dažādiem injektēšanas pielietojumiem, piemēram, iežu enkurošanai, blīvēšanai un mikrotunelēšanai."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Pārskats",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Ļoti kompakta sistēma ar centrālu pacelšanas punktu",
+            "Augsta ražība un kvalitātes kontrole ar pilnībā automātisku maisīšanu",
+            "Precīza dozēšana, svērot mikserī (sausās sastāvdaļas no silosa / šneka)",
+            "Maisījumu receptes tiek saglabātas un izvēlētas skārienekrānā",
+            "Partiju un patēriņa protokoli, eksportējami pa USB"
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Modeļi",
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 3,
+          "square": true,
+          "more": false,
+          "items": [
+            {
+              "title": "FAIC 650/710",
+              "image": "/assets/img/haeny-faic650-710-tile.webp",
+              "alt": "Automātiska injektēšanas iekārta FAIC 650/710",
+              "href": "/produkter/haeny/automatiska-pumpar/faic-650-710",
+              "bullets": [
+                "ZMP 710",
+                "Caurplūde: 5 m³/h",
+                "Spiediens: 100 bar",
+                "Tilpums: 260 l"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "FAIC 650/712",
+              "image": "/assets/img/haeny-faic650-712-tile.webp",
+              "alt": "Automātiska injektēšanas iekārta FAIC 650/712",
+              "href": "/produkter/haeny/automatiska-pumpar/faic-650-712",
+              "bullets": [
+                "ZMP 712",
+                "Caurplūde: 4,9 m³/h",
+                "Spiediens: 88 bar",
+                "Tilpums: 260 l"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "FAIC 650/725",
+              "image": "/assets/img/haeny-faic650-725-tile.webp",
+              "alt": "Automātiska injektēšanas iekārta FAIC 650/725",
+              "href": "/produkter/haeny/automatiska-pumpar/faic-650-725",
+              "bullets": [
+                "ZMP 725",
+                "Caurplūde: 5 m³/h",
+                "Spiediens: 100 bar",
+                "Tilpums: 260 l"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "FAIC 1100/725",
+              "image": "/assets/img/haeny-faic1100-725-tile.webp",
+              "alt": "Automātiska injektēšanas iekārta FAIC 1100/725",
+              "href": "/produkter/haeny/automatiska-pumpar/faic-1100-725",
+              "bullets": [
+                "ZMP 725",
+                "Caurplūde: 5 m³/h",
+                "Spiediens: 100 bar",
+                "Tilpums: 260 l"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "FAIC 1400/725",
+              "image": "/assets/img/haeny-faic1400-725-tile.webp",
+              "alt": "Automātiska injektēšanas iekārta FAIC 1400/725",
+              "href": "/produkter/haeny/automatiska-pumpar/faic-1400-725",
+              "bullets": [
+                "ZMP 725",
+                "Caurplūde: 5 m³/h",
+                "Spiediens: 100 bar",
+                "Tilpums: 550 l"
+              ],
+              "width": 1000,
+              "height": 1000
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Lietojums",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Enkuri, grunts naglas, nospriegojuma kabeļi, manšešu caurules, iežu un kontaktinjektēšana",
+            "Bentonīta suspensijas cauruļu iespiešanai un mikrotunelēšanai"
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Modeļu salīdzinājums",
+          "gen": true
+        },
+        {
+          "type": "table",
+          "header": true,
+          "align": "center",
+          "rows": [
+            [
+              "",
+              "FAIC 650/710",
+              "FAIC 650/712",
+              "FAIC 650/725",
+              "FAIC 1100/725",
+              "FAIC 1400/725"
+            ],
+            [
+              "FAIC ražība",
+              "5 m³/h",
+              "4.9 m³/h",
+              "5 m³/h",
+              "5 m³/h",
+              "5 m³/h"
+            ],
+            [
+              "Maks. spiediens",
+              "100 bar",
+              "88 bar",
+              "100 bar",
+              "100 bar",
+              "100 bar"
+            ],
+            [
+              "Maks. graudu izmērs",
+              "8 mm",
+              "8 mm",
+              "8 mm",
+              "8 mm",
+              "8 mm"
+            ],
+            [
+              "Hidrauliskā tvertne",
+              "140 l",
+              "110 l",
+              "140 l",
+              "140 l",
+              "140 l"
+            ],
+            [
+              "Sūkņa modulis",
+              "vienkāršs",
+              "vienkāršs",
+              "dubults",
+              "dubults",
+              "dubults"
+            ],
+            [
+              "Dzesēšanas ūdens plūsma",
+              "3–4 l/min",
+              "3–4 l/min",
+              "5–6 l/min",
+              "5–6 l/min",
+              "5–6 l/min"
+            ],
+            [
+              "Mikseri lietderīgais tilpums",
+              "260 l",
+              "260 l",
+              "260 l",
+              "260 l",
+              "550 l"
+            ],
+            [
+              "Cirkulācijas ražība",
+              "1,400 l/min",
+              "1,400 l/min",
+              "1,400 l/min",
+              "1,400 l/min",
+              "2,400 l/min"
+            ],
+            [
+              "Maisītāja ražība",
+              "350 l",
+              "350 l",
+              "350 l",
+              "800 l",
+              "800 l"
+            ],
+            [
+              "Spriegums",
+              "3x 400/460 V",
+              "3x 400/460 V",
+              "3x 400/460 V",
+              "3x 400/460 V",
+              "3x 400/460 V"
+            ],
+            [
+              "Frekvence",
+              "50 / 60 Hz",
+              "50 / 60 Hz",
+              "50 / 60 Hz",
+              "50 / 60 Hz",
+              "50 / 60 Hz"
+            ],
+            [
+              "Nominālā jauda",
+              "18.5 / 21 kW",
+              "18.5 / 21 kW",
+              "19 / 22 kW",
+              "19 / 22 kW",
+              "19 / 22 kW"
+            ],
+            [
+              "Kopējais svars",
+              "1,665 kg",
+              "1,615 kg",
+              "1,950 kg",
+              "2,248 kg",
+              "2,300 kg"
+            ],
+            [
+              "Platums",
+              "2,031 mm",
+              "2,031 mm",
+              "2,031 mm",
+              "2,410 mm",
+              "2,262 mm"
+            ],
+            [
+              "Augstums",
+              "1,992 mm",
+              "1,992 mm",
+              "1,992 mm",
+              "2,211 mm",
+              "2,346 mm"
+            ],
+            [
+              "Garums",
+              "2,156 mm",
+              "2,156 mm",
+              "2,156 mm",
+              "2,461 mm",
+              "2,725 mm"
+            ]
+          ],
+          "links": [],
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Brošūra",
+          "href": "/assets/docs/haeny-automatiska-pumpar-broschyr-eng.pdf",
+          "driveId": "1VxTNcdZ3S3U9E6bC--w_8pWHik6_RPhu"
+        },
+        {
+          "type": "text",
+          "html": "Modelis 712 ir tāds pats kā 710, ar atšķirību, ka FAIC 650/710 ir nedaudz lielāka ražība, lielāks maksimālais spiediens un lielāka hidrauliskā tvertne, tāpēc tas labāk piemērots sarežģītiem injektēšanas uzdevumiem. FAIC 650/712 ir nedaudz vieglāks, bet citādi tam ir tāda pati funkcionalitāte."
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Sazinieties ar mums</a> par cenu, piegādes laiku vai palīdzību pareizā modeļa izvēlē."
+        }
+      ],
+      "published": true
+    },
+    "et": {
+      "title": "Automaatjaamad (FAIC)",
+      "h1": "Automaatjaamad (FAIC)",
+      "description": "Automaatjaamad tsemendi, bentoniidi, mikrohõredate sideainete ja segude valmistamiseks ning injekteerimiseks. Täpne doseerimine, kulu registreerimine, integreeritud rõhu- ja vooluhulga registreerimine ning raadio teel kaugjuhtimine.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Häny: täisautomaatsed pumbad (FAIC)",
+          "width": 876,
+          "height": 510,
+          "src": "/assets/img/haeny-automatiska-pumpar-1.webp",
+          "href": "/produkter/haeny"
+        },
+        {
+          "type": "image",
+          "alt": "Häny: täisautomaatsed pumbad (FAIC), pilt 2",
+          "width": 733,
+          "height": 827,
+          "src": "/assets/img/haeny-automatiska-pumpar-2.webp"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Häny FAIC"
+        },
+        {
+          "type": "text",
+          "html": "Kompaktne automatiseeritud injekteerimisjaam, mis ühendab segisti, seguri ja injekteerimispumba. Automatiseeritud töö tõttu pakub see suurt tootlikkust, kvaliteedi tagamist ja kulude kokkuhoidu. See käsitleb suure liivasisaldusega ja madala vee-tsemendisuhtega (W/C) materjale ning sobib erinevateks injekteerimisrakendusteks, nagu kaljuankurdamine, tihendamine ja mikrotunnelite rajamine."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Ülevaade",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Väga kompaktne süsteem keskse tõstepunktiga",
+            "Suur jõudlus ja kvaliteedikontroll täisautomaatse segamisega",
+            "Täpne doseerimine kaalumisega segistis (kuivkomponendid silo / kruvi kaudu)",
+            "Segureteptid salvestatakse ja valitakse puuteekraanil",
+            "Partii- ja kulu protokollid, eksporditavad USB kaudu"
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Mudelid",
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 3,
+          "square": true,
+          "more": false,
+          "items": [
+            {
+              "title": "FAIC 650/710",
+              "image": "/assets/img/haeny-faic650-710-tile.webp",
+              "alt": "Automaatne injekteerimisjaam FAIC 650/710",
+              "href": "/produkter/haeny/automatiska-pumpar/faic-650-710",
+              "bullets": [
+                "ZMP 710",
+                "Vooluhulk: 5 m³/h",
+                "Rõhk: 100 bar",
+                "Maht: 260 l"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "FAIC 650/712",
+              "image": "/assets/img/haeny-faic650-712-tile.webp",
+              "alt": "Automaatne injekteerimisjaam FAIC 650/712",
+              "href": "/produkter/haeny/automatiska-pumpar/faic-650-712",
+              "bullets": [
+                "ZMP 712",
+                "Vooluhulk: 4,9 m³/h",
+                "Rõhk: 88 bar",
+                "Maht: 260 l"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "FAIC 650/725",
+              "image": "/assets/img/haeny-faic650-725-tile.webp",
+              "alt": "Automaatne injekteerimisjaam FAIC 650/725",
+              "href": "/produkter/haeny/automatiska-pumpar/faic-650-725",
+              "bullets": [
+                "ZMP 725",
+                "Vooluhulk: 5 m³/h",
+                "Rõhk: 100 bar",
+                "Maht: 260 l"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "FAIC 1100/725",
+              "image": "/assets/img/haeny-faic1100-725-tile.webp",
+              "alt": "Automaatne injekteerimisjaam FAIC 1100/725",
+              "href": "/produkter/haeny/automatiska-pumpar/faic-1100-725",
+              "bullets": [
+                "ZMP 725",
+                "Vooluhulk: 5 m³/h",
+                "Rõhk: 100 bar",
+                "Maht: 260 l"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "FAIC 1400/725",
+              "image": "/assets/img/haeny-faic1400-725-tile.webp",
+              "alt": "Automaatne injekteerimisjaam FAIC 1400/725",
+              "href": "/produkter/haeny/automatiska-pumpar/faic-1400-725",
+              "bullets": [
+                "ZMP 725",
+                "Vooluhulk: 5 m³/h",
+                "Rõhk: 100 bar",
+                "Maht: 550 l"
+              ],
+              "width": 1000,
+              "height": 1000
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Kasutus",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Ankrud, mullanaelad, pingestuskaablid, mansetttorud, kalju- ja kontaktinjekteerimine",
+            "Bentoniidisuspensioonid torude survetamiseks ja mikrotunnelite rajamiseks"
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Mudelite võrdlus",
+          "gen": true
+        },
+        {
+          "type": "table",
+          "header": true,
+          "align": "center",
+          "rows": [
+            [
+              "",
+              "FAIC 650/710",
+              "FAIC 650/712",
+              "FAIC 650/725",
+              "FAIC 1100/725",
+              "FAIC 1400/725"
+            ],
+            [
+              "FAIC jõudlus",
+              "5 m³/h",
+              "4.9 m³/h",
+              "5 m³/h",
+              "5 m³/h",
+              "5 m³/h"
+            ],
+            [
+              "Maks. rõhk",
+              "100 bar",
+              "88 bar",
+              "100 bar",
+              "100 bar",
+              "100 bar"
+            ],
+            [
+              "Maks. terasuurus",
+              "8 mm",
+              "8 mm",
+              "8 mm",
+              "8 mm",
+              "8 mm"
+            ],
+            [
+              "Hüdraulikapaak",
+              "140 l",
+              "110 l",
+              "140 l",
+              "140 l",
+              "140 l"
+            ],
+            [
+              "Pumbamoodul",
+              "üksik",
+              "üksik",
+              "kahekordne",
+              "kahekordne",
+              "kahekordne"
+            ],
+            [
+              "Jahutusvee vooluhulk",
+              "3–4 l/min",
+              "3–4 l/min",
+              "5–6 l/min",
+              "5–6 l/min",
+              "5–6 l/min"
+            ],
+            [
+              "Segisti kasulik maht",
+              "260 l",
+              "260 l",
+              "260 l",
+              "260 l",
+              "550 l"
+            ],
+            [
+              "Ringluse jõudlus",
+              "1,400 l/min",
+              "1,400 l/min",
+              "1,400 l/min",
+              "1,400 l/min",
+              "2,400 l/min"
+            ],
+            [
+              "Seguri jõudlus",
+              "350 l",
+              "350 l",
+              "350 l",
+              "800 l",
+              "800 l"
+            ],
+            [
+              "Pinge",
+              "3x 400/460 V",
+              "3x 400/460 V",
+              "3x 400/460 V",
+              "3x 400/460 V",
+              "3x 400/460 V"
+            ],
+            [
+              "Sagedus",
+              "50 / 60 Hz",
+              "50 / 60 Hz",
+              "50 / 60 Hz",
+              "50 / 60 Hz",
+              "50 / 60 Hz"
+            ],
+            [
+              "Nimivõimsus",
+              "18.5 / 21 kW",
+              "18.5 / 21 kW",
+              "19 / 22 kW",
+              "19 / 22 kW",
+              "19 / 22 kW"
+            ],
+            [
+              "Kogukaal",
+              "1,665 kg",
+              "1,615 kg",
+              "1,950 kg",
+              "2,248 kg",
+              "2,300 kg"
+            ],
+            [
+              "Laius",
+              "2,031 mm",
+              "2,031 mm",
+              "2,031 mm",
+              "2,410 mm",
+              "2,262 mm"
+            ],
+            [
+              "Kõrgus",
+              "1,992 mm",
+              "1,992 mm",
+              "1,992 mm",
+              "2,211 mm",
+              "2,346 mm"
+            ],
+            [
+              "Pikkus",
+              "2,156 mm",
+              "2,156 mm",
+              "2,156 mm",
+              "2,461 mm",
+              "2,725 mm"
+            ]
+          ],
+          "links": [],
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Brošüür",
+          "href": "/assets/docs/haeny-automatiska-pumpar-broschyr-eng.pdf",
+          "driveId": "1VxTNcdZ3S3U9E6bC--w_8pWHik6_RPhu"
+        },
+        {
+          "type": "text",
+          "html": "Mudel 712 on sama mis 710, ainult et FAIC 650/710 jõudlus on veidi suurem, maksimaalne rõhk kõrgem ja hüdraulikapaak suurem, mistõttu sobib see paremini nõudlikeks injekteerimisülesanneteks. FAIC 650/712 on veidi kergem, kuid muus osas sama funktsionaalsusega."
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Võta meiega ühendust</a> hinna, tarneaja või õige mudeli valikul abi saamiseks."
+        }
+      ],
+      "published": true
+    },
+    "ru": {
+      "title": "Автоматические установки (FAIC)",
+      "h1": "Автоматические установки (FAIC)",
+      "description": "Автоматизированные установки для приготовления и инъектирования цемента, бентонита, микротонких вяжущих и растворов. Точное дозирование, учёт расхода, встроенная регистрация давления и расхода, а также радиоуправление.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Häny: полностью автоматические насосы (FAIC)",
+          "width": 876,
+          "height": 510,
+          "src": "/assets/img/haeny-automatiska-pumpar-1.webp",
+          "href": "/produkter/haeny"
+        },
+        {
+          "type": "image",
+          "alt": "Häny: полностью автоматические насосы (FAIC), изображение 2",
+          "width": 733,
+          "height": 827,
+          "src": "/assets/img/haeny-automatiska-pumpar-2.webp"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Häny FAIC"
+        },
+        {
+          "type": "text",
+          "html": "Компактная автоматизированная инъекционная установка, сочетающая смеситель, мешалку и инъекционный насос. Благодаря автоматической работе она обеспечивает высокую производительность, гарантию качества и экономию затрат. Работает с материалами с высоким содержанием песка и низким водоцементным отношением (В/Ц) и подходит для различных задач инъектирования, таких как анкеровка в скале, герметизация и микротоннелирование."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Обзор",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Очень компактная система с центральной точкой подъёма",
+            "Высокая производительность и контроль качества при полностью автоматическом смешивании",
+            "Точное дозирование взвешиванием в смесителе (сухие компоненты из силоса / по шнеку)",
+            "Рецептуры смесей сохраняются и выбираются на сенсорном экране",
+            "Протоколы партий и расхода, экспорт через USB"
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Модели",
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 3,
+          "square": true,
+          "more": false,
+          "items": [
+            {
+              "title": "FAIC 650/710",
+              "image": "/assets/img/haeny-faic650-710-tile.webp",
+              "alt": "Автоматическая инъекционная установка FAIC 650/710",
+              "href": "/produkter/haeny/automatiska-pumpar/faic-650-710",
+              "bullets": [
+                "ZMP 710",
+                "Расход: 5 м³/ч",
+                "Давление: 100 бар",
+                "Объём: 260 л"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "FAIC 650/712",
+              "image": "/assets/img/haeny-faic650-712-tile.webp",
+              "alt": "Автоматическая инъекционная установка FAIC 650/712",
+              "href": "/produkter/haeny/automatiska-pumpar/faic-650-712",
+              "bullets": [
+                "ZMP 712",
+                "Расход: 4,9 м³/ч",
+                "Давление: 88 бар",
+                "Объём: 260 л"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "FAIC 650/725",
+              "image": "/assets/img/haeny-faic650-725-tile.webp",
+              "alt": "Автоматическая инъекционная установка FAIC 650/725",
+              "href": "/produkter/haeny/automatiska-pumpar/faic-650-725",
+              "bullets": [
+                "ZMP 725",
+                "Расход: 5 м³/ч",
+                "Давление: 100 бар",
+                "Объём: 260 л"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "FAIC 1100/725",
+              "image": "/assets/img/haeny-faic1100-725-tile.webp",
+              "alt": "Автоматическая инъекционная установка FAIC 1100/725",
+              "href": "/produkter/haeny/automatiska-pumpar/faic-1100-725",
+              "bullets": [
+                "ZMP 725",
+                "Расход: 5 м³/ч",
+                "Давление: 100 бар",
+                "Объём: 260 л"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "FAIC 1400/725",
+              "image": "/assets/img/haeny-faic1400-725-tile.webp",
+              "alt": "Автоматическая инъекционная установка FAIC 1400/725",
+              "href": "/produkter/haeny/automatiska-pumpar/faic-1400-725",
+              "bullets": [
+                "ZMP 725",
+                "Расход: 5 м³/ч",
+                "Давление: 100 бар",
+                "Объём: 550 л"
+              ],
+              "width": 1000,
+              "height": 1000
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Применение",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Анкеры, грунтовые гвозди, напрягаемые тросы, манжетные трубы, цементация скальных пород и контактная инъекция",
+            "Бентонитовые суспензии для продавливания труб и микротоннелирования"
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Сравнение моделей",
+          "gen": true
+        },
+        {
+          "type": "table",
+          "header": true,
+          "align": "center",
+          "rows": [
+            [
+              "",
+              "FAIC 650/710",
+              "FAIC 650/712",
+              "FAIC 650/725",
+              "FAIC 1100/725",
+              "FAIC 1400/725"
+            ],
+            [
+              "Производительность FAIC",
+              "5 m³/h",
+              "4.9 m³/h",
+              "5 m³/h",
+              "5 m³/h",
+              "5 m³/h"
+            ],
+            [
+              "Макс. давление",
+              "100 bar",
+              "88 bar",
+              "100 bar",
+              "100 bar",
+              "100 bar"
+            ],
+            [
+              "Макс. размер зерна",
+              "8 mm",
+              "8 mm",
+              "8 mm",
+              "8 mm",
+              "8 mm"
+            ],
+            [
+              "Гидробак",
+              "140 l",
+              "110 l",
+              "140 l",
+              "140 l",
+              "140 l"
+            ],
+            [
+              "Насосный модуль",
+              "одинарный",
+              "одинарный",
+              "двойной",
+              "двойной",
+              "двойной"
+            ],
+            [
+              "Расход охлаждающей воды",
+              "3–4 l/min",
+              "3–4 l/min",
+              "5–6 l/min",
+              "5–6 l/min",
+              "5–6 l/min"
+            ],
+            [
+              "Полезный объём смесителя",
+              "260 l",
+              "260 l",
+              "260 l",
+              "260 l",
+              "550 l"
+            ],
+            [
+              "Производительность циркуляции",
+              "1,400 l/min",
+              "1,400 l/min",
+              "1,400 l/min",
+              "1,400 l/min",
+              "2,400 l/min"
+            ],
+            [
+              "Производительность мешалки",
+              "350 l",
+              "350 l",
+              "350 l",
+              "800 l",
+              "800 l"
+            ],
+            [
+              "Напряжение",
+              "3x 400/460 V",
+              "3x 400/460 V",
+              "3x 400/460 V",
+              "3x 400/460 V",
+              "3x 400/460 V"
+            ],
+            [
+              "Частота",
+              "50 / 60 Hz",
+              "50 / 60 Hz",
+              "50 / 60 Hz",
+              "50 / 60 Hz",
+              "50 / 60 Hz"
+            ],
+            [
+              "Номинальная мощность",
+              "18.5 / 21 kW",
+              "18.5 / 21 kW",
+              "19 / 22 kW",
+              "19 / 22 kW",
+              "19 / 22 kW"
+            ],
+            [
+              "Общая масса",
+              "1,665 kg",
+              "1,615 kg",
+              "1,950 kg",
+              "2,248 kg",
+              "2,300 kg"
+            ],
+            [
+              "Ширина",
+              "2,031 mm",
+              "2,031 mm",
+              "2,031 mm",
+              "2,410 mm",
+              "2,262 mm"
+            ],
+            [
+              "Высота",
+              "1,992 mm",
+              "1,992 mm",
+              "1,992 mm",
+              "2,211 mm",
+              "2,346 mm"
+            ],
+            [
+              "Длина",
+              "2,156 mm",
+              "2,156 mm",
+              "2,156 mm",
+              "2,461 mm",
+              "2,725 mm"
+            ]
+          ],
+          "links": [],
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Брошюра",
+          "href": "/assets/docs/haeny-automatiska-pumpar-broschyr-eng.pdf",
+          "driveId": "1VxTNcdZ3S3U9E6bC--w_8pWHik6_RPhu"
+        },
+        {
+          "type": "text",
+          "html": "Модель 712 такая же, как 710, с той разницей, что FAIC 650/710 имеет несколько большую производительность, более высокое максимальное давление и больший гидробак, что делает её более подходящей для сложных задач инъектирования. FAIC 650/712 немного легче, но в остальном имеет те же функции."
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Свяжитесь с нами</a>, чтобы узнать цену, срок поставки или получить помощь в выборе подходящей модели."
+        }
+      ],
+      "published": true
     }
   },
   "source": {

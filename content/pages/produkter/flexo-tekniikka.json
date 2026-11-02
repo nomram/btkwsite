@@ -133,5 +133,11 @@
   "source": {
     "url": "https://www.betongakuten.se/produkter/flexo-tekniikka"
   },
-  "logo": "/assets/img/logo-flexo-tekniikka.webp"
+  "logo": "/assets/img/logo-flexo-tekniikka.webp",
+  "hideIn": [
+    "lt",
+    "lv",
+    "et",
+    "ru"
+  ]
 }

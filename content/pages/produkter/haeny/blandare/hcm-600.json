@@ -860,6 +860,866 @@
           "gen": true
         }
       ]
+    },
+    "lt": {
+      "title": "Häny HCM 600",
+      "h1": "Häny HCM 600",
+      "description": "Didelės šlyties maišyklė HCM 600. Koloidinė maišyklė ypač tinka suspensijoms iš vandens, cemento, itin smulkaus rišiklio, bentonito, smėlio ir kitų medžiagų gaminti. Tvirtas…",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "HÄNY",
+          "href": "/produkter/haeny",
+          "width": 832,
+          "height": 143,
+          "src": "/assets/img/haeny-1.webp",
+          "gen": true
+        },
+        {
+          "type": "columns",
+          "ratio": "40-60",
+          "left": [
+            {
+              "type": "image",
+              "alt": "Didelės šlyties maišyklė HCM 600",
+              "width": 780,
+              "height": 1128,
+              "src": "/assets/img/haeny-hcm600-model.webp"
+            }
+          ],
+          "right": [
+            {
+              "type": "text",
+              "html": "Koloidinė maišyklė ypač tinka suspensijoms iš vandens, cemento, itin smulkaus rišiklio, bentonito, smėlio ir kitų medžiagų gaminti. Tvirtas maišymo bakas ir labai atsparios dėvėjimuisi maišymo siurblio medžiagos užtikrina ilgą tarnavimo laiką ir sklandų darbą."
+            },
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "Puiki mišinio kokybė iš greitaeigio maišymo siurblio",
+                "Kūginis bakas su recirkuliacijos linija",
+                "Automatinis veleno sandariklio tepimas, 3 krypčių vožtuvas maišymui arba perpylimui",
+                "Papildoma maišyklė (pasirinktinai), kai W/C &lt; 0,5, ir mikrocementams"
+              ]
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Naudojimas",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Cemento, itin smulkaus rišiklio, bentonito, smėlio ir kitų medžiagų suspensijos",
+            "Atskirai arba kartu su maišikliu ir siurbliu"
+          ],
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Brošiūra HCM 600 (PDF, anglų k.)",
+          "href": "/assets/docs/haeny-hcm600-brochure-en.pdf",
+          "gen": true
+        },
+        {
+          "type": "datasheet",
+          "title": "Techniniai duomenys",
+          "tagline": "Didelės šlyties maišyklė HCM 600",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Didelės šlyties maišyklė",
+              "rows": [
+                {
+                  "label": "Maišymo siurblys",
+                  "metric": "TMP 22"
+                },
+                {
+                  "label": "Apytikslis našumas",
+                  "metric": "8 m³/h"
+                },
+                {
+                  "label": "Cirkuliacijos našumas",
+                  "metric": "1,400 l/min"
+                },
+                {
+                  "label": "Naudingasis tūris",
+                  "metric": "550 l"
+                },
+                {
+                  "label": "Maks. dalelių dydis",
+                  "metric": "8 mm"
+                },
+                {
+                  "label": "Skysčio temperatūra",
+                  "metric": "Max. 40°C"
+                },
+                {
+                  "label": "Vandens jungtis",
+                  "metric": "BSP 1½\""
+                }
+              ]
+            },
+            {
+              "title": "Elektriniai duomenys",
+              "rows": [
+                {
+                  "label": "Įtampa",
+                  "metric": "3x 400/460 V"
+                },
+                {
+                  "label": "Dažnis",
+                  "metric": "50 / 60 Hz"
+                },
+                {
+                  "label": "Nominalioji galia",
+                  "metric": "9.2 / 10.5 kW"
+                },
+                {
+                  "label": "Nominalioji srovė",
+                  "metric": "16.8 / 17.6 A"
+                },
+                {
+                  "label": "Apsukų skaičius",
+                  "metric": "1,465 / 1,765 min⁻¹"
+                }
+              ]
+            },
+            {
+              "title": "Svoris ir matmenys",
+              "rows": [
+                {
+                  "label": "Apytikslis svoris",
+                  "metric": "370 kg"
+                },
+                {
+                  "label": "Plotis",
+                  "metric": "1,025 mm"
+                },
+                {
+                  "label": "Aukštis",
+                  "metric": "1,750 mm"
+                },
+                {
+                  "label": "Ilgis",
+                  "metric": "1,360 mm"
+                }
+              ]
+            }
+          ],
+          "note": "1: vandens ir cemento santykis = 1",
+          "source": "Duomenys paimti iš gamintojo brošiūrų (anglų k.).",
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 1,
+          "narrow": true,
+          "zoom": true,
+          "more": false,
+          "items": [
+            {
+              "title": "Matmenys ir brėžinys",
+              "image": "/assets/img/haeny-hcm600-dim.webp",
+              "alt": "Matmenys ir brėžinys HCM 600",
+              "text": "Užveskite žymeklį ant brėžinio (arba palieskite ir vilkite), kad jį padidintumėte 2×.",
+              "width": 1565,
+              "height": 2088
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "collapsible": true,
+          "title": "Standartinė ir pasirenkama įranga",
+          "items": [
+            "Pasirinktinai (didelės šlyties maišyklė): vandens skaitiklis 1½\" tiksliam vandens dozavimui (rankinis uždarymas)",
+            "Pasirinktinai (didelės šlyties maišyklė): automatinis vandens skaitiklis 1½\" su reguliuojamu skaitikliu tiksliam vandens dozavimui",
+            "Pasirinktinai (didelės šlyties maišyklė): papildomas maišymo agregatas 3x 400/460 V, 50/60 Hz (3,0/3,6 kW)"
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Susisiekite su mumis</a> dėl kainos, pristatymo laiko ar pagalbos renkantis tinkamą modelį.",
+          "gen": true
+        },
+        {
+          "type": "related",
+          "title": "Taip pat žiūrėkite",
+          "items": [
+            {
+              "href": "/produkter/haeny/blandare",
+              "mutual": false
+            },
+            {
+              "href": "/produkter/haeny/blandare/hcm-300"
+            },
+            {
+              "href": "/produkter/haeny/blandare/hcm-800"
+            },
+            {
+              "href": "/produkter/haeny/blandare/hcm-2500"
+            }
+          ],
+          "gen": true
+        }
+      ],
+      "published": true
+    },
+    "lv": {
+      "title": "Häny HCM 600",
+      "h1": "Häny HCM 600",
+      "description": "Augstas bīdes mikseris HCM 600. Koloidālais mikseris ir īpaši piemērots suspensiju ražošanai no ūdens, cementa, īpaši smalkas saistvielas, bentonīta, smilts un citiem materiāliem. Izturīga…",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "HÄNY",
+          "href": "/produkter/haeny",
+          "width": 832,
+          "height": 143,
+          "src": "/assets/img/haeny-1.webp",
+          "gen": true
+        },
+        {
+          "type": "columns",
+          "ratio": "40-60",
+          "left": [
+            {
+              "type": "image",
+              "alt": "Augstas bīdes mikseris HCM 600",
+              "width": 780,
+              "height": 1128,
+              "src": "/assets/img/haeny-hcm600-model.webp"
+            }
+          ],
+          "right": [
+            {
+              "type": "text",
+              "html": "Koloidālais mikseris ir īpaši piemērots suspensiju ražošanai no ūdens, cementa, īpaši smalkas saistvielas, bentonīta, smilts un citiem materiāliem. Izturīga maisīšanas tvertne kopā ar ļoti nodilumizturīgiem materiāliem maisīšanas sūknī nodrošina ilgu kalpošanas laiku un bezgļūmu darbību."
+            },
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "Lieliska maisījuma kvalitāte no ātrgaitas maisīšanas sūkņa",
+                "Koniska tvertne ar recirkulācijas līniju",
+                "Automātiska vārpstas blīvējuma eļļošana, 3 virzienu vārsts maisīšanai vai pārsūknēšanai",
+                "Papildu mikseris (opcija), ja W/C &lt; 0,5, un mikrocementiem"
+              ]
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Lietojums",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Cementa, īpaši smalkas saistvielas, bentonīta, smilts u. c. suspensijas",
+            "Atsevišķi vai kopā ar maisītāju un sūkni"
+          ],
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Brošūra HCM 600 (PDF, angļu val.)",
+          "href": "/assets/docs/haeny-hcm600-brochure-en.pdf",
+          "gen": true
+        },
+        {
+          "type": "datasheet",
+          "title": "Tehniskie dati",
+          "tagline": "Augstas bīdes mikseris HCM 600",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Augstas bīdes mikseris",
+              "rows": [
+                {
+                  "label": "Maisīšanas sūknis",
+                  "metric": "TMP 22"
+                },
+                {
+                  "label": "Aptuvenā ražība",
+                  "metric": "8 m³/h"
+                },
+                {
+                  "label": "Cirkulācijas ražība",
+                  "metric": "1,400 l/min"
+                },
+                {
+                  "label": "Lietderīgais tilpums",
+                  "metric": "550 l"
+                },
+                {
+                  "label": "Maks. graudu izmērs",
+                  "metric": "8 mm"
+                },
+                {
+                  "label": "Šķidruma temperatūra",
+                  "metric": "Max. 40°C"
+                },
+                {
+                  "label": "Ūdens pieslēgums",
+                  "metric": "BSP 1½\""
+                }
+              ]
+            },
+            {
+              "title": "Elektriskie dati",
+              "rows": [
+                {
+                  "label": "Spriegums",
+                  "metric": "3x 400/460 V"
+                },
+                {
+                  "label": "Frekvence",
+                  "metric": "50 / 60 Hz"
+                },
+                {
+                  "label": "Nominālā jauda",
+                  "metric": "9.2 / 10.5 kW"
+                },
+                {
+                  "label": "Nominālā strāva",
+                  "metric": "16.8 / 17.6 A"
+                },
+                {
+                  "label": "Apgriezieni",
+                  "metric": "1,465 / 1,765 min⁻¹"
+                }
+              ]
+            },
+            {
+              "title": "Svars un izmēri",
+              "rows": [
+                {
+                  "label": "Aptuvenais svars",
+                  "metric": "370 kg"
+                },
+                {
+                  "label": "Platums",
+                  "metric": "1,025 mm"
+                },
+                {
+                  "label": "Augstums",
+                  "metric": "1,750 mm"
+                },
+                {
+                  "label": "Garums",
+                  "metric": "1,360 mm"
+                }
+              ]
+            }
+          ],
+          "note": "1: ūdens/cementa attiecība = 1",
+          "source": "Dati ņemti no ražotāja brošūrām (angļu val.).",
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 1,
+          "narrow": true,
+          "zoom": true,
+          "more": false,
+          "items": [
+            {
+              "title": "Izmēri un rasējums",
+              "image": "/assets/img/haeny-hcm600-dim.webp",
+              "alt": "Izmēri un rasējums HCM 600",
+              "text": "Virziet peli virs rasējuma (vai pieskarieties un velciet), lai to palielinātu 2×.",
+              "width": 1565,
+              "height": 2088
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "collapsible": true,
+          "title": "Standarta un papildaprīkojums",
+          "items": [
+            "Opcija (augstas bīdes mikseris): ūdens skaitītājs 1½\" precīzai ūdens dozēšanai (manuāla noslēgšana)",
+            "Opcija (augstas bīdes mikseris): automātisks ūdens skaitītājs 1½\" ar regulējamu skaitītāju precīzai ūdens dozēšanai",
+            "Opcija (augstas bīdes mikseris): papildu maisīšanas bloks 3x 400/460 V, 50/60 Hz (3,0/3,6 kW)"
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Sazinieties ar mums</a> par cenu, piegādes laiku vai palīdzību pareizā modeļa izvēlē.",
+          "gen": true
+        },
+        {
+          "type": "related",
+          "title": "Skatiet arī",
+          "items": [
+            {
+              "href": "/produkter/haeny/blandare",
+              "mutual": false
+            },
+            {
+              "href": "/produkter/haeny/blandare/hcm-300"
+            },
+            {
+              "href": "/produkter/haeny/blandare/hcm-800"
+            },
+            {
+              "href": "/produkter/haeny/blandare/hcm-2500"
+            }
+          ],
+          "gen": true
+        }
+      ],
+      "published": true
+    },
+    "et": {
+      "title": "Häny HCM 600",
+      "h1": "Häny HCM 600",
+      "description": "Kõrgnihkesegisti HCM 600. Kolloidsegisti sobib eriti hästi suspensioonide valmistamiseks veest, tsemendist, ülipeenest sideainest, bentoniidist, liivast ja muudest materjalidest. Vastupidav…",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "HÄNY",
+          "href": "/produkter/haeny",
+          "width": 832,
+          "height": 143,
+          "src": "/assets/img/haeny-1.webp",
+          "gen": true
+        },
+        {
+          "type": "columns",
+          "ratio": "40-60",
+          "left": [
+            {
+              "type": "image",
+              "alt": "Kõrgnihkesegisti HCM 600",
+              "width": 780,
+              "height": 1128,
+              "src": "/assets/img/haeny-hcm600-model.webp"
+            }
+          ],
+          "right": [
+            {
+              "type": "text",
+              "html": "Kolloidsegisti sobib eriti hästi suspensioonide valmistamiseks veest, tsemendist, ülipeenest sideainest, bentoniidist, liivast ja muudest materjalidest. Vastupidav segamismahuti koos segamispumba väga kulumiskindlate materjalidega tagab pika kasutusea ja tõrgeteta töö."
+            },
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "Suurepärane segukvaliteet kiirelt töötavast segamispumbast",
+                "Koonusekujuline paak retsirkulatsioonitoruga",
+                "Võlli tihendi automaatne määrimine, 3-tee ventiil segamiseks või ülekandeks",
+                "Lisasegisti (lisavarustus) W/C &lt; 0,5 ja mikrotsementide jaoks"
+              ]
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Kasutus",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Tsemendi, ülipeene sideaine, bentoniidi, liiva ja muu suspensioonid",
+            "Eraldiseisvana või koos seguri ja pumbaga"
+          ],
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Brošüür HCM 600 (PDF, inglise keeles)",
+          "href": "/assets/docs/haeny-hcm600-brochure-en.pdf",
+          "gen": true
+        },
+        {
+          "type": "datasheet",
+          "title": "Tehnilised andmed",
+          "tagline": "Kõrgnihkesegisti HCM 600",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Kõrgnihkesegisti",
+              "rows": [
+                {
+                  "label": "Segamispump",
+                  "metric": "TMP 22"
+                },
+                {
+                  "label": "Ligikaudne jõudlus",
+                  "metric": "8 m³/h"
+                },
+                {
+                  "label": "Ringluse jõudlus",
+                  "metric": "1,400 l/min"
+                },
+                {
+                  "label": "Kasulik maht",
+                  "metric": "550 l"
+                },
+                {
+                  "label": "Maks. terasuurus",
+                  "metric": "8 mm"
+                },
+                {
+                  "label": "Vedeliku temperatuur",
+                  "metric": "Max. 40°C"
+                },
+                {
+                  "label": "Veeühendus",
+                  "metric": "BSP 1½\""
+                }
+              ]
+            },
+            {
+              "title": "Elektrilised andmed",
+              "rows": [
+                {
+                  "label": "Pinge",
+                  "metric": "3x 400/460 V"
+                },
+                {
+                  "label": "Sagedus",
+                  "metric": "50 / 60 Hz"
+                },
+                {
+                  "label": "Nimivõimsus",
+                  "metric": "9.2 / 10.5 kW"
+                },
+                {
+                  "label": "Nimivool",
+                  "metric": "16.8 / 17.6 A"
+                },
+                {
+                  "label": "Pöörded",
+                  "metric": "1,465 / 1,765 min⁻¹"
+                }
+              ]
+            },
+            {
+              "title": "Kaal ja mõõtmed",
+              "rows": [
+                {
+                  "label": "Ligikaudne kaal",
+                  "metric": "370 kg"
+                },
+                {
+                  "label": "Laius",
+                  "metric": "1,025 mm"
+                },
+                {
+                  "label": "Kõrgus",
+                  "metric": "1,750 mm"
+                },
+                {
+                  "label": "Pikkus",
+                  "metric": "1,360 mm"
+                }
+              ]
+            }
+          ],
+          "note": "1: vee ja tsemendi suhe = 1",
+          "source": "Andmed on võetud tootja brošüüridest (inglise keeles).",
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 1,
+          "narrow": true,
+          "zoom": true,
+          "more": false,
+          "items": [
+            {
+              "title": "Mõõtmed ja joonis",
+              "image": "/assets/img/haeny-hcm600-dim.webp",
+              "alt": "Mõõtmed ja joonis HCM 600",
+              "text": "Hoia kursorit joonise kohal (või puuduta ja lohista), et seda 2× suurendada.",
+              "width": 1565,
+              "height": 2088
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "collapsible": true,
+          "title": "Standard- ja lisavarustus",
+          "items": [
+            "Lisavarustus (kõrgnihkesegisti): veearvesti 1½\" täpseks vee doseerimiseks (käsitsi sulgemine)",
+            "Lisavarustus (kõrgnihkesegisti): automaatne veearvesti 1½\" reguleeritava loenduriga täpseks vee doseerimiseks",
+            "Lisavarustus (kõrgnihkesegisti): lisasegamisüksus 3x 400/460 V, 50/60 Hz (3,0/3,6 kW)"
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Võta meiega ühendust</a> hinna, tarneaja või õige mudeli valikul abi saamiseks.",
+          "gen": true
+        },
+        {
+          "type": "related",
+          "title": "Vaata ka",
+          "items": [
+            {
+              "href": "/produkter/haeny/blandare",
+              "mutual": false
+            },
+            {
+              "href": "/produkter/haeny/blandare/hcm-300"
+            },
+            {
+              "href": "/produkter/haeny/blandare/hcm-800"
+            },
+            {
+              "href": "/produkter/haeny/blandare/hcm-2500"
+            }
+          ],
+          "gen": true
+        }
+      ],
+      "published": true
+    },
+    "ru": {
+      "title": "Häny HCM 600",
+      "h1": "Häny HCM 600",
+      "description": "Высокосдвиговый смеситель HCM 600. Коллоидный смеситель особенно подходит для приготовления суспензий из воды, цемента, ультратонкого вяжущего, бентонита, песка и других материалов. Прочная…",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "HÄNY",
+          "href": "/produkter/haeny",
+          "width": 832,
+          "height": 143,
+          "src": "/assets/img/haeny-1.webp",
+          "gen": true
+        },
+        {
+          "type": "columns",
+          "ratio": "40-60",
+          "left": [
+            {
+              "type": "image",
+              "alt": "Высокосдвиговый смеситель HCM 600",
+              "width": 780,
+              "height": 1128,
+              "src": "/assets/img/haeny-hcm600-model.webp"
+            }
+          ],
+          "right": [
+            {
+              "type": "text",
+              "html": "Коллоидный смеситель особенно подходит для приготовления суспензий из воды, цемента, ультратонкого вяжущего, бентонита, песка и других материалов. Прочная смесительная ёмкость в сочетании с высокоизносостойкими материалами смесительного насоса обеспечивает долгий срок службы и бесперебойную работу."
+            },
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "Превосходное качество смеси благодаря высокоскоростному смесительному насосу",
+                "Конический бак с линией рециркуляции",
+                "Автоматическая смазка уплотнения вала, трёхходовой клапан для смешивания или перекачки",
+                "Дополнительный смеситель (опция) при В/Ц &lt; 0,5 и для микроцементов"
+              ]
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Применение",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Суспензии из цемента, ультратонкого вяжущего, бентонита, песка и других материалов",
+            "Отдельно или в комплекте с мешалкой и насосом"
+          ],
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Брошюра HCM 600 (PDF, на английском)",
+          "href": "/assets/docs/haeny-hcm600-brochure-en.pdf",
+          "gen": true
+        },
+        {
+          "type": "datasheet",
+          "title": "Технические данные",
+          "tagline": "Высокосдвиговый смеситель HCM 600",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Высокосдвиговый смеситель",
+              "rows": [
+                {
+                  "label": "Смесительный насос",
+                  "metric": "TMP 22"
+                },
+                {
+                  "label": "Ориентировочная производительность",
+                  "metric": "8 m³/h"
+                },
+                {
+                  "label": "Производительность циркуляции",
+                  "metric": "1,400 l/min"
+                },
+                {
+                  "label": "Полезный объём",
+                  "metric": "550 l"
+                },
+                {
+                  "label": "Макс. размер зерна",
+                  "metric": "8 mm"
+                },
+                {
+                  "label": "Температура жидкости",
+                  "metric": "Max. 40°C"
+                },
+                {
+                  "label": "Подключение воды",
+                  "metric": "BSP 1½\""
+                }
+              ]
+            },
+            {
+              "title": "Электрические данные",
+              "rows": [
+                {
+                  "label": "Напряжение",
+                  "metric": "3x 400/460 V"
+                },
+                {
+                  "label": "Частота",
+                  "metric": "50 / 60 Hz"
+                },
+                {
+                  "label": "Номинальная мощность",
+                  "metric": "9.2 / 10.5 kW"
+                },
+                {
+                  "label": "Номинальный ток",
+                  "metric": "16.8 / 17.6 A"
+                },
+                {
+                  "label": "Частота вращения",
+                  "metric": "1,465 / 1,765 min⁻¹"
+                }
+              ]
+            },
+            {
+              "title": "Масса и размеры",
+              "rows": [
+                {
+                  "label": "Ориентировочная масса",
+                  "metric": "370 kg"
+                },
+                {
+                  "label": "Ширина",
+                  "metric": "1,025 mm"
+                },
+                {
+                  "label": "Высота",
+                  "metric": "1,750 mm"
+                },
+                {
+                  "label": "Длина",
+                  "metric": "1,360 mm"
+                }
+              ]
+            }
+          ],
+          "note": "1: водоцементное отношение = 1",
+          "source": "Данные взяты из брошюр производителя (на английском языке).",
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 1,
+          "narrow": true,
+          "zoom": true,
+          "more": false,
+          "items": [
+            {
+              "title": "Размеры и чертёж",
+              "image": "/assets/img/haeny-hcm600-dim.webp",
+              "alt": "Размеры и чертёж HCM 600",
+              "text": "Наведите курсор на чертёж (или коснитесь и проведите пальцем), чтобы увеличить его в 2 раза.",
+              "width": 1565,
+              "height": 2088
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "collapsible": true,
+          "title": "Стандартное и дополнительное оборудование",
+          "items": [
+            "Опция (высокосдвиговый смеситель): счётчик воды 1½\" для точного дозирования воды (ручное перекрытие)",
+            "Опция (высокосдвиговый смеситель): автоматический счётчик воды 1½\" с регулируемым счётчиком для точного дозирования воды",
+            "Опция (высокосдвиговый смеситель): дополнительный смесительный блок 3x 400/460 В, 50/60 Гц (3,0/3,6 кВт)"
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Свяжитесь с нами</a>, чтобы узнать цену, срок поставки или получить помощь в выборе подходящей модели.",
+          "gen": true
+        },
+        {
+          "type": "related",
+          "title": "См. также",
+          "items": [
+            {
+              "href": "/produkter/haeny/blandare",
+              "mutual": false
+            },
+            {
+              "href": "/produkter/haeny/blandare/hcm-300"
+            },
+            {
+              "href": "/produkter/haeny/blandare/hcm-800"
+            },
+            {
+              "href": "/produkter/haeny/blandare/hcm-2500"
+            }
+          ],
+          "gen": true
+        }
+      ],
+      "published": true
     }
   }
 }

@@ -14,7 +14,9 @@ import { build, cutout, readPlace, PLACE_FILE, BASE } from "./haeny-xray.mjs";
 
 const ROOT = path.resolve(import.meta.dirname, "..");
 const PORT = Number((process.argv.includes("--port") && process.argv[process.argv.indexOf("--port") + 1]) || 4190);
-const LANGS = ["sv", "en", "es", "no"];
+const LANGS = ["sv", "en", "es", "no"]; // the languages the app has a text field for
+// positions and zoom are the same in every language: written to all of them. The text of a language without a field here is left as it is.
+const ALL_LANGS = Object.keys(JSON.parse(fs.readFileSync(path.join(import.meta.dirname, "../content/site.json"), "utf8")).languages);
 const IC_FILE = "content/pages/produkter/haeny/manuella-pumpar/ic-310-ic-311.json", HAENY_FILE = "content/pages/produkter/haeny.json", PRODUCTS_FILE = "content/pages/produkter.json";
 const rw = (f, fn) => {
   const file = path.join(ROOT, f), raw = fs.readFileSync(file, "utf8"), eol = raw.includes("\r\n") ? "\r\n" : "\n", j = JSON.parse(raw);
@@ -46,15 +48,18 @@ async function state(target = "ic310") {
 function saveCallouts(target, list) {
   const t = TARGETS[target];
   rw(t.file, (j) => {
-    for (const l of LANGS) {
+    for (const l of ALL_LANGS) {
       const img = t.find(j, l);
-      img.callouts = list.map((c) => c.kind === "bracket" ? ({
+      if (!img) continue;
+      const old = img.callouts || [];
+      const own = (c, i) => String((c.text && c.text[l]) || (LANGS.includes(l) ? "" : (old[i] && old[i].text) || "") || (c.text && c.text.sv) || "");
+      img.callouts = list.map((c, i) => c.kind === "bracket" ? ({
         kind: "bracket", x: +c.x, y: +c.y, x1: +c.x1, y1: +c.y1, x2: +c.x2, y2: +c.y2, tick: +c.tick || 3, side: +c.side === -1 ? -1 : 1,
-        text: String((c.text && c.text[l]) || (c.text && c.text.sv) || "")
+        text: own(c, i)
       }) : ({
         x: +c.x, y: +c.y, lx: +c.lx, ly: +c.ly, dir: c.dir === "l" ? "l" : "r",
         ...(c.image ? { v: c.v === "d" ? "d" : "u", iw: +c.iw || 30, image: c.image } : {}),
-        text: String((c.text && c.text[l]) || (c.text && c.text.sv) || "")
+        text: own(c, i)
       }));
     }
   });
@@ -65,7 +70,7 @@ async function saveXray(input) {
   const area = await build(place);
   const pad = 1.5, box = { x: Math.max(0, area.x - pad), y: Math.max(0, area.y - pad), w: Math.min(100, area.w + 2 * pad), h: Math.min(100, area.h + 2 * pad) };
   rw(HAENY_FILE, (j) => {
-    for (const l of LANGS) for (const b of j.i18n[l].blocks) for (const x of b.left || []) if (x.type === "image" && x.overlay) x.overlayArea = Object.fromEntries(Object.entries(box).map(([k, v]) => [k, Math.round(v * 10) / 10]));
+    for (const l of ALL_LANGS) if (j.i18n[l]) for (const b of j.i18n[l].blocks) for (const x of b.left || []) if (x.type === "image" && x.overlay) x.overlayArea = Object.fromEntries(Object.entries(box).map(([k, v]) => [k, Math.round(v * 10) / 10]));
   });
   return area;
 }
@@ -84,7 +89,7 @@ async function thumbs() {
 function saveThumbs(list) {
   const by = Object.fromEntries(list.map((t) => [t.slug, t]));
   rw(PRODUCTS_FILE, (j) => {
-    for (const l of LANGS) for (const b of j.i18n[l].blocks) for (const it of b.items || []) {
+    for (const l of ALL_LANGS) if (j.i18n[l]) for (const b of j.i18n[l].blocks) for (const it of b.items || []) {
       const t = by[(it.href || "").split("/").pop()];
       if (t && it.photo) { it.photoX = Math.round(+t.x * 10) / 10; it.photoY = Math.round(+t.y * 10) / 10; it.photoZoom = Math.round(+t.zoom * 100) / 100; }
     }

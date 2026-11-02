@@ -169,5 +169,11 @@
   "source": {
     "url": "https://www.betongakuten.se/produkter/kraft-tool"
   },
-  "logo": "/assets/img/logo-kraft-tool.webp"
+  "logo": "/assets/img/logo-kraft-tool.webp",
+  "hideIn": [
+    "lt",
+    "lv",
+    "et",
+    "ru"
+  ]
 }

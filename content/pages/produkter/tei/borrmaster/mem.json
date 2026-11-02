@@ -322,6 +322,322 @@
         }
       ],
       "published": true
+    },
+    "lt": {
+      "title": "MEM",
+      "h1": "MEM",
+      "description": "MEM yra vidutinio svorio ekskavatoriuje montuojamas gręžimo agregatas 12–15 t ekskavatoriams. MEM turi daug didesnio HEM savybių ir…",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "TEI Rock Drills logotipas",
+          "href": "/produkter/tei",
+          "width": 1920,
+          "height": 1117,
+          "src": "/assets/img/tei-2.webp"
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Produkto lapas",
+          "href": "/assets/docs/tei-borrmaster-mem-ladda-ner-pdf.pdf",
+          "driveId": "172rlzti-4JSFwIKplawu5a6JhutKJYH8"
+        },
+        {
+          "type": "datasheet",
+          "title": "Techniniai duomenys",
+          "note": "TEI techniniai duomenys numato 40 % hidraulinės galios nuostolių.",
+          "tagline": "Ekskavatoriuje montuojamas gręžimo agregatas, vidutinė klasė",
+          "intro": [
+            "MEM yra vidutinio svorio ekskavatoriuje montuojamas gręžimo agregatas 12–15 t ekskavatoriams. MEM turi daug didesnio HEM savybių ir naujai sukurtą, lengvesnę SCF padavimo sistemą.",
+            "MEM priklauso TEI šeimai ankštoms erdvėms ir užima svarbią vietą gręžimo priedų asortimente. MEM sukurtas 300 serijos gręžimo galvutėms ir tinka tiek sukamosioms, tiek smūginėms gręžimo galvutėms. MEM yra puikus įrankis grunto vinims, inkaravimui, uolienų gręžimui ir populiarių tuščiavidurių strypų (hollow bar) inkarų įrengimui."
+          ],
+          "groups": [
+            {
+              "title": "Specifikacijos",
+              "rows": [
+                {
+                  "label": "Traukos jėga",
+                  "metric": "11 121 N"
+                },
+                {
+                  "label": "Gręžimo eiga",
+                  "metric": "3,35 m"
+                },
+                {
+                  "label": "Svoris",
+                  "metric": "1 089 kg"
+                },
+                {
+                  "label": "Įtampa",
+                  "metric": "12 V arba 24 V (nurodykite užsakydami)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "related",
+          "title": "Tinkami viršutinio smūgio plaktukai",
+          "items": [
+            {
+              "href": "/produkter/tei/topphammare/te360"
+            },
+            {
+              "href": "/produkter/tei/topphammare/te326"
+            }
+          ],
+          "compat": true
+        },
+        {
+          "type": "related",
+          "title": "Tinkamos sukamosios galvutės",
+          "items": [
+            {
+              "href": "/produkter/tei/rotationshammare/rds350"
+            }
+          ],
+          "compat": true
+        }
+      ],
+      "published": true
+    },
+    "lv": {
+      "title": "MEM",
+      "h1": "MEM",
+      "description": "MEM ir vidējās klases uz ekskavatora montējama urbšanas iekārta 12–15 t ekskavatoriem. MEM ir daudz lielākā HEM īpašību un…",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "TEI Rock Drills logotips",
+          "href": "/produkter/tei",
+          "width": 1920,
+          "height": 1117,
+          "src": "/assets/img/tei-2.webp"
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Produkta lapa",
+          "href": "/assets/docs/tei-borrmaster-mem-ladda-ner-pdf.pdf",
+          "driveId": "172rlzti-4JSFwIKplawu5a6JhutKJYH8"
+        },
+        {
+          "type": "datasheet",
+          "title": "Tehniskie dati",
+          "note": "TEI tehniskie dati paredz 40 % hidrauliskās jaudas zudumu.",
+          "tagline": "Uz ekskavatora montējama urbšanas iekārta, vidējā klase",
+          "intro": [
+            "MEM ir vidējās klases uz ekskavatora montējama urbšanas iekārta 12–15 t ekskavatoriem. MEM piemīt daudzas lielākā HEM īpašības, un tai ir jaunizstrādāta, vieglāka SCF padeves sistēma.",
+            "MEM ir daļa no TEI šaurām vietām paredzētās saimes un aizņem svarīgu vietu urbšanas piederumu klāstā. MEM ir izstrādāta 300. sērijas urbšanas galvām un darbojas gan ar rotācijas, gan sitiena urbšanas galvām. MEM ir lielisks rīks grunts naglu, enkuru, iežu urbšanas un populāro hollow bar enkuru uzstādīšanai."
+          ],
+          "groups": [
+            {
+              "title": "Specifikācijas",
+              "rows": [
+                {
+                  "label": "Vilkme",
+                  "metric": "11 121 N"
+                },
+                {
+                  "label": "Urbšanas gājiens",
+                  "metric": "3,35 m"
+                },
+                {
+                  "label": "Svars",
+                  "metric": "1 089 kg"
+                },
+                {
+                  "label": "Spriegums",
+                  "metric": "12 V vai 24 V (norādiet pasūtot)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "related",
+          "title": "Piemērotie augšējā āmura urbji",
+          "items": [
+            {
+              "href": "/produkter/tei/topphammare/te360"
+            },
+            {
+              "href": "/produkter/tei/topphammare/te326"
+            }
+          ],
+          "compat": true
+        },
+        {
+          "type": "related",
+          "title": "Piemērotās rotācijas galvas",
+          "items": [
+            {
+              "href": "/produkter/tei/rotationshammare/rds350"
+            }
+          ],
+          "compat": true
+        }
+      ],
+      "published": true
+    },
+    "et": {
+      "title": "MEM",
+      "h1": "MEM",
+      "description": "MEM on keskmise kaaluklassi ekskavaatorile paigaldatav puurimisseade 12–15 t ekskavaatoritele. MEM-il on paljud suurema HEM-i omadused ja…",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "TEI Rock Drills logo",
+          "href": "/produkter/tei",
+          "width": 1920,
+          "height": 1117,
+          "src": "/assets/img/tei-2.webp"
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Tootleht",
+          "href": "/assets/docs/tei-borrmaster-mem-ladda-ner-pdf.pdf",
+          "driveId": "172rlzti-4JSFwIKplawu5a6JhutKJYH8"
+        },
+        {
+          "type": "datasheet",
+          "title": "Tehnilised andmed",
+          "note": "TEI tehnilised andmed eeldavad 40 % hüdrauliivõimsuse kadu.",
+          "tagline": "Ekskavaatorile paigaldatav puurimisseade, keskmine klass",
+          "intro": [
+            "MEM on keskmise kaaluklassi ekskavaatorile paigaldatav puurimisseade 12–15 t ekskavaatoritele. MEM-il on palju suurema HEM-i omadusi ning uuesti projekteeritud, kergem SCF-etteandesüsteem.",
+            "MEM kuulub TEI kitsaste ruumide perre ja täidab puurimislisaseadmete valikus olulist kohta. MEM on mõeldud 300-seeria puurimispeadele ning töötab nii pöörlemis- kui ka löökpuurimispeadega. MEM on suurepärane tööriist mullanaelte, tagantankrute, kaljupuurimise ja populaarsete hollow bar -ankrute paigaldamiseks."
+          ],
+          "groups": [
+            {
+              "title": "Tehnilised andmed",
+              "rows": [
+                {
+                  "label": "Tõmbejõud",
+                  "metric": "11 121 N"
+                },
+                {
+                  "label": "Puurimiskäik",
+                  "metric": "3,35 m"
+                },
+                {
+                  "label": "Kaal",
+                  "metric": "1 089 kg"
+                },
+                {
+                  "label": "Pinge",
+                  "metric": "12 V või 24 V (märgi tellimisel)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "related",
+          "title": "Sobivad ülavasarad",
+          "items": [
+            {
+              "href": "/produkter/tei/topphammare/te360"
+            },
+            {
+              "href": "/produkter/tei/topphammare/te326"
+            }
+          ],
+          "compat": true
+        },
+        {
+          "type": "related",
+          "title": "Sobivad pöörlemispead",
+          "items": [
+            {
+              "href": "/produkter/tei/rotationshammare/rds350"
+            }
+          ],
+          "compat": true
+        }
+      ],
+      "published": true
+    },
+    "ru": {
+      "title": "MEM",
+      "h1": "MEM",
+      "description": "MEM — буровой агрегат среднего класса для установки на экскаваторы массой 12–15 т. MEM имеет многие особенности более крупного HEM и…",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Логотип TEI Rock Drills",
+          "href": "/produkter/tei",
+          "width": 1920,
+          "height": 1117,
+          "src": "/assets/img/tei-2.webp"
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Технический лист",
+          "href": "/assets/docs/tei-borrmaster-mem-ladda-ner-pdf.pdf",
+          "driveId": "172rlzti-4JSFwIKplawu5a6JhutKJYH8"
+        },
+        {
+          "type": "datasheet",
+          "title": "Технические данные",
+          "note": "Технические данные TEI предполагают потери гидравлической мощности 40 %.",
+          "tagline": "Буровой агрегат для установки на экскаватор, средний класс",
+          "intro": [
+            "MEM — буровой агрегат среднего класса для установки на экскаваторы массой 12–15 т. MEM обладает многими особенностями более крупного HEM и имеет заново разработанную, более лёгкую систему подачи SCF.",
+            "MEM входит в семейство TEI для стеснённых условий и занимает важное место в ассортименте буровых навесок. MEM рассчитан на буровые головки серии 300 и работает как с вращательными, так и с ударными буровыми головками. MEM — отличный инструмент для установки грунтовых гвоздей, анкеров, бурения скальных пород и установки популярных анкеров hollow bar."
+          ],
+          "groups": [
+            {
+              "title": "Спецификации",
+              "rows": [
+                {
+                  "label": "Тяговое усилие",
+                  "metric": "11 121 N"
+                },
+                {
+                  "label": "Ход бурения",
+                  "metric": "3,35 m"
+                },
+                {
+                  "label": "Масса",
+                  "metric": "1 089 kg"
+                },
+                {
+                  "label": "Напряжение",
+                  "metric": "12 В или 24 В (указать при заказе)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "related",
+          "title": "Подходящие верхние перфораторы",
+          "items": [
+            {
+              "href": "/produkter/tei/topphammare/te360"
+            },
+            {
+              "href": "/produkter/tei/topphammare/te326"
+            }
+          ],
+          "compat": true
+        },
+        {
+          "type": "related",
+          "title": "Подходящие вращатели",
+          "items": [
+            {
+              "href": "/produkter/tei/rotationshammare/rds350"
+            }
+          ],
+          "compat": true
+        }
+      ],
+      "published": true
     }
   },
   "source": {

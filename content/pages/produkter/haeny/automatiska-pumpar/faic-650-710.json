@@ -2956,6 +2956,2962 @@
           "gen": true
         }
       ]
+    },
+    "lt": {
+      "title": "Häny FAIC 650/710",
+      "h1": "Häny FAIC 650/710",
+      "description": "Automatinė injektavimo įranga FAIC 650/710. Kompaktiškos injektavimo įrangos sudaro patikrinti standartiniai Häny komponentai: maišyklė, maišiklis ir injektavimo siurblys. Automatizuotoje versijoje…",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "HÄNY",
+          "href": "/produkter/haeny",
+          "width": 832,
+          "height": 143,
+          "src": "/assets/img/haeny-1.webp",
+          "gen": true
+        },
+        {
+          "type": "columns",
+          "ratio": "40-60",
+          "left": [
+            {
+              "type": "image",
+              "alt": "Automatinė injektavimo įranga FAIC 650/710",
+              "width": 1006,
+              "height": 1128,
+              "src": "/assets/img/haeny-faic650-710-model.webp"
+            }
+          ],
+          "right": [
+            {
+              "type": "text",
+              "html": "Kompaktiškos injektavimo įrangos sudaro patikrinti standartiniai Häny komponentai: maišyklė, maišiklis ir injektavimo siurblys. Automatizuotoje versijoje įranga leidžia labai sutaupyti personalo sąnaudų, užtikrina didelį našumą, kokybės stebėseną ir geresnes darbo sąlygas."
+            },
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "Labai kompaktiška sistema su centriniu kėlimo tašku",
+                "Didelis našumas ir kokybės kontrolė su visiškai automatiniu maišymu",
+                "Tikslus dozavimas sveriant maišyklėje (sausi komponentai iš siloso / sraigto)",
+                "Maišymo receptai saugomi ir pasirenkami jutikliniame ekrane",
+                "Partijų ir sunaudojimo protokolai, eksportuojami per USB"
+              ]
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Naudojimas",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Inkarai, grunto vinys, įtempimo kabeliai, manžetiniai vamzdžiai, uolienų ir kontaktinis injektavimas",
+            "Bentonito suspensijos vamzdžių stūmimui ir mikrotuneliavimui"
+          ],
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Brošiūra FAIC 650/710 (PDF, anglų k.)",
+          "href": "/assets/docs/haeny-faic650-710-brochure-en.pdf",
+          "gen": true
+        },
+        {
+          "type": "datasheet",
+          "title": "Techniniai duomenys",
+          "tagline": "Automatinė injektavimo įranga FAIC 650/710",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Injektavimo siurblys (ZMP 710)",
+              "rows": [
+                {
+                  "label": "FAIC našumas",
+                  "metric": "5 m³/h"
+                },
+                {
+                  "label": "Maks. slėgis",
+                  "metric": "100 bar"
+                },
+                {
+                  "label": "Maks. dalelių dydis",
+                  "metric": "8 mm"
+                },
+                {
+                  "label": "Hidraulinis bakas",
+                  "metric": "140 l"
+                },
+                {
+                  "label": "Siurblio modulis",
+                  "metric": "viengubas"
+                },
+                {
+                  "label": "Aušinimo vandens debitas",
+                  "metric": "3–4 l/min"
+                },
+                {
+                  "label": "Aušinimo vandens jungtis",
+                  "metric": "BSP ½\""
+                },
+                {
+                  "label": "Slėgio jungtis",
+                  "metric": "BSP 2\""
+                }
+              ]
+            },
+            {
+              "title": "Maišyklė / maišiklis",
+              "rows": [
+                {
+                  "label": "Naudingasis maišyklės tūris",
+                  "metric": "260 l"
+                },
+                {
+                  "label": "Cirkuliacijos našumas",
+                  "metric": "1,400 l/min"
+                },
+                {
+                  "label": "Vandens jungtis",
+                  "metric": "BSP 1\""
+                },
+                {
+                  "label": "Maišiklio našumas",
+                  "metric": "350 l"
+                }
+              ]
+            },
+            {
+              "title": "Elektriniai duomenys",
+              "rows": [
+                {
+                  "label": "Įtampa",
+                  "metric": "3x 400/460 V"
+                },
+                {
+                  "label": "Dažnis",
+                  "metric": "50 / 60 Hz"
+                },
+                {
+                  "label": "Nominalioji galia",
+                  "metric": "18.5 / 21 kW"
+                }
+              ]
+            },
+            {
+              "title": "Svoris ir matmenys",
+              "rows": [
+                {
+                  "label": "Bendras svoris",
+                  "metric": "1,665 kg"
+                },
+                {
+                  "label": "Plotis",
+                  "metric": "2,031 mm"
+                },
+                {
+                  "label": "Aukštis",
+                  "metric": "1,992 mm"
+                },
+                {
+                  "label": "Ilgis",
+                  "metric": "2,156 mm"
+                }
+              ]
+            }
+          ],
+          "note": "1: vandens ir cemento santykis = 1",
+          "source": "Duomenys paimti iš gamintojo brošiūrų (anglų k.).",
+          "gen": true
+        },
+        {
+          "type": "columns",
+          "ratio": "50-50",
+          "left": [
+            {
+              "type": "perfchart",
+              "title": "Siurblio charakteristikos: FAIC 650/710",
+              "hint": "Užveskite žymeklį ant diagramos, palieskite ją arba naudokite rodyklių klavišus reikšmėms nuskaityti. Spustelėkite stūmoklio dydį, kad jį paslėptumėte arba parodytumėte (dukart spustelėkite, kad būtų rodomas tik jis).",
+              "chipsLabel": "Rodyti kreives",
+              "xName": "Slėgis",
+              "yName": "Debitas",
+              "x": {
+                "label": "Pressure",
+                "unit": "bar",
+                "min": 0,
+                "max": 110,
+                "step": 10
+              },
+              "y": {
+                "label": "Output",
+                "unit": "l/min",
+                "min": 0,
+                "max": 130,
+                "step": 10
+              },
+              "series": [
+                {
+                  "name": "Stūmoklis Ø120",
+                  "color": "#2f5aa8",
+                  "points": [
+                    [
+                      0,
+                      126.2
+                    ],
+                    [
+                      0.8,
+                      126.2
+                    ],
+                    [
+                      1.8,
+                      126.1
+                    ],
+                    [
+                      2.7,
+                      126
+                    ],
+                    [
+                      3.5,
+                      125.8
+                    ],
+                    [
+                      4.4,
+                      125.5
+                    ],
+                    [
+                      5.2,
+                      125.2
+                    ],
+                    [
+                      6,
+                      124.7
+                    ],
+                    [
+                      6.8,
+                      124.1
+                    ],
+                    [
+                      7.6,
+                      123.3
+                    ],
+                    [
+                      8.3,
+                      122.4
+                    ],
+                    [
+                      9.1,
+                      121.3
+                    ],
+                    [
+                      9.9,
+                      120.1
+                    ],
+                    [
+                      11.5,
+                      115.9
+                    ],
+                    [
+                      13,
+                      109.7
+                    ],
+                    [
+                      14.5,
+                      101.9
+                    ],
+                    [
+                      16,
+                      92.9
+                    ],
+                    [
+                      17.8,
+                      83
+                    ],
+                    [
+                      20,
+                      72.7
+                    ],
+                    [
+                      22.6,
+                      62.4
+                    ],
+                    [
+                      25.9,
+                      52.4
+                    ],
+                    [
+                      29.9,
+                      43.2
+                    ],
+                    [
+                      34.9,
+                      35.1
+                    ],
+                    [
+                      40.8,
+                      28.5
+                    ],
+                    [
+                      48,
+                      23.8
+                    ],
+                    [
+                      48.9,
+                      23
+                    ],
+                    [
+                      49.8,
+                      21.7
+                    ],
+                    [
+                      50.5,
+                      20
+                    ],
+                    [
+                      51,
+                      17.9
+                    ],
+                    [
+                      51.5,
+                      15.6
+                    ],
+                    [
+                      51.8,
+                      13.1
+                    ],
+                    [
+                      52.1,
+                      10.6
+                    ],
+                    [
+                      52.4,
+                      8.1
+                    ],
+                    [
+                      52.6,
+                      5.7
+                    ],
+                    [
+                      52.7,
+                      3.5
+                    ],
+                    [
+                      52.8,
+                      1.6
+                    ],
+                    [
+                      53,
+                      0.1
+                    ]
+                  ]
+                },
+                {
+                  "name": "Stūmoklis Ø105",
+                  "color": "#cf3a2e",
+                  "points": [
+                    [
+                      0,
+                      97
+                    ],
+                    [
+                      1,
+                      97
+                    ],
+                    [
+                      2.3,
+                      97
+                    ],
+                    [
+                      3.6,
+                      96.9
+                    ],
+                    [
+                      5,
+                      96.8
+                    ],
+                    [
+                      6.4,
+                      96.5
+                    ],
+                    [
+                      7.8,
+                      96
+                    ],
+                    [
+                      9.2,
+                      95.3
+                    ],
+                    [
+                      10.6,
+                      94.3
+                    ],
+                    [
+                      12,
+                      93.1
+                    ],
+                    [
+                      13.3,
+                      91.5
+                    ],
+                    [
+                      14.5,
+                      89.6
+                    ],
+                    [
+                      15.6,
+                      87.3
+                    ],
+                    [
+                      16.8,
+                      83.5
+                    ],
+                    [
+                      18.2,
+                      78.6
+                    ],
+                    [
+                      19.7,
+                      72.9
+                    ],
+                    [
+                      21.4,
+                      66.5
+                    ],
+                    [
+                      23.5,
+                      59.8
+                    ],
+                    [
+                      26,
+                      53
+                    ],
+                    [
+                      29.1,
+                      46.2
+                    ],
+                    [
+                      32.8,
+                      39.7
+                    ],
+                    [
+                      37.3,
+                      33.7
+                    ],
+                    [
+                      42.6,
+                      28.6
+                    ],
+                    [
+                      48.8,
+                      24.4
+                    ],
+                    [
+                      56.1,
+                      21.4
+                    ],
+                    [
+                      57.2,
+                      21
+                    ],
+                    [
+                      58.3,
+                      20.5
+                    ],
+                    [
+                      59.5,
+                      20
+                    ],
+                    [
+                      60.8,
+                      19.3
+                    ],
+                    [
+                      62.1,
+                      18.5
+                    ],
+                    [
+                      63.3,
+                      17.3
+                    ],
+                    [
+                      64.6,
+                      15.8
+                    ],
+                    [
+                      65.8,
+                      13.8
+                    ],
+                    [
+                      67,
+                      11.4
+                    ],
+                    [
+                      68.1,
+                      8.3
+                    ],
+                    [
+                      69.2,
+                      4.6
+                    ],
+                    [
+                      70.1,
+                      0.1
+                    ]
+                  ]
+                },
+                {
+                  "name": "Stūmoklis Ø85",
+                  "color": "#2b2b2b",
+                  "points": [
+                    [
+                      0,
+                      62.3
+                    ],
+                    [
+                      3.5,
+                      62.4
+                    ],
+                    [
+                      6.7,
+                      62.4
+                    ],
+                    [
+                      9.6,
+                      62.4
+                    ],
+                    [
+                      12.3,
+                      62.2
+                    ],
+                    [
+                      14.8,
+                      61.8
+                    ],
+                    [
+                      17.2,
+                      61
+                    ],
+                    [
+                      19.6,
+                      59.8
+                    ],
+                    [
+                      21.9,
+                      58.1
+                    ],
+                    [
+                      24.2,
+                      55.8
+                    ],
+                    [
+                      26.7,
+                      52.8
+                    ],
+                    [
+                      29.2,
+                      49.1
+                    ],
+                    [
+                      32,
+                      44.5
+                    ],
+                    [
+                      35.1,
+                      39.6
+                    ],
+                    [
+                      38.5,
+                      35.4
+                    ],
+                    [
+                      42.2,
+                      31.7
+                    ],
+                    [
+                      46.1,
+                      28.6
+                    ],
+                    [
+                      50.2,
+                      26
+                    ],
+                    [
+                      54.3,
+                      23.7
+                    ],
+                    [
+                      58.5,
+                      21.8
+                    ],
+                    [
+                      62.6,
+                      20.3
+                    ],
+                    [
+                      66.6,
+                      18.9
+                    ],
+                    [
+                      70.4,
+                      17.8
+                    ],
+                    [
+                      74,
+                      16.8
+                    ],
+                    [
+                      77.3,
+                      15.8
+                    ],
+                    [
+                      80.5,
+                      15
+                    ],
+                    [
+                      83.6,
+                      14.4
+                    ],
+                    [
+                      86.7,
+                      13.8
+                    ],
+                    [
+                      89.7,
+                      13.2
+                    ],
+                    [
+                      92.5,
+                      12.6
+                    ],
+                    [
+                      95.2,
+                      11.8
+                    ],
+                    [
+                      97.7,
+                      10.8
+                    ],
+                    [
+                      99.9,
+                      9.5
+                    ],
+                    [
+                      101.9,
+                      7.9
+                    ],
+                    [
+                      103.6,
+                      5.8
+                    ],
+                    [
+                      104.9,
+                      3.3
+                    ],
+                    [
+                      105.9,
+                      0.1
+                    ]
+                  ]
+                }
+              ],
+              "alt": {
+                "src": "/assets/img/haeny-faic650-710-chart.webp",
+                "text": "Siurblio charakteristikos FAIC 650/710",
+                "show": "Rodyti originalią brošiūros diagramą",
+                "hide": "Slėpti originalią diagramą"
+              }
+            }
+          ],
+          "right": [
+            {
+              "type": "modules",
+              "layout": "tiles",
+              "columns": 1,
+              "narrow": true,
+              "zoom": true,
+              "more": false,
+              "items": [
+                {
+                  "title": "Matmenys ir brėžinys",
+                  "image": "/assets/img/haeny-faic650-710-dim.webp",
+                  "alt": "Matmenys ir brėžinys FAIC 650/710",
+                  "text": "Užveskite žymeklį ant brėžinio (arba palieskite ir vilkite), kad jį padidintumėte 2×.",
+                  "width": 1824,
+                  "height": 1287
+                }
+              ]
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "collapsible": true,
+          "title": "Standartinė ir pasirenkama įranga",
+          "items": [
+            "Standartinė komplektacija (injektavimo siurblys): rankinis slėgio ir debito reguliavimas",
+            "Standartinė komplektacija (injektavimo siurblys): alyvos lygio ir temperatūros jutiklis",
+            "Pasirinktinai (maišyklė / maišiklis): papildomas maišymo agregatas (rekomenduojama, kai W/C &lt; 0,45)",
+            "Pasirinktinai (valdymas): nuotolinis ĮJUNGIMAS / IŠJUNGIMAS",
+            "Pasirinktinai (valdymas): P/Q registravimas (slėgis / debitas)",
+            "Valdymas: PLC valdomas svėrimas su jutikliniu ekranu",
+            "Valdymas: receptų valdymas",
+            "Valdymas: automatinis maišymo ciklas ĮJ./IŠJ.",
+            "Valdymas: siurblys ĮJ./IŠJ."
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Susisiekite su mumis</a> dėl kainos, pristatymo laiko ar pagalbos renkantis tinkamą modelį.",
+          "gen": true
+        },
+        {
+          "type": "related",
+          "title": "Taip pat žiūrėkite",
+          "items": [
+            {
+              "href": "/produkter/haeny/automatiska-pumpar",
+              "mutual": false
+            },
+            {
+              "href": "/produkter/haeny/automatiska-pumpar/faic-650-712"
+            },
+            {
+              "href": "/produkter/haeny/automatiska-pumpar/faic-650-725"
+            },
+            {
+              "href": "/produkter/haeny/automatiska-pumpar/faic-1100-725"
+            }
+          ],
+          "gen": true
+        }
+      ],
+      "published": true
+    },
+    "lv": {
+      "title": "Häny FAIC 650/710",
+      "h1": "Häny FAIC 650/710",
+      "description": "Automātiska injektēšanas iekārta FAIC 650/710. Kompaktās injektēšanas iekārtas sastāv no pārbaudītiem Häny standarta komponentiem: mikseris, maisītājs un injektēšanas sūknis. Automatizētajā izpildījumā…",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "HÄNY",
+          "href": "/produkter/haeny",
+          "width": 832,
+          "height": 143,
+          "src": "/assets/img/haeny-1.webp",
+          "gen": true
+        },
+        {
+          "type": "columns",
+          "ratio": "40-60",
+          "left": [
+            {
+              "type": "image",
+              "alt": "Automātiska injektēšanas iekārta FAIC 650/710",
+              "width": 1006,
+              "height": 1128,
+              "src": "/assets/img/haeny-faic650-710-model.webp"
+            }
+          ],
+          "right": [
+            {
+              "type": "text",
+              "html": "Kompaktās injektēšanas iekārtas sastāv no pārbaudītiem Häny standarta komponentiem: mikseris, maisītājs un injektēšanas sūknis. Automatizētajā izpildījumā iekārta nodrošina lielus personāla izmaksu ietaupījumus, augstu ražību, kvalitātes uzraudzību un labāku darba vidi."
+            },
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "Ļoti kompakta sistēma ar centrālu pacelšanas punktu",
+                "Augsta ražība un kvalitātes kontrole ar pilnībā automātisku maisīšanu",
+                "Precīza dozēšana, svērot mikserī (sausās sastāvdaļas no silosa / šneka)",
+                "Maisījumu receptes tiek saglabātas un izvēlētas skārienekrānā",
+                "Partiju un patēriņa protokoli, eksportējami pa USB"
+              ]
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Lietojums",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Enkuri, grunts naglas, nospriegojuma kabeļi, manšešu caurules, iežu un kontaktinjektēšana",
+            "Bentonīta suspensijas cauruļu iespiešanai un mikrotunelēšanai"
+          ],
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Brošūra FAIC 650/710 (PDF, angļu val.)",
+          "href": "/assets/docs/haeny-faic650-710-brochure-en.pdf",
+          "gen": true
+        },
+        {
+          "type": "datasheet",
+          "title": "Tehniskie dati",
+          "tagline": "Automātiska injektēšanas iekārta FAIC 650/710",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Injektēšanas sūknis (ZMP 710)",
+              "rows": [
+                {
+                  "label": "FAIC ražība",
+                  "metric": "5 m³/h"
+                },
+                {
+                  "label": "Maks. spiediens",
+                  "metric": "100 bar"
+                },
+                {
+                  "label": "Maks. graudu izmērs",
+                  "metric": "8 mm"
+                },
+                {
+                  "label": "Hidrauliskā tvertne",
+                  "metric": "140 l"
+                },
+                {
+                  "label": "Sūkņa modulis",
+                  "metric": "vienkāršs"
+                },
+                {
+                  "label": "Dzesēšanas ūdens plūsma",
+                  "metric": "3–4 l/min"
+                },
+                {
+                  "label": "Dzesēšanas ūdens pieslēgums",
+                  "metric": "BSP ½\""
+                },
+                {
+                  "label": "Spiediena pieslēgums",
+                  "metric": "BSP 2\""
+                }
+              ]
+            },
+            {
+              "title": "Mikseris / maisītājs",
+              "rows": [
+                {
+                  "label": "Mikseri lietderīgais tilpums",
+                  "metric": "260 l"
+                },
+                {
+                  "label": "Cirkulācijas ražība",
+                  "metric": "1,400 l/min"
+                },
+                {
+                  "label": "Ūdens pieslēgums",
+                  "metric": "BSP 1\""
+                },
+                {
+                  "label": "Maisītāja ražība",
+                  "metric": "350 l"
+                }
+              ]
+            },
+            {
+              "title": "Elektriskie dati",
+              "rows": [
+                {
+                  "label": "Spriegums",
+                  "metric": "3x 400/460 V"
+                },
+                {
+                  "label": "Frekvence",
+                  "metric": "50 / 60 Hz"
+                },
+                {
+                  "label": "Nominālā jauda",
+                  "metric": "18.5 / 21 kW"
+                }
+              ]
+            },
+            {
+              "title": "Svars un izmēri",
+              "rows": [
+                {
+                  "label": "Kopējais svars",
+                  "metric": "1,665 kg"
+                },
+                {
+                  "label": "Platums",
+                  "metric": "2,031 mm"
+                },
+                {
+                  "label": "Augstums",
+                  "metric": "1,992 mm"
+                },
+                {
+                  "label": "Garums",
+                  "metric": "2,156 mm"
+                }
+              ]
+            }
+          ],
+          "note": "1: ūdens/cementa attiecība = 1",
+          "source": "Dati ņemti no ražotāja brošūrām (angļu val.).",
+          "gen": true
+        },
+        {
+          "type": "columns",
+          "ratio": "50-50",
+          "left": [
+            {
+              "type": "perfchart",
+              "title": "Sūkņa veiktspēja: FAIC 650/710",
+              "hint": "Virziet peli virs diagrammas, pieskarieties tai vai izmantojiet bulttaustiņus, lai nolasītu vērtības. Noklikšķiniet uz virzuļa izmēra, lai to paslēptu vai parādītu (veiciet dubultklikšķi, lai rādītu tikai to).",
+              "chipsLabel": "Rādīt līknes",
+              "xName": "Spiediens",
+              "yName": "Caurplūde",
+              "x": {
+                "label": "Pressure",
+                "unit": "bar",
+                "min": 0,
+                "max": 110,
+                "step": 10
+              },
+              "y": {
+                "label": "Output",
+                "unit": "l/min",
+                "min": 0,
+                "max": 130,
+                "step": 10
+              },
+              "series": [
+                {
+                  "name": "Virzulis Ø120",
+                  "color": "#2f5aa8",
+                  "points": [
+                    [
+                      0,
+                      126.2
+                    ],
+                    [
+                      0.8,
+                      126.2
+                    ],
+                    [
+                      1.8,
+                      126.1
+                    ],
+                    [
+                      2.7,
+                      126
+                    ],
+                    [
+                      3.5,
+                      125.8
+                    ],
+                    [
+                      4.4,
+                      125.5
+                    ],
+                    [
+                      5.2,
+                      125.2
+                    ],
+                    [
+                      6,
+                      124.7
+                    ],
+                    [
+                      6.8,
+                      124.1
+                    ],
+                    [
+                      7.6,
+                      123.3
+                    ],
+                    [
+                      8.3,
+                      122.4
+                    ],
+                    [
+                      9.1,
+                      121.3
+                    ],
+                    [
+                      9.9,
+                      120.1
+                    ],
+                    [
+                      11.5,
+                      115.9
+                    ],
+                    [
+                      13,
+                      109.7
+                    ],
+                    [
+                      14.5,
+                      101.9
+                    ],
+                    [
+                      16,
+                      92.9
+                    ],
+                    [
+                      17.8,
+                      83
+                    ],
+                    [
+                      20,
+                      72.7
+                    ],
+                    [
+                      22.6,
+                      62.4
+                    ],
+                    [
+                      25.9,
+                      52.4
+                    ],
+                    [
+                      29.9,
+                      43.2
+                    ],
+                    [
+                      34.9,
+                      35.1
+                    ],
+                    [
+                      40.8,
+                      28.5
+                    ],
+                    [
+                      48,
+                      23.8
+                    ],
+                    [
+                      48.9,
+                      23
+                    ],
+                    [
+                      49.8,
+                      21.7
+                    ],
+                    [
+                      50.5,
+                      20
+                    ],
+                    [
+                      51,
+                      17.9
+                    ],
+                    [
+                      51.5,
+                      15.6
+                    ],
+                    [
+                      51.8,
+                      13.1
+                    ],
+                    [
+                      52.1,
+                      10.6
+                    ],
+                    [
+                      52.4,
+                      8.1
+                    ],
+                    [
+                      52.6,
+                      5.7
+                    ],
+                    [
+                      52.7,
+                      3.5
+                    ],
+                    [
+                      52.8,
+                      1.6
+                    ],
+                    [
+                      53,
+                      0.1
+                    ]
+                  ]
+                },
+                {
+                  "name": "Virzulis Ø105",
+                  "color": "#cf3a2e",
+                  "points": [
+                    [
+                      0,
+                      97
+                    ],
+                    [
+                      1,
+                      97
+                    ],
+                    [
+                      2.3,
+                      97
+                    ],
+                    [
+                      3.6,
+                      96.9
+                    ],
+                    [
+                      5,
+                      96.8
+                    ],
+                    [
+                      6.4,
+                      96.5
+                    ],
+                    [
+                      7.8,
+                      96
+                    ],
+                    [
+                      9.2,
+                      95.3
+                    ],
+                    [
+                      10.6,
+                      94.3
+                    ],
+                    [
+                      12,
+                      93.1
+                    ],
+                    [
+                      13.3,
+                      91.5
+                    ],
+                    [
+                      14.5,
+                      89.6
+                    ],
+                    [
+                      15.6,
+                      87.3
+                    ],
+                    [
+                      16.8,
+                      83.5
+                    ],
+                    [
+                      18.2,
+                      78.6
+                    ],
+                    [
+                      19.7,
+                      72.9
+                    ],
+                    [
+                      21.4,
+                      66.5
+                    ],
+                    [
+                      23.5,
+                      59.8
+                    ],
+                    [
+                      26,
+                      53
+                    ],
+                    [
+                      29.1,
+                      46.2
+                    ],
+                    [
+                      32.8,
+                      39.7
+                    ],
+                    [
+                      37.3,
+                      33.7
+                    ],
+                    [
+                      42.6,
+                      28.6
+                    ],
+                    [
+                      48.8,
+                      24.4
+                    ],
+                    [
+                      56.1,
+                      21.4
+                    ],
+                    [
+                      57.2,
+                      21
+                    ],
+                    [
+                      58.3,
+                      20.5
+                    ],
+                    [
+                      59.5,
+                      20
+                    ],
+                    [
+                      60.8,
+                      19.3
+                    ],
+                    [
+                      62.1,
+                      18.5
+                    ],
+                    [
+                      63.3,
+                      17.3
+                    ],
+                    [
+                      64.6,
+                      15.8
+                    ],
+                    [
+                      65.8,
+                      13.8
+                    ],
+                    [
+                      67,
+                      11.4
+                    ],
+                    [
+                      68.1,
+                      8.3
+                    ],
+                    [
+                      69.2,
+                      4.6
+                    ],
+                    [
+                      70.1,
+                      0.1
+                    ]
+                  ]
+                },
+                {
+                  "name": "Virzulis Ø85",
+                  "color": "#2b2b2b",
+                  "points": [
+                    [
+                      0,
+                      62.3
+                    ],
+                    [
+                      3.5,
+                      62.4
+                    ],
+                    [
+                      6.7,
+                      62.4
+                    ],
+                    [
+                      9.6,
+                      62.4
+                    ],
+                    [
+                      12.3,
+                      62.2
+                    ],
+                    [
+                      14.8,
+                      61.8
+                    ],
+                    [
+                      17.2,
+                      61
+                    ],
+                    [
+                      19.6,
+                      59.8
+                    ],
+                    [
+                      21.9,
+                      58.1
+                    ],
+                    [
+                      24.2,
+                      55.8
+                    ],
+                    [
+                      26.7,
+                      52.8
+                    ],
+                    [
+                      29.2,
+                      49.1
+                    ],
+                    [
+                      32,
+                      44.5
+                    ],
+                    [
+                      35.1,
+                      39.6
+                    ],
+                    [
+                      38.5,
+                      35.4
+                    ],
+                    [
+                      42.2,
+                      31.7
+                    ],
+                    [
+                      46.1,
+                      28.6
+                    ],
+                    [
+                      50.2,
+                      26
+                    ],
+                    [
+                      54.3,
+                      23.7
+                    ],
+                    [
+                      58.5,
+                      21.8
+                    ],
+                    [
+                      62.6,
+                      20.3
+                    ],
+                    [
+                      66.6,
+                      18.9
+                    ],
+                    [
+                      70.4,
+                      17.8
+                    ],
+                    [
+                      74,
+                      16.8
+                    ],
+                    [
+                      77.3,
+                      15.8
+                    ],
+                    [
+                      80.5,
+                      15
+                    ],
+                    [
+                      83.6,
+                      14.4
+                    ],
+                    [
+                      86.7,
+                      13.8
+                    ],
+                    [
+                      89.7,
+                      13.2
+                    ],
+                    [
+                      92.5,
+                      12.6
+                    ],
+                    [
+                      95.2,
+                      11.8
+                    ],
+                    [
+                      97.7,
+                      10.8
+                    ],
+                    [
+                      99.9,
+                      9.5
+                    ],
+                    [
+                      101.9,
+                      7.9
+                    ],
+                    [
+                      103.6,
+                      5.8
+                    ],
+                    [
+                      104.9,
+                      3.3
+                    ],
+                    [
+                      105.9,
+                      0.1
+                    ]
+                  ]
+                }
+              ],
+              "alt": {
+                "src": "/assets/img/haeny-faic650-710-chart.webp",
+                "text": "Sūkņa veiktspēja FAIC 650/710",
+                "show": "Rādīt oriģinālo diagrammu no brošūras",
+                "hide": "Paslēpt oriģinālo diagrammu"
+              }
+            }
+          ],
+          "right": [
+            {
+              "type": "modules",
+              "layout": "tiles",
+              "columns": 1,
+              "narrow": true,
+              "zoom": true,
+              "more": false,
+              "items": [
+                {
+                  "title": "Izmēri un rasējums",
+                  "image": "/assets/img/haeny-faic650-710-dim.webp",
+                  "alt": "Izmēri un rasējums FAIC 650/710",
+                  "text": "Virziet peli virs rasējuma (vai pieskarieties un velciet), lai to palielinātu 2×.",
+                  "width": 1824,
+                  "height": 1287
+                }
+              ]
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "collapsible": true,
+          "title": "Standarta un papildaprīkojums",
+          "items": [
+            "Standarta komplektācijā (injektēšanas sūknis): manuāla spiediena un caurplūdes regulēšana",
+            "Standarta komplektācijā (injektēšanas sūknis): eļļas līmeņa un temperatūras devējs",
+            "Opcija (mikseris / maisītājs): papildu maisīšanas bloks (ieteicams, ja W/C &lt; 0,45)",
+            "Opcija (vadība): tālvadības IESLĒGŠANA / IZSLĒGŠANA",
+            "Opcija (vadība): P/Q reģistrēšana (spiediens / caurplūde)",
+            "Vadība: PLC vadīta svēršana ar skārienekrānu",
+            "Vadība: recepšu vadība",
+            "Vadība: automātisks maisīšanas cikls IESLĒGTS/IZSLĒGTS",
+            "Vadība: sūknis IESLĒGTS/IZSLĒGTS"
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Sazinieties ar mums</a> par cenu, piegādes laiku vai palīdzību pareizā modeļa izvēlē.",
+          "gen": true
+        },
+        {
+          "type": "related",
+          "title": "Skatiet arī",
+          "items": [
+            {
+              "href": "/produkter/haeny/automatiska-pumpar",
+              "mutual": false
+            },
+            {
+              "href": "/produkter/haeny/automatiska-pumpar/faic-650-712"
+            },
+            {
+              "href": "/produkter/haeny/automatiska-pumpar/faic-650-725"
+            },
+            {
+              "href": "/produkter/haeny/automatiska-pumpar/faic-1100-725"
+            }
+          ],
+          "gen": true
+        }
+      ],
+      "published": true
+    },
+    "et": {
+      "title": "Häny FAIC 650/710",
+      "h1": "Häny FAIC 650/710",
+      "description": "Automaatne injekteerimisjaam FAIC 650/710. Kompaktsed injekteerimisjaamad koosnevad Häny end tõestanud standardkomponentidest: segisti, segur ja injekteerimispump. Automatiseeritud versioonis…",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "HÄNY",
+          "href": "/produkter/haeny",
+          "width": 832,
+          "height": 143,
+          "src": "/assets/img/haeny-1.webp",
+          "gen": true
+        },
+        {
+          "type": "columns",
+          "ratio": "40-60",
+          "left": [
+            {
+              "type": "image",
+              "alt": "Automaatne injekteerimisjaam FAIC 650/710",
+              "width": 1006,
+              "height": 1128,
+              "src": "/assets/img/haeny-faic650-710-model.webp"
+            }
+          ],
+          "right": [
+            {
+              "type": "text",
+              "html": "Kompaktsed injekteerimisjaamad koosnevad Häny end tõestanud standardkomponentidest: segisti, segur ja injekteerimispump. Automatiseeritud versioonis annab jaam suure kokkuhoiu personalikuludes, kõrge tootlikkuse, kvaliteedijärelevalve ja parema töökeskkonna."
+            },
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "Väga kompaktne süsteem keskse tõstepunktiga",
+                "Suur jõudlus ja kvaliteedikontroll täisautomaatse segamisega",
+                "Täpne doseerimine kaalumisega segistis (kuivkomponendid silo / kruvi kaudu)",
+                "Segureteptid salvestatakse ja valitakse puuteekraanil",
+                "Partii- ja kulu protokollid, eksporditavad USB kaudu"
+              ]
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Kasutus",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Ankrud, mullanaelad, pingestuskaablid, mansetttorud, kalju- ja kontaktinjekteerimine",
+            "Bentoniidisuspensioonid torude survetamiseks ja mikrotunnelite rajamiseks"
+          ],
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Brošüür FAIC 650/710 (PDF, inglise keeles)",
+          "href": "/assets/docs/haeny-faic650-710-brochure-en.pdf",
+          "gen": true
+        },
+        {
+          "type": "datasheet",
+          "title": "Tehnilised andmed",
+          "tagline": "Automaatne injekteerimisjaam FAIC 650/710",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Injekteerimispump (ZMP 710)",
+              "rows": [
+                {
+                  "label": "FAIC jõudlus",
+                  "metric": "5 m³/h"
+                },
+                {
+                  "label": "Maks. rõhk",
+                  "metric": "100 bar"
+                },
+                {
+                  "label": "Maks. terasuurus",
+                  "metric": "8 mm"
+                },
+                {
+                  "label": "Hüdraulikapaak",
+                  "metric": "140 l"
+                },
+                {
+                  "label": "Pumbamoodul",
+                  "metric": "üksik"
+                },
+                {
+                  "label": "Jahutusvee vooluhulk",
+                  "metric": "3–4 l/min"
+                },
+                {
+                  "label": "Jahutusvee ühendus",
+                  "metric": "BSP ½\""
+                },
+                {
+                  "label": "Survetoru ühendus",
+                  "metric": "BSP 2\""
+                }
+              ]
+            },
+            {
+              "title": "Segisti / segur",
+              "rows": [
+                {
+                  "label": "Segisti kasulik maht",
+                  "metric": "260 l"
+                },
+                {
+                  "label": "Ringluse jõudlus",
+                  "metric": "1,400 l/min"
+                },
+                {
+                  "label": "Veeühendus",
+                  "metric": "BSP 1\""
+                },
+                {
+                  "label": "Seguri jõudlus",
+                  "metric": "350 l"
+                }
+              ]
+            },
+            {
+              "title": "Elektrilised andmed",
+              "rows": [
+                {
+                  "label": "Pinge",
+                  "metric": "3x 400/460 V"
+                },
+                {
+                  "label": "Sagedus",
+                  "metric": "50 / 60 Hz"
+                },
+                {
+                  "label": "Nimivõimsus",
+                  "metric": "18.5 / 21 kW"
+                }
+              ]
+            },
+            {
+              "title": "Kaal ja mõõtmed",
+              "rows": [
+                {
+                  "label": "Kogukaal",
+                  "metric": "1,665 kg"
+                },
+                {
+                  "label": "Laius",
+                  "metric": "2,031 mm"
+                },
+                {
+                  "label": "Kõrgus",
+                  "metric": "1,992 mm"
+                },
+                {
+                  "label": "Pikkus",
+                  "metric": "2,156 mm"
+                }
+              ]
+            }
+          ],
+          "note": "1: vee ja tsemendi suhe = 1",
+          "source": "Andmed on võetud tootja brošüüridest (inglise keeles).",
+          "gen": true
+        },
+        {
+          "type": "columns",
+          "ratio": "50-50",
+          "left": [
+            {
+              "type": "perfchart",
+              "title": "Pumba jõudlusnäitajad: FAIC 650/710",
+              "hint": "Hoia kursorit diagrammi kohal, puuduta seda või kasuta nooleklahve väärtuste lugemiseks. Klõpsa kolvi suurusel, et seda peita või näidata (topeltklõps näitab ainult seda).",
+              "chipsLabel": "Näita kõveraid",
+              "xName": "Rõhk",
+              "yName": "Vooluhulk",
+              "x": {
+                "label": "Pressure",
+                "unit": "bar",
+                "min": 0,
+                "max": 110,
+                "step": 10
+              },
+              "y": {
+                "label": "Output",
+                "unit": "l/min",
+                "min": 0,
+                "max": 130,
+                "step": 10
+              },
+              "series": [
+                {
+                  "name": "Kolb Ø120",
+                  "color": "#2f5aa8",
+                  "points": [
+                    [
+                      0,
+                      126.2
+                    ],
+                    [
+                      0.8,
+                      126.2
+                    ],
+                    [
+                      1.8,
+                      126.1
+                    ],
+                    [
+                      2.7,
+                      126
+                    ],
+                    [
+                      3.5,
+                      125.8
+                    ],
+                    [
+                      4.4,
+                      125.5
+                    ],
+                    [
+                      5.2,
+                      125.2
+                    ],
+                    [
+                      6,
+                      124.7
+                    ],
+                    [
+                      6.8,
+                      124.1
+                    ],
+                    [
+                      7.6,
+                      123.3
+                    ],
+                    [
+                      8.3,
+                      122.4
+                    ],
+                    [
+                      9.1,
+                      121.3
+                    ],
+                    [
+                      9.9,
+                      120.1
+                    ],
+                    [
+                      11.5,
+                      115.9
+                    ],
+                    [
+                      13,
+                      109.7
+                    ],
+                    [
+                      14.5,
+                      101.9
+                    ],
+                    [
+                      16,
+                      92.9
+                    ],
+                    [
+                      17.8,
+                      83
+                    ],
+                    [
+                      20,
+                      72.7
+                    ],
+                    [
+                      22.6,
+                      62.4
+                    ],
+                    [
+                      25.9,
+                      52.4
+                    ],
+                    [
+                      29.9,
+                      43.2
+                    ],
+                    [
+                      34.9,
+                      35.1
+                    ],
+                    [
+                      40.8,
+                      28.5
+                    ],
+                    [
+                      48,
+                      23.8
+                    ],
+                    [
+                      48.9,
+                      23
+                    ],
+                    [
+                      49.8,
+                      21.7
+                    ],
+                    [
+                      50.5,
+                      20
+                    ],
+                    [
+                      51,
+                      17.9
+                    ],
+                    [
+                      51.5,
+                      15.6
+                    ],
+                    [
+                      51.8,
+                      13.1
+                    ],
+                    [
+                      52.1,
+                      10.6
+                    ],
+                    [
+                      52.4,
+                      8.1
+                    ],
+                    [
+                      52.6,
+                      5.7
+                    ],
+                    [
+                      52.7,
+                      3.5
+                    ],
+                    [
+                      52.8,
+                      1.6
+                    ],
+                    [
+                      53,
+                      0.1
+                    ]
+                  ]
+                },
+                {
+                  "name": "Kolb Ø105",
+                  "color": "#cf3a2e",
+                  "points": [
+                    [
+                      0,
+                      97
+                    ],
+                    [
+                      1,
+                      97
+                    ],
+                    [
+                      2.3,
+                      97
+                    ],
+                    [
+                      3.6,
+                      96.9
+                    ],
+                    [
+                      5,
+                      96.8
+                    ],
+                    [
+                      6.4,
+                      96.5
+                    ],
+                    [
+                      7.8,
+                      96
+                    ],
+                    [
+                      9.2,
+                      95.3
+                    ],
+                    [
+                      10.6,
+                      94.3
+                    ],
+                    [
+                      12,
+                      93.1
+                    ],
+                    [
+                      13.3,
+                      91.5
+                    ],
+                    [
+                      14.5,
+                      89.6
+                    ],
+                    [
+                      15.6,
+                      87.3
+                    ],
+                    [
+                      16.8,
+                      83.5
+                    ],
+                    [
+                      18.2,
+                      78.6
+                    ],
+                    [
+                      19.7,
+                      72.9
+                    ],
+                    [
+                      21.4,
+                      66.5
+                    ],
+                    [
+                      23.5,
+                      59.8
+                    ],
+                    [
+                      26,
+                      53
+                    ],
+                    [
+                      29.1,
+                      46.2
+                    ],
+                    [
+                      32.8,
+                      39.7
+                    ],
+                    [
+                      37.3,
+                      33.7
+                    ],
+                    [
+                      42.6,
+                      28.6
+                    ],
+                    [
+                      48.8,
+                      24.4
+                    ],
+                    [
+                      56.1,
+                      21.4
+                    ],
+                    [
+                      57.2,
+                      21
+                    ],
+                    [
+                      58.3,
+                      20.5
+                    ],
+                    [
+                      59.5,
+                      20
+                    ],
+                    [
+                      60.8,
+                      19.3
+                    ],
+                    [
+                      62.1,
+                      18.5
+                    ],
+                    [
+                      63.3,
+                      17.3
+                    ],
+                    [
+                      64.6,
+                      15.8
+                    ],
+                    [
+                      65.8,
+                      13.8
+                    ],
+                    [
+                      67,
+                      11.4
+                    ],
+                    [
+                      68.1,
+                      8.3
+                    ],
+                    [
+                      69.2,
+                      4.6
+                    ],
+                    [
+                      70.1,
+                      0.1
+                    ]
+                  ]
+                },
+                {
+                  "name": "Kolb Ø85",
+                  "color": "#2b2b2b",
+                  "points": [
+                    [
+                      0,
+                      62.3
+                    ],
+                    [
+                      3.5,
+                      62.4
+                    ],
+                    [
+                      6.7,
+                      62.4
+                    ],
+                    [
+                      9.6,
+                      62.4
+                    ],
+                    [
+                      12.3,
+                      62.2
+                    ],
+                    [
+                      14.8,
+                      61.8
+                    ],
+                    [
+                      17.2,
+                      61
+                    ],
+                    [
+                      19.6,
+                      59.8
+                    ],
+                    [
+                      21.9,
+                      58.1
+                    ],
+                    [
+                      24.2,
+                      55.8
+                    ],
+                    [
+                      26.7,
+                      52.8
+                    ],
+                    [
+                      29.2,
+                      49.1
+                    ],
+                    [
+                      32,
+                      44.5
+                    ],
+                    [
+                      35.1,
+                      39.6
+                    ],
+                    [
+                      38.5,
+                      35.4
+                    ],
+                    [
+                      42.2,
+                      31.7
+                    ],
+                    [
+                      46.1,
+                      28.6
+                    ],
+                    [
+                      50.2,
+                      26
+                    ],
+                    [
+                      54.3,
+                      23.7
+                    ],
+                    [
+                      58.5,
+                      21.8
+                    ],
+                    [
+                      62.6,
+                      20.3
+                    ],
+                    [
+                      66.6,
+                      18.9
+                    ],
+                    [
+                      70.4,
+                      17.8
+                    ],
+                    [
+                      74,
+                      16.8
+                    ],
+                    [
+                      77.3,
+                      15.8
+                    ],
+                    [
+                      80.5,
+                      15
+                    ],
+                    [
+                      83.6,
+                      14.4
+                    ],
+                    [
+                      86.7,
+                      13.8
+                    ],
+                    [
+                      89.7,
+                      13.2
+                    ],
+                    [
+                      92.5,
+                      12.6
+                    ],
+                    [
+                      95.2,
+                      11.8
+                    ],
+                    [
+                      97.7,
+                      10.8
+                    ],
+                    [
+                      99.9,
+                      9.5
+                    ],
+                    [
+                      101.9,
+                      7.9
+                    ],
+                    [
+                      103.6,
+                      5.8
+                    ],
+                    [
+                      104.9,
+                      3.3
+                    ],
+                    [
+                      105.9,
+                      0.1
+                    ]
+                  ]
+                }
+              ],
+              "alt": {
+                "src": "/assets/img/haeny-faic650-710-chart.webp",
+                "text": "Pumba jõudlusnäitajad FAIC 650/710",
+                "show": "Näita brošüüri originaaldiagrammi",
+                "hide": "Peida originaaldiagramm"
+              }
+            }
+          ],
+          "right": [
+            {
+              "type": "modules",
+              "layout": "tiles",
+              "columns": 1,
+              "narrow": true,
+              "zoom": true,
+              "more": false,
+              "items": [
+                {
+                  "title": "Mõõtmed ja joonis",
+                  "image": "/assets/img/haeny-faic650-710-dim.webp",
+                  "alt": "Mõõtmed ja joonis FAIC 650/710",
+                  "text": "Hoia kursorit joonise kohal (või puuduta ja lohista), et seda 2× suurendada.",
+                  "width": 1824,
+                  "height": 1287
+                }
+              ]
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "collapsible": true,
+          "title": "Standard- ja lisavarustus",
+          "items": [
+            "Standardvarustuses (injekteerimispump): käsitsi rõhu- ja vooluhulgareguleerimine",
+            "Standardvarustuses (injekteerimispump): õlitaseme- ja temperatuuriandur",
+            "Lisavarustus (segisti / segur): lisasegamisüksus (soovitatav, kui W/C &lt; 0,45)",
+            "Lisavarustus (juhtimine): kaugjuhtimine SEES/VÄLJA",
+            "Lisavarustus (juhtimine): P/Q-registreerimine (rõhk / vooluhulk)",
+            "Juhtimine: PLC-juhitud kaalumine puuteekraaniga",
+            "Juhtimine: retseptipõhine juhtimine",
+            "Juhtimine: automaatne segamistsükkel SEES/VÄLJAS",
+            "Juhtimine: pump SEES/VÄLJAS"
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Võta meiega ühendust</a> hinna, tarneaja või õige mudeli valikul abi saamiseks.",
+          "gen": true
+        },
+        {
+          "type": "related",
+          "title": "Vaata ka",
+          "items": [
+            {
+              "href": "/produkter/haeny/automatiska-pumpar",
+              "mutual": false
+            },
+            {
+              "href": "/produkter/haeny/automatiska-pumpar/faic-650-712"
+            },
+            {
+              "href": "/produkter/haeny/automatiska-pumpar/faic-650-725"
+            },
+            {
+              "href": "/produkter/haeny/automatiska-pumpar/faic-1100-725"
+            }
+          ],
+          "gen": true
+        }
+      ],
+      "published": true
+    },
+    "ru": {
+      "title": "Häny FAIC 650/710",
+      "h1": "Häny FAIC 650/710",
+      "description": "Автоматическая инъекционная установка FAIC 650/710. Компактные инъекционные установки состоят из проверенных стандартных компонентов Häny: смесителя, мешалки и инъекционного насоса. В автоматизированном исполнении…",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "HÄNY",
+          "href": "/produkter/haeny",
+          "width": 832,
+          "height": 143,
+          "src": "/assets/img/haeny-1.webp",
+          "gen": true
+        },
+        {
+          "type": "columns",
+          "ratio": "40-60",
+          "left": [
+            {
+              "type": "image",
+              "alt": "Автоматическая инъекционная установка FAIC 650/710",
+              "width": 1006,
+              "height": 1128,
+              "src": "/assets/img/haeny-faic650-710-model.webp"
+            }
+          ],
+          "right": [
+            {
+              "type": "text",
+              "html": "Компактные инъекционные установки состоят из проверенных стандартных компонентов Häny: смесителя, мешалки и инъекционного насоса. В автоматизированном исполнении установка обеспечивает значительную экономию на расходах на персонал, высокую производительность, контроль качества и более комфортные условия труда."
+            },
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "Очень компактная система с центральной точкой подъёма",
+                "Высокая производительность и контроль качества при полностью автоматическом смешивании",
+                "Точное дозирование взвешиванием в смесителе (сухие компоненты из силоса / по шнеку)",
+                "Рецептуры смесей сохраняются и выбираются на сенсорном экране",
+                "Протоколы партий и расхода, экспорт через USB"
+              ]
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Применение",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Анкеры, грунтовые гвозди, напрягаемые тросы, манжетные трубы, цементация скальных пород и контактная инъекция",
+            "Бентонитовые суспензии для продавливания труб и микротоннелирования"
+          ],
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Брошюра FAIC 650/710 (PDF, на английском)",
+          "href": "/assets/docs/haeny-faic650-710-brochure-en.pdf",
+          "gen": true
+        },
+        {
+          "type": "datasheet",
+          "title": "Технические данные",
+          "tagline": "Автоматическая инъекционная установка FAIC 650/710",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Инъекционный насос (ZMP 710)",
+              "rows": [
+                {
+                  "label": "Производительность FAIC",
+                  "metric": "5 m³/h"
+                },
+                {
+                  "label": "Макс. давление",
+                  "metric": "100 bar"
+                },
+                {
+                  "label": "Макс. размер зерна",
+                  "metric": "8 mm"
+                },
+                {
+                  "label": "Гидробак",
+                  "metric": "140 l"
+                },
+                {
+                  "label": "Насосный модуль",
+                  "metric": "одинарный"
+                },
+                {
+                  "label": "Расход охлаждающей воды",
+                  "metric": "3–4 l/min"
+                },
+                {
+                  "label": "Подключение охлаждающей воды",
+                  "metric": "BSP ½\""
+                },
+                {
+                  "label": "Напорный патрубок",
+                  "metric": "BSP 2\""
+                }
+              ]
+            },
+            {
+              "title": "Смеситель / мешалка",
+              "rows": [
+                {
+                  "label": "Полезный объём смесителя",
+                  "metric": "260 l"
+                },
+                {
+                  "label": "Производительность циркуляции",
+                  "metric": "1,400 l/min"
+                },
+                {
+                  "label": "Подключение воды",
+                  "metric": "BSP 1\""
+                },
+                {
+                  "label": "Производительность мешалки",
+                  "metric": "350 l"
+                }
+              ]
+            },
+            {
+              "title": "Электрические данные",
+              "rows": [
+                {
+                  "label": "Напряжение",
+                  "metric": "3x 400/460 V"
+                },
+                {
+                  "label": "Частота",
+                  "metric": "50 / 60 Hz"
+                },
+                {
+                  "label": "Номинальная мощность",
+                  "metric": "18.5 / 21 kW"
+                }
+              ]
+            },
+            {
+              "title": "Масса и размеры",
+              "rows": [
+                {
+                  "label": "Общая масса",
+                  "metric": "1,665 kg"
+                },
+                {
+                  "label": "Ширина",
+                  "metric": "2,031 mm"
+                },
+                {
+                  "label": "Высота",
+                  "metric": "1,992 mm"
+                },
+                {
+                  "label": "Длина",
+                  "metric": "2,156 mm"
+                }
+              ]
+            }
+          ],
+          "note": "1: водоцементное отношение = 1",
+          "source": "Данные взяты из брошюр производителя (на английском языке).",
+          "gen": true
+        },
+        {
+          "type": "columns",
+          "ratio": "50-50",
+          "left": [
+            {
+              "type": "perfchart",
+              "title": "Характеристики насоса: FAIC 650/710",
+              "hint": "Наведите курсор на диаграмму, коснитесь её или используйте клавиши со стрелками, чтобы считать значения. Нажмите на размер плунжера, чтобы скрыть или показать его (двойной щелчок покажет только его).",
+              "chipsLabel": "Показать кривые",
+              "xName": "Давление",
+              "yName": "Расход",
+              "x": {
+                "label": "Pressure",
+                "unit": "bar",
+                "min": 0,
+                "max": 110,
+                "step": 10
+              },
+              "y": {
+                "label": "Output",
+                "unit": "l/min",
+                "min": 0,
+                "max": 130,
+                "step": 10
+              },
+              "series": [
+                {
+                  "name": "Плунжер Ø120",
+                  "color": "#2f5aa8",
+                  "points": [
+                    [
+                      0,
+                      126.2
+                    ],
+                    [
+                      0.8,
+                      126.2
+                    ],
+                    [
+                      1.8,
+                      126.1
+                    ],
+                    [
+                      2.7,
+                      126
+                    ],
+                    [
+                      3.5,
+                      125.8
+                    ],
+                    [
+                      4.4,
+                      125.5
+                    ],
+                    [
+                      5.2,
+                      125.2
+                    ],
+                    [
+                      6,
+                      124.7
+                    ],
+                    [
+                      6.8,
+                      124.1
+                    ],
+                    [
+                      7.6,
+                      123.3
+                    ],
+                    [
+                      8.3,
+                      122.4
+                    ],
+                    [
+                      9.1,
+                      121.3
+                    ],
+                    [
+                      9.9,
+                      120.1
+                    ],
+                    [
+                      11.5,
+                      115.9
+                    ],
+                    [
+                      13,
+                      109.7
+                    ],
+                    [
+                      14.5,
+                      101.9
+                    ],
+                    [
+                      16,
+                      92.9
+                    ],
+                    [
+                      17.8,
+                      83
+                    ],
+                    [
+                      20,
+                      72.7
+                    ],
+                    [
+                      22.6,
+                      62.4
+                    ],
+                    [
+                      25.9,
+                      52.4
+                    ],
+                    [
+                      29.9,
+                      43.2
+                    ],
+                    [
+                      34.9,
+                      35.1
+                    ],
+                    [
+                      40.8,
+                      28.5
+                    ],
+                    [
+                      48,
+                      23.8
+                    ],
+                    [
+                      48.9,
+                      23
+                    ],
+                    [
+                      49.8,
+                      21.7
+                    ],
+                    [
+                      50.5,
+                      20
+                    ],
+                    [
+                      51,
+                      17.9
+                    ],
+                    [
+                      51.5,
+                      15.6
+                    ],
+                    [
+                      51.8,
+                      13.1
+                    ],
+                    [
+                      52.1,
+                      10.6
+                    ],
+                    [
+                      52.4,
+                      8.1
+                    ],
+                    [
+                      52.6,
+                      5.7
+                    ],
+                    [
+                      52.7,
+                      3.5
+                    ],
+                    [
+                      52.8,
+                      1.6
+                    ],
+                    [
+                      53,
+                      0.1
+                    ]
+                  ]
+                },
+                {
+                  "name": "Плунжер Ø105",
+                  "color": "#cf3a2e",
+                  "points": [
+                    [
+                      0,
+                      97
+                    ],
+                    [
+                      1,
+                      97
+                    ],
+                    [
+                      2.3,
+                      97
+                    ],
+                    [
+                      3.6,
+                      96.9
+                    ],
+                    [
+                      5,
+                      96.8
+                    ],
+                    [
+                      6.4,
+                      96.5
+                    ],
+                    [
+                      7.8,
+                      96
+                    ],
+                    [
+                      9.2,
+                      95.3
+                    ],
+                    [
+                      10.6,
+                      94.3
+                    ],
+                    [
+                      12,
+                      93.1
+                    ],
+                    [
+                      13.3,
+                      91.5
+                    ],
+                    [
+                      14.5,
+                      89.6
+                    ],
+                    [
+                      15.6,
+                      87.3
+                    ],
+                    [
+                      16.8,
+                      83.5
+                    ],
+                    [
+                      18.2,
+                      78.6
+                    ],
+                    [
+                      19.7,
+                      72.9
+                    ],
+                    [
+                      21.4,
+                      66.5
+                    ],
+                    [
+                      23.5,
+                      59.8
+                    ],
+                    [
+                      26,
+                      53
+                    ],
+                    [
+                      29.1,
+                      46.2
+                    ],
+                    [
+                      32.8,
+                      39.7
+                    ],
+                    [
+                      37.3,
+                      33.7
+                    ],
+                    [
+                      42.6,
+                      28.6
+                    ],
+                    [
+                      48.8,
+                      24.4
+                    ],
+                    [
+                      56.1,
+                      21.4
+                    ],
+                    [
+                      57.2,
+                      21
+                    ],
+                    [
+                      58.3,
+                      20.5
+                    ],
+                    [
+                      59.5,
+                      20
+                    ],
+                    [
+                      60.8,
+                      19.3
+                    ],
+                    [
+                      62.1,
+                      18.5
+                    ],
+                    [
+                      63.3,
+                      17.3
+                    ],
+                    [
+                      64.6,
+                      15.8
+                    ],
+                    [
+                      65.8,
+                      13.8
+                    ],
+                    [
+                      67,
+                      11.4
+                    ],
+                    [
+                      68.1,
+                      8.3
+                    ],
+                    [
+                      69.2,
+                      4.6
+                    ],
+                    [
+                      70.1,
+                      0.1
+                    ]
+                  ]
+                },
+                {
+                  "name": "Плунжер Ø85",
+                  "color": "#2b2b2b",
+                  "points": [
+                    [
+                      0,
+                      62.3
+                    ],
+                    [
+                      3.5,
+                      62.4
+                    ],
+                    [
+                      6.7,
+                      62.4
+                    ],
+                    [
+                      9.6,
+                      62.4
+                    ],
+                    [
+                      12.3,
+                      62.2
+                    ],
+                    [
+                      14.8,
+                      61.8
+                    ],
+                    [
+                      17.2,
+                      61
+                    ],
+                    [
+                      19.6,
+                      59.8
+                    ],
+                    [
+                      21.9,
+                      58.1
+                    ],
+                    [
+                      24.2,
+                      55.8
+                    ],
+                    [
+                      26.7,
+                      52.8
+                    ],
+                    [
+                      29.2,
+                      49.1
+                    ],
+                    [
+                      32,
+                      44.5
+                    ],
+                    [
+                      35.1,
+                      39.6
+                    ],
+                    [
+                      38.5,
+                      35.4
+                    ],
+                    [
+                      42.2,
+                      31.7
+                    ],
+                    [
+                      46.1,
+                      28.6
+                    ],
+                    [
+                      50.2,
+                      26
+                    ],
+                    [
+                      54.3,
+                      23.7
+                    ],
+                    [
+                      58.5,
+                      21.8
+                    ],
+                    [
+                      62.6,
+                      20.3
+                    ],
+                    [
+                      66.6,
+                      18.9
+                    ],
+                    [
+                      70.4,
+                      17.8
+                    ],
+                    [
+                      74,
+                      16.8
+                    ],
+                    [
+                      77.3,
+                      15.8
+                    ],
+                    [
+                      80.5,
+                      15
+                    ],
+                    [
+                      83.6,
+                      14.4
+                    ],
+                    [
+                      86.7,
+                      13.8
+                    ],
+                    [
+                      89.7,
+                      13.2
+                    ],
+                    [
+                      92.5,
+                      12.6
+                    ],
+                    [
+                      95.2,
+                      11.8
+                    ],
+                    [
+                      97.7,
+                      10.8
+                    ],
+                    [
+                      99.9,
+                      9.5
+                    ],
+                    [
+                      101.9,
+                      7.9
+                    ],
+                    [
+                      103.6,
+                      5.8
+                    ],
+                    [
+                      104.9,
+                      3.3
+                    ],
+                    [
+                      105.9,
+                      0.1
+                    ]
+                  ]
+                }
+              ],
+              "alt": {
+                "src": "/assets/img/haeny-faic650-710-chart.webp",
+                "text": "Характеристики насоса FAIC 650/710",
+                "show": "Показать оригинальную диаграмму из брошюры",
+                "hide": "Скрыть оригинальную диаграмму"
+              }
+            }
+          ],
+          "right": [
+            {
+              "type": "modules",
+              "layout": "tiles",
+              "columns": 1,
+              "narrow": true,
+              "zoom": true,
+              "more": false,
+              "items": [
+                {
+                  "title": "Размеры и чертёж",
+                  "image": "/assets/img/haeny-faic650-710-dim.webp",
+                  "alt": "Размеры и чертёж FAIC 650/710",
+                  "text": "Наведите курсор на чертёж (или коснитесь и проведите пальцем), чтобы увеличить его в 2 раза.",
+                  "width": 1824,
+                  "height": 1287
+                }
+              ]
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "collapsible": true,
+          "title": "Стандартное и дополнительное оборудование",
+          "items": [
+            "Входит в стандартную комплектацию (инъекционный насос): ручная регулировка давления и расхода",
+            "Входит в стандартную комплектацию (инъекционный насос): датчик уровня и температуры масла",
+            "Опция (смеситель / мешалка): дополнительный смесительный блок (рекомендуется при В/Ц &lt; 0,45)",
+            "Опция (управление): дистанционное ВКЛ/ВЫКЛ",
+            "Опция (управление): P/Q-регистрация (давление / расход)",
+            "Управление: взвешивание под управлением ПЛК с сенсорным экраном",
+            "Управление: управление по рецептам",
+            "Управление: автоматический цикл смешивания ВКЛ/ВЫКЛ",
+            "Управление: насос ВКЛ/ВЫКЛ"
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Свяжитесь с нами</a>, чтобы узнать цену, срок поставки или получить помощь в выборе подходящей модели.",
+          "gen": true
+        },
+        {
+          "type": "related",
+          "title": "См. также",
+          "items": [
+            {
+              "href": "/produkter/haeny/automatiska-pumpar",
+              "mutual": false
+            },
+            {
+              "href": "/produkter/haeny/automatiska-pumpar/faic-650-712"
+            },
+            {
+              "href": "/produkter/haeny/automatiska-pumpar/faic-650-725"
+            },
+            {
+              "href": "/produkter/haeny/automatiska-pumpar/faic-1100-725"
+            }
+          ],
+          "gen": true
+        }
+      ],
+      "published": true
     }
   }
 }

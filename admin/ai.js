@@ -20,7 +20,7 @@ export const MODEL_PRESETS = [
 
 export const LANG_NAMES = {
   sv: "Swedish", en: "English", es: "Spanish", no: "Norwegian (Bokmål)", nb: "Norwegian (Bokmål)", da: "Danish", fi: "Finnish",
-  de: "German", fr: "French", it: "Italian", nl: "Dutch", pl: "Polish", pt: "Portuguese", et: "Estonian", lv: "Latvian", lt: "Lithuanian"
+  de: "German", fr: "French", it: "Italian", nl: "Dutch", pl: "Polish", pt: "Portuguese", et: "Estonian", lv: "Latvian", lt: "Lithuanian", ru: "Russian"
 };
 export const langName = (code) => LANG_NAMES[code] || code;
 

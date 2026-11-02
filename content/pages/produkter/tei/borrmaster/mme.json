@@ -414,6 +414,414 @@
         }
       ],
       "published": true
+    },
+    "lt": {
+      "title": "MME",
+      "h1": "MME",
+      "description": "MME yra lengvas gręžimo agregatas 5–10 t ekskavatoriams, turintis daug tų pačių savybių kaip ir daug didesnis HEM. MME naudoja tą pačią padavimo sistemą…",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "TEI Rock Drills logotipas",
+          "href": "/produkter/tei",
+          "width": 1920,
+          "height": 1117,
+          "src": "/assets/img/tei-2.webp"
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Produkto lapas",
+          "href": "/assets/docs/tei-borrmaster-mme-ladda-ner-pdf.pdf",
+          "driveId": "10FZRMDgXz3gnFcCz3amJKVXddWb-DbbA"
+        },
+        {
+          "type": "datasheet",
+          "title": "Techniniai duomenys",
+          "note": "TEI techniniai duomenys numato 40 % hidraulinės galios nuostolių.",
+          "tagline": "Hidraulinis gręžimo agregatas ekskavatoriams",
+          "intro": [
+            "MME yra lengvas gręžimo agregatas 5–10 t ekskavatoriams, turintis daug tų pačių savybių kaip ir daug didesnis HEM. MME naudoja tą pačią aliuminio padavimo sistemą kaip ir rankiniu būdu nešiojami gręžtuvai.",
+            "Todėl daugelis rangovų MME laiko savo „lauko gręžtuvu“, o nešiojamąjį gręžtuvą – „patalpų gręžtuvu“. Su TEI patentuota viršutinio smūgio plaktuko technologija MME yra puikus įrankis mikropoliams, grunto vinims, inkaravimui, uolienų gręžimui ir populiariems tuščiavidurių strypų (hollow bar) darbams įrengti."
+          ],
+          "groups": [
+            {
+              "title": "Specifikacijos",
+              "rows": [
+                {
+                  "label": "MME260: sistemos debitas ir slėgis",
+                  "metric": "95 lpm @ 155 bar"
+                },
+                {
+                  "label": "MME250R: sistemos debitas ir slėgis",
+                  "metric": "69 lpm @ 172 bar"
+                },
+                {
+                  "label": "MME260: skylės skersmuo",
+                  "metric": "35-52 mm"
+                },
+                {
+                  "label": "MME250R: skylės skersmuo",
+                  "metric": "70-102 mm"
+                },
+                {
+                  "label": "ACF 10: gręžimo ilgis",
+                  "metric": "4,1 m"
+                },
+                {
+                  "label": "ACF 10: gręžimo eiga",
+                  "metric": "3,2 m"
+                },
+                {
+                  "label": "ACF 10: traukos jėga",
+                  "metric": "6,5 kN"
+                },
+                {
+                  "label": "Apytikslis svoris, gręžimo įrankis",
+                  "metric": "488 kg"
+                },
+                {
+                  "label": "Mažiausias ekskavatorius",
+                  "metric": "5 t"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "related",
+          "title": "Tinkami viršutinio smūgio plaktukai",
+          "items": [
+            {
+              "href": "/produkter/tei/topphammare/te260"
+            },
+            {
+              "href": "/produkter/tei/topphammare/te260ht"
+            },
+            {
+              "href": "/produkter/tei/topphammare/te326"
+            }
+          ],
+          "compat": true
+        },
+        {
+          "type": "related",
+          "title": "Tinkamos sukamosios galvutės",
+          "items": [
+            {
+              "href": "/produkter/tei/rotationshammare/rds250"
+            }
+          ],
+          "compat": true
+        }
+      ],
+      "published": true
+    },
+    "lv": {
+      "title": "MME",
+      "h1": "MME",
+      "description": "MME ir viegla urbšanas iekārta 5–10 t ekskavatoriem ar daudzām tām pašām īpašībām kā daudz lielākajam HEM. MME izmanto to pašu padeves sistēmu…",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "TEI Rock Drills logotips",
+          "href": "/produkter/tei",
+          "width": 1920,
+          "height": 1117,
+          "src": "/assets/img/tei-2.webp"
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Produkta lapa",
+          "href": "/assets/docs/tei-borrmaster-mme-ladda-ner-pdf.pdf",
+          "driveId": "10FZRMDgXz3gnFcCz3amJKVXddWb-DbbA"
+        },
+        {
+          "type": "datasheet",
+          "title": "Tehniskie dati",
+          "note": "TEI tehniskie dati paredz 40 % hidrauliskās jaudas zudumu.",
+          "tagline": "Hidrauliska urbšanas iekārta ekskavatoriem",
+          "intro": [
+            "MME ir viegla urbšanas iekārta 5–10 t ekskavatoriem ar daudzām tām pašām īpašībām kā daudz lielākajam HEM. MME izmanto to pašu alumīnija padeves sistēmu kā ar roku nēsājamie urbji.",
+            "Tāpēc daudzi būvuzņēmēji uzskata MME par savu «āra urbi», bet pārnēsājamo urbi — par «iekštelpu urbi». Ar TEI patentēto augšējā āmura urbju tehnoloģiju MME ir lielisks rīks mikropāļu, grunts naglu, enkuru, iežu urbšanas un populāro hollow bar stieņu uzstādīšanai."
+          ],
+          "groups": [
+            {
+              "title": "Specifikācijas",
+              "rows": [
+                {
+                  "label": "MME260: sistēmas caurplūde un spiediens",
+                  "metric": "95 lpm @ 155 bar"
+                },
+                {
+                  "label": "MME250R: sistēmas caurplūde un spiediens",
+                  "metric": "69 lpm @ 172 bar"
+                },
+                {
+                  "label": "MME260: atveres diametrs",
+                  "metric": "35-52 mm"
+                },
+                {
+                  "label": "MME250R: atveres diametrs",
+                  "metric": "70-102 mm"
+                },
+                {
+                  "label": "ACF 10: urbšanas garums",
+                  "metric": "4,1 m"
+                },
+                {
+                  "label": "ACF 10: urbšanas gājiens",
+                  "metric": "3,2 m"
+                },
+                {
+                  "label": "ACF 10: vilkme",
+                  "metric": "6,5 kN"
+                },
+                {
+                  "label": "Aptuvenais svars, urbšanas instruments",
+                  "metric": "488 kg"
+                },
+                {
+                  "label": "Mazākais ekskavators",
+                  "metric": "5 t"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "related",
+          "title": "Piemērotie augšējā āmura urbji",
+          "items": [
+            {
+              "href": "/produkter/tei/topphammare/te260"
+            },
+            {
+              "href": "/produkter/tei/topphammare/te260ht"
+            },
+            {
+              "href": "/produkter/tei/topphammare/te326"
+            }
+          ],
+          "compat": true
+        },
+        {
+          "type": "related",
+          "title": "Piemērotās rotācijas galvas",
+          "items": [
+            {
+              "href": "/produkter/tei/rotationshammare/rds250"
+            }
+          ],
+          "compat": true
+        }
+      ],
+      "published": true
+    },
+    "et": {
+      "title": "MME",
+      "h1": "MME",
+      "description": "MME on kerge puurimisseade 5–10 t ekskavaatoritele, millel on paljud samad omadused nagu palju suuremal HEM-il. MME kasutab sama etteandesüsteemi…",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "TEI Rock Drills logo",
+          "href": "/produkter/tei",
+          "width": 1920,
+          "height": 1117,
+          "src": "/assets/img/tei-2.webp"
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Tootleht",
+          "href": "/assets/docs/tei-borrmaster-mme-ladda-ner-pdf.pdf",
+          "driveId": "10FZRMDgXz3gnFcCz3amJKVXddWb-DbbA"
+        },
+        {
+          "type": "datasheet",
+          "title": "Tehnilised andmed",
+          "note": "TEI tehnilised andmed eeldavad 40 % hüdrauliivõimsuse kadu.",
+          "tagline": "Hüdrauliline puurimisseade ekskavaatoritele",
+          "intro": [
+            "MME on kerge puurimisseade 5–10 t ekskavaatoritele, millel on paljud samad omadused nagu palju suuremal HEM-il. MME kasutab sama alumiiniumist etteandesüsteemi nagu käsitsi kantavad puurid.",
+            "Seetõttu peavad paljud töövõtjad MME-d oma „välipuuriks“, kandepuuri aga „sisepuuriks“. TEI patenteeritud ülavasaratehnoloogiaga on MME suurepärane tööriist mikrovaiade, mullanaelte, tagantankrute, kaljupuurimise ja populaarsete hollow bar -varraste paigaldamiseks."
+          ],
+          "groups": [
+            {
+              "title": "Tehnilised andmed",
+              "rows": [
+                {
+                  "label": "MME260: süsteemi vooluhulk ja rõhk",
+                  "metric": "95 lpm @ 155 bar"
+                },
+                {
+                  "label": "MME250R: süsteemi vooluhulk ja rõhk",
+                  "metric": "69 lpm @ 172 bar"
+                },
+                {
+                  "label": "MME260: augu läbimõõt",
+                  "metric": "35-52 mm"
+                },
+                {
+                  "label": "MME250R: augu läbimõõt",
+                  "metric": "70-102 mm"
+                },
+                {
+                  "label": "ACF 10: puurimispikkus",
+                  "metric": "4,1 m"
+                },
+                {
+                  "label": "ACF 10: puurimiskäik",
+                  "metric": "3,2 m"
+                },
+                {
+                  "label": "ACF 10: tõmbejõud",
+                  "metric": "6,5 kN"
+                },
+                {
+                  "label": "Ligikaudne kaal, puurimisseade",
+                  "metric": "488 kg"
+                },
+                {
+                  "label": "Väikseim ekskavaator",
+                  "metric": "5 t"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "related",
+          "title": "Sobivad ülavasarad",
+          "items": [
+            {
+              "href": "/produkter/tei/topphammare/te260"
+            },
+            {
+              "href": "/produkter/tei/topphammare/te260ht"
+            },
+            {
+              "href": "/produkter/tei/topphammare/te326"
+            }
+          ],
+          "compat": true
+        },
+        {
+          "type": "related",
+          "title": "Sobivad pöörlemispead",
+          "items": [
+            {
+              "href": "/produkter/tei/rotationshammare/rds250"
+            }
+          ],
+          "compat": true
+        }
+      ],
+      "published": true
+    },
+    "ru": {
+      "title": "MME",
+      "h1": "MME",
+      "description": "MME — лёгкий буровой агрегат для экскаваторов массой 5–10 т со многими теми же особенностями, что и у гораздо более крупного HEM. MME использует ту же систему подачи…",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Логотип TEI Rock Drills",
+          "href": "/produkter/tei",
+          "width": 1920,
+          "height": 1117,
+          "src": "/assets/img/tei-2.webp"
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Технический лист",
+          "href": "/assets/docs/tei-borrmaster-mme-ladda-ner-pdf.pdf",
+          "driveId": "10FZRMDgXz3gnFcCz3amJKVXddWb-DbbA"
+        },
+        {
+          "type": "datasheet",
+          "title": "Технические данные",
+          "note": "Технические данные TEI предполагают потери гидравлической мощности 40 %.",
+          "tagline": "Гидравлический буровой агрегат для экскаваторов",
+          "intro": [
+            "MME — лёгкий буровой агрегат для экскаваторов массой 5–10 т со многими теми же особенностями, что и у гораздо более крупного HEM. MME использует ту же алюминиевую систему подачи, что и переносные буры.",
+            "Поэтому многие подрядчики считают MME своим «уличным буром», а переносной бур — «буром для помещений». Благодаря запатентованной технологии верхних перфораторов TEI MME — отличный инструмент для установки микросвай, грунтовых гвоздей, анкеров, бурения скальных пород и популярных полых штанг (hollow bar)."
+          ],
+          "groups": [
+            {
+              "title": "Спецификации",
+              "rows": [
+                {
+                  "label": "MME260: расход и давление системы",
+                  "metric": "95 lpm @ 155 bar"
+                },
+                {
+                  "label": "MME250R: расход и давление системы",
+                  "metric": "69 lpm @ 172 bar"
+                },
+                {
+                  "label": "MME260: диаметр отверстия",
+                  "metric": "35-52 mm"
+                },
+                {
+                  "label": "MME250R: диаметр отверстия",
+                  "metric": "70-102 mm"
+                },
+                {
+                  "label": "ACF 10: длина бурения",
+                  "metric": "4,1 m"
+                },
+                {
+                  "label": "ACF 10: ход бурения",
+                  "metric": "3,2 m"
+                },
+                {
+                  "label": "ACF 10: тяговое усилие",
+                  "metric": "6,5 kN"
+                },
+                {
+                  "label": "Ориентировочная масса, буровой инструмент",
+                  "metric": "488 kg"
+                },
+                {
+                  "label": "Минимальный экскаватор",
+                  "metric": "5 т"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "related",
+          "title": "Подходящие верхние перфораторы",
+          "items": [
+            {
+              "href": "/produkter/tei/topphammare/te260"
+            },
+            {
+              "href": "/produkter/tei/topphammare/te260ht"
+            },
+            {
+              "href": "/produkter/tei/topphammare/te326"
+            }
+          ],
+          "compat": true
+        },
+        {
+          "type": "related",
+          "title": "Подходящие вращатели",
+          "items": [
+            {
+              "href": "/produkter/tei/rotationshammare/rds250"
+            }
+          ],
+          "compat": true
+        }
+      ],
+      "published": true
     }
   },
   "source": {

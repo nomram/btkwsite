@@ -2812,6 +2812,2818 @@
           "gen": true
         }
       ]
+    },
+    "lt": {
+      "title": "Häny ZMP 726",
+      "h1": "Häny ZMP 726",
+      "description": "Injektavimo siurblys ZMP 726. Itin kompaktiškas ir mažai dylantis stūmoklinis siurblys suspensijoms su mažu W/C santykiu ir smėlio turintiems skiediniams pumpuoti. Tinka visiems injektavimo darbams ir užpildymo…",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "HÄNY",
+          "href": "/produkter/haeny",
+          "width": 832,
+          "height": 143,
+          "src": "/assets/img/haeny-1.webp",
+          "gen": true
+        },
+        {
+          "type": "columns",
+          "ratio": "40-60",
+          "left": [
+            {
+              "type": "image",
+              "alt": "Injektavimo siurblys ZMP 726",
+              "width": 947,
+              "height": 1065,
+              "src": "/assets/img/haeny-zmp726-model.webp"
+            }
+          ],
+          "right": [
+            {
+              "type": "text",
+              "html": "Itin kompaktiškas ir mažai dylantis stūmoklinis siurblys suspensijoms su mažu W/C santykiu ir smėlio turintiems skiediniams pumpuoti. Tinka visiems injektavimo darbams ir užpildymo skiediniui už tunelio segmentų pumpuoti."
+            },
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "Labai kompaktiškas vertikalus siurblys, taupantis vietą",
+                "Plynai reguliuojami slėgio ir debito ribotuvai",
+                "Patikimas, nereikalaujantis daug priežiūros, patogi prieiga prie dėvimų dalių",
+                "Greitas siurbimo takto eiga praplauna vožtuvus ir apsaugo nuo užsikimšimo",
+                "Aušinimo vandens jungtis nepertraukiamam darbui"
+              ]
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Naudojimas",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Inkarai, grunto vinys, įtempimo kabeliai, manžetiniai vamzdžiai, uolienų ir kontaktinis injektavimas",
+            "Išankstinis ir papildomas injektavimas, bentonitas vamzdžių stūmimui, užpildymas smulkiu žvyru"
+          ],
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Brošiūra ZMP 726 (PDF, anglų k.)",
+          "href": "/assets/docs/haeny-zmp726-brochure-en.pdf",
+          "gen": true
+        },
+        {
+          "type": "sizeselect",
+          "label": "Stūmoklio Ø",
+          "all": "Visi",
+          "unit": "mm",
+          "sizes": [
+            85,
+            105,
+            120
+          ],
+          "gen": true
+        },
+        {
+          "type": "datasheet",
+          "title": "Techniniai duomenys",
+          "tagline": "Injektavimo siurblys ZMP 726",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Injektavimo siurblys",
+              "rows": [
+                {
+                  "label": "Stūmoklio Ø",
+                  "metric": "85 / 105 / 120 mm"
+                },
+                {
+                  "label": "Našumas",
+                  "metric": "6.5 / 9.9 / 13 m³/h"
+                },
+                {
+                  "label": "Maks. slėgis",
+                  "metric": "100 / 68 / 50 bar"
+                },
+                {
+                  "label": "Min. slėgis",
+                  "metric": "8 / 5 / 4 bar"
+                },
+                {
+                  "label": "Tūris per taktą",
+                  "metric": "1.4 / 2.1 / 2.8 l"
+                },
+                {
+                  "label": "Maks. dalelių dydis",
+                  "metric": "8 mm"
+                },
+                {
+                  "label": "Hidraulinis bakas",
+                  "metric": "240 l"
+                },
+                {
+                  "label": "Siurblio modulis",
+                  "metric": "dvigubas"
+                },
+                {
+                  "label": "Aušinimo vandens debitas",
+                  "metric": "8–10 l/min"
+                },
+                {
+                  "label": "Aušinimo vandens jungtis",
+                  "metric": "½\" BSP"
+                },
+                {
+                  "label": "Slėgio jungtis",
+                  "metric": "2\" BSP"
+                },
+                {
+                  "label": "Siurbimo jungtis",
+                  "metric": "2\" / 2½\" BSP"
+                }
+              ]
+            },
+            {
+              "title": "Elektriniai duomenys",
+              "rows": [
+                {
+                  "label": "Įtampa",
+                  "metric": "3x 400/460"
+                },
+                {
+                  "label": "Dažnis",
+                  "metric": "50 / 60 Hz"
+                },
+                {
+                  "label": "Nominalioji galia",
+                  "metric": "30 / 36 kW"
+                }
+              ]
+            },
+            {
+              "title": "Svoris ir matmenys",
+              "rows": [
+                {
+                  "label": "Apytikslis svoris",
+                  "metric": "1,055 kg"
+                },
+                {
+                  "label": "Plotis",
+                  "metric": "650 mm"
+                },
+                {
+                  "label": "Aukštis",
+                  "metric": "1,478 mm"
+                },
+                {
+                  "label": "Ilgis",
+                  "metric": "1,750 mm"
+                }
+              ]
+            }
+          ],
+          "note": "1: vandens ir cemento santykis = 1 · 2: pildymo laipsnis = 100 %",
+          "source": "Duomenys paimti iš gamintojo brošiūrų (anglų k.).",
+          "gen": true
+        },
+        {
+          "type": "columns",
+          "ratio": "50-50",
+          "left": [
+            {
+              "type": "perfchart",
+              "title": "Siurblio charakteristikos: ZMP 726",
+              "hint": "Užveskite žymeklį ant diagramos, palieskite ją arba naudokite rodyklių klavišus reikšmėms nuskaityti. Spustelėkite stūmoklio dydį, kad jį paslėptumėte arba parodytumėte (dukart spustelėkite, kad būtų rodomas tik jis).",
+              "chipsLabel": "Rodyti kreives",
+              "xName": "Slėgis",
+              "yName": "Debitas",
+              "x": {
+                "label": "Pressure",
+                "unit": "bar",
+                "min": 0,
+                "max": 110,
+                "step": 10
+              },
+              "y": {
+                "label": "Output",
+                "unit": "l/min",
+                "min": 0,
+                "max": 240,
+                "step": 20
+              },
+              "series": [
+                {
+                  "name": "Stūmoklis Ø120",
+                  "color": "#2f5aa8",
+                  "points": [
+                    [
+                      0,
+                      218.7
+                    ],
+                    [
+                      2.4,
+                      218.1
+                    ],
+                    [
+                      4.8,
+                      217.4
+                    ],
+                    [
+                      7.1,
+                      216.7
+                    ],
+                    [
+                      9.3,
+                      215.9
+                    ],
+                    [
+                      11.5,
+                      215.2
+                    ],
+                    [
+                      13.5,
+                      214.4
+                    ],
+                    [
+                      15.5,
+                      213.7
+                    ],
+                    [
+                      17.4,
+                      213.1
+                    ],
+                    [
+                      19.2,
+                      212.5
+                    ],
+                    [
+                      20.8,
+                      212.1
+                    ],
+                    [
+                      22.4,
+                      211.8
+                    ],
+                    [
+                      23.8,
+                      211.6
+                    ],
+                    [
+                      25.4,
+                      211.4
+                    ],
+                    [
+                      27.2,
+                      211.2
+                    ],
+                    [
+                      29.2,
+                      210.9
+                    ],
+                    [
+                      31.4,
+                      210.6
+                    ],
+                    [
+                      33.6,
+                      210.3
+                    ],
+                    [
+                      35.9,
+                      209.9
+                    ],
+                    [
+                      38.1,
+                      209.6
+                    ],
+                    [
+                      40.2,
+                      209.3
+                    ],
+                    [
+                      42.1,
+                      209
+                    ],
+                    [
+                      43.7,
+                      208.7
+                    ],
+                    [
+                      45,
+                      208.5
+                    ],
+                    [
+                      46,
+                      208.4
+                    ],
+                    [
+                      46.7,
+                      208.2
+                    ],
+                    [
+                      47.3,
+                      207.6
+                    ],
+                    [
+                      47.8,
+                      206.5
+                    ],
+                    [
+                      48.2,
+                      204.8
+                    ],
+                    [
+                      48.6,
+                      202.5
+                    ],
+                    [
+                      48.9,
+                      199.5
+                    ],
+                    [
+                      49.2,
+                      195.6
+                    ],
+                    [
+                      49.4,
+                      190.8
+                    ],
+                    [
+                      49.6,
+                      185
+                    ],
+                    [
+                      49.8,
+                      178
+                    ],
+                    [
+                      49.9,
+                      169.9
+                    ],
+                    [
+                      50.1,
+                      160.6
+                    ],
+                    [
+                      50.3,
+                      149
+                    ],
+                    [
+                      50.6,
+                      134.7
+                    ],
+                    [
+                      50.9,
+                      118.5
+                    ],
+                    [
+                      51.2,
+                      101.1
+                    ],
+                    [
+                      51.5,
+                      83.1
+                    ],
+                    [
+                      51.9,
+                      65.3
+                    ],
+                    [
+                      52.2,
+                      48.3
+                    ],
+                    [
+                      52.5,
+                      32.8
+                    ],
+                    [
+                      52.7,
+                      19.6
+                    ],
+                    [
+                      52.9,
+                      9.3
+                    ],
+                    [
+                      53,
+                      2.6
+                    ],
+                    [
+                      53.1,
+                      0.2
+                    ]
+                  ]
+                },
+                {
+                  "name": "Stūmoklis Ø105",
+                  "color": "#cf3a2e",
+                  "points": [
+                    [
+                      0,
+                      165.5
+                    ],
+                    [
+                      2.6,
+                      165.1
+                    ],
+                    [
+                      6.8,
+                      164.4
+                    ],
+                    [
+                      12.2,
+                      163.5
+                    ],
+                    [
+                      18.5,
+                      162.4
+                    ],
+                    [
+                      25.4,
+                      161.2
+                    ],
+                    [
+                      32.5,
+                      160
+                    ],
+                    [
+                      39.6,
+                      158.7
+                    ],
+                    [
+                      46.1,
+                      157.6
+                    ],
+                    [
+                      52,
+                      156.5
+                    ],
+                    [
+                      56.8,
+                      155.7
+                    ],
+                    [
+                      60.1,
+                      155.2
+                    ],
+                    [
+                      61.7,
+                      154.9
+                    ],
+                    [
+                      62.6,
+                      154.8
+                    ],
+                    [
+                      63.5,
+                      154
+                    ],
+                    [
+                      64.3,
+                      152
+                    ],
+                    [
+                      65.1,
+                      148.5
+                    ],
+                    [
+                      65.9,
+                      142.8
+                    ],
+                    [
+                      66.7,
+                      134.5
+                    ],
+                    [
+                      67.4,
+                      123
+                    ],
+                    [
+                      68.1,
+                      107.9
+                    ],
+                    [
+                      68.9,
+                      88.5
+                    ],
+                    [
+                      69.6,
+                      64.4
+                    ],
+                    [
+                      70.3,
+                      35.2
+                    ],
+                    [
+                      71,
+                      0.2
+                    ]
+                  ]
+                },
+                {
+                  "name": "Stūmoklis Ø85",
+                  "color": "#2b2b2b",
+                  "points": [
+                    [
+                      0,
+                      110.4
+                    ],
+                    [
+                      3.6,
+                      110.2
+                    ],
+                    [
+                      9.7,
+                      109.7
+                    ],
+                    [
+                      17.9,
+                      108.9
+                    ],
+                    [
+                      27.5,
+                      108
+                    ],
+                    [
+                      38.1,
+                      106.9
+                    ],
+                    [
+                      49.1,
+                      105.7
+                    ],
+                    [
+                      60,
+                      104.5
+                    ],
+                    [
+                      70.3,
+                      103.3
+                    ],
+                    [
+                      79.5,
+                      102.3
+                    ],
+                    [
+                      87,
+                      101.4
+                    ],
+                    [
+                      92.3,
+                      100.7
+                    ],
+                    [
+                      94.9,
+                      100.4
+                    ],
+                    [
+                      96.3,
+                      100
+                    ],
+                    [
+                      97.5,
+                      99.3
+                    ],
+                    [
+                      98.4,
+                      97.8
+                    ],
+                    [
+                      99.1,
+                      95.3
+                    ],
+                    [
+                      99.6,
+                      91.4
+                    ],
+                    [
+                      100,
+                      85.9
+                    ],
+                    [
+                      100.4,
+                      78.5
+                    ],
+                    [
+                      100.7,
+                      68.7
+                    ],
+                    [
+                      100.9,
+                      56.3
+                    ],
+                    [
+                      101.2,
+                      40.9
+                    ],
+                    [
+                      101.6,
+                      22.3
+                    ],
+                    [
+                      102,
+                      0.2
+                    ],
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      110,
+                      0
+                    ]
+                  ]
+                }
+              ],
+              "alt": {
+                "src": "/assets/img/haeny-zmp726-chart.webp",
+                "text": "Siurblio charakteristikos ZMP 726",
+                "show": "Rodyti originalią brošiūros diagramą",
+                "hide": "Slėpti originalią diagramą"
+              }
+            }
+          ],
+          "right": [
+            {
+              "type": "modules",
+              "layout": "tiles",
+              "columns": 1,
+              "narrow": true,
+              "zoom": true,
+              "more": false,
+              "items": [
+                {
+                  "title": "Matmenys ir brėžinys",
+                  "image": "/assets/img/haeny-zmp726-dim.webp",
+                  "alt": "Matmenys ir brėžinys ZMP 726",
+                  "text": "Užveskite žymeklį ant brėžinio (arba palieskite ir vilkite), kad jį padidintumėte 2×.",
+                  "width": 1824,
+                  "height": 1794
+                }
+              ]
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "collapsible": true,
+          "title": "Standartinė ir pasirenkama įranga",
+          "items": [
+            "Standartinė komplektacija (injektavimo siurblys): rankinis slėgio ir debito reguliavimas",
+            "Standartinė komplektacija (injektavimo siurblys): alyvos lygio, temperatūros ir filtro užterštumo indikatorius",
+            "Pasirinktinai (valdymas): žemo slėgio reguliavimo vožtuvas",
+            "Pasirinktinai (valdymas): stūmoklio blokas (85, 105 arba 120 mm)",
+            "Pasirinktinai (valdymas): nuotolinis valdymas",
+            "Pasirinktinai (valdymas): slėgio ir debito duomenų registravimas",
+            "Valdymas: PLC",
+            "Valdymas: užrakinamas pagrindinis jungiklis, avarinis sustabdymas",
+            "Valdymas: siurblys ĮJ./IŠJ."
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Susisiekite su mumis</a> dėl kainos, pristatymo laiko ar pagalbos renkantis tinkamą modelį.",
+          "gen": true
+        },
+        {
+          "type": "related",
+          "title": "Taip pat žiūrėkite",
+          "items": [
+            {
+              "href": "/produkter/haeny/injekteringspumpar",
+              "mutual": false
+            },
+            {
+              "href": "/produkter/haeny/injekteringspumpar/zmp-725"
+            },
+            {
+              "href": "/produkter/haeny/injekteringspumpar/zmp-936"
+            }
+          ],
+          "gen": true
+        }
+      ],
+      "published": true
+    },
+    "lv": {
+      "title": "Häny ZMP 726",
+      "h1": "Häny ZMP 726",
+      "description": "Injektēšanas sūknis ZMP 726. Ārkārtīgi kompakts un maz nodilstošs virzuļsūknis suspensiju ar zemu W/C attiecību un smilti saturošu javu sūknēšanai. Piemērots visiem injektēšanas darbiem un aizpildījuma…",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "HÄNY",
+          "href": "/produkter/haeny",
+          "width": 832,
+          "height": 143,
+          "src": "/assets/img/haeny-1.webp",
+          "gen": true
+        },
+        {
+          "type": "columns",
+          "ratio": "40-60",
+          "left": [
+            {
+              "type": "image",
+              "alt": "Injektēšanas sūknis ZMP 726",
+              "width": 947,
+              "height": 1065,
+              "src": "/assets/img/haeny-zmp726-model.webp"
+            }
+          ],
+          "right": [
+            {
+              "type": "text",
+              "html": "Ārkārtīgi kompakts un maz nodilstošs virzuļsūknis suspensiju ar zemu W/C attiecību un smilti saturošu javu sūknēšanai. Piemērots visiem injektēšanas darbiem un aizpildījuma javas sūknēšanai aiz tuneļa segmentiem."
+            },
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "Ļoti kompakts vertikāls sūknis, kas ietaupa vietu",
+                "Bezpakāpju regulējami spiediena un caurplūdes ierobežojumi",
+                "Uzticams, neprasa daudz apkopes, viegla piekļuve nolietojumam pakļautajām detaļām",
+                "Ātrs iesūkšanas gājiens izskalo vārstus un novērš aizsērēšanu",
+                "Dzesēšanas ūdens pieslēgums nepārtrauktai darbībai"
+              ]
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Lietojums",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Enkuri, grunts naglas, nospriegojuma kabeļi, manšešu caurules, iežu un kontaktinjektēšana",
+            "Pirms- un pēcinjektēšana, bentonīts cauruļu iespiešanai, uzpilde ar zirņu grants"
+          ],
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Brošūra ZMP 726 (PDF, angļu val.)",
+          "href": "/assets/docs/haeny-zmp726-brochure-en.pdf",
+          "gen": true
+        },
+        {
+          "type": "sizeselect",
+          "label": "Virzuļa Ø",
+          "all": "Visi",
+          "unit": "mm",
+          "sizes": [
+            85,
+            105,
+            120
+          ],
+          "gen": true
+        },
+        {
+          "type": "datasheet",
+          "title": "Tehniskie dati",
+          "tagline": "Injektēšanas sūknis ZMP 726",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Injektēšanas sūknis",
+              "rows": [
+                {
+                  "label": "Virzuļa Ø",
+                  "metric": "85 / 105 / 120 mm"
+                },
+                {
+                  "label": "Ražība",
+                  "metric": "6.5 / 9.9 / 13 m³/h"
+                },
+                {
+                  "label": "Maks. spiediens",
+                  "metric": "100 / 68 / 50 bar"
+                },
+                {
+                  "label": "Min. spiediens",
+                  "metric": "8 / 5 / 4 bar"
+                },
+                {
+                  "label": "Tilpums gājienā",
+                  "metric": "1.4 / 2.1 / 2.8 l"
+                },
+                {
+                  "label": "Maks. graudu izmērs",
+                  "metric": "8 mm"
+                },
+                {
+                  "label": "Hidrauliskā tvertne",
+                  "metric": "240 l"
+                },
+                {
+                  "label": "Sūkņa modulis",
+                  "metric": "dubults"
+                },
+                {
+                  "label": "Dzesēšanas ūdens plūsma",
+                  "metric": "8–10 l/min"
+                },
+                {
+                  "label": "Dzesēšanas ūdens pieslēgums",
+                  "metric": "½\" BSP"
+                },
+                {
+                  "label": "Spiediena pieslēgums",
+                  "metric": "2\" BSP"
+                },
+                {
+                  "label": "Iesūkšanas savienojums",
+                  "metric": "2\" / 2½\" BSP"
+                }
+              ]
+            },
+            {
+              "title": "Elektriskie dati",
+              "rows": [
+                {
+                  "label": "Spriegums",
+                  "metric": "3x 400/460"
+                },
+                {
+                  "label": "Frekvence",
+                  "metric": "50 / 60 Hz"
+                },
+                {
+                  "label": "Nominālā jauda",
+                  "metric": "30 / 36 kW"
+                }
+              ]
+            },
+            {
+              "title": "Svars un izmēri",
+              "rows": [
+                {
+                  "label": "Aptuvenais svars",
+                  "metric": "1,055 kg"
+                },
+                {
+                  "label": "Platums",
+                  "metric": "650 mm"
+                },
+                {
+                  "label": "Augstums",
+                  "metric": "1,478 mm"
+                },
+                {
+                  "label": "Garums",
+                  "metric": "1,750 mm"
+                }
+              ]
+            }
+          ],
+          "note": "1: ūdens/cementa attiecība = 1 · 2: pildījuma pakāpe = 100 %",
+          "source": "Dati ņemti no ražotāja brošūrām (angļu val.).",
+          "gen": true
+        },
+        {
+          "type": "columns",
+          "ratio": "50-50",
+          "left": [
+            {
+              "type": "perfchart",
+              "title": "Sūkņa veiktspēja: ZMP 726",
+              "hint": "Virziet peli virs diagrammas, pieskarieties tai vai izmantojiet bulttaustiņus, lai nolasītu vērtības. Noklikšķiniet uz virzuļa izmēra, lai to paslēptu vai parādītu (veiciet dubultklikšķi, lai rādītu tikai to).",
+              "chipsLabel": "Rādīt līknes",
+              "xName": "Spiediens",
+              "yName": "Caurplūde",
+              "x": {
+                "label": "Pressure",
+                "unit": "bar",
+                "min": 0,
+                "max": 110,
+                "step": 10
+              },
+              "y": {
+                "label": "Output",
+                "unit": "l/min",
+                "min": 0,
+                "max": 240,
+                "step": 20
+              },
+              "series": [
+                {
+                  "name": "Virzulis Ø120",
+                  "color": "#2f5aa8",
+                  "points": [
+                    [
+                      0,
+                      218.7
+                    ],
+                    [
+                      2.4,
+                      218.1
+                    ],
+                    [
+                      4.8,
+                      217.4
+                    ],
+                    [
+                      7.1,
+                      216.7
+                    ],
+                    [
+                      9.3,
+                      215.9
+                    ],
+                    [
+                      11.5,
+                      215.2
+                    ],
+                    [
+                      13.5,
+                      214.4
+                    ],
+                    [
+                      15.5,
+                      213.7
+                    ],
+                    [
+                      17.4,
+                      213.1
+                    ],
+                    [
+                      19.2,
+                      212.5
+                    ],
+                    [
+                      20.8,
+                      212.1
+                    ],
+                    [
+                      22.4,
+                      211.8
+                    ],
+                    [
+                      23.8,
+                      211.6
+                    ],
+                    [
+                      25.4,
+                      211.4
+                    ],
+                    [
+                      27.2,
+                      211.2
+                    ],
+                    [
+                      29.2,
+                      210.9
+                    ],
+                    [
+                      31.4,
+                      210.6
+                    ],
+                    [
+                      33.6,
+                      210.3
+                    ],
+                    [
+                      35.9,
+                      209.9
+                    ],
+                    [
+                      38.1,
+                      209.6
+                    ],
+                    [
+                      40.2,
+                      209.3
+                    ],
+                    [
+                      42.1,
+                      209
+                    ],
+                    [
+                      43.7,
+                      208.7
+                    ],
+                    [
+                      45,
+                      208.5
+                    ],
+                    [
+                      46,
+                      208.4
+                    ],
+                    [
+                      46.7,
+                      208.2
+                    ],
+                    [
+                      47.3,
+                      207.6
+                    ],
+                    [
+                      47.8,
+                      206.5
+                    ],
+                    [
+                      48.2,
+                      204.8
+                    ],
+                    [
+                      48.6,
+                      202.5
+                    ],
+                    [
+                      48.9,
+                      199.5
+                    ],
+                    [
+                      49.2,
+                      195.6
+                    ],
+                    [
+                      49.4,
+                      190.8
+                    ],
+                    [
+                      49.6,
+                      185
+                    ],
+                    [
+                      49.8,
+                      178
+                    ],
+                    [
+                      49.9,
+                      169.9
+                    ],
+                    [
+                      50.1,
+                      160.6
+                    ],
+                    [
+                      50.3,
+                      149
+                    ],
+                    [
+                      50.6,
+                      134.7
+                    ],
+                    [
+                      50.9,
+                      118.5
+                    ],
+                    [
+                      51.2,
+                      101.1
+                    ],
+                    [
+                      51.5,
+                      83.1
+                    ],
+                    [
+                      51.9,
+                      65.3
+                    ],
+                    [
+                      52.2,
+                      48.3
+                    ],
+                    [
+                      52.5,
+                      32.8
+                    ],
+                    [
+                      52.7,
+                      19.6
+                    ],
+                    [
+                      52.9,
+                      9.3
+                    ],
+                    [
+                      53,
+                      2.6
+                    ],
+                    [
+                      53.1,
+                      0.2
+                    ]
+                  ]
+                },
+                {
+                  "name": "Virzulis Ø105",
+                  "color": "#cf3a2e",
+                  "points": [
+                    [
+                      0,
+                      165.5
+                    ],
+                    [
+                      2.6,
+                      165.1
+                    ],
+                    [
+                      6.8,
+                      164.4
+                    ],
+                    [
+                      12.2,
+                      163.5
+                    ],
+                    [
+                      18.5,
+                      162.4
+                    ],
+                    [
+                      25.4,
+                      161.2
+                    ],
+                    [
+                      32.5,
+                      160
+                    ],
+                    [
+                      39.6,
+                      158.7
+                    ],
+                    [
+                      46.1,
+                      157.6
+                    ],
+                    [
+                      52,
+                      156.5
+                    ],
+                    [
+                      56.8,
+                      155.7
+                    ],
+                    [
+                      60.1,
+                      155.2
+                    ],
+                    [
+                      61.7,
+                      154.9
+                    ],
+                    [
+                      62.6,
+                      154.8
+                    ],
+                    [
+                      63.5,
+                      154
+                    ],
+                    [
+                      64.3,
+                      152
+                    ],
+                    [
+                      65.1,
+                      148.5
+                    ],
+                    [
+                      65.9,
+                      142.8
+                    ],
+                    [
+                      66.7,
+                      134.5
+                    ],
+                    [
+                      67.4,
+                      123
+                    ],
+                    [
+                      68.1,
+                      107.9
+                    ],
+                    [
+                      68.9,
+                      88.5
+                    ],
+                    [
+                      69.6,
+                      64.4
+                    ],
+                    [
+                      70.3,
+                      35.2
+                    ],
+                    [
+                      71,
+                      0.2
+                    ]
+                  ]
+                },
+                {
+                  "name": "Virzulis Ø85",
+                  "color": "#2b2b2b",
+                  "points": [
+                    [
+                      0,
+                      110.4
+                    ],
+                    [
+                      3.6,
+                      110.2
+                    ],
+                    [
+                      9.7,
+                      109.7
+                    ],
+                    [
+                      17.9,
+                      108.9
+                    ],
+                    [
+                      27.5,
+                      108
+                    ],
+                    [
+                      38.1,
+                      106.9
+                    ],
+                    [
+                      49.1,
+                      105.7
+                    ],
+                    [
+                      60,
+                      104.5
+                    ],
+                    [
+                      70.3,
+                      103.3
+                    ],
+                    [
+                      79.5,
+                      102.3
+                    ],
+                    [
+                      87,
+                      101.4
+                    ],
+                    [
+                      92.3,
+                      100.7
+                    ],
+                    [
+                      94.9,
+                      100.4
+                    ],
+                    [
+                      96.3,
+                      100
+                    ],
+                    [
+                      97.5,
+                      99.3
+                    ],
+                    [
+                      98.4,
+                      97.8
+                    ],
+                    [
+                      99.1,
+                      95.3
+                    ],
+                    [
+                      99.6,
+                      91.4
+                    ],
+                    [
+                      100,
+                      85.9
+                    ],
+                    [
+                      100.4,
+                      78.5
+                    ],
+                    [
+                      100.7,
+                      68.7
+                    ],
+                    [
+                      100.9,
+                      56.3
+                    ],
+                    [
+                      101.2,
+                      40.9
+                    ],
+                    [
+                      101.6,
+                      22.3
+                    ],
+                    [
+                      102,
+                      0.2
+                    ],
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      110,
+                      0
+                    ]
+                  ]
+                }
+              ],
+              "alt": {
+                "src": "/assets/img/haeny-zmp726-chart.webp",
+                "text": "Sūkņa veiktspēja ZMP 726",
+                "show": "Rādīt oriģinālo diagrammu no brošūras",
+                "hide": "Paslēpt oriģinālo diagrammu"
+              }
+            }
+          ],
+          "right": [
+            {
+              "type": "modules",
+              "layout": "tiles",
+              "columns": 1,
+              "narrow": true,
+              "zoom": true,
+              "more": false,
+              "items": [
+                {
+                  "title": "Izmēri un rasējums",
+                  "image": "/assets/img/haeny-zmp726-dim.webp",
+                  "alt": "Izmēri un rasējums ZMP 726",
+                  "text": "Virziet peli virs rasējuma (vai pieskarieties un velciet), lai to palielinātu 2×.",
+                  "width": 1824,
+                  "height": 1794
+                }
+              ]
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "collapsible": true,
+          "title": "Standarta un papildaprīkojums",
+          "items": [
+            "Standarta komplektācijā (injektēšanas sūknis): manuāla spiediena un caurplūdes regulēšana",
+            "Standarta komplektācijā (injektēšanas sūknis): eļļas līmeņa, temperatūras un filtra piesārņojuma indikators",
+            "Opcija (vadība): zemspiediena regulēšanas vārsts",
+            "Opcija (vadība): virzuļa bloks (85, 105 vai 120 mm)",
+            "Opcija (vadība): tālvadība",
+            "Opcija (vadība): spiediena un caurplūdes datu reģistrēšana",
+            "Vadība: PLC",
+            "Vadība: slēdzams galvenais slēdzis, avārijas apturēšana",
+            "Vadība: sūknis IESLĒGTS/IZSLĒGTS"
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Sazinieties ar mums</a> par cenu, piegādes laiku vai palīdzību pareizā modeļa izvēlē.",
+          "gen": true
+        },
+        {
+          "type": "related",
+          "title": "Skatiet arī",
+          "items": [
+            {
+              "href": "/produkter/haeny/injekteringspumpar",
+              "mutual": false
+            },
+            {
+              "href": "/produkter/haeny/injekteringspumpar/zmp-725"
+            },
+            {
+              "href": "/produkter/haeny/injekteringspumpar/zmp-936"
+            }
+          ],
+          "gen": true
+        }
+      ],
+      "published": true
+    },
+    "et": {
+      "title": "Häny ZMP 726",
+      "h1": "Häny ZMP 726",
+      "description": "Injekteerimispump ZMP 726. Äärmiselt kompaktne ja vähese kuluga kolbpump madala W/C suhtega suspensioonide ja liiva sisaldavate segude pumpamiseks. Sobib kõigiks injekteerimistöödeks ja täite…",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "HÄNY",
+          "href": "/produkter/haeny",
+          "width": 832,
+          "height": 143,
+          "src": "/assets/img/haeny-1.webp",
+          "gen": true
+        },
+        {
+          "type": "columns",
+          "ratio": "40-60",
+          "left": [
+            {
+              "type": "image",
+              "alt": "Injekteerimispump ZMP 726",
+              "width": 947,
+              "height": 1065,
+              "src": "/assets/img/haeny-zmp726-model.webp"
+            }
+          ],
+          "right": [
+            {
+              "type": "text",
+              "html": "Äärmiselt kompaktne ja vähese kuluga kolbpump madala W/C suhtega suspensioonide ja liiva sisaldavate segude pumpamiseks. Sobib kõigiks injekteerimistöödeks ja tunneli segmentide taguse täitesegu pumpamiseks."
+            },
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "Väga kompaktne püstine pump, mis säästab ruumi",
+                "Sujuvalt reguleeritavad rõhu- ja vooluhulgapiirajad",
+                "Töökindel, vähese hooldusvajadusega, kulumisosadele on lihtne ligipääs",
+                "Kiire imitakt loputab ventiile ja hoiab ära ummistumise",
+                "Jahutusvee ühendus pidevaks tööks"
+              ]
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Kasutus",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Ankrud, mullanaelad, pingestuskaablid, mansetttorud, kalju- ja kontaktinjekteerimine",
+            "Eel- ja järelinjekteerimine, bentoniit torude survetamisel, täide hernekruusaga"
+          ],
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Brošüür ZMP 726 (PDF, inglise keeles)",
+          "href": "/assets/docs/haeny-zmp726-brochure-en.pdf",
+          "gen": true
+        },
+        {
+          "type": "sizeselect",
+          "label": "Kolvi Ø",
+          "all": "Kõik",
+          "unit": "mm",
+          "sizes": [
+            85,
+            105,
+            120
+          ],
+          "gen": true
+        },
+        {
+          "type": "datasheet",
+          "title": "Tehnilised andmed",
+          "tagline": "Injekteerimispump ZMP 726",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Injekteerimispump",
+              "rows": [
+                {
+                  "label": "Kolvi Ø",
+                  "metric": "85 / 105 / 120 mm"
+                },
+                {
+                  "label": "Jõudlus",
+                  "metric": "6.5 / 9.9 / 13 m³/h"
+                },
+                {
+                  "label": "Maks. rõhk",
+                  "metric": "100 / 68 / 50 bar"
+                },
+                {
+                  "label": "Min. rõhk",
+                  "metric": "8 / 5 / 4 bar"
+                },
+                {
+                  "label": "Maht takti kohta",
+                  "metric": "1.4 / 2.1 / 2.8 l"
+                },
+                {
+                  "label": "Maks. terasuurus",
+                  "metric": "8 mm"
+                },
+                {
+                  "label": "Hüdraulikapaak",
+                  "metric": "240 l"
+                },
+                {
+                  "label": "Pumbamoodul",
+                  "metric": "kahekordne"
+                },
+                {
+                  "label": "Jahutusvee vooluhulk",
+                  "metric": "8–10 l/min"
+                },
+                {
+                  "label": "Jahutusvee ühendus",
+                  "metric": "½\" BSP"
+                },
+                {
+                  "label": "Survetoru ühendus",
+                  "metric": "2\" BSP"
+                },
+                {
+                  "label": "Imiühendus",
+                  "metric": "2\" / 2½\" BSP"
+                }
+              ]
+            },
+            {
+              "title": "Elektrilised andmed",
+              "rows": [
+                {
+                  "label": "Pinge",
+                  "metric": "3x 400/460"
+                },
+                {
+                  "label": "Sagedus",
+                  "metric": "50 / 60 Hz"
+                },
+                {
+                  "label": "Nimivõimsus",
+                  "metric": "30 / 36 kW"
+                }
+              ]
+            },
+            {
+              "title": "Kaal ja mõõtmed",
+              "rows": [
+                {
+                  "label": "Ligikaudne kaal",
+                  "metric": "1,055 kg"
+                },
+                {
+                  "label": "Laius",
+                  "metric": "650 mm"
+                },
+                {
+                  "label": "Kõrgus",
+                  "metric": "1,478 mm"
+                },
+                {
+                  "label": "Pikkus",
+                  "metric": "1,750 mm"
+                }
+              ]
+            }
+          ],
+          "note": "1: vee ja tsemendi suhe = 1 · 2: täitetase = 100 %",
+          "source": "Andmed on võetud tootja brošüüridest (inglise keeles).",
+          "gen": true
+        },
+        {
+          "type": "columns",
+          "ratio": "50-50",
+          "left": [
+            {
+              "type": "perfchart",
+              "title": "Pumba jõudlusnäitajad: ZMP 726",
+              "hint": "Hoia kursorit diagrammi kohal, puuduta seda või kasuta nooleklahve väärtuste lugemiseks. Klõpsa kolvi suurusel, et seda peita või näidata (topeltklõps näitab ainult seda).",
+              "chipsLabel": "Näita kõveraid",
+              "xName": "Rõhk",
+              "yName": "Vooluhulk",
+              "x": {
+                "label": "Pressure",
+                "unit": "bar",
+                "min": 0,
+                "max": 110,
+                "step": 10
+              },
+              "y": {
+                "label": "Output",
+                "unit": "l/min",
+                "min": 0,
+                "max": 240,
+                "step": 20
+              },
+              "series": [
+                {
+                  "name": "Kolb Ø120",
+                  "color": "#2f5aa8",
+                  "points": [
+                    [
+                      0,
+                      218.7
+                    ],
+                    [
+                      2.4,
+                      218.1
+                    ],
+                    [
+                      4.8,
+                      217.4
+                    ],
+                    [
+                      7.1,
+                      216.7
+                    ],
+                    [
+                      9.3,
+                      215.9
+                    ],
+                    [
+                      11.5,
+                      215.2
+                    ],
+                    [
+                      13.5,
+                      214.4
+                    ],
+                    [
+                      15.5,
+                      213.7
+                    ],
+                    [
+                      17.4,
+                      213.1
+                    ],
+                    [
+                      19.2,
+                      212.5
+                    ],
+                    [
+                      20.8,
+                      212.1
+                    ],
+                    [
+                      22.4,
+                      211.8
+                    ],
+                    [
+                      23.8,
+                      211.6
+                    ],
+                    [
+                      25.4,
+                      211.4
+                    ],
+                    [
+                      27.2,
+                      211.2
+                    ],
+                    [
+                      29.2,
+                      210.9
+                    ],
+                    [
+                      31.4,
+                      210.6
+                    ],
+                    [
+                      33.6,
+                      210.3
+                    ],
+                    [
+                      35.9,
+                      209.9
+                    ],
+                    [
+                      38.1,
+                      209.6
+                    ],
+                    [
+                      40.2,
+                      209.3
+                    ],
+                    [
+                      42.1,
+                      209
+                    ],
+                    [
+                      43.7,
+                      208.7
+                    ],
+                    [
+                      45,
+                      208.5
+                    ],
+                    [
+                      46,
+                      208.4
+                    ],
+                    [
+                      46.7,
+                      208.2
+                    ],
+                    [
+                      47.3,
+                      207.6
+                    ],
+                    [
+                      47.8,
+                      206.5
+                    ],
+                    [
+                      48.2,
+                      204.8
+                    ],
+                    [
+                      48.6,
+                      202.5
+                    ],
+                    [
+                      48.9,
+                      199.5
+                    ],
+                    [
+                      49.2,
+                      195.6
+                    ],
+                    [
+                      49.4,
+                      190.8
+                    ],
+                    [
+                      49.6,
+                      185
+                    ],
+                    [
+                      49.8,
+                      178
+                    ],
+                    [
+                      49.9,
+                      169.9
+                    ],
+                    [
+                      50.1,
+                      160.6
+                    ],
+                    [
+                      50.3,
+                      149
+                    ],
+                    [
+                      50.6,
+                      134.7
+                    ],
+                    [
+                      50.9,
+                      118.5
+                    ],
+                    [
+                      51.2,
+                      101.1
+                    ],
+                    [
+                      51.5,
+                      83.1
+                    ],
+                    [
+                      51.9,
+                      65.3
+                    ],
+                    [
+                      52.2,
+                      48.3
+                    ],
+                    [
+                      52.5,
+                      32.8
+                    ],
+                    [
+                      52.7,
+                      19.6
+                    ],
+                    [
+                      52.9,
+                      9.3
+                    ],
+                    [
+                      53,
+                      2.6
+                    ],
+                    [
+                      53.1,
+                      0.2
+                    ]
+                  ]
+                },
+                {
+                  "name": "Kolb Ø105",
+                  "color": "#cf3a2e",
+                  "points": [
+                    [
+                      0,
+                      165.5
+                    ],
+                    [
+                      2.6,
+                      165.1
+                    ],
+                    [
+                      6.8,
+                      164.4
+                    ],
+                    [
+                      12.2,
+                      163.5
+                    ],
+                    [
+                      18.5,
+                      162.4
+                    ],
+                    [
+                      25.4,
+                      161.2
+                    ],
+                    [
+                      32.5,
+                      160
+                    ],
+                    [
+                      39.6,
+                      158.7
+                    ],
+                    [
+                      46.1,
+                      157.6
+                    ],
+                    [
+                      52,
+                      156.5
+                    ],
+                    [
+                      56.8,
+                      155.7
+                    ],
+                    [
+                      60.1,
+                      155.2
+                    ],
+                    [
+                      61.7,
+                      154.9
+                    ],
+                    [
+                      62.6,
+                      154.8
+                    ],
+                    [
+                      63.5,
+                      154
+                    ],
+                    [
+                      64.3,
+                      152
+                    ],
+                    [
+                      65.1,
+                      148.5
+                    ],
+                    [
+                      65.9,
+                      142.8
+                    ],
+                    [
+                      66.7,
+                      134.5
+                    ],
+                    [
+                      67.4,
+                      123
+                    ],
+                    [
+                      68.1,
+                      107.9
+                    ],
+                    [
+                      68.9,
+                      88.5
+                    ],
+                    [
+                      69.6,
+                      64.4
+                    ],
+                    [
+                      70.3,
+                      35.2
+                    ],
+                    [
+                      71,
+                      0.2
+                    ]
+                  ]
+                },
+                {
+                  "name": "Kolb Ø85",
+                  "color": "#2b2b2b",
+                  "points": [
+                    [
+                      0,
+                      110.4
+                    ],
+                    [
+                      3.6,
+                      110.2
+                    ],
+                    [
+                      9.7,
+                      109.7
+                    ],
+                    [
+                      17.9,
+                      108.9
+                    ],
+                    [
+                      27.5,
+                      108
+                    ],
+                    [
+                      38.1,
+                      106.9
+                    ],
+                    [
+                      49.1,
+                      105.7
+                    ],
+                    [
+                      60,
+                      104.5
+                    ],
+                    [
+                      70.3,
+                      103.3
+                    ],
+                    [
+                      79.5,
+                      102.3
+                    ],
+                    [
+                      87,
+                      101.4
+                    ],
+                    [
+                      92.3,
+                      100.7
+                    ],
+                    [
+                      94.9,
+                      100.4
+                    ],
+                    [
+                      96.3,
+                      100
+                    ],
+                    [
+                      97.5,
+                      99.3
+                    ],
+                    [
+                      98.4,
+                      97.8
+                    ],
+                    [
+                      99.1,
+                      95.3
+                    ],
+                    [
+                      99.6,
+                      91.4
+                    ],
+                    [
+                      100,
+                      85.9
+                    ],
+                    [
+                      100.4,
+                      78.5
+                    ],
+                    [
+                      100.7,
+                      68.7
+                    ],
+                    [
+                      100.9,
+                      56.3
+                    ],
+                    [
+                      101.2,
+                      40.9
+                    ],
+                    [
+                      101.6,
+                      22.3
+                    ],
+                    [
+                      102,
+                      0.2
+                    ],
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      110,
+                      0
+                    ]
+                  ]
+                }
+              ],
+              "alt": {
+                "src": "/assets/img/haeny-zmp726-chart.webp",
+                "text": "Pumba jõudlusnäitajad ZMP 726",
+                "show": "Näita brošüüri originaaldiagrammi",
+                "hide": "Peida originaaldiagramm"
+              }
+            }
+          ],
+          "right": [
+            {
+              "type": "modules",
+              "layout": "tiles",
+              "columns": 1,
+              "narrow": true,
+              "zoom": true,
+              "more": false,
+              "items": [
+                {
+                  "title": "Mõõtmed ja joonis",
+                  "image": "/assets/img/haeny-zmp726-dim.webp",
+                  "alt": "Mõõtmed ja joonis ZMP 726",
+                  "text": "Hoia kursorit joonise kohal (või puuduta ja lohista), et seda 2× suurendada.",
+                  "width": 1824,
+                  "height": 1794
+                }
+              ]
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "collapsible": true,
+          "title": "Standard- ja lisavarustus",
+          "items": [
+            "Standardvarustuses (injekteerimispump): käsitsi rõhu- ja vooluhulgareguleerimine",
+            "Standardvarustuses (injekteerimispump): õlitaseme, temperatuuri ja filtri määrdumise indikaator",
+            "Lisavarustus (juhtimine): madalrõhu reguleerventiil",
+            "Lisavarustus (juhtimine): kolbüksus (85, 105 või 120 mm)",
+            "Lisavarustus (juhtimine): kaugjuhtimine",
+            "Lisavarustus (juhtimine): rõhu ja vooluhulga andmelogimine",
+            "Juhtimine: PLC",
+            "Juhtimine: lukustatav pealüliti, hädaseiskamine",
+            "Juhtimine: pump SEES/VÄLJAS"
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Võta meiega ühendust</a> hinna, tarneaja või õige mudeli valikul abi saamiseks.",
+          "gen": true
+        },
+        {
+          "type": "related",
+          "title": "Vaata ka",
+          "items": [
+            {
+              "href": "/produkter/haeny/injekteringspumpar",
+              "mutual": false
+            },
+            {
+              "href": "/produkter/haeny/injekteringspumpar/zmp-725"
+            },
+            {
+              "href": "/produkter/haeny/injekteringspumpar/zmp-936"
+            }
+          ],
+          "gen": true
+        }
+      ],
+      "published": true
+    },
+    "ru": {
+      "title": "Häny ZMP 726",
+      "h1": "Häny ZMP 726",
+      "description": "Инъекционный насос ZMP 726. Предельно компактный плунжерный насос с низким износом для перекачивания суспензий с низким В/Ц и растворов с содержанием песка. Подходит для всех инъекционных работ и для перекачки заполняющего…",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "HÄNY",
+          "href": "/produkter/haeny",
+          "width": 832,
+          "height": 143,
+          "src": "/assets/img/haeny-1.webp",
+          "gen": true
+        },
+        {
+          "type": "columns",
+          "ratio": "40-60",
+          "left": [
+            {
+              "type": "image",
+              "alt": "Инъекционный насос ZMP 726",
+              "width": 947,
+              "height": 1065,
+              "src": "/assets/img/haeny-zmp726-model.webp"
+            }
+          ],
+          "right": [
+            {
+              "type": "text",
+              "html": "Предельно компактный плунжерный насос с низким износом для перекачивания суспензий с низким В/Ц и растворов с содержанием песка. Подходит для всех инъекционных работ и для перекачки заполняющего раствора за тюбингами тоннеля."
+            },
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "Очень компактный вертикальный насос, экономящий место",
+                "Плавно регулируемые ограничения давления и расхода",
+                "Надёжный, малообслуживаемый, лёгкий доступ к изнашиваемым деталям",
+                "Быстрый ход всасывания промывает клапаны и предотвращает засорение",
+                "Подключение охлаждающей воды для непрерывной работы"
+              ]
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Применение",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Анкеры, грунтовые гвозди, напрягаемые тросы, манжетные трубы, цементация скальных пород и контактная инъекция",
+            "Предварительное и последующее инъектирование, бентонит при продавливании труб, заполнение мелким гравием"
+          ],
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Брошюра ZMP 726 (PDF, на английском)",
+          "href": "/assets/docs/haeny-zmp726-brochure-en.pdf",
+          "gen": true
+        },
+        {
+          "type": "sizeselect",
+          "label": "Ø плунжера",
+          "all": "Все",
+          "unit": "mm",
+          "sizes": [
+            85,
+            105,
+            120
+          ],
+          "gen": true
+        },
+        {
+          "type": "datasheet",
+          "title": "Технические данные",
+          "tagline": "Инъекционный насос ZMP 726",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Инъекционный насос",
+              "rows": [
+                {
+                  "label": "Ø плунжера",
+                  "metric": "85 / 105 / 120 mm"
+                },
+                {
+                  "label": "Производительность",
+                  "metric": "6.5 / 9.9 / 13 m³/h"
+                },
+                {
+                  "label": "Макс. давление",
+                  "metric": "100 / 68 / 50 bar"
+                },
+                {
+                  "label": "Мин. давление",
+                  "metric": "8 / 5 / 4 bar"
+                },
+                {
+                  "label": "Объём за ход",
+                  "metric": "1.4 / 2.1 / 2.8 l"
+                },
+                {
+                  "label": "Макс. размер зерна",
+                  "metric": "8 mm"
+                },
+                {
+                  "label": "Гидробак",
+                  "metric": "240 l"
+                },
+                {
+                  "label": "Насосный модуль",
+                  "metric": "двойной"
+                },
+                {
+                  "label": "Расход охлаждающей воды",
+                  "metric": "8–10 l/min"
+                },
+                {
+                  "label": "Подключение охлаждающей воды",
+                  "metric": "½\" BSP"
+                },
+                {
+                  "label": "Напорный патрубок",
+                  "metric": "2\" BSP"
+                },
+                {
+                  "label": "Всасывающий патрубок",
+                  "metric": "2\" / 2½\" BSP"
+                }
+              ]
+            },
+            {
+              "title": "Электрические данные",
+              "rows": [
+                {
+                  "label": "Напряжение",
+                  "metric": "3x 400/460"
+                },
+                {
+                  "label": "Частота",
+                  "metric": "50 / 60 Hz"
+                },
+                {
+                  "label": "Номинальная мощность",
+                  "metric": "30 / 36 kW"
+                }
+              ]
+            },
+            {
+              "title": "Масса и размеры",
+              "rows": [
+                {
+                  "label": "Ориентировочная масса",
+                  "metric": "1,055 kg"
+                },
+                {
+                  "label": "Ширина",
+                  "metric": "650 mm"
+                },
+                {
+                  "label": "Высота",
+                  "metric": "1,478 mm"
+                },
+                {
+                  "label": "Длина",
+                  "metric": "1,750 mm"
+                }
+              ]
+            }
+          ],
+          "note": "1: водоцементное отношение = 1 · 2: степень заполнения = 100 %",
+          "source": "Данные взяты из брошюр производителя (на английском языке).",
+          "gen": true
+        },
+        {
+          "type": "columns",
+          "ratio": "50-50",
+          "left": [
+            {
+              "type": "perfchart",
+              "title": "Характеристики насоса: ZMP 726",
+              "hint": "Наведите курсор на диаграмму, коснитесь её или используйте клавиши со стрелками, чтобы считать значения. Нажмите на размер плунжера, чтобы скрыть или показать его (двойной щелчок покажет только его).",
+              "chipsLabel": "Показать кривые",
+              "xName": "Давление",
+              "yName": "Расход",
+              "x": {
+                "label": "Pressure",
+                "unit": "bar",
+                "min": 0,
+                "max": 110,
+                "step": 10
+              },
+              "y": {
+                "label": "Output",
+                "unit": "l/min",
+                "min": 0,
+                "max": 240,
+                "step": 20
+              },
+              "series": [
+                {
+                  "name": "Плунжер Ø120",
+                  "color": "#2f5aa8",
+                  "points": [
+                    [
+                      0,
+                      218.7
+                    ],
+                    [
+                      2.4,
+                      218.1
+                    ],
+                    [
+                      4.8,
+                      217.4
+                    ],
+                    [
+                      7.1,
+                      216.7
+                    ],
+                    [
+                      9.3,
+                      215.9
+                    ],
+                    [
+                      11.5,
+                      215.2
+                    ],
+                    [
+                      13.5,
+                      214.4
+                    ],
+                    [
+                      15.5,
+                      213.7
+                    ],
+                    [
+                      17.4,
+                      213.1
+                    ],
+                    [
+                      19.2,
+                      212.5
+                    ],
+                    [
+                      20.8,
+                      212.1
+                    ],
+                    [
+                      22.4,
+                      211.8
+                    ],
+                    [
+                      23.8,
+                      211.6
+                    ],
+                    [
+                      25.4,
+                      211.4
+                    ],
+                    [
+                      27.2,
+                      211.2
+                    ],
+                    [
+                      29.2,
+                      210.9
+                    ],
+                    [
+                      31.4,
+                      210.6
+                    ],
+                    [
+                      33.6,
+                      210.3
+                    ],
+                    [
+                      35.9,
+                      209.9
+                    ],
+                    [
+                      38.1,
+                      209.6
+                    ],
+                    [
+                      40.2,
+                      209.3
+                    ],
+                    [
+                      42.1,
+                      209
+                    ],
+                    [
+                      43.7,
+                      208.7
+                    ],
+                    [
+                      45,
+                      208.5
+                    ],
+                    [
+                      46,
+                      208.4
+                    ],
+                    [
+                      46.7,
+                      208.2
+                    ],
+                    [
+                      47.3,
+                      207.6
+                    ],
+                    [
+                      47.8,
+                      206.5
+                    ],
+                    [
+                      48.2,
+                      204.8
+                    ],
+                    [
+                      48.6,
+                      202.5
+                    ],
+                    [
+                      48.9,
+                      199.5
+                    ],
+                    [
+                      49.2,
+                      195.6
+                    ],
+                    [
+                      49.4,
+                      190.8
+                    ],
+                    [
+                      49.6,
+                      185
+                    ],
+                    [
+                      49.8,
+                      178
+                    ],
+                    [
+                      49.9,
+                      169.9
+                    ],
+                    [
+                      50.1,
+                      160.6
+                    ],
+                    [
+                      50.3,
+                      149
+                    ],
+                    [
+                      50.6,
+                      134.7
+                    ],
+                    [
+                      50.9,
+                      118.5
+                    ],
+                    [
+                      51.2,
+                      101.1
+                    ],
+                    [
+                      51.5,
+                      83.1
+                    ],
+                    [
+                      51.9,
+                      65.3
+                    ],
+                    [
+                      52.2,
+                      48.3
+                    ],
+                    [
+                      52.5,
+                      32.8
+                    ],
+                    [
+                      52.7,
+                      19.6
+                    ],
+                    [
+                      52.9,
+                      9.3
+                    ],
+                    [
+                      53,
+                      2.6
+                    ],
+                    [
+                      53.1,
+                      0.2
+                    ]
+                  ]
+                },
+                {
+                  "name": "Плунжер Ø105",
+                  "color": "#cf3a2e",
+                  "points": [
+                    [
+                      0,
+                      165.5
+                    ],
+                    [
+                      2.6,
+                      165.1
+                    ],
+                    [
+                      6.8,
+                      164.4
+                    ],
+                    [
+                      12.2,
+                      163.5
+                    ],
+                    [
+                      18.5,
+                      162.4
+                    ],
+                    [
+                      25.4,
+                      161.2
+                    ],
+                    [
+                      32.5,
+                      160
+                    ],
+                    [
+                      39.6,
+                      158.7
+                    ],
+                    [
+                      46.1,
+                      157.6
+                    ],
+                    [
+                      52,
+                      156.5
+                    ],
+                    [
+                      56.8,
+                      155.7
+                    ],
+                    [
+                      60.1,
+                      155.2
+                    ],
+                    [
+                      61.7,
+                      154.9
+                    ],
+                    [
+                      62.6,
+                      154.8
+                    ],
+                    [
+                      63.5,
+                      154
+                    ],
+                    [
+                      64.3,
+                      152
+                    ],
+                    [
+                      65.1,
+                      148.5
+                    ],
+                    [
+                      65.9,
+                      142.8
+                    ],
+                    [
+                      66.7,
+                      134.5
+                    ],
+                    [
+                      67.4,
+                      123
+                    ],
+                    [
+                      68.1,
+                      107.9
+                    ],
+                    [
+                      68.9,
+                      88.5
+                    ],
+                    [
+                      69.6,
+                      64.4
+                    ],
+                    [
+                      70.3,
+                      35.2
+                    ],
+                    [
+                      71,
+                      0.2
+                    ]
+                  ]
+                },
+                {
+                  "name": "Плунжер Ø85",
+                  "color": "#2b2b2b",
+                  "points": [
+                    [
+                      0,
+                      110.4
+                    ],
+                    [
+                      3.6,
+                      110.2
+                    ],
+                    [
+                      9.7,
+                      109.7
+                    ],
+                    [
+                      17.9,
+                      108.9
+                    ],
+                    [
+                      27.5,
+                      108
+                    ],
+                    [
+                      38.1,
+                      106.9
+                    ],
+                    [
+                      49.1,
+                      105.7
+                    ],
+                    [
+                      60,
+                      104.5
+                    ],
+                    [
+                      70.3,
+                      103.3
+                    ],
+                    [
+                      79.5,
+                      102.3
+                    ],
+                    [
+                      87,
+                      101.4
+                    ],
+                    [
+                      92.3,
+                      100.7
+                    ],
+                    [
+                      94.9,
+                      100.4
+                    ],
+                    [
+                      96.3,
+                      100
+                    ],
+                    [
+                      97.5,
+                      99.3
+                    ],
+                    [
+                      98.4,
+                      97.8
+                    ],
+                    [
+                      99.1,
+                      95.3
+                    ],
+                    [
+                      99.6,
+                      91.4
+                    ],
+                    [
+                      100,
+                      85.9
+                    ],
+                    [
+                      100.4,
+                      78.5
+                    ],
+                    [
+                      100.7,
+                      68.7
+                    ],
+                    [
+                      100.9,
+                      56.3
+                    ],
+                    [
+                      101.2,
+                      40.9
+                    ],
+                    [
+                      101.6,
+                      22.3
+                    ],
+                    [
+                      102,
+                      0.2
+                    ],
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      110,
+                      0
+                    ]
+                  ]
+                }
+              ],
+              "alt": {
+                "src": "/assets/img/haeny-zmp726-chart.webp",
+                "text": "Характеристики насоса ZMP 726",
+                "show": "Показать оригинальную диаграмму из брошюры",
+                "hide": "Скрыть оригинальную диаграмму"
+              }
+            }
+          ],
+          "right": [
+            {
+              "type": "modules",
+              "layout": "tiles",
+              "columns": 1,
+              "narrow": true,
+              "zoom": true,
+              "more": false,
+              "items": [
+                {
+                  "title": "Размеры и чертёж",
+                  "image": "/assets/img/haeny-zmp726-dim.webp",
+                  "alt": "Размеры и чертёж ZMP 726",
+                  "text": "Наведите курсор на чертёж (или коснитесь и проведите пальцем), чтобы увеличить его в 2 раза.",
+                  "width": 1824,
+                  "height": 1794
+                }
+              ]
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "collapsible": true,
+          "title": "Стандартное и дополнительное оборудование",
+          "items": [
+            "Входит в стандартную комплектацию (инъекционный насос): ручная регулировка давления и расхода",
+            "Входит в стандартную комплектацию (инъекционный насос): индикатор уровня масла, температуры и загрязнения фильтра",
+            "Опция (управление): регулирующий клапан низкого давления",
+            "Опция (управление): плунжерный блок (85, 105 или 120 мм)",
+            "Опция (управление): дистанционное управление",
+            "Опция (управление): регистрация данных давления и расхода",
+            "Управление: ПЛК",
+            "Управление: запираемый главный выключатель, аварийная остановка",
+            "Управление: насос ВКЛ/ВЫКЛ"
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Свяжитесь с нами</a>, чтобы узнать цену, срок поставки или получить помощь в выборе подходящей модели.",
+          "gen": true
+        },
+        {
+          "type": "related",
+          "title": "См. также",
+          "items": [
+            {
+              "href": "/produkter/haeny/injekteringspumpar",
+              "mutual": false
+            },
+            {
+              "href": "/produkter/haeny/injekteringspumpar/zmp-725"
+            },
+            {
+              "href": "/produkter/haeny/injekteringspumpar/zmp-936"
+            }
+          ],
+          "gen": true
+        }
+      ],
+      "published": true
     }
   }
 }

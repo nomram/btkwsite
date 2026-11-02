@@ -1596,6 +1596,1602 @@
           "html": "<a href=\"/kontakta-oss\">Kontakt oss</a> for pris, leveringstid eller hjelp til å velge riktig modell."
         }
       ]
+    },
+    "lt": {
+      "title": "Injektavimo siurbliai (ZMP)",
+      "h1": "Injektavimo siurbliai (ZMP)",
+      "description": "Häny mažai dylantys stūmokliniai siurbliai, vienpusio arba dvipusio veikimo. Slėgis iki 200 bar, debitas iki 13 m³/h ir dalelių dydis iki 8 mm. ZMP 600 serijos siurbliai yra kompaktiški vertikalūs, ZMP 700 serijos…",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "HÄNY",
+          "href": "/produkter/haeny",
+          "width": 832,
+          "height": 143,
+          "src": "/assets/img/haeny-1.webp"
+        },
+        {
+          "type": "columns",
+          "ratio": "40-60",
+          "left": [
+            {
+              "type": "image",
+              "alt": "Injektavimo siurbliai (ZMP)",
+              "width": 1000,
+              "height": 1000,
+              "src": "/assets/img/haeny-tile-zmp.webp"
+            }
+          ],
+          "right": [
+            {
+              "type": "text",
+              "html": "Häny mažai dylantys stūmokliniai siurbliai, vienpusio arba dvipusio veikimo. Slėgis iki 200 bar, debitas iki 13 m³/h ir dalelių dydis iki 8 mm. ZMP 600 serijos siurbliai yra kompaktiški vertikalūs, ZMP 700 serijos – galingesni. Pačioje pabaigoje yra tripleksinis siurblys ZMP 936 didžiausiems debitams: mažas dilimas, pulsacija žemiau 1 % ir aušinimo vandens jungtis nepertraukiamam darbui."
+            },
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "Labai kompaktiškas vertikalus siurblys, taupantis vietą",
+                "Plynai reguliuojami slėgio ir debito ribotuvai",
+                "Patikimas, nereikalaujantis daug priežiūros, patogi prieiga prie dėvimų dalių",
+                "Greitas siurbimo takto eiga praplauna vožtuvus ir apsaugo nuo užsikimšimo",
+                "Aušinimo vandens jungtis nepertraukiamam darbui"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Modeliai",
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 3,
+          "square": true,
+          "more": false,
+          "items": [
+            {
+              "title": "ZMP 610",
+              "image": "/assets/img/haeny-zmp610-tile.webp",
+              "alt": "Injektavimo siurblys ZMP 610",
+              "href": "/produkter/haeny/injekteringspumpar/zmp-610",
+              "bullets": [
+                "Stūmoklio Ø: 65 mm",
+                "Debitas: 1,5 m³/h",
+                "Galia: 5,5 / 6,3 kW"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "ZMP 611",
+              "image": "/assets/img/haeny-zmp611-tile.webp",
+              "alt": "Injektavimo siurblys ZMP 611",
+              "href": "/produkter/haeny/injekteringspumpar/zmp-611",
+              "bullets": [
+                "Stūmoklio Ø: 65 mm",
+                "Debitas: 2 m³/h",
+                "Slėgis: 75 bar"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "ZMP 625",
+              "image": "/assets/img/haeny-zmp625-tile.webp",
+              "alt": "Injektavimo siurblys ZMP 625",
+              "href": "/produkter/haeny/injekteringspumpar/zmp-625",
+              "bullets": [
+                "Stūmoklio Ø: 65 mm",
+                "Debitas: 2 m³/h",
+                "Slėgis: 100 bar"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "ZMP 710",
+              "image": "/assets/img/haeny-zmp710-tile.webp",
+              "alt": "Injektavimo siurblys ZMP 710",
+              "href": "/produkter/haeny/injekteringspumpar/zmp-710",
+              "bullets": [
+                "Stūmoklio Ø: 85 / 105 / 120 mm",
+                "Debitas: 3,9 / 5,5 / 7,5 m³/h",
+                "Slėgis: 100 / 68 / 50 bar"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "ZMP 712",
+              "image": "/assets/img/haeny-zmp712-tile.webp",
+              "alt": "Injektavimo siurblys ZMP 712",
+              "href": "/produkter/haeny/injekteringspumpar/zmp-712",
+              "bullets": [
+                "Stūmoklio Ø: 85 / 105 / 120 mm",
+                "Debitas: 2,4 / 3,8 / 4,9 m³/h",
+                "Slėgis: 88 / 58 / 44 bar"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "ZMP 725",
+              "image": "/assets/img/haeny-zmp725-tile.webp",
+              "alt": "Injektavimo siurblys ZMP 725",
+              "href": "/produkter/haeny/injekteringspumpar/zmp-725",
+              "bullets": [
+                "Stūmoklio Ø: 85 / 105 / 120 mm",
+                "Debitas: 5,9 / 9 / 11,7 m³/h",
+                "Slėgis: 100 / 68 / 50 bar"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "ZMP 726",
+              "image": "/assets/img/haeny-zmp726-tile.webp",
+              "alt": "Injektavimo siurblys ZMP 726",
+              "href": "/produkter/haeny/injekteringspumpar/zmp-726",
+              "bullets": [
+                "Stūmoklio Ø: 85 / 105 / 120 mm",
+                "Debitas: 6,5 / 9,9 / 13 m³/h",
+                "Slėgis: 100 / 68 / 50 bar"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "ZMP 936",
+              "image": "/assets/img/haeny-zmp936-tile.webp",
+              "alt": "Injektavimo siurblys ZMP 936",
+              "href": "/produkter/haeny/injekteringspumpar/zmp-936",
+              "bullets": [
+                "Stūmoklio Ø: 210 mm",
+                "Debitas: 1 000 l/min (60 m³/h)",
+                "Slėgis: 40 bar"
+              ],
+              "width": 1000,
+              "height": 1000
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Naudojimas",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Inkarai, grunto vinys, įtempimo kabeliai, manžetiniai vamzdžiai, uolienų ir kontaktinis injektavimas",
+            "Išankstinis ir papildomas injektavimas, bentonitas vamzdžių stūmimui, užpildymas smulkiu žvyru"
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Modelių palyginimas",
+          "gen": true
+        },
+        {
+          "type": "sizeselect",
+          "label": "Stūmoklio Ø",
+          "all": "Visi",
+          "unit": "mm",
+          "sizes": [
+            85,
+            105,
+            120
+          ],
+          "gen": true
+        },
+        {
+          "type": "table",
+          "header": true,
+          "align": "center",
+          "rows": [
+            [
+              "",
+              "ZMP 610",
+              "ZMP 611",
+              "ZMP 625",
+              "ZMP 710",
+              "ZMP 712",
+              "ZMP 725",
+              "ZMP 726",
+              "ZMP 936"
+            ],
+            [
+              "Stūmoklio Ø",
+              "65 mm",
+              "65 mm",
+              "65 mm",
+              "85 / 105 / 120 mm",
+              "85 / 105 / 120 mm",
+              "85 / 105 / 120 mm",
+              "85 / 105 / 120 mm",
+              "210 mm"
+            ],
+            [
+              "Našumas",
+              "1.5 m³/h",
+              "2 m³/h",
+              "2 m³/h",
+              "3.9 / 5.5 / 7.5 m³/h",
+              "2.4 / 3.8 / 4.9 m³/h",
+              "5.9 / 9 / 11.7 m³/h",
+              "6.5 / 9.9 / 13 m³/h",
+              "-"
+            ],
+            [
+              "Tūris per taktą",
+              "0.82 l",
+              "0.82 l",
+              "0.82 l",
+              "1.4 / 2.1 / 2.8 l",
+              "1.4 / 2.1 / 2.8 l",
+              "1.4 / 2.1 / 2.8 l",
+              "1.4 / 2.1 / 2.8 l",
+              "-"
+            ],
+            [
+              "Maks. dalelių dydis",
+              "5 mm",
+              "5 mm",
+              "5 mm",
+              "8 mm",
+              "8 mm",
+              "8 mm",
+              "8 mm",
+              "8 mm"
+            ],
+            [
+              "Hidraulinis bakas",
+              "52 l",
+              "52 l",
+              "52 l",
+              "140 l",
+              "110 l",
+              "140 l",
+              "240 l",
+              "400 l"
+            ],
+            [
+              "Siurblio modulis",
+              "viengubas",
+              "viengubas",
+              "dvigubas",
+              "viengubas",
+              "viengubas",
+              "dvigubas",
+              "dvigubas",
+              "-"
+            ],
+            [
+              "Aušinimo vandens debitas",
+              "2–3 l/min",
+              "2–3 l/min",
+              "2–3 l/min",
+              "3–4 l/min",
+              "3–4 l/min",
+              "5–6 l/min",
+              "8–10 l/min",
+              "-"
+            ],
+            [
+              "Įtampa",
+              "3x 400/460",
+              "3x 400/460",
+              "3x 400/460",
+              "3x 400/460",
+              "3x 400/460",
+              "3x 400/460",
+              "3x 400/460",
+              "3x 400 V"
+            ],
+            [
+              "Dažnis",
+              "50 / 60 Hz",
+              "50 / 60 Hz",
+              "50 / 60 Hz",
+              "50 / 60 Hz",
+              "50 / 60 Hz",
+              "50 / 60 Hz",
+              "50 / 60 Hz",
+              "50 Hz"
+            ],
+            [
+              "Nominalioji galia",
+              "5.5 / 6.3 kW",
+              "5.5 / 6.3 kW",
+              "5.5 / 6.3 kW",
+              "7.5 / 8.6 kW",
+              "7.5 / 8.5 kW",
+              "9.2 / 10.5 kW",
+              "30 / 36 kW",
+              "-"
+            ],
+            [
+              "Apytikslis svoris",
+              "270 kg",
+              "270 kg",
+              "345 kg",
+              "620 kg",
+              "500 kg",
+              "820 kg",
+              "1,055 kg",
+              "-"
+            ],
+            [
+              "Plotis",
+              "510 mm",
+              "510 mm",
+              "510 mm",
+              "570 mm",
+              "570 mm",
+              "570 mm",
+              "650 mm",
+              "1,997 mm"
+            ],
+            [
+              "Aukštis",
+              "1,410 mm",
+              "1,410 mm",
+              "1,410 mm",
+              "1,478 mm",
+              "1,478 mm",
+              "1,478 mm",
+              "1,478 mm",
+              "2,260 mm"
+            ],
+            [
+              "Ilgis",
+              "758 mm",
+              "758 mm",
+              "886 mm",
+              "1,470 mm",
+              "1,190 mm",
+              "1,470 mm",
+              "1,750 mm",
+              "2,688 mm"
+            ],
+            [
+              "Maks. slėgis",
+              "-",
+              "75 bar",
+              "100 bar",
+              "100 / 68 / 50 bar",
+              "88 / 58 / 44 bar",
+              "100 / 68 / 50 bar",
+              "100 / 68 / 50 bar",
+              "-"
+            ],
+            [
+              "Min. slėgis",
+              "-",
+              "3 bar",
+              "3 bar",
+              "2 / 1.5 / 1 bar",
+              "2.5 / 2 / 1.5 bar",
+              "5 / 4 / 3 bar",
+              "8 / 5 / 4 bar",
+              "-"
+            ]
+          ],
+          "links": [],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Susisiekite su mumis</a> dėl kainos, pristatymo laiko ar pagalbos renkantis tinkamą modelį."
+        }
+      ],
+      "published": true
+    },
+    "lv": {
+      "title": "Injektēšanas sūkņi (ZMP)",
+      "h1": "Injektēšanas sūkņi (ZMP)",
+      "description": "Häny maz nodilstoši virzuļsūkņi, vienpusējas vai divpusējas darbības. Spiediens līdz 200 bar, caurplūde līdz 13 m³/h un daļiņu izmērs līdz 8 mm. ZMP 600 sērija ir kompakti vertikāli sūkņi, ZMP 700 sērija…",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "HÄNY",
+          "href": "/produkter/haeny",
+          "width": 832,
+          "height": 143,
+          "src": "/assets/img/haeny-1.webp"
+        },
+        {
+          "type": "columns",
+          "ratio": "40-60",
+          "left": [
+            {
+              "type": "image",
+              "alt": "Injektēšanas sūkņi (ZMP)",
+              "width": 1000,
+              "height": 1000,
+              "src": "/assets/img/haeny-tile-zmp.webp"
+            }
+          ],
+          "right": [
+            {
+              "type": "text",
+              "html": "Häny maz nodilstoši virzuļsūkņi, vienpusējas vai divpusējas darbības. Spiediens līdz 200 bar, caurplūde līdz 13 m³/h un daļiņu izmērs līdz 8 mm. ZMP 600 sērija ir kompakti vertikāli sūkņi, ZMP 700 sērija ir jaudīgāki. Beigās atrodas tripleksa sūknis ZMP 936 lielākajām caurplūdēm: maz nodilst, pulsācija zem 1 % un dzesēšanas ūdens pieslēgums nepārtrauktai darbībai."
+            },
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "Ļoti kompakts vertikāls sūknis, kas ietaupa vietu",
+                "Bezpakāpju regulējami spiediena un caurplūdes ierobežojumi",
+                "Uzticams, neprasa daudz apkopes, viegla piekļuve nolietojumam pakļautajām detaļām",
+                "Ātrs iesūkšanas gājiens izskalo vārstus un novērš aizsērēšanu",
+                "Dzesēšanas ūdens pieslēgums nepārtrauktai darbībai"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Modeļi",
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 3,
+          "square": true,
+          "more": false,
+          "items": [
+            {
+              "title": "ZMP 610",
+              "image": "/assets/img/haeny-zmp610-tile.webp",
+              "alt": "Injektēšanas sūknis ZMP 610",
+              "href": "/produkter/haeny/injekteringspumpar/zmp-610",
+              "bullets": [
+                "Virzuļa Ø: 65 mm",
+                "Caurplūde: 1,5 m³/h",
+                "Jauda: 5,5 / 6,3 kW"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "ZMP 611",
+              "image": "/assets/img/haeny-zmp611-tile.webp",
+              "alt": "Injektēšanas sūknis ZMP 611",
+              "href": "/produkter/haeny/injekteringspumpar/zmp-611",
+              "bullets": [
+                "Virzuļa Ø: 65 mm",
+                "Caurplūde: 2 m³/h",
+                "Spiediens: 75 bar"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "ZMP 625",
+              "image": "/assets/img/haeny-zmp625-tile.webp",
+              "alt": "Injektēšanas sūknis ZMP 625",
+              "href": "/produkter/haeny/injekteringspumpar/zmp-625",
+              "bullets": [
+                "Virzuļa Ø: 65 mm",
+                "Caurplūde: 2 m³/h",
+                "Spiediens: 100 bar"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "ZMP 710",
+              "image": "/assets/img/haeny-zmp710-tile.webp",
+              "alt": "Injektēšanas sūknis ZMP 710",
+              "href": "/produkter/haeny/injekteringspumpar/zmp-710",
+              "bullets": [
+                "Virzuļa Ø: 85 / 105 / 120 mm",
+                "Caurplūde: 3,9 / 5,5 / 7,5 m³/h",
+                "Spiediens: 100 / 68 / 50 bar"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "ZMP 712",
+              "image": "/assets/img/haeny-zmp712-tile.webp",
+              "alt": "Injektēšanas sūknis ZMP 712",
+              "href": "/produkter/haeny/injekteringspumpar/zmp-712",
+              "bullets": [
+                "Virzuļa Ø: 85 / 105 / 120 mm",
+                "Caurplūde: 2,4 / 3,8 / 4,9 m³/h",
+                "Spiediens: 88 / 58 / 44 bar"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "ZMP 725",
+              "image": "/assets/img/haeny-zmp725-tile.webp",
+              "alt": "Injektēšanas sūknis ZMP 725",
+              "href": "/produkter/haeny/injekteringspumpar/zmp-725",
+              "bullets": [
+                "Virzuļa Ø: 85 / 105 / 120 mm",
+                "Caurplūde: 5,9 / 9 / 11,7 m³/h",
+                "Spiediens: 100 / 68 / 50 bar"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "ZMP 726",
+              "image": "/assets/img/haeny-zmp726-tile.webp",
+              "alt": "Injektēšanas sūknis ZMP 726",
+              "href": "/produkter/haeny/injekteringspumpar/zmp-726",
+              "bullets": [
+                "Virzuļa Ø: 85 / 105 / 120 mm",
+                "Caurplūde: 6,5 / 9,9 / 13 m³/h",
+                "Spiediens: 100 / 68 / 50 bar"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "ZMP 936",
+              "image": "/assets/img/haeny-zmp936-tile.webp",
+              "alt": "Injektēšanas sūknis ZMP 936",
+              "href": "/produkter/haeny/injekteringspumpar/zmp-936",
+              "bullets": [
+                "Virzuļa Ø: 210 mm",
+                "Caurplūde: 1 000 l/min (60 m³/h)",
+                "Spiediens: 40 bar"
+              ],
+              "width": 1000,
+              "height": 1000
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Lietojums",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Enkuri, grunts naglas, nospriegojuma kabeļi, manšešu caurules, iežu un kontaktinjektēšana",
+            "Pirms- un pēcinjektēšana, bentonīts cauruļu iespiešanai, uzpilde ar zirņu grants"
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Modeļu salīdzinājums",
+          "gen": true
+        },
+        {
+          "type": "sizeselect",
+          "label": "Virzuļa Ø",
+          "all": "Visi",
+          "unit": "mm",
+          "sizes": [
+            85,
+            105,
+            120
+          ],
+          "gen": true
+        },
+        {
+          "type": "table",
+          "header": true,
+          "align": "center",
+          "rows": [
+            [
+              "",
+              "ZMP 610",
+              "ZMP 611",
+              "ZMP 625",
+              "ZMP 710",
+              "ZMP 712",
+              "ZMP 725",
+              "ZMP 726",
+              "ZMP 936"
+            ],
+            [
+              "Virzuļa Ø",
+              "65 mm",
+              "65 mm",
+              "65 mm",
+              "85 / 105 / 120 mm",
+              "85 / 105 / 120 mm",
+              "85 / 105 / 120 mm",
+              "85 / 105 / 120 mm",
+              "210 mm"
+            ],
+            [
+              "Ražība",
+              "1.5 m³/h",
+              "2 m³/h",
+              "2 m³/h",
+              "3.9 / 5.5 / 7.5 m³/h",
+              "2.4 / 3.8 / 4.9 m³/h",
+              "5.9 / 9 / 11.7 m³/h",
+              "6.5 / 9.9 / 13 m³/h",
+              "-"
+            ],
+            [
+              "Tilpums gājienā",
+              "0.82 l",
+              "0.82 l",
+              "0.82 l",
+              "1.4 / 2.1 / 2.8 l",
+              "1.4 / 2.1 / 2.8 l",
+              "1.4 / 2.1 / 2.8 l",
+              "1.4 / 2.1 / 2.8 l",
+              "-"
+            ],
+            [
+              "Maks. graudu izmērs",
+              "5 mm",
+              "5 mm",
+              "5 mm",
+              "8 mm",
+              "8 mm",
+              "8 mm",
+              "8 mm",
+              "8 mm"
+            ],
+            [
+              "Hidrauliskā tvertne",
+              "52 l",
+              "52 l",
+              "52 l",
+              "140 l",
+              "110 l",
+              "140 l",
+              "240 l",
+              "400 l"
+            ],
+            [
+              "Sūkņa modulis",
+              "vienkāršs",
+              "vienkāršs",
+              "dubults",
+              "vienkāršs",
+              "vienkāršs",
+              "dubults",
+              "dubults",
+              "-"
+            ],
+            [
+              "Dzesēšanas ūdens plūsma",
+              "2–3 l/min",
+              "2–3 l/min",
+              "2–3 l/min",
+              "3–4 l/min",
+              "3–4 l/min",
+              "5–6 l/min",
+              "8–10 l/min",
+              "-"
+            ],
+            [
+              "Spriegums",
+              "3x 400/460",
+              "3x 400/460",
+              "3x 400/460",
+              "3x 400/460",
+              "3x 400/460",
+              "3x 400/460",
+              "3x 400/460",
+              "3x 400 V"
+            ],
+            [
+              "Frekvence",
+              "50 / 60 Hz",
+              "50 / 60 Hz",
+              "50 / 60 Hz",
+              "50 / 60 Hz",
+              "50 / 60 Hz",
+              "50 / 60 Hz",
+              "50 / 60 Hz",
+              "50 Hz"
+            ],
+            [
+              "Nominālā jauda",
+              "5.5 / 6.3 kW",
+              "5.5 / 6.3 kW",
+              "5.5 / 6.3 kW",
+              "7.5 / 8.6 kW",
+              "7.5 / 8.5 kW",
+              "9.2 / 10.5 kW",
+              "30 / 36 kW",
+              "-"
+            ],
+            [
+              "Aptuvenais svars",
+              "270 kg",
+              "270 kg",
+              "345 kg",
+              "620 kg",
+              "500 kg",
+              "820 kg",
+              "1,055 kg",
+              "-"
+            ],
+            [
+              "Platums",
+              "510 mm",
+              "510 mm",
+              "510 mm",
+              "570 mm",
+              "570 mm",
+              "570 mm",
+              "650 mm",
+              "1,997 mm"
+            ],
+            [
+              "Augstums",
+              "1,410 mm",
+              "1,410 mm",
+              "1,410 mm",
+              "1,478 mm",
+              "1,478 mm",
+              "1,478 mm",
+              "1,478 mm",
+              "2,260 mm"
+            ],
+            [
+              "Garums",
+              "758 mm",
+              "758 mm",
+              "886 mm",
+              "1,470 mm",
+              "1,190 mm",
+              "1,470 mm",
+              "1,750 mm",
+              "2,688 mm"
+            ],
+            [
+              "Maks. spiediens",
+              "-",
+              "75 bar",
+              "100 bar",
+              "100 / 68 / 50 bar",
+              "88 / 58 / 44 bar",
+              "100 / 68 / 50 bar",
+              "100 / 68 / 50 bar",
+              "-"
+            ],
+            [
+              "Min. spiediens",
+              "-",
+              "3 bar",
+              "3 bar",
+              "2 / 1.5 / 1 bar",
+              "2.5 / 2 / 1.5 bar",
+              "5 / 4 / 3 bar",
+              "8 / 5 / 4 bar",
+              "-"
+            ]
+          ],
+          "links": [],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Sazinieties ar mums</a> par cenu, piegādes laiku vai palīdzību pareizā modeļa izvēlē."
+        }
+      ],
+      "published": true
+    },
+    "et": {
+      "title": "Injekteerimispumbad (ZMP)",
+      "h1": "Injekteerimispumbad (ZMP)",
+      "description": "Häny vähese kuluga kolbpumbad, ühe- või kahepoolse toimega. Rõhk kuni 200 bar, vooluhulk kuni 13 m³/h ja osakeste suurus kuni 8 mm. ZMP 600 seeria on kompaktsed püstpumbad, ZMP 700 seeria…",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "HÄNY",
+          "href": "/produkter/haeny",
+          "width": 832,
+          "height": 143,
+          "src": "/assets/img/haeny-1.webp"
+        },
+        {
+          "type": "columns",
+          "ratio": "40-60",
+          "left": [
+            {
+              "type": "image",
+              "alt": "Injekteerimispumbad (ZMP)",
+              "width": 1000,
+              "height": 1000,
+              "src": "/assets/img/haeny-tile-zmp.webp"
+            }
+          ],
+          "right": [
+            {
+              "type": "text",
+              "html": "Häny vähese kuluga kolbpumbad, ühe- või kahepoolse toimega. Rõhk kuni 200 bar, vooluhulk kuni 13 m³/h ja osakeste suurus kuni 8 mm. ZMP 600 seeria on kompaktsed püstpumbad, ZMP 700 seeria on võimsamad. Lõpus on kolmikpump ZMP 936 suurimate vooluhulkade jaoks: vähese kuluga, pulsatsioon alla 1 % ja jahutusvee ühendus pidevaks tööks."
+            },
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "Väga kompaktne püstine pump, mis säästab ruumi",
+                "Sujuvalt reguleeritavad rõhu- ja vooluhulgapiirajad",
+                "Töökindel, vähese hooldusvajadusega, kulumisosadele on lihtne ligipääs",
+                "Kiire imitakt loputab ventiile ja hoiab ära ummistumise",
+                "Jahutusvee ühendus pidevaks tööks"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Mudelid",
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 3,
+          "square": true,
+          "more": false,
+          "items": [
+            {
+              "title": "ZMP 610",
+              "image": "/assets/img/haeny-zmp610-tile.webp",
+              "alt": "Injekteerimispump ZMP 610",
+              "href": "/produkter/haeny/injekteringspumpar/zmp-610",
+              "bullets": [
+                "Kolvi Ø: 65 mm",
+                "Vooluhulk: 1,5 m³/h",
+                "Võimsus: 5,5 / 6,3 kW"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "ZMP 611",
+              "image": "/assets/img/haeny-zmp611-tile.webp",
+              "alt": "Injekteerimispump ZMP 611",
+              "href": "/produkter/haeny/injekteringspumpar/zmp-611",
+              "bullets": [
+                "Kolvi Ø: 65 mm",
+                "Vooluhulk: 2 m³/h",
+                "Rõhk: 75 bar"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "ZMP 625",
+              "image": "/assets/img/haeny-zmp625-tile.webp",
+              "alt": "Injekteerimispump ZMP 625",
+              "href": "/produkter/haeny/injekteringspumpar/zmp-625",
+              "bullets": [
+                "Kolvi Ø: 65 mm",
+                "Vooluhulk: 2 m³/h",
+                "Rõhk: 100 bar"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "ZMP 710",
+              "image": "/assets/img/haeny-zmp710-tile.webp",
+              "alt": "Injekteerimispump ZMP 710",
+              "href": "/produkter/haeny/injekteringspumpar/zmp-710",
+              "bullets": [
+                "Kolvi Ø: 85 / 105 / 120 mm",
+                "Vooluhulk: 3,9 / 5,5 / 7,5 m³/h",
+                "Rõhk: 100 / 68 / 50 bar"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "ZMP 712",
+              "image": "/assets/img/haeny-zmp712-tile.webp",
+              "alt": "Injekteerimispump ZMP 712",
+              "href": "/produkter/haeny/injekteringspumpar/zmp-712",
+              "bullets": [
+                "Kolvi Ø: 85 / 105 / 120 mm",
+                "Vooluhulk: 2,4 / 3,8 / 4,9 m³/h",
+                "Rõhk: 88 / 58 / 44 bar"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "ZMP 725",
+              "image": "/assets/img/haeny-zmp725-tile.webp",
+              "alt": "Injekteerimispump ZMP 725",
+              "href": "/produkter/haeny/injekteringspumpar/zmp-725",
+              "bullets": [
+                "Kolvi Ø: 85 / 105 / 120 mm",
+                "Vooluhulk: 5,9 / 9 / 11,7 m³/h",
+                "Rõhk: 100 / 68 / 50 bar"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "ZMP 726",
+              "image": "/assets/img/haeny-zmp726-tile.webp",
+              "alt": "Injekteerimispump ZMP 726",
+              "href": "/produkter/haeny/injekteringspumpar/zmp-726",
+              "bullets": [
+                "Kolvi Ø: 85 / 105 / 120 mm",
+                "Vooluhulk: 6,5 / 9,9 / 13 m³/h",
+                "Rõhk: 100 / 68 / 50 bar"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "ZMP 936",
+              "image": "/assets/img/haeny-zmp936-tile.webp",
+              "alt": "Injekteerimispump ZMP 936",
+              "href": "/produkter/haeny/injekteringspumpar/zmp-936",
+              "bullets": [
+                "Kolvi Ø: 210 mm",
+                "Vooluhulk: 1 000 l/min (60 m³/h)",
+                "Rõhk: 40 bar"
+              ],
+              "width": 1000,
+              "height": 1000
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Kasutus",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Ankrud, mullanaelad, pingestuskaablid, mansetttorud, kalju- ja kontaktinjekteerimine",
+            "Eel- ja järelinjekteerimine, bentoniit torude survetamisel, täide hernekruusaga"
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Mudelite võrdlus",
+          "gen": true
+        },
+        {
+          "type": "sizeselect",
+          "label": "Kolvi Ø",
+          "all": "Kõik",
+          "unit": "mm",
+          "sizes": [
+            85,
+            105,
+            120
+          ],
+          "gen": true
+        },
+        {
+          "type": "table",
+          "header": true,
+          "align": "center",
+          "rows": [
+            [
+              "",
+              "ZMP 610",
+              "ZMP 611",
+              "ZMP 625",
+              "ZMP 710",
+              "ZMP 712",
+              "ZMP 725",
+              "ZMP 726",
+              "ZMP 936"
+            ],
+            [
+              "Kolvi Ø",
+              "65 mm",
+              "65 mm",
+              "65 mm",
+              "85 / 105 / 120 mm",
+              "85 / 105 / 120 mm",
+              "85 / 105 / 120 mm",
+              "85 / 105 / 120 mm",
+              "210 mm"
+            ],
+            [
+              "Jõudlus",
+              "1.5 m³/h",
+              "2 m³/h",
+              "2 m³/h",
+              "3.9 / 5.5 / 7.5 m³/h",
+              "2.4 / 3.8 / 4.9 m³/h",
+              "5.9 / 9 / 11.7 m³/h",
+              "6.5 / 9.9 / 13 m³/h",
+              "-"
+            ],
+            [
+              "Maht takti kohta",
+              "0.82 l",
+              "0.82 l",
+              "0.82 l",
+              "1.4 / 2.1 / 2.8 l",
+              "1.4 / 2.1 / 2.8 l",
+              "1.4 / 2.1 / 2.8 l",
+              "1.4 / 2.1 / 2.8 l",
+              "-"
+            ],
+            [
+              "Maks. terasuurus",
+              "5 mm",
+              "5 mm",
+              "5 mm",
+              "8 mm",
+              "8 mm",
+              "8 mm",
+              "8 mm",
+              "8 mm"
+            ],
+            [
+              "Hüdraulikapaak",
+              "52 l",
+              "52 l",
+              "52 l",
+              "140 l",
+              "110 l",
+              "140 l",
+              "240 l",
+              "400 l"
+            ],
+            [
+              "Pumbamoodul",
+              "üksik",
+              "üksik",
+              "kahekordne",
+              "üksik",
+              "üksik",
+              "kahekordne",
+              "kahekordne",
+              "-"
+            ],
+            [
+              "Jahutusvee vooluhulk",
+              "2–3 l/min",
+              "2–3 l/min",
+              "2–3 l/min",
+              "3–4 l/min",
+              "3–4 l/min",
+              "5–6 l/min",
+              "8–10 l/min",
+              "-"
+            ],
+            [
+              "Pinge",
+              "3x 400/460",
+              "3x 400/460",
+              "3x 400/460",
+              "3x 400/460",
+              "3x 400/460",
+              "3x 400/460",
+              "3x 400/460",
+              "3x 400 V"
+            ],
+            [
+              "Sagedus",
+              "50 / 60 Hz",
+              "50 / 60 Hz",
+              "50 / 60 Hz",
+              "50 / 60 Hz",
+              "50 / 60 Hz",
+              "50 / 60 Hz",
+              "50 / 60 Hz",
+              "50 Hz"
+            ],
+            [
+              "Nimivõimsus",
+              "5.5 / 6.3 kW",
+              "5.5 / 6.3 kW",
+              "5.5 / 6.3 kW",
+              "7.5 / 8.6 kW",
+              "7.5 / 8.5 kW",
+              "9.2 / 10.5 kW",
+              "30 / 36 kW",
+              "-"
+            ],
+            [
+              "Ligikaudne kaal",
+              "270 kg",
+              "270 kg",
+              "345 kg",
+              "620 kg",
+              "500 kg",
+              "820 kg",
+              "1,055 kg",
+              "-"
+            ],
+            [
+              "Laius",
+              "510 mm",
+              "510 mm",
+              "510 mm",
+              "570 mm",
+              "570 mm",
+              "570 mm",
+              "650 mm",
+              "1,997 mm"
+            ],
+            [
+              "Kõrgus",
+              "1,410 mm",
+              "1,410 mm",
+              "1,410 mm",
+              "1,478 mm",
+              "1,478 mm",
+              "1,478 mm",
+              "1,478 mm",
+              "2,260 mm"
+            ],
+            [
+              "Pikkus",
+              "758 mm",
+              "758 mm",
+              "886 mm",
+              "1,470 mm",
+              "1,190 mm",
+              "1,470 mm",
+              "1,750 mm",
+              "2,688 mm"
+            ],
+            [
+              "Maks. rõhk",
+              "-",
+              "75 bar",
+              "100 bar",
+              "100 / 68 / 50 bar",
+              "88 / 58 / 44 bar",
+              "100 / 68 / 50 bar",
+              "100 / 68 / 50 bar",
+              "-"
+            ],
+            [
+              "Min. rõhk",
+              "-",
+              "3 bar",
+              "3 bar",
+              "2 / 1.5 / 1 bar",
+              "2.5 / 2 / 1.5 bar",
+              "5 / 4 / 3 bar",
+              "8 / 5 / 4 bar",
+              "-"
+            ]
+          ],
+          "links": [],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Võta meiega ühendust</a> hinna, tarneaja või õige mudeli valikul abi saamiseks."
+        }
+      ],
+      "published": true
+    },
+    "ru": {
+      "title": "Инъекционные насосы (ZMP)",
+      "h1": "Инъекционные насосы (ZMP)",
+      "description": "Плунжерные насосы Häny с низким износом, одностороннего или двустороннего действия. Давление до 200 бар, расход до 13 м³/ч и размер частиц до 8 мм. Серия ZMP 600 — компактные вертикальные насосы, серия ZMP 700…",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "HÄNY",
+          "href": "/produkter/haeny",
+          "width": 832,
+          "height": 143,
+          "src": "/assets/img/haeny-1.webp"
+        },
+        {
+          "type": "columns",
+          "ratio": "40-60",
+          "left": [
+            {
+              "type": "image",
+              "alt": "Инъекционные насосы (ZMP)",
+              "width": 1000,
+              "height": 1000,
+              "src": "/assets/img/haeny-tile-zmp.webp"
+            }
+          ],
+          "right": [
+            {
+              "type": "text",
+              "html": "Плунжерные насосы Häny с низким износом, одностороннего или двустороннего действия. Давление до 200 бар, расход до 13 м³/ч и размер частиц до 8 мм. Серия ZMP 600 — компактные вертикальные насосы, серия ZMP 700 — более мощные. В конце находится трёхплунжерный насос ZMP 936 для самых больших расходов: низкий износ, пульсация менее 1 % и подключение охлаждающей воды для непрерывной работы."
+            },
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "Очень компактный вертикальный насос, экономящий место",
+                "Плавно регулируемые ограничения давления и расхода",
+                "Надёжный, малообслуживаемый, лёгкий доступ к изнашиваемым деталям",
+                "Быстрый ход всасывания промывает клапаны и предотвращает засорение",
+                "Подключение охлаждающей воды для непрерывной работы"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Модели",
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 3,
+          "square": true,
+          "more": false,
+          "items": [
+            {
+              "title": "ZMP 610",
+              "image": "/assets/img/haeny-zmp610-tile.webp",
+              "alt": "Инъекционный насос ZMP 610",
+              "href": "/produkter/haeny/injekteringspumpar/zmp-610",
+              "bullets": [
+                "Ø плунжера: 65 мм",
+                "Расход: 1,5 м³/ч",
+                "Мощность: 5,5 / 6,3 кВт"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "ZMP 611",
+              "image": "/assets/img/haeny-zmp611-tile.webp",
+              "alt": "Инъекционный насос ZMP 611",
+              "href": "/produkter/haeny/injekteringspumpar/zmp-611",
+              "bullets": [
+                "Ø плунжера: 65 мм",
+                "Расход: 2 м³/ч",
+                "Давление: 75 бар"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "ZMP 625",
+              "image": "/assets/img/haeny-zmp625-tile.webp",
+              "alt": "Инъекционный насос ZMP 625",
+              "href": "/produkter/haeny/injekteringspumpar/zmp-625",
+              "bullets": [
+                "Ø плунжера: 65 мм",
+                "Расход: 2 м³/ч",
+                "Давление: 100 бар"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "ZMP 710",
+              "image": "/assets/img/haeny-zmp710-tile.webp",
+              "alt": "Инъекционный насос ZMP 710",
+              "href": "/produkter/haeny/injekteringspumpar/zmp-710",
+              "bullets": [
+                "Ø плунжера: 85 / 105 / 120 мм",
+                "Расход: 3,9 / 5,5 / 7,5 м³/ч",
+                "Давление: 100 / 68 / 50 бар"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "ZMP 712",
+              "image": "/assets/img/haeny-zmp712-tile.webp",
+              "alt": "Инъекционный насос ZMP 712",
+              "href": "/produkter/haeny/injekteringspumpar/zmp-712",
+              "bullets": [
+                "Ø плунжера: 85 / 105 / 120 мм",
+                "Расход: 2,4 / 3,8 / 4,9 м³/ч",
+                "Давление: 88 / 58 / 44 бар"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "ZMP 725",
+              "image": "/assets/img/haeny-zmp725-tile.webp",
+              "alt": "Инъекционный насос ZMP 725",
+              "href": "/produkter/haeny/injekteringspumpar/zmp-725",
+              "bullets": [
+                "Ø плунжера: 85 / 105 / 120 мм",
+                "Расход: 5,9 / 9 / 11,7 м³/ч",
+                "Давление: 100 / 68 / 50 бар"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "ZMP 726",
+              "image": "/assets/img/haeny-zmp726-tile.webp",
+              "alt": "Инъекционный насос ZMP 726",
+              "href": "/produkter/haeny/injekteringspumpar/zmp-726",
+              "bullets": [
+                "Ø плунжера: 85 / 105 / 120 мм",
+                "Расход: 6,5 / 9,9 / 13 м³/ч",
+                "Давление: 100 / 68 / 50 бар"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "ZMP 936",
+              "image": "/assets/img/haeny-zmp936-tile.webp",
+              "alt": "Инъекционный насос ZMP 936",
+              "href": "/produkter/haeny/injekteringspumpar/zmp-936",
+              "bullets": [
+                "Ø плунжера: 210 мм",
+                "Расход: 1 000 л/мин (60 м³/ч)",
+                "Давление: 40 бар"
+              ],
+              "width": 1000,
+              "height": 1000
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Применение",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Анкеры, грунтовые гвозди, напрягаемые тросы, манжетные трубы, цементация скальных пород и контактная инъекция",
+            "Предварительное и последующее инъектирование, бентонит при продавливании труб, заполнение мелким гравием"
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Сравнение моделей",
+          "gen": true
+        },
+        {
+          "type": "sizeselect",
+          "label": "Ø плунжера",
+          "all": "Все",
+          "unit": "mm",
+          "sizes": [
+            85,
+            105,
+            120
+          ],
+          "gen": true
+        },
+        {
+          "type": "table",
+          "header": true,
+          "align": "center",
+          "rows": [
+            [
+              "",
+              "ZMP 610",
+              "ZMP 611",
+              "ZMP 625",
+              "ZMP 710",
+              "ZMP 712",
+              "ZMP 725",
+              "ZMP 726",
+              "ZMP 936"
+            ],
+            [
+              "Ø плунжера",
+              "65 mm",
+              "65 mm",
+              "65 mm",
+              "85 / 105 / 120 mm",
+              "85 / 105 / 120 mm",
+              "85 / 105 / 120 mm",
+              "85 / 105 / 120 mm",
+              "210 mm"
+            ],
+            [
+              "Производительность",
+              "1.5 m³/h",
+              "2 m³/h",
+              "2 m³/h",
+              "3.9 / 5.5 / 7.5 m³/h",
+              "2.4 / 3.8 / 4.9 m³/h",
+              "5.9 / 9 / 11.7 m³/h",
+              "6.5 / 9.9 / 13 m³/h",
+              "-"
+            ],
+            [
+              "Объём за ход",
+              "0.82 l",
+              "0.82 l",
+              "0.82 l",
+              "1.4 / 2.1 / 2.8 l",
+              "1.4 / 2.1 / 2.8 l",
+              "1.4 / 2.1 / 2.8 l",
+              "1.4 / 2.1 / 2.8 l",
+              "-"
+            ],
+            [
+              "Макс. размер зерна",
+              "5 mm",
+              "5 mm",
+              "5 mm",
+              "8 mm",
+              "8 mm",
+              "8 mm",
+              "8 mm",
+              "8 mm"
+            ],
+            [
+              "Гидробак",
+              "52 l",
+              "52 l",
+              "52 l",
+              "140 l",
+              "110 l",
+              "140 l",
+              "240 l",
+              "400 l"
+            ],
+            [
+              "Насосный модуль",
+              "одинарный",
+              "одинарный",
+              "двойной",
+              "одинарный",
+              "одинарный",
+              "двойной",
+              "двойной",
+              "-"
+            ],
+            [
+              "Расход охлаждающей воды",
+              "2–3 l/min",
+              "2–3 l/min",
+              "2–3 l/min",
+              "3–4 l/min",
+              "3–4 l/min",
+              "5–6 l/min",
+              "8–10 l/min",
+              "-"
+            ],
+            [
+              "Напряжение",
+              "3x 400/460",
+              "3x 400/460",
+              "3x 400/460",
+              "3x 400/460",
+              "3x 400/460",
+              "3x 400/460",
+              "3x 400/460",
+              "3x 400 V"
+            ],
+            [
+              "Частота",
+              "50 / 60 Hz",
+              "50 / 60 Hz",
+              "50 / 60 Hz",
+              "50 / 60 Hz",
+              "50 / 60 Hz",
+              "50 / 60 Hz",
+              "50 / 60 Hz",
+              "50 Hz"
+            ],
+            [
+              "Номинальная мощность",
+              "5.5 / 6.3 kW",
+              "5.5 / 6.3 kW",
+              "5.5 / 6.3 kW",
+              "7.5 / 8.6 kW",
+              "7.5 / 8.5 kW",
+              "9.2 / 10.5 kW",
+              "30 / 36 kW",
+              "-"
+            ],
+            [
+              "Ориентировочная масса",
+              "270 kg",
+              "270 kg",
+              "345 kg",
+              "620 kg",
+              "500 kg",
+              "820 kg",
+              "1,055 kg",
+              "-"
+            ],
+            [
+              "Ширина",
+              "510 mm",
+              "510 mm",
+              "510 mm",
+              "570 mm",
+              "570 mm",
+              "570 mm",
+              "650 mm",
+              "1,997 mm"
+            ],
+            [
+              "Высота",
+              "1,410 mm",
+              "1,410 mm",
+              "1,410 mm",
+              "1,478 mm",
+              "1,478 mm",
+              "1,478 mm",
+              "1,478 mm",
+              "2,260 mm"
+            ],
+            [
+              "Длина",
+              "758 mm",
+              "758 mm",
+              "886 mm",
+              "1,470 mm",
+              "1,190 mm",
+              "1,470 mm",
+              "1,750 mm",
+              "2,688 mm"
+            ],
+            [
+              "Макс. давление",
+              "-",
+              "75 bar",
+              "100 bar",
+              "100 / 68 / 50 bar",
+              "88 / 58 / 44 bar",
+              "100 / 68 / 50 bar",
+              "100 / 68 / 50 bar",
+              "-"
+            ],
+            [
+              "Мин. давление",
+              "-",
+              "3 bar",
+              "3 bar",
+              "2 / 1.5 / 1 bar",
+              "2.5 / 2 / 1.5 bar",
+              "5 / 4 / 3 bar",
+              "8 / 5 / 4 bar",
+              "-"
+            ]
+          ],
+          "links": [],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Свяжитесь с нами</a>, чтобы узнать цену, срок поставки или получить помощь в выборе подходящей модели."
+        }
+      ],
+      "published": true
     }
   }
 }

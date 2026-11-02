@@ -462,6 +462,462 @@
         }
       ],
       "published": true
+    },
+    "lt": {
+      "title": "MPH",
+      "h1": "MPH",
+      "description": "MPH yra kompaktiška ir universali gręžimo platforma, užtikrinanti galią ir tikslumą net sunkiausiai pasiekiamose darbo vietose. Vyresnysis MP260 brolis…",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "TEI Rock Drills logotipas",
+          "href": "/produkter/tei",
+          "width": 1920,
+          "height": 1117,
+          "src": "/assets/img/tei-2.webp"
+        },
+        {
+          "type": "image",
+          "alt": "MPH: 2 paveikslėlis",
+          "width": 409,
+          "height": 470,
+          "src": "/assets/img/tei-borrmaster-mph-2.webp"
+        },
+        {
+          "type": "text",
+          "html": "MPH yra kompaktiška ir universali gręžimo platforma, užtikrinanti galią ir tikslumą net sunkiausiai pasiekiamose darbo vietose. Vyresnysis <a href=\"/produkter/tei/borrmaster/mp260\">MP260</a> brolis užtikrina didesnį našumą sudėtingesniems darbams."
+        },
+        {
+          "type": "text",
+          "html": "Dėl TEI novatoriškos konstrukcijos ir lengvų komponentų ji idealiai tinka mikropoliams, tuščiavidurėms štangoms (hollow bar) ir inkaravimui sudėtingoje aplinkoje."
+        },
+        {
+          "type": "text",
+          "html": "Ši gręžimo platforma sujungia judrumą, ilgaamžiškumą ir didelį našumą, todėl natūraliai tinka rangovams, norintiems optimizuoti ir laiką, ir rezultatus. MPH sukurtas sunkiems iššūkiams, užtikrina efektyvumą ir pelningumą kiekviename projekte."
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Susisiekite su mumis</a> dėl daugiau informacijos."
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Produkto lapas",
+          "href": "/assets/docs/tei-borrmaster-mph-broschyr-eng.pdf",
+          "driveId": "19dqvkcPDB2fDD5pLN5Ntis0m3cYUDAxc"
+        },
+        {
+          "type": "datasheet",
+          "title": "Techniniai duomenys",
+          "note": "TEI techniniai duomenys numato 40 % hidraulinės galios nuostolių.",
+          "tagline": "Nešiojama gręžimo sistema",
+          "intro": [
+            "MPH nešiojamoji gręžimo sistema pakelia gręžimą ankštose erdvėse į naują lygį. MPH įkvėpimo sėmėsi iš rankiniu būdu nešiojamos MP sistemos ir sujungė jį su naujai sukurtu SCF padavimu.",
+            "MPH yra tarp MP ir PD gręžimo sistemų ir užtikrina stipresnį padavimą nei MP su ACF padavimu, taip pat leidžia naudoti ir „300“, ir „200“ serijų gręžimo galvutes, todėl MPH yra universaliausia nešiojama gręžimo sistema rinkoje."
+          ],
+          "groups": [
+            {
+              "title": "Specifikacijos",
+              "rows": [
+                {
+                  "label": "Traukos jėga",
+                  "metric": "11 121 N"
+                },
+                {
+                  "label": "Gręžimo eiga (SCF5)",
+                  "metric": "2 m"
+                },
+                {
+                  "label": "Svoris",
+                  "metric": "435 kg"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "alt": "MPH: 3 paveikslėlis",
+          "width": 1920,
+          "height": 1100,
+          "src": "/assets/img/tei-borrmaster-mph-3.webp"
+        },
+        {
+          "type": "related",
+          "title": "Tinkami viršutinio smūgio plaktukai",
+          "items": [
+            {
+              "href": "/produkter/tei/topphammare/te260"
+            },
+            {
+              "href": "/produkter/tei/topphammare/te260ht"
+            },
+            {
+              "href": "/produkter/tei/topphammare/te326"
+            },
+            {
+              "href": "/produkter/tei/topphammare/te360"
+            }
+          ],
+          "compat": true
+        },
+        {
+          "type": "related",
+          "title": "Tinkamos sukamosios galvutės",
+          "items": [
+            {
+              "href": "/produkter/tei/rotationshammare/rds250"
+            },
+            {
+              "href": "/produkter/tei/rotationshammare/rds350"
+            }
+          ],
+          "compat": true
+        }
+      ],
+      "published": true
+    },
+    "lv": {
+      "title": "MPH",
+      "h1": "MPH",
+      "description": "MPH ir kompakta un daudzpusīga urbšanas platforma, kas nodrošina jaudu un precizitāti pat visgrūtāk pieejamajās darba vietās. MP260 vecākais brālis…",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "TEI Rock Drills logotips",
+          "href": "/produkter/tei",
+          "width": 1920,
+          "height": 1117,
+          "src": "/assets/img/tei-2.webp"
+        },
+        {
+          "type": "image",
+          "alt": "MPH: 2. attēls",
+          "width": 409,
+          "height": 470,
+          "src": "/assets/img/tei-borrmaster-mph-2.webp"
+        },
+        {
+          "type": "text",
+          "html": "MPH ir kompakta un daudzpusīga urbšanas platforma, kas nodrošina jaudu un precizitāti pat visgrūtāk pieejamajās darba vietās. <a href=\"/produkter/tei/borrmaster/mp260\">MP260</a> vecākais brālis nodrošina lielāku veiktspēju prasīgākiem darbiem."
+        },
+        {
+          "type": "text",
+          "html": "Pateicoties TEI novatoriskajam dizainam un vieglajiem komponentiem, tā ir ideāla mikropāļu, dobo stieņu un enkurošanas darbiem sarežģītā vidē."
+        },
+        {
+          "type": "text",
+          "html": "Šī urbšanas platforma apvieno veiklību, izturību un augstu veiktspēju, padarot to par dabisku izvēli būvuzņēmējiem, kas vēlas optimizēt gan laiku, gan rezultātus. MPH ir būvēts, lai tiktu galā ar sarežģītiem izaicinājumiem, un nodrošina efektivitāti un rentabilitāti katrā projektā."
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Sazinieties ar mums</a>, lai uzzinātu vairāk."
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Produkta lapa",
+          "href": "/assets/docs/tei-borrmaster-mph-broschyr-eng.pdf",
+          "driveId": "19dqvkcPDB2fDD5pLN5Ntis0m3cYUDAxc"
+        },
+        {
+          "type": "datasheet",
+          "title": "Tehniskie dati",
+          "note": "TEI tehniskie dati paredz 40 % hidrauliskās jaudas zudumu.",
+          "tagline": "Pārnēsājama urbšanas sistēma",
+          "intro": [
+            "MPH pārnēsājamā urbšanas sistēma paceļ urbšanu ierobežotās telpās jaunā līmenī. MPH smēlās iedvesmu no ar roku nēsājamās MP sistēmas, apvienojot to ar jaunizstrādāto SCF padevi.",
+            "MPH atrodas starp MP un PD urbšanas sistēmām un nodrošina jaudīgāku padevi nekā MP ar ACF padevi, kā arī ļauj izmantot gan «300», gan «200» sērijas urbšanas galvas, padarot MPH par tirgū daudzpusīgāko pārnēsājamo urbšanas sistēmu."
+          ],
+          "groups": [
+            {
+              "title": "Specifikācijas",
+              "rows": [
+                {
+                  "label": "Vilkme",
+                  "metric": "11 121 N"
+                },
+                {
+                  "label": "Urbšanas gājiens (SCF5)",
+                  "metric": "2 m"
+                },
+                {
+                  "label": "Svars",
+                  "metric": "435 kg"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "alt": "MPH: 3. attēls",
+          "width": 1920,
+          "height": 1100,
+          "src": "/assets/img/tei-borrmaster-mph-3.webp"
+        },
+        {
+          "type": "related",
+          "title": "Piemērotie augšējā āmura urbji",
+          "items": [
+            {
+              "href": "/produkter/tei/topphammare/te260"
+            },
+            {
+              "href": "/produkter/tei/topphammare/te260ht"
+            },
+            {
+              "href": "/produkter/tei/topphammare/te326"
+            },
+            {
+              "href": "/produkter/tei/topphammare/te360"
+            }
+          ],
+          "compat": true
+        },
+        {
+          "type": "related",
+          "title": "Piemērotās rotācijas galvas",
+          "items": [
+            {
+              "href": "/produkter/tei/rotationshammare/rds250"
+            },
+            {
+              "href": "/produkter/tei/rotationshammare/rds350"
+            }
+          ],
+          "compat": true
+        }
+      ],
+      "published": true
+    },
+    "et": {
+      "title": "MPH",
+      "h1": "MPH",
+      "description": "MPH on kompaktne ja mitmekülgne puurimisplatvorm, mis pakub võimsust ja täpsust isegi kõige raskemini ligipääsetavatel tööpaikadel. MP260 vanem vend…",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "TEI Rock Drills logo",
+          "href": "/produkter/tei",
+          "width": 1920,
+          "height": 1117,
+          "src": "/assets/img/tei-2.webp"
+        },
+        {
+          "type": "image",
+          "alt": "MPH: pilt 2",
+          "width": 409,
+          "height": 470,
+          "src": "/assets/img/tei-borrmaster-mph-2.webp"
+        },
+        {
+          "type": "text",
+          "html": "MPH on kompaktne ja mitmekülgne puurimisplatvorm, mis pakub võimsust ja täpsust isegi kõige raskemini ligipääsetavatel tööpaikadel. <a href=\"/produkter/tei/borrmaster/mp260\">MP260</a> vanem vend pakub rohkem jõudlust nõudlikumateks töödeks."
+        },
+        {
+          "type": "text",
+          "html": "TEI uuendusliku disaini ja kergete komponentide tõttu sobib see ideaalselt mikrovaiade, õõnesvarraste ja ankurdamise jaoks keerulises keskkonnas."
+        },
+        {
+          "type": "text",
+          "html": "See puurimisplatvorm ühendab kiire liikuvuse, vastupidavuse ja kõrge jõudluse, muutes selle loomulikuks valikuks töövõtjatele, kes soovivad optimeerida nii aega kui ka tulemusi. MPH on ehitatud raskete väljakutsetega toimetulekuks ning tagab tõhususe ja tasuvuse igas projektis."
+        },
+        {
+          "type": "text",
+          "html": "Lisateabe saamiseks <a href=\"/kontakta-oss\">võta meiega ühendust</a>."
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Tootleht",
+          "href": "/assets/docs/tei-borrmaster-mph-broschyr-eng.pdf",
+          "driveId": "19dqvkcPDB2fDD5pLN5Ntis0m3cYUDAxc"
+        },
+        {
+          "type": "datasheet",
+          "title": "Tehnilised andmed",
+          "note": "TEI tehnilised andmed eeldavad 40 % hüdrauliivõimsuse kadu.",
+          "tagline": "Kantav puurimissüsteem",
+          "intro": [
+            "MPH kantav puurimissüsteem viib puurimise piiratud ruumides uuele tasemele. MPH sai inspiratsiooni käsitsi kantavast MP-süsteemist, kombineerituna uuesti projekteeritud SCF-etteandega.",
+            "MPH asub MP ja PD puurimissüsteemide vahel ning pakub tugevamat etteannet kui ACF-etteandega MP, võimaldades kasutada nii „300“ kui ka „200“ seeria puurimispäid, mistõttu on MPH turu mitmekülgseim kantav puurimissüsteem."
+          ],
+          "groups": [
+            {
+              "title": "Tehnilised andmed",
+              "rows": [
+                {
+                  "label": "Tõmbejõud",
+                  "metric": "11 121 N"
+                },
+                {
+                  "label": "Puurimiskäik (SCF5)",
+                  "metric": "2 m"
+                },
+                {
+                  "label": "Kaal",
+                  "metric": "435 kg"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "alt": "MPH: pilt 3",
+          "width": 1920,
+          "height": 1100,
+          "src": "/assets/img/tei-borrmaster-mph-3.webp"
+        },
+        {
+          "type": "related",
+          "title": "Sobivad ülavasarad",
+          "items": [
+            {
+              "href": "/produkter/tei/topphammare/te260"
+            },
+            {
+              "href": "/produkter/tei/topphammare/te260ht"
+            },
+            {
+              "href": "/produkter/tei/topphammare/te326"
+            },
+            {
+              "href": "/produkter/tei/topphammare/te360"
+            }
+          ],
+          "compat": true
+        },
+        {
+          "type": "related",
+          "title": "Sobivad pöörlemispead",
+          "items": [
+            {
+              "href": "/produkter/tei/rotationshammare/rds250"
+            },
+            {
+              "href": "/produkter/tei/rotationshammare/rds350"
+            }
+          ],
+          "compat": true
+        }
+      ],
+      "published": true
+    },
+    "ru": {
+      "title": "MPH",
+      "h1": "MPH",
+      "description": "MPH — компактная и универсальная буровая платформа, обеспечивающая мощность и точность даже на самых труднодоступных рабочих площадках. Старший брат MP260…",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Логотип TEI Rock Drills",
+          "href": "/produkter/tei",
+          "width": 1920,
+          "height": 1117,
+          "src": "/assets/img/tei-2.webp"
+        },
+        {
+          "type": "image",
+          "alt": "MPH: изображение 2",
+          "width": 409,
+          "height": 470,
+          "src": "/assets/img/tei-borrmaster-mph-2.webp"
+        },
+        {
+          "type": "text",
+          "html": "MPH — компактная и универсальная буровая платформа, обеспечивающая мощность и точность даже на самых труднодоступных рабочих площадках. Старший брат <a href=\"/produkter/tei/borrmaster/mp260\">MP260</a>, она обеспечивает более высокую производительность для более сложных задач."
+        },
+        {
+          "type": "text",
+          "html": "Благодаря инновационной конструкции TEI и лёгким компонентам она идеально подходит для микросвай, полых штанг и анкеровки в сложных условиях."
+        },
+        {
+          "type": "text",
+          "html": "Эта буровая платформа сочетает манёвренность, долговечность и высокую производительность, что делает её естественным выбором для подрядчиков, которые хотят оптимизировать и время, и результат. MPH создан для решения трудных задач и обеспечивает эффективность и рентабельность в каждом проекте."
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Свяжитесь с нами</a> для получения дополнительной информации."
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Технический лист",
+          "href": "/assets/docs/tei-borrmaster-mph-broschyr-eng.pdf",
+          "driveId": "19dqvkcPDB2fDD5pLN5Ntis0m3cYUDAxc"
+        },
+        {
+          "type": "datasheet",
+          "title": "Технические данные",
+          "note": "Технические данные TEI предполагают потери гидравлической мощности 40 %.",
+          "tagline": "Переносная буровая система",
+          "intro": [
+            "Переносная буровая система MPH выводит бурение в стеснённых условиях на новый уровень. MPH вдохновлена переносной системой MP в сочетании с заново разработанной подачей SCF.",
+            "MPH занимает место между системами бурения MP и PD и обеспечивает более мощную подачу, чем MP с подачей ACF, а также позволяет использовать буровые головки как серии «300», так и серии «200», что делает MPH самой универсальной переносной буровой системой на рынке."
+          ],
+          "groups": [
+            {
+              "title": "Спецификации",
+              "rows": [
+                {
+                  "label": "Тяговое усилие",
+                  "metric": "11 121 N"
+                },
+                {
+                  "label": "Ход бурения (SCF5)",
+                  "metric": "2 m"
+                },
+                {
+                  "label": "Масса",
+                  "metric": "435 kg"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "alt": "MPH: изображение 3",
+          "width": 1920,
+          "height": 1100,
+          "src": "/assets/img/tei-borrmaster-mph-3.webp"
+        },
+        {
+          "type": "related",
+          "title": "Подходящие верхние перфораторы",
+          "items": [
+            {
+              "href": "/produkter/tei/topphammare/te260"
+            },
+            {
+              "href": "/produkter/tei/topphammare/te260ht"
+            },
+            {
+              "href": "/produkter/tei/topphammare/te326"
+            },
+            {
+              "href": "/produkter/tei/topphammare/te360"
+            }
+          ],
+          "compat": true
+        },
+        {
+          "type": "related",
+          "title": "Подходящие вращатели",
+          "items": [
+            {
+              "href": "/produkter/tei/rotationshammare/rds250"
+            },
+            {
+              "href": "/produkter/tei/rotationshammare/rds350"
+            }
+          ],
+          "compat": true
+        }
+      ],
+      "published": true
     }
   },
   "source": {

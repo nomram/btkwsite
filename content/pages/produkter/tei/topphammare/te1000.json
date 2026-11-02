@@ -406,6 +406,406 @@
         }
       ],
       "published": true
+    },
+    "lt": {
+      "title": "TE1000",
+      "h1": "TE1000",
+      "description": "TE1000 – 3 akumuliatoriai sklandžiam veikimui; trumpiausias ir žemiausias profilis savo galios klasėje; žemo slėgio slopintuvas; smūginė sistema su ASA; išėjimo galia: 25 kW…",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "TEI Rock Drills logotipas",
+          "href": "/produkter/tei",
+          "width": 1920,
+          "height": 1117,
+          "src": "/assets/img/tei-2.webp"
+        },
+        {
+          "type": "image",
+          "alt": "TE1000: 2 paveikslėlis",
+          "width": 1920,
+          "height": 1130,
+          "src": "/assets/img/tei-topphammare-te1000-2.webp"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "3 akumuliatoriai sklandžiam veikimui",
+            "Trumpiausias ir žemiausias profilis savo galios klasėje",
+            "Žemo slėgio slopintuvas",
+            "Smūginė sistema su ASA",
+            "Išėjimo galia: 25 kW",
+            "Sukimo momentas: iki 13 569 Nm",
+            "Svoris: 449 kg"
+          ]
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Produkto lapas",
+          "href": "/assets/docs/tei-topphammare-te1000-broschyr-eng.pdf",
+          "driveId": "1s6xKWdbyezuUa9D9cnWYM92-bVQ5A1WS"
+        },
+        {
+          "type": "datasheet",
+          "title": "Techniniai duomenys",
+          "tagline": "Hidraulinis viršutinio smūgio plaktukas",
+          "intro": [
+            "TE1000 yra didžiausias TEI asortimento viršutinio smūgio plaktukas, skirtas tuščiavidurių strypų (hollow bar) įrengimui skylėse nuo 3 iki 7 colių (76,2–177,8 mm) ir mikropolių gręžimui visų rūšių gruntuose. Galinga smūginė sistema turi patentuotą ASA sistemą (automatinį smūgio reguliavimą), kuri pritaiko galią prie kintančių grunto ir uolienų sąlygų.",
+            "Sistema turi tris skirtingus smūgio lygius, kuriuos galima nustatyti rankiniu būdu arba automatiškai, kad jie atitiktų gręžimo įrenginio padavimo jėgą. Antrasis akumuliatorius aukšto slėgio smūgiui užtikrina sklandesnį veikimą ir slopinimą.",
+            "TE1000 sukimosi mazge naudojami padidinti guoliai radialinėje ir ašinėje ašyse, kad atlaikytų šiandienos inkaravimo įrenginių spaudimo jėgas. Sistemoje yra du varikliai skirtingiems sukimo momentams ir sklandesniam gręžimui."
+          ],
+          "groups": [
+            {
+              "title": "Sukimasis",
+              "rows": [
+                {
+                  "label": "Sukimo momentas",
+                  "metric": "6779 Nm (standartinis), 13 569 Nm (pasirinktinai)"
+                },
+                {
+                  "label": "Apsukos (1 / 2 pavara)",
+                  "metric": "196 / 98 aps./min (standartinis), 98 / 49 aps./min (pasirinktinai)"
+                }
+              ]
+            },
+            {
+              "title": "Smūginė sistema",
+              "rows": [
+                {
+                  "label": "Išėjimo galia",
+                  "metric": "25 kW"
+                },
+                {
+                  "label": "Plaktuko debitas",
+                  "metric": "117 lpm"
+                },
+                {
+                  "label": "Plaktuko slėgis",
+                  "metric": "172 bar"
+                },
+                {
+                  "label": "Smūgių dažnis",
+                  "metric": "45 Hz"
+                }
+              ]
+            }
+          ],
+          "note": "Galimi sriegių (shank) tipai: standartinis T76LH, pasirenkami H90RH, H90LH, T73RH. TEI techniniai duomenys numato 40 % hidraulinės galios nuostolių."
+        },
+        {
+          "type": "related",
+          "title": "Tinkami stiebai",
+          "items": [
+            {
+              "href": "/produkter/tei/borrmaster/hemh"
+            }
+          ],
+          "compat": true
+        }
+      ],
+      "published": true
+    },
+    "lv": {
+      "title": "TE1000",
+      "h1": "TE1000",
+      "description": "TE1000 — 3 akumulatori vienmērīgai darbībai; īsākais un zemākais profils savā jaudas klasē; zemspiediena slāpētājs; sitiena sistēma ar ASA; izejas jauda: 25 kW…",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "TEI Rock Drills logotips",
+          "href": "/produkter/tei",
+          "width": 1920,
+          "height": 1117,
+          "src": "/assets/img/tei-2.webp"
+        },
+        {
+          "type": "image",
+          "alt": "TE1000: 2. attēls",
+          "width": 1920,
+          "height": 1130,
+          "src": "/assets/img/tei-topphammare-te1000-2.webp"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "3 akumulatori vienmērīgai darbībai",
+            "Īsākais un zemākais profils savā jaudas klasē",
+            "Zemspiediena slāpētājs",
+            "Sitiena sistēma ar ASA",
+            "Izejas jauda: 25 kW",
+            "Griezes moments: līdz 13 569 Nm",
+            "Svars: 449 kg"
+          ]
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Produkta lapa",
+          "href": "/assets/docs/tei-topphammare-te1000-broschyr-eng.pdf",
+          "driveId": "1s6xKWdbyezuUa9D9cnWYM92-bVQ5A1WS"
+        },
+        {
+          "type": "datasheet",
+          "title": "Tehniskie dati",
+          "tagline": "Hidrauliskais augšējā āmura urbis",
+          "intro": [
+            "TE1000 ir lielākais augšējā āmura urbis TEI klāstā, kas paredzēts hollow bar uzstādīšanai urbumos no 3 līdz 7 collām (76,2–177,8 mm) un mikropāļu urbšanai visu veidu gruntīs. Jaudīgajai sitiena sistēmai ir patentētā ASA sistēma (automātiska sitiena regulēšana), kas pielāgo jaudu mainīgiem grunts un iežu apstākļiem.",
+            "Sistēmai ir trīs dažādi sitiena līmeņi, ko var iestatīt manuāli vai automātiski, lai tie sekotu urbjiekārtas padeves spēkam. Otrs akumulators augstspiediena sitienam nodrošina vienmērīgāku darbību un slāpēšanu.",
+            "TE1000 rotācijā izmantoti paaugstināta izmēra gultņi radiālajā un aksiālajā vārpstā, lai izturētu mūsdienu enkuru urbjiekārtu spiedes spēkus. Sistēmai ir divi dzinēji dažādiem griezes momentiem un vienmērīgākai urbšanai."
+          ],
+          "groups": [
+            {
+              "title": "Rotācija",
+              "rows": [
+                {
+                  "label": "Griezes moments",
+                  "metric": "6779 Nm (standarta), 13 569 Nm (opcija)"
+                },
+                {
+                  "label": "Apgriezieni (1. / 2. pārnesums)",
+                  "metric": "196 / 98 apgr./min (standarta), 98 / 49 apgr./min (opcija)"
+                }
+              ]
+            },
+            {
+              "title": "Sitiena sistēma",
+              "rows": [
+                {
+                  "label": "Izejas jauda",
+                  "metric": "25 kW"
+                },
+                {
+                  "label": "Āmura caurplūde",
+                  "metric": "117 lpm"
+                },
+                {
+                  "label": "Āmura spiediens",
+                  "metric": "172 bar"
+                },
+                {
+                  "label": "Sitienu frekvence",
+                  "metric": "45 Hz"
+                }
+              ]
+            }
+          ],
+          "note": "Pieejamie vītņu (shank) veidi: standarta T76LH, opcijā H90RH, H90LH, T73RH. TEI tehniskie dati paredz 40 % hidrauliskās jaudas zudumu."
+        },
+        {
+          "type": "related",
+          "title": "Piemērotie masti",
+          "items": [
+            {
+              "href": "/produkter/tei/borrmaster/hemh"
+            }
+          ],
+          "compat": true
+        }
+      ],
+      "published": true
+    },
+    "et": {
+      "title": "TE1000",
+      "h1": "TE1000",
+      "description": "TE1000 – 3 akumulaatorit sujuvaks tööks; oma võimsusklassi lühim ja madalaim profiil; madalrõhuvaigisti; löögisüsteem ASA-ga; väljundvõimsus: 25 kW…",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "TEI Rock Drills logo",
+          "href": "/produkter/tei",
+          "width": 1920,
+          "height": 1117,
+          "src": "/assets/img/tei-2.webp"
+        },
+        {
+          "type": "image",
+          "alt": "TE1000: pilt 2",
+          "width": 1920,
+          "height": 1130,
+          "src": "/assets/img/tei-topphammare-te1000-2.webp"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "3 akumulaatorit sujuvaks tööks",
+            "Oma võimsusklassi lühim ja madalaim profiil",
+            "Madalrõhuvaigisti",
+            "Löögisüsteem ASA-ga",
+            "Väljundvõimsus: 25 kW",
+            "Pöördemoment: kuni 13 569 Nm",
+            "Kaal: 449 kg"
+          ]
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Tootleht",
+          "href": "/assets/docs/tei-topphammare-te1000-broschyr-eng.pdf",
+          "driveId": "1s6xKWdbyezuUa9D9cnWYM92-bVQ5A1WS"
+        },
+        {
+          "type": "datasheet",
+          "title": "Tehnilised andmed",
+          "tagline": "Hüdrauliline ülavasar",
+          "intro": [
+            "TE1000 on TEI sortimendi suurim ülavasar, mis on mõeldud hollow bar -varraste paigaldamiseks 3–7-tollistesse (76,2–177,8 mm) aukudesse ja mikrovaiade puurimiseks igat tüüpi pinnases. Võimsal löögisüsteemil on patenteeritud ASA-süsteem (automaatne löögireguleerimine), mis kohandab võimsust muutuvatele pinnase- ja kaljutingimustele.",
+            "Süsteemil on kolm erinevat löögitaset, mida saab seada käsitsi või automaatselt, nii et need järgiksid puurimisseadme etteandejõudu. Teine akumulaator kõrgrõhulöögi jaoks tagab sujuvama töö ja summutuse.",
+            "TE1000 pöörlemisel kasutatakse radiaal- ja aksiaalvõllidel ülemõõdulisi laagreid, et taluda tänapäevaste ankurpuurimisseadmete survejõude. Süsteemil on kaks mootorit erinevate pöördemomentide ja sujuvama puurimise jaoks."
+          ],
+          "groups": [
+            {
+              "title": "Pöörlemine",
+              "rows": [
+                {
+                  "label": "Pöördemoment",
+                  "metric": "6779 Nm (standard), 13 569 Nm (lisavarustus)"
+                },
+                {
+                  "label": "Pöörded (käik 1 / 2)",
+                  "metric": "196 / 98 p/min (standard), 98 / 49 p/min (lisavarustus)"
+                }
+              ]
+            },
+            {
+              "title": "Löögisüsteem",
+              "rows": [
+                {
+                  "label": "Väljundvõimsus",
+                  "metric": "25 kW"
+                },
+                {
+                  "label": "Haamri vooluhulk",
+                  "metric": "117 lpm"
+                },
+                {
+                  "label": "Haamri rõhk",
+                  "metric": "172 bar"
+                },
+                {
+                  "label": "Löögisagedus",
+                  "metric": "45 Hz"
+                }
+              ]
+            }
+          ],
+          "note": "Saadaolevad keeretüübid (shank): standard T76LH, lisavarustusena H90RH, H90LH, T73RH. TEI tehnilised andmed eeldavad 40 % hüdrauliivõimsuse kadu."
+        },
+        {
+          "type": "related",
+          "title": "Sobivad mastid",
+          "items": [
+            {
+              "href": "/produkter/tei/borrmaster/hemh"
+            }
+          ],
+          "compat": true
+        }
+      ],
+      "published": true
+    },
+    "ru": {
+      "title": "TE1000",
+      "h1": "TE1000",
+      "description": "TE1000 — 3 аккумулятора для плавной работы; самый короткий и низкий профиль в своём классе мощности; демпфер низкого давления; ударная система с ASA; выходная мощность: 25 кВт…",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Логотип TEI Rock Drills",
+          "href": "/produkter/tei",
+          "width": 1920,
+          "height": 1117,
+          "src": "/assets/img/tei-2.webp"
+        },
+        {
+          "type": "image",
+          "alt": "TE1000: изображение 2",
+          "width": 1920,
+          "height": 1130,
+          "src": "/assets/img/tei-topphammare-te1000-2.webp"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "3 аккумулятора для плавной работы",
+            "Самый короткий и низкий профиль в своём классе мощности",
+            "Демпфер низкого давления",
+            "Ударная система с ASA",
+            "Выходная мощность: 25 кВт",
+            "Крутящий момент: до 13 569 Нм",
+            "Масса: 449 кг"
+          ]
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Технический лист",
+          "href": "/assets/docs/tei-topphammare-te1000-broschyr-eng.pdf",
+          "driveId": "1s6xKWdbyezuUa9D9cnWYM92-bVQ5A1WS"
+        },
+        {
+          "type": "datasheet",
+          "title": "Технические данные",
+          "tagline": "Гидравлический верхний перфоратор",
+          "intro": [
+            "TE1000 — самый крупный верхний перфоратор в ассортименте TEI, предназначенный для установки полых штанг (hollow bar) в отверстия диаметром 3–7 дюймов (76,2–177,8 мм) и для бурения микросвай в грунтах любого типа. Мощная ударная система оснащена запатентованной системой ASA (автоматическая регулировка удара), которая адаптирует мощность к меняющимся условиям грунта и скалы.",
+            "Система имеет три разных уровня удара, которые можно устанавливать вручную или автоматически, чтобы они следовали усилию подачи буровой установки. Второй аккумулятор для удара высокого давления обеспечивает более плавную работу и демпфирование.",
+            "Во вращении TE1000 используются увеличенные подшипники на радиальном и осевом валах, чтобы выдерживать усилия нажатия современных анкерных буровых установок. Система имеет два двигателя для разных крутящих моментов и более плавного бурения."
+          ],
+          "groups": [
+            {
+              "title": "Вращение",
+              "rows": [
+                {
+                  "label": "Крутящий момент",
+                  "metric": "6779 Нм (стандарт), 13 569 Нм (опция)"
+                },
+                {
+                  "label": "Частота вращения (передача 1 / 2)",
+                  "metric": "196 / 98 об/мин (стандарт), 98 / 49 об/мин (опция)"
+                }
+              ]
+            },
+            {
+              "title": "Ударная система",
+              "rows": [
+                {
+                  "label": "Выходная мощность",
+                  "metric": "25 kW"
+                },
+                {
+                  "label": "Расход молота",
+                  "metric": "117 lpm"
+                },
+                {
+                  "label": "Давление молота",
+                  "metric": "172 bar"
+                },
+                {
+                  "label": "Частота ударов",
+                  "metric": "45 Hz"
+                }
+              ]
+            }
+          ],
+          "note": "Доступные типы хвостовиков (shank): стандартный T76LH, опционально H90RH, H90LH, T73RH. Технические данные TEI предполагают потери гидравлической мощности 40 %."
+        },
+        {
+          "type": "related",
+          "title": "Подходящие мачты",
+          "items": [
+            {
+              "href": "/produkter/tei/borrmaster/hemh"
+            }
+          ],
+          "compat": true
+        }
+      ],
+      "published": true
     }
   },
   "source": {

@@ -990,6 +990,990 @@
         }
       ],
       "published": true
+    },
+    "lt": {
+      "title": "Gręžimo stiebai",
+      "h1": "Gręžimo stiebai",
+      "description": "TEI gręžimo stiebai būna skirtingų dydžių klasių, kurios pirmiausia priklauso nuo ekskavatoriaus svorio ir ant stiebo montuojamos įrangos. Spustelėkite stiebus…",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "TEI Rock Drills logotipas",
+          "href": "/produkter/tei",
+          "width": 1920,
+          "height": 1117,
+          "src": "/assets/img/tei-2.webp"
+        },
+        {
+          "type": "text",
+          "html": "TEI gręžimo stiebai būna skirtingų dydžių klasių, kurios pirmiausia priklauso nuo ekskavatoriaus svorio ir ant stiebo montuojamos įrangos. Spustelėkite žemiau esančius stiebus, kad pereitumėte prie brošiūrų ir sužinotumėte daugiau."
+        },
+        {
+          "type": "cards",
+          "items": [
+            {
+              "href": "/produkter/tei/borrmaster/mme",
+              "label": "Läs mer",
+              "title": "MME",
+              "image": "/assets/img/tei-borrmaster-mme.webp",
+              "width": 1280,
+              "height": 1280,
+              "alt": "MME logotipas",
+              "text": "Ekskavatoriams: 5–8 t"
+            },
+            {
+              "href": "/produkter/tei/borrmaster/mem",
+              "label": "Läs mer",
+              "title": "MEM",
+              "image": "/assets/img/tei-borrmaster-mem.webp",
+              "width": 334,
+              "height": 334,
+              "alt": "MEM logotipas",
+              "text": "Ekskavatoriams: 12–15 t"
+            },
+            {
+              "href": "/produkter/tei/borrmaster/hem",
+              "label": "Läs mer",
+              "title": "HEM",
+              "image": "/assets/img/tei-borrmaster-hem.webp",
+              "width": 601,
+              "height": 602,
+              "alt": "HEM logotipas",
+              "text": "Ekskavatoriams: 20–25 t"
+            },
+            {
+              "href": "/produkter/tei/borrmaster/hemh",
+              "label": "Läs mer",
+              "title": "HEMH",
+              "image": "/assets/img/tei-borrmaster-hemh.webp",
+              "width": 1304,
+              "height": 1304,
+              "alt": "HEMH logotipas",
+              "text": "Ekskavatoriams: 25–30 t"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "Visus stiebus galima naudoti su sukamąja galvute arba viršutinio smūgio plaktuku."
+        },
+        {
+          "type": "text",
+          "html": "Be to, yra ir nešiojamų (man portable) stiebų, kuriuos rasite toliau."
+        },
+        {
+          "type": "cards",
+          "items": [
+            {
+              "href": "/produkter/tei/borrmaster/mp260",
+              "label": "Läs mer",
+              "title": "MP260",
+              "image": "/assets/img/tei-borrmaster-mp260.webp",
+              "width": 405,
+              "height": 405,
+              "alt": "MP260 logotipas",
+              "text": "Nešiojamas stiebas (man portable)"
+            },
+            {
+              "href": "/produkter/tei/borrmaster/mph",
+              "label": "Läs mer",
+              "title": "MPH",
+              "image": "/assets/img/tei-borrmaster-mph.webp",
+              "width": 504,
+              "height": 504,
+              "alt": "MPH logotipas",
+              "text": "Nešiojamas stiebas (man portable)"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "Nešiojamų stiebų padavimas skiriasi: MP260 turi ACF padavimą (aliuminis, 6,7 kN), o MPH – naujesnį SCF5 padavimą (11,1 kN ir 2 m eiga). Todėl MPH užtikrina stipresnį padavimą ir gali dirbti tiek su 300, tiek su 200 serijos gręžimo galvutėmis.",
+          "feeds": true
+        },
+        {
+          "type": "table",
+          "header": true,
+          "caption": "Gręžimo stiebų palyginimas",
+          "rows": [
+            [
+              "Stiebas",
+              "Ekskavatorius",
+              "Gręžimo eiga",
+              "Traukos jėga (kN)",
+              "Svoris (kg)",
+              "Galimi gręžimo agregatai",
+              "Įranga / kita"
+            ],
+            [
+              "MME",
+              "5-8 ton",
+              "3,2 m",
+              "6,5",
+              "488",
+              "TE260, TE260HT, TE326 & RDS250",
+              "102 mm hidraulinis spaustuvas"
+            ],
+            [
+              "MEM",
+              "12-15 ton",
+              "3,35 m",
+              "11,1",
+              "1089",
+              "TE360, TE326 & RDS350",
+              "165 mm hidraulinis spaustuvas"
+            ],
+            [
+              "HEM",
+              "20-25 ton",
+              "3,58-3,89 m",
+              "33,3",
+              "1440 - 2600",
+              "TE360, TE326, TE760 & RDS350, RDS550",
+              "-"
+            ],
+            [
+              "HEMH",
+              "25-30 ton",
+              "3,96 m",
+              "53",
+              "2800 - 3100",
+              "TE726, TE760, TE1000 & RDS550, RDS1004",
+              "Paprastas montavimas ir išmontavimas"
+            ],
+            [
+              "MP260",
+              "Nešiojamas",
+              "1,67 m",
+              "6,7",
+              "-",
+              "TE260HT, TE260 & RDS250",
+              "ACF padavimas (aliuminis)"
+            ],
+            [
+              "MPH",
+              "Nešiojamas",
+              "2 m (SCF5)",
+              "11,1",
+              "435",
+              "TE260, TE260HT, TE326, TE360 & RDS250, RDS350",
+              "SCF5 padavimas"
+            ]
+          ],
+          "links": [
+            "/produkter/tei/borrmaster/mme",
+            "/produkter/tei/borrmaster/mem",
+            "/produkter/tei/borrmaster/hem",
+            "/produkter/tei/borrmaster/hemh",
+            "/produkter/tei/borrmaster/mp260",
+            "/produkter/tei/borrmaster/mph"
+          ]
+        },
+        {
+          "type": "text",
+          "html": "<small>TEI techniniai duomenys numato 40 % hidraulinės galios nuostolių. Šios reikšmės gali būti keičiamos be įspėjimo.</small>",
+          "tableNote": true
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Padavimo sistemos ir traukos jėga",
+          "feeds": true
+        },
+        {
+          "type": "text",
+          "html": "TEI stiebus gamina iš aliuminio ir plieno. Padavimas parenkamas pagal reikiamą traukos jėgą (pullback): kuo sunkesnė gręžimo galvutė ir giliau skylė, tuo stipresnis padavimas. Lengvieji stiebai turi aliuminio grandininį padavimą (ACF), vidutinės klasės – naujesnį, lengvesnį SCF padavimą, o dideli ekskavatoriuose montuojami stiebai – galingesnius hidraulinius padavimus.",
+          "feeds": true
+        },
+        {
+          "type": "table",
+          "header": true,
+          "caption": "Padavimo sistemų palyginimas",
+          "rows": [
+            [
+              "Padavimas",
+              "Typ",
+              "Traukos jėga",
+              "Naudojama"
+            ],
+            [
+              "ACF",
+              "Aliuminio grandininis padavimas (lengvas)",
+              "6,7 kN (1 500 lbf)",
+              "MP260, MME"
+            ],
+            [
+              "SCF",
+              "Nauja, lengvesnė padavimo sistema",
+              "11,1 kN (2 500 lbf)",
+              "MPH (SCF5, 2 m eiga), MEM"
+            ],
+            [
+              "PCF",
+              "Hidraulinis grandininis padavimas",
+              "15,6 kN (3 500 lbf)",
+              "Galingesni TEI stiebai"
+            ],
+            [
+              "HCF",
+              "Hidraulinis cilindrinis padavimas",
+              "16,7-32,7 kN (3 750-7 350 lbf)",
+              "HEM (33 kN)"
+            ],
+            [
+              "PCFH / HCFH",
+              "Sunkiosios grandininio ir cilindrinio padavimo versijos",
+              "Didesnė traukos jėga",
+              "HEMH (53 kN)"
+            ]
+          ],
+          "feeds": true
+        },
+        {
+          "type": "text",
+          "html": "<small>Lentelės reikšmės yra TEI duomenys pagal padavimo tipą; tikslią jūsų stiebo traukos jėgą rasite atitinkamo produkto puslapyje.</small>",
+          "feeds": true
+        }
+      ],
+      "published": true
+    },
+    "lv": {
+      "title": "Urbšanas masti",
+      "h1": "Urbšanas masti",
+      "description": "TEI urbšanas masti ir dažādās izmēru klasēs, kas galvenokārt atkarīgas no ekskavatora svara un uz masta uzstādītā aprīkojuma. Noklikšķiniet uz mastiem…",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "TEI Rock Drills logotips",
+          "href": "/produkter/tei",
+          "width": 1920,
+          "height": 1117,
+          "src": "/assets/img/tei-2.webp"
+        },
+        {
+          "type": "text",
+          "html": "TEI urbšanas masti ir dažādās izmēru klasēs, kas galvenokārt atkarīgas no ekskavatora svara un uz masta uzstādītā aprīkojuma. Noklikšķiniet uz zemāk redzamajiem mastiem, lai atvērtu brošūras un uzzinātu vairāk."
+        },
+        {
+          "type": "cards",
+          "items": [
+            {
+              "href": "/produkter/tei/borrmaster/mme",
+              "label": "Läs mer",
+              "title": "MME",
+              "image": "/assets/img/tei-borrmaster-mme.webp",
+              "width": 1280,
+              "height": 1280,
+              "alt": "MME logotips",
+              "text": "Ekskavatoriem: 5–8 t"
+            },
+            {
+              "href": "/produkter/tei/borrmaster/mem",
+              "label": "Läs mer",
+              "title": "MEM",
+              "image": "/assets/img/tei-borrmaster-mem.webp",
+              "width": 334,
+              "height": 334,
+              "alt": "MEM logotips",
+              "text": "Ekskavatoriem: 12–15 t"
+            },
+            {
+              "href": "/produkter/tei/borrmaster/hem",
+              "label": "Läs mer",
+              "title": "HEM",
+              "image": "/assets/img/tei-borrmaster-hem.webp",
+              "width": 601,
+              "height": 602,
+              "alt": "HEM logotips",
+              "text": "Ekskavatoriem: 20–25 t"
+            },
+            {
+              "href": "/produkter/tei/borrmaster/hemh",
+              "label": "Läs mer",
+              "title": "HEMH",
+              "image": "/assets/img/tei-borrmaster-hemh.webp",
+              "width": 1304,
+              "height": 1304,
+              "alt": "HEMH logotips",
+              "text": "Ekskavatoriem: 25–30 t"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "Visus mastus var izmantot ar rotācijas galvu vai augšējā āmura urbi."
+        },
+        {
+          "type": "text",
+          "html": "Papildus ir arī pārnēsājami (man portable) masti, kas atrodami tālāk."
+        },
+        {
+          "type": "cards",
+          "items": [
+            {
+              "href": "/produkter/tei/borrmaster/mp260",
+              "label": "Läs mer",
+              "title": "MP260",
+              "image": "/assets/img/tei-borrmaster-mp260.webp",
+              "width": 405,
+              "height": 405,
+              "alt": "MP260 logotips",
+              "text": "Pārnēsājams masts (man portable)"
+            },
+            {
+              "href": "/produkter/tei/borrmaster/mph",
+              "label": "Läs mer",
+              "title": "MPH",
+              "image": "/assets/img/tei-borrmaster-mph.webp",
+              "width": 504,
+              "height": 504,
+              "alt": "MPH logotips",
+              "text": "Pārnēsājams masts (man portable)"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "Pārnēsājamie masti atšķiras ar padevi: MP260 ir ACF padeve (alumīnijs, 6,7 kN), bet MPH ir jaunākā SCF5 padeve (11,1 kN un 2 m gājiens). Tāpēc MPH nodrošina jaudīgāku padevi un var darboties gan ar 300., gan 200. sērijas urbšanas galvām.",
+          "feeds": true
+        },
+        {
+          "type": "table",
+          "header": true,
+          "caption": "Urbšanas mastu salīdzinājums",
+          "rows": [
+            [
+              "Masts",
+              "Ekskavators",
+              "Urbšanas gājiens",
+              "Vilkme (kN)",
+              "Svars (kg)",
+              "Iespējamie urbšanas agregāti",
+              "Aprīkojums / citi"
+            ],
+            [
+              "MME",
+              "5-8 ton",
+              "3,2 m",
+              "6,5",
+              "488",
+              "TE260, TE260HT, TE326 & RDS250",
+              "102 mm hidrauliskā spīle"
+            ],
+            [
+              "MEM",
+              "12-15 ton",
+              "3,35 m",
+              "11,1",
+              "1089",
+              "TE360, TE326 & RDS350",
+              "165 mm hidrauliskā spīle"
+            ],
+            [
+              "HEM",
+              "20-25 ton",
+              "3,58-3,89 m",
+              "33,3",
+              "1440 - 2600",
+              "TE360, TE326, TE760 & RDS350, RDS550",
+              "-"
+            ],
+            [
+              "HEMH",
+              "25-30 ton",
+              "3,96 m",
+              "53",
+              "2800 - 3100",
+              "TE726, TE760, TE1000 & RDS550, RDS1004",
+              "Vienkārša montāža un demontāža"
+            ],
+            [
+              "MP260",
+              "Pārnēsājams",
+              "1,67 m",
+              "6,7",
+              "-",
+              "TE260HT, TE260 & RDS250",
+              "ACF padeve (alumīnijs)"
+            ],
+            [
+              "MPH",
+              "Pārnēsājams",
+              "2 m (SCF5)",
+              "11,1",
+              "435",
+              "TE260, TE260HT, TE326, TE360 & RDS250, RDS350",
+              "SCF5 padeve"
+            ]
+          ],
+          "links": [
+            "/produkter/tei/borrmaster/mme",
+            "/produkter/tei/borrmaster/mem",
+            "/produkter/tei/borrmaster/hem",
+            "/produkter/tei/borrmaster/hemh",
+            "/produkter/tei/borrmaster/mp260",
+            "/produkter/tei/borrmaster/mph"
+          ]
+        },
+        {
+          "type": "text",
+          "html": "<small>TEI tehniskajās specifikācijās ņemts vērā 40 % hidrauliskās jaudas zudums. Šīs vērtības var tikt mainītas bez brīdinājuma.</small>",
+          "tableNote": true
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Padeves sistēmas un vilkme",
+          "feeds": true
+        },
+        {
+          "type": "text",
+          "html": "TEI savus mastus būvē no alumīnija un tērauda. Padevi izvēlas pēc nepieciešamā vilkmes spēka (pullback): jo smagāka urbšanas galva un dziļāks urbums, jo jaudīgāka padeve. Vieglajiem mastiem ir alumīnija ķēdes padeve (ACF), vidējās klases mastiem — jaunākā, vieglākā SCF padeve, bet lielajiem uz ekskavatora montējamajiem mastiem — jaudīgākas hidrauliskās padeves.",
+          "feeds": true
+        },
+        {
+          "type": "table",
+          "header": true,
+          "caption": "Padeves sistēmu salīdzinājums",
+          "rows": [
+            [
+              "Padeve",
+              "Typ",
+              "Vilkme",
+              "Izmanto"
+            ],
+            [
+              "ACF",
+              "Alumīnija ķēdes padeve (viegla)",
+              "6,7 kN (1 500 lbf)",
+              "MP260, MME"
+            ],
+            [
+              "SCF",
+              "Jauna, vieglāka padeve",
+              "11,1 kN (2 500 lbf)",
+              "MPH (SCF5, 2 m gājiens), MEM"
+            ],
+            [
+              "PCF",
+              "Hidrauliskā ķēdes padeve",
+              "15,6 kN (3 500 lbf)",
+              "Jaudīgāki TEI masti"
+            ],
+            [
+              "HCF",
+              "Hidrauliskā cilindra padeve",
+              "16,7-32,7 kN (3 750-7 350 lbf)",
+              "HEM (33 kN)"
+            ],
+            [
+              "PCFH / HCFH",
+              "Smagās ķēdes un cilindra padeves versijas",
+              "Lielāka vilkme",
+              "HEMH (53 kN)"
+            ]
+          ],
+          "feeds": true
+        },
+        {
+          "type": "text",
+          "html": "<small>Tabulas vērtības ir TEI dati pēc padeves veida; precīzs jūsu masta vilkmes spēks norādīts attiecīgajā produkta lapā.</small>",
+          "feeds": true
+        }
+      ],
+      "published": true
+    },
+    "et": {
+      "title": "Puurimismastid",
+      "h1": "Puurimismastid",
+      "description": "TEI puurimismastid on erinevates suurusklassides, mis sõltuvad peamiselt ekskavaatori kaalust ja mastile paigaldatavast varustusest. Klõpsa mastidel…",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "TEI Rock Drills logo",
+          "href": "/produkter/tei",
+          "width": 1920,
+          "height": 1117,
+          "src": "/assets/img/tei-2.webp"
+        },
+        {
+          "type": "text",
+          "html": "TEI puurimismastid on erinevates suurusklassides, mis sõltuvad peamiselt ekskavaatori kaalust ja mastile paigaldatavast varustusest. Klõpsa allolevatel mastidel, et jõuda brošüüride juurde ja lugeda lähemalt."
+        },
+        {
+          "type": "cards",
+          "items": [
+            {
+              "href": "/produkter/tei/borrmaster/mme",
+              "label": "Läs mer",
+              "title": "MME",
+              "image": "/assets/img/tei-borrmaster-mme.webp",
+              "width": 1280,
+              "height": 1280,
+              "alt": "MME logo",
+              "text": "Ekskavaatoritele: 5–8 t"
+            },
+            {
+              "href": "/produkter/tei/borrmaster/mem",
+              "label": "Läs mer",
+              "title": "MEM",
+              "image": "/assets/img/tei-borrmaster-mem.webp",
+              "width": 334,
+              "height": 334,
+              "alt": "MEM logo",
+              "text": "Ekskavaatoritele: 12–15 t"
+            },
+            {
+              "href": "/produkter/tei/borrmaster/hem",
+              "label": "Läs mer",
+              "title": "HEM",
+              "image": "/assets/img/tei-borrmaster-hem.webp",
+              "width": 601,
+              "height": 602,
+              "alt": "HEM logo",
+              "text": "Ekskavaatoritele: 20–25 t"
+            },
+            {
+              "href": "/produkter/tei/borrmaster/hemh",
+              "label": "Läs mer",
+              "title": "HEMH",
+              "image": "/assets/img/tei-borrmaster-hemh.webp",
+              "width": 1304,
+              "height": 1304,
+              "alt": "HEMH logo",
+              "text": "Ekskavaatoritele: 25–30 t"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "Kõiki maste saab kasutada pöörlemispea või ülavasaraga."
+        },
+        {
+          "type": "text",
+          "html": "Lisaks on olemas kantavad (man portable) mastid, mida leiab allpool."
+        },
+        {
+          "type": "cards",
+          "items": [
+            {
+              "href": "/produkter/tei/borrmaster/mp260",
+              "label": "Läs mer",
+              "title": "MP260",
+              "image": "/assets/img/tei-borrmaster-mp260.webp",
+              "width": 405,
+              "height": 405,
+              "alt": "MP260 logo",
+              "text": "Kantav mast (man portable)"
+            },
+            {
+              "href": "/produkter/tei/borrmaster/mph",
+              "label": "Läs mer",
+              "title": "MPH",
+              "image": "/assets/img/tei-borrmaster-mph.webp",
+              "width": 504,
+              "height": 504,
+              "alt": "MPH logo",
+              "text": "Kantav mast (man portable)"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "Kantavad mastid erinevad etteande poolest: MP260-l on ACF-etteanne (alumiinium, 6,7 kN), MPH-l aga uuem SCF5-etteanne (11,1 kN ja 2 m käik). Seetõttu annab MPH tugevama etteande ja sellega saab kasutada nii 300- kui ka 200-seeria puurimispäid.",
+          "feeds": true
+        },
+        {
+          "type": "table",
+          "header": true,
+          "caption": "Puurimismastide võrdlus",
+          "rows": [
+            [
+              "Mast",
+              "Ekskavaator",
+              "Puurimiskäik",
+              "Tõmbejõud (kN)",
+              "Kaal (kg)",
+              "Võimalikud puurimisagregaadid",
+              "Varustus / muu"
+            ],
+            [
+              "MME",
+              "5-8 ton",
+              "3,2 m",
+              "6,5",
+              "488",
+              "TE260, TE260HT, TE326 & RDS250",
+              "102 mm hüdrauliline klamber"
+            ],
+            [
+              "MEM",
+              "12-15 ton",
+              "3,35 m",
+              "11,1",
+              "1089",
+              "TE360, TE326 & RDS350",
+              "165 mm hüdrauliline klamber"
+            ],
+            [
+              "HEM",
+              "20-25 ton",
+              "3,58-3,89 m",
+              "33,3",
+              "1440 - 2600",
+              "TE360, TE326, TE760 & RDS350, RDS550",
+              "-"
+            ],
+            [
+              "HEMH",
+              "25-30 ton",
+              "3,96 m",
+              "53",
+              "2800 - 3100",
+              "TE726, TE760, TE1000 & RDS550, RDS1004",
+              "Lihtne paigaldus ja eemaldus"
+            ],
+            [
+              "MP260",
+              "Kantav",
+              "1,67 m",
+              "6,7",
+              "-",
+              "TE260HT, TE260 & RDS250",
+              "ACF-etteanne (alumiinium)"
+            ],
+            [
+              "MPH",
+              "Kantav",
+              "2 m (SCF5)",
+              "11,1",
+              "435",
+              "TE260, TE260HT, TE326, TE360 & RDS250, RDS350",
+              "SCF5-etteanne"
+            ]
+          ],
+          "links": [
+            "/produkter/tei/borrmaster/mme",
+            "/produkter/tei/borrmaster/mem",
+            "/produkter/tei/borrmaster/hem",
+            "/produkter/tei/borrmaster/hemh",
+            "/produkter/tei/borrmaster/mp260",
+            "/produkter/tei/borrmaster/mph"
+          ]
+        },
+        {
+          "type": "text",
+          "html": "<small>TEI tehnilistes andmetes on arvestatud 40 % hüdrauliivõimsuse kadu. Neid väärtusi võidakse ette teatamata muuta.</small>",
+          "tableNote": true
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Etteandesüsteemid ja tõmbejõud",
+          "feeds": true
+        },
+        {
+          "type": "text",
+          "html": "TEI ehitab oma mastid alumiiniumist ja terasest. Etteanne valitakse vajaliku tagasitõmbejõu (pullback) järgi: mida raskem puurimispea ja sügavam auk, seda tugevam etteanne. Kergetel mastidel on alumiiniumist ahelaetteanne (ACF), keskklassil uuem ja kergem SCF-etteanne ning suurtel ekskavaatorile paigaldatavatel mastidel võimsamad hüdraulilised etteanded.",
+          "feeds": true
+        },
+        {
+          "type": "table",
+          "header": true,
+          "caption": "Etteandesüsteemide võrdlus",
+          "rows": [
+            [
+              "Etteanne",
+              "Typ",
+              "Tõmbejõud",
+              "Kasutatakse"
+            ],
+            [
+              "ACF",
+              "Alumiiniumist ahelaetteanne (kerge)",
+              "6,7 kN (1 500 lbf)",
+              "MP260, MME"
+            ],
+            [
+              "SCF",
+              "Uus, kergem etteanne",
+              "11,1 kN (2 500 lbf)",
+              "MPH (SCF5, 2 m käik), MEM"
+            ],
+            [
+              "PCF",
+              "Hüdrauliline ahelaetteanne",
+              "15,6 kN (3 500 lbf)",
+              "Võimsamad TEI mastid"
+            ],
+            [
+              "HCF",
+              "Hüdrauliline silindrietteanne",
+              "16,7-32,7 kN (3 750-7 350 lbf)",
+              "HEM (33 kN)"
+            ],
+            [
+              "PCFH / HCFH",
+              "Ahela- ja silindrietteande rasked versioonid",
+              "Suurem tõmbejõud",
+              "HEMH (53 kN)"
+            ]
+          ],
+          "feeds": true
+        },
+        {
+          "type": "text",
+          "html": "<small>Tabeli väärtused on TEI andmed etteandetüübi kohta; sinu masti täpne tõmbejõud on toodud vastaval tootelehel.</small>",
+          "feeds": true
+        }
+      ],
+      "published": true
+    },
+    "ru": {
+      "title": "Буровые мачты",
+      "h1": "Буровые мачты",
+      "description": "Буровые мачты TEI выпускаются в разных размерных классах, которые зависят в основном от массы экскаватора и оборудования, устанавливаемого на мачту. Нажмите на мачты…",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Логотип TEI Rock Drills",
+          "href": "/produkter/tei",
+          "width": 1920,
+          "height": 1117,
+          "src": "/assets/img/tei-2.webp"
+        },
+        {
+          "type": "text",
+          "html": "Буровые мачты TEI выпускаются в разных размерных классах, которые зависят в основном от массы экскаватора и оборудования, устанавливаемого на мачту. Нажмите на мачты ниже, чтобы перейти к брошюрам и узнать больше."
+        },
+        {
+          "type": "cards",
+          "items": [
+            {
+              "href": "/produkter/tei/borrmaster/mme",
+              "label": "Läs mer",
+              "title": "MME",
+              "image": "/assets/img/tei-borrmaster-mme.webp",
+              "width": 1280,
+              "height": 1280,
+              "alt": "Логотип MME",
+              "text": "Для экскаваторов: 5–8 т"
+            },
+            {
+              "href": "/produkter/tei/borrmaster/mem",
+              "label": "Läs mer",
+              "title": "MEM",
+              "image": "/assets/img/tei-borrmaster-mem.webp",
+              "width": 334,
+              "height": 334,
+              "alt": "Логотип MEM",
+              "text": "Для экскаваторов: 12–15 т"
+            },
+            {
+              "href": "/produkter/tei/borrmaster/hem",
+              "label": "Läs mer",
+              "title": "HEM",
+              "image": "/assets/img/tei-borrmaster-hem.webp",
+              "width": 601,
+              "height": 602,
+              "alt": "Логотип HEM",
+              "text": "Для экскаваторов: 20–25 т"
+            },
+            {
+              "href": "/produkter/tei/borrmaster/hemh",
+              "label": "Läs mer",
+              "title": "HEMH",
+              "image": "/assets/img/tei-borrmaster-hemh.webp",
+              "width": 1304,
+              "height": 1304,
+              "alt": "Логотип HEMH",
+              "text": "Для экскаваторов: 25–30 т"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "Все мачты можно использовать с вращателем или верхним перфоратором."
+        },
+        {
+          "type": "text",
+          "html": "Кроме того, есть переносные (man portable) мачты, которые представлены ниже."
+        },
+        {
+          "type": "cards",
+          "items": [
+            {
+              "href": "/produkter/tei/borrmaster/mp260",
+              "label": "Läs mer",
+              "title": "MP260",
+              "image": "/assets/img/tei-borrmaster-mp260.webp",
+              "width": 405,
+              "height": 405,
+              "alt": "Логотип MP260",
+              "text": "Переносная мачта (man portable)"
+            },
+            {
+              "href": "/produkter/tei/borrmaster/mph",
+              "label": "Läs mer",
+              "title": "MPH",
+              "image": "/assets/img/tei-borrmaster-mph.webp",
+              "width": 504,
+              "height": 504,
+              "alt": "Логотип MPH",
+              "text": "Переносная мачта (man portable)"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "Переносные мачты различаются системой подачи: у MP260 подача ACF (алюминий, 6,7 кН), а у MPH более новая подача SCF5 (11,1 кН и ход 2 м). Поэтому MPH обеспечивает более мощную подачу и может работать с буровыми головками как серии 300, так и серии 200.",
+          "feeds": true
+        },
+        {
+          "type": "table",
+          "header": true,
+          "caption": "Сравнение буровых мачт",
+          "rows": [
+            [
+              "Мачта",
+              "Экскаватор",
+              "Ход бурения",
+              "Тяговое усилие (кН)",
+              "Масса (кг)",
+              "Возможные буровые агрегаты",
+              "Оборудование / прочее"
+            ],
+            [
+              "MME",
+              "5-8 ton",
+              "3,2 m",
+              "6,5",
+              "488",
+              "TE260, TE260HT, TE326 & RDS250",
+              "Гидравлический зажим 102 мм"
+            ],
+            [
+              "MEM",
+              "12-15 ton",
+              "3,35 m",
+              "11,1",
+              "1089",
+              "TE360, TE326 & RDS350",
+              "Гидравлический зажим 165 мм"
+            ],
+            [
+              "HEM",
+              "20-25 ton",
+              "3,58-3,89 m",
+              "33,3",
+              "1440 - 2600",
+              "TE360, TE326, TE760 & RDS350, RDS550",
+              "-"
+            ],
+            [
+              "HEMH",
+              "25-30 ton",
+              "3,96 m",
+              "53",
+              "2800 - 3100",
+              "TE726, TE760, TE1000 & RDS550, RDS1004",
+              "Простой монтаж и демонтаж"
+            ],
+            [
+              "MP260",
+              "Переносной",
+              "1,67 m",
+              "6,7",
+              "-",
+              "TE260HT, TE260 & RDS250",
+              "Подача ACF (алюминий)"
+            ],
+            [
+              "MPH",
+              "Переносной",
+              "2 m (SCF5)",
+              "11,1",
+              "435",
+              "TE260, TE260HT, TE326, TE360 & RDS250, RDS350",
+              "Подача SCF5"
+            ]
+          ],
+          "links": [
+            "/produkter/tei/borrmaster/mme",
+            "/produkter/tei/borrmaster/mem",
+            "/produkter/tei/borrmaster/hem",
+            "/produkter/tei/borrmaster/hemh",
+            "/produkter/tei/borrmaster/mp260",
+            "/produkter/tei/borrmaster/mph"
+          ]
+        },
+        {
+          "type": "text",
+          "html": "<small>Технические характеристики TEI учитывают потери гидравлической мощности 40 %. Эти значения могут быть изменены без предварительного уведомления.</small>",
+          "tableNote": true
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Системы подачи и тяговое усилие",
+          "feeds": true
+        },
+        {
+          "type": "text",
+          "html": "TEI изготавливает мачты из алюминия и стали. Подача выбирается по необходимому усилию обратной тяги (pullback): чем тяжелее буровая головка и глубже скважина, тем мощнее подача. Лёгкие мачты оснащены алюминиевой цепной подачей (ACF), мачты среднего класса — более новой и лёгкой подачей SCF, а крупные мачты, монтируемые на экскаваторы, — более мощными гидравлическими подачами.",
+          "feeds": true
+        },
+        {
+          "type": "table",
+          "header": true,
+          "caption": "Сравнение систем подачи",
+          "rows": [
+            [
+              "Подача",
+              "Typ",
+              "Тяговое усилие",
+              "Применяется на"
+            ],
+            [
+              "ACF",
+              "Алюминиевая цепная подача (лёгкая)",
+              "6,7 kN (1 500 lbf)",
+              "MP260, MME"
+            ],
+            [
+              "SCF",
+              "Новая, более лёгкая подача",
+              "11,1 kN (2 500 lbf)",
+              "MPH (SCF5, ход 2 м), MEM"
+            ],
+            [
+              "PCF",
+              "Гидравлическая цепная подача",
+              "15,6 kN (3 500 lbf)",
+              "Более мощные мачты TEI"
+            ],
+            [
+              "HCF",
+              "Гидравлическая цилиндровая подача",
+              "16,7-32,7 kN (3 750-7 350 lbf)",
+              "HEM (33 kN)"
+            ],
+            [
+              "PCFH / HCFH",
+              "Тяжёлые версии цепной и цилиндровой подачи",
+              "Большее тяговое усилие",
+              "HEMH (53 kN)"
+            ]
+          ],
+          "feeds": true
+        },
+        {
+          "type": "text",
+          "html": "<small>Значения в таблице — данные TEI по типам подачи; точное тяговое усилие вашей мачты указано на странице соответствующего продукта.</small>",
+          "feeds": true
+        }
+      ],
+      "published": true
     }
   },
   "source": {

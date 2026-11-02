@@ -458,6 +458,458 @@
         }
       ],
       "published": true
+    },
+    "lt": {
+      "title": "TE760",
+      "h1": "TE760",
+      "description": "TE760: hidraulinis gręžtuvas su dideliu sukimo momentu; tinka daugumai vidutinio dydžio inkaravimo įrenginių; patentuota ASA sistema; išėjimo galia: 18 kW; sukimo momentas: 4067 Nm…",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "TEI Rock Drills logotipas",
+          "href": "/produkter/tei",
+          "width": 1920,
+          "height": 1117,
+          "src": "/assets/img/tei-2.webp"
+        },
+        {
+          "type": "image",
+          "alt": "TE760: 2 paveikslėlis",
+          "width": 1674,
+          "height": 1152,
+          "src": "/assets/img/tei-topphammare-te760-2.webp"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Hidraulinis gręžtuvas su dideliu sukimo momentu",
+            "Tinka daugumai vidutinio dydžio inkaravimo įrenginių",
+            "Patentuota ASA sistema",
+            "Išėjimo galia: 18 kW",
+            "Sukimo momentas: 4067 Nm",
+            "Svoris: 240 kg"
+          ]
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Produkto lapas",
+          "href": "/assets/docs/tei-topphammare-te760-broschyr-eng.pdf",
+          "driveId": "1c-wkdGhm-PHg44JM4fd4XtTHw30nqnz8"
+        },
+        {
+          "type": "datasheet",
+          "title": "Techniniai duomenys",
+          "tagline": "Hidraulinis viršutinio smūgio plaktukas",
+          "intro": [
+            "TE760 turi tris galios režimus, todėl viršutinio smūgio plaktukas atitinka visus gręžimo reikalavimus savo darbo diapazone. ASA funkcija (automatinis smūgio reguliavimas) užtikrina sklandų veikimą, didesnį efektyvumą ir geriausią plaktuko apsaugą (ilgesnis tarnavimo laikas). Funkcija taip pat slopina tiek smūgio, tiek grįžimo taške, todėl pailgėja sandariklių ir gręžimo įrankių tarnavimo laikas.",
+            "Tvirta priekinė dalis su didesniu sukimo momentu optimaliai tinka tiek ilgų skylių gręžimui štreko priekyje, tiek vertikaliam sprogdinimo skylių gręžimui."
+          ],
+          "groups": [
+            {
+              "title": "Sukimasis",
+              "rows": [
+                {
+                  "label": "Sukimo momentas",
+                  "metric": "4067 Nm"
+                },
+                {
+                  "label": "Sukimosi debitas",
+                  "metric": "57 lpm"
+                },
+                {
+                  "label": "Sukimosi slėgis",
+                  "metric": "172 bar"
+                },
+                {
+                  "label": "Svoris",
+                  "metric": "240 kg"
+                },
+                {
+                  "label": "Apsukų skaičius",
+                  "metric": "200 rpm"
+                }
+              ]
+            },
+            {
+              "title": "Smūginė sistema",
+              "rows": [
+                {
+                  "label": "Išėjimo galia",
+                  "metric": "19 kW"
+                },
+                {
+                  "label": "Plaktuko debitas",
+                  "metric": "95 lpm"
+                },
+                {
+                  "label": "Plaktuko slėgis",
+                  "metric": "172 bar"
+                },
+                {
+                  "label": "Smūgių dažnis",
+                  "metric": "60 Hz"
+                }
+              ]
+            }
+          ],
+          "note": "Galimi sriegių (shank) tipai: R32 (moteriškas), R38, R51, T38, T45, T40, T51, T52, W38, W51, H552H, H55RH, T52RH. TEI techniniai duomenys numato 40 % hidraulinės galios nuostolių."
+        },
+        {
+          "type": "related",
+          "title": "Tinkami stiebai",
+          "items": [
+            {
+              "href": "/produkter/tei/borrmaster/hem"
+            },
+            {
+              "href": "/produkter/tei/borrmaster/hemh"
+            }
+          ],
+          "compat": true
+        }
+      ],
+      "published": true
+    },
+    "lv": {
+      "title": "TE760",
+      "h1": "TE760",
+      "description": "TE760: hidrauliskais urbis ar augstu griezes momentu; der lielākajai daļai vidējo enkuru urbjiekārtu; patentētā ASA sistēma; izejas jauda: 18 kW; griezes moments: 4067 Nm…",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "TEI Rock Drills logotips",
+          "href": "/produkter/tei",
+          "width": 1920,
+          "height": 1117,
+          "src": "/assets/img/tei-2.webp"
+        },
+        {
+          "type": "image",
+          "alt": "TE760: 2. attēls",
+          "width": 1674,
+          "height": 1152,
+          "src": "/assets/img/tei-topphammare-te760-2.webp"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Hidrauliskais urbis ar augstu griezes momentu",
+            "Der lielākajai daļai vidējo enkuru urbjiekārtu",
+            "Patentētā ASA sistēma",
+            "Izejas jauda: 18 kW",
+            "Griezes moments: 4067 Nm",
+            "Svars: 240 kg"
+          ]
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Produkta lapa",
+          "href": "/assets/docs/tei-topphammare-te760-broschyr-eng.pdf",
+          "driveId": "1c-wkdGhm-PHg44JM4fd4XtTHw30nqnz8"
+        },
+        {
+          "type": "datasheet",
+          "title": "Tehniskie dati",
+          "tagline": "Hidrauliskais augšējā āmura urbis",
+          "intro": [
+            "TE760 ir trīs jaudas režīmi, lai augšējā āmura urbis tiktu galā ar visām urbšanas prasībām savā darba diapazonā. ASA funkcija (automātiska sitiena regulēšana) nodrošina vienmērīgu darbību, augstāku efektivitāti un labāko aizsardzību augšējā āmura urbim (ilgāks kalpošanas laiks). Funkcija nodrošina arī slāpēšanu gan sitiena, gan atgriešanās punktā, kas pagarina blīvējumu un urbšanas instrumentu kalpošanas laiku.",
+            "Izturīgā priekšdaļa ar augstāku griezes momentu ir optimāla gan garo urbumu urbšanai frontē, gan vertikālai spridzināšanas urbumu urbšanai."
+          ],
+          "groups": [
+            {
+              "title": "Rotācija",
+              "rows": [
+                {
+                  "label": "Griezes moments",
+                  "metric": "4067 Nm"
+                },
+                {
+                  "label": "Rotācijas caurplūde",
+                  "metric": "57 lpm"
+                },
+                {
+                  "label": "Rotācijas spiediens",
+                  "metric": "172 bar"
+                },
+                {
+                  "label": "Svars",
+                  "metric": "240 kg"
+                },
+                {
+                  "label": "Apgriezieni",
+                  "metric": "200 rpm"
+                }
+              ]
+            },
+            {
+              "title": "Sitiena sistēma",
+              "rows": [
+                {
+                  "label": "Izejas jauda",
+                  "metric": "19 kW"
+                },
+                {
+                  "label": "Āmura caurplūde",
+                  "metric": "95 lpm"
+                },
+                {
+                  "label": "Āmura spiediens",
+                  "metric": "172 bar"
+                },
+                {
+                  "label": "Sitienu frekvence",
+                  "metric": "60 Hz"
+                }
+              ]
+            }
+          ],
+          "note": "Pieejamie vītņu (shank) veidi: R32 (iekšējā), R38, R51, T38, T45, T40, T51, T52, W38, W51, H552H, H55RH, T52RH. TEI tehniskie dati paredz 40 % hidrauliskās jaudas zudumu."
+        },
+        {
+          "type": "related",
+          "title": "Piemērotie masti",
+          "items": [
+            {
+              "href": "/produkter/tei/borrmaster/hem"
+            },
+            {
+              "href": "/produkter/tei/borrmaster/hemh"
+            }
+          ],
+          "compat": true
+        }
+      ],
+      "published": true
+    },
+    "et": {
+      "title": "TE760",
+      "h1": "TE760",
+      "description": "TE760: suure pöördemomendiga hüdrauliline puur; sobib enamikule keskmise suurusega ankurpuurimisseadmetele; patenteeritud ASA-süsteem; väljundvõimsus: 18 kW; pöördemoment: 4067 Nm…",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "TEI Rock Drills logo",
+          "href": "/produkter/tei",
+          "width": 1920,
+          "height": 1117,
+          "src": "/assets/img/tei-2.webp"
+        },
+        {
+          "type": "image",
+          "alt": "TE760: pilt 2",
+          "width": 1674,
+          "height": 1152,
+          "src": "/assets/img/tei-topphammare-te760-2.webp"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Suure pöördemomendiga hüdrauliline puur",
+            "Sobib enamikule keskmise suurusega ankurpuurimisseadmetele",
+            "Patenteeritud ASA-süsteem",
+            "Väljundvõimsus: 18 kW",
+            "Pöördemoment: 4067 Nm",
+            "Kaal: 240 kg"
+          ]
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Tootleht",
+          "href": "/assets/docs/tei-topphammare-te760-broschyr-eng.pdf",
+          "driveId": "1c-wkdGhm-PHg44JM4fd4XtTHw30nqnz8"
+        },
+        {
+          "type": "datasheet",
+          "title": "Tehnilised andmed",
+          "tagline": "Hüdrauliline ülavasar",
+          "intro": [
+            "TE760-l on kolm võimsusrežiimi, nii et ülavasar vastab kõigile puurimisnõuetele oma tööulatuses. ASA-funktsioon (automaatne löögireguleerimine) tagab sujuva töö, suurema tõhususe ja parima kaitse ülavasarale (pikem kasutusiga). Funktsioon summutab ka nii löögi- kui ka tagasipöördepunktis, mis pikendab tihendite ja puurimisinstrumentide kasutusiga.",
+            "Tugev esiosa suurema pöördemomendiga sobib optimaalselt nii pikkade aukude puurimiseks rindel kui ka vertikaalseks lõhketööaukude puurimiseks."
+          ],
+          "groups": [
+            {
+              "title": "Pöörlemine",
+              "rows": [
+                {
+                  "label": "Pöördemoment",
+                  "metric": "4067 Nm"
+                },
+                {
+                  "label": "Pöörlemise vooluhulk",
+                  "metric": "57 lpm"
+                },
+                {
+                  "label": "Pöörlemise rõhk",
+                  "metric": "172 bar"
+                },
+                {
+                  "label": "Kaal",
+                  "metric": "240 kg"
+                },
+                {
+                  "label": "Pöörded",
+                  "metric": "200 rpm"
+                }
+              ]
+            },
+            {
+              "title": "Löögisüsteem",
+              "rows": [
+                {
+                  "label": "Väljundvõimsus",
+                  "metric": "19 kW"
+                },
+                {
+                  "label": "Haamri vooluhulk",
+                  "metric": "95 lpm"
+                },
+                {
+                  "label": "Haamri rõhk",
+                  "metric": "172 bar"
+                },
+                {
+                  "label": "Löögisagedus",
+                  "metric": "60 Hz"
+                }
+              ]
+            }
+          ],
+          "note": "Saadaolevad keeretüübid (shank): R32 (emane), R38, R51, T38, T45, T40, T51, T52, W38, W51, H552H, H55RH, T52RH. TEI tehnilised andmed eeldavad 40 % hüdrauliivõimsuse kadu."
+        },
+        {
+          "type": "related",
+          "title": "Sobivad mastid",
+          "items": [
+            {
+              "href": "/produkter/tei/borrmaster/hem"
+            },
+            {
+              "href": "/produkter/tei/borrmaster/hemh"
+            }
+          ],
+          "compat": true
+        }
+      ],
+      "published": true
+    },
+    "ru": {
+      "title": "TE760",
+      "h1": "TE760",
+      "description": "TE760: гидравлический бур с высоким крутящим моментом; подходит для большинства анкерных буровых установок среднего размера; запатентованная система ASA; выходная мощность: 18 кВт; крутящий момент: 4067 Нм…",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Логотип TEI Rock Drills",
+          "href": "/produkter/tei",
+          "width": 1920,
+          "height": 1117,
+          "src": "/assets/img/tei-2.webp"
+        },
+        {
+          "type": "image",
+          "alt": "TE760: изображение 2",
+          "width": 1674,
+          "height": 1152,
+          "src": "/assets/img/tei-topphammare-te760-2.webp"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Гидравлический бур с высоким крутящим моментом",
+            "Подходит для большинства анкерных буровых установок среднего размера",
+            "Запатентованная система ASA",
+            "Выходная мощность: 18 кВт",
+            "Крутящий момент: 4067 Нм",
+            "Масса: 240 кг"
+          ]
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Технический лист",
+          "href": "/assets/docs/tei-topphammare-te760-broschyr-eng.pdf",
+          "driveId": "1c-wkdGhm-PHg44JM4fd4XtTHw30nqnz8"
+        },
+        {
+          "type": "datasheet",
+          "title": "Технические данные",
+          "tagline": "Гидравлический верхний перфоратор",
+          "intro": [
+            "У TE760 три режима мощности, поэтому верхний перфоратор справляется со всеми задачами бурения в своём рабочем диапазоне. Функция ASA (автоматическая регулировка удара) обеспечивает плавную работу, более высокую эффективность и наилучшую защиту перфоратора (более долгий срок службы). Она также обеспечивает демпфирование как в точке удара, так и в точке возврата, что продлевает срок службы уплотнений и бурового инструмента.",
+            "Усиленная передняя часть с более высоким крутящим моментом оптимальна как для бурения длинных шпуров в забое, так и для вертикального бурения взрывных скважин."
+          ],
+          "groups": [
+            {
+              "title": "Вращение",
+              "rows": [
+                {
+                  "label": "Крутящий момент",
+                  "metric": "4067 Nm"
+                },
+                {
+                  "label": "Расход вращения",
+                  "metric": "57 lpm"
+                },
+                {
+                  "label": "Давление вращения",
+                  "metric": "172 bar"
+                },
+                {
+                  "label": "Масса",
+                  "metric": "240 kg"
+                },
+                {
+                  "label": "Частота вращения",
+                  "metric": "200 rpm"
+                }
+              ]
+            },
+            {
+              "title": "Ударная система",
+              "rows": [
+                {
+                  "label": "Выходная мощность",
+                  "metric": "19 kW"
+                },
+                {
+                  "label": "Расход молота",
+                  "metric": "95 lpm"
+                },
+                {
+                  "label": "Давление молота",
+                  "metric": "172 bar"
+                },
+                {
+                  "label": "Частота ударов",
+                  "metric": "60 Hz"
+                }
+              ]
+            }
+          ],
+          "note": "Доступные типы хвостовиков (shank): R32 (внутренняя), R38, R51, T38, T45, T40, T51, T52, W38, W51, H552H, H55RH, T52RH. Технические данные TEI предполагают потери гидравлической мощности 40 %."
+        },
+        {
+          "type": "related",
+          "title": "Подходящие мачты",
+          "items": [
+            {
+              "href": "/produkter/tei/borrmaster/hem"
+            },
+            {
+              "href": "/produkter/tei/borrmaster/hemh"
+            }
+          ],
+          "compat": true
+        }
+      ],
+      "published": true
     }
   },
   "source": {

@@ -834,6 +834,834 @@
         }
       ],
       "published": true
+    },
+    "lt": {
+      "title": "Pradžia",
+      "h1": "Kartu kuriame sėkmę.",
+      "description": "Statybos pramonės tiekėjas ir konsultantas, daugiausia dėmesio skiriantis betonui, paviršių apsaugai, geotechnikai, betono siurbliams, gręžimo įrenginiams ir susijusiems produktams.",
+      "blocks": [
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Mūsų prekių ženklai"
+        },
+        {
+          "type": "cards",
+          "items": [
+            {
+              "href": "/produkter/haeny",
+              "label": "Läs mer",
+              "html": "Siurbliai gruntui sustiprinti, sandarinti ir inkaruoti pamatų darbuose, statyboje ir tunelių tiesime.",
+              "text": "Siurbliai gruntui sustiprinti, sandarinti ir inkaruoti pamatų darbuose, statyboje ir tunelių tiesime.",
+              "image": "/assets/img/haeny.webp",
+              "width": 1000,
+              "height": 1000,
+              "alt": "HÄNY logotipas"
+            },
+            {
+              "href": "/produkter/tei",
+              "label": "Läs mer",
+              "html": "Gręžimo stiebų ekskavatoriams, gręžimo priedų ir ankštoms erdvėms skirtų gręžimo įrenginių gamintojas.",
+              "text": "Gręžimo stiebų ekskavatoriams, gręžimo priedų ir ankštoms erdvėms skirtų gręžimo įrenginių gamintojas.",
+              "image": "/assets/img/tei.webp",
+              "width": 1920,
+              "height": 1920,
+              "alt": "TEI Rock Drills logotipas"
+            },
+            {
+              "href": "/produkter/marini",
+              "label": "Läs mer",
+              "html": "Specialioji technika pamatams, karjerams, vikšriniams automobiliams, gręžimo įrenginiams ir lynų pjūklams su priedais.",
+              "text": "Specialioji technika pamatams, karjerams, vikšriniams automobiliams, gręžimo įrenginiams ir lynų pjūklams su priedais.",
+              "image": "/assets/img/marini.webp",
+              "width": 1241,
+              "height": 1241,
+              "alt": "Marini logotipas"
+            },
+            {
+              "href": "/produkter/geobrugg",
+              "label": "Läs mer",
+              "html": "Produktai ir sistemos šlaitams stabilizuoti bei apsaugai nuo uolienų nuošliaužų ir riedančių luitų.",
+              "text": "Produktai ir sistemos šlaitams stabilizuoti bei apsaugai nuo uolienų nuošliaužų ir riedančių luitų.",
+              "image": "/assets/img/geobrugg.webp",
+              "width": 1000,
+              "height": 1000,
+              "alt": "Geobrugg logotipas"
+            },
+            {
+              "href": "/produkter/mapei",
+              "label": "Läs mer",
+              "html": "Hidroizoliacijos sistemos, tinko skiediniai, klijai, hermetikai ir kiti statybos pramonės cheminiai produktai.",
+              "text": "Hidroizoliacijos sistemos, tinko skiediniai, klijai, hermetikai ir kiti statybos pramonės cheminiai produktai.",
+              "image": "/assets/img/mapei.webp",
+              "width": 1920,
+              "height": 1920,
+              "alt": "Mapei logotipas"
+            },
+            {
+              "href": "/produkter/weber",
+              "label": "Läs mer",
+              "html": "Kompleksiniai fasadų tinkavimo, mūro skiedinių, grindų niveliavimo ir plytelių klijavimo sistemų sprendimai.",
+              "text": "Kompleksiniai fasadų tinkavimo, mūro skiedinių, grindų niveliavimo ir plytelių klijavimo sistemų sprendimai.",
+              "image": "/assets/img/weber.webp",
+              "width": 1100,
+              "height": 1100,
+              "alt": "Weber logotipas"
+            },
+            {
+              "href": "/produkter/ecobeton",
+              "label": "Läs mer",
+              "html": "Statybos pramonės sistemos ir sprendimai tokiems produktams kaip betonas, tinkas, plytos ir mediena.",
+              "text": "Statybos pramonės sistemos ir sprendimai tokiems produktams kaip betonas, tinkas, plytos ir mediena.",
+              "image": "/assets/img/ecobeton.webp",
+              "width": 1000,
+              "height": 1000,
+              "alt": "Ecobeton logotipas"
+            },
+            {
+              "href": "/produkter/ram-board",
+              "label": "Läs mer",
+              "html": "Pakartotiniam naudojimui pagaminti grindų ir staktų apsaugos produktai su FSC sertifikatu.",
+              "text": "Pakartotiniam naudojimui pagaminti grindų ir staktų apsaugos produktai su FSC sertifikatu.",
+              "image": "/assets/img/ram-board.webp",
+              "width": 250,
+              "height": 250,
+              "alt": "Ram Board logotipas"
+            },
+            {
+              "href": "/produkter/brutus",
+              "label": "Läs mer",
+              "html": "Nesprogstamasis uolienų skaldymas saugiam uolienų ir akmens skaldymui be vibracijos ir triukšmo. Puikiai tinka jautrioms vietoms.",
+              "text": "Nesprogstamasis uolienų skaldymas saugiam uolienų ir akmens skaldymui be vibracijos ir triukšmo. Puikiai tinka jautrioms vietoms.",
+              "image": "/assets/img/brutus.webp",
+              "width": 800,
+              "height": 800,
+              "alt": "Brutus logotipas"
+            },
+            {
+              "href": "/produkter/terra-infrastructure",
+              "label": "Läs mer",
+              "html": "Galingi viršutinio smūgio plaktukai ir vibraciniai agregatai inkarams gręžti ir špuntams kalti sunkiame grunte.",
+              "text": "Galingi viršutinio smūgio plaktukai ir vibraciniai agregatai inkarams gręžti ir špuntams kalti sunkiame grunte.",
+              "image": "/assets/img/terra-infrastructure.webp",
+              "width": 1000,
+              "height": 1000,
+              "alt": "Terra Infrastructure logotipas"
+            },
+            {
+              "href": "/produkter/reed",
+              "label": "Läs mer",
+              "html": "Tvirta įranga purkštam betonui, betono siurbliai ir gunito mašinos.",
+              "text": "Tvirta įranga purkštam betonui, betono siurbliai ir gunito mašinos.",
+              "image": "/assets/img/reed.webp",
+              "width": 1920,
+              "height": 1920,
+              "alt": "REED logotipas"
+            },
+            {
+              "href": "/produkter/ahlm",
+              "label": "Läs mer",
+              "html": "Sausų mišinių silosai cementui ir sausiems skiediniams tvarkyti uždaroje, nuo dulkių ir vandens apsaugotoje sistemoje.",
+              "text": "Sausų mišinių silosai cementui ir sausiems skiediniams tvarkyti uždaroje, nuo dulkių ir vandens apsaugotoje sistemoje.",
+              "image": "/assets/img/ahlm.webp",
+              "width": 1920,
+              "height": 1920,
+              "alt": "AHLM logotipas"
+            },
+            {
+              "href": "/produkter/kraft-tool",
+              "label": "Läs mer",
+              "html": "Produktai, tokie kaip mentės, tinkavimo lentos, glaistymo lentos ir kiti ne mažiau svarbūs statybos priedai.",
+              "text": "Produktai, tokie kaip mentės, tinkavimo lentos, glaistymo lentos ir kiti ne mažiau svarbūs statybos priedai.",
+              "image": "/assets/img/kraft-tool.webp",
+              "width": 300,
+              "height": 300,
+              "alt": "Kraft Tool logotipas"
+            },
+            {
+              "href": "/produkter/flexo-tekniikka",
+              "label": "Läs mer",
+              "image": "/assets/img/logo-flexo-tekniikka.webp",
+              "width": 1202,
+              "height": 127,
+              "alt": "Flexo-Tekniikka",
+              "html": "Šiaurės šalių hidraulinių agregatų (powerpacks) gamintojas pramonei ir mobiliosioms mašinoms.",
+              "text": "Šiaurės šalių hidraulinių agregatų (powerpacks) gamintojas pramonei ir mobiliosioms mašinoms."
+            },
+            {
+              "href": "/produkter/jean-lutz",
+              "label": "Läs mer",
+              "image": "/assets/img/jean-lutz.webp",
+              "width": 1920,
+              "height": 1920,
+              "text": "Duomenų registratoriai, ekranai ir jutikliai purkštiniam gruntui sutvirtinti (jet grouting), injektavimui ir gręžimui.",
+              "html": "Duomenų registratoriai, ekranai ir jutikliai purkštiniam gruntui sutvirtinti (jet grouting), injektavimui ir gręžimui.",
+              "alt": "Jean Lutz logotipas"
+            }
+          ]
+        },
+        {
+          "type": "chips",
+          "title": "Konsultuojame:",
+          "items": [
+            "cementas",
+            "betonas",
+            "impregnavimas",
+            "injektavimas",
+            "paviršių dangos",
+            "paviršių apsauga",
+            "geotechnika",
+            "montavimo pagalba",
+            "tranšėjų ir duobių sutvirtinimas",
+            "silosai",
+            "betono siurbliai",
+            "gręžimo įrenginiai",
+            "lynų pjūklai",
+            "nesprogstamasis uolienų skaldymas",
+            "šlaitų stabilizavimas"
+          ]
+        },
+        {
+          "type": "cta",
+          "title": "Nedvejodami klauskite, išsprendžiame daugumą dalykų.",
+          "text": "Susisiekite su mumis ir mes jums padėsime, kad ir kuriame statybos proceso etape esate.",
+          "button": "Susisiekite su mumis",
+          "href": "/kontakta-oss"
+        }
+      ],
+      "lead": "Statybos pramonės tiekėjas ir konsultantas, daugiausia dėmesio skiriantis betonui, paviršių apsaugai, geotechnikai, betono siurbliams, gręžimo įrenginiams ir susijusiems produktams.",
+      "ctas": [
+        {
+          "text": "Žiūrėti mūsų produktus",
+          "href": "/produkter"
+        },
+        {
+          "text": "Susisiekite su mumis",
+          "href": "/kontakta-oss"
+        }
+      ],
+      "published": true
+    },
+    "lv": {
+      "title": "Sākums",
+      "h1": "Kopā mēs veidojam panākumus.",
+      "description": "Būvniecības nozares piegādātājs un konsultants ar spēcīgu orientāciju uz betonu, virsmu aizsardzību, ģeotehniku, betona sūkņiem, urbjiekārtām un saistītiem produktiem.",
+      "blocks": [
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Mūsu zīmoli"
+        },
+        {
+          "type": "cards",
+          "items": [
+            {
+              "href": "/produkter/haeny",
+              "label": "Läs mer",
+              "html": "Sūkņi nostiprināšanai, blīvēšanai un enkurošanai pamatu darbos, būvniecībā un tunelēšanā.",
+              "text": "Sūkņi nostiprināšanai, blīvēšanai un enkurošanai pamatu darbos, būvniecībā un tunelēšanā.",
+              "image": "/assets/img/haeny.webp",
+              "width": 1000,
+              "height": 1000,
+              "alt": "HÄNY logotips"
+            },
+            {
+              "href": "/produkter/tei",
+              "label": "Läs mer",
+              "html": "Urbšanas mastu ekskavatoriem, urbšanas piederumu un urbjiekārtu šaurām vietām ražotājs.",
+              "text": "Urbšanas mastu ekskavatoriem, urbšanas piederumu un urbjiekārtu šaurām vietām ražotājs.",
+              "image": "/assets/img/tei.webp",
+              "width": 1920,
+              "height": 1920,
+              "alt": "TEI Rock Drills logotips"
+            },
+            {
+              "href": "/produkter/marini",
+              "label": "Läs mer",
+              "html": "Speciālās iekārtas pamatu darbiem, karjeriem, kāpurķēžu transportlīdzekļiem, urbjiekārtām un trošu zāģiem ar piederumiem.",
+              "text": "Speciālās iekārtas pamatu darbiem, karjeriem, kāpurķēžu transportlīdzekļiem, urbjiekārtām un trošu zāģiem ar piederumiem.",
+              "image": "/assets/img/marini.webp",
+              "width": 1241,
+              "height": 1241,
+              "alt": "Marini logotips"
+            },
+            {
+              "href": "/produkter/geobrugg",
+              "label": "Läs mer",
+              "html": "Produkti un sistēmas nogāžu stabilizēšanai un aizsardzībai pret nogruvumiem un akmeņu krišanu.",
+              "text": "Produkti un sistēmas nogāžu stabilizēšanai un aizsardzībai pret nogruvumiem un akmeņu krišanu.",
+              "image": "/assets/img/geobrugg.webp",
+              "width": 1000,
+              "height": 1000,
+              "alt": "Geobrugg logotips"
+            },
+            {
+              "href": "/produkter/mapei",
+              "label": "Läs mer",
+              "html": "Hidroizolācijas sistēmas, apmetuma java, līmes, hermētiķi un citi būvniecības nozares ķīmiskie produkti.",
+              "text": "Hidroizolācijas sistēmas, apmetuma java, līmes, hermētiķi un citi būvniecības nozares ķīmiskie produkti.",
+              "image": "/assets/img/mapei.webp",
+              "width": 1920,
+              "height": 1920,
+              "alt": "Mapei logotips"
+            },
+            {
+              "href": "/produkter/weber",
+              "label": "Läs mer",
+              "html": "Kompleksi risinājumi fasāžu apmešanai, mūra javām, grīdu izlīdzināšanai un flīzēšanai.",
+              "text": "Kompleksi risinājumi fasāžu apmešanai, mūra javām, grīdu izlīdzināšanai un flīzēšanai.",
+              "image": "/assets/img/weber.webp",
+              "width": 1100,
+              "height": 1100,
+              "alt": "Weber logotips"
+            },
+            {
+              "href": "/produkter/ecobeton",
+              "label": "Läs mer",
+              "html": "Sistēmas un risinājumi būvniecības nozarei tādiem produktiem kā betons, apmetums, ķieģeļi un koks.",
+              "text": "Sistēmas un risinājumi būvniecības nozarei tādiem produktiem kā betons, apmetums, ķieģeļi un koks.",
+              "image": "/assets/img/ecobeton.webp",
+              "width": 1000,
+              "height": 1000,
+              "alt": "Ecobeton logotips"
+            },
+            {
+              "href": "/produkter/ram-board",
+              "label": "Läs mer",
+              "html": "Atkārtotai lietošanai paredzēti grīdas un durvju ailu aizsardzības produkti ar FSC sertifikātu.",
+              "text": "Atkārtotai lietošanai paredzēti grīdas un durvju ailu aizsardzības produkti ar FSC sertifikātu.",
+              "image": "/assets/img/ram-board.webp",
+              "width": 250,
+              "height": 250,
+              "alt": "Ram Board logotips"
+            },
+            {
+              "href": "/produkter/brutus",
+              "label": "Läs mer",
+              "html": "Nesprāgstošā iežu šķelšana drošai iežu un akmens šķelšanai bez vibrācijas un trokšņa. Lieliski piemērota jutīgām vietām.",
+              "text": "Nesprāgstošā iežu šķelšana drošai iežu un akmens šķelšanai bez vibrācijas un trokšņa. Lieliski piemērota jutīgām vietām.",
+              "image": "/assets/img/brutus.webp",
+              "width": 800,
+              "height": 800,
+              "alt": "Brutus logotips"
+            },
+            {
+              "href": "/produkter/terra-infrastructure",
+              "label": "Läs mer",
+              "html": "Jaudīgi augšējā āmura urbji un vibroiekārtas enkuru urbšanai un lokšņu pāļu dzīšanai smagā grunti.",
+              "text": "Jaudīgi augšējā āmura urbji un vibroiekārtas enkuru urbšanai un lokšņu pāļu dzīšanai smagā grunti.",
+              "image": "/assets/img/terra-infrastructure.webp",
+              "width": 1000,
+              "height": 1000,
+              "alt": "Terra Infrastructure logotips"
+            },
+            {
+              "href": "/produkter/reed",
+              "label": "Läs mer",
+              "html": "Izturīgas iekārtas šļakatbetonam, betona sūkņi un gunīta mašīnas.",
+              "text": "Izturīgas iekārtas šļakatbetonam, betona sūkņi un gunīta mašīnas.",
+              "image": "/assets/img/reed.webp",
+              "width": 1920,
+              "height": 1920,
+              "alt": "REED logotips"
+            },
+            {
+              "href": "/produkter/ahlm",
+              "label": "Läs mer",
+              "html": "Sauso maisījumu siloss cementa un sauso javu apritei slēgtā, putekļu un ūdens necaurlaidīgā sistēmā.",
+              "text": "Sauso maisījumu siloss cementa un sauso javu apritei slēgtā, putekļu un ūdens necaurlaidīgā sistēmā.",
+              "image": "/assets/img/ahlm.webp",
+              "width": 1920,
+              "height": 1920,
+              "alt": "AHLM logotips"
+            },
+            {
+              "href": "/produkter/kraft-tool",
+              "label": "Läs mer",
+              "html": "Tādi produkti kā lāpstiņas, apmetuma dēļi, špaktelēšanas dēļi un citi tikpat svarīgi būvniecības piederumi.",
+              "text": "Tādi produkti kā lāpstiņas, apmetuma dēļi, špaktelēšanas dēļi un citi tikpat svarīgi būvniecības piederumi.",
+              "image": "/assets/img/kraft-tool.webp",
+              "width": 300,
+              "height": 300,
+              "alt": "Kraft Tool logotips"
+            },
+            {
+              "href": "/produkter/flexo-tekniikka",
+              "label": "Läs mer",
+              "image": "/assets/img/logo-flexo-tekniikka.webp",
+              "width": 1202,
+              "height": 127,
+              "alt": "Flexo-Tekniikka",
+              "html": "Ziemeļvalstu hidraulisko agregātu (powerpacks) ražotājs rūpniecībai un mobilajām iekārtām.",
+              "text": "Ziemeļvalstu hidraulisko agregātu (powerpacks) ražotājs rūpniecībai un mobilajām iekārtām."
+            },
+            {
+              "href": "/produkter/jean-lutz",
+              "label": "Läs mer",
+              "image": "/assets/img/jean-lutz.webp",
+              "width": 1920,
+              "height": 1920,
+              "text": "Datu reģistratori, displeji un devēji strūklas injektēšanai (jet grouting), injektēšanai un urbšanai.",
+              "html": "Datu reģistratori, displeji un devēji strūklas injektēšanai (jet grouting), injektēšanai un urbšanai.",
+              "alt": "Jean Lutz logotips"
+            }
+          ]
+        },
+        {
+          "type": "chips",
+          "title": "Konsultējam šādos jautājumos:",
+          "items": [
+            "cements",
+            "betons",
+            "impregnēšana",
+            "injektēšana",
+            "virsmu pārklājumi",
+            "virsmu aizsardzība",
+            "ģeotehnika",
+            "montāžas atbalsts",
+            "tranšeju un bedru nostiprināšana",
+            "silosi",
+            "betona sūkņi",
+            "urbjiekārtas",
+            "trošu zāģi",
+            "nesprāgstošā iežu šķelšana",
+            "nogāžu stabilizēšana"
+          ]
+        },
+        {
+          "type": "cta",
+          "title": "Droši jautājiet, mēs atrisinām lielāko daļu jautājumu.",
+          "text": "Sazinieties ar mums, un mēs jums palīdzēsim neatkarīgi no tā, kurā būvniecības procesa posmā atrodaties.",
+          "button": "Sazinieties ar mums",
+          "href": "/kontakta-oss"
+        }
+      ],
+      "lead": "Būvniecības nozares piegādātājs un konsultants ar spēcīgu orientāciju uz betonu, virsmu aizsardzību, ģeotehniku, betona sūkņiem, urbjiekārtām un saistītiem produktiem.",
+      "ctas": [
+        {
+          "text": "Skatīt mūsu produktus",
+          "href": "/produkter"
+        },
+        {
+          "text": "Sazinieties ar mums",
+          "href": "/kontakta-oss"
+        }
+      ],
+      "published": true
+    },
+    "et": {
+      "title": "Avaleht",
+      "h1": "Koos ehitame edu.",
+      "description": "Ehitustööstuse tarnija ja konsultant, kelle põhitugevus on betoon, pinnakaitse, geotehnika, betoonipumbad, puurimisseadmed ja seotud tooted.",
+      "blocks": [
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Meie kaubamärgid"
+        },
+        {
+          "type": "cards",
+          "items": [
+            {
+              "href": "/produkter/haeny",
+              "label": "Läs mer",
+              "html": "Pumbad tugevdamiseks, tihendamiseks ja ankurdamiseks vundamenditöödel, ehituses ja tunnelirajamisel.",
+              "text": "Pumbad tugevdamiseks, tihendamiseks ja ankurdamiseks vundamenditöödel, ehituses ja tunnelirajamisel.",
+              "image": "/assets/img/haeny.webp",
+              "width": 1000,
+              "height": 1000,
+              "alt": "HÄNY logo"
+            },
+            {
+              "href": "/produkter/tei",
+              "label": "Läs mer",
+              "html": "Ekskavaatoritele mõeldud puurimismastide, puurimistarvikute ja kitsastesse ruumidesse sobivate puurimisseadmete tootja.",
+              "text": "Ekskavaatoritele mõeldud puurimismastide, puurimistarvikute ja kitsastesse ruumidesse sobivate puurimisseadmete tootja.",
+              "image": "/assets/img/tei.webp",
+              "width": 1920,
+              "height": 1920,
+              "alt": "TEI Rock Drills logo"
+            },
+            {
+              "href": "/produkter/marini",
+              "label": "Läs mer",
+              "html": "Eriseadmed vundamenditöödeks, kaevandamiseks, roomikmasinatele, puurimisseadmetele ja trossaagidele koos tarvikutega.",
+              "text": "Eriseadmed vundamenditöödeks, kaevandamiseks, roomikmasinatele, puurimisseadmetele ja trossaagidele koos tarvikutega.",
+              "image": "/assets/img/marini.webp",
+              "width": 1241,
+              "height": 1241,
+              "alt": "Marini logo"
+            },
+            {
+              "href": "/produkter/geobrugg",
+              "label": "Läs mer",
+              "html": "Tooted ja süsteemid nõlvade stabiliseerimiseks ning kaitseks kaljuvaringute ja kivimirusu eest.",
+              "text": "Tooted ja süsteemid nõlvade stabiliseerimiseks ning kaitseks kaljuvaringute ja kivimirusu eest.",
+              "image": "/assets/img/geobrugg.webp",
+              "width": 1000,
+              "height": 1000,
+              "alt": "Geobrugg logo"
+            },
+            {
+              "href": "/produkter/mapei",
+              "label": "Läs mer",
+              "html": "Veetõkkesüsteemid, krohvisegud, liimid, tihendusmassid ja muud ehitustööstuse keemiatooted.",
+              "text": "Veetõkkesüsteemid, krohvisegud, liimid, tihendusmassid ja muud ehitustööstuse keemiatooted.",
+              "image": "/assets/img/mapei.webp",
+              "width": 1920,
+              "height": 1920,
+              "alt": "Mapei logo"
+            },
+            {
+              "href": "/produkter/weber",
+              "label": "Läs mer",
+              "html": "Terviklahendused fassaadikrohvi, müürisegu, põrandavalu ja plaatimise jaoks.",
+              "text": "Terviklahendused fassaadikrohvi, müürisegu, põrandavalu ja plaatimise jaoks.",
+              "image": "/assets/img/weber.webp",
+              "width": 1100,
+              "height": 1100,
+              "alt": "Weber logo"
+            },
+            {
+              "href": "/produkter/ecobeton",
+              "label": "Läs mer",
+              "html": "Süsteemid ja lahendused ehitustööstusele, näiteks betooni, krohvi, tellise ja puidu jaoks.",
+              "text": "Süsteemid ja lahendused ehitustööstusele, näiteks betooni, krohvi, tellise ja puidu jaoks.",
+              "image": "/assets/img/ecobeton.webp",
+              "width": 1000,
+              "height": 1000,
+              "alt": "Ecobeton logo"
+            },
+            {
+              "href": "/produkter/ram-board",
+              "label": "Läs mer",
+              "html": "Taaskasutuseks valmistatud põranda- ja karmikaitsetooted FSC-sertifikaadiga.",
+              "text": "Taaskasutuseks valmistatud põranda- ja karmikaitsetooted FSC-sertifikaadiga.",
+              "image": "/assets/img/ram-board.webp",
+              "width": 250,
+              "height": 250,
+              "alt": "Ram Board logo"
+            },
+            {
+              "href": "/produkter/brutus",
+              "label": "Läs mer",
+              "html": "Mittelõhkeaine kivi ja kalju ohutuks purustamiseks ilma vibratsiooni ja müratta. Sobib suurepäraselt tundlikesse kohtadesse.",
+              "text": "Mittelõhkeaine kivi ja kalju ohutuks purustamiseks ilma vibratsiooni ja müratta. Sobib suurepäraselt tundlikesse kohtadesse.",
+              "image": "/assets/img/brutus.webp",
+              "width": 800,
+              "height": 800,
+              "alt": "Brutus logo"
+            },
+            {
+              "href": "/produkter/terra-infrastructure",
+              "label": "Läs mer",
+              "html": "Võimsad ülavasarad ja vibroseadmed ankrute puurimiseks ning sulundlaudade rammimiseks rasketes pinnastes.",
+              "text": "Võimsad ülavasarad ja vibroseadmed ankrute puurimiseks ning sulundlaudade rammimiseks rasketes pinnastes.",
+              "image": "/assets/img/terra-infrastructure.webp",
+              "width": 1000,
+              "height": 1000,
+              "alt": "Terra Infrastructure logo"
+            },
+            {
+              "href": "/produkter/reed",
+              "label": "Läs mer",
+              "html": "Vastupidavad seadmed pritsbetoonile, betoonipumbad ja guniitmasinad.",
+              "text": "Vastupidavad seadmed pritsbetoonile, betoonipumbad ja guniitmasinad.",
+              "image": "/assets/img/reed.webp",
+              "width": 1920,
+              "height": 1920,
+              "alt": "REED logo"
+            },
+            {
+              "href": "/produkter/ahlm",
+              "label": "Läs mer",
+              "html": "Kuivsegusiilod tsemendi ja kuivsegude käitlemiseks suletud, tolmu- ja veekindlas süsteemis.",
+              "text": "Kuivsegusiilod tsemendi ja kuivsegude käitlemiseks suletud, tolmu- ja veekindlas süsteemis.",
+              "image": "/assets/img/ahlm.webp",
+              "width": 1920,
+              "height": 1920,
+              "alt": "AHLM logo"
+            },
+            {
+              "href": "/produkter/kraft-tool",
+              "label": "Läs mer",
+              "html": "Tooted nagu kellud, krohvilauad, hõõrutid ja muud sama olulised ehitustarvikud.",
+              "text": "Tooted nagu kellud, krohvilauad, hõõrutid ja muud sama olulised ehitustarvikud.",
+              "image": "/assets/img/kraft-tool.webp",
+              "width": 300,
+              "height": 300,
+              "alt": "Kraft Tool logo"
+            },
+            {
+              "href": "/produkter/flexo-tekniikka",
+              "label": "Läs mer",
+              "image": "/assets/img/logo-flexo-tekniikka.webp",
+              "width": 1202,
+              "height": 127,
+              "alt": "Flexo-Tekniikka",
+              "html": "Põhjamaine hüdroagregaatide (powerpacks) tootja tööstusele ja liikurmasinatele.",
+              "text": "Põhjamaine hüdroagregaatide (powerpacks) tootja tööstusele ja liikurmasinatele."
+            },
+            {
+              "href": "/produkter/jean-lutz",
+              "label": "Läs mer",
+              "image": "/assets/img/jean-lutz.webp",
+              "width": 1920,
+              "height": 1920,
+              "text": "Andmelogijad, ekraanid ja andurid jet-groutingu, injekteerimise ja puurimise jaoks.",
+              "html": "Andmelogijad, ekraanid ja andurid jet-groutingu, injekteerimise ja puurimise jaoks.",
+              "alt": "Jean Lutz logo"
+            }
+          ]
+        },
+        {
+          "type": "chips",
+          "title": "Nõustame:",
+          "items": [
+            "tsement",
+            "betoon",
+            "immutamine",
+            "injekteerimine",
+            "pinnakatted",
+            "pinnakaitse",
+            "geotehnika",
+            "paigaldustugi",
+            "kaevete toestamine",
+            "silod",
+            "betoonipumbad",
+            "puurimisseadmed",
+            "trossaed",
+            "mittelõhkeline kivipurustus",
+            "nõlvade stabiliseerimine"
+          ]
+        },
+        {
+          "type": "cta",
+          "title": "Küsi julgelt, lahendame enamiku asju.",
+          "text": "Võta meiega ühendust ja aitame sind edasi, olenemata sellest, millises ehitusprotsessi etapis oled.",
+          "button": "Võta meiega ühendust",
+          "href": "/kontakta-oss"
+        }
+      ],
+      "lead": "Ehitustööstuse tarnija ja konsultant, kelle põhitugevus on betoon, pinnakaitse, geotehnika, betoonipumbad, puurimisseadmed ja seotud tooted.",
+      "ctas": [
+        {
+          "text": "Vaata meie tooteid",
+          "href": "/produkter"
+        },
+        {
+          "text": "Võta meiega ühendust",
+          "href": "/kontakta-oss"
+        }
+      ],
+      "published": true
+    },
+    "ru": {
+      "title": "Главная",
+      "h1": "Вместе строим успех.",
+      "description": "Поставщик и консультант для строительной отрасли с акцентом на бетон, защиту поверхностей, геотехнику, бетононасосы, буровые установки и сопутствующую продукцию.",
+      "blocks": [
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Наши бренды"
+        },
+        {
+          "type": "cards",
+          "items": [
+            {
+              "href": "/produkter/haeny",
+              "label": "Läs mer",
+              "html": "Насосы для укрепления, герметизации и анкеровки при устройстве фундаментов, строительстве и проходке тоннелей.",
+              "text": "Насосы для укрепления, герметизации и анкеровки при устройстве фундаментов, строительстве и проходке тоннелей.",
+              "image": "/assets/img/haeny.webp",
+              "width": 1000,
+              "height": 1000,
+              "alt": "Логотип HÄNY"
+            },
+            {
+              "href": "/produkter/tei",
+              "label": "Läs mer",
+              "html": "Производитель буровых мачт для экскаваторов, буровых принадлежностей и буровых установок для стеснённых условий.",
+              "text": "Производитель буровых мачт для экскаваторов, буровых принадлежностей и буровых установок для стеснённых условий.",
+              "image": "/assets/img/tei.webp",
+              "width": 1920,
+              "height": 1920,
+              "alt": "Логотип TEI Rock Drills"
+            },
+            {
+              "href": "/produkter/marini",
+              "label": "Läs mer",
+              "html": "Специальная техника для устройства фундаментов, карьерных работ, гусеничные машины, буровые установки и канатные пилы с принадлежностями.",
+              "text": "Специальная техника для устройства фундаментов, карьерных работ, гусеничные машины, буровые установки и канатные пилы с принадлежностями.",
+              "image": "/assets/img/marini.webp",
+              "width": 1241,
+              "height": 1241,
+              "alt": "Логотип Marini"
+            },
+            {
+              "href": "/produkter/geobrugg",
+              "label": "Läs mer",
+              "html": "Продукция и системы для стабилизации склонов и защиты от оползней и камнепадов.",
+              "text": "Продукция и системы для стабилизации склонов и защиты от оползней и камнепадов.",
+              "image": "/assets/img/geobrugg.webp",
+              "width": 1000,
+              "height": 1000,
+              "alt": "Логотип Geobrugg"
+            },
+            {
+              "href": "/produkter/mapei",
+              "label": "Läs mer",
+              "html": "Системы гидроизоляции, штукатурные растворы, клеи, герметики и другая химическая продукция для строительной отрасли.",
+              "text": "Системы гидроизоляции, штукатурные растворы, клеи, герметики и другая химическая продукция для строительной отрасли.",
+              "image": "/assets/img/mapei.webp",
+              "width": 1920,
+              "height": 1920,
+              "alt": "Логотип Mapei"
+            },
+            {
+              "href": "/produkter/weber",
+              "label": "Läs mer",
+              "html": "Комплексные решения для фасадной штукатурки, кладочных растворов, выравнивания полов и укладки плитки.",
+              "text": "Комплексные решения для фасадной штукатурки, кладочных растворов, выравнивания полов и укладки плитки.",
+              "image": "/assets/img/weber.webp",
+              "width": 1100,
+              "height": 1100,
+              "alt": "Логотип Weber"
+            },
+            {
+              "href": "/produkter/ecobeton",
+              "label": "Läs mer",
+              "html": "Системы и решения для строительной отрасли: бетон, штукатурка, кирпич и древесина.",
+              "text": "Системы и решения для строительной отрасли: бетон, штукатурка, кирпич и древесина.",
+              "image": "/assets/img/ecobeton.webp",
+              "width": 1000,
+              "height": 1000,
+              "alt": "Логотип Ecobeton"
+            },
+            {
+              "href": "/produkter/ram-board",
+              "label": "Läs mer",
+              "html": "Продукция для защиты полов и дверных коробок, рассчитанная на повторное использование, с сертификатом FSC.",
+              "text": "Продукция для защиты полов и дверных коробок, рассчитанная на повторное использование, с сертификатом FSC.",
+              "image": "/assets/img/ram-board.webp",
+              "width": 250,
+              "height": 250,
+              "alt": "Логотип Ram Board"
+            },
+            {
+              "href": "/produkter/brutus",
+              "label": "Läs mer",
+              "html": "Безвзрывное разрушение скальной породы и камня без вибрации и шума. Идеально для чувствительных зон.",
+              "text": "Безвзрывное разрушение скальной породы и камня без вибрации и шума. Идеально для чувствительных зон.",
+              "image": "/assets/img/brutus.webp",
+              "width": 800,
+              "height": 800,
+              "alt": "Логотип Brutus"
+            },
+            {
+              "href": "/produkter/terra-infrastructure",
+              "label": "Läs mer",
+              "html": "Мощные верхние перфораторы и вибрационные агрегаты для бурения анкеров и забивки шпунта в тяжёлых грунтах.",
+              "text": "Мощные верхние перфораторы и вибрационные агрегаты для бурения анкеров и забивки шпунта в тяжёлых грунтах.",
+              "image": "/assets/img/terra-infrastructure.webp",
+              "width": 1000,
+              "height": 1000,
+              "alt": "Логотип Terra Infrastructure"
+            },
+            {
+              "href": "/produkter/reed",
+              "label": "Läs mer",
+              "html": "Надёжное оборудование для торкретбетона, бетононасосы и гунит-машины.",
+              "text": "Надёжное оборудование для торкретбетона, бетононасосы и гунит-машины.",
+              "image": "/assets/img/reed.webp",
+              "width": 1920,
+              "height": 1920,
+              "alt": "Логотип REED"
+            },
+            {
+              "href": "/produkter/ahlm",
+              "label": "Läs mer",
+              "html": "Силосы для сухих смесей для работы с цементом и сухими растворами в закрытой пыле- и водонепроницаемой системе.",
+              "text": "Силосы для сухих смесей для работы с цементом и сухими растворами в закрытой пыле- и водонепроницаемой системе.",
+              "image": "/assets/img/ahlm.webp",
+              "width": 1920,
+              "height": 1920,
+              "alt": "Логотип AHLM"
+            },
+            {
+              "href": "/produkter/kraft-tool",
+              "label": "Läs mer",
+              "html": "Продукция: мастерки, штукатурные доски, тёрки и другие не менее важные строительные принадлежности.",
+              "text": "Продукция: мастерки, штукатурные доски, тёрки и другие не менее важные строительные принадлежности.",
+              "image": "/assets/img/kraft-tool.webp",
+              "width": 300,
+              "height": 300,
+              "alt": "Логотип Kraft Tool"
+            },
+            {
+              "href": "/produkter/flexo-tekniikka",
+              "label": "Läs mer",
+              "image": "/assets/img/logo-flexo-tekniikka.webp",
+              "width": 1202,
+              "height": 127,
+              "alt": "Flexo-Tekniikka",
+              "html": "Скандинавский производитель гидравлических агрегатов (powerpacks) для промышленности и мобильных машин.",
+              "text": "Скандинавский производитель гидравлических агрегатов (powerpacks) для промышленности и мобильных машин."
+            },
+            {
+              "href": "/produkter/jean-lutz",
+              "label": "Läs mer",
+              "image": "/assets/img/jean-lutz.webp",
+              "width": 1920,
+              "height": 1920,
+              "text": "Регистраторы данных, дисплеи и датчики для струйной цементации (jet grouting), инъектирования и бурения.",
+              "html": "Регистраторы данных, дисплеи и датчики для струйной цементации (jet grouting), инъектирования и бурения.",
+              "alt": "Логотип Jean Lutz"
+            }
+          ]
+        },
+        {
+          "type": "chips",
+          "title": "Консультируем по вопросам:",
+          "items": [
+            "цемента",
+            "бетона",
+            "пропитки",
+            "инъектирования",
+            "нанесения покрытий",
+            "защиты поверхностей",
+            "геотехники",
+            "монтажной поддержки",
+            "крепления котлованов и траншей",
+            "силосов",
+            "бетононасосов",
+            "буровых установок",
+            "канатных пил",
+            "безвзрывного разрушения породы",
+            "стабилизации склонов"
+          ]
+        },
+        {
+          "type": "cta",
+          "title": "Не стесняйтесь спрашивать, мы решаем большинство задач.",
+          "text": "Свяжитесь с нами, и мы поможем вам на любом этапе строительного процесса.",
+          "button": "Свяжитесь с нами",
+          "href": "/kontakta-oss"
+        }
+      ],
+      "lead": "Поставщик и консультант для строительной отрасли с акцентом на бетон, защиту поверхностей, геотехнику, бетононасосы, буровые установки и сопутствующую продукцию.",
+      "ctas": [
+        {
+          "text": "Смотреть нашу продукцию",
+          "href": "/produkter"
+        },
+        {
+          "text": "Свяжитесь с нами",
+          "href": "/kontakta-oss"
+        }
+      ],
+      "published": true
     }
   },
   "source": {

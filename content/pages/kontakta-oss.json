@@ -104,6 +104,106 @@
         }
       ],
       "published": true
+    },
+    "lt": {
+      "title": "Susisiekite su mumis",
+      "h1": "Susisiekite su mumis",
+      "description": "Padedame su informacija ir mūsų produktų pristatymu, kad ir kuriame statybos proceso etape esate. Skambinkite arba rašykite Betongakuten.",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "Padedame su informacija ir mūsų <a href=\"/produkter\">produktų</a> pristatymu, kad ir kuriame statybos proceso etape esate. Skambinkite arba rašykite mums, ir mes jums padėsime."
+        },
+        {
+          "type": "contact"
+        },
+        {
+          "type": "text",
+          "html": "Papasakokite, ką statote, kur ir kada, ir mes greičiau galėsime pateikti tinkamą rekomendaciją."
+        },
+        {
+          "type": "button",
+          "kind": "link",
+          "text": "Gauti pasiūlymą",
+          "href": "/offert"
+        }
+      ],
+      "published": true
+    },
+    "lv": {
+      "title": "Sazinieties ar mums",
+      "h1": "Sazinieties ar mums",
+      "description": "Palīdzam ar informāciju un mūsu produktu piegādi neatkarīgi no tā, kurā būvniecības procesa posmā atrodaties. Zvaniet vai rakstiet Betongakuten.",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "Palīdzam ar informāciju un mūsu <a href=\"/produkter\">produktu</a> piegādi neatkarīgi no tā, kurā būvniecības procesa posmā atrodaties. Zvaniet vai rakstiet mums, un mēs jums palīdzēsim."
+        },
+        {
+          "type": "contact"
+        },
+        {
+          "type": "text",
+          "html": "Pastāstiet, ko būvējat, kur un kad, un mēs ātrāk varēsim sniegt pareizo ieteikumu."
+        },
+        {
+          "type": "button",
+          "kind": "link",
+          "text": "Saņemt piedāvājumu",
+          "href": "/offert"
+        }
+      ],
+      "published": true
+    },
+    "et": {
+      "title": "Võta meiega ühendust",
+      "h1": "Võta meiega ühendust",
+      "description": "Aitame info ja meie toodete tarnega, olenemata sellest, millises ehitusprotsessi etapis oled. Helista või kirjuta: Betongakuten.",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "Aitame info ja meie <a href=\"/produkter\">toodete</a> tarnega, olenemata sellest, millises ehitusprotsessi etapis oled. Helista või kirjuta meile, ja aitame sind edasi."
+        },
+        {
+          "type": "contact"
+        },
+        {
+          "type": "text",
+          "html": "Räägi, mida ehitad, kus ja millal, siis saame anda sulle õige soovituse kiiremini."
+        },
+        {
+          "type": "button",
+          "kind": "link",
+          "text": "Küsi pakkumist",
+          "href": "/offert"
+        }
+      ],
+      "published": true
+    },
+    "ru": {
+      "title": "Свяжитесь с нами",
+      "h1": "Свяжитесь с нами",
+      "description": "Мы поможем с информацией и поставкой нашей продукции на любом этапе строительного процесса. Звоните или пишите в Betongakuten.",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "Мы поможем с информацией и поставкой нашей <a href=\"/produkter\">продукции</a> на любом этапе строительного процесса. Позвоните или напишите нам, и мы поможем вам дальше."
+        },
+        {
+          "type": "contact"
+        },
+        {
+          "type": "text",
+          "html": "Расскажите, что вы строите, где и когда, и мы быстрее дадим вам правильную рекомендацию."
+        },
+        {
+          "type": "button",
+          "kind": "link",
+          "text": "Получить предложение",
+          "href": "/offert"
+        }
+      ],
+      "published": true
     }
   },
   "source": {

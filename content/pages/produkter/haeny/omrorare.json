@@ -1056,6 +1056,1062 @@
           "html": "<a href=\"/kontakta-oss\">Kontakt oss</a> for pris, leveringstid eller hjelp til å velge riktig modell."
         }
       ]
+    },
+    "lt": {
+      "title": "Maišikliai (HRW)",
+      "h1": "Maišikliai (HRW)",
+      "description": "Häny HRW naudojami kaip tarpinės talpyklos tarp maišyklės ir siurblio. Lėtai besisukančiame maišiklyje injektavimo mišinys homogenizuojamas ir pašalinami oro burbuliukai.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "HÄNY",
+          "href": "/produkter/haeny",
+          "width": 832,
+          "height": 143,
+          "src": "/assets/img/haeny-1.webp"
+        },
+        {
+          "type": "columns",
+          "ratio": "40-60",
+          "left": [
+            {
+              "type": "image",
+              "alt": "Maišikliai (HRW)",
+              "width": 1000,
+              "height": 1000,
+              "src": "/assets/img/haeny-tile-hrw.webp"
+            }
+          ],
+          "right": [
+            {
+              "type": "text",
+              "html": "Häny HRW naudojami kaip tarpinės talpyklos tarp maišyklės ir siurblio. Lėtai besisukančiame maišiklyje injektavimo mišinys homogenizuojamas ir pašalinami oro burbuliukai."
+            },
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "Lėta mentė palaiko injektavimo mišinį vienalytį ir pašalina orą",
+                "Valymo anga su grotelėmis ir apsauga nuo purslų",
+                "Nuožulnus dugnas su išleidimo kamščiu"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Modeliai",
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 3,
+          "square": true,
+          "more": false,
+          "items": [
+            {
+              "title": "HRW 150",
+              "image": "/assets/img/haeny-hrw150-tile.webp",
+              "alt": "Maišiklis HRW 150",
+              "href": "/produkter/haeny/omrorare/hrw-150",
+              "bullets": [
+                "Tūris: 150 l",
+                "Galia: 0,55 / 0,62 kW"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "HRW 350",
+              "image": "/assets/img/haeny-hrw350-tile.webp",
+              "alt": "Maišiklis HRW 350",
+              "href": "/produkter/haeny/omrorare/hrw-350",
+              "bullets": [
+                "Tūris: 350 l",
+                "Galia: 0,55 / 0,66 kW"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "HRW 800",
+              "image": "/assets/img/haeny-hrw800-tile.webp",
+              "alt": "Maišiklis HRW 800",
+              "href": "/produkter/haeny/omrorare/hrw-800",
+              "bullets": [
+                "Tūris: 800 l",
+                "Galia: 0,55 / 0,66 kW"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "HRW 1200",
+              "image": "/assets/img/haeny-hrw1200-tile.webp",
+              "alt": "Maišiklis HRW 1200",
+              "href": "/produkter/haeny/omrorare/hrw-1200",
+              "bullets": [
+                "Tūris: 1050 l",
+                "Galia: 1,5 / 1,8 kW"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "HRW 2000",
+              "image": "/assets/img/haeny-hrw2000-tile.webp",
+              "alt": "Maišiklis HRW 2000",
+              "href": "/produkter/haeny/omrorare/hrw-2000",
+              "bullets": [
+                "Tūris: 2 000 l",
+                "Galia: 3,0 / 3,6 kW"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "HRW 3000",
+              "image": "/assets/img/haeny-hrw3000-tile.webp",
+              "alt": "Maišiklis HRW 3000",
+              "href": "/produkter/haeny/omrorare/hrw-3000",
+              "bullets": [
+                "Tūris: 3 000 l",
+                "Galia: 3,0 / 3,6 kW"
+              ],
+              "width": 1000,
+              "height": 1000
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Naudojimas",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Tarpinė talpykla tarp maišyklės ir siurblio"
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Modelių palyginimas",
+          "gen": true
+        },
+        {
+          "type": "table",
+          "header": true,
+          "align": "center",
+          "rows": [
+            [
+              "",
+              "HRW 150",
+              "HRW 350",
+              "HRW 800",
+              "HRW 1200",
+              "HRW 2000",
+              "HRW 3000"
+            ],
+            [
+              "Naudingasis tūris",
+              "150 l",
+              "350 l",
+              "800 l",
+              "1050 l",
+              "2,000 l",
+              "3,000 l"
+            ],
+            [
+              "Skysčio temperatūra",
+              "Max. 40°C",
+              "Max. 40°C",
+              "Max. 40°C",
+              "Max. 40°C",
+              "Max. 40°C",
+              "Max. 40°C"
+            ],
+            [
+              "Įtampa",
+              "3x 400/460",
+              "3x 400/460",
+              "3x 400/460",
+              "3x 400/460",
+              "3x 400/460",
+              "3x 400/460"
+            ],
+            [
+              "Dažnis",
+              "50 / 60 Hz",
+              "50 / 60 Hz",
+              "50 / 60 Hz",
+              "50 / 60 Hz",
+              "50 / 60 Hz",
+              "50 / 60 Hz"
+            ],
+            [
+              "Nominalioji galia",
+              "0.55 / 0.62 kW",
+              "0.55 / 0.66 kW",
+              "0.55 / 0.66 kW",
+              "1.5 / 1.8 kW",
+              "3.0 / 3.6 kW",
+              "3.0 / 3.6 kW"
+            ],
+            [
+              "Apsukų skaičius",
+              "690 / 830 min⁻¹",
+              "46.7 / 56.7 min⁻¹",
+              "46.7 / 56.7 min⁻¹",
+              "34 / 40 min⁻¹",
+              "32 / 38 min⁻¹",
+              "32 / 38 min⁻¹"
+            ],
+            [
+              "Apytikslis svoris",
+              "82.5 kg",
+              "158 kg",
+              "233 kg",
+              "450 kg",
+              "950 kg",
+              "1,025 kg"
+            ],
+            [
+              "Plotis",
+              "562 mm",
+              "953 mm",
+              "1,144 mm",
+              "1,343 mm",
+              "1,600 mm",
+              "1,913 mm"
+            ],
+            [
+              "Aukštis",
+              "1,321 mm",
+              "1,221 mm",
+              "1,666 mm",
+              "2,216 mm",
+              "2,117 mm",
+              "2,117 mm"
+            ],
+            [
+              "Ilgis",
+              "797 mm",
+              "1,055 mm",
+              "1,232 mm",
+              "1,198 mm",
+              "1,600 mm",
+              "1,913 mm"
+            ]
+          ],
+          "links": [],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Susisiekite su mumis</a> dėl kainos, pristatymo laiko ar pagalbos renkantis tinkamą modelį."
+        }
+      ],
+      "published": true
+    },
+    "lv": {
+      "title": "Maisītāji (HRW)",
+      "h1": "Maisītāji (HRW)",
+      "description": "Häny HRW izmanto kā starpkrātuves starp mikseri un sūkni. Lēni rotējošajā maisītājā injektēšanas masa tiek homogenizēta un tiek izvadīti gaisa burbuļi.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "HÄNY",
+          "href": "/produkter/haeny",
+          "width": 832,
+          "height": 143,
+          "src": "/assets/img/haeny-1.webp"
+        },
+        {
+          "type": "columns",
+          "ratio": "40-60",
+          "left": [
+            {
+              "type": "image",
+              "alt": "Maisītāji (HRW)",
+              "width": 1000,
+              "height": 1000,
+              "src": "/assets/img/haeny-tile-hrw.webp"
+            }
+          ],
+          "right": [
+            {
+              "type": "text",
+              "html": "Häny HRW izmanto kā starpkrātuves starp mikseri un sūkni. Lēni rotējošajā maisītājā injektēšanas masa tiek homogenizēta un tiek izvadīti gaisa burbuļi."
+            },
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "Lēna lāpstiņa uztur javu viendabīgu un izvada gaisu",
+                "Tīrīšanas atvere ar režģi un šļakatu aizsargu",
+                "Slīpa apakša ar noteces aizbāzni"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Modeļi",
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 3,
+          "square": true,
+          "more": false,
+          "items": [
+            {
+              "title": "HRW 150",
+              "image": "/assets/img/haeny-hrw150-tile.webp",
+              "alt": "Maisītājs HRW 150",
+              "href": "/produkter/haeny/omrorare/hrw-150",
+              "bullets": [
+                "Tilpums: 150 l",
+                "Jauda: 0,55 / 0,62 kW"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "HRW 350",
+              "image": "/assets/img/haeny-hrw350-tile.webp",
+              "alt": "Maisītājs HRW 350",
+              "href": "/produkter/haeny/omrorare/hrw-350",
+              "bullets": [
+                "Tilpums: 350 l",
+                "Jauda: 0,55 / 0,66 kW"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "HRW 800",
+              "image": "/assets/img/haeny-hrw800-tile.webp",
+              "alt": "Maisītājs HRW 800",
+              "href": "/produkter/haeny/omrorare/hrw-800",
+              "bullets": [
+                "Tilpums: 800 l",
+                "Jauda: 0,55 / 0,66 kW"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "HRW 1200",
+              "image": "/assets/img/haeny-hrw1200-tile.webp",
+              "alt": "Maisītājs HRW 1200",
+              "href": "/produkter/haeny/omrorare/hrw-1200",
+              "bullets": [
+                "Tilpums: 1050 l",
+                "Jauda: 1,5 / 1,8 kW"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "HRW 2000",
+              "image": "/assets/img/haeny-hrw2000-tile.webp",
+              "alt": "Maisītājs HRW 2000",
+              "href": "/produkter/haeny/omrorare/hrw-2000",
+              "bullets": [
+                "Tilpums: 2 000 l",
+                "Jauda: 3,0 / 3,6 kW"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "HRW 3000",
+              "image": "/assets/img/haeny-hrw3000-tile.webp",
+              "alt": "Maisītājs HRW 3000",
+              "href": "/produkter/haeny/omrorare/hrw-3000",
+              "bullets": [
+                "Tilpums: 3 000 l",
+                "Jauda: 3,0 / 3,6 kW"
+              ],
+              "width": 1000,
+              "height": 1000
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Lietojums",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Starpkrātuve starp mikseri un sūkni"
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Modeļu salīdzinājums",
+          "gen": true
+        },
+        {
+          "type": "table",
+          "header": true,
+          "align": "center",
+          "rows": [
+            [
+              "",
+              "HRW 150",
+              "HRW 350",
+              "HRW 800",
+              "HRW 1200",
+              "HRW 2000",
+              "HRW 3000"
+            ],
+            [
+              "Lietderīgais tilpums",
+              "150 l",
+              "350 l",
+              "800 l",
+              "1050 l",
+              "2,000 l",
+              "3,000 l"
+            ],
+            [
+              "Šķidruma temperatūra",
+              "Max. 40°C",
+              "Max. 40°C",
+              "Max. 40°C",
+              "Max. 40°C",
+              "Max. 40°C",
+              "Max. 40°C"
+            ],
+            [
+              "Spriegums",
+              "3x 400/460",
+              "3x 400/460",
+              "3x 400/460",
+              "3x 400/460",
+              "3x 400/460",
+              "3x 400/460"
+            ],
+            [
+              "Frekvence",
+              "50 / 60 Hz",
+              "50 / 60 Hz",
+              "50 / 60 Hz",
+              "50 / 60 Hz",
+              "50 / 60 Hz",
+              "50 / 60 Hz"
+            ],
+            [
+              "Nominālā jauda",
+              "0.55 / 0.62 kW",
+              "0.55 / 0.66 kW",
+              "0.55 / 0.66 kW",
+              "1.5 / 1.8 kW",
+              "3.0 / 3.6 kW",
+              "3.0 / 3.6 kW"
+            ],
+            [
+              "Apgriezieni",
+              "690 / 830 min⁻¹",
+              "46.7 / 56.7 min⁻¹",
+              "46.7 / 56.7 min⁻¹",
+              "34 / 40 min⁻¹",
+              "32 / 38 min⁻¹",
+              "32 / 38 min⁻¹"
+            ],
+            [
+              "Aptuvenais svars",
+              "82.5 kg",
+              "158 kg",
+              "233 kg",
+              "450 kg",
+              "950 kg",
+              "1,025 kg"
+            ],
+            [
+              "Platums",
+              "562 mm",
+              "953 mm",
+              "1,144 mm",
+              "1,343 mm",
+              "1,600 mm",
+              "1,913 mm"
+            ],
+            [
+              "Augstums",
+              "1,321 mm",
+              "1,221 mm",
+              "1,666 mm",
+              "2,216 mm",
+              "2,117 mm",
+              "2,117 mm"
+            ],
+            [
+              "Garums",
+              "797 mm",
+              "1,055 mm",
+              "1,232 mm",
+              "1,198 mm",
+              "1,600 mm",
+              "1,913 mm"
+            ]
+          ],
+          "links": [],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Sazinieties ar mums</a> par cenu, piegādes laiku vai palīdzību pareizā modeļa izvēlē."
+        }
+      ],
+      "published": true
+    },
+    "et": {
+      "title": "Segurid (HRW)",
+      "h1": "Segurid (HRW)",
+      "description": "Häny HRW-sid kasutatakse vahemahutitena segisti ja pumba vahel. Aeglaselt pöörlevas segus homogeniseeritakse injekteerimismass ja eemaldatakse õhumullid.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "HÄNY",
+          "href": "/produkter/haeny",
+          "width": 832,
+          "height": 143,
+          "src": "/assets/img/haeny-1.webp"
+        },
+        {
+          "type": "columns",
+          "ratio": "40-60",
+          "left": [
+            {
+              "type": "image",
+              "alt": "Segurid (HRW)",
+              "width": 1000,
+              "height": 1000,
+              "src": "/assets/img/haeny-tile-hrw.webp"
+            }
+          ],
+          "right": [
+            {
+              "type": "text",
+              "html": "Häny HRW-sid kasutatakse vahemahutitena segisti ja pumba vahel. Aeglaselt pöörlevas segus homogeniseeritakse injekteerimismass ja eemaldatakse õhumullid."
+            },
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "Aeglane labidas hoiab segu homogeensena ja eemaldab õhu",
+                "Puhastusava restiga ja pritsmekaitsega",
+                "Kaldus põhi tühjenduskorgiga"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Mudelid",
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 3,
+          "square": true,
+          "more": false,
+          "items": [
+            {
+              "title": "HRW 150",
+              "image": "/assets/img/haeny-hrw150-tile.webp",
+              "alt": "Segur HRW 150",
+              "href": "/produkter/haeny/omrorare/hrw-150",
+              "bullets": [
+                "Maht: 150 l",
+                "Võimsus: 0,55 / 0,62 kW"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "HRW 350",
+              "image": "/assets/img/haeny-hrw350-tile.webp",
+              "alt": "Segur HRW 350",
+              "href": "/produkter/haeny/omrorare/hrw-350",
+              "bullets": [
+                "Maht: 350 l",
+                "Võimsus: 0,55 / 0,66 kW"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "HRW 800",
+              "image": "/assets/img/haeny-hrw800-tile.webp",
+              "alt": "Segur HRW 800",
+              "href": "/produkter/haeny/omrorare/hrw-800",
+              "bullets": [
+                "Maht: 800 l",
+                "Võimsus: 0,55 / 0,66 kW"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "HRW 1200",
+              "image": "/assets/img/haeny-hrw1200-tile.webp",
+              "alt": "Segur HRW 1200",
+              "href": "/produkter/haeny/omrorare/hrw-1200",
+              "bullets": [
+                "Maht: 1050 l",
+                "Võimsus: 1,5 / 1,8 kW"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "HRW 2000",
+              "image": "/assets/img/haeny-hrw2000-tile.webp",
+              "alt": "Segur HRW 2000",
+              "href": "/produkter/haeny/omrorare/hrw-2000",
+              "bullets": [
+                "Maht: 2 000 l",
+                "Võimsus: 3,0 / 3,6 kW"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "HRW 3000",
+              "image": "/assets/img/haeny-hrw3000-tile.webp",
+              "alt": "Segur HRW 3000",
+              "href": "/produkter/haeny/omrorare/hrw-3000",
+              "bullets": [
+                "Maht: 3 000 l",
+                "Võimsus: 3,0 / 3,6 kW"
+              ],
+              "width": 1000,
+              "height": 1000
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Kasutus",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Vahemahuti segisti ja pumba vahel"
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Mudelite võrdlus",
+          "gen": true
+        },
+        {
+          "type": "table",
+          "header": true,
+          "align": "center",
+          "rows": [
+            [
+              "",
+              "HRW 150",
+              "HRW 350",
+              "HRW 800",
+              "HRW 1200",
+              "HRW 2000",
+              "HRW 3000"
+            ],
+            [
+              "Kasulik maht",
+              "150 l",
+              "350 l",
+              "800 l",
+              "1050 l",
+              "2,000 l",
+              "3,000 l"
+            ],
+            [
+              "Vedeliku temperatuur",
+              "Max. 40°C",
+              "Max. 40°C",
+              "Max. 40°C",
+              "Max. 40°C",
+              "Max. 40°C",
+              "Max. 40°C"
+            ],
+            [
+              "Pinge",
+              "3x 400/460",
+              "3x 400/460",
+              "3x 400/460",
+              "3x 400/460",
+              "3x 400/460",
+              "3x 400/460"
+            ],
+            [
+              "Sagedus",
+              "50 / 60 Hz",
+              "50 / 60 Hz",
+              "50 / 60 Hz",
+              "50 / 60 Hz",
+              "50 / 60 Hz",
+              "50 / 60 Hz"
+            ],
+            [
+              "Nimivõimsus",
+              "0.55 / 0.62 kW",
+              "0.55 / 0.66 kW",
+              "0.55 / 0.66 kW",
+              "1.5 / 1.8 kW",
+              "3.0 / 3.6 kW",
+              "3.0 / 3.6 kW"
+            ],
+            [
+              "Pöörded",
+              "690 / 830 min⁻¹",
+              "46.7 / 56.7 min⁻¹",
+              "46.7 / 56.7 min⁻¹",
+              "34 / 40 min⁻¹",
+              "32 / 38 min⁻¹",
+              "32 / 38 min⁻¹"
+            ],
+            [
+              "Ligikaudne kaal",
+              "82.5 kg",
+              "158 kg",
+              "233 kg",
+              "450 kg",
+              "950 kg",
+              "1,025 kg"
+            ],
+            [
+              "Laius",
+              "562 mm",
+              "953 mm",
+              "1,144 mm",
+              "1,343 mm",
+              "1,600 mm",
+              "1,913 mm"
+            ],
+            [
+              "Kõrgus",
+              "1,321 mm",
+              "1,221 mm",
+              "1,666 mm",
+              "2,216 mm",
+              "2,117 mm",
+              "2,117 mm"
+            ],
+            [
+              "Pikkus",
+              "797 mm",
+              "1,055 mm",
+              "1,232 mm",
+              "1,198 mm",
+              "1,600 mm",
+              "1,913 mm"
+            ]
+          ],
+          "links": [],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Võta meiega ühendust</a> hinna, tarneaja või õige mudeli valikul abi saamiseks."
+        }
+      ],
+      "published": true
+    },
+    "ru": {
+      "title": "Мешалки (HRW)",
+      "h1": "Мешалки (HRW)",
+      "description": "Häny HRW используются как промежуточные ёмкости между смесителем и насосом. В медленно вращающейся мешалке инъекционная масса гомогенизируется, а пузырьки воздуха удаляются.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "HÄNY",
+          "href": "/produkter/haeny",
+          "width": 832,
+          "height": 143,
+          "src": "/assets/img/haeny-1.webp"
+        },
+        {
+          "type": "columns",
+          "ratio": "40-60",
+          "left": [
+            {
+              "type": "image",
+              "alt": "Мешалки (HRW)",
+              "width": 1000,
+              "height": 1000,
+              "src": "/assets/img/haeny-tile-hrw.webp"
+            }
+          ],
+          "right": [
+            {
+              "type": "text",
+              "html": "Häny HRW используются как промежуточные ёмкости между смесителем и насосом. В медленно вращающейся мешалке инъекционная масса гомогенизируется, а пузырьки воздуха удаляются."
+            },
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "Медленная лопасть поддерживает однородность раствора и удаляет воздух",
+                "Очистной люк с решёткой и защитой от брызг",
+                "Наклонное дно со сливной пробкой"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Модели",
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 3,
+          "square": true,
+          "more": false,
+          "items": [
+            {
+              "title": "HRW 150",
+              "image": "/assets/img/haeny-hrw150-tile.webp",
+              "alt": "Мешалка HRW 150",
+              "href": "/produkter/haeny/omrorare/hrw-150",
+              "bullets": [
+                "Объём: 150 л",
+                "Мощность: 0,55 / 0,62 кВт"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "HRW 350",
+              "image": "/assets/img/haeny-hrw350-tile.webp",
+              "alt": "Мешалка HRW 350",
+              "href": "/produkter/haeny/omrorare/hrw-350",
+              "bullets": [
+                "Объём: 350 л",
+                "Мощность: 0,55 / 0,66 кВт"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "HRW 800",
+              "image": "/assets/img/haeny-hrw800-tile.webp",
+              "alt": "Мешалка HRW 800",
+              "href": "/produkter/haeny/omrorare/hrw-800",
+              "bullets": [
+                "Объём: 800 л",
+                "Мощность: 0,55 / 0,66 кВт"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "HRW 1200",
+              "image": "/assets/img/haeny-hrw1200-tile.webp",
+              "alt": "Мешалка HRW 1200",
+              "href": "/produkter/haeny/omrorare/hrw-1200",
+              "bullets": [
+                "Объём: 1050 л",
+                "Мощность: 1,5 / 1,8 кВт"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "HRW 2000",
+              "image": "/assets/img/haeny-hrw2000-tile.webp",
+              "alt": "Мешалка HRW 2000",
+              "href": "/produkter/haeny/omrorare/hrw-2000",
+              "bullets": [
+                "Объём: 2 000 л",
+                "Мощность: 3,0 / 3,6 кВт"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "HRW 3000",
+              "image": "/assets/img/haeny-hrw3000-tile.webp",
+              "alt": "Мешалка HRW 3000",
+              "href": "/produkter/haeny/omrorare/hrw-3000",
+              "bullets": [
+                "Объём: 3 000 л",
+                "Мощность: 3,0 / 3,6 кВт"
+              ],
+              "width": 1000,
+              "height": 1000
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Применение",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Промежуточная ёмкость между смесителем и насосом"
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Сравнение моделей",
+          "gen": true
+        },
+        {
+          "type": "table",
+          "header": true,
+          "align": "center",
+          "rows": [
+            [
+              "",
+              "HRW 150",
+              "HRW 350",
+              "HRW 800",
+              "HRW 1200",
+              "HRW 2000",
+              "HRW 3000"
+            ],
+            [
+              "Полезный объём",
+              "150 l",
+              "350 l",
+              "800 l",
+              "1050 l",
+              "2,000 l",
+              "3,000 l"
+            ],
+            [
+              "Температура жидкости",
+              "Max. 40°C",
+              "Max. 40°C",
+              "Max. 40°C",
+              "Max. 40°C",
+              "Max. 40°C",
+              "Max. 40°C"
+            ],
+            [
+              "Напряжение",
+              "3x 400/460",
+              "3x 400/460",
+              "3x 400/460",
+              "3x 400/460",
+              "3x 400/460",
+              "3x 400/460"
+            ],
+            [
+              "Частота",
+              "50 / 60 Hz",
+              "50 / 60 Hz",
+              "50 / 60 Hz",
+              "50 / 60 Hz",
+              "50 / 60 Hz",
+              "50 / 60 Hz"
+            ],
+            [
+              "Номинальная мощность",
+              "0.55 / 0.62 kW",
+              "0.55 / 0.66 kW",
+              "0.55 / 0.66 kW",
+              "1.5 / 1.8 kW",
+              "3.0 / 3.6 kW",
+              "3.0 / 3.6 kW"
+            ],
+            [
+              "Частота вращения",
+              "690 / 830 min⁻¹",
+              "46.7 / 56.7 min⁻¹",
+              "46.7 / 56.7 min⁻¹",
+              "34 / 40 min⁻¹",
+              "32 / 38 min⁻¹",
+              "32 / 38 min⁻¹"
+            ],
+            [
+              "Ориентировочная масса",
+              "82.5 kg",
+              "158 kg",
+              "233 kg",
+              "450 kg",
+              "950 kg",
+              "1,025 kg"
+            ],
+            [
+              "Ширина",
+              "562 mm",
+              "953 mm",
+              "1,144 mm",
+              "1,343 mm",
+              "1,600 mm",
+              "1,913 mm"
+            ],
+            [
+              "Высота",
+              "1,321 mm",
+              "1,221 mm",
+              "1,666 mm",
+              "2,216 mm",
+              "2,117 mm",
+              "2,117 mm"
+            ],
+            [
+              "Длина",
+              "797 mm",
+              "1,055 mm",
+              "1,232 mm",
+              "1,198 mm",
+              "1,600 mm",
+              "1,913 mm"
+            ]
+          ],
+          "links": [],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Свяжитесь с нами</a>, чтобы узнать цену, срок поставки или получить помощь в выборе подходящей модели."
+        }
+      ],
+      "published": true
     }
   }
 }

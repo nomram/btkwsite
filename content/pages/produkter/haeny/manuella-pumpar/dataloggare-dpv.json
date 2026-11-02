@@ -346,6 +346,346 @@
         }
       ],
       "published": true
+    },
+    "lt": {
+      "title": "Duomenų registratorius (DPV)",
+      "h1": "Duomenų registratorius (DPV)",
+      "description": "DPV-H: ekranas ir paprastas debito, slėgio ir tūrio valdymas (Jean-Lutz)",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Duomenų registratorius (DPV)",
+          "width": 876,
+          "height": 510,
+          "src": "/assets/img/haeny-automatiska-pumpar-1.webp",
+          "href": "/produkter/haeny"
+        },
+        {
+          "type": "image",
+          "alt": "Duomenų registratorius (DPV): 2 paveikslėlis",
+          "width": 504,
+          "height": 495,
+          "src": "/assets/img/haeny-manuella-pumpar-dataloggare-dpv-2.webp"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "DPV-H duomenų registratorius"
+        },
+        {
+          "type": "text",
+          "html": "DPV-H: ekranas ir paprastas debito, slėgio ir tūrio valdymas (<a href=\"/produkter/jean-lutz\">Jean Lutz</a>)"
+        },
+        {
+          "type": "text",
+          "html": "Pagrindinių parametrų rodymas ir nuolatinė stebėsena dažnai yra labai svarbi siekiant užtikrinti teisingą darbą kritiniais etapais."
+        },
+        {
+          "type": "text",
+          "html": "Tvirtas ir lengvai skaitomas DPV-H su atnaujinta, patogia naudoti sąsaja yra efektyvus ir paprastas sprendimas slėgiui, debitui ir tūriui rodyti bei valdyti."
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Paprasta ir patogi naudoti sąsaja",
+            "Rodo slėgį, debitą ir tūrį",
+            "Slėgio ir debito valdymas pagal užprogramuotas reikšmes",
+            "Duomenų registravimas (USB)",
+            "Galimas belaidis ryšys (Bluetooth) su „Dialog“ pažangiam valdymui"
+          ]
+        },
+        {
+          "type": "image",
+          "alt": "Jean Lutz",
+          "href": "/produkter/jean-lutz",
+          "width": 572,
+          "height": 128,
+          "src": "/assets/img/logo-jean-lutz.webp",
+          "inline": true,
+          "maxWidth": 190,
+          "caption": "Gamina Jean Lutz"
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Susisiekite su mumis</a> dėl daugiau informacijos."
+        },
+        {
+          "type": "related",
+          "items": [
+            {
+              "href": "/produkter/jean-lutz",
+              "mutual": true
+            },
+            {
+              "href": "/produkter/jean-lutz/dpv",
+              "mutual": true
+            },
+            {
+              "href": "/produkter/jean-lutz/dialog-mx4"
+            },
+            {
+              "href": "/produkter/jean-lutz/dimi"
+            }
+          ]
+        }
+      ],
+      "published": true
+    },
+    "lv": {
+      "title": "Datu reģistrators (DPV)",
+      "h1": "Datu reģistrators (DPV)",
+      "description": "DPV-H: displejs un vienkārša caurplūdes, spiediena un tilpuma vadība (Jean-Lutz)",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Datu reģistrators (DPV)",
+          "width": 876,
+          "height": 510,
+          "src": "/assets/img/haeny-automatiska-pumpar-1.webp",
+          "href": "/produkter/haeny"
+        },
+        {
+          "type": "image",
+          "alt": "Datu reģistrators (DPV): 2. attēls",
+          "width": 504,
+          "height": 495,
+          "src": "/assets/img/haeny-manuella-pumpar-dataloggare-dpv-2.webp"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "DPV-H datu reģistrators"
+        },
+        {
+          "type": "text",
+          "html": "DPV-H: displejs un vienkārša caurplūdes, spiediena un tilpuma vadība (<a href=\"/produkter/jean-lutz\">Jean Lutz</a>)"
+        },
+        {
+          "type": "text",
+          "html": "Galveno parametru attēlošana un nepārtraukta uzraudzība bieži ir izšķiroša, lai kritiskos posmos nodrošinātu pareizu darbību."
+        },
+        {
+          "type": "text",
+          "html": "Izturīgs un viegli nolasāms DPV-H ar atjauninātu, lietotājam draudzīgu saskarni ir efektīvs un viegli lietojams risinājums spiediena, caurplūdes un tilpuma attēlošanai un vadībai."
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Vienkārša un lietotājam draudzīga saskarne",
+            "Attēlo spiedienu, caurplūdi un tilpumu",
+            "Spiediena un caurplūdes vadība pēc ieplānotām vērtībām",
+            "Datu reģistrēšana/žurnalēšana (USB)",
+            "Iespējams bezvadu savienojums (Bluetooth) ar Dialog papildu vadībai"
+          ]
+        },
+        {
+          "type": "image",
+          "alt": "Jean Lutz",
+          "href": "/produkter/jean-lutz",
+          "width": 572,
+          "height": 128,
+          "src": "/assets/img/logo-jean-lutz.webp",
+          "inline": true,
+          "maxWidth": 190,
+          "caption": "Ražo Jean Lutz"
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Sazinieties ar mums</a>, lai uzzinātu vairāk."
+        },
+        {
+          "type": "related",
+          "items": [
+            {
+              "href": "/produkter/jean-lutz",
+              "mutual": true
+            },
+            {
+              "href": "/produkter/jean-lutz/dpv",
+              "mutual": true
+            },
+            {
+              "href": "/produkter/jean-lutz/dialog-mx4"
+            },
+            {
+              "href": "/produkter/jean-lutz/dimi"
+            }
+          ]
+        }
+      ],
+      "published": true
+    },
+    "et": {
+      "title": "Andmelogija (DPV)",
+      "h1": "Andmelogija (DPV)",
+      "description": "DPV-H: ekraan ning lihtne vooluhulga, rõhu ja mahu juhtimine (Jean-Lutz)",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Andmelogija (DPV)",
+          "width": 876,
+          "height": 510,
+          "src": "/assets/img/haeny-automatiska-pumpar-1.webp",
+          "href": "/produkter/haeny"
+        },
+        {
+          "type": "image",
+          "alt": "Andmelogija (DPV): pilt 2",
+          "width": 504,
+          "height": 495,
+          "src": "/assets/img/haeny-manuella-pumpar-dataloggare-dpv-2.webp"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "DPV-H andmelogija"
+        },
+        {
+          "type": "text",
+          "html": "DPV-H: ekraan ning lihtne vooluhulga, rõhu ja mahu juhtimine (<a href=\"/produkter/jean-lutz\">Jean Lutz</a>)"
+        },
+        {
+          "type": "text",
+          "html": "Põhiparameetrite kuvamine ja pidev jälgimine on sageli otsustava tähtsusega, et tagada õige töö kriitilistes etappides."
+        },
+        {
+          "type": "text",
+          "html": "Töökindel ja hästi loetav DPV-H uuendatud, kasutajasõbraliku liidesega on tõhus ja lihtsasti kasutatav lahendus rõhu, vooluhulga ja mahu kuvamiseks ning juhtimiseks."
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Lihtne ja kasutajasõbralik liides",
+            "Kuvab rõhku, vooluhulka ja mahtu",
+            "Rõhu ja vooluhulga juhtimine ajastatud väärtuste järgi",
+            "Andmete registreerimine/logimine (USB)",
+            "Võimalik juhtmevaba ühendus (Bluetooth) Dialogiga täiustatud juhtimiseks"
+          ]
+        },
+        {
+          "type": "image",
+          "alt": "Jean Lutz",
+          "href": "/produkter/jean-lutz",
+          "width": 572,
+          "height": 128,
+          "src": "/assets/img/logo-jean-lutz.webp",
+          "inline": true,
+          "maxWidth": 190,
+          "caption": "Tootja: Jean Lutz"
+        },
+        {
+          "type": "text",
+          "html": "Lisateabe saamiseks <a href=\"/kontakta-oss\">võta meiega ühendust</a>."
+        },
+        {
+          "type": "related",
+          "items": [
+            {
+              "href": "/produkter/jean-lutz",
+              "mutual": true
+            },
+            {
+              "href": "/produkter/jean-lutz/dpv",
+              "mutual": true
+            },
+            {
+              "href": "/produkter/jean-lutz/dialog-mx4"
+            },
+            {
+              "href": "/produkter/jean-lutz/dimi"
+            }
+          ]
+        }
+      ],
+      "published": true
+    },
+    "ru": {
+      "title": "Регистратор данных (DPV)",
+      "h1": "Регистратор данных (DPV)",
+      "description": "DPV-H: дисплей и простое управление расходом, давлением и объёмом от Jean-Lutz",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Регистратор данных (DPV)",
+          "width": 876,
+          "height": 510,
+          "src": "/assets/img/haeny-automatiska-pumpar-1.webp",
+          "href": "/produkter/haeny"
+        },
+        {
+          "type": "image",
+          "alt": "Регистратор данных (DPV): изображение 2",
+          "width": 504,
+          "height": 495,
+          "src": "/assets/img/haeny-manuella-pumpar-dataloggare-dpv-2.webp"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Регистратор данных DPV-H"
+        },
+        {
+          "type": "text",
+          "html": "DPV-H: дисплей и простое управление расходом, давлением и объёмом от <a href=\"/produkter/jean-lutz\">Jean Lutz</a>"
+        },
+        {
+          "type": "text",
+          "html": "Отображение и непрерывный контроль ключевых параметров часто имеют решающее значение для обеспечения правильной работы на критических этапах."
+        },
+        {
+          "type": "text",
+          "html": "Прочный и хорошо читаемый DPV-H с обновлённым удобным интерфейсом — эффективное и простое в использовании решение для отображения и управления давлением, расходом и объёмом."
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Простой и удобный интерфейс",
+            "Показывает давление, расход и объём",
+            "Управление давлением и расходом по заданным значениям",
+            "Регистрация/запись данных (USB)",
+            "Возможно беспроводное соединение (Bluetooth) с модулем Dialog для расширенного управления"
+          ]
+        },
+        {
+          "type": "image",
+          "alt": "Jean Lutz",
+          "href": "/produkter/jean-lutz",
+          "width": 572,
+          "height": 128,
+          "src": "/assets/img/logo-jean-lutz.webp",
+          "inline": true,
+          "maxWidth": 190,
+          "caption": "Производитель: Jean Lutz"
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Свяжитесь с нами</a> для получения дополнительной информации."
+        },
+        {
+          "type": "related",
+          "items": [
+            {
+              "href": "/produkter/jean-lutz",
+              "mutual": true
+            },
+            {
+              "href": "/produkter/jean-lutz/dpv",
+              "mutual": true
+            },
+            {
+              "href": "/produkter/jean-lutz/dialog-mx4"
+            },
+            {
+              "href": "/produkter/jean-lutz/dimi"
+            }
+          ]
+        }
+      ],
+      "published": true
     }
   },
   "source": {

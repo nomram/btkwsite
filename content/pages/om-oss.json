@@ -508,6 +508,510 @@
         }
       ],
       "published": true
+    },
+    "lt": {
+      "title": "Apie mus",
+      "h1": "Apie mus",
+      "description": "Betongakuten yra statybos pramonės tiekėjas ir konsultantas, daugiausia dėmesio skiriantis betonui, paviršių apsaugai, geotechnikai, betono siurbliams, gręžimo įrenginiams ir susijusiems…",
+      "blocks": [
+        {
+          "type": "social"
+        },
+        {
+          "type": "columns",
+          "ratio": "60-40",
+          "left": [
+            {
+              "type": "heading",
+              "level": 2,
+              "text": "Paslaugos"
+            },
+            {
+              "type": "text",
+              "html": "Betongakuten yra statybos pramonės tiekėjas ir konsultantas, daugiausia dėmesio skiriantis betonui, paviršių apsaugai, geotechnikai, betono siurbliams, gręžimo įrenginiams ir susijusiems produktams. Per daugelį metų tapome svarbiu ištekliumi rangovams, projektuotojams ir specifikacijų rengėjams, nes turime plačias žinias ir patirtį."
+            },
+            {
+              "type": "text",
+              "html": "Betongakuten įrankių dėžė per metus smarkiai išaugo. Mūsų tikslas – būti pašnekovu, su kuriuo galima aptarti informaciją apie produktus ir jų naudojimą. Kad ir kuriame statybos proceso etape esate, Betongakuten gali padėti aukštos kokybės produktais ir neįkainojamomis žiniomis. Esame ne tik tiekėjas – esame partneris, padedantis jums sėkmingai įgyvendinti statybos projektą."
+            },
+            {
+              "type": "text",
+              "html": "Teikiame konsultacijas apie šiuos produktus:"
+            },
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "cementas",
+                "betonas",
+                "impregnavimas",
+                "injektavimas",
+                "paviršių dangos",
+                "paviršių apsauga",
+                "geotechnika",
+                "montavimo pagalba",
+                "tranšėjų ir duobių sutvirtinimas",
+                "silosai",
+                "betono siurbliai",
+                "gręžimo įrenginiai",
+                "lynų pjūklai",
+                "nesprogstamasis uolienų skaldymas",
+                "šlaitų stabilizavimas"
+              ]
+            },
+            {
+              "type": "text",
+              "html": "Nedvejodami klauskite, išsprendžiame daugumą dalykų. <a href=\"/kontakta-oss\">Susisiekite su mumis.</a>"
+            }
+          ],
+          "right": [
+            {
+              "type": "image",
+              "alt": "Apie mus: 2 paveikslėlis",
+              "width": 1787,
+              "height": 1004,
+              "src": "/assets/img/om-oss-2.webp"
+            }
+          ]
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Įmonės brošiūra",
+          "href": "/assets/docs/om-oss-foretagsbroschyr.pdf"
+        },
+        {
+          "type": "columns",
+          "ratio": "40-60",
+          "left": [
+            {
+              "type": "image",
+              "alt": "Apie mus: 3 paveikslėlis",
+              "width": 800,
+              "height": 449,
+              "src": "/assets/img/om-oss-3.webp"
+            }
+          ],
+          "right": [
+            {
+              "type": "heading",
+              "level": 2,
+              "text": "Mokymai (sertifikatai)"
+            },
+            {
+              "type": "text",
+              "html": "Betongakuten atstovai yra apmokyti įvairiose techninėse ir specializuotose srityse. Ši plati ir gili žinių bazė leidžia Betongakuten komandai teikti aukštos kokybės paslaugas ir produktus visuose statybos proceso etapuose."
+            },
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "Dekoratyvinių paviršių dangų su spalva ir raštu kursas (Ecobeton)",
+                "Betono II klasė (Sveriges Byggindustrier)",
+                "Reaktoplastų (epoksidų) mokymai grindų rangovams (Mapei)",
+                "Purkštojo betono pagrindų mokymai (Mapei)",
+                "Injektavimo mokymai su cemento ir reaktoplastų produktais (Mapei)",
+                "Tinkavimo pagrindų kursas (Maxit/Weber)",
+                "Tęstiniai reaktoplastų mokymai (Mapei)",
+                "Saugi darbo aplinka pramonėje (SSG Entré)",
+                "Keltuvų (pakeliamųjų platformų) mokymai pagal LLP (Cramo)",
+                "Geotechnikos pagrindų kursas (Byggakademin)",
+                "Savivaldybių geotechnika (SGI)",
+                "Montavimas &amp; projektavimas: Ischebeck GmbH",
+                "Betongakuten turi ID06 kortelę",
+                "Hollow-bar school Montrose (TEI)"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "alt": "ID06",
+          "width": 86,
+          "height": 102,
+          "src": "/assets/img/om-oss-5.gif",
+          "maxWidth": 86
+        }
+      ],
+      "published": true
+    },
+    "lv": {
+      "title": "Par mums",
+      "h1": "Par mums",
+      "description": "Betongakuten ir būvniecības nozares piegādātājs un konsultants ar spēcīgu orientāciju uz betonu, virsmu aizsardzību, ģeotehniku, betona sūkņiem, urbjiekārtām un saistītajiem…",
+      "blocks": [
+        {
+          "type": "social"
+        },
+        {
+          "type": "columns",
+          "ratio": "60-40",
+          "left": [
+            {
+              "type": "heading",
+              "level": 2,
+              "text": "Pakalpojumi"
+            },
+            {
+              "type": "text",
+              "html": "Betongakuten ir būvniecības nozares piegādātājs un konsultants ar spēcīgu orientāciju uz betonu, virsmu aizsardzību, ģeotehniku, betona sūkņiem, urbjiekārtām un saistītiem produktiem. Gadu gaitā esam kļuvuši par resursu būvuzņēmējiem, projektētājiem un specifikāciju sagatavotājiem, pateicoties mūsu plašajām zināšanām un pieredzei."
+            },
+            {
+              "type": "text",
+              "html": "Betongakuten instrumentu kaste gadu gaitā ir kļuvusi liela. Mūsu mērķis ir būt sarunbiedram, kad runa ir par informāciju par produktiem un to lietošanu. Neatkarīgi no tā, kurā būvniecības procesa posmā atrodaties, Betongakuten var palīdzēt ar augstas kvalitātes produktiem un nenovērtējamām zināšanām. Mēs esam vairāk nekā tikai piegādātājs, mēs esam partneris, kas palīdz jums sekmīgi īstenot būvprojektu."
+            },
+            {
+              "type": "text",
+              "html": "Palīdzam ar konsultācijām par šādiem produktiem:"
+            },
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "cements",
+                "betons",
+                "impregnēšana",
+                "injektēšana",
+                "virsmu pārklājumi",
+                "virsmu aizsardzība",
+                "ģeotehnika",
+                "montāžas atbalsts",
+                "tranšeju un bedru nostiprināšana",
+                "silosi",
+                "betona sūkņi",
+                "urbjiekārtas",
+                "trošu zāģi",
+                "nesprāgstošā iežu šķelšana",
+                "nogāžu stabilizēšana"
+              ]
+            },
+            {
+              "type": "text",
+              "html": "Droši jautājiet, mēs atrisinām lielāko daļu jautājumu. <a href=\"/kontakta-oss\">Sazinieties ar mums.</a>"
+            }
+          ],
+          "right": [
+            {
+              "type": "image",
+              "alt": "Par mums: 2. attēls",
+              "width": 1787,
+              "height": 1004,
+              "src": "/assets/img/om-oss-2.webp"
+            }
+          ]
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Uzņēmuma brošūra",
+          "href": "/assets/docs/om-oss-foretagsbroschyr.pdf"
+        },
+        {
+          "type": "columns",
+          "ratio": "40-60",
+          "left": [
+            {
+              "type": "image",
+              "alt": "Par mums: 3. attēls",
+              "width": 800,
+              "height": 449,
+              "src": "/assets/img/om-oss-3.webp"
+            }
+          ],
+          "right": [
+            {
+              "type": "heading",
+              "level": 2,
+              "text": "Apmācības (sertifikāti)"
+            },
+            {
+              "type": "text",
+              "html": "Betongakuten pārstāvji ir apmācīti dažādās tehniskās un specializētās jomās. Šī plašā un dziļā zināšanu bāze ļauj Betongakuten komandai sniegt augstas kvalitātes pakalpojumus un produktus visos būvniecības procesa posmos."
+            },
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "Dekoratīvo virsmu pārklājumu ar krāsu un rakstu kurss (Ecobeton)",
+                "Betona II klase (Sveriges Byggindustrier)",
+                "Termoreaktīvo sveķu apmācība grīdu būvuzņēmējiem (Mapei)",
+                "Šļakatbetona pamatapmācība (Mapei)",
+                "Injektēšanas apmācība ar cementa un termoreaktīvo sveķu produktiem (Mapei)",
+                "Apmešanas pamatkurss (Maxit/Weber)",
+                "Termoreaktīvo sveķu papildapmācība (Mapei)",
+                "Droša darba vide rūpniecībā (SSG Entré)",
+                "Pacēlāju apmācība atbilstoši LLP (Cramo)",
+                "Ģeotehnikas pamatkurss (Byggakademin)",
+                "Pašvaldību ģeotehnika (SGI)",
+                "Uzstādīšana &amp; projektēšana: Ischebeck GmbH",
+                "Betongakuten ir ID06 karte",
+                "Hollow-bar school Montrose (TEI)"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "alt": "ID06",
+          "width": 86,
+          "height": 102,
+          "src": "/assets/img/om-oss-5.gif",
+          "maxWidth": 86
+        }
+      ],
+      "published": true
+    },
+    "et": {
+      "title": "Meist",
+      "h1": "Meist",
+      "description": "Betongakuten on ehitustööstuse tarnija ja konsultant, kelle põhitugevus on betoon, pinnakaitse, geotehnika, betoonipumbad, puurimisseadmed ja seotud…",
+      "blocks": [
+        {
+          "type": "social"
+        },
+        {
+          "type": "columns",
+          "ratio": "60-40",
+          "left": [
+            {
+              "type": "heading",
+              "level": 2,
+              "text": "Teenused"
+            },
+            {
+              "type": "text",
+              "html": "Betongakuten on ehitustööstuse tarnija ja konsultant, kelle põhitugevus on betoon, pinnakaitse, geotehnika, betoonipumbad, puurimisseadmed ja seotud tooted. Aastate jooksul oleme kujunenud toeks töövõtjatele, projekteerijatele ja spetsifikatsioonide koostajatele tänu oma laiale teadmistebaasile ja kogemusele."
+            },
+            {
+              "type": "text",
+              "html": "Betongakuteni tööriistakast on aastatega suureks kasvanud. Meie eesmärk on olla vestluspartner, kui tegemist on infoga toodete ja nende kasutamise kohta. Olenemata sellest, millises ehitusprotsessi etapis oled, saab Betongakuten aidata kvaliteetsete toodete ja hindamatute teadmistega. Me oleme midagi enamat kui pelgalt tarnija – me oleme partner, kes aitab sul ehitusprojektiga edukalt hakkama saada."
+            },
+            {
+              "type": "text",
+              "html": "Anname nõu järgmiste toodete kohta:"
+            },
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "tsement",
+                "betoon",
+                "immutamine",
+                "injekteerimine",
+                "pinnakatted",
+                "pinnakaitse",
+                "geotehnika",
+                "paigaldustugi",
+                "kaevete toestamine",
+                "silod",
+                "betoonipumbad",
+                "puurimisseadmed",
+                "trossaed",
+                "mittelõhkeline kivipurustus",
+                "nõlvade stabiliseerimine"
+              ]
+            },
+            {
+              "type": "text",
+              "html": "Küsi julgelt, lahendame enamiku asju. <a href=\"/kontakta-oss\">Võta meiega ühendust.</a>"
+            }
+          ],
+          "right": [
+            {
+              "type": "image",
+              "alt": "Meist: pilt 2",
+              "width": 1787,
+              "height": 1004,
+              "src": "/assets/img/om-oss-2.webp"
+            }
+          ]
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Ettevõtte brošüür",
+          "href": "/assets/docs/om-oss-foretagsbroschyr.pdf"
+        },
+        {
+          "type": "columns",
+          "ratio": "40-60",
+          "left": [
+            {
+              "type": "image",
+              "alt": "Meist: pilt 3",
+              "width": 800,
+              "height": 449,
+              "src": "/assets/img/om-oss-3.webp"
+            }
+          ],
+          "right": [
+            {
+              "type": "heading",
+              "level": 2,
+              "text": "Koolitused (sertifikaadid)"
+            },
+            {
+              "type": "text",
+              "html": "Betongakuteni esindajad on koolitatud mitmetes tehnilistes ja spetsialiseeritud valdkondades. See lai ja sügav teadmistebaas võimaldab Betongakuteni meeskonnal pakkuda kvaliteetset teenust ja tooteid ehitusprotsessi igas etapis."
+            },
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "Dekoratiivsete värvi ja mustriga pinnakatete kursus (Ecobeton)",
+                "Betooniklass II (Sveriges Byggindustrier)",
+                "Kõvastuvate plastide koolitus põrandatöövõtjatele (Mapei)",
+                "Pritsbetooni baaskoolitus (Mapei)",
+                "Injekteerimiskoolitus tsemendi ja kõvastuvate plastide toodetega (Mapei)",
+                "Krohvimise põhikursus (Maxit/Weber)",
+                "Kõvastuvate plastide täiendkoolitus (Mapei)",
+                "Ohutu töökeskkond tööstuses (SSG Entré)",
+                "Tõstukikoolitus LLP järgi (Cramo)",
+                "Geotehnika põhikursus (Byggakademin)",
+                "Kommunaalne geotehnika (SGI)",
+                "Paigaldus &amp; projekteerimine: Ischebeck GmbH",
+                "Betongakutenil on ID06 kaart",
+                "Hollow-bar school Montrose (TEI)"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "alt": "ID06",
+          "width": 86,
+          "height": 102,
+          "src": "/assets/img/om-oss-5.gif",
+          "maxWidth": 86
+        }
+      ],
+      "published": true
+    },
+    "ru": {
+      "title": "О нас",
+      "h1": "О нас",
+      "description": "Betongakuten — поставщик и консультант для строительной отрасли с акцентом на бетон, защиту поверхностей, геотехнику, бетононасосы, буровые установки и сопутствующую…",
+      "blocks": [
+        {
+          "type": "social"
+        },
+        {
+          "type": "columns",
+          "ratio": "60-40",
+          "left": [
+            {
+              "type": "heading",
+              "level": 2,
+              "text": "Услуги"
+            },
+            {
+              "type": "text",
+              "html": "Betongakuten — поставщик и консультант для строительной отрасли с акцентом на бетон, защиту поверхностей, геотехнику, бетононасосы, буровые установки и сопутствующую продукцию. За годы работы мы стали надёжным ресурсом для подрядчиков, проектировщиков и разработчиков технических условий благодаря нашим обширным знаниям и опыту."
+            },
+            {
+              "type": "text",
+              "html": "Набор инструментов Betongakuten с годами заметно вырос. Наша цель — быть партнёром для обсуждения информации о продукции и её применении. На каком бы этапе строительного процесса вы ни находились, Betongakuten поможет вам качественной продукцией и бесценными знаниями. Мы больше чем просто поставщик — мы партнёр, помогающий вам добиться успеха в вашем строительном проекте."
+            },
+            {
+              "type": "text",
+              "html": "Мы консультируем по следующей продукции:"
+            },
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "цемента",
+                "бетона",
+                "пропитки",
+                "инъектирования",
+                "нанесения покрытий",
+                "защиты поверхностей",
+                "геотехники",
+                "монтажной поддержки",
+                "крепления котлованов и траншей",
+                "силосов",
+                "бетононасосов",
+                "буровых установок",
+                "канатных пил",
+                "безвзрывного разрушения породы",
+                "стабилизации склонов"
+              ]
+            },
+            {
+              "type": "text",
+              "html": "Не стесняйтесь спрашивать, мы решаем большинство задач. <a href=\"/kontakta-oss\">Свяжитесь с нами.</a>"
+            }
+          ],
+          "right": [
+            {
+              "type": "image",
+              "alt": "О нас: изображение 2",
+              "width": 1787,
+              "height": 1004,
+              "src": "/assets/img/om-oss-2.webp"
+            }
+          ]
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Брошюра о компании",
+          "href": "/assets/docs/om-oss-foretagsbroschyr.pdf"
+        },
+        {
+          "type": "columns",
+          "ratio": "40-60",
+          "left": [
+            {
+              "type": "image",
+              "alt": "О нас: изображение 3",
+              "width": 800,
+              "height": 449,
+              "src": "/assets/img/om-oss-3.webp"
+            }
+          ],
+          "right": [
+            {
+              "type": "heading",
+              "level": 2,
+              "text": "Обучение (сертификаты)"
+            },
+            {
+              "type": "text",
+              "html": "Представители Betongakuten прошли обучение в ряде технических и специализированных областей. Эта широкая и глубокая база знаний позволяет команде Betongakuten предоставлять услуги и продукцию высокого качества на всех этапах строительного процесса."
+            },
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "Курс по декоративным покрытиям с цветом и рисунком (Ecobeton)",
+                "Класс бетона II (Sveriges Byggindustrier)",
+                "Обучение работе с термореактивными смолами для подрядчиков по устройству полов (Mapei)",
+                "Базовое обучение по торкретбетону (Mapei)",
+                "Обучение инъектированию с цементными и термореактивными материалами (Mapei)",
+                "Базовый курс по штукатурным работам (Maxit/Weber)",
+                "Углублённое обучение по термореактивным смолам (Mapei)",
+                "Безопасная рабочая среда в промышленности (SSG Entré)",
+                "Обучение работе на подъёмниках по LLP (Cramo)",
+                "Базовый курс по геотехнике (Byggakademin)",
+                "Муниципальная геотехника (SGI)",
+                "Монтаж &amp; проектирование: Ischebeck GmbH",
+                "У Betongakuten есть удостоверение ID06",
+                "Hollow-bar school Montrose (TEI)"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "alt": "ID06",
+          "width": 86,
+          "height": 102,
+          "src": "/assets/img/om-oss-5.gif",
+          "maxWidth": 86
+        }
+      ],
+      "published": true
     }
   },
   "source": {

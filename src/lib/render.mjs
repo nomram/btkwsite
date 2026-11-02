@@ -180,6 +180,11 @@ const navTitleOf = (ctx, path) => {
   const t = ctx.tr(path, ctx.lang) || ctx.tr(path, ctx.defaultLang);
   return t ? (t.navTitle || t.title || t.h1 || path) : path;
 };
+// Legal pages are only translated where the owner has had them translated; elsewhere the visitor gets the English version (or the default language), never a broken link
+// Tagline of the company: a language file may carry its own (ui.tagline), otherwise the one in site.json
+const tagline = (ctx) => (ctx.ui && ctx.ui.tagline) || ctx.site.tagline;
+const legalLang = (ctx, path) => (ctx.tr(path, ctx.lang) ? ctx.lang : ctx.tr(path, "en") ? "en" : ctx.defaultLang);
+const legalUrl = (ctx, path) => ctx.url(path, legalLang(ctx, path));
 const isUnder = (path, root) => path === root || path.startsWith(root + "/");
 const ancestorsOf = (path) => {
   const out = [];
@@ -238,7 +243,8 @@ function renderCards(ctx, b) {
   const rest = shownItems.filter(([it]) => !groups.includes(it.group));
   const ICONS = { machines: [ICON.rig, ICON.silo], material: [ICON.boxes, ICON.bucket] };
   // the buttons go into the breadcrumb row (renderMain picks them up from ctx._pfilter); two pictures per button roll over on hover
-  ctx._pfilter = `<div class="pfilter" role="group" aria-label="${esc(ctx.ui.filter_show || "Visa")}">` +
+  // with a single group left (a language that only has machine brands) there is nothing to filter
+  if (groups.length > 1) ctx._pfilter = `<div class="pfilter" role="group" aria-label="${esc(ctx.ui.filter_show || "Visa")}">` +
     groups.map((g) => `<button class="pfilter__btn" type="button" aria-pressed="true" data-g="${g}"><span class="pfilter__ico"><span class="pfilter__roll">${ICONS[g].join("")}</span></span><span class="pfilter__txt">${esc(label[g])}</span><em>${part(g).length}</em><span class="pfilter__ck">${ICON.check}</span></button>`).join("") + "</div>";
   return groups.map((g) => `<section class="pgroup" id="${g === "machines" ? "maskiner" : "material"}" data-g="${g}"><h2 class="pgroup__h"><span class="pgroup__ico">${ICONS[g][0]}</span>${esc(label[g])}<span class="pgroup__n">${unit(part(g).length)}</span></h2>${ul(part(g))}</section>`).join("") + (rest.length ? ul(rest) : "");
 }
@@ -605,7 +611,7 @@ function renderCarousel(ctx, items, o = {}) {
 function renderQuote(ctx, b = {}) {
   const u = ctx.ui, q = ctx.site.quoteForm || {}, c = ctx.site.contact || {};
   const T = (k, d) => esc(u[k] || d);
-  const privacy = ctx.site.privacyPath && ctx.pages.has(ctx.site.privacyPath) ? ctx.url(ctx.site.privacyPath) : "";
+  const privacy = ctx.site.privacyPath && ctx.pages.has(ctx.site.privacyPath) ? legalUrl(ctx, ctx.site.privacyPath) : "";
   const f = (id, label, type, auto, req) =>
     `<p class="qf__f"><label for="q-${id}">${label}${req ? ` <span class="qf__req" aria-hidden="true">*</span>` : ""}</label>` +
     `<input id="q-${id}" name="${id}" type="${type}" autocomplete="${auto}"${req ? " required" : ""}></p>`;
@@ -1034,10 +1040,10 @@ function renderFooter(ctx) {
   const phones = (c.phones || []).map((p) => `<li>${ICON.phone}<span class="sr-only">${esc(p.label || "")}: </span><a href="${esc(telHref(p.value))}">${esc(phoneText(ctx, p.value))}</a></li>`).join("");
   return `<footer class="site-footer"><div class="container site-footer__grid">` +
     `<div class="site-footer__about"><img class="site-footer__logo" src="/assets/brand/logo-white.svg" alt="${esc(s.name)}" width="190" height="30" loading="lazy">` +
-    `<p>${esc(s.legalName || s.name)}</p>${s.orgNumber ? `<p class="muted">${esc(ctx.ui.org_no || "Org.nr")} ${esc(s.orgNumber)}</p>` : ""}${s.tagline ? `<p class="muted">${esc(ctx.site.tagline)}</p>` : ""}</div>` +
+    `<p>${esc(s.legalName || s.name)}</p>${s.orgNumber ? `<p class="muted">${esc(ctx.ui.org_no || "Org.nr")} ${esc(s.orgNumber)}</p>` : ""}${tagline(ctx) ? `<p class="muted">${esc(tagline(ctx))}</p>` : ""}</div>` +
     (brands.length ? `<nav aria-label="${esc(navTitleOf(ctx, "/produkter"))}"><h2 class="site-footer__h">${esc(navTitleOf(ctx, "/produkter"))}</h2><ul class="site-footer__links site-footer__links--cols">${brands.map((b) => `<li><a href="${esc(ctx.url(b))}">${esc(navTitleOf(ctx, b))}</a></li>`).join("")}</ul></nav>` : "") +
     `<nav aria-label="${esc(ctx.ui.footer_nav || "Sidfot")}"><h2 class="site-footer__h">${esc(ctx.ui.company || "Företaget")}</h2><ul class="site-footer__links">${company.map((p) => `<li><a href="${esc(ctx.url(p))}">${esc(navTitleOf(ctx, p))}</a></li>`).join("")}` +
-    `${privacyPath ? `<li><a href="${esc(ctx.url(privacyPath))}">${esc(navTitleOf(ctx, privacyPath))}</a></li>` : ""}` +
+    `${privacyPath ? `<li><a href="${esc(legalUrl(ctx, privacyPath))}"${legalLang(ctx, privacyPath) !== ctx.lang ? ` hreflang="${esc(htmlLang(ctx, legalLang(ctx, privacyPath)))}"` : ""}>${esc((() => { const t = ctx.tr(privacyPath, legalLang(ctx, privacyPath)); return t ? (t.navTitle || t.title || t.h1) : privacyPath; })())}</a></li>` : ""}` +
     `${analyticsOn ? `<li><button type="button" class="linklike" data-consent-open>${esc(ctx.ui.cookie_settings || "Cookie-inställningar")}</button></li>` : ""}</ul></nav>` +
     `<div><h2 class="site-footer__h">${esc(ctx.ui.contact_us || "Kontakt")}</h2><ul class="site-footer__contact">` +
     `${c.email ? `<li>${ICON.mail}<a href="mailto:${esc(c.email)}">${esc(c.email)}</a></li>` : ""}${phones}</ul>` +
@@ -1049,7 +1055,7 @@ function renderFooter(ctx) {
 export function seoTitle(ctx, page, t) {
   const s = ctx.site;
   if (t.seoTitle) return t.seoTitle;
-  if (page.path === "/") return `${s.name} | ${t.tagline || s.tagline || t.h1}`;
+  if (page.path === "/") return `${s.name} | ${t.tagline || tagline(ctx) || t.h1}`;
   const base = t.h1 || t.title;
   const segs = page.path.split("/").filter(Boolean);
   let brand = "";
@@ -1070,7 +1076,7 @@ function pageDescription(ctx, page, t) {
   const first = flatBlocks(t.blocks).find((b) => b.type === "text");
   const txt = first ? stripTags(first.html) : t.lead || "";
   if (txt.length > 50) return txt.length > 158 ? txt.slice(0, txt.lastIndexOf(" ", 155)) + "…" : txt;
-  return `${t.h1 || t.title}: ${ctx.site.tagline || ctx.site.name}`;
+  return `${t.h1 || t.title}: ${tagline(ctx) || ctx.site.name}`;
 }
 
 function ogImage(ctx, page, t) {
@@ -1259,7 +1265,7 @@ export function renderDocument(ctx, page, t, opts = {}) {
     searchClear: ctx.ui.search_clear, searchNav: ctx.ui.search_nav, searchOpen: ctx.ui.search_open, searchSuppliers: ctx.ui.search_suppliers, searchBrowse: ctx.ui.search_browse,
     searchDym: ctx.ui.search_dym, searchHit: ctx.ui.search_hit, searchHits: ctx.ui.search_hits, loading: ctx.ui.video_loading
   };
-  const privacyPath = s.privacyPath && ctx.pages.has(s.privacyPath) && (ctx.tr(s.privacyPath, lang) || ctx.tr(s.privacyPath, ctx.defaultLang)) ? ctx.url(s.privacyPath) : "";
+  const privacyPath = s.privacyPath && ctx.pages.has(s.privacyPath) && (ctx.tr(s.privacyPath, lang) || ctx.tr(s.privacyPath, "en") || ctx.tr(s.privacyPath, ctx.defaultLang)) ? legalUrl(ctx, s.privacyPath) : "";
   const cfg = JSON.stringify({ analytics, ui: uiForJs, privacy: privacyPath, searchIndex: ctx.searchIndexUrl ? ctx.searchIndexUrl : "/search-index.json" }).replace(/</g, "\\u003c");
   const ver = opts.assetVersion ? `?v=${opts.assetVersion}` : "";
   const hasQuote = flatBlocks(t.blocks || []).some((x) => x.type === "quote");

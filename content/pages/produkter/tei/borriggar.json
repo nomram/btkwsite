@@ -398,6 +398,398 @@
         }
       ],
       "published": true
+    },
+    "lt": {
+      "title": "Gręžimo įrenginiai",
+      "h1": "Gręžimo įrenginiai",
+      "description": "TD yra elektrinių / hidraulinių gręžimo mašinų serija gręžimui ribotos prieigos sąlygomis (rūsio gręžimo įrenginiai), sukurta mikropoliams ir savigręžiams…",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "TEI Rock Drills logotipas",
+          "href": "/produkter/tei",
+          "width": 1920,
+          "height": 1117,
+          "src": "/assets/img/tei-2.webp"
+        },
+        {
+          "type": "image",
+          "alt": "Gręžimo įrenginiai: 2 paveikslėlis",
+          "width": 1200,
+          "height": 946,
+          "src": "/assets/img/tei-borriggar-2.webp"
+        },
+        {
+          "type": "text",
+          "html": "TD yra elektrinių / hidraulinių gręžimo mašinų serija gręžimui ribotos prieigos sąlygomis (rūsio gręžimo įrenginiai), sukurta mikropoliams ir savigręžiams inkarams įrengti. Puikiai tinka darbui mažose erdvėse, po pastatais ar tuneliuose. TEI gręžimo įrenginiams reikia tik išorinio maitinimo šaltinio, todėl sumažėja triukšmas ir išmetamosios dujos. Be to, guminės vikšros gali būti įtrauktos iki 1219 mm, kad būtų galima geriau prieiti ir išdėstyti įrenginį ribotos prieigos sąlygomis."
+        },
+        {
+          "type": "text",
+          "html": "Skaičius šalia modelio pavadinimo nurodo elektrinio variklio arklio galių skaičių. 75 kW (100 AG) elektrinis variklis leidžia TD100 valdyti visus TEI gaminamus viršutinio smūgio plaktukus ar sukamąsias galvutes."
+        },
+        {
+          "type": "text",
+          "html": "Pereikite prie jus dominančio įrenginio, kad pamatytumėte, kuris geriausiai atitinka jūsų poreikius. <a href=\"/kontakta-oss\">Susisiekite su mumis</a> dėl daugiau informacijos."
+        },
+        {
+          "type": "modules",
+          "layout": "cards",
+          "items": [
+            {
+              "title": "TD75",
+              "image": "/assets/img/tei-borriggar-td75.webp",
+              "alt": "TD75",
+              "href": "/produkter/tei/borriggar/td75",
+              "bullets": [
+                "Spaustuvas ir atlaužiklis",
+                "RDS550 sukamoji galvutė ir smūgių slopintuvas",
+                "180° stiebo judėjimas į šonus",
+                "56 kW (75 AG) elektrinis variklis"
+              ]
+            },
+            {
+              "title": "TD100",
+              "image": "/assets/img/tei-borriggar-td100.webp",
+              "alt": "TD100",
+              "href": "/produkter/tei/borriggar/td100",
+              "bullets": [
+                "Spaustuvas ir atlaužiklis",
+                "RDS1004 sukamoji galvutė, sukimo momentas 13 569 Nm",
+                "120° stiebo judėjimas į šonus",
+                "75 kW (100 AG) elektrinis variklis",
+                "Keturi stabilizatoriai"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Specifikacijos"
+        },
+        {
+          "type": "table",
+          "header": true,
+          "rows": [
+            [
+              "Modelis",
+              "Sukimo momentas (Nm)",
+              "Elektros variklis (kW)",
+              "Reikalingas generatorius (kW)",
+              "Svoris (kg)"
+            ],
+            [
+              "TD75",
+              "6780",
+              "56",
+              "125",
+              "2585"
+            ],
+            [
+              "TD100",
+              "13605",
+              "75",
+              "185",
+              "5207"
+            ]
+          ]
+        }
+      ],
+      "published": true
+    },
+    "lv": {
+      "title": "Urbjiekārtas",
+      "h1": "Urbjiekārtas",
+      "description": "TD ir elektrisko/hidraulisko urbšanas iekārtu sērija urbšanai ierobežotas piekļuves apstākļos (pagrabu urbjiekārtas), kas paredzēta mikropāļu un pašurbjošo…",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "TEI Rock Drills logotips",
+          "href": "/produkter/tei",
+          "width": 1920,
+          "height": 1117,
+          "src": "/assets/img/tei-2.webp"
+        },
+        {
+          "type": "image",
+          "alt": "Urbjiekārtas: 2. attēls",
+          "width": 1200,
+          "height": 946,
+          "src": "/assets/img/tei-borriggar-2.webp"
+        },
+        {
+          "type": "text",
+          "html": "TD ir elektrisko/hidraulisko urbšanas iekārtu sērija urbšanai ierobežotas piekļuves apstākļos (pagrabu urbjiekārtas), kas paredzēta mikropāļu un pašurbjošo enkuru uzstādīšanai. Lieliski piemērota darbam nelielās telpās, zem ēkām vai tuneļos. TEI urbjiekārtām nepieciešams tikai ārējs strāvas avots, kas samazina troksni un izplūdes gāzes. Turklāt gumijas kāpurķēdes var sabīdīt līdz 1219 mm, lai nodrošinātu labāku piekļuvi un pozicionēšanu ierobežotas piekļuves apstākļos."
+        },
+        {
+          "type": "text",
+          "html": "Skaitlis blakus modeļa nosaukumam norāda elektromotora zirgspēku skaitu. 75 kW (100 ZS) elektromotors ļauj TD100 darbināt visus TEI ražotos augšējā āmura urbjus vai rotācijas galvas."
+        },
+        {
+          "type": "text",
+          "html": "Pārejiet uz interesējošo iekārtu, lai redzētu, kura vislabāk atbilst jūsu vajadzībām. <a href=\"/kontakta-oss\">Sazinieties ar mums</a>, lai uzzinātu vairāk."
+        },
+        {
+          "type": "modules",
+          "layout": "cards",
+          "items": [
+            {
+              "title": "TD75",
+              "image": "/assets/img/tei-borriggar-td75.webp",
+              "alt": "TD75",
+              "href": "/produkter/tei/borriggar/td75",
+              "bullets": [
+                "Spīles un atskrūvētājs",
+                "RDS550 rotācijas galva un triecienu slāpētājs",
+                "Masta sānu kustība 180°",
+                "56 kW (75 ZS) elektromotors"
+              ]
+            },
+            {
+              "title": "TD100",
+              "image": "/assets/img/tei-borriggar-td100.webp",
+              "alt": "TD100",
+              "href": "/produkter/tei/borriggar/td100",
+              "bullets": [
+                "Spīles un atskrūvētājs",
+                "RDS1004 rotācijas galva ar griezes momentu 13 569 Nm",
+                "Masta sānu kustība 120°",
+                "75 kW (100 ZS) elektromotors",
+                "Četri stabilizatoru pacēlāji"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Specifikācijas"
+        },
+        {
+          "type": "table",
+          "header": true,
+          "rows": [
+            [
+              "Modelis",
+              "Griezes moments (Nm)",
+              "Elektromotors (kW)",
+              "Nepieciešamais ģenerators (kW)",
+              "Svars (kg)"
+            ],
+            [
+              "TD75",
+              "6780",
+              "56",
+              "125",
+              "2585"
+            ],
+            [
+              "TD100",
+              "13605",
+              "75",
+              "185",
+              "5207"
+            ]
+          ]
+        }
+      ],
+      "published": true
+    },
+    "et": {
+      "title": "Puurimisseadmed",
+      "h1": "Puurimisseadmed",
+      "description": "TD on elektriliste/hüdrauliliste puurimismasinate seeria piiratud juurdepääsuga puurimiseks (keldripuurimisseadmed), mis on loodud mikrovaiade ja isepuurivate…",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "TEI Rock Drills logo",
+          "href": "/produkter/tei",
+          "width": 1920,
+          "height": 1117,
+          "src": "/assets/img/tei-2.webp"
+        },
+        {
+          "type": "image",
+          "alt": "Puurimisseadmed: pilt 2",
+          "width": 1200,
+          "height": 946,
+          "src": "/assets/img/tei-borriggar-2.webp"
+        },
+        {
+          "type": "text",
+          "html": "TD on elektriliste/hüdrauliliste puurimismasinate seeria piiratud juurdepääsuga puurimiseks (keldripuurimisseadmed), mis on loodud mikrovaiade ja isepuurivate ankrute paigaldamiseks. Sobib suurepäraselt tööks väikestes ruumides, hoonete all või tunnelites. TEI puurimisseadmed vajavad ainult välist toiteallikat, mis vähendab müra ja heitgaase. Lisaks saab kummirööbikud sisse tõmmata 1219 mm-ni, et võimaldada laiemat ligipääsu ja positsioneerimist piiratud juurdepääsuga olukordades."
+        },
+        {
+          "type": "text",
+          "html": "Mudelinime kõrval olev number näitab elektrimootori hobujõudude arvu. 75 kW (100 hj) elektrimootor võimaldab TD100-l käitada kõiki TEI toodetud ülavasaraid või pöörlemispäid."
+        },
+        {
+          "type": "text",
+          "html": "Liigu sind huvitava seadme juurde, et näha, milline sobib su otstarbeks kõige paremini. <a href=\"/kontakta-oss\">Võta meiega ühendust</a> lisateabe saamiseks."
+        },
+        {
+          "type": "modules",
+          "layout": "cards",
+          "items": [
+            {
+              "title": "TD75",
+              "image": "/assets/img/tei-borriggar-td75.webp",
+              "alt": "TD75",
+              "href": "/produkter/tei/borriggar/td75",
+              "bullets": [
+                "Klamber ja lahtikeeraja",
+                "RDS550 pöörlemispea ja põrutusvaigisti",
+                "Masti 180° külgsuunaline liikumine",
+                "56 kW (75 hj) elektrimootor"
+              ]
+            },
+            {
+              "title": "TD100",
+              "image": "/assets/img/tei-borriggar-td100.webp",
+              "alt": "TD100",
+              "href": "/produkter/tei/borriggar/td100",
+              "bullets": [
+                "Klamber ja lahtikeeraja",
+                "RDS1004 pöörlemispea pöördemomendiga 13 569 Nm",
+                "Masti 120° külgsuunaline liikumine",
+                "75 kW (100 hj) elektrimootor",
+                "Neli stabilisaatoritõstukit"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Tehnilised andmed"
+        },
+        {
+          "type": "table",
+          "header": true,
+          "rows": [
+            [
+              "Mudel",
+              "Pöördemoment (Nm)",
+              "Elektrimootor (kW)",
+              "Generaatori vajadus (kW)",
+              "Kaal (kg)"
+            ],
+            [
+              "TD75",
+              "6780",
+              "56",
+              "125",
+              "2585"
+            ],
+            [
+              "TD100",
+              "13605",
+              "75",
+              "185",
+              "5207"
+            ]
+          ]
+        }
+      ],
+      "published": true
+    },
+    "ru": {
+      "title": "Буровые установки",
+      "h1": "Буровые установки",
+      "description": "TD — серия электрических/гидравлических буровых машин для бурения в условиях ограниченного доступа (подвальные буровые установки), предназначенная для установки микросвай и самобуровых…",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Логотип TEI Rock Drills",
+          "href": "/produkter/tei",
+          "width": 1920,
+          "height": 1117,
+          "src": "/assets/img/tei-2.webp"
+        },
+        {
+          "type": "image",
+          "alt": "Буровые установки: изображение 2",
+          "width": 1200,
+          "height": 946,
+          "src": "/assets/img/tei-borriggar-2.webp"
+        },
+        {
+          "type": "text",
+          "html": "TD — серия электрических/гидравлических буровых машин для бурения в условиях ограниченного доступа (подвальные буровые установки), предназначенная для установки микросвай и самобуровых анкеров. Идеально подходит для работы в небольших помещениях, под зданиями или в тоннелях. Буровым установкам TEI нужен только внешний источник питания, что снижает шум и выхлопные газы. Кроме того, резиновые гусеницы можно сдвинуть до 1219 мм, что облегчает доступ и позиционирование в условиях ограниченного доступа."
+        },
+        {
+          "type": "text",
+          "html": "Число рядом с названием модели указывает мощность электродвигателя в лошадиных силах. Электродвигатель мощностью 75 кВт (100 л. с.) позволяет TD100 приводить в действие все верхние перфораторы или вращатели производства TEI."
+        },
+        {
+          "type": "text",
+          "html": "Перейдите к интересующей вас установке, чтобы увидеть, какая лучше всего подходит для ваших задач. <a href=\"/kontakta-oss\">Свяжитесь с нами</a> для получения дополнительной информации."
+        },
+        {
+          "type": "modules",
+          "layout": "cards",
+          "items": [
+            {
+              "title": "TD75",
+              "image": "/assets/img/tei-borriggar-td75.webp",
+              "alt": "TD75",
+              "href": "/produkter/tei/borriggar/td75",
+              "bullets": [
+                "Зажим и разъёмный ключ",
+                "Вращатель RDS550 и амортизатор",
+                "Боковое перемещение мачты на 180°",
+                "Электродвигатель 56 кВт (75 л. с.)"
+              ]
+            },
+            {
+              "title": "TD100",
+              "image": "/assets/img/tei-borriggar-td100.webp",
+              "alt": "TD100",
+              "href": "/produkter/tei/borriggar/td100",
+              "bullets": [
+                "Зажим и разъёмный ключ",
+                "Вращатель RDS1004 с крутящим моментом 13 569 Нм",
+                "Боковое перемещение мачты на 120°",
+                "Электродвигатель 75 кВт (100 л. с.)",
+                "Четыре домкрата-стабилизатора"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Спецификации"
+        },
+        {
+          "type": "table",
+          "header": true,
+          "rows": [
+            [
+              "Модель",
+              "Крутящий момент (Нм)",
+              "Электродвигатель (кВт)",
+              "Требуемая мощность генератора (кВт)",
+              "Масса (кг)"
+            ],
+            [
+              "TD75",
+              "6780",
+              "56",
+              "125",
+              "2585"
+            ],
+            [
+              "TD100",
+              "13605",
+              "75",
+              "185",
+              "5207"
+            ]
+          ]
+        }
+      ],
+      "published": true
     }
   },
   "source": {

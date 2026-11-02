@@ -1154,6 +1154,1154 @@
         }
       ],
       "published": true
+    },
+    "lt": {
+      "title": "HEM",
+      "h1": "HEM",
+      "description": "HEM (Hydraulic Excavator Mount) yra antras pagal sunkumą stiebas, kurį siūlo TEI mikropoliams iki 76 mm įrengti.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "TEI Rock Drills logotipas",
+          "href": "/produkter/tei",
+          "width": 1920,
+          "height": 1117,
+          "src": "/assets/img/tei-2.webp"
+        },
+        {
+          "type": "carousel",
+          "items": [
+            {
+              "src": "/assets/img/tei-borrmaster-hem-2.webp",
+              "alt": "HEM, 1 paveikslėlis",
+              "width": 1024,
+              "height": 950
+            },
+            {
+              "src": "/assets/img/tei-borrmaster-hem-3.webp",
+              "alt": "HEM, 2 paveikslėlis",
+              "width": 708,
+              "height": 563
+            },
+            {
+              "src": "/assets/img/tei-borrmaster-hem-4.webp",
+              "alt": "HEM, 3 paveikslėlis",
+              "width": 1536,
+              "height": 2048
+            },
+            {
+              "src": "/assets/img/tei-borrmaster-hem-5.webp",
+              "alt": "HEM, 4 paveikslėlis",
+              "width": 1798,
+              "height": 1408
+            },
+            {
+              "src": "/assets/img/tei-borrmaster-hem-6.webp",
+              "alt": "HEM, 5 paveikslėlis",
+              "width": 800,
+              "height": 800
+            }
+          ],
+          "autoplay": false
+        },
+        {
+          "type": "text",
+          "html": "HEM (Hydraulic Excavator Mount) yra antras pagal sunkumą stiebas, kurį siūlo TEI mikropoliams iki 76 mm įrengti."
+        },
+        {
+          "type": "text",
+          "html": "Daugiau informacijos rasite žemiau esančioje brošiūroje, o iškilus klausimams <a href=\"/kontakta-oss\">susisiekite su mumis</a>."
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Produkto lapas",
+          "href": "/assets/docs/tei-borrmaster-hem-ladda-ner-pdf.pdf",
+          "driveId": "1YVw0dkKKyJumE-_ITzuzpD1Q7v91PspM"
+        },
+        {
+          "type": "datasheet",
+          "title": "Techniniai duomenys",
+          "note": "TEI techniniai duomenys numato 40 % hidraulinės galios nuostolių.",
+          "tagline": "Hidraulinis ekskavatoriuje montuojamas gręžimo agregatas",
+          "intro": [
+            "HEM (Hydraulic Excavator Mount) yra populiariausias TEI Rock Drills gaminamas gręžimo priedas. Stabili ekskavatoriaus bazė ir ilga strėlė kartu sudaro puikią gręžimo platformą. HEM hidraulinę galią gauna iš ekskavatoriaus plaktuko kontūro, todėl papildomo hidraulikos įrengimo nereikia.",
+            "TEI HEM įrenginiuose naudoja tik savo patentuotus hidraulinius viršutinio smūgio plaktukus ir padavimo sistemas. Šie pažangūs plaktukai turi automatinį smūgio reguliavimą (ASA): kai gręžimo kolona neprijungta, plaktukas pereina į laukimo režimą, o operatoriui paspaudus gręžimo koloną, ASA automatiškai padidina plaktuką iki visos galios. Integruotas sukamasis vamzdis (swivel) priima orą, vandenį ar injektavimo mišinį visų rūšių gręžimui, įskaitant populiarių tuščiavidurių strypų (hollow bar) įrengimą."
+          ],
+          "groups": [
+            {
+              "title": "HEM 360 su TE360",
+              "rows": [
+                {
+                  "label": "Hidraulinis debitas",
+                  "metric": "136 lpm"
+                },
+                {
+                  "label": "Hidraulinis slėgis",
+                  "metric": "155 bar"
+                },
+                {
+                  "label": "Skylės skersmuo",
+                  "metric": "35-76 mm"
+                },
+                {
+                  "label": "Bendras ilgis",
+                  "metric": "4,9 m"
+                },
+                {
+                  "label": "Gręžimo eiga",
+                  "metric": "3,6 m"
+                },
+                {
+                  "label": "Traukos jėga",
+                  "metric": "33 kN"
+                },
+                {
+                  "label": "Apytikslis svoris",
+                  "metric": "1 492 kg"
+                },
+                {
+                  "label": "Mažiausias ekskavatorius",
+                  "metric": "13 t"
+                }
+              ]
+            },
+            {
+              "title": "HEM 350R su RDS350",
+              "rows": [
+                {
+                  "label": "Hidraulinis debitas",
+                  "metric": "114 lpm"
+                },
+                {
+                  "label": "Hidraulinis slėgis",
+                  "metric": "207 bar"
+                },
+                {
+                  "label": "Skylės skersmuo",
+                  "metric": "70-203 mm"
+                },
+                {
+                  "label": "Bendras ilgis",
+                  "metric": "4,9 m"
+                },
+                {
+                  "label": "Gręžimo eiga",
+                  "metric": "3,6 m"
+                },
+                {
+                  "label": "Traukos jėga",
+                  "metric": "33 kN"
+                },
+                {
+                  "label": "Apytikslis svoris",
+                  "metric": "1 440 kg"
+                },
+                {
+                  "label": "Mažiausias ekskavatorius",
+                  "metric": "13 t"
+                }
+              ]
+            },
+            {
+              "title": "HEM 760 su TE760",
+              "rows": [
+                {
+                  "label": "Hidraulinis debitas",
+                  "metric": "178 lpm"
+                },
+                {
+                  "label": "Hidraulinis slėgis",
+                  "metric": "172 bar"
+                },
+                {
+                  "label": "Skylės skersmuo",
+                  "metric": "52-127 mm"
+                },
+                {
+                  "label": "Bendras ilgis",
+                  "metric": "4,9 m"
+                },
+                {
+                  "label": "Gręžimo eiga",
+                  "metric": "3,6 m"
+                },
+                {
+                  "label": "Traukos jėga",
+                  "metric": "33 kN"
+                },
+                {
+                  "label": "Apytikslis svoris",
+                  "metric": "1 700 kg"
+                },
+                {
+                  "label": "Mažiausias ekskavatorius",
+                  "metric": "20 t"
+                }
+              ]
+            },
+            {
+              "title": "HEM 550R su RDS550",
+              "rows": [
+                {
+                  "label": "Hidraulinis debitas",
+                  "metric": "152 lpm"
+                },
+                {
+                  "label": "Hidraulinis slėgis",
+                  "metric": "207 bar"
+                },
+                {
+                  "label": "Skylės skersmuo",
+                  "metric": "102-305 mm"
+                },
+                {
+                  "label": "Bendras ilgis",
+                  "metric": "4,9 m"
+                },
+                {
+                  "label": "Gręžimo eiga",
+                  "metric": "3,6 m"
+                },
+                {
+                  "label": "Traukos jėga",
+                  "metric": "33 kN"
+                },
+                {
+                  "label": "Apytikslis svoris",
+                  "metric": "2 177 kg"
+                },
+                {
+                  "label": "Mažiausias ekskavatorius",
+                  "metric": "20 t"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "video",
+          "provider": "youtube",
+          "id": "Lr3tuh0J0ko",
+          "start": 4,
+          "title": ""
+        },
+        {
+          "type": "video",
+          "provider": "youtube",
+          "id": "gjcKSa1_gjE",
+          "title": ""
+        },
+        {
+          "type": "image",
+          "alt": "HEM: 7 paveikslėlis",
+          "width": 761,
+          "height": 821,
+          "src": "/assets/img/tei-borrmaster-hem-7.webp"
+        },
+        {
+          "type": "image",
+          "alt": "HEM: 8 paveikslėlis",
+          "width": 635,
+          "height": 140,
+          "src": "/assets/img/tei-borrmaster-hem-8.webp"
+        },
+        {
+          "type": "text",
+          "html": "HEM25ED"
+        },
+        {
+          "type": "related",
+          "title": "Tinkami viršutinio smūgio plaktukai",
+          "items": [
+            {
+              "href": "/produkter/tei/topphammare/te360"
+            },
+            {
+              "href": "/produkter/tei/topphammare/te326"
+            },
+            {
+              "href": "/produkter/tei/topphammare/te760"
+            }
+          ],
+          "compat": true
+        },
+        {
+          "type": "related",
+          "title": "Tinkamos sukamosios galvutės",
+          "items": [
+            {
+              "href": "/produkter/tei/rotationshammare/rds350"
+            },
+            {
+              "href": "/produkter/tei/rotationshammare/rds550"
+            }
+          ],
+          "compat": true
+        }
+      ],
+      "published": true
+    },
+    "lv": {
+      "title": "HEM",
+      "h1": "HEM",
+      "description": "HEM (Hydraulic Excavator Mount) ir otrais smagākais masts, ko TEI piedāvā mikropāļu līdz 76 mm uzstādīšanai.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "TEI Rock Drills logotips",
+          "href": "/produkter/tei",
+          "width": 1920,
+          "height": 1117,
+          "src": "/assets/img/tei-2.webp"
+        },
+        {
+          "type": "carousel",
+          "items": [
+            {
+              "src": "/assets/img/tei-borrmaster-hem-2.webp",
+              "alt": "HEM, 1. attēls",
+              "width": 1024,
+              "height": 950
+            },
+            {
+              "src": "/assets/img/tei-borrmaster-hem-3.webp",
+              "alt": "HEM, 2. attēls",
+              "width": 708,
+              "height": 563
+            },
+            {
+              "src": "/assets/img/tei-borrmaster-hem-4.webp",
+              "alt": "HEM, 3. attēls",
+              "width": 1536,
+              "height": 2048
+            },
+            {
+              "src": "/assets/img/tei-borrmaster-hem-5.webp",
+              "alt": "HEM, 4. attēls",
+              "width": 1798,
+              "height": 1408
+            },
+            {
+              "src": "/assets/img/tei-borrmaster-hem-6.webp",
+              "alt": "HEM, 5. attēls",
+              "width": 800,
+              "height": 800
+            }
+          ],
+          "autoplay": false
+        },
+        {
+          "type": "text",
+          "html": "HEM (Hydraulic Excavator Mount) ir otrais smagākais masts, ko TEI piedāvā mikropāļu līdz 76 mm uzstādīšanai."
+        },
+        {
+          "type": "text",
+          "html": "Vairāk informācijas skatiet zemāk esošajā brošūrā, un jautājumu gadījumā <a href=\"/kontakta-oss\">sazinieties ar mums</a>."
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Produkta lapa",
+          "href": "/assets/docs/tei-borrmaster-hem-ladda-ner-pdf.pdf",
+          "driveId": "1YVw0dkKKyJumE-_ITzuzpD1Q7v91PspM"
+        },
+        {
+          "type": "datasheet",
+          "title": "Tehniskie dati",
+          "note": "TEI tehniskie dati paredz 40 % hidrauliskās jaudas zudumu.",
+          "tagline": "Hidrauliska uz ekskavatora montējama urbšanas iekārta",
+          "intro": [
+            "HEM (Hydraulic Excavator Mount) ir populārākais TEI Rock Drills ražotais urbšanas piederums. Stabilā ekskavatora bāze un garā strēle kopā veido lielisku urbšanas platformu. HEM hidraulisko jaudu saņem no ekskavatora āmura kontūra, tāpēc papildu hidraulikas uzstādīšana nav nepieciešama.",
+            "TEI HEM izmanto tikai savus patentētos hidrauliskos augšējā āmura urbjus un padeves sistēmas. Šiem modernajiem urbjiem ir automātiska sitiena regulēšana (ASA): kad urbjstieņu virkne nav savienota, āmurs pāriet gaidstāves režīmā, un, kad operators piespiež urbjstieņu virkni, ASA automātiski palielina āmuru līdz pilnai jaudai. Iebūvētais svivels uzņem gaisu, ūdeni vai injektēšanas javu visu veidu urbšanai, ieskaitot populāro hollow bar stieņu uzstādīšanu."
+          ],
+          "groups": [
+            {
+              "title": "HEM 360 ar TE360",
+              "rows": [
+                {
+                  "label": "Hidrauliskā caurplūde",
+                  "metric": "136 lpm"
+                },
+                {
+                  "label": "Hidrauliskais spiediens",
+                  "metric": "155 bar"
+                },
+                {
+                  "label": "Atveres diametrs",
+                  "metric": "35-76 mm"
+                },
+                {
+                  "label": "Kopējais garums",
+                  "metric": "4,9 m"
+                },
+                {
+                  "label": "Urbšanas gājiens",
+                  "metric": "3,6 m"
+                },
+                {
+                  "label": "Vilkme",
+                  "metric": "33 kN"
+                },
+                {
+                  "label": "Aptuvenais svars",
+                  "metric": "1 492 kg"
+                },
+                {
+                  "label": "Mazākais ekskavators",
+                  "metric": "13 t"
+                }
+              ]
+            },
+            {
+              "title": "HEM 350R ar RDS350",
+              "rows": [
+                {
+                  "label": "Hidrauliskā caurplūde",
+                  "metric": "114 lpm"
+                },
+                {
+                  "label": "Hidrauliskais spiediens",
+                  "metric": "207 bar"
+                },
+                {
+                  "label": "Atveres diametrs",
+                  "metric": "70-203 mm"
+                },
+                {
+                  "label": "Kopējais garums",
+                  "metric": "4,9 m"
+                },
+                {
+                  "label": "Urbšanas gājiens",
+                  "metric": "3,6 m"
+                },
+                {
+                  "label": "Vilkme",
+                  "metric": "33 kN"
+                },
+                {
+                  "label": "Aptuvenais svars",
+                  "metric": "1 440 kg"
+                },
+                {
+                  "label": "Mazākais ekskavators",
+                  "metric": "13 t"
+                }
+              ]
+            },
+            {
+              "title": "HEM 760 ar TE760",
+              "rows": [
+                {
+                  "label": "Hidrauliskā caurplūde",
+                  "metric": "178 lpm"
+                },
+                {
+                  "label": "Hidrauliskais spiediens",
+                  "metric": "172 bar"
+                },
+                {
+                  "label": "Atveres diametrs",
+                  "metric": "52-127 mm"
+                },
+                {
+                  "label": "Kopējais garums",
+                  "metric": "4,9 m"
+                },
+                {
+                  "label": "Urbšanas gājiens",
+                  "metric": "3,6 m"
+                },
+                {
+                  "label": "Vilkme",
+                  "metric": "33 kN"
+                },
+                {
+                  "label": "Aptuvenais svars",
+                  "metric": "1 700 kg"
+                },
+                {
+                  "label": "Mazākais ekskavators",
+                  "metric": "20 t"
+                }
+              ]
+            },
+            {
+              "title": "HEM 550R ar RDS550",
+              "rows": [
+                {
+                  "label": "Hidrauliskā caurplūde",
+                  "metric": "152 lpm"
+                },
+                {
+                  "label": "Hidrauliskais spiediens",
+                  "metric": "207 bar"
+                },
+                {
+                  "label": "Atveres diametrs",
+                  "metric": "102-305 mm"
+                },
+                {
+                  "label": "Kopējais garums",
+                  "metric": "4,9 m"
+                },
+                {
+                  "label": "Urbšanas gājiens",
+                  "metric": "3,6 m"
+                },
+                {
+                  "label": "Vilkme",
+                  "metric": "33 kN"
+                },
+                {
+                  "label": "Aptuvenais svars",
+                  "metric": "2 177 kg"
+                },
+                {
+                  "label": "Mazākais ekskavators",
+                  "metric": "20 t"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "video",
+          "provider": "youtube",
+          "id": "Lr3tuh0J0ko",
+          "start": 4,
+          "title": ""
+        },
+        {
+          "type": "video",
+          "provider": "youtube",
+          "id": "gjcKSa1_gjE",
+          "title": ""
+        },
+        {
+          "type": "image",
+          "alt": "HEM: 7. attēls",
+          "width": 761,
+          "height": 821,
+          "src": "/assets/img/tei-borrmaster-hem-7.webp"
+        },
+        {
+          "type": "image",
+          "alt": "HEM: 8. attēls",
+          "width": 635,
+          "height": 140,
+          "src": "/assets/img/tei-borrmaster-hem-8.webp"
+        },
+        {
+          "type": "text",
+          "html": "HEM25ED"
+        },
+        {
+          "type": "related",
+          "title": "Piemērotie augšējā āmura urbji",
+          "items": [
+            {
+              "href": "/produkter/tei/topphammare/te360"
+            },
+            {
+              "href": "/produkter/tei/topphammare/te326"
+            },
+            {
+              "href": "/produkter/tei/topphammare/te760"
+            }
+          ],
+          "compat": true
+        },
+        {
+          "type": "related",
+          "title": "Piemērotās rotācijas galvas",
+          "items": [
+            {
+              "href": "/produkter/tei/rotationshammare/rds350"
+            },
+            {
+              "href": "/produkter/tei/rotationshammare/rds550"
+            }
+          ],
+          "compat": true
+        }
+      ],
+      "published": true
+    },
+    "et": {
+      "title": "HEM",
+      "h1": "HEM",
+      "description": "HEM (Hydraulic Excavator Mount) on TEI pakutavatest mastidest suuruselt teine, mis on mõeldud kuni 76 mm mikrovaiade paigaldamiseks.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "TEI Rock Drills logo",
+          "href": "/produkter/tei",
+          "width": 1920,
+          "height": 1117,
+          "src": "/assets/img/tei-2.webp"
+        },
+        {
+          "type": "carousel",
+          "items": [
+            {
+              "src": "/assets/img/tei-borrmaster-hem-2.webp",
+              "alt": "HEM, pilt 1",
+              "width": 1024,
+              "height": 950
+            },
+            {
+              "src": "/assets/img/tei-borrmaster-hem-3.webp",
+              "alt": "HEM, pilt 2",
+              "width": 708,
+              "height": 563
+            },
+            {
+              "src": "/assets/img/tei-borrmaster-hem-4.webp",
+              "alt": "HEM, pilt 3",
+              "width": 1536,
+              "height": 2048
+            },
+            {
+              "src": "/assets/img/tei-borrmaster-hem-5.webp",
+              "alt": "HEM, pilt 4",
+              "width": 1798,
+              "height": 1408
+            },
+            {
+              "src": "/assets/img/tei-borrmaster-hem-6.webp",
+              "alt": "HEM, pilt 5",
+              "width": 800,
+              "height": 800
+            }
+          ],
+          "autoplay": false
+        },
+        {
+          "type": "text",
+          "html": "HEM (Hydraulic Excavator Mount) on TEI pakutavatest mastidest suuruselt teine, mis on mõeldud kuni 76 mm mikrovaiade paigaldamiseks."
+        },
+        {
+          "type": "text",
+          "html": "Lisateavet leiad allolevast brošüürist, küsimuste korral <a href=\"/kontakta-oss\">võta meiega ühendust</a>."
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Tootleht",
+          "href": "/assets/docs/tei-borrmaster-hem-ladda-ner-pdf.pdf",
+          "driveId": "1YVw0dkKKyJumE-_ITzuzpD1Q7v91PspM"
+        },
+        {
+          "type": "datasheet",
+          "title": "Tehnilised andmed",
+          "note": "TEI tehnilised andmed eeldavad 40 % hüdrauliivõimsuse kadu.",
+          "tagline": "Ekskavaatorile paigaldatav hüdrauliline puurimisseade",
+          "intro": [
+            "HEM (Hydraulic Excavator Mount) on kõige populaarsem puurimislisaseade, mida TEI Rock Drills toodab. Stabiilne ekskavaatori alus ja pikk noolvarras moodustavad koos suurepärase puurimisplatvormi. HEM saab hüdraulilise võimsuse ekskavaatori haamri hüdroringist, seega lisahüdraulikat paigaldada ei ole vaja.",
+            "TEI kasutab HEM-is eranditult oma patenteeritud hüdraulilisi ülavasaraid ja etteandesüsteeme. Neil arenenud ülavasaaridel on automaatne löögireguleerimine (ASA): kui puurimistorustik pole haaratud, läheb haamer tühikäigule, ja kui operaator suruab puurimistorustikku, tõstab ASA haamri automaatselt täisvõimsusele. Sisseehitatud swivel võtab vastu õhku, vett või injekteerimissegu igat tüüpi puurimiseks, sealhulgas populaarsete hollow bar -varraste paigaldamiseks."
+          ],
+          "groups": [
+            {
+              "title": "HEM 360 koos TE360-ga",
+              "rows": [
+                {
+                  "label": "Hüdraulikavooluhulk",
+                  "metric": "136 lpm"
+                },
+                {
+                  "label": "Hüdrauliline rõhk",
+                  "metric": "155 bar"
+                },
+                {
+                  "label": "Augu läbimõõt",
+                  "metric": "35-76 mm"
+                },
+                {
+                  "label": "Kogupikkus",
+                  "metric": "4,9 m"
+                },
+                {
+                  "label": "Puurimiskäik",
+                  "metric": "3,6 m"
+                },
+                {
+                  "label": "Tõmbejõud",
+                  "metric": "33 kN"
+                },
+                {
+                  "label": "Ligikaudne kaal",
+                  "metric": "1 492 kg"
+                },
+                {
+                  "label": "Väikseim ekskavaator",
+                  "metric": "13 t"
+                }
+              ]
+            },
+            {
+              "title": "HEM 350R koos RDS350-ga",
+              "rows": [
+                {
+                  "label": "Hüdraulikavooluhulk",
+                  "metric": "114 lpm"
+                },
+                {
+                  "label": "Hüdrauliline rõhk",
+                  "metric": "207 bar"
+                },
+                {
+                  "label": "Augu läbimõõt",
+                  "metric": "70-203 mm"
+                },
+                {
+                  "label": "Kogupikkus",
+                  "metric": "4,9 m"
+                },
+                {
+                  "label": "Puurimiskäik",
+                  "metric": "3,6 m"
+                },
+                {
+                  "label": "Tõmbejõud",
+                  "metric": "33 kN"
+                },
+                {
+                  "label": "Ligikaudne kaal",
+                  "metric": "1 440 kg"
+                },
+                {
+                  "label": "Väikseim ekskavaator",
+                  "metric": "13 t"
+                }
+              ]
+            },
+            {
+              "title": "HEM 760 koos TE760-ga",
+              "rows": [
+                {
+                  "label": "Hüdraulikavooluhulk",
+                  "metric": "178 lpm"
+                },
+                {
+                  "label": "Hüdrauliline rõhk",
+                  "metric": "172 bar"
+                },
+                {
+                  "label": "Augu läbimõõt",
+                  "metric": "52-127 mm"
+                },
+                {
+                  "label": "Kogupikkus",
+                  "metric": "4,9 m"
+                },
+                {
+                  "label": "Puurimiskäik",
+                  "metric": "3,6 m"
+                },
+                {
+                  "label": "Tõmbejõud",
+                  "metric": "33 kN"
+                },
+                {
+                  "label": "Ligikaudne kaal",
+                  "metric": "1 700 kg"
+                },
+                {
+                  "label": "Väikseim ekskavaator",
+                  "metric": "20 t"
+                }
+              ]
+            },
+            {
+              "title": "HEM 550R koos RDS550-ga",
+              "rows": [
+                {
+                  "label": "Hüdraulikavooluhulk",
+                  "metric": "152 lpm"
+                },
+                {
+                  "label": "Hüdrauliline rõhk",
+                  "metric": "207 bar"
+                },
+                {
+                  "label": "Augu läbimõõt",
+                  "metric": "102-305 mm"
+                },
+                {
+                  "label": "Kogupikkus",
+                  "metric": "4,9 m"
+                },
+                {
+                  "label": "Puurimiskäik",
+                  "metric": "3,6 m"
+                },
+                {
+                  "label": "Tõmbejõud",
+                  "metric": "33 kN"
+                },
+                {
+                  "label": "Ligikaudne kaal",
+                  "metric": "2 177 kg"
+                },
+                {
+                  "label": "Väikseim ekskavaator",
+                  "metric": "20 t"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "video",
+          "provider": "youtube",
+          "id": "Lr3tuh0J0ko",
+          "start": 4,
+          "title": ""
+        },
+        {
+          "type": "video",
+          "provider": "youtube",
+          "id": "gjcKSa1_gjE",
+          "title": ""
+        },
+        {
+          "type": "image",
+          "alt": "HEM: pilt 7",
+          "width": 761,
+          "height": 821,
+          "src": "/assets/img/tei-borrmaster-hem-7.webp"
+        },
+        {
+          "type": "image",
+          "alt": "HEM: pilt 8",
+          "width": 635,
+          "height": 140,
+          "src": "/assets/img/tei-borrmaster-hem-8.webp"
+        },
+        {
+          "type": "text",
+          "html": "HEM25ED"
+        },
+        {
+          "type": "related",
+          "title": "Sobivad ülavasarad",
+          "items": [
+            {
+              "href": "/produkter/tei/topphammare/te360"
+            },
+            {
+              "href": "/produkter/tei/topphammare/te326"
+            },
+            {
+              "href": "/produkter/tei/topphammare/te760"
+            }
+          ],
+          "compat": true
+        },
+        {
+          "type": "related",
+          "title": "Sobivad pöörlemispead",
+          "items": [
+            {
+              "href": "/produkter/tei/rotationshammare/rds350"
+            },
+            {
+              "href": "/produkter/tei/rotationshammare/rds550"
+            }
+          ],
+          "compat": true
+        }
+      ],
+      "published": true
+    },
+    "ru": {
+      "title": "HEM",
+      "h1": "HEM",
+      "description": "HEM (Hydraulic Excavator Mount) — вторая по тяжести мачта в предложении TEI для установки микросвай диаметром до 76 мм.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Логотип TEI Rock Drills",
+          "href": "/produkter/tei",
+          "width": 1920,
+          "height": 1117,
+          "src": "/assets/img/tei-2.webp"
+        },
+        {
+          "type": "carousel",
+          "items": [
+            {
+              "src": "/assets/img/tei-borrmaster-hem-2.webp",
+              "alt": "HEM, изображение 1",
+              "width": 1024,
+              "height": 950
+            },
+            {
+              "src": "/assets/img/tei-borrmaster-hem-3.webp",
+              "alt": "HEM, изображение 2",
+              "width": 708,
+              "height": 563
+            },
+            {
+              "src": "/assets/img/tei-borrmaster-hem-4.webp",
+              "alt": "HEM, изображение 3",
+              "width": 1536,
+              "height": 2048
+            },
+            {
+              "src": "/assets/img/tei-borrmaster-hem-5.webp",
+              "alt": "HEM, изображение 4",
+              "width": 1798,
+              "height": 1408
+            },
+            {
+              "src": "/assets/img/tei-borrmaster-hem-6.webp",
+              "alt": "HEM, изображение 5",
+              "width": 800,
+              "height": 800
+            }
+          ],
+          "autoplay": false
+        },
+        {
+          "type": "text",
+          "html": "HEM (Hydraulic Excavator Mount) — вторая по тяжести мачта в предложении TEI для установки микросвай диаметром до 76 мм."
+        },
+        {
+          "type": "text",
+          "html": "Дополнительную информацию см. в брошюре ниже, а при возникновении вопросов <a href=\"/kontakta-oss\">свяжитесь с нами</a>."
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Технический лист",
+          "href": "/assets/docs/tei-borrmaster-hem-ladda-ner-pdf.pdf",
+          "driveId": "1YVw0dkKKyJumE-_ITzuzpD1Q7v91PspM"
+        },
+        {
+          "type": "datasheet",
+          "title": "Технические данные",
+          "note": "Технические данные TEI предполагают потери гидравлической мощности 40 %.",
+          "tagline": "Гидравлический буровой агрегат для установки на экскаватор",
+          "intro": [
+            "HEM (Hydraulic Excavator Mount) — самая популярная буровая навеска производства TEI Rock Drills. Устойчивая база экскаватора и длинная стрела вместе образуют отличную буровую платформу. HEM получает гидравлическую мощность от гидромолотной линии экскаватора, поэтому дополнительная гидравлика не требуется.",
+            "В HEM TEI использует исключительно собственные запатентованные гидравлические верхние перфораторы и системы подачи. Эти современные перфораторы имеют автоматическую регулировку удара (ASA): когда буровая колонна не нагружена, молот переходит в режим холостого хода, а когда оператор прижимает буровую колонну, ASA автоматически выводит молот на полную мощность. Встроенный вертлюг принимает воздух, воду или инъекционный раствор для всех видов бурения, включая установку популярных полых штанг (hollow bar)."
+          ],
+          "groups": [
+            {
+              "title": "HEM 360 с TE360",
+              "rows": [
+                {
+                  "label": "Гидравлический расход",
+                  "metric": "136 lpm"
+                },
+                {
+                  "label": "Гидравлическое давление",
+                  "metric": "155 bar"
+                },
+                {
+                  "label": "Диаметр отверстия",
+                  "metric": "35-76 mm"
+                },
+                {
+                  "label": "Общая длина",
+                  "metric": "4,9 m"
+                },
+                {
+                  "label": "Ход бурения",
+                  "metric": "3,6 m"
+                },
+                {
+                  "label": "Тяговое усилие",
+                  "metric": "33 kN"
+                },
+                {
+                  "label": "Ориентировочная масса",
+                  "metric": "1 492 kg"
+                },
+                {
+                  "label": "Минимальный экскаватор",
+                  "metric": "13 т"
+                }
+              ]
+            },
+            {
+              "title": "HEM 350R с RDS350",
+              "rows": [
+                {
+                  "label": "Гидравлический расход",
+                  "metric": "114 lpm"
+                },
+                {
+                  "label": "Гидравлическое давление",
+                  "metric": "207 bar"
+                },
+                {
+                  "label": "Диаметр отверстия",
+                  "metric": "70-203 mm"
+                },
+                {
+                  "label": "Общая длина",
+                  "metric": "4,9 m"
+                },
+                {
+                  "label": "Ход бурения",
+                  "metric": "3,6 m"
+                },
+                {
+                  "label": "Тяговое усилие",
+                  "metric": "33 kN"
+                },
+                {
+                  "label": "Ориентировочная масса",
+                  "metric": "1 440 kg"
+                },
+                {
+                  "label": "Минимальный экскаватор",
+                  "metric": "13 т"
+                }
+              ]
+            },
+            {
+              "title": "HEM 760 с TE760",
+              "rows": [
+                {
+                  "label": "Гидравлический расход",
+                  "metric": "178 lpm"
+                },
+                {
+                  "label": "Гидравлическое давление",
+                  "metric": "172 bar"
+                },
+                {
+                  "label": "Диаметр отверстия",
+                  "metric": "52-127 mm"
+                },
+                {
+                  "label": "Общая длина",
+                  "metric": "4,9 m"
+                },
+                {
+                  "label": "Ход бурения",
+                  "metric": "3,6 m"
+                },
+                {
+                  "label": "Тяговое усилие",
+                  "metric": "33 kN"
+                },
+                {
+                  "label": "Ориентировочная масса",
+                  "metric": "1 700 kg"
+                },
+                {
+                  "label": "Минимальный экскаватор",
+                  "metric": "20 т"
+                }
+              ]
+            },
+            {
+              "title": "HEM 550R с RDS550",
+              "rows": [
+                {
+                  "label": "Гидравлический расход",
+                  "metric": "152 lpm"
+                },
+                {
+                  "label": "Гидравлическое давление",
+                  "metric": "207 bar"
+                },
+                {
+                  "label": "Диаметр отверстия",
+                  "metric": "102-305 mm"
+                },
+                {
+                  "label": "Общая длина",
+                  "metric": "4,9 m"
+                },
+                {
+                  "label": "Ход бурения",
+                  "metric": "3,6 m"
+                },
+                {
+                  "label": "Тяговое усилие",
+                  "metric": "33 kN"
+                },
+                {
+                  "label": "Ориентировочная масса",
+                  "metric": "2 177 kg"
+                },
+                {
+                  "label": "Минимальный экскаватор",
+                  "metric": "20 т"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "video",
+          "provider": "youtube",
+          "id": "Lr3tuh0J0ko",
+          "start": 4,
+          "title": ""
+        },
+        {
+          "type": "video",
+          "provider": "youtube",
+          "id": "gjcKSa1_gjE",
+          "title": ""
+        },
+        {
+          "type": "image",
+          "alt": "HEM: изображение 7",
+          "width": 761,
+          "height": 821,
+          "src": "/assets/img/tei-borrmaster-hem-7.webp"
+        },
+        {
+          "type": "image",
+          "alt": "HEM: изображение 8",
+          "width": 635,
+          "height": 140,
+          "src": "/assets/img/tei-borrmaster-hem-8.webp"
+        },
+        {
+          "type": "text",
+          "html": "HEM25ED"
+        },
+        {
+          "type": "related",
+          "title": "Подходящие верхние перфораторы",
+          "items": [
+            {
+              "href": "/produkter/tei/topphammare/te360"
+            },
+            {
+              "href": "/produkter/tei/topphammare/te326"
+            },
+            {
+              "href": "/produkter/tei/topphammare/te760"
+            }
+          ],
+          "compat": true
+        },
+        {
+          "type": "related",
+          "title": "Подходящие вращатели",
+          "items": [
+            {
+              "href": "/produkter/tei/rotationshammare/rds350"
+            },
+            {
+              "href": "/produkter/tei/rotationshammare/rds550"
+            }
+          ],
+          "compat": true
+        }
+      ],
+      "published": true
     }
   },
   "source": {

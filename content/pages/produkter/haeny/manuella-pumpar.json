@@ -1587,6 +1587,1590 @@
           ]
         }
       ]
+    },
+    "lt": {
+      "title": "Rankiniai siurbliai",
+      "h1": "Häny: rankiniai betono siurbliai (IC)",
+      "description": "Yra keletas rankinių variantų, priklausomai nuo tūrio ir slėgio poreikio. Kompaktiški blokai IC310, IC311 ir IC325 yra perkamiausi. Modelio pavadinimas leidžia numanyti…",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Häny: rankiniai betono siurbliai (IC)",
+          "width": 876,
+          "height": 510,
+          "src": "/assets/img/haeny-automatiska-pumpar-1.webp",
+          "href": "/produkter/haeny"
+        },
+        {
+          "type": "image",
+          "alt": "Häny: rankiniai betono siurbliai (IC), 2 paveikslėlis",
+          "width": 1920,
+          "height": 1315,
+          "src": "/assets/img/haeny-manuella-pumpar-2.webp"
+        },
+        {
+          "type": "text",
+          "html": "Yra keletas rankinių variantų, priklausomai nuo tūrio ir slėgio poreikio. Kompaktiški blokai IC310, IC311 ir IC325 yra perkamiausi. Modelio pavadinimas leidžia numanyti bendrą maišyklės ir maišiklio tūrį, o paskutinis skaitmuo nurodo, kokio tipo stūmoklinis siurblys (ZMP) naudojamas. IC310 darbinis slėgis šiek tiek didesnis nei IC311, o IC311 yra kiek pigesnis. IC311 maksimalus slėgis yra 75 bar, o ne 100 bar kaip IC310, bet debitas didesnis – 2 m³/val."
+        },
+        {
+          "type": "text",
+          "html": "Skirtingai nuo IC310, versija <a href=\"/produkter/haeny/manuella-pumpar/ic-325-ic325-ccp\">IC325</a> turi du stūmoklinius siurblius, todėl srautas tolygesnis. Maksimalus slėgis – 100 bar, maksimalus debitas – 2 m³/val. Šį modelį taip pat galima derinti su moduliu PU injektavimui."
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Susisiekite su mumis</a> dėl papildomos informacijos."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Modeliai",
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 4,
+          "square": true,
+          "more": false,
+          "items": [
+            {
+              "title": "IC 310",
+              "image": "/assets/img/haeny-ic310-tile.webp",
+              "alt": "Kompaktiška injektavimo įranga IC 310",
+              "href": "/produkter/haeny/manuella-pumpar/ic-310-ic-311",
+              "bullets": [
+                "ZMP 610",
+                "Debitas: 1,5 m³/h",
+                "Slėgis: 100 bar",
+                "Tūris: 100 l"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "IC 311",
+              "image": "/assets/img/haeny-ic311-tile.webp",
+              "alt": "Kompaktiška injektavimo įranga IC 311",
+              "href": "/produkter/haeny/manuella-pumpar/ic-311",
+              "bullets": [
+                "ZMP 611",
+                "Debitas: 2 m³/h",
+                "Slėgis: 75 bar",
+                "Tūris: 100 l"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "IC 325",
+              "image": "/assets/img/haeny-ic325-tile.webp",
+              "alt": "Kompaktiška injektavimo įranga IC 325",
+              "href": "/produkter/haeny/manuella-pumpar/ic-325-ic325-ccp",
+              "bullets": [
+                "ZMP 625",
+                "Debitas: 2 m³/h",
+                "Slėgis: 100 bar",
+                "Tūris: 100 l"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "IC 325 CCP",
+              "image": "/assets/img/haeny-ccp-tile.webp",
+              "alt": "Kompaktiška injektavimo įranga IC 325CCP",
+              "href": "/produkter/haeny/manuella-pumpar/ic-325-ccp",
+              "bullets": [
+                "ZMP 625",
+                "Debitas: 2 m³/h",
+                "Slėgis: 100 bar",
+                "Tūris: 100 l"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "IC 650/710",
+              "image": "/assets/img/haeny-ic650-710v-tile.webp",
+              "alt": "Kompaktiška injektavimo įranga IC 650/710",
+              "href": "/produkter/haeny/manuella-pumpar/ic-650-710v",
+              "bullets": [
+                "ZMP 710",
+                "Debitas: 5 m³/h",
+                "Slėgis: 100 bar",
+                "Tūris: 260 l"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "IC 650/712",
+              "image": "/assets/img/haeny-ic650-712v-tile.webp",
+              "alt": "Kompaktiška injektavimo įranga IC 650/712",
+              "href": "/produkter/haeny/manuella-pumpar/ic-650-712v",
+              "bullets": [
+                "ZMP 712",
+                "Debitas: 4,9 m³/h",
+                "Slėgis: 88 bar",
+                "Tūris: 260 l"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "IC 650/725",
+              "image": "/assets/img/haeny-ic650-725v-tile.webp",
+              "alt": "Kompaktiška injektavimo įranga IC 650/725",
+              "href": "/produkter/haeny/manuella-pumpar/ic-650-725v",
+              "bullets": [
+                "ZMP 725",
+                "Debitas: 5 m³/h",
+                "Slėgis: 100 bar",
+                "Tūris: 260 l"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "IC 1100/710",
+              "image": "/assets/img/haeny-ic1100-710v-tile.webp",
+              "alt": "Kompaktiška injektavimo įranga IC 1100/710",
+              "href": "/produkter/haeny/manuella-pumpar/ic-1100-710v",
+              "bullets": [
+                "ZMP 710",
+                "Debitas: 5 m³/h",
+                "Slėgis: 100 bar",
+                "Tūris: 260 l"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "IC 1100/712",
+              "image": "/assets/img/haeny-ic1100-712v-tile.webp",
+              "alt": "Kompaktiška injektavimo įranga IC 1100/712",
+              "href": "/produkter/haeny/manuella-pumpar/ic-1100-712v",
+              "bullets": [
+                "ZMP 712",
+                "Debitas: 4,9 m³/h",
+                "Slėgis: 88 bar",
+                "Tūris: 260 l"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "IC 1100/725",
+              "image": "/assets/img/haeny-ic1100-725v-tile.webp",
+              "alt": "Kompaktiška injektavimo įranga IC 1100/725",
+              "href": "/produkter/haeny/manuella-pumpar/ic-1100-725v",
+              "bullets": [
+                "ZMP 725",
+                "Debitas: 5 m³/h",
+                "Slėgis: 100 bar",
+                "Tūris: 260 l"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "IC 1400/710",
+              "image": "/assets/img/haeny-ic1400-710v-tile.webp",
+              "alt": "Kompaktiška injektavimo įranga IC 1400/710",
+              "href": "/produkter/haeny/manuella-pumpar/ic-1400-710v",
+              "bullets": [
+                "ZMP 710",
+                "Debitas: 7,5 m³/h",
+                "Slėgis: 100 bar",
+                "Tūris: 550 l"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "IC 1400/712",
+              "image": "/assets/img/haeny-ic1400-712v-tile.webp",
+              "alt": "Kompaktiška injektavimo įranga IC 1400/712",
+              "href": "/produkter/haeny/manuella-pumpar/ic-1400-712v",
+              "bullets": [
+                "ZMP 712",
+                "Debitas: 4,9 m³/h",
+                "Slėgis: 88 bar",
+                "Tūris: 550 l"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "IC 1400/725",
+              "image": "/assets/img/haeny-ic1400-725v-tile.webp",
+              "alt": "Kompaktiška injektavimo įranga IC 1400/725",
+              "href": "/produkter/haeny/manuella-pumpar/ic-1400-725v",
+              "bullets": [
+                "ZMP 725",
+                "Debitas: 8 m³/h",
+                "Slėgis: 100 bar",
+                "Tūris: 550 l"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "IC 1400/726",
+              "image": "/assets/img/haeny-ic1400-726v-tile.webp",
+              "alt": "Kompaktiška injektavimo įranga IC 1400/726",
+              "href": "/produkter/haeny/manuella-pumpar/ic-1400-726v",
+              "bullets": [
+                "ZMP 726",
+                "Debitas: 8 m³/h",
+                "Slėgis: 100 bar",
+                "Tūris: 550 l"
+              ],
+              "width": 1000,
+              "height": 1000
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "Be šių yra ir kitų siurblių variantų. Siurblių specifikacijos pateiktos žemiau lentelėje. <a href=\"/kontakta-oss\">Susisiekite su mumis</a>, jei turite pageidavimų ar klausimų."
+        },
+        {
+          "type": "table",
+          "header": true,
+          "align": "center",
+          "groups": [
+            {
+              "text": "Model IC",
+              "span": 2
+            },
+            {
+              "text": "310",
+              "span": 1
+            },
+            {
+              "text": "311",
+              "span": 1
+            },
+            {
+              "text": "325",
+              "span": 1
+            },
+            {
+              "text": "650",
+              "span": 3
+            },
+            {
+              "text": "1100",
+              "span": 4
+            },
+            {
+              "text": "1400",
+              "span": 4
+            }
+          ],
+          "rows": [
+            [
+              "Modelis",
+              "",
+              "IC 310",
+              "IC 311",
+              "IC 325",
+              "IC 650/710",
+              "IC 650/712",
+              "IC 650/725",
+              "IC 1100/710",
+              "IC 1100/712",
+              "IC 1100/725",
+              "IC 1100/726",
+              "IC 1400/710",
+              "IC 1400/712",
+              "IC 1400/725",
+              "IC 1400/726"
+            ],
+            [
+              "Konfigūracija",
+              "HCM/HRW",
+              "100/150",
+              "100/150",
+              "100/150",
+              "300/350",
+              "300/350",
+              "300/350",
+              "300/800",
+              "300/800",
+              "300/800",
+              "300/800",
+              "600/800",
+              "600/800",
+              "600/800",
+              "600/800"
+            ],
+            [
+              "Injektavimo siurblys",
+              "ZMP",
+              "610",
+              "611",
+              "625",
+              "710",
+              "712",
+              "725",
+              "710",
+              "712",
+              "725",
+              "726",
+              "710",
+              "712",
+              "725",
+              "726"
+            ],
+            [
+              "Maks. našumas",
+              "m³/h",
+              "1.5",
+              "2.0",
+              "2.0",
+              "5.0",
+              "4.9",
+              "5.0",
+              "5.0",
+              "4.9",
+              "5.0",
+              "5.0",
+              "7.5",
+              "4.9",
+              "8.0",
+              "8.0"
+            ],
+            [
+              "Maks. slėgis",
+              "bar",
+              "100",
+              "75",
+              "100",
+              "100",
+              "88",
+              "100",
+              "100",
+              "88",
+              "100",
+              "100",
+              "100",
+              "88",
+              "100",
+              "100"
+            ],
+            [
+              "Nominalioji galia",
+              "kW",
+              "9.1",
+              "9.1",
+              "9.1",
+              "17.5",
+              "17.5",
+              "19.0",
+              "17.5",
+              "17.5",
+              "19.0",
+              "39.8",
+              "17.5",
+              "17.5",
+              "19.0",
+              "39.8"
+            ]
+          ]
+        }
+      ],
+      "published": true
+    },
+    "lv": {
+      "title": "Manuālie sūkņi",
+      "h1": "Häny: manuālie betona sūkņi (IC)",
+      "description": "Ir vairākas manuālās versijas atkarībā no tilpuma un spiediena prasībām. Kompaktās iekārtas IC310, IC311 un IC325 ir visvairāk pirktās. Modeļa nosaukums norāda…",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Häny: manuālie betona sūkņi (IC)",
+          "width": 876,
+          "height": 510,
+          "src": "/assets/img/haeny-automatiska-pumpar-1.webp",
+          "href": "/produkter/haeny"
+        },
+        {
+          "type": "image",
+          "alt": "Häny: manuālie betona sūkņi (IC), 2. attēls",
+          "width": 1920,
+          "height": 1315,
+          "src": "/assets/img/haeny-manuella-pumpar-2.webp"
+        },
+        {
+          "type": "text",
+          "html": "Ir vairākas manuālās versijas atkarībā no tilpuma un spiediena prasībām. Kompaktās iekārtas IC310, IC311 un IC325 ir visvairāk pirktās. Modeļa nosaukums norāda uz miksera un maisītāja kopējo tilpumu, bet pēdējais cipars norāda izmantotā virzuļsūkņa (ZMP) tipu. IC310 darba spiediens ir nedaudz augstāks nekā IC311, savukārt IC311 ir nedaudz lētāka. IC311 maksimālais spiediens ir 75 bar, nevis 100 bar kā IC310, taču tai ir lielāka caurplūde — 2 m³/h."
+        },
+        {
+          "type": "text",
+          "html": "Atšķirībā no IC310, versijai <a href=\"/produkter/haeny/manuella-pumpar/ic-325-ic325-ccp\">IC325</a> ir divi virzuļsūkņi, kas nodrošina vienmērīgāku plūsmu. Maksimālais spiediens ir 100 bar un maksimālā caurplūde — 2 m³/h. Šo modeli var kombinēt arī ar moduli PU injektēšanai."
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Sazinieties ar mums</a>, lai saņemtu papildu informāciju."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Modeļi",
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 4,
+          "square": true,
+          "more": false,
+          "items": [
+            {
+              "title": "IC 310",
+              "image": "/assets/img/haeny-ic310-tile.webp",
+              "alt": "Kompakta injektēšanas iekārta IC 310",
+              "href": "/produkter/haeny/manuella-pumpar/ic-310-ic-311",
+              "bullets": [
+                "ZMP 610",
+                "Caurplūde: 1,5 m³/h",
+                "Spiediens: 100 bar",
+                "Tilpums: 100 l"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "IC 311",
+              "image": "/assets/img/haeny-ic311-tile.webp",
+              "alt": "Kompakta injektēšanas iekārta IC 311",
+              "href": "/produkter/haeny/manuella-pumpar/ic-311",
+              "bullets": [
+                "ZMP 611",
+                "Caurplūde: 2 m³/h",
+                "Spiediens: 75 bar",
+                "Tilpums: 100 l"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "IC 325",
+              "image": "/assets/img/haeny-ic325-tile.webp",
+              "alt": "Kompakta injektēšanas iekārta IC 325",
+              "href": "/produkter/haeny/manuella-pumpar/ic-325-ic325-ccp",
+              "bullets": [
+                "ZMP 625",
+                "Caurplūde: 2 m³/h",
+                "Spiediens: 100 bar",
+                "Tilpums: 100 l"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "IC 325 CCP",
+              "image": "/assets/img/haeny-ccp-tile.webp",
+              "alt": "Kompakta injektēšanas iekārta IC 325CCP",
+              "href": "/produkter/haeny/manuella-pumpar/ic-325-ccp",
+              "bullets": [
+                "ZMP 625",
+                "Caurplūde: 2 m³/h",
+                "Spiediens: 100 bar",
+                "Tilpums: 100 l"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "IC 650/710",
+              "image": "/assets/img/haeny-ic650-710v-tile.webp",
+              "alt": "Kompakta injektēšanas iekārta IC 650/710",
+              "href": "/produkter/haeny/manuella-pumpar/ic-650-710v",
+              "bullets": [
+                "ZMP 710",
+                "Caurplūde: 5 m³/h",
+                "Spiediens: 100 bar",
+                "Tilpums: 260 l"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "IC 650/712",
+              "image": "/assets/img/haeny-ic650-712v-tile.webp",
+              "alt": "Kompakta injektēšanas iekārta IC 650/712",
+              "href": "/produkter/haeny/manuella-pumpar/ic-650-712v",
+              "bullets": [
+                "ZMP 712",
+                "Caurplūde: 4,9 m³/h",
+                "Spiediens: 88 bar",
+                "Tilpums: 260 l"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "IC 650/725",
+              "image": "/assets/img/haeny-ic650-725v-tile.webp",
+              "alt": "Kompakta injektēšanas iekārta IC 650/725",
+              "href": "/produkter/haeny/manuella-pumpar/ic-650-725v",
+              "bullets": [
+                "ZMP 725",
+                "Caurplūde: 5 m³/h",
+                "Spiediens: 100 bar",
+                "Tilpums: 260 l"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "IC 1100/710",
+              "image": "/assets/img/haeny-ic1100-710v-tile.webp",
+              "alt": "Kompakta injektēšanas iekārta IC 1100/710",
+              "href": "/produkter/haeny/manuella-pumpar/ic-1100-710v",
+              "bullets": [
+                "ZMP 710",
+                "Caurplūde: 5 m³/h",
+                "Spiediens: 100 bar",
+                "Tilpums: 260 l"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "IC 1100/712",
+              "image": "/assets/img/haeny-ic1100-712v-tile.webp",
+              "alt": "Kompakta injektēšanas iekārta IC 1100/712",
+              "href": "/produkter/haeny/manuella-pumpar/ic-1100-712v",
+              "bullets": [
+                "ZMP 712",
+                "Caurplūde: 4,9 m³/h",
+                "Spiediens: 88 bar",
+                "Tilpums: 260 l"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "IC 1100/725",
+              "image": "/assets/img/haeny-ic1100-725v-tile.webp",
+              "alt": "Kompakta injektēšanas iekārta IC 1100/725",
+              "href": "/produkter/haeny/manuella-pumpar/ic-1100-725v",
+              "bullets": [
+                "ZMP 725",
+                "Caurplūde: 5 m³/h",
+                "Spiediens: 100 bar",
+                "Tilpums: 260 l"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "IC 1400/710",
+              "image": "/assets/img/haeny-ic1400-710v-tile.webp",
+              "alt": "Kompakta injektēšanas iekārta IC 1400/710",
+              "href": "/produkter/haeny/manuella-pumpar/ic-1400-710v",
+              "bullets": [
+                "ZMP 710",
+                "Caurplūde: 7,5 m³/h",
+                "Spiediens: 100 bar",
+                "Tilpums: 550 l"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "IC 1400/712",
+              "image": "/assets/img/haeny-ic1400-712v-tile.webp",
+              "alt": "Kompakta injektēšanas iekārta IC 1400/712",
+              "href": "/produkter/haeny/manuella-pumpar/ic-1400-712v",
+              "bullets": [
+                "ZMP 712",
+                "Caurplūde: 4,9 m³/h",
+                "Spiediens: 88 bar",
+                "Tilpums: 550 l"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "IC 1400/725",
+              "image": "/assets/img/haeny-ic1400-725v-tile.webp",
+              "alt": "Kompakta injektēšanas iekārta IC 1400/725",
+              "href": "/produkter/haeny/manuella-pumpar/ic-1400-725v",
+              "bullets": [
+                "ZMP 725",
+                "Caurplūde: 8 m³/h",
+                "Spiediens: 100 bar",
+                "Tilpums: 550 l"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "IC 1400/726",
+              "image": "/assets/img/haeny-ic1400-726v-tile.webp",
+              "alt": "Kompakta injektēšanas iekārta IC 1400/726",
+              "href": "/produkter/haeny/manuella-pumpar/ic-1400-726v",
+              "bullets": [
+                "ZMP 726",
+                "Caurplūde: 8 m³/h",
+                "Spiediens: 100 bar",
+                "Tilpums: 550 l"
+              ],
+              "width": 1000,
+              "height": 1000
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "Papildus šiem ir vēl vairākas sūkņu versijas. Sūkņu specifikācijas ir norādītas zemāk tabulā. <a href=\"/kontakta-oss\">Sazinieties ar mums</a>, ja jums ir vēlmes vai jautājumi."
+        },
+        {
+          "type": "table",
+          "header": true,
+          "align": "center",
+          "groups": [
+            {
+              "text": "Model IC",
+              "span": 2
+            },
+            {
+              "text": "310",
+              "span": 1
+            },
+            {
+              "text": "311",
+              "span": 1
+            },
+            {
+              "text": "325",
+              "span": 1
+            },
+            {
+              "text": "650",
+              "span": 3
+            },
+            {
+              "text": "1100",
+              "span": 4
+            },
+            {
+              "text": "1400",
+              "span": 4
+            }
+          ],
+          "rows": [
+            [
+              "Modelis",
+              "",
+              "IC 310",
+              "IC 311",
+              "IC 325",
+              "IC 650/710",
+              "IC 650/712",
+              "IC 650/725",
+              "IC 1100/710",
+              "IC 1100/712",
+              "IC 1100/725",
+              "IC 1100/726",
+              "IC 1400/710",
+              "IC 1400/712",
+              "IC 1400/725",
+              "IC 1400/726"
+            ],
+            [
+              "Konfigurācija",
+              "HCM/HRW",
+              "100/150",
+              "100/150",
+              "100/150",
+              "300/350",
+              "300/350",
+              "300/350",
+              "300/800",
+              "300/800",
+              "300/800",
+              "300/800",
+              "600/800",
+              "600/800",
+              "600/800",
+              "600/800"
+            ],
+            [
+              "Injektēšanas sūknis",
+              "ZMP",
+              "610",
+              "611",
+              "625",
+              "710",
+              "712",
+              "725",
+              "710",
+              "712",
+              "725",
+              "726",
+              "710",
+              "712",
+              "725",
+              "726"
+            ],
+            [
+              "Maks. ražība",
+              "m³/h",
+              "1.5",
+              "2.0",
+              "2.0",
+              "5.0",
+              "4.9",
+              "5.0",
+              "5.0",
+              "4.9",
+              "5.0",
+              "5.0",
+              "7.5",
+              "4.9",
+              "8.0",
+              "8.0"
+            ],
+            [
+              "Maks. spiediens",
+              "bar",
+              "100",
+              "75",
+              "100",
+              "100",
+              "88",
+              "100",
+              "100",
+              "88",
+              "100",
+              "100",
+              "100",
+              "88",
+              "100",
+              "100"
+            ],
+            [
+              "Nominālā jauda",
+              "kW",
+              "9.1",
+              "9.1",
+              "9.1",
+              "17.5",
+              "17.5",
+              "19.0",
+              "17.5",
+              "17.5",
+              "19.0",
+              "39.8",
+              "17.5",
+              "17.5",
+              "19.0",
+              "39.8"
+            ]
+          ]
+        }
+      ],
+      "published": true
+    },
+    "et": {
+      "title": "Käsipumbad",
+      "h1": "Häny: käsitsi betoonipumbad (IC)",
+      "description": "Sõltuvalt mahust ja rõhunõuetest on mitu käsitsi juhitavat varianti. Kompaktsed IC310, IC311 ja IC325 on enim müüdud. Mudeli nimi annab vihje…",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Häny: käsitsi betoonipumbad (IC)",
+          "width": 876,
+          "height": 510,
+          "src": "/assets/img/haeny-automatiska-pumpar-1.webp",
+          "href": "/produkter/haeny"
+        },
+        {
+          "type": "image",
+          "alt": "Häny: käsitsi betoonipumbad (IC), pilt 2",
+          "width": 1920,
+          "height": 1315,
+          "src": "/assets/img/haeny-manuella-pumpar-2.webp"
+        },
+        {
+          "type": "text",
+          "html": "Sõltuvalt mahust ja rõhunõuetest on mitu käsitsi juhitavat varianti. Kompaktsed IC310, IC311 ja IC325 on enim müüdud. Mudeli nimi annab vihje segisti ja seguri kogumahule ning viimane number näitab, millist tüüpi kolbpumpa (ZMP) kasutatakse. IC310 töörõhk on veidi kõrgem kui IC311-l, IC311 on aga pisut odavam. IC311 maksimaalne rõhk on 75 bar, mitte 100 bar nagu IC310 puhul, kuid selle vooluhulk on suurem – 2 m³/h."
+        },
+        {
+          "type": "text",
+          "html": "Erinevalt IC310-st on variandil <a href=\"/produkter/haeny/manuella-pumpar/ic-325-ic325-ccp\">IC325</a> kaks kolbpumpa, mis annab ühtlasema voolu. Maksimaalne rõhk on 100 bar ja maksimaalne vooluhulk 2 m³/h. Seda mudelit saab kombineerida ka PU-injekteerimise mooduliga."
+        },
+        {
+          "type": "text",
+          "html": "Lisateabe saamiseks <a href=\"/kontakta-oss\">võta meiega ühendust</a>."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Mudelid",
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 4,
+          "square": true,
+          "more": false,
+          "items": [
+            {
+              "title": "IC 310",
+              "image": "/assets/img/haeny-ic310-tile.webp",
+              "alt": "Kompaktne injekteerimisjaam IC 310",
+              "href": "/produkter/haeny/manuella-pumpar/ic-310-ic-311",
+              "bullets": [
+                "ZMP 610",
+                "Vooluhulk: 1,5 m³/h",
+                "Rõhk: 100 bar",
+                "Maht: 100 l"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "IC 311",
+              "image": "/assets/img/haeny-ic311-tile.webp",
+              "alt": "Kompaktne injekteerimisjaam IC 311",
+              "href": "/produkter/haeny/manuella-pumpar/ic-311",
+              "bullets": [
+                "ZMP 611",
+                "Vooluhulk: 2 m³/h",
+                "Rõhk: 75 bar",
+                "Maht: 100 l"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "IC 325",
+              "image": "/assets/img/haeny-ic325-tile.webp",
+              "alt": "Kompaktne injekteerimisjaam IC 325",
+              "href": "/produkter/haeny/manuella-pumpar/ic-325-ic325-ccp",
+              "bullets": [
+                "ZMP 625",
+                "Vooluhulk: 2 m³/h",
+                "Rõhk: 100 bar",
+                "Maht: 100 l"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "IC 325 CCP",
+              "image": "/assets/img/haeny-ccp-tile.webp",
+              "alt": "Kompaktne injekteerimisjaam IC 325CCP",
+              "href": "/produkter/haeny/manuella-pumpar/ic-325-ccp",
+              "bullets": [
+                "ZMP 625",
+                "Vooluhulk: 2 m³/h",
+                "Rõhk: 100 bar",
+                "Maht: 100 l"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "IC 650/710",
+              "image": "/assets/img/haeny-ic650-710v-tile.webp",
+              "alt": "Kompaktne injekteerimisjaam IC 650/710",
+              "href": "/produkter/haeny/manuella-pumpar/ic-650-710v",
+              "bullets": [
+                "ZMP 710",
+                "Vooluhulk: 5 m³/h",
+                "Rõhk: 100 bar",
+                "Maht: 260 l"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "IC 650/712",
+              "image": "/assets/img/haeny-ic650-712v-tile.webp",
+              "alt": "Kompaktne injekteerimisjaam IC 650/712",
+              "href": "/produkter/haeny/manuella-pumpar/ic-650-712v",
+              "bullets": [
+                "ZMP 712",
+                "Vooluhulk: 4,9 m³/h",
+                "Rõhk: 88 bar",
+                "Maht: 260 l"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "IC 650/725",
+              "image": "/assets/img/haeny-ic650-725v-tile.webp",
+              "alt": "Kompaktne injekteerimisjaam IC 650/725",
+              "href": "/produkter/haeny/manuella-pumpar/ic-650-725v",
+              "bullets": [
+                "ZMP 725",
+                "Vooluhulk: 5 m³/h",
+                "Rõhk: 100 bar",
+                "Maht: 260 l"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "IC 1100/710",
+              "image": "/assets/img/haeny-ic1100-710v-tile.webp",
+              "alt": "Kompaktne injekteerimisjaam IC 1100/710",
+              "href": "/produkter/haeny/manuella-pumpar/ic-1100-710v",
+              "bullets": [
+                "ZMP 710",
+                "Vooluhulk: 5 m³/h",
+                "Rõhk: 100 bar",
+                "Maht: 260 l"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "IC 1100/712",
+              "image": "/assets/img/haeny-ic1100-712v-tile.webp",
+              "alt": "Kompaktne injekteerimisjaam IC 1100/712",
+              "href": "/produkter/haeny/manuella-pumpar/ic-1100-712v",
+              "bullets": [
+                "ZMP 712",
+                "Vooluhulk: 4,9 m³/h",
+                "Rõhk: 88 bar",
+                "Maht: 260 l"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "IC 1100/725",
+              "image": "/assets/img/haeny-ic1100-725v-tile.webp",
+              "alt": "Kompaktne injekteerimisjaam IC 1100/725",
+              "href": "/produkter/haeny/manuella-pumpar/ic-1100-725v",
+              "bullets": [
+                "ZMP 725",
+                "Vooluhulk: 5 m³/h",
+                "Rõhk: 100 bar",
+                "Maht: 260 l"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "IC 1400/710",
+              "image": "/assets/img/haeny-ic1400-710v-tile.webp",
+              "alt": "Kompaktne injekteerimisjaam IC 1400/710",
+              "href": "/produkter/haeny/manuella-pumpar/ic-1400-710v",
+              "bullets": [
+                "ZMP 710",
+                "Vooluhulk: 7,5 m³/h",
+                "Rõhk: 100 bar",
+                "Maht: 550 l"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "IC 1400/712",
+              "image": "/assets/img/haeny-ic1400-712v-tile.webp",
+              "alt": "Kompaktne injekteerimisjaam IC 1400/712",
+              "href": "/produkter/haeny/manuella-pumpar/ic-1400-712v",
+              "bullets": [
+                "ZMP 712",
+                "Vooluhulk: 4,9 m³/h",
+                "Rõhk: 88 bar",
+                "Maht: 550 l"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "IC 1400/725",
+              "image": "/assets/img/haeny-ic1400-725v-tile.webp",
+              "alt": "Kompaktne injekteerimisjaam IC 1400/725",
+              "href": "/produkter/haeny/manuella-pumpar/ic-1400-725v",
+              "bullets": [
+                "ZMP 725",
+                "Vooluhulk: 8 m³/h",
+                "Rõhk: 100 bar",
+                "Maht: 550 l"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "IC 1400/726",
+              "image": "/assets/img/haeny-ic1400-726v-tile.webp",
+              "alt": "Kompaktne injekteerimisjaam IC 1400/726",
+              "href": "/produkter/haeny/manuella-pumpar/ic-1400-726v",
+              "bullets": [
+                "ZMP 726",
+                "Vooluhulk: 8 m³/h",
+                "Rõhk: 100 bar",
+                "Maht: 550 l"
+              ],
+              "width": 1000,
+              "height": 1000
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "Lisaks nendele on veel mitu pumbavarianti. Pumpade tehnilised andmed on esitatud allolevas tabelis. <a href=\"/kontakta-oss\">Võta meiega ühendust</a>, kui sul on soove või küsimusi."
+        },
+        {
+          "type": "table",
+          "header": true,
+          "align": "center",
+          "groups": [
+            {
+              "text": "Model IC",
+              "span": 2
+            },
+            {
+              "text": "310",
+              "span": 1
+            },
+            {
+              "text": "311",
+              "span": 1
+            },
+            {
+              "text": "325",
+              "span": 1
+            },
+            {
+              "text": "650",
+              "span": 3
+            },
+            {
+              "text": "1100",
+              "span": 4
+            },
+            {
+              "text": "1400",
+              "span": 4
+            }
+          ],
+          "rows": [
+            [
+              "Mudel",
+              "",
+              "IC 310",
+              "IC 311",
+              "IC 325",
+              "IC 650/710",
+              "IC 650/712",
+              "IC 650/725",
+              "IC 1100/710",
+              "IC 1100/712",
+              "IC 1100/725",
+              "IC 1100/726",
+              "IC 1400/710",
+              "IC 1400/712",
+              "IC 1400/725",
+              "IC 1400/726"
+            ],
+            [
+              "Konfiguratsioon",
+              "HCM/HRW",
+              "100/150",
+              "100/150",
+              "100/150",
+              "300/350",
+              "300/350",
+              "300/350",
+              "300/800",
+              "300/800",
+              "300/800",
+              "300/800",
+              "600/800",
+              "600/800",
+              "600/800",
+              "600/800"
+            ],
+            [
+              "Injekteerimispump",
+              "ZMP",
+              "610",
+              "611",
+              "625",
+              "710",
+              "712",
+              "725",
+              "710",
+              "712",
+              "725",
+              "726",
+              "710",
+              "712",
+              "725",
+              "726"
+            ],
+            [
+              "Maks. jõudlus",
+              "m³/h",
+              "1.5",
+              "2.0",
+              "2.0",
+              "5.0",
+              "4.9",
+              "5.0",
+              "5.0",
+              "4.9",
+              "5.0",
+              "5.0",
+              "7.5",
+              "4.9",
+              "8.0",
+              "8.0"
+            ],
+            [
+              "Maks. rõhk",
+              "bar",
+              "100",
+              "75",
+              "100",
+              "100",
+              "88",
+              "100",
+              "100",
+              "88",
+              "100",
+              "100",
+              "100",
+              "88",
+              "100",
+              "100"
+            ],
+            [
+              "Nimivõimsus",
+              "kW",
+              "9.1",
+              "9.1",
+              "9.1",
+              "17.5",
+              "17.5",
+              "19.0",
+              "17.5",
+              "17.5",
+              "19.0",
+              "39.8",
+              "17.5",
+              "17.5",
+              "19.0",
+              "39.8"
+            ]
+          ]
+        }
+      ],
+      "published": true
+    },
+    "ru": {
+      "title": "Ручные насосы",
+      "h1": "Häny: ручные бетононасосы (IC)",
+      "description": "Существует несколько ручных вариантов в зависимости от объёма и требуемого давления. Компактные установки IC310, IC311 и IC325 — бестселлеры. Название модели подсказывает…",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Häny: ручные бетононасосы (IC)",
+          "width": 876,
+          "height": 510,
+          "src": "/assets/img/haeny-automatiska-pumpar-1.webp",
+          "href": "/produkter/haeny"
+        },
+        {
+          "type": "image",
+          "alt": "Häny: ручные бетононасосы (IC), изображение 2",
+          "width": 1920,
+          "height": 1315,
+          "src": "/assets/img/haeny-manuella-pumpar-2.webp"
+        },
+        {
+          "type": "text",
+          "html": "Существует несколько ручных вариантов в зависимости от объёма и требуемого давления. Компактные установки IC310, IC311 и IC325 — бестселлеры. Название модели подсказывает общий объём смесителя и мешалки, а последняя цифра указывает тип используемого плунжерного насоса (ZMP). У IC310 рабочее давление немного выше, чем у IC311, при этом IC311 немного дешевле. У IC311 максимальное давление составляет 75 бар вместо 100 бар у IC310, но расход выше — 2 м³/ч."
+        },
+        {
+          "type": "text",
+          "html": "В отличие от IC310, вариант <a href=\"/produkter/haeny/manuella-pumpar/ic-325-ic325-ccp\">IC325</a> оснащён двумя плунжерными насосами, что обеспечивает более ровный поток. Максимальное давление — 100 бар, максимальный расход — 2 м³/ч. Эту модель также можно комбинировать с модулем для инъектирования ПУ."
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Свяжитесь с нами</a> для получения дополнительной информации."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Модели",
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 4,
+          "square": true,
+          "more": false,
+          "items": [
+            {
+              "title": "IC 310",
+              "image": "/assets/img/haeny-ic310-tile.webp",
+              "alt": "Компактная инъекционная установка IC 310",
+              "href": "/produkter/haeny/manuella-pumpar/ic-310-ic-311",
+              "bullets": [
+                "ZMP 610",
+                "Расход: 1,5 м³/ч",
+                "Давление: 100 бар",
+                "Объём: 100 л"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "IC 311",
+              "image": "/assets/img/haeny-ic311-tile.webp",
+              "alt": "Компактная инъекционная установка IC 311",
+              "href": "/produkter/haeny/manuella-pumpar/ic-311",
+              "bullets": [
+                "ZMP 611",
+                "Расход: 2 м³/ч",
+                "Давление: 75 бар",
+                "Объём: 100 л"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "IC 325",
+              "image": "/assets/img/haeny-ic325-tile.webp",
+              "alt": "Компактная инъекционная установка IC 325",
+              "href": "/produkter/haeny/manuella-pumpar/ic-325-ic325-ccp",
+              "bullets": [
+                "ZMP 625",
+                "Расход: 2 м³/ч",
+                "Давление: 100 бар",
+                "Объём: 100 л"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "IC 325 CCP",
+              "image": "/assets/img/haeny-ccp-tile.webp",
+              "alt": "Компактная инъекционная установка IC 325CCP",
+              "href": "/produkter/haeny/manuella-pumpar/ic-325-ccp",
+              "bullets": [
+                "ZMP 625",
+                "Расход: 2 м³/ч",
+                "Давление: 100 бар",
+                "Объём: 100 л"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "IC 650/710",
+              "image": "/assets/img/haeny-ic650-710v-tile.webp",
+              "alt": "Компактная инъекционная установка IC 650/710",
+              "href": "/produkter/haeny/manuella-pumpar/ic-650-710v",
+              "bullets": [
+                "ZMP 710",
+                "Расход: 5 м³/ч",
+                "Давление: 100 бар",
+                "Объём: 260 л"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "IC 650/712",
+              "image": "/assets/img/haeny-ic650-712v-tile.webp",
+              "alt": "Компактная инъекционная установка IC 650/712",
+              "href": "/produkter/haeny/manuella-pumpar/ic-650-712v",
+              "bullets": [
+                "ZMP 712",
+                "Расход: 4,9 м³/ч",
+                "Давление: 88 бар",
+                "Объём: 260 л"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "IC 650/725",
+              "image": "/assets/img/haeny-ic650-725v-tile.webp",
+              "alt": "Компактная инъекционная установка IC 650/725",
+              "href": "/produkter/haeny/manuella-pumpar/ic-650-725v",
+              "bullets": [
+                "ZMP 725",
+                "Расход: 5 м³/ч",
+                "Давление: 100 бар",
+                "Объём: 260 л"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "IC 1100/710",
+              "image": "/assets/img/haeny-ic1100-710v-tile.webp",
+              "alt": "Компактная инъекционная установка IC 1100/710",
+              "href": "/produkter/haeny/manuella-pumpar/ic-1100-710v",
+              "bullets": [
+                "ZMP 710",
+                "Расход: 5 м³/ч",
+                "Давление: 100 бар",
+                "Объём: 260 л"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "IC 1100/712",
+              "image": "/assets/img/haeny-ic1100-712v-tile.webp",
+              "alt": "Компактная инъекционная установка IC 1100/712",
+              "href": "/produkter/haeny/manuella-pumpar/ic-1100-712v",
+              "bullets": [
+                "ZMP 712",
+                "Расход: 4,9 м³/ч",
+                "Давление: 88 бар",
+                "Объём: 260 л"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "IC 1100/725",
+              "image": "/assets/img/haeny-ic1100-725v-tile.webp",
+              "alt": "Компактная инъекционная установка IC 1100/725",
+              "href": "/produkter/haeny/manuella-pumpar/ic-1100-725v",
+              "bullets": [
+                "ZMP 725",
+                "Расход: 5 м³/ч",
+                "Давление: 100 бар",
+                "Объём: 260 л"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "IC 1400/710",
+              "image": "/assets/img/haeny-ic1400-710v-tile.webp",
+              "alt": "Компактная инъекционная установка IC 1400/710",
+              "href": "/produkter/haeny/manuella-pumpar/ic-1400-710v",
+              "bullets": [
+                "ZMP 710",
+                "Расход: 7,5 м³/ч",
+                "Давление: 100 бар",
+                "Объём: 550 л"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "IC 1400/712",
+              "image": "/assets/img/haeny-ic1400-712v-tile.webp",
+              "alt": "Компактная инъекционная установка IC 1400/712",
+              "href": "/produkter/haeny/manuella-pumpar/ic-1400-712v",
+              "bullets": [
+                "ZMP 712",
+                "Расход: 4,9 м³/ч",
+                "Давление: 88 бар",
+                "Объём: 550 л"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "IC 1400/725",
+              "image": "/assets/img/haeny-ic1400-725v-tile.webp",
+              "alt": "Компактная инъекционная установка IC 1400/725",
+              "href": "/produkter/haeny/manuella-pumpar/ic-1400-725v",
+              "bullets": [
+                "ZMP 725",
+                "Расход: 8 м³/ч",
+                "Давление: 100 бар",
+                "Объём: 550 л"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "IC 1400/726",
+              "image": "/assets/img/haeny-ic1400-726v-tile.webp",
+              "alt": "Компактная инъекционная установка IC 1400/726",
+              "href": "/produkter/haeny/manuella-pumpar/ic-1400-726v",
+              "bullets": [
+                "ZMP 726",
+                "Расход: 8 м³/ч",
+                "Давление: 100 бар",
+                "Объём: 550 л"
+              ],
+              "width": 1000,
+              "height": 1000
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "Помимо этих, существует несколько других вариантов насосов. Технические характеристики насосов приведены ниже в таблице. <a href=\"/kontakta-oss\">Свяжитесь с нами</a>, если у вас есть пожелания или вопросы."
+        },
+        {
+          "type": "table",
+          "header": true,
+          "align": "center",
+          "groups": [
+            {
+              "text": "Model IC",
+              "span": 2
+            },
+            {
+              "text": "310",
+              "span": 1
+            },
+            {
+              "text": "311",
+              "span": 1
+            },
+            {
+              "text": "325",
+              "span": 1
+            },
+            {
+              "text": "650",
+              "span": 3
+            },
+            {
+              "text": "1100",
+              "span": 4
+            },
+            {
+              "text": "1400",
+              "span": 4
+            }
+          ],
+          "rows": [
+            [
+              "Модель",
+              "",
+              "IC 310",
+              "IC 311",
+              "IC 325",
+              "IC 650/710",
+              "IC 650/712",
+              "IC 650/725",
+              "IC 1100/710",
+              "IC 1100/712",
+              "IC 1100/725",
+              "IC 1100/726",
+              "IC 1400/710",
+              "IC 1400/712",
+              "IC 1400/725",
+              "IC 1400/726"
+            ],
+            [
+              "Конфигурация",
+              "HCM/HRW",
+              "100/150",
+              "100/150",
+              "100/150",
+              "300/350",
+              "300/350",
+              "300/350",
+              "300/800",
+              "300/800",
+              "300/800",
+              "300/800",
+              "600/800",
+              "600/800",
+              "600/800",
+              "600/800"
+            ],
+            [
+              "Инъекционный насос",
+              "ZMP",
+              "610",
+              "611",
+              "625",
+              "710",
+              "712",
+              "725",
+              "710",
+              "712",
+              "725",
+              "726",
+              "710",
+              "712",
+              "725",
+              "726"
+            ],
+            [
+              "Макс. производительность",
+              "m³/h",
+              "1.5",
+              "2.0",
+              "2.0",
+              "5.0",
+              "4.9",
+              "5.0",
+              "5.0",
+              "4.9",
+              "5.0",
+              "5.0",
+              "7.5",
+              "4.9",
+              "8.0",
+              "8.0"
+            ],
+            [
+              "Макс. давление",
+              "bar",
+              "100",
+              "75",
+              "100",
+              "100",
+              "88",
+              "100",
+              "100",
+              "88",
+              "100",
+              "100",
+              "100",
+              "88",
+              "100",
+              "100"
+            ],
+            [
+              "Номинальная мощность",
+              "kW",
+              "9.1",
+              "9.1",
+              "9.1",
+              "17.5",
+              "17.5",
+              "19.0",
+              "17.5",
+              "17.5",
+              "19.0",
+              "39.8",
+              "17.5",
+              "17.5",
+              "19.0",
+              "39.8"
+            ]
+          ]
+        }
+      ],
+      "published": true
     }
   },
   "source": {

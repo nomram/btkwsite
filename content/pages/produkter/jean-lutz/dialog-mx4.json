@@ -416,6 +416,422 @@
           "html": "<a href=\"/kontakta-oss\">Kontakt oss</a> for mer informasjon eller hjelp til å velge riktig enhet for prosessen din."
         }
       ]
+    },
+    "lt": {
+      "title": "DIALOG MX4",
+      "h1": "DIALOG MX4",
+      "description": "DIALOG MX4 yra įrenginys, skirtas matuoti ir valdyti specialiųjų pamatų procesus. Jis vienu metu registruoja matavimo reikšmes pagal laiką ir gylį, perduoda duomenis realiuoju laiku ir gali būti konfigūruojamas nuotoliniu būdu.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Jean Lutz logotipas",
+          "href": "/produkter/jean-lutz",
+          "width": 572,
+          "height": 128,
+          "src": "/assets/img/logo-jean-lutz.webp"
+        },
+        {
+          "type": "image",
+          "alt": "DIALOG MX4",
+          "width": 1200,
+          "height": 1200,
+          "src": "/assets/img/jean-lutz-dialog-mx4.webp"
+        },
+        {
+          "type": "text",
+          "html": "DIALOG MX4 yra įrenginys, skirtas matuoti ir valdyti specialiųjų pamatų procesus. Jis vienu metu registruoja matavimo reikšmes pagal laiką ir gylį, perduoda duomenis realiuoju laiku ir gali būti konfigūruojamas nuotoliniu būdu."
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "10,4″ spalvotas jutiklinis ekranas, derinantis tvirtumą ir patogų naudojimą",
+            "Vienalaikis matavimo reikšmių registravimas pagal laiką ir gylį",
+            "Duomenų perdavimas per Wi‑Fi, Ethernet, mobiliuosius duomenis arba USB",
+            "Integruotas GPS geolokacijai, su galimybe stebėti mašinos komponentus"
+          ]
+        },
+        {
+          "type": "chips",
+          "title": "Suderinami procesai",
+          "items": [
+            "Jet grouting",
+            "CFA poliai",
+            "Kelly poliai",
+            "Gręžtiniai poliai",
+            "Grunto maišymas (soil mixing)",
+            "Diafragminės sienos",
+            "Vertikalūs drenažai",
+            "Gręžimas",
+            "Vibrokompaktavimas",
+            "Vibracinis kalimas",
+            "Kalamieji poliai"
+          ]
+        },
+        {
+          "type": "text",
+          "html": "DIALOG MX4 yra universaliausias ir lengviausiai plečiamas sprendimas asortimente."
+        },
+        {
+          "type": "datasheet",
+          "title": "Techniniai duomenys",
+          "tagline": "Duomenų registratorius specialiesiems pamatams",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Techniniai duomenys",
+              "rows": [
+                {
+                  "label": "Maitinimas",
+                  "metric": "12–36 V nuolatinė srovė arba 24 V kintamoji srovė"
+                },
+                {
+                  "label": "Svoris",
+                  "metric": "4,8 kg"
+                },
+                {
+                  "label": "Darbinė temperatūra",
+                  "metric": "−20 °C / 60 °C"
+                },
+                {
+                  "label": "Apsaugos klasė (IP)",
+                  "metric": "IP65"
+                },
+                {
+                  "label": "Integruotas GPS, tikslumas",
+                  "metric": "30 m"
+                },
+                {
+                  "label": "Spalvotas jutiklinis ekranas",
+                  "metric": "10,4″"
+                },
+                {
+                  "label": "Prieiga prie duomenų",
+                  "metric": "Wi‑Fi · Ethernet · mobilieji duomenys · USB"
+                }
+              ]
+            }
+          ],
+          "note": "Duomenys paimti iš gamintojo svetainės."
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Susisiekite su mumis</a> dėl daugiau informacijos arba pagalbos parenkant jūsų procesui tinkamą įrenginį."
+        }
+      ],
+      "published": true
+    },
+    "lv": {
+      "title": "DIALOG MX4",
+      "h1": "DIALOG MX4",
+      "description": "DIALOG MX4 ir ierīce specializēto pamatu procesu mērīšanai un vadībai. Tā vienlaikus reģistrē mērījumu vērtības atbilstoši gan laikam, gan dziļumam, pārraida datus reāllaikā un to var konfigurēt attālināti.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Jean Lutz logotips",
+          "href": "/produkter/jean-lutz",
+          "width": 572,
+          "height": 128,
+          "src": "/assets/img/logo-jean-lutz.webp"
+        },
+        {
+          "type": "image",
+          "alt": "DIALOG MX4",
+          "width": 1200,
+          "height": 1200,
+          "src": "/assets/img/jean-lutz-dialog-mx4.webp"
+        },
+        {
+          "type": "text",
+          "html": "DIALOG MX4 ir ierīce specializēto pamatu procesu mērīšanai un vadībai. Tā vienlaikus reģistrē mērījumu vērtības atbilstoši gan laikam, gan dziļumam, pārraida datus reāllaikā un to var konfigurēt attālināti."
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "10,4″ krāsu skārienekrāns, kas apvieno izturību un lietošanas ērtumu",
+            "Vienlaicīga mērījumu reģistrēšana pēc laika un dziļuma",
+            "Datu pārraide pa Wi‑Fi, Ethernet, mobilajiem datiem vai USB",
+            "Iebūvēts GPS ģeolokācijai ar iespēju uzraudzīt iekārtas komponentus"
+          ]
+        },
+        {
+          "type": "chips",
+          "title": "Saderīgie procesi",
+          "items": [
+            "Jet grouting",
+            "CFA pāļi",
+            "Kelly pāļi",
+            "Urbtie pāļi",
+            "Grunts maisīšana (soil mixing)",
+            "Diafragmas sienas",
+            "Vertikālie drenāžas elementi",
+            "Urbšana",
+            "Vibrokompaktēšana",
+            "Vibrodzīšana",
+            "Dzītie pāļi"
+          ]
+        },
+        {
+          "type": "text",
+          "html": "DIALOG MX4 ir daudzpusīgākais un visvieglāk paplašināmais risinājums klāstā."
+        },
+        {
+          "type": "datasheet",
+          "title": "Tehniskie dati",
+          "tagline": "Datu reģistrators specializētajiem pamatu darbiem",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Tehniskie dati",
+              "rows": [
+                {
+                  "label": "Barošana",
+                  "metric": "12–36 V līdzstrāva vai 24 V maiņstrāva"
+                },
+                {
+                  "label": "Svars",
+                  "metric": "4,8 kg"
+                },
+                {
+                  "label": "Darba temperatūra",
+                  "metric": "−20 °C / 60 °C"
+                },
+                {
+                  "label": "Aizsardzības klase (IP)",
+                  "metric": "IP65"
+                },
+                {
+                  "label": "Iebūvēts GPS, precizitāte",
+                  "metric": "30 m"
+                },
+                {
+                  "label": "Krāsu skārienekrāns",
+                  "metric": "10,4″"
+                },
+                {
+                  "label": "Piekļuve datiem",
+                  "metric": "Wi‑Fi · Ethernet · mobilie dati · USB"
+                }
+              ]
+            }
+          ],
+          "note": "Dati ņemti no ražotāja vietnes."
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Sazinieties ar mums</a>, lai uzzinātu vairāk vai saņemtu palīdzību piemērotas ierīces izvēlē jūsu procesam."
+        }
+      ],
+      "published": true
+    },
+    "et": {
+      "title": "DIALOG MX4",
+      "h1": "DIALOG MX4",
+      "description": "DIALOG MX4 on seade eriotstarbeliste vundamenditööde protsesside mõõtmiseks ja juhtimiseks. See registreerib mõõtetulemusi samaaegselt aja ja sügavuse suhtes, edastab andmeid reaalajas ning seda saab kaugkonfigureerida.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Jean Lutz logo",
+          "href": "/produkter/jean-lutz",
+          "width": 572,
+          "height": 128,
+          "src": "/assets/img/logo-jean-lutz.webp"
+        },
+        {
+          "type": "image",
+          "alt": "DIALOG MX4",
+          "width": 1200,
+          "height": 1200,
+          "src": "/assets/img/jean-lutz-dialog-mx4.webp"
+        },
+        {
+          "type": "text",
+          "html": "DIALOG MX4 on seade eriotstarbeliste vundamenditööde protsesside mõõtmiseks ja juhtimiseks. See registreerib mõõtetulemusi samaaegselt aja ja sügavuse suhtes, edastab andmeid reaalajas ning seda saab kaugkonfigureerida."
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "10,4″ värviline puuteekraan, mis ühendab vastupidavuse ja kasutusmugavuse",
+            "Mõõtetulemuste samaaegne registreerimine aja ja sügavuse suhtes",
+            "Andmeedastus Wi‑Fi, Etherneti, mobiilse andmeside või USB kaudu",
+            "Sisseehitatud GPS geolokatsiooniks, võimalusega jälgida masina komponente"
+          ]
+        },
+        {
+          "type": "chips",
+          "title": "Ühilduvad protsessid",
+          "items": [
+            "Jet grouting",
+            "CFA-vaiad",
+            "Kelly-vaiad",
+            "Puurvaiad",
+            "Pinnasesegamine (soil mixing)",
+            "Diafragmaseinad",
+            "Vertikaaldrenaažid",
+            "Puurimine",
+            "Vibrotihendamine",
+            "Vibrorammimine",
+            "Rammvaiad"
+          ]
+        },
+        {
+          "type": "text",
+          "html": "DIALOG MX4 on sortimendi mitmekülgseim ja kõige paremini skaleeritav lahendus."
+        },
+        {
+          "type": "datasheet",
+          "title": "Tehnilised andmed",
+          "tagline": "Andmelogija eriotstarbelisteks vundamenditöödeks",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Tehnilised andmed",
+              "rows": [
+                {
+                  "label": "Toide",
+                  "metric": "12–36 V alalisvool või 24 V vahelduvvool"
+                },
+                {
+                  "label": "Kaal",
+                  "metric": "4,8 kg"
+                },
+                {
+                  "label": "Töötemperatuur",
+                  "metric": "−20 °C / 60 °C"
+                },
+                {
+                  "label": "Kaitseaste (IP)",
+                  "metric": "IP65"
+                },
+                {
+                  "label": "Sisseehitatud GPS, täpsus",
+                  "metric": "30 m"
+                },
+                {
+                  "label": "Värviline puuteekraan",
+                  "metric": "10,4″"
+                },
+                {
+                  "label": "Juurdepääs andmetele",
+                  "metric": "Wi‑Fi · Ethernet · mobiilne andmeside · USB"
+                }
+              ]
+            }
+          ],
+          "note": "Andmed on võetud tootja veebilehelt."
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Võta meiega ühendust</a> lisateabe saamiseks või abi saamiseks oma protsessile sobiva seadme valimisel."
+        }
+      ],
+      "published": true
+    },
+    "ru": {
+      "title": "DIALOG MX4",
+      "h1": "DIALOG MX4",
+      "description": "DIALOG MX4 — устройство для измерения и управления процессами специального фундаментостроения. Оно одновременно регистрирует измеряемые значения по времени и глубине, передаёт данные в реальном времени и может настраиваться дистанционно.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Логотип Jean Lutz",
+          "href": "/produkter/jean-lutz",
+          "width": 572,
+          "height": 128,
+          "src": "/assets/img/logo-jean-lutz.webp"
+        },
+        {
+          "type": "image",
+          "alt": "DIALOG MX4",
+          "width": 1200,
+          "height": 1200,
+          "src": "/assets/img/jean-lutz-dialog-mx4.webp"
+        },
+        {
+          "type": "text",
+          "html": "DIALOG MX4 — устройство для измерения и управления процессами специального фундаментостроения. Оно одновременно регистрирует измеряемые значения по времени и глубине, передаёт данные в реальном времени и может настраиваться дистанционно."
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Цветной сенсорный экран 10,4″, сочетающий прочность и простоту использования",
+            "Одновременная регистрация измерений по времени и глубине",
+            "Передача данных по Wi‑Fi, Ethernet, мобильной сети или USB",
+            "Встроенный GPS для геолокации с возможностью контроля компонентов машины"
+          ]
+        },
+        {
+          "type": "chips",
+          "title": "Совместимые процессы",
+          "items": [
+            "Струйная цементация (jet grouting)",
+            "CFA-сваи",
+            "Сваи Kelly",
+            "Буровые сваи",
+            "Смешивание грунта (soil mixing)",
+            "Стена в грунте",
+            "Вертикальные дрены",
+            "Бурение",
+            "Виброуплотнение",
+            "Вибропогружение",
+            "Забивные сваи"
+          ]
+        },
+        {
+          "type": "text",
+          "html": "DIALOG MX4 — самое универсальное и масштабируемое решение в ассортименте."
+        },
+        {
+          "type": "datasheet",
+          "title": "Технические данные",
+          "tagline": "Регистратор данных для специального фундаментостроения",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Технические данные",
+              "rows": [
+                {
+                  "label": "Электропитание",
+                  "metric": "12–36 В постоянного тока или 24 В переменного тока"
+                },
+                {
+                  "label": "Масса",
+                  "metric": "4,8 kg"
+                },
+                {
+                  "label": "Рабочая температура",
+                  "metric": "−20 °C / 60 °C"
+                },
+                {
+                  "label": "Степень защиты (IP)",
+                  "metric": "IP65"
+                },
+                {
+                  "label": "Встроенный GPS, точность",
+                  "metric": "30 m"
+                },
+                {
+                  "label": "Цветной сенсорный экран",
+                  "metric": "10,4″"
+                },
+                {
+                  "label": "Доступ к данным",
+                  "metric": "Wi‑Fi · Ethernet · мобильная сеть · USB"
+                }
+              ]
+            }
+          ],
+          "note": "Данные взяты с сайта производителя."
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Свяжитесь с нами</a> для получения дополнительной информации или помощи в выборе подходящего устройства для вашего процесса."
+        }
+      ],
+      "published": true
     }
   },
   "hero": {

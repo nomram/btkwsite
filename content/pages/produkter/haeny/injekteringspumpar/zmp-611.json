@@ -2872,6 +2872,2878 @@
           "gen": true
         }
       ]
+    },
+    "lt": {
+      "title": "Häny ZMP 611",
+      "h1": "Häny ZMP 611",
+      "description": "Injektavimo siurblys ZMP 611. Itin kompaktiškas ir mažai dylantis stūmoklinis siurblys suspensijoms su mažu W/C santykiu ir smėlio turintiems skiediniams pumpuoti. Tinka visiems injektavimo darbams ir užpildymo…",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "HÄNY",
+          "href": "/produkter/haeny",
+          "width": 832,
+          "height": 143,
+          "src": "/assets/img/haeny-1.webp",
+          "gen": true
+        },
+        {
+          "type": "columns",
+          "ratio": "40-60",
+          "left": [
+            {
+              "type": "image",
+              "alt": "Injektavimo siurblys ZMP 611",
+              "width": 684,
+              "height": 1206,
+              "src": "/assets/img/haeny-zmp611-model.webp"
+            }
+          ],
+          "right": [
+            {
+              "type": "text",
+              "html": "Itin kompaktiškas ir mažai dylantis stūmoklinis siurblys suspensijoms su mažu W/C santykiu ir smėlio turintiems skiediniams pumpuoti. Tinka visiems injektavimo darbams ir užpildymo skiediniui už tunelio segmentų pumpuoti."
+            },
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "Labai kompaktiškas vertikalus siurblys, taupantis vietą",
+                "Plynai reguliuojami slėgio ir debito ribotuvai",
+                "Patikimas, nereikalaujantis daug priežiūros, patogi prieiga prie dėvimų dalių",
+                "Greitas siurbimo takto eiga praplauna vožtuvus ir apsaugo nuo užsikimšimo",
+                "Aušinimo vandens jungtis nepertraukiamam darbui"
+              ]
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Naudojimas",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Inkarai, grunto vinys, įtempimo kabeliai, manžetiniai vamzdžiai, uolienų ir kontaktinis injektavimas",
+            "Išankstinis ir papildomas injektavimas, bentonitas vamzdžių stūmimui, užpildymas smulkiu žvyru"
+          ],
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Brošiūra ZMP 611 (PDF, anglų k.)",
+          "href": "/assets/docs/haeny-zmp611-brochure-en.pdf",
+          "gen": true
+        },
+        {
+          "type": "datasheet",
+          "title": "Techniniai duomenys",
+          "tagline": "Injektavimo siurblys ZMP 611",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Injektavimo siurblys",
+              "rows": [
+                {
+                  "label": "Stūmoklio Ø",
+                  "metric": "65 mm"
+                },
+                {
+                  "label": "Našumas",
+                  "metric": "2 m³/h"
+                },
+                {
+                  "label": "Maks. slėgis",
+                  "metric": "75 bar"
+                },
+                {
+                  "label": "Min. slėgis",
+                  "metric": "3 bar"
+                },
+                {
+                  "label": "Tūris per taktą",
+                  "metric": "0.82 l"
+                },
+                {
+                  "label": "Maks. dalelių dydis",
+                  "metric": "5 mm"
+                },
+                {
+                  "label": "Hidraulinis bakas",
+                  "metric": "52 l"
+                },
+                {
+                  "label": "Siurblio modulis",
+                  "metric": "viengubas"
+                },
+                {
+                  "label": "Aušinimo vandens debitas",
+                  "metric": "2–3 l/min"
+                },
+                {
+                  "label": "Aušinimo vandens jungtis",
+                  "metric": "BSP ⅜\""
+                },
+                {
+                  "label": "Slėgio jungtis",
+                  "metric": "BSP 1\""
+                },
+                {
+                  "label": "Siurbimo jungtis",
+                  "metric": "BSP 1½\""
+                }
+              ]
+            },
+            {
+              "title": "Elektriniai duomenys",
+              "rows": [
+                {
+                  "label": "Įtampa",
+                  "metric": "3x 400/460"
+                },
+                {
+                  "label": "Dažnis",
+                  "metric": "50 / 60 Hz"
+                },
+                {
+                  "label": "Nominalioji galia",
+                  "metric": "5.5 / 6.3 kW"
+                }
+              ]
+            },
+            {
+              "title": "Svoris ir matmenys",
+              "rows": [
+                {
+                  "label": "Apytikslis svoris",
+                  "metric": "270 kg"
+                },
+                {
+                  "label": "Plotis",
+                  "metric": "510 mm"
+                },
+                {
+                  "label": "Aukštis",
+                  "metric": "1,410 mm"
+                },
+                {
+                  "label": "Ilgis",
+                  "metric": "758 mm"
+                }
+              ]
+            }
+          ],
+          "note": "1: vandens ir cemento santykis = 1 · 2: pildymo laipsnis = 100 %",
+          "source": "Duomenys paimti iš gamintojo brošiūrų (anglų k.).",
+          "gen": true
+        },
+        {
+          "type": "columns",
+          "ratio": "50-50",
+          "left": [
+            {
+              "type": "perfchart",
+              "title": "Siurblio charakteristikos: ZMP 611",
+              "hint": "Užveskite žymeklį ant diagramos, palieskite ją arba naudokite rodyklių klavišus reikšmėms nuskaityti. Spustelėkite stūmoklio dydį, kad jį paslėptumėte arba parodytumėte (dukart spustelėkite, kad būtų rodomas tik jis).",
+              "chipsLabel": "Rodyti kreives",
+              "xName": "Slėgis",
+              "yName": "Debitas",
+              "x": {
+                "label": "Pressure",
+                "unit": "bar",
+                "min": 0,
+                "max": 80,
+                "step": 10
+              },
+              "y": {
+                "label": "Output",
+                "unit": "l/min",
+                "min": 0,
+                "max": 35,
+                "step": 5
+              },
+              "series": [
+                {
+                  "name": "Žemas slėgis",
+                  "color": "#2f5aa8",
+                  "points": [
+                    [
+                      0,
+                      33.7
+                    ],
+                    [
+                      1.8,
+                      33.6
+                    ],
+                    [
+                      3.7,
+                      33.5
+                    ],
+                    [
+                      5.6,
+                      33.4
+                    ],
+                    [
+                      7.5,
+                      33.3
+                    ],
+                    [
+                      9.3,
+                      33.2
+                    ],
+                    [
+                      11.1,
+                      33.1
+                    ],
+                    [
+                      12.9,
+                      33
+                    ],
+                    [
+                      14.6,
+                      33
+                    ],
+                    [
+                      16.1,
+                      32.9
+                    ],
+                    [
+                      17.5,
+                      32.8
+                    ],
+                    [
+                      18.8,
+                      32.7
+                    ],
+                    [
+                      19.9,
+                      32.7
+                    ],
+                    [
+                      21.9,
+                      32.6
+                    ],
+                    [
+                      23.7,
+                      32.4
+                    ],
+                    [
+                      25.1,
+                      32.1
+                    ],
+                    [
+                      26.3,
+                      31.9
+                    ],
+                    [
+                      27.3,
+                      31.6
+                    ],
+                    [
+                      28.1,
+                      31.3
+                    ],
+                    [
+                      28.7,
+                      31
+                    ],
+                    [
+                      29.2,
+                      30.7
+                    ],
+                    [
+                      29.5,
+                      30.4
+                    ],
+                    [
+                      29.8,
+                      30.2
+                    ],
+                    [
+                      29.9,
+                      29.9
+                    ],
+                    [
+                      30,
+                      29.7
+                    ],
+                    [
+                      30.2,
+                      29.5
+                    ],
+                    [
+                      30.4,
+                      29.2
+                    ],
+                    [
+                      30.6,
+                      28.8
+                    ],
+                    [
+                      30.9,
+                      28.3
+                    ],
+                    [
+                      31.2,
+                      27.8
+                    ],
+                    [
+                      31.5,
+                      27.3
+                    ],
+                    [
+                      31.8,
+                      26.8
+                    ],
+                    [
+                      32,
+                      26.4
+                    ],
+                    [
+                      32.3,
+                      26
+                    ],
+                    [
+                      32.5,
+                      25.7
+                    ],
+                    [
+                      32.6,
+                      25.5
+                    ],
+                    [
+                      33.1,
+                      24.7
+                    ],
+                    [
+                      33.9,
+                      23.3
+                    ],
+                    [
+                      35.1,
+                      21.3
+                    ],
+                    [
+                      36.5,
+                      18.8
+                    ],
+                    [
+                      38,
+                      16.1
+                    ],
+                    [
+                      39.6,
+                      13.2
+                    ],
+                    [
+                      41.3,
+                      10.3
+                    ],
+                    [
+                      42.8,
+                      7.4
+                    ],
+                    [
+                      44.3,
+                      4.9
+                    ],
+                    [
+                      45.5,
+                      2.7
+                    ],
+                    [
+                      46.4,
+                      1
+                    ],
+                    [
+                      46.9,
+                      0
+                    ]
+                  ]
+                },
+                {
+                  "name": "Aukštas slėgis",
+                  "color": "#cf3a2e",
+                  "points": [
+                    [
+                      0,
+                      26.8
+                    ],
+                    [
+                      3.1,
+                      26.7
+                    ],
+                    [
+                      6.4,
+                      26.6
+                    ],
+                    [
+                      9.7,
+                      26.5
+                    ],
+                    [
+                      13.1,
+                      26.4
+                    ],
+                    [
+                      16.5,
+                      26.3
+                    ],
+                    [
+                      19.7,
+                      26.1
+                    ],
+                    [
+                      22.7,
+                      26
+                    ],
+                    [
+                      25.5,
+                      25.8
+                    ],
+                    [
+                      27.9,
+                      25.7
+                    ],
+                    [
+                      30,
+                      25.6
+                    ],
+                    [
+                      31.6,
+                      25.5
+                    ],
+                    [
+                      32.6,
+                      25.5
+                    ],
+                    [
+                      33.1,
+                      25.4
+                    ],
+                    [
+                      33.7,
+                      25.4
+                    ],
+                    [
+                      34.4,
+                      25.3
+                    ],
+                    [
+                      35.2,
+                      25.2
+                    ],
+                    [
+                      36,
+                      25.2
+                    ],
+                    [
+                      36.9,
+                      25.1
+                    ],
+                    [
+                      37.8,
+                      25
+                    ],
+                    [
+                      38.8,
+                      25
+                    ],
+                    [
+                      39.7,
+                      24.9
+                    ],
+                    [
+                      40.6,
+                      24.8
+                    ],
+                    [
+                      41.4,
+                      24.8
+                    ],
+                    [
+                      42.3,
+                      24.7
+                    ],
+                    [
+                      43.4,
+                      24.7
+                    ],
+                    [
+                      44.6,
+                      24.6
+                    ],
+                    [
+                      45.7,
+                      24.5
+                    ],
+                    [
+                      46.8,
+                      24.4
+                    ],
+                    [
+                      47.8,
+                      24.4
+                    ],
+                    [
+                      48.8,
+                      24.3
+                    ],
+                    [
+                      49.6,
+                      24.2
+                    ],
+                    [
+                      50.4,
+                      24.2
+                    ],
+                    [
+                      51.1,
+                      24.1
+                    ],
+                    [
+                      51.7,
+                      24
+                    ],
+                    [
+                      52.2,
+                      23.9
+                    ],
+                    [
+                      52.6,
+                      23.8
+                    ],
+                    [
+                      53.2,
+                      23.5
+                    ],
+                    [
+                      53.9,
+                      23
+                    ],
+                    [
+                      54.8,
+                      22.3
+                    ],
+                    [
+                      55.7,
+                      21.5
+                    ],
+                    [
+                      56.6,
+                      20.5
+                    ],
+                    [
+                      57.6,
+                      19.6
+                    ],
+                    [
+                      58.5,
+                      18.5
+                    ],
+                    [
+                      59.4,
+                      17.6
+                    ],
+                    [
+                      60.2,
+                      16.6
+                    ],
+                    [
+                      60.9,
+                      15.8
+                    ],
+                    [
+                      61.5,
+                      15.1
+                    ],
+                    [
+                      61.9,
+                      14.6
+                    ],
+                    [
+                      62.3,
+                      14
+                    ],
+                    [
+                      63,
+                      13.2
+                    ],
+                    [
+                      63.8,
+                      12.3
+                    ],
+                    [
+                      64.7,
+                      11.1
+                    ],
+                    [
+                      65.7,
+                      9.9
+                    ],
+                    [
+                      66.9,
+                      8.5
+                    ],
+                    [
+                      68.1,
+                      7.1
+                    ],
+                    [
+                      69.4,
+                      5.6
+                    ],
+                    [
+                      70.7,
+                      4.1
+                    ],
+                    [
+                      72,
+                      2.7
+                    ],
+                    [
+                      73.3,
+                      1.3
+                    ],
+                    [
+                      74.5,
+                      0
+                    ]
+                  ]
+                }
+              ],
+              "alt": {
+                "src": "/assets/img/haeny-zmp611-chart.webp",
+                "text": "Siurblio charakteristikos ZMP 611",
+                "show": "Rodyti originalią brošiūros diagramą",
+                "hide": "Slėpti originalią diagramą"
+              }
+            }
+          ],
+          "right": [
+            {
+              "type": "modules",
+              "layout": "tiles",
+              "columns": 1,
+              "narrow": true,
+              "zoom": true,
+              "more": false,
+              "items": [
+                {
+                  "title": "Matmenys ir brėžinys",
+                  "image": "/assets/img/haeny-zmp611-dim.webp",
+                  "alt": "Matmenys ir brėžinys ZMP 611",
+                  "text": "Užveskite žymeklį ant brėžinio (arba palieskite ir vilkite), kad jį padidintumėte 2×.",
+                  "width": 1674,
+                  "height": 1498
+                }
+              ]
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "collapsible": true,
+          "title": "Standartinė ir pasirenkama įranga",
+          "items": [
+            "Standartinė komplektacija (injektavimo siurblys): rankinis slėgio ir debito reguliavimas",
+            "Standartinė komplektacija (injektavimo siurblys): alyvos lygio, temperatūros ir filtro užterštumo indikatorius",
+            "Pasirinktinai (valdymas): nuotolinis valdymas",
+            "Pasirinktinai (valdymas): slėgio ir debito duomenų registravimas",
+            "Valdymas: PLC",
+            "Valdymas: užrakinamas pagrindinis jungiklis, avarinis sustabdymas",
+            "Valdymas: siurblys ĮJ./IŠJ."
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Susisiekite su mumis</a> dėl kainos, pristatymo laiko ar pagalbos renkantis tinkamą modelį.",
+          "gen": true
+        },
+        {
+          "type": "related",
+          "title": "Taip pat žiūrėkite",
+          "items": [
+            {
+              "href": "/produkter/haeny/injekteringspumpar",
+              "mutual": false
+            },
+            {
+              "href": "/produkter/haeny/injekteringspumpar/zmp-610"
+            },
+            {
+              "href": "/produkter/haeny/injekteringspumpar/zmp-625"
+            },
+            {
+              "href": "/produkter/haeny/injekteringspumpar/zmp-710"
+            }
+          ],
+          "gen": true
+        }
+      ],
+      "published": true
+    },
+    "lv": {
+      "title": "Häny ZMP 611",
+      "h1": "Häny ZMP 611",
+      "description": "Injektēšanas sūknis ZMP 611. Ārkārtīgi kompakts un maz nodilstošs virzuļsūknis suspensiju ar zemu W/C attiecību un smilti saturošu javu sūknēšanai. Piemērots visiem injektēšanas darbiem un aizpildījuma…",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "HÄNY",
+          "href": "/produkter/haeny",
+          "width": 832,
+          "height": 143,
+          "src": "/assets/img/haeny-1.webp",
+          "gen": true
+        },
+        {
+          "type": "columns",
+          "ratio": "40-60",
+          "left": [
+            {
+              "type": "image",
+              "alt": "Injektēšanas sūknis ZMP 611",
+              "width": 684,
+              "height": 1206,
+              "src": "/assets/img/haeny-zmp611-model.webp"
+            }
+          ],
+          "right": [
+            {
+              "type": "text",
+              "html": "Ārkārtīgi kompakts un maz nodilstošs virzuļsūknis suspensiju ar zemu W/C attiecību un smilti saturošu javu sūknēšanai. Piemērots visiem injektēšanas darbiem un aizpildījuma javas sūknēšanai aiz tuneļa segmentiem."
+            },
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "Ļoti kompakts vertikāls sūknis, kas ietaupa vietu",
+                "Bezpakāpju regulējami spiediena un caurplūdes ierobežojumi",
+                "Uzticams, neprasa daudz apkopes, viegla piekļuve nolietojumam pakļautajām detaļām",
+                "Ātrs iesūkšanas gājiens izskalo vārstus un novērš aizsērēšanu",
+                "Dzesēšanas ūdens pieslēgums nepārtrauktai darbībai"
+              ]
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Lietojums",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Enkuri, grunts naglas, nospriegojuma kabeļi, manšešu caurules, iežu un kontaktinjektēšana",
+            "Pirms- un pēcinjektēšana, bentonīts cauruļu iespiešanai, uzpilde ar zirņu grants"
+          ],
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Brošūra ZMP 611 (PDF, angļu val.)",
+          "href": "/assets/docs/haeny-zmp611-brochure-en.pdf",
+          "gen": true
+        },
+        {
+          "type": "datasheet",
+          "title": "Tehniskie dati",
+          "tagline": "Injektēšanas sūknis ZMP 611",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Injektēšanas sūknis",
+              "rows": [
+                {
+                  "label": "Virzuļa Ø",
+                  "metric": "65 mm"
+                },
+                {
+                  "label": "Ražība",
+                  "metric": "2 m³/h"
+                },
+                {
+                  "label": "Maks. spiediens",
+                  "metric": "75 bar"
+                },
+                {
+                  "label": "Min. spiediens",
+                  "metric": "3 bar"
+                },
+                {
+                  "label": "Tilpums gājienā",
+                  "metric": "0.82 l"
+                },
+                {
+                  "label": "Maks. graudu izmērs",
+                  "metric": "5 mm"
+                },
+                {
+                  "label": "Hidrauliskā tvertne",
+                  "metric": "52 l"
+                },
+                {
+                  "label": "Sūkņa modulis",
+                  "metric": "vienkāršs"
+                },
+                {
+                  "label": "Dzesēšanas ūdens plūsma",
+                  "metric": "2–3 l/min"
+                },
+                {
+                  "label": "Dzesēšanas ūdens pieslēgums",
+                  "metric": "BSP ⅜\""
+                },
+                {
+                  "label": "Spiediena pieslēgums",
+                  "metric": "BSP 1\""
+                },
+                {
+                  "label": "Iesūkšanas savienojums",
+                  "metric": "BSP 1½\""
+                }
+              ]
+            },
+            {
+              "title": "Elektriskie dati",
+              "rows": [
+                {
+                  "label": "Spriegums",
+                  "metric": "3x 400/460"
+                },
+                {
+                  "label": "Frekvence",
+                  "metric": "50 / 60 Hz"
+                },
+                {
+                  "label": "Nominālā jauda",
+                  "metric": "5.5 / 6.3 kW"
+                }
+              ]
+            },
+            {
+              "title": "Svars un izmēri",
+              "rows": [
+                {
+                  "label": "Aptuvenais svars",
+                  "metric": "270 kg"
+                },
+                {
+                  "label": "Platums",
+                  "metric": "510 mm"
+                },
+                {
+                  "label": "Augstums",
+                  "metric": "1,410 mm"
+                },
+                {
+                  "label": "Garums",
+                  "metric": "758 mm"
+                }
+              ]
+            }
+          ],
+          "note": "1: ūdens/cementa attiecība = 1 · 2: pildījuma pakāpe = 100 %",
+          "source": "Dati ņemti no ražotāja brošūrām (angļu val.).",
+          "gen": true
+        },
+        {
+          "type": "columns",
+          "ratio": "50-50",
+          "left": [
+            {
+              "type": "perfchart",
+              "title": "Sūkņa veiktspēja: ZMP 611",
+              "hint": "Virziet peli virs diagrammas, pieskarieties tai vai izmantojiet bulttaustiņus, lai nolasītu vērtības. Noklikšķiniet uz virzuļa izmēra, lai to paslēptu vai parādītu (veiciet dubultklikšķi, lai rādītu tikai to).",
+              "chipsLabel": "Rādīt līknes",
+              "xName": "Spiediens",
+              "yName": "Caurplūde",
+              "x": {
+                "label": "Pressure",
+                "unit": "bar",
+                "min": 0,
+                "max": 80,
+                "step": 10
+              },
+              "y": {
+                "label": "Output",
+                "unit": "l/min",
+                "min": 0,
+                "max": 35,
+                "step": 5
+              },
+              "series": [
+                {
+                  "name": "Zems spiediens",
+                  "color": "#2f5aa8",
+                  "points": [
+                    [
+                      0,
+                      33.7
+                    ],
+                    [
+                      1.8,
+                      33.6
+                    ],
+                    [
+                      3.7,
+                      33.5
+                    ],
+                    [
+                      5.6,
+                      33.4
+                    ],
+                    [
+                      7.5,
+                      33.3
+                    ],
+                    [
+                      9.3,
+                      33.2
+                    ],
+                    [
+                      11.1,
+                      33.1
+                    ],
+                    [
+                      12.9,
+                      33
+                    ],
+                    [
+                      14.6,
+                      33
+                    ],
+                    [
+                      16.1,
+                      32.9
+                    ],
+                    [
+                      17.5,
+                      32.8
+                    ],
+                    [
+                      18.8,
+                      32.7
+                    ],
+                    [
+                      19.9,
+                      32.7
+                    ],
+                    [
+                      21.9,
+                      32.6
+                    ],
+                    [
+                      23.7,
+                      32.4
+                    ],
+                    [
+                      25.1,
+                      32.1
+                    ],
+                    [
+                      26.3,
+                      31.9
+                    ],
+                    [
+                      27.3,
+                      31.6
+                    ],
+                    [
+                      28.1,
+                      31.3
+                    ],
+                    [
+                      28.7,
+                      31
+                    ],
+                    [
+                      29.2,
+                      30.7
+                    ],
+                    [
+                      29.5,
+                      30.4
+                    ],
+                    [
+                      29.8,
+                      30.2
+                    ],
+                    [
+                      29.9,
+                      29.9
+                    ],
+                    [
+                      30,
+                      29.7
+                    ],
+                    [
+                      30.2,
+                      29.5
+                    ],
+                    [
+                      30.4,
+                      29.2
+                    ],
+                    [
+                      30.6,
+                      28.8
+                    ],
+                    [
+                      30.9,
+                      28.3
+                    ],
+                    [
+                      31.2,
+                      27.8
+                    ],
+                    [
+                      31.5,
+                      27.3
+                    ],
+                    [
+                      31.8,
+                      26.8
+                    ],
+                    [
+                      32,
+                      26.4
+                    ],
+                    [
+                      32.3,
+                      26
+                    ],
+                    [
+                      32.5,
+                      25.7
+                    ],
+                    [
+                      32.6,
+                      25.5
+                    ],
+                    [
+                      33.1,
+                      24.7
+                    ],
+                    [
+                      33.9,
+                      23.3
+                    ],
+                    [
+                      35.1,
+                      21.3
+                    ],
+                    [
+                      36.5,
+                      18.8
+                    ],
+                    [
+                      38,
+                      16.1
+                    ],
+                    [
+                      39.6,
+                      13.2
+                    ],
+                    [
+                      41.3,
+                      10.3
+                    ],
+                    [
+                      42.8,
+                      7.4
+                    ],
+                    [
+                      44.3,
+                      4.9
+                    ],
+                    [
+                      45.5,
+                      2.7
+                    ],
+                    [
+                      46.4,
+                      1
+                    ],
+                    [
+                      46.9,
+                      0
+                    ]
+                  ]
+                },
+                {
+                  "name": "Augsts spiediens",
+                  "color": "#cf3a2e",
+                  "points": [
+                    [
+                      0,
+                      26.8
+                    ],
+                    [
+                      3.1,
+                      26.7
+                    ],
+                    [
+                      6.4,
+                      26.6
+                    ],
+                    [
+                      9.7,
+                      26.5
+                    ],
+                    [
+                      13.1,
+                      26.4
+                    ],
+                    [
+                      16.5,
+                      26.3
+                    ],
+                    [
+                      19.7,
+                      26.1
+                    ],
+                    [
+                      22.7,
+                      26
+                    ],
+                    [
+                      25.5,
+                      25.8
+                    ],
+                    [
+                      27.9,
+                      25.7
+                    ],
+                    [
+                      30,
+                      25.6
+                    ],
+                    [
+                      31.6,
+                      25.5
+                    ],
+                    [
+                      32.6,
+                      25.5
+                    ],
+                    [
+                      33.1,
+                      25.4
+                    ],
+                    [
+                      33.7,
+                      25.4
+                    ],
+                    [
+                      34.4,
+                      25.3
+                    ],
+                    [
+                      35.2,
+                      25.2
+                    ],
+                    [
+                      36,
+                      25.2
+                    ],
+                    [
+                      36.9,
+                      25.1
+                    ],
+                    [
+                      37.8,
+                      25
+                    ],
+                    [
+                      38.8,
+                      25
+                    ],
+                    [
+                      39.7,
+                      24.9
+                    ],
+                    [
+                      40.6,
+                      24.8
+                    ],
+                    [
+                      41.4,
+                      24.8
+                    ],
+                    [
+                      42.3,
+                      24.7
+                    ],
+                    [
+                      43.4,
+                      24.7
+                    ],
+                    [
+                      44.6,
+                      24.6
+                    ],
+                    [
+                      45.7,
+                      24.5
+                    ],
+                    [
+                      46.8,
+                      24.4
+                    ],
+                    [
+                      47.8,
+                      24.4
+                    ],
+                    [
+                      48.8,
+                      24.3
+                    ],
+                    [
+                      49.6,
+                      24.2
+                    ],
+                    [
+                      50.4,
+                      24.2
+                    ],
+                    [
+                      51.1,
+                      24.1
+                    ],
+                    [
+                      51.7,
+                      24
+                    ],
+                    [
+                      52.2,
+                      23.9
+                    ],
+                    [
+                      52.6,
+                      23.8
+                    ],
+                    [
+                      53.2,
+                      23.5
+                    ],
+                    [
+                      53.9,
+                      23
+                    ],
+                    [
+                      54.8,
+                      22.3
+                    ],
+                    [
+                      55.7,
+                      21.5
+                    ],
+                    [
+                      56.6,
+                      20.5
+                    ],
+                    [
+                      57.6,
+                      19.6
+                    ],
+                    [
+                      58.5,
+                      18.5
+                    ],
+                    [
+                      59.4,
+                      17.6
+                    ],
+                    [
+                      60.2,
+                      16.6
+                    ],
+                    [
+                      60.9,
+                      15.8
+                    ],
+                    [
+                      61.5,
+                      15.1
+                    ],
+                    [
+                      61.9,
+                      14.6
+                    ],
+                    [
+                      62.3,
+                      14
+                    ],
+                    [
+                      63,
+                      13.2
+                    ],
+                    [
+                      63.8,
+                      12.3
+                    ],
+                    [
+                      64.7,
+                      11.1
+                    ],
+                    [
+                      65.7,
+                      9.9
+                    ],
+                    [
+                      66.9,
+                      8.5
+                    ],
+                    [
+                      68.1,
+                      7.1
+                    ],
+                    [
+                      69.4,
+                      5.6
+                    ],
+                    [
+                      70.7,
+                      4.1
+                    ],
+                    [
+                      72,
+                      2.7
+                    ],
+                    [
+                      73.3,
+                      1.3
+                    ],
+                    [
+                      74.5,
+                      0
+                    ]
+                  ]
+                }
+              ],
+              "alt": {
+                "src": "/assets/img/haeny-zmp611-chart.webp",
+                "text": "Sūkņa veiktspēja ZMP 611",
+                "show": "Rādīt oriģinālo diagrammu no brošūras",
+                "hide": "Paslēpt oriģinālo diagrammu"
+              }
+            }
+          ],
+          "right": [
+            {
+              "type": "modules",
+              "layout": "tiles",
+              "columns": 1,
+              "narrow": true,
+              "zoom": true,
+              "more": false,
+              "items": [
+                {
+                  "title": "Izmēri un rasējums",
+                  "image": "/assets/img/haeny-zmp611-dim.webp",
+                  "alt": "Izmēri un rasējums ZMP 611",
+                  "text": "Virziet peli virs rasējuma (vai pieskarieties un velciet), lai to palielinātu 2×.",
+                  "width": 1674,
+                  "height": 1498
+                }
+              ]
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "collapsible": true,
+          "title": "Standarta un papildaprīkojums",
+          "items": [
+            "Standarta komplektācijā (injektēšanas sūknis): manuāla spiediena un caurplūdes regulēšana",
+            "Standarta komplektācijā (injektēšanas sūknis): eļļas līmeņa, temperatūras un filtra piesārņojuma indikators",
+            "Opcija (vadība): tālvadība",
+            "Opcija (vadība): spiediena un caurplūdes datu reģistrēšana",
+            "Vadība: PLC",
+            "Vadība: slēdzams galvenais slēdzis, avārijas apturēšana",
+            "Vadība: sūknis IESLĒGTS/IZSLĒGTS"
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Sazinieties ar mums</a> par cenu, piegādes laiku vai palīdzību pareizā modeļa izvēlē.",
+          "gen": true
+        },
+        {
+          "type": "related",
+          "title": "Skatiet arī",
+          "items": [
+            {
+              "href": "/produkter/haeny/injekteringspumpar",
+              "mutual": false
+            },
+            {
+              "href": "/produkter/haeny/injekteringspumpar/zmp-610"
+            },
+            {
+              "href": "/produkter/haeny/injekteringspumpar/zmp-625"
+            },
+            {
+              "href": "/produkter/haeny/injekteringspumpar/zmp-710"
+            }
+          ],
+          "gen": true
+        }
+      ],
+      "published": true
+    },
+    "et": {
+      "title": "Häny ZMP 611",
+      "h1": "Häny ZMP 611",
+      "description": "Injekteerimispump ZMP 611. Äärmiselt kompaktne ja vähese kuluga kolbpump madala W/C suhtega suspensioonide ja liiva sisaldavate segude pumpamiseks. Sobib kõigiks injekteerimistöödeks ja täite…",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "HÄNY",
+          "href": "/produkter/haeny",
+          "width": 832,
+          "height": 143,
+          "src": "/assets/img/haeny-1.webp",
+          "gen": true
+        },
+        {
+          "type": "columns",
+          "ratio": "40-60",
+          "left": [
+            {
+              "type": "image",
+              "alt": "Injekteerimispump ZMP 611",
+              "width": 684,
+              "height": 1206,
+              "src": "/assets/img/haeny-zmp611-model.webp"
+            }
+          ],
+          "right": [
+            {
+              "type": "text",
+              "html": "Äärmiselt kompaktne ja vähese kuluga kolbpump madala W/C suhtega suspensioonide ja liiva sisaldavate segude pumpamiseks. Sobib kõigiks injekteerimistöödeks ja tunneli segmentide taguse täitesegu pumpamiseks."
+            },
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "Väga kompaktne püstine pump, mis säästab ruumi",
+                "Sujuvalt reguleeritavad rõhu- ja vooluhulgapiirajad",
+                "Töökindel, vähese hooldusvajadusega, kulumisosadele on lihtne ligipääs",
+                "Kiire imitakt loputab ventiile ja hoiab ära ummistumise",
+                "Jahutusvee ühendus pidevaks tööks"
+              ]
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Kasutus",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Ankrud, mullanaelad, pingestuskaablid, mansetttorud, kalju- ja kontaktinjekteerimine",
+            "Eel- ja järelinjekteerimine, bentoniit torude survetamisel, täide hernekruusaga"
+          ],
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Brošüür ZMP 611 (PDF, inglise keeles)",
+          "href": "/assets/docs/haeny-zmp611-brochure-en.pdf",
+          "gen": true
+        },
+        {
+          "type": "datasheet",
+          "title": "Tehnilised andmed",
+          "tagline": "Injekteerimispump ZMP 611",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Injekteerimispump",
+              "rows": [
+                {
+                  "label": "Kolvi Ø",
+                  "metric": "65 mm"
+                },
+                {
+                  "label": "Jõudlus",
+                  "metric": "2 m³/h"
+                },
+                {
+                  "label": "Maks. rõhk",
+                  "metric": "75 bar"
+                },
+                {
+                  "label": "Min. rõhk",
+                  "metric": "3 bar"
+                },
+                {
+                  "label": "Maht takti kohta",
+                  "metric": "0.82 l"
+                },
+                {
+                  "label": "Maks. terasuurus",
+                  "metric": "5 mm"
+                },
+                {
+                  "label": "Hüdraulikapaak",
+                  "metric": "52 l"
+                },
+                {
+                  "label": "Pumbamoodul",
+                  "metric": "üksik"
+                },
+                {
+                  "label": "Jahutusvee vooluhulk",
+                  "metric": "2–3 l/min"
+                },
+                {
+                  "label": "Jahutusvee ühendus",
+                  "metric": "BSP ⅜\""
+                },
+                {
+                  "label": "Survetoru ühendus",
+                  "metric": "BSP 1\""
+                },
+                {
+                  "label": "Imiühendus",
+                  "metric": "BSP 1½\""
+                }
+              ]
+            },
+            {
+              "title": "Elektrilised andmed",
+              "rows": [
+                {
+                  "label": "Pinge",
+                  "metric": "3x 400/460"
+                },
+                {
+                  "label": "Sagedus",
+                  "metric": "50 / 60 Hz"
+                },
+                {
+                  "label": "Nimivõimsus",
+                  "metric": "5.5 / 6.3 kW"
+                }
+              ]
+            },
+            {
+              "title": "Kaal ja mõõtmed",
+              "rows": [
+                {
+                  "label": "Ligikaudne kaal",
+                  "metric": "270 kg"
+                },
+                {
+                  "label": "Laius",
+                  "metric": "510 mm"
+                },
+                {
+                  "label": "Kõrgus",
+                  "metric": "1,410 mm"
+                },
+                {
+                  "label": "Pikkus",
+                  "metric": "758 mm"
+                }
+              ]
+            }
+          ],
+          "note": "1: vee ja tsemendi suhe = 1 · 2: täitetase = 100 %",
+          "source": "Andmed on võetud tootja brošüüridest (inglise keeles).",
+          "gen": true
+        },
+        {
+          "type": "columns",
+          "ratio": "50-50",
+          "left": [
+            {
+              "type": "perfchart",
+              "title": "Pumba jõudlusnäitajad: ZMP 611",
+              "hint": "Hoia kursorit diagrammi kohal, puuduta seda või kasuta nooleklahve väärtuste lugemiseks. Klõpsa kolvi suurusel, et seda peita või näidata (topeltklõps näitab ainult seda).",
+              "chipsLabel": "Näita kõveraid",
+              "xName": "Rõhk",
+              "yName": "Vooluhulk",
+              "x": {
+                "label": "Pressure",
+                "unit": "bar",
+                "min": 0,
+                "max": 80,
+                "step": 10
+              },
+              "y": {
+                "label": "Output",
+                "unit": "l/min",
+                "min": 0,
+                "max": 35,
+                "step": 5
+              },
+              "series": [
+                {
+                  "name": "Madal rõhk",
+                  "color": "#2f5aa8",
+                  "points": [
+                    [
+                      0,
+                      33.7
+                    ],
+                    [
+                      1.8,
+                      33.6
+                    ],
+                    [
+                      3.7,
+                      33.5
+                    ],
+                    [
+                      5.6,
+                      33.4
+                    ],
+                    [
+                      7.5,
+                      33.3
+                    ],
+                    [
+                      9.3,
+                      33.2
+                    ],
+                    [
+                      11.1,
+                      33.1
+                    ],
+                    [
+                      12.9,
+                      33
+                    ],
+                    [
+                      14.6,
+                      33
+                    ],
+                    [
+                      16.1,
+                      32.9
+                    ],
+                    [
+                      17.5,
+                      32.8
+                    ],
+                    [
+                      18.8,
+                      32.7
+                    ],
+                    [
+                      19.9,
+                      32.7
+                    ],
+                    [
+                      21.9,
+                      32.6
+                    ],
+                    [
+                      23.7,
+                      32.4
+                    ],
+                    [
+                      25.1,
+                      32.1
+                    ],
+                    [
+                      26.3,
+                      31.9
+                    ],
+                    [
+                      27.3,
+                      31.6
+                    ],
+                    [
+                      28.1,
+                      31.3
+                    ],
+                    [
+                      28.7,
+                      31
+                    ],
+                    [
+                      29.2,
+                      30.7
+                    ],
+                    [
+                      29.5,
+                      30.4
+                    ],
+                    [
+                      29.8,
+                      30.2
+                    ],
+                    [
+                      29.9,
+                      29.9
+                    ],
+                    [
+                      30,
+                      29.7
+                    ],
+                    [
+                      30.2,
+                      29.5
+                    ],
+                    [
+                      30.4,
+                      29.2
+                    ],
+                    [
+                      30.6,
+                      28.8
+                    ],
+                    [
+                      30.9,
+                      28.3
+                    ],
+                    [
+                      31.2,
+                      27.8
+                    ],
+                    [
+                      31.5,
+                      27.3
+                    ],
+                    [
+                      31.8,
+                      26.8
+                    ],
+                    [
+                      32,
+                      26.4
+                    ],
+                    [
+                      32.3,
+                      26
+                    ],
+                    [
+                      32.5,
+                      25.7
+                    ],
+                    [
+                      32.6,
+                      25.5
+                    ],
+                    [
+                      33.1,
+                      24.7
+                    ],
+                    [
+                      33.9,
+                      23.3
+                    ],
+                    [
+                      35.1,
+                      21.3
+                    ],
+                    [
+                      36.5,
+                      18.8
+                    ],
+                    [
+                      38,
+                      16.1
+                    ],
+                    [
+                      39.6,
+                      13.2
+                    ],
+                    [
+                      41.3,
+                      10.3
+                    ],
+                    [
+                      42.8,
+                      7.4
+                    ],
+                    [
+                      44.3,
+                      4.9
+                    ],
+                    [
+                      45.5,
+                      2.7
+                    ],
+                    [
+                      46.4,
+                      1
+                    ],
+                    [
+                      46.9,
+                      0
+                    ]
+                  ]
+                },
+                {
+                  "name": "Kõrge rõhk",
+                  "color": "#cf3a2e",
+                  "points": [
+                    [
+                      0,
+                      26.8
+                    ],
+                    [
+                      3.1,
+                      26.7
+                    ],
+                    [
+                      6.4,
+                      26.6
+                    ],
+                    [
+                      9.7,
+                      26.5
+                    ],
+                    [
+                      13.1,
+                      26.4
+                    ],
+                    [
+                      16.5,
+                      26.3
+                    ],
+                    [
+                      19.7,
+                      26.1
+                    ],
+                    [
+                      22.7,
+                      26
+                    ],
+                    [
+                      25.5,
+                      25.8
+                    ],
+                    [
+                      27.9,
+                      25.7
+                    ],
+                    [
+                      30,
+                      25.6
+                    ],
+                    [
+                      31.6,
+                      25.5
+                    ],
+                    [
+                      32.6,
+                      25.5
+                    ],
+                    [
+                      33.1,
+                      25.4
+                    ],
+                    [
+                      33.7,
+                      25.4
+                    ],
+                    [
+                      34.4,
+                      25.3
+                    ],
+                    [
+                      35.2,
+                      25.2
+                    ],
+                    [
+                      36,
+                      25.2
+                    ],
+                    [
+                      36.9,
+                      25.1
+                    ],
+                    [
+                      37.8,
+                      25
+                    ],
+                    [
+                      38.8,
+                      25
+                    ],
+                    [
+                      39.7,
+                      24.9
+                    ],
+                    [
+                      40.6,
+                      24.8
+                    ],
+                    [
+                      41.4,
+                      24.8
+                    ],
+                    [
+                      42.3,
+                      24.7
+                    ],
+                    [
+                      43.4,
+                      24.7
+                    ],
+                    [
+                      44.6,
+                      24.6
+                    ],
+                    [
+                      45.7,
+                      24.5
+                    ],
+                    [
+                      46.8,
+                      24.4
+                    ],
+                    [
+                      47.8,
+                      24.4
+                    ],
+                    [
+                      48.8,
+                      24.3
+                    ],
+                    [
+                      49.6,
+                      24.2
+                    ],
+                    [
+                      50.4,
+                      24.2
+                    ],
+                    [
+                      51.1,
+                      24.1
+                    ],
+                    [
+                      51.7,
+                      24
+                    ],
+                    [
+                      52.2,
+                      23.9
+                    ],
+                    [
+                      52.6,
+                      23.8
+                    ],
+                    [
+                      53.2,
+                      23.5
+                    ],
+                    [
+                      53.9,
+                      23
+                    ],
+                    [
+                      54.8,
+                      22.3
+                    ],
+                    [
+                      55.7,
+                      21.5
+                    ],
+                    [
+                      56.6,
+                      20.5
+                    ],
+                    [
+                      57.6,
+                      19.6
+                    ],
+                    [
+                      58.5,
+                      18.5
+                    ],
+                    [
+                      59.4,
+                      17.6
+                    ],
+                    [
+                      60.2,
+                      16.6
+                    ],
+                    [
+                      60.9,
+                      15.8
+                    ],
+                    [
+                      61.5,
+                      15.1
+                    ],
+                    [
+                      61.9,
+                      14.6
+                    ],
+                    [
+                      62.3,
+                      14
+                    ],
+                    [
+                      63,
+                      13.2
+                    ],
+                    [
+                      63.8,
+                      12.3
+                    ],
+                    [
+                      64.7,
+                      11.1
+                    ],
+                    [
+                      65.7,
+                      9.9
+                    ],
+                    [
+                      66.9,
+                      8.5
+                    ],
+                    [
+                      68.1,
+                      7.1
+                    ],
+                    [
+                      69.4,
+                      5.6
+                    ],
+                    [
+                      70.7,
+                      4.1
+                    ],
+                    [
+                      72,
+                      2.7
+                    ],
+                    [
+                      73.3,
+                      1.3
+                    ],
+                    [
+                      74.5,
+                      0
+                    ]
+                  ]
+                }
+              ],
+              "alt": {
+                "src": "/assets/img/haeny-zmp611-chart.webp",
+                "text": "Pumba jõudlusnäitajad ZMP 611",
+                "show": "Näita brošüüri originaaldiagrammi",
+                "hide": "Peida originaaldiagramm"
+              }
+            }
+          ],
+          "right": [
+            {
+              "type": "modules",
+              "layout": "tiles",
+              "columns": 1,
+              "narrow": true,
+              "zoom": true,
+              "more": false,
+              "items": [
+                {
+                  "title": "Mõõtmed ja joonis",
+                  "image": "/assets/img/haeny-zmp611-dim.webp",
+                  "alt": "Mõõtmed ja joonis ZMP 611",
+                  "text": "Hoia kursorit joonise kohal (või puuduta ja lohista), et seda 2× suurendada.",
+                  "width": 1674,
+                  "height": 1498
+                }
+              ]
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "collapsible": true,
+          "title": "Standard- ja lisavarustus",
+          "items": [
+            "Standardvarustuses (injekteerimispump): käsitsi rõhu- ja vooluhulgareguleerimine",
+            "Standardvarustuses (injekteerimispump): õlitaseme, temperatuuri ja filtri määrdumise indikaator",
+            "Lisavarustus (juhtimine): kaugjuhtimine",
+            "Lisavarustus (juhtimine): rõhu ja vooluhulga andmelogimine",
+            "Juhtimine: PLC",
+            "Juhtimine: lukustatav pealüliti, hädaseiskamine",
+            "Juhtimine: pump SEES/VÄLJAS"
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Võta meiega ühendust</a> hinna, tarneaja või õige mudeli valikul abi saamiseks.",
+          "gen": true
+        },
+        {
+          "type": "related",
+          "title": "Vaata ka",
+          "items": [
+            {
+              "href": "/produkter/haeny/injekteringspumpar",
+              "mutual": false
+            },
+            {
+              "href": "/produkter/haeny/injekteringspumpar/zmp-610"
+            },
+            {
+              "href": "/produkter/haeny/injekteringspumpar/zmp-625"
+            },
+            {
+              "href": "/produkter/haeny/injekteringspumpar/zmp-710"
+            }
+          ],
+          "gen": true
+        }
+      ],
+      "published": true
+    },
+    "ru": {
+      "title": "Häny ZMP 611",
+      "h1": "Häny ZMP 611",
+      "description": "Инъекционный насос ZMP 611. Предельно компактный плунжерный насос с низким износом для перекачивания суспензий с низким В/Ц и растворов с содержанием песка. Подходит для всех инъекционных работ и для перекачки заполняющего…",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "HÄNY",
+          "href": "/produkter/haeny",
+          "width": 832,
+          "height": 143,
+          "src": "/assets/img/haeny-1.webp",
+          "gen": true
+        },
+        {
+          "type": "columns",
+          "ratio": "40-60",
+          "left": [
+            {
+              "type": "image",
+              "alt": "Инъекционный насос ZMP 611",
+              "width": 684,
+              "height": 1206,
+              "src": "/assets/img/haeny-zmp611-model.webp"
+            }
+          ],
+          "right": [
+            {
+              "type": "text",
+              "html": "Предельно компактный плунжерный насос с низким износом для перекачивания суспензий с низким В/Ц и растворов с содержанием песка. Подходит для всех инъекционных работ и для перекачки заполняющего раствора за тюбингами тоннеля."
+            },
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "Очень компактный вертикальный насос, экономящий место",
+                "Плавно регулируемые ограничения давления и расхода",
+                "Надёжный, малообслуживаемый, лёгкий доступ к изнашиваемым деталям",
+                "Быстрый ход всасывания промывает клапаны и предотвращает засорение",
+                "Подключение охлаждающей воды для непрерывной работы"
+              ]
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Применение",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Анкеры, грунтовые гвозди, напрягаемые тросы, манжетные трубы, цементация скальных пород и контактная инъекция",
+            "Предварительное и последующее инъектирование, бентонит при продавливании труб, заполнение мелким гравием"
+          ],
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Брошюра ZMP 611 (PDF, на английском)",
+          "href": "/assets/docs/haeny-zmp611-brochure-en.pdf",
+          "gen": true
+        },
+        {
+          "type": "datasheet",
+          "title": "Технические данные",
+          "tagline": "Инъекционный насос ZMP 611",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Инъекционный насос",
+              "rows": [
+                {
+                  "label": "Ø плунжера",
+                  "metric": "65 mm"
+                },
+                {
+                  "label": "Производительность",
+                  "metric": "2 m³/h"
+                },
+                {
+                  "label": "Макс. давление",
+                  "metric": "75 bar"
+                },
+                {
+                  "label": "Мин. давление",
+                  "metric": "3 bar"
+                },
+                {
+                  "label": "Объём за ход",
+                  "metric": "0.82 l"
+                },
+                {
+                  "label": "Макс. размер зерна",
+                  "metric": "5 mm"
+                },
+                {
+                  "label": "Гидробак",
+                  "metric": "52 l"
+                },
+                {
+                  "label": "Насосный модуль",
+                  "metric": "одинарный"
+                },
+                {
+                  "label": "Расход охлаждающей воды",
+                  "metric": "2–3 l/min"
+                },
+                {
+                  "label": "Подключение охлаждающей воды",
+                  "metric": "BSP ⅜\""
+                },
+                {
+                  "label": "Напорный патрубок",
+                  "metric": "BSP 1\""
+                },
+                {
+                  "label": "Всасывающий патрубок",
+                  "metric": "BSP 1½\""
+                }
+              ]
+            },
+            {
+              "title": "Электрические данные",
+              "rows": [
+                {
+                  "label": "Напряжение",
+                  "metric": "3x 400/460"
+                },
+                {
+                  "label": "Частота",
+                  "metric": "50 / 60 Hz"
+                },
+                {
+                  "label": "Номинальная мощность",
+                  "metric": "5.5 / 6.3 kW"
+                }
+              ]
+            },
+            {
+              "title": "Масса и размеры",
+              "rows": [
+                {
+                  "label": "Ориентировочная масса",
+                  "metric": "270 kg"
+                },
+                {
+                  "label": "Ширина",
+                  "metric": "510 mm"
+                },
+                {
+                  "label": "Высота",
+                  "metric": "1,410 mm"
+                },
+                {
+                  "label": "Длина",
+                  "metric": "758 mm"
+                }
+              ]
+            }
+          ],
+          "note": "1: водоцементное отношение = 1 · 2: степень заполнения = 100 %",
+          "source": "Данные взяты из брошюр производителя (на английском языке).",
+          "gen": true
+        },
+        {
+          "type": "columns",
+          "ratio": "50-50",
+          "left": [
+            {
+              "type": "perfchart",
+              "title": "Характеристики насоса: ZMP 611",
+              "hint": "Наведите курсор на диаграмму, коснитесь её или используйте клавиши со стрелками, чтобы считать значения. Нажмите на размер плунжера, чтобы скрыть или показать его (двойной щелчок покажет только его).",
+              "chipsLabel": "Показать кривые",
+              "xName": "Давление",
+              "yName": "Расход",
+              "x": {
+                "label": "Pressure",
+                "unit": "bar",
+                "min": 0,
+                "max": 80,
+                "step": 10
+              },
+              "y": {
+                "label": "Output",
+                "unit": "l/min",
+                "min": 0,
+                "max": 35,
+                "step": 5
+              },
+              "series": [
+                {
+                  "name": "Низкое давление",
+                  "color": "#2f5aa8",
+                  "points": [
+                    [
+                      0,
+                      33.7
+                    ],
+                    [
+                      1.8,
+                      33.6
+                    ],
+                    [
+                      3.7,
+                      33.5
+                    ],
+                    [
+                      5.6,
+                      33.4
+                    ],
+                    [
+                      7.5,
+                      33.3
+                    ],
+                    [
+                      9.3,
+                      33.2
+                    ],
+                    [
+                      11.1,
+                      33.1
+                    ],
+                    [
+                      12.9,
+                      33
+                    ],
+                    [
+                      14.6,
+                      33
+                    ],
+                    [
+                      16.1,
+                      32.9
+                    ],
+                    [
+                      17.5,
+                      32.8
+                    ],
+                    [
+                      18.8,
+                      32.7
+                    ],
+                    [
+                      19.9,
+                      32.7
+                    ],
+                    [
+                      21.9,
+                      32.6
+                    ],
+                    [
+                      23.7,
+                      32.4
+                    ],
+                    [
+                      25.1,
+                      32.1
+                    ],
+                    [
+                      26.3,
+                      31.9
+                    ],
+                    [
+                      27.3,
+                      31.6
+                    ],
+                    [
+                      28.1,
+                      31.3
+                    ],
+                    [
+                      28.7,
+                      31
+                    ],
+                    [
+                      29.2,
+                      30.7
+                    ],
+                    [
+                      29.5,
+                      30.4
+                    ],
+                    [
+                      29.8,
+                      30.2
+                    ],
+                    [
+                      29.9,
+                      29.9
+                    ],
+                    [
+                      30,
+                      29.7
+                    ],
+                    [
+                      30.2,
+                      29.5
+                    ],
+                    [
+                      30.4,
+                      29.2
+                    ],
+                    [
+                      30.6,
+                      28.8
+                    ],
+                    [
+                      30.9,
+                      28.3
+                    ],
+                    [
+                      31.2,
+                      27.8
+                    ],
+                    [
+                      31.5,
+                      27.3
+                    ],
+                    [
+                      31.8,
+                      26.8
+                    ],
+                    [
+                      32,
+                      26.4
+                    ],
+                    [
+                      32.3,
+                      26
+                    ],
+                    [
+                      32.5,
+                      25.7
+                    ],
+                    [
+                      32.6,
+                      25.5
+                    ],
+                    [
+                      33.1,
+                      24.7
+                    ],
+                    [
+                      33.9,
+                      23.3
+                    ],
+                    [
+                      35.1,
+                      21.3
+                    ],
+                    [
+                      36.5,
+                      18.8
+                    ],
+                    [
+                      38,
+                      16.1
+                    ],
+                    [
+                      39.6,
+                      13.2
+                    ],
+                    [
+                      41.3,
+                      10.3
+                    ],
+                    [
+                      42.8,
+                      7.4
+                    ],
+                    [
+                      44.3,
+                      4.9
+                    ],
+                    [
+                      45.5,
+                      2.7
+                    ],
+                    [
+                      46.4,
+                      1
+                    ],
+                    [
+                      46.9,
+                      0
+                    ]
+                  ]
+                },
+                {
+                  "name": "Высокое давление",
+                  "color": "#cf3a2e",
+                  "points": [
+                    [
+                      0,
+                      26.8
+                    ],
+                    [
+                      3.1,
+                      26.7
+                    ],
+                    [
+                      6.4,
+                      26.6
+                    ],
+                    [
+                      9.7,
+                      26.5
+                    ],
+                    [
+                      13.1,
+                      26.4
+                    ],
+                    [
+                      16.5,
+                      26.3
+                    ],
+                    [
+                      19.7,
+                      26.1
+                    ],
+                    [
+                      22.7,
+                      26
+                    ],
+                    [
+                      25.5,
+                      25.8
+                    ],
+                    [
+                      27.9,
+                      25.7
+                    ],
+                    [
+                      30,
+                      25.6
+                    ],
+                    [
+                      31.6,
+                      25.5
+                    ],
+                    [
+                      32.6,
+                      25.5
+                    ],
+                    [
+                      33.1,
+                      25.4
+                    ],
+                    [
+                      33.7,
+                      25.4
+                    ],
+                    [
+                      34.4,
+                      25.3
+                    ],
+                    [
+                      35.2,
+                      25.2
+                    ],
+                    [
+                      36,
+                      25.2
+                    ],
+                    [
+                      36.9,
+                      25.1
+                    ],
+                    [
+                      37.8,
+                      25
+                    ],
+                    [
+                      38.8,
+                      25
+                    ],
+                    [
+                      39.7,
+                      24.9
+                    ],
+                    [
+                      40.6,
+                      24.8
+                    ],
+                    [
+                      41.4,
+                      24.8
+                    ],
+                    [
+                      42.3,
+                      24.7
+                    ],
+                    [
+                      43.4,
+                      24.7
+                    ],
+                    [
+                      44.6,
+                      24.6
+                    ],
+                    [
+                      45.7,
+                      24.5
+                    ],
+                    [
+                      46.8,
+                      24.4
+                    ],
+                    [
+                      47.8,
+                      24.4
+                    ],
+                    [
+                      48.8,
+                      24.3
+                    ],
+                    [
+                      49.6,
+                      24.2
+                    ],
+                    [
+                      50.4,
+                      24.2
+                    ],
+                    [
+                      51.1,
+                      24.1
+                    ],
+                    [
+                      51.7,
+                      24
+                    ],
+                    [
+                      52.2,
+                      23.9
+                    ],
+                    [
+                      52.6,
+                      23.8
+                    ],
+                    [
+                      53.2,
+                      23.5
+                    ],
+                    [
+                      53.9,
+                      23
+                    ],
+                    [
+                      54.8,
+                      22.3
+                    ],
+                    [
+                      55.7,
+                      21.5
+                    ],
+                    [
+                      56.6,
+                      20.5
+                    ],
+                    [
+                      57.6,
+                      19.6
+                    ],
+                    [
+                      58.5,
+                      18.5
+                    ],
+                    [
+                      59.4,
+                      17.6
+                    ],
+                    [
+                      60.2,
+                      16.6
+                    ],
+                    [
+                      60.9,
+                      15.8
+                    ],
+                    [
+                      61.5,
+                      15.1
+                    ],
+                    [
+                      61.9,
+                      14.6
+                    ],
+                    [
+                      62.3,
+                      14
+                    ],
+                    [
+                      63,
+                      13.2
+                    ],
+                    [
+                      63.8,
+                      12.3
+                    ],
+                    [
+                      64.7,
+                      11.1
+                    ],
+                    [
+                      65.7,
+                      9.9
+                    ],
+                    [
+                      66.9,
+                      8.5
+                    ],
+                    [
+                      68.1,
+                      7.1
+                    ],
+                    [
+                      69.4,
+                      5.6
+                    ],
+                    [
+                      70.7,
+                      4.1
+                    ],
+                    [
+                      72,
+                      2.7
+                    ],
+                    [
+                      73.3,
+                      1.3
+                    ],
+                    [
+                      74.5,
+                      0
+                    ]
+                  ]
+                }
+              ],
+              "alt": {
+                "src": "/assets/img/haeny-zmp611-chart.webp",
+                "text": "Характеристики насоса ZMP 611",
+                "show": "Показать оригинальную диаграмму из брошюры",
+                "hide": "Скрыть оригинальную диаграмму"
+              }
+            }
+          ],
+          "right": [
+            {
+              "type": "modules",
+              "layout": "tiles",
+              "columns": 1,
+              "narrow": true,
+              "zoom": true,
+              "more": false,
+              "items": [
+                {
+                  "title": "Размеры и чертёж",
+                  "image": "/assets/img/haeny-zmp611-dim.webp",
+                  "alt": "Размеры и чертёж ZMP 611",
+                  "text": "Наведите курсор на чертёж (или коснитесь и проведите пальцем), чтобы увеличить его в 2 раза.",
+                  "width": 1674,
+                  "height": 1498
+                }
+              ]
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "collapsible": true,
+          "title": "Стандартное и дополнительное оборудование",
+          "items": [
+            "Входит в стандартную комплектацию (инъекционный насос): ручная регулировка давления и расхода",
+            "Входит в стандартную комплектацию (инъекционный насос): индикатор уровня масла, температуры и загрязнения фильтра",
+            "Опция (управление): дистанционное управление",
+            "Опция (управление): регистрация данных давления и расхода",
+            "Управление: ПЛК",
+            "Управление: запираемый главный выключатель, аварийная остановка",
+            "Управление: насос ВКЛ/ВЫКЛ"
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Свяжитесь с нами</a>, чтобы узнать цену, срок поставки или получить помощь в выборе подходящей модели.",
+          "gen": true
+        },
+        {
+          "type": "related",
+          "title": "См. также",
+          "items": [
+            {
+              "href": "/produkter/haeny/injekteringspumpar",
+              "mutual": false
+            },
+            {
+              "href": "/produkter/haeny/injekteringspumpar/zmp-610"
+            },
+            {
+              "href": "/produkter/haeny/injekteringspumpar/zmp-625"
+            },
+            {
+              "href": "/produkter/haeny/injekteringspumpar/zmp-710"
+            }
+          ],
+          "gen": true
+        }
+      ],
+      "published": true
     }
   }
 }

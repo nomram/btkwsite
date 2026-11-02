@@ -9,7 +9,11 @@
       "sv": "Konstruerad och byggd i Jona",
       "en": "Designed and built in Jona",
       "es": "Diseñada y fabricada en Jona",
-      "no": "Konstruert og bygget i Jona"
+      "no": "Konstruert og bygget i Jona",
+      "lt": "Sukurta ir pagaminta: Jona",
+      "lv": "Izstrādāts un ražots: Jona",
+      "et": "Disainitud ja ehitatud: Jona",
+      "ru": "Разработано и изготовлено: Jona"
     }
   },
   "order": 1,
@@ -1804,6 +1808,1794 @@
           ]
         }
       ]
+    },
+    "lt": {
+      "title": "HÄNY",
+      "h1": "HÄNY",
+      "description": "Häny gamina injektavimo ir maišymo sistemas. Peržiūrėkite jų brošiūrą žemiau arba susisiekite su mumis dėl daugiau informacijos.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "HÄNY",
+          "width": 832,
+          "height": 143,
+          "src": "/assets/img/haeny-1.webp"
+        },
+        {
+          "type": "text",
+          "html": "Häny gamina injektavimo ir maišymo sistemas. Peržiūrėkite jų brošiūrą žemiau arba <a href=\"/kontakta-oss\">susisiekite su mumis</a> dėl daugiau informacijos."
+        },
+        {
+          "type": "text",
+          "html": "Häny pradėjo kaip srauto specialistai: kaip skysčiai juda vamzdžiuose, vožtuvuose ir siurbliuose. Šios žinios paskatino sukurti pažangius siurblius ir sistemas vandeniui – nuo geriamojo vandens iki nuotekų – bei turbinas, kurios panaudoja vandens srautų energiją. Tos pačios žinios yra ir injektavimo bei maišymo įrangoje.",
+          "tag": "haeny-story"
+        },
+        {
+          "type": "text",
+          "html": "Įmonė įkurta 1875 m. ir yra vienas seniausių vardų siurblių technologijų srityje. Häny nėra pigiausias pasirinkimas rinkoje, bet yra vienas tų, kurie tarnauja ilgiausiai. Kai kurie Häny siurbliai veikia jau kelis dešimtmečius, o tinkamai prižiūrimas, t. y. valomas ir aptarnaujamas, Häny siurblys tarnauja labai ilgai.",
+          "tag": "haeny-story"
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Pagrindinė brošiūra (produktų portfelis)",
+          "href": "/assets/docs/haeny-portfolio-brochure-en.pdf"
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Brošiūra (apžvalga)",
+          "href": "/assets/docs/haeny-ladda-ner-huvudbroschyr.pdf",
+          "driveId": "148ne9OMuPCzVDbmhU6CGsrj5TFyFTViG"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Kompletiniai įrenginiai",
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 4,
+          "square": true,
+          "more": false,
+          "items": [
+            {
+              "title": "Kompaktiški įrenginiai (IC)",
+              "image": "/assets/img/haeny-tile-ic.webp",
+              "alt": "Kompaktiški įrenginiai (IC)",
+              "href": "/produkter/haeny/manuella-pumpar",
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "Automatinė įranga (FAIC)",
+              "image": "/assets/img/haeny-tile-faic.webp",
+              "alt": "Automatinė įranga (FAIC)",
+              "href": "/produkter/haeny/automatiska-pumpar",
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "Kompaktiški PU įrenginiai (CCP)",
+              "image": "/assets/img/haeny-tile-ccp.webp",
+              "alt": "Kompaktiški PU įrenginiai (CCP)",
+              "href": "/produkter/haeny/manuella-pumpar/ic-325-ccp",
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "Mobilieji įrenginiai (MCM)",
+              "image": "/assets/img/haeny-tile-mcm.webp",
+              "alt": "Mobilieji įrenginiai (MCM)",
+              "href": "/produkter/haeny/mobila-anlaggningar",
+              "width": 1000,
+              "height": 1000
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Dalys",
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 3,
+          "square": true,
+          "more": false,
+          "items": [
+            {
+              "title": "Maišyklės (HCM)",
+              "image": "/assets/img/haeny-tile-hcm.webp",
+              "alt": "Maišyklės (HCM)",
+              "href": "/produkter/haeny/blandare",
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "Maišikliai (HRW)",
+              "image": "/assets/img/haeny-tile-hrw.webp",
+              "alt": "Maišikliai (HRW)",
+              "href": "/produkter/haeny/omrorare",
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "Injektavimo siurbliai (ZMP)",
+              "image": "/assets/img/haeny-tile-zmp.webp",
+              "alt": "Injektavimo siurbliai (ZMP)",
+              "href": "/produkter/haeny/injekteringspumpar",
+              "width": 1000,
+              "height": 1000
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Häny technologija"
+        },
+        {
+          "type": "columns",
+          "ratio": "40-60",
+          "left": [
+            {
+              "type": "image",
+              "alt": "HÄNY: 2 paveikslėlis",
+              "width": 744,
+              "height": 920,
+              "src": "/assets/img/haeny-tech-mixer.webp",
+              "caption": "Maišyklė"
+            }
+          ],
+          "right": [
+            {
+              "type": "heading",
+              "level": 3,
+              "text": "Maišymo principas"
+            },
+            {
+              "type": "text",
+              "html": "Efektyviam cemento, itin smulkaus cemento ir bentonito maišymui Häny maišyklės sukuria dideles šlyties jėgas naudodamos greitaeigius siurblius ir unikalų sūkurinį sparnuotį. Siurbliai 2–4 kartus per minutę apcirkuliuoja visą bako turinį, sukurdami ypatingą turbulenciją ir veiksmingą dalelių atskyrimą bei užtikrindami visišką hidrataciją."
+            },
+            {
+              "type": "text",
+              "html": "Dėl šios intensyvios hidratacijos suspensija būna stabili ir lengvai apdirbama, net su sunkiai maišomais priedais. HCM maišyklė pašalina bentonito mirkymo iš anksto ar kaupimo bakų poreikį."
+            },
+            {
+              "type": "related",
+              "title": "Žr. produktą:",
+              "items": [
+                {
+                  "href": "/produkter/haeny/blandare"
+                }
+              ],
+              "tech": true
+            }
+          ]
+        },
+        {
+          "type": "columns",
+          "ratio": "40-60",
+          "left": [
+            {
+              "type": "image",
+              "alt": "HÄNY: 3 paveikslėlis",
+              "width": 599,
+              "height": 440,
+              "src": "/assets/img/haeny-3.webp",
+              "caption": "Sparnuotė"
+            }
+          ],
+          "right": [
+            {
+              "type": "heading",
+              "level": 3,
+              "text": "Sparnuotė"
+            },
+            {
+              "type": "text",
+              "html": "Häny sūkurinė sparnuotė turi didelį pralaidumą (15–80 mm) ir yra ypač atspari dilimui, todėl mažiau dyla ir užsikemša. HCM 300 ir HCM 600 modeliai gali maišyti smėlingus injektavimo skiedinius, kurių dalelių dydis siekia iki 8 mm. Nereikalaujantis priežiūros veleno sandariklis keletą minučių atlaiko veikimą sausąja eiga be pažeidimų."
+            }
+          ]
+        },
+        {
+          "type": "columns",
+          "ratio": "40-60",
+          "left": [
+            {
+              "type": "image",
+              "alt": "Maišiklis",
+              "width": 782,
+              "height": 921,
+              "src": "/assets/img/haeny-tech-agitator.webp",
+              "caption": "Maišiklis"
+            }
+          ],
+          "right": [
+            {
+              "type": "heading",
+              "level": 3,
+              "text": "Maišiklis"
+            },
+            {
+              "type": "text",
+              "html": "Maišiklis naudojamas kaip tarpinė talpykla tarp maišyklės ir siurblio. Lėtai besisukančiame maišiklyje injektavimo mišinys homogenizuojamas ir pašalinami visi oro burbuliukai, todėl siurblys gali dirbti nepertraukiamai. Su lygio jutikliais (pasirinktinai) galima dirbti visiškai automatiškai."
+            },
+            {
+              "type": "related",
+              "title": "Žr. produktą:",
+              "items": [
+                {
+                  "href": "/produkter/haeny/omrorare"
+                }
+              ],
+              "tech": true
+            }
+          ]
+        },
+        {
+          "type": "columns",
+          "ratio": "40-60",
+          "left": [
+            {
+              "type": "image",
+              "alt": "HÄNY: 4 paveikslėlis",
+              "width": 894,
+              "height": 786,
+              "src": "/assets/img/haeny-tech-plunger.webp",
+              "caption": "Vienguba (ZMP 610) ir dviguba siurblio modulis (ZMP 625)",
+              "hint": "Užveskite žymeklį ant ZMP 610 taško (arba palieskite jį), kad pamatytumėte siurblio modulio pjūvį.",
+              "callouts": [
+                {
+                  "x": 35,
+                  "y": 50,
+                  "lx": 48.7,
+                  "ly": 98.8,
+                  "dir": "r",
+                  "v": "u",
+                  "iw": 35.5,
+                  "image": "/assets/img/haeny-4.webp",
+                  "text": "Pjūvis"
+                }
+              ]
+            }
+          ],
+          "right": [
+            {
+              "type": "heading",
+              "level": 3,
+              "text": "Plunžerinė siurblių sistema"
+            },
+            {
+              "type": "text",
+              "html": "Skirtingai nei stūmokliniai siurbliai, plunžeriniai siurbliai nereikalauja tiksliai suderintų dalių, tokių kaip cilindrai ar tikslūs stūmoklio sandarikliai. Plunžeris sandarinamas nereikalaujančiu priežiūros sandarikliu, o ZMP 700 serijos siurbliuose galima montuoti skirtingų skersmenų plunžerius, kad slėgį ir debitą būtų galima lanksčiai pritaikyti."
+            },
+            {
+              "type": "heading",
+              "level": 3,
+              "text": "Vožtuvai"
+            },
+            {
+              "type": "text",
+              "html": "Injektavimo vožtuvai pagaminti iš dilimui atsparaus legiruotojo plieno su apverčiamais vožtuvų lizdais. Hidraulinė sistema užtikrina greitą siurbimo eigą, kuri palaiko vožtuvus švarius nuplaudama sunkias daleles. Siurbliai tinka ir suspensijoms su mažu vandens ir cemento santykiu bei dideliu smėlio kiekiu."
+            },
+            {
+              "type": "related",
+              "title": "Žr. produktą:",
+              "items": [
+                {
+                  "href": "/produkter/haeny/injekteringspumpar"
+                }
+              ],
+              "tech": true
+            }
+          ]
+        },
+        {
+          "type": "columns",
+          "ratio": "40-60",
+          "left": [
+            {
+              "type": "image",
+              "alt": "HÄNY: 5 paveikslėlis",
+              "width": 649,
+              "height": 490,
+              "src": "/assets/img/haeny-5.webp",
+              "caption": "Valdymo blokas debito kontrolei"
+            }
+          ],
+          "right": [
+            {
+              "type": "heading",
+              "level": 3,
+              "text": "Automatinė slėgio kontrolė"
+            },
+            {
+              "type": "text",
+              "html": "ZMP 700 siurbliai turi vožtuvus tiksliam maksimalaus slėgio nustatymui. Pasiekus slėgį, debitas automatiškai koreguojamas arba sustabdomas, o slėgis išlaikomas. Kai kuriuos modelius galima nustatyti net nuo 1 bar, todėl galima saugiai injektuoti jautriuose geologiniuose dariniuose."
+            },
+            {
+              "type": "heading",
+              "level": 3,
+              "text": "Debito kontrolė"
+            },
+            {
+              "type": "text",
+              "html": "Integruotas debito reguliavimas leidžia nustatyti maksimalų debitą, todėl minkštame grunte galima injektuoti lėtai be segregacijos ar naujų ertmių. Kartu su slėgio kontrole siurblius galima naudoti ir pralaidumo bandymams."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Registravimas ir valdymas",
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 4,
+          "square": true,
+          "more": false,
+          "items": [
+            {
+              "title": "Duomenų registratorius (DPV-H)",
+              "image": "/assets/img/haeny-tile-dpv.webp",
+              "alt": "Duomenų registratorius (DPV-H)",
+              "href": "/produkter/haeny/manuella-pumpar/dataloggare-dpv",
+              "width": 1000,
+              "height": 1000
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "columns",
+          "ratio": "40-60",
+          "left": [
+            {
+              "type": "image",
+              "src": "/assets/img/ahlm-st-5-2.webp",
+              "alt": "Silosai",
+              "width": 1502,
+              "height": 897
+            }
+          ],
+          "right": [
+            {
+              "type": "heading",
+              "level": 2,
+              "text": "Silosai"
+            },
+            {
+              "type": "text",
+              "html": "Dažnai verta siurblį derinti su silosu, kad būtų užtikrintas tolygus ir nepertraukiamas medžiagos tiekimas. Silosas sumažina didmaišių tvarkymą, pagerina darbo eigą ir gali būti aprūpintas sraigtiniu konvejeriu automatiniam tiekimui į siurblį. Spustelėkite „Skaityti daugiau“, kad pamatytumėte mūsų rekomenduojamo siloso pavyzdį."
+            },
+            {
+              "type": "button",
+              "kind": "link",
+              "text": "Skaityti daugiau",
+              "href": "/produkter/ahlm/st-5"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "alt": "HÄNY: 6 paveikslėlis",
+          "width": 1100,
+          "height": 355,
+          "src": "/assets/img/haeny-6.webp",
+          "inline": true,
+          "maxWidth": 190,
+          "align": "right"
+        }
+      ],
+      "menu": [
+        {
+          "title": "Kompletiniai įrenginiai",
+          "items": [
+            {
+              "title": "Kompaktiški įrenginiai (IC)",
+              "href": "/produkter/haeny/manuella-pumpar",
+              "image": "/assets/img/haeny-tile-ic.webp"
+            },
+            {
+              "title": "Automatinė įranga (FAIC)",
+              "href": "/produkter/haeny/automatiska-pumpar",
+              "image": "/assets/img/haeny-tile-faic.webp"
+            },
+            {
+              "title": "Kompaktiški PU įrenginiai (CCP)",
+              "href": "/produkter/haeny/manuella-pumpar/ic-325-ccp",
+              "image": "/assets/img/haeny-tile-ccp.webp"
+            },
+            {
+              "title": "Mobilieji įrenginiai (MCM)",
+              "href": "/produkter/haeny/mobila-anlaggningar",
+              "image": "/assets/img/haeny-tile-mcm.webp"
+            }
+          ]
+        },
+        {
+          "title": "Dalys",
+          "items": [
+            {
+              "title": "Maišyklės (HCM)",
+              "href": "/produkter/haeny/blandare",
+              "image": "/assets/img/haeny-tile-hcm.webp"
+            },
+            {
+              "title": "Maišikliai (HRW)",
+              "href": "/produkter/haeny/omrorare",
+              "image": "/assets/img/haeny-tile-hrw.webp"
+            },
+            {
+              "title": "Injektavimo siurbliai (ZMP)",
+              "href": "/produkter/haeny/injekteringspumpar",
+              "image": "/assets/img/haeny-tile-zmp.webp"
+            }
+          ]
+        },
+        {
+          "title": "Registravimas ir valdymas",
+          "items": [
+            {
+              "title": "Duomenų registratorius (DPV-H)",
+              "href": "/produkter/haeny/manuella-pumpar/dataloggare-dpv",
+              "image": "/assets/img/haeny-tile-dpv.webp"
+            }
+          ]
+        }
+      ],
+      "published": true
+    },
+    "lv": {
+      "title": "HÄNY",
+      "h1": "HÄNY",
+      "description": "Häny ražo injektēšanas un maisīšanas sistēmas. Apskatiet viņu brošūru zemāk vai sazinieties ar mums, lai uzzinātu vairāk.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "HÄNY",
+          "width": 832,
+          "height": 143,
+          "src": "/assets/img/haeny-1.webp"
+        },
+        {
+          "type": "text",
+          "html": "Häny ražo injektēšanas un maisīšanas sistēmas. Apskatiet viņu brošūru zemāk vai <a href=\"/kontakta-oss\">sazinieties ar mums</a>, lai uzzinātu vairāk."
+        },
+        {
+          "type": "text",
+          "html": "Häny sāka kā plūsmas speciālisti: kā šķidrumi pārvietojas caurulēs, vārstos un sūkņos. Šīs zināšanas ir radījušas modernus sūkņus un sistēmas ūdenim — no dzeramā ūdens līdz notekūdeņiem — un turbīnas, kas izmanto ūdens plūsmu enerģiju. Tā pati pieredze ir atrodama injektēšanas un maisīšanas iekārtās.",
+          "tag": "haeny-story"
+        },
+        {
+          "type": "text",
+          "html": "Uzņēmums dibināts 1875. gadā un ir viens no vecākajiem vārdiem sūkņu tehnoloģijā. Häny nav lētākā iespēja tirgū, taču tā ir viena no tām, kas kalpo visilgāk. Ir Häny sūkņi, kas darbojas jau vairākus gadu desmitus, un ar pienācīgu rūpību, tas ir, tīrīšanu un apkopi, Häny sūknis kalpo ļoti ilgi.",
+          "tag": "haeny-story"
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Galvenā brošūra (produktu portfelis)",
+          "href": "/assets/docs/haeny-portfolio-brochure-en.pdf"
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Brošūra (pārskats)",
+          "href": "/assets/docs/haeny-ladda-ner-huvudbroschyr.pdf",
+          "driveId": "148ne9OMuPCzVDbmhU6CGsrj5TFyFTViG"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Pilnas iekārtas",
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 4,
+          "square": true,
+          "more": false,
+          "items": [
+            {
+              "title": "Kompaktās iekārtas (IC)",
+              "image": "/assets/img/haeny-tile-ic.webp",
+              "alt": "Kompaktās iekārtas (IC)",
+              "href": "/produkter/haeny/manuella-pumpar",
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "Automātiskās iekārtas (FAIC)",
+              "image": "/assets/img/haeny-tile-faic.webp",
+              "alt": "Automātiskās iekārtas (FAIC)",
+              "href": "/produkter/haeny/automatiska-pumpar",
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "Kompaktās PU iekārtas (CCP)",
+              "image": "/assets/img/haeny-tile-ccp.webp",
+              "alt": "Kompaktās PU iekārtas (CCP)",
+              "href": "/produkter/haeny/manuella-pumpar/ic-325-ccp",
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "Mobilās iekārtas (MCM)",
+              "image": "/assets/img/haeny-tile-mcm.webp",
+              "alt": "Mobilās iekārtas (MCM)",
+              "href": "/produkter/haeny/mobila-anlaggningar",
+              "width": 1000,
+              "height": 1000
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Komponenti",
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 3,
+          "square": true,
+          "more": false,
+          "items": [
+            {
+              "title": "Mikseri (HCM)",
+              "image": "/assets/img/haeny-tile-hcm.webp",
+              "alt": "Mikseri (HCM)",
+              "href": "/produkter/haeny/blandare",
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "Maisītāji (HRW)",
+              "image": "/assets/img/haeny-tile-hrw.webp",
+              "alt": "Maisītāji (HRW)",
+              "href": "/produkter/haeny/omrorare",
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "Injektēšanas sūkņi (ZMP)",
+              "image": "/assets/img/haeny-tile-zmp.webp",
+              "alt": "Injektēšanas sūkņi (ZMP)",
+              "href": "/produkter/haeny/injekteringspumpar",
+              "width": 1000,
+              "height": 1000
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Häny tehnoloģija"
+        },
+        {
+          "type": "columns",
+          "ratio": "40-60",
+          "left": [
+            {
+              "type": "image",
+              "alt": "HÄNY: 2. attēls",
+              "width": 744,
+              "height": 920,
+              "src": "/assets/img/haeny-tech-mixer.webp",
+              "caption": "Mikseris"
+            }
+          ],
+          "right": [
+            {
+              "type": "heading",
+              "level": 3,
+              "text": "Maisīšanas princips"
+            },
+            {
+              "type": "text",
+              "html": "Efektīvai cementa, īpaši smalka cementa un bentonīta maisīšanai Häny mikseri rada lielus bīdes spēkus ar ātrgaitas sūkņiem un unikālu virpuļa darbratu. Sūkņi 2–4 reizes minūtē cirkulē visu tvertnes saturu, radot ārkārtīgu turbulenci un efektīvu daļiņu atdalīšanu, kā arī nodrošinot pilnīgu hidratāciju."
+            },
+            {
+              "type": "text",
+              "html": "Šī intensīvā hidratācija nodrošina stabilu un viegli apstrādājamu suspensiju, arī grūti maisāmām piedevām. HCM mikseris novērš nepieciešamību bentonītu iepriekš mērcēt vai izmantot uzglabāšanas tvertnes."
+            },
+            {
+              "type": "related",
+              "title": "Skatīt produktu:",
+              "items": [
+                {
+                  "href": "/produkter/haeny/blandare"
+                }
+              ],
+              "tech": true
+            }
+          ]
+        },
+        {
+          "type": "columns",
+          "ratio": "40-60",
+          "left": [
+            {
+              "type": "image",
+              "alt": "HÄNY: 3. attēls",
+              "width": 599,
+              "height": 440,
+              "src": "/assets/img/haeny-3.webp",
+              "caption": "Darbrats"
+            }
+          ],
+          "right": [
+            {
+              "type": "heading",
+              "level": 3,
+              "text": "Darbrats"
+            },
+            {
+              "type": "text",
+              "html": "Häny virpuļa darbratam ir liela caurlaidspēja (15–80 mm) un tas ir ārkārtīgi nodilumizturīgs, kas samazina nodilumu un aizsērēšanu. Modeļi HCM 300 un HCM 600 var maisīt smilti saturošas injektēšanas javas ar daļiņu izmēru līdz 8 mm. Bezapkopes vārpstas blīvējums bez bojājumiem iztur sauso darbību vairākas minūtes."
+            }
+          ]
+        },
+        {
+          "type": "columns",
+          "ratio": "40-60",
+          "left": [
+            {
+              "type": "image",
+              "alt": "Maisītājs",
+              "width": 782,
+              "height": 921,
+              "src": "/assets/img/haeny-tech-agitator.webp",
+              "caption": "Maisītājs"
+            }
+          ],
+          "right": [
+            {
+              "type": "heading",
+              "level": 3,
+              "text": "Maisītājs"
+            },
+            {
+              "type": "text",
+              "html": "Maisītājs tiek izmantots kā starpkrātuve starp mikseri un sūkni. Lēni rotējošajā maisītājā injektēšanas masa tiek homogenizēta un visi gaisa burbuļi tiek izvadīti, lai sūknis varētu strādāt nepārtraukti. Ar līmeņa devējiem (opcija) iespējama pilnībā automātiska darbība."
+            },
+            {
+              "type": "related",
+              "title": "Skatīt produktu:",
+              "items": [
+                {
+                  "href": "/produkter/haeny/omrorare"
+                }
+              ],
+              "tech": true
+            }
+          ]
+        },
+        {
+          "type": "columns",
+          "ratio": "40-60",
+          "left": [
+            {
+              "type": "image",
+              "alt": "HÄNY: 4. attēls",
+              "width": 894,
+              "height": 786,
+              "src": "/assets/img/haeny-tech-plunger.webp",
+              "caption": "Vienkāršs (ZMP 610) un dubults sūkņa modulis (ZMP 625)",
+              "hint": "Virziet peli virs ZMP 610 punkta (vai pieskarieties tam), lai redzētu sūkņa moduļa griezumu.",
+              "callouts": [
+                {
+                  "x": 35,
+                  "y": 50,
+                  "lx": 48.7,
+                  "ly": 98.8,
+                  "dir": "r",
+                  "v": "u",
+                  "iw": 35.5,
+                  "image": "/assets/img/haeny-4.webp",
+                  "text": "Griezums"
+                }
+              ]
+            }
+          ],
+          "right": [
+            {
+              "type": "heading",
+              "level": 3,
+              "text": "Plunžera sūkņu sistēma"
+            },
+            {
+              "type": "text",
+              "html": "Atšķirībā no virzuļsūkņiem, plunžera sūkņiem nav vajadzīgas cieši pieguļošas detaļas, piemēram, cilindri vai precīzi virzuļa blīvējumi. Plunžeris tiek noblīvēts ar bezapkopes blīvējumu, un ZMP 700 sērijas sūkņiem var uzstādīt dažādu diametru plunžerus, lai elastīgi pielāgotu spiedienu un caurplūdi."
+            },
+            {
+              "type": "heading",
+              "level": 3,
+              "text": "Vārsti"
+            },
+            {
+              "type": "text",
+              "html": "Injektēšanas vārsti ir izgatavoti no nodilumizturīga leģētā tērauda ar apgriežamiem vārsta ligzdām. Hidrauliskā sistēma nodrošina ātru iesūkšanas gājienu, kas uztur vārstus tīrus, izskalojot smagās daļiņas. Sūkņi apstrādā arī suspensijas ar zemu ūdens/cementa attiecību un augstu smilts saturu."
+            },
+            {
+              "type": "related",
+              "title": "Skatīt produktu:",
+              "items": [
+                {
+                  "href": "/produkter/haeny/injekteringspumpar"
+                }
+              ],
+              "tech": true
+            }
+          ]
+        },
+        {
+          "type": "columns",
+          "ratio": "40-60",
+          "left": [
+            {
+              "type": "image",
+              "alt": "HÄNY: 5. attēls",
+              "width": 649,
+              "height": 490,
+              "src": "/assets/img/haeny-5.webp",
+              "caption": "Vadības bloks caurplūdes kontrolei"
+            }
+          ],
+          "right": [
+            {
+              "type": "heading",
+              "level": 3,
+              "text": "Automātiska spiediena kontrole"
+            },
+            {
+              "type": "text",
+              "html": "ZMP 700 sūkņiem ir vārsti precīzai maksimālā spiediena iestatīšanai. Sasniedzot spiedienu, caurplūde tiek automātiski pielāgota vai apturēta, vienlaikus saglabājot spiedienu. Dažus modeļus var iestatīt no pat 1 bar, kas ļauj droši injektēt jutīgos grunts slāņos."
+            },
+            {
+              "type": "heading",
+              "level": 3,
+              "text": "Caurplūdes kontrole"
+            },
+            {
+              "type": "text",
+              "html": "Iebūvēta caurplūdes regulēšana ļauj iestatīt maksimālo caurplūdi, kas ļauj lēni injektēt mīkstā gruntī bez segregācijas vai jaunu tukšumu veidošanās. Kopā ar spiediena kontroli sūkņus var izmantot arī caurlaidības testiem."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Reģistrēšana un vadība",
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 4,
+          "square": true,
+          "more": false,
+          "items": [
+            {
+              "title": "Datu reģistrators (DPV-H)",
+              "image": "/assets/img/haeny-tile-dpv.webp",
+              "alt": "Datu reģistrators (DPV-H)",
+              "href": "/produkter/haeny/manuella-pumpar/dataloggare-dpv",
+              "width": 1000,
+              "height": 1000
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "columns",
+          "ratio": "40-60",
+          "left": [
+            {
+              "type": "image",
+              "src": "/assets/img/ahlm-st-5-2.webp",
+              "alt": "Silosi",
+              "width": 1502,
+              "height": 897
+            }
+          ],
+          "right": [
+            {
+              "type": "heading",
+              "level": 2,
+              "text": "Silosi"
+            },
+            {
+              "type": "text",
+              "html": "Bieži vien ir lietderīgi sūkni apvienot ar silosu, lai nodrošinātu vienmērīgu un nepārtrauktu materiāla padevi. Siloss samazina lielo maisu apstrādi, uzlabo darba plūsmu un var tikt aprīkots ar šneka konveijeru automātiskai padevei sūknim. Noklikšķiniet uz «Lasīt vairāk», lai redzētu mūsu ieteiktā silosa piemēru."
+            },
+            {
+              "type": "button",
+              "kind": "link",
+              "text": "Lasīt vairāk",
+              "href": "/produkter/ahlm/st-5"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "alt": "HÄNY: 6. attēls",
+          "width": 1100,
+          "height": 355,
+          "src": "/assets/img/haeny-6.webp",
+          "inline": true,
+          "maxWidth": 190,
+          "align": "right"
+        }
+      ],
+      "menu": [
+        {
+          "title": "Pilnas iekārtas",
+          "items": [
+            {
+              "title": "Kompaktās iekārtas (IC)",
+              "href": "/produkter/haeny/manuella-pumpar",
+              "image": "/assets/img/haeny-tile-ic.webp"
+            },
+            {
+              "title": "Automātiskās iekārtas (FAIC)",
+              "href": "/produkter/haeny/automatiska-pumpar",
+              "image": "/assets/img/haeny-tile-faic.webp"
+            },
+            {
+              "title": "Kompaktās PU iekārtas (CCP)",
+              "href": "/produkter/haeny/manuella-pumpar/ic-325-ccp",
+              "image": "/assets/img/haeny-tile-ccp.webp"
+            },
+            {
+              "title": "Mobilās iekārtas (MCM)",
+              "href": "/produkter/haeny/mobila-anlaggningar",
+              "image": "/assets/img/haeny-tile-mcm.webp"
+            }
+          ]
+        },
+        {
+          "title": "Komponenti",
+          "items": [
+            {
+              "title": "Mikseri (HCM)",
+              "href": "/produkter/haeny/blandare",
+              "image": "/assets/img/haeny-tile-hcm.webp"
+            },
+            {
+              "title": "Maisītāji (HRW)",
+              "href": "/produkter/haeny/omrorare",
+              "image": "/assets/img/haeny-tile-hrw.webp"
+            },
+            {
+              "title": "Injektēšanas sūkņi (ZMP)",
+              "href": "/produkter/haeny/injekteringspumpar",
+              "image": "/assets/img/haeny-tile-zmp.webp"
+            }
+          ]
+        },
+        {
+          "title": "Reģistrēšana un vadība",
+          "items": [
+            {
+              "title": "Datu reģistrators (DPV-H)",
+              "href": "/produkter/haeny/manuella-pumpar/dataloggare-dpv",
+              "image": "/assets/img/haeny-tile-dpv.webp"
+            }
+          ]
+        }
+      ],
+      "published": true
+    },
+    "et": {
+      "title": "HÄNY",
+      "h1": "HÄNY",
+      "description": "Häny toodab injekteerimis- ja segamissüsteeme. Vaata nende brošüüri allpool või võta meiega ühendust lisateabe saamiseks.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "HÄNY",
+          "width": 832,
+          "height": 143,
+          "src": "/assets/img/haeny-1.webp"
+        },
+        {
+          "type": "text",
+          "html": "Häny toodab injekteerimis- ja segamissüsteeme. Vaata nende brošüüri allpool või <a href=\"/kontakta-oss\">võta meiega ühendust</a> lisateabe saamiseks."
+        },
+        {
+          "type": "text",
+          "html": "Häny alustas voolamise spetsialistina: kuidas vedelikud liiguvad torudes, ventiilides ja pumpades. Need teadmised on viinud arenenud pumpade ja süsteemideni veele – joogiveest reoveeni – ning turbiinideni, mis kasutavad ära veevoolude energiat. Sama oskusteavet leiab ka injekteerimis- ja segamisseadmetest.",
+          "tag": "haeny-story"
+        },
+        {
+          "type": "text",
+          "html": "Ettevõte asutati 1875. aastal ja see on üks vanimaid nimesid pumbatehnoloogias. Häny ei ole turu odavaim valik, kuid see on üks neist, mis peavad kõige kauem vastu. On Häny pumpasid, mis on töötanud mitu aastakümmet, ning õige hoolitsuse ehk puhastuse ja hoolduse korral peab Häny pump väga kaua vastu.",
+          "tag": "haeny-story"
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Põhibrošüür (tootevalik)",
+          "href": "/assets/docs/haeny-portfolio-brochure-en.pdf"
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Brošüür (ülevaade)",
+          "href": "/assets/docs/haeny-ladda-ner-huvudbroschyr.pdf",
+          "driveId": "148ne9OMuPCzVDbmhU6CGsrj5TFyFTViG"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Täiskomplektsed seadmed",
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 4,
+          "square": true,
+          "more": false,
+          "items": [
+            {
+              "title": "Kompaktsed jaamad (IC)",
+              "image": "/assets/img/haeny-tile-ic.webp",
+              "alt": "Kompaktsed jaamad (IC)",
+              "href": "/produkter/haeny/manuella-pumpar",
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "Automaatjaamad (FAIC)",
+              "image": "/assets/img/haeny-tile-faic.webp",
+              "alt": "Automaatjaamad (FAIC)",
+              "href": "/produkter/haeny/automatiska-pumpar",
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "Kompaktsed PU-jaamad (CCP)",
+              "image": "/assets/img/haeny-tile-ccp.webp",
+              "alt": "Kompaktsed PU-jaamad (CCP)",
+              "href": "/produkter/haeny/manuella-pumpar/ic-325-ccp",
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "Mobiilsed jaamad (MCM)",
+              "image": "/assets/img/haeny-tile-mcm.webp",
+              "alt": "Mobiilsed jaamad (MCM)",
+              "href": "/produkter/haeny/mobila-anlaggningar",
+              "width": 1000,
+              "height": 1000
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Osad",
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 3,
+          "square": true,
+          "more": false,
+          "items": [
+            {
+              "title": "Segistid (HCM)",
+              "image": "/assets/img/haeny-tile-hcm.webp",
+              "alt": "Segistid (HCM)",
+              "href": "/produkter/haeny/blandare",
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "Segurid (HRW)",
+              "image": "/assets/img/haeny-tile-hrw.webp",
+              "alt": "Segurid (HRW)",
+              "href": "/produkter/haeny/omrorare",
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "Injekteerimispumbad (ZMP)",
+              "image": "/assets/img/haeny-tile-zmp.webp",
+              "alt": "Injekteerimispumbad (ZMP)",
+              "href": "/produkter/haeny/injekteringspumpar",
+              "width": 1000,
+              "height": 1000
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Häny tehnoloogia"
+        },
+        {
+          "type": "columns",
+          "ratio": "40-60",
+          "left": [
+            {
+              "type": "image",
+              "alt": "HÄNY: pilt 2",
+              "width": 744,
+              "height": 920,
+              "src": "/assets/img/haeny-tech-mixer.webp",
+              "caption": "Segisti"
+            }
+          ],
+          "right": [
+            {
+              "type": "heading",
+              "level": 3,
+              "text": "Segamispõhimõte"
+            },
+            {
+              "type": "text",
+              "html": "Tsemendi, ülipeene tsemendi ja bentoniidi tõhusaks segamiseks tekitavad Häny segistid kiirelt pöörlevate pumpade ja ainulaadse keeriserootori abil suuri nihkejõude. Pumbad ringlevad kogu paagi sisu 2–4 korda minutis, tekitades äärmise turbulentsi ja tõhusa osakeste eraldumise ning tagades täieliku hüdratatsiooni."
+            },
+            {
+              "type": "text",
+              "html": "See intensiivne hüdratatsioon annab stabiilse ja hästi töödeldava suspensiooni isegi raskesti segatavate lisandite puhul. HCM-segisti välistab vajaduse bentoniiti eelnevalt leotada või kasutada hoiupaake."
+            },
+            {
+              "type": "related",
+              "title": "Vaata toodet:",
+              "items": [
+                {
+                  "href": "/produkter/haeny/blandare"
+                }
+              ],
+              "tech": true
+            }
+          ]
+        },
+        {
+          "type": "columns",
+          "ratio": "40-60",
+          "left": [
+            {
+              "type": "image",
+              "alt": "HÄNY: pilt 3",
+              "width": 599,
+              "height": 440,
+              "src": "/assets/img/haeny-3.webp",
+              "caption": "Tiivik"
+            }
+          ],
+          "right": [
+            {
+              "type": "heading",
+              "level": 3,
+              "text": "Tiivik"
+            },
+            {
+              "type": "text",
+              "html": "Häny keeriserootoril on suur läbilaskevõime (15–80 mm) ja see on äärmiselt kulumiskindel, mis vähendab kulumist ja ummistumist. Mudelid HCM 300 ja HCM 600 suudavad segada liivasisaldusega injekteerimissegusid osakeste suurusega kuni 8 mm. Hooldusvaba võllitihend talub kuivalt töötamist mitu minutit ilma kahjustusteta."
+            }
+          ]
+        },
+        {
+          "type": "columns",
+          "ratio": "40-60",
+          "left": [
+            {
+              "type": "image",
+              "alt": "Segur",
+              "width": 782,
+              "height": 921,
+              "src": "/assets/img/haeny-tech-agitator.webp",
+              "caption": "Segur"
+            }
+          ],
+          "right": [
+            {
+              "type": "heading",
+              "level": 3,
+              "text": "Segur"
+            },
+            {
+              "type": "text",
+              "html": "Segurit kasutatakse vahemahutina segisti ja pumba vahel. Aeglaselt pöörlevas segus homogeniseeritakse injekteerimismass ja eemaldatakse võimalikud õhumullid, et pump saaks töötada pidevalt. Tasemeandurite (lisavarustus) abil saab töötada täisautomaatselt."
+            },
+            {
+              "type": "related",
+              "title": "Vaata toodet:",
+              "items": [
+                {
+                  "href": "/produkter/haeny/omrorare"
+                }
+              ],
+              "tech": true
+            }
+          ]
+        },
+        {
+          "type": "columns",
+          "ratio": "40-60",
+          "left": [
+            {
+              "type": "image",
+              "alt": "HÄNY: pilt 4",
+              "width": 894,
+              "height": 786,
+              "src": "/assets/img/haeny-tech-plunger.webp",
+              "caption": "Üksik- (ZMP 610) ja kaksikpumbamoodul (ZMP 625)",
+              "hint": "Hoia kursorit ZMP 610 punkti kohal (või puuduta seda), et näha pumbamooduli lõiget.",
+              "callouts": [
+                {
+                  "x": 35,
+                  "y": 50,
+                  "lx": 48.7,
+                  "ly": 98.8,
+                  "dir": "r",
+                  "v": "u",
+                  "iw": 35.5,
+                  "image": "/assets/img/haeny-4.webp",
+                  "text": "Lõige"
+                }
+              ]
+            }
+          ],
+          "right": [
+            {
+              "type": "heading",
+              "level": 3,
+              "text": "Plunžerpumpade süsteem"
+            },
+            {
+              "type": "text",
+              "html": "Erinevalt kolbpumpadest ei vaja plunžerpumbad tihedalt istuvaid osi, nagu silindreid või täpseid kolvitihendeid. Plunžer tihendatakse hooldusvaba tihendiga ning ZMP 700 seeria pumpadele saab paigaldada erineva läbimõõduga plunžereid, et rõhku ja vooluhulka paindlikult kohandada."
+            },
+            {
+              "type": "heading",
+              "level": 3,
+              "text": "Ventiilid"
+            },
+            {
+              "type": "text",
+              "html": "Injekteerimisventiilid on valmistatud kulumiskindlast legeerterasest pööratavate ventiilipesadega. Hüdrosüsteem tagab kiire imitakti, mis hoiab ventiilid puhtana, uhtudes raskeid osakesi minema. Pumbad töötlevad ka madala vee ja tsemendi suhtega ning suure liivasisaldusega suspensioone."
+            },
+            {
+              "type": "related",
+              "title": "Vaata toodet:",
+              "items": [
+                {
+                  "href": "/produkter/haeny/injekteringspumpar"
+                }
+              ],
+              "tech": true
+            }
+          ]
+        },
+        {
+          "type": "columns",
+          "ratio": "40-60",
+          "left": [
+            {
+              "type": "image",
+              "alt": "HÄNY: pilt 5",
+              "width": 649,
+              "height": 490,
+              "src": "/assets/img/haeny-5.webp",
+              "caption": "Juhtplokk vooluhulga kontrolliks"
+            }
+          ],
+          "right": [
+            {
+              "type": "heading",
+              "level": 3,
+              "text": "Automaatne rõhukontroll"
+            },
+            {
+              "type": "text",
+              "html": "ZMP 700 pumpadel on ventiilid maksimaalse rõhu täpseks seadmiseks. Rõhu saavutamisel reguleeritakse vooluhulka automaatselt või peatatakse see, säilitades samal ajal rõhu. Mõnda mudelit saab seada juba alates 1 bar, mis võimaldab ohutut injekteerimist tundlikes pinnasekihtides."
+            },
+            {
+              "type": "heading",
+              "level": 3,
+              "text": "Vooluhulga kontroll"
+            },
+            {
+              "type": "text",
+              "html": "Sisseehitatud vooluhulga reguleerimine võimaldab seada maksimaalse vooluhulga, mis lubab pehmes pinnases aeglast injekteerimist ilma segregatsiooni või uute tühikuteta. Koos rõhukontrolliga saab pumpasid kasutada ka läbilaskvuskatseteks."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Registreerimine ja juhtimine",
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 4,
+          "square": true,
+          "more": false,
+          "items": [
+            {
+              "title": "Andmelogija (DPV-H)",
+              "image": "/assets/img/haeny-tile-dpv.webp",
+              "alt": "Andmelogija (DPV-H)",
+              "href": "/produkter/haeny/manuella-pumpar/dataloggare-dpv",
+              "width": 1000,
+              "height": 1000
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "columns",
+          "ratio": "40-60",
+          "left": [
+            {
+              "type": "image",
+              "src": "/assets/img/ahlm-st-5-2.webp",
+              "alt": "Silod",
+              "width": 1502,
+              "height": 897
+            }
+          ],
+          "right": [
+            {
+              "type": "heading",
+              "level": 2,
+              "text": "Silod"
+            },
+            {
+              "type": "text",
+              "html": "Sageli on hea mõte kombineerida pump siloga, et tagada ühtlane ja pidev materjali etteanne. Silo vähendab suurkottide käsitsemist, parandab töövoogu ja seda saab varustada kruvikonveieriga automaatseks söötmiseks pumbale. Klõpsa nuppu „Loe edasi“, et näha meie soovitatava silo näidet."
+            },
+            {
+              "type": "button",
+              "kind": "link",
+              "text": "Loe edasi",
+              "href": "/produkter/ahlm/st-5"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "alt": "HÄNY: pilt 6",
+          "width": 1100,
+          "height": 355,
+          "src": "/assets/img/haeny-6.webp",
+          "inline": true,
+          "maxWidth": 190,
+          "align": "right"
+        }
+      ],
+      "menu": [
+        {
+          "title": "Täiskomplektsed seadmed",
+          "items": [
+            {
+              "title": "Kompaktsed jaamad (IC)",
+              "href": "/produkter/haeny/manuella-pumpar",
+              "image": "/assets/img/haeny-tile-ic.webp"
+            },
+            {
+              "title": "Automaatjaamad (FAIC)",
+              "href": "/produkter/haeny/automatiska-pumpar",
+              "image": "/assets/img/haeny-tile-faic.webp"
+            },
+            {
+              "title": "Kompaktsed PU-jaamad (CCP)",
+              "href": "/produkter/haeny/manuella-pumpar/ic-325-ccp",
+              "image": "/assets/img/haeny-tile-ccp.webp"
+            },
+            {
+              "title": "Mobiilsed jaamad (MCM)",
+              "href": "/produkter/haeny/mobila-anlaggningar",
+              "image": "/assets/img/haeny-tile-mcm.webp"
+            }
+          ]
+        },
+        {
+          "title": "Osad",
+          "items": [
+            {
+              "title": "Segistid (HCM)",
+              "href": "/produkter/haeny/blandare",
+              "image": "/assets/img/haeny-tile-hcm.webp"
+            },
+            {
+              "title": "Segurid (HRW)",
+              "href": "/produkter/haeny/omrorare",
+              "image": "/assets/img/haeny-tile-hrw.webp"
+            },
+            {
+              "title": "Injekteerimispumbad (ZMP)",
+              "href": "/produkter/haeny/injekteringspumpar",
+              "image": "/assets/img/haeny-tile-zmp.webp"
+            }
+          ]
+        },
+        {
+          "title": "Registreerimine ja juhtimine",
+          "items": [
+            {
+              "title": "Andmelogija (DPV-H)",
+              "href": "/produkter/haeny/manuella-pumpar/dataloggare-dpv",
+              "image": "/assets/img/haeny-tile-dpv.webp"
+            }
+          ]
+        }
+      ],
+      "published": true
+    },
+    "ru": {
+      "title": "HÄNY",
+      "h1": "HÄNY",
+      "description": "Häny производит системы инъектирования и смешивания. Ознакомьтесь с их брошюрой ниже или свяжитесь с нами для получения дополнительной информации.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "HÄNY",
+          "width": 832,
+          "height": 143,
+          "src": "/assets/img/haeny-1.webp"
+        },
+        {
+          "type": "text",
+          "html": "Häny производит системы инъектирования и смешивания. Ознакомьтесь с их брошюрой ниже или <a href=\"/kontakta-oss\">свяжитесь с нами</a> для получения дополнительной информации."
+        },
+        {
+          "type": "text",
+          "html": "Häny начинала как специалист по течению жидкостей: как жидкости движутся в трубах, клапанах и насосах. Эти знания привели к созданию современных насосов и систем для воды — от питьевой до сточной — и турбин, использующих энергию водных потоков. Тот же опыт заложен и в инъекционном и смесительном оборудовании.",
+          "tag": "haeny-story"
+        },
+        {
+          "type": "text",
+          "html": "Компания основана в 1875 году и является одним из старейших имён в насосной технике. Häny — не самый дешёвый вариант на рынке, но один из самых долговечных. Некоторые насосы Häny работают уже несколько десятилетий, а при правильном уходе, то есть очистке и обслуживании, насос Häny служит очень долго.",
+          "tag": "haeny-story"
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Основная брошюра (портфель продукции)",
+          "href": "/assets/docs/haeny-portfolio-brochure-en.pdf"
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Брошюра (обзор)",
+          "href": "/assets/docs/haeny-ladda-ner-huvudbroschyr.pdf",
+          "driveId": "148ne9OMuPCzVDbmhU6CGsrj5TFyFTViG"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Комплектные установки",
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 4,
+          "square": true,
+          "more": false,
+          "items": [
+            {
+              "title": "Компактные установки (IC)",
+              "image": "/assets/img/haeny-tile-ic.webp",
+              "alt": "Компактные установки (IC)",
+              "href": "/produkter/haeny/manuella-pumpar",
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "Автоматические установки (FAIC)",
+              "image": "/assets/img/haeny-tile-faic.webp",
+              "alt": "Автоматические установки (FAIC)",
+              "href": "/produkter/haeny/automatiska-pumpar",
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "Компактные ПУ-установки (CCP)",
+              "image": "/assets/img/haeny-tile-ccp.webp",
+              "alt": "Компактные ПУ-установки (CCP)",
+              "href": "/produkter/haeny/manuella-pumpar/ic-325-ccp",
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "Мобильные установки (MCM)",
+              "image": "/assets/img/haeny-tile-mcm.webp",
+              "alt": "Мобильные установки (MCM)",
+              "href": "/produkter/haeny/mobila-anlaggningar",
+              "width": 1000,
+              "height": 1000
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Компоненты",
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 3,
+          "square": true,
+          "more": false,
+          "items": [
+            {
+              "title": "Смесители (HCM)",
+              "image": "/assets/img/haeny-tile-hcm.webp",
+              "alt": "Смесители (HCM)",
+              "href": "/produkter/haeny/blandare",
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "Мешалки (HRW)",
+              "image": "/assets/img/haeny-tile-hrw.webp",
+              "alt": "Мешалки (HRW)",
+              "href": "/produkter/haeny/omrorare",
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "Инъекционные насосы (ZMP)",
+              "image": "/assets/img/haeny-tile-zmp.webp",
+              "alt": "Инъекционные насосы (ZMP)",
+              "href": "/produkter/haeny/injekteringspumpar",
+              "width": 1000,
+              "height": 1000
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Технологии Häny"
+        },
+        {
+          "type": "columns",
+          "ratio": "40-60",
+          "left": [
+            {
+              "type": "image",
+              "alt": "HÄNY: изображение 2",
+              "width": 744,
+              "height": 920,
+              "src": "/assets/img/haeny-tech-mixer.webp",
+              "caption": "Смеситель"
+            }
+          ],
+          "right": [
+            {
+              "type": "heading",
+              "level": 3,
+              "text": "Принцип смешивания"
+            },
+            {
+              "type": "text",
+              "html": "Для эффективного смешивания цемента, ультратонкого цемента и бентонита смесители Häny создают высокие сдвиговые усилия с помощью высокооборотных насосов и уникального вихревого импеллера. Насосы прогоняют всё содержимое бака 2–4 раза в минуту, создавая сильнейшую турбулентность и эффективное разделение частиц и обеспечивая полную гидратацию."
+            },
+            {
+              "type": "text",
+              "html": "Эта интенсивная гидратация даёт стабильную и удобную в работе суспензию даже для трудно смешиваемых добавок. Смеситель HCM устраняет необходимость предварительного замачивания бентонита и использования накопительных баков."
+            },
+            {
+              "type": "related",
+              "title": "Смотреть продукт:",
+              "items": [
+                {
+                  "href": "/produkter/haeny/blandare"
+                }
+              ],
+              "tech": true
+            }
+          ]
+        },
+        {
+          "type": "columns",
+          "ratio": "40-60",
+          "left": [
+            {
+              "type": "image",
+              "alt": "HÄNY: изображение 3",
+              "width": 599,
+              "height": 440,
+              "src": "/assets/img/haeny-3.webp",
+              "caption": "Импеллер"
+            }
+          ],
+          "right": [
+            {
+              "type": "heading",
+              "level": 3,
+              "text": "Импеллер"
+            },
+            {
+              "type": "text",
+              "html": "Вихревой импеллер Häny имеет большую пропускную способность (15–80 мм) и чрезвычайно износостоек, что снижает износ и засорение. Модели HCM 300 и HCM 600 могут смешивать песчаные инъекционные растворы с размером частиц до 8 мм. Не требующее обслуживания уплотнение вала выдерживает работу всухую в течение нескольких минут без повреждений."
+            }
+          ]
+        },
+        {
+          "type": "columns",
+          "ratio": "40-60",
+          "left": [
+            {
+              "type": "image",
+              "alt": "Мешалка",
+              "width": 782,
+              "height": 921,
+              "src": "/assets/img/haeny-tech-agitator.webp",
+              "caption": "Мешалка"
+            }
+          ],
+          "right": [
+            {
+              "type": "heading",
+              "level": 3,
+              "text": "Мешалка"
+            },
+            {
+              "type": "text",
+              "html": "Мешалка используется как промежуточная ёмкость между смесителем и насосом. В медленно вращающейся мешалке инъекционная масса гомогенизируется, а все пузырьки воздуха удаляются, благодаря чему насос может работать непрерывно. С датчиками уровня (опция) возможна полностью автоматическая работа."
+            },
+            {
+              "type": "related",
+              "title": "Смотреть продукт:",
+              "items": [
+                {
+                  "href": "/produkter/haeny/omrorare"
+                }
+              ],
+              "tech": true
+            }
+          ]
+        },
+        {
+          "type": "columns",
+          "ratio": "40-60",
+          "left": [
+            {
+              "type": "image",
+              "alt": "HÄNY: изображение 4",
+              "width": 894,
+              "height": 786,
+              "src": "/assets/img/haeny-tech-plunger.webp",
+              "caption": "Одинарный (ZMP 610) и сдвоенный насосный модуль (ZMP 625)",
+              "hint": "Наведите курсор на точку на ZMP 610 (или коснитесь её), чтобы увидеть насосный модуль в разрезе.",
+              "callouts": [
+                {
+                  "x": 35,
+                  "y": 50,
+                  "lx": 48.7,
+                  "ly": 98.8,
+                  "dir": "r",
+                  "v": "u",
+                  "iw": 35.5,
+                  "image": "/assets/img/haeny-4.webp",
+                  "text": "В разрезе"
+                }
+              ]
+            }
+          ],
+          "right": [
+            {
+              "type": "heading",
+              "level": 3,
+              "text": "Система плунжерных насосов"
+            },
+            {
+              "type": "text",
+              "html": "В отличие от поршневых насосов, плунжерным насосам не нужны плотно подогнанные детали, такие как цилиндры или точные поршневые уплотнения. Плунжер уплотнён необслуживаемым уплотнением, а на насосы серии ZMP 700 можно устанавливать плунжеры разных диаметров для гибкой настройки давления и расхода."
+            },
+            {
+              "type": "heading",
+              "level": 3,
+              "text": "Клапаны"
+            },
+            {
+              "type": "text",
+              "html": "Инъекционные клапаны изготовлены из износостойкой легированной стали со съёмными (реверсивными) седлами. Гидравлическая система обеспечивает быстрый ход всасывания, который поддерживает клапаны чистыми, вымывая тяжёлые частицы. Насосы также работают с суспензиями с низким водоцементным отношением и высоким содержанием песка."
+            },
+            {
+              "type": "related",
+              "title": "Смотреть продукт:",
+              "items": [
+                {
+                  "href": "/produkter/haeny/injekteringspumpar"
+                }
+              ],
+              "tech": true
+            }
+          ]
+        },
+        {
+          "type": "columns",
+          "ratio": "40-60",
+          "left": [
+            {
+              "type": "image",
+              "alt": "HÄNY: изображение 5",
+              "width": 649,
+              "height": 490,
+              "src": "/assets/img/haeny-5.webp",
+              "caption": "Блок управления для контроля расхода"
+            }
+          ],
+          "right": [
+            {
+              "type": "heading",
+              "level": 3,
+              "text": "Автоматический контроль давления"
+            },
+            {
+              "type": "text",
+              "html": "Насосы ZMP 700 имеют клапаны для точной настройки максимального давления. При достижении давления расход автоматически корректируется или прекращается, а давление поддерживается. Некоторые модели можно настроить от 1 бар, что позволяет безопасно инъектировать в чувствительных формациях."
+            },
+            {
+              "type": "heading",
+              "level": 3,
+              "text": "Контроль расхода"
+            },
+            {
+              "type": "text",
+              "html": "Встроенная регулировка расхода позволяет задать максимальный расход, что даёт возможность медленно инъектировать в мягких грунтах без сегрегации и образования новых пустот. Вместе с контролем давления насосы можно использовать и для испытаний на проницаемость."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Регистрация и управление",
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 4,
+          "square": true,
+          "more": false,
+          "items": [
+            {
+              "title": "Регистратор данных (DPV-H)",
+              "image": "/assets/img/haeny-tile-dpv.webp",
+              "alt": "Регистратор данных (DPV-H)",
+              "href": "/produkter/haeny/manuella-pumpar/dataloggare-dpv",
+              "width": 1000,
+              "height": 1000
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "columns",
+          "ratio": "40-60",
+          "left": [
+            {
+              "type": "image",
+              "src": "/assets/img/ahlm-st-5-2.webp",
+              "alt": "Силосы",
+              "width": 1502,
+              "height": 897
+            }
+          ],
+          "right": [
+            {
+              "type": "heading",
+              "level": 2,
+              "text": "Силосы"
+            },
+            {
+              "type": "text",
+              "html": "Часто имеет смысл комбинировать насос с силосом, чтобы обеспечить равномерную и непрерывную подачу материала. Силос сокращает работу с биг-бэгами, улучшает рабочий процесс и может быть оснащён шнековым конвейером для автоматической подачи в насос. Нажмите «Подробнее», чтобы увидеть пример рекомендуемого нами силоса."
+            },
+            {
+              "type": "button",
+              "kind": "link",
+              "text": "Подробнее",
+              "href": "/produkter/ahlm/st-5"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "alt": "HÄNY: изображение 6",
+          "width": 1100,
+          "height": 355,
+          "src": "/assets/img/haeny-6.webp",
+          "inline": true,
+          "maxWidth": 190,
+          "align": "right"
+        }
+      ],
+      "menu": [
+        {
+          "title": "Комплектные установки",
+          "items": [
+            {
+              "title": "Компактные установки (IC)",
+              "href": "/produkter/haeny/manuella-pumpar",
+              "image": "/assets/img/haeny-tile-ic.webp"
+            },
+            {
+              "title": "Автоматические установки (FAIC)",
+              "href": "/produkter/haeny/automatiska-pumpar",
+              "image": "/assets/img/haeny-tile-faic.webp"
+            },
+            {
+              "title": "Компактные ПУ-установки (CCP)",
+              "href": "/produkter/haeny/manuella-pumpar/ic-325-ccp",
+              "image": "/assets/img/haeny-tile-ccp.webp"
+            },
+            {
+              "title": "Мобильные установки (MCM)",
+              "href": "/produkter/haeny/mobila-anlaggningar",
+              "image": "/assets/img/haeny-tile-mcm.webp"
+            }
+          ]
+        },
+        {
+          "title": "Компоненты",
+          "items": [
+            {
+              "title": "Смесители (HCM)",
+              "href": "/produkter/haeny/blandare",
+              "image": "/assets/img/haeny-tile-hcm.webp"
+            },
+            {
+              "title": "Мешалки (HRW)",
+              "href": "/produkter/haeny/omrorare",
+              "image": "/assets/img/haeny-tile-hrw.webp"
+            },
+            {
+              "title": "Инъекционные насосы (ZMP)",
+              "href": "/produkter/haeny/injekteringspumpar",
+              "image": "/assets/img/haeny-tile-zmp.webp"
+            }
+          ]
+        },
+        {
+          "title": "Регистрация и управление",
+          "items": [
+            {
+              "title": "Регистратор данных (DPV-H)",
+              "href": "/produkter/haeny/manuella-pumpar/dataloggare-dpv",
+              "image": "/assets/img/haeny-tile-dpv.webp"
+            }
+          ]
+        }
+      ],
+      "published": true
     }
   },
   "source": {

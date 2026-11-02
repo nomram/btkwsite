@@ -470,6 +470,470 @@
         }
       ],
       "published": true
+    },
+    "lt": {
+      "title": "TE360",
+      "h1": "TE360",
+      "description": "TE360: elegantiška žemo profilio konstrukcija; didelis galios ir svorio santykis; smūginė sistema su ASA; išėjimo galia: 11 kW; sukimo momentas: 2001 Nm; svoris: 107 kg",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "TEI Rock Drills logotipas",
+          "href": "/produkter/tei",
+          "width": 1920,
+          "height": 1117,
+          "src": "/assets/img/tei-2.webp"
+        },
+        {
+          "type": "image",
+          "alt": "TE360: 2 paveikslėlis",
+          "width": 1506,
+          "height": 1047,
+          "src": "/assets/img/tei-topphammare-te360-2.webp"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Elegantiška žemo profilio konstrukcija",
+            "Didelis galios ir svorio santykis",
+            "Smūginė sistema su ASA",
+            "Išėjimo galia: 11 kW",
+            "Sukimo momentas: 2001 Nm",
+            "Svoris: 107 kg"
+          ]
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Produkto lapas",
+          "href": "/assets/docs/tei-topphammare-te360-broschyr-eng.pdf",
+          "driveId": "1YZooP_TrAjICmCkjK8in0teGBQg09HM6"
+        },
+        {
+          "type": "datasheet",
+          "title": "Techniniai duomenys",
+          "tagline": "Hidraulinis viršutinio smūgio plaktukas",
+          "intro": [
+            "TE360 smūginėje sistemoje naudojama mūsų patentuota ASA technologija (Automatic Stroke Adjustment, automatinis smūgio reguliavimas). Didelis ASA sistemos dažnis ir sklandus veikimas pailgina viršutinio smūgio plaktuko tarnavimo laiką, todėl didėja našumas ir pelningumas. Du galios režimai leidžia tiksliai valdyti smūgio sistemos energiją ir dažnį.",
+            "Reversiniai sukimosi varikliai užtikrina efektyvų gręžimą ir sumažina gręžimo kolonos užstrigimo riziką. Žemas profilis leidžia gręžti prie pat sienų ir pasiekti ankštas vietas. Kompaktiškas dydis ir didelis galios ir svorio santykis daro TEI gręžimo mašinas unikalias rinkoje."
+          ],
+          "groups": [
+            {
+              "title": "Sukimasis",
+              "rows": [
+                {
+                  "label": "Sukimo momentas",
+                  "metric": "2000 Nm"
+                },
+                {
+                  "label": "Sukimosi debitas",
+                  "metric": "38 lpm"
+                },
+                {
+                  "label": "Sukimosi slėgis",
+                  "metric": "155 bar"
+                },
+                {
+                  "label": "Svoris",
+                  "metric": "107 kg"
+                },
+                {
+                  "label": "Apsukų skaičius",
+                  "metric": "250 rpm"
+                }
+              ]
+            },
+            {
+              "title": "Smūginė sistema",
+              "rows": [
+                {
+                  "label": "Išėjimo galia",
+                  "metric": "11 kW"
+                },
+                {
+                  "label": "Plaktuko debitas",
+                  "metric": "72 lpm"
+                },
+                {
+                  "label": "Plaktuko slėgis",
+                  "metric": "155 bar"
+                },
+                {
+                  "label": "Smūgių dažnis",
+                  "metric": "58 Hz"
+                }
+              ]
+            }
+          ],
+          "note": "TEI techniniai duomenys numato 40 % hidraulinės galios nuostolių."
+        },
+        {
+          "type": "related",
+          "title": "Tinkami stiebai",
+          "items": [
+            {
+              "href": "/produkter/tei/borrmaster/mem"
+            },
+            {
+              "href": "/produkter/tei/borrmaster/hem"
+            },
+            {
+              "href": "/produkter/tei/borrmaster/mph"
+            }
+          ],
+          "compat": true
+        }
+      ],
+      "published": true
+    },
+    "lv": {
+      "title": "TE360",
+      "h1": "TE360",
+      "description": "TE360: elegants zema profila dizains; augsta jaudas un svara attiecība; sitiena sistēma ar ASA; izejas jauda: 11 kW; griezes moments: 2001 Nm; svars: 107 kg",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "TEI Rock Drills logotips",
+          "href": "/produkter/tei",
+          "width": 1920,
+          "height": 1117,
+          "src": "/assets/img/tei-2.webp"
+        },
+        {
+          "type": "image",
+          "alt": "TE360: 2. attēls",
+          "width": 1506,
+          "height": 1047,
+          "src": "/assets/img/tei-topphammare-te360-2.webp"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Elegants zema profila dizains",
+            "Augsta jaudas un svara attiecība",
+            "Sitiena sistēma ar ASA",
+            "Izejas jauda: 11 kW",
+            "Griezes moments: 2001 Nm",
+            "Svars: 107 kg"
+          ]
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Produkta lapa",
+          "href": "/assets/docs/tei-topphammare-te360-broschyr-eng.pdf",
+          "driveId": "1YZooP_TrAjICmCkjK8in0teGBQg09HM6"
+        },
+        {
+          "type": "datasheet",
+          "title": "Tehniskie dati",
+          "tagline": "Hidrauliskais augšējā āmura urbis",
+          "intro": [
+            "TE360 sitiena sistēmā ir mūsu patentētā ASA tehnoloģija (Automatic Stroke Adjustment, automātiska sitiena regulēšana). ASA sistēmas augstā frekvence un vienmērīgā darbība pagarina augšējā āmura urbja kalpošanas laiku, nodrošinot augstāku ražību un labāku rentabilitāti. Divi jaudas režīmi ļauj precīzi kontrolēt sitiena sistēmas enerģiju un frekvenci.",
+            "Reversējamie rotācijas dzinēji nodrošina efektīvu urbšanu un samazina urbjstieņu virknes iestrēgšanas risku. Zemais profils ļauj urbt blakus sienām un piekļūt šaurām vietām. Kompaktais izmērs un augstā jaudas un svara attiecība padara TEI urbjmašīnas unikālas tirgū."
+          ],
+          "groups": [
+            {
+              "title": "Rotācija",
+              "rows": [
+                {
+                  "label": "Griezes moments",
+                  "metric": "2000 Nm"
+                },
+                {
+                  "label": "Rotācijas caurplūde",
+                  "metric": "38 lpm"
+                },
+                {
+                  "label": "Rotācijas spiediens",
+                  "metric": "155 bar"
+                },
+                {
+                  "label": "Svars",
+                  "metric": "107 kg"
+                },
+                {
+                  "label": "Apgriezieni",
+                  "metric": "250 rpm"
+                }
+              ]
+            },
+            {
+              "title": "Sitiena sistēma",
+              "rows": [
+                {
+                  "label": "Izejas jauda",
+                  "metric": "11 kW"
+                },
+                {
+                  "label": "Āmura caurplūde",
+                  "metric": "72 lpm"
+                },
+                {
+                  "label": "Āmura spiediens",
+                  "metric": "155 bar"
+                },
+                {
+                  "label": "Sitienu frekvence",
+                  "metric": "58 Hz"
+                }
+              ]
+            }
+          ],
+          "note": "TEI tehniskie dati paredz 40 % hidrauliskās jaudas zudumu."
+        },
+        {
+          "type": "related",
+          "title": "Piemērotie masti",
+          "items": [
+            {
+              "href": "/produkter/tei/borrmaster/mem"
+            },
+            {
+              "href": "/produkter/tei/borrmaster/hem"
+            },
+            {
+              "href": "/produkter/tei/borrmaster/mph"
+            }
+          ],
+          "compat": true
+        }
+      ],
+      "published": true
+    },
+    "et": {
+      "title": "TE360",
+      "h1": "TE360",
+      "description": "TE360: elegantne madalprofiilne konstruktsioon; kõrge võimsuse-kaalu suhe; löögisüsteem ASA-ga; väljundvõimsus: 11 kW; pöördemoment: 2001 Nm; kaal: 107 kg",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "TEI Rock Drills logo",
+          "href": "/produkter/tei",
+          "width": 1920,
+          "height": 1117,
+          "src": "/assets/img/tei-2.webp"
+        },
+        {
+          "type": "image",
+          "alt": "TE360: pilt 2",
+          "width": 1506,
+          "height": 1047,
+          "src": "/assets/img/tei-topphammare-te360-2.webp"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Elegantne madalprofiilne konstruktsioon",
+            "Kõrge võimsuse-kaalu suhe",
+            "Löögisüsteem ASA-ga",
+            "Väljundvõimsus: 11 kW",
+            "Pöördemoment: 2001 Nm",
+            "Kaal: 107 kg"
+          ]
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Tootleht",
+          "href": "/assets/docs/tei-topphammare-te360-broschyr-eng.pdf",
+          "driveId": "1YZooP_TrAjICmCkjK8in0teGBQg09HM6"
+        },
+        {
+          "type": "datasheet",
+          "title": "Tehnilised andmed",
+          "tagline": "Hüdrauliline ülavasar",
+          "intro": [
+            "TE360 löögisüsteemis on meie patenteeritud ASA-tehnoloogia (Automatic Stroke Adjustment, automaatne löögireguleerimine). ASA-süsteemi kõrge sagedus ja sujuv töö pikendavad ülavasara kasutusiga, tagades suurema tootlikkuse ja parema tasuvuse. Kaks võimsusrežiimi võimaldavad täpselt kontrollida löögisüsteemi energiat ja sagedust.",
+            "Reverseeritavad pöörlemismootorid tagavad tõhusa puurimise ja vähendavad puurimistorustiku kinnijäämise ohtu. Madal profiil võimaldab puurida seinte kõrval ja ulatuda kitsastesse kohtadesse. Kompaktne suurus ja kõrge võimsuse-kaalu suhe teevad TEI puurimismasinad turul ainulaadseks."
+          ],
+          "groups": [
+            {
+              "title": "Pöörlemine",
+              "rows": [
+                {
+                  "label": "Pöördemoment",
+                  "metric": "2000 Nm"
+                },
+                {
+                  "label": "Pöörlemise vooluhulk",
+                  "metric": "38 lpm"
+                },
+                {
+                  "label": "Pöörlemise rõhk",
+                  "metric": "155 bar"
+                },
+                {
+                  "label": "Kaal",
+                  "metric": "107 kg"
+                },
+                {
+                  "label": "Pöörded",
+                  "metric": "250 rpm"
+                }
+              ]
+            },
+            {
+              "title": "Löögisüsteem",
+              "rows": [
+                {
+                  "label": "Väljundvõimsus",
+                  "metric": "11 kW"
+                },
+                {
+                  "label": "Haamri vooluhulk",
+                  "metric": "72 lpm"
+                },
+                {
+                  "label": "Haamri rõhk",
+                  "metric": "155 bar"
+                },
+                {
+                  "label": "Löögisagedus",
+                  "metric": "58 Hz"
+                }
+              ]
+            }
+          ],
+          "note": "TEI tehnilised andmed eeldavad 40 % hüdrauliivõimsuse kadu."
+        },
+        {
+          "type": "related",
+          "title": "Sobivad mastid",
+          "items": [
+            {
+              "href": "/produkter/tei/borrmaster/mem"
+            },
+            {
+              "href": "/produkter/tei/borrmaster/hem"
+            },
+            {
+              "href": "/produkter/tei/borrmaster/mph"
+            }
+          ],
+          "compat": true
+        }
+      ],
+      "published": true
+    },
+    "ru": {
+      "title": "TE360",
+      "h1": "TE360",
+      "description": "TE360: элегантная низкопрофильная конструкция; высокое соотношение мощности и массы; ударная система с ASA; выходная мощность: 11 кВт; крутящий момент: 2001 Нм; масса: 107 кг",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Логотип TEI Rock Drills",
+          "href": "/produkter/tei",
+          "width": 1920,
+          "height": 1117,
+          "src": "/assets/img/tei-2.webp"
+        },
+        {
+          "type": "image",
+          "alt": "TE360: изображение 2",
+          "width": 1506,
+          "height": 1047,
+          "src": "/assets/img/tei-topphammare-te360-2.webp"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Элегантная низкопрофильная конструкция",
+            "Высокое соотношение мощности и массы",
+            "Ударная система с ASA",
+            "Выходная мощность: 11 кВт",
+            "Крутящий момент: 2001 Нм",
+            "Масса: 107 кг"
+          ]
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Технический лист",
+          "href": "/assets/docs/tei-topphammare-te360-broschyr-eng.pdf",
+          "driveId": "1YZooP_TrAjICmCkjK8in0teGBQg09HM6"
+        },
+        {
+          "type": "datasheet",
+          "title": "Технические данные",
+          "tagline": "Гидравлический верхний перфоратор",
+          "intro": [
+            "В ударной системе TE360 применена наша запатентованная технология ASA (Automatic Stroke Adjustment, автоматическая регулировка удара). Высокая частота и плавная работа системы ASA продлевают срок службы верхнего перфоратора, обеспечивая более высокую производительность и рентабельность. Два режима мощности позволяют точно контролировать энергию и частоту ударной системы.",
+            "Реверсивные двигатели вращения обеспечивают эффективное бурение и снижают риск заклинивания буровой колонны. Низкий профиль позволяет бурить вплотную к стенам и работать в стеснённых местах. Компактный размер и высокое соотношение мощности и массы делают буровые машины TEI уникальными на рынке."
+          ],
+          "groups": [
+            {
+              "title": "Вращение",
+              "rows": [
+                {
+                  "label": "Крутящий момент",
+                  "metric": "2000 Nm"
+                },
+                {
+                  "label": "Расход вращения",
+                  "metric": "38 lpm"
+                },
+                {
+                  "label": "Давление вращения",
+                  "metric": "155 bar"
+                },
+                {
+                  "label": "Масса",
+                  "metric": "107 kg"
+                },
+                {
+                  "label": "Частота вращения",
+                  "metric": "250 rpm"
+                }
+              ]
+            },
+            {
+              "title": "Ударная система",
+              "rows": [
+                {
+                  "label": "Выходная мощность",
+                  "metric": "11 kW"
+                },
+                {
+                  "label": "Расход молота",
+                  "metric": "72 lpm"
+                },
+                {
+                  "label": "Давление молота",
+                  "metric": "155 bar"
+                },
+                {
+                  "label": "Частота ударов",
+                  "metric": "58 Hz"
+                }
+              ]
+            }
+          ],
+          "note": "Технические данные TEI предполагают потери гидравлической мощности 40 %."
+        },
+        {
+          "type": "related",
+          "title": "Подходящие мачты",
+          "items": [
+            {
+              "href": "/produkter/tei/borrmaster/mem"
+            },
+            {
+              "href": "/produkter/tei/borrmaster/hem"
+            },
+            {
+              "href": "/produkter/tei/borrmaster/mph"
+            }
+          ],
+          "compat": true
+        }
+      ],
+      "published": true
     }
   },
   "source": {

@@ -754,5 +754,11 @@
   "source": {
     "url": "https://www.betongakuten.se/produkter/brutus"
   },
-  "logo": "/assets/img/logo-brutus.webp"
+  "logo": "/assets/img/logo-brutus.webp",
+  "hideIn": [
+    "lt",
+    "lv",
+    "et",
+    "ru"
+  ]
 }

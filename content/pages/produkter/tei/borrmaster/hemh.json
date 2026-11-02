@@ -538,6 +538,538 @@
         }
       ],
       "published": true
+    },
+    "lt": {
+      "title": "HEMH",
+      "h1": "HEMH",
+      "description": "Didžiausias gręžimo stiebų variantas yra HEMH (Hydraulic Excavator Mount Heavy), skirtas apie 30 t sveriantiems ekskavatoriams. Patiems didžiausiems…",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "TEI Rock Drills logotipas",
+          "href": "/produkter/tei",
+          "width": 1920,
+          "height": 1117,
+          "src": "/assets/img/tei-2.webp"
+        },
+        {
+          "type": "image",
+          "alt": "HEMH: 2 paveikslėlis",
+          "width": 775,
+          "height": 583,
+          "src": "/assets/img/tei-borrmaster-hemh-2.webp"
+        },
+        {
+          "type": "text",
+          "html": "Didžiausias gręžimo stiebų variantas yra HEMH (Hydraulic Excavator Mount Heavy), skirtas apie 30 t sveriantiems ekskavatoriams. Patiems didžiausiems HEMH modeliams viena ekskavatoriaus rankena gali būti pakeista stiebu. Tada ekskavatorius gali tilpti ant vienos transporto priemonės."
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Produkto lapas",
+          "href": "/assets/docs/tei-borrmaster-hemh-ladda-ner-pdf.pdf",
+          "driveId": "195_P1ktNcDOUH-Rjz5TsX0WSGZlTCS7k"
+        },
+        {
+          "type": "datasheet",
+          "title": "Techniniai duomenys",
+          "note": "TEI techniniai duomenys numato 40 % hidraulinės galios nuostolių.",
+          "tagline": "Hidraulinis gręžimo agregatas sunkiems ekskavatoriams",
+          "intro": [
+            "HEMH (Hydraulic Excavator Mount „Heavy“) yra didžiausias ir galingiausias iš TEI ekskavatorinių gręžimo įrenginių. Nepaisant dydžio, HEMH išlaiko tikro priedo privalumus – ekskavatoriaus nereikia perdaryti. Konstrukcija paprasta, todėl įrangą galima greitai sumontuoti ir nuimti.",
+            "HEMH hidraulinę galią gauna iš ekskavatoriaus plaktuko kontūro ir nereikalauja papildomos hidraulikos. TEI naudoja savo kuriamus ir gaminamus komponentus, kad kokybė būtų vienoda visose gręžimo sistemos dalyse. Mūsų sukimo ir smūgio sistemos pasižymi galinga, lengva konstrukcija, kuria esame žinomi. HEMH sukurtas montuoti ant 25–30 t mašinų ir gali būti sukonfigūruotas daugumai gręžimo metodų."
+          ],
+          "groups": [
+            {
+              "title": "Su viršutinio smūgio plaktukais (TE726 / TE760 / TE1000)",
+              "rows": [
+                {
+                  "label": "Hidraulinis debitas",
+                  "metric": "178 / 197 / 269 lpm"
+                },
+                {
+                  "label": "Hidraulinis slėgis",
+                  "metric": "172 / 172 / 207 bar"
+                },
+                {
+                  "label": "Bendras padavimo ilgis",
+                  "metric": "5,23 m"
+                },
+                {
+                  "label": "Gręžimo eiga",
+                  "metric": "3,96 m"
+                },
+                {
+                  "label": "Traukos jėga",
+                  "metric": "53 kN"
+                },
+                {
+                  "label": "Svoris",
+                  "metric": "2 839 / 2 925 / 3 134 kg"
+                }
+              ]
+            },
+            {
+              "title": "Su sukamąja galvute (RDS550 / RDS1004)",
+              "rows": [
+                {
+                  "label": "Hidraulinis debitas",
+                  "metric": "151 / 227 lpm"
+                },
+                {
+                  "label": "Hidraulinis slėgis",
+                  "metric": "207 bar"
+                },
+                {
+                  "label": "Bendras padavimo ilgis",
+                  "metric": "5,23 m"
+                },
+                {
+                  "label": "Gręžimo eiga",
+                  "metric": "3,96 m"
+                },
+                {
+                  "label": "Traukos jėga",
+                  "metric": "53 kN"
+                },
+                {
+                  "label": "Svoris",
+                  "metric": "2 862 / 3 040 kg"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "related",
+          "title": "Tinkami viršutinio smūgio plaktukai",
+          "items": [
+            {
+              "href": "/produkter/tei/topphammare/te726"
+            },
+            {
+              "href": "/produkter/tei/topphammare/te760"
+            },
+            {
+              "href": "/produkter/tei/topphammare/te1000"
+            }
+          ],
+          "compat": true
+        },
+        {
+          "type": "related",
+          "title": "Tinkamos sukamosios galvutės",
+          "items": [
+            {
+              "href": "/produkter/tei/rotationshammare/rds550"
+            },
+            {
+              "href": "/produkter/tei/rotationshammare/rds1004"
+            }
+          ],
+          "compat": true
+        }
+      ],
+      "published": true
+    },
+    "lv": {
+      "title": "HEMH",
+      "h1": "HEMH",
+      "description": "Lielākais urbšanas mastu variants ir HEMH (Hydraulic Excavator Mount Heavy), kas paredzēts ekskavatoriem ar svaru ap 30 t. Pašiem lielākajiem…",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "TEI Rock Drills logotips",
+          "href": "/produkter/tei",
+          "width": 1920,
+          "height": 1117,
+          "src": "/assets/img/tei-2.webp"
+        },
+        {
+          "type": "image",
+          "alt": "HEMH: 2. attēls",
+          "width": 775,
+          "height": 583,
+          "src": "/assets/img/tei-borrmaster-hemh-2.webp"
+        },
+        {
+          "type": "text",
+          "html": "Lielākais urbšanas mastu variants ir HEMH (Hydraulic Excavator Mount Heavy), kas paredzēts ekskavatoriem ar svaru ap 30 t. Pašiem lielākajiem HEMH modeļiem vienu no ekskavatora rokturiem var aizstāt ar mastu. Tad ekskavators var ietilpt vienā transporta vienībā."
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Produkta lapa",
+          "href": "/assets/docs/tei-borrmaster-hemh-ladda-ner-pdf.pdf",
+          "driveId": "195_P1ktNcDOUH-Rjz5TsX0WSGZlTCS7k"
+        },
+        {
+          "type": "datasheet",
+          "title": "Tehniskie dati",
+          "note": "TEI tehniskie dati paredz 40 % hidrauliskās jaudas zudumu.",
+          "tagline": "Hidrauliska urbšanas iekārta smagajiem ekskavatoriem",
+          "intro": [
+            "HEMH (Hydraulic Excavator Mount «Heavy») ir lielākā un jaudīgākā no TEI ekskavatora urbjiekārtām. Neskatoties uz izmēru, HEMH saglabā patiesa piederuma priekšrocības — ekskavatoru nav jāpārbūvē. Konstrukcija ir vienkārša, tāpēc iekārtu var ātri uzstādīt un noņemt.",
+            "HEMH hidraulisko jaudu saņem no ekskavatora āmura kontūra un neprasa papildu hidrauliku. TEI izmanto paši izstrādātus un ražotus komponentus, lai nodrošinātu vienmērīgu kvalitāti visās urbšanas sistēmas daļās. Mūsu rotācijas un sitiena sistēmām ir jaudīgā, vieglā konstrukcija, ar ko esam pazīstami. HEMH ir paredzēts uzstādīšanai uz 25–30 t iekārtām, un to var konfigurēt lielākajai daļai urbšanas metožu."
+          ],
+          "groups": [
+            {
+              "title": "Ar augšējā āmura urbjiem (TE726 / TE760 / TE1000)",
+              "rows": [
+                {
+                  "label": "Hidrauliskā caurplūde",
+                  "metric": "178 / 197 / 269 lpm"
+                },
+                {
+                  "label": "Hidrauliskais spiediens",
+                  "metric": "172 / 172 / 207 bar"
+                },
+                {
+                  "label": "Kopējais padeves garums",
+                  "metric": "5,23 m"
+                },
+                {
+                  "label": "Urbšanas gājiens",
+                  "metric": "3,96 m"
+                },
+                {
+                  "label": "Vilkme",
+                  "metric": "53 kN"
+                },
+                {
+                  "label": "Svars",
+                  "metric": "2 839 / 2 925 / 3 134 kg"
+                }
+              ]
+            },
+            {
+              "title": "Ar rotācijas galvu (RDS550 / RDS1004)",
+              "rows": [
+                {
+                  "label": "Hidrauliskā caurplūde",
+                  "metric": "151 / 227 lpm"
+                },
+                {
+                  "label": "Hidrauliskais spiediens",
+                  "metric": "207 bar"
+                },
+                {
+                  "label": "Kopējais padeves garums",
+                  "metric": "5,23 m"
+                },
+                {
+                  "label": "Urbšanas gājiens",
+                  "metric": "3,96 m"
+                },
+                {
+                  "label": "Vilkme",
+                  "metric": "53 kN"
+                },
+                {
+                  "label": "Svars",
+                  "metric": "2 862 / 3 040 kg"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "related",
+          "title": "Piemērotie augšējā āmura urbji",
+          "items": [
+            {
+              "href": "/produkter/tei/topphammare/te726"
+            },
+            {
+              "href": "/produkter/tei/topphammare/te760"
+            },
+            {
+              "href": "/produkter/tei/topphammare/te1000"
+            }
+          ],
+          "compat": true
+        },
+        {
+          "type": "related",
+          "title": "Piemērotās rotācijas galvas",
+          "items": [
+            {
+              "href": "/produkter/tei/rotationshammare/rds550"
+            },
+            {
+              "href": "/produkter/tei/rotationshammare/rds1004"
+            }
+          ],
+          "compat": true
+        }
+      ],
+      "published": true
+    },
+    "et": {
+      "title": "HEMH",
+      "h1": "HEMH",
+      "description": "Puurimismastide suurim variant on HEMH (Hydraulic Excavator Mount Heavy), mis on mõeldud umbes 30 t kaaluvatele ekskavaatoritele. Kõige suurematele…",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "TEI Rock Drills logo",
+          "href": "/produkter/tei",
+          "width": 1920,
+          "height": 1117,
+          "src": "/assets/img/tei-2.webp"
+        },
+        {
+          "type": "image",
+          "alt": "HEMH: pilt 2",
+          "width": 775,
+          "height": 583,
+          "src": "/assets/img/tei-borrmaster-hemh-2.webp"
+        },
+        {
+          "type": "text",
+          "html": "Puurimismastide suurim variant on HEMH (Hydraulic Excavator Mount Heavy), mis on mõeldud umbes 30 t kaaluvatele ekskavaatoritele. Kõige suuremate HEMH mudelite puhul saab ühe ekskavaatori varre masti vastu välja vahetada. Siis mahub ekskavaator ühele veokile."
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Tootleht",
+          "href": "/assets/docs/tei-borrmaster-hemh-ladda-ner-pdf.pdf",
+          "driveId": "195_P1ktNcDOUH-Rjz5TsX0WSGZlTCS7k"
+        },
+        {
+          "type": "datasheet",
+          "title": "Tehnilised andmed",
+          "note": "TEI tehnilised andmed eeldavad 40 % hüdrauliivõimsuse kadu.",
+          "tagline": "Hüdrauliline puurimisseade rasketele ekskavaatoritele",
+          "intro": [
+            "HEMH (Hydraulic Excavator Mount „Heavy“) on TEI ekskavaatoripuuridest suurim ja võimsaim. Vaatamata suurusele säilitab HEMH tõelise lisaseadme eelised – ekskavaatorit ei pea ümber ehitama. Konstruktsioon on lihtne, nii et seadme saab kiiresti paigaldada ja eemaldada.",
+            "HEMH saab hüdraulilise võimsuse ekskavaatori haamri hüdroringist ega vaja lisahüdraulikat. TEI kasutab ise projekteeritud ja toodetud komponente, et tagada ühtlane kvaliteet puurimissüsteemi igas osas. Meie pöörlemis- ja löögisüsteemid on võimsa, kerge konstruktsiooniga, mille poolest oleme tuntud. HEMH on ehitatud paigaldamiseks 25–30 t masinatele ja seda saab konfigureerida enamiku puurimismeetodite jaoks."
+          ],
+          "groups": [
+            {
+              "title": "Ülavasaratega (TE726 / TE760 / TE1000)",
+              "rows": [
+                {
+                  "label": "Hüdraulikavooluhulk",
+                  "metric": "178 / 197 / 269 lpm"
+                },
+                {
+                  "label": "Hüdrauliline rõhk",
+                  "metric": "172 / 172 / 207 bar"
+                },
+                {
+                  "label": "Etteande kogupikkus",
+                  "metric": "5,23 m"
+                },
+                {
+                  "label": "Puurimiskäik",
+                  "metric": "3,96 m"
+                },
+                {
+                  "label": "Tõmbejõud",
+                  "metric": "53 kN"
+                },
+                {
+                  "label": "Kaal",
+                  "metric": "2 839 / 2 925 / 3 134 kg"
+                }
+              ]
+            },
+            {
+              "title": "Pöörlemispeaga (RDS550 / RDS1004)",
+              "rows": [
+                {
+                  "label": "Hüdraulikavooluhulk",
+                  "metric": "151 / 227 lpm"
+                },
+                {
+                  "label": "Hüdrauliline rõhk",
+                  "metric": "207 bar"
+                },
+                {
+                  "label": "Etteande kogupikkus",
+                  "metric": "5,23 m"
+                },
+                {
+                  "label": "Puurimiskäik",
+                  "metric": "3,96 m"
+                },
+                {
+                  "label": "Tõmbejõud",
+                  "metric": "53 kN"
+                },
+                {
+                  "label": "Kaal",
+                  "metric": "2 862 / 3 040 kg"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "related",
+          "title": "Sobivad ülavasarad",
+          "items": [
+            {
+              "href": "/produkter/tei/topphammare/te726"
+            },
+            {
+              "href": "/produkter/tei/topphammare/te760"
+            },
+            {
+              "href": "/produkter/tei/topphammare/te1000"
+            }
+          ],
+          "compat": true
+        },
+        {
+          "type": "related",
+          "title": "Sobivad pöörlemispead",
+          "items": [
+            {
+              "href": "/produkter/tei/rotationshammare/rds550"
+            },
+            {
+              "href": "/produkter/tei/rotationshammare/rds1004"
+            }
+          ],
+          "compat": true
+        }
+      ],
+      "published": true
+    },
+    "ru": {
+      "title": "HEMH",
+      "h1": "HEMH",
+      "description": "Самый крупный вариант буровых мачт — HEMH (Hydraulic Excavator Mount Heavy), предназначенный для экскаваторов массой около 30 т. Для самых крупных…",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Логотип TEI Rock Drills",
+          "href": "/produkter/tei",
+          "width": 1920,
+          "height": 1117,
+          "src": "/assets/img/tei-2.webp"
+        },
+        {
+          "type": "image",
+          "alt": "HEMH: изображение 2",
+          "width": 775,
+          "height": 583,
+          "src": "/assets/img/tei-borrmaster-hemh-2.webp"
+        },
+        {
+          "type": "text",
+          "html": "Самый крупный вариант буровых мачт — HEMH (Hydraulic Excavator Mount Heavy), предназначенный для экскаваторов массой около 30 т. У самых крупных моделей HEMH одну из рукоятей экскаватора можно заменить мачтой. Тогда экскаватор помещается на один транспортный комплект."
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Технический лист",
+          "href": "/assets/docs/tei-borrmaster-hemh-ladda-ner-pdf.pdf",
+          "driveId": "195_P1ktNcDOUH-Rjz5TsX0WSGZlTCS7k"
+        },
+        {
+          "type": "datasheet",
+          "title": "Технические данные",
+          "note": "Технические данные TEI предполагают потери гидравлической мощности 40 %.",
+          "tagline": "Гидравлический буровой агрегат для тяжёлых экскаваторов",
+          "intro": [
+            "HEMH (Hydraulic Excavator Mount «Heavy») — самый крупный и мощный из экскаваторных буров TEI. Несмотря на размер, HEMH сохраняет преимущества настоящей навески: экскаватор не требует переделки. Конструкция проста, поэтому оборудование можно быстро монтировать и демонтировать.",
+            "HEMH получает гидравлическую мощность от гидромолотной линии экскаватора и не требует дополнительной гидравлики. TEI использует компоненты собственной разработки и производства для стабильного качества во всех частях буровой системы. Наши системы вращения и ударного действия отличаются мощной и лёгкой конструкцией, которой мы известны. HEMH рассчитан на установку на машины массой 25–30 т и может конфигурироваться для большинства методов бурения."
+          ],
+          "groups": [
+            {
+              "title": "С верхними перфораторами (TE726 / TE760 / TE1000)",
+              "rows": [
+                {
+                  "label": "Гидравлический расход",
+                  "metric": "178 / 197 / 269 lpm"
+                },
+                {
+                  "label": "Гидравлическое давление",
+                  "metric": "172 / 172 / 207 bar"
+                },
+                {
+                  "label": "Общая длина подачи",
+                  "metric": "5,23 m"
+                },
+                {
+                  "label": "Ход бурения",
+                  "metric": "3,96 m"
+                },
+                {
+                  "label": "Тяговое усилие",
+                  "metric": "53 kN"
+                },
+                {
+                  "label": "Масса",
+                  "metric": "2 839 / 2 925 / 3 134 kg"
+                }
+              ]
+            },
+            {
+              "title": "С вращателем (RDS550 / RDS1004)",
+              "rows": [
+                {
+                  "label": "Гидравлический расход",
+                  "metric": "151 / 227 lpm"
+                },
+                {
+                  "label": "Гидравлическое давление",
+                  "metric": "207 bar"
+                },
+                {
+                  "label": "Общая длина подачи",
+                  "metric": "5,23 m"
+                },
+                {
+                  "label": "Ход бурения",
+                  "metric": "3,96 m"
+                },
+                {
+                  "label": "Тяговое усилие",
+                  "metric": "53 kN"
+                },
+                {
+                  "label": "Масса",
+                  "metric": "2 862 / 3 040 kg"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "related",
+          "title": "Подходящие верхние перфораторы",
+          "items": [
+            {
+              "href": "/produkter/tei/topphammare/te726"
+            },
+            {
+              "href": "/produkter/tei/topphammare/te760"
+            },
+            {
+              "href": "/produkter/tei/topphammare/te1000"
+            }
+          ],
+          "compat": true
+        },
+        {
+          "type": "related",
+          "title": "Подходящие вращатели",
+          "items": [
+            {
+              "href": "/produkter/tei/rotationshammare/rds550"
+            },
+            {
+              "href": "/produkter/tei/rotationshammare/rds1004"
+            }
+          ],
+          "compat": true
+        }
+      ],
+      "published": true
     }
   },
   "source": {

@@ -352,6 +352,358 @@
           "html": "<a href=\"/kontakta-oss\">Kontakt oss</a> for mer informasjon eller hjelp til å velge riktig enhet for prosessen din."
         }
       ]
+    },
+    "lt": {
+      "title": "DIMI",
+      "h1": "DIMI",
+      "description": "DIMI yra ekrano blokas, skirtas kasykloms ir karjerams. Jis leidžia paprastai ir tiksliai stebėti stiebo pasvirimą dviem ašimis. Kartu su NORMA2 stebimas ir azimutas trimis ašimis.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Jean Lutz logotipas",
+          "href": "/produkter/jean-lutz",
+          "width": 572,
+          "height": 128,
+          "src": "/assets/img/logo-jean-lutz.webp"
+        },
+        {
+          "type": "image",
+          "alt": "DIMI",
+          "width": 1200,
+          "height": 1200,
+          "src": "/assets/img/jean-lutz-dimi.webp"
+        },
+        {
+          "type": "text",
+          "html": "DIMI yra ekrano blokas, skirtas kasykloms ir karjerams. Jis leidžia paprastai ir tiksliai stebėti stiebo pasvirimą dviem ašimis. Kartu su NORMA2 stebimas ir azimutas trimis ašimis."
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Specialus ekranas stiebo pasvirimui stebėti dviem ašimis",
+            "Azimuto stebėjimas trimis ašimis kartu su NORMA2",
+            "Aiški spalvota sąsaja, pritaikyta darbo vietos sąlygoms",
+            "Ekrano ir stebėsenos įrenginys: DIMI neturi registravimo funkcijos"
+          ]
+        },
+        {
+          "type": "chips",
+          "title": "Suderinami procesai",
+          "items": [
+            "Kasyba",
+            "Karjerai",
+            "Gamybinis gręžimas"
+          ]
+        },
+        {
+          "type": "text",
+          "html": "DIMI yra stebėsenos ekranas, skirtas kasyklų ir karjerų taikymams."
+        },
+        {
+          "type": "datasheet",
+          "title": "Techniniai duomenys",
+          "tagline": "Stiebo pasvirimo ekranas",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Techniniai duomenys",
+              "rows": [
+                {
+                  "label": "Maitinimas",
+                  "metric": "12–36 V nuolatinė srovė arba 24 V kintamoji srovė"
+                },
+                {
+                  "label": "Svoris",
+                  "metric": "2,3 kg"
+                },
+                {
+                  "label": "Darbinė temperatūra",
+                  "metric": "−20 °C / 60 °C"
+                },
+                {
+                  "label": "Apsaugos klasė (IP)",
+                  "metric": "IP65"
+                },
+                {
+                  "label": "Spalvotas ekranas",
+                  "metric": "5,7″"
+                }
+              ]
+            }
+          ],
+          "note": "Duomenys paimti iš gamintojo svetainės."
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Susisiekite su mumis</a> dėl daugiau informacijos arba pagalbos parenkant jūsų procesui tinkamą įrenginį."
+        }
+      ],
+      "published": true
+    },
+    "lv": {
+      "title": "DIMI",
+      "h1": "DIMI",
+      "description": "DIMI ir displeja iekārta raktuvēm un karjeriem. Tā nodrošina vienkāršu un precīzu masta slīpuma uzraudzību divās asīs. Kombinācijā ar NORMA2 tiek uzraudzīts arī azimuts trīs asīs.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Jean Lutz logotips",
+          "href": "/produkter/jean-lutz",
+          "width": 572,
+          "height": 128,
+          "src": "/assets/img/logo-jean-lutz.webp"
+        },
+        {
+          "type": "image",
+          "alt": "DIMI",
+          "width": 1200,
+          "height": 1200,
+          "src": "/assets/img/jean-lutz-dimi.webp"
+        },
+        {
+          "type": "text",
+          "html": "DIMI ir displeja iekārta raktuvēm un karjeriem. Tā nodrošina vienkāršu un precīzu masta slīpuma uzraudzību divās asīs. Kombinācijā ar NORMA2 tiek uzraudzīts arī azimuts trīs asīs."
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Īpašs displejs masta slīpuma uzraudzībai divās asīs",
+            "Azimuta uzraudzība trīs asīs kopā ar NORMA2",
+            "Skaidra krāsu saskarne, pielāgota darba vietas apstākļiem",
+            "Displeja un uzraudzības ierīce: DIMI nav reģistrēšanas funkcijas"
+          ]
+        },
+        {
+          "type": "chips",
+          "title": "Saderīgie procesi",
+          "items": [
+            "Kalnrūpniecība",
+            "Karjeri",
+            "Ražošanas urbšana"
+          ]
+        },
+        {
+          "type": "text",
+          "html": "DIMI ir uzraudzības displejs, kas paredzēts raktuvēm un karjeriem."
+        },
+        {
+          "type": "datasheet",
+          "title": "Tehniskie dati",
+          "tagline": "Masta slīpuma displejs",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Tehniskie dati",
+              "rows": [
+                {
+                  "label": "Barošana",
+                  "metric": "12–36 V līdzstrāva vai 24 V maiņstrāva"
+                },
+                {
+                  "label": "Svars",
+                  "metric": "2,3 kg"
+                },
+                {
+                  "label": "Darba temperatūra",
+                  "metric": "−20 °C / 60 °C"
+                },
+                {
+                  "label": "Aizsardzības klase (IP)",
+                  "metric": "IP65"
+                },
+                {
+                  "label": "Krāsu displejs",
+                  "metric": "5,7″"
+                }
+              ]
+            }
+          ],
+          "note": "Dati ņemti no ražotāja vietnes."
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Sazinieties ar mums</a>, lai uzzinātu vairāk vai saņemtu palīdzību piemērotas ierīces izvēlē jūsu procesam."
+        }
+      ],
+      "published": true
+    },
+    "et": {
+      "title": "DIMI",
+      "h1": "DIMI",
+      "description": "DIMI on kaevanduste ja karjääride jaoks mõeldud ekraaniseade. See võimaldab lihtsalt ja täpselt jälgida masti kallet kahel teljel. Koos NORMA2-ga jälgitakse ka asimuuti kolmel teljel.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Jean Lutz logo",
+          "href": "/produkter/jean-lutz",
+          "width": 572,
+          "height": 128,
+          "src": "/assets/img/logo-jean-lutz.webp"
+        },
+        {
+          "type": "image",
+          "alt": "DIMI",
+          "width": 1200,
+          "height": 1200,
+          "src": "/assets/img/jean-lutz-dimi.webp"
+        },
+        {
+          "type": "text",
+          "html": "DIMI on kaevanduste ja karjääride jaoks mõeldud ekraaniseade. See võimaldab lihtsalt ja täpselt jälgida masti kallet kahel teljel. Koos NORMA2-ga jälgitakse ka asimuuti kolmel teljel."
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Spetsiaalne ekraan masti kalde jälgimiseks kahel teljel",
+            "Asimuudi jälgimine kolmel teljel koos NORMA2-ga",
+            "Selge värviline liides, mis sobib tööplatsi tingimustele",
+            "Ekraani- ja jälgimisseade: DIMI-l puudub registreerimisfunktsioon"
+          ]
+        },
+        {
+          "type": "chips",
+          "title": "Ühilduvad protsessid",
+          "items": [
+            "Kaevandamine",
+            "Karjäärid",
+            "Tootmispuurimine"
+          ]
+        },
+        {
+          "type": "text",
+          "html": "DIMI on kaevanduste ja karjääride jaoks mõeldud jälgimisekraan."
+        },
+        {
+          "type": "datasheet",
+          "title": "Tehnilised andmed",
+          "tagline": "Masti kalde ekraan",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Tehnilised andmed",
+              "rows": [
+                {
+                  "label": "Toide",
+                  "metric": "12–36 V alalisvool või 24 V vahelduvvool"
+                },
+                {
+                  "label": "Kaal",
+                  "metric": "2,3 kg"
+                },
+                {
+                  "label": "Töötemperatuur",
+                  "metric": "−20 °C / 60 °C"
+                },
+                {
+                  "label": "Kaitseaste (IP)",
+                  "metric": "IP65"
+                },
+                {
+                  "label": "Värviline ekraan",
+                  "metric": "5,7″"
+                }
+              ]
+            }
+          ],
+          "note": "Andmed on võetud tootja veebilehelt."
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Võta meiega ühendust</a> lisateabe saamiseks või abi saamiseks oma protsessile sobiva seadme valimisel."
+        }
+      ],
+      "published": true
+    },
+    "ru": {
+      "title": "DIMI",
+      "h1": "DIMI",
+      "description": "DIMI — дисплейный блок для шахт и карьеров. Он обеспечивает простой и точный контроль наклона мачты по двум осям. В сочетании с NORMA2 дополнительно контролируется азимут по трём осям.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Логотип Jean Lutz",
+          "href": "/produkter/jean-lutz",
+          "width": 572,
+          "height": 128,
+          "src": "/assets/img/logo-jean-lutz.webp"
+        },
+        {
+          "type": "image",
+          "alt": "DIMI",
+          "width": 1200,
+          "height": 1200,
+          "src": "/assets/img/jean-lutz-dimi.webp"
+        },
+        {
+          "type": "text",
+          "html": "DIMI — дисплейный блок для шахт и карьеров. Он обеспечивает простой и точный контроль наклона мачты по двум осям. В сочетании с NORMA2 дополнительно контролируется азимут по трём осям."
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Специальный дисплей для контроля наклона мачты по двум осям",
+            "Контроль азимута по трём осям совместно с NORMA2",
+            "Чёткий цветной интерфейс, подходящий для условий на объекте",
+            "Дисплей и устройство контроля: DIMI не имеет функции регистрации"
+          ]
+        },
+        {
+          "type": "chips",
+          "title": "Совместимые процессы",
+          "items": [
+            "Горные работы",
+            "Карьеры",
+            "Эксплуатационное бурение"
+          ]
+        },
+        {
+          "type": "text",
+          "html": "DIMI — дисплей контроля, предназначенный для горных работ и карьеров."
+        },
+        {
+          "type": "datasheet",
+          "title": "Технические данные",
+          "tagline": "Дисплей наклона мачты",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Технические данные",
+              "rows": [
+                {
+                  "label": "Электропитание",
+                  "metric": "12–36 В постоянного тока или 24 В переменного тока"
+                },
+                {
+                  "label": "Масса",
+                  "metric": "2,3 kg"
+                },
+                {
+                  "label": "Рабочая температура",
+                  "metric": "−20 °C / 60 °C"
+                },
+                {
+                  "label": "Степень защиты (IP)",
+                  "metric": "IP65"
+                },
+                {
+                  "label": "Цветной экран",
+                  "metric": "5,7″"
+                }
+              ]
+            }
+          ],
+          "note": "Данные взяты с сайта производителя."
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Свяжитесь с нами</a> для получения дополнительной информации или помощи в выборе подходящего устройства для вашего процесса."
+        }
+      ],
+      "published": true
     }
   },
   "hero": {

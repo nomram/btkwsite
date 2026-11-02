@@ -1064,6 +1064,1070 @@
           "gen": true
         }
       ]
+    },
+    "lt": {
+      "title": "Häny ZMP 936",
+      "h1": "Häny ZMP 936",
+      "description": "Injektavimo siurblys ZMP 936. Atskiras trijų stūmoklių (tripleksinis) siurblys dideliems kiekiams su tolygiu tiekimu ir minimalia pulsacija. Labai efektyvi hidraulinė sistema sumontuota ant vietą taupančio rėmo ir gali būti naudojama…",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "HÄNY",
+          "href": "/produkter/haeny",
+          "width": 832,
+          "height": 143,
+          "src": "/assets/img/haeny-1.webp",
+          "gen": true
+        },
+        {
+          "type": "columns",
+          "ratio": "40-60",
+          "left": [
+            {
+              "type": "image",
+              "alt": "Injektavimo siurblys ZMP 936",
+              "width": 1296,
+              "height": 985,
+              "src": "/assets/img/haeny-zmp936-model.webp"
+            }
+          ],
+          "right": [
+            {
+              "type": "text",
+              "html": "Atskiras trijų stūmoklių (tripleksinis) siurblys dideliems kiekiams su tolygiu tiekimu ir minimalia pulsacija. Labai efektyvi hidraulinė sistema sumontuota ant vietą taupančio rėmo ir gali būti naudojama įvairiems tikslams."
+            },
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "Patikimas, nereikalaujantis daug priežiūros, patogi prieiga prie dėvimų dalių",
+                "Srauto pulsacija &lt; 1 %",
+                "Aušinimo vandens jungtis nepertraukiamam darbui"
+              ]
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Naudojimas",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Perpylimo siurblys įvairioms terpėms",
+            "Suspensijos diafragminėms sienoms",
+            "Didelių tūrių užpildymas",
+            "Grunto maišymas (soil mixing)"
+          ],
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Brošiūra ZMP 936 (PDF, anglų k.)",
+          "href": "/assets/docs/haeny-zmp936-brochure-en.pdf",
+          "gen": true
+        },
+        {
+          "type": "datasheet",
+          "title": "Techniniai duomenys",
+          "tagline": "Injektavimo siurblys ZMP 936",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Injektavimo siurblys",
+              "rows": [
+                {
+                  "label": "Maks. našumas",
+                  "metric": "1,000 l/min (60 m³/h)"
+                },
+                {
+                  "label": "Min. našumas",
+                  "metric": "200 l/min (12 m³/h)"
+                },
+                {
+                  "label": "Maks. slėgis (esant maks. debitui)",
+                  "metric": "40 bar"
+                },
+                {
+                  "label": "Variklio galia",
+                  "metric": "121 kW"
+                },
+                {
+                  "label": "Stūmoklio Ø",
+                  "metric": "210 mm"
+                },
+                {
+                  "label": "Maks. dalelių dydis",
+                  "metric": "8 mm"
+                },
+                {
+                  "label": "Stūmoklinių siurblių skaičius",
+                  "metric": "3"
+                },
+                {
+                  "label": "Siurbimo jungtis",
+                  "metric": "3x BSP 3\""
+                },
+                {
+                  "label": "Išleidimo vamzdis (kolektorius)",
+                  "metric": "BSP 3\" arba Ø 100 mm, jungtis GF 45M-LC 4-1/2\""
+                }
+              ]
+            },
+            {
+              "title": "Elektriniai duomenys",
+              "rows": [
+                {
+                  "label": "Įtampa",
+                  "metric": "3x 400 V"
+                },
+                {
+                  "label": "Dažnis",
+                  "metric": "50 Hz"
+                },
+                {
+                  "label": "Elektros variklis",
+                  "metric": "1x 110 kW; 1x 11 kW"
+                },
+                {
+                  "label": "Saugiklis",
+                  "metric": "250 A"
+                }
+              ]
+            },
+            {
+              "title": "Hidraulinė sistema",
+              "rows": [
+                {
+                  "label": "Hidraulinis bakas",
+                  "metric": "400 l"
+                },
+                {
+                  "label": "Priešsrovis alyvos / vandens aušintuvas, sąnaudos",
+                  "metric": "27 l/min"
+                },
+                {
+                  "label": "Aušinimo vandens jungtis",
+                  "metric": "IN G¾\", GEKA; OUT G1\", GEKA"
+                }
+              ]
+            },
+            {
+              "title": "Svoris ir matmenys",
+              "rows": [
+                {
+                  "label": "Bendras svoris",
+                  "metric": "4,400 kg"
+                },
+                {
+                  "label": "Plotis",
+                  "metric": "1,997 mm"
+                },
+                {
+                  "label": "Aukštis",
+                  "metric": "2,260 mm"
+                },
+                {
+                  "label": "Ilgis",
+                  "metric": "2,688 mm"
+                }
+              ]
+            }
+          ],
+          "note": "1: vandens ir cemento santykis = 1",
+          "source": "Duomenys paimti iš gamintojo brošiūrų (anglų k.).",
+          "gen": true
+        },
+        {
+          "type": "columns",
+          "ratio": "50-50",
+          "left": [
+            {
+              "type": "modules",
+              "layout": "tiles",
+              "columns": 1,
+              "narrow": true,
+              "more": false,
+              "items": [
+                {
+                  "title": "Siurblio charakteristikos: ZMP 936",
+                  "image": "/assets/img/haeny-zmp936-chart.webp",
+                  "alt": "Siurblio charakteristikos ZMP 936",
+                  "width": 1053,
+                  "height": 1242
+                }
+              ]
+            }
+          ],
+          "right": [
+            {
+              "type": "modules",
+              "layout": "tiles",
+              "columns": 1,
+              "narrow": true,
+              "zoom": true,
+              "more": false,
+              "items": [
+                {
+                  "title": "Matmenys ir brėžinys",
+                  "image": "/assets/img/haeny-zmp936-dim.webp",
+                  "alt": "Matmenys ir brėžinys ZMP 936",
+                  "text": "Užveskite žymeklį ant brėžinio (arba palieskite ir vilkite), kad jį padidintumėte 2×.",
+                  "width": 1824,
+                  "height": 1547
+                }
+              ]
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "collapsible": true,
+          "title": "Standartinė ir pasirenkama įranga",
+          "items": [
+            "Standartinė komplektacija (injektavimo siurblys): siurbimo pusė: atbulinis vožtuvas",
+            "Standartinė komplektacija (injektavimo siurblys): slėgio pusė: hidrauliškai valdomi vožtuvai",
+            "Standartinė komplektacija (injektavimo siurblys): automatinis slėgio ir debito reguliavimas",
+            "Pasirinktinai (injektavimo siurblys): siurbimo pusė: hidrauliškai valdomi vožtuvai",
+            "Pasirinktinai (valdymo sistema): nuotolinis valdymas su 50 m kabeliu, siurblys ĮJ./IŠJ., avarinis sustabdymas",
+            "Pasirinktinai (valdymo sistema): nuotolinis valdymas su 50 m kabeliu, siurblys ĮJ./IŠJ., galia +/-, avarinis sustabdymas",
+            "Pasirinktinai (valdymo sistema): duomenų registratorius su slėgio ir debito matavimu",
+            "Pasirinktinai (valdymo sistema): IoT ryšys",
+            "Valdymo sistema: PLC valdymas su jutikliniu ekranu",
+            "Valdymo sistema: fazių sekos relė, avarinis sustabdymas",
+            "Valdymo sistema: hidraulika ĮJ./IŠJ., siurblys ĮJ./IŠJ., galia +/-",
+            "Valdymo sistema: nuotolinė priežiūra",
+            "Standartinė komplektacija (hidraulinė sistema): alyvos lygio ir temperatūros jutiklis",
+            "Standartinė komplektacija (hidraulinė sistema): automatinis aušinimo vandens valdymo blokas"
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Susisiekite su mumis</a> dėl kainos, pristatymo laiko ar pagalbos renkantis tinkamą modelį.",
+          "gen": true
+        },
+        {
+          "type": "related",
+          "title": "Taip pat žiūrėkite",
+          "items": [
+            {
+              "href": "/produkter/haeny/injekteringspumpar",
+              "mutual": false
+            },
+            {
+              "href": "/produkter/haeny/injekteringspumpar/zmp-726"
+            }
+          ],
+          "gen": true
+        }
+      ],
+      "published": true
+    },
+    "lv": {
+      "title": "Häny ZMP 936",
+      "h1": "Häny ZMP 936",
+      "description": "Injektēšanas sūknis ZMP 936. Autonoms trīsvirzuļu (tripleksa) sūknis lieliem apjomiem ar vienmērīgu padevi un minimālu pulsāciju. Ļoti efektīvā hidrauliskā sistēma ir uzstādīta uz vietu taupoša statīva un var tikt izmantota…",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "HÄNY",
+          "href": "/produkter/haeny",
+          "width": 832,
+          "height": 143,
+          "src": "/assets/img/haeny-1.webp",
+          "gen": true
+        },
+        {
+          "type": "columns",
+          "ratio": "40-60",
+          "left": [
+            {
+              "type": "image",
+              "alt": "Injektēšanas sūknis ZMP 936",
+              "width": 1296,
+              "height": 985,
+              "src": "/assets/img/haeny-zmp936-model.webp"
+            }
+          ],
+          "right": [
+            {
+              "type": "text",
+              "html": "Autonoms trīsvirzuļu (tripleksa) sūknis lieliem apjomiem ar vienmērīgu padevi un minimālu pulsāciju. Ļoti efektīvā hidrauliskā sistēma ir uzstādīta uz vietu taupoša statīva un var tikt izmantota dažādiem mērķiem."
+            },
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "Uzticams, neprasa daudz apkopes, viegla piekļuve nolietojumam pakļautajām detaļām",
+                "Plūsmas pulsācija &lt; 1 %",
+                "Dzesēšanas ūdens pieslēgums nepārtrauktai darbībai"
+              ]
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Lietojums",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Pārsūknēšanas sūknis dažādām vidēm",
+            "Suspensijas diafragmas sienām",
+            "Lielu apjomu aizpildīšana",
+            "Grunts maisīšana (soil mixing)"
+          ],
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Brošūra ZMP 936 (PDF, angļu val.)",
+          "href": "/assets/docs/haeny-zmp936-brochure-en.pdf",
+          "gen": true
+        },
+        {
+          "type": "datasheet",
+          "title": "Tehniskie dati",
+          "tagline": "Injektēšanas sūknis ZMP 936",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Injektēšanas sūknis",
+              "rows": [
+                {
+                  "label": "Maks. ražība",
+                  "metric": "1,000 l/min (60 m³/h)"
+                },
+                {
+                  "label": "Min. ražība",
+                  "metric": "200 l/min (12 m³/h)"
+                },
+                {
+                  "label": "Maks. spiediens (pie maks. caurplūdes)",
+                  "metric": "40 bar"
+                },
+                {
+                  "label": "Dzinēja jauda",
+                  "metric": "121 kW"
+                },
+                {
+                  "label": "Virzuļa Ø",
+                  "metric": "210 mm"
+                },
+                {
+                  "label": "Maks. graudu izmērs",
+                  "metric": "8 mm"
+                },
+                {
+                  "label": "Virzuļsūkņu skaits",
+                  "metric": "3"
+                },
+                {
+                  "label": "Iesūkšanas savienojums",
+                  "metric": "3x BSP 3\""
+                },
+                {
+                  "label": "Izplūdes caurule (kolektors)",
+                  "metric": "BSP 3\" vai Ø 100 mm, savienojums GF 45M-LC 4-1/2\""
+                }
+              ]
+            },
+            {
+              "title": "Elektriskie dati",
+              "rows": [
+                {
+                  "label": "Spriegums",
+                  "metric": "3x 400 V"
+                },
+                {
+                  "label": "Frekvence",
+                  "metric": "50 Hz"
+                },
+                {
+                  "label": "Elektromotors",
+                  "metric": "1x 110 kW; 1x 11 kW"
+                },
+                {
+                  "label": "Drošinātājs",
+                  "metric": "250 A"
+                }
+              ]
+            },
+            {
+              "title": "Hidrauliskā sistēma",
+              "rows": [
+                {
+                  "label": "Hidrauliskā tvertne",
+                  "metric": "400 l"
+                },
+                {
+                  "label": "Pretplūsmas eļļas/ūdens dzesētājs, patēriņš",
+                  "metric": "27 l/min"
+                },
+                {
+                  "label": "Dzesēšanas ūdens pieslēgums",
+                  "metric": "IN G¾\", GEKA; OUT G1\", GEKA"
+                }
+              ]
+            },
+            {
+              "title": "Svars un izmēri",
+              "rows": [
+                {
+                  "label": "Kopējais svars",
+                  "metric": "4,400 kg"
+                },
+                {
+                  "label": "Platums",
+                  "metric": "1,997 mm"
+                },
+                {
+                  "label": "Augstums",
+                  "metric": "2,260 mm"
+                },
+                {
+                  "label": "Garums",
+                  "metric": "2,688 mm"
+                }
+              ]
+            }
+          ],
+          "note": "1: ūdens/cementa attiecība = 1",
+          "source": "Dati ņemti no ražotāja brošūrām (angļu val.).",
+          "gen": true
+        },
+        {
+          "type": "columns",
+          "ratio": "50-50",
+          "left": [
+            {
+              "type": "modules",
+              "layout": "tiles",
+              "columns": 1,
+              "narrow": true,
+              "more": false,
+              "items": [
+                {
+                  "title": "Sūkņa veiktspēja: ZMP 936",
+                  "image": "/assets/img/haeny-zmp936-chart.webp",
+                  "alt": "Sūkņa veiktspēja ZMP 936",
+                  "width": 1053,
+                  "height": 1242
+                }
+              ]
+            }
+          ],
+          "right": [
+            {
+              "type": "modules",
+              "layout": "tiles",
+              "columns": 1,
+              "narrow": true,
+              "zoom": true,
+              "more": false,
+              "items": [
+                {
+                  "title": "Izmēri un rasējums",
+                  "image": "/assets/img/haeny-zmp936-dim.webp",
+                  "alt": "Izmēri un rasējums ZMP 936",
+                  "text": "Virziet peli virs rasējuma (vai pieskarieties un velciet), lai to palielinātu 2×.",
+                  "width": 1824,
+                  "height": 1547
+                }
+              ]
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "collapsible": true,
+          "title": "Standarta un papildaprīkojums",
+          "items": [
+            "Standarta komplektācijā (injektēšanas sūknis): iesūkšanas puse: pretvārsts",
+            "Standarta komplektācijā (injektēšanas sūknis): spiediena puse: hidrauliski vadāmi vārsti",
+            "Standarta komplektācijā (injektēšanas sūknis): automātiska spiediena un caurplūdes regulēšana",
+            "Opcija (injektēšanas sūknis): iesūkšanas puse: hidrauliski vadāmi vārsti",
+            "Opcija (vadības sistēma): tālvadība ar 50 m kabeli, sūknis IESLĒGTS/IZSLĒGTS, avārijas apturēšana",
+            "Opcija (vadības sistēma): tālvadība ar 50 m kabeli, sūknis IESLĒGTS/IZSLĒGTS, jauda +/-, avārijas apturēšana",
+            "Opcija (vadības sistēma): datu reģistrators, ieskaitot spiedienu un caurplūdi",
+            "Opcija (vadības sistēma): IoT savienojums",
+            "Vadības sistēma: PLC vadība ar skārienekrānu",
+            "Vadības sistēma: fāžu secības relejs, avārijas apturēšana",
+            "Vadības sistēma: hidraulika IESLĒGTA/IZSLĒGTA, sūknis IESLĒGTS/IZSLĒGTS, jauda +/-",
+            "Vadības sistēma: attālā apkope",
+            "Standarta komplektācijā (hidrauliskā sistēma): eļļas līmeņa un temperatūras devējs",
+            "Standarta komplektācijā (hidrauliskā sistēma): automātiska dzesēšanas ūdens vadības iekārta"
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Sazinieties ar mums</a> par cenu, piegādes laiku vai palīdzību pareizā modeļa izvēlē.",
+          "gen": true
+        },
+        {
+          "type": "related",
+          "title": "Skatiet arī",
+          "items": [
+            {
+              "href": "/produkter/haeny/injekteringspumpar",
+              "mutual": false
+            },
+            {
+              "href": "/produkter/haeny/injekteringspumpar/zmp-726"
+            }
+          ],
+          "gen": true
+        }
+      ],
+      "published": true
+    },
+    "et": {
+      "title": "Häny ZMP 936",
+      "h1": "Häny ZMP 936",
+      "description": "Injekteerimispump ZMP 936. Eraldiseisev kolmikkolbpump suurte mahtude jaoks ühtlase etteandega ja minimaalse pulsatsiooniga. Väga tõhus hüdrosüsteem on paigaldatud ruumi säästvale raamile ja seda saab kasutada…",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "HÄNY",
+          "href": "/produkter/haeny",
+          "width": 832,
+          "height": 143,
+          "src": "/assets/img/haeny-1.webp",
+          "gen": true
+        },
+        {
+          "type": "columns",
+          "ratio": "40-60",
+          "left": [
+            {
+              "type": "image",
+              "alt": "Injekteerimispump ZMP 936",
+              "width": 1296,
+              "height": 985,
+              "src": "/assets/img/haeny-zmp936-model.webp"
+            }
+          ],
+          "right": [
+            {
+              "type": "text",
+              "html": "Eraldiseisev kolmikkolbpump suurte mahtude jaoks ühtlase etteandega ja minimaalse pulsatsiooniga. Väga tõhus hüdrosüsteem on paigaldatud ruumi säästvale raamile ja seda saab kasutada mitmesugusteks otstarveteks."
+            },
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "Töökindel, vähese hooldusvajadusega, kulumisosadele on lihtne ligipääs",
+                "Voolu pulsatsioon &lt; 1 %",
+                "Jahutusvee ühendus pidevaks tööks"
+              ]
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Kasutus",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Ülekandepump erinevate söötmete jaoks",
+            "Suspensioonid diafragmaseintele",
+            "Suurte mahtude täitmine",
+            "Pinnasesegamine (soil mixing)"
+          ],
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Brošüür ZMP 936 (PDF, inglise keeles)",
+          "href": "/assets/docs/haeny-zmp936-brochure-en.pdf",
+          "gen": true
+        },
+        {
+          "type": "datasheet",
+          "title": "Tehnilised andmed",
+          "tagline": "Injekteerimispump ZMP 936",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Injekteerimispump",
+              "rows": [
+                {
+                  "label": "Maks. jõudlus",
+                  "metric": "1,000 l/min (60 m³/h)"
+                },
+                {
+                  "label": "Min. jõudlus",
+                  "metric": "200 l/min (12 m³/h)"
+                },
+                {
+                  "label": "Maks. rõhk (maksimaalse vooluhulga juures)",
+                  "metric": "40 bar"
+                },
+                {
+                  "label": "Mootori võimsus",
+                  "metric": "121 kW"
+                },
+                {
+                  "label": "Kolvi Ø",
+                  "metric": "210 mm"
+                },
+                {
+                  "label": "Maks. terasuurus",
+                  "metric": "8 mm"
+                },
+                {
+                  "label": "Kolbpumpade arv",
+                  "metric": "3"
+                },
+                {
+                  "label": "Imiühendus",
+                  "metric": "3x BSP 3\""
+                },
+                {
+                  "label": "Väljundtoru (koguja)",
+                  "metric": "BSP 3\" või Ø 100 mm, ühendus GF 45M-LC 4-1/2\""
+                }
+              ]
+            },
+            {
+              "title": "Elektrilised andmed",
+              "rows": [
+                {
+                  "label": "Pinge",
+                  "metric": "3x 400 V"
+                },
+                {
+                  "label": "Sagedus",
+                  "metric": "50 Hz"
+                },
+                {
+                  "label": "Elektrimootor",
+                  "metric": "1x 110 kW; 1x 11 kW"
+                },
+                {
+                  "label": "Kaitse",
+                  "metric": "250 A"
+                }
+              ]
+            },
+            {
+              "title": "Hüdrosüsteem",
+              "rows": [
+                {
+                  "label": "Hüdraulikapaak",
+                  "metric": "400 l"
+                },
+                {
+                  "label": "Vastuvoolu õli-/veejahuti, tarbimine",
+                  "metric": "27 l/min"
+                },
+                {
+                  "label": "Jahutusvee ühendus",
+                  "metric": "IN G¾\", GEKA; OUT G1\", GEKA"
+                }
+              ]
+            },
+            {
+              "title": "Kaal ja mõõtmed",
+              "rows": [
+                {
+                  "label": "Kogukaal",
+                  "metric": "4,400 kg"
+                },
+                {
+                  "label": "Laius",
+                  "metric": "1,997 mm"
+                },
+                {
+                  "label": "Kõrgus",
+                  "metric": "2,260 mm"
+                },
+                {
+                  "label": "Pikkus",
+                  "metric": "2,688 mm"
+                }
+              ]
+            }
+          ],
+          "note": "1: vee ja tsemendi suhe = 1",
+          "source": "Andmed on võetud tootja brošüüridest (inglise keeles).",
+          "gen": true
+        },
+        {
+          "type": "columns",
+          "ratio": "50-50",
+          "left": [
+            {
+              "type": "modules",
+              "layout": "tiles",
+              "columns": 1,
+              "narrow": true,
+              "more": false,
+              "items": [
+                {
+                  "title": "Pumba jõudlusnäitajad: ZMP 936",
+                  "image": "/assets/img/haeny-zmp936-chart.webp",
+                  "alt": "Pumba jõudlusnäitajad ZMP 936",
+                  "width": 1053,
+                  "height": 1242
+                }
+              ]
+            }
+          ],
+          "right": [
+            {
+              "type": "modules",
+              "layout": "tiles",
+              "columns": 1,
+              "narrow": true,
+              "zoom": true,
+              "more": false,
+              "items": [
+                {
+                  "title": "Mõõtmed ja joonis",
+                  "image": "/assets/img/haeny-zmp936-dim.webp",
+                  "alt": "Mõõtmed ja joonis ZMP 936",
+                  "text": "Hoia kursorit joonise kohal (või puuduta ja lohista), et seda 2× suurendada.",
+                  "width": 1824,
+                  "height": 1547
+                }
+              ]
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "collapsible": true,
+          "title": "Standard- ja lisavarustus",
+          "items": [
+            "Standardvarustuses (injekteerimispump): imipool: tagasilöögiklapp",
+            "Standardvarustuses (injekteerimispump): survepool: hüdrauliliselt juhitavad ventiilid",
+            "Standardvarustuses (injekteerimispump): automaatne rõhu- ja vooluhulgareguleerimine",
+            "Lisavarustus (injekteerimispump): imipool: hüdrauliliselt juhitavad ventiilid",
+            "Lisavarustus (juhtimissüsteem): kaugjuhtimine 50 m kaabliga, pump SEES/VÄLJAS, hädaseiskamine",
+            "Lisavarustus (juhtimissüsteem): kaugjuhtimine 50 m kaabliga, pump SEES/VÄLJAS, võimsus +/-, hädaseiskamine",
+            "Lisavarustus (juhtimissüsteem): andmelogija koos rõhu ja vooluhulgaga",
+            "Lisavarustus (juhtimissüsteem): IoT-ühendus",
+            "Juhtimissüsteem: PLC-juhtimine puuteekraaniga",
+            "Juhtimissüsteem: faasijärjestusrelee, hädaseiskamine",
+            "Juhtimissüsteem: hüdraulika SEES/VÄLJAS, pump SEES/VÄLJAS, võimsus +/-",
+            "Juhtimissüsteem: kaughooldus",
+            "Standardvarustuses (hüdrosüsteem): õlitaseme- ja temperatuuriandur",
+            "Standardvarustuses (hüdrosüsteem): automaatne jahutusvee juhtseade"
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Võta meiega ühendust</a> hinna, tarneaja või õige mudeli valikul abi saamiseks.",
+          "gen": true
+        },
+        {
+          "type": "related",
+          "title": "Vaata ka",
+          "items": [
+            {
+              "href": "/produkter/haeny/injekteringspumpar",
+              "mutual": false
+            },
+            {
+              "href": "/produkter/haeny/injekteringspumpar/zmp-726"
+            }
+          ],
+          "gen": true
+        }
+      ],
+      "published": true
+    },
+    "ru": {
+      "title": "Häny ZMP 936",
+      "h1": "Häny ZMP 936",
+      "description": "Инъекционный насос ZMP 936. Автономный трёхплунжерный насос для больших объёмов с равномерной подачей и минимальной пульсацией. Высокоэффективная гидравлическая система установлена на компактной раме, экономящей место, и может использоваться…",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "HÄNY",
+          "href": "/produkter/haeny",
+          "width": 832,
+          "height": 143,
+          "src": "/assets/img/haeny-1.webp",
+          "gen": true
+        },
+        {
+          "type": "columns",
+          "ratio": "40-60",
+          "left": [
+            {
+              "type": "image",
+              "alt": "Инъекционный насос ZMP 936",
+              "width": 1296,
+              "height": 985,
+              "src": "/assets/img/haeny-zmp936-model.webp"
+            }
+          ],
+          "right": [
+            {
+              "type": "text",
+              "html": "Автономный трёхплунжерный насос для больших объёмов с равномерной подачей и минимальной пульсацией. Высокоэффективная гидравлическая система установлена на компактной раме, экономящей место, и может использоваться для самых разных задач."
+            },
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "Надёжный, малообслуживаемый, лёгкий доступ к изнашиваемым деталям",
+                "Пульсация потока &lt; 1 %",
+                "Подключение охлаждающей воды для непрерывной работы"
+              ]
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Применение",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Перекачивающий насос для различных сред",
+            "Суспензии для стены в грунте",
+            "Заполнение больших объёмов",
+            "Смешивание грунта (soil mixing)"
+          ],
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Брошюра ZMP 936 (PDF, на английском)",
+          "href": "/assets/docs/haeny-zmp936-brochure-en.pdf",
+          "gen": true
+        },
+        {
+          "type": "datasheet",
+          "title": "Технические данные",
+          "tagline": "Инъекционный насос ZMP 936",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Инъекционный насос",
+              "rows": [
+                {
+                  "label": "Макс. производительность",
+                  "metric": "1,000 l/min (60 m³/h)"
+                },
+                {
+                  "label": "Мин. производительность",
+                  "metric": "200 l/min (12 m³/h)"
+                },
+                {
+                  "label": "Макс. давление (при макс. расходе)",
+                  "metric": "40 bar"
+                },
+                {
+                  "label": "Мощность двигателя",
+                  "metric": "121 kW"
+                },
+                {
+                  "label": "Ø плунжера",
+                  "metric": "210 mm"
+                },
+                {
+                  "label": "Макс. размер зерна",
+                  "metric": "8 mm"
+                },
+                {
+                  "label": "Количество плунжерных насосов",
+                  "metric": "3"
+                },
+                {
+                  "label": "Всасывающий патрубок",
+                  "metric": "3x BSP 3\""
+                },
+                {
+                  "label": "Выпускной трубопровод (коллектор)",
+                  "metric": "BSP 3\" или Ø 100 мм, присоединение GF 45M-LC 4-1/2\""
+                }
+              ]
+            },
+            {
+              "title": "Электрические данные",
+              "rows": [
+                {
+                  "label": "Напряжение",
+                  "metric": "3x 400 V"
+                },
+                {
+                  "label": "Частота",
+                  "metric": "50 Hz"
+                },
+                {
+                  "label": "Электродвигатель",
+                  "metric": "1x 110 kW; 1x 11 kW"
+                },
+                {
+                  "label": "Предохранитель",
+                  "metric": "250 A"
+                }
+              ]
+            },
+            {
+              "title": "Гидравлическая система",
+              "rows": [
+                {
+                  "label": "Гидробак",
+                  "metric": "400 l"
+                },
+                {
+                  "label": "Противоточный масловодяной охладитель, расход",
+                  "metric": "27 l/min"
+                },
+                {
+                  "label": "Подключение охлаждающей воды",
+                  "metric": "IN G¾\", GEKA; OUT G1\", GEKA"
+                }
+              ]
+            },
+            {
+              "title": "Масса и размеры",
+              "rows": [
+                {
+                  "label": "Общая масса",
+                  "metric": "4,400 kg"
+                },
+                {
+                  "label": "Ширина",
+                  "metric": "1,997 mm"
+                },
+                {
+                  "label": "Высота",
+                  "metric": "2,260 mm"
+                },
+                {
+                  "label": "Длина",
+                  "metric": "2,688 mm"
+                }
+              ]
+            }
+          ],
+          "note": "1: водоцементное отношение = 1",
+          "source": "Данные взяты из брошюр производителя (на английском языке).",
+          "gen": true
+        },
+        {
+          "type": "columns",
+          "ratio": "50-50",
+          "left": [
+            {
+              "type": "modules",
+              "layout": "tiles",
+              "columns": 1,
+              "narrow": true,
+              "more": false,
+              "items": [
+                {
+                  "title": "Характеристики насоса: ZMP 936",
+                  "image": "/assets/img/haeny-zmp936-chart.webp",
+                  "alt": "Характеристики насоса ZMP 936",
+                  "width": 1053,
+                  "height": 1242
+                }
+              ]
+            }
+          ],
+          "right": [
+            {
+              "type": "modules",
+              "layout": "tiles",
+              "columns": 1,
+              "narrow": true,
+              "zoom": true,
+              "more": false,
+              "items": [
+                {
+                  "title": "Размеры и чертёж",
+                  "image": "/assets/img/haeny-zmp936-dim.webp",
+                  "alt": "Размеры и чертёж ZMP 936",
+                  "text": "Наведите курсор на чертёж (или коснитесь и проведите пальцем), чтобы увеличить его в 2 раза.",
+                  "width": 1824,
+                  "height": 1547
+                }
+              ]
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "collapsible": true,
+          "title": "Стандартное и дополнительное оборудование",
+          "items": [
+            "Входит в стандартную комплектацию (инъекционный насос): сторона всасывания: обратный клапан",
+            "Входит в стандартную комплектацию (инъекционный насос): сторона нагнетания: гидравлически управляемые клапаны",
+            "Входит в стандартную комплектацию (инъекционный насос): автоматическая регулировка давления и расхода",
+            "Опция (инъекционный насос): сторона всасывания: гидравлически управляемые клапаны",
+            "Опция (система управления): дистанционное управление с кабелем 50 м, насос ВКЛ/ВЫКЛ, аварийная остановка",
+            "Опция (система управления): дистанционное управление с кабелем 50 м, насос ВКЛ/ВЫКЛ, мощность +/-, аварийная остановка",
+            "Опция (система управления): регистратор данных, включая давление и расход",
+            "Опция (система управления): IoT-подключение",
+            "Система управления: управление ПЛК с сенсорным экраном",
+            "Система управления: реле контроля фаз, аварийная остановка",
+            "Система управления: гидравлика ВКЛ/ВЫКЛ, насос ВКЛ/ВЫКЛ, мощность +/-",
+            "Система управления: удалённое обслуживание",
+            "Входит в стандартную комплектацию (гидравлическая система): датчик уровня и температуры масла",
+            "Входит в стандартную комплектацию (гидравлическая система): автоматический блок управления охлаждающей водой"
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Свяжитесь с нами</a>, чтобы узнать цену, срок поставки или получить помощь в выборе подходящей модели.",
+          "gen": true
+        },
+        {
+          "type": "related",
+          "title": "См. также",
+          "items": [
+            {
+              "href": "/produkter/haeny/injekteringspumpar",
+              "mutual": false
+            },
+            {
+              "href": "/produkter/haeny/injekteringspumpar/zmp-726"
+            }
+          ],
+          "gen": true
+        }
+      ],
+      "published": true
     }
   }
 }

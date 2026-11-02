@@ -30,24 +30,24 @@
           "callouts": [
             {
               "kind": "bracket",
-              "x": 26,
+              "x": 25.8,
               "y": 50,
-              "x1": 1.5,
-              "y1": 60,
-              "x2": 40,
-              "y2": 79.5,
+              "x1": 1.1,
+              "y1": 61.7,
+              "x2": 39.9,
+              "y2": 78.1,
               "tick": 3,
               "side": 1,
               "text": "IC 325"
             },
             {
               "kind": "bracket",
-              "x": 62,
-              "y": 56,
-              "x1": 41.5,
-              "y1": 79.5,
-              "x2": 77,
-              "y2": 72.5,
+              "x": 65.3,
+              "y": 46.5,
+              "x1": 40.3,
+              "y1": 78.3,
+              "x2": 53,
+              "y2": 83.7,
               "tick": 3,
               "side": 1,
               "text": "WIWA 2K"
@@ -838,24 +838,24 @@
           "callouts": [
             {
               "kind": "bracket",
-              "x": 26,
+              "x": 25.8,
               "y": 50,
-              "x1": 1.5,
-              "y1": 60,
-              "x2": 40,
-              "y2": 79.5,
+              "x1": 1.1,
+              "y1": 61.7,
+              "x2": 39.9,
+              "y2": 78.1,
               "tick": 3,
               "side": 1,
               "text": "IC 325"
             },
             {
               "kind": "bracket",
-              "x": 62,
-              "y": 56,
-              "x1": 41.5,
-              "y1": 79.5,
-              "x2": 77,
-              "y2": 72.5,
+              "x": 65.3,
+              "y": 46.5,
+              "x1": 40.3,
+              "y1": 78.3,
+              "x2": 53,
+              "y2": 83.7,
               "tick": 3,
               "side": 1,
               "text": "WIWA 2K"
@@ -1646,24 +1646,24 @@
           "callouts": [
             {
               "kind": "bracket",
-              "x": 26,
+              "x": 25.8,
               "y": 50,
-              "x1": 1.5,
-              "y1": 60,
-              "x2": 40,
-              "y2": 79.5,
+              "x1": 1.1,
+              "y1": 61.7,
+              "x2": 39.9,
+              "y2": 78.1,
               "tick": 3,
               "side": 1,
               "text": "IC 325"
             },
             {
               "kind": "bracket",
-              "x": 62,
-              "y": 56,
-              "x1": 41.5,
-              "y1": 79.5,
-              "x2": 77,
-              "y2": 72.5,
+              "x": 65.3,
+              "y": 46.5,
+              "x1": 40.3,
+              "y1": 78.3,
+              "x2": 53,
+              "y2": 83.7,
               "tick": 3,
               "side": 1,
               "text": "WIWA 2K"
@@ -2454,24 +2454,24 @@
           "callouts": [
             {
               "kind": "bracket",
-              "x": 26,
+              "x": 25.8,
               "y": 50,
-              "x1": 1.5,
-              "y1": 60,
-              "x2": 40,
-              "y2": 79.5,
+              "x1": 1.1,
+              "y1": 61.7,
+              "x2": 39.9,
+              "y2": 78.1,
               "tick": 3,
               "side": 1,
               "text": "IC 325"
             },
             {
               "kind": "bracket",
-              "x": 62,
-              "y": 56,
-              "x1": 41.5,
-              "y1": 79.5,
-              "x2": 77,
-              "y2": 72.5,
+              "x": 65.3,
+              "y": 46.5,
+              "x1": 40.3,
+              "y1": 78.3,
+              "x2": 53,
+              "y2": 83.7,
               "tick": 3,
               "side": 1,
               "text": "WIWA 2K"
@@ -3239,6 +3239,3242 @@
           ]
         }
       ]
+    },
+    "lt": {
+      "title": "IC 325 CCP",
+      "h1": "HÄNY IC 325 CCP",
+      "description": "Naujausias ir flagmaniškiausias Häny modelis – kompaktiška injektavimo platforma cemento skiediniui bei poliuretano injektavimui. IC325 CCP sudaro IC325 ir papildomas blokas / modulis su aukšto slėgio siurbliu WIWA K2…",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "HÄNY IC 325 & IC325 CCP",
+          "width": 876,
+          "height": 510,
+          "src": "/assets/img/haeny-automatiska-pumpar-1.webp",
+          "href": "/produkter/haeny"
+        },
+        {
+          "type": "image",
+          "alt": "Häny IC325 CCP: IC325 su CCP moduliu",
+          "src": "/assets/img/haeny-ic325-ccp-combo.webp",
+          "width": 1800,
+          "height": 1800,
+          "callouts": [
+            {
+              "kind": "bracket",
+              "x": 25.8,
+              "y": 50,
+              "x1": 1.1,
+              "y1": 61.7,
+              "x2": 39.9,
+              "y2": 78.1,
+              "tick": 3,
+              "side": 1,
+              "text": "IC 325"
+            },
+            {
+              "kind": "bracket",
+              "x": 65.3,
+              "y": 46.5,
+              "x1": 40.3,
+              "y1": 78.3,
+              "x2": 53,
+              "y2": 83.7,
+              "tick": 3,
+              "side": 1,
+              "text": "WIWA 2K"
+            }
+          ]
+        },
+        {
+          "type": "carousel",
+          "items": [
+            {
+              "src": "/assets/img/haeny-manuella-pumpar-ic-325-ic325-ccp-4.webp",
+              "alt": "HÄNY IC 325 & IC325 CCP, 1 paveikslėlis",
+              "width": 728,
+              "height": 815
+            },
+            {
+              "src": "/assets/img/haeny-manuella-pumpar-ic-325-ic325-ccp-5.webp",
+              "alt": "HÄNY IC 325 & IC325 CCP, 2 paveikslėlis",
+              "width": 800,
+              "height": 800
+            }
+          ],
+          "autoplay": true,
+          "interval": 5
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Häny IC325 CCP",
+          "anchor": "ic325-ccp"
+        },
+        {
+          "type": "text",
+          "html": "Naujausias ir flagmaniškiausias Häny modelis – kompaktiška injektavimo platforma cemento skiediniui bei poliuretano injektavimui. IC325 CCP sudaro <a href=\"/produkter/haeny/manuella-pumpar/ic-325-ic325-ccp\">IC325</a> ir papildomas blokas / modulis su aukšto slėgio siurbliu WIWA K2 poliuretanui maišyti ir injektuoti. Papildomas blokas taip pat turi duomenų registravimo funkciją."
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Našumas: iki 2 m³/h",
+            "Maks. slėgis: 100 bar",
+            "Vandens ir cemento santykis: ≤ 0,35",
+            "Maks. dalelių dydis: 5 mm",
+            "Stūmoklių skaičius: 2 (dvigubas siurblys)",
+            "Svoris: 840 kg",
+            "Matmenys: 2110 x 885 x 1590 mm"
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Palaiko tris metodus toje pačioje sistemoje: tik cemento skiedinį, tik 2K poliuretaną (PU) arba kombinuotą cementą + PU (CCP metodas).",
+            "Integruotas WIWA K2 aukšto slėgio siurblys tiksliam dozavimui",
+            "RASCOR statinis maišytuvas tolygiam ir patikimam maišymui",
+            "Visiškai automatinis valdymas su registravimu realiuoju laiku ir pilnu atsekamumu"
+          ]
+        },
+        {
+          "type": "text",
+          "html": "Nereikalauja daug priežiūros ir mažiau plaunama. Optimizuota ankštoms erdvėms – lengva perkelti ir įrengti"
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Susisiekite su mumis</a> dėl daugiau informacijos."
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Brošiūra",
+          "href": "/assets/docs/haeny-manuella-pumpar-ic-325-ic325-ccp-broschyr-eng-2.pdf",
+          "driveId": "1j3Fwms6yFgGqN_tLg0CJDkkEJAoECTUJ"
+        },
+        {
+          "type": "video",
+          "provider": "youtube",
+          "id": "JRLJBqrYTF8",
+          "title": "Häny IC325 | Injektavimo siurblys su poliuretanu | Haeny CCP – poliuretano siurblys"
+        },
+        {
+          "type": "text",
+          "html": "Šalia esančiame vaizdo įraše Häny specialistas daugiau papasakoja apie IC325 CCP veikimą. Spustelėkite vaizdo įrašą ir žiūrėkite mūsų „YouTube“ kanale."
+        },
+        {
+          "type": "datasheet",
+          "title": "Techniniai duomenys",
+          "tagline": "Kompaktiška injektavimo įranga IC 325CCP",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Injektavimo siurblys (ZMP 625)",
+              "rows": [
+                {
+                  "label": "IC našumas",
+                  "metric": "2 m³/h"
+                },
+                {
+                  "label": "Maks. slėgis",
+                  "metric": "100 bar"
+                },
+                {
+                  "label": "Maks. dalelių dydis",
+                  "metric": "5 mm"
+                },
+                {
+                  "label": "Hidraulinis bakas",
+                  "metric": "52 l"
+                },
+                {
+                  "label": "Siurblio modulis",
+                  "metric": "dvigubas"
+                },
+                {
+                  "label": "Aušinimo vandens debitas",
+                  "metric": "2–3 l/min"
+                },
+                {
+                  "label": "Aušinimo vandens jungtis",
+                  "metric": "BSP ⅜\""
+                },
+                {
+                  "label": "Slėgio jungtis",
+                  "metric": "BSP 1\""
+                }
+              ]
+            },
+            {
+              "title": "Maišyklė / maišiklis",
+              "rows": [
+                {
+                  "label": "Naudingasis maišyklės tūris",
+                  "metric": "100 l"
+                },
+                {
+                  "label": "Cirkuliacijos našumas",
+                  "metric": "540 l/min"
+                },
+                {
+                  "label": "Vandens jungtis",
+                  "metric": "BSP ¾\""
+                },
+                {
+                  "label": "Maišiklio našumas",
+                  "metric": "150 l"
+                }
+              ]
+            },
+            {
+              "title": "PU injektavimo siurblys",
+              "rows": [
+                {
+                  "label": "Maks. našumas",
+                  "metric": "14 l/min"
+                },
+                {
+                  "label": "Maks. slėgis",
+                  "metric": "195 bar"
+                },
+                {
+                  "label": "Maišymo santykis",
+                  "metric": "1:1"
+                },
+                {
+                  "label": "Slėgių santykis",
+                  "metric": "30:1"
+                }
+              ]
+            },
+            {
+              "title": "Svoris ir matmenys",
+              "rows": [
+                {
+                  "label": "Apytikslis svoris",
+                  "metric": "840 kg"
+                },
+                {
+                  "label": "Plotis",
+                  "metric": "885 mm"
+                },
+                {
+                  "label": "Aukštis",
+                  "metric": "1,590 mm"
+                },
+                {
+                  "label": "Ilgis",
+                  "metric": "2,110 mm"
+                }
+              ]
+            },
+            {
+              "title": "Elektriniai duomenys",
+              "rows": [
+                {
+                  "label": "Įtampa",
+                  "metric": "3x 400/460"
+                },
+                {
+                  "label": "Dažnis",
+                  "metric": "50 / 60 Hz"
+                },
+                {
+                  "label": "Nominalioji galia",
+                  "metric": "9.1 / 10.5 kW"
+                }
+              ]
+            },
+            {
+              "title": "Pneumatiniai duomenys",
+              "rows": [
+                {
+                  "label": "Maks. oro slėgis įėjime",
+                  "metric": "6.5 bar"
+                },
+                {
+                  "label": "Maks. oro sąnaudos",
+                  "metric": "2500 l/min"
+                },
+                {
+                  "label": "Oro jungtis",
+                  "metric": "BSP 1\""
+                }
+              ]
+            }
+          ],
+          "note": "1: vandens ir cemento santykis = 1",
+          "source": "Duomenys paimti iš gamintojo brošiūrų (anglų k.).",
+          "gen": true
+        },
+        {
+          "type": "columns",
+          "ratio": "50-50",
+          "left": [
+            {
+              "type": "perfchart",
+              "title": "Siurblio charakteristikos: IC 325CCP",
+              "hint": "Užveskite žymeklį ant diagramos, palieskite ją arba naudokite rodyklių klavišus reikšmėms nuskaityti. Spustelėkite stūmoklio dydį, kad jį paslėptumėte arba parodytumėte (dukart spustelėkite, kad būtų rodomas tik jis).",
+              "chipsLabel": "Rodyti kreives",
+              "xName": "Slėgis",
+              "yName": "Debitas",
+              "x": {
+                "label": "Pressure",
+                "unit": "bar",
+                "min": 0,
+                "max": 100,
+                "step": 10
+              },
+              "y": {
+                "label": "Output",
+                "unit": "l/min",
+                "min": 0,
+                "max": 35,
+                "step": 5
+              },
+              "series": [
+                {
+                  "name": "Žemas slėgis",
+                  "color": "#2f2483",
+                  "points": [
+                    [
+                      0,
+                      32.9
+                    ],
+                    [
+                      0,
+                      32.8
+                    ],
+                    [
+                      0.4,
+                      32.8
+                    ],
+                    [
+                      1,
+                      32.7
+                    ],
+                    [
+                      1.8,
+                      32.6
+                    ],
+                    [
+                      2.8,
+                      32.5
+                    ],
+                    [
+                      3.9,
+                      32.4
+                    ],
+                    [
+                      5.3,
+                      32.2
+                    ],
+                    [
+                      6.7,
+                      32.1
+                    ],
+                    [
+                      8.3,
+                      31.9
+                    ],
+                    [
+                      10.1,
+                      31.7
+                    ],
+                    [
+                      11.9,
+                      31.5
+                    ],
+                    [
+                      13.8,
+                      31.3
+                    ],
+                    [
+                      16.2,
+                      31.1
+                    ],
+                    [
+                      19.6,
+                      30.7
+                    ],
+                    [
+                      23.7,
+                      30.3
+                    ],
+                    [
+                      28.3,
+                      29.9
+                    ],
+                    [
+                      33.2,
+                      29.4
+                    ],
+                    [
+                      38.3,
+                      28.9
+                    ],
+                    [
+                      43.2,
+                      28.4
+                    ],
+                    [
+                      47.9,
+                      27.9
+                    ],
+                    [
+                      52.1,
+                      27.5
+                    ],
+                    [
+                      55.6,
+                      27.1
+                    ],
+                    [
+                      58.2,
+                      26.8
+                    ],
+                    [
+                      59.7,
+                      26.7
+                    ],
+                    [
+                      61.1,
+                      26.4
+                    ],
+                    [
+                      62.4,
+                      26.1
+                    ],
+                    [
+                      63.5,
+                      25.6
+                    ],
+                    [
+                      64.4,
+                      25.1
+                    ],
+                    [
+                      65.2,
+                      24.5
+                    ],
+                    [
+                      65.8,
+                      23.8
+                    ],
+                    [
+                      66.3,
+                      23.1
+                    ],
+                    [
+                      66.7,
+                      22.4
+                    ],
+                    [
+                      67.1,
+                      21.5
+                    ],
+                    [
+                      67.3,
+                      20.7
+                    ],
+                    [
+                      67.4,
+                      19.8
+                    ],
+                    [
+                      67.5,
+                      19
+                    ],
+                    [
+                      67.7,
+                      17.6
+                    ],
+                    [
+                      68,
+                      16.2
+                    ],
+                    [
+                      68.1,
+                      14.6
+                    ],
+                    [
+                      68.3,
+                      12.9
+                    ],
+                    [
+                      68.5,
+                      11.2
+                    ],
+                    [
+                      68.7,
+                      9.5
+                    ],
+                    [
+                      68.8,
+                      7.7
+                    ],
+                    [
+                      69,
+                      6
+                    ],
+                    [
+                      69.1,
+                      4.4
+                    ],
+                    [
+                      69.3,
+                      2.8
+                    ],
+                    [
+                      69.4,
+                      1.3
+                    ],
+                    [
+                      69.6,
+                      0
+                    ]
+                  ]
+                },
+                {
+                  "name": "Aukštas slėgis",
+                  "color": "#e3000f",
+                  "points": [
+                    [
+                      0,
+                      20.8
+                    ],
+                    [
+                      0.7,
+                      20.7
+                    ],
+                    [
+                      1.5,
+                      20.6
+                    ],
+                    [
+                      2.3,
+                      20.4
+                    ],
+                    [
+                      3.3,
+                      20.3
+                    ],
+                    [
+                      4.3,
+                      20.2
+                    ],
+                    [
+                      5.3,
+                      20
+                    ],
+                    [
+                      6.5,
+                      19.9
+                    ],
+                    [
+                      7.7,
+                      19.8
+                    ],
+                    [
+                      9,
+                      19.7
+                    ],
+                    [
+                      10.4,
+                      19.6
+                    ],
+                    [
+                      11.8,
+                      19.5
+                    ],
+                    [
+                      13.4,
+                      19.5
+                    ],
+                    [
+                      15.1,
+                      19.5
+                    ],
+                    [
+                      17.8,
+                      19.5
+                    ],
+                    [
+                      21.3,
+                      19.4
+                    ],
+                    [
+                      25.5,
+                      19.4
+                    ],
+                    [
+                      30.3,
+                      19.3
+                    ],
+                    [
+                      35.5,
+                      19.3
+                    ],
+                    [
+                      41,
+                      19.2
+                    ],
+                    [
+                      46.6,
+                      19.2
+                    ],
+                    [
+                      52.2,
+                      19.1
+                    ],
+                    [
+                      57.7,
+                      19.1
+                    ],
+                    [
+                      62.8,
+                      19
+                    ],
+                    [
+                      67.5,
+                      19
+                    ],
+                    [
+                      69.3,
+                      19
+                    ],
+                    [
+                      70.8,
+                      18.9
+                    ],
+                    [
+                      72.1,
+                      18.9
+                    ],
+                    [
+                      73.2,
+                      18.9
+                    ],
+                    [
+                      74.1,
+                      18.9
+                    ],
+                    [
+                      74.9,
+                      18.9
+                    ],
+                    [
+                      75.6,
+                      18.9
+                    ],
+                    [
+                      76.2,
+                      18.9
+                    ],
+                    [
+                      76.7,
+                      18.9
+                    ],
+                    [
+                      77.1,
+                      18.9
+                    ],
+                    [
+                      77.5,
+                      18.9
+                    ],
+                    [
+                      77.9,
+                      18.8
+                    ],
+                    [
+                      79.2,
+                      18.8
+                    ],
+                    [
+                      80.4,
+                      18.8
+                    ],
+                    [
+                      81.6,
+                      18.6
+                    ],
+                    [
+                      82.7,
+                      18.4
+                    ],
+                    [
+                      83.7,
+                      18.2
+                    ],
+                    [
+                      84.8,
+                      17.9
+                    ],
+                    [
+                      85.7,
+                      17.5
+                    ],
+                    [
+                      86.6,
+                      17.1
+                    ],
+                    [
+                      87.4,
+                      16.5
+                    ],
+                    [
+                      88.2,
+                      15.9
+                    ],
+                    [
+                      89,
+                      15.2
+                    ],
+                    [
+                      89.6,
+                      14.4
+                    ],
+                    [
+                      90.3,
+                      13.5
+                    ],
+                    [
+                      91.1,
+                      12.5
+                    ],
+                    [
+                      92,
+                      11.4
+                    ],
+                    [
+                      92.9,
+                      10.3
+                    ],
+                    [
+                      93.9,
+                      9.2
+                    ],
+                    [
+                      94.8,
+                      7.9
+                    ],
+                    [
+                      95.8,
+                      6.7
+                    ],
+                    [
+                      96.7,
+                      5.4
+                    ],
+                    [
+                      97.5,
+                      4.1
+                    ],
+                    [
+                      98.3,
+                      2.7
+                    ],
+                    [
+                      98.9,
+                      1.4
+                    ],
+                    [
+                      99.4,
+                      0
+                    ]
+                  ]
+                }
+              ],
+              "alt": {
+                "src": "/assets/img/haeny-ccp-chart.webp",
+                "text": "Siurblio charakteristikos IC 325CCP",
+                "show": "Rodyti originalią brošiūros diagramą",
+                "hide": "Slėpti originalią diagramą"
+              }
+            }
+          ],
+          "right": [
+            {
+              "type": "modules",
+              "layout": "tiles",
+              "columns": 1,
+              "narrow": true,
+              "zoom": true,
+              "more": false,
+              "items": [
+                {
+                  "title": "Matmenys ir brėžinys",
+                  "image": "/assets/img/haeny-ccp-dim.webp",
+                  "alt": "Matmenys ir brėžinys IC 325CCP",
+                  "text": "Užveskite žymeklį ant brėžinio (arba palieskite ir vilkite), kad jį padidintumėte 2×.",
+                  "width": 1278,
+                  "height": 1856
+                }
+              ]
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "collapsible": true,
+          "title": "Standartinė ir pasirenkama įranga",
+          "items": [
+            "Standartinė komplektacija (injektavimo siurblys): rankinis slėgio ir debito reguliavimas",
+            "Standartinė komplektacija (injektavimo siurblys): alyvos lygio indikatorius su termometru",
+            "Pasirinktinai (maišyklė / maišiklis): papildomas maišymo agregatas (rekomenduojama, kai W/C &lt; 0,45)",
+            "Pasirinktinai (maišyklė / maišiklis): automatinis vandens skaitiklis",
+            "Valdymas: PLC su taktų skaitikliu",
+            "Valdymas: užrakinamas pagrindinis jungiklis, avarinis sustabdymas",
+            "Valdymas: maišyklė ĮJ./IŠJ.",
+            "Valdymas: maišiklis ĮJ./IŠJ.",
+            "Valdymas: siurblys ĮJ./IŠJ.",
+            "CCP valdymo blokas: plynus maišymo santykio reguliavimas nuo 0 iki 30 %",
+            "CCP valdymo blokas: cemento suspensijos ir poliuretano P-Q registravimas"
+          ],
+          "gen": true
+        },
+        {
+          "type": "related",
+          "title": "Bazinis modelis",
+          "items": [
+            {
+              "href": "/produkter/haeny/manuella-pumpar/ic-325-ic325-ccp"
+            }
+          ]
+        }
+      ],
+      "published": true
+    },
+    "lv": {
+      "title": "IC 325 CCP",
+      "h1": "HÄNY IC 325 CCP",
+      "description": "Häny jaunākais modelis un flagmanis — kompakta injektēšanas platforma cementa suspensijai, kā arī poliuretāna injektēšanai. IC325 CCP sastāv no IC325 un papildu bloka / moduļa ar augstspiediena sūkni WIWA K2…",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "HÄNY IC 325 & IC325 CCP",
+          "width": 876,
+          "height": 510,
+          "src": "/assets/img/haeny-automatiska-pumpar-1.webp",
+          "href": "/produkter/haeny"
+        },
+        {
+          "type": "image",
+          "alt": "Häny IC325 CCP: IC325 ar CCP moduli",
+          "src": "/assets/img/haeny-ic325-ccp-combo.webp",
+          "width": 1800,
+          "height": 1800,
+          "callouts": [
+            {
+              "kind": "bracket",
+              "x": 25.8,
+              "y": 50,
+              "x1": 1.1,
+              "y1": 61.7,
+              "x2": 39.9,
+              "y2": 78.1,
+              "tick": 3,
+              "side": 1,
+              "text": "IC 325"
+            },
+            {
+              "kind": "bracket",
+              "x": 65.3,
+              "y": 46.5,
+              "x1": 40.3,
+              "y1": 78.3,
+              "x2": 53,
+              "y2": 83.7,
+              "tick": 3,
+              "side": 1,
+              "text": "WIWA 2K"
+            }
+          ]
+        },
+        {
+          "type": "carousel",
+          "items": [
+            {
+              "src": "/assets/img/haeny-manuella-pumpar-ic-325-ic325-ccp-4.webp",
+              "alt": "HÄNY IC 325 & IC325 CCP, 1. attēls",
+              "width": 728,
+              "height": 815
+            },
+            {
+              "src": "/assets/img/haeny-manuella-pumpar-ic-325-ic325-ccp-5.webp",
+              "alt": "HÄNY IC 325 & IC325 CCP, 2. attēls",
+              "width": 800,
+              "height": 800
+            }
+          ],
+          "autoplay": true,
+          "interval": 5
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Häny IC325 CCP",
+          "anchor": "ic325-ccp"
+        },
+        {
+          "type": "text",
+          "html": "Häny jaunākais modelis un flagmanis — kompakta injektēšanas platforma cementa suspensijai, kā arī poliuretāna injektēšanai. IC325 CCP sastāv no <a href=\"/produkter/haeny/manuella-pumpar/ic-325-ic325-ccp\">IC325</a> un papildu bloka / moduļa ar augstspiediena sūkni WIWA K2 poliuretāna maisīšanai un injektēšanai. Papildu blokam ir arī datu reģistrēšanas funkcija."
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Ražība: līdz 2 m³/h",
+            "Maks. spiediens: 100 bar",
+            "Ūdens/cementa attiecība: ≤ 0,35",
+            "Maks. daļiņu izmērs: 5 mm",
+            "Virzuļu skaits: 2 (dubultsūknis)",
+            "Svars: 840 kg",
+            "Izmēri: 2110 x 885 x 1590 mm"
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Atbalsta trīs metodes vienā sistēmā: tikai cementa suspensija, tikai 2K poliuretāns (PU) vai kombinēts cements + PU (CCP metode).",
+            "Integrēts WIWA K2 augstspiediena sūknis precīzai dozēšanai",
+            "RASCOR statiskais mikseris vienmērīgai un drošai maisīšanai",
+            "Pilnībā automātiska vadība ar reāllaika reģistrēšanu un pilnīgu izsekojamību"
+          ]
+        },
+        {
+          "type": "text",
+          "html": "Zems apkopes līmenis un mazāka mazgāšanas nepieciešamība. Optimizēta šaurām vietām — viegli pārvietot un uzstādīt"
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Sazinieties ar mums</a>, lai uzzinātu vairāk."
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Brošūra",
+          "href": "/assets/docs/haeny-manuella-pumpar-ic-325-ic325-ccp-broschyr-eng-2.pdf",
+          "driveId": "1j3Fwms6yFgGqN_tLg0CJDkkEJAoECTUJ"
+        },
+        {
+          "type": "video",
+          "provider": "youtube",
+          "id": "JRLJBqrYTF8",
+          "title": "Häny IC325 | Injektēšanas sūknis ar poliuretānu | Haeny CCP — poliuretāna sūknis"
+        },
+        {
+          "type": "text",
+          "html": "Blakus esošajā video Häny speciālists stāsta vairāk par IC325 CCP darbību. Noklikšķiniet uz video un skatieties mūsu YouTube kanālā."
+        },
+        {
+          "type": "datasheet",
+          "title": "Tehniskie dati",
+          "tagline": "Kompakta injektēšanas iekārta IC 325CCP",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Injektēšanas sūknis (ZMP 625)",
+              "rows": [
+                {
+                  "label": "IC ražība",
+                  "metric": "2 m³/h"
+                },
+                {
+                  "label": "Maks. spiediens",
+                  "metric": "100 bar"
+                },
+                {
+                  "label": "Maks. graudu izmērs",
+                  "metric": "5 mm"
+                },
+                {
+                  "label": "Hidrauliskā tvertne",
+                  "metric": "52 l"
+                },
+                {
+                  "label": "Sūkņa modulis",
+                  "metric": "dubults"
+                },
+                {
+                  "label": "Dzesēšanas ūdens plūsma",
+                  "metric": "2–3 l/min"
+                },
+                {
+                  "label": "Dzesēšanas ūdens pieslēgums",
+                  "metric": "BSP ⅜\""
+                },
+                {
+                  "label": "Spiediena pieslēgums",
+                  "metric": "BSP 1\""
+                }
+              ]
+            },
+            {
+              "title": "Mikseris / maisītājs",
+              "rows": [
+                {
+                  "label": "Mikseri lietderīgais tilpums",
+                  "metric": "100 l"
+                },
+                {
+                  "label": "Cirkulācijas ražība",
+                  "metric": "540 l/min"
+                },
+                {
+                  "label": "Ūdens pieslēgums",
+                  "metric": "BSP ¾\""
+                },
+                {
+                  "label": "Maisītāja ražība",
+                  "metric": "150 l"
+                }
+              ]
+            },
+            {
+              "title": "PU injektēšanas sūknis",
+              "rows": [
+                {
+                  "label": "Maks. ražība",
+                  "metric": "14 l/min"
+                },
+                {
+                  "label": "Maks. spiediens",
+                  "metric": "195 bar"
+                },
+                {
+                  "label": "Maisīšanas attiecība",
+                  "metric": "1:1"
+                },
+                {
+                  "label": "Spiedienu attiecība",
+                  "metric": "30:1"
+                }
+              ]
+            },
+            {
+              "title": "Svars un izmēri",
+              "rows": [
+                {
+                  "label": "Aptuvenais svars",
+                  "metric": "840 kg"
+                },
+                {
+                  "label": "Platums",
+                  "metric": "885 mm"
+                },
+                {
+                  "label": "Augstums",
+                  "metric": "1,590 mm"
+                },
+                {
+                  "label": "Garums",
+                  "metric": "2,110 mm"
+                }
+              ]
+            },
+            {
+              "title": "Elektriskie dati",
+              "rows": [
+                {
+                  "label": "Spriegums",
+                  "metric": "3x 400/460"
+                },
+                {
+                  "label": "Frekvence",
+                  "metric": "50 / 60 Hz"
+                },
+                {
+                  "label": "Nominālā jauda",
+                  "metric": "9.1 / 10.5 kW"
+                }
+              ]
+            },
+            {
+              "title": "Pneimatiskie dati",
+              "rows": [
+                {
+                  "label": "Maks. ieplūstošā gaisa spiediens",
+                  "metric": "6.5 bar"
+                },
+                {
+                  "label": "Maks. gaisa patēriņš",
+                  "metric": "2500 l/min"
+                },
+                {
+                  "label": "Gaisa pieslēgums",
+                  "metric": "BSP 1\""
+                }
+              ]
+            }
+          ],
+          "note": "1: ūdens/cementa attiecība = 1",
+          "source": "Dati ņemti no ražotāja brošūrām (angļu val.).",
+          "gen": true
+        },
+        {
+          "type": "columns",
+          "ratio": "50-50",
+          "left": [
+            {
+              "type": "perfchart",
+              "title": "Sūkņa veiktspēja: IC 325CCP",
+              "hint": "Virziet peli virs diagrammas, pieskarieties tai vai izmantojiet bulttaustiņus, lai nolasītu vērtības. Noklikšķiniet uz virzuļa izmēra, lai to paslēptu vai parādītu (veiciet dubultklikšķi, lai rādītu tikai to).",
+              "chipsLabel": "Rādīt līknes",
+              "xName": "Spiediens",
+              "yName": "Caurplūde",
+              "x": {
+                "label": "Pressure",
+                "unit": "bar",
+                "min": 0,
+                "max": 100,
+                "step": 10
+              },
+              "y": {
+                "label": "Output",
+                "unit": "l/min",
+                "min": 0,
+                "max": 35,
+                "step": 5
+              },
+              "series": [
+                {
+                  "name": "Zems spiediens",
+                  "color": "#2f2483",
+                  "points": [
+                    [
+                      0,
+                      32.9
+                    ],
+                    [
+                      0,
+                      32.8
+                    ],
+                    [
+                      0.4,
+                      32.8
+                    ],
+                    [
+                      1,
+                      32.7
+                    ],
+                    [
+                      1.8,
+                      32.6
+                    ],
+                    [
+                      2.8,
+                      32.5
+                    ],
+                    [
+                      3.9,
+                      32.4
+                    ],
+                    [
+                      5.3,
+                      32.2
+                    ],
+                    [
+                      6.7,
+                      32.1
+                    ],
+                    [
+                      8.3,
+                      31.9
+                    ],
+                    [
+                      10.1,
+                      31.7
+                    ],
+                    [
+                      11.9,
+                      31.5
+                    ],
+                    [
+                      13.8,
+                      31.3
+                    ],
+                    [
+                      16.2,
+                      31.1
+                    ],
+                    [
+                      19.6,
+                      30.7
+                    ],
+                    [
+                      23.7,
+                      30.3
+                    ],
+                    [
+                      28.3,
+                      29.9
+                    ],
+                    [
+                      33.2,
+                      29.4
+                    ],
+                    [
+                      38.3,
+                      28.9
+                    ],
+                    [
+                      43.2,
+                      28.4
+                    ],
+                    [
+                      47.9,
+                      27.9
+                    ],
+                    [
+                      52.1,
+                      27.5
+                    ],
+                    [
+                      55.6,
+                      27.1
+                    ],
+                    [
+                      58.2,
+                      26.8
+                    ],
+                    [
+                      59.7,
+                      26.7
+                    ],
+                    [
+                      61.1,
+                      26.4
+                    ],
+                    [
+                      62.4,
+                      26.1
+                    ],
+                    [
+                      63.5,
+                      25.6
+                    ],
+                    [
+                      64.4,
+                      25.1
+                    ],
+                    [
+                      65.2,
+                      24.5
+                    ],
+                    [
+                      65.8,
+                      23.8
+                    ],
+                    [
+                      66.3,
+                      23.1
+                    ],
+                    [
+                      66.7,
+                      22.4
+                    ],
+                    [
+                      67.1,
+                      21.5
+                    ],
+                    [
+                      67.3,
+                      20.7
+                    ],
+                    [
+                      67.4,
+                      19.8
+                    ],
+                    [
+                      67.5,
+                      19
+                    ],
+                    [
+                      67.7,
+                      17.6
+                    ],
+                    [
+                      68,
+                      16.2
+                    ],
+                    [
+                      68.1,
+                      14.6
+                    ],
+                    [
+                      68.3,
+                      12.9
+                    ],
+                    [
+                      68.5,
+                      11.2
+                    ],
+                    [
+                      68.7,
+                      9.5
+                    ],
+                    [
+                      68.8,
+                      7.7
+                    ],
+                    [
+                      69,
+                      6
+                    ],
+                    [
+                      69.1,
+                      4.4
+                    ],
+                    [
+                      69.3,
+                      2.8
+                    ],
+                    [
+                      69.4,
+                      1.3
+                    ],
+                    [
+                      69.6,
+                      0
+                    ]
+                  ]
+                },
+                {
+                  "name": "Augsts spiediens",
+                  "color": "#e3000f",
+                  "points": [
+                    [
+                      0,
+                      20.8
+                    ],
+                    [
+                      0.7,
+                      20.7
+                    ],
+                    [
+                      1.5,
+                      20.6
+                    ],
+                    [
+                      2.3,
+                      20.4
+                    ],
+                    [
+                      3.3,
+                      20.3
+                    ],
+                    [
+                      4.3,
+                      20.2
+                    ],
+                    [
+                      5.3,
+                      20
+                    ],
+                    [
+                      6.5,
+                      19.9
+                    ],
+                    [
+                      7.7,
+                      19.8
+                    ],
+                    [
+                      9,
+                      19.7
+                    ],
+                    [
+                      10.4,
+                      19.6
+                    ],
+                    [
+                      11.8,
+                      19.5
+                    ],
+                    [
+                      13.4,
+                      19.5
+                    ],
+                    [
+                      15.1,
+                      19.5
+                    ],
+                    [
+                      17.8,
+                      19.5
+                    ],
+                    [
+                      21.3,
+                      19.4
+                    ],
+                    [
+                      25.5,
+                      19.4
+                    ],
+                    [
+                      30.3,
+                      19.3
+                    ],
+                    [
+                      35.5,
+                      19.3
+                    ],
+                    [
+                      41,
+                      19.2
+                    ],
+                    [
+                      46.6,
+                      19.2
+                    ],
+                    [
+                      52.2,
+                      19.1
+                    ],
+                    [
+                      57.7,
+                      19.1
+                    ],
+                    [
+                      62.8,
+                      19
+                    ],
+                    [
+                      67.5,
+                      19
+                    ],
+                    [
+                      69.3,
+                      19
+                    ],
+                    [
+                      70.8,
+                      18.9
+                    ],
+                    [
+                      72.1,
+                      18.9
+                    ],
+                    [
+                      73.2,
+                      18.9
+                    ],
+                    [
+                      74.1,
+                      18.9
+                    ],
+                    [
+                      74.9,
+                      18.9
+                    ],
+                    [
+                      75.6,
+                      18.9
+                    ],
+                    [
+                      76.2,
+                      18.9
+                    ],
+                    [
+                      76.7,
+                      18.9
+                    ],
+                    [
+                      77.1,
+                      18.9
+                    ],
+                    [
+                      77.5,
+                      18.9
+                    ],
+                    [
+                      77.9,
+                      18.8
+                    ],
+                    [
+                      79.2,
+                      18.8
+                    ],
+                    [
+                      80.4,
+                      18.8
+                    ],
+                    [
+                      81.6,
+                      18.6
+                    ],
+                    [
+                      82.7,
+                      18.4
+                    ],
+                    [
+                      83.7,
+                      18.2
+                    ],
+                    [
+                      84.8,
+                      17.9
+                    ],
+                    [
+                      85.7,
+                      17.5
+                    ],
+                    [
+                      86.6,
+                      17.1
+                    ],
+                    [
+                      87.4,
+                      16.5
+                    ],
+                    [
+                      88.2,
+                      15.9
+                    ],
+                    [
+                      89,
+                      15.2
+                    ],
+                    [
+                      89.6,
+                      14.4
+                    ],
+                    [
+                      90.3,
+                      13.5
+                    ],
+                    [
+                      91.1,
+                      12.5
+                    ],
+                    [
+                      92,
+                      11.4
+                    ],
+                    [
+                      92.9,
+                      10.3
+                    ],
+                    [
+                      93.9,
+                      9.2
+                    ],
+                    [
+                      94.8,
+                      7.9
+                    ],
+                    [
+                      95.8,
+                      6.7
+                    ],
+                    [
+                      96.7,
+                      5.4
+                    ],
+                    [
+                      97.5,
+                      4.1
+                    ],
+                    [
+                      98.3,
+                      2.7
+                    ],
+                    [
+                      98.9,
+                      1.4
+                    ],
+                    [
+                      99.4,
+                      0
+                    ]
+                  ]
+                }
+              ],
+              "alt": {
+                "src": "/assets/img/haeny-ccp-chart.webp",
+                "text": "Sūkņa veiktspēja IC 325CCP",
+                "show": "Rādīt oriģinālo diagrammu no brošūras",
+                "hide": "Paslēpt oriģinālo diagrammu"
+              }
+            }
+          ],
+          "right": [
+            {
+              "type": "modules",
+              "layout": "tiles",
+              "columns": 1,
+              "narrow": true,
+              "zoom": true,
+              "more": false,
+              "items": [
+                {
+                  "title": "Izmēri un rasējums",
+                  "image": "/assets/img/haeny-ccp-dim.webp",
+                  "alt": "Izmēri un rasējums IC 325CCP",
+                  "text": "Virziet peli virs rasējuma (vai pieskarieties un velciet), lai to palielinātu 2×.",
+                  "width": 1278,
+                  "height": 1856
+                }
+              ]
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "collapsible": true,
+          "title": "Standarta un papildaprīkojums",
+          "items": [
+            "Standarta komplektācijā (injektēšanas sūknis): manuāla spiediena un caurplūdes regulēšana",
+            "Standarta komplektācijā (injektēšanas sūknis): eļļas līmeņa indikators ar termometru",
+            "Opcija (mikseris / maisītājs): papildu maisīšanas bloks (ieteicams, ja W/C &lt; 0,45)",
+            "Opcija (mikseris / maisītājs): automātisks ūdens skaitītājs",
+            "Vadība: PLC ar gājienu skaitītāju",
+            "Vadība: slēdzams galvenais slēdzis, avārijas apturēšana",
+            "Vadība: mikseris IESLĒGTS/IZSLĒGTS",
+            "Vadība: maisītājs IESLĒGTS/IZSLĒGTS",
+            "Vadība: sūknis IESLĒGTS/IZSLĒGTS",
+            "CCP vadības iekārta: bezpakāpju maisīšanas attiecības regulēšana no 0 līdz 30 %",
+            "CCP vadības iekārta: cementa suspensijas un poliuretāna P-Q reģistrēšana"
+          ],
+          "gen": true
+        },
+        {
+          "type": "related",
+          "title": "Pamatmodelis",
+          "items": [
+            {
+              "href": "/produkter/haeny/manuella-pumpar/ic-325-ic325-ccp"
+            }
+          ]
+        }
+      ],
+      "published": true
+    },
+    "et": {
+      "title": "IC 325 CCP",
+      "h1": "HÄNY IC 325 CCP",
+      "description": "Häny uusim mudel ja lipulaev – kompaktne injekteerimisplatvorm tsemendisuspensioonile ning polüuretaani injekteerimiseks. IC325 CCP koosneb IC325-st ja lisaseadmest/-moodulist kõrgrõhupumbaga WIWA K2…",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "HÄNY IC 325 & IC325 CCP",
+          "width": 876,
+          "height": 510,
+          "src": "/assets/img/haeny-automatiska-pumpar-1.webp",
+          "href": "/produkter/haeny"
+        },
+        {
+          "type": "image",
+          "alt": "Häny IC325 CCP: IC325 CCP-mooduliga",
+          "src": "/assets/img/haeny-ic325-ccp-combo.webp",
+          "width": 1800,
+          "height": 1800,
+          "callouts": [
+            {
+              "kind": "bracket",
+              "x": 25.8,
+              "y": 50,
+              "x1": 1.1,
+              "y1": 61.7,
+              "x2": 39.9,
+              "y2": 78.1,
+              "tick": 3,
+              "side": 1,
+              "text": "IC 325"
+            },
+            {
+              "kind": "bracket",
+              "x": 65.3,
+              "y": 46.5,
+              "x1": 40.3,
+              "y1": 78.3,
+              "x2": 53,
+              "y2": 83.7,
+              "tick": 3,
+              "side": 1,
+              "text": "WIWA 2K"
+            }
+          ]
+        },
+        {
+          "type": "carousel",
+          "items": [
+            {
+              "src": "/assets/img/haeny-manuella-pumpar-ic-325-ic325-ccp-4.webp",
+              "alt": "HÄNY IC 325 & IC325 CCP, pilt 1",
+              "width": 728,
+              "height": 815
+            },
+            {
+              "src": "/assets/img/haeny-manuella-pumpar-ic-325-ic325-ccp-5.webp",
+              "alt": "HÄNY IC 325 & IC325 CCP, pilt 2",
+              "width": 800,
+              "height": 800
+            }
+          ],
+          "autoplay": true,
+          "interval": 5
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Häny IC325 CCP",
+          "anchor": "ic325-ccp"
+        },
+        {
+          "type": "text",
+          "html": "Häny uusim mudel ja lipulaev – kompaktne injekteerimisplatvorm tsemendisuspensioonile ning polüuretaani injekteerimiseks. IC325 CCP koosneb <a href=\"/produkter/haeny/manuella-pumpar/ic-325-ic325-ccp\">IC325</a>-st ja lisaseadmest/-moodulist kõrgrõhupumbaga WIWA K2 polüuretaani segamiseks ja injekteerimiseks. Lisaseadmel on ka andmelogimisfunktsioon."
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Jõudlus: kuni 2 m³/h",
+            "Maks. rõhk: 100 bar",
+            "Vee ja tsemendi suhe: ≤ 0,35",
+            "Maks. osakeste suurus: 5 mm",
+            "Kolbide arv: 2 (kaksikpump)",
+            "Kaal: 840 kg",
+            "Mõõtmed: 2110 x 885 x 1590 mm"
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Toetab kolme meetodit samas süsteemis: ainult tsemendisuspensioon, ainult 2K polüuretaan (PU) või kombineeritud tsement + PU (CCP-meetod).",
+            "Integreeritud WIWA K2 kõrgrõhupump täpseks doseerimiseks",
+            "RASCOR staatiline segisti ühtlaseks ja töökindlaks segamiseks",
+            "Täisautomaatne juhtimine reaalajas logimise ja täieliku jälgitavusega"
+          ]
+        },
+        {
+          "type": "text",
+          "html": "Madal hooldusvajadus ja väiksem pesemisvajadus. Optimeeritud kitsastesse ruumidesse – lihtne liigutada ja paigaldada"
+        },
+        {
+          "type": "text",
+          "html": "Lisateabe saamiseks <a href=\"/kontakta-oss\">võta meiega ühendust</a>."
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Brošüür",
+          "href": "/assets/docs/haeny-manuella-pumpar-ic-325-ic325-ccp-broschyr-eng-2.pdf",
+          "driveId": "1j3Fwms6yFgGqN_tLg0CJDkkEJAoECTUJ"
+        },
+        {
+          "type": "video",
+          "provider": "youtube",
+          "id": "JRLJBqrYTF8",
+          "title": "Häny IC325 | Injekteerimispump polüuretaaniga | Haeny CCP – polüuretaanipump"
+        },
+        {
+          "type": "text",
+          "html": "Kõrvalolevas videos räägib Häny spetsialist lähemalt IC325 CCP toimimisest. Klõpsa videol ja vaata seda meie YouTube’i kanalis."
+        },
+        {
+          "type": "datasheet",
+          "title": "Tehnilised andmed",
+          "tagline": "Kompaktne injekteerimisjaam IC 325CCP",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Injekteerimispump (ZMP 625)",
+              "rows": [
+                {
+                  "label": "IC jõudlus",
+                  "metric": "2 m³/h"
+                },
+                {
+                  "label": "Maks. rõhk",
+                  "metric": "100 bar"
+                },
+                {
+                  "label": "Maks. terasuurus",
+                  "metric": "5 mm"
+                },
+                {
+                  "label": "Hüdraulikapaak",
+                  "metric": "52 l"
+                },
+                {
+                  "label": "Pumbamoodul",
+                  "metric": "kahekordne"
+                },
+                {
+                  "label": "Jahutusvee vooluhulk",
+                  "metric": "2–3 l/min"
+                },
+                {
+                  "label": "Jahutusvee ühendus",
+                  "metric": "BSP ⅜\""
+                },
+                {
+                  "label": "Survetoru ühendus",
+                  "metric": "BSP 1\""
+                }
+              ]
+            },
+            {
+              "title": "Segisti / segur",
+              "rows": [
+                {
+                  "label": "Segisti kasulik maht",
+                  "metric": "100 l"
+                },
+                {
+                  "label": "Ringluse jõudlus",
+                  "metric": "540 l/min"
+                },
+                {
+                  "label": "Veeühendus",
+                  "metric": "BSP ¾\""
+                },
+                {
+                  "label": "Seguri jõudlus",
+                  "metric": "150 l"
+                }
+              ]
+            },
+            {
+              "title": "PU injekteerimispump",
+              "rows": [
+                {
+                  "label": "Maks. jõudlus",
+                  "metric": "14 l/min"
+                },
+                {
+                  "label": "Maks. rõhk",
+                  "metric": "195 bar"
+                },
+                {
+                  "label": "Segamissuhe",
+                  "metric": "1:1"
+                },
+                {
+                  "label": "Rõhusuhe",
+                  "metric": "30:1"
+                }
+              ]
+            },
+            {
+              "title": "Kaal ja mõõtmed",
+              "rows": [
+                {
+                  "label": "Ligikaudne kaal",
+                  "metric": "840 kg"
+                },
+                {
+                  "label": "Laius",
+                  "metric": "885 mm"
+                },
+                {
+                  "label": "Kõrgus",
+                  "metric": "1,590 mm"
+                },
+                {
+                  "label": "Pikkus",
+                  "metric": "2,110 mm"
+                }
+              ]
+            },
+            {
+              "title": "Elektrilised andmed",
+              "rows": [
+                {
+                  "label": "Pinge",
+                  "metric": "3x 400/460"
+                },
+                {
+                  "label": "Sagedus",
+                  "metric": "50 / 60 Hz"
+                },
+                {
+                  "label": "Nimivõimsus",
+                  "metric": "9.1 / 10.5 kW"
+                }
+              ]
+            },
+            {
+              "title": "Pneumaatilised andmed",
+              "rows": [
+                {
+                  "label": "Maks. sisendõhurõhk",
+                  "metric": "6.5 bar"
+                },
+                {
+                  "label": "Maks. õhutarve",
+                  "metric": "2500 l/min"
+                },
+                {
+                  "label": "Õhuühendus",
+                  "metric": "BSP 1\""
+                }
+              ]
+            }
+          ],
+          "note": "1: vee ja tsemendi suhe = 1",
+          "source": "Andmed on võetud tootja brošüüridest (inglise keeles).",
+          "gen": true
+        },
+        {
+          "type": "columns",
+          "ratio": "50-50",
+          "left": [
+            {
+              "type": "perfchart",
+              "title": "Pumba jõudlusnäitajad: IC 325CCP",
+              "hint": "Hoia kursorit diagrammi kohal, puuduta seda või kasuta nooleklahve väärtuste lugemiseks. Klõpsa kolvi suurusel, et seda peita või näidata (topeltklõps näitab ainult seda).",
+              "chipsLabel": "Näita kõveraid",
+              "xName": "Rõhk",
+              "yName": "Vooluhulk",
+              "x": {
+                "label": "Pressure",
+                "unit": "bar",
+                "min": 0,
+                "max": 100,
+                "step": 10
+              },
+              "y": {
+                "label": "Output",
+                "unit": "l/min",
+                "min": 0,
+                "max": 35,
+                "step": 5
+              },
+              "series": [
+                {
+                  "name": "Madal rõhk",
+                  "color": "#2f2483",
+                  "points": [
+                    [
+                      0,
+                      32.9
+                    ],
+                    [
+                      0,
+                      32.8
+                    ],
+                    [
+                      0.4,
+                      32.8
+                    ],
+                    [
+                      1,
+                      32.7
+                    ],
+                    [
+                      1.8,
+                      32.6
+                    ],
+                    [
+                      2.8,
+                      32.5
+                    ],
+                    [
+                      3.9,
+                      32.4
+                    ],
+                    [
+                      5.3,
+                      32.2
+                    ],
+                    [
+                      6.7,
+                      32.1
+                    ],
+                    [
+                      8.3,
+                      31.9
+                    ],
+                    [
+                      10.1,
+                      31.7
+                    ],
+                    [
+                      11.9,
+                      31.5
+                    ],
+                    [
+                      13.8,
+                      31.3
+                    ],
+                    [
+                      16.2,
+                      31.1
+                    ],
+                    [
+                      19.6,
+                      30.7
+                    ],
+                    [
+                      23.7,
+                      30.3
+                    ],
+                    [
+                      28.3,
+                      29.9
+                    ],
+                    [
+                      33.2,
+                      29.4
+                    ],
+                    [
+                      38.3,
+                      28.9
+                    ],
+                    [
+                      43.2,
+                      28.4
+                    ],
+                    [
+                      47.9,
+                      27.9
+                    ],
+                    [
+                      52.1,
+                      27.5
+                    ],
+                    [
+                      55.6,
+                      27.1
+                    ],
+                    [
+                      58.2,
+                      26.8
+                    ],
+                    [
+                      59.7,
+                      26.7
+                    ],
+                    [
+                      61.1,
+                      26.4
+                    ],
+                    [
+                      62.4,
+                      26.1
+                    ],
+                    [
+                      63.5,
+                      25.6
+                    ],
+                    [
+                      64.4,
+                      25.1
+                    ],
+                    [
+                      65.2,
+                      24.5
+                    ],
+                    [
+                      65.8,
+                      23.8
+                    ],
+                    [
+                      66.3,
+                      23.1
+                    ],
+                    [
+                      66.7,
+                      22.4
+                    ],
+                    [
+                      67.1,
+                      21.5
+                    ],
+                    [
+                      67.3,
+                      20.7
+                    ],
+                    [
+                      67.4,
+                      19.8
+                    ],
+                    [
+                      67.5,
+                      19
+                    ],
+                    [
+                      67.7,
+                      17.6
+                    ],
+                    [
+                      68,
+                      16.2
+                    ],
+                    [
+                      68.1,
+                      14.6
+                    ],
+                    [
+                      68.3,
+                      12.9
+                    ],
+                    [
+                      68.5,
+                      11.2
+                    ],
+                    [
+                      68.7,
+                      9.5
+                    ],
+                    [
+                      68.8,
+                      7.7
+                    ],
+                    [
+                      69,
+                      6
+                    ],
+                    [
+                      69.1,
+                      4.4
+                    ],
+                    [
+                      69.3,
+                      2.8
+                    ],
+                    [
+                      69.4,
+                      1.3
+                    ],
+                    [
+                      69.6,
+                      0
+                    ]
+                  ]
+                },
+                {
+                  "name": "Kõrge rõhk",
+                  "color": "#e3000f",
+                  "points": [
+                    [
+                      0,
+                      20.8
+                    ],
+                    [
+                      0.7,
+                      20.7
+                    ],
+                    [
+                      1.5,
+                      20.6
+                    ],
+                    [
+                      2.3,
+                      20.4
+                    ],
+                    [
+                      3.3,
+                      20.3
+                    ],
+                    [
+                      4.3,
+                      20.2
+                    ],
+                    [
+                      5.3,
+                      20
+                    ],
+                    [
+                      6.5,
+                      19.9
+                    ],
+                    [
+                      7.7,
+                      19.8
+                    ],
+                    [
+                      9,
+                      19.7
+                    ],
+                    [
+                      10.4,
+                      19.6
+                    ],
+                    [
+                      11.8,
+                      19.5
+                    ],
+                    [
+                      13.4,
+                      19.5
+                    ],
+                    [
+                      15.1,
+                      19.5
+                    ],
+                    [
+                      17.8,
+                      19.5
+                    ],
+                    [
+                      21.3,
+                      19.4
+                    ],
+                    [
+                      25.5,
+                      19.4
+                    ],
+                    [
+                      30.3,
+                      19.3
+                    ],
+                    [
+                      35.5,
+                      19.3
+                    ],
+                    [
+                      41,
+                      19.2
+                    ],
+                    [
+                      46.6,
+                      19.2
+                    ],
+                    [
+                      52.2,
+                      19.1
+                    ],
+                    [
+                      57.7,
+                      19.1
+                    ],
+                    [
+                      62.8,
+                      19
+                    ],
+                    [
+                      67.5,
+                      19
+                    ],
+                    [
+                      69.3,
+                      19
+                    ],
+                    [
+                      70.8,
+                      18.9
+                    ],
+                    [
+                      72.1,
+                      18.9
+                    ],
+                    [
+                      73.2,
+                      18.9
+                    ],
+                    [
+                      74.1,
+                      18.9
+                    ],
+                    [
+                      74.9,
+                      18.9
+                    ],
+                    [
+                      75.6,
+                      18.9
+                    ],
+                    [
+                      76.2,
+                      18.9
+                    ],
+                    [
+                      76.7,
+                      18.9
+                    ],
+                    [
+                      77.1,
+                      18.9
+                    ],
+                    [
+                      77.5,
+                      18.9
+                    ],
+                    [
+                      77.9,
+                      18.8
+                    ],
+                    [
+                      79.2,
+                      18.8
+                    ],
+                    [
+                      80.4,
+                      18.8
+                    ],
+                    [
+                      81.6,
+                      18.6
+                    ],
+                    [
+                      82.7,
+                      18.4
+                    ],
+                    [
+                      83.7,
+                      18.2
+                    ],
+                    [
+                      84.8,
+                      17.9
+                    ],
+                    [
+                      85.7,
+                      17.5
+                    ],
+                    [
+                      86.6,
+                      17.1
+                    ],
+                    [
+                      87.4,
+                      16.5
+                    ],
+                    [
+                      88.2,
+                      15.9
+                    ],
+                    [
+                      89,
+                      15.2
+                    ],
+                    [
+                      89.6,
+                      14.4
+                    ],
+                    [
+                      90.3,
+                      13.5
+                    ],
+                    [
+                      91.1,
+                      12.5
+                    ],
+                    [
+                      92,
+                      11.4
+                    ],
+                    [
+                      92.9,
+                      10.3
+                    ],
+                    [
+                      93.9,
+                      9.2
+                    ],
+                    [
+                      94.8,
+                      7.9
+                    ],
+                    [
+                      95.8,
+                      6.7
+                    ],
+                    [
+                      96.7,
+                      5.4
+                    ],
+                    [
+                      97.5,
+                      4.1
+                    ],
+                    [
+                      98.3,
+                      2.7
+                    ],
+                    [
+                      98.9,
+                      1.4
+                    ],
+                    [
+                      99.4,
+                      0
+                    ]
+                  ]
+                }
+              ],
+              "alt": {
+                "src": "/assets/img/haeny-ccp-chart.webp",
+                "text": "Pumba jõudlusnäitajad IC 325CCP",
+                "show": "Näita brošüüri originaaldiagrammi",
+                "hide": "Peida originaaldiagramm"
+              }
+            }
+          ],
+          "right": [
+            {
+              "type": "modules",
+              "layout": "tiles",
+              "columns": 1,
+              "narrow": true,
+              "zoom": true,
+              "more": false,
+              "items": [
+                {
+                  "title": "Mõõtmed ja joonis",
+                  "image": "/assets/img/haeny-ccp-dim.webp",
+                  "alt": "Mõõtmed ja joonis IC 325CCP",
+                  "text": "Hoia kursorit joonise kohal (või puuduta ja lohista), et seda 2× suurendada.",
+                  "width": 1278,
+                  "height": 1856
+                }
+              ]
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "collapsible": true,
+          "title": "Standard- ja lisavarustus",
+          "items": [
+            "Standardvarustuses (injekteerimispump): käsitsi rõhu- ja vooluhulgareguleerimine",
+            "Standardvarustuses (injekteerimispump): õlitaseme indikaator termomeetriga",
+            "Lisavarustus (segisti / segur): lisasegamisüksus (soovitatav, kui W/C &lt; 0,45)",
+            "Lisavarustus (segisti / segur): automaatne veearvesti",
+            "Juhtimine: PLC taktiloendajaga",
+            "Juhtimine: lukustatav pealüliti, hädaseiskamine",
+            "Juhtimine: segisti SEES/VÄLJAS",
+            "Juhtimine: segur SEES/VÄLJAS",
+            "Juhtimine: pump SEES/VÄLJAS",
+            "CCP juhtseade: segamissuhte sujuv reguleerimine 0 kuni 30 %",
+            "CCP juhtseade: tsemendisuspensiooni ja polüuretaani P-Q-registreerimine"
+          ],
+          "gen": true
+        },
+        {
+          "type": "related",
+          "title": "Põhimudel",
+          "items": [
+            {
+              "href": "/produkter/haeny/manuella-pumpar/ic-325-ic325-ccp"
+            }
+          ]
+        }
+      ],
+      "published": true
+    },
+    "ru": {
+      "title": "IC 325 CCP",
+      "h1": "HÄNY IC 325 CCP",
+      "description": "Новейшая модель и флагман Häny — компактная инъекционная платформа для цементного раствора, а также для инъектирования полиуретана. IC325 CCP состоит из IC325 и дополнительного блока/модуля с насосом высокого давления WIWA K2…",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "HÄNY IC 325 & IC325 CCP",
+          "width": 876,
+          "height": 510,
+          "src": "/assets/img/haeny-automatiska-pumpar-1.webp",
+          "href": "/produkter/haeny"
+        },
+        {
+          "type": "image",
+          "alt": "Häny IC325 CCP: IC325 с модулем CCP",
+          "src": "/assets/img/haeny-ic325-ccp-combo.webp",
+          "width": 1800,
+          "height": 1800,
+          "callouts": [
+            {
+              "kind": "bracket",
+              "x": 25.8,
+              "y": 50,
+              "x1": 1.1,
+              "y1": 61.7,
+              "x2": 39.9,
+              "y2": 78.1,
+              "tick": 3,
+              "side": 1,
+              "text": "IC 325"
+            },
+            {
+              "kind": "bracket",
+              "x": 65.3,
+              "y": 46.5,
+              "x1": 40.3,
+              "y1": 78.3,
+              "x2": 53,
+              "y2": 83.7,
+              "tick": 3,
+              "side": 1,
+              "text": "WIWA 2K"
+            }
+          ]
+        },
+        {
+          "type": "carousel",
+          "items": [
+            {
+              "src": "/assets/img/haeny-manuella-pumpar-ic-325-ic325-ccp-4.webp",
+              "alt": "HÄNY IC 325 & IC325 CCP, изображение 1",
+              "width": 728,
+              "height": 815
+            },
+            {
+              "src": "/assets/img/haeny-manuella-pumpar-ic-325-ic325-ccp-5.webp",
+              "alt": "HÄNY IC 325 & IC325 CCP, изображение 2",
+              "width": 800,
+              "height": 800
+            }
+          ],
+          "autoplay": true,
+          "interval": 5
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Häny IC325 CCP",
+          "anchor": "ic325-ccp"
+        },
+        {
+          "type": "text",
+          "html": "Новейшая модель и флагман Häny — компактная инъекционная платформа для цементного раствора, а также для инъектирования полиуретана. IC325 CCP состоит из <a href=\"/produkter/haeny/manuella-pumpar/ic-325-ic325-ccp\">IC325</a> и дополнительного блока/модуля с насосом высокого давления WIWA K2 для смешивания и инъектирования полиуретана. Дополнительный блок также имеет функцию регистрации данных."
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Производительность: до 2 м³/ч",
+            "Макс. давление: 100 бар",
+            "Водоцементное отношение: ≤ 0,35",
+            "Макс. размер частиц: 5 мм",
+            "Количество плунжеров: 2 (сдвоенный насос)",
+            "Масса: 840 кг",
+            "Размеры: 2110 x 885 x 1590 мм"
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Поддерживает три метода в одной системе: только цементный раствор, только 2K-полиуретан (PU) или комбинированный цемент + PU (метод CCP).",
+            "Встроенный насос высокого давления WIWA K2 для точного дозирования",
+            "Статический смеситель RASCOR для равномерного и надёжного смешивания",
+            "Полностью автоматическое управление с регистрацией в реальном времени и полной прослеживаемостью"
+          ]
+        },
+        {
+          "type": "text",
+          "html": "Низкие затраты на обслуживание и меньшая потребность в промывке. Оптимизирована для стеснённых условий, проста в перемещении и установке"
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Свяжитесь с нами</a> для получения дополнительной информации."
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Брошюра",
+          "href": "/assets/docs/haeny-manuella-pumpar-ic-325-ic325-ccp-broschyr-eng-2.pdf",
+          "driveId": "1j3Fwms6yFgGqN_tLg0CJDkkEJAoECTUJ"
+        },
+        {
+          "type": "video",
+          "provider": "youtube",
+          "id": "JRLJBqrYTF8",
+          "title": "Häny IC325 | Инъекционный насос с полиуретаном | Haeny CCP — насос для полиуретана"
+        },
+        {
+          "type": "text",
+          "html": "В видео рядом с этим текстом специалист Häny подробнее рассказывает о принципе работы IC325 CCP. Нажмите на видео и смотрите его на нашем канале YouTube."
+        },
+        {
+          "type": "datasheet",
+          "title": "Технические данные",
+          "tagline": "Компактная инъекционная установка IC 325CCP",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Инъекционный насос (ZMP 625)",
+              "rows": [
+                {
+                  "label": "Производительность IC",
+                  "metric": "2 m³/h"
+                },
+                {
+                  "label": "Макс. давление",
+                  "metric": "100 bar"
+                },
+                {
+                  "label": "Макс. размер зерна",
+                  "metric": "5 mm"
+                },
+                {
+                  "label": "Гидробак",
+                  "metric": "52 l"
+                },
+                {
+                  "label": "Насосный модуль",
+                  "metric": "двойной"
+                },
+                {
+                  "label": "Расход охлаждающей воды",
+                  "metric": "2–3 l/min"
+                },
+                {
+                  "label": "Подключение охлаждающей воды",
+                  "metric": "BSP ⅜\""
+                },
+                {
+                  "label": "Напорный патрубок",
+                  "metric": "BSP 1\""
+                }
+              ]
+            },
+            {
+              "title": "Смеситель / мешалка",
+              "rows": [
+                {
+                  "label": "Полезный объём смесителя",
+                  "metric": "100 l"
+                },
+                {
+                  "label": "Производительность циркуляции",
+                  "metric": "540 l/min"
+                },
+                {
+                  "label": "Подключение воды",
+                  "metric": "BSP ¾\""
+                },
+                {
+                  "label": "Производительность мешалки",
+                  "metric": "150 l"
+                }
+              ]
+            },
+            {
+              "title": "Инъекционный насос для ПУ",
+              "rows": [
+                {
+                  "label": "Макс. производительность",
+                  "metric": "14 l/min"
+                },
+                {
+                  "label": "Макс. давление",
+                  "metric": "195 bar"
+                },
+                {
+                  "label": "Соотношение смешивания",
+                  "metric": "1:1"
+                },
+                {
+                  "label": "Соотношение давлений",
+                  "metric": "30:1"
+                }
+              ]
+            },
+            {
+              "title": "Масса и размеры",
+              "rows": [
+                {
+                  "label": "Ориентировочная масса",
+                  "metric": "840 kg"
+                },
+                {
+                  "label": "Ширина",
+                  "metric": "885 mm"
+                },
+                {
+                  "label": "Высота",
+                  "metric": "1,590 mm"
+                },
+                {
+                  "label": "Длина",
+                  "metric": "2,110 mm"
+                }
+              ]
+            },
+            {
+              "title": "Электрические данные",
+              "rows": [
+                {
+                  "label": "Напряжение",
+                  "metric": "3x 400/460"
+                },
+                {
+                  "label": "Частота",
+                  "metric": "50 / 60 Hz"
+                },
+                {
+                  "label": "Номинальная мощность",
+                  "metric": "9.1 / 10.5 kW"
+                }
+              ]
+            },
+            {
+              "title": "Пневматические данные",
+              "rows": [
+                {
+                  "label": "Макс. давление воздуха на входе",
+                  "metric": "6.5 bar"
+                },
+                {
+                  "label": "Макс. расход воздуха",
+                  "metric": "2500 l/min"
+                },
+                {
+                  "label": "Подключение воздуха",
+                  "metric": "BSP 1\""
+                }
+              ]
+            }
+          ],
+          "note": "1: водоцементное отношение = 1",
+          "source": "Данные взяты из брошюр производителя (на английском языке).",
+          "gen": true
+        },
+        {
+          "type": "columns",
+          "ratio": "50-50",
+          "left": [
+            {
+              "type": "perfchart",
+              "title": "Характеристики насоса: IC 325CCP",
+              "hint": "Наведите курсор на диаграмму, коснитесь её или используйте клавиши со стрелками, чтобы считать значения. Нажмите на размер плунжера, чтобы скрыть или показать его (двойной щелчок покажет только его).",
+              "chipsLabel": "Показать кривые",
+              "xName": "Давление",
+              "yName": "Расход",
+              "x": {
+                "label": "Pressure",
+                "unit": "bar",
+                "min": 0,
+                "max": 100,
+                "step": 10
+              },
+              "y": {
+                "label": "Output",
+                "unit": "l/min",
+                "min": 0,
+                "max": 35,
+                "step": 5
+              },
+              "series": [
+                {
+                  "name": "Низкое давление",
+                  "color": "#2f2483",
+                  "points": [
+                    [
+                      0,
+                      32.9
+                    ],
+                    [
+                      0,
+                      32.8
+                    ],
+                    [
+                      0.4,
+                      32.8
+                    ],
+                    [
+                      1,
+                      32.7
+                    ],
+                    [
+                      1.8,
+                      32.6
+                    ],
+                    [
+                      2.8,
+                      32.5
+                    ],
+                    [
+                      3.9,
+                      32.4
+                    ],
+                    [
+                      5.3,
+                      32.2
+                    ],
+                    [
+                      6.7,
+                      32.1
+                    ],
+                    [
+                      8.3,
+                      31.9
+                    ],
+                    [
+                      10.1,
+                      31.7
+                    ],
+                    [
+                      11.9,
+                      31.5
+                    ],
+                    [
+                      13.8,
+                      31.3
+                    ],
+                    [
+                      16.2,
+                      31.1
+                    ],
+                    [
+                      19.6,
+                      30.7
+                    ],
+                    [
+                      23.7,
+                      30.3
+                    ],
+                    [
+                      28.3,
+                      29.9
+                    ],
+                    [
+                      33.2,
+                      29.4
+                    ],
+                    [
+                      38.3,
+                      28.9
+                    ],
+                    [
+                      43.2,
+                      28.4
+                    ],
+                    [
+                      47.9,
+                      27.9
+                    ],
+                    [
+                      52.1,
+                      27.5
+                    ],
+                    [
+                      55.6,
+                      27.1
+                    ],
+                    [
+                      58.2,
+                      26.8
+                    ],
+                    [
+                      59.7,
+                      26.7
+                    ],
+                    [
+                      61.1,
+                      26.4
+                    ],
+                    [
+                      62.4,
+                      26.1
+                    ],
+                    [
+                      63.5,
+                      25.6
+                    ],
+                    [
+                      64.4,
+                      25.1
+                    ],
+                    [
+                      65.2,
+                      24.5
+                    ],
+                    [
+                      65.8,
+                      23.8
+                    ],
+                    [
+                      66.3,
+                      23.1
+                    ],
+                    [
+                      66.7,
+                      22.4
+                    ],
+                    [
+                      67.1,
+                      21.5
+                    ],
+                    [
+                      67.3,
+                      20.7
+                    ],
+                    [
+                      67.4,
+                      19.8
+                    ],
+                    [
+                      67.5,
+                      19
+                    ],
+                    [
+                      67.7,
+                      17.6
+                    ],
+                    [
+                      68,
+                      16.2
+                    ],
+                    [
+                      68.1,
+                      14.6
+                    ],
+                    [
+                      68.3,
+                      12.9
+                    ],
+                    [
+                      68.5,
+                      11.2
+                    ],
+                    [
+                      68.7,
+                      9.5
+                    ],
+                    [
+                      68.8,
+                      7.7
+                    ],
+                    [
+                      69,
+                      6
+                    ],
+                    [
+                      69.1,
+                      4.4
+                    ],
+                    [
+                      69.3,
+                      2.8
+                    ],
+                    [
+                      69.4,
+                      1.3
+                    ],
+                    [
+                      69.6,
+                      0
+                    ]
+                  ]
+                },
+                {
+                  "name": "Высокое давление",
+                  "color": "#e3000f",
+                  "points": [
+                    [
+                      0,
+                      20.8
+                    ],
+                    [
+                      0.7,
+                      20.7
+                    ],
+                    [
+                      1.5,
+                      20.6
+                    ],
+                    [
+                      2.3,
+                      20.4
+                    ],
+                    [
+                      3.3,
+                      20.3
+                    ],
+                    [
+                      4.3,
+                      20.2
+                    ],
+                    [
+                      5.3,
+                      20
+                    ],
+                    [
+                      6.5,
+                      19.9
+                    ],
+                    [
+                      7.7,
+                      19.8
+                    ],
+                    [
+                      9,
+                      19.7
+                    ],
+                    [
+                      10.4,
+                      19.6
+                    ],
+                    [
+                      11.8,
+                      19.5
+                    ],
+                    [
+                      13.4,
+                      19.5
+                    ],
+                    [
+                      15.1,
+                      19.5
+                    ],
+                    [
+                      17.8,
+                      19.5
+                    ],
+                    [
+                      21.3,
+                      19.4
+                    ],
+                    [
+                      25.5,
+                      19.4
+                    ],
+                    [
+                      30.3,
+                      19.3
+                    ],
+                    [
+                      35.5,
+                      19.3
+                    ],
+                    [
+                      41,
+                      19.2
+                    ],
+                    [
+                      46.6,
+                      19.2
+                    ],
+                    [
+                      52.2,
+                      19.1
+                    ],
+                    [
+                      57.7,
+                      19.1
+                    ],
+                    [
+                      62.8,
+                      19
+                    ],
+                    [
+                      67.5,
+                      19
+                    ],
+                    [
+                      69.3,
+                      19
+                    ],
+                    [
+                      70.8,
+                      18.9
+                    ],
+                    [
+                      72.1,
+                      18.9
+                    ],
+                    [
+                      73.2,
+                      18.9
+                    ],
+                    [
+                      74.1,
+                      18.9
+                    ],
+                    [
+                      74.9,
+                      18.9
+                    ],
+                    [
+                      75.6,
+                      18.9
+                    ],
+                    [
+                      76.2,
+                      18.9
+                    ],
+                    [
+                      76.7,
+                      18.9
+                    ],
+                    [
+                      77.1,
+                      18.9
+                    ],
+                    [
+                      77.5,
+                      18.9
+                    ],
+                    [
+                      77.9,
+                      18.8
+                    ],
+                    [
+                      79.2,
+                      18.8
+                    ],
+                    [
+                      80.4,
+                      18.8
+                    ],
+                    [
+                      81.6,
+                      18.6
+                    ],
+                    [
+                      82.7,
+                      18.4
+                    ],
+                    [
+                      83.7,
+                      18.2
+                    ],
+                    [
+                      84.8,
+                      17.9
+                    ],
+                    [
+                      85.7,
+                      17.5
+                    ],
+                    [
+                      86.6,
+                      17.1
+                    ],
+                    [
+                      87.4,
+                      16.5
+                    ],
+                    [
+                      88.2,
+                      15.9
+                    ],
+                    [
+                      89,
+                      15.2
+                    ],
+                    [
+                      89.6,
+                      14.4
+                    ],
+                    [
+                      90.3,
+                      13.5
+                    ],
+                    [
+                      91.1,
+                      12.5
+                    ],
+                    [
+                      92,
+                      11.4
+                    ],
+                    [
+                      92.9,
+                      10.3
+                    ],
+                    [
+                      93.9,
+                      9.2
+                    ],
+                    [
+                      94.8,
+                      7.9
+                    ],
+                    [
+                      95.8,
+                      6.7
+                    ],
+                    [
+                      96.7,
+                      5.4
+                    ],
+                    [
+                      97.5,
+                      4.1
+                    ],
+                    [
+                      98.3,
+                      2.7
+                    ],
+                    [
+                      98.9,
+                      1.4
+                    ],
+                    [
+                      99.4,
+                      0
+                    ]
+                  ]
+                }
+              ],
+              "alt": {
+                "src": "/assets/img/haeny-ccp-chart.webp",
+                "text": "Характеристики насоса IC 325CCP",
+                "show": "Показать оригинальную диаграмму из брошюры",
+                "hide": "Скрыть оригинальную диаграмму"
+              }
+            }
+          ],
+          "right": [
+            {
+              "type": "modules",
+              "layout": "tiles",
+              "columns": 1,
+              "narrow": true,
+              "zoom": true,
+              "more": false,
+              "items": [
+                {
+                  "title": "Размеры и чертёж",
+                  "image": "/assets/img/haeny-ccp-dim.webp",
+                  "alt": "Размеры и чертёж IC 325CCP",
+                  "text": "Наведите курсор на чертёж (или коснитесь и проведите пальцем), чтобы увеличить его в 2 раза.",
+                  "width": 1278,
+                  "height": 1856
+                }
+              ]
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "collapsible": true,
+          "title": "Стандартное и дополнительное оборудование",
+          "items": [
+            "Входит в стандартную комплектацию (инъекционный насос): ручная регулировка давления и расхода",
+            "Входит в стандартную комплектацию (инъекционный насос): индикатор уровня масла с термометром",
+            "Опция (смеситель / мешалка): дополнительный смесительный блок (рекомендуется при В/Ц &lt; 0,45)",
+            "Опция (смеситель / мешалка): автоматический счётчик воды",
+            "Управление: ПЛК со счётчиком ходов",
+            "Управление: запираемый главный выключатель, аварийная остановка",
+            "Управление: смеситель ВКЛ/ВЫКЛ",
+            "Управление: мешалка ВКЛ/ВЫКЛ",
+            "Управление: насос ВКЛ/ВЫКЛ",
+            "Блок управления CCP: плавная регулировка соотношения смешивания от 0 до 30 %",
+            "Блок управления CCP: P-Q-регистрация цементной суспензии и полиуретана"
+          ],
+          "gen": true
+        },
+        {
+          "type": "related",
+          "title": "Базовая модель",
+          "items": [
+            {
+              "href": "/produkter/haeny/manuella-pumpar/ic-325-ic325-ccp"
+            }
+          ]
+        }
+      ],
+      "published": true
     }
   }
 }

@@ -414,6 +414,414 @@
         }
       ],
       "published": true
+    },
+    "lt": {
+      "title": "RDS350",
+      "h1": "RDS350",
+      "description": "Kompaktiška hidraulinė sukamoji galvutė vidutinio dydžio gręžimo stiebams ir ribotos prieigos gręžimo mašinoms.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "TEI Rock Drills logotipas",
+          "href": "/produkter/tei",
+          "width": 1920,
+          "height": 1117,
+          "src": "/assets/img/tei-2.webp"
+        },
+        {
+          "type": "image",
+          "alt": "RDS350: 2 paveikslėlis",
+          "width": 1608,
+          "height": 1152,
+          "src": "/assets/img/tei-rotationshammare-rds350-2.webp"
+        },
+        {
+          "type": "text",
+          "html": "Kompaktiška hidraulinė sukamoji galvutė vidutinio dydžio gręžimo stiebams ir ribotos prieigos gręžimo mašinoms."
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Flanšinė mova",
+            "2 greičių sukimasis",
+            "Smūgių slopintuvas",
+            "Sukimo momentas: 2721 Nm",
+            "Svoris: 55 kg"
+          ]
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Produkto lapas",
+          "href": "/assets/docs/tei-rotationshammare-rds350-broschyr-eng.pdf",
+          "driveId": "1dfyvZHLasPO1EmA5FANmwaEY-Ra-5dha"
+        },
+        {
+          "type": "datasheet",
+          "title": "Techniniai duomenys",
+          "tagline": "Sukamoji gręžimo galvutė",
+          "intro": [
+            "TEI Rock Drills gamina tvirtas hidraulines sukamąsias galvutes, sukurtas sklandžiam veikimui ir lengvai priežiūrai atliekant sukamąjį gręžimą, pavyzdžiui, grunto vinims ir mikropoliams.",
+            "RDS galvutės prieš pristatymą išbandomos tuo pačiu stendu kaip ir mūsų patentuoti hidrauliniai viršutinio smūgio plaktukai. Dėl puikių charakteristikų TEI yra pirmasis pasirinkimas keičiamai galvutei pramonėje."
+          ],
+          "groups": [
+            {
+              "title": "Sukimasis",
+              "rows": [
+                {
+                  "label": "Sukimo momentas",
+                  "metric": "2712 Nm"
+                },
+                {
+                  "label": "Sukimosi debitas",
+                  "metric": "76 lpm"
+                },
+                {
+                  "label": "Praplovimo veleno vidinis skersmuo",
+                  "metric": "25 mm"
+                },
+                {
+                  "label": "Sukimosi slėgis",
+                  "metric": "207 bar"
+                },
+                {
+                  "label": "Svoris",
+                  "metric": "55 kg"
+                },
+                {
+                  "label": "Apsukų skaičius",
+                  "metric": "239 rpm"
+                }
+              ]
+            }
+          ],
+          "note": "TEI techniniai duomenys numato 40 % hidraulinės galios nuostolių."
+        },
+        {
+          "type": "related",
+          "title": "Tinkami stiebai",
+          "items": [
+            {
+              "href": "/produkter/tei/borrmaster/mem"
+            },
+            {
+              "href": "/produkter/tei/borrmaster/hem"
+            },
+            {
+              "href": "/produkter/tei/borrmaster/mph"
+            }
+          ],
+          "compat": true
+        }
+      ],
+      "published": true
+    },
+    "lv": {
+      "title": "RDS350",
+      "h1": "RDS350",
+      "description": "Kompakta hidrauliskā rotācijas galva vidēja izmēra urbšanas mastiem un urbšanas iekārtām ierobežotas piekļuves vietām.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "TEI Rock Drills logotips",
+          "href": "/produkter/tei",
+          "width": 1920,
+          "height": 1117,
+          "src": "/assets/img/tei-2.webp"
+        },
+        {
+          "type": "image",
+          "alt": "RDS350: 2. attēls",
+          "width": 1608,
+          "height": 1152,
+          "src": "/assets/img/tei-rotationshammare-rds350-2.webp"
+        },
+        {
+          "type": "text",
+          "html": "Kompakta hidrauliskā rotācijas galva vidēja izmēra urbšanas mastiem un urbšanas iekārtām ierobežotas piekļuves vietām."
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Atloku savienojums",
+            "2 ātrumu rotācija",
+            "Triecienu slāpētājs",
+            "Griezes moments: 2721 Nm",
+            "Svars: 55 kg"
+          ]
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Produkta lapa",
+          "href": "/assets/docs/tei-rotationshammare-rds350-broschyr-eng.pdf",
+          "driveId": "1dfyvZHLasPO1EmA5FANmwaEY-Ra-5dha"
+        },
+        {
+          "type": "datasheet",
+          "title": "Tehniskie dati",
+          "tagline": "Rotācijas urbšanas galva",
+          "intro": [
+            "TEI Rock Drills ražo izturīgas hidrauliskās rotācijas galvas, kas būvētas vienmērīgai darbībai un vienkāršai apkopei rotācijas urbšanā, piemēram, grunts naglu un mikropāļu darbos.",
+            "RDS galvas pirms piegādes iziet to pašu stenda testu kā mūsu patentētie hidrauliskie augšējā āmura urbji. Pateicoties izcilajai veiktspējai, TEI nozarē ir pirmā izvēle kā nomaināmā galva."
+          ],
+          "groups": [
+            {
+              "title": "Rotācija",
+              "rows": [
+                {
+                  "label": "Griezes moments",
+                  "metric": "2712 Nm"
+                },
+                {
+                  "label": "Rotācijas caurplūde",
+                  "metric": "76 lpm"
+                },
+                {
+                  "label": "Skalošanas vārpstas iekšējais diametrs",
+                  "metric": "25 mm"
+                },
+                {
+                  "label": "Rotācijas spiediens",
+                  "metric": "207 bar"
+                },
+                {
+                  "label": "Svars",
+                  "metric": "55 kg"
+                },
+                {
+                  "label": "Apgriezieni",
+                  "metric": "239 rpm"
+                }
+              ]
+            }
+          ],
+          "note": "TEI tehniskie dati paredz 40 % hidrauliskās jaudas zudumu."
+        },
+        {
+          "type": "related",
+          "title": "Piemērotie masti",
+          "items": [
+            {
+              "href": "/produkter/tei/borrmaster/mem"
+            },
+            {
+              "href": "/produkter/tei/borrmaster/hem"
+            },
+            {
+              "href": "/produkter/tei/borrmaster/mph"
+            }
+          ],
+          "compat": true
+        }
+      ],
+      "published": true
+    },
+    "et": {
+      "title": "RDS350",
+      "h1": "RDS350",
+      "description": "Kompaktne hüdrauliline pöörlemispea keskmise suurusega puurimismastidele ja piiratud juurdepääsuga puurimismasinatele.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "TEI Rock Drills logo",
+          "href": "/produkter/tei",
+          "width": 1920,
+          "height": 1117,
+          "src": "/assets/img/tei-2.webp"
+        },
+        {
+          "type": "image",
+          "alt": "RDS350: pilt 2",
+          "width": 1608,
+          "height": 1152,
+          "src": "/assets/img/tei-rotationshammare-rds350-2.webp"
+        },
+        {
+          "type": "text",
+          "html": "Kompaktne hüdrauliline pöörlemispea keskmise suurusega puurimismastidele ja piiratud juurdepääsuga puurimismasinatele."
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Äärikühendus",
+            "2-käiguline pöörlemine",
+            "Põrutusvaigisti",
+            "Pöördemoment: 2721 Nm",
+            "Kaal: 55 kg"
+          ]
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Tootleht",
+          "href": "/assets/docs/tei-rotationshammare-rds350-broschyr-eng.pdf",
+          "driveId": "1dfyvZHLasPO1EmA5FANmwaEY-Ra-5dha"
+        },
+        {
+          "type": "datasheet",
+          "title": "Tehnilised andmed",
+          "tagline": "Pöörlemispuurimispea",
+          "intro": [
+            "TEI Rock Drills toodab töökindlaid hüdraulilisi pöörlemispäid, mis on loodud sujuvaks tööks ja lihtsaks hoolduseks pöörlemispuurimisel, näiteks mullanaelte ja mikrovaiade puhul.",
+            "RDS-päid testitakse enne tarnimist samal katsestendil nagu meie patenteeritud hüdraulilisi ülavasaraid. Tänu parimale jõudlusele on TEI tööstuses esmavalik asendus-puurimispeana."
+          ],
+          "groups": [
+            {
+              "title": "Pöörlemine",
+              "rows": [
+                {
+                  "label": "Pöördemoment",
+                  "metric": "2712 Nm"
+                },
+                {
+                  "label": "Pöörlemise vooluhulk",
+                  "metric": "76 lpm"
+                },
+                {
+                  "label": "Loputusvõlli siseläbimõõt",
+                  "metric": "25 mm"
+                },
+                {
+                  "label": "Pöörlemise rõhk",
+                  "metric": "207 bar"
+                },
+                {
+                  "label": "Kaal",
+                  "metric": "55 kg"
+                },
+                {
+                  "label": "Pöörded",
+                  "metric": "239 rpm"
+                }
+              ]
+            }
+          ],
+          "note": "TEI tehnilised andmed eeldavad 40 % hüdrauliivõimsuse kadu."
+        },
+        {
+          "type": "related",
+          "title": "Sobivad mastid",
+          "items": [
+            {
+              "href": "/produkter/tei/borrmaster/mem"
+            },
+            {
+              "href": "/produkter/tei/borrmaster/hem"
+            },
+            {
+              "href": "/produkter/tei/borrmaster/mph"
+            }
+          ],
+          "compat": true
+        }
+      ],
+      "published": true
+    },
+    "ru": {
+      "title": "RDS350",
+      "h1": "RDS350",
+      "description": "Компактный гидравлический вращатель для буровых мачт среднего размера и буровых машин для ограниченного доступа.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Логотип TEI Rock Drills",
+          "href": "/produkter/tei",
+          "width": 1920,
+          "height": 1117,
+          "src": "/assets/img/tei-2.webp"
+        },
+        {
+          "type": "image",
+          "alt": "RDS350: изображение 2",
+          "width": 1608,
+          "height": 1152,
+          "src": "/assets/img/tei-rotationshammare-rds350-2.webp"
+        },
+        {
+          "type": "text",
+          "html": "Компактный гидравлический вращатель для буровых мачт среднего размера и буровых машин для ограниченного доступа."
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Фланцевое соединение",
+            "Двухскоростное вращение",
+            "Амортизатор",
+            "Крутящий момент: 2721 Нм",
+            "Масса: 55 кг"
+          ]
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Технический лист",
+          "href": "/assets/docs/tei-rotationshammare-rds350-broschyr-eng.pdf",
+          "driveId": "1dfyvZHLasPO1EmA5FANmwaEY-Ra-5dha"
+        },
+        {
+          "type": "datasheet",
+          "title": "Технические данные",
+          "tagline": "Вращательная буровая головка",
+          "intro": [
+            "TEI Rock Drills производит прочные гидравлические вращатели, рассчитанные на плавную работу и простое обслуживание при роторном бурении, например при установке грунтовых гвоздей и микросвай.",
+            "Головки RDS перед поставкой проходят тот же стендовый тест, что и наши запатентованные гидравлические верхние перфораторы. Благодаря превосходным характеристикам TEI — предпочтительный выбор в отрасли в качестве сменной головки."
+          ],
+          "groups": [
+            {
+              "title": "Вращение",
+              "rows": [
+                {
+                  "label": "Крутящий момент",
+                  "metric": "2712 Nm"
+                },
+                {
+                  "label": "Расход вращения",
+                  "metric": "76 lpm"
+                },
+                {
+                  "label": "Внутренний диаметр промывочного вала",
+                  "metric": "25 mm"
+                },
+                {
+                  "label": "Давление вращения",
+                  "metric": "207 bar"
+                },
+                {
+                  "label": "Масса",
+                  "metric": "55 kg"
+                },
+                {
+                  "label": "Частота вращения",
+                  "metric": "239 rpm"
+                }
+              ]
+            }
+          ],
+          "note": "Технические данные TEI предполагают потери гидравлической мощности 40 %."
+        },
+        {
+          "type": "related",
+          "title": "Подходящие мачты",
+          "items": [
+            {
+              "href": "/produkter/tei/borrmaster/mem"
+            },
+            {
+              "href": "/produkter/tei/borrmaster/hem"
+            },
+            {
+              "href": "/produkter/tei/borrmaster/mph"
+            }
+          ],
+          "compat": true
+        }
+      ],
+      "published": true
     }
   },
   "source": {

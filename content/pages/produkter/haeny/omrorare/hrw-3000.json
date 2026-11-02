@@ -768,6 +768,774 @@
           "gen": true
         }
       ]
+    },
+    "lt": {
+      "title": "Häny HRW 3000",
+      "h1": "Häny HRW 3000",
+      "description": "Maišiklis HRW 3000. Maišikliai užtikrina nepertraukiamą darbą išlaikydami ir homogenizuodami sumaišytą suspensiją bei šalindami oro burbuliukus lėtai besisukančia mentimi. Lygio jutikliai (pasirinktinai)…",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "HÄNY",
+          "href": "/produkter/haeny",
+          "width": 832,
+          "height": 143,
+          "src": "/assets/img/haeny-1.webp",
+          "gen": true
+        },
+        {
+          "type": "columns",
+          "ratio": "40-60",
+          "left": [
+            {
+              "type": "image",
+              "alt": "Maišiklis HRW 3000",
+              "width": 908,
+              "height": 990,
+              "src": "/assets/img/haeny-hrw3000-model.webp"
+            }
+          ],
+          "right": [
+            {
+              "type": "text",
+              "html": "Maišikliai užtikrina nepertraukiamą darbą išlaikydami ir homogenizuodami sumaišytą suspensiją bei šalindami oro burbuliukus lėtai besisukančia mentimi. Lygio jutikliai (pasirinktinai) leidžia dirbti visiškai automatiškai."
+            },
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "Visiška cirkuliacija dėl pasvirusio maišiklio veleno, nėra stacionarių mentių, kurias reikėtų valyti",
+                "Lėta mentė palaiko injektavimo mišinį vienalytį ir pašalina orą",
+                "Valymo anga su saugos jungikliu",
+                "Centrinis kėlimo taškas",
+                "Lygio jutikliai visiškai automatiniam darbui"
+              ]
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Naudojimas",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Tarpinė talpykla tarp maišyklės ir siurblio"
+          ],
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Brošiūra HRW 3000 (PDF, anglų k.)",
+          "href": "/assets/docs/haeny-hrw3000-brochure-en.pdf",
+          "gen": true
+        },
+        {
+          "type": "datasheet",
+          "title": "Techniniai duomenys",
+          "tagline": "Maišiklis HRW 3000",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Maišiklis",
+              "rows": [
+                {
+                  "label": "Naudingasis tūris",
+                  "metric": "3,000 l"
+                },
+                {
+                  "label": "Skysčio temperatūra",
+                  "metric": "Max. 40°C"
+                },
+                {
+                  "label": "Įleidimo jungtis",
+                  "metric": "4\""
+                },
+                {
+                  "label": "Išleidimo jungtis",
+                  "metric": "DN100 / PN16"
+                }
+              ]
+            },
+            {
+              "title": "Elektriniai duomenys",
+              "rows": [
+                {
+                  "label": "Įtampa",
+                  "metric": "3x 400/460"
+                },
+                {
+                  "label": "Dažnis",
+                  "metric": "50 / 60 Hz"
+                },
+                {
+                  "label": "Nominalioji galia",
+                  "metric": "3.0 / 3.6 kW"
+                },
+                {
+                  "label": "Apsukų skaičius",
+                  "metric": "32 / 38 min⁻¹"
+                }
+              ]
+            },
+            {
+              "title": "Svoris ir matmenys",
+              "rows": [
+                {
+                  "label": "Apytikslis svoris",
+                  "metric": "1,025 kg"
+                },
+                {
+                  "label": "Plotis",
+                  "metric": "1,913 mm"
+                },
+                {
+                  "label": "Aukštis",
+                  "metric": "2,117 mm"
+                },
+                {
+                  "label": "Ilgis",
+                  "metric": "1,913 mm"
+                }
+              ]
+            }
+          ],
+          "note": "",
+          "source": "Duomenys paimti iš gamintojo brošiūrų (anglų k.).",
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 1,
+          "narrow": true,
+          "zoom": true,
+          "more": false,
+          "items": [
+            {
+              "title": "Matmenys ir brėžinys",
+              "image": "/assets/img/haeny-hrw3000-dim.webp",
+              "alt": "Matmenys ir brėžinys HRW 3000",
+              "text": "Užveskite žymeklį ant brėžinio (arba palieskite ir vilkite), kad jį padidintumėte 2×.",
+              "width": 1151,
+              "height": 2068
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "collapsible": true,
+          "title": "Standartinė ir pasirenkama įranga",
+          "items": [
+            "Pasirinktinai (maišiklis): lygio jutikliai 1\", „pilnas – tuščias“",
+            "Pasirinktinai (maišiklis): flanšinė jungtis su sklende 2½\""
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Susisiekite su mumis</a> dėl kainos, pristatymo laiko ar pagalbos renkantis tinkamą modelį.",
+          "gen": true
+        },
+        {
+          "type": "related",
+          "title": "Taip pat žiūrėkite",
+          "items": [
+            {
+              "href": "/produkter/haeny/omrorare",
+              "mutual": false
+            },
+            {
+              "href": "/produkter/haeny/omrorare/hrw-2000"
+            }
+          ],
+          "gen": true
+        }
+      ],
+      "published": true
+    },
+    "lv": {
+      "title": "Häny HRW 3000",
+      "h1": "Häny HRW 3000",
+      "description": "Maisītājs HRW 3000. Maisītāji nodrošina nepārtrauktu darbību, uzturot un homogenizējot sajaukto suspensiju un novēršot gaisa burbuļus ar lēni rotējošu lāpstiņu. Līmeņa devēji (opcija)…",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "HÄNY",
+          "href": "/produkter/haeny",
+          "width": 832,
+          "height": 143,
+          "src": "/assets/img/haeny-1.webp",
+          "gen": true
+        },
+        {
+          "type": "columns",
+          "ratio": "40-60",
+          "left": [
+            {
+              "type": "image",
+              "alt": "Maisītājs HRW 3000",
+              "width": 908,
+              "height": 990,
+              "src": "/assets/img/haeny-hrw3000-model.webp"
+            }
+          ],
+          "right": [
+            {
+              "type": "text",
+              "html": "Maisītāji nodrošina nepārtrauktu darbību, uzturot un homogenizējot sajaukto suspensiju un novēršot gaisa burbuļus ar lēni rotējošu lāpstiņu. Līmeņa devēji (opcija) nodrošina pilnībā automātisku darbību."
+            },
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "Pilnīga cirkulācija ar slīpu maisītāja vārpstu, nav fiksētu lāpstiņu, kas jātīra",
+                "Lēna lāpstiņa uztur javu viendabīgu un izvada gaisu",
+                "Tīrīšanas atvere ar drošības slēdzi",
+                "Centrālais pacelšanas punkts",
+                "Līmeņa devēji pilnībā automātiskai darbībai"
+              ]
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Lietojums",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Starpkrātuve starp mikseri un sūkni"
+          ],
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Brošūra HRW 3000 (PDF, angļu val.)",
+          "href": "/assets/docs/haeny-hrw3000-brochure-en.pdf",
+          "gen": true
+        },
+        {
+          "type": "datasheet",
+          "title": "Tehniskie dati",
+          "tagline": "Maisītājs HRW 3000",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Maisītājs",
+              "rows": [
+                {
+                  "label": "Lietderīgais tilpums",
+                  "metric": "3,000 l"
+                },
+                {
+                  "label": "Šķidruma temperatūra",
+                  "metric": "Max. 40°C"
+                },
+                {
+                  "label": "Ieplūdes pieslēgums",
+                  "metric": "4\""
+                },
+                {
+                  "label": "Izplūdes pieslēgums",
+                  "metric": "DN100 / PN16"
+                }
+              ]
+            },
+            {
+              "title": "Elektriskie dati",
+              "rows": [
+                {
+                  "label": "Spriegums",
+                  "metric": "3x 400/460"
+                },
+                {
+                  "label": "Frekvence",
+                  "metric": "50 / 60 Hz"
+                },
+                {
+                  "label": "Nominālā jauda",
+                  "metric": "3.0 / 3.6 kW"
+                },
+                {
+                  "label": "Apgriezieni",
+                  "metric": "32 / 38 min⁻¹"
+                }
+              ]
+            },
+            {
+              "title": "Svars un izmēri",
+              "rows": [
+                {
+                  "label": "Aptuvenais svars",
+                  "metric": "1,025 kg"
+                },
+                {
+                  "label": "Platums",
+                  "metric": "1,913 mm"
+                },
+                {
+                  "label": "Augstums",
+                  "metric": "2,117 mm"
+                },
+                {
+                  "label": "Garums",
+                  "metric": "1,913 mm"
+                }
+              ]
+            }
+          ],
+          "note": "",
+          "source": "Dati ņemti no ražotāja brošūrām (angļu val.).",
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 1,
+          "narrow": true,
+          "zoom": true,
+          "more": false,
+          "items": [
+            {
+              "title": "Izmēri un rasējums",
+              "image": "/assets/img/haeny-hrw3000-dim.webp",
+              "alt": "Izmēri un rasējums HRW 3000",
+              "text": "Virziet peli virs rasējuma (vai pieskarieties un velciet), lai to palielinātu 2×.",
+              "width": 1151,
+              "height": 2068
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "collapsible": true,
+          "title": "Standarta un papildaprīkojums",
+          "items": [
+            "Opcija (maisītājs): līmeņa devēji 1\", „pilns – tukšs”",
+            "Opcija (maisītājs): atloku savienojums ar aizvaru 2½\""
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Sazinieties ar mums</a> par cenu, piegādes laiku vai palīdzību pareizā modeļa izvēlē.",
+          "gen": true
+        },
+        {
+          "type": "related",
+          "title": "Skatiet arī",
+          "items": [
+            {
+              "href": "/produkter/haeny/omrorare",
+              "mutual": false
+            },
+            {
+              "href": "/produkter/haeny/omrorare/hrw-2000"
+            }
+          ],
+          "gen": true
+        }
+      ],
+      "published": true
+    },
+    "et": {
+      "title": "Häny HRW 3000",
+      "h1": "Häny HRW 3000",
+      "description": "Segur HRW 3000. Segurid tagavad pideva töö, hoides ja homogeniseerides segatud suspensiooni ning eemaldades õhumullid aeglaselt pöörleva labidaga. Tasemeandurid (lisavarustus)…",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "HÄNY",
+          "href": "/produkter/haeny",
+          "width": 832,
+          "height": 143,
+          "src": "/assets/img/haeny-1.webp",
+          "gen": true
+        },
+        {
+          "type": "columns",
+          "ratio": "40-60",
+          "left": [
+            {
+              "type": "image",
+              "alt": "Segur HRW 3000",
+              "width": 908,
+              "height": 990,
+              "src": "/assets/img/haeny-hrw3000-model.webp"
+            }
+          ],
+          "right": [
+            {
+              "type": "text",
+              "html": "Segurid tagavad pideva töö, hoides ja homogeniseerides segatud suspensiooni ning eemaldades õhumullid aeglaselt pöörleva labidaga. Tasemeandurid (lisavarustus) võimaldavad täisautomaatset tööd."
+            },
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "Täielik ringlus kaldus seguri võlli abil, puuduvad fikseeritud labad, mida puhastada",
+                "Aeglane labidas hoiab segu homogeensena ja eemaldab õhu",
+                "Puhastusava ohutuslülitiga",
+                "Keskne tõstepunkt",
+                "Tasemeandurid täisautomaatseks tööks"
+              ]
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Kasutus",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Vahemahuti segisti ja pumba vahel"
+          ],
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Brošüür HRW 3000 (PDF, inglise keeles)",
+          "href": "/assets/docs/haeny-hrw3000-brochure-en.pdf",
+          "gen": true
+        },
+        {
+          "type": "datasheet",
+          "title": "Tehnilised andmed",
+          "tagline": "Segur HRW 3000",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Segur",
+              "rows": [
+                {
+                  "label": "Kasulik maht",
+                  "metric": "3,000 l"
+                },
+                {
+                  "label": "Vedeliku temperatuur",
+                  "metric": "Max. 40°C"
+                },
+                {
+                  "label": "Sisselaskeühendus",
+                  "metric": "4\""
+                },
+                {
+                  "label": "Väljalaskeühendus",
+                  "metric": "DN100 / PN16"
+                }
+              ]
+            },
+            {
+              "title": "Elektrilised andmed",
+              "rows": [
+                {
+                  "label": "Pinge",
+                  "metric": "3x 400/460"
+                },
+                {
+                  "label": "Sagedus",
+                  "metric": "50 / 60 Hz"
+                },
+                {
+                  "label": "Nimivõimsus",
+                  "metric": "3.0 / 3.6 kW"
+                },
+                {
+                  "label": "Pöörded",
+                  "metric": "32 / 38 min⁻¹"
+                }
+              ]
+            },
+            {
+              "title": "Kaal ja mõõtmed",
+              "rows": [
+                {
+                  "label": "Ligikaudne kaal",
+                  "metric": "1,025 kg"
+                },
+                {
+                  "label": "Laius",
+                  "metric": "1,913 mm"
+                },
+                {
+                  "label": "Kõrgus",
+                  "metric": "2,117 mm"
+                },
+                {
+                  "label": "Pikkus",
+                  "metric": "1,913 mm"
+                }
+              ]
+            }
+          ],
+          "note": "",
+          "source": "Andmed on võetud tootja brošüüridest (inglise keeles).",
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 1,
+          "narrow": true,
+          "zoom": true,
+          "more": false,
+          "items": [
+            {
+              "title": "Mõõtmed ja joonis",
+              "image": "/assets/img/haeny-hrw3000-dim.webp",
+              "alt": "Mõõtmed ja joonis HRW 3000",
+              "text": "Hoia kursorit joonise kohal (või puuduta ja lohista), et seda 2× suurendada.",
+              "width": 1151,
+              "height": 2068
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "collapsible": true,
+          "title": "Standard- ja lisavarustus",
+          "items": [
+            "Lisavarustus (segur): tasemeandurid 1\", „täis – tühi”",
+            "Lisavarustus (segur): äärikühendus liblikventiiliga 2½\""
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Võta meiega ühendust</a> hinna, tarneaja või õige mudeli valikul abi saamiseks.",
+          "gen": true
+        },
+        {
+          "type": "related",
+          "title": "Vaata ka",
+          "items": [
+            {
+              "href": "/produkter/haeny/omrorare",
+              "mutual": false
+            },
+            {
+              "href": "/produkter/haeny/omrorare/hrw-2000"
+            }
+          ],
+          "gen": true
+        }
+      ],
+      "published": true
+    },
+    "ru": {
+      "title": "Häny HRW 3000",
+      "h1": "Häny HRW 3000",
+      "description": "Мешалка HRW 3000. Мешалки обеспечивают непрерывную работу, удерживая и гомогенизируя смешанную суспензию и удаляя пузырьки воздуха с помощью медленно вращающейся лопасти. Датчики уровня (опция)…",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "HÄNY",
+          "href": "/produkter/haeny",
+          "width": 832,
+          "height": 143,
+          "src": "/assets/img/haeny-1.webp",
+          "gen": true
+        },
+        {
+          "type": "columns",
+          "ratio": "40-60",
+          "left": [
+            {
+              "type": "image",
+              "alt": "Мешалка HRW 3000",
+              "width": 908,
+              "height": 990,
+              "src": "/assets/img/haeny-hrw3000-model.webp"
+            }
+          ],
+          "right": [
+            {
+              "type": "text",
+              "html": "Мешалки обеспечивают непрерывную работу, удерживая и гомогенизируя смешанную суспензию и удаляя пузырьки воздуха с помощью медленно вращающейся лопасти. Датчики уровня (опция) обеспечивают полностью автоматическую работу."
+            },
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "Полная циркуляция благодаря наклонному валу мешалки, нет неподвижных лопастей, требующих очистки",
+                "Медленная лопасть поддерживает однородность раствора и удаляет воздух",
+                "Очистной люк с защитным выключателем",
+                "Центральная точка подъёма",
+                "Датчики уровня для полностью автоматической работы"
+              ]
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Применение",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Промежуточная ёмкость между смесителем и насосом"
+          ],
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Брошюра HRW 3000 (PDF, на английском)",
+          "href": "/assets/docs/haeny-hrw3000-brochure-en.pdf",
+          "gen": true
+        },
+        {
+          "type": "datasheet",
+          "title": "Технические данные",
+          "tagline": "Мешалка HRW 3000",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Мешалка",
+              "rows": [
+                {
+                  "label": "Полезный объём",
+                  "metric": "3,000 l"
+                },
+                {
+                  "label": "Температура жидкости",
+                  "metric": "Max. 40°C"
+                },
+                {
+                  "label": "Входной патрубок",
+                  "metric": "4\""
+                },
+                {
+                  "label": "Выходной патрубок",
+                  "metric": "DN100 / PN16"
+                }
+              ]
+            },
+            {
+              "title": "Электрические данные",
+              "rows": [
+                {
+                  "label": "Напряжение",
+                  "metric": "3x 400/460"
+                },
+                {
+                  "label": "Частота",
+                  "metric": "50 / 60 Hz"
+                },
+                {
+                  "label": "Номинальная мощность",
+                  "metric": "3.0 / 3.6 kW"
+                },
+                {
+                  "label": "Частота вращения",
+                  "metric": "32 / 38 min⁻¹"
+                }
+              ]
+            },
+            {
+              "title": "Масса и размеры",
+              "rows": [
+                {
+                  "label": "Ориентировочная масса",
+                  "metric": "1,025 kg"
+                },
+                {
+                  "label": "Ширина",
+                  "metric": "1,913 mm"
+                },
+                {
+                  "label": "Высота",
+                  "metric": "2,117 mm"
+                },
+                {
+                  "label": "Длина",
+                  "metric": "1,913 mm"
+                }
+              ]
+            }
+          ],
+          "note": "",
+          "source": "Данные взяты из брошюр производителя (на английском языке).",
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 1,
+          "narrow": true,
+          "zoom": true,
+          "more": false,
+          "items": [
+            {
+              "title": "Размеры и чертёж",
+              "image": "/assets/img/haeny-hrw3000-dim.webp",
+              "alt": "Размеры и чертёж HRW 3000",
+              "text": "Наведите курсор на чертёж (или коснитесь и проведите пальцем), чтобы увеличить его в 2 раза.",
+              "width": 1151,
+              "height": 2068
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "collapsible": true,
+          "title": "Стандартное и дополнительное оборудование",
+          "items": [
+            "Опция (мешалка): датчики уровня 1\", «полный – пустой»",
+            "Опция (мешалка): фланцевое соединение с дисковым затвором 2½\""
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Свяжитесь с нами</a>, чтобы узнать цену, срок поставки или получить помощь в выборе подходящей модели.",
+          "gen": true
+        },
+        {
+          "type": "related",
+          "title": "См. также",
+          "items": [
+            {
+              "href": "/produkter/haeny/omrorare",
+              "mutual": false
+            },
+            {
+              "href": "/produkter/haeny/omrorare/hrw-2000"
+            }
+          ],
+          "gen": true
+        }
+      ],
+      "published": true
     }
   }
 }

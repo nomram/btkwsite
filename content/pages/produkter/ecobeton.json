@@ -373,5 +373,11 @@
   "source": {
     "url": "https://www.betongakuten.se/produkter/ecobeton"
   },
-  "logo": "/assets/img/logo-ecobeton.webp"
+  "logo": "/assets/img/logo-ecobeton.webp",
+  "hideIn": [
+    "lt",
+    "lv",
+    "et",
+    "ru"
+  ]
 }

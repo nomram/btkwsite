@@ -141,5 +141,11 @@
   "source": {
     "url": "https://www.betongakuten.se/produkter/geobrugg"
   },
-  "logo": "/assets/img/logo-geobrugg.webp"
+  "logo": "/assets/img/logo-geobrugg.webp",
+  "hideIn": [
+    "lt",
+    "lv",
+    "et",
+    "ru"
+  ]
 }

@@ -9,7 +9,11 @@
       "sv": "Konstruerad och byggd i Montrose, Colorado",
       "en": "Designed and built in Montrose, Colorado",
       "es": "Diseñada y fabricada en Montrose, Colorado",
-      "no": "Konstruert og bygget i Montrose, Colorado"
+      "no": "Konstruert og bygget i Montrose, Colorado",
+      "lt": "Sukurta ir pagaminta: Montrose, Kolorado",
+      "lv": "Izstrādāts un ražots: Montrose, Kolorādo",
+      "et": "Disainitud ja ehitatud: Montrose, Colorado",
+      "ru": "Разработано и изготовлено: Монтроз, Колорадо"
     }
   },
   "order": 0,
@@ -343,6 +347,338 @@
               "width": 443,
               "height": 443,
               "alt": "Borerigger logo"
+            }
+          ]
+        }
+      ],
+      "published": true
+    },
+    "lt": {
+      "title": "TEI",
+      "h1": "TEI Rock Drills",
+      "description": "TEI Rock Drills – pirmaujantis gręžimo stiebų ekskavatoriams, gręžimo įrankių ankštoms erdvėms, viršutinio smūgio plaktukų, sukamųjų galvučių ir elektrinių… gamintojas",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "TEI Rock Drills",
+          "width": 1280,
+          "height": 616,
+          "src": "/assets/img/tei-1.webp"
+        },
+        {
+          "type": "text",
+          "html": "TEI Rock Drills – pirmaujantis gręžimo stiebų ekskavatoriams, gręžimo įrankių ankštoms erdvėms, viršutinio smūgio plaktukų, sukamųjų galvučių ir elektrinių gręžimo vežimėlių (rūsio gręžimo įrenginių) gamintojas."
+        },
+        {
+          "type": "text",
+          "html": "TEI garsėja tuo, kad savo produktus kuria pati ir gamina ISO sertifikuotoje gamykloje Montrose, Kolorado valstijoje, JAV, kad klientai gautų geriausius sprendimus savo konkretiems poreikiams."
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Susisiekite su mumis</a> dėl daugiau informacijos."
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Brošiūra (EN)",
+          "href": "/assets/docs/tei-broschyr-eng.pdf",
+          "driveId": "1WF8DBPhtUy3RRsbPXA6yrWNb44QbYLqL"
+        },
+        {
+          "type": "cards",
+          "items": [
+            {
+              "href": "/produkter/tei/topphammare",
+              "label": "Läs mer",
+              "title": "Viršutinio smūgio plaktukai",
+              "html": "Hidraulinis viršutinio smūgio plaktukas gręžimui kietoje uolienoje ir akmenyje. Didelė smūgio jėga, tvirta konstrukcija ir ilgalaikis našumas.",
+              "text": "Hidraulinis viršutinio smūgio plaktukas gręžimui kietoje uolienoje ir akmenyje. Didelė smūgio jėga, tvirta konstrukcija ir ilgalaikis našumas.",
+              "image": "/assets/img/tei-topphammare.webp",
+              "width": 1500,
+              "height": 1500,
+              "alt": "Viršutinio smūgio plaktukų logotipas"
+            },
+            {
+              "href": "/produkter/tei/rotationshammare",
+              "label": "Läs mer",
+              "title": "Sukamosios galvutės",
+              "html": "Galingos hidraulinės sukamosios galvutės – paprasta naudoti ir prižiūrėti. Naudojamos grunto vinims ir mikropoliams.",
+              "text": "Galingos hidraulinės sukamosios galvutės – paprasta naudoti ir prižiūrėti. Naudojamos grunto vinims ir mikropoliams.",
+              "image": "/assets/img/tei-rotationshammare.webp",
+              "width": 1500,
+              "height": 1500,
+              "alt": "Sukamųjų galvučių logotipas"
+            },
+            {
+              "href": "/produkter/tei/borrmaster",
+              "label": "Läs mer",
+              "title": "Gręžimo stiebai",
+              "html": "TEI gręžimo stiebai pritaikyti skirtingų dydžių ekskavatoriams. Jie lankstūs, lengvi ir nesunkiai užmaunami bei nuimami.",
+              "text": "TEI gręžimo stiebai pritaikyti skirtingų dydžių ekskavatoriams. Jie lankstūs, lengvi ir nesunkiai užmaunami bei nuimami.",
+              "image": "/assets/img/tei-borrmaster.webp",
+              "width": 498,
+              "height": 498,
+              "alt": "Gręžimo stiebų logotipas"
+            },
+            {
+              "href": "/produkter/tei/borriggar",
+              "label": "Läs mer",
+              "title": "Gręžimo įrenginiai",
+              "html": "Elektriniai gręžimo įrenginiai, specialiai sukurti darbui ankštose erdvėse. Puikiai tinka mikropoliams ir monolitinėms sienoms įrengti.",
+              "text": "Elektriniai gręžimo įrenginiai, specialiai sukurti darbui ankštose erdvėse. Puikiai tinka mikropoliams ir monolitinėms sienoms įrengti.",
+              "image": "/assets/img/tei-borriggar.webp",
+              "width": 443,
+              "height": 443,
+              "alt": "Gręžimo įrenginių logotipas"
+            }
+          ]
+        }
+      ],
+      "published": true
+    },
+    "lv": {
+      "title": "TEI",
+      "h1": "TEI Rock Drills",
+      "description": "TEI Rock Drills ir vadošais urbšanas mastu ekskavatoriem, urbšanas instrumentu šaurām vietām, augšējā āmura urbju, rotācijas galvu un elektrisko… ražotājs",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "TEI Rock Drills",
+          "width": 1280,
+          "height": 616,
+          "src": "/assets/img/tei-1.webp"
+        },
+        {
+          "type": "text",
+          "html": "TEI Rock Drills ir vadošais urbšanas mastu ekskavatoriem, urbšanas instrumentu šaurām vietām, augšējā āmura urbju, rotācijas galvu un elektrisko urbšanas ratiņu (pagrabu urbjiekārtu) ražotājs."
+        },
+        {
+          "type": "text",
+          "html": "TEI ir pazīstams ar to, ka savus produktus izstrādā pašu spēkiem un ražo ISO sertificētā uzņēmumā Montrozā, Kolorādo, ASV, lai klienti saņemtu labākos risinājumus savām konkrētajām vajadzībām."
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Sazinieties ar mums</a>, lai uzzinātu vairāk."
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Brošūra (EN)",
+          "href": "/assets/docs/tei-broschyr-eng.pdf",
+          "driveId": "1WF8DBPhtUy3RRsbPXA6yrWNb44QbYLqL"
+        },
+        {
+          "type": "cards",
+          "items": [
+            {
+              "href": "/produkter/tei/topphammare",
+              "label": "Läs mer",
+              "title": "Augšējā āmura urbji",
+              "html": "Hidrauliskais augšējā āmura urbis urbšanai cietos iežos un akmenī. Augsts sitiena spēks ar izturīgu konstrukciju un ilgstošu veiktspēju.",
+              "text": "Hidrauliskais augšējā āmura urbis urbšanai cietos iežos un akmenī. Augsts sitiena spēks ar izturīgu konstrukciju un ilgstošu veiktspēju.",
+              "image": "/assets/img/tei-topphammare.webp",
+              "width": 1500,
+              "height": 1500,
+              "alt": "Augšējā āmura urbju logotips"
+            },
+            {
+              "href": "/produkter/tei/rotationshammare",
+              "label": "Läs mer",
+              "title": "Rotācijas galvas",
+              "html": "Jaudīgas hidrauliskās rotācijas galvas — viegli lietot un apkopt. Izmanto grunts naglu un mikropāļu darbos.",
+              "text": "Jaudīgas hidrauliskās rotācijas galvas — viegli lietot un apkopt. Izmanto grunts naglu un mikropāļu darbos.",
+              "image": "/assets/img/tei-rotationshammare.webp",
+              "width": 1500,
+              "height": 1500,
+              "alt": "Rotācijas galvu logotips"
+            },
+            {
+              "href": "/produkter/tei/borrmaster",
+              "label": "Läs mer",
+              "title": "Urbšanas masti",
+              "html": "TEI urbšanas masti ir pielāgoti dažāda izmēra ekskavatoriem. Tie ir veikli, viegli un tos nav grūti uzlikt un noņemt.",
+              "text": "TEI urbšanas masti ir pielāgoti dažāda izmēra ekskavatoriem. Tie ir veikli, viegli un tos nav grūti uzlikt un noņemt.",
+              "image": "/assets/img/tei-borrmaster.webp",
+              "width": 498,
+              "height": 498,
+              "alt": "Urbšanas mastu logotips"
+            },
+            {
+              "href": "/produkter/tei/borriggar",
+              "label": "Läs mer",
+              "title": "Urbjiekārtas",
+              "html": "Elektriskās urbjiekārtas, īpaši izstrādātas darbam šaurās vietās. Ideāli piemērotas mikropāļu un liesto sienu izveidei.",
+              "text": "Elektriskās urbjiekārtas, īpaši izstrādātas darbam šaurās vietās. Ideāli piemērotas mikropāļu un liesto sienu izveidei.",
+              "image": "/assets/img/tei-borriggar.webp",
+              "width": 443,
+              "height": 443,
+              "alt": "Urbjiekārtu logotips"
+            }
+          ]
+        }
+      ],
+      "published": true
+    },
+    "et": {
+      "title": "TEI",
+      "h1": "TEI Rock Drills",
+      "description": "TEI Rock Drills on juhtiv ekskavaatorite puurimismastide, kitsaste ruumide puurimisseadmete, ülavasarate, pöörlemispeade ja elektriliste… tootja",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "TEI Rock Drills",
+          "width": 1280,
+          "height": 616,
+          "src": "/assets/img/tei-1.webp"
+        },
+        {
+          "type": "text",
+          "html": "TEI Rock Drills on juhtiv ekskavaatorite puurimismastide, kitsaste ruumide puurimisseadmete, ülavasarate, pöörlemispeade ja elektriliste puurimisvankrite (keldripuurimisseadmete) tootja."
+        },
+        {
+          "type": "text",
+          "html": "TEI on tuntud selle poolest, et loob oma tooteid ise ja valmistab neid ISO-sertifitseeritud tehases Montroses, Colorados, USA-s, et kliendid saaksid oma konkreetsetele vajadustele parimad lahendused."
+        },
+        {
+          "type": "text",
+          "html": "Lisateabe saamiseks <a href=\"/kontakta-oss\">võta meiega ühendust</a>."
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Brošüür (EN)",
+          "href": "/assets/docs/tei-broschyr-eng.pdf",
+          "driveId": "1WF8DBPhtUy3RRsbPXA6yrWNb44QbYLqL"
+        },
+        {
+          "type": "cards",
+          "items": [
+            {
+              "href": "/produkter/tei/topphammare",
+              "label": "Läs mer",
+              "title": "Ülavasarad",
+              "html": "Hüdrauliline ülavasar puurimiseks kõvas kaljus ja kivis. Suur löögijõud, vastupidav konstruktsioon ja pikaajaline jõudlus.",
+              "text": "Hüdrauliline ülavasar puurimiseks kõvas kaljus ja kivis. Suur löögijõud, vastupidav konstruktsioon ja pikaajaline jõudlus.",
+              "image": "/assets/img/tei-topphammare.webp",
+              "width": 1500,
+              "height": 1500,
+              "alt": "Ülavasarate logo"
+            },
+            {
+              "href": "/produkter/tei/rotationshammare",
+              "label": "Läs mer",
+              "title": "Pöörlemispead",
+              "html": "Võimsad hüdraulilised pöörlemispead – lihtne kasutada ja hooldada. Kasutatakse mullanaelte ja mikrovaiade paigaldamisel.",
+              "text": "Võimsad hüdraulilised pöörlemispead – lihtne kasutada ja hooldada. Kasutatakse mullanaelte ja mikrovaiade paigaldamisel.",
+              "image": "/assets/img/tei-rotationshammare.webp",
+              "width": 1500,
+              "height": 1500,
+              "alt": "Pöörlemispeade logo"
+            },
+            {
+              "href": "/produkter/tei/borrmaster",
+              "label": "Läs mer",
+              "title": "Puurimismastid",
+              "html": "TEI puurimismastid on kohandatud erineva suurusega ekskavaatoritele. Need on kärmed, kerged ja neid pole raske paigaldada ega eemaldada.",
+              "text": "TEI puurimismastid on kohandatud erineva suurusega ekskavaatoritele. Need on kärmed, kerged ja neid pole raske paigaldada ega eemaldada.",
+              "image": "/assets/img/tei-borrmaster.webp",
+              "width": 498,
+              "height": 498,
+              "alt": "Puurimismastide logo"
+            },
+            {
+              "href": "/produkter/tei/borriggar",
+              "label": "Läs mer",
+              "title": "Puurimisseadmed",
+              "html": "Elektrilised puurimisseadmed, mis on spetsiaalselt loodud tööks kitsastes ruumides. Ideaalsed mikrovaiade ja valatud seinte rajamiseks.",
+              "text": "Elektrilised puurimisseadmed, mis on spetsiaalselt loodud tööks kitsastes ruumides. Ideaalsed mikrovaiade ja valatud seinte rajamiseks.",
+              "image": "/assets/img/tei-borriggar.webp",
+              "width": 443,
+              "height": 443,
+              "alt": "Puurimisseadmete logo"
+            }
+          ]
+        }
+      ],
+      "published": true
+    },
+    "ru": {
+      "title": "TEI",
+      "h1": "TEI Rock Drills",
+      "description": "TEI Rock Drills — ведущий производитель буровых мачт для экскаваторов, бурового инструмента для стеснённых условий, верхних перфораторов, вращателей и электрических…",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "TEI Rock Drills",
+          "width": 1280,
+          "height": 616,
+          "src": "/assets/img/tei-1.webp"
+        },
+        {
+          "type": "text",
+          "html": "TEI Rock Drills — ведущий производитель буровых мачт для экскаваторов, бурового инструмента для стеснённых условий, верхних перфораторов, вращателей и электрических буровых кареток (подвальных буровых установок)."
+        },
+        {
+          "type": "text",
+          "html": "TEI известна тем, что разрабатывает свою продукцию самостоятельно и производит её на сертифицированном по ISO предприятии в Монтрозе, штат Колорадо, США, чтобы клиенты получали лучшие решения для своих конкретных задач."
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Свяжитесь с нами</a> для получения дополнительной информации."
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Брошюра (EN)",
+          "href": "/assets/docs/tei-broschyr-eng.pdf",
+          "driveId": "1WF8DBPhtUy3RRsbPXA6yrWNb44QbYLqL"
+        },
+        {
+          "type": "cards",
+          "items": [
+            {
+              "href": "/produkter/tei/topphammare",
+              "label": "Läs mer",
+              "title": "Верхние перфораторы",
+              "html": "Гидравлический верхний перфоратор для бурения в твёрдой скале и камне. Высокая сила удара, прочная конструкция и долговременная производительность.",
+              "text": "Гидравлический верхний перфоратор для бурения в твёрдой скале и камне. Высокая сила удара, прочная конструкция и долговременная производительность.",
+              "image": "/assets/img/tei-topphammare.webp",
+              "width": 1500,
+              "height": 1500,
+              "alt": "Логотип верхних перфораторов"
+            },
+            {
+              "href": "/produkter/tei/rotationshammare",
+              "label": "Läs mer",
+              "title": "Вращатели",
+              "html": "Мощные гидравлические вращатели — просты в использовании и обслуживании. Применяются при установке грунтовых гвоздей и микросвай.",
+              "text": "Мощные гидравлические вращатели — просты в использовании и обслуживании. Применяются при установке грунтовых гвоздей и микросвай.",
+              "image": "/assets/img/tei-rotationshammare.webp",
+              "width": 1500,
+              "height": 1500,
+              "alt": "Логотип вращателей"
+            },
+            {
+              "href": "/produkter/tei/borrmaster",
+              "label": "Läs mer",
+              "title": "Буровые мачты",
+              "html": "Буровые мачты TEI адаптированы под экскаваторы разных размеров. Они манёвренны, лёгки, и их нетрудно установить и снять.",
+              "text": "Буровые мачты TEI адаптированы под экскаваторы разных размеров. Они манёвренны, лёгки, и их нетрудно установить и снять.",
+              "image": "/assets/img/tei-borrmaster.webp",
+              "width": 498,
+              "height": 498,
+              "alt": "Логотип буровых мачт"
+            },
+            {
+              "href": "/produkter/tei/borriggar",
+              "label": "Läs mer",
+              "title": "Буровые установки",
+              "html": "Электрические буровые установки, специально разработанные для работы в стеснённых условиях. Идеальны для установки микросвай и монолитных стен.",
+              "text": "Электрические буровые установки, специально разработанные для работы в стеснённых условиях. Идеальны для установки микросвай и монолитных стен.",
+              "image": "/assets/img/tei-borriggar.webp",
+              "width": 443,
+              "height": 443,
+              "alt": "Логотип буровых установок"
             }
           ]
         }

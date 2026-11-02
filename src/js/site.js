@@ -511,11 +511,20 @@
     es: "aciones acion amientos amiento mente ores or es as os a o s"
   };
   SUFFIX_LISTS.no = SUFFIX_LISTS.nb = SUFFIX_LISTS.sv;
+  // written the way fold() leaves a word: no diacritics (a Russian short i becomes a plain i)
+  SUFFIX_LISTS.lt = "ymas ymai imas imai iais uose ose yse ams oms ius ai as is ys us a e i o u";
+  SUFFIX_LISTS.lv = "ibas ibai ibu ibam ums umi umu iem am as es is us os u a e i s";
+  SUFFIX_LISTS.et = "tega dega dele dest tele ssa sse ga ks st le lt de te id s l d t";
+  SUFFIX_LISTS.ru = "ования ование ениях ениям ении ения ение ами ями ому ему ого его ых их ии ои ыи ая яя ое ее ые ие ов ев ам ям ах ях ом ем ую юю а я ы и у ю е о ь";
   var SUFFIXES = (SUFFIX_LISTS[LANG] || SUFFIX_LISTS.sv).split(" ").sort(function (a, b) { return b.length - a.length; });
   var STOP_LISTS = {
     sv: "och i for av pa med en ett att som till de det den", en: "the and of for to in a an on with", es: "de la el los las y en para con un una por"
   };
   STOP_LISTS.no = STOP_LISTS.nb = "og i for av pa med en et at som til de det den";
+  STOP_LISTS.lt = "ir su is i kad yra ar nuo del per ne";
+  STOP_LISTS.lv = "un ar no uz ir ka par lai pie";
+  STOP_LISTS.et = "ja ning on ei et kui voi ka kus";
+  STOP_LISTS.ru = "и в во не на с со по для от к из за что как это";
   var STOP = {};
   (STOP_LISTS[LANG] || STOP_LISTS.sv).split(" ").forEach(function (w) { STOP[w] = 1; });
   var FIELD_W = [10, 2.2, 4, 1]; // title, breadcrumb, headings, body

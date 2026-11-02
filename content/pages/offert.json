@@ -49,6 +49,54 @@
           "bare": true
         }
       ]
+    },
+    "lt": {
+      "title": "Gauti pasiūlymą",
+      "h1": "Gauti pasiūlymą",
+      "description": "Trumpai aprašykite, ko jums reikia, ir mes atsakysime nurodydami kainą ir pristatymo laiką.",
+      "blocks": [
+        {
+          "type": "quote",
+          "bare": true
+        }
+      ],
+      "published": true
+    },
+    "lv": {
+      "title": "Saņemt piedāvājumu",
+      "h1": "Saņemt piedāvājumu",
+      "description": "Īsi aprakstiet, kas jums nepieciešams, un mēs atbildēsim ar cenu un piegādes laiku.",
+      "blocks": [
+        {
+          "type": "quote",
+          "bare": true
+        }
+      ],
+      "published": true
+    },
+    "et": {
+      "title": "Küsi pakkumist",
+      "h1": "Küsi pakkumist",
+      "description": "Kirjelda lühidalt, mida vajad, ja vastame hinna ja tarneajaga.",
+      "blocks": [
+        {
+          "type": "quote",
+          "bare": true
+        }
+      ],
+      "published": true
+    },
+    "ru": {
+      "title": "Получить предложение",
+      "h1": "Получить предложение",
+      "description": "Коротко опишите, что вам нужно, и мы ответим с указанием цены и срока поставки.",
+      "blocks": [
+        {
+          "type": "quote",
+          "bare": true
+        }
+      ],
+      "published": true
     }
   }
 }

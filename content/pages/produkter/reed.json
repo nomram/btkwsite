@@ -197,5 +197,11 @@
   "source": {
     "url": "https://www.betongakuten.se/produkter/reed"
   },
-  "logo": "/assets/img/logo-reed.webp"
+  "logo": "/assets/img/logo-reed.webp",
+  "hideIn": [
+    "lt",
+    "lv",
+    "et",
+    "ru"
+  ]
 }

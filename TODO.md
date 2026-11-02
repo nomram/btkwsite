@@ -1,5 +1,17 @@
 # To do
 
+## Lithuanian, Latvian, Estonian, Russian (lt, lv, et, ru)
+
+Added for the brands Häny, TEI, AHLM and Jean Lutz plus the company pages (home, products, about, contact, quote, references). Source of the texts: `translations/scope/`
+(`strings.json` + `chunk-*.json`), applied to the pages with `node tools/i18n-scope.mjs apply` (it rewrites the lt/lv/et/ru text of those pages from the Swedish, so make later
+edits in the chunk files or accept that a rerun replaces hand edits). The other brand pages are hidden in these four languages with `hideIn`.
+
+- [ ] Have a native speaker of each language read the texts (written by Claude, not by a translator). Fix them in `translations/scope/chunk-*.json` and apply again.
+- [ ] Privacy policy and cookie text: the four languages link to the English page (`/en/integritetspolicy`). Have it translated and added before launch if the Baltic markets matter.
+- [ ] A further brand in these languages: translate its pages (add them to `BRANDS` in `tools/i18n-scope.mjs`, `collect`, translate the new strings into a new chunk file, `apply`) and take lt, lv, et, ru out of its `hideIn`.
+- [ ] Units in tables stay in Latin letters (mm, bar, kg) in Russian; the table cells are not part of the text extraction.
+- [ ] The Swedish tagline is still shown on English, Spanish and Norwegian pages (footer, home title); the new languages have their own (`tagline` in `content/ui/<lang>.json`).
+
 ## Remove the old Marini quarry brochure (hidden for now)
 
 The new quarry catalogue (`assets-src/docs/marini-stenbrott-produktkatalog.pdf`) replaces the old quarry brochures as the download.

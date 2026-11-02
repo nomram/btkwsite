@@ -1446,6 +1446,1446 @@
         }
       ],
       "published": true
+    },
+    "lt": {
+      "title": "Viršutinio smūgio plaktukai",
+      "h1": "Viršutinio smūgio plaktukai",
+      "description": "TEI gręžimo plaktukai, sukurti suteikti galią, reikalingą efektyviam grunto vinių įrengimui, mikropoliams ir kitiems gręžimo darbams kietoje uolienoje bei grunte.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "TEI Rock Drills logotipas",
+          "href": "/produkter/tei",
+          "width": 1920,
+          "height": 1117,
+          "src": "/assets/img/tei-2.webp"
+        },
+        {
+          "type": "compare",
+          "src": "/assets/img/tei-topphammare-2.webp",
+          "alt": "TE1000 viršutinio smūgio plaktukas, išorė",
+          "src2": "/assets/img/tei-topphammare-3-aligned.webp",
+          "alt2": "TE1000 viršutinio smūgio plaktukas pjūvyje",
+          "label": "Išorė",
+          "label2": "Pjūvis",
+          "caption": "TE1000 iš išorės ir pjūvyje",
+          "width": 1734,
+          "height": 1191
+        },
+        {
+          "type": "text",
+          "html": "TEI gręžimo plaktukai, sukurti suteikti galią, reikalingą efektyviam grunto vinių įrengimui, mikropoliams ir kitiems gręžimo darbams kietoje uolienoje bei grunte."
+        },
+        {
+          "type": "text",
+          "html": "Integravus savo sukurtą ASA technologiją (Automatic Stroke Adjustment) į smūginę sistemą, didėja našumas ir įrangos tarnavimo laikas, taip pat pelningumas. ASA sistema pritaiko galią prie kintančių grunto ir uolienų sąlygų."
+        },
+        {
+          "type": "text",
+          "html": "TEI gręžimo plaktukai sukuria visą smūgio jėgą tik tada, kai gręžimo kolona įtraukta, o veikdami tuščiąja eiga sumažina smūgio ilgį ir dažnį, taip sumažindami energijos nuostolius ir užkirsdami kelią nereikalingam komponentų dilimui."
+        },
+        {
+          "type": "text",
+          "html": "Dėl kompaktiško dydžio ir pirmaujančio galios ir svorio santykio TEI gręžimo plaktukai išsiskiria rinkoje."
+        },
+        {
+          "type": "text",
+          "html": "Žemiau pateikiamas TEI viršutinio smūgio plaktukų asortimentas. Toliau žemiau yra techninių specifikacijų lentelė."
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Susisiekite su mumis</a> dėl daugiau informacijos."
+        },
+        {
+          "type": "rangechart",
+          "layout": "selector",
+          "unit": "mm",
+          "title": "Kuris viršutinio smūgio plaktukas tinka jūsų skylei?",
+          "intro": "Kiekvienas modelis apima tam tikrą skylių dydžių diapazoną. Raskite savo dydį skalėje ir pasirinkite modelį, kurio stulpelis jį apima. Kai stulpeliai persidengia, tinka keli modeliai – tada rinkitės pagal galią, sukimo momentą ir svorį (žr. lentelę žemiau).",
+          "note": "Skylių dydžiai pagal žemiau esančią lentelę (TEI rekomenduojami diapazonai).",
+          "items": [
+            {
+              "label": "TE1000",
+              "min": 76,
+              "max": 178,
+              "href": "/produkter/tei/topphammare/te1000"
+            },
+            {
+              "label": "TE760",
+              "min": 52,
+              "max": 127,
+              "href": "/produkter/tei/topphammare/te760"
+            },
+            {
+              "label": "TE726",
+              "min": 52,
+              "max": 101,
+              "href": "/produkter/tei/topphammare/te726"
+            },
+            {
+              "label": "TE360",
+              "min": 35,
+              "max": 76,
+              "href": "/produkter/tei/topphammare/te360"
+            },
+            {
+              "label": "TE326",
+              "min": 35,
+              "max": 76,
+              "href": "/produkter/tei/topphammare/te326"
+            },
+            {
+              "label": "TE260HT",
+              "min": 35,
+              "max": 64,
+              "href": "/produkter/tei/topphammare/te260ht"
+            },
+            {
+              "label": "TE260",
+              "min": 35,
+              "max": 52,
+              "href": "/produkter/tei/topphammare/te260"
+            },
+            {
+              "label": "TE160HT",
+              "min": 32,
+              "max": 52,
+              "href": "/produkter/tei/topphammare/te160ht"
+            },
+            {
+              "label": "TE160",
+              "min": 32,
+              "max": 48,
+              "href": "/produkter/tei/topphammare/te160"
+            }
+          ],
+          "step": 25,
+          "masts": {
+            "title": "Suderinami stiebai",
+            "hint": "Pasirinkite skylę slankikliu aukščiau: pašvies stiebai, tinkantys šiai skylei skirtoms mašinoms.",
+            "fit": "Tinka",
+            "forLabel": "För",
+            "none": "Joks sąraše esantis stiebas netinka šiam dydžiui.",
+            "more": "Pažymėti stiebai tinka",
+            "items": [
+              {
+                "href": "/produkter/tei/borrmaster/mme",
+                "title": "MME",
+                "image": "/assets/img/tei-borrmaster-mme.webp",
+                "sub": "Ekskavatoriams: 5–8 t",
+                "for": [
+                  "TE260",
+                  "TE260HT",
+                  "TE326"
+                ]
+              },
+              {
+                "href": "/produkter/tei/borrmaster/mem",
+                "title": "MEM",
+                "image": "/assets/img/tei-borrmaster-mem.webp",
+                "sub": "Ekskavatoriams: 12–15 t",
+                "for": [
+                  "TE360",
+                  "TE326"
+                ]
+              },
+              {
+                "href": "/produkter/tei/borrmaster/hem",
+                "title": "HEM",
+                "image": "/assets/img/tei-borrmaster-hem.webp",
+                "sub": "Ekskavatoriams: 20–25 t",
+                "for": [
+                  "TE360",
+                  "TE326",
+                  "TE760"
+                ]
+              },
+              {
+                "href": "/produkter/tei/borrmaster/hemh",
+                "title": "HEMH",
+                "image": "/assets/img/tei-borrmaster-hemh.webp",
+                "sub": "Ekskavatoriams: 25–30 t",
+                "for": [
+                  "TE726",
+                  "TE760",
+                  "TE1000"
+                ]
+              },
+              {
+                "href": "/produkter/tei/borrmaster/mp260",
+                "title": "MP260",
+                "image": "/assets/img/tei-borrmaster-mp260.webp",
+                "sub": "Nešiojamas stiebas",
+                "for": [
+                  "TE260HT",
+                  "TE260"
+                ]
+              },
+              {
+                "href": "/produkter/tei/borrmaster/mph",
+                "title": "MPH",
+                "image": "/assets/img/tei-borrmaster-mph.webp",
+                "sub": "Nešiojamas stiebas",
+                "for": [
+                  "TE260",
+                  "TE260HT",
+                  "TE326",
+                  "TE360"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "table",
+          "header": true,
+          "align": "center",
+          "caption": "Rekomenduojamas skylės dydžio diapazonas (mm) TE serijos gręžimo agregatams",
+          "rows": [
+            [
+              "Modelis",
+              "Skylės dydis (mm)",
+              "Svoris (kg)",
+              "Plaktuko debitas (l/min)",
+              "Sukimosi debitas (l/min)"
+            ],
+            [
+              "TE1000",
+              "76.2 - 177.8",
+              "449",
+              "117",
+              "114-144"
+            ],
+            [
+              "TE760",
+              "52 - 127",
+              "240",
+              "95",
+              "57-95"
+            ],
+            [
+              "TE726",
+              "52 - 101",
+              "154",
+              "102",
+              "38-76"
+            ],
+            [
+              "TE360",
+              "35 - 76",
+              "107",
+              "76",
+              "38-76"
+            ],
+            [
+              "TE326",
+              "35 - 76",
+              "81",
+              "76",
+              "19-49"
+            ],
+            [
+              "TE260HT",
+              "35 - 64",
+              "82",
+              "68",
+              "38-76"
+            ],
+            [
+              "TE260",
+              "35 - 52",
+              "68",
+              "68",
+              "19-38"
+            ],
+            [
+              "TE160HT",
+              "32 - 52",
+              "78",
+              "61",
+              "38-76"
+            ],
+            [
+              "TE160",
+              "32 - 48",
+              "48",
+              "61",
+              "23-27"
+            ]
+          ]
+        },
+        {
+          "type": "modules",
+          "layout": "compact",
+          "items": [
+            {
+              "title": "TE160",
+              "image": "/assets/img/tei-topphammare-te160.webp",
+              "alt": "TE160",
+              "href": "/produkter/tei/topphammare/te160",
+              "text": "Didelio sukimo momento viršutinio smūgio plaktukas daugumai vidutinio dydžio inkaravimo įrenginių."
+            },
+            {
+              "title": "TE260",
+              "image": "/assets/img/tei-topphammare-te260.webp",
+              "alt": "TE260",
+              "href": "/produkter/tei/topphammare/te260",
+              "text": "Kompaktiškas didelio sukimo momento viršutinio smūgio plaktukas drifting ir tuneliavimui."
+            },
+            {
+              "title": "TE326",
+              "image": "/assets/img/tei-topphammare-te326.webp",
+              "alt": "TE326",
+              "href": "/produkter/tei/topphammare/te326",
+              "text": "Didelis galios ir svorio santykis, tik 81 kg."
+            },
+            {
+              "title": "TE360",
+              "image": "/assets/img/tei-topphammare-te360.webp",
+              "alt": "TE360",
+              "href": "/produkter/tei/topphammare/te360",
+              "text": "Žemo profilio viršutinio smūgio plaktukas su dideliu galios ir svorio santykiu."
+            },
+            {
+              "title": "TE726",
+              "image": "/assets/img/tei-topphammare-te726.webp",
+              "alt": "TE726",
+              "href": "/produkter/tei/topphammare/te726",
+              "text": "Trys galios režimai 52–101 mm skylėms – nuo horizontalaus štrekų gręžimo iki vertikalaus sprogdinimo skylių gręžimo."
+            },
+            {
+              "title": "TE760",
+              "image": "/assets/img/tei-topphammare-te760.webp",
+              "alt": "TE760",
+              "href": "/produkter/tei/topphammare/te760",
+              "text": "Didelio momento viršutinio smūgio plaktukas daugumai vidutinio dydžio inkaravimo įrenginių."
+            },
+            {
+              "title": "TE1000",
+              "image": "/assets/img/tei-topphammare-te1000.webp",
+              "alt": "TE1000",
+              "href": "/produkter/tei/topphammare/te1000",
+              "text": "Trumpiausias ir žemiausias profilis savo galios klasėje, 25 kW."
+            },
+            {
+              "title": "TE160HT",
+              "image": "/assets/img/tei-topphammare-te160ht.webp",
+              "alt": "TE160HT",
+              "href": "/produkter/tei/topphammare/te160ht",
+              "text": "Itin trumpas viršutinio smūgio plaktukas su dideliu smūgių dažniu ir vakuumine sistema lubų varžtavimui."
+            },
+            {
+              "title": "TE260HT",
+              "image": "/assets/img/tei-topphammare-te260ht.webp",
+              "alt": "TE260HT",
+              "href": "/produkter/tei/topphammare/te260ht",
+              "text": "Didelis sukimo momentas savigręžiams inkarams, kompaktiškas geotechnikai ir tunelių gręžimui."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "TEI techniniai duomenys numato 40 % hidraulinės galios nuostolių. Šios reikšmės gali būti keičiamos be įspėjimo."
+        },
+        {
+          "type": "text",
+          "html": "Žymos: viršutinio smūgio plaktukas / panardinamasis plaktukas (DTH), sukamoji galvutė"
+        },
+        {
+          "type": "related",
+          "items": [
+            {
+              "href": "/produkter/tei/rotationshammare",
+              "mutual": true
+            },
+            {
+              "href": "/produkter/tei/borrmaster",
+              "mutual": true
+            }
+          ]
+        }
+      ],
+      "published": true
+    },
+    "lv": {
+      "title": "Augšējā āmura urbji",
+      "h1": "Augšējā āmura urbji",
+      "description": "TEI urbšanas āmuri, kas izstrādāti, lai nodrošinātu jaudu, kas nepieciešama efektīvai grunts naglu uzstādīšanai, mikropāļiem un citiem urbšanas pielietojumiem cietos iežos un gruntī.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "TEI Rock Drills logotips",
+          "href": "/produkter/tei",
+          "width": 1920,
+          "height": 1117,
+          "src": "/assets/img/tei-2.webp"
+        },
+        {
+          "type": "compare",
+          "src": "/assets/img/tei-topphammare-2.webp",
+          "alt": "TE1000 augšējā āmura urbis, ārpuse",
+          "src2": "/assets/img/tei-topphammare-3-aligned.webp",
+          "alt2": "TE1000 augšējā āmura urbis griezumā",
+          "label": "Ārpuse",
+          "label2": "Griezums",
+          "caption": "TE1000 no ārpuses un griezumā",
+          "width": 1734,
+          "height": 1191
+        },
+        {
+          "type": "text",
+          "html": "TEI urbšanas āmuri, kas izstrādāti, lai nodrošinātu jaudu, kas nepieciešama efektīvai grunts naglu uzstādīšanai, mikropāļiem un citiem urbšanas pielietojumiem cietos iežos un gruntī."
+        },
+        {
+          "type": "text",
+          "html": "Integrējot paša izstrādāto ASA tehnoloģiju (Automatic Stroke Adjustment) sitiena sistēmā, tiek palielināta ražība un iekārtas kalpošanas laiks, kā arī rentabilitāte. ASA sistēma pielāgo jaudu mainīgiem grunts un iežu apstākļiem."
+        },
+        {
+          "type": "text",
+          "html": "TEI urbšanas āmuri rada pilnu sitiena spēku tikai tad, kad urbjstieņu virkne ir iesaistīta, un tukšgaitā samazina sitiena garumu un frekvenci, tādējādi samazinot enerģijas zudumus un novēršot nevajadzīgu komponentu nodilumu."
+        },
+        {
+          "type": "text",
+          "html": "Pateicoties kompaktajam izmēram un vadošajai jaudas un svara attiecībai, TEI urbšanas āmuri izceļas tirgū."
+        },
+        {
+          "type": "text",
+          "html": "Zemāk redzams TEI augšējā āmura urbju klāsts. Tālāk zemāk ir tabula ar tehniskajām specifikācijām."
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Sazinieties ar mums</a>, lai uzzinātu vairāk."
+        },
+        {
+          "type": "rangechart",
+          "layout": "selector",
+          "unit": "mm",
+          "title": "Kurš augšējā āmura urbis der jūsu urbumam?",
+          "intro": "Katrs modelis aptver noteiktu atveru izmēru diapazonu. Atrodiet savu izmēru skalā un izvēlieties modeli, kura josla to aptver. Kur joslas pārklājas, der vairāki modeļi — izvēlieties pēc jaudas, griezes momenta un svara (skatiet tabulu zemāk).",
+          "note": "Atveru izmēri atbilstoši zemāk esošajai tabulai (TEI ieteicamie diapazoni).",
+          "items": [
+            {
+              "label": "TE1000",
+              "min": 76,
+              "max": 178,
+              "href": "/produkter/tei/topphammare/te1000"
+            },
+            {
+              "label": "TE760",
+              "min": 52,
+              "max": 127,
+              "href": "/produkter/tei/topphammare/te760"
+            },
+            {
+              "label": "TE726",
+              "min": 52,
+              "max": 101,
+              "href": "/produkter/tei/topphammare/te726"
+            },
+            {
+              "label": "TE360",
+              "min": 35,
+              "max": 76,
+              "href": "/produkter/tei/topphammare/te360"
+            },
+            {
+              "label": "TE326",
+              "min": 35,
+              "max": 76,
+              "href": "/produkter/tei/topphammare/te326"
+            },
+            {
+              "label": "TE260HT",
+              "min": 35,
+              "max": 64,
+              "href": "/produkter/tei/topphammare/te260ht"
+            },
+            {
+              "label": "TE260",
+              "min": 35,
+              "max": 52,
+              "href": "/produkter/tei/topphammare/te260"
+            },
+            {
+              "label": "TE160HT",
+              "min": 32,
+              "max": 52,
+              "href": "/produkter/tei/topphammare/te160ht"
+            },
+            {
+              "label": "TE160",
+              "min": 32,
+              "max": 48,
+              "href": "/produkter/tei/topphammare/te160"
+            }
+          ],
+          "step": 25,
+          "masts": {
+            "title": "Saderīgie masti",
+            "hint": "Izvēlieties urbumu ar augstāk esošo slīdni: iedegsies masti, kas der šim urbumam paredzētajām iekārtām.",
+            "fit": "Der",
+            "forLabel": "För",
+            "none": "Neviens saraksta masts neder šim izmēram.",
+            "more": "Atzīmētie masti der",
+            "items": [
+              {
+                "href": "/produkter/tei/borrmaster/mme",
+                "title": "MME",
+                "image": "/assets/img/tei-borrmaster-mme.webp",
+                "sub": "Ekskavatoriem: 5–8 t",
+                "for": [
+                  "TE260",
+                  "TE260HT",
+                  "TE326"
+                ]
+              },
+              {
+                "href": "/produkter/tei/borrmaster/mem",
+                "title": "MEM",
+                "image": "/assets/img/tei-borrmaster-mem.webp",
+                "sub": "Ekskavatoriem: 12–15 t",
+                "for": [
+                  "TE360",
+                  "TE326"
+                ]
+              },
+              {
+                "href": "/produkter/tei/borrmaster/hem",
+                "title": "HEM",
+                "image": "/assets/img/tei-borrmaster-hem.webp",
+                "sub": "Ekskavatoriem: 20–25 t",
+                "for": [
+                  "TE360",
+                  "TE326",
+                  "TE760"
+                ]
+              },
+              {
+                "href": "/produkter/tei/borrmaster/hemh",
+                "title": "HEMH",
+                "image": "/assets/img/tei-borrmaster-hemh.webp",
+                "sub": "Ekskavatoriem: 25–30 t",
+                "for": [
+                  "TE726",
+                  "TE760",
+                  "TE1000"
+                ]
+              },
+              {
+                "href": "/produkter/tei/borrmaster/mp260",
+                "title": "MP260",
+                "image": "/assets/img/tei-borrmaster-mp260.webp",
+                "sub": "Pārnēsājams masts",
+                "for": [
+                  "TE260HT",
+                  "TE260"
+                ]
+              },
+              {
+                "href": "/produkter/tei/borrmaster/mph",
+                "title": "MPH",
+                "image": "/assets/img/tei-borrmaster-mph.webp",
+                "sub": "Pārnēsājams masts",
+                "for": [
+                  "TE260",
+                  "TE260HT",
+                  "TE326",
+                  "TE360"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "table",
+          "header": true,
+          "align": "center",
+          "caption": "Ieteicamais atveres izmēru diapazons (mm) TE sērijas urbšanas agregātiem",
+          "rows": [
+            [
+              "Modelis",
+              "Atveres izmērs (mm)",
+              "Svars (kg)",
+              "Āmura caurplūde (l/min)",
+              "Rotācijas caurplūde (l/min)"
+            ],
+            [
+              "TE1000",
+              "76.2 - 177.8",
+              "449",
+              "117",
+              "114-144"
+            ],
+            [
+              "TE760",
+              "52 - 127",
+              "240",
+              "95",
+              "57-95"
+            ],
+            [
+              "TE726",
+              "52 - 101",
+              "154",
+              "102",
+              "38-76"
+            ],
+            [
+              "TE360",
+              "35 - 76",
+              "107",
+              "76",
+              "38-76"
+            ],
+            [
+              "TE326",
+              "35 - 76",
+              "81",
+              "76",
+              "19-49"
+            ],
+            [
+              "TE260HT",
+              "35 - 64",
+              "82",
+              "68",
+              "38-76"
+            ],
+            [
+              "TE260",
+              "35 - 52",
+              "68",
+              "68",
+              "19-38"
+            ],
+            [
+              "TE160HT",
+              "32 - 52",
+              "78",
+              "61",
+              "38-76"
+            ],
+            [
+              "TE160",
+              "32 - 48",
+              "48",
+              "61",
+              "23-27"
+            ]
+          ]
+        },
+        {
+          "type": "modules",
+          "layout": "compact",
+          "items": [
+            {
+              "title": "TE160",
+              "image": "/assets/img/tei-topphammare-te160.webp",
+              "alt": "TE160",
+              "href": "/produkter/tei/topphammare/te160",
+              "text": "Augsta griezes momenta augšējā āmura urbis lielākajai daļai vidējo enkuru urbjiekārtu."
+            },
+            {
+              "title": "TE260",
+              "image": "/assets/img/tei-topphammare-te260.webp",
+              "alt": "TE260",
+              "href": "/produkter/tei/topphammare/te260",
+              "text": "Kompakts augsta griezes momenta augšējā āmura urbis drifting un tunelēšanai."
+            },
+            {
+              "title": "TE326",
+              "image": "/assets/img/tei-topphammare-te326.webp",
+              "alt": "TE326",
+              "href": "/produkter/tei/topphammare/te326",
+              "text": "Augsta jaudas un svara attiecība, tikai 81 kg."
+            },
+            {
+              "title": "TE360",
+              "image": "/assets/img/tei-topphammare-te360.webp",
+              "alt": "TE360",
+              "href": "/produkter/tei/topphammare/te360",
+              "text": "Zema profila augšējā āmura urbis ar augstu jaudas un svara attiecību."
+            },
+            {
+              "title": "TE726",
+              "image": "/assets/img/tei-topphammare-te726.webp",
+              "alt": "TE726",
+              "href": "/produkter/tei/topphammare/te726",
+              "text": "Trīs jaudas režīmi 52–101 mm urbumiem — no horizontālas ortu urbšanas līdz vertikālai spridzināšanas urbumu urbšanai."
+            },
+            {
+              "title": "TE760",
+              "image": "/assets/img/tei-topphammare-te760.webp",
+              "alt": "TE760",
+              "href": "/produkter/tei/topphammare/te760",
+              "text": "Augsta griezes momenta augšējā āmura urbis lielākajai daļai vidējo enkuru urbjiekārtu."
+            },
+            {
+              "title": "TE1000",
+              "image": "/assets/img/tei-topphammare-te1000.webp",
+              "alt": "TE1000",
+              "href": "/produkter/tei/topphammare/te1000",
+              "text": "Īsākais un zemākais profils savā jaudas klasē, 25 kW."
+            },
+            {
+              "title": "TE160HT",
+              "image": "/assets/img/tei-topphammare-te160ht.webp",
+              "alt": "TE160HT",
+              "href": "/produkter/tei/topphammare/te160ht",
+              "text": "Ārkārtīgi īss augšējā āmura urbis ar augstu sitienu frekvenci un vakuuma sistēmu jumta bultošanai."
+            },
+            {
+              "title": "TE260HT",
+              "image": "/assets/img/tei-topphammare-te260ht.webp",
+              "alt": "TE260HT",
+              "href": "/produkter/tei/topphammare/te260ht",
+              "text": "Augsts griezes moments pašurbjošajiem enkuriem, kompakts ģeotehnikai un tuneļu urbšanai."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "TEI tehniskajās specifikācijās ņemts vērā 40 % hidrauliskās jaudas zudums. Šīs vērtības var tikt mainītas bez brīdinājuma."
+        },
+        {
+          "type": "text",
+          "html": "Atzīmes: augšējā āmura urbis / iegremdējamais āmurs (DTH), rotācijas galva"
+        },
+        {
+          "type": "related",
+          "items": [
+            {
+              "href": "/produkter/tei/rotationshammare",
+              "mutual": true
+            },
+            {
+              "href": "/produkter/tei/borrmaster",
+              "mutual": true
+            }
+          ]
+        }
+      ],
+      "published": true
+    },
+    "et": {
+      "title": "Ülavasarad",
+      "h1": "Ülavasarad",
+      "description": "TEI puurvasarad, mis on loodud pakkuma võimsust, mida on vaja tõhusaks mullanaelte paigaldamiseks, mikrovaiade ja muude puurimisrakenduste jaoks kõvas kaljus ja pinnases.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "TEI Rock Drills logo",
+          "href": "/produkter/tei",
+          "width": 1920,
+          "height": 1117,
+          "src": "/assets/img/tei-2.webp"
+        },
+        {
+          "type": "compare",
+          "src": "/assets/img/tei-topphammare-2.webp",
+          "alt": "TE1000 ülavasar, väljast",
+          "src2": "/assets/img/tei-topphammare-3-aligned.webp",
+          "alt2": "TE1000 ülavasar lõikes",
+          "label": "Väljast",
+          "label2": "Lõige",
+          "caption": "TE1000 väljast ja lõikes",
+          "width": 1734,
+          "height": 1191
+        },
+        {
+          "type": "text",
+          "html": "TEI puurvasarad, mis on loodud pakkuma võimsust, mida on vaja tõhusaks mullanaelte paigaldamiseks, mikrovaiade ja muude puurimisrakenduste jaoks kõvas kaljus ja pinnases."
+        },
+        {
+          "type": "text",
+          "html": "Integreerides ise väljatöötatud ASA-tehnoloogia (Automatic Stroke Adjustment) löögisüsteemi, suurenevad tootlikkus ja seadmete kasutusiga ning tasuvus. ASA-süsteem kohandab võimsust muutuvatele pinnase- ja kaljutingimustele."
+        },
+        {
+          "type": "text",
+          "html": "TEI puurvasarad annavad täisvõimsusega lööke ainult siis, kui puurimistorustik on haaratud, ning tühikäigul vähendavad löögipikkust ja -sagedust, mis minimeerib energiakadu ja hoiab ära komponentide tarbetu kulumise."
+        },
+        {
+          "type": "text",
+          "html": "Kompaktse suuruse ja juhtiva võimsuse-kaalu suhtega paistavad TEI puurvasarad turul silma."
+        },
+        {
+          "type": "text",
+          "html": "Allpool on TEI ülavasarate valik. Veel allpool on tabel tehniliste andmetega."
+        },
+        {
+          "type": "text",
+          "html": "Lisateabe saamiseks <a href=\"/kontakta-oss\">võta meiega ühendust</a>."
+        },
+        {
+          "type": "rangechart",
+          "layout": "selector",
+          "unit": "mm",
+          "title": "Milline ülavasar sobib sinu augu jaoks?",
+          "intro": "Iga mudel katab teatud vahemiku augu suurusi. Leia skaalalt oma mõõt ja vali mudel, mille riba seda katab. Kus ribad kattuvad, sobib mitu mudelit – vali siis võimsuse, pöördemomendi ja kaalu järgi (vt tabelit allpool).",
+          "note": "Augude suurused vastavalt allolevale tabelile (TEI soovitatavad vahemikud).",
+          "items": [
+            {
+              "label": "TE1000",
+              "min": 76,
+              "max": 178,
+              "href": "/produkter/tei/topphammare/te1000"
+            },
+            {
+              "label": "TE760",
+              "min": 52,
+              "max": 127,
+              "href": "/produkter/tei/topphammare/te760"
+            },
+            {
+              "label": "TE726",
+              "min": 52,
+              "max": 101,
+              "href": "/produkter/tei/topphammare/te726"
+            },
+            {
+              "label": "TE360",
+              "min": 35,
+              "max": 76,
+              "href": "/produkter/tei/topphammare/te360"
+            },
+            {
+              "label": "TE326",
+              "min": 35,
+              "max": 76,
+              "href": "/produkter/tei/topphammare/te326"
+            },
+            {
+              "label": "TE260HT",
+              "min": 35,
+              "max": 64,
+              "href": "/produkter/tei/topphammare/te260ht"
+            },
+            {
+              "label": "TE260",
+              "min": 35,
+              "max": 52,
+              "href": "/produkter/tei/topphammare/te260"
+            },
+            {
+              "label": "TE160HT",
+              "min": 32,
+              "max": 52,
+              "href": "/produkter/tei/topphammare/te160ht"
+            },
+            {
+              "label": "TE160",
+              "min": 32,
+              "max": 48,
+              "href": "/produkter/tei/topphammare/te160"
+            }
+          ],
+          "step": 25,
+          "masts": {
+            "title": "Ühilduvad mastid",
+            "hint": "Vali auk ülaloleva liuguriga: valgustuvad mastid, mis sobivad selle augu masinatele.",
+            "fit": "Sobib",
+            "forLabel": "För",
+            "none": "Ükski loendi mast ei sobi sellele suurusele.",
+            "more": "Märgitud mastid sobivad",
+            "items": [
+              {
+                "href": "/produkter/tei/borrmaster/mme",
+                "title": "MME",
+                "image": "/assets/img/tei-borrmaster-mme.webp",
+                "sub": "Ekskavaatoritele: 5–8 t",
+                "for": [
+                  "TE260",
+                  "TE260HT",
+                  "TE326"
+                ]
+              },
+              {
+                "href": "/produkter/tei/borrmaster/mem",
+                "title": "MEM",
+                "image": "/assets/img/tei-borrmaster-mem.webp",
+                "sub": "Ekskavaatoritele: 12–15 t",
+                "for": [
+                  "TE360",
+                  "TE326"
+                ]
+              },
+              {
+                "href": "/produkter/tei/borrmaster/hem",
+                "title": "HEM",
+                "image": "/assets/img/tei-borrmaster-hem.webp",
+                "sub": "Ekskavaatoritele: 20–25 t",
+                "for": [
+                  "TE360",
+                  "TE326",
+                  "TE760"
+                ]
+              },
+              {
+                "href": "/produkter/tei/borrmaster/hemh",
+                "title": "HEMH",
+                "image": "/assets/img/tei-borrmaster-hemh.webp",
+                "sub": "Ekskavaatoritele: 25–30 t",
+                "for": [
+                  "TE726",
+                  "TE760",
+                  "TE1000"
+                ]
+              },
+              {
+                "href": "/produkter/tei/borrmaster/mp260",
+                "title": "MP260",
+                "image": "/assets/img/tei-borrmaster-mp260.webp",
+                "sub": "Kantav mast",
+                "for": [
+                  "TE260HT",
+                  "TE260"
+                ]
+              },
+              {
+                "href": "/produkter/tei/borrmaster/mph",
+                "title": "MPH",
+                "image": "/assets/img/tei-borrmaster-mph.webp",
+                "sub": "Kantav mast",
+                "for": [
+                  "TE260",
+                  "TE260HT",
+                  "TE326",
+                  "TE360"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "table",
+          "header": true,
+          "align": "center",
+          "caption": "Soovitatav augu suuruse vahemik (mm) TE-seeria puurimisagregaatidele",
+          "rows": [
+            [
+              "Mudel",
+              "Augu suurus (mm)",
+              "Kaal (kg)",
+              "Haamri vooluhulk (l/min)",
+              "Pöörlemise vooluhulk (l/min)"
+            ],
+            [
+              "TE1000",
+              "76.2 - 177.8",
+              "449",
+              "117",
+              "114-144"
+            ],
+            [
+              "TE760",
+              "52 - 127",
+              "240",
+              "95",
+              "57-95"
+            ],
+            [
+              "TE726",
+              "52 - 101",
+              "154",
+              "102",
+              "38-76"
+            ],
+            [
+              "TE360",
+              "35 - 76",
+              "107",
+              "76",
+              "38-76"
+            ],
+            [
+              "TE326",
+              "35 - 76",
+              "81",
+              "76",
+              "19-49"
+            ],
+            [
+              "TE260HT",
+              "35 - 64",
+              "82",
+              "68",
+              "38-76"
+            ],
+            [
+              "TE260",
+              "35 - 52",
+              "68",
+              "68",
+              "19-38"
+            ],
+            [
+              "TE160HT",
+              "32 - 52",
+              "78",
+              "61",
+              "38-76"
+            ],
+            [
+              "TE160",
+              "32 - 48",
+              "48",
+              "61",
+              "23-27"
+            ]
+          ]
+        },
+        {
+          "type": "modules",
+          "layout": "compact",
+          "items": [
+            {
+              "title": "TE160",
+              "image": "/assets/img/tei-topphammare-te160.webp",
+              "alt": "TE160",
+              "href": "/produkter/tei/topphammare/te160",
+              "text": "Suure pöördemomendiga ülavasar enamikule keskmise suurusega ankurpuurimisseadmetele."
+            },
+            {
+              "title": "TE260",
+              "image": "/assets/img/tei-topphammare-te260.webp",
+              "alt": "TE260",
+              "href": "/produkter/tei/topphammare/te260",
+              "text": "Kompaktne suure pöördemomendiga ülavasar driftingu ja tunnelirajamise jaoks."
+            },
+            {
+              "title": "TE326",
+              "image": "/assets/img/tei-topphammare-te326.webp",
+              "alt": "TE326",
+              "href": "/produkter/tei/topphammare/te326",
+              "text": "Kõrge võimsuse-kaalu suhe, vaid 81 kg."
+            },
+            {
+              "title": "TE360",
+              "image": "/assets/img/tei-topphammare-te360.webp",
+              "alt": "TE360",
+              "href": "/produkter/tei/topphammare/te360",
+              "text": "Madalprofiilne ülavasar kõrge võimsuse-kaalu suhtega."
+            },
+            {
+              "title": "TE726",
+              "image": "/assets/img/tei-topphammare-te726.webp",
+              "alt": "TE726",
+              "href": "/produkter/tei/topphammare/te726",
+              "text": "Kolm võimsusrežiimi 52–101 mm aukudele – horisontaalsest ortpuurimisest vertikaalse lõhketööaukude puurimiseni."
+            },
+            {
+              "title": "TE760",
+              "image": "/assets/img/tei-topphammare-te760.webp",
+              "alt": "TE760",
+              "href": "/produkter/tei/topphammare/te760",
+              "text": "Suure momendiga ülavasar enamikule keskmise suurusega ankurpuurimisseadmetele."
+            },
+            {
+              "title": "TE1000",
+              "image": "/assets/img/tei-topphammare-te1000.webp",
+              "alt": "TE1000",
+              "href": "/produkter/tei/topphammare/te1000",
+              "text": "Oma võimsusklassi lühim ja madalaim profiil, 25 kW."
+            },
+            {
+              "title": "TE160HT",
+              "image": "/assets/img/tei-topphammare-te160ht.webp",
+              "alt": "TE160HT",
+              "href": "/produkter/tei/topphammare/te160ht",
+              "text": "Äärmiselt lühike ülavasar kõrge löögisagedusega ja vaakumsüsteemiga laepoltimiseks."
+            },
+            {
+              "title": "TE260HT",
+              "image": "/assets/img/tei-topphammare-te260ht.webp",
+              "alt": "TE260HT",
+              "href": "/produkter/tei/topphammare/te260ht",
+              "text": "Suur pöördemoment isepuurivate ankrute jaoks, kompaktne geotehnikale ja tunnelipuurimiseks."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "TEI tehnilistes andmetes on arvestatud 40 % hüdrauliivõimsuse kadu. Neid väärtusi võidakse ette teatamata muuta."
+        },
+        {
+          "type": "text",
+          "html": "Sildid: ülavasar / süvisvasar (DTH), pöörlemispea"
+        },
+        {
+          "type": "related",
+          "items": [
+            {
+              "href": "/produkter/tei/rotationshammare",
+              "mutual": true
+            },
+            {
+              "href": "/produkter/tei/borrmaster",
+              "mutual": true
+            }
+          ]
+        }
+      ],
+      "published": true
+    },
+    "ru": {
+      "title": "Верхние перфораторы",
+      "h1": "Верхние перфораторы",
+      "description": "Буровые молоты TEI, рассчитанные на мощность, необходимую для эффективной установки грунтовых гвоздей, микросвай и других буровых задач в твёрдой скале и грунте.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Логотип TEI Rock Drills",
+          "href": "/produkter/tei",
+          "width": 1920,
+          "height": 1117,
+          "src": "/assets/img/tei-2.webp"
+        },
+        {
+          "type": "compare",
+          "src": "/assets/img/tei-topphammare-2.webp",
+          "alt": "Верхний перфоратор TE1000, вид снаружи",
+          "src2": "/assets/img/tei-topphammare-3-aligned.webp",
+          "alt2": "Верхний перфоратор TE1000 в разрезе",
+          "label": "Снаружи",
+          "label2": "В разрезе",
+          "caption": "TE1000 снаружи и в разрезе",
+          "width": 1734,
+          "height": 1191
+        },
+        {
+          "type": "text",
+          "html": "Буровые молоты TEI, рассчитанные на мощность, необходимую для эффективной установки грунтовых гвоздей, микросвай и других буровых задач в твёрдой скале и грунте."
+        },
+        {
+          "type": "text",
+          "html": "Благодаря интеграции собственной разработки — технологии ASA (Automatic Stroke Adjustment) — в ударную систему повышаются производительность, срок службы оборудования и рентабельность. Система ASA адаптирует выходную мощность к меняющимся условиям грунта и скалы."
+        },
+        {
+          "type": "text",
+          "html": "Буровые молоты TEI создают полную силу удара только при задействованной буровой колонне, а на холостом ходу уменьшают длину и частоту хода, что минимизирует потери энергии и предотвращает ненужный износ компонентов."
+        },
+        {
+          "type": "text",
+          "html": "Благодаря компактным размерам и лидирующему соотношению мощности и массы буровые молоты TEI выделяются на рынке."
+        },
+        {
+          "type": "text",
+          "html": "Ниже представлен ассортимент верхних перфораторов TEI. Далее приведена таблица с техническими характеристиками."
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Свяжитесь с нами</a> для получения дополнительной информации."
+        },
+        {
+          "type": "rangechart",
+          "layout": "selector",
+          "unit": "mm",
+          "title": "Какой верхний перфоратор подходит для вашего отверстия?",
+          "intro": "Каждая модель охватывает определённый диапазон размеров отверстий. Найдите свой размер на шкале и выберите модель, чья полоса его покрывает. Там, где полосы перекрываются, подходят несколько моделей — выбирайте по мощности, крутящему моменту и массе (см. таблицу ниже).",
+          "note": "Размеры отверстий согласно таблице ниже (рекомендуемые диапазоны TEI).",
+          "items": [
+            {
+              "label": "TE1000",
+              "min": 76,
+              "max": 178,
+              "href": "/produkter/tei/topphammare/te1000"
+            },
+            {
+              "label": "TE760",
+              "min": 52,
+              "max": 127,
+              "href": "/produkter/tei/topphammare/te760"
+            },
+            {
+              "label": "TE726",
+              "min": 52,
+              "max": 101,
+              "href": "/produkter/tei/topphammare/te726"
+            },
+            {
+              "label": "TE360",
+              "min": 35,
+              "max": 76,
+              "href": "/produkter/tei/topphammare/te360"
+            },
+            {
+              "label": "TE326",
+              "min": 35,
+              "max": 76,
+              "href": "/produkter/tei/topphammare/te326"
+            },
+            {
+              "label": "TE260HT",
+              "min": 35,
+              "max": 64,
+              "href": "/produkter/tei/topphammare/te260ht"
+            },
+            {
+              "label": "TE260",
+              "min": 35,
+              "max": 52,
+              "href": "/produkter/tei/topphammare/te260"
+            },
+            {
+              "label": "TE160HT",
+              "min": 32,
+              "max": 52,
+              "href": "/produkter/tei/topphammare/te160ht"
+            },
+            {
+              "label": "TE160",
+              "min": 32,
+              "max": 48,
+              "href": "/produkter/tei/topphammare/te160"
+            }
+          ],
+          "step": 25,
+          "masts": {
+            "title": "Совместимые мачты",
+            "hint": "Выберите отверстие ползунком выше: подсветятся мачты, подходящие для машин под это отверстие.",
+            "fit": "Подходит",
+            "forLabel": "För",
+            "none": "Ни одна мачта из списка не подходит для этого размера.",
+            "more": "Выделенные мачты подходят",
+            "items": [
+              {
+                "href": "/produkter/tei/borrmaster/mme",
+                "title": "MME",
+                "image": "/assets/img/tei-borrmaster-mme.webp",
+                "sub": "Для экскаваторов: 5–8 т",
+                "for": [
+                  "TE260",
+                  "TE260HT",
+                  "TE326"
+                ]
+              },
+              {
+                "href": "/produkter/tei/borrmaster/mem",
+                "title": "MEM",
+                "image": "/assets/img/tei-borrmaster-mem.webp",
+                "sub": "Для экскаваторов: 12–15 т",
+                "for": [
+                  "TE360",
+                  "TE326"
+                ]
+              },
+              {
+                "href": "/produkter/tei/borrmaster/hem",
+                "title": "HEM",
+                "image": "/assets/img/tei-borrmaster-hem.webp",
+                "sub": "Для экскаваторов: 20–25 т",
+                "for": [
+                  "TE360",
+                  "TE326",
+                  "TE760"
+                ]
+              },
+              {
+                "href": "/produkter/tei/borrmaster/hemh",
+                "title": "HEMH",
+                "image": "/assets/img/tei-borrmaster-hemh.webp",
+                "sub": "Для экскаваторов: 25–30 т",
+                "for": [
+                  "TE726",
+                  "TE760",
+                  "TE1000"
+                ]
+              },
+              {
+                "href": "/produkter/tei/borrmaster/mp260",
+                "title": "MP260",
+                "image": "/assets/img/tei-borrmaster-mp260.webp",
+                "sub": "Переносная мачта",
+                "for": [
+                  "TE260HT",
+                  "TE260"
+                ]
+              },
+              {
+                "href": "/produkter/tei/borrmaster/mph",
+                "title": "MPH",
+                "image": "/assets/img/tei-borrmaster-mph.webp",
+                "sub": "Переносная мачта",
+                "for": [
+                  "TE260",
+                  "TE260HT",
+                  "TE326",
+                  "TE360"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "table",
+          "header": true,
+          "align": "center",
+          "caption": "Рекомендуемый диапазон размеров отверстия (мм) для буровых агрегатов серии TE",
+          "rows": [
+            [
+              "Модель",
+              "Размер отверстия (мм)",
+              "Масса (кг)",
+              "Расход молота (л/мин)",
+              "Расход вращения (л/мин)"
+            ],
+            [
+              "TE1000",
+              "76.2 - 177.8",
+              "449",
+              "117",
+              "114-144"
+            ],
+            [
+              "TE760",
+              "52 - 127",
+              "240",
+              "95",
+              "57-95"
+            ],
+            [
+              "TE726",
+              "52 - 101",
+              "154",
+              "102",
+              "38-76"
+            ],
+            [
+              "TE360",
+              "35 - 76",
+              "107",
+              "76",
+              "38-76"
+            ],
+            [
+              "TE326",
+              "35 - 76",
+              "81",
+              "76",
+              "19-49"
+            ],
+            [
+              "TE260HT",
+              "35 - 64",
+              "82",
+              "68",
+              "38-76"
+            ],
+            [
+              "TE260",
+              "35 - 52",
+              "68",
+              "68",
+              "19-38"
+            ],
+            [
+              "TE160HT",
+              "32 - 52",
+              "78",
+              "61",
+              "38-76"
+            ],
+            [
+              "TE160",
+              "32 - 48",
+              "48",
+              "61",
+              "23-27"
+            ]
+          ]
+        },
+        {
+          "type": "modules",
+          "layout": "compact",
+          "items": [
+            {
+              "title": "TE160",
+              "image": "/assets/img/tei-topphammare-te160.webp",
+              "alt": "TE160",
+              "href": "/produkter/tei/topphammare/te160",
+              "text": "Верхний перфоратор с высоким крутящим моментом для большинства анкерных буровых установок среднего размера."
+            },
+            {
+              "title": "TE260",
+              "image": "/assets/img/tei-topphammare-te260.webp",
+              "alt": "TE260",
+              "href": "/produkter/tei/topphammare/te260",
+              "text": "Компактный верхний перфоратор с высоким крутящим моментом для проходки выработок и тоннелей."
+            },
+            {
+              "title": "TE326",
+              "image": "/assets/img/tei-topphammare-te326.webp",
+              "alt": "TE326",
+              "href": "/produkter/tei/topphammare/te326",
+              "text": "Высокое соотношение мощности и массы при массе всего 81 кг."
+            },
+            {
+              "title": "TE360",
+              "image": "/assets/img/tei-topphammare-te360.webp",
+              "alt": "TE360",
+              "href": "/produkter/tei/topphammare/te360",
+              "text": "Низкопрофильный верхний перфоратор с высоким соотношением мощности и массы."
+            },
+            {
+              "title": "TE726",
+              "image": "/assets/img/tei-topphammare-te726.webp",
+              "alt": "TE726",
+              "href": "/produkter/tei/topphammare/te726",
+              "text": "Три режима мощности для отверстий 52–101 мм — от горизонтального бурения забоя до вертикального бурения взрывных скважин."
+            },
+            {
+              "title": "TE760",
+              "image": "/assets/img/tei-topphammare-te760.webp",
+              "alt": "TE760",
+              "href": "/produkter/tei/topphammare/te760",
+              "text": "Верхний перфоратор с высоким моментом для большинства анкерных буровых установок среднего размера."
+            },
+            {
+              "title": "TE1000",
+              "image": "/assets/img/tei-topphammare-te1000.webp",
+              "alt": "TE1000",
+              "href": "/produkter/tei/topphammare/te1000",
+              "text": "Самый короткий и низкий профиль в своём классе мощности, 25 кВт."
+            },
+            {
+              "title": "TE160HT",
+              "image": "/assets/img/tei-topphammare-te160ht.webp",
+              "alt": "TE160HT",
+              "href": "/produkter/tei/topphammare/te160ht",
+              "text": "Предельно короткий верхний перфоратор с высокой частотой ударов и вакуумной системой для установки кровельных болтов."
+            },
+            {
+              "title": "TE260HT",
+              "image": "/assets/img/tei-topphammare-te260ht.webp",
+              "alt": "TE260HT",
+              "href": "/produkter/tei/topphammare/te260ht",
+              "text": "Высокий крутящий момент для самобуровых анкеров, компактный для геотехники и тоннельного бурения."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "Технические характеристики TEI учитывают потери гидравлической мощности 40 %. Эти значения могут быть изменены без предварительного уведомления."
+        },
+        {
+          "type": "text",
+          "html": "Теги: верхний перфоратор / погружной пневмоударник (DTH), вращатель"
+        },
+        {
+          "type": "related",
+          "items": [
+            {
+              "href": "/produkter/tei/rotationshammare",
+              "mutual": true
+            },
+            {
+              "href": "/produkter/tei/borrmaster",
+              "mutual": true
+            }
+          ]
+        }
+      ],
+      "published": true
     }
   },
   "source": {

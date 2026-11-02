@@ -42,6 +42,86 @@
           "html": "Hose pumps from Häny. More information is coming. <a href=\"/kontakta-oss\">Contact us</a> to learn more."
         }
       ]
+    },
+    "lt": {
+      "title": "Žarniniai siurbliai",
+      "h1": "Žarniniai siurbliai",
+      "description": "Häny žarniniai siurbliai.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "HÄNY",
+          "href": "/produkter/haeny",
+          "width": 832,
+          "height": 143,
+          "src": "/assets/img/haeny-1.webp"
+        },
+        {
+          "type": "text",
+          "html": "Häny žarniniai siurbliai. Daugiau informacijos netrukus. <a href=\"/kontakta-oss\">Susisiekite su mumis</a>, jei norite sužinoti daugiau."
+        }
+      ],
+      "published": true
+    },
+    "lv": {
+      "title": "Šļūteņu sūkņi",
+      "h1": "Šļūteņu sūkņi",
+      "description": "Šļūteņu sūkņi no Häny.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "HÄNY",
+          "href": "/produkter/haeny",
+          "width": 832,
+          "height": 143,
+          "src": "/assets/img/haeny-1.webp"
+        },
+        {
+          "type": "text",
+          "html": "Šļūteņu sūkņi no Häny. Vairāk informācijas drīzumā. <a href=\"/kontakta-oss\">Sazinieties ar mums</a>, lai uzzinātu vairāk."
+        }
+      ],
+      "published": true
+    },
+    "et": {
+      "title": "Voolikpumbad",
+      "h1": "Voolikpumbad",
+      "description": "Häny voolikpumbad.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "HÄNY",
+          "href": "/produkter/haeny",
+          "width": 832,
+          "height": 143,
+          "src": "/assets/img/haeny-1.webp"
+        },
+        {
+          "type": "text",
+          "html": "Häny voolikpumbad. Rohkem teavet lisandub. <a href=\"/kontakta-oss\">Võta meiega ühendust</a>, et rohkem teada saada."
+        }
+      ],
+      "published": true
+    },
+    "ru": {
+      "title": "Шланговые насосы",
+      "h1": "Шланговые насосы",
+      "description": "Шланговые насосы Häny.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "HÄNY",
+          "href": "/produkter/haeny",
+          "width": 832,
+          "height": 143,
+          "src": "/assets/img/haeny-1.webp"
+        },
+        {
+          "type": "text",
+          "html": "Шланговые насосы Häny. Дополнительная информация будет добавлена. <a href=\"/kontakta-oss\">Свяжитесь с нами</a>, чтобы узнать больше."
+        }
+      ],
+      "published": true
     }
   }
 }
