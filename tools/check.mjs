@@ -14,7 +14,7 @@ const errors = [], warnings = [];
 const err = (m) => errors.push(m);
 const warn = (m) => warnings.push(m);
 // the poster picture of a video sits under the play button: the button must not paint its own background over it (this once hid every poster)
-try { if (!/.video--poster .video__plays*{[^}]*background:s*(none|transparent)/.test(fs.readFileSync(path.join(DIST, "css/site.css"), "utf8"))) err("css/site.css: the play button of a video with a poster paints over the poster picture"); } catch { /* no css in this build */ }
+try { if (!/\.video--poster \.video__play\s*\{[^}]*background:\s*(none|transparent)/.test(fs.readFileSync(path.join(DIST, "css/site.css"), "utf8"))) err("css/site.css: the play button of a video with a poster paints over the poster picture"); } catch { /* no css in this build */ }
 
 const htmlFiles = [];
 (function walk(d) {
