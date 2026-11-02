@@ -40,7 +40,8 @@ function saveCallouts(list) {
     }
   });
 }
-async function saveXray(place) {
+async function saveXray(input) {
+  const place = Object.fromEntries(["x", "y", "scaleX", "scaleY", "rotate", "skewX", "skewY"].map((k) => [k, Math.round((Number(input[k]) || 0) * 1e4) / 1e4]));
   fs.writeFileSync(PLACE_FILE, JSON.stringify(place, null, 2) + "\n");
   const area = await build(place);
   const pad = 1.5, box = { x: Math.max(0, area.x - pad), y: Math.max(0, area.y - pad), w: Math.min(100, area.w + 2 * pad), h: Math.min(100, area.h + 2 * pad) };

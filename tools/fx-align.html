@@ -67,21 +67,25 @@
 <main id="xray" class="hide">
   <div>
     <div class="panel">
-      <h2>Move the mirrored cutaway over the ZMP 610 (left pump)</h2>
-      <p class="muted">Drag on the picture to move it, mouse wheel to scale, arrow keys to nudge (Shift = 5 px). Use <b>lean</b> and <b>lean starts at</b> to bend the lower part of the pump (it is seen from an angle in the photo). Match the pressure gauge, the outlet on the right, the ball valves and the inlet at the bottom.</p>
+      <h2>Move, scale and rotate the mirrored cutaway over the ZMP 610 (left pump)</h2>
+      <p class="muted"><b>Drag</b> the picture to move it. <b>Mouse wheel</b> scales it, <b>Shift + wheel</b> rotates it, <b>arrow keys</b> nudge it (Shift = 5 px), <b>Q / E</b> rotate by 0.1°. The sliders on the right set the exact numbers: scale across and up/down separately, rotation, and skew. Match the pressure gauge, the outlet on the right, the ball valves and the inlet at the bottom.</p>
       <div class="stage crosshair" id="xstage"></div>
     </div>
   </div>
   <div class="panel">
-    <h2>Placement</h2>
+    <h2>Transform</h2>
     <div class="num"><label>Opacity</label><input type="range" id="c-op" min="0" max="1" step="0.01" value="0.55"><input type="text" id="n-op" readonly></div>
-    <div class="num"><label>Scale</label><input type="range" id="c-scale" min="0.15" max="0.6" step="0.001"><input type="number" id="n-scale" step="0.001"></div>
-    <div class="num"><label>Left (px)</label><input type="range" id="c-left" min="-100" max="600" step="0.5"><input type="number" id="n-left" step="0.5"></div>
-    <div class="num"><label>Top (px)</label><input type="range" id="c-top" min="-300" max="500" step="0.5"><input type="number" id="n-top" step="0.5"></div>
-    <div class="num"><label>Lean</label><input type="range" id="c-shear" min="-0.3" max="0.5" step="0.002"><input type="number" id="n-shear" step="0.002"></div>
-    <div class="num"><label>Lean starts at</label><input type="range" id="c-splitY" min="0" max="1548" step="1"><input type="number" id="n-splitY" step="1"></div>
+    <div class="num"><label>Center X (px)</label><input type="range" id="c-x" min="-100" max="1000" step="0.5"><input type="number" id="n-x" step="0.5"></div>
+    <div class="num"><label>Center Y (px)</label><input type="range" id="c-y" min="-200" max="1000" step="0.5"><input type="number" id="n-y" step="0.5"></div>
+    <div class="num"><label>Scale across</label><input type="range" id="c-scaleX" min="0.15" max="0.7" step="0.001"><input type="number" id="n-scaleX" step="0.001"></div>
+    <div class="num"><label>Scale up/down</label><input type="range" id="c-scaleY" min="0.15" max="0.7" step="0.001"><input type="number" id="n-scaleY" step="0.001"></div>
+    <p style="margin:.1rem 0 .4rem"><label><input type="checkbox" id="lock" checked> Keep the proportions (scale across and up/down together)</label></p>
+    <div class="num"><label>Rotate (°)</label><input type="range" id="c-rotate" min="-30" max="30" step="0.05"><input type="number" id="n-rotate" step="0.05"></div>
+    <div class="num"><label>Skew across (°)</label><input type="range" id="c-skewX" min="-30" max="30" step="0.05"><input type="number" id="n-skewX" step="0.05"></div>
+    <div class="num"><label>Skew up/down (°)</label><input type="range" id="c-skewY" min="-30" max="30" step="0.05"><input type="number" id="n-skewY" step="0.05"></div>
+    <p class="muted" style="margin:.2rem 0 .5rem">Rotation and skew turn around the middle of the cutaway. Skew across leans the top against the bottom, skew up/down leans the left against the right.</p>
     <p><label><input type="checkbox" id="lens"> Try the round lens (as on the site)</label></p>
-    <p><button class="btn primary" id="save-xray">Save and make the picture</button> <button class="btn small" id="reset">Back to saved</button></p>
+    <p><button class="btn primary" id="save-xray">Save and make the picture</button> <button class="btn small" id="reset">Back to saved</button> <button class="btn small" id="zero">Reset rotation and skew</button></p>
     <div id="status-xray" class="muted"></div>
   </div>
 </main>
@@ -154,13 +158,15 @@ $("#save-dots").onclick = async () => {
 const DISP = 700;
 let P = null, f = 1;
 const stage = $("#xstage");
+const KEYS = ["x", "y", "scaleX", "scaleY", "rotate", "skewX", "skewY"];
+const clampN = (v, lo, hi) => Math.min(hi, Math.max(lo, v));
+const round = (v, n) => Math.round(v * n) / n;
 function drawX() {
-  const { base, cut } = S, sw = cut.width * P.scale * f, sh = cut.height * P.scale * f, yh = Math.max(0, Math.min(sh, P.splitY * P.scale * f));
-  const common = `left:${P.left * f}px;top:${P.top * f}px;width:${sw}px;height:${sh}px;opacity:${$("#c-op").value}`;
-  stage.querySelector(".ovwrap").innerHTML =
-    `<img src="/cutout.png" style="${common};clip-path:inset(0 0 ${sh - yh}px 0)">` +
-    `<img src="/cutout.png" style="${common};clip-path:inset(${yh}px 0 0 0);transform-origin:0 ${yh}px;transform:skewX(${Math.atan(P.shear)}rad)">`;
-  for (const k of ["scale", "left", "top", "shear", "splitY"]) { $("#c-" + k).value = P[k]; $("#n-" + k).value = k === "scale" || k === "shear" ? (+P[k]).toFixed(3) : Math.round(P[k] * 10) / 10; }
+  const { cut } = S;
+  // the same transform as the picture is made with: M = Rotate · SkewX · SkewY · Scale around the middle of the drawing
+  const img = `<img src="/cutout.png" style="left:${P.x * f - cut.width / 2}px;top:${P.y * f - cut.height / 2}px;width:${cut.width}px;height:${cut.height}px;opacity:${$("#c-op").value};transform-origin:50% 50%;transform:rotate(${P.rotate}deg) skewX(${P.skewX}deg) skewY(${P.skewY}deg) scale(${P.scaleX * f}, ${P.scaleY * f})">`;
+  stage.querySelector(".ovwrap").innerHTML = img;
+  for (const k of KEYS) { $("#c-" + k).value = P[k]; $("#n-" + k).value = k.startsWith("scale") ? (+P[k]).toFixed(3) : k === "x" || k === "y" ? round(P[k], 10) : (+P[k]).toFixed(2); }
   $("#n-op").value = $("#c-op").value;
 }
 function initX() {
@@ -169,37 +175,46 @@ function initX() {
   stage.innerHTML = `<img src="/img/haeny-tech-plunger.webp" width="${DISP}"><div class="ovwrap"></div>`;
   P = { ...S.place }; saved = { ...S.place }; drawX();
 }
-for (const k of ["scale", "left", "top", "shear", "splitY"]) {
-  $("#c-" + k).oninput = (e) => { P[k] = +e.target.value; drawX(); };
-  $("#n-" + k).onchange = (e) => { P[k] = +e.target.value; drawX(); };
+function setP(k, v) {
+  v = +v; if (!isFinite(v)) return;
+  P[k] = v;
+  if ($("#lock").checked && (k === "scaleX" || k === "scaleY")) P[k === "scaleX" ? "scaleY" : "scaleX"] = v;
+  drawX();
 }
+for (const k of KEYS) { $("#c-" + k).oninput = (e) => setP(k, e.target.value); $("#n-" + k).onchange = (e) => setP(k, e.target.value); }
 $("#c-op").oninput = drawX;
 let mv = null;
-stage.addEventListener("pointerdown", (e) => { mv = { x: e.clientX, y: e.clientY, l: P.left, t: P.top }; stage.setPointerCapture(e.pointerId); });
+stage.addEventListener("pointerdown", (e) => { mv = { x: e.clientX, y: e.clientY, px: P.x, py: P.y }; stage.setPointerCapture(e.pointerId); });
 stage.addEventListener("pointermove", (e) => {
   const r = stage.getBoundingClientRect(); stage.style.setProperty("--mx", e.clientX - r.left + "px"); stage.style.setProperty("--my", e.clientY - r.top + "px");
-  if (!mv) return; P.left = Math.round((mv.l + (e.clientX - mv.x) / f) * 2) / 2; P.top = Math.round((mv.t + (e.clientY - mv.y) / f) * 2) / 2; drawX();
+  if (!mv) return; P.x = round(mv.px + (e.clientX - mv.x) / f, 2); P.y = round(mv.py + (e.clientY - mv.y) / f, 2); drawX();
 });
 stage.addEventListener("pointerup", () => { mv = null; });
 stage.addEventListener("wheel", (e) => {
   e.preventDefault();
-  const r = stage.getBoundingClientRect(), cx = (e.clientX - r.left) / f, cy = (e.clientY - r.top) / f, ns = Math.min(0.6, Math.max(0.15, P.scale * Math.pow(1.0015, -e.deltaY))), k = ns / P.scale;
-  P.left = Math.round((cx - (cx - P.left) * k) * 2) / 2; P.top = Math.round((cy - (cy - P.top) * k) * 2) / 2; P.scale = Math.round(ns * 1000) / 1000; drawX();
+  if (e.shiftKey) { P.rotate = round(clampN(P.rotate + (e.deltaY > 0 ? 0.1 : -0.1) * (Math.abs(e.deltaY) > 100 ? 2 : 1), -30, 30), 100); drawX(); return; }
+  // scale around the pointer: the point under the pointer stays where it is
+  const r = stage.getBoundingClientRect(), cx = (e.clientX - r.left) / f, cy = (e.clientY - r.top) / f, k = Math.pow(1.0015, -e.deltaY);
+  const sx = clampN(P.scaleX * k, 0.15, 0.7), sy = $("#lock").checked ? clampN(P.scaleY * k, 0.15, 0.7) : P.scaleY, kx = sx / P.scaleX, ky = sy / P.scaleY;
+  P.x = round(cx - (cx - P.x) * kx, 100); P.y = round(cy - (cy - P.y) * ky, 100); P.scaleX = round(sx, 1000); P.scaleY = round(sy, 1000); drawX();
 }, { passive: false });
 addEventListener("keydown", (e) => {
   if ($("#xray").classList.contains("hide") || /INPUT|SELECT|TEXTAREA/.test(document.activeElement.tagName)) return;
   const d = e.shiftKey ? 5 : 1, m = { ArrowLeft: [-d, 0], ArrowRight: [d, 0], ArrowUp: [0, -d], ArrowDown: [0, d] }[e.key];
-  if (m) { P.left += m[0]; P.top += m[1]; drawX(); e.preventDefault(); }
+  if (m) { P.x += m[0]; P.y += m[1]; drawX(); e.preventDefault(); return; }
+  if (e.key === "q" || e.key === "Q") { P.rotate = round(P.rotate - 0.1, 100); drawX(); }
+  if (e.key === "e" || e.key === "E") { P.rotate = round(P.rotate + 0.1, 100); drawX(); }
 });
 $("#lens").onchange = (e) => {
   const w = stage.querySelector(".ovwrap"), m = "radial-gradient(circle 80px at var(--mx,-999px) var(--my,-999px), #000 0, #000 78%, transparent 100%)";
   w.style.webkitMaskImage = w.style.maskImage = e.target.checked ? m : "none";
 };
 $("#reset").onclick = () => { P = { ...saved }; drawX(); };
+$("#zero").onclick = () => { P.rotate = 0; P.skewX = 0; P.skewY = 0; drawX(); };
 $("#save-xray").onclick = async () => {
   say("#status-xray", "Making the picture…");
   const r = await (await fetch("/api/xray", { method: "POST", body: JSON.stringify({ place: P }) })).json();
-  if (r.ok) { saved = { ...P }; say("#status-xray", `Saved. The lens works in x ${r.area.x}-${r.area.x + r.area.w} %, y ${r.area.y}-${r.area.y + r.area.h} %. Run the dev server or the build to see it on the site.`, "ok"); }
+  if (r.ok) { saved = { ...P }; say("#status-xray", `Saved. The lens works in x ${r.area.x}-${Math.round((r.area.x + r.area.w) * 10) / 10} %, y ${r.area.y}-${Math.round((r.area.y + r.area.h) * 10) / 10} %. Run the dev server or the build to see it on the site.`, "ok"); }
   else say("#status-xray", "Could not save: " + r.error, "bad");
 };
 
