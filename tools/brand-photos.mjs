@@ -11,7 +11,7 @@ import sharp from "sharp";
 
 const ROOT = path.resolve(import.meta.dirname, "..");
 const DUDE = process.env.DUDE_DIR || path.join(os.homedir(), "Downloads", "dude");
-const PHOTO = { ahlm: "ahlmst5menu.jpg", geobrugg: "brugg.png", brutus: "brutus.png", ecobeton: "ecobeton.png", haeny: "haenymenu.png", "kraft-tool": "img-p2_18.png", "jean-lutz": "jeanmenu.jpg", marini: "marini.png", "ram-board": "ramboard.png", reed: "reed.png", tei: "tei.png", "terra-infrastructure": "terramenu.png", weber: "webermenu.png", mapei: "mapei.png", "flexo-tekniikka": "flexo.jpg" };
+const PHOTO = { ahlm: "ahlmst5menu.jpg", geobrugg: "brugg.png", brutus: "brutusnew.jpg", ecobeton: "ecobeton.png", haeny: "haenymenu.png", "kraft-tool": "img-p2_18.png", "jean-lutz": "jeanmenu.jpg", marini: "marini.png", "ram-board": "ramboard.png", reed: "reed.png", tei: "tei.png", "terra-infrastructure": "terramenu.png", weber: "webermenu.png", mapei: "mapei.png", "flexo-tekniikka": "flexo.jpg" };
 // the subject of these two sits off centre: a zoom and a placement that bring it to the middle of the frame (the alignment app finishes the job by hand)
 const START = { "flexo-tekniikka": { x: 0, y: 32, zoom: 1.55 }, mapei: { x: 32, y: 62, zoom: 1.2 } };
 const TRIM = new Set(["mapei"]); // the picture comes with light bands above and below it
