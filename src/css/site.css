@@ -1252,3 +1252,5 @@ td.is-sized { font-weight: 700; }
 /* the small logo rests at half colour and comes to full colour when the card is hovered or focused */
 .card__mini { filter: grayscale(.5); opacity: .92; transition: filter .35s, opacity .35s; }
 .card:hover .card__mini, .card:focus-within .card__mini { filter: none; opacity: 1; }
+.card__mini--s { height: 16px; max-width: 68px; }
+@media (max-width: 640px) { .card__mini--s { height: 14px; max-width: 56px; } }

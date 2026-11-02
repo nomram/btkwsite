@@ -14,6 +14,7 @@ const DUDE = process.env.DUDE_DIR || path.join(os.homedir(), "Downloads", "dude"
 const PHOTO = { ahlm: "ahlmst5menu.jpg", geobrugg: "brugg.png", brutus: "brutusnew.jpg", ecobeton: "ecobeton.png", haeny: "haenymenu.png", "kraft-tool": "img-p2_18.png", "jean-lutz": "jeanmenu.jpg", marini: "marini.png", "ram-board": "ramboard.png", reed: "reed.png", tei: "tei.png", "terra-infrastructure": "terramenu.png", weber: "webermenu.png", mapei: "mapei.png", "flexo-tekniikka": "flexo.jpg" };
 // the subject of these two sits off centre: a zoom and a placement that bring it to the middle of the frame (the alignment app finishes the job by hand)
 const START = { "flexo-tekniikka": { x: 0, y: 32, zoom: 1.55 }, mapei: { x: 32, y: 62, zoom: 1.2 } };
+const LARGE_LOGO = new Set(["tei", "kraft-tool", "ram-board", "terra-infrastructure"]);
 const TRIM = new Set(["mapei"]); // the picture comes with light bands above and below it
 
 for (const [slug, file] of Object.entries(PHOTO)) {
@@ -36,6 +37,7 @@ for (const l of Object.keys(j.i18n)) for (const b of j.i18n[l].blocks) for (cons
   if (it.photoX === undefined) it.photoX = st.x;
   if (it.photoY === undefined) it.photoY = st.y;
   if (it.photoZoom === undefined) it.photoZoom = st.zoom;
+  if (it.logoSize === undefined && !LARGE_LOGO.has(slug)) it.logoSize = "small"; // the small logo of the card: these four stay at the normal size
   n++;
 }
 fs.writeFileSync(f, JSON.stringify(j, null, 2).replace(/\n/g, eol) + eol);

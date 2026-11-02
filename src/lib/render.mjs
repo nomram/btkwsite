@@ -206,7 +206,7 @@ const numOr = (v, d) => (v !== undefined && v !== null && v !== "" && Number.isF
 function compactCard(ctx, it, idx, title, href) {
   const pg = ctx.pages && ctx.pages.get(it.href), logo = pg && pg.logo;
   const lvl = ctx._cardLevel || 3;
-  const mini = logo ? imgTag(ctx, logo, "", { cls: "card__mini", sizes: "96px" }) : "";
+  const mini = logo ? imgTag(ctx, logo, "", { cls: it.logoSize === "small" ? "card__mini card__mini--s" : "card__mini", sizes: "96px" }) : "";
   const media = it.photo
     ? `<span class="card__media card__media--photo">${imgTag(ctx, it.photo, it.photoAlt || "", { cls: "card__photo", sizes: "(min-width: 1000px) 300px, (min-width: 560px) 45vw, 100vw" }).replace("<img ", `<img style="--px:${numOr(it.photoX, 50)}%;--py:${numOr(it.photoY, 50)}%;--pz:${numOr(it.photoZoom, 1)}" `)}</span>`
     : `<span class="card__media card__media--logo">${logo ? imgTag(ctx, logo, it.alt || title, { cls: "card__logo", sizes: "240px" }) : ""}</span>`;
