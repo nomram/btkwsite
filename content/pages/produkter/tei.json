@@ -3,7 +3,14 @@
   "updated": "2026-10-10",
   "template": "brand",
   "origin": {
-    "country": "us"
+    "country": "us",
+    "since": 1980,
+    "more": {
+      "sv": "Konstruerad och byggd i Montrose, Colorado",
+      "en": "Designed and built in Montrose, Colorado",
+      "es": "Diseñada y fabricada en Montrose, Colorado",
+      "no": "Konstruert og bygget i Montrose, Colorado"
+    }
   },
   "order": 0,
   "published": true,

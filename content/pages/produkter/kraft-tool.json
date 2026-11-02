@@ -3,7 +3,14 @@
   "updated": "2026-10-10",
   "template": "brand",
   "origin": {
-    "country": "us"
+    "country": "us",
+    "since": 1981,
+    "more": {
+      "sv": "Baserat i Shawnee, Kansas",
+      "en": "Based in Shawnee, Kansas",
+      "es": "Con sede en Shawnee, Kansas",
+      "no": "Basert i Shawnee, Kansas"
+    }
   },
   "order": 6,
   "published": true,

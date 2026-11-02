@@ -3,7 +3,14 @@
   "updated": "2026-10-10",
   "template": "brand",
   "origin": {
-    "country": "fi"
+    "country": "fi",
+    "since": 1987,
+    "more": {
+      "sv": "Baserat i Borgå (Porvoo)",
+      "en": "Based in Porvoo",
+      "es": "Con sede en Porvoo",
+      "no": "Basert i Porvoo"
+    }
   },
   "order": 13,
   "published": true,

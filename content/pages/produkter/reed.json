@@ -3,7 +3,14 @@
   "updated": "2026-10-10",
   "template": "brand",
   "origin": {
-    "country": "us"
+    "country": "us",
+    "since": 1957,
+    "more": {
+      "sv": "Baserat i Chino, Kalifornien",
+      "en": "Based in Chino, California",
+      "es": "Con sede en Chino, California",
+      "no": "Basert i Chino, California"
+    }
   },
   "order": 10,
   "published": true,

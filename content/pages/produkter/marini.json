@@ -3,7 +3,14 @@
   "updated": "2026-10-29",
   "template": "brand",
   "origin": {
-    "country": "it"
+    "country": "it",
+    "since": 1975,
+    "more": {
+      "sv": "Konstruerad och byggd i Villadossola, norra Italien",
+      "en": "Designed and built in Villadossola, northern Italy",
+      "es": "Diseñada y fabricada en Villadossola, norte de Italia",
+      "no": "Konstruert og bygget i Villadossola, Nord-Italia"
+    }
   },
   "order": 3,
   "published": true,
