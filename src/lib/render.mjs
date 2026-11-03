@@ -246,7 +246,10 @@ function renderCards(ctx, b) {
   // with a single group left (a language that only has machine brands) there is nothing to filter
   if (groups.length > 1) ctx._pfilter = `<div class="pfilter" role="group" aria-label="${esc(ctx.ui.filter_show || "Visa")}">` +
     groups.map((g) => `<button class="pfilter__btn" type="button" aria-pressed="true" data-g="${g}"><span class="pfilter__ico"><span class="pfilter__roll">${ICONS[g].join("")}</span></span><span class="pfilter__txt">${esc(label[g])}</span><em>${part(g).length}</em><span class="pfilter__ck">${ICON.check}</span></button>`).join("") + "</div>";
-  return groups.map((g) => `<section class="pgroup" id="${g === "machines" ? "maskiner" : "material"}" data-g="${g}"><h2 class="pgroup__h"><span class="pgroup__ico">${ICONS[g][0]}</span>${esc(label[g])}<span class="pgroup__n">${unit(part(g).length)}</span></h2>${ul(part(g))}</section>`).join("") + (rest.length ? ul(rest) : "");
+  // search among the suppliers: the field goes into the breadcrumb row (renderMain), the line for "no match" above the groups
+  ctx._psearch = `<label class="psearch">${ICON.search}<input class="psearch__input" type="search" autocomplete="off" autocapitalize="off" spellcheck="false" enterkeyhint="search" placeholder="${esc(ctx.ui.products_search || "Sök leverantör eller produkt")}" aria-label="${esc(ctx.ui.products_search || "Sök leverantör eller produkt")}"><button class="psearch__clear" type="button" hidden aria-label="${esc(ctx.ui.search_clear || "Rensa")}"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button></label>`;
+  const psNone = `<p class="psearch__none" role="status" data-tpl="${esc(ctx.ui.products_search_none || "Inga leverantörer matchar “{q}”.")}" hidden></p>`;
+  return psNone + groups.map((g) => `<section class="pgroup" id="${g === "machines" ? "maskiner" : "material"}" data-g="${g}"><h2 class="pgroup__h"><span class="pgroup__ico">${ICONS[g][0]}</span>${esc(label[g])}<span class="pgroup__n">${unit(part(g).length)}</span></h2>${ul(part(g))}</section>`).join("") + (rest.length ? ul(rest) : "");
 }
 
 function renderVideo(ctx, b) {
@@ -1228,11 +1231,7 @@ export function renderMain(ctx, page, t) {
   const ctas = (t.ctas || []).map((c, i) => `<a class="btn${i ? " btn--ghost-light" : ""}" href="${esc(localizeHref(ctx, c.href))}">${esc(c.text)}${i ? "" : ICON.arrow}</a>`).join("");
   const pageFld = (k) => (ctx.edit ? ` data-bk-page="${k}" data-bk-kind="plain"` : "");
   const headHtml = `${eyebrow}<h1 class="hero__title"${pageFld("h1")}>${esc(title)}</h1>${t.lead || (ctx.edit && heroImg) ? `<p class="hero__lead"${pageFld("lead")}>${esc(t.lead || "")}</p>` : ""}${ctas ? `<div class="hero__ctas">${ctas}</div>` : ""}`;
-  // the split banner also holds a search field: it opens the site search (the same one as the magnifier in the header)
-  const heroSearch = !ctx.edit && page.hero && page.hero.split && page.hero.search
-    ? `<button class="hero__search" type="button" data-search-field>${ICON.search}<span>${esc(ctx.ui.search_placeholder || ctx.ui.search || "Sök")}</span><kbd aria-hidden="true">/</kbd></button>`
-    : "";
-  const heroInner = heroSearch ? `<div class="container hero__inner"><div class="hero__head">${headHtml}</div>${heroSearch}</div>` : `<div class="container hero__inner">${headHtml}</div>`;
+  const heroInner = `<div class="container hero__inner">${headHtml}</div>`;
   // Split banner (the products page): two pictures meet in a diagonal; site.js greys out the side that is not selected in the filter
   const split = page.hero && page.hero.split && page.hero.split.a && page.hero.split.b ? page.hero.split : null;
   // a language that lists only machines (or only material) gets that picture alone: no diagonal, nothing greyed out
@@ -1252,9 +1251,9 @@ export function renderMain(ctx, page, t) {
   // The first pictures of the page body (what is in view when the page opens) load at once; everything further down stays lazy
   // and is fetched top to bottom in quiet time by site.js. Without a banner, the very first picture is the most important one.
   const prioritise = (h) => { let n = 0; return h.replace(/<img ([^>]*?)loading="lazy" decoding="async"/g, (m, a) => (++n <= 3 ? `<img ${a}loading="eager" decoding="async"${n === 1 && !heroImg ? ' fetchpriority="high"' : ""}` : m)); };
-  ctx._pfilter = "";
+  ctx._pfilter = ""; ctx._psearch = "";
   const bodyHtml = ctx.edit ? `${splitHtml}${renderBlocks(ctx, rest)}` : prioritise(`${splitHtml}${renderBlocks(ctx, rest)}`);
-  const crumbRow = crumbs || logo || origin || ctx._pfilter ? `<div class="container crumbs${page.template === "about" && !heroImg ? " crumbs--center" : ""}">${crumbs}${ctx._pfilter || ""}${logo && origin ? `<div class="crumbs__brand">${logo}${origin}</div>` : `${logo}${origin}`}</div>` : "";
+  const crumbRow = crumbs || logo || origin || ctx._pfilter ? `<div class="container crumbs${page.template === "about" && !heroImg ? " crumbs--center" : ""}">${crumbs}${ctx._psearch || ""}${ctx._pfilter || ""}${logo && origin ? `<div class="crumbs__brand">${logo}${origin}</div>` : `${logo}${origin}`}</div>` : "";
   const autoRel = !ownRel.length && ctx._relExtra.length ? `<div class="container">${renderRelated(ctx, { type: "related", items: [] })}</div>` : "";
   ctx._relExtra = [];
   return `${hero}${crumbRow}<div class="page-body page--${esc(page.template || "page")}"${isHome ? ' id="start"' : ""}>${bodyHtml}${autoRel}${productQuoteCta(ctx, page, t, title)}</div>`;

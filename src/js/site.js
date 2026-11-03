@@ -748,11 +748,21 @@
     hitEls.forEach(function (el, n) { el.addEventListener("mousemove", function () { if (active !== n) { active = n; hitEls.forEach(function (x, k) { x.classList.toggle("is-active", k === n); x.setAttribute("aria-selected", k === n ? "true" : "false"); }); } }); });
     setActive(0);
   }
+  // the index is fetched once, whoever asks first (the search window, or the field of the products page)
+  var indexWaiting = null;
+  function loadIndex(done, fail) {
+    if (index) { if (done) done(); return; }
+    if (indexWaiting) { indexWaiting.push(done); return; }
+    indexWaiting = [done];
+    fetch(cfg.searchIndex || "/search-index.json").then(function (r) { return r.json(); }).then(function (j) {
+      index = prepare(j);
+      var w = indexWaiting; indexWaiting = null;
+      w.forEach(function (f) { if (f) f(); });
+    }).catch(function () { indexWaiting = null; if (fail) fail(); });
+  }
   function openSearch() {
     if (!dlg) build();
-    if (!index) {
-      fetch(cfg.searchIndex || "/search-index.json").then(function (r) { return r.json(); }).then(function (j) { index = prepare(j); run(); }).catch(function () { body.innerHTML = '<p class="search__none">' + esc(ui.searchNone || "Inga träffar.") + "</p>"; });
-    }
+    loadIndex(run, function () { body.innerHTML = '<p class="search__none">' + esc(ui.searchNone || "Inga träffar.") + "</p>"; });
     if (!dlg.open) dlg.showModal();
     run();
     input.focus();
@@ -766,8 +776,6 @@
       if ((e.key === "/" && !typing && !e.ctrlKey && !e.metaKey && !e.altKey) || ((e.ctrlKey || e.metaKey) && (e.key === "k" || e.key === "K"))) { e.preventDefault(); openSearch(); }
     });
   }
-  // search field in the banner of the products page
-  [].forEach.call(document.querySelectorAll("[data-search-field]"), function (b) { b.addEventListener("click", openSearch); });
 
   // ---------- pictures with an effect: x-ray lens and labelled dots ----------
   [].forEach.call(document.querySelectorAll("[data-fx]"), function (box) {
@@ -862,6 +870,61 @@
     var h = location.hash.slice(1);
     btns.forEach(function (b) { var k = b.getAttribute("data-g"); if (groups[k] && groups[k].id === h) btns.forEach(function (x) { on[x.getAttribute("data-g")] = x === b; }); });
     paint(true);
+  });
+
+  // ---------- products page: search among the suppliers ----------
+  // Type a few letters and only the suppliers that fit stay, best fit first. The ranking is the one of the site search: every page of
+  // a supplier (its models, texts, headings) counts towards the supplier's own card. Without the index (still loading) the card text is used.
+  [].forEach.call(document.querySelectorAll(".psearch"), function (box) {
+    var inp = box.querySelector(".psearch__input"), clr = box.querySelector(".psearch__clear");
+    var none = document.querySelector(".psearch__none"), root = document.querySelector(".page-body");
+    var cards = [].slice.call(document.querySelectorAll(".page-body .cards > .card")).map(function (li, i) {
+      var a = li.querySelector(".card__link"), m = a && /\/produkter\/([^\/?#]+)/.exec(a.getAttribute("href") || "");
+      li._i = i; li._brand = m ? m[1] : ""; li._text = fold(li.textContent || "");
+      return li;
+    });
+    function restore() {
+      cards.slice().sort(function (a, b) { return a._i - b._i; }).forEach(function (li) { li.hidden = false; li.parentNode.appendChild(li); });
+      [].forEach.call(document.querySelectorAll(".pgroup"), function (g) { g.classList.remove("is-empty"); });
+      if (none) none.hidden = true;
+      root.classList.remove("is-searching");
+    }
+    function update() {
+      var q = inp.value.trim();
+      clr.hidden = !inp.value;
+      var terms = q.length >= 2 ? parse(q) : [];
+      if (!terms.length) { restore(); return; }
+      var score = {};
+      if (index) {
+        rank(terms, terms.map(function (t) { return t.q; }).join(" ")).forEach(function (r) {
+          var m = /\/produkter\/([^\/?#]+)/.exec(r.d.u || ""); if (!m) return;
+          var o = score[m[1]] || (score[m[1]] = { max: 0, sum: 0 });
+          o.max = Math.max(o.max, r.s); o.sum += r.s;
+        });
+      } else loadIndex(update);
+      var any = 0;
+      cards.forEach(function (li) {
+        var sc = 0;
+        if (index) { var o = score[li._brand]; sc = o ? o.max + 0.2 * (o.sum - o.max) : 0; }
+        else sc = terms.every(function (t) { return li._text.indexOf(t.q) >= 0; }) ? 1 : 0;
+        li._s = sc; li.hidden = !sc; if (sc) any++;
+      });
+      cards.slice().sort(function (a, b) { return b._s - a._s || a._i - b._i; }).forEach(function (li) { li.parentNode.appendChild(li); });
+      [].forEach.call(document.querySelectorAll(".pgroup"), function (g) { g.classList.toggle("is-empty", !g.querySelector(".card:not([hidden])")); });
+      root.classList.add("is-searching");
+      if (none) { none.hidden = any > 0; none.textContent = (none.getAttribute("data-tpl") || "").replace("{q}", q); }
+    }
+    inp.addEventListener("focus", function () { loadIndex(null); }, { once: true });
+    inp.addEventListener("input", update);
+    inp.addEventListener("keydown", function (e) {
+      if (e.key === "Escape" && inp.value) { inp.value = ""; update(); e.preventDefault(); }
+      else if (e.key === "Enter" && inp.value.trim()) {
+        var first = cards.filter(function (li) { return !li.hidden; }).sort(function (a, b) { return b._s - a._s; })[0];
+        var a = first && first.querySelector(".card__link");
+        if (a) { e.preventDefault(); a.click(); }
+      }
+    });
+    clr.addEventListener("click", function () { inp.value = ""; update(); inp.focus(); });
   });
 
   // ---------- finder: choosing a product family shows its models and brochures ----------
