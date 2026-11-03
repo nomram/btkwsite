@@ -51,7 +51,12 @@
       "label": "Русский",
       "htmlLang": "ru",
       "locale": "ru_RU",
-      "published": true
+      "published": true,
+      "geo": [
+        "EE",
+        "LV",
+        "LT"
+      ]
     }
   },
   "tagline": "Leverantör och konsult inom byggindustrin",
@@ -129,5 +134,40 @@
   "sectionBars": [
     "/produkter"
   ],
-  "megaMenu": true
+  "megaMenu": true,
+  "langSuggest": {
+    "_note": "Russian is only offered in the language menu to visitors in the Baltic states, and a small prompt offers the local language and Russian. The country is read from the browser time zone (nothing is sent anywhere). To use an IP-based lookup instead, put the address of a service that answers JSON with a country code in geoEndpoint: the visitor IP is then sent to that service, which must be covered by the privacy policy.",
+    "geoEndpoint": "",
+    "timezones": {
+      "Europe/Vilnius": "LT",
+      "Europe/Riga": "LV",
+      "Europe/Tallinn": "EE"
+    },
+    "regions": {
+      "LT": [
+        "lt",
+        "ru"
+      ],
+      "LV": [
+        "lv",
+        "ru"
+      ],
+      "EE": [
+        "et",
+        "ru"
+      ]
+    },
+    "read": {
+      "lt": "Skaityti lietuviškai",
+      "lv": "Lasīt latviski",
+      "et": "Loe eesti keeles",
+      "ru": "Читать по-русски"
+    },
+    "close": {
+      "lt": "Uždaryti",
+      "lv": "Aizvērt",
+      "et": "Sulge",
+      "ru": "Закрыть"
+    }
+  }
 }

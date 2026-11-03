@@ -842,6 +842,9 @@ function renderBreadcrumbs(ctx, path) {
   return `<nav class="breadcrumbs" aria-label="${esc(ctx.ui.breadcrumbs || "Brödsmulor")}"><ol>${li}</ol></nav>`;
 }
 
+// A language with `geo: ["EE", ...]` in site.json stays hidden in the menu until site.js has seen that the visitor is in one of those countries (never hidden on its own pages)
+const geoAttr = (l, code, cur) => (l && Array.isArray(l.geo) && l.geo.length && code !== cur ? ` hidden data-geo="${esc(l.geo.join(" "))}"` : "");
+
 // Same page in another language; if it does not exist (or is hidden) there, the nearest page above it that does
 function langLink(ctx, code, path) {
   let p = path;
@@ -861,8 +864,8 @@ function renderLangSwitch(ctx, path) {
   const label = (c) => (ctx.site.languages[c] && ctx.site.languages[c].label) || c;
   return `<details class="lang"><summary aria-label="${esc(ctx.ui.language || "Språk")}: ${esc(label(cur))}">` +
     `<img src="${flagSrc(cur)}" alt="" width="22" height="15"><span class="lang__code">${esc(cur.toUpperCase())}</span>${ICON.chevron}</summary>` +
-    `<ul class="lang__list">${langs.map(([code]) =>
-      `<li><a href="${esc(langLink(ctx, code, path))}" hreflang="${esc(htmlLang(ctx, code))}" lang="${esc(htmlLang(ctx, code))}"${code === cur ? ' aria-current="true"' : ""}>` +
+    `<ul class="lang__list">${langs.map(([code, l]) =>
+      `<li${geoAttr(l, code, cur)}><a href="${esc(langLink(ctx, code, path))}" hreflang="${esc(htmlLang(ctx, code))}" lang="${esc(htmlLang(ctx, code))}"${code === cur ? ' aria-current="true"' : ""}>` +
       `<img src="${flagSrc(code)}" alt="" width="22" height="15"><span>${esc(label(code))}</span></a></li>`).join("")}</ul></details>`;
 }
 
@@ -880,8 +883,8 @@ function renderLangRow(ctx, path) {
   const langs = Object.entries(ctx.site.languages || {}).filter(([code, l]) => l.published && (code === ctx.defaultLang || ctx.tr("/", code) || ctx.tr(path, code)));
   if (langs.length < 2) return "";
   const label = (c) => (ctx.site.languages[c] && ctx.site.languages[c].label) || c;
-  return `<ul class="nav__langs" aria-label="${esc(ctx.ui.language || "Språk")}">` + langs.map(([code]) =>
-    `<li><a href="${esc(langLink(ctx, code, path))}" hreflang="${esc(htmlLang(ctx, code))}" lang="${esc(htmlLang(ctx, code))}"${code === ctx.lang ? ' aria-current="true"' : ""}>` +
+  return `<ul class="nav__langs" aria-label="${esc(ctx.ui.language || "Språk")}">` + langs.map(([code, l]) =>
+    `<li${geoAttr(l, code, ctx.lang)}><a href="${esc(langLink(ctx, code, path))}" hreflang="${esc(htmlLang(ctx, code))}" lang="${esc(htmlLang(ctx, code))}"${code === ctx.lang ? ' aria-current="true"' : ""}>` +
     `<img src="${flagSrc(code)}" alt="" width="22" height="15"><span>${esc(label(code))}</span></a></li>`).join("") + "</ul>";
 }
 
@@ -1266,7 +1269,7 @@ export function renderDocument(ctx, page, t, opts = {}) {
     searchDym: ctx.ui.search_dym, searchHit: ctx.ui.search_hit, searchHits: ctx.ui.search_hits, loading: ctx.ui.video_loading
   };
   const privacyPath = s.privacyPath && ctx.pages.has(s.privacyPath) && (ctx.tr(s.privacyPath, lang) || ctx.tr(s.privacyPath, "en") || ctx.tr(s.privacyPath, ctx.defaultLang)) ? legalUrl(ctx, s.privacyPath) : "";
-  const cfg = JSON.stringify({ analytics, ui: uiForJs, privacy: privacyPath, searchIndex: ctx.searchIndexUrl ? ctx.searchIndexUrl : "/search-index.json" }).replace(/</g, "\\u003c");
+  const cfg = JSON.stringify({ analytics, ui: uiForJs, suggest: s.langSuggest ? { ...s.langSuggest, _note: undefined } : undefined, privacy: privacyPath, searchIndex: ctx.searchIndexUrl ? ctx.searchIndexUrl : "/search-index.json" }).replace(/</g, "\\u003c");
   const ver = opts.assetVersion ? `?v=${opts.assetVersion}` : "";
   const hasQuote = flatBlocks(t.blocks || []).some((x) => x.type === "quote");
   return `<!doctype html>

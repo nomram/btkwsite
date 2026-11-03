@@ -1482,6 +1482,64 @@
     if (document.readyState === "complete") onActive(afterLoad); else window.addEventListener("load", function () { onActive(afterLoad); }, { once: true });
   })();
 
+  // ---------- language suggestion (Baltic states) ----------
+  // The country comes from the time zone of the browser: nothing is sent to anyone and nothing is stored about the visitor.
+  // (cfg.suggest.geoEndpoint may name a lookup service instead: it is then asked for a country code only and the answer is not kept.)
+  // Effects: (1) languages limited to some countries (data-geo) appear in the language menu; (2) a small prompt offers the local language and Russian.
+  (function () {
+    var sg = cfg.suggest;
+    if (!sg) return;
+    var KEY = "bk-lang-suggest";
+    function fromZone() {
+      try { return (sg.timezones || {})[Intl.DateTimeFormat().resolvedOptions().timeZone] || ""; } catch (e) { return ""; }
+    }
+    function lookup(done) {
+      if (!sg.geoEndpoint || !window.fetch) return done(fromZone());
+      fetch(sg.geoEndpoint, { cache: "no-store", credentials: "omit", referrerPolicy: "no-referrer" }).then(function (r) { return r.json(); })
+        .then(function (j) { done(String(j.country || j.country_code || j.countryCode || "").toUpperCase() || fromZone()); })
+        .catch(function () { done(fromZone()); });
+    }
+    function reveal(country) {
+      document.querySelectorAll("[data-geo]").forEach(function (li) {
+        if ((" " + li.getAttribute("data-geo") + " ").indexOf(" " + country + " ") >= 0) li.removeAttribute("hidden");
+      });
+    }
+    function suggest(country) {
+      var want = (sg.regions || {})[country];
+      if (!want || document.querySelector(".lsug")) return;
+      try { if (localStorage.getItem(KEY)) return; } catch (e) { /* no storage: the prompt simply shows every time */ }
+      var cur = (document.documentElement.lang || "").slice(0, 2);
+      if (want.indexOf(cur) >= 0) return; // already reading one of the offered languages
+      var links = [];
+      want.forEach(function (code) {
+        var a = document.querySelector('.lang__list a[lang="' + code + '"], .nav__langs a[lang="' + code + '"]');
+        if (!a) return;
+        var img = a.querySelector("img");
+        links.push({ code: code, href: a.getAttribute("href"), flag: img ? img.getAttribute("src") : "" });
+      });
+      if (!links.length) return;
+      var box = document.createElement("div");
+      box.className = "lsug";
+      box.setAttribute("role", "region");
+      box.setAttribute("aria-label", ui.language || "Language");
+      box.innerHTML = '<svg class="lsug__globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.6 2.8 3.9 5.8 3.9 9s-1.3 6.2-3.9 9c-2.6-2.8-3.9-5.8-3.9-9s1.3-6.2 3.9-9z"/></svg>' +
+        '<button type="button" class="lsug__x" aria-label="' + esc((sg.close || {})[links[0].code] || "x") + '">&times;</button>' +
+        '<ul class="lsug__list">' + links.map(function (l) {
+          return '<li><a href="' + esc(l.href) + '" hreflang="' + esc(l.code) + '" lang="' + esc(l.code) + '" data-lsug="' + esc(l.code) + '">' +
+            (l.flag ? '<img src="' + esc(l.flag) + '" alt="" width="22" height="15">' : "") + "<span>" + esc((sg.read || {})[l.code] || l.code) + "</span></a></li>";
+        }).join("") + "</ul>";
+      function remember() { try { localStorage.setItem(KEY, "1"); } catch (e) { /* ignore */ } }
+      box.addEventListener("click", function (e) {
+        if (e.target.closest(".lsug__x")) { remember(); box.classList.remove("is-in"); setTimeout(function () { box.remove(); }, 300); }
+        else if (e.target.closest("[data-lsug]")) remember();
+      });
+      document.addEventListener("keydown", function (e) { if (e.key === "Escape" && box.parentNode) { remember(); box.remove(); } });
+      document.body.appendChild(box);
+      requestAnimationFrame(function () { requestAnimationFrame(function () { box.classList.add("is-in"); }); });
+    }
+    onActive(function () { lookup(function (country) { if (!country) return; reveal(country); setTimeout(function () { suggest(country); }, 900); }); });
+  })();
+
   // ---------- consent + analytics (off unless configured; nothing stored otherwise) ----------
   var a = cfg.analytics;
   if (!a || !a.id) return;
@@ -1539,4 +1597,4 @@
   document.addEventListener("click", function (e) {
     if (e.target.closest && e.target.closest("[data-consent-open]")) show();
   });
-})();
+})();

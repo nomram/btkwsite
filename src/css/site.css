@@ -1271,3 +1271,18 @@ td.is-sized { font-weight: 700; }
 .fx__dot:hover ~ .fx__blabel, .fx__dot:focus-visible ~ .fx__blabel, .fx__c.is-open .fx__blabel { opacity: 1; }
 /* video posters: the play button must not paint its own dark background over the picture (the picture is below it; the button's gradient overlay darkens it for the text) */
 .video--poster .video__play { background: none; }
+
+/* Language menu: a language that is only offered in some countries stays hidden until site.js reveals it */
+.lang__list li[hidden], .nav__langs li[hidden] { display: none; }
+/* Prompt that offers the local language (like the translation bubble of a browser) */
+.lsug { position: fixed; top: 4.6rem; right: 1rem; z-index: 80; width: min(21rem, calc(100vw - 2rem)); background: #fff; color: var(--text); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: 0 10px 34px rgba(0, 0, 0, .22); padding: .8rem .8rem .7rem; opacity: 0; transform: translate3d(0, -8px, 0); transition: opacity .25s, transform .25s; }
+.lsug.is-in { opacity: 1; transform: none; }
+.lsug__x { position: absolute; top: .25rem; right: .25rem; width: 2rem; height: 2rem; display: grid; place-items: center; border: 0; background: none; color: var(--muted); font-size: 1.25rem; line-height: 1; cursor: pointer; border-radius: 50%; }
+.lsug__x:hover { background: var(--surface); color: var(--text); }
+.lsug__globe { display: block; width: 1.15rem; height: 1.15rem; margin: 0 0 .5rem; color: var(--primary); }
+.lsug__list { display: grid; gap: .4rem; margin: 0; padding: 0; list-style: none; }
+.lsug__list a { display: flex; align-items: center; gap: .7rem; padding: .6rem .75rem; border: 1px solid var(--line); border-radius: var(--radius); text-decoration: none; font-weight: 600; font-size: .95rem; color: var(--text); }
+.lsug__list a:hover, .lsug__list a:focus-visible { border-color: var(--primary); background: var(--surface); }
+.lsug__list img { border-radius: 2px; box-shadow: 0 0 0 1px rgba(35, 31, 32, .18); object-fit: cover; flex: none; }
+@media (max-width: 760px) { .lsug { top: 4.2rem; right: .75rem; left: .75rem; width: auto; } }
+@media (prefers-reduced-motion: reduce) { .lsug { transition: none; } }
