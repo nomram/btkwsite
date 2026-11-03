@@ -255,9 +255,12 @@ function renderVideo(ctx, b) {
   const poster = ctx.ytThumb ? ctx.ytThumb(b.id) : null;
   return `<figure class="video${poster ? " video--poster" : ""}" data-yt="${esc(b.id)}"${b.start ? ` data-start="${esc(b.start)}"` : ""} data-title="${esc(title)}" data-watch="${esc(ctx.ui.video_watch || "Titta på YouTube")}">` +
     (poster ? `<img class="video__poster" src="${esc(poster)}" alt="" width="960" height="540" loading="lazy" decoding="async">` : "") +
-    `<button class="video__play" type="button"><span class="video__icon" aria-hidden="true"></span>` +
-    `<span class="video__label">${esc(ctx.ui.video_play || "Spela upp video")}</span>` +
+    // like the YouTube player: title and channel at the top, the play button in the middle, the notice along the bottom
+    `<button class="video__play" type="button"><span class="video__top">` +
     (b.title ? `<span class="video__title">${esc(b.title)}</span>` : "") +
+    (b.channel ? `<span class="video__channel">${esc(b.channel)}</span>` : "") +
+    `</span><span class="video__icon" aria-hidden="true"></span>` +
+    `<span class="video__label">${esc(ctx.ui.video_play || "Spela upp video")}</span>` +
     `<span class="video__note">${esc(ctx.ui.video_notice || "")}</span></button>` +
     `<noscript><a href="${esc(watch)}" rel="noopener">${esc(ctx.ui.video_watch || "Titta på YouTube")}</a></noscript></figure>`;
 }
