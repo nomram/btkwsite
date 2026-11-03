@@ -1224,7 +1224,12 @@ export function renderMain(ctx, page, t) {
   const eyebrow = !isHome && anc.length ? `<p class="hero__eyebrow">${anc.slice(-2).map((p) => esc(navTitleOf(ctx, p))).join(" · ")}</p>` : "";
   const ctas = (t.ctas || []).map((c, i) => `<a class="btn${i ? " btn--ghost-light" : ""}" href="${esc(localizeHref(ctx, c.href))}">${esc(c.text)}${i ? "" : ICON.arrow}</a>`).join("");
   const pageFld = (k) => (ctx.edit ? ` data-bk-page="${k}" data-bk-kind="plain"` : "");
-  const heroInner = `<div class="container hero__inner">${eyebrow}<h1 class="hero__title"${pageFld("h1")}>${esc(title)}</h1>${t.lead || (ctx.edit && heroImg) ? `<p class="hero__lead"${pageFld("lead")}>${esc(t.lead || "")}</p>` : ""}${ctas ? `<div class="hero__ctas">${ctas}</div>` : ""}</div>`;
+  const headHtml = `${eyebrow}<h1 class="hero__title"${pageFld("h1")}>${esc(title)}</h1>${t.lead || (ctx.edit && heroImg) ? `<p class="hero__lead"${pageFld("lead")}>${esc(t.lead || "")}</p>` : ""}${ctas ? `<div class="hero__ctas">${ctas}</div>` : ""}`;
+  // the split banner also holds a search field: it opens the site search (the same one as the magnifier in the header)
+  const heroSearch = !ctx.edit && page.hero && page.hero.split && page.hero.search
+    ? `<button class="hero__search" type="button" data-search-field>${ICON.search}<span>${esc(ctx.ui.search_placeholder || ctx.ui.search || "Sök")}</span><kbd aria-hidden="true">/</kbd></button>`
+    : "";
+  const heroInner = heroSearch ? `<div class="container hero__inner"><div class="hero__head">${headHtml}</div>${heroSearch}</div>` : `<div class="container hero__inner">${headHtml}</div>`;
   // Split banner (the products page): two pictures meet in a diagonal; site.js greys out the side that is not selected in the filter
   const split = page.hero && page.hero.split && page.hero.split.a && page.hero.split.b ? page.hero.split : null;
   const splitImgs = split

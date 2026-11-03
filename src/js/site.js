@@ -437,7 +437,7 @@
   (function () {
     var hero = document.querySelector(".hero");
     var img = hero && hero.querySelector(".hero__img");
-    if (!img || (window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches)) return;
+    if (!img || hero.classList.contains("hero--split") || (window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches)) return;
     hero.classList.add("hero--parallax");
     var raf = 0, MAX = 90;
     function update() {
@@ -766,6 +766,8 @@
       if ((e.key === "/" && !typing && !e.ctrlKey && !e.metaKey && !e.altKey) || ((e.ctrlKey || e.metaKey) && (e.key === "k" || e.key === "K"))) { e.preventDefault(); openSearch(); }
     });
   }
+  // search field in the banner of the products page
+  [].forEach.call(document.querySelectorAll("[data-search-field]"), function (b) { b.addEventListener("click", openSearch); });
 
   // ---------- pictures with an effect: x-ray lens and labelled dots ----------
   [].forEach.call(document.querySelectorAll("[data-fx]"), function (box) {
