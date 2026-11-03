@@ -8,7 +8,7 @@ import sharp from "sharp";
 const W = 1920, H = 360;
 // The diagonal is placed by CSS (.hero--split, custom properties --cut-t / --cut-b), and moves with the filter. The finished
 // composite uses the resting state (both selected): percent of the width where the diagonal meets the top and the bottom edge.
-const CUT = { top: 50, bottom: 50, seam: 0.7 };
+const CUT = { top: 50, bottom: 50, seam: 0.2 }; // seam: half the width of the orange line, percent of the width
 const IMG = (n) => `assets-src/img/${n}.webp`;
 
 // machines: the drill rig, a little in from the left edge so the page title sits on dark soil; the picture fades into soil on the

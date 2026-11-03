@@ -1313,7 +1313,7 @@ td.is-sized { font-weight: 700; }
 .hero--split .hero__img--a { object-position: 43% 50%; }
 .hero--split .hero__img--m { object-position: 40% 50%; }
 .hero--split .hero__img--b { object-position: 40% 50%; clip-path: polygon(var(--cut-t) 0, 100% 0, 100% 100%, var(--cut-b) 100%); }
-.hero__seam { position: absolute; inset: 0; z-index: -1; background: var(--primary); clip-path: polygon(calc(var(--cut-t) - .7%) 0, calc(var(--cut-t) + .7%) 0, calc(var(--cut-b) + .7%) 100%, calc(var(--cut-b) - .7%) 100%); pointer-events: none; }
+.hero__seam { position: absolute; inset: 0; z-index: -1; background: #f37d03; /* the orange of the logo */ clip-path: polygon(calc(var(--cut-t) - 3px) 0, calc(var(--cut-t) + 3px) 0, calc(var(--cut-b) + 3px) 100%, calc(var(--cut-b) - 3px) 100%); pointer-events: none; }
 .hero--split[data-show="machines"] .hero__img--b, .hero--split[data-show="material"] .hero__img--a { filter: grayscale(1) brightness(.78); }
 @media (min-width: 700px) { .hero--split .hero__img--a, .hero--split .hero__img--b, .hero--split .hero__img--m { object-position: 50% 50%; } }
 .hero--split .hero__inner { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 1rem 2rem; padding-block: clamp(1rem, 2.2vw, 1.6rem); }
