@@ -1303,17 +1303,19 @@ td.is-sized { font-weight: 700; }
 /* Products banner: two pictures meet in an orange diagonal (tools/produkter-hero.mjs makes the pictures). The diagonal sits in the
    middle when both groups of the machines / material filter are on; with one group on, that side gets more of the banner and the
    diagonal leans the other way. The side that is not selected turns grey. --cut-t / --cut-b: where the diagonal meets the top / bottom edge. */
-@property --cut-t { syntax: "<percentage>"; inherits: true; initial-value: 53%; }
-@property --cut-b { syntax: "<percentage>"; inherits: true; initial-value: 47%; }
-.hero--split { --cut-t: 53%; --cut-b: 47%; min-height: clamp(190px, 16vw, 250px); transition: --cut-t .7s cubic-bezier(.5, 0, .2, 1), --cut-b .7s cubic-bezier(.5, 0, .2, 1); }
+@property --cut-t { syntax: "<percentage>"; inherits: true; initial-value: 50%; }
+@property --cut-b { syntax: "<percentage>"; inherits: true; initial-value: 50%; }
+/* both groups on: the line is upright in the middle; with one group on it tips over and moves (the bottom end follows the top end a moment later, so it visibly swings) */
+.hero--split { --cut-t: 50%; --cut-b: 50%; min-height: clamp(190px, 16vw, 250px); transition: --cut-t .75s cubic-bezier(.5, 0, .2, 1), --cut-b .75s cubic-bezier(.5, 0, .2, 1) .09s; }
 .hero--split[data-show="machines"] { --cut-t: 64%; --cut-b: 72%; }
 .hero--split[data-show="material"] { --cut-t: 36%; --cut-b: 28%; }
 .hero--split .hero__img { transition: filter .6s ease; }
 .hero--split .hero__img--a { object-position: 43% 50%; }
+.hero--split .hero__img--m { object-position: 40% 50%; }
 .hero--split .hero__img--b { object-position: 40% 50%; clip-path: polygon(var(--cut-t) 0, 100% 0, 100% 100%, var(--cut-b) 100%); }
 .hero__seam { position: absolute; inset: 0; z-index: -1; background: var(--primary); clip-path: polygon(calc(var(--cut-t) - .7%) 0, calc(var(--cut-t) + .7%) 0, calc(var(--cut-b) + .7%) 100%, calc(var(--cut-b) - .7%) 100%); pointer-events: none; }
 .hero--split[data-show="machines"] .hero__img--b, .hero--split[data-show="material"] .hero__img--a { filter: grayscale(1) brightness(.78); }
-@media (min-width: 700px) { .hero--split .hero__img--a, .hero--split .hero__img--b { object-position: 50% 50%; } }
+@media (min-width: 700px) { .hero--split .hero__img--a, .hero--split .hero__img--b, .hero--split .hero__img--m { object-position: 50% 50%; } }
 .hero--split .hero__inner { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 1rem 2rem; padding-block: clamp(1rem, 2.2vw, 1.6rem); }
 .hero--split .hero__title { font-size: clamp(1.7rem, 1rem + 2vw, 2.45rem); }
 .hero--split .hero__title::after { margin-top: .6rem; }

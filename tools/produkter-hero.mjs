@@ -8,7 +8,7 @@ import sharp from "sharp";
 const W = 1920, H = 360;
 // The diagonal is placed by CSS (.hero--split, custom properties --cut-t / --cut-b), and moves with the filter. The finished
 // composite uses the resting state (both selected): percent of the width where the diagonal meets the top and the bottom edge.
-const CUT = { top: 53, bottom: 47, seam: 0.7 };
+const CUT = { top: 50, bottom: 50, seam: 0.7 };
 const IMG = (n) => `assets-src/img/${n}.webp`;
 
 // machines: the drill rig, a little in from the left edge so the page title sits on dark soil; the picture fades into soil on the
@@ -38,6 +38,9 @@ const right = await sharp(material).composite([{ input: mask, blend: "dest-in" }
 const both = await sharp(machines).composite([{ input: right }, { input: seam }]).toBuffer();
 
 const out = (b, n) => sharp(b).webp({ quality: 80 }).toFile(IMG(n)).then((i) => console.log(n, i.width + "x" + i.height, Math.round(i.size / 1024) + " kB"));
+// material on its own (a language without machine brands): the whole banner is the concrete picture, no diagonal
+const wide = await sharp(IMG("reed-hero")).resize({ width: W }).extract({ left: 0, top: 330, width: W, height: H }).toBuffer();
+await out(wide, "produkter-hero-material-wide");
 await out(machines, "produkter-hero-machines");
 await out(material, "produkter-hero-material");
 await out(both, "produkter-hero");

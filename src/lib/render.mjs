@@ -1235,11 +1235,16 @@ export function renderMain(ctx, page, t) {
   const heroInner = heroSearch ? `<div class="container hero__inner"><div class="hero__head">${headHtml}</div>${heroSearch}</div>` : `<div class="container hero__inner">${headHtml}</div>`;
   // Split banner (the products page): two pictures meet in a diagonal; site.js greys out the side that is not selected in the filter
   const split = page.hero && page.hero.split && page.hero.split.a && page.hero.split.b ? page.hero.split : null;
-  const splitImgs = split
+  // a language that lists only machines (or only material) gets that picture alone: no diagonal, nothing greyed out
+  const groupsHere = split ? new Set(flatBlocks(t.blocks || []).filter((b) => b.type === "cards").flatMap((b) => b.items || []).filter((it) => it && it.group && shown(ctx, it.href)).map((it) => it.group)) : new Set();
+  const solo = split && groupsHere.size === 1 ? [...groupsHere][0] : null;
+  const splitImgs = solo
+    ? imgTag(ctx, solo === "machines" ? split.a : (split.bWide || split.b), "", { cls: `hero__img hero__img--${solo === "machines" ? "a" : "m"}`, eager: true, sizes: "100vw" })
+    : split
     ? imgTag(ctx, split.a, "", { cls: "hero__img hero__img--a", eager: true, sizes: "100vw" }) + imgTag(ctx, split.b, "", { cls: "hero__img hero__img--b", eager: true, sizes: "100vw" })
     : "";
   const hero = heroImg
-    ? `<section class="hero${isHome ? " hero--home" : ""}${split ? " hero--split" : ""}"${split ? ' data-show="both"' : ""}>${split ? splitImgs : heroImgTag(ctx, page, heroImg)}<div class="hero__shade"></div>${split ? '<span class="hero__seam"></span>' : ""}${heroInner}${isHome && !ctx.edit ? `<a class="hero__scroll" href="#start" aria-label="${esc(ctx.ui.scroll_down || "Scrolla ner")}">${ICON.chevronDown}</a>` : ""}</section>`
+    ? `<section class="hero${isHome ? " hero--home" : ""}${split ? " hero--split" : ""}${solo ? " hero--solo" : ""}"${split && !solo ? ' data-show="both"' : ""}>${split ? splitImgs : heroImgTag(ctx, page, heroImg)}<div class="hero__shade"></div>${split && !solo ? '<span class="hero__seam"></span>' : ""}${heroInner}${isHome && !ctx.edit ? `<a class="hero__scroll" href="#start" aria-label="${esc(ctx.ui.scroll_down || "Scrolla ner")}">${ICON.chevronDown}</a>` : ""}</section>`
     : `<section class="page-head${page.template === "about" ? " page-head--center" : ""}"><div class="container">${page.template === "about" ? "" : eyebrow}<h1${pageFld("h1")}>${esc(title)}</h1></div></section>`;
   const ownRel = flatBlocks(t.blocks || []).filter((x) => x.type === "related");
   const ownHrefs = new Set(ownRel.flatMap((x) => (x.items || []).map((i) => i && i.href)));
