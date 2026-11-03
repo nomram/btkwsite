@@ -1295,3 +1295,13 @@ td.is-sized { font-weight: 700; }
 .pgroup.is-pre-r { transform: translate3d(-48px, 0, 0); opacity: 0; transition: none; }
 .pgroup.is-in { transition: transform .33s cubic-bezier(.2, .7, .2, 1), opacity .33s ease-out; }
 @media (prefers-reduced-motion: reduce) { .pgroup, .pgroup.is-in { transition: none; } }
+
+/* Products banner: two pictures meet in an orange diagonal (tools/produkter-hero.mjs makes the pictures, the numbers are the same);
+   the side that is not selected in the machines / material filter turns grey */
+.hero--split .hero__img { transition: filter .6s ease; }
+.hero--split .hero__img--a { object-position: 44% 50%; }
+.hero--split .hero__img--b { object-position: 85% 50%; clip-path: polygon(56% 0, 100% 0, 100% 100%, 47% 100%); }
+.hero__seam { position: absolute; inset: 0; z-index: -1; background: var(--primary); clip-path: polygon(55.3% 0, 56.7% 0, 47.7% 100%, 46.3% 100%); pointer-events: none; }
+.hero--split[data-show="machines"] .hero__img--b, .hero--split[data-show="material"] .hero__img--a { filter: grayscale(1) brightness(.78); }
+@media (min-width: 700px) { .hero--split .hero__img--a, .hero--split .hero__img--b { object-position: 50% 50%; } }
+@media print { .hero__seam { display: none; } }

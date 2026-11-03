@@ -808,6 +808,13 @@
     var btns = [].slice.call(bar.querySelectorAll(".pfilter__btn")), groups = {}, on = {};
     [].forEach.call(document.querySelectorAll(".pgroup"), function (g) { groups[g.getAttribute("data-g")] = g; });
     btns.forEach(function (b) { on[b.getAttribute("data-g")] = true; });
+    // the banner picture of the side that is not selected turns grey
+    var banner = document.querySelector(".hero--split");
+    function setBanner() {
+      if (!banner) return;
+      var shown = btns.filter(function (b) { return on[b.getAttribute("data-g")]; });
+      banner.setAttribute("data-show", shown.length === 1 ? shown[0].getAttribute("data-g") : "both");
+    }
     function paint(keepUrl) {
       btns.forEach(function (b) {
         var k = b.getAttribute("data-g");
@@ -815,6 +822,7 @@
         if (groups[k]) groups[k].hidden = !on[k];
       });
       var only = btns.filter(function (b) { return on[b.getAttribute("data-g")]; });
+      setBanner();
       if (!keepUrl) try { history.replaceState(null, "", only.length === 1 ? "#" + groups[only[0].getAttribute("data-g")].id : location.pathname + location.search); } catch (e) { /* ignore */ }
     }
     var swapping = false, reduce = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -823,6 +831,7 @@
       if (!a || !b) return;
       swapping = true;
       on[from] = false; on[to] = true;
+      setBanner();
       btns.forEach(function (x) { var k = x.getAttribute("data-g"); x.setAttribute("aria-pressed", on[k] ? "true" : "false"); });
       try { history.replaceState(null, "", "#" + b.id); } catch (e) { /* ignore */ }
       if (reduce) { a.hidden = true; b.hidden = false; swapping = false; return; }

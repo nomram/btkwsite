@@ -1225,8 +1225,13 @@ export function renderMain(ctx, page, t) {
   const ctas = (t.ctas || []).map((c, i) => `<a class="btn${i ? " btn--ghost-light" : ""}" href="${esc(localizeHref(ctx, c.href))}">${esc(c.text)}${i ? "" : ICON.arrow}</a>`).join("");
   const pageFld = (k) => (ctx.edit ? ` data-bk-page="${k}" data-bk-kind="plain"` : "");
   const heroInner = `<div class="container hero__inner">${eyebrow}<h1 class="hero__title"${pageFld("h1")}>${esc(title)}</h1>${t.lead || (ctx.edit && heroImg) ? `<p class="hero__lead"${pageFld("lead")}>${esc(t.lead || "")}</p>` : ""}${ctas ? `<div class="hero__ctas">${ctas}</div>` : ""}</div>`;
+  // Split banner (the products page): two pictures meet in a diagonal; site.js greys out the side that is not selected in the filter
+  const split = page.hero && page.hero.split && page.hero.split.a && page.hero.split.b ? page.hero.split : null;
+  const splitImgs = split
+    ? imgTag(ctx, split.a, "", { cls: "hero__img hero__img--a", eager: true, sizes: "100vw" }) + imgTag(ctx, split.b, "", { cls: "hero__img hero__img--b", eager: true, sizes: "100vw" })
+    : "";
   const hero = heroImg
-    ? `<section class="hero${isHome ? " hero--home" : ""}">${heroImgTag(ctx, page, heroImg)}<div class="hero__shade"></div>${heroInner}${isHome && !ctx.edit ? `<a class="hero__scroll" href="#start" aria-label="${esc(ctx.ui.scroll_down || "Scrolla ner")}">${ICON.chevronDown}</a>` : ""}</section>`
+    ? `<section class="hero${isHome ? " hero--home" : ""}${split ? " hero--split" : ""}"${split ? ' data-show="both"' : ""}>${split ? splitImgs : heroImgTag(ctx, page, heroImg)}<div class="hero__shade"></div>${split ? '<span class="hero__seam"></span>' : ""}${heroInner}${isHome && !ctx.edit ? `<a class="hero__scroll" href="#start" aria-label="${esc(ctx.ui.scroll_down || "Scrolla ner")}">${ICON.chevronDown}</a>` : ""}</section>`
     : `<section class="page-head${page.template === "about" ? " page-head--center" : ""}"><div class="container">${page.template === "about" ? "" : eyebrow}<h1${pageFld("h1")}>${esc(title)}</h1></div></section>`;
   const ownRel = flatBlocks(t.blocks || []).filter((x) => x.type === "related");
   const ownHrefs = new Set(ownRel.flatMap((x) => (x.items || []).map((i) => i && i.href)));

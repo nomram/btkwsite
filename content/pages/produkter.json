@@ -5,7 +5,11 @@
   "order": 2,
   "published": true,
   "hero": {
-    "image": "/assets/img/produkter-hero.gif"
+    "image": "/assets/img/produkter-hero.webp",
+    "split": {
+      "a": "/assets/img/produkter-hero-machines.webp",
+      "b": "/assets/img/produkter-hero-material.webp"
+    }
   },
   "i18n": {
     "sv": {

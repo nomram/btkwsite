@@ -6,7 +6,6 @@
 //   Everwood    6-8 m2 per litre, normally one treatment (until the surface is saturated)
 //   Brickcover  4-7 m2 per litre, one coat (no second coat)
 //   Ercole      15 m2 per 25 kg in two coats (about 1.5 kg/m2); the technical data use 3.5 litres of water per 25 kg
-//   Ercole Ecoactive  1.5 kg/m2 in two coats on smooth, undamaged surfaces
 //   Microbond   30 m2 per 25 kg, several thin coats until smooth (the page text: about 1.5 kg/m2 at 1 mm)
 //   node tools/ecobeton-usage.mjs
 import fs from "node:fs";
@@ -18,7 +17,6 @@ const LABEL = { sv: "Åtgång", en: "Consumption", es: "Consumo", no: "Forbruk" 
 const PER_L = { sv: "per liter", en: "per litre", es: "por litro", no: "per liter" };
 const PER_PAIL = { sv: "per 25 kg hink", en: "per 25 kg bucket", es: "por cubo de 25 kg", no: "per 25 kg bøtte" };
 const same = (v) => ({ sv: v, en: v, es: v, no: v });
-const TWO = { sv: "2 skikt", en: "2 coats", es: "2 capas", no: "2 strøk" };
 
 const DATA = {
   "evercrete-vetrofluid": { value: same("2-4 m²"), unit: PER_L,
@@ -33,9 +31,6 @@ const DATA = {
   ercole: { value: same("15 m²"), unit: PER_PAIL,
     meta: { sv: "2 skikt, ca 1,5 kg/m²", en: "2 coats, about 1.5 kg/m²", es: "2 capas, unos 1,5 kg/m²", no: "2 strøk, ca. 1,5 kg/m²" },
     note: { sv: "På jämnt underlag. Tekniska data gäller 3,5 liter vatten per 25 kg. Verklig täckning beror på underlagets förhållanden och porositet.", en: "On an even substrate. The technical data apply to 3.5 litres of water per 25 kg. The actual coverage depends on the substrate and its porosity.", es: "Sobre un soporte regular. Los datos técnicos corresponden a 3,5 litros de agua por 25 kg. El rendimiento real depende del soporte y de su porosidad.", no: "På jevnt underlag. De tekniske dataene gjelder 3,5 liter vann per 25 kg. Faktisk dekning avhenger av underlaget og dets porøsitet." } },
-  "ercole-ecoactive": { value: { sv: "1,5 kg/m²", en: "1.5 kg/m²", es: "1,5 kg/m²", no: "1,5 kg/m²" }, unit: same(""),
-    meta: TWO,
-    note: { sv: "På slät, oskadad yta. Verklig täckning beror på underlag och porositet.", en: "On a smooth, undamaged surface. The actual coverage depends on the substrate and its porosity.", es: "Sobre una superficie lisa y sin daños. El rendimiento real depende del soporte y de su porosidad.", no: "På glatt, uskadet underlag. Faktisk dekning avhenger av underlaget og dets porøsitet." } },
   microbond: { value: same("30 m²"), unit: PER_PAIL,
     meta: { sv: "Flera tunna skikt tills ytan är slät", en: "Several thin coats until the surface is smooth", es: "Varias capas finas hasta lograr una superficie lisa", no: "Flere tynne lag til flaten er glatt" },
     note: { sv: "Vid ca 1 mm går det åt ca 1,5 kg/m² (15-16 m² per hink).", en: "At about 1 mm it takes about 1.5 kg/m² (15-16 m² per bucket).", es: "Con unos 1 mm se necesitan unos 1,5 kg/m² (15-16 m² por cubo).", no: "Ved ca. 1 mm går det med ca. 1,5 kg/m² (15-16 m² per bøtte)." } }

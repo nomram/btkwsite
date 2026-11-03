@@ -1,7 +1,6 @@
 {
   "_note": "Language of a brochure when the text of the PDF cannot tell (no text layer, or two languages in one): filename -> code, or two codes joined with +. Everything else is detected from the PDF text at build time (src/build.mjs).",
   "ecobeton-brickcover-tekniskt-datablad-tds.pdf": "sv",
-  "ecobeton-ercole-ecoactive-tekniskt-datablad-tds.pdf": "en",
   "ecobeton-ercole-tekniskt-datablad-tds.pdf": "sv",
   "ecobeton-evercrete-vetrofluid-tekniskt-datablad-tds.pdf": "sv",
   "ecobeton-everwood-tekniskt-datablad-tds.pdf": "sv",
