@@ -802,7 +802,8 @@
   });
 
   // ---------- products page: machines / material filter ----------
-  // Both groups are in the page for search engines and without scripts; the buttons only hide a group. One group always stays on.
+  // Both groups are in the page for search engines and without scripts; the buttons only hide a group. One group always stays on:
+  // pressing the only group that is on swaps to the other one (the first slides out, the next slides in).
   [].forEach.call(document.querySelectorAll(".pfilter"), function (bar) {
     var btns = [].slice.call(bar.querySelectorAll(".pfilter__btn")), groups = {}, on = {};
     [].forEach.call(document.querySelectorAll(".pgroup"), function (g) { groups[g.getAttribute("data-g")] = g; });
@@ -816,10 +817,33 @@
       var only = btns.filter(function (b) { return on[b.getAttribute("data-g")]; });
       if (!keepUrl) try { history.replaceState(null, "", only.length === 1 ? "#" + groups[only[0].getAttribute("data-g")].id : location.pathname + location.search); } catch (e) { /* ignore */ }
     }
-    btns.forEach(function (b) {
+    var swapping = false, reduce = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
+    function swapTo(from, to, dir) {
+      var a = groups[from], b = groups[to];
+      if (!a || !b) return;
+      swapping = true;
+      on[from] = false; on[to] = true;
+      btns.forEach(function (x) { var k = x.getAttribute("data-g"); x.setAttribute("aria-pressed", on[k] ? "true" : "false"); });
+      try { history.replaceState(null, "", "#" + b.id); } catch (e) { /* ignore */ }
+      if (reduce) { a.hidden = true; b.hidden = false; swapping = false; return; }
+      a.classList.add("is-out-" + dir);
+      setTimeout(function () {
+        a.hidden = true; a.classList.remove("is-out-" + dir);
+        b.classList.add("is-pre-" + dir); b.hidden = false;
+        void b.offsetWidth; // the start position is painted before it moves
+        b.classList.remove("is-pre-" + dir); b.classList.add("is-in");
+        setTimeout(function () { b.classList.remove("is-in"); swapping = false; }, 340);
+      }, 190);
+    }
+    btns.forEach(function (b, i) {
       b.addEventListener("click", function () {
+        if (swapping) return;
         var k = b.getAttribute("data-g"), live = btns.filter(function (x) { return on[x.getAttribute("data-g")]; }).length;
-        if (on[k] && live === 1) return; // the last group stays on
+        if (on[k] && live === 1 && btns.length > 1) { // the last group does not go away: the other one takes its place
+          var j = (i + 1) % btns.length;
+          swapTo(k, btns[j].getAttribute("data-g"), j > i ? "l" : "r");
+          return;
+        }
         on[k] = !on[k];
         paint();
       });
@@ -1490,14 +1514,52 @@
     var sg = cfg.suggest;
     if (!sg) return;
     var KEY = "bk-lang-suggest";
-    function fromZone() {
-      try { return (sg.timezones || {})[Intl.DateTimeFormat().resolvedOptions().timeZone] || ""; } catch (e) { return ""; }
+    // Where is the visitor? No single browser signal is trusted: each adds points to a country and the best country wins when it reaches the threshold.
+    //   time zone Europe/Vilnius, Riga, Tallinn ........ +3   (a zone of another country or place counts -3: the browser says the visitor is elsewhere)
+    //   region of the language or regional setting (lt-LT) +2  (browser language list, and the regional format of the system)
+    //   the language itself (lt, lv, et) ............... +1.5 if it is the first language, +0.5 further down (people abroad speak it too)
+    //   the page they came from ends in .lt/.lv/.ee .... +2   (for example google.lt)
+    //   ?geo=LT in the address ......................... decides (for trying it out)
+    // A hardened browser that hides its time zone (UTC) and its languages simply gives no answer.
+    function score(input, countries, threshold) {
+      var pts = {}, elsewhere = false, k;
+      function add(c, n) { pts[c] = (pts[c] || 0) + n; }
+      if (input.forced && countries[input.forced]) return input.forced;
+      var zone = input.zone || "";
+      var zoneOf = "";
+      for (k in countries) if ((countries[k].zones || []).indexOf(zone) >= 0) zoneOf = k;
+      if (zoneOf) add(zoneOf, 3);
+      else if (zone && !/^(UTC|GMT|Etc\/)/i.test(zone)) elsewhere = true;
+      var seenRegion = {};
+      (input.tags || []).forEach(function (tag, i) {
+        var m = /^([a-z]{2,3})(?:-[a-z]{4})?(?:-([a-z]{2}|\d{3}))?(?:-|$)/i.exec(String(tag || ""));
+        if (!m) return;
+        var lang = m[1].toLowerCase(), region = (m[2] || "").toUpperCase();
+        for (var c in countries) {
+          if (region === c && !seenRegion[c]) { seenRegion[c] = 1; add(c, 2); }
+          if (countries[c].language === lang && !seenRegion["l" + c]) { seenRegion["l" + c] = 1; add(c, i === 0 ? 1.5 : 0.5); }
+        }
+      });
+      var host = String(input.referrerHost || "").toLowerCase();
+      if (host) for (var t in countries) if (countries[t].tld && host.slice(-(countries[t].tld.length + 1)) === "." + countries[t].tld) add(t, 2);
+      var best = "", top = 0;
+      for (var p in pts) { var v = pts[p] - (elsewhere ? 3 : 0); if (v > top) { top = v; best = p; } }
+      return top >= (threshold || 3) ? best : "";
+    }
+    function fromBrowser() {
+      var tags = [], zone = "", host = "", forced = "";
+      try { zone = Intl.DateTimeFormat().resolvedOptions().timeZone || ""; } catch (e) { /* no Intl */ }
+      try { tags = (navigator.languages && navigator.languages.length ? [].slice.call(navigator.languages) : [navigator.language || ""]); } catch (e) { /* none */ }
+      try { tags.push(Intl.DateTimeFormat().resolvedOptions().locale, Intl.NumberFormat().resolvedOptions().locale); } catch (e) { /* none */ }
+      try { var r = document.referrer && new URL(document.referrer); if (r && r.hostname !== location.hostname) host = r.hostname; } catch (e) { /* none */ }
+      try { var q = /[?&]geo=([A-Za-z]{2})(?:&|#|$)/.exec(location.search); if (q) forced = q[1].toUpperCase(); } catch (e) { /* none */ }
+      return score({ zone: zone, tags: tags, referrerHost: host, forced: forced }, sg.countries || {}, sg.threshold);
     }
     function lookup(done) {
-      if (!sg.geoEndpoint || !window.fetch) return done(fromZone());
+      if (!sg.geoEndpoint || !window.fetch) return done(fromBrowser());
       fetch(sg.geoEndpoint, { cache: "no-store", credentials: "omit", referrerPolicy: "no-referrer" }).then(function (r) { return r.json(); })
-        .then(function (j) { done(String(j.country || j.country_code || j.countryCode || "").toUpperCase() || fromZone()); })
-        .catch(function () { done(fromZone()); });
+        .then(function (j) { done(String(j.country || j.country_code || j.countryCode || "").toUpperCase() || fromBrowser()); })
+        .catch(function () { done(fromBrowser()); });
     }
     function reveal(country) {
       document.querySelectorAll("[data-geo]").forEach(function (li) {

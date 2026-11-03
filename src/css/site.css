@@ -1286,3 +1286,12 @@ td.is-sized { font-weight: 700; }
 .lsug__list img { border-radius: 2px; box-shadow: 0 0 0 1px rgba(35, 31, 32, .18); object-fit: cover; flex: none; }
 @media (max-width: 760px) { .lsug { top: 4.2rem; right: .75rem; left: .75rem; width: auto; } }
 @media (prefers-reduced-motion: reduce) { .lsug { transition: none; } }
+
+/* Machines / material: the group that goes away slides out to one side, the other slides in from the other side */
+.pgroup { transition: transform .19s ease-in, opacity .19s ease-in; }
+.pgroup.is-out-l { transform: translate3d(-48px, 0, 0); opacity: 0; }
+.pgroup.is-out-r { transform: translate3d(48px, 0, 0); opacity: 0; }
+.pgroup.is-pre-l { transform: translate3d(48px, 0, 0); opacity: 0; transition: none; }
+.pgroup.is-pre-r { transform: translate3d(-48px, 0, 0); opacity: 0; transition: none; }
+.pgroup.is-in { transition: transform .33s cubic-bezier(.2, .7, .2, 1), opacity .33s ease-out; }
+@media (prefers-reduced-motion: reduce) { .pgroup, .pgroup.is-in { transition: none; } }

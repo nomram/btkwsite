@@ -136,12 +136,31 @@
   ],
   "megaMenu": true,
   "langSuggest": {
-    "_note": "Russian is only offered in the language menu to visitors in the Baltic states, and a small prompt offers the local language and Russian. The country is read from the browser time zone (nothing is sent anywhere). To use an IP-based lookup instead, put the address of a service that answers JSON with a country code in geoEndpoint: the visitor IP is then sent to that service, which must be covered by the privacy policy.",
+    "_note": "Russian is only offered in the language menu to visitors in the Baltic states, and a small prompt offers the local language and Russian. Where a visitor is is judged in the browser from several weak signals that are added up (time zone, the region in the language and regional settings, the language itself, the top-level domain of the page they came from). Nothing is sent anywhere and nothing is stored. Add ?geo=LT (or LV, EE) to a page address to try it. To use an IP-based lookup instead, put the address of a service that answers JSON with a country code in geoEndpoint: the visitor IP is then sent to that service, which must be covered by the privacy policy.",
     "geoEndpoint": "",
-    "timezones": {
-      "Europe/Vilnius": "LT",
-      "Europe/Riga": "LV",
-      "Europe/Tallinn": "EE"
+    "threshold": 3,
+    "countries": {
+      "LT": {
+        "zones": [
+          "Europe/Vilnius"
+        ],
+        "language": "lt",
+        "tld": "lt"
+      },
+      "LV": {
+        "zones": [
+          "Europe/Riga"
+        ],
+        "language": "lv",
+        "tld": "lv"
+      },
+      "EE": {
+        "zones": [
+          "Europe/Tallinn"
+        ],
+        "language": "et",
+        "tld": "ee"
+      }
     },
     "regions": {
       "LT": [
