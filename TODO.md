@@ -29,3 +29,11 @@ Once the new catalogue is approved:
 - Mini Mobil Fil / Mobil Fil: the catalogue names the control system the other way round on the granite and marble pages, so the control system is left out for these two.
 - Driller / Hor Drill: rotary torque of the EP 95 head is 85 daNm in the catalogue and 80 daNm in the brochures (the pages use the catalogue); blade feed force 450 daN on one brochure page and 480 daN on the next (the pages use 480 daN = 4,8 kN).
 - Marble saws have no photo of their own in the catalogue: they show the catalogue's line drawing as the main picture.
+
+## Map on the About page (Lager och mobil verkstad)
+
+- [ ] Privacy policy: the map pictures come from OpenStreetMap (tile.openstreetmap.org) after the visitor clicks "Visa kartan"; the visitor's IP address reaches OpenStreetMap then (like YouTube for the videos). The policy text (all languages) does not mention it yet.
+- [ ] Exact places: the pins are plain coordinates in `content/pages/om-oss.json` (block `map`, items `lat` / `lon`, `kind`: `warehouse` or `workshop`). They are city centres for now. Put in the real addresses' coordinates when they are known.
+- [ ] Norway warehouse: placed at Halden (59.12, 11.39), just across the border from Strömstad. Move it if the real place is elsewhere (and change the title if it should name a town).
+- [ ] The mobile workshop pin sits a little north of Göteborg toward Stockholm (58.2, 12.5): move it when you know where the van is usually based.
+- The zoom range is the start zoom (6) out one step and in two steps; `zoom`, `zoomIn`, `zoomOut` and `bounds` [south, west, north, east] are fields of the block when a bigger map is wanted later.

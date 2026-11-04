@@ -121,6 +121,61 @@
           ]
         },
         {
+          "type": "heading",
+          "level": 2,
+          "text": "Lager och mobil verkstad",
+          "tag": "lager"
+        },
+        {
+          "type": "text",
+          "html": "Lager i Stockholm, Göteborg och Malmö för snabb leverans eller upphämtning.",
+          "tag": "lager"
+        },
+        {
+          "type": "map",
+          "tag": "lager",
+          "alt": "Karta över lagren i Stockholm, Göteborg, Malmö och Norge samt den mobila verkstaden",
+          "center": [
+            57.5,
+            14.7
+          ],
+          "zoom": 6,
+          "zoomIn": 2,
+          "zoomOut": 1,
+          "items": [
+            {
+              "lat": 57.7089,
+              "lon": 11.9746,
+              "kind": "warehouse",
+              "title": "Lager i Göteborg"
+            },
+            {
+              "lat": 55.605,
+              "lon": 13.0038,
+              "kind": "warehouse",
+              "title": "Lager i Malmö"
+            },
+            {
+              "lat": 59.3293,
+              "lon": 18.0686,
+              "kind": "warehouse",
+              "title": "Lager i Stockholm"
+            },
+            {
+              "lat": 59.12,
+              "lon": 11.39,
+              "kind": "warehouse",
+              "title": "Lager i Norge"
+            },
+            {
+              "lat": 58.2,
+              "lon": 12.5,
+              "kind": "workshop",
+              "title": "Mobil verkstad - även Norge"
+            }
+          ]
+        },
+        {
           "type": "image",
           "alt": "ID06",
           "width": 86,
@@ -242,6 +297,61 @@
                 "Betongakuten holds ID06",
                 "Hollow-bar school Montrose (TEI)"
               ]
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Warehouses and mobile workshop",
+          "tag": "lager"
+        },
+        {
+          "type": "text",
+          "html": "Warehouses in Stockholm, Gothenburg and Malmö for fast delivery or pickup.",
+          "tag": "lager"
+        },
+        {
+          "type": "map",
+          "tag": "lager",
+          "alt": "Map of the warehouses in Stockholm, Gothenburg, Malmö and Norway and the mobile workshop",
+          "center": [
+            57.5,
+            14.7
+          ],
+          "zoom": 6,
+          "zoomIn": 2,
+          "zoomOut": 1,
+          "items": [
+            {
+              "lat": 57.7089,
+              "lon": 11.9746,
+              "kind": "warehouse",
+              "title": "Warehouse in Gothenburg"
+            },
+            {
+              "lat": 55.605,
+              "lon": 13.0038,
+              "kind": "warehouse",
+              "title": "Warehouse in Malmö"
+            },
+            {
+              "lat": 59.3293,
+              "lon": 18.0686,
+              "kind": "warehouse",
+              "title": "Warehouse in Stockholm"
+            },
+            {
+              "lat": 59.12,
+              "lon": 11.39,
+              "kind": "warehouse",
+              "title": "Warehouse in Norway"
+            },
+            {
+              "lat": 58.2,
+              "lon": 12.5,
+              "kind": "workshop",
+              "title": "Mobile workshop - also Norway"
             }
           ]
         },
@@ -368,6 +478,61 @@
                 "Betongakuten cuenta con ID06",
                 "Escuela de barra hueca en Montrose (TEI)"
               ]
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Almacenes y taller móvil",
+          "tag": "lager"
+        },
+        {
+          "type": "text",
+          "html": "Almacenes en Estocolmo, Gotemburgo y Malmö para entrega rápida o recogida.",
+          "tag": "lager"
+        },
+        {
+          "type": "map",
+          "tag": "lager",
+          "alt": "Mapa de los almacenes en Estocolmo, Gotemburgo, Malmö y Noruega y del taller móvil",
+          "center": [
+            57.5,
+            14.7
+          ],
+          "zoom": 6,
+          "zoomIn": 2,
+          "zoomOut": 1,
+          "items": [
+            {
+              "lat": 57.7089,
+              "lon": 11.9746,
+              "kind": "warehouse",
+              "title": "Almacén en Gotemburgo"
+            },
+            {
+              "lat": 55.605,
+              "lon": 13.0038,
+              "kind": "warehouse",
+              "title": "Almacén en Malmö"
+            },
+            {
+              "lat": 59.3293,
+              "lon": 18.0686,
+              "kind": "warehouse",
+              "title": "Almacén en Estocolmo"
+            },
+            {
+              "lat": 59.12,
+              "lon": 11.39,
+              "kind": "warehouse",
+              "title": "Almacén en Noruega"
+            },
+            {
+              "lat": 58.2,
+              "lon": 12.5,
+              "kind": "workshop",
+              "title": "Taller móvil - también Noruega"
             }
           ]
         },
@@ -499,6 +664,61 @@
           ]
         },
         {
+          "type": "heading",
+          "level": 2,
+          "text": "Lager og mobilt verksted",
+          "tag": "lager"
+        },
+        {
+          "type": "text",
+          "html": "Lager i Stockholm, Göteborg og Malmö for rask levering eller henting.",
+          "tag": "lager"
+        },
+        {
+          "type": "map",
+          "tag": "lager",
+          "alt": "Kart over lagrene i Stockholm, Göteborg, Malmö og Norge og det mobile verkstedet",
+          "center": [
+            57.5,
+            14.7
+          ],
+          "zoom": 6,
+          "zoomIn": 2,
+          "zoomOut": 1,
+          "items": [
+            {
+              "lat": 57.7089,
+              "lon": 11.9746,
+              "kind": "warehouse",
+              "title": "Lager i Göteborg"
+            },
+            {
+              "lat": 55.605,
+              "lon": 13.0038,
+              "kind": "warehouse",
+              "title": "Lager i Malmö"
+            },
+            {
+              "lat": 59.3293,
+              "lon": 18.0686,
+              "kind": "warehouse",
+              "title": "Lager i Stockholm"
+            },
+            {
+              "lat": 59.12,
+              "lon": 11.39,
+              "kind": "warehouse",
+              "title": "Lager i Norge"
+            },
+            {
+              "lat": 58.2,
+              "lon": 12.5,
+              "kind": "workshop",
+              "title": "Mobilt verksted - også Norge"
+            }
+          ]
+        },
+        {
           "type": "image",
           "alt": "ID06",
           "width": 86,
@@ -621,6 +841,61 @@
                 "Betongakuten turi ID06 kortelę",
                 "Hollow-bar school Montrose (TEI)"
               ]
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Sandėliai ir mobilios dirbtuvės",
+          "tag": "lager"
+        },
+        {
+          "type": "text",
+          "html": "Sandėliai Stokholme, Geteborge ir Malmėje greitam pristatymui arba atsiėmimui.",
+          "tag": "lager"
+        },
+        {
+          "type": "map",
+          "tag": "lager",
+          "alt": "Sandėlių Stokholme, Geteborge, Malmėje ir Norvegijoje bei mobilių dirbtuvių žemėlapis",
+          "center": [
+            57.5,
+            14.7
+          ],
+          "zoom": 6,
+          "zoomIn": 2,
+          "zoomOut": 1,
+          "items": [
+            {
+              "lat": 57.7089,
+              "lon": 11.9746,
+              "kind": "warehouse",
+              "title": "Sandėlis Geteborge"
+            },
+            {
+              "lat": 55.605,
+              "lon": 13.0038,
+              "kind": "warehouse",
+              "title": "Sandėlis Malmėje"
+            },
+            {
+              "lat": 59.3293,
+              "lon": 18.0686,
+              "kind": "warehouse",
+              "title": "Sandėlis Stokholme"
+            },
+            {
+              "lat": 59.12,
+              "lon": 11.39,
+              "kind": "warehouse",
+              "title": "Sandėlis Norvegijoje"
+            },
+            {
+              "lat": 58.2,
+              "lon": 12.5,
+              "kind": "workshop",
+              "title": "Mobilios dirbtuvės - taip pat Norvegija"
             }
           ]
         },
@@ -751,6 +1026,61 @@
           ]
         },
         {
+          "type": "heading",
+          "level": 2,
+          "text": "Noliktavas un mobilā darbnīca",
+          "tag": "lager"
+        },
+        {
+          "type": "text",
+          "html": "Noliktavas Stokholmā, Gēteborgā un Malmē ātrai piegādei vai saņemšanai.",
+          "tag": "lager"
+        },
+        {
+          "type": "map",
+          "tag": "lager",
+          "alt": "Noliktavu Stokholmā, Gēteborgā, Malmē un Norvēģijā un mobilās darbnīcas karte",
+          "center": [
+            57.5,
+            14.7
+          ],
+          "zoom": 6,
+          "zoomIn": 2,
+          "zoomOut": 1,
+          "items": [
+            {
+              "lat": 57.7089,
+              "lon": 11.9746,
+              "kind": "warehouse",
+              "title": "Noliktava Gēteborgā"
+            },
+            {
+              "lat": 55.605,
+              "lon": 13.0038,
+              "kind": "warehouse",
+              "title": "Noliktava Malmē"
+            },
+            {
+              "lat": 59.3293,
+              "lon": 18.0686,
+              "kind": "warehouse",
+              "title": "Noliktava Stokholmā"
+            },
+            {
+              "lat": 59.12,
+              "lon": 11.39,
+              "kind": "warehouse",
+              "title": "Noliktava Norvēģijā"
+            },
+            {
+              "lat": 58.2,
+              "lon": 12.5,
+              "kind": "workshop",
+              "title": "Mobilā darbnīca - arī Norvēģija"
+            }
+          ]
+        },
+        {
           "type": "image",
           "alt": "ID06",
           "width": 86,
@@ -877,6 +1207,61 @@
           ]
         },
         {
+          "type": "heading",
+          "level": 2,
+          "text": "Laod ja mobiilne töökoda",
+          "tag": "lager"
+        },
+        {
+          "type": "text",
+          "html": "Laod Stockholmis, Göteborgis ja Malmös kiireks tarneks või äravõtuks.",
+          "tag": "lager"
+        },
+        {
+          "type": "map",
+          "tag": "lager",
+          "alt": "Ladude kaart Stockholmis, Göteborgis, Malmös ja Norras ning mobiilne töökoda",
+          "center": [
+            57.5,
+            14.7
+          ],
+          "zoom": 6,
+          "zoomIn": 2,
+          "zoomOut": 1,
+          "items": [
+            {
+              "lat": 57.7089,
+              "lon": 11.9746,
+              "kind": "warehouse",
+              "title": "Ladu Göteborgis"
+            },
+            {
+              "lat": 55.605,
+              "lon": 13.0038,
+              "kind": "warehouse",
+              "title": "Ladu Malmös"
+            },
+            {
+              "lat": 59.3293,
+              "lon": 18.0686,
+              "kind": "warehouse",
+              "title": "Ladu Stockholmis"
+            },
+            {
+              "lat": 59.12,
+              "lon": 11.39,
+              "kind": "warehouse",
+              "title": "Ladu Norras"
+            },
+            {
+              "lat": 58.2,
+              "lon": 12.5,
+              "kind": "workshop",
+              "title": "Mobiilne töökoda - ka Norra"
+            }
+          ]
+        },
+        {
           "type": "image",
           "alt": "ID06",
           "width": 86,
@@ -999,6 +1384,61 @@
                 "У Betongakuten есть удостоверение ID06",
                 "Hollow-bar school Montrose (TEI)"
               ]
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Склады и мобильная мастерская",
+          "tag": "lager"
+        },
+        {
+          "type": "text",
+          "html": "Склады в Стокгольме, Гётеборге и Мальмё для быстрой доставки или самовывоза.",
+          "tag": "lager"
+        },
+        {
+          "type": "map",
+          "tag": "lager",
+          "alt": "Карта складов в Стокгольме, Гётеборге, Мальмё и Норвегии и мобильной мастерской",
+          "center": [
+            57.5,
+            14.7
+          ],
+          "zoom": 6,
+          "zoomIn": 2,
+          "zoomOut": 1,
+          "items": [
+            {
+              "lat": 57.7089,
+              "lon": 11.9746,
+              "kind": "warehouse",
+              "title": "Склад в Гётеборге"
+            },
+            {
+              "lat": 55.605,
+              "lon": 13.0038,
+              "kind": "warehouse",
+              "title": "Склад в Мальмё"
+            },
+            {
+              "lat": 59.3293,
+              "lon": 18.0686,
+              "kind": "warehouse",
+              "title": "Склад в Стокгольме"
+            },
+            {
+              "lat": 59.12,
+              "lon": 11.39,
+              "kind": "warehouse",
+              "title": "Склад в Норвегии"
+            },
+            {
+              "lat": 58.2,
+              "lon": 12.5,
+              "kind": "workshop",
+              "title": "Мобильная мастерская - также Норвегия"
             }
           ]
         },

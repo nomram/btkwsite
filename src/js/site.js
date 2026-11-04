@@ -1412,6 +1412,116 @@
     });
   })();
 
+  // ---------- map of places: pins at once, the OpenStreetMap pictures after a click; drag to move, + / - and double click to zoom ----------
+  [].forEach.call(document.querySelectorAll(".map[data-map]"), function (box) {
+    var cfg; try { cfg = JSON.parse(box.getAttribute("data-map")); } catch (e) { return; }
+    var view = box.querySelector(".map__view"), tiles = box.querySelector(".map__tiles"), pinsEl = box.querySelector(".map__pins");
+    var pop = box.querySelector(".map__pop"), zoomBox = box.querySelector(".map__zoom"), zin = box.querySelector(".map__zin"), zout = box.querySelector(".map__zout");
+    var attr = box.querySelector(".map__attr"), start = box.querySelector(".map__start");
+    var Z0 = cfg.z, ZMIN = Z0 - cfg.zo, ZMAX = Z0 + cfg.zi, z = Z0, loaded = false, W = 0, H = 0, cx = 0, cy = 0, open = -1, cache = {};
+    var B = cfg.b || [54.3, 8.5, 61.6, 20.5]; // south, west, north, east: keeps the map over Scandinavia
+    function px(lat, lon, zz) { var sz = 256 * Math.pow(2, zz), r = lat * Math.PI / 180; return [(lon + 180) / 360 * sz, (1 - Math.log(Math.tan(r) + 1 / Math.cos(r)) / Math.PI) / 2 * sz]; }
+    function inv(x, y, zz) { var sz = 256 * Math.pow(2, zz), n = Math.PI - 2 * Math.PI * y / sz; return [180 / Math.PI * Math.atan(0.5 * (Math.exp(n) - Math.exp(-n))), x / sz * 360 - 180]; }
+    function clamp() {
+      var a = px(B[2], B[1], z), b = px(B[0], B[3], z);
+      var x0 = a[0] + W / 2, x1 = b[0] - W / 2, y0 = a[1] + H / 2, y1 = b[1] - H / 2;
+      cx = x0 > x1 ? (a[0] + b[0]) / 2 : Math.min(x1, Math.max(x0, cx));
+      cy = y0 > y1 ? (a[1] + b[1]) / 2 : Math.min(y1, Math.max(y0, cy));
+    }
+    // the pins: one button each, icon copied from the list under the map
+    var icons = box.querySelectorAll(".map__item .map__ico");
+    var pins = cfg.p.map(function (p, i) {
+      var b = document.createElement("button");
+      b.type = "button"; b.className = "map__pin map__pin--" + p.k; b.setAttribute("aria-label", p.t);
+      b.innerHTML = icons[i] ? icons[i].innerHTML : "";
+      b.addEventListener("click", function (e) { e.stopPropagation(); showPop(open === i ? -1 : i); });
+      pinsEl.appendChild(b);
+      return b;
+    });
+    function showPop(i) {
+      open = i;
+      pins.forEach(function (b, k) { b.classList.toggle("is-open", k === i); });
+      if (i < 0) { pop.hidden = true; return; }
+      pop.textContent = cfg.p[i].t; pop.hidden = false; placePop();
+    }
+    function placePop() {
+      if (open < 0) return;
+      var q = px(cfg.p[open].lat, cfg.p[open].lon, z), x = q[0] - (cx - W / 2), y = q[1] - (cy - H / 2);
+      var w = pop.offsetWidth, h = pop.offsetHeight;
+      var left = Math.min(W - w - 8, Math.max(8, x - w / 2)), top = y - 58 - h;
+      if (top < 8) top = y + 12;
+      pop.style.transform = "translate(" + Math.round(left) + "px," + Math.round(top) + "px)";
+    }
+    function render() {
+      var ox = cx - W / 2, oy = cy - H / 2;
+      if (loaded) {
+        var n = Math.pow(2, z), need = {};
+        for (var ty = Math.floor(oy / 256); ty <= Math.floor((oy + H) / 256); ty++) for (var tx = Math.floor(ox / 256); tx <= Math.floor((ox + W) / 256); tx++) {
+          if (ty < 0 || ty >= n) continue;
+          var wx = ((tx % n) + n) % n, key = z + "/" + tx + "/" + ty, im = cache[key];
+          need[key] = 1;
+          if (!im) {
+            im = new Image(); im.className = "map__tile"; im.alt = ""; im.width = 256; im.height = 256; im.decoding = "async"; im.draggable = false;
+            im.onload = function () { this.classList.add("is-in"); };
+            im.src = "https://tile.openstreetmap.org/" + z + "/" + wx + "/" + ty + ".png";
+            tiles.appendChild(im); cache[key] = im;
+          }
+          im.style.transform = "translate(" + (tx * 256 - ox) + "px," + (ty * 256 - oy) + "px)";
+        }
+        for (var k in cache) if (!need[k]) { cache[k].remove(); delete cache[k]; }
+      }
+      cfg.p.forEach(function (p, i) { var q = px(p.lat, p.lon, z); pins[i].style.transform = "translate(" + (q[0] - ox).toFixed(1) + "px," + (q[1] - oy).toFixed(1) + "px)"; });
+      placePop();
+      view.classList.toggle("is-zoomed", z > Z0);
+      zin.disabled = z >= ZMAX; zout.disabled = z <= ZMIN;
+    }
+    function zoomTo(nz, mx, my) {
+      nz = Math.max(ZMIN, Math.min(ZMAX, nz)); if (nz === z) return;
+      mx = mx == null ? W / 2 : mx; my = my == null ? H / 2 : my;
+      var ll = inv(cx - W / 2 + mx, cy - H / 2 + my, z);
+      z = nz;
+      var p = px(ll[0], ll[1], z); cx = p[0] - mx + W / 2; cy = p[1] - my + H / 2;
+      clamp(); render();
+    }
+    // on a small screen the pins may not fit at the start zoom: begin one step further out (if that is allowed)
+    function fits(zz) {
+      var lo = [1e9, 1e9], hi = [-1e9, -1e9];
+      cfg.p.forEach(function (p) { var q = px(p.lat, p.lon, zz); lo = [Math.min(lo[0], q[0]), Math.min(lo[1], q[1])]; hi = [Math.max(hi[0], q[0]), Math.max(hi[1], q[1])]; });
+      return hi[0] - lo[0] + 90 <= W && hi[1] - lo[1] + 85 <= H;
+    }
+    var placed = false;
+    function measure() {
+      var keep = W ? inv(cx, cy, z) : cfg.c;
+      W = view.clientWidth; H = view.clientHeight;
+      if (!placed && W) { placed = true; if (!fits(z) && z > ZMIN) z -= 1; }
+      var p = px(keep[0], keep[1], z); cx = p[0]; cy = p[1];
+      clamp(); render();
+    }
+    start.addEventListener("click", function () {
+      loaded = true; view.classList.add("is-live"); zoomBox.hidden = false; attr.hidden = false; render();
+    });
+    zin.addEventListener("click", function (e) { e.stopPropagation(); zoomTo(z + 1); });
+    zout.addEventListener("click", function (e) { e.stopPropagation(); zoomTo(z - 1); });
+    var drag = null, dragged = false;
+    view.addEventListener("pointerdown", function (e) {
+      if (!loaded || e.button > 0 || e.target.closest(".map__pin, .map__zoom, .map__attr")) return;
+      drag = { x: e.clientX, y: e.clientY, cx: cx, cy: cy, id: e.pointerId, moved: false };
+    });
+    view.addEventListener("pointermove", function (e) {
+      if (!drag || e.pointerId !== drag.id) return;
+      var dx = e.clientX - drag.x, dy = e.clientY - drag.y;
+      if (!drag.moved) { if (Math.abs(dx) + Math.abs(dy) < 5) return; drag.moved = true; try { view.setPointerCapture(e.pointerId); } catch (x) { /* ignore */ } view.classList.add("is-drag"); }
+      cx = drag.cx - dx; cy = drag.cy - dy; clamp(); render();
+    });
+    function endDrag() { if (drag && drag.moved) { dragged = true; setTimeout(function () { dragged = false; }, 0); } drag = null; view.classList.remove("is-drag"); }
+    view.addEventListener("pointerup", endDrag); view.addEventListener("pointercancel", endDrag);
+    view.addEventListener("click", function () { if (!dragged) showPop(-1); });
+    view.addEventListener("dblclick", function (e) { if (!loaded || e.target.closest(".map__pin, .map__zoom")) return; var r = view.getBoundingClientRect(); zoomTo(z + 1, e.clientX - r.left, e.clientY - r.top); });
+    document.addEventListener("keydown", function (e) { if (e.key === "Escape" && open >= 0) showPop(-1); });
+    if ("ResizeObserver" in window) new ResizeObserver(function () { if (view.clientWidth !== W || view.clientHeight !== H) measure(); }).observe(view); else window.addEventListener("resize", measure);
+    measure();
+  });
+
   // ---------- Häny logo with the 150 years reveal: armed when its pictures are ready, played once when it is in view ----------
   [].forEach.call(document.querySelectorAll(".logo150"), function (f) {
     if (!("IntersectionObserver" in window) || (window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches)) return;

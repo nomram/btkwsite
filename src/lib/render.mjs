@@ -87,6 +87,8 @@ const ICON = {
   prev: '<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>',
   next: '<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>',
   hand: '<svg viewBox="0 0 24 24" width="30" height="30" fill="#fff" stroke="#231f20" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M18 11a2 2 0 1 1 4 0v3a8 8 0 0 1-8 8h-2c-2.8 0-4.5-.86-5.99-2.34l-3.6-3.6a2 2 0 0 1 2.83-2.82L7 15V4a2 2 0 1 1 4 0v6"/><path d="M14 10V9a2 2 0 0 0-2-2a2 2 0 0 0-2 2"/><path d="M18 11v-1a2 2 0 0 0-2-2a2 2 0 0 0-2 2"/></svg>',
+  warehouse: '<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10.5 12 4l9 6.5V20H3z"/><path d="M7 20v-7.5h10V20M7 15.2h10M7 17.6h10"/></svg>',
+  wrench: '<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.6 6.2a4.2 4.2 0 0 0-5.3 5.4L3.8 17.1a1.9 1.9 0 0 0 2.7 2.7l5.5-5.5a4.2 4.2 0 0 0 5.4-5.3l-2.6 2.6-2.6-.7-.7-2.6z"/></svg>',
   info: '<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></svg>',
   external: '<svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>',
   arrow: '<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14m-6-6l6 6-6 6"/></svg>',
@@ -261,6 +263,29 @@ function renderLogo150(ctx, b) {
   return `<figure class="figure${b.align === "right" ? " figure--right" : b.align === "center" ? " figure--center" : ""} logo150" style="max-width:${w}px"><span class="logo150__stage">` +
     layer("haeny-1", "logo150__final", b.alt || "HÄNY") + layer("haeny-150-years", "logo150__years", "") + layer("haeny-plate", "logo150__plate", "") +
     `<span class="logo150__shine" aria-hidden="true"></span></span></figure>`;
+}
+
+// A small map of places (warehouses, the mobile workshop). The page holds only a plain frame with the pins and a list; the map pictures come from
+// OpenStreetMap after a click (like the videos), and site.js draws the pins and the little card that opens on a click.
+// Block: center [lat, lon], zoom (the start zoom), zoomIn / zoomOut (how many steps are allowed from there), items [{ lat, lon, kind: "warehouse" | "workshop", title }].
+function renderMap(ctx, b) {
+  const items = (b.items || []).filter((p) => p && Number.isFinite(Number(p.lat)) && Number.isFinite(Number(p.lon)));
+  if (!items.length) return "";
+  const num = (v, d) => (Number.isFinite(Number(v)) ? Number(v) : d);
+  const cfg = {
+    c: Array.isArray(b.center) && b.center.length === 2 ? [num(b.center[0], 58.6), num(b.center[1], 14.3)] : [58.6, 14.3],
+    z: Math.round(num(b.zoom, 6)), zi: Math.round(num(b.zoomIn, 2)), zo: Math.round(num(b.zoomOut, 1)),
+    ...(Array.isArray(b.bounds) && b.bounds.length === 4 ? { b: b.bounds.map(Number) } : {}),
+    p: items.map((p) => ({ lat: Number(p.lat), lon: Number(p.lon), k: p.kind === "workshop" ? "w" : "l", t: p.title || "" })),
+  };
+  const ui = ctx.ui;
+  const list = items.map((p) => `<li class="map__item map__item--${p.kind === "workshop" ? "w" : "l"}"><span class="map__ico">${p.kind === "workshop" ? ICON.wrench : ICON.warehouse}</span>${esc(p.title || "")}</li>`).join("");
+  return `<figure class="map" data-map="${esc(JSON.stringify(cfg))}" role="group" aria-label="${esc(b.alt || "")}">` +
+    `<div class="map__view"><div class="map__tiles" aria-hidden="true"></div><div class="map__pins"></div><div class="map__pop" role="status" hidden></div>` +
+    `<div class="map__zoom" hidden><button type="button" class="map__zin" aria-label="${esc(ui.map_zoom_in || "Zooma in")}">+</button><button type="button" class="map__zout" aria-label="${esc(ui.map_zoom_out || "Zooma ut")}">\u2212</button></div>` +
+    `<a class="map__attr" href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener" hidden>${esc(ui.map_attr || "© OpenStreetMap contributors")}</a>` +
+    `<div class="map__ask"><button type="button" class="map__start btn">${esc(ui.map_show || "Visa kartan")}</button><span class="map__notice">${esc(ui.map_notice || "")}</span></div></div>` +
+    `<ul class="map__list">${list}</ul></figure>`;
 }
 
 function renderVideo(ctx, b) {
@@ -758,6 +783,7 @@ function renderBlockInner(ctx, b) {
     }
     case "cards": return renderCards(ctx, b);
     case "video": return renderVideo(ctx, b);
+    case "map": return renderMap(ctx, b);
     case "table": return renderTable(ctx, b);
     case "datasheet": return renderDatasheet(ctx, b);
     case "contact": return renderContact(ctx);

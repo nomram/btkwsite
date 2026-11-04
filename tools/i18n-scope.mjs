@@ -70,9 +70,10 @@ const SKIP_VALUE = /^(\/|https?:|#|mailto:|tel:)|\.(webp|png|jpe?g|pdf|svg|mp4)$
 const isText = (v, key) => typeof v === "string" && !SKIP_VALUE.test(v) && new RegExp(`[A-Za-zÅÄÖåäö]{${key === "metric" || key === "us" ? 4 : 3},}`).test(v.replace(/<[^>]+>/g, ""));
 function visitExtra(page, t, cb, covered) {
   const P = page.path;
+  let curType = ""; // type of the block that is being walked (the alt text of a map block is plain text of its own)
   const walk = (node, id, key, parentKey) => {
     if (typeof node === "string") {
-      const ok = TEXT_KEYS.has(key) || (key === "name" && parentKey === "series") || (key === "text" && (parentKey === "callouts" || parentKey === "alt")) || (key === "html" && parentKey === "items");
+      const ok = TEXT_KEYS.has(key) || (key === "name" && parentKey === "series") || (key === "text" && (parentKey === "callouts" || parentKey === "alt")) || (key === "html" && parentKey === "items") || (key === "alt" && curType === "map");
       if (ok && isText(node, key) && !covered.has(id)) cb(id, node, null);
       return;
     }
@@ -88,6 +89,7 @@ function visitExtra(page, t, cb, covered) {
   if (t.menu) walk(t.menu, "menu", "menu", "");
   function walkBlock(b, pre) {
     if (!b || typeof b !== "object") return;
+    curType = b.type;
     if (b.type === "columns") { for (const side of ["left", "right"]) (b[side] || []).forEach((nb, j) => walkBlock(nb, `${pre}.${side}.${j}`)); return; }
     for (const [k, v] of Object.entries(b)) { if (k === "type" || k === "left" || k === "right" || k === "src" || k === "href") continue; walk(v, `${pre}.${k}`, k, ""); }
   }
