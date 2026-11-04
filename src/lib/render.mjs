@@ -1207,7 +1207,7 @@ function renderOrigin(ctx, page, t) {
   if (!name) return "";
   const years = o.since ? new Date().getFullYear() - Number(o.since) : 0;
   const more = [(o.more && (o.more[ctx.lang] || o.more[ctx.defaultLang] || o.more.en)) || "", o.since ? fmtTpl(ctx.ui.origin_since || "Since {y} ({n} years)", { y: o.since, n: years }) : ""].filter(Boolean);
-  return `<div class="origin"><button type="button" class="origin__btn" aria-expanded="false"><img src="${flagSrc(o.country)}" alt="" width="20" height="14"><span class="origin__main">${esc(ctx.ui.origin_of || "Product of")} <b>${esc(name)}</b></span>${more.length ? `<span class="origin__more">${more.map((x) => "· " + esc(x)).join(" ")}</span>` : ""}</button></div>`;
+  return `<div class="origin"><button type="button" class="origin__btn" aria-expanded="false"><img src="${flagSrc(o.country)}" alt="" width="20" height="14"><span class="origin__main">${esc(ctx.ui.origin_of || "Product of")} <b>${esc(name)}</b></span>${more.length ? `<span class="origin__more">${more.map((x) => `<span class="origin__line">${esc(x)}</span>`).join("")}</span>` : ""}</button></div>`;
 }
 const personOf = (ctx) => {
   const c = (ctx.site && ctx.site.contact) || {};

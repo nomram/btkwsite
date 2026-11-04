@@ -1416,6 +1416,7 @@
   [].forEach.call(document.querySelectorAll(".origin__btn"), function (b) {
     b.addEventListener("click", function () { var o = !b.classList.contains("is-open"); b.classList.toggle("is-open", o); b.setAttribute("aria-expanded", String(o)); });
     document.addEventListener("click", function (e) { if (!b.contains(e.target)) { b.classList.remove("is-open"); b.setAttribute("aria-expanded", "false"); } });
+    document.addEventListener("keydown", function (e) { if (e.key === "Escape" && b.classList.contains("is-open")) { b.classList.remove("is-open"); b.setAttribute("aria-expanded", "false"); } });
   });
 
   // ---------- pictures further down: fetched top to bottom once the page has settled ----------

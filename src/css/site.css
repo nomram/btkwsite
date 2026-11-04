@@ -1176,15 +1176,19 @@ h2[id], h3[id] { scroll-margin-top: 5rem; }
 .sizesel__seg button:focus-visible { outline: 2px solid var(--primary); outline-offset: 2px; }
 td.is-sized { font-weight: 700; }
 /* "Product of ...": quiet chip opposite the breadcrumbs, opens on hover / focus / tap */
-.origin { flex: none; }
+/* "Product of ...": the extra lines open as a small card under the label. They float above the page (position: absolute), so opening or
+   closing never moves anything: no jumping layout on a phone, and no hover that flips on and off when the row re-wraps. */
+.origin { flex: none; position: relative; }
 .origin__btn { display: inline-flex; align-items: center; gap: .45rem; padding: .22rem .75rem .22rem .3rem; border: 1px solid var(--line); border-radius: 999px; background: #fff; color: var(--muted); font: inherit; font-size: .78rem; line-height: 1.3; cursor: pointer; opacity: .6; transition: opacity .2s ease, border-color .2s ease, color .2s ease; }
 .origin__btn img { width: 20px; height: 20px; object-fit: cover; border-radius: 50%; flex: none; box-shadow: 0 0 0 1px rgba(0, 0, 0, .12); }
+.origin__main { white-space: nowrap; }
 .origin__main b { font-weight: 700; color: var(--text); }
-.origin__more { display: inline-block; max-width: 0; overflow: hidden; white-space: nowrap; opacity: 0; transition: max-width .4s ease, opacity .25s ease; }
+.origin__more { position: absolute; z-index: 30; top: calc(100% + .45rem); right: 0; display: flex; flex-direction: column; gap: .2rem; width: max-content; max-width: min(21rem, calc(100vw - 2rem)); padding: .6rem .85rem; border: 1px solid var(--line); border-radius: 12px; background: #fff; box-shadow: 0 10px 28px rgba(35, 31, 32, .14); color: var(--text); font-size: .78rem; font-weight: 400; line-height: 1.45; text-align: left; white-space: normal; opacity: 0; visibility: hidden; transform: translateY(-4px); pointer-events: none; transition: opacity .16s ease, transform .16s ease, visibility 0s linear .16s; }
+.origin__more::before { content: ""; position: absolute; left: 0; right: 0; top: -.55rem; height: .55rem; } /* bridges the gap, so the pointer can travel from the label to the card */
 .origin__btn:focus-visible, .origin__btn.is-open { opacity: 1; border-color: var(--muted); outline-offset: 2px; }
-.origin__btn.is-open .origin__more { max-width: 36rem; opacity: 1; }
-@media (hover: hover) { .origin__btn:hover { opacity: 1; border-color: var(--muted); color: var(--text); } .origin__btn:hover .origin__more { max-width: 36rem; opacity: 1; } }
-@media (max-width: 700px) { .crumbs:has(.origin) { flex-wrap: wrap; gap: .5rem 1rem; } .origin { max-width: 100%; } .origin__btn { max-width: 100%; text-align: left; } .origin__btn.is-open { border-radius: 14px; flex-wrap: wrap; } .origin__btn.is-open .origin__more { white-space: normal; max-width: 100%; flex-basis: 100%; padding: 0 0 .1rem 1.9rem; } }
+.origin__btn.is-open .origin__more, .origin__btn:focus-visible .origin__more { opacity: 1; visibility: visible; transform: none; pointer-events: auto; transition-delay: 0s; }
+@media (hover: hover) { .origin__btn:hover { opacity: 1; border-color: var(--muted); color: var(--text); } .origin__btn:hover .origin__more { opacity: 1; visibility: visible; transform: none; pointer-events: auto; transition-delay: 0s; } }
+@media (max-width: 700px) { .crumbs:has(.origin) { flex-wrap: wrap; gap: .5rem 1rem; } .origin { max-width: 100%; } .origin__more { right: auto; left: 0; } }
 @media (prefers-reduced-motion: reduce) { .origin__more, .origin__btn { transition: none; } }
 /* brand logo top right with "Product of ..." as a quiet caption line under it (no pill): flag, grey text, a little more on hover */
 .crumbs__brand { flex: none; display: flex; flex-direction: column; align-items: flex-end; gap: .3rem; }
@@ -1192,7 +1196,8 @@ td.is-sized { font-weight: 700; }
 .crumbs__brand .origin__btn img { width: 14px; height: 14px; }
 .crumbs__brand .origin__btn:focus-visible, .crumbs__brand .origin__btn.is-open { border-color: transparent; }
 @media (hover: hover) { .crumbs__brand .origin__btn:hover { border-color: transparent; } }
-@media (max-width: 700px) { .crumbs__brand { align-items: flex-start; } .crumbs__brand .origin__btn.is-open { border-radius: 0; } .crumbs__brand .origin__btn.is-open .origin__more { padding-left: 1.4rem; } }/* the round flag shows the middle of a 3:2 flag: Nordic crosses sit toward the hoist, the US flag shows its canton */
+@media (max-width: 700px) { .crumbs__brand { align-items: flex-start; } }
+/* the round flag shows the middle of a 3:2 flag: Nordic crosses sit toward the hoist, the US flag shows its canton */
 .origin__btn img[src$="/se.svg"], .origin__btn img[src$="/fi.svg"] { object-position: 10% 50%; }
 .origin__btn img[src$="/no.svg"] { object-position: 0% 50%; }
 .origin__btn img[src$="/us.svg"] { object-position: 4% 50%; }
