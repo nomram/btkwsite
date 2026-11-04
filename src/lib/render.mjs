@@ -87,8 +87,8 @@ const ICON = {
   prev: '<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>',
   next: '<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>',
   hand: '<svg viewBox="0 0 24 24" width="30" height="30" fill="#fff" stroke="#231f20" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M18 11a2 2 0 1 1 4 0v3a8 8 0 0 1-8 8h-2c-2.8 0-4.5-.86-5.99-2.34l-3.6-3.6a2 2 0 0 1 2.83-2.82L7 15V4a2 2 0 1 1 4 0v6"/><path d="M14 10V9a2 2 0 0 0-2-2a2 2 0 0 0-2 2"/><path d="M18 11v-1a2 2 0 0 0-2-2a2 2 0 0 0-2 2"/></svg>',
+  van: '<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 16.5V7.5h11v9M13.5 10.5h4.2l3.3 3.4v2.6M2.5 16.5h2M8 16.5h8"/><circle cx="6" cy="17" r="1.8"/><circle cx="17.5" cy="17" r="1.8"/></svg>',
   warehouse: '<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10.5 12 4l9 6.5V20H3z"/><path d="M7 20v-7.5h10V20M7 15.2h10M7 17.6h10"/></svg>',
-  wrench: '<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.6 6.2a4.2 4.2 0 0 0-5.3 5.4L3.8 17.1a1.9 1.9 0 0 0 2.7 2.7l5.5-5.5a4.2 4.2 0 0 0 5.4-5.3l-2.6 2.6-2.6-.7-.7-2.6z"/></svg>',
   info: '<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></svg>',
   external: '<svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>',
   arrow: '<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14m-6-6l6 6-6 6"/></svg>',
@@ -265,26 +265,34 @@ function renderLogo150(ctx, b) {
     `<span class="logo150__shine" aria-hidden="true"></span></span></figure>`;
 }
 
-// A small map of places (warehouses, the mobile workshop). The page holds only a plain frame with the pins and a list; the map pictures come from
-// OpenStreetMap after a click (like the videos), and site.js draws the pins and the little card that opens on a click.
-// Block: center [lat, lon], zoom (the start zoom), zoomIn / zoomOut (how many steps are allowed from there), items [{ lat, lon, kind: "warehouse" | "workshop", title }].
+// A small map of Europe drawn by ourselves (src/data/europe-map.mjs): country shapes, the biggest cities and the pins of the block. No map service is
+// used. The page holds the whole picture as one SVG (it also works without scripts); site.js adds moving, zooming and the card that opens on a pin.
+// Block: center [lat, lon], span (how many degrees of longitude are in view at the start, default 28), zoomIn / zoomOut (steps from there, default 2 / 1),
+// items [{ lat, lon, kind: "warehouse" | "workshop", title }].
+const MAP_WAREHOUSE = '<ellipse cx="0" cy="1" rx="9" ry="2.6" fill="rgba(35,31,32,.22)"/><path d="M0 0 L-7.5 -14 H7.5 Z" fill="#f37d03"/><circle cx="0" cy="-31" r="19.5" fill="#f37d03" stroke="#fff" stroke-width="3"/><path d="M-11.5 -29.5 L0 -40 L11.5 -29.5 V-19 H-11.5 Z" fill="#fff"/><rect x="-6.5" y="-27" width="13" height="8" rx="1" fill="#f37d03"/><path d="M-6.5 -24.3 H6.5 M-6.5 -21.7 H6.5" stroke="#fff" stroke-width="1"/>';
+const MAP_VAN = '<ellipse cx="0" cy="1" rx="38" ry="3.2" fill="rgba(35,31,32,.24)"/><path d="M-36 -32 Q-36 -38 -30 -38 H26 Q30.5 -38 33 -32.5 L37 -23 V-11 Q37 -9 34 -9 H-33 Q-36 -9 -36 -11 Z" fill="#f37d03"/><path d="M-36 -16 H37 V-11 Q37 -9 34 -9 H-33 Q-36 -9 -36 -11 Z" fill="#d96a00"/><path d="M12.8 -37 V-10" stroke="#c75f00" stroke-width="1"/><path d="M14.5 -34.5 H25.5 Q28 -34.5 29.5 -31 L33 -23.5 H14.5 Z" fill="#231f20"/><circle cx="23" cy="-28.2" r="4.6" fill="#ffd3a8"/><path d="M18 -29.3 Q23 -37.8 28 -29.3 Z" fill="#ffc400"/><rect x="17" y="-29.6" width="12" height="1.6" rx=".8" fill="#ffc400"/><circle cx="21.3" cy="-28" r=".75" fill="#231f20"/><circle cx="24.7" cy="-28" r=".75" fill="#231f20"/><path d="M20.5 -26 Q23 -23.6 25.5 -26" fill="none" stroke="#231f20" stroke-width="1.15" stroke-linecap="round"/><g transform="translate(-9 -27) rotate(-32) scale(.8)"><rect x="-13" y="-2.2" width="26" height="4.4" rx="2.2" fill="#fff"/><circle cx="-13" cy="0" r="6" fill="#fff"/><rect x="-21" y="-2.4" width="9" height="4.8" fill="#f37d03"/><circle cx="13" cy="0" r="4.2" fill="#fff"/><circle cx="13" cy="0" r="1.6" fill="#f37d03"/></g><circle cx="-21" cy="-6.5" r="6.5" fill="#231f20"/><circle cx="-21" cy="-6.5" r="2.5" fill="#cfc8c0"/><circle cx="23" cy="-6.5" r="6.5" fill="#231f20"/><circle cx="23" cy="-6.5" r="2.5" fill="#cfc8c0"/><rect x="34.2" y="-21" width="3" height="3.8" rx="1" fill="#ffe38a"/><rect x="-37.2" y="-21" width="1.9" height="4.2" fill="#d3262c"/>';
 function renderMap(ctx, b) {
   const items = (b.items || []).filter((p) => p && Number.isFinite(Number(p.lat)) && Number.isFinite(Number(p.lon)));
   if (!items.length) return "";
+  const geo = ctx.mapGeo;
+  const list = items.map((p) => `<li class="map__item map__item--${p.kind === "workshop" ? "w" : "l"}"><span class="map__ico">${p.kind === "workshop" ? ICON.van : ICON.warehouse}</span>${esc(p.title || "")}</li>`).join("");
+  if (!geo) return `<figure class="map map--plain"><ul class="map__list">${list}</ul></figure>`; // the CMS preview has no map data
   const num = (v, d) => (Number.isFinite(Number(v)) ? Number(v) : d);
-  const cfg = {
-    c: Array.isArray(b.center) && b.center.length === 2 ? [num(b.center[0], 58.6), num(b.center[1], 14.3)] : [58.6, 14.3],
-    z: Math.round(num(b.zoom, 6)), zi: Math.round(num(b.zoomIn, 2)), zo: Math.round(num(b.zoomOut, 1)),
-    ...(Array.isArray(b.bounds) && b.bounds.length === 4 ? { b: b.bounds.map(Number) } : {}),
-    p: items.map((p) => ({ lat: Number(p.lat), lon: Number(p.lon), k: p.kind === "workshop" ? "w" : "l", t: p.title || "" })),
-  };
+  const { shapes, project } = geo;
+  const span = num(b.span, 28) * 10;
+  const ctr = Array.isArray(b.center) && b.center.length === 2 ? project(num(b.center[1], 14.7), num(b.center[0], 58)) : project(14.7, 58);
+  const cfg = { c: ctr.map((v) => Math.round(v * 10) / 10), w: span, zi: Math.round(num(b.zoomIn, 2)), zo: Math.round(num(b.zoomOut, 1)), f: shapes.frame };
+  const vw = span, vh = Math.round((span * 3) / 4 * 10) / 10;
+  const vb = [Math.round((ctr[0] - vw / 2) * 10) / 10, Math.round((ctr[1] - vh / 2) * 10) / 10, vw, vh].join(" ");
+  const at = (x, y) => `translate(${x} ${y})`;
+  const land = shapes.countries.map((c) => `<path class="map__c${c.home ? " is-home" : ""}" d="${c.d}"/>`).join("");
+  const cities = shapes.cities.map((c) => { const left = c.name === "København"; return `<g class="map__city" data-s="${c.size}" transform="${at(c.x, c.y)}"><g class="map__fig"><circle r="2.6"/><text x="${left ? -5 : 5}" y="3.6"${left ? ' text-anchor="end"' : ""}>${esc(c.name)}</text></g></g>`; }).join("");
+  const pins = items.map((p, i) => { const q = project(num(p.lon, 0), num(p.lat, 0)); const van = p.kind === "workshop"; return `<g class="map__pin map__pin--${van ? "w" : "l"}" transform="${at(Math.round(q[0] * 10) / 10, Math.round(q[1] * 10) / 10)}" data-i="${i}" data-t="${esc(p.title || "")}" tabindex="0" role="button" aria-label="${esc(p.title || "")}"><g class="map__fig"><rect class="map__hit" x="${van ? -40 : -22}" y="${van ? -42 : -52}" width="${van ? 80 : 44}" height="${van ? 46 : 56}" rx="8"/>${van ? MAP_VAN : MAP_WAREHOUSE}</g></g>`; }).join("");
   const ui = ctx.ui;
-  const list = items.map((p) => `<li class="map__item map__item--${p.kind === "workshop" ? "w" : "l"}"><span class="map__ico">${p.kind === "workshop" ? ICON.wrench : ICON.warehouse}</span>${esc(p.title || "")}</li>`).join("");
-  return `<figure class="map" data-map="${esc(JSON.stringify(cfg))}" role="group" aria-label="${esc(b.alt || "")}">` +
-    `<div class="map__view"><div class="map__tiles" aria-hidden="true"></div><div class="map__pins"></div><div class="map__pop" role="status" hidden></div>` +
-    `<div class="map__zoom" hidden><button type="button" class="map__zin" aria-label="${esc(ui.map_zoom_in || "Zooma in")}">+</button><button type="button" class="map__zout" aria-label="${esc(ui.map_zoom_out || "Zooma ut")}">\u2212</button></div>` +
-    `<a class="map__attr" href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener" hidden>${esc(ui.map_attr || "© OpenStreetMap contributors")}</a>` +
-    `<div class="map__ask"><button type="button" class="map__start btn">${esc(ui.map_show || "Visa kartan")}</button><span class="map__notice">${esc(ui.map_notice || "")}</span></div></div>` +
+  return `<figure class="map" data-map="${esc(JSON.stringify(cfg))}" data-lvl="0"><div class="map__view">` +
+    `<svg class="map__svg" viewBox="${vb}" role="img" aria-label="${esc(b.alt || "")}" xmlns="http://www.w3.org/2000/svg"><rect class="map__sea" x="${shapes.frame[0] - 2000}" y="${shapes.frame[1] - 2000}" width="${shapes.frame[2] + 4000}" height="${shapes.frame[3] + 4000}"/><g class="map__land">${land}</g><g class="map__cities">${cities}</g><g class="map__pins">${pins}</g></svg>` +
+    `<div class="map__pop" role="status" hidden></div>` +
+    `<div class="map__zoom"><button type="button" class="map__zin" aria-label="${esc(ui.map_zoom_in || "Zooma in")}">+</button><button type="button" class="map__zout" aria-label="${esc(ui.map_zoom_out || "Zooma ut")}">\u2212</button></div></div>` +
     `<ul class="map__list">${list}</ul></figure>`;
 }
 

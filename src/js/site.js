@@ -1412,113 +1412,78 @@
     });
   })();
 
-  // ---------- map of places: pins at once, the OpenStreetMap pictures after a click; drag to move, + / - and double click to zoom ----------
+  // ---------- map of Europe (our own drawing, an SVG in the page): drag to move, + / - and double click to zoom, click a pin for its card ----------
   [].forEach.call(document.querySelectorAll(".map[data-map]"), function (box) {
     var cfg; try { cfg = JSON.parse(box.getAttribute("data-map")); } catch (e) { return; }
-    var view = box.querySelector(".map__view"), tiles = box.querySelector(".map__tiles"), pinsEl = box.querySelector(".map__pins");
-    var pop = box.querySelector(".map__pop"), zoomBox = box.querySelector(".map__zoom"), zin = box.querySelector(".map__zin"), zout = box.querySelector(".map__zout");
-    var attr = box.querySelector(".map__attr"), start = box.querySelector(".map__start");
-    var Z0 = cfg.z, ZMIN = Z0 - cfg.zo, ZMAX = Z0 + cfg.zi, z = Z0, loaded = false, W = 0, H = 0, cx = 0, cy = 0, open = -1, cache = {};
-    var B = cfg.b || [54.3, 8.5, 61.6, 20.5]; // south, west, north, east: keeps the map over Scandinavia
-    function px(lat, lon, zz) { var sz = 256 * Math.pow(2, zz), r = lat * Math.PI / 180; return [(lon + 180) / 360 * sz, (1 - Math.log(Math.tan(r) + 1 / Math.cos(r)) / Math.PI) / 2 * sz]; }
-    function inv(x, y, zz) { var sz = 256 * Math.pow(2, zz), n = Math.PI - 2 * Math.PI * y / sz; return [180 / Math.PI * Math.atan(0.5 * (Math.exp(n) - Math.exp(-n))), x / sz * 360 - 180]; }
-    function clamp() {
-      var a = px(B[2], B[1], z), b = px(B[0], B[3], z);
-      var x0 = a[0] + W / 2, x1 = b[0] - W / 2, y0 = a[1] + H / 2, y1 = b[1] - H / 2;
-      cx = x0 > x1 ? (a[0] + b[0]) / 2 : Math.min(x1, Math.max(x0, cx));
-      cy = y0 > y1 ? (a[1] + b[1]) / 2 : Math.min(y1, Math.max(y0, cy));
+    var view = box.querySelector(".map__view"), svg = box.querySelector(".map__svg"), pop = box.querySelector(".map__pop");
+    var zin = box.querySelector(".map__zin"), zout = box.querySelector(".map__zout"), pins = [].slice.call(box.querySelectorAll(".map__pin"));
+    var STEP = 1.8, F = cfg.f, lvl = 0, k = 1, W = 0, H = 0, cx = cfg.c[0], cy = cfg.c[1], open = null, raf = 0;
+    var still = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
+    function kAt(l) { return (W / cfg.w) * Math.pow(STEP, l); }
+    function clampC(x, y, kk) {
+      var vw = W / kk, vh = H / kk;
+      return [vw >= F[2] ? F[0] + F[2] / 2 : Math.min(F[0] + F[2] - vw / 2, Math.max(F[0] + vw / 2, x)), vh >= F[3] ? F[1] + F[3] / 2 : Math.min(F[1] + F[3] - vh / 2, Math.max(F[1] + vh / 2, y))];
     }
-    // the pins: one button each, icon copied from the list under the map
-    var icons = box.querySelectorAll(".map__item .map__ico");
-    var pins = cfg.p.map(function (p, i) {
-      var b = document.createElement("button");
-      b.type = "button"; b.className = "map__pin map__pin--" + p.k; b.setAttribute("aria-label", p.t);
-      b.innerHTML = icons[i] ? icons[i].innerHTML : "";
-      b.addEventListener("click", function (e) { e.stopPropagation(); showPop(open === i ? -1 : i); });
-      pinsEl.appendChild(b);
-      return b;
-    });
-    function showPop(i) {
-      open = i;
-      pins.forEach(function (b, k) { b.classList.toggle("is-open", k === i); });
-      if (i < 0) { pop.hidden = true; return; }
-      pop.textContent = cfg.p[i].t; pop.hidden = false; placePop();
+    function paint() {
+      var vw = W / k, vh = H / k;
+      svg.setAttribute("viewBox", (cx - vw / 2).toFixed(2) + " " + (cy - vh / 2).toFixed(2) + " " + vw.toFixed(2) + " " + vh.toFixed(2));
+      svg.style.setProperty("--ps", (1 / k).toFixed(5));
+      placePop();
+    }
+    function showPop(p) {
+      pins.forEach(function (q) { q.classList.toggle("is-open", q === p); });
+      open = p;
+      if (!p) { pop.hidden = true; return; }
+      pop.textContent = p.getAttribute("data-t"); pop.hidden = false; placePop();
     }
     function placePop() {
-      if (open < 0) return;
-      var q = px(cfg.p[open].lat, cfg.p[open].lon, z), x = q[0] - (cx - W / 2), y = q[1] - (cy - H / 2);
-      var w = pop.offsetWidth, h = pop.offsetHeight;
-      var left = Math.min(W - w - 8, Math.max(8, x - w / 2)), top = y - 58 - h;
+      if (!open) return;
+      var tr = open.getAttribute("transform"), m = /translate\(([-\d.]+)[ ,]+([-\d.]+)\)/.exec(tr || ""); if (!m) return;
+      var x = (parseFloat(m[1]) - (cx - W / (2 * k))) * k, y = (parseFloat(m[2]) - (cy - H / (2 * k))) * k, w = pop.offsetWidth, h = pop.offsetHeight;
+      var up = open.classList.contains("map__pin--w") ? 42 : 48;
+      var left = Math.min(W - w - 8, Math.max(8, x - w / 2)), top = y - up - h;
       if (top < 8) top = y + 12;
       pop.style.transform = "translate(" + Math.round(left) + "px," + Math.round(top) + "px)";
     }
-    function render() {
-      var ox = cx - W / 2, oy = cy - H / 2;
-      if (loaded) {
-        var n = Math.pow(2, z), need = {};
-        for (var ty = Math.floor(oy / 256); ty <= Math.floor((oy + H) / 256); ty++) for (var tx = Math.floor(ox / 256); tx <= Math.floor((ox + W) / 256); tx++) {
-          if (ty < 0 || ty >= n) continue;
-          var wx = ((tx % n) + n) % n, key = z + "/" + tx + "/" + ty, im = cache[key];
-          need[key] = 1;
-          if (!im) {
-            im = new Image(); im.className = "map__tile"; im.alt = ""; im.width = 256; im.height = 256; im.decoding = "async"; im.draggable = false;
-            im.onload = function () { this.classList.add("is-in"); };
-            im.src = "https://tile.openstreetmap.org/" + z + "/" + wx + "/" + ty + ".png";
-            tiles.appendChild(im); cache[key] = im;
-          }
-          im.style.transform = "translate(" + (tx * 256 - ox) + "px," + (ty * 256 - oy) + "px)";
-        }
-        for (var k in cache) if (!need[k]) { cache[k].remove(); delete cache[k]; }
-      }
-      cfg.p.forEach(function (p, i) { var q = px(p.lat, p.lon, z); pins[i].style.transform = "translate(" + (q[0] - ox).toFixed(1) + "px," + (q[1] - oy).toFixed(1) + "px)"; });
-      placePop();
-      view.classList.toggle("is-zoomed", z > Z0);
-      zin.disabled = z >= ZMAX; zout.disabled = z <= ZMIN;
-    }
-    function zoomTo(nz, mx, my) {
-      nz = Math.max(ZMIN, Math.min(ZMAX, nz)); if (nz === z) return;
+    function setLevel(l) { box.setAttribute("data-lvl", String(l)); view.classList.toggle("is-zoomed", l > 0); zin.disabled = l >= cfg.zi; zout.disabled = l <= -cfg.zo; }
+    function go(l, mx, my) {
+      l = Math.max(-cfg.zo, Math.min(cfg.zi, l)); if (l === lvl) return;
       mx = mx == null ? W / 2 : mx; my = my == null ? H / 2 : my;
-      var ll = inv(cx - W / 2 + mx, cy - H / 2 + my, z);
-      z = nz;
-      var p = px(ll[0], ll[1], z); cx = p[0] - mx + W / 2; cy = p[1] - my + H / 2;
-      clamp(); render();
+      var wx = cx - W / (2 * k) + mx / k, wy = cy - H / (2 * k) + my / k, k1 = kAt(l);
+      var c1 = clampC(wx - mx / k1 + W / (2 * k1), wy - my / k1 + H / (2 * k1), k1);
+      lvl = l; setLevel(l);
+      if (still) { k = k1; cx = c1[0]; cy = c1[1]; paint(); return; }
+      var k0 = k, x0 = cx, y0 = cy, t0 = performance.now(), D = 320;
+      cancelAnimationFrame(raf);
+      (function step(t) {
+        var u = Math.min(1, (t - t0) / D), e = 1 - Math.pow(1 - u, 3);
+        k = k0 + (k1 - k0) * e; cx = x0 + (c1[0] - x0) * e; cy = y0 + (c1[1] - y0) * e; paint();
+        if (u < 1) raf = requestAnimationFrame(step);
+      })(t0);
     }
-    // on a small screen the pins may not fit at the start zoom: begin one step further out (if that is allowed)
-    function fits(zz) {
-      var lo = [1e9, 1e9], hi = [-1e9, -1e9];
-      cfg.p.forEach(function (p) { var q = px(p.lat, p.lon, zz); lo = [Math.min(lo[0], q[0]), Math.min(lo[1], q[1])]; hi = [Math.max(hi[0], q[0]), Math.max(hi[1], q[1])]; });
-      return hi[0] - lo[0] + 90 <= W && hi[1] - lo[1] + 85 <= H;
-    }
-    var placed = false;
     function measure() {
-      var keep = W ? inv(cx, cy, z) : cfg.c;
-      W = view.clientWidth; H = view.clientHeight;
-      if (!placed && W) { placed = true; if (!fits(z) && z > ZMIN) z -= 1; }
-      var p = px(keep[0], keep[1], z); cx = p[0]; cy = p[1];
-      clamp(); render();
+      var r = view.getBoundingClientRect(); if (!r.width) return;
+      W = r.width; H = r.height; k = kAt(lvl);
+      var c = clampC(cx, cy, k); cx = c[0]; cy = c[1]; paint();
     }
-    start.addEventListener("click", function () {
-      loaded = true; view.classList.add("is-live"); zoomBox.hidden = false; attr.hidden = false; render();
-    });
-    zin.addEventListener("click", function (e) { e.stopPropagation(); zoomTo(z + 1); });
-    zout.addEventListener("click", function (e) { e.stopPropagation(); zoomTo(z - 1); });
+    zin.addEventListener("click", function (e) { e.stopPropagation(); go(lvl + 1); });
+    zout.addEventListener("click", function (e) { e.stopPropagation(); go(lvl - 1); });
+    view.addEventListener("dblclick", function (e) { if (e.target.closest(".map__pin, .map__zoom")) return; var r = view.getBoundingClientRect(); go(lvl + 1, e.clientX - r.left, e.clientY - r.top); });
     var drag = null, dragged = false;
-    view.addEventListener("pointerdown", function (e) {
-      if (!loaded || e.button > 0 || e.target.closest(".map__pin, .map__zoom, .map__attr")) return;
-      drag = { x: e.clientX, y: e.clientY, cx: cx, cy: cy, id: e.pointerId, moved: false };
-    });
+    view.addEventListener("pointerdown", function (e) { if (e.button > 0 || e.target.closest(".map__pin, .map__zoom")) return; drag = { x: e.clientX, y: e.clientY, cx: cx, cy: cy, id: e.pointerId, moved: false }; });
     view.addEventListener("pointermove", function (e) {
       if (!drag || e.pointerId !== drag.id) return;
       var dx = e.clientX - drag.x, dy = e.clientY - drag.y;
       if (!drag.moved) { if (Math.abs(dx) + Math.abs(dy) < 5) return; drag.moved = true; try { view.setPointerCapture(e.pointerId); } catch (x) { /* ignore */ } view.classList.add("is-drag"); }
-      cx = drag.cx - dx; cy = drag.cy - dy; clamp(); render();
+      var c = clampC(drag.cx - dx / k, drag.cy - dy / k, k); cx = c[0]; cy = c[1]; paint();
     });
     function endDrag() { if (drag && drag.moved) { dragged = true; setTimeout(function () { dragged = false; }, 0); } drag = null; view.classList.remove("is-drag"); }
     view.addEventListener("pointerup", endDrag); view.addEventListener("pointercancel", endDrag);
-    view.addEventListener("click", function () { if (!dragged) showPop(-1); });
-    view.addEventListener("dblclick", function (e) { if (!loaded || e.target.closest(".map__pin, .map__zoom")) return; var r = view.getBoundingClientRect(); zoomTo(z + 1, e.clientX - r.left, e.clientY - r.top); });
-    document.addEventListener("keydown", function (e) { if (e.key === "Escape" && open >= 0) showPop(-1); });
-    if ("ResizeObserver" in window) new ResizeObserver(function () { if (view.clientWidth !== W || view.clientHeight !== H) measure(); }).observe(view); else window.addEventListener("resize", measure);
+    view.addEventListener("click", function (e) { if (dragged) return; var p = e.target.closest && e.target.closest(".map__pin"); showPop(p && p !== open ? p : null); });
+    pins.forEach(function (p) { p.addEventListener("keydown", function (e) { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); showPop(open === p ? null : p); } }); });
+    document.addEventListener("keydown", function (e) { if (e.key === "Escape" && open) showPop(null); });
+    setLevel(0);
+    if ("ResizeObserver" in window) new ResizeObserver(measure).observe(view); else window.addEventListener("resize", measure);
     measure();
   });
 

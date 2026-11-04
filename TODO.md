@@ -32,8 +32,10 @@ Once the new catalogue is approved:
 
 ## Map on the About page (Lager och mobil verkstad)
 
-- [ ] Privacy policy: the map pictures come from OpenStreetMap (tile.openstreetmap.org) after the visitor clicks "Visa kartan"; the visitor's IP address reaches OpenStreetMap then (like YouTube for the videos). The policy text (all languages) does not mention it yet.
+The map is our own drawing (`src/data/europe-map.mjs`: simplified country shapes, the biggest cities), shown as one SVG; no map service, nothing is loaded from another site (so nothing to add to the privacy policy).
+
 - [ ] Exact places: the pins are plain coordinates in `content/pages/om-oss.json` (block `map`, items `lat` / `lon`, `kind`: `warehouse` or `workshop`). They are city centres for now. Put in the real addresses' coordinates when they are known.
 - [ ] Norway warehouse: placed at Halden (59.12, 11.39), just across the border from Strömstad. Move it if the real place is elsewhere (and change the title if it should name a town).
-- [ ] The mobile workshop pin sits a little north of Göteborg toward Stockholm (58.2, 12.5): move it when you know where the van is usually based.
-- The zoom range is the start zoom (6) out one step and in two steps; `zoom`, `zoomIn`, `zoomOut` and `bounds` [south, west, north, east] are fields of the block when a bigger map is wanted later.
+- [ ] The van (mobile workshop) sits a little north-east of Göteborg (58.3, 12.8): move it when you know where it is usually based.
+- [ ] The country shapes are hand-drawn and rough (the Balkans and Turkey most of all). If a more exact map is wanted later, replace the shapes in `src/data/europe-map.mjs` (for example with Natural Earth, public domain, simplified to an SVG path); the page code does not change.
+- The view is the start span (`span`, degrees of longitude, 40), out one step and in two steps (`zoomOut`, `zoomIn`). Cities of size 2 show from the first zoom in.

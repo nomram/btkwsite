@@ -123,6 +123,7 @@ function problems(sv, tr) {
 // "Designed and built in ..." line of the brand pages (page.origin.more), in the new languages. A colon keeps the place name in its own form.
 const ORIGIN_MORE = {
   haeny: ["Sukurta ir pagaminta: Jona", "Izstrādāts un ražots: Jona", "Disainitud ja ehitatud: Jona", "Разработано и изготовлено: Jona"],
+  ahlm: ["Įkūrė broliai Stigas ir Gunderis Ahlmai, gaminama Skurupe, Skonėje", "Dibināja brāļi Stigs un Gunders Ahlmi, ražo Skurupā, Skonē", "Asutasid vennad Stig ja Gunder Ahlm, toodetud Skurupis, Skånes", "Основана братьями Стигом и Гундером Алм, производство в Скуруп, Сконе"],
   tei: ["Sukurta ir pagaminta: Montrose, Kolorado", "Izstrādāts un ražots: Montrose, Kolorādo", "Disainitud ja ehitatud: Montrose, Colorado", "Разработано и изготовлено: Монтроз, Колорадо"]
 };
 

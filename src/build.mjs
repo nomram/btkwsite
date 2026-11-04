@@ -11,6 +11,7 @@ import { renderDocument, renderNotFound, esc, flatBlocks } from "./lib/render.mj
 import { applyBasePath } from "./lib/apply-base.mjs";
 import { isHidden, visibleAncestor } from "./lib/visibility.mjs";
 import { videoIds, ensureThumbs } from "./lib/yt-thumbs.mjs";
+import { mapShapes, project as mapProject } from "./data/europe-map.mjs";
 import { searchEntry } from "./lib/search-index.mjs";
 
 const ROOT = path.resolve(import.meta.dirname, "..");
@@ -325,6 +326,7 @@ function makeCtx(lang) {
     fileSize: (href) => fileSizes.get(href) || null,
     docInfo: (href) => docInfoMap.get(href) || null,
     incomingRelated: (p) => incomingRelated.get(p) || [],
+    mapGeo: { shapes: mapShapes(), project: mapProject },
     ytThumb: (id) => (ytThumbs.has(id) ? `/assets/yt/${id}.webp` : null),
     searchIndexUrl: lang === defaultLang ? "/search-index.json" : `/${lang}/search-index.json`
   };

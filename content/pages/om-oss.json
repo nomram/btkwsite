@@ -136,10 +136,9 @@
           "tag": "lager",
           "alt": "Karta över lagren i Stockholm, Göteborg, Malmö och Norge samt den mobila verkstaden",
           "center": [
-            57.5,
-            14.7
+            58.4,
+            14
           ],
-          "zoom": 6,
           "zoomIn": 2,
           "zoomOut": 1,
           "items": [
@@ -168,12 +167,13 @@
               "title": "Lager i Norge"
             },
             {
-              "lat": 58.2,
-              "lon": 12.5,
+              "lat": 58.3,
+              "lon": 12.8,
               "kind": "workshop",
               "title": "Mobil verkstad - även Norge"
             }
-          ]
+          ],
+          "span": 40
         },
         {
           "type": "image",
@@ -316,10 +316,9 @@
           "tag": "lager",
           "alt": "Map of the warehouses in Stockholm, Gothenburg, Malmö and Norway and the mobile workshop",
           "center": [
-            57.5,
-            14.7
+            58.4,
+            14
           ],
-          "zoom": 6,
           "zoomIn": 2,
           "zoomOut": 1,
           "items": [
@@ -348,12 +347,13 @@
               "title": "Warehouse in Norway"
             },
             {
-              "lat": 58.2,
-              "lon": 12.5,
+              "lat": 58.3,
+              "lon": 12.8,
               "kind": "workshop",
               "title": "Mobile workshop - also Norway"
             }
-          ]
+          ],
+          "span": 40
         },
         {
           "type": "image",
@@ -497,10 +497,9 @@
           "tag": "lager",
           "alt": "Mapa de los almacenes en Estocolmo, Gotemburgo, Malmö y Noruega y del taller móvil",
           "center": [
-            57.5,
-            14.7
+            58.4,
+            14
           ],
-          "zoom": 6,
           "zoomIn": 2,
           "zoomOut": 1,
           "items": [
@@ -529,12 +528,13 @@
               "title": "Almacén en Noruega"
             },
             {
-              "lat": 58.2,
-              "lon": 12.5,
+              "lat": 58.3,
+              "lon": 12.8,
               "kind": "workshop",
               "title": "Taller móvil - también Noruega"
             }
-          ]
+          ],
+          "span": 40
         },
         {
           "type": "image",
@@ -679,10 +679,9 @@
           "tag": "lager",
           "alt": "Kart over lagrene i Stockholm, Göteborg, Malmö og Norge og det mobile verkstedet",
           "center": [
-            57.5,
-            14.7
+            58.4,
+            14
           ],
-          "zoom": 6,
           "zoomIn": 2,
           "zoomOut": 1,
           "items": [
@@ -711,12 +710,13 @@
               "title": "Lager i Norge"
             },
             {
-              "lat": 58.2,
-              "lon": 12.5,
+              "lat": 58.3,
+              "lon": 12.8,
               "kind": "workshop",
               "title": "Mobilt verksted - også Norge"
             }
-          ]
+          ],
+          "span": 40
         },
         {
           "type": "image",
@@ -860,10 +860,9 @@
           "tag": "lager",
           "alt": "Sandėlių Stokholme, Geteborge, Malmėje ir Norvegijoje bei mobilių dirbtuvių žemėlapis",
           "center": [
-            57.5,
-            14.7
+            58.4,
+            14
           ],
-          "zoom": 6,
           "zoomIn": 2,
           "zoomOut": 1,
           "items": [
@@ -892,12 +891,13 @@
               "title": "Sandėlis Norvegijoje"
             },
             {
-              "lat": 58.2,
-              "lon": 12.5,
+              "lat": 58.3,
+              "lon": 12.8,
               "kind": "workshop",
               "title": "Mobilios dirbtuvės - taip pat Norvegija"
             }
-          ]
+          ],
+          "span": 40
         },
         {
           "type": "image",
@@ -1041,10 +1041,9 @@
           "tag": "lager",
           "alt": "Noliktavu Stokholmā, Gēteborgā, Malmē un Norvēģijā un mobilās darbnīcas karte",
           "center": [
-            57.5,
-            14.7
+            58.4,
+            14
           ],
-          "zoom": 6,
           "zoomIn": 2,
           "zoomOut": 1,
           "items": [
@@ -1073,12 +1072,13 @@
               "title": "Noliktava Norvēģijā"
             },
             {
-              "lat": 58.2,
-              "lon": 12.5,
+              "lat": 58.3,
+              "lon": 12.8,
               "kind": "workshop",
               "title": "Mobilā darbnīca - arī Norvēģija"
             }
-          ]
+          ],
+          "span": 40
         },
         {
           "type": "image",
@@ -1222,10 +1222,9 @@
           "tag": "lager",
           "alt": "Ladude kaart Stockholmis, Göteborgis, Malmös ja Norras ning mobiilne töökoda",
           "center": [
-            57.5,
-            14.7
+            58.4,
+            14
           ],
-          "zoom": 6,
           "zoomIn": 2,
           "zoomOut": 1,
           "items": [
@@ -1254,12 +1253,13 @@
               "title": "Ladu Norras"
             },
             {
-              "lat": 58.2,
-              "lon": 12.5,
+              "lat": 58.3,
+              "lon": 12.8,
               "kind": "workshop",
               "title": "Mobiilne töökoda - ka Norra"
             }
-          ]
+          ],
+          "span": 40
         },
         {
           "type": "image",
@@ -1403,10 +1403,9 @@
           "tag": "lager",
           "alt": "Карта складов в Стокгольме, Гётеборге, Мальмё и Норвегии и мобильной мастерской",
           "center": [
-            57.5,
-            14.7
+            58.4,
+            14
           ],
-          "zoom": 6,
           "zoomIn": 2,
           "zoomOut": 1,
           "items": [
@@ -1435,12 +1434,13 @@
               "title": "Склад в Норвегии"
             },
             {
-              "lat": 58.2,
-              "lon": 12.5,
+              "lat": 58.3,
+              "lon": 12.8,
               "kind": "workshop",
               "title": "Мобильная мастерская - также Норвегия"
             }
-          ]
+          ],
+          "span": 40
         },
         {
           "type": "image",
