@@ -1344,3 +1344,22 @@ td.is-sized { font-weight: 700; }
 .no-js .psearch { display: none; }
 @media (max-width: 700px) { .psearch { flex: 1 1 100%; margin-left: 0; } }
 @media print { .psearch { display: none; } }
+
+/* Häny logo that grows a "150 years" lettering: the lettering slides out from under the plate to the left, the finished logo takes over,
+   and a light sweeps across it. Without .is-armed (no scripts, reduced motion) just the finished logo is there. */
+.logo150__stage { position: relative; display: block; aspect-ratio: 832 / 143; overflow: hidden; }
+.logo150__stage img { position: absolute; inset: 0; width: 100%; height: 100%; max-width: none; }
+.logo150__years, .logo150__plate, .logo150__shine { display: none; }
+.logo150.is-armed .logo150__years, .logo150.is-armed .logo150__plate, .logo150.is-armed .logo150__shine { display: block; }
+.logo150.is-armed .logo150__years { z-index: 1; transform: translate3d(48%, 0, 0); }
+.logo150.is-armed .logo150__plate { z-index: 2; }
+.logo150.is-armed .logo150__final { z-index: 3; opacity: 0; }
+.logo150__shine { position: absolute; inset: 0; z-index: 4; opacity: 0; pointer-events: none; -webkit-mask: var(--m) center / 100% 100% no-repeat; mask: var(--m) center / 100% 100% no-repeat; background: linear-gradient(105deg, rgba(255, 255, 255, 0) 45%, rgba(255, 255, 255, .8) 50%, rgba(255, 255, 255, 0) 55%) no-repeat; background-size: 300% 100%; background-position: 120% 0; }
+.logo150.is-play .logo150__years { animation: l150Fly 1.35s cubic-bezier(.5, .05, .2, 1) .45s both; }
+.logo150.is-play .logo150__plate { animation: l150Out .45s linear 1.75s both; } /* stays until the finished logo has covered it, so there is no dip in the middle of the fade */
+.logo150.is-play .logo150__final { animation: l150In .45s ease-in-out 1.75s both; }
+.logo150.is-play .logo150__shine { animation: l150Shine .95s cubic-bezier(.4, 0, .2, 1) 2.4s both; }
+@keyframes l150Fly { from { transform: translate3d(48%, 0, 0); } to { transform: translate3d(0, 0, 0); } }
+@keyframes l150Out { 0%, 99% { opacity: 1; } 100% { opacity: 0; } }
+@keyframes l150In { from { opacity: 0; } to { opacity: 1; } }
+@keyframes l150Shine { 0% { opacity: 1; background-position: 120% 0; } 100% { opacity: 1; background-position: -20% 0; } }

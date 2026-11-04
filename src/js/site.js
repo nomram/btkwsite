@@ -1412,6 +1412,21 @@
     });
   })();
 
+  // ---------- Häny logo with the 150 years reveal: armed when its pictures are ready, played once when it is in view ----------
+  [].forEach.call(document.querySelectorAll(".logo150"), function (f) {
+    if (!("IntersectionObserver" in window) || (window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches)) return;
+    var imgs = [].slice.call(f.querySelectorAll("img")), fin = f.querySelector(".logo150__final"), shine = f.querySelector(".logo150__shine");
+    imgs.forEach(function (im) { im.loading = "eager"; });
+    Promise.all(imgs.map(function (im) { return im.decode ? im.decode().catch(function () {}) : Promise.resolve(); })).then(function () {
+      if (shine && fin && fin.currentSrc) shine.style.setProperty("--m", 'url("' + fin.currentSrc + '")');
+      f.classList.add("is-armed");
+      var io = new IntersectionObserver(function (es) {
+        if (es.some(function (e) { return e.isIntersecting; })) { f.classList.add("is-play"); io.disconnect(); }
+      }, { threshold: 0.6 });
+      io.observe(f);
+    });
+  });
+
   // ---------- "Product of ...": tap to open (hover opens it in CSS) ----------
   [].forEach.call(document.querySelectorAll(".origin__btn"), function (b) {
     b.addEventListener("click", function () { var o = !b.classList.contains("is-open"); b.classList.toggle("is-open", o); b.setAttribute("aria-expanded", String(o)); });

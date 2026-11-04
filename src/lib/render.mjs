@@ -252,6 +252,17 @@ function renderCards(ctx, b) {
   return psNone + groups.map((g) => `<section class="pgroup" id="${g === "machines" ? "maskiner" : "material"}" data-g="${g}"><h2 class="pgroup__h"><span class="pgroup__ico">${ICONS[g][0]}</span>${esc(label[g])}<span class="pgroup__n">${unit(part(g).length)}</span></h2>${ul(part(g))}</section>`).join("") + (rest.length ? ul(rest) : "");
 }
 
+// The Häny logo that grows a "150 years" lettering (site.js plays it once it is in view): three pictures of the same size are stacked,
+// the finished logo, the lettering alone (sits under the plate and slides out to the left) and the logo without the 150 (haeny-plate).
+// Without scripts, or with reduced motion, only the finished logo is shown. tools/haeny-logo-anim.mjs makes the pictures.
+function renderLogo150(ctx, b) {
+  const w = Math.round(Number(b.maxWidth)) || 264, sizes = `${w}px`;
+  const layer = (name, cls, alt) => imgTag(ctx, `/assets/img/${name}.webp`, alt, { cls, sizes }).replace("<img ", alt ? "<img " : '<img aria-hidden="true" ');
+  return `<figure class="figure${b.align === "right" ? " figure--right" : b.align === "center" ? " figure--center" : ""} logo150" style="max-width:${w}px"><span class="logo150__stage">` +
+    layer("haeny-1", "logo150__final", b.alt || "HÄNY") + layer("haeny-150-years", "logo150__years", "") + layer("haeny-plate", "logo150__plate", "") +
+    `<span class="logo150__shine" aria-hidden="true"></span></span></figure>`;
+}
+
 function renderVideo(ctx, b) {
   const title = b.title || ctx.ui.video_play || "Video";
   const watch = `https://www.youtube.com/watch?v=${encodeURIComponent(b.id)}${b.start ? "&t=" + b.start + "s" : ""}`;
@@ -732,6 +743,7 @@ function renderBlockInner(ctx, b) {
       return list;
     }
     case "image": {
+      if (b.anim === "haeny150" && !ctx.edit) return renderLogo150(ctx, b);
       if (isFxImage(b) && !ctx.edit) return renderFxImage(ctx, b);
       // imgWidth: a small picture (px) centred in its column while the caption keeps the full width
       const img = imgTag(ctx, b.src, b.alt || "", { sizes: "(min-width: 900px) 520px, 100vw" }).replace("<img ", b.imgWidth ? `<img style="max-width:${Math.round(Number(b.imgWidth))}px" ` : "<img ");
