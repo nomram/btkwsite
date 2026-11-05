@@ -35,7 +35,7 @@ Once the new catalogue is approved:
 The map is our own drawing (`src/data/europe-map.mjs`: simplified country shapes, the biggest cities), shown as one SVG; no map service, nothing is loaded from another site (so nothing to add to the privacy policy).
 
 - [ ] Exact places: the pins are plain coordinates in `content/pages/om-oss.json` (block `map`, items `lat` / `lon`, `kind`: `warehouse` or `workshop`). They are city centres for now. Put in the real addresses' coordinates when they are known.
-- [ ] Norway warehouse: placed at Halden (59.12, 11.39), just across the border from Strömstad. Move it if the real place is elsewhere (and change the title if it should name a town).
+- [ ] Norway warehouse: placed a little north of Oslo (60.2, 11.0, the Gardermoen side). Move it if the real place is elsewhere (and change the title if it should name a town).
 - [ ] The van (mobile workshop) sits a little north-east of Göteborg (58.3, 12.8): move it when you know where it is usually based.
 - [ ] The country shapes are hand-drawn and rough (the Balkans and Turkey most of all). If a more exact map is wanted later, replace the shapes in `src/data/europe-map.mjs` (for example with Natural Earth, public domain, simplified to an SVG path); the page code does not change.
 - The view is the start span (`span`, degrees of longitude, 40), out one step and in two steps (`zoomOut`, `zoomIn`). Cities of size 2 show from the first zoom in.
