@@ -269,8 +269,31 @@ function renderLogo150(ctx, b) {
 // used. The page holds the whole picture as one SVG (it also works without scripts); site.js adds moving, zooming and the card that opens on a pin.
 // Block: center [lat, lon], span (how many degrees of longitude are in view at the start, default 28), zoomIn / zoomOut (steps from there, default 2 / 1),
 // items [{ lat, lon, kind: "warehouse" | "workshop", title }].
-const MAP_WAREHOUSE = '<ellipse cx="0" cy="1" rx="9" ry="2.6" fill="rgba(35,31,32,.22)"/><path d="M0 0 L-7.5 -14 H7.5 Z" fill="#f37d03"/><circle cx="0" cy="-31" r="19.5" fill="#f37d03" stroke="#fff" stroke-width="3"/><path d="M-11.5 -29.5 L0 -40 L11.5 -29.5 V-19 H-11.5 Z" fill="#fff"/><rect x="-6.5" y="-27" width="13" height="8" rx="1" fill="#f37d03"/><path d="M-6.5 -24.3 H6.5 M-6.5 -21.7 H6.5" stroke="#fff" stroke-width="1"/>';
-const MAP_VAN = '<ellipse cx="0" cy="1" rx="38" ry="3.2" fill="rgba(35,31,32,.24)"/><path d="M-36 -32 Q-36 -38 -30 -38 H26 Q30.5 -38 33 -32.5 L37 -23 V-11 Q37 -9 34 -9 H-33 Q-36 -9 -36 -11 Z" fill="#f37d03"/><path d="M-36 -16 H37 V-11 Q37 -9 34 -9 H-33 Q-36 -9 -36 -11 Z" fill="#d96a00"/><path d="M12.8 -37 V-10" stroke="#c75f00" stroke-width="1"/><path d="M14.5 -34.5 H25.5 Q28 -34.5 29.5 -31 L33 -23.5 H14.5 Z" fill="#231f20"/><circle cx="23" cy="-28.2" r="4.6" fill="#ffd3a8"/><path d="M18 -29.3 Q23 -37.8 28 -29.3 Z" fill="#ffc400"/><rect x="17" y="-29.6" width="12" height="1.6" rx=".8" fill="#ffc400"/><circle cx="21.3" cy="-28" r=".75" fill="#231f20"/><circle cx="24.7" cy="-28" r=".75" fill="#231f20"/><path d="M20.5 -26 Q23 -23.6 25.5 -26" fill="none" stroke="#231f20" stroke-width="1.15" stroke-linecap="round"/><g transform="translate(-9 -27) rotate(-32) scale(.8)"><rect x="-13" y="-2.2" width="26" height="4.4" rx="2.2" fill="#fff"/><circle cx="-13" cy="0" r="6" fill="#fff"/><rect x="-21" y="-2.4" width="9" height="4.8" fill="#f37d03"/><circle cx="13" cy="0" r="4.2" fill="#fff"/><circle cx="13" cy="0" r="1.6" fill="#f37d03"/></g><circle cx="-21" cy="-6.5" r="6.5" fill="#231f20"/><circle cx="-21" cy="-6.5" r="2.5" fill="#cfc8c0"/><circle cx="23" cy="-6.5" r="6.5" fill="#231f20"/><circle cx="23" cy="-6.5" r="2.5" fill="#cfc8c0"/><rect x="34.2" y="-21" width="3" height="3.8" rx="1" fill="#ffe38a"/><rect x="-37.2" y="-21" width="1.9" height="4.2" fill="#d3262c"/>';
+// An isometric warehouse (2:1 view from the front corner): long wall with two roller doors, short wall with a door, flat roof. Built from numbers: s = size,
+// the anchor (0, 0) is the middle of the footprint. Returns the drawing and its box (for the click area).
+function isoWarehouse(s) {
+  const c = 0.866, r = (n) => Math.round(n * 10) / 10;
+  const vL = [-c * 27 * s, -0.5 * 27 * s], vR = [c * 18 * s, -0.5 * 18 * s], h = 13 * s;
+  const cx = (vL[0] + vR[0]) / 2, cy = (vL[1] + vR[1]) / 2;
+  const P = (a, b, z) => [r(a * vL[0] + b * vR[0] - cx), r(a * vL[1] + b * vR[1] - cy - z * s)];
+  const path = (arr, fill, extra) => `<path d="M${arr.map((p) => p.join(" ")).join("L")}Z" fill="${fill}"${extra || ""}/>`;
+  const edge = ' stroke="#fff" stroke-width="1.3" stroke-linejoin="round"';
+  const left = [P(0, 0, 0), P(1, 0, 0), P(1, 0, 13), P(0, 0, 13)], right = [P(0, 0, 0), P(0, 1, 0), P(0, 1, 13), P(0, 0, 13)], roof = [P(0, 0, 13), P(1, 0, 13), P(1, 1, 13), P(0, 1, 13)];
+  const roofIn = [P(0.07, 0.1, 13), P(0.93, 0.1, 13), P(0.93, 0.9, 13), P(0.07, 0.9, 13)];
+  const door = (a0, a1) => [P(a0, 0, 0), P(a1, 0, 0), P(a1, 0, 9), P(a0, 0, 9)];
+  const slat = (a0, a1, z) => `<path d="M${P(a0, 0, z).join(" ")}L${P(a1, 0, z).join(" ")}" stroke="#f37d03" stroke-width="${r(0.9 * s)}"/>`;
+  const side = [P(0, 0.3, 0), P(0, 0.72, 0), P(0, 0.72, 7.5), P(0, 0.3, 7.5)];
+  const all = [...left, ...right, ...roof];
+  const xs = all.map((p) => p[0]), ys = all.map((p) => p[1]);
+  const box = [Math.min(...xs) - 4, Math.min(...ys) - 4, Math.max(...xs) - Math.min(...xs) + 8, Math.max(...ys) - Math.min(...ys) + 12];
+  const svg = `<ellipse cx="0" cy="${r(3 * s)}" rx="${r(26 * s)}" ry="${r(8 * s)}" fill="rgba(35,31,32,.22)"/>` +
+    path(right, "#d96a00", edge) + path(left, "#f37d03", edge) + path(roof, "#fff1e0", edge) + path(roofIn, "#ffe0bd") +
+    path(door(0.08, 0.44), "#fff") + path(door(0.56, 0.92), "#fff") + [3.5, 6.2].map((z) => slat(0.08, 0.44, z) + slat(0.56, 0.92, z)).join("") +
+    path(side, "#fff1e0");
+  return { svg, box };
+}
+const MAP_WAREHOUSE = isoWarehouse(1.35);
+const MAP_VAN = '<ellipse cx="0" cy="1" rx="38" ry="3.2" fill="rgba(35,31,32,.24)"/><g class="map__vanbody"><path d="M-36 -32 Q-36 -38 -30 -38 H26 Q30.5 -38 33 -32.5 L37 -23 V-11 Q37 -9 34 -9 H-33 Q-36 -9 -36 -11 Z" fill="#f37d03"/><path d="M-36 -16 H37 V-11 Q37 -9 34 -9 H-33 Q-36 -9 -36 -11 Z" fill="#d96a00"/><path d="M12.8 -37 V-10" stroke="#c75f00" stroke-width="1"/><path d="M14.5 -34.5 H25.5 Q28 -34.5 29.5 -31 L33 -23.5 H14.5 Z" fill="#231f20"/><circle cx="23" cy="-28.2" r="4.6" fill="#ffd3a8"/><path d="M18 -29.3 Q23 -37.8 28 -29.3 Z" fill="#ffc400"/><rect x="17" y="-29.6" width="12" height="1.6" rx=".8" fill="#ffc400"/><circle cx="21.3" cy="-28" r=".75" fill="#231f20"/><circle cx="24.7" cy="-28" r=".75" fill="#231f20"/><path d="M20.5 -26 Q23 -23.6 25.5 -26" fill="none" stroke="#231f20" stroke-width="1.15" stroke-linecap="round"/><g transform="translate(-9 -27) rotate(-32) scale(.8)"><rect x="-13" y="-2.2" width="26" height="4.4" rx="2.2" fill="#fff"/><circle cx="-13" cy="0" r="6" fill="#fff"/><rect x="-21" y="-2.4" width="9" height="4.8" fill="#f37d03"/><circle cx="13" cy="0" r="4.2" fill="#fff"/><circle cx="13" cy="0" r="1.6" fill="#f37d03"/></g><rect x="34.2" y="-21" width="3" height="3.8" rx="1" fill="#ffe38a"/><rect x="-37.2" y="-21" width="1.9" height="4.2" fill="#d3262c"/></g><circle cx="-21" cy="-6.5" r="6.5" fill="#231f20"/><circle cx="-21" cy="-6.5" r="2.5" fill="#cfc8c0"/><circle cx="23" cy="-6.5" r="6.5" fill="#231f20"/><circle cx="23" cy="-6.5" r="2.5" fill="#cfc8c0"/>';
 function renderMap(ctx, b) {
   const items = (b.items || []).filter((p) => p && Number.isFinite(Number(p.lat)) && Number.isFinite(Number(p.lon)));
   if (!items.length) return "";
@@ -286,11 +309,12 @@ function renderMap(ctx, b) {
   const vb = [Math.round((ctr[0] - vw / 2) * 10) / 10, Math.round((ctr[1] - vh / 2) * 10) / 10, vw, vh].join(" ");
   const at = (x, y) => `translate(${x} ${y})`;
   const land = shapes.countries.map((c) => `<path class="map__c${c.home ? " is-home" : ""}" d="${c.d}"/>`).join("");
-  const cities = shapes.cities.map((c) => { const left = c.name === "København"; return `<g class="map__city" data-s="${c.size}" transform="${at(c.x, c.y)}"><g class="map__fig"><circle r="2.6"/><text x="${left ? -5 : 5}" y="3.6"${left ? ' text-anchor="end"' : ""}>${esc(c.name)}</text></g></g>`; }).join("");
-  const pins = items.map((p, i) => { const q = project(num(p.lon, 0), num(p.lat, 0)); const van = p.kind === "workshop"; return `<g class="map__pin map__pin--${van ? "w" : "l"}" transform="${at(Math.round(q[0] * 10) / 10, Math.round(q[1] * 10) / 10)}" data-i="${i}" data-t="${esc(p.title || "")}" tabindex="0" role="button" aria-label="${esc(p.title || "")}"><g class="map__fig"><rect class="map__hit" x="${van ? -40 : -22}" y="${van ? -42 : -52}" width="${van ? 80 : 44}" height="${van ? 46 : 56}" rx="8"/>${van ? MAP_VAN : MAP_WAREHOUSE}</g></g>`; }).join("");
+  const below = new Set(["Stockholm", "Göteborg", "Malmö"]);
+  const cities = shapes.cities.map((c) => { const left = c.name === "København", under = below.has(c.name); return `<g class="map__city" data-s="${c.size}" transform="${at(c.x, c.y)}"><g class="map__fig"><circle r="2.6"/><text x="${under ? 0 : left ? -5 : 5}" y="${under ? 23 : 3.6}"${left ? ' text-anchor="end"' : under ? ' text-anchor="middle"' : ""}>${esc(c.name)}</text></g></g>`; }).join("");
+  const pins = items.map((p, i) => { const q = project(num(p.lon, 0), num(p.lat, 0)); const van = p.kind === "workshop"; return `<g class="map__pin map__pin--${van ? "w" : "l"}" transform="${at(Math.round(q[0] * 10) / 10, Math.round(q[1] * 10) / 10)}" data-i="${i}" data-t="${esc(p.title || "")}" tabindex="0" role="button" aria-label="${esc(p.title || "")}"><g class="map__fig"><rect class="map__hit" x="${van ? -40 : MAP_WAREHOUSE.box[0]}" y="${van ? -42 : MAP_WAREHOUSE.box[1]}" width="${van ? 80 : MAP_WAREHOUSE.box[2]}" height="${van ? 46 : MAP_WAREHOUSE.box[3]}" rx="8"/>${van ? MAP_VAN : MAP_WAREHOUSE.svg}</g></g>`; }).join("");
   const ui = ctx.ui;
   return `<figure class="map" data-map="${esc(JSON.stringify(cfg))}" data-lvl="0"><div class="map__view">` +
-    `<svg class="map__svg" viewBox="${vb}" role="img" aria-label="${esc(b.alt || "")}" xmlns="http://www.w3.org/2000/svg"><rect class="map__sea" x="${shapes.frame[0] - 2000}" y="${shapes.frame[1] - 2000}" width="${shapes.frame[2] + 4000}" height="${shapes.frame[3] + 4000}"/><g class="map__land">${land}</g><g class="map__cities">${cities}</g><g class="map__pins">${pins}</g></svg>` +
+    `<svg class="map__svg" style="--ps:${Math.round((span / 700) * 10000) / 10000}" viewBox="${vb}" role="img" aria-label="${esc(b.alt || "")}" xmlns="http://www.w3.org/2000/svg"><rect class="map__sea" x="${shapes.frame[0] - 2000}" y="${shapes.frame[1] - 2000}" width="${shapes.frame[2] + 4000}" height="${shapes.frame[3] + 4000}"/><g class="map__land">${land}</g><g class="map__cities">${cities}</g><g class="map__pins">${pins}</g></svg>` +
     `<div class="map__pop" role="status" hidden></div>` +
     `<div class="map__zoom"><button type="button" class="map__zin" aria-label="${esc(ui.map_zoom_in || "Zooma in")}">+</button><button type="button" class="map__zout" aria-label="${esc(ui.map_zoom_out || "Zooma ut")}">\u2212</button></div></div>` +
     `<ul class="map__list">${list}</ul></figure>`;

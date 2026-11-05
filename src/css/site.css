@@ -1382,7 +1382,14 @@ td.is-sized { font-weight: 700; }
 .map[data-lvl="1"] .map__city[data-s="2"], .map[data-lvl="2"] .map__city[data-s="2"] { display: inline; }
 .map[data-lvl="-1"] .map__city text { display: none; }
 .map__pin { cursor: pointer; outline: none; --pk: .78; }
-.map__pin--w { --pk: .95; }
+.map__pin--l { --pk: .8; }
+.map__pin--w { --pk: .62; }
+/* the van: the engine is running, the body trembles a little on its wheels and now and then gives a short rev */
+.map__vanbody { animation: vanIdle .22s ease-in-out infinite; }
+.map__pin--w .map__fig { animation: vanRev 3.4s ease-in-out infinite; transform-origin: 0 0; }
+@keyframes vanIdle { 0%, 100% { transform: translateY(0); } 25% { transform: translateY(-1.1px); } 50% { transform: translateY(.4px); } 75% { transform: translateY(-.7px); } }
+@keyframes vanRev { 0%, 82%, 100% { rotate: 0deg; } 86% { rotate: -1.2deg; } 90% { rotate: .6deg; } 94% { rotate: -.6deg; } }
+@media (prefers-reduced-motion: reduce) { .map__vanbody, .map__pin--w .map__fig { animation: none; } }
 .map__hit { fill: transparent; stroke: none; }
 .map__pin:focus-visible .map__hit { stroke: #231f20; stroke-width: 2; }
 .map__pin .map__fig { transition: filter .15s; filter: drop-shadow(0 2px 3px rgba(35, 31, 32, .35)); }
