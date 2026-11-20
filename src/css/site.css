@@ -1388,9 +1388,9 @@ td.is-sized { font-weight: 700; }
 .map__vanbody { animation: vanIdle .13s linear infinite; }
 .map__vanwheels { animation: vanWheel .13s linear infinite; }
 .map__pin--w .map__fig { animation: vanRev 2.4s ease-in-out infinite; transform-origin: 0 0; }
-@keyframes vanIdle { 0% { transform: translate(0, 0); } 20% { transform: translate(.9px, -2.6px); } 40% { transform: translate(-.7px, .9px); } 60% { transform: translate(.8px, -1.9px); } 80% { transform: translate(-.6px, .6px); } 100% { transform: translate(0, 0); } }
-@keyframes vanWheel { 0%, 100% { transform: translateY(0); } 33% { transform: translateY(-.7px); } 66% { transform: translateY(.5px); } }
-@keyframes vanRev { 0%, 58%, 100% { rotate: 0deg; translate: 0 0; } 62% { rotate: -2.6deg; translate: 0 -1.2px; } 67% { rotate: 1.8deg; translate: 0 .4px; } 72% { rotate: -2deg; translate: 0 -1px; } 77% { rotate: 1.2deg; } 83% { rotate: -.7deg; } 90% { rotate: .3deg; } }
+@keyframes vanIdle { 0% { transform: translate(0, 0); } 20% { transform: translate(.63px, -1.82px); } 40% { transform: translate(-.49px, .63px); } 60% { transform: translate(.56px, -1.33px); } 80% { transform: translate(-.42px, .42px); } 100% { transform: translate(0, 0); } }
+@keyframes vanWheel { 0%, 100% { transform: translateY(0); } 33% { transform: translateY(-.49px); } 66% { transform: translateY(.35px); } }
+@keyframes vanRev { 0%, 58%, 100% { rotate: 0deg; translate: 0 0; } 62% { rotate: -.9deg; translate: 0 -.5px; } 67% { rotate: .6deg; translate: 0 .2px; } 72% { rotate: -.7deg; translate: 0 -.4px; } 77% { rotate: .4deg; } 83% { rotate: -.25deg; } 90% { rotate: .1deg; } }
 @media (prefers-reduced-motion: reduce) { .map__vanbody, .map__vanwheels, .map__pin--w .map__fig { animation: none; } }
 .map__hit { fill: transparent; stroke: none; }
 .map__pin:focus-visible .map__hit { stroke: #231f20; stroke-width: 2; }
