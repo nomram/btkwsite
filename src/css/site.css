@@ -1640,3 +1640,8 @@ td.is-sized { font-weight: 700; }
 .wlist li { padding: .55rem .8rem; border-radius: 8px; background: #f2efea; }
 .wlist--risk li { background: #fff1e0; box-shadow: inset 3px 0 0 var(--primary); } .wlist--fix li { background: #eaf3ea; box-shadow: inset 3px 0 0 #4b9a55; }
 @media (max-width: 820px) { .whist--tun { grid-template-columns: 1fr; } }
+
+/* chart text stays readable on a phone (the wide charts are scaled down to fit) */
+@media (max-width: 640px) { .wgrid text, .wax { font-size: 15px; } .wchart .wlbl { font-size: 17px; } .whigh .wtxt { font-size: 10px; } .whigh .wlbl--s { font-size: 12px; } }
+
+.wbar__s.seg-agg { background: #c9c2b9; } .wbar__s.seg-cem { background: #4a4446; } .wbar__s.seg-wat { background: #8fbfe0; } .wbar__s.seg-air { background: #fff; box-shadow: inset 1px 0 0 #ddd5ce; }

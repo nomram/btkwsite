@@ -471,7 +471,7 @@
     var grid = sv("g", { class: "wgrid" });
     [0, 20, 40, 60, 80].forEach(function (f) { grid.appendChild(sv("line", { x1: CX0, x2: CX0 + CW, y1: py(f), y2: py(f) })); grid.appendChild(sv("text", { x: CX0 - 6, y: py(f) + 4, "text-anchor": "end", text: f })); });
     [0.35, 0.4, 0.45, 0.5, 0.55, 0.6, 0.65, 0.7, 0.75].forEach(function (v) { grid.appendChild(sv("text", { x: px(v), y: CY0 + CH + 18, "text-anchor": "middle", text: num(v, 2) })); });
-    grid.appendChild(sv("text", { x: CX0 + CW / 2, y: 232, "text-anchor": "middle", class: "wax", text: W.axisVct })); grid.appendChild(sv("text", { x: 4, y: 10, class: "wax", text: W.axisMpa }));
+    grid.appendChild(sv("text", { x: CX0 + CW / 2, y: 232, "text-anchor": "middle", class: "wax", text: W.axisVct })); grid.appendChild(sv("text", { x: CX0 + 6, y: CY0 - 3, class: "wax", text: W.axisMpa }));
     chart.appendChild(grid);
     var curve = sv("path", { class: "wcurve", fill: "none" }), drop = sv("line", { class: "w28", y2: CY0 + CH }), mark = sv("circle", { r: 7, class: "wmark" }), tag = sv("text", { class: "wlbl", "text-anchor": "middle" });
     chart.appendChild(curve); chart.appendChild(drop); chart.appendChild(mark); chart.appendChild(tag);
