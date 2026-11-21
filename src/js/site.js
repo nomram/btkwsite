@@ -1487,6 +1487,32 @@
     measure();
   });
 
+  // ---------- preview switcher: on the GitHub preview (and with ?preview=1) a small pill flips between the current site and the redesign at /next ----------
+  (function () {
+    if (!/\.github\.io$/.test(location.hostname) && !/[?&]preview=1/.test(location.search)) return;
+    var css = document.querySelector('link[rel="stylesheet"][href*="/css/site.css"]'), m = css && /^(.*?)\/css\/site\.css/.exec(css.getAttribute("href") || "");
+    if (!m) return;
+    var base = m[1], isNext = /\/next$/.test(base), root = isNext ? base.slice(0, -5) : base;
+    var rel = location.pathname.indexOf(base) === 0 ? location.pathname.slice(base.length) : location.pathname;
+    var sv = (document.documentElement.lang || "sv").slice(0, 2) === "sv";
+    var box = document.createElement("div");
+    box.className = "pv"; box.setAttribute("role", "group"); box.setAttribute("aria-label", sv ? "Förhandsvisning" : "Preview");
+    function link(toNext, label) {
+      var a = document.createElement("a"), here = toNext === isNext;
+      a.textContent = label; a.href = (toNext ? root + "/next" : root) + rel + location.search + location.hash;
+      if (here) { a.className = "is-on"; a.setAttribute("aria-current", "true"); }
+      else a.addEventListener("click", function (e) {
+        e.preventDefault();
+        // the same page may not exist in the other version: then go to its start page
+        fetch(a.href, { method: "HEAD" }).then(function (r) { location.href = r.ok ? a.href : (toNext ? root + "/next/" : root + "/"); }).catch(function () { location.href = a.href; });
+      });
+      return a;
+    }
+    var tag = document.createElement("span"); tag.textContent = sv ? "Förhandsvisning" : "Preview";
+    box.appendChild(tag); box.appendChild(link(false, sv ? "Nuvarande" : "Current")); box.appendChild(link(true, sv ? "Ny version" : "New version"));
+    document.body.appendChild(box);
+  })();
+
   // ---------- Häny logo with the 150 years reveal: armed when its pictures are ready, played once when it is in view ----------
   [].forEach.call(document.querySelectorAll(".logo150"), function (f) {
     if (!("IntersectionObserver" in window) || (window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches)) return;

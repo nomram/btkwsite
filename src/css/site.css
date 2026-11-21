@@ -1409,3 +1409,12 @@ td.is-sized { font-weight: 700; }
 .map__item--w .map__ico { background: var(--dark); color: var(--primary); }
 .no-js .map__zoom { display: none; }
 @media print { .map__view { display: none; } }
+
+/* preview switcher (GitHub preview only, see site.js) */
+.pv { position: fixed; left: .8rem; bottom: .8rem; z-index: 90; display: flex; align-items: center; gap: .15rem; padding: .2rem; border-radius: 999px; background: #231f20; color: #fff; font: 600 .74rem/1 var(--font); box-shadow: 0 4px 16px rgba(0, 0, 0, .3); }
+.pv span { padding: 0 .55rem 0 .7rem; opacity: .7; letter-spacing: .04em; text-transform: uppercase; font-size: .66rem; }
+.pv a { padding: .5rem .8rem; border-radius: 999px; color: #fff; text-decoration: none; }
+.pv a:hover { background: rgba(255, 255, 255, .14); }
+.pv a.is-on { background: var(--primary); color: #231f20; }
+@media (max-width: 860px) { .pv { bottom: 4.3rem; } .pv span { display: none; } }
+@media print { .pv { display: none; } }

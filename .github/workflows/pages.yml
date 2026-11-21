@@ -40,6 +40,35 @@ jobs:
       # it noindex (preview). With a custom domain base_path is empty and this step does nothing.
       - name: Apply sub-path (preview deployments only)
         run: node tools/apply-base.mjs dist "${{ steps.pages.outputs.base_path }}"
+      # The "redesign" branch (if there is one) is built too and put under /next: the live preview then holds both versions, and a small
+      # switcher on every page (site.js) flips between them. Optional: when this fails, the current site is still deployed.
+      - name: Check out the redesign branch
+        id: nextco
+        continue-on-error: true
+        uses: actions/checkout@v4
+        with:
+          ref: redesign
+          path: next
+      - name: Restore image cache (redesign)
+        if: steps.nextco.outcome == 'success'
+        uses: actions/cache@v4
+        with:
+          path: next/.cache
+          key: img-next-${{ hashFiles('next/assets-src/img/**') }}
+          restore-keys: img-next-
+      - name: Build the redesign preview
+        id: nextbuild
+        if: steps.nextco.outcome == 'success'
+        continue-on-error: true
+        working-directory: next
+        run: |
+          npm ci
+          node src/build.mjs --out "$GITHUB_WORKSPACE/dist/next"
+          node tools/check.mjs --dist "$GITHUB_WORKSPACE/dist/next" || echo "::warning::the checks of the redesign branch reported problems"
+          node tools/apply-base.mjs "$GITHUB_WORKSPACE/dist/next" "${{ steps.pages.outputs.base_path }}/next"
+      - name: Drop a half-built redesign
+        if: steps.nextco.outcome != 'success' || steps.nextbuild.outcome == 'failure'
+        run: rm -rf dist/next
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist
