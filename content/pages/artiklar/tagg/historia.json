@@ -1,0 +1,41 @@
+{
+  "path": "/artiklar/tagg/historia",
+  "updated": "2026-11-21",
+  "template": "articles",
+  "order": 10,
+  "published": true,
+  "hideIn": [
+    "es",
+    "no",
+    "lt",
+    "lv",
+    "et",
+    "ru"
+  ],
+  "i18n": {
+    "sv": {
+      "title": "Artiklar om Historia",
+      "h1": "Artiklar om Historia",
+      "seoTitle": "Artiklar och guider om Historia | Betongakuten",
+      "description": "Alla artiklar och guider om Historia från Betongakuten. Sök eller filtrera på fler taggar.",
+      "blocks": [
+        {
+          "type": "articles",
+          "tag": "historia"
+        }
+      ]
+    },
+    "en": {
+      "title": "Articles about History",
+      "h1": "Articles about History",
+      "seoTitle": "Articles and guides about History | Betongakuten",
+      "description": "All articles and guides about History from Betongakuten. Search or filter by more tags.",
+      "blocks": [
+        {
+          "type": "articles",
+          "tag": "historia"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,358 @@
+{
+  "path": "/artiklar/betongens-historia",
+  "updated": "2026-11-21",
+  "template": "article",
+  "order": 10,
+  "published": true,
+  "date": "2026-11-21",
+  "tags": [
+    "historia",
+    "betong",
+    "cement",
+    "grunder",
+    "verktyg"
+  ],
+  "image": "/assets/img/history-hero.webp",
+  "hideIn": [
+    "es",
+    "no",
+    "lt",
+    "lv",
+    "et",
+    "ru"
+  ],
+  "i18n": {
+    "sv": {
+      "title": "Betongens historia: från romarnas kupoler till skyskrapor",
+      "h1": "Betongens historia: från romarnas kupoler till skyskrapor",
+      "seoTitle": "Betongens historia: romarna, cementet och skyskrapor | Betongakuten",
+      "description": "Hur romarna byggde Pantheon, vem som uppfann cementet och hur armerad betong gjorde skyskrapor och broar möjliga. Med tidslinje och interaktiva illustrationer.",
+      "summary": "Från lera och kalk till romarnas kupoler, portlandcementet, armerad betong och Burj Khalifa. Med en tidslinje och fyra interaktiva illustrationer.",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "Betong känns modern, men idén är över två tusen år gammal. Här är berättelsen om hur människor gick från lera och kalk till romarnas kupoler, och vidare till skyskrapor och broar. Börja med tidslinjen nedan och klicka dig framåt."
+        },
+        {
+          "type": "widget",
+          "kind": "tidslinje",
+          "title": "Betongens tidslinje",
+          "intro": "Dra i reglaget eller klicka på ett årtal för att resa genom tiden.",
+          "cta": false
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Före cementet: lera, kalk och gips"
+        },
+        {
+          "type": "text",
+          "html": "För flera tusen år sedan behövde människor något som band ihop sten och tegel. De använde lera, kalkbruk och gipsbruk. Kalkbruk görs genom att bränna kalksten, släcka den med vatten och blanda med sand. Det hårdnar långsamt när det tar upp koldioxid ur luften. Sådana bruk användes bland annat i det gamla Egypten."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Romarna och det hemliga receptet"
+        },
+        {
+          "type": "text",
+          "html": "Romarna tog nästa steg. Omkring 200 f.Kr. började de blanda kalk med vulkanisk aska från trakten kring Pozzuoli vid Neapel, vatten och stenbitar, så kallade <em>caementa</em>. Blandningen kallas <em>opus caementicium</em>, och askan kallas puzzolan efter orten. Puzzolanen gör något särskilt: den reagerar med kalken och gör att bruket hårdnar även under vatten. Därför kunde romarna bygga hamnar, pirer och broar i havet. Arkitekten Vitruvius beskriver blandningen i sitt verk om byggnadskonst."
+        },
+        {
+          "type": "text",
+          "html": "De anpassade också betongen efter uppgiften. Den göts i former av trä eller tegel, och ytorna kläddes ofta med tegel eller natursten. Betong blev romarnas sätt att bygga stort och snabbt, med valv, kupoler och akvedukter. Pantheon i Rom är det mest kända exemplet."
+        },
+        {
+          "type": "widget",
+          "kind": "pantheon",
+          "title": "Klättra upp i Pantheons kupol",
+          "intro": "Dra i reglaget och se hur kupolens tjocklek och material ändras på vägen upp.",
+          "cta": false
+        },
+        {
+          "type": "text",
+          "html": "Pantheon stod färdigt omkring år 126. Kupolen är 43,3 meter i diameter och är fortfarande världens största kupol av oarmerad betong, ungefär 1 900 år senare. Forskare pekar på flera saker som hjälper: puzzolanen ger en tät och hållbar betong, det lättare materialet högre upp minskar vikten, och kupolens form gör att den mest utsätts för tryck, vilket betong klarar bra. Dessutom finns ingen stålarmering som kan rosta."
+        },
+        {
+          "type": "text",
+          "html": "Betong från romerska hamnar har studerats i flera undersökningar. Där har man funnit att havsvattnet självt har reagerat med askan och bildat nya mineral som kan göra betongen starkare med tiden. En studie från 2023 pekar på att små klumpar av kalk kan lösas upp och fylla sprickor, så att betongen delvis läker sig själv. Forskningen pågår, och tolkningarna diskuteras."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Därefter blev det tyst"
+        },
+        {
+          "type": "text",
+          "html": "När Romarriket föll fortsatte man att använda kalkbruk. Men kunskapen om hur man gör stark, vattenhärdande betong i stor skala fick mindre spridning, och byggandet gick i stor utsträckning över till natursten och tegel. Stora kyrkor och slott byggdes under flera hundra år av sten och kalkbruk."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Vem uppfann cementet?"
+        },
+        {
+          "type": "text",
+          "html": "Det finns ingen enskild uppfinnare. Utvecklingen skedde i steg:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "<strong>1756.</strong> Ingenjören John Smeaton upptäckte att kalk som innehåller lera hårdnar även under vatten, och använde det när han byggde Eddystonefyren utanför England.",
+            "<strong>1817 till 1818.</strong> Fransmannen Louis Vicat förklarade vetenskapligt vad som gör kalk hydraulisk och hur man kan tillverka den konstgjort.",
+            "<strong>1824.</strong> Joseph Aspdin tog patent på det han kallade portlandcement, eftersom det liknade den ljusa Portlandstenen.",
+            "<strong>1840-talet.</strong> Isaac Johnson, som ofta nämns i sammanhanget, brände blandningen vid högre temperatur till klinker. Det är i grunden dagens portlandcement."
+          ]
+        },
+        {
+          "type": "text",
+          "html": "Idag bränns kalksten och lera i en roterugn vid cirka 1 450 grader. Det som kommer ut kallas klinker och mals med lite gips till cement. I Sverige började portlandcement tillverkas i Skåne på 1870-talet. Vad cementbeteckningarna på säcken betyder kan du läsa om i <a href=\"/artiklar/cementtyper-cem-i-cem-ii\">cementtyper: vad betyder CEM I, CEM II och 42,5 R</a>."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Järn i betongen ändrade allt"
+        },
+        {
+          "type": "text",
+          "html": "Betong tål tryck bra men drag dåligt. Lösningen kom när man började lägga järn i betongen. Den franske trädgårdsmästaren Joseph Monier patenterade 1867 krukor och kärl av betong med järnnät i, och ungefär samtidigt byggde Joseph-Louis Lambot en båt av cement med järn i. Några decennier senare utvecklade François Hennebique ett komplett system av pelare och balkar av armerad betong, som han fick patent på 1892."
+        },
+        {
+          "type": "widget",
+          "kind": "armering",
+          "title": "Varför behövs armering?",
+          "intro": "Belasta en balk av betong, med och utan armering, och se vad som händer.",
+          "cta": false
+        },
+        {
+          "type": "text",
+          "html": "Stål och betong passar ovanligt bra ihop. De utvidgas nästan lika mycket när det blir varmt, och betongen skyddar stålet mot rost så länge den är tät. Där hjälper ett lågt <a href=\"/artiklar/vattencementtal-vct\">vattencementtal</a>. På 1920-talet tog Eugène Freyssinet idén vidare med spännbetong, där stålet spänns i förväg så att betongen hålls ihop under tryck. Det gav längre och smäckrare broar."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Uppåt: skyskrapor och broar"
+        },
+        {
+          "type": "text",
+          "html": "När betong kunde armeras började husen växa. Ingalls Building i Cincinnati, klar 1903, var ett av de första höghusen med betongstomme: 16 våningar och 64 meter. Därefter gick det snabbt. I dag byggs skyskrapor, tv-torn, dammar och broar av betong."
+        },
+        {
+          "type": "widget",
+          "kind": "hojd",
+          "title": "Hur högt kan man bygga i betong?",
+          "intro": "Dra i reglaget för en tidsresa och se hur höjderna växer genom åren.",
+          "cta": false
+        },
+        {
+          "type": "text",
+          "html": "Broar är en egen historia. Öresundsbrons pyloner är av betong och 204 meter höga. Viadukten vid Millau i Frankrike, som invigdes 2004, har betongpelare som är upp till 245 meter höga. Det är en lång väg från romarnas kupol, men grundidén är densamma: ett bindemedel som reagerar med vatten och blir till sten."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Betongen idag"
+        },
+        {
+          "type": "text",
+          "html": "Betong är det mest använda byggmaterialet i världen, och cementtillverkningen står för uppskattningsvis 7 till 8 procent av världens koldioxidutsläpp. Därför pågår mycket utveckling: cement med mer slagg och flygaska, bättre recept med lägre vattencementtal, återvunnet material och betong som läker sig själv. Men grunderna är desamma som förr: rätt blandning, rätt <a href=\"/artiklar/sa-hardnar-betong\">härdning</a> och rätt utrustning."
+        },
+        {
+          "type": "faq",
+          "title": "Vanliga frågor",
+          "items": [
+            {
+              "q": "Vem uppfann betong?",
+              "a": "Det finns ingen enskild uppfinnare. Kalk- och gipsbruk användes av flera tidiga kulturer, romarna utvecklade betong i stor skala omkring 200 f.Kr., och modern portlandcement patenterades 1824 av Joseph Aspdin."
+            },
+            {
+              "q": "Varför håller romersk betong så länge?",
+              "a": "Forskare pekar på vulkanaskan (puzzolan) som ger en tät betong, på havsvatten som kan bilda nya mineral och på kalkklumpar som kan läka sprickor. Dessutom finns ingen stålarmering som kan rosta i de gamla byggnaderna."
+            },
+            {
+              "q": "Varför armerar man betong?",
+              "a": "Betong tål tryck bra men drag dåligt. Stålet läggs där det blir drag och tar kraften."
+            },
+            {
+              "q": "Hur högt kan man bygga i betong?",
+              "a": "Idag finns byggnader med betongstomme som är över 800 meter höga, till exempel Burj Khalifa. Det kräver höghållfast betong som kan pumpas upp i höjden."
+            }
+          ]
+        },
+        {
+          "type": "cta",
+          "title": "Bygger du något som ska stå i hundratals år?",
+          "text": "Berätta vad du ska göra, var och när, så rekommenderar vi rätt utrustning och återkommer med pris och leveranstid.",
+          "button": "Få offert",
+          "href": "/offert"
+        }
+      ]
+    },
+    "en": {
+      "title": "The history of concrete: from Roman domes to skyscrapers",
+      "h1": "The history of concrete: from Roman domes to skyscrapers",
+      "seoTitle": "History of concrete: the Romans, cement and skyscrapers | Betongakuten",
+      "description": "How the Romans built the Pantheon, who invented cement and how reinforced concrete made skyscrapers and bridges possible. With a timeline and interactive illustrations.",
+      "summary": "From clay and lime to Roman domes, Portland cement, reinforced concrete and Burj Khalifa. With a timeline and four interactive illustrations.",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "Concrete feels modern, but the idea is more than two thousand years old. This is the story of how people went from clay and lime to Roman domes, and on to skyscrapers and bridges. Start with the timeline below and click your way forward."
+        },
+        {
+          "type": "widget",
+          "kind": "tidslinje",
+          "title": "The timeline of concrete",
+          "intro": "Drag the slider or click a year to travel through time.",
+          "cta": false
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Before cement: clay, lime and gypsum"
+        },
+        {
+          "type": "text",
+          "html": "Thousands of years ago people needed something to bind stone and brick together. They used clay, lime mortar and gypsum mortar. Lime mortar is made by burning limestone, slaking it with water and mixing it with sand. It hardens slowly as it takes up carbon dioxide from the air. Such mortars were used in ancient Egypt, among other places."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "The Romans and the secret recipe"
+        },
+        {
+          "type": "text",
+          "html": "The Romans took the next step. Around 200 BC they began to mix lime with volcanic ash from the area around Pozzuoli near Naples, water and pieces of stone, so-called <em>caementa</em>. The mix is called <em>opus caementicium</em>, and the ash is called pozzolana after the town. Pozzolana does something special: it reacts with the lime and makes the mortar harden even under water. That is why the Romans could build harbours, piers and bridges in the sea. The architect Vitruvius describes the mix in his work on architecture."
+        },
+        {
+          "type": "text",
+          "html": "They also adapted the concrete to the task. It was cast in forms of wood or brick, and the surfaces were often faced with brick or natural stone. Concrete became the Roman way of building big and fast, with vaults, domes and aqueducts. The Pantheon in Rome is the best-known example."
+        },
+        {
+          "type": "widget",
+          "kind": "pantheon",
+          "title": "Climb up the Pantheon dome",
+          "intro": "Drag the slider and see how the thickness and material of the dome change on the way up.",
+          "cta": false
+        },
+        {
+          "type": "text",
+          "html": "The Pantheon was finished around the year 126. The dome is 43.3 metres in diameter and is still the largest dome of unreinforced concrete in the world, about 1,900 years later. Researchers point to several things that help: pozzolana gives a dense and durable concrete, the lighter material higher up reduces the weight, and the shape of the dome means it is mostly under compression, which concrete handles well. There is also no steel reinforcement that can rust."
+        },
+        {
+          "type": "text",
+          "html": "Concrete from Roman harbours has been studied in several investigations. They have found that the seawater itself has reacted with the ash and formed new minerals that can make the concrete stronger over time. A study from 2023 suggests that small lumps of lime can dissolve and fill cracks, so the concrete partly heals itself. The research is ongoing, and the interpretations are debated."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Then it went quiet"
+        },
+        {
+          "type": "text",
+          "html": "When the Roman Empire fell, lime mortar was still used. But the knowledge of how to make strong, water-hardening concrete on a large scale spread less, and building largely turned to natural stone and brick. Large churches and castles were built for several hundred years of stone and lime mortar."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Who invented cement?"
+        },
+        {
+          "type": "text",
+          "html": "There is no single inventor. The development came in steps:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "<strong>1756.</strong> The engineer John Smeaton found that lime containing clay hardens even under water, and used it when he built the Eddystone lighthouse off England.",
+            "<strong>1817 to 1818.</strong> The Frenchman Louis Vicat explained scientifically what makes lime hydraulic and how to make it artificially.",
+            "<strong>1824.</strong> Joseph Aspdin patented what he called Portland cement, because it resembled the pale Portland stone.",
+            "<strong>1840s.</strong> Isaac Johnson, who is often mentioned in this context, burned the mix at a higher temperature into clinker. That is basically today’s Portland cement."
+          ]
+        },
+        {
+          "type": "text",
+          "html": "Today limestone and clay are burned in a rotary kiln at about 1,450 degrees. What comes out is called clinker and is ground with a little gypsum into cement. In Sweden, Portland cement began to be made in Skåne in the 1870s. What the cement markings on the bag mean is explained in <a href=\"/artiklar/cementtyper-cem-i-cem-ii\">cement types: what do CEM I, CEM II and 42.5 R mean</a>."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Iron in the concrete changed everything"
+        },
+        {
+          "type": "text",
+          "html": "Concrete is good in compression but poor in tension. The solution came when people began to put iron in the concrete. The French gardener Joseph Monier patented pots and vessels of concrete with an iron mesh inside in 1867, and at about the same time Joseph-Louis Lambot built a boat of cement with iron in it. A few decades later François Hennebique developed a complete system of columns and beams of reinforced concrete, which he patented in 1892."
+        },
+        {
+          "type": "widget",
+          "kind": "armering",
+          "title": "Why is reinforcement needed?",
+          "intro": "Load a beam of concrete, with and without reinforcement, and see what happens.",
+          "cta": false
+        },
+        {
+          "type": "text",
+          "html": "Steel and concrete suit each other unusually well. They expand almost equally when it gets warm, and the concrete protects the steel from rust as long as it is dense. A low <a href=\"/artiklar/vattencementtal-vct\">water/cement ratio</a> helps there. In the 1920s Eugène Freyssinet took the idea further with prestressed concrete, where the steel is tensioned in advance so the concrete is held together under compression. It gave longer and slimmer bridges."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Upwards: skyscrapers and bridges"
+        },
+        {
+          "type": "text",
+          "html": "When concrete could be reinforced, buildings began to grow. The Ingalls Building in Cincinnati, finished in 1903, was one of the first tall buildings with a concrete frame: 16 storeys and 64 metres. After that it went quickly. Today skyscrapers, television towers, dams and bridges are built of concrete."
+        },
+        {
+          "type": "widget",
+          "kind": "hojd",
+          "title": "How high can you build in concrete?",
+          "intro": "Drag the slider for a time trip and see how the heights grow through the years.",
+          "cta": false
+        },
+        {
+          "type": "text",
+          "html": "Bridges are a story of their own. The pylons of the Öresund Bridge are of concrete and 204 metres high. The Millau Viaduct in France, opened in 2004, has concrete piers up to 245 metres high. It is a long way from the Roman dome, but the basic idea is the same: a binder that reacts with water and turns into stone."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Concrete today"
+        },
+        {
+          "type": "text",
+          "html": "Concrete is the most used building material in the world, and cement production accounts for an estimated 7 to 8 percent of the world’s carbon dioxide emissions. That is why a lot of development is going on: cement with more slag and fly ash, better recipes with a lower water/cement ratio, recycled material and concrete that heals itself. But the basics are the same as before: the right mix, the right <a href=\"/artiklar/sa-hardnar-betong\">curing</a> and the right equipment."
+        },
+        {
+          "type": "faq",
+          "title": "Frequently asked questions",
+          "items": [
+            {
+              "q": "Who invented concrete?",
+              "a": "There is no single inventor. Lime and gypsum mortars were used by several early cultures, the Romans developed concrete on a large scale around 200 BC, and modern Portland cement was patented in 1824 by Joseph Aspdin."
+            },
+            {
+              "q": "Why does Roman concrete last so long?",
+              "a": "Researchers point to the volcanic ash (pozzolana) that gives a dense concrete, to seawater that can form new minerals and to lumps of lime that can heal cracks. In addition there is no steel reinforcement that can rust in the old buildings."
+            },
+            {
+              "q": "Why is concrete reinforced?",
+              "a": "Concrete is good in compression but poor in tension. The steel is placed where there is tension and takes the force."
+            },
+            {
+              "q": "How high can you build in concrete?",
+              "a": "Today there are buildings with a concrete frame that are over 800 metres tall, for example Burj Khalifa. It takes high-strength concrete that can be pumped up to height."
+            }
+          ]
+        },
+        {
+          "type": "cta",
+          "title": "Building something meant to stand for hundreds of years?",
+          "text": "Tell us what you are going to do, where and when, and we will recommend the right equipment and come back with a price and lead time.",
+          "button": "Get a quote",
+          "href": "/offert"
+        }
+      ]
+    }
+  }
+}

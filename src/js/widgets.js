@@ -11,7 +11,7 @@
     sv: {
       mpa: "MPa", model: "Så räknar vi", disclaimer: "Förenklad modell för att förstå sambanden. Den ersätter inte beräkning, provning eller produktens datablad.",
       vct: {
-        vct: "Vattencementtal (vct)", kons: "Konsistens", cem: "Cementtyp", kStel: "Stel", kPlast: "Plastisk", kFlyt: "Flytande",
+        vct: "Vattencementtal (vct)", mode: "Hur ändrar du vct?", mode0: "Mer eller mindre vatten", mode1: "Mer eller mindre cement", cemKg: "Cementhalt", chartTitle: "Hållfasthet efter 28 dygn för olika vct (pricken är ditt val)", axisVct: "vattencementtal (vct)", axisMpa: "MPa", band: "vanligt område", overfull: "Det blir för mycket vatten och cement för att få plats i en kubikmeter. Sänk cementhalten.", kons: "Konsistens", cem: "Cementtyp", kStel: "Stel", kPlast: "Plastisk", kFlyt: "Flytande",
         rCem: "Cement", rWater: "Vatten", rAgg: "Sten och sand", rStr: "Hållfasthet efter 28 dygn", unitKgM3: "kg per m³", unitLM3: "liter per m³", approx: "ungefär",
         barTitle: "En kubikmeter betong, uppdelad på volym", air: "Luft", pores: "Cementpastan förstorad: de blå rutorna är porer (hålrum)", porPct: "porer i cementpastan",
         extra: "Häller du i 10 liter extra vatten per kubikmeter blir vct {a} och hållfastheten sjunker med ungefär {b} MPa.",
@@ -57,12 +57,45 @@
         note: "Så skulle det gå i ett laboratorium, där lasten läggs jämnt över hela ytan. I en riktig konstruktion delas lasten mellan flera delar och man räknar med säkerhetsfaktorer.",
         min: "Siffrorna efter C är minimivärden (karakteristiska värden) efter 28 dygn: först cylinder, sedan kub.",
         how: "Hållfasthetsklassen C25/30 betyder att betongen ska klara minst 25 MPa på en cylinder och 30 MPa på en kub efter 28 dygn. Lasten som kuben tål = kubhållfasthet × sidans area (1 MPa = 1 N per mm²), omräknat till ton. Vikten räknas med 2 400 kg per m³ och personbilen med 1,5 ton."
+      },
+      hist: {
+        prev: "Föregående", next: "Nästa", yr: "År", bc: "f.Kr.", ca: "ca", step: "Tidsresa",
+        ev: [
+          [-2500, "egypt", "Lera, kalk och gips", "Långt före cementet band man sten med lera, kalkbruk och gipsbruk. Det användes till exempel i Egypten."],
+          [-200, "rome", "Romarna blandar betong", "Romarna blandade kalk, vulkanaska, vatten och sten till opus caementicium. Det gjorde att de kunde bygga valv, hamnar och akvedukter."],
+          [126, "pantheon", "Pantheons kupol", "Omkring år 126 stod Pantheon i Rom färdigt. Dess kupol av oarmerad betong är fortfarande världens största i sitt slag."],
+          [1756, "lighthouse", "Smeaton och fyren", "John Smeaton upptäckte att kalk som innehåller lera hårdnar även under vatten. Han använde det i Eddystonefyren utanför England."],
+          [1824, "kiln", "Portlandcement", "Joseph Aspdin tog patent på en cement han kallade portlandcement, efter den ljusa Portlandstenen. Det är grunden till dagens cement."],
+          [1867, "pot", "Järn i betongen", "Trädgårdsmästaren Joseph Monier patenterade krukor och kärl av betong med järnnät i. Idén att armera betong var född."],
+          [1892, "frame", "Hela hus av armerad betong", "François Hennebique utvecklade ett system med pelare och balkar av armerad betong. Därefter kunde man bygga hela hus och broar på det sättet."],
+          [1903, "tower", "Första betongskrapan", "Ingalls Building i Cincinnati blev ett av de första höghusen med betongstomme, 16 våningar och 64 meter högt."],
+          [1928, "bridge", "Spänd betong", "Eugène Freyssinet tog patent på spännbetong, där stålet spänns i förväg. Det gjorde det möjligt att bygga längre och smäckrare broar."],
+          [2010, "burj", "Burj Khalifa", "Burj Khalifa i Dubai är 828 meter hög. Dess kärna och stomme är av höghållfast betong som pumpades upp i höjden."]
+        ],
+        ph: {
+          h: "Hur högt upp i kupolen?", sz: "Snitt genom Pantheons kupol", thick: "Tjocklek ungefär", height: "Höjd över kupolens fot ungefär", mat: "Material",
+          z1: "Tung betong med travertin och tuff", z2: "Tuff och tegel", z3: "Lätt vulkanisk sten", base: "Kupolens fot", top: "Öppningen (oculus)",
+          note: "Ju högre upp, desto tunnare kupol och lättare sten. På så sätt blir kupolen inte tyngre än att den kan bära sig själv.",
+          how: "Måtten är de som vanligen anges: kupolens innerdiameter 43,3 m, tjocklek cirka 6,4 m vid foten och cirka 1,2 m vid öppningen på 8,2 m. Materialzonerna är förenklade."
+        },
+        ar: {
+          load: "Belastning", mode: "Balk", m0: "Utan armering", m1: "Med armering", press: "tryck", tens: "drag",
+          a0: "Balken är hel och bär lasten.", a1: "Det börjar komma en spricka i undersidan. Betong tål drag dåligt.", a2: "Balken går av! Utan armering finns inget som håller ihop undersidan.",
+          b0: "Balken är hel.", b1: "Fina sprickor syns i undersidan, men stålet tar dragkraften.", b2: "Balken böjer sig mycket men håller. Armeringen tar dragkraften i undersidan.",
+          hint: "Betong tål tryck mycket bra men drag dåligt, ungefär en tiondel så bra. När balken böjs trycks överkanten ihop och undersidan dras isär. Därför läggs stålstänger i undersidan.",
+          how: "Det här är en principskiss, inte en beräkning. Betongens draghållfasthet är bara omkring en tiondel av tryckhållfastheten, så en oarmerad balk spricker där det blir drag. Stålet placeras där och tar kraften."
+        },
+        hh: {
+          step: "Tidsresa", note0: "Efter romarna dröjde det länge innan man byggde högt i betong igen. Ingenting av det som visas här är högre än Pantheons kupol förrän 1900-talet.",
+          now: "Byggd {y}: {n}, {h} meter", items: [[126, 43, "Pantheon", "Pantheon, Rom"], [1903, 64, "Ingalls", "Ingalls Building, Cincinnati"], [1936, 221, "Hoover", "Hooverdammen (damm)"], [1967, 155, "Kaknäs", "Kaknästornet, Stockholm"], [1976, 553, "CN Tower", "CN Tower, Toronto"], [2005, 190, "Turning Torso", "Turning Torso, Malmö"], [2010, 828, "Burj Khalifa", "Burj Khalifa, Dubai"]],
+          how: "Höjderna är de som vanligen anges för byggnaderna. Alla har betong som en viktig del av bärande delar, men inte alla är av bara betong (Burj Khalifas spira är av stål). Skalan är densamma för alla staplar."
+        }
       }
     },
     en: {
       mpa: "MPa", model: "How we calculate", disclaimer: "A simplified model to understand how things relate. It does not replace calculation, testing or the data sheet of a product.",
       vct: {
-        vct: "Water/cement ratio (w/c)", kons: "Consistency", cem: "Cement type", kStel: "Stiff", kPlast: "Plastic", kFlyt: "Flowing",
+        vct: "Water/cement ratio (w/c)", mode: "How do you change w/c?", mode0: "More or less water", mode1: "More or less cement", cemKg: "Cement content", chartTitle: "Strength after 28 days for different w/c (the dot is your choice)", axisVct: "water/cement ratio (w/c)", axisMpa: "MPa", band: "common range", overfull: "There is too much water and cement to fit in one cubic metre. Lower the cement content.", kons: "Consistency", cem: "Cement type", kStel: "Stiff", kPlast: "Plastic", kFlyt: "Flowing",
         rCem: "Cement", rWater: "Water", rAgg: "Stone and sand", rStr: "Strength after 28 days", unitKgM3: "kg per m³", unitLM3: "litres per m³", approx: "about",
         barTitle: "One cubic metre of concrete, split by volume", air: "Air", pores: "The cement paste enlarged: the blue squares are pores (voids)", porPct: "pores in the cement paste",
         extra: "If you pour in 10 litres of extra water per cubic metre the w/c becomes {a} and the strength drops by about {b} MPa.",
@@ -108,6 +141,39 @@
         note: "This is how it would go in a laboratory, where the load is spread evenly over the whole face. In a real structure the load is shared between several parts and safety factors are used.",
         min: "The numbers after C are minimum values (characteristic values) after 28 days: first cylinder, then cube.",
         how: "Strength class C25/30 means the concrete must withstand at least 25 MPa on a cylinder and 30 MPa on a cube after 28 days. The load the cube takes = cube strength × area of the face (1 MPa = 1 N per mm²), converted to tonnes. Weight uses 2,400 kg per m³ and a car of 1.5 tonnes."
+      },
+      hist: {
+        prev: "Previous", next: "Next", yr: "Year", bc: "BC", ca: "c.", step: "Time travel",
+        ev: [
+          [-2500, "egypt", "Clay, lime and gypsum", "Long before cement, stone was bound with clay, lime mortar and gypsum mortar. It was used in Egypt, for example."],
+          [-200, "rome", "The Romans mix concrete", "The Romans mixed lime, volcanic ash, water and stone into opus caementicium. It let them build vaults, harbours and aqueducts."],
+          [126, "pantheon", "The Pantheon dome", "Around the year 126 the Pantheon in Rome was finished. Its dome of unreinforced concrete is still the largest of its kind in the world."],
+          [1756, "lighthouse", "Smeaton and the lighthouse", "John Smeaton found that lime containing clay hardens even under water. He used it in the Eddystone lighthouse off the coast of England."],
+          [1824, "kiln", "Portland cement", "Joseph Aspdin patented a cement he called Portland cement, after the pale Portland stone. It is the basis of today’s cement."],
+          [1867, "pot", "Iron in the concrete", "The gardener Joseph Monier patented pots and vessels of concrete with an iron mesh inside. The idea of reinforcing concrete was born."],
+          [1892, "frame", "Whole buildings in reinforced concrete", "François Hennebique developed a system of columns and beams of reinforced concrete. After that, whole buildings and bridges could be built that way."],
+          [1903, "tower", "The first concrete skyscraper", "The Ingalls Building in Cincinnati became one of the first tall buildings with a concrete frame, 16 storeys and 64 metres high."],
+          [1928, "bridge", "Prestressed concrete", "Eugène Freyssinet patented prestressed concrete, where the steel is tensioned in advance. It made longer and slimmer bridges possible."],
+          [2010, "burj", "Burj Khalifa", "Burj Khalifa in Dubai is 828 metres tall. Its core and frame are made of high-strength concrete that was pumped up to height."]
+        ],
+        ph: {
+          h: "How high up in the dome?", sz: "Cross-section of the Pantheon dome", thick: "Thickness about", height: "Height above the base of the dome about", mat: "Material",
+          z1: "Heavy concrete with travertine and tuff", z2: "Tuff and brick", z3: "Light volcanic stone", base: "Base of the dome", top: "The opening (oculus)",
+          note: "The higher up, the thinner the dome and the lighter the stone. That way the dome is no heavier than it can carry itself.",
+          how: "The dimensions are the commonly stated ones: inner diameter of the dome 43.3 m, thickness about 6.4 m at the base and about 1.2 m at the 8.2 m opening. The material zones are simplified."
+        },
+        ar: {
+          load: "Load", mode: "Beam", m0: "Without reinforcement", m1: "With reinforcement", press: "compression", tens: "tension",
+          a0: "The beam is whole and carries the load.", a1: "A crack starts to form in the underside. Concrete is weak in tension.", a2: "The beam breaks! Without reinforcement nothing holds the underside together.",
+          b0: "The beam is whole.", b1: "Fine cracks show in the underside, but the steel takes the tension.", b2: "The beam bends a lot but holds. The reinforcement takes the tension in the underside.",
+          hint: "Concrete is very good in compression but poor in tension, about a tenth as good. When the beam bends, the top is squeezed together and the underside is pulled apart. That is why steel bars are placed in the underside.",
+          how: "This is a principle sketch, not a calculation. The tensile strength of concrete is only about a tenth of its compressive strength, so an unreinforced beam cracks where there is tension. The steel is placed there and takes the force."
+        },
+        hh: {
+          step: "Time travel", note0: "After the Romans it took a long time before anyone built high in concrete again. Nothing shown here is taller than the dome of the Pantheon until the 20th century.",
+          now: "Built {y}: {n}, {h} metres", items: [[126, 43, "Pantheon", "The Pantheon, Rome"], [1903, 64, "Ingalls", "Ingalls Building, Cincinnati"], [1936, 221, "Hoover", "Hoover Dam (dam)"], [1967, 155, "Kaknäs", "Kaknästornet, Stockholm"], [1976, 553, "CN Tower", "CN Tower, Toronto"], [2005, 190, "Turning Torso", "Turning Torso, Malmö"], [2010, 828, "Burj Khalifa", "Burj Khalifa, Dubai"]],
+          how: "The heights are the ones commonly stated for the structures. All have concrete as an important part of the load-bearing parts, but not all are made of concrete alone (the spire of Burj Khalifa is steel). The scale is the same for all bars."
+        }
       }
     }
   };
@@ -157,39 +223,63 @@
   function seeded(seed) { var a = seed; return function () { a |= 0; a = a + 0x6D2B79F5 | 0; var t = Math.imul(a ^ a >>> 15, 1 | a); t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t; return ((t ^ t >>> 14) >>> 0) / 4294967296; }; }
 
   // ---------- 1. concrete mix and water/cement ratio ----------
+  // Two ways to change the ratio: add water to the same amount of cement (what happens on site), or change the cement for the same water (how a mix is designed).
   function buildVct(app) {
-    var S = { vct: 0.5, k: 1, c: 1 }, WATER = [165, 180, 195], CF = [0.8, 1, 1.12];
+    var S = { vct: 0.5, mode: 0, cem: 350, k: 1, c: 1 }, WATER = [165, 180, 195], CF = [0.8, 1, 1.12];
     var W = T.vct;
+    function strength(v, c) { return 162.6 * Math.exp(-2.71 * v) * CF[c]; }
     var sl = slider(W.vct, 0.35, 0.75, 0.01, 0.5, function (v) { return num(v, 2); }, function (v) { S.vct = v; draw(); });
+    var mode = segmented(W.mode, [W.mode0, W.mode1], 0, function (i) { S.mode = i; sCem.box.hidden = i !== 0; kons.box.hidden = i !== 1; draw(); });
+    var sCem = slider(W.cemKg, 250, 500, 10, 350, function (v) { return num(v) + " kg"; }, function (v) { S.cem = v; draw(); });
     var kons = segmented(W.kons, [W.kStel, W.kPlast, W.kFlyt], 1, function (i) { S.k = i; draw(); });
+    kons.box.hidden = true;
     var cem = select(W.cem, ["CEM 32,5 N", "CEM 42,5 N", "CEM 52,5 R"].map(function (x) { return LANG === "en" ? x.replace(",", ".") : x; }), 1, function (i) { S.c = i; draw(); });
     var stC = stat(W.rCem, W.unitKgM3), stW = stat(W.rWater, W.unitLM3), stA = stat(W.rAgg, W.unitKgM3), stS = stat(W.rStr, T.mpa);
     var msg = el("ul", { class: "wmsg" }), extra = el("p", { class: "wgt__extra" });
-    // composition bar
-    var bar = sv("svg", { viewBox: "0 0 600 70", class: "wchart", role: "img", "aria-label": W.barTitle });
-    var segs = ["agg", "cem", "wat", "air"].map(function (k) { var r = sv("rect", { y: 6, height: 32, class: "seg-" + k }); bar.appendChild(r); return r; });
+    // composition bar (HTML, so the parts glide when you drag)
+    var KEYS = ["agg", "cem", "wat", "air"], bar = el("div", { class: "wbar", role: "img", "aria-label": W.barTitle }), segs = KEYS.map(function (k) { var s = el("span", { class: "wbar__s seg-" + k }); bar.appendChild(s); return s; });
     var legend = el("ul", { class: "wleg" });
+    // strength against w/c: the line you move along
+    var CX0 = 44, CY0 = 14, CW = 500, CH = 170;
+    function px(v) { return CX0 + (v - 0.35) / 0.4 * CW; } function py(f) { return CY0 + CH - f / 80 * CH; }
+    var chart = sv("svg", { viewBox: "0 0 560 236", class: "wchart", role: "img", "aria-label": W.chartTitle });
+    chart.appendChild(sv("rect", { x: px(0.4), y: CY0, width: px(0.55) - px(0.4), height: CH, class: "wband" })); chart.appendChild(sv("text", { x: (px(0.4) + px(0.55)) / 2, y: CY0 + 14, "text-anchor": "middle", class: "wax", text: W.band }));
+    var grid = sv("g", { class: "wgrid" });
+    [0, 20, 40, 60, 80].forEach(function (f) { grid.appendChild(sv("line", { x1: CX0, x2: CX0 + CW, y1: py(f), y2: py(f) })); grid.appendChild(sv("text", { x: CX0 - 6, y: py(f) + 4, "text-anchor": "end", text: f })); });
+    [0.35, 0.4, 0.45, 0.5, 0.55, 0.6, 0.65, 0.7, 0.75].forEach(function (v) { grid.appendChild(sv("text", { x: px(v), y: CY0 + CH + 18, "text-anchor": "middle", text: num(v, 2) })); });
+    grid.appendChild(sv("text", { x: CX0 + CW / 2, y: 232, "text-anchor": "middle", class: "wax", text: W.axisVct })); grid.appendChild(sv("text", { x: 4, y: 10, class: "wax", text: W.axisMpa }));
+    chart.appendChild(grid);
+    var curve = sv("path", { class: "wcurve", fill: "none" }), drop = sv("line", { class: "w28", y2: CY0 + CH }), mark = sv("circle", { r: 7, class: "wmark" }), tag = sv("text", { class: "wlbl", "text-anchor": "middle" });
+    chart.appendChild(curve); chart.appendChild(drop); chart.appendChild(mark); chart.appendChild(tag);
     // pores
     var COLS = 30, ROWS = 14, rnd = seeded(7), cells = [], pores = sv("svg", { viewBox: "0 0 " + COLS * 10 + " " + ROWS * 10, class: "wchart wpores", role: "img", "aria-label": W.pores });
     for (var i = 0; i < COLS * ROWS; i++) { var r = rnd(), c = sv("rect", { x: (i % COLS) * 10 + 0.8, y: Math.floor(i / COLS) * 10 + 0.8, width: 8.4, height: 8.4, rx: 1.6 }); c._r = r; cells.push(c); pores.appendChild(c); }
     var porCap = el("p", { class: "wgt__cap" });
     function calc() {
-      var water = WATER[S.k], cemKg = water / S.vct, cemL = cemKg / 3.1, air = 20, aggL = Math.max(0, 1000 - water - cemL - air), aggKg = aggL * 2.65;
-      var f = 162.6 * Math.exp(-2.71 * S.vct) * CF[S.c], wc2 = (water + 10) / cemKg, f2 = 162.6 * Math.exp(-2.71 * wc2) * CF[S.c];
+      var water, cemKg;
+      if (S.mode === 0) { cemKg = S.cem; water = S.vct * cemKg; } else { water = WATER[S.k]; cemKg = water / S.vct; }
+      var cemL = cemKg / 3.1, air = 20, aggL = Math.max(0, 1000 - water - cemL - air), aggKg = aggL * 2.65;
+      var f = strength(S.vct, S.c), wc2 = (water + 10) / cemKg, f2 = strength(wc2, S.c);
       var por = Math.max(0, (S.vct - 0.36 * 0.85) / (S.vct + 0.32));
-      return { water: water, cemKg: cemKg, cemL: cemL, air: air, aggL: aggL, aggKg: aggKg, f: f, df: f - f2, wc2: wc2, por: por };
+      return { water: water, cemKg: cemKg, cemL: cemL, air: air, aggL: aggL, aggKg: aggKg, f: f, df: f - f2, wc2: wc2, por: por, over: 1000 - water - cemL - air < 0 };
     }
     function draw() {
-      var m = calc(), x = 0, tot = m.aggL + m.cemL + m.water + m.air;
-      [["agg", m.aggL], ["cem", m.cemL], ["wat", m.water], ["air", m.air]].forEach(function (p, i) { var w = p[1] / tot * 600; segs[i].setAttribute("x", x); segs[i].setAttribute("width", Math.max(0, w)); x += w; });
+      var m = calc(), tot = m.aggL + m.cemL + m.water + m.air, parts = [m.aggL, m.cemL, m.water, m.air];
+      segs.forEach(function (s, i) { var p = parts[i] / tot * 100; s.style.width = p + "%"; s.textContent = p >= 9 ? num(p) + " %" : ""; });
       legend.innerHTML = "";
       [["agg", W.rAgg, m.aggL], ["cem", W.rCem, m.cemL], ["wat", W.rWater, m.water], ["air", W.air, m.air]].forEach(function (p) { legend.appendChild(el("li", {}, [el("i", { class: "sw sw-" + p[0] }), el("span", { text: p[1] + " " + num(p[2]) + " l" })])); });
       stC.set(num(m.cemKg)); stW.set(num(m.water)); stA.set(num(m.aggKg)); stS.set("≈ " + num(m.f));
+      var pts = []; for (var v = 0.35; v <= 0.7501; v += 0.01) pts.push(px(v).toFixed(1) + " " + py(strength(v, S.c)).toFixed(1));
+      curve.setAttribute("d", "M" + pts.join("L"));
+      var mx = px(S.vct), my = py(m.f); mark.setAttribute("cx", mx); mark.setAttribute("cy", my);
+      drop.setAttribute("x1", mx); drop.setAttribute("x2", mx); drop.setAttribute("y1", my);
+      tag.setAttribute("x", Math.min(CX0 + CW - 40, Math.max(CX0 + 40, mx))); tag.setAttribute("y", Math.max(CY0 + 28, my - 14)); tag.textContent = num(S.vct, 2) + " → " + num(m.f) + " " + T.mpa;
       cells.forEach(function (c) { c.setAttribute("class", c._r < m.por ? "pore" : "paste"); });
       porCap.textContent = num(m.por * 100) + " % " + W.porPct;
       extra.textContent = W.extra.replace("{a}", num(m.wc2, 2)).replace("{b}", num(m.df, 1));
       msg.innerHTML = "";
       var notes = [];
+      if (m.over) notes.push(["warn", W.overfull]);
       if (S.vct < 0.4) notes.push(["info", W.lowVct]);
       if (m.cemKg < 260) notes.push(["warn", W.lowCem]);
       if (m.cemKg > 450) notes.push(["warn", W.highCem]);
@@ -197,8 +287,8 @@
       notes.forEach(function (n) { msg.appendChild(el("li", { class: "wmsg__" + n[0], text: n[1] })); });
     }
     app.appendChild(el("div", { class: "wgt__grid" }, [
-      el("div", { class: "wgt__ctl" }, [sl.box, kons.box, cem.box, extra]),
-      el("div", { class: "wgt__out" }, [el("div", { class: "stats" }, [stC.box, stW.box, stA.box, stS.box]), el("p", { class: "wgt__cap", text: W.barTitle }), bar, legend, pores, porCap, msg])
+      el("div", { class: "wgt__ctl" }, [sl.box, mode.box, sCem.box, kons.box, cem.box, extra]),
+      el("div", { class: "wgt__out" }, [el("div", { class: "stats" }, [stC.box, stW.box, stA.box, stS.box]), el("p", { class: "wgt__cap", text: W.chartTitle }), chart, el("p", { class: "wgt__cap", text: W.barTitle }), bar, legend, pores, porCap, msg])
     ]));
     app.appendChild(how(W.how));
     draw();
@@ -424,7 +514,163 @@
     draw();
   }
 
-  var BUILD = { vct: buildVct, harda: buildHarda, injektering: buildInj, atgang: buildAtg, vadarvad: buildVad, volym: buildVolym, klass: buildKlass };
+  // ---------- 8. the history of concrete: timeline, Pantheon dome, reinforced beam, how high ----------
+  function scene(key) {
+    var g = sv("svg", { viewBox: "0 0 240 140", class: "wscene", role: "img", "aria-hidden": "true" });
+    function a(tag, attrs) { g.appendChild(sv(tag, attrs)); }
+    function ground() { a("line", { x1: 10, x2: 230, y1: 118, y2: 118, class: "hg" }); }
+    var i;
+    if (key === "egypt") {
+      ground(); a("polygon", { points: "40,118 120,38 200,118", class: "hs" });
+      [58, 78, 98].forEach(function (y) { a("line", { x1: 120 - (y - 38), x2: 120 + (y - 38), y1: y, y2: y, class: "hl" }); }); a("circle", { cx: 205, cy: 32, r: 12, class: "ho" });
+    } else if (key === "rome") {
+      ground(); a("rect", { x: 30, y: 44, width: 180, height: 74, class: "hs" });
+      ["M44,118 V92 A22,22 0 0 1 88,92 V118 Z", "M100,118 V92 A22,22 0 0 1 144,92 V118 Z", "M156,118 V92 A22,22 0 0 1 200,92 V118 Z"].forEach(function (d) { a("path", { d: d, class: "hb" }); });
+      a("path", { d: "M30,38 H210", class: "hw" });
+    } else if (key === "pantheon") {
+      ground(); a("rect", { x: 50, y: 100, width: 140, height: 18, class: "hs" }); a("path", { d: "M50,100 A70,70 0 0 1 190,100 Z", class: "hs" });
+      a("path", { d: "M70,100 A50,50 0 0 1 170,100", class: "hl" }); a("path", { d: "M90,100 A30,30 0 0 1 150,100", class: "hl" }); a("circle", { cx: 120, cy: 30, r: 5, class: "hb" });
+      for (i = 0; i < 4; i++) a("rect", { x: 80 + i * 22, y: 104, width: 6, height: 14, class: "hb" });
+    } else if (key === "lighthouse") {
+      a("polygon", { points: "98,118 142,118 130,44 110,44", class: "hs" }); a("line", { x1: 105, x2: 135, y1: 80, y2: 80, class: "hl" }); a("line", { x1: 102, x2: 138, y1: 100, y2: 100, class: "hl" });
+      a("rect", { x: 112, y: 30, width: 16, height: 14, class: "ho" }); a("polygon", { points: "108,30 132,30 120,16", class: "hs" });
+      a("path", { d: "M10,118 q15,-9 30,0 t30,0 t30,0 t30,0 t30,0 t30,0 t30,0 t30,0", class: "hw" });
+    } else if (key === "kiln") {
+      ground(); var gg = sv("g", { transform: "rotate(-7 120 80)" });
+      gg.appendChild(sv("rect", { x: 40, y: 64, width: 160, height: 30, rx: 15, class: "hs" }));
+      [80, 120, 160].forEach(function (x) { gg.appendChild(sv("line", { x1: x, x2: x, y1: 64, y2: 94, class: "hl" })); }); g.appendChild(gg);
+      a("rect", { x: 70, y: 100, width: 10, height: 18, class: "hs" }); a("rect", { x: 160, y: 98, width: 10, height: 20, class: "hs" }); a("circle", { cx: 30, cy: 102, r: 11, class: "ho" });
+    } else if (key === "pot") {
+      ground(); a("polygon", { points: "80,52 160,52 150,114 90,114", class: "hs" }); a("rect", { x: 74, y: 44, width: 92, height: 10, class: "hs" });
+      [66, 82, 98].forEach(function (y) { a("line", { x1: 84, x2: 156, y1: y, y2: y, class: "hr" }); }); [100, 120, 140].forEach(function (x) { a("line", { x1: x, x2: x, y1: 56, y2: 110, class: "hr" }); });
+      a("path", { d: "M120,44 q-6,-22 -24,-26 q0,20 24,26", class: "ho" }); a("path", { d: "M120,44 q6,-22 24,-26 q0,20 -24,26", class: "ho" });
+    } else if (key === "frame") {
+      ground(); [50, 114, 178].forEach(function (x) { a("rect", { x: x, y: 30, width: 12, height: 88, class: "hs" }); });
+      a("rect", { x: 44, y: 70, width: 152, height: 10, class: "hs" }); a("rect", { x: 44, y: 28, width: 152, height: 10, class: "hs" }); a("line", { x1: 50, x2: 190, y1: 77, y2: 77, class: "hr" }); a("line", { x1: 50, x2: 190, y1: 35, y2: 35, class: "hr" });
+    } else if (key === "tower") {
+      ground(); a("rect", { x: 92, y: 16, width: 56, height: 102, class: "hs" });
+      for (i = 1; i < 16; i++) a("line", { x1: 92, x2: 148, y1: 16 + i * 6.4, y2: 16 + i * 6.4, class: "hl" }); a("line", { x1: 120, x2: 120, y1: 16, y2: 118, class: "hl" });
+    } else if (key === "bridge") {
+      ground(); a("rect", { x: 60, y: 84, width: 14, height: 34, class: "hs" }); a("rect", { x: 166, y: 84, width: 14, height: 34, class: "hs" }); a("rect", { x: 14, y: 68, width: 212, height: 16, class: "hs" });
+      a("path", { d: "M14,72 C70,82 170,82 226,72", class: "hr" });
+    } else if (key === "burj") {
+      ground(); a("rect", { x: 100, y: 80, width: 40, height: 38, class: "hs" }); a("rect", { x: 106, y: 54, width: 28, height: 26, class: "hs" }); a("rect", { x: 111, y: 36, width: 18, height: 18, class: "hs" }); a("rect", { x: 115, y: 22, width: 10, height: 14, class: "hs" }); a("line", { x1: 120, x2: 120, y1: 6, y2: 22, class: "hg" });
+    }
+    return g;
+  }
+  function buildTid(app) {
+    var W = T.hist, EV = W.ev, S = { i: 0 };
+    var sl = slider(W.step, 0, EV.length - 1, 1, 0, function (v) { return yearText(EV[v][0]); }, function (v) { S.i = v; draw(); });
+    var rail = el("ul", { class: "wrail" }), btns = [];
+    EV.forEach(function (e, i) { var b = el("button", { type: "button", class: "wrail__b", text: yearShort(e[0]) }); b.addEventListener("click", function () { go(i); }); btns.push(b); rail.appendChild(el("li", {}, [b])); });
+    var prev = el("button", { type: "button", class: "wbtn", text: "‹ " + W.prev }), next = el("button", { type: "button", class: "wbtn", text: W.next + " ›" });
+    var art = el("div", { class: "wscene__box" }), yr = el("p", { class: "whist__yr" }), ttl = el("h3", { class: "whist__t" }), txt = el("p", { class: "whist__d", "aria-live": "polite" });
+    function yearText(y) { return y < 0 ? W.ca + " " + num(-y) + " " + W.bc : (y < 1000 ? W.ca + " " : "") + y; }
+    function yearShort(y) { return y < 0 ? num(-y) + " " + W.bc : String(y); }
+    function go(i) { S.i = Math.max(0, Math.min(EV.length - 1, i)); sl.input.value = S.i; sl.input.dispatchEvent(new Event("input", { bubbles: true })); }
+    prev.addEventListener("click", function () { go(S.i - 1); }); next.addEventListener("click", function () { go(S.i + 1); });
+    function draw() {
+      var e = EV[S.i]; art.innerHTML = ""; art.appendChild(scene(e[1])); yr.textContent = yearText(e[0]); ttl.textContent = e[2]; txt.textContent = e[3];
+      btns.forEach(function (b, i) { b.classList.toggle("is-on", i === S.i); b.setAttribute("aria-current", i === S.i ? "true" : "false"); });
+      prev.disabled = S.i === 0; next.disabled = S.i === EV.length - 1;
+    }
+    app.appendChild(el("div", { class: "whist" }, [art, el("div", { class: "whist__card" }, [yr, ttl, txt, el("div", { class: "whist__nav" }, [prev, next])])]));
+    app.appendChild(el("div", { class: "wgt__one" }, [sl.box, rail]));
+    draw();
+  }
+
+  function buildPantheon(app) {
+    var W = T.hist.ph, S = { p: 35 }, R = 21.65, SC = 4.1, CX = 130, BASE = 108, TH1 = 79.1, N = 26;
+    function thick(deg) { return 6.4 + (1.2 - 6.4) * deg / TH1; }
+    function zone(p) { return p < 30 ? 1 : p < 65 ? 2 : 3; }
+    var sl = slider(W.h, 0, 100, 1, 35, function (v) { return num(v) + " %"; }, function (v) { S.p = v; draw(); });
+    var svgE = sv("svg", { viewBox: "0 0 260 150", class: "wchart wdome", role: "img", "aria-label": W.sz }), segs = [], i, side;
+    function pt(side, deg, rr) { var a = deg * Math.PI / 180; return (CX + side * SC * rr * Math.cos(a)).toFixed(1) + "," + (BASE - SC * rr * Math.sin(a)).toFixed(1); }
+    for (side = -1; side <= 1; side += 2) for (i = 0; i < N; i++) {
+      var a0 = i * TH1 / N, a1 = (i + 1) * TH1 / N, mid = (i + 0.5) / N * 100, p = sv("polygon", { points: [pt(side, a0, R), pt(side, a1, R), pt(side, a1, R + thick(a1)), pt(side, a0, R + thick(a0))].join(" "), class: "wz wz" + zone(mid) });
+      p._m = mid; segs.push(p); svgE.appendChild(p);
+    }
+    [-1, 1].forEach(function (sd) { svgE.appendChild(sv("rect", { x: sd < 0 ? CX - SC * (R + 6.4) : CX + SC * R, y: BASE, width: SC * 6.4, height: 30, class: "wz wz1" })); });
+    var mk = sv("line", { class: "wzmark" }), dot = sv("circle", { r: 4, class: "wmark" });
+    svgE.appendChild(mk); svgE.appendChild(dot);
+    svgE.appendChild(sv("text", { x: CX, y: BASE + 24, "text-anchor": "middle", class: "wtxt", text: W.base })); svgE.appendChild(sv("text", { x: CX, y: 12, "text-anchor": "middle", class: "wtxt", text: W.top }));
+    var stT = stat(W.thick, "m"), stH = stat(W.height, "m"), stM = el("div", { class: "st st--wide" }), mTxt = el("strong", { class: "st__v st__v--s" }); stM.appendChild(mTxt); stM.appendChild(el("span", { class: "st__l", text: W.mat }));
+    var legend = el("ul", { class: "wleg" }); [[1, W.z1], [2, W.z2], [3, W.z3]].forEach(function (z) { legend.appendChild(el("li", {}, [el("i", { class: "sw swz" + z[0] }), el("span", { text: z[1] })])); });
+    function draw() {
+      var deg = S.p / 100 * TH1, t = thick(deg), z = zone(S.p), sd = 1;
+      segs.forEach(function (s) { s.classList.toggle("is-hot", Math.abs(s._m - S.p) < 100 / N * 0.75); });
+      var p1 = pt(sd, deg, R).split(","), p2 = pt(sd, deg, R + t).split(",");
+      mk.setAttribute("x1", p1[0]); mk.setAttribute("y1", p1[1]); mk.setAttribute("x2", p2[0]); mk.setAttribute("y2", p2[1]); dot.setAttribute("cx", (Number(p1[0]) + Number(p2[0])) / 2); dot.setAttribute("cy", (Number(p1[1]) + Number(p2[1])) / 2);
+      stT.set(num(t, 1)); stH.set(num(R * Math.sin(deg * Math.PI / 180), 1)); mTxt.textContent = z === 1 ? W.z1 : z === 2 ? W.z2 : W.z3;
+    }
+    app.appendChild(el("div", { class: "wgt__grid" }, [el("div", { class: "wgt__ctl" }, [sl.box, el("p", { class: "wgt__extra", text: W.note })]), el("div", { class: "wgt__out" }, [svgE, legend, el("div", { class: "stats" }, [stT.box, stH.box, stM])])]));
+    app.appendChild(how(W.how));
+    draw();
+  }
+
+  function buildArm(app) {
+    var W = T.hist.ar, S = { m: 0, l: 0 };
+    var mode = segmented(W.mode, [W.m0, W.m1], 0, function (i) { S.m = i; draw(); });
+    var ld = slider(W.load, 0, 100, 1, 0, function (v) { return num(v) + " %"; }, function (v) { S.l = v; draw(); });
+    var svgE = sv("svg", { viewBox: "0 0 300 160", class: "wchart wbeam", role: "img", "aria-label": W.mode }), body = sv("g"), msg = el("p", { class: "wgt__big", "aria-live": "polite" });
+    var XL = 40, XR = 260, YT = 76, H = 26;
+    function beamPath(d) { var top = [], bot = [], k; for (k = 0; k <= 14; k++) { var x = XL + (XR - XL) * k / 14, dy = d * (1 - Math.pow((x - 150) / 110, 2)); top.push(x.toFixed(1) + "," + (YT + dy).toFixed(1)); bot.unshift(x.toFixed(1) + "," + (YT + H + dy).toFixed(1)); } return top.concat(bot).join(" "); }
+    function line(x1, y1, x2, y2, cls) { return sv("line", { x1: x1, y1: y1, x2: x2, y2: y2, class: cls }); }
+    function draw() {
+      var P = S.l, broken = S.m === 0 && P >= 18, d = S.m === 0 ? Math.min(P, 8) / 8 * 2 : P / 100 * 22, k, st;
+      body.innerHTML = "";
+      body.appendChild(sv("polygon", { points: "44," + (YT + H + 24) + " 56," + (YT + H) + " 68," + (YT + H + 24), class: "wsup" })); body.appendChild(sv("polygon", { points: "232," + (YT + H + 24) + " 244," + (YT + H) + " 256," + (YT + H + 24), class: "wsup" }));
+      if (broken) {
+        var l = sv("g", { transform: "rotate(8 56 " + (YT + H) + ")" }), r = sv("g", { transform: "rotate(-8 244 " + (YT + H) + ")" });
+        l.appendChild(sv("polygon", { points: XL + "," + YT + " 150," + YT + " 150," + (YT + H) + " " + XL + "," + (YT + H), class: "hs" })); r.appendChild(sv("polygon", { points: "150," + YT + " " + XR + "," + YT + " " + XR + "," + (YT + H) + " 150," + (YT + H), class: "hs" }));
+        body.appendChild(l); body.appendChild(r); st = 2;
+      } else {
+        body.appendChild(sv("polygon", { points: beamPath(d), class: "hs" }));
+        if (S.m === 0 && P >= 8) { var cl = (P - 8) / 10 * H; body.appendChild(line(150, YT + H + d, 150, YT + H + d - cl, "wcrack")); st = 1; } else st = 0;
+        if (S.m === 1) {
+          if (P >= 12) for (k = -3; k <= 3; k++) { var cx2 = 150 + k * 16, cdy = d * (1 - Math.pow((cx2 - 150) / 110, 2)), cl2 = Math.max(3, (6 - Math.abs(k) * 1.5)) * (0.5 + P / 100); body.appendChild(line(cx2, YT + H + cdy, cx2, YT + H + cdy - cl2, "wcrack")); }
+          st = P < 12 ? 0 : P < 60 ? 1 : 2;
+          var rb = []; for (k = 0; k <= 14; k++) { var xr = XL + 8 + (XR - XL - 16) * k / 14, dy = d * (1 - Math.pow((xr - 150) / 110, 2)); rb.push((k ? "L" : "M") + xr.toFixed(1) + " " + (YT + H - 5 + dy).toFixed(1)); }
+          body.appendChild(sv("path", { d: rb.join(""), class: "hr", fill: "none" }));
+        }
+      }
+      if (P > 0) {
+        var topY = broken ? YT + 10 : YT + d, ax = 150, len = 8 + P * 0.35, y0 = topY - 4 - len;
+        body.appendChild(line(ax, y0, ax, topY - 3, "wload")); body.appendChild(sv("polygon", { points: (ax - 6) + "," + (topY - 10) + " " + (ax + 6) + "," + (topY - 10) + " " + ax + "," + (topY - 2), class: "wloadhead" }));
+        if (!broken) { body.appendChild(sv("text", { x: 150, y: YT + 17 + d, "text-anchor": "middle", class: "wtxt", text: W.press })); body.appendChild(sv("text", { x: 150, y: YT + H + 14 + d, "text-anchor": "middle", class: "wtxt", text: W.tens })); }
+      }
+      msg.textContent = (S.m === 0 ? [W.a0, W.a1, W.a2] : [W.b0, W.b1, W.b2])[st];
+    }
+    svgE.appendChild(body);
+    app.appendChild(el("div", { class: "wgt__grid" }, [el("div", { class: "wgt__ctl" }, [mode.box, ld.box, el("p", { class: "wgt__extra", text: W.hint })]), el("div", { class: "wgt__out" }, [svgE, msg])]));
+    app.appendChild(how(W.how));
+    draw();
+  }
+
+  function buildHojd(app) {
+    var W = T.hist.hh, IT = W.items, S = { i: 0 }, GY = 262, K = 220 / 828, cur = IT.map(function () { return 0; }), raf = 0;
+    var sl = slider(W.step, 0, IT.length - 1, 1, 0, function (v) { return String(IT[v][0]); }, function (v) { S.i = v; draw(); });
+    var svgE = sv("svg", { viewBox: "0 0 560 300", class: "wchart whigh", role: "img", "aria-label": W.step }), msg = el("p", { class: "wgt__big", "aria-live": "polite" }), note = el("p", { class: "wgt__extra" });
+    [100, 300, 500, 800].forEach(function (m) { svgE.appendChild(sv("line", { x1: 40, x2: 550, y1: GY - m * K, y2: GY - m * K, class: "wgrid-l" })); svgE.appendChild(sv("text", { x: 36, y: GY - m * K + 4, "text-anchor": "end", class: "wtxt", text: m + " m" })); });
+    svgE.appendChild(sv("line", { x1: 40, x2: 550, y1: GY, y2: GY, class: "hg" }));
+    var WID = [54, 30, 58, 20, 14, 24, 28], bars = IT.map(function (it, i) {
+      var cx = 90 + i * 74, w = WID[i], r = sv("rect", { x: cx - w / 2, y: GY, width: w, height: 0, class: "wbarh" + (i === IT.length - 1 ? " wbarh--top" : "") }), lab = sv("text", { x: cx, y: GY + 16, "text-anchor": "middle", class: "wtxt", text: it[2] }), hv = sv("text", { x: cx, y: GY - 6, "text-anchor": "middle", class: "wlbl wlbl--s" });
+      svgE.appendChild(r); svgE.appendChild(lab); svgE.appendChild(hv); return { r: r, hv: hv, lab: lab, w: w, cx: cx };
+    });
+    function paint() { bars.forEach(function (b, i) { var h = cur[i]; b.r.setAttribute("height", Math.max(0, h)); b.r.setAttribute("y", GY - h); b.hv.setAttribute("y", GY - h - 6); b.hv.textContent = h > 1 ? num(Math.round(h / K)) + " m" : ""; b.lab.setAttribute("opacity", i <= S.i ? 1 : 0.25); }); }
+    function draw() {
+      cancelAnimationFrame(raf);
+      var from = cur.slice(), to = IT.map(function (it, i) { return i <= S.i ? it[1] * K : 0; }), t0 = performance.now(), D = REDUCE ? 1 : 650;
+      (function step(now) { var u = Math.min(1, (now - t0) / D), e = 1 - Math.pow(1 - u, 3); cur = from.map(function (f, i) { return f + (to[i] - f) * e; }); paint(); if (u < 1) raf = requestAnimationFrame(step); })(t0);
+      var it = IT[S.i]; msg.textContent = W.now.replace("{y}", it[0]).replace("{n}", it[3]).replace("{h}", num(it[1]));
+      note.textContent = S.i <= 1 ? W.note0 : ""; note.hidden = S.i > 1;
+    }
+    app.appendChild(el("div", { class: "wgt__one" }, [sl.box, msg, svgE, note]));
+    app.appendChild(how(W.how));
+    draw();
+  }
+
+  var BUILD = { vct: buildVct, harda: buildHarda, injektering: buildInj, atgang: buildAtg, vadarvad: buildVad, volym: buildVolym, klass: buildKlass, tidslinje: buildTid, pantheon: buildPantheon, armering: buildArm, hojd: buildHojd };
   [].forEach.call(document.querySelectorAll("[data-widget]"), function (box) {
     var app = box.querySelector(".wgt__app"), fn = BUILD[box.getAttribute("data-widget")];
     if (!app || !fn) return;
