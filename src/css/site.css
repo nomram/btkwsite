@@ -1606,7 +1606,7 @@ td.is-sized { font-weight: 700; }
 /* ---------- history widgets: timeline, dome, beam, heights ---------- */
 .hs { fill: #e8e1d8; stroke: #4a4446; stroke-width: 2; stroke-linejoin: round; } .hb { fill: #fff; stroke: #4a4446; stroke-width: 2; } .ho { fill: #f37d03; stroke: #4a4446; stroke-width: 1.5; stroke-linejoin: round; }
 .hl { fill: none; stroke: #4a4446; stroke-width: 1.4; } .hr { fill: none; stroke: #f37d03; stroke-width: 2.4; stroke-linecap: round; } .hw { fill: none; stroke: #8fbfe0; stroke-width: 4; stroke-linecap: round; } .hg { stroke: #4a4446; stroke-width: 2; }
-.whist { display: grid; grid-template-columns: minmax(0, 17rem) minmax(0, 1fr); gap: 1.4rem 2rem; align-items: center; margin-bottom: 1.2rem; }
+.whist { display: grid; grid-template-columns: minmax(0, 21rem) minmax(0, 1fr); gap: 1.4rem 2rem; align-items: center; margin-bottom: 1.2rem; }
 .wscene__box { padding: .6rem; border-radius: var(--radius); background: #faf7f3; }
 .wscene { display: block; width: 100%; height: auto; }
 .whist__yr { margin: 0 0 .1rem; font-size: .95rem; font-weight: 700; color: var(--primary); }
@@ -1628,7 +1628,7 @@ td.is-sized { font-weight: 700; }
 
 /* ---------- tunnelling widgets ---------- */
 .hd { fill: #4a4446; }
-.whist--tun { grid-template-columns: minmax(0, 24rem) minmax(0, 1fr); }
+.whist--tun { grid-template-columns: minmax(0, 28rem) minmax(0, 1fr); }
 .wtun { display: block; width: 100%; height: auto; border-radius: 8px; }
 .tgnd { fill: #cdbfae; } .tair { fill: #fbf8f4; } .tghost { fill: #f3ece2; stroke: #4a4446; stroke-width: 1.2; stroke-dasharray: 4 3; }
 .tboom { stroke: #4a4446; stroke-width: 4; stroke-linecap: round; } .thole { stroke: #231f20; stroke-width: 3; stroke-linecap: round; } .tcharge { fill: #f37d03; }
@@ -1645,3 +1645,8 @@ td.is-sized { font-weight: 700; }
 @media (max-width: 640px) { .wgrid text, .wax { font-size: 15px; } .wchart .wlbl { font-size: 17px; } .whigh .wtxt { font-size: 10px; } .whigh .wlbl--s { font-size: 12px; } }
 
 .wbar__s.seg-agg { background: #c9c2b9; } .wbar__s.seg-cem { background: #4a4446; } .wbar__s.seg-wat { background: #8fbfe0; } .wbar__s.seg-air { background: #fff; box-shadow: inset 1px 0 0 #ddd5ce; }
+
+.wspray { max-width: 34rem; } .tshotl { fill: #f37d03; } .tcone { fill: rgba(243, 125, 3, .16); }
+
+.wcall { font: 700 9px var(--font); fill: #231f20; paint-order: stroke; stroke: #fff; stroke-width: 3px; stroke-linejoin: round; } .wcall--h { font-size: 11px; }
+.wfig { margin: 0; } .wfig svg { display: block; width: 100%; max-width: 46rem; height: auto; border-radius: 10px; } .wfig__c { margin-top: .6rem; max-width: 46rem; font-size: .88rem; color: var(--muted); }

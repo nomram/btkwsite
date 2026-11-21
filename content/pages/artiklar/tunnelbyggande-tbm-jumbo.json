@@ -95,6 +95,12 @@
           ]
         },
         {
+          "type": "widget",
+          "kind": "illu",
+          "scene": "tbm",
+          "cta": false
+        },
+        {
           "type": "text",
           "html": "Fördelen med en TBM är jämnt tempo och en slät tunnelvägg. Nackdelen är att maskinen är dyr och tar lång tid att bygga och starta, så den lönar sig främst i långa tunnlar. Enligt tradition får tunnelborrmaskiner ofta kvinnonamn, efter Sankta Barbara som är gruvarbetarnas och tunnelbyggarnas skyddshelgon."
         },
@@ -251,6 +257,12 @@
             "<strong>Slurry TBM:</strong> for saturated soil. The pressure is held by a bentonite slurry pumped around the cutterhead.",
             "<strong>Micro TBM and pipe jacking:</strong> for small tunnels where no one can go in, for example for pipes and cables."
           ]
+        },
+        {
+          "type": "widget",
+          "kind": "illu",
+          "scene": "tbm",
+          "cta": false
         },
         {
           "type": "text",

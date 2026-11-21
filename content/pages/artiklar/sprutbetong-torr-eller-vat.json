@@ -8,7 +8,8 @@
   "tags": [
     "sprutbetong",
     "guide",
-    "reed"
+    "reed",
+    "verktyg"
   ],
   "image": "/assets/img/brand-photo-reed.webp",
   "hideIn": [
@@ -29,6 +30,13 @@
         {
           "type": "text",
           "html": "Sprutbetong används i tunnlar, gruvor, för bergförstärkning, slänter och reparationer. Det finns två huvudmetoder, torr och våt, och valet beror på volym, åtkomst och arbetsmiljö."
+        },
+        {
+          "type": "widget",
+          "kind": "spruta",
+          "title": "Spruta själv: studs, avstånd och vinkel",
+          "intro": "Välj metod, flytta munstycket och se hur mycket material som stannar kvar på ytan och hur mycket som studsar ned.",
+          "cta": false
         },
         {
           "type": "heading",
@@ -99,6 +107,13 @@
         {
           "type": "text",
           "html": "Shotcrete is used in tunnels and mines, for rock reinforcement, slopes and repairs. There are two main methods, dry and wet, and the choice depends on volume, access and working environment."
+        },
+        {
+          "type": "widget",
+          "kind": "spruta",
+          "title": "Spray it yourself: rebound, distance and angle",
+          "intro": "Choose the process, move the nozzle and see how much material stays on the surface and how much bounces off.",
+          "cta": false
         },
         {
           "type": "heading",

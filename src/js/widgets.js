@@ -91,6 +91,17 @@
           how: "Höjderna är de som vanligen anges för byggnaderna. Alla har betong som en viktig del av bärande delar, men inte alla är av bara betong (Burj Khalifas spira är av stål). Samma skala gäller för alla staplar."
         }
       },
+      illu: {
+        tbm: { cap: "En tunnelborrmaskin i genomskärning: skärhuvudet borrar, domkrafter trycker maskinen framåt mot den senaste ringen och en bandtransportör för ut massorna.", l: ["Skärhuvud", "Sköld", "Domkrafter", "Tubbingar", "Bandtransportör"] },
+        roman: { cap: "Ett snitt genom en romersk mur: en kärna av betong med stenbitar, och tegel på båda sidorna.", l: ["Tegelbeklädnad", "Betongkärna: stenbitar (caementa) i bruk", "Kalk", "Vulkanisk aska (puzzolan)", "Vatten", "Stenbitar", "Receptet"] }
+      },
+      spr: {
+        method: "Metod", m0: "Torrsprutning", m1: "Våtsprutning", dist: "Avstånd till ytan", ang: "Vinkel mot ytan", area: "Yta", thick: "Tjocklek på lagret",
+        rebound: "Studs (material som faller ned)", need: "Du behöver spruta", inplace: "Blir kvar på ytan", lost: "Studsar ned", m3: "m³",
+        good: "Bra läge: ungefär en meter från ytan och rakt mot den ger minst studs.", near: "För nära: studsen ökar och lagret blir ojämnt.", far: "För långt: sämre kompaktering och mer studs.", slant: "Sprutar du snett mot ytan ökar studsen.",
+        note: "Studsen varierar mycket med blandning, tryck, accelerator och underlag. Siffrorna är typiska ungefärliga värden.",
+        how: "Torrsprutning ger i regel mer studs än våtsprutning. Avstånd och vinkel påverkar studsen. Materialbehovet = yta × tjocklek / (1 − studs). Det som studsar ned räknas som förlust."
+      },
       tun: {
         "cyc": {
           "play": "Spela upp",
@@ -286,6 +297,17 @@
           now: "Built {y}: {n}, {h} metres", items: [[126, 43, "Pantheon", "The Pantheon, Rome"], [1903, 64, "Ingalls", "Ingalls Building, Cincinnati"], [1936, 221, "Hoover", "Hoover Dam (dam)"], [1967, 155, "Kaknäs", "Kaknästornet, Stockholm"], [1976, 553, "CN Tower", "CN Tower, Toronto"], [2005, 190, "Turning Torso", "Turning Torso, Malmö"], [2010, 828, "Burj Khalifa", "Burj Khalifa, Dubai"]],
           how: "The heights are the ones commonly stated for the structures. All have concrete as an important part of the load-bearing parts, but not all are made of concrete alone (the spire of Burj Khalifa is steel). The scale is the same for all bars."
         }
+      },
+      illu: {
+        tbm: { cap: "A tunnel boring machine in cross-section: the cutterhead bores, jacks push the machine forward against the latest ring and a conveyor belt carries the spoil out.", l: ["Cutterhead", "Shield", "Jacks", "Segments", "Conveyor belt"] },
+        roman: { cap: "A cut through a Roman wall: a core of concrete with pieces of stone, and brick on both sides.", l: ["Brick facing", "Concrete core: pieces of stone (caementa) in mortar", "Lime", "Volcanic ash (pozzolana)", "Water", "Stone pieces", "The recipe"] }
+      },
+      spr: {
+        method: "Process", m0: "Dry spraying", m1: "Wet spraying", dist: "Distance to the surface", ang: "Angle to the surface", area: "Area", thick: "Thickness of the layer",
+        rebound: "Rebound (material that falls off)", need: "You need to spray", inplace: "Stays on the surface", lost: "Bounces off", m3: "m³",
+        good: "Good position: about one metre from the surface and straight at it gives the least rebound.", near: "Too close: rebound increases and the layer becomes uneven.", far: "Too far: poorer compaction and more rebound.", slant: "Spraying at an angle to the surface increases rebound.",
+        note: "Rebound varies a lot with the mix, pressure, accelerator and substrate. The numbers are typical approximate values.",
+        how: "Dry spraying usually gives more rebound than wet spraying. Distance and angle affect the rebound. Material needed = area × thickness / (1 − rebound). What bounces off counts as loss."
       },
       tun: {
         "cyc": {
@@ -739,49 +761,199 @@
   }
 
   // ---------- 8. the history of concrete: timeline, Pantheon dome, reinforced beam, how high ----------
-  function scene(key) {
-    var g = sv("svg", { viewBox: "0 0 240 140", class: "wscene", role: "img", "aria-hidden": "true" });
-    function a(tag, attrs) { g.appendChild(sv(tag, attrs)); }
-    function ground() { a("line", { x1: 10, x2: 230, y1: 118, y2: 118, class: "hg" }); }
-    var i;
-    if (key === "egypt") {
-      ground(); a("polygon", { points: "40,118 120,38 200,118", class: "hs" });
-      [58, 78, 98].forEach(function (y) { a("line", { x1: 120 - (y - 38), x2: 120 + (y - 38), y1: y, y2: y, class: "hl" }); }); a("circle", { cx: 205, cy: 32, r: 12, class: "ho" });
-    } else if (key === "rome") {
-      ground(); a("rect", { x: 30, y: 44, width: 180, height: 74, class: "hs" });
-      ["M44,118 V92 A22,22 0 0 1 88,92 V118 Z", "M100,118 V92 A22,22 0 0 1 144,92 V118 Z", "M156,118 V92 A22,22 0 0 1 200,92 V118 Z"].forEach(function (d) { a("path", { d: d, class: "hb" }); });
-      a("path", { d: "M30,38 H210", class: "hw" });
-    } else if (key === "pantheon") {
-      ground(); a("rect", { x: 50, y: 100, width: 140, height: 18, class: "hs" }); a("path", { d: "M50,100 A70,70 0 0 1 190,100 Z", class: "hs" });
-      a("path", { d: "M70,100 A50,50 0 0 1 170,100", class: "hl" }); a("path", { d: "M90,100 A30,30 0 0 1 150,100", class: "hl" }); a("circle", { cx: 120, cy: 30, r: 5, class: "hb" });
-      for (i = 0; i < 4; i++) a("rect", { x: 80 + i * 22, y: 104, width: 6, height: 14, class: "hb" });
-    } else if (key === "lighthouse") {
-      a("polygon", { points: "98,118 142,118 130,44 110,44", class: "hs" }); a("line", { x1: 105, x2: 135, y1: 80, y2: 80, class: "hl" }); a("line", { x1: 102, x2: 138, y1: 100, y2: 100, class: "hl" });
-      a("rect", { x: 112, y: 30, width: 16, height: 14, class: "ho" }); a("polygon", { points: "108,30 132,30 120,16", class: "hs" });
-      a("path", { d: "M10,118 q15,-9 30,0 t30,0 t30,0 t30,0 t30,0 t30,0 t30,0 t30,0", class: "hw" });
-    } else if (key === "kiln") {
-      ground(); var gg = sv("g", { transform: "rotate(-7 120 80)" });
-      gg.appendChild(sv("rect", { x: 40, y: 64, width: 160, height: 30, rx: 15, class: "hs" }));
-      [80, 120, 160].forEach(function (x) { gg.appendChild(sv("line", { x1: x, x2: x, y1: 64, y2: 94, class: "hl" })); }); g.appendChild(gg);
-      a("rect", { x: 70, y: 100, width: 10, height: 18, class: "hs" }); a("rect", { x: 160, y: 98, width: 10, height: 20, class: "hs" }); a("circle", { cx: 30, cy: 102, r: 11, class: "ho" });
-    } else if (key === "pot") {
-      ground(); a("polygon", { points: "80,52 160,52 150,114 90,114", class: "hs" }); a("rect", { x: 74, y: 44, width: 92, height: 10, class: "hs" });
-      [66, 82, 98].forEach(function (y) { a("line", { x1: 84, x2: 156, y1: y, y2: y, class: "hr" }); }); [100, 120, 140].forEach(function (x) { a("line", { x1: x, x2: x, y1: 56, y2: 110, class: "hr" }); });
-      a("path", { d: "M120,44 q-6,-22 -24,-26 q0,20 24,26", class: "ho" }); a("path", { d: "M120,44 q6,-22 24,-26 q0,20 -24,26", class: "ho" });
-    } else if (key === "frame") {
-      ground(); [50, 114, 178].forEach(function (x) { a("rect", { x: x, y: 30, width: 12, height: 88, class: "hs" }); });
-      a("rect", { x: 44, y: 70, width: 152, height: 10, class: "hs" }); a("rect", { x: 44, y: 28, width: 152, height: 10, class: "hs" }); a("line", { x1: 50, x2: 190, y1: 77, y2: 77, class: "hr" }); a("line", { x1: 50, x2: 190, y1: 35, y2: 35, class: "hr" });
-    } else if (key === "tower") {
-      ground(); a("rect", { x: 92, y: 16, width: 56, height: 102, class: "hs" });
-      for (i = 1; i < 16; i++) a("line", { x1: 92, x2: 148, y1: 16 + i * 6.4, y2: 16 + i * 6.4, class: "hl" }); a("line", { x1: 120, x2: 120, y1: 16, y2: 118, class: "hl" });
-    } else if (key === "bridge") {
-      ground(); a("rect", { x: 60, y: 84, width: 14, height: 34, class: "hs" }); a("rect", { x: 166, y: 84, width: 14, height: 34, class: "hs" }); a("rect", { x: 14, y: 68, width: 212, height: 16, class: "hs" });
-      a("path", { d: "M14,72 C70,82 170,82 226,72", class: "hr" });
-    } else if (key === "burj") {
-      ground(); a("rect", { x: 100, y: 80, width: 40, height: 38, class: "hs" }); a("rect", { x: 106, y: 54, width: 28, height: 26, class: "hs" }); a("rect", { x: 111, y: 36, width: 18, height: 18, class: "hs" }); a("rect", { x: 115, y: 22, width: 10, height: 14, class: "hs" }); a("line", { x1: 120, x2: 120, y1: 6, y2: 22, class: "hg" });
+  // ---------- illustration kit: gradients, shading and texture for the scenes ----------
+  var C = { sky1: "#fff7ea", sky2: "#fbe7cb", sand: "#ecdcae", sandD: "#c9b27a", stone: "#e9e1d4", stoneD: "#c8bdab", rock: "#c9baa6", rockD: "#a89883", conc: "#dcd6cc", concD: "#b8b0a3", water: "#8fbfe0", waterD: "#5b9cc6", orange: "#f37d03", orangeL: "#ffb35c", green: "#6fa76a", greenD: "#4a8150", glass: "#b3d4e6", glassD: "#6d9db6", dark: "#3b3436", metal: "#8a8184" };
+  function art(w, h, cls) {
+    var id = "ia" + (++uid), s = sv("svg", { viewBox: "0 0 " + w + " " + h, class: cls || "wscene", role: "img", "aria-hidden": "true" }), defs = sv("defs"), n = 0;
+    s.appendChild(defs);
+    function pts(a) { return a.map(function (p) { return p[0].toFixed(1) + "," + p[1].toFixed(1); }).join(" "); }
+    function style(attrs, ex) {
+      var k; ex = ex || {};
+      if (!ex.ns) { attrs.stroke = ex.stroke || C.dark; attrs["stroke-width"] = ex.sw || 1.6; attrs["stroke-linejoin"] = "round"; }
+      for (k in ex) if (k !== "ns" && k !== "stroke" && k !== "sw") attrs[k] = ex[k];
+      return attrs;
     }
-    return g;
+    var api = {
+      svg: s,
+      grad: function (stops, horizontal) { var name = id + "g" + (++n), g = sv("linearGradient", { id: name, x1: 0, y1: 0, x2: horizontal ? 1 : 0, y2: horizontal ? 0 : 1 }); stops.forEach(function (st) { g.appendChild(sv("stop", { offset: st[0], "stop-color": st[1] })); }); defs.appendChild(g); return "url(#" + name + ")"; },
+      clip: function (d) { var name = id + "c" + (++n), c = sv("clipPath", { id: name }); c.appendChild(sv("path", { d: d })); defs.appendChild(c); return "url(#" + name + ")"; },
+      add: function (tag, attrs, parent) { var e = sv(tag, attrs); (parent || s).appendChild(e); return e; },
+      group: function (attrs) { var g = sv("g", attrs || {}); s.appendChild(g); return g; },
+      rect: function (x, y, w2, h2, fill, ex, parent) { return api.add("rect", style({ x: x, y: y, width: w2, height: h2, fill: fill }, ex), parent); },
+      poly: function (p, fill, ex, parent) { return api.add("polygon", style({ points: pts(p), fill: fill }, ex), parent); },
+      path: function (d, fill, ex, parent) { return api.add("path", style({ d: d, fill: fill }, ex), parent); },
+      circle: function (cx, cy, r, fill, ex, parent) { return api.add("circle", style({ cx: cx, cy: cy, r: r, fill: fill }, ex), parent); },
+      ellipse: function (cx, cy, rx, ry, fill, ex, parent) { return api.add("ellipse", style({ cx: cx, cy: cy, rx: rx, ry: ry, fill: fill }, ex), parent); },
+      line: function (x1, y1, x2, y2, stroke, sw, ex, parent) { var a = { x1: x1, y1: y1, x2: x2, y2: y2, stroke: stroke || C.dark, "stroke-width": sw || 1.4, "stroke-linecap": "round" }; if (ex) for (var k in ex) a[k] = ex[k]; return api.add("line", a, parent); },
+      shadow: function (cx, cy, rx, ry) { return api.ellipse(cx, cy, rx, ry || rx / 7, C.dark, { ns: true, opacity: 0.15 }); },
+      speckle: function (x, y, w2, h2, count, seed, cols, rmax, parent) { var r = seeded(seed); for (var i = 0; i < count; i++) api.circle(x + r() * w2, y + r() * h2, 0.5 + r() * (rmax || 1.4), cols[Math.floor(r() * cols.length)], { ns: true, opacity: 0.55 }, parent); },
+      cube: function (x, y, sz, top, left, right) { var d = sz * 0.5; api.poly([[x, y], [x + sz, y - d], [x + 2 * sz, y], [x + sz, y + d]], top, { sw: 1.2 }); api.poly([[x, y], [x + sz, y + d], [x + sz, y + d + sz], [x, y + sz]], left, { sw: 1.2 }); api.poly([[x + sz, y + d], [x + 2 * sz, y], [x + 2 * sz, y + sz], [x + sz, y + d + sz]], right, { sw: 1.2 }); },
+      sky: function (ground, gy) { api.rect(0, 0, w, h, api.grad([[0, C.sky1], [1, C.sky2]]), { ns: true }); if (ground) api.rect(0, gy, w, h - gy, api.grad([[0, ground[0]], [1, ground[1]]]), { ns: true }); },
+      cloud: function (x, y, k) { var g = api.group({ opacity: 0.85 }); [[0, 0, 16, 7], [14, -4, 14, 8], [28, 0, 16, 7]].forEach(function (c) { api.ellipse(x + c[0] * (k || 1), y + c[1] * (k || 1), c[2] * (k || 1), c[3] * (k || 1), "#fff", { ns: true }, g); }); }
+    };
+    return api;
   }
+
+  // ---------- timeline scenes ----------
+  function scene(key) {
+    var a = art(320, 200), i, c;
+    if (key === "egypt") {
+      a.sky([C.sand, "#d8c48f"], 156); a.circle(264, 46, 38, "rgba(243,125,3,.16)", { ns: true }); a.circle(264, 46, 18, C.orange, { sw: 1.4 });
+      a.path("M0,160 Q70,140 140,158 T290,150 T320,152 V200 H0 Z", a.grad([[0, "#efdfb2"], [1, "#d3bd85"]]), { ns: true }); a.shadow(160, 184, 120, 9);
+      var A = [168, 34], L = [50, 164], F = [158, 184], R = [274, 162];
+      a.poly([A, L, F], a.grad([[0, "#f3e6bd"], [1, "#e0cc98"]], true), { sw: 1.8 }); a.poly([A, F, R], a.grad([[0, "#d3ba80"], [1, "#b99b5a"]], true), { sw: 1.8 });
+      for (i = 1; i < 9; i++) { var t = i / 9, pl = [A[0] + (L[0] - A[0]) * t, A[1] + (L[1] - A[1]) * t], pf = [A[0] + (F[0] - A[0]) * t, A[1] + (F[1] - A[1]) * t], pr = [A[0] + (R[0] - A[0]) * t, A[1] + (R[1] - A[1]) * t]; a.line(pl[0], pl[1], pf[0], pf[1], "rgba(59,52,54,.3)", 1); a.line(pf[0], pf[1], pr[0], pr[1], "rgba(59,52,54,.3)", 1); }
+      a.cube(30, 176, 14, "#f3e6bd", "#e0cc98", "#c4a965"); a.cube(60, 182, 14, "#f3e6bd", "#e0cc98", "#c4a965"); a.line(32, 168, 56, 168, "#fff", 2.4, { opacity: 0.7 });
+    } else if (key === "rome") {
+      a.sky(["#d6c9a5", "#bfae86"], 160); a.cloud(60, 30, 1.2); a.cloud(250, 46, 1); a.shadow(160, 168, 140, 7);
+      a.rect(20, 104, 280, 56, a.grad([[0, C.stone], [1, C.stoneD]]), {}); a.rect(20, 64, 280, 40, a.grad([[0, "#eee6d8"], [1, C.stone]]), {});
+      for (i = 0; i < 6; i++) a.line(20, 112 + i * 8, 300, 112 + i * 8, "rgba(59,52,54,.13)", 1); for (i = 0; i < 4; i++) a.line(20, 72 + i * 8, 300, 72 + i * 8, "rgba(59,52,54,.13)", 1);
+      [62, 132, 202, 272].forEach(function (cx) { a.path("M" + (cx - 22) + ",160 V128 A22,22 0 0 1 " + (cx + 22) + ",128 V160 Z", a.grad([[0, "#8d806d"], [1, "#b8ab94"]]), {}); a.rect(cx - 5, 100, 10, 8, "#f4eee3", { sw: 1.1 }); });
+      for (i = 0; i < 8; i++) { var cx2 = 37.5 + i * 35; a.path("M" + (cx2 - 11) + ",104 V90 A11,11 0 0 1 " + (cx2 + 11) + ",90 V104 Z", a.grad([[0, "#8d806d"], [1, "#b8ab94"]]), { sw: 1.4 }); }
+      a.rect(14, 52, 292, 13, C.stoneD, {}); a.rect(18, 55, 284, 6, a.grad([[0, C.water], [1, C.waterD]]), { ns: true }); a.line(20, 56, 300, 56, "#fff", 1, { opacity: 0.6 });
+    } else if (key === "pantheon") {
+      a.sky(["#d6c9a5", "#bfae86"], 164); a.cloud(40, 36, 1.1); a.cloud(262, 30, 0.9); a.shadow(160, 170, 110, 6);
+      a.path("M72,94 A88,68 0 0 1 248,94 Z", a.grad([[0, "#e4ddd0"], [1, "#c1b7a5"]], true), { sw: 1.8 });
+      [[92, 0.78], [114, 0.56], [136, 0.34]].forEach(function (p) { a.path("M" + p[0] + ",94 A" + (88 - (p[0] - 72)) + "," + (68 * (1 - (p[0] - 72) / 88 + 0.0)) + " 0 0 1 " + (320 - p[0]) + ",94", "none", { stroke: "rgba(59,52,54,.35)", sw: 1 }); });
+      a.ellipse(160, 28, 10, 3.6, "#fff7ea", { sw: 1.2 });
+      a.rect(72, 94, 176, 56, a.grad([[0, "#d4c9b7"], [1, "#b9ad99"]]), {}); for (i = 0; i < 3; i++) a.line(72, 108 + i * 14, 248, 108 + i * 14, "rgba(59,52,54,.18)", 1);
+      a.poly([[84, 104], [160, 74], [236, 104]], C.stone, {}); a.poly([[96, 102], [160, 79], [224, 102]], "#d9cfbd", { sw: 1 }); a.rect(82, 102, 156, 9, "#f1eadd", {});
+      var colG = a.grad([[0, "#f6f1e8"], [0.55, "#e6ddcd"], [1, "#bfb4a1"]], true);
+      a.rect(148, 118, 24, 42, "#5d5046", { sw: 1.4 });
+      for (i = 0; i < 8; i++) { var x = 92 + i * 19.5; a.rect(x - 5, 111, 10, 49, colG, { sw: 1.2 }); a.rect(x - 6.5, 109, 13, 3, "#f1eadd", { sw: 1 }); }
+      a.rect(78, 160, 164, 5, "#efe8da", {}); a.rect(74, 165, 172, 5, "#e2d9c8", {});
+    } else if (key === "lighthouse") {
+      a.rect(0, 0, 320, 200, a.grad([[0, "#fbe2bd"], [1, "#fff4e0"]]), { ns: true }); a.rect(0, 126, 320, 74, a.grad([[0, C.water], [1, C.waterD]]), { ns: true });
+      for (i = 0; i < 6; i++) { a.path("M" + (10 + i * 54) + "," + (140 + (i % 3) * 14) + " q12,-8 24,0 t24,0", "none", { stroke: "rgba(255,255,255,.55)", sw: 2 }); }
+      a.poly([[104, 160], [128, 140], [150, 148], [176, 138], [214, 160]], a.grad([[0, "#9b9094"], [1, "#6d6366"]]), { sw: 1.6 });
+      var tw = "M130,150 C144,142 150,112 153,66 L169,66 C172,112 178,142 192,150 Z"; a.path(tw, a.grad([[0, "#f0e9db"], [0.6, "#d9cfbc"], [1, "#b3a792"]], true), { sw: 1.8 });
+      var cg = a.group({ "clip-path": a.clip(tw) }); for (i = 0; i < 12; i++) a.line(120, 72 + i * 7, 200, 72 + i * 7, "rgba(59,52,54,.25)", 1, null, cg);
+      a.poly([[150, 28], [172, 28], [161, 14]], C.dark, { sw: 1.2 }); a.rect(150, 40, 22, 20, a.grad([[0, "#ffe7a6"], [1, C.orange]]), { sw: 1.4 }); a.rect(146, 60, 30, 6, C.dark, { ns: true }); a.rect(148, 34, 26, 6, C.dark, { ns: true });
+      a.poly([[150, 48], [0, 30], [0, 70]], "rgba(255,214,120,.38)", { ns: true }); a.poly([[172, 48], [320, 30], [320, 70]], "rgba(255,214,120,.38)", { ns: true });
+      a.path("M112,160 q10,-10 20,0 t20,0 t20,0 t20,0", "none", { stroke: "#fff", sw: 3, opacity: 0.8 });
+    } else if (key === "kiln") {
+      a.rect(0, 0, 320, 200, a.grad([[0, "#efe6d6"], [1, "#dccfb8"]]), { ns: true }); a.rect(0, 160, 320, 40, a.grad([[0, "#b9ab95"], [1, "#988a74"]]), { ns: true }); a.shadow(160, 168, 130, 6);
+      a.rect(276, 44, 30, 116, a.grad([[0, "#cfc7ba"], [1, "#a39a8c"]], true), {}); [66, 92, 118].forEach(function (y) { a.poly([[270, y], [312, y], [291, y + 18]], "#bdb4a6", { sw: 1.3 }); });
+      a.ellipse(290, 28, 22, 11, "rgba(120,110,104,.35)", { ns: true }); a.ellipse(302, 14, 16, 8, "rgba(120,110,104,.25)", { ns: true });
+      a.rect(78, 126, 18, 34, "#8f877c", {}); a.rect(190, 118, 18, 42, "#8f877c", {});
+      var kg = a.group({ transform: "rotate(-6 150 104)" }); var kb = a.grad([[0, "#f3eee5"], [0.45, "#d9d1c3"], [1, "#9a9082"]]);
+      a.rect(36, 84, 238, 40, kb, { sw: 1.8 }, kg); [84, 150, 214].forEach(function (x) { a.rect(x, 80, 9, 48, "#7b7168", { sw: 1.2 }, kg); }); a.rect(118, 78, 22, 52, "#a99f90", { sw: 1.2 }, kg);
+      a.poly([[38, 92], [10, 82], [0, 104], [10, 124], [38, 116]], C.orange, { sw: 1.4 }, kg); a.poly([[30, 98], [12, 94], [6, 104], [12, 114], [30, 110]], "#ffd57a", { ns: true }, kg);
+      a.rect(30, 150, 30, 18, "#f3ede1", { sw: 1.4 }); a.rect(30, 156, 30, 5, C.orange, { ns: true });
+    } else if (key === "pot") {
+      a.sky(["#cdbb98", "#b3a07c"], 164); a.shadow(160, 172, 80, 6);
+      var body = [[98, 96], [222, 96], [208, 170], [112, 170]], cg2 = a.grad([[0, "#d2cbc0"], [0.5, "#e6e0d6"], [1, "#b4ac9f"]], true);
+      var leaf = a.grad([[0, C.green], [1, C.greenD]]);
+      a.path("M160,84 C158,60 140,40 108,34 C108,64 128,80 160,84 Z", leaf, { sw: 1.4 }); a.path("M160,84 C162,56 184,36 214,30 C216,62 194,80 160,84 Z", leaf, { sw: 1.4 }); a.path("M160,84 C160,60 160,44 160,20 C148,38 150,66 160,84 Z", a.grad([[0, "#85b97c"], [1, C.green]]), { sw: 1.4 });
+      a.poly(body, cg2, { sw: 1.8 }); a.rect(90, 82, 140, 15, a.grad([[0, "#e6e0d6"], [1, "#c1b9ab"]]), { sw: 1.8 });
+      var cut = a.group({ "clip-path": a.clip("M98,96 L222,96 L208,170 L112,170 Z") }); a.rect(158, 96, 70, 76, "#f1ece3", { sw: 1.4, "stroke-dasharray": "5 3" }, cut); a.speckle(160, 98, 66, 70, 46, 5, ["#a69d90", "#c9c1b5", "#8b8378"], 1.4, cut);
+      for (i = 0; i < 6; i++) { a.line(158, 108 + i * 11, 228, 108 + i * 11, C.orange, 2, null, cut); a.line(172 + i * 11, 96, 172 + i * 11 - 3, 172, C.orange, 2, null, cut); }
+    } else if (key === "frame") {
+      a.sky(["#c9b99a", "#b09f7e"], 164); a.shadow(160, 170, 130, 6);
+      var cc = a.grad([[0, "#e0dad0"], [1, "#b9b1a4"]], true);
+      a.rect(78, 66, 80, 40, "#f1eadc", { sw: 1.2 }); a.rect(158, 66, 90, 40, "#f1eadc", { sw: 1.2 }); a.rect(78, 112, 80, 48, "#f1eadc", { sw: 1.2 }); a.rect(158, 112, 90, 48, "#f1eadc", { sw: 1.2 });
+      a.rect(100, 76, 36, 22, C.glass, { sw: 1.2 }); a.rect(190, 76, 36, 22, C.glass, { sw: 1.2 }); a.rect(100, 126, 36, 24, C.glass, { sw: 1.2 }); a.rect(190, 126, 36, 24, C.glass, { sw: 1.2 });
+      [70, 152, 240].forEach(function (x) { a.rect(x, 54, 14, 108, cc, { sw: 1.6 }); }); a.rect(62, 100, 202, 12, cc, { sw: 1.6 }); a.rect(62, 54, 202, 12, cc, { sw: 1.6 }); a.rect(58, 160, 210, 8, "#a69c8e", { sw: 1.4 });
+      a.line(70, 106, 262, 106, C.orange, 2.2); a.line(70, 60, 262, 60, C.orange, 2.2);
+      a.circle(48, 40, 32, "#fff", { sw: 2 }); a.rect(30, 28, 36, 26, "#e4ded3", { sw: 1.5 }); a.speckle(30, 28, 36, 26, 16, 3, ["#a69d90", "#8b8378"], 1, a.svg);
+      a.rect(34, 32, 28, 18, "none", { stroke: C.orange, sw: 1.4 }); [[38, 46], [46, 46], [54, 46], [42, 36], [50, 36]].forEach(function (p) { a.circle(p[0], p[1], 2.2, C.orange, { ns: true }); });
+      a.line(64, 58, 82, 98, "rgba(59,52,54,.45)", 1.2, { "stroke-dasharray": "3 3" });
+    } else if (key === "tower") {
+      a.sky(["#8e8a88", "#6e6a68"], 160); a.rect(0, 160, 320, 40, a.grad([[0, "#7d7878"], [1, "#5d5859"]]), { ns: true }); a.line(0, 182, 320, 182, "#d9d3c9", 2, { "stroke-dasharray": "14 10" });
+      [[0, 98, 40, 62], [34, 120, 30, 40], [226, 112, 34, 48], [256, 92, 36, 68], [288, 130, 32, 30]].forEach(function (b) { a.rect(b[0], b[1], b[2], b[3], a.grad([[0, "#cbc5bb"], [1, "#b3ada3"]]), { sw: 1.2 }); });
+      a.shadow(170, 164, 90, 5);
+      a.rect(116, 24, 80, 136, a.grad([[0, "#ece5d8"], [1, "#d3c9b8"]]), { sw: 1.8 }); a.poly([[196, 24], [212, 32], [212, 158], [196, 160]], "#b3a994", { sw: 1.6 });
+      a.rect(112, 18, 88, 8, "#f4eee3", { sw: 1.6 }); a.rect(140, 8, 40, 10, "#d3c9b8", { sw: 1.4 }); a.line(160, 8, 160, 0, C.dark, 1.4);
+      var gg = a.grad([[0, "#c4dbe8"], [1, C.glassD]]);
+      for (var r = 0; r < 16; r++) for (c = 0; c < 6; c++) a.rect(121 + c * 12.5, 30 + r * 7.2, 8, 5, gg, { sw: 0.8 });
+      a.rect(124, 146, 70, 14, "#c9bfae", { sw: 1.4 }); [132, 150, 168].forEach(function (x) { a.path("M" + x + ",160 V153 A5,5 0 0 1 " + (x + 10) + ",153 V160 Z", "#5d5046", { sw: 1 }); });
+    } else if (key === "bridge") {
+      a.rect(0, 0, 320, 200, a.grad([[0, "#fdf0dc"], [1, "#e6efef"]]), { ns: true }); a.rect(0, 140, 320, 60, a.grad([[0, C.water], [1, C.waterD]]), { ns: true });
+      for (i = 0; i < 7; i++) a.path("M" + (6 + i * 48) + "," + (156 + (i % 3) * 12) + " q10,-5 20,0 t20,0", "none", { stroke: "rgba(255,255,255,.55)", sw: 1.6 });
+      a.cloud(220, 34, 1.1); a.cloud(60, 50, 0.9);
+      [64, 160, 256].forEach(function (x) { a.poly([[x - 9, 98], [x + 9, 98], [x + 6, 146], [x - 6, 146]], a.grad([[0, "#e6e0d6"], [1, "#b4ac9f"]], true), { sw: 1.6 }); a.ellipse(x, 146, 12, 2.5, "rgba(255,255,255,.7)", { ns: true }); });
+      a.rect(-4, 90, 328, 11, a.grad([[0, "#ece6dc"], [1, "#c1b9ab"]]), { sw: 1.8 }); a.line(0, 86, 320, 86, C.dark, 1.6); for (i = 0; i < 33; i++) a.line(i * 10, 86, i * 10, 90, C.dark, 1);
+      a.circle(262, 46, 33, "#fff", { sw: 2 }); a.rect(240, 34, 44, 24, "#e4ded3", { sw: 1.5 }); a.path("M240,42 Q262,56 284,42", "none", { stroke: C.orange, sw: 2.6 }); [[250, 52], [262, 55], [274, 52]].forEach(function (p) { a.circle(p[0], p[1], 2, C.orange, { ns: true }); });
+      a.line(250, 76, 238, 92, "rgba(59,52,54,.45)", 1.2, { "stroke-dasharray": "3 3" });
+    } else if (key === "burj") {
+      a.rect(0, 0, 320, 200, a.grad([[0, "#fdeccf"], [1, "#fbf3e6"]]), { ns: true }); a.circle(226, 150, 46, "rgba(243,125,3,.18)", { ns: true });
+      a.rect(0, 160, 320, 40, a.grad([[0, "#d7cdb9"], [1, "#b9ae98"]]), { ns: true });
+      [[8, 112, 26], [36, 126, 22], [70, 104, 24], [226, 120, 24], [254, 100, 26], [286, 124, 24]].forEach(function (b) { a.rect(b[0], b[1], b[2], 160 - b[1], a.grad([[0, "#c1cdd4"], [1, "#9fb0ba"]]), { sw: 1.2 }); });
+      var tiers = [[124, 196, 150], [130, 190, 118], [136, 184, 90], [142, 178, 64], [148, 172, 42], [153, 167, 26]], tg = a.grad([[0, "#d6e8f1"], [1, C.glassD]], true);
+      tiers.forEach(function (tr) { a.rect(tr[0], tr[2], tr[1] - tr[0], 160 - tr[2], tg, { sw: 1.5 }); });
+      tiers.forEach(function (tr) {
+        var mid = (tr[0] + tr[1]) / 2; a.rect(mid, tr[2], tr[1] - mid, 160 - tr[2], "rgba(59,52,54,.16)", { ns: true });
+        for (var m = tr[0] + 8; m < tr[1] - 2; m += 8) a.line(m, tr[2] + 1, m, 160, "rgba(255,255,255,.4)", 1);
+        for (var yy = tr[2] + 8; yy < 160; yy += 9) a.line(tr[0], yy, tr[1], yy, "rgba(59,52,54,.12)", 1);
+      });
+      a.poly([[158, 26], [162, 26], [160, 2]], C.dark, { sw: 1.2 });
+      a.cloud(60, 78, 1.1); a.cloud(250, 60, 1.2); a.cloud(180, 92, 0.8);
+    }
+    return a.svg;
+  }
+
+  // ---------- tunnel scene (longitudinal section) ----------
+  function tunnelScene(step) {
+    var a = art(360, 200, "wchart wtun"), FACE = step >= 3 ? 296 : 268, i, r = seeded(4), cx;
+    a.rect(0, 0, 360, 200, a.grad([[0, C.rock], [1, C.rockD]]), { ns: true });
+    for (i = 0; i < 4; i++) a.path("M0," + (20 + i * 44) + " C90," + (10 + i * 44) + " 200," + (34 + i * 44) + " 360," + (18 + i * 44), "none", { stroke: "rgba(59,52,54,.14)", sw: 2 });
+    a.speckle(0, 0, 360, 200, 120, 21, ["#8e806d", "#d8cbb8", "#7a6d5d"], 1.8);
+    a.rect(0, 56, FACE, 92, a.grad([[0, "#f6f0e4"], [1, "#e4dccd"]]), { ns: true }); a.rect(0, 148, FACE, 10, a.grad([[0, "#8c8584"], [1, "#6b6566"]]), { ns: true }); a.line(0, 148, FACE, 148, C.dark, 1.6);
+    a.rect(0, 52, FACE, 5, step >= 6 ? "#9a9189" : "#b3a996", { ns: true });
+    a.rect(0, 62, Math.min(FACE - 54, 240), 9, a.grad([[0, "#c7c1b8"], [1, "#8b857d"]]), { sw: 1.2 }); for (i = 0; i < 8; i++) a.line(18 + i * 30, 62, 18 + i * 30, 71, "rgba(59,52,54,.45)", 1);
+    for (i = 0; i < 7; i++) { a.circle(24 + i * 36, 78, 2.6, C.orange, { ns: true }); a.circle(24 + i * 36, 78, 6, "rgba(243,125,3,.18)", { ns: true }); }
+    var fp = "M" + FACE + ",56 L" + (FACE + 6) + ",70 L" + (FACE - 2) + ",84 L" + (FACE + 7) + ",100 L" + (FACE - 1) + ",116 L" + (FACE + 6) + ",132 L" + FACE + ",148 L" + (FACE + 24) + ",148 L" + (FACE + 24) + ",56 Z";
+    a.path(fp, a.grad([[0, "#b6a78f"], [1, C.rockD]], true), { sw: 1.4 }); a.speckle(FACE, 58, 20, 88, 14, 9, ["#7a6d5d", "#d8cbb8"], 1.2);
+    function wheel(x, y, rr) { a.circle(x, y, rr, "#2d282a", { sw: 1.2 }); a.circle(x, y, rr * 0.45, "#9a9190", { ns: true }); }
+    var oBody = a.grad([[0, "#ffa63a"], [1, "#d96a00"]]), gBody = a.grad([[0, "#e7e1d6"], [1, "#a79e91"]]);
+    function holes(n, charged) { for (var k = 0; k < n; k++) { var y = 66 + k * 14; a.line(FACE - 22, y, FACE, y, "#2d282a", 3.4); if (charged) a.line(FACE - 12, y, FACE, y, C.orange, 3.4); } }
+    if (step === 0) {
+      a.rect(100, 120, 96, 22, oBody, { sw: 1.8 }); a.rect(166, 96, 34, 26, C.glass, { sw: 1.6 }); a.rect(104, 112, 60, 8, "#e0e0e0", { sw: 1.2 }); wheel(120, 144, 11); wheel(176, 144, 11);
+      a.add("polyline", { points: "194,118 226,96 " + (FACE - 6) + ",86", fill: "none", stroke: C.dark, "stroke-width": 5, "stroke-linecap": "round", "stroke-linejoin": "round" }); a.add("polyline", { points: "194,130 230,126 " + (FACE - 6) + ",114", fill: "none", stroke: "#5b5456", "stroke-width": 5, "stroke-linecap": "round", "stroke-linejoin": "round" });
+      a.rect(FACE - 34, 82, 30, 8, "#5b5456", { sw: 1.2 }); a.rect(FACE - 34, 110, 30, 8, "#5b5456", { sw: 1.2 }); holes(6, false);
+    }
+    if (step === 1) {
+      holes(6, true); a.rect(110, 124, 80, 20, gBody, { sw: 1.8 }); a.rect(166, 104, 28, 22, C.glass, { sw: 1.6 }); wheel(126, 146, 10); wheel(176, 146, 10);
+      a.add("polyline", { points: "192,122 224,112 " + (FACE - 30) + ",92", fill: "none", stroke: C.dark, "stroke-width": 5, "stroke-linecap": "round", "stroke-linejoin": "round" }); a.rect(FACE - 52, 80, 30, 22, "#d0c8bb", { sw: 1.5 }); a.line(FACE - 48, 91, FACE - 4, 92, "#2d282a", 1.6, { "stroke-dasharray": "3 3" });
+    }
+    if (step === 2) {
+      a.rect(FACE, 56, 28, 92, "#f3ece0", { sw: 1.2, "stroke-dasharray": "5 4", opacity: 0.9 });
+      var st = []; for (i = 0; i < 20; i++) { var ang = i * Math.PI / 10, rr = i % 2 ? 16 : 40; st.push([FACE + 14 + Math.cos(ang) * rr, 102 + Math.sin(ang) * rr]); }
+      a.poly(st, "#ffd57a", { ns: true, opacity: 0.9 }); a.poly(st.map(function (p) { return [FACE + 14 + (p[0] - FACE - 14) * 0.62, 102 + (p[1] - 102) * 0.62]; }), C.orange, { ns: true }); a.circle(FACE + 14, 102, 9, "#fff7e0", { ns: true });
+      for (i = 0; i < 9; i++) a.poly([[FACE - 6 - i * 9, 96 + (i % 4) * 12], [FACE - 1 - i * 9, 92 + (i % 4) * 12], [FACE - 2 - i * 9, 101 + (i % 4) * 12]], "#6d6258", { sw: 1 });
+      a.path("M" + (FACE - 40) + ",84 q-14,18 0,36", "none", { stroke: "rgba(243,125,3,.5)", sw: 2.4 }); a.path("M" + (FACE - 56) + ",78 q-20,24 0,48", "none", { stroke: "rgba(243,125,3,.3)", sw: 2.4 });
+    }
+    if (step === 3) {
+      for (i = 0; i < 3; i++) { var yy = 92 + i * 16; a.line(FACE - 12, yy, 118, yy, "#5b9cc6", 3, { "stroke-dasharray": "10 7" }); a.poly([[118, yy - 6], [104, yy], [118, yy + 6]], "#5b9cc6", { ns: true }); }
+      a.ellipse(FACE - 10, 100, 24, 36, "rgba(120,110,104,.38)", { ns: true }); a.ellipse(FACE - 36, 112, 18, 26, "rgba(120,110,104,.22)", { ns: true });
+      a.circle(30, 100, 20, "#b9b1a5", { sw: 1.6 }); for (i = 0; i < 4; i++) a.line(30, 100, 30 + Math.cos(i * 1.57 + 0.4) * 17, 100 + Math.sin(i * 1.57 + 0.4) * 17, C.dark, 3);
+    }
+    if (step === 4) {
+      a.poly([[196, 148], [FACE + 4, 148], [FACE - 6, 118], [FACE - 26, 104], [236, 112], [212, 130]], a.grad([[0, "#9d8f7e"], [1, "#6d6258"]]), { sw: 1.6 }); a.speckle(206, 108, 78, 40, 28, 12, ["#d8cbb8", "#5d5448"], 2);
+      a.rect(76, 122, 70, 22, oBody, { sw: 1.8 }); a.rect(108, 100, 34, 24, C.glass, { sw: 1.6 }); wheel(92, 146, 12); wheel(132, 146, 12);
+      a.add("polyline", { points: "146,130 176,128 184,138", fill: "none", stroke: C.dark, "stroke-width": 5, "stroke-linecap": "round", "stroke-linejoin": "round" }); a.poly([[176, 120], [200, 124], [196, 144], [176, 144]], "#5b5456", { sw: 1.6 });
+    }
+    if (step === 5) {
+      a.rect(90, 122, 84, 22, gBody, { sw: 1.8 }); a.rect(140, 100, 32, 24, C.glass, { sw: 1.6 }); wheel(106, 146, 11); wheel(156, 146, 11);
+      a.add("polyline", { points: "170,114 214,92 " + (FACE - 40) + ",66", fill: "none", stroke: C.dark, "stroke-width": 5, "stroke-linecap": "round", "stroke-linejoin": "round" }); a.poly([[FACE - 46, 62], [FACE - 30, 62], [FACE - 38, 74]], C.orange, { sw: 1.4 });
+      for (i = 0; i < 4; i++) a.poly([[FACE - 30 + i * 9, 78 + i * 12], [FACE - 25 + i * 9, 75 + i * 12], [FACE - 24 + i * 9, 82 + i * 12]], "#6d6258", { sw: 1 }); a.ellipse(FACE - 20, 80, 22, 10, "rgba(120,110,104,.3)", { ns: true });
+    }
+    if (step === 6) {
+      a.path("M0,52 H" + (FACE - 6) + " V64 H0 Z", a.grad([[0, "#bdb6ac"], [1, "#8d867e"]]), { sw: 1.2 }); a.speckle(0, 52, FACE - 6, 12, 60, 17, ["#6d6860", "#d4cec4"], 1);
+      a.rect(80, 122, 92, 22, oBody, { sw: 1.8 }); a.rect(140, 100, 32, 24, C.glass, { sw: 1.6 }); wheel(98, 146, 11); wheel(152, 146, 11);
+      a.add("polyline", { points: "168,114 208,92 " + (FACE - 66) + ",72", fill: "none", stroke: C.dark, "stroke-width": 5, "stroke-linecap": "round", "stroke-linejoin": "round" }); a.rect(FACE - 72, 64, 12, 18, "#5b5456", { sw: 1.2 });
+      a.poly([[FACE - 62, 70], [FACE - 20, 52], [FACE - 20, 66]], "rgba(120,114,108,.4)", { ns: true }); for (i = 0; i < 12; i++) a.circle(FACE - 60 + r() * 40, 56 + r() * 12, 1.3, "#6d6860", { ns: true });
+    }
+    if (step === 7) {
+      a.path("M0,52 H" + (FACE - 6) + " V64 H0 Z", a.grad([[0, "#bdb6ac"], [1, "#8d867e"]]), { sw: 1.2 });
+      for (i = 0; i < 7; i++) { cx = 30 + i * 40; a.line(cx, 58, cx, 20, C.orange, 3); a.rect(cx - 6, 56, 12, 5, "#5b5456", { sw: 1 }); a.circle(cx, 20, 2.6, "#ffd57a", { sw: 1 }); }
+      a.path("M232,52 l8,-14 l-6,-12 l8,-14", "none", { stroke: "#2d282a", sw: 3 }); a.path("M232,52 l8,-14 l-6,-12 l8,-14", "none", { stroke: "#ffb35c", sw: 1.4 });
+      a.rect(90, 122, 92, 22, gBody, { sw: 1.8 }); a.rect(150, 100, 32, 24, C.glass, { sw: 1.6 }); wheel(108, 146, 11); wheel(162, 146, 11);
+      a.add("polyline", { points: "178,114 206,92 232,72", fill: "none", stroke: C.dark, "stroke-width": 5, "stroke-linecap": "round", "stroke-linejoin": "round" }); a.add("path", { d: "M0,134 C60,124 90,140 100,132", fill: "none", stroke: "#5b9cc6", "stroke-width": 0 });
+    }
+    return a.svg;
+  }
+
   function buildTid(app) {
     var W = T.hist, EV = W.ev, S = { i: 0 };
     var sl = slider(W.step, 0, EV.length - 1, 1, 0, function (v) { return yearText(EV[v][0]); }, function (v) { S.i = v; draw(); });
@@ -808,7 +980,10 @@
     function thick(deg) { return 6.4 + (1.2 - 6.4) * deg / TH1; }
     function zone(p) { return p < 30 ? 1 : p < 65 ? 2 : 3; }
     var sl = slider(W.h, 0, 100, 1, 35, function (v) { return num(v) + " %"; }, function (v) { S.p = v; draw(); });
-    var svgE = sv("svg", { viewBox: "0 0 260 150", class: "wchart wdome", role: "img", "aria-label": W.sz }), segs = [], i, side;
+    var A = art(260, 150, "wchart wdome"), svgE = A.svg, segs = [], i, side;
+    A.rect(0, 0, 260, 150, A.grad([[0, "#fff7ea"], [1, "#f6ead5"]]), { ns: true });
+    A.poly([[CX - SC * 4.1, BASE - SC * (R + 1.2)], [CX + SC * 4.1, BASE - SC * (R + 1.2)], [CX + 74, BASE + 30], [CX - 74, BASE + 30]], "rgba(255,206,110,.3)", { ns: true });
+    A.rect(0, BASE + 30, 260, 20, A.grad([[0, "#cdbb94"], [1, "#a8966c"]]), { ns: true });
     function pt(side, deg, rr) { var a = deg * Math.PI / 180; return (CX + side * SC * rr * Math.cos(a)).toFixed(1) + "," + (BASE - SC * rr * Math.sin(a)).toFixed(1); }
     for (side = -1; side <= 1; side += 2) for (i = 0; i < N; i++) {
       var a0 = i * TH1 / N, a1 = (i + 1) * TH1 / N, mid = (i + 0.5) / N * 100, p = sv("polygon", { points: [pt(side, a0, R), pt(side, a1, R), pt(side, a1, R + thick(a1)), pt(side, a0, R + thick(a0))].join(" "), class: "wz wz" + zone(mid) });
@@ -818,6 +993,8 @@
     var mk = sv("line", { class: "wzmark" }), dot = sv("circle", { r: 4, class: "wmark" });
     svgE.appendChild(mk); svgE.appendChild(dot);
     svgE.appendChild(sv("text", { x: CX, y: BASE + 24, "text-anchor": "middle", class: "wtxt", text: W.base })); svgE.appendChild(sv("text", { x: CX, y: 12, "text-anchor": "middle", class: "wtxt", text: W.top }));
+    A.line(CX - SC * R + 2, BASE + 12, CX + SC * R - 2, BASE + 12, C.dark, 1.2); A.poly([[CX - SC * R + 2, BASE + 12], [CX - SC * R + 8, BASE + 9], [CX - SC * R + 8, BASE + 15]], C.dark, { ns: true }); A.poly([[CX + SC * R - 2, BASE + 12], [CX + SC * R - 8, BASE + 9], [CX + SC * R - 8, BASE + 15]], C.dark, { ns: true });
+    var dim = A.add("text", { x: CX, y: BASE + 9, "text-anchor": "middle", class: "wcall" }); dim.textContent = "43,3 m";
     var stT = stat(W.thick, "m"), stH = stat(W.height, "m"), stM = el("div", { class: "st st--wide" }), mTxt = el("strong", { class: "st__v st__v--s" }); stM.appendChild(mTxt); stM.appendChild(el("span", { class: "st__l", text: W.mat }));
     var legend = el("ul", { class: "wleg" }); [[1, W.z1], [2, W.z2], [3, W.z3]].forEach(function (z) { legend.appendChild(el("li", {}, [el("i", { class: "sw swz" + z[0] }), el("span", { text: z[1] })])); });
     function draw() {
@@ -836,7 +1013,7 @@
     var W = T.hist.ar, S = { m: 0, l: 0 };
     var mode = segmented(W.mode, [W.m0, W.m1], 0, function (i) { S.m = i; draw(); });
     var ld = slider(W.load, 0, 100, 1, 0, function (v) { return num(v) + " %"; }, function (v) { S.l = v; draw(); });
-    var svgE = sv("svg", { viewBox: "0 0 300 160", class: "wchart wbeam", role: "img", "aria-label": W.mode }), body = sv("g"), msg = el("p", { class: "wgt__big", "aria-live": "polite" });
+    var A = art(300, 160, "wchart wbeam"), svgE = A.svg, bg = A.grad([[0, "#ece6dc"], [1, "#bdb4a5"]]), body = sv("g"), msg = el("p", { class: "wgt__big", "aria-live": "polite" });
     var XL = 40, XR = 260, YT = 76, H = 26;
     function beamPath(d) { var top = [], bot = [], k; for (k = 0; k <= 14; k++) { var x = XL + (XR - XL) * k / 14, dy = d * (1 - Math.pow((x - 150) / 110, 2)); top.push(x.toFixed(1) + "," + (YT + dy).toFixed(1)); bot.unshift(x.toFixed(1) + "," + (YT + H + dy).toFixed(1)); } return top.concat(bot).join(" "); }
     function line(x1, y1, x2, y2, cls) { return sv("line", { x1: x1, y1: y1, x2: x2, y2: y2, class: cls }); }
@@ -846,10 +1023,10 @@
       body.appendChild(sv("polygon", { points: "44," + (YT + H + 24) + " 56," + (YT + H) + " 68," + (YT + H + 24), class: "wsup" })); body.appendChild(sv("polygon", { points: "232," + (YT + H + 24) + " 244," + (YT + H) + " 256," + (YT + H + 24), class: "wsup" }));
       if (broken) {
         var l = sv("g", { transform: "rotate(8 56 " + (YT + H) + ")" }), r = sv("g", { transform: "rotate(-8 244 " + (YT + H) + ")" });
-        l.appendChild(sv("polygon", { points: XL + "," + YT + " 150," + YT + " 150," + (YT + H) + " " + XL + "," + (YT + H), class: "hs" })); r.appendChild(sv("polygon", { points: "150," + YT + " " + XR + "," + YT + " " + XR + "," + (YT + H) + " 150," + (YT + H), class: "hs" }));
+        l.appendChild(sv("polygon", { points: XL + "," + YT + " 150," + YT + " 150," + (YT + H) + " " + XL + "," + (YT + H), fill: bg, stroke: "#3b3436", "stroke-width": 1.8, "stroke-linejoin": "round" })); r.appendChild(sv("polygon", { points: "150," + YT + " " + XR + "," + YT + " " + XR + "," + (YT + H) + " 150," + (YT + H), fill: bg, stroke: "#3b3436", "stroke-width": 1.8, "stroke-linejoin": "round" }));
         body.appendChild(l); body.appendChild(r); st = 2;
       } else {
-        body.appendChild(sv("polygon", { points: beamPath(d), class: "hs" }));
+        body.appendChild(sv("polygon", { points: beamPath(d), fill: bg, stroke: "#3b3436", "stroke-width": 1.8, "stroke-linejoin": "round" }));
         if (S.m === 0 && P >= 8) { var cl = (P - 8) / 10 * H; body.appendChild(line(150, YT + H + d, 150, YT + H + d - cl, "wcrack")); st = 1; } else st = 0;
         if (S.m === 1) {
           if (P >= 12) for (k = -3; k <= 3; k++) { var cx2 = 150 + k * 16, cdy = d * (1 - Math.pow((cx2 - 150) / 110, 2)), cl2 = Math.max(3, (6 - Math.abs(k) * 1.5)) * (0.5 + P / 100); body.appendChild(line(cx2, YT + H + cdy, cx2, YT + H + cdy - cl2, "wcrack")); }
@@ -865,7 +1042,7 @@
       }
       msg.textContent = (S.m === 0 ? [W.a0, W.a1, W.a2] : [W.b0, W.b1, W.b2])[st];
     }
-    svgE.appendChild(body);
+    A.rect(0, 0, 300, 160, "#faf7f3", { ns: true }); A.rect(0, 126, 300, 34, A.grad([[0, "#cdbb94"], [1, "#a8966c"]]), { ns: true }); svgE.appendChild(body);
     app.appendChild(el("div", { class: "wgt__grid" }, [el("div", { class: "wgt__ctl" }, [mode.box, ld.box, el("p", { class: "wgt__extra", text: W.hint })]), el("div", { class: "wgt__out" }, [svgE, msg])]));
     app.appendChild(how(W.how));
     draw();
@@ -874,14 +1051,17 @@
   function buildHojd(app) {
     var W = T.hist.hh, IT = W.items, S = { i: 0 }, GY = 262, K = 220 / 828, cur = IT.map(function () { return 0; }), raf = 0;
     var sl = slider(W.step, 0, IT.length - 1, 1, 0, function (v) { return String(IT[v][0]); }, function (v) { S.i = v; draw(); });
-    var svgE = sv("svg", { viewBox: "0 0 560 300", class: "wchart whigh", role: "img", "aria-label": W.step }), msg = el("p", { class: "wgt__big", "aria-live": "polite" }), note = el("p", { class: "wgt__extra" });
+    var A = art(560, 300, "wchart whigh"), svgE = A.svg, msg = el("p", { class: "wgt__big", "aria-live": "polite" }), note = el("p", { class: "wgt__extra" });
+    A.rect(0, 0, 560, 300, A.grad([[0, "#fff7ea"], [1, "#fdeed8"]]), { ns: true }); A.rect(0, GY, 560, 300 - GY, A.grad([[0, "#cdbb94"], [1, "#a8966c"]]), { ns: true });
+    var patId = "wpat" + (++uid), pat = sv("pattern", { id: patId, patternUnits: "userSpaceOnUse", width: 6, height: 8 }); pat.appendChild(sv("rect", { x: 1.5, y: 2, width: 3, height: 4, fill: "rgba(255,255,255,.6)" })); svgE.firstChild.appendChild(pat);
+    var gradG = A.grad([[0, "#a39b9e"], [1, "#6b6366"]], true), gradO = A.grad([[0, "#ffa63a"], [1, "#d96a00"]], true);
     [100, 300, 500, 800].forEach(function (m) { svgE.appendChild(sv("line", { x1: 40, x2: 550, y1: GY - m * K, y2: GY - m * K, class: "wgrid-l" })); svgE.appendChild(sv("text", { x: 36, y: GY - m * K + 4, "text-anchor": "end", class: "wtxt", text: m + " m" })); });
     svgE.appendChild(sv("line", { x1: 40, x2: 550, y1: GY, y2: GY, class: "hg" }));
     var WID = [54, 30, 58, 20, 14, 24, 28], bars = IT.map(function (it, i) {
-      var cx = 90 + i * 74, w = WID[i], r = sv("rect", { x: cx - w / 2, y: GY, width: w, height: 0, class: "wbarh" + (i === IT.length - 1 ? " wbarh--top" : "") }), lab = sv("text", { x: cx, y: GY + 16, "text-anchor": "middle", class: "wtxt", text: it[2] }), hv = sv("text", { x: cx, y: GY - 6, "text-anchor": "middle", class: "wlbl wlbl--s" });
-      svgE.appendChild(r); svgE.appendChild(lab); svgE.appendChild(hv); return { r: r, hv: hv, lab: lab, w: w, cx: cx };
+      var cx = 90 + i * 74, w = WID[i], r = sv("rect", { x: cx - w / 2, y: GY, width: w, height: 0, fill: i === IT.length - 1 ? gradO : gradG, stroke: "#3b3436", "stroke-width": 1.4 }), ov = sv("rect", { x: cx - w / 2, y: GY, width: w, height: 0, fill: "url(#" + patId + ")", opacity: 0.8 }), lab = sv("text", { x: cx, y: GY + 16, "text-anchor": "middle", class: "wtxt", text: it[2] }), hv = sv("text", { x: cx, y: GY - 6, "text-anchor": "middle", class: "wlbl wlbl--s" });
+      svgE.appendChild(r); svgE.appendChild(ov); svgE.appendChild(lab); svgE.appendChild(hv); return { r: r, ov: ov, hv: hv, lab: lab, w: w, cx: cx };
     });
-    function paint() { bars.forEach(function (b, i) { var h = cur[i]; b.r.setAttribute("height", Math.max(0, h)); b.r.setAttribute("y", GY - h); b.hv.setAttribute("y", GY - h - 6); b.hv.textContent = h > 1 ? num(Math.round(h / K)) + " m" : ""; b.lab.setAttribute("opacity", i <= S.i ? 1 : 0.25); }); }
+    function paint() { bars.forEach(function (b, i) { var h = cur[i]; b.r.setAttribute("height", Math.max(0, h)); b.r.setAttribute("y", GY - h); b.ov.setAttribute("height", Math.max(0, h)); b.ov.setAttribute("y", GY - h); b.hv.setAttribute("y", GY - h - 6); b.hv.textContent = h > 1 ? num(Math.round(h / K)) + " m" : ""; b.lab.setAttribute("opacity", i <= S.i ? 1 : 0.25); }); }
     function draw() {
       cancelAnimationFrame(raf);
       var from = cur.slice(), to = IT.map(function (it, i) { return i <= S.i ? it[1] * K : 0; }), t0 = performance.now(), D = REDUCE ? 1 : 650;
@@ -895,23 +1075,66 @@
   }
 
   // ---------- 9. tunnelling: the drill-and-blast cycle, and what ground means for method and risk ----------
-  function tunnelScene(step) {
-    var g = sv("svg", { viewBox: "0 0 320 150", class: "wchart wtun", role: "img", "aria-hidden": "true" }), FACE = step >= 3 ? 262 : 240, i;
-    function a(tag, attrs) { var e = sv(tag, attrs); g.appendChild(e); return e; }
-    a("rect", { x: 0, y: 0, width: 320, height: 150, class: "tgnd" }); a("rect", { x: 0, y: 48, width: FACE, height: 60, class: "tair" });
-    a("line", { x1: 0, x2: FACE, y1: 108, y2: 108, class: "hg" });
-    if (step === 2) a("rect", { x: 240, y: 48, width: 22, height: 60, class: "tghost" });
-    function machine(x, w, label) { a("rect", { x: x, y: 90, width: w, height: 16, rx: 3, class: "hs" }); a("circle", { cx: x + 10, cy: 108, r: 5, class: "hd" }); a("circle", { cx: x + w - 10, cy: 108, r: 5, class: "hd" }); }
-    if (step === 0) { machine(120, 56, "jumbo"); a("line", { x1: 172, y1: 90, x2: 236, y2: 66, class: "tboom" }); for (i = 0; i < 5; i++) a("line", { x1: 222, x2: 240, y1: 54 + i * 11, y2: 54 + i * 11, class: "thole" }); }
-    if (step === 1) { for (i = 0; i < 5; i++) { a("line", { x1: 222, x2: 240, y1: 54 + i * 11, y2: 54 + i * 11, class: "thole" }); a("rect", { x: 230, y: 52 + i * 11, width: 10, height: 4, class: "tcharge" }); } machine(110, 56, "lift"); a("line", { x1: 162, y1: 90, x2: 226, y2: 80, class: "tboom" }); }
-    if (step === 2) { var pts = []; for (i = 0; i < 16; i++) { var ang = i * Math.PI / 8, r = i % 2 ? 12 : 26; pts.push((250 + Math.cos(ang) * r).toFixed(1) + "," + (78 + Math.sin(ang) * r).toFixed(1)); } a("polygon", { points: pts.join(" "), class: "tflash" }); for (i = 0; i < 7; i++) a("circle", { cx: 226 + i * 6, cy: 96 + (i % 3) * 3, r: 3 + (i % 3), class: "tstone" }); }
-    if (step === 3) { for (i = 0; i < 3; i++) { var y = 62 + i * 18; a("line", { x1: 236, y1: y, x2: 120, y2: y, class: "tflow" }); a("polygon", { points: "120," + (y - 5) + " 108," + y + " 120," + (y + 5), class: "tflowhead" }); } a("ellipse", { cx: 246, cy: 80, rx: 20, ry: 26, class: "tdust" }); }
-    if (step === 4) { a("polygon", { points: "190,108 262,108 252,84 224,90 205,98", class: "tpile" }); machine(110, 50, "loader"); a("polygon", { points: "160,92 188,100 188,108 160,108", class: "hs" }); }
-    if (step === 5) { machine(100, 56, "scaler"); a("line", { x1: 150, y1: 90, x2: 214, y2: 52, class: "tboom" }); a("circle", { cx: 216, cy: 51, r: 4, class: "ho" }); for (i = 0; i < 3; i++) a("circle", { cx: 224 + i * 10, cy: 62 + i * 8, r: 2.5, class: "tstone" }); }
-    if (step === 6) { machine(100, 56, "sprayer"); a("line", { x1: 150, y1: 90, x2: 206, y2: 54, class: "tboom" }); a("path", { d: "M10,50 H" + FACE, class: "tshot" }); for (i = 0; i < 4; i++) a("circle", { cx: 214 + i * 6, cy: 52 - i * 1, r: 1.8, class: "tcharge" }); }
-    if (step === 7) { a("path", { d: "M10,50 H" + FACE, class: "tshot" }); for (i = 0; i < 6; i++) { var x = 36 + i * 38; a("line", { x1: x, y1: 50, x2: x, y2: 28, class: "hr" }); a("rect", { x: x - 4, y: 49, width: 8, height: 3, class: "hs" }); } machine(130, 50, "rig"); }
-    return g;
+
+  // ---------- labelled illustrations: TBM cutaway and Roman wall section ----------
+  function callout(a, x, y, tx, ty, text, anchor) {
+    a.line(x, y + 2, tx, ty, C.dark, 1.2, { "stroke-dasharray": "2 2" });
+    a.circle(tx, ty, 2.4, C.orange, { sw: 1 });
+    var t = a.add("text", { x: x, y: y, "text-anchor": anchor || "middle", class: "wcall" }); t.textContent = text;
   }
+  function tbmScene(L) {
+    var a = art(400, 232, "wchart wtbm"), i, r = seeded(8);
+    a.rect(0, 0, 400, 232, a.grad([[0, C.rock], [1, C.rockD]]), { ns: true });
+    for (i = 0; i < 4; i++) a.path("M0," + (20 + i * 56) + " C100," + (10 + i * 56) + " 240," + (32 + i * 56) + " 400," + (18 + i * 56), "none", { stroke: "rgba(59,52,54,.14)", sw: 2 });
+    a.speckle(0, 0, 400, 232, 160, 31, ["#8e806d", "#d8cbb8", "#7a6d5d"], 1.8);
+    a.rect(0, 62, 336, 108, a.grad([[0, "#f7f1e5"], [1, "#e0d7c6"]]), { ns: true });
+    for (i = 0; i < 11; i++) { var x = 34 + i * 14; a.rect(x, 50, 14, 14, i % 2 ? "#cdc6bb" : "#e3ddd3", { sw: 1 }); a.rect(x, 168, 14, 14, i % 2 ? "#cdc6bb" : "#e3ddd3", { sw: 1 }); }
+    a.rect(0, 50, 34, 14, "#b3a996", { ns: true }); a.rect(0, 168, 34, 14, "#b3a996", { ns: true });
+    a.rect(0, 164, 188, 4, "#8c8584", { ns: true });
+    var steel = a.grad([[0, "#d7dadc"], [0.5, "#aeb4b8"], [1, "#7b8186"]]);
+    a.rect(192, 62, 124, 106, steel, { sw: 1.8 }); a.rect(204, 76, 96, 78, "#e9e4da", { sw: 1.2 }); a.rect(206, 96, 92, 4, "#b8b0a3", { ns: true });
+    a.line(252, 118, 220, 80, C.dark, 5); a.rect(206, 70, 26, 8, "#e3ddd3", { sw: 1.2, transform: "rotate(-24 219 74)" }); a.circle(252, 118, 7, "#6b6466", { sw: 1.4 });
+    for (i = 0; i < 5; i++) { a.rect(176, 70 + i * 20, 18, 8, "#4a4446", { sw: 1.2 }); a.rect(166, 72 + i * 20, 12, 4, "#9a9190", { sw: 1 }); }
+    a.poly([[316, 62], [336, 72], [336, 160], [316, 170]], a.grad([[0, "#5b5456"], [1, "#2f2a2c"]], true), { sw: 1.8 });
+    for (i = 0; i < 5; i++) { a.circle(337, 78 + i * 19, 5.2, C.orange, { sw: 1.3 }); a.circle(337, 78 + i * 19, 1.8, "#fff1d6", { ns: true }); }
+    a.rect(0, 124, 306, 6, "#2f2a2c", { sw: 1 }); for (i = 0; i < 31; i++) a.circle(6 + i * 10, 127, 1.6, "#9a9190", { ns: true });
+    for (i = 0; i < 9; i++) a.poly([[300 - i * 34 - 6, 124], [300 - i * 34 + 6, 124], [300 - i * 34 + 4, 116 - (i % 2) * 2], [300 - i * 34 - 4, 117]], "#7a6d5d", { sw: 1 });
+    a.rect(30, 134, 124, 30, "#d6cfc2", { sw: 1.6 }); a.rect(38, 140, 24, 12, C.glass, { sw: 1 }); a.rect(70, 140, 24, 12, C.glass, { sw: 1 }); a.circle(44, 168, 5, "#2d282a", { ns: true }); a.circle(140, 168, 5, "#2d282a", { ns: true });
+    if (L) { callout(a, 324, 22, 330, 80, L[0]); callout(a, 246, 22, 246, 64, L[1]); callout(a, 170, 22, 184, 88, L[2]); callout(a, 100, 22, 100, 54, L[3]); callout(a, 56, 212, 56, 126, L[4]); }
+    return a.svg;
+  }
+  function romanScene(L) {
+    var a = art(460, 230, "wchart wroman"), i, r = seeded(14);
+    a.rect(0, 0, 460, 230, a.grad([[0, C.sky1], [1, C.sky2]]), { ns: true });
+    a.rect(0, 206, 460, 24, a.grad([[0, "#cbb990"], [1, "#a8966c"]]), { ns: true });
+    a.rect(60, 196, 200, 12, "#9a9190", { sw: 1.4 });
+    a.rect(98, 16, 124, 182, "#d9cdb4", { sw: 1.6 }); a.speckle(98, 16, 124, 182, 110, 3, ["#b9a98a", "#efe5cf", "#9d8e72"], 1.1);
+    var cols = ["#a99d90", "#c9b9a0", "#9b8f84", "#b7a58a", "#8e8378", "#c59a79"];
+    for (i = 0; i < 46; i++) {
+      var cx = 104 + r() * 112, cy = 22 + r() * 170, rr = 7 + r() * 9, pts = [], n = 7, k;
+      for (k = 0; k < n; k++) { var an = k / n * 6.283 + r() * 0.5, rd = rr * (0.7 + r() * 0.5); pts.push([Math.max(100, Math.min(220, cx + Math.cos(an) * rd)), Math.max(18, Math.min(196, cy + Math.sin(an) * rd * 0.85))]); }
+      a.poly(pts, cols[i % cols.length], { sw: 1, opacity: 0.95 });
+    }
+    function bricks(x0) {
+      for (var row = 0; row < 18; row++) {
+        var y = 16 + row * 10.1, off = row % 2 ? 7 : 0;
+        for (var b = 0; b < 3; b++) { var bx = x0 + b * 15 - off, w = 14; if (bx < x0) { w -= x0 - bx; bx = x0; } if (bx + w > x0 + 30) w = x0 + 30 - bx; if (w > 1) a.rect(bx, y, w, 9.2, row % 3 === 0 ? "#bf6f4f" : row % 3 === 1 ? "#cc7d5a" : "#b5644a", { sw: 0.9, stroke: "#e9dcc2" }); }
+      }
+    }
+    bricks(68); bricks(222);
+    a.rect(66, 12, 32, 4, "#8e8378", { ns: true }); a.rect(222, 12, 32, 4, "#8e8378", { ns: true }); a.rect(94, 12, 132, 4, "#8e8378", { ns: true });
+    callout(a, 70, 224, 82, 140, L[0], "middle"); callout(a, 160, 8, 160, 60, L[1], "middle"); callout(a, 236, 224, 238, 150, L[0], "middle");
+    var ix = 296, ing = [[L[2], "#f3ede1"], [L[3], "#7d7068"], [L[4], "#8fbfe0"], [L[5], "#a99d90"]];
+    a.rect(278, 30, 172, 170, "#fff", { sw: 1.4, opacity: 0.92 }); var tt = a.add("text", { x: 292, y: 52, class: "wcall wcall--h" }); tt.textContent = L[6];
+    ing.forEach(function (g, k) { var y = 80 + k * 28; a.circle(300, y, 9, g[1], { sw: 1.4 }); if (k === 1) a.speckle(292, y - 8, 16, 16, 8, 6, ["#b9a98a", "#4a4446"], 1); var t2 = a.add("text", { x: 318, y: y + 4, class: "wcall" }); t2.textContent = g[0]; });
+    return a.svg;
+  }
+  function buildIllu(app, box) {
+    var key = box && box.getAttribute("data-scene"), D = T.illu[key]; if (!D) return;
+    var svgE = key === "tbm" ? tbmScene(D.l) : romanScene(D.l), fig = el("figure", { class: "wfig" }, [svgE, el("figcaption", { class: "wfig__c", text: D.cap })]);
+    app.appendChild(fig);
+  }
+
   function buildTunCycle(app) {
     var W = T.tun.cyc, S = { i: 0, timer: 0 }, ST = W.steps;
     var art = el("div", { class: "wscene__box wscene__box--wide" }), yr = el("p", { class: "whist__yr" }), ttl = el("h3", { class: "whist__t" }), txt = el("p", { class: "whist__d", "aria-live": "polite" });
@@ -943,7 +1166,63 @@
     draw();
   }
 
-  var BUILD = { vct: buildVct, harda: buildHarda, injektering: buildInj, atgang: buildAtg, vadarvad: buildVad, volym: buildVolym, klass: buildKlass, tidslinje: buildTid, pantheon: buildPantheon, armering: buildArm, hojd: buildHojd, tunnelcykel: buildTunCycle, tunnelval: buildTunVal };
+  // ---------- 10. shotcrete: rebound, distance and angle ----------
+  function buildSpruta(app) {
+    var W = T.spr, S = { m: 0, d: 1, a: 90, A: 50, t: 60 }, BASE = [0.25, 0.1], raf = 0;
+    var mode = segmented(W.method, [W.m0, W.m1], 0, function (i) { S.m = i; draw(); });
+    var sd = slider(W.dist, 0.3, 3, 0.1, 1, function (v) { return num(v, 1) + " m"; }, function (v) { S.d = v; draw(); });
+    var sa = slider(W.ang, 45, 90, 5, 90, function (v) { return num(v) + "°"; }, function (v) { S.a = v; draw(); });
+    var sA = slider(W.area, 5, 500, 5, 50, function (v) { return num(v) + " m²"; }, function (v) { S.A = v; draw(); });
+    var sT = slider(W.thick, 20, 200, 10, 60, function (v) { return num(v) + " mm"; }, function (v) { S.t = v; draw(); });
+    var stR = stat(W.rebound, "%"), stN = stat(W.need, W.m3), stI = stat(W.inplace, W.m3), stL = stat(W.lost, W.m3), msg = el("ul", { class: "wmsg" });
+    var VW = 320, VH = 150, WX = 276, WY = 72, FY = 134;
+    var A = art(VW, VH, "wchart wspray"), svgE = A.svg;
+    A.rect(0, 0, VW, VH, A.grad([[0, "#fff7ea"], [1, "#f3e6d0"]]), { ns: true });
+    A.rect(WX, 0, 44, VH, A.grad([[0, C.rock], [1, C.rockD]], true), { ns: true }); A.speckle(WX, 0, 44, FY, 46, 6, ["#8e806d", "#d8cbb8", "#7a6d5d"], 1.7);
+    A.rect(0, FY, VW, VH - FY, A.grad([[0, "#b5a68f"], [1, "#8f806b"]]), { ns: true }); A.line(0, FY, VW, FY, C.dark, 1.4);
+    var layer = A.rect(WX - 6, 0, 6, FY, A.grad([[0, "#b3aca3"], [1, "#7d766f"]], true), { sw: 1.2 }), pile = A.path("M0,0", "#8a8279", { sw: 1.4 }), cone = A.poly([[0, 0], [1, 1], [2, 2]], "rgba(243,125,3,.18)", { ns: true }), nozzle = A.group(), parts = [];
+    var N = 22, seed = seeded(11), i;
+    for (i = 0; i < N; i++) { var c = A.circle(0, 0, 2.2, "#6d6860", { ns: true }); c._p = { o: seed(), j: seed() * 2 - 1, k: seed() }; parts.push(c); }
+    function model() {
+      var base = BASE[S.m], fd = S.d < 0.8 ? 1 + (0.8 - S.d) * 0.8 : S.d <= 1.5 ? 1 : 1 + (S.d - 1.5) * 0.5, fa = 1 + (90 - S.a) / 45 * 0.6;
+      return Math.min(0.6, base * fd * fa);
+    }
+    var L = 80, sx = 0, sy = 0, r = 0;
+    function geometry() { var len = S.d * L, rad = S.a * Math.PI / 180; sx = WX - len * Math.sin(rad); sy = WY + len * Math.cos(rad); }
+    function frame(now) {
+      var tt = now / 1000;
+      parts.forEach(function (c) {
+        var u = (tt * 0.9 + c._p.o) % 1, hit = c._p.k < r;
+        if (u < 0.55) { var q = u / 0.55; c.setAttribute("cx", sx + (WX - 6 - sx) * q + c._p.j * 3); c.setAttribute("cy", sy + (WY + c._p.j * 8 - sy) * q); c.setAttribute("opacity", 1); }
+        else if (hit) { var f = (u - 0.55) / 0.45; c.setAttribute("cx", WX - 6 - f * 34 * (0.6 + c._p.o)); c.setAttribute("cy", WY + c._p.j * 8 + f * f * (FY - WY - c._p.j * 8)); c.setAttribute("opacity", 1 - f * 0.4); }
+        else { c.setAttribute("cx", WX - 6); c.setAttribute("cy", WY + c._p.j * 8); c.setAttribute("opacity", 1 - (u - 0.55) / 0.45); }
+      });
+      if (!REDUCE) raf = requestAnimationFrame(frame);
+    }
+    function draw() {
+      r = model(); geometry();
+      var need = S.A * S.t / 1000 / (1 - r), inPlace = S.A * S.t / 1000;
+      stR.set(num(r * 100)); stN.set(num(need, need < 10 ? 2 : 1)); stI.set(num(inPlace, inPlace < 10 ? 2 : 1)); stL.set(num(need - inPlace, need - inPlace < 10 ? 2 : 1));
+      layer.setAttribute("width", 4 + S.t / 200 * 12); layer.setAttribute("x", WX - 4 - S.t / 200 * 12);
+      var ph = 4 + r * 40; pile.setAttribute("d", "M" + (WX - 70) + "," + FY + " Q" + (WX - 30) + "," + (FY - ph * 1.6) + " " + (WX - 4) + "," + FY + " Z");
+      var half = 5 + S.d * 2; cone.setAttribute("points", sx + "," + sy + " " + (WX - 6) + "," + (WY - 12) + " " + (WX - 6) + "," + (WY + 12));
+      nozzle.innerHTML = ""; var ang = Math.atan2(WY - sy, WX - sx) * 180 / Math.PI;
+      var ng = A.group({ transform: "translate(" + sx.toFixed(1) + " " + sy.toFixed(1) + ") rotate(" + ang.toFixed(1) + ")" }); nozzle.appendChild(ng);
+      A.path("M-30,0 C-50,0 -52,22 -80,22", "none", { stroke: "#2d282a", sw: 4 }, ng); A.rect(-32, -6, 30, 12, A.grad([[0, "#6b6466"], [1, "#3f393b"]]), { sw: 1.4 }, ng); A.rect(-4, -4, 12, 8, C.orange, { sw: 1.2 }, ng);
+      msg.innerHTML = "";
+      if (S.d < 0.8) msg.appendChild(el("li", { class: "wmsg__warn", text: W.near })); else if (S.d > 1.5) msg.appendChild(el("li", { class: "wmsg__warn", text: W.far }));
+      if (S.a < 75) msg.appendChild(el("li", { class: "wmsg__warn", text: W.slant }));
+      if (S.d >= 0.8 && S.d <= 1.5 && S.a >= 75) msg.appendChild(el("li", { class: "wmsg__ok", text: W.good }));
+      msg.appendChild(el("li", { class: "wmsg__info", text: W.note }));
+      cancelAnimationFrame(raf); if (REDUCE) frame(1500); else raf = requestAnimationFrame(frame);
+    }
+    app.appendChild(el("div", { class: "wgt__grid" }, [el("div", { class: "wgt__ctl" }, [mode.box, sd.box, sa.box, sA.box, sT.box]), el("div", { class: "wgt__out" }, [svgE, el("div", { class: "stats" }, [stR.box, stN.box, stI.box, stL.box]), msg])]));
+    app.appendChild(how(W.how));
+    draw();
+  }
+
+  var BUILD = { vct: buildVct, harda: buildHarda, injektering: buildInj, atgang: buildAtg, vadarvad: buildVad, volym: buildVolym, klass: buildKlass, tidslinje: buildTid, pantheon: buildPantheon, armering: buildArm, hojd: buildHojd, tunnelcykel: buildTunCycle, tunnelval: buildTunVal, spruta: buildSpruta, illu: buildIllu };
+  if (window.__WIDGET_TEST) { window.__WIDGET_TEST.scene = scene; window.__WIDGET_TEST.tunnelScene = tunnelScene; window.__WIDGET_TEST.tbmScene = tbmScene; window.__WIDGET_TEST.romanScene = romanScene; window.__WIDGET_TEST.T = T; }
   [].forEach.call(document.querySelectorAll("[data-widget]"), function (box) {
     var app = box.querySelector(".wgt__app"), fn = BUILD[box.getAttribute("data-widget")];
     if (!app || !fn) return;

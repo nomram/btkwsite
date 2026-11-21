@@ -341,7 +341,7 @@ function articleToc(ctx, t) {
 // A small model or simulation for non-technical visitors (src/js/widgets.js builds it in the browser). Block: kind (vct, harda, injektering, atgang,
 // vadarvad), title, intro. Without scripts only the title, the intro and a note are shown.
 function renderWidget(ctx, b) {
-  const opt = ["temp", "cement", "klass"].filter((k) => b[k] != null).map((k) => ` data-${k}="${esc(b[k])}"`).join("");
+  const opt = ["temp", "cement", "klass", "scene"].filter((k) => b[k] != null).map((k) => ` data-${k}="${esc(b[k])}"`).join("");
   const cta = b.cta === false ? "" : `<p class="wgt__cta"><span>${esc(ctx.ui.widget_cta || "Behöver du material, maskiner eller råd?")}</span> <a class="btn btn--sm" href="${esc(localizeHref(ctx, "/offert"))}">${esc(ctx.ui.widget_cta_btn || "Få offert")}${ICON.arrow}</a></p>`;
   return `<section class="wgt wgt--${esc(b.kind)}" data-widget="${esc(b.kind)}"${opt}>${b.title ? `<h2 class="wgt__h">${esc(b.title)}</h2>` : ""}${b.intro ? `<p class="wgt__intro">${esc(b.intro)}</p>` : ""}<div class="wgt__app"><p class="wgt__nojs">${esc(ctx.ui.widget_nojs || "Det här verktyget behöver JavaScript.")}</p></div>${cta}</section>`;
 }
