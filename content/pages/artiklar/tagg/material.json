@@ -1,0 +1,41 @@
+{
+  "path": "/artiklar/tagg/material",
+  "updated": "2026-11-10",
+  "template": "articles",
+  "order": 10,
+  "published": true,
+  "hideIn": [
+    "es",
+    "no",
+    "lt",
+    "lv",
+    "et",
+    "ru"
+  ],
+  "i18n": {
+    "sv": {
+      "title": "Artiklar om Material",
+      "h1": "Artiklar om Material",
+      "seoTitle": "Artiklar och guider om Material | Betongakuten",
+      "description": "Alla artiklar och guider om Material från Betongakuten. Sök eller filtrera på fler taggar.",
+      "blocks": [
+        {
+          "type": "articles",
+          "tag": "material"
+        }
+      ]
+    },
+    "en": {
+      "title": "Articles about Materials",
+      "h1": "Articles about Materials",
+      "seoTitle": "Articles and guides about Materials | Betongakuten",
+      "description": "All articles and guides about Materials from Betongakuten. Search or filter by more tags.",
+      "blocks": [
+        {
+          "type": "articles",
+          "tag": "material"
+        }
+      ]
+    }
+  }
+}

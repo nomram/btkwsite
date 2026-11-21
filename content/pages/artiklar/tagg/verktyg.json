@@ -1,0 +1,41 @@
+{
+  "path": "/artiklar/tagg/verktyg",
+  "updated": "2026-11-22",
+  "template": "articles",
+  "order": 10,
+  "published": true,
+  "hideIn": [
+    "es",
+    "no",
+    "lt",
+    "lv",
+    "et",
+    "ru"
+  ],
+  "i18n": {
+    "sv": {
+      "title": "Artiklar om Verktyg och simuleringar",
+      "h1": "Artiklar om Verktyg och simuleringar",
+      "seoTitle": "Artiklar och guider om Verktyg och simuleringar | Betongakuten",
+      "description": "Alla artiklar och guider om Verktyg och simuleringar från Betongakuten. Sök eller filtrera på fler taggar.",
+      "blocks": [
+        {
+          "type": "articles",
+          "tag": "verktyg"
+        }
+      ]
+    },
+    "en": {
+      "title": "Articles about Tools and simulations",
+      "h1": "Articles about Tools and simulations",
+      "seoTitle": "Articles and guides about Tools and simulations | Betongakuten",
+      "description": "All articles and guides about Tools and simulations from Betongakuten. Search or filter by more tags.",
+      "blocks": [
+        {
+          "type": "articles",
+          "tag": "verktyg"
+        }
+      ]
+    }
+  }
+}

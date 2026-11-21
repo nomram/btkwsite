@@ -1,0 +1,41 @@
+{
+  "path": "/artiklar/tagg/harning",
+  "updated": "2026-11-16",
+  "template": "articles",
+  "order": 10,
+  "published": true,
+  "hideIn": [
+    "es",
+    "no",
+    "lt",
+    "lv",
+    "et",
+    "ru"
+  ],
+  "i18n": {
+    "sv": {
+      "title": "Artiklar om Härdning",
+      "h1": "Artiklar om Härdning",
+      "seoTitle": "Artiklar och guider om Härdning | Betongakuten",
+      "description": "Alla artiklar och guider om Härdning från Betongakuten. Sök eller filtrera på fler taggar.",
+      "blocks": [
+        {
+          "type": "articles",
+          "tag": "harning"
+        }
+      ]
+    },
+    "en": {
+      "title": "Articles about Curing",
+      "h1": "Articles about Curing",
+      "seoTitle": "Articles and guides about Curing | Betongakuten",
+      "description": "All articles and guides about Curing from Betongakuten. Search or filter by more tags.",
+      "blocks": [
+        {
+          "type": "articles",
+          "tag": "harning"
+        }
+      ]
+    }
+  }
+}

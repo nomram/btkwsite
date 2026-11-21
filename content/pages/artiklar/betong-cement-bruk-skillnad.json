@@ -1,0 +1,183 @@
+{
+  "path": "/artiklar/betong-cement-bruk-skillnad",
+  "updated": "2026-11-20",
+  "template": "article",
+  "order": 10,
+  "published": true,
+  "date": "2026-11-20",
+  "tags": [
+    "betong",
+    "cement",
+    "grunder",
+    "verktyg"
+  ],
+  "image": "/assets/img/brand-photo-weber.webp",
+  "hideIn": [
+    "es",
+    "no",
+    "lt",
+    "lv",
+    "et",
+    "ru"
+  ],
+  "i18n": {
+    "sv": {
+      "title": "Betong, cement, bruk och cementpasta: vad är skillnaden?",
+      "h1": "Betong, cement, bruk och cementpasta: vad är skillnaden?",
+      "seoTitle": "Vad är skillnaden mellan betong och cement? | Betongakuten",
+      "description": "Cement är inte betong. Här förklarar vi skillnaden mellan cement, cementpasta, bruk och betong, med en interaktiv bild av vad de består av.",
+      "summary": "Cement är inte betong. Skillnaden mellan cement, cementpasta, bruk och betong, med en bild du kan klicka i.",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "Det är lätt att blanda ihop orden: många säger cement när de menar betong. Men cement är bara ett av ämnena som betong görs av, ungefär som mjöl i en kaka. Klicka dig igenom nedan för att se vad som finns i vad."
+        },
+        {
+          "type": "widget",
+          "kind": "vadarvad",
+          "title": "Vad är vad?",
+          "intro": "Klicka på de fyra stegen och se hur blandningen byggs på."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Cement: bindemedlet"
+        },
+        {
+          "type": "text",
+          "html": "Cement är ett fint grått pulver. Det tillverkas genom att kalksten och lera hettas upp till ungefär 1 450 grader och mals ner. När det blandas med vatten reagerar det och hårdnar. Cement är alltså limmet, inte det färdiga materialet."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Cementpasta, bruk och betong"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Cement + vatten = cementpasta. Det är limmet i allt annat.",
+            "Cementpasta + sand = bruk. Används till murning, putsning och som torrbruk.",
+            "Cementpasta + sand + sten = betong. Stenen gör materialet billigare, starkare och formstabilt, och armering av stål tar upp dragkrafter."
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Torrbruk, spackel och puts"
+        },
+        {
+          "type": "text",
+          "html": "Torrbruk är färdigblandat bruk i torr form: cement, sand och tillsatser som bara behöver vatten på byggplatsen. Flytspackel, puts och murbruk är exempel. Hur du hanterar sådant material rationellt kan du läsa om i vår guide om <a href=\"/artiklar/torrbruk-silo-ahlm\">torrbruk, silo och Ahlm-metoden</a>."
+        },
+        {
+          "type": "text",
+          "html": "Vill du veta hur mycket vatten som ska ner i blandningen? Läs om <a href=\"/artiklar/vattencementtal-vct\">vattencementtal</a>."
+        },
+        {
+          "type": "faq",
+          "title": "Vanliga frågor",
+          "items": [
+            {
+              "q": "Är cement och betong samma sak?",
+              "a": "Nej. Cement är bindemedlet, ett fint pulver. Betong är cement, vatten, sand och sten som har blandats och hårdnat."
+            },
+            {
+              "q": "Vad är skillnaden mellan bruk och betong?",
+              "a": "Bruk består av cementpasta och sand. Betong har dessutom sten, som gör den starkare och billigare per volym."
+            },
+            {
+              "q": "Torkar betong eller hårdnar den?",
+              "a": "Den hårdnar genom en kemisk reaktion mellan cement och vatten. Läs mer i vår guide om hur betong hårdnar."
+            }
+          ]
+        },
+        {
+          "type": "cta",
+          "title": "Vill du ha hjälp att välja?",
+          "text": "Berätta vad du ska göra, var och när, så rekommenderar vi rätt utrustning och återkommer med pris och leveranstid.",
+          "button": "Få offert",
+          "href": "/offert"
+        }
+      ]
+    },
+    "en": {
+      "title": "Concrete, cement, mortar and cement paste: what is the difference?",
+      "h1": "Concrete, cement, mortar and cement paste: what is the difference?",
+      "seoTitle": "What is the difference between concrete and cement? | Betongakuten",
+      "description": "Cement is not concrete. Here we explain the difference between cement, cement paste, mortar and concrete, with an interactive picture of what they are made of.",
+      "summary": "Cement is not concrete. The difference between cement, cement paste, mortar and concrete, with a picture you can click through.",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "It is easy to mix up the words: many people say cement when they mean concrete. But cement is only one of the ingredients concrete is made of, a bit like flour in a cake. Click through below to see what is in what."
+        },
+        {
+          "type": "widget",
+          "kind": "vadarvad",
+          "title": "What is what?",
+          "intro": "Click through the four steps and see how the mix is built up."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Cement: the binder"
+        },
+        {
+          "type": "text",
+          "html": "Cement is a fine grey powder. It is made by heating limestone and clay to about 1,450 degrees and grinding the result. When mixed with water it reacts and hardens. So cement is the glue, not the finished material."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Cement paste, mortar and concrete"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Cement + water = cement paste. It is the glue in everything else.",
+            "Cement paste + sand = mortar. Used for bricklaying, rendering and as dry mortar.",
+            "Cement paste + sand + stone = concrete. The stone makes the material cheaper, stronger and stable in shape, and steel reinforcement takes the tensile forces."
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Dry mortar, screed and render"
+        },
+        {
+          "type": "text",
+          "html": "Dry mortar is ready-mixed mortar in dry form: cement, sand and additives that only need water on site. Self-levelling screed, render and masonry mortar are examples. How to handle such material efficiently is covered in our guide to <a href=\"/artiklar/torrbruk-silo-ahlm\">dry mortar, silos and the Ahlm method</a>."
+        },
+        {
+          "type": "text",
+          "html": "Want to know how much water goes into the mix? Read about the <a href=\"/artiklar/vattencementtal-vct\">water/cement ratio</a>."
+        },
+        {
+          "type": "faq",
+          "title": "Frequently asked questions",
+          "items": [
+            {
+              "q": "Are cement and concrete the same thing?",
+              "a": "No. Cement is the binder, a fine powder. Concrete is cement, water, sand and stone that have been mixed and have hardened."
+            },
+            {
+              "q": "What is the difference between mortar and concrete?",
+              "a": "Mortar is cement paste and sand. Concrete also contains stone, which makes it stronger and cheaper per volume."
+            },
+            {
+              "q": "Does concrete dry or harden?",
+              "a": "It hardens through a chemical reaction between cement and water. Read more in our guide to how concrete hardens."
+            }
+          ]
+        },
+        {
+          "type": "cta",
+          "title": "Would you like help choosing?",
+          "text": "Tell us what you are going to do, where and when, and we will recommend the right equipment and come back with a price and lead time.",
+          "button": "Get a quote",
+          "href": "/offert"
+        }
+      ]
+    }
+  }
+}

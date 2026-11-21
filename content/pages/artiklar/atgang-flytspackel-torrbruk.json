@@ -1,0 +1,158 @@
+{
+  "path": "/artiklar/atgang-flytspackel-torrbruk",
+  "updated": "2026-11-10",
+  "template": "article",
+  "order": 10,
+  "published": true,
+  "date": "2026-11-10",
+  "tags": [
+    "torrbruk",
+    "material",
+    "guide",
+    "ahlm",
+    "verktyg"
+  ],
+  "image": "/assets/img/brand-photo-weber.webp",
+  "hideIn": [
+    "es",
+    "no",
+    "lt",
+    "lv",
+    "et",
+    "ru"
+  ],
+  "i18n": {
+    "sv": {
+      "title": "Hur mycket flytspackel och torrbruk går åt? Räkna ut åtgången",
+      "h1": "Hur mycket flytspackel och torrbruk går åt? Räkna ut åtgången",
+      "seoTitle": "Räkna ut åtgång av flytspackel och torrbruk | Betongakuten",
+      "description": "Räkna ut hur många kilo, säckar och storsäckar du behöver av flytspackel eller torrbruk för en viss yta och tjocklek, och hur mycket av en silo det motsvarar.",
+      "summary": "Yta, tjocklek och material blir kilo, säckar och silofyllningar. En enkel räknare för att uppskatta åtgången.",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "Hur mycket material går det åt för att gjuta ett golv eller putsa en yta? Grundregeln är enkel: åtgången per kvadratmeter och millimeter gånger yta och tjocklek. Prova nedan och se vad det blir i kilo, säckar, storsäckar och silo."
+        },
+        {
+          "type": "widget",
+          "kind": "atgang",
+          "title": "Räkna ut åtgången",
+          "intro": "Ställ in yta, tjocklek och material. Du får kilo, antal säckar och storsäckar, vatten och hur stor del av en silo det motsvarar."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Så här tänker du"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Flytspackel och liknande material har en åtgång på cirka 1,6 till 2 kilo per kvadratmeter och millimeter. Exakt värde står i produktens datablad.",
+            "Lägg på en marginal för spill och ojämna underlag, ofta några procent.",
+            "Beställ i hela säckar eller storsäckar, och räkna om du kan utnyttja en silo."
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Säck, storsäck eller silo?"
+        },
+        {
+          "type": "text",
+          "html": "För små ytor räcker säckar. Går det åt flera ton blir storsäckar eller en silo mer rationellt: mindre hantering, mindre förpackningsavfall och en jämnare matning till blandaren. Läs mer om hur det fungerar i vår guide om <a href=\"/artiklar/torrbruk-silo-ahlm\">torrbruk, silo och Ahlm-metoden</a>."
+        },
+        {
+          "type": "faq",
+          "title": "Vanliga frågor",
+          "items": [
+            {
+              "q": "Hur mycket flytspackel går åt per kvadratmeter?",
+              "a": "Cirka 1,6 till 2 kg per kvadratmeter och millimeter tjocklek, beroende på produkt. Se produktens datablad för exakt åtgång."
+            },
+            {
+              "q": "Hur mycket vatten behövs?",
+              "a": "Det varierar med produkten, ofta omkring 0,2 liter per kilo för flytspackel. Följ databladet."
+            },
+            {
+              "q": "När lönar det sig med silo?",
+              "a": "När åtgången är stor och materialet kommer i bulk, eftersom det minskar hanteringen och förpackningsavfallet."
+            }
+          ]
+        },
+        {
+          "type": "cta",
+          "title": "Vill du ha hjälp att välja?",
+          "text": "Berätta vad du ska göra, var och när, så rekommenderar vi rätt utrustning och återkommer med pris och leveranstid.",
+          "button": "Få offert",
+          "href": "/offert"
+        }
+      ]
+    },
+    "en": {
+      "title": "How much self-levelling screed and dry mortar do you need? Work out the consumption",
+      "h1": "How much self-levelling screed and dry mortar do you need? Work out the consumption",
+      "seoTitle": "Calculate consumption of screed and dry mortar | Betongakuten",
+      "description": "Work out how many kilos, bags and big bags of self-levelling screed or dry mortar you need for a given area and thickness, and how much of a silo that is.",
+      "summary": "Area, thickness and material turn into kilos, bags and silo loads. A simple calculator to estimate the consumption.",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "How much material does it take to cast a floor or render a surface? The basic rule is simple: consumption per square metre and millimetre times area and thickness. Try it below and see what it comes to in kilos, bags, big bags and silo."
+        },
+        {
+          "type": "widget",
+          "kind": "atgang",
+          "title": "Work out the consumption",
+          "intro": "Set the area, thickness and material. You get kilos, the number of bags and big bags, water and how much of a silo it is."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "How to think about it"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Self-levelling screed and similar materials use about 1.6 to 2 kilos per square metre and millimetre. The exact value is in the product’s data sheet.",
+            "Add a margin for waste and uneven substrates, often a few percent.",
+            "Order whole bags or big bags, and check whether you can use a silo."
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Bag, big bag or silo?"
+        },
+        {
+          "type": "text",
+          "html": "For small areas, bags are enough. When several tonnes are needed, big bags or a silo are more efficient: less handling, less packaging waste and a steadier feed to the mixer. Read more in our guide to <a href=\"/artiklar/torrbruk-silo-ahlm\">dry mortar, silos and the Ahlm method</a>."
+        },
+        {
+          "type": "faq",
+          "title": "Frequently asked questions",
+          "items": [
+            {
+              "q": "How much self-levelling screed is needed per square metre?",
+              "a": "About 1.6 to 2 kg per square metre and millimetre of thickness, depending on the product. See the product’s data sheet for the exact consumption."
+            },
+            {
+              "q": "How much water is needed?",
+              "a": "It varies with the product, often around 0.2 litres per kilo for self-levelling screed. Follow the data sheet."
+            },
+            {
+              "q": "When does a silo pay off?",
+              "a": "When the consumption is large and the material comes in bulk, because it reduces handling and packaging waste."
+            }
+          ]
+        },
+        {
+          "type": "cta",
+          "title": "Would you like help choosing?",
+          "text": "Tell us what you are going to do, where and when, and we will recommend the right equipment and come back with a price and lead time.",
+          "button": "Get a quote",
+          "href": "/offert"
+        }
+      ]
+    }
+  }
+}

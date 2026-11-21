@@ -1,0 +1,172 @@
+{
+  "path": "/artiklar/cementtyper-cem-i-cem-ii",
+  "updated": "2026-11-18",
+  "template": "article",
+  "order": 10,
+  "published": true,
+  "date": "2026-11-18",
+  "tags": [
+    "cement",
+    "betong",
+    "grunder"
+  ],
+  "image": "/assets/img/brand-photo-mapei.webp",
+  "hideIn": [
+    "es",
+    "no",
+    "lt",
+    "lv",
+    "et",
+    "ru"
+  ],
+  "i18n": {
+    "sv": {
+      "title": "Cementtyper: vad betyder CEM I, CEM II och 42,5 R?",
+      "h1": "Cementtyper: vad betyder CEM I, CEM II och 42,5 R?",
+      "seoTitle": "Cementtyper: CEM I, CEM II och 42,5 R förklarat | Betongakuten",
+      "description": "Vad betyder beteckningarna på cementsäcken? CEM I, CEM II, hållfasthetsklassen 32,5, 42,5 eller 52,5 och bokstäverna N och R förklarade på ett begripligt sätt.",
+      "summary": "Vad beteckningarna på cementsäcken betyder: CEM I och II, klasserna 32,5, 42,5 och 52,5 och bokstäverna N och R.",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "På cementsäcken står något i stil med ”CEM II/A 42,5 R”. Det ser krångligt ut, men beteckningen är uppbyggd av tre delar som beskriver vad cementet innehåller och hur snabbt och starkt det blir."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "1. Typen: CEM I till CEM V"
+        },
+        {
+          "type": "list",
+          "items": [
+            "CEM I är rent portlandcement: nästan bara cementklinker.",
+            "CEM II är portlandkompositcement: klinker med en del annat material, till exempel kalksten, slagg eller flygaska. A betyder 6 till 20 procent tillsats, B betyder 21 till 35 procent.",
+            "CEM III är slaggcement med mycket granulerad masugnsslagg, 36 till 95 procent.",
+            "CEM IV och CEM V är pozzolancement och kompositcement med större andel andra ämnen."
+          ]
+        },
+        {
+          "type": "text",
+          "html": "Mer tillsats innebär ofta lägre klimatpåverkan per ton cement, men också ibland långsammare härdning. Vilken typ som passar beror på användningen."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "2. Hållfasthetsklassen: 32,5, 42,5 eller 52,5"
+        },
+        {
+          "type": "text",
+          "html": "Siffran är den lägsta tryckhållfastheten i megapascal som cementet ska nå i en standardiserad provning efter 28 dygn. 42,5 betyder alltså minst 42,5 MPa. Högre siffra ger normalt starkare betong vid samma vct."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "3. Bokstaven: N eller R"
+        },
+        {
+          "type": "text",
+          "html": "N står för normal begynnelsehållfasthet och R för hög begynnelsehållfasthet. Ett R-cement hårdnar snabbare i början, vilket är användbart när formen ska rivas tidigt eller när det är kallt. Se hur det påverkar tiden i vår guide om <a href=\"/artiklar/sa-hardnar-betong\">hur betong hårdnar</a>."
+        },
+        {
+          "type": "faq",
+          "title": "Vanliga frågor",
+          "items": [
+            {
+              "q": "Vad betyder CEM II/A?",
+              "a": "Portlandkompositcement där 6 till 20 procent av innehållet är annat material än klinker, till exempel kalksten, slagg eller flygaska."
+            },
+            {
+              "q": "Vad betyder 42,5 R?",
+              "a": "Hållfasthetsklassen 42,5 (minst 42,5 MPa efter 28 dygn) och R för hög begynnelsehållfasthet, alltså snabb tidig hårdnande."
+            },
+            {
+              "q": "Vilket cement ska jag välja?",
+              "a": "Det beror på konstruktion, miljö och krav. Betongleverantören eller konstruktören anger normalt vilken typ som gäller."
+            }
+          ]
+        },
+        {
+          "type": "cta",
+          "title": "Vill du ha hjälp att välja?",
+          "text": "Berätta vad du ska göra, var och när, så rekommenderar vi rätt utrustning och återkommer med pris och leveranstid.",
+          "button": "Få offert",
+          "href": "/offert"
+        }
+      ]
+    },
+    "en": {
+      "title": "Cement types: what do CEM I, CEM II and 42.5 R mean?",
+      "h1": "Cement types: what do CEM I, CEM II and 42.5 R mean?",
+      "seoTitle": "Cement types: CEM I, CEM II and 42.5 R explained | Betongakuten",
+      "description": "What do the markings on a bag of cement mean? CEM I, CEM II, the strength class 32.5, 42.5 or 52.5 and the letters N and R explained in plain terms.",
+      "summary": "What the markings on a bag of cement mean: CEM I and II, the classes 32.5, 42.5 and 52.5 and the letters N and R.",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "On a bag of cement it says something like “CEM II/A 42.5 R”. It looks complicated, but the marking is built from three parts that describe what the cement contains and how fast and strong it becomes."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "1. The type: CEM I to CEM V"
+        },
+        {
+          "type": "list",
+          "items": [
+            "CEM I is pure Portland cement: almost only cement clinker.",
+            "CEM II is Portland-composite cement: clinker with some other material, for example limestone, slag or fly ash. A means 6 to 20 percent additions, B means 21 to 35 percent.",
+            "CEM III is blast-furnace cement with a lot of granulated blast-furnace slag, 36 to 95 percent.",
+            "CEM IV and CEM V are pozzolanic and composite cements with a larger share of other materials."
+          ]
+        },
+        {
+          "type": "text",
+          "html": "More additions often mean a lower climate impact per tonne of cement, but sometimes also slower hardening. Which type suits depends on the use."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "2. The strength class: 32.5, 42.5 or 52.5"
+        },
+        {
+          "type": "text",
+          "html": "The number is the lowest compressive strength in megapascals the cement must reach in a standardised test after 28 days. So 42.5 means at least 42.5 MPa. A higher number normally gives stronger concrete at the same w/c."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "3. The letter: N or R"
+        },
+        {
+          "type": "text",
+          "html": "N stands for normal early strength and R for high early strength. An R cement hardens faster at the start, which is useful when the formwork is to be removed early or when it is cold. See how it affects the time in our guide to <a href=\"/artiklar/sa-hardnar-betong\">how concrete hardens</a>."
+        },
+        {
+          "type": "faq",
+          "title": "Frequently asked questions",
+          "items": [
+            {
+              "q": "What does CEM II/A mean?",
+              "a": "Portland-composite cement where 6 to 20 percent of the content is material other than clinker, for example limestone, slag or fly ash."
+            },
+            {
+              "q": "What does 42.5 R mean?",
+              "a": "The strength class 42.5 (at least 42.5 MPa after 28 days) and R for high early strength, that is, quick early hardening."
+            },
+            {
+              "q": "Which cement should I choose?",
+              "a": "It depends on the structure, the environment and the requirements. The concrete supplier or the designer normally states which type applies."
+            }
+          ]
+        },
+        {
+          "type": "cta",
+          "title": "Would you like help choosing?",
+          "text": "Tell us what you are going to do, where and when, and we will recommend the right equipment and come back with a price and lead time.",
+          "button": "Get a quote",
+          "href": "/offert"
+        }
+      ]
+    }
+  }
+}

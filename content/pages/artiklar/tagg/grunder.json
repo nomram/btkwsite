@@ -1,0 +1,41 @@
+{
+  "path": "/artiklar/tagg/grunder",
+  "updated": "2026-11-22",
+  "template": "articles",
+  "order": 10,
+  "published": true,
+  "hideIn": [
+    "es",
+    "no",
+    "lt",
+    "lv",
+    "et",
+    "ru"
+  ],
+  "i18n": {
+    "sv": {
+      "title": "Artiklar om Grunder",
+      "h1": "Artiklar om Grunder",
+      "seoTitle": "Artiklar och guider om Grunder | Betongakuten",
+      "description": "Alla artiklar och guider om Grunder från Betongakuten. Sök eller filtrera på fler taggar.",
+      "blocks": [
+        {
+          "type": "articles",
+          "tag": "grunder"
+        }
+      ]
+    },
+    "en": {
+      "title": "Articles about Basics",
+      "h1": "Articles about Basics",
+      "seoTitle": "Articles and guides about Basics | Betongakuten",
+      "description": "All articles and guides about Basics from Betongakuten. Search or filter by more tags.",
+      "blocks": [
+        {
+          "type": "articles",
+          "tag": "grunder"
+        }
+      ]
+    }
+  }
+}

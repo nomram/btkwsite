@@ -1,0 +1,41 @@
+{
+  "path": "/artiklar/tagg/betong",
+  "updated": "2026-11-22",
+  "template": "articles",
+  "order": 10,
+  "published": true,
+  "hideIn": [
+    "es",
+    "no",
+    "lt",
+    "lv",
+    "et",
+    "ru"
+  ],
+  "i18n": {
+    "sv": {
+      "title": "Artiklar om Betong",
+      "h1": "Artiklar om Betong",
+      "seoTitle": "Artiklar och guider om Betong | Betongakuten",
+      "description": "Alla artiklar och guider om Betong från Betongakuten. Sök eller filtrera på fler taggar.",
+      "blocks": [
+        {
+          "type": "articles",
+          "tag": "betong"
+        }
+      ]
+    },
+    "en": {
+      "title": "Articles about Concrete",
+      "h1": "Articles about Concrete",
+      "seoTitle": "Articles and guides about Concrete | Betongakuten",
+      "description": "All articles and guides about Concrete from Betongakuten. Search or filter by more tags.",
+      "blocks": [
+        {
+          "type": "articles",
+          "tag": "betong"
+        }
+      ]
+    }
+  }
+}

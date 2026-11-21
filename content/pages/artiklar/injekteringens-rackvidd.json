@@ -1,0 +1,175 @@
+{
+  "path": "/artiklar/injekteringens-rackvidd",
+  "updated": "2026-11-12",
+  "template": "article",
+  "order": 10,
+  "published": true,
+  "date": "2026-11-12",
+  "tags": [
+    "injektering",
+    "berg",
+    "guide",
+    "verktyg"
+  ],
+  "image": "/assets/img/brand-photo-geobrugg.webp",
+  "hideIn": [
+    "es",
+    "no",
+    "lt",
+    "lv",
+    "et",
+    "ru"
+  ],
+  "i18n": {
+    "sv": {
+      "title": "Hur långt når injekteringen? Räckvidd i sprickor",
+      "h1": "Hur långt når injekteringen? Räckvidd i sprickor",
+      "seoTitle": "Hur långt når injekteringen? Räckvidd i berg | Betongakuten",
+      "description": "Hur långt kan injekteringsbruk tränga in i en spricka? Se hur tryck, spricköppning och bruk samverkar, med en interaktiv simulering av injektering i berg.",
+      "summary": "Hur tryck, spricköppning och bruk avgör hur långt injekteringen når, med en simulering där du själv pumpar.",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "Vid injektering pumpas bruk in i sprickor i berg, jord eller betong för att täta och förstärka. En av de första frågorna är: hur långt når bruket? Svaret beror på tre saker som du kan prova nedan: trycket, hur bred sprickan är och hur segt bruket är."
+        },
+        {
+          "type": "widget",
+          "kind": "injektering",
+          "title": "Pumpa själv",
+          "intro": "Ställ in tryck, spricköppning och bruk och se hur långt injekteringen når längs sprickan."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Tre saker som styr räckvidden"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Tryck: högre tryck driver bruket längre. Det är skillnaden mellan pumpens tryck och motståndet i berget som räknas.",
+            "Spricköppning: ju bredare spricka, desto längre når bruket. Är sprickan för smal fastnar kornen vid mynningen.",
+            "Brukets segdom: ett tunt bruk (högt vct) når långt, ett tjockt bruk kort. Tunt bruk ger dock mer svinn och mindre styrka, så valet är en avvägning."
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Korn måste få plats"
+        },
+        {
+          "type": "text",
+          "html": "Cementkorn är små men inte oändligt små. En tumregel är att sprickan ska vara minst fyra gånger större än de största kornen. Därför används finmalet mikrocement i mycket fina sprickor."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Verkligheten är mer komplicerad"
+        },
+        {
+          "type": "text",
+          "html": "Modellen visar den teoretiska gränsen där bruket slutar flyta. I praktiken styrs resultatet också av pumpad mängd, tid, sprickornas form och hur bruket förändras medan det pumpas. Därför följer man ofta trycket och flödet under arbetet och dokumenterar det, till exempel med utrustning från Jean Lutz. Mer om hur du väljer pump och anläggning finns i <a href=\"/artiklar/valj-injekteringsutrustning\">så väljer du injekteringsutrustning</a>."
+        },
+        {
+          "type": "faq",
+          "title": "Vanliga frågor",
+          "items": [
+            {
+              "q": "Hur långt kan injekteringsbruk tränga in i en spricka?",
+              "a": "Det beror på tryck, spricköppning och brukets segdom. Med tunt bruk, bred spricka och högt tryck kan det nå tiotals meter, men i praktiken begränsas det av tid, mängd och sprickans form."
+            },
+            {
+              "q": "Varför används mikrocement?",
+              "a": "Mikrocement har finare korn och kan tränga in i smalare sprickor än vanligt cement."
+            },
+            {
+              "q": "Hur mäter man trycket och flödet?",
+              "a": "Med givare och dataloggare som registrerar tryck, flöde och volym under injekteringen."
+            }
+          ]
+        },
+        {
+          "type": "cta",
+          "title": "Vill du ha hjälp att välja?",
+          "text": "Berätta vad du ska göra, var och när, så rekommenderar vi rätt utrustning och återkommer med pris och leveranstid.",
+          "button": "Få offert",
+          "href": "/offert"
+        }
+      ]
+    },
+    "en": {
+      "title": "How far does grouting reach? Reach in fractures",
+      "h1": "How far does grouting reach? Reach in fractures",
+      "seoTitle": "How far does grouting reach? Reach in rock | Betongakuten",
+      "description": "How far can grout penetrate a fracture? See how pressure, fracture aperture and grout work together, with an interactive simulation of grouting in rock.",
+      "summary": "How pressure, fracture aperture and grout decide how far grouting reaches, with a simulation where you do the pumping.",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "In grouting, grout is pumped into fractures in rock, soil or concrete to seal and reinforce. One of the first questions is: how far does the grout reach? The answer depends on three things you can try below: the pressure, how wide the fracture is and how stiff the grout is."
+        },
+        {
+          "type": "widget",
+          "kind": "injektering",
+          "title": "Do the pumping",
+          "intro": "Set the pressure, fracture aperture and grout and see how far the grouting reaches along the fracture."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Three things decide the reach"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Pressure: a higher pressure drives the grout further. It is the difference between the pump pressure and the resistance in the rock that counts.",
+            "Fracture aperture: the wider the fracture, the further the grout reaches. If the fracture is too narrow the grains block the entrance.",
+            "Grout stiffness: a thin grout (high w/c) reaches far, a thick grout short. Thin grout does however give more bleed and less strength, so the choice is a trade-off."
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "The grains must fit"
+        },
+        {
+          "type": "text",
+          "html": "Cement grains are small but not infinitely small. A rule of thumb is that the fracture should be at least four times larger than the largest grains. That is why finely ground microfine cement is used in very fine fractures."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Reality is more complicated"
+        },
+        {
+          "type": "text",
+          "html": "The model shows the theoretical limit where the grout stops flowing. In practice the result is also governed by pumped volume, time, the shape of the fractures and how the grout changes while it is pumped. That is why the pressure and flow are often followed during the work and documented, for example with equipment from Jean Lutz. More on choosing pump and plant in <a href=\"/artiklar/valj-injekteringsutrustning\">how to choose grouting equipment</a>."
+        },
+        {
+          "type": "faq",
+          "title": "Frequently asked questions",
+          "items": [
+            {
+              "q": "How far can grout penetrate a fracture?",
+              "a": "It depends on pressure, fracture aperture and grout stiffness. With thin grout, a wide fracture and high pressure it can reach tens of metres, but in practice it is limited by time, volume and the shape of the fracture."
+            },
+            {
+              "q": "Why is microfine cement used?",
+              "a": "Microfine cement has finer grains and can penetrate narrower fractures than ordinary cement."
+            },
+            {
+              "q": "How are pressure and flow measured?",
+              "a": "With sensors and data loggers that record pressure, flow and volume during the grouting."
+            }
+          ]
+        },
+        {
+          "type": "cta",
+          "title": "Would you like help choosing?",
+          "text": "Tell us what you are going to do, where and when, and we will recommend the right equipment and come back with a price and lead time.",
+          "button": "Get a quote",
+          "href": "/offert"
+        }
+      ]
+    }
+  }
+}

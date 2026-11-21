@@ -1,0 +1,41 @@
+{
+  "path": "/artiklar/tagg/berg",
+  "updated": "2026-11-12",
+  "template": "articles",
+  "order": 10,
+  "published": true,
+  "hideIn": [
+    "es",
+    "no",
+    "lt",
+    "lv",
+    "et",
+    "ru"
+  ],
+  "i18n": {
+    "sv": {
+      "title": "Artiklar om Berg",
+      "h1": "Artiklar om Berg",
+      "seoTitle": "Artiklar och guider om Berg | Betongakuten",
+      "description": "Alla artiklar och guider om Berg från Betongakuten. Sök eller filtrera på fler taggar.",
+      "blocks": [
+        {
+          "type": "articles",
+          "tag": "berg"
+        }
+      ]
+    },
+    "en": {
+      "title": "Articles about Rock",
+      "h1": "Articles about Rock",
+      "seoTitle": "Articles and guides about Rock | Betongakuten",
+      "description": "All articles and guides about Rock from Betongakuten. Search or filter by more tags.",
+      "blocks": [
+        {
+          "type": "articles",
+          "tag": "berg"
+        }
+      ]
+    }
+  }
+}

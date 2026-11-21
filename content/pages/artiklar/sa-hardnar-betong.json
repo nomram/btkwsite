@@ -1,0 +1,167 @@
+{
+  "path": "/artiklar/sa-hardnar-betong",
+  "updated": "2026-11-16",
+  "template": "article",
+  "order": 10,
+  "published": true,
+  "date": "2026-11-16",
+  "tags": [
+    "betong",
+    "harning",
+    "cement",
+    "verktyg"
+  ],
+  "image": "/assets/img/brand-photo-kraft-tool.webp",
+  "hideIn": [
+    "es",
+    "no",
+    "lt",
+    "lv",
+    "et",
+    "ru"
+  ],
+  "i18n": {
+    "sv": {
+      "title": "Så hårdnar betong: tid, temperatur och vatten",
+      "h1": "Så hårdnar betong: tid, temperatur och vatten",
+      "seoTitle": "Så hårdnar betong: härdning, tid och temperatur | Betongakuten",
+      "description": "Hur snabbt hårdnar betong och vad påverkar det? Se hållfasthetsutvecklingen över tid, med cementtyp och temperatur i en interaktiv kurva.",
+      "summary": "Hur hållfastheten växer med tiden, och hur cementtyp och temperatur ändrar hastigheten. Med en kurva du kan dra i.",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "Betong torkar inte, den hårdnar. Det sker genom en kemisk reaktion mellan cement och vatten som kallas hydratisering, och den fortsätter i veckor och månader. Därför handlar härdning om att ge reaktionen vatten och värme, inte att torka betongen."
+        },
+        {
+          "type": "widget",
+          "kind": "harda",
+          "title": "Hur snabbt hårdnar den?",
+          "intro": "Välj cementtyp och temperatur och dra i tidsreglaget. Kurvan visar hur stor del av 28-dygnsstyrkan betongen har nått."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Det går fort i början och sedan allt långsammare"
+        },
+        {
+          "type": "text",
+          "html": "Under de första dygnen växer hållfastheten snabbt. Efter en vecka har normal betong vid 20 grader ofta nått omkring tre fjärdedelar av sin 28-dygnsstyrka. Därefter fortsätter den att öka, men allt långsammare. Standardprovningen sker efter 28 dygn, men betongen blir fortfarande starkare därefter."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Temperaturen styr tempot"
+        },
+        {
+          "type": "text",
+          "html": "Värme snabbar på reaktionen och kyla bromsar den. Under cirka 5 grader går härdningen mycket långsamt, och vid frost står den i praktiken still. Ung betong som fryser kan skadas, så vintergjutning kräver skydd och ofta värme."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Håll den fuktig"
+        },
+        {
+          "type": "text",
+          "html": "Eftersom betongen behöver vatten för att hårdna får ytan inte torka ut för tidigt. Vanliga åtgärder är att täcka med plast eller fuktiga mattor, vattna eller använda härdningsmedel. Vilken cement du använder spelar också roll: läs om <a href=\"/artiklar/cementtyper-cem-i-cem-ii\">cementtyper och bokstäverna N och R</a>."
+        },
+        {
+          "type": "faq",
+          "title": "Vanliga frågor",
+          "items": [
+            {
+              "q": "Hur lång tid tar det innan betong är hård?",
+              "a": "Den tar upp sin nominella hållfasthet efter 28 dygn, men har ofta nått ungefär tre fjärdedelar efter en vecka vid 20 grader. Det beror på cementtyp, temperatur och recept."
+            },
+            {
+              "q": "Torkar betong?",
+              "a": "Nej, den hårdnar genom en kemisk reaktion med vatten. Torkar ytan ut för tidigt avstannar reaktionen och ytan blir svag."
+            },
+            {
+              "q": "Kan man gjuta betong vintertid?",
+              "a": "Ja, men med skydd, isolering och ofta värme så att betongen inte fryser innan den har hunnit hårdna ordentligt."
+            }
+          ]
+        },
+        {
+          "type": "cta",
+          "title": "Vill du ha hjälp att välja?",
+          "text": "Berätta vad du ska göra, var och när, så rekommenderar vi rätt utrustning och återkommer med pris och leveranstid.",
+          "button": "Få offert",
+          "href": "/offert"
+        }
+      ]
+    },
+    "en": {
+      "title": "How concrete hardens: time, temperature and water",
+      "h1": "How concrete hardens: time, temperature and water",
+      "seoTitle": "How concrete hardens: curing, time and temperature | Betongakuten",
+      "description": "How fast does concrete harden and what affects it? See the strength development over time, with cement type and temperature in an interactive curve.",
+      "summary": "How strength grows over time, and how cement type and temperature change the pace. With a curve you can drag.",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "Concrete does not dry, it hardens. It happens through a chemical reaction between cement and water called hydration, and it carries on for weeks and months. So curing is about giving the reaction water and warmth, not about drying the concrete."
+        },
+        {
+          "type": "widget",
+          "kind": "harda",
+          "title": "How fast does it harden?",
+          "intro": "Choose the cement type and temperature and drag the time slider. The curve shows how much of the 28-day strength the concrete has reached."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Fast at the start, then slower and slower"
+        },
+        {
+          "type": "text",
+          "html": "Strength grows quickly during the first days. After a week, normal concrete at 20 degrees has often reached about three quarters of its 28-day strength. After that it keeps rising, but more and more slowly. The standard test is made after 28 days, but the concrete keeps getting stronger afterwards."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Temperature sets the pace"
+        },
+        {
+          "type": "text",
+          "html": "Heat speeds up the reaction and cold slows it down. Below about 5 degrees hardening is very slow, and in frost it practically stops. Young concrete that freezes can be damaged, so winter casting needs protection and often heat."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Keep it moist"
+        },
+        {
+          "type": "text",
+          "html": "Because the concrete needs water to harden, the surface must not dry out too early. Common measures are covering with plastic or damp mats, watering or using a curing compound. Which cement you use also matters: read about <a href=\"/artiklar/cementtyper-cem-i-cem-ii\">cement types and the letters N and R</a>."
+        },
+        {
+          "type": "faq",
+          "title": "Frequently asked questions",
+          "items": [
+            {
+              "q": "How long does it take for concrete to be hard?",
+              "a": "It reaches its nominal strength after 28 days, but has often reached about three quarters after a week at 20 degrees. It depends on cement type, temperature and mix."
+            },
+            {
+              "q": "Does concrete dry?",
+              "a": "No, it hardens through a chemical reaction with water. If the surface dries out too early the reaction stops and the surface becomes weak."
+            },
+            {
+              "q": "Can you cast concrete in winter?",
+              "a": "Yes, but with protection, insulation and often heat so the concrete does not freeze before it has hardened properly."
+            }
+          ]
+        },
+        {
+          "type": "cta",
+          "title": "Would you like help choosing?",
+          "text": "Tell us what you are going to do, where and when, and we will recommend the right equipment and come back with a price and lead time.",
+          "button": "Get a quote",
+          "href": "/offert"
+        }
+      ]
+    }
+  }
+}

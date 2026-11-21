@@ -350,7 +350,9 @@ fs.copyFileSync(cssSrc, path.join(DIST, "css/site.css"));
 fs.copyFileSync(jsSrc, path.join(DIST, "js/site.js"));
 const guardSrc = path.join(ROOT, "src/js/quote-guard.js");
 fs.copyFileSync(guardSrc, path.join(DIST, "js/quote-guard.js"));
-const assetVersion = crypto.createHash("md5").update(fs.readFileSync(cssSrc)).update(fs.readFileSync(jsSrc)).update(fs.readFileSync(guardSrc)).digest("hex").slice(0, 8);
+const widgetsSrc = path.join(ROOT, "src/js/widgets.js");
+fs.copyFileSync(widgetsSrc, path.join(DIST, "js/widgets.js"));
+const assetVersion = crypto.createHash("md5").update(fs.readFileSync(cssSrc)).update(fs.readFileSync(jsSrc)).update(fs.readFileSync(guardSrc)).update(fs.readFileSync(widgetsSrc)).digest("hex").slice(0, 8);
 
 let rendered = 0;
 const sitemapEntries = [];

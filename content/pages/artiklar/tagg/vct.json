@@ -1,0 +1,41 @@
+{
+  "path": "/artiklar/tagg/vct",
+  "updated": "2026-11-22",
+  "template": "articles",
+  "order": 10,
+  "published": true,
+  "hideIn": [
+    "es",
+    "no",
+    "lt",
+    "lv",
+    "et",
+    "ru"
+  ],
+  "i18n": {
+    "sv": {
+      "title": "Artiklar om Vct",
+      "h1": "Artiklar om Vct",
+      "seoTitle": "Artiklar och guider om Vct | Betongakuten",
+      "description": "Alla artiklar och guider om Vct från Betongakuten. Sök eller filtrera på fler taggar.",
+      "blocks": [
+        {
+          "type": "articles",
+          "tag": "vct"
+        }
+      ]
+    },
+    "en": {
+      "title": "Articles about W/c ratio",
+      "h1": "Articles about W/c ratio",
+      "seoTitle": "Articles and guides about W/c ratio | Betongakuten",
+      "description": "All articles and guides about W/c ratio from Betongakuten. Search or filter by more tags.",
+      "blocks": [
+        {
+          "type": "articles",
+          "tag": "vct"
+        }
+      ]
+    }
+  }
+}

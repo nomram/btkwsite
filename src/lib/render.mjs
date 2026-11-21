@@ -326,6 +326,11 @@ function articleMeta(ctx, page, t) {
   const tags = (page.tags || []).map((s) => `<a class="tagchip tagchip--s" href="${esc(tagUrl(ctx, s))}">${esc(tagName(ctx, s))}</a>`).join("");
   return `<div class="container article__meta"><span>${esc(articleDate(ctx, page.date))}</span><span>${esc(fmtTpl(u.article_read || "{n} min läsning", { n: min }))}</span>${tags ? `<span class="article__tags">${tags}</span>` : ""}</div>`;
 }
+// A small model or simulation for non-technical visitors (src/js/widgets.js builds it in the browser). Block: kind (vct, harda, injektering, atgang,
+// vadarvad), title, intro. Without scripts only the title, the intro and a note are shown.
+function renderWidget(ctx, b) {
+  return `<section class="wgt wgt--${esc(b.kind)}" data-widget="${esc(b.kind)}">${b.title ? `<h2 class="wgt__h">${esc(b.title)}</h2>` : ""}${b.intro ? `<p class="wgt__intro">${esc(b.intro)}</p>` : ""}<div class="wgt__app"><p class="wgt__nojs">${esc(ctx.ui.widget_nojs || "Det här verktyget behöver JavaScript.")}</p></div></section>`;
+}
 function renderFaq(ctx, b) {
   const items = (b.items || []).filter((i) => i && i.q && i.a);
   if (!items.length) return "";
@@ -884,6 +889,7 @@ function renderBlockInner(ctx, b) {
     case "video": return renderVideo(ctx, b);
     case "map": return renderMap(ctx, b);
     case "faq": return renderFaq(ctx, b);
+    case "widget": return renderWidget(ctx, b);
     case "facts": return `<div class="container facts"><ul class="facts__row">${(b.items || []).map((i) => `<li class="facts__i"><strong>${esc(i.value)}</strong><span>${esc(i.label)}</span></li>`).join("")}</ul></div>`;
     case "articles": return renderArticles(ctx, b, ctx._page);
     case "table": return renderTable(ctx, b);
@@ -1461,6 +1467,7 @@ export function renderDocument(ctx, page, t, opts = {}) {
   const cfg = JSON.stringify({ analytics, ui: uiForJs, suggest: s.langSuggest ? { ...s.langSuggest, _note: undefined } : undefined, privacy: privacyPath, searchIndex: ctx.searchIndexUrl ? ctx.searchIndexUrl : "/search-index.json" }).replace(/</g, "\\u003c");
   const ver = opts.assetVersion ? `?v=${opts.assetVersion}` : "";
   const hasQuote = flatBlocks(t.blocks || []).some((x) => x.type === "quote");
+  const hasWidget = flatBlocks(t.blocks || []).some((x) => x.type === "widget");
   return `<!doctype html>
 <html lang="${esc(htmlLang(ctx, lang))}" class="no-js">
 <head>
@@ -1500,7 +1507,7 @@ ${renderMain(ctx, page, t)}
 ${renderFooter(ctx)}
 ${renderCallBar(ctx)}
 <script type="application/json" id="bk-config">${cfg}</script>
-<script src="/js/site.js${ver}" defer></script>${hasQuote ? `<script src="/js/quote-guard.js${ver}" defer></script>` : ""}
+<script src="/js/site.js${ver}" defer></script>${hasQuote ? `<script src="/js/quote-guard.js${ver}" defer></script>` : ""}${hasWidget ? `<script src="/js/widgets.js${ver}" defer></script>` : ""}
 </body>
 </html>
 `;

@@ -1,0 +1,41 @@
+{
+  "path": "/artiklar/tagg/cement",
+  "updated": "2026-11-22",
+  "template": "articles",
+  "order": 10,
+  "published": true,
+  "hideIn": [
+    "es",
+    "no",
+    "lt",
+    "lv",
+    "et",
+    "ru"
+  ],
+  "i18n": {
+    "sv": {
+      "title": "Artiklar om Cement",
+      "h1": "Artiklar om Cement",
+      "seoTitle": "Artiklar och guider om Cement | Betongakuten",
+      "description": "Alla artiklar och guider om Cement från Betongakuten. Sök eller filtrera på fler taggar.",
+      "blocks": [
+        {
+          "type": "articles",
+          "tag": "cement"
+        }
+      ]
+    },
+    "en": {
+      "title": "Articles about Cement",
+      "h1": "Articles about Cement",
+      "seoTitle": "Articles and guides about Cement | Betongakuten",
+      "description": "All articles and guides about Cement from Betongakuten. Search or filter by more tags.",
+      "blocks": [
+        {
+          "type": "articles",
+          "tag": "cement"
+        }
+      ]
+    }
+  }
+}

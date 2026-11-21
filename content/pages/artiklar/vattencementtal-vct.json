@@ -1,0 +1,184 @@
+{
+  "path": "/artiklar/vattencementtal-vct",
+  "updated": "2026-11-22",
+  "template": "article",
+  "order": 10,
+  "published": true,
+  "date": "2026-11-22",
+  "tags": [
+    "betong",
+    "cement",
+    "vct",
+    "grunder",
+    "verktyg"
+  ],
+  "image": "/assets/img/brand-photo-ecobeton.webp",
+  "hideIn": [
+    "es",
+    "no",
+    "lt",
+    "lv",
+    "et",
+    "ru"
+  ],
+  "i18n": {
+    "sv": {
+      "title": "Vattencementtal (vct): varför vattnet avgör betongens kvalitet",
+      "h1": "Vattencementtal (vct): varför vattnet avgör betongens kvalitet",
+      "seoTitle": "Vattencementtal (vct) förklarat med kalkylator | Betongakuten",
+      "description": "Vad är vattencementtal (vct), varför bestämmer det betongens hållfasthet och täthet, och vad händer om man häller i lite extra vatten? Med en interaktiv räknare.",
+      "summary": "Vad vct är, varför lite extra vatten kostar hållfasthet och täthet, och en räknare där du själv rör om i receptet.",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "Vattencementtal, förkortat vct, är kvoten mellan vattnets och cementets vikt i betongen. Har blandningen 180 liter vatten och 360 kilo cement är vct 0,50. Det är kanske det enskilt viktigaste talet i ett betongrecept, och det går att leka med nedan."
+        },
+        {
+          "type": "widget",
+          "kind": "vct",
+          "title": "Rör om i receptet",
+          "intro": "Dra i reglaget för vct och se vad det gör med cement, vatten, hållfasthet och porer i en kubikmeter betong."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Varför spelar vattnet så stor roll?"
+        },
+        {
+          "type": "text",
+          "html": "Cement reagerar med vatten och bildar en hård massa. Men det behövs bara en del av vattnet för själva reaktionen. Resten sitter kvar som små kanaler och hålrum, så kallade kapillärporer, och när betongen torkar finns de kvar som porer. Ju mer vatten, desto fler porer, och ju fler porer, desto svagare och mer genomsläpplig betong."
+        },
+        {
+          "type": "list",
+          "items": [
+            "Lägre vct ger högre hållfasthet och tätare betong.",
+            "Högre vct gör betongen lättare att gjuta men porösare, med sämre frostbeständighet och högre risk för sprickor och armeringskorrosion.",
+            "Många utomhusbetonger i Sverige ligger kring vct 0,40 till 0,55, och det högsta tillåtna vct anges ofta i kraven för betongens miljö."
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Så mycket kostar ”lite extra vatten”"
+        },
+        {
+          "type": "text",
+          "html": "På bygget är det frestande att hälla i lite extra vatten för att betongen ska flyta lättare. Räknaren visar vad det kostar: tio liter extra per kubikmeter kan ta bort flera megapascal av hållfastheten. Vill du ha en lättare betong utan att tappa kvalitet är lösningen en flyttillsats, som gör betongen flytande utan extra vatten."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Kan vct bli för lågt?"
+        },
+        {
+          "type": "text",
+          "html": "Ja, i teorin. Runt 0,40 behövs vatten för att all cement ska reagera. Under det blir en del av cementet kvar som oreagerade korn. Betong med mycket lågt vct är svår att gjuta och görs därför nästan alltid med flyttillsats."
+        },
+        {
+          "type": "faq",
+          "title": "Vanliga frågor",
+          "items": [
+            {
+              "q": "Vad är vct?",
+              "a": "Vattencementtal: vattnets vikt dividerad med cementets vikt i betongen. 180 liter vatten och 360 kg cement ger vct 0,50."
+            },
+            {
+              "q": "Vilket vct är bäst?",
+              "a": "Det beror på konstruktionen och miljön. Lägre vct ger tätare och starkare betong, men betongen måste fortfarande gå att gjuta. Följ de krav som gäller för projektet."
+            },
+            {
+              "q": "Får man tillsätta vatten på bygget?",
+              "a": "Det rekommenderas inte, eftersom det höjer vct och sänker kvaliteten. Använd flyttillsats om betongen behöver bli mer lättflytande, i enlighet med betongleverantörens anvisningar."
+            }
+          ]
+        },
+        {
+          "type": "cta",
+          "title": "Vill du ha hjälp att välja?",
+          "text": "Berätta vad du ska göra, var och när, så rekommenderar vi rätt utrustning och återkommer med pris och leveranstid.",
+          "button": "Få offert",
+          "href": "/offert"
+        }
+      ]
+    },
+    "en": {
+      "title": "Water/cement ratio (w/c): why water decides the quality of concrete",
+      "h1": "Water/cement ratio (w/c): why water decides the quality of concrete",
+      "seoTitle": "Water/cement ratio (w/c) explained with a calculator | Betongakuten",
+      "description": "What is the water/cement ratio (w/c), why does it decide the strength and density of concrete, and what happens if you add a little extra water? With an interactive calculator.",
+      "summary": "What w/c is, why a little extra water costs strength and density, and a calculator where you stir the recipe yourself.",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "The water/cement ratio, w/c for short, is the ratio of the weight of water to the weight of cement in concrete. If a mix has 180 litres of water and 360 kilos of cement, the w/c is 0.50. It is perhaps the single most important number in a concrete recipe, and you can play with it below."
+        },
+        {
+          "type": "widget",
+          "kind": "vct",
+          "title": "Stir the recipe",
+          "intro": "Drag the w/c slider and see what it does to cement, water, strength and pores in a cubic metre of concrete."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Why does the water matter so much?"
+        },
+        {
+          "type": "text",
+          "html": "Cement reacts with water and forms a hard mass. But only part of the water is needed for the reaction itself. The rest stays behind as tiny channels and voids, called capillary pores, and when the concrete dries they remain as pores. The more water, the more pores, and the more pores, the weaker and more permeable the concrete."
+        },
+        {
+          "type": "list",
+          "items": [
+            "A lower w/c gives higher strength and a denser concrete.",
+            "A higher w/c makes the concrete easier to cast but more porous, with poorer frost resistance and a higher risk of cracks and reinforcement corrosion.",
+            "Many outdoor concretes in Sweden are around w/c 0.40 to 0.55, and the highest allowed w/c is often set by the requirements for the environment of the concrete."
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "What “a little extra water” costs"
+        },
+        {
+          "type": "text",
+          "html": "On site it is tempting to add a little extra water so the concrete flows more easily. The calculator shows the price: ten litres extra per cubic metre can take several megapascals off the strength. If you want an easier concrete without losing quality, the answer is a plasticiser, which makes the concrete flow without extra water."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Can w/c be too low?"
+        },
+        {
+          "type": "text",
+          "html": "In theory, yes. Around 0.40 there is enough water for all the cement to react. Below that, some of the cement stays behind as unreacted grains. Concrete with a very low w/c is hard to cast and is therefore almost always made with a plasticiser."
+        },
+        {
+          "type": "faq",
+          "title": "Frequently asked questions",
+          "items": [
+            {
+              "q": "What is w/c?",
+              "a": "The water/cement ratio: the weight of water divided by the weight of cement in the concrete. 180 litres of water and 360 kg of cement give w/c 0.50."
+            },
+            {
+              "q": "Which w/c is best?",
+              "a": "It depends on the structure and the environment. A lower w/c gives denser and stronger concrete, but the concrete must still be possible to cast. Follow the requirements that apply to the project."
+            },
+            {
+              "q": "Can you add water on site?",
+              "a": "It is not recommended, because it raises the w/c and lowers the quality. Use a plasticiser if the concrete needs to flow more, following the concrete supplier’s instructions."
+            }
+          ]
+        },
+        {
+          "type": "cta",
+          "title": "Would you like help choosing?",
+          "text": "Tell us what you are going to do, where and when, and we will recommend the right equipment and come back with a price and lead time.",
+          "button": "Get a quote",
+          "href": "/offert"
+        }
+      ]
+    }
+  }
+}
