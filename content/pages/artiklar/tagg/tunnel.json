@@ -1,0 +1,41 @@
+{
+  "path": "/artiklar/tagg/tunnel",
+  "updated": "2026-11-20",
+  "template": "articles",
+  "order": 10,
+  "published": true,
+  "hideIn": [
+    "es",
+    "no",
+    "lt",
+    "lv",
+    "et",
+    "ru"
+  ],
+  "i18n": {
+    "sv": {
+      "title": "Artiklar om Tunnel",
+      "h1": "Artiklar om Tunnel",
+      "seoTitle": "Artiklar och guider om Tunnel | Betongakuten",
+      "description": "Alla artiklar och guider om Tunnel från Betongakuten. Sök eller filtrera på fler taggar.",
+      "blocks": [
+        {
+          "type": "articles",
+          "tag": "tunnel"
+        }
+      ]
+    },
+    "en": {
+      "title": "Articles about Tunnelling",
+      "h1": "Articles about Tunnelling",
+      "seoTitle": "Articles and guides about Tunnelling | Betongakuten",
+      "description": "All articles and guides about Tunnelling from Betongakuten. Search or filter by more tags.",
+      "blocks": [
+        {
+          "type": "articles",
+          "tag": "tunnel"
+        }
+      ]
+    }
+  }
+}

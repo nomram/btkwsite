@@ -88,7 +88,119 @@
         hh: {
           step: "Tidsresa", note0: "Efter romarna dröjde det länge innan man byggde högt i betong igen. Ingenting av det som visas här är högre än Pantheons kupol förrän 1900-talet.",
           now: "Byggd {y}: {n}, {h} meter", items: [[126, 43, "Pantheon", "Pantheon, Rom"], [1903, 64, "Ingalls", "Ingalls Building, Cincinnati"], [1936, 221, "Hoover", "Hooverdammen (damm)"], [1967, 155, "Kaknäs", "Kaknästornet, Stockholm"], [1976, 553, "CN Tower", "CN Tower, Toronto"], [2005, 190, "Turning Torso", "Turning Torso, Malmö"], [2010, 828, "Burj Khalifa", "Burj Khalifa, Dubai"]],
-          how: "Höjderna är de som vanligen anges för byggnaderna. Alla har betong som en viktig del av bärande delar, men inte alla är av bara betong (Burj Khalifas spira är av stål). Skalan är densamma för alla staplar."
+          how: "Höjderna är de som vanligen anges för byggnaderna. Alla har betong som en viktig del av bärande delar, men inte alla är av bara betong (Burj Khalifas spira är av stål). Samma skala gäller för alla staplar."
+        }
+      },
+      tun: {
+        "cyc": {
+          "play": "Spela upp",
+          "pause": "Pausa",
+          "prev": "Föregående",
+          "next": "Nästa",
+          "step": "Steg",
+          "of": "av",
+          "steps": [
+            [
+              "Borra",
+              "Borrjumbon borrar rader av hål i ortsbrösten, ofta flera tiotal hål, enligt en plan som datorn styr. Hålens läge avgör hur berget brister och vilken form tunneln får."
+            ],
+            [
+              "Ladda",
+              "Hålen fylls med sprängämne och kopplas ihop med tändare. Laddningen planeras så att tunneln får rätt form och berget runt omkring skadas så lite som möjligt."
+            ],
+            [
+              "Spräng",
+              "Salvan avfyras när alla har lämnat tunneln. Berget spricker och faller som en hög sprängsten, och tunneln har blivit några meter längre."
+            ],
+            [
+              "Vädra",
+              "Sprängrök och damm ventileras ut innan någon får gå in igen. Stora fläktar blåser frisk luft genom tunneln."
+            ],
+            [
+              "Lasta ut",
+              "Hjullastare och dumpers kör ut sprängstenen. Den används ofta som fyllnadsmassor eller krossas till bergmaterial."
+            ],
+            [
+              "Skrota",
+              "Lösa stenar tas ned från tak och väggar med en maskin som kallas skrotare, så att inget faller ned senare."
+            ],
+            [
+              "Spruta betong",
+              "Berget sprutas med ett lager sprutbetong som håller ihop ytan och stabiliserar tunneln."
+            ],
+            [
+              "Bulta och injektera",
+              "Bergbultar sätts för att binda ihop berget. Vid behov injekteras sprickor för att täta mot vatten. Sedan börjar nästa salva, och det upprepas meter för meter."
+            ]
+          ],
+          "how": "Förenklad bild av borra och spräng. Hur lång tid ett varv tar, ofta flera timmar upp till ett halvt dygn, och hur många meter varje salva ger varierar med berget, tunnelns storlek och kraven i projektet."
+        },
+        "val": {
+          "ground": "Mark och berg",
+          "length": "Tunnelns längd",
+          "g": [
+            "Hårt, tätt berg",
+            "Sprickigt berg med vatten",
+            "Jord eller lera (mjuk mark)"
+          ],
+          "l": [
+            "Kort (under 1 km)",
+            "Medellång (1 till 5 km)",
+            "Lång (över 5 km)"
+          ],
+          "method": "Metod som ofta väljs",
+          "risks": "Vanliga risker",
+          "fixes": "Vanliga åtgärder",
+          "note": "En förenklad översikt. Varje tunnel kräver geologisk undersökning och projektering av ansvarig konstruktör.",
+          "m": {
+            "10": "Borra och spräng med förinjektering.",
+            "11": "Borra och spräng med förinjektering, eller TBM med injektering vid behov.",
+            "12": "TBM med injektering vid behov, eller borra och spräng med förinjektering.",
+            "20": "Rörpressning eller en liten tunnelborrmaskin.",
+            "21": "TBM med jordtrycksbalans (EPB) eller slurryskärm.",
+            "22": "TBM med jordtrycksbalans (EPB) eller slurryskärm.",
+            "00": "Borra och spräng med borrjumbo.",
+            "01": "Borra och spräng, eller TBM om tunneln är rak och berget är jämnt.",
+            "02": "TBM, ofta tillsammans med borra och spräng på delar av sträckan."
+          },
+          "r": [
+            [
+              "Lösa block och bergfall",
+              "Sprängskador på berget runt tunneln",
+              "Damm och buller i arbetsmiljön"
+            ],
+            [
+              "Vatteninläckage i tunneln",
+              "Sänkt grundvattennivå som kan ge sättningar och påverka miljön",
+              "Instabila sprickzoner och bergfall"
+            ],
+            [
+              "Sättningar i marken ovanför, som kan skada byggnader",
+              "Ortsbröstet kan rasa om stödtrycket är fel",
+              "Grundvatten och mjuk, vattenmättad jord"
+            ]
+          ],
+          "rLong": [
+            "Slitage på verktyg i hårt, slipande berg",
+            "En TBM kan fastna i krossat berg eller sprickzoner",
+            "Hinder i marken, till exempel block eller gamla grundläggningar"
+          ],
+          "f": [
+            [
+              "Skrotning, bultning och sprutbetong",
+              "Sonderborrning framför ortsbröstet för att hitta sprickzoner i tid"
+            ],
+            [
+              "Förinjektering för att täta berget innan man sprängs",
+              "Sprutbetong och bultning",
+              "Mätning av grundvattennivå och sättningar"
+            ],
+            [
+              "Rätt stödtryck mot ortsbröstet",
+              "Betongtubbingar som bildar en tät ring bakom maskinen",
+              "Mätning av sättningar och injektering av marken vid behov"
+            ]
+          ]
         }
       }
     },
@@ -173,6 +285,118 @@
           step: "Time travel", note0: "After the Romans it took a long time before anyone built high in concrete again. Nothing shown here is taller than the dome of the Pantheon until the 20th century.",
           now: "Built {y}: {n}, {h} metres", items: [[126, 43, "Pantheon", "The Pantheon, Rome"], [1903, 64, "Ingalls", "Ingalls Building, Cincinnati"], [1936, 221, "Hoover", "Hoover Dam (dam)"], [1967, 155, "Kaknäs", "Kaknästornet, Stockholm"], [1976, 553, "CN Tower", "CN Tower, Toronto"], [2005, 190, "Turning Torso", "Turning Torso, Malmö"], [2010, 828, "Burj Khalifa", "Burj Khalifa, Dubai"]],
           how: "The heights are the ones commonly stated for the structures. All have concrete as an important part of the load-bearing parts, but not all are made of concrete alone (the spire of Burj Khalifa is steel). The scale is the same for all bars."
+        }
+      },
+      tun: {
+        "cyc": {
+          "play": "Play",
+          "pause": "Pause",
+          "prev": "Previous",
+          "next": "Next",
+          "step": "Step",
+          "of": "of",
+          "steps": [
+            [
+              "Drill",
+              "The drill jumbo drills rows of holes in the face, often several dozen holes, to a plan controlled by the computer. The position of the holes decides how the rock breaks and what shape the tunnel gets."
+            ],
+            [
+              "Charge",
+              "The holes are filled with explosives and connected with detonators. The charge is planned so the tunnel gets the right shape and the surrounding rock is damaged as little as possible."
+            ],
+            [
+              "Blast",
+              "The round is fired when everyone has left the tunnel. The rock cracks and falls as a pile of blasted rock, and the tunnel has become a few metres longer."
+            ],
+            [
+              "Ventilate",
+              "Blast fumes and dust are ventilated out before anyone may go back in. Big fans blow fresh air through the tunnel."
+            ],
+            [
+              "Remove the rock",
+              "Wheel loaders and dump trucks carry out the blasted rock. It is often used as fill or crushed into rock aggregate."
+            ],
+            [
+              "Scale",
+              "Loose stones are brought down from the roof and walls with a machine called a scaler, so nothing falls later."
+            ],
+            [
+              "Spray concrete",
+              "The rock is sprayed with a layer of shotcrete that holds the surface together and stabilises the tunnel."
+            ],
+            [
+              "Bolt and grout",
+              "Rock bolts are installed to tie the rock together. If needed, cracks are grouted to seal against water. Then the next round begins, and it is repeated metre by metre."
+            ]
+          ],
+          "how": "A simplified picture of drill and blast. How long a round takes, often several hours up to half a day, and how many metres each round gives varies with the rock, the size of the tunnel and the requirements of the project."
+        },
+        "val": {
+          "ground": "Ground and rock",
+          "length": "Length of the tunnel",
+          "g": [
+            "Hard, tight rock",
+            "Fractured rock with water",
+            "Soil or clay (soft ground)"
+          ],
+          "l": [
+            "Short (under 1 km)",
+            "Medium (1 to 5 km)",
+            "Long (over 5 km)"
+          ],
+          "method": "Method often chosen",
+          "risks": "Common risks",
+          "fixes": "Common measures",
+          "note": "A simplified overview. Every tunnel requires a geological investigation and design by the responsible engineer.",
+          "m": {
+            "10": "Drill and blast with pre-grouting.",
+            "11": "Drill and blast with pre-grouting, or a TBM with grouting when needed.",
+            "12": "A TBM with grouting when needed, or drill and blast with pre-grouting.",
+            "20": "Pipe jacking or a small tunnel boring machine.",
+            "21": "A TBM with earth pressure balance (EPB) or slurry shield.",
+            "22": "A TBM with earth pressure balance (EPB) or slurry shield.",
+            "00": "Drill and blast with a drill jumbo.",
+            "01": "Drill and blast, or a TBM if the tunnel is straight and the rock is even.",
+            "02": "A TBM, often together with drill and blast on parts of the route."
+          },
+          "r": [
+            [
+              "Loose blocks and rockfall",
+              "Blast damage to the rock around the tunnel",
+              "Dust and noise in the working environment"
+            ],
+            [
+              "Water leaking into the tunnel",
+              "A lowered groundwater level that can cause settlement and affect the environment",
+              "Unstable fracture zones and rockfall"
+            ],
+            [
+              "Settlement of the ground above, which can damage buildings",
+              "The face can collapse if the support pressure is wrong",
+              "Groundwater and soft, saturated soil"
+            ]
+          ],
+          "rLong": [
+            "Wear on tools in hard, abrasive rock",
+            "A TBM can get stuck in crushed rock or fracture zones",
+            "Obstacles in the ground, for example boulders or old foundations"
+          ],
+          "f": [
+            [
+              "Scaling, bolting and shotcrete",
+              "Probe drilling ahead of the face to find fracture zones in time"
+            ],
+            [
+              "Pre-grouting to seal the rock before blasting",
+              "Shotcrete and bolting",
+              "Monitoring of groundwater level and settlement"
+            ],
+            [
+              "The right support pressure on the face",
+              "Concrete segments that form a tight ring behind the machine",
+              "Monitoring of settlement and grouting of the ground when needed"
+            ]
+          ]
         }
       }
     }
@@ -670,7 +894,56 @@
     draw();
   }
 
-  var BUILD = { vct: buildVct, harda: buildHarda, injektering: buildInj, atgang: buildAtg, vadarvad: buildVad, volym: buildVolym, klass: buildKlass, tidslinje: buildTid, pantheon: buildPantheon, armering: buildArm, hojd: buildHojd };
+  // ---------- 9. tunnelling: the drill-and-blast cycle, and what ground means for method and risk ----------
+  function tunnelScene(step) {
+    var g = sv("svg", { viewBox: "0 0 320 150", class: "wchart wtun", role: "img", "aria-hidden": "true" }), FACE = step >= 3 ? 262 : 240, i;
+    function a(tag, attrs) { var e = sv(tag, attrs); g.appendChild(e); return e; }
+    a("rect", { x: 0, y: 0, width: 320, height: 150, class: "tgnd" }); a("rect", { x: 0, y: 48, width: FACE, height: 60, class: "tair" });
+    a("line", { x1: 0, x2: FACE, y1: 108, y2: 108, class: "hg" });
+    if (step === 2) a("rect", { x: 240, y: 48, width: 22, height: 60, class: "tghost" });
+    function machine(x, w, label) { a("rect", { x: x, y: 90, width: w, height: 16, rx: 3, class: "hs" }); a("circle", { cx: x + 10, cy: 108, r: 5, class: "hd" }); a("circle", { cx: x + w - 10, cy: 108, r: 5, class: "hd" }); }
+    if (step === 0) { machine(120, 56, "jumbo"); a("line", { x1: 172, y1: 90, x2: 236, y2: 66, class: "tboom" }); for (i = 0; i < 5; i++) a("line", { x1: 222, x2: 240, y1: 54 + i * 11, y2: 54 + i * 11, class: "thole" }); }
+    if (step === 1) { for (i = 0; i < 5; i++) { a("line", { x1: 222, x2: 240, y1: 54 + i * 11, y2: 54 + i * 11, class: "thole" }); a("rect", { x: 230, y: 52 + i * 11, width: 10, height: 4, class: "tcharge" }); } machine(110, 56, "lift"); a("line", { x1: 162, y1: 90, x2: 226, y2: 80, class: "tboom" }); }
+    if (step === 2) { var pts = []; for (i = 0; i < 16; i++) { var ang = i * Math.PI / 8, r = i % 2 ? 12 : 26; pts.push((250 + Math.cos(ang) * r).toFixed(1) + "," + (78 + Math.sin(ang) * r).toFixed(1)); } a("polygon", { points: pts.join(" "), class: "tflash" }); for (i = 0; i < 7; i++) a("circle", { cx: 226 + i * 6, cy: 96 + (i % 3) * 3, r: 3 + (i % 3), class: "tstone" }); }
+    if (step === 3) { for (i = 0; i < 3; i++) { var y = 62 + i * 18; a("line", { x1: 236, y1: y, x2: 120, y2: y, class: "tflow" }); a("polygon", { points: "120," + (y - 5) + " 108," + y + " 120," + (y + 5), class: "tflowhead" }); } a("ellipse", { cx: 246, cy: 80, rx: 20, ry: 26, class: "tdust" }); }
+    if (step === 4) { a("polygon", { points: "190,108 262,108 252,84 224,90 205,98", class: "tpile" }); machine(110, 50, "loader"); a("polygon", { points: "160,92 188,100 188,108 160,108", class: "hs" }); }
+    if (step === 5) { machine(100, 56, "scaler"); a("line", { x1: 150, y1: 90, x2: 214, y2: 52, class: "tboom" }); a("circle", { cx: 216, cy: 51, r: 4, class: "ho" }); for (i = 0; i < 3; i++) a("circle", { cx: 224 + i * 10, cy: 62 + i * 8, r: 2.5, class: "tstone" }); }
+    if (step === 6) { machine(100, 56, "sprayer"); a("line", { x1: 150, y1: 90, x2: 206, y2: 54, class: "tboom" }); a("path", { d: "M10,50 H" + FACE, class: "tshot" }); for (i = 0; i < 4; i++) a("circle", { cx: 214 + i * 6, cy: 52 - i * 1, r: 1.8, class: "tcharge" }); }
+    if (step === 7) { a("path", { d: "M10,50 H" + FACE, class: "tshot" }); for (i = 0; i < 6; i++) { var x = 36 + i * 38; a("line", { x1: x, y1: 50, x2: x, y2: 28, class: "hr" }); a("rect", { x: x - 4, y: 49, width: 8, height: 3, class: "hs" }); } machine(130, 50, "rig"); }
+    return g;
+  }
+  function buildTunCycle(app) {
+    var W = T.tun.cyc, S = { i: 0, timer: 0 }, ST = W.steps;
+    var art = el("div", { class: "wscene__box wscene__box--wide" }), yr = el("p", { class: "whist__yr" }), ttl = el("h3", { class: "whist__t" }), txt = el("p", { class: "whist__d", "aria-live": "polite" });
+    var prev = el("button", { type: "button", class: "wbtn", text: "‹ " + W.prev }), next = el("button", { type: "button", class: "wbtn", text: W.next + " ›" }), play = el("button", { type: "button", class: "wbtn", text: W.play });
+    var rail = el("ul", { class: "wrail" }), btns = [];
+    ST.forEach(function (s, i) { var b = el("button", { type: "button", class: "wrail__b", text: (i + 1) + ". " + s[0] }); b.addEventListener("click", function () { stop(); go(i); }); btns.push(b); rail.appendChild(el("li", {}, [b])); });
+    function go(i) { S.i = (i + ST.length) % ST.length; draw(); }
+    function stop() { if (S.timer) { clearInterval(S.timer); S.timer = 0; play.textContent = W.play; } }
+    play.addEventListener("click", function () { if (S.timer) { stop(); return; } play.textContent = W.pause; go(S.i + 1); S.timer = setInterval(function () { go(S.i + 1); }, 2600); });
+    prev.addEventListener("click", function () { stop(); go(S.i - 1); }); next.addEventListener("click", function () { stop(); go(S.i + 1); });
+    function draw() {
+      var s = ST[S.i]; art.innerHTML = ""; art.appendChild(tunnelScene(S.i)); yr.textContent = W.step + " " + (S.i + 1) + " " + W.of + " " + ST.length; ttl.textContent = s[0]; txt.textContent = s[1];
+      btns.forEach(function (b, i) { b.classList.toggle("is-on", i === S.i); b.setAttribute("aria-current", i === S.i ? "true" : "false"); });
+    }
+    app.appendChild(el("div", { class: "whist whist--tun" }, [art, el("div", { class: "whist__card" }, [yr, ttl, txt, el("div", { class: "whist__nav" }, [prev, play, next])])]));
+    app.appendChild(rail); app.appendChild(how(W.how));
+    draw();
+  }
+  function buildTunVal(app) {
+    var W = T.tun.val, S = { g: 0, l: 0 };
+    var g = select(W.ground, W.g, 0, function (i) { S.g = i; draw(); }), l = select(W.length, W.l, 0, function (i) { S.l = i; draw(); });
+    var meth = el("p", { class: "wgt__big", "aria-live": "polite" }), rUl = el("ul", { class: "wlist wlist--risk" }), fUl = el("ul", { class: "wlist wlist--fix" });
+    function fill(ul, items) { ul.innerHTML = ""; items.forEach(function (t) { ul.appendChild(el("li", { text: t })); }); }
+    function draw() {
+      meth.textContent = W.m["" + S.g + S.l];
+      var risks = W.r[S.g].slice(); if (S.l === 2) risks.push(W.rLong[S.g]); fill(rUl, risks); fill(fUl, W.f[S.g]);
+    }
+    app.appendChild(el("div", { class: "wgt__grid" }, [el("div", { class: "wgt__ctl" }, [g.box, l.box, el("p", { class: "wgt__extra", text: W.note })]), el("div", { class: "wgt__out" }, [el("h3", { class: "wgt__sub", text: W.method }), meth, el("h3", { class: "wgt__sub", text: W.risks }), rUl, el("h3", { class: "wgt__sub", text: W.fixes }), fUl])]));
+    draw();
+  }
+
+  var BUILD = { vct: buildVct, harda: buildHarda, injektering: buildInj, atgang: buildAtg, vadarvad: buildVad, volym: buildVolym, klass: buildKlass, tidslinje: buildTid, pantheon: buildPantheon, armering: buildArm, hojd: buildHojd, tunnelcykel: buildTunCycle, tunnelval: buildTunVal };
   [].forEach.call(document.querySelectorAll("[data-widget]"), function (box) {
     var app = box.querySelector(".wgt__app"), fn = BUILD[box.getAttribute("data-widget")];
     if (!app || !fn) return;

@@ -1,0 +1,344 @@
+{
+  "path": "/artiklar/tunnelbyggande-tbm-jumbo",
+  "updated": "2026-11-20",
+  "template": "article",
+  "order": 10,
+  "published": true,
+  "date": "2026-11-20",
+  "tags": [
+    "tunnel",
+    "maskiner",
+    "berg",
+    "injektering",
+    "sprutbetong",
+    "guide",
+    "verktyg"
+  ],
+  "image": "/assets/img/tunnel-hero.webp",
+  "hideIn": [
+    "es",
+    "no",
+    "lt",
+    "lv",
+    "et",
+    "ru"
+  ],
+  "i18n": {
+    "sv": {
+      "title": "Tunnelbyggande: TBM, borrjumbo och riskerna under jord",
+      "h1": "Tunnelbyggande: TBM, borrjumbo och riskerna under jord",
+      "seoTitle": "Tunnelbyggande: TBM, borrjumbo och risker | Betongakuten",
+      "description": "Så byggs en tunnel: borra och spräng, borrjumbon, tunnelborrmaskinen (TBM), sprutbetong och injektering, och vilka risker som finns under jord. Med interaktiva illustrationer.",
+      "summary": "Borra och spräng eller TBM? Vilka maskiner används, vad kan gå fel, och hur förstärker man berget. Med två interaktiva illustrationer.",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "Att bygga en tunnel är att göra ett hål i något som hela tiden vill stänga sig. Det gör tunnelbyggande till ett av byggandets mest fascinerande områden. Här går vi igenom hur det går till, vilka maskiner som används och vad som kan gå fel."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Två sätt att bygga en tunnel"
+        },
+        {
+          "type": "text",
+          "html": "I grova drag finns två huvudmetoder. I hårt berg, som i stora delar av Sverige och Norge, är borra och spräng vanligast. I mjukare mark och i långa tunnlar används ofta en tunnelborrmaskin, TBM (efter engelskans tunnel boring machine). Börja med att följa ett varv av borra och spräng."
+        },
+        {
+          "type": "widget",
+          "kind": "tunnelcykel",
+          "title": "Så går en salva till",
+          "intro": "Klicka dig genom ett varv, eller tryck på spela upp. Tunneln blir några meter längre för varje varv.",
+          "cta": false
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Borrjumbon och de andra maskinerna"
+        },
+        {
+          "type": "text",
+          "html": "Borrjumbon är hjärtat i borra och spräng. Det är en stor borrigg med två eller tre bommar, där varje bom bär en bergborrmaskin. Datorn styr hålen efter tunnelns ritning, och samma maskin borrar ofta även hålen för bergbultar och för injektering. Runt jumbon arbetar en hel flotta:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Laddningsfordon som fyller hålen med sprängämne.",
+            "Hjullastare och dumpers som kör ut sprängstenen.",
+            "Skrotare som tar ned lösa block från taket.",
+            "Bultningsriggar som sätter bergbultar.",
+            "Sprutbetongriggar med en lång arm som sprutar sprutbetong.",
+            "Injekteringsaggregat som pumpar in injekteringsbruk i sprickor.",
+            "Fläktar och ventilationsslang som för bort rök och damm."
+          ]
+        },
+        {
+          "type": "text",
+          "html": "Sprutbetong och injektering är två av de viktigaste verktygen för att förstärka och täta berget. Läs mer i <a href=\"/artiklar/sprutbetong-torr-eller-vat\">sprutbetong: torr eller våt metod</a> och <a href=\"/artiklar/valj-injekteringsutrustning\">så väljer du injekteringsutrustning</a>."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "TBM: tunnelborrmaskinen"
+        },
+        {
+          "type": "text",
+          "html": "En TBM är i princip en fabrik som rör sig genom berget. Längst fram sitter ett roterande skärhuvud med skivfräsar som skär och krossar berget. Massorna förs bakåt med en bandtransportör. Bakom skärhuvudet monterar maskinen en ring av förtillverkade betongelement, så kallade tubbingar, som utgör tunnelväggen. Maskinen skjuter sig framåt genom att trycka mot den senaste ringen med hydrauliska domkrafter. Det finns flera typer:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "<strong>Hårdbergs-TBM:</strong> för fast berg. Skivfräsar rullar mot berget och spräcker det i flisor.",
+            "<strong>EPB-TBM (jordtrycksbalans):</strong> för jord och lera. Den uppgrävda jorden används för att hålla emot trycket vid fronten.",
+            "<strong>Slurry-TBM:</strong> för vattenmättad jord. Trycket hålls av en bentonitslurry som pumpas runt skärhuvudet.",
+            "<strong>Mikro-TBM och rörpressning:</strong> för små tunnlar där ingen kan gå in, till exempel för ledningar."
+          ]
+        },
+        {
+          "type": "text",
+          "html": "Fördelen med en TBM är jämnt tempo och en slät tunnelvägg. Nackdelen är att maskinen är dyr och tar lång tid att bygga och starta, så den lönar sig främst i långa tunnlar. Enligt tradition får tunnelborrmaskiner ofta kvinnonamn, efter Sankta Barbara som är gruvarbetarnas och tunnelbyggarnas skyddshelgon."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Rekord och intressanta tunnlar"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Gotthard-basetunneln i Schweiz, öppnad 2016, är med cirka 57 kilometer världens längsta järnvägstunnel.",
+            "Lærdalstunneln i Norge är med 24,5 kilometer världens längsta vägtunnel och byggdes huvudsakligen med borra och spräng.",
+            "Kanaltunneln mellan England och Frankrike öppnades 1994. Flera TBM:er arbetade från båda hållen och möttes under kanalen.",
+            "Bertha, som borrade en vägtunnel under Seattle, hade en diameter på cirka 17,5 meter och var en av världens största TBM:er. Hon stod stilla i ungefär två år efter ett haveri."
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Risker under jord"
+        },
+        {
+          "type": "text",
+          "html": "Tunnelbyggande innebär risker, både för människor och för projektet. Marken är aldrig helt känd i förväg. Därför görs geologiska undersökningar och mätningar, och man borrar ofta provhål framför ortsbröstet. Några vanliga risker är:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "<strong>Bergfall och lösa block.</strong> Berget kan släppa. Skrotning, bultning och sprutbetong håller tunneln säker.",
+            "<strong>Vatten.</strong> Inläckage kan göra arbetet svårt och sänka grundvattnet utanför tunneln, vilket kan ge sättningar och påverka miljön. Förinjektering används för att täta berget i förväg.",
+            "<strong>Sättningar.</strong> I mjuk mark kan marken ovanför sjunka och skada byggnader. Därför mäts rörelserna noggrant.",
+            "<strong>Maskinen kan fastna.</strong> En TBM kan fastna i krossat berg eller när berget trycker in mot maskinen.",
+            "<strong>Arbetsmiljön.</strong> Damm, buller, sprängämnen, tung trafik och brand i trånga utrymmen kräver noggrann planering."
+          ]
+        },
+        {
+          "type": "text",
+          "html": "Hallandsåsen i Skåne är ett exempel på hur svårt det kan vara. Berget var sprickigt och vattenförande, och när injekteringsprodukten Rhoca-Gil, som innehöll akrylamid, läckte ut i vattendragen stoppades bygget 1997. Tunnlarna öppnades först 2015. Det visar hur viktigt det är att välja rätt material och hålla koll på det."
+        },
+        {
+          "type": "widget",
+          "kind": "tunnelval",
+          "title": "Vad betyder marken för metod och risker?",
+          "intro": "Välj mark och längd och se vilken metod som ofta passar, vilka risker som är vanliga och vad man gör åt dem.",
+          "cta": false
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Betong i tunneln"
+        },
+        {
+          "type": "text",
+          "html": "Betong är med överallt i en tunnel. Sprutbetong förstärker berget direkt efter sprängning, betongtubbingar bildar tunnelväggen i en TBM-tunnel, och i färdiga tunnlar gjuts ofta vägbana, kanaler och portaler. Injektering täter och förstärker berget runt omkring. Hur betong hårdnar, särskilt när det är kallt, kan du läsa om i <a href=\"/artiklar/sa-hardnar-betong\">så hårdnar betong</a>."
+        },
+        {
+          "type": "faq",
+          "title": "Vanliga frågor",
+          "items": [
+            {
+              "q": "Vad är skillnaden mellan en TBM och en borrjumbo?",
+              "a": "En TBM borrar hela tunneltvärsnittet kontinuerligt med ett roterande skärhuvud. En borrjumbo borrar hål i ortsbröstet som sedan laddas och sprängs, och används även för bultning och injekteringshål."
+            },
+            {
+              "q": "Hur snabbt går det att bygga en tunnel?",
+              "a": "Det varierar mycket, från några meter till några tiotal meter per dygn beroende på metod, berg och tunnelns storlek. Borra och spräng går framåt salva för salva, en TBM går mer kontinuerligt men har lång uppstart."
+            },
+            {
+              "q": "Varför injekterar man i tunnlar?",
+              "a": "För att täta berget mot vatten och förstärka sprickigt berg. Det görs ofta före sprängning (förinjektering) men också efteråt."
+            },
+            {
+              "q": "Vilka är de vanligaste riskerna?",
+              "a": "Bergfall och lösa block, vatteninläckage, sättningar i marken ovanför och att maskiner fastnar. Därför görs undersökningar, mätningar och förstärkning med bultar, sprutbetong och injektering."
+            }
+          ]
+        },
+        {
+          "type": "cta",
+          "title": "Ska du bygga, förstärka eller täta under jord?",
+          "text": "Berätta vad du ska göra, var och när, så rekommenderar vi rätt utrustning för sprutbetong, injektering och borrning och återkommer med pris och leveranstid.",
+          "button": "Få offert",
+          "href": "/offert"
+        }
+      ]
+    },
+    "en": {
+      "title": "Tunnelling: TBMs, drill jumbos and the risks underground",
+      "h1": "Tunnelling: TBMs, drill jumbos and the risks underground",
+      "seoTitle": "Tunnelling: TBMs, drill jumbos and risks | Betongakuten",
+      "description": "How a tunnel is built: drill and blast, the drill jumbo, the tunnel boring machine (TBM), shotcrete and grouting, and the risks underground. With interactive illustrations.",
+      "summary": "Drill and blast or TBM? Which machines are used, what can go wrong and how the rock is reinforced. With two interactive illustrations.",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "Building a tunnel means making a hole in something that constantly wants to close. That makes tunnelling one of the most fascinating areas of construction. Here we go through how it is done, which machines are used and what can go wrong."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Two ways to build a tunnel"
+        },
+        {
+          "type": "text",
+          "html": "Broadly there are two main methods. In hard rock, as in large parts of Sweden and Norway, drill and blast is the most common. In softer ground and in long tunnels a tunnel boring machine, a TBM, is often used. Start by following one cycle of drill and blast."
+        },
+        {
+          "type": "widget",
+          "kind": "tunnelcykel",
+          "title": "How a round goes",
+          "intro": "Click through one cycle, or press play. The tunnel gets a few metres longer with every cycle.",
+          "cta": false
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "The drill jumbo and the other machines"
+        },
+        {
+          "type": "text",
+          "html": "The drill jumbo is the heart of drill and blast. It is a large drilling rig with two or three booms, where each boom carries a rock drill. The computer controls the holes according to the drawing of the tunnel, and the same machine often drills the holes for rock bolts and for grouting too. A whole fleet works around the jumbo:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Charging vehicles that fill the holes with explosives.",
+            "Wheel loaders and dump trucks that carry out the blasted rock.",
+            "Scalers that bring down loose blocks from the roof.",
+            "Bolting rigs that install rock bolts.",
+            "Shotcrete rigs with a long arm that sprays shotcrete.",
+            "Grouting units that pump grout into fractures.",
+            "Fans and ventilation ducts that carry away smoke and dust."
+          ]
+        },
+        {
+          "type": "text",
+          "html": "Shotcrete and grouting are two of the most important tools for reinforcing and sealing the rock. Read more in <a href=\"/artiklar/sprutbetong-torr-eller-vat\">shotcrete: dry or wet process</a> and <a href=\"/artiklar/valj-injekteringsutrustning\">how to choose grouting equipment</a>."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "The TBM: the tunnel boring machine"
+        },
+        {
+          "type": "text",
+          "html": "A TBM is basically a factory that moves through the rock. At the front is a rotating cutterhead with disc cutters that cut and crush the rock. The spoil is carried backwards on a conveyor belt. Behind the cutterhead the machine installs a ring of precast concrete elements, so-called segments, that form the tunnel wall. The machine pushes itself forward by pressing against the latest ring with hydraulic jacks. There are several types:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "<strong>Hard rock TBM:</strong> for solid rock. Disc cutters roll against the rock and split it into chips.",
+            "<strong>EPB TBM (earth pressure balance):</strong> for soil and clay. The excavated soil is used to resist the pressure at the face.",
+            "<strong>Slurry TBM:</strong> for saturated soil. The pressure is held by a bentonite slurry pumped around the cutterhead.",
+            "<strong>Micro TBM and pipe jacking:</strong> for small tunnels where no one can go in, for example for pipes and cables."
+          ]
+        },
+        {
+          "type": "text",
+          "html": "The advantage of a TBM is a steady pace and a smooth tunnel wall. The drawback is that the machine is expensive and takes a long time to build and start, so it mainly pays off in long tunnels. By tradition tunnel boring machines are often given women’s names, after Saint Barbara, the patron saint of miners and tunnellers."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Records and interesting tunnels"
+        },
+        {
+          "type": "list",
+          "items": [
+            "The Gotthard Base Tunnel in Switzerland, opened in 2016, is at about 57 kilometres the longest railway tunnel in the world.",
+            "The Lærdal Tunnel in Norway is at 24.5 kilometres the longest road tunnel in the world and was mainly built with drill and blast.",
+            "The Channel Tunnel between England and France opened in 1994. Several TBMs worked from both sides and met under the Channel.",
+            "Bertha, which bored a road tunnel under Seattle, had a diameter of about 17.5 metres and was one of the largest TBMs in the world. She stood still for about two years after a breakdown."
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Risks underground"
+        },
+        {
+          "type": "text",
+          "html": "Tunnelling involves risks, both for people and for the project. The ground is never completely known in advance. That is why geological investigations and measurements are made, and test holes are often drilled ahead of the face. Some common risks are:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "<strong>Rockfall and loose blocks.</strong> The rock can let go. Scaling, bolting and shotcrete keep the tunnel safe.",
+            "<strong>Water.</strong> Inflow can make the work difficult and lower the groundwater outside the tunnel, which can cause settlement and affect the environment. Pre-grouting is used to seal the rock in advance.",
+            "<strong>Settlement.</strong> In soft ground the ground above can sink and damage buildings. That is why movements are measured carefully.",
+            "<strong>The machine can get stuck.</strong> A TBM can get stuck in crushed rock or when the rock squeezes in against the machine.",
+            "<strong>The working environment.</strong> Dust, noise, explosives, heavy traffic and fire in confined spaces require careful planning."
+          ]
+        },
+        {
+          "type": "text",
+          "html": "The Hallandsås ridge in Skåne is an example of how difficult it can be. The rock was fractured and water-bearing, and when the grouting product Rhoca-Gil, which contained acrylamide, leaked into the watercourses, the work was stopped in 1997. The tunnels did not open until 2015. It shows how important it is to choose the right material and keep control of it."
+        },
+        {
+          "type": "widget",
+          "kind": "tunnelval",
+          "title": "What does the ground mean for method and risk?",
+          "intro": "Choose ground and length and see which method often suits, which risks are common and what is done about them.",
+          "cta": false
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Concrete in the tunnel"
+        },
+        {
+          "type": "text",
+          "html": "Concrete is everywhere in a tunnel. Shotcrete reinforces the rock right after blasting, concrete segments form the tunnel wall in a TBM tunnel, and in finished tunnels the road deck, ducts and portals are often cast. Grouting seals and reinforces the rock around. How concrete hardens, especially when it is cold, is covered in <a href=\"/artiklar/sa-hardnar-betong\">how concrete hardens</a>."
+        },
+        {
+          "type": "faq",
+          "title": "Frequently asked questions",
+          "items": [
+            {
+              "q": "What is the difference between a TBM and a drill jumbo?",
+              "a": "A TBM bores the whole tunnel cross-section continuously with a rotating cutterhead. A drill jumbo drills holes in the face that are then charged and blasted, and is also used for bolting and grouting holes."
+            },
+            {
+              "q": "How fast can a tunnel be built?",
+              "a": "It varies a lot, from a few metres to a few tens of metres per day depending on method, rock and tunnel size. Drill and blast advances round by round, a TBM advances more continuously but has a long start-up."
+            },
+            {
+              "q": "Why is grouting used in tunnels?",
+              "a": "To seal the rock against water and reinforce fractured rock. It is often done before blasting (pre-grouting) but also afterwards."
+            },
+            {
+              "q": "What are the most common risks?",
+              "a": "Rockfall and loose blocks, water inflow, settlement of the ground above and machines getting stuck. That is why investigations, measurements and reinforcement with bolts, shotcrete and grouting are used."
+            }
+          ]
+        },
+        {
+          "type": "cta",
+          "title": "Going to build, reinforce or seal underground?",
+          "text": "Tell us what you are going to do, where and when, and we will recommend the right equipment for shotcrete, grouting and drilling and come back with a price and lead time.",
+          "button": "Get a quote",
+          "href": "/offert"
+        }
+      ]
+    }
+  }
+}

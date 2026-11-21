@@ -1,0 +1,41 @@
+{
+  "path": "/artiklar/tagg/maskiner",
+  "updated": "2026-11-20",
+  "template": "articles",
+  "order": 10,
+  "published": true,
+  "hideIn": [
+    "es",
+    "no",
+    "lt",
+    "lv",
+    "et",
+    "ru"
+  ],
+  "i18n": {
+    "sv": {
+      "title": "Artiklar om Maskiner",
+      "h1": "Artiklar om Maskiner",
+      "seoTitle": "Artiklar och guider om Maskiner | Betongakuten",
+      "description": "Alla artiklar och guider om Maskiner från Betongakuten. Sök eller filtrera på fler taggar.",
+      "blocks": [
+        {
+          "type": "articles",
+          "tag": "maskiner"
+        }
+      ]
+    },
+    "en": {
+      "title": "Articles about Machines",
+      "h1": "Articles about Machines",
+      "seoTitle": "Articles and guides about Machines | Betongakuten",
+      "description": "All articles and guides about Machines from Betongakuten. Search or filter by more tags.",
+      "blocks": [
+        {
+          "type": "articles",
+          "tag": "maskiner"
+        }
+      ]
+    }
+  }
+}
