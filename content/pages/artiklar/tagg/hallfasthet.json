@@ -1,0 +1,41 @@
+{
+  "path": "/artiklar/tagg/hallfasthet",
+  "updated": "2026-11-25",
+  "template": "articles",
+  "order": 10,
+  "published": true,
+  "hideIn": [
+    "es",
+    "no",
+    "lt",
+    "lv",
+    "et",
+    "ru"
+  ],
+  "i18n": {
+    "sv": {
+      "title": "Artiklar om Hållfasthet",
+      "h1": "Artiklar om Hållfasthet",
+      "seoTitle": "Artiklar och guider om Hållfasthet | Betongakuten",
+      "description": "Alla artiklar och guider om Hållfasthet från Betongakuten. Sök eller filtrera på fler taggar.",
+      "blocks": [
+        {
+          "type": "articles",
+          "tag": "hallfasthet"
+        }
+      ]
+    },
+    "en": {
+      "title": "Articles about Strength",
+      "h1": "Articles about Strength",
+      "seoTitle": "Articles and guides about Strength | Betongakuten",
+      "description": "All articles and guides about Strength from Betongakuten. Search or filter by more tags.",
+      "blocks": [
+        {
+          "type": "articles",
+          "tag": "hallfasthet"
+        }
+      ]
+    }
+  }
+}

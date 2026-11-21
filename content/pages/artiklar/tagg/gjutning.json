@@ -1,0 +1,41 @@
+{
+  "path": "/artiklar/tagg/gjutning",
+  "updated": "2026-11-24",
+  "template": "articles",
+  "order": 10,
+  "published": true,
+  "hideIn": [
+    "es",
+    "no",
+    "lt",
+    "lv",
+    "et",
+    "ru"
+  ],
+  "i18n": {
+    "sv": {
+      "title": "Artiklar om Gjutning",
+      "h1": "Artiklar om Gjutning",
+      "seoTitle": "Artiklar och guider om Gjutning | Betongakuten",
+      "description": "Alla artiklar och guider om Gjutning från Betongakuten. Sök eller filtrera på fler taggar.",
+      "blocks": [
+        {
+          "type": "articles",
+          "tag": "gjutning"
+        }
+      ]
+    },
+    "en": {
+      "title": "Articles about Casting",
+      "h1": "Articles about Casting",
+      "seoTitle": "Articles and guides about Casting | Betongakuten",
+      "description": "All articles and guides about Casting from Betongakuten. Search or filter by more tags.",
+      "blocks": [
+        {
+          "type": "articles",
+          "tag": "gjutning"
+        }
+      ]
+    }
+  }
+}

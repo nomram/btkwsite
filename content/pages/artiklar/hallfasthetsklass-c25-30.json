@@ -1,0 +1,187 @@
+{
+  "path": "/artiklar/hallfasthetsklass-c25-30",
+  "updated": "2026-11-17",
+  "template": "article",
+  "order": 10,
+  "published": true,
+  "date": "2026-11-17",
+  "tags": [
+    "betong",
+    "hallfasthet",
+    "grunder",
+    "verktyg"
+  ],
+  "image": "/assets/img/brand-photo-tei.webp",
+  "hideIn": [
+    "es",
+    "no",
+    "lt",
+    "lv",
+    "et",
+    "ru"
+  ],
+  "i18n": {
+    "sv": {
+      "title": "Vad betyder C25/30? Hållfasthetsklasser för betong",
+      "h1": "Vad betyder C25/30? Hållfasthetsklasser för betong",
+      "seoTitle": "Vad betyder C25/30? Betongens hållfasthetsklasser | Betongakuten",
+      "description": "Vad betyder C25/30 och C30/37? Förklaring av betongens hållfasthetsklasser, cylinder och kub, och en simulering av hur mycket en kub betong tål.",
+      "summary": "Siffrorna i C25/30 förklarade, och en lek med hur många personbilar en liten betongkub kan bära.",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "När betong beställs anges en hållfasthetsklass, till exempel C25/30. Bokstaven och siffrorna säger hur stark betongen minst ska vara. Prova nedan hur mycket en liten kub betong skulle tåla."
+        },
+        {
+          "type": "widget",
+          "kind": "klass",
+          "title": "Hur mycket tål en betongkub?",
+          "intro": "Välj klass och storlek på kuben och se vilken last den klarar innan den krossas, och hur många personbilar det motsvarar.",
+          "klass": "C30/37"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Läs beteckningen"
+        },
+        {
+          "type": "list",
+          "items": [
+            "C står för concrete, alltså betong.",
+            "Första siffran är hållfastheten i megapascal (MPa) mätt på en cylinder, 150 mm i diameter och 300 mm hög.",
+            "Andra siffran är hållfastheten i megapascal mätt på en kub med 150 mm sida.",
+            "Båda är minimivärden som betongen ska nå efter 28 dygn."
+          ]
+        },
+        {
+          "type": "text",
+          "html": "Kuben visar en högre siffra än cylindern, eftersom provkroppens form påverkar hur den spricker. Äldre svenska beteckningar som K30 anger kubhållfastheten och motsvarar ungefär C25/30."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Vad är en megapascal?"
+        },
+        {
+          "type": "text",
+          "html": "En megapascal är en kraft på en newton per kvadratmillimeter. En kub med 10 centimeters sida har en yta på 10 000 kvadratmillimeter, så 37 MPa blir 370 000 newton, ungefär 38 ton. Ungefär lika mycket som 25 personbilar, på en betongkub som väger 2,4 kilo."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Klass, miljö och vct"
+        },
+        {
+          "type": "text",
+          "html": "Vilken klass som behövs beror på konstruktionen. Utomhus och i fuktig eller frostig miljö ställs ofta krav på både klass och ett lågt <a href=\"/artiklar/vattencementtal-vct\">vattencementtal</a>, och hur fort betongen når sin styrka beror på <a href=\"/artiklar/sa-hardnar-betong\">härdningen</a>. Konstruktören anger vilken klass som gäller."
+        },
+        {
+          "type": "faq",
+          "title": "Vanliga frågor",
+          "items": [
+            {
+              "q": "Vad betyder C25/30?",
+              "a": "Betong med en karakteristisk hållfasthet på minst 25 MPa på cylinder och 30 MPa på kub efter 28 dygn."
+            },
+            {
+              "q": "Vad är skillnaden mellan cylinder och kub?",
+              "a": "Det är två olika provkroppar. Kuben (150 mm sida) ger högre värden än cylindern (150 mm diameter, 300 mm höjd), därför skrivs båda."
+            },
+            {
+              "q": "Vilken klass ska jag välja?",
+              "a": "Det beror på konstruktion och miljö. Konstruktören eller projektet anger kraven. Fråga betongleverantören om du är osäker."
+            }
+          ]
+        },
+        {
+          "type": "cta",
+          "title": "Vill du ha hjälp att välja?",
+          "text": "Berätta vad du ska göra, var och när, så rekommenderar vi rätt utrustning och återkommer med pris och leveranstid.",
+          "button": "Få offert",
+          "href": "/offert"
+        }
+      ]
+    },
+    "en": {
+      "title": "What does C25/30 mean? Strength classes for concrete",
+      "h1": "What does C25/30 mean? Strength classes for concrete",
+      "seoTitle": "What does C25/30 mean? Concrete strength classes | Betongakuten",
+      "description": "What do C25/30 and C30/37 mean? An explanation of concrete strength classes, cylinder and cube, and a simulation of how much a cube of concrete can take.",
+      "summary": "The numbers in C25/30 explained, and a game of how many cars a small cube of concrete can carry.",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "When concrete is ordered, a strength class is stated, for example C25/30. The letter and the numbers say how strong the concrete must be at least. Try below how much a small cube of concrete would withstand."
+        },
+        {
+          "type": "widget",
+          "kind": "klass",
+          "title": "How much does a cube of concrete take?",
+          "intro": "Choose the class and the size of the cube and see which load it withstands before it is crushed, and how many cars that equals.",
+          "klass": "C30/37"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Reading the designation"
+        },
+        {
+          "type": "list",
+          "items": [
+            "C stands for concrete.",
+            "The first number is the strength in megapascals (MPa) measured on a cylinder, 150 mm in diameter and 300 mm high.",
+            "The second number is the strength in megapascals measured on a cube with a 150 mm side.",
+            "Both are minimum values that the concrete must reach after 28 days."
+          ]
+        },
+        {
+          "type": "text",
+          "html": "The cube shows a higher number than the cylinder, because the shape of the test piece affects how it cracks. Older Swedish designations such as K30 give the cube strength and correspond roughly to C25/30."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "What is a megapascal?"
+        },
+        {
+          "type": "text",
+          "html": "A megapascal is a force of one newton per square millimetre. A cube with a 10 centimetre side has a face of 10,000 square millimetres, so 37 MPa becomes 370,000 newtons, about 38 tonnes. About as much as 25 cars, on a cube of concrete that weighs 2.4 kilos."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Class, environment and w/c"
+        },
+        {
+          "type": "text",
+          "html": "Which class is needed depends on the structure. Outdoors and in damp or frosty environments there are often requirements on both the class and a low <a href=\"/artiklar/vattencementtal-vct\">water/cement ratio</a>, and how fast the concrete reaches its strength depends on <a href=\"/artiklar/sa-hardnar-betong\">curing</a>. The designer states which class applies."
+        },
+        {
+          "type": "faq",
+          "title": "Frequently asked questions",
+          "items": [
+            {
+              "q": "What does C25/30 mean?",
+              "a": "Concrete with a characteristic strength of at least 25 MPa on a cylinder and 30 MPa on a cube after 28 days."
+            },
+            {
+              "q": "What is the difference between cylinder and cube?",
+              "a": "They are two different test pieces. The cube (150 mm side) gives higher values than the cylinder (150 mm diameter, 300 mm height), which is why both are written."
+            },
+            {
+              "q": "Which class should I choose?",
+              "a": "It depends on the structure and the environment. The designer or the project states the requirements. Ask the concrete supplier if you are unsure."
+            }
+          ]
+        },
+        {
+          "type": "cta",
+          "title": "Would you like help choosing?",
+          "text": "Tell us what you are going to do, where and when, and we will recommend the right equipment and come back with a price and lead time.",
+          "button": "Get a quote",
+          "href": "/offert"
+        }
+      ]
+    }
+  }
+}

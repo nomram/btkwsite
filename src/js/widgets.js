@@ -44,6 +44,19 @@
         t1: "Cement", t2: "Cementpasta", t3: "Bruk", t4: "Betong", cement: "Cement", water: "Vatten", sand: "Sand", stone: "Sten", air: "Luft",
         d1: "Ett fint grått pulver som är bindemedlet. Cement är inte samma sak som betong.", d2: "Cement och vatten rörs ihop. Det hårdnar till en stenhård massa och är limmet i allt annat.",
         d3: "Cementpasta och sand. Används till murning, putsning och som torrbruk i silo.", d4: "Cementpasta, sand och sten. Sten gör betongen billig, stark och formstabil. Ofta med armering av stål.", vol: "ungefärliga volymandelar"
+      },
+      vol: {
+        shape: "Form", s1: "Platta", s2: "Vägg eller sträckfundament", s3: "Pelare", len: "Längd", wid: "Bredd", tSlab: "Tjocklek", tWall: "Tjocklek", hgt: "Höjd", dia: "Diameter", cnt: "Antal pelare", margin: "Marginal",
+        vol: "Volym", order: "Beställ ungefär", weight: "Vikt", trucks: "Betongbilar à 8 m³", cars: "Motsvarar personbilar i vikt", bags: "Torrbetongsäckar à 25 kg", tn: "ton", m3: "m³", pcs: "st",
+        note: "Volymen är ren geometri. Lägg på marginal för ojämn botten, spill och att formen buktar. Betongleverantören har egna lastvolymer och minimimängder, så fråga dem.",
+        small: "Under en kubikmeter kan torrbetong i säck vara enklare än att beställa bil.", sizeSlab: "{a} × {b} m, {c} cm tjock", sizeWall: "{a} m lång, {b} m hög, {c} cm tjock", sizeCol: "{n} pelare, {a} cm i diameter, {b} m höga",
+        how: "Platta = längd × bredd × tjocklek. Vägg = längd × höjd × tjocklek. Pelare = π × (diameter / 2)² × höjd × antal. Vikten räknas med 2 400 kg per m³ (vanlig betong), en betongbil med 8 m³ och en personbil på 1,5 ton. Säckarna räknas med cirka 80 säckar per m³."
+      },
+      kl: {
+        cls: "Hållfasthetsklass", side: "Kubens sida", cyl: "Cylinderhållfasthet", cube: "Kubhållfasthet", force: "Last innan kuben krossas", own: "Kubens egen vikt", times: "Gånger sin egen vikt", tn: "ton", kg: "kg", cm: "cm", cars: "Det motsvarar i vikt ungefär {n} personbilar", more: "Det är cirka {n} gånger kubens egen vikt.",
+        note: "Så skulle det gå i ett laboratorium, där lasten läggs jämnt över hela ytan. I en riktig konstruktion delas lasten mellan flera delar och man räknar med säkerhetsfaktorer.",
+        min: "Siffrorna efter C är minimivärden (karakteristiska värden) efter 28 dygn: först cylinder, sedan kub.",
+        how: "Hållfasthetsklassen C25/30 betyder att betongen ska klara minst 25 MPa på en cylinder och 30 MPa på en kub efter 28 dygn. Lasten som kuben tål = kubhållfasthet × sidans area (1 MPa = 1 N per mm²), omräknat till ton. Vikten räknas med 2 400 kg per m³ och personbilen med 1,5 ton."
       }
     },
     en: {
@@ -82,6 +95,19 @@
         t1: "Cement", t2: "Cement paste", t3: "Mortar", t4: "Concrete", cement: "Cement", water: "Water", sand: "Sand", stone: "Stone", air: "Air",
         d1: "A fine grey powder that is the binder. Cement is not the same thing as concrete.", d2: "Cement and water mixed together. It hardens into a rock-hard mass and is the glue in everything else.",
         d3: "Cement paste and sand. Used for bricklaying, rendering and as dry mortar in a silo.", d4: "Cement paste, sand and stone. The stone makes the concrete cheap, strong and stable. Often reinforced with steel.", vol: "approximate shares by volume"
+      },
+      vol: {
+        shape: "Shape", s1: "Slab", s2: "Wall or strip footing", s3: "Column", len: "Length", wid: "Width", tSlab: "Thickness", tWall: "Thickness", hgt: "Height", dia: "Diameter", cnt: "Number of columns", margin: "Margin",
+        vol: "Volume", order: "Order about", weight: "Weight", trucks: "Mixer trucks of 8 m³", cars: "Weighs as many cars as", bags: "Dry concrete bags of 25 kg", tn: "tonnes", m3: "m³", pcs: "pcs",
+        note: "The volume is pure geometry. Add a margin for an uneven base, waste and formwork that bulges. The concrete supplier has its own load sizes and minimum volumes, so ask them.",
+        small: "Under one cubic metre, bagged dry concrete can be easier than ordering a truck.", sizeSlab: "{a} × {b} m, {c} cm thick", sizeWall: "{a} m long, {b} m high, {c} cm thick", sizeCol: "{n} columns, {a} cm in diameter, {b} m high",
+        how: "Slab = length × width × thickness. Wall = length × height × thickness. Column = π × (diameter / 2)² × height × number. The weight uses 2,400 kg per m³ (ordinary concrete), a mixer truck of 8 m³ and a car of 1.5 tonnes. Bags are counted at about 80 bags per m³."
+      },
+      kl: {
+        cls: "Strength class", side: "Side of the cube", cyl: "Cylinder strength", cube: "Cube strength", force: "Load before the cube is crushed", own: "Weight of the cube", times: "Times its own weight", tn: "tonnes", kg: "kg", cm: "cm", cars: "That is about the weight of {n} cars", more: "That is about {n} times the weight of the cube itself.",
+        note: "This is how it would go in a laboratory, where the load is spread evenly over the whole face. In a real structure the load is shared between several parts and safety factors are used.",
+        min: "The numbers after C are minimum values (characteristic values) after 28 days: first cylinder, then cube.",
+        how: "Strength class C25/30 means the concrete must withstand at least 25 MPa on a cylinder and 30 MPa on a cube after 28 days. The load the cube takes = cube strength × area of the face (1 MPa = 1 N per mm²), converted to tonnes. Weight uses 2,400 kg per m³ and a car of 1.5 tonnes."
       }
     }
   };
@@ -179,13 +205,15 @@
   }
 
   // ---------- 2. strength development ----------
-  function buildHarda(app) {
+  function buildHarda(app, box) {
     var W = T.harda, S = { c: 1, T: 20, f: 30, d: 7 }, SV = [0.38, 0.25, 0.2];
-    var c = select(W.cem, [W.c1, W.c2, W.c3], 1, function (i) { S.c = i; draw(); });
-    var t = slider(W.temp, -5, 35, 1, 20, function (v) { return num(v) + " °C"; }, function (v) { S.T = v; draw(); });
+    var pT = box && box.getAttribute("data-temp"), pC = box && box.getAttribute("data-cement");
+    if (pT !== null && pT !== "" && !isNaN(Number(pT))) S.T = Math.max(-5, Math.min(35, Number(pT))); if (pC !== null && pC !== "" && !isNaN(Number(pC))) S.c = Math.max(0, Math.min(2, Number(pC)));
+    var c = select(W.cem, [W.c1, W.c2, W.c3], S.c, function (i) { S.c = i; draw(); });
+    var t = slider(W.temp, -5, 35, 1, S.T, function (v) { return num(v) + " °C"; }, function (v) { S.T = v; draw(); });
     var f = slider(W.f28, 20, 60, 5, 30, function (v) { return num(v) + " " + T.mpa; }, function (v) { S.f = v; draw(); });
     var d = slider(W.day, 1, 90, 1, 7, function (v) { return num(v) + " " + W.day1; }, function (v) { S.d = v; draw(); });
-    var big = el("p", { class: "wgt__big" }), msg = el("ul", { class: "wmsg" }), miles = el("ul", { class: "wmiles" });
+    var big = el("p", { class: "wgt__big", "aria-live": "polite" }), msg = el("ul", { class: "wmsg" }), miles = el("ul", { class: "wmiles" });
     var X0 = 44, Y0 = 18, CW = 500, CH = 190;
     var chart = sv("svg", { viewBox: "0 0 560 250", class: "wchart", role: "img", "aria-label": W.axisX });
     var grid = sv("g", { class: "wgrid" });
@@ -201,7 +229,7 @@
     function daysFor(p) { for (var dd = 0.25; dd <= 90; dd += 0.25) if (beta(dd) >= p) return dd; return null; }
     function draw() {
       var pts = [], i;
-      for (i = 0; i <= 90; i += 1) pts.push([X0 + i / 90 * CW, Y0 + CH - Math.min(1.2, beta(i === 0 ? 0.3 : i)) * 100 / 120 * CH]);
+      for (i = 0; i <= 90; i += 1) pts.push([X0 + i / 90 * CW, Y0 + CH - (i === 0 ? 0 : Math.min(1.2, beta(i))) * 100 / 120 * CH]);
       curve.setAttribute("d", "M" + pts.map(function (p) { return p[0].toFixed(1) + " " + p[1].toFixed(1); }).join("L"));
       area.setAttribute("d", "M" + X0 + " " + (Y0 + CH) + "L" + pts.map(function (p) { return p[0].toFixed(1) + " " + p[1].toFixed(1); }).join("L") + "L" + (X0 + CW) + " " + (Y0 + CH) + "Z");
       var b = beta(S.d), mx = X0 + S.d / 90 * CW, my = Y0 + CH - Math.min(1.2, b) * 100 / 120 * CH;
@@ -225,7 +253,7 @@
     var b = slider(W.gap, 0.1, 3, 0.05, 0.5, function (v) { return num(v, 2) + " " + W.unitMm; }, function (v) { S.b = v; run(false); });
     var mix = select(W.mix, [W.m1, W.m2, W.m3, W.m4], 2, function (i) { S.m = i; run(false); });
     var gr = select(W.grain, [W.g1, W.g2], 0, function (i) { S.g = i; run(false); });
-    var big = el("p", { class: "wgt__big" }), msg = el("ul", { class: "wmsg" }), cmp = el("ul", { class: "wcmp" });
+    var big = el("p", { class: "wgt__big", "aria-live": "polite" }), msg = el("ul", { class: "wmsg" }), cmp = el("ul", { class: "wcmp" });
     var pump = el("button", { type: "button", class: "wbtn", text: W.pump });
     var VW = 600, VH = 250, X0 = 74, X1 = 580, Y = 125;
     var svgE = sv("svg", { viewBox: "0 0 " + VW + " " + VH, class: "wchart winj", role: "img", "aria-label": W.reach });
@@ -317,10 +345,89 @@
     draw();
   }
 
-  var BUILD = { vct: buildVct, harda: buildHarda, injektering: buildInj, atgang: buildAtg, vadarvad: buildVad };
+  // ---------- 6. how much concrete to order ----------
+  function isoBox(a, b, h) {
+    var k = Math.min(190 / ((a + b) * 0.866), 100 / ((a + b) * 0.5 + h)), A = Math.max(6, a * k), B = Math.max(6, b * k), H = Math.max(6, h * k);
+    var ox = 120 - 0.433 * (A - B), oy = 78 - ((A + B) * 0.5 - H) / 2;
+    function P(x, y, z) { return (ox + (x - y) * 0.866).toFixed(1) + "," + (oy + (x + y) * 0.5 - z).toFixed(1); }
+    var g = sv("g");
+    g.appendChild(sv("polygon", { class: "sh2", points: [P(A, 0, 0), P(A, B, 0), P(A, B, H), P(A, 0, H)].join(" ") }));
+    g.appendChild(sv("polygon", { class: "sh3", points: [P(0, B, 0), P(A, B, 0), P(A, B, H), P(0, B, H)].join(" ") }));
+    g.appendChild(sv("polygon", { class: "sh", points: [P(0, 0, H), P(A, 0, H), P(A, B, H), P(0, B, H)].join(" ") }));
+    return g;
+  }
+  function cylinder(dm, hm) {
+    var k = Math.min(100 / dm, 100 / hm), rx = Math.max(5, dm * k / 2), ry = rx / 2, hh = Math.max(8, hm * k), cx = 120, y0 = 80 - hh / 2 - ry / 2 + ry, y1 = y0 + hh, g = sv("g");
+    g.appendChild(sv("path", { class: "sh3", d: "M" + (cx - rx) + "," + y0 + "L" + (cx - rx) + "," + y1 + "A" + rx + "," + ry + " 0 0 0 " + (cx + rx) + "," + y1 + "L" + (cx + rx) + "," + y0 + "Z" }));
+    g.appendChild(sv("ellipse", { class: "sh", cx: cx, cy: y0, rx: rx, ry: ry }));
+    return g;
+  }
+  function buildVolym(app) {
+    var W = T.vol, S = { s: 0, L: 8, B: 6, tS: 15, Lw: 10, tW: 25, Hw: 2.5, d: 40, Hc: 3, n: 4, m: 5 };
+    var shape = segmented(W.shape, [W.s1, W.s2, W.s3], 0, function (i) { S.s = i; vis(); draw(); });
+    var m1 = function (v) { return num(v, v % 1 ? 1 : 0) + " m"; };
+    var sLen = slider(W.len, 1, 40, 0.5, 8, m1, function (v) { S.L = v; draw(); }), sWid = slider(W.wid, 1, 30, 0.5, 6, m1, function (v) { S.B = v; draw(); });
+    var sTs = slider(W.tSlab, 5, 60, 1, 15, function (v) { return num(v) + " cm"; }, function (v) { S.tS = v; draw(); });
+    var sLw = slider(W.len, 1, 60, 0.5, 10, m1, function (v) { S.Lw = v; draw(); }), sHw = slider(W.hgt, 0.2, 5, 0.1, 2.5, function (v) { return num(v, 1) + " m"; }, function (v) { S.Hw = v; draw(); });
+    var sTw = slider(W.tWall, 10, 80, 1, 25, function (v) { return num(v) + " cm"; }, function (v) { S.tW = v; draw(); });
+    var sD = slider(W.dia, 20, 120, 5, 40, function (v) { return num(v) + " cm"; }, function (v) { S.d = v; draw(); }), sHc = slider(W.hgt, 0.5, 8, 0.1, 3, function (v) { return num(v, 1) + " m"; }, function (v) { S.Hc = v; draw(); });
+    var sN = slider(W.cnt, 1, 40, 1, 4, function (v) { return num(v); }, function (v) { S.n = v; draw(); });
+    var sM = slider(W.margin, 0, 15, 1, 5, function (v) { return num(v) + " %"; }, function (v) { S.m = v; draw(); });
+    var groups = [[sLen, sWid, sTs], [sLw, sHw, sTw], [sD, sHc, sN]];
+    var stV = stat(W.vol, W.m3), stO = stat(W.order, W.m3), stW = stat(W.weight, W.tn), stT = stat(W.trucks), stC = stat(W.cars), stB = stat(W.bags);
+    var pic = sv("svg", { viewBox: "0 0 240 150", class: "wshape", role: "img", "aria-label": W.shape }), cap = el("p", { class: "wgt__cap" }), trucks = el("div", { class: "wtrucks", "aria-hidden": "true" }), msg = el("ul", { class: "wmsg" });
+    function vis() { groups.forEach(function (g, i) { g.forEach(function (c) { c.box.hidden = i !== S.s; }); }); }
+    function draw() {
+      var v, size;
+      pic.innerHTML = "";
+      if (S.s === 0) { v = S.L * S.B * S.tS / 100; pic.appendChild(isoBox(S.L, S.B, S.tS / 100 * 3 + 0)); size = W.sizeSlab.replace("{a}", num(S.L, S.L % 1 ? 1 : 0)).replace("{b}", num(S.B, S.B % 1 ? 1 : 0)).replace("{c}", num(S.tS)); }
+      else if (S.s === 1) { v = S.Lw * S.Hw * S.tW / 100; pic.appendChild(isoBox(S.Lw, S.tW / 100 * 2, S.Hw)); size = W.sizeWall.replace("{a}", num(S.Lw, S.Lw % 1 ? 1 : 0)).replace("{b}", num(S.Hw, 1)).replace("{c}", num(S.tW)); }
+      else { v = S.n * Math.PI * Math.pow(S.d / 200, 2) * S.Hc; pic.appendChild(cylinder(S.d / 100, S.Hc)); size = W.sizeCol.replace("{n}", num(S.n)).replace("{a}", num(S.d)).replace("{b}", num(S.Hc, 1)); }
+      var ord = Math.ceil(v * (1 + S.m / 100) * 2) / 2, tn = ord * 2.4, tr = ord / 8, dec = v < 10 ? 2 : 1;
+      cap.textContent = size;
+      stV.set(num(v, dec)); stO.set(num(ord, 1)); stW.set(num(tn, tn < 10 ? 1 : 0)); stT.set(num(tr, tr < 10 ? 1 : 0)); stC.set(num(tn / 1.5)); stB.set(num(Math.ceil(v * (1 + S.m / 100) * 80)));
+      trucks.innerHTML = "";
+      var full = Math.floor(tr), part = tr - full, show = Math.min(10, Math.ceil(tr));
+      for (var i = 0; i < show; i++) { var f = i < full ? 100 : Math.round(part * 100); trucks.appendChild(el("i", { class: "wtruck" }, [el("i", { style: "width:" + f + "%" })])); }
+      if (Math.ceil(tr) > 10) trucks.appendChild(el("span", { class: "wtrucks__n", text: "+" + num(Math.ceil(tr) - 10) }));
+      msg.innerHTML = "";
+      if (ord <= 1) msg.appendChild(el("li", { class: "wmsg__ok", text: W.small }));
+      msg.appendChild(el("li", { class: "wmsg__info", text: W.note }));
+    }
+    app.appendChild(el("div", { class: "wgt__grid" }, [
+      el("div", { class: "wgt__ctl" }, [shape.box].concat(groups.reduce(function (a, g) { return a.concat(g.map(function (c) { return c.box; })); }, [])).concat([sM.box])),
+      el("div", { class: "wgt__out" }, [pic, cap, el("div", { class: "stats" }, [stV.box, stO.box, stW.box, stT.box, stC.box, stB.box]), trucks, msg])
+    ]));
+    app.appendChild(how(W.how));
+    vis(); draw();
+  }
+
+  // ---------- 7. how much load does a cube of concrete take ----------
+  function buildKlass(app, box) {
+    var W = T.kl, CLS = [[20, 25], [25, 30], [30, 37], [35, 45], [40, 50], [50, 60]], S = { c: 2, s: 10 };
+    var want = box && box.getAttribute("data-klass"); if (want) CLS.forEach(function (x, i) { if (("C" + x[0] + "/" + x[1]) === want) S.c = i; });
+    var cl = segmented(W.cls, CLS.map(function (x) { return "C" + x[0] + "/" + x[1]; }), S.c, function (i) { S.c = i; draw(); });
+    var sd = slider(W.side, 5, 30, 1, 10, function (v) { return num(v) + " " + W.cm; }, function (v) { S.s = v; draw(); });
+    var stCyl = stat(W.cyl, T.mpa), stCube = stat(W.cube, T.mpa), stLoad = stat(W.force, W.tn), stOwn = stat(W.own, W.kg);
+    var big = el("p", { class: "wgt__big", "aria-live": "polite" }), cars = el("div", { class: "wcars", "aria-hidden": "true" }), msg = el("ul", { class: "wmsg" });
+    function draw() {
+      var c = CLS[S.c], mm = S.s * 10, tn = c[1] * mm * mm / 9806.65, own = Math.pow(S.s / 100, 3) * 2400, nCars = tn / 1.5;
+      stCyl.set(num(c[0])); stCube.set(num(c[1])); stLoad.set(num(tn, tn < 10 ? 1 : 0)); stOwn.set(num(own, own < 10 ? 1 : 0));
+      big.textContent = W.cars.replace("{n}", num(nCars, nCars < 10 ? 1 : 0)) + ". " + W.more.replace("{n}", num(Math.round(tn * 1000 / own)));
+      cars.innerHTML = ""; var show = Math.min(40, Math.round(nCars));
+      for (var i = 0; i < show; i++) cars.appendChild(el("i", { class: "wcar" }));
+      if (nCars > 40) cars.appendChild(el("span", { class: "wcars__more", text: "+" + num(Math.round(nCars) - 40) }));
+    }
+    msg.appendChild(el("li", { class: "wmsg__info", text: W.min })); msg.appendChild(el("li", { class: "wmsg__info", text: W.note }));
+    app.appendChild(el("div", { class: "wgt__grid" }, [el("div", { class: "wgt__ctl" }, [cl.box, sd.box]), el("div", { class: "wgt__out" }, [big, el("div", { class: "stats" }, [stCyl.box, stCube.box, stLoad.box, stOwn.box]), cars, msg])]));
+    app.appendChild(how(W.how));
+    draw();
+  }
+
+  var BUILD = { vct: buildVct, harda: buildHarda, injektering: buildInj, atgang: buildAtg, vadarvad: buildVad, volym: buildVolym, klass: buildKlass };
   [].forEach.call(document.querySelectorAll("[data-widget]"), function (box) {
     var app = box.querySelector(".wgt__app"), fn = BUILD[box.getAttribute("data-widget")];
     if (!app || !fn) return;
-    app.innerHTML = ""; fn(app); box.classList.add("is-live");
+    app.innerHTML = ""; fn(app, box); box.classList.add("is-live");
   });
 })();

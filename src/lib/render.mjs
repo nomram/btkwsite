@@ -305,7 +305,7 @@ function renderArticles(ctx, b, page) {
   if (b.limit) items = items.slice(0, Number(b.limit));
   if (!items.length) return "";
   const title = b.title ? `<h2 class="articles__h">${esc(b.title)}</h2>` : "";
-  if (b.compact || b.related) return `<div class="container articles articles--compact">${title}<ul class="alist">${items.map((a) => articleCard(ctx, a, false)).join("")}</ul></div>`;
+  if (b.compact || b.related) return `<div class="container articles articles--compact">${title}<ul class="alist">${items.map((a) => articleCard(ctx, a, false)).join("")}</ul>${b.more ? `<p class="articles__more"><a href="${esc(localizeHref(ctx, b.more))}">${esc(b.moreLabel || u.articles_all_link || "Visa alla")}${ICON.arrow}</a></p>` : ""}</div>`;
   const counts = {};
   for (const a of items) for (const s of a.tags) counts[s] = (counts[s] || 0) + 1;
   const slugs = Object.keys(counts).sort((x, y) => counts[y] - counts[x] || tagName(ctx, x).localeCompare(tagName(ctx, y)));
@@ -324,12 +324,26 @@ function renderArticles(ctx, b, page) {
 function articleMeta(ctx, page, t) {
   const u = ctx.ui, min = readMinutes(t.blocks);
   const tags = (page.tags || []).map((s) => `<a class="tagchip tagchip--s" href="${esc(tagUrl(ctx, s))}">${esc(tagName(ctx, s))}</a>`).join("");
-  return `<div class="container article__meta"><span>${esc(articleDate(ctx, page.date))}</span><span>${esc(fmtTpl(u.article_read || "{n} min läsning", { n: min }))}</span>${tags ? `<span class="article__tags">${tags}</span>` : ""}</div>`;
+  return `<div class="container article__meta"><span>${esc(articleDate(ctx, page.date))}</span><span>${esc(fmtTpl(u.article_read || "{n} min läsning", { n: min }))}</span>${tags ? `<span class="article__tags">${tags}</span>` : ""}</div>${articleToc(ctx, t)}`;
+}
+// ids for the h2 headings of an article (anchors for the table of contents); other pages keep their headings as they are
+function autoAnchor(ctx, b) {
+  if (!ctx._page || ctx._page.template !== "article" || (b.level || 2) !== 2 || !b.text) return "";
+  return String(b.text).toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "").slice(0, 60);
+}
+// "In this article": a short row of jump links when the article has at least three sections
+function articleToc(ctx, t) {
+  const hs = flatBlocks(t.blocks || []).filter((b) => b.type === "heading" && (b.level || 2) === 2 && b.text);
+  if (hs.length < 3) return "";
+  const items = hs.map((b) => { const id = b.anchor || autoAnchor(ctx, b); return id ? `<li><a href="#${esc(id)}">${esc(b.text)}</a></li>` : ""; }).join("");
+  return `<div class="container"><nav class="toc" aria-label="${esc(ctx.ui.article_toc || "I den här artikeln")}"><span class="toc__t">${esc(ctx.ui.article_toc || "I den här artikeln")}</span><ul>${items}</ul></nav></div>`;
 }
 // A small model or simulation for non-technical visitors (src/js/widgets.js builds it in the browser). Block: kind (vct, harda, injektering, atgang,
 // vadarvad), title, intro. Without scripts only the title, the intro and a note are shown.
 function renderWidget(ctx, b) {
-  return `<section class="wgt wgt--${esc(b.kind)}" data-widget="${esc(b.kind)}">${b.title ? `<h2 class="wgt__h">${esc(b.title)}</h2>` : ""}${b.intro ? `<p class="wgt__intro">${esc(b.intro)}</p>` : ""}<div class="wgt__app"><p class="wgt__nojs">${esc(ctx.ui.widget_nojs || "Det här verktyget behöver JavaScript.")}</p></div></section>`;
+  const opt = ["temp", "cement", "klass"].filter((k) => b[k] != null).map((k) => ` data-${k}="${esc(b[k])}"`).join("");
+  const cta = b.cta === false ? "" : `<p class="wgt__cta"><span>${esc(ctx.ui.widget_cta || "Behöver du material, maskiner eller råd?")}</span> <a class="btn btn--sm" href="${esc(localizeHref(ctx, "/offert"))}">${esc(ctx.ui.widget_cta_btn || "Få offert")}${ICON.arrow}</a></p>`;
+  return `<section class="wgt wgt--${esc(b.kind)}" data-widget="${esc(b.kind)}"${opt}>${b.title ? `<h2 class="wgt__h">${esc(b.title)}</h2>` : ""}${b.intro ? `<p class="wgt__intro">${esc(b.intro)}</p>` : ""}<div class="wgt__app"><p class="wgt__nojs">${esc(ctx.ui.widget_nojs || "Det här verktyget behöver JavaScript.")}</p></div>${cta}</section>`;
 }
 function renderFaq(ctx, b) {
   const items = (b.items || []).filter((i) => i && i.q && i.a);
@@ -860,7 +874,8 @@ function renderBlockInner(ctx, b) {
   switch (b.type) {
     case "heading": {
       const lvl = Math.min(4, Math.max(2, b.level || 2));
-      return `<h${lvl}${b.anchor ? ` id="${esc(b.anchor)}"` : ""}${editFld(ctx, "text", "plain", "Rubrik")}>${esc(b.text)}</h${lvl}>`;
+      const hid = b.anchor || autoAnchor(ctx, b);
+      return `<h${lvl}${hid ? ` id="${esc(hid)}"` : ""}${editFld(ctx, "text", "plain", "Rubrik")}>${esc(b.text)}</h${lvl}>`;
     }
     case "text":
       return `<p${editFld(ctx, "html", "inline", "Skriv text här…")}>${ctx.edit ? b.html || "" : localizeHtml(ctx, b.html)}</p>`;

@@ -118,7 +118,9 @@
           "tag": "verktyg",
           "compact": true,
           "limit": 3,
-          "title": "Prova själv: räknare och simuleringar"
+          "title": "Prova själv: räknare och simuleringar",
+          "more": "/artiklar/tagg/verktyg",
+          "moreLabel": "Alla räknare och simuleringar"
         },
         {
           "type": "heading",
@@ -432,7 +434,9 @@
           "tag": "verktyg",
           "compact": true,
           "limit": 3,
-          "title": "Try it yourself: calculators and simulations"
+          "title": "Try it yourself: calculators and simulations",
+          "more": "/artiklar/tagg/verktyg",
+          "moreLabel": "All calculators and simulations"
         },
         {
           "type": "heading",

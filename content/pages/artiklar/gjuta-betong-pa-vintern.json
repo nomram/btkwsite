@@ -1,0 +1,190 @@
+{
+  "path": "/artiklar/gjuta-betong-pa-vintern",
+  "updated": "2026-11-19",
+  "template": "article",
+  "order": 10,
+  "published": true,
+  "date": "2026-11-19",
+  "tags": [
+    "betong",
+    "harning",
+    "gjutning",
+    "grunder",
+    "verktyg"
+  ],
+  "image": "/assets/img/brand-photo-reed.webp",
+  "hideIn": [
+    "es",
+    "no",
+    "lt",
+    "lv",
+    "et",
+    "ru"
+  ],
+  "i18n": {
+    "sv": {
+      "title": "Gjuta betong på vintern: så skyddar du betongen mot kyla",
+      "h1": "Gjuta betong på vintern: så skyddar du betongen mot kyla",
+      "seoTitle": "Gjuta betong på vintern: kyla, frost och härdning | Betongakuten",
+      "description": "Kan man gjuta betong vintertid? Se hur kyla bromsar härdningen, vad frost gör med ung betong och hur du skyddar betongen, med en interaktiv simulering.",
+      "summary": "Hur kyla bromsar härdningen, varför ung betong inte får frysa och vad du kan göra åt det. Med en simulering på +2 grader.",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "Betong går att gjuta året runt, men kyla ställer till det. Härdningen går långsammare och ung betong som fryser kan skadas för gott. Här ser du hur mycket kylan betyder, och vad man kan göra åt det."
+        },
+        {
+          "type": "widget",
+          "kind": "harda",
+          "title": "Så långsamt går det i kyla",
+          "intro": "Temperaturen är här satt till +2 grader. Dra i reglaget och se hur mycket fortare det går när det blir varmare, eller hur det stannar vid frost.",
+          "temp": 2
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Därför är kyla ett problem"
+        },
+        {
+          "type": "text",
+          "html": "Betongen hårdnar genom en kemisk reaktion, och kemi går långsammare i kyla. Vid +2 grader tar det mer än dubbelt så lång tid att nå samma styrka som vid +20. Vid frost står reaktionen i praktiken still, och fruset vatten i betongen expanderar och kan skada den unga strukturen."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Det här kan du göra"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Gjut inte mot frusen mark, och ta bort snö och is från form och armering.",
+            "Beställ betong som är uppvärmd och ofta med snabbare cement, som R-cement, eller med tillsats som påskyndar hårdnandet.",
+            "Täck och isolera efter gjutning, med isolermattor eller täckning, så att värmen från hårdnandet stannar kvar.",
+            "Värm vid behov, med värmemattor eller ett tält med värme, och håll betongen fuktig så att den inte torkar ut.",
+            "Vänta med att riva formen tills betongen nått den styrka som krävs."
+          ]
+        },
+        {
+          "type": "text",
+          "html": "En vanlig tumregel är att betongen ska ha nått ungefär 5 MPa innan den utsätts för frost. Kraven kan skilja sig åt mellan projekt, så följ de som gäller för ditt. Hur snabbt det går beror också på <a href=\"/artiklar/cementtyper-cem-i-cem-ii\">cementtypen</a>, och mer om hur det fungerar finns i <a href=\"/artiklar/sa-hardnar-betong\">så hårdnar betong</a>."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Frostbeständig betong är något annat"
+        },
+        {
+          "type": "text",
+          "html": "Skydd mot tidig frost handlar om att betongen inte får frysa innan den hunnit hårdna. Att färdig betong tål frost och tösalt är ett annat krav, som bland annat beror på lufttillsats och ett lågt <a href=\"/artiklar/vattencementtal-vct\">vattencementtal</a>."
+        },
+        {
+          "type": "faq",
+          "title": "Vanliga frågor",
+          "items": [
+            {
+              "q": "Kan man gjuta betong när det är minusgrader?",
+              "a": "Ja, om betongen skyddas och värms så att den inte fryser innan den nått tillräcklig styrka. Kallt väder kräver planering."
+            },
+            {
+              "q": "Hur kallt får det vara?",
+              "a": "Det beror på projektets krav. Som tumregel ska betongen vara skyddad mot frost tills den nått omkring 5 MPa, och gjuttemperaturen är ofta minst +5 grader."
+            },
+            {
+              "q": "Hjälper det att tillsätta mer vatten?",
+              "a": "Nej, mer vatten gör betongen svagare och mer frostkänslig. Använd i stället uppvärmd betong, snabbare cement eller tillsatser."
+            }
+          ]
+        },
+        {
+          "type": "cta",
+          "title": "Vill du ha hjälp att välja?",
+          "text": "Berätta vad du ska göra, var och när, så rekommenderar vi rätt utrustning och återkommer med pris och leveranstid.",
+          "button": "Få offert",
+          "href": "/offert"
+        }
+      ]
+    },
+    "en": {
+      "title": "Casting concrete in winter: how to protect it from the cold",
+      "h1": "Casting concrete in winter: how to protect it from the cold",
+      "seoTitle": "Casting concrete in winter: cold, frost and curing | Betongakuten",
+      "description": "Can you cast concrete in winter? See how cold slows hardening, what frost does to young concrete and how to protect it, with an interactive simulation.",
+      "summary": "How cold slows hardening, why young concrete must not freeze and what you can do about it. With a simulation at +2 degrees.",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "Concrete can be cast all year round, but cold makes it harder. Hardening is slower and young concrete that freezes can be damaged for good. Here you can see how much the cold matters, and what to do about it."
+        },
+        {
+          "type": "widget",
+          "kind": "harda",
+          "title": "How slow it gets in the cold",
+          "intro": "The temperature is set to +2 degrees here. Drag the slider and see how much faster it gets when it is warmer, or how it stops in frost.",
+          "temp": 2
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Why cold is a problem"
+        },
+        {
+          "type": "text",
+          "html": "Concrete hardens through a chemical reaction, and chemistry is slower in the cold. At +2 degrees it takes more than twice as long to reach the same strength as at +20. In frost the reaction practically stops, and frozen water in the concrete expands and can damage the young structure."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "What you can do"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Do not cast against frozen ground, and remove snow and ice from formwork and reinforcement.",
+            "Order concrete that is heated and often with faster cement, such as R cement, or with an admixture that speeds up hardening.",
+            "Cover and insulate after casting, with insulation mats or covers, so the heat from hardening stays in.",
+            "Heat if needed, with heating mats or a heated tent, and keep the concrete moist so it does not dry out.",
+            "Wait to remove the formwork until the concrete has reached the required strength."
+          ]
+        },
+        {
+          "type": "text",
+          "html": "A common rule of thumb is that concrete should have reached about 5 MPa before it is exposed to frost. Requirements can differ between projects, so follow the ones that apply to yours. How fast it goes also depends on the <a href=\"/artiklar/cementtyper-cem-i-cem-ii\">cement type</a>, and more on how it works is in <a href=\"/artiklar/sa-hardnar-betong\">how concrete hardens</a>."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Frost-resistant concrete is something else"
+        },
+        {
+          "type": "text",
+          "html": "Protection against early frost is about not letting the concrete freeze before it has hardened. That finished concrete withstands frost and de-icing salt is a different requirement, which depends on things like air entrainment and a low <a href=\"/artiklar/vattencementtal-vct\">water/cement ratio</a>."
+        },
+        {
+          "type": "faq",
+          "title": "Frequently asked questions",
+          "items": [
+            {
+              "q": "Can you cast concrete when it is below freezing?",
+              "a": "Yes, if the concrete is protected and heated so it does not freeze before reaching enough strength. Cold weather requires planning."
+            },
+            {
+              "q": "How cold is too cold?",
+              "a": "It depends on the project’s requirements. As a rule of thumb the concrete should be protected from frost until it has reached about 5 MPa, and the casting temperature is often at least +5 degrees."
+            },
+            {
+              "q": "Does adding more water help?",
+              "a": "No, more water makes the concrete weaker and more sensitive to frost. Use heated concrete, faster cement or admixtures instead."
+            }
+          ]
+        },
+        {
+          "type": "cta",
+          "title": "Would you like help choosing?",
+          "text": "Tell us what you are going to do, where and when, and we will recommend the right equipment and come back with a price and lead time.",
+          "button": "Get a quote",
+          "href": "/offert"
+        }
+      ]
+    }
+  }
+}

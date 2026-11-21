@@ -1,0 +1,185 @@
+{
+  "path": "/artiklar/hur-mycket-betong-behover-jag",
+  "updated": "2026-11-21",
+  "template": "article",
+  "order": 10,
+  "published": true,
+  "date": "2026-11-21",
+  "tags": [
+    "betong",
+    "gjutning",
+    "grunder",
+    "verktyg"
+  ],
+  "image": "/assets/img/brand-photo-ahlm.webp",
+  "hideIn": [
+    "es",
+    "no",
+    "lt",
+    "lv",
+    "et",
+    "ru"
+  ],
+  "i18n": {
+    "sv": {
+      "title": "Hur mycket betong behöver jag? Räkna ut kubikmeter",
+      "h1": "Hur mycket betong behöver jag? Räkna ut kubikmeter",
+      "seoTitle": "Hur mycket betong behöver jag? Kalkylator | Betongakuten",
+      "description": "Räkna ut hur många kubikmeter betong du behöver för en platta, en vägg eller pelare, hur många betongbilar det blir och vad det väger.",
+      "summary": "Platta, vägg eller pelare: räkna ut kubikmeter, betongbilar, vikt och säckar, och se vad det motsvarar.",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "Att beställa för lite betong är dyrt och att beställa för mycket är slöseri. Räkna ut volymen först. Välj form nedan, dra i måtten och se hur många kubikmeter, betongbilar och säckar det blir."
+        },
+        {
+          "type": "widget",
+          "kind": "volym",
+          "title": "Räkna ut kubikmeter",
+          "intro": "Välj platta, vägg eller pelare och ställ in måtten. Du får volym, vikt och antal betongbilar."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Så räknar du själv"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Platta: längd × bredd × tjocklek. En platta på 8 × 6 meter och 15 centimeters tjocklek blir 7,2 kubikmeter.",
+            "Vägg eller sträckfundament: längd × höjd × tjocklek.",
+            "Pelare: π × radien i kvadrat × höjd. Gånger antal om det är flera.",
+            "Mät i meter hela vägen, räkna om centimeter genom att dividera med 100."
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Lägg på en marginal"
+        },
+        {
+          "type": "text",
+          "html": "Botten är sällan helt plan och formen buktar lite när betongen fylls på, så lägg på några procent. Beställ hellre lite för mycket än lite för lite, eftersom det är svårt att fylla på mitt i en gjutning och skarvar kan bli svaga punkter."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Bil eller säck?"
+        },
+        {
+          "type": "text",
+          "html": "För större mängder levereras betongen med bil, ofta med bil som rymmer mellan 6 och 10 kubikmeter. Leverantören har egna lastvolymer och minimimängder, så fråga innan du beställer. För riktigt små jobb, som en stolpe eller ett litet fundament, kan färdigblandad torrbetong i säck vara enklare. Hur material hanteras i större skala kan du läsa om i vår guide om <a href=\"/artiklar/torrbruk-silo-ahlm\">torrbruk, silo och Ahlm-metoden</a>."
+        },
+        {
+          "type": "text",
+          "html": "Och vad betongen ska klara beror på hållfasthetsklassen, som du kan prova i <a href=\"/artiklar/hallfasthetsklass-c25-30\">vad betyder C25/30</a>, och på <a href=\"/artiklar/vattencementtal-vct\">vattencementtalet</a>."
+        },
+        {
+          "type": "faq",
+          "title": "Vanliga frågor",
+          "items": [
+            {
+              "q": "Hur många kubikmeter är en betongbil?",
+              "a": "Det varierar mellan leverantörer, ofta mellan 6 och 10 kubikmeter. Räknaren använder 8 kubikmeter som exempel, fråga din leverantör om den exakta lastvolymen."
+            },
+            {
+              "q": "Vad väger en kubikmeter betong?",
+              "a": "Vanlig betong väger ungefär 2 400 kilo per kubikmeter, alltså 2,4 ton."
+            },
+            {
+              "q": "Hur mycket marginal ska jag räkna med?",
+              "a": "Ofta några procent. Är botten ojämn eller formen mjuk kan det behövas mer."
+            }
+          ]
+        },
+        {
+          "type": "cta",
+          "title": "Vill du ha hjälp att välja?",
+          "text": "Berätta vad du ska göra, var och när, så rekommenderar vi rätt utrustning och återkommer med pris och leveranstid.",
+          "button": "Få offert",
+          "href": "/offert"
+        }
+      ]
+    },
+    "en": {
+      "title": "How much concrete do I need? Work out the cubic metres",
+      "h1": "How much concrete do I need? Work out the cubic metres",
+      "seoTitle": "How much concrete do I need? Calculator | Betongakuten",
+      "description": "Work out how many cubic metres of concrete you need for a slab, a wall or columns, how many mixer trucks that is and what it weighs.",
+      "summary": "Slab, wall or column: work out cubic metres, mixer trucks, weight and bags, and see what it equals.",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "Ordering too little concrete is expensive and ordering too much is a waste. Work out the volume first. Choose a shape below, drag the dimensions and see how many cubic metres, mixer trucks and bags it comes to."
+        },
+        {
+          "type": "widget",
+          "kind": "volym",
+          "title": "Work out the cubic metres",
+          "intro": "Choose slab, wall or column and set the dimensions. You get volume, weight and the number of mixer trucks."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "How to work it out yourself"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Slab: length × width × thickness. A slab of 8 × 6 metres and 15 centimetres thick is 7.2 cubic metres.",
+            "Wall or strip footing: length × height × thickness.",
+            "Column: π × radius squared × height. Times the number if there are several.",
+            "Measure in metres all the way, convert centimetres by dividing by 100."
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Add a margin"
+        },
+        {
+          "type": "text",
+          "html": "The base is seldom perfectly flat and the formwork bulges a little when the concrete is poured, so add a few percent. It is better to order a little too much than a little too little, because it is hard to top up in the middle of a pour and joints can become weak points."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Truck or bag?"
+        },
+        {
+          "type": "text",
+          "html": "For larger volumes the concrete is delivered by truck, often a truck that holds between 6 and 10 cubic metres. The supplier has its own load sizes and minimum volumes, so ask before you order. For really small jobs, such as a post or a small footing, ready-mixed dry concrete in bags can be easier. How material is handled on a larger scale is covered in our guide to <a href=\"/artiklar/torrbruk-silo-ahlm\">dry mortar, silos and the Ahlm method</a>."
+        },
+        {
+          "type": "text",
+          "html": "And what the concrete has to withstand depends on the strength class, which you can try in <a href=\"/artiklar/hallfasthetsklass-c25-30\">what does C25/30 mean</a>, and on the <a href=\"/artiklar/vattencementtal-vct\">water/cement ratio</a>."
+        },
+        {
+          "type": "faq",
+          "title": "Frequently asked questions",
+          "items": [
+            {
+              "q": "How many cubic metres is a mixer truck?",
+              "a": "It varies between suppliers, often between 6 and 10 cubic metres. The calculator uses 8 cubic metres as an example, ask your supplier for the exact load size."
+            },
+            {
+              "q": "What does a cubic metre of concrete weigh?",
+              "a": "Ordinary concrete weighs about 2,400 kilos per cubic metre, that is 2.4 tonnes."
+            },
+            {
+              "q": "How much margin should I allow?",
+              "a": "Often a few percent. If the base is uneven or the formwork is soft, more may be needed."
+            }
+          ]
+        },
+        {
+          "type": "cta",
+          "title": "Would you like help choosing?",
+          "text": "Tell us what you are going to do, where and when, and we will recommend the right equipment and come back with a price and lead time.",
+          "button": "Get a quote",
+          "href": "/offert"
+        }
+      ]
+    }
+  }
+}
