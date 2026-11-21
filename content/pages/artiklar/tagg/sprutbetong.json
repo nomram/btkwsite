@@ -1,0 +1,41 @@
+{
+  "path": "/artiklar/tagg/sprutbetong",
+  "updated": "2026-10-31",
+  "template": "articles",
+  "order": 10,
+  "published": true,
+  "hideIn": [
+    "es",
+    "no",
+    "lt",
+    "lv",
+    "et",
+    "ru"
+  ],
+  "i18n": {
+    "sv": {
+      "title": "Artiklar om Sprutbetong",
+      "h1": "Artiklar om Sprutbetong",
+      "seoTitle": "Artiklar och guider om Sprutbetong | Betongakuten",
+      "description": "Alla artiklar och guider om Sprutbetong från Betongakuten. Sök eller filtrera på fler taggar.",
+      "blocks": [
+        {
+          "type": "articles",
+          "tag": "sprutbetong"
+        }
+      ]
+    },
+    "en": {
+      "title": "Articles about Shotcrete",
+      "h1": "Articles about Shotcrete",
+      "seoTitle": "Articles and guides about Shotcrete | Betongakuten",
+      "description": "All articles and guides about Shotcrete from Betongakuten. Search or filter by more tags.",
+      "blocks": [
+        {
+          "type": "articles",
+          "tag": "sprutbetong"
+        }
+      ]
+    }
+  }
+}

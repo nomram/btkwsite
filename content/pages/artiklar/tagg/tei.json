@@ -1,0 +1,41 @@
+{
+  "path": "/artiklar/tagg/tei",
+  "updated": "2026-11-07",
+  "template": "articles",
+  "order": 10,
+  "published": true,
+  "hideIn": [
+    "es",
+    "no",
+    "lt",
+    "lv",
+    "et",
+    "ru"
+  ],
+  "i18n": {
+    "sv": {
+      "title": "Artiklar om TEI",
+      "h1": "Artiklar om TEI",
+      "seoTitle": "Artiklar och guider om TEI | Betongakuten",
+      "description": "Alla artiklar och guider om TEI från Betongakuten. Sök eller filtrera på fler taggar.",
+      "blocks": [
+        {
+          "type": "articles",
+          "tag": "tei"
+        }
+      ]
+    },
+    "en": {
+      "title": "Articles about TEI",
+      "h1": "Articles about TEI",
+      "seoTitle": "Articles and guides about TEI | Betongakuten",
+      "description": "All articles and guides about TEI from Betongakuten. Search or filter by more tags.",
+      "blocks": [
+        {
+          "type": "articles",
+          "tag": "tei"
+        }
+      ]
+    }
+  }
+}

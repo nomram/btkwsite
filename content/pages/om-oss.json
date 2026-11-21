@@ -8,7 +8,7 @@
     "sv": {
       "title": "Om oss",
       "h1": "Om oss",
-      "description": "Betongakuten är en leverantör och konsult inom byggindustrin, med en stark inriktning på betong, ytskydd, geoteknik, betongpumpar, borriggar och relaterade…",
+      "description": "Betongakuten är leverantör och konsult inom byggindustrin med lager i Stockholm, Göteborg och Malmö, mobil verkstad och rådgivning kring betong, geoteknik och maskiner.",
       "blocks": [
         {
           "type": "social"
@@ -183,12 +183,13 @@
           "src": "/assets/img/om-oss-5.gif",
           "maxWidth": 86
         }
-      ]
+      ],
+      "seoTitle": "Om oss: leverantör och konsult inom byggindustrin | Betongakuten"
     },
     "en": {
       "title": "About us",
       "h1": "About us",
-      "description": "Betongakuten is a supplier and consultant to the construction industry, with a strong focus on concrete, surface protection, geotechnics, concrete pumps, drilling rigs and related…",
+      "description": "Betongakuten is a supplier and consultant to the construction industry with warehouses in Stockholm, Gothenburg and Malmö, a mobile workshop and advice on concrete, geotechnics and machines.",
       "blocks": [
         {
           "type": "social"
@@ -364,7 +365,8 @@
           "maxWidth": 86
         }
       ],
-      "published": true
+      "published": true,
+      "seoTitle": "About us: supplier and consultant to construction | Betongakuten"
     },
     "es": {
       "title": "Sobre nosotros",

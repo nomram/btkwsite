@@ -1,0 +1,145 @@
+{
+  "path": "/losningar/torrbruk-silo",
+  "updated": "2026-11-21",
+  "template": "listing",
+  "order": 10,
+  "published": true,
+  "hideIn": [
+    "es",
+    "no",
+    "lt",
+    "lv",
+    "et",
+    "ru"
+  ],
+  "i18n": {
+    "sv": {
+      "title": "Torrbruksilos och säcktömmare",
+      "h1": "Torrbruksilos och säcktömmare",
+      "seoTitle": "Torrbruksilo och säcktömmare från AHLM | Betongakuten",
+      "description": "Torrbruksilos, säcktömmare och blandarlösningar från AHLM för cement, puts och flytspackel på byggplatsen.",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "AHLM är specialister på torrbrukssilos och storsäckslösningar för cement, puts och flytspackel, baserade på den beprövade Ahlm-metoden för rationell torrbrukshantering."
+        },
+        {
+          "type": "text",
+          "html": "Läs <a href=\"/artiklar/torrbruk-silo-ahlm\">torrbruk, silo och Ahlm-metoden</a> för att jämföra silo och säcktömmare."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Torrbruk från AHLM"
+        },
+        {
+          "type": "cards",
+          "items": [
+            {
+              "href": "/produkter/ahlm",
+              "label": "Läs mer",
+              "html": "Torrbruksilon för hantering av cement och torrbruk med slutet, damm- och vattentätt system.",
+              "text": "Torrbruksilon för hantering av cement och torrbruk med slutet, damm- och vattentätt system.",
+              "image": "/assets/img/ahlm.webp",
+              "width": 1920,
+              "height": 1920,
+              "alt": "AHLM logotyp"
+            }
+          ]
+        },
+        {
+          "type": "articles",
+          "tag": "torrbruk",
+          "compact": true,
+          "limit": 3,
+          "title": "Guider och artiklar"
+        },
+        {
+          "type": "faq",
+          "title": "Vanliga frågor",
+          "items": [
+            {
+              "q": "Hur lyfter man en silo?",
+              "a": "AHLMs silos kan lyftas med containerbil, truck eller kran."
+            },
+            {
+              "q": "Silo eller säcktömmare?",
+              "a": "Silo när materialet kommer i bulk, säcktömmare som ST-5 när det är trångt eller inomhus."
+            }
+          ]
+        },
+        {
+          "type": "cta",
+          "title": "Berätta vad du behöver",
+          "text": "Kontakta oss så hjälper vi dig välja rätt, var du än befinner dig i byggprocessen.",
+          "button": "Få offert",
+          "href": "/offert"
+        }
+      ]
+    },
+    "en": {
+      "title": "Dry mortar silos and bag emptiers",
+      "h1": "Dry mortar silos and bag emptiers",
+      "seoTitle": "Dry mortar silos and bag emptiers from AHLM | Betongakuten",
+      "description": "Dry mortar silos, bag emptiers and mixer solutions from AHLM for cement, plaster and screed on site.",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "AHLM specialises in dry mortar silos and big-bag solutions for cement, plaster and self-levelling screed, based on the proven Ahlm method for efficient dry mortar handling."
+        },
+        {
+          "type": "text",
+          "html": "Read <a href=\"/artiklar/torrbruk-silo-ahlm\">dry mortar, silos and the Ahlm method</a> to compare silo and bag emptier."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Dry mortar from AHLM"
+        },
+        {
+          "type": "cards",
+          "items": [
+            {
+              "href": "/produkter/ahlm",
+              "label": "Read more",
+              "html": "Torrbruksilon för hantering av cement och torrbruk med slutet, damm- och vattentätt system.",
+              "text": "Dry-mix silos for handling cement and dry mortar in a closed, dust- and watertight system.",
+              "image": "/assets/img/ahlm.webp",
+              "width": 1920,
+              "height": 1920,
+              "alt": "AHLM logo"
+            }
+          ]
+        },
+        {
+          "type": "articles",
+          "tag": "torrbruk",
+          "compact": true,
+          "limit": 3,
+          "title": "Guides and articles"
+        },
+        {
+          "type": "faq",
+          "title": "Frequently asked questions",
+          "items": [
+            {
+              "q": "How do you lift a silo?",
+              "a": "AHLM’s silos can be lifted by container truck, forklift or crane."
+            },
+            {
+              "q": "Silo or bag emptier?",
+              "a": "A silo when the material comes in bulk, a bag emptier such as the ST-5 when space is tight or indoors."
+            }
+          ]
+        },
+        {
+          "type": "cta",
+          "title": "Tell us what you need",
+          "text": "Contact us and we will help you choose, wherever you are in the construction process.",
+          "button": "Get a quote",
+          "href": "/offert"
+        }
+      ]
+    }
+  }
+}

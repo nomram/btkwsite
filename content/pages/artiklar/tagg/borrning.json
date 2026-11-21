@@ -1,0 +1,41 @@
+{
+  "path": "/artiklar/tagg/borrning",
+  "updated": "2026-11-07",
+  "template": "articles",
+  "order": 10,
+  "published": true,
+  "hideIn": [
+    "es",
+    "no",
+    "lt",
+    "lv",
+    "et",
+    "ru"
+  ],
+  "i18n": {
+    "sv": {
+      "title": "Artiklar om Borrning",
+      "h1": "Artiklar om Borrning",
+      "seoTitle": "Artiklar och guider om Borrning | Betongakuten",
+      "description": "Alla artiklar och guider om Borrning från Betongakuten. Sök eller filtrera på fler taggar.",
+      "blocks": [
+        {
+          "type": "articles",
+          "tag": "borrning"
+        }
+      ]
+    },
+    "en": {
+      "title": "Articles about Drilling",
+      "h1": "Articles about Drilling",
+      "seoTitle": "Articles and guides about Drilling | Betongakuten",
+      "description": "All articles and guides about Drilling from Betongakuten. Search or filter by more tags.",
+      "blocks": [
+        {
+          "type": "articles",
+          "tag": "borrning"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,205 @@
+{
+  "path": "/losningar/injektering",
+  "updated": "2026-11-21",
+  "template": "listing",
+  "order": 10,
+  "published": true,
+  "hideIn": [
+    "es",
+    "no",
+    "lt",
+    "lv",
+    "et",
+    "ru"
+  ],
+  "i18n": {
+    "sv": {
+      "title": "Injekteringsutrustning",
+      "h1": "Injekteringsutrustning",
+      "seoTitle": "Injekteringspumpar och injekteringsutrustning | Betongakuten",
+      "description": "Injekteringspumpar, mixers och kompletta anläggningar från Häny, utrustning från REED och dataloggning från Jean Lutz. Rådgivning och offert.",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "Injektering används för att förstärka, täta och förankra, i berg, jord och betong och vid tunneldrivning. Vi levererar pumpar, mixers och kompletta anläggningar, utrustning för dokumentation och för hantering av torrt material, och hjälper dig välja rätt för jobbet."
+        },
+        {
+          "type": "text",
+          "html": "Läs vår guide <a href=\"/artiklar/valj-injekteringsutrustning\">Så väljer du injekteringsutrustning</a> eller kontakta oss direkt."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Våra varumärken inom injektering"
+        },
+        {
+          "type": "cards",
+          "items": [
+            {
+              "href": "/produkter/haeny",
+              "label": "Läs mer",
+              "html": "Pumpar för förstärkning, tätning, förankring vid grundläggning, konstruktion och tunneldrivning.",
+              "text": "Pumpar för förstärkning, tätning, förankring vid grundläggning, konstruktion och tunneldrivning.",
+              "image": "/assets/img/haeny.webp",
+              "width": 1000,
+              "height": 1000,
+              "alt": "HÄNY logotyp"
+            },
+            {
+              "href": "/produkter/jean-lutz",
+              "label": "Läs mer",
+              "image": "/assets/img/jean-lutz.webp",
+              "width": 1920,
+              "height": 1920,
+              "text": "Dataloggare, displayer och givare för jet grouting, injektering och borrning.",
+              "html": "Dataloggare, displayer och givare för jet grouting, injektering och borrning.",
+              "alt": "Jean Lutz logotyp"
+            },
+            {
+              "href": "/produkter/reed",
+              "label": "Läs mer",
+              "html": "Robust utrustning för sprutbetong, betongpumpar och gunite maskiner.",
+              "text": "Robust utrustning för sprutbetong, betongpumpar och gunite maskiner.",
+              "image": "/assets/img/reed.webp",
+              "width": 1920,
+              "height": 1920,
+              "alt": "REED logotyp"
+            },
+            {
+              "href": "/produkter/ahlm",
+              "label": "Läs mer",
+              "html": "Torrbruksilon för hantering av cement och torrbruk med slutet, damm- och vattentätt system.",
+              "text": "Torrbruksilon för hantering av cement och torrbruk med slutet, damm- och vattentätt system.",
+              "image": "/assets/img/ahlm.webp",
+              "width": 1920,
+              "height": 1920,
+              "alt": "AHLM logotyp"
+            }
+          ]
+        },
+        {
+          "type": "articles",
+          "tag": "injektering",
+          "compact": true,
+          "limit": 3,
+          "title": "Guider och artiklar"
+        },
+        {
+          "type": "faq",
+          "title": "Vanliga frågor",
+          "items": [
+            {
+              "q": "Vilken injekteringspump ska jag välja?",
+              "a": "Det beror på material, tryck, flöde och hur automatiserat jobbet ska vara. Häny har manuella enheter (IC), automatiska anläggningar (FAIC) och pumpar upp till 200 bar. Läs vår guide eller kontakta oss."
+            },
+            {
+              "q": "Kan ni dokumentera injekteringen?",
+              "a": "Ja, med givare, dataloggare och displayer från Jean Lutz för tryck, flöde och volym."
+            }
+          ]
+        },
+        {
+          "type": "cta",
+          "title": "Berätta vad du behöver",
+          "text": "Kontakta oss så hjälper vi dig välja rätt, var du än befinner dig i byggprocessen.",
+          "button": "Få offert",
+          "href": "/offert"
+        }
+      ]
+    },
+    "en": {
+      "title": "Grouting equipment",
+      "h1": "Grouting equipment",
+      "seoTitle": "Grouting pumps and grouting equipment | Betongakuten",
+      "description": "Grouting pumps, mixers and complete plants from Häny, equipment from REED and data logging from Jean Lutz. Advice and quotes.",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "Grouting is used to reinforce, seal and anchor, in rock, soil and concrete and in tunnelling. We supply pumps, mixers and complete plants, equipment for documentation and for handling dry material, and help you choose the right setup for the job."
+        },
+        {
+          "type": "text",
+          "html": "Read our guide <a href=\"/artiklar/valj-injekteringsutrustning\">How to choose grouting equipment</a> or contact us directly."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Our brands for grouting"
+        },
+        {
+          "type": "cards",
+          "items": [
+            {
+              "href": "/produkter/haeny",
+              "label": "Read more",
+              "html": "Pumpar för förstärkning, tätning, förankring vid grundläggning, konstruktion och tunneldrivning.",
+              "text": "Pumps for reinforcement, sealing and anchoring in foundation work, construction and tunnelling.",
+              "image": "/assets/img/haeny.webp",
+              "width": 1000,
+              "height": 1000,
+              "alt": "HÄNY logo"
+            },
+            {
+              "href": "/produkter/jean-lutz",
+              "label": "Read more",
+              "image": "/assets/img/jean-lutz.webp",
+              "width": 1920,
+              "height": 1920,
+              "text": "Data loggers, displays and sensors for jet grouting, grouting and drilling.",
+              "html": "Data loggers, displays and sensors for jet grouting, grouting and drilling.",
+              "alt": "Jean Lutz logo"
+            },
+            {
+              "href": "/produkter/reed",
+              "label": "Read more",
+              "html": "Robust utrustning för sprutbetong, betongpumpar och gunite maskiner.",
+              "text": "Robust equipment for shotcrete, concrete pumps and gunite machines.",
+              "image": "/assets/img/reed.webp",
+              "width": 1920,
+              "height": 1920,
+              "alt": "REED logo"
+            },
+            {
+              "href": "/produkter/ahlm",
+              "label": "Read more",
+              "html": "Torrbruksilon för hantering av cement och torrbruk med slutet, damm- och vattentätt system.",
+              "text": "Dry-mix silos for handling cement and dry mortar in a closed, dust- and watertight system.",
+              "image": "/assets/img/ahlm.webp",
+              "width": 1920,
+              "height": 1920,
+              "alt": "AHLM logo"
+            }
+          ]
+        },
+        {
+          "type": "articles",
+          "tag": "injektering",
+          "compact": true,
+          "limit": 3,
+          "title": "Guides and articles"
+        },
+        {
+          "type": "faq",
+          "title": "Frequently asked questions",
+          "items": [
+            {
+              "q": "Which grouting pump should I choose?",
+              "a": "It depends on the material, pressure, flow and how automated the job should be. Häny has manual units (IC), automatic plants (FAIC) and pumps up to 200 bar. Read our guide or contact us."
+            },
+            {
+              "q": "Can you document the grouting?",
+              "a": "Yes, with sensors, data loggers and displays from Jean Lutz for pressure, flow and volume."
+            }
+          ]
+        },
+        {
+          "type": "cta",
+          "title": "Tell us what you need",
+          "text": "Contact us and we will help you choose, wherever you are in the construction process.",
+          "button": "Get a quote",
+          "href": "/offert"
+        }
+      ]
+    }
+  }
+}

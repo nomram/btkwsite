@@ -1,0 +1,41 @@
+{
+  "path": "/artiklar/tagg/injektering",
+  "updated": "2026-11-21",
+  "template": "articles",
+  "order": 10,
+  "published": true,
+  "hideIn": [
+    "es",
+    "no",
+    "lt",
+    "lv",
+    "et",
+    "ru"
+  ],
+  "i18n": {
+    "sv": {
+      "title": "Artiklar om Injektering",
+      "h1": "Artiklar om Injektering",
+      "seoTitle": "Artiklar och guider om Injektering | Betongakuten",
+      "description": "Alla artiklar och guider om Injektering från Betongakuten. Sök eller filtrera på fler taggar.",
+      "blocks": [
+        {
+          "type": "articles",
+          "tag": "injektering"
+        }
+      ]
+    },
+    "en": {
+      "title": "Articles about Grouting",
+      "h1": "Articles about Grouting",
+      "seoTitle": "Articles and guides about Grouting | Betongakuten",
+      "description": "All articles and guides about Grouting from Betongakuten. Search or filter by more tags.",
+      "blocks": [
+        {
+          "type": "articles",
+          "tag": "injektering"
+        }
+      ]
+    }
+  }
+}

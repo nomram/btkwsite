@@ -884,6 +884,7 @@ function renderBlockInner(ctx, b) {
     case "video": return renderVideo(ctx, b);
     case "map": return renderMap(ctx, b);
     case "faq": return renderFaq(ctx, b);
+    case "facts": return `<div class="container facts"><ul class="facts__row">${(b.items || []).map((i) => `<li class="facts__i"><strong>${esc(i.value)}</strong><span>${esc(i.label)}</span></li>`).join("")}</ul></div>`;
     case "articles": return renderArticles(ctx, b, ctx._page);
     case "table": return renderTable(ctx, b);
     case "datasheet": return renderDatasheet(ctx, b);
@@ -1103,7 +1104,7 @@ function renderHeader(ctx, current) {
   const site = ctx.site;
   const navPaths = (site.nav && site.nav.length ? site.nav : []).filter((p) => ctx.pages.has(p) && shown(ctx, p));
   const items = navPaths.map((p) => {
-    const kids = ctx.children(p).filter((c) => shown(ctx, c));
+    const kids = ctx.pages.get(p) && ctx.pages.get(p).noMenu ? [] : ctx.children(p).filter((c) => shown(ctx, c));
     const active = isUnder(current, p);
     const label = navTitleOf(ctx, p);
     const link = `<a href="${esc(ctx.url(p))}"${active && current === p ? ' aria-current="page"' : ""}>${esc(label)}</a>`;

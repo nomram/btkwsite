@@ -1,0 +1,41 @@
+{
+  "path": "/artiklar/tagg/ahlm",
+  "updated": "2026-11-14",
+  "template": "articles",
+  "order": 10,
+  "published": true,
+  "hideIn": [
+    "es",
+    "no",
+    "lt",
+    "lv",
+    "et",
+    "ru"
+  ],
+  "i18n": {
+    "sv": {
+      "title": "Artiklar om AHLM",
+      "h1": "Artiklar om AHLM",
+      "seoTitle": "Artiklar och guider om AHLM | Betongakuten",
+      "description": "Alla artiklar och guider om AHLM från Betongakuten. Sök eller filtrera på fler taggar.",
+      "blocks": [
+        {
+          "type": "articles",
+          "tag": "ahlm"
+        }
+      ]
+    },
+    "en": {
+      "title": "Articles about AHLM",
+      "h1": "Articles about AHLM",
+      "seoTitle": "Articles and guides about AHLM | Betongakuten",
+      "description": "All articles and guides about AHLM from Betongakuten. Search or filter by more tags.",
+      "blocks": [
+        {
+          "type": "articles",
+          "tag": "ahlm"
+        }
+      ]
+    }
+  }
+}

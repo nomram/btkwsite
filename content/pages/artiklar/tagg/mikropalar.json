@@ -1,0 +1,41 @@
+{
+  "path": "/artiklar/tagg/mikropalar",
+  "updated": "2026-11-07",
+  "template": "articles",
+  "order": 10,
+  "published": true,
+  "hideIn": [
+    "es",
+    "no",
+    "lt",
+    "lv",
+    "et",
+    "ru"
+  ],
+  "i18n": {
+    "sv": {
+      "title": "Artiklar om Mikropålar",
+      "h1": "Artiklar om Mikropålar",
+      "seoTitle": "Artiklar och guider om Mikropålar | Betongakuten",
+      "description": "Alla artiklar och guider om Mikropålar från Betongakuten. Sök eller filtrera på fler taggar.",
+      "blocks": [
+        {
+          "type": "articles",
+          "tag": "mikropalar"
+        }
+      ]
+    },
+    "en": {
+      "title": "Articles about Micropiles",
+      "h1": "Articles about Micropiles",
+      "seoTitle": "Articles and guides about Micropiles | Betongakuten",
+      "description": "All articles and guides about Micropiles from Betongakuten. Search or filter by more tags.",
+      "blocks": [
+        {
+          "type": "articles",
+          "tag": "mikropalar"
+        }
+      ]
+    }
+  }
+}

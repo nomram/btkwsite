@@ -1,0 +1,41 @@
+{
+  "path": "/artiklar/tagg/silo",
+  "updated": "2026-11-14",
+  "template": "articles",
+  "order": 10,
+  "published": true,
+  "hideIn": [
+    "es",
+    "no",
+    "lt",
+    "lv",
+    "et",
+    "ru"
+  ],
+  "i18n": {
+    "sv": {
+      "title": "Artiklar om Silo",
+      "h1": "Artiklar om Silo",
+      "seoTitle": "Artiklar och guider om Silo | Betongakuten",
+      "description": "Alla artiklar och guider om Silo från Betongakuten. Sök eller filtrera på fler taggar.",
+      "blocks": [
+        {
+          "type": "articles",
+          "tag": "silo"
+        }
+      ]
+    },
+    "en": {
+      "title": "Articles about Silo",
+      "h1": "Articles about Silo",
+      "seoTitle": "Articles and guides about Silo | Betongakuten",
+      "description": "All articles and guides about Silo from Betongakuten. Search or filter by more tags.",
+      "blocks": [
+        {
+          "type": "articles",
+          "tag": "silo"
+        }
+      ]
+    }
+  }
+}

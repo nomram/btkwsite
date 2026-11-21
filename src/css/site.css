@@ -257,6 +257,7 @@ li:first-child > .subnav__link--logo::after { left: 0; }
 .page-body > .docbar:last-child { margin-bottom: 0; }
 .prose { padding-block: 1.25rem 0; }
 .prose > * { max-width: 46rem; }
+.prose > .container { width: 100%; max-width: none; margin-inline: 0; padding-inline: 0; }
 .prose > .cards, .prose > .pgroup, .prose > .pfilter, .prose > .gallery, .prose > .table-wrap, .prose > .video, .prose > .figure, .prose > .datasheet, .prose > .chips, .prose > .contact, .prose > .docs { max-width: none; }
 .prose h2 { font-size: clamp(1.3rem, 1rem + .9vw, 1.65rem); line-height: 1.25; margin: 2.2rem 0 .8rem; font-weight: 700; letter-spacing: -.005em; }
 .prose h2:first-child { margin-top: .5rem; }
@@ -1467,11 +1468,10 @@ td.is-sized { font-weight: 700; }
 .acard__sum { margin: 0; font-size: .9rem; line-height: 1.55; color: var(--muted); display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
 .acard__meta { margin-top: auto; padding-top: .4rem; font-size: .78rem; color: #8a8184; }
 .articles__none { margin: 2rem 0; color: var(--muted); }
-.articles--compact { padding-bottom: 2.4rem; }
+.articles--compact { padding-block: 2rem 2.4rem; }
 .article__meta { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem 1.1rem; padding-block: 1.2rem 0; font-size: .86rem; color: var(--muted); }
 .article__tags { display: inline-flex; flex-wrap: wrap; gap: .4rem; }
-.page--article .prose, .page--article > .container:not(.article__meta):not(.articles) { max-width: 46rem; }
-.faq { max-width: 46rem; margin: 2rem auto 2.4rem; }
+.faq { max-width: 46rem; margin: 2rem 0 2.4rem; }
 .faq h2 { margin: 0 0 1rem; }
 .faq__item { border-bottom: 1px solid var(--line); }
 .faq__item summary { cursor: pointer; padding: 1rem 2rem 1rem 0; font-weight: 600; list-style: none; position: relative; }
@@ -1490,3 +1490,15 @@ td.is-sized { font-weight: 700; }
   .stickycta__tel svg { color: var(--primary); }
 }
 @media print { .asearch, .tagbar, .stickycta { display: none; } }
+
+/* facts row on the home page */
+.facts { padding-block: 1.6rem 0; }
+.facts__row { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; }
+.facts__i { display: flex; flex-direction: column; gap: .2rem; padding: .2rem 0 .2rem 1rem; border-left: 4px solid var(--primary); }
+.facts__i strong { font-size: 1.45rem; line-height: 1.2; font-weight: 700; }
+.facts__i span { font-size: .86rem; line-height: 1.4; color: var(--muted); }
+@media (max-width: 760px) { .facts__row { grid-template-columns: repeat(2, 1fr); } .facts__i strong { font-size: 1.15rem; } }
+
+.prose .tagbar, .prose .alist, .prose .facts__row { padding: 0; margin-left: 0; list-style: none; }
+.prose .tagbar > li, .prose .alist > li, .prose .facts__row > li { margin: 0; padding-left: 0; }
+.prose .tagbar > li::before, .prose .alist > li::before, .prose .facts__row > li::before { content: none; }

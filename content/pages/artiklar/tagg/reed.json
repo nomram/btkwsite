@@ -1,0 +1,41 @@
+{
+  "path": "/artiklar/tagg/reed",
+  "updated": "2026-10-31",
+  "template": "articles",
+  "order": 10,
+  "published": true,
+  "hideIn": [
+    "es",
+    "no",
+    "lt",
+    "lv",
+    "et",
+    "ru"
+  ],
+  "i18n": {
+    "sv": {
+      "title": "Artiklar om REED",
+      "h1": "Artiklar om REED",
+      "seoTitle": "Artiklar och guider om REED | Betongakuten",
+      "description": "Alla artiklar och guider om REED från Betongakuten. Sök eller filtrera på fler taggar.",
+      "blocks": [
+        {
+          "type": "articles",
+          "tag": "reed"
+        }
+      ]
+    },
+    "en": {
+      "title": "Articles about REED",
+      "h1": "Articles about REED",
+      "seoTitle": "Articles and guides about REED | Betongakuten",
+      "description": "All articles and guides about REED from Betongakuten. Search or filter by more tags.",
+      "blocks": [
+        {
+          "type": "articles",
+          "tag": "reed"
+        }
+      ]
+    }
+  }
+}

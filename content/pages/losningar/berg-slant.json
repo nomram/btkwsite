@@ -1,0 +1,155 @@
+{
+  "path": "/losningar/berg-slant",
+  "updated": "2026-11-21",
+  "template": "listing",
+  "order": 10,
+  "published": true,
+  "hideIn": [
+    "es",
+    "no",
+    "lt",
+    "lv",
+    "et",
+    "ru"
+  ],
+  "i18n": {
+    "sv": {
+      "title": "Släntstabilisering och bergsäkring",
+      "h1": "Släntstabilisering och bergsäkring",
+      "seoTitle": "Släntstabilisering och bergsäkring | Betongakuten",
+      "description": "Geobruggs system för släntstabilisering och skydd mot bergskred, Brutus snigeldynamit för spräckning utan vibrationer och borrutrustning för förankring.",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "Skydd mot bergskred, stabilisering av slänter och spräckning av berg och sten: Geobruggs system för släntstabilisering och blockskydd, Brutus snigeldynamit för säker spräckning utan vibrationer eller buller, och borrutrustning för förankring."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Våra varumärken inom berg och slänt"
+        },
+        {
+          "type": "cards",
+          "items": [
+            {
+              "href": "/produkter/geobrugg",
+              "label": "Läs mer",
+              "html": "Produkter och system för släntstabilisering och skydd mot bergskred samt blockras.",
+              "text": "Produkter och system för släntstabilisering och skydd mot bergskred samt blockras.",
+              "image": "/assets/img/geobrugg.webp",
+              "width": 1000,
+              "height": 1000,
+              "alt": "Geobrugg logotyp"
+            },
+            {
+              "href": "/produkter/brutus",
+              "label": "Läs mer",
+              "html": "Snigeldynamit för säker spräckning av berg och sten, utan vibrationer eller buller. Perfekt för känsliga områden.",
+              "text": "Snigeldynamit för säker spräckning av berg och sten, utan vibrationer eller buller. Perfekt för känsliga områden.",
+              "image": "/assets/img/brutus.webp",
+              "width": 800,
+              "height": 800,
+              "alt": "Brutus logotyp"
+            },
+            {
+              "href": "/produkter/marini/slantstabilisering",
+              "label": "Läs mer",
+              "html": "Borrutrustning för släntstabilisering och förankring.",
+              "text": "Borrutrustning för släntstabilisering och förankring.",
+              "image": "/assets/img/marini.webp",
+              "width": 1241,
+              "height": 1241,
+              "alt": "Marini logotyp"
+            }
+          ]
+        },
+        {
+          "type": "faq",
+          "title": "Vanliga frågor",
+          "items": [
+            {
+              "q": "Vad är snigeldynamit?",
+              "a": "Brutus snigeldynamit spräcker berg och sten utan sprängämnen, vibrationer eller buller, och passar känsliga områden."
+            }
+          ]
+        },
+        {
+          "type": "cta",
+          "title": "Berätta vad du behöver",
+          "text": "Kontakta oss så hjälper vi dig välja rätt, var du än befinner dig i byggprocessen.",
+          "button": "Få offert",
+          "href": "/offert"
+        }
+      ]
+    },
+    "en": {
+      "title": "Slope stabilisation and rock support",
+      "h1": "Slope stabilisation and rock support",
+      "seoTitle": "Slope stabilisation and rock support | Betongakuten",
+      "description": "Geobrugg’s systems for slope stabilisation and rockfall protection, Brutus rock splitting without vibration and drilling equipment for anchoring.",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "Protection against rockfall, stabilising slopes and splitting rock and stone: Geobrugg’s systems for slope stabilisation and boulder protection, Brutus splitting for safe work without vibration or noise, and drilling equipment for anchoring."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Our brands for rock and slopes"
+        },
+        {
+          "type": "cards",
+          "items": [
+            {
+              "href": "/produkter/geobrugg",
+              "label": "Read more",
+              "html": "Produkter och system för släntstabilisering och skydd mot bergskred samt blockras.",
+              "text": "Products and systems for slope stabilisation and protection against rockfall and landslides.",
+              "image": "/assets/img/geobrugg.webp",
+              "width": 1000,
+              "height": 1000,
+              "alt": "Geobrugg logo"
+            },
+            {
+              "href": "/produkter/brutus",
+              "label": "Read more",
+              "html": "Snigeldynamit för säker spräckning av berg och sten, utan vibrationer eller buller. Perfekt för känsliga områden.",
+              "text": "Non-explosive rock splitting for safe breaking of rock and stone, without vibration or noise. Perfect for sensitive areas.",
+              "image": "/assets/img/brutus.webp",
+              "width": 800,
+              "height": 800,
+              "alt": "Brutus logo"
+            },
+            {
+              "href": "/produkter/marini/slantstabilisering",
+              "label": "Read more",
+              "html": "Drilling equipment for slope stabilisation and anchoring.",
+              "text": "Drilling equipment for slope stabilisation and anchoring.",
+              "image": "/assets/img/marini.webp",
+              "width": 1241,
+              "height": 1241,
+              "alt": "Marini logo"
+            }
+          ]
+        },
+        {
+          "type": "faq",
+          "title": "Frequently asked questions",
+          "items": [
+            {
+              "q": "What is Brutus rock splitting?",
+              "a": "Brutus splits rock and stone without explosives, vibration or noise, and suits sensitive areas."
+            }
+          ]
+        },
+        {
+          "type": "cta",
+          "title": "Tell us what you need",
+          "text": "Contact us and we will help you choose, wherever you are in the construction process.",
+          "button": "Get a quote",
+          "href": "/offert"
+        }
+      ]
+    }
+  }
+}

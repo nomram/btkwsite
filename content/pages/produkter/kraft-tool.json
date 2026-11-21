@@ -21,7 +21,7 @@
     "sv": {
       "title": "Kraft Tool",
       "h1": "Kraft Tool",
-      "description": "Kraft Tool är tillverkare av produkter som slevar, putsbrädor, fogbrädor och andra minst lika viktiga byggtillbehör.",
+      "description": "Slevar, putsbrädor, fogbrädor och andra verktyg för betongytor från Kraft Tool.",
       "blocks": [
         {
           "type": "image",
@@ -52,12 +52,13 @@
           "text": "Broschyr",
           "href": "/assets/docs/kraft-tool-brochure.pdf"
         }
-      ]
+      ],
+      "seoTitle": "Kraft Tool slevar och betongverktyg | Betongakuten"
     },
     "en": {
       "title": "Kraft Tool",
       "h1": "Kraft Tool",
-      "description": "Kraft Tool is a manufacturer of products such as trowels, plastering boards, float boards and other equally important construction accessories.",
+      "description": "Trowels, floats, edgers and other tools for concrete surfaces from Kraft Tool.",
       "blocks": [
         {
           "type": "image",
@@ -89,7 +90,8 @@
           "href": "/assets/docs/kraft-tool-brochure.pdf"
         }
       ],
-      "published": true
+      "published": true,
+      "seoTitle": "Kraft Tool trowels and concrete tools | Betongakuten"
     },
     "es": {
       "title": "Kraft Tool",

@@ -16,7 +16,7 @@
     "sv": {
       "title": "Produkter",
       "h1": "Produkter",
-      "description": "Produkter. Betongakuten: leverantör och konsult inom byggindustrin.",
+      "description": "Maskiner och material från 15 varumärken: injektering, borrning, sprutbetong, torrbruk, ytskydd och släntstabilisering. Sök på leverantör eller produkt.",
       "blocks": [
         {
           "type": "cards",
@@ -258,12 +258,13 @@
             }
           ]
         }
-      ]
+      ],
+      "seoTitle": "Produkter: maskiner och material för byggindustrin | Betongakuten"
     },
     "en": {
       "title": "Products",
       "h1": "Products",
-      "description": "Products. Betongakuten: supplier and consultant to the construction industry.",
+      "description": "Machines and materials from 15 brands: grouting, drilling, shotcrete, dry mortar, surface protection and slope stabilisation. Search by supplier or product.",
       "blocks": [
         {
           "type": "cards",
@@ -506,7 +507,8 @@
           ]
         }
       ],
-      "published": true
+      "published": true,
+      "seoTitle": "Products: machines and materials for construction | Betongakuten"
     },
     "es": {
       "title": "Productos",

@@ -1,0 +1,48 @@
+{
+  "path": "/artiklar",
+  "updated": "2026-11-21",
+  "template": "articles",
+  "order": 4,
+  "published": true,
+  "noMenu": true,
+  "hideIn": [
+    "es",
+    "no",
+    "lt",
+    "lv",
+    "et",
+    "ru"
+  ],
+  "i18n": {
+    "sv": {
+      "title": "Artiklar",
+      "h1": "Artiklar och guider",
+      "seoTitle": "Artiklar och guider om injektering och borrning | Betongakuten",
+      "description": "Guider och artiklar om injekteringsutrustning, borrning för mikropålar, torrbruk och sprutbetong. Sök eller filtrera på taggar.",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "Korta guider om hur du väljer utrustning och material. Sök eller filtrera på taggar, och hör av dig om du vill ha hjälp med just ditt jobb."
+        },
+        {
+          "type": "articles"
+        }
+      ]
+    },
+    "en": {
+      "title": "Articles",
+      "h1": "Articles and guides",
+      "seoTitle": "Articles and guides on grouting and drilling | Betongakuten",
+      "description": "Guides and articles on grouting equipment, drilling for micropiles, dry mortar and shotcrete. Search or filter by tags.",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "Short guides on how to choose equipment and materials. Search or filter by tags, and get in touch if you want help with your job."
+        },
+        {
+          "type": "articles"
+        }
+      ]
+    }
+  }
+}

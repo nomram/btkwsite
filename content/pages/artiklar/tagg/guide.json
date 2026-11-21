@@ -1,0 +1,41 @@
+{
+  "path": "/artiklar/tagg/guide",
+  "updated": "2026-11-21",
+  "template": "articles",
+  "order": 10,
+  "published": true,
+  "hideIn": [
+    "es",
+    "no",
+    "lt",
+    "lv",
+    "et",
+    "ru"
+  ],
+  "i18n": {
+    "sv": {
+      "title": "Artiklar om Guide",
+      "h1": "Artiklar om Guide",
+      "seoTitle": "Artiklar och guider om Guide | Betongakuten",
+      "description": "Alla artiklar och guider om Guide från Betongakuten. Sök eller filtrera på fler taggar.",
+      "blocks": [
+        {
+          "type": "articles",
+          "tag": "guide"
+        }
+      ]
+    },
+    "en": {
+      "title": "Articles about Guide",
+      "h1": "Articles about Guide",
+      "seoTitle": "Articles and guides about Guide | Betongakuten",
+      "description": "All articles and guides about Guide from Betongakuten. Search or filter by more tags.",
+      "blocks": [
+        {
+          "type": "articles",
+          "tag": "guide"
+        }
+      ]
+    }
+  }
+}

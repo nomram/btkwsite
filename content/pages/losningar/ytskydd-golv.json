@@ -1,0 +1,195 @@
+{
+  "path": "/losningar/ytskydd-golv",
+  "updated": "2026-11-21",
+  "template": "listing",
+  "order": 10,
+  "published": true,
+  "hideIn": [
+    "es",
+    "no",
+    "lt",
+    "lv",
+    "et",
+    "ru"
+  ],
+  "i18n": {
+    "sv": {
+      "title": "Ytskydd, byggkemi och betongverktyg",
+      "h1": "Ytskydd, byggkemi och betongverktyg",
+      "seoTitle": "Golvskydd, byggkemi och betongverktyg | Betongakuten",
+      "description": "Tillfälligt golv- och karmskydd, vattentätning, puts, lim, betongreparation och verktyg för betongytor från Ram Board, Mapei, Weber, Ecobeton och Kraft Tool.",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "Skydda ytor under byggtiden och bygg tätt, hållbart och snyggt: tillfälligt golv- och karmskydd, vattentätning, puts, lim och fogmassor, betongreparation och verktyg för betongytor."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Våra varumärken inom ytskydd och byggkemi"
+        },
+        {
+          "type": "cards",
+          "items": [
+            {
+              "href": "/produkter/ram-board",
+              "label": "Läs mer",
+              "html": "Produkter som golvskydd och karmskydd som är tillverkade för återanvändning med FSC-certifikat.",
+              "text": "Produkter som golvskydd och karmskydd som är tillverkade för återanvändning med FSC-certifikat.",
+              "image": "/assets/img/ram-board.webp",
+              "width": 250,
+              "height": 250,
+              "alt": "Ram Board logotyp"
+            },
+            {
+              "href": "/produkter/mapei",
+              "label": "Läs mer",
+              "html": "System för vattentätning, putsbruk, lim, fogmassor och andra kemiska produkter för byggindustrin.",
+              "text": "System för vattentätning, putsbruk, lim, fogmassor och andra kemiska produkter för byggindustrin.",
+              "image": "/assets/img/mapei.webp",
+              "width": 1920,
+              "height": 1920,
+              "alt": "Mapei logotyp"
+            },
+            {
+              "href": "/produkter/ecobeton",
+              "label": "Läs mer",
+              "html": "System och lösningar till byggindustrin för produkter såsom betong, puts, tegel och trä.",
+              "text": "System och lösningar till byggindustrin för produkter såsom betong, puts, tegel och trä.",
+              "image": "/assets/img/ecobeton.webp",
+              "width": 1000,
+              "height": 1000,
+              "alt": "Ecobeton logotyp"
+            },
+            {
+              "href": "/produkter/weber",
+              "label": "Läs mer",
+              "html": "Helhetslösningar för system inom fasadputs, murbruk, golvavjämning och plattsättning.",
+              "text": "Helhetslösningar för system inom fasadputs, murbruk, golvavjämning och plattsättning.",
+              "image": "/assets/img/weber.webp",
+              "width": 1100,
+              "height": 1100,
+              "alt": "Weber logotyp"
+            },
+            {
+              "href": "/produkter/kraft-tool",
+              "label": "Läs mer",
+              "html": "Produkter som slevar, putsbrädor, fogbrädor och andra minst lika viktiga byggtillbehör.",
+              "text": "Produkter som slevar, putsbrädor, fogbrädor och andra minst lika viktiga byggtillbehör.",
+              "image": "/assets/img/kraft-tool.webp",
+              "width": 300,
+              "height": 300,
+              "alt": "Kraft Tool logotyp"
+            }
+          ]
+        },
+        {
+          "type": "faq",
+          "title": "Vanliga frågor",
+          "items": [
+            {
+              "q": "Vad är tillfälligt golvskydd?",
+              "a": "Ett skydd som läggs ut på färdiga golv under byggtiden så att de inte skadas, och som tas bort efteråt. Ram Boards produkter är tillverkade för återanvändning med FSC-certifikat."
+            }
+          ]
+        },
+        {
+          "type": "cta",
+          "title": "Berätta vad du behöver",
+          "text": "Kontakta oss så hjälper vi dig välja rätt, var du än befinner dig i byggprocessen.",
+          "button": "Få offert",
+          "href": "/offert"
+        }
+      ]
+    },
+    "en": {
+      "title": "Surface protection, construction chemicals and concrete tools",
+      "h1": "Surface protection, construction chemicals and concrete tools",
+      "seoTitle": "Floor protection, building chemicals and tools | Betongakuten",
+      "description": "Temporary floor and door-frame protection, waterproofing, plaster, adhesives, concrete repair and tools for concrete surfaces from Ram Board, Mapei, Weber, Ecobeton and Kraft Tool.",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "Protect surfaces during construction and build tight, durable and neat: temporary floor and door-frame protection, waterproofing, plaster, adhesives and sealants, concrete repair and tools for concrete surfaces."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Our brands for surface protection and construction chemicals"
+        },
+        {
+          "type": "cards",
+          "items": [
+            {
+              "href": "/produkter/ram-board",
+              "label": "Read more",
+              "html": "Produkter som golvskydd och karmskydd som är tillverkade för återanvändning med FSC-certifikat.",
+              "text": "Floor and frame protection products made for reuse and with FSC certification.",
+              "image": "/assets/img/ram-board.webp",
+              "width": 250,
+              "height": 250,
+              "alt": "Ram Board logo"
+            },
+            {
+              "href": "/produkter/mapei",
+              "label": "Read more",
+              "html": "System för vattentätning, putsbruk, lim, fogmassor och andra kemiska produkter för byggindustrin.",
+              "text": "Systems for waterproofing, plastering mortar, adhesives, sealants and other chemical products for the construction industry.",
+              "image": "/assets/img/mapei.webp",
+              "width": 1920,
+              "height": 1920,
+              "alt": "Mapei logo"
+            },
+            {
+              "href": "/produkter/ecobeton",
+              "label": "Read more",
+              "html": "System och lösningar till byggindustrin för produkter såsom betong, puts, tegel och trä.",
+              "text": "Systems and solutions for the construction industry for products such as concrete, plaster, brick and wood.",
+              "image": "/assets/img/ecobeton.webp",
+              "width": 1000,
+              "height": 1000,
+              "alt": "Ecobeton logo"
+            },
+            {
+              "href": "/produkter/weber",
+              "label": "Read more",
+              "html": "Helhetslösningar för system inom fasadputs, murbruk, golvavjämning och plattsättning.",
+              "text": "Complete system solutions for façade rendering, masonry mortar, floor levelling and tiling.",
+              "image": "/assets/img/weber.webp",
+              "width": 1100,
+              "height": 1100,
+              "alt": "Weber logo"
+            },
+            {
+              "href": "/produkter/kraft-tool",
+              "label": "Read more",
+              "html": "Produkter som slevar, putsbrädor, fogbrädor och andra minst lika viktiga byggtillbehör.",
+              "text": "Products such as trowels, plastering boards, float boards and other equally important construction accessories.",
+              "image": "/assets/img/kraft-tool.webp",
+              "width": 300,
+              "height": 300,
+              "alt": "Kraft Tool logo"
+            }
+          ]
+        },
+        {
+          "type": "faq",
+          "title": "Frequently asked questions",
+          "items": [
+            {
+              "q": "What is temporary floor protection?",
+              "a": "A cover laid on finished floors during construction so they are not damaged, and removed afterwards. Ram Board’s products are made for reuse with FSC certification."
+            }
+          ]
+        },
+        {
+          "type": "cta",
+          "title": "Tell us what you need",
+          "text": "Contact us and we will help you choose, wherever you are in the construction process.",
+          "button": "Get a quote",
+          "href": "/offert"
+        }
+      ]
+    }
+  }
+}

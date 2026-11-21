@@ -8,7 +8,7 @@
     "sv": {
       "title": "Kontakta oss",
       "h1": "Kontakta oss",
-      "description": "Vi hjälper till med information och leverans av våra produkter, var du än befinner dig i byggprocessen. Ring eller mejla Betongakuten.",
+      "description": "Ring 0700-37 94 11, mejla johnny@betongakuten.se eller begär offert. Vi hjälper till med information och leverans, var du än befinner dig i byggprocessen.",
       "blocks": [
         {
           "type": "text",
@@ -27,12 +27,13 @@
           "text": "Få offert",
           "href": "/offert"
         }
-      ]
+      ],
+      "seoTitle": "Kontakta Betongakuten: ring, mejla eller begär offert | Betongakuten"
     },
     "en": {
       "title": "Contact us",
       "h1": "Contact us",
-      "description": "We help with information and delivery of our products wherever you are in the construction process.",
+      "description": "Call 0700-37 94 11, email johnny@betongakuten.se or request a quote. We help with information and delivery wherever you are in the construction process.",
       "blocks": [
         {
           "type": "text",
@@ -52,7 +53,8 @@
           "href": "/offert"
         }
       ],
-      "published": true
+      "published": true,
+      "seoTitle": "Contact Betongakuten: call, email or request a quote | Betongakuten"
     },
     "es": {
       "title": "Contáctenos",

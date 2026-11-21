@@ -1,0 +1,41 @@
+{
+  "path": "/artiklar/tagg/haeny",
+  "updated": "2026-11-21",
+  "template": "articles",
+  "order": 10,
+  "published": true,
+  "hideIn": [
+    "es",
+    "no",
+    "lt",
+    "lv",
+    "et",
+    "ru"
+  ],
+  "i18n": {
+    "sv": {
+      "title": "Artiklar om Häny",
+      "h1": "Artiklar om Häny",
+      "seoTitle": "Artiklar och guider om Häny | Betongakuten",
+      "description": "Alla artiklar och guider om Häny från Betongakuten. Sök eller filtrera på fler taggar.",
+      "blocks": [
+        {
+          "type": "articles",
+          "tag": "haeny"
+        }
+      ]
+    },
+    "en": {
+      "title": "Articles about Häny",
+      "h1": "Articles about Häny",
+      "seoTitle": "Articles and guides about Häny | Betongakuten",
+      "description": "All articles and guides about Häny from Betongakuten. Search or filter by more tags.",
+      "blocks": [
+        {
+          "type": "articles",
+          "tag": "haeny"
+        }
+      ]
+    }
+  }
+}

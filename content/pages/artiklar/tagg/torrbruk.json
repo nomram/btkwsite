@@ -1,0 +1,41 @@
+{
+  "path": "/artiklar/tagg/torrbruk",
+  "updated": "2026-11-14",
+  "template": "articles",
+  "order": 10,
+  "published": true,
+  "hideIn": [
+    "es",
+    "no",
+    "lt",
+    "lv",
+    "et",
+    "ru"
+  ],
+  "i18n": {
+    "sv": {
+      "title": "Artiklar om Torrbruk",
+      "h1": "Artiklar om Torrbruk",
+      "seoTitle": "Artiklar och guider om Torrbruk | Betongakuten",
+      "description": "Alla artiklar och guider om Torrbruk från Betongakuten. Sök eller filtrera på fler taggar.",
+      "blocks": [
+        {
+          "type": "articles",
+          "tag": "torrbruk"
+        }
+      ]
+    },
+    "en": {
+      "title": "Articles about Dry mortar",
+      "h1": "Articles about Dry mortar",
+      "seoTitle": "Articles and guides about Dry mortar | Betongakuten",
+      "description": "All articles and guides about Dry mortar from Betongakuten. Search or filter by more tags.",
+      "blocks": [
+        {
+          "type": "articles",
+          "tag": "torrbruk"
+        }
+      ]
+    }
+  }
+}

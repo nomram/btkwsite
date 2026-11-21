@@ -1,0 +1,163 @@
+{
+  "path": "/artiklar/borrning-mikropalar-tei",
+  "updated": "2026-11-07",
+  "template": "article",
+  "order": 10,
+  "published": true,
+  "date": "2026-11-07",
+  "tags": [
+    "borrning",
+    "mikropalar",
+    "tei",
+    "guide"
+  ],
+  "image": "/assets/img/brand-photo-tei.webp",
+  "hideIn": [
+    "es",
+    "no",
+    "lt",
+    "lv",
+    "et",
+    "ru"
+  ],
+  "i18n": {
+    "sv": {
+      "title": "Borrning för mikropålar i trånga utrymmen: elektrisk rigg eller borrmast?",
+      "h1": "Borrning för mikropålar i trånga utrymmen: elektrisk rigg eller borrmast?",
+      "description": "TD75 eller HEM? Så skiljer sig en elektrisk borrigg och en borrmast för grävmaskin när du ska installera mikropålar där det är trångt.",
+      "summary": "TD75 eller HEM? Så skiljer sig en elektrisk borrigg och en borrmast för grävmaskin när det är trångt.",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "Mikropålar installeras ofta där det är trångt: under befintliga byggnader, i källare och tunnlar eller på slänter. Då avgör tillgången till plats och kraft vilken borrigg du ska välja. Här är skillnaden mellan två av TEIs lösningar."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "TD75: elektrisk borrigg för begränsad tillgång"
+        },
+        {
+          "type": "text",
+          "html": "TD75 är en elektrisk borrigg för begränsad tillgång, utformad för att installera mikropålar. Modellnumret anger antal hästkrafter i den elektriska motorn. Riggen kräver bara en extern strömkälla, vilket minskar buller och avgaser och gör den lämplig för små utrymmen, under byggnader och i tunnlar. De flesta av TEIs topp- och rotationshammare kan paras med TD75."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "HEM: borrmast för grävmaskin"
+        },
+        {
+          "type": "text",
+          "html": "HEM (Hydraulic Excavator Mount) är den näst tyngsta masten TEI erbjuder för installation av mikropålar upp till 76 mm. Den monteras på en grävmaskin och får sin hydraulkraft från grävmaskinens hammarkrets, så ingen extra hydraulinstallation krävs. Grävmaskinens stabila bas och långa bom bildar tillsammans en bra borrplattform."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Så väljer du"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Trångt eller inomhus, där buller och avgaser spelar roll: TD75",
+            "Öppen yta eller slänt där du ändå har en grävmaskin: HEM",
+            "Vilken hammare ska användas? TEI:s topp- och rotationshammare kan paras med flera av riggarna"
+          ]
+        },
+        {
+          "type": "faq",
+          "title": "Vanliga frågor",
+          "items": [
+            {
+              "q": "Vad är en mikropåle?",
+              "a": "En smal borrad påle som används för att förstärka grunder, särskilt där det är trångt eller marken är svår att arbeta i."
+            },
+            {
+              "q": "Behöver HEM en egen hydraulik?",
+              "a": "Nej, HEM får sin hydraulkraft från grävmaskinens hammarkrets, så ingen extra hydraulinstallation krävs."
+            },
+            {
+              "q": "Kan jag få en demonstration?",
+              "a": "Kontakta oss så berättar vi vad som finns att se, bland annat videor på TD75 och HEM760."
+            }
+          ]
+        },
+        {
+          "type": "cta",
+          "title": "Vill du ha hjälp att välja?",
+          "text": "Berätta vad du ska göra, var och när, så rekommenderar vi rätt utrustning och återkommer med pris och leveranstid.",
+          "button": "Få offert",
+          "href": "/offert"
+        }
+      ],
+      "seoTitle": "Borrning för mikropålar: elektrisk rigg eller borrmast? | Betongakuten"
+    },
+    "en": {
+      "title": "Drilling for micropiles in tight spaces: electric rig or drill mast?",
+      "h1": "Drilling for micropiles in tight spaces: electric rig or drill mast?",
+      "description": "TD75 or HEM? How an electric drill rig and an excavator-mounted drill mast differ when you install micropiles where space is tight.",
+      "summary": "TD75 or HEM? How an electric drill rig and an excavator-mounted drill mast differ when space is tight.",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "Micropiles are often installed where it is tight: under existing buildings, in basements and tunnels or on slopes. Access to space and power then decides which rig to choose. Here is the difference between two of TEI’s solutions."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "TD75: electric drill rig for limited access"
+        },
+        {
+          "type": "text",
+          "html": "The TD75 is an electric drill rig for limited access, designed to install micropiles. The model number gives the horsepower of the electric motor. The rig only needs an external power source, which reduces noise and exhaust and makes it suitable for small spaces, under buildings and in tunnels. Most of TEI’s top and rotary hammers can be paired with the TD75."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "HEM: drill mast for an excavator"
+        },
+        {
+          "type": "text",
+          "html": "The HEM (Hydraulic Excavator Mount) is the second heaviest mast TEI offers for installing micropiles up to 76 mm. It is mounted on an excavator and takes its hydraulic power from the excavator’s hammer circuit, so no extra hydraulic installation is needed. The stable excavator base and long boom together make a good drilling platform."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "How to choose"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Tight or indoors, where noise and exhaust matter: TD75",
+            "Open area or a slope where you have an excavator anyway: HEM",
+            "Which hammer to use? TEI’s top and rotary hammers can be paired with several of the rigs"
+          ]
+        },
+        {
+          "type": "faq",
+          "title": "Frequently asked questions",
+          "items": [
+            {
+              "q": "What is a micropile?",
+              "a": "A slim drilled pile used to reinforce foundations, especially where space is tight or the ground is hard to work in."
+            },
+            {
+              "q": "Does the HEM need its own hydraulics?",
+              "a": "No, the HEM takes its hydraulic power from the excavator’s hammer circuit, so no extra hydraulic installation is needed."
+            },
+            {
+              "q": "Can I get a demonstration?",
+              "a": "Contact us and we will tell you what there is to see, including videos of the TD75 and HEM760."
+            }
+          ]
+        },
+        {
+          "type": "cta",
+          "title": "Would you like help choosing?",
+          "text": "Tell us what you are going to do, where and when, and we will recommend the right equipment and come back with a price and lead time.",
+          "button": "Get a quote",
+          "href": "/offert"
+        }
+      ],
+      "seoTitle": "Drilling for micropiles: electric rig or drill mast? | Betongakuten"
+    }
+  }
+}

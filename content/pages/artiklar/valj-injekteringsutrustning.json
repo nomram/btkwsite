@@ -1,0 +1,231 @@
+{
+  "path": "/artiklar/valj-injekteringsutrustning",
+  "updated": "2026-11-21",
+  "template": "article",
+  "order": 10,
+  "published": true,
+  "date": "2026-11-21",
+  "tags": [
+    "injektering",
+    "guide",
+    "haeny",
+    "jean-lutz"
+  ],
+  "image": "/assets/img/brand-photo-haeny.webp",
+  "hideIn": [
+    "es",
+    "no",
+    "lt",
+    "lv",
+    "et",
+    "ru"
+  ],
+  "i18n": {
+    "sv": {
+      "title": "Så väljer du injekteringsutrustning",
+      "h1": "Så väljer du injekteringsutrustning",
+      "description": "En kort checklista för att välja injekteringspump och anläggning: material, tryck och flöde, manuell eller automatisk, matning av torrmaterial och dokumentation.",
+      "summary": "En kort checklista: material, tryck och flöde, manuell eller automatisk anläggning och hur du dokumenterar jobbet.",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "Rätt injekteringsutrustning handlar mindre om märke och mer om jobbet: vilket material du pumpar, vilket tryck och flöde som krävs, hur mycket som ska göras och hur noggrant det ska dokumenteras. Så här går du igenom valet."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "1. Börja med materialet"
+        },
+        {
+          "type": "text",
+          "html": "Cementbruk, ultrafint cement och bentonit ställer olika krav på mixer och pump. Häny:s ZMP-pumpar klarar partikelstorlek upp till 8 mm. De kraftigare ZMP 700-pumparna har ventiler av slitstarkt legerat stål med vändbara säten och hanterar även suspensioner med lågt vatten/cement-tal och hög sandandel. Räkna med att mixern ska vara dimensionerad efter det svåraste materialet du ska köra."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "2. Tryck och flöde"
+        },
+        {
+          "type": "text",
+          "html": "Tät injektering i berg och förankring kräver högt tryck, medan mjuk mark kräver lågt tryck och kontrollerat flöde så att du slipper segregation och nya hålrum. ZMP-serien går upp till 200 bar och 13 m³/h beroende på modell. Vissa ZMP 700-modeller går att ställa in från så lågt som 1 bar, och den inbyggda flödesregleringen låter dig begränsa maxflödet för långsam injektering."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "3. Manuell eller automatisk anläggning"
+        },
+        {
+          "type": "text",
+          "html": "De manuella IC-enheterna är kompakta och storsäljare: IC310 har ett maxtryck på 100 bar, IC311 på 75 bar men med ett flöde på 2 m³/h. IC325 har två kolvpumpar för ett jämnare flöde, max 100 bar och 2 m³/h, och kan kombineras med en modul för PU-injektering."
+        },
+        {
+          "type": "text",
+          "html": "De automatiserade FAIC-anläggningarna kombinerar mixer, omrörare och injekteringspump. De hanterar material med hög sandhalt och låga vct och passar för bergförankring, tätning och mikrotunnling, där hög kapacitet och kvalitetssäkring väger tungt."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "4. Mata torrt material rationellt"
+        },
+        {
+          "type": "text",
+          "html": "Går det åt mycket torrt material kan en silo eller säcktömmare spara både tid och spill. Läs mer i vår guide om <a href=\"/artiklar/torrbruk-silo-ahlm\">torrbruk, silo och Ahlm-metoden</a>."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "5. Dokumentera jobbet"
+        },
+        {
+          "type": "text",
+          "html": "Vid specialgrundläggning vill beställaren ofta ha tryck, flöde och volym dokumenterat. Jean Lutz tillverkar givare, dataloggare och displayer för mätning, styrning och registrering vid injektering, jet grouting, borrning och pålning."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Checklista"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Material och största kornstorlek",
+            "Tryck- och flödesområde",
+            "Dagsvolym och antal injekteringspunkter",
+            "Manuell, automatisk eller mobil anläggning",
+            "Tillgång till el, vatten och plats",
+            "Krav på dokumentation",
+            "Hur torrt material matas till mixern"
+          ]
+        },
+        {
+          "type": "faq",
+          "title": "Vanliga frågor",
+          "items": [
+            {
+              "q": "Vad är skillnaden mellan IC- och FAIC-anläggningar?",
+              "a": "IC är manuella, kompakta enheter med mixer, omrörare och kolvpump. FAIC är automatiserade anläggningar som kombinerar mixer, omrörare och injekteringspump och ger hög produktionskapacitet och kvalitetssäkring genom automatiserad drift."
+            },
+            {
+              "q": "Vilket tryck klarar Hänys injekteringspumpar?",
+              "a": "ZMP-serien går upp till 200 bar och 13 m³/h beroende på modell, med partikelstorlek upp till 8 mm."
+            },
+            {
+              "q": "Kan ni hjälpa mig att välja?",
+              "a": "Ja. Ring oss eller använd offertformuläret och berätta material, tryck, volym och plats, så rekommenderar vi en lösning."
+            }
+          ]
+        },
+        {
+          "type": "cta",
+          "title": "Vill du ha hjälp att välja?",
+          "text": "Berätta vad du ska göra, var och när, så rekommenderar vi rätt utrustning och återkommer med pris och leveranstid.",
+          "button": "Få offert",
+          "href": "/offert"
+        }
+      ]
+    },
+    "en": {
+      "title": "How to choose grouting equipment",
+      "h1": "How to choose grouting equipment",
+      "description": "A short checklist for choosing a grouting pump and plant: material, pressure and flow, manual or automatic, feeding dry material and documentation.",
+      "summary": "A short checklist: material, pressure and flow, manual or automatic plant, and how to document the job.",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "The right grouting equipment is less about the brand and more about the job: what material you pump, what pressure and flow you need, how much has to be done and how carefully it has to be documented. Here is how to go through the choice."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "1. Start with the material"
+        },
+        {
+          "type": "text",
+          "html": "Cement grout, ultrafine cement and bentonite make different demands on the mixer and the pump. Häny’s ZMP pumps handle particle sizes up to 8 mm. The heavier ZMP 700 pumps have valves of wear-resistant alloy steel with reversible seats and also handle suspensions with a low water/cement ratio and a high sand content. Size the mixer for the hardest material you will run."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "2. Pressure and flow"
+        },
+        {
+          "type": "text",
+          "html": "Tight grouting in rock and anchoring call for high pressure, while soft ground calls for low pressure and controlled flow so you avoid segregation and new voids. The ZMP series goes up to 200 bar and 13 m³/h depending on the model. Some ZMP 700 models can be set from as low as 1 bar, and the built-in flow control lets you limit the maximum flow for slow grouting."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "3. Manual or automatic plant"
+        },
+        {
+          "type": "text",
+          "html": "The manual IC units are compact bestsellers: the IC310 has a maximum pressure of 100 bar, the IC311 75 bar but with a flow of 2 m³/h. The IC325 has two piston pumps for a smoother flow, 100 bar maximum and 2 m³/h, and can be combined with a module for PU grouting."
+        },
+        {
+          "type": "text",
+          "html": "The automated FAIC plants combine mixer, agitator and grout pump. They handle material with a high sand content and low water/cement ratios and suit rock anchoring, sealing and microtunnelling, where high capacity and quality assurance count."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "4. Feed dry material efficiently"
+        },
+        {
+          "type": "text",
+          "html": "If you use a lot of dry material, a silo or bag emptier can save both time and waste. Read more in our guide to <a href=\"/artiklar/torrbruk-silo-ahlm\">dry mortar, silos and the Ahlm method</a>."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "5. Document the job"
+        },
+        {
+          "type": "text",
+          "html": "In specialist foundation work the client often wants pressure, flow and volume documented. Jean Lutz makes sensors, data loggers and displays for measuring, controlling and recording in grouting, jet grouting, drilling and piling."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Checklist"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Material and largest particle size",
+            "Pressure and flow range",
+            "Daily volume and number of grouting points",
+            "Manual, automatic or mobile plant",
+            "Access to power, water and space",
+            "Documentation requirements",
+            "How dry material is fed to the mixer"
+          ]
+        },
+        {
+          "type": "faq",
+          "title": "Frequently asked questions",
+          "items": [
+            {
+              "q": "What is the difference between IC and FAIC plants?",
+              "a": "IC units are manual and compact, with mixer, agitator and piston pump. FAIC plants are automated and combine mixer, agitator and grout pump, giving high production capacity and quality assurance through automated operation."
+            },
+            {
+              "q": "What pressure do Häny’s grouting pumps reach?",
+              "a": "The ZMP series goes up to 200 bar and 13 m³/h depending on the model, with particle sizes up to 8 mm."
+            },
+            {
+              "q": "Can you help me choose?",
+              "a": "Yes. Call us or use the quote form and tell us the material, pressure, volume and site, and we will recommend a solution."
+            }
+          ]
+        },
+        {
+          "type": "cta",
+          "title": "Would you like help choosing?",
+          "text": "Tell us what you are going to do, where and when, and we will recommend the right equipment and come back with a price and lead time.",
+          "button": "Get a quote",
+          "href": "/offert"
+        }
+      ]
+    }
+  }
+}

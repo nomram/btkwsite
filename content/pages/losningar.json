@@ -1,0 +1,184 @@
+{
+  "path": "/losningar",
+  "updated": "2026-11-21",
+  "template": "listing",
+  "order": 3,
+  "published": true,
+  "noMenu": true,
+  "hideIn": [
+    "es",
+    "no",
+    "lt",
+    "lv",
+    "et",
+    "ru"
+  ],
+  "i18n": {
+    "sv": {
+      "title": "Lösningar",
+      "h1": "Vad behöver du?",
+      "seoTitle": "Lösningar: injektering, borrning och sprutbetong | Betongakuten",
+      "description": "Hitta rätt utrustning efter behov: injektering, borrning, sprutbetong, torrbruk, ytskydd och släntstabilisering.",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "Börja med vad du ska göra. Vi visar vilka varumärken och produkter som passar, och hjälper dig välja."
+        },
+        {
+          "type": "cards",
+          "items": [
+            {
+              "href": "/losningar/injektering",
+              "label": "Läs mer",
+              "html": "Injekteringspumpar, mixers och kompletta anläggningar från Häny, utrustning från REED och dataloggning från Jean Lutz. Rådgivning och offert.",
+              "text": "Injekteringspumpar, mixers och kompletta anläggningar från Häny, utrustning från REED och dataloggning från Jean Lutz. Rådgivning och offert.",
+              "image": "/assets/img/brand-photo-haeny.webp",
+              "width": 1200,
+              "height": 800,
+              "alt": "Injekteringsutrustning",
+              "title": "Injekteringsutrustning"
+            },
+            {
+              "href": "/losningar/borrning",
+              "label": "Läs mer",
+              "html": "Borrmaster för grävmaskiner och elektriska borriggar från TEI, maskiner från Marini och topphammare från Terra Infrastructure.",
+              "text": "Borrmaster för grävmaskiner och elektriska borriggar från TEI, maskiner från Marini och topphammare från Terra Infrastructure.",
+              "image": "/assets/img/brand-photo-tei.webp",
+              "width": 1200,
+              "height": 800,
+              "alt": "Borrutrustning",
+              "title": "Borrutrustning"
+            },
+            {
+              "href": "/losningar/sprutbetong",
+              "label": "Läs mer",
+              "html": "Maskiner för torr- och våtsprutning, betongpumpar och groutlösningar från REED samt sprutbetongaggregat från Marini.",
+              "text": "Maskiner för torr- och våtsprutning, betongpumpar och groutlösningar från REED samt sprutbetongaggregat från Marini.",
+              "image": "/assets/img/brand-photo-reed.webp",
+              "width": 1200,
+              "height": 800,
+              "alt": "Sprutbetong och betongpumpar",
+              "title": "Sprutbetong och betongpumpar"
+            },
+            {
+              "href": "/losningar/torrbruk-silo",
+              "label": "Läs mer",
+              "html": "Torrbruksilos, säcktömmare och blandarlösningar från AHLM för cement, puts och flytspackel på byggplatsen.",
+              "text": "Torrbruksilos, säcktömmare och blandarlösningar från AHLM för cement, puts och flytspackel på byggplatsen.",
+              "image": "/assets/img/brand-photo-ahlm.webp",
+              "width": 1200,
+              "height": 800,
+              "alt": "Torrbruksilos och säcktömmare",
+              "title": "Torrbruksilos och säcktömmare"
+            },
+            {
+              "href": "/losningar/ytskydd-golv",
+              "label": "Läs mer",
+              "html": "Tillfälligt golv- och karmskydd, vattentätning, puts, lim, betongreparation och verktyg för betongytor från Ram Board, Mapei, Weber, Ecobeton och Kraft Tool.",
+              "text": "Tillfälligt golv- och karmskydd, vattentätning, puts, lim, betongreparation och verktyg för betongytor från Ram Board, Mapei, Weber, Ecobeton och Kraft Tool.",
+              "image": "/assets/img/brand-photo-ram-board.webp",
+              "width": 1200,
+              "height": 800,
+              "alt": "Ytskydd, byggkemi och betongverktyg",
+              "title": "Ytskydd, byggkemi och betongverktyg"
+            },
+            {
+              "href": "/losningar/berg-slant",
+              "label": "Läs mer",
+              "html": "Geobruggs system för släntstabilisering och skydd mot bergskred, Brutus snigeldynamit för spräckning utan vibrationer och borrutrustning för förankring.",
+              "text": "Geobruggs system för släntstabilisering och skydd mot bergskred, Brutus snigeldynamit för spräckning utan vibrationer och borrutrustning för förankring.",
+              "image": "/assets/img/brand-photo-geobrugg.webp",
+              "width": 1200,
+              "height": 800,
+              "alt": "Släntstabilisering och bergsäkring",
+              "title": "Släntstabilisering och bergsäkring"
+            }
+          ]
+        }
+      ]
+    },
+    "en": {
+      "title": "Solutions",
+      "h1": "What do you need?",
+      "seoTitle": "Solutions: grouting, drilling and shotcrete | Betongakuten",
+      "description": "Find the right equipment by need: grouting, drilling, shotcrete, dry mortar, surface protection and slope stabilisation.",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "Start with what you are going to do. We show which brands and products fit, and help you choose."
+        },
+        {
+          "type": "cards",
+          "items": [
+            {
+              "href": "/losningar/injektering",
+              "label": "Read more",
+              "html": "Grouting pumps, mixers and complete plants from Häny, equipment from REED and data logging from Jean Lutz. Advice and quotes.",
+              "text": "Grouting pumps, mixers and complete plants from Häny, equipment from REED and data logging from Jean Lutz. Advice and quotes.",
+              "image": "/assets/img/brand-photo-haeny.webp",
+              "width": 1200,
+              "height": 800,
+              "alt": "Grouting equipment",
+              "title": "Grouting equipment"
+            },
+            {
+              "href": "/losningar/borrning",
+              "label": "Read more",
+              "html": "Excavator drill masts and electric drill rigs from TEI, machines from Marini and top hammers from Terra Infrastructure.",
+              "text": "Excavator drill masts and electric drill rigs from TEI, machines from Marini and top hammers from Terra Infrastructure.",
+              "image": "/assets/img/brand-photo-tei.webp",
+              "width": 1200,
+              "height": 800,
+              "alt": "Drilling equipment",
+              "title": "Drilling equipment"
+            },
+            {
+              "href": "/losningar/sprutbetong",
+              "label": "Read more",
+              "html": "Machines for dry and wet spraying, concrete pumps and grout solutions from REED, and shotcrete units from Marini.",
+              "text": "Machines for dry and wet spraying, concrete pumps and grout solutions from REED, and shotcrete units from Marini.",
+              "image": "/assets/img/brand-photo-reed.webp",
+              "width": 1200,
+              "height": 800,
+              "alt": "Shotcrete and concrete pumps",
+              "title": "Shotcrete and concrete pumps"
+            },
+            {
+              "href": "/losningar/torrbruk-silo",
+              "label": "Read more",
+              "html": "Dry mortar silos, bag emptiers and mixer solutions from AHLM for cement, plaster and screed on site.",
+              "text": "Dry mortar silos, bag emptiers and mixer solutions from AHLM for cement, plaster and screed on site.",
+              "image": "/assets/img/brand-photo-ahlm.webp",
+              "width": 1200,
+              "height": 800,
+              "alt": "Dry mortar silos and bag emptiers",
+              "title": "Dry mortar silos and bag emptiers"
+            },
+            {
+              "href": "/losningar/ytskydd-golv",
+              "label": "Read more",
+              "html": "Temporary floor and door-frame protection, waterproofing, plaster, adhesives, concrete repair and tools for concrete surfaces from Ram Board, Mapei, Weber, Ecobeton and Kraft Tool.",
+              "text": "Temporary floor and door-frame protection, waterproofing, plaster, adhesives, concrete repair and tools for concrete surfaces from Ram Board, Mapei, Weber, Ecobeton and Kraft Tool.",
+              "image": "/assets/img/brand-photo-ram-board.webp",
+              "width": 1200,
+              "height": 800,
+              "alt": "Surface protection, construction chemicals and concrete tools",
+              "title": "Surface protection, construction chemicals and concrete tools"
+            },
+            {
+              "href": "/losningar/berg-slant",
+              "label": "Read more",
+              "html": "Geobrugg’s systems for slope stabilisation and rockfall protection, Brutus rock splitting without vibration and drilling equipment for anchoring.",
+              "text": "Geobrugg’s systems for slope stabilisation and rockfall protection, Brutus rock splitting without vibration and drilling equipment for anchoring.",
+              "image": "/assets/img/brand-photo-geobrugg.webp",
+              "width": 1200,
+              "height": 800,
+              "alt": "Slope stabilisation and rock support",
+              "title": "Slope stabilisation and rock support"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,164 @@
+{
+  "path": "/artiklar/sprutbetong-torr-eller-vat",
+  "updated": "2026-10-31",
+  "template": "article",
+  "order": 10,
+  "published": true,
+  "date": "2026-10-31",
+  "tags": [
+    "sprutbetong",
+    "guide",
+    "reed"
+  ],
+  "image": "/assets/img/brand-photo-reed.webp",
+  "hideIn": [
+    "es",
+    "no",
+    "lt",
+    "lv",
+    "et",
+    "ru"
+  ],
+  "i18n": {
+    "sv": {
+      "title": "Sprutbetong: torrsprutning eller våtsprutning?",
+      "h1": "Sprutbetong: torrsprutning eller våtsprutning?",
+      "description": "Torr- eller våtmetoden för sprutbetong: så skiljer de sig åt, när man väljer vilken och vad REED erbjuder för båda.",
+      "summary": "Så skiljer sig torr- och våtmetoden åt, när man väljer vilken och vad REED erbjuder för båda.",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "Sprutbetong används i tunnlar, gruvor, för bergförstärkning, slänter och reparationer. Det finns två huvudmetoder, torr och våt, och valet beror på volym, åtkomst och arbetsmiljö."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Torrsprutning (gunite)"
+        },
+        {
+          "type": "text",
+          "html": "Vid torrsprutning matas en torr eller fuktad blandning med tryckluft genom slangen och vattnet tillsätts i munstycket. Metoden passar mindre volymer, avbrott i arbetet och svåråtkomliga platser. REED:s Guncrete-maskiner är gunite-maskiner för torrsprutning, och flaggskeppet SOVE ger jämn materialmatning, låg rebound och hög driftsäkerhet vid kontinuerlig produktion."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Våtsprutning (shotcrete)"
+        },
+        {
+          "type": "text",
+          "html": "Vid våtsprutning pumpas färdigblandad betong fram och acceleratorn tillsätts vid munstycket. Metoden ger hög kapacitet och passar stora volymer och längre arbeten. REED har lösningar baserade på högtryckspumpar i B- och C-serien och våtsprutad shotcrete med europeiska kornkurvor och recept."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Så väljer du"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Volym per dag och hur länge jobbet pågår",
+            "Åtkomst och avstånd till blandare och pump",
+            "Dammnivå och arbetsmiljö",
+            "Hur ofta arbetet avbryts",
+            "Vilka kornkurvor och recept som gäller i projektet"
+          ]
+        },
+        {
+          "type": "faq",
+          "title": "Vanliga frågor",
+          "items": [
+            {
+              "q": "Vilken metod har mest kapacitet?",
+              "a": "Våtsprutning används normalt för stora volymer och längre arbeten, medan torrsprutning passar mindre volymer och svåråtkomliga platser."
+            },
+            {
+              "q": "Vad är rebound?",
+              "a": "Den del av materialet som studsar tillbaka från ytan i stället för att fastna. Låg rebound sparar material."
+            },
+            {
+              "q": "Kan ni hjälpa mig att välja maskin?",
+              "a": "Ja. Berätta om projektet så rekommenderar vi maskin, och återkommer med pris och leveranstid."
+            }
+          ]
+        },
+        {
+          "type": "cta",
+          "title": "Vill du ha hjälp att välja?",
+          "text": "Berätta vad du ska göra, var och när, så rekommenderar vi rätt utrustning och återkommer med pris och leveranstid.",
+          "button": "Få offert",
+          "href": "/offert"
+        }
+      ]
+    },
+    "en": {
+      "title": "Shotcrete: dry or wet process?",
+      "h1": "Shotcrete: dry or wet process?",
+      "description": "The dry or wet process for shotcrete: how they differ, when to choose which and what REED offers for both.",
+      "summary": "How the dry and wet processes differ, when to choose which and what REED offers for both.",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "Shotcrete is used in tunnels and mines, for rock reinforcement, slopes and repairs. There are two main methods, dry and wet, and the choice depends on volume, access and working environment."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Dry process (gunite)"
+        },
+        {
+          "type": "text",
+          "html": "In the dry process a dry or damp mix is carried by compressed air through the hose and the water is added at the nozzle. It suits smaller volumes, interrupted work and hard-to-reach places. REED’s Guncrete machines are gunite machines for the dry process, and the flagship SOVE gives an even material feed, low rebound and high reliability in continuous production."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Wet process (shotcrete)"
+        },
+        {
+          "type": "text",
+          "html": "In the wet process ready-mixed concrete is pumped to the nozzle and the accelerator is added there. It gives high capacity and suits large volumes and longer jobs. REED has solutions based on high-pressure pumps in the B and C series and wet-sprayed shotcrete with European grading curves and mixes."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "How to choose"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Volume per day and how long the job lasts",
+            "Access and distance to the mixer and pump",
+            "Dust level and working environment",
+            "How often the work is interrupted",
+            "Which grading curves and mixes apply in the project"
+          ]
+        },
+        {
+          "type": "faq",
+          "title": "Frequently asked questions",
+          "items": [
+            {
+              "q": "Which method has the most capacity?",
+              "a": "The wet process is normally used for large volumes and longer jobs, while the dry process suits smaller volumes and hard-to-reach places."
+            },
+            {
+              "q": "What is rebound?",
+              "a": "The part of the material that bounces off the surface instead of sticking. Low rebound saves material."
+            },
+            {
+              "q": "Can you help me choose a machine?",
+              "a": "Yes. Tell us about the project and we will recommend a machine and come back with a price and lead time."
+            }
+          ]
+        },
+        {
+          "type": "cta",
+          "title": "Would you like help choosing?",
+          "text": "Tell us what you are going to do, where and when, and we will recommend the right equipment and come back with a price and lead time.",
+          "button": "Get a quote",
+          "href": "/offert"
+        }
+      ]
+    }
+  }
+}
