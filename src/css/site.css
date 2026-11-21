@@ -1580,8 +1580,11 @@ td.is-sized { font-weight: 700; }
 .articles__more { margin: 1rem 0 0; font-weight: 700; }
 .articles__more a { display: inline-flex; align-items: center; gap: .4rem; text-decoration: none; color: var(--text); border-bottom: 2px solid var(--primary); }
 .wtrucks { display: flex; flex-wrap: wrap; gap: .5rem .6rem; margin-top: 1rem; }
-.wtruck { position: relative; display: inline-block; width: 3.4rem; height: 1.5rem; border-radius: .75rem .75rem .3rem .3rem; background: #ece7df; overflow: hidden; box-shadow: inset 0 0 0 1.5px #d9d1c8; }
+.wtruck { position: relative; display: inline-block; width: 3.7rem; height: 1.8rem; }
+.wtruck b { position: absolute; left: 0; top: 0; width: 2.7rem; height: 1.25rem; border-radius: .7rem .7rem .5rem .5rem; background: #ece7df; overflow: hidden; box-shadow: inset 0 0 0 1.5px #d9d1c8; }
 .wtruck i { position: absolute; inset: 0 auto 0 0; background: var(--primary); }
+.wtruck::before { content: ""; position: absolute; left: 2.8rem; top: .4rem; width: .9rem; height: .85rem; border-radius: .25rem .4rem .1rem .1rem; background: #4a4446; }
+.wtruck::after { content: ""; position: absolute; left: .5rem; bottom: 0; width: .55rem; height: .55rem; border-radius: 50%; background: #231f20; box-shadow: 1.7rem 0 0 #231f20; }
 .wtrucks__n { align-self: center; font-weight: 700; font-size: .9rem; }
 .wcars { display: flex; flex-wrap: wrap; gap: .25rem; margin-top: 1rem; }
 .wcar { display: inline-block; width: 1.6rem; height: .8rem; border-radius: .4rem .4rem .15rem .15rem; background: #4a4446; position: relative; }

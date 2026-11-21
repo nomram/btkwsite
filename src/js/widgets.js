@@ -388,7 +388,7 @@
       stV.set(num(v, dec)); stO.set(num(ord, 1)); stW.set(num(tn, tn < 10 ? 1 : 0)); stT.set(num(tr, tr < 10 ? 1 : 0)); stC.set(num(tn / 1.5)); stB.set(num(Math.ceil(v * (1 + S.m / 100) * 80)));
       trucks.innerHTML = "";
       var full = Math.floor(tr), part = tr - full, show = Math.min(10, Math.ceil(tr));
-      for (var i = 0; i < show; i++) { var f = i < full ? 100 : Math.round(part * 100); trucks.appendChild(el("i", { class: "wtruck" }, [el("i", { style: "width:" + f + "%" })])); }
+      for (var i = 0; i < show; i++) { var f = i < full ? 100 : Math.round(part * 100); trucks.appendChild(el("span", { class: "wtruck" }, [el("b", {}, [el("i", { style: "width:" + f + "%" })])])); }
       if (Math.ceil(tr) > 10) trucks.appendChild(el("span", { class: "wtrucks__n", text: "+" + num(Math.ceil(tr) - 10) }));
       msg.innerHTML = "";
       if (ord <= 1) msg.appendChild(el("li", { class: "wmsg__ok", text: W.small }));
