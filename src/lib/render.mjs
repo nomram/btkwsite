@@ -1056,7 +1056,7 @@ function renderHeader(ctx, current) {
   return `<header class="site-header" data-header><div class="container site-header__inner">` +
     `<a class="logo" href="${esc(ctx.url("/"))}" aria-label="${esc(site.name)}, ${esc(ctx.ui.home || "Startsida")}"><img src="/assets/brand/logo.svg" alt="${esc(site.name)}" width="200" height="32"></a>` +
     `<nav class="nav" id="site-nav" aria-label="${esc(ctx.ui.main_nav || "Huvudmeny")}"><ul class="nav__list">${items}</ul>${renderLangRow(ctx, current)}</nav>` +
-    `<div class="header-tools"><button class="icon-btn" type="button" data-search-open aria-label="${esc(ctx.ui.search || "Sök")}">${ICON.search}</button>` +
+    `<div class="header-tools">${headerCta(ctx)}<button class="icon-btn" type="button" data-search-open aria-label="${esc(ctx.ui.search || "Sök")}">${ICON.search}</button>` +
     `${renderLangSwitch(ctx, current)}` +
     `<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span class="nav-toggle__bars" aria-hidden="true"></span><span class="sr-only">${esc(ctx.ui.menu || "Meny")}</span></button></div>` +
     `</div></header>`;
@@ -1131,6 +1131,14 @@ function renderFooter(ctx) {
 }
 
 // ---------- SEO ----------
+// Phone number and the offer button in the header (computers; phones have the phone bar)
+function headerCta(ctx) {
+  const c = (ctx.site && ctx.site.contact) || {}, p = c.phones && c.phones[0];
+  const offer = ctx.pages && ctx.pages.has("/offert") ? `<a class="hdr-offer" href="${esc(localizeHref(ctx, "/offert"))}">${esc(ctx.ui.quote_title || "Få offert")}</a>` : "";
+  const phone = p ? `<a class="hdr-phone" href="${esc(telHref(p.value))}">${ICON.phone}<span>${esc(p.value)}</span></a>` : "";
+  return phone || offer ? `<div class="hdr-cta">${phone}${offer}</div>` : "";
+}
+
 export function seoTitle(ctx, page, t) {
   const s = ctx.site;
   if (t.seoTitle) return t.seoTitle;

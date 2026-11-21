@@ -1082,8 +1082,8 @@
     // or another chart does not repeat it but a returning visitor gets the reminder again; a visitor who reaches for the slider first
     // never gets it. Adding ?hint=1 to the address shows it regardless (handy for checking it).
     var HINT_KEY = "bk_rc_hint", WEEK = 7 * 864e5, stopped = false, raf = 0, forced = /[?&]hint=1(&|$)/.test(location.search);
-    function seen() { if (forced) return false; try { var t = Number(localStorage.getItem(HINT_KEY)); return t > 1e12 && Date.now() - t < WEEK; } catch (e) { return false; } }
-    function mark() { try { localStorage.setItem(HINT_KEY, String(Date.now())); } catch (e) { /* private mode: the hint may show again, nothing breaks */ } }
+    function seen() { if (forced) return false; try { var t = Number(sessionStorage.getItem(HINT_KEY)); return t > 1e12 && Date.now() - t < WEEK; } catch (e) { return false; } }
+    function mark() { try { sessionStorage.setItem(HINT_KEY, String(Date.now())); } catch (e) { /* private mode: the hint may show again, nothing breaks */ } }
     function stopHint() { mark(); if (stopped) return; stopped = true; cancelAnimationFrame(raf); slider.classList.remove("is-demo"); }
     if (seen()) stopped = true;
     // the finger really moves the dial: out to the right and back, twice, then the slider is left where it started
@@ -1760,7 +1760,7 @@
     function suggest(country) {
       var want = (sg.regions || {})[country];
       if (!want || document.querySelector(".lsug")) return;
-      try { if (localStorage.getItem(KEY)) return; } catch (e) { /* no storage: the prompt simply shows every time */ }
+      try { if (sessionStorage.getItem(KEY)) return; } catch (e) { /* no storage: the prompt simply shows every time */ }
       var cur = (document.documentElement.lang || "").slice(0, 2);
       if (want.indexOf(cur) >= 0) return; // already reading one of the offered languages
       var links = [];
@@ -1781,7 +1781,7 @@
           return '<li><a href="' + esc(l.href) + '" hreflang="' + esc(l.code) + '" lang="' + esc(l.code) + '" data-lsug="' + esc(l.code) + '">' +
             (l.flag ? '<img src="' + esc(l.flag) + '" alt="" width="22" height="15">' : "") + "<span>" + esc((sg.read || {})[l.code] || l.code) + "</span></a></li>";
         }).join("") + "</ul>";
-      function remember() { try { localStorage.setItem(KEY, "1"); } catch (e) { /* ignore */ } }
+      function remember() { try { sessionStorage.setItem(KEY, "1"); } catch (e) { /* ignore */ } }
       box.addEventListener("click", function (e) {
         if (e.target.closest(".lsug__x")) { remember(); box.classList.remove("is-in"); setTimeout(function () { box.remove(); }, 300); }
         else if (e.target.closest("[data-lsug]")) remember();
