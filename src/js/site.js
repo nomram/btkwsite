@@ -1412,6 +1412,58 @@
     });
   })();
 
+  // ---------- product pages: the slim quote bar slides up after the first screen and steps aside for the closing quote band ----------
+  [].forEach.call(document.querySelectorAll("[data-stickycta]"), function (bar) {
+    var band = document.querySelector(".cta"), end = false;
+    function upd() { bar.classList.toggle("is-on", window.scrollY > 520 && !end); }
+    window.addEventListener("scroll", upd, { passive: true });
+    if (band && "IntersectionObserver" in window) new IntersectionObserver(function (es) { end = es[0].isIntersecting; upd(); }).observe(band);
+    upd();
+  });
+
+  // ---------- articles: search and tag filter (the chips are real links to the tag pages; here they become an instant filter) ----------
+  [].forEach.call(document.querySelectorAll("[data-articles]"), function (box) {
+    var inp = box.querySelector(".asearch__input"), clr = box.querySelector(".asearch__clear"), cnt = box.querySelector(".articles__count"), none = box.querySelector(".articles__none");
+    var chips = [].slice.call(box.querySelectorAll(".tagchip")), cards = [].slice.call(box.querySelectorAll(".acard"));
+    var one = box.getAttribute("data-one") || "{n}", many = box.getAttribute("data-many") || "{n}", on = {}, q = "";
+    function norm(s) { return String(s).toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/æ/g, "ae").replace(/ø/g, "o"); }
+    var t0 = box.getAttribute("data-tag"); if (t0) on[t0] = true;
+    function readHash() {
+      var m = /[#&]tagg=([^&]*)/.exec(location.hash), s = /[#&]q=([^&]*)/.exec(location.hash);
+      if (m) { on = {}; decodeURIComponent(m[1]).split(",").forEach(function (t) { if (t) on[t] = true; }); }
+      if (s) { try { q = decodeURIComponent(s[1].replace(/\+/g, " ")); } catch (e) { q = ""; } inp.value = q; }
+    }
+    function writeHash() {
+      var tags = Object.keys(on).filter(function (k) { return on[k]; }), h = [];
+      if (tags.length) h.push("tagg=" + tags.map(encodeURIComponent).join(","));
+      if (q.trim()) h.push("q=" + encodeURIComponent(q.trim()));
+      try { history.replaceState(null, "", location.pathname + location.search + (h.length ? "#" + h.join("&") : "")); } catch (e) { /* ignore */ }
+    }
+    function apply() {
+      var words = norm(q).split(/\s+/).filter(Boolean), tags = Object.keys(on).filter(function (k) { return on[k]; }), n = 0;
+      cards.forEach(function (c) {
+        var ct = " " + c.getAttribute("data-tags") + " ", dq = c.getAttribute("data-q") || "";
+        var ok = tags.every(function (t) { return ct.indexOf(" " + t + " ") >= 0; }) && words.every(function (w) { return dq.indexOf(w) >= 0; });
+        c.hidden = !ok; if (ok) n++;
+      });
+      chips.forEach(function (ch) { var t = ch.getAttribute("data-tag"), a = t ? !!on[t] : tags.length === 0; ch.classList.toggle("is-on", a); ch.setAttribute("aria-pressed", a ? "true" : "false"); });
+      cnt.textContent = (n === 1 ? one : many).replace("{n}", n); none.hidden = n > 0; clr.hidden = !inp.value;
+    }
+    chips.forEach(function (ch) {
+      ch.addEventListener("click", function (e) {
+        if (e.metaKey || e.ctrlKey || e.shiftKey || e.button > 0) return;
+        e.preventDefault();
+        var t = ch.getAttribute("data-tag");
+        if (!t) on = {}; else on[t] = !on[t];
+        apply(); writeHash();
+      });
+    });
+    inp.addEventListener("input", function () { q = inp.value; apply(); writeHash(); });
+    inp.addEventListener("keydown", function (e) { if (e.key === "Escape" && inp.value) { inp.value = ""; q = ""; apply(); writeHash(); e.preventDefault(); } });
+    clr.addEventListener("click", function () { inp.value = ""; q = ""; apply(); writeHash(); inp.focus(); });
+    readHash(); apply();
+  });
+
   // ---------- map of Europe (our own drawing, an SVG in the page): drag to move, + / - and double click to zoom, click a pin for its card ----------
   [].forEach.call(document.querySelectorAll(".map[data-map]"), function (box) {
     var cfg; try { cfg = JSON.parse(box.getAttribute("data-map")); } catch (e) { return; }

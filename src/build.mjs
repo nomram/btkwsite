@@ -327,6 +327,7 @@ function makeCtx(lang) {
     docInfo: (href) => docInfoMap.get(href) || null,
     incomingRelated: (p) => incomingRelated.get(p) || [],
     mapGeo: { shapes: mapShapes(), project: mapProject },
+    tags: exists(path.join(ROOT, "content/tags.json")) ? readJson(path.join(ROOT, "content/tags.json")) : {},
     ytThumb: (id) => (ytThumbs.has(id) ? `/assets/yt/${id}.webp` : null),
     searchIndexUrl: lang === defaultLang ? "/search-index.json" : `/${lang}/search-index.json`
   };

@@ -265,6 +265,73 @@ function renderLogo150(ctx, b) {
     `<span class="logo150__shine" aria-hidden="true"></span></span></figure>`;
 }
 
+// ---------- articles, tags and FAQ ----------
+// Articles are pages with template "article": page.date (YYYY-MM-DD), page.tags (slugs, names in content/tags.json), page.image, and in every language
+// title / h1 / description / summary / blocks. The list (block "articles") shows them with a search field and tag chips; the chips are real links to tag
+// pages (/artiklar/tagg/<tag>) and site.js turns them into an instant filter. Block fields: tag (only this tag), compact (no controls), limit, title, related.
+const articleDate = (ctx, d) => { try { return new Intl.DateTimeFormat(htmlLang(ctx, ctx.lang) || ctx.lang, { day: "numeric", month: "long", year: "numeric" }).format(new Date(d)); } catch { return String(d || ""); } };
+const tagName = (ctx, slug) => { const x = ctx.tags && ctx.tags[slug]; return (x && (x[ctx.lang] || x[ctx.defaultLang] || x.en)) || slug; };
+const tagUrl = (ctx, slug) => localizeHref(ctx, "/artiklar/tagg/" + slug);
+const textOf = (blocks) => flatBlocks(blocks || []).map((b) => [b.text, b.html, b.q, b.a, ...(Array.isArray(b.items) ? b.items.map((i) => (typeof i === "string" ? i : i && (i.q || i.a || i.html || i.text) || "")) : [])].filter(Boolean).join(" ")).join(" ").replace(/<[^>]+>/g, " ");
+const readMinutes = (blocks) => Math.max(1, Math.round(textOf(blocks).split(/\s+/).filter(Boolean).length / 200));
+const foldText = (s) => String(s || "").toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/æ/g, "ae").replace(/ø/g, "o");
+function articleItems(ctx) {
+  const out = [];
+  for (const [p, pg] of ctx.pages) {
+    if (pg.template !== "article" || pg.published === false || !shown(ctx, p)) continue;
+    const t = ctx.tr(p, ctx.lang);
+    if (!t) continue;
+    out.push({ path: p, page: pg, t, tags: Array.isArray(pg.tags) ? pg.tags : [], date: pg.date || "", min: readMinutes(t.blocks) });
+  }
+  return out.sort((a, b) => String(b.date).localeCompare(String(a.date)));
+}
+function articleCard(ctx, a, hidden) {
+  const u = ctx.ui, img = a.page.image;
+  const names = a.tags.map((s) => tagName(ctx, s));
+  return `<li class="acard" data-tags="${esc(a.tags.join(" "))}" data-q="${esc(foldText([a.t.h1 || a.t.title, a.t.summary || a.t.description, names.join(" ")].join(" ")))}"${hidden ? " hidden" : ""}>` +
+    `<a class="acard__link" href="${esc(ctx.url(a.path))}">` +
+    (img ? `<span class="acard__media">${imgTag(ctx, img, "", { sizes: "(min-width: 900px) 360px, (min-width: 560px) 45vw, 100vw" })}</span>` : "") +
+    `<span class="acard__body"><span class="acard__tags">${names.slice(0, 3).map((n) => `<span class="acard__tag">${esc(n)}</span>`).join("")}</span>` +
+    `<h3 class="acard__title">${esc(a.t.h1 || a.t.title)}</h3><p class="acard__sum">${esc(a.t.summary || a.t.description || "")}</p>` +
+    `<span class="acard__meta">${esc(articleDate(ctx, a.date))} · ${esc(fmtTpl(u.article_read || "{n} min läsning", { n: a.min }))}</span></span></a></li>`;
+}
+function renderArticles(ctx, b, page) {
+  let items = articleItems(ctx);
+  if (!items.length) return "";
+  const u = ctx.ui;
+  if (b.related && page) {
+    items = items.filter((a) => a.path !== page.path).map((a) => ({ a, n: a.tags.filter((x) => (page.tags || []).includes(x)).length })).filter((x) => x.n > 0).sort((x, y) => y.n - x.n || String(y.a.date).localeCompare(String(x.a.date))).map((x) => x.a);
+  } else if (b.tag && b.compact) items = items.filter((a) => a.tags.includes(b.tag));
+  if (b.limit) items = items.slice(0, Number(b.limit));
+  if (!items.length) return "";
+  const title = b.title ? `<h2 class="articles__h">${esc(b.title)}</h2>` : "";
+  if (b.compact || b.related) return `<div class="container articles articles--compact">${title}<ul class="alist">${items.map((a) => articleCard(ctx, a, false)).join("")}</ul></div>`;
+  const counts = {};
+  for (const a of items) for (const s of a.tags) counts[s] = (counts[s] || 0) + 1;
+  const slugs = Object.keys(counts).sort((x, y) => counts[y] - counts[x] || tagName(ctx, x).localeCompare(tagName(ctx, y)));
+  const active = b.tag || "";
+  const chips = `<li><a class="tagchip${active ? "" : " is-on"}" href="${esc(localizeHref(ctx, "/artiklar"))}" data-tag="" aria-pressed="${active ? "false" : "true"}">${esc(u.articles_all || "Alla")}<em>${items.length}</em></a></li>` +
+    slugs.map((s) => `<li><a class="tagchip${s === active ? " is-on" : ""}" href="${esc(tagUrl(ctx, s))}" data-tag="${esc(s)}" aria-pressed="${s === active}">${esc(tagName(ctx, s))}<em>${counts[s]}</em></a></li>`).join("");
+  const n0 = active ? items.filter((a) => a.tags.includes(active)).length : items.length;
+  return `<div class="container articles" data-articles data-tag="${esc(active)}" data-one="${esc(u.articles_one || "{n} artikel")}" data-many="${esc(u.articles_many || "{n} artiklar")}">` + title +
+    `<div class="articles__bar"><label class="asearch">${ICON.search}<input class="asearch__input" type="search" autocomplete="off" spellcheck="false" enterkeyhint="search" placeholder="${esc(u.articles_search || "Sök artiklar eller taggar")}" aria-label="${esc(u.articles_search || "Sök artiklar eller taggar")}"><button class="asearch__clear" type="button" hidden aria-label="${esc(u.search_clear || "Rensa")}"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button></label>` +
+    `<p class="articles__count" role="status" aria-live="polite">${esc(fmtTpl(n0 === 1 ? u.articles_one || "{n} artikel" : u.articles_many || "{n} artiklar", { n: n0 }))}</p></div>` +
+    `<ul class="tagbar" aria-label="${esc(u.articles_tags || "Taggar")}">${chips}</ul>` +
+    `<ul class="alist">${items.map((a) => articleCard(ctx, a, active && !a.tags.includes(active))).join("")}</ul>` +
+    `<p class="articles__none" hidden>${esc(u.articles_none || "Inga artiklar matchar.")}</p></div>`;
+}
+// date, reading time and tags under the title of an article
+function articleMeta(ctx, page, t) {
+  const u = ctx.ui, min = readMinutes(t.blocks);
+  const tags = (page.tags || []).map((s) => `<a class="tagchip tagchip--s" href="${esc(tagUrl(ctx, s))}">${esc(tagName(ctx, s))}</a>`).join("");
+  return `<div class="container article__meta"><span>${esc(articleDate(ctx, page.date))}</span><span>${esc(fmtTpl(u.article_read || "{n} min läsning", { n: min }))}</span>${tags ? `<span class="article__tags">${tags}</span>` : ""}</div>`;
+}
+function renderFaq(ctx, b) {
+  const items = (b.items || []).filter((i) => i && i.q && i.a);
+  if (!items.length) return "";
+  return `<section class="faq">${b.title ? `<h2>${esc(b.title)}</h2>` : ""}<div class="faq__list">${items.map((i) => `<details class="faq__item"><summary>${esc(i.q)}</summary><div class="faq__a"><p>${ctx.edit ? i.a : localizeHtml(ctx, i.a)}</p></div></details>`).join("")}</div></section>`;
+}
+
 // A small map of Europe drawn by ourselves (src/data/europe-map.mjs): country shapes, the biggest cities and the pins of the block. No map service is
 // used. The page holds the whole picture as one SVG (it also works without scripts); site.js adds moving, zooming and the card that opens on a pin.
 // Block: center [lat, lon], span (how many degrees of longitude are in view at the start, default 28), zoomIn / zoomOut (steps from there, default 2 / 1),
@@ -816,6 +883,8 @@ function renderBlockInner(ctx, b) {
     case "cards": return renderCards(ctx, b);
     case "video": return renderVideo(ctx, b);
     case "map": return renderMap(ctx, b);
+    case "faq": return renderFaq(ctx, b);
+    case "articles": return renderArticles(ctx, b, ctx._page);
     case "table": return renderTable(ctx, b);
     case "datasheet": return renderDatasheet(ctx, b);
     case "contact": return renderContact(ctx);
@@ -1223,6 +1292,16 @@ function jsonLd(ctx, page, t, canonical, crumbs) {
       mainEntityOfPage: { "@id": canonical + "#webpage" }
     });
   }
+  if (page.template === "article") {
+    graph.push({
+      "@type": "Article", "@id": canonical + "#article", headline: t.h1 || t.title, description: pageDescription(ctx, page, t),
+      ...(page.date ? { datePublished: page.date, dateModified: page.updated || page.date } : {}), inLanguage: htmlLang(ctx, ctx.lang),
+      author: { "@id": ctx.abs("/") + "#org" }, publisher: { "@id": ctx.abs("/") + "#org" }, image: ogImage(ctx, page, t),
+      ...(Array.isArray(page.tags) && page.tags.length ? { keywords: page.tags.map((x) => tagName(ctx, x)).join(", ") } : {}), mainEntityOfPage: { "@id": canonical + "#webpage" }
+    });
+  }
+  const faqs = flatBlocks(t.blocks || []).filter((b) => b.type === "faq").flatMap((b) => b.items || []).filter((i) => i && i.q && i.a);
+  if (faqs.length) graph.push({ "@type": "FAQPage", "@id": canonical + "#faq", mainEntity: faqs.map((i) => ({ "@type": "Question", name: i.q, acceptedAnswer: { "@type": "Answer", text: String(i.a).replace(/<[^>]+>/g, "") } })) });
   return JSON.stringify({ "@context": "https://schema.org", "@graph": graph });
 }
 
@@ -1255,6 +1334,17 @@ function composeBody(ctx, page, t) {
     }
   }
   return { crumbLogo, splitHtml, rest: blocks };
+}
+
+// A slim bar that slides up on computers once the visitor has scrolled into a product page: "Get a quote on <model>" and the phone number.
+// It steps aside when the closing quote band comes into view (site.js).
+function productStickyCta(ctx, page, t) {
+  if (ctx.edit || page.template !== "product" || ctx.site.productQuoteCta === false || !ctx.pages.has("/offert")) return "";
+  const u = ctx.ui, c = (ctx.site && ctx.site.contact) || {}, p = c.phones && c.phones[0];
+  let name = t.h1 || t.title;
+  if (t.title && t.title !== name && t.title.length <= 12 && !name.toLowerCase().includes(t.title.toLowerCase())) name = `${t.title}, ${name}`;
+  const href = localizeHref(ctx, "/offert") + "?produkt=" + encodeURIComponent(name);
+  return `<div class="stickycta" data-stickycta aria-label="${esc(name)}"><strong class="stickycta__name">${esc(name)}</strong><a class="btn" href="${esc(href)}">${esc(u.quote_title || "Få offert")}${ICON.arrow}</a>${p ? `<a class="stickycta__tel" href="${esc(telHref(p.value))}">${ICON.phone}<span>${esc(p.value)}</span></a>` : ""}</div>`;
 }
 
 // Closing "request a quote" band on product and brand pages (not in the editor; skipped when the page has its own cta/quote block;
@@ -1295,6 +1385,7 @@ const personOf = (ctx) => {
 const fmtTpl = (s, o) => String(s).replace(/\{(\w+)\}/g, (m, k) => (o[k] != null ? o[k] : m));
 
 export function renderMain(ctx, page, t) {
+  ctx._page = page;
   const { crumbLogo, splitHtml, rest } = composeBody(ctx, page, t);
   const crumbs = renderBreadcrumbs(ctx, page.path);
   const logo = crumbLogo
@@ -1334,7 +1425,9 @@ export function renderMain(ctx, page, t) {
   const crumbRow = crumbs || logo || origin || ctx._pfilter ? `<div class="container crumbs${page.template === "about" && !heroImg ? " crumbs--center" : ""}">${crumbs}${ctx._psearch || ""}${ctx._pfilter || ""}${logo && origin ? `<div class="crumbs__brand">${logo}${origin}</div>` : `${logo}${origin}`}</div>` : "";
   const autoRel = !ownRel.length && ctx._relExtra.length ? `<div class="container">${renderRelated(ctx, { type: "related", items: [] })}</div>` : "";
   ctx._relExtra = [];
-  return `${hero}${crumbRow}<div class="page-body page--${esc(page.template || "page")}"${isHome ? ' id="start"' : ""}>${bodyHtml}${autoRel}${productQuoteCta(ctx, page, t, title)}</div>`;
+  const artMeta = !ctx.edit && page.template === "article" ? articleMeta(ctx, page, t) : "";
+  const artRelated = !ctx.edit && page.template === "article" ? renderArticles(ctx, { related: true, limit: 3, title: ctx.ui.article_related || "Läs vidare" }, page) : "";
+  return `${hero}${crumbRow}<div class="page-body page--${esc(page.template || "page")}"${isHome ? ' id="start"' : ""}>${artMeta}${bodyHtml}${artRelated}${autoRel}${productQuoteCta(ctx, page, t, title)}</div>${productStickyCta(ctx, page, t)}`;
 }
 
 export function renderDocument(ctx, page, t, opts = {}) {
