@@ -29,7 +29,8 @@
               "value": "Mobil verkstad",
               "label": "service på plats i Sverige och Norge"
             }
-          ]
+          ],
+          "hero": true
         },
         {
           "type": "heading",
@@ -136,7 +137,8 @@
               "text": "Leverans från våra fyra lager i Sverige och Norge, och service på plats med vår mobila verkstad."
             }
           ],
-          "tag": "redesign"
+          "tag": "redesign",
+          "hidden": true
         },
         {
           "type": "articles",
@@ -146,13 +148,15 @@
           "title": "Prova själv: räknare och simuleringar",
           "more": "/artiklar/tagg/verktyg",
           "moreLabel": "Alla räknare och simuleringar",
-          "kicker": "Kunskap"
+          "kicker": "Kunskap",
+          "style": "list"
         },
         {
           "type": "heading",
           "level": 2,
           "text": "Tillverkare vi representerar",
-          "kicker": "Sortiment"
+          "kicker": "Sortiment",
+          "hidden": true
         },
         {
           "type": "cards",
@@ -308,7 +312,10 @@
               "alt": "Jean Lutz logotyp"
             }
           ],
-          "style": "logos"
+          "style": "marquee",
+          "title": "Tillverkare vi representerar",
+          "more": "/produkter",
+          "moreLabel": "Alla produkter"
         },
         {
           "type": "chips",
@@ -329,7 +336,8 @@
             "vajersågar",
             "snigeldynamit",
             "släntstabilisering"
-          ]
+          ],
+          "hidden": true
         },
         {
           "type": "cta",
@@ -374,7 +382,8 @@
               "value": "Mobile workshop",
               "label": "on-site service in Sweden and Norway"
             }
-          ]
+          ],
+          "hero": true
         },
         {
           "type": "heading",
@@ -481,7 +490,8 @@
               "text": "Delivery from our four warehouses in Sweden and Norway, and on-site service with our mobile workshop."
             }
           ],
-          "tag": "redesign"
+          "tag": "redesign",
+          "hidden": true
         },
         {
           "type": "articles",
@@ -491,13 +501,15 @@
           "title": "Try it yourself: calculators and simulations",
           "more": "/artiklar/tagg/verktyg",
           "moreLabel": "All calculators and simulations",
-          "kicker": "Knowledge"
+          "kicker": "Knowledge",
+          "style": "list"
         },
         {
           "type": "heading",
           "level": 2,
           "text": "Manufacturers we represent",
-          "kicker": "Range"
+          "kicker": "Range",
+          "hidden": true
         },
         {
           "type": "cards",
@@ -653,7 +665,10 @@
               "alt": "Jean Lutz logo"
             }
           ],
-          "style": "logos"
+          "style": "marquee",
+          "title": "Manufacturers we represent",
+          "more": "/produkter",
+          "moreLabel": "All products"
         },
         {
           "type": "chips",
@@ -674,7 +689,8 @@
             "wire saws",
             "non-explosive rock splitting",
             "slope stabilisation"
-          ]
+          ],
+          "hidden": true
         },
         {
           "type": "cta",

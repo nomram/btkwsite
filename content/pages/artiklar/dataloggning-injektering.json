@@ -1,0 +1,195 @@
+{
+  "path": "/artiklar/dataloggning-injektering",
+  "updated": "2026-11-23",
+  "template": "article",
+  "order": 10,
+  "published": true,
+  "date": "2026-11-23",
+  "tags": [
+    "injektering",
+    "jean-lutz",
+    "guide",
+    "verktyg"
+  ],
+  "image": "/assets/img/dataloggning.webp",
+  "hideIn": [
+    "es",
+    "no",
+    "lt",
+    "lv",
+    "et",
+    "ru"
+  ],
+  "i18n": {
+    "sv": {
+      "title": "Dataloggning vid injektering: tryck, flöde och stoppkriterier",
+      "h1": "Dataloggning vid injektering: tryck, flöde och stoppkriterier",
+      "seoTitle": "Dataloggning vid injektering: tryck och flöde | Betongakuten",
+      "description": "Varför loggar man tryck, flöde och volym vid injektering, och vad är ett stoppkriterium? Förklarat enkelt, med en simulering av en injekteringslogg.",
+      "summary": "Det man inte mäter kan man inte visa. Så fungerar loggning av tryck, flöde och volym, och en simulering där du ställer in stoppkriterierna.",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "Injektering sker under jord, i sprickor som ingen kan se. Därför är mätningarna det enda sättet att veta vad som faktiskt har hänt i varje hål. En datalogger registrerar tryck, flöde och volym hela tiden, så att arbetet kan styras medan det pågår och visas i efterhand."
+        },
+        {
+          "type": "widget",
+          "kind": "logg",
+          "title": "Simulera en injekteringslogg",
+          "intro": "Välj berg, flöde och stoppkriterier och se hur tryck och flöde utvecklas i hålet.",
+          "cta": false
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Vad loggas?"
+        },
+        {
+          "type": "list",
+          "items": [
+            "<strong>Tryck:</strong> vilket tryck bruket pumpas in med.",
+            "<strong>Flöde:</strong> hur många liter per minut som går in.",
+            "<strong>Volym:</strong> hur mycket bruk hålet har tagit totalt.",
+            "<strong>Tid och hålnummer:</strong> så att varje hål går att följa upp."
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Stoppkriterier: när är hålet klart?"
+        },
+        {
+          "type": "text",
+          "html": "Innan arbetet börjar bestäms när injekteringen av ett hål ska avslutas. De vanligaste kriterierna är att ett visst tryck har nåtts och flödet sjunkit, eller att en största volym har pumpats in. I ett tätt berg nås trycket snabbt. I ett berg med öppna sprickor kan volymen nå sin gräns först, och då kan det behövas ett tjockare bruk eller fler hål."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Varför loggning lönar sig"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Arbetet kan styras medan det pågår, till exempel om ett hål tar ovanligt mycket bruk.",
+            "Beställaren får dokumentation på att arbetet utförts enligt specifikationen.",
+            "Erfarenheter från ett hål kan användas i nästa, och i nästa projekt."
+          ]
+        },
+        {
+          "type": "text",
+          "html": "Vi levererar dataloggare, displayer och givare från <a href=\"/produkter/jean-lutz\">Jean Lutz</a>, bland annat <a href=\"/produkter/haeny/manuella-pumpar/dataloggare-dpv\">DPV-H</a> som kan monteras på Hänys anläggningar. Hur långt bruket når i sprickan kan du prova i <a href=\"/artiklar/injekteringens-rackvidd\">hur långt når injekteringen</a>."
+        },
+        {
+          "type": "faq",
+          "title": "Vanliga frågor",
+          "items": [
+            {
+              "q": "Vad är ett stoppkriterium vid injektering?",
+              "a": "Ett förutbestämt villkor för när injekteringen av ett hål avslutas, oftast ett visst tryck eller en största volym."
+            },
+            {
+              "q": "Varför sjunker flödet när trycket nås?",
+              "a": "När sprickorna fylls ökar motståndet. För att inte överskrida stopptrycket minskas flödet, tills hålet i praktiken är tätt."
+            },
+            {
+              "q": "Kan man logga med en befintlig pump?",
+              "a": "Ofta ja. Givare för tryck och flöde kan monteras på slangen och kopplas till en logger. Kontakta oss så hjälper vi dig."
+            }
+          ]
+        },
+        {
+          "type": "cta",
+          "title": "Vill du börja logga?",
+          "text": "Berätta vilken utrustning du har och vad som ska dokumenteras, så föreslår vi rätt logger och givare och återkommer med pris och leveranstid.",
+          "button": "Få offert",
+          "href": "/offert"
+        }
+      ]
+    },
+    "en": {
+      "title": "Data logging during grouting: pressure, flow and stop criteria",
+      "h1": "Data logging during grouting: pressure, flow and stop criteria",
+      "seoTitle": "Data logging during grouting: pressure and flow | Betongakuten",
+      "description": "Why do you log pressure, flow and volume during grouting, and what is a stop criterion? Explained simply, with a simulation of a grouting log.",
+      "summary": "What you do not measure you cannot show. How logging of pressure, flow and volume works, and a simulation where you set the stop criteria.",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "Grouting happens underground, in fractures nobody can see. Measurements are therefore the only way to know what actually happened in each hole. A data logger records pressure, flow and volume continuously, so the work can be controlled while it is going on and shown afterwards."
+        },
+        {
+          "type": "widget",
+          "kind": "logg",
+          "title": "Simulate a grouting log",
+          "intro": "Choose the rock, flow and stop criteria and see how pressure and flow develop in the hole.",
+          "cta": false
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "What is logged?"
+        },
+        {
+          "type": "list",
+          "items": [
+            "<strong>Pressure:</strong> the pressure the grout is pumped in at.",
+            "<strong>Flow:</strong> how many litres per minute go in.",
+            "<strong>Volume:</strong> how much grout the hole has taken in total.",
+            "<strong>Time and hole number:</strong> so every hole can be followed up."
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Stop criteria: when is the hole done?"
+        },
+        {
+          "type": "text",
+          "html": "Before the work starts, it is decided when grouting of a hole should end. The most common criteria are that a certain pressure has been reached and the flow has dropped, or that a maximum volume has been pumped in. In tight rock the pressure is reached quickly. In rock with open fractures the volume can reach its limit first, and then a thicker grout or more holes may be needed."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Why logging pays off"
+        },
+        {
+          "type": "list",
+          "items": [
+            "The work can be steered while it is going on, for example if a hole takes unusually much grout.",
+            "The client gets documentation that the work was done to the specification.",
+            "Experience from one hole can be used in the next, and in the next project."
+          ]
+        },
+        {
+          "type": "text",
+          "html": "We supply data loggers, displays and sensors from <a href=\"/produkter/jean-lutz\">Jean Lutz</a>, including the <a href=\"/produkter/haeny/manuella-pumpar/dataloggare-dpv\">DPV-H</a> that can be mounted on Häny plants. How far the grout reaches in the fracture you can try in <a href=\"/artiklar/injekteringens-rackvidd\">how far does grouting reach</a>."
+        },
+        {
+          "type": "faq",
+          "title": "Frequently asked questions",
+          "items": [
+            {
+              "q": "What is a stop criterion in grouting?",
+              "a": "A predetermined condition for when grouting of a hole ends, usually a certain pressure or a maximum volume."
+            },
+            {
+              "q": "Why does the flow drop when the pressure is reached?",
+              "a": "As the fractures fill, the resistance increases. To avoid exceeding the stop pressure the flow is reduced, until the hole is in practice tight."
+            },
+            {
+              "q": "Can you log with an existing pump?",
+              "a": "Often yes. Pressure and flow sensors can be fitted on the hose and connected to a logger. Contact us and we will help you."
+            }
+          ]
+        },
+        {
+          "type": "cta",
+          "title": "Want to start logging?",
+          "text": "Tell us what equipment you have and what needs to be documented, and we will suggest the right logger and sensors and come back with a price and lead time.",
+          "button": "Get a quote",
+          "href": "/offert"
+        }
+      ]
+    }
+  }
+}

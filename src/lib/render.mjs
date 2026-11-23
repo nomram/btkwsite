@@ -215,6 +215,13 @@ function renderLogoWall(ctx, b) {
   const items = (b.items || []).filter((it) => shown(ctx, it.href));
   return `<ul class="logowall">${items.map((it) => { const title = it.title || titleOf(ctx, it.href); return `<li><a class="logowall__a" href="${esc(localizeHref(ctx, it.href))}"><span class="logowall__img">${it.image ? imgTag(ctx, it.image, it.alt || title, { sizes: "180px" }) : ""}</span><span class="logowall__n">${esc(title)}</span></a></li>`; }).join("")}</ul>`;
 }
+// A quiet row of logos that drifts slowly (CSS); the list is repeated once so the loop is seamless, the copy is hidden from assistive tech
+function renderLogoRow(ctx, b) {
+  const items = (b.items || []).filter((it) => shown(ctx, it.href));
+  const li = (copy) => items.map((it) => { const title = it.title || titleOf(ctx, it.href); return `<li${copy ? ' aria-hidden="true"' : ""}><a href="${esc(localizeHref(ctx, it.href))}"${copy ? ' tabindex="-1"' : ""} title="${esc(title)}">${it.image ? imgTag(ctx, it.image, copy ? "" : it.alt || title, { sizes: "160px" }) : esc(title)}</a></li>`; }).join("");
+  const head = b.title ? `<div class="logorow__head"><p class="sec-kicker">${esc(b.title)}</p>${b.more ? `<a class="sec-more" href="${esc(localizeHref(ctx, b.more))}">${esc(b.moreLabel || ctx.ui.read_more || "Visa alla")}${ICON.arrow}</a>` : ""}</div>` : "";
+  return `<section class="logorow">${head}<div class="logorow__vp"><ul class="logorow__track">${li(false)}${li(true)}</ul></div></section>`;
+}
 // "How it works": numbered steps on a dark band
 function renderSteps(ctx, b) {
   return `<section class="container steps">${b.title ? `<h2 class="steps__h">${esc(b.title)}</h2>` : ""}${b.intro ? `<p class="steps__intro">${esc(b.intro)}</p>` : ""}<ol class="steps__list">${(b.items || []).map((it, i) => `<li class="steps__i"><span class="steps__n" aria-hidden="true">${String(i + 1).padStart(2, "0")}</span><h3 class="steps__t">${esc(it.title)}</h3><p class="steps__d">${esc(it.text)}</p></li>`).join("")}</ol>${b.button && b.href ? `<p class="steps__cta"><a class="btn" href="${esc(localizeHref(ctx, b.href))}">${esc(b.button)}${ICON.arrow}</a></p>` : ""}</section>`;
@@ -231,6 +238,7 @@ function compactCard(ctx, it, idx, title, href) {
 }
 function renderCards(ctx, b) {
   if (b.style === "logos" && !ctx.edit) return renderLogoWall(ctx, b);
+  if (b.style === "marquee" && !ctx.edit) return renderLogoRow(ctx, b);
   const photo = b.style === "photo" && !ctx.edit;
   const square = cardsAreSquare(ctx, b);
   const shownItems = (b.items || []).map((it, idx) => [it, idx]).filter(([it]) => shown(ctx, it.href));
@@ -317,6 +325,7 @@ function renderArticles(ctx, b, page) {
   if (!items.length) return "";
   const more = b.more && b.compact ? `<a class="sec-more" href="${esc(localizeHref(ctx, b.more))}">${esc(b.moreLabel || u.articles_all_link || "Visa alla")}${ICON.arrow}</a>` : "";
   const title = b.title ? `${b.kicker ? `<p class="sec-kicker">${esc(b.kicker)}</p>` : ""}<div class="sec-row"><h2 class="articles__h">${esc(b.title)}</h2>${more}</div>` : "";
+  if (b.style === "list" && b.compact) return `<div class="container articles articles--list">${title}<ul class="tlist">${items.map((a) => `<li><a class="tlist__a" href="${esc(localizeHref(ctx, a.path))}"><span class="tlist__tag">${esc(tagName(ctx, a.tags[0] || ""))}</span><strong class="tlist__t">${esc(a.t.h1 || a.t.title)}</strong><span class="tlist__s">${esc(a.t.summary || a.t.description || "")}</span></a></li>`).join("")}</ul></div>`;
   if (b.compact || b.related) return `<div class="container articles articles--compact">${title}<ul class="alist">${items.map((a) => articleCard(ctx, a, false)).join("")}</ul></div>`;
   const counts = {};
   for (const a of items) for (const s of a.tags) counts[s] = (counts[s] || 0) + 1;
@@ -1430,12 +1439,18 @@ export function renderMain(ctx, page, t) {
   const heroImg = page.hero && page.hero.image ? page.hero.image : null;
   const title = t.h1 || t.title;
   const isHome = page.path === "/";
+  // on the home page a facts block marked "hero" is shown as a slim line inside the banner
+  let heroFacts = "";
+  if (isHome && !ctx.edit) {
+    const fi = rest.findIndex((b) => b && b.type === "facts" && b.hero);
+    if (fi >= 0) { const fb = rest.splice(fi, 1)[0]; heroFacts = `<ul class="hero__facts">${(fb.items || []).map((i) => `<li><strong>${esc(i.value)}</strong><span>${esc(i.label)}</span></li>`).join("")}</ul>`; }
+  }
   const anc = ancestorsOf(page.path).filter((p) => ctx.pages.has(p) && shown(ctx, p));
   const eyebrow = !isHome && anc.length ? `<p class="hero__eyebrow">${anc.slice(-2).map((p) => esc(navTitleOf(ctx, p))).join(" · ")}</p>` : "";
   const ctas = (t.ctas || []).map((c, i) => `<a class="btn${i ? " btn--ghost-light" : ""}" href="${esc(localizeHref(ctx, c.href))}">${esc(c.text)}${i ? "" : ICON.arrow}</a>`).join("");
   const pageFld = (k) => (ctx.edit ? ` data-bk-page="${k}" data-bk-kind="plain"` : "");
   const headHtml = `${eyebrow}${t.display && !ctx.edit ? `<h1 class="hero__eyebrow hero__kicker">${esc(title)}</h1><p class="hero__title">${esc(t.display)}</p>` : `<h1 class="hero__title"${pageFld("h1")}>${esc(title)}</h1>`}${t.lead || (ctx.edit && heroImg) ? `<p class="hero__lead"${pageFld("lead")}>${esc(t.lead || "")}</p>` : ""}${ctas ? `<div class="hero__ctas">${ctas}</div>` : ""}`;
-  const heroInner = `<div class="container hero__inner">${headHtml}</div>`;
+  const heroInner = `<div class="container hero__inner">${headHtml}${heroFacts}</div>`;
   // Split banner (the products page): two pictures meet in a diagonal; site.js greys out the side that is not selected in the filter
   const split = page.hero && page.hero.split && page.hero.split.a && page.hero.split.b ? page.hero.split : null;
   // a language that lists only machines (or only material) gets that picture alone: no diagonal, nothing greyed out

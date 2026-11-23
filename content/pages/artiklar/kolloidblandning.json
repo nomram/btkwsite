@@ -1,0 +1,191 @@
+{
+  "path": "/artiklar/kolloidblandning",
+  "updated": "2026-11-23",
+  "template": "article",
+  "order": 10,
+  "published": true,
+  "date": "2026-11-23",
+  "tags": [
+    "injektering",
+    "haeny",
+    "guide",
+    "verktyg"
+  ],
+  "image": "/assets/img/kolloidblandning.webp",
+  "hideIn": [
+    "es",
+    "no",
+    "lt",
+    "lv",
+    "et",
+    "ru"
+  ],
+  "i18n": {
+    "sv": {
+      "title": "Därför blandar man injekteringsbruk i en kolloidblandare",
+      "h1": "Därför blandar man injekteringsbruk i en kolloidblandare",
+      "seoTitle": "Kolloidblandare för injekteringsbruk förklarad | Betongakuten",
+      "description": "Vad gör en kolloidblandare, och varför ger högskjuvande blandning ett bättre injekteringsbruk än en vanlig paddelblandare? Förklarat enkelt, med en jämförelse du kan prova.",
+      "summary": "Klumpar av cementkorn är injekteringens fiende. Så sliter en kolloidblandare isär dem, och en jämförelse med en vanlig paddelblandare.",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "Ett injekteringsbruk ska tränga in i fina sprickor och stanna där. Det kräver att varje cementkorn är omgivet av vatten och att kornen inte klumpar ihop sig. Det är just det en kolloidblandare är byggd för."
+        },
+        {
+          "type": "widget",
+          "kind": "blandning",
+          "title": "Paddel eller kolloid?",
+          "intro": "Välj blandare och blandningstid, och se hur väl cementet sprids och hur mycket vatten som separerar.",
+          "cta": false
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Vad är en kolloidblandare?"
+        },
+        {
+          "type": "text",
+          "html": "En kolloidblandare har en rotor som snurrar med hög hastighet i ett trångt hus. Bruket pressas genom en smal spalt där det utsätts för kraftig skjuvning. Klumpar av cementkorn slits isär och varje korn blir vätt av vatten. Häny kallar sina blandare HCM, högskjuvande kolloidblandare, och de sitter bland annat i <a href=\"/artiklar/haeny-injecto-compact\">Injecto Compact-anläggningarna</a>."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Fördelarna"
+        },
+        {
+          "type": "list",
+          "items": [
+            "<strong>Stabilare bruk:</strong> mindre vattenseparation, så att bruket inte delar upp sig i sprickan.",
+            "<strong>Bättre inträngning:</strong> fritt rörliga korn tar sig lättare in i fina sprickor.",
+            "<strong>Jämnare kvalitet:</strong> samma bruk från sats till sats.",
+            "<strong>Mindre slitage och proppar:</strong> ett homogent bruk är lättare att pumpa."
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Så blandar du"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Fyll vatten först, sedan cement och eventuella tillsatser.",
+            "Blanda den tid som receptet anger, ofta några minuter.",
+            "För över bruket till omröraren, som håller det homogent och tar bort luftbubblor medan pumpen arbetar.",
+            "Kontrollera bruket, till exempel flyttiden med en <a href=\"/artiklar/marshtratt\">marshtratt</a>, densitet och separation."
+          ],
+          "ordered": true
+        },
+        {
+          "type": "faq",
+          "title": "Vanliga frågor",
+          "items": [
+            {
+              "q": "Kan man inte blanda injekteringsbruk i en vanlig blandare?",
+              "a": "Det går, men en paddelblandare bryter inte upp klumparna lika effektivt. Bruket separerar mer och tränger sämre in i fina sprickor."
+            },
+            {
+              "q": "Hur länge ska man blanda?",
+              "a": "Det beror på recept och blandare. Följ receptets anvisningar, och undvik att blanda onödigt länge så att bruket inte värms upp."
+            },
+            {
+              "q": "Vad gör omröraren?",
+              "a": "Den håller det färdiga bruket homogent och tar bort luftbubblor medan pumpen arbetar, så att blandaren kan göra nästa sats."
+            }
+          ]
+        },
+        {
+          "type": "cta",
+          "title": "Vill du ha hjälp att välja blandare?",
+          "text": "Berätta hur mycket bruk du behöver och till vad, så rekommenderar vi rätt blandare och omrörare och återkommer med pris och leveranstid.",
+          "button": "Få offert",
+          "href": "/offert"
+        }
+      ]
+    },
+    "en": {
+      "title": "Why grout is mixed in a colloidal mixer",
+      "h1": "Why grout is mixed in a colloidal mixer",
+      "seoTitle": "Colloidal mixers for grout explained | Betongakuten",
+      "description": "What does a colloidal mixer do, and why does high-shear mixing give a better grout than an ordinary paddle mixer? Explained simply, with a comparison you can try.",
+      "summary": "Lumps of cement grains are the enemy of grouting. How a colloidal mixer tears them apart, and a comparison with an ordinary paddle mixer.",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "A grout has to penetrate fine fractures and stay there. That requires every cement grain to be surrounded by water and the grains not to clump together. That is exactly what a colloidal mixer is built for."
+        },
+        {
+          "type": "widget",
+          "kind": "blandning",
+          "title": "Paddle or colloidal?",
+          "intro": "Choose the mixer and mixing time, and see how well the cement is dispersed and how much water separates.",
+          "cta": false
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "What is a colloidal mixer?"
+        },
+        {
+          "type": "text",
+          "html": "A colloidal mixer has a rotor spinning at high speed in a tight housing. The grout is forced through a narrow gap where it is subjected to strong shear. Lumps of cement grains are torn apart and every grain is wetted with water. Häny calls its mixers HCM, high-shear colloidal mixers, and they sit in, among others, the <a href=\"/artiklar/haeny-injecto-compact\">Injecto Compact plants</a>."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "The benefits"
+        },
+        {
+          "type": "list",
+          "items": [
+            "<strong>More stable grout:</strong> less bleeding, so the grout does not split up in the fracture.",
+            "<strong>Better penetration:</strong> free-moving grains get into fine fractures more easily.",
+            "<strong>More even quality:</strong> the same grout from batch to batch.",
+            "<strong>Less wear and fewer blockages:</strong> a homogeneous grout is easier to pump."
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "How to mix"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Add water first, then cement and any admixtures.",
+            "Mix for the time the recipe specifies, often a few minutes.",
+            "Transfer the grout to the agitator, which keeps it homogeneous and removes air bubbles while the pump works.",
+            "Check the grout, for example the flow time with a <a href=\"/artiklar/marshtratt\">Marsh funnel</a>, density and bleeding."
+          ],
+          "ordered": true
+        },
+        {
+          "type": "faq",
+          "title": "Frequently asked questions",
+          "items": [
+            {
+              "q": "Can't you mix grout in an ordinary mixer?",
+              "a": "You can, but a paddle mixer does not break up the lumps as effectively. The grout separates more and penetrates fine fractures less well."
+            },
+            {
+              "q": "How long should you mix?",
+              "a": "It depends on the recipe and the mixer. Follow the recipe, and avoid mixing for unnecessarily long so the grout does not heat up."
+            },
+            {
+              "q": "What does the agitator do?",
+              "a": "It keeps the finished grout homogeneous and removes air bubbles while the pump works, so the mixer can make the next batch."
+            }
+          ]
+        },
+        {
+          "type": "cta",
+          "title": "Would you like help choosing a mixer?",
+          "text": "Tell us how much grout you need and what for, and we will recommend the right mixer and agitator and come back with a price and lead time.",
+          "button": "Get a quote",
+          "href": "/offert"
+        }
+      ]
+    }
+  }
+}

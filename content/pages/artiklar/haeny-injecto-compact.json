@@ -1,0 +1,214 @@
+{
+  "path": "/artiklar/haeny-injecto-compact",
+  "updated": "2026-11-23",
+  "template": "article",
+  "order": 10,
+  "published": true,
+  "date": "2026-11-23",
+  "tags": [
+    "injektering",
+    "haeny",
+    "maskiner",
+    "guide",
+    "verktyg"
+  ],
+  "image": "/assets/img/haeny-ic.webp",
+  "hideIn": [
+    "es",
+    "no",
+    "lt",
+    "lv",
+    "et",
+    "ru"
+  ],
+  "i18n": {
+    "sv": {
+      "title": "Häny Injecto Compact (IC): kompakta injekteringsanläggningar förklarade",
+      "h1": "Häny Injecto Compact (IC): kompakta injekteringsanläggningar förklarade",
+      "seoTitle": "Häny Injecto Compact (IC): välj rätt modell | Betongakuten",
+      "description": "Vad är en Häny Injecto Compact, hur läser man modellnamnet och vilken IC passar ditt jobb? En genomgång av IC 310, IC 311, IC 325 och de större modellerna, med en modellväljare.",
+      "summary": "Blandare, omrörare och pump på en ram. Så fungerar Hänys IC-anläggningar, så läser du modellnamnet, och en väljare som hittar rätt modell.",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "Häny Injecto Compact, förkortat IC, är kompletta injekteringsanläggningar i ett paket. Allt som behövs för att blanda och pumpa injekteringsbruk sitter på en gemensam ram med en central lyftpunkt, så att anläggningen är lätt att flytta och snabb att ställa upp. Här går vi igenom hur de fungerar och hur du väljer rätt modell."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Tre delar på en ram"
+        },
+        {
+          "type": "list",
+          "items": [
+            "<strong>Blandaren, HCM:</strong> en högskjuvande kolloidblandare som blandar vatten och cement till ett stabilt bruk. Läs mer i <a href=\"/artiklar/kolloidblandning\">därför använder man kolloidblandare</a>.",
+            "<strong>Omröraren, HRW:</strong> en långsamt roterande behållare som håller bruket homogent och tar bort luftbubblor medan pumpen arbetar.",
+            "<strong>Pumpen, ZMP:</strong> en slitagesnål kolvpump som trycker in bruket. Den finns med en eller två kolvar."
+          ]
+        },
+        {
+          "type": "widget",
+          "kind": "ic",
+          "title": "Hitta rätt IC-modell",
+          "intro": "Ange vilket flöde och tryck du behöver, så visar vi vilka modeller som räcker och hur anläggningen är uppbyggd.",
+          "cta": false
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Så läser du modellnamnet"
+        },
+        {
+          "type": "text",
+          "html": "I de större modellerna anger den första siffran ungefär den sammanlagda volymen för blandare och omrörare i liter, och siffrorna efter snedstrecket anger pumpen. IC 1100/725 har alltså blandare och omrörare på sammanlagt cirka 1 100 liter, och en ZMP 725. I de minsta modellerna, IC 310, IC 311 och IC 325, anger de två sista siffrorna pumpen: ZMP 610, 611 och 625."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "De populära små modellerna"
+        },
+        {
+          "type": "list",
+          "items": [
+            "<strong><a href=\"/produkter/haeny/manuella-pumpar/ic-310-ic-311\">IC 310</a>:</strong> Hänys stora storsäljare. Upp till 1,5 m³ i timmen och 100 bar, med en kolv.",
+            "<strong>IC 311:</strong> samma storlek, något lägre tryck (75 bar) men högre flöde (2 m³ i timmen), och en aning billigare.",
+            "<strong><a href=\"/produkter/haeny/manuella-pumpar/ic-325-ic325-ccp\">IC 325</a>:</strong> två kolvar som ger ett jämnare flöde, upp till 2 m³ i timmen och 100 bar.",
+            "<strong><a href=\"/produkter/haeny/manuella-pumpar/ic-325-ccp\">IC 325 CCP</a>:</strong> IC 325 med en extra modul för polyuretan, så att man kan injektera med cement, med polyuretan eller med båda."
+          ]
+        },
+        {
+          "type": "text",
+          "html": "De större modellerna, IC 650, IC 1100 och IC 1400, har större blandare och omrörare och pumpar på upp till 8 m³ i timmen. Hela sortimentet finns på sidan <a href=\"/produkter/haeny/manuella-pumpar\">manuella pumpar</a>."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Vad används de till?"
+        },
+        {
+          "type": "text",
+          "html": "IC-anläggningarna används för att injektera ankare, jordspik, spännkablar och bergbultar, för manschettrörsinjektering, berg- och kontaktinjektering, och för bentonitsuspensioner vid rörpressning och mikrotunnling. De kan utrustas med en datalogger, DPV-H från Jean Lutz, som sparar tryck och flöde i realtid. Varför det är värdefullt går vi igenom i <a href=\"/artiklar/dataloggning-injektering\">dataloggning vid injektering</a>."
+        },
+        {
+          "type": "faq",
+          "title": "Vanliga frågor",
+          "items": [
+            {
+              "q": "Vad står IC för?",
+              "a": "Injecto Compact, Hänys namn på de kompakta injekteringsanläggningarna där blandare, omrörare och pump sitter på samma ram."
+            },
+            {
+              "q": "Vad är skillnaden mellan IC 310 och IC 325?",
+              "a": "IC 325 har två kolvar i stället för en, vilket ger ett jämnare flöde. Båda klarar 100 bar, och IC 325 upp till 2 m³ i timmen."
+            },
+            {
+              "q": "Kan man injektera polyuretan med en IC?",
+              "a": "Ja, med IC 325 CCP, som har en extra modul med en högtryckspump för polyuretan."
+            }
+          ]
+        },
+        {
+          "type": "cta",
+          "title": "Vilken IC passar ditt jobb?",
+          "text": "Berätta vad du ska injektera, hur mycket och med vilket tryck, så hjälper vi dig att välja rätt anläggning och återkommer med pris och leveranstid.",
+          "button": "Få offert",
+          "href": "/offert"
+        }
+      ]
+    },
+    "en": {
+      "title": "Häny Injecto Compact (IC): compact grouting plants explained",
+      "h1": "Häny Injecto Compact (IC): compact grouting plants explained",
+      "seoTitle": "Häny Injecto Compact (IC): choose the right model | Betongakuten",
+      "description": "What is a Häny Injecto Compact, how do you read the model name and which IC suits your job? A guide to the IC 310, IC 311, IC 325 and the larger models, with a model chooser.",
+      "summary": "Mixer, agitator and pump on one frame. How Häny's IC plants work, how to read the model name, and a chooser that finds the right model.",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "Häny Injecto Compact, IC for short, are complete grouting plants in one package. Everything needed to mix and pump grout sits on a common frame with a central lifting point, so the plant is easy to move and quick to set up. Here we go through how they work and how to choose the right model."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Three parts on one frame"
+        },
+        {
+          "type": "list",
+          "items": [
+            "<strong>The mixer, HCM:</strong> a high-shear colloidal mixer that mixes water and cement into a stable grout. Read more in <a href=\"/artiklar/kolloidblandning\">why colloidal mixers are used</a>.",
+            "<strong>The agitator, HRW:</strong> a slowly rotating tank that keeps the grout homogeneous and removes air bubbles while the pump works.",
+            "<strong>The pump, ZMP:</strong> a low-wear piston pump that injects the grout. It comes with one or two pistons."
+          ]
+        },
+        {
+          "type": "widget",
+          "kind": "ic",
+          "title": "Find the right IC model",
+          "intro": "Enter the flow and pressure you need, and we show which models are enough and how the plant is built.",
+          "cta": false
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "How to read the model name"
+        },
+        {
+          "type": "text",
+          "html": "In the larger models the first number is roughly the combined volume of mixer and agitator in litres, and the numbers after the slash give the pump. An IC 1100/725 therefore has a mixer and agitator of about 1,100 litres together, and a ZMP 725. In the smallest models, IC 310, IC 311 and IC 325, the last two digits give the pump: ZMP 610, 611 and 625."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "The popular small models"
+        },
+        {
+          "type": "list",
+          "items": [
+            "<strong><a href=\"/produkter/haeny/manuella-pumpar/ic-310-ic-311\">IC 310</a>:</strong> Häny's big best seller. Up to 1.5 m³ an hour and 100 bar, with one piston.",
+            "<strong>IC 311:</strong> the same size, somewhat lower pressure (75 bar) but higher flow (2 m³ an hour), and a little cheaper.",
+            "<strong><a href=\"/produkter/haeny/manuella-pumpar/ic-325-ic325-ccp\">IC 325</a>:</strong> two pistons for a more even flow, up to 2 m³ an hour and 100 bar.",
+            "<strong><a href=\"/produkter/haeny/manuella-pumpar/ic-325-ccp\">IC 325 CCP</a>:</strong> the IC 325 with an extra module for polyurethane, so you can grout with cement, with polyurethane or with both."
+          ]
+        },
+        {
+          "type": "text",
+          "html": "The larger models, IC 650, IC 1100 and IC 1400, have bigger mixers and agitators and pumps of up to 8 m³ an hour. The whole range is on the <a href=\"/produkter/haeny/manuella-pumpar\">manual pumps</a> page."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "What are they used for?"
+        },
+        {
+          "type": "text",
+          "html": "The IC plants are used to grout anchors, soil nails, tendons and rock bolts, for tube-à-manchette grouting, rock and contact grouting, and for bentonite suspensions in pipe jacking and microtunnelling. They can be fitted with a data logger, the DPV-H from Jean Lutz, that stores pressure and flow in real time. Why that is valuable is covered in <a href=\"/artiklar/dataloggning-injektering\">data logging during grouting</a>."
+        },
+        {
+          "type": "faq",
+          "title": "Frequently asked questions",
+          "items": [
+            {
+              "q": "What does IC stand for?",
+              "a": "Injecto Compact, Häny's name for the compact grouting plants where mixer, agitator and pump sit on the same frame."
+            },
+            {
+              "q": "What is the difference between the IC 310 and IC 325?",
+              "a": "The IC 325 has two pistons instead of one, which gives a more even flow. Both handle 100 bar, and the IC 325 up to 2 m³ an hour."
+            },
+            {
+              "q": "Can you inject polyurethane with an IC?",
+              "a": "Yes, with the IC 325 CCP, which has an extra module with a high-pressure pump for polyurethane."
+            }
+          ]
+        },
+        {
+          "type": "cta",
+          "title": "Which IC suits your job?",
+          "text": "Tell us what you are going to grout, how much and at what pressure, and we will help you choose the right plant and come back with a price and lead time.",
+          "button": "Get a quote",
+          "href": "/offert"
+        }
+      ]
+    }
+  }
+}
