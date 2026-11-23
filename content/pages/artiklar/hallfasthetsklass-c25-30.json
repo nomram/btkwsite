@@ -100,6 +100,11 @@
           "button": "Få offert",
           "href": "/offert"
         }
+      ],
+      "keypoints": [
+        "C25/30 betyder minst 25 MPa mätt på cylinder och 30 MPa mätt på kub, efter 28 dygn.",
+        "En megapascal är en newton per kvadratmillimeter. En liten kub betong kan bära flera ton.",
+        "Konstruktören bestämmer klassen utifrån bärförmåga och miljö."
       ]
     },
     "en": {
@@ -181,6 +186,11 @@
           "button": "Get a quote",
           "href": "/offert"
         }
+      ],
+      "keypoints": [
+        "C25/30 means at least 25 MPa on a cylinder and 30 MPa on a cube, after 28 days.",
+        "One megapascal is one newton per square millimetre. A small cube of concrete can carry several tonnes.",
+        "The structural engineer sets the class based on load and exposure."
       ]
     }
   }

@@ -218,7 +218,7 @@ function renderLogoWall(ctx, b) {
 // A quiet row of logos that drifts slowly (CSS); the list is repeated once so the loop is seamless, the copy is hidden from assistive tech
 function renderLogoRow(ctx, b) {
   const items = (b.items || []).filter((it) => shown(ctx, it.href));
-  const li = (copy) => items.map((it) => { const title = it.title || titleOf(ctx, it.href); return `<li${copy ? ' aria-hidden="true"' : ""}><a href="${esc(localizeHref(ctx, it.href))}"${copy ? ' tabindex="-1"' : ""} title="${esc(title)}">${it.image ? imgTag(ctx, it.image, copy ? "" : it.alt || title, { sizes: "160px" }) : esc(title)}</a></li>`; }).join("");
+  const li = (copy) => items.map((it) => { const title = it.title || titleOf(ctx, it.href); return `<li${copy ? ' aria-hidden="true"' : ""}><a href="${esc(localizeHref(ctx, it.href))}"${copy ? ' tabindex="-1"' : ""} title="${esc(title)}">${it.image ? imgTag(ctx, it.image, copy ? "" : it.alt || title, { sizes: "160px" }).replace('loading="lazy"', 'loading="eager"') : esc(title)}</a></li>`; }).join("");
   const head = b.title ? `<div class="logorow__head"><p class="sec-kicker">${esc(b.title)}</p>${b.more ? `<a class="sec-more" href="${esc(localizeHref(ctx, b.more))}">${esc(b.moreLabel || ctx.ui.read_more || "Visa alla")}${ICON.arrow}</a>` : ""}</div>` : "";
   return `<section class="logorow">${head}<div class="logorow__vp"><ul class="logorow__track">${li(false)}${li(true)}</ul></div></section>`;
 }
@@ -345,6 +345,7 @@ function renderArticles(ctx, b, page) {
 function articleMeta(ctx, page, t) {
   const u = ctx.ui, min = readMinutes(t.blocks);
   const tags = (page.tags || []).map((s) => `<a class="tagchip tagchip--s" href="${esc(tagUrl(ctx, s))}">${esc(tagName(ctx, s))}</a>`).join("");
+  if (!ctx.edit) return articleToc(ctx, t);
   return `<div class="container article__meta"><span>${esc(articleDate(ctx, page.date))}</span><span>${esc(fmtTpl(u.article_read || "{n} min läsning", { n: min }))}</span>${tags ? `<span class="article__tags">${tags}</span>` : ""}</div>${articleToc(ctx, t)}`;
 }
 // ids for the h2 headings of an article (anchors for the table of contents); other pages keep their headings as they are
@@ -355,9 +356,11 @@ function autoAnchor(ctx, b) {
 // "In this article": a short row of jump links when the article has at least three sections
 function articleToc(ctx, t) {
   const hs = flatBlocks(t.blocks || []).filter((b) => b.type === "heading" && (b.level || 2) === 2 && b.text);
-  if (hs.length < 3) return "";
+  const kp = (t.keypoints || []).filter((k) => typeof k === "string" && k.trim());
+  const key = kp.length ? `<aside class="akey"><p class="akey__t">${esc(ctx.ui.article_key || "I korthet")}</p><ul class="akey__l">${kp.map((k) => `<li>${esc(k)}</li>`).join("")}</ul></aside>` : "";
+  if (hs.length < 3) return key ? `<div class="container">${key}</div>` : "";
   const items = hs.map((b) => { const id = b.anchor || autoAnchor(ctx, b); return id ? `<li><a href="#${esc(id)}">${esc(b.text)}</a></li>` : ""; }).join("");
-  return `<div class="container"><nav class="toc" aria-label="${esc(ctx.ui.article_toc || "I den här artikeln")}"><span class="toc__t">${esc(ctx.ui.article_toc || "I den här artikeln")}</span><ul>${items}</ul></nav></div>`;
+  return `<div class="container">${key}<nav class="toc" aria-label="${esc(ctx.ui.article_toc || "I den här artikeln")}"><span class="toc__t">${esc(ctx.ui.article_toc || "I den här artikeln")}</span><ul>${items}</ul></nav></div>`;
 }
 // A small model or simulation for non-technical visitors (src/js/widgets.js builds it in the browser). Block: kind (vct, harda, injektering, atgang,
 // vadarvad), title, intro. Without scripts only the title, the intro and a note are shown.
@@ -1464,7 +1467,18 @@ export function renderMain(ctx, page, t) {
     : split
     ? imgTag(ctx, split.a, "", { cls: "hero__img hero__img--a", eager: true, sizes: "100vw" }) + imgTag(ctx, split.b, "", { cls: "hero__img hero__img--b", eager: true, sizes: "100vw" })
     : "";
-  const hero = heroImg
+  const isArticle = page.template === "article" && !ctx.edit;
+  const artActs = `<span class="ahead__act"><button type="button" class="abtn" data-print><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 8V3h10v5"/><rect x="3" y="8" width="18" height="9"/><path d="M7 14h10v7H7z"/></svg><span>${esc(ctx.ui.article_print || "Skriv ut")}</span></button><button type="button" class="abtn" data-copy><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 14a5 5 0 0 0 7 0l3-3a5 5 0 0 0-7-7l-1 1"/><path d="M14 10a5 5 0 0 0-7 0l-3 3a5 5 0 0 0 7 7l1-1"/></svg><span>${esc(ctx.ui.article_copy || "Kopiera länk")}</span></button></span>`;
+  const aTags = isArticle ? (page.tags || []).slice(0, 3).map((x) => `<a href="${esc(tagUrl(ctx, x))}">${esc(tagName(ctx, x))}</a>`).join("<span aria-hidden=\"true\"> · </span>") : "";
+  const articleHead = isArticle
+    ? `<header class="ahead" data-l-contents="${esc(ctx.ui.article_contents || "Innehåll")}" data-l-copied="${esc(ctx.ui.article_copied || "Länken är kopierad")}" data-l-print="${esc(ctx.ui.article_print || "Skriv ut")}"><div class="container ahead__inner">` +
+      `${crumbs ? `<div class="ahead__crumbs">${crumbs}</div>` : ""}${aTags ? `<p class="ahead__kicker">${aTags}</p>` : ""}<h1 class="ahead__h">${esc(title)}</h1>${t.summary ? `<p class="ahead__lead">${esc(t.summary)}</p>` : ""}` +
+      `<div class="ahead__meta"><span>${esc(articleDate(ctx, page.date))}</span><span>${esc(fmtTpl(ctx.ui.article_read || "{n} min läsning", { n: readMinutes(t.blocks) }))}</span>` +
+      `${artActs}</div>` +
+      `<p class="ahead__url">${esc(ctx.abs(ctx.url(page.path, ctx.lang)))}</p></div>` +
+      `${page.image ? `<figure class="container ahead__fig">${imgTag(ctx, page.image, "", { eager: true, sizes: "(min-width: 1240px) 1200px, 100vw" }).replace('loading="lazy"', 'loading="eager"')}</figure>` : ""}</header>`
+    : "";
+  const hero = isArticle ? articleHead : heroImg
     ? `<section class="hero${isHome ? " hero--home" : ""}${split ? " hero--split" : ""}${solo ? " hero--solo" : ""}"${split && !solo ? ' data-show="both"' : ""}>${split ? splitImgs : heroImgTag(ctx, page, heroImg)}<div class="hero__shade"></div>${split && !solo ? '<span class="hero__seam"></span>' : ""}${heroInner}${isHome && !ctx.edit ? `<a class="hero__scroll" href="#start" aria-label="${esc(ctx.ui.scroll_down || "Scrolla ner")}">${ICON.chevronDown}</a>` : ""}</section>`
     : `<section class="page-head${page.template === "about" ? " page-head--center" : ""}"><div class="container">${page.template === "about" ? "" : eyebrow}<h1${pageFld("h1")}>${esc(title)}</h1>${t.lead && !ctx.edit ? `<p class="page-head__lead">${esc(t.lead)}</p>` : ""}</div></section>`;
   const ownRel = flatBlocks(t.blocks || []).filter((x) => x.type === "related");
@@ -1474,8 +1488,9 @@ export function renderMain(ctx, page, t) {
   // and is fetched top to bottom in quiet time by site.js. Without a banner, the very first picture is the most important one.
   const prioritise = (h) => { let n = 0; return h.replace(/<img ([^>]*?)loading="lazy" decoding="async"/g, (m, a) => (++n <= 3 ? `<img ${a}loading="eager" decoding="async"${n === 1 && !heroImg ? ' fetchpriority="high"' : ""}` : m)); };
   ctx._pfilter = ""; ctx._psearch = "";
-  const bodyHtml = ctx.edit ? `${splitHtml}${renderBlocks(ctx, rest)}` : prioritise(`${splitHtml}${renderBlocks(ctx, rest)}`);
-  const crumbRow = crumbs || logo || origin || ctx._pfilter ? `<div class="container crumbs${page.template === "about" && !heroImg ? " crumbs--center" : ""}">${crumbs}${ctx._psearch || ""}${ctx._pfilter || ""}${logo && origin ? `<div class="crumbs__brand">${logo}${origin}</div>` : `${logo}${origin}`}</div>` : "";
+  let bodyHtml = ctx.edit ? `${splitHtml}${renderBlocks(ctx, rest)}` : prioritise(`${splitHtml}${renderBlocks(ctx, rest)}`);
+  if (isArticle) { const aend = `<div class="container"><div class="aend"><a class="aend__back" href="${esc(localizeHref(ctx, "/artiklar"))}">${esc(ctx.ui.article_all || "Alla artiklar")}</a>${artActs.replace("ahead__act", "aend__act ahead__act")}</div></div>`; const ci = bodyHtml.search(/<(section|div) class="cta"/); bodyHtml = ci < 0 ? bodyHtml + aend : bodyHtml.slice(0, ci) + aend + bodyHtml.slice(ci); }
+  const crumbRow = !isArticle && (crumbs || logo || origin || ctx._pfilter) ? `<div class="container crumbs${page.template === "about" && !heroImg ? " crumbs--center" : ""}">${crumbs}${ctx._psearch || ""}${ctx._pfilter || ""}${logo && origin ? `<div class="crumbs__brand">${logo}${origin}</div>` : `${logo}${origin}`}</div>` : "";
   const autoRel = !ownRel.length && ctx._relExtra.length ? `<div class="container">${renderRelated(ctx, { type: "related", items: [] })}</div>` : "";
   ctx._relExtra = [];
   const artMeta = !ctx.edit && page.template === "article" ? articleMeta(ctx, page, t) : "";

@@ -68,6 +68,24 @@
           "html": "N står för normal begynnelsehållfasthet och R för hög begynnelsehållfasthet. Ett R-cement hårdnar snabbare i början, vilket är användbart när formen ska rivas tidigt eller när det är kallt. Se hur det påverkar tiden i vår guide om <a href=\"/artiklar/sa-hardnar-betong\">hur betong hårdnar</a>."
         },
         {
+          "type": "heading",
+          "level": 2,
+          "text": "Vilken cement passar?"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Husbyggnad och vanliga gjutningar: portlandkalkstencement, CEM II/A-LL 42,5 R, är en av de vanligaste i Sverige och har lägre klimatpåverkan än ren CEM I.",
+            "Kyla och tidig formrivning: ett R-cement, som tar fart snabbare de första dygnen.",
+            "Broar, dammar och andra anläggningar: särskilda anläggningscement med låg värmeutveckling och hög beständighet mot sulfat.",
+            "Injektering i fina sprickor: finmalet injekteringscement eller mikrocement med små korn."
+          ]
+        },
+        {
+          "type": "text",
+          "html": "Oftast väljer betongfabriken cement efter de krav som står i beställningen. Vad som händer i ugnen när cementet tillverkas kan du läsa om i <a href=\"/artiklar/vad-ar-cement-gjort-av\">vad är cement gjort av</a>."
+        },
+        {
           "type": "faq",
           "title": "Vanliga frågor",
           "items": [
@@ -92,6 +110,11 @@
           "button": "Få offert",
           "href": "/offert"
         }
+      ],
+      "keypoints": [
+        "Beteckningen har tre delar: typen (CEM I till V), hållfastheten (32,5, 42,5 eller 52,5) och tempot (N eller R).",
+        "CEM I är nästan ren klinker. CEM II och uppåt har mer kalksten, slagg eller flygaska och oftast lägre klimatpåverkan.",
+        "R hårdnar snabbare i början, vilket hjälper när det är kallt eller formen ska rivas tidigt."
       ]
     },
     "en": {
@@ -142,6 +165,24 @@
           "html": "N stands for normal early strength and R for high early strength. An R cement hardens faster at the start, which is useful when the formwork is to be removed early or when it is cold. See how it affects the time in our guide to <a href=\"/artiklar/sa-hardnar-betong\">how concrete hardens</a>."
         },
         {
+          "type": "heading",
+          "level": 2,
+          "text": "Which cement fits?"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Buildings and everyday pours: Portland limestone cement, CEM II/A-LL 42.5 R, is one of the most common in Sweden and has a lower climate impact than pure CEM I.",
+            "Cold weather and early striking: an R cement, which gains strength faster in the first days.",
+            "Bridges, dams and other infrastructure: special civil engineering cements with low heat of hydration and high sulfate resistance.",
+            "Grouting fine cracks: finely ground grouting cement or microcement with small grains."
+          ]
+        },
+        {
+          "type": "text",
+          "html": "Usually the concrete plant chooses the cement from the requirements in the order. What happens in the kiln when cement is made is covered in <a href=\"/artiklar/vad-ar-cement-gjort-av\">what is cement made of</a>."
+        },
+        {
           "type": "faq",
           "title": "Frequently asked questions",
           "items": [
@@ -166,6 +207,11 @@
           "button": "Get a quote",
           "href": "/offert"
         }
+      ],
+      "keypoints": [
+        "The designation has three parts: the type (CEM I to V), the strength (32.5, 42.5 or 52.5) and the pace (N or R).",
+        "CEM I is almost pure clinker. CEM II and up contain more limestone, slag or fly ash and usually have a lower climate impact.",
+        "R gains strength faster early on, which helps in cold weather or when formwork must come off early."
       ]
     }
   }

@@ -75,6 +75,23 @@
           "html": "Ja, i teorin. Runt 0,40 behövs vatten för att all cement ska reagera. Under det blir en del av cementet kvar som oreagerade korn. Betong med mycket lågt vct är svår att gjuta och görs därför nästan alltid med flyttillsats."
         },
         {
+          "type": "heading",
+          "level": 2,
+          "text": "Vct i praktiken"
+        },
+        {
+          "type": "text",
+          "html": "Vct bestäms i receptet på betongfabriken, inte på bygget. På följesedeln står hållfasthetsklass, exponeringsklass och konsistens. I Sverige anger standarden SS 137003 ett högsta tillåtna vct för varje exponeringsklass: ju tuffare miljö och ju längre livslängd konstruktionen ska ha, desto lägre vct. En platta inomhus klarar sig med ett högre vct än en kantbalk på en bro som får både frost och tösalt. Varför det spelar roll för frosten kan du läsa om i <a href=\"/artiklar/frost-och-luftporer\">varför betong spricker av frost</a>."
+        },
+        {
+          "type": "list",
+          "items": [
+            "Kontrollera följesedeln innan bilen tömmer: rätt hållfasthetsklass, exponeringsklass och konsistens.",
+            "Tillsätt inte vatten i bilen eller pumpen. Behöver betongen flyta bättre, fråga leverantören om flyttillsats.",
+            "Härda ordentligt. Även en betong med lågt vct får en porös yta om den torkar ut för tidigt."
+          ]
+        },
+        {
           "type": "faq",
           "title": "Vanliga frågor",
           "items": [
@@ -99,6 +116,11 @@
           "button": "Få offert",
           "href": "/offert"
         }
+      ],
+      "keypoints": [
+        "Vct är vattnets vikt delat med cementets vikt. 180 liter vatten och 360 kilo cement ger 0,50.",
+        "Lägre vct ger starkare och tätare betong. Lite extra vatten kan kosta flera megapascal.",
+        "Behöver betongen flyta bättre ska man använda flyttillsats, inte mer vatten."
       ]
     },
     "en": {
@@ -154,6 +176,23 @@
           "html": "In theory, yes. Around 0.40 there is enough water for all the cement to react. Below that, some of the cement stays behind as unreacted grains. Concrete with a very low w/c is hard to cast and is therefore almost always made with a plasticiser."
         },
         {
+          "type": "heading",
+          "level": 2,
+          "text": "W/c in practice"
+        },
+        {
+          "type": "text",
+          "html": "The w/c is set in the mix design at the concrete plant, not on site. The delivery note states the strength class, exposure class and consistency. In Sweden the standard SS 137003 gives a maximum w/c for each exposure class: the harsher the environment and the longer the design life, the lower the w/c. An indoor slab can have a higher w/c than the edge beam of a bridge that sees both frost and de-icing salt. Why this matters for frost is explained in <a href=\"/artiklar/frost-och-luftporer\">why concrete cracks from frost</a>."
+        },
+        {
+          "type": "list",
+          "items": [
+            "Check the delivery note before the truck discharges: the right strength class, exposure class and consistency.",
+            "Do not add water in the truck or the pump. If the concrete needs to flow more, ask the supplier about a plasticiser.",
+            "Cure properly. Even a low w/c concrete gets a porous surface if it dries out too early."
+          ]
+        },
+        {
           "type": "faq",
           "title": "Frequently asked questions",
           "items": [
@@ -178,6 +217,11 @@
           "button": "Get a quote",
           "href": "/offert"
         }
+      ],
+      "keypoints": [
+        "W/c is the weight of water divided by the weight of cement. 180 litres of water and 360 kg of cement give 0.50.",
+        "A lower w/c gives stronger, denser concrete. A little extra water can cost several megapascals.",
+        "If the concrete needs to flow more, use a plasticiser, not more water."
       ]
     }
   }

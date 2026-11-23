@@ -62,6 +62,28 @@
           "html": "För små ytor räcker säckar. Går det åt flera ton blir storsäckar eller en silo mer rationellt: mindre hantering, mindre förpackningsavfall och en jämnare matning till blandaren. Läs mer om hur det fungerar i vår guide om <a href=\"/artiklar/torrbruk-silo-ahlm\">torrbruk, silo och Ahlm-metoden</a>."
         },
         {
+          "type": "heading",
+          "level": 2,
+          "text": "Ett räkneexempel"
+        },
+        {
+          "type": "text",
+          "html": "Ett golv på 40 kvadratmeter ska spacklas 10 millimeter med ett material som går åt med 1,7 kilo per kvadratmeter och millimeter. Det blir 40 × 10 × 1,7 = 680 kilo. Med 5 procents marginal blir det cirka 715 kilo, alltså 29 säckar à 25 kilo."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Underlaget avgör resultatet"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Rengör ordentligt och prima underlaget enligt tillverkarens anvisning, så att spacklet fäster och inte drar in luft.",
+            "Håll koll på temperaturen. Många material kräver minst omkring +10 grader i både luft och underlag, se databladet.",
+            "Blanda med rätt mängd vatten. För mycket vatten ger ett svagare och mer sprickbenäget golv, precis som i betong."
+          ]
+        },
+        {
           "type": "faq",
           "title": "Vanliga frågor",
           "items": [
@@ -86,6 +108,11 @@
           "button": "Få offert",
           "href": "/offert"
         }
+      ],
+      "keypoints": [
+        "Åtgången räknas som kilo per kvadratmeter och millimeter, gånger yta och tjocklek.",
+        "Flytspackel ligger ofta på 1,6 till 2 kilo per kvadratmeter och millimeter. Databladet har det exakta värdet.",
+        "Lägg på några procent för spill och ojämnt underlag, och välj säck, storsäck eller silo efter mängden."
       ]
     },
     "en": {
@@ -128,6 +155,28 @@
           "html": "For small areas, bags are enough. When several tonnes are needed, big bags or a silo are more efficient: less handling, less packaging waste and a steadier feed to the mixer. Read more in our guide to <a href=\"/artiklar/torrbruk-silo-ahlm\">dry mortar, silos and the Ahlm method</a>."
         },
         {
+          "type": "heading",
+          "level": 2,
+          "text": "A worked example"
+        },
+        {
+          "type": "text",
+          "html": "A 40 square metre floor is to be levelled 10 millimetres with a product that uses 1.7 kg per square metre and millimetre. That makes 40 × 10 × 1.7 = 680 kg. With a 5 per cent margin it comes to about 715 kg, or 29 bags of 25 kg."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "The substrate decides the result"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Clean thoroughly and prime the substrate as the manufacturer says, so the compound bonds and does not draw in air.",
+            "Watch the temperature. Many products need at least around +10 °C in both air and substrate, see the data sheet.",
+            "Mix with the right amount of water. Too much water gives a weaker floor that cracks more easily, just as with concrete."
+          ]
+        },
+        {
           "type": "faq",
           "title": "Frequently asked questions",
           "items": [
@@ -152,6 +201,11 @@
           "button": "Get a quote",
           "href": "/offert"
         }
+      ],
+      "keypoints": [
+        "Consumption is kilos per square metre and millimetre, times area and thickness.",
+        "Self-levelling compound is often 1.6 to 2 kg per square metre and millimetre. The data sheet has the exact figure.",
+        "Add a few per cent for waste and uneven floors, and pick bags, big bags or a silo by the quantity."
       ]
     }
   }

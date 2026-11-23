@@ -104,6 +104,11 @@
           "button": "Få offert",
           "href": "/offert"
         }
+      ],
+      "keypoints": [
+        "Injektering sker där ingen kan se, så mätningarna är det enda beviset på vad som hänt i varje hål.",
+        "En logger registrerar tryck, flöde och volym hela tiden, per hål.",
+        "Stoppkriterier för tryck och volym bestäms i förväg och avgör när ett hål är klart."
       ]
     },
     "en": {
@@ -189,6 +194,11 @@
           "button": "Get a quote",
           "href": "/offert"
         }
+      ],
+      "keypoints": [
+        "Grouting happens where nobody can see, so the measurements are the only proof of what happened in each hole.",
+        "A logger records pressure, flow and volume continuously, hole by hole.",
+        "Stop criteria for pressure and volume are set in advance and decide when a hole is finished."
       ]
     }
   }

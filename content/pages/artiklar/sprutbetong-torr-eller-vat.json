@@ -72,6 +72,23 @@
           ]
         },
         {
+          "type": "heading",
+          "level": 2,
+          "text": "Kvalitet och säkerhet"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Accelerator gör att betongen fäster och tar fart snabbt, så att den kan sprutas i tak och på lodräta ytor. Dosera enligt receptet.",
+            "Studs, alltså material som studsar tillbaka, är ofta större vid torrsprutning. Håll munstycket vinkelrätt mot ytan och på rätt avstånd, ofta en till två meter.",
+            "Arbeta aldrig under nysprutat, oförstärkt berg, och använd skyddsutrustning mot damm och studs."
+          ]
+        },
+        {
+          "type": "text",
+          "html": "Sprutbetong är ett av de viktigaste verktygen när berget förstärks under jord. Hur det hänger ihop med resten av arbetet kan du läsa om i <a href=\"/artiklar/tunnelbyggande-tbm-jumbo\">tunnelbyggande</a>."
+        },
+        {
           "type": "faq",
           "title": "Vanliga frågor",
           "items": [
@@ -96,6 +113,11 @@
           "button": "Få offert",
           "href": "/offert"
         }
+      ],
+      "keypoints": [
+        "Vid torrsprutning tillsätts vattnet i munstycket. Det passar små volymer och arbeten med avbrott.",
+        "Vid våtsprutning pumpas färdig betong. Det ger hög kapacitet för stora volymer.",
+        "Valet avgörs av volym, åtkomst, damm och arbetsmiljö."
       ]
     },
     "en": {
@@ -149,6 +171,23 @@
           ]
         },
         {
+          "type": "heading",
+          "level": 2,
+          "text": "Quality and safety"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Accelerator makes the concrete stick and stiffen quickly, so it can be sprayed overhead and on vertical faces. Dose it as the mix design says.",
+            "Rebound, the material that bounces back, is often higher with dry-mix spraying. Hold the nozzle at right angles to the surface and at the right distance, often one to two metres.",
+            "Never work under freshly sprayed, unsupported rock, and wear protective equipment against dust and rebound."
+          ]
+        },
+        {
+          "type": "text",
+          "html": "Shotcrete is one of the most important tools for supporting rock underground. How it fits with the rest of the work is covered in <a href=\"/artiklar/tunnelbyggande-tbm-jumbo\">tunnelling</a>."
+        },
+        {
           "type": "faq",
           "title": "Frequently asked questions",
           "items": [
@@ -173,6 +212,11 @@
           "button": "Get a quote",
           "href": "/offert"
         }
+      ],
+      "keypoints": [
+        "In dry-mix spraying the water is added at the nozzle. It suits small volumes and stop-start work.",
+        "In wet-mix spraying ready-mixed concrete is pumped. It gives high output for large volumes.",
+        "The choice comes down to volume, access, dust and working environment."
       ]
     }
   }

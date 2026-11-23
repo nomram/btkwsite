@@ -1918,7 +1918,7 @@
     var cv = document.createElement("canvas"); cv.className = "page-head__fx"; cv.setAttribute("aria-hidden", "true"); head.insertBefore(cv, head.firstChild);
     var ctx = cv.getContext("2d"); if (!ctx) return;
     var dpr = Math.min(2, window.devicePixelRatio || 1), W = 0, H = 0, P = [], B = [], on = true, last = 0, raf = 0, lastY = window.scrollY, gust = 0;
-    var COLS = [[243, 125, 3], [255, 176, 92], [178, 98, 46], [214, 120, 52]];
+    var COLS = [[243, 125, 3], [255, 150, 40], [230, 110, 10], [255, 176, 92]];
     function blob(any) { var r = 160 + Math.random() * Math.max(180, Math.max(W, H) * 0.42); return { bx: Math.random() * W, x: 0, y: any ? Math.random() * (H + r) : H + r, r: r, v: 0.012 + Math.random() * 0.03, ph: Math.random() * 6.283, amp: 20 + Math.random() * 60, a: 0.12 + Math.random() * 0.16, c: COLS[Math.floor(Math.random() * COLS.length)], s: 0.0004 + Math.random() * 0.0006 }; }
     function mk(any) { return { x: Math.random() * W, y: any ? Math.random() * H : H + 4, r: 0.25 + Math.pow(Math.random(), 3) * 1.15, vx: -0.05 + Math.random() * 0.2, vy: -(0.04 + Math.random() * 0.2), a: 0.05 + Math.random() * 0.22, z: 0.3 + Math.random() * 0.9, ph: Math.random() * 6.283, hot: Math.random() < 0.05 }; }
     function size() {
@@ -1971,21 +1971,45 @@
   });
 })();
 
-// ---------- reading progress on articles: measures the article text only (not banner, related list or footer), eased so it runs ahead of the reader ----------
+// ---------- article reading bar: appears under the header once the title has scrolled away; shows the current section,
+// a contents menu, print and an eased progress line that measures the article text only and runs a little ahead of the reader ----------
 (function () {
-  var page = document.querySelector(".page--article"), prose = page && page.querySelector(".prose");
-  if (!prose) return;
-  var header = document.querySelector(".site-header");
-  var bar = document.createElement("div"); bar.className = "rprog"; bar.setAttribute("aria-hidden", "true"); bar.appendChild(document.createElement("i")); document.body.appendChild(bar);
-  var fill = bar.firstChild, ticking = false;
+  var page = document.querySelector(".page--article"), prose = page && page.querySelector(".prose"), head = document.querySelector(".ahead");
+  if (!prose || !head) return;
+  var header = document.querySelector(".site-header"), L = { c: head.getAttribute("data-l-contents") || "Innehåll", ok: head.getAttribute("data-l-copied") || "Kopierad", p: head.getAttribute("data-l-print") || "Skriv ut" };
+  var hs = [].filter.call(prose.children, function (n) { return n.tagName === "H2" && n.id; });
+  var title = (head.querySelector(".ahead__h") || {}).textContent || "";
+  document.addEventListener("click", function (e) {
+    var t = e.target.closest ? e.target : null; if (!t) return;
+    if (t.closest("[data-print]")) { e.preventDefault(); window.print(); return; }
+    var c = t.closest("[data-copy]");
+    if (c) {
+      e.preventDefault();
+      var url = location.href.split("#")[0], lab = c.querySelector("span"), old = lab ? lab.textContent : "";
+      var done = function () { if (lab) { lab.textContent = L.ok; setTimeout(function () { lab.textContent = old; }, 1800); } };
+      if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(url).then(done, function () {}); else { var ta = document.createElement("textarea"); ta.value = url; document.body.appendChild(ta); ta.select(); try { document.execCommand("copy"); done(); } catch (x) {} ta.remove(); }
+    }
+  });
+  var bar = document.createElement("div"); bar.className = "rbar"; bar.setAttribute("role", "navigation"); bar.setAttribute("aria-label", L.c);
+  bar.innerHTML = '<div class="container rbar__in"><p class="rbar__t"><span class="rbar__title"></span><span class="rbar__sec"></span></p><div class="rbar__act"><button type="button" class="abtn rbar__toc" aria-expanded="false">' + L.c + '</button><button type="button" class="abtn" data-print aria-label="' + L.p + '"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 8V3h10v5"/><rect x="3" y="8" width="18" height="9"/><path d="M7 14h10v7H7z"/></svg></button></div></div><ol class="rbar__menu" hidden></ol><i class="rbar__prog"><b></b></i>';
+  document.body.appendChild(bar);
+  bar.querySelector(".rbar__title").textContent = title;
+  var sec = bar.querySelector(".rbar__sec"), menu = bar.querySelector(".rbar__menu"), tocBtn = bar.querySelector(".rbar__toc"), fill = bar.querySelector(".rbar__prog b"), links = [];
+  hs.forEach(function (h) { var li = document.createElement("li"), a = document.createElement("a"); a.href = "#" + h.id; a.textContent = h.textContent; li.appendChild(a); menu.appendChild(li); links.push(a); });
+  if (!hs.length) tocBtn.hidden = true;
+  tocBtn.addEventListener("click", function () { var open = menu.hidden; menu.hidden = !open; tocBtn.setAttribute("aria-expanded", open ? "true" : "false"); });
+  menu.addEventListener("click", function (e) { if (e.target.closest("a")) { menu.hidden = true; tocBtn.setAttribute("aria-expanded", "false"); } });
+  var ticking = false;
   function upd() {
     ticking = false;
     var top = header ? Math.max(0, header.getBoundingClientRect().bottom) : 0; bar.style.top = top + "px";
+    var hb = head.getBoundingClientRect().bottom, on = hb < top + 10;
+    bar.classList.toggle("is-on", on); if (!on && !menu.hidden) { menu.hidden = true; tocBtn.setAttribute("aria-expanded", "false"); }
+    var cur = -1; hs.forEach(function (h, i) { if (h.getBoundingClientRect().top < top + 110) cur = i; });
+    sec.textContent = cur >= 0 ? hs[cur].textContent : ""; links.forEach(function (a, i) { a.classList.toggle("is-on", i === cur); });
     var r = prose.getBoundingClientRect(), stop = prose.querySelector(".cta"), end = stop ? stop.getBoundingClientRect().top : r.bottom;
     var line = top + (window.innerHeight - top) * 0.55, total = end - r.top, p = total > 0 ? Math.min(1, Math.max(0, (line - r.top) / total)) : 1;
-    var shown = Math.log(1 + 9 * p) / Math.log(10);
-    fill.style.transform = "scaleX(" + shown.toFixed(4) + ")";
-    bar.classList.toggle("is-on", r.top < top + 40 && p < 1.0001);
+    fill.style.transform = "scaleX(" + (Math.log(1 + 9 * p) / Math.log(10)).toFixed(4) + ")";
   }
   window.addEventListener("scroll", function () { if (!ticking) { ticking = true; requestAnimationFrame(upd); } }, { passive: true });
   window.addEventListener("resize", upd);
@@ -2001,3 +2025,7 @@
   var io = new IntersectionObserver(function (entries) { entries.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add("is-in"); io.unobserve(e.target); } }); }, { rootMargin: "0px 0px -8% 0px", threshold: 0.06 });
   [].forEach.call(els, function (el) { var r = el.getBoundingClientRect(); el.classList.add("rv"); if (r.top < window.innerHeight * 0.95) el.classList.add("is-in"); else io.observe(el); });
 })();
+
+// printing: open folded answers and details so the printout is complete
+window.addEventListener("beforeprint", function () { [].forEach.call(document.querySelectorAll(".page--article details:not([open])"), function (d) { d.setAttribute("open", ""); d.setAttribute("data-print-opened", ""); }); });
+window.addEventListener("afterprint", function () { [].forEach.call(document.querySelectorAll("details[data-print-opened]"), function (d) { d.removeAttribute("open"); d.removeAttribute("data-print-opened"); }); });
