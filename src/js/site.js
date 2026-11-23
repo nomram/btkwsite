@@ -1989,3 +1989,13 @@
   window.addEventListener("resize", upd);
   upd();
 })();
+
+// ---------- gentle entrances: sections fade up as they come into view (skipped with reduced motion or without IntersectionObserver) ----------
+(function () {
+  if (!("IntersectionObserver" in window) || (window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches)) return;
+  var els = document.querySelectorAll(".page-body .prose > *, .intro__inner, .logorow, .cta > .container");
+  if (!els.length) return;
+  document.documentElement.classList.add("js-rv");
+  var io = new IntersectionObserver(function (entries) { entries.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add("is-in"); io.unobserve(e.target); } }); }, { rootMargin: "0px 0px -8% 0px", threshold: 0.06 });
+  [].forEach.call(els, function (el) { var r = el.getBoundingClientRect(); el.classList.add("rv"); if (r.top < window.innerHeight * 0.95) el.classList.add("is-in"); else io.observe(el); });
+})();
