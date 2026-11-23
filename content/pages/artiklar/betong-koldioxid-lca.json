@@ -1,0 +1,270 @@
+{
+  "path": "/artiklar/betong-koldioxid-lca",
+  "updated": "2026-11-23",
+  "template": "article",
+  "order": 10,
+  "published": true,
+  "date": "2026-11-23",
+  "tags": [
+    "miljo",
+    "betong",
+    "cement",
+    "grunder",
+    "verktyg"
+  ],
+  "image": "/assets/img/betong-lca.webp",
+  "hideIn": [
+    "es",
+    "no",
+    "lt",
+    "lv",
+    "et",
+    "ru"
+  ],
+  "i18n": {
+    "sv": {
+      "title": "Betongens klimatpåverkan: livscykelanalys (LCA) förklarad enkelt",
+      "h1": "Betongens klimatpåverkan: livscykelanalys (LCA) förklarad enkelt",
+      "seoTitle": "Betongens klimatpåverkan och LCA förklarat enkelt | Betongakuten",
+      "description": "Hur mycket koldioxid ger en kubikmeter betong, och var kommer den ifrån? En enkel genomgång av livscykelanalys (LCA), med en klimaträknare och illustrationer.",
+      "summary": "Var kommer betongens koldioxid ifrån, och hur räknar man på hela livet? LCA förklarat enkelt, med en klimaträknare för en kubikmeter.",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "När man pratar om betongens klimatpåverkan räcker det inte att titta på själva gjutningen. Man behöver räkna på hela livet, från berget där kalkstenen bryts till dagen då huset rivs och betongen krossas. Det kallas livscykelanalys, LCA. Här förklarar vi det steg för steg, utan krångel."
+        },
+        {
+          "type": "widget",
+          "kind": "illu",
+          "scene": "lca",
+          "cta": false
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Livets faser, steg för steg"
+        },
+        {
+          "type": "text",
+          "html": "I en LCA delas livet in i faser med bokstäver. De används i miljövarudeklarationer (EPD) och i klimatdeklarationer för byggnader:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "<strong>A1 till A3, tillverkning:</strong> brytning av råvaror, transporter till fabriken och tillverkning av cement och betong. Här hamnar det mesta av utsläppen.",
+            "<strong>A4 och A5, bygget:</strong> transport till byggplatsen och själva gjutningen.",
+            "<strong>B, användning:</strong> underhåll, reparationer och betongens upptag av koldioxid medan byggnaden används.",
+            "<strong>C, slutet av livet:</strong> rivning, transport och krossning. Krossad betong tar upp mer koldioxid.",
+            "<strong>D, efter livet:</strong> nyttan när betongen återvinns, till exempel som ballast i vägar."
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Räkna på en kubikmeter"
+        },
+        {
+          "type": "widget",
+          "kind": "klimat",
+          "title": "Klimaträknare för en kubikmeter betong",
+          "intro": "Välj cementtyp, cementhalt och transport, och se var utsläppen kommer ifrån och hur mycket som tas upp igen.",
+          "cta": false
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Varför står cementet för så mycket?"
+        },
+        {
+          "type": "text",
+          "html": "Cement utgör bara ungefär en sjundedel av betongens vikt, men står för den absolut största delen av utsläppen. Det beror på två saker: kalkstenen släpper ut koldioxid när den bränns, och ugnen behöver mycket energi för att nå omkring 1 450 grader. Hur det går till kan du följa i <a href=\"/artiklar/vad-ar-cement-gjort-av\">vad är cement gjort av</a>."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Så minskar man klimatpåverkan"
+        },
+        {
+          "type": "list",
+          "items": [
+            "<strong>Rätt hållfasthet:</strong> beställ inte starkare betong än konstruktionen behöver, eftersom starkare betong kräver mer cement.",
+            "<strong>Cement med tillsatsmaterial:</strong> cement där en del av klinkern ersatts med kalksten, slagg eller flygaska har lägre klimatpåverkan.",
+            "<strong>Smarta recept:</strong> bra ballast och flyttillsatser gör att samma kvalitet kan nås med mindre cement.",
+            "<strong>Mindre material:</strong> smart konstruktion och rätt dimensioner sparar både betong och armering.",
+            "<strong>Korta transporter och lång livslängd:</strong> lokal produktion och en betong som håller länge minskar påverkan per år.",
+            "<strong>Återvinning:</strong> krossad betong kan bli ballast och tar samtidigt upp koldioxid."
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Vad är en EPD?"
+        },
+        {
+          "type": "text",
+          "html": "En EPD, miljövarudeklaration, är ett dokument där en tillverkare redovisar en produkts miljöpåverkan enligt en gemensam standard. För betong anges klimatpåverkan ofta i kilo koldioxidekvivalenter per kubikmeter, vilket gör det möjligt att jämföra olika betonger. I Sverige ska nya byggnader dessutom klimatdeklareras."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Betong tar också upp koldioxid"
+        },
+        {
+          "type": "text",
+          "html": "Betong är ovanlig bland byggmaterial eftersom den tar upp koldioxid under hela sitt liv genom karbonatisering. Upptaget är långsamt och tar inte tillbaka allt som släpptes ut, men det räknas allt oftare in i livscykelanalyser. Läs mer och prova själv i <a href=\"/artiklar/vad-ar-cement-gjort-av\">artikeln om cementets kemi</a>."
+        },
+        {
+          "type": "faq",
+          "title": "Vanliga frågor",
+          "items": [
+            {
+              "q": "Hur mycket koldioxid ger en kubikmeter betong?",
+              "a": "Det beror på recept och cementtyp. En vanlig husbyggnadsbetong hamnar ofta på några hundra kilo koldioxidekvivalenter per kubikmeter, och klimatförbättrad betong betydligt lägre. Exakta värden finns i leverantörens EPD."
+            },
+            {
+              "q": "Vad betyder koldioxidekvivalenter?",
+              "a": "Ett sätt att räkna samman olika växthusgaser i en gemensam enhet, uttryckt som den mängd koldioxid som har samma klimatpåverkan."
+            },
+            {
+              "q": "Vad är skillnaden mellan LCA och EPD?",
+              "a": "LCA är metoden, beräkningen av miljöpåverkan över hela livet. En EPD är dokumentet där resultatet för en viss produkt redovisas enligt en standard."
+            },
+            {
+              "q": "Är betong dåligt för klimatet?",
+              "a": "Cementtillverkningen ger stora utsläpp, men betong håller länge, tar upp koldioxid över tid och kan återvinnas. Mest gör man genom att använda rätt mängd betong med rätt recept."
+            }
+          ]
+        },
+        {
+          "type": "cta",
+          "title": "Vill du ha hjälp att välja?",
+          "text": "Berätta vad du ska göra, var och när, så rekommenderar vi rätt utrustning och material och återkommer med pris och leveranstid.",
+          "button": "Få offert",
+          "href": "/offert"
+        }
+      ]
+    },
+    "en": {
+      "title": "The climate impact of concrete: life cycle assessment (LCA) explained simply",
+      "h1": "The climate impact of concrete: life cycle assessment (LCA) explained simply",
+      "seoTitle": "The climate impact of concrete and LCA explained | Betongakuten",
+      "description": "How much carbon dioxide does a cubic metre of concrete cause, and where does it come from? A simple guide to life cycle assessment (LCA), with a climate calculator and illustrations.",
+      "summary": "Where does the carbon dioxide from concrete come from, and how do you count the whole life? LCA explained simply, with a climate calculator for one cubic metre.",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "When people talk about the climate impact of concrete, looking at the casting alone is not enough. You need to count the whole life, from the quarry where the limestone is extracted to the day the building is demolished and the concrete crushed. That is called life cycle assessment, LCA. Here we explain it step by step, without the jargon."
+        },
+        {
+          "type": "widget",
+          "kind": "illu",
+          "scene": "lca",
+          "cta": false
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "The phases of life, step by step"
+        },
+        {
+          "type": "text",
+          "html": "In an LCA the life is divided into phases with letters. They are used in environmental product declarations (EPD) and in climate declarations for buildings:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "<strong>A1 to A3, production:</strong> extraction of raw materials, transport to the plant and production of cement and concrete. This is where most of the emissions end up.",
+            "<strong>A4 and A5, construction:</strong> transport to the site and the casting itself.",
+            "<strong>B, use:</strong> maintenance, repairs and the uptake of carbon dioxide by the concrete while the building is in use.",
+            "<strong>C, end of life:</strong> demolition, transport and crushing. Crushed concrete takes up more carbon dioxide.",
+            "<strong>D, beyond the life:</strong> the benefit when the concrete is recycled, for example as aggregate in roads."
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Count on one cubic metre"
+        },
+        {
+          "type": "widget",
+          "kind": "klimat",
+          "title": "Climate calculator for one cubic metre of concrete",
+          "intro": "Choose the cement type, cement content and transport, and see where the emissions come from and how much is taken up again.",
+          "cta": false
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Why does the cement account for so much?"
+        },
+        {
+          "type": "text",
+          "html": "Cement is only about a seventh of the weight of concrete, but accounts for by far the largest part of the emissions. There are two reasons: the limestone releases carbon dioxide when it is burned, and the kiln needs a lot of energy to reach about 1,450 degrees. You can follow how it works in <a href=\"/artiklar/vad-ar-cement-gjort-av\">what is cement made of</a>."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "How to reduce the climate impact"
+        },
+        {
+          "type": "list",
+          "items": [
+            "<strong>The right strength:</strong> do not order stronger concrete than the structure needs, because stronger concrete takes more cement.",
+            "<strong>Cement with additions:</strong> cement where part of the clinker is replaced by limestone, slag or fly ash has a lower climate impact.",
+            "<strong>Smart recipes:</strong> good aggregate and plasticisers make it possible to reach the same quality with less cement.",
+            "<strong>Less material:</strong> smart design and the right dimensions save both concrete and reinforcement.",
+            "<strong>Short transport and a long life:</strong> local production and concrete that lasts reduce the impact per year.",
+            "<strong>Recycling:</strong> crushed concrete can become aggregate and takes up carbon dioxide at the same time."
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "What is an EPD?"
+        },
+        {
+          "type": "text",
+          "html": "An EPD, environmental product declaration, is a document in which a manufacturer reports the environmental impact of a product according to a common standard. For concrete the climate impact is often given in kilos of carbon dioxide equivalents per cubic metre, which makes it possible to compare different concretes. In Sweden new buildings must also have a climate declaration."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Concrete also takes up carbon dioxide"
+        },
+        {
+          "type": "text",
+          "html": "Concrete is unusual among building materials because it takes up carbon dioxide throughout its life through carbonation. The uptake is slow and does not take back everything that was released, but it is more and more often included in life cycle assessments. Read more and try it yourself in <a href=\"/artiklar/vad-ar-cement-gjort-av\">the article on the chemistry of cement</a>."
+        },
+        {
+          "type": "faq",
+          "title": "Frequently asked questions",
+          "items": [
+            {
+              "q": "How much carbon dioxide does a cubic metre of concrete cause?",
+              "a": "It depends on the recipe and the cement type. An ordinary building concrete is often a few hundred kilos of carbon dioxide equivalents per cubic metre, and low-carbon concrete considerably less. Exact values are in the supplier's EPD."
+            },
+            {
+              "q": "What does carbon dioxide equivalents mean?",
+              "a": "A way of adding up different greenhouse gases in one common unit, expressed as the amount of carbon dioxide that has the same climate impact."
+            },
+            {
+              "q": "What is the difference between LCA and EPD?",
+              "a": "LCA is the method, the calculation of environmental impact over the whole life. An EPD is the document in which the result for a particular product is reported according to a standard."
+            },
+            {
+              "q": "Is concrete bad for the climate?",
+              "a": "Cement production causes large emissions, but concrete lasts a long time, takes up carbon dioxide over time and can be recycled. The most you can do is to use the right amount of concrete with the right recipe."
+            }
+          ]
+        },
+        {
+          "type": "cta",
+          "title": "Would you like help choosing?",
+          "text": "Tell us what you are going to do, where and when, and we will recommend the right equipment and materials and come back with a price and lead time.",
+          "button": "Get a quote",
+          "href": "/offert"
+        }
+      ]
+    }
+  }
+}

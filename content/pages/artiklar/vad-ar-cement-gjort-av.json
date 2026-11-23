@@ -1,0 +1,315 @@
+{
+  "path": "/artiklar/vad-ar-cement-gjort-av",
+  "updated": "2026-11-23",
+  "template": "article",
+  "order": 10,
+  "published": true,
+  "date": "2026-11-23",
+  "tags": [
+    "cement",
+    "kemi",
+    "miljo",
+    "betong",
+    "grunder",
+    "verktyg"
+  ],
+  "image": "/assets/img/cement-kemi.webp",
+  "hideIn": [
+    "es",
+    "no",
+    "lt",
+    "lv",
+    "et",
+    "ru"
+  ],
+  "i18n": {
+    "sv": {
+      "title": "Vad är cement gjort av? Kemin bakom cement och hur betong tar upp koldioxid",
+      "h1": "Vad är cement gjort av? Kemin bakom cement och hur betong tar upp koldioxid",
+      "seoTitle": "Vad är cement gjort av? Kemi och koldioxidupptag | Betongakuten",
+      "description": "Från kalksten och lera till klinker och C-S-H: så fungerar cementets kemi, och så tar betongen upp koldioxid under hela sitt liv. Med interaktiva illustrationer.",
+      "summary": "Kalksten, lera och 1 450 grader: cementets kemi förklarad enkelt, och varför betong tar upp koldioxid under hela sitt liv.",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "Cement ser ut som ett vanligt grått pulver, men bakom det finns en hel del kemi. Här går vi från berget till byggnaden: vad cement är gjort av, vad som händer i ugnen, vad som händer när vatten tillsätts, och varför betong faktiskt tar upp koldioxid under hela sitt liv."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Råvarorna: kalksten och lera"
+        },
+        {
+          "type": "text",
+          "html": "Cement tillverkas främst av kalksten, som står för ungefär fyra femtedelar av råvarorna, och lera eller skiffer. Ibland tillsätts lite sand eller järnhaltigt material för att få rätt sammansättning. Råvarorna mals till ett fint pulver som kallas råmjöl. I färdigt cement brukar sammansättningen, räknad som oxider, ligga ungefär så här:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Kalciumoxid, CaO: cirka 60 till 67 procent",
+            "Kiseldioxid, SiO₂: cirka 17 till 25 procent",
+            "Aluminiumoxid, Al₂O₃: cirka 3 till 8 procent",
+            "Järnoxid, Fe₂O₃: cirka 0,5 till 6 procent"
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "I ugnen: från sten till klinker"
+        },
+        {
+          "type": "widget",
+          "kind": "ugn",
+          "title": "Följ råmjölet genom ugnen",
+          "intro": "Höj temperaturen och se vad som händer med råvarorna på vägen genom en roterugn.",
+          "cta": false
+        },
+        {
+          "type": "text",
+          "html": "Det viktigaste steget är kalcineringen. När kalkstenen (kalciumkarbonat, CaCO₃) hettas upp spricker den sönder i bränd kalk (CaO) och koldioxid (CO₂). Den koldioxiden kommer alltså ur själva stenen, inte från bränslet, och den står för ungefär 60 procent av utsläppen från cementtillverkning. Resten kommer främst från bränslet som värmer ugnen."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Klinkerns fyra mineral"
+        },
+        {
+          "type": "widget",
+          "kind": "klinker",
+          "title": "Vad är cement gjort av?",
+          "intro": "Klicka på delarna och se vad varje mineral gör.",
+          "cta": false
+        },
+        {
+          "type": "text",
+          "html": "Cementkemister använder förkortningar: C står för CaO, S för SiO₂, A för Al₂O₃ och F för Fe₂O₃. Alit skrivs därför C₃S, alltså tre delar kalciumoxid och en del kiseldioxid. Hur det här hänger ihop med beteckningarna på säcken kan du läsa om i <a href=\"/artiklar/cementtyper-cem-i-cem-ii\">cementtyper: CEM I, CEM II och 42,5 R</a>."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "När vatten tillsätts: limmet bildas"
+        },
+        {
+          "type": "text",
+          "html": "Cement hårdnar inte genom att torka, utan genom en kemisk reaktion med vatten som kallas hydratisering. Alit och belit bildar då kalciumsilikathydrat, förkortat C-S-H, som växer som en tät, filtliknande massa mellan sandkornen och stenarna och limmar ihop dem. Samtidigt bildas kalciumhydroxid, som gör betongen starkt basisk med ett pH över 12. Det basiska skyddar armeringen mot rost. Hur mycket vatten som behövs, och vad för mycket vatten gör, kan du prova i <a href=\"/artiklar/vattencementtal-vct\">vct-räknaren</a>."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Betongen andas in koldioxid"
+        },
+        {
+          "type": "text",
+          "html": "Här blir det intressant ur klimatsynpunkt. Kalciumhydroxiden i betongen reagerar långsamt med koldioxid i luften och blir åter kalciumkarbonat, samma ämne som kalkstenen var från början. Det kallas karbonatisering. På så sätt tar betongen tillbaka en del av den koldioxid som släpptes ut när cementet tillverkades, under hela sin livstid och ännu mer när den krossas efter rivning."
+        },
+        {
+          "type": "widget",
+          "kind": "karbonatisering",
+          "title": "Hur långt har koldioxiden kommit?",
+          "intro": "Välj ålder, miljö och kvalitet och se hur djupt koldioxiden har trängt in, hur mycket den tagit upp och om armeringen fortfarande är skyddad.",
+          "cta": false
+        },
+        {
+          "type": "text",
+          "html": "Forskning visar att upptaget inte är försumbart. En studie i Nature Geoscience 2016 uppskattade att karbonatisering mellan 1930 och 2013 hade tagit upp ungefär 43 procent av den koldioxid som släpptes ut vid kalcineringen under samma period. Upptaget går långsamt, men det pågår så länge betongen finns."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Är betong bra för miljön?"
+        },
+        {
+          "type": "text",
+          "html": "Cementtillverkning står för en stor del av världens koldioxidutsläpp, och det går inte att bortse från. Men betong har också miljöfördelar som ofta glöms bort:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Den tar upp koldioxid genom karbonatisering under hela sitt liv.",
+            "Den håller länge. Väl utförd betong kan stå i hundra år eller mer med lite underhåll.",
+            "Den lagrar värme och kyla, vilket jämnar ut temperaturen i byggnader och kan minska energibehovet.",
+            "Den görs av lokala råvaror som sten, sand och kalksten, vilket ger korta transporter.",
+            "Den brinner inte och kan återvinnas som ballast i ny betong eller i vägar."
+          ]
+        },
+        {
+          "type": "text",
+          "html": "Mest gör man för klimatet genom att använda rätt mängd betong med rätt recept. Hur klimatpåverkan räknas fram, steg för steg, går vi igenom i <a href=\"/artiklar/betong-koldioxid-lca\">betongens klimatpåverkan förklarad enkelt</a>."
+        },
+        {
+          "type": "faq",
+          "title": "Vanliga frågor",
+          "items": [
+            {
+              "q": "Vad är cement gjort av?",
+              "a": "Främst av kalksten och lera som bränns vid omkring 1 450 grader till klinker. Klinkern mals sedan med lite gips till cement."
+            },
+            {
+              "q": "Vad är skillnaden mellan klinker och cement?",
+              "a": "Klinker är de små kulor som kommer ut ur ugnen. Cement är klinker som malts till pulver tillsammans med gips och ibland andra material, som kalksten eller slagg."
+            },
+            {
+              "q": "Tar betong verkligen upp koldioxid?",
+              "a": "Ja. Betongen reagerar långsamt med luftens koldioxid och bildar kalciumkarbonat. Upptaget tar tillbaka en del, men inte allt, av det som släpptes ut vid tillverkningen."
+            },
+            {
+              "q": "Är karbonatisering bra eller dåligt?",
+              "a": "Båda. Den binder koldioxid, men när den når armeringen sjunker pH-värdet och stålet kan rosta. Därför behöver armerad betong ett tillräckligt tjockt och tätt täckskikt."
+            }
+          ]
+        },
+        {
+          "type": "cta",
+          "title": "Vill du ha hjälp att välja?",
+          "text": "Berätta vad du ska göra, var och när, så rekommenderar vi rätt utrustning och material och återkommer med pris och leveranstid.",
+          "button": "Få offert",
+          "href": "/offert"
+        }
+      ]
+    },
+    "en": {
+      "title": "What is cement made of? The chemistry of cement and how concrete takes up carbon dioxide",
+      "h1": "What is cement made of? The chemistry of cement and how concrete takes up carbon dioxide",
+      "seoTitle": "What is cement made of? Chemistry and CO₂ uptake | Betongakuten",
+      "description": "From limestone and clay to clinker and C-S-H: how the chemistry of cement works, and how concrete takes up carbon dioxide throughout its life. With interactive illustrations.",
+      "summary": "Limestone, clay and 1,450 degrees: the chemistry of cement explained simply, and why concrete takes up carbon dioxide throughout its life.",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "Cement looks like an ordinary grey powder, but there is a good deal of chemistry behind it. Here we go from the quarry to the building: what cement is made of, what happens in the kiln, what happens when water is added, and why concrete actually takes up carbon dioxide throughout its life."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "The raw materials: limestone and clay"
+        },
+        {
+          "type": "text",
+          "html": "Cement is made mainly from limestone, which makes up about four fifths of the raw materials, and clay or shale. Sometimes a little sand or iron-bearing material is added to get the right composition. The raw materials are ground into a fine powder called raw meal. In finished cement the composition, counted as oxides, is usually roughly like this:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Calcium oxide, CaO: about 60 to 67 percent",
+            "Silica, SiO₂: about 17 to 25 percent",
+            "Alumina, Al₂O₃: about 3 to 8 percent",
+            "Iron oxide, Fe₂O₃: about 0.5 to 6 percent"
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "In the kiln: from stone to clinker"
+        },
+        {
+          "type": "widget",
+          "kind": "ugn",
+          "title": "Follow the raw meal through the kiln",
+          "intro": "Raise the temperature and see what happens to the raw materials on their way through a rotary kiln.",
+          "cta": false
+        },
+        {
+          "type": "text",
+          "html": "The most important step is calcination. When limestone (calcium carbonate, CaCO₃) is heated it breaks down into quicklime (CaO) and carbon dioxide (CO₂). That carbon dioxide comes out of the stone itself, not from the fuel, and it accounts for about 60 percent of the emissions from cement making. The rest comes mainly from the fuel that heats the kiln."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "The four minerals of clinker"
+        },
+        {
+          "type": "widget",
+          "kind": "klinker",
+          "title": "What is cement made of?",
+          "intro": "Click the parts and see what each mineral does.",
+          "cta": false
+        },
+        {
+          "type": "text",
+          "html": "Cement chemists use abbreviations: C stands for CaO, S for SiO₂, A for Al₂O₃ and F for Fe₂O₃. Alite is therefore written C₃S, three parts calcium oxide and one part silica. How this relates to the markings on the bag is explained in <a href=\"/artiklar/cementtyper-cem-i-cem-ii\">cement types: CEM I, CEM II and 42.5 R</a>."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "When water is added: the glue forms"
+        },
+        {
+          "type": "text",
+          "html": "Cement does not harden by drying but through a chemical reaction with water called hydration. Alite and belite form calcium silicate hydrate, C-S-H for short, which grows as a dense, felt-like mass between the grains of sand and stone and glues them together. At the same time calcium hydroxide forms, which makes concrete strongly alkaline with a pH above 12. The alkalinity protects the reinforcement from rust. How much water is needed, and what too much water does, you can try in the <a href=\"/artiklar/vattencementtal-vct\">w/c calculator</a>."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Concrete breathes in carbon dioxide"
+        },
+        {
+          "type": "text",
+          "html": "This is where it gets interesting for the climate. The calcium hydroxide in concrete slowly reacts with carbon dioxide in the air and turns back into calcium carbonate, the same substance the limestone was to begin with. This is called carbonation. In this way concrete takes back part of the carbon dioxide released when the cement was made, throughout its life and even more when it is crushed after demolition."
+        },
+        {
+          "type": "widget",
+          "kind": "karbonatisering",
+          "title": "How far has the carbon dioxide got?",
+          "intro": "Choose the age, environment and quality and see how deep the carbon dioxide has entered, how much it has taken up and whether the reinforcement is still protected.",
+          "cta": false
+        },
+        {
+          "type": "text",
+          "html": "Research shows that the uptake is not negligible. A study in Nature Geoscience in 2016 estimated that between 1930 and 2013 carbonation had taken up about 43 percent of the carbon dioxide released by calcination over the same period. The uptake is slow, but it goes on for as long as the concrete exists."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Is concrete good for the environment?"
+        },
+        {
+          "type": "text",
+          "html": "Cement making accounts for a large share of the world's carbon dioxide emissions, and that cannot be ignored. But concrete also has environmental benefits that are often forgotten:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "It takes up carbon dioxide through carbonation throughout its life.",
+            "It lasts a long time. Well-made concrete can stand for a hundred years or more with little maintenance.",
+            "It stores heat and cold, which evens out the temperature in buildings and can reduce energy use.",
+            "It is made from local raw materials such as stone, sand and limestone, which means short transport.",
+            "It does not burn and can be recycled as aggregate in new concrete or in roads."
+          ]
+        },
+        {
+          "type": "text",
+          "html": "The most you can do for the climate is to use the right amount of concrete with the right recipe. How the climate impact is worked out, step by step, is explained in <a href=\"/artiklar/betong-koldioxid-lca\">the climate impact of concrete explained simply</a>."
+        },
+        {
+          "type": "faq",
+          "title": "Frequently asked questions",
+          "items": [
+            {
+              "q": "What is cement made of?",
+              "a": "Mainly limestone and clay burned at about 1,450 degrees into clinker. The clinker is then ground with a little gypsum into cement."
+            },
+            {
+              "q": "What is the difference between clinker and cement?",
+              "a": "Clinker is the small nodules that come out of the kiln. Cement is clinker ground into powder together with gypsum and sometimes other materials, such as limestone or slag."
+            },
+            {
+              "q": "Does concrete really take up carbon dioxide?",
+              "a": "Yes. Concrete slowly reacts with carbon dioxide in the air and forms calcium carbonate. The uptake takes back part, but not all, of what was released during production."
+            },
+            {
+              "q": "Is carbonation good or bad?",
+              "a": "Both. It binds carbon dioxide, but when it reaches the reinforcement the pH drops and the steel can rust. That is why reinforced concrete needs a cover that is thick and dense enough."
+            }
+          ]
+        },
+        {
+          "type": "cta",
+          "title": "Would you like help choosing?",
+          "text": "Tell us what you are going to do, where and when, and we will recommend the right equipment and materials and come back with a price and lead time.",
+          "button": "Get a quote",
+          "href": "/offert"
+        }
+      ]
+    }
+  }
+}

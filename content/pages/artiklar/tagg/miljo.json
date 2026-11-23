@@ -1,0 +1,41 @@
+{
+  "path": "/artiklar/tagg/miljo",
+  "updated": "2026-11-23",
+  "template": "articles",
+  "order": 10,
+  "published": true,
+  "hideIn": [
+    "es",
+    "no",
+    "lt",
+    "lv",
+    "et",
+    "ru"
+  ],
+  "i18n": {
+    "sv": {
+      "title": "Artiklar om Miljö och klimat",
+      "h1": "Artiklar om Miljö och klimat",
+      "seoTitle": "Artiklar och guider om Miljö och klimat | Betongakuten",
+      "description": "Alla artiklar och guider om Miljö och klimat från Betongakuten. Sök eller filtrera på fler taggar.",
+      "blocks": [
+        {
+          "type": "articles",
+          "tag": "miljo"
+        }
+      ]
+    },
+    "en": {
+      "title": "Articles about Environment and climate",
+      "h1": "Articles about Environment and climate",
+      "seoTitle": "Articles and guides about Environment and climate | Betongakuten",
+      "description": "All articles and guides about Environment and climate from Betongakuten. Search or filter by more tags.",
+      "blocks": [
+        {
+          "type": "articles",
+          "tag": "miljo"
+        }
+      ]
+    }
+  }
+}

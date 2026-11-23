@@ -11,6 +11,7 @@
     sv: {
       mpa: "MPa", model: "Så räknar vi", disclaimer: "Förenklad modell för att förstå sambanden. Den ersätter inte beräkning, provning eller produktens datablad.",
       vct: {
+        fr: {"presets":"Snabbval","p1":["Extra stark","vct 0,40"],"p2":["Vanlig utomhus","vct 0,50"],"p3":["Lättgjuten","vct 0,65"],"less":"Mindre vatten","more":"Mer vatten","add":"+ En hink vatten (10 liter)","remove":"− En hink","perM3":"Så mycket går det åt till en kubikmeter betong","bags":"säckar cement à 25 kg","buckets":"hinkar vatten à 10 liter","mStr":"Hållfasthet","mDen":"Täthet och livslängd","mWork":"Lätt att gjuta","vVeryHigh":"Mycket hög","vHigh":"Hög","vNormal":"Normal","vLow":"Låg","dVery":"Mycket tät","dDense":"Tät","dMid":"Medel","dPorous":"Porös","wStiff":"Trög, behöver flyttillsats","wOk":"Lagom","wFlow":"Lättflytande","wRunny":"Rinnig, stenen kan sjunka","s1":"Mycket stark och tät, men trög. Den behöver oftast flyttillsats för att gå att gjuta.","s2":"Stark och tät betong för krävande miljöer, till exempel ute med frost och tösalt.","s3":"Ett bra allround-recept: stark nog för de flesta jobb och lätt att gjuta.","s4":"Lättare att gjuta, men tydligt svagare och porösare. Bättre inne än ute.","s5":"För mycket vatten: lätt att hälla men svag och porös. Undvik den utomhus.","details":"Visa diagram och detaljer","adv":"Avancerat: cementhalt, konsistens och cementtyp"},
         vct: "Vattencementtal (vct)", mode: "Hur ändrar du vct?", mode0: "Mer eller mindre vatten", mode1: "Mer eller mindre cement", cemKg: "Cementhalt", chartTitle: "Hållfasthet efter 28 dygn för olika vct (pricken är ditt val)", axisVct: "vattencementtal (vct)", axisMpa: "MPa", band: "vanligt område", overfull: "Det blir för mycket vatten och cement för att få plats i en kubikmeter. Sänk cementhalten.", kons: "Konsistens", cem: "Cementtyp", kStel: "Stel", kPlast: "Plastisk", kFlyt: "Flytande",
         rCem: "Cement", rWater: "Vatten", rAgg: "Sten och sand", rStr: "Hållfasthet efter 28 dygn", unitKgM3: "kg per m³", unitLM3: "liter per m³", approx: "ungefär",
         barTitle: "En kubikmeter betong, uppdelad på volym", air: "Luft", pores: "Cementpastan förstorad: de blå rutorna är porer (hålrum)", porPct: "porer i cementpastan",
@@ -70,7 +71,9 @@
           [1892, "frame", "Hela hus av armerad betong", "François Hennebique utvecklade ett system med pelare och balkar av armerad betong. Därefter kunde man bygga hela hus och broar på det sättet."],
           [1903, "tower", "Första betongskrapan", "Ingalls Building i Cincinnati blev ett av de första höghusen med betongstomme, 16 våningar och 64 meter högt."],
           [1928, "bridge", "Spänd betong", "Eugène Freyssinet tog patent på spännbetong, där stålet spänns i förväg. Det gjorde det möjligt att bygga längre och smäckrare broar."],
-          [2010, "burj", "Burj Khalifa", "Burj Khalifa i Dubai är 828 meter hög. Dess kärna och stomme är av höghållfast betong som pumpades upp i höjden."]
+          [1936, "dam", "Hooverdammen och kylrören", "När Hooverdammen i USA göts lades kylrör i betongen. Utan dem hade värmen från härdningen, enligt beräkningar på den tiden, tagit mer än hundra år att försvinna."],
+          [2010, "burj", "Burj Khalifa", "Burj Khalifa i Dubai är 828 meter hög. Dess kärna och stomme är av höghållfast betong som pumpades upp i höjden."],
+          [2016, "print", "Betong ur en skrivare", "Under 2010-talet började man skriva ut väggar, broar och hus i betong med stora 3D-skrivare, lager för lager och utan form.", "2010-talet"]
         ],
         ph: {
           h: "Hur högt upp i kupolen?", sz: "Snitt genom Pantheons kupol", thick: "Tjocklek ungefär", height: "Höjd över kupolens fot ungefär", mat: "Material",
@@ -91,7 +94,9 @@
           how: "Höjderna är de som vanligen anges för byggnaderna. Alla har betong som en viktig del av bärande delar, men inte alla är av bara betong (Burj Khalifas spira är av stål). Samma skala gäller för alla staplar."
         }
       },
+      chem: {"kiln":{"temp":"Temperatur i ugnen","hint":"Dra i reglaget eller klicka på ett steg och följ råmjölet genom ugnen.","after":"Klinkern kyls snabbt och mals sedan tillsammans med lite gips till cement.","how":"Förenklad bild av en roterugn. Temperaturerna är ungefärliga och skiljer sig mellan ugnar. Råmjölet matas in i den kalla änden (till höger), och lågan sitter i den heta änden (till vänster).","stages":[[20,"Torkning","råmjölet, malen kalksten och lera, värms upp och vattnet kokar bort."],[400,"Leran ger upp vatten","lermineralerna avger sitt kemiskt bundna vatten."],[650,"Kalcinering","kalkstenen sönderdelas, CaCO₃ blir CaO och CO₂. Här frigörs ungefär 60 procent av cementtillverkningens koldioxid, direkt ur stenen."],[950,"Belit bildas","kalken reagerar med kiseldioxid från leran och bildar belit, C₂S."],[1250,"Sintring och alit","en del av materialet smälter, alit (C₃S) bildas och klinkerkulor formas. Högsta temperatur är ungefär 1 450 °C."]]},"clinker":{"react":"När vatten tillsätts reagerar alit och belit och bildar C-S-H (kalciumsilikathydrat), som är det egentliga limmet i betongen, och kalciumhydroxid.","how":"Typiska värden för ett portlandcement (CEM I). Andelarna varierar mellan fabriker. Cementkemister skriver C för CaO, S för SiO₂, A för Al₂O₃ och F för Fe₂O₃.","phases":[["alit","Alit","C₃S, trikalciumsilikat",57,"#f37d03","Reagerar snabbt med vatten och ger det mesta av hållfastheten de första veckorna."],["belit","Belit","C₂S, dikalciumsilikat",18,"#d9a86a","Reagerar långsamt och fortsätter ge hållfasthet i månader och år."],["aluminat","Aluminat","C₃A, trikalciumaluminat",8,"#8fbfe0","Reagerar mycket snabbt och utvecklar värme. Utan gips skulle cementet stelna på några minuter."],["ferrit","Ferrit","C₄AF, tetrakalciumaluminatferrit",9,"#6b6466","Ger cementet dess gråa färg och bidrar lite till hållfastheten. Vitt cement har nästan ingen ferrit."],["gips","Gips","CaSO₄ · 2H₂O, kalciumsulfat",5,"#d8d1c4","Tillsätts vid malningen och styr hur snabbt cementet börjar stelna."],["ovrigt","Övrigt","bland annat magnesiumoxid och alkalier",3,"#a8a19a","Små mängder andra ämnen. I CEM II och CEM III ersätts en del av klinkern med till exempel kalksten eller slagg."]]},"carb":{"years":"Betongens ålder","yr":"år","exp":"Var sitter betongen?","exps":["Inomhus, torrt","Utomhus, skyddad mot regn","Utomhus, i regn","I mark eller vatten"],"qual":"Betongens kvalitet","quals":["Tät (vct 0,40)","Normal (vct 0,50)","Porös (vct 0,60)"],"cover":"Täckskikt till armeringen","depth":"Karbonatiseringsdjup","uptake":"Upptagen koldioxid","perM2":"kg per m² yta","car":"Motsvarar bilkörning","now":"Efter {t} år har koldioxid trängt in ungefär {d} mm i betongen.","rust":"Karbonatiseringen har nått armeringen. Där sjunker pH-värdet och stålet kan börja rosta om det finns fukt. Därför behövs tillräckligt täckskikt och tät betong.","safe":"Armeringen är fortfarande skyddad av den basiska betongen innanför.","indoor":"Inomhus går det fort, men betongen är torr, så risken för rost är liten.","slow":"Upptaget går långsamt och avtar med tiden, ungefär med roten ur tiden. Krossad betong efter rivning tar upp mer, eftersom ytan blir mycket större.","how":"Djupet räknas som d = k × √t, där k beror på miljö och betongens täthet (typiska värden 1 till 6 mm per √år). Upptaget räknas för 350 kg cement per m³, 65 procent kalk i cementet och att 75 procent av den kan karbonatiseras. En bil räknas med 0,12 kg koldioxid per km."},"lca":{"mil":true,"title":"Klimatpåverkan för en kubikmeter betong","unit":"kg koldioxidekvivalenter per m³","cem":"Cementtyp","cems":["CEM I (portlandcement)","CEM II/A-LL (med kalksten)","CEM II/B-S (med slagg)","CEM III/A (mycket slagg)"],"kg":"Cementhalt per m³","km":"Transport till bygget","up":"Upptag av koldioxid över livet","ups":["Räkna inte med","Under användning","Även efter rivning"],"r1":"Cement","r2":"Sten, sand och tillsatser","r3":"Råvarutransport och betongfabrik","r4":"Transport till bygget","r5":"Gjutning på plats","r6":"Upptag genom karbonatisering","car":"Det motsvarar ungefär {n} mil med en vanlig bil.","share":"Cementet står för ungefär {p} procent av utsläppen.","perKg":"Per kilo betong blir det ungefär {g} gram.","how":"Förenklade typvärden för att visa proportionerna, inte en miljövarudeklaration. Cement: 0,85, 0,72, 0,58 och 0,42 kg koldioxid per kg. Ballast och tillsatser 10 kg, råvarutransport och fabrik 8 kg, gjutning 3 kg per m³. Transport 0,09 kg per ton och km. Upptaget räknas som 15 respektive 25 procent av koldioxiden från kalcineringen. En bil räknas med 0,12 kg per km."}},
       illu: {
+        lca: {"cap":"Betongens livscykel: koldioxid släpps ut när cementet tillverkas, och en del tas upp igen när betongen används och efter rivning.","l":["Råvaror","Cementfabrik","Betong och transport","Byggande","Användning","Rivning och återvinning","CO₂ ut","CO₂ in","Livscykel","från vagga till grav"]},
         tbm: { cap: "En tunnelborrmaskin i genomskärning: skärhuvudet borrar, domkrafter trycker maskinen framåt mot den senaste ringen och en bandtransportör för ut massorna.", l: ["Skärhuvud", "Sköld", "Domkrafter", "Tubbingar", "Bandtransportör"] },
         roman: { cap: "Ett snitt genom en romersk mur: en kärna av betong med stenbitar, och tegel på båda sidorna.", l: ["Tegelbeklädnad", "Betongkärna: stenbitar (caementa) i bruk", "Kalk", "Vulkanisk aska (puzzolan)", "Vatten", "Stenbitar", "Receptet"] }
       },
@@ -218,6 +223,7 @@
     en: {
       mpa: "MPa", model: "How we calculate", disclaimer: "A simplified model to understand how things relate. It does not replace calculation, testing or the data sheet of a product.",
       vct: {
+        fr: {"presets":"Quick picks","p1":["Extra strong","w/c 0.40"],"p2":["Ordinary outdoor","w/c 0.50"],"p3":["Easy to pour","w/c 0.65"],"less":"Less water","more":"More water","add":"+ One bucket of water (10 litres)","remove":"− One bucket","perM3":"This is what goes into one cubic metre of concrete","bags":"bags of cement, 25 kg each","buckets":"buckets of water, 10 litres each","mStr":"Strength","mDen":"Density and lifespan","mWork":"Easy to pour","vVeryHigh":"Very high","vHigh":"High","vNormal":"Normal","vLow":"Low","dVery":"Very dense","dDense":"Dense","dMid":"Medium","dPorous":"Porous","wStiff":"Stiff, needs a plasticiser","wOk":"Just right","wFlow":"Flows easily","wRunny":"Runny, the stone can sink","s1":"Very strong and dense, but stiff. It usually needs a plasticiser to be cast.","s2":"Strong, dense concrete for demanding places, for example outdoors with frost and de-icing salt.","s3":"A good all-round recipe: strong enough for most jobs and easy to pour.","s4":"Easier to pour, but clearly weaker and more porous. Better indoors than out.","s5":"Too much water: easy to pour but weak and porous. Avoid it outdoors.","details":"Show chart and details","adv":"Advanced: cement content, consistency and cement type"},
         vct: "Water/cement ratio (w/c)", mode: "How do you change w/c?", mode0: "More or less water", mode1: "More or less cement", cemKg: "Cement content", chartTitle: "Strength after 28 days for different w/c (the dot is your choice)", axisVct: "water/cement ratio (w/c)", axisMpa: "MPa", band: "common range", overfull: "There is too much water and cement to fit in one cubic metre. Lower the cement content.", kons: "Consistency", cem: "Cement type", kStel: "Stiff", kPlast: "Plastic", kFlyt: "Flowing",
         rCem: "Cement", rWater: "Water", rAgg: "Stone and sand", rStr: "Strength after 28 days", unitKgM3: "kg per m³", unitLM3: "litres per m³", approx: "about",
         barTitle: "One cubic metre of concrete, split by volume", air: "Air", pores: "The cement paste enlarged: the blue squares are pores (voids)", porPct: "pores in the cement paste",
@@ -277,7 +283,9 @@
           [1892, "frame", "Whole buildings in reinforced concrete", "François Hennebique developed a system of columns and beams of reinforced concrete. After that, whole buildings and bridges could be built that way."],
           [1903, "tower", "The first concrete skyscraper", "The Ingalls Building in Cincinnati became one of the first tall buildings with a concrete frame, 16 storeys and 64 metres high."],
           [1928, "bridge", "Prestressed concrete", "Eugène Freyssinet patented prestressed concrete, where the steel is tensioned in advance. It made longer and slimmer bridges possible."],
-          [2010, "burj", "Burj Khalifa", "Burj Khalifa in Dubai is 828 metres tall. Its core and frame are made of high-strength concrete that was pumped up to height."]
+          [1936, "dam", "The Hoover Dam and its cooling pipes", "When the Hoover Dam in the USA was cast, cooling pipes were laid in the concrete. Without them the heat from hardening would, by the calculations of the time, have taken more than a hundred years to escape."],
+          [2010, "burj", "Burj Khalifa", "Burj Khalifa in Dubai is 828 metres tall. Its core and frame are made of high-strength concrete that was pumped up to height."],
+          [2016, "print", "Concrete from a printer", "During the 2010s people began to print walls, bridges and houses in concrete with large 3D printers, layer by layer and without formwork.", "2010s"]
         ],
         ph: {
           h: "How high up in the dome?", sz: "Cross-section of the Pantheon dome", thick: "Thickness about", height: "Height above the base of the dome about", mat: "Material",
@@ -298,7 +306,9 @@
           how: "The heights are the ones commonly stated for the structures. All have concrete as an important part of the load-bearing parts, but not all are made of concrete alone (the spire of Burj Khalifa is steel). The scale is the same for all bars."
         }
       },
+      chem: {"kiln":{"temp":"Temperature in the kiln","hint":"Drag the slider or click a step and follow the raw meal through the kiln.","after":"The clinker is cooled quickly and then ground with a little gypsum into cement.","how":"A simplified picture of a rotary kiln. The temperatures are approximate and differ between kilns. The raw meal is fed in at the cold end (right) and the flame is at the hot end (left).","stages":[[20,"Drying","the raw meal, ground limestone and clay, is heated and the water boils off."],[400,"The clay gives up water","the clay minerals release their chemically bound water."],[650,"Calcination","the limestone breaks down, CaCO₃ becomes CaO and CO₂. About 60 percent of the carbon dioxide from cement making is released here, straight out of the stone."],[950,"Belite forms","the lime reacts with silica from the clay and forms belite, C₂S."],[1250,"Sintering and alite","part of the material melts, alite (C₃S) forms and nodules of clinker take shape. The top temperature is about 1,450 °C."]]},"clinker":{"react":"When water is added, alite and belite react and form C-S-H (calcium silicate hydrate), the real glue in concrete, and calcium hydroxide.","how":"Typical values for a Portland cement (CEM I). The shares vary between plants. Cement chemists write C for CaO, S for SiO₂, A for Al₂O₃ and F for Fe₂O₃.","phases":[["alit","Alite","C₃S, tricalcium silicate",57,"#f37d03","Reacts quickly with water and gives most of the strength in the first weeks."],["belit","Belite","C₂S, dicalcium silicate",18,"#d9a86a","Reacts slowly and keeps adding strength for months and years."],["aluminat","Aluminate","C₃A, tricalcium aluminate",8,"#8fbfe0","Reacts very quickly and gives off heat. Without gypsum the cement would set within minutes."],["ferrit","Ferrite","C₄AF, tetracalcium aluminoferrite",9,"#6b6466","Gives cement its grey colour and adds a little strength. White cement contains almost no ferrite."],["gips","Gypsum","CaSO₄ · 2H₂O, calcium sulphate",5,"#d8d1c4","Added during grinding and controls how fast the cement starts to set."],["ovrigt","Other","for example magnesium oxide and alkalis",3,"#a8a19a","Small amounts of other substances. In CEM II and CEM III part of the clinker is replaced by, for example, limestone or slag."]]},"carb":{"years":"Age of the concrete","yr":"years","exp":"Where is the concrete?","exps":["Indoors, dry","Outdoors, sheltered from rain","Outdoors, in the rain","In the ground or water"],"qual":"Quality of the concrete","quals":["Dense (w/c 0.40)","Normal (w/c 0.50)","Porous (w/c 0.60)"],"cover":"Cover to the reinforcement","depth":"Carbonation depth","uptake":"Carbon dioxide taken up","perM2":"kg per m² of surface","car":"Equals driving a car","now":"After {t} years carbon dioxide has entered about {d} mm into the concrete.","rust":"The carbonation has reached the reinforcement. The pH drops there and the steel can start to rust if there is moisture. That is why enough cover and dense concrete are needed.","safe":"The reinforcement is still protected by the alkaline concrete further in.","indoor":"Indoors it goes fast, but the concrete is dry, so the risk of rust is small.","slow":"The uptake is slow and slows down further over time, roughly with the square root of time. Crushed concrete after demolition takes up more, because the surface becomes much larger.","how":"The depth is calculated as d = k × √t, where k depends on the environment and the density of the concrete (typical values 1 to 6 mm per √year). The uptake assumes 350 kg of cement per m³, 65 percent lime in the cement and that 75 percent of it can carbonate. A car is counted at 0.12 kg of carbon dioxide per km."},"lca":{"mil":false,"title":"Climate impact of one cubic metre of concrete","unit":"kg of CO₂ equivalents per m³","cem":"Cement type","cems":["CEM I (Portland cement)","CEM II/A-LL (with limestone)","CEM II/B-S (with slag)","CEM III/A (lots of slag)"],"kg":"Cement content per m³","km":"Transport to the site","up":"Carbon dioxide taken up over the life","ups":["Leave it out","During use","Also after demolition"],"r1":"Cement","r2":"Stone, sand and admixtures","r3":"Raw material transport and concrete plant","r4":"Transport to the site","r5":"Casting on site","r6":"Uptake through carbonation","car":"That is roughly {n} km in an ordinary car.","share":"The cement accounts for about {p} percent of the emissions.","perKg":"Per kilo of concrete it is about {g} grams.","how":"Simplified typical values to show the proportions, not an environmental product declaration. Cement: 0.85, 0.72, 0.58 and 0.42 kg of carbon dioxide per kg. Aggregate and admixtures 10 kg, raw material transport and plant 8 kg, casting 3 kg per m³. Transport 0.09 kg per tonne and km. The uptake is counted as 15 and 25 percent of the carbon dioxide from calcination. A car is counted at 0.12 kg per km."}},
       illu: {
+        lca: {"cap":"The life cycle of concrete: carbon dioxide is released when the cement is made, and some of it is taken up again while the concrete is in use and after demolition.","l":["Raw materials","Cement plant","Concrete and transport","Construction","Use","Demolition and recycling","CO₂ out","CO₂ in","Life cycle","from cradle to grave"]},
         tbm: { cap: "A tunnel boring machine in cross-section: the cutterhead bores, jacks push the machine forward against the latest ring and a conveyor belt carries the spoil out.", l: ["Cutterhead", "Shield", "Jacks", "Segments", "Conveyor belt"] },
         roman: { cap: "A cut through a Roman wall: a core of concrete with pieces of stone, and brick on both sides.", l: ["Brick facing", "Concrete core: pieces of stone (caementa) in mortar", "Lime", "Volcanic ash (pozzolana)", "Water", "Stone pieces", "The recipe"] }
       },
@@ -501,6 +511,31 @@
     var COLS = 30, ROWS = 14, rnd = seeded(7), cells = [], pores = sv("svg", { viewBox: "0 0 " + COLS * 10 + " " + ROWS * 10, class: "wchart wpores", role: "img", "aria-label": W.pores });
     for (var i = 0; i < COLS * ROWS; i++) { var r = rnd(), c = sv("rect", { x: (i % COLS) * 10 + 0.8, y: Math.floor(i / COLS) * 10 + 0.8, width: 8.4, height: 8.4, rx: 1.6 }); c._r = r; cells.push(c); pores.appendChild(c); }
     var porCap = el("p", { class: "wgt__cap" });
+    var F = W.fr;
+    function setVct(v) { S.vct = Math.max(0.35, Math.min(0.75, Math.round(v * 100) / 100)); sl.input.value = S.vct; sl.input.dispatchEvent(new Event("input", { bubbles: true })); }
+    var PRE = [[0.4, F.p1], [0.5, F.p2], [0.65, F.p3]], preRow = el("div", { class: "vpre", role: "group", "aria-label": F.presets });
+    var preBtns = PRE.map(function (p) { var b = el("button", { type: "button", class: "vpre__b" }, [el("strong", { text: p[1][0] }), el("span", { text: p[1][1] })]); b.addEventListener("click", function () { setVct(p[0]); }); preRow.appendChild(b); return b; });
+    var ends = el("div", { class: "vends", "aria-hidden": "true" }, [el("span", { text: F.less }), el("span", { text: F.more })]);
+    var addB = el("button", { type: "button", class: "vbtn", text: F.add }), remB = el("button", { type: "button", class: "vbtn vbtn--ghost", text: F.remove }), bucketRow = el("div", { class: "vbtns" }, [addB, remB]);
+    addB.addEventListener("click", function () { var m = calc(); setVct((m.water + 10) / m.cemKg); pulse(); });
+    remB.addEventListener("click", function () { var m = calc(); setVct((m.water - 10) / m.cemKg); pulse(); });
+    function vicon(kind) {
+      var s = sv("svg", { viewBox: "0 0 20 24", class: "vico", "aria-hidden": "true" });
+      if (kind === "bag") { s.appendChild(sv("path", { d: "M4,4 Q10,1 16,4 L18,21 Q10,24 2,21 Z", fill: "#d6cfc4", stroke: "#4a4446", "stroke-width": 1.1, "stroke-linejoin": "round" })); s.appendChild(sv("rect", { x: 4.5, y: 11, width: 11, height: 3.5, fill: "#f37d03" })); }
+      else { s.appendChild(sv("path", { d: "M5,8 C5,1.5 15,1.5 15,8", fill: "none", stroke: "#4a4446", "stroke-width": 1.1 })); s.appendChild(sv("path", { d: "M2.5,8 H17.5 L15.5,22 H4.5 Z", fill: "#8fbfe0", stroke: "#4a4446", "stroke-width": 1.1, "stroke-linejoin": "round" })); s.appendChild(sv("path", { d: "M3.5,11.5 H16.5", stroke: "#fff", "stroke-width": 1, opacity: 0.7 })); }
+      return s;
+    }
+    function mixRow(label) {
+      var n = el("strong", { class: "vrow__n" }), ic = el("span", { class: "vrow__icons" }), box = el("div", { class: "vrow" }, [n, el("span", { class: "vrow__l", text: label }), ic]);
+      return { box: box, set: function (val, kind) { n.textContent = num(val, 1); ic.innerHTML = ""; var k = Math.round(val), show = Math.min(28, k); for (var q = 0; q < show; q++) ic.appendChild(vicon(kind)); if (k > show) ic.appendChild(el("span", { class: "vrow__more", text: "+" + (k - show) })); } };
+    }
+    var rowBag = mixRow(F.bags), rowBucket = mixRow(F.buckets);
+    function meter(label) {
+      var fill = el("i"), v = el("span", { class: "vmeter__v" }), box = el("div", { class: "vmeter" }, [el("span", { class: "vmeter__l", text: label }), v, el("span", { class: "vmeter__bar" }, [fill])]);
+      return { box: box, set: function (p, txt, tone) { fill.style.width = Math.round(Math.max(4, Math.min(100, p * 100))) + "%"; v.textContent = txt; box.setAttribute("data-tone", tone); } };
+    }
+    var mStr = meter(F.mStr), mDen = meter(F.mDen), mWork = meter(F.mWork), verdict = el("p", { class: "vverdict", "aria-live": "polite" });
+    function pulse() { if (REDUCE) return; mStr.box.classList.remove("is-pulse"); void mStr.box.offsetWidth; mStr.box.classList.add("is-pulse"); }
     function calc() {
       var water, cemKg;
       if (S.mode === 0) { cemKg = S.cem; water = S.vct * cemKg; } else { water = WATER[S.k]; cemKg = water / S.vct; }
@@ -531,11 +566,24 @@
       if (m.cemKg > 450) notes.push(["warn", W.highCem]);
       if (S.vct > 0.6) notes.push(["warn", W.highVct]); else if (S.vct >= 0.4 && S.vct <= 0.55) notes.push(["ok", W.goodVct]);
       notes.forEach(function (n) { msg.appendChild(el("li", { class: "wmsg__" + n[0], text: n[1] })); });
+      rowBag.set(m.cemKg / 25, "bag"); rowBucket.set(m.water / 10, "bucket");
+      var fs = m.f, w = m.water;
+      mStr.set(fs / 70, (fs >= 50 ? F.vVeryHigh : fs >= 40 ? F.vHigh : fs >= 30 ? F.vNormal : F.vLow) + " · " + num(fs) + " " + T.mpa, fs >= 40 ? "good" : fs >= 30 ? "ok" : "bad");
+      mDen.set(1 - m.por / 0.5, m.por < 0.12 ? F.dVery : m.por < 0.22 ? F.dDense : m.por < 0.32 ? F.dMid : F.dPorous, m.por < 0.22 ? "good" : m.por < 0.32 ? "ok" : "bad");
+      mWork.set((w - 110) / 160, w < 150 ? F.wStiff : w < 190 ? F.wOk : w < 230 ? F.wFlow : F.wRunny, w < 150 ? "ok" : w < 230 ? "good" : "bad");
+      verdict.textContent = S.vct < 0.4 ? F.s1 : S.vct < 0.47 ? F.s2 : S.vct <= 0.55 ? F.s3 : S.vct <= 0.62 ? F.s4 : F.s5;
+      preBtns.forEach(function (b, q) { b.classList.toggle("is-on", Math.abs(PRE[q][0] - S.vct) < 0.005); b.setAttribute("aria-pressed", Math.abs(PRE[q][0] - S.vct) < 0.005 ? "true" : "false"); });
+      addB.disabled = S.vct >= 0.75; remB.disabled = S.vct <= 0.35; bucketRow.hidden = S.mode !== 0;
     }
-    app.appendChild(el("div", { class: "wgt__grid" }, [
-      el("div", { class: "wgt__ctl" }, [sl.box, mode.box, sCem.box, kons.box, cem.box, extra]),
-      el("div", { class: "wgt__out" }, [el("div", { class: "stats" }, [stC.box, stW.box, stA.box, stS.box]), el("p", { class: "wgt__cap", text: W.chartTitle }), chart, el("p", { class: "wgt__cap", text: W.barTitle }), bar, legend, pores, porCap, msg])
+    var det = el("details", { class: "vdet" }, [el("summary", { text: F.details }), el("div", { class: "vdet__body" }, [el("div", { class: "stats" }, [stC.box, stW.box, stA.box, stS.box]), el("p", { class: "wgt__cap", text: W.chartTitle }), chart, el("p", { class: "wgt__cap", text: W.barTitle }), bar, legend, pores, porCap, msg])]);
+    var adv = el("details", { class: "vdet vdet--adv" }, [el("summary", { text: F.adv }), el("div", { class: "vadv" }, [mode.box, sCem.box, kons.box, cem.box])]);
+    app.appendChild(preRow);
+    app.appendChild(el("div", { class: "wgt__grid vgrid" }, [
+      el("div", { class: "wgt__ctl" }, [sl.box, ends, bucketRow]),
+      el("div", { class: "wgt__out" }, [el("div", { class: "vmeters" }, [mStr.box, mDen.box, mWork.box]), verdict, el("p", { class: "vmix__h", text: F.perM3 }), rowBag.box, rowBucket.box, extra])
     ]));
+    app.appendChild(adv);
+    app.appendChild(det);
     app.appendChild(how(W.how));
     draw();
   }
@@ -769,7 +817,7 @@
     function pts(a) { return a.map(function (p) { return p[0].toFixed(1) + "," + p[1].toFixed(1); }).join(" "); }
     function style(attrs, ex) {
       var k; ex = ex || {};
-      if (!ex.ns) { attrs.stroke = ex.stroke || C.dark; attrs["stroke-width"] = ex.sw || 1.6; attrs["stroke-linejoin"] = "round"; }
+      if (!ex.ns) { attrs.stroke = ex.stroke || C.dark; attrs["stroke-width"] = (ex.sw || 1.6) * 0.85; attrs["stroke-linejoin"] = "round"; }
       for (k in ex) if (k !== "ns" && k !== "stroke" && k !== "sw") attrs[k] = ex[k];
       return attrs;
     }
@@ -788,7 +836,21 @@
       shadow: function (cx, cy, rx, ry) { return api.ellipse(cx, cy, rx, ry || rx / 7, C.dark, { ns: true, opacity: 0.15 }); },
       speckle: function (x, y, w2, h2, count, seed, cols, rmax, parent) { var r = seeded(seed); for (var i = 0; i < count; i++) api.circle(x + r() * w2, y + r() * h2, 0.5 + r() * (rmax || 1.4), cols[Math.floor(r() * cols.length)], { ns: true, opacity: 0.55 }, parent); },
       cube: function (x, y, sz, top, left, right) { var d = sz * 0.5; api.poly([[x, y], [x + sz, y - d], [x + 2 * sz, y], [x + sz, y + d]], top, { sw: 1.2 }); api.poly([[x, y], [x + sz, y + d], [x + sz, y + d + sz], [x, y + sz]], left, { sw: 1.2 }); api.poly([[x + sz, y + d], [x + 2 * sz, y], [x + 2 * sz, y + sz], [x + sz, y + d + sz]], right, { sw: 1.2 }); },
-      sky: function (ground, gy) { api.rect(0, 0, w, h, api.grad([[0, C.sky1], [1, C.sky2]]), { ns: true }); if (ground) api.rect(0, gy, w, h - gy, api.grad([[0, ground[0]], [1, ground[1]]]), { ns: true }); },
+      rgrad: function (stops) { var name = id + "r" + (++n), g = sv("radialGradient", { id: name, cx: "50%", cy: "50%", r: "50%" }); stops.forEach(function (st) { g.appendChild(sv("stop", { offset: st[0], "stop-color": st[1], "stop-opacity": st[2] == null ? 1 : st[2] })); }); defs.appendChild(g); return "url(#" + name + ")"; },
+      sky: function (ground, gy, glow) {
+        api.rect(0, 0, w, h, api.grad([[0, C.sky1], [1, C.sky2]]), { ns: true });
+        api.ellipse(glow ? glow[0] : w * 0.78, glow ? glow[1] : h * 0.22, w * 0.42, h * 0.5, api.rgrad([[0, "#ffd9a0", 0.55], [1, "#ffd9a0", 0]]), { ns: true });
+        if (ground) {
+          api.path("M0," + (gy - 6) + " C" + w * 0.15 + "," + (gy - 30) + " " + w * 0.3 + "," + (gy - 14) + " " + w * 0.45 + "," + (gy - 24) + " S" + w * 0.75 + "," + (gy - 38) + " " + w + "," + (gy - 16) + " V" + gy + " H0 Z", "#ead7bd", { ns: true, opacity: 0.75 });
+          api.path("M0," + (gy - 2) + " C" + w * 0.2 + "," + (gy - 16) + " " + w * 0.4 + "," + (gy - 4) + " " + w * 0.6 + "," + (gy - 12) + " S" + w * 0.9 + "," + (gy - 6) + " " + w + "," + (gy - 10) + " V" + gy + " H0 Z", "#dfc9aa", { ns: true, opacity: 0.6 });
+          api.rect(0, gy, w, h - gy, api.grad([[0, ground[0]], [1, ground[1]]]), { ns: true });
+          api.line(0, gy, w, gy, "rgba(255,255,255,.45)", 1);
+        }
+      },
+      cypress: function (x, gy, hh) { api.line(x, gy, x, gy - hh * 0.12, "#5d4a3a", 2.2); api.path("M" + x + "," + (gy - hh) + " C" + (x + hh * 0.17) + "," + (gy - hh * 0.6) + " " + (x + hh * 0.14) + "," + (gy - hh * 0.18) + " " + x + "," + (gy - hh * 0.1) + " C" + (x - hh * 0.14) + "," + (gy - hh * 0.18) + " " + (x - hh * 0.17) + "," + (gy - hh * 0.6) + " " + x + "," + (gy - hh) + " Z", api.grad([[0, "#6d9a5f"], [1, "#3f6a43"]], true), { sw: 1.1 }); },
+      pine: function (x, gy, hh) { api.path("M" + (x - 1.5) + "," + gy + " L" + (x - 1) + "," + (gy - hh * 0.75) + " L" + (x + 1) + "," + (gy - hh * 0.75) + " L" + (x + 1.5) + "," + gy + " Z", "#6a5442", { ns: true }); api.ellipse(x, gy - hh * 0.8, hh * 0.42, hh * 0.16, api.grad([[0, "#7aa368"], [1, "#4b7a4d"]]), { sw: 1.1 }); },
+      palm: function (x, gy, hh) { api.path("M" + x + "," + gy + " Q" + (x + 4) + "," + (gy - hh * 0.5) + " " + (x + 2) + "," + (gy - hh), "none", { stroke: "#7a5f45", sw: 3 }); [[-1, -0.2], [1, -0.25], [-0.7, 0.35], [0.8, 0.3], [0, -0.6]].forEach(function (d) { var tx = x + 2 + d[0] * hh * 0.45, ty = gy - hh + d[1] * hh * 0.3; api.path("M" + (x + 2) + "," + (gy - hh) + " Q" + ((x + 2 + tx) / 2) + "," + (ty - hh * 0.18) + " " + tx + "," + ty, "none", { stroke: "#4f8350", sw: 3.2, "stroke-linecap": "round" }); }); },
+      birds: function (x, y, k) { [[0, 0], [14, 6], [-10, 8]].forEach(function (b) { var bx = x + b[0] * (k || 1), by = y + b[1] * (k || 1), r = 4 * (k || 1); api.path("M" + (bx - r) + "," + by + " q" + r / 2 + "," + (-r / 1.6) + " " + r + ",0 q" + r / 2 + "," + (-r / 1.6) + " " + r + ",0", "none", { stroke: "#5d5456", sw: 1.3 }); }); },
       cloud: function (x, y, k) { var g = api.group({ opacity: 0.85 }); [[0, 0, 16, 7], [14, -4, 14, 8], [28, 0, 16, 7]].forEach(function (c) { api.ellipse(x + c[0] * (k || 1), y + c[1] * (k || 1), c[2] * (k || 1), c[3] * (k || 1), "#fff", { ns: true }, g); }); }
     };
     return api;
@@ -887,8 +949,30 @@
         for (var yy = tr[2] + 8; yy < 160; yy += 9) a.line(tr[0], yy, tr[1], yy, "rgba(59,52,54,.12)", 1);
       });
       a.poly([[158, 26], [162, 26], [160, 2]], C.dark, { sw: 1.2 });
-      a.cloud(60, 78, 1.1); a.cloud(250, 60, 1.2); a.cloud(180, 92, 0.8);
+      a.cloud(60, 78, 1.1); a.cloud(250, 60, 1.2); a.cloud(180, 92, 0.8); a.palm(112, 160, 34); a.palm(212, 160, 30);
+    } else if (key === "dam") {
+      a.sky(["#b9a98f", "#97876e"], 168, [250, 40]);
+      a.poly([[0, 40], [70, 60], [96, 168], [0, 168]], a.grad([[0, "#c8a985"], [1, "#9c7f5f"]], true), { sw: 1.4 }); a.poly([[320, 36], [250, 58], [226, 168], [320, 168]], a.grad([[0, "#9c7f5f"], [1, "#c8a985"]], true), { sw: 1.4 });
+      a.path("M70,62 L250,60 L238,70 L82,72 Z", a.grad([[0, C.water], [1, C.waterD]]), { sw: 1.2 });
+      a.path("M82,72 Q160,82 238,70 L226,168 Q160,180 96,168 Z", a.grad([[0, "#ece6dc"], [0.5, "#d6cfc3"], [1, "#b2aa9c"]], true), { sw: 1.6 });
+      for (i = 1; i < 7; i++) a.path("M" + (82 + i * 2.2) + "," + (72 + i * 14) + " Q160," + (82 + i * 15) + " " + (238 - i * 2) + "," + (70 + i * 14), "none", { stroke: "rgba(59,52,54,.22)", sw: 1 });
+      a.path("M96,168 Q160,180 226,168 L230,200 H92 Z", a.grad([[0, C.water], [1, C.waterD]]), { ns: true });
+      a.circle(268, 112, 30, "#fff", { sw: 2 }); a.rect(246, 96, 44, 32, "#e4ded3", { sw: 1.4 }); for (i = 0; i < 3; i++) a.path("M248," + (102 + i * 10) + " H288", "none", { stroke: "#5b9cc6", sw: 2.2 }); a.line(238, 118, 210, 120, "rgba(59,52,54,.45)", 1.2, { "stroke-dasharray": "3 3" }); a.birds(120, 34, 1);
+    } else if (key === "print") {
+      a.sky(["#cfc0a3", "#b6a585"], 160, [70, 50]); a.shadow(160, 166, 120, 6);
+      a.rect(40, 40, 8, 120, a.grad([[0, "#8a8184"], [1, "#5b5456"]], true), { sw: 1.2 }); a.rect(272, 40, 8, 120, a.grad([[0, "#8a8184"], [1, "#5b5456"]], true), { sw: 1.2 }); a.rect(36, 34, 248, 9, "#6b6466", { sw: 1.2 });
+      a.rect(150, 43, 22, 14, C.orange, { sw: 1.2 }); a.rect(158, 57, 6, 22, "#4a4446", { sw: 1 }); a.poly([[156, 79], [166, 79], [161, 87]], "#4a4446", { ns: true });
+      var lay = a.grad([[0, "#e6dfd3"], [1, "#c2b9aa"]]);
+      for (i = 0; i < 9; i++) { var yy2 = 156 - i * 8; a.rect(70, yy2 - 7, 180, 7.4, lay, { sw: 0.9, rx: 3.6 }); }
+      a.path("M84,91 Q122,84 161,87", "none", { stroke: C.orange, sw: 2, "stroke-dasharray": "2 3" }); a.rect(120, 108, 30, 40, "#9fc3d6", { sw: 1.2 }); a.line(135, 108, 135, 148, "#fff", 1, { opacity: 0.7 });
     }
+    if (key === "pantheon") { a.cypress(34, 164, 78); a.cypress(52, 164, 56); a.cypress(288, 164, 72); a.birds(250, 40, 0.9); }
+    if (key === "egypt") { a.palm(300, 160, 40); a.birds(70, 40, 1); }
+    if (key === "rome") { a.birds(160, 26, 0.9); }
+    if (key === "lighthouse") { a.birds(230, 36, 1); a.birds(70, 56, 0.8); }
+    if (key === "tower") { [100, 222].forEach(function (tx) { a.line(tx, 160, tx, 146, "#6a5442", 2); a.circle(tx, 140, 8, a.grad([[0, "#7aa368"], [1, "#4b7a4d"]]), { sw: 1 }); }); }
+    if (key === "bridge") { a.birds(90, 28, 1); }
+    if (key === "frame") { a.pine(292, 164, 44); }
     return a.svg;
   }
 
@@ -956,17 +1040,17 @@
 
   function buildTid(app) {
     var W = T.hist, EV = W.ev, S = { i: 0 };
-    var sl = slider(W.step, 0, EV.length - 1, 1, 0, function (v) { return yearText(EV[v][0]); }, function (v) { S.i = v; draw(); });
+    var sl = slider(W.step, 0, EV.length - 1, 1, 0, function (v) { return yearText(EV[v][0], EV[v][4]); }, function (v) { S.i = v; draw(); });
     var rail = el("ul", { class: "wrail" }), btns = [];
-    EV.forEach(function (e, i) { var b = el("button", { type: "button", class: "wrail__b", text: yearShort(e[0]) }); b.addEventListener("click", function () { go(i); }); btns.push(b); rail.appendChild(el("li", {}, [b])); });
+    EV.forEach(function (e, i) { var b = el("button", { type: "button", class: "wrail__b", text: yearShort(e[0], e[4]) }); b.addEventListener("click", function () { go(i); }); btns.push(b); rail.appendChild(el("li", {}, [b])); });
     var prev = el("button", { type: "button", class: "wbtn", text: "‹ " + W.prev }), next = el("button", { type: "button", class: "wbtn", text: W.next + " ›" });
     var art = el("div", { class: "wscene__box" }), yr = el("p", { class: "whist__yr" }), ttl = el("h3", { class: "whist__t" }), txt = el("p", { class: "whist__d", "aria-live": "polite" });
-    function yearText(y) { return y < 0 ? W.ca + " " + num(-y) + " " + W.bc : (y < 1000 ? W.ca + " " : "") + y; }
-    function yearShort(y) { return y < 0 ? num(-y) + " " + W.bc : String(y); }
+    function yearText(y, lab) { return lab || (y < 0 ? W.ca + " " + num(-y) + " " + W.bc : (y < 1000 ? W.ca + " " : "") + y); }
+    function yearShort(y, lab) { return lab || (y < 0 ? num(-y) + " " + W.bc : String(y)); }
     function go(i) { S.i = Math.max(0, Math.min(EV.length - 1, i)); sl.input.value = S.i; sl.input.dispatchEvent(new Event("input", { bubbles: true })); }
     prev.addEventListener("click", function () { go(S.i - 1); }); next.addEventListener("click", function () { go(S.i + 1); });
     function draw() {
-      var e = EV[S.i]; art.innerHTML = ""; art.appendChild(scene(e[1])); yr.textContent = yearText(e[0]); ttl.textContent = e[2]; txt.textContent = e[3];
+      var e = EV[S.i]; art.innerHTML = ""; art.appendChild(scene(e[1])); yr.textContent = yearText(e[0], e[4]); ttl.textContent = e[2]; txt.textContent = e[3];
       btns.forEach(function (b, i) { b.classList.toggle("is-on", i === S.i); b.setAttribute("aria-current", i === S.i ? "true" : "false"); });
       prev.disabled = S.i === 0; next.disabled = S.i === EV.length - 1;
     }
@@ -1131,7 +1215,7 @@
   }
   function buildIllu(app, box) {
     var key = box && box.getAttribute("data-scene"), D = T.illu[key]; if (!D) return;
-    var svgE = key === "tbm" ? tbmScene(D.l) : romanScene(D.l), fig = el("figure", { class: "wfig" }, [svgE, el("figcaption", { class: "wfig__c", text: D.cap })]);
+    var svgE = key === "tbm" ? tbmScene(D.l) : key === "lca" ? lcaScene(D.l) : romanScene(D.l), fig = el("figure", { class: "wfig" }, [svgE, el("figcaption", { class: "wfig__c", text: D.cap })]);
     app.appendChild(fig);
   }
 
@@ -1221,8 +1305,155 @@
     draw();
   }
 
-  var BUILD = { vct: buildVct, harda: buildHarda, injektering: buildInj, atgang: buildAtg, vadarvad: buildVad, volym: buildVolym, klass: buildKlass, tidslinje: buildTid, pantheon: buildPantheon, armering: buildArm, hojd: buildHojd, tunnelcykel: buildTunCycle, tunnelval: buildTunVal, spruta: buildSpruta, illu: buildIllu };
-  if (window.__WIDGET_TEST) { window.__WIDGET_TEST.scene = scene; window.__WIDGET_TEST.tunnelScene = tunnelScene; window.__WIDGET_TEST.tbmScene = tbmScene; window.__WIDGET_TEST.romanScene = romanScene; window.__WIDGET_TEST.T = T; }
+  // ---------- 11. from limestone to cement: the kiln ----------
+  function buildUgn(app) {
+    var W = T.chem.kiln, S = { t: 20 }, ST = W.stages;
+    var sl = slider(W.temp, 20, 1450, 10, 20, function (v) { return num(v) + " °C"; }, function (v) { S.t = v; draw(); });
+    var A = art(420, 170, "wchart wkiln");
+    A.rect(0, 0, 420, 170, A.grad([[0, "#fff7ea"], [1, "#f6ead5"]]), { ns: true });
+    A.rect(0, 146, 420, 24, A.grad([[0, "#cdbb94"], [1, "#a8966c"]]), { ns: true });
+    A.rect(130, 112, 14, 34, "#8f877c", { sw: 1.2 }); A.rect(292, 104, 14, 42, "#8f877c", { sw: 1.2 });
+    A.rect(384, 20, 30, 126, A.grad([[0, "#cfc7ba"], [1, "#a39a8c"]], true), { sw: 1.4 }); [40, 68, 96].forEach(function (y) { A.poly([[380, y], [418, y], [399, y + 16]], "#bdb4a6", { sw: 1.1 }); });
+    var kg = A.group({ transform: "rotate(-5 210 92)" });
+    A.rect(40, 70, 340, 44, A.grad([[0, "#ffe3a8"], [0.22, "#f6a24a"], [0.55, "#c4b39d"], [1, "#9a9082"]], true), { sw: 1.6, rx: 8 }, kg);
+    A.rect(40, 70, 340, 44, A.grad([[0, "rgba(255,255,255,.5)"], [0.45, "rgba(255,255,255,0)"], [1, "rgba(0,0,0,.2)"]]), { ns: true, rx: 8 }, kg);
+    [110, 228, 330].forEach(function (x) { A.rect(x, 66, 9, 52, "#6b6466", { sw: 1 }, kg); });
+    A.poly([[40, 80], [14, 72], [2, 92], [14, 112], [40, 104]], C.orange, { sw: 1.2 }, kg); A.poly([[36, 86], [18, 84], [10, 92], [18, 100], [36, 98]], "#ffe08a", { ns: true }, kg);
+    var moving = sv("g"); kg.appendChild(moving);
+    var steps = el("ul", { class: "wkiln__steps" }), btns = [];
+    ST.forEach(function (st) { var b = el("button", { type: "button", class: "seg__b", text: st[1] }); b.addEventListener("click", function () { sl.input.value = st[0] + 40; sl.input.dispatchEvent(new Event("input", { bubbles: true })); }); btns.push(b); steps.appendChild(el("li", {}, [b])); });
+    var big = el("p", { class: "wgt__big", "aria-live": "polite" }), detail = el("p", { class: "wkiln__d" });
+    function idx(t) { var k = 0; ST.forEach(function (st, i) { if (t >= st[0]) k = i; }); return k; }
+    function draw() {
+      var t = S.t, k = idx(t), x = 372 - (t - 20) / 1430 * 318, col = t < 650 ? "#d8d0c2" : t < 950 ? "#f1ece2" : t < 1250 ? "#d3b98f" : "#ffb347", i, rr = seeded(3);
+      moving.innerHTML = "";
+      for (i = 0; i < 9; i++) A.circle(x - 10 + rr() * 22, 104 - rr() * 9, 2.4 + rr() * 2, t >= 1400 && i % 2 ? "#4a4446" : col, { sw: 0.8 }, moving);
+      if (t >= 650 && t < 1000) for (i = 0; i < 3; i++) { var bx = x - 12 + i * 12, by = 56 - i * 9; A.circle(bx, by, 7, "rgba(120,114,108,.28)", { ns: true }, moving); var tx = A.add("text", { x: bx, y: by + 3, "text-anchor": "middle", class: "wkiln__co2" }, moving); tx.textContent = "CO₂"; }
+      var lab = A.add("text", { x: x, y: 64, "text-anchor": "middle", class: "wcall" }, moving); lab.textContent = num(t) + " °C";
+      big.textContent = ST[k][1] + ": " + ST[k][2];
+      detail.textContent = t >= 1400 ? W.after : W.hint;
+      btns.forEach(function (b, i) { b.classList.toggle("is-on", i === k); });
+    }
+    app.appendChild(el("div", { class: "wgt__one" }, [steps, A.svg, sl.box, big, detail]));
+    app.appendChild(how(W.how));
+    draw();
+  }
+
+  // ---------- 12. what cement is made of ----------
+  function buildKlinker(app) {
+    var W = T.chem.clinker, P = W.phases, S = { i: 0 }, A = art(240, 240, "wchart wdonut"), cx = 120, cy = 120, R = 104, r = 62, segs = [];
+    var tot = P.reduce(function (a, p) { return a + p[3]; }, 0), a0 = -Math.PI / 2;
+    function pt(rad, a) { return (cx + rad * Math.cos(a)).toFixed(2) + "," + (cy + rad * Math.sin(a)).toFixed(2); }
+    P.forEach(function (p, i) {
+      var a1 = a0 + p[3] / tot * Math.PI * 2, large = a1 - a0 > Math.PI ? 1 : 0;
+      var seg = A.path("M" + pt(R, a0) + " A" + R + "," + R + " 0 " + large + " 1 " + pt(R, a1) + " L" + pt(r, a1) + " A" + r + "," + r + " 0 " + large + " 0 " + pt(r, a0) + " Z", p[4], { stroke: "#fff", sw: 2.4, class: "wdonut__s", tabindex: 0, role: "button", "aria-label": p[1] + " " + p[3] + " %" });
+      seg.addEventListener("click", function () { S.i = i; draw(); }); seg.addEventListener("keydown", function (e) { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); S.i = i; draw(); } });
+      segs.push(seg); a0 = a1;
+    });
+    var cBig = A.add("text", { x: cx, y: cy + 4, "text-anchor": "middle", class: "wdonut__v" }), cSmall = A.add("text", { x: cx, y: cy + 24, "text-anchor": "middle", class: "wdonut__l" });
+    var legend = el("ul", { class: "wdonut__leg" }), lbtns = [];
+    P.forEach(function (p, i) { var b = el("button", { type: "button", class: "wdonut__b" }, [el("i", { style: "background:" + p[4] }), el("span", { text: p[1] }), el("b", { text: p[3] + " %" })]); b.addEventListener("click", function () { S.i = i; draw(); }); lbtns.push(b); legend.appendChild(el("li", {}, [b])); });
+    var pName = el("h3", { class: "wdonut__h" }), pForm = el("p", { class: "wdonut__f" }), pText = el("p", { class: "wdonut__t", "aria-live": "polite" });
+    function draw() {
+      var p = P[S.i];
+      segs.forEach(function (s, i) { s.setAttribute("opacity", i === S.i ? 1 : 0.42); s.setAttribute("transform", i === S.i ? "translate(" + (Math.cos(0) * 0) + " 0)" : ""); });
+      lbtns.forEach(function (b, i) { b.classList.toggle("is-on", i === S.i); });
+      cBig.textContent = p[3] + " %"; cSmall.textContent = p[1]; pName.textContent = p[1]; pForm.textContent = p[2]; pText.textContent = p[5];
+    }
+    app.appendChild(el("div", { class: "wgt__grid wdonut__grid" }, [el("div", { class: "wgt__ctl" }, [A.svg]), el("div", { class: "wgt__out" }, [legend, el("div", { class: "wdonut__panel" }, [pName, pForm, pText]), el("p", { class: "wgt__extra", text: W.react })])]));
+    app.appendChild(how(W.how));
+    draw();
+  }
+
+  // ---------- 13. carbonation: concrete takes up CO2 ----------
+  function buildKarb(app) {
+    var W = T.chem.carb, S = { t: 50, e: 1, q: 1, c: 30 }, K = [5, 4, 1.5, 0.8], Q = [0.6, 1, 1.5];
+    var sT = slider(W.years, 0, 100, 1, 50, function (v) { return num(v) + " " + W.yr; }, function (v) { S.t = v; draw(); });
+    var sE = select(W.exp, W.exps, 1, function (i) { S.e = i; draw(); });
+    var sQ = segmented(W.qual, W.quals, 1, function (i) { S.q = i; draw(); });
+    var sC = slider(W.cover, 10, 50, 1, 30, function (v) { return num(v) + " mm"; }, function (v) { S.c = v; draw(); });
+    var stD = stat(W.depth, "mm"), stU = stat(W.uptake, W.perM2), stCar = stat(W.car, "km"), msg = el("ul", { class: "wmsg" }), big = el("p", { class: "wgt__big", "aria-live": "polite" });
+    var MM = 3.6, X0 = 44, A = art(420, 200, "wchart wkarb");
+    A.rect(0, 0, 420, 200, A.grad([[0, "#f3f7fa"], [1, "#e6eef3"]]), { ns: true });
+    var wall = A.rect(X0, 14, 420 - X0, 172, A.grad([[0, "#d9d3c9"], [1, "#b9b1a5"]], true), { sw: 1.4 });
+    A.speckle(X0, 16, 420 - X0, 168, 90, 12, ["#a69d90", "#efe9df", "#8b8378"], 1.6);
+    var zone = A.rect(X0, 14, 0, 172, "rgba(255,255,255,.55)", { ns: true }), front = A.line(X0, 14, X0, 186, C.orange, 2.4, { "stroke-dasharray": "5 4" });
+    for (var i = 0; i < 4; i++) { var y = 40 + i * 40; A.line(8, y, X0 - 6, y, "#5b9cc6", 2); A.poly([[X0 - 6, y - 4], [X0, y], [X0 - 6, y + 4]], "#5b9cc6", { ns: true }); }
+    var co2 = A.add("text", { x: 20, y: 26, "text-anchor": "middle", class: "wkiln__co2" }); co2.textContent = "CO₂";
+    var bars = [60, 140].map(function (y) { return A.circle(0, y, 8, "#8a8184", { sw: 1.4 }); });
+    var ticks = A.group(); [0, 20, 40, 60, 80, 100].forEach(function (mm) { var tx = X0 + mm * MM; if (tx > 416) return; A.line(tx, 186, tx, 192, C.dark, 1, null, ticks); var t = A.add("text", { x: tx, y: 199, "text-anchor": "middle", class: "wtxt" }, ticks); t.textContent = mm + " mm"; });
+    function draw() {
+      var d = K[S.e] * Q[S.q] * Math.sqrt(S.t), up = d / 1000 * 350 * 0.65 * 0.75 * 44 / 56, reached = d >= S.c;
+      zone.setAttribute("width", Math.min(420 - X0, d * MM)); front.setAttribute("x1", X0 + d * MM); front.setAttribute("x2", X0 + d * MM);
+      bars.forEach(function (b) { b.setAttribute("cx", X0 + S.c * MM); b.setAttribute("fill", reached && S.e !== 0 ? "#b5552f" : "#8a8184"); });
+      stD.set(num(d, d < 10 ? 1 : 0)); stU.set(num(up, 1)); stCar.set(num(up / 0.12));
+      big.textContent = W.now.replace("{t}", num(S.t)).replace("{d}", num(d, d < 10 ? 1 : 0));
+      msg.innerHTML = "";
+      if (S.e === 0) msg.appendChild(el("li", { class: "wmsg__info", text: W.indoor }));
+      if (reached && S.e !== 0) msg.appendChild(el("li", { class: "wmsg__warn", text: W.rust })); else if (S.e !== 0) msg.appendChild(el("li", { class: "wmsg__ok", text: W.safe }));
+      msg.appendChild(el("li", { class: "wmsg__info", text: W.slow }));
+    }
+    app.appendChild(el("div", { class: "wgt__grid" }, [el("div", { class: "wgt__ctl" }, [sT.box, sE.box, sQ.box, sC.box]), el("div", { class: "wgt__out" }, [big, A.svg, el("div", { class: "stats" }, [stD.box, stU.box, stCar.box]), msg])]));
+    app.appendChild(how(W.how));
+    draw();
+  }
+
+  // ---------- 14. the climate footprint of a cubic metre ----------
+  function buildKlimat(app) {
+    var W = T.chem.lca, S = { c: 0, kg: 330, km: 25, u: 1 }, CEM = [[0.85, 0.95], [0.72, 0.82], [0.58, 0.68], [0.42, 0.45]], UP = [0, 0.15, 0.25];
+    var sCem = select(W.cem, W.cems, 0, function (i) { S.c = i; draw(); });
+    var sKg = slider(W.kg, 250, 450, 10, 330, function (v) { return num(v) + " kg"; }, function (v) { S.kg = v; draw(); });
+    var sKm = slider(W.km, 0, 100, 5, 25, function (v) { return num(v) + " km"; }, function (v) { S.km = v; draw(); });
+    var sU = segmented(W.up, W.ups, 1, function (i) { S.u = i; draw(); });
+    var total = el("p", { class: "wlca__total", "aria-live": "polite" }), rows = el("ul", { class: "wlca" }), cmp = el("ul", { class: "wmsg" });
+    function draw() {
+      var cem = S.kg * CEM[S.c][0], agg = 10, plant = 8, tr = 2.4 * S.km * 0.09, cast = 3, up = -S.kg * CEM[S.c][1] * 0.53 * UP[S.u];
+      var parts = [[W.r1, cem, "c"], [W.r2, agg, "o"], [W.r3, plant, "o"], [W.r4, tr, "o"], [W.r5, cast, "o"], [W.r6, up, "u"]], sum = 0, max = 0;
+      parts.forEach(function (p) { sum += p[1]; max = Math.max(max, Math.abs(p[1])); });
+      rows.innerHTML = "";
+      parts.forEach(function (p) { if (p[2] === "u" && !p[1]) return; rows.appendChild(el("li", { class: "wlca__r wlca__r--" + p[2] }, [el("span", { class: "wlca__l", text: p[0] }), el("span", { class: "wlca__bar" }, [el("i", { style: "width:" + Math.max(1.5, Math.abs(p[1]) / max * 100) + "%" })]), el("b", { text: (p[1] < 0 ? "−" : "") + num(Math.abs(p[1])) + " kg" })])); });
+      total.innerHTML = ""; total.appendChild(el("strong", { text: num(sum) })); total.appendChild(el("span", { text: W.unit }));
+      cmp.innerHTML = "";
+      cmp.appendChild(el("li", { class: "wmsg__info", text: W.car.replace("{n}", num(W.mil ? sum / 1.2 : sum / 0.12)) }));
+      cmp.appendChild(el("li", { class: "wmsg__info", text: W.share.replace("{p}", num(cem / (sum - up) * 100)) }));
+      cmp.appendChild(el("li", { class: "wmsg__info", text: W.perKg.replace("{g}", num(sum / 2.4)) }));
+    }
+    app.appendChild(el("div", { class: "wgt__grid" }, [el("div", { class: "wgt__ctl" }, [sCem.box, sKg.box, sKm.box, sU.box]), el("div", { class: "wgt__out" }, [el("p", { class: "vmix__h", text: W.title }), total, rows, cmp])]));
+    app.appendChild(how(W.how));
+    draw();
+  }
+
+  // ---------- life cycle illustration ----------
+  function lcaScene(L) {
+    var a = art(460, 300, "wchart wlcafig"), cx = 230, cy = 150, RX = 165, RY = 104, i, nodes = [];
+    a.rect(0, 0, 460, 300, a.grad([[0, "#fff7ea"], [1, "#f4ead9"]]), { ns: true });
+    a.ellipse(cx, cy, RX, RY, "none", { stroke: "#cfc6b8", sw: 2.4, "stroke-dasharray": "2 7", "stroke-linecap": "round" });
+    var ang = [-90, -30, 30, 90, 150, 210];
+    ang.forEach(function (d, k) { var r = d * Math.PI / 180; nodes.push([cx + RX * Math.cos(r), cy + RY * Math.sin(r)]); });
+    for (i = 0; i < 6; i++) { var m = (ang[i] + 30) * Math.PI / 180, mx = cx + RX * Math.cos(m), my = cy + RY * Math.sin(m), tg = Math.atan2(RY * Math.cos(m), -RX * Math.sin(m)); a.add("polygon", { points: "-5,-5 6,0 -5,5", fill: "#a39a8c", transform: "translate(" + mx.toFixed(1) + " " + my.toFixed(1) + ") rotate(" + (tg * 180 / Math.PI).toFixed(1) + ")" }); }
+    var grad = a.grad([[0, "#ffffff"], [1, "#f1ebe1"]]);
+    nodes.forEach(function (p, k) {
+      a.circle(p[0], p[1], 27, grad, { sw: 1.4 });
+      var g = a.group({ transform: "translate(" + p[0].toFixed(1) + " " + p[1].toFixed(1) + ")" });
+      if (k === 0) { a.poly([[-15, 10], [-5, -8], [3, 2], [9, -4], [16, 10]], "#b9a98a", { sw: 1.1 }, g); a.circle(-2, 7, 3, "#8a8184", { ns: true }, g); a.circle(5, 8, 2.4, "#a69d90", { ns: true }, g); }
+      if (k === 1) { a.rect(-15, -2, 30, 13, "#cfc6b8", { sw: 1.1 }, g); a.rect(5, -16, 6, 15, "#a39a8c", { sw: 1.1 }, g); a.circle(10, -20, 4, "rgba(120,114,108,.35)", { ns: true }, g); a.rect(-10, 3, 6, 5, C.glass, { sw: 0.8 }, g); }
+      if (k === 2) { a.rect(-16, -2, 22, 10, C.orange, { sw: 1.1 }, g); a.rect(6, -4, 9, 12, C.glass, { sw: 1 }, g); a.ellipse(-6, -6, 9, 6, "#d6cfc3", { sw: 1.1 }, g); a.circle(-10, 10, 3, "#2d282a", { ns: true }, g); a.circle(8, 10, 3, "#2d282a", { ns: true }, g); }
+      if (k === 3) { a.line(-6, 14, -6, -16, C.dark, 2.2, null, g); a.line(-12, -14, 14, -14, C.dark, 2.2, null, g); a.line(10, -14, 10, -4, C.dark, 1.2, null, g); a.rect(6, -4, 8, 6, C.orange, { sw: 0.8 }, g); a.rect(-14, 6, 14, 8, "#d6cfc3", { sw: 1 }, g); }
+      if (k === 4) { a.rect(-12, -12, 24, 26, "#d6cfc3", { sw: 1.1 }, g); for (var q = 0; q < 3; q++) for (var w2 = 0; w2 < 2; w2++) a.rect(-8 + w2 * 10, -8 + q * 7, 6, 4, C.glass, { sw: 0.6 }, g); }
+      if (k === 5) { a.path("M-10,-4 A11,11 0 0 1 10,-4", "none", { stroke: "#4b9a55", sw: 2.2 }, g); a.poly([[10, -10], [13, -2], [5, -3]], "#4b9a55", { ns: true }, g); a.path("M10,5 A11,11 0 0 1 -10,5", "none", { stroke: "#4b9a55", sw: 2.2 }, g); a.poly([[-10, 11], [-13, 3], [-5, 4]], "#4b9a55", { ns: true }, g); }
+      if (L) { var t = a.add("text", { x: p[0], y: p[1] + (k === 3 ? 44 : k === 0 ? -36 : 42), "text-anchor": "middle", class: "wcall" }); t.textContent = L[k]; }
+    });
+    function arrow(x, y, up, col) { a.line(x, y, x, y + (up ? -26 : 26), col, 3); a.poly(up ? [[x - 6, y - 22], [x + 6, y - 22], [x, y - 32]] : [[x - 6, y + 22], [x + 6, y + 22], [x, y + 32]], col, { ns: true }); }
+    arrow(nodes[1][0] + 30, nodes[1][1] - 20, true, "#8a8184"); arrow(nodes[0][0] + 40, nodes[0][1] + 8, true, "#8a8184");
+    arrow(nodes[5][0] - 54, nodes[5][1] - 24, false, "#4b9a55"); arrow(nodes[4][0] - 54, nodes[4][1] - 24, false, "#4b9a55");
+    if (L) { var o = a.add("text", { x: nodes[1][0] + 30, y: nodes[1][1] - 56, "text-anchor": "middle", class: "wcall" }); o.textContent = L[6]; var n2 = a.add("text", { x: nodes[5][0] - 54, y: nodes[5][1] - 32, "text-anchor": "middle", class: "wcall wcall--g" }); n2.textContent = L[7]; }
+    var c1 = a.add("text", { x: cx, y: cy - 2, "text-anchor": "middle", class: "wlcafig__c" }); c1.textContent = L ? L[8] : "";
+    var c2 = a.add("text", { x: cx, y: cy + 18, "text-anchor": "middle", class: "wtxt" }); c2.textContent = L ? L[9] : "";
+    return a.svg;
+  }
+
+  var BUILD = { vct: buildVct, harda: buildHarda, injektering: buildInj, atgang: buildAtg, vadarvad: buildVad, volym: buildVolym, klass: buildKlass, tidslinje: buildTid, pantheon: buildPantheon, armering: buildArm, hojd: buildHojd, tunnelcykel: buildTunCycle, tunnelval: buildTunVal, spruta: buildSpruta, illu: buildIllu, ugn: buildUgn, klinker: buildKlinker, karbonatisering: buildKarb, klimat: buildKlimat };
+  if (window.__WIDGET_TEST) { window.__WIDGET_TEST.scene = scene; window.__WIDGET_TEST.tunnelScene = tunnelScene; window.__WIDGET_TEST.tbmScene = tbmScene; window.__WIDGET_TEST.romanScene = romanScene; window.__WIDGET_TEST.lcaScene = lcaScene; window.__WIDGET_TEST.T = T; }
   [].forEach.call(document.querySelectorAll("[data-widget]"), function (box) {
     var app = box.querySelector(".wgt__app"), fn = BUILD[box.getAttribute("data-widget")];
     if (!app || !fn) return;

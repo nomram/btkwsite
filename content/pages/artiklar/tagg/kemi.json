@@ -1,0 +1,41 @@
+{
+  "path": "/artiklar/tagg/kemi",
+  "updated": "2026-11-23",
+  "template": "articles",
+  "order": 10,
+  "published": true,
+  "hideIn": [
+    "es",
+    "no",
+    "lt",
+    "lv",
+    "et",
+    "ru"
+  ],
+  "i18n": {
+    "sv": {
+      "title": "Artiklar om Kemi",
+      "h1": "Artiklar om Kemi",
+      "seoTitle": "Artiklar och guider om Kemi | Betongakuten",
+      "description": "Alla artiklar och guider om Kemi från Betongakuten. Sök eller filtrera på fler taggar.",
+      "blocks": [
+        {
+          "type": "articles",
+          "tag": "kemi"
+        }
+      ]
+    },
+    "en": {
+      "title": "Articles about Chemistry",
+      "h1": "Articles about Chemistry",
+      "seoTitle": "Articles and guides about Chemistry | Betongakuten",
+      "description": "All articles and guides about Chemistry from Betongakuten. Search or filter by more tags.",
+      "blocks": [
+        {
+          "type": "articles",
+          "tag": "kemi"
+        }
+      ]
+    }
+  }
+}
