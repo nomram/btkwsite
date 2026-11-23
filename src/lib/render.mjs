@@ -210,6 +210,15 @@ function cardsAreSquare(ctx, b) {
 // the other. Item fields: photo (picture), photoX / photoY (percent: the part of the picture that stays in view), photoZoom (1 = the whole frame).
 // Without a photo the logo is shown large on a light surface. Set by the alignment app (tools/fx-align.mjs, tab Thumbnails).
 const numOr = (v, d) => (v !== undefined && v !== null && v !== "" && Number.isFinite(Number(v)) ? Number(v) : d);
+// A compact wall of brand logos (home page): logo and name, linking to the brand
+function renderLogoWall(ctx, b) {
+  const items = (b.items || []).filter((it) => shown(ctx, it.href));
+  return `<ul class="logowall">${items.map((it) => { const title = it.title || titleOf(ctx, it.href); return `<li><a class="logowall__a" href="${esc(localizeHref(ctx, it.href))}"><span class="logowall__img">${it.image ? imgTag(ctx, it.image, it.alt || title, { sizes: "180px" }) : ""}</span><span class="logowall__n">${esc(title)}</span></a></li>`; }).join("")}</ul>`;
+}
+// "How it works": numbered steps on a dark band
+function renderSteps(ctx, b) {
+  return `<section class="container steps">${b.title ? `<h2 class="steps__h">${esc(b.title)}</h2>` : ""}${b.intro ? `<p class="steps__intro">${esc(b.intro)}</p>` : ""}<ol class="steps__list">${(b.items || []).map((it, i) => `<li class="steps__i"><span class="steps__n" aria-hidden="true">${i + 1}</span><h3 class="steps__t">${esc(it.title)}</h3><p class="steps__d">${esc(it.text)}</p></li>`).join("")}</ol>${b.button && b.href ? `<p class="steps__cta"><a class="btn" href="${esc(localizeHref(ctx, b.href))}">${esc(b.button)}${ICON.arrow}</a></p>` : ""}</section>`;
+}
 function compactCard(ctx, it, idx, title, href) {
   const pg = ctx.pages && ctx.pages.get(it.href), logo = pg && pg.logo;
   const lvl = ctx._cardLevel || 3;
@@ -221,6 +230,8 @@ function compactCard(ctx, it, idx, title, href) {
   return `<li class="card card--photo"><a class="card__link" href="${esc(href)}">${media}<span class="card__body"><h${lvl} class="card__title"${editFld(ctx, `items.${idx}.title`)}>${esc(title)}</h${lvl}>${text}<span class="card__foot"><span class="card__more">${esc(ctx.ui.read_more || "Läs mer")}${ICON.arrow}</span>${mini}</span></span></a></li>`;
 }
 function renderCards(ctx, b) {
+  if (b.style === "logos" && !ctx.edit) return renderLogoWall(ctx, b);
+  const photo = b.style === "photo" && !ctx.edit;
   const square = cardsAreSquare(ctx, b);
   const shownItems = (b.items || []).map((it, idx) => [it, idx]).filter(([it]) => shown(ctx, it.href));
   const li = ([it, idx]) => {
@@ -229,13 +240,13 @@ function renderCards(ctx, b) {
     const cinfo = it.image && !ctx.edit ? ctx.image(it.image) : null;
     const cbaked = !!(cinfo && (square ? cinfo.tilesq : cinfo.tile43));
     const img = cbaked ? `<img class="card__img" src="/assets/img/${esc(cinfo.name)}-${square ? "tilesq" : "tile43"}.webp" width="640" height="${square ? 640 : 480}" alt="${esc(it.alt || title)}" loading="lazy" decoding="async">` : it.image ? imgTag(ctx, it.image, it.alt || title, { cls: "card__img", sizes: "(min-width: 1000px) 280px, (min-width: 560px) 45vw, 100vw" }) : "";
-    if (it.group) return compactCard(ctx, it, idx, title, href);
+    if (it.group || photo) return compactCard(ctx, photo ? { ...it, photo: it.photo || it.image } : it, idx, title, href);
     const text = it.text || ctx.edit ? `<p class="card__text"${editFld(ctx, `items.${idx}.text`)}>${esc(it.text || "")}</p>` : "";
     return `<li class="card"><a class="card__link" href="${esc(href)}">` +
       (img ? `<span class="card__media${cbaked ? " card__media--tile" : ""}">${img}</span>` : "") +
       `<span class="card__body"><h${ctx._cardLevel || 3} class="card__title"${editFld(ctx, `items.${idx}.title`)}>${esc(title)}</h${ctx._cardLevel || 3}>${text}<span class="card__more">${esc(ctx.ui.read_more || "Läs mer")}${ICON.arrow}</span></span></a></li>`;
   };
-  const ul = (list) => `<ul class="cards${square ? " cards--square" : ""}${list.some(([it]) => it.group) ? " cards--photo" : ""}">${list.map(li).join("")}</ul>`;
+  const ul = (list) => `<ul class="cards${square && !photo ? " cards--square" : ""}${photo || list.some(([it]) => it.group) ? " cards--photo" : ""}${Number(b.cols) === 3 ? " cards--c3" : ""}">${list.map(li).join("")}</ul>`;
   // Items marked with a group (machines / material) are listed under a heading each; site.js adds the buttons that show or hide a group
   const groups = ["machines", "material"].filter((g) => shownItems.some(([it]) => it.group === g));
   if (ctx.edit || !groups.length) return ul(shownItems);
@@ -273,7 +284,7 @@ const articleDate = (ctx, d) => { try { return new Intl.DateTimeFormat(htmlLang(
 const tagName = (ctx, slug) => { const x = ctx.tags && ctx.tags[slug]; return (x && (x[ctx.lang] || x[ctx.defaultLang] || x.en)) || slug; };
 const tagUrl = (ctx, slug) => localizeHref(ctx, "/artiklar/tagg/" + slug);
 const textOf = (blocks) => flatBlocks(blocks || []).map((b) => [b.text, b.html, b.q, b.a, ...(Array.isArray(b.items) ? b.items.map((i) => (typeof i === "string" ? i : i && (i.q || i.a || i.html || i.text) || "")) : [])].filter(Boolean).join(" ")).join(" ").replace(/<[^>]+>/g, " ");
-const readMinutes = (blocks) => Math.max(1, Math.round(textOf(blocks).split(/\s+/).filter(Boolean).length / 200));
+const readMinutes = (blocks) => Math.max(1, Math.round(textOf(blocks).split(/\s+/).filter(Boolean).length / 200) + flatBlocks(blocks || []).filter((b) => b && b.type === "widget" && b.kind !== "illu").length);
 const foldText = (s) => String(s || "").toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/æ/g, "ae").replace(/ø/g, "o");
 function articleItems(ctx) {
   const out = [];
@@ -905,7 +916,8 @@ function renderBlockInner(ctx, b) {
     case "map": return renderMap(ctx, b);
     case "faq": return renderFaq(ctx, b);
     case "widget": return renderWidget(ctx, b);
-    case "facts": return `<div class="container facts"><ul class="facts__row">${(b.items || []).map((i) => `<li class="facts__i"><strong>${esc(i.value)}</strong><span>${esc(i.label)}</span></li>`).join("")}</ul></div>`;
+    case "steps": return renderSteps(ctx, b);
+    case "facts": return `<div class="container facts"><ul class="facts__row">${(b.items || []).map((i) => `<li class="facts__i${/^[ds.,+%]+$/.test(String(i.value)) ? "" : " facts__i--word"}"><strong>${esc(i.value)}</strong><span>${esc(i.label)}</span></li>`).join("")}</ul></div>`;
     case "articles": return renderArticles(ctx, b, ctx._page);
     case "table": return renderTable(ctx, b);
     case "datasheet": return renderDatasheet(ctx, b);
@@ -1435,7 +1447,7 @@ export function renderMain(ctx, page, t) {
     : "";
   const hero = heroImg
     ? `<section class="hero${isHome ? " hero--home" : ""}${split ? " hero--split" : ""}${solo ? " hero--solo" : ""}"${split && !solo ? ' data-show="both"' : ""}>${split ? splitImgs : heroImgTag(ctx, page, heroImg)}<div class="hero__shade"></div>${split && !solo ? '<span class="hero__seam"></span>' : ""}${heroInner}${isHome && !ctx.edit ? `<a class="hero__scroll" href="#start" aria-label="${esc(ctx.ui.scroll_down || "Scrolla ner")}">${ICON.chevronDown}</a>` : ""}</section>`
-    : `<section class="page-head${page.template === "about" ? " page-head--center" : ""}"><div class="container">${page.template === "about" ? "" : eyebrow}<h1${pageFld("h1")}>${esc(title)}</h1></div></section>`;
+    : `<section class="page-head${page.template === "about" ? " page-head--center" : ""}"><div class="container">${page.template === "about" ? "" : eyebrow}<h1${pageFld("h1")}>${esc(title)}</h1>${t.lead && !ctx.edit ? `<p class="page-head__lead">${esc(t.lead)}</p>` : ""}</div></section>`;
   const ownRel = flatBlocks(t.blocks || []).filter((x) => x.type === "related");
   const ownHrefs = new Set(ownRel.flatMap((x) => (x.items || []).map((i) => i && i.href)));
   ctx._relExtra = ctx.edit || !ctx.incomingRelated ? [] : ctx.incomingRelated(page.path).filter((x) => !ownHrefs.has(x.href));

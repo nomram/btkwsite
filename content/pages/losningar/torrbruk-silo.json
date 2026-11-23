@@ -43,9 +43,14 @@
               "image": "/assets/img/ahlm.webp",
               "width": 1920,
               "height": 1920,
-              "alt": "AHLM logotyp"
+              "alt": "AHLM logotyp",
+              "photo": "/assets/img/brand-photo-ahlm.webp",
+              "photoX": 50,
+              "photoY": 35.4,
+              "photoZoom": 1
             }
-          ]
+          ],
+          "style": "photo"
         },
         {
           "type": "articles",
@@ -53,6 +58,31 @@
           "compact": true,
           "limit": 3,
           "title": "Guider och artiklar"
+        },
+        {
+          "type": "steps",
+          "title": "Så går det till",
+          "intro": "Från första frågan till leverans och service.",
+          "button": "Få offert",
+          "href": "/offert",
+          "items": [
+            {
+              "title": "Berätta om jobbet",
+              "text": "Ring eller skicka en förfrågan: vad ska göras, var och när."
+            },
+            {
+              "title": "Vi föreslår en lösning",
+              "text": "Vi rekommenderar maskiner och material från tillverkarna vi representerar som passar just ditt jobb."
+            },
+            {
+              "title": "Du får en offert",
+              "text": "Pris, lagerstatus och leveranstid, normalt inom en arbetsdag."
+            },
+            {
+              "title": "Leverans och service",
+              "text": "Leverans från våra fyra lager i Sverige och Norge, och service på plats med vår mobila verkstad."
+            }
+          ]
         },
         {
           "type": "faq",
@@ -107,9 +137,14 @@
               "image": "/assets/img/ahlm.webp",
               "width": 1920,
               "height": 1920,
-              "alt": "AHLM logo"
+              "alt": "AHLM logo",
+              "photo": "/assets/img/brand-photo-ahlm.webp",
+              "photoX": 50,
+              "photoY": 35.4,
+              "photoZoom": 1
             }
-          ]
+          ],
+          "style": "photo"
         },
         {
           "type": "articles",
@@ -117,6 +152,31 @@
           "compact": true,
           "limit": 3,
           "title": "Guides and articles"
+        },
+        {
+          "type": "steps",
+          "title": "How it works",
+          "intro": "From the first question to delivery and service.",
+          "button": "Get a quote",
+          "href": "/offert",
+          "items": [
+            {
+              "title": "Tell us about the job",
+              "text": "Call or send an enquiry: what needs doing, where and when."
+            },
+            {
+              "title": "We suggest a solution",
+              "text": "We recommend machines and materials from the manufacturers we represent that suit your particular job."
+            },
+            {
+              "title": "You get a quote",
+              "text": "Price, stock status and lead time, normally within one working day."
+            },
+            {
+              "title": "Delivery and service",
+              "text": "Delivery from our four warehouses in Sweden and Norway, and on-site service with our mobile workshop."
+            }
+          ]
         },
         {
           "type": "faq",

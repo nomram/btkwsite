@@ -30,7 +30,7 @@
         {
           "type": "heading",
           "level": 2,
-          "text": "Våra varumärken inom borrning"
+          "text": "Tillverkare inom borrning"
         },
         {
           "type": "cards",
@@ -43,7 +43,11 @@
               "image": "/assets/img/tei.webp",
               "width": 1920,
               "height": 1920,
-              "alt": "TEI Rock Drills logotyp"
+              "alt": "TEI Rock Drills logotyp",
+              "photo": "/assets/img/brand-photo-tei.webp",
+              "photoX": 50,
+              "photoY": 100,
+              "photoZoom": 1
             },
             {
               "href": "/produkter/marini",
@@ -53,7 +57,11 @@
               "image": "/assets/img/marini.webp",
               "width": 1241,
               "height": 1241,
-              "alt": "Marini logotyp"
+              "alt": "Marini logotyp",
+              "photo": "/assets/img/brand-photo-marini.webp",
+              "photoX": 50,
+              "photoY": 50,
+              "photoZoom": 1
             },
             {
               "href": "/produkter/terra-infrastructure",
@@ -63,7 +71,11 @@
               "image": "/assets/img/terra-infrastructure.webp",
               "width": 1000,
               "height": 1000,
-              "alt": "Terra Infrastructure logotyp"
+              "alt": "Terra Infrastructure logotyp",
+              "photo": "/assets/img/brand-photo-terra-infrastructure.webp",
+              "photoX": 50,
+              "photoY": 50,
+              "photoZoom": 1
             },
             {
               "href": "/produkter/jean-lutz",
@@ -73,9 +85,14 @@
               "height": 1920,
               "text": "Dataloggare, displayer och givare för jet grouting, injektering och borrning.",
               "html": "Dataloggare, displayer och givare för jet grouting, injektering och borrning.",
-              "alt": "Jean Lutz logotyp"
+              "alt": "Jean Lutz logotyp",
+              "photo": "/assets/img/brand-photo-jean-lutz.webp",
+              "photoX": 6.7,
+              "photoY": 63.8,
+              "photoZoom": 1.17
             }
-          ]
+          ],
+          "style": "photo"
         },
         {
           "type": "articles",
@@ -83,6 +100,31 @@
           "compact": true,
           "limit": 3,
           "title": "Guider och artiklar"
+        },
+        {
+          "type": "steps",
+          "title": "Så går det till",
+          "intro": "Från första frågan till leverans och service.",
+          "button": "Få offert",
+          "href": "/offert",
+          "items": [
+            {
+              "title": "Berätta om jobbet",
+              "text": "Ring eller skicka en förfrågan: vad ska göras, var och när."
+            },
+            {
+              "title": "Vi föreslår en lösning",
+              "text": "Vi rekommenderar maskiner och material från tillverkarna vi representerar som passar just ditt jobb."
+            },
+            {
+              "title": "Du får en offert",
+              "text": "Pris, lagerstatus och leveranstid, normalt inom en arbetsdag."
+            },
+            {
+              "title": "Leverans och service",
+              "text": "Leverans från våra fyra lager i Sverige och Norge, och service på plats med vår mobila verkstad."
+            }
+          ]
         },
         {
           "type": "faq",
@@ -124,7 +166,7 @@
         {
           "type": "heading",
           "level": 2,
-          "text": "Our brands for drilling"
+          "text": "Manufacturers for drilling"
         },
         {
           "type": "cards",
@@ -137,7 +179,11 @@
               "image": "/assets/img/tei.webp",
               "width": 1920,
               "height": 1920,
-              "alt": "TEI Rock Drills logo"
+              "alt": "TEI Rock Drills logo",
+              "photo": "/assets/img/brand-photo-tei.webp",
+              "photoX": 50,
+              "photoY": 100,
+              "photoZoom": 1
             },
             {
               "href": "/produkter/marini",
@@ -147,7 +193,11 @@
               "image": "/assets/img/marini.webp",
               "width": 1241,
               "height": 1241,
-              "alt": "Marini logo"
+              "alt": "Marini logo",
+              "photo": "/assets/img/brand-photo-marini.webp",
+              "photoX": 50,
+              "photoY": 50,
+              "photoZoom": 1
             },
             {
               "href": "/produkter/terra-infrastructure",
@@ -157,7 +207,11 @@
               "image": "/assets/img/terra-infrastructure.webp",
               "width": 1000,
               "height": 1000,
-              "alt": "Terra Infrastructure logo"
+              "alt": "Terra Infrastructure logo",
+              "photo": "/assets/img/brand-photo-terra-infrastructure.webp",
+              "photoX": 50,
+              "photoY": 50,
+              "photoZoom": 1
             },
             {
               "href": "/produkter/jean-lutz",
@@ -167,9 +221,14 @@
               "height": 1920,
               "text": "Data loggers, displays and sensors for jet grouting, grouting and drilling.",
               "html": "Data loggers, displays and sensors for jet grouting, grouting and drilling.",
-              "alt": "Jean Lutz logo"
+              "alt": "Jean Lutz logo",
+              "photo": "/assets/img/brand-photo-jean-lutz.webp",
+              "photoX": 6.7,
+              "photoY": 63.8,
+              "photoZoom": 1.17
             }
-          ]
+          ],
+          "style": "photo"
         },
         {
           "type": "articles",
@@ -177,6 +236,31 @@
           "compact": true,
           "limit": 3,
           "title": "Guides and articles"
+        },
+        {
+          "type": "steps",
+          "title": "How it works",
+          "intro": "From the first question to delivery and service.",
+          "button": "Get a quote",
+          "href": "/offert",
+          "items": [
+            {
+              "title": "Tell us about the job",
+              "text": "Call or send an enquiry: what needs doing, where and when."
+            },
+            {
+              "title": "We suggest a solution",
+              "text": "We recommend machines and materials from the manufacturers we represent that suit your particular job."
+            },
+            {
+              "title": "You get a quote",
+              "text": "Price, stock status and lead time, normally within one working day."
+            },
+            {
+              "title": "Delivery and service",
+              "text": "Delivery from our four warehouses in Sweden and Norway, and on-site service with our mobile workshop."
+            }
+          ]
         },
         {
           "type": "faq",

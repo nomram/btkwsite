@@ -21,13 +21,10 @@
       "description": "Guider och artiklar om betong, cement, härdning, injektering, borrning, torrbruk och sprutbetong, med räknare och simuleringar. Sök eller filtrera på taggar.",
       "blocks": [
         {
-          "type": "text",
-          "html": "Korta guider om hur du väljer utrustning och material. Sök eller filtrera på taggar, och hör av dig om du vill ha hjälp med just ditt jobb."
-        },
-        {
           "type": "articles"
         }
-      ]
+      ],
+      "lead": "Korta guider om hur du väljer utrustning och material. Sök eller filtrera på taggar, och hör av dig om du vill ha hjälp med just ditt jobb."
     },
     "en": {
       "title": "Articles",
@@ -36,13 +33,10 @@
       "description": "Guides and articles on concrete, cement, curing, grouting, drilling, dry mortar and shotcrete, with calculators and simulations. Search or filter by tags.",
       "blocks": [
         {
-          "type": "text",
-          "html": "Short guides on how to choose equipment and materials. Search or filter by tags, and get in touch if you want help with your job."
-        },
-        {
           "type": "articles"
         }
-      ]
+      ],
+      "lead": "Short guides on how to choose equipment and materials. Search or filter by tags, and get in touch if you want help with your job."
     }
   }
 }

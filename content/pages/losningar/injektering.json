@@ -30,7 +30,7 @@
         {
           "type": "heading",
           "level": 2,
-          "text": "Våra varumärken inom injektering"
+          "text": "Tillverkare inom injektering"
         },
         {
           "type": "cards",
@@ -43,7 +43,11 @@
               "image": "/assets/img/haeny.webp",
               "width": 1000,
               "height": 1000,
-              "alt": "HÄNY logotyp"
+              "alt": "HÄNY logotyp",
+              "photo": "/assets/img/brand-photo-haeny.webp",
+              "photoX": 50,
+              "photoY": 50,
+              "photoZoom": 1
             },
             {
               "href": "/produkter/jean-lutz",
@@ -53,7 +57,11 @@
               "height": 1920,
               "text": "Dataloggare, displayer och givare för jet grouting, injektering och borrning.",
               "html": "Dataloggare, displayer och givare för jet grouting, injektering och borrning.",
-              "alt": "Jean Lutz logotyp"
+              "alt": "Jean Lutz logotyp",
+              "photo": "/assets/img/brand-photo-jean-lutz.webp",
+              "photoX": 6.7,
+              "photoY": 63.8,
+              "photoZoom": 1.17
             },
             {
               "href": "/produkter/reed",
@@ -63,7 +71,11 @@
               "image": "/assets/img/reed.webp",
               "width": 1920,
               "height": 1920,
-              "alt": "REED logotyp"
+              "alt": "REED logotyp",
+              "photo": "/assets/img/brand-photo-reed.webp",
+              "photoX": 50,
+              "photoY": 50,
+              "photoZoom": 1
             },
             {
               "href": "/produkter/ahlm",
@@ -73,9 +85,14 @@
               "image": "/assets/img/ahlm.webp",
               "width": 1920,
               "height": 1920,
-              "alt": "AHLM logotyp"
+              "alt": "AHLM logotyp",
+              "photo": "/assets/img/brand-photo-ahlm.webp",
+              "photoX": 50,
+              "photoY": 35.4,
+              "photoZoom": 1
             }
-          ]
+          ],
+          "style": "photo"
         },
         {
           "type": "articles",
@@ -83,6 +100,31 @@
           "compact": true,
           "limit": 3,
           "title": "Guider och artiklar"
+        },
+        {
+          "type": "steps",
+          "title": "Så går det till",
+          "intro": "Från första frågan till leverans och service.",
+          "button": "Få offert",
+          "href": "/offert",
+          "items": [
+            {
+              "title": "Berätta om jobbet",
+              "text": "Ring eller skicka en förfrågan: vad ska göras, var och när."
+            },
+            {
+              "title": "Vi föreslår en lösning",
+              "text": "Vi rekommenderar maskiner och material från tillverkarna vi representerar som passar just ditt jobb."
+            },
+            {
+              "title": "Du får en offert",
+              "text": "Pris, lagerstatus och leveranstid, normalt inom en arbetsdag."
+            },
+            {
+              "title": "Leverans och service",
+              "text": "Leverans från våra fyra lager i Sverige och Norge, och service på plats med vår mobila verkstad."
+            }
+          ]
         },
         {
           "type": "faq",
@@ -124,7 +166,7 @@
         {
           "type": "heading",
           "level": 2,
-          "text": "Our brands for grouting"
+          "text": "Manufacturers for grouting"
         },
         {
           "type": "cards",
@@ -137,7 +179,11 @@
               "image": "/assets/img/haeny.webp",
               "width": 1000,
               "height": 1000,
-              "alt": "HÄNY logo"
+              "alt": "HÄNY logo",
+              "photo": "/assets/img/brand-photo-haeny.webp",
+              "photoX": 50,
+              "photoY": 50,
+              "photoZoom": 1
             },
             {
               "href": "/produkter/jean-lutz",
@@ -147,7 +193,11 @@
               "height": 1920,
               "text": "Data loggers, displays and sensors for jet grouting, grouting and drilling.",
               "html": "Data loggers, displays and sensors for jet grouting, grouting and drilling.",
-              "alt": "Jean Lutz logo"
+              "alt": "Jean Lutz logo",
+              "photo": "/assets/img/brand-photo-jean-lutz.webp",
+              "photoX": 6.7,
+              "photoY": 63.8,
+              "photoZoom": 1.17
             },
             {
               "href": "/produkter/reed",
@@ -157,7 +207,11 @@
               "image": "/assets/img/reed.webp",
               "width": 1920,
               "height": 1920,
-              "alt": "REED logo"
+              "alt": "REED logo",
+              "photo": "/assets/img/brand-photo-reed.webp",
+              "photoX": 50,
+              "photoY": 50,
+              "photoZoom": 1
             },
             {
               "href": "/produkter/ahlm",
@@ -167,9 +221,14 @@
               "image": "/assets/img/ahlm.webp",
               "width": 1920,
               "height": 1920,
-              "alt": "AHLM logo"
+              "alt": "AHLM logo",
+              "photo": "/assets/img/brand-photo-ahlm.webp",
+              "photoX": 50,
+              "photoY": 35.4,
+              "photoZoom": 1
             }
-          ]
+          ],
+          "style": "photo"
         },
         {
           "type": "articles",
@@ -177,6 +236,31 @@
           "compact": true,
           "limit": 3,
           "title": "Guides and articles"
+        },
+        {
+          "type": "steps",
+          "title": "How it works",
+          "intro": "From the first question to delivery and service.",
+          "button": "Get a quote",
+          "href": "/offert",
+          "items": [
+            {
+              "title": "Tell us about the job",
+              "text": "Call or send an enquiry: what needs doing, where and when."
+            },
+            {
+              "title": "We suggest a solution",
+              "text": "We recommend machines and materials from the manufacturers we represent that suit your particular job."
+            },
+            {
+              "title": "You get a quote",
+              "text": "Price, stock status and lead time, normally within one working day."
+            },
+            {
+              "title": "Delivery and service",
+              "text": "Delivery from our four warehouses in Sweden and Norway, and on-site service with our mobile workshop."
+            }
+          ]
         },
         {
           "type": "faq",

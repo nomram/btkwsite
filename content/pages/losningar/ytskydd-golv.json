@@ -26,7 +26,7 @@
         {
           "type": "heading",
           "level": 2,
-          "text": "Våra varumärken inom ytskydd och byggkemi"
+          "text": "Tillverkare inom ytskydd och byggkemi"
         },
         {
           "type": "cards",
@@ -39,7 +39,11 @@
               "image": "/assets/img/ram-board.webp",
               "width": 250,
               "height": 250,
-              "alt": "Ram Board logotyp"
+              "alt": "Ram Board logotyp",
+              "photo": "/assets/img/brand-photo-ram-board.webp",
+              "photoX": 50,
+              "photoY": 50,
+              "photoZoom": 1
             },
             {
               "href": "/produkter/mapei",
@@ -49,7 +53,11 @@
               "image": "/assets/img/mapei.webp",
               "width": 1920,
               "height": 1920,
-              "alt": "Mapei logotyp"
+              "alt": "Mapei logotyp",
+              "photo": "/assets/img/brand-photo-mapei.webp",
+              "photoX": 32,
+              "photoY": 62,
+              "photoZoom": 1.2
             },
             {
               "href": "/produkter/ecobeton",
@@ -59,7 +67,11 @@
               "image": "/assets/img/ecobeton.webp",
               "width": 1000,
               "height": 1000,
-              "alt": "Ecobeton logotyp"
+              "alt": "Ecobeton logotyp",
+              "photo": "/assets/img/brand-photo-ecobeton.webp",
+              "photoX": 50,
+              "photoY": 50,
+              "photoZoom": 1
             },
             {
               "href": "/produkter/weber",
@@ -69,7 +81,11 @@
               "image": "/assets/img/weber.webp",
               "width": 1100,
               "height": 1100,
-              "alt": "Weber logotyp"
+              "alt": "Weber logotyp",
+              "photo": "/assets/img/brand-photo-weber.webp",
+              "photoX": 51.4,
+              "photoY": 50,
+              "photoZoom": 1
             },
             {
               "href": "/produkter/kraft-tool",
@@ -79,7 +95,38 @@
               "image": "/assets/img/kraft-tool.webp",
               "width": 300,
               "height": 300,
-              "alt": "Kraft Tool logotyp"
+              "alt": "Kraft Tool logotyp",
+              "photo": "/assets/img/brand-photo-kraft-tool.webp",
+              "photoX": 50,
+              "photoY": 50,
+              "photoZoom": 1
+            }
+          ],
+          "style": "photo",
+          "cols": 3
+        },
+        {
+          "type": "steps",
+          "title": "Så går det till",
+          "intro": "Från första frågan till leverans och service.",
+          "button": "Få offert",
+          "href": "/offert",
+          "items": [
+            {
+              "title": "Berätta om jobbet",
+              "text": "Ring eller skicka en förfrågan: vad ska göras, var och när."
+            },
+            {
+              "title": "Vi föreslår en lösning",
+              "text": "Vi rekommenderar maskiner och material från tillverkarna vi representerar som passar just ditt jobb."
+            },
+            {
+              "title": "Du får en offert",
+              "text": "Pris, lagerstatus och leveranstid, normalt inom en arbetsdag."
+            },
+            {
+              "title": "Leverans och service",
+              "text": "Leverans från våra fyra lager i Sverige och Norge, och service på plats med vår mobila verkstad."
             }
           ]
         },
@@ -115,7 +162,7 @@
         {
           "type": "heading",
           "level": 2,
-          "text": "Our brands for surface protection and construction chemicals"
+          "text": "Manufacturers for surface protection and construction chemicals"
         },
         {
           "type": "cards",
@@ -128,7 +175,11 @@
               "image": "/assets/img/ram-board.webp",
               "width": 250,
               "height": 250,
-              "alt": "Ram Board logo"
+              "alt": "Ram Board logo",
+              "photo": "/assets/img/brand-photo-ram-board.webp",
+              "photoX": 50,
+              "photoY": 50,
+              "photoZoom": 1
             },
             {
               "href": "/produkter/mapei",
@@ -138,7 +189,11 @@
               "image": "/assets/img/mapei.webp",
               "width": 1920,
               "height": 1920,
-              "alt": "Mapei logo"
+              "alt": "Mapei logo",
+              "photo": "/assets/img/brand-photo-mapei.webp",
+              "photoX": 32,
+              "photoY": 62,
+              "photoZoom": 1.2
             },
             {
               "href": "/produkter/ecobeton",
@@ -148,7 +203,11 @@
               "image": "/assets/img/ecobeton.webp",
               "width": 1000,
               "height": 1000,
-              "alt": "Ecobeton logo"
+              "alt": "Ecobeton logo",
+              "photo": "/assets/img/brand-photo-ecobeton.webp",
+              "photoX": 50,
+              "photoY": 50,
+              "photoZoom": 1
             },
             {
               "href": "/produkter/weber",
@@ -158,7 +217,11 @@
               "image": "/assets/img/weber.webp",
               "width": 1100,
               "height": 1100,
-              "alt": "Weber logo"
+              "alt": "Weber logo",
+              "photo": "/assets/img/brand-photo-weber.webp",
+              "photoX": 51.4,
+              "photoY": 50,
+              "photoZoom": 1
             },
             {
               "href": "/produkter/kraft-tool",
@@ -168,7 +231,38 @@
               "image": "/assets/img/kraft-tool.webp",
               "width": 300,
               "height": 300,
-              "alt": "Kraft Tool logo"
+              "alt": "Kraft Tool logo",
+              "photo": "/assets/img/brand-photo-kraft-tool.webp",
+              "photoX": 50,
+              "photoY": 50,
+              "photoZoom": 1
+            }
+          ],
+          "style": "photo",
+          "cols": 3
+        },
+        {
+          "type": "steps",
+          "title": "How it works",
+          "intro": "From the first question to delivery and service.",
+          "button": "Get a quote",
+          "href": "/offert",
+          "items": [
+            {
+              "title": "Tell us about the job",
+              "text": "Call or send an enquiry: what needs doing, where and when."
+            },
+            {
+              "title": "We suggest a solution",
+              "text": "We recommend machines and materials from the manufacturers we represent that suit your particular job."
+            },
+            {
+              "title": "You get a quote",
+              "text": "Price, stock status and lead time, normally within one working day."
+            },
+            {
+              "title": "Delivery and service",
+              "text": "Delivery from our four warehouses in Sweden and Norway, and on-site service with our mobile workshop."
             }
           ]
         },

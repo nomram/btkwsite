@@ -19,19 +19,15 @@
           "items": [
             {
               "value": "15",
-              "label": "varumärken från Europa och USA"
+              "label": "tillverkare från Europa och USA"
             },
             {
-              "value": "3",
-              "label": "lager: Stockholm, Göteborg och Malmö"
+              "value": "4",
+              "label": "lager i Sverige och Norge"
             },
             {
               "value": "Mobil verkstad",
-              "label": "i Sverige och Norge"
-            },
-            {
-              "value": "ID06",
-              "label": "vi bär ID06 på byggarbetsplatser"
+              "label": "service på plats i Sverige och Norge"
             }
           ]
         },
@@ -111,7 +107,35 @@
               "alt": "Släntstabilisering och bergsäkring",
               "title": "Släntstabilisering och bergsäkring"
             }
-          ]
+          ],
+          "style": "photo",
+          "cols": 3
+        },
+        {
+          "type": "steps",
+          "title": "Så går det till",
+          "intro": "Från första frågan till leverans och service.",
+          "button": "Få offert",
+          "href": "/offert",
+          "items": [
+            {
+              "title": "Berätta om jobbet",
+              "text": "Ring eller skicka en förfrågan: vad ska göras, var och när."
+            },
+            {
+              "title": "Vi föreslår en lösning",
+              "text": "Vi rekommenderar maskiner och material från tillverkarna vi representerar som passar just ditt jobb."
+            },
+            {
+              "title": "Du får en offert",
+              "text": "Pris, lagerstatus och leveranstid, normalt inom en arbetsdag."
+            },
+            {
+              "title": "Leverans och service",
+              "text": "Leverans från våra fyra lager i Sverige och Norge, och service på plats med vår mobila verkstad."
+            }
+          ],
+          "tag": "redesign"
         },
         {
           "type": "articles",
@@ -125,7 +149,7 @@
         {
           "type": "heading",
           "level": 2,
-          "text": "Våra varumärken"
+          "text": "Tillverkare vi representerar"
         },
         {
           "type": "cards",
@@ -280,7 +304,8 @@
               "html": "Dataloggare, displayer och givare för jet grouting, injektering och borrning.",
               "alt": "Jean Lutz logotyp"
             }
-          ]
+          ],
+          "style": "logos"
         },
         {
           "type": "chips",
@@ -335,19 +360,15 @@
           "items": [
             {
               "value": "15",
-              "label": "brands from Europe and the USA"
+              "label": "manufacturers from Europe and the USA"
             },
             {
-              "value": "3",
-              "label": "warehouses: Stockholm, Gothenburg and Malmö"
+              "value": "4",
+              "label": "warehouses in Sweden and Norway"
             },
             {
               "value": "Mobile workshop",
-              "label": "in Sweden and Norway"
-            },
-            {
-              "value": "ID06",
-              "label": "we carry ID06 on construction sites"
+              "label": "on-site service in Sweden and Norway"
             }
           ]
         },
@@ -427,7 +448,35 @@
               "alt": "Slope stabilisation and rock support",
               "title": "Slope stabilisation and rock support"
             }
-          ]
+          ],
+          "style": "photo",
+          "cols": 3
+        },
+        {
+          "type": "steps",
+          "title": "How it works",
+          "intro": "From the first question to delivery and service.",
+          "button": "Get a quote",
+          "href": "/offert",
+          "items": [
+            {
+              "title": "Tell us about the job",
+              "text": "Call or send an enquiry: what needs doing, where and when."
+            },
+            {
+              "title": "We suggest a solution",
+              "text": "We recommend machines and materials from the manufacturers we represent that suit your particular job."
+            },
+            {
+              "title": "You get a quote",
+              "text": "Price, stock status and lead time, normally within one working day."
+            },
+            {
+              "title": "Delivery and service",
+              "text": "Delivery from our four warehouses in Sweden and Norway, and on-site service with our mobile workshop."
+            }
+          ],
+          "tag": "redesign"
         },
         {
           "type": "articles",
@@ -441,7 +490,7 @@
         {
           "type": "heading",
           "level": 2,
-          "text": "Our brands"
+          "text": "Manufacturers we represent"
         },
         {
           "type": "cards",
@@ -596,7 +645,8 @@
               "html": "Data loggers, displays and sensors for jet grouting, grouting and drilling.",
               "alt": "Jean Lutz logo"
             }
-          ]
+          ],
+          "style": "logos"
         },
         {
           "type": "chips",
