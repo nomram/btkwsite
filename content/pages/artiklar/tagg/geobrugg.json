@@ -1,0 +1,41 @@
+{
+  "path": "/artiklar/tagg/geobrugg",
+  "updated": "2026-11-22",
+  "template": "articles",
+  "order": 10,
+  "published": true,
+  "hideIn": [
+    "es",
+    "no",
+    "lt",
+    "lv",
+    "et",
+    "ru"
+  ],
+  "i18n": {
+    "sv": {
+      "title": "Artiklar om Geobrugg",
+      "h1": "Artiklar om Geobrugg",
+      "seoTitle": "Artiklar och guider om Geobrugg | Betongakuten",
+      "description": "Alla artiklar och guider om Geobrugg från Betongakuten. Sök eller filtrera på fler taggar.",
+      "blocks": [
+        {
+          "type": "articles",
+          "tag": "geobrugg"
+        }
+      ]
+    },
+    "en": {
+      "title": "Articles about Geobrugg",
+      "h1": "Articles about Geobrugg",
+      "seoTitle": "Articles and guides about Geobrugg | Betongakuten",
+      "description": "All articles and guides about Geobrugg from Betongakuten. Search or filter by more tags.",
+      "blocks": [
+        {
+          "type": "articles",
+          "tag": "geobrugg"
+        }
+      ]
+    }
+  }
+}

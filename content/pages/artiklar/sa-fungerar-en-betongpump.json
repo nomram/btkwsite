@@ -1,0 +1,212 @@
+{
+  "path": "/artiklar/sa-fungerar-en-betongpump",
+  "updated": "2026-11-22",
+  "template": "article",
+  "order": 10,
+  "published": true,
+  "date": "2026-11-22",
+  "tags": [
+    "maskiner",
+    "sprutbetong",
+    "reed",
+    "guide",
+    "verktyg"
+  ],
+  "image": "/assets/img/betongpump.webp",
+  "hideIn": [
+    "es",
+    "no",
+    "lt",
+    "lv",
+    "et",
+    "ru"
+  ],
+  "i18n": {
+    "sv": {
+      "title": "Så fungerar en betongpump: kolvar, S-ventil och kapacitet",
+      "h1": "Så fungerar en betongpump: kolvar, S-ventil och kapacitet",
+      "seoTitle": "Så fungerar en betongpump, med kapacitetsräknare | Betongakuten",
+      "description": "Hur fungerar en betongpump, hur räknar man ut kapaciteten och vad gör betongen pumpbar? Förklarat enkelt, med en animerad pump du själv kan ställa in.",
+      "summary": "Två kolvar, en S-ventil och mycket tryck. Så fungerar en betongpump, och en animerad pump där du räknar ut kapaciteten.",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "En betongpump flyttar tung betong genom rör och slangar, upp i höjden eller långt bort, utan kranar och bandtransportörer. Principen är förvånansvärt enkel. Här ser du hur den fungerar och hur mycket den hinner pumpa."
+        },
+        {
+          "type": "widget",
+          "kind": "pump",
+          "title": "Ställ in pumpen",
+          "intro": "Ändra cylinderns storlek och takt och se hur mycket betong pumpen levererar.",
+          "cta": false
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Två kolvar som turas om"
+        },
+        {
+          "type": "text",
+          "html": "De flesta betongpumpar är kolvpumpar med två cylindrar. När den ena kolven trycker ut betong i röret drar den andra in ny betong från tratten. En ventil, ofta formad som ett S, växlar mellan cylindrarna vid varje slag, så att flödet blir så jämnt som möjligt. Kolvarna drivs av hydraulik."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Olika typer av pumpar"
+        },
+        {
+          "type": "list",
+          "items": [
+            "<strong>Bompumpar</strong> sitter på en lastbil och har en vikbar arm som når långt och högt.",
+            "<strong>Stationära pumpar</strong> kopplas till en rörledning och används när betongen ska långt eller högt, till exempel i höga hus och tunnlar.",
+            "<strong>Mindre pumpar</strong> används för sprutbetong, bruk och injektering. Se till exempel utrustningen från <a href=\"/produkter/reed\">REED</a>."
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Vad gör betongen pumpbar?"
+        },
+        {
+          "type": "text",
+          "html": "Allt som går att gjuta går inte att pumpa. Betongen behöver rätt konsistens, tillräckligt med fint material som smörjer röret och en sten som inte är för stor. En tumregel är att rörets innerdiameter ska vara minst tre gånger större än den största stenen. För mycket vatten gör inte betongen mer pumpbar, bara svagare, eftersom stenen då lätt separerar och ger proppar."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Vanliga problem och säkerhet"
+        },
+        {
+          "type": "list",
+          "items": [
+            "<strong>Proppar</strong> uppstår när betongen separerar eller torkar i röret. Ha rätt recept, pumpa jämnt och undvik långa pauser.",
+            "<strong>Slangen kan slå</strong> när luft eller en propp släpper. Stå aldrig vid slangänden när pumpen startar.",
+            "<strong>Rengör direkt</strong> efter avslutad pumpning, så att betongen inte hårdnar i rören."
+          ]
+        },
+        {
+          "type": "text",
+          "html": "Vill du veta vad som händer med betongen sedan? Läs om <a href=\"/artiklar/sprutbetong-torr-eller-vat\">sprutbetong: torr eller våt</a> och <a href=\"/artiklar/hur-mycket-betong-behover-jag\">hur mycket betong du behöver</a>."
+        },
+        {
+          "type": "faq",
+          "title": "Vanliga frågor",
+          "items": [
+            {
+              "q": "Hur mycket kan en betongpump pumpa?",
+              "a": "Det beror på pumpen. Små pumpar för bruk och sprutbetong ger några kubikmeter i timmen, och stora bompumpar kan ge över hundra. I praktiken blir medelkapaciteten lägre på grund av pauser och bilbyten."
+            },
+            {
+              "q": "Varför sätter betongen igen röret?",
+              "a": "Oftast för att betongen separerar, har fel konsistens eller för stor sten, eller för att den hunnit styvna under en paus."
+            },
+            {
+              "q": "Kan man pumpa all betong?",
+              "a": "Nej. Betongen måste vara pumpbar, med rätt konsistens, tillräckligt med fint material och en sten som passar rörets diameter."
+            }
+          ]
+        },
+        {
+          "type": "cta",
+          "title": "Vill du ha hjälp att välja?",
+          "text": "Berätta vad du ska göra, var och när, så rekommenderar vi rätt utrustning och återkommer med pris och leveranstid.",
+          "button": "Få offert",
+          "href": "/offert"
+        }
+      ]
+    },
+    "en": {
+      "title": "How a concrete pump works: pistons, S-valve and capacity",
+      "h1": "How a concrete pump works: pistons, S-valve and capacity",
+      "seoTitle": "How a concrete pump works, with a capacity calculator | Betongakuten",
+      "description": "How does a concrete pump work, how do you work out its capacity and what makes concrete pumpable? Explained simply, with an animated pump you can set yourself.",
+      "summary": "Two pistons, an S-valve and a lot of pressure. How a concrete pump works, and an animated pump where you work out the capacity.",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "A concrete pump moves heavy concrete through pipes and hoses, up high or far away, without cranes or conveyors. The principle is surprisingly simple. Here you can see how it works and how much it manages to pump."
+        },
+        {
+          "type": "widget",
+          "kind": "pump",
+          "title": "Set up the pump",
+          "intro": "Change the cylinder size and the pace and see how much concrete the pump delivers.",
+          "cta": false
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Two pistons taking turns"
+        },
+        {
+          "type": "text",
+          "html": "Most concrete pumps are piston pumps with two cylinders. While one piston pushes concrete out into the pipe, the other draws new concrete in from the hopper. A valve, often shaped like an S, switches between the cylinders at every stroke so the flow is as even as possible. The pistons are driven by hydraulics."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Different types of pump"
+        },
+        {
+          "type": "list",
+          "items": [
+            "<strong>Boom pumps</strong> sit on a truck and have a folding arm that reaches far and high.",
+            "<strong>Stationary pumps</strong> are connected to a pipeline and used when the concrete has to go far or high, for example in tall buildings and tunnels.",
+            "<strong>Smaller pumps</strong> are used for shotcrete, mortar and grouting. See for example the equipment from <a href=\"/produkter/reed\">REED</a>."
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "What makes concrete pumpable?"
+        },
+        {
+          "type": "text",
+          "html": "Not everything that can be cast can be pumped. The concrete needs the right consistency, enough fine material to lubricate the pipe and stone that is not too large. A rule of thumb is that the inside diameter of the pipe should be at least three times the largest stone. More water does not make concrete more pumpable, only weaker, because the stone then separates easily and causes blockages."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Common problems and safety"
+        },
+        {
+          "type": "list",
+          "items": [
+            "<strong>Blockages</strong> happen when the concrete separates or dries in the pipe. Use the right recipe, pump steadily and avoid long pauses.",
+            "<strong>The hose can whip</strong> when air or a blockage releases. Never stand at the end of the hose when the pump starts.",
+            "<strong>Clean straight away</strong> after pumping so the concrete does not harden in the pipes."
+          ]
+        },
+        {
+          "type": "text",
+          "html": "Want to know what happens to the concrete next? Read about <a href=\"/artiklar/sprutbetong-torr-eller-vat\">shotcrete: dry or wet</a> and <a href=\"/artiklar/hur-mycket-betong-behover-jag\">how much concrete you need</a>."
+        },
+        {
+          "type": "faq",
+          "title": "Frequently asked questions",
+          "items": [
+            {
+              "q": "How much can a concrete pump pump?",
+              "a": "It depends on the pump. Small pumps for mortar and shotcrete give a few cubic metres an hour, and large boom pumps can give over a hundred. In practice the average output is lower because of pauses and truck changes."
+            },
+            {
+              "q": "Why does concrete block the pipe?",
+              "a": "Usually because the concrete separates, has the wrong consistency or too large stone, or because it has stiffened during a pause."
+            },
+            {
+              "q": "Can all concrete be pumped?",
+              "a": "No. The concrete must be pumpable, with the right consistency, enough fine material and stone that suits the pipe diameter."
+            }
+          ]
+        },
+        {
+          "type": "cta",
+          "title": "Would you like help choosing?",
+          "text": "Tell us what you are going to do, where and when, and we will recommend the right equipment and come back with a price and lead time.",
+          "button": "Get a quote",
+          "href": "/offert"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,205 @@
+{
+  "path": "/artiklar/frost-och-luftporer",
+  "updated": "2026-11-22",
+  "template": "article",
+  "order": 10,
+  "published": true,
+  "date": "2026-11-22",
+  "tags": [
+    "betong",
+    "grunder",
+    "verktyg",
+    "material"
+  ],
+  "image": "/assets/img/frost-luftporer.webp",
+  "hideIn": [
+    "es",
+    "no",
+    "lt",
+    "lv",
+    "et",
+    "ru"
+  ],
+  "i18n": {
+    "sv": {
+      "title": "Varför spricker betong av frost? Luftporer förklarade",
+      "h1": "Varför spricker betong av frost? Luftporer förklarade",
+      "seoTitle": "Frostskador i betong och luftporer förklarat | Betongakuten",
+      "description": "Varför spricker betong när den fryser, och hur skyddar små luftporer den? Förklarat enkelt, med en simulering där du själv fryser betongen.",
+      "summary": "Vatten växer när det fryser. Så skyddar små luftporer betongen, och en simulering där du själv fryser den.",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "Den som har sett en trappa eller kantsten smula sönder efter några vintrar har sett frostskador. Orsaken är enkel: vatten växer när det fryser. Lösningen är lika enkel, men lite överraskande: man blandar in luft i betongen."
+        },
+        {
+          "type": "widget",
+          "kind": "frost",
+          "title": "Frys betongen själv",
+          "intro": "Ställ in lufthalt och vattenmättnad, och tryck på Frys för att se om isen får plats.",
+          "cta": false
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Vatten växer när det fryser"
+        },
+        {
+          "type": "text",
+          "html": "När vatten blir is ökar volymen med ungefär 9 procent. I betong finns vatten i små porer i cementpastan. Om porerna är helt fyllda har isen ingenstans att ta vägen, och trycket kan spräcka betongen inifrån. Efter många frys-tö-cykler växer skadorna, och ytan börjar flagna eller smula."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Det avgörande: hur blöt är betongen?"
+        },
+        {
+          "type": "text",
+          "html": "Torr betong klarar frost bra, eftersom det finns luft kvar i porerna. Risken uppstår när betongen är nästan vattenmättad. Över en kritisk vattenmättnadsgrad, ofta någonstans runt 85 till 90 procent, kan isen inte längre få plats. Därför drabbas betong som står i vatten eller ofta blir blöt, som kantstenar, kajer och broar, mest."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Luftporer: små krockkuddar"
+        },
+        {
+          "type": "text",
+          "html": "Med en lufttillsats bildas miljontals små luftbubblor i betongen, ofta 4 till 6 procent av volymen. När vattnet fryser kan det tryckas ut i de tomma bubblorna i stället för att spräcka betongen. Det viktiga är att bubblorna ligger tätt, så att vattnet aldrig har långt till närmaste luftpor. Ett vanligt krav är att avståndet ska vara högst omkring 0,2 mm."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Så får du frostbeständig betong"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Lågt <a href=\"/artiklar/vattencementtal-vct\">vattencementtal</a>, som ger en tät betong med färre porer.",
+            "Lufttillsats som ger rätt mängd små, tätt fördelade luftporer.",
+            "Ordentlig <a href=\"/artiklar/sa-hardnar-betong\">härdning</a>, så att ytan blir tät.",
+            "Inget extra vatten på bygget, eftersom det gör betongen porösare."
+          ]
+        },
+        {
+          "type": "text",
+          "html": "Tösalt gör saken värre, eftersom salt ökar påfrestningen på ytan. Betong som utsätts för både frost och salt behöver därför strängare krav. Att ung betong inte får frysa är ett annat problem, som vi går igenom i <a href=\"/artiklar/gjuta-betong-pa-vintern\">gjuta betong på vintern</a>."
+        },
+        {
+          "type": "faq",
+          "title": "Vanliga frågor",
+          "items": [
+            {
+              "q": "Varför får betong frostskador?",
+              "a": "Vatten i betongens porer växer ungefär 9 procent när det fryser. Om porerna är fulla och det inte finns luftporer i närheten kan trycket spräcka betongen."
+            },
+            {
+              "q": "Vad är luftporbildande tillsats?",
+              "a": "En tillsats som skapar många små luftbubblor i betongen. De fungerar som utrymme dit isen kan tränga ut."
+            },
+            {
+              "q": "Hur mycket luft behöver frostbeständig betong?",
+              "a": "Ofta 4 till 6 procent, men det viktiga är att bubblorna är små och ligger tätt. Kraven anges för betongens miljö."
+            }
+          ]
+        },
+        {
+          "type": "cta",
+          "title": "Vill du ha hjälp att välja?",
+          "text": "Berätta vad du ska göra, var och när, så rekommenderar vi rätt utrustning och återkommer med pris och leveranstid.",
+          "button": "Få offert",
+          "href": "/offert"
+        }
+      ]
+    },
+    "en": {
+      "title": "Why does concrete crack from frost? Air voids explained",
+      "h1": "Why does concrete crack from frost? Air voids explained",
+      "seoTitle": "Frost damage in concrete and air voids explained | Betongakuten",
+      "description": "Why does concrete crack when it freezes, and how do small air voids protect it? Explained simply, with a simulation where you freeze the concrete yourself.",
+      "summary": "Water grows when it freezes. How small air voids protect concrete, and a simulation where you freeze it yourself.",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "Anyone who has seen a step or a kerb crumble after a few winters has seen frost damage. The cause is simple: water grows when it freezes. The solution is just as simple, but a little surprising: air is mixed into the concrete."
+        },
+        {
+          "type": "widget",
+          "kind": "frost",
+          "title": "Freeze the concrete yourself",
+          "intro": "Set the air content and saturation, and press Freeze to see whether the ice has room.",
+          "cta": false
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Water grows when it freezes"
+        },
+        {
+          "type": "text",
+          "html": "When water turns to ice its volume grows by about 9 percent. In concrete there is water in small pores in the cement paste. If the pores are completely full the ice has nowhere to go, and the pressure can crack the concrete from the inside. After many freeze-thaw cycles the damage grows and the surface starts to flake or crumble."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "What matters: how wet is the concrete?"
+        },
+        {
+          "type": "text",
+          "html": "Dry concrete handles frost well, because there is air left in the pores. The risk arises when the concrete is almost saturated. Above a critical degree of saturation, often somewhere around 85 to 90 percent, the ice no longer has room. That is why concrete that stands in water or often gets wet, such as kerbs, quays and bridges, is hit hardest."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Air voids: tiny airbags"
+        },
+        {
+          "type": "text",
+          "html": "An air-entraining admixture creates millions of small air bubbles in the concrete, often 4 to 6 percent of the volume. When the water freezes it can be pushed into the empty bubbles instead of cracking the concrete. What matters is that the bubbles are close together, so the water never has far to the nearest air void. A common requirement is a spacing of at most around 0.2 mm."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "How to get frost-resistant concrete"
+        },
+        {
+          "type": "list",
+          "items": [
+            "A low <a href=\"/artiklar/vattencementtal-vct\">water/cement ratio</a>, which gives dense concrete with fewer pores.",
+            "An air-entraining admixture that gives the right amount of small, closely spaced air voids.",
+            "Proper <a href=\"/artiklar/sa-hardnar-betong\">curing</a>, so the surface becomes dense.",
+            "No extra water on site, because it makes the concrete more porous."
+          ]
+        },
+        {
+          "type": "text",
+          "html": "De-icing salt makes things worse, because salt increases the strain on the surface. Concrete exposed to both frost and salt therefore needs stricter requirements. That young concrete must not freeze is a different problem, covered in <a href=\"/artiklar/gjuta-betong-pa-vintern\">casting concrete in winter</a>."
+        },
+        {
+          "type": "faq",
+          "title": "Frequently asked questions",
+          "items": [
+            {
+              "q": "Why does concrete get frost damage?",
+              "a": "Water in the pores of concrete grows about 9 percent when it freezes. If the pores are full and there are no air voids nearby, the pressure can crack the concrete."
+            },
+            {
+              "q": "What is an air-entraining admixture?",
+              "a": "An admixture that creates many small air bubbles in the concrete. They act as space the ice can escape into."
+            },
+            {
+              "q": "How much air does frost-resistant concrete need?",
+              "a": "Often 4 to 6 percent, but what matters is that the bubbles are small and close together. The requirements are set for the concrete's environment."
+            }
+          ]
+        },
+        {
+          "type": "cta",
+          "title": "Would you like help choosing?",
+          "text": "Tell us what you are going to do, where and when, and we will recommend the right equipment and come back with a price and lead time.",
+          "button": "Get a quote",
+          "href": "/offert"
+        }
+      ]
+    }
+  }
+}

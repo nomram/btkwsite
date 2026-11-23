@@ -1,0 +1,197 @@
+{
+  "path": "/artiklar/stenras-och-skyddsnat",
+  "updated": "2026-11-22",
+  "template": "article",
+  "order": 10,
+  "published": true,
+  "date": "2026-11-22",
+  "tags": [
+    "berg",
+    "geobrugg",
+    "guide",
+    "verktyg"
+  ],
+  "image": "/assets/img/stenras.webp",
+  "hideIn": [
+    "es",
+    "no",
+    "lt",
+    "lv",
+    "et",
+    "ru"
+  ],
+  "i18n": {
+    "sv": {
+      "title": "Stenras och skyddsnät: hur mycket energi har en fallande sten?",
+      "h1": "Stenras och skyddsnät: hur mycket energi har en fallande sten?",
+      "seoTitle": "Stenras och skyddsnät: räkna ut energin | Betongakuten",
+      "description": "Hur mycket energi har en sten som faller från en bergvägg, och hur stoppar man den? Förklarat enkelt, med en simulering av fallhöjd, storlek och skyddsnät.",
+      "summary": "En sten som faller från en bergvägg kan ha lika mycket energi som flera bilar i krock. Så räknar man, och så skyddar man sig.",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "Längs vägar, järnvägar och byggen under bergväggar kan stenar lossna och falla. Även en ganska liten sten får enorm energi efter några tiotals meters fall. Här kan du själv se hur snabbt energin växer, och hur man skyddar sig."
+        },
+        {
+          "type": "widget",
+          "kind": "sten",
+          "title": "Släpp en sten",
+          "intro": "Välj storlek och fallhöjd och se hur mycket energi stenen får, och vilket skyddsnät som skulle behövas.",
+          "cta": false
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Varför lossnar stenar?"
+        },
+        {
+          "type": "list",
+          "items": [
+            "<strong>Frost:</strong> vatten i sprickor fryser, växer och kilar isär berget, en vinter i taget.",
+            "<strong>Vatten och regn:</strong> tar bort material och gör sprickor hala.",
+            "<strong>Rötter och vegetation:</strong> växer in i sprickor och bänder isär.",
+            "<strong>Vibrationer:</strong> från sprängning, trafik eller byggarbeten."
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Energin växer snabbt"
+        },
+        {
+          "type": "text",
+          "html": "En stens rörelseenergi beror på vikten och farten. Fördubblar du stenens diameter blir den åtta gånger tyngre, eftersom volymen växer i kubik. Och ju högre fallet är, desto snabbare går det. En sten på en meter som faller 50 meter har därför ungefär lika mycket energi som fem personbilar i 50 km/h."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Så skyddar man sig"
+        },
+        {
+          "type": "list",
+          "items": [
+            "<strong>Bergrensning och skrotning:</strong> lösa stenar tas ned i förväg.",
+            "<strong>Bultning och nät på berget:</strong> berget fästs med bultar och täcks med stålnät som håller ihop ytan.",
+            "<strong>Skyddsnät och stängsel:</strong> flexibla nät som fångar fallande stenar och tar upp energin. De provas i full skala och klassas efter hur många kilojoule de tål.",
+            "<strong>Vallar och diken:</strong> för de största energierna."
+          ]
+        },
+        {
+          "type": "text",
+          "html": "Vi levererar system för släntstabilisering och skydd mot stenras och blocknedfall från <a href=\"/produkter/geobrugg\">Geobrugg</a>. Vilken lösning som behövs avgörs av en geoteknisk bedömning av berget och hur stenarna kan röra sig. Mer om hur berget förstärks i tunnlar finns i <a href=\"/artiklar/tunnelbyggande-tbm-jumbo\">tunnelbyggande</a>."
+        },
+        {
+          "type": "faq",
+          "title": "Vanliga frågor",
+          "items": [
+            {
+              "q": "Hur mycket energi har en fallande sten?",
+              "a": "Det beror på vikt och fallhöjd. En sten på cirka en halv meter som faller 20 meter har omkring 35 kJ, ungefär som en personbil i 25 km/h. En sten på en meter som faller 50 meter har omkring 700 kJ. Större stenar och högre fall ger snabbt flera tusen kJ."
+            },
+            {
+              "q": "Vad betyder kJ på ett skyddsnät?",
+              "a": "Det är den energi nätet är provat och klassat för att ta upp. Nätet ska väljas för den största energi som en fallande sten kan få på platsen."
+            },
+            {
+              "q": "Räcker det med ett nät?",
+              "a": "Ibland, men ofta kombineras flera åtgärder: att rensa berget, bulta och täcka med nät, och fånga det som ändå lossnar."
+            }
+          ]
+        },
+        {
+          "type": "cta",
+          "title": "Vill du ha hjälp att välja?",
+          "text": "Berätta vad du ska göra, var och när, så rekommenderar vi rätt utrustning och återkommer med pris och leveranstid.",
+          "button": "Få offert",
+          "href": "/offert"
+        }
+      ]
+    },
+    "en": {
+      "title": "Rockfall and protection nets: how much energy does a falling stone have?",
+      "h1": "Rockfall and protection nets: how much energy does a falling stone have?",
+      "seoTitle": "Rockfall and protection nets: work out the energy | Betongakuten",
+      "description": "How much energy does a stone falling from a rock face have, and how do you stop it? Explained simply, with a simulation of fall height, size and protection nets.",
+      "summary": "A stone falling from a rock face can have as much energy as several cars in a crash. How to work it out, and how to protect against it.",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "Along roads, railways and building sites below rock faces, stones can come loose and fall. Even a fairly small stone gets enormous energy after a fall of a few tens of metres. Here you can see for yourself how fast the energy grows, and how to protect against it."
+        },
+        {
+          "type": "widget",
+          "kind": "sten",
+          "title": "Drop a stone",
+          "intro": "Choose the size and fall height and see how much energy the stone gets, and which protection net would be needed.",
+          "cta": false
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Why do stones come loose?"
+        },
+        {
+          "type": "list",
+          "items": [
+            "<strong>Frost:</strong> water in cracks freezes, grows and wedges the rock apart, one winter at a time.",
+            "<strong>Water and rain:</strong> wash away material and make cracks slippery.",
+            "<strong>Roots and vegetation:</strong> grow into cracks and pry them apart.",
+            "<strong>Vibrations:</strong> from blasting, traffic or construction work."
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "The energy grows fast"
+        },
+        {
+          "type": "text",
+          "html": "The kinetic energy of a stone depends on its weight and speed. Double the diameter of the stone and it becomes eight times heavier, because the volume grows with the cube. And the higher the fall, the faster it goes. A one-metre stone falling 50 metres therefore has about as much energy as five cars at 50 km/h."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "How to protect against it"
+        },
+        {
+          "type": "list",
+          "items": [
+            "<strong>Scaling:</strong> loose stones are brought down in advance.",
+            "<strong>Bolting and mesh on the rock:</strong> the rock is fixed with bolts and covered with steel mesh that holds the surface together.",
+            "<strong>Protection nets and fences:</strong> flexible nets that catch falling stones and absorb the energy. They are tested at full scale and classed by how many kilojoules they can take.",
+            "<strong>Embankments and ditches:</strong> for the largest energies."
+          ]
+        },
+        {
+          "type": "text",
+          "html": "We supply systems for slope stabilisation and protection against rockfall from <a href=\"/produkter/geobrugg\">Geobrugg</a>. Which solution is needed is decided by a geotechnical assessment of the rock and how the stones can move. More on how rock is reinforced in tunnels is in <a href=\"/artiklar/tunnelbyggande-tbm-jumbo\">tunnelling</a>."
+        },
+        {
+          "type": "faq",
+          "title": "Frequently asked questions",
+          "items": [
+            {
+              "q": "How much energy does a falling stone have?",
+              "a": "It depends on weight and fall height. A stone of about half a metre falling 20 metres has around 35 kJ, roughly like a car at 25 km/h. A one-metre stone falling 50 metres has around 700 kJ. Larger stones and higher falls quickly give several thousand kJ."
+            },
+            {
+              "q": "What does kJ mean on a protection net?",
+              "a": "It is the energy the net is tested and classed to absorb. The net should be chosen for the largest energy a falling stone can get at the site."
+            },
+            {
+              "q": "Is a net enough?",
+              "a": "Sometimes, but several measures are often combined: scaling the rock, bolting and covering with mesh, and catching whatever still comes loose."
+            }
+          ]
+        },
+        {
+          "type": "cta",
+          "title": "Would you like help choosing?",
+          "text": "Tell us what you are going to do, where and when, and we will recommend the right equipment and come back with a price and lead time.",
+          "button": "Get a quote",
+          "href": "/offert"
+        }
+      ]
+    }
+  }
+}

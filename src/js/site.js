@@ -1908,3 +1908,63 @@
     if (e.target.closest && e.target.closest("[data-consent-open]")) show();
   });
 })();
+
+// ---------- live page head: drifting dust on its own canvas that reacts to scrolling (nothing is loaded, it pauses out of view) ----------
+(function () {
+  var heads = document.querySelectorAll(".page-head:not(.page-head--center)");
+  if (!heads.length || !window.HTMLCanvasElement) return;
+  var reduce = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
+  [].forEach.call(heads, function (head) {
+    var cv = document.createElement("canvas"); cv.className = "page-head__fx"; cv.setAttribute("aria-hidden", "true"); head.insertBefore(cv, head.firstChild);
+    var ctx = cv.getContext("2d"); if (!ctx) return;
+    var dpr = Math.min(2, window.devicePixelRatio || 1), W = 0, H = 0, P = [], on = true, last = 0, raf = 0, lastY = window.scrollY, gust = 0;
+    function mk(any) { return { x: Math.random() * W, y: any ? Math.random() * H : H + 4, r: 0.35 + Math.pow(Math.random(), 2.4) * 2.3, vx: -0.05 + Math.random() * 0.2, vy: -(0.04 + Math.random() * 0.2), a: 0.1 + Math.random() * 0.45, z: 0.3 + Math.random() * 0.9, ph: Math.random() * 6.283, hot: Math.random() < 0.1 }; }
+    function size() {
+      var r = head.getBoundingClientRect(); W = r.width; H = r.height;
+      cv.width = Math.round(W * dpr); cv.height = Math.round(H * dpr); cv.style.width = W + "px"; cv.style.height = H + "px"; ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+      var n = Math.round(Math.min(150, W * H / 4800)); while (P.length < n) P.push(mk(true)); P.length = n;
+    }
+    function frame(t) {
+      var dt = Math.min(48, t - (last || t)) || 16; last = t;
+      var y = window.scrollY, dy = y - lastY; lastY = y; gust = gust * 0.9 + dy * 0.06;
+      ctx.clearRect(0, 0, W, H);
+      for (var i = 0; i < P.length; i++) {
+        var p = P[i];
+        p.ph += dt * 0.0012;
+        p.x += (p.vx + Math.sin(p.ph) * 0.04 + gust * 0.05 * p.z) * dt * 0.06;
+        p.y += (p.vy - Math.abs(gust) * 0.03 * p.z) * dt * 0.06;
+        if (p.y < -6) { p.y = H + 6; p.x = Math.random() * W; }
+        if (p.x < -6) p.x = W + 6; else if (p.x > W + 6) p.x = -6;
+        var yy = ((p.y + y * 0.35 * p.z) % (H + 12) + H + 12) % (H + 12) - 6;
+        ctx.globalAlpha = p.a * (0.55 + 0.45 * Math.sin(p.ph * 1.7));
+        ctx.fillStyle = p.hot ? "#f7a14a" : "#f3e9dc";
+        ctx.beginPath(); ctx.arc(p.x, yy, p.r * (0.7 + p.z * 0.4), 0, 6.283); ctx.fill();
+      }
+      ctx.globalAlpha = 1;
+      if (on && !reduce) raf = requestAnimationFrame(frame);
+    }
+    size();
+    if (reduce) frame(16);
+    else if ("IntersectionObserver" in window) new IntersectionObserver(function (e) { on = e[0].isIntersecting; cancelAnimationFrame(raf); if (on) { last = 0; raf = requestAnimationFrame(frame); } }).observe(head);
+    else raf = requestAnimationFrame(frame);
+    window.addEventListener("resize", function () { size(); if (reduce) frame(16); });
+  });
+})();
+
+// ---------- reading progress on articles: eased so it runs a little ahead of the reader ----------
+(function () {
+  var body = document.querySelector(".page--article");
+  if (!body) return;
+  var bar = document.createElement("div"); bar.className = "rprog"; bar.setAttribute("aria-hidden", "true"); bar.appendChild(document.createElement("i")); document.body.appendChild(bar);
+  var fill = bar.firstChild, ticking = false;
+  function upd() {
+    ticking = false;
+    var r = body.getBoundingClientRect(), total = r.height - window.innerHeight * 0.6, p = total > 0 ? Math.min(1, Math.max(0, -r.top / total)) : 1;
+    var shown = Math.log(1 + 9 * p) / Math.log(10);
+    fill.style.transform = "scaleX(" + shown.toFixed(4) + ")";
+    bar.classList.toggle("is-on", p > 0.004);
+  }
+  window.addEventListener("scroll", function () { if (!ticking) { ticking = true; requestAnimationFrame(upd); } }, { passive: true });
+  window.addEventListener("resize", upd);
+  upd();
+})();

@@ -1,0 +1,238 @@
+{
+  "path": "/artiklar/marshtratt",
+  "updated": "2026-11-23",
+  "template": "article",
+  "order": 10,
+  "published": true,
+  "date": "2026-11-23",
+  "tags": [
+    "injektering",
+    "guide",
+    "verktyg"
+  ],
+  "image": "/assets/img/marshtratt.webp",
+  "hideIn": [
+    "es",
+    "no",
+    "lt",
+    "lv",
+    "et",
+    "ru"
+  ],
+  "i18n": {
+    "sv": {
+      "title": "Så använder du en marshtratt: mät flytförmågan steg för steg",
+      "h1": "Så använder du en marshtratt: mät flytförmågan steg för steg",
+      "seoTitle": "Så använder du en marshtratt, steg för steg | Betongakuten",
+      "description": "Så mäter du hur lättflytande ett injekteringsbruk, en borrvätska eller en bentonitslurry är med en marshtratt. Steg för steg, med en interaktiv övning.",
+      "summary": "Ett enkelt verktyg som säger mycket om bruket. Så mäter du rätt med en marshtratt, och en övning där du själv stoppar klockan.",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "En marshtratt är ett av de enklaste och mest använda mätverktygen på en injekterings- eller borrarbetsplats. Den mäter hur lättflytande ett bruk eller en slurry är, uttryckt i sekunder. Ju fler sekunder, desto tjockare och segare. Här går vi igenom hur du använder den, och du kan öva själv."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Vad är en marshtratt?"
+        },
+        {
+          "type": "text",
+          "html": "Marshtratten är en standardiserad tratt med en sil upptill och ett smalt utloppsrör nertill. Den används för injekteringsbruk, borrvätskor och bentonitslurry. Måtten är fasta, så att mätningar kan jämföras mellan arbetsplatser:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Diameter upptill: 152 mm",
+            "Längd: 305 mm",
+            "Utloppsrör: 51 mm långt, med 4,76 mm innerdiameter",
+            "Volym till silens underkant: 1 500 ml"
+          ]
+        },
+        {
+          "type": "widget",
+          "kind": "marsh",
+          "title": "Öva själv: mät flyttiden",
+          "intro": "Välj vad du mäter, starta och stoppa klockan när kannan når strecket. Hur nära rätt tid kommer du?",
+          "cta": false
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Så mäter du, steg för steg"
+        },
+        {
+          "type": "list",
+          "items": [
+            "<strong>Kontrollera tratten med vatten.</strong> Rent vatten ska ge ungefär 26 sekunder för 946 ml vid rumstemperatur. Avviker tiden är tratten smutsig eller skadad.",
+            "<strong>Håll tratten lodrätt</strong> i ett stativ eller i handen och sätt ett finger för utloppet.",
+            "<strong>Häll provet genom silen</strong> tills nivån når silens underkant, 1 500 ml. Silen fångar klumpar och skräp.",
+            "<strong>Ställ måttkannan under utloppet.</strong>",
+            "<strong>Ta bort fingret och starta tidtagningen</strong> i samma ögonblick.",
+            "<strong>Stoppa tiden när kannan når 946 ml</strong>, eller 1 000 ml om ert mätprotokoll anger det.",
+            "<strong>Anteckna tiden i sekunder</strong>, gärna tillsammans med temperatur, tid efter blandning och densitet.",
+            "<strong>Rengör tratten och silen direkt</strong> med vatten, innan bruket hunnit hårdna."
+          ],
+          "ordered": true
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Så tolkar du resultatet"
+        },
+        {
+          "type": "text",
+          "html": "Flyttiden säger hur segt bruket är. En längre tid betyder ett tjockare bruk som inte når lika långt i fina sprickor, men som ofta separerar mindre. En kortare tid betyder ett tunnare bruk. Vilka tider som gäller anges i projektets specifikation."
+        },
+        {
+          "type": "list",
+          "items": [
+            "Mät alltid på samma sätt och vid samma tid efter blandning, så att värdena går att jämföra.",
+            "Mät igen efter en stund. Om tiden ökar börjar bruket att styvna.",
+            "Komplettera gärna med densitet och separation för en fullständig bild av bruket."
+          ]
+        },
+        {
+          "type": "text",
+          "html": "Hur brukets segdom påverkar hur långt injekteringen når kan du prova i <a href=\"/artiklar/injekteringens-rackvidd\">hur långt når injekteringen</a>, och hur du väljer pump och mixer går vi igenom i <a href=\"/artiklar/valj-injekteringsutrustning\">så väljer du injekteringsutrustning</a>."
+        },
+        {
+          "type": "faq",
+          "title": "Vanliga frågor",
+          "items": [
+            {
+              "q": "Vad mäter en marshtratt?",
+              "a": "Hur lättflytande ett bruk eller en vätska är, som den tid i sekunder det tar för en viss mängd att rinna ut genom tratten."
+            },
+            {
+              "q": "Vilken tid ska vatten ge?",
+              "a": "Ungefär 26 sekunder för 946 ml vid rumstemperatur. Det är ett bra sätt att kontrollera att tratten är ren och hel."
+            },
+            {
+              "q": "Ska man mäta 946 ml eller 1 000 ml?",
+              "a": "Standarden för borrvätskor mäter 946 ml, en amerikansk quart. Inom injektering används ibland 1 000 ml. Det viktiga är att alltid mäta på samma sätt och följa projektets protokoll."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "<strong>Marshtrattar finns i lager hos oss.</strong> Vi har även övrig utrustning för injektering, från pumpar och mixers till dataloggning. Hör av dig så får du pris och leveranstid."
+        },
+        {
+          "type": "cta",
+          "title": "Marshtrattar i lager",
+          "text": "Vi har marshtrattar i lager för snabb leverans. Berätta hur många du behöver och vart de ska, så återkommer vi med pris och leveranstid.",
+          "button": "Få offert",
+          "href": "/offert"
+        }
+      ]
+    },
+    "en": {
+      "title": "How to use a Marsh funnel: measure flowability step by step",
+      "h1": "How to use a Marsh funnel: measure flowability step by step",
+      "seoTitle": "How to use a Marsh funnel, step by step | Betongakuten",
+      "description": "How to measure the flowability of a grout, a drilling fluid or a bentonite slurry with a Marsh funnel. Step by step, with an interactive exercise.",
+      "summary": "A simple tool that tells you a lot about the grout. How to measure correctly with a Marsh funnel, and an exercise where you stop the clock yourself.",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "A Marsh funnel is one of the simplest and most used measuring tools on a grouting or drilling site. It measures how easily a grout or slurry flows, expressed in seconds. The more seconds, the thicker and stiffer. Here we go through how to use it, and you can practise yourself."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "What is a Marsh funnel?"
+        },
+        {
+          "type": "text",
+          "html": "The Marsh funnel is a standardised funnel with a screen at the top and a narrow outlet tube at the bottom. It is used for grouts, drilling fluids and bentonite slurry. The dimensions are fixed, so measurements can be compared between sites:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Diameter at the top: 152 mm",
+            "Length: 305 mm",
+            "Outlet tube: 51 mm long, with a 4.76 mm inside diameter",
+            "Volume up to the bottom of the screen: 1,500 ml"
+          ]
+        },
+        {
+          "type": "widget",
+          "kind": "marsh",
+          "title": "Practise: measure the flow time",
+          "intro": "Choose what you are measuring, start and stop the clock when the cup reaches the line. How close to the right time can you get?",
+          "cta": false
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "How to measure, step by step"
+        },
+        {
+          "type": "list",
+          "items": [
+            "<strong>Check the funnel with water.</strong> Clean water should take about 26 seconds for 946 ml at room temperature. If the time differs, the funnel is dirty or damaged.",
+            "<strong>Hold the funnel upright</strong> in a stand or by hand and put a finger over the outlet.",
+            "<strong>Pour the sample through the screen</strong> until it reaches the bottom of the screen, 1,500 ml. The screen catches lumps and debris.",
+            "<strong>Place the measuring cup under the outlet.</strong>",
+            "<strong>Remove your finger and start the timer</strong> at the same moment.",
+            "<strong>Stop the timer when the cup reaches 946 ml</strong>, or 1,000 ml if your test procedure says so.",
+            "<strong>Write down the time in seconds</strong>, preferably together with temperature, time after mixing and density.",
+            "<strong>Clean the funnel and screen straight away</strong> with water, before the grout can harden."
+          ],
+          "ordered": true
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "How to read the result"
+        },
+        {
+          "type": "text",
+          "html": "The flow time tells you how stiff the grout is. A longer time means a thicker grout that does not reach as far into fine fractures, but often separates less. A shorter time means a thinner grout. The times that apply are set in the project specification."
+        },
+        {
+          "type": "list",
+          "items": [
+            "Always measure the same way and at the same time after mixing, so the values can be compared.",
+            "Measure again after a while. If the time increases, the grout is starting to stiffen.",
+            "Add density and bleeding tests for a full picture of the grout."
+          ]
+        },
+        {
+          "type": "text",
+          "html": "How grout stiffness affects how far the grouting reaches you can try in <a href=\"/artiklar/injekteringens-rackvidd\">how far does grouting reach</a>, and how to choose pump and mixer is covered in <a href=\"/artiklar/valj-injekteringsutrustning\">how to choose grouting equipment</a>."
+        },
+        {
+          "type": "faq",
+          "title": "Frequently asked questions",
+          "items": [
+            {
+              "q": "What does a Marsh funnel measure?",
+              "a": "How easily a grout or fluid flows, as the time in seconds it takes for a certain amount to run out through the funnel."
+            },
+            {
+              "q": "What time should water give?",
+              "a": "About 26 seconds for 946 ml at room temperature. It is a good way to check that the funnel is clean and undamaged."
+            },
+            {
+              "q": "Should you measure 946 ml or 1,000 ml?",
+              "a": "The standard for drilling fluids measures 946 ml, one US quart. In grouting 1,000 ml is sometimes used. What matters is to always measure the same way and follow the project's procedure."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "<strong>We have Marsh funnels in stock.</strong> We also carry other grouting equipment, from pumps and mixers to data logging. Get in touch for a price and lead time."
+        },
+        {
+          "type": "cta",
+          "title": "Marsh funnels in stock",
+          "text": "We have Marsh funnels in stock for quick delivery. Tell us how many you need and where they should go, and we will come back with a price and lead time.",
+          "button": "Get a quote",
+          "href": "/offert"
+        }
+      ]
+    }
+  }
+}

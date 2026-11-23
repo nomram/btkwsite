@@ -94,6 +94,7 @@
           how: "Höjderna är de som vanligen anges för byggnaderna. Alla har betong som en viktig del av bärande delar, men inte alla är av bara betong (Burj Khalifas spira är av stål). Samma skala gäller för alla staplar."
         }
       },
+      more: {"frost":{"air":"Luftporer i betongen","sat":"Hur vattenmättad är betongen?","freeze":"Frys betongen","thaw":"Tina igen","spacing":"Avstånd mellan luftporerna, ungefär","risk":"Risk för frostskador","levels":["Låg","Måttlig","Hög"],"before":"Blå prickar är vattenfyllda porer och vita bubblor är luftporer. Tryck på Frys och se vad som händer.","after":["Isen får plats: vattnet trycks ut i luftporerna i närheten, och betongen klarar sig.","Det blir trångt. En del porer ligger för långt från närmaste luftpor, och det bildas fina sprickor.","Isen får inte plats. Porerna långt från luftporerna spricker, och efter många frys-tö-cykler smular ytan sönder."],"dry":"Betongen är inte vattenmättad, så det finns luft kvar i porerna där isen kan ta plats.","rule":"När vatten fryser till is ökar volymen med ungefär 9 procent. Frostbeständig betong har därför ofta 4 till 6 procent små luftporer, tätt fördelade.","how":"Förenklad modell. Avståndet mellan luftporerna uppskattas från lufthalten (ungefär 0,75 / lufthalt^0,9 mm), och ett vanligt krav är omkring 0,2 mm. Under ungefär 86 procent vattenmättnad räknas risken som låg. I verkligheten spelar även porstorlek, salt och antalet frys-tö-cykler in."},"pump":{"dia":"Cylinderns diameter","stroke":"Slaglängd","spm":"Slag per minut","perMin":"per min","eff":"Fyllnadsgrad","perStroke":"Betong per slag","l":"liter","out":"Kapacitet","truck":"Tid för en betongbil (8 m³)","min":"minuter","now":"Pumpen ger ungefär {q} m³ i timmen. En platta på 50 m³ tar då ungefär {h} timmar att pumpa.","real":"I praktiken blir det mindre: byten av betongbil, flyttar och pauser gör att medelkapaciteten ofta är klart lägre än pumpens maxkapacitet.","rule":"Tumregel: rörets innerdiameter bör vara minst tre gånger så stor som den största stenen i betongen.","how":"Volym per slag = π × (diameter / 2)² × slaglängd. Kapacitet = volym per slag × slag per minut × 60 × fyllnadsgrad. Kolvarna arbetar växelvis: när den ena trycker ut betong suger den andra in ny från tratten, och en S-ventil växlar mellan dem."},"rock":{"size":"Stenens storlek (diameter)","height":"Fallhöjd","drop":"Släpp stenen","mass":"Vikt","speed":"Hastighet vid nedslag","energy":"Rörelseenergi","now":"Stenen träffar med ungefär {e} kJ, lika mycket rörelseenergi som {c} personbilar i 50 km/h.","scale":"Skyddsnät klassas efter hur mycket energi de kan ta upp, i kJ:","need":"Det kräver ett skyddsnät som är klassat för minst {n} kJ.","huge":"Det är mer energi än de flesta skyddsnät klarar. Då behövs andra åtgärder, till exempel att säkra berget där stenen sitter eller en vall.","real":"Räkningen gäller fritt fall, det värsta fallet. En sten som rullar och studsar nerför en slänt bromsas en del, men kan också få fart i sidled.","how":"Stenen räknas som en kula av berg med densiteten 2 700 kg/m³. Hastighet v = √(2 × g × h) och energi E = ½ × m × v². En personbil på 1 500 kg i 50 km/h har ungefär 145 kJ. Klasserna är typiska energinivåer för provade skyddsnät."},"marsh":{"fluid":"Vad mäter du?","fluids":["Vatten (kontroll)","Tunt bruk (vct 1,0)","Normalt bruk (vct 0,8)","Tjockt bruk (vct 0,6)","Bentonitslurry"],"speedL":"Hastighet","speeds":["Realtid","4 gånger snabbare"],"start":"Släpp fingret och starta","stop":"Stoppa klockan","ready":"Tryck på start och stoppa klockan när bruket i kannan når strecket vid 946 ml.","running":"Bruket rinner ut. Stoppa när kannan når strecket!","good":"Bra mätt! Du fick {u} sekunder, och rätt tid är cirka {t} sekunder.","result":"Du fick {u} sekunder. Rätt tid är cirka {t} sekunder. Prova igen!","missed":"Kannan rann över strecket. Rätt tid var cirka {t} sekunder.","note":"Rent vatten ska ge ungefär 26 sekunder för 946 ml. Gör det inte det är tratten smutsig eller skadad.","how":"Tiderna för bruk och slurry är illustrativa exempel. Den verkliga tiden beror på cement, tillsatser, temperatur och hur länge bruket har blandats. Tratten fylls med 1 500 ml genom silen och tiden för 946 ml mäts."}},
       chem: {"kiln":{"temp":"Temperatur i ugnen","hint":"Dra i reglaget eller klicka på ett steg och följ råmjölet genom ugnen.","after":"Klinkern kyls snabbt och mals sedan tillsammans med lite gips till cement.","how":"Förenklad bild av en roterugn. Temperaturerna är ungefärliga och skiljer sig mellan ugnar. Råmjölet matas in i den kalla änden (till höger), och lågan sitter i den heta änden (till vänster).","stages":[[20,"Torkning","råmjölet, malen kalksten och lera, värms upp och vattnet kokar bort."],[400,"Leran ger upp vatten","lermineralerna avger sitt kemiskt bundna vatten."],[650,"Kalcinering","kalkstenen sönderdelas, CaCO₃ blir CaO och CO₂. Här frigörs ungefär 60 procent av cementtillverkningens koldioxid, direkt ur stenen."],[950,"Belit bildas","kalken reagerar med kiseldioxid från leran och bildar belit, C₂S."],[1250,"Sintring och alit","en del av materialet smälter, alit (C₃S) bildas och klinkerkulor formas. Högsta temperatur är ungefär 1 450 °C."]]},"clinker":{"react":"När vatten tillsätts reagerar alit och belit och bildar C-S-H (kalciumsilikathydrat), som är det egentliga limmet i betongen, och kalciumhydroxid.","how":"Typiska värden för ett portlandcement (CEM I). Andelarna varierar mellan fabriker. Cementkemister skriver C för CaO, S för SiO₂, A för Al₂O₃ och F för Fe₂O₃.","phases":[["alit","Alit","C₃S, trikalciumsilikat",57,"#f37d03","Reagerar snabbt med vatten och ger det mesta av hållfastheten de första veckorna."],["belit","Belit","C₂S, dikalciumsilikat",18,"#d9a86a","Reagerar långsamt och fortsätter ge hållfasthet i månader och år."],["aluminat","Aluminat","C₃A, trikalciumaluminat",8,"#8fbfe0","Reagerar mycket snabbt och utvecklar värme. Utan gips skulle cementet stelna på några minuter."],["ferrit","Ferrit","C₄AF, tetrakalciumaluminatferrit",9,"#6b6466","Ger cementet dess gråa färg och bidrar lite till hållfastheten. Vitt cement har nästan ingen ferrit."],["gips","Gips","CaSO₄ · 2H₂O, kalciumsulfat",5,"#d8d1c4","Tillsätts vid malningen och styr hur snabbt cementet börjar stelna."],["ovrigt","Övrigt","bland annat magnesiumoxid och alkalier",3,"#a8a19a","Små mängder andra ämnen. I CEM II och CEM III ersätts en del av klinkern med till exempel kalksten eller slagg."]]},"carb":{"years":"Betongens ålder","yr":"år","exp":"Var sitter betongen?","exps":["Inomhus, torrt","Utomhus, skyddad mot regn","Utomhus, i regn","I mark eller vatten"],"qual":"Betongens kvalitet","quals":["Tät (vct 0,40)","Normal (vct 0,50)","Porös (vct 0,60)"],"cover":"Täckskikt till armeringen","depth":"Karbonatiseringsdjup","uptake":"Upptagen koldioxid","perM2":"kg per m² yta","car":"Motsvarar bilkörning","now":"Efter {t} år har koldioxid trängt in ungefär {d} mm i betongen.","rust":"Karbonatiseringen har nått armeringen. Där sjunker pH-värdet och stålet kan börja rosta om det finns fukt. Därför behövs tillräckligt täckskikt och tät betong.","safe":"Armeringen är fortfarande skyddad av den basiska betongen innanför.","indoor":"Inomhus går det fort, men betongen är torr, så risken för rost är liten.","slow":"Upptaget går långsamt och avtar med tiden, ungefär med roten ur tiden. Krossad betong efter rivning tar upp mer, eftersom ytan blir mycket större.","how":"Djupet räknas som d = k × √t, där k beror på miljö och betongens täthet (typiska värden 1 till 6 mm per √år). Upptaget räknas för 350 kg cement per m³, 65 procent kalk i cementet och att 75 procent av den kan karbonatiseras. En bil räknas med 0,12 kg koldioxid per km."},"lca":{"mil":true,"title":"Klimatpåverkan för en kubikmeter betong","unit":"kg koldioxidekvivalenter per m³","cem":"Cementtyp","cems":["CEM I (portlandcement)","CEM II/A-LL (med kalksten)","CEM II/B-S (med slagg)","CEM III/A (mycket slagg)"],"kg":"Cementhalt per m³","km":"Transport till bygget","up":"Upptag av koldioxid över livet","ups":["Räkna inte med","Under användning","Även efter rivning"],"r1":"Cement","r2":"Sten, sand och tillsatser","r3":"Råvarutransport och betongfabrik","r4":"Transport till bygget","r5":"Gjutning på plats","r6":"Upptag genom karbonatisering","car":"Det motsvarar ungefär {n} mil med en vanlig bil.","share":"Cementet står för ungefär {p} procent av utsläppen.","perKg":"Per kilo betong blir det ungefär {g} gram.","how":"Förenklade typvärden för att visa proportionerna, inte en miljövarudeklaration. Cement: 0,85, 0,72, 0,58 och 0,42 kg koldioxid per kg. Ballast och tillsatser 10 kg, råvarutransport och fabrik 8 kg, gjutning 3 kg per m³. Transport 0,09 kg per ton och km. Upptaget räknas som 15 respektive 25 procent av koldioxiden från kalcineringen. En bil räknas med 0,12 kg per km."}},
       illu: {
         lca: {"cap":"Betongens livscykel: koldioxid släpps ut när cementet tillverkas, och en del tas upp igen när betongen används och efter rivning.","l":["Råvaror","Cementfabrik","Betong och transport","Byggande","Användning","Rivning och återvinning","CO₂ ut","CO₂ in","Livscykel","från vagga till grav"]},
@@ -306,6 +307,7 @@
           how: "The heights are the ones commonly stated for the structures. All have concrete as an important part of the load-bearing parts, but not all are made of concrete alone (the spire of Burj Khalifa is steel). The scale is the same for all bars."
         }
       },
+      more: {"frost":{"air":"Air voids in the concrete","sat":"How saturated is the concrete?","freeze":"Freeze the concrete","thaw":"Thaw again","spacing":"Spacing between air voids, roughly","risk":"Risk of frost damage","levels":["Low","Moderate","High"],"before":"Blue dots are water-filled pores and white bubbles are air voids. Press Freeze and see what happens.","after":["The ice has room: water is pushed into nearby air voids, and the concrete survives.","It gets cramped. Some pores are too far from the nearest air void, and fine cracks form.","The ice has no room. Pores far from the air voids crack, and after many freeze-thaw cycles the surface crumbles."],"dry":"The concrete is not saturated, so there is air left in the pores where the ice can go.","rule":"When water freezes into ice its volume grows by about 9 percent. That is why frost-resistant concrete often has 4 to 6 percent small, closely spaced air voids.","how":"Simplified model. The spacing between air voids is estimated from the air content (about 0.75 / air^0.9 mm), and a common requirement is around 0.2 mm. Below about 86 percent saturation the risk counts as low. In reality pore size, salt and the number of freeze-thaw cycles also matter."},"pump":{"dia":"Cylinder diameter","stroke":"Stroke length","spm":"Strokes per minute","perMin":"per min","eff":"Filling degree","perStroke":"Concrete per stroke","l":"litres","out":"Capacity","truck":"Time per mixer truck (8 m³)","min":"minutes","now":"The pump delivers about {q} m³ per hour. A 50 m³ slab then takes about {h} hours to pump.","real":"In practice it is less: truck changes, moves and pauses mean the average output is often well below the pump's maximum.","rule":"Rule of thumb: the inside diameter of the pipe should be at least three times the largest stone in the concrete.","how":"Volume per stroke = π × (diameter / 2)² × stroke length. Capacity = volume per stroke × strokes per minute × 60 × filling degree. The pistons work in turn: while one pushes concrete out, the other draws new concrete from the hopper, and an S-valve switches between them."},"rock":{"size":"Size of the stone (diameter)","height":"Fall height","drop":"Drop the stone","mass":"Weight","speed":"Speed at impact","energy":"Kinetic energy","now":"The stone hits with about {e} kJ, as much kinetic energy as {c} cars at 50 km/h.","scale":"Protection nets are classed by how much energy they can absorb, in kJ:","need":"That calls for a protection net rated for at least {n} kJ.","huge":"That is more energy than most protection nets can take. Other measures are then needed, for example securing the rock at its source or an embankment.","real":"The calculation is for free fall, the worst case. A stone that rolls and bounces down a slope is slowed somewhat, but can also pick up sideways speed.","how":"The stone is treated as a ball of rock with a density of 2,700 kg/m³. Speed v = √(2 × g × h) and energy E = ½ × m × v². A 1,500 kg car at 50 km/h has about 145 kJ. The classes are typical energy levels for tested protection nets."},"marsh":{"fluid":"What are you measuring?","fluids":["Water (check)","Thin grout (w/c 1.0)","Normal grout (w/c 0.8)","Thick grout (w/c 0.6)","Bentonite slurry"],"speedL":"Speed","speeds":["Real time","4 times faster"],"start":"Lift your finger and start","stop":"Stop the clock","ready":"Press start and stop the clock when the grout in the cup reaches the 946 ml line.","running":"The grout is running out. Stop when the cup reaches the line!","good":"Well measured! You got {u} seconds, and the right time is about {t} seconds.","result":"You got {u} seconds. The right time is about {t} seconds. Try again!","missed":"The cup ran past the line. The right time was about {t} seconds.","note":"Clean water should take about 26 seconds for 946 ml. If it does not, the funnel is dirty or damaged.","how":"The times for grout and slurry are illustrative examples. The real time depends on cement, admixtures, temperature and how long the grout has been mixed. The funnel is filled with 1,500 ml through the screen and the time for 946 ml is measured."}},
       chem: {"kiln":{"temp":"Temperature in the kiln","hint":"Drag the slider or click a step and follow the raw meal through the kiln.","after":"The clinker is cooled quickly and then ground with a little gypsum into cement.","how":"A simplified picture of a rotary kiln. The temperatures are approximate and differ between kilns. The raw meal is fed in at the cold end (right) and the flame is at the hot end (left).","stages":[[20,"Drying","the raw meal, ground limestone and clay, is heated and the water boils off."],[400,"The clay gives up water","the clay minerals release their chemically bound water."],[650,"Calcination","the limestone breaks down, CaCO₃ becomes CaO and CO₂. About 60 percent of the carbon dioxide from cement making is released here, straight out of the stone."],[950,"Belite forms","the lime reacts with silica from the clay and forms belite, C₂S."],[1250,"Sintering and alite","part of the material melts, alite (C₃S) forms and nodules of clinker take shape. The top temperature is about 1,450 °C."]]},"clinker":{"react":"When water is added, alite and belite react and form C-S-H (calcium silicate hydrate), the real glue in concrete, and calcium hydroxide.","how":"Typical values for a Portland cement (CEM I). The shares vary between plants. Cement chemists write C for CaO, S for SiO₂, A for Al₂O₃ and F for Fe₂O₃.","phases":[["alit","Alite","C₃S, tricalcium silicate",57,"#f37d03","Reacts quickly with water and gives most of the strength in the first weeks."],["belit","Belite","C₂S, dicalcium silicate",18,"#d9a86a","Reacts slowly and keeps adding strength for months and years."],["aluminat","Aluminate","C₃A, tricalcium aluminate",8,"#8fbfe0","Reacts very quickly and gives off heat. Without gypsum the cement would set within minutes."],["ferrit","Ferrite","C₄AF, tetracalcium aluminoferrite",9,"#6b6466","Gives cement its grey colour and adds a little strength. White cement contains almost no ferrite."],["gips","Gypsum","CaSO₄ · 2H₂O, calcium sulphate",5,"#d8d1c4","Added during grinding and controls how fast the cement starts to set."],["ovrigt","Other","for example magnesium oxide and alkalis",3,"#a8a19a","Small amounts of other substances. In CEM II and CEM III part of the clinker is replaced by, for example, limestone or slag."]]},"carb":{"years":"Age of the concrete","yr":"years","exp":"Where is the concrete?","exps":["Indoors, dry","Outdoors, sheltered from rain","Outdoors, in the rain","In the ground or water"],"qual":"Quality of the concrete","quals":["Dense (w/c 0.40)","Normal (w/c 0.50)","Porous (w/c 0.60)"],"cover":"Cover to the reinforcement","depth":"Carbonation depth","uptake":"Carbon dioxide taken up","perM2":"kg per m² of surface","car":"Equals driving a car","now":"After {t} years carbon dioxide has entered about {d} mm into the concrete.","rust":"The carbonation has reached the reinforcement. The pH drops there and the steel can start to rust if there is moisture. That is why enough cover and dense concrete are needed.","safe":"The reinforcement is still protected by the alkaline concrete further in.","indoor":"Indoors it goes fast, but the concrete is dry, so the risk of rust is small.","slow":"The uptake is slow and slows down further over time, roughly with the square root of time. Crushed concrete after demolition takes up more, because the surface becomes much larger.","how":"The depth is calculated as d = k × √t, where k depends on the environment and the density of the concrete (typical values 1 to 6 mm per √year). The uptake assumes 350 kg of cement per m³, 65 percent lime in the cement and that 75 percent of it can carbonate. A car is counted at 0.12 kg of carbon dioxide per km."},"lca":{"mil":false,"title":"Climate impact of one cubic metre of concrete","unit":"kg of CO₂ equivalents per m³","cem":"Cement type","cems":["CEM I (Portland cement)","CEM II/A-LL (with limestone)","CEM II/B-S (with slag)","CEM III/A (lots of slag)"],"kg":"Cement content per m³","km":"Transport to the site","up":"Carbon dioxide taken up over the life","ups":["Leave it out","During use","Also after demolition"],"r1":"Cement","r2":"Stone, sand and admixtures","r3":"Raw material transport and concrete plant","r4":"Transport to the site","r5":"Casting on site","r6":"Uptake through carbonation","car":"That is roughly {n} km in an ordinary car.","share":"The cement accounts for about {p} percent of the emissions.","perKg":"Per kilo of concrete it is about {g} grams.","how":"Simplified typical values to show the proportions, not an environmental product declaration. Cement: 0.85, 0.72, 0.58 and 0.42 kg of carbon dioxide per kg. Aggregate and admixtures 10 kg, raw material transport and plant 8 kg, casting 3 kg per m³. Transport 0.09 kg per tonne and km. The uptake is counted as 15 and 25 percent of the carbon dioxide from calcination. A car is counted at 0.12 kg per km."}},
       illu: {
         lca: {"cap":"The life cycle of concrete: carbon dioxide is released when the cement is made, and some of it is taken up again while the concrete is in use and after demolition.","l":["Raw materials","Cement plant","Concrete and transport","Construction","Use","Demolition and recycling","CO₂ out","CO₂ in","Life cycle","from cradle to grave"]},
@@ -1452,8 +1454,192 @@
     return a.svg;
   }
 
-  var BUILD = { vct: buildVct, harda: buildHarda, injektering: buildInj, atgang: buildAtg, vadarvad: buildVad, volym: buildVolym, klass: buildKlass, tidslinje: buildTid, pantheon: buildPantheon, armering: buildArm, hojd: buildHojd, tunnelcykel: buildTunCycle, tunnelval: buildTunVal, spruta: buildSpruta, illu: buildIllu, ugn: buildUgn, klinker: buildKlinker, karbonatisering: buildKarb, klimat: buildKlimat };
-  if (window.__WIDGET_TEST) { window.__WIDGET_TEST.scene = scene; window.__WIDGET_TEST.tunnelScene = tunnelScene; window.__WIDGET_TEST.tbmScene = tbmScene; window.__WIDGET_TEST.romanScene = romanScene; window.__WIDGET_TEST.lcaScene = lcaScene; window.__WIDGET_TEST.T = T; }
+  // ---------- 15. frost and air voids ----------
+  function frostScene(air, sat, frozen, risk) {
+    var a = art(360, 220, "wchart wfrost"), r = seeded(21), rv = seeded(5), i, voids = [];
+    a.rect(0, 0, 360, 220, a.grad([[0, "#eef3f6"], [1, "#dfe7ec"]]), { ns: true });
+    a.rect(14, 12, 332, 196, a.grad([[0, "#e6e0d6"], [1, "#cdc5b8"]]), { sw: 1.3, rx: 6 });
+    a.speckle(16, 14, 328, 192, 80, 4, ["#b9b0a2", "#f1ebe1"], 1.2);
+    var nAir = Math.round(air * 3.4);
+    for (i = 0; i < nAir; i++) { var vx = 28 + rv() * 304, vy = 26 + rv() * 168, vr = 5 + rv() * 6; voids.push([vx, vy, vr]); a.circle(vx, vy, vr, "#fbfdff", { stroke: "#93a3ad", sw: 1.1 }); a.circle(vx - vr * 0.3, vy - vr * 0.3, vr * 0.25, "#ffffff", { ns: true }); }
+    for (i = 0; i < 120; i++) {
+      var px = 24 + r() * 312, py = 22 + r() * 176, pr = 1.5 + r() * 2.2, wet = r() < sat, near = voids.some(function (v) { return Math.hypot(v[0] - px, v[1] - py) < v[2] + 24; }), roll = r();
+      a.circle(px, py, pr, wet ? (frozen ? "#eef9ff" : "#7fb6dc") : "#f7f3ed", { stroke: wet && frozen ? "#6aa8d2" : "rgba(59,52,54,.25)", sw: 0.8 });
+      if (frozen && wet && risk >= 2 && !near && roll < 0.4) a.path("M" + px.toFixed(1) + "," + py.toFixed(1) + " l" + (7 - r() * 14).toFixed(1) + "," + (7 - r() * 14).toFixed(1) + " l" + (7 - r() * 14).toFixed(1) + "," + (7 - r() * 14).toFixed(1), "none", { stroke: "#5b4a44", sw: 1.1 });
+      if (frozen && wet && risk === 1 && !near && roll < 0.15) a.path("M" + px.toFixed(1) + "," + py.toFixed(1) + " l" + (5 - r() * 10).toFixed(1) + "," + (5 - r() * 10).toFixed(1), "none", { stroke: "#7a6a62", sw: 0.9 });
+    }
+    return a.svg;
+  }
+  function buildFrost(app) {
+    var W = T.more.frost, S = { air: 2, sat: 92, frozen: false };
+    var sA = slider(W.air, 0.5, 8, 0.5, 2, function (v) { return num(v, 1) + " %"; }, function (v) { S.air = v; S.frozen = false; draw(); });
+    var sS = slider(W.sat, 50, 100, 1, 92, function (v) { return num(v) + " %"; }, function (v) { S.sat = v; S.frozen = false; draw(); });
+    var btn = el("button", { type: "button", class: "vbtn" }); btn.addEventListener("click", function () { S.frozen = !S.frozen; draw(); });
+    var box = el("div", { class: "wfrost__pic" }), big = el("p", { class: "wgt__big", "aria-live": "polite" }), stL = stat(W.spacing, "mm"), stR = stat(W.risk), msg = el("ul", { class: "wmsg" });
+    function draw() {
+      var L = 0.75 / Math.pow(S.air, 0.9), risk = S.sat < 86 ? 0 : L <= 0.2 ? 0 : L <= 0.3 ? 1 : 2;
+      box.innerHTML = ""; box.appendChild(frostScene(S.air, S.sat / 100, S.frozen, risk));
+      btn.textContent = S.frozen ? W.thaw : W.freeze;
+      stL.set(num(L, 2)); stR.set(W.levels[risk]); stR.box.setAttribute("data-tone", ["good", "ok", "bad"][risk]);
+      big.textContent = S.frozen ? W.after[risk] : W.before;
+      msg.innerHTML = "";
+      if (S.sat < 86) msg.appendChild(el("li", { class: "wmsg__ok", text: W.dry }));
+      msg.appendChild(el("li", { class: "wmsg__info", text: W.rule }));
+    }
+    app.appendChild(el("div", { class: "wgt__grid" }, [el("div", { class: "wgt__ctl" }, [sA.box, sS.box, btn, el("div", { class: "stats" }, [stL.box, stR.box])]), el("div", { class: "wgt__out" }, [big, box, msg])]));
+    app.appendChild(how(W.how));
+    draw();
+  }
+
+  // ---------- 16. how a concrete pump works ----------
+  function pumpParts(a) {
+    a.rect(0, 0, 420, 200, a.grad([[0, "#fff7ea"], [1, "#f4ead9"]]), { ns: true });
+    a.rect(0, 176, 420, 24, a.grad([[0, "#cdbb94"], [1, "#a8966c"]]), { ns: true });
+    a.poly([[6, 40], [74, 40], [64, 150], [16, 150]], a.grad([[0, "#ffa63a"], [1, "#d96a00"]], true), { sw: 1.4 });
+    a.poly([[12, 62], [68, 62], [63, 146], [17, 146]], a.grad([[0, "#a49b8f"], [1, "#7d756c"]]), { ns: true });
+    a.speckle(14, 64, 52, 80, 30, 8, ["#5d5448", "#c9c0b4"], 1.6);
+    var cyl = [], k;
+    for (k = 0; k < 2; k++) {
+      var y = 66 + k * 54;
+      a.rect(84, y, 206, 34, a.grad([[0, "#e5e8ea"], [0.5, "#b8bec3"], [1, "#868c92"]]), { sw: 1.4 });
+      var conc = a.rect(150, y + 3, 138, 28, a.grad([[0, "#a49b8f"], [1, "#7d756c"]]), { ns: true });
+      var rod = a.rect(84, y + 13, 70, 8, "#6b6466", { sw: 1 });
+      var pis = a.rect(146, y + 2, 10, 30, "#3f393b", { sw: 1 });
+      cyl.push({ y: y, conc: conc, rod: rod, pis: pis });
+    }
+    var sv2 = a.path("M290,83 C318,83 318,103 340,103", "none", { stroke: "#5b5456", sw: 12, "stroke-linecap": "round" });
+    a.rect(330, 96, 90, 14, "#6b6466", { sw: 1.2 });
+    var flow = a.line(334, 103, 420, 103, "#a49b8f", 6, { "stroke-dasharray": "10 8" });
+    a.rect(300, 140, 16, 36, "#8f877c", { sw: 1.2 }); a.rect(88, 150, 16, 26, "#8f877c", { sw: 1.2 });
+    return function (ph, dash) {
+      var act = Math.floor(ph) % 2, f = ph - Math.floor(ph), e = 0.5 - Math.cos(f * Math.PI) / 2;
+      cyl.forEach(function (c, i) {
+        var pos = i === act ? 146 + e * 128 : 274 - e * 128;
+        c.pis.setAttribute("x", pos.toFixed(1)); c.rod.setAttribute("width", (pos - 84).toFixed(1)); c.conc.setAttribute("x", (pos + 10).toFixed(1)); c.conc.setAttribute("width", Math.max(0, 278 - pos).toFixed(1));
+      });
+      sv2.setAttribute("d", act === 0 ? "M290,83 C318,83 318,103 340,103" : "M290,137 C318,137 318,103 340,103");
+      flow.setAttribute("stroke-dashoffset", (-dash).toFixed(1));
+    };
+  }
+  function buildPump(app) {
+    var W = T.more.pump, S = { d: 230, L: 2100, n: 18, eff: 85 }, raf = 0, ph = 0, dash = 0, last = 0;
+    var sD = slider(W.dia, 150, 280, 10, 230, function (v) { return num(v) + " mm"; }, function (v) { S.d = v; calc(); });
+    var sL = slider(W.stroke, 1000, 2500, 100, 2100, function (v) { return num(v) + " mm"; }, function (v) { S.L = v; calc(); });
+    var sN = slider(W.spm, 5, 30, 1, 18, function (v) { return num(v) + " " + W.perMin; }, function (v) { S.n = v; calc(); });
+    var sE = slider(W.eff, 70, 95, 1, 85, function (v) { return num(v) + " %"; }, function (v) { S.eff = v; calc(); });
+    var A = art(420, 200, "wchart wpump"), upd = pumpParts(A);
+    var stV = stat(W.perStroke, W.l), stQ = stat(W.out, "m³/h"), stT = stat(W.truck, W.min), big = el("p", { class: "wgt__big", "aria-live": "polite" }), msg = el("ul", { class: "wmsg" });
+    var q = 0;
+    function calc() {
+      var vol = Math.PI * Math.pow(S.d / 2000, 2) * (S.L / 1000); q = vol * S.n * 60 * S.eff / 100;
+      stV.set(num(vol * 1000)); stQ.set(num(q)); stT.set(num(8 / q * 60, 1));
+      big.textContent = W.now.replace("{q}", num(q)).replace("{h}", num(50 / q, 1));
+      msg.innerHTML = ""; msg.appendChild(el("li", { class: "wmsg__info", text: W.real })); msg.appendChild(el("li", { class: "wmsg__info", text: W.rule }));
+    }
+    function frame(t) { var dt = Math.min(50, t - (last || t)); last = t; ph += dt / 1000 * S.n / 60; dash += dt * q / 900; upd(ph, dash); if (!REDUCE) raf = requestAnimationFrame(frame); }
+    app.appendChild(el("div", { class: "wgt__grid" }, [el("div", { class: "wgt__ctl" }, [sD.box, sL.box, sN.box, sE.box]), el("div", { class: "wgt__out" }, [big, A.svg, el("div", { class: "stats" }, [stV.box, stQ.box, stT.box]), msg])]));
+    app.appendChild(how(W.how));
+    calc(); upd(0.3, 0);
+    if (!REDUCE) { if ("IntersectionObserver" in window) new IntersectionObserver(function (e) { cancelAnimationFrame(raf); if (e[0].isIntersecting) { last = 0; raf = requestAnimationFrame(frame); } }).observe(A.svg); else raf = requestAnimationFrame(frame); }
+  }
+
+  // ---------- 17. rockfall energy ----------
+  var NETS = [100, 250, 500, 1000, 1500, 2000, 3000, 4500, 5000];
+  function rockParts(a) {
+    a.rect(0, 0, 420, 240, a.grad([[0, "#fff7ea"], [1, "#f3e6d0"]]), { ns: true });
+    a.poly([[0, 20], [70, 26], [110, 60], [150, 120], [230, 176], [420, 200], [420, 240], [0, 240]], a.grad([[0, C.rock], [1, C.rockD]], true), { sw: 1.4 });
+    a.speckle(0, 40, 260, 200, 70, 13, ["#8e806d", "#d8cbb8"], 1.6);
+    a.cypress(380, 200, 40); a.pine(330, 196, 34);
+    a.rect(300, 196, 120, 8, "#6b6466", { ns: true }); a.line(300, 200, 420, 200, "#fff", 1, { "stroke-dasharray": "8 6" });
+    a.line(248, 180, 248, 140, "#5b5456", 3); a.line(282, 186, 282, 146, "#5b5456", 3);
+    var net = a.path("M248,142 Q265,150 282,148 L282,186 Q265,184 248,180 Z", "rgba(91,84,86,.18)", { stroke: "#5b5456", sw: 1.2 });
+    for (var i = 0; i < 5; i++) a.line(248, 148 + i * 8, 282, 152 + i * 8, "rgba(91,84,86,.6)", 0.8);
+    var path = a.path("M70,24", "none", { stroke: "rgba(59,52,54,.35)", sw: 1.2, "stroke-dasharray": "3 4" });
+    var rock = a.circle(70, 20, 8, a.grad([[0, "#9a8f84"], [1, "#5d5448"]]), { sw: 1.2 });
+    var hl = a.line(36, 24, 36, 176, C.orange, 1.6), ht = a.add("text", { x: 42, y: 104, class: "wcall" });
+    return function (rad, h, u) {
+      var x0 = 70, y0 = 22, x1 = 252, y1 = 160, x = x0 + (x1 - x0) * u, y = y0 + (y1 - y0) * u * u;
+      path.setAttribute("d", "M" + x0 + "," + y0 + " Q" + (x0 + 120) + "," + (y0 + 6) + " " + x1 + "," + y1);
+      rock.setAttribute("r", rad.toFixed(1)); rock.setAttribute("cx", x.toFixed(1)); rock.setAttribute("cy", (y - rad + 4).toFixed(1));
+      ht.textContent = Math.round(h) + " m";
+      net.setAttribute("d", u > 0.98 ? "M248,142 Q272,158 282,148 L282,186 Q272,192 248,180 Z" : "M248,142 Q265,150 282,148 L282,186 Q265,184 248,180 Z");
+    };
+  }
+  function buildSten(app) {
+    var W = T.more.rock, S = { d: 0.6, h: 20, u: 0 }, raf = 0;
+    var sD = slider(W.size, 0.2, 2, 0.1, 0.6, function (v) { return num(v, 1) + " m"; }, function (v) { S.d = v; draw(); });
+    var sH = slider(W.height, 2, 100, 1, 20, function (v) { return num(v) + " m"; }, function (v) { S.h = v; draw(); });
+    var drop = el("button", { type: "button", class: "vbtn", text: W.drop });
+    var A = art(420, 240, "wchart wrock"), upd = rockParts(A);
+    var stM = stat(W.mass, "kg"), stV = stat(W.speed, "km/h"), stE = stat(W.energy, "kJ"), big = el("p", { class: "wgt__big", "aria-live": "polite" });
+    var scale = el("ul", { class: "wnets" }), msg = el("ul", { class: "wmsg" });
+    NETS.forEach(function (n, i) { scale.appendChild(el("li", { text: (i === NETS.length - 1 ? "> " : "") + num(i === NETS.length - 1 ? 4500 : n) })); });
+    function draw() {
+      var vol = Math.PI / 6 * Math.pow(S.d, 3), m = vol * 2700, v = Math.sqrt(2 * 9.81 * S.h), E = 0.5 * m * v * v / 1000, cars = E / 145, k = 0;
+      while (k < NETS.length - 1 && NETS[k] < E) k++;
+      stM.set(num(m)); stV.set(num(v * 3.6)); stE.set(num(E));
+      big.textContent = W.now.replace("{e}", num(E)).replace("{c}", num(cars, cars < 10 ? 1 : 0));
+      [].forEach.call(scale.children, function (li, i) { li.classList.toggle("is-on", i === k); li.classList.toggle("is-low", i < k); });
+      msg.innerHTML = ""; msg.appendChild(el("li", { class: E > 4500 ? "wmsg__warn" : "wmsg__info", text: E > 4500 ? W.huge : W.need.replace("{n}", num(NETS[k])) })); msg.appendChild(el("li", { class: "wmsg__info", text: W.real }));
+      upd(4 + S.d * 7, S.h, S.u);
+    }
+    drop.addEventListener("click", function () {
+      cancelAnimationFrame(raf); var t0 = performance.now(), D = REDUCE ? 1 : 900 + Math.sqrt(S.h) * 60;
+      (function step(now) { S.u = Math.min(1, (now - t0) / D); S.u = S.u * S.u; upd(4 + S.d * 7, S.h, S.u); if (S.u < 1) raf = requestAnimationFrame(step); })(t0);
+    });
+    app.appendChild(el("div", { class: "wgt__grid" }, [el("div", { class: "wgt__ctl" }, [sD.box, sH.box, drop, el("div", { class: "stats" }, [stM.box, stV.box, stE.box])]), el("div", { class: "wgt__out" }, [big, A.svg, el("p", { class: "wgt__cap", text: W.scale }), scale, msg])]));
+    app.appendChild(how(W.how));
+    draw();
+  }
+
+  // ---------- 18. Marsh funnel ----------
+  function marshParts(a) {
+    a.rect(0, 0, 300, 280, a.grad([[0, "#fff7ea"], [1, "#f4ead9"]]), { ns: true });
+    a.rect(0, 256, 300, 24, a.grad([[0, "#cdbb94"], [1, "#a8966c"]]), { ns: true });
+    a.line(232, 40, 232, 256, "#6b6466", 4); a.line(214, 62, 252, 62, "#6b6466", 3); a.rect(226, 248, 40, 8, "#6b6466", { ns: true });
+    var funnel = "M70,30 L230,30 L162,150 L162,170 L138,170 L138,150 Z", clipF = a.clip(funnel);
+    a.path(funnel, "rgba(255,255,255,.75)", { ns: true });
+    var lvl = a.rect(60, 40, 180, 140, a.grad([[0, "#a49b8f"], [1, "#7d756c"]]), { ns: true, "clip-path": clipF });
+    a.path(funnel, "none", { stroke: "#3b3436", sw: 2 }); a.line(76, 40, 224, 40, "rgba(59,52,54,.5)", 1, { "stroke-dasharray": "4 3" });
+    a.rect(70, 26, 160, 6, "#8a8184", { sw: 1 });
+    var stream = a.rect(147, 170, 6, 0, "#8f877c", { ns: true });
+    var cupClip = a.clip("M110,196 L190,196 L184,254 L116,254 Z");
+    var cupFill = a.rect(100, 254, 100, 0, a.grad([[0, "#a49b8f"], [1, "#7d756c"]]), { ns: true, "clip-path": cupClip });
+    a.path("M110,196 L190,196 L184,254 L116,254 Z", "rgba(255,255,255,.25)", { stroke: "#3b3436", sw: 1.6 });
+    a.line(112, 212, 188, 212, C.orange, 1.4); var mk = a.add("text", { x: 194, y: 215, class: "wcall" }); mk.textContent = "946 ml";
+    return function (f, running) {
+      var top = 40 + 112 * f; lvl.setAttribute("y", top.toFixed(1)); lvl.setAttribute("height", Math.max(0, 180 - top).toFixed(1));
+      stream.setAttribute("height", running && f < 0.995 ? 84 : 0);
+      var h = 42 * Math.min(1, f) * (946 / 946); cupFill.setAttribute("y", (254 - h).toFixed(1)); cupFill.setAttribute("height", h.toFixed(1));
+    };
+  }
+  function buildMarsh(app) {
+    var W = T.more.marsh, TIMES = [26, 32, 37, 48, 42], S = { i: 2, x: 1, run: false, t0: 0, user: null }, raf = 0;
+    var sF = select(W.fluid, W.fluids, 2, function (i) { S.i = i; reset(); });
+    var sX = segmented(W.speedL, W.speeds, 0, function (i) { S.x = [1, 4][i]; reset(); }); S.x = 1;
+    var start = el("button", { type: "button", class: "vbtn", text: W.start }), stop = el("button", { type: "button", class: "vbtn vbtn--ghost", text: W.stop });
+    var A = art(300, 280, "wchart wmarsh"), upd = marshParts(A), clock = el("p", { class: "wmarsh__clock", "aria-live": "off" }), big = el("p", { class: "wgt__big", "aria-live": "polite" });
+    function T0() { return TIMES[S.i]; }
+    function reset() { cancelAnimationFrame(raf); S.run = false; S.user = null; upd(0, false); clock.textContent = "0,0 s"; big.textContent = W.ready; stop.disabled = true; start.disabled = false; }
+    function frame(now) {
+      var el2 = (now - S.t0) / 1000 * S.x, f = Math.min(1.15, el2 / T0());
+      upd(Math.min(1, f), true); clock.textContent = num(el2, 1).replace(".", ",") + " s";
+      if (S.user === null && f >= 1.15) { S.run = false; upd(1, false); big.textContent = W.missed.replace("{t}", num(T0())); stop.disabled = true; start.disabled = false; return; }
+      if (S.run) raf = requestAnimationFrame(frame);
+    }
+    start.addEventListener("click", function () { reset(); S.run = true; S.t0 = performance.now(); start.disabled = true; stop.disabled = false; big.textContent = W.running; raf = requestAnimationFrame(frame); });
+    stop.addEventListener("click", function () {
+      if (!S.run) return; S.run = false; cancelAnimationFrame(raf);
+      var el2 = (performance.now() - S.t0) / 1000 * S.x; S.user = el2; upd(Math.min(1, el2 / T0()), false); clock.textContent = num(el2, 1) + " s";
+      var diff = Math.abs(el2 - T0()); big.textContent = (diff < 1 ? W.good : W.result).replace("{u}", num(el2, 1)).replace("{t}", num(T0())); stop.disabled = true; start.disabled = false;
+    });
+    app.appendChild(el("div", { class: "wgt__grid" }, [el("div", { class: "wgt__ctl" }, [sF.box, sX.box, el("div", { class: "vbtns" }, [start, stop]), clock]), el("div", { class: "wgt__out" }, [big, el("div", { class: "wmarsh__pic" }, [A.svg]), el("ul", { class: "wmsg" }, [el("li", { class: "wmsg__info", text: W.note })])])]));
+    app.appendChild(how(W.how));
+    reset();
+  }
+
+  var BUILD = { vct: buildVct, harda: buildHarda, injektering: buildInj, atgang: buildAtg, vadarvad: buildVad, volym: buildVolym, klass: buildKlass, tidslinje: buildTid, pantheon: buildPantheon, armering: buildArm, hojd: buildHojd, tunnelcykel: buildTunCycle, tunnelval: buildTunVal, spruta: buildSpruta, illu: buildIllu, ugn: buildUgn, klinker: buildKlinker, karbonatisering: buildKarb, klimat: buildKlimat, frost: buildFrost, pump: buildPump, sten: buildSten, marsh: buildMarsh };
+  if (window.__WIDGET_TEST) { window.__WIDGET_TEST.scene = scene; window.__WIDGET_TEST.tunnelScene = tunnelScene; window.__WIDGET_TEST.tbmScene = tbmScene; window.__WIDGET_TEST.romanScene = romanScene; window.__WIDGET_TEST.lcaScene = lcaScene; window.__WIDGET_TEST.frostScene = frostScene; window.__WIDGET_TEST.pumpParts = pumpParts; window.__WIDGET_TEST.rockParts = rockParts; window.__WIDGET_TEST.marshParts = marshParts; window.__WIDGET_TEST.art = art; window.__WIDGET_TEST.T = T; }
   [].forEach.call(document.querySelectorAll("[data-widget]"), function (box) {
     var app = box.querySelector(".wgt__app"), fn = BUILD[box.getAttribute("data-widget")];
     if (!app || !fn) return;
