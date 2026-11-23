@@ -141,24 +141,6 @@
           "hidden": true
         },
         {
-          "type": "articles",
-          "tag": "verktyg",
-          "compact": true,
-          "limit": 3,
-          "title": "Prova själv: räknare och simuleringar",
-          "more": "/artiklar/tagg/verktyg",
-          "moreLabel": "Alla räknare och simuleringar",
-          "kicker": "Kunskap",
-          "style": "list"
-        },
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "Tillverkare vi representerar",
-          "kicker": "Sortiment",
-          "hidden": true
-        },
-        {
           "type": "cards",
           "items": [
             {
@@ -316,6 +298,24 @@
           "title": "Tillverkare vi representerar",
           "more": "/produkter",
           "moreLabel": "Alla produkter"
+        },
+        {
+          "type": "articles",
+          "tag": "verktyg",
+          "compact": true,
+          "limit": 3,
+          "title": "Prova själv: räknare och simuleringar",
+          "more": "/artiklar/tagg/verktyg",
+          "moreLabel": "Alla räknare och simuleringar",
+          "kicker": "Kunskap",
+          "style": "list"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Tillverkare vi representerar",
+          "kicker": "Sortiment",
+          "hidden": true
         },
         {
           "type": "chips",
@@ -494,24 +494,6 @@
           "hidden": true
         },
         {
-          "type": "articles",
-          "tag": "verktyg",
-          "compact": true,
-          "limit": 3,
-          "title": "Try it yourself: calculators and simulations",
-          "more": "/artiklar/tagg/verktyg",
-          "moreLabel": "All calculators and simulations",
-          "kicker": "Knowledge",
-          "style": "list"
-        },
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "Manufacturers we represent",
-          "kicker": "Range",
-          "hidden": true
-        },
-        {
           "type": "cards",
           "items": [
             {
@@ -669,6 +651,24 @@
           "title": "Manufacturers we represent",
           "more": "/produkter",
           "moreLabel": "All products"
+        },
+        {
+          "type": "articles",
+          "tag": "verktyg",
+          "compact": true,
+          "limit": 3,
+          "title": "Try it yourself: calculators and simulations",
+          "more": "/artiklar/tagg/verktyg",
+          "moreLabel": "All calculators and simulations",
+          "kicker": "Knowledge",
+          "style": "list"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Manufacturers we represent",
+          "kicker": "Range",
+          "hidden": true
         },
         {
           "type": "chips",

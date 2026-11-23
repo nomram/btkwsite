@@ -1449,7 +1449,10 @@ export function renderMain(ctx, page, t) {
   const eyebrow = !isHome && anc.length ? `<p class="hero__eyebrow">${anc.slice(-2).map((p) => esc(navTitleOf(ctx, p))).join(" · ")}</p>` : "";
   const ctas = (t.ctas || []).map((c, i) => `<a class="btn${i ? " btn--ghost-light" : ""}" href="${esc(localizeHref(ctx, c.href))}">${esc(c.text)}${i ? "" : ICON.arrow}</a>`).join("");
   const pageFld = (k) => (ctx.edit ? ` data-bk-page="${k}" data-bk-kind="plain"` : "");
-  const headHtml = `${eyebrow}${t.display && !ctx.edit ? `<h1 class="hero__eyebrow hero__kicker">${esc(title)}</h1><p class="hero__title">${esc(t.display)}</p>` : `<h1 class="hero__title"${pageFld("h1")}>${esc(title)}</h1>`}${t.lead || (ctx.edit && heroImg) ? `<p class="hero__lead"${pageFld("lead")}>${esc(t.lead || "")}</p>` : ""}${ctas ? `<div class="hero__ctas">${ctas}</div>` : ""}`;
+  const display = t.display && !ctx.edit;
+  // with a display line the banner only carries that line; the real heading and the lead sit in a calm intro right under the banner
+  const introHtml = display ? `<section class="intro"><div class="container intro__inner"><h1 class="intro__h">${esc(title)}</h1>${t.lead ? `<p class="intro__lead">${esc(t.lead)}</p>` : ""}</div></section>` : "";
+  const headHtml = `${eyebrow}${display ? `<p class="hero__title">${esc(t.display)}</p>` : `<h1 class="hero__title"${pageFld("h1")}>${esc(title)}</h1>`}${!display && (t.lead || (ctx.edit && heroImg)) ? `<p class="hero__lead"${pageFld("lead")}>${esc(t.lead || "")}</p>` : ""}${ctas ? `<div class="hero__ctas">${ctas}</div>` : ""}`;
   const heroInner = `<div class="container hero__inner">${headHtml}${heroFacts}</div>`;
   // Split banner (the products page): two pictures meet in a diagonal; site.js greys out the side that is not selected in the filter
   const split = page.hero && page.hero.split && page.hero.split.a && page.hero.split.b ? page.hero.split : null;
@@ -1477,7 +1480,7 @@ export function renderMain(ctx, page, t) {
   ctx._relExtra = [];
   const artMeta = !ctx.edit && page.template === "article" ? articleMeta(ctx, page, t) : "";
   const artRelated = !ctx.edit && page.template === "article" ? renderArticles(ctx, { related: true, limit: 3, title: ctx.ui.article_related || "Läs vidare" }, page) : "";
-  return `${hero}${crumbRow}<div class="page-body page--${esc(page.template || "page")}"${isHome ? ' id="start"' : ""}>${artMeta}${bodyHtml}${artRelated}${autoRel}${productQuoteCta(ctx, page, t, title)}</div>${productStickyCta(ctx, page, t)}`;
+  return `${hero}${introHtml}${crumbRow}<div class="page-body page--${esc(page.template || "page")}"${isHome ? ' id="start"' : ""}>${artMeta}${bodyHtml}${artRelated}${autoRel}${productQuoteCta(ctx, page, t, title)}</div>${productStickyCta(ctx, page, t)}`;
 }
 
 export function renderDocument(ctx, page, t, opts = {}) {
