@@ -2199,3 +2199,22 @@ html:root { --radius: 0px; --radius-lg: 0px; }
 .callbar__blob, .asearch__clear, .carousel__dot::before, .cmp__knob, .collapse__chev, .cta__stock span, .fx__dot, .fx__dot::before, .fx__dot::after, .fx__lens,
 .icon-btn, .lsug__x, .map__ico, .origin__btn img, .pc__chip i, .pc__list i, .pfilter__ck, .psearch__clear, .search__clear, .social__icon, .tc__tog, .video__icon,
 .wtruck::after, .zoom__lens { border-radius: 50% !important; }
+
+/* =====================================================================================================
+   WHITE PAPER: product photos and logos are shot on white, so the page is white again and they melt in.
+   The warmth lives in the details: oat bands, serif, espresso darks, the candle-lit hero.
+   ===================================================================================================== */
+html:root { --paper: #ffffff; --white: #ffffff; --tile-grad: linear-gradient(180deg, #ffffff 0%, #ffffff 100%); }
+body { background: #fff; }
+.site-header { background: rgba(255, 255, 255, .88); }
+.card__photo, .acard__media img { filter: none; }
+.card, .card--photo .card__media--logo, .cards--square .card__media, .card__media--tile, .wgt, .wc__sel { background: #fff; }
+.logorow__track img, .card__mini, .card__logo, .logowall__img img, .crumbs__logo img { mix-blend-mode: normal; }
+/* banner figures: no underline, more air between them */
+.hf--tip strong { text-decoration: none; }
+.hero__facts { gap: 1rem 5rem; }
+@media (max-width: 560px) { .hero__facts { gap: .8rem; } }
+/* logo row: every logo gets the same box, so a wide logo cannot grow huge */
+.logorow__track a { width: 150px; height: 96px; }
+.logorow__track img { width: 100%; height: 100%; object-fit: contain; }
+@media (max-width: 560px) { .logorow__track a { width: 112px; height: 72px; } .logorow__track img { height: 100%; } }
