@@ -217,7 +217,7 @@ function renderLogoWall(ctx, b) {
 }
 // "How it works": numbered steps on a dark band
 function renderSteps(ctx, b) {
-  return `<section class="container steps">${b.title ? `<h2 class="steps__h">${esc(b.title)}</h2>` : ""}${b.intro ? `<p class="steps__intro">${esc(b.intro)}</p>` : ""}<ol class="steps__list">${(b.items || []).map((it, i) => `<li class="steps__i"><span class="steps__n" aria-hidden="true">${i + 1}</span><h3 class="steps__t">${esc(it.title)}</h3><p class="steps__d">${esc(it.text)}</p></li>`).join("")}</ol>${b.button && b.href ? `<p class="steps__cta"><a class="btn" href="${esc(localizeHref(ctx, b.href))}">${esc(b.button)}${ICON.arrow}</a></p>` : ""}</section>`;
+  return `<section class="container steps">${b.title ? `<h2 class="steps__h">${esc(b.title)}</h2>` : ""}${b.intro ? `<p class="steps__intro">${esc(b.intro)}</p>` : ""}<ol class="steps__list">${(b.items || []).map((it, i) => `<li class="steps__i"><span class="steps__n" aria-hidden="true">${String(i + 1).padStart(2, "0")}</span><h3 class="steps__t">${esc(it.title)}</h3><p class="steps__d">${esc(it.text)}</p></li>`).join("")}</ol>${b.button && b.href ? `<p class="steps__cta"><a class="btn" href="${esc(localizeHref(ctx, b.href))}">${esc(b.button)}${ICON.arrow}</a></p>` : ""}</section>`;
 }
 function compactCard(ctx, it, idx, title, href) {
   const pg = ctx.pages && ctx.pages.get(it.href), logo = pg && pg.logo;
@@ -315,19 +315,20 @@ function renderArticles(ctx, b, page) {
   } else if (b.tag && b.compact) items = items.filter((a) => a.tags.includes(b.tag));
   if (b.limit) items = items.slice(0, Number(b.limit));
   if (!items.length) return "";
-  const title = b.title ? `<h2 class="articles__h">${esc(b.title)}</h2>` : "";
-  if (b.compact || b.related) return `<div class="container articles articles--compact">${title}<ul class="alist">${items.map((a) => articleCard(ctx, a, false)).join("")}</ul>${b.more ? `<p class="articles__more"><a href="${esc(localizeHref(ctx, b.more))}">${esc(b.moreLabel || u.articles_all_link || "Visa alla")}${ICON.arrow}</a></p>` : ""}</div>`;
+  const more = b.more && b.compact ? `<a class="sec-more" href="${esc(localizeHref(ctx, b.more))}">${esc(b.moreLabel || u.articles_all_link || "Visa alla")}${ICON.arrow}</a>` : "";
+  const title = b.title ? `${b.kicker ? `<p class="sec-kicker">${esc(b.kicker)}</p>` : ""}<div class="sec-row"><h2 class="articles__h">${esc(b.title)}</h2>${more}</div>` : "";
+  if (b.compact || b.related) return `<div class="container articles articles--compact">${title}<ul class="alist">${items.map((a) => articleCard(ctx, a, false)).join("")}</ul></div>`;
   const counts = {};
   for (const a of items) for (const s of a.tags) counts[s] = (counts[s] || 0) + 1;
   const slugs = Object.keys(counts).sort((x, y) => counts[y] - counts[x] || tagName(ctx, x).localeCompare(tagName(ctx, y)));
   const active = b.tag || "";
   const chips = `<li><a class="tagchip${active ? "" : " is-on"}" href="${esc(localizeHref(ctx, "/artiklar"))}" data-tag="" aria-pressed="${active ? "false" : "true"}">${esc(u.articles_all || "Alla")}<em>${items.length}</em></a></li>` +
-    slugs.map((s) => `<li><a class="tagchip${s === active ? " is-on" : ""}" href="${esc(tagUrl(ctx, s))}" data-tag="${esc(s)}" aria-pressed="${s === active}">${esc(tagName(ctx, s))}<em>${counts[s]}</em></a></li>`).join("");
+    slugs.map((s) => `<li${counts[s] < 2 && s !== active ? ' class="tagbar__extra"' : ""}><a class="tagchip${s === active ? " is-on" : ""}" href="${esc(tagUrl(ctx, s))}" data-tag="${esc(s)}" aria-pressed="${s === active}">${esc(tagName(ctx, s))}<em>${counts[s]}</em></a></li>`).join("");
   const n0 = active ? items.filter((a) => a.tags.includes(active)).length : items.length;
   return `<div class="container articles" data-articles data-tag="${esc(active)}" data-one="${esc(u.articles_one || "{n} artikel")}" data-many="${esc(u.articles_many || "{n} artiklar")}">` + title +
     `<div class="articles__bar"><label class="asearch">${ICON.search}<input class="asearch__input" type="search" autocomplete="off" spellcheck="false" enterkeyhint="search" placeholder="${esc(u.articles_search || "Sök artiklar eller taggar")}" aria-label="${esc(u.articles_search || "Sök artiklar eller taggar")}"><button class="asearch__clear" type="button" hidden aria-label="${esc(u.search_clear || "Rensa")}"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button></label>` +
     `<p class="articles__count" role="status" aria-live="polite">${esc(fmtTpl(n0 === 1 ? u.articles_one || "{n} artikel" : u.articles_many || "{n} artiklar", { n: n0 }))}</p></div>` +
-    `<ul class="tagbar" aria-label="${esc(u.articles_tags || "Taggar")}">${chips}</ul>` +
+    `<ul class="tagbar" aria-label="${esc(u.articles_tags || "Taggar")}">${chips}${slugs.some((x) => counts[x] < 2 && x !== active) ? `<li class="tagbar__toggle"><button type="button" class="tagbar__more" aria-expanded="false" data-less="${esc(u.articles_tags_less || "Färre taggar")}">${esc(u.articles_tags_more || "Fler taggar")}</button></li>` : ""}</ul>` +
     `<ul class="alist">${items.map((a) => articleCard(ctx, a, active && !a.tags.includes(active))).join("")}</ul>` +
     `<p class="articles__none" hidden>${esc(u.articles_none || "Inga artiklar matchar.")}</p></div>`;
 }
@@ -886,7 +887,7 @@ function renderBlockInner(ctx, b) {
     case "heading": {
       const lvl = Math.min(4, Math.max(2, b.level || 2));
       const hid = b.anchor || autoAnchor(ctx, b);
-      return `<h${lvl}${hid ? ` id="${esc(hid)}"` : ""}${editFld(ctx, "text", "plain", "Rubrik")}>${esc(b.text)}</h${lvl}>`;
+      return `${b.kicker && !ctx.edit ? `<p class="sec-kicker">${esc(b.kicker)}</p>` : ""}<h${lvl}${hid ? ` id="${esc(hid)}"` : ""}${editFld(ctx, "text", "plain", "Rubrik")}>${esc(b.text)}</h${lvl}>`;
     }
     case "text":
       return `<p${editFld(ctx, "html", "inline", "Skriv text här…")}>${ctx.edit ? b.html || "" : localizeHtml(ctx, b.html)}</p>`;
@@ -1433,7 +1434,7 @@ export function renderMain(ctx, page, t) {
   const eyebrow = !isHome && anc.length ? `<p class="hero__eyebrow">${anc.slice(-2).map((p) => esc(navTitleOf(ctx, p))).join(" · ")}</p>` : "";
   const ctas = (t.ctas || []).map((c, i) => `<a class="btn${i ? " btn--ghost-light" : ""}" href="${esc(localizeHref(ctx, c.href))}">${esc(c.text)}${i ? "" : ICON.arrow}</a>`).join("");
   const pageFld = (k) => (ctx.edit ? ` data-bk-page="${k}" data-bk-kind="plain"` : "");
-  const headHtml = `${eyebrow}<h1 class="hero__title"${pageFld("h1")}>${esc(title)}</h1>${t.lead || (ctx.edit && heroImg) ? `<p class="hero__lead"${pageFld("lead")}>${esc(t.lead || "")}</p>` : ""}${ctas ? `<div class="hero__ctas">${ctas}</div>` : ""}`;
+  const headHtml = `${eyebrow}${t.display && !ctx.edit ? `<h1 class="hero__eyebrow hero__kicker">${esc(title)}</h1><p class="hero__title">${esc(t.display)}</p>` : `<h1 class="hero__title"${pageFld("h1")}>${esc(title)}</h1>`}${t.lead || (ctx.edit && heroImg) ? `<p class="hero__lead"${pageFld("lead")}>${esc(t.lead || "")}</p>` : ""}${ctas ? `<div class="hero__ctas">${ctas}</div>` : ""}`;
   const heroInner = `<div class="container hero__inner">${headHtml}</div>`;
   // Split banner (the products page): two pictures meet in a diagonal; site.js greys out the side that is not selected in the filter
   const split = page.hero && page.hero.split && page.hero.split.a && page.hero.split.b ? page.hero.split : null;

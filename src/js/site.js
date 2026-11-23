@@ -1422,6 +1422,11 @@
   });
 
   // ---------- articles: search and tag filter (the chips are real links to the tag pages; here they become an instant filter) ----------
+  // "more tags": the tags used once are folded away until asked for
+  [].forEach.call(document.querySelectorAll(".tagbar__more"), function (b) {
+    var more = b.textContent, less = b.getAttribute("data-less") || more, bar = b.closest(".tagbar");
+    b.addEventListener("click", function () { var open = !bar.classList.contains("is-open"); bar.classList.toggle("is-open", open); b.setAttribute("aria-expanded", open ? "true" : "false"); b.textContent = open ? less : more; });
+  });
   [].forEach.call(document.querySelectorAll("[data-articles]"), function (box) {
     var inp = box.querySelector(".asearch__input"), clr = box.querySelector(".asearch__clear"), cnt = box.querySelector(".articles__count"), none = box.querySelector(".articles__none");
     var chips = [].slice.call(box.querySelectorAll(".tagchip")), cards = [].slice.call(box.querySelectorAll(".acard"));

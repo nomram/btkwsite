@@ -35,7 +35,8 @@
           "type": "heading",
           "level": 2,
           "text": "Vad behöver du?",
-          "tag": "redesign"
+          "tag": "redesign",
+          "kicker": "Lösningar"
         },
         {
           "type": "cards",
@@ -144,12 +145,14 @@
           "limit": 3,
           "title": "Prova själv: räknare och simuleringar",
           "more": "/artiklar/tagg/verktyg",
-          "moreLabel": "Alla räknare och simuleringar"
+          "moreLabel": "Alla räknare och simuleringar",
+          "kicker": "Kunskap"
         },
         {
           "type": "heading",
           "level": 2,
-          "text": "Tillverkare vi representerar"
+          "text": "Tillverkare vi representerar",
+          "kicker": "Sortiment"
         },
         {
           "type": "cards",
@@ -347,7 +350,8 @@
           "href": "/kontakta-oss"
         }
       ],
-      "seoTitle": "Betongakuten | Injektering, borrning och betongmaterial"
+      "seoTitle": "Betongakuten | Injektering, borrning och betongmaterial",
+      "display": "Tillsammans bygger vi framgång."
     },
     "en": {
       "title": "Home",
@@ -376,7 +380,8 @@
           "type": "heading",
           "level": 2,
           "text": "What do you need?",
-          "tag": "redesign"
+          "tag": "redesign",
+          "kicker": "Solutions"
         },
         {
           "type": "cards",
@@ -485,12 +490,14 @@
           "limit": 3,
           "title": "Try it yourself: calculators and simulations",
           "more": "/artiklar/tagg/verktyg",
-          "moreLabel": "All calculators and simulations"
+          "moreLabel": "All calculators and simulations",
+          "kicker": "Knowledge"
         },
         {
           "type": "heading",
           "level": 2,
-          "text": "Manufacturers we represent"
+          "text": "Manufacturers we represent",
+          "kicker": "Range"
         },
         {
           "type": "cards",
@@ -689,7 +696,8 @@
         }
       ],
       "published": true,
-      "seoTitle": "Betongakuten | Grouting, drilling and concrete materials"
+      "seoTitle": "Betongakuten | Grouting, drilling and concrete materials",
+      "display": "Together we build success."
     },
     "es": {
       "title": "Inicio",
