@@ -2189,3 +2189,13 @@ input[type="range"] { accent-color: var(--primary); }
 .hf--tip:focus-visible strong { outline: 2px solid rgba(243, 125, 3, .7); outline-offset: 4px; border-radius: 4px; }
 @media (max-width: 560px) { .hero__facts .hf strong { font-size: 1.02rem; } .hf__tip { left: auto; right: 0; } .hf__tip::after { left: auto; right: 1.1rem; } }
 .hero__facts .hf__tip { color: #2b2421 !important; display: block; }
+
+/* =====================================================================================================
+   SQUARE: corners follow the blocky logo. Everything is square; only things that are truly round
+   (icon buttons, dots, lenses, map icons, social icons) stay round.
+   ===================================================================================================== */
+html:root { --radius: 0px; --radius-lg: 0px; }
+*, *::before, *::after { border-radius: 0 !important; }
+.callbar__blob, .asearch__clear, .carousel__dot::before, .cmp__knob, .collapse__chev, .cta__stock span, .fx__dot, .fx__dot::before, .fx__dot::after, .fx__lens,
+.icon-btn, .lsug__x, .map__ico, .origin__btn img, .pc__chip i, .pc__list i, .pfilter__ck, .psearch__clear, .search__clear, .social__icon, .tc__tog, .video__icon,
+.wtruck::after, .zoom__lens { border-radius: 50% !important; }
