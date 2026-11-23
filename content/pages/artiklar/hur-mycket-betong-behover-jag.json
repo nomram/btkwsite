@@ -53,6 +53,10 @@
           ]
         },
         {
+          "type": "note",
+          "text": "En betongbil med 8 kubikmeter betong har nästan 20 ton last, utöver bilens egen vikt."
+        },
+        {
           "type": "heading",
           "level": 2,
           "text": "Lägg på en marginal"
@@ -73,6 +77,36 @@
         {
           "type": "text",
           "html": "Och vad betongen ska klara beror på hållfasthetsklassen, som du kan prova i <a href=\"/artiklar/hallfasthetsklass-c25-30\">vad betyder C25/30</a>, och på <a href=\"/artiklar/vattencementtal-vct\">vattencementtalet</a>."
+        },
+        {
+          "type": "text",
+          "html": "Ska du blanda betongen själv finns recept och en räknare i hinkar i <a href=\"/artiklar/blanda-betong-sjalv\">blanda betong själv</a>."
+        },
+        {
+          "type": "formula",
+          "rows": [
+            [
+              "Platta",
+              "längd × bredd × tjocklek"
+            ],
+            [
+              "Vägg",
+              "längd × höjd × tjocklek"
+            ],
+            [
+              "Rund pelare",
+              "π × radie² × höjd"
+            ],
+            [
+              "Vikt",
+              "volym × 2 400 kg per m³"
+            ],
+            [
+              "Betongbilar",
+              "volym ÷ bilens lastvolym, avrundat uppåt"
+            ]
+          ],
+          "example": "En platta på 8 × 6 meter och 15 centimeter: 8 × 6 × 0,15 = 7,2 m³. Den väger ungefär 7,2 × 2 400 ≈ 17 ton."
         },
         {
           "type": "faq",
@@ -138,6 +172,10 @@
           ]
         },
         {
+          "type": "note",
+          "text": "A mixer truck with 8 cubic metres of concrete carries almost 20 tonnes of load, on top of its own weight."
+        },
+        {
           "type": "heading",
           "level": 2,
           "text": "Add a margin"
@@ -158,6 +196,36 @@
         {
           "type": "text",
           "html": "And what the concrete has to withstand depends on the strength class, which you can try in <a href=\"/artiklar/hallfasthetsklass-c25-30\">what does C25/30 mean</a>, and on the <a href=\"/artiklar/vattencementtal-vct\">water/cement ratio</a>."
+        },
+        {
+          "type": "text",
+          "html": "If you are mixing the concrete yourself, there is a recipe and a bucket calculator in <a href=\"/artiklar/blanda-betong-sjalv\">mixing concrete yourself</a>."
+        },
+        {
+          "type": "formula",
+          "rows": [
+            [
+              "Slab",
+              "length × width × thickness"
+            ],
+            [
+              "Wall",
+              "length × height × thickness"
+            ],
+            [
+              "Round column",
+              "π × radius² × height"
+            ],
+            [
+              "Weight",
+              "volume × 2,400 kg per m³"
+            ],
+            [
+              "Mixer trucks",
+              "volume ÷ truck load, rounded up"
+            ]
+          ],
+          "example": "A slab of 8 × 6 metres and 15 centimetres: 8 × 6 × 0.15 = 7.2 m³. It weighs about 7.2 × 2,400 ≈ 17 tonnes."
         },
         {
           "type": "faq",

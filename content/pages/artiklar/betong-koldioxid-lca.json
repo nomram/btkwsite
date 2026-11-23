@@ -59,6 +59,10 @@
           ]
         },
         {
+          "type": "note",
+          "text": "Cementtillverkningen står för ungefär 7 till 8 procent av världens koldioxidutsläpp. Om cementindustrin vore ett land skulle den höra till de största utsläpparna i världen."
+        },
+        {
           "type": "heading",
           "level": 2,
           "text": "Räkna på en kubikmeter"
@@ -112,6 +116,20 @@
         {
           "type": "text",
           "html": "Betong är ovanlig bland byggmaterial eftersom den tar upp koldioxid under hela sitt liv genom karbonatisering. Upptaget är långsamt och tar inte tillbaka allt som släpptes ut, men det räknas allt oftare in i livscykelanalyser. Läs mer och prova själv i <a href=\"/artiklar/vad-ar-cement-gjort-av\">artikeln om cementets kemi</a>."
+        },
+        {
+          "type": "formula",
+          "rows": [
+            [
+              "Cementets utsläpp",
+              "cementhalt (kg) × utsläpp per kg cement"
+            ],
+            [
+              "Hela kubikmetern",
+              "cementets utsläpp + ballast, transporter och fabrik"
+            ]
+          ],
+          "example": "350 kg CEM II/A-LL med 0,72 kg koldioxid per kg: 350 × 0,72 ≈ 250 kg. Med ungefär 20 kg för ballast, transporter och fabrik blir det runt 270 kg per kubikmeter."
         },
         {
           "type": "faq",
@@ -186,6 +204,10 @@
           ]
         },
         {
+          "type": "note",
+          "text": "Cement making accounts for about 7 to 8 percent of the world's carbon dioxide emissions. If the cement industry were a country, it would be among the largest emitters in the world."
+        },
+        {
           "type": "heading",
           "level": 2,
           "text": "Count on one cubic metre"
@@ -239,6 +261,20 @@
         {
           "type": "text",
           "html": "Concrete is unusual among building materials because it takes up carbon dioxide throughout its life through carbonation. The uptake is slow and does not take back everything that was released, but it is more and more often included in life cycle assessments. Read more and try it yourself in <a href=\"/artiklar/vad-ar-cement-gjort-av\">the article on the chemistry of cement</a>."
+        },
+        {
+          "type": "formula",
+          "rows": [
+            [
+              "Emissions from the cement",
+              "cement content (kg) × emissions per kg cement"
+            ],
+            [
+              "The whole cubic metre",
+              "cement emissions + aggregate, transport and plant"
+            ]
+          ],
+          "example": "350 kg of CEM II/A-LL at 0.72 kg of carbon dioxide per kg: 350 × 0.72 ≈ 250 kg. With roughly 20 kg for aggregate, transport and the plant it comes to around 270 kg per cubic metre."
         },
         {
           "type": "faq",

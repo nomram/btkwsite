@@ -54,6 +54,10 @@
           ]
         },
         {
+          "type": "note",
+          "text": "En modern datalogger registrerar värden flera gånger i sekunden, så att varje hål får en egen kurva som går att visa upp i efterhand."
+        },
+        {
           "type": "heading",
           "level": 2,
           "text": "Stoppkriterier: när är hålet klart?"
@@ -78,6 +82,10 @@
         {
           "type": "text",
           "html": "Vi levererar dataloggare, displayer och givare från <a href=\"/produkter/jean-lutz\">Jean Lutz</a>, bland annat <a href=\"/produkter/haeny/manuella-pumpar/dataloggare-dpv\">DPV-H</a> som kan monteras på Hänys anläggningar. Hur långt bruket når i sprickan kan du prova i <a href=\"/artiklar/injekteringens-rackvidd\">hur långt når injekteringen</a>."
+        },
+        {
+          "type": "text",
+          "html": "Loggningen är minst lika viktig vid jetinjektering, där en stråle blandar jord och cement till pelare. Läs mer i <a href=\"/artiklar/jetinjektering\">jetinjektering</a>."
         },
         {
           "type": "faq",
@@ -144,6 +152,10 @@
           ]
         },
         {
+          "type": "note",
+          "text": "A modern data logger records values several times a second, so each hole gets its own curve that can be shown afterwards."
+        },
+        {
           "type": "heading",
           "level": 2,
           "text": "Stop criteria: when is the hole done?"
@@ -168,6 +180,10 @@
         {
           "type": "text",
           "html": "We supply data loggers, displays and sensors from <a href=\"/produkter/jean-lutz\">Jean Lutz</a>, including the <a href=\"/produkter/haeny/manuella-pumpar/dataloggare-dpv\">DPV-H</a> that can be mounted on Häny plants. How far the grout reaches in the fracture you can try in <a href=\"/artiklar/injekteringens-rackvidd\">how far does grouting reach</a>."
+        },
+        {
+          "type": "text",
+          "html": "Logging matters just as much in jet grouting, where a jet mixes soil and cement into columns. Read more in <a href=\"/artiklar/jetinjektering\">jet grouting</a>."
         },
         {
           "type": "faq",

@@ -1,0 +1,267 @@
+{
+  "path": "/artiklar/vad-ar-injektering",
+  "updated": "2026-11-23",
+  "template": "article",
+  "order": 10,
+  "published": true,
+  "date": "2026-11-23",
+  "tags": [
+    "injektering",
+    "grunder",
+    "berg",
+    "tunnel"
+  ],
+  "image": "/assets/img/vad-ar-injektering.webp",
+  "hideIn": [
+    "es",
+    "no",
+    "lt",
+    "lv",
+    "et",
+    "ru"
+  ],
+  "i18n": {
+    "sv": {
+      "title": "Vad är injektering? Så tätar och förstärker man berg, jord och betong",
+      "h1": "Vad är injektering? Så tätar och förstärker man berg, jord och betong",
+      "seoTitle": "Vad är injektering? Enkelt förklarat | Betongakuten",
+      "description": "Vad injektering är, varför man gör det och hur det går till: borrhål, bruk, pumpar och stoppkriterier. Med en animation där du själv tätar en tunnel.",
+      "summary": "Att pumpa in bruk i sprickor och hålrum så att vattnet hålls ute och marken blir starkare. Enkelt förklarat, med en tunnel du själv kan täta.",
+      "keypoints": [
+        "Injektering betyder att man pumpar in ett bruk i sprickor, hålrum eller jord, där det stelnar.",
+        "Syftet är oftast att täta mot vatten eller att förstärka berg, jord och konstruktioner.",
+        "Man borrar hål, blandar ett bruk och pumpar in det under tryck tills ett stoppkriterium nås."
+      ],
+      "blocks": [
+        {
+          "type": "text",
+          "html": "Ordet låter tekniskt, men idén är enkel. Tänk dig att du lagar en spricka i en vägg genom att spruta in fogmassa. Injektering är samma sak i större skala, och oftast under jord: man pumpar in ett flytande bruk i sprickor och hålrum, och där stelnar det. Kvar blir berg som håller tätt, jord som blir fastare och betong som blir hel igen."
+        },
+        {
+          "type": "widget",
+          "kind": "tatning",
+          "title": "Täta en tunnel",
+          "intro": "Vatten droppar in genom sprickor i berget. Borra hålen, injektera och se vad som händer med inläckaget."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Varför injekterar man?"
+        },
+        {
+          "type": "list",
+          "items": [
+            "För att täta. I tunnlar och bergrum håller injekteringen vattnet ute, så att grundvattnet runt omkring inte sjunker.",
+            "För att förstärka. Sprucket berg och lös jord blir starkare och stabilare när hålrummen fylls.",
+            "För att förankra. Bergbultar, ankare och jordspik gjuts fast med bruk i borrhålen.",
+            "För att laga. Sprickor och hålrum i betong kan fyllas, till exempel i dammar och grundmurar."
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Så går det till"
+        },
+        {
+          "type": "text",
+          "html": "Först borras hål där bruket ska in. I en tunnel borras de ofta i en solfjäder runt tunneln, framför den del som ska sprängas. Sedan blandas bruket, oftast cement och vatten, i en kraftig blandare. En pump trycker in bruket i hålet genom en packer, en sorts propp som tätar mot hålets vägg. Pumpningen pågår tills ett bestämt tryck eller en största volym har nåtts. Det kallas stoppkriterier, och de bestäms innan arbetet börjar."
+        },
+        {
+          "type": "note",
+          "text": "Sverige har lång erfarenhet av berginjektering. I bland annat Stockholms nya tunnlar har berget injekterats för att skydda grundvattnet och husen ovanför."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Vilket bruk används?"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Cementbruk: cement och vatten, ibland med tillsatser. Det vanligaste och billigaste.",
+            "Mikrocement: extra finmalet cement som tar sig in i mycket fina sprickor.",
+            "Bentonit: en lera som sväller i vatten. Används ofta i jord, gärna tillsammans med cement.",
+            "Kemiska produkter: till exempel polyuretan, som skummar upp och snabbt stoppar rinnande vatten."
+          ]
+        },
+        {
+          "type": "text",
+          "html": "Hur långt bruket når beror på trycket, sprickans bredd och hur segt bruket är. Det kan du prova själv i <a href=\"/artiklar/injekteringens-rackvidd\">hur långt når injekteringen</a>, och hur bruket kontrolleras på plats går vi igenom i <a href=\"/artiklar/marshtratt\">så använder du en marshtratt</a>."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Utrustningen"
+        },
+        {
+          "type": "text",
+          "html": "En injekteringsanläggning har tre delar: en blandare som gör bruket, en omrörare som håller det jämnt och en pump som trycker in det. I kompakta anläggningar sitter allt på en ram, som i <a href=\"/artiklar/haeny-injecto-compact\">Hänys Injecto Compact</a>. Till det kommer slangar, packers och ofta en datalogger som registrerar tryck, flöde och volym i varje hål. Läs mer i <a href=\"/artiklar/dataloggning-injektering\">dataloggning vid injektering</a> och <a href=\"/artiklar/valj-injekteringsutrustning\">så väljer du injekteringsutrustning</a>."
+        },
+        {
+          "type": "formula",
+          "rows": [
+            [
+              "Tätningseffekt",
+              "1 − (inläckage efter ÷ inläckage före)"
+            ],
+            [
+              "Bruk i ett hål",
+              "flöde × tid"
+            ],
+            [
+              "Största räckvidd i en spricka",
+              "R = övertryck × spricköppning ÷ (2 × sträckgräns)"
+            ]
+          ],
+          "example": "Om inläckaget går från 18 till 2 liter per minut blir tätningseffekten 1 − 2 ÷ 18 ≈ 0,89, alltså ungefär 89 procent."
+        },
+        {
+          "type": "faq",
+          "title": "Vanliga frågor",
+          "items": [
+            {
+              "q": "Vad betyder injektering?",
+              "a": "Att pumpa in ett flytande bruk i sprickor, hålrum eller jord där det stelnar, för att täta eller förstärka."
+            },
+            {
+              "q": "Vad är skillnaden mellan injektering och gjutning?",
+              "a": "Vid gjutning fyller man en form med betong. Vid injektering pressar man in ett tunnare bruk i sprickor och hålrum som redan finns, oftast under tryck."
+            },
+            {
+              "q": "Vilket tryck används vid injektering?",
+              "a": "Det varierar mycket. I jord används ofta lågt tryck för att inte lyfta marken, medan berg kan injekteras med tiotals bar. Trycket bestäms i projektets specifikation."
+            }
+          ]
+        },
+        {
+          "type": "cta",
+          "title": "Behöver du injekteringsutrustning?",
+          "text": "Vi levererar blandare, pumpar och kompletta anläggningar från Häny, och dataloggning från Jean Lutz. Berätta om jobbet, så hjälper vi dig att välja.",
+          "button": "Få offert",
+          "href": "/offert"
+        }
+      ]
+    },
+    "en": {
+      "title": "What is grouting? How rock, soil and concrete are sealed and strengthened",
+      "h1": "What is grouting? How rock, soil and concrete are sealed and strengthened",
+      "seoTitle": "What is grouting? Explained simply | Betongakuten",
+      "description": "What grouting is, why it is done and how it works: drill holes, grout, pumps and stop criteria. With an animation where you seal a tunnel yourself.",
+      "summary": "Pumping grout into cracks and voids to keep water out and make the ground stronger. Explained simply, with a tunnel you can seal yourself.",
+      "keypoints": [
+        "Grouting means pumping a grout into cracks, voids or soil, where it sets.",
+        "The aim is usually to seal against water or to strengthen rock, soil and structures.",
+        "Holes are drilled, a grout is mixed and pumped in under pressure until a stop criterion is reached."
+      ],
+      "blocks": [
+        {
+          "type": "text",
+          "html": "The word sounds technical, but the idea is simple. Picture fixing a crack in a wall by squeezing in some filler. Grouting is the same thing on a bigger scale, and usually underground: a fluid grout is pumped into cracks and voids, and there it sets. What is left is rock that stays tight, soil that is firmer and concrete that is whole again."
+        },
+        {
+          "type": "widget",
+          "kind": "tatning",
+          "title": "Seal a tunnel",
+          "intro": "Water drips in through cracks in the rock. Drill the holes, grout and see what happens to the inflow."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Why grout?"
+        },
+        {
+          "type": "list",
+          "items": [
+            "To seal. In tunnels and rock caverns grouting keeps the water out, so the groundwater around them does not drop.",
+            "To strengthen. Fractured rock and loose soil become stronger and more stable when the voids are filled.",
+            "To anchor. Rock bolts, anchors and soil nails are fixed with grout in their drill holes.",
+            "To repair. Cracks and voids in concrete can be filled, for example in dams and foundation walls."
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "How it is done"
+        },
+        {
+          "type": "text",
+          "html": "First, holes are drilled where the grout should go. In a tunnel they are often drilled in a fan around the tunnel, ahead of the part that is to be blasted. Then the grout, usually cement and water, is mixed in a powerful mixer. A pump pushes the grout into the hole through a packer, a kind of plug that seals against the wall of the hole. Pumping goes on until a set pressure or a largest volume has been reached. These are called stop criteria, and they are decided before the work starts."
+        },
+        {
+          "type": "note",
+          "text": "Sweden has long experience of rock grouting. In Stockholm's newer tunnels, among others, the rock has been grouted to protect the groundwater and the buildings above."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Which grout is used?"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Cement grout: cement and water, sometimes with admixtures. The most common and the cheapest.",
+            "Microcement: extra finely ground cement that gets into very fine cracks.",
+            "Bentonite: a clay that swells in water. Often used in soil, frequently together with cement.",
+            "Chemical products: for example polyurethane, which foams up and quickly stops running water."
+          ]
+        },
+        {
+          "type": "text",
+          "html": "How far the grout reaches depends on the pressure, the width of the crack and how stiff the grout is. You can try it yourself in <a href=\"/artiklar/injekteringens-rackvidd\">how far does grout reach</a>, and how the grout is checked on site is covered in <a href=\"/artiklar/marshtratt\">how to use a Marsh funnel</a>."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "The equipment"
+        },
+        {
+          "type": "text",
+          "html": "A grouting plant has three parts: a mixer that makes the grout, an agitator that keeps it even and a pump that pushes it in. In compact plants everything sits on one frame, as in <a href=\"/artiklar/haeny-injecto-compact\">Häny's Injecto Compact</a>. Add hoses, packers and often a data logger that records pressure, flow and volume in each hole. Read more in <a href=\"/artiklar/dataloggning-injektering\">data logging during grouting</a> and <a href=\"/artiklar/valj-injekteringsutrustning\">how to choose grouting equipment</a>."
+        },
+        {
+          "type": "formula",
+          "rows": [
+            [
+              "Sealing effect",
+              "1 − (inflow after ÷ inflow before)"
+            ],
+            [
+              "Grout in one hole",
+              "flow × time"
+            ],
+            [
+              "Largest reach in a crack",
+              "R = excess pressure × aperture ÷ (2 × yield stress)"
+            ]
+          ],
+          "example": "If the inflow drops from 18 to 2 litres per minute, the sealing effect is 1 − 2 ÷ 18 ≈ 0.89, or about 89 percent."
+        },
+        {
+          "type": "faq",
+          "title": "Frequently asked questions",
+          "items": [
+            {
+              "q": "What does grouting mean?",
+              "a": "Pumping a fluid grout into cracks, voids or soil where it sets, to seal or strengthen."
+            },
+            {
+              "q": "What is the difference between grouting and casting?",
+              "a": "When casting, you fill a form with concrete. When grouting, you press a thinner grout into cracks and voids that are already there, usually under pressure."
+            },
+            {
+              "q": "What pressure is used for grouting?",
+              "a": "It varies a lot. Soil is often grouted at low pressure so the ground is not lifted, while rock can be grouted at tens of bar. The pressure is set in the project specification."
+            }
+          ]
+        },
+        {
+          "type": "cta",
+          "title": "Need grouting equipment?",
+          "text": "We supply mixers, pumps and complete plants from Häny, and data logging from Jean Lutz. Tell us about the job and we will help you choose.",
+          "button": "Get a quote",
+          "href": "/offert"
+        }
+      ]
+    }
+  }
+}

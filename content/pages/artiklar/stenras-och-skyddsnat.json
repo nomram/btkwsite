@@ -54,6 +54,10 @@
           ]
         },
         {
+          "type": "note",
+          "text": "En sten som är en meter i diameter väger ungefär 1,4 ton, lika mycket som en personbil."
+        },
+        {
           "type": "heading",
           "level": 2,
           "text": "Energin växer snabbt"
@@ -79,6 +83,24 @@
         {
           "type": "text",
           "html": "Vi levererar system för släntstabilisering och skydd mot stenras och blocknedfall från <a href=\"/produkter/geobrugg\">Geobrugg</a>. Vilken lösning som behövs avgörs av en geoteknisk bedömning av berget och hur stenarna kan röra sig. Mer om hur berget förstärks i tunnlar finns i <a href=\"/artiklar/tunnelbyggande-tbm-jumbo\">tunnelbyggande</a>."
+        },
+        {
+          "type": "formula",
+          "rows": [
+            [
+              "Stenens massa",
+              "m = 2 700 × 4/3 × π × r³"
+            ],
+            [
+              "Hastighet vid nedslag",
+              "v = √(2 × g × h)"
+            ],
+            [
+              "Rörelseenergi",
+              "E = ½ × m × v² = m × g × h"
+            ]
+          ],
+          "example": "En sten med 0,5 meters diameter väger 2 700 × 4/3 × 3,14 × 0,25³ ≈ 177 kg. Efter 20 meters fall: E = 177 × 9,81 × 20 ≈ 35 000 J, alltså 35 kJ."
         },
         {
           "type": "faq",
@@ -145,6 +167,10 @@
           ]
         },
         {
+          "type": "note",
+          "text": "A stone one metre across weighs about 1.4 tonnes, as much as a car."
+        },
+        {
           "type": "heading",
           "level": 2,
           "text": "The energy grows fast"
@@ -170,6 +196,24 @@
         {
           "type": "text",
           "html": "We supply systems for slope stabilisation and protection against rockfall from <a href=\"/produkter/geobrugg\">Geobrugg</a>. Which solution is needed is decided by a geotechnical assessment of the rock and how the stones can move. More on how rock is reinforced in tunnels is in <a href=\"/artiklar/tunnelbyggande-tbm-jumbo\">tunnelling</a>."
+        },
+        {
+          "type": "formula",
+          "rows": [
+            [
+              "Mass of the stone",
+              "m = 2,700 × 4/3 × π × r³"
+            ],
+            [
+              "Speed at impact",
+              "v = √(2 × g × h)"
+            ],
+            [
+              "Kinetic energy",
+              "E = ½ × m × v² = m × g × h"
+            ]
+          ],
+          "example": "A stone 0.5 metres across weighs 2,700 × 4/3 × 3.14 × 0.25³ ≈ 177 kg. After a 20 metre fall: E = 177 × 9.81 × 20 ≈ 35,000 J, or 35 kJ."
         },
         {
           "type": "faq",

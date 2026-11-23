@@ -57,6 +57,10 @@
           ]
         },
         {
+          "type": "note",
+          "text": "En säck cement på 25 kilo och 12,5 liter vatten ger vct 0,50. Häller du i en hink vatten till blir det 0,90, och betongen tappar mer än hälften av sin styrka."
+        },
+        {
           "type": "heading",
           "level": 2,
           "text": "Så mycket kostar ”lite extra vatten”"
@@ -64,6 +68,12 @@
         {
           "type": "text",
           "html": "På bygget är det frestande att hälla i lite extra vatten för att betongen ska flyta lättare. Räknaren visar vad det kostar: tio liter extra per kubikmeter kan ta bort flera megapascal av hållfastheten. Vill du ha en lättare betong utan att tappa kvalitet är lösningen en flyttillsats, som gör betongen flytande utan extra vatten."
+        },
+        {
+          "type": "widget",
+          "kind": "vctcalc",
+          "title": "Räkna med dina egna siffror",
+          "intro": "Skriv in hur mycket cement och vatten du har, eller vilket vct du vill nå, så räknar vi ut resten."
         },
         {
           "type": "heading",
@@ -90,6 +100,32 @@
             "Tillsätt inte vatten i bilen eller pumpen. Behöver betongen flyta bättre, fråga leverantören om flyttillsats.",
             "Härda ordentligt. Även en betong med lågt vct får en porös yta om den torkar ut för tidigt."
           ]
+        },
+        {
+          "type": "text",
+          "html": "Blandar du själv i en byggblandare finns ett recept räknat i hinkar i <a href=\"/artiklar/blanda-betong-sjalv\">blanda betong själv</a>."
+        },
+        {
+          "type": "formula",
+          "rows": [
+            [
+              "Vattencementtal",
+              "vct = vatten (kg) ÷ cement (kg)"
+            ],
+            [
+              "Vatten för ett visst vct",
+              "vatten = cement × vct"
+            ],
+            [
+              "Cement för ett visst vct",
+              "cement = vatten ÷ vct"
+            ],
+            [
+              "Hållfasthet, tumregel",
+              "ungefär 163 × e^(−2,71 × vct) MPa"
+            ]
+          ],
+          "example": "360 kg cement och 180 liter vatten: 180 ÷ 360 = 0,50. Häller du i 10 liter till blir det 190 ÷ 360 ≈ 0,53."
         },
         {
           "type": "faq",
@@ -158,6 +194,10 @@
           ]
         },
         {
+          "type": "note",
+          "text": "A 25 kilo bag of cement and 12.5 litres of water give a w/c of 0.50. Add one more bucket of water and it becomes 0.90, and the concrete loses more than half its strength."
+        },
+        {
           "type": "heading",
           "level": 2,
           "text": "What “a little extra water” costs"
@@ -165,6 +205,12 @@
         {
           "type": "text",
           "html": "On site it is tempting to add a little extra water so the concrete flows more easily. The calculator shows the price: ten litres extra per cubic metre can take several megapascals off the strength. If you want an easier concrete without losing quality, the answer is a plasticiser, which makes the concrete flow without extra water."
+        },
+        {
+          "type": "widget",
+          "kind": "vctcalc",
+          "title": "Do the sums with your own numbers",
+          "intro": "Type in how much cement and water you have, or which w/c you want, and we work out the rest."
         },
         {
           "type": "heading",
@@ -191,6 +237,32 @@
             "Do not add water in the truck or the pump. If the concrete needs to flow more, ask the supplier about a plasticiser.",
             "Cure properly. Even a low w/c concrete gets a porous surface if it dries out too early."
           ]
+        },
+        {
+          "type": "text",
+          "html": "If you mix in a site mixer yourself, there is a recipe counted in buckets in <a href=\"/artiklar/blanda-betong-sjalv\">mixing concrete yourself</a>."
+        },
+        {
+          "type": "formula",
+          "rows": [
+            [
+              "Water/cement ratio",
+              "w/c = water (kg) ÷ cement (kg)"
+            ],
+            [
+              "Water for a given w/c",
+              "water = cement × w/c"
+            ],
+            [
+              "Cement for a given w/c",
+              "cement = water ÷ w/c"
+            ],
+            [
+              "Strength, rule of thumb",
+              "about 163 × e^(−2.71 × w/c) MPa"
+            ]
+          ],
+          "example": "360 kg of cement and 180 litres of water: 180 ÷ 360 = 0.50. Add another 10 litres and it becomes 190 ÷ 360 ≈ 0.53."
         },
         {
           "type": "faq",

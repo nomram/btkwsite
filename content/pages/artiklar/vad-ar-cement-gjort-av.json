@@ -53,6 +53,10 @@
           ]
         },
         {
+          "type": "note",
+          "text": "Kalksten består till största delen av skal och skelett från små havsdjur som levde för miljontals år sedan."
+        },
+        {
           "type": "heading",
           "level": 2,
           "text": "I ugnen: från sten till klinker"
@@ -137,6 +141,24 @@
           "html": "Mest gör man för klimatet genom att använda rätt mängd betong med rätt recept. Hur klimatpåverkan räknas fram, steg för steg, går vi igenom i <a href=\"/artiklar/betong-koldioxid-lca\">betongens klimatpåverkan förklarad enkelt</a>."
         },
         {
+          "type": "formula",
+          "rows": [
+            [
+              "Kalcinering i ugnen",
+              "CaCO₃ → CaO + CO₂"
+            ],
+            [
+              "Karbonatisering i betongen",
+              "Ca(OH)₂ + CO₂ → CaCO₃ + H₂O"
+            ],
+            [
+              "Karbonatiseringsdjup",
+              "d = k × √t"
+            ]
+          ],
+          "example": "Med k = 3 mm per √år är djupet 3 × √25 = 15 mm efter 25 år, och 3 × √100 = 30 mm efter 100 år."
+        },
+        {
           "type": "faq",
           "title": "Vanliga frågor",
           "items": [
@@ -200,6 +222,10 @@
             "Alumina, Al₂O₃: about 3 to 8 percent",
             "Iron oxide, Fe₂O₃: about 0.5 to 6 percent"
           ]
+        },
+        {
+          "type": "note",
+          "text": "Limestone is mostly made of the shells and skeletons of small sea creatures that lived millions of years ago."
         },
         {
           "type": "heading",
@@ -284,6 +310,24 @@
         {
           "type": "text",
           "html": "The most you can do for the climate is to use the right amount of concrete with the right recipe. How the climate impact is worked out, step by step, is explained in <a href=\"/artiklar/betong-koldioxid-lca\">the climate impact of concrete explained simply</a>."
+        },
+        {
+          "type": "formula",
+          "rows": [
+            [
+              "Calcination in the kiln",
+              "CaCO₃ → CaO + CO₂"
+            ],
+            [
+              "Carbonation in the concrete",
+              "Ca(OH)₂ + CO₂ → CaCO₃ + H₂O"
+            ],
+            [
+              "Carbonation depth",
+              "d = k × √t"
+            ]
+          ],
+          "example": "With k = 3 mm per √year the depth is 3 × √25 = 15 mm after 25 years, and 3 × √100 = 30 mm after 100 years."
         },
         {
           "type": "faq",

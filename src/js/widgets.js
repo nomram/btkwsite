@@ -1769,8 +1769,332 @@
     draw();
   }
 
-  var BUILD = { vct: buildVct, harda: buildHarda, injektering: buildInj, atgang: buildAtg, vadarvad: buildVad, volym: buildVolym, klass: buildKlass, tidslinje: buildTid, pantheon: buildPantheon, armering: buildArm, hojd: buildHojd, tunnelcykel: buildTunCycle, tunnelval: buildTunVal, spruta: buildSpruta, illu: buildIllu, ugn: buildUgn, klinker: buildKlinker, karbonatisering: buildKarb, klimat: buildKlimat, frost: buildFrost, pump: buildPump, sten: buildSten, marsh: buildMarsh, ic: buildIc, blandning: buildMix, logg: buildLog };
-  if (window.__WIDGET_TEST) { window.__WIDGET_TEST.scene = scene; window.__WIDGET_TEST.tunnelScene = tunnelScene; window.__WIDGET_TEST.tbmScene = tbmScene; window.__WIDGET_TEST.romanScene = romanScene; window.__WIDGET_TEST.lcaScene = lcaScene; window.__WIDGET_TEST.frostScene = frostScene; window.__WIDGET_TEST.pumpParts = pumpParts; window.__WIDGET_TEST.rockParts = rockParts; window.__WIDGET_TEST.marshParts = marshParts; window.__WIDGET_TEST.art = art; window.__WIDGET_TEST.icScene = icScene; window.__WIDGET_TEST.ICM = ICM; window.__WIDGET_TEST.mixScene = mixScene; window.__WIDGET_TEST.simLog = simLog; window.__WIDGET_TEST.logChart = logChart; window.__WIDGET_TEST.T = T; }
+  // =====================================================================================================
+  // r29: calculators you type into, and four new scenes (mixing by bucket, sealing rock, jet grouting, drying)
+  // =====================================================================================================
+  var TX3 = {
+    sv: {
+      calc: { modes: ["Räkna ut vct", "Hur mycket vatten?", "Hur mycket cement?"], cem: "Cement", water: "Vatten", target: "Önskat vct", kg: "kg", l: "liter", wet: "Räkna med fukten i sanden", sand: "Sand", moist: "Fukthalt i sanden", pct: "%",
+        res: ["Vattencementtal", "Så mycket vatten", "Så mycket cement"], calc: "Uträkningen", bucket: "hinkar à 10 liter", bag: "säckar à 25 kg", strength: "Hållfasthet ungefär", mpa: "MPa efter 28 dygn", sandW: "vatten från sanden",
+        zones: ["Mycket stark", "Bra utomhus", "Inomhus", "För vattnig"], v: ["Mycket tät och stark, men trög att gjuta. Räkna med flyttillsats.", "Ett bra vct för betong utomhus, även med frost.", "Fungerar inomhus och för enklare jobb, men är porösare.", "För mycket vatten. Betongen blir svag och porös och kan separera."],
+        zero: "Fyll i cementmängden, den måste vara större än noll.", odd: "Kontrollera siffrorna, vct brukar ligga mellan 0,35 och 0,80.", note: "Tillsatsmedel som flyttillsats räknas inte som vatten. Fritt vatten i sand och sten gör det.",
+        how: "vct = vatten (kg) ÷ cement (kg). En liter vatten väger ett kilo. Med fuktig sand räknas fukten in: vatten från sanden = sandens vikt × fukthalt. Hållfastheten följer en vanlig tumregel (ungefär 163 × e^(−2,71 × vct) MPa för ett normalt cement) och ska bara ses som en fingervisning." },
+      rec: { use: "Vad ska du gjuta?", uses: ["Betong, stark (1 : 2 : 3)", "Betong, allround (1 : 2,5 : 3,5)", "Cementbruk (1 : 3)"], by: "Jag utgår från", bys: ["Volymen", "Antal säckar cement"], vol: "Hur mycket färdig betong?", bags: "Säckar cement à 25 kg", l: "liter",
+        quick: "Snabbval", quicks: [["Stolpfundament", 30], ["Trappsteg", 120], ["Liten platta", 1000]], cement: "Cement", sand: "Sand 0 till 8 mm", stone: "Sten 8 till 16 mm", water: "Vatten", buckets: "hinkar", kgL: "kg", total: "Det blir ungefär", out: "liter färdig betong",
+        meas: "Mät med samma hink, 10 liter, för allt", order: ["Häll i hälften av vattnet i blandaren.", "Tillsätt sten, sedan cement och sand.", "Fyll på resten av vattnet lite i taget tills betongen är jämn och lagom trögflytande.", "Blanda i några minuter och använd betongen inom en timme."],
+        vct: "vct ungefär", big: "Behöver du mer än ungefär en kubikmeter lönar det sig nästan alltid att beställa färdigblandad betong.",
+        how: "Delarna är räknade i volym. Torra material packar ihop när de blandas, så det går åt ungefär 1,5 liter torrt material per liter färdig betong (1,3 för bruk). Cement räknas som 1,3 kg per liter, sand 1,55 och sten 1,5. Vattnet är cementets vikt × vct. Sanden är oftast fuktig, så börja med lite mindre vatten." },
+      tat: { rock: "Hur sprickigt är berget?", rocks: ["Lite sprickigt", "Normalt", "Mycket sprickigt"], drill: "1. Borra injekteringshål", grout: "2. Injektera", again: "Börja om", leak: "Inläckage", unit: "liter per minut och 100 m tunnel",
+        s0: "Vatten tränger in genom sprickorna i berget och droppar in i tunneln. Börja med att borra en solfjäder av hål runt tunneln.", s1: "Hålen är borrade och korsar sprickorna. Nu pumpas injekteringsbruk in under tryck.", s2: "Bruket sprider sig ut i sprickorna medan det pumpas.", s3: "Sprickorna är fyllda och bruket har hårdnat. Inläckaget har minskat kraftigt.",
+        how: "Illustration av principen. Hålen borras i en solfjäder runt tunneln, ofta 15 till 25 meter långa, och bruket pumpas in tills ett stopptryck eller en största volym nås. Hur mycket inläckaget minskar beror på berget, bruket och hur tätt hålen sitter. Värdena för inläckage är exempel." },
+      jet: { method: "Metod", methods: ["Enkel (bruk)", "Dubbel (bruk och luft)", "Trippel (vatten, luft och bruk)"], soil: "Jordart", soils: ["Sand och grus", "Silt", "Lera"], len: "Pelarens längd", m: "m", start: "Starta", again: "Gör en till",
+        dia: "Diameter, ungefär", per: "Volym per meter", tot: "Jordcement totalt", m3: "m³", p0: "Riggen står klar. Tryck på Starta.", p1: "Borrstången borras ner till rätt djup.", p2: "Strålen skär upp jorden medan stången roterar och dras upp långsamt. Jorden blandas med bruket.", p3: "Klart. Pelaren av jordcement hårdnar under de närmaste veckorna.",
+        how: "Typiska diametrar enligt erfarenhet: enkel metod 0,5 till 0,8 m, dubbel 1,0 till 1,5 m och trippel 1,3 till 2,0 m. Sand ger störst pelare och lera minst. Den verkliga storleken provas fram med provpelare på platsen. Volym per meter = π × diameter² ÷ 4." },
+      tork: { th: "Plattans tjocklek", side: "Torkar åt", sides: ["Ett håll (uppåt)", "Två håll"], vct: "Betongens vct", vcts: ["0,40 (självuttorkande)", "0,55 (vanlig)", "0,70 (vattnig)"], clim: "Klimat under torkningen", clims: ["Kallt och fuktigt, 10 °C", "Normalt, 20 °C och 50 % RF", "Varmt och avfuktat, 25 °C"],
+        factor: "Torktid jämfört med referensplattan", times: "gånger", depth: "Mät fukten på djupet", mm: "mm", ref: "Referensplatta: 100 mm, torkar uppåt, vct 0,55, 20 °C.", refT: "Referensplattan behöver ofta flera månader innan den är torr nog för ett tätt golv.",
+        bar1: "Referens", bar2: "Din platta", deep: "Mätdjupet är 40 procent av tjockleken när plattan torkar åt ett håll och 20 procent när den torkar åt två.", fast: "Betong med lågt vct torkar till stor del inifrån, eftersom cementet själv förbrukar vattnet.",
+        how: "Förenklad modell för att visa sambanden. Torktiden växer ungefär med kvadraten på tjockleken, så dubbla tjockleken ger runt fyra gånger så lång tid. Torkar plattan åt två håll halveras den verksamma tjockleken. Faktorerna för vct och klimat är ungefärliga. Använd fuktmätning och beräkningsprogram, till exempel TorkaS, i verkliga projekt." }
+    },
+    en: {
+      calc: { modes: ["Work out w/c", "How much water?", "How much cement?"], cem: "Cement", water: "Water", target: "Target w/c", kg: "kg", l: "litres", wet: "Include the moisture in the sand", sand: "Sand", moist: "Moisture in the sand", pct: "%",
+        res: ["Water/cement ratio", "Water needed", "Cement needed"], calc: "The sum", bucket: "buckets of 10 litres", bag: "bags of 25 kg", strength: "Strength roughly", mpa: "MPa after 28 days", sandW: "water from the sand",
+        zones: ["Very strong", "Good outdoors", "Indoors", "Too wet"], v: ["Very dense and strong, but stiff to place. Expect to need a plasticiser.", "A good w/c for outdoor concrete, frost included.", "Fine indoors and for simple jobs, but more porous.", "Too much water. The concrete will be weak and porous and may separate."],
+        zero: "Enter the amount of cement, it has to be more than zero.", odd: "Check the numbers, w/c is usually between 0.35 and 0.80.", note: "Admixtures such as plasticisers do not count as water. Free water in sand and stone does.",
+        how: "w/c = water (kg) ÷ cement (kg). One litre of water weighs one kilo. With damp sand the moisture is included: water from the sand = weight of sand × moisture content. Strength follows a common rule of thumb (about 163 × e^(−2.71 × w/c) MPa for an ordinary cement) and is only a rough guide." },
+      rec: { use: "What are you casting?", uses: ["Concrete, strong (1 : 2 : 3)", "Concrete, general (1 : 2.5 : 3.5)", "Cement mortar (1 : 3)"], by: "Start from", bys: ["The volume", "Number of cement bags"], vol: "How much finished concrete?", bags: "Bags of cement, 25 kg", l: "litres",
+        quick: "Quick pick", quicks: [["Post footing", 30], ["Step", 120], ["Small slab", 1000]], cement: "Cement", sand: "Sand 0 to 8 mm", stone: "Stone 8 to 16 mm", water: "Water", buckets: "buckets", kgL: "kg", total: "That makes about", out: "litres of finished concrete",
+        meas: "Measure everything with the same 10 litre bucket", order: ["Pour half of the water into the mixer.", "Add the stone, then the cement and the sand.", "Add the rest of the water a little at a time until the concrete is even and stiff but workable.", "Mix for a few minutes and use the concrete within an hour."],
+        vct: "w/c roughly", big: "If you need more than about one cubic metre, ordering ready-mixed concrete almost always pays off.",
+        how: "The parts are by volume. Dry materials pack together when mixed, so it takes about 1.5 litres of dry material per litre of finished concrete (1.3 for mortar). Cement is counted at 1.3 kg per litre, sand 1.55 and stone 1.5. The water is the weight of cement × w/c. Sand is usually damp, so start with a little less water." },
+      tat: { rock: "How fractured is the rock?", rocks: ["Slightly fractured", "Normal", "Heavily fractured"], drill: "1. Drill grout holes", grout: "2. Grout", again: "Start again", leak: "Water inflow", unit: "litres per minute and 100 m of tunnel",
+        s0: "Water seeps through the fractures in the rock and drips into the tunnel. Start by drilling a fan of holes around the tunnel.", s1: "The holes are drilled and cross the fractures. Now grout is pumped in under pressure.", s2: "The grout spreads into the fractures while it is pumped.", s3: "The fractures are filled and the grout has hardened. The inflow has dropped sharply.",
+        how: "An illustration of the principle. The holes are drilled in a fan around the tunnel, often 15 to 25 metres long, and grout is pumped in until a stop pressure or a largest volume is reached. How much the inflow drops depends on the rock, the grout and how close the holes are. The inflow values are examples." },
+      jet: { method: "Method", methods: ["Single (grout)", "Double (grout and air)", "Triple (water, air and grout)"], soil: "Soil", soils: ["Sand and gravel", "Silt", "Clay"], len: "Column length", m: "m", start: "Start", again: "Make another",
+        dia: "Diameter, roughly", per: "Volume per metre", tot: "Soilcrete in total", m3: "m³", p0: "The rig is ready. Press Start.", p1: "The rod is drilled down to the right depth.", p2: "The jet cuts the soil while the rod rotates and is slowly pulled up. The soil is mixed with the grout.", p3: "Done. The soilcrete column hardens over the coming weeks.",
+        how: "Typical diameters from experience: single fluid 0.5 to 0.8 m, double 1.0 to 1.5 m and triple 1.3 to 2.0 m. Sand gives the largest columns and clay the smallest. The real size is found with trial columns on site. Volume per metre = π × diameter² ÷ 4." },
+      tork: { th: "Slab thickness", side: "Dries towards", sides: ["One side (up)", "Both sides"], vct: "W/c of the concrete", vcts: ["0.40 (self-desiccating)", "0.55 (ordinary)", "0.70 (wet)"], clim: "Climate while drying", clims: ["Cold and damp, 10 °C", "Normal, 20 °C and 50 % RH", "Warm and dehumidified, 25 °C"],
+        factor: "Drying time compared with the reference slab", times: "times", depth: "Measure the moisture at a depth of", mm: "mm", ref: "Reference slab: 100 mm, dries upwards, w/c 0.55, 20 °C.", refT: "The reference slab often needs several months before it is dry enough for a tight floor covering.",
+        bar1: "Reference", bar2: "Your slab", deep: "The measuring depth is 40 percent of the thickness when the slab dries one way and 20 percent when it dries both ways.", fast: "Concrete with a low w/c largely dries from within, because the cement itself uses up the water.",
+        how: "A simplified model to show the relationships. Drying time grows roughly with the square of the thickness, so double the thickness gives around four times the time. If the slab dries both ways, the effective thickness is halved. The factors for w/c and climate are approximate. Use moisture measurement and calculation software such as TorkaS on real projects." }
+    }
+  };
+  var T3 = TX3[LANG];
+  function parseNum(s) { var v = parseFloat(String(s).replace(/\s/g, "").replace(",", ".")); return isFinite(v) ? v : NaN; }
+  function fmtIn(v) { return LANG === "sv" ? String(v).replace(".", ",") : String(v); }
+  function numIn(label, val, unit, onChange) {
+    var id = "wg" + (++uid), inp = el("input", { type: "text", inputmode: "decimal", id: id, class: "wn__i", value: fmtIn(val), autocomplete: "off", spellcheck: "false" });
+    var box = el("div", { class: "wc wn" }, [el("label", { class: "wc__l", for: id, text: label }), el("div", { class: "wn__row" }, [inp, unit ? el("span", { class: "wn__u", text: unit }) : null])]);
+    inp.addEventListener("input", function () { var v = parseNum(inp.value); if (isFinite(v) && v >= 0) { inp.removeAttribute("aria-invalid"); onChange(v); } else inp.setAttribute("aria-invalid", "true"); });
+    inp.addEventListener("focus", function () { inp.select(); });
+    return { box: box, input: inp, set: function (v) { inp.value = fmtIn(v); } };
+  }
+  function playWhenVisible(node, frame) {
+    var raf = 0, last = 0, on = false;
+    function loop(t) { var dt = Math.min(60, t - (last || t)); last = t; frame(dt); if (on) raf = requestAnimationFrame(loop); }
+    function start() { if (on || REDUCE) return; on = true; last = 0; raf = requestAnimationFrame(loop); }
+    function stop() { on = false; cancelAnimationFrame(raf); }
+    if ("IntersectionObserver" in window) new IntersectionObserver(function (e) { if (e[0].isIntersecting) start(); else stop(); }).observe(node); else start();
+    return { start: start, stop: stop };
+  }
+
+  // ---------- vct calculator: type your own numbers ----------
+  function buildVctCalc(app) {
+    var W = T3.calc, S = { m: 0, c: 360, w: 180, t: 0.5, wet: false, s: 800, mo: 4 };
+    var modeSeg = segmented("", W.modes, 0, function (i) { S.m = i; layout(); draw(); });
+    var iC = numIn(W.cem, 360, W.kg, function (v) { S.c = v; draw(); }), iW = numIn(W.water, 180, W.l, function (v) { S.w = v; draw(); }), iT = numIn(W.target, "0.50", "", function (v) { S.t = v; draw(); });
+    var wetCb = el("input", { type: "checkbox", id: "wg" + (++uid) }), wetBox = el("label", { class: "wck", for: wetCb.id }, [wetCb, el("span", { text: W.wet })]);
+    var iS = numIn(W.sand, 800, W.kg, function (v) { S.s = v; draw(); }), iM = numIn(W.moist, 4, W.pct, function (v) { S.mo = v; draw(); });
+    var wetGrp = el("div", { class: "wn__wet" }, [iS.box, iM.box]);
+    wetCb.addEventListener("change", function () { S.wet = wetCb.checked; wetGrp.hidden = !S.wet; draw(); }); wetGrp.hidden = true;
+    var resL = el("span", { class: "wcalc__l" }), resV = el("strong", { class: "wcalc__v" }), resU = el("span", { class: "wcalc__u" }), sum = el("p", { class: "wcalc__sum" });
+    var scale = el("div", { class: "wscale", "aria-hidden": "true" }), mark = el("i", { class: "wscale__m" }), verdict = el("p", { class: "wcalc__verdict", "aria-live": "polite" });
+    [[0.30, 0.40, "a"], [0.40, 0.55, "b"], [0.55, 0.65, "c"], [0.65, 0.90, "d"]].forEach(function (z, i) { scale.appendChild(el("span", { class: "wscale__z wscale__z--" + z[2], style: "flex:" + Math.round((z[1] - z[0]) * 100), text: W.zones[i] })); });
+    scale.appendChild(mark);
+    var axis = el("div", { class: "wscale__ax", "aria-hidden": "true" }); [0.3, 0.4, 0.55, 0.65, 0.9].forEach(function (v) { axis.appendChild(el("span", { style: "left:" + ((v - 0.3) / 0.6 * 100) + "%", text: num(v, 2) })); });
+    var stS = stat(W.strength, W.mpa), extra = el("p", { class: "wcalc__extra" }), msg = el("ul", { class: "wmsg" });
+    function layout() { iW.box.hidden = S.m === 2 ? false : S.m === 1; iT.box.hidden = S.m === 0; iC.box.hidden = S.m === 2; }
+    function draw() {
+      var sandW = S.wet ? S.s * S.mo / 100 : 0, v, line;
+      msg.innerHTML = ""; extra.textContent = "";
+      if (S.m === 0) {
+        if (!(S.c > 0)) { resV.textContent = "–"; sum.textContent = ""; msg.appendChild(el("li", { class: "wmsg__warn", text: W.zero })); return; }
+        v = (S.w + sandW) / S.c; resL.textContent = W.res[0]; resV.textContent = num(v, 2); resU.textContent = "";
+        line = "vct = " + (sandW ? "(" + num(S.w) + " + " + num(sandW, 1) + ")" : num(S.w)) + " ÷ " + num(S.c) + " = " + num(v, 2);
+      } else if (S.m === 1) {
+        v = S.t; var tw = S.c * S.t, add = Math.max(0, tw - sandW); resL.textContent = W.res[1]; resV.textContent = num(add, add < 20 ? 1 : 0); resU.textContent = W.l;
+        line = (LANG === "sv" ? "vatten = " : "water = ") + num(S.c) + " × " + num(S.t, 2) + " = " + num(tw, 1) + (sandW ? " − " + num(sandW, 1) + " (" + W.sandW + ") = " + num(add, 1) : "") + " " + W.l;
+        extra.textContent = "= " + num(add / 10, 1) + " " + W.bucket;
+      } else {
+        v = S.t; if (!(S.t > 0)) { resV.textContent = "–"; return; }
+        var cem = (S.w + sandW) / S.t; resL.textContent = W.res[2]; resV.textContent = num(cem); resU.textContent = W.kg;
+        line = "cement = " + (sandW ? "(" + num(S.w) + " + " + num(sandW, 1) + ")" : num(S.w)) + " ÷ " + num(S.t, 2) + " = " + num(cem) + " kg";
+        extra.textContent = "= " + num(cem / 25, 1) + " " + W.bag;
+      }
+      sum.textContent = line;
+      var p = Math.max(0, Math.min(1, (v - 0.3) / 0.6)); mark.style.left = (p * 100) + "%";
+      var z = v < 0.40 ? 0 : v < 0.55 ? 1 : v <= 0.65 ? 2 : 3; verdict.textContent = W.v[z]; verdict.setAttribute("data-z", z);
+      stS.set(num(162.6 * Math.exp(-2.71 * v)));
+      if (v < 0.3 || v > 0.9) msg.appendChild(el("li", { class: "wmsg__warn", text: W.odd }));
+      msg.appendChild(el("li", { class: "wmsg__info", text: W.note }));
+    }
+    var ctl = el("div", { class: "wgt__ctl" }, [iC.box, iW.box, iT.box, wetBox, wetGrp]);
+    var out = el("div", { class: "wgt__out wcalc" }, [el("div", { class: "wcalc__res" }, [resL, el("div", {}, [resV, resU])]), extra, el("p", { class: "wcalc__cap", text: W.calc }), sum, scale, axis, verdict, el("div", { class: "stats" }, [stS.box]), msg]);
+    app.appendChild(modeSeg.box);
+    app.appendChild(el("div", { class: "wgt__grid" }, [ctl, out]));
+    app.appendChild(how(W.how));
+    layout(); draw();
+  }
+
+  // ---------- mix concrete yourself: measured in buckets ----------
+  function bucketRow(n, cls) {
+    var row = el("div", { class: "wbk__row" }), whole = Math.floor(n), part = n - whole, show = Math.min(whole, 24), i;
+    for (i = 0; i < show; i++) row.appendChild(el("i", { class: "wbk__b " + cls, style: "animation-delay:" + (i * 25) + "ms" }));
+    if (whole <= 24 && part > 0.05) row.appendChild(el("i", { class: "wbk__b wbk__b--part " + cls, style: "--f:" + part.toFixed(2) }));
+    if (whole > 24) row.appendChild(el("span", { class: "wbags__more", text: "+" + num(whole - 24) }));
+    return row;
+  }
+  function buildRecept(app) {
+    var W = T3.rec, S = { u: 0, by: 0, V: 120, bags: 4 }, R = [[1, 2, 3], [1, 2.5, 3.5], [1, 3, 0]], VCT = [0.5, 0.55, 0.6], DRY = [1.54, 1.54, 1.33];
+    var useSel = select(W.use, W.uses, 0, function (i) { S.u = i; draw(); });
+    var bySeg = segmented(W.by, W.bys, 0, function (i) { S.by = i; iV.box.hidden = i === 1; quick.hidden = i === 1; iB.box.hidden = i === 0; draw(); });
+    var iV = numIn(W.vol, 120, W.l, function (v) { S.V = v; draw(); }), iB = numIn(W.bags, 4, "", function (v) { S.bags = v; draw(); }); iB.box.hidden = true;
+    var quick = el("div", { class: "wchips" }, [el("span", { class: "wc__l", text: W.quick })]);
+    W.quicks.forEach(function (q) { var b = el("button", { type: "button", class: "wchip", text: q[0] + " · " + num(q[1]) + " l" }); b.addEventListener("click", function () { S.V = q[1]; iV.set(q[1]); draw(); }); quick.appendChild(b); });
+    var head = el("p", { class: "wgt__big", "aria-live": "polite" }), table = el("div", { class: "wbk" }), msg = el("ul", { class: "wmsg" });
+    var steps = el("ol", { class: "wsteps" }); W.order.forEach(function (t) { steps.appendChild(el("li", { text: t })); });
+    function draw() {
+      var r = R[S.u], parts = r[0] + r[1] + r[2], cemL, V;
+      if (S.by === 0) { V = S.V; cemL = V * DRY[S.u] / parts * r[0]; } else { cemL = S.bags * 25 / 1.3; V = cemL * parts / r[0] / DRY[S.u]; }
+      var sandL = cemL * r[1], stoneL = cemL * r[2], cemKg = cemL * 1.3, waterL = cemKg * VCT[S.u];
+      head.textContent = W.total + " " + num(V) + " " + W.out + (S.by === 1 ? "" : "") + ".";
+      table.innerHTML = "";
+      [[W.cement, cemL, cemKg, "wbk__b--c", num(cemKg / 25, 1) + " " + (LANG === "sv" ? "säckar" : "bags")], [W.sand, sandL, sandL * 1.55, "wbk__b--s"], [W.stone, stoneL, stoneL * 1.5, "wbk__b--g"], [W.water, waterL, waterL, "wbk__b--w", null, W.l]].forEach(function (it) {
+        if (it[1] <= 0) return;
+        table.appendChild(el("div", { class: "wbk__item" }, [el("div", { class: "wbk__h" }, [el("strong", { text: it[0] }), el("span", { text: num(it[1] / 10, 1) + " " + W.buckets + " · " + num(it[2]) + " " + (it[5] || W.kgL) + (it[4] ? " · " + it[4] : "") })]), bucketRow(it[1] / 10, it[3])]));
+      });
+      msg.innerHTML = ""; msg.appendChild(el("li", { class: "wmsg__info", text: W.vct + " " + num(VCT[S.u], 2) + ". " + W.meas + "." }));
+      if (V > 900) msg.appendChild(el("li", { class: "wmsg__ok", text: W.big }));
+    }
+    app.appendChild(el("div", { class: "wgt__grid" }, [el("div", { class: "wgt__ctl" }, [useSel.box, bySeg.box, iV.box, quick, iB.box]), el("div", { class: "wgt__out" }, [head, table, msg, steps])]));
+    app.appendChild(how(W.how));
+    draw();
+  }
+
+  // ---------- sealing rock: what grouting does ----------
+  function tatScene(level) {
+    var a = art(440, 270, "wchart wtat"), r = seeded(7 + level * 13), cx = 220, cy = 196, R0 = 66, i;
+    a.rect(0, 0, 440, 270, a.grad([[0, "#d9cdbb"], [1, "#b9a993"]]), { ns: true });
+    a.speckle(0, 0, 440, 270, 260, 31, ["#a39079", "#e6dccd", "#8f7d68"], 2.2);
+    var nF = [4, 7, 11][level], fr = [], g = a.group({}), gg = a.group({}), dropsG = a.group({});
+    for (i = 0; i < nF; i++) {
+      var th = Math.PI * (1.08 + r() * 0.84), px = cx + Math.cos(th) * R0, py = cy + Math.sin(th) * R0, dir = th + (r() - 0.5) * 1.6, L1 = 120 + r() * 160, L2 = 40 + r() * 80;
+      var ax = px + Math.cos(dir) * L1, ay = py + Math.sin(dir) * L1, bx = px - Math.cos(dir) * L2 * 0.2 + Math.cos(th) * 0, by = py - Math.sin(dir) * L2 * 0.2;
+      var mx = (px + ax) / 2 + (r() - 0.5) * 30, my = (py + ay) / 2 + (r() - 0.5) * 30;
+      var d1 = "M" + px.toFixed(1) + "," + py.toFixed(1) + " Q" + mx.toFixed(1) + "," + my.toFixed(1) + " " + ax.toFixed(1) + "," + ay.toFixed(1);
+      a.path(d1, "none", { stroke: "#6e5f50", sw: 1.4 + r() * 1.2 }, g);
+      var w1 = a.path(d1, "none", { stroke: "#6fa3c7", sw: 2.2, opacity: 0.75, "stroke-linecap": "round" }, g);
+      var g1 = a.path(d1, "none", { stroke: "#8b8f92", sw: 4.2, "stroke-linecap": "round", pathLength: 1, "stroke-dasharray": "1 1", "stroke-dashoffset": 1 }, gg);
+      fr.push({ x: px, y: py, wat: w1, gr: g1, k: 0.5 + r() * 0.5, ph: r() });
+    }
+    // tunnel opening with shotcrete lining
+    var tun = "M" + (cx - R0) + "," + cy + " A" + R0 + "," + R0 + " 0 0 1 " + (cx + R0) + "," + cy + " L" + (cx + R0) + ",270 L" + (cx - R0) + ",270 Z";
+    a.path(tun, "#efe6d8", { stroke: "#9a8b78", sw: 5 });
+    a.path(tun, a.grad([[0, "#3d3633"], [1, "#2b2523"]]), { ns: true });
+    a.rect(cx - R0 + 6, 252, 2 * R0 - 12, 18, "#4a4240", { ns: true });
+    var pool = a.ellipse(cx, 251, 40, 3, "#6fa3c7", { ns: true, opacity: 0 });
+    var holes = [], nH = 9;
+    for (i = 0; i < nH; i++) {
+      var ang = Math.PI * (1.06 + i / (nH - 1) * 0.88), sx = cx + Math.cos(ang) * (R0 + 2), sy = cy + Math.sin(ang) * (R0 + 2);
+      var ln = a.line(sx, sy, sx, sy, "#2d2a2b", 2.4, { "stroke-dasharray": "0" });
+      holes.push({ el: ln, sx: sx, sy: sy, ex: cx + Math.cos(ang) * (R0 + 150), ey: cy + Math.sin(ang) * (R0 + 150) });
+    }
+    var drops = fr.map(function (f) { return a.ellipse(f.x, f.y, 1.8, 2.6, "#7fb6dc", { ns: true }, dropsG); });
+    return {
+      svg: a.svg,
+      set: function (holeP, groutP, t) {
+        holes.forEach(function (h) { h.el.setAttribute("x2", (h.sx + (h.ex - h.sx) * holeP).toFixed(1)); h.el.setAttribute("y2", (h.sy + (h.ey - h.sy) * holeP).toFixed(1)); });
+        fr.forEach(function (f, k) {
+          var gp = Math.max(0, Math.min(1, groutP * 1.25 - f.ph * 0.25)); f.gr.setAttribute("stroke-dashoffset", (1 - gp).toFixed(3)); f.wat.setAttribute("opacity", (0.75 * (1 - gp)).toFixed(2));
+          var leak = 1 - gp, cyc = ((t / 1000) * (0.6 + f.k) + f.ph) % 1, yy = f.y + cyc * (251 - f.y);
+          drops[k].setAttribute("cy", yy.toFixed(1)); drops[k].setAttribute("cx", (f.x + (cx - f.x) * 0.04 * cyc).toFixed(1)); drops[k].setAttribute("opacity", leak > 0.08 ? (0.9 * leak * (1 - cyc * 0.3)).toFixed(2) : 0);
+        });
+        pool.setAttribute("opacity", (0.6 * (1 - groutP)).toFixed(2));
+      }
+    };
+  }
+  function buildTat(app) {
+    var W = T3.tat, S = { lv: 1, hole: 0, gr: 0, phase: 0, t: 0 }, Q0 = [6, 18, 45], sc;
+    var box = el("div", { class: "wtat__pic" }), big = el("p", { class: "wgt__big", "aria-live": "polite" }), stQ = stat(W.leak, W.unit), meter = el("div", { class: "wmeter" }, [el("i")]);
+    var rockSeg = segmented(W.rock, W.rocks, 1, function (i) { S.lv = i; reset(); });
+    var bD = el("button", { type: "button", class: "vbtn", text: W.drill }), bG = el("button", { type: "button", class: "vbtn vbtn--alt", text: W.grout }), bR = el("button", { type: "button", class: "wlink", text: W.again });
+    bD.addEventListener("click", function () { if (S.phase === 0) { S.phase = 1; if (REDUCE) { S.hole = 1; S.phase = 2; } kick(); } });
+    bG.addEventListener("click", function () { if (S.phase === 2) { S.phase = 3; if (REDUCE) { S.gr = 1; S.phase = 4; } kick(); } });
+    bR.addEventListener("click", reset);
+    function reset() { S.hole = 0; S.gr = 0; S.phase = 0; box.innerHTML = ""; sc = tatScene(S.lv); box.appendChild(sc.svg); upd(); kick(); }
+    function upd() {
+      sc.set(S.hole, S.gr, S.t);
+      var q = Q0[S.lv] * (1 - 0.88 * S.gr); stQ.set(num(q, q < 10 ? 1 : 0)); meter.firstChild.style.width = Math.min(100, q / 45 * 100) + "%";
+      big.textContent = S.phase === 0 ? W.s0 : S.phase < 3 ? W.s1 : S.phase === 3 ? W.s2 : W.s3;
+      bD.disabled = S.phase !== 0; bG.disabled = S.phase !== 2;
+    }
+    function frame(dt) {
+      S.t += dt;
+      if (S.phase === 1) { S.hole = Math.min(1, S.hole + dt / 1600); if (S.hole >= 1) S.phase = 2; }
+      if (S.phase === 3) { S.gr = Math.min(1, S.gr + dt / 4200); if (S.gr >= 1) S.phase = 4; }
+      upd();
+    }
+    var player;
+    function kick() { if (player) player.start(); else upd(); }
+    reset();
+    player = playWhenVisible(box, frame);
+    app.appendChild(el("div", { class: "wgt__grid" }, [el("div", { class: "wgt__ctl" }, [rockSeg.box, el("div", { class: "wbtns" }, [bD, bG, bR]), el("div", { class: "stats" }, [stQ.box]), meter]), el("div", { class: "wgt__out" }, [big, box])]));
+    app.appendChild(how(W.how));
+  }
+
+  // ---------- jet grouting: a column of soilcrete ----------
+  var JETD = [[0.8, 0.65, 0.5], [1.5, 1.25, 1.0], [2.0, 1.65, 1.3]];
+  function jetScene() {
+    var a = art(440, 300, "wchart wjet"), gy = 122;
+    a.sky(null);
+    a.rect(0, gy, 440, 22, a.grad([[0, "#b49a78"], [1, "#a08766"]]), { ns: true });
+    a.rect(0, gy + 22, 440, 80, a.grad([[0, "#d8c49a"], [1, "#cbb488"]]), { ns: true }); a.speckle(0, gy + 22, 440, 80, 140, 3, ["#b39d70", "#efe1c0"], 1.6);
+    a.rect(0, gy + 102, 440, 80, a.grad([[0, "#a89a8c"], [1, "#958879"]]), { ns: true }); a.speckle(0, gy + 102, 440, 80, 60, 5, ["#857868", "#bdb2a6"], 1.2);
+    a.line(0, gy, 440, gy, "#7a6650", 2);
+    var cx = 200, col = a.rect(cx, 284, 0, 0, a.grad([[0, "#9c9a96"], [0.5, "#c7c4bf"], [1, "#8d8b87"]], true), { stroke: "#6e6b68", sw: 1 });
+    var spoil = a.ellipse(cx + 20, gy - 1, 0, 0, "#9a948c", { stroke: "#6e6b68", sw: 0.8 });
+    var rod = a.rect(cx - 3, gy - 60, 6, 60, "#4a4446", { ns: true });
+    var jetL = a.path("", "none", { stroke: "#ffffff", sw: 2.2, opacity: 0.9, "stroke-linecap": "round" }), jetR = a.path("", "none", { stroke: "#ffffff", sw: 2.2, opacity: 0.9, "stroke-linecap": "round" });
+    // the rig: crawler, body and mast
+    a.rect(cx - 70, gy - 16, 110, 14, a.grad([[0, "#5c5557"], [1, "#3b3436"]]), { sw: 1 }); [cx - 62, cx - 40, cx - 18, cx + 4, cx + 26].forEach(function (x) { a.circle(x, gy - 9, 5, "#7b7375", { sw: 0.8 }); });
+    a.rect(cx - 62, gy - 44, 54, 28, a.grad([[0, "#ffa63a"], [1, "#d96a00"]]), { sw: 1.2 }); a.rect(cx - 56, gy - 40, 18, 12, "#bfe0f0", { sw: 0.8 });
+    a.rect(cx - 9, gy - 112, 6, 96, a.grad([[0, "#f6a23a"], [1, "#d07300"]], true), { sw: 1 }); a.rect(cx - 12, gy - 118, 12, 8, "#3b3436", { ns: true });
+    var head = a.rect(cx - 8, gy - 70, 16, 12, "#3b3436", { ns: true });
+    a.path("M" + (cx - 40) + "," + (gy - 30) + " C" + (cx - 60) + "," + (gy - 60) + " " + (cx - 110) + "," + (gy - 40) + " " + (cx - 150) + "," + (gy - 6), "none", { stroke: "#2d2a2b", sw: 2.4 });
+    a.rect(cx - 200, gy - 30, 50, 30, a.grad([[0, "#e5e8ea"], [1, "#a9afb4"]]), { sw: 1.2 });
+    return {
+      svg: a.svg,
+      set: function (depth, lift, dPx, t) {
+        // depth: 0..1 drilled, lift: 0..1 jetted from bottom to top
+        var bottom = 284, top = gy + 30, tipY = gy + (bottom - gy) * depth - (bottom - top) * lift;
+        rod.setAttribute("height", (tipY - (gy - 60)).toFixed(1)); head.setAttribute("y", (gy - 70 - (depth < 1 ? 0 : 0)).toFixed(1));
+        var colTop = bottom - (bottom - top) * lift;
+        col.setAttribute("x", (cx - dPx / 2).toFixed(1)); col.setAttribute("width", lift > 0 ? dPx.toFixed(1) : 0); col.setAttribute("y", colTop.toFixed(1)); col.setAttribute("height", (bottom - colTop).toFixed(1)); col.setAttribute("rx", (dPx * 0.18).toFixed(1));
+        var jetting = lift > 0 && lift < 1, s = Math.sin(t / 90), len = dPx / 2 * (0.75 + 0.25 * Math.abs(s));
+        jetL.setAttribute("d", jetting ? "M" + cx + "," + tipY.toFixed(1) + " l" + (-len * (s > 0 ? 1 : 0.35)).toFixed(1) + ",-1" : "");
+        jetR.setAttribute("d", jetting ? "M" + cx + "," + tipY.toFixed(1) + " l" + (len * (s > 0 ? 0.35 : 1)).toFixed(1) + ",-1" : "");
+        spoil.setAttribute("rx", (lift * 34).toFixed(1)); spoil.setAttribute("ry", (lift * 3.5).toFixed(1));
+      }
+    };
+  }
+  function buildJet(app) {
+    var W = T3.jet, S = { m: 1, s: 0, L: 8, depth: 0, lift: 0, phase: 0, t: 0 };
+    var sc = jetScene(), big = el("p", { class: "wgt__big", "aria-live": "polite" });
+    var mSel = select(W.method, W.methods, 1, function (i) { S.m = i; calc(); }), sSeg = segmented(W.soil, W.soils, 0, function (i) { S.s = i; calc(); });
+    var sL = slider(W.len, 2, 15, 1, 8, function (v) { return num(v) + " m"; }, function (v) { S.L = v; calc(); });
+    var bS = el("button", { type: "button", class: "vbtn" }); bS.addEventListener("click", function () { S.depth = 0; S.lift = 0; S.phase = 1; if (REDUCE) { S.depth = 1; S.lift = 1; S.phase = 3; } player.start(); upd(); });
+    var stD = stat(W.dia, W.m), stV = stat(W.per, W.m3), stT = stat(W.tot, W.m3);
+    function D() { return JETD[S.m][S.s]; }
+    function calc() { var d = D(), a = Math.PI * d * d / 4; stD.set(num(d, 2)); stV.set(num(a, 2)); stT.set(num(a * S.L, 1)); upd(); }
+    function upd() { sc.set(S.depth, S.lift, 30 + D() * 46, S.t); big.textContent = [W.p0, W.p1, W.p2, W.p3][S.phase]; bS.textContent = S.phase === 3 ? W.again : W.start; bS.disabled = S.phase === 1 || S.phase === 2; }
+    var player = playWhenVisible(sc.svg, function (dt) {
+      S.t += dt;
+      if (S.phase === 1) { S.depth = Math.min(1, S.depth + dt / 1800); if (S.depth >= 1) S.phase = 2; }
+      else if (S.phase === 2) { S.lift = Math.min(1, S.lift + dt / 5200); if (S.lift >= 1) S.phase = 3; }
+      upd();
+    });
+    app.appendChild(el("div", { class: "wgt__grid" }, [el("div", { class: "wgt__ctl" }, [mSel.box, sSeg.box, sL.box, bS, el("div", { class: "stats" }, [stD.box, stV.box, stT.box])]), el("div", { class: "wgt__out" }, [big, sc.svg])]));
+    app.appendChild(how(W.how));
+    calc();
+  }
+
+  // ---------- drying of a slab ----------
+  function torkScene(th, two, t) {
+    var a = art(440, 230, "wchart wtork"), x0 = 40, w = 360, h = 22 + (th - 50) / 250 * 98, y0 = 120 - h / 2;
+    a.rect(0, 0, 440, 230, a.grad([[0, "#fbf6ee"], [1, "#f1e8da"]]), { ns: true });
+    if (!two) { a.rect(x0 - 10, y0 + h, w + 20, 230 - y0 - h, a.grad([[0, "#d7c8ae"], [1, "#c4b296"]]), { ns: true }); a.speckle(x0 - 10, y0 + h + 4, w + 20, 80, 70, 4, ["#b09c7c", "#e8dcc6"], 1.5); }
+    else { a.rect(x0 + 20, y0 + h, 14, 230, "#b8b0a3", { sw: 1 }); a.rect(x0 + w - 34, y0 + h, 14, 230, "#b8b0a3", { sw: 1 }); }
+    var stops = two ? [[0, "#e9e3d9"], [0.5, "#7fa9c9"], [1, "#e9e3d9"]] : [[0, "#e9e3d9"], [0.55, "#9bbdd6"], [1, "#6f9fc4"]];
+    a.rect(x0, y0, w, h, a.grad(stops), { sw: 1.4 });
+    a.speckle(x0 + 2, y0 + 2, w - 4, h - 4, Math.round(w * h / 90), 9, ["#8a8378", "#d9d2c6"], 1.3);
+    var md = y0 + h * (two ? 0.2 : 0.4);
+    a.line(x0 + w - 70, y0 - 16, x0 + w - 70, md, "#3b3436", 2.2); a.circle(x0 + w - 70, md, 3.4, C.orange, { sw: 1 }); a.rect(x0 + w - 84, y0 - 30, 28, 14, "#3b3436", { ns: true });
+    a.line(x0 + w - 60, md, x0 + w + 12, md, C.orange, 1, { "stroke-dasharray": "3 3" });
+    var vap = [], k;
+    for (k = 0; k < 6; k++) { vap.push([a.path("", "none", { stroke: "#7fa9c9", sw: 1.6 }), two ? a.path("", "none", { stroke: "#7fa9c9", sw: 1.6 }) : null, x0 + 30 + k * 52, k * 0.17]); }
+    function step(tt) {
+      var ph = (tt / 2600) % 1;
+      vap.forEach(function (v) {
+        var p = (ph + v[3]) % 1, op = (Math.sin(p * Math.PI) * 0.55).toFixed(2), yy = y0 - 6 - p * 40;
+        v[0].setAttribute("d", "M" + v[2] + "," + yy.toFixed(1) + " q5,-6 0,-12 q-5,-6 0,-12"); v[0].setAttribute("opacity", op);
+        if (v[1]) { var yb = y0 + h + 6 + p * 34; v[1].setAttribute("d", "M" + (v[2] + 20) + "," + yb.toFixed(1) + " q5,6 0,12 q-5,6 0,12"); v[1].setAttribute("opacity", op); }
+      });
+    }
+    step(t || 900);
+    return { svg: a.svg, md: md, step: step };
+  }
+  function buildTork(app) {
+    var W = T3.tork, S = { th: 100, two: 0, v: 1, c: 1, t: 0 }, VF = [0.35, 1, 1.6], CF = [2.4, 1, 0.7];
+    var sT = slider(W.th, 50, 300, 10, 100, function (v) { return num(v) + " mm"; }, function (v) { S.th = v; draw(); });
+    var sideSeg = segmented(W.side, W.sides, 0, function (i) { S.two = i; draw(); }), vSel = select(W.vct, W.vcts, 1, function (i) { S.v = i; draw(); }), cSel = select(W.clim, W.clims, 1, function (i) { S.c = i; draw(); });
+    var box = el("div", { class: "wtork__pic" }), stF = stat(W.factor, W.times), stD = stat(W.depth, W.mm), bars = el("div", { class: "wbars" }), msg = el("ul", { class: "wmsg" });
+    function factor() { var de = S.two ? S.th / 2 : S.th; return Math.pow(de / 100, 2) * VF[S.v] * CF[S.c]; }
+    var cur = null;
+    function pic() { box.innerHTML = ""; cur = torkScene(S.th, S.two, S.t); box.appendChild(cur.svg); }
+    function draw() {
+      var f = factor(); pic(); stF.set(num(f, f < 10 ? 1 : 0)); stD.set(num(S.th * (S.two ? 0.2 : 0.4)));
+      var mx = Math.max(1, f); bars.innerHTML = "";
+      [[W.bar1, 1, "ref"], [W.bar2, f, "you"]].forEach(function (b) { bars.appendChild(el("div", { class: "wbars__r wbars__r--" + b[2] }, [el("span", { class: "wbars__l", text: b[0] }), el("span", { class: "wbars__t" }, [el("i", { style: "width:" + (b[1] / mx * 100).toFixed(1) + "%" })]), el("span", { class: "wbars__v", text: "× " + num(b[1], b[1] < 10 ? 1 : 0) })])); });
+      msg.innerHTML = ""; msg.appendChild(el("li", { class: "wmsg__info", text: W.ref + " " + W.refT })); msg.appendChild(el("li", { class: "wmsg__info", text: W.deep }));
+      if (S.v === 0) msg.appendChild(el("li", { class: "wmsg__ok", text: W.fast }));
+    }
+    var player = playWhenVisible(box, function (dt) { S.t += dt; if (cur) cur.step(S.t); });
+    app.appendChild(el("div", { class: "wgt__grid" }, [el("div", { class: "wgt__ctl" }, [sT.box, sideSeg.box, vSel.box, cSel.box]), el("div", { class: "wgt__out" }, [box, el("div", { class: "stats" }, [stF.box, stD.box]), bars, msg])]));
+    app.appendChild(how(W.how));
+    draw();
+  }
+
+  var BUILD = { vct: buildVct, harda: buildHarda, injektering: buildInj, atgang: buildAtg, vadarvad: buildVad, volym: buildVolym, klass: buildKlass, tidslinje: buildTid, pantheon: buildPantheon, armering: buildArm, hojd: buildHojd, tunnelcykel: buildTunCycle, tunnelval: buildTunVal, spruta: buildSpruta, illu: buildIllu, ugn: buildUgn, klinker: buildKlinker, karbonatisering: buildKarb, klimat: buildKlimat, frost: buildFrost, pump: buildPump, sten: buildSten, marsh: buildMarsh, ic: buildIc, blandning: buildMix, logg: buildLog, vctcalc: buildVctCalc, recept: buildRecept, tatning: buildTat, jet: buildJet, tork: buildTork };
+  if (window.__WIDGET_TEST) { window.__WIDGET_TEST.scene = scene; window.__WIDGET_TEST.tunnelScene = tunnelScene; window.__WIDGET_TEST.tbmScene = tbmScene; window.__WIDGET_TEST.romanScene = romanScene; window.__WIDGET_TEST.lcaScene = lcaScene; window.__WIDGET_TEST.frostScene = frostScene; window.__WIDGET_TEST.pumpParts = pumpParts; window.__WIDGET_TEST.rockParts = rockParts; window.__WIDGET_TEST.marshParts = marshParts; window.__WIDGET_TEST.art = art; window.__WIDGET_TEST.icScene = icScene; window.__WIDGET_TEST.ICM = ICM; window.__WIDGET_TEST.mixScene = mixScene; window.__WIDGET_TEST.simLog = simLog; window.__WIDGET_TEST.logChart = logChart; window.__WIDGET_TEST.T = T; window.__WIDGET_TEST.tatScene = tatScene; window.__WIDGET_TEST.jetScene = jetScene; window.__WIDGET_TEST.torkScene = torkScene; }
   [].forEach.call(document.querySelectorAll("[data-widget]"), function (box) {
     var app = box.querySelector(".wgt__app"), fn = BUILD[box.getAttribute("data-widget")];
     if (!app || !fn) return;

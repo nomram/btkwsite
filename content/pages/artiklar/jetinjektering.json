@@ -1,0 +1,265 @@
+{
+  "path": "/artiklar/jetinjektering",
+  "updated": "2026-11-23",
+  "template": "article",
+  "order": 10,
+  "published": true,
+  "date": "2026-11-23",
+  "tags": [
+    "injektering",
+    "jean-lutz",
+    "maskiner",
+    "grunder"
+  ],
+  "image": "/assets/img/jetinjektering.webp",
+  "hideIn": [
+    "es",
+    "no",
+    "lt",
+    "lv",
+    "et",
+    "ru"
+  ],
+  "i18n": {
+    "sv": {
+      "title": "Jetinjektering: så bildas en pelare av jordcement i marken",
+      "h1": "Jetinjektering: så bildas en pelare av jordcement i marken",
+      "seoTitle": "Jetinjektering (jet grouting) förklarat | Betongakuten",
+      "description": "Vad jetinjektering är, hur en pelare av jordcement bildas och när metoden används. Med en animation där du väljer metod och jordart.",
+      "summary": "En stråle med mycket högt tryck skär upp jorden och blandar den med cement. Så fungerar jetinjektering, och en rigg du själv kan köra.",
+      "keypoints": [
+        "En tunn stråle med mycket högt tryck skär upp jorden och blandar den med cementbruk.",
+        "Kvar blir en pelare av jordcement, ofta en halv till två meter i diameter.",
+        "Pelarna kan stå var för sig eller överlappa och bilda väggar och plattor under jord."
+      ],
+      "blocks": [
+        {
+          "type": "text",
+          "html": "Det låter nästan som science fiction. En borrstång går ner i marken, och på vägen upp skär en vätskestråle loss jorden runt omkring och blandar den med cement. Kvar blir en pelare av något som liknar betong. Metoden heter jetinjektering, på engelska jet grouting, och används där man behöver förstärka eller täta marken utan att gräva upp den."
+        },
+        {
+          "type": "widget",
+          "kind": "jet",
+          "title": "Gör en jetpelare",
+          "intro": "Välj metod och jordart, tryck på Starta och följ pelaren när den växer fram."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Så fungerar det"
+        },
+        {
+          "type": "text",
+          "html": "Först borras en stång ner till det djup där pelaren ska sluta. Längst ner sitter ett munstycke. När stången nått botten pumpas bruk ut genom munstycket med mycket högt tryck, ofta flera hundra bar. Stången roterar och dras långsamt uppåt, och strålen skär upp jorden runt omkring. Jorden blandas med bruket och blir jordcement. Överskottet, en blandning av jord, vatten och cement, kommer upp till ytan som returslam."
+        },
+        {
+          "type": "note",
+          "text": "Strålen lämnar munstycket i flera hundra kilometer i timmen. Den skär sönder både sand och fast lera."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Tre metoder"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Enkel metod: bara bruk. Enklast, och ger pelare på ungefär en halv till en knapp meter.",
+            "Dubbel metod: bruket omges av en mantel av tryckluft som gör att strålen når längre. Ger ofta en till en och en halv meter.",
+            "Trippel metod: en vattenstråle med luft skär upp jorden, och bruket fylls på under. Ger de största pelarna, upp till ett par meter."
+          ]
+        },
+        {
+          "type": "text",
+          "html": "Jordarten spelar stor roll. Sand och grus är lätt att skära upp och ger stora pelare, medan lera är segare och ger mindre. Därför gör man ofta provpelare innan arbetet börjar, och gräver fram dem för att se hur stora de blev."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Vad används det till?"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Förstärka grunden under befintliga hus, till exempel när man gräver alldeles intill.",
+            "Täta schakter med väggar och bottenplattor av överlappande pelare, så att grundvattnet hålls ute.",
+            "Stötta marken runt tunnlar och schakt innan man börjar gräva.",
+            "Laga och förstärka gamla konstruktioner, som kajer och dammar."
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Mätningar gör skillnaden"
+        },
+        {
+          "type": "text",
+          "html": "Eftersom allt sker under jord är mätningarna avgörande. En datalogger registrerar tryck, flöde, rotation och hur fort stången dras upp, och visar att varje pelare har gjorts som det var tänkt. Jean Lutz, som vi representerar, tillverkar loggrar, displayer och givare för just jetinjektering. Mer om principen finns i <a href=\"/artiklar/dataloggning-injektering\">dataloggning vid injektering</a>, och grunderna i <a href=\"/artiklar/vad-ar-injektering\">vad är injektering</a>."
+        },
+        {
+          "type": "formula",
+          "rows": [
+            [
+              "Volym per meter pelare",
+              "π × diameter² ÷ 4"
+            ],
+            [
+              "Pelarens volym",
+              "volym per meter × längd"
+            ],
+            [
+              "Lyfthastighet",
+              "pelarens längd ÷ tid"
+            ]
+          ],
+          "example": "En pelare med 1,2 meters diameter: 3,14 × 1,2 × 1,2 ÷ 4 ≈ 1,13 m³ per meter. Är den 8 meter lång blir det ungefär 9 m³ jordcement."
+        },
+        {
+          "type": "faq",
+          "title": "Vanliga frågor",
+          "items": [
+            {
+              "q": "Vad är jetinjektering?",
+              "a": "En metod där en stråle med mycket högt tryck skär upp jorden och blandar den med cementbruk, så att det bildas en pelare av jordcement."
+            },
+            {
+              "q": "Hur stor blir en jetpelare?",
+              "a": "Det beror på metod och jordart, ofta mellan en halv och två meter i diameter. Den verkliga storleken provas fram med provpelare."
+            },
+            {
+              "q": "Vad är skillnaden mot vanlig injektering?",
+              "a": "Vid vanlig injektering fyller bruket sprickor och hålrum som redan finns. Vid jetinjektering skär strålen upp jorden och blandar om den, så att det bildas ett nytt material."
+            }
+          ]
+        },
+        {
+          "type": "cta",
+          "title": "Mätning och styrning för jetinjektering",
+          "text": "Vi levererar dataloggare, displayer och givare från Jean Lutz för jetinjektering, injektering och borrning. Hör av dig, så berättar vi mer.",
+          "button": "Få offert",
+          "href": "/offert"
+        }
+      ]
+    },
+    "en": {
+      "title": "Jet grouting: how a column of soilcrete forms in the ground",
+      "h1": "Jet grouting: how a column of soilcrete forms in the ground",
+      "seoTitle": "Jet grouting explained | Betongakuten",
+      "description": "What jet grouting is, how a column of soilcrete forms and when the method is used. With an animation where you choose the method and the soil.",
+      "summary": "A jet at very high pressure cuts the soil and mixes it with cement. How jet grouting works, and a rig you can run yourself.",
+      "keypoints": [
+        "A thin jet at very high pressure cuts up the soil and mixes it with cement grout.",
+        "What is left is a column of soilcrete, often half a metre to two metres across.",
+        "Columns can stand alone or overlap to form walls and slabs underground."
+      ],
+      "blocks": [
+        {
+          "type": "text",
+          "html": "It sounds almost like science fiction. A drill rod goes down into the ground, and on the way up a jet of fluid cuts loose the soil around it and mixes it with cement. What is left is a column of something like concrete. The method is called jet grouting, and it is used where the ground needs to be strengthened or sealed without digging it up."
+        },
+        {
+          "type": "widget",
+          "kind": "jet",
+          "title": "Make a jet grouted column",
+          "intro": "Choose the method and the soil, press Start and watch the column grow."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "How it works"
+        },
+        {
+          "type": "text",
+          "html": "First a rod is drilled down to the depth where the column should end. At the bottom sits a nozzle. Once the rod reaches the bottom, grout is pumped out through the nozzle at very high pressure, often several hundred bar. The rod rotates and is pulled up slowly, and the jet cuts up the soil around it. The soil is mixed with the grout and becomes soilcrete. The surplus, a mix of soil, water and cement, comes up to the surface as spoil."
+        },
+        {
+          "type": "note",
+          "text": "The jet leaves the nozzle at several hundred kilometres an hour. It cuts through sand and stiff clay alike."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Three methods"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Single fluid: grout only. The simplest, giving columns of about half a metre to just under a metre.",
+            "Double fluid: the grout is wrapped in a shroud of compressed air that lets the jet reach further. Often gives one to one and a half metres.",
+            "Triple fluid: a water jet with air cuts the soil, and the grout is fed in below. Gives the largest columns, up to a couple of metres."
+          ]
+        },
+        {
+          "type": "text",
+          "html": "The soil makes a big difference. Sand and gravel are easy to cut and give large columns, while clay is tougher and gives smaller ones. That is why trial columns are often made before the work starts, and dug out to see how big they became."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "What is it used for?"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Strengthening the foundations under existing buildings, for example when digging right next to them.",
+            "Sealing excavations with walls and base slabs of overlapping columns, so the groundwater stays out.",
+            "Supporting the ground around tunnels and shafts before digging begins.",
+            "Repairing and strengthening old structures, such as quays and dams."
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Measuring makes the difference"
+        },
+        {
+          "type": "text",
+          "html": "Because everything happens underground, the measurements are crucial. A data logger records pressure, flow, rotation and how fast the rod is pulled up, and shows that each column was made as intended. Jean Lutz, whom we represent, makes loggers, displays and sensors for jet grouting in particular. More on the principle in <a href=\"/artiklar/dataloggning-injektering\">data logging during grouting</a>, and the basics in <a href=\"/artiklar/vad-ar-injektering\">what is grouting</a>."
+        },
+        {
+          "type": "formula",
+          "rows": [
+            [
+              "Volume per metre of column",
+              "π × diameter² ÷ 4"
+            ],
+            [
+              "Volume of the column",
+              "volume per metre × length"
+            ],
+            [
+              "Lifting speed",
+              "column length ÷ time"
+            ]
+          ],
+          "example": "A column 1.2 metres across: 3.14 × 1.2 × 1.2 ÷ 4 ≈ 1.13 m³ per metre. If it is 8 metres long, that is about 9 m³ of soilcrete."
+        },
+        {
+          "type": "faq",
+          "title": "Frequently asked questions",
+          "items": [
+            {
+              "q": "What is jet grouting?",
+              "a": "A method where a jet at very high pressure cuts up the soil and mixes it with cement grout, forming a column of soilcrete."
+            },
+            {
+              "q": "How big is a jet grouted column?",
+              "a": "It depends on the method and the soil, often between half a metre and two metres across. The real size is found with trial columns."
+            },
+            {
+              "q": "How is it different from ordinary grouting?",
+              "a": "In ordinary grouting the grout fills cracks and voids that already exist. In jet grouting the jet cuts up and remixes the soil, forming a new material."
+            }
+          ]
+        },
+        {
+          "type": "cta",
+          "title": "Measuring and control for jet grouting",
+          "text": "We supply data loggers, displays and sensors from Jean Lutz for jet grouting, grouting and drilling. Get in touch and we will tell you more.",
+          "button": "Get a quote",
+          "href": "/offert"
+        }
+      ]
+    }
+  }
+}

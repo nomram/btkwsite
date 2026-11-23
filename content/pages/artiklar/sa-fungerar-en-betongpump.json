@@ -50,6 +50,10 @@
           "html": "De flesta betongpumpar är kolvpumpar med två cylindrar. När den ena kolven trycker ut betong i röret drar den andra in ny betong från tratten. En ventil, ofta formad som ett S, växlar mellan cylindrarna vid varje slag, så att flödet blir så jämnt som möjligt. Kolvarna drivs av hydraulik."
         },
         {
+          "type": "note",
+          "text": "De största bompumparna har en arm på över 60 meter och når högre än ett tjugovåningshus."
+        },
+        {
           "type": "heading",
           "level": 2,
           "text": "Olika typer av pumpar"
@@ -87,6 +91,20 @@
         {
           "type": "text",
           "html": "Vill du veta vad som händer med betongen sedan? Läs om <a href=\"/artiklar/sprutbetong-torr-eller-vat\">sprutbetong: torr eller våt</a> och <a href=\"/artiklar/hur-mycket-betong-behover-jag\">hur mycket betong du behöver</a>."
+        },
+        {
+          "type": "formula",
+          "rows": [
+            [
+              "Volym per slag",
+              "π × (diameter ÷ 2)² × slaglängd"
+            ],
+            [
+              "Kapacitet",
+              "volym per slag × slag per minut × 60 × fyllnadsgrad"
+            ]
+          ],
+          "example": "Cylinder 230 mm och slaglängd 2,1 m: 3,14 × 0,115² × 2,1 ≈ 0,087 m³ per slag. Med 18 slag i minuten och 85 procent fyllnad: 0,087 × 18 × 60 × 0,85 ≈ 80 m³ i timmen."
         },
         {
           "type": "faq",
@@ -148,6 +166,10 @@
           "html": "Most concrete pumps are piston pumps with two cylinders. While one piston pushes concrete out into the pipe, the other draws new concrete in from the hopper. A valve, often shaped like an S, switches between the cylinders at every stroke so the flow is as even as possible. The pistons are driven by hydraulics."
         },
         {
+          "type": "note",
+          "text": "The largest boom pumps have a boom of over 60 metres and reach higher than a twenty-storey building."
+        },
+        {
           "type": "heading",
           "level": 2,
           "text": "Different types of pump"
@@ -185,6 +207,20 @@
         {
           "type": "text",
           "html": "Want to know what happens to the concrete next? Read about <a href=\"/artiklar/sprutbetong-torr-eller-vat\">shotcrete: dry or wet</a> and <a href=\"/artiklar/hur-mycket-betong-behover-jag\">how much concrete you need</a>."
+        },
+        {
+          "type": "formula",
+          "rows": [
+            [
+              "Volume per stroke",
+              "π × (diameter ÷ 2)² × stroke length"
+            ],
+            [
+              "Capacity",
+              "volume per stroke × strokes per minute × 60 × filling degree"
+            ]
+          ],
+          "example": "Cylinder 230 mm and stroke 2.1 m: 3.14 × 0.115² × 2.1 ≈ 0.087 m³ per stroke. At 18 strokes a minute and 85 percent filling: 0.087 × 18 × 60 × 0.85 ≈ 80 m³ an hour."
         },
         {
           "type": "faq",

@@ -952,6 +952,8 @@ function renderBlockInner(ctx, b) {
       const sizes = (b.sizes || []).map(String);
       return `<div class="sizesel" data-sizesel="${esc(sizes.join(","))}"><span class="sizesel__label"${editFld(ctx, "label")}>${esc(b.label || "")}</span><div class="sizesel__seg" role="radiogroup" aria-label="${esc(b.label || "")}"><button type="button" role="radio" aria-checked="true" data-k="-1">${esc(b.all || "Alla")}</button>${sizes.map((x, k) => `<button type="button" role="radio" aria-checked="false" data-k="${k}">${esc(x)}${b.unit ? " " + esc(b.unit) : ""}</button>`).join("")}</div></div>`;
     }
+    case "note": return `<aside class="anote"><p class="anote__t">${esc(b.label || ctx.ui.article_note || "Visste du?")}</p><p class="anote__x">${b.html ? localizeHtml(ctx, b.html) : esc(b.text || "")}</p></aside>`;
+    case "formula": return `<details class="aform"><summary><span class="aform__f" aria-hidden="true">ƒ</span><span>${esc(b.title || ctx.ui.article_formula || "Formeln, för den som vill räkna själv")}</span></summary><div class="aform__b">${(b.rows || []).map((r) => `<div class="aform__r"><span class="aform__l">${esc(r[0])}</span><code class="aform__x">${esc(r[1])}</code></div>`).join("")}${b.example ? `<p class="aform__ex">${esc(b.example)}</p>` : ""}${b.note ? `<p class="aform__n">${esc(b.note)}</p>` : ""}</div></details>`;
     case "html": return b.html || "";
     default: return "";
   }

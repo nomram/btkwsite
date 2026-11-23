@@ -1,0 +1,273 @@
+{
+  "path": "/artiklar/betong-torktid",
+  "updated": "2026-11-23",
+  "template": "article",
+  "order": 10,
+  "published": true,
+  "date": "2026-11-23",
+  "tags": [
+    "betong",
+    "harning",
+    "guide",
+    "gjutning"
+  ],
+  "image": "/assets/img/betong-torktid.webp",
+  "hideIn": [
+    "es",
+    "no",
+    "lt",
+    "lv",
+    "et",
+    "ru"
+  ],
+  "i18n": {
+    "sv": {
+      "title": "Betongens torktid: därför tar det tid innan du kan lägga golv",
+      "h1": "Betongens torktid: därför tar det tid innan du kan lägga golv",
+      "seoTitle": "Torktid för betong: vad styr den? | Betongakuten",
+      "description": "Varför betong tar lång tid att torka, vad som påverkar torktiden och hur fukten mäts innan golvet läggs. Med en simulering av tjocklek, vct och klimat.",
+      "summary": "Hårdnar på några veckor, torkar på några månader. Vad som styr torktiden, och en simulering där du jämför olika plattor.",
+      "keypoints": [
+        "Att betongen har hårdnat betyder inte att den är torr. Torkningen tar ofta flera månader.",
+        "Tjockleken betyder mest: dubbla tjockleken ger ungefär fyra gånger så lång torktid.",
+        "Mät fukten på rätt djup innan golvet läggs, och följ golvtillverkarens krav."
+      ],
+      "blocks": [
+        {
+          "type": "text",
+          "html": "Det är en klassisk överraskning på bygget. Plattan är gjuten, den är hård att gå på och ser torr ut. Ändå säger fuktmätningen att det är för tidigt att lägga golvet. Förklaringen är att betong hårdnar och torkar på olika sätt och i helt olika takt. Här reder vi ut varför, och vad du kan göra för att det ska gå fortare."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Hårdna och torka är inte samma sak"
+        },
+        {
+          "type": "text",
+          "html": "När betongen hårdnar reagerar cementet med vatten. Det går fort i början och är till stor del klart efter några veckor. Men allt vatten som hälldes i blandningen behövs inte till reaktionen. Resten sitter kvar i porerna och måste ta sig ut genom ytan, och det är en långsam resa. Vill du veta mer om den första delen, läs <a href=\"/artiklar/sa-hardnar-betong\">så hårdnar betong</a>."
+        },
+        {
+          "type": "widget",
+          "kind": "tork",
+          "title": "Jämför torktiden",
+          "intro": "Ändra tjocklek, vct och klimat och se hur torktiden förändras jämfört med en vanlig platta."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Det här styr torktiden"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Tjockleken. Fukten ska vandra hela vägen ut, och torktiden växer ungefär med kvadraten på tjockleken.",
+            "Hur många håll den torkar åt. En platta som kan torka både uppåt och nedåt går mycket fortare än en som ligger på mark eller plast.",
+            "Vattencementtalet. Betong med lågt vct har mindre överskottsvatten, och cementet förbrukar en stor del av det självt.",
+            "Klimatet. Värme och torr luft snabbar på. Kyla och fukt bromsar, och regn på plattan kan kosta veckor."
+          ]
+        },
+        {
+          "type": "note",
+          "text": "Ett vanligt misstag är att stänga in plattan för tidigt utan värme. I ett kallt och fuktigt hus kan torkningen nästan stå still."
+        },
+        {
+          "type": "formula",
+          "rows": [
+            [
+              "Torktid, ungefär",
+              "t ∝ (verksam tjocklek)²"
+            ],
+            [
+              "Verksam tjocklek, torkar åt ett håll",
+              "hela tjockleken"
+            ],
+            [
+              "Verksam tjocklek, torkar åt två håll",
+              "halva tjockleken"
+            ],
+            [
+              "Mätdjup, ett håll",
+              "40 % av tjockleken"
+            ],
+            [
+              "Mätdjup, två håll",
+              "20 % av tjockleken"
+            ]
+          ],
+          "example": "En platta på 150 mm som torkar uppåt jämfört med en på 100 mm: (150 ÷ 100)² = 2,25. Den tar alltså ungefär dubbelt så lång tid, och fukten mäts 60 mm ner."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Så mäts fukten"
+        },
+        {
+          "type": "text",
+          "html": "Fukten i betong mäts som relativ fuktighet, RF, i borrade hål på ett bestämt djup. Djupet är valt så att mätningen visar hur fuktigt det blir under golvet när det väl är lagt och fukten har fördelat sig. Golvtillverkaren anger hur hög RF golvet tål. Mätningen görs ofta av en certifierad fuktsakkunnig, och i Sverige följer man branschens system RBK."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Så går det fortare"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Beställ betong med lågt vct, så kallad snabbtorkande betong, när golvet ska läggas tidigt.",
+            "Skydda plattan mot regn och håll huset varmt och ventilerat, gärna med avfuktare.",
+            "Planera tidigt. Ett beräkningsprogram som TorkaS ger en prognos redan innan gjutningen."
+          ]
+        },
+        {
+          "type": "faq",
+          "title": "Vanliga frågor",
+          "items": [
+            {
+              "q": "Hur lång tid tar det för betong att torka?",
+              "a": "Det beror på tjocklek, vct och klimat. En vanlig platta kan behöva flera månader innan den är torr nog för ett tätt golv, medan snabbtorkande betong klarar det på betydligt kortare tid."
+            },
+            {
+              "q": "När kan man gå på betongen?",
+              "a": "Oftast efter ett till två dygn, beroende på temperaturen. Att man kan gå på den betyder inte att den är torr, bara att den har börjat hårdna."
+            },
+            {
+              "q": "Vad betyder RF i betong?",
+              "a": "Relativ fuktighet, alltså hur fuktig luften i betongens porer är. Den mäts i borrhål och jämförs med vad golvet tål."
+            }
+          ]
+        },
+        {
+          "type": "cta",
+          "title": "Frågor om ditt projekt?",
+          "text": "Vi hjälper gärna till med maskiner och material för gjutning, injektering och borrning. Hör av dig.",
+          "button": "Få offert",
+          "href": "/offert"
+        }
+      ]
+    },
+    "en": {
+      "title": "Concrete drying time: why it takes a while before the floor can go down",
+      "h1": "Concrete drying time: why it takes a while before the floor can go down",
+      "seoTitle": "Concrete drying time: what controls it? | Betongakuten",
+      "description": "Why concrete takes a long time to dry, what affects the drying time and how moisture is measured before flooring. With a simulation of thickness, w/c and climate.",
+      "summary": "Hardens in a few weeks, dries in a few months. What controls the drying time, and a simulation where you compare different slabs.",
+      "keypoints": [
+        "Concrete that has hardened is not necessarily dry. Drying often takes several months.",
+        "Thickness matters most: double the thickness gives roughly four times the drying time.",
+        "Measure the moisture at the right depth before flooring, and follow the flooring maker's requirements."
+      ],
+      "blocks": [
+        {
+          "type": "text",
+          "html": "It is a classic surprise on site. The slab is poured, it is hard enough to walk on and it looks dry. Yet the moisture measurement says it is too early to lay the floor. The reason is that concrete hardens and dries in different ways and at completely different speeds. Here we sort out why, and what you can do to speed it up."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Hardening and drying are not the same"
+        },
+        {
+          "type": "text",
+          "html": "When concrete hardens, the cement reacts with water. That happens quickly at first and is largely done after a few weeks. But not all the water that went into the mix is needed for the reaction. The rest stays in the pores and has to make its way out through the surface, and that is a slow journey. To read more about the first part, see <a href=\"/artiklar/sa-hardnar-betong\">how concrete hardens</a>."
+        },
+        {
+          "type": "widget",
+          "kind": "tork",
+          "title": "Compare drying times",
+          "intro": "Change the thickness, w/c and climate and see how the drying time changes compared with an ordinary slab."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "What controls the drying time"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Thickness. The moisture has to travel all the way out, and drying time grows roughly with the square of the thickness.",
+            "How many ways it dries. A slab that can dry both up and down is much faster than one lying on the ground or on plastic.",
+            "The water/cement ratio. Concrete with a low w/c has less surplus water, and the cement uses up a lot of it itself.",
+            "The climate. Warmth and dry air speed things up. Cold and damp slow them down, and rain on the slab can cost weeks."
+          ]
+        },
+        {
+          "type": "note",
+          "text": "A common mistake is to close in the slab too early without heating. In a cold, damp building drying can almost stop."
+        },
+        {
+          "type": "formula",
+          "rows": [
+            [
+              "Drying time, roughly",
+              "t ∝ (effective thickness)²"
+            ],
+            [
+              "Effective thickness, drying one way",
+              "the full thickness"
+            ],
+            [
+              "Effective thickness, drying both ways",
+              "half the thickness"
+            ],
+            [
+              "Measuring depth, one way",
+              "40 % of the thickness"
+            ],
+            [
+              "Measuring depth, both ways",
+              "20 % of the thickness"
+            ]
+          ],
+          "example": "A 150 mm slab drying upwards compared with a 100 mm one: (150 ÷ 100)² = 2.25. So it takes roughly twice as long, and the moisture is measured 60 mm down."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "How moisture is measured"
+        },
+        {
+          "type": "text",
+          "html": "Moisture in concrete is measured as relative humidity, RH, in drilled holes at a set depth. The depth is chosen so the measurement shows how damp it will be under the floor once it is laid and the moisture has spread out. The flooring maker states how high an RH the floor can take. The measurement is often done by a certified moisture specialist, and in Sweden the industry follows the RBK system."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "How to speed it up"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Order concrete with a low w/c, so-called fast-drying concrete, when the floor is to go down early.",
+            "Protect the slab from rain and keep the building warm and ventilated, ideally with a dehumidifier.",
+            "Plan early. Calculation software such as TorkaS gives a forecast before the slab is even poured."
+          ]
+        },
+        {
+          "type": "faq",
+          "title": "Frequently asked questions",
+          "items": [
+            {
+              "q": "How long does concrete take to dry?",
+              "a": "It depends on thickness, w/c and climate. An ordinary slab can need several months before it is dry enough for a tight floor covering, while fast-drying concrete gets there in much less time."
+            },
+            {
+              "q": "When can you walk on concrete?",
+              "a": "Usually after one to two days, depending on the temperature. Being able to walk on it does not mean it is dry, only that it has started to harden."
+            },
+            {
+              "q": "What does RH mean for concrete?",
+              "a": "Relative humidity, meaning how humid the air in the pores of the concrete is. It is measured in drilled holes and compared with what the floor can take."
+            }
+          ]
+        },
+        {
+          "type": "cta",
+          "title": "Questions about your project?",
+          "text": "We are happy to help with machines and materials for casting, grouting and drilling. Get in touch.",
+          "button": "Get a quote",
+          "href": "/offert"
+        }
+      ]
+    }
+  }
+}

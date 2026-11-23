@@ -48,6 +48,10 @@
           "html": "Under de första dygnen växer hållfastheten snabbt. Efter en vecka har normal betong vid 20 grader ofta nått omkring tre fjärdedelar av sin 28-dygnsstyrka. Därefter fortsätter den att öka, men allt långsammare. Standardprovningen sker efter 28 dygn, men betongen blir fortfarande starkare därefter."
         },
         {
+          "type": "note",
+          "text": "Betong fortsätter att bli starkare i åratal. Efter ett år kan den vara ungefär 20 procent starkare än efter 28 dygn."
+        },
+        {
           "type": "heading",
           "level": 2,
           "text": "Temperaturen styr tempot"
@@ -64,6 +68,32 @@
         {
           "type": "text",
           "html": "Eftersom betongen behöver vatten för att hårdna får ytan inte torka ut för tidigt. Vanliga åtgärder är att täcka med plast eller fuktiga mattor, vattna eller använda härdningsmedel. Vilken cement du använder spelar också roll: läs om <a href=\"/artiklar/cementtyper-cem-i-cem-ii\">cementtyper och bokstäverna N och R</a>."
+        },
+        {
+          "type": "text",
+          "html": "Att betongen har hårdnat betyder inte att den är torr. Skillnaden går vi igenom i <a href=\"/artiklar/betong-torktid\">betongens torktid</a>."
+        },
+        {
+          "type": "formula",
+          "rows": [
+            [
+              "Hållfasthet efter t dygn",
+              "f(t) = f₂₈ × e^(s × (1 − √(28 ÷ t)))"
+            ],
+            [
+              "s för snabbt cement (R)",
+              "0,20"
+            ],
+            [
+              "s för normalt cement (N)",
+              "0,25"
+            ],
+            [
+              "s för långsamt cement",
+              "0,38"
+            ]
+          ],
+          "example": "Efter 7 dygn med normalt cement: e^(0,25 × (1 − √4)) = e^(−0,25) ≈ 0,78, alltså 78 procent av 28-dygnsstyrkan."
         },
         {
           "type": "faq",
@@ -124,6 +154,10 @@
           "html": "Strength grows quickly during the first days. After a week, normal concrete at 20 degrees has often reached about three quarters of its 28-day strength. After that it keeps rising, but more and more slowly. The standard test is made after 28 days, but the concrete keeps getting stronger afterwards."
         },
         {
+          "type": "note",
+          "text": "Concrete keeps getting stronger for years. After one year it can be about 20 percent stronger than after 28 days."
+        },
+        {
           "type": "heading",
           "level": 2,
           "text": "Temperature sets the pace"
@@ -140,6 +174,32 @@
         {
           "type": "text",
           "html": "Because the concrete needs water to harden, the surface must not dry out too early. Common measures are covering with plastic or damp mats, watering or using a curing compound. Which cement you use also matters: read about <a href=\"/artiklar/cementtyper-cem-i-cem-ii\">cement types and the letters N and R</a>."
+        },
+        {
+          "type": "text",
+          "html": "Concrete that has hardened is not necessarily dry. We explain the difference in <a href=\"/artiklar/betong-torktid\">concrete drying time</a>."
+        },
+        {
+          "type": "formula",
+          "rows": [
+            [
+              "Strength after t days",
+              "f(t) = f₂₈ × e^(s × (1 − √(28 ÷ t)))"
+            ],
+            [
+              "s for rapid cement (R)",
+              "0.20"
+            ],
+            [
+              "s for normal cement (N)",
+              "0.25"
+            ],
+            [
+              "s for slow cement",
+              "0.38"
+            ]
+          ],
+          "example": "After 7 days with normal cement: e^(0.25 × (1 − √4)) = e^(−0.25) ≈ 0.78, so 78 percent of the 28-day strength."
         },
         {
           "type": "faq",

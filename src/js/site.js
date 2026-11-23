@@ -1909,7 +1909,7 @@
   });
 })();
 
-// ---------- live page head: drifting dust on its own canvas that reacts to scrolling (nothing is loaded, it pauses out of view) ----------
+// ---------- live page head: a quiet graphite field with formwork tie points; a few small orange squares (the logo's square) light up and fade, one faint warm glow drifts, scrolling adds a little parallax. Nothing is loaded and it pauses out of view ----------
 (function () {
   var heads = document.querySelectorAll(".page-head:not(.page-head--center)");
   if (!heads.length || !window.HTMLCanvasElement) return;
@@ -1917,57 +1917,50 @@
   [].forEach.call(heads, function (head) {
     var cv = document.createElement("canvas"); cv.className = "page-head__fx"; cv.setAttribute("aria-hidden", "true"); head.insertBefore(cv, head.firstChild);
     var ctx = cv.getContext("2d"); if (!ctx) return;
-    var dpr = Math.min(2, window.devicePixelRatio || 1), W = 0, H = 0, P = [], B = [], on = true, last = 0, raf = 0, lastY = window.scrollY, gust = 0;
-    var COLS = [[243, 125, 3], [255, 150, 40], [230, 110, 10], [255, 176, 92]];
-    function blob(any) { var r = 160 + Math.random() * Math.max(180, Math.max(W, H) * 0.42); return { bx: Math.random() * W, x: 0, y: any ? Math.random() * (H + r) : H + r, r: r, v: 0.012 + Math.random() * 0.03, ph: Math.random() * 6.283, amp: 20 + Math.random() * 60, a: 0.12 + Math.random() * 0.16, c: COLS[Math.floor(Math.random() * COLS.length)], s: 0.0004 + Math.random() * 0.0006 }; }
-    function mk(any) { return { x: Math.random() * W, y: any ? Math.random() * H : H + 4, r: 0.25 + Math.pow(Math.random(), 3) * 1.15, vx: -0.05 + Math.random() * 0.2, vy: -(0.04 + Math.random() * 0.2), a: 0.05 + Math.random() * 0.22, z: 0.3 + Math.random() * 0.9, ph: Math.random() * 6.283, hot: Math.random() < 0.05 }; }
+    var dpr = Math.min(2, window.devicePixelRatio || 1), W = 0, H = 0, G = 28, cols = 0, rows = 0, lit = [], on = true, last = 0, raf = 0, T = 0, sy = 0;
+    function ease(x) { return x < 0 ? 0 : x > 1 ? 1 : x * x * (3 - 2 * x); }
+    // a lit square lives on a grid node in the right-hand part, fades in, holds and fades out over 5 to 9 seconds
+    function spark(any) { var c = Math.floor(cols * (0.62 + Math.random() * 0.36)), r = Math.floor(Math.random() * rows); return { c: c, r: r, t: any ? Math.random() : 0, d: 5000 + Math.random() * 4000, s: Math.random() < 0.25 ? 6 : 4 }; }
     function size() {
       var r = head.getBoundingClientRect(); W = r.width; H = r.height;
       cv.width = Math.round(W * dpr); cv.height = Math.round(H * dpr); cv.style.width = W + "px"; cv.style.height = H + "px"; ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
-      var n = Math.round(Math.min(110, W * H / 7000)); while (P.length < n) P.push(mk(true)); P.length = n;
-      var nb = Math.max(4, Math.min(8, Math.round(W / 220))); while (B.length < nb) B.push(blob(true)); B.length = nb;
+      G = W < 640 ? 22 : 28; cols = Math.ceil(W / G) + 1; rows = Math.ceil(H / G) + 2;
+      var n = Math.max(3, Math.min(9, Math.round(W / 170))); while (lit.length < n) lit.push(spark(true)); lit.length = n;
+    }
+    function draw() {
+      ctx.clearRect(0, 0, W, H);
+      // one faint warm glow, drifting very slowly in the upper right
+      var gx = W * (0.8 + 0.05 * Math.sin(T / 9000)), gyy = H * (0.1 + 0.12 * Math.cos(T / 11000)) - sy * 0.15, gr = Math.max(W, H) * 0.55;
+      var g = ctx.createRadialGradient(gx, gyy, 0, gx, gyy, gr);
+      g.addColorStop(0, "rgba(243,125,3,0.13)"); g.addColorStop(0.45, "rgba(243,125,3,0.05)"); g.addColorStop(1, "rgba(243,125,3,0)");
+      ctx.fillStyle = g; ctx.fillRect(0, 0, W, H);
+      // formwork tie points: quiet behind the text on the left, a little clearer to the right
+      var off = (sy * 0.12) % G;
+      for (var c = 0; c < cols; c++) {
+        var x = c * G + G / 2, fx = ease((x / W - 0.25) / 0.6);
+        if (fx <= 0.02) continue;
+        ctx.fillStyle = "rgba(255,255,255," + (0.11 * fx).toFixed(3) + ")";
+        for (var r = -1; r < rows; r++) { var y = r * G + G / 2 - off; ctx.fillRect(x - 0.75, y - 0.75, 1.5, 1.5); }
+      }
+      // the lit squares
+      for (var i = 0; i < lit.length; i++) {
+        var s = lit[i], p = s.t, a = p < 0.3 ? ease(p / 0.3) : p > 0.7 ? ease((1 - p) / 0.3) : 1;
+        var lx = s.c * G + G / 2, ly = s.r * G + G / 2 - off;
+        ctx.fillStyle = "rgba(243,125,3," + (0.18 * a).toFixed(3) + ")"; ctx.fillRect(lx - s.s * 1.6, ly - s.s * 1.6, s.s * 3.2, s.s * 3.2);
+        ctx.fillStyle = "rgba(243,125,3," + (0.9 * a).toFixed(3) + ")"; ctx.fillRect(lx - s.s / 2, ly - s.s / 2, s.s, s.s);
+      }
     }
     function frame(t) {
-      var dt = Math.min(48, t - (last || t)) || 16; last = t;
-      var y = window.scrollY, dy = y - lastY; lastY = y; gust = gust * 0.9 + dy * 0.06;
-      ctx.clearRect(0, 0, W, H);
-      // lava lamp: big soft warm blobs that rise slowly, wobble and glow where they overlap; scrolling stirs them
-      ctx.globalCompositeOperation = "lighter";
-      for (var b = 0; b < B.length; b++) {
-        var o = B[b];
-        o.ph += dt * o.s;
-        o.y -= (o.v + Math.abs(gust) * 0.012) * dt;
-        if (o.y < -o.r) { var nbl = blob(false); nbl.y = H + nbl.r; B[b] = o = nbl; }
-        o.x = o.bx + Math.sin(o.ph) * o.amp + gust * 2;
-        var rr = o.r * (0.92 + 0.08 * Math.sin(o.ph * 1.7)), oy = o.y + y * 0.18, g = ctx.createRadialGradient(o.x, oy, 0, o.x, oy, rr);
-        g.addColorStop(0, "rgba(" + o.c[0] + "," + o.c[1] + "," + o.c[2] + "," + o.a + ")");
-        g.addColorStop(0.3, "rgba(" + o.c[0] + "," + o.c[1] + "," + o.c[2] + "," + (o.a * 0.72).toFixed(3) + ")");
-        g.addColorStop(0.6, "rgba(" + o.c[0] + "," + o.c[1] + "," + o.c[2] + "," + (o.a * 0.3).toFixed(3) + ")");
-        g.addColorStop(0.82, "rgba(" + o.c[0] + "," + o.c[1] + "," + o.c[2] + "," + (o.a * 0.08).toFixed(3) + ")");
-        g.addColorStop(1, "rgba(" + o.c[0] + "," + o.c[1] + "," + o.c[2] + ",0)");
-        ctx.fillStyle = g; ctx.beginPath(); ctx.ellipse(o.x, oy, rr, rr * (0.86 + 0.14 * Math.cos(o.ph * 1.3)), 0, 0, 6.283); ctx.fill();
-      }
-      ctx.globalCompositeOperation = "source-over";
-      for (var i = 0; i < P.length; i++) {
-        var p = P[i];
-        p.ph += dt * 0.0012;
-        p.x += (p.vx + Math.sin(p.ph) * 0.04 + gust * 0.05 * p.z) * dt * 0.06;
-        p.y += (p.vy - Math.abs(gust) * 0.03 * p.z) * dt * 0.06;
-        if (p.y < -6) { p.y = H + 6; p.x = Math.random() * W; }
-        if (p.x < -6) p.x = W + 6; else if (p.x > W + 6) p.x = -6;
-        var yy = ((p.y + y * 0.35 * p.z) % (H + 12) + H + 12) % (H + 12) - 6;
-        ctx.globalAlpha = p.a * (0.55 + 0.45 * Math.sin(p.ph * 1.7));
-        ctx.fillStyle = p.hot ? "#f7a14a" : "#f3e9dc";
-        ctx.beginPath(); ctx.arc(p.x, yy, p.r * (0.7 + p.z * 0.4), 0, 6.283); ctx.fill();
-      }
-      ctx.globalAlpha = 1;
+      var dt = Math.min(48, t - (last || t)) || 16; last = t; T += dt; sy = window.scrollY;
+      for (var i = 0; i < lit.length; i++) { lit[i].t += dt / lit[i].d; if (lit[i].t >= 1) lit[i] = spark(false); }
+      draw();
       if (on && !reduce) raf = requestAnimationFrame(frame);
     }
     size();
-    if (reduce) frame(16);
+    if (reduce) { lit.forEach(function (s) { s.t = 0.5; }); draw(); }
     else if ("IntersectionObserver" in window) new IntersectionObserver(function (e) { on = e[0].isIntersecting; cancelAnimationFrame(raf); if (on) { last = 0; raf = requestAnimationFrame(frame); } }).observe(head);
     else raf = requestAnimationFrame(frame);
-    window.addEventListener("resize", function () { size(); if (reduce) frame(16); });
+    window.addEventListener("resize", function () { size(); draw(); });
   });
 })();
 

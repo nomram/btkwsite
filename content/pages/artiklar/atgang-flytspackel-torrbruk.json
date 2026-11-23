@@ -53,6 +53,10 @@
           ]
         },
         {
+          "type": "note",
+          "text": "Ett ton flytspackel räcker till ungefär 60 kvadratmeter golv med 10 millimeters tjocklek."
+        },
+        {
           "type": "heading",
           "level": 2,
           "text": "Säck, storsäck eller silo?"
@@ -82,6 +86,24 @@
             "Håll koll på temperaturen. Många material kräver minst omkring +10 grader i både luft och underlag, se databladet.",
             "Blanda med rätt mängd vatten. För mycket vatten ger ett svagare och mer sprickbenäget golv, precis som i betong."
           ]
+        },
+        {
+          "type": "formula",
+          "rows": [
+            [
+              "Åtgång",
+              "yta (m²) × tjocklek (mm) × åtgång (kg per m² och mm)"
+            ],
+            [
+              "Med marginal",
+              "åtgång × (1 + spill i procent ÷ 100)"
+            ],
+            [
+              "Säckar",
+              "kilo ÷ 25, avrundat uppåt"
+            ]
+          ],
+          "example": "40 m² × 10 mm × 1,7 = 680 kg. Med 5 procent marginal: 680 × 1,05 = 714 kg, alltså 29 säckar."
         },
         {
           "type": "faq",
@@ -146,6 +168,10 @@
           ]
         },
         {
+          "type": "note",
+          "text": "One tonne of self-levelling compound covers about 60 square metres of floor at 10 millimetres thick."
+        },
+        {
           "type": "heading",
           "level": 2,
           "text": "Bag, big bag or silo?"
@@ -175,6 +201,24 @@
             "Watch the temperature. Many products need at least around +10 °C in both air and substrate, see the data sheet.",
             "Mix with the right amount of water. Too much water gives a weaker floor that cracks more easily, just as with concrete."
           ]
+        },
+        {
+          "type": "formula",
+          "rows": [
+            [
+              "Consumption",
+              "area (m²) × thickness (mm) × usage (kg per m² and mm)"
+            ],
+            [
+              "With margin",
+              "consumption × (1 + waste in percent ÷ 100)"
+            ],
+            [
+              "Bags",
+              "kilos ÷ 25, rounded up"
+            ]
+          ],
+          "example": "40 m² × 10 mm × 1.7 = 680 kg. With a 5 percent margin: 680 × 1.05 = 714 kg, or 29 bags."
         },
         {
           "type": "faq",

@@ -1,0 +1,303 @@
+{
+  "path": "/artiklar/blanda-betong-sjalv",
+  "updated": "2026-11-23",
+  "template": "article",
+  "order": 10,
+  "published": true,
+  "date": "2026-11-23",
+  "tags": [
+    "betong",
+    "guide",
+    "gjutning",
+    "vct"
+  ],
+  "image": "/assets/img/blanda-betong.webp",
+  "hideIn": [
+    "es",
+    "no",
+    "lt",
+    "lv",
+    "et",
+    "ru"
+  ],
+  "i18n": {
+    "sv": {
+      "title": "Blanda betong själv: recept, proportioner och hur mycket vatten",
+      "h1": "Blanda betong själv: recept, proportioner och hur mycket vatten",
+      "seoTitle": "Blanda betong själv: recept och blandningsförhållande | Betongakuten",
+      "description": "Så blandar du betong själv: blandningsförhållandet 1:2:3, hur mycket cement, sand, sten och vatten du behöver, och en räknare som räknar i hinkar.",
+      "summary": "Ett gammalt hederligt recept, räknat i hinkar. Så blandar du betong som håller, och en räknare som säger hur mycket du behöver.",
+      "keypoints": [
+        "Ett vanligt recept är 1 del cement, 2 delar sand och 3 delar sten, mätt med samma hink.",
+        "Vattnet avgör kvaliteten. Ta så lite som möjligt, ungefär hälften av cementets vikt.",
+        "Behöver du mer än ungefär en kubikmeter lönar det sig nästan alltid att beställa färdig betong."
+      ],
+      "blocks": [
+        {
+          "type": "text",
+          "html": "Ibland är det inte värt att ringa efter en betongbil. Ett par stolpfundament, ett trappsteg eller en liten gjutning vid altanen klarar du med en blandare, några säckar cement och en hink. Det svåra är inte att blanda. Det svåra är att få rätt proportioner och att låta bli att hälla i för mycket vatten. Här är receptet, och en räknare som gör jobbet åt dig."
+        },
+        {
+          "type": "widget",
+          "kind": "recept",
+          "title": "Räkna ut din blandning",
+          "intro": "Välj vad du ska gjuta och hur mycket. Räknaren säger hur många hinkar av varje sak du behöver."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Receptet: 1 + 2 + 3"
+        },
+        {
+          "type": "text",
+          "html": "Det klassiska receptet för en stark betong är en del cement, två delar sand och tre delar sten. Delarna mäts i volym, alltså med samma hink för allt. Ta en vanlig tiolitershink och mät i strukna hinkar, så blir det likadant från sats till sats."
+        },
+        {
+          "type": "list",
+          "items": [
+            "Cement: vanligt byggcement, till exempel i säckar à 25 kilo.",
+            "Sand: tvättad sand med korn upp till ungefär 8 millimeter.",
+            "Sten: singel eller makadam, ungefär 8 till 16 millimeter. Till tunna gjutningar tar du mindre sten.",
+            "Vatten: rent vatten, och mindre än du tror."
+          ]
+        },
+        {
+          "type": "note",
+          "text": "En kubikmeter betong väger ungefär 2,4 ton. Det är lika mycket som en stor bil, i en kub som är en meter åt varje håll."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Vattnet är det viktigaste"
+        },
+        {
+          "type": "text",
+          "html": "Det är frestande att hälla i lite extra vatten så att betongen blir lättare att jobba med. Men varje liter extra gör den svagare och mer porös. Sikta på att vattnet ska väga ungefär hälften av cementet: till en säck cement på 25 kilo går det ungefär 12 till 13 liter vatten. Sanden är nästan alltid lite fuktig, så börja med mindre och fyll på lite i taget. Vill du förstå varför vattnet betyder så mycket, läs om <a href=\"/artiklar/vattencementtal-vct\">vattencementtal</a>."
+        },
+        {
+          "type": "formula",
+          "rows": [
+            [
+              "Torrt material per liter betong",
+              "ungefär 1,5 liter"
+            ],
+            [
+              "Cement per liter betong",
+              "1,5 ÷ (1 + 2 + 3) = 0,25 liter, ungefär 0,33 kg"
+            ],
+            [
+              "Vatten",
+              "cementets vikt × vct, till exempel 25 × 0,5 = 12,5 liter"
+            ],
+            [
+              "Volym",
+              "längd × bredd × höjd i meter = kubikmeter"
+            ]
+          ],
+          "example": "Ett stolpfundament i ett rör med 20 centimeters diameter och en meters djup: 3,14 × 0,1 × 0,1 × 1 = 0,031 m³, alltså 31 liter. Det blir ungefär 10 kilo cement, en knapp halv säck."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Så blandar du"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Häll i ungefär hälften av vattnet i blandaren.",
+            "Tillsätt stenen. Den skrubbar trumman ren och gör det lättare att få in resten.",
+            "Häll i cement och sand, gärna växelvis.",
+            "Fyll på resten av vattnet lite i taget tills betongen är jämn. Den ska vara trögflytande, ungefär som tjock gröt, inte rinnig.",
+            "Blanda i tre till fem minuter och använd betongen inom en timme."
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Efter gjutningen"
+        },
+        {
+          "type": "text",
+          "html": "Betong torkar inte, den hårdnar genom att reagera med vatten. Därför ska den hållas fuktig de första dagarna: täck med plast eller vattna försiktigt. Under +5 grader går det mycket långsamt, och nygjuten betong får inte frysa. Läs mer i <a href=\"/artiklar/sa-hardnar-betong\">så hårdnar betong</a> och <a href=\"/artiklar/gjuta-betong-pa-vintern\">gjuta betong på vintern</a>."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "När ska du beställa i stället?"
+        },
+        {
+          "type": "text",
+          "html": "En vanlig byggblandare ger kanske 80 till 100 liter betong per sats. En kubikmeter blir då tio satser och drygt 13 säckar cement, och då är det dags att ringa en betongstation. Färdig betong blir jämnare, och du kan beställa precis den hållfasthetsklass du behöver. Räkna ut volymen i <a href=\"/artiklar/hur-mycket-betong-behover-jag\">hur mycket betong behöver jag</a>."
+        },
+        {
+          "type": "faq",
+          "title": "Vanliga frågor",
+          "items": [
+            {
+              "q": "Vilket blandningsförhållande ska betong ha?",
+              "a": "Ett vanligt recept är 1 del cement, 2 delar sand och 3 delar sten, mätt i volym. För en lite magrare allroundbetong går det att ta 1 : 2,5 : 3,5."
+            },
+            {
+              "q": "Hur mycket vatten ska det vara i betong?",
+              "a": "Ungefär hälften av cementets vikt, alltså 12 till 13 liter till en säck på 25 kilo. Sanden innehåller ofta fukt, så börja med mindre."
+            },
+            {
+              "q": "Hur mycket betong blir det av en säck cement?",
+              "a": "Med receptet 1 : 2 : 3 blir det ungefär 75 liter betong av en säck cement på 25 kilo."
+            },
+            {
+              "q": "Kan man använda färdigblandad torrbetong?",
+              "a": "Ja. Säckar med färdigblandad betong är enkla för små jobb, eftersom proportionerna redan är rätt. Följ vattenmängden på säcken."
+            }
+          ]
+        },
+        {
+          "type": "cta",
+          "title": "Behöver du blandare eller material?",
+          "text": "Vi har blandare, pumpar och material för både små och stora jobb. Berätta vad du ska gjuta, så hjälper vi dig.",
+          "button": "Få offert",
+          "href": "/offert"
+        }
+      ]
+    },
+    "en": {
+      "title": "Mixing concrete yourself: recipe, proportions and how much water",
+      "h1": "Mixing concrete yourself: recipe, proportions and how much water",
+      "seoTitle": "Mixing concrete yourself: recipe and mix ratio | Betongakuten",
+      "description": "How to mix concrete yourself: the 1:2:3 mix ratio, how much cement, sand, stone and water you need, and a calculator that counts in buckets.",
+      "summary": "A good old recipe, counted in buckets. How to mix concrete that lasts, and a calculator that tells you how much you need.",
+      "keypoints": [
+        "A common recipe is 1 part cement, 2 parts sand and 3 parts stone, measured with the same bucket.",
+        "The water decides the quality. Use as little as you can, roughly half the weight of the cement.",
+        "If you need more than about one cubic metre, ordering ready-mixed concrete almost always pays off."
+      ],
+      "blocks": [
+        {
+          "type": "text",
+          "html": "Sometimes it is not worth calling for a mixer truck. A couple of post footings, a step or a small pour by the deck can be done with a mixer, a few bags of cement and a bucket. Mixing is not the hard part. The hard part is getting the proportions right and not adding too much water. Here is the recipe, and a calculator that does the sums for you."
+        },
+        {
+          "type": "widget",
+          "kind": "recept",
+          "title": "Work out your mix",
+          "intro": "Choose what you are casting and how much. The calculator tells you how many buckets of each thing you need."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "The recipe: 1 + 2 + 3"
+        },
+        {
+          "type": "text",
+          "html": "The classic recipe for strong concrete is one part cement, two parts sand and three parts stone. The parts are measured by volume, so you use the same bucket for everything. Take an ordinary ten litre bucket and measure level buckets, and every batch comes out the same."
+        },
+        {
+          "type": "list",
+          "items": [
+            "Cement: ordinary building cement, for example in 25 kilo bags.",
+            "Sand: washed sand with grains up to about 8 millimetres.",
+            "Stone: gravel or crushed stone, about 8 to 16 millimetres. Use smaller stone for thin pours.",
+            "Water: clean water, and less than you think."
+          ]
+        },
+        {
+          "type": "note",
+          "text": "One cubic metre of concrete weighs about 2.4 tonnes. That is as much as a big car, in a cube one metre each way."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Water matters most"
+        },
+        {
+          "type": "text",
+          "html": "It is tempting to add a little extra water so the concrete is easier to work. But every extra litre makes it weaker and more porous. Aim for the water to weigh about half as much as the cement: a 25 kilo bag of cement needs roughly 12 to 13 litres of water. The sand is almost always a little damp, so start with less and add a little at a time. If you want to know why water matters so much, read about the <a href=\"/artiklar/vattencementtal-vct\">water/cement ratio</a>."
+        },
+        {
+          "type": "formula",
+          "rows": [
+            [
+              "Dry material per litre of concrete",
+              "about 1.5 litres"
+            ],
+            [
+              "Cement per litre of concrete",
+              "1.5 ÷ (1 + 2 + 3) = 0.25 litres, about 0.33 kg"
+            ],
+            [
+              "Water",
+              "weight of cement × w/c, for example 25 × 0.5 = 12.5 litres"
+            ],
+            [
+              "Volume",
+              "length × width × height in metres = cubic metres"
+            ]
+          ],
+          "example": "A post footing in a tube 20 centimetres across and one metre deep: 3.14 × 0.1 × 0.1 × 1 = 0.031 m³, or 31 litres. That takes about 10 kilos of cement, just under half a bag."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "How to mix"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Pour about half of the water into the mixer.",
+            "Add the stone. It scrubs the drum clean and makes it easier to get the rest in.",
+            "Add the cement and sand, ideally a bit of each in turn.",
+            "Add the rest of the water a little at a time until the concrete is even. It should be stiff, like thick porridge, not runny.",
+            "Mix for three to five minutes and use the concrete within an hour."
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "After the pour"
+        },
+        {
+          "type": "text",
+          "html": "Concrete does not dry, it hardens by reacting with water. That is why it should be kept moist for the first few days: cover it with plastic or water it gently. Below +5 °C it goes very slowly, and fresh concrete must not freeze. Read more in <a href=\"/artiklar/sa-hardnar-betong\">how concrete hardens</a> and <a href=\"/artiklar/gjuta-betong-pa-vintern\">pouring concrete in winter</a>."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "When should you order instead?"
+        },
+        {
+          "type": "text",
+          "html": "An ordinary site mixer gives maybe 80 to 100 litres of concrete per batch. One cubic metre is then ten batches and just over 13 bags of cement, and it is time to call a concrete plant. Ready-mixed concrete is more even, and you can order exactly the strength class you need. Work out the volume in <a href=\"/artiklar/hur-mycket-betong-behover-jag\">how much concrete do I need</a>."
+        },
+        {
+          "type": "faq",
+          "title": "Frequently asked questions",
+          "items": [
+            {
+              "q": "What mix ratio should concrete have?",
+              "a": "A common recipe is 1 part cement, 2 parts sand and 3 parts stone, by volume. For a slightly leaner general-purpose concrete you can use 1 : 2.5 : 3.5."
+            },
+            {
+              "q": "How much water goes into concrete?",
+              "a": "About half the weight of the cement, so 12 to 13 litres for a 25 kilo bag. Sand often contains moisture, so start with less."
+            },
+            {
+              "q": "How much concrete does one bag of cement make?",
+              "a": "With the 1 : 2 : 3 recipe, a 25 kilo bag of cement makes about 75 litres of concrete."
+            },
+            {
+              "q": "Can I use pre-mixed dry concrete?",
+              "a": "Yes. Bags of pre-mixed concrete are easy for small jobs, because the proportions are already right. Follow the amount of water on the bag."
+            }
+          ]
+        },
+        {
+          "type": "cta",
+          "title": "Need a mixer or materials?",
+          "text": "We have mixers, pumps and materials for jobs big and small. Tell us what you are casting and we will help.",
+          "button": "Get a quote",
+          "href": "/offert"
+        }
+      ]
+    }
+  }
+}

@@ -58,6 +58,10 @@
           "html": "Kuben visar en högre siffra än cylindern, eftersom provkroppens form påverkar hur den spricker. Äldre svenska beteckningar som K30 anger kubhållfastheten och motsvarar ungefär C25/30."
         },
         {
+          "type": "note",
+          "text": "Burj Khalifa i Dubai är byggd med betong på upp till omkring 80 MPa i de nedre delarna, ungefär tre gånger så stark som vanlig husbetong."
+        },
+        {
           "type": "heading",
           "level": 2,
           "text": "Vad är en megapascal?"
@@ -74,6 +78,24 @@
         {
           "type": "text",
           "html": "Vilken klass som behövs beror på konstruktionen. Utomhus och i fuktig eller frostig miljö ställs ofta krav på både klass och ett lågt <a href=\"/artiklar/vattencementtal-vct\">vattencementtal</a>, och hur fort betongen når sin styrka beror på <a href=\"/artiklar/sa-hardnar-betong\">härdningen</a>. Konstruktören anger vilken klass som gäller."
+        },
+        {
+          "type": "formula",
+          "rows": [
+            [
+              "Tryck",
+              "1 MPa = 1 N per mm²"
+            ],
+            [
+              "Kraft",
+              "tryck × yta"
+            ],
+            [
+              "Massa som ger kraften",
+              "kraft ÷ 9,81"
+            ]
+          ],
+          "example": "En kub med 10 centimeters sida och 37 MPa: 37 × 10 000 mm² = 370 000 N. 370 000 ÷ 9,81 ≈ 37 700 kg, alltså ungefär 38 ton."
         },
         {
           "type": "faq",
@@ -144,6 +166,10 @@
           "html": "The cube shows a higher number than the cylinder, because the shape of the test piece affects how it cracks. Older Swedish designations such as K30 give the cube strength and correspond roughly to C25/30."
         },
         {
+          "type": "note",
+          "text": "Burj Khalifa in Dubai is built with concrete of up to around 80 MPa in its lower parts, about three times as strong as ordinary building concrete."
+        },
+        {
           "type": "heading",
           "level": 2,
           "text": "What is a megapascal?"
@@ -160,6 +186,24 @@
         {
           "type": "text",
           "html": "Which class is needed depends on the structure. Outdoors and in damp or frosty environments there are often requirements on both the class and a low <a href=\"/artiklar/vattencementtal-vct\">water/cement ratio</a>, and how fast the concrete reaches its strength depends on <a href=\"/artiklar/sa-hardnar-betong\">curing</a>. The designer states which class applies."
+        },
+        {
+          "type": "formula",
+          "rows": [
+            [
+              "Pressure",
+              "1 MPa = 1 N per mm²"
+            ],
+            [
+              "Force",
+              "pressure × area"
+            ],
+            [
+              "Mass giving that force",
+              "force ÷ 9.81"
+            ]
+          ],
+          "example": "A cube with 10 centimetre sides at 37 MPa: 37 × 10,000 mm² = 370,000 N. 370,000 ÷ 9.81 ≈ 37,700 kg, or about 38 tonnes."
         },
         {
           "type": "faq",

@@ -49,6 +49,10 @@
           "html": "När vatten blir is ökar volymen med ungefär 9 procent. I betong finns vatten i små porer i cementpastan. Om porerna är helt fyllda har isen ingenstans att ta vägen, och trycket kan spräcka betongen inifrån. Efter många frys-tö-cykler växer skadorna, och ytan börjar flagna eller smula."
         },
         {
+          "type": "note",
+          "text": "Vatten är ett av få ämnen som utvidgar sig när det fryser. Det är därför is flyter, och därför flaskor spricker i frysen."
+        },
+        {
           "type": "heading",
           "level": 2,
           "text": "Det avgörande: hur blöt är betongen?"
@@ -83,6 +87,20 @@
         {
           "type": "text",
           "html": "Tösalt gör saken värre, eftersom salt ökar påfrestningen på ytan. Betong som utsätts för både frost och salt behöver därför strängare krav. Att ung betong inte får frysa är ett annat problem, som vi går igenom i <a href=\"/artiklar/gjuta-betong-pa-vintern\">gjuta betong på vintern</a>."
+        },
+        {
+          "type": "formula",
+          "rows": [
+            [
+              "Isens volym",
+              "vattnets volym × 1,09"
+            ],
+            [
+              "Avstånd mellan luftporer, ungefär",
+              "0,75 ÷ lufthalt^0,9 mm"
+            ]
+          ],
+          "example": "Med 5 procent luft: 0,75 ÷ 5^0,9 ≈ 0,18 mm, alltså under det vanliga kravet på omkring 0,2 mm."
         },
         {
           "type": "faq",
@@ -144,6 +162,10 @@
           "html": "When water turns to ice its volume grows by about 9 percent. In concrete there is water in small pores in the cement paste. If the pores are completely full the ice has nowhere to go, and the pressure can crack the concrete from the inside. After many freeze-thaw cycles the damage grows and the surface starts to flake or crumble."
         },
         {
+          "type": "note",
+          "text": "Water is one of the few substances that expands when it freezes. That is why ice floats, and why bottles crack in the freezer."
+        },
+        {
           "type": "heading",
           "level": 2,
           "text": "What matters: how wet is the concrete?"
@@ -178,6 +200,20 @@
         {
           "type": "text",
           "html": "De-icing salt makes things worse, because salt increases the strain on the surface. Concrete exposed to both frost and salt therefore needs stricter requirements. That young concrete must not freeze is a different problem, covered in <a href=\"/artiklar/gjuta-betong-pa-vintern\">casting concrete in winter</a>."
+        },
+        {
+          "type": "formula",
+          "rows": [
+            [
+              "Volume of the ice",
+              "volume of water × 1.09"
+            ],
+            [
+              "Spacing between air voids, roughly",
+              "0.75 ÷ air content^0.9 mm"
+            ]
+          ],
+          "example": "With 5 percent air: 0.75 ÷ 5^0.9 ≈ 0.18 mm, below the usual requirement of around 0.2 mm."
         },
         {
           "type": "faq",
