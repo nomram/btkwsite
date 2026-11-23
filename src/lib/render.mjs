@@ -1443,7 +1443,7 @@ export function renderMain(ctx, page, t) {
   let heroFacts = "";
   if (isHome && !ctx.edit) {
     const fi = rest.findIndex((b) => b && b.type === "facts" && b.hero);
-    if (fi >= 0) { const fb = rest.splice(fi, 1)[0]; heroFacts = `<ul class="hero__facts">${(fb.items || []).map((i) => `<li><strong>${esc(i.value)}</strong><span>${esc(i.label)}</span></li>`).join("")}</ul>`; }
+    if (fi >= 0) { const fb = rest.splice(fi, 1)[0]; heroFacts = `<ul class="hero__facts">${(fb.items || []).map((i, k) => i.tip ? `<li class="hf hf--tip" tabindex="0" aria-describedby="hf-tip-${k}"><strong>${esc(i.value)}</strong>${i.label ? `<span>${esc(i.label)}</span>` : ""}<span class="hf__tip" id="hf-tip-${k}" role="tooltip">${esc(i.tip)}</span></li>` : `<li class="hf"><strong>${esc(i.value)}</strong>${i.label ? `<span>${esc(i.label)}</span>` : ""}</li>`).join("")}</ul>`; }
   }
   const anc = ancestorsOf(page.path).filter((p) => ctx.pages.has(p) && shown(ctx, p));
   const eyebrow = !isHome && anc.length ? `<p class="hero__eyebrow">${anc.slice(-2).map((p) => esc(navTitleOf(ctx, p))).join(" · ")}</p>` : "";

@@ -2177,3 +2177,15 @@ input[type="range"] { accent-color: var(--primary); }
   .hero__facts span { font-size: .56rem; letter-spacing: .1em; line-height: 1.4; }
   .hero--home .hero__ctas { gap: .6rem; }
 }
+/* banner figures: short words, the manufacturers explain themselves on hover or tap */
+.hero__facts { align-items: baseline; }
+.hero__facts .hf { position: relative; }
+.hero__facts .hf strong { font-size: clamp(1.25rem, 1rem + .7vw, 1.6rem); }
+.hf--tip { cursor: help; outline: none; }
+.hf--tip strong { text-decoration: underline dotted rgba(255, 253, 249, .55); text-decoration-thickness: 1px; text-underline-offset: .28em; }
+.hf__tip { position: absolute; left: 0; bottom: calc(100% + .7rem); width: max-content; max-width: 16rem; padding: .55rem .8rem; border-radius: 10px; background: rgba(251, 248, 243, .96); color: #2b2421; font-size: .8rem !important; font-weight: 500 !important; letter-spacing: 0 !important; text-transform: none !important; line-height: 1.4; box-shadow: 0 14px 30px -12px rgba(0, 0, 0, .45); opacity: 0; transform: translateY(4px); pointer-events: none; transition: opacity .25s, transform .25s; }
+.hf__tip::after { content: ""; position: absolute; left: 1.1rem; top: 100%; border: 6px solid transparent; border-top-color: rgba(251, 248, 243, .96); }
+.hf--tip:hover .hf__tip, .hf--tip:focus .hf__tip, .hf--tip:focus-visible .hf__tip { opacity: 1; transform: none; }
+.hf--tip:focus-visible strong { outline: 2px solid rgba(243, 125, 3, .7); outline-offset: 4px; border-radius: 4px; }
+@media (max-width: 560px) { .hero__facts .hf strong { font-size: 1.02rem; } .hf__tip { left: auto; right: 0; } .hf__tip::after { left: auto; right: 1.1rem; } }
+.hero__facts .hf__tip { color: #2b2421 !important; display: block; }

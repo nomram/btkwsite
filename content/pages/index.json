@@ -18,16 +18,14 @@
           "tag": "redesign",
           "items": [
             {
-              "value": "15",
-              "label": "tillverkare från Europa och USA"
+              "value": "4 lager"
             },
             {
-              "value": "4",
-              "label": "lager i Sverige och Norge"
+              "value": "Mobil verkstad"
             },
             {
-              "value": "Mobil verkstad",
-              "label": "service på plats i Sverige och Norge"
+              "value": "15 tillverkare",
+              "tip": "Tillverkare från Sverige, Europa och USA"
             }
           ],
           "hero": true
@@ -371,16 +369,14 @@
           "tag": "redesign",
           "items": [
             {
-              "value": "15",
-              "label": "manufacturers from Europe and the USA"
+              "value": "4 warehouses"
             },
             {
-              "value": "4",
-              "label": "warehouses in Sweden and Norway"
+              "value": "Mobile workshop"
             },
             {
-              "value": "Mobile workshop",
-              "label": "on-site service in Sweden and Norway"
+              "value": "15 manufacturers",
+              "tip": "Manufacturers from Sweden, Europe and the USA"
             }
           ],
           "hero": true
