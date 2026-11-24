@@ -2645,3 +2645,16 @@ body::before { display: none; }
 .creds__badge img { width: 54px !important; height: auto !important; }
 .creds__badge figcaption { font-size: .82rem; font-weight: 600; max-width: 9rem; line-height: 1.35; }
 @media (max-width: 640px) { .creds__top { flex-direction: column; align-items: flex-start; gap: 0; } .creds__badge { margin-bottom: 1.6rem; } }
+
+/* r32: look A is the direction: a minimal banner with one sentence in the original banner type (Montserrat 600, short orange bar), no slogan; the three facts in three columns, each centred */
+.hero--home[data-v="a"] .hero__slogan { display: none; }
+.hero--home[data-v="a"] .hero__what { order: 0; margin: 0; font: 600 clamp(2rem, .95rem + 3.1vw, 3.5rem)/1.12 var(--font); letter-spacing: -.012em; text-transform: none; color: #fff; max-width: 21ch; text-wrap: balance; }
+.hero--home[data-v="a"] .hero__what::after { content: ""; display: block; width: 3.5rem; height: .28rem; margin-top: 1.1rem; background: var(--primary); }
+.hero--home[data-v] .hero__facts { display: grid !important; grid-template-columns: repeat(3, minmax(0, 1fr)) !important; gap: 0 !important; max-width: none; }
+.hero--home[data-v] .hero__facts .hf { align-items: center; justify-content: center; text-align: center; padding: .2rem .5rem; }
+.hero--home[data-v] .hero__facts .hf + .hf { border-left: 1px solid rgba(255, 255, 255, .16); }
+.hero--home[data-v="c"] .hero__facts .hf + .hf { border-left-color: var(--line); }
+.hero--home[data-v] .hero__facts .hf__tip { left: 50%; translate: -50% 0; }
+.hero--home[data-v] .hero__facts .hf__tip::after { left: 50%; margin-left: -6px; }
+@media (max-width: 560px) { .hero--home[data-v] .hero__facts .hf__tip { left: auto; right: 0; translate: none; } .hero--home[data-v] .hero__facts .hf__tip::after { left: auto; right: 1.1rem; margin-left: 0; } }
+.hero--home[data-v="a"] .hero__facts strong, .hero--home[data-v="a"] .hero__facts .hf strong { font-family: var(--font); font-weight: 600; letter-spacing: -.005em; font-size: clamp(1.1rem, .95rem + .55vw, 1.45rem); }
