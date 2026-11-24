@@ -2305,8 +2305,127 @@
     draw();
   }
 
-  var BUILD = { vct: buildVct, harda: buildHarda, injektering: buildInj, atgang: buildAtg, vadarvad: buildVad, volym: buildVolym, klass: buildKlass, tidslinje: buildTid, pantheon: buildPantheon, armering: buildArm, hojd: buildHojd, tunnelcykel: buildTunCycle, tunnelval: buildTunVal, spruta: buildSpruta, illu: buildIllu, ugn: buildUgn, klinker: buildKlinker, karbonatisering: buildKarb, klimat: buildKlimat, frost: buildFrost, pump: buildPump, sten: buildSten, marsh: buildMarsh, ic: buildIc, blandning: buildMix, logg: buildLog, vctcalc: buildVctCalc, recept: buildRecept, tatning: buildTat, jet: buildJet, tork: buildTork };
-  if (window.__WIDGET_TEST) { window.__WIDGET_TEST.scene = scene; window.__WIDGET_TEST.tunnelScene = tunnelScene; window.__WIDGET_TEST.tbmScene = tbmScene; window.__WIDGET_TEST.romanScene = romanScene; window.__WIDGET_TEST.lcaScene = lcaScene; window.__WIDGET_TEST.frostScene = frostScene; window.__WIDGET_TEST.pumpParts = pumpParts; window.__WIDGET_TEST.rockParts = rockParts; window.__WIDGET_TEST.marshParts = marshParts; window.__WIDGET_TEST.art = art; window.__WIDGET_TEST.icScene = icScene; window.__WIDGET_TEST.ICM = ICM; window.__WIDGET_TEST.mixScene = mixScene; window.__WIDGET_TEST.simLog = simLog; window.__WIDGET_TEST.logChart = logChart; window.__WIDGET_TEST.T = T; window.__WIDGET_TEST.tatScene = tatScene; window.__WIDGET_TEST.jetScene = jetScene; window.__WIDGET_TEST.torkScene = torkScene; }
+  // =====================================================================================================
+  // r36: Vetrofluid. A slab edge in section, untreated on the left and treated on the right: the water glass soaks in and seals the
+  // pores, then water, de-icing salt or frost attack both halves.
+  // =====================================================================================================
+  var TX4 = {
+    sv: {
+      vet: { surf: "Hur sugande är betongen?", surfs: ["Tät", "Normal", "Sugande"], exp: "Vad utsätts betongen för?", exps: ["Regn och vatten", "Tösalt (klorider)", "Frost"], apply: "1. Behandla högra halvan", attack: "2. Utsätt båda", again: "Börja om",
+        left: "Obehandlad", right: "Behandlad", depth: "Inträngning", mm: "mm", reach: "Når armeringen", yes: "Ja, efter {y} år", no: "Nej", rebar: "armering",
+        s0: "Två likadana betongytor. Behandla den högra med Vetrofluid och se hur medlet tränger in.", s1: "Vattenglaset tränger in i porerna och reagerar med kalken i betongen. Porerna fylls och betongen blir tätare.", s2: "Den behandlade zonen är klar. Utsätt nu båda halvorna för samma påfrestning.",
+        a: ["Vattnet sugs in i den obehandlade betongen men pärlar sig på den behandlade ytan.", "Kloriderna från tösaltet vandrar in i den obehandlade betongen och når armeringen, som börjar rosta. I den behandlade zonen stoppas de nära ytan.", "Det fuktiga ytskiktet på den obehandlade betongen fryser sönder och flagnar. Den behandlade ytan tar inte upp vattnet och klarar sig."],
+        how: "Illustration av principen enligt tillverkarens uppgifter: inträngning upp till cirka 40 mm beroende på hur sugande betongen är, och armeringen ritad 35 mm under ytan. Tiderna för klorider är exempel som visar skillnaden, inte en livslängdsberäkning." },
+      vc: { area: "Yta att behandla", m2: "m²", surf: "Underlaget", surfs: ["Tätt (4 m² per liter)", "Normalt (3 m² per liter)", "Sugande (2 m² per liter)"], tot: "Det går åt ungefär", l: "liter", per: "Per lager", coats: "Två lager: det andra när det första har torkat.", note: "Åtgången gäller för båda lagren tillsammans och varierar med hur sugande betongen är. Gör gärna en provyta först.",
+        how: "Liter = yta ÷ täckning. Täckningen är 2 till 4 m² per liter för två lager enligt tillverkaren, ungefär 400 gram per m². Ett lager är ungefär hälften." }
+    },
+    en: {
+      vet: { surf: "How absorbent is the concrete?", surfs: ["Dense", "Normal", "Absorbent"], exp: "What is the concrete exposed to?", exps: ["Rain and water", "De-icing salt (chlorides)", "Frost"], apply: "1. Treat the right half", attack: "2. Expose both", again: "Start again",
+        left: "Untreated", right: "Treated", depth: "Penetration", mm: "mm", reach: "Reaches the reinforcement", yes: "Yes, after {y} years", no: "No", rebar: "reinforcement",
+        s0: "Two identical concrete surfaces. Treat the right one with Vetrofluid and watch it soak in.", s1: "The water glass soaks into the pores and reacts with the lime in the concrete. The pores fill and the concrete becomes denser.", s2: "The treated zone is ready. Now expose both halves to the same load.",
+        a: ["Water soaks into the untreated concrete but beads on the treated surface.", "Chlorides from the de-icing salt travel into the untreated concrete and reach the reinforcement, which starts to rust. In the treated zone they are stopped near the surface.", "The damp surface layer of the untreated concrete freezes apart and scales. The treated surface does not take up the water and survives."],
+        how: "An illustration of the principle based on the manufacturer's data: penetration up to about 40 mm depending on how absorbent the concrete is, with the reinforcement drawn 35 mm below the surface. The chloride times are examples showing the difference, not a service-life calculation." },
+      vc: { area: "Area to treat", m2: "m²", surf: "Substrate", surfs: ["Dense (4 m² per litre)", "Normal (3 m² per litre)", "Absorbent (2 m² per litre)"], tot: "You need about", l: "litres", per: "Per coat", coats: "Two coats: the second once the first has dried.", note: "The consumption is for both coats together and varies with how absorbent the concrete is. A trial area first is a good idea.",
+        how: "Litres = area ÷ coverage. Coverage is 2 to 4 m² per litre for two coats according to the manufacturer, about 400 grams per m². One coat is roughly half." }
+    }
+  };
+  var T4 = TX4[LANG];
+  function vetroScene(labels) {
+    var a = art(440, 250, "wchart wvet"), r = seeded(33), i, Y0 = 64, Y1 = 236, MID = 220, PX = 3.2, reb = Y0 + 35 * PX;
+    a.rect(0, 0, 440, 250, a.grad([[0, "#f2f6f8"], [1, "#e4ecf0"]]), { ns: true });
+    a.rect(10, Y0, 420, Y1 - Y0, a.grad([[0, "#e2dccf"], [1, "#c9c0b1"]]), { sw: 1.3 });
+    a.speckle(12, Y0 + 2, 416, Y1 - Y0 - 4, 110, 8, ["#b6ac9c", "#efe9df", "#a69b8b"], 1.6);
+    var pores = [];
+    for (i = 0; i < 150; i++) { var px = 16 + r() * 408, py = Y0 + 4 + r() * (Y1 - Y0 - 8); if (Math.abs(px - MID) < 4) continue; pores.push({ x: px, y: py, r: 1.3 + r() * 1.8, el: a.circle(px, py, 1.3 + r() * 1.8, "#f6f2ea", { stroke: "rgba(59,52,54,.3)", sw: 0.7 }) }); }
+    // attack fronts and the treated zone
+    var waterL = a.rect(10, Y0, MID - 10, 0, "rgba(91,156,198,.32)", { ns: true }), waterR = a.rect(MID, Y0, 430 - MID, 0, "rgba(91,156,198,.32)", { ns: true });
+    var zone = a.rect(MID, Y0, 430 - MID, 0, "rgba(63,160,140,.16)", { ns: true }), zoneLine = a.line(MID, Y0, 430, Y0, "rgba(40,130,110,.6)", 1.2, { "stroke-dasharray": "4 3" });
+    // reinforcement bars and rust halos
+    var rust = [];
+    [60, 140, 300, 380].forEach(function (x) { var h = a.circle(x, reb, 9, "rgba(190,90,30,0)", { ns: true }); rust.push({ x: x, el: h }); a.circle(x, reb, 6, a.grad([[0, "#9aa0a6"], [1, "#5b6168"]]), { sw: 1.1 }); });
+    var crackL = a.group({});
+    // surface: puddle, beads and flakes
+    var beads = [], drops = [];
+    for (i = 0; i < 7; i++) beads.push(a.ellipse(MID + 24 + i * 28, Y0 - 3, 6, 3.5, "#8fc4e6", { stroke: "#5b9cc6", sw: 0.8, opacity: 0 }));
+    for (i = 0; i < 9; i++) drops.push(a.ellipse(20 + i * 22, Y0 - 30, 1.8, 3, "#7fb6dc", { ns: true, opacity: 0 }));
+    for (i = 0; i < 9; i++) drops.push(a.ellipse(MID + 14 + i * 22, Y0 - 30, 1.8, 3, "#7fb6dc", { ns: true, opacity: 0 }));
+    var flakes = a.group({ opacity: 0 });
+    for (i = 0; i < 8; i++) { var fx = 18 + i * 25 + r() * 6, fw = 10 + r() * 10, fd = 4 + r() * 9; a.path("M" + fx + "," + Y0 + " l" + (fw * 0.25).toFixed(1) + "," + fd.toFixed(1) + " l" + (fw * 0.5).toFixed(1) + "," + (-fd * 0.3).toFixed(1) + " l" + (fw * 0.25).toFixed(1) + "," + (-fd * 0.7).toFixed(1) + " z", "#eef3f6", { stroke: "#8f8577", sw: 0.8 }, flakes); }
+    // the roller that applies the product
+    var roller = a.group({ opacity: 0 });
+    a.rect(-14, -8, 28, 12, "#3fa08c", { sw: 1 }, roller); a.line(0, -8, 10, -40, "#6b6466", 2.4, {}, roller); a.line(10, -40, 18, -52, "#3b3436", 4, {}, roller);
+    a.line(MID, Y0 - 44, MID, Y1, "#3b3436", 1.2, { "stroke-dasharray": "3 4" });
+    if (labels) { [[115, labels[0]], [325, labels[1]]].forEach(function (t) { var e = a.add("text", { x: t[0], y: 22, "text-anchor": "middle", class: "wcall" }); e.textContent = t[1]; }); var rb = a.add("text", { x: 214, y: reb + 4, "text-anchor": "end", class: "wtxt" }); rb.textContent = labels[2]; }
+    return {
+      svg: a.svg, reb: reb, PX: PX,
+      // tp: treatment 0..1, dz: treated depth in mm, ap: attack 0..1, kind: 0 water, 1 chlorides, 2 frost, t: time ms
+      set: function (tp, dz, ap, kind, t) {
+        var zd = dz * PX * tp;
+        zone.setAttribute("height", zd.toFixed(1)); zoneLine.setAttribute("y1", (Y0 + zd).toFixed(1)); zoneLine.setAttribute("y2", (Y0 + zd).toFixed(1)); zoneLine.setAttribute("opacity", tp > 0 ? 1 : 0);
+        pores.forEach(function (p) { var sealed = p.x > MID && p.y < Y0 + zd; p.el.setAttribute("fill", sealed ? "#cfe9e1" : "#f6f2ea"); p.el.setAttribute("stroke", sealed ? "rgba(40,130,110,.55)" : "rgba(59,52,54,.3)"); });
+        var rx = MID + 10 + ((t / 4) % (430 - MID - 20));
+        roller.setAttribute("opacity", tp > 0 && tp < 1 ? 1 : 0); roller.setAttribute("transform", "translate(" + rx.toFixed(1) + "," + (Y0 - 4) + ")");
+        var deepL = kind === 2 ? 14 * PX : (Y1 - Y0 - 6), dL = deepL * ap, dR = Math.min(3 * PX, deepL) * ap;
+        waterL.setAttribute("height", (kind === 2 ? Math.min(dL, 14 * PX) : dL).toFixed(1)); waterR.setAttribute("height", dR.toFixed(1));
+        waterL.setAttribute("fill", kind === 1 ? "rgba(214,160,60,.30)" : "rgba(91,156,198,.32)"); waterR.setAttribute("fill", kind === 1 ? "rgba(214,160,60,.30)" : "rgba(91,156,198,.32)");
+        var hit = kind === 1 && Y0 + dL > reb - 6 ? Math.min(1, (Y0 + dL - (reb - 6)) / 40) : 0;
+        rust.forEach(function (q) { q.el.setAttribute("fill", q.x < MID && hit ? "rgba(190,90,30," + (0.55 * hit).toFixed(2) + ")" : "rgba(190,90,30,0)"); q.el.setAttribute("r", (9 + 6 * hit).toFixed(1)); });
+        beads.forEach(function (b) { b.setAttribute("opacity", kind === 0 && ap > 0.2 ? 1 : 0); });
+        var rain = (kind === 0 || kind === 1) && ap > 0 && ap < 1;
+        drops.forEach(function (d, k) { var cyc = ((t / 700) + k * 0.13) % 1; d.setAttribute("cy", (Y0 - 34 + cyc * 32).toFixed(1)); d.setAttribute("opacity", rain ? (1 - cyc * 0.4).toFixed(2) : 0); });
+        flakes.setAttribute("opacity", kind === 2 ? Math.max(0, (ap - 0.4) / 0.6).toFixed(2) : 0);
+        return { hit: hit };
+      }
+    };
+  }
+  function buildVetro(app) {
+    var W = T4.vet, S = { s: 1, k: 1, tp: 0, ap: 0, ph: 0, t: 0 }, DZ = [25, 35, 40];
+    var sc = vetroScene([W.left, W.right, W.rebar]), big = el("p", { class: "wgt__big", "aria-live": "polite" }), sub = el("p", { class: "wtat__sub" });
+    var surf = segmented(W.surf, W.surfs, 1, function (i) { S.s = i; reset(); }), exp = segmented(W.exp, W.exps, 1, function (i) { S.k = i; if (S.ph >= 3) { S.ap = 0; S.ph = 3; kick(); } upd(); });
+    var bA = el("button", { type: "button", class: "vbtn", text: W.apply }), bX = el("button", { type: "button", class: "vbtn vbtn--alt", text: W.attack }), bR = el("button", { type: "button", class: "wlink", text: W.again });
+    bA.addEventListener("click", function () { if (S.ph === 0) { S.ph = 1; if (REDUCE) { S.tp = 1; S.ph = 2; } kick(); upd(); } });
+    bX.addEventListener("click", function () { if (S.ph === 2 || S.ph === 4) { S.ap = 0; S.ph = 3; if (REDUCE) { S.ap = 1; S.ph = 4; } kick(); upd(); } });
+    bR.addEventListener("click", reset);
+    var stD = stat(W.depth, W.mm), stR = stat(W.reach);
+    function reset() { S.tp = 0; S.ap = 0; S.ph = 0; upd(); }
+    function upd() {
+      var info = sc.set(S.tp, DZ[S.s], S.ap, S.k, S.t);
+      stD.set(S.tp > 0 ? num(DZ[S.s] * S.tp) : "0");
+      stR.set(S.ph >= 3 && S.k === 1 ? (info.hit > 0 ? W.yes.replace("{y}", num([10, 15, 20][S.s])) : "…") : "–");
+      big.textContent = S.ph === 0 ? W.s0 : S.ph === 1 ? W.s1 : S.ph === 2 ? W.s2 : W.a[S.k];
+      sub.textContent = S.ph >= 3 && S.k === 1 ? (LANG === "sv" ? "Höger halva: nej, kloriderna stannar i den behandlade zonen." : "Right half: no, the chlorides stay in the treated zone.") : "";
+      bA.disabled = S.ph !== 0; bX.disabled = !(S.ph === 2 || S.ph === 4);
+    }
+    var player = playWhenVisible(sc.svg, function (dt) {
+      S.t += dt;
+      if (S.ph === 1) { S.tp = Math.min(1, S.tp + dt / 2600); if (S.tp >= 1) S.ph = 2; }
+      else if (S.ph === 3) { S.ap = Math.min(1, S.ap + dt / 3800); if (S.ap >= 1) S.ph = 4; }
+      upd();
+    });
+    function kick() { player.start(); }
+    app.appendChild(el("div", { class: "wgt__grid" }, [el("div", { class: "wgt__ctl" }, [surf.box, exp.box, el("div", { class: "wbtns" }, [bA, bX, bR]), el("div", { class: "stats" }, [stD.box, stR.box])]), el("div", { class: "wgt__out" }, [big, sub, sc.svg])]));
+    app.appendChild(how(W.how));
+    upd();
+  }
+  function buildVetroCalc(app) {
+    var W = T4.vc, S = { a: 100, s: 1 }, CV = [4, 3, 2];
+    var iA = numIn(W.area, 100, W.m2, function (v) { S.a = v; draw(); }), sel = select(W.surf, W.surfs, 1, function (i) { S.s = i; draw(); });
+    var resV = el("strong", { class: "wcalc__v" }), resU = el("span", { class: "wcalc__u", text: W.l }), extra = el("p", { class: "wcalc__extra" }), sum = el("p", { class: "wcalc__sum" }), msg = el("ul", { class: "wmsg" });
+    var cans = el("div", { class: "wbk__row wvc__cans", "aria-hidden": "true" });
+    function draw() {
+      var l = S.a / CV[S.s]; resV.textContent = num(l, l < 10 ? 1 : 0);
+      extra.textContent = W.per + ": " + num(l / 2, l < 20 ? 1 : 0) + " " + W.l + ". " + W.coats;
+      sum.textContent = (LANG === "sv" ? "liter = " : "litres = ") + num(S.a) + " ÷ " + CV[S.s] + " = " + num(l, 1);
+      cans.innerHTML = ""; var n = Math.min(40, Math.ceil(l / 5)); for (var i = 0; i < n; i++) cans.appendChild(el("i", { class: "wbk__b wbk__b--v", style: "animation-delay:" + (i * 20) + "ms" }));
+      msg.innerHTML = ""; msg.appendChild(el("li", { class: "wmsg__info", text: W.note }));
+    }
+    app.appendChild(el("div", { class: "wgt__grid" }, [el("div", { class: "wgt__ctl" }, [iA.box, sel.box]), el("div", { class: "wgt__out wcalc" }, [el("div", { class: "wcalc__res" }, [el("span", { class: "wcalc__l", text: W.tot }), el("div", {}, [resV, resU])]), extra, sum, cans, msg])]));
+    app.appendChild(how(W.how));
+    draw();
+  }
+
+  var BUILD = { vct: buildVct, harda: buildHarda, injektering: buildInj, atgang: buildAtg, vadarvad: buildVad, volym: buildVolym, klass: buildKlass, tidslinje: buildTid, pantheon: buildPantheon, armering: buildArm, hojd: buildHojd, tunnelcykel: buildTunCycle, tunnelval: buildTunVal, spruta: buildSpruta, illu: buildIllu, ugn: buildUgn, klinker: buildKlinker, karbonatisering: buildKarb, klimat: buildKlimat, frost: buildFrost, pump: buildPump, sten: buildSten, marsh: buildMarsh, ic: buildIc, blandning: buildMix, logg: buildLog, vctcalc: buildVctCalc, recept: buildRecept, tatning: buildTat, jet: buildJet, tork: buildTork, vetro: buildVetro, vetrocalc: buildVetroCalc };
+  if (window.__WIDGET_TEST) { window.__WIDGET_TEST.scene = scene; window.__WIDGET_TEST.tunnelScene = tunnelScene; window.__WIDGET_TEST.tbmScene = tbmScene; window.__WIDGET_TEST.romanScene = romanScene; window.__WIDGET_TEST.lcaScene = lcaScene; window.__WIDGET_TEST.frostScene = frostScene; window.__WIDGET_TEST.pumpParts = pumpParts; window.__WIDGET_TEST.rockParts = rockParts; window.__WIDGET_TEST.marshParts = marshParts; window.__WIDGET_TEST.art = art; window.__WIDGET_TEST.icScene = icScene; window.__WIDGET_TEST.ICM = ICM; window.__WIDGET_TEST.mixScene = mixScene; window.__WIDGET_TEST.simLog = simLog; window.__WIDGET_TEST.logChart = logChart; window.__WIDGET_TEST.T = T; window.__WIDGET_TEST.tatScene = tatScene; window.__WIDGET_TEST.jetScene = jetScene; window.__WIDGET_TEST.torkScene = torkScene; window.__WIDGET_TEST.vetroScene = vetroScene; }
   [].forEach.call(document.querySelectorAll("[data-widget]"), function (box) {
     var app = box.querySelector(".wgt__app"), fn = BUILD[box.getAttribute("data-widget")];
     if (!app || !fn) return;

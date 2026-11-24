@@ -1,0 +1,302 @@
+{
+  "path": "/artiklar/vetrofluid-impregnering",
+  "updated": "2026-11-24",
+  "template": "article",
+  "order": 10,
+  "published": true,
+  "date": "2026-11-24",
+  "tags": [
+    "betong",
+    "material",
+    "guide"
+  ],
+  "image": "/assets/img/vetrofluid.webp",
+  "hideIn": [
+    "es",
+    "no",
+    "lt",
+    "lv",
+    "et",
+    "ru"
+  ],
+  "i18n": {
+    "sv": {
+      "title": "Vetrofluid: så tätar vattenglas betongen inifrån",
+      "h1": "Vetrofluid: så tätar vattenglas betongen inifrån",
+      "seoTitle": "Vetrofluid impregnering av betong, så fungerar det | Betongakuten",
+      "description": "Vad EverCrete Vetrofluid från Ecobeton är, hur vattenglaset tränger in och tätar betongen, och vad det skyddar mot. Med en simulering och en räknare för åtgång.",
+      "summary": "Ett impregneringsmedel som går på djupet i stället för att lägga sig på ytan. Så fungerar Vetrofluid, med en betong du själv kan behandla och testa.",
+      "keypoints": [
+        "Vetrofluid är vattenglas med en katalysator som sugs in i betongen och tätar porerna inifrån.",
+        "Enligt tillverkaren tränger det in upp till 40 mm och skyddar mot vatten, frost, tösalt och karbonatisering.",
+        "Det läggs i två lager, och det går åt 2 till 4 m² per liter beroende på underlaget."
+      ],
+      "blocks": [
+        {
+          "type": "text",
+          "html": "Betong ser tät ut, men den är full av små porer och kanaler. Där tar sig vatten, salt och koldioxid in, och med tiden kommer frostskador, rost i armeringen och ytor som smular sönder. EverCrete Vetrofluid från Ecobeton är ett impregneringsmedel som inte lägger sig som en film på ytan, utan sugs in och tätar porerna inifrån. Så här fungerar det, och vad det gör för betongen."
+        },
+        {
+          "type": "widget",
+          "kind": "vetro",
+          "title": "Behandla och testa",
+          "intro": "Behandla den högra halvan och utsätt sedan båda för vatten, tösalt eller frost. Se vad som händer med armeringen."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Vad är Vetrofluid?"
+        },
+        {
+          "type": "text",
+          "html": "Vetrofluid är en vattenbaserad vätska som bygger på vattenglas, alltså lösta silikater, med en särskild katalysator. Den sprutas, rollas eller stryks på ytan och sugs in i betongen, enligt tillverkaren upp till 40 millimeter. Vattenglas reagerar med kalken i betongen och bildar nya kristaller som fyller porerna. Kvar blir en tätare betong med en barriär som sitter i själva materialet, utan att ytan får en film eller byter färg."
+        },
+        {
+          "type": "note",
+          "text": "Vattenglas är samma ämne som förr användes för att lägga in ägg. Ett tunt skikt i skalets porer gjorde att äggen höll sig i månader."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Vad gör det för betongen?"
+        },
+        {
+          "type": "text",
+          "html": "Enligt tillverkaren gör behandlingen följande:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Vattentätar betongen permanent, även mot vatten som trycker på från baksidan.",
+            "Ger hög motståndskraft mot frysning och tining. Behandlad betong ska vara intakt även efter 300 frys-tö-cykler.",
+            "Bromsar klorider, sulfater och tösalter, och skyddar därmed armeringen mot rost.",
+            "Stoppar karbonatiseringen och håller betongen basisk, så att armeringen förblir skyddad.",
+            "Binder damm på betonggolv och hindrar föroreningar från att tränga in.",
+            "Är luktfri, färglös och godkänd för kontakt med dricksvatten."
+          ]
+        },
+        {
+          "type": "text",
+          "html": "Vetrofluid kan användas på all slags betong: nygjuten, äldre och vid reparationer. Produkten uppfyller kraven i standarden EN 1504-2 för ytskydd av betong och är registrerad i BASTA. Produktblad och teknisk data finns på sidan för <a href=\"/produkter/ecobeton/evercrete-vetrofluid\">EverCrete Vetrofluid</a>."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Varför behöver betong skyddas?"
+        },
+        {
+          "type": "text",
+          "html": "Det mesta som bryter ner betong kommer med vatten. Fukt i porerna fryser och spränger ytan, klorider från tösalt eller havsvatten vandrar in till armeringen och får den att rosta, och koldioxid sänker betongens pH tills stålet inte längre är skyddat. Ju tätare betongen är, desto långsammare går det. Läs mer i <a href=\"/artiklar/frost-och-luftporer\">varför betong spricker av frost</a> och <a href=\"/artiklar/vad-ar-cement-gjort-av\">vad är cement gjort av</a>."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Så används det"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Rengör ytan från damm, olja och gamla beläggningar så att medlet kan tränga in.",
+            "Applicera med spruta, roller eller borste.",
+            "Lägg två lager: det andra när det första har torkat.",
+            "Räkna med 2 till 4 kvadratmeter per liter för båda lagren, beroende på hur sugande betongen är.",
+            "Följ alltid tillverkarens produktblad."
+          ]
+        },
+        {
+          "type": "widget",
+          "kind": "vetrocalc",
+          "title": "Hur mycket går åt?",
+          "intro": "Skriv in ytan och välj underlag, så räknar vi ut hur många liter du behöver.",
+          "cta": false
+        },
+        {
+          "type": "formula",
+          "rows": [
+            [
+              "Mängd",
+              "yta (m²) ÷ täckning (m² per liter)"
+            ],
+            [
+              "Täckning, två lager",
+              "2 till 4 m² per liter"
+            ],
+            [
+              "Per lager",
+              "ungefär hälften"
+            ]
+          ],
+          "example": "En garageplatta på 60 m² med normalt sugande betong: 60 ÷ 3 = 20 liter, ungefär 10 liter per lager."
+        },
+        {
+          "type": "faq",
+          "title": "Vanliga frågor",
+          "items": [
+            {
+              "q": "Vad är Vetrofluid?",
+              "a": "Ett impregneringsmedel från Ecobeton baserat på vattenglas, som tränger in i betongen och tätar porerna inifrån."
+            },
+            {
+              "q": "Hur djupt tränger Vetrofluid in?",
+              "a": "Enligt tillverkaren upp till 40 mm, beroende på hur sugande betongen är."
+            },
+            {
+              "q": "Ändrar Vetrofluid betongens utseende?",
+              "a": "Nej. Medlet är färglöst och lämnar ingen film på ytan."
+            },
+            {
+              "q": "Hur länge håller behandlingen?",
+              "a": "Tillverkaren beskriver den som permanent, eftersom medlet blir en del av betongen i stället för att ligga som ett skikt på ytan."
+            }
+          ]
+        },
+        {
+          "type": "cta",
+          "title": "Vetrofluid från Ecobeton",
+          "text": "Vi säljer EverCrete Vetrofluid och hjälper dig att räkna på åtgång och upplägg. Hör av dig så får du pris och leveranstid.",
+          "button": "Få offert",
+          "href": "/offert"
+        }
+      ]
+    },
+    "en": {
+      "title": "Vetrofluid: how water glass seals concrete from within",
+      "h1": "Vetrofluid: how water glass seals concrete from within",
+      "seoTitle": "Vetrofluid concrete impregnation, how it works | Betongakuten",
+      "description": "What EverCrete Vetrofluid from Ecobeton is, how the water glass penetrates and seals concrete, and what it protects against. With a simulation and a consumption calculator.",
+      "summary": "An impregnating agent that goes deep instead of sitting on the surface. How Vetrofluid works, with a concrete you can treat and test yourself.",
+      "keypoints": [
+        "Vetrofluid is water glass with a catalyst that soaks into the concrete and seals the pores from within.",
+        "According to the manufacturer it penetrates up to 40 mm and protects against water, frost, de-icing salt and carbonation.",
+        "It goes on in two coats, and you need 2 to 4 m² per litre depending on the substrate."
+      ],
+      "blocks": [
+        {
+          "type": "text",
+          "html": "Concrete looks dense, but it is full of tiny pores and channels. Water, salt and carbon dioxide get in there, and over time come frost damage, rusting reinforcement and surfaces that crumble. EverCrete Vetrofluid from Ecobeton is an impregnating agent that does not sit as a film on the surface, but soaks in and seals the pores from within. Here is how it works, and what it does for the concrete."
+        },
+        {
+          "type": "widget",
+          "kind": "vetro",
+          "title": "Treat and test",
+          "intro": "Treat the right half, then expose both to water, de-icing salt or frost. See what happens to the reinforcement."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "What is Vetrofluid?"
+        },
+        {
+          "type": "text",
+          "html": "Vetrofluid is a water-based liquid built on water glass, that is dissolved silicates, with a special catalyst. It is sprayed, rolled or brushed onto the surface and soaks into the concrete, according to the manufacturer up to 40 millimetres. Water glass reacts with the lime in the concrete and forms new crystals that fill the pores. What is left is denser concrete with a barrier inside the material itself, without a film on the surface or a change of colour."
+        },
+        {
+          "type": "note",
+          "text": "Water glass is the same substance that was once used to preserve eggs. A thin layer in the pores of the shell kept the eggs fresh for months."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "What does it do for the concrete?"
+        },
+        {
+          "type": "text",
+          "html": "According to the manufacturer the treatment:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Waterproofs the concrete permanently, even against water pushing from behind.",
+            "Gives high resistance to freezing and thawing. Treated concrete is said to be intact even after 300 freeze-thaw cycles.",
+            "Slows chlorides, sulfates and de-icing salts, and so protects the reinforcement from rust.",
+            "Stops carbonation and keeps the concrete alkaline, so the reinforcement stays protected.",
+            "Binds dust on concrete floors and keeps contaminants from getting in.",
+            "Is odourless, colourless and approved for contact with drinking water."
+          ]
+        },
+        {
+          "type": "text",
+          "html": "Vetrofluid can be used on all kinds of concrete: new, old and in repairs. The product meets the requirements of the EN 1504-2 standard for surface protection of concrete and is registered in BASTA. The product sheet and technical data are on the <a href=\"/produkter/ecobeton/evercrete-vetrofluid\">EverCrete Vetrofluid</a> page."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Why does concrete need protecting?"
+        },
+        {
+          "type": "text",
+          "html": "Most of what breaks concrete down comes with water. Moisture in the pores freezes and bursts the surface, chlorides from de-icing salt or sea water travel in to the reinforcement and make it rust, and carbon dioxide lowers the pH of the concrete until the steel is no longer protected. The denser the concrete, the slower all of it happens. Read more in <a href=\"/artiklar/frost-och-luftporer\">why concrete cracks from frost</a> and <a href=\"/artiklar/vad-ar-cement-gjort-av\">what is cement made of</a>."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "How it is used"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Clean the surface of dust, oil and old coatings so the agent can penetrate.",
+            "Apply with a sprayer, roller or brush.",
+            "Apply two coats: the second once the first has dried.",
+            "Allow 2 to 4 square metres per litre for both coats, depending on how absorbent the concrete is.",
+            "Always follow the manufacturer's product sheet."
+          ]
+        },
+        {
+          "type": "widget",
+          "kind": "vetrocalc",
+          "title": "How much do you need?",
+          "intro": "Type in the area and choose the substrate, and we work out how many litres you need.",
+          "cta": false
+        },
+        {
+          "type": "formula",
+          "rows": [
+            [
+              "Amount",
+              "area (m²) ÷ coverage (m² per litre)"
+            ],
+            [
+              "Coverage, two coats",
+              "2 to 4 m² per litre"
+            ],
+            [
+              "Per coat",
+              "roughly half"
+            ]
+          ],
+          "example": "A 60 m² garage slab with normally absorbent concrete: 60 ÷ 3 = 20 litres, about 10 litres per coat."
+        },
+        {
+          "type": "faq",
+          "title": "Frequently asked questions",
+          "items": [
+            {
+              "q": "What is Vetrofluid?",
+              "a": "An impregnating agent from Ecobeton based on water glass, which penetrates the concrete and seals the pores from within."
+            },
+            {
+              "q": "How deep does Vetrofluid penetrate?",
+              "a": "According to the manufacturer up to 40 mm, depending on how absorbent the concrete is."
+            },
+            {
+              "q": "Does Vetrofluid change how the concrete looks?",
+              "a": "No. The agent is colourless and leaves no film on the surface."
+            },
+            {
+              "q": "How long does the treatment last?",
+              "a": "The manufacturer describes it as permanent, because the agent becomes part of the concrete rather than sitting as a layer on the surface."
+            }
+          ]
+        },
+        {
+          "type": "cta",
+          "title": "Vetrofluid from Ecobeton",
+          "text": "We sell EverCrete Vetrofluid and help you work out consumption and approach. Get in touch for price and lead time.",
+          "button": "Get a quote",
+          "href": "/offert"
+        }
+      ]
+    }
+  }
+}

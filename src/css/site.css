@@ -2765,3 +2765,8 @@ body::before { display: none; }
   .site-header.is-tight .nav__item > a .nav__long { display: none; }
   .site-header.is-tight .nav__item > a .nav__short { display: inline; }
 }
+
+/* r36: Vetrofluid widgets */
+.wvet { display: block; width: 100%; height: auto; }
+.wbk__b--v { --bk: #3fa08c; }
+.wvc__cans { margin: .4rem 0 1rem; }
