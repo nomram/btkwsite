@@ -140,21 +140,38 @@
             },
             {
               "label": "Betong och ytor",
-              "title": "Ecobeton och Weber",
-              "text": "De första tillverkarna kom från betongens och ytornas värld: system för att laga, täta och skydda betong från Ecobeton, och puts, murbruk och golv från Weber.",
+              "title": "Ecobeton, Weber och Mapei",
+              "text": "De första tillverkarna kom från betongens och ytornas värld: system för att laga, täta och skydda betong från Ecobeton, puts, murbruk och golv från Weber, och byggkemi från Mapei.",
               "brands": [
                 "/produkter/ecobeton",
-                "/produkter/weber"
+                "/produkter/weber",
+                "/produkter/mapei"
               ]
             },
             {
               "label": "Under jord",
-              "title": "Ischebeck, TEI och Häny",
-              "text": "Sedan gick vi under jord. Med Ischebeck och TEI kom förankring, borrning och mikropålar, och med Häny injekteringspumpar och blandare från Schweiz.",
+              "title": "Ischebeck och Häny",
+              "text": "Sedan gick vi under jord. Med Ischebeck kom förankring och mikropålar, och med Häny injekteringspumpar och blandare från Schweiz.",
               "brands": [
                 "Ischebeck",
-                "/produkter/tei",
                 "/produkter/haeny"
+              ]
+            },
+            {
+              "label": "2020",
+              "title": "Kraft Tool",
+              "text": "Slevar, putsbrädor och andra handverktyg för betongytor från Kraft Tool i USA.",
+              "brands": [
+                "/produkter/kraft-tool"
+              ]
+            },
+            {
+              "label": "2021",
+              "title": "TEI och REED",
+              "text": "Året därpå kom två amerikanska tillverkare: TEI med borrmaster och borriggar för mikropålar och förankring, och REED med maskiner för sprutbetong och betongpumpar.",
+              "brands": [
+                "/produkter/tei",
+                "/produkter/reed"
               ]
             },
             {
@@ -203,6 +220,26 @@
               "now": true
             }
           ]
+        },
+        {
+          "type": "clients",
+          "kicker": "Kunder",
+          "title": "Vi levererar till Sveriges grundläggare",
+          "intro": "Vi har levererat till alla de stora grundläggningsföretagen i Sverige, och till många mindre entreprenörer. Några av dem:",
+          "items": [
+            "Veidekke",
+            "Hercules",
+            "NCC",
+            "Peab",
+            "BESAB",
+            "NGT",
+            "GMT",
+            "PPS",
+            "Borrpoolen",
+            "Drillab",
+            "Keller"
+          ],
+          "more": "med flera"
         },
         {
           "type": "heading",
@@ -316,8 +353,17 @@
             [
               "Hollow-bar school",
               "TEI, Montrose"
+            ],
+            [
+              "Betongakuten bär ID06",
+              "ID06"
             ]
-          ]
+          ],
+          "badge": {
+            "src": "/assets/img/om-oss-5.gif",
+            "alt": "ID06",
+            "text": "Betongakuten bär ID06"
+          }
         },
         {
           "type": "cta",
@@ -468,21 +514,38 @@
             },
             {
               "label": "Concrete and surfaces",
-              "title": "Ecobeton and Weber",
-              "text": "The first manufacturers came from the world of concrete and surfaces: systems to repair, seal and protect concrete from Ecobeton, and render, mortar and floors from Weber.",
+              "title": "Ecobeton, Weber and Mapei",
+              "text": "The first manufacturers came from the world of concrete and surfaces: systems to repair, seal and protect concrete from Ecobeton, render, mortar and floors from Weber, and construction chemicals from Mapei.",
               "brands": [
                 "/produkter/ecobeton",
-                "/produkter/weber"
+                "/produkter/weber",
+                "/produkter/mapei"
               ]
             },
             {
               "label": "Underground",
-              "title": "Ischebeck, TEI and Häny",
-              "text": "Then we went underground. Ischebeck and TEI brought anchoring, drilling and micropiles, and Häny brought grouting pumps and mixers from Switzerland.",
+              "title": "Ischebeck and Häny",
+              "text": "Then we went underground. Ischebeck brought anchoring and micropiles, and Häny brought grouting pumps and mixers from Switzerland.",
               "brands": [
                 "Ischebeck",
-                "/produkter/tei",
                 "/produkter/haeny"
+              ]
+            },
+            {
+              "label": "2020",
+              "title": "Kraft Tool",
+              "text": "Trowels, floats and other hand tools for concrete surfaces from Kraft Tool in the USA.",
+              "brands": [
+                "/produkter/kraft-tool"
+              ]
+            },
+            {
+              "label": "2021",
+              "title": "TEI and REED",
+              "text": "The year after came two American manufacturers: TEI with drill masts and rigs for micropiles and anchoring, and REED with shotcrete machines and concrete pumps.",
+              "brands": [
+                "/produkter/tei",
+                "/produkter/reed"
               ]
             },
             {
@@ -531,6 +594,26 @@
               "now": true
             }
           ]
+        },
+        {
+          "type": "clients",
+          "kicker": "Customers",
+          "title": "We supply Sweden's foundation contractors",
+          "intro": "We have supplied all the big foundation engineering companies in Sweden, and many smaller contractors. Some of them:",
+          "items": [
+            "Veidekke",
+            "Hercules",
+            "NCC",
+            "Peab",
+            "BESAB",
+            "NGT",
+            "GMT",
+            "PPS",
+            "Borrpoolen",
+            "Drillab",
+            "Keller"
+          ],
+          "more": "and more"
         },
         {
           "type": "heading",
@@ -644,8 +727,17 @@
             [
               "Hollow-bar school",
               "TEI, Montrose"
+            ],
+            [
+              "Betongakuten holds ID06",
+              "ID06"
             ]
-          ]
+          ],
+          "badge": {
+            "src": "/assets/img/om-oss-5.gif",
+            "alt": "ID06",
+            "text": "Betongakuten holds ID06"
+          }
         },
         {
           "type": "cta",

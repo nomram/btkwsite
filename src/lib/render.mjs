@@ -393,7 +393,12 @@ function renderExplore(ctx, b) {
 }
 // Courses and certificates: course name and who gave it, in two columns. Block: title, intro, items [[course, issuer]]
 function renderCreds(ctx, b) {
-  return `<section class="creds">${b.kicker ? `<p class="sec-kicker">${esc(b.kicker)}</p>` : ""}${b.title ? `<h2 class="creds__h">${esc(b.title)}</h2>` : ""}${b.intro ? `<p class="creds__intro">${esc(b.intro)}</p>` : ""}<ul class="creds__list">${(b.items || []).map((r) => `<li><span class="creds__c">${esc(r[0])}</span>${r[1] ? `<span class="creds__by">${esc(r[1])}</span>` : ""}</li>`).join("")}</ul></section>`;
+  const badge = b.badge && b.badge.src ? `<figure class="creds__badge">${imgTag(ctx, b.badge.src, b.badge.alt || "", { sizes: "96px" })}${b.badge.text ? `<figcaption>${esc(b.badge.text)}</figcaption>` : ""}</figure>` : "";
+  return `<section class="creds"><div class="creds__top"><div>${b.kicker ? `<p class="sec-kicker">${esc(b.kicker)}</p>` : ""}${b.title ? `<h2 class="creds__h">${esc(b.title)}</h2>` : ""}${b.intro ? `<p class="creds__intro">${esc(b.intro)}</p>` : ""}</div>${badge}</div><ul class="creds__list">${(b.items || []).map((r) => `<li><span class="creds__c">${esc(r[0])}</span>${r[1] ? `<span class="creds__by">${esc(r[1])}</span>` : ""}</li>`).join("")}</ul></section>`;
+}
+// Customers we have delivered to, as a grid of names. Block: kicker, title, intro, items [names], more
+function renderClients(ctx, b) {
+  return `<section class="clients">${b.kicker ? `<p class="sec-kicker">${esc(b.kicker)}</p>` : ""}${b.title ? `<h2 class="clients__h">${esc(b.title)}</h2>` : ""}${b.intro ? `<p class="clients__intro">${esc(b.intro)}</p>` : ""}<ul class="clients__list">${(b.items || []).map((x, i) => `<li style="--i:${i}"><span>${esc(x)}</span></li>`).join("")}${b.more ? `<li class="clients__more"><span>${esc(b.more)}</span></li>` : ""}</ul></section>`;
 }
 function renderFaq(ctx, b) {
   const items = (b.items || []).filter((i) => i && i.q && i.a);
@@ -981,6 +986,7 @@ function renderBlockInner(ctx, b) {
     case "timeline": return renderTimeline(ctx, b);
     case "explore": return renderExplore(ctx, b);
     case "creds": return renderCreds(ctx, b);
+    case "clients": return renderClients(ctx, b);
     case "note": return `<aside class="anote"><p class="anote__t">${esc(b.label || ctx.ui.article_note || "Visste du?")}</p><p class="anote__x">${b.html ? localizeHtml(ctx, b.html) : esc(b.text || "")}</p></aside>`;
     case "formula": return `<details class="aform"><summary><span class="aform__f" aria-hidden="true">ƒ</span><span>${esc(b.title || ctx.ui.article_formula || "Formeln, för den som vill räkna själv")}</span></summary><div class="aform__b">${(b.rows || []).map((r) => `<div class="aform__r"><span class="aform__l">${esc(r[0])}</span><code class="aform__x">${esc(r[1])}</code></div>`).join("")}${b.example ? `<p class="aform__ex">${esc(b.example)}</p>` : ""}${b.note ? `<p class="aform__n">${esc(b.note)}</p>` : ""}</div></details>`;
     case "html": return b.html || "";
