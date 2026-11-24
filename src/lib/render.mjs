@@ -413,7 +413,7 @@ function homeLogoGrid(ctx, t) {
     return `<li style="--i:${i}"><a class="lgrid__a" href="${esc(localizeHref(ctx, it.href))}" data-name="${esc(name)}" data-desc="${esc(desc)}" aria-label="${esc(name)}">${imgTag(ctx, it.image, "", { sizes: "120px" }).replace('loading="lazy"', 'loading="eager"')}</a></li>`;
   }).join("");
   const cap = `<p class="lgrid__cap" aria-live="polite"><strong>${esc(strip.title || ctx.ui.makers || "Tillverkare vi representerar")}</strong><span>${esc(ctx.ui.lgrid_hint || "Peka på en logga för att läsa mer, klicka för att gå dit.")}</span></p>`;
-  return `<div class="lgrid" data-g="1"><ul class="lgrid__list">${lis}</ul>${cap}</div>`;
+  return `<div class="lgrid" data-g="3"><ul class="lgrid__list">${lis}</ul>${cap}</div>`;
 }
 function renderFaq(ctx, b) {
   const items = (b.items || []).filter((i) => i && i.q && i.a);
@@ -1205,7 +1205,9 @@ function renderHeader(ctx, current) {
     const kids = ctx.pages.get(p) && ctx.pages.get(p).noMenu ? [] : ctx.children(p).filter((c) => shown(ctx, c));
     const active = isUnder(current, p);
     const label = navTitleOf(ctx, p);
-    const link = `<a href="${esc(ctx.url(p))}"${active && current === p ? ' aria-current="page"' : ""}>${esc(label)}</a>`;
+    const tt = ctx.tr(p, ctx.lang) || {}, short = tt.navShort && tt.navShort !== label ? tt.navShort : "";
+    // a shorter label (navShort) takes over when the header gets tight, see .nav__short in the CSS
+    const link = `<a href="${esc(ctx.url(p))}"${active && current === p ? ' aria-current="page"' : ""}${short ? ` aria-label="${esc(label)}"` : ""}>${short ? `<span class="nav__long">${esc(label)}</span><span class="nav__short" aria-hidden="true">${esc(short)}</span>` : esc(label)}</a>`;
     if (!kids.length || !(site.megaMenu !== false)) return `<li class="nav__item${active ? " is-active" : ""}">${link}</li>`;
     // dropdown = the brand logos straight away (a row that follows the mouse sideways), no section label
     const logos = brandLogoMap(ctx, p);

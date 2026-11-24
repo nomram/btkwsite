@@ -1659,50 +1659,67 @@
     a.shadow(230, 253, 214, 6);
     var hm = 74 + Math.min(m[1], 600) / 600 * 58, ha = 62 + Math.min(m[2], 800) / 800 * 66;
     // lifting point and slings
-    var top = Y - Math.max(hm + 52, ha + 40, 168) - 14;
+    var top = Y - Math.max(hm + 74, ha + 40, 168) - 14;
     a.line(230, top, 40, Y - 4, "rgba(59,52,54,.28)", 1, { "stroke-dasharray": "3 3" }); a.line(230, top, 428, Y - 4, "rgba(59,52,54,.28)", 1, { "stroke-dasharray": "3 3" });
     a.circle(230, top - 4, 5, "none", { stroke: C.dark, sw: 2 });
     // skid frame with fork pockets
     a.rect(18, Y, 424, 10, yel, { sw: 1.3 }); a.rect(18, Y + 10, 424, 10, a.grad([[0, "#e6ad00"], [1, "#c48f00"]]), { sw: 1.3 });
     [70, 170, 290, 390].forEach(function (x) { a.rect(x, Y + 11, 26, 8, "#3b3436", { ns: true }); });
-    // --- HCM colloidal mixer (left)
-    var mx0 = 30, mx1 = 122, mcx = (mx0 + mx1) / 2, mtop = Y - hm;
-    a.path("M" + mx0 + "," + mtop + " H" + mx1 + " V" + (Y - 18) + " Q" + mx1 + "," + Y + " " + (mx1 - 18) + "," + Y + " H" + (mx0 + 18) + " Q" + mx0 + "," + Y + " " + mx0 + "," + (Y - 18) + " Z", yel, { sw: 1.5 });
-    a.rect(mx0 - 3, mtop - 6, mx1 - mx0 + 6, 8, yelV, { sw: 1.3 });
-    // motor standing on the lid
-    a.rect(mcx - 13, mtop - 44, 26, 38, yel, { sw: 1.3 }); a.ellipse(mcx, mtop - 44, 13, 5, "#ffe066", { sw: 1.2 }); a.rect(mcx - 9, mtop - 54, 18, 10, yelV, { sw: 1.1, rx: 3 });
-    for (i = 0; i < 4; i++) a.line(mcx - 10, mtop - 38 + i * 8, mcx + 10, mtop - 38 + i * 8, "rgba(120,80,0,.35)", 1);
-    // water inlet
-    a.path("M" + (mx0 + 8) + "," + (mtop - 6) + " V" + (mtop - 26) + " H" + (mx0 - 10), "none", { stroke: "#5b9cc6", sw: 4, "stroke-linecap": "round" });
-    // cut-away window: grout, swirl and the impeller
-    var wx0 = mx0 + 12, wx1 = mx1 - 12, wy0 = mtop + 14, wy1 = Y - 12;
+    // --- HCM colloidal mixer (left): a tank with a grid on top; under its side a high-shear pump (motor standing on the rotor housing)
+    // does the mixing, pumping the grout round a loop back up into the tank until a three-way valve sends it on to the agitator
+    var mx0 = 24, mx1 = 98, mcx = (mx0 + mx1) / 2, mtop = Y - hm - 8, mbot = Y - 30;
+    a.line(mx0 + 8, mbot - 6, mx0 + 8, Y, "#c48f00", 4); a.line(mx1 - 8, mbot - 6, mx1 - 8, Y, "#c48f00", 4);
+    a.path("M" + mx0 + "," + mtop + " H" + mx1 + " V" + (mbot - 10) + " Q" + mx1 + "," + mbot + " " + (mcx + 10) + "," + mbot + " H" + (mcx - 10) + " Q" + mx0 + "," + mbot + " " + mx0 + "," + (mbot - 10) + " Z", yel, { sw: 1.5 });
+    a.rect(mx0 - 3, mtop - 5, mx1 - mx0 + 6, 6, yelV, { sw: 1.2 });
+    for (i = 1; i < 7; i++) a.line(mx0 + i * (mx1 - mx0) / 7, mtop - 5, mx0 + i * (mx1 - mx0) / 7, mtop + 1, "#9b7a00", 1);
+    a.path("M" + (mx0 + 8) + "," + (mtop - 5) + " V" + (mtop - 24) + " H" + (mx0 - 8), "none", { stroke: "#5b9cc6", sw: 4, "stroke-linecap": "round" });
+    var wx0 = mx0 + 10, wx1 = mx1 - 10, wy0 = mtop + 12, wy1 = mbot - 8;
     a.rect(wx0, wy0, wx1 - wx0, wy1 - wy0, "#2f2a2c", { sw: 1.2 });
-    var lvl = wy0 + (wy1 - wy0) * 0.3;
+    var lvl = wy0 + (wy1 - wy0) * 0.28;
     a.rect(wx0 + 1, lvl, wx1 - wx0 - 2, wy1 - lvl - 1, grout, { ns: true });
+    a.rect(mcx - 22, mtop - 9, 44, 5, yelV, { sw: 1 });
+    a.rect(mcx - 11, mtop - 46, 22, 37, yel, { sw: 1.3 }); for (i = 0; i < 4; i++) a.line(mcx - 8, mtop - 40 + i * 8, mcx + 8, mtop - 40 + i * 8, "rgba(120,80,0,.35)", 1);
+    a.ellipse(mcx, mtop - 46, 11, 4, "#ffe066", { sw: 1.1 }); a.rect(mcx - 7, mtop - 55, 14, 9, yelV, { sw: 1, rx: 3 });
+    a.line(mcx, wy0, mcx, wy1 - 10, "#cfd3d6", 2.6);
+    var impY = wy1 - 13;
+    a.rect(mcx - 4, impY - 1, 8, 7, "#5b5456", { ns: true });
+    var bladeA = a.rect(mcx - 16, impY, 32, 5, steel, { sw: 0.8 }), bladeB = a.rect(mcx - 16, impY, 32, 5, a.grad([[0, "#9aa0a6"], [1, "#6b7177"]]), { sw: 0.8 });
     var swirl = [];
-    for (i = 0; i < 3; i++) swirl.push(a.path("M" + (wx0 + 6) + "," + (wy1 - 14 - i * 12) + " C" + (mcx - 10) + "," + (wy1 - 30 - i * 12) + " " + (mcx + 10) + "," + (wy1 - 2 - i * 12) + " " + (wx1 - 6) + "," + (wy1 - 18 - i * 12), "none", { stroke: "rgba(255,255,255,.45)", sw: 1.4, "stroke-dasharray": "6 7" }));
-    a.line(mcx, wy0, mcx, wy1 - 12, "#cfd3d6", 3);
-    var impHub = a.rect(mcx - 5, wy1 - 16, 10, 8, "#5b5456", { ns: true });
-    var bladeA = a.rect(mcx - 18, wy1 - 15, 36, 6, steel, { sw: 0.9 }), bladeB = a.rect(mcx - 18, wy1 - 15, 36, 6, a.grad([[0, "#9aa0a6"], [1, "#6b7177"]]), { sw: 0.9 });
-    a.rect(wx0 + 4, wy1 - 6, wx1 - wx0 - 8, 4, "#4a4446", { ns: true });
-    // pipe and valve to the agitator
-    a.path("M" + mx1 + "," + (Y - 14) + " H150", "none", { stroke: "#5b5456", sw: 6 });
-    a.rect(132, Y - 22, 6, 16, "#d23b2a", { sw: 0.8 });
-    // --- HRW agitator (middle)
-    var ax0 = 150, ax1 = 258, acx = (ax0 + ax1) / 2, atop = Y - ha;
-    a.rect(ax0, atop, ax1 - ax0, ha, yel, { sw: 1.5 });
+    for (i = 0; i < 3; i++) swirl.push(a.path("M" + (wx0 + 5) + "," + (wy1 - 10 - i * 11) + " C" + (mcx - 10) + "," + (wy1 - 24 - i * 11) + " " + (mcx + 10) + "," + (wy1 + 2 - i * 11) + " " + (wx1 - 5) + "," + (wy1 - 14 - i * 11), "none", { stroke: "rgba(255,255,255,.45)", sw: 1.3, "stroke-dasharray": "6 7" }));
+    // the high-shear pump: rotor housing with a window onto the spinning rotor, the motor standing on it
+    var hx = mx1 + 22, hy = Y - 17;
+    a.path("M" + mcx + "," + mbot + " V" + (hy + 6) + " H" + (hx - 12), "none", { stroke: "#5b5456", sw: 6 });
+    a.rect(hx - 12, hy - 60, 24, 44, yel, { sw: 1.3 }); for (i = 0; i < 5; i++) a.line(hx - 9, hy - 55 + i * 8, hx + 9, hy - 55 + i * 8, "rgba(120,80,0,.35)", 1);
+    a.ellipse(hx, hy - 60, 12, 4, "#ffe066", { sw: 1.1 });
+    a.rect(hx - 6, hy - 70, 12, 8, "#c9ccce", { sw: 0.9 }); a.rect(hx - 3, hy - 68, 6, 4, "#d23b2a", { ns: true });
+    a.circle(hx, hy, 15, yel, { sw: 1.4 }); a.circle(hx, hy, 10.5, "#2f2a2c", { sw: 1 });
+    var rotor = a.group({});
+    for (i = 0; i < 6; i++) { var va = i * Math.PI / 3; a.line(hx, hy, hx + Math.cos(va) * 9, hy + Math.sin(va) * 9, "#d9dde0", 1.8, {}, rotor); }
+    a.circle(hx, hy, 2.4, "#8a8184", { ns: true }, rotor);
+    // the loop back into the tank, with the three-way valve that sends the finished grout to the agitator
+    var rx = hx + 22, vy = mtop + 18, loop = "M" + (hx + 15) + "," + hy + " H" + rx + " V" + (mtop - 16) + " H" + (mcx + 14) + " V" + (mtop + 6);
+    a.path(loop, "none", { stroke: "#5b5456", sw: 6 });
+    var loopFlow = a.path(loop, "none", { stroke: "rgba(214,207,197,.9)", sw: 2, "stroke-dasharray": "3 7" });
+    a.rect(rx - 6, vy - 6, 12, 12, "#4a4446", { sw: 1 }); a.line(rx, vy, rx + 14, vy - 12, "#d23b2a", 2.6);
+    // --- HRW agitator (middle): motor and gearbox on top, one small paddle at the bottom next to the outlet
+    var ax0 = rx + 34, ax1 = ax0 + 98, acx = (ax0 + ax1) / 2, atop = Y - ha, abot = Y - 8;
+    a.path("M" + rx + "," + vy + " H" + (ax0 + 22) + " V" + (atop + 2), "none", { stroke: "#5b5456", sw: 5 });
+    a.line(ax0 + 6, abot, ax0 + 6, Y, "#c48f00", 4); a.line(ax1 - 6, abot, ax1 - 6, Y, "#c48f00", 4);
+    a.rect(ax0, atop, ax1 - ax0, abot - atop, yel, { sw: 1.5 });
     a.rect(ax0 - 3, atop - 4, ax1 - ax0 + 6, 6, yelV, { sw: 1.2 });
     for (i = 1; i < 8; i++) a.line(ax0 + i * (ax1 - ax0) / 8, atop - 4, ax0 + i * (ax1 - ax0) / 8, atop + 2, "#9b7a00", 1);
-    a.rect(acx - 26, atop - 10, 52, 6, yelV, { sw: 1 });
-    a.rect(acx - 10, atop - 34, 20, 24, yel, { sw: 1.2 }); a.ellipse(acx, atop - 34, 10, 4, "#ffe066", { sw: 1 });
-    var ax2 = ax0 + 12, ay0 = atop + 12, ay1 = Y - 10;
-    a.rect(ax2, ay0, ax1 - ax0 - 24, ay1 - ay0, "#2f2a2c", { sw: 1.2 });
-    a.rect(ax2 + 1, ay0 + (ay1 - ay0) * 0.22, ax1 - ax0 - 26, (ay1 - ay0) * 0.78 - 1, grout, { ns: true });
-    a.line(acx, ay0, acx, ay1 - 8, "#cfd3d6", 3);
-    var pad = [];
-    for (i = 0; i < 2; i++) pad.push(a.rect(acx - 26, ay0 + (ay1 - ay0) * (0.45 + i * 0.3), 52, 5, steel, { sw: 0.8 }));
-    // suction from the agitator to the pump
-    a.path("M" + ax1 + "," + (Y - 12) + " H292", "none", { stroke: "#5b5456", sw: 6 });
+    a.rect(acx - 30, atop - 8, 60, 5, yelV, { sw: 1 });
+    a.rect(acx - 9, atop - 26, 18, 18, yel, { sw: 1.2 });
+    a.rect(acx + 9, atop - 24, 30, 14, yel, { sw: 1.2 }); for (i = 0; i < 4; i++) a.line(acx + 14 + i * 6, atop - 23, acx + 14 + i * 6, atop - 11, "rgba(120,80,0,.35)", 1);
+    a.rect(acx - 30, atop - 30, 16, 14, "#c9ccce", { sw: 0.9 }); a.circle(acx - 22, atop - 23, 3, "#d23b2a", { ns: true });
+    var ax2 = ax0 + 10, ay0 = atop + 10, ay1 = abot - 6;
+    a.rect(ax2, ay0, ax1 - ax0 - 20, ay1 - ay0, "#2f2a2c", { sw: 1.2 });
+    a.rect(ax2 + 1, ay0 + (ay1 - ay0) * 0.2, ax1 - ax0 - 22, (ay1 - ay0) * 0.8 - 1, grout, { ns: true });
+    a.line(acx, ay0, acx, ay1 - 7, "#cfd3d6", 2.4);
+    var pad = [a.rect(acx - 12, ay1 - 9, 24, 4, steel, { sw: 0.7 })]; pad[0].__w = 24;
+    // outlet at the bottom, next to the paddle, with its valve, to the pump
+    a.path("M" + ax1 + "," + (abot - 8) + " H292", "none", { stroke: "#5b5456", sw: 6 });
+    a.rect(ax1 + 8, abot - 15, 6, 14, "#d23b2a", { sw: 0.8 });
     // --- ZMP piston pump: vertical plungers on a hydraulic block
     var n = m[7] === 2 ? 2 : 1, px0 = 292, px1 = 352, cyl = [];
     a.rect(px0, Y - 34, px1 - px0, 34, dark, { sw: 1.3 });
@@ -1757,11 +1774,13 @@
     var Qlpm = m[4] * 1000 / 60, vol = 120, lastT = 0;
     a.svg.__step = function (t) {
       var ang = t / 1000 * 22, c = Math.cos(ang), s2 = Math.cos(ang + Math.PI / 2);
-      bladeA.setAttribute("x", (mcx - 18 * Math.abs(c)).toFixed(1)); bladeA.setAttribute("width", (36 * Math.abs(c)).toFixed(1));
-      bladeB.setAttribute("x", (mcx - 18 * Math.abs(s2)).toFixed(1)); bladeB.setAttribute("width", (36 * Math.abs(s2)).toFixed(1));
+      rotor.setAttribute("transform", "rotate(" + ((ang * 180 / Math.PI) % 360).toFixed(1) + " " + hx + " " + hy + ")");
+      bladeA.setAttribute("x", (mcx - 16 * Math.abs(c)).toFixed(1)); bladeA.setAttribute("width", (32 * Math.abs(c)).toFixed(1));
+      bladeB.setAttribute("x", (mcx - 16 * Math.abs(s2)).toFixed(1)); bladeB.setAttribute("width", (32 * Math.abs(s2)).toFixed(1));
+      loopFlow.setAttribute("stroke-dashoffset", (-(t / 14)).toFixed(1));
       swirl.forEach(function (p, k) { p.setAttribute("stroke-dashoffset", (-(t / 18) * (1 + k * 0.2)).toFixed(1)); });
       var pa = t / 1000 * 1.6;
-      pad.forEach(function (p, k) { var w = 52 * Math.abs(Math.cos(pa + k * 0.9)); p.setAttribute("x", (acx - w / 2).toFixed(1)); p.setAttribute("width", w.toFixed(1)); });
+      pad.forEach(function (p, k) { var w = p.__w * Math.abs(Math.cos(pa + k * 0.9)); p.setAttribute("x", (acx - w / 2).toFixed(1)); p.setAttribute("width", w.toFixed(1)); });
       var ph = t / 1000 * 1.1;
       cyl.forEach(function (cy, k) { var u = 0.5 - 0.5 * Math.cos((ph + k * 0.5) * Math.PI * 2); cy.rod.setAttribute("y", (Y - 95 + u * 22).toFixed(1)); cy.rod.setAttribute("height", (30).toFixed(1)); });
       var puls = n === 2 ? 0.92 + 0.08 * Math.abs(Math.sin(ph * Math.PI * 2)) : 0.55 + 0.45 * Math.abs(Math.sin(ph * Math.PI * 2));

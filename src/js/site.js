@@ -1586,16 +1586,6 @@
       });
       box.appendChild(vg);
     }
-    var lgBox = document.querySelector(".lgrid");
-    if (lgBox) {
-      var lg = document.createElement("span"); lg.className = "pv__v"; lg.innerHTML = "<b>" + (sv ? "Loggor" : "Logos") + "</b>";
-      var sel = document.createElement("select"); sel.setAttribute("aria-label", sv ? "Rörelse för logotyperna" : "Logo motion");
-      var names = sv ? ["Puls", "Våg", "Strålkastare", "Gnistor", "Lyft", "Läsrad", "Andning", "Färg"] : ["Pulse", "Wave", "Spotlight", "Twinkle", "Lift", "Reader", "Breathe", "Colour"];
-      var cur = (/[?&]logos=([1-8])/.exec(location.search) || [])[1]; try { cur = cur || sessionStorage.getItem("bk-logos"); } catch (e) {} cur = cur || lgBox.getAttribute("data-g") || "1";
-      names.forEach(function (nm, i) { var o = document.createElement("option"); o.value = String(i + 1); o.textContent = (i + 1) + " " + nm; if (String(i + 1) === String(cur)) o.selected = true; sel.appendChild(o); });
-      sel.addEventListener("change", function () { if (window.__bkLogos) window.__bkLogos(sel.value); });
-      lg.appendChild(sel); box.appendChild(lg);
-    }
     document.body.appendChild(box);
   })();
 
@@ -2102,9 +2092,7 @@ window.addEventListener("afterprint", function () { [].forEach.call(document.que
   var links = [].slice.call(box.querySelectorAll(".lgrid__a")), cap = box.querySelector(".lgrid__cap"), capT = cap.querySelector("strong"), capX = cap.querySelector("span");
   var def = [capT.textContent, capX.textContent], cols = 5, n = links.length;
   var reduce = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
-  var m = /[?&]logos=([1-8])/.exec(location.search), g = m && m[1];
-  try { if (g) sessionStorage.setItem("bk-logos", g); else g = sessionStorage.getItem("bk-logos"); } catch (e) {}
-  if (g) box.setAttribute("data-g", g);
+  try { sessionStorage.removeItem("bk-logos"); } catch (e) {}
   var STEP = { 1: 1500, 2: 260, 3: 2600, 4: 900, 5: 1700, 6: 1600, 7: 0, 8: 2200 };
   var k = -1, timer = 0, paused = false, seen = false, order = [];
   function setCap(a) {
