@@ -2748,11 +2748,6 @@ body::before { display: none; }
 
 /* r34: when the header gets tight (above the burger menu), drop the quote button and use the short labels: "Om", "Kontakt" */
 .nav__short { display: none; }
-@media (min-width: 981px) and (max-width: 1280px) {
-  .hdr-offer { display: none !important; }
-  .nav__item > a .nav__long { display: none; }
-  .nav__item > a .nav__short { display: inline; }
-}
 /* the spotlight logo grid: edge logos grow inwards, and nothing may push the page sideways */
 .intro--home { overflow-x: clip; }
 .lgrid__list li:nth-child(5n + 1) .lgrid__a img { transform-origin: 18% 50%; }
@@ -2764,3 +2759,9 @@ body::before { display: none; }
 
 /* r35: half the hover zoom in the logo grid */
 .lgrid__a.is-hot img, .lgrid__a:hover img, .lgrid__a:focus-visible img { transform: scale(1.46); }
+/* only when the menu would not fit (site.js measures it and sets .is-tight on the header) */
+@media (min-width: 981px) {
+  .site-header.is-tight .hdr-offer { display: none !important; }
+  .site-header.is-tight .nav__item > a .nav__long { display: none; }
+  .site-header.is-tight .nav__item > a .nav__short { display: inline; }
+}

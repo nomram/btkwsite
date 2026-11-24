@@ -2135,3 +2135,21 @@ window.addEventListener("afterprint", function () { [].forEach.call(document.que
   else { seen = true; run(); }
   window.__bkLogos = function (x) { box.setAttribute("data-g", String(x)); try { sessionStorage.setItem("bk-logos", String(x)); } catch (e) {} k = -1; setCap(null); run(); };
 })();
+
+// ---------- header: when the menu and the tools no longer fit side by side, drop the quote button and use the short labels ----------
+(function () {
+  var hdr = document.querySelector(".site-header"), nav = hdr && hdr.querySelector(".nav__list"), tools = hdr && hdr.querySelector(".header-tools");
+  if (!nav || !tools) return;
+  var raf = 0;
+  function fit() {
+    raf = 0;
+    hdr.classList.remove("is-tight");
+    if (window.innerWidth <= 980) return;
+    var last = nav.lastElementChild, gap = tools.getBoundingClientRect().left - (last ? last.getBoundingClientRect().right : nav.getBoundingClientRect().right);
+    var wraps = [].some.call(nav.querySelectorAll(".nav__item > a"), function (l) { var r = document.createRange(); r.selectNodeContents(l); var rs = [].filter.call(r.getClientRects(), function (q) { return q.width > 0; }), top = rs.length ? rs[0].top : 0; return rs.some(function (q) { return Math.abs(q.top - top) > 4; }); });
+    if (gap < 16 || wraps) hdr.classList.add("is-tight");
+  }
+  window.addEventListener("resize", function () { if (!raf) raf = requestAnimationFrame(fit); });
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(fit);
+  fit();
+})();
