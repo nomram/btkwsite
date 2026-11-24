@@ -1,6 +1,6 @@
 {
   "path": "/artiklar/hallfasthetsklass-c25-30",
-  "updated": "2026-11-17",
+  "updated": "2026-11-24",
   "template": "article",
   "order": 10,
   "published": true,
@@ -30,7 +30,7 @@
       "blocks": [
         {
           "type": "text",
-          "html": "När betong beställs anges en hållfasthetsklass, till exempel C25/30. Bokstaven och siffrorna säger hur stark betongen minst ska vara. Prova nedan hur mycket en liten kub betong skulle tåla."
+          "html": "När du beställer betong frågar betongstationen vilken hållfasthetsklass du vill ha, till exempel C25/30. Det låter som en kod, men siffrorna säger bara hur mycket betongen minst ska tåla. Och det är mer än man tror: prova nedan hur många personbilar en liten kub kan bära."
         },
         {
           "type": "widget",
@@ -138,7 +138,7 @@
       "blocks": [
         {
           "type": "text",
-          "html": "When concrete is ordered, a strength class is stated, for example C25/30. The letter and the numbers say how strong the concrete must be at least. Try below how much a small cube of concrete would withstand."
+          "html": "When you order concrete, the plant asks which strength class you want, for example C25/30. It sounds like a code, but the numbers only say how much the concrete must at least withstand. And that is more than you might think: try below how many cars a small cube can carry."
         },
         {
           "type": "widget",

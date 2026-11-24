@@ -1,6 +1,6 @@
 {
   "path": "/artiklar/atgang-flytspackel-torrbruk",
-  "updated": "2026-11-10",
+  "updated": "2026-11-24",
   "template": "article",
   "order": 10,
   "published": true,
@@ -31,7 +31,7 @@
       "blocks": [
         {
           "type": "text",
-          "html": "Hur mycket material går det åt för att gjuta ett golv eller putsa en yta? Grundregeln är enkel: åtgången per kvadratmeter och millimeter gånger yta och tjocklek. Prova nedan och se vad det blir i kilo, säckar, storsäckar och silo."
+          "html": "Hur många säckar ska du beställa? Det är frågan före varje golvjobb. Räknar du för snålt står du utan material mitt i arbetet, och räknar du för generöst blir det säckar över. Grundregeln är enkel: åtgången per kvadratmeter och millimeter, gånger yta och tjocklek. Prova nedan och se vad det blir i kilo, säckar, storsäckar och silo."
         },
         {
           "type": "widget",
@@ -146,7 +146,7 @@
       "blocks": [
         {
           "type": "text",
-          "html": "How much material does it take to cast a floor or render a surface? The basic rule is simple: consumption per square metre and millimetre times area and thickness. Try it below and see what it comes to in kilos, bags, big bags and silo."
+          "html": "How many bags should you order? It is the question before every floor job. Count too tight and you run out halfway, count too generously and you are left with bags. The basic rule is simple: consumption per square metre and millimetre, times area and thickness. Try it below and see what it comes to in kilos, bags, big bags and silos."
         },
         {
           "type": "widget",

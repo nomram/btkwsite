@@ -1,6 +1,6 @@
 {
   "path": "/artiklar/cementtyper-cem-i-cem-ii",
-  "updated": "2026-11-18",
+  "updated": "2026-11-24",
   "template": "article",
   "order": 10,
   "published": true,
@@ -29,7 +29,7 @@
       "blocks": [
         {
           "type": "text",
-          "html": "På cementsäcken står något i stil med ”CEM II/A 42,5 R”. Det ser krångligt ut, men beteckningen är uppbyggd av tre delar som beskriver vad cementet innehåller och hur snabbt och starkt det blir."
+          "html": "Står du framför en pall cement kan texten på säcken se ut som en kod: ”CEM II/A-LL 42,5 R”. Men den är lättare att läsa än den ser ut. Beteckningen består av tre delar som berättar vad cementet innehåller, hur starkt det blir och hur snabbt det tar fart."
         },
         {
           "type": "heading",
@@ -130,7 +130,7 @@
       "blocks": [
         {
           "type": "text",
-          "html": "On a bag of cement it says something like “CEM II/A 42.5 R”. It looks complicated, but the marking is built from three parts that describe what the cement contains and how fast and strong it becomes."
+          "html": "Standing in front of a pallet of cement, the text on the bag can look like a code: “CEM II/A-LL 42.5 R”. But it is easier to read than it looks. The designation has three parts that tell you what the cement contains, how strong it gets and how quickly it gets going."
         },
         {
           "type": "heading",
