@@ -1457,38 +1457,78 @@
   }
 
   // ---------- 15. frost and air voids ----------
-  function frostScene(air, sat, frozen, risk) {
-    var a = art(360, 220, "wchart wfrost"), r = seeded(21), rv = seeded(5), i, voids = [];
+  // Frost in a slab edge, seen in section. Blue dots are water-filled pores, white bubbles are air voids. Frozen pores turn to ice;
+  // when the pores are too far from an air void the ice cracks the paste, and the cracks grow and the surface scales with every cycle.
+  function frostScene(air, sat, frozen, risk, cycles) {
+    cycles = cycles || 1;
+    var a = art(360, 220, "wchart wfrost"), r = seeded(21), rv = seeded(5), rc = seeded(9), i, voids = [], pores = [];
+    var X0 = 14, Y0 = 28, X1 = 346, Y1 = 208;
     a.rect(0, 0, 360, 220, a.grad([[0, "#eef3f6"], [1, "#dfe7ec"]]), { ns: true });
-    a.rect(14, 12, 332, 196, a.grad([[0, "#e6e0d6"], [1, "#cdc5b8"]]), { sw: 1.3, rx: 6 });
-    a.speckle(16, 14, 328, 192, 80, 4, ["#b9b0a2", "#f1ebe1"], 1.2);
+    // de-icing salt and slush on top, the cold air above
+    a.rect(X0, Y0, X1 - X0, Y1 - Y0, a.grad([[0, "#e6e0d6"], [1, "#cdc5b8"]]), { sw: 1.3 });
+    a.speckle(X0 + 2, Y0 + 2, X1 - X0 - 4, Y1 - Y0 - 4, 90, 4, ["#b9b0a2", "#f1ebe1", "#a99f90"], 1.4);
     var nAir = Math.round(air * 3.4);
-    for (i = 0; i < nAir; i++) { var vx = 28 + rv() * 304, vy = 26 + rv() * 168, vr = 5 + rv() * 6; voids.push([vx, vy, vr]); a.circle(vx, vy, vr, "#fbfdff", { stroke: "#93a3ad", sw: 1.1 }); a.circle(vx - vr * 0.3, vy - vr * 0.3, vr * 0.25, "#ffffff", { ns: true }); }
-    for (i = 0; i < 120; i++) {
-      var px = 24 + r() * 312, py = 22 + r() * 176, pr = 1.5 + r() * 2.2, wet = r() < sat, near = voids.some(function (v) { return Math.hypot(v[0] - px, v[1] - py) < v[2] + 24; }), roll = r();
-      a.circle(px, py, pr, wet ? (frozen ? "#eef9ff" : "#7fb6dc") : "#f7f3ed", { stroke: wet && frozen ? "#6aa8d2" : "rgba(59,52,54,.25)", sw: 0.8 });
-      if (frozen && wet && risk >= 2 && !near && roll < 0.4) a.path("M" + px.toFixed(1) + "," + py.toFixed(1) + " l" + (7 - r() * 14).toFixed(1) + "," + (7 - r() * 14).toFixed(1) + " l" + (7 - r() * 14).toFixed(1) + "," + (7 - r() * 14).toFixed(1), "none", { stroke: "#5b4a44", sw: 1.1 });
-      if (frozen && wet && risk === 1 && !near && roll < 0.15) a.path("M" + px.toFixed(1) + "," + py.toFixed(1) + " l" + (5 - r() * 10).toFixed(1) + "," + (5 - r() * 10).toFixed(1), "none", { stroke: "#7a6a62", sw: 0.9 });
+    for (i = 0; i < nAir; i++) { var vx = 28 + rv() * 304, vy = Y0 + 12 + rv() * (Y1 - Y0 - 22), vr = 4 + rv() * 5; voids.push([vx, vy, vr]); a.circle(vx, vy, vr, "#fbfdff", { stroke: "#93a3ad", sw: 1.1 }); a.circle(vx - vr * 0.3, vy - vr * 0.3, vr * 0.25, "#ffffff", { ns: true }); }
+    for (i = 0; i < 130; i++) {
+      var px = X0 + 10 + r() * (X1 - X0 - 20), py = Y0 + 8 + r() * (Y1 - Y0 - 16), pr = 1.6 + r() * 2.2, wet = r() < sat;
+      var dmin = voids.reduce(function (m, v) { return Math.min(m, Math.hypot(v[0] - px, v[1] - py) - v[2]); }, 999);
+      pores.push({ x: px, y: py, r: pr, wet: wet, far: dmin > 22 });
     }
+    var dmg = frozen ? (risk === 2 ? Math.min(1, 0.15 + 0.85 * Math.sqrt(cycles / 100)) : risk === 1 ? Math.min(0.45, 0.12 + 0.33 * Math.sqrt(cycles / 100)) : 0) : 0;
+    // cracks: from wet pores far from any air void, jagged and branching, longer with more cycles
+    if (dmg > 0) {
+      var cg = a.group({ "clip-path": a.clip("M" + X0 + "," + Y0 + " H" + X1 + " V" + Y1 + " H" + X0 + " Z") });
+      pores.forEach(function (p) {
+        if (!p.wet || !p.far || rc() > (risk === 2 ? 0.55 : 0.25)) return;
+        var len = (10 + rc() * 16) * (0.6 + dmg * 2.2), ang = rc() * Math.PI * 2, x = p.x, y = p.y, d = "M" + x.toFixed(1) + "," + y.toFixed(1), segs = 3 + Math.round(dmg * 4);
+        for (var k = 0; k < segs; k++) { ang += (rc() - 0.5) * 1.1; x += Math.cos(ang) * len / segs; y += Math.sin(ang) * len / segs; d += " L" + x.toFixed(1) + "," + y.toFixed(1); if (rc() < 0.3 * dmg) { var bx = x + Math.cos(ang + 1.2) * len / 3, by = y + Math.sin(ang + 1.2) * len / 3; a.path("M" + x.toFixed(1) + "," + y.toFixed(1) + " L" + bx.toFixed(1) + "," + by.toFixed(1), "none", { stroke: "#4a3c37", sw: 0.8 + dmg * 0.6, "stroke-linecap": "round" }, cg); } }
+        a.path(d, "none", { stroke: "#3f322e", sw: 0.9 + dmg * 1.4, "stroke-linecap": "round", "stroke-linejoin": "round" }, cg);
+      });
+    }
+    pores.forEach(function (p) {
+      var ice = frozen && p.wet;
+      a.circle(p.x, p.y, ice ? p.r * 1.15 : p.r, p.wet ? (ice ? "#e8f7ff" : "#7fb6dc") : "#f7f3ed", { stroke: ice ? "#5ea3d0" : "rgba(59,52,54,.25)", sw: ice ? 1 : 0.8 });
+      if (ice) { a.line(p.x - p.r * 0.8, p.y, p.x + p.r * 0.8, p.y, "#5ea3d0", 0.6); a.line(p.x, p.y - p.r * 0.8, p.x, p.y + p.r * 0.8, "#5ea3d0", 0.6); }
+    });
+    // surface scaling: flakes break off the top, more with every cycle
+    if (dmg > 0.3) {
+      var nF = Math.round(4 + dmg * 14), fx = X0 + 4;
+      for (i = 0; i < nF && fx < X1 - 8; i++) {
+        var w = 8 + rc() * 22, dep = 3 + rc() * 12 * dmg; fx += 2 + rc() * 16;
+        if (fx + w > X1 - 2) break;
+        a.path("M" + fx.toFixed(1) + "," + Y0 + " L" + (fx + w * 0.2).toFixed(1) + "," + (Y0 + dep).toFixed(1) + " L" + (fx + w * 0.7).toFixed(1) + "," + (Y0 + dep * 0.8).toFixed(1) + " L" + (fx + w).toFixed(1) + "," + Y0 + " Z", "#e7eef2", { stroke: "#8f8577", sw: 0.9 });
+        if (rc() < 0.6) a.poly([[fx + w * 0.3, Y0 - 6 - rc() * 8], [fx + w * 0.6, Y0 - 8 - rc() * 8], [fx + w * 0.55, Y0 - 2]], "#cdc5b8", { sw: 0.8 });
+        fx += w;
+      }
+    }
+    // frost and salt on the surface when frozen
+    if (frozen) { for (i = 0; i < 22; i++) { var sx = X0 + 6 + rc() * (X1 - X0 - 12); a.line(sx, Y0 - 3, sx + 3, Y0 - 7, "#9cc9e6", 1.1); } }
     return a.svg;
   }
   function buildFrost(app) {
-    var W = T.more.frost, S = { air: 2, sat: 92, frozen: false };
+    var W = T.more.frost, S = { air: 2, sat: 92, frozen: false, cyc: 1 };
+    var X = LANG === "sv"
+      ? { cyc: "Antal frys-tö-cykler", cycs: ["1", "10", "50", "100"], dmg: "Skador", d: ["Inga skador", "Fina sprickor", "Sprickor och avflagning"], more: "Mer luft och torrare betong ger mindre risk. Dra ner luften och upp vattenmättnaden för att se vad frosten gör." }
+      : { cyc: "Freeze-thaw cycles", cycs: ["1", "10", "50", "100"], dmg: "Damage", d: ["No damage", "Fine cracks", "Cracks and scaling"], more: "More air and drier concrete means less risk. Turn the air down and the saturation up to see what frost does." };
+    var CY = [1, 10, 50, 100];
     var sA = slider(W.air, 0.5, 8, 0.5, 2, function (v) { return num(v, 1) + " %"; }, function (v) { S.air = v; S.frozen = false; draw(); });
     var sS = slider(W.sat, 50, 100, 1, 92, function (v) { return num(v) + " %"; }, function (v) { S.sat = v; S.frozen = false; draw(); });
+    var sC = segmented(X.cyc, X.cycs, 0, function (i) { S.cyc = CY[i]; if (S.frozen) draw(); });
     var btn = el("button", { type: "button", class: "vbtn" }); btn.addEventListener("click", function () { S.frozen = !S.frozen; draw(); });
-    var box = el("div", { class: "wfrost__pic" }), big = el("p", { class: "wgt__big", "aria-live": "polite" }), stL = stat(W.spacing, "mm"), stR = stat(W.risk), msg = el("ul", { class: "wmsg" });
+    var box = el("div", { class: "wfrost__pic" }), big = el("p", { class: "wgt__big", "aria-live": "polite" }), stL = stat(W.spacing, "mm"), stR = stat(W.risk), stD = stat(X.dmg), msg = el("ul", { class: "wmsg" });
     function draw() {
       var L = 0.75 / Math.pow(S.air, 0.9), risk = S.sat < 86 ? 0 : L <= 0.2 ? 0 : L <= 0.3 ? 1 : 2;
-      box.innerHTML = ""; box.appendChild(frostScene(S.air, S.sat / 100, S.frozen, risk));
+      box.innerHTML = ""; box.appendChild(frostScene(S.air, S.sat / 100, S.frozen, risk, S.cyc));
       btn.textContent = S.frozen ? W.thaw : W.freeze;
       stL.set(num(L, 2)); stR.set(W.levels[risk]); stR.box.setAttribute("data-tone", ["good", "ok", "bad"][risk]);
+      stD.set(S.frozen ? X.d[risk] : "–"); stD.box.setAttribute("data-tone", S.frozen ? ["good", "ok", "bad"][risk] : "");
       big.textContent = S.frozen ? W.after[risk] : W.before;
       msg.innerHTML = "";
       if (S.sat < 86) msg.appendChild(el("li", { class: "wmsg__ok", text: W.dry }));
+      if (!S.frozen || risk === 0) msg.appendChild(el("li", { class: "wmsg__info", text: X.more }));
       msg.appendChild(el("li", { class: "wmsg__info", text: W.rule }));
     }
-    app.appendChild(el("div", { class: "wgt__grid" }, [el("div", { class: "wgt__ctl" }, [sA.box, sS.box, btn, el("div", { class: "stats" }, [stL.box, stR.box])]), el("div", { class: "wgt__out" }, [big, box, msg])]));
+    app.appendChild(el("div", { class: "wgt__grid" }, [el("div", { class: "wgt__ctl" }, [sA.box, sS.box, sC.box, btn, el("div", { class: "stats" }, [stL.box, stR.box, stD.box])]), el("div", { class: "wgt__out" }, [big, box, msg])]));
     app.appendChild(how(W.how));
     draw();
   }
