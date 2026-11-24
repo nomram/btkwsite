@@ -410,7 +410,8 @@ function homeLogoGrid(ctx, t) {
   const lis = items.map((it, i) => {
     const pt = ctx.tr(it.href, ctx.lang) || ctx.tr(it.href, ctx.defaultLang) || {}, name = it.title || titleOf(ctx, it.href);
     const desc = String(pt.description || pt.summary || "").replace(/\s+/g, " ").trim();
-    return `<li style="--i:${i}"><a class="lgrid__a" href="${esc(localizeHref(ctx, it.href))}" data-name="${esc(name)}" data-desc="${esc(desc)}" aria-label="${esc(name)}">${imgTag(ctx, it.image, "", { sizes: "120px" }).replace('loading="lazy"', 'loading="eager"')}</a></li>`;
+    const pg = ctx.pages.get(it.href), logo = (pg && (pg.menuLogo || pg.logo)) || it.image;
+    return `<li style="--i:${i}"><a class="lgrid__a" href="${esc(localizeHref(ctx, it.href))}" data-name="${esc(name)}" data-desc="${esc(desc)}" aria-label="${esc(name)}">${imgTag(ctx, logo, "", { sizes: "120px" }).replace('loading="lazy"', 'loading="eager"')}</a></li>`;
   }).join("");
   const cap = `<p class="lgrid__cap" aria-live="polite"><strong>${esc(strip.title || ctx.ui.makers || "Tillverkare vi representerar")}</strong><span>${esc(ctx.ui.lgrid_hint || "Peka på en logga för att läsa mer, klicka för att gå dit.")}</span></p>`;
   return `<div class="lgrid" data-g="3"><ul class="lgrid__list">${lis}</ul>${cap}</div>`;

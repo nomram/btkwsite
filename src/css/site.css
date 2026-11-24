@@ -2770,3 +2770,11 @@ body::before { display: none; }
 .wvet { display: block; width: 100%; height: auto; }
 .wbk__b--v { --bk: #3fa08c; }
 .wvc__cans { margin: .4rem 0 1rem; }
+
+/* r37: the logo grid uses the trimmed logos, each centred in its cell with room around it, so nothing overlaps;
+   the spotlight is a very slight lift and the colour coming back */
+.lgrid__a { display: flex !important; align-items: center; justify-content: center; overflow: hidden; }
+.lgrid__a img, .lgrid__list li .lgrid__a img { position: static !important; inset: auto; width: auto !important; height: auto !important; max-width: 74% !important; max-height: 46% !important; object-fit: contain;
+  transform: none !important; transform-origin: 50% 50% !important; filter: grayscale(1); opacity: .5; mix-blend-mode: multiply; transition: transform .6s cubic-bezier(.2, .8, .2, 1), filter .6s ease, opacity .6s ease; }
+.lgrid__a.is-hot img, .lgrid__a:hover img, .lgrid__a:focus-visible img { transform: scale(1.05) !important; filter: none; opacity: 1; }
+.lgrid[data-g="3"].is-tour .lgrid__a:not(.is-hot) img { opacity: .32; }
