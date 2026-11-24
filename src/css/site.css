@@ -2658,3 +2658,82 @@ body::before { display: none; }
 .hero--home[data-v] .hero__facts .hf__tip::after { left: 50%; margin-left: -6px; }
 @media (max-width: 560px) { .hero--home[data-v] .hero__facts .hf__tip { left: auto; right: 0; translate: none; } .hero--home[data-v] .hero__facts .hf__tip::after { left: auto; right: 1.1rem; margin-left: 0; } }
 .hero--home[data-v="a"] .hero__facts strong, .hero--home[data-v="a"] .hero__facts .hf strong { font-family: var(--font); font-weight: 600; letter-spacing: -.005em; font-size: clamp(1.1rem, .95rem + .55vw, 1.45rem); }
+
+/* r33: the banner buttons as on the original site: translucent with white text and the orange edge, and an orange outline */
+.hero--home[data-v]:not([data-v="c"]) .hero__ctas .btn { border-radius: 0; font: 600 .9rem/1.2 var(--font); letter-spacing: .02em; border-width: 2px; -webkit-backdrop-filter: none; backdrop-filter: none; }
+.hero--home[data-v]:not([data-v="c"]) .hero__ctas .btn:first-child { padding: .78rem 1.35rem .78rem 1.6rem; background: rgba(255, 255, 255, .12); border-color: rgba(255, 255, 255, .12); color: #fff; box-shadow: inset 4px 0 0 var(--primary) !important; }
+.hero--home[data-v]:not([data-v="c"]) .hero__ctas .btn:first-child:hover { background: rgba(255, 255, 255, .24); border-color: rgba(255, 255, 255, .24); color: #fff; }
+.hero--home[data-v]:not([data-v="c"]) .hero__ctas .btn + .btn { padding: .78rem 1.35rem; background: transparent; border-color: var(--primary); color: #fff; box-shadow: none !important; }
+.hero--home[data-v]:not([data-v="c"]) .hero__ctas .btn + .btn:hover { background: var(--primary); border-color: var(--primary); color: #231f20; }
+
+/* r33: the products dropdown. Its brand row shares the .logorow name with the rolling strip, so undo the strip's margins and fade here,
+   and keep the scrollbar from appearing and disappearing (which narrowed the row and made the logos jump) */
+.mega .logorow { margin: 0 !important; opacity: 1 !important; transform: none !important; }
+.mega--logos .container { padding-block: .9rem .9rem; }
+.mega { overflow-y: auto; overflow-x: hidden; scrollbar-width: none; overscroll-behavior: contain; }
+.mega::-webkit-scrollbar { display: none; }
+@media (min-width: 1100px) { .mega .logorow > li { flex: 0 0 calc((100% - 7 * .6rem) / 8); } }
+.mega__panel { min-height: 0; }
+
+/* r33: the IC plant drawing and the logger note */
+.wic__pic svg { display: block; width: 100%; height: auto; }
+.wic__log { margin: .2rem 0 1rem; padding: .7rem .9rem .7rem 1rem; border-left: 3px solid #f2bf12; background: #faf8f5; font-size: .92rem; line-height: 1.55; }
+.wic__log[hidden] { display: none; }
+
+/* r33: grouting scene: pressure meter, the kick when the pressure pushes back */
+.wtat__sub { margin: -.4rem 0 .8rem; min-height: 3em; font-size: .95rem; line-height: 1.55; color: var(--muted); }
+.wmeter--p { margin-top: .5rem; } .wmeter--p i { background: var(--primary); transition: width .12s linear; }
+.wmeter--p.is-kick i { background: #d23b2a; }
+.wtat__pic.is-kick svg { animation: tatKick .18s ease-out; }
+@keyframes tatKick { 30% { transform: translate(1px, -1px); } 60% { transform: translate(-1px, 1px); } }
+@media (prefers-reduced-motion: reduce) { .wtat__pic.is-kick svg { animation: none; } }
+
+/* =====================================================================================================
+   r33: home logo grid beside the intro. Tight, grey like the rolling strip; one of eight motions (data-g) brings logos forward in turn
+   ===================================================================================================== */
+.intro--home .intro__inner { grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr); align-items: center; gap: 2rem clamp(2.5rem, 6vw, 6rem); }
+.lgrid { position: relative; }
+.lgrid__list { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 0; }
+.lgrid__list li { position: relative; }
+.lgrid__a { position: relative; display: block; aspect-ratio: 5 / 4; overflow: visible; z-index: 0; outline-offset: -2px; }
+.lgrid__a img { position: absolute; inset: 0; width: 100% !important; height: 100% !important; object-fit: contain; transform: scale(1.3); filter: grayscale(1); opacity: .5; mix-blend-mode: multiply;
+  transition: transform .7s cubic-bezier(.2, .8, .2, 1), filter .6s ease, opacity .6s ease; }
+.lgrid__a.is-hot { z-index: 2; }
+.lgrid__a.is-hot img, .lgrid__a:hover img, .lgrid__a:focus-visible img { filter: none; opacity: 1; transform: scale(1.62); }
+.lgrid__cap { display: flex; flex-direction: column; gap: .25rem; min-height: 4.6rem; margin: 1.2rem 0 0; padding-top: .9rem; border-top: 1px solid var(--line); }
+.lgrid__cap strong { font-size: .7rem; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; color: var(--text); }
+.lgrid__cap span { font-size: .92rem; line-height: 1.55; color: var(--muted); display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; line-clamp: 2; overflow: hidden; }
+.lgrid__cap.is-swap { animation: lgCap .45s ease both; }
+@keyframes lgCap { from { opacity: 0; transform: translateY(4px); } }
+
+/* 2 wave: several at once, a gentler lift */
+.lgrid[data-g="2"] .lgrid__a.is-hot img { transform: scale(1.48); }
+/* 3 spotlight: the others step further back */
+.lgrid[data-g="3"].is-tour .lgrid__a:not(.is-hot) img { opacity: .22; }
+/* 4 twinkle: quicker, softer */
+.lgrid[data-g="4"] .lgrid__a img { transition-duration: .5s; }
+.lgrid[data-g="4"] .lgrid__a.is-hot img { transform: scale(1.45); }
+/* 5 lift: the logo rises onto a white card with a shadow */
+.lgrid[data-g="5"] .lgrid__a::before { content: ""; position: absolute; inset: -6%; background: #fff; box-shadow: 0 14px 34px -14px rgba(35, 31, 32, .35); opacity: 0; transform: scale(.9); transition: opacity .5s, transform .6s cubic-bezier(.2, .8, .2, 1); z-index: -1; }
+.lgrid[data-g="5"] .lgrid__a.is-hot::before, .lgrid[data-g="5"] .lgrid__a:hover::before { opacity: 1; transform: scale(1.18); }
+.lgrid[data-g="5"] .lgrid__a.is-hot img, .lgrid[data-g="5"] .lgrid__a:hover img { transform: scale(1.5); mix-blend-mode: normal; }
+/* 6 reader: an orange line fills under the logo while it is in focus */
+.lgrid[data-g="6"] .lgrid__a::after { content: ""; position: absolute; left: 18%; right: 18%; bottom: 2px; height: 2px; background: var(--primary); transform: scaleX(0); transform-origin: left; }
+.lgrid[data-g="6"] .lgrid__a.is-hot::after { animation: lgRead var(--lg-step, 1600ms) linear both; }
+@keyframes lgRead { to { transform: scaleX(1); } }
+.lgrid[data-g="6"] .lgrid__a.is-hot img { transform: scale(1.42); }
+/* 7 breathing: everyone, slowly and out of step */
+.lgrid[data-g="7"] .lgrid__a img { animation: lgBreathe 6.5s ease-in-out infinite; animation-delay: calc(var(--i, 0) * -.43s); }
+@keyframes lgBreathe { 0%, 100% { transform: scale(1.22); opacity: .42; } 50% { transform: scale(1.5); opacity: .85; filter: grayscale(.3); } }
+.lgrid[data-g="7"] .lgrid__a:hover img { animation-play-state: paused; }
+/* 8 colour and corner: a small orange square marks the logo in focus */
+.lgrid[data-g="8"] .lgrid__a::after { content: ""; position: absolute; right: 10%; top: 12%; width: 7px; height: 7px; background: var(--primary); opacity: 0; transform: scale(.4); transition: opacity .4s, transform .5s cubic-bezier(.2, .8, .2, 1); }
+.lgrid[data-g="8"] .lgrid__a.is-hot::after, .lgrid[data-g="8"] .lgrid__a:hover::after { opacity: 1; transform: none; }
+.lgrid[data-g="8"] .lgrid__a.is-hot img { transform: scale(1.5); }
+@media (prefers-reduced-motion: reduce) { .lgrid__a img { transition: none; } .lgrid[data-g="7"] .lgrid__a img { animation: none; } }
+@media (max-width: 860px) { .intro--home .intro__inner { grid-template-columns: 1fr; } }
+@media (max-width: 480px) { .lgrid__list { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+
+/* the logo motion chooser in the preview pill */
+.pv { flex-wrap: wrap; max-width: calc(100vw - 1.6rem); border-radius: 18px; }
+.pv__v select { height: 1.75rem; border: 0; border-radius: 999px; padding: 0 .6rem; background: #fff; color: #231f20; font: 700 .72rem var(--font); cursor: pointer; }

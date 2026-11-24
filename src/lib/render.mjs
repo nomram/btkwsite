@@ -400,6 +400,21 @@ function renderCreds(ctx, b) {
 function renderClients(ctx, b) {
   return `<section class="clients">${b.kicker ? `<p class="sec-kicker">${esc(b.kicker)}</p>` : ""}${b.title ? `<h2 class="clients__h">${esc(b.title)}</h2>` : ""}${b.intro ? `<p class="clients__intro">${esc(b.intro)}</p>` : ""}<ul class="clients__list">${(b.items || []).map((x, i) => `<li style="--i:${i}"><span>${esc(x)}</span></li>`).join("")}${b.more ? `<li class="clients__more"><span>${esc(b.more)}</span></li>` : ""}</ul></section>`;
 }
+// Home: the manufacturers as a tight grey grid beside the intro; site.js runs one of eight looping highlight motions (data-g),
+// hovering shows the manufacturer's line, clicking opens its page. Built from the home page's logo strip (cards, style marquee).
+function homeLogoGrid(ctx, t) {
+  const strip = flatBlocks(t.blocks || []).find((b) => b.type === "cards" && b.style === "marquee");
+  if (!strip || ctx.edit) return "";
+  const items = (strip.items || []).filter((it) => it.image && shown(ctx, it.href));
+  if (!items.length) return "";
+  const lis = items.map((it, i) => {
+    const pt = ctx.tr(it.href, ctx.lang) || ctx.tr(it.href, ctx.defaultLang) || {}, name = it.title || titleOf(ctx, it.href);
+    const desc = String(pt.description || pt.summary || "").replace(/\s+/g, " ").trim();
+    return `<li style="--i:${i}"><a class="lgrid__a" href="${esc(localizeHref(ctx, it.href))}" data-name="${esc(name)}" data-desc="${esc(desc)}" aria-label="${esc(name)}">${imgTag(ctx, it.image, "", { sizes: "120px" }).replace('loading="lazy"', 'loading="eager"')}</a></li>`;
+  }).join("");
+  const cap = `<p class="lgrid__cap" aria-live="polite"><strong>${esc(strip.title || ctx.ui.makers || "Tillverkare vi representerar")}</strong><span>${esc(ctx.ui.lgrid_hint || "Peka på en logga för att läsa mer, klicka för att gå dit.")}</span></p>`;
+  return `<div class="lgrid" data-g="1"><ul class="lgrid__list">${lis}</ul>${cap}</div>`;
+}
 function renderFaq(ctx, b) {
   const items = (b.items || []).filter((i) => i && i.q && i.a);
   if (!items.length) return "";
@@ -1491,7 +1506,7 @@ export function renderMain(ctx, page, t) {
   const pageFld = (k) => (ctx.edit ? ` data-bk-page="${k}" data-bk-kind="plain"` : "");
   const display = t.display && !ctx.edit;
   // with a display line the banner only carries that line; the real heading and the lead sit in a calm intro right under the banner
-  const introHtml = display && isHome ? (t.lead ? `<section class="intro intro--home"><div class="container intro__inner"><p class="intro__lead">${esc(t.lead)}</p></div></section>` : "") : display ? `<section class="intro"><div class="container intro__inner"><h1 class="intro__h">${esc(title)}</h1>${t.lead ? `<p class="intro__lead">${esc(t.lead)}</p>` : ""}</div></section>` : "";
+  const introHtml = display && isHome ? (t.lead ? `<section class="intro intro--home"><div class="container intro__inner"><p class="intro__lead">${esc(t.lead)}</p>${homeLogoGrid(ctx, t)}</div></section>` : "") : display ? `<section class="intro"><div class="container intro__inner"><h1 class="intro__h">${esc(title)}</h1>${t.lead ? `<p class="intro__lead">${esc(t.lead)}</p>` : ""}</div></section>` : "";
   const headHtml = display && isHome ? `<p class="hero__slogan">${esc(t.display)}</p><h1 class="hero__what">${esc(title)}</h1>${t.lead ? `<p class="hero__lead hero__lead--home">${esc(t.leadShort || t.lead)}</p>` : ""}${ctas ? `<div class="hero__ctas">${ctas}</div>` : ""}` : `${eyebrow}${display ? `<p class="hero__title">${esc(t.display)}</p>` : `<h1 class="hero__title"${pageFld("h1")}>${esc(title)}</h1>`}${!display && (t.lead || (ctx.edit && heroImg)) ? `<p class="hero__lead"${pageFld("lead")}>${esc(t.lead || "")}</p>` : ""}${ctas ? `<div class="hero__ctas">${ctas}</div>` : ""}`;
   const heroInner = `<div class="container hero__inner">${headHtml}${heroFacts}</div>`;
   // Split banner (the products page): two pictures meet in a diagonal; site.js greys out the side that is not selected in the filter

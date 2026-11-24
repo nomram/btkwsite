@@ -41,7 +41,7 @@
           "type": "widget",
           "kind": "tatning",
           "title": "Täta en tunnel",
-          "intro": "Vatten droppar in genom sprickor i berget. Borra hålen, injektera och se vad som händer med inläckaget."
+          "intro": "Vatten droppar in genom sprickor i berget. Borra hålen och injektera ett hål i taget. Se hur packern dras tillbaka i etapper och hur trycket trycker tillbaka."
         },
         {
           "type": "heading",
@@ -65,6 +65,19 @@
         {
           "type": "text",
           "html": "Först borras hål där bruket ska in. I en tunnel borras de ofta i en solfjäder runt tunneln, framför den del som ska sprängas. Sedan blandas bruket, oftast cement och vatten, i en kraftig blandare. En pump trycker in bruket i hålet genom en packer, en sorts propp som tätar mot hålets vägg. Pumpningen pågår tills ett bestämt tryck eller en största volym har nåtts. Det kallas stoppkriterier, och de bestäms innan arbetet börjar."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Packern, etapperna och trycket som trycker tillbaka"
+        },
+        {
+          "type": "text",
+          "html": "Bruket pumpas in genom en packer, en propp med gummi som expanderar och tätar mot borrhålets vägg. Ofta injekteras hålet i etapper: packern sätts långt in, bruket pumpas tills stoppkriteriet nås, och sedan dras packern tillbaka en bit till nästa etapp, ända ut mot hålets mynning."
+        },
+        {
+          "type": "text",
+          "html": "Trycket verkar åt alla håll, även bakåt mot packern. När trycket byggs upp vill packern glida ut ur hålet, och slangen rycker till, särskilt om ett stopp släpper eller trycket ändras snabbt. Därför ska packern vara ordentligt expanderad, slangen säkrad med slangsäkring, och ingen ska stå framför hålet medan det pumpas."
         },
         {
           "type": "note",
@@ -111,9 +124,13 @@
             [
               "Största räckvidd i en spricka",
               "R = övertryck × spricköppning ÷ (2 × sträckgräns)"
+            ],
+            [
+              "Kraft som trycker ut packern",
+              "tryck × hålets tvärsnittsarea"
             ]
           ],
-          "example": "Om inläckaget går från 18 till 2 liter per minut blir tätningseffekten 1 − 2 ÷ 18 ≈ 0,89, alltså ungefär 89 procent."
+          "example": "Om inläckaget går från 18 till 2 liter per minut blir tätningseffekten 1 − 2 ÷ 18 ≈ 0,89, alltså ungefär 89 procent. Och med 30 bar i ett hål med 64 mm diameter blir kraften på packern 3 000 000 × 3,14 × 0,032² ≈ 9 700 N, nästan ett ton."
         },
         {
           "type": "faq",
@@ -162,7 +179,7 @@
           "type": "widget",
           "kind": "tatning",
           "title": "Seal a tunnel",
-          "intro": "Water drips in through cracks in the rock. Drill the holes, grout and see what happens to the inflow."
+          "intro": "Water drips in through cracks in the rock. Drill the holes and grout one hole at a time. Watch the packer being pulled back in stages and the pressure pushing back."
         },
         {
           "type": "heading",
@@ -186,6 +203,19 @@
         {
           "type": "text",
           "html": "First, holes are drilled where the grout should go. In a tunnel they are often drilled in a fan around the tunnel, ahead of the part that is to be blasted. Then the grout, usually cement and water, is mixed in a powerful mixer. A pump pushes the grout into the hole through a packer, a kind of plug that seals against the wall of the hole. Pumping goes on until a set pressure or a largest volume has been reached. These are called stop criteria, and they are decided before the work starts."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "The packer, the stages and the pressure that pushes back"
+        },
+        {
+          "type": "text",
+          "html": "The grout is pumped in through a packer, a rubber plug that expands and seals against the wall of the drill hole. The hole is often grouted in stages: the packer is set deep in, grout is pumped until the stop criterion is reached, and then the packer is pulled back a little to the next stage, all the way out towards the collar."
+        },
+        {
+          "type": "text",
+          "html": "The pressure acts in every direction, including backwards against the packer. As the pressure builds, the packer wants to slide out of the hole and the hose jerks, especially if a blockage gives way or the pressure changes quickly. That is why the packer must be properly expanded, the hose secured with a whip check, and nobody should stand in front of the hole while it is being pumped."
         },
         {
           "type": "note",
@@ -232,9 +262,13 @@
             [
               "Largest reach in a crack",
               "R = excess pressure × aperture ÷ (2 × yield stress)"
+            ],
+            [
+              "Force pushing the packer out",
+              "pressure × cross-section of the hole"
             ]
           ],
-          "example": "If the inflow drops from 18 to 2 litres per minute, the sealing effect is 1 − 2 ÷ 18 ≈ 0.89, or about 89 percent."
+          "example": "If the inflow drops from 18 to 2 litres per minute, the sealing effect is 1 − 2 ÷ 18 ≈ 0.89, or about 89 percent. And with 30 bar in a 64 mm hole, the force on the packer is 3,000,000 × 3.14 × 0.032² ≈ 9,700 N, almost a tonne."
         },
         {
           "type": "faq",

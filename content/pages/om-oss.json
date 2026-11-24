@@ -135,30 +135,33 @@
           "items": [
             {
               "label": "Där allt började",
-              "title": "Betongakuten startar",
-              "text": "Det började med betong. Idén var enkel: entreprenörer behöver någon som både kan leverera material och svara på hur det ska användas."
-            },
-            {
-              "label": "Betong och ytor",
-              "title": "Ecobeton, Weber och Mapei",
-              "text": "De första tillverkarna kom från betongens och ytornas värld: system för att laga, täta och skydda betong från Ecobeton, puts, murbruk och golv från Weber, och byggkemi från Mapei.",
+              "title": "Betongakuten startar, med Mapei",
+              "text": "Det började med betong. Idén var enkel: entreprenörer behöver någon som både kan leverera material och svara på hur det ska användas. Mapei och deras byggkemi fanns med från första dagen.",
               "brands": [
-                "/produkter/ecobeton",
-                "/produkter/weber",
                 "/produkter/mapei"
               ]
             },
             {
-              "label": "Under jord",
-              "title": "Ischebeck och Häny",
-              "text": "Sedan gick vi under jord. Med Ischebeck kom förankring och mikropålar, och med Häny injekteringspumpar och blandare från Schweiz.",
+              "label": "Betong och ytor",
+              "title": "Ecobeton och Weber",
+              "text": "Snart kom fler tillverkare från betongens och ytornas värld: system för att laga, täta och skydda betong från Ecobeton, och puts, murbruk och golv från Weber.",
               "brands": [
-                "Ischebeck",
-                "/produkter/haeny"
+                "/produkter/ecobeton",
+                "/produkter/weber"
               ]
             },
             {
-              "label": "2020",
+              "label": "Under jord",
+              "title": "Ischebeck, Häny och AHLM",
+              "text": "Sedan gick vi under jord. Med Ischebeck kom förankring och mikropålar, med Häny injekteringspumpar och blandare från Schweiz, och med AHLM silos och säcktömmare för torrbruk.",
+              "brands": [
+                "Ischebeck",
+                "/produkter/haeny",
+                "/produkter/ahlm"
+              ]
+            },
+            {
+              "label": "2018",
               "title": "Kraft Tool",
               "text": "Slevar, putsbrädor och andra handverktyg för betongytor från Kraft Tool i USA.",
               "brands": [
@@ -166,7 +169,7 @@
               ]
             },
             {
-              "label": "2021",
+              "label": "2019",
               "title": "TEI och REED",
               "text": "Året därpå kom två amerikanska tillverkare: TEI med borrmaster och borriggar för mikropålar och förankring, och REED med maskiner för sprutbetong och betongpumpar.",
               "brands": [
@@ -175,11 +178,12 @@
               ]
             },
             {
-              "label": "Grundläggning",
-              "title": "Marini",
-              "text": "Marini gav oss specialmaskiner för grundläggning och stenbrott, som borriggar och vajersågar.",
+              "label": "Grundläggning och berg",
+              "title": "Marini och Brutus",
+              "text": "Marini gav oss specialmaskiner för grundläggning och stenbrott, som borriggar och vajersågar. Samtidigt kom Brutus snigeldynamit, som spräcker berg och sten utan vibrationer och buller.",
               "brands": [
-                "/produkter/marini"
+                "/produkter/marini",
+                "/produkter/brutus"
               ]
             },
             {
@@ -509,30 +513,33 @@
           "items": [
             {
               "label": "Where it began",
-              "title": "Betongakuten starts",
-              "text": "It started with concrete. The idea was simple: contractors need someone who can both supply materials and answer how to use them."
-            },
-            {
-              "label": "Concrete and surfaces",
-              "title": "Ecobeton, Weber and Mapei",
-              "text": "The first manufacturers came from the world of concrete and surfaces: systems to repair, seal and protect concrete from Ecobeton, render, mortar and floors from Weber, and construction chemicals from Mapei.",
+              "title": "Betongakuten starts, with Mapei",
+              "text": "It started with concrete. The idea was simple: contractors need someone who can both supply materials and answer how to use them. Mapei and their construction chemicals were there from day one.",
               "brands": [
-                "/produkter/ecobeton",
-                "/produkter/weber",
                 "/produkter/mapei"
               ]
             },
             {
-              "label": "Underground",
-              "title": "Ischebeck and Häny",
-              "text": "Then we went underground. Ischebeck brought anchoring and micropiles, and Häny brought grouting pumps and mixers from Switzerland.",
+              "label": "Concrete and surfaces",
+              "title": "Ecobeton and Weber",
+              "text": "More manufacturers soon followed from the world of concrete and surfaces: systems to repair, seal and protect concrete from Ecobeton, and render, mortar and floors from Weber.",
               "brands": [
-                "Ischebeck",
-                "/produkter/haeny"
+                "/produkter/ecobeton",
+                "/produkter/weber"
               ]
             },
             {
-              "label": "2020",
+              "label": "Underground",
+              "title": "Ischebeck, Häny and AHLM",
+              "text": "Then we went underground. Ischebeck brought anchoring and micropiles, Häny brought grouting pumps and mixers from Switzerland, and AHLM brought silos and bag emptiers for dry mortar.",
+              "brands": [
+                "Ischebeck",
+                "/produkter/haeny",
+                "/produkter/ahlm"
+              ]
+            },
+            {
+              "label": "2018",
               "title": "Kraft Tool",
               "text": "Trowels, floats and other hand tools for concrete surfaces from Kraft Tool in the USA.",
               "brands": [
@@ -540,7 +547,7 @@
               ]
             },
             {
-              "label": "2021",
+              "label": "2019",
               "title": "TEI and REED",
               "text": "The year after came two American manufacturers: TEI with drill masts and rigs for micropiles and anchoring, and REED with shotcrete machines and concrete pumps.",
               "brands": [
@@ -549,11 +556,12 @@
               ]
             },
             {
-              "label": "Foundations",
-              "title": "Marini",
-              "text": "Marini brought special machines for foundations and quarrying, such as drill rigs and wire saws.",
+              "label": "Foundations and rock",
+              "title": "Marini and Brutus",
+              "text": "Marini brought special machines for foundations and quarrying, such as drill rigs and wire saws. At the same time came Brutus, which splits rock and stone without vibration or noise.",
               "brands": [
-                "/produkter/marini"
+                "/produkter/marini",
+                "/produkter/brutus"
               ]
             },
             {

@@ -1647,34 +1647,148 @@
     ["IC 1100/710", 300, 800, 710, 5.0, 100, 17.5, 1], ["IC 1100/712", 300, 800, 712, 4.9, 88, 17.5, 1], ["IC 1100/725", 300, 800, 725, 5.0, 100, 19.0, 2], ["IC 1100/726", 300, 800, 726, 5.0, 100, 39.8, 2],
     ["IC 1400/710", 600, 800, 710, 7.5, 100, 17.5, 1], ["IC 1400/712", 600, 800, 712, 4.9, 88, 17.5, 1], ["IC 1400/725", 600, 800, 725, 8.0, 100, 19.0, 2], ["IC 1400/726", 600, 800, 726, 8.0, 100, 39.8, 2]
   ];
-  function icScene(m, labels) {
-    var a = art(420, 230, "wchart wic"), hm = 46 + m[1] / 600 * 64, ha = 42 + m[2] / 800 * 82, Y = 186, yel = a.grad([[0, "#ffd84a"], [1, "#e3a800"]], true), i;
-    a.rect(0, 0, 420, 230, a.grad([[0, "#fff7ea"], [1, "#f4ead9"]]), { ns: true });
-    a.rect(0, 206, 420, 24, a.grad([[0, "#cdbb94"], [1, "#a8966c"]]), { ns: true });
-    var top = Math.min(Y - hm, Y - ha) - 34;
-    a.line(210, top, 44, Y - 2, "rgba(59,52,54,.35)", 1, { "stroke-dasharray": "3 3" }); a.line(210, top, 376, Y - 2, "rgba(59,52,54,.35)", 1, { "stroke-dasharray": "3 3" });
-    a.circle(210, top - 4, 5, "none", { stroke: C.dark, sw: 2 });
-    a.rect(24, Y, 372, 12, a.grad([[0, "#5b5456"], [1, "#2f2a2c"]]), { sw: 1.2 }); a.rect(40, Y + 12, 14, 8, "#2f2a2c", { ns: true }); a.rect(366, Y + 12, 14, 8, "#2f2a2c", { ns: true });
-    a.rect(36, Y - hm, 84, hm, yel, { sw: 1.5, rx: 8 }); a.rect(62, Y - hm - 18, 32, 18, a.grad([[0, "#9aa0a6"], [1, "#6b7177"]], true), { sw: 1.2 }); a.ellipse(78, Y - hm + 10, 30, 5, "rgba(0,0,0,.12)", { ns: true });
-    a.rect(142, Y - ha, 112, ha, yel, { sw: 1.5, rx: 8 }); a.rect(184, Y - ha - 14, 28, 14, a.grad([[0, "#9aa0a6"], [1, "#6b7177"]], true), { sw: 1.2 }); a.line(198, Y - ha, 198, Y - 14, "rgba(59,52,54,.45)", 2); for (i = 0; i < 3; i++) a.line(186, Y - 22 - i * 14, 210, Y - 28 - i * 14, "rgba(59,52,54,.45)", 2);
-    a.rect(276, Y - 54, 110, 54, yel, { sw: 1.5, rx: 6 });
-    for (i = 0; i < m[7]; i++) { a.rect(286, Y - 44 + i * 20, 72, 12, a.grad([[0, "#e5e8ea"], [1, "#8c9298"]]), { sw: 1 }); a.rect(286, Y - 41 + i * 20, 30, 6, "#6b6466", { ns: true }); }
-    a.path("M120," + (Y - 16) + " H142", "none", { stroke: "#5b5456", sw: 5 }); a.path("M254," + (Y - 14) + " H276", "none", { stroke: "#5b5456", sw: 5 });
-    a.path("M386," + (Y - 30) + " C410," + (Y - 30) + " 404," + (Y - 70) + " 416," + (Y - 92), "none", { stroke: C.orange, sw: 5, "stroke-linecap": "round" });
-    if (m[8]) { a.rect(330, Y - 96, 56, 38, a.grad([[0, "#d7dadc"], [1, "#9aa0a6"]], true), { sw: 1.3, rx: 4 }); a.rect(338, Y - 90, 18, 10, "#4b9a55", { ns: true }); a.rect(360, Y - 90, 18, 10, "#3f6ea8", { ns: true }); }
-    if (labels) { [[78, "HCM " + m[1]], [198, "HRW " + m[2]], [331, "ZMP " + m[3]]].forEach(function (t) { var e = a.add("text", { x: t[0], y: Y + 32, "text-anchor": "middle", class: "wcall" }); e.textContent = t[1]; }); var lp = a.add("text", { x: 218, y: top - 2, class: "wtxt" }); lp.textContent = labels; }
+  // IC plant, side view like an IC 325: colloidal mixer (HCM) with a high-shear impeller, agitator (HRW) with slow paddles,
+  // ZMP piston pump with vertical plungers on a hydraulic power pack, control cabinet, and optionally the Jean Lutz DPV-H logger.
+  // Returns the svg; svg.__step(t) animates it (impeller, paddles, plungers, flow and the logger's readings).
+  function icScene(m, labels, opt) {
+    opt = opt || {};
+    var a = art(490, 280, "wchart wic"), Y = 230, i, yel = a.grad([[0, "#ffd84a"], [0.55, "#f2bf12"], [1, "#d99e00"]], true), yelV = a.grad([[0, "#ffdd55"], [1, "#e0a600"]]);
+    var steel = a.grad([[0, "#eef0f2"], [0.5, "#b9bfc4"], [1, "#858b91"]], true), dark = a.grad([[0, "#4a4446"], [1, "#2a2527"]], true), grout = a.grad([[0, "#a8a39b"], [1, "#7f7a72"]]);
+    a.rect(0, 0, 490, 280, a.grad([[0, "#fff7ea"], [1, "#f4ead9"]]), { ns: true });
+    a.rect(0, 252, 490, 28, a.grad([[0, "#d6c6a2"], [1, "#b3a07a"]]), { ns: true });
+    a.shadow(230, 253, 214, 6);
+    var hm = 74 + Math.min(m[1], 600) / 600 * 58, ha = 62 + Math.min(m[2], 800) / 800 * 66;
+    // lifting point and slings
+    var top = Y - Math.max(hm + 52, ha + 40, 168) - 14;
+    a.line(230, top, 40, Y - 4, "rgba(59,52,54,.28)", 1, { "stroke-dasharray": "3 3" }); a.line(230, top, 428, Y - 4, "rgba(59,52,54,.28)", 1, { "stroke-dasharray": "3 3" });
+    a.circle(230, top - 4, 5, "none", { stroke: C.dark, sw: 2 });
+    // skid frame with fork pockets
+    a.rect(18, Y, 424, 10, yel, { sw: 1.3 }); a.rect(18, Y + 10, 424, 10, a.grad([[0, "#e6ad00"], [1, "#c48f00"]]), { sw: 1.3 });
+    [70, 170, 290, 390].forEach(function (x) { a.rect(x, Y + 11, 26, 8, "#3b3436", { ns: true }); });
+    // --- HCM colloidal mixer (left)
+    var mx0 = 30, mx1 = 122, mcx = (mx0 + mx1) / 2, mtop = Y - hm;
+    a.path("M" + mx0 + "," + mtop + " H" + mx1 + " V" + (Y - 18) + " Q" + mx1 + "," + Y + " " + (mx1 - 18) + "," + Y + " H" + (mx0 + 18) + " Q" + mx0 + "," + Y + " " + mx0 + "," + (Y - 18) + " Z", yel, { sw: 1.5 });
+    a.rect(mx0 - 3, mtop - 6, mx1 - mx0 + 6, 8, yelV, { sw: 1.3 });
+    // motor standing on the lid
+    a.rect(mcx - 13, mtop - 44, 26, 38, yel, { sw: 1.3 }); a.ellipse(mcx, mtop - 44, 13, 5, "#ffe066", { sw: 1.2 }); a.rect(mcx - 9, mtop - 54, 18, 10, yelV, { sw: 1.1, rx: 3 });
+    for (i = 0; i < 4; i++) a.line(mcx - 10, mtop - 38 + i * 8, mcx + 10, mtop - 38 + i * 8, "rgba(120,80,0,.35)", 1);
+    // water inlet
+    a.path("M" + (mx0 + 8) + "," + (mtop - 6) + " V" + (mtop - 26) + " H" + (mx0 - 10), "none", { stroke: "#5b9cc6", sw: 4, "stroke-linecap": "round" });
+    // cut-away window: grout, swirl and the impeller
+    var wx0 = mx0 + 12, wx1 = mx1 - 12, wy0 = mtop + 14, wy1 = Y - 12;
+    a.rect(wx0, wy0, wx1 - wx0, wy1 - wy0, "#2f2a2c", { sw: 1.2 });
+    var lvl = wy0 + (wy1 - wy0) * 0.3;
+    a.rect(wx0 + 1, lvl, wx1 - wx0 - 2, wy1 - lvl - 1, grout, { ns: true });
+    var swirl = [];
+    for (i = 0; i < 3; i++) swirl.push(a.path("M" + (wx0 + 6) + "," + (wy1 - 14 - i * 12) + " C" + (mcx - 10) + "," + (wy1 - 30 - i * 12) + " " + (mcx + 10) + "," + (wy1 - 2 - i * 12) + " " + (wx1 - 6) + "," + (wy1 - 18 - i * 12), "none", { stroke: "rgba(255,255,255,.45)", sw: 1.4, "stroke-dasharray": "6 7" }));
+    a.line(mcx, wy0, mcx, wy1 - 12, "#cfd3d6", 3);
+    var impHub = a.rect(mcx - 5, wy1 - 16, 10, 8, "#5b5456", { ns: true });
+    var bladeA = a.rect(mcx - 18, wy1 - 15, 36, 6, steel, { sw: 0.9 }), bladeB = a.rect(mcx - 18, wy1 - 15, 36, 6, a.grad([[0, "#9aa0a6"], [1, "#6b7177"]]), { sw: 0.9 });
+    a.rect(wx0 + 4, wy1 - 6, wx1 - wx0 - 8, 4, "#4a4446", { ns: true });
+    // pipe and valve to the agitator
+    a.path("M" + mx1 + "," + (Y - 14) + " H150", "none", { stroke: "#5b5456", sw: 6 });
+    a.rect(132, Y - 22, 6, 16, "#d23b2a", { sw: 0.8 });
+    // --- HRW agitator (middle)
+    var ax0 = 150, ax1 = 258, acx = (ax0 + ax1) / 2, atop = Y - ha;
+    a.rect(ax0, atop, ax1 - ax0, ha, yel, { sw: 1.5 });
+    a.rect(ax0 - 3, atop - 4, ax1 - ax0 + 6, 6, yelV, { sw: 1.2 });
+    for (i = 1; i < 8; i++) a.line(ax0 + i * (ax1 - ax0) / 8, atop - 4, ax0 + i * (ax1 - ax0) / 8, atop + 2, "#9b7a00", 1);
+    a.rect(acx - 26, atop - 10, 52, 6, yelV, { sw: 1 });
+    a.rect(acx - 10, atop - 34, 20, 24, yel, { sw: 1.2 }); a.ellipse(acx, atop - 34, 10, 4, "#ffe066", { sw: 1 });
+    var ax2 = ax0 + 12, ay0 = atop + 12, ay1 = Y - 10;
+    a.rect(ax2, ay0, ax1 - ax0 - 24, ay1 - ay0, "#2f2a2c", { sw: 1.2 });
+    a.rect(ax2 + 1, ay0 + (ay1 - ay0) * 0.22, ax1 - ax0 - 26, (ay1 - ay0) * 0.78 - 1, grout, { ns: true });
+    a.line(acx, ay0, acx, ay1 - 8, "#cfd3d6", 3);
+    var pad = [];
+    for (i = 0; i < 2; i++) pad.push(a.rect(acx - 26, ay0 + (ay1 - ay0) * (0.45 + i * 0.3), 52, 5, steel, { sw: 0.8 }));
+    // suction from the agitator to the pump
+    a.path("M" + ax1 + "," + (Y - 12) + " H292", "none", { stroke: "#5b5456", sw: 6 });
+    // --- ZMP piston pump: vertical plungers on a hydraulic block
+    var n = m[7] === 2 ? 2 : 1, px0 = 292, px1 = 352, cyl = [];
+    a.rect(px0, Y - 34, px1 - px0, 34, dark, { sw: 1.3 });
+    a.line(px0 + 3, Y - 34, px0 + 3, Y - 138, "#6b6466", 2.4); a.line(px1 - 3, Y - 34, px1 - 3, Y - 138, "#6b6466", 2.4); a.rect(px0, Y - 142, px1 - px0, 5, "#6b6466", { ns: true });
+    for (i = 0; i < n; i++) {
+      var cx = n === 2 ? px0 + 17 + i * 26 : (px0 + px1) / 2;
+      a.rect(cx - 9, Y - 134, 18, 38, steel, { sw: 1.2 });
+      a.rect(cx - 11, Y - 138, 22, 6, "#6b6466", { ns: true }); a.rect(cx - 11, Y - 98, 22, 5, "#6b6466", { ns: true });
+      a.rect(cx - 7, Y - 66, 14, 32, a.grad([[0, "#ffdd55"], [1, "#d49a00"]], true), { sw: 1.1 });
+      var rod = a.rect(cx - 3, Y - 95, 6, 30, a.grad([[0, "#f6f7f8"], [1, "#a9aeb3"]], true), { sw: 0.7 });
+      cyl.push({ rod: rod, cx: cx });
+    }
+    // power pack: oil tank with the black motor on top
+    a.rect(358, Y - 42, 66, 42, yel, { sw: 1.4 });
+    a.rect(366, Y - 92, 34, 50, "#1f1b1c", { sw: 1.2 }); for (i = 0; i < 6; i++) a.line(368, Y - 86 + i * 8, 398, Y - 86 + i * 8, "#4a4446", 1.2);
+    a.rect(370, Y - 100, 26, 8, "#2f2a2c", { ns: true });
+    a.rect(402, Y - 56, 18, 14, "#c9ccce", { sw: 0.9 }); a.rect(404, Y - 52, 4, 6, "#d23b2a", { ns: true }); a.rect(411, Y - 52, 4, 6, "#d23b2a", { ns: true });
+    // control cabinet
+    a.rect(358, Y - 176, 62, 66, a.grad([[0, "#f4f5f6"], [1, "#c9cdd0"]], true), { sw: 1.3 });
+    a.circle(374, Y - 160, 4, "#3fa34d", { sw: 0.8 }); a.circle(386, Y - 160, 4, "#d23b2a", { sw: 0.8 }); a.circle(404, Y - 132, 8, "#2f6fb5", { sw: 1 });
+    a.rect(368, Y - 146, 22, 5, "#3b3436", { ns: true }); a.rect(368, Y - 136, 16, 5, "#3b3436", { ns: true });
+    a.path("M402," + (Y - 116) + " l7,-12 l7,12 z", "#f2bf12", { sw: 0.8 });
+    // CCP: the extra polyurethane pump
+    if (m[8]) { a.rect(258, Y - 72, 30, 40, a.grad([[0, "#d7dadc"], [1, "#9aa0a6"]], true), { sw: 1.2 }); var pu = a.add("text", { x: 273, y: Y - 48, "text-anchor": "middle", class: "wcall" }); pu.textContent = "PU"; }
+    // discharge: gauge and hose
+    a.path("M" + px1 + "," + (Y - 22) + " H" + 440, "none", { stroke: "#5b5456", sw: 6 });
+    a.line(436, Y - 22, 436, Y - 38, "#5b5456", 3); a.circle(436, Y - 46, 9, "#fff", { sw: 1.4 });
+    var needle = a.line(436, Y - 46, 442, Y - 50, "#d23b2a", 1.6);
+    var flow = a.path("M440," + (Y - 22) + " C462," + (Y - 22) + " 470," + (Y - 2) + " 490," + (Y + 4), "none", { stroke: C.orange, sw: 6, "stroke-linecap": "round" });
+    var flowDash = a.path("M440," + (Y - 22) + " C462," + (Y - 22) + " 470," + (Y - 2) + " 490," + (Y + 4), "none", { stroke: "rgba(255,255,255,.55)", sw: 2, "stroke-dasharray": "4 8" });
+    // Jean Lutz DPV-H: inline flow and pressure sensor, cable, and the display on a bracket
+    var dQ = null, dP = null, dV = null;
+    if (opt.log) {
+      a.rect(404, Y - 30, 22, 16, steel, { sw: 1.1 }); a.rect(410, Y - 36, 10, 6, "#2f2a2c", { ns: true });
+      a.path("M415," + (Y - 36) + " C415," + (Y - 70) + " 458," + (Y - 70) + " 457," + (Y - 108), "none", { stroke: "#2f2a2c", sw: 1.6 });
+      var dx = 428, dy = Y - 172;
+      a.rect(dx + 18, dy - 6, 22, 6, "#6b6466", { sw: 0.8, rx: 3 });
+      a.rect(dx, dy, 58, 64, "#f2bf12", { sw: 1.4, rx: 6 });
+      a.rect(dx + 4, dy + 4, 50, 56, "#1f1b1c", { ns: true, rx: 4 });
+      a.circle(dx + 12, dy + 12, 4.5, "#2f8fd8", { ns: true }); a.circle(dx + 46, dy + 12, 4.5, "#2f8fd8", { ns: true }); a.circle(dx + 29, dy + 12, 4, "#3a3a3a", { ns: true });
+      a.rect(dx + 8, dy + 22, 42, 32, "#0e1a26", { ns: true });
+      a.path("M" + (dx + 12) + "," + (dy + 34) + " a8,8 0 0 1 16,0", "none", { stroke: "#4aa3e0", sw: 1.2 }); a.path("M" + (dx + 30) + "," + (dy + 34) + " a8,8 0 0 1 16,0", "none", { stroke: "#4aa3e0", sw: 1.2 });
+      dQ = a.add("text", { x: dx + 20, y: dy + 44, "text-anchor": "middle", fill: "#ffffff", "font-size": "6", "font-family": "Arial", "font-weight": "700" });
+      dP = a.add("text", { x: dx + 38, y: dy + 44, "text-anchor": "middle", fill: "#ffffff", "font-size": "6", "font-family": "Arial", "font-weight": "700" });
+      dV = a.add("text", { x: dx + 29, y: dy + 52, "text-anchor": "middle", fill: "#ffb35c", "font-size": "5.5", "font-family": "Arial", "font-weight": "700" });
+      var lb = a.add("text", { x: dx + 29, y: dy - 12, "text-anchor": "middle", class: "wcall" }); lb.textContent = "DPV-H";
+    }
+    if (labels) {
+      [[mcx, "HCM " + m[1]], [acx, "HRW " + m[2]], [(px0 + px1) / 2, "ZMP " + m[3]]].forEach(function (t) { var e = a.add("text", { x: t[0], y: Y + 38, "text-anchor": "middle", class: "wcall" }); e.textContent = t[1]; });
+      var lp = a.add("text", { x: 238, y: top - 2, class: "wtxt" }); lp.textContent = labels;
+    }
+    var Qlpm = m[4] * 1000 / 60, vol = 120, lastT = 0;
+    a.svg.__step = function (t) {
+      var ang = t / 1000 * 22, c = Math.cos(ang), s2 = Math.cos(ang + Math.PI / 2);
+      bladeA.setAttribute("x", (mcx - 18 * Math.abs(c)).toFixed(1)); bladeA.setAttribute("width", (36 * Math.abs(c)).toFixed(1));
+      bladeB.setAttribute("x", (mcx - 18 * Math.abs(s2)).toFixed(1)); bladeB.setAttribute("width", (36 * Math.abs(s2)).toFixed(1));
+      swirl.forEach(function (p, k) { p.setAttribute("stroke-dashoffset", (-(t / 18) * (1 + k * 0.2)).toFixed(1)); });
+      var pa = t / 1000 * 1.6;
+      pad.forEach(function (p, k) { var w = 52 * Math.abs(Math.cos(pa + k * 0.9)); p.setAttribute("x", (acx - w / 2).toFixed(1)); p.setAttribute("width", w.toFixed(1)); });
+      var ph = t / 1000 * 1.1;
+      cyl.forEach(function (cy, k) { var u = 0.5 - 0.5 * Math.cos((ph + k * 0.5) * Math.PI * 2); cy.rod.setAttribute("y", (Y - 95 + u * 22).toFixed(1)); cy.rod.setAttribute("height", (30).toFixed(1)); });
+      var puls = n === 2 ? 0.92 + 0.08 * Math.abs(Math.sin(ph * Math.PI * 2)) : 0.55 + 0.45 * Math.abs(Math.sin(ph * Math.PI * 2));
+      flowDash.setAttribute("stroke-dashoffset", (-(t / 30)).toFixed(1));
+      var bar = 0.5 * m[5] * (0.85 + 0.15 * puls), angN = -2.2 + bar / m[5] * 2.6;
+      needle.setAttribute("x2", (436 + Math.cos(angN) * 7).toFixed(1)); needle.setAttribute("y2", (Y - 46 + Math.sin(angN) * 7).toFixed(1));
+      var dts = lastT ? Math.min(0.1, (t - lastT) / 1000) : 0; lastT = t;
+      if (dQ) { vol += Qlpm * puls / 60 * dts; dQ.textContent = (Qlpm * puls).toFixed(1); dP.textContent = bar.toFixed(1); dV.textContent = Math.round(vol) + " L"; }
+    };
+    a.svg.__step(400);
     return a.svg;
   }
   function buildIc(app) {
-    var W = T.more2.ic, S = { q: 2, p: 60, dbl: false, pu: false, sel: 2 };
+    var W = T.more2.ic, S = { q: 2, p: 60, dbl: false, pu: false, sel: 2, log: false };
     var sQ = slider(W.flow, 0.5, 8, 0.5, 2, function (v) { return num(v, 1) + " m³/h"; }, function (v) { S.q = v; pick(); });
     var sP = slider(W.press, 20, 100, 5, 60, function (v) { return num(v) + " bar"; }, function (v) { S.p = v; pick(); });
     var dbl = el("label", { class: "wchk" }, [el("input", { type: "checkbox" }), el("span", { text: W.dbl })]), pu = el("label", { class: "wchk" }, [el("input", { type: "checkbox" }), el("span", { text: W.pu })]);
     dbl.firstChild.addEventListener("change", function () { S.dbl = this.checked; pick(); }); pu.firstChild.addEventListener("change", function () { S.pu = this.checked; pick(); });
+    var LG = LANG === "sv" ? { log: "Lägg till dataloggning (Jean Lutz DPV-H)", on: "DPV-H mäter flöde, tryck och volym i realtid, visar dem på skärmen och sparar varje hål, så att arbetet kan visas i efterhand." } : { log: "Add data logging (Jean Lutz DPV-H)", on: "The DPV-H measures flow, pressure and volume in real time, shows them on screen and records every hole, so the work can be shown afterwards." };
+    var lg = el("label", { class: "wchk" }, [el("input", { type: "checkbox" }), el("span", { text: LG.log })]);
+    lg.firstChild.addEventListener("change", function () { S.log = this.checked; show(S.sel); });
+    var cur = null, T0 = 0;
     var list = el("ul", { class: "wic__list" }), pic = el("div", { class: "wic__pic" }), name = el("h3", { class: "wdonut__h" }), dec = el("p", { class: "wdonut__t" });
     var stQ = stat(W.cap, "m³/h"), stP = stat(W.max, "bar"), stK = stat(W.pistons), msg = el("ul", { class: "wmsg" });
     function show(i) {
-      var m = ICM[i]; S.sel = i; pic.innerHTML = ""; pic.appendChild(icScene(m, W.lift)); name.textContent = m[0];
+      var m = ICM[i]; S.sel = i; pic.innerHTML = ""; cur = icScene(m, W.lift, { log: S.log }); pic.appendChild(cur); name.textContent = m[0];
+      logMsg.hidden = !S.log;
       dec.textContent = (m[0].indexOf("/") > 0 ? W.decBig : W.decSmall).replace("{v}", num(m[1] + m[2])).replace("{h}", m[1]).replace("{r}", m[2]).replace("{z}", m[3]) + (m[8] ? " " + W.ccp : "");
       stQ.set(num(m[4], 1)); stP.set(num(m[5])); stK.set(m[7] === 2 ? W.two : W.one);
       [].forEach.call(list.children, function (li) { var b = li.firstChild; b.classList.toggle("is-on", Number(b.getAttribute("data-i")) === i); });
@@ -1688,9 +1802,11 @@
       msg.appendChild(el("li", { class: "wmsg__info", text: W.note }));
       show(ok[0]);
     }
-    app.appendChild(el("div", { class: "wgt__grid" }, [el("div", { class: "wgt__ctl" }, [sQ.box, sP.box, dbl, pu, el("p", { class: "vmix__h", text: W.matches }), list]), el("div", { class: "wgt__out" }, [pic, name, dec, el("div", { class: "stats" }, [stQ.box, stP.box, stK.box]), msg])]));
+    var logMsg = el("p", { class: "wic__log", text: LG.on }); logMsg.hidden = true;
+    app.appendChild(el("div", { class: "wgt__grid" }, [el("div", { class: "wgt__ctl" }, [sQ.box, sP.box, dbl, pu, lg, el("p", { class: "vmix__h", text: W.matches }), list]), el("div", { class: "wgt__out" }, [pic, name, dec, logMsg, el("div", { class: "stats" }, [stQ.box, stP.box, stK.box]), msg])]));
     app.appendChild(how(W.how));
     pick();
+    playWhenVisible(pic, function (dt) { T0 += dt; if (cur && cur.__step) cur.__step(T0); });
   }
 
   // ---------- 20. colloidal versus paddle mixing ----------
@@ -1920,51 +2036,85 @@
     draw();
   }
 
-  // ---------- sealing rock: what grouting does ----------
+  // ---------- sealing rock: what grouting does. Holes are grouted one at a time through a packer on a hose, in stages from the bottom
+  // of the hole outwards; as the pressure builds the packer and hose are pushed back (kick), then the packer is pulled back a stage ----------
   function tatScene(level) {
-    var a = art(440, 270, "wchart wtat"), r = seeded(7 + level * 13), cx = 220, cy = 196, R0 = 66, i;
+    var a = art(440, 270, "wchart wtat"), r = seeded(7 + level * 13), cx = 220, cy = 196, R0 = 66, i, nH = 9, HL = 150;
     a.rect(0, 0, 440, 270, a.grad([[0, "#d9cdbb"], [1, "#b9a993"]]), { ns: true });
     a.speckle(0, 0, 440, 270, 260, 31, ["#a39079", "#e6dccd", "#8f7d68"], 2.2);
-    var nF = [4, 7, 11][level], fr = [], g = a.group({}), gg = a.group({}), dropsG = a.group({});
+    var holes = [];
+    for (i = 0; i < nH; i++) { var ang = Math.PI * (1.06 + i / (nH - 1) * 0.88); holes.push({ ang: ang, sx: cx + Math.cos(ang) * (R0 + 2), sy: cy + Math.sin(ang) * (R0 + 2), dx: Math.cos(ang), dy: Math.sin(ang) }); }
+    var nF = [4, 7, 11][level], fr = [], g = a.group({}), gg = a.group({}), hg = a.group({}), dropsG;
     for (i = 0; i < nF; i++) {
-      var th = Math.PI * (1.08 + r() * 0.84), px = cx + Math.cos(th) * R0, py = cy + Math.sin(th) * R0, dir = th + (r() - 0.5) * 1.6, L1 = 120 + r() * 160, L2 = 40 + r() * 80;
-      var ax = px + Math.cos(dir) * L1, ay = py + Math.sin(dir) * L1, bx = px - Math.cos(dir) * L2 * 0.2 + Math.cos(th) * 0, by = py - Math.sin(dir) * L2 * 0.2;
-      var mx = (px + ax) / 2 + (r() - 0.5) * 30, my = (py + ay) / 2 + (r() - 0.5) * 30;
+      var th = Math.PI * (1.08 + r() * 0.84), px = cx + Math.cos(th) * R0, py = cy + Math.sin(th) * R0, dir = th + (r() - 0.5) * 1.6, L1 = 120 + r() * 160;
+      var ax = px + Math.cos(dir) * L1, ay = py + Math.sin(dir) * L1, mx = (px + ax) / 2 + (r() - 0.5) * 30, my = (py + ay) / 2 + (r() - 0.5) * 30;
       var d1 = "M" + px.toFixed(1) + "," + py.toFixed(1) + " Q" + mx.toFixed(1) + "," + my.toFixed(1) + " " + ax.toFixed(1) + "," + ay.toFixed(1);
       a.path(d1, "none", { stroke: "#6e5f50", sw: 1.4 + r() * 1.2 }, g);
       var w1 = a.path(d1, "none", { stroke: "#6fa3c7", sw: 2.2, opacity: 0.75, "stroke-linecap": "round" }, g);
       var g1 = a.path(d1, "none", { stroke: "#8b8f92", sw: 4.2, "stroke-linecap": "round", pathLength: 1, "stroke-dasharray": "1 1", "stroke-dashoffset": 1 }, gg);
-      fr.push({ x: px, y: py, wat: w1, gr: g1, k: 0.5 + r() * 0.5, ph: r() });
+      var best = 0, bd = 9; holes.forEach(function (h, k) { var dd = Math.abs(h.ang - th); if (dd < bd) { bd = dd; best = k; } });
+      fr.push({ x: px, y: py, wat: w1, gr: g1, k: 0.5 + r() * 0.5, ph: r(), hole: best });
     }
-    // tunnel opening with shotcrete lining
     var tun = "M" + (cx - R0) + "," + cy + " A" + R0 + "," + R0 + " 0 0 1 " + (cx + R0) + "," + cy + " L" + (cx + R0) + ",270 L" + (cx - R0) + ",270 Z";
     a.path(tun, "#efe6d8", { stroke: "#9a8b78", sw: 5 });
     a.path(tun, a.grad([[0, "#3d3633"], [1, "#2b2523"]]), { ns: true });
     a.rect(cx - R0 + 6, 252, 2 * R0 - 12, 18, "#4a4240", { ns: true });
     var pool = a.ellipse(cx, 251, 40, 3, "#6fa3c7", { ns: true, opacity: 0 });
-    var holes = [], nH = 9;
-    for (i = 0; i < nH; i++) {
-      var ang = Math.PI * (1.06 + i / (nH - 1) * 0.88), sx = cx + Math.cos(ang) * (R0 + 2), sy = cy + Math.sin(ang) * (R0 + 2);
-      var ln = a.line(sx, sy, sx, sy, "#2d2a2b", 2.4, { "stroke-dasharray": "0" });
-      holes.push({ el: ln, sx: sx, sy: sy, ex: cx + Math.cos(ang) * (R0 + 150), ey: cy + Math.sin(ang) * (R0 + 150) });
-    }
+    dropsG = a.group({});
+    holes.forEach(function (h) { h.el = a.line(h.sx, h.sy, h.sx, h.sy, "#2d2a2b", 2.4, {}, hg); h.fill = a.line(h.sx, h.sy, h.sx, h.sy, "#8b8f92", 3.2, { opacity: 0 }, hg); });
+    // grout plant on the tunnel floor, the hose and the packer
+    a.rect(cx - 56, 234, 34, 18, a.grad([[0, "#ffd84a"], [1, "#e0a600"]], true), { sw: 1.2 });
+    a.rect(cx - 52, 228, 12, 6, "#5b5456", { ns: true });
+    var gauge = a.circle(cx - 30, 230, 5, "#fff", { sw: 1 }), needle = a.line(cx - 30, 230, cx - 33, 227, "#d23b2a", 1.2);
+    var hose = a.path("", "none", { stroke: C.orange, sw: 3, "stroke-linecap": "round", opacity: 0 });
+    var hoseIn = a.line(0, 0, 0, 0, C.orange, 2.2, { opacity: 0 });
+    var packer = a.rect(-4, -3, 8, 6, "#1f1b1c", { ns: true, opacity: 0 });
     var drops = fr.map(function (f) { return a.ellipse(f.x, f.y, 1.8, 2.6, "#7fb6dc", { ns: true }, dropsG); });
+    var ST = [0.8, 0.5, 0.2];
+    function holeProg(gp, k) { return Math.max(0, Math.min(1, gp * nH - k)); }
     return {
       svg: a.svg,
-      set: function (holeP, groutP, t) {
-        holes.forEach(function (h) { h.el.setAttribute("x2", (h.sx + (h.ex - h.sx) * holeP).toFixed(1)); h.el.setAttribute("y2", (h.sy + (h.ey - h.sy) * holeP).toFixed(1)); });
+      // holeP: drilling 0..1, gp: grouting 0..1, t: time in ms. Returns what is happening for the caption and the meters.
+      set: function (holeP, gp, t) {
+        holes.forEach(function (h, k) {
+          h.el.setAttribute("x2", (h.sx + h.dx * HL * holeP).toFixed(1)); h.el.setAttribute("y2", (h.sy + h.dy * HL * holeP).toFixed(1));
+          var hp = holeProg(gp, k); h.fill.setAttribute("opacity", hp >= 1 ? 1 : 0); h.fill.setAttribute("x2", (h.sx + h.dx * HL).toFixed(1)); h.fill.setAttribute("y2", (h.sy + h.dy * HL).toFixed(1));
+        });
+        var leakSum = 0;
         fr.forEach(function (f, k) {
-          var gp = Math.max(0, Math.min(1, groutP * 1.25 - f.ph * 0.25)); f.gr.setAttribute("stroke-dashoffset", (1 - gp).toFixed(3)); f.wat.setAttribute("opacity", (0.75 * (1 - gp)).toFixed(2));
-          var leak = 1 - gp, cyc = ((t / 1000) * (0.6 + f.k) + f.ph) % 1, yy = f.y + cyc * (251 - f.y);
+          var fp = holeProg(gp, f.hole), gpf = Math.max(0, Math.min(1, fp * 1.3 - f.ph * 0.3));
+          f.gr.setAttribute("stroke-dashoffset", (1 - gpf).toFixed(3)); f.wat.setAttribute("opacity", (0.75 * (1 - gpf)).toFixed(2));
+          var leak = 1 - gpf, cyc = ((t / 1000) * (0.6 + f.k) + f.ph) % 1, yy = f.y + cyc * (251 - f.y); leakSum += leak;
           drops[k].setAttribute("cy", yy.toFixed(1)); drops[k].setAttribute("cx", (f.x + (cx - f.x) * 0.04 * cyc).toFixed(1)); drops[k].setAttribute("opacity", leak > 0.08 ? (0.9 * leak * (1 - cyc * 0.3)).toFixed(2) : 0);
         });
-        pool.setAttribute("opacity", (0.6 * (1 - groutP)).toFixed(2));
+        pool.setAttribute("opacity", (0.6 * leakSum / fr.length).toFixed(2));
+        var info = { hole: -1, stage: -1, p: 0, kick: false, pull: false, leak: leakSum / fr.length };
+        var active = gp > 0 && gp < 1 ? Math.min(nH - 1, Math.floor(gp * nH)) : -1;
+        if (active < 0) { hose.setAttribute("opacity", 0); hoseIn.setAttribute("opacity", 0); packer.setAttribute("opacity", 0); needle.setAttribute("x2", cx - 33); needle.setAttribute("y2", 227); return info; }
+        var h = holes[active], lp = gp * nH - active, st = Math.min(2, Math.floor(lp * 3)), sp = lp * 3 - st;
+        // the first part of a stage pulls the packer back from the previous stage; then the pressure builds; near the top it kicks
+        var dPrev = st ? ST[st - 1] : ST[0], d = st ? dPrev + (ST[st] - dPrev) * Math.min(1, sp / 0.18) : ST[0];
+        var press = sp < 0.18 && st ? 0.15 : Math.min(1, Math.max(0, (sp - 0.18) / 0.62));
+        var kick = sp > 0.72 && sp < 0.9 ? Math.sin((sp - 0.72) / 0.18 * Math.PI) : 0;
+        var depth = HL * d - kick * 5;
+        var pxk = h.sx + h.dx * depth, pyk = h.sy + h.dy * depth;
+        var ang = Math.atan2(h.dy, h.dx) * 180 / Math.PI;
+        packer.setAttribute("opacity", 1); packer.setAttribute("transform", "translate(" + pxk.toFixed(1) + "," + pyk.toFixed(1) + ") rotate(" + ang.toFixed(1) + ")");
+        hoseIn.setAttribute("opacity", 1); hoseIn.setAttribute("x1", h.sx.toFixed(1)); hoseIn.setAttribute("y1", h.sy.toFixed(1)); hoseIn.setAttribute("x2", pxk.toFixed(1)); hoseIn.setAttribute("y2", pyk.toFixed(1));
+        var bx = cx - 38, by = 234, mxh = (bx + h.sx) / 2 + h.dx * kick * 10 - 4, myh = Math.max(by, h.sy) - 10 + kick * 12;
+        hose.setAttribute("opacity", 1); hose.setAttribute("d", "M" + bx + "," + by + " Q" + mxh.toFixed(1) + "," + myh.toFixed(1) + " " + h.sx.toFixed(1) + "," + h.sy.toFixed(1));
+        var na = -2.4 + press * 2.2; needle.setAttribute("x2", (cx - 30 + Math.cos(na) * 4.5).toFixed(1)); needle.setAttribute("y2", (230 + Math.sin(na) * 4.5).toFixed(1));
+        info.hole = active; info.stage = st; info.p = press; info.kick = kick > 0.15; info.pull = st > 0 && sp < 0.18; info.depth = d;
+        return info;
       }
     };
   }
   function buildTat(app) {
-    var W = T3.tat, S = { lv: 1, hole: 0, gr: 0, phase: 0, t: 0 }, Q0 = [6, 18, 45], sc;
-    var box = el("div", { class: "wtat__pic" }), big = el("p", { class: "wgt__big", "aria-live": "polite" }), stQ = stat(W.leak, W.unit), meter = el("div", { class: "wmeter" }, [el("i")]);
+    var W = T3.tat, S = { lv: 1, hole: 0, gr: 0, phase: 0, t: 0 }, Q0 = [6, 18, 45], P0 = 30, sc;
+    var X = LANG === "sv"
+      ? { press: "Tryck vid packern", bar: "bar", where: "Hål {h} av 9, etapp {e} av 3", pull: "Packern dras tillbaka till nästa etapp, närmare hålets mynning.", build: "Bruket pumpas in genom packern och trycket byggs upp.", kick: "Trycket trycker tillbaka mot packern, och slangen rycker till. Därför måste packern sitta stadigt och slangen vara säkrad." }
+      : { press: "Pressure at the packer", bar: "bar", where: "Hole {h} of 9, stage {e} of 3", pull: "The packer is pulled back to the next stage, closer to the collar.", build: "Grout is pumped in through the packer and the pressure builds.", kick: "The pressure pushes back on the packer, and the hose jerks. That is why the packer must sit firmly and the hose must be secured." };
+    var box = el("div", { class: "wtat__pic" }), big = el("p", { class: "wgt__big", "aria-live": "polite" }), sub = el("p", { class: "wtat__sub" }), stQ = stat(W.leak, W.unit), stP = stat(X.press, X.bar), meter = el("div", { class: "wmeter" }, [el("i")]), pm = el("div", { class: "wmeter wmeter--p" }, [el("i")]);
     var rockSeg = segmented(W.rock, W.rocks, 1, function (i) { S.lv = i; reset(); });
     var bD = el("button", { type: "button", class: "vbtn", text: W.drill }), bG = el("button", { type: "button", class: "vbtn vbtn--alt", text: W.grout }), bR = el("button", { type: "button", class: "wlink", text: W.again });
     bD.addEventListener("click", function () { if (S.phase === 0) { S.phase = 1; if (REDUCE) { S.hole = 1; S.phase = 2; } kick(); } });
@@ -1972,22 +2122,25 @@
     bR.addEventListener("click", reset);
     function reset() { S.hole = 0; S.gr = 0; S.phase = 0; box.innerHTML = ""; sc = tatScene(S.lv); box.appendChild(sc.svg); upd(); kick(); }
     function upd() {
-      sc.set(S.hole, S.gr, S.t);
-      var q = Q0[S.lv] * (1 - 0.88 * S.gr); stQ.set(num(q, q < 10 ? 1 : 0)); meter.firstChild.style.width = Math.min(100, q / 45 * 100) + "%";
-      big.textContent = S.phase === 0 ? W.s0 : S.phase < 3 ? W.s1 : S.phase === 3 ? W.s2 : W.s3;
+      var info = sc.set(S.hole, S.gr, S.t);
+      var q = Q0[S.lv] * (0.12 + 0.88 * info.leak); stQ.set(num(q, q < 10 ? 1 : 0)); meter.firstChild.style.width = Math.min(100, q / 45 * 100) + "%";
+      var p = info.hole >= 0 ? P0 * info.p : 0; stP.set(num(p)); pm.firstChild.style.width = (p / P0 * 100) + "%"; pm.classList.toggle("is-kick", !!info.kick);
+      if (S.phase === 3 && info.hole >= 0) { big.textContent = X.where.replace("{h}", info.hole + 1).replace("{e}", info.stage + 1); sub.textContent = info.kick ? X.kick : info.pull ? X.pull : X.build; }
+      else { big.textContent = S.phase === 0 ? W.s0 : S.phase < 3 ? W.s1 : W.s3; sub.textContent = ""; }
+      box.classList.toggle("is-kick", !!info.kick);
       bD.disabled = S.phase !== 0; bG.disabled = S.phase !== 2;
     }
     function frame(dt) {
       S.t += dt;
       if (S.phase === 1) { S.hole = Math.min(1, S.hole + dt / 1600); if (S.hole >= 1) S.phase = 2; }
-      if (S.phase === 3) { S.gr = Math.min(1, S.gr + dt / 4200); if (S.gr >= 1) S.phase = 4; }
+      if (S.phase === 3) { S.gr = Math.min(1, S.gr + dt / 16200); if (S.gr >= 1) S.phase = 4; }
       upd();
     }
     var player;
     function kick() { if (player) player.start(); else upd(); }
     reset();
     player = playWhenVisible(box, frame);
-    app.appendChild(el("div", { class: "wgt__grid" }, [el("div", { class: "wgt__ctl" }, [rockSeg.box, el("div", { class: "wbtns" }, [bD, bG, bR]), el("div", { class: "stats" }, [stQ.box]), meter]), el("div", { class: "wgt__out" }, [big, box])]));
+    app.appendChild(el("div", { class: "wgt__grid" }, [el("div", { class: "wgt__ctl" }, [rockSeg.box, el("div", { class: "wbtns" }, [bD, bG, bR]), el("div", { class: "stats" }, [stQ.box, stP.box]), meter, pm]), el("div", { class: "wgt__out" }, [big, sub, box])]));
     app.appendChild(how(W.how));
   }
 

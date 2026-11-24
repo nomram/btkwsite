@@ -1586,6 +1586,16 @@
       });
       box.appendChild(vg);
     }
+    var lgBox = document.querySelector(".lgrid");
+    if (lgBox) {
+      var lg = document.createElement("span"); lg.className = "pv__v"; lg.innerHTML = "<b>" + (sv ? "Loggor" : "Logos") + "</b>";
+      var sel = document.createElement("select"); sel.setAttribute("aria-label", sv ? "Rörelse för logotyperna" : "Logo motion");
+      var names = sv ? ["Puls", "Våg", "Strålkastare", "Gnistor", "Lyft", "Läsrad", "Andning", "Färg"] : ["Pulse", "Wave", "Spotlight", "Twinkle", "Lift", "Reader", "Breathe", "Colour"];
+      var cur = (/[?&]logos=([1-8])/.exec(location.search) || [])[1]; try { cur = cur || sessionStorage.getItem("bk-logos"); } catch (e) {} cur = cur || lgBox.getAttribute("data-g") || "1";
+      names.forEach(function (nm, i) { var o = document.createElement("option"); o.value = String(i + 1); o.textContent = (i + 1) + " " + nm; if (String(i + 1) === String(cur)) o.selected = true; sel.appendChild(o); });
+      sel.addEventListener("change", function () { if (window.__bkLogos) window.__bkLogos(sel.value); });
+      lg.appendChild(sel); box.appendChild(lg);
+    }
     document.body.appendChild(box);
   })();
 
@@ -2032,7 +2042,7 @@
 // ---------- gentle entrances: sections fade up as they come into view (skipped with reduced motion or without IntersectionObserver) ----------
 (function () {
   if (!("IntersectionObserver" in window) || (window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches)) return;
-  var els = document.querySelectorAll(".page-body .prose > *, .intro__inner, .logorow, .cta > .container");
+  var els = document.querySelectorAll(".page-body .prose > *, .intro__inner, section.logorow, .cta > .container");
   if (!els.length) return;
   document.documentElement.classList.add("js-rv");
   var io = new IntersectionObserver(function (entries) { entries.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add("is-in"); io.unobserve(e.target); } }); }, { rootMargin: "0px 0px -8% 0px", threshold: 0.06 });
@@ -2083,4 +2093,57 @@ window.addEventListener("afterprint", function () { [].forEach.call(document.que
     });
     show(0);
   });
+})();
+
+// ---------- home logo grid: eight looping motions (data-g 1 to 8, ?logos=n or the preview pill); hovering pauses and shows the maker ----------
+(function () {
+  var box = document.querySelector(".lgrid");
+  if (!box) return;
+  var links = [].slice.call(box.querySelectorAll(".lgrid__a")), cap = box.querySelector(".lgrid__cap"), capT = cap.querySelector("strong"), capX = cap.querySelector("span");
+  var def = [capT.textContent, capX.textContent], cols = 5, n = links.length;
+  var reduce = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var m = /[?&]logos=([1-8])/.exec(location.search), g = m && m[1];
+  try { if (g) sessionStorage.setItem("bk-logos", g); else g = sessionStorage.getItem("bk-logos"); } catch (e) {}
+  if (g) box.setAttribute("data-g", g);
+  var STEP = { 1: 1500, 2: 260, 3: 2600, 4: 900, 5: 1700, 6: 1600, 7: 0, 8: 2200 };
+  var k = -1, timer = 0, paused = false, seen = false, order = [];
+  function setCap(a) {
+    var t = a ? a.getAttribute("data-name") : def[0], x = a ? a.getAttribute("data-desc") : def[1];
+    if (capT.textContent === t) return;
+    capT.textContent = t; capX.textContent = x; cap.classList.remove("is-swap"); void cap.offsetWidth; cap.classList.add("is-swap");
+  }
+  function clear() { links.forEach(function (a) { a.classList.remove("is-hot"); }); }
+  function shuffle() { order = links.map(function (_, i) { return i; }); for (var i = order.length - 1; i > 0; i--) { var j = Math.floor(Math.random() * (i + 1)), t = order[i]; order[i] = order[j]; order[j] = t; } }
+  function tick() {
+    var v = Number(box.getAttribute("data-g")) || 1;
+    clear(); box.classList.toggle("is-tour", v === 3);
+    if (v === 7) { setCap(null); return; }
+    k++;
+    if (v === 2) {
+      // a diagonal wave: everything on the same diagonal lifts together
+      var rows = Math.ceil(n / cols), diag = k % (cols + rows + 2);
+      links.forEach(function (a, i) { if ((i % cols) + Math.floor(i / cols) === diag) a.classList.add("is-hot"); });
+      setCap(null); return;
+    }
+    if (v === 4) { if (!order.length || k % n === 0) shuffle(); links[order[k % n]].classList.add("is-hot"); links[order[(k + 7) % n]].classList.add("is-hot"); setCap(null); return; }
+    var a = links[k % n]; a.classList.add("is-hot");
+    if (v === 6) box.style.setProperty("--lg-step", STEP[6] + "ms");
+    setCap(v === 3 || v === 8 || v === 5 ? a : null);
+  }
+  function run() {
+    clearInterval(timer); clear();
+    var v = Number(box.getAttribute("data-g")) || 1;
+    if (reduce || paused || !seen) return;
+    if (v === 7) { tick(); return; }
+    tick(); timer = setInterval(tick, STEP[v]);
+  }
+  links.forEach(function (a) {
+    function on() { paused = true; clearInterval(timer); clear(); a.classList.add("is-hot"); setCap(a); }
+    function off() { paused = false; a.classList.remove("is-hot"); setCap(null); run(); }
+    a.addEventListener("mouseenter", on); a.addEventListener("focus", on);
+    a.addEventListener("mouseleave", off); a.addEventListener("blur", off);
+  });
+  if ("IntersectionObserver" in window) new IntersectionObserver(function (e) { seen = e[0].isIntersecting; run(); }, { threshold: 0.3 }).observe(box);
+  else { seen = true; run(); }
+  window.__bkLogos = function (x) { box.setAttribute("data-g", String(x)); try { sessionStorage.setItem("bk-logos", String(x)); } catch (e) {} k = -1; setCap(null); run(); };
 })();
