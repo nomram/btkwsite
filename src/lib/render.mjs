@@ -369,6 +369,32 @@ function renderWidget(ctx, b) {
   const cta = b.cta === false ? "" : `<p class="wgt__cta"><span>${esc(ctx.ui.widget_cta || "Behöver du material, maskiner eller råd?")}</span> <a class="btn btn--sm" href="${esc(localizeHref(ctx, "/offert"))}">${esc(ctx.ui.widget_cta_btn || "Få offert")}${ICON.arrow}</a></p>`;
   return `<section class="wgt wgt--${esc(b.kind)}" data-widget="${esc(b.kind)}"${opt}>${b.title ? `<h2 class="wgt__h">${esc(b.title)}</h2>` : ""}${b.intro ? `<p class="wgt__intro">${esc(b.intro)}</p>` : ""}<div class="wgt__app"><p class="wgt__nojs">${esc(ctx.ui.widget_nojs || "Det här verktyget behöver JavaScript.")}</p></div>${cta}</section>`;
 }
+// History as a timeline: square nodes on a line that fills as you scroll (site.js), each step with the manufacturers it brought.
+// Block: title, intro, items [{ label, title, text, brands: ["/produkter/x" or plain name], past, now }]
+function renderTimeline(ctx, b) {
+  const brand = (x) => {
+    if (typeof x === "string" && x.startsWith("/")) {
+      const pg = ctx.pages && ctx.pages.get(x), name = titleOf(ctx, x);
+      if (!pg || !shown(ctx, x)) return "";
+      const logo = pg.logo ? imgTag(ctx, pg.logo, name, { cls: "tline__logo", sizes: "120px" }) : `<span>${esc(name)}</span>`;
+      return `<li><a href="${esc(localizeHref(ctx, x))}" title="${esc(name)}">${logo}</a></li>`;
+    }
+    return `<li class="tline__gone"><span>${esc(x)}</span></li>`;
+  };
+  const items = (b.items || []).map((it, i) => `<li class="tline__i${it.past ? " tline__i--past" : ""}${it.now ? " tline__i--now" : ""}" style="--i:${i}"><span class="tline__node" aria-hidden="true"></span><div class="tline__card">${it.label ? `<p class="tline__k">${esc(it.label)}</p>` : ""}<h3 class="tline__t">${esc(it.title || "")}</h3>${it.text ? `<p class="tline__x">${ctx.edit ? it.text : localizeHtml(ctx, it.text)}</p>` : ""}${(it.brands || []).length ? `<ul class="tline__brands${(it.brands || []).length > 6 ? " tline__brands--many" : ""}">${it.brands.map(brand).join("")}</ul>` : ""}</div></li>`).join("");
+  return `<section class="tline">${b.kicker ? `<p class="sec-kicker">${esc(b.kicker)}</p>` : ""}${b.title ? `<h2 class="tline__h">${esc(b.title)}</h2>` : ""}${b.intro ? `<p class="tline__intro">${esc(b.intro)}</p>` : ""}<ol class="tline__list"><i class="tline__fill" aria-hidden="true"></i>${items}</ol></section>`;
+}
+// What we help with: a few groups as tabs (all panels show without scripts). Block: title, groups [{ title, text, items: [], links: [{ href, text }] }]
+function renderExplore(ctx, b) {
+  const gs = b.groups || [];
+  const tabs = gs.map((g, i) => `<button type="button" class="xpl__tab${i ? "" : " is-on"}" role="tab" aria-selected="${i ? "false" : "true"}" data-i="${i}"><span class="xpl__n">${String(i + 1).padStart(2, "0")}</span>${esc(g.title)}</button>`).join("");
+  const panels = gs.map((g, i) => `<div class="xpl__p${i ? "" : " is-on"}" role="tabpanel" data-i="${i}"><h3 class="xpl__pt">${esc(g.title)}</h3>${g.text ? `<p class="xpl__x">${esc(g.text)}</p>` : ""}<ul class="xpl__items">${(g.items || []).map((x) => `<li>${esc(x)}</li>`).join("")}</ul>${(g.links || []).length ? `<p class="xpl__links">${g.links.filter((l) => shown(ctx, l.href)).map((l) => `<a href="${esc(localizeHref(ctx, l.href))}">${esc(l.text || titleOf(ctx, l.href))}${ICON.arrow}</a>`).join("")}</p>` : ""}</div>`).join("");
+  return `<section class="xpl">${b.kicker ? `<p class="sec-kicker">${esc(b.kicker)}</p>` : ""}${b.title ? `<h2 class="xpl__h">${esc(b.title)}</h2>` : ""}<div class="xpl__box"><div class="xpl__tabs" role="tablist">${tabs}</div><div class="xpl__panels">${panels}</div></div></section>`;
+}
+// Courses and certificates: course name and who gave it, in two columns. Block: title, intro, items [[course, issuer]]
+function renderCreds(ctx, b) {
+  return `<section class="creds">${b.kicker ? `<p class="sec-kicker">${esc(b.kicker)}</p>` : ""}${b.title ? `<h2 class="creds__h">${esc(b.title)}</h2>` : ""}${b.intro ? `<p class="creds__intro">${esc(b.intro)}</p>` : ""}<ul class="creds__list">${(b.items || []).map((r) => `<li><span class="creds__c">${esc(r[0])}</span>${r[1] ? `<span class="creds__by">${esc(r[1])}</span>` : ""}</li>`).join("")}</ul></section>`;
+}
 function renderFaq(ctx, b) {
   const items = (b.items || []).filter((i) => i && i.q && i.a);
   if (!items.length) return "";
@@ -952,6 +978,9 @@ function renderBlockInner(ctx, b) {
       const sizes = (b.sizes || []).map(String);
       return `<div class="sizesel" data-sizesel="${esc(sizes.join(","))}"><span class="sizesel__label"${editFld(ctx, "label")}>${esc(b.label || "")}</span><div class="sizesel__seg" role="radiogroup" aria-label="${esc(b.label || "")}"><button type="button" role="radio" aria-checked="true" data-k="-1">${esc(b.all || "Alla")}</button>${sizes.map((x, k) => `<button type="button" role="radio" aria-checked="false" data-k="${k}">${esc(x)}${b.unit ? " " + esc(b.unit) : ""}</button>`).join("")}</div></div>`;
     }
+    case "timeline": return renderTimeline(ctx, b);
+    case "explore": return renderExplore(ctx, b);
+    case "creds": return renderCreds(ctx, b);
     case "note": return `<aside class="anote"><p class="anote__t">${esc(b.label || ctx.ui.article_note || "Visste du?")}</p><p class="anote__x">${b.html ? localizeHtml(ctx, b.html) : esc(b.text || "")}</p></aside>`;
     case "formula": return `<details class="aform"><summary><span class="aform__f" aria-hidden="true">ƒ</span><span>${esc(b.title || ctx.ui.article_formula || "Formeln, för den som vill räkna själv")}</span></summary><div class="aform__b">${(b.rows || []).map((r) => `<div class="aform__r"><span class="aform__l">${esc(r[0])}</span><code class="aform__x">${esc(r[1])}</code></div>`).join("")}${b.example ? `<p class="aform__ex">${esc(b.example)}</p>` : ""}${b.note ? `<p class="aform__n">${esc(b.note)}</p>` : ""}</div></details>`;
     case "html": return b.html || "";
@@ -1456,8 +1485,8 @@ export function renderMain(ctx, page, t) {
   const pageFld = (k) => (ctx.edit ? ` data-bk-page="${k}" data-bk-kind="plain"` : "");
   const display = t.display && !ctx.edit;
   // with a display line the banner only carries that line; the real heading and the lead sit in a calm intro right under the banner
-  const introHtml = display ? `<section class="intro"><div class="container intro__inner"><h1 class="intro__h">${esc(title)}</h1>${t.lead ? `<p class="intro__lead">${esc(t.lead)}</p>` : ""}</div></section>` : "";
-  const headHtml = `${eyebrow}${display ? `<p class="hero__title">${esc(t.display)}</p>` : `<h1 class="hero__title"${pageFld("h1")}>${esc(title)}</h1>`}${!display && (t.lead || (ctx.edit && heroImg)) ? `<p class="hero__lead"${pageFld("lead")}>${esc(t.lead || "")}</p>` : ""}${ctas ? `<div class="hero__ctas">${ctas}</div>` : ""}`;
+  const introHtml = display && isHome ? (t.lead ? `<section class="intro intro--home"><div class="container intro__inner"><p class="intro__lead">${esc(t.lead)}</p></div></section>` : "") : display ? `<section class="intro"><div class="container intro__inner"><h1 class="intro__h">${esc(title)}</h1>${t.lead ? `<p class="intro__lead">${esc(t.lead)}</p>` : ""}</div></section>` : "";
+  const headHtml = display && isHome ? `<p class="hero__slogan">${esc(t.display)}</p><h1 class="hero__what">${esc(title)}</h1>${t.lead ? `<p class="hero__lead hero__lead--home">${esc(t.leadShort || t.lead)}</p>` : ""}${ctas ? `<div class="hero__ctas">${ctas}</div>` : ""}` : `${eyebrow}${display ? `<p class="hero__title">${esc(t.display)}</p>` : `<h1 class="hero__title"${pageFld("h1")}>${esc(title)}</h1>`}${!display && (t.lead || (ctx.edit && heroImg)) ? `<p class="hero__lead"${pageFld("lead")}>${esc(t.lead || "")}</p>` : ""}${ctas ? `<div class="hero__ctas">${ctas}</div>` : ""}`;
   const heroInner = `<div class="container hero__inner">${headHtml}${heroFacts}</div>`;
   // Split banner (the products page): two pictures meet in a diagonal; site.js greys out the side that is not selected in the filter
   const split = page.hero && page.hero.split && page.hero.split.a && page.hero.split.b ? page.hero.split : null;
@@ -1481,7 +1510,7 @@ export function renderMain(ctx, page, t) {
       `${page.image ? `<figure class="container ahead__fig">${imgTag(ctx, page.image, "", { eager: true, sizes: "(min-width: 1240px) 1200px, 100vw" }).replace('loading="lazy"', 'loading="eager"')}</figure>` : ""}</header>`
     : "";
   const hero = isArticle ? articleHead : heroImg
-    ? `<section class="hero${isHome ? " hero--home" : ""}${split ? " hero--split" : ""}${solo ? " hero--solo" : ""}"${split && !solo ? ' data-show="both"' : ""}>${split ? splitImgs : heroImgTag(ctx, page, heroImg)}<div class="hero__shade"></div>${split && !solo ? '<span class="hero__seam"></span>' : ""}${heroInner}${isHome && !ctx.edit ? `<a class="hero__scroll" href="#start" aria-label="${esc(ctx.ui.scroll_down || "Scrolla ner")}">${ICON.chevronDown}</a>` : ""}</section>`
+    ? `<section class="hero${isHome ? " hero--home" : ""}${split ? " hero--split" : ""}${solo ? " hero--solo" : ""}"${isHome && display ? ' data-v="b"' : ""}${split && !solo ? ' data-show="both"' : ""}>${split ? splitImgs : heroImgTag(ctx, page, heroImg)}<div class="hero__shade"></div>${split && !solo ? '<span class="hero__seam"></span>' : ""}${heroInner}${isHome && !ctx.edit ? `<a class="hero__scroll" href="#start" aria-label="${esc(ctx.ui.scroll_down || "Scrolla ner")}">${ICON.chevronDown}</a>` : ""}</section>`
     : `<section class="page-head${page.template === "about" ? " page-head--center" : ""}"><div class="container">${page.template === "about" ? "" : eyebrow}<h1${pageFld("h1")}>${esc(title)}</h1>${t.lead && !ctx.edit ? `<p class="page-head__lead">${esc(t.lead)}</p>` : ""}</div></section>`;
   const ownRel = flatBlocks(t.blocks || []).filter((x) => x.type === "related");
   const ownHrefs = new Set(ownRel.flatMap((x) => (x.items || []).map((i) => i && i.href)));

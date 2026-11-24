@@ -1544,6 +1544,15 @@
     measure();
   });
 
+  // ---------- home banner look (a to d): ?hero=c in the address, kept for this tab only; the preview pill offers the choice ----------
+  (function () {
+    var h = document.querySelector(".hero--home[data-v]"); if (!h) return;
+    var m = /[?&]hero=([a-d])/.exec(location.search), v = m && m[1];
+    try { if (v) sessionStorage.setItem("bk-hero", v); else v = sessionStorage.getItem("bk-hero"); } catch (e) {}
+    if (v) h.setAttribute("data-v", v);
+    window.__bkHero = function (x) { h.setAttribute("data-v", x); try { sessionStorage.setItem("bk-hero", x); } catch (e) {} window.dispatchEvent(new Event("resize")); };
+  })();
+
   // ---------- preview switcher: on the GitHub preview (and with ?preview=1) a small pill flips between the current site and the redesign at /next ----------
   (function () {
     if (!/\.github\.io$/.test(location.hostname) && !/[?&]preview=1/.test(location.search)) return;
@@ -1567,6 +1576,16 @@
     }
     var tag = document.createElement("span"); tag.textContent = sv ? "Förhandsvisning" : "Preview";
     box.appendChild(tag); box.appendChild(link(false, sv ? "Nuvarande" : "Current")); box.appendChild(link(true, sv ? "Ny version" : "New version"));
+    var hh = document.querySelector(".hero--home[data-v]");
+    if (hh && window.__bkHero) {
+      var vg = document.createElement("span"); vg.className = "pv__v"; vg.innerHTML = "<b>Banner</b>";
+      ["a", "b", "c", "d"].forEach(function (x) {
+        var bt = document.createElement("button"); bt.type = "button"; bt.textContent = x.toUpperCase(); bt.setAttribute("aria-pressed", hh.getAttribute("data-v") === x ? "true" : "false"); if (hh.getAttribute("data-v") === x) bt.className = "is-on";
+        bt.addEventListener("click", function () { window.__bkHero(x); [].forEach.call(vg.querySelectorAll("button"), function (o) { var on = o === bt; o.className = on ? "is-on" : ""; o.setAttribute("aria-pressed", on ? "true" : "false"); }); });
+        vg.appendChild(bt);
+      });
+      box.appendChild(vg);
+    }
     document.body.appendChild(box);
   })();
 
@@ -1911,7 +1930,7 @@
 
 // ---------- live page head: a quiet graphite field with formwork tie points; a few small orange squares (the logo's square) light up and fade, one faint warm glow drifts, scrolling adds a little parallax. Nothing is loaded and it pauses out of view ----------
 (function () {
-  var heads = document.querySelectorAll(".page-head:not(.page-head--center)");
+  var heads = document.querySelectorAll(".page-head:not(.page-head--center), .hero--home");
   if (!heads.length || !window.HTMLCanvasElement) return;
   var reduce = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
   [].forEach.call(heads, function (head) {
@@ -1952,6 +1971,7 @@
     }
     function frame(t) {
       var dt = Math.min(48, t - (last || t)) || 16; last = t; T += dt; sy = window.scrollY;
+      if (!cv.offsetWidth) { if (on && !reduce) raf = requestAnimationFrame(frame); return; }
       for (var i = 0; i < lit.length; i++) { lit[i].t += dt / lit[i].d; if (lit[i].t >= 1) lit[i] = spark(false); }
       draw();
       if (on && !reduce) raf = requestAnimationFrame(frame);
@@ -1960,7 +1980,7 @@
     if (reduce) { lit.forEach(function (s) { s.t = 0.5; }); draw(); }
     else if ("IntersectionObserver" in window) new IntersectionObserver(function (e) { on = e[0].isIntersecting; cancelAnimationFrame(raf); if (on) { last = 0; raf = requestAnimationFrame(frame); } }).observe(head);
     else raf = requestAnimationFrame(frame);
-    window.addEventListener("resize", function () { size(); draw(); });
+    window.addEventListener("resize", function () { if (cv.offsetWidth) { size(); draw(); } });
   });
 })();
 
@@ -2022,3 +2042,45 @@
 // printing: open folded answers and details so the printout is complete
 window.addEventListener("beforeprint", function () { [].forEach.call(document.querySelectorAll(".page--article details:not([open])"), function (d) { d.setAttribute("open", ""); d.setAttribute("data-print-opened", ""); }); });
 window.addEventListener("afterprint", function () { [].forEach.call(document.querySelectorAll("details[data-print-opened]"), function (d) { d.removeAttribute("open"); d.removeAttribute("data-print-opened"); }); });
+
+// ---------- history timeline: the line fills as you scroll, each step lights up when it reaches the middle of the screen ----------
+(function () {
+  var lists = document.querySelectorAll(".tline__list");
+  if (!lists.length) return;
+  var reduce = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if (!reduce && "IntersectionObserver" in window) document.documentElement.classList.add("js-tl");
+  [].forEach.call(lists, function (list) {
+    var items = [].slice.call(list.querySelectorAll(".tline__i")), fill = list.querySelector(".tline__fill");
+    items.forEach(function (it) { [].forEach.call(it.querySelectorAll(".tline__brands li"), function (b, k) { b.style.setProperty("--b", k); }); });
+    var ticking = false;
+    function upd() {
+      ticking = false;
+      var r = list.getBoundingClientRect(), mid = window.innerHeight * 0.62;
+      var p = Math.max(0, Math.min(1, (mid - r.top) / Math.max(1, r.height)));
+      if (fill) fill.style.setProperty("--tl", p.toFixed(4));
+      items.forEach(function (it) { var n = it.querySelector(".tline__node").getBoundingClientRect(); if (n.top < mid || reduce) it.classList.add("is-on"); });
+    }
+    window.addEventListener("scroll", function () { if (!ticking) { ticking = true; requestAnimationFrame(upd); } }, { passive: true });
+    window.addEventListener("resize", upd);
+    upd();
+  });
+})();
+
+// ---------- "what we help with": tabs; without scripts every group is shown ----------
+(function () {
+  var boxes = document.querySelectorAll(".xpl");
+  if (!boxes.length) return;
+  document.documentElement.classList.add("js-xpl");
+  [].forEach.call(boxes, function (box) {
+    var tabs = [].slice.call(box.querySelectorAll(".xpl__tab")), panels = [].slice.call(box.querySelectorAll(".xpl__p"));
+    function show(i, focus) {
+      tabs.forEach(function (t, k) { var on = k === i; t.classList.toggle("is-on", on); t.setAttribute("aria-selected", on ? "true" : "false"); t.tabIndex = on ? 0 : -1; if (on && focus) t.focus(); });
+      panels.forEach(function (p, k) { p.classList.toggle("is-on", k === i); });
+    }
+    tabs.forEach(function (t, i) {
+      t.addEventListener("click", function () { show(i); });
+      t.addEventListener("keydown", function (e) { var d = e.key === "ArrowDown" || e.key === "ArrowRight" ? 1 : e.key === "ArrowUp" || e.key === "ArrowLeft" ? -1 : 0; if (d) { e.preventDefault(); show((i + d + tabs.length) % tabs.length, true); } });
+    });
+    show(0);
+  });
+})();

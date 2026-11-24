@@ -1,6 +1,6 @@
 {
   "path": "/om-oss",
-  "updated": "2026-10-11",
+  "updated": "2026-11-24",
   "template": "about",
   "order": 0,
   "published": true,
@@ -11,59 +11,33 @@
       "description": "Betongakuten är leverantör och konsult inom byggindustrin med lager i Stockholm, Göteborg och Malmö, mobil verkstad och rådgivning kring betong, geoteknik och maskiner.",
       "blocks": [
         {
-          "type": "social"
-        },
-        {
           "type": "columns",
           "ratio": "60-40",
           "left": [
             {
               "type": "heading",
               "level": 2,
-              "text": "Tjänster"
+              "text": "Vi som gör Betongakuten"
             },
             {
               "type": "text",
-              "html": "Betongakuten är en leverantör och konsult inom byggindustrin, med en stark inriktning på betong, ytskydd, geoteknik, betongpumpar, borriggar och relaterade produkter. Genom åren har vi etablerat oss som en resurs för entreprenörer, konstruktörer och de som skriver föreskrifter, tack vare vår omfattande kunskap och erfarenhet."
+              "html": "Betongakuten levererar maskiner och material till entreprenörer, konstruktörer och beställare. Men det vi egentligen säljer är trygghet: att rätt utrustning finns på plats i tid, och att någon kan svara när du undrar hur den ska användas."
             },
             {
               "type": "text",
-              "html": "Betongakutens verktygslåda har blivit stor med åren. Vår strävan är att vara ett bollplank när det gäller information om produkter och dess användning. Oavsett var du befinner dig i byggprocessen, kan Betongakuten hjälpa dig med högkvalitativa produkter och ovärderlig kunskap. Vi är mer än bara en leverantör - vi är en partner som hjälper dig att lyckas med ditt byggprojekt."
+              "html": "Vi har växt en tillverkare i taget, och varje ny tillverkare har kommit för att våra kunder behövt den. Idag spänner vi från betongytor och torrbruk till injektering, borrning och bergsäkring. Fråga oss gärna, vi löser det mesta."
             },
             {
-              "type": "text",
-              "html": "Vi hjälper till med rådgivning kring följande produkter:"
-            },
-            {
-              "type": "list",
-              "ordered": false,
-              "items": [
-                "cement",
-                "betong",
-                "impregnering",
-                "injektering",
-                "ytbeläggning",
-                "ytskydd",
-                "geoteknik",
-                "monteringsstöd",
-                "schaktsäkring",
-                "silo",
-                "betongpumpar",
-                "borriggar",
-                "vajersågar",
-                "snigeldynamit",
-                "släntstabilisering"
-              ]
-            },
-            {
-              "type": "text",
-              "html": "Tveka inte att fråga, vi löser det mesta. <a href=\"/kontakta-oss\">Kontakta oss.</a>"
+              "type": "button",
+              "kind": "download",
+              "text": "Företagsbroschyr",
+              "href": "/assets/docs/om-oss-foretagsbroschyr.pdf"
             }
           ],
           "right": [
             {
               "type": "image",
-              "alt": "Om oss: bild 2",
+              "alt": "Betongakuten på plats vid en borrning",
               "width": 1787,
               "height": 1004,
               "src": "/assets/img/om-oss-2.webp"
@@ -71,52 +45,162 @@
           ]
         },
         {
-          "type": "button",
-          "kind": "download",
-          "text": "Företagsbroschyr",
-          "href": "/assets/docs/om-oss-foretagsbroschyr.pdf"
+          "type": "facts",
+          "items": [
+            {
+              "value": "4 lager",
+              "label": "Stockholm, Göteborg, Malmö och Norge"
+            },
+            {
+              "value": "Mobil verkstad",
+              "label": "Service på plats i Sverige och Norge"
+            },
+            {
+              "value": "15 tillverkare",
+              "label": "Från Sverige, Europa och USA"
+            }
+          ]
         },
         {
-          "type": "columns",
-          "ratio": "40-60",
-          "left": [
+          "type": "explore",
+          "kicker": "Det här kan vi",
+          "title": "Vad vi hjälper till med",
+          "groups": [
             {
-              "type": "image",
-              "alt": "Om oss: bild 3",
-              "width": 800,
-              "height": 449,
-              "src": "/assets/img/om-oss-3.webp"
-            }
-          ],
-          "right": [
-            {
-              "type": "heading",
-              "level": 2,
-              "text": "Utbildningar (certifieringar)"
-            },
-            {
-              "type": "text",
-              "html": "Betongakutens representanter är utbildade inom en rad tekniska och specialiserade områden. Denna breda och djupa kunskapsbas gör att Betongakutens team kan leverera högkvalitativ service och produkter i alla skeden av byggprocessen."
-            },
-            {
-              "type": "list",
-              "ordered": false,
+              "title": "Betong och ytor",
+              "text": "Material och verktyg för att gjuta, laga, skydda och bygga upp ytor, och hantera torrbruket rationellt på bygget.",
               "items": [
-                "Kurs i dekorativa ytbeläggningar med färg och mönster (Ecobeton)",
-                "Betongklass II (Sveriges byggindustrier)",
-                "Härdplastutbildning för golventreprenörer (Mapei)",
-                "Grundutbildning sprutbetong (Mapei)",
-                "Injekteringsutbildning med cement och härdplastprodukter (Mapei)",
-                "Putsutbildning grundkurs (Maxit/Weber)",
-                "Påbyggnad härdplastutbildning (Mapei)",
-                "Säker arbetsmiljö på industri - (SSG Entré)",
-                "Liftutbildning enligt LLP - (Cramo)",
-                "Geoteknik grundkurs - (Byggakademin)",
-                "Kommunal geoteknik - (SGI)",
-                "Installation &amp; Design - Ischebeck GmbH",
-                "Betongakuten bär ID06",
-                "Hollow-bar school Montrose (TEI)"
+                "Cement och betong",
+                "Impregnering",
+                "Ytbeläggning",
+                "Ytskydd",
+                "Torrbruk och silo",
+                "Golv och puts"
+              ],
+              "links": [
+                {
+                  "href": "/losningar/ytskydd-golv"
+                },
+                {
+                  "href": "/losningar/torrbruk-silo"
+                }
               ]
+            },
+            {
+              "title": "Injektering och geoteknik",
+              "text": "Utrustning och kunskap för att täta och förstärka berg och jord, säkra schakter och stabilisera slänter.",
+              "items": [
+                "Injektering",
+                "Geoteknik",
+                "Schaktsäkring",
+                "Monteringsstöd",
+                "Släntstabilisering",
+                "Bergsäkring"
+              ],
+              "links": [
+                {
+                  "href": "/losningar/injektering"
+                },
+                {
+                  "href": "/losningar/berg-slant"
+                }
+              ]
+            },
+            {
+              "title": "Maskiner",
+              "text": "Maskiner för borrning, sprutbetong, pumpning och kapning, med service från vår mobila verkstad.",
+              "items": [
+                "Borriggar",
+                "Betongpumpar",
+                "Sprutbetong",
+                "Vajersågar",
+                "Snigeldynamit"
+              ],
+              "links": [
+                {
+                  "href": "/losningar/borrning"
+                },
+                {
+                  "href": "/losningar/sprutbetong"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "timeline",
+          "kicker": "Historia",
+          "title": "Från betong till berg",
+          "intro": "Så har Betongakuten vuxit, en tillverkare i taget.",
+          "items": [
+            {
+              "label": "Där allt började",
+              "title": "Betongakuten startar",
+              "text": "Det började med betong. Idén var enkel: entreprenörer behöver någon som både kan leverera material och svara på hur det ska användas."
+            },
+            {
+              "label": "Betong och ytor",
+              "title": "Ecobeton och Weber",
+              "text": "De första tillverkarna kom från betongens och ytornas värld: system för att laga, täta och skydda betong från Ecobeton, och puts, murbruk och golv från Weber.",
+              "brands": [
+                "/produkter/ecobeton",
+                "/produkter/weber"
+              ]
+            },
+            {
+              "label": "Under jord",
+              "title": "Ischebeck, TEI och Häny",
+              "text": "Sedan gick vi under jord. Med Ischebeck och TEI kom förankring, borrning och mikropålar, och med Häny injekteringspumpar och blandare från Schweiz.",
+              "brands": [
+                "Ischebeck",
+                "/produkter/tei",
+                "/produkter/haeny"
+              ]
+            },
+            {
+              "label": "Grundläggning",
+              "title": "Marini",
+              "text": "Marini gav oss specialmaskiner för grundläggning och stenbrott, som borriggar och vajersågar.",
+              "brands": [
+                "/produkter/marini"
+              ]
+            },
+            {
+              "label": "Senast",
+              "title": "Terra Infrastructure",
+              "text": "Den senaste tillverkaren är Terra Infrastructure, med topphammare och vibroenheter för att borra stag och driva spont i tuff mark.",
+              "brands": [
+                "/produkter/terra-infrastructure"
+              ]
+            },
+            {
+              "label": "2026",
+              "title": "Vi och Ischebeck går skilda vägar",
+              "text": "I år gick Betongakuten och Ischebeck skilda vägar. Borrning, förankring och mikropålar finns kvar i sortimentet, bland annat från TEI.",
+              "past": true
+            },
+            {
+              "label": "Idag",
+              "title": "15 tillverkare, 4 lager och en mobil verkstad",
+              "text": "Idag representerar vi tillverkare från Sverige, Europa och USA, med lager i Stockholm, Göteborg, Malmö och Norge.",
+              "brands": [
+                "/produkter/haeny",
+                "/produkter/tei",
+                "/produkter/marini",
+                "/produkter/terra-infrastructure",
+                "/produkter/geobrugg",
+                "/produkter/brutus",
+                "/produkter/jean-lutz",
+                "/produkter/reed",
+                "/produkter/ahlm",
+                "/produkter/flexo-tekniikka",
+                "/produkter/kraft-tool",
+                "/produkter/mapei",
+                "/produkter/weber",
+                "/produkter/ecobeton",
+                "/produkter/ram-board"
+              ],
+              "now": true
             }
           ]
         },
@@ -128,7 +212,7 @@
         },
         {
           "type": "text",
-          "html": "Lager i Stockholm, Göteborg och Malmö för snabb leverans eller upphämtning.",
+          "html": "Lager i Stockholm, Göteborg, Malmö och norr om Oslo, för snabb leverans eller upphämtning. Vår mobila verkstad kommer ut till er, i Sverige och Norge.",
           "tag": "lager"
         },
         {
@@ -176,15 +260,78 @@
           "span": 40
         },
         {
-          "type": "image",
-          "alt": "ID06",
-          "width": 86,
-          "height": 102,
-          "src": "/assets/img/om-oss-5.gif",
-          "maxWidth": 86
+          "type": "creds",
+          "kicker": "Kunskap",
+          "title": "Utbildningar och certifieringar",
+          "intro": "Vi har gått tillverkarnas och branschens utbildningar, så att vi kan ge råd som håller i alla skeden av bygget.",
+          "items": [
+            [
+              "Dekorativa ytbeläggningar med färg och mönster",
+              "Ecobeton"
+            ],
+            [
+              "Betongklass II",
+              "Sveriges byggindustrier"
+            ],
+            [
+              "Härdplastutbildning för golventreprenörer",
+              "Mapei"
+            ],
+            [
+              "Påbyggnad härdplastutbildning",
+              "Mapei"
+            ],
+            [
+              "Grundutbildning sprutbetong",
+              "Mapei"
+            ],
+            [
+              "Injektering med cement och härdplastprodukter",
+              "Mapei"
+            ],
+            [
+              "Putsutbildning, grundkurs",
+              "Maxit och Weber"
+            ],
+            [
+              "Säker arbetsmiljö på industri",
+              "SSG Entré"
+            ],
+            [
+              "Liftutbildning enligt LLP",
+              "Cramo"
+            ],
+            [
+              "Geoteknik grundkurs",
+              "Byggakademin"
+            ],
+            [
+              "Kommunal geoteknik",
+              "SGI"
+            ],
+            [
+              "Installation och design",
+              "Ischebeck GmbH"
+            ],
+            [
+              "Hollow-bar school",
+              "TEI, Montrose"
+            ]
+          ]
+        },
+        {
+          "type": "cta",
+          "title": "Berätta om ditt projekt",
+          "text": "Hör av dig med frågor om maskiner, material eller hur något ska användas. Vi svarar så snabbt vi kan.",
+          "button": "Kontakta oss",
+          "href": "/kontakta-oss"
+        },
+        {
+          "type": "social"
         }
       ],
-      "seoTitle": "Om oss: leverantör och konsult inom byggindustrin | Betongakuten"
+      "seoTitle": "Om oss: leverantör och konsult inom byggindustrin | Betongakuten",
+      "lead": "Leverantör och konsult inom byggindustrin, med maskiner, material och kunskap för betong, injektering och borrning."
     },
     "en": {
       "title": "About us",
@@ -192,59 +339,33 @@
       "description": "Betongakuten is a supplier and consultant to the construction industry with warehouses in Stockholm, Gothenburg and Malmö, a mobile workshop and advice on concrete, geotechnics and machines.",
       "blocks": [
         {
-          "type": "social"
-        },
-        {
           "type": "columns",
           "ratio": "60-40",
           "left": [
             {
               "type": "heading",
               "level": 2,
-              "text": "Services"
+              "text": "The people behind Betongakuten"
             },
             {
               "type": "text",
-              "html": "Betongakuten is a supplier and consultant to the construction industry, with a strong focus on concrete, surface protection, geotechnics, concrete pumps, drilling rigs and related products. Over the years we have established ourselves as a resource for contractors, designers and specifiers, thanks to our extensive knowledge and experience."
+              "html": "Betongakuten supplies machines and materials to contractors, engineers and clients. But what we really sell is peace of mind: the right equipment on site in time, and someone to answer when you wonder how to use it."
             },
             {
               "type": "text",
-              "html": "Betongakuten’s toolbox has grown large over the years. Our aim is to be a sounding board when it comes to information about products and how they are used. Wherever you are in the construction process, Betongakuten can help you with high-quality products and invaluable knowledge. We are more than just a supplier, we are a partner that helps you succeed with your construction project."
+              "html": "We have grown one manufacturer at a time, and each new one has come because our customers needed it. Today we cover everything from concrete surfaces and dry mortar to grouting, drilling and rock support. Just ask, we can sort out most things."
             },
             {
-              "type": "text",
-              "html": "We help with advice on the following products:"
-            },
-            {
-              "type": "list",
-              "ordered": false,
-              "items": [
-                "cement",
-                "concrete",
-                "impregnation",
-                "grouting",
-                "surface coatings",
-                "surface protection",
-                "geotechnics",
-                "assembly supports",
-                "trench shoring",
-                "silos",
-                "concrete pumps",
-                "drilling rigs",
-                "wire saws",
-                "non-explosive rock splitting",
-                "slope stabilisation"
-              ]
-            },
-            {
-              "type": "text",
-              "html": "Don’t hesitate to ask, we solve most things. <a href=\"/kontakta-oss\">Contact us.</a>"
+              "type": "button",
+              "kind": "download",
+              "text": "Company brochure",
+              "href": "/assets/docs/om-oss-foretagsbroschyr.pdf"
             }
           ],
           "right": [
             {
               "type": "image",
-              "alt": "About us: image 2",
+              "alt": "Betongakuten on site at a drilling job",
               "width": 1787,
               "height": 1004,
               "src": "/assets/img/om-oss-2.webp"
@@ -252,52 +373,162 @@
           ]
         },
         {
-          "type": "button",
-          "kind": "download",
-          "text": "Company brochure",
-          "href": "/assets/docs/om-oss-foretagsbroschyr.pdf"
+          "type": "facts",
+          "items": [
+            {
+              "value": "4 warehouses",
+              "label": "Stockholm, Gothenburg, Malmö and Norway"
+            },
+            {
+              "value": "Mobile workshop",
+              "label": "Service on site in Sweden and Norway"
+            },
+            {
+              "value": "15 manufacturers",
+              "label": "From Sweden, Europe and the USA"
+            }
+          ]
         },
         {
-          "type": "columns",
-          "ratio": "40-60",
-          "left": [
+          "type": "explore",
+          "kicker": "What we do",
+          "title": "What we help with",
+          "groups": [
             {
-              "type": "image",
-              "alt": "About us: image 3",
-              "width": 800,
-              "height": 449,
-              "src": "/assets/img/om-oss-3.webp"
-            }
-          ],
-          "right": [
-            {
-              "type": "heading",
-              "level": 2,
-              "text": "Training (certifications)"
-            },
-            {
-              "type": "text",
-              "html": "Betongakuten’s representatives are trained in a range of technical and specialised areas. This broad and deep knowledge base allows the Betongakuten team to deliver high-quality service and products at every stage of the construction process."
-            },
-            {
-              "type": "list",
-              "ordered": false,
+              "title": "Concrete and surfaces",
+              "text": "Materials and tools to cast, repair, protect and build up surfaces, and to handle dry mortar efficiently on site.",
               "items": [
-                "Course in decorative surface coatings with colour and pattern (Ecobeton)",
-                "Concrete class II (Swedish Construction Industries)",
-                "Epoxy and thermoset training for flooring contractors (Mapei)",
-                "Basic shotcrete training (Mapei)",
-                "Grouting training with cement and thermoset products (Mapei)",
-                "Basic plastering course (Maxit/Weber)",
-                "Advanced thermoset training (Mapei)",
-                "Safe working environment in industry (SSG Entré)",
-                "Aerial work platform training according to LLP (Cramo)",
-                "Geotechnics basic course (Byggakademin)",
-                "Municipal geotechnics (SGI)",
-                "Installation &amp; Design: Ischebeck GmbH",
-                "Betongakuten holds ID06",
-                "Hollow-bar school Montrose (TEI)"
+                "Cement and concrete",
+                "Impregnation",
+                "Surface coatings",
+                "Surface protection",
+                "Dry mortar and silos",
+                "Floors and render"
+              ],
+              "links": [
+                {
+                  "href": "/losningar/ytskydd-golv"
+                },
+                {
+                  "href": "/losningar/torrbruk-silo"
+                }
               ]
+            },
+            {
+              "title": "Grouting and geotechnics",
+              "text": "Equipment and know-how to seal and strengthen rock and soil, secure excavations and stabilise slopes.",
+              "items": [
+                "Grouting",
+                "Geotechnics",
+                "Trench shoring",
+                "Assembly supports",
+                "Slope stabilisation",
+                "Rock support"
+              ],
+              "links": [
+                {
+                  "href": "/losningar/injektering"
+                },
+                {
+                  "href": "/losningar/berg-slant"
+                }
+              ]
+            },
+            {
+              "title": "Machines",
+              "text": "Machines for drilling, shotcrete, pumping and cutting, with service from our mobile workshop.",
+              "items": [
+                "Drilling rigs",
+                "Concrete pumps",
+                "Shotcrete",
+                "Wire saws",
+                "Non-explosive rock splitting"
+              ],
+              "links": [
+                {
+                  "href": "/losningar/borrning"
+                },
+                {
+                  "href": "/losningar/sprutbetong"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "timeline",
+          "kicker": "History",
+          "title": "From concrete to rock",
+          "intro": "How Betongakuten has grown, one manufacturer at a time.",
+          "items": [
+            {
+              "label": "Where it began",
+              "title": "Betongakuten starts",
+              "text": "It started with concrete. The idea was simple: contractors need someone who can both supply materials and answer how to use them."
+            },
+            {
+              "label": "Concrete and surfaces",
+              "title": "Ecobeton and Weber",
+              "text": "The first manufacturers came from the world of concrete and surfaces: systems to repair, seal and protect concrete from Ecobeton, and render, mortar and floors from Weber.",
+              "brands": [
+                "/produkter/ecobeton",
+                "/produkter/weber"
+              ]
+            },
+            {
+              "label": "Underground",
+              "title": "Ischebeck, TEI and Häny",
+              "text": "Then we went underground. Ischebeck and TEI brought anchoring, drilling and micropiles, and Häny brought grouting pumps and mixers from Switzerland.",
+              "brands": [
+                "Ischebeck",
+                "/produkter/tei",
+                "/produkter/haeny"
+              ]
+            },
+            {
+              "label": "Foundations",
+              "title": "Marini",
+              "text": "Marini brought special machines for foundations and quarrying, such as drill rigs and wire saws.",
+              "brands": [
+                "/produkter/marini"
+              ]
+            },
+            {
+              "label": "Latest",
+              "title": "Terra Infrastructure",
+              "text": "The latest manufacturer is Terra Infrastructure, with top hammers and vibro units for drilling anchors and driving sheet piles in tough ground.",
+              "brands": [
+                "/produkter/terra-infrastructure"
+              ]
+            },
+            {
+              "label": "2026",
+              "title": "We and Ischebeck part ways",
+              "text": "This year Betongakuten and Ischebeck parted ways. Drilling, anchoring and micropiles remain in our range, from TEI among others.",
+              "past": true
+            },
+            {
+              "label": "Today",
+              "title": "15 manufacturers, 4 warehouses and a mobile workshop",
+              "text": "Today we represent manufacturers from Sweden, Europe and the USA, with warehouses in Stockholm, Gothenburg, Malmö and Norway.",
+              "brands": [
+                "/produkter/haeny",
+                "/produkter/tei",
+                "/produkter/marini",
+                "/produkter/terra-infrastructure",
+                "/produkter/geobrugg",
+                "/produkter/brutus",
+                "/produkter/jean-lutz",
+                "/produkter/reed",
+                "/produkter/ahlm",
+                "/produkter/flexo-tekniikka",
+                "/produkter/kraft-tool",
+                "/produkter/mapei",
+                "/produkter/weber",
+                "/produkter/ecobeton",
+                "/produkter/ram-board"
+              ],
+              "now": true
             }
           ]
         },
@@ -309,7 +540,7 @@
         },
         {
           "type": "text",
-          "html": "Warehouses in Stockholm, Gothenburg and Malmö for fast delivery or pickup.",
+          "html": "Warehouses in Stockholm, Gothenburg, Malmö and north of Oslo, for fast delivery or pickup. Our mobile workshop comes out to you, in Sweden and Norway.",
           "tag": "lager"
         },
         {
@@ -357,16 +588,79 @@
           "span": 40
         },
         {
-          "type": "image",
-          "alt": "ID06",
-          "width": 86,
-          "height": 102,
-          "src": "/assets/img/om-oss-5.gif",
-          "maxWidth": 86
+          "type": "creds",
+          "kicker": "Know-how",
+          "title": "Training and certifications",
+          "intro": "We have taken the manufacturers' and the industry's courses, so our advice holds up at every stage of the build.",
+          "items": [
+            [
+              "Decorative surface coatings with colour and pattern",
+              "Ecobeton"
+            ],
+            [
+              "Concrete class II",
+              "Swedish Construction Industries"
+            ],
+            [
+              "Thermoset training for flooring contractors",
+              "Mapei"
+            ],
+            [
+              "Advanced thermoset training",
+              "Mapei"
+            ],
+            [
+              "Basic shotcrete training",
+              "Mapei"
+            ],
+            [
+              "Grouting with cement and thermoset products",
+              "Mapei"
+            ],
+            [
+              "Plastering, basic course",
+              "Maxit and Weber"
+            ],
+            [
+              "Safe working environment in industry",
+              "SSG Entré"
+            ],
+            [
+              "Aerial work platform training to LLP",
+              "Cramo"
+            ],
+            [
+              "Geotechnics, basic course",
+              "Byggakademin"
+            ],
+            [
+              "Municipal geotechnics",
+              "SGI"
+            ],
+            [
+              "Installation and design",
+              "Ischebeck GmbH"
+            ],
+            [
+              "Hollow-bar school",
+              "TEI, Montrose"
+            ]
+          ]
+        },
+        {
+          "type": "cta",
+          "title": "Tell us about your project",
+          "text": "Get in touch with questions about machines, materials or how something should be used. We answer as quickly as we can.",
+          "button": "Contact us",
+          "href": "/kontakta-oss"
+        },
+        {
+          "type": "social"
         }
       ],
       "published": true,
-      "seoTitle": "About us: supplier and consultant to construction | Betongakuten"
+      "seoTitle": "About us: supplier and consultant to construction | Betongakuten",
+      "lead": "Supplier and consultant to the construction industry, with machines, materials and know-how for concrete, grouting and drilling."
     },
     "es": {
       "title": "Sobre nosotros",
