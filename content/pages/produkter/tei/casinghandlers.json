@@ -1,0 +1,345 @@
+{
+  "path": "/produkter/tei/casinghandlers",
+  "updated": "2026-11-25",
+  "template": "product",
+  "order": 4,
+  "published": true,
+  "hideIn": [
+    "es",
+    "no",
+    "lt",
+    "lv",
+    "et",
+    "ru"
+  ],
+  "hero": {
+    "image": "/assets/img/tei-casinghandlers-hero.webp"
+  },
+  "source": {
+    "url": "https://teirockdrills.com/rock-drill-safety-equipment/safety-handlers/"
+  },
+  "i18n": {
+    "sv": {
+      "title": "Casinghandlers",
+      "h1": "Casinghandlers",
+      "seoTitle": "Casinghandler HCC10X och HCC16X från TEI | Betongakuten",
+      "description": "Hydrauliska casinghandlers från TEI som lyfter och placerar foderrör och borrstänger med grävmaskinen, utan medhjälpare i riskzonen. HCC10X och HCC16X.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "TEI Rock Drills logotyp",
+          "href": "/produkter/tei",
+          "width": 1920,
+          "height": 1117,
+          "src": "/assets/img/tei-2.webp"
+        },
+        {
+          "type": "text",
+          "html": "En casinghandler från TEI är en hydraulisk gripare som sitter på grävmaskinens arm och lyfter, håller och placerar foderrör och borrstänger. Ingen behöver stå i riskzonen och hålla röret för hand, och röret hamnar rakt och centrerat över borrmasten."
+        },
+        {
+          "type": "text",
+          "html": "Griparen fästs på grävarens sticka och drivs med maskinens extrahydraulik, så grävmaskinen behöver inte byggas om. Den greppar foderrör och borrstång samtidigt och håller dem koncentriska. Två positionerare som vrider 360 grader gör att föraren kan arbeta både lodrätt och vågrätt, och en programmerad styrning ger mjuka rörelser även med last."
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Kontakta oss</a> för pris och mer information."
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Broschyr HCC10X (ENG)",
+          "href": "/assets/docs/tei-casinghandlers-hcc10x-broschyr-eng.pdf"
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Broschyr HCC16X (ENG)",
+          "href": "/assets/docs/tei-casinghandlers-hcc16x-broschyr-eng.pdf"
+        },
+        {
+          "type": "cards",
+          "items": [
+            {
+              "href": "/produkter/tei/casinghandlers/hcc10x",
+              "label": "Läs mer",
+              "title": "HCC10X",
+              "text": "Foderrör 177-254 mm. För grävare: 7-15 ton",
+              "image": "/assets/img/tei-casinghandlers-hcc10x.webp",
+              "width": 1024,
+              "height": 1024,
+              "alt": "HCC10X casinghandler"
+            },
+            {
+              "href": "/produkter/tei/casinghandlers/hcc16x",
+              "label": "Läs mer",
+              "title": "HCC16X",
+              "text": "Foderrör 76-406 mm. För grävare: 14-18 ton",
+              "image": "/assets/img/tei-casinghandlers.webp",
+              "width": 1500,
+              "height": 1500,
+              "alt": "HCC16X casinghandler"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            "Grävmaskinen byggs inte om",
+            "Drivs med grävmaskinens extrahydraulik",
+            "Passar de flesta grävmaskiner",
+            "Greppar foderrör och borrstång samtidigt",
+            "Håller borrsträngen centrerad i foderröret",
+            "Ingen medhjälpare i riskzonen"
+          ]
+        },
+        {
+          "type": "table",
+          "header": true,
+          "caption": "Casinghandlers i jämförelse",
+          "rows": [
+            [
+              "Modell",
+              "Foderrör (mm)",
+              "Max verktygsvikt (kg)",
+              "Hydraulflöde (l/min)",
+              "Tryck (bar)",
+              "Vikt (kg)",
+              "Grävmaskin"
+            ],
+            [
+              "HCC10X",
+              "177 - 254",
+              "907",
+              "19 - 30",
+              "207",
+              "635",
+              "7-15 ton"
+            ],
+            [
+              "HCC16X",
+              "76 - 406",
+              "907 - 1360",
+              "19 - 30",
+              "207",
+              "1177",
+              "14-18 ton"
+            ]
+          ],
+          "links": [
+            "/produkter/tei/casinghandlers/hcc10x",
+            "/produkter/tei/casinghandlers/hcc16x"
+          ]
+        },
+        {
+          "type": "text",
+          "html": "<small>TEI:s tekniska specifikationer tar hänsyn till en hydraulisk effektförlust på 40%. Dessa värden kan ändras utan förvarning. Båda finns med 12 V eller 24 V styrning.</small>",
+          "tableNote": true
+        },
+        {
+          "type": "carousel",
+          "items": [
+            {
+              "src": "/assets/img/tei-casinghandlers-hero.webp",
+              "alt": "HCC10X placerar foderrör över borrmasten",
+              "width": 2200,
+              "height": 1936
+            },
+            {
+              "src": "/assets/img/tei-casinghandlers-hcc16x-falt.webp",
+              "alt": "HCC16X på grävmaskin med foderrör",
+              "width": 2400,
+              "height": 1667
+            },
+            {
+              "src": "/assets/img/tei-casinghandlers-hcc10x.webp",
+              "alt": "HCC10X greppar ett foderrör",
+              "width": 1024,
+              "height": 1024
+            },
+            {
+              "src": "/assets/img/tei-casinghandlers-styrning.webp",
+              "alt": "Styrspaken i grävmaskinens hytt",
+              "width": 1400,
+              "height": 1050
+            }
+          ]
+        },
+        {
+          "type": "related",
+          "items": [
+            {
+              "href": "/produkter/tei/borrmaster",
+              "mutual": true
+            },
+            {
+              "href": "/produkter/tei/rotationshammare",
+              "mutual": true
+            }
+          ]
+        }
+      ]
+    },
+    "en": {
+      "title": "Casing handlers",
+      "h1": "Casing handlers",
+      "seoTitle": "Casing handlers HCC10X and HCC16X from TEI | Betongakuten",
+      "description": "Hydraulic casing handlers from TEI that lift and place casing and drill pipe with the excavator, with no helper in the work zone. HCC10X and HCC16X.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "TEI Rock Drills logo",
+          "href": "/produkter/tei",
+          "width": 1920,
+          "height": 1117,
+          "src": "/assets/img/tei-2.webp"
+        },
+        {
+          "type": "text",
+          "html": "A TEI casing handler is a hydraulic gripper that sits on the excavator arm and lifts, holds and places casing and drill pipe. Nobody has to stand in the danger zone holding the pipe by hand, and the pipe ends up straight and centred over the drill mast."
+        },
+        {
+          "type": "text",
+          "html": "The handler attaches to the excavator stick and runs on the machine's auxiliary hydraulics, so the excavator does not need modifying. It grips casing and drill pipe at the same time and keeps them concentric. Two 360-degree positioners let the operator work in both vertical and horizontal planes, and a programmed controller gives smooth movement under load."
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Contact us</a> for price and more information."
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Brochure HCC10X (ENG)",
+          "href": "/assets/docs/tei-casinghandlers-hcc10x-broschyr-eng.pdf"
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Brochure HCC16X (ENG)",
+          "href": "/assets/docs/tei-casinghandlers-hcc16x-broschyr-eng.pdf"
+        },
+        {
+          "type": "cards",
+          "items": [
+            {
+              "href": "/produkter/tei/casinghandlers/hcc10x",
+              "label": "Read more",
+              "title": "HCC10X",
+              "text": "Casing 177-254 mm. For excavators: 7-15 tonnes",
+              "image": "/assets/img/tei-casinghandlers-hcc10x.webp",
+              "width": 1024,
+              "height": 1024,
+              "alt": "HCC10X casing handler"
+            },
+            {
+              "href": "/produkter/tei/casinghandlers/hcc16x",
+              "label": "Read more",
+              "title": "HCC16X",
+              "text": "Casing 76-406 mm. For excavators: 14-18 tonnes",
+              "image": "/assets/img/tei-casinghandlers.webp",
+              "width": 1500,
+              "height": 1500,
+              "alt": "HCC16X casing handler"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            "No modification to the excavator",
+            "Runs on the excavator's auxiliary hydraulics",
+            "Fits most excavators",
+            "Picks casing and drill pipe at the same time",
+            "Keeps the drill string centred inside the casing",
+            "No helper in the work zone"
+          ]
+        },
+        {
+          "type": "table",
+          "header": true,
+          "caption": "Casing handlers compared",
+          "rows": [
+            [
+              "Model",
+              "Casing (mm)",
+              "Max tool weight (kg)",
+              "Hydraulic flow (l/min)",
+              "Pressure (bar)",
+              "Weight (kg)",
+              "Excavator"
+            ],
+            [
+              "HCC10X",
+              "177 - 254",
+              "907",
+              "19 - 30",
+              "207",
+              "635",
+              "7-15 tonnes"
+            ],
+            [
+              "HCC16X",
+              "76 - 406",
+              "907 - 1360",
+              "19 - 30",
+              "207",
+              "1177",
+              "14-18 tonnes"
+            ]
+          ],
+          "links": [
+            "/produkter/tei/casinghandlers/hcc10x",
+            "/produkter/tei/casinghandlers/hcc16x"
+          ]
+        },
+        {
+          "type": "text",
+          "html": "<small>TEI's technical specifications assume a 40% hydraulic power loss. Values may change without notice. Both are available with 12 V or 24 V controls.</small>",
+          "tableNote": true
+        },
+        {
+          "type": "carousel",
+          "items": [
+            {
+              "src": "/assets/img/tei-casinghandlers-hero.webp",
+              "alt": "HCC10X placing casing over the drill mast",
+              "width": 2200,
+              "height": 1936
+            },
+            {
+              "src": "/assets/img/tei-casinghandlers-hcc16x-falt.webp",
+              "alt": "HCC16X on an excavator with casing",
+              "width": 2400,
+              "height": 1667
+            },
+            {
+              "src": "/assets/img/tei-casinghandlers-hcc10x.webp",
+              "alt": "HCC10X gripping a casing",
+              "width": 1024,
+              "height": 1024
+            },
+            {
+              "src": "/assets/img/tei-casinghandlers-styrning.webp",
+              "alt": "The joystick in the excavator cab",
+              "width": 1400,
+              "height": 1050
+            }
+          ]
+        },
+        {
+          "type": "related",
+          "items": [
+            {
+              "href": "/produkter/tei/borrmaster",
+              "mutual": true
+            },
+            {
+              "href": "/produkter/tei/rotationshammare",
+              "mutual": true
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

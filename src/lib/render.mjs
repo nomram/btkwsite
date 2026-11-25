@@ -236,6 +236,12 @@ function compactCard(ctx, it, idx, title, href) {
   const text = it.text || ctx.edit ? `<p class="card__text"${editFld(ctx, `items.${idx}.text`)}>${esc(it.text || "")}</p>` : "";
   return `<li class="card card--photo"><a class="card__link" href="${esc(href)}">${media}<span class="card__body"><h${lvl} class="card__title"${editFld(ctx, `items.${idx}.title`)}>${esc(title)}</h${lvl}>${text}<span class="card__foot"><span class="card__more">${esc(ctx.ui.read_more || "Läs mer")}${ICON.arrow}</span>${mini}</span></span></a></li>`;
 }
+// Excavator size classes as four grey silhouettes growing left to right, the card's own class dark (it.excavator = 1..4)
+const EXCAVATOR_SVG = '<path d="M5 31.5h28a3.5 3.5 0 0 1 0 7H5a3.5 3.5 0 0 1 0-7z"/><path d="M4 21h27v9H4z"/><path fill-rule="evenodd" d="M17 11h10l2 10H17zm2.2 2.2h6.1l1.1 5H19.2z"/><path d="M28.5 21.5 41 7.5l3.2 2.2-12.4 14.5z"/><path d="M41.2 7.3l3.2-.6 8.7 16.8-3 1.4z"/><path d="M49.6 23.6l4.4-1.4 3.4 6.8c-2.6 1.6-5.6 1.8-8.2.6z"/>';
+function excavatorScale(n) {
+  const on = Math.min(4, Math.max(1, Math.round(Number(n) || 1))) - 1, S = [0.55, 0.7, 0.85, 1], X = [0, 40, 92, 158];
+  return `<span class="exc" aria-hidden="true"><svg viewBox="0 0 240 44" width="240" height="44">${S.map((sc, i) => `<g class="exc__m${i === on ? " is-on" : ""}" transform="translate(${X[i]} ${(44 - 40 * sc).toFixed(1)}) scale(${sc})">${EXCAVATOR_SVG}</g>`).join("")}<path class="exc__ground" d="M0 43.6h240"/></svg></span>`;
+}
 function renderCards(ctx, b) {
   if (b.style === "logos" && !ctx.edit) return renderLogoWall(ctx, b);
   if (b.style === "marquee" && !ctx.edit) return ctx._noMarquee ? "" : renderLogoRow(ctx, b); // on home the logos live in the grid beside the photo instead
@@ -252,7 +258,7 @@ function renderCards(ctx, b) {
     const text = it.text || ctx.edit ? `<p class="card__text"${editFld(ctx, `items.${idx}.text`)}>${esc(it.text || "")}</p>` : "";
     return `<li class="card"><a class="card__link" href="${esc(href)}">` +
       (img ? `<span class="card__media${cbaked ? " card__media--tile" : ""}">${img}</span>` : "") +
-      `<span class="card__body"><h${ctx._cardLevel || 3} class="card__title"${editFld(ctx, `items.${idx}.title`)}>${esc(title)}</h${ctx._cardLevel || 3}>${text}<span class="card__more">${esc(ctx.ui.read_more || "Läs mer")}${ICON.arrow}</span></span></a></li>`;
+      `<span class="card__body"><h${ctx._cardLevel || 3} class="card__title"${editFld(ctx, `items.${idx}.title`)}>${esc(title)}</h${ctx._cardLevel || 3}>${text}${it.excavator ? excavatorScale(it.excavator) : ""}<span class="card__more">${esc(ctx.ui.read_more || "Läs mer")}${ICON.arrow}</span></span></a></li>`;
   };
   const ul = (list) => `<ul class="cards${square && !photo ? " cards--square" : ""}${photo || list.some(([it]) => it.group) ? " cards--photo" : ""}${Number(b.cols) === 3 ? " cards--c3" : ""}">${list.map(li).join("")}</ul>`;
   // Items marked with a group (machines / material) are listed under a heading each; site.js adds the buttons that show or hide a group
@@ -1308,9 +1314,7 @@ function renderFooter(ctx) {
   const phones = (c.phones || []).map((p) => `<li>${ICON.phone}<span class="sr-only">${esc(p.label || "")}: </span><a href="${esc(telHref(p.value))}">${esc(phoneText(ctx, p.value))}</a></li>`).join("");
   return `<footer class="site-footer"><div class="container site-footer__grid">` +
     `<div class="site-footer__about"><img class="site-footer__logo" src="/assets/brand/logo-white.svg" alt="${esc(s.name)}" width="190" height="30" loading="lazy">` +
-    // who we are, in one sentence (the home page lead), under the logo
-    (footerAbout ? `<p class="site-footer__pitch">${esc(footerAbout)}</p>` : "") +
-    `<p>${esc(s.legalName || s.name)}</p>${s.orgNumber ? `<p class="muted">${esc(ctx.ui.org_no || "Org.nr")} ${esc(s.orgNumber)}</p>` : ""}${tagline(ctx) ? `<p class="muted">${esc(tagline(ctx))}</p>` : ""}</div>` +
+    `<p>${esc(s.legalName || s.name)}</p>${s.orgNumber ? `<p class="muted">${esc(ctx.ui.org_no || "Org.nr")} ${esc(s.orgNumber)}</p>` : ""}${footerAbout || tagline(ctx) ? `<p class="muted site-footer__tag">${esc(footerAbout || tagline(ctx))}</p>` : ""}</div>` +
     (brands.length ? `<nav aria-label="${esc(navTitleOf(ctx, "/produkter"))}"><h2 class="site-footer__h">${esc(navTitleOf(ctx, "/produkter"))}</h2><ul class="site-footer__links site-footer__links--cols">${brands.map((b) => `<li><a href="${esc(ctx.url(b))}">${esc(navTitleOf(ctx, b))}</a></li>`).join("")}</ul></nav>` : "") +
     `<nav aria-label="${esc(ctx.ui.footer_nav || "Sidfot")}"><h2 class="site-footer__h">${esc(ctx.ui.company || "Företaget")}</h2><ul class="site-footer__links">${company.map((p) => `<li><a href="${esc(ctx.url(p))}">${esc(navTitleOf(ctx, p))}</a></li>`).join("")}` +
     `${privacyPath ? `<li><a href="${esc(legalUrl(ctx, privacyPath))}"${legalLang(ctx, privacyPath) !== ctx.lang ? ` hreflang="${esc(htmlLang(ctx, legalLang(ctx, privacyPath)))}"` : ""}>${esc((() => { const t = ctx.tr(privacyPath, legalLang(ctx, privacyPath)); return t ? (t.navTitle || t.title || t.h1) : privacyPath; })())}</a></li>` : ""}` +

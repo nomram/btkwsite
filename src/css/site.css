@@ -2830,7 +2830,7 @@ body::before { display: none; }
 .mediapair .video { margin: 0 0 1.6rem; max-width: none; }
 .mediapair__side > h3, .mediapair__side > h4 { margin-top: 0; }
 @media (max-width: 860px) { .mediapair { grid-template-columns: minmax(0, 1fr); } .mediapair .carousel .carousel__slide { aspect-ratio: 4 / 3; } }
-.site-footer__pitch { max-width: 24rem; margin: 1.1rem 0 1.2rem !important; padding-left: .9rem; border-left: 2px solid var(--primary); color: rgba(255, 255, 255, .86); font-size: .95rem; line-height: 1.6; }
+.site-footer__tag { max-width: 22rem; line-height: 1.55; }
 .intro--home .lgrid__caps { min-height: 6rem; margin-top: 1.3rem; padding-top: 1rem; border-top: 1px solid var(--line); }
 .intro--home .lgrid__caps .lshow__cap { top: 1rem; }
 @media (max-width: 860px) { .intro--home .lgrid__caps { min-height: 7rem; } }
@@ -2838,3 +2838,11 @@ body::before { display: none; }
 @media (max-width: 1100px) { .prose .clients--logos .clients__list > li.clients__more { flex-basis: 25%; } }
 @media (max-width: 700px) { .prose .clients--logos .clients__list > li.clients__more { flex-basis: calc(100% / 3); height: 4rem; } }
 @media (max-width: 460px) { .prose .clients--logos .clients__list > li.clients__more { flex-basis: 50%; } }
+
+/* r40: excavator size classes on the TEI mast cards, monochrome */
+.exc { display: block; margin: .9rem 0 .2rem; }
+.exc svg { display: block; width: min(100%, 13.5rem); height: auto; overflow: visible; }
+.exc__m { fill: #d9d4ce; transition: fill .3s; }
+.exc__m.is-on { fill: var(--text); }
+.card__link:hover .exc__m.is-on { fill: var(--primary); }
+.exc__ground { stroke: #d9d4ce; stroke-width: .6; fill: none; }

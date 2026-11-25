@@ -1,0 +1,245 @@
+{
+  "path": "/produkter/tei/casinghandlers/hcc16x",
+  "updated": "2026-11-25",
+  "template": "product",
+  "order": 1,
+  "published": true,
+  "hideIn": [
+    "es",
+    "no",
+    "lt",
+    "lv",
+    "et",
+    "ru"
+  ],
+  "hero": {
+    "image": "/assets/img/tei-casinghandlers-hcc16x-falt.webp"
+  },
+  "source": {
+    "url": "https://teirockdrills.com/rock-drill-safety-equipment/safety-handlers/"
+  },
+  "i18n": {
+    "sv": {
+      "title": "HCC16X",
+      "h1": "HCC16X",
+      "seoTitle": "HCC16X casinghandler från TEI | Betongakuten",
+      "description": "HCC16X är TEI:s större casinghandler för grävmaskiner på 14-18 ton. Den hanterar foderrör från 76 till 406 mm och verktyg upp till 1360 kg.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "TEI Rock Drills logotyp",
+          "href": "/produkter/tei",
+          "width": 1920,
+          "height": 1117,
+          "src": "/assets/img/tei-2.webp"
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Broschyr HCC16X (ENG)",
+          "href": "/assets/docs/tei-casinghandlers-hcc16x-broschyr-eng.pdf"
+        },
+        {
+          "type": "datasheet",
+          "title": "Teknisk data",
+          "note": "TEI:s tekniska specifikationer tar hänsyn till en hydraulisk effektförlust på 40%. Dessa värden kan ändras utan förvarning.",
+          "tagline": "Hydraulisk casinghandler för grävmaskin",
+          "intro": [
+            "HCC16X är den större av TEI:s casinghandlers, för grävmaskiner på 14-18 ton. Klorna tar rör från 76 upp till 406 mm utan rörställ, och klämkraften är 10 000 ft-lbs.",
+            "Hur tungt verktyg den kan hantera beror på grävmaskinen: upp till 907 kg på en 15-tonnare och upp till 1360 kg på en 20-tonnare."
+          ],
+          "groups": [
+            {
+              "title": "Specifikationer",
+              "rows": [
+                {
+                  "label": "Foderrörsdiameter",
+                  "metric": "76-406 mm"
+                },
+                {
+                  "label": "Max verktygsvikt",
+                  "metric": "907-1360 kg"
+                },
+                {
+                  "label": "Klämkraft",
+                  "metric": "10 000 ft-lbs"
+                },
+                {
+                  "label": "Hydraulflöde",
+                  "metric": "19-30 l/min"
+                },
+                {
+                  "label": "Hydraultryck",
+                  "metric": "207 bar"
+                },
+                {
+                  "label": "Elsystem",
+                  "metric": "12 V eller 24 V"
+                },
+                {
+                  "label": "Vikt",
+                  "metric": "1177 kg"
+                },
+                {
+                  "label": "Grävmaskin",
+                  "metric": "14-18 ton"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "carousel",
+          "items": [
+            {
+              "src": "/assets/img/tei-casinghandlers.webp",
+              "alt": "HCC16X casinghandler",
+              "width": 1500,
+              "height": 1500
+            },
+            {
+              "src": "/assets/img/tei-casinghandlers-hcc16x-falt.webp",
+              "alt": "HCC16X på grävmaskin med foderrör",
+              "width": 2400,
+              "height": 1667
+            },
+            {
+              "src": "/assets/img/tei-casinghandlers-hcc16x-matt.webp",
+              "alt": "HCC16X, måttritning",
+              "width": 1405,
+              "height": 907
+            },
+            {
+              "src": "/assets/img/tei-casinghandlers-hcc16x-styrning.webp",
+              "alt": "Styrspaken i hytten",
+              "width": 1200,
+              "height": 1600
+            }
+          ]
+        },
+        {
+          "type": "related",
+          "items": [
+            {
+              "href": "/produkter/tei/casinghandlers/hcc10x"
+            },
+            {
+              "href": "/produkter/tei/borrmaster"
+            }
+          ]
+        }
+      ]
+    },
+    "en": {
+      "title": "HCC16X",
+      "h1": "HCC16X",
+      "seoTitle": "HCC16X casing handler from TEI | Betongakuten",
+      "description": "HCC16X is TEI's larger casing handler for excavators of 14-18 tonnes. It handles casing from 76 to 406 mm and tools up to 1360 kg.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "TEI Rock Drills logo",
+          "href": "/produkter/tei",
+          "width": 1920,
+          "height": 1117,
+          "src": "/assets/img/tei-2.webp"
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Brochure HCC16X (ENG)",
+          "href": "/assets/docs/tei-casinghandlers-hcc16x-broschyr-eng.pdf"
+        },
+        {
+          "type": "datasheet",
+          "title": "Technical data",
+          "note": "TEI's technical specifications assume a 40% hydraulic power loss. Values may change without notice.",
+          "tagline": "Hydraulic casing and tooling handler for excavators",
+          "intro": [
+            "HCC16X is the larger of TEI's casing handlers, for excavators of 14-18 tonnes. The claws take pipe from 76 up to 406 mm without racks, with 10,000 ft-lbs of clamping force.",
+            "How heavy a tool it can handle depends on the excavator: up to 907 kg on a 15-tonne machine and up to 1360 kg on a 20-tonne machine."
+          ],
+          "groups": [
+            {
+              "title": "Specifications",
+              "rows": [
+                {
+                  "label": "Casing diameter",
+                  "metric": "76-406 mm"
+                },
+                {
+                  "label": "Maximum tool weight",
+                  "metric": "907-1360 kg"
+                },
+                {
+                  "label": "Clamping force",
+                  "metric": "10,000 ft-lbs"
+                },
+                {
+                  "label": "Hydraulic flow",
+                  "metric": "19-30 l/min"
+                },
+                {
+                  "label": "Hydraulic pressure",
+                  "metric": "207 bar"
+                },
+                {
+                  "label": "Electrical",
+                  "metric": "12 V or 24 V"
+                },
+                {
+                  "label": "Weight",
+                  "metric": "1177 kg"
+                },
+                {
+                  "label": "Excavator",
+                  "metric": "14-18 tonnes"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "carousel",
+          "items": [
+            {
+              "src": "/assets/img/tei-casinghandlers.webp",
+              "alt": "HCC16X casing handler",
+              "width": 1500,
+              "height": 1500
+            },
+            {
+              "src": "/assets/img/tei-casinghandlers-hcc16x-falt.webp",
+              "alt": "HCC16X on an excavator with casing",
+              "width": 2400,
+              "height": 1667
+            },
+            {
+              "src": "/assets/img/tei-casinghandlers-hcc16x-matt.webp",
+              "alt": "HCC16X, dimension drawing",
+              "width": 1405,
+              "height": 907
+            },
+            {
+              "src": "/assets/img/tei-casinghandlers-hcc16x-styrning.webp",
+              "alt": "The joystick in the cab",
+              "width": 1200,
+              "height": 1600
+            }
+          ]
+        },
+        {
+          "type": "related",
+          "items": [
+            {
+              "href": "/produkter/tei/casinghandlers/hcc10x"
+            },
+            {
+              "href": "/produkter/tei/borrmaster"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
