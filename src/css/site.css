@@ -2778,3 +2778,40 @@ body::before { display: none; }
   transform: none !important; transform-origin: 50% 50% !important; filter: grayscale(1); opacity: .5; mix-blend-mode: multiply; transition: transform .6s cubic-bezier(.2, .8, .2, 1), filter .6s ease, opacity .6s ease; }
 .lgrid__a.is-hot img, .lgrid__a:hover img, .lgrid__a:focus-visible img { transform: scale(1.05) !important; filter: none; opacity: 1; }
 .lgrid[data-g="3"].is-tour .lgrid__a:not(.is-hot) img { opacity: .32; }
+
+/* r38: customer logos (grey until you point at them) and a greyed Ischebeck logo in the history */
+.prose .clients__list > li.clients__logo img { width: auto !important; height: auto !important; max-width: 72%; max-height: 46%; object-fit: contain; filter: grayscale(1); opacity: .6; transition: filter .4s, opacity .4s, transform .4s cubic-bezier(.2, .8, .2, 1); }
+.prose .clients__list > li.clients__logo:hover img { filter: none; opacity: 1; transform: scale(1.04); }
+.tline__gone--logo span { width: 104px !important; padding: 0 !important; text-decoration: none !important; background: #f7f5f2 !important; }
+.tline__gone--logo img { filter: grayscale(1); opacity: .45; }
+
+/* =====================================================================================================
+   r38: home intro. A photo of the maker in focus beside the logo grid; the spotlight lights the logo in full colour
+   ===================================================================================================== */
+.intro--home .intro__inner { grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr); align-items: start; gap: 2rem clamp(2.4rem, 5vw, 5rem); }
+.lshow { margin: 0; }
+.lshow__stack { position: relative; aspect-ratio: 4 / 3; overflow: hidden; background: #efece8; }
+.lshow__pic { position: absolute; inset: 0; display: block; opacity: 0; transition: opacity .8s ease; }
+.lshow__pic.is-on { opacity: 1; z-index: 1; }
+.lshow__pic img { width: 100% !important; height: 100% !important; object-fit: cover; transform: scale(1.03); transition: transform 6s ease-out; }
+.lshow__pic.is-on img { transform: none; }
+.lshow__caps { position: relative; min-height: 5.6rem; margin-top: 1rem; }
+.lshow__cap { position: absolute; inset: 0 0 auto 0; margin: 0; display: flex; flex-direction: column; gap: .3rem; opacity: 0; transform: translateY(6px); transition: opacity .5s ease, transform .5s ease; }
+.lshow__cap.is-on { opacity: 1; transform: none; }
+.lshow__cap strong { font-size: .72rem; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; color: var(--text); display: flex; align-items: center; gap: .55rem; }
+.lshow__cap strong::before { content: ""; width: 8px; height: 8px; background: var(--primary); }
+.lshow__cap span { font-size: .98rem; line-height: 1.6; color: var(--muted); }
+.lgrid__k { margin: 0 0 1rem !important; }
+.lgrid .lgrid__list .lgrid__a { transition: background .4s ease; }
+.lgrid .lgrid__list .lgrid__a img { filter: grayscale(1) !important; opacity: .42 !important; transform: none !important; }
+.lgrid .lgrid__list .lgrid__a.is-hot { background: #faf8f5; }
+.lgrid .lgrid__list .lgrid__a.is-hot::after { content: ""; position: absolute; left: 22%; right: 22%; bottom: 8%; height: 2px; background: var(--primary); }
+.lgrid .lgrid__list .lgrid__a.is-hot img, .lgrid .lgrid__list .lgrid__a:hover img, .lgrid .lgrid__list .lgrid__a:focus-visible img { filter: none !important; opacity: 1 !important; transform: scale(1.05) !important; }
+.lgrid__cap { display: none; }
+@media (max-width: 860px) { .intro--home .intro__inner { grid-template-columns: 1fr; } .lshow__caps { min-height: 6.6rem; } }
+@media (prefers-reduced-motion: reduce) { .lshow__pic, .lshow__pic img, .lshow__cap { transition: none; } }
+.lshow__cap { transition: opacity .3s ease, transform .3s ease, visibility 0s linear .3s; visibility: hidden; }
+.lshow__cap.is-on { visibility: visible; transition: opacity .45s ease .3s, transform .45s ease .3s, visibility 0s linear .3s; }
+.prose .clients__list > li { height: 6.5rem; min-height: 0; }
+.prose .clients__list > li.clients__logo img { max-height: 3.1rem !important; max-width: 70% !important; }
+@media (max-width: 560px) { .prose .clients__list > li { height: 5rem; } .prose .clients__list > li.clients__logo img { max-height: 2.5rem !important; } }

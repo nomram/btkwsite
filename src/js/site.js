@@ -2085,55 +2085,32 @@ window.addEventListener("afterprint", function () { [].forEach.call(document.que
   });
 })();
 
-// ---------- home logo grid: eight looping motions (data-g 1 to 8, ?logos=n or the preview pill); hovering pauses and shows the maker ----------
+// ---------- home: the spotlight walks through the makers' logos; the lit logo shows in full colour and the photo and text beside it follow ----------
 (function () {
   var box = document.querySelector(".lgrid");
   if (!box) return;
-  var links = [].slice.call(box.querySelectorAll(".lgrid__a")), cap = box.querySelector(".lgrid__cap"), capT = cap.querySelector("strong"), capX = cap.querySelector("span");
-  var def = [capT.textContent, capX.textContent], cols = 5, n = links.length;
+  var links = [].slice.call(box.querySelectorAll(".lgrid__a")), show = document.querySelector(".lshow");
+  var pics = show ? [].slice.call(show.querySelectorAll(".lshow__pic")) : [], caps = show ? [].slice.call(show.querySelectorAll(".lshow__cap")) : [];
   var reduce = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
-  try { sessionStorage.removeItem("bk-logos"); } catch (e) {}
-  var STEP = { 1: 1500, 2: 260, 3: 2600, 4: 900, 5: 1700, 6: 1600, 7: 0, 8: 2200 };
-  var k = -1, timer = 0, paused = false, seen = false, order = [];
-  function setCap(a) {
-    var t = a ? a.getAttribute("data-name") : def[0], x = a ? a.getAttribute("data-desc") : def[1];
-    if (capT.textContent === t) return;
-    capT.textContent = t; capX.textContent = x; cap.classList.remove("is-swap"); void cap.offsetWidth; cap.classList.add("is-swap");
+  var k = 0, timer = 0, paused = false, seen = false, STEP = 3200;
+  function light(i) {
+    k = i;
+    links.forEach(function (a, j) { a.classList.toggle("is-hot", j === i); });
+    pics.forEach(function (p, j) { var on = j === i; p.classList.toggle("is-on", on); p.setAttribute("aria-hidden", on ? "false" : "true"); });
+    caps.forEach(function (c, j) { c.classList.toggle("is-on", j === i); });
   }
-  function clear() { links.forEach(function (a) { a.classList.remove("is-hot"); }); }
-  function shuffle() { order = links.map(function (_, i) { return i; }); for (var i = order.length - 1; i > 0; i--) { var j = Math.floor(Math.random() * (i + 1)), t = order[i]; order[i] = order[j]; order[j] = t; } }
-  function tick() {
-    var v = Number(box.getAttribute("data-g")) || 1;
-    clear(); box.classList.toggle("is-tour", v === 3);
-    if (v === 7) { setCap(null); return; }
-    k++;
-    if (v === 2) {
-      // a diagonal wave: everything on the same diagonal lifts together
-      var rows = Math.ceil(n / cols), diag = k % (cols + rows + 2);
-      links.forEach(function (a, i) { if ((i % cols) + Math.floor(i / cols) === diag) a.classList.add("is-hot"); });
-      setCap(null); return;
-    }
-    if (v === 4) { if (!order.length || k % n === 0) shuffle(); links[order[k % n]].classList.add("is-hot"); links[order[(k + 7) % n]].classList.add("is-hot"); setCap(null); return; }
-    var a = links[k % n]; a.classList.add("is-hot");
-    if (v === 6) box.style.setProperty("--lg-step", STEP[6] + "ms");
-    setCap(v === 3 || v === 8 || v === 5 ? a : null);
-  }
-  function run() {
-    clearInterval(timer); clear();
-    var v = Number(box.getAttribute("data-g")) || 1;
-    if (reduce || paused || !seen) return;
-    if (v === 7) { tick(); return; }
-    tick(); timer = setInterval(tick, STEP[v]);
-  }
-  links.forEach(function (a) {
-    function on() { paused = true; clearInterval(timer); clear(); a.classList.add("is-hot"); setCap(a); }
-    function off() { paused = false; a.classList.remove("is-hot"); setCap(null); run(); }
+  function run() { clearInterval(timer); if (reduce || paused || !seen) return; timer = setInterval(function () { light((k + 1) % links.length); }, STEP); }
+  links.forEach(function (a, i) {
+    function on() { paused = true; clearInterval(timer); light(i); }
+    function off() { paused = false; run(); }
     a.addEventListener("mouseenter", on); a.addEventListener("focus", on);
     a.addEventListener("mouseleave", off); a.addEventListener("blur", off);
   });
+  if (show) { show.addEventListener("mouseenter", function () { paused = true; clearInterval(timer); }); show.addEventListener("mouseleave", function () { paused = false; run(); }); }
+  box.classList.add("is-tour");
+  light(0);
   if ("IntersectionObserver" in window) new IntersectionObserver(function (e) { seen = e[0].isIntersecting; run(); }, { threshold: 0.3 }).observe(box);
   else { seen = true; run(); }
-  window.__bkLogos = function (x) { box.setAttribute("data-g", String(x)); try { sessionStorage.setItem("bk-logos", String(x)); } catch (e) {} k = -1; setCap(null); run(); };
 })();
 
 // ---------- header: when the menu and the tools no longer fit side by side, drop the quote button and use the short labels ----------

@@ -46,17 +46,6 @@
               "title": "Borrutrustning"
             },
             {
-              "href": "/losningar/sprutbetong",
-              "label": "Läs mer",
-              "html": "Maskiner för torr- och våtsprutning, betongpumpar och groutlösningar från REED samt sprutbetongaggregat från Marini.",
-              "text": "Maskiner för torr- och våtsprutning, betongpumpar och groutlösningar från REED samt sprutbetongaggregat från Marini.",
-              "image": "/assets/img/brand-photo-reed.webp",
-              "width": 1200,
-              "height": 800,
-              "alt": "Sprutbetong och betongpumpar",
-              "title": "Sprutbetong och betongpumpar"
-            },
-            {
               "href": "/losningar/torrbruk-silo",
               "label": "Läs mer",
               "html": "Torrbruksilos, säcktömmare och blandarlösningar från AHLM för cement, puts och flytspackel på byggplatsen.",
@@ -88,6 +77,31 @@
               "height": 800,
               "alt": "Släntstabilisering och bergsäkring",
               "title": "Släntstabilisering och bergsäkring"
+            },
+            {
+              "href": "/losningar/bruk",
+              "label": "Läs mer",
+              "html": "Murbruk, puts, golvavjämning och reparationsbruk från Weber och Mapei.",
+              "text": "Murbruk, puts, golvavjämning och reparationsbruk från Weber och Mapei.",
+              "image": "/assets/img/brand-photo-weber.webp",
+              "width": 1200,
+              "height": 800,
+              "alt": "Bruk, puts och golv",
+              "title": "Bruk, puts och golv",
+              "photo": "/assets/img/brand-photo-weber.webp"
+            },
+            {
+              "href": "/losningar/sprutbetong",
+              "label": "Läs mer",
+              "html": "Maskiner för torr- och våtsprutning, betongpumpar och groutlösningar från REED samt sprutbetongaggregat från Marini.",
+              "text": "Maskiner för torr- och våtsprutning, betongpumpar och groutlösningar från REED samt sprutbetongaggregat från Marini.",
+              "image": "/assets/img/brand-photo-reed.webp",
+              "width": 1200,
+              "height": 800,
+              "alt": "Sprutbetong och betongpumpar",
+              "title": "Sprutbetong och betongpumpar",
+              "photo": "/assets/img/marini-sprutbetong-5.webp",
+              "photoY": 40
             }
           ],
           "style": "photo",
@@ -153,17 +167,6 @@
               "title": "Drilling equipment"
             },
             {
-              "href": "/losningar/sprutbetong",
-              "label": "Read more",
-              "html": "Machines for dry and wet spraying, concrete pumps and grout solutions from REED, and shotcrete units from Marini.",
-              "text": "Machines for dry and wet spraying, concrete pumps and grout solutions from REED, and shotcrete units from Marini.",
-              "image": "/assets/img/brand-photo-reed.webp",
-              "width": 1200,
-              "height": 800,
-              "alt": "Shotcrete and concrete pumps",
-              "title": "Shotcrete and concrete pumps"
-            },
-            {
               "href": "/losningar/torrbruk-silo",
               "label": "Read more",
               "html": "Dry mortar silos, bag emptiers and mixer solutions from AHLM for cement, plaster and screed on site.",
@@ -195,6 +198,31 @@
               "height": 800,
               "alt": "Slope stabilisation and rock support",
               "title": "Slope stabilisation and rock support"
+            },
+            {
+              "href": "/losningar/bruk",
+              "label": "Read more",
+              "html": "Masonry mortar, render, floor levelling and repair mortar from Weber and Mapei.",
+              "text": "Masonry mortar, render, floor levelling and repair mortar from Weber and Mapei.",
+              "image": "/assets/img/brand-photo-weber.webp",
+              "width": 1200,
+              "height": 800,
+              "alt": "Mortar, render and floors",
+              "title": "Mortar, render and floors",
+              "photo": "/assets/img/brand-photo-weber.webp"
+            },
+            {
+              "href": "/losningar/sprutbetong",
+              "label": "Read more",
+              "html": "Machines for dry and wet spraying, concrete pumps and grout solutions from REED, and shotcrete units from Marini.",
+              "text": "Machines for dry and wet spraying, concrete pumps and grout solutions from REED, and shotcrete units from Marini.",
+              "image": "/assets/img/brand-photo-reed.webp",
+              "width": 1200,
+              "height": 800,
+              "alt": "Shotcrete and concrete pumps",
+              "title": "Shotcrete and concrete pumps",
+              "photo": "/assets/img/marini-sprutbetong-5.webp",
+              "photoY": 40
             }
           ],
           "style": "photo",

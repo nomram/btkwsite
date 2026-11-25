@@ -379,6 +379,7 @@ function renderTimeline(ctx, b) {
       const logo = pg.logo ? imgTag(ctx, pg.logo, name, { cls: "tline__logo", sizes: "120px" }) : `<span>${esc(name)}</span>`;
       return `<li><a href="${esc(localizeHref(ctx, x))}" title="${esc(name)}">${logo}</a></li>`;
     }
+    if (x && typeof x === "object") return `<li class="tline__gone tline__gone--logo"><span title="${esc(x.name)}">${x.logo ? imgTag(ctx, x.logo, x.name, { cls: "tline__logo", sizes: "120px" }) : esc(x.name)}</span></li>`;
     return `<li class="tline__gone"><span>${esc(x)}</span></li>`;
   };
   const items = (b.items || []).map((it, i) => `<li class="tline__i${it.past ? " tline__i--past" : ""}${it.now ? " tline__i--now" : ""}" style="--i:${i}"><span class="tline__node" aria-hidden="true"></span><div class="tline__card">${it.label ? `<p class="tline__k">${esc(it.label)}</p>` : ""}<h3 class="tline__t">${esc(it.title || "")}</h3>${it.text ? `<p class="tline__x">${ctx.edit ? it.text : localizeHtml(ctx, it.text)}</p>` : ""}${(it.brands || []).length ? `<ul class="tline__brands${(it.brands || []).length > 6 ? " tline__brands--many" : ""}">${it.brands.map(brand).join("")}</ul>` : ""}</div></li>`).join("");
@@ -398,7 +399,7 @@ function renderCreds(ctx, b) {
 }
 // Customers we have delivered to, as a grid of names. Block: kicker, title, intro, items [names], more
 function renderClients(ctx, b) {
-  return `<section class="clients">${b.kicker ? `<p class="sec-kicker">${esc(b.kicker)}</p>` : ""}${b.title ? `<h2 class="clients__h">${esc(b.title)}</h2>` : ""}${b.intro ? `<p class="clients__intro">${esc(b.intro)}</p>` : ""}<ul class="clients__list">${(b.items || []).map((x, i) => `<li style="--i:${i}"><span>${esc(x)}</span></li>`).join("")}${b.more ? `<li class="clients__more"><span>${esc(b.more)}</span></li>` : ""}</ul></section>`;
+  return `<section class="clients">${b.kicker ? `<p class="sec-kicker">${esc(b.kicker)}</p>` : ""}${b.title ? `<h2 class="clients__h">${esc(b.title)}</h2>` : ""}${b.intro ? `<p class="clients__intro">${esc(b.intro)}</p>` : ""}<ul class="clients__list">${(b.items || []).map((x, i) => { const nm = typeof x === "string" ? x : x.name, lg = typeof x === "string" ? "" : x.logo; return `<li style="--i:${i}"${lg ? ' class="clients__logo"' : ""}>${lg ? imgTag(ctx, lg, nm, { sizes: "200px" }) : `<span>${esc(nm)}</span>`}</li>`; }).join("")}${b.more ? `<li class="clients__more"><span>${esc(b.more)}</span></li>` : ""}</ul></section>`;
 }
 // Home: the manufacturers as a tight grey grid beside the intro; site.js runs one of eight looping highlight motions (data-g),
 // hovering shows the manufacturer's line, clicking opens its page. Built from the home page's logo strip (cards, style marquee).
@@ -407,14 +408,17 @@ function homeLogoGrid(ctx, t) {
   if (!strip || ctx.edit) return "";
   const items = (strip.items || []).filter((it) => it.image && shown(ctx, it.href));
   if (!items.length) return "";
-  const lis = items.map((it, i) => {
-    const pt = ctx.tr(it.href, ctx.lang) || ctx.tr(it.href, ctx.defaultLang) || {}, name = it.title || titleOf(ctx, it.href);
-    const desc = String(pt.description || pt.summary || "").replace(/\s+/g, " ").trim();
-    const pg = ctx.pages.get(it.href), logo = (pg && (pg.menuLogo || pg.logo)) || it.image;
-    return `<li style="--i:${i}"><a class="lgrid__a" href="${esc(localizeHref(ctx, it.href))}" data-name="${esc(name)}" data-desc="${esc(desc)}" aria-label="${esc(name)}">${imgTag(ctx, logo, "", { sizes: "120px" }).replace('loading="lazy"', 'loading="eager"')}</a></li>`;
-  }).join("");
-  const cap = `<p class="lgrid__cap" aria-live="polite"><strong>${esc(strip.title || ctx.ui.makers || "Tillverkare vi representerar")}</strong><span>${esc(ctx.ui.lgrid_hint || "Peka på en logga för att läsa mer, klicka för att gå dit.")}</span></p>`;
-  return `<div class="lgrid" data-g="3"><ul class="lgrid__list">${lis}</ul>${cap}</div>`;
+  // one photo per maker for the panel beside the grid (brand photo, or a chosen picture)
+  const PHOTO = { "/produkter/haeny": "/assets/img/haeny-ic311-lager.webp", "/produkter/marini": "/assets/img/marini-giraffa-stenbrott.webp", "/produkter/terra-infrastructure": "/assets/img/terra-pa-plats.webp", "/produkter/reed": "/assets/img/reed-sove-maskin.webp" };
+  const rows = items.map((it) => {
+    const pt = ctx.tr(it.href, ctx.lang) || ctx.tr(it.href, ctx.defaultLang) || {}, name = it.title || titleOf(ctx, it.href), pg = ctx.pages.get(it.href) || {};
+    const slug = it.href.split("/").pop(), photo = PHOTO[it.href] || `/assets/img/brand-photo-${slug}.webp`;
+    return { it, name, pg, photo, desc: String(pt.description || pt.summary || "").replace(/\s+/g, " ").trim() };
+  });
+  const lis = rows.map((r, i) => `<li style="--i:${i}"><a class="lgrid__a${i ? "" : " is-hot"}" href="${esc(localizeHref(ctx, r.it.href))}" data-k="${i}" aria-label="${esc(r.name)}">${imgTag(ctx, r.pg.menuLogo || r.pg.logo || r.it.image, "", { sizes: "120px" }).replace('loading="lazy"', 'loading="eager"')}</a></li>`).join("");
+  const pics = rows.map((r, i) => `<a class="lshow__pic${i ? "" : " is-on"}" data-k="${i}" href="${esc(localizeHref(ctx, r.it.href))}" tabindex="-1" aria-hidden="${i ? "true" : "false"}">${imgTag(ctx, r.photo, r.name, { sizes: "(min-width: 900px) 560px, 100vw" })}</a>`).join("");
+  const caps = rows.map((r, i) => `<p class="lshow__cap${i ? "" : " is-on"}" data-k="${i}"><strong>${esc(r.name)}</strong><span>${esc(r.desc)}</span></p>`).join("");
+  return `<figure class="lshow" aria-live="polite"><div class="lshow__stack">${pics}</div><figcaption class="lshow__caps">${caps}</figcaption></figure><div class="lgrid" data-g="3"><p class="sec-kicker lgrid__k">${esc(strip.title || "Tillverkare vi representerar")}</p><ul class="lgrid__list">${lis}</ul></div>`;
 }
 function renderFaq(ctx, b) {
   const items = (b.items || []).filter((i) => i && i.q && i.a);
@@ -1509,7 +1513,7 @@ export function renderMain(ctx, page, t) {
   const pageFld = (k) => (ctx.edit ? ` data-bk-page="${k}" data-bk-kind="plain"` : "");
   const display = t.display && !ctx.edit;
   // with a display line the banner only carries that line; the real heading and the lead sit in a calm intro right under the banner
-  const introHtml = display && isHome ? (t.lead ? `<section class="intro intro--home"><div class="container intro__inner"><p class="intro__lead">${esc(t.lead)}</p>${homeLogoGrid(ctx, t)}</div></section>` : "") : display ? `<section class="intro"><div class="container intro__inner"><h1 class="intro__h">${esc(title)}</h1>${t.lead ? `<p class="intro__lead">${esc(t.lead)}</p>` : ""}</div></section>` : "";
+  const introHtml = display && isHome ? (t.lead ? `<section class="intro intro--home"><div class="container intro__inner">${homeLogoGrid(ctx, t) || `<p class="intro__lead">${esc(t.lead)}</p>`}</div></section>` : "") : display ? `<section class="intro"><div class="container intro__inner"><h1 class="intro__h">${esc(title)}</h1>${t.lead ? `<p class="intro__lead">${esc(t.lead)}</p>` : ""}</div></section>` : "";
   const headHtml = display && isHome ? `<p class="hero__slogan">${esc(t.display)}</p><h1 class="hero__what">${esc(title)}</h1>${t.lead ? `<p class="hero__lead hero__lead--home">${esc(t.leadShort || t.lead)}</p>` : ""}${ctas ? `<div class="hero__ctas">${ctas}</div>` : ""}` : `${eyebrow}${display ? `<p class="hero__title">${esc(t.display)}</p>` : `<h1 class="hero__title"${pageFld("h1")}>${esc(title)}</h1>`}${!display && (t.lead || (ctx.edit && heroImg)) ? `<p class="hero__lead"${pageFld("lead")}>${esc(t.lead || "")}</p>` : ""}${ctas ? `<div class="hero__ctas">${ctas}</div>` : ""}`;
   const heroInner = `<div class="container hero__inner">${headHtml}${heroFacts}</div>`;
   // Split banner (the products page): two pictures meet in a diagonal; site.js greys out the side that is not selected in the filter

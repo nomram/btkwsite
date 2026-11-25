@@ -1,0 +1,230 @@
+{
+  "path": "/losningar/bruk",
+  "updated": "2026-11-25",
+  "template": "listing",
+  "order": 10,
+  "published": true,
+  "hideIn": [
+    "es",
+    "no",
+    "lt",
+    "lv",
+    "et",
+    "ru"
+  ],
+  "hero": {
+    "image": "/assets/img/brand-photo-weber.webp"
+  },
+  "i18n": {
+    "sv": {
+      "title": "Bruk, puts och golv",
+      "h1": "Bruk, puts och golv",
+      "seoTitle": "Bruk, puts och golvavjämning från Weber och Mapei | Betongakuten",
+      "description": "Murbruk, puts, golvavjämning, reparationsbruk och byggkemi från Weber och Mapei, med rådgivning och leverans från våra lager.",
+      "lead": "Murbruk, puts, golvavjämning och reparationsbruk från Weber och Mapei.",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "Bruk är cement och sand, färdigblandat och redo att röras ut med vatten. Vi levererar murbruk, puts, golvavjämning, reparationsbruk och byggkemi från Weber och Mapei, två av de största tillverkarna inom området, och hjälper dig att välja rätt produkt för underlaget och miljön."
+        },
+        {
+          "type": "text",
+          "html": "Hur mycket som går åt kan du räkna ut i <a href=\"/artiklar/atgang-flytspackel-torrbruk\">åtgången för flytspackel och torrbruk</a>, och skillnaden mellan bruk och betong går vi igenom i <a href=\"/artiklar/betong-cement-bruk-skillnad\">betong, cement och bruk</a>."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Tillverkare inom bruk"
+        },
+        {
+          "type": "cards",
+          "style": "photo",
+          "items": [
+            {
+              "href": "/produkter/weber",
+              "label": "Läs mer",
+              "text": "Fasadputs, murbruk, golvavjämning och plattsättning.",
+              "html": "Fasadputs, murbruk, golvavjämning och plattsättning.",
+              "image": "/assets/img/weber.webp",
+              "alt": "Weber logotyp",
+              "photo": "/assets/img/brand-photo-weber.webp",
+              "photoX": 50,
+              "photoY": 50,
+              "photoZoom": 1
+            },
+            {
+              "href": "/produkter/mapei",
+              "label": "Läs mer",
+              "text": "Vattentätning, putsbruk, lim, fogmassor och reparationsbruk.",
+              "html": "Vattentätning, putsbruk, lim, fogmassor och reparationsbruk.",
+              "image": "/assets/img/mapei.webp",
+              "alt": "Mapei logotyp",
+              "photo": "/assets/img/brand-photo-mapei.webp",
+              "photoX": 50,
+              "photoY": 50,
+              "photoZoom": 1
+            }
+          ]
+        },
+        {
+          "type": "articles",
+          "tag": "material",
+          "compact": true,
+          "limit": 3,
+          "title": "Guider och artiklar"
+        },
+        {
+          "type": "steps",
+          "title": "Så går det till",
+          "intro": "Från första frågan till leverans och service.",
+          "button": "Få offert",
+          "href": "/offert",
+          "items": [
+            {
+              "title": "Berätta om jobbet",
+              "text": "Ring eller skicka en förfrågan: vad ska göras, var och när."
+            },
+            {
+              "title": "Vi föreslår en lösning",
+              "text": "Vi rekommenderar maskiner och material från tillverkarna vi representerar som passar just ditt jobb."
+            },
+            {
+              "title": "Du får en offert",
+              "text": "Pris, lagerstatus och leveranstid, normalt inom en arbetsdag."
+            },
+            {
+              "title": "Leverans och service",
+              "text": "Leverans från våra fyra lager i Sverige och Norge, och service på plats med vår mobila verkstad."
+            }
+          ]
+        },
+        {
+          "type": "faq",
+          "title": "Vanliga frågor",
+          "items": [
+            {
+              "q": "Vad är skillnaden mellan bruk och betong?",
+              "a": "Bruk är cement, sand och vatten. Betong har dessutom sten, vilket gör den starkare och billigare i större volymer."
+            },
+            {
+              "q": "Kan jag få hjälp att välja produkt?",
+              "a": "Ja. Berätta vad som ska göras, på vilket underlag och i vilken miljö, så föreslår vi rätt bruk från Weber eller Mapei."
+            }
+          ]
+        },
+        {
+          "type": "cta",
+          "title": "Berätta vad du behöver",
+          "text": "Kontakta oss så hjälper vi dig välja rätt bruk för jobbet.",
+          "button": "Få offert",
+          "href": "/offert"
+        }
+      ]
+    },
+    "en": {
+      "title": "Mortar, render and floors",
+      "h1": "Mortar, render and floors",
+      "seoTitle": "Mortar, render and floor levelling from Weber and Mapei | Betongakuten",
+      "description": "Masonry mortar, render, floor levelling, repair mortar and construction chemicals from Weber and Mapei, with advice and delivery from our warehouses.",
+      "lead": "Masonry mortar, render, floor levelling and repair mortar from Weber and Mapei.",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "Mortar is cement and sand, pre-mixed and ready to be mixed with water. We supply masonry mortar, render, floor levelling, repair mortar and construction chemicals from Weber and Mapei, two of the largest manufacturers in the field, and help you choose the right product for the substrate and the environment."
+        },
+        {
+          "type": "text",
+          "html": "You can work out how much you need in <a href=\"/artiklar/atgang-flytspackel-torrbruk\">consumption of self-levelling compound and dry mortar</a>, and the difference between mortar and concrete is explained in <a href=\"/artiklar/betong-cement-bruk-skillnad\">concrete, cement and mortar</a>."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Mortar manufacturers"
+        },
+        {
+          "type": "cards",
+          "style": "photo",
+          "items": [
+            {
+              "href": "/produkter/weber",
+              "label": "Read more",
+              "text": "Facade render, masonry mortar, floor levelling and tiling.",
+              "html": "Facade render, masonry mortar, floor levelling and tiling.",
+              "image": "/assets/img/weber.webp",
+              "alt": "Weber logo",
+              "photo": "/assets/img/brand-photo-weber.webp",
+              "photoX": 50,
+              "photoY": 50,
+              "photoZoom": 1
+            },
+            {
+              "href": "/produkter/mapei",
+              "label": "Read more",
+              "text": "Waterproofing, render, adhesives, sealants and repair mortar.",
+              "html": "Waterproofing, render, adhesives, sealants and repair mortar.",
+              "image": "/assets/img/mapei.webp",
+              "alt": "Mapei logo",
+              "photo": "/assets/img/brand-photo-mapei.webp",
+              "photoX": 50,
+              "photoY": 50,
+              "photoZoom": 1
+            }
+          ]
+        },
+        {
+          "type": "articles",
+          "tag": "material",
+          "compact": true,
+          "limit": 3,
+          "title": "Guides and articles"
+        },
+        {
+          "type": "steps",
+          "title": "How it works",
+          "intro": "From the first question to delivery and service.",
+          "button": "Get a quote",
+          "href": "/offert",
+          "items": [
+            {
+              "title": "Tell us about the job",
+              "text": "Call or send a request: what needs doing, where and when."
+            },
+            {
+              "title": "We suggest a solution",
+              "text": "We recommend machines and materials from the manufacturers we represent that suit your job."
+            },
+            {
+              "title": "You get a quote",
+              "text": "Price, stock and lead time, normally within one working day."
+            },
+            {
+              "title": "Delivery and service",
+              "text": "Delivery from our four warehouses in Sweden and Norway, and on-site service from our mobile workshop."
+            }
+          ]
+        },
+        {
+          "type": "faq",
+          "title": "Frequently asked questions",
+          "items": [
+            {
+              "q": "What is the difference between mortar and concrete?",
+              "a": "Mortar is cement, sand and water. Concrete also has stone, which makes it stronger and cheaper in larger volumes."
+            },
+            {
+              "q": "Can I get help choosing a product?",
+              "a": "Yes. Tell us what needs doing, on what substrate and in what environment, and we will suggest the right mortar from Weber or Mapei."
+            }
+          ]
+        },
+        {
+          "type": "cta",
+          "title": "Tell us what you need",
+          "text": "Contact us and we will help you choose the right mortar for the job.",
+          "button": "Get a quote",
+          "href": "/offert"
+        }
+      ]
+    }
+  }
+}

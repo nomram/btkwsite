@@ -155,7 +155,10 @@
               "title": "Ischebeck, Häny och AHLM",
               "text": "Sedan gick vi under jord. Med Ischebeck kom förankring och mikropålar, med Häny injekteringspumpar och blandare från Schweiz, och med AHLM silos och säcktömmare för torrbruk.",
               "brands": [
-                "Ischebeck",
+                {
+                  "name": "Ischebeck",
+                  "logo": "/assets/img/logo-ischebeck-titan.webp"
+                },
                 "/produkter/haeny",
                 "/produkter/ahlm"
               ]
@@ -198,7 +201,13 @@
               "label": "2026",
               "title": "Vi och Ischebeck går skilda vägar",
               "text": "I år gick Betongakuten och Ischebeck skilda vägar. Borrning, förankring och mikropålar finns kvar i sortimentet, bland annat från TEI.",
-              "past": true
+              "past": true,
+              "brands": [
+                {
+                  "name": "Ischebeck",
+                  "logo": "/assets/img/logo-ischebeck-titan.webp"
+                }
+              ]
             },
             {
               "label": "Idag",
@@ -229,19 +238,60 @@
           "type": "clients",
           "kicker": "Kunder",
           "title": "Vi levererar till Sveriges grundläggare",
-          "intro": "Vi har levererat till alla de stora grundläggningsföretagen i Sverige, och till många mindre entreprenörer. Några av dem:",
+          "intro": "Vi har levererat till alla de stora grundläggningsföretagen i Sverige, och till många bygg- och anläggningsföretag. Några av dem:",
           "items": [
-            "Veidekke",
-            "Hercules",
-            "NCC",
-            "Peab",
-            "BESAB",
-            "NGT",
-            "GMT",
-            "PPS",
-            "Borrpoolen",
-            "Drillab",
-            "Keller"
+            {
+              "name": "Veidekke",
+              "logo": "/assets/img/kund-veidekke.webp"
+            },
+            {
+              "name": "Hercules Grundläggning",
+              "logo": "/assets/img/kund-hercules.webp"
+            },
+            {
+              "name": "NCC",
+              "logo": "/assets/img/kund-ncc.webp"
+            },
+            {
+              "name": "Peab Grundläggning",
+              "logo": "/assets/img/kund-peab.webp"
+            },
+            {
+              "name": "Skanska",
+              "logo": "/assets/img/kund-skanska.webp"
+            },
+            {
+              "name": "BESAB",
+              "logo": "/assets/img/kund-besab.webp"
+            },
+            {
+              "name": "Keller",
+              "logo": "/assets/img/kund-keller.webp"
+            },
+            {
+              "name": "Implenia",
+              "logo": "/assets/img/kund-implenia.webp"
+            },
+            {
+              "name": "Svevia",
+              "logo": "/assets/img/kund-svevia.webp"
+            },
+            {
+              "name": "Nordisk Grundteknik",
+              "logo": "/assets/img/kund-ngt.webp"
+            },
+            {
+              "name": "PPS Grundläggning",
+              "logo": "/assets/img/kund-pps.webp"
+            },
+            {
+              "name": "Drillab",
+              "logo": "/assets/img/kund-drillab.webp"
+            },
+            {
+              "name": "Wästbygg",
+              "logo": "/assets/img/kund-wastbygg.webp"
+            }
           ],
           "more": "med flera"
         },
@@ -534,7 +584,10 @@
               "title": "Ischebeck, Häny and AHLM",
               "text": "Then we went underground. Ischebeck brought anchoring and micropiles, Häny brought grouting pumps and mixers from Switzerland, and AHLM brought silos and bag emptiers for dry mortar.",
               "brands": [
-                "Ischebeck",
+                {
+                  "name": "Ischebeck",
+                  "logo": "/assets/img/logo-ischebeck-titan.webp"
+                },
                 "/produkter/haeny",
                 "/produkter/ahlm"
               ]
@@ -577,7 +630,13 @@
               "label": "2026",
               "title": "We and Ischebeck part ways",
               "text": "This year Betongakuten and Ischebeck parted ways. Drilling, anchoring and micropiles remain in our range, from TEI among others.",
-              "past": true
+              "past": true,
+              "brands": [
+                {
+                  "name": "Ischebeck",
+                  "logo": "/assets/img/logo-ischebeck-titan.webp"
+                }
+              ]
             },
             {
               "label": "Today",
@@ -608,19 +667,60 @@
           "type": "clients",
           "kicker": "Customers",
           "title": "We supply Sweden's foundation contractors",
-          "intro": "We have supplied all the big foundation engineering companies in Sweden, and many smaller contractors. Some of them:",
+          "intro": "We have supplied all the big foundation engineering companies in Sweden, and many construction and civil engineering companies. Some of them:",
           "items": [
-            "Veidekke",
-            "Hercules",
-            "NCC",
-            "Peab",
-            "BESAB",
-            "NGT",
-            "GMT",
-            "PPS",
-            "Borrpoolen",
-            "Drillab",
-            "Keller"
+            {
+              "name": "Veidekke",
+              "logo": "/assets/img/kund-veidekke.webp"
+            },
+            {
+              "name": "Hercules Grundläggning",
+              "logo": "/assets/img/kund-hercules.webp"
+            },
+            {
+              "name": "NCC",
+              "logo": "/assets/img/kund-ncc.webp"
+            },
+            {
+              "name": "Peab Grundläggning",
+              "logo": "/assets/img/kund-peab.webp"
+            },
+            {
+              "name": "Skanska",
+              "logo": "/assets/img/kund-skanska.webp"
+            },
+            {
+              "name": "BESAB",
+              "logo": "/assets/img/kund-besab.webp"
+            },
+            {
+              "name": "Keller",
+              "logo": "/assets/img/kund-keller.webp"
+            },
+            {
+              "name": "Implenia",
+              "logo": "/assets/img/kund-implenia.webp"
+            },
+            {
+              "name": "Svevia",
+              "logo": "/assets/img/kund-svevia.webp"
+            },
+            {
+              "name": "Nordisk Grundteknik",
+              "logo": "/assets/img/kund-ngt.webp"
+            },
+            {
+              "name": "PPS Grundläggning",
+              "logo": "/assets/img/kund-pps.webp"
+            },
+            {
+              "name": "Drillab",
+              "logo": "/assets/img/kund-drillab.webp"
+            },
+            {
+              "name": "Wästbygg",
+              "logo": "/assets/img/kund-wastbygg.webp"
+            }
           ],
           "more": "and more"
         },
