@@ -20,32 +20,12 @@
       "description": "Maskiner för torr- och våtsprutning, betongpumpar och groutlösningar från REED samt sprutbetongaggregat från Marini.",
       "blocks": [
         {
-          "type": "columns",
-          "ratio": "40-60",
-          "left": [
-            {
-              "type": "image",
-              "src": "/assets/img/marini-sprutbetong-5.webp",
-              "alt": "Sprutbetong mot en bergslänt",
-              "width": 1200,
-              "height": 1600
-            }
-          ],
-          "right": [
-            {
-              "type": "text",
-              "html": "Maskiner för torr- och våtsprutning, betongpumpar och groutlösningar från REED, samt sprutbetong från Marini, för tunnlar, gruvor, bergförstärkning och reparationer."
-            },
-            {
-              "type": "text",
-              "html": "Läs <a href=\"/artiklar/sprutbetong-torr-eller-vat\">torrsprutning eller våtsprutning</a> om du vill veta vilken metod som passar."
-            },
-            {
-              "type": "button",
-              "text": "Få offert",
-              "href": "/offert"
-            }
-          ]
+          "type": "text",
+          "html": "Maskiner för torr- och våtsprutning, betongpumpar och groutlösningar från REED, samt sprutbetong från Marini, för tunnlar, gruvor, bergförstärkning och reparationer."
+        },
+        {
+          "type": "text",
+          "html": "Läs <a href=\"/artiklar/sprutbetong-torr-eller-vat\">torrsprutning eller våtsprutning</a> om du vill veta vilken metod som passar."
         },
         {
           "type": "heading",
@@ -85,43 +65,6 @@
             }
           ],
           "style": "photo"
-        },
-        {
-          "type": "carousel",
-          "items": [
-            {
-              "src": "/assets/img/marini-sprutbetong-4.webp",
-              "alt": "Sprutbetong, bild 1",
-              "width": 1600,
-              "height": 1200
-            },
-            {
-              "src": "/assets/img/marini-sprutbetong-5.webp",
-              "alt": "Sprutbetong, bild 2",
-              "width": 1200,
-              "height": 1600
-            },
-            {
-              "src": "/assets/img/marini-sprutbetong-3.webp",
-              "alt": "Sprutbetong, bild 3",
-              "width": 1500,
-              "height": 2000
-            },
-            {
-              "src": "/assets/img/reed-sove-maskin.webp",
-              "alt": "Sprutbetong, bild 4",
-              "width": 1200,
-              "height": 900
-            }
-          ],
-          "autoplay": false
-        },
-        {
-          "type": "video",
-          "provider": "youtube",
-          "id": "aUdMAbHl4uU",
-          "title": "MARINI sprutbetong MR-SB",
-          "channel": "Betongakuten AB"
         },
         {
           "type": "articles",
@@ -181,32 +124,12 @@
       "description": "Machines for dry and wet spraying, concrete pumps and grout solutions from REED, and shotcrete units from Marini.",
       "blocks": [
         {
-          "type": "columns",
-          "ratio": "40-60",
-          "left": [
-            {
-              "type": "image",
-              "src": "/assets/img/marini-sprutbetong-5.webp",
-              "alt": "Shotcrete on a rock slope",
-              "width": 1200,
-              "height": 1600
-            }
-          ],
-          "right": [
-            {
-              "type": "text",
-              "html": "Machines for dry and wet spraying, concrete pumps and grout solutions from REED, and shotcrete from Marini, for tunnels, mines, rock reinforcement and repairs."
-            },
-            {
-              "type": "text",
-              "html": "Read <a href=\"/artiklar/sprutbetong-torr-eller-vat\">dry or wet process</a> to see which method fits."
-            },
-            {
-              "type": "button",
-              "text": "Get a quote",
-              "href": "/offert"
-            }
-          ]
+          "type": "text",
+          "html": "Machines for dry and wet spraying, concrete pumps and grout solutions from REED, and shotcrete from Marini, for tunnels, mines, rock reinforcement and repairs."
+        },
+        {
+          "type": "text",
+          "html": "Read <a href=\"/artiklar/sprutbetong-torr-eller-vat\">dry or wet process</a> to see which method fits."
         },
         {
           "type": "heading",
@@ -246,43 +169,6 @@
             }
           ],
           "style": "photo"
-        },
-        {
-          "type": "carousel",
-          "items": [
-            {
-              "src": "/assets/img/marini-sprutbetong-4.webp",
-              "alt": "Shotcrete, picture 1",
-              "width": 1600,
-              "height": 1200
-            },
-            {
-              "src": "/assets/img/marini-sprutbetong-5.webp",
-              "alt": "Shotcrete, picture 2",
-              "width": 1200,
-              "height": 1600
-            },
-            {
-              "src": "/assets/img/marini-sprutbetong-3.webp",
-              "alt": "Shotcrete, picture 3",
-              "width": 1500,
-              "height": 2000
-            },
-            {
-              "src": "/assets/img/reed-sove-maskin.webp",
-              "alt": "Shotcrete, picture 4",
-              "width": 1200,
-              "height": 900
-            }
-          ],
-          "autoplay": false
-        },
-        {
-          "type": "video",
-          "provider": "youtube",
-          "id": "aUdMAbHl4uU",
-          "title": "MARINI sprutbetong MR-SB",
-          "channel": "Betongakuten AB"
         },
         {
           "type": "articles",
@@ -335,8 +221,5 @@
         }
       ]
     }
-  },
-  "hero": {
-    "image": "/assets/img/marini-sprutbetong-6.webp"
   }
 }

@@ -238,7 +238,7 @@ function compactCard(ctx, it, idx, title, href) {
 }
 function renderCards(ctx, b) {
   if (b.style === "logos" && !ctx.edit) return renderLogoWall(ctx, b);
-  if (b.style === "marquee" && !ctx.edit) return renderLogoRow(ctx, b);
+  if (b.style === "marquee" && !ctx.edit) return ctx._noMarquee ? "" : renderLogoRow(ctx, b); // on home the logos live in the grid beside the photo instead
   const photo = b.style === "photo" && !ctx.edit;
   const square = cardsAreSquare(ctx, b);
   const shownItems = (b.items || []).map((it, idx) => [it, idx]).filter(([it]) => shown(ctx, it.href));
@@ -399,7 +399,10 @@ function renderCreds(ctx, b) {
 }
 // Customers we have delivered to, as a grid of names. Block: kicker, title, intro, items [names], more
 function renderClients(ctx, b) {
-  return `<section class="clients">${b.kicker ? `<p class="sec-kicker">${esc(b.kicker)}</p>` : ""}${b.title ? `<h2 class="clients__h">${esc(b.title)}</h2>` : ""}${b.intro ? `<p class="clients__intro">${esc(b.intro)}</p>` : ""}<ul class="clients__list">${(b.items || []).map((x, i) => { const nm = typeof x === "string" ? x : x.name, lg = typeof x === "string" ? "" : x.logo; return `<li style="--i:${i}"${lg ? ' class="clients__logo"' : ""}>${lg ? imgTag(ctx, lg, nm, { sizes: "200px" }) : `<span>${esc(nm)}</span>`}</li>`; }).join("")}${b.more ? `<li class="clients__more"><span>${esc(b.more)}</span></li>` : ""}</ul></section>`;
+  // logos get the same visual weight whatever their shape: equal area, so a square mark is not dwarfed by a long word mark
+  const lw = (src) => { const m = ctx.image && ctx.image(src); const a = m && m.w && m.h ? m.w / m.h : 3; return Math.min(10, Math.max(4.4, Math.sqrt(13 * a))).toFixed(2); };
+  const allLogos = (b.items || []).length && (b.items || []).every((x) => x && typeof x === "object" && x.logo);
+  return `<section class="clients${allLogos ? " clients--logos" : ""}">${b.kicker ? `<p class="sec-kicker">${esc(b.kicker)}</p>` : ""}${b.title ? `<h2 class="clients__h">${esc(b.title)}</h2>` : ""}${b.intro ? `<p class="clients__intro">${esc(b.intro)}</p>` : ""}<ul class="clients__list">${(b.items || []).map((x, i) => { const nm = typeof x === "string" ? x : x.name, lg = typeof x === "string" ? "" : x.logo; return `<li style="--i:${i}${lg ? `;--lw:${lw(lg)}rem` : ""}"${lg ? ' class="clients__logo"' : ""}>${lg ? imgTag(ctx, lg, nm, { sizes: "200px" }) : `<span>${esc(nm)}</span>`}</li>`; }).join("")}${b.more ? `<li class="clients__more"><span>${esc(b.more)}</span></li>` : ""}</ul></section>`;
 }
 // Home: the manufacturers as a tight grey grid beside the intro; site.js runs one of eight looping highlight motions (data-g),
 // hovering shows the manufacturer's line, clicking opens its page. Built from the home page's logo strip (cards, style marquee).
@@ -418,7 +421,8 @@ function homeLogoGrid(ctx, t) {
   const lis = rows.map((r, i) => `<li style="--i:${i}"><a class="lgrid__a${i ? "" : " is-hot"}" href="${esc(localizeHref(ctx, r.it.href))}" data-k="${i}" aria-label="${esc(r.name)}">${imgTag(ctx, r.pg.menuLogo || r.pg.logo || r.it.image, "", { sizes: "120px" }).replace('loading="lazy"', 'loading="eager"')}</a></li>`).join("");
   const pics = rows.map((r, i) => `<a class="lshow__pic${i ? "" : " is-on"}" data-k="${i}" href="${esc(localizeHref(ctx, r.it.href))}" tabindex="-1" aria-hidden="${i ? "true" : "false"}">${imgTag(ctx, r.photo, r.name, { sizes: "(min-width: 900px) 560px, 100vw" })}</a>`).join("");
   const caps = rows.map((r, i) => `<p class="lshow__cap${i ? "" : " is-on"}" data-k="${i}"><strong>${esc(r.name)}</strong><span>${esc(r.desc)}</span></p>`).join("");
-  return `<figure class="lshow" aria-live="polite"><div class="lshow__stack">${pics}</div><figcaption class="lshow__caps">${caps}</figcaption></figure><div class="lgrid" data-g="3"><p class="sec-kicker lgrid__k">${esc(strip.title || "Tillverkare vi representerar")}</p><ul class="lgrid__list">${lis}</ul></div>`;
+  // the photo on the left, the logos on the right with the lit maker's name and line under them
+  return `<figure class="lshow"><div class="lshow__stack">${pics}</div></figure><div class="lgrid" data-g="3"><ul class="lgrid__list">${lis}</ul><div class="lshow__caps lgrid__caps" aria-live="polite">${caps}</div></div>`;
 }
 function renderFaq(ctx, b) {
   const items = (b.items || []).filter((i) => i && i.q && i.a);
@@ -1058,6 +1062,15 @@ export function renderBlocks(ctx, blocks) {
       prose.push(run.length === 1 ? renderBlock(ctx, run[0]) : `<p class="btn-row btn-row--group">${run.map((x) => renderBlockInner(ctx, x).replace(/^<p class="btn-row">|<\/p>$/g, "")).join("")}</p>`);
       continue;
     }
+    // a gallery followed by a video sit side by side, like the original product pages: pictures left, video right with the specification heading and list under it
+    if (!ctx.edit && b.type === "carousel" && list[i + 1] && list[i + 1].type === "video") {
+      const right = [list[i + 1]];
+      let j = i + 2;
+      if (list[j] && list[j].type === "heading" && (list[j].level || 2) >= 3 && list[j + 1] && list[j + 1].type === "list") { right.push(list[j], list[j + 1]); j += 2; }
+      prose.push(`<div class="mediapair"><div class="mediapair__pics">${renderBlock(ctx, b)}</div><div class="mediapair__side">${right.map((x) => renderBlock(ctx, x)).join("\n")}</div></div>`);
+      i = j - 1;
+      continue;
+    }
     if (b.type === "cta" || b.type === "datasheet" && false) { flushProse(); out.push(renderBlock(ctx, b)); continue; }
     if (b.type === "columns" || b.type === "social" || b.type === "quote") { flushProse(); out.push(`<div class="container prose sect">${renderBlock(ctx, b)}</div>`); continue; }
     prose.push(renderBlock(ctx, b));
@@ -1291,9 +1304,12 @@ function renderFooter(ctx) {
   const privacyPath = s.privacyPath && ctx.pages.has(s.privacyPath) && avail(s.privacyPath) ? s.privacyPath : null;
   const social = (s.social || []).map((x) => `<li><a class="ext" href="${esc(x.url)}" rel="noopener me" target="_blank">${esc(x.name)}${extLabel(ctx)}</a></li>`).join("");
   const analyticsOn = s.analytics && s.analytics.enabled && s.analytics.measurementId;
+  const footerAbout = String(((ctx.tr("/", ctx.lang) || {}).lead) || "").replace(/\s+/g, " ").trim();
   const phones = (c.phones || []).map((p) => `<li>${ICON.phone}<span class="sr-only">${esc(p.label || "")}: </span><a href="${esc(telHref(p.value))}">${esc(phoneText(ctx, p.value))}</a></li>`).join("");
   return `<footer class="site-footer"><div class="container site-footer__grid">` +
     `<div class="site-footer__about"><img class="site-footer__logo" src="/assets/brand/logo-white.svg" alt="${esc(s.name)}" width="190" height="30" loading="lazy">` +
+    // who we are, in one sentence (the home page lead), under the logo
+    (footerAbout ? `<p class="site-footer__pitch">${esc(footerAbout)}</p>` : "") +
     `<p>${esc(s.legalName || s.name)}</p>${s.orgNumber ? `<p class="muted">${esc(ctx.ui.org_no || "Org.nr")} ${esc(s.orgNumber)}</p>` : ""}${tagline(ctx) ? `<p class="muted">${esc(tagline(ctx))}</p>` : ""}</div>` +
     (brands.length ? `<nav aria-label="${esc(navTitleOf(ctx, "/produkter"))}"><h2 class="site-footer__h">${esc(navTitleOf(ctx, "/produkter"))}</h2><ul class="site-footer__links site-footer__links--cols">${brands.map((b) => `<li><a href="${esc(ctx.url(b))}">${esc(navTitleOf(ctx, b))}</a></li>`).join("")}</ul></nav>` : "") +
     `<nav aria-label="${esc(ctx.ui.footer_nav || "Sidfot")}"><h2 class="site-footer__h">${esc(ctx.ui.company || "Företaget")}</h2><ul class="site-footer__links">${company.map((p) => `<li><a href="${esc(ctx.url(p))}">${esc(navTitleOf(ctx, p))}</a></li>`).join("")}` +
@@ -1547,6 +1563,7 @@ export function renderMain(ctx, page, t) {
   // and is fetched top to bottom in quiet time by site.js. Without a banner, the very first picture is the most important one.
   const prioritise = (h) => { let n = 0; return h.replace(/<img ([^>]*?)loading="lazy" decoding="async"/g, (m, a) => (++n <= 3 ? `<img ${a}loading="eager" decoding="async"${n === 1 && !heroImg ? ' fetchpriority="high"' : ""}` : m)); };
   ctx._pfilter = ""; ctx._psearch = "";
+  ctx._noMarquee = !ctx.edit && isHome && introHtml.includes("class=\"lgrid\"");
   let bodyHtml = ctx.edit ? `${splitHtml}${renderBlocks(ctx, rest)}` : prioritise(`${splitHtml}${renderBlocks(ctx, rest)}`);
   if (isArticle) { const aend = `<div class="container"><div class="aend"><a class="aend__back" href="${esc(localizeHref(ctx, "/artiklar"))}">${esc(ctx.ui.article_all || "Alla artiklar")}</a>${artActs.replace("ahead__act", "aend__act ahead__act")}</div></div>`; const ci = bodyHtml.search(/<(section|div) class="cta"/); bodyHtml = ci < 0 ? bodyHtml + aend : bodyHtml.slice(0, ci) + aend + bodyHtml.slice(ci); }
   const crumbRow = !isArticle && (crumbs || logo || origin || ctx._pfilter) ? `<div class="container crumbs${page.template === "about" && !heroImg ? " crumbs--center" : ""}">${crumbs}${ctx._psearch || ""}${ctx._pfilter || ""}${logo && origin ? `<div class="crumbs__brand">${logo}${origin}</div>` : `${logo}${origin}`}</div>` : "";

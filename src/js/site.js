@@ -2090,7 +2090,7 @@ window.addEventListener("afterprint", function () { [].forEach.call(document.que
   var box = document.querySelector(".lgrid");
   if (!box) return;
   var links = [].slice.call(box.querySelectorAll(".lgrid__a")), show = document.querySelector(".lshow");
-  var pics = show ? [].slice.call(show.querySelectorAll(".lshow__pic")) : [], caps = show ? [].slice.call(show.querySelectorAll(".lshow__cap")) : [];
+  var pics = show ? [].slice.call(show.querySelectorAll(".lshow__pic")) : [], caps = [].slice.call(box.querySelectorAll(".lshow__cap"));
   var reduce = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
   var k = 0, timer = 0, paused = false, seen = false, STEP = 3200;
   function light(i) {
@@ -2099,7 +2099,11 @@ window.addEventListener("afterprint", function () { [].forEach.call(document.que
     pics.forEach(function (p, j) { var on = j === i; p.classList.toggle("is-on", on); p.setAttribute("aria-hidden", on ? "false" : "true"); });
     caps.forEach(function (c, j) { c.classList.toggle("is-on", j === i); });
   }
-  function run() { clearInterval(timer); if (reduce || paused || !seen) return; timer = setInterval(function () { light((k + 1) % links.length); }, STEP); }
+  // the spotlight wanders in a random order: every logo once per round, a fresh shuffle each round, never the same logo twice in a row
+  var order = [], pos = 0;
+  function shuffle() { var a = links.map(function (_, i) { return i; }); for (var i = a.length - 1; i > 0; i--) { var j = Math.floor(Math.random() * (i + 1)), t = a[i]; a[i] = a[j]; a[j] = t; } if (a.length > 1 && a[0] === k) { a.push(a.shift()); } order = a; pos = 0; }
+  function next() { if (pos >= order.length) shuffle(); return order[pos++]; }
+  function run() { clearInterval(timer); if (reduce || paused || !seen) return; timer = setInterval(function () { light(next()); }, STEP); }
   links.forEach(function (a, i) {
     function on() { paused = true; clearInterval(timer); light(i); }
     function off() { paused = false; run(); }
@@ -2108,7 +2112,7 @@ window.addEventListener("afterprint", function () { [].forEach.call(document.que
   });
   if (show) { show.addEventListener("mouseenter", function () { paused = true; clearInterval(timer); }); show.addEventListener("mouseleave", function () { paused = false; run(); }); }
   box.classList.add("is-tour");
-  light(0);
+  light(Math.floor(Math.random() * links.length));
   if ("IntersectionObserver" in window) new IntersectionObserver(function (e) { seen = e[0].isIntersecting; run(); }, { threshold: 0.3 }).observe(box);
   else { seen = true; run(); }
 })();

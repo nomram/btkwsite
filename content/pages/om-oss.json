@@ -1,6 +1,6 @@
 {
   "path": "/om-oss",
-  "updated": "2026-11-24",
+  "updated": "2026-11-25",
   "template": "about",
   "order": 0,
   "published": true,
@@ -41,23 +41,6 @@
               "width": 1787,
               "height": 1004,
               "src": "/assets/img/om-oss-2.webp"
-            }
-          ]
-        },
-        {
-          "type": "facts",
-          "items": [
-            {
-              "value": "4 lager",
-              "label": "Stockholm, Göteborg, Malmö och Norge"
-            },
-            {
-              "value": "Mobil verkstad",
-              "label": "Service på plats i Sverige och Norge"
-            },
-            {
-              "value": "15 tillverkare",
-              "label": "Från Sverige, Europa och USA"
             }
           ]
         },
@@ -470,23 +453,6 @@
               "width": 1787,
               "height": 1004,
               "src": "/assets/img/om-oss-2.webp"
-            }
-          ]
-        },
-        {
-          "type": "facts",
-          "items": [
-            {
-              "value": "4 warehouses",
-              "label": "Stockholm, Gothenburg, Malmö and Norway"
-            },
-            {
-              "value": "Mobile workshop",
-              "label": "Service on site in Sweden and Norway"
-            },
-            {
-              "value": "15 manufacturers",
-              "label": "From Sweden, Europe and the USA"
             }
           ]
         },
