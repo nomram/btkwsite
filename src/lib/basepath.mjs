@@ -23,6 +23,8 @@ export function rewriteHtml(html, base, { noindex = false } = {}) {
   let out = html;
   // plain URL attributes
   out = out.replace(/\b(href|src|poster|action|data-src|data-docbase)=(["'])(\/(?!\/)[^"']*)\2/g, (m, a, q, u) => `${a}=${q}${prefix(base, u)}${q}`);
+  // 3D model versions: JSON in data-variants (quotes escaped as &quot;)
+  out = out.replace(/\bdata-variants="([^"]*)"/g, (m, v) => `data-variants="${v.replace(/(&quot;src&quot;:&quot;)(\/(?!\/)[^&]*)/g, (mm, a, u) => a + prefix(base, u))}"`);
   // srcset / imagesrcset lists
   out = out.replace(/\b(srcset|imagesrcset)=(["'])([^"']*)\2/g, (m, a, q, v) => `${a}=${q}${mapSrcset(base, v)}${q}`);
   // <meta http-equiv="refresh" content="0;url=/x">

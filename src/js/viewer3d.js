@@ -11,34 +11,35 @@
   var LANGS = {
     sv: { loading: "Hämtar 3D-modellen", failed: "3D-modellen kunde inte visas i den här webbläsaren.", spin: "Rotera automatiskt", reset: "Startvy", full: "Helskärm", close: "Tillbaka till bilden",
       orbit: "Vrid", pan: "Flytta", fly: "Flyg", hOrbit: "Dra för att vrida, scrolla eller nyp för att zooma.", hPan: "Dra för att flytta kameran i sidled och höjdled.", hFly: "Klicka i bilden och styr med musen, som en fri kamera. W A S D flyger dit du tittar, mellanslag och C upp och ner, Shift fortare. Esc släpper musen.",
-      fwd: "Framåt", back: "Bakåt", left: "Vänster", right: "Höger", up: "Upp", down: "Ner", modes: "Kameraläge" },
+      fwd: "Framåt", back: "Bakåt", left: "Vänster", right: "Höger", up: "Upp", down: "Ner", modes: "Kameraläge", walk: "Gå", hWalk: "Gå runt maskinen. Klicka i bilden och styr med musen. W A S D går, mellanslag hoppar, Ctrl eller C hukar, Shift smyger. Klicka för att peka. Esc släpper musen." },
     en: { loading: "Loading the 3D model", failed: "The 3D model cannot be shown in this browser.", spin: "Rotate automatically", reset: "Start view", full: "Full screen", close: "Back to the picture",
       orbit: "Turn", pan: "Move", fly: "Fly", hOrbit: "Drag to turn, scroll or pinch to zoom.", hPan: "Drag to move the camera sideways and up or down.", hFly: "Click the view and steer with the mouse, like a free camera. W A S D flies where you look, Space and C up and down, Shift faster. Esc releases the mouse.",
-      fwd: "Forward", back: "Back", left: "Left", right: "Right", up: "Up", down: "Down", modes: "Camera mode" },
+      fwd: "Forward", back: "Back", left: "Left", right: "Right", up: "Up", down: "Down", modes: "Camera mode", walk: "Walk", hWalk: "Walk around the machine. Click the view and steer with the mouse. W A S D walks, Space jumps, Ctrl or C crouches, Shift walks quietly. Click to point. Esc releases the mouse." },
     es: { loading: "Cargando el modelo 3D", failed: "El modelo 3D no se puede mostrar en este navegador.", spin: "Girar automáticamente", reset: "Vista inicial", full: "Pantalla completa", close: "Volver a la imagen",
       orbit: "Girar", pan: "Mover", fly: "Volar", hOrbit: "Arrastra para girar, desplaza o pellizca para ampliar.", hPan: "Arrastra para mover la cámara a los lados y en altura.", hFly: "Haz clic en la vista y dirige con el ratón, como una cámara libre. W A S D vuela hacia donde miras, espacio y C suben y bajan, Mayús más rápido. Esc suelta el ratón.",
-      fwd: "Adelante", back: "Atrás", left: "Izquierda", right: "Derecha", up: "Arriba", down: "Abajo", modes: "Modo de cámara" },
+      fwd: "Adelante", back: "Atrás", left: "Izquierda", right: "Derecha", up: "Arriba", down: "Abajo", modes: "Modo de cámara", walk: "Caminar", hWalk: "Camina alrededor de la máquina. Haz clic en la vista y dirige con el ratón. W A S D para caminar, espacio salta, Ctrl o C se agacha, Mayús camina despacio. Haz clic para señalar. Esc suelta el ratón." },
     no: { loading: "Henter 3D-modellen", failed: "3D-modellen kan ikke vises i denne nettleseren.", spin: "Roter automatisk", reset: "Startvisning", full: "Fullskjerm", close: "Tilbake til bildet",
       orbit: "Drei", pan: "Flytt", fly: "Fly", hOrbit: "Dra for å dreie, rull eller klyp for å zoome.", hPan: "Dra for å flytte kameraet sideveis og i høyden.", hFly: "Klikk i bildet og styr med musen, som et fritt kamera. W A S D flyr dit du ser, mellomrom og C opp og ned, Shift fortere. Esc slipper musen.",
-      fwd: "Fremover", back: "Bakover", left: "Venstre", right: "Høyre", up: "Opp", down: "Ned", modes: "Kameramodus" },
+      fwd: "Fremover", back: "Bakover", left: "Venstre", right: "Høyre", up: "Opp", down: "Ned", modes: "Kameramodus", walk: "Gå", hWalk: "Gå rundt maskinen. Klikk i bildet og styr med musen. W A S D går, mellomrom hopper, Ctrl eller C huker, Shift lister. Klikk for å peke. Esc slipper musen." },
     lt: { loading: "Įkeliamas 3D modelis", failed: "Šioje naršyklėje 3D modelio parodyti nepavyksta.", spin: "Sukti automatiškai", reset: "Pradinis vaizdas", full: "Visas ekranas", close: "Atgal į nuotrauką",
       orbit: "Sukti", pan: "Perkelti", fly: "Skristi", hOrbit: "Tempkite, kad pasuktumėte, slinkite arba suimkite pirštais, kad priartintumėte.", hPan: "Tempkite, kad perkeltumėte kamerą į šonus ir aukštyn ar žemyn.", hFly: "Spustelėkite vaizdą ir valdykite pele, kaip laisvą kamerą. W A S D skrenda ten, kur žiūrite, tarpas ir C aukštyn ir žemyn, Shift greičiau. Esc atlaisvina pelę.",
-      fwd: "Pirmyn", back: "Atgal", left: "Kairėn", right: "Dešinėn", up: "Aukštyn", down: "Žemyn", modes: "Kameros režimas" },
+      fwd: "Pirmyn", back: "Atgal", left: "Kairėn", right: "Dešinėn", up: "Aukštyn", down: "Žemyn", modes: "Kameros režimas", walk: "Eiti", hWalk: "Apeikite mašiną. Spustelėkite vaizdą ir valdykite pele. W A S D eiti, tarpas šokti, Ctrl arba C pritūpti, Shift eiti tyliai. Spustelėkite, kad parodytumėte pirštu. Esc atlaisvina pelę." },
     lv: { loading: "Ielādē 3D modeli", failed: "Šajā pārlūkā 3D modeli nevar parādīt.", spin: "Griezt automātiski", reset: "Sākuma skats", full: "Pilnekrāns", close: "Atpakaļ uz attēlu",
       orbit: "Griezt", pan: "Pārvietot", fly: "Lidot", hOrbit: "Velciet, lai pagrieztu, ritiniet vai saspiediet, lai tuvinātu.", hPan: "Velciet, lai pārvietotu kameru uz sāniem un augšup vai lejup.", hFly: "Noklikšķiniet uz skata un vadiet ar peli kā brīvu kameru. W A S D lido turp, kur skatāties, atstarpe un C augšup un lejup, Shift ātrāk. Esc atbrīvo peli.",
-      fwd: "Uz priekšu", back: "Atpakaļ", left: "Pa kreisi", right: "Pa labi", up: "Augšup", down: "Lejup", modes: "Kameras režīms" },
+      fwd: "Uz priekšu", back: "Atpakaļ", left: "Pa kreisi", right: "Pa labi", up: "Augšup", down: "Lejup", modes: "Kameras režīms", walk: "Iet", hWalk: "Apstaigājiet mašīnu. Noklikšķiniet uz skata un vadiet ar peli. W A S D iet, atstarpe lec, Ctrl vai C notupjas, Shift iet klusi. Noklikšķiniet, lai norādītu. Esc atbrīvo peli." },
     et: { loading: "3D-mudeli laadimine", failed: "Selles brauseris ei saa 3D-mudelit näidata.", spin: "Pööra automaatselt", reset: "Algvaade", full: "Täisekraan", close: "Tagasi pildi juurde",
       orbit: "Pööra", pan: "Liiguta", fly: "Lenda", hOrbit: "Lohista pööramiseks, keri või näpista suumimiseks.", hPan: "Lohista, et liigutada kaamerat külgedele ja üles-alla.", hFly: "Klõpsa vaatel ja juhi hiirega nagu vaba kaamerat. W A S D lendab sinna, kuhu vaatad, tühik ja C üles ja alla, Shift kiiremini. Esc vabastab hiire.",
-      fwd: "Edasi", back: "Tagasi", left: "Vasakule", right: "Paremale", up: "Üles", down: "Alla", modes: "Kaamera režiim" },
+      fwd: "Edasi", back: "Tagasi", left: "Vasakule", right: "Paremale", up: "Üles", down: "Alla", modes: "Kaamera režiim", walk: "Kõnni", hWalk: "Kõnni ümber masina. Klõpsa vaatel ja juhi hiirega. W A S D kõnnib, tühik hüppab, Ctrl või C kükitab, Shift hiilib. Klõpsa, et osutada. Esc vabastab hiire." },
     ru: { loading: "Загрузка 3D-модели", failed: "В этом браузере 3D-модель показать нельзя.", spin: "Автоматическое вращение", reset: "Исходный вид", full: "Во весь экран", close: "Назад к изображению",
-      orbit: "Вращать", pan: "Сдвигать", fly: "Полёт", hOrbit: "Тяните, чтобы вращать, прокрутите или сведите пальцы для масштаба.", hPan: "Тяните, чтобы сдвигать камеру вбок и вверх или вниз.", hFly: "Щёлкните по изображению и управляйте мышью, как свободной камерой. W A S D — полёт туда, куда вы смотрите, пробел и C — вверх и вниз, Shift — быстрее. Esc отпускает мышь.",
-      fwd: "Вперёд", back: "Назад", left: "Влево", right: "Вправо", up: "Вверх", down: "Вниз", modes: "Режим камеры" }
+      orbit: "Вращать", pan: "Сдвигать", fly: "Полёт", hOrbit: "Тяните, чтобы вращать, прокрутите или сведите пальцы для масштаба.", hPan: "Тяните, чтобы сдвигать камеру вбок и вверх или вниз.", hFly: "Щёлкните по изображению и управляйте мышью, как свободной камерой. W A S D: полёт туда, куда вы смотрите, пробел и C: вверх и вниз, Shift: быстрее. Esc отпускает мышь.",
+      fwd: "Вперёд", back: "Назад", left: "Влево", right: "Вправо", up: "Вверх", down: "Вниз", modes: "Режим камеры", walk: "Ходьба", hWalk: "Обойдите машину. Щёлкните по изображению и управляйте мышью. W A S D: ходьба, пробел: прыжок, Ctrl или C: присесть, Shift: тихий шаг. Щелчок: показать пальцем. Esc отпускает мышь." }
   };
   var lang = (document.documentElement.lang || "en").toLowerCase(), L = LANGS[lang.slice(0, 2)] || (/^(nb|nn)/.test(lang) ? LANGS.no : LANGS.en);
   var ICON = {
     orbit: '<svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><ellipse cx="12" cy="12" rx="9" ry="3.6" fill="none" stroke="currentColor" stroke-width="1.6"/><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" d="M16.5 6.2 19 8.6l-3 1"/><circle cx="12" cy="12" r="2.2" fill="currentColor"/></svg>',
     pan: '<svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" d="M12 3v18M3 12h18M12 3 9.5 5.5M12 3l2.5 2.5M12 21l-2.5-2.5M12 21l2.5-2.5M3 12l2.5-2.5M3 12l2.5 2.5M21 12l-2.5-2.5M21 12l-2.5 2.5"/></svg>',
     fly: '<svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" d="M2.5 13.5 21.5 5l-6.5 15-3.2-6.4z"/><path fill="none" stroke="currentColor" stroke-width="1.6" d="m11.8 13.6 9.7-8.6"/></svg>',
+    walk: '<svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><circle cx="13.5" cy="4.2" r="2" fill="currentColor"/><path fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" d="M12.8 7.8 10.6 14l3.2 2.8.9 4.7M10.9 13.2 8.4 21M12.8 7.8l2.6 3.2 3.1.6M12.8 7.8 9.4 9.4 7.6 12.6"/></svg>',
     arrow: '<svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M6 14l6-6 6 6"/></svg>',
     spin: '<svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" d="M20 12a8 8 0 1 1-2.3-5.6M20 4v4.5h-4.5"/></svg>',
     reset: '<svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" d="M12 3 4 7.5v9L12 21l8-4.5v-9zM4 7.5 12 12l8-4.5M12 12v9"/></svg>',
@@ -128,6 +129,66 @@
     "void main(){ vec3 p = vL.xyz/vL.w*0.5+0.5; float s=0.0; for(int x=-2;x<=2;x++) for(int y=-2;y<=2;y++) s += texture(uSh, vec3(p.xy+vec2(x,y)*uTex*1.6, p.z-0.002)); s/=25.0; float d = length(vG); float fade = smoothstep(1.0, 0.25, d);\n" +
     " vec3 floorC = uBg * 0.985; vec3 c = mix(floorC*0.72, floorC, s); c = mix(uBg, c, fade); o = vec4(c, 1.0); }";
 
+  // the walker's right hand (drawn in camera space, on top of everything)
+  var HVS = "#version 300 es\nlayout(location=0) in vec3 aP; layout(location=1) in vec3 aN; layout(location=2) in vec3 aC; uniform mat4 uP; uniform mat4 uM; out vec3 vN; out vec3 vC; out vec3 vV;\nvoid main(){ vec4 p = uM * vec4(aP,1.0); vV = p.xyz; vN = mat3(uM) * aN; vC = aC; gl_Position = uP * p; }";
+  var HFS = "#version 300 es\nprecision highp float; in vec3 vN; in vec3 vC; in vec3 vV; uniform vec3 uL; out vec4 o;\n" +
+    "void main(){ vec3 N = normalize(vN); vec3 V = normalize(-vV); float d = max(dot(N,uL),0.0); float w = dot(N,uL)*0.5+0.5; vec3 c = vC*(0.2 + 0.5*w*w + 0.5*d);\n" +
+    " float rim = pow(1.0 - max(dot(N,V),0.0), 3.0); c += vC*rim*0.35 + vec3(0.02)*rim; vec3 H = normalize(uL+V); c += vec3(0.07)*pow(max(dot(N,H),0.0), 20.0);\n" +
+    " c = clamp((c*(2.51*c+0.03))/(c*(2.43*c+0.59)+0.14),0.0,1.0); o = vec4(pow(c, vec3(1.0/2.2)), 1.0); }";
+  function handMesh() {
+    var P = [], N = [], C = [];
+    var SKIN = [0.50, 0.29, 0.19], SLEEVE = [0.03, 0.032, 0.036], BAND = [0.86, 0.22, 0.02];
+    function tri(a, b, c, na, nb, nc, col) { [a, b, c].forEach(function (p) { P.push(p[0], p[1], p[2]); }); [na, nb, nc].forEach(function (n) { N.push(n[0], n[1], n[2]); C.push(col[0], col[1], col[2]); }); }
+    function add(a, b, k) { return [a[0] + b[0] * k, a[1] + b[1] * k, a[2] + b[2] * k]; }
+    // a tube from a to b (radius r0 to r1) with round ends, or flat ends where cap is false
+    function capsule(a, b, r0, r1, col, capA, capB) {
+      var ax = norm(sub(b, a)), t = Math.abs(ax[1]) < 0.9 ? [0, 1, 0] : [1, 0, 0], u = norm(cross(ax, t)), v = cross(ax, u), S = 14, rings = [];
+      var R = capA === false ? [[a, r0, 0]] : [];
+      if (capA !== false) for (var i = 0; i <= 4; i++) R.push([a, r0, -Math.PI / 2 + i * Math.PI / 8]);
+      if (capB !== false) for (i = 0; i <= 4; i++) R.push([b, r1, i * Math.PI / 8]); else R.push([b, r1, 0]);
+      R.forEach(function (q) {
+        var ring = [];
+        for (var s = 0; s <= S; s++) { var th = s / S * 2 * Math.PI, ct = Math.cos(th), st = Math.sin(th), cp = Math.cos(q[2]), sp = Math.sin(q[2]);
+          var n = [cp * (ct * u[0] + st * v[0]) + sp * ax[0], cp * (ct * u[1] + st * v[1]) + sp * ax[1], cp * (ct * u[2] + st * v[2]) + sp * ax[2]];
+          ring.push([add(q[0], n, q[1]), n]); }
+        rings.push(ring);
+      });
+      for (var j = 0; j + 1 < rings.length; j++) for (var s = 0; s < S; s++) {
+        var p00 = rings[j][s], p01 = rings[j][s + 1], p10 = rings[j + 1][s], p11 = rings[j + 1][s + 1];
+        tri(p00[0], p10[0], p11[0], p00[1], p10[1], p11[1], col); tri(p00[0], p11[0], p01[0], p00[1], p11[1], p01[1], col);
+      }
+      [[capA, a, rings[0], -1], [capB, b, rings[rings.length - 1], 1]].forEach(function (e) {
+        if (e[0] !== false) return; var n = [ax[0] * e[3], ax[1] * e[3], ax[2] * e[3]];
+        for (var s = 0; s < S; s++) tri(e[1], e[2][s][0], e[2][s + 1][0], n, n, n, e[3] < 0 ? [0.012, 0.012, 0.014] : col);
+      });
+    }
+    function ellipsoid(c, r, col) {
+      var S = 18, T = 10, g = [];
+      for (var i = 0; i <= T; i++) { var ph = -Math.PI / 2 + i / T * Math.PI, row = [];
+        for (var s = 0; s <= S; s++) { var th = s / S * 2 * Math.PI, d = [Math.cos(ph) * Math.cos(th), Math.sin(ph), Math.cos(ph) * Math.sin(th)];
+          row.push([[c[0] + d[0] * r[0], c[1] + d[1] * r[1], c[2] + d[2] * r[2]], norm([d[0] / r[0], d[1] / r[1], d[2] / r[2]])]); }
+        g.push(row); }
+      for (i = 0; i < T; i++) for (s = 0; s < S; s++) { var a = g[i][s], b = g[i][s + 1], e = g[i + 1][s], f = g[i + 1][s + 1]; tri(a[0], e[0], f[0], a[1], e[1], f[1], col); tri(a[0], f[0], b[0], a[1], f[1], b[1], col); }
+    }
+    function finger(pts, rs) { for (var i = 0; i + 1 < pts.length; i++) capsule(pts[i], pts[i + 1], rs[i], rs[i + 1], SKIN); }
+    // right hand, palm down, index finger pointing forward (-z); x right, y up, z back towards the wrist
+    ellipsoid([0, 0, 0], [0.042, 0.019, 0.048], SKIN);
+    finger([[-0.026, 0.003, -0.038], [-0.028, 0.004, -0.083], [-0.029, 0.003, -0.112], [-0.029, 0.0, -0.134]], [0.0108, 0.0099, 0.0092, 0.0084]);
+    function curled(k, sc, rs) { var p1 = add(k, [0, -0.016, -0.028], sc), p2 = add(p1, [0, -0.024, 0.006], sc), p3 = add(p2, [0, -0.004, 0.018], sc); finger([k, p1, p2, p3], rs); }
+    curled([-0.007, 0.004, -0.042], 1, [0.0108, 0.0103, 0.0096, 0.0088]);
+    curled([0.011, 0.003, -0.040], 0.95, [0.0103, 0.0098, 0.0091, 0.0084]);
+    curled([0.028, 0.0, -0.034], 0.78, [0.0089, 0.0084, 0.0078, 0.0072]);
+    finger([[-0.028, -0.006, 0.012], [-0.047, -0.012, -0.012], [-0.043, -0.02, -0.035], [-0.03, -0.027, -0.049]], [0.015, 0.0125, 0.0108, 0.0096]);
+    capsule([0.002, -0.002, 0.03], [0.007, -0.005, 0.1], 0.029, 0.031, SKIN, true, false);
+    capsule([0.006, -0.004, 0.09], [0.034, -0.022, 0.46], 0.043, 0.05, SLEEVE, false, false);
+    capsule([0.0105, -0.007, 0.15], [0.0125, -0.0085, 0.175], 0.0452, 0.0456, BAND, false, false);
+    return { p: new Float32Array(P), n: new Float32Array(N), c: new Float32Array(C), count: P.length / 3 };
+  }
+  function rotY(a) { var c = Math.cos(a), s = Math.sin(a); return [c, 0, -s, 0, 0, 1, 0, 0, s, 0, c, 0, 0, 0, 0, 1]; }
+  function rotX(a) { var c = Math.cos(a), s = Math.sin(a); return [1, 0, 0, 0, 0, c, s, 0, 0, -s, c, 0, 0, 0, 0, 1]; }
+  function rotZ(a) { var c = Math.cos(a), s = Math.sin(a); return [c, s, 0, 0, -s, c, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1]; }
+  function trans(x, y, z) { return [1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, x, y, z, 1]; }
+
   function compile(gl, vs, fs) {
     function sh(t, s) { var x = gl.createShader(t); gl.shaderSource(x, s); gl.compileShader(x); if (!gl.getShaderParameter(x, gl.COMPILE_STATUS)) throw new Error(gl.getShaderInfoLog(x)); return x; }
     var p = gl.createProgram(); gl.attachShader(p, sh(gl.VERTEX_SHADER, vs)); gl.attachShader(p, sh(gl.FRAGMENT_SHADER, fs)); gl.linkProgram(p);
@@ -212,7 +273,7 @@
       gl.activeTexture(gl.TEXTURE0); gl.bindTexture(gl.TEXTURE_2D, smTex);
       // floor
       gl.enable(gl.DEPTH_TEST); gl.depthMask(true); gl.disable(gl.BLEND);
-      gl.useProgram(Gp.p); gl.uniformMatrix4fv(Gp.u.uVP, false, vp); gl.uniformMatrix4fv(Gp.u.uLVP, false, lvp); gl.uniform1f(Gp.u.uR, size * 2.2); gl.uniform1i(Gp.u.uSh, 0); gl.uniform1f(Gp.u.uTex, 1 / SM); gl.uniform3fv(Gp.u.uBg, bg);
+      gl.useProgram(Gp.p); gl.uniformMatrix4fv(Gp.u.uVP, false, vp); gl.uniformMatrix4fv(Gp.u.uLVP, false, lvp); gl.uniform1f(Gp.u.uR, mode === "walk" ? Math.max(size * 2.2, 12) : size * 2.2); gl.uniform1i(Gp.u.uSh, 0); gl.uniform1f(Gp.u.uTex, 1 / SM); gl.uniform3fv(Gp.u.uBg, bg);
       if (opt.floor !== false) { gl.bindVertexArray(gvao); gl.drawArrays(gl.TRIANGLE_STRIP, 0, 4); }
       // machine
       gl.useProgram(P.p); setCommon(P); gl.uniformMatrix4fv(P.u.uVP, false, vp); gl.uniformMatrix4fv(P.u.uLVP, false, lvp); gl.uniform3fv(P.u.uEye, e); gl.uniform3fv(P.u.uKey, key); gl.uniform3fv(P.u.uFill, fill); gl.uniform1i(P.u.uSh, 0); gl.uniform1f(P.u.uTex, 1 / SM);
@@ -223,6 +284,7 @@
         gl.bindVertexArray(d.vao); gl.drawElements(gl.TRIANGLES, d.count, gl.UNSIGNED_SHORT, 0);
       });
       gl.depthMask(true); gl.disable(gl.BLEND); gl.bindVertexArray(null);
+      if (mode === "walk" && pl) drawHand(w, h);
     }
     function size2() {
       var dpr = Math.min(window.devicePixelRatio || 1, opt.dpr || 2), r = canvas.getBoundingClientRect();
@@ -236,8 +298,9 @@
       size2();
       if (anim) { var k = Math.min(1, (t - anim.t0) / 700), e = 1 - Math.pow(1 - k, 3); ["th", "ph", "d"].forEach(function (q) { cam[q] = anim.from[q] + (anim.to[q] - anim.from[q]) * e; }); for (var i = 0; i < 3; i++) cam.t[i] = anim.from.t[i] + (anim.to.t[i] - anim.from.t[i]) * e; dirty = true; if (k >= 1) anim = null; }
       if (spin && !drag) { cam.th += dt * 0.22; dirty = true; }
-      var kf = (keys.w ? 1 : 0) - (keys.s ? 1 : 0), kr = (keys.d ? 1 : 0) - (keys.a ? 1 : 0), ku = (keys.e ? 1 : 0) - (keys.q ? 1 : 0);
-      if (dt) {
+      var kf = (keys.w ? 1 : 0) - (keys.s ? 1 : 0), kr = (keys.d ? 1 : 0) - (keys.a ? 1 : 0), ku = (keys.e || keys.space ? 1 : 0) - (keys.q ? 1 : 0);
+      if (mode === "walk") { if (dt && pl) walk(dt, kf, kr); }
+      else if (dt) {
         var top = size * 0.55 * (keys.shift ? 3 : 1) * (keys.slow ? 0.3 : 1), held = kf || kr || ku, ease = Math.min(1, dt * (held ? 7 : 4.5));
         vel[0] += (kf * top - vel[0]) * ease; vel[1] += (kr * top - vel[1]) * ease; vel[2] += (ku * top - vel[2]) * ease;
         if (Math.abs(vel[0]) + Math.abs(vel[1]) + Math.abs(vel[2]) > size * 0.003) move(vel[0] * dt, vel[1] * dt, vel[2] * dt); else vel = [0, 0, 0];
@@ -250,18 +313,20 @@
     // pointer controls
     var drag = null, pts = {}, keys = {}, mode = "orbit", vel = [0, 0, 0];
     var locked = function () { return document.pointerLockElement === canvas; };
+    document.addEventListener("pointerlockchange", function () { if (!locked()) keys = {}; });
     function stopSpin() { if (spin) { spin = false; if (opt.onSpin) opt.onSpin(false); } }
     canvas.addEventListener("contextmenu", function (e) { e.preventDefault(); });
     canvas.addEventListener("pointerdown", function (e) {
-      if (mode === "fly" && e.pointerType === "mouse" && e.button === 0) {
+      if ((mode === "fly" || mode === "walk") && e.pointerType === "mouse" && e.button === 0) {
         canvas.focus({ preventScroll: true }); stopSpin(); anim = null; if (opt.onUse) opt.onUse();
+        if (mode === "walk" && pl) pl.poke = 1;
         if (!locked() && canvas.requestPointerLock) { try { var pr = canvas.requestPointerLock(); if (pr && pr.catch) pr.catch(function () {}); } catch (err) { /* drag to look instead */ } }
         if (locked()) return;
       }
       canvas.setPointerCapture(e.pointerId); pts[e.pointerId] = { x: e.clientX, y: e.clientY }; canvas.focus({ preventScroll: true });
-      drag = { pan: e.button === 2 || (e.shiftKey && mode !== "fly") || mode === "pan", x: e.clientX, y: e.clientY }; stopSpin(); anim = null; if (opt.onUse) opt.onUse();
+      drag = { pan: mode !== "walk" && (e.button === 2 || (e.shiftKey && mode !== "fly") || mode === "pan"), x: e.clientX, y: e.clientY }; stopSpin(); anim = null; if (opt.onUse) opt.onUse();
     });
-    canvas.addEventListener("mousemove", function (e) { if (locked()) { look(e.movementX, e.movementY, 0.0022); } });
+    canvas.addEventListener("mousemove", function (e) { if (locked()) { look(e.movementX, e.movementY, 0.0022); if (pl) { pl.sx += e.movementX; pl.sy += e.movementY; } } });
     canvas.addEventListener("pointermove", function (e) {
       if (locked() || !pts[e.pointerId]) return;
       var ids = Object.keys(pts);
@@ -277,22 +342,23 @@
       pts[e.pointerId] = { x: e.clientX, y: e.clientY };
       if (!drag) return;
       var dx = e.clientX - drag.x, dy = e.clientY - drag.y; drag.x = e.clientX; drag.y = e.clientY;
-      if (drag.pan) pan(dx, dy); else if (mode === "fly") look(dx, dy); else { cam.th -= dx * 0.008; cam.ph = Math.max(-0.05, Math.min(1.45, cam.ph + dy * 0.006)); }
+      if (drag.pan) pan(dx, dy); else if (mode === "fly" || mode === "walk") look(dx, dy); else { cam.th -= dx * 0.008; cam.ph = Math.max(-0.05, Math.min(1.45, cam.ph + dy * 0.006)); }
       dirty = true;
     });
     function up(e) { delete pts[e.pointerId]; if (!Object.keys(pts).length) drag = null; }
     canvas.addEventListener("pointerup", up); canvas.addEventListener("pointercancel", up);
-    canvas.addEventListener("wheel", function (e) { e.preventDefault(); stopSpin(); if (mode === "fly") vel[0] += -e.deltaY * (e.deltaMode ? 0.06 : 0.0022) * size; else zoom(Math.exp(e.deltaY * (e.deltaMode ? 0.05 : 0.0012))); }, { passive: false });
-    canvas.addEventListener("dblclick", function () { reset(); });
-    var KEYMAP = { w: "w", a: "a", s: "s", d: "d", q: "q", e: "e", space: "e", c: "q", controlleft: "slow", controlright: "slow" };
+    canvas.addEventListener("wheel", function (e) { e.preventDefault(); stopSpin(); if (mode === "walk") return; if (mode === "fly") vel[0] += -e.deltaY * (e.deltaMode ? 0.06 : 0.0022) * size; else zoom(Math.exp(e.deltaY * (e.deltaMode ? 0.05 : 0.0012))); }, { passive: false });
+    canvas.addEventListener("dblclick", function () { if (mode !== "walk") reset(); });
+    var KEYMAP = { w: "w", a: "a", s: "s", d: "d", q: "q", e: "e", space: "space", c: "q", controlleft: "slow", controlright: "slow" };
     function keyOf(e) { var c = (e.code || "").replace(/^Key/, "").toLowerCase(); return KEYMAP[c] || KEYMAP[(e.key || "").toLowerCase()]; }
     canvas.addEventListener("keyup", function (e) { var k = keyOf(e); if (k) keys[k] = false; keys.shift = e.shiftKey; });
     canvas.addEventListener("blur", function () { if (!locked()) keys = {}; });
     canvas.addEventListener("keydown", function (e) {
-      var fk = keyOf(e);
+      var fk = keyOf(e); keys.shift = e.shiftKey;
       if (fk) { keys[fk] = true; keys.shift = e.shiftKey; e.preventDefault(); stopSpin(); anim = null; if (opt.onUse) opt.onUse(); return; }
-      if (mode === "fly" && /^Arrow/.test(e.key)) { e.preventDefault(); stopSpin(); look(e.key === "ArrowLeft" ? -30 : e.key === "ArrowRight" ? 30 : 0, e.key === "ArrowUp" ? -24 : e.key === "ArrowDown" ? 24 : 0); return; }
+      if ((mode === "fly" || mode === "walk") && /^Arrow/.test(e.key)) { e.preventDefault(); stopSpin(); look(e.key === "ArrowLeft" ? -30 : e.key === "ArrowRight" ? 30 : 0, e.key === "ArrowUp" ? -24 : e.key === "ArrowDown" ? 24 : 0); return; }
       var k = e.key, used = true;
+      if (mode === "walk") return;
       if (k === "ArrowLeft") cam.th += 0.12; else if (k === "ArrowRight") cam.th -= 0.12; else if (k === "ArrowUp") cam.ph = Math.min(1.45, cam.ph + 0.08); else if (k === "ArrowDown") cam.ph = Math.max(-0.05, cam.ph - 0.08);
       else if (k === "+" || k === "=") zoom(0.85); else if (k === "-") zoom(1.18); else if (k === "0" || k === "Home") reset(); else used = false;
       if (used) { e.preventDefault(); stopSpin(); dirty = true; }
@@ -319,9 +385,130 @@
       cam.t = [e[0] - cam.d * c * Math.sin(cam.th), e[1] - cam.d * Math.sin(cam.ph), e[2] - cam.d * c * Math.cos(cam.th)];
       dirty = true;
     }
+    // ---------- walking: a person on the floor, first person, moving like Counter-Strike: Source ----------
+    // Source units are inches; the numbers are the game's defaults (speeds, friction, acceleration, gravity, jump, step, player box).
+    var IN = 0.0254, PM = { run: 250 * IN, walk: 250 * IN * 0.52, duck: 250 * IN * 0.34, acc: 5, air: 10, airCap: 30 * IN, fric: 4, stop: 75 * IN, grav: 800 * IN,
+      jump: Math.sqrt(2 * 800 * 21) * IN, step: 18 * IN, r: 16 * IN, hS: 72 * IN, hD: 36 * IN, eS: 64 * IN, eD: 28 * IN };
+    var HF = null, pl = null, hand = null;
+    // the machine as columns of small boxes (8 cm wide, 5 cm high), filled from points spread over every triangle
+    function buildHF() {
+      var cell = 0.08, hb = 0.05, half = radius + 0.6, n = Math.ceil(2 * half / cell), B = Math.ceil(span[1] / hb) + 2, occ = new Uint8Array(n * n * B), c = yawU[0], s = yawU[1];
+      function put(x, y, z) { var cx = Math.floor((x + half) / cell), cz = Math.floor((z + half) / cell), b = Math.floor(y / hb); if (cx < 0 || cz < 0 || cx >= n || cz >= n || b < 0) return; if (b >= B) b = B - 1; occ[(cz * n + cx) * B + b] = 1; }
+      model.draws.forEach(function (d) {
+        var p = d.p, k, m = p.length / 3, W = new Float32Array(p.length), ix = d.ix;
+        for (k = 0; k < m; k++) { var x = mn[0] + p[k * 3] / 65535 * span[0] + shift[0], y = mn[1] + p[k * 3 + 1] / 65535 * span[1] + shift[1], z = mn[2] + p[k * 3 + 2] / 65535 * span[2] + shift[2]; W[k * 3] = c * x + s * z; W[k * 3 + 1] = y; W[k * 3 + 2] = -s * x + c * z; }
+        for (k = 0; k < ix.length; k += 3) {
+          var a = ix[k] * 3, b = ix[k + 1] * 3, e = ix[k + 2] * 3;
+          var L = Math.max(Math.hypot(W[a] - W[b], W[a + 1] - W[b + 1], W[a + 2] - W[b + 2]), Math.hypot(W[a] - W[e], W[a + 1] - W[e + 1], W[a + 2] - W[e + 2]), Math.hypot(W[b] - W[e], W[b + 1] - W[e + 1], W[b + 2] - W[e + 2]));
+          var q = Math.min(300, Math.max(1, Math.ceil(L / 0.035)));
+          for (var i = 0; i <= q; i++) for (var j = 0; i + j <= q; j++) { var u = i / q, v = j / q, w = 1 - u - v; put(W[a] * w + W[b] * u + W[e] * v, W[a + 1] * w + W[b + 1] * u + W[e + 1] * v, W[a + 2] * w + W[b + 2] * u + W[e + 2] * v); }
+        }
+      });
+      HF = { cell: cell, hb: hb, half: half, n: n, B: B, occ: occ };
+    }
+    // calls f(base index) for every column under a person standing at x, z
+    function cols(x, z, f) {
+      var H = HF, r = PM.r, c0 = Math.floor((x - r + H.half) / H.cell), c1 = Math.floor((x + r + H.half) / H.cell), r0 = Math.floor((z - r + H.half) / H.cell), r1 = Math.floor((z + r + H.half) / H.cell);
+      for (var cz = Math.max(0, r0); cz <= Math.min(H.n - 1, r1); cz++) for (var cx = Math.max(0, c0); cx <= Math.min(H.n - 1, c1); cx++) {
+        var px = (cx + 0.5) * H.cell - H.half, pz = (cz + 0.5) * H.cell - H.half;
+        if (Math.hypot(px - x, pz - z) > r + H.cell * 0.5) continue;
+        if (f((cz * H.n + cx) * H.B) === false) return;
+      }
+    }
+    // anything of the machine inside the person's body between heights y0 and y1?
+    function solid(x, z, y0, y1) {
+      var H = HF, b0 = Math.max(0, Math.floor(y0 / H.hb)), b1 = Math.min(H.B - 1, Math.floor(y1 / H.hb)), hit = false;
+      if (b1 < b0) return false;
+      cols(x, z, function (o) { for (var b = b0; b <= b1; b++) if (H.occ[o + b]) { hit = true; return false; } });
+      return hit;
+    }
+    // the highest surface under the person that is no higher than y
+    function ground(x, z, y) {
+      var H = HF, top = Math.min(H.B - 1, Math.floor(y / H.hb) - 1), g = 0;
+      if (top < 0) return 0;
+      cols(x, z, function (o) { for (var b = top; b >= 0; b--) if (H.occ[o + b]) { if ((b + 1) * H.hb > g) g = (b + 1) * H.hb; break; } });
+      return g;
+    }
+    function walkStart() {
+      if (!HF) buildHF();
+      var e = eye(), l = Math.hypot(e[0], e[2]) || 1, dist = Math.max(radius + 1.4, 3.2), x = e[0] / l * dist, z = e[2] / l * dist;
+      pl = { x: x, z: z, y: ground(x, z, 50), vx: 0, vz: 0, vy: 0, on: true, duck: 0, jh: false, eo: 0, bob: 0, poke: 0, sx: 0, sy: 0, hx: 0, hy: 0, land: 0, amp: 0 };
+      cam.th = Math.atan2(x, z); cam.ph = 0.04; cam.d = 0.3; vel = [0, 0, 0];
+      walkCam();
+    }
+    function walkCam() {
+      var ey = pl.y + PM.eS + (PM.eD - PM.eS) * pl.duck + pl.eo, c = Math.cos(cam.ph);
+      cam.t = [pl.x - cam.d * c * Math.sin(cam.th), ey - cam.d * Math.sin(cam.ph), pl.z - cam.d * c * Math.cos(cam.th)];
+      dirty = true;
+    }
+    function walk(dt, kf, kr) {
+      var p = pl, h = PM.hS + (PM.hD - PM.hS) * p.duck;
+      // crouch (in the air the legs come up: crouch jump)
+      var want = keys.slow || keys.q, d0 = p.duck;
+      if (want) p.duck = Math.min(1, p.duck + dt / 0.2);
+      else if (p.duck > 0 && !solid(p.x, p.z, p.y + h + 0.01, p.y + PM.hS)) p.duck = Math.max(0, p.duck - dt / 0.2);
+      if (!p.on && p.duck !== d0) { var lift = (p.duck - d0) * (PM.hS - PM.hD); p.y += lift; if (lift < 0) p.y = Math.max(p.y, ground(p.x, p.z, p.y - lift + 0.01)); }
+      h = PM.hS + (PM.hD - PM.hS) * p.duck;
+      // jump (one per press, as in the game)
+      if (keys.space && !p.jh && p.on) { p.vy = PM.jump; p.on = false; }
+      p.jh = !!keys.space;
+      // friction, then acceleration towards the keys
+      var sp = Math.hypot(p.vx, p.vz);
+      if (p.on && sp > 0) { var drop = Math.max(sp, PM.stop) * PM.fric * dt, ns = Math.max(sp - drop, 0) / sp; p.vx *= ns; p.vz *= ns; }
+      var fx = -Math.sin(cam.th), fz = -Math.cos(cam.th), wx = fx * kf + Math.cos(cam.th) * kr, wz = fz * kf - Math.sin(cam.th) * kr, wl = Math.hypot(wx, wz);
+      if (wl) {
+        wx /= wl; wz /= wl;
+        var ws = p.duck > 0.5 ? PM.duck : keys.shift ? PM.walk : PM.run, cap = p.on ? ws : PM.airCap, a = p.on ? PM.acc : PM.air;
+        var add = Math.min(ws, cap) - (p.vx * wx + p.vz * wz);
+        if (add > 0) { var as = Math.min(a * ws * dt, add); p.vx += as * wx; p.vz += as * wz; }
+      }
+      // move, sliding along whatever is in the way; on the ground small steps are climbed
+      var lo = p.y + (p.on ? PM.step : 0.02), hi = p.y + h, nx = p.x + p.vx * dt, nz = p.z + p.vz * dt;
+      var lim = Math.max(size * 2, 10), free = function (x, z) { return Math.hypot(x, z) < lim && !solid(x, z, lo, hi); };
+      if (free(nx, nz)) { p.x = nx; p.z = nz; }
+      else if (free(nx, p.z)) { p.x = nx; p.vz = 0; }
+      else if (free(p.x, nz)) { p.z = nz; p.vx = 0; }
+      else { p.vx = 0; p.vz = 0; }
+      // up and down
+      if (p.on) {
+        var g = ground(p.x, p.z, p.y + PM.step + 0.001);
+        if (g >= p.y - PM.step) { if (g > p.y) p.eo -= g - p.y; p.y = g; } else p.on = false;
+      }
+      if (!p.on) {
+        p.vy -= PM.grav * dt;
+        var ny = p.y + p.vy * dt;
+        if (p.vy > 0 && solid(p.x, p.z, p.y + h + 0.01, ny + h + 0.02)) { p.vy = 0; ny = p.y; }
+        var g2 = ground(p.x, p.z, p.y + 0.03);
+        if (ny <= g2) { p.land = Math.min(1, -p.vy / 6); p.y = g2; p.vy = 0; p.on = true; } else p.y = ny;
+      }
+      p.eo *= Math.exp(-dt * 12); if (Math.abs(p.eo) < 0.001) p.eo = 0;
+      // the hand: bob while walking, lag behind the mouse, dip on landing, poke on click
+      var hs = Math.hypot(p.vx, p.vz);
+      if (p.on) p.bob += dt * hs / PM.run * (2 * Math.PI / 0.8);
+      p.hx += (-p.sx * 0.00012 - p.hx) * Math.min(1, dt * 10); p.hy += (p.sy * 0.0001 - p.hy) * Math.min(1, dt * 10); p.sx = 0; p.sy = 0;
+      p.land *= Math.exp(-dt * 7); p.poke = Math.max(0, p.poke - dt / 0.28);
+      p.amp = (p.amp || 0) + ((p.on ? Math.min(1, hs / PM.run) : 0) - (p.amp || 0)) * Math.min(1, dt * 8);
+      walkCam();
+    }
+    function drawHand(w, h) {
+      if (!hand) {
+        var m = handMesh(), prog = compile(gl, HVS, HFS), vao = gl.createVertexArray(); gl.bindVertexArray(vao);
+        [m.p, m.n, m.c].forEach(function (arr, i) { var b = gl.createBuffer(); gl.bindBuffer(gl.ARRAY_BUFFER, b); gl.bufferData(gl.ARRAY_BUFFER, arr, gl.STATIC_DRAW); gl.enableVertexAttribArray(i); gl.vertexAttribPointer(i, 3, gl.FLOAT, false, 0, 0); });
+        gl.bindVertexArray(null); hand = { prog: prog, vao: vao, count: m.count };
+      }
+      var p = pl, bx = Math.sin(p.bob) * 0.006 * p.amp, by = -Math.abs(Math.cos(p.bob)) * 0.005 * p.amp, k = 1 - p.poke, poke = p.poke > 0 ? Math.sin(Math.PI * k) * 0.055 : 0;
+      var air = p.on ? 0 : Math.max(-0.012, Math.min(0.012, -p.vy * 0.003));
+      var M = mul(trans(0.175 + bx + p.hx, -0.118 + by + p.hy - p.land * 0.02 + air - p.duck * 0.006, -0.37 - poke), mul(rotY(0.24 - poke * 0.3), mul(rotX(0.1 + poke * 0.3), rotZ(0.42))));
+      gl.clear(gl.DEPTH_BUFFER_BIT); gl.enable(gl.DEPTH_TEST); gl.disable(gl.BLEND); gl.disable(gl.CULL_FACE);
+      gl.useProgram(hand.prog.p); gl.uniformMatrix4fv(hand.prog.u.uP, false, persp(0.95, w / h, 0.01, 3)); gl.uniformMatrix4fv(hand.prog.u.uM, false, M); gl.uniform3fv(hand.prog.u.uL, norm([-0.35, 0.8, 0.45]));
+      gl.bindVertexArray(hand.vao); gl.drawArrays(gl.TRIANGLES, 0, hand.count); gl.bindVertexArray(null);
+    }
     function setMode(m) {
+      var was = mode;
       mode = m; keys = {}; vel = [0, 0, 0];
-      if (m !== "fly" && locked()) document.exitPointerLock();
+      if (m !== "fly" && m !== "walk" && locked()) document.exitPointerLock();
+      if (m === "walk") { anim = null; walkStart(); stopSpin(); return; }
+      if (was === "walk") { pl = null; cam.d = START.d; cam.t = START.t.slice(); cam.ph = START.ph; anim = null; if (m !== "fly") { stopSpin(); dirty = true; return; } }
       if (m === "fly") { var e = eye(), d = Math.max(size * 0.25, Math.min(cam.d, size * 0.6)), c = Math.cos(cam.ph); cam.d = d; cam.t = [e[0] - d * c * Math.sin(cam.th), e[1] - d * Math.sin(cam.ph), e[2] - d * c * Math.cos(cam.th)]; }
       else cam.ph = Math.max(-0.05, Math.min(1.45, cam.ph));
       stopSpin(); dirty = true;
@@ -347,6 +534,10 @@
     if (!window.WebGL2RenderingContext) { go.hidden = true; return; }
     go.addEventListener("click", function () { open(fig); });
   });
+  // phones and tablets (touch only): turn and move, no flying. With a mouse and keyboard there is also a hidden walking mode:
+  // type "play" (or the Konami code) in the 3D view.
+  var TOUCH = !!(window.matchMedia && matchMedia("(pointer: coarse)").matches && !matchMedia("(any-pointer: fine)").matches);
+  var WALK = false, SECRET = ["play", "arrowuparrowuparrowdownarrowdownarrowleftarrowrightarrowleftarrowrightba"];
   function button(cls, label, icon) { var b = document.createElement("button"); b.type = "button"; b.className = "m3d__btn " + cls; b.setAttribute("aria-label", label); b.title = label; b.innerHTML = icon; return b; }
   function open(fig) {
     if (fig.classList.contains("is-3d")) return;
@@ -357,7 +548,7 @@
     var fill = bar.querySelector(".m3d__fill");
     fetchModel(fig.getAttribute("data-src"), function (k) { fill.style.width = Math.round(k * 100) + "%"; }).then(function (model) {
       var canvas = document.createElement("canvas"); canvas.className = "m3d__canvas"; canvas.tabIndex = 0;
-      canvas.setAttribute("role", "img"); canvas.setAttribute("aria-label", (fig.getAttribute("data-label") || "") + ". " + L.hOrbit + " " + L.hFly);
+      canvas.setAttribute("role", "img"); canvas.setAttribute("aria-label", (fig.getAttribute("data-label") || "") + ". " + L.hOrbit + (TOUCH ? "" : " " + L.hFly));
       stage.appendChild(canvas);
       var tools = document.createElement("div"); tools.className = "m3d__tools";
       var bSpin = button("m3d__spin is-on", L.spin, ICON.spin), bReset = button("", L.reset, ICON.reset), bFull = button("", L.full, ICON.full), bClose = button("", L.close, ICON.close);
@@ -368,10 +559,18 @@
       // camera modes: turn, move, fly
       var modes = document.createElement("div"); modes.className = "m3d__modes"; modes.setAttribute("role", "group"); modes.setAttribute("aria-label", L.modes);
       var MB = {};
-      ["orbit", "pan", "fly"].forEach(function (m) {
+      function addMode(m) {
         var b = button("m3d__mode" + (m === "orbit" ? " is-on" : ""), L[m], ICON[m]); b.setAttribute("aria-pressed", m === "orbit" ? "true" : "false");
         b.addEventListener("click", function () { pick(m); canvas.focus({ preventScroll: true }); });
         modes.appendChild(b); MB[m] = b;
+      }
+      (TOUCH ? ["orbit", "pan"] : ["orbit", "pan", "fly"]).concat(WALK ? ["walk"] : []).forEach(addMode);
+      // the hidden walking mode
+      var typed = "";
+      if (!TOUCH && canvas.requestPointerLock) canvas.addEventListener("keydown", function (e) {
+        typed = (typed + (e.key || "").toLowerCase()).slice(-80);
+        if (!SECRET.some(function (w) { return typed.slice(-w.length) === w; })) return;
+        typed = ""; WALK = true; if (!MB.walk) addMode("walk"); pick("walk");
       });
       tools.insertBefore(modes, tools.firstChild);
       var cross = document.createElement("span"); cross.className = "m3d__cross"; cross.setAttribute("aria-hidden", "true");
@@ -387,7 +586,7 @@
       });
       function pick(m) {
         Object.keys(MB).forEach(function (k) { MB[k].classList.toggle("is-on", k === m); MB[k].setAttribute("aria-pressed", k === m ? "true" : "false"); });
-        pad.hidden = m !== "fly"; stage.classList.toggle("is-fly", m === "fly");
+        pad.hidden = m !== "fly" || TOUCH; stage.classList.toggle("is-fly", m === "fly" || m === "walk"); stage.classList.toggle("is-walk", m === "walk");
         hint.textContent = L["h" + m.charAt(0).toUpperCase() + m.slice(1)]; hint.classList.remove("is-gone");
         clearTimeout(pick.t); pick.t = setTimeout(function () { hint.classList.add("is-gone"); }, 7000);
         if (v) { v.mode(m); bSpin.classList.remove("is-on"); bSpin.setAttribute("aria-pressed", "false"); }
