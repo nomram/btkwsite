@@ -1,6 +1,6 @@
 {
   "path": "/produkter/marini/vajersågar/mini-fil-super-electronic",
-  "updated": "2026-10-29",
+  "updated": "2026-11-26",
   "template": "product",
   "order": 1,
   "published": true,
@@ -23,26 +23,12 @@
           "gen": true
         },
         {
-          "type": "image",
+          "type": "model3d",
+          "src": "/assets/3d/marini-mini-fil-electronic.bkm",
+          "poster": "/assets/img/marini-saw-mini-fil-super-electronic.webp",
           "alt": "Marini Mini Fil Super Electronic",
-          "file": "/assets/img/marini-saw-mini-fil-super-electronic.webp",
-          "width": 542,
-          "height": 451,
-          "src": "/assets/img/marini-saw-mini-fil-super-electronic.webp",
-          "gen": true
-        },
-        {
-          "type": "carousel",
-          "autoplay": false,
-          "interval": 6,
-          "items": [
-            {
-              "src": "/assets/img/marini-quarry-granite-photo.webp",
-              "alt": "Marini Mini Fil Super Electronic (1/1)",
-              "width": 1800,
-              "height": 1102
-            }
-          ],
+          "label": "Marini Mini Fil Super Electronic, 3D-modell",
+          "size": "0,2 MB",
           "gen": true
         },
         {
@@ -67,6 +53,20 @@
         {
           "type": "text",
           "html": "<a href=\"/kontakta-oss\">Kontakta oss</a> för pris, leveranstid eller hjälp att välja rätt modell.",
+          "gen": true
+        },
+        {
+          "type": "carousel",
+          "autoplay": false,
+          "interval": 6,
+          "items": [
+            {
+              "src": "/assets/img/marini-quarry-granite-photo.webp",
+              "alt": "Marini Mini Fil Super Electronic (1/1)",
+              "width": 1800,
+              "height": 1102
+            }
+          ],
           "gen": true
         },
         {
@@ -228,26 +228,12 @@
           "gen": true
         },
         {
-          "type": "image",
+          "type": "model3d",
+          "src": "/assets/3d/marini-mini-fil-electronic.bkm",
+          "poster": "/assets/img/marini-saw-mini-fil-super-electronic.webp",
           "alt": "Marini Mini Fil Super Electronic",
-          "file": "/assets/img/marini-saw-mini-fil-super-electronic.webp",
-          "width": 542,
-          "height": 451,
-          "src": "/assets/img/marini-saw-mini-fil-super-electronic.webp",
-          "gen": true
-        },
-        {
-          "type": "carousel",
-          "autoplay": false,
-          "interval": 6,
-          "items": [
-            {
-              "src": "/assets/img/marini-quarry-granite-photo.webp",
-              "alt": "Marini Mini Fil Super Electronic (1/1)",
-              "width": 1800,
-              "height": 1102
-            }
-          ],
+          "label": "Marini Mini Fil Super Electronic, 3D model",
+          "size": "0.2 MB",
           "gen": true
         },
         {
@@ -272,6 +258,20 @@
         {
           "type": "text",
           "html": "<a href=\"/kontakta-oss\">Contact us</a> for price, delivery time or help choosing the right model.",
+          "gen": true
+        },
+        {
+          "type": "carousel",
+          "autoplay": false,
+          "interval": 6,
+          "items": [
+            {
+              "src": "/assets/img/marini-quarry-granite-photo.webp",
+              "alt": "Marini Mini Fil Super Electronic (1/1)",
+              "width": 1800,
+              "height": 1102
+            }
+          ],
           "gen": true
         },
         {
@@ -433,26 +433,12 @@
           "gen": true
         },
         {
-          "type": "image",
+          "type": "model3d",
+          "src": "/assets/3d/marini-mini-fil-electronic.bkm",
+          "poster": "/assets/img/marini-saw-mini-fil-super-electronic.webp",
           "alt": "Marini Mini Fil Super Electronic",
-          "file": "/assets/img/marini-saw-mini-fil-super-electronic.webp",
-          "width": 542,
-          "height": 451,
-          "src": "/assets/img/marini-saw-mini-fil-super-electronic.webp",
-          "gen": true
-        },
-        {
-          "type": "carousel",
-          "autoplay": false,
-          "interval": 6,
-          "items": [
-            {
-              "src": "/assets/img/marini-quarry-granite-photo.webp",
-              "alt": "Marini Mini Fil Super Electronic (1/1)",
-              "width": 1800,
-              "height": 1102
-            }
-          ],
+          "label": "Marini Mini Fil Super Electronic, modelo 3D",
+          "size": "0,2 MB",
           "gen": true
         },
         {
@@ -477,6 +463,20 @@
         {
           "type": "text",
           "html": "<a href=\"/kontakta-oss\">Contáctenos</a> para precio, plazo de entrega o ayuda para elegir el modelo adecuado.",
+          "gen": true
+        },
+        {
+          "type": "carousel",
+          "autoplay": false,
+          "interval": 6,
+          "items": [
+            {
+              "src": "/assets/img/marini-quarry-granite-photo.webp",
+              "alt": "Marini Mini Fil Super Electronic (1/1)",
+              "width": 1800,
+              "height": 1102
+            }
+          ],
           "gen": true
         },
         {
@@ -638,26 +638,12 @@
           "gen": true
         },
         {
-          "type": "image",
+          "type": "model3d",
+          "src": "/assets/3d/marini-mini-fil-electronic.bkm",
+          "poster": "/assets/img/marini-saw-mini-fil-super-electronic.webp",
           "alt": "Marini Mini Fil Super Electronic",
-          "file": "/assets/img/marini-saw-mini-fil-super-electronic.webp",
-          "width": 542,
-          "height": 451,
-          "src": "/assets/img/marini-saw-mini-fil-super-electronic.webp",
-          "gen": true
-        },
-        {
-          "type": "carousel",
-          "autoplay": false,
-          "interval": 6,
-          "items": [
-            {
-              "src": "/assets/img/marini-quarry-granite-photo.webp",
-              "alt": "Marini Mini Fil Super Electronic (1/1)",
-              "width": 1800,
-              "height": 1102
-            }
-          ],
+          "label": "Marini Mini Fil Super Electronic, 3D-modell",
+          "size": "0,2 MB",
           "gen": true
         },
         {
@@ -682,6 +668,20 @@
         {
           "type": "text",
           "html": "<a href=\"/kontakta-oss\">Kontakt oss</a> for pris, leveringstid eller hjelp til å velge riktig modell.",
+          "gen": true
+        },
+        {
+          "type": "carousel",
+          "autoplay": false,
+          "interval": 6,
+          "items": [
+            {
+              "src": "/assets/img/marini-quarry-granite-photo.webp",
+              "alt": "Marini Mini Fil Super Electronic (1/1)",
+              "width": 1800,
+              "height": 1102
+            }
+          ],
           "gen": true
         },
         {

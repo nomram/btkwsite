@@ -1,6 +1,6 @@
 {
   "path": "/produkter/marini/vajersågar/gran-fil-super-electronic-sp",
-  "updated": "2026-10-29",
+  "updated": "2026-11-26",
   "template": "product",
   "order": 4,
   "published": true,
@@ -23,26 +23,12 @@
           "gen": true
         },
         {
-          "type": "image",
+          "type": "model3d",
+          "src": "/assets/3d/marini-gran-fil-electronic.bkm",
+          "poster": "/assets/img/marini-saw-gran-fil-super-electronic-sp.webp",
           "alt": "Marini Gran Fil Super Electronic SP",
-          "file": "/assets/img/marini-saw-gran-fil-super-electronic-sp.webp",
-          "width": 574,
-          "height": 455,
-          "src": "/assets/img/marini-saw-gran-fil-super-electronic-sp.webp",
-          "gen": true
-        },
-        {
-          "type": "carousel",
-          "autoplay": false,
-          "interval": 6,
-          "items": [
-            {
-              "src": "/assets/img/marini-quarry-granite-photo.webp",
-              "alt": "Marini Gran Fil Super Electronic SP (1/1)",
-              "width": 1800,
-              "height": 1102
-            }
-          ],
+          "label": "Marini Gran Fil Super Electronic SP, 3D-modell",
+          "size": "0,4 MB",
           "gen": true
         },
         {
@@ -68,6 +54,20 @@
         {
           "type": "text",
           "html": "<a href=\"/kontakta-oss\">Kontakta oss</a> för pris, leveranstid eller hjälp att välja rätt modell.",
+          "gen": true
+        },
+        {
+          "type": "carousel",
+          "autoplay": false,
+          "interval": 6,
+          "items": [
+            {
+              "src": "/assets/img/marini-quarry-granite-photo.webp",
+              "alt": "Marini Gran Fil Super Electronic SP (1/1)",
+              "width": 1800,
+              "height": 1102
+            }
+          ],
           "gen": true
         },
         {
@@ -200,26 +200,12 @@
           "gen": true
         },
         {
-          "type": "image",
+          "type": "model3d",
+          "src": "/assets/3d/marini-gran-fil-electronic.bkm",
+          "poster": "/assets/img/marini-saw-gran-fil-super-electronic-sp.webp",
           "alt": "Marini Gran Fil Super Electronic SP",
-          "file": "/assets/img/marini-saw-gran-fil-super-electronic-sp.webp",
-          "width": 574,
-          "height": 455,
-          "src": "/assets/img/marini-saw-gran-fil-super-electronic-sp.webp",
-          "gen": true
-        },
-        {
-          "type": "carousel",
-          "autoplay": false,
-          "interval": 6,
-          "items": [
-            {
-              "src": "/assets/img/marini-quarry-granite-photo.webp",
-              "alt": "Marini Gran Fil Super Electronic SP (1/1)",
-              "width": 1800,
-              "height": 1102
-            }
-          ],
+          "label": "Marini Gran Fil Super Electronic SP, 3D model",
+          "size": "0.4 MB",
           "gen": true
         },
         {
@@ -245,6 +231,20 @@
         {
           "type": "text",
           "html": "<a href=\"/kontakta-oss\">Contact us</a> for price, delivery time or help choosing the right model.",
+          "gen": true
+        },
+        {
+          "type": "carousel",
+          "autoplay": false,
+          "interval": 6,
+          "items": [
+            {
+              "src": "/assets/img/marini-quarry-granite-photo.webp",
+              "alt": "Marini Gran Fil Super Electronic SP (1/1)",
+              "width": 1800,
+              "height": 1102
+            }
+          ],
           "gen": true
         },
         {
@@ -377,26 +377,12 @@
           "gen": true
         },
         {
-          "type": "image",
+          "type": "model3d",
+          "src": "/assets/3d/marini-gran-fil-electronic.bkm",
+          "poster": "/assets/img/marini-saw-gran-fil-super-electronic-sp.webp",
           "alt": "Marini Gran Fil Super Electronic SP",
-          "file": "/assets/img/marini-saw-gran-fil-super-electronic-sp.webp",
-          "width": 574,
-          "height": 455,
-          "src": "/assets/img/marini-saw-gran-fil-super-electronic-sp.webp",
-          "gen": true
-        },
-        {
-          "type": "carousel",
-          "autoplay": false,
-          "interval": 6,
-          "items": [
-            {
-              "src": "/assets/img/marini-quarry-granite-photo.webp",
-              "alt": "Marini Gran Fil Super Electronic SP (1/1)",
-              "width": 1800,
-              "height": 1102
-            }
-          ],
+          "label": "Marini Gran Fil Super Electronic SP, modelo 3D",
+          "size": "0,4 MB",
           "gen": true
         },
         {
@@ -422,6 +408,20 @@
         {
           "type": "text",
           "html": "<a href=\"/kontakta-oss\">Contáctenos</a> para precio, plazo de entrega o ayuda para elegir el modelo adecuado.",
+          "gen": true
+        },
+        {
+          "type": "carousel",
+          "autoplay": false,
+          "interval": 6,
+          "items": [
+            {
+              "src": "/assets/img/marini-quarry-granite-photo.webp",
+              "alt": "Marini Gran Fil Super Electronic SP (1/1)",
+              "width": 1800,
+              "height": 1102
+            }
+          ],
           "gen": true
         },
         {
@@ -554,26 +554,12 @@
           "gen": true
         },
         {
-          "type": "image",
+          "type": "model3d",
+          "src": "/assets/3d/marini-gran-fil-electronic.bkm",
+          "poster": "/assets/img/marini-saw-gran-fil-super-electronic-sp.webp",
           "alt": "Marini Gran Fil Super Electronic SP",
-          "file": "/assets/img/marini-saw-gran-fil-super-electronic-sp.webp",
-          "width": 574,
-          "height": 455,
-          "src": "/assets/img/marini-saw-gran-fil-super-electronic-sp.webp",
-          "gen": true
-        },
-        {
-          "type": "carousel",
-          "autoplay": false,
-          "interval": 6,
-          "items": [
-            {
-              "src": "/assets/img/marini-quarry-granite-photo.webp",
-              "alt": "Marini Gran Fil Super Electronic SP (1/1)",
-              "width": 1800,
-              "height": 1102
-            }
-          ],
+          "label": "Marini Gran Fil Super Electronic SP, 3D-modell",
+          "size": "0,4 MB",
           "gen": true
         },
         {
@@ -599,6 +585,20 @@
         {
           "type": "text",
           "html": "<a href=\"/kontakta-oss\">Kontakt oss</a> for pris, leveringstid eller hjelp til å velge riktig modell.",
+          "gen": true
+        },
+        {
+          "type": "carousel",
+          "autoplay": false,
+          "interval": 6,
+          "items": [
+            {
+              "src": "/assets/img/marini-quarry-granite-photo.webp",
+              "alt": "Marini Gran Fil Super Electronic SP (1/1)",
+              "width": 1800,
+              "height": 1102
+            }
+          ],
           "gen": true
         },
         {

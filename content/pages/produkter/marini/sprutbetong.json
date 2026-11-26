@@ -1,6 +1,6 @@
 {
   "path": "/produkter/marini/sprutbetong",
-  "updated": "2026-10-10",
+  "updated": "2026-11-26",
   "template": "product",
   "order": 7,
   "published": true,
@@ -22,11 +22,13 @@
           "src": "/assets/img/logo-marini.webp"
         },
         {
-          "type": "image",
+          "type": "model3d",
+          "src": "/assets/3d/marini-mr-sb.bkm",
+          "poster": "/assets/img/marini-sprutbetong-2.webp",
           "alt": "MR-SB / Sprutbetong: bild 2",
-          "width": 1920,
-          "height": 1350,
-          "src": "/assets/img/marini-sprutbetong-2.webp"
+          "label": "Marini MR-SB, 3D-modell",
+          "size": "0,9 MB",
+          "gen": true
         },
         {
           "type": "text",
@@ -114,11 +116,13 @@
           "src": "/assets/img/logo-marini.webp"
         },
         {
-          "type": "image",
+          "type": "model3d",
+          "src": "/assets/3d/marini-mr-sb.bkm",
+          "poster": "/assets/img/marini-sprutbetong-2.webp",
           "alt": "MR-SB / Shotcrete: image 2",
-          "width": 1920,
-          "height": 1350,
-          "src": "/assets/img/marini-sprutbetong-2.webp"
+          "label": "Marini MR-SB, 3D model",
+          "size": "0.9 MB",
+          "gen": true
         },
         {
           "type": "text",
@@ -207,11 +211,13 @@
           "src": "/assets/img/logo-marini.webp"
         },
         {
-          "type": "image",
+          "type": "model3d",
+          "src": "/assets/3d/marini-mr-sb.bkm",
+          "poster": "/assets/img/marini-sprutbetong-2.webp",
           "alt": "MR-SB / Hormigón proyectado, imagen 2",
-          "width": 1920,
-          "height": 1350,
-          "src": "/assets/img/marini-sprutbetong-2.webp"
+          "label": "Marini MR-SB, modelo 3D",
+          "size": "0,9 MB",
+          "gen": true
         },
         {
           "type": "text",
@@ -300,11 +306,13 @@
           "src": "/assets/img/logo-marini.webp"
         },
         {
-          "type": "image",
+          "type": "model3d",
+          "src": "/assets/3d/marini-mr-sb.bkm",
+          "poster": "/assets/img/marini-sprutbetong-2.webp",
           "alt": "MR-SB / Sprøytebetong: bilde 2",
-          "width": 1920,
-          "height": 1350,
-          "src": "/assets/img/marini-sprutbetong-2.webp"
+          "label": "Marini MR-SB, 3D-modell",
+          "size": "0,9 MB",
+          "gen": true
         },
         {
           "type": "text",

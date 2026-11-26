@@ -1,6 +1,6 @@
 {
   "path": "/produkter/marini/driller",
-  "updated": "2026-10-29",
+  "updated": "2026-11-26",
   "template": "product",
   "order": 10,
   "published": true,
@@ -23,24 +23,20 @@
           "gen": true
         },
         {
-          "type": "image",
+          "type": "model3d",
+          "src": "/assets/3d/marini-driller.bkm",
+          "poster": "/assets/img/marini-drill-driller.webp",
           "alt": "Marini Driller",
-          "file": "/assets/img/marini-drill-driller.webp",
-          "width": 307,
-          "height": 454,
-          "src": "/assets/img/marini-drill-driller.webp",
-          "gen": true
-        },
-        {
-          "type": "carousel",
-          "autoplay": false,
-          "interval": 6,
-          "items": [
+          "label": "Marini Driller, 3D-modell",
+          "size": "1,6 MB",
+          "variants": [
             {
-              "src": "/assets/img/marini-drill-driller-id.webp",
-              "alt": "Marini Driller ID (1/1)",
-              "width": 597,
-              "height": 332
+              "name": "Driller",
+              "src": "/assets/3d/marini-driller.bkm"
+            },
+            {
+              "name": "Driller ID",
+              "src": "/assets/3d/marini-driller-id.bkm"
             }
           ],
           "gen": true
@@ -78,6 +74,20 @@
         {
           "type": "text",
           "html": "<a href=\"/kontakta-oss\">Kontakta oss</a> för pris, leveranstid eller hjälp att välja rätt modell.",
+          "gen": true
+        },
+        {
+          "type": "carousel",
+          "autoplay": false,
+          "interval": 6,
+          "items": [
+            {
+              "src": "/assets/img/marini-drill-driller-id.webp",
+              "alt": "Marini Driller ID (1/1)",
+              "width": 597,
+              "height": 332
+            }
+          ],
           "gen": true
         },
         {
@@ -240,24 +250,20 @@
           "gen": true
         },
         {
-          "type": "image",
+          "type": "model3d",
+          "src": "/assets/3d/marini-driller.bkm",
+          "poster": "/assets/img/marini-drill-driller.webp",
           "alt": "Marini Driller",
-          "file": "/assets/img/marini-drill-driller.webp",
-          "width": 307,
-          "height": 454,
-          "src": "/assets/img/marini-drill-driller.webp",
-          "gen": true
-        },
-        {
-          "type": "carousel",
-          "autoplay": false,
-          "interval": 6,
-          "items": [
+          "label": "Marini Driller, 3D model",
+          "size": "1.6 MB",
+          "variants": [
             {
-              "src": "/assets/img/marini-drill-driller-id.webp",
-              "alt": "Marini Driller ID (1/1)",
-              "width": 597,
-              "height": 332
+              "name": "Driller",
+              "src": "/assets/3d/marini-driller.bkm"
+            },
+            {
+              "name": "Driller ID",
+              "src": "/assets/3d/marini-driller-id.bkm"
             }
           ],
           "gen": true
@@ -295,6 +301,20 @@
         {
           "type": "text",
           "html": "<a href=\"/kontakta-oss\">Contact us</a> for price, delivery time or help choosing the right model.",
+          "gen": true
+        },
+        {
+          "type": "carousel",
+          "autoplay": false,
+          "interval": 6,
+          "items": [
+            {
+              "src": "/assets/img/marini-drill-driller-id.webp",
+              "alt": "Marini Driller ID (1/1)",
+              "width": 597,
+              "height": 332
+            }
+          ],
           "gen": true
         },
         {
@@ -457,24 +477,20 @@
           "gen": true
         },
         {
-          "type": "image",
+          "type": "model3d",
+          "src": "/assets/3d/marini-driller.bkm",
+          "poster": "/assets/img/marini-drill-driller.webp",
           "alt": "Marini Driller",
-          "file": "/assets/img/marini-drill-driller.webp",
-          "width": 307,
-          "height": 454,
-          "src": "/assets/img/marini-drill-driller.webp",
-          "gen": true
-        },
-        {
-          "type": "carousel",
-          "autoplay": false,
-          "interval": 6,
-          "items": [
+          "label": "Marini Driller, modelo 3D",
+          "size": "1,6 MB",
+          "variants": [
             {
-              "src": "/assets/img/marini-drill-driller-id.webp",
-              "alt": "Marini Driller ID (1/1)",
-              "width": 597,
-              "height": 332
+              "name": "Driller",
+              "src": "/assets/3d/marini-driller.bkm"
+            },
+            {
+              "name": "Driller ID",
+              "src": "/assets/3d/marini-driller-id.bkm"
             }
           ],
           "gen": true
@@ -512,6 +528,20 @@
         {
           "type": "text",
           "html": "<a href=\"/kontakta-oss\">Contáctenos</a> para precio, plazo de entrega o ayuda para elegir el modelo adecuado.",
+          "gen": true
+        },
+        {
+          "type": "carousel",
+          "autoplay": false,
+          "interval": 6,
+          "items": [
+            {
+              "src": "/assets/img/marini-drill-driller-id.webp",
+              "alt": "Marini Driller ID (1/1)",
+              "width": 597,
+              "height": 332
+            }
+          ],
           "gen": true
         },
         {
@@ -674,24 +704,20 @@
           "gen": true
         },
         {
-          "type": "image",
+          "type": "model3d",
+          "src": "/assets/3d/marini-driller.bkm",
+          "poster": "/assets/img/marini-drill-driller.webp",
           "alt": "Marini Driller",
-          "file": "/assets/img/marini-drill-driller.webp",
-          "width": 307,
-          "height": 454,
-          "src": "/assets/img/marini-drill-driller.webp",
-          "gen": true
-        },
-        {
-          "type": "carousel",
-          "autoplay": false,
-          "interval": 6,
-          "items": [
+          "label": "Marini Driller, 3D-modell",
+          "size": "1,6 MB",
+          "variants": [
             {
-              "src": "/assets/img/marini-drill-driller-id.webp",
-              "alt": "Marini Driller ID (1/1)",
-              "width": 597,
-              "height": 332
+              "name": "Driller",
+              "src": "/assets/3d/marini-driller.bkm"
+            },
+            {
+              "name": "Driller ID",
+              "src": "/assets/3d/marini-driller-id.bkm"
             }
           ],
           "gen": true
@@ -729,6 +755,20 @@
         {
           "type": "text",
           "html": "<a href=\"/kontakta-oss\">Kontakt oss</a> for pris, leveringstid eller hjelp til å velge riktig modell.",
+          "gen": true
+        },
+        {
+          "type": "carousel",
+          "autoplay": false,
+          "interval": 6,
+          "items": [
+            {
+              "src": "/assets/img/marini-drill-driller-id.webp",
+              "alt": "Marini Driller ID (1/1)",
+              "width": 597,
+              "height": 332
+            }
+          ],
           "gen": true
         },
         {

@@ -1,6 +1,6 @@
 {
   "path": "/produkter/marini/vajersågar/mobil-fil",
-  "updated": "2026-10-29",
+  "updated": "2026-11-26",
   "template": "product",
   "order": 11,
   "published": true,
@@ -23,32 +23,12 @@
           "gen": true
         },
         {
-          "type": "image",
+          "type": "model3d",
+          "src": "/assets/3d/marini-mobil-fil.bkm",
+          "poster": "/assets/img/marini-saw-mobil-fil.webp",
           "alt": "Marini Mobil Fil",
-          "file": "/assets/img/marini-saw-mobil-fil.webp",
-          "width": 886,
-          "height": 721,
-          "src": "/assets/img/marini-saw-mobil-fil.webp",
-          "gen": true
-        },
-        {
-          "type": "carousel",
-          "autoplay": true,
-          "interval": 6,
-          "items": [
-            {
-              "src": "/assets/img/marini-quarry-mobile-photo.webp",
-              "alt": "Marini Mobil Fil (1/2)",
-              "width": 1800,
-              "height": 1076
-            },
-            {
-              "src": "/assets/img/marini-quarry-mobile-photo-2.webp",
-              "alt": "Marini Mobil Fil (2/2)",
-              "width": 1284,
-              "height": 647
-            }
-          ],
+          "label": "Marini Mobil Fil, 3D-modell",
+          "size": "1,3 MB",
           "gen": true
         },
         {
@@ -75,6 +55,26 @@
         {
           "type": "text",
           "html": "<a href=\"/kontakta-oss\">Kontakta oss</a> för pris, leveranstid eller hjälp att välja rätt modell.",
+          "gen": true
+        },
+        {
+          "type": "carousel",
+          "autoplay": true,
+          "interval": 6,
+          "items": [
+            {
+              "src": "/assets/img/marini-quarry-mobile-photo.webp",
+              "alt": "Marini Mobil Fil (1/2)",
+              "width": 1800,
+              "height": 1076
+            },
+            {
+              "src": "/assets/img/marini-quarry-mobile-photo-2.webp",
+              "alt": "Marini Mobil Fil (2/2)",
+              "width": 1284,
+              "height": 647
+            }
+          ],
           "gen": true
         },
         {
@@ -170,32 +170,12 @@
           "gen": true
         },
         {
-          "type": "image",
+          "type": "model3d",
+          "src": "/assets/3d/marini-mobil-fil.bkm",
+          "poster": "/assets/img/marini-saw-mobil-fil.webp",
           "alt": "Marini Mobil Fil",
-          "file": "/assets/img/marini-saw-mobil-fil.webp",
-          "width": 886,
-          "height": 721,
-          "src": "/assets/img/marini-saw-mobil-fil.webp",
-          "gen": true
-        },
-        {
-          "type": "carousel",
-          "autoplay": true,
-          "interval": 6,
-          "items": [
-            {
-              "src": "/assets/img/marini-quarry-mobile-photo.webp",
-              "alt": "Marini Mobil Fil (1/2)",
-              "width": 1800,
-              "height": 1076
-            },
-            {
-              "src": "/assets/img/marini-quarry-mobile-photo-2.webp",
-              "alt": "Marini Mobil Fil (2/2)",
-              "width": 1284,
-              "height": 647
-            }
-          ],
+          "label": "Marini Mobil Fil, 3D model",
+          "size": "1.3 MB",
           "gen": true
         },
         {
@@ -222,6 +202,26 @@
         {
           "type": "text",
           "html": "<a href=\"/kontakta-oss\">Contact us</a> for price, delivery time or help choosing the right model.",
+          "gen": true
+        },
+        {
+          "type": "carousel",
+          "autoplay": true,
+          "interval": 6,
+          "items": [
+            {
+              "src": "/assets/img/marini-quarry-mobile-photo.webp",
+              "alt": "Marini Mobil Fil (1/2)",
+              "width": 1800,
+              "height": 1076
+            },
+            {
+              "src": "/assets/img/marini-quarry-mobile-photo-2.webp",
+              "alt": "Marini Mobil Fil (2/2)",
+              "width": 1284,
+              "height": 647
+            }
+          ],
           "gen": true
         },
         {
@@ -317,32 +317,12 @@
           "gen": true
         },
         {
-          "type": "image",
+          "type": "model3d",
+          "src": "/assets/3d/marini-mobil-fil.bkm",
+          "poster": "/assets/img/marini-saw-mobil-fil.webp",
           "alt": "Marini Mobil Fil",
-          "file": "/assets/img/marini-saw-mobil-fil.webp",
-          "width": 886,
-          "height": 721,
-          "src": "/assets/img/marini-saw-mobil-fil.webp",
-          "gen": true
-        },
-        {
-          "type": "carousel",
-          "autoplay": true,
-          "interval": 6,
-          "items": [
-            {
-              "src": "/assets/img/marini-quarry-mobile-photo.webp",
-              "alt": "Marini Mobil Fil (1/2)",
-              "width": 1800,
-              "height": 1076
-            },
-            {
-              "src": "/assets/img/marini-quarry-mobile-photo-2.webp",
-              "alt": "Marini Mobil Fil (2/2)",
-              "width": 1284,
-              "height": 647
-            }
-          ],
+          "label": "Marini Mobil Fil, modelo 3D",
+          "size": "1,3 MB",
           "gen": true
         },
         {
@@ -369,6 +349,26 @@
         {
           "type": "text",
           "html": "<a href=\"/kontakta-oss\">Contáctenos</a> para precio, plazo de entrega o ayuda para elegir el modelo adecuado.",
+          "gen": true
+        },
+        {
+          "type": "carousel",
+          "autoplay": true,
+          "interval": 6,
+          "items": [
+            {
+              "src": "/assets/img/marini-quarry-mobile-photo.webp",
+              "alt": "Marini Mobil Fil (1/2)",
+              "width": 1800,
+              "height": 1076
+            },
+            {
+              "src": "/assets/img/marini-quarry-mobile-photo-2.webp",
+              "alt": "Marini Mobil Fil (2/2)",
+              "width": 1284,
+              "height": 647
+            }
+          ],
           "gen": true
         },
         {
@@ -464,32 +464,12 @@
           "gen": true
         },
         {
-          "type": "image",
+          "type": "model3d",
+          "src": "/assets/3d/marini-mobil-fil.bkm",
+          "poster": "/assets/img/marini-saw-mobil-fil.webp",
           "alt": "Marini Mobil Fil",
-          "file": "/assets/img/marini-saw-mobil-fil.webp",
-          "width": 886,
-          "height": 721,
-          "src": "/assets/img/marini-saw-mobil-fil.webp",
-          "gen": true
-        },
-        {
-          "type": "carousel",
-          "autoplay": true,
-          "interval": 6,
-          "items": [
-            {
-              "src": "/assets/img/marini-quarry-mobile-photo.webp",
-              "alt": "Marini Mobil Fil (1/2)",
-              "width": 1800,
-              "height": 1076
-            },
-            {
-              "src": "/assets/img/marini-quarry-mobile-photo-2.webp",
-              "alt": "Marini Mobil Fil (2/2)",
-              "width": 1284,
-              "height": 647
-            }
-          ],
+          "label": "Marini Mobil Fil, 3D-modell",
+          "size": "1,3 MB",
           "gen": true
         },
         {
@@ -516,6 +496,26 @@
         {
           "type": "text",
           "html": "<a href=\"/kontakta-oss\">Kontakt oss</a> for pris, leveringstid eller hjelp til å velge riktig modell.",
+          "gen": true
+        },
+        {
+          "type": "carousel",
+          "autoplay": true,
+          "interval": 6,
+          "items": [
+            {
+              "src": "/assets/img/marini-quarry-mobile-photo.webp",
+              "alt": "Marini Mobil Fil (1/2)",
+              "width": 1800,
+              "height": 1076
+            },
+            {
+              "src": "/assets/img/marini-quarry-mobile-photo-2.webp",
+              "alt": "Marini Mobil Fil (2/2)",
+              "width": 1284,
+              "height": 647
+            }
+          ],
           "gen": true
         },
         {

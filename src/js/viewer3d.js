@@ -393,6 +393,23 @@
         if (v) { v.mode(m); bSpin.classList.remove("is-on"); bSpin.setAttribute("aria-pressed", "false"); }
       }
       stage.appendChild(pad); stage.appendChild(tools); stage.appendChild(hint); stage.appendChild(cross);
+      // versions of the same machine (e.g. pneumatic and hydraulic): switch the model in place
+      var variants = []; try { variants = JSON.parse(fig.getAttribute("data-variants") || "[]"); } catch (err) { variants = []; }
+      if (variants.length > 1) {
+        var vs = document.createElement("div"); vs.className = "m3d__variants"; vs.setAttribute("role", "group");
+        variants.forEach(function (x) {
+          var b = document.createElement("button"); b.type = "button"; b.className = "m3d__variant" + (x.src === fig.getAttribute("data-src") ? " is-on" : ""); b.textContent = x.name;
+          b.setAttribute("aria-pressed", x.src === fig.getAttribute("data-src") ? "true" : "false");
+          b.addEventListener("click", function () {
+            if (x.src === fig.getAttribute("data-src")) return;
+            if (document.fullscreenElement) document.exitFullscreen();
+            if (v) v.destroy(); stage.remove(); fig.classList.remove("is-3d");
+            fig.setAttribute("data-src", x.src); fig.setAttribute("data-yaw", x.yaw || 0); open(fig);
+          });
+          vs.appendChild(b);
+        });
+        stage.appendChild(vs); stage.classList.add("has-variants");
+      }
       var v = null;
       try {
         v = Viewer(canvas, model, { yaw: +(fig.getAttribute("data-yaw") || 0), onUse: function () { hint.classList.add("is-gone"); }, onSpin: function (on) { bSpin.classList.toggle("is-on", on); bSpin.setAttribute("aria-pressed", on ? "true" : "false"); } });
