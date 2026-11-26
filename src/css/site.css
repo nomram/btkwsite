@@ -2934,3 +2934,7 @@ body::before { display: none; }
 .m3d__stage.is-walk .m3d__cross { width: 24px; height: 24px; margin: -12px 0 0 -12px; background: linear-gradient(#3ee06a, #3ee06a) 50% 0 / 2px 8px no-repeat, linear-gradient(#3ee06a, #3ee06a) 50% 100% / 2px 8px no-repeat, linear-gradient(#3ee06a, #3ee06a) 0 50% / 8px 2px no-repeat, linear-gradient(#3ee06a, #3ee06a) 100% 50% / 8px 2px no-repeat; filter: drop-shadow(0 0 1px rgba(0, 0, 0, .55)); }
 .m3d__stage.is-walk .m3d__cross::before, .m3d__stage.is-walk .m3d__cross::after { display: none; }
 .m3d__stage.is-walk .m3d__canvas { cursor: crosshair; }
+/* r46: walking minimap (round, bottom left) */
+.m3d__map { position: absolute; left: .9rem; bottom: .9rem; width: 9.5rem; height: 9.5rem; border-radius: 50%; box-shadow: 0 2px 14px rgba(35, 31, 32, .16); pointer-events: none; }
+.m3d__map[hidden] { display: none; }
+@media (max-width: 700px) { .m3d__map { width: 7rem; height: 7rem; left: .6rem; bottom: .6rem; } .m3d__stage.has-variants .m3d__map { bottom: 3.4rem; } }
