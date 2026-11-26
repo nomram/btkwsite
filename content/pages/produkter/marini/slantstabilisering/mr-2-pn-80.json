@@ -1,0 +1,367 @@
+{
+  "path": "/produkter/marini/släntstabilisering/mr-2-pn-80",
+  "updated": "2026-11-26",
+  "template": "product",
+  "order": 12,
+  "published": true,
+  "hideIn": [
+    "es",
+    "no",
+    "lt",
+    "lv",
+    "et",
+    "ru"
+  ],
+  "hero": {
+    "image": "/assets/img/marini-slantstabilisering-hero.webp"
+  },
+  "source": {
+    "url": "https://www.marinidrills.com/en/macchine-marini/mr-2-pn-80/"
+  },
+  "i18n": {
+    "sv": {
+      "title": "MR 2 PN 80",
+      "h1": "Marini MR 2 PN 80",
+      "seoTitle": "Marini MR 2 PN 80 borrigg för släntstabilisering | Betongakuten",
+      "description": "MR 2 PN 80 är en pneumatisk borrenhet ur Marinis MR-serie för släntstabilisering och mikropålning. Se den i 3D, med teknisk data och broschyr.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Marini logotyp",
+          "href": "/produkter/marini",
+          "width": 637,
+          "height": 86,
+          "src": "/assets/img/logo-marini.webp",
+          "gen": true
+        },
+        {
+          "type": "model3d",
+          "src": "/assets/3d/marini-mr-2-pn-80.bkm",
+          "poster": "/assets/img/marini-mr-mr-2-pn-80-iso.webp",
+          "alt": "Marini MR 2 PN 80",
+          "label": "Marini MR 2 PN 80, 3D-modell",
+          "size": "2,1 MB",
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "MR 2 PN 80 bygger på samma breda ram med tre vridbara stöd som MR 2 PN, men tar större pneumatiska rotationshuvuden (EP 95, EP 120 och EP 160) och ger högre vridmoment, 1 200 Nm. Stöden kan vridas 90 grader för enkel förflyttning i sidled, och matningen drivs av en pneumatisk kolvmotor.",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Drift: Pneumatisk (tryckluft)",
+            "Matningskraft: 9,5 kN",
+            "Dragkraft (indragning): 9,5 kN",
+            "Vridmoment, rotation: 1 200 Nm",
+            "Mastens slaglängd: 1 260 - 1 760 mm",
+            "Vikt: 380 - 410 kg"
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Passande utrustning",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Rotationshuvuden: EP 95, EP 120, EP 160",
+            "Borrhammare: MA 100 S 3R"
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Kontakta oss</a> för pris, leveranstid eller hjälp att välja rätt modell.",
+          "gen": true
+        },
+        {
+          "type": "carousel",
+          "autoplay": true,
+          "interval": 6,
+          "items": [
+            {
+              "src": "/assets/img/marini-mr-mr-2-pn-p1.webp",
+              "alt": "Marini MR 2 PN 80 (1/5)",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/marini-mr-mr-2-pn-p2.webp",
+              "alt": "Marini MR 2 PN 80 (2/5)",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/marini-mr-mr-2-pn-p3.webp",
+              "alt": "Marini MR 2 PN 80 (3/5)",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/marini-mr-mr-2-pn-p4.webp",
+              "alt": "Marini MR 2 PN 80 (4/5)",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/marini-mr-mr-2-pn-p5.webp",
+              "alt": "Marini MR 2 PN 80 (5/5)",
+              "width": 1400,
+              "height": 1050
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Broschyr (pneumatisk)",
+          "href": "/assets/docs/marini-slantstabilisering-mr-2-broschyr-2.pdf",
+          "gen": true
+        },
+        {
+          "type": "datasheet",
+          "title": "Teknisk data",
+          "tagline": "Marini MR 2 PN 80",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Specifikationer",
+              "rows": [
+                {
+                  "label": "Drift",
+                  "metric": "Pneumatisk (tryckluft)"
+                },
+                {
+                  "label": "Mastens slaglängd",
+                  "metric": "1 260 - 1 760 mm"
+                },
+                {
+                  "label": "Matningskraft",
+                  "metric": "9,5 kN"
+                },
+                {
+                  "label": "Dragkraft (indragning)",
+                  "metric": "9,5 kN"
+                },
+                {
+                  "label": "Vridmoment, rotation",
+                  "metric": "1 200 Nm"
+                },
+                {
+                  "label": "Varvtal, rotation",
+                  "metric": "40 - 45 rpm"
+                },
+                {
+                  "label": "Vikt",
+                  "metric": "380 - 410 kg"
+                }
+              ]
+            }
+          ],
+          "note": "",
+          "source": "Uppgifterna är hämtade ur Marinis broschyr och från marinidrills.com.",
+          "gen": true
+        },
+        {
+          "type": "related",
+          "title": "Se även",
+          "items": [
+            {
+              "href": "/produkter/marini/släntstabilisering/mr-2"
+            },
+            {
+              "href": "/produkter/marini/släntstabilisering/mr-2-pn"
+            },
+            {
+              "href": "/produkter/marini/släntstabilisering/mr-2-id-80"
+            },
+            {
+              "href": "/produkter/marini/släntstabilisering/mr-2-id-100"
+            }
+          ],
+          "gen": true
+        }
+      ]
+    },
+    "en": {
+      "title": "MR 2 PN 80",
+      "h1": "Marini MR 2 PN 80",
+      "seoTitle": "Marini MR 2 PN 80 drill rig for slope stabilisation | Betongakuten",
+      "description": "MR 2 PN 80 is a pneumatic drilling unit from Marini's MR line for slope stabilisation and micropiling. See it in 3D, with technical data and brochure.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Marini logo",
+          "href": "/produkter/marini",
+          "width": 637,
+          "height": 86,
+          "src": "/assets/img/logo-marini.webp",
+          "gen": true
+        },
+        {
+          "type": "model3d",
+          "src": "/assets/3d/marini-mr-2-pn-80.bkm",
+          "poster": "/assets/img/marini-mr-mr-2-pn-80-iso.webp",
+          "alt": "Marini MR 2 PN 80",
+          "label": "Marini MR 2 PN 80, 3D model",
+          "size": "2.1 MB",
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "MR 2 PN 80 is built on the same wide frame with three swivelling supports as the MR 2 PN, but takes larger pneumatic rotary heads (EP 95, EP 120 and EP 160) and gives more torque, 1,200 Nm. The supports turn 90 degrees for easy sideways moves, and the feed is driven by a pneumatic piston motor.",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Drive: Pneumatic (compressed air)",
+            "Feed force: 9.5 kN",
+            "Retract force: 9.5 kN",
+            "Rotary torque: 1,200 Nm",
+            "Mast stroke: 1,260 - 1,760 mm",
+            "Weight: 380 - 410 kg"
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Matching equipment",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Rotary heads: EP 95, EP 120, EP 160",
+            "Drifters: MA 100 S 3R"
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Contact us</a> for price, delivery time or help choosing the right model.",
+          "gen": true
+        },
+        {
+          "type": "carousel",
+          "autoplay": true,
+          "interval": 6,
+          "items": [
+            {
+              "src": "/assets/img/marini-mr-mr-2-pn-p1.webp",
+              "alt": "Marini MR 2 PN 80 (1/5)",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/marini-mr-mr-2-pn-p2.webp",
+              "alt": "Marini MR 2 PN 80 (2/5)",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/marini-mr-mr-2-pn-p3.webp",
+              "alt": "Marini MR 2 PN 80 (3/5)",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/marini-mr-mr-2-pn-p4.webp",
+              "alt": "Marini MR 2 PN 80 (4/5)",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/marini-mr-mr-2-pn-p5.webp",
+              "alt": "Marini MR 2 PN 80 (5/5)",
+              "width": 1400,
+              "height": 1050
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Brochure (pneumatic)",
+          "href": "/assets/docs/marini-slantstabilisering-mr-2-broschyr-2.pdf",
+          "gen": true
+        },
+        {
+          "type": "datasheet",
+          "title": "Technical data",
+          "tagline": "Marini MR 2 PN 80",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Specifications",
+              "rows": [
+                {
+                  "label": "Drive",
+                  "metric": "Pneumatic (compressed air)"
+                },
+                {
+                  "label": "Mast stroke",
+                  "metric": "1,260 - 1,760 mm"
+                },
+                {
+                  "label": "Feed force",
+                  "metric": "9.5 kN"
+                },
+                {
+                  "label": "Retract force",
+                  "metric": "9.5 kN"
+                },
+                {
+                  "label": "Rotary torque",
+                  "metric": "1,200 Nm"
+                },
+                {
+                  "label": "Rotary speed",
+                  "metric": "40 - 45 rpm"
+                },
+                {
+                  "label": "Weight",
+                  "metric": "380 - 410 kg"
+                }
+              ]
+            }
+          ],
+          "note": "",
+          "source": "The figures come from Marini's brochure and marinidrills.com.",
+          "gen": true
+        },
+        {
+          "type": "related",
+          "title": "See also",
+          "items": [
+            {
+              "href": "/produkter/marini/släntstabilisering/mr-2"
+            },
+            {
+              "href": "/produkter/marini/släntstabilisering/mr-2-pn"
+            },
+            {
+              "href": "/produkter/marini/släntstabilisering/mr-2-id-80"
+            },
+            {
+              "href": "/produkter/marini/släntstabilisering/mr-2-id-100"
+            }
+          ],
+          "gen": true
+        }
+      ]
+    }
+  }
+}

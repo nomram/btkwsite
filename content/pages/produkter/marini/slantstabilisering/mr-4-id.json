@@ -1,0 +1,325 @@
+{
+  "path": "/produkter/marini/släntstabilisering/mr-4-id",
+  "updated": "2026-11-26",
+  "template": "product",
+  "order": 17,
+  "published": true,
+  "hideIn": [
+    "es",
+    "no",
+    "lt",
+    "lv",
+    "et",
+    "ru"
+  ],
+  "hero": {
+    "image": "/assets/img/marini-slantstabilisering-hero.webp"
+  },
+  "source": {
+    "url": "https://www.marinidrills.com/en/macchine-marini/mr-4-id/"
+  },
+  "i18n": {
+    "sv": {
+      "title": "MR 4 ID",
+      "h1": "Marini MR 4 ID",
+      "seoTitle": "Marini MR 4 ID borrigg för släntstabilisering | Betongakuten",
+      "description": "MR 4 ID är en hydraulisk borrenhet ur Marinis MR-serie för släntstabilisering och mikropålning. Se den i 3D, med teknisk data och broschyr.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Marini logotyp",
+          "href": "/produkter/marini",
+          "width": 637,
+          "height": 86,
+          "src": "/assets/img/logo-marini.webp",
+          "gen": true
+        },
+        {
+          "type": "model3d",
+          "src": "/assets/3d/marini-mr-4-id.bkm",
+          "poster": "/assets/img/marini-mr-mr-4-id-iso.webp",
+          "alt": "Marini MR 4 ID",
+          "label": "Marini MR 4 ID, 3D-modell",
+          "size": "1,0 MB",
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "MR 4 ID är den tyngsta riggen i MR-serien, byggd på en kraftig med för arbete i branta slänter. Den har 25 kN dragkraft och 5 000 Nm vridmoment, och tar hydrauliska rotationshuvuden för sänkhammare upp till 6 tum eller en hydraulisk borrhammare. Matningen sker med en inbyggd hydraulcylinder.",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Drift: Hydraulisk",
+            "Matningskraft: 15,0 kN",
+            "Dragkraft (indragning): 25,0 kN",
+            "Vridmoment, rotation: 5 000 Nm",
+            "Mastens slaglängd: 1 260 - 1 760 mm",
+            "Vikt: 850 - 1 100 kg"
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Passande utrustning",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Rotationshuvuden: ID 500",
+            "Borrhammare: MA 100 ID",
+            "Hydraulaggregat: 40-E, 45-D"
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Kontakta oss</a> för pris, leveranstid eller hjälp att välja rätt modell.",
+          "gen": true
+        },
+        {
+          "type": "image",
+          "src": "/assets/img/marini-mr-mr-4-id-p1.webp",
+          "alt": "Marini MR 4 ID",
+          "width": 1400,
+          "height": 1050,
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Kort broschyr (ENG)",
+          "href": "/assets/docs/marini-slantstabilisering-las-mer.pdf",
+          "gen": true
+        },
+        {
+          "type": "datasheet",
+          "title": "Teknisk data",
+          "tagline": "Marini MR 4 ID",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Specifikationer",
+              "rows": [
+                {
+                  "label": "Drift",
+                  "metric": "Hydraulisk"
+                },
+                {
+                  "label": "Mastens slaglängd",
+                  "metric": "1 260 - 1 760 mm"
+                },
+                {
+                  "label": "Matningskraft",
+                  "metric": "15,0 kN"
+                },
+                {
+                  "label": "Dragkraft (indragning)",
+                  "metric": "25,0 kN"
+                },
+                {
+                  "label": "Vridmoment, rotation",
+                  "metric": "5 000 Nm"
+                },
+                {
+                  "label": "Varvtal, rotation",
+                  "metric": "40 - 80 rpm"
+                },
+                {
+                  "label": "Klämområde",
+                  "metric": "25 - 188 mm"
+                },
+                {
+                  "label": "Största genomgång",
+                  "metric": "115 - 188 mm"
+                },
+                {
+                  "label": "Vikt",
+                  "metric": "850 - 1 100 kg"
+                },
+                {
+                  "label": "Hydraulaggregat",
+                  "metric": "40-E, 45-D"
+                },
+                {
+                  "label": "Aggregatets effekt",
+                  "metric": "15 / 17 / 22 kW"
+                }
+              ]
+            }
+          ],
+          "note": "",
+          "source": "Uppgifterna är hämtade ur Marinis broschyr och från marinidrills.com.",
+          "gen": true
+        },
+        {
+          "type": "related",
+          "title": "Se även",
+          "items": [
+            {
+              "href": "/produkter/marini/släntstabilisering",
+              "mutual": false
+            }
+          ],
+          "gen": true
+        }
+      ]
+    },
+    "en": {
+      "title": "MR 4 ID",
+      "h1": "Marini MR 4 ID",
+      "seoTitle": "Marini MR 4 ID drill rig for slope stabilisation | Betongakuten",
+      "description": "MR 4 ID is a hydraulic drilling unit from Marini's MR line for slope stabilisation and micropiling. See it in 3D, with technical data and brochure.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Marini logo",
+          "href": "/produkter/marini",
+          "width": 637,
+          "height": 86,
+          "src": "/assets/img/logo-marini.webp",
+          "gen": true
+        },
+        {
+          "type": "model3d",
+          "src": "/assets/3d/marini-mr-4-id.bkm",
+          "poster": "/assets/img/marini-mr-mr-4-id-iso.webp",
+          "alt": "Marini MR 4 ID",
+          "label": "Marini MR 4 ID, 3D model",
+          "size": "1.0 MB",
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "MR 4 ID is the heaviest rig in the MR line, built on a heavy-duty skid for work on steep slopes. It has 25 kN of retract force and 5,000 Nm of torque, and takes hydraulic rotary heads for down-the-hole hammers up to 6 inches or a hydraulic drifter. The feed comes from a built-in hydraulic cylinder.",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Drive: Hydraulic",
+            "Feed force: 15.0 kN",
+            "Retract force: 25.0 kN",
+            "Rotary torque: 5,000 Nm",
+            "Mast stroke: 1,260 - 1,760 mm",
+            "Weight: 850 - 1,100 kg"
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Matching equipment",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Rotary heads: ID 500",
+            "Drifters: MA 100 ID",
+            "Hydraulic power unit: 40-E, 45-D"
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Contact us</a> for price, delivery time or help choosing the right model.",
+          "gen": true
+        },
+        {
+          "type": "image",
+          "src": "/assets/img/marini-mr-mr-4-id-p1.webp",
+          "alt": "Marini MR 4 ID",
+          "width": 1400,
+          "height": 1050,
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Short brochure (ENG)",
+          "href": "/assets/docs/marini-slantstabilisering-las-mer.pdf",
+          "gen": true
+        },
+        {
+          "type": "datasheet",
+          "title": "Technical data",
+          "tagline": "Marini MR 4 ID",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Specifications",
+              "rows": [
+                {
+                  "label": "Drive",
+                  "metric": "Hydraulic"
+                },
+                {
+                  "label": "Mast stroke",
+                  "metric": "1,260 - 1,760 mm"
+                },
+                {
+                  "label": "Feed force",
+                  "metric": "15.0 kN"
+                },
+                {
+                  "label": "Retract force",
+                  "metric": "25.0 kN"
+                },
+                {
+                  "label": "Rotary torque",
+                  "metric": "5,000 Nm"
+                },
+                {
+                  "label": "Rotary speed",
+                  "metric": "40 - 80 rpm"
+                },
+                {
+                  "label": "Clamp range",
+                  "metric": "25 - 188 mm"
+                },
+                {
+                  "label": "Max. passage",
+                  "metric": "115 - 188 mm"
+                },
+                {
+                  "label": "Weight",
+                  "metric": "850 - 1,100 kg"
+                },
+                {
+                  "label": "Hydraulic power unit",
+                  "metric": "40-E, 45-D"
+                },
+                {
+                  "label": "Power unit output",
+                  "metric": "15 / 17 / 22 kW"
+                }
+              ]
+            }
+          ],
+          "note": "",
+          "source": "The figures come from Marini's brochure and marinidrills.com.",
+          "gen": true
+        },
+        {
+          "type": "related",
+          "title": "See also",
+          "items": [
+            {
+              "href": "/produkter/marini/släntstabilisering",
+              "mutual": false
+            }
+          ],
+          "gen": true
+        }
+      ]
+    }
+  }
+}

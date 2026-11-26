@@ -1,6 +1,6 @@
 {
   "path": "/produkter/marini/crawlers/mr-c-15",
-  "updated": "2026-10-29",
+  "updated": "2026-11-26",
   "template": "product",
   "order": 1,
   "published": true,
@@ -23,45 +23,12 @@
           "gen": true
         },
         {
-          "type": "image",
+          "type": "model3d",
+          "src": "/assets/3d/marini-mr-c-15.bkm",
+          "poster": "/assets/img/marini-mrc-mr-c-15-iso.webp",
           "alt": "Marini MR-C 15",
-          "file": "/assets/img/marini-mrc-mr-c-15-iso.webp",
-          "width": 1626,
-          "height": 2027,
-          "source": "marinidrills.com",
-          "src": "/assets/img/marini-mrc-mr-c-15-iso.webp",
-          "gen": true
-        },
-        {
-          "type": "carousel",
-          "autoplay": true,
-          "interval": 6,
-          "items": [
-            {
-              "src": "/assets/img/marini-mrc-mr-c-15-p1.webp",
-              "alt": "Marini MR-C 15 (1/4)",
-              "width": 1400,
-              "height": 1050
-            },
-            {
-              "src": "/assets/img/marini-mrc-mr-c-15-p2.webp",
-              "alt": "Marini MR-C 15 (2/4)",
-              "width": 1400,
-              "height": 1050
-            },
-            {
-              "src": "/assets/img/marini-mrc-mr-c-15-p3.webp",
-              "alt": "Marini MR-C 15 (3/4)",
-              "width": 1400,
-              "height": 1050
-            },
-            {
-              "src": "/assets/img/marini-mrc-mr-c-15-p4.webp",
-              "alt": "Marini MR-C 15 (4/4)",
-              "width": 1400,
-              "height": 1050
-            }
-          ],
+          "label": "Marini MR-C 15, 3D-modell",
+          "size": "4,0 MB",
           "gen": true
         },
         {
@@ -99,6 +66,38 @@
         {
           "type": "text",
           "html": "<a href=\"/kontakta-oss\">Kontakta oss</a> för pris, leveranstid eller hjälp att välja rätt modell.",
+          "gen": true
+        },
+        {
+          "type": "carousel",
+          "autoplay": true,
+          "interval": 6,
+          "items": [
+            {
+              "src": "/assets/img/marini-mrc-mr-c-15-p1.webp",
+              "alt": "Marini MR-C 15 (1/4)",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/marini-mrc-mr-c-15-p2.webp",
+              "alt": "Marini MR-C 15 (2/4)",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/marini-mrc-mr-c-15-p3.webp",
+              "alt": "Marini MR-C 15 (3/4)",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/marini-mrc-mr-c-15-p4.webp",
+              "alt": "Marini MR-C 15 (4/4)",
+              "width": 1400,
+              "height": 1050
+            }
+          ],
           "gen": true
         },
         {
@@ -214,45 +213,12 @@
           "gen": true
         },
         {
-          "type": "image",
+          "type": "model3d",
+          "src": "/assets/3d/marini-mr-c-15.bkm",
+          "poster": "/assets/img/marini-mrc-mr-c-15-iso.webp",
           "alt": "Marini MR-C 15",
-          "file": "/assets/img/marini-mrc-mr-c-15-iso.webp",
-          "width": 1626,
-          "height": 2027,
-          "source": "marinidrills.com",
-          "src": "/assets/img/marini-mrc-mr-c-15-iso.webp",
-          "gen": true
-        },
-        {
-          "type": "carousel",
-          "autoplay": true,
-          "interval": 6,
-          "items": [
-            {
-              "src": "/assets/img/marini-mrc-mr-c-15-p1.webp",
-              "alt": "Marini MR-C 15 (1/4)",
-              "width": 1400,
-              "height": 1050
-            },
-            {
-              "src": "/assets/img/marini-mrc-mr-c-15-p2.webp",
-              "alt": "Marini MR-C 15 (2/4)",
-              "width": 1400,
-              "height": 1050
-            },
-            {
-              "src": "/assets/img/marini-mrc-mr-c-15-p3.webp",
-              "alt": "Marini MR-C 15 (3/4)",
-              "width": 1400,
-              "height": 1050
-            },
-            {
-              "src": "/assets/img/marini-mrc-mr-c-15-p4.webp",
-              "alt": "Marini MR-C 15 (4/4)",
-              "width": 1400,
-              "height": 1050
-            }
-          ],
+          "label": "Marini MR-C 15, 3D model",
+          "size": "4.0 MB",
           "gen": true
         },
         {
@@ -290,6 +256,38 @@
         {
           "type": "text",
           "html": "<a href=\"/kontakta-oss\">Contact us</a> for price, delivery time or help choosing the right model.",
+          "gen": true
+        },
+        {
+          "type": "carousel",
+          "autoplay": true,
+          "interval": 6,
+          "items": [
+            {
+              "src": "/assets/img/marini-mrc-mr-c-15-p1.webp",
+              "alt": "Marini MR-C 15 (1/4)",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/marini-mrc-mr-c-15-p2.webp",
+              "alt": "Marini MR-C 15 (2/4)",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/marini-mrc-mr-c-15-p3.webp",
+              "alt": "Marini MR-C 15 (3/4)",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/marini-mrc-mr-c-15-p4.webp",
+              "alt": "Marini MR-C 15 (4/4)",
+              "width": 1400,
+              "height": 1050
+            }
+          ],
           "gen": true
         },
         {
@@ -405,45 +403,12 @@
           "gen": true
         },
         {
-          "type": "image",
+          "type": "model3d",
+          "src": "/assets/3d/marini-mr-c-15.bkm",
+          "poster": "/assets/img/marini-mrc-mr-c-15-iso.webp",
           "alt": "Marini MR-C 15",
-          "file": "/assets/img/marini-mrc-mr-c-15-iso.webp",
-          "width": 1626,
-          "height": 2027,
-          "source": "marinidrills.com",
-          "src": "/assets/img/marini-mrc-mr-c-15-iso.webp",
-          "gen": true
-        },
-        {
-          "type": "carousel",
-          "autoplay": true,
-          "interval": 6,
-          "items": [
-            {
-              "src": "/assets/img/marini-mrc-mr-c-15-p1.webp",
-              "alt": "Marini MR-C 15 (1/4)",
-              "width": 1400,
-              "height": 1050
-            },
-            {
-              "src": "/assets/img/marini-mrc-mr-c-15-p2.webp",
-              "alt": "Marini MR-C 15 (2/4)",
-              "width": 1400,
-              "height": 1050
-            },
-            {
-              "src": "/assets/img/marini-mrc-mr-c-15-p3.webp",
-              "alt": "Marini MR-C 15 (3/4)",
-              "width": 1400,
-              "height": 1050
-            },
-            {
-              "src": "/assets/img/marini-mrc-mr-c-15-p4.webp",
-              "alt": "Marini MR-C 15 (4/4)",
-              "width": 1400,
-              "height": 1050
-            }
-          ],
+          "label": "Marini MR-C 15, 3D model",
+          "size": "4.0 MB",
           "gen": true
         },
         {
@@ -481,6 +446,38 @@
         {
           "type": "text",
           "html": "<a href=\"/kontakta-oss\">Contáctenos</a> para precio, plazo de entrega o ayuda para elegir el modelo adecuado.",
+          "gen": true
+        },
+        {
+          "type": "carousel",
+          "autoplay": true,
+          "interval": 6,
+          "items": [
+            {
+              "src": "/assets/img/marini-mrc-mr-c-15-p1.webp",
+              "alt": "Marini MR-C 15 (1/4)",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/marini-mrc-mr-c-15-p2.webp",
+              "alt": "Marini MR-C 15 (2/4)",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/marini-mrc-mr-c-15-p3.webp",
+              "alt": "Marini MR-C 15 (3/4)",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/marini-mrc-mr-c-15-p4.webp",
+              "alt": "Marini MR-C 15 (4/4)",
+              "width": 1400,
+              "height": 1050
+            }
+          ],
           "gen": true
         },
         {
@@ -596,45 +593,12 @@
           "gen": true
         },
         {
-          "type": "image",
+          "type": "model3d",
+          "src": "/assets/3d/marini-mr-c-15.bkm",
+          "poster": "/assets/img/marini-mrc-mr-c-15-iso.webp",
           "alt": "Marini MR-C 15",
-          "file": "/assets/img/marini-mrc-mr-c-15-iso.webp",
-          "width": 1626,
-          "height": 2027,
-          "source": "marinidrills.com",
-          "src": "/assets/img/marini-mrc-mr-c-15-iso.webp",
-          "gen": true
-        },
-        {
-          "type": "carousel",
-          "autoplay": true,
-          "interval": 6,
-          "items": [
-            {
-              "src": "/assets/img/marini-mrc-mr-c-15-p1.webp",
-              "alt": "Marini MR-C 15 (1/4)",
-              "width": 1400,
-              "height": 1050
-            },
-            {
-              "src": "/assets/img/marini-mrc-mr-c-15-p2.webp",
-              "alt": "Marini MR-C 15 (2/4)",
-              "width": 1400,
-              "height": 1050
-            },
-            {
-              "src": "/assets/img/marini-mrc-mr-c-15-p3.webp",
-              "alt": "Marini MR-C 15 (3/4)",
-              "width": 1400,
-              "height": 1050
-            },
-            {
-              "src": "/assets/img/marini-mrc-mr-c-15-p4.webp",
-              "alt": "Marini MR-C 15 (4/4)",
-              "width": 1400,
-              "height": 1050
-            }
-          ],
+          "label": "Marini MR-C 15, 3D model",
+          "size": "4.0 MB",
           "gen": true
         },
         {
@@ -672,6 +636,38 @@
         {
           "type": "text",
           "html": "<a href=\"/kontakta-oss\">Kontakt oss</a> for pris, leveringstid eller hjelp til å velge riktig modell.",
+          "gen": true
+        },
+        {
+          "type": "carousel",
+          "autoplay": true,
+          "interval": 6,
+          "items": [
+            {
+              "src": "/assets/img/marini-mrc-mr-c-15-p1.webp",
+              "alt": "Marini MR-C 15 (1/4)",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/marini-mrc-mr-c-15-p2.webp",
+              "alt": "Marini MR-C 15 (2/4)",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/marini-mrc-mr-c-15-p3.webp",
+              "alt": "Marini MR-C 15 (3/4)",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/marini-mrc-mr-c-15-p4.webp",
+              "alt": "Marini MR-C 15 (4/4)",
+              "width": 1400,
+              "height": 1050
+            }
+          ],
           "gen": true
         },
         {

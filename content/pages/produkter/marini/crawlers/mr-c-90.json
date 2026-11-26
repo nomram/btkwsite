@@ -1,6 +1,6 @@
 {
   "path": "/produkter/marini/crawlers/mr-c-90",
-  "updated": "2026-10-29",
+  "updated": "2026-11-26",
   "template": "product",
   "order": 11,
   "published": true,
@@ -23,13 +23,50 @@
           "gen": true
         },
         {
-          "type": "image",
+          "type": "model3d",
+          "src": "/assets/3d/marini-mr-c-90.bkm",
+          "poster": "/assets/img/marini-mrc-mr-c-90-iso.webp",
           "alt": "Marini MR-C 90",
-          "file": "/assets/img/marini-mrc-mr-c-90-iso.webp",
-          "width": 1005,
-          "height": 790,
-          "source": "marinidrills.com",
-          "src": "/assets/img/marini-mrc-mr-c-90-iso.webp",
+          "label": "Marini MR-C 90, 3D-modell",
+          "size": "3,2 MB",
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "MR-C 90 är en hydraulisk larvrigg ur Marinis MR-C-serie med 103 - 115 kW motor och en vikt på 14 500 kg. Konstruerad för större och djupare borrhål, med högre kapacitet och kraft.",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Motoreffekt: 103 - 115 kW",
+            "Matningskraft: 60 kN",
+            "Vridmoment: 16 000 Nm",
+            "Mastens slaglängd: 1 800 - 3 500 mm",
+            "Vikt: 14 500 kg"
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Borrmetoder",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Rotationsborrning",
+            "Slagborrning",
+            "Slagborrning med självborrande stänger (hollow bar)"
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Kontakta oss</a> för pris, leveranstid eller hjälp att välja rätt modell.",
           "gen": true
         },
         {
@@ -86,44 +123,6 @@
               "height": 1050
             }
           ],
-          "gen": true
-        },
-        {
-          "type": "text",
-          "html": "MR-C 90 är en hydraulisk larvrigg ur Marinis MR-C-serie med 103 - 115 kW motor och en vikt på 14 500 kg. Konstruerad för större och djupare borrhål, med högre kapacitet och kraft.",
-          "gen": true
-        },
-        {
-          "type": "list",
-          "ordered": false,
-          "items": [
-            "Motoreffekt: 103 - 115 kW",
-            "Matningskraft: 60 kN",
-            "Vridmoment: 16 000 Nm",
-            "Mastens slaglängd: 1 800 - 3 500 mm",
-            "Vikt: 14 500 kg"
-          ],
-          "gen": true
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "Borrmetoder",
-          "gen": true
-        },
-        {
-          "type": "list",
-          "ordered": false,
-          "items": [
-            "Rotationsborrning",
-            "Slagborrning",
-            "Slagborrning med självborrande stänger (hollow bar)"
-          ],
-          "gen": true
-        },
-        {
-          "type": "text",
-          "html": "<a href=\"/kontakta-oss\">Kontakta oss</a> för pris, leveranstid eller hjälp att välja rätt modell.",
           "gen": true
         },
         {
@@ -247,13 +246,50 @@
           "gen": true
         },
         {
-          "type": "image",
+          "type": "model3d",
+          "src": "/assets/3d/marini-mr-c-90.bkm",
+          "poster": "/assets/img/marini-mrc-mr-c-90-iso.webp",
           "alt": "Marini MR-C 90",
-          "file": "/assets/img/marini-mrc-mr-c-90-iso.webp",
-          "width": 1005,
-          "height": 790,
-          "source": "marinidrills.com",
-          "src": "/assets/img/marini-mrc-mr-c-90-iso.webp",
+          "label": "Marini MR-C 90, 3D model",
+          "size": "3.2 MB",
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "MR-C 90 is a hydraulic crawler drill rig from Marini's MR-C line with a 103 - 115 kW engine and a weight of 14,500 kg. Built for larger and deeper holes, with higher capacity and force.",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Engine power: 103 - 115 kW",
+            "Feed force: 60 kN",
+            "Rotary torque: 16,000 Nm",
+            "Mast stroke: 1,800 - 3,500 mm",
+            "Weight: 14,500 kg"
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Drilling methods",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Rotation drilling",
+            "Percussion drilling",
+            "Percussion drilling with hollow bars"
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Contact us</a> for price, delivery time or help choosing the right model.",
           "gen": true
         },
         {
@@ -310,44 +346,6 @@
               "height": 1050
             }
           ],
-          "gen": true
-        },
-        {
-          "type": "text",
-          "html": "MR-C 90 is a hydraulic crawler drill rig from Marini's MR-C line with a 103 - 115 kW engine and a weight of 14,500 kg. Built for larger and deeper holes, with higher capacity and force.",
-          "gen": true
-        },
-        {
-          "type": "list",
-          "ordered": false,
-          "items": [
-            "Engine power: 103 - 115 kW",
-            "Feed force: 60 kN",
-            "Rotary torque: 16,000 Nm",
-            "Mast stroke: 1,800 - 3,500 mm",
-            "Weight: 14,500 kg"
-          ],
-          "gen": true
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "Drilling methods",
-          "gen": true
-        },
-        {
-          "type": "list",
-          "ordered": false,
-          "items": [
-            "Rotation drilling",
-            "Percussion drilling",
-            "Percussion drilling with hollow bars"
-          ],
-          "gen": true
-        },
-        {
-          "type": "text",
-          "html": "<a href=\"/kontakta-oss\">Contact us</a> for price, delivery time or help choosing the right model.",
           "gen": true
         },
         {
@@ -471,13 +469,50 @@
           "gen": true
         },
         {
-          "type": "image",
+          "type": "model3d",
+          "src": "/assets/3d/marini-mr-c-90.bkm",
+          "poster": "/assets/img/marini-mrc-mr-c-90-iso.webp",
           "alt": "Marini MR-C 90",
-          "file": "/assets/img/marini-mrc-mr-c-90-iso.webp",
-          "width": 1005,
-          "height": 790,
-          "source": "marinidrills.com",
-          "src": "/assets/img/marini-mrc-mr-c-90-iso.webp",
+          "label": "Marini MR-C 90, 3D model",
+          "size": "3.2 MB",
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "MR-C 90 es una perforadora hidráulica de orugas de la serie MR-C de Marini, con motor de 103 - 115 kW y un peso de 14.500 kg. Diseñada para barrenos más grandes y profundos, con mayor capacidad y fuerza.",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Potencia del motor: 103 - 115 kW",
+            "Fuerza de empuje: 60 kN",
+            "Par de rotación: 16.000 Nm",
+            "Carrera del mástil: 1.800 - 3.500 mm",
+            "Peso: 14.500 kg"
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Métodos de perforación",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Perforación a rotación",
+            "Perforación a percusión",
+            "Perforación a percusión con barras huecas"
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Contáctenos</a> para precio, plazo de entrega o ayuda para elegir el modelo adecuado.",
           "gen": true
         },
         {
@@ -534,44 +569,6 @@
               "height": 1050
             }
           ],
-          "gen": true
-        },
-        {
-          "type": "text",
-          "html": "MR-C 90 es una perforadora hidráulica de orugas de la serie MR-C de Marini, con motor de 103 - 115 kW y un peso de 14.500 kg. Diseñada para barrenos más grandes y profundos, con mayor capacidad y fuerza.",
-          "gen": true
-        },
-        {
-          "type": "list",
-          "ordered": false,
-          "items": [
-            "Potencia del motor: 103 - 115 kW",
-            "Fuerza de empuje: 60 kN",
-            "Par de rotación: 16.000 Nm",
-            "Carrera del mástil: 1.800 - 3.500 mm",
-            "Peso: 14.500 kg"
-          ],
-          "gen": true
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "Métodos de perforación",
-          "gen": true
-        },
-        {
-          "type": "list",
-          "ordered": false,
-          "items": [
-            "Perforación a rotación",
-            "Perforación a percusión",
-            "Perforación a percusión con barras huecas"
-          ],
-          "gen": true
-        },
-        {
-          "type": "text",
-          "html": "<a href=\"/kontakta-oss\">Contáctenos</a> para precio, plazo de entrega o ayuda para elegir el modelo adecuado.",
           "gen": true
         },
         {
@@ -695,13 +692,50 @@
           "gen": true
         },
         {
-          "type": "image",
+          "type": "model3d",
+          "src": "/assets/3d/marini-mr-c-90.bkm",
+          "poster": "/assets/img/marini-mrc-mr-c-90-iso.webp",
           "alt": "Marini MR-C 90",
-          "file": "/assets/img/marini-mrc-mr-c-90-iso.webp",
-          "width": 1005,
-          "height": 790,
-          "source": "marinidrills.com",
-          "src": "/assets/img/marini-mrc-mr-c-90-iso.webp",
+          "label": "Marini MR-C 90, 3D model",
+          "size": "3.2 MB",
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "MR-C 90 er en hydraulisk beltegående borerigg i Marinis MR-C-serie med 103 - 115 kW motor og en vekt på 14 500 kg. Konstruert for større og dypere borehull, med høyere kapasitet og kraft.",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Motoreffekt: 103 - 115 kW",
+            "Matekraft: 60 kN",
+            "Dreiemoment: 16 000 Nm",
+            "Mastens slaglengde: 1 800 - 3 500 mm",
+            "Vekt: 14 500 kg"
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Boremetoder",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Rotasjonsboring",
+            "Slagboring",
+            "Slagboring med hule stenger (hollow bar)"
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Kontakt oss</a> for pris, leveringstid eller hjelp til å velge riktig modell.",
           "gen": true
         },
         {
@@ -758,44 +792,6 @@
               "height": 1050
             }
           ],
-          "gen": true
-        },
-        {
-          "type": "text",
-          "html": "MR-C 90 er en hydraulisk beltegående borerigg i Marinis MR-C-serie med 103 - 115 kW motor og en vekt på 14 500 kg. Konstruert for større og dypere borehull, med høyere kapasitet og kraft.",
-          "gen": true
-        },
-        {
-          "type": "list",
-          "ordered": false,
-          "items": [
-            "Motoreffekt: 103 - 115 kW",
-            "Matekraft: 60 kN",
-            "Dreiemoment: 16 000 Nm",
-            "Mastens slaglengde: 1 800 - 3 500 mm",
-            "Vekt: 14 500 kg"
-          ],
-          "gen": true
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "Boremetoder",
-          "gen": true
-        },
-        {
-          "type": "list",
-          "ordered": false,
-          "items": [
-            "Rotasjonsboring",
-            "Slagboring",
-            "Slagboring med hule stenger (hollow bar)"
-          ],
-          "gen": true
-        },
-        {
-          "type": "text",
-          "html": "<a href=\"/kontakta-oss\">Kontakt oss</a> for pris, leveringstid eller hjelp til å velge riktig modell.",
           "gen": true
         },
         {

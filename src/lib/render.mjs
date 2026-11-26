@@ -491,6 +491,17 @@ function renderMap(ctx, b) {
     `<ul class="map__list">${list}</ul></figure>`;
 }
 
+// A machine picture that can turn into a live 3D model (src/js/viewer3d.js; the model file is only fetched when the visitor asks for it).
+// Block: src (/assets/3d/x.bkm), poster (picture), alt, label, size (shown on the button, e.g. "1,1 MB")
+const CUBE = '<svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" d="M12 2.8 3.8 7.4v9.2l8.2 4.6 8.2-4.6V7.4zM3.8 7.4 12 12l8.2-4.6M12 12v9.2"/></svg>';
+function renderModel3d(ctx, b) {
+  if (!b.src || !b.poster) return "";
+  const label = b.label || b.alt || "";
+  const W = { sv: ["Visa i 3D", "Vrid, zooma och titta närmare"], es: ["Ver en 3D", "Gira, amplía y mira de cerca"], no: ["Vis i 3D", "Drei, zoom og se nærmere"] }[ctx.lang] || ["View in 3D", "Turn, zoom and take a closer look"];
+  const go = W[0], note = W[1];
+  return `<figure class="m3d" data-src="${esc(b.src)}" data-label="${esc(label)}"><div class="m3d__pic">${imgTag(ctx, b.poster, b.alt || label, { cls: "m3d__poster", sizes: "(min-width: 900px) 760px, 100vw", eager: true })}</div>` +
+    `<button type="button" class="m3d__go">${CUBE}<span class="m3d__got"><strong>${esc(go)}</strong><small>${esc(note)}${b.size ? ` · ${esc(b.size)}` : ""}</small></span></button></figure>`;
+}
 function renderVideo(ctx, b) {
   const title = b.title || ctx.ui.video_play || "Video";
   const watch = `https://www.youtube.com/watch?v=${encodeURIComponent(b.id)}${b.start ? "&t=" + b.start + "s" : ""}`;
@@ -987,6 +998,7 @@ function renderBlockInner(ctx, b) {
     }
     case "cards": return renderCards(ctx, b);
     case "video": return renderVideo(ctx, b);
+    case "model3d": return renderModel3d(ctx, b);
     case "map": return renderMap(ctx, b);
     case "faq": return renderFaq(ctx, b);
     case "widget": return renderWidget(ctx, b);
@@ -1067,6 +1079,17 @@ export function renderBlocks(ctx, blocks) {
       i--;
       prose.push(run.length === 1 ? renderBlock(ctx, run[0]) : `<p class="btn-row btn-row--group">${run.map((x) => renderBlockInner(ctx, x).replace(/^<p class="btn-row">|<\/p>$/g, "")).join("")}</p>`);
       continue;
+    }
+    // the 3D picture beside the text that follows it (description, key figures, short lists), like a product page in print
+    if (!ctx.edit && b.type === "model3d") {
+      const right = [];
+      let j = i + 1;
+      while (list[j] && (list[j].type === "text" || list[j].type === "list" || (list[j].type === "heading" && (list[j].level || 2) >= 3))) right.push(list[j++]);
+      if (right.length) {
+        prose.push(`<div class="m3dpair"><div class="m3dpair__fig">${renderBlock(ctx, b)}</div><div class="m3dpair__txt">${right.map((x) => renderBlock(ctx, x)).join("\n")}</div></div>`);
+        i = j - 1;
+        continue;
+      }
     }
     // a gallery followed by a video sit side by side, like the original product pages: pictures left, video right with the specification heading and list under it
     if (!ctx.edit && b.type === "carousel" && list[i + 1] && list[i + 1].type === "video") {
@@ -1609,6 +1632,7 @@ export function renderDocument(ctx, page, t, opts = {}) {
   const ver = opts.assetVersion ? `?v=${opts.assetVersion}` : "";
   const hasQuote = flatBlocks(t.blocks || []).some((x) => x.type === "quote");
   const hasWidget = flatBlocks(t.blocks || []).some((x) => x.type === "widget");
+  const has3d = !ctx.edit && flatBlocks(t.blocks || []).some((x) => x.type === "model3d");
   return `<!doctype html>
 <html lang="${esc(htmlLang(ctx, lang))}" class="no-js">
 <head>
@@ -1648,7 +1672,7 @@ ${renderMain(ctx, page, t)}
 ${renderFooter(ctx)}
 ${renderCallBar(ctx)}
 <script type="application/json" id="bk-config">${cfg}</script>
-<script src="/js/site.js${ver}" defer></script>${hasQuote ? `<script src="/js/quote-guard.js${ver}" defer></script>` : ""}${hasWidget ? `<script src="/js/widgets.js${ver}" defer></script>` : ""}
+<script src="/js/site.js${ver}" defer></script>${hasQuote ? `<script src="/js/quote-guard.js${ver}" defer></script>` : ""}${hasWidget ? `<script src="/js/widgets.js${ver}" defer></script>` : ""}${has3d ? `<script src="/js/viewer3d.js${ver}" defer></script>` : ""}
 </body>
 </html>
 `;

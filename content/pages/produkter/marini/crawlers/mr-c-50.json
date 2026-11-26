@@ -1,6 +1,6 @@
 {
   "path": "/produkter/marini/crawlers/mr-c-50",
-  "updated": "2026-10-29",
+  "updated": "2026-11-26",
   "template": "product",
   "order": 7,
   "published": true,
@@ -23,13 +23,51 @@
           "gen": true
         },
         {
-          "type": "image",
+          "type": "model3d",
+          "src": "/assets/3d/marini-mr-c-50.bkm",
+          "poster": "/assets/img/marini-mrc-mr-c-50-iso.webp",
           "alt": "Marini MR-C 50",
-          "file": "/assets/img/marini-mrc-mr-c-50-iso.webp",
-          "width": 697,
-          "height": 716,
-          "source": "marinidrills.com",
-          "src": "/assets/img/marini-mrc-mr-c-50-iso.webp",
+          "label": "Marini MR-C 50, 3D-modell",
+          "size": "4,8 MB",
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "MR-C 50 är en hydraulisk larvrigg ur Marinis MR-C-serie med 85 - 103 kW motor och en vikt på 9 000 kg.",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Motoreffekt: 85 - 103 kW",
+            "Matningskraft: 50 kN",
+            "Vridmoment: 13 500 Nm",
+            "Mastens slaglängd: 1 800 - 3 500 mm",
+            "Vikt: 9 000 kg"
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Borrmetoder",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Rotationsborrning",
+            "Slagborrning",
+            "Dubbelhuvud (två borrhuvuden)",
+            "Slagborrning med självborrande stänger (hollow bar)"
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Kontakta oss</a> för pris, leveranstid eller hjälp att välja rätt modell.",
           "gen": true
         },
         {
@@ -86,45 +124,6 @@
               "height": 1050
             }
           ],
-          "gen": true
-        },
-        {
-          "type": "text",
-          "html": "MR-C 50 är en hydraulisk larvrigg ur Marinis MR-C-serie med 85 - 103 kW motor och en vikt på 9 000 kg.",
-          "gen": true
-        },
-        {
-          "type": "list",
-          "ordered": false,
-          "items": [
-            "Motoreffekt: 85 - 103 kW",
-            "Matningskraft: 50 kN",
-            "Vridmoment: 13 500 Nm",
-            "Mastens slaglängd: 1 800 - 3 500 mm",
-            "Vikt: 9 000 kg"
-          ],
-          "gen": true
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "Borrmetoder",
-          "gen": true
-        },
-        {
-          "type": "list",
-          "ordered": false,
-          "items": [
-            "Rotationsborrning",
-            "Slagborrning",
-            "Dubbelhuvud (två borrhuvuden)",
-            "Slagborrning med självborrande stänger (hollow bar)"
-          ],
-          "gen": true
-        },
-        {
-          "type": "text",
-          "html": "<a href=\"/kontakta-oss\">Kontakta oss</a> för pris, leveranstid eller hjälp att välja rätt modell.",
           "gen": true
         },
         {
@@ -240,13 +239,51 @@
           "gen": true
         },
         {
-          "type": "image",
+          "type": "model3d",
+          "src": "/assets/3d/marini-mr-c-50.bkm",
+          "poster": "/assets/img/marini-mrc-mr-c-50-iso.webp",
           "alt": "Marini MR-C 50",
-          "file": "/assets/img/marini-mrc-mr-c-50-iso.webp",
-          "width": 697,
-          "height": 716,
-          "source": "marinidrills.com",
-          "src": "/assets/img/marini-mrc-mr-c-50-iso.webp",
+          "label": "Marini MR-C 50, 3D model",
+          "size": "4.8 MB",
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "MR-C 50 is a hydraulic crawler drill rig from Marini's MR-C line with a 85 - 103 kW engine and a weight of 9,000 kg.",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Engine power: 85 - 103 kW",
+            "Feed force: 50 kN",
+            "Rotary torque: 13,500 Nm",
+            "Mast stroke: 1,800 - 3,500 mm",
+            "Weight: 9,000 kg"
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Drilling methods",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Rotation drilling",
+            "Percussion drilling",
+            "Double head (two drill heads)",
+            "Percussion drilling with hollow bars"
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Contact us</a> for price, delivery time or help choosing the right model.",
           "gen": true
         },
         {
@@ -303,45 +340,6 @@
               "height": 1050
             }
           ],
-          "gen": true
-        },
-        {
-          "type": "text",
-          "html": "MR-C 50 is a hydraulic crawler drill rig from Marini's MR-C line with a 85 - 103 kW engine and a weight of 9,000 kg.",
-          "gen": true
-        },
-        {
-          "type": "list",
-          "ordered": false,
-          "items": [
-            "Engine power: 85 - 103 kW",
-            "Feed force: 50 kN",
-            "Rotary torque: 13,500 Nm",
-            "Mast stroke: 1,800 - 3,500 mm",
-            "Weight: 9,000 kg"
-          ],
-          "gen": true
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "Drilling methods",
-          "gen": true
-        },
-        {
-          "type": "list",
-          "ordered": false,
-          "items": [
-            "Rotation drilling",
-            "Percussion drilling",
-            "Double head (two drill heads)",
-            "Percussion drilling with hollow bars"
-          ],
-          "gen": true
-        },
-        {
-          "type": "text",
-          "html": "<a href=\"/kontakta-oss\">Contact us</a> for price, delivery time or help choosing the right model.",
           "gen": true
         },
         {
@@ -457,13 +455,51 @@
           "gen": true
         },
         {
-          "type": "image",
+          "type": "model3d",
+          "src": "/assets/3d/marini-mr-c-50.bkm",
+          "poster": "/assets/img/marini-mrc-mr-c-50-iso.webp",
           "alt": "Marini MR-C 50",
-          "file": "/assets/img/marini-mrc-mr-c-50-iso.webp",
-          "width": 697,
-          "height": 716,
-          "source": "marinidrills.com",
-          "src": "/assets/img/marini-mrc-mr-c-50-iso.webp",
+          "label": "Marini MR-C 50, 3D model",
+          "size": "4.8 MB",
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "MR-C 50 es una perforadora hidráulica de orugas de la serie MR-C de Marini, con motor de 85 - 103 kW y un peso de 9.000 kg.",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Potencia del motor: 85 - 103 kW",
+            "Fuerza de empuje: 50 kN",
+            "Par de rotación: 13.500 Nm",
+            "Carrera del mástil: 1.800 - 3.500 mm",
+            "Peso: 9.000 kg"
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Métodos de perforación",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Perforación a rotación",
+            "Perforación a percusión",
+            "Doble cabezal (dos cabezales de perforación)",
+            "Perforación a percusión con barras huecas"
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Contáctenos</a> para precio, plazo de entrega o ayuda para elegir el modelo adecuado.",
           "gen": true
         },
         {
@@ -520,45 +556,6 @@
               "height": 1050
             }
           ],
-          "gen": true
-        },
-        {
-          "type": "text",
-          "html": "MR-C 50 es una perforadora hidráulica de orugas de la serie MR-C de Marini, con motor de 85 - 103 kW y un peso de 9.000 kg.",
-          "gen": true
-        },
-        {
-          "type": "list",
-          "ordered": false,
-          "items": [
-            "Potencia del motor: 85 - 103 kW",
-            "Fuerza de empuje: 50 kN",
-            "Par de rotación: 13.500 Nm",
-            "Carrera del mástil: 1.800 - 3.500 mm",
-            "Peso: 9.000 kg"
-          ],
-          "gen": true
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "Métodos de perforación",
-          "gen": true
-        },
-        {
-          "type": "list",
-          "ordered": false,
-          "items": [
-            "Perforación a rotación",
-            "Perforación a percusión",
-            "Doble cabezal (dos cabezales de perforación)",
-            "Perforación a percusión con barras huecas"
-          ],
-          "gen": true
-        },
-        {
-          "type": "text",
-          "html": "<a href=\"/kontakta-oss\">Contáctenos</a> para precio, plazo de entrega o ayuda para elegir el modelo adecuado.",
           "gen": true
         },
         {
@@ -674,13 +671,51 @@
           "gen": true
         },
         {
-          "type": "image",
+          "type": "model3d",
+          "src": "/assets/3d/marini-mr-c-50.bkm",
+          "poster": "/assets/img/marini-mrc-mr-c-50-iso.webp",
           "alt": "Marini MR-C 50",
-          "file": "/assets/img/marini-mrc-mr-c-50-iso.webp",
-          "width": 697,
-          "height": 716,
-          "source": "marinidrills.com",
-          "src": "/assets/img/marini-mrc-mr-c-50-iso.webp",
+          "label": "Marini MR-C 50, 3D model",
+          "size": "4.8 MB",
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "MR-C 50 er en hydraulisk beltegående borerigg i Marinis MR-C-serie med 85 - 103 kW motor og en vekt på 9 000 kg.",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Motoreffekt: 85 - 103 kW",
+            "Matekraft: 50 kN",
+            "Dreiemoment: 13 500 Nm",
+            "Mastens slaglengde: 1 800 - 3 500 mm",
+            "Vekt: 9 000 kg"
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Boremetoder",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Rotasjonsboring",
+            "Slagboring",
+            "Dobbelthode (to borhoder)",
+            "Slagboring med hule stenger (hollow bar)"
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Kontakt oss</a> for pris, leveringstid eller hjelp til å velge riktig modell.",
           "gen": true
         },
         {
@@ -737,45 +772,6 @@
               "height": 1050
             }
           ],
-          "gen": true
-        },
-        {
-          "type": "text",
-          "html": "MR-C 50 er en hydraulisk beltegående borerigg i Marinis MR-C-serie med 85 - 103 kW motor og en vekt på 9 000 kg.",
-          "gen": true
-        },
-        {
-          "type": "list",
-          "ordered": false,
-          "items": [
-            "Motoreffekt: 85 - 103 kW",
-            "Matekraft: 50 kN",
-            "Dreiemoment: 13 500 Nm",
-            "Mastens slaglengde: 1 800 - 3 500 mm",
-            "Vekt: 9 000 kg"
-          ],
-          "gen": true
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "Boremetoder",
-          "gen": true
-        },
-        {
-          "type": "list",
-          "ordered": false,
-          "items": [
-            "Rotasjonsboring",
-            "Slagboring",
-            "Dobbelthode (to borhoder)",
-            "Slagboring med hule stenger (hollow bar)"
-          ],
-          "gen": true
-        },
-        {
-          "type": "text",
-          "html": "<a href=\"/kontakta-oss\">Kontakt oss</a> for pris, leveringstid eller hjelp til å velge riktig modell.",
           "gen": true
         },
         {

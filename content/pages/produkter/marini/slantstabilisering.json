@@ -1,6 +1,6 @@
 {
   "path": "/produkter/marini/släntstabilisering",
-  "updated": "2026-10-10",
+  "updated": "2026-11-26",
   "template": "product",
   "order": 0,
   "published": true,
@@ -49,82 +49,164 @@
           "html": "<a href=\"/kontakta-oss\">Kontakta oss</a> för mer information."
         },
         {
+          "type": "heading",
+          "level": 2,
+          "text": "Modeller",
+          "gen": true
+        },
+        {
           "type": "modules",
-          "layout": "cards",
+          "layout": "tiles",
+          "columns": 4,
+          "square": true,
+          "more": false,
           "items": [
             {
               "title": "MR 1",
-              "image": "/assets/img/marini-slantstabilisering-2.webp",
-              "alt": "MR 1",
-              "text": "Enkel penumatisk enhet.",
+              "image": "/assets/img/marini-mr-mr-1-pn-tile.webp",
+              "alt": "Marini MR 1",
+              "href": "/produkter/marini/släntstabilisering/mr-1-pn",
               "bullets": [
-                "Vikt: 180-200 kg",
-                "5,0 kN kraft"
+                "Pneumatisk",
+                "Vikt: 180 - 200 kg"
               ],
-              "doc": {
-                "text": "Broschyr MR 1",
-                "href": "/assets/docs/marini-slantstabilisering-las-mer.pdf"
-              }
+              "width": 1000,
+              "height": 1000
             },
             {
-              "title": "MR 2",
-              "image": "/assets/img/marini-slantstabilisering-mr-2.webp",
-              "alt": "MR 2",
-              "text": "Marinis absoluta storsäljare.",
-              "href": "/produkter/marini/släntstabilisering/mr-2",
+              "title": "MR 2 PN",
+              "image": "/assets/img/marini-mr-mr-2-pn-tile.webp",
+              "alt": "Marini MR 2 PN",
+              "href": "/produkter/marini/släntstabilisering/mr-2-pn",
               "bullets": [
-                "Vikt: 310-650 kg",
-                "9,5-15,0 kN matningskraft"
-              ]
-            },
-            {
-              "title": "MR 3",
-              "image": "/assets/img/marini-slantstabilisering-mr-3.webp",
-              "alt": "MR 3",
-              "text": "Enkel slädesbaserad rigg.",
-              "href": "/produkter/marini/släntstabilisering/mr-3",
-              "bullets": [
-                "Vikt: 280-390 kg",
-                "6,0-9,5 kN kraft"
-              ]
-            },
-            {
-              "title": "MR 4",
-              "image": "/assets/img/marini-slantstabilisering-4.webp",
-              "alt": "MR 4",
-              "text": "Hydraulrigg för högre matning och dragkraft.",
-              "bullets": [
-                "Vikt: ca 950 kg",
-                "15,0 kN matning / 25,0 kN dragkraft"
+                "Pneumatisk",
+                "Vikt: 310 - 340 kg"
               ],
-              "doc": {
-                "text": "Broschyr MR 4",
-                "href": "/assets/docs/marini-slantstabilisering-las-mer-2.pdf"
-              }
+              "width": 1000,
+              "height": 1000
             },
             {
-              "title": "MR 5",
-              "image": "/assets/img/marini-slantstabilisering-mr-5.webp",
-              "alt": "MR 5",
-              "text": "Fyrhjulig rigg för smidig sidförflyttning.",
-              "href": "/produkter/marini/släntstabilisering/mr-5",
+              "title": "MR 2 PN 80",
+              "image": "/assets/img/marini-mr-mr-2-pn-80-tile.webp",
+              "alt": "Marini MR 2 PN 80",
+              "href": "/produkter/marini/släntstabilisering/mr-2-pn-80",
               "bullets": [
-                "Vikt 390-460 kg",
-                "9,5-10,0 kN kraft"
-              ]
+                "Pneumatisk",
+                "Vikt: 380 - 410 kg"
+              ],
+              "width": 1000,
+              "height": 1000
             },
             {
-              "title": "MR 6",
-              "image": "/assets/img/marini-slantstabilisering-mr-6.webp",
-              "alt": "MR 6",
-              "text": "Bärbar kompakt modulär mast.",
-              "href": "/produkter/marini/släntstabilisering/mr-6",
+              "title": "MR 2 ID 80",
+              "image": "/assets/img/marini-mr-mr-2-id-80-tile.webp",
+              "alt": "Marini MR 2 ID 80",
+              "href": "/produkter/marini/släntstabilisering/mr-2-id-80",
               "bullets": [
-                "Vikt 300-330 kg",
-                "6,0-10,0 kN kraft"
-              ]
+                "Hydraulisk",
+                "Vikt: 390 - 430 kg"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "MR 2 ID 100",
+              "image": "/assets/img/marini-mr-mr-2-id-100-tile.webp",
+              "alt": "Marini MR 2 ID 100",
+              "href": "/produkter/marini/släntstabilisering/mr-2-id-100",
+              "bullets": [
+                "Hydraulisk",
+                "Vikt: 600 - 650 kg"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "MR 3 PN",
+              "image": "/assets/img/marini-mr-mr-3-pn-tile.webp",
+              "alt": "Marini MR 3 PN",
+              "href": "/produkter/marini/släntstabilisering/mr-3-pn",
+              "bullets": [
+                "Pneumatisk",
+                "Vikt: 300 kg"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "MR 3 ID",
+              "image": "/assets/img/marini-mr-mr-3-id-tile.webp",
+              "alt": "Marini MR 3 ID",
+              "href": "/produkter/marini/släntstabilisering/mr-3-id",
+              "bullets": [
+                "Hydraulisk",
+                "Vikt: 450 - 650 kg"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "MR 4 ID",
+              "image": "/assets/img/marini-mr-mr-4-id-tile.webp",
+              "alt": "Marini MR 4 ID",
+              "href": "/produkter/marini/släntstabilisering/mr-4-id",
+              "bullets": [
+                "Hydraulisk",
+                "Vikt: 850 - 1 100 kg"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "MR 5 PN",
+              "image": "/assets/img/marini-mr-mr-5-pn-tile.webp",
+              "alt": "Marini MR 5 PN",
+              "href": "/produkter/marini/släntstabilisering/mr-5-pn",
+              "bullets": [
+                "Pneumatisk",
+                "Vikt: 390 - 460 kg"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "MR 5 ID",
+              "image": "/assets/img/marini-mr-mr-5-id-tile.webp",
+              "alt": "Marini MR 5 ID",
+              "href": "/produkter/marini/släntstabilisering/mr-5-id",
+              "bullets": [
+                "Hydraulisk",
+                "Vikt: 400 - 460 kg"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "MR 6 PN",
+              "image": "/assets/img/marini-mr-mr-6-pn-tile.webp",
+              "alt": "Marini MR 6 PN",
+              "href": "/produkter/marini/släntstabilisering/mr-6-pn",
+              "bullets": [
+                "Pneumatisk",
+                "Vikt: 300 - 330 kg"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "MR 6 ID",
+              "image": "/assets/img/marini-mr-mr-6-id-tile.webp",
+              "alt": "Marini MR 6 ID",
+              "href": "/produkter/marini/släntstabilisering/mr-6-id",
+              "bullets": [
+                "Hydraulisk",
+                "Vikt: 300 - 330 kg"
+              ],
+              "width": 1000,
+              "height": 1000
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "heading",
@@ -322,82 +404,164 @@
           "html": "<a href=\"/kontakta-oss\">Contact us</a> for more information."
         },
         {
+          "type": "heading",
+          "level": 2,
+          "text": "Models",
+          "gen": true
+        },
+        {
           "type": "modules",
-          "layout": "cards",
+          "layout": "tiles",
+          "columns": 4,
+          "square": true,
+          "more": false,
           "items": [
             {
               "title": "MR 1",
-              "image": "/assets/img/marini-slantstabilisering-2.webp",
-              "alt": "MR 1",
-              "text": "Simple pneumatic unit.",
+              "image": "/assets/img/marini-mr-mr-1-pn-tile.webp",
+              "alt": "Marini MR 1",
+              "href": "/produkter/marini/släntstabilisering/mr-1-pn",
               "bullets": [
-                "Weight: 180-200 kg",
-                "5.0 kN force"
+                "Pneumatic",
+                "Weight: 180 - 200 kg"
               ],
-              "doc": {
-                "text": "Brochure MR 1",
-                "href": "/assets/docs/marini-slantstabilisering-las-mer.pdf"
-              }
+              "width": 1000,
+              "height": 1000
             },
             {
-              "title": "MR 2",
-              "image": "/assets/img/marini-slantstabilisering-mr-2.webp",
-              "alt": "MR 2",
-              "text": "Marini’s absolute best seller.",
-              "href": "/produkter/marini/släntstabilisering/mr-2",
+              "title": "MR 2 PN",
+              "image": "/assets/img/marini-mr-mr-2-pn-tile.webp",
+              "alt": "Marini MR 2 PN",
+              "href": "/produkter/marini/släntstabilisering/mr-2-pn",
               "bullets": [
-                "Weight: 310-650 kg",
-                "9.5-15.0 kN feed force"
-              ]
-            },
-            {
-              "title": "MR 3",
-              "image": "/assets/img/marini-slantstabilisering-mr-3.webp",
-              "alt": "MR 3",
-              "text": "Simple skid-based rig.",
-              "href": "/produkter/marini/släntstabilisering/mr-3",
-              "bullets": [
-                "Weight: 280-390 kg",
-                "6.0-9.5 kN force"
-              ]
-            },
-            {
-              "title": "MR 4",
-              "image": "/assets/img/marini-slantstabilisering-4.webp",
-              "alt": "MR 4",
-              "text": "Hydraulic rig for higher feed and pull-back force.",
-              "bullets": [
-                "Weight: ca 950 kg",
-                "15.0 kN feed / 25.0 kN pull-back force"
+                "Pneumatic",
+                "Weight: 310 - 340 kg"
               ],
-              "doc": {
-                "text": "Brochure MR 4",
-                "href": "/assets/docs/marini-slantstabilisering-las-mer-2.pdf"
-              }
+              "width": 1000,
+              "height": 1000
             },
             {
-              "title": "MR 5",
-              "image": "/assets/img/marini-slantstabilisering-mr-5.webp",
-              "alt": "MR 5",
-              "text": "Four-wheeled rig for smooth sideways movement.",
-              "href": "/produkter/marini/släntstabilisering/mr-5",
+              "title": "MR 2 PN 80",
+              "image": "/assets/img/marini-mr-mr-2-pn-80-tile.webp",
+              "alt": "Marini MR 2 PN 80",
+              "href": "/produkter/marini/släntstabilisering/mr-2-pn-80",
               "bullets": [
-                "Weight 390-460 kg",
-                "9.5-10.0 kN force"
-              ]
+                "Pneumatic",
+                "Weight: 380 - 410 kg"
+              ],
+              "width": 1000,
+              "height": 1000
             },
             {
-              "title": "MR 6",
-              "image": "/assets/img/marini-slantstabilisering-mr-6.webp",
-              "alt": "MR 6",
-              "text": "Portable compact modular mast.",
-              "href": "/produkter/marini/släntstabilisering/mr-6",
+              "title": "MR 2 ID 80",
+              "image": "/assets/img/marini-mr-mr-2-id-80-tile.webp",
+              "alt": "Marini MR 2 ID 80",
+              "href": "/produkter/marini/släntstabilisering/mr-2-id-80",
               "bullets": [
-                "Weight 300-330 kg",
-                "6.0-10.0 kN force"
-              ]
+                "Hydraulic",
+                "Weight: 390 - 430 kg"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "MR 2 ID 100",
+              "image": "/assets/img/marini-mr-mr-2-id-100-tile.webp",
+              "alt": "Marini MR 2 ID 100",
+              "href": "/produkter/marini/släntstabilisering/mr-2-id-100",
+              "bullets": [
+                "Hydraulic",
+                "Weight: 600 - 650 kg"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "MR 3 PN",
+              "image": "/assets/img/marini-mr-mr-3-pn-tile.webp",
+              "alt": "Marini MR 3 PN",
+              "href": "/produkter/marini/släntstabilisering/mr-3-pn",
+              "bullets": [
+                "Pneumatic",
+                "Weight: 300 kg"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "MR 3 ID",
+              "image": "/assets/img/marini-mr-mr-3-id-tile.webp",
+              "alt": "Marini MR 3 ID",
+              "href": "/produkter/marini/släntstabilisering/mr-3-id",
+              "bullets": [
+                "Hydraulic",
+                "Weight: 450 - 650 kg"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "MR 4 ID",
+              "image": "/assets/img/marini-mr-mr-4-id-tile.webp",
+              "alt": "Marini MR 4 ID",
+              "href": "/produkter/marini/släntstabilisering/mr-4-id",
+              "bullets": [
+                "Hydraulic",
+                "Weight: 850 - 1,100 kg"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "MR 5 PN",
+              "image": "/assets/img/marini-mr-mr-5-pn-tile.webp",
+              "alt": "Marini MR 5 PN",
+              "href": "/produkter/marini/släntstabilisering/mr-5-pn",
+              "bullets": [
+                "Pneumatic",
+                "Weight: 390 - 460 kg"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "MR 5 ID",
+              "image": "/assets/img/marini-mr-mr-5-id-tile.webp",
+              "alt": "Marini MR 5 ID",
+              "href": "/produkter/marini/släntstabilisering/mr-5-id",
+              "bullets": [
+                "Hydraulic",
+                "Weight: 400 - 460 kg"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "MR 6 PN",
+              "image": "/assets/img/marini-mr-mr-6-pn-tile.webp",
+              "alt": "Marini MR 6 PN",
+              "href": "/produkter/marini/släntstabilisering/mr-6-pn",
+              "bullets": [
+                "Pneumatic",
+                "Weight: 300 - 330 kg"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "MR 6 ID",
+              "image": "/assets/img/marini-mr-mr-6-id-tile.webp",
+              "alt": "Marini MR 6 ID",
+              "href": "/produkter/marini/släntstabilisering/mr-6-id",
+              "bullets": [
+                "Hydraulic",
+                "Weight: 300 - 330 kg"
+              ],
+              "width": 1000,
+              "height": 1000
             }
-          ]
+          ],
+          "gen": true
         },
         {
           "type": "heading",

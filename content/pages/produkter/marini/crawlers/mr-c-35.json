@@ -1,6 +1,6 @@
 {
   "path": "/produkter/marini/crawlers/mr-c-35",
-  "updated": "2026-10-29",
+  "updated": "2026-11-26",
   "template": "product",
   "order": 6,
   "published": true,
@@ -23,13 +23,50 @@
           "gen": true
         },
         {
-          "type": "image",
+          "type": "model3d",
+          "src": "/assets/3d/marini-mr-c-35.bkm",
+          "poster": "/assets/img/marini-mrc-mr-c-35-iso.webp",
           "alt": "Marini MR-C 35",
-          "file": "/assets/img/marini-mrc-mr-c-35-iso.webp",
-          "width": 340,
-          "height": 344,
-          "source": "348x379",
-          "src": "/assets/img/marini-mrc-mr-c-35-iso.webp",
+          "label": "Marini MR-C 35, 3D-modell",
+          "size": "2,8 MB",
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "MR-C 35 är en hydraulisk larvrigg ur Marinis MR-C-serie med 55 kW motor och en vikt på 7 000 kg.",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Motoreffekt: 55 kW",
+            "Matningskraft: 35 kN",
+            "Vridmoment: 10 000 Nm",
+            "Mastens slaglängd: 1 800 - 3 300 mm",
+            "Vikt: 7 000 kg"
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Borrmetoder",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Rotationsborrning",
+            "Slagborrning",
+            "Slagborrning med självborrande stänger (hollow bar)"
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Kontakta oss</a> för pris, leveranstid eller hjälp att välja rätt modell.",
           "gen": true
         },
         {
@@ -86,44 +123,6 @@
               "height": 1050
             }
           ],
-          "gen": true
-        },
-        {
-          "type": "text",
-          "html": "MR-C 35 är en hydraulisk larvrigg ur Marinis MR-C-serie med 55 kW motor och en vikt på 7 000 kg.",
-          "gen": true
-        },
-        {
-          "type": "list",
-          "ordered": false,
-          "items": [
-            "Motoreffekt: 55 kW",
-            "Matningskraft: 35 kN",
-            "Vridmoment: 10 000 Nm",
-            "Mastens slaglängd: 1 800 - 3 300 mm",
-            "Vikt: 7 000 kg"
-          ],
-          "gen": true
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "Borrmetoder",
-          "gen": true
-        },
-        {
-          "type": "list",
-          "ordered": false,
-          "items": [
-            "Rotationsborrning",
-            "Slagborrning",
-            "Slagborrning med självborrande stänger (hollow bar)"
-          ],
-          "gen": true
-        },
-        {
-          "type": "text",
-          "html": "<a href=\"/kontakta-oss\">Kontakta oss</a> för pris, leveranstid eller hjälp att välja rätt modell.",
           "gen": true
         },
         {
@@ -239,13 +238,50 @@
           "gen": true
         },
         {
-          "type": "image",
+          "type": "model3d",
+          "src": "/assets/3d/marini-mr-c-35.bkm",
+          "poster": "/assets/img/marini-mrc-mr-c-35-iso.webp",
           "alt": "Marini MR-C 35",
-          "file": "/assets/img/marini-mrc-mr-c-35-iso.webp",
-          "width": 340,
-          "height": 344,
-          "source": "348x379",
-          "src": "/assets/img/marini-mrc-mr-c-35-iso.webp",
+          "label": "Marini MR-C 35, 3D model",
+          "size": "2.8 MB",
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "MR-C 35 is a hydraulic crawler drill rig from Marini's MR-C line with a 55 kW engine and a weight of 7,000 kg.",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Engine power: 55 kW",
+            "Feed force: 35 kN",
+            "Rotary torque: 10,000 Nm",
+            "Mast stroke: 1,800 - 3,300 mm",
+            "Weight: 7,000 kg"
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Drilling methods",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Rotation drilling",
+            "Percussion drilling",
+            "Percussion drilling with hollow bars"
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Contact us</a> for price, delivery time or help choosing the right model.",
           "gen": true
         },
         {
@@ -302,44 +338,6 @@
               "height": 1050
             }
           ],
-          "gen": true
-        },
-        {
-          "type": "text",
-          "html": "MR-C 35 is a hydraulic crawler drill rig from Marini's MR-C line with a 55 kW engine and a weight of 7,000 kg.",
-          "gen": true
-        },
-        {
-          "type": "list",
-          "ordered": false,
-          "items": [
-            "Engine power: 55 kW",
-            "Feed force: 35 kN",
-            "Rotary torque: 10,000 Nm",
-            "Mast stroke: 1,800 - 3,300 mm",
-            "Weight: 7,000 kg"
-          ],
-          "gen": true
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "Drilling methods",
-          "gen": true
-        },
-        {
-          "type": "list",
-          "ordered": false,
-          "items": [
-            "Rotation drilling",
-            "Percussion drilling",
-            "Percussion drilling with hollow bars"
-          ],
-          "gen": true
-        },
-        {
-          "type": "text",
-          "html": "<a href=\"/kontakta-oss\">Contact us</a> for price, delivery time or help choosing the right model.",
           "gen": true
         },
         {
@@ -455,13 +453,50 @@
           "gen": true
         },
         {
-          "type": "image",
+          "type": "model3d",
+          "src": "/assets/3d/marini-mr-c-35.bkm",
+          "poster": "/assets/img/marini-mrc-mr-c-35-iso.webp",
           "alt": "Marini MR-C 35",
-          "file": "/assets/img/marini-mrc-mr-c-35-iso.webp",
-          "width": 340,
-          "height": 344,
-          "source": "348x379",
-          "src": "/assets/img/marini-mrc-mr-c-35-iso.webp",
+          "label": "Marini MR-C 35, 3D model",
+          "size": "2.8 MB",
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "MR-C 35 es una perforadora hidráulica de orugas de la serie MR-C de Marini, con motor de 55 kW y un peso de 7.000 kg.",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Potencia del motor: 55 kW",
+            "Fuerza de empuje: 35 kN",
+            "Par de rotación: 10.000 Nm",
+            "Carrera del mástil: 1.800 - 3.300 mm",
+            "Peso: 7.000 kg"
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Métodos de perforación",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Perforación a rotación",
+            "Perforación a percusión",
+            "Perforación a percusión con barras huecas"
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Contáctenos</a> para precio, plazo de entrega o ayuda para elegir el modelo adecuado.",
           "gen": true
         },
         {
@@ -518,44 +553,6 @@
               "height": 1050
             }
           ],
-          "gen": true
-        },
-        {
-          "type": "text",
-          "html": "MR-C 35 es una perforadora hidráulica de orugas de la serie MR-C de Marini, con motor de 55 kW y un peso de 7.000 kg.",
-          "gen": true
-        },
-        {
-          "type": "list",
-          "ordered": false,
-          "items": [
-            "Potencia del motor: 55 kW",
-            "Fuerza de empuje: 35 kN",
-            "Par de rotación: 10.000 Nm",
-            "Carrera del mástil: 1.800 - 3.300 mm",
-            "Peso: 7.000 kg"
-          ],
-          "gen": true
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "Métodos de perforación",
-          "gen": true
-        },
-        {
-          "type": "list",
-          "ordered": false,
-          "items": [
-            "Perforación a rotación",
-            "Perforación a percusión",
-            "Perforación a percusión con barras huecas"
-          ],
-          "gen": true
-        },
-        {
-          "type": "text",
-          "html": "<a href=\"/kontakta-oss\">Contáctenos</a> para precio, plazo de entrega o ayuda para elegir el modelo adecuado.",
           "gen": true
         },
         {
@@ -671,13 +668,50 @@
           "gen": true
         },
         {
-          "type": "image",
+          "type": "model3d",
+          "src": "/assets/3d/marini-mr-c-35.bkm",
+          "poster": "/assets/img/marini-mrc-mr-c-35-iso.webp",
           "alt": "Marini MR-C 35",
-          "file": "/assets/img/marini-mrc-mr-c-35-iso.webp",
-          "width": 340,
-          "height": 344,
-          "source": "348x379",
-          "src": "/assets/img/marini-mrc-mr-c-35-iso.webp",
+          "label": "Marini MR-C 35, 3D model",
+          "size": "2.8 MB",
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "MR-C 35 er en hydraulisk beltegående borerigg i Marinis MR-C-serie med 55 kW motor og en vekt på 7 000 kg.",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Motoreffekt: 55 kW",
+            "Matekraft: 35 kN",
+            "Dreiemoment: 10 000 Nm",
+            "Mastens slaglengde: 1 800 - 3 300 mm",
+            "Vekt: 7 000 kg"
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Boremetoder",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Rotasjonsboring",
+            "Slagboring",
+            "Slagboring med hule stenger (hollow bar)"
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Kontakt oss</a> for pris, leveringstid eller hjelp til å velge riktig modell.",
           "gen": true
         },
         {
@@ -734,44 +768,6 @@
               "height": 1050
             }
           ],
-          "gen": true
-        },
-        {
-          "type": "text",
-          "html": "MR-C 35 er en hydraulisk beltegående borerigg i Marinis MR-C-serie med 55 kW motor og en vekt på 7 000 kg.",
-          "gen": true
-        },
-        {
-          "type": "list",
-          "ordered": false,
-          "items": [
-            "Motoreffekt: 55 kW",
-            "Matekraft: 35 kN",
-            "Dreiemoment: 10 000 Nm",
-            "Mastens slaglengde: 1 800 - 3 300 mm",
-            "Vekt: 7 000 kg"
-          ],
-          "gen": true
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "Boremetoder",
-          "gen": true
-        },
-        {
-          "type": "list",
-          "ordered": false,
-          "items": [
-            "Rotasjonsboring",
-            "Slagboring",
-            "Slagboring med hule stenger (hollow bar)"
-          ],
-          "gen": true
-        },
-        {
-          "type": "text",
-          "html": "<a href=\"/kontakta-oss\">Kontakt oss</a> for pris, leveringstid eller hjelp til å velge riktig modell.",
           "gen": true
         },
         {

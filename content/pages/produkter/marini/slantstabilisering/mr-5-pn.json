@@ -1,0 +1,351 @@
+{
+  "path": "/produkter/marini/släntstabilisering/mr-5-pn",
+  "updated": "2026-11-26",
+  "template": "product",
+  "order": 18,
+  "published": true,
+  "hideIn": [
+    "es",
+    "no",
+    "lt",
+    "lv",
+    "et",
+    "ru"
+  ],
+  "hero": {
+    "image": "/assets/img/marini-slantstabilisering-hero.webp"
+  },
+  "source": {
+    "url": "https://www.marinidrills.com/en/macchine-marini/mr-5-pn/"
+  },
+  "i18n": {
+    "sv": {
+      "title": "MR 5 PN",
+      "h1": "Marini MR 5 PN",
+      "seoTitle": "Marini MR 5 PN borrigg för släntstabilisering | Betongakuten",
+      "description": "MR 5 PN är en pneumatisk borrenhet ur Marinis MR-serie för släntstabilisering och mikropålning. Se den i 3D, med teknisk data och broschyr.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Marini logotyp",
+          "href": "/produkter/marini",
+          "width": 637,
+          "height": 86,
+          "src": "/assets/img/logo-marini.webp",
+          "gen": true
+        },
+        {
+          "type": "model3d",
+          "src": "/assets/3d/marini-mr-5-pn.bkm",
+          "poster": "/assets/img/marini-mr-mr-5-pn-iso.webp",
+          "alt": "Marini MR 5 PN",
+          "label": "Marini MR 5 PN, 3D-modell",
+          "size": "2,5 MB",
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "MR 5 PN står på en bred ram med fyra hjul som följer ojämn mark, och stöden kan vridas 90 grader så att riggen enkelt flyttas i sidled. Den drivs med tryckluft och kan utrustas med ett pneumatiskt rotationshuvud för sänkhammare upp till 4 tum eller med en pneumatisk borrhammare. Matningen drivs av en pneumatisk kolvmotor.",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Drift: Pneumatisk (tryckluft)",
+            "Matningskraft: 9,5 kN",
+            "Dragkraft (indragning): 9,5 kN",
+            "Vridmoment, rotation: 1 200 Nm",
+            "Mastens slaglängd: 1 260 - 1 760 mm",
+            "Vikt: 390 - 460 kg"
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Passande utrustning",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Rotationshuvuden: EP 120",
+            "Borrhammare: MA 100 S 3R"
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Kontakta oss</a> för pris, leveranstid eller hjälp att välja rätt modell.",
+          "gen": true
+        },
+        {
+          "type": "carousel",
+          "autoplay": true,
+          "interval": 6,
+          "items": [
+            {
+              "src": "/assets/img/marini-mr-mr-5-pn-p1.webp",
+              "alt": "Marini MR 5 PN (1/4)",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/marini-mr-mr-5-pn-p2.webp",
+              "alt": "Marini MR 5 PN (2/4)",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/marini-mr-mr-5-pn-p3.webp",
+              "alt": "Marini MR 5 PN (3/4)",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/marini-mr-mr-5-pn-p4.webp",
+              "alt": "Marini MR 5 PN (4/4)",
+              "width": 1400,
+              "height": 1050
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Broschyr (pneumatisk)",
+          "href": "/assets/docs/marini-slantstabilisering-mr-5-broschyr-2.pdf",
+          "gen": true
+        },
+        {
+          "type": "datasheet",
+          "title": "Teknisk data",
+          "tagline": "Marini MR 5 PN",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Specifikationer",
+              "rows": [
+                {
+                  "label": "Drift",
+                  "metric": "Pneumatisk (tryckluft)"
+                },
+                {
+                  "label": "Mastens slaglängd",
+                  "metric": "1 260 - 1 760 mm"
+                },
+                {
+                  "label": "Matningskraft",
+                  "metric": "9,5 kN"
+                },
+                {
+                  "label": "Dragkraft (indragning)",
+                  "metric": "9,5 kN"
+                },
+                {
+                  "label": "Vridmoment, rotation",
+                  "metric": "1 200 Nm"
+                },
+                {
+                  "label": "Varvtal, rotation",
+                  "metric": "40 - 45 rpm"
+                },
+                {
+                  "label": "Klämområde",
+                  "metric": "25 - 115 mm"
+                },
+                {
+                  "label": "Vikt",
+                  "metric": "390 - 460 kg"
+                }
+              ]
+            }
+          ],
+          "note": "",
+          "source": "Uppgifterna är hämtade ur Marinis broschyr och från marinidrills.com.",
+          "gen": true
+        },
+        {
+          "type": "related",
+          "title": "Se även",
+          "items": [
+            {
+              "href": "/produkter/marini/släntstabilisering/mr-5"
+            },
+            {
+              "href": "/produkter/marini/släntstabilisering/mr-5-id"
+            }
+          ],
+          "gen": true
+        }
+      ]
+    },
+    "en": {
+      "title": "MR 5 PN",
+      "h1": "Marini MR 5 PN",
+      "seoTitle": "Marini MR 5 PN drill rig for slope stabilisation | Betongakuten",
+      "description": "MR 5 PN is a pneumatic drilling unit from Marini's MR line for slope stabilisation and micropiling. See it in 3D, with technical data and brochure.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Marini logo",
+          "href": "/produkter/marini",
+          "width": 637,
+          "height": 86,
+          "src": "/assets/img/logo-marini.webp",
+          "gen": true
+        },
+        {
+          "type": "model3d",
+          "src": "/assets/3d/marini-mr-5-pn.bkm",
+          "poster": "/assets/img/marini-mr-mr-5-pn-iso.webp",
+          "alt": "Marini MR 5 PN",
+          "label": "Marini MR 5 PN, 3D model",
+          "size": "2.5 MB",
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "MR 5 PN stands on a wide frame with four wheels that follow uneven ground, and the supports turn 90 degrees so the rig is easy to move sideways. It runs on compressed air and can take a pneumatic rotary head for down-the-hole hammers up to 4 inches or a pneumatic drifter. The feed is driven by a pneumatic piston motor.",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Drive: Pneumatic (compressed air)",
+            "Feed force: 9.5 kN",
+            "Retract force: 9.5 kN",
+            "Rotary torque: 1,200 Nm",
+            "Mast stroke: 1,260 - 1,760 mm",
+            "Weight: 390 - 460 kg"
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Matching equipment",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Rotary heads: EP 120",
+            "Drifters: MA 100 S 3R"
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Contact us</a> for price, delivery time or help choosing the right model.",
+          "gen": true
+        },
+        {
+          "type": "carousel",
+          "autoplay": true,
+          "interval": 6,
+          "items": [
+            {
+              "src": "/assets/img/marini-mr-mr-5-pn-p1.webp",
+              "alt": "Marini MR 5 PN (1/4)",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/marini-mr-mr-5-pn-p2.webp",
+              "alt": "Marini MR 5 PN (2/4)",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/marini-mr-mr-5-pn-p3.webp",
+              "alt": "Marini MR 5 PN (3/4)",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/marini-mr-mr-5-pn-p4.webp",
+              "alt": "Marini MR 5 PN (4/4)",
+              "width": 1400,
+              "height": 1050
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Brochure (pneumatic)",
+          "href": "/assets/docs/marini-slantstabilisering-mr-5-broschyr-2.pdf",
+          "gen": true
+        },
+        {
+          "type": "datasheet",
+          "title": "Technical data",
+          "tagline": "Marini MR 5 PN",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Specifications",
+              "rows": [
+                {
+                  "label": "Drive",
+                  "metric": "Pneumatic (compressed air)"
+                },
+                {
+                  "label": "Mast stroke",
+                  "metric": "1,260 - 1,760 mm"
+                },
+                {
+                  "label": "Feed force",
+                  "metric": "9.5 kN"
+                },
+                {
+                  "label": "Retract force",
+                  "metric": "9.5 kN"
+                },
+                {
+                  "label": "Rotary torque",
+                  "metric": "1,200 Nm"
+                },
+                {
+                  "label": "Rotary speed",
+                  "metric": "40 - 45 rpm"
+                },
+                {
+                  "label": "Clamp range",
+                  "metric": "25 - 115 mm"
+                },
+                {
+                  "label": "Weight",
+                  "metric": "390 - 460 kg"
+                }
+              ]
+            }
+          ],
+          "note": "",
+          "source": "The figures come from Marini's brochure and marinidrills.com.",
+          "gen": true
+        },
+        {
+          "type": "related",
+          "title": "See also",
+          "items": [
+            {
+              "href": "/produkter/marini/släntstabilisering/mr-5"
+            },
+            {
+              "href": "/produkter/marini/släntstabilisering/mr-5-id"
+            }
+          ],
+          "gen": true
+        }
+      ]
+    }
+  }
+}

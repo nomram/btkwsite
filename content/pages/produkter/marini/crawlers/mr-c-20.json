@@ -1,6 +1,6 @@
 {
   "path": "/produkter/marini/crawlers/mr-c-20",
-  "updated": "2026-10-29",
+  "updated": "2026-11-26",
   "template": "product",
   "order": 2,
   "published": true,
@@ -23,13 +23,49 @@
           "gen": true
         },
         {
-          "type": "image",
+          "type": "model3d",
+          "src": "/assets/3d/marini-mr-c-20.bkm",
+          "poster": "/assets/img/marini-mrc-mr-c-20-iso.webp",
           "alt": "Marini MR-C 20",
-          "file": "/assets/img/marini-mrc-mr-c-20-iso.webp",
-          "width": 329,
-          "height": 371,
-          "source": "347x374",
-          "src": "/assets/img/marini-mrc-mr-c-20-iso.webp",
+          "label": "Marini MR-C 20, 3D-modell",
+          "size": "1,8 MB",
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "MR-C 20 är en hydraulisk larvrigg ur Marinis MR-C-serie med 22 kW motor och en vikt på 3 100 kg.",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Motoreffekt: 22 kW",
+            "Matningskraft: 25 kN",
+            "Vridmoment: 5 000 Nm",
+            "Mastens slaglängd: 1 300 - 1 800 mm",
+            "Vikt: 3 100 kg"
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Borrmetoder",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Rotationsborrning",
+            "Slagborrning"
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Kontakta oss</a> för pris, leveranstid eller hjälp att välja rätt modell.",
           "gen": true
         },
         {
@@ -68,43 +104,6 @@
               "height": 1050
             }
           ],
-          "gen": true
-        },
-        {
-          "type": "text",
-          "html": "MR-C 20 är en hydraulisk larvrigg ur Marinis MR-C-serie med 22 kW motor och en vikt på 3 100 kg.",
-          "gen": true
-        },
-        {
-          "type": "list",
-          "ordered": false,
-          "items": [
-            "Motoreffekt: 22 kW",
-            "Matningskraft: 25 kN",
-            "Vridmoment: 5 000 Nm",
-            "Mastens slaglängd: 1 300 - 1 800 mm",
-            "Vikt: 3 100 kg"
-          ],
-          "gen": true
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "Borrmetoder",
-          "gen": true
-        },
-        {
-          "type": "list",
-          "ordered": false,
-          "items": [
-            "Rotationsborrning",
-            "Slagborrning"
-          ],
-          "gen": true
-        },
-        {
-          "type": "text",
-          "html": "<a href=\"/kontakta-oss\">Kontakta oss</a> för pris, leveranstid eller hjälp att välja rätt modell.",
           "gen": true
         },
         {
@@ -228,13 +227,49 @@
           "gen": true
         },
         {
-          "type": "image",
+          "type": "model3d",
+          "src": "/assets/3d/marini-mr-c-20.bkm",
+          "poster": "/assets/img/marini-mrc-mr-c-20-iso.webp",
           "alt": "Marini MR-C 20",
-          "file": "/assets/img/marini-mrc-mr-c-20-iso.webp",
-          "width": 329,
-          "height": 371,
-          "source": "347x374",
-          "src": "/assets/img/marini-mrc-mr-c-20-iso.webp",
+          "label": "Marini MR-C 20, 3D model",
+          "size": "1.8 MB",
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "MR-C 20 is a hydraulic crawler drill rig from Marini's MR-C line with a 22 kW engine and a weight of 3,100 kg.",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Engine power: 22 kW",
+            "Feed force: 25 kN",
+            "Rotary torque: 5,000 Nm",
+            "Mast stroke: 1,300 - 1,800 mm",
+            "Weight: 3,100 kg"
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Drilling methods",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Rotation drilling",
+            "Percussion drilling"
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Contact us</a> for price, delivery time or help choosing the right model.",
           "gen": true
         },
         {
@@ -273,43 +308,6 @@
               "height": 1050
             }
           ],
-          "gen": true
-        },
-        {
-          "type": "text",
-          "html": "MR-C 20 is a hydraulic crawler drill rig from Marini's MR-C line with a 22 kW engine and a weight of 3,100 kg.",
-          "gen": true
-        },
-        {
-          "type": "list",
-          "ordered": false,
-          "items": [
-            "Engine power: 22 kW",
-            "Feed force: 25 kN",
-            "Rotary torque: 5,000 Nm",
-            "Mast stroke: 1,300 - 1,800 mm",
-            "Weight: 3,100 kg"
-          ],
-          "gen": true
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "Drilling methods",
-          "gen": true
-        },
-        {
-          "type": "list",
-          "ordered": false,
-          "items": [
-            "Rotation drilling",
-            "Percussion drilling"
-          ],
-          "gen": true
-        },
-        {
-          "type": "text",
-          "html": "<a href=\"/kontakta-oss\">Contact us</a> for price, delivery time or help choosing the right model.",
           "gen": true
         },
         {
@@ -433,13 +431,49 @@
           "gen": true
         },
         {
-          "type": "image",
+          "type": "model3d",
+          "src": "/assets/3d/marini-mr-c-20.bkm",
+          "poster": "/assets/img/marini-mrc-mr-c-20-iso.webp",
           "alt": "Marini MR-C 20",
-          "file": "/assets/img/marini-mrc-mr-c-20-iso.webp",
-          "width": 329,
-          "height": 371,
-          "source": "347x374",
-          "src": "/assets/img/marini-mrc-mr-c-20-iso.webp",
+          "label": "Marini MR-C 20, 3D model",
+          "size": "1.8 MB",
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "MR-C 20 es una perforadora hidráulica de orugas de la serie MR-C de Marini, con motor de 22 kW y un peso de 3.100 kg.",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Potencia del motor: 22 kW",
+            "Fuerza de empuje: 25 kN",
+            "Par de rotación: 5.000 Nm",
+            "Carrera del mástil: 1.300 - 1.800 mm",
+            "Peso: 3.100 kg"
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Métodos de perforación",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Perforación a rotación",
+            "Perforación a percusión"
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Contáctenos</a> para precio, plazo de entrega o ayuda para elegir el modelo adecuado.",
           "gen": true
         },
         {
@@ -478,43 +512,6 @@
               "height": 1050
             }
           ],
-          "gen": true
-        },
-        {
-          "type": "text",
-          "html": "MR-C 20 es una perforadora hidráulica de orugas de la serie MR-C de Marini, con motor de 22 kW y un peso de 3.100 kg.",
-          "gen": true
-        },
-        {
-          "type": "list",
-          "ordered": false,
-          "items": [
-            "Potencia del motor: 22 kW",
-            "Fuerza de empuje: 25 kN",
-            "Par de rotación: 5.000 Nm",
-            "Carrera del mástil: 1.300 - 1.800 mm",
-            "Peso: 3.100 kg"
-          ],
-          "gen": true
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "Métodos de perforación",
-          "gen": true
-        },
-        {
-          "type": "list",
-          "ordered": false,
-          "items": [
-            "Perforación a rotación",
-            "Perforación a percusión"
-          ],
-          "gen": true
-        },
-        {
-          "type": "text",
-          "html": "<a href=\"/kontakta-oss\">Contáctenos</a> para precio, plazo de entrega o ayuda para elegir el modelo adecuado.",
           "gen": true
         },
         {
@@ -638,13 +635,49 @@
           "gen": true
         },
         {
-          "type": "image",
+          "type": "model3d",
+          "src": "/assets/3d/marini-mr-c-20.bkm",
+          "poster": "/assets/img/marini-mrc-mr-c-20-iso.webp",
           "alt": "Marini MR-C 20",
-          "file": "/assets/img/marini-mrc-mr-c-20-iso.webp",
-          "width": 329,
-          "height": 371,
-          "source": "347x374",
-          "src": "/assets/img/marini-mrc-mr-c-20-iso.webp",
+          "label": "Marini MR-C 20, 3D model",
+          "size": "1.8 MB",
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "MR-C 20 er en hydraulisk beltegående borerigg i Marinis MR-C-serie med 22 kW motor og en vekt på 3 100 kg.",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Motoreffekt: 22 kW",
+            "Matekraft: 25 kN",
+            "Dreiemoment: 5 000 Nm",
+            "Mastens slaglengde: 1 300 - 1 800 mm",
+            "Vekt: 3 100 kg"
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Boremetoder",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Rotasjonsboring",
+            "Slagboring"
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Kontakt oss</a> for pris, leveringstid eller hjelp til å velge riktig modell.",
           "gen": true
         },
         {
@@ -683,43 +716,6 @@
               "height": 1050
             }
           ],
-          "gen": true
-        },
-        {
-          "type": "text",
-          "html": "MR-C 20 er en hydraulisk beltegående borerigg i Marinis MR-C-serie med 22 kW motor og en vekt på 3 100 kg.",
-          "gen": true
-        },
-        {
-          "type": "list",
-          "ordered": false,
-          "items": [
-            "Motoreffekt: 22 kW",
-            "Matekraft: 25 kN",
-            "Dreiemoment: 5 000 Nm",
-            "Mastens slaglengde: 1 300 - 1 800 mm",
-            "Vekt: 3 100 kg"
-          ],
-          "gen": true
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "Boremetoder",
-          "gen": true
-        },
-        {
-          "type": "list",
-          "ordered": false,
-          "items": [
-            "Rotasjonsboring",
-            "Slagboring"
-          ],
-          "gen": true
-        },
-        {
-          "type": "text",
-          "html": "<a href=\"/kontakta-oss\">Kontakt oss</a> for pris, leveringstid eller hjelp til å velge riktig modell.",
           "gen": true
         },
         {

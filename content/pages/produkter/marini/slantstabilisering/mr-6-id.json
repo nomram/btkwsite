@@ -1,0 +1,293 @@
+{
+  "path": "/produkter/marini/släntstabilisering/mr-6-id",
+  "updated": "2026-11-26",
+  "template": "product",
+  "order": 21,
+  "published": true,
+  "hideIn": [
+    "es",
+    "no",
+    "lt",
+    "lv",
+    "et",
+    "ru"
+  ],
+  "hero": {
+    "image": "/assets/img/marini-slantstabilisering-hero.webp"
+  },
+  "source": {
+    "url": "https://www.marinidrills.com/en/macchine-marini/mr-6-id/"
+  },
+  "i18n": {
+    "sv": {
+      "title": "MR 6 ID",
+      "h1": "Marini MR 6 ID",
+      "seoTitle": "Marini MR 6 ID borrigg för släntstabilisering | Betongakuten",
+      "description": "MR 6 ID är en hydraulisk borrenhet ur Marinis MR-serie för släntstabilisering och mikropålning. Se den i 3D, med teknisk data och broschyr.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Marini logotyp",
+          "href": "/produkter/marini",
+          "width": 637,
+          "height": 86,
+          "src": "/assets/img/logo-marini.webp",
+          "gen": true
+        },
+        {
+          "type": "model3d",
+          "src": "/assets/3d/marini-mr-6-id.bkm",
+          "poster": "/assets/img/marini-mr-mr-6-id-iso.webp",
+          "alt": "Marini MR 6 ID",
+          "label": "Marini MR 6 ID, 3D-modell",
+          "size": "0,8 MB",
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "MR 6 ID är en bärbar hydraulisk borrenhet för mikropålar inne i byggnader och i trånga utrymmen. Masten är modulär, så längden kan anpassas efter utrymmet, och allt styrs från en vridbar manöverpanel. Den drivs av ett separat hydraulaggregat.",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Drift: Hydraulisk",
+            "Matningskraft: 6,0 kN",
+            "Dragkraft (indragning): 10,0 kN",
+            "Vridmoment, rotation: 1 600 Nm",
+            "Mastens slaglängd: 700 - 1 200 mm",
+            "Vikt: 300 - 330 kg"
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Passande utrustning",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Hydraulaggregat: 20-E, 23-D"
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Kontakta oss</a> för pris, leveranstid eller hjälp att välja rätt modell.",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Broschyr (hydraulisk)",
+          "href": "/assets/docs/marini-slantstabilisering-mr-6-broschyr-ny-flik.pdf",
+          "gen": true
+        },
+        {
+          "type": "datasheet",
+          "title": "Teknisk data",
+          "tagline": "Marini MR 6 ID",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Specifikationer",
+              "rows": [
+                {
+                  "label": "Drift",
+                  "metric": "Hydraulisk"
+                },
+                {
+                  "label": "Mastens slaglängd",
+                  "metric": "700 - 1 200 mm"
+                },
+                {
+                  "label": "Matningskraft",
+                  "metric": "6,0 kN"
+                },
+                {
+                  "label": "Dragkraft (indragning)",
+                  "metric": "10,0 kN"
+                },
+                {
+                  "label": "Vridmoment, rotation",
+                  "metric": "1 600 Nm"
+                },
+                {
+                  "label": "Varvtal, rotation",
+                  "metric": "60 rpm"
+                },
+                {
+                  "label": "Klämområde",
+                  "metric": "25 - 115 mm"
+                },
+                {
+                  "label": "Vikt",
+                  "metric": "300 - 330 kg"
+                },
+                {
+                  "label": "Hydraulaggregat",
+                  "metric": "20-E, 23-D"
+                }
+              ]
+            }
+          ],
+          "note": "",
+          "source": "Uppgifterna är hämtade ur Marinis broschyr och från marinidrills.com.",
+          "gen": true
+        },
+        {
+          "type": "related",
+          "title": "Se även",
+          "items": [
+            {
+              "href": "/produkter/marini/släntstabilisering/mr-6"
+            },
+            {
+              "href": "/produkter/marini/släntstabilisering/mr-6-pn"
+            }
+          ],
+          "gen": true
+        }
+      ]
+    },
+    "en": {
+      "title": "MR 6 ID",
+      "h1": "Marini MR 6 ID",
+      "seoTitle": "Marini MR 6 ID drill rig for slope stabilisation | Betongakuten",
+      "description": "MR 6 ID is a hydraulic drilling unit from Marini's MR line for slope stabilisation and micropiling. See it in 3D, with technical data and brochure.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Marini logo",
+          "href": "/produkter/marini",
+          "width": 637,
+          "height": 86,
+          "src": "/assets/img/logo-marini.webp",
+          "gen": true
+        },
+        {
+          "type": "model3d",
+          "src": "/assets/3d/marini-mr-6-id.bkm",
+          "poster": "/assets/img/marini-mr-mr-6-id-iso.webp",
+          "alt": "Marini MR 6 ID",
+          "label": "Marini MR 6 ID, 3D model",
+          "size": "0.8 MB",
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "MR 6 ID is a portable hydraulic drilling unit for micropiles inside buildings and in confined spaces. The mast is modular, so its length can be adapted to the space, and everything is controlled from a swivelling control panel. It runs on a separate hydraulic power unit.",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Drive: Hydraulic",
+            "Feed force: 6.0 kN",
+            "Retract force: 10.0 kN",
+            "Rotary torque: 1,600 Nm",
+            "Mast stroke: 700 - 1,200 mm",
+            "Weight: 300 - 330 kg"
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Matching equipment",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Hydraulic power unit: 20-E, 23-D"
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Contact us</a> for price, delivery time or help choosing the right model.",
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Brochure (hydraulic)",
+          "href": "/assets/docs/marini-slantstabilisering-mr-6-broschyr-ny-flik.pdf",
+          "gen": true
+        },
+        {
+          "type": "datasheet",
+          "title": "Technical data",
+          "tagline": "Marini MR 6 ID",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Specifications",
+              "rows": [
+                {
+                  "label": "Drive",
+                  "metric": "Hydraulic"
+                },
+                {
+                  "label": "Mast stroke",
+                  "metric": "700 - 1,200 mm"
+                },
+                {
+                  "label": "Feed force",
+                  "metric": "6.0 kN"
+                },
+                {
+                  "label": "Retract force",
+                  "metric": "10.0 kN"
+                },
+                {
+                  "label": "Rotary torque",
+                  "metric": "1,600 Nm"
+                },
+                {
+                  "label": "Rotary speed",
+                  "metric": "60 rpm"
+                },
+                {
+                  "label": "Clamp range",
+                  "metric": "25 - 115 mm"
+                },
+                {
+                  "label": "Weight",
+                  "metric": "300 - 330 kg"
+                },
+                {
+                  "label": "Hydraulic power unit",
+                  "metric": "20-E, 23-D"
+                }
+              ]
+            }
+          ],
+          "note": "",
+          "source": "The figures come from Marini's brochure and marinidrills.com.",
+          "gen": true
+        },
+        {
+          "type": "related",
+          "title": "See also",
+          "items": [
+            {
+              "href": "/produkter/marini/släntstabilisering/mr-6"
+            },
+            {
+              "href": "/produkter/marini/släntstabilisering/mr-6-pn"
+            }
+          ],
+          "gen": true
+        }
+      ]
+    }
+  }
+}

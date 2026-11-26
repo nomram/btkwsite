@@ -1,0 +1,315 @@
+{
+  "path": "/produkter/marini/släntstabilisering/mr-1-pn",
+  "updated": "2026-11-26",
+  "template": "product",
+  "order": 10,
+  "published": true,
+  "hideIn": [
+    "es",
+    "no",
+    "lt",
+    "lv",
+    "et",
+    "ru"
+  ],
+  "hero": {
+    "image": "/assets/img/marini-slantstabilisering-hero.webp"
+  },
+  "source": {
+    "url": "https://www.marinidrills.com/en/macchine-marini/mr-1-pn/"
+  },
+  "i18n": {
+    "sv": {
+      "title": "MR 1",
+      "h1": "Marini MR 1",
+      "seoTitle": "Marini MR 1 borrigg för släntstabilisering | Betongakuten",
+      "description": "MR 1 är en pneumatisk borrenhet ur Marinis MR-serie för släntstabilisering och mikropålning. Se den i 3D, med teknisk data och broschyr.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Marini logotyp",
+          "href": "/produkter/marini",
+          "width": 637,
+          "height": 86,
+          "src": "/assets/img/logo-marini.webp",
+          "gen": true
+        },
+        {
+          "type": "model3d",
+          "src": "/assets/3d/marini-mr-1-pn.bkm",
+          "poster": "/assets/img/marini-mr-mr-1-pn-iso.webp",
+          "alt": "Marini MR 1",
+          "label": "Marini MR 1, 3D-modell",
+          "size": "1,1 MB",
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "MR 1 är Marinis lättaste borrenhet för branta slänter. Den drivs med tryckluft och står på en rörram med två hjul, så den följer ojämn mark när den flyttas. MR 1 utrustas med en pneumatisk borrhammare, och matningen drivs av en pneumatisk lamell- eller kolvmotor.",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Drift: Pneumatisk (tryckluft)",
+            "Matningskraft: 5,0 kN",
+            "Dragkraft (indragning): 5,0 kN",
+            "Vridmoment, rotation: 850 Nm",
+            "Mastens slaglängd: 1 260 - 1 760 mm",
+            "Vikt: 180 - 200 kg"
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Passande utrustning",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Rotationshuvuden: EP 120",
+            "Borrhammare: MA 100 S 3R"
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Kontakta oss</a> för pris, leveranstid eller hjälp att välja rätt modell.",
+          "gen": true
+        },
+        {
+          "type": "carousel",
+          "autoplay": true,
+          "interval": 6,
+          "items": [
+            {
+              "src": "/assets/img/marini-mr-mr-1-pn-p1.webp",
+              "alt": "Marini MR 1 (1/2)",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/marini-mr-mr-1-pn-p2.webp",
+              "alt": "Marini MR 1 (2/2)",
+              "width": 1400,
+              "height": 1050
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Kort broschyr (ENG)",
+          "href": "/assets/docs/marini-slantstabilisering-las-mer.pdf",
+          "gen": true
+        },
+        {
+          "type": "datasheet",
+          "title": "Teknisk data",
+          "tagline": "Marini MR 1",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Specifikationer",
+              "rows": [
+                {
+                  "label": "Drift",
+                  "metric": "Pneumatisk (tryckluft)"
+                },
+                {
+                  "label": "Mastens slaglängd",
+                  "metric": "1 260 - 1 760 mm"
+                },
+                {
+                  "label": "Matningskraft",
+                  "metric": "5,0 kN"
+                },
+                {
+                  "label": "Dragkraft (indragning)",
+                  "metric": "5,0 kN"
+                },
+                {
+                  "label": "Vridmoment, rotation",
+                  "metric": "850 Nm"
+                },
+                {
+                  "label": "Varvtal, rotation",
+                  "metric": "40 rpm"
+                },
+                {
+                  "label": "Vikt",
+                  "metric": "180 - 200 kg"
+                }
+              ]
+            }
+          ],
+          "note": "",
+          "source": "Uppgifterna är hämtade ur Marinis broschyr och från marinidrills.com.",
+          "gen": true
+        },
+        {
+          "type": "related",
+          "title": "Se även",
+          "items": [
+            {
+              "href": "/produkter/marini/släntstabilisering",
+              "mutual": false
+            }
+          ],
+          "gen": true
+        }
+      ]
+    },
+    "en": {
+      "title": "MR 1",
+      "h1": "Marini MR 1",
+      "seoTitle": "Marini MR 1 drill rig for slope stabilisation | Betongakuten",
+      "description": "MR 1 is a pneumatic drilling unit from Marini's MR line for slope stabilisation and micropiling. See it in 3D, with technical data and brochure.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Marini logo",
+          "href": "/produkter/marini",
+          "width": 637,
+          "height": 86,
+          "src": "/assets/img/logo-marini.webp",
+          "gen": true
+        },
+        {
+          "type": "model3d",
+          "src": "/assets/3d/marini-mr-1-pn.bkm",
+          "poster": "/assets/img/marini-mr-mr-1-pn-iso.webp",
+          "alt": "Marini MR 1",
+          "label": "Marini MR 1, 3D model",
+          "size": "1.1 MB",
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "MR 1 is Marini's lightest drilling unit for steep slopes. It runs on compressed air and stands on a tubular frame with two wheels, so it follows uneven ground as it is moved. MR 1 is fitted with a pneumatic drifter, and the feed is driven by a pneumatic vane or piston motor.",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Drive: Pneumatic (compressed air)",
+            "Feed force: 5.0 kN",
+            "Retract force: 5.0 kN",
+            "Rotary torque: 850 Nm",
+            "Mast stroke: 1,260 - 1,760 mm",
+            "Weight: 180 - 200 kg"
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Matching equipment",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Rotary heads: EP 120",
+            "Drifters: MA 100 S 3R"
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Contact us</a> for price, delivery time or help choosing the right model.",
+          "gen": true
+        },
+        {
+          "type": "carousel",
+          "autoplay": true,
+          "interval": 6,
+          "items": [
+            {
+              "src": "/assets/img/marini-mr-mr-1-pn-p1.webp",
+              "alt": "Marini MR 1 (1/2)",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/marini-mr-mr-1-pn-p2.webp",
+              "alt": "Marini MR 1 (2/2)",
+              "width": 1400,
+              "height": 1050
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Short brochure (ENG)",
+          "href": "/assets/docs/marini-slantstabilisering-las-mer.pdf",
+          "gen": true
+        },
+        {
+          "type": "datasheet",
+          "title": "Technical data",
+          "tagline": "Marini MR 1",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Specifications",
+              "rows": [
+                {
+                  "label": "Drive",
+                  "metric": "Pneumatic (compressed air)"
+                },
+                {
+                  "label": "Mast stroke",
+                  "metric": "1,260 - 1,760 mm"
+                },
+                {
+                  "label": "Feed force",
+                  "metric": "5.0 kN"
+                },
+                {
+                  "label": "Retract force",
+                  "metric": "5.0 kN"
+                },
+                {
+                  "label": "Rotary torque",
+                  "metric": "850 Nm"
+                },
+                {
+                  "label": "Rotary speed",
+                  "metric": "40 rpm"
+                },
+                {
+                  "label": "Weight",
+                  "metric": "180 - 200 kg"
+                }
+              ]
+            }
+          ],
+          "note": "",
+          "source": "The figures come from Marini's brochure and marinidrills.com.",
+          "gen": true
+        },
+        {
+          "type": "related",
+          "title": "See also",
+          "items": [
+            {
+              "href": "/produkter/marini/släntstabilisering",
+              "mutual": false
+            }
+          ],
+          "gen": true
+        }
+      ]
+    }
+  }
+}

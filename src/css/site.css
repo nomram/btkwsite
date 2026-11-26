@@ -2846,3 +2846,43 @@ body::before { display: none; }
 .exc__m.is-on { fill: var(--text); }
 .card__link:hover .exc__m.is-on { fill: var(--primary); }
 .exc__ground { stroke: #d9d4ce; stroke-width: .6; fill: none; }
+
+/* r41: machine picture that turns into a live 3D model (viewer3d.js) */
+.m3d { position: relative; margin: 0 0 1.8rem; background: #fff; border: 1px solid var(--line); aspect-ratio: 1 / 1; max-height: 80vh; overflow: hidden; max-width: none !important; }
+.m3d__pic { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; padding: 5% 5% 15%; transition: opacity .5s ease; }
+.m3d__pic img { max-width: 100%; max-height: 100%; width: auto !important; height: auto !important; object-fit: contain; }
+.m3d__go { position: absolute; left: 1rem; bottom: 1rem; display: flex; align-items: center; gap: .75rem; padding: .7rem 1.1rem .7rem .85rem; background: rgba(255, 255, 255, .96); border: 1px solid var(--text); color: var(--text); cursor: pointer; font: inherit; text-align: left; transition: background .2s, color .2s; }
+.m3d__go svg { color: var(--primary); flex: none; transition: transform .6s cubic-bezier(.2, .8, .2, 1); }
+.m3d__go:hover, .m3d__go:focus-visible { background: var(--text); color: #fff; }
+.m3d__go:hover svg { transform: rotate(-30deg); }
+.m3d__got strong { display: block; font-size: .78rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; }
+.m3d__got small { display: block; margin-top: .15rem; font-size: .78rem; color: var(--muted); transition: color .2s; }
+.m3d__go:hover small, .m3d__go:focus-visible small { color: rgba(255, 255, 255, .75); }
+.m3d.is-3d .m3d__go { visibility: hidden; }
+.m3d.is-3d:not(.is-loading) .m3d__pic { opacity: 0; }
+.m3d__stage { position: absolute; inset: 0; }
+.m3d:not(.is-loading) .m3d__stage { background: #fff; animation: m3dIn .6s ease both; }
+@keyframes m3dIn { from { opacity: 0; } to { opacity: 1; } }
+.m3d__canvas { width: 100%; height: 100%; display: block; cursor: grab; touch-action: none; outline: none; }
+.m3d__canvas:active { cursor: grabbing; }
+.m3d__canvas:focus-visible { box-shadow: inset 0 0 0 2px var(--primary); }
+.m3d__load { position: absolute; left: 50%; bottom: 1.4rem; transform: translateX(-50%); width: min(18rem, 72%); padding: .75rem 1rem .85rem; background: rgba(255, 255, 255, .94); text-align: center; }
+.m3d__loadt { display: block; margin-bottom: .5rem; font-size: .72rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--text); }
+.m3d__track { display: block; height: 2px; background: var(--line); }
+.m3d__fill { display: block; width: 0; height: 100%; background: var(--primary); transition: width .2s; }
+.m3d__tools { position: absolute; right: .8rem; bottom: .8rem; display: flex; gap: .45rem; }
+.m3d__btn { width: 2.6rem; height: 2.6rem; padding: 0; border-radius: 50% !important; border: 1px solid var(--line); background: rgba(255, 255, 255, .96); color: var(--text); display: flex; align-items: center; justify-content: center; cursor: pointer; transition: border-color .2s, color .2s; }
+.m3d__btn:hover, .m3d__btn:focus-visible { border-color: var(--text); }
+.m3d__btn.is-on { color: var(--primary); border-color: var(--primary); }
+.m3d__hint { position: absolute; left: 1rem; bottom: 1.1rem; margin: 0 !important; max-width: calc(100% - 13rem); font-size: .8rem !important; line-height: 1.4; color: var(--muted); transition: opacity .8s ease; pointer-events: none; }
+.m3d__hint.is-gone { opacity: 0; }
+.m3d__stage:fullscreen { background: #fff; }
+.m3d__fail { position: absolute; left: 1rem; bottom: 1rem; margin: 0 !important; font-size: .85rem; color: var(--muted); }
+@media (max-width: 560px) { .m3d__got small { display: none; } .m3d__hint { display: none; } .m3d__btn { width: 2.3rem; height: 2.3rem; } }
+@media print { .m3d__go, .m3d__stage { display: none !important; } }
+.m3dpair { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); gap: 2rem clamp(2rem, 4.5vw, 4rem); align-items: start; margin: .5rem 0 2.5rem; max-width: none !important; }
+.m3dpair .m3d { aspect-ratio: 4 / 5; margin: 0; max-height: 86vh; }
+.m3dpair__txt > :first-child { margin-top: 0; }
+.m3dpair__txt h3 { margin-top: 1.6rem; }
+@media (min-width: 861px) { .m3dpair .m3d { position: sticky; top: 6rem; } }
+@media (max-width: 860px) { .m3dpair { grid-template-columns: minmax(0, 1fr); } .m3dpair .m3d { aspect-ratio: 1 / 1; } }

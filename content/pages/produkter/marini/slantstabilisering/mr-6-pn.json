@@ -1,0 +1,375 @@
+{
+  "path": "/produkter/marini/släntstabilisering/mr-6-pn",
+  "updated": "2026-11-26",
+  "template": "product",
+  "order": 20,
+  "published": true,
+  "hideIn": [
+    "es",
+    "no",
+    "lt",
+    "lv",
+    "et",
+    "ru"
+  ],
+  "hero": {
+    "image": "/assets/img/marini-slantstabilisering-hero.webp"
+  },
+  "source": {
+    "url": "https://www.marinidrills.com/en/macchine-marini/mr-6-pn/"
+  },
+  "i18n": {
+    "sv": {
+      "title": "MR 6 PN",
+      "h1": "Marini MR 6 PN",
+      "seoTitle": "Marini MR 6 PN borrigg för släntstabilisering | Betongakuten",
+      "description": "MR 6 PN är en pneumatisk borrenhet ur Marinis MR-serie för släntstabilisering och mikropålning. Se den i 3D, med teknisk data och broschyr.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Marini logotyp",
+          "href": "/produkter/marini",
+          "width": 637,
+          "height": 86,
+          "src": "/assets/img/logo-marini.webp",
+          "gen": true
+        },
+        {
+          "type": "model3d",
+          "src": "/assets/3d/marini-mr-6-pn.bkm",
+          "poster": "/assets/img/marini-mr-mr-6-pn-iso.webp",
+          "alt": "Marini MR 6 PN",
+          "label": "Marini MR 6 PN, 3D-modell",
+          "size": "1,8 MB",
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "MR 6 PN är en bärbar pneumatisk borrenhet för mikropålar inne i byggnader och i trånga utrymmen. Masten är modulär, så längden kan anpassas efter utrymmet, och allt styrs från en vridbar manöverpanel.",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Drift: Pneumatisk (tryckluft)",
+            "Matningskraft: 9,5 kN",
+            "Dragkraft (indragning): 9,5 kN",
+            "Vridmoment, rotation: 1 200 Nm",
+            "Mastens slaglängd: 700 - 1 200 mm",
+            "Vikt: 300 - 330 kg"
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Passande utrustning",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Rotationshuvuden: EP 120",
+            "Borrhammare: MA 100 S 3R"
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Kontakta oss</a> för pris, leveranstid eller hjälp att välja rätt modell.",
+          "gen": true
+        },
+        {
+          "type": "carousel",
+          "autoplay": true,
+          "interval": 6,
+          "items": [
+            {
+              "src": "/assets/img/marini-mr-mr-6-pn-p1.webp",
+              "alt": "Marini MR 6 PN (1/6)",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/marini-mr-mr-6-pn-p2.webp",
+              "alt": "Marini MR 6 PN (2/6)",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/marini-mr-mr-6-pn-p3.webp",
+              "alt": "Marini MR 6 PN (3/6)",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/marini-mr-mr-6-pn-p4.webp",
+              "alt": "Marini MR 6 PN (4/6)",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/marini-mr-mr-6-pn-p5.webp",
+              "alt": "Marini MR 6 PN (5/6)",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/marini-mr-mr-6-pn-p6.webp",
+              "alt": "Marini MR 6 PN (6/6)",
+              "width": 1400,
+              "height": 1050
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Broschyr (pneumatisk)",
+          "href": "/assets/docs/marini-slantstabilisering-mr-6-broschyr-ny-flik-2.pdf",
+          "gen": true
+        },
+        {
+          "type": "datasheet",
+          "title": "Teknisk data",
+          "tagline": "Marini MR 6 PN",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Specifikationer",
+              "rows": [
+                {
+                  "label": "Drift",
+                  "metric": "Pneumatisk (tryckluft)"
+                },
+                {
+                  "label": "Mastens slaglängd",
+                  "metric": "700 - 1 200 mm"
+                },
+                {
+                  "label": "Matningskraft",
+                  "metric": "9,5 kN"
+                },
+                {
+                  "label": "Dragkraft (indragning)",
+                  "metric": "9,5 kN"
+                },
+                {
+                  "label": "Vridmoment, rotation",
+                  "metric": "1 200 Nm"
+                },
+                {
+                  "label": "Varvtal, rotation",
+                  "metric": "40 - 45 rpm"
+                },
+                {
+                  "label": "Klämområde",
+                  "metric": "25 - 115 mm"
+                },
+                {
+                  "label": "Vikt",
+                  "metric": "300 - 330 kg"
+                }
+              ]
+            }
+          ],
+          "note": "",
+          "source": "Uppgifterna är hämtade ur Marinis broschyr och från marinidrills.com.",
+          "gen": true
+        },
+        {
+          "type": "related",
+          "title": "Se även",
+          "items": [
+            {
+              "href": "/produkter/marini/släntstabilisering/mr-6"
+            },
+            {
+              "href": "/produkter/marini/släntstabilisering/mr-6-id"
+            }
+          ],
+          "gen": true
+        }
+      ]
+    },
+    "en": {
+      "title": "MR 6 PN",
+      "h1": "Marini MR 6 PN",
+      "seoTitle": "Marini MR 6 PN drill rig for slope stabilisation | Betongakuten",
+      "description": "MR 6 PN is a pneumatic drilling unit from Marini's MR line for slope stabilisation and micropiling. See it in 3D, with technical data and brochure.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Marini logo",
+          "href": "/produkter/marini",
+          "width": 637,
+          "height": 86,
+          "src": "/assets/img/logo-marini.webp",
+          "gen": true
+        },
+        {
+          "type": "model3d",
+          "src": "/assets/3d/marini-mr-6-pn.bkm",
+          "poster": "/assets/img/marini-mr-mr-6-pn-iso.webp",
+          "alt": "Marini MR 6 PN",
+          "label": "Marini MR 6 PN, 3D model",
+          "size": "1.8 MB",
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "MR 6 PN is a portable pneumatic drilling unit for micropiles inside buildings and in confined spaces. The mast is modular, so its length can be adapted to the space, and everything is controlled from a swivelling control panel.",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Drive: Pneumatic (compressed air)",
+            "Feed force: 9.5 kN",
+            "Retract force: 9.5 kN",
+            "Rotary torque: 1,200 Nm",
+            "Mast stroke: 700 - 1,200 mm",
+            "Weight: 300 - 330 kg"
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Matching equipment",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Rotary heads: EP 120",
+            "Drifters: MA 100 S 3R"
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Contact us</a> for price, delivery time or help choosing the right model.",
+          "gen": true
+        },
+        {
+          "type": "carousel",
+          "autoplay": true,
+          "interval": 6,
+          "items": [
+            {
+              "src": "/assets/img/marini-mr-mr-6-pn-p1.webp",
+              "alt": "Marini MR 6 PN (1/6)",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/marini-mr-mr-6-pn-p2.webp",
+              "alt": "Marini MR 6 PN (2/6)",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/marini-mr-mr-6-pn-p3.webp",
+              "alt": "Marini MR 6 PN (3/6)",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/marini-mr-mr-6-pn-p4.webp",
+              "alt": "Marini MR 6 PN (4/6)",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/marini-mr-mr-6-pn-p5.webp",
+              "alt": "Marini MR 6 PN (5/6)",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/marini-mr-mr-6-pn-p6.webp",
+              "alt": "Marini MR 6 PN (6/6)",
+              "width": 1400,
+              "height": 1050
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Brochure (pneumatic)",
+          "href": "/assets/docs/marini-slantstabilisering-mr-6-broschyr-ny-flik-2.pdf",
+          "gen": true
+        },
+        {
+          "type": "datasheet",
+          "title": "Technical data",
+          "tagline": "Marini MR 6 PN",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Specifications",
+              "rows": [
+                {
+                  "label": "Drive",
+                  "metric": "Pneumatic (compressed air)"
+                },
+                {
+                  "label": "Mast stroke",
+                  "metric": "700 - 1,200 mm"
+                },
+                {
+                  "label": "Feed force",
+                  "metric": "9.5 kN"
+                },
+                {
+                  "label": "Retract force",
+                  "metric": "9.5 kN"
+                },
+                {
+                  "label": "Rotary torque",
+                  "metric": "1,200 Nm"
+                },
+                {
+                  "label": "Rotary speed",
+                  "metric": "40 - 45 rpm"
+                },
+                {
+                  "label": "Clamp range",
+                  "metric": "25 - 115 mm"
+                },
+                {
+                  "label": "Weight",
+                  "metric": "300 - 330 kg"
+                }
+              ]
+            }
+          ],
+          "note": "",
+          "source": "The figures come from Marini's brochure and marinidrills.com.",
+          "gen": true
+        },
+        {
+          "type": "related",
+          "title": "See also",
+          "items": [
+            {
+              "href": "/produkter/marini/släntstabilisering/mr-6"
+            },
+            {
+              "href": "/produkter/marini/släntstabilisering/mr-6-id"
+            }
+          ],
+          "gen": true
+        }
+      ]
+    }
+  }
+}

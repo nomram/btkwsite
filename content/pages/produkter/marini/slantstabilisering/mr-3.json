@@ -1,6 +1,6 @@
 {
   "path": "/produkter/marini/släntstabilisering/mr-3",
-  "updated": "2026-10-10",
+  "updated": "2026-11-26",
   "template": "product",
   "order": 1,
   "published": true,
@@ -43,6 +43,46 @@
         {
           "type": "text",
           "html": "<a href=\"/kontakta-oss\">Kontakta oss</a> för detaljerade broschyrer och mer information."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Modeller MR 3",
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 2,
+          "square": true,
+          "more": false,
+          "items": [
+            {
+              "title": "MR 3 PN",
+              "image": "/assets/img/marini-mr-mr-3-pn-tile.webp",
+              "alt": "Marini MR 3 PN",
+              "href": "/produkter/marini/släntstabilisering/mr-3-pn",
+              "bullets": [
+                "Pneumatisk",
+                "Vikt: 300 kg"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "MR 3 ID",
+              "image": "/assets/img/marini-mr-mr-3-id-tile.webp",
+              "alt": "Marini MR 3 ID",
+              "href": "/produkter/marini/släntstabilisering/mr-3-id",
+              "bullets": [
+                "Hydraulisk",
+                "Vikt: 450 - 650 kg"
+              ],
+              "width": 1000,
+              "height": 1000
+            }
+          ],
+          "gen": true
         },
         {
           "type": "modules",
@@ -139,6 +179,46 @@
         {
           "type": "text",
           "html": "<a href=\"/kontakta-oss\">Contact us</a> for detailed brochures and more information."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Models MR 3",
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 2,
+          "square": true,
+          "more": false,
+          "items": [
+            {
+              "title": "MR 3 PN",
+              "image": "/assets/img/marini-mr-mr-3-pn-tile.webp",
+              "alt": "Marini MR 3 PN",
+              "href": "/produkter/marini/släntstabilisering/mr-3-pn",
+              "bullets": [
+                "Pneumatic",
+                "Weight: 300 kg"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "MR 3 ID",
+              "image": "/assets/img/marini-mr-mr-3-id-tile.webp",
+              "alt": "Marini MR 3 ID",
+              "href": "/produkter/marini/släntstabilisering/mr-3-id",
+              "bullets": [
+                "Hydraulic",
+                "Weight: 450 - 650 kg"
+              ],
+              "width": 1000,
+              "height": 1000
+            }
+          ],
+          "gen": true
         },
         {
           "type": "modules",

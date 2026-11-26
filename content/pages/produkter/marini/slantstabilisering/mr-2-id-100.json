@@ -1,0 +1,377 @@
+{
+  "path": "/produkter/marini/släntstabilisering/mr-2-id-100",
+  "updated": "2026-11-26",
+  "template": "product",
+  "order": 14,
+  "published": true,
+  "hideIn": [
+    "es",
+    "no",
+    "lt",
+    "lv",
+    "et",
+    "ru"
+  ],
+  "hero": {
+    "image": "/assets/img/marini-slantstabilisering-hero.webp"
+  },
+  "source": {
+    "url": "https://www.marinidrills.com/en/macchine-marini/mr-2-id-100/"
+  },
+  "i18n": {
+    "sv": {
+      "title": "MR 2 ID 100",
+      "h1": "Marini MR 2 ID 100",
+      "seoTitle": "Marini MR 2 ID 100 borrigg för släntstabilisering | Betongakuten",
+      "description": "MR 2 ID 100 är en hydraulisk borrenhet ur Marinis MR-serie för släntstabilisering och mikropålning. Se den i 3D, med teknisk data och broschyr.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Marini logotyp",
+          "href": "/produkter/marini",
+          "width": 637,
+          "height": 86,
+          "src": "/assets/img/logo-marini.webp",
+          "gen": true
+        },
+        {
+          "type": "model3d",
+          "src": "/assets/3d/marini-mr-2-id-100.bkm",
+          "poster": "/assets/img/marini-mr-mr-2-id-100-iso.webp",
+          "alt": "Marini MR 2 ID 100",
+          "label": "Marini MR 2 ID 100, 3D-modell",
+          "size": "1,2 MB",
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "MR 2 ID 100 är den kraftigaste i MR 2-familjen, med 15 kN matnings- och dragkraft och 3 500 Nm vridmoment. Ramen står på tre vridbara stöd som följer ojämn mark och kan vridas 90 grader för förflyttning i sidled. Matningen är hydraulisk med inbyggd cylinder, och riggen tar hydrauliska rotationshuvuden för sänkhammare upp till 5 tum eller en hydropneumatisk borrhammare.",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Drift: Hydraulisk",
+            "Matningskraft: 15,0 kN",
+            "Dragkraft (indragning): 15,0 kN",
+            "Vridmoment, rotation: 3 500 Nm",
+            "Mastens slaglängd: 1 260 - 1 760 mm",
+            "Vikt: 600 - 650 kg"
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Passande utrustning",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Rotationshuvuden: ID 300",
+            "Borrhammare: MA 100 S 2 ID",
+            "Hydraulaggregat: 40-E, 45-D"
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Kontakta oss</a> för pris, leveranstid eller hjälp att välja rätt modell.",
+          "gen": true
+        },
+        {
+          "type": "carousel",
+          "autoplay": true,
+          "interval": 6,
+          "items": [
+            {
+              "src": "/assets/img/marini-mr-mr-2-id-p1.webp",
+              "alt": "Marini MR 2 ID 100 (1/3)",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/marini-mr-mr-2-id-p2.webp",
+              "alt": "Marini MR 2 ID 100 (2/3)",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/marini-mr-mr-2-id-p3.webp",
+              "alt": "Marini MR 2 ID 100 (3/3)",
+              "width": 1400,
+              "height": 1050
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Broschyr (hydraulisk)",
+          "href": "/assets/docs/marini-slantstabilisering-mr-2-broschyr.pdf",
+          "gen": true
+        },
+        {
+          "type": "datasheet",
+          "title": "Teknisk data",
+          "tagline": "Marini MR 2 ID 100",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Specifikationer",
+              "rows": [
+                {
+                  "label": "Drift",
+                  "metric": "Hydraulisk"
+                },
+                {
+                  "label": "Mastens slaglängd",
+                  "metric": "1 260 - 1 760 mm"
+                },
+                {
+                  "label": "Matningskraft",
+                  "metric": "15,0 kN"
+                },
+                {
+                  "label": "Dragkraft (indragning)",
+                  "metric": "15,0 kN"
+                },
+                {
+                  "label": "Vridmoment, rotation",
+                  "metric": "3 500 Nm"
+                },
+                {
+                  "label": "Varvtal, rotation",
+                  "metric": "40 rpm"
+                },
+                {
+                  "label": "Klämområde",
+                  "metric": "25 - 118 mm"
+                },
+                {
+                  "label": "Största genomgång",
+                  "metric": "115 - 188 mm"
+                },
+                {
+                  "label": "Vikt",
+                  "metric": "600 - 650 kg"
+                },
+                {
+                  "label": "Hydraulaggregat",
+                  "metric": "40-E, 45-D"
+                },
+                {
+                  "label": "Aggregatets effekt",
+                  "metric": "15 / 17 / 22 kW"
+                }
+              ]
+            }
+          ],
+          "note": "",
+          "source": "Uppgifterna är hämtade ur Marinis broschyr och från marinidrills.com.",
+          "gen": true
+        },
+        {
+          "type": "related",
+          "title": "Se även",
+          "items": [
+            {
+              "href": "/produkter/marini/släntstabilisering/mr-2"
+            },
+            {
+              "href": "/produkter/marini/släntstabilisering/mr-2-pn"
+            },
+            {
+              "href": "/produkter/marini/släntstabilisering/mr-2-pn-80"
+            },
+            {
+              "href": "/produkter/marini/släntstabilisering/mr-2-id-80"
+            }
+          ],
+          "gen": true
+        }
+      ]
+    },
+    "en": {
+      "title": "MR 2 ID 100",
+      "h1": "Marini MR 2 ID 100",
+      "seoTitle": "Marini MR 2 ID 100 drill rig for slope stabilisation | Betongakuten",
+      "description": "MR 2 ID 100 is a hydraulic drilling unit from Marini's MR line for slope stabilisation and micropiling. See it in 3D, with technical data and brochure.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Marini logo",
+          "href": "/produkter/marini",
+          "width": 637,
+          "height": 86,
+          "src": "/assets/img/logo-marini.webp",
+          "gen": true
+        },
+        {
+          "type": "model3d",
+          "src": "/assets/3d/marini-mr-2-id-100.bkm",
+          "poster": "/assets/img/marini-mr-mr-2-id-100-iso.webp",
+          "alt": "Marini MR 2 ID 100",
+          "label": "Marini MR 2 ID 100, 3D model",
+          "size": "1.2 MB",
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "MR 2 ID 100 is the most powerful of the MR 2 family, with 15 kN of feed and retract force and 3,500 Nm of torque. The frame stands on three swivelling supports that follow uneven ground and turn 90 degrees for sideways moves. The feed is hydraulic with a built-in cylinder, and the rig takes hydraulic rotary heads for down-the-hole hammers up to 5 inches or a hydro-pneumatic drifter.",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Drive: Hydraulic",
+            "Feed force: 15.0 kN",
+            "Retract force: 15.0 kN",
+            "Rotary torque: 3,500 Nm",
+            "Mast stroke: 1,260 - 1,760 mm",
+            "Weight: 600 - 650 kg"
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Matching equipment",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Rotary heads: ID 300",
+            "Drifters: MA 100 S 2 ID",
+            "Hydraulic power unit: 40-E, 45-D"
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Contact us</a> for price, delivery time or help choosing the right model.",
+          "gen": true
+        },
+        {
+          "type": "carousel",
+          "autoplay": true,
+          "interval": 6,
+          "items": [
+            {
+              "src": "/assets/img/marini-mr-mr-2-id-p1.webp",
+              "alt": "Marini MR 2 ID 100 (1/3)",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/marini-mr-mr-2-id-p2.webp",
+              "alt": "Marini MR 2 ID 100 (2/3)",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/marini-mr-mr-2-id-p3.webp",
+              "alt": "Marini MR 2 ID 100 (3/3)",
+              "width": 1400,
+              "height": 1050
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Brochure (hydraulic)",
+          "href": "/assets/docs/marini-slantstabilisering-mr-2-broschyr.pdf",
+          "gen": true
+        },
+        {
+          "type": "datasheet",
+          "title": "Technical data",
+          "tagline": "Marini MR 2 ID 100",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Specifications",
+              "rows": [
+                {
+                  "label": "Drive",
+                  "metric": "Hydraulic"
+                },
+                {
+                  "label": "Mast stroke",
+                  "metric": "1,260 - 1,760 mm"
+                },
+                {
+                  "label": "Feed force",
+                  "metric": "15.0 kN"
+                },
+                {
+                  "label": "Retract force",
+                  "metric": "15.0 kN"
+                },
+                {
+                  "label": "Rotary torque",
+                  "metric": "3,500 Nm"
+                },
+                {
+                  "label": "Rotary speed",
+                  "metric": "40 rpm"
+                },
+                {
+                  "label": "Clamp range",
+                  "metric": "25 - 118 mm"
+                },
+                {
+                  "label": "Max. passage",
+                  "metric": "115 - 188 mm"
+                },
+                {
+                  "label": "Weight",
+                  "metric": "600 - 650 kg"
+                },
+                {
+                  "label": "Hydraulic power unit",
+                  "metric": "40-E, 45-D"
+                },
+                {
+                  "label": "Power unit output",
+                  "metric": "15 / 17 / 22 kW"
+                }
+              ]
+            }
+          ],
+          "note": "",
+          "source": "The figures come from Marini's brochure and marinidrills.com.",
+          "gen": true
+        },
+        {
+          "type": "related",
+          "title": "See also",
+          "items": [
+            {
+              "href": "/produkter/marini/släntstabilisering/mr-2"
+            },
+            {
+              "href": "/produkter/marini/släntstabilisering/mr-2-pn"
+            },
+            {
+              "href": "/produkter/marini/släntstabilisering/mr-2-pn-80"
+            },
+            {
+              "href": "/produkter/marini/släntstabilisering/mr-2-id-80"
+            }
+          ],
+          "gen": true
+        }
+      ]
+    }
+  }
+}
