@@ -12,28 +12,28 @@
   var LANGS = {
     sv: { loading: "Hämtar 3D-modellen", failed: "3D-modellen kunde inte visas i den här webbläsaren.", spin: "Rotera automatiskt", reset: "Startvy", full: "Helskärm", close: "Tillbaka till bilden",
       orbit: "Vrid", pan: "Flytta", hOrbit: "Dra för att vrida, scrolla eller nyp för att zooma.", hPan: "Dra för att flytta kameran i sidled och höjdled.",
-      modes: "Kameraläge", walk: "Gå", hWalk: "Gå runt maskinen. Klicka i bilden och styr med musen. W A S D går, mellanslag hoppar, Ctrl eller C hukar, Shift smyger. Klicka för att peka. Esc släpper musen." },
+      modes: "Kameraläge", walk: "Gå", hWalk: "Gå runt maskinen. Klicka i bilden och styr med musen. W A S D går, mellanslag hoppar, Ctrl eller C hukar, Shift smyger. Klicka för att peka. Högerklick: kikarsikte (3x). Esc släpper musen." },
     en: { loading: "Loading the 3D model", failed: "The 3D model cannot be shown in this browser.", spin: "Rotate automatically", reset: "Start view", full: "Full screen", close: "Back to the picture",
       orbit: "Turn", pan: "Move", hOrbit: "Drag to turn, scroll or pinch to zoom.", hPan: "Drag to move the camera sideways and up or down.",
-      modes: "Camera mode", walk: "Walk", hWalk: "Walk around the machine. Click the view and steer with the mouse. W A S D walks, Space jumps, Ctrl or C crouches, Shift walks quietly. Click to point. Esc releases the mouse." },
+      modes: "Camera mode", walk: "Walk", hWalk: "Walk around the machine. Click the view and steer with the mouse. W A S D walks, Space jumps, Ctrl or C crouches, Shift walks quietly. Click to point. Right click: scope (3x). Esc releases the mouse." },
     es: { loading: "Cargando el modelo 3D", failed: "El modelo 3D no se puede mostrar en este navegador.", spin: "Girar automáticamente", reset: "Vista inicial", full: "Pantalla completa", close: "Volver a la imagen",
       orbit: "Girar", pan: "Mover", hOrbit: "Arrastra para girar, desplaza o pellizca para ampliar.", hPan: "Arrastra para mover la cámara a los lados y en altura.",
-      modes: "Modo de cámara", walk: "Caminar", hWalk: "Camina alrededor de la máquina. Haz clic en la vista y dirige con el ratón. W A S D para caminar, espacio salta, Ctrl o C se agacha, Mayús camina despacio. Haz clic para señalar. Esc suelta el ratón." },
+      modes: "Modo de cámara", walk: "Caminar", hWalk: "Camina alrededor de la máquina. Haz clic en la vista y dirige con el ratón. W A S D para caminar, espacio salta, Ctrl o C se agacha, Mayús camina despacio. Haz clic para señalar. Clic derecho: mira telescópica (3x). Esc suelta el ratón." },
     no: { loading: "Henter 3D-modellen", failed: "3D-modellen kan ikke vises i denne nettleseren.", spin: "Roter automatisk", reset: "Startvisning", full: "Fullskjerm", close: "Tilbake til bildet",
       orbit: "Drei", pan: "Flytt", hOrbit: "Dra for å dreie, rull eller klyp for å zoome.", hPan: "Dra for å flytte kameraet sideveis og i høyden.",
-      modes: "Kameramodus", walk: "Gå", hWalk: "Gå rundt maskinen. Klikk i bildet og styr med musen. W A S D går, mellomrom hopper, Ctrl eller C huker, Shift lister. Klikk for å peke. Esc slipper musen." },
+      modes: "Kameramodus", walk: "Gå", hWalk: "Gå rundt maskinen. Klikk i bildet og styr med musen. W A S D går, mellomrom hopper, Ctrl eller C huker, Shift lister. Klikk for å peke. Høyreklikk: kikkertsikte (3x). Esc slipper musen." },
     lt: { loading: "Įkeliamas 3D modelis", failed: "Šioje naršyklėje 3D modelio parodyti nepavyksta.", spin: "Sukti automatiškai", reset: "Pradinis vaizdas", full: "Visas ekranas", close: "Atgal į nuotrauką",
       orbit: "Sukti", pan: "Perkelti", hOrbit: "Tempkite, kad pasuktumėte, slinkite arba suimkite pirštais, kad priartintumėte.", hPan: "Tempkite, kad perkeltumėte kamerą į šonus ir aukštyn ar žemyn.",
-      modes: "Kameros režimas", walk: "Eiti", hWalk: "Apeikite mašiną. Spustelėkite vaizdą ir valdykite pele. W A S D eiti, tarpas šokti, Ctrl arba C pritūpti, Shift eiti tyliai. Spustelėkite, kad parodytumėte pirštu. Esc atlaisvina pelę." },
+      modes: "Kameros režimas", walk: "Eiti", hWalk: "Apeikite mašiną. Spustelėkite vaizdą ir valdykite pele. W A S D eiti, tarpas šokti, Ctrl arba C pritūpti, Shift eiti tyliai. Spustelėkite, kad parodytumėte pirštu. Dešinysis spustelėjimas: taikiklis (3x). Esc atlaisvina pelę." },
     lv: { loading: "Ielādē 3D modeli", failed: "Šajā pārlūkā 3D modeli nevar parādīt.", spin: "Griezt automātiski", reset: "Sākuma skats", full: "Pilnekrāns", close: "Atpakaļ uz attēlu",
       orbit: "Griezt", pan: "Pārvietot", hOrbit: "Velciet, lai pagrieztu, ritiniet vai saspiediet, lai tuvinātu.", hPan: "Velciet, lai pārvietotu kameru uz sāniem un augšup vai lejup.",
-      modes: "Kameras režīms", walk: "Iet", hWalk: "Apstaigājiet mašīnu. Noklikšķiniet uz skata un vadiet ar peli. W A S D iet, atstarpe lec, Ctrl vai C notupjas, Shift iet klusi. Noklikšķiniet, lai norādītu. Esc atbrīvo peli." },
+      modes: "Kameras režīms", walk: "Iet", hWalk: "Apstaigājiet mašīnu. Noklikšķiniet uz skata un vadiet ar peli. W A S D iet, atstarpe lec, Ctrl vai C notupjas, Shift iet klusi. Noklikšķiniet, lai norādītu. Labais klikšķis: tēmēklis (3x). Esc atbrīvo peli." },
     et: { loading: "3D-mudeli laadimine", failed: "Selles brauseris ei saa 3D-mudelit näidata.", spin: "Pööra automaatselt", reset: "Algvaade", full: "Täisekraan", close: "Tagasi pildi juurde",
       orbit: "Pööra", pan: "Liiguta", hOrbit: "Lohista pööramiseks, keri või näpista suumimiseks.", hPan: "Lohista, et liigutada kaamerat külgedele ja üles-alla.",
-      modes: "Kaamera režiim", walk: "Kõnni", hWalk: "Kõnni ümber masina. Klõpsa vaatel ja juhi hiirega. W A S D kõnnib, tühik hüppab, Ctrl või C kükitab, Shift hiilib. Klõpsa, et osutada. Esc vabastab hiire." },
+      modes: "Kaamera režiim", walk: "Kõnni", hWalk: "Kõnni ümber masina. Klõpsa vaatel ja juhi hiirega. W A S D kõnnib, tühik hüppab, Ctrl või C kükitab, Shift hiilib. Klõpsa, et osutada. Paremklõps: sihik (3x). Esc vabastab hiire." },
     ru: { loading: "Загрузка 3D-модели", failed: "В этом браузере 3D-модель показать нельзя.", spin: "Автоматическое вращение", reset: "Исходный вид", full: "Во весь экран", close: "Назад к изображению",
       orbit: "Вращать", pan: "Сдвигать", hOrbit: "Тяните, чтобы вращать, прокрутите или сведите пальцы для масштаба.", hPan: "Тяните, чтобы сдвигать камеру вбок и вверх или вниз.",
-      modes: "Режим камеры", walk: "Ходьба", hWalk: "Обойдите машину. Щёлкните по изображению и управляйте мышью. W A S D: ходьба, пробел: прыжок, Ctrl или C: присесть, Shift: тихий шаг. Щелчок: показать пальцем. Esc отпускает мышь." }
+      modes: "Режим камеры", walk: "Ходьба", hWalk: "Обойдите машину. Щёлкните по изображению и управляйте мышью. W A S D: ходьба, пробел: прыжок, Ctrl или C: присесть, Shift: тихий шаг. Щелчок: показать пальцем. Правый щелчок: прицел (3x). Esc отпускает мышь." }
   };
   var lang = (document.documentElement.lang || "en").toLowerCase(), L = LANGS[lang.slice(0, 2)] || (/^(nb|nn)/.test(lang) ? LANGS.no : LANGS.en);
   var ICON = {
@@ -136,8 +136,10 @@
     " c = clamp((c*(2.51*c+0.03))/(c*(2.43*c+0.59)+0.14),0.0,1.0); o = vec4(pow(c, vec3(1.0/2.2)), 1.0); }";
   function handMesh() {
     var P = [], N = [], C = [];
-    var SKIN = [0.50, 0.29, 0.19], SLEEVE = [0.03, 0.032, 0.036], BAND = [0.86, 0.22, 0.02];
-    function tri(a, b, c, na, nb, nc, col) { [a, b, c].forEach(function (p) { P.push(p[0], p[1], p[2]); }); [na, nb, nc].forEach(function (n) { N.push(n[0], n[1], n[2]); C.push(col[0], col[1], col[2]); }); }
+    // an assembly work glove: grey knit on the back, dark nitrile coating on the palm and dipped fingertips, knitted cuff
+    var KNIT = [0.15, 0.155, 0.165], COAT = [0.02, 0.02, 0.023], CUFF = [0.09, 0.092, 0.1], SLEEVE = [0.03, 0.032, 0.036], BAND = [0.86, 0.22, 0.02];
+    var GLOVE = function (n) { return n[1] < -0.3 ? COAT : KNIT; };
+    function tri(a, b, c, na, nb, nc, col) { [a, b, c].forEach(function (p) { P.push(p[0], p[1], p[2]); }); [na, nb, nc].forEach(function (n) { var k = typeof col === "function" ? col(n) : col; N.push(n[0], n[1], n[2]); C.push(k[0], k[1], k[2]); }); }
     function add(a, b, k) { return [a[0] + b[0] * k, a[1] + b[1] * k, a[2] + b[2] * k]; }
     // a tube from a to b (radius r0 to r1) with round ends, or flat ends where cap is false
     function capsule(a, b, r0, r1, col, capA, capB) {
@@ -169,16 +171,17 @@
         g.push(row); }
       for (i = 0; i < T; i++) for (s = 0; s < S; s++) { var a = g[i][s], b = g[i][s + 1], e = g[i + 1][s], f = g[i + 1][s + 1]; tri(a[0], e[0], f[0], a[1], e[1], f[1], col); tri(a[0], f[0], b[0], a[1], f[1], b[1], col); }
     }
-    function finger(pts, rs) { for (var i = 0; i + 1 < pts.length; i++) capsule(pts[i], pts[i + 1], rs[i], rs[i + 1], SKIN); }
+    function finger(pts, rs) { for (var i = 0; i + 1 < pts.length; i++) capsule(pts[i], pts[i + 1], rs[i] * 1.08, rs[i + 1] * 1.08, i + 2 === pts.length ? COAT : GLOVE); }
     // right hand, palm down, index finger pointing forward (-z); x right, y up, z back towards the wrist
-    ellipsoid([0, 0, 0], [0.042, 0.019, 0.048], SKIN);
+    ellipsoid([0, 0, 0], [0.044, 0.021, 0.05], GLOVE);
     finger([[-0.026, 0.003, -0.038], [-0.028, 0.004, -0.083], [-0.029, 0.003, -0.112], [-0.029, 0.0, -0.134]], [0.0108, 0.0099, 0.0092, 0.0084]);
     function curled(k, sc, rs) { var p1 = add(k, [0, -0.016, -0.028], sc), p2 = add(p1, [0, -0.024, 0.006], sc), p3 = add(p2, [0, -0.004, 0.018], sc); finger([k, p1, p2, p3], rs); }
     curled([-0.007, 0.004, -0.042], 1, [0.0108, 0.0103, 0.0096, 0.0088]);
     curled([0.011, 0.003, -0.040], 0.95, [0.0103, 0.0098, 0.0091, 0.0084]);
     curled([0.028, 0.0, -0.034], 0.78, [0.0089, 0.0084, 0.0078, 0.0072]);
     finger([[-0.028, -0.006, 0.012], [-0.047, -0.012, -0.012], [-0.043, -0.02, -0.035], [-0.03, -0.027, -0.049]], [0.015, 0.0125, 0.0108, 0.0096]);
-    capsule([0.002, -0.002, 0.03], [0.007, -0.005, 0.1], 0.029, 0.031, SKIN, true, false);
+    capsule([0.002, -0.002, 0.03], [0.006, -0.004, 0.07], 0.031, 0.032, KNIT, true, false);
+    capsule([0.006, -0.004, 0.068], [0.008, -0.005, 0.1], 0.0335, 0.0335, CUFF, false, false);
     capsule([0.006, -0.004, 0.09], [0.034, -0.022, 0.46], 0.043, 0.05, SLEEVE, false, false);
     capsule([0.0105, -0.007, 0.15], [0.0125, -0.0085, 0.175], 0.0452, 0.0456, BAND, false, false);
     return { p: new Float32Array(P), n: new Float32Array(N), c: new Float32Array(C), count: P.length / 3 };
@@ -268,7 +271,7 @@
         gl.bindFramebuffer(gl.FRAMEBUFFER, null); shadowDirty = false;
       }
       gl.viewport(0, 0, w, h); gl.clearColor(bg[0], bg[1], bg[2], 1); gl.clear(gl.COLOR_BUFFER_BIT | gl.DEPTH_BUFFER_BIT);
-      var e = eye(), far = Math.hypot(e[0], e[1] - center[1], e[2]) + radius * 2.5 + size, vf = mode === "walk" ? Math.min(1.45, 2 * Math.atan(1 / (w / h))) : fov, vp = mul(persp(vf, w / h, mode === "walk" ? 0.02 : size * 0.004, far), lookAt(e, cam.t, [0, 1, 0]));
+      var e = eye(), far = Math.hypot(e[0], e[1] - center[1], e[2]) + radius * 2.5 + size, vf = mode === "walk" ? scoped(Math.min(1.45, 2 * Math.atan(1 / (w / h)))) : fov, vp = mul(persp(vf, w / h, mode === "walk" ? 0.02 : size * 0.004, far), lookAt(e, cam.t, [0, 1, 0]));
       gl.activeTexture(gl.TEXTURE0); gl.bindTexture(gl.TEXTURE_2D, smTex);
       // floor
       gl.enable(gl.DEPTH_TEST); gl.depthMask(true); gl.disable(gl.BLEND);
@@ -283,7 +286,7 @@
         gl.bindVertexArray(d.vao); gl.drawElements(gl.TRIANGLES, d.count, gl.UNSIGNED_SHORT, 0);
       });
       gl.depthMask(true); gl.disable(gl.BLEND); gl.bindVertexArray(null);
-      if (mode === "walk" && pl) { drawHand(w, h); drawMap(w / h); }
+      if (mode === "walk" && pl) { if (!scope) drawHand(w, h); drawMap(w / h); }
     }
     function size2() {
       var dpr = Math.min(window.devicePixelRatio || 1, opt.dpr || 2), r = canvas.getBoundingClientRect();
@@ -310,6 +313,10 @@
     function stopSpin() { if (spin) { spin = false; if (opt.onSpin) opt.onSpin(false); } }
     canvas.addEventListener("contextmenu", function (e) { e.preventDefault(); });
     canvas.addEventListener("pointerdown", function (e) {
+      if (mode === "walk" && e.pointerType === "mouse" && e.button === 2) {
+        e.preventDefault(); canvas.focus({ preventScroll: true }); setScope(!scope); if (!locked()) lockMouse();
+        return;
+      }
       if (mode === "walk" && e.pointerType === "mouse" && e.button === 0) {
         canvas.focus({ preventScroll: true }); stopSpin(); anim = null; if (opt.onUse) opt.onUse();
         if (pl) pl.poke = 1;
@@ -333,7 +340,7 @@
       var lim = Math.max(160, 6 * Math.max(Math.abs(lastMx), Math.abs(lastMy)));
       if (Math.abs(mx) > lim || Math.abs(my) > lim) return;
       lastMx = mx; lastMy = my;
-      look(mx, my, 0.0022); if (pl) { pl.sx += mx; pl.sy += my; }
+      look(mx, my, scope ? 0.0022 / 3 : 0.0022); if (pl) { pl.sx += mx; pl.sy += my; }
     });
     canvas.addEventListener("pointermove", function (e) {
       if (locked() || !pts[e.pointerId]) return;
@@ -350,7 +357,7 @@
       pts[e.pointerId] = { x: e.clientX, y: e.clientY };
       if (!drag) return;
       var dx = e.clientX - drag.x, dy = e.clientY - drag.y; drag.x = e.clientX; drag.y = e.clientY;
-      if (drag.pan) pan(dx, dy); else if (mode === "walk") look(dx, dy); else { cam.th -= dx * 0.008; cam.ph = Math.max(-0.05, Math.min(1.45, cam.ph + dy * 0.006)); }
+      if (drag.pan) pan(dx, dy); else if (mode === "walk") look(dx, dy, scope ? 0.004 / 3 : 0.004); else { cam.th -= dx * 0.008; cam.ph = Math.max(-0.05, Math.min(1.45, cam.ph + dy * 0.006)); }
       dirty = true;
     });
     function up(e) { delete pts[e.pointerId]; if (!Object.keys(pts).length) drag = null; }
@@ -390,7 +397,10 @@
     // Source units are inches; the numbers are the game's defaults (speeds, friction, acceleration, gravity, jump, step, player box).
     var IN = 0.0254, PM = { run: 250 * IN, walk: 250 * IN * 0.52, duck: 250 * IN * 0.34, acc: 5, air: 10, airCap: 30 * IN, fric: 4, stop: 75 * IN, grav: 800 * IN,
       jump: Math.sqrt(2 * 800 * 21) * IN, step: 18 * IN, r: 16 * IN, hS: 72 * IN, hD: 36 * IN, eS: 64 * IN, eD: 28 * IN };
-    var HF = null, pl = null, hand = null;
+    var HF = null, pl = null, hand = null, scope = false;
+    // right click while walking: a scope that zooms in three times (and turns three times slower), click again to lower it
+    function scoped(f) { return scope ? 2 * Math.atan(Math.tan(f / 2) / 3) : f; }
+    function setScope(on) { if (scope === on) return; scope = on; dirty = true; if (opt.onScope) opt.onScope(on); }
     // the machine as columns of small boxes (8 cm wide, 5 cm high), filled from points spread over every triangle
     function buildHF() {
       var cell = 0.08, hb = 0.05, half = radius + 0.6, n = Math.ceil(2 * half / cell), B = Math.ceil(span[1] / hb) + 2, occ = new Uint8Array(n * n * B), c = yawU[0], s = yawU[1];
@@ -535,7 +545,7 @@
       for (var m = 1; m * s < R * 1.5; m++) { g.strokeStyle = m % 5 ? "rgba(35,31,32,.06)" : "rgba(35,31,32,.13)"; g.beginPath(); g.arc(R, R, m * s, 0, 2 * Math.PI); g.stroke(); }
       g.imageSmoothingEnabled = true; g.drawImage(foot, R - HF.half * s, R - HF.half * s, 2 * HF.half * s, 2 * HF.half * s);
       // field of view and the walker
-      var a = Math.atan2(-Math.cos(cam.th), -Math.sin(cam.th)), half = Math.atan(asp * Math.tan(Math.min(1.45, 2 * Math.atan(1 / asp)) / 2)), len = R * 0.55;
+      var a = Math.atan2(-Math.cos(cam.th), -Math.sin(cam.th)), half = Math.atan(asp * Math.tan(scoped(Math.min(1.45, 2 * Math.atan(1 / asp))) / 2)), len = R * 0.55;
       var cone = g.createRadialGradient(px, py, 0, px, py, len); cone.addColorStop(0, "rgba(243,125,3,.38)"); cone.addColorStop(1, "rgba(243,125,3,0)");
       g.fillStyle = cone; g.beginPath(); g.moveTo(px, py); g.arc(px, py, len, a - half, a + half); g.closePath(); g.fill();
       g.fillStyle = "#f37d03"; g.strokeStyle = "#fff"; g.lineWidth = 2 * dpr;
@@ -546,7 +556,7 @@
       g.fillStyle = "rgba(35,31,32,.55)"; g.font = "700 " + Math.round(9 * dpr) + "px Montserrat, sans-serif"; g.textAlign = "center"; g.textBaseline = "top"; g.fillText("N", R, 4 * dpr);
     }
     function setMode(m) {
-      var was = mode;
+      var was = mode; setScope(false);
       mode = m; keys = {};
       if (m !== "walk" && locked()) document.exitPointerLock();
       if (opt.map) opt.map.hidden = m !== "walk";
@@ -616,7 +626,8 @@
         clearTimeout(pick.t); pick.t = setTimeout(function () { hint.classList.add("is-gone"); }, 7000);
         if (v) { v.mode(m); bSpin.classList.remove("is-on"); bSpin.setAttribute("aria-pressed", "false"); }
       }
-      stage.appendChild(map); stage.appendChild(tools); stage.appendChild(hint); stage.appendChild(cross);
+      var scopeEl = document.createElement("div"); scopeEl.className = "m3d__scope"; scopeEl.setAttribute("aria-hidden", "true");
+      stage.appendChild(scopeEl); stage.appendChild(map); stage.appendChild(tools); stage.appendChild(hint); stage.appendChild(cross);
       // versions of the same machine (e.g. pneumatic and hydraulic): switch the model in place
       var variants = []; try { variants = JSON.parse(fig.getAttribute("data-variants") || "[]"); } catch (err) { variants = []; }
       if (variants.length > 1) {
@@ -636,7 +647,7 @@
       }
       var v = null;
       try {
-        v = Viewer(canvas, model, { map: map, yaw: +(fig.getAttribute("data-yaw") || 0), onUse: function () { hint.classList.add("is-gone"); }, onSpin: function (on) { bSpin.classList.toggle("is-on", on); bSpin.setAttribute("aria-pressed", on ? "true" : "false"); } });
+        v = Viewer(canvas, model, { map: map, onScope: function (on) { stage.classList.toggle("is-scoped", on); }, yaw: +(fig.getAttribute("data-yaw") || 0), onUse: function () { hint.classList.add("is-gone"); }, onSpin: function (on) { bSpin.classList.toggle("is-on", on); bSpin.setAttribute("aria-pressed", on ? "true" : "false"); } });
       } catch (err) { fail(); return; }
       bSpin.addEventListener("click", function () { var on = !v.spinning(); v.spin(on); bSpin.classList.toggle("is-on", on); bSpin.setAttribute("aria-pressed", on ? "true" : "false"); });
       bReset.addEventListener("click", function () { pick("orbit"); v.reset(); });

@@ -2938,3 +2938,7 @@ body::before { display: none; }
 .m3d__map { position: absolute; left: .9rem; bottom: .9rem; width: 9.5rem; height: 9.5rem; border-radius: 50%; box-shadow: 0 2px 14px rgba(35, 31, 32, .16); pointer-events: none; }
 .m3d__map[hidden] { display: none; }
 @media (max-width: 700px) { .m3d__map { width: 7rem; height: 7rem; left: .6rem; bottom: .6rem; } .m3d__stage.has-variants .m3d__map { bottom: 3.4rem; } }
+/* r47: walking scope (right click, 3x) */
+.m3d__scope { position: absolute; inset: 0; display: none; pointer-events: none; background: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)) center / 100% 1px no-repeat, linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)) center / 1px 100% no-repeat, radial-gradient(circle closest-side, transparent 0 95%, rgba(0, 0, 0, .55) 97%, #000 100%); }
+.m3d__stage.is-scoped .m3d__scope { display: block; }
+.m3d__stage.is-scoped .m3d__cross { display: none !important; }
