@@ -6,14 +6,17 @@
 //   node tools/marini-mr-pages.mjs
 import fs from "node:fs";
 import path from "node:path";
-import zlib from "node:zlib";
+import { DESC, TX } from "./marini-mr-i18n.mjs";
 const ROOT = path.resolve(import.meta.dirname, "..");
 const PAGES = path.join(ROOT, "content/pages/produkter/marini");
 const SL = "/produkter/marini/släntstabilisering";
-const HIDE = ["es", "no", "lt", "lv", "et", "ru"];
+const HIDE = ["lt", "lv", "et", "ru"]; // the Marini section is published in sv, en, es and no
+const LANGS = ["sv", "en", "es", "no"];
+// machines whose mast stands in the middle: turned by hand so they face like the rest (degrees, see src/js/viewer3d.js)
+const YAW = { "mr-3-pn": -90, "mr-4-id": -90 };
 const PIC = JSON.parse(fs.readFileSync(path.join(ROOT, "crawl/marini/3d-pictures.json"), "utf8"));
 const PHOTOS = JSON.parse(fs.readFileSync(path.join(ROOT, "crawl/marini/mr-photos.json"), "utf8"));
-const mb = (f, lang) => { const n = fs.statSync(path.join(ROOT, "assets-src/3d", f)).size / 1e6; return (n < 1 ? n.toFixed(1) : n.toFixed(1)).replace(".", lang === "sv" ? "," : ".") + " MB"; };
+const mb = (f, lang) => { const n = fs.statSync(path.join(ROOT, "assets-src/3d", f)).size / 1e6; return (n < 1 ? n.toFixed(1) : n.toFixed(1)).replace(".", lang === "en" ? "." : ",") + " MB"; };
 const DOC = (n) => `/assets/docs/marini-slantstabilisering-${n}.pdf`;
 const ACC = { ep120: "EP 120", ep95: "EP 95", ep160: "EP 160", ma3r: "MA 100 S 3R", id160: "ID 160", id300: "ID 300", id500: "ID 500", masid: "MA 100 S ID", mas2id: "MA 100 S 2 ID", maid: "MA 100 ID" };
 // spec: drive, stroke (mm), weight (kg), feed (kN), retract (kN), clamp (mm), torque (Nm), speed (rpm), power unit (kW), max passage (mm)
@@ -60,11 +63,12 @@ const pathOf = (m) => `${SL}/${m.slug}`;
 
 // ---------- numbers ----------
 function num(v, lang) { // "1260 - 1760" -> "1 260 - 1 760" (sv) / "1,260 - 1,760" (en); "9.5" -> "9,5" (sv)
-  return String(v).split(" - ").map((x) => { const [i, d] = x.trim().split("."); const g = i.replace(/\B(?=(\d{3})+(?!\d))/g, lang === "sv" ? " " : ","); return d ? g + (lang === "sv" ? "," : ".") + d : g; }).join(" - ");
+  return String(v).split(" - ").map((x) => { const [i, d] = x.trim().split("."); const g = i.replace(/\B(?=(\d{3})+(?!\d))/g, lang === "en" ? "," : " "); return d ? g + (lang === "en" ? "." : ",") + d : g; }).join(" - ");
 }
 const T = {
-  sv: { drive: "Drift", air: "Pneumatisk (tryckluft)", hyd: "Hydraulisk", stroke: "Mastens slaglängd", weight: "Vikt", feed: "Matningskraft", retract: "Dragkraft (indragning)", clamp: "Klämområde", torque: "Vridmoment, rotation", speed: "Varvtal, rotation", unit: "Hydraulaggregat", kw: "Aggregatets effekt", pass: "Största genomgång", heads: "Rotationshuvuden", drifters: "Borrhammare", models: "Modeller", tech: "Teknisk data", specs: "Specifikationer", seeAlso: "Se även", contact: "<a href=\"/kontakta-oss\">Kontakta oss</a> för pris, leveranstid eller hjälp att välja rätt modell.", fits: "Passande utrustning", source: "Uppgifterna är hämtade ur Marinis broschyr och från marinidrills.com.", brochure: { pn: "Broschyr (pneumatisk)", id: "Broschyr (hydraulisk)", short: "Kort broschyr (ENG)" }, threeD: "3D-modell", line: "ur Marinis MR-serie för släntstabilisering och mikropålning", pics: "bild", tile: (m) => [m.pneu ? "Pneumatisk" : "Hydraulisk", `Vikt: ${num(m.spec[1], "sv")} kg`] },
-  en: { drive: "Drive", air: "Pneumatic (compressed air)", hyd: "Hydraulic", stroke: "Mast stroke", weight: "Weight", feed: "Feed force", retract: "Retract force", clamp: "Clamp range", torque: "Rotary torque", speed: "Rotary speed", unit: "Hydraulic power unit", kw: "Power unit output", pass: "Max. passage", heads: "Rotary heads", drifters: "Drifters", models: "Models", tech: "Technical data", specs: "Specifications", seeAlso: "See also", contact: "<a href=\"/kontakta-oss\">Contact us</a> for price, delivery time or help choosing the right model.", fits: "Matching equipment", source: "The figures come from Marini's brochure and marinidrills.com.", brochure: { pn: "Brochure (pneumatic)", id: "Brochure (hydraulic)", short: "Short brochure (ENG)" }, threeD: "3D model", line: "from Marini's MR line for slope stabilisation and micropiling", pics: "picture", tile: (m) => [m.pneu ? "Pneumatic" : "Hydraulic", `Weight: ${num(m.spec[1], "en")} kg`] },
+  sv: { drive: "Drift", air: "Pneumatisk (tryckluft)", hyd: "Hydraulisk", stroke: "Mastens slaglängd", weight: "Vikt", feed: "Matningskraft", retract: "Dragkraft (indragning)", clamp: "Klämområde", torque: "Vridmoment, rotation", speed: "Varvtal, rotation", unit: "Hydraulaggregat", kw: "Aggregatets effekt", pass: "Största genomgång", heads: "Rotationshuvuden", drifters: "Borrhammare", models: "Modeller", tech: "Teknisk data", specs: "Specifikationer", seeAlso: "Se även", contact: "<a href=\"/kontakta-oss\">Kontakta oss</a> för pris, leveranstid eller hjälp att välja rätt modell.", fits: "Passande utrustning", source: "Uppgifterna är hämtade ur Marinis broschyr och från marinidrills.com.", brochure: { pn: "Broschyr (pneumatisk)", id: "Broschyr (hydraulisk)", short: "Kort broschyr (ENG)" }, threeD: "3D-modell", logo: "Marini logotyp", seo: "borrigg för släntstabilisering", desc: (m) => `${m.name} är en ${m.pneu ? "pneumatisk" : "hydraulisk"} borrenhet ur Marinis MR-serie för släntstabilisering och mikropålning. Se den i 3D, med teknisk data och broschyr.`, tile: (m) => [m.pneu ? "Pneumatisk" : "Hydraulisk", `Vikt: ${num(m.spec[1], "sv")} kg`] },
+  en: { drive: "Drive", air: "Pneumatic (compressed air)", hyd: "Hydraulic", stroke: "Mast stroke", weight: "Weight", feed: "Feed force", retract: "Retract force", clamp: "Clamp range", torque: "Rotary torque", speed: "Rotary speed", unit: "Hydraulic power unit", kw: "Power unit output", pass: "Max. passage", heads: "Rotary heads", drifters: "Drifters", models: "Models", tech: "Technical data", specs: "Specifications", seeAlso: "See also", contact: "<a href=\"/kontakta-oss\">Contact us</a> for price, delivery time or help choosing the right model.", fits: "Matching equipment", source: "The figures come from Marini's brochure and marinidrills.com.", brochure: { pn: "Brochure (pneumatic)", id: "Brochure (hydraulic)", short: "Short brochure (ENG)" }, threeD: "3D model", logo: "Marini logo", seo: "drill rig for slope stabilisation", desc: (m) => `${m.name} is a ${m.pneu ? "pneumatic" : "hydraulic"} drilling unit from Marini's MR line for slope stabilisation and micropiling. See it in 3D, with technical data and brochure.`, tile: (m) => [m.pneu ? "Pneumatic" : "Hydraulic", `Weight: ${num(m.spec[1], "en")} kg`] },
+  ...TX,
 };
 function rows(m, l) {
   const t = T[l], [stroke, weight, feed, retract, clamp, torque, speed] = m.spec, r = [];
@@ -89,19 +93,18 @@ const siblings = (m) => M.filter((x) => x !== m && (m.fam ? x.fam === m.fam : fa
 function page(m, i) {
   const pic = PIC[m.slug], photos = m.photos ? PHOTOS[m.photos] : [];
   const i18n = {};
-  for (const l of ["sv", "en"]) {
-    const t = T[l], name = `Marini ${m.name}`;
-    const desc = m[l].split(". ")[0] + ".";
+  for (const l of LANGS) {
+    const t = T[l], name = `Marini ${m.name}`, text = m[l] || DESC[m.slug][l];
     const fits = [...(m.heads.length ? [`${t.heads}: ${m.heads.map((k) => ACC[k]).join(", ")}`] : []), ...(m.drifters.length ? [`${t.drifters}: ${m.drifters.map((k) => ACC[k]).join(", ")}`] : []), ...(m.unit ? [`${t.unit}: ${m.unit}`] : [])];
     const rel = [...(m.fam ? [{ href: `${SL}/${m.fam}` }] : [{ href: SL, mutual: false }]), ...siblings(m).map((x) => ({ href: pathOf(x) }))].slice(0, 4);
     i18n[l] = {
       title: m.name, h1: name,
-      seoTitle: `${name} ${l === "sv" ? "borrigg för släntstabilisering" : "drill rig for slope stabilisation"} | Betongakuten`,
-      description: `${m.name} ${l === "sv" ? "är en" : "is a"} ${m.pneu ? (l === "sv" ? "pneumatisk" : "pneumatic") : (l === "sv" ? "hydraulisk" : "hydraulic")} ${l === "sv" ? "borrenhet" : "drilling unit"} ${t.line}. ${l === "sv" ? "Se den i 3D, med teknisk data och broschyr." : "See it in 3D, with technical data and brochure."}`,
+      seoTitle: `${name} ${t.seo} | Betongakuten`,
+      description: t.desc(m),
       blocks: [
-        { type: "image", alt: l === "sv" ? "Marini logotyp" : "Marini logo", href: "/produkter/marini", width: 637, height: 86, src: "/assets/img/logo-marini.webp", gen: true },
-        { type: "model3d", src: `/assets/3d/marini-${m.slug}.bkm`, poster: `/assets/img/marini-mr-${m.slug}-iso.webp`, alt: name, label: `${name}, ${t.threeD}`, size: mb(`marini-${m.slug}.bkm`, l), gen: true },
-        { type: "text", html: m[l], gen: true },
+        { type: "image", alt: t.logo, href: "/produkter/marini", width: 637, height: 86, src: "/assets/img/logo-marini.webp", gen: true },
+        { type: "model3d", src: `/assets/3d/marini-${m.slug}.bkm`, poster: `/assets/img/marini-mr-${m.slug}-iso.webp`, alt: name, label: `${name}, ${t.threeD}`, size: mb(`marini-${m.slug}.bkm`, l), ...(YAW[m.slug] ? { yaw: YAW[m.slug] } : {}), gen: true },
+        { type: "text", html: text, gen: true },
         { type: "list", ordered: false, items: keyList(m, l), gen: true },
         ...(fits.length ? [{ type: "heading", level: 3, text: t.fits, gen: true }, { type: "list", ordered: false, items: fits, gen: true }] : []),
         { type: "text", html: t.contact, gen: true },
@@ -118,12 +121,13 @@ function page(m, i) {
 fs.mkdirSync(path.join(PAGES, "slantstabilisering"), { recursive: true });
 M.forEach((m, i) => fs.writeFileSync(path.join(PAGES, "slantstabilisering", m.slug + ".json"), JSON.stringify(page(m, i), null, 2) + "\n"));
 // ---------- tiles ----------
-const tiles = (list, l) => ({ type: "modules", layout: "tiles", columns: 4, square: true, more: false, items: list.map((m) => ({ title: m.name, image: `/assets/img/marini-mr-${m.slug}-tile.webp`, alt: `Marini ${m.name}`, href: pathOf(m), bullets: T[l].tile(m), width: 1000, height: 1000 })), gen: true });
+const tiles = (list, l) => ({ type: "modules", layout: "tiles", columns: 4, square: true, more: false, items: list.map((m) => ({ title: m.name, image: `/assets/img/marini-mr-${m.slug}-tile.webp`, alt: `Marini ${m.name}`, href: pathOf(m), bullets: T[l].tile(m, num), width: 1000, height: 1000 })), gen: true });
 const ORDER = ["mr-1-pn", "mr-2-pn", "mr-2-pn-80", "mr-2-id-80", "mr-2-id-100", "mr-3-pn", "mr-3-id", "mr-4-id", "mr-5-pn", "mr-5-id", "mr-6-pn", "mr-6-id"].map((s) => M.find((m) => m.slug === s));
 function edit(file, fn) { const f = path.join(PAGES, file), raw = fs.readFileSync(f, "utf8"), p = JSON.parse(raw); fn(p); p.updated = "2026-11-26"; fs.writeFileSync(f, JSON.stringify(p, null, 2) + (raw.endsWith("\n") ? "\n" : "")); }
-// the släntstabilisering page: the family cards become one tile per rig (sv, en)
+// the släntstabilisering page: the family cards become one tile per rig (sv, en, es, no)
 edit("slantstabilisering.json", (p) => {
-  for (const l of ["sv", "en"]) {
+  for (const l of LANGS) {
+    if (!p.i18n[l]) continue;
     const b = p.i18n[l].blocks.filter((x) => !(x.gen && (x.type === "modules" || (x.type === "heading" && x.text === T[l].models))));
     const k = b.findIndex((x) => x.type === "modules");
     const add = [{ type: "heading", level: 2, text: T[l].models, gen: true }, { ...tiles(ORDER, l) }];
@@ -131,10 +135,10 @@ edit("slantstabilisering.json", (p) => {
     p.i18n[l].blocks = b;
   }
 });
-// the family pages: their rigs as tiles after the intro (sv, en)
+// the family pages: their rigs as tiles after the intro (sv, en, es, no)
 for (const [fam, title] of Object.entries(FAM)) {
   edit(`slantstabilisering/${fam}.json`, (p) => {
-    for (const l of ["sv", "en"]) {
+    for (const l of LANGS) {
       if (!p.i18n[l]) continue;
       const b = p.i18n[l].blocks.filter((x) => !x.gen || x.type === "image");
       const k = b.findIndex((x) => x.type === "modules");
@@ -155,7 +159,7 @@ for (const f of fs.readdirSync(path.join(PAGES, "crawlers"))) {
         if (!isIso) return b;
         const name = (b.alt || b.label || "").replace(/, 3D.*$/, "") || `Marini ${slug.toUpperCase()}`;
         if (!model) return { type: "image", alt: name, src: `/assets/img/marini-mrc-${slug}-iso.webp`, file: `/assets/img/marini-mrc-${slug}-iso.webp`, width: pic.width, height: pic.height, source: "3D model, marinidrills.com", gen: true };
-        return { type: "model3d", src: `/assets/3d/marini-${model}.bkm`, poster: `/assets/img/marini-mrc-${slug}-iso.webp`, alt: name, label: `${name}, ${l === "sv" ? "3D-modell" : "3D model"}`, size: mb(`marini-${model}.bkm`, l), gen: true };
+        return { type: "model3d", src: `/assets/3d/marini-${model}.bkm`, poster: `/assets/img/marini-mrc-${slug}-iso.webp`, alt: name, label: `${name}, ${(T[l] || T.en).threeD}`, size: mb(`marini-${model}.bkm`, l), gen: true };
       });
       const k = t.blocks.findIndex((b) => b.type === "model3d");
       if (k >= 0 && t.blocks[k + 1] && t.blocks[k + 1].type === "carousel") {

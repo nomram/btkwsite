@@ -4,14 +4,6 @@
   "template": "product",
   "order": 0,
   "published": true,
-  "hideIn": [
-    "es",
-    "no",
-    "lt",
-    "lv",
-    "et",
-    "ru"
-  ],
   "hero": {
     "image": "/assets/img/tei-casinghandlers-hero.webp"
   },
@@ -215,6 +207,648 @@
             {
               "src": "/assets/img/tei-casinghandlers-hero.webp",
               "alt": "HCC10X at work",
+              "width": 2200,
+              "height": 1936
+            }
+          ]
+        },
+        {
+          "type": "related",
+          "items": [
+            {
+              "href": "/produkter/tei/casinghandlers/hcc16x"
+            },
+            {
+              "href": "/produkter/tei/borrmaster"
+            }
+          ]
+        }
+      ]
+    },
+    "es": {
+      "title": "HCC10X",
+      "h1": "HCC10X",
+      "seoTitle": "TEI HCC10X, manipuladores de tubería | Betongakuten",
+      "description": "HCC10X es el manipulador de tubería de TEI para excavadoras de 7 a 15 t. Levanta y coloca a la vez tubería de 177 a 254 mm y varillaje, sin ayudante en la zona de peligro.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "TEI Rock Drills",
+          "href": "/produkter/tei",
+          "width": 1920,
+          "height": 1117,
+          "src": "/assets/img/tei-2.webp"
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Folleto HCC10X (ENG)",
+          "href": "/assets/docs/tei-casinghandlers-hcc10x-broschyr-eng.pdf"
+        },
+        {
+          "type": "datasheet",
+          "title": "Datos técnicos",
+          "note": "Las especificaciones técnicas de TEI suponen una pérdida de potencia hidráulica del 40 %.",
+          "tagline": "Manipulador hidráulico de tubería y herramientas para excavadora",
+          "intro": [
+            "HCC10X es el más pequeño de los manipuladores de TEI, para excavadoras de 7 a 15 t. Sujeta y coloca tubería y varillaje de aproximadamente 1,5 a 3 metros de largo y los deja rectos y centrados sobre el mástil.",
+            "La pinza no modifica la excavadora, sino que funciona con la hidráulica auxiliar, y el operador la maneja desde la cabina con su propio joystick."
+          ],
+          "groups": [
+            {
+              "title": "Especificaciones",
+              "rows": [
+                {
+                  "label": "Diámetro de tubería",
+                  "metric": "177-254 mm"
+                },
+                {
+                  "label": "Peso máx. de herramienta",
+                  "metric": "907 kg"
+                },
+                {
+                  "label": "Caudal hidráulico",
+                  "metric": "19-30 l/min"
+                },
+                {
+                  "label": "Presión hidráulica",
+                  "metric": "207 bar"
+                },
+                {
+                  "label": "Sistema eléctrico",
+                  "metric": "12 V o 24 V"
+                },
+                {
+                  "label": "Peso",
+                  "metric": "635 kg"
+                },
+                {
+                  "label": "Excavadora",
+                  "metric": "7-15 t"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "carousel",
+          "items": [
+            {
+              "src": "/assets/img/tei-casinghandlers-hcc10x.webp",
+              "alt": "HCC10X sujetando una tubería",
+              "width": 1024,
+              "height": 1024
+            },
+            {
+              "src": "/assets/img/tei-casinghandlers-hcc10x-ovanifran.webp",
+              "alt": "HCC10X visto desde arriba",
+              "width": 1256,
+              "height": 822
+            },
+            {
+              "src": "/assets/img/tei-casinghandlers-styrning.webp",
+              "alt": "El joystick en la cabina",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/tei-casinghandlers-hero.webp",
+              "alt": "HCC10X trabajando",
+              "width": 2200,
+              "height": 1936
+            }
+          ]
+        },
+        {
+          "type": "related",
+          "items": [
+            {
+              "href": "/produkter/tei/casinghandlers/hcc16x"
+            },
+            {
+              "href": "/produkter/tei/borrmaster"
+            }
+          ]
+        }
+      ]
+    },
+    "no": {
+      "title": "HCC10X",
+      "h1": "HCC10X",
+      "seoTitle": "TEI HCC10X, rørhåndterere | Betongakuten",
+      "description": "HCC10X er TEIs rørhåndterer for gravemaskiner på 7-15 tonn. Den løfter og plasserer foringsrør på 177-254 mm og borstreng samtidig, uten medhjelper i faresonen.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "TEI Rock Drills",
+          "href": "/produkter/tei",
+          "width": 1920,
+          "height": 1117,
+          "src": "/assets/img/tei-2.webp"
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Brosjyre HCC10X (ENG)",
+          "href": "/assets/docs/tei-casinghandlers-hcc10x-broschyr-eng.pdf"
+        },
+        {
+          "type": "datasheet",
+          "title": "Tekniske data",
+          "note": "TEIs tekniske data forutsetter 40 % hydraulisk effekttap.",
+          "tagline": "Hydraulisk rørhåndterer for gravemaskin",
+          "intro": [
+            "HCC10X er den minste av TEIs rørhåndterere, for gravemaskiner på 7-15 tonn. Den griper og plasserer foringsrør og borstreng i lengder på omtrent 1,5 til 3 meter og setter dem rett og sentrert over bormasten.",
+            "Griperen bygger ikke om gravemaskinen, men drives med ekstrahydraulikken, og føreren styrer den fra førerhuset med en egen spak."
+          ],
+          "groups": [
+            {
+              "title": "Spesifikasjoner",
+              "rows": [
+                {
+                  "label": "Diameter foringsrør",
+                  "metric": "177-254 mm"
+                },
+                {
+                  "label": "Maks verktøyvekt",
+                  "metric": "907 kg"
+                },
+                {
+                  "label": "Hydraulikkflyt",
+                  "metric": "19-30 l/min"
+                },
+                {
+                  "label": "Hydraulikktrykk",
+                  "metric": "207 bar"
+                },
+                {
+                  "label": "Elsystem",
+                  "metric": "12 V eller 24 V"
+                },
+                {
+                  "label": "Vekt",
+                  "metric": "635 kg"
+                },
+                {
+                  "label": "Gravemaskin",
+                  "metric": "7-15 tonn"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "carousel",
+          "items": [
+            {
+              "src": "/assets/img/tei-casinghandlers-hcc10x.webp",
+              "alt": "HCC10X griper et foringsrør",
+              "width": 1024,
+              "height": 1024
+            },
+            {
+              "src": "/assets/img/tei-casinghandlers-hcc10x-ovanifran.webp",
+              "alt": "HCC10X sett ovenfra",
+              "width": 1256,
+              "height": 822
+            },
+            {
+              "src": "/assets/img/tei-casinghandlers-styrning.webp",
+              "alt": "Styrespaken i førerhuset",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/tei-casinghandlers-hero.webp",
+              "alt": "HCC10X i arbeid",
+              "width": 2200,
+              "height": 1936
+            }
+          ]
+        },
+        {
+          "type": "related",
+          "items": [
+            {
+              "href": "/produkter/tei/casinghandlers/hcc16x"
+            },
+            {
+              "href": "/produkter/tei/borrmaster"
+            }
+          ]
+        }
+      ]
+    },
+    "lt": {
+      "title": "HCC10X",
+      "h1": "HCC10X",
+      "seoTitle": "TEI HCC10X, vamzdžių manipuliatoriai | Betongakuten",
+      "description": "HCC10X yra TEI vamzdžių manipuliatorius 7–15 t ekskavatoriams. Jis vienu metu kelia ir stato 177–254 mm vamzdžius bei štangas be pagalbininko pavojaus zonoje.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "TEI Rock Drills",
+          "href": "/produkter/tei",
+          "width": 1920,
+          "height": 1117,
+          "src": "/assets/img/tei-2.webp"
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Brošiūra HCC10X (ENG)",
+          "href": "/assets/docs/tei-casinghandlers-hcc10x-broschyr-eng.pdf"
+        },
+        {
+          "type": "datasheet",
+          "title": "Techniniai duomenys",
+          "note": "TEI techniniai duomenys numato 40 % hidraulinės galios nuostolių.",
+          "tagline": "Hidraulinis vamzdžių ir įrankių manipuliatorius ekskavatoriui",
+          "intro": [
+            "HCC10X yra mažesnis TEI manipuliatorius, skirtas 7–15 t ekskavatoriams. Jis suima ir stato maždaug 1,5–3 metrų ilgio vamzdžius bei štangas ir pastato juos tiesiai ir centre virš stiebo.",
+            "Griebtuvas neperdaro ekskavatoriaus, o veikia su papildoma hidraulika, ir operatorius jį valdo iš kabinos atskira vairasvirte."
+          ],
+          "groups": [
+            {
+              "title": "Specifikacijos",
+              "rows": [
+                {
+                  "label": "Vamzdžio skersmuo",
+                  "metric": "177-254 mm"
+                },
+                {
+                  "label": "Didž. įrankio masė",
+                  "metric": "907 kg"
+                },
+                {
+                  "label": "Hidraulinis srautas",
+                  "metric": "19-30 l/min"
+                },
+                {
+                  "label": "Hidraulinis slėgis",
+                  "metric": "207 bar"
+                },
+                {
+                  "label": "Elektros sistema",
+                  "metric": "12 V arba 24 V"
+                },
+                {
+                  "label": "Masė",
+                  "metric": "635 kg"
+                },
+                {
+                  "label": "Ekskavatorius",
+                  "metric": "7-15 t"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "carousel",
+          "items": [
+            {
+              "src": "/assets/img/tei-casinghandlers-hcc10x.webp",
+              "alt": "HCC10X suima vamzdį",
+              "width": 1024,
+              "height": 1024
+            },
+            {
+              "src": "/assets/img/tei-casinghandlers-hcc10x-ovanifran.webp",
+              "alt": "HCC10X iš viršaus",
+              "width": 1256,
+              "height": 822
+            },
+            {
+              "src": "/assets/img/tei-casinghandlers-styrning.webp",
+              "alt": "Vairasvirtė kabinoje",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/tei-casinghandlers-hero.webp",
+              "alt": "HCC10X darbe",
+              "width": 2200,
+              "height": 1936
+            }
+          ]
+        },
+        {
+          "type": "related",
+          "items": [
+            {
+              "href": "/produkter/tei/casinghandlers/hcc16x"
+            },
+            {
+              "href": "/produkter/tei/borrmaster"
+            }
+          ]
+        }
+      ]
+    },
+    "lv": {
+      "title": "HCC10X",
+      "h1": "HCC10X",
+      "seoTitle": "TEI HCC10X, cauruļu manipulatori | Betongakuten",
+      "description": "HCC10X ir TEI cauruļu manipulators 7–15 t ekskavatoriem. Tas vienlaikus ceļ un novieto 177–254 mm caurules un stieņus bez palīga bīstamajā zonā.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "TEI Rock Drills",
+          "href": "/produkter/tei",
+          "width": 1920,
+          "height": 1117,
+          "src": "/assets/img/tei-2.webp"
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Brošūra HCC10X (ENG)",
+          "href": "/assets/docs/tei-casinghandlers-hcc10x-broschyr-eng.pdf"
+        },
+        {
+          "type": "datasheet",
+          "title": "Tehniskie dati",
+          "note": "TEI tehniskie dati paredz 40 % hidrauliskās jaudas zudumu.",
+          "tagline": "Hidrauliskais cauruļu un instrumentu manipulators ekskavatoram",
+          "intro": [
+            "HCC10X ir mazākais TEI manipulators, paredzēts 7–15 t ekskavatoriem. Tas satver un novieto apmēram 1,5–3 metrus garas caurules un stieņus un novieto tos taisni un centrā virs masta.",
+            "Satvērējs nepārbūvē ekskavatoru, bet darbojas ar papildu hidrauliku, un operators to vada no kabīnes ar atsevišķu sviru."
+          ],
+          "groups": [
+            {
+              "title": "Specifikācijas",
+              "rows": [
+                {
+                  "label": "Caurules diametrs",
+                  "metric": "177-254 mm"
+                },
+                {
+                  "label": "Maks. instrumenta svars",
+                  "metric": "907 kg"
+                },
+                {
+                  "label": "Hidrauliskā plūsma",
+                  "metric": "19-30 l/min"
+                },
+                {
+                  "label": "Hidrauliskais spiediens",
+                  "metric": "207 bar"
+                },
+                {
+                  "label": "Elektrosistēma",
+                  "metric": "12 V vai 24 V"
+                },
+                {
+                  "label": "Svars",
+                  "metric": "635 kg"
+                },
+                {
+                  "label": "Ekskavators",
+                  "metric": "7-15 t"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "carousel",
+          "items": [
+            {
+              "src": "/assets/img/tei-casinghandlers-hcc10x.webp",
+              "alt": "HCC10X satver cauruli",
+              "width": 1024,
+              "height": 1024
+            },
+            {
+              "src": "/assets/img/tei-casinghandlers-hcc10x-ovanifran.webp",
+              "alt": "HCC10X no augšas",
+              "width": 1256,
+              "height": 822
+            },
+            {
+              "src": "/assets/img/tei-casinghandlers-styrning.webp",
+              "alt": "Vadības svira kabīnē",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/tei-casinghandlers-hero.webp",
+              "alt": "HCC10X darbā",
+              "width": 2200,
+              "height": 1936
+            }
+          ]
+        },
+        {
+          "type": "related",
+          "items": [
+            {
+              "href": "/produkter/tei/casinghandlers/hcc16x"
+            },
+            {
+              "href": "/produkter/tei/borrmaster"
+            }
+          ]
+        }
+      ]
+    },
+    "et": {
+      "title": "HCC10X",
+      "h1": "HCC10X",
+      "seoTitle": "TEI HCC10X, torumanipulaatorid | Betongakuten",
+      "description": "HCC10X on TEI torumanipulaator 7–15 t ekskavaatoritele. See tõstab ja paigaldab korraga 177–254 mm torusid ja puurvardaid ilma abiliseta ohualas.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "TEI Rock Drills",
+          "href": "/produkter/tei",
+          "width": 1920,
+          "height": 1117,
+          "src": "/assets/img/tei-2.webp"
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Brošüür HCC10X (ENG)",
+          "href": "/assets/docs/tei-casinghandlers-hcc10x-broschyr-eng.pdf"
+        },
+        {
+          "type": "datasheet",
+          "title": "Tehnilised andmed",
+          "note": "TEI tehnilised andmed eeldavad 40 % hüdrauliivõimsuse kadu.",
+          "tagline": "Hüdrauliline toru- ja tööriistamanipulaator ekskavaatorile",
+          "intro": [
+            "HCC10X on TEI väiksem torumanipulaator 7–15 t ekskavaatoritele. See haarab ja paigaldab umbes 1,5–3 meetri pikkusi torusid ja vardaid ning seab need otse ja keskele masti kohale.",
+            "Haarats ei muuda ekskavaatorit, vaid töötab lisahüdraulikaga, ja juht juhib seda kabiinist eraldi kangiga."
+          ],
+          "groups": [
+            {
+              "title": "Tehnilised andmed",
+              "rows": [
+                {
+                  "label": "Toru läbimõõt",
+                  "metric": "177-254 mm"
+                },
+                {
+                  "label": "Tööriista max mass",
+                  "metric": "907 kg"
+                },
+                {
+                  "label": "Hüdrovool",
+                  "metric": "19-30 l/min"
+                },
+                {
+                  "label": "Hüdrorõhk",
+                  "metric": "207 bar"
+                },
+                {
+                  "label": "Elektrisüsteem",
+                  "metric": "12 V või 24 V"
+                },
+                {
+                  "label": "Mass",
+                  "metric": "635 kg"
+                },
+                {
+                  "label": "Ekskavaator",
+                  "metric": "7-15 t"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "carousel",
+          "items": [
+            {
+              "src": "/assets/img/tei-casinghandlers-hcc10x.webp",
+              "alt": "HCC10X haarab toru",
+              "width": 1024,
+              "height": 1024
+            },
+            {
+              "src": "/assets/img/tei-casinghandlers-hcc10x-ovanifran.webp",
+              "alt": "HCC10X ülevalt",
+              "width": 1256,
+              "height": 822
+            },
+            {
+              "src": "/assets/img/tei-casinghandlers-styrning.webp",
+              "alt": "Juhtkang kabiinis",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/tei-casinghandlers-hero.webp",
+              "alt": "HCC10X töös",
+              "width": 2200,
+              "height": 1936
+            }
+          ]
+        },
+        {
+          "type": "related",
+          "items": [
+            {
+              "href": "/produkter/tei/casinghandlers/hcc16x"
+            },
+            {
+              "href": "/produkter/tei/borrmaster"
+            }
+          ]
+        }
+      ]
+    },
+    "ru": {
+      "title": "HCC10X",
+      "h1": "HCC10X",
+      "seoTitle": "TEI HCC10X, манипуляторы для труб | Betongakuten",
+      "description": "HCC10X — манипулятор для труб TEI для экскаваторов массой 7–15 т. Он одновременно поднимает и устанавливает обсадные трубы 177–254 мм и штанги без помощника в опасной зоне.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "TEI Rock Drills",
+          "href": "/produkter/tei",
+          "width": 1920,
+          "height": 1117,
+          "src": "/assets/img/tei-2.webp"
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Брошюра HCC10X (ENG)",
+          "href": "/assets/docs/tei-casinghandlers-hcc10x-broschyr-eng.pdf"
+        },
+        {
+          "type": "datasheet",
+          "title": "Технические данные",
+          "note": "Технические данные TEI предполагают потери гидравлической мощности 40 %.",
+          "tagline": "Гидравлический манипулятор для труб и инструмента на экскаватор",
+          "intro": [
+            "HCC10X — меньший из манипуляторов TEI, для экскаваторов массой 7–15 т. Он захватывает и устанавливает трубы и штанги длиной примерно 1,5–3 метра и ставит их ровно и по центру над мачтой.",
+            "Захват не требует переделки экскаватора, работает от вспомогательной гидравлики, а оператор управляет им из кабины отдельным джойстиком."
+          ],
+          "groups": [
+            {
+              "title": "Спецификации",
+              "rows": [
+                {
+                  "label": "Диаметр трубы",
+                  "metric": "177-254 mm"
+                },
+                {
+                  "label": "Макс. масса инструмента",
+                  "metric": "907 kg"
+                },
+                {
+                  "label": "Гидравлический поток",
+                  "metric": "19-30 l/min"
+                },
+                {
+                  "label": "Гидравлическое давление",
+                  "metric": "207 bar"
+                },
+                {
+                  "label": "Электросистема",
+                  "metric": "12 В или 24 В"
+                },
+                {
+                  "label": "Масса",
+                  "metric": "635 kg"
+                },
+                {
+                  "label": "Экскаватор",
+                  "metric": "7-15 т"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "carousel",
+          "items": [
+            {
+              "src": "/assets/img/tei-casinghandlers-hcc10x.webp",
+              "alt": "HCC10X захватывает трубу",
+              "width": 1024,
+              "height": 1024
+            },
+            {
+              "src": "/assets/img/tei-casinghandlers-hcc10x-ovanifran.webp",
+              "alt": "HCC10X, вид сверху",
+              "width": 1256,
+              "height": 822
+            },
+            {
+              "src": "/assets/img/tei-casinghandlers-styrning.webp",
+              "alt": "Джойстик в кабине",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/tei-casinghandlers-hero.webp",
+              "alt": "HCC10X в работе",
               "width": 2200,
               "height": 1936
             }

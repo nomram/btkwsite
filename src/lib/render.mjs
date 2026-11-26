@@ -499,7 +499,7 @@ function renderModel3d(ctx, b) {
   const label = b.label || b.alt || "";
   const W = { sv: ["Visa i 3D", "Vrid, zooma och titta närmare"], es: ["Ver en 3D", "Gira, amplía y mira de cerca"], no: ["Vis i 3D", "Drei, zoom og se nærmere"] }[ctx.lang] || ["View in 3D", "Turn, zoom and take a closer look"];
   const go = W[0], note = W[1];
-  return `<figure class="m3d" data-src="${esc(b.src)}" data-label="${esc(label)}"><div class="m3d__pic">${imgTag(ctx, b.poster, b.alt || label, { cls: "m3d__poster", sizes: "(min-width: 900px) 760px, 100vw", eager: true })}</div>` +
+  return `<figure class="m3d" data-src="${esc(b.src)}" data-label="${esc(label)}"${b.yaw ? ` data-yaw="${esc(b.yaw)}"` : ""}><div class="m3d__pic">${imgTag(ctx, b.poster, b.alt || label, { cls: "m3d__poster", sizes: "(min-width: 900px) 760px, 100vw", eager: true })}</div>` +
     `<button type="button" class="m3d__go">${CUBE}<span class="m3d__got"><strong>${esc(go)}</strong><small>${esc(note)}${b.size ? ` · ${esc(b.size)}` : ""}</small></span></button></figure>`;
 }
 function renderVideo(ctx, b) {

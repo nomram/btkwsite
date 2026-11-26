@@ -297,6 +297,46 @@
           "html": "<a href=\"/kontakta-oss\">Contáctenos</a> para obtener folletos detallados y más información."
         },
         {
+          "type": "heading",
+          "level": 2,
+          "text": "Modelos MR 5",
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 2,
+          "square": true,
+          "more": false,
+          "items": [
+            {
+              "title": "MR 5 PN",
+              "image": "/assets/img/marini-mr-mr-5-pn-tile.webp",
+              "alt": "Marini MR 5 PN",
+              "href": "/produkter/marini/släntstabilisering/mr-5-pn",
+              "bullets": [
+                "Neumática",
+                "Peso: 390 - 460 kg"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "MR 5 ID",
+              "image": "/assets/img/marini-mr-mr-5-id-tile.webp",
+              "alt": "Marini MR 5 ID",
+              "href": "/produkter/marini/släntstabilisering/mr-5-id",
+              "bullets": [
+                "Hidráulica",
+                "Peso: 400 - 460 kg"
+              ],
+              "width": 1000,
+              "height": 1000
+            }
+          ],
+          "gen": true
+        },
+        {
           "type": "modules",
           "layout": "cards",
           "columns": 3,
@@ -375,6 +415,46 @@
         {
           "type": "text",
           "html": "<a href=\"/kontakta-oss\">Kontakt oss</a> for detaljerte brosjyrer og mer informasjon."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Modeller MR 5",
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 2,
+          "square": true,
+          "more": false,
+          "items": [
+            {
+              "title": "MR 5 PN",
+              "image": "/assets/img/marini-mr-mr-5-pn-tile.webp",
+              "alt": "Marini MR 5 PN",
+              "href": "/produkter/marini/släntstabilisering/mr-5-pn",
+              "bullets": [
+                "Pneumatisk",
+                "Vekt: 390 - 460 kg"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "MR 5 ID",
+              "image": "/assets/img/marini-mr-mr-5-id-tile.webp",
+              "alt": "Marini MR 5 ID",
+              "href": "/produkter/marini/släntstabilisering/mr-5-id",
+              "bullets": [
+                "Hydraulisk",
+                "Vekt: 400 - 460 kg"
+              ],
+              "width": 1000,
+              "height": 1000
+            }
+          ],
+          "gen": true
         },
         {
           "type": "modules",

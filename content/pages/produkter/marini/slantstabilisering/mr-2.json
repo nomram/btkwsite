@@ -356,6 +356,70 @@
           "html": "<a href=\"/kontakta-oss\">Contáctenos</a> para obtener folletos detallados y más información."
         },
         {
+          "type": "heading",
+          "level": 2,
+          "text": "Modelos MR 2",
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 4,
+          "square": true,
+          "more": false,
+          "items": [
+            {
+              "title": "MR 2 PN",
+              "image": "/assets/img/marini-mr-mr-2-pn-tile.webp",
+              "alt": "Marini MR 2 PN",
+              "href": "/produkter/marini/släntstabilisering/mr-2-pn",
+              "bullets": [
+                "Neumática",
+                "Peso: 310 - 340 kg"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "MR 2 PN 80",
+              "image": "/assets/img/marini-mr-mr-2-pn-80-tile.webp",
+              "alt": "Marini MR 2 PN 80",
+              "href": "/produkter/marini/släntstabilisering/mr-2-pn-80",
+              "bullets": [
+                "Neumática",
+                "Peso: 380 - 410 kg"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "MR 2 ID 80",
+              "image": "/assets/img/marini-mr-mr-2-id-80-tile.webp",
+              "alt": "Marini MR 2 ID 80",
+              "href": "/produkter/marini/släntstabilisering/mr-2-id-80",
+              "bullets": [
+                "Hidráulica",
+                "Peso: 390 - 430 kg"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "MR 2 ID 100",
+              "image": "/assets/img/marini-mr-mr-2-id-100-tile.webp",
+              "alt": "Marini MR 2 ID 100",
+              "href": "/produkter/marini/släntstabilisering/mr-2-id-100",
+              "bullets": [
+                "Hidráulica",
+                "Peso: 600 - 650 kg"
+              ],
+              "width": 1000,
+              "height": 1000
+            }
+          ],
+          "gen": true
+        },
+        {
           "type": "modules",
           "layout": "cards",
           "columns": 3,
@@ -448,6 +512,70 @@
         {
           "type": "text",
           "html": "<a href=\"/kontakta-oss\">Kontakt oss</a> for detaljerte brosjyrer og mer informasjon."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Modeller MR 2",
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 4,
+          "square": true,
+          "more": false,
+          "items": [
+            {
+              "title": "MR 2 PN",
+              "image": "/assets/img/marini-mr-mr-2-pn-tile.webp",
+              "alt": "Marini MR 2 PN",
+              "href": "/produkter/marini/släntstabilisering/mr-2-pn",
+              "bullets": [
+                "Pneumatisk",
+                "Vekt: 310 - 340 kg"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "MR 2 PN 80",
+              "image": "/assets/img/marini-mr-mr-2-pn-80-tile.webp",
+              "alt": "Marini MR 2 PN 80",
+              "href": "/produkter/marini/släntstabilisering/mr-2-pn-80",
+              "bullets": [
+                "Pneumatisk",
+                "Vekt: 380 - 410 kg"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "MR 2 ID 80",
+              "image": "/assets/img/marini-mr-mr-2-id-80-tile.webp",
+              "alt": "Marini MR 2 ID 80",
+              "href": "/produkter/marini/släntstabilisering/mr-2-id-80",
+              "bullets": [
+                "Hydraulisk",
+                "Vekt: 390 - 430 kg"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "MR 2 ID 100",
+              "image": "/assets/img/marini-mr-mr-2-id-100-tile.webp",
+              "alt": "Marini MR 2 ID 100",
+              "href": "/produkter/marini/släntstabilisering/mr-2-id-100",
+              "bullets": [
+                "Hydraulisk",
+                "Vekt: 600 - 650 kg"
+              ],
+              "width": 1000,
+              "height": 1000
+            }
+          ],
+          "gen": true
         },
         {
           "type": "modules",

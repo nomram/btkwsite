@@ -5,8 +5,6 @@
   "order": 16,
   "published": true,
   "hideIn": [
-    "es",
-    "no",
     "lt",
     "lv",
     "et",
@@ -303,6 +301,302 @@
         {
           "type": "related",
           "title": "See also",
+          "items": [
+            {
+              "href": "/produkter/marini/släntstabilisering/mr-3"
+            },
+            {
+              "href": "/produkter/marini/släntstabilisering/mr-3-pn"
+            }
+          ],
+          "gen": true
+        }
+      ]
+    },
+    "es": {
+      "title": "MR 3 ID",
+      "h1": "Marini MR 3 ID",
+      "seoTitle": "Marini MR 3 ID perforadora para taludes | Betongakuten",
+      "description": "MR 3 ID es una unidad de perforación hidráulica de la serie MR de Marini para estabilización de taludes y micropilotes. Véala en 3D, con datos técnicos y folleto.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Logotipo de Marini",
+          "href": "/produkter/marini",
+          "width": 637,
+          "height": 86,
+          "src": "/assets/img/logo-marini.webp",
+          "gen": true
+        },
+        {
+          "type": "model3d",
+          "src": "/assets/3d/marini-mr-3-id.bkm",
+          "poster": "/assets/img/marini-mr-mr-3-id-iso.webp",
+          "alt": "Marini MR 3 ID",
+          "label": "Marini MR 3 ID, modelo 3D",
+          "size": "0,8 MB",
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "MR 3 ID es la versión hidráulica de la MR 3, con el mismo bastidor amplio sobre patines que se deslizan sobre el terreno irregular. El avance es hidráulico con cilindro integrado, y admite una cabeza de rotación hidráulica para martillos de fondo de hasta 4 pulgadas o un martillo perforador hidroneumático.",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Accionamiento: Hidráulico",
+            "Fuerza de retroceso: 10,0 - 15,0 kN",
+            "Peso: 450 - 650 kg"
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Equipos compatibles",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Cabezas de rotación: ID 160",
+            "Martillos perforadores: MA 100 S ID",
+            "Grupo hidráulico: 20-E, 23-D"
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Contáctenos</a> para precio, plazo de entrega o ayuda para elegir el modelo adecuado.",
+          "gen": true
+        },
+        {
+          "type": "carousel",
+          "autoplay": true,
+          "interval": 6,
+          "items": [
+            {
+              "src": "/assets/img/marini-mr-mr-3-id-p1.webp",
+              "alt": "Marini MR 3 ID (1/3)",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/marini-mr-mr-3-id-p2.webp",
+              "alt": "Marini MR 3 ID (2/3)",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/marini-mr-mr-3-id-p3.webp",
+              "alt": "Marini MR 3 ID (3/3)",
+              "width": 1400,
+              "height": 1050
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Folleto (hidráulico)",
+          "href": "/assets/docs/marini-slantstabilisering-mr-3-broschyr.pdf",
+          "gen": true
+        },
+        {
+          "type": "datasheet",
+          "title": "Datos técnicos",
+          "tagline": "Marini MR 3 ID",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Especificaciones",
+              "rows": [
+                {
+                  "label": "Accionamiento",
+                  "metric": "Hidráulico"
+                },
+                {
+                  "label": "Fuerza de retroceso",
+                  "metric": "10,0 - 15,0 kN"
+                },
+                {
+                  "label": "Paso máximo",
+                  "metric": "115 - 188 mm"
+                },
+                {
+                  "label": "Peso",
+                  "metric": "450 - 650 kg"
+                },
+                {
+                  "label": "Grupo hidráulico",
+                  "metric": "20-E, 23-D"
+                },
+                {
+                  "label": "Potencia del grupo",
+                  "metric": "15 / 17 / 22 kW"
+                }
+              ]
+            }
+          ],
+          "note": "",
+          "source": "Los datos proceden del folleto de Marini y de marinidrills.com.",
+          "gen": true
+        },
+        {
+          "type": "related",
+          "title": "Ver también",
+          "items": [
+            {
+              "href": "/produkter/marini/släntstabilisering/mr-3"
+            },
+            {
+              "href": "/produkter/marini/släntstabilisering/mr-3-pn"
+            }
+          ],
+          "gen": true
+        }
+      ]
+    },
+    "no": {
+      "title": "MR 3 ID",
+      "h1": "Marini MR 3 ID",
+      "seoTitle": "Marini MR 3 ID borerigg for skråningsstabilisering | Betongakuten",
+      "description": "MR 3 ID er en hydraulisk boreenhet fra Marinis MR-serie for skråningsstabilisering og mikropeling. Se den i 3D, med teknisk data og brosjyre.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Marini logo",
+          "href": "/produkter/marini",
+          "width": 637,
+          "height": 86,
+          "src": "/assets/img/logo-marini.webp",
+          "gen": true
+        },
+        {
+          "type": "model3d",
+          "src": "/assets/3d/marini-mr-3-id.bkm",
+          "poster": "/assets/img/marini-mr-mr-3-id-iso.webp",
+          "alt": "Marini MR 3 ID",
+          "label": "Marini MR 3 ID, 3D-modell",
+          "size": "0,8 MB",
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "MR 3 ID er den hydrauliske versjonen av MR 3, med den samme brede rammen på meier som glir over ujevnt terreng. Matingen er hydraulisk med innebygd sylinder, og riggen kan utstyres med et hydraulisk rotasjonshode for senkhammere opptil 4 tommer eller med en hydropneumatisk borhammer.",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Drift: Hydraulisk",
+            "Trekkraft (tilbaketrekk): 10,0 - 15,0 kN",
+            "Vekt: 450 - 650 kg"
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Passende utstyr",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Rotasjonshoder: ID 160",
+            "Borhammere: MA 100 S ID",
+            "Hydraulikkaggregat: 20-E, 23-D"
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Kontakt oss</a> for pris, leveringstid eller hjelp til å velge riktig modell.",
+          "gen": true
+        },
+        {
+          "type": "carousel",
+          "autoplay": true,
+          "interval": 6,
+          "items": [
+            {
+              "src": "/assets/img/marini-mr-mr-3-id-p1.webp",
+              "alt": "Marini MR 3 ID (1/3)",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/marini-mr-mr-3-id-p2.webp",
+              "alt": "Marini MR 3 ID (2/3)",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/marini-mr-mr-3-id-p3.webp",
+              "alt": "Marini MR 3 ID (3/3)",
+              "width": 1400,
+              "height": 1050
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Brosjyre (hydraulisk)",
+          "href": "/assets/docs/marini-slantstabilisering-mr-3-broschyr.pdf",
+          "gen": true
+        },
+        {
+          "type": "datasheet",
+          "title": "Teknisk data",
+          "tagline": "Marini MR 3 ID",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Spesifikasjoner",
+              "rows": [
+                {
+                  "label": "Drift",
+                  "metric": "Hydraulisk"
+                },
+                {
+                  "label": "Trekkraft (tilbaketrekk)",
+                  "metric": "10,0 - 15,0 kN"
+                },
+                {
+                  "label": "Største gjennomgang",
+                  "metric": "115 - 188 mm"
+                },
+                {
+                  "label": "Vekt",
+                  "metric": "450 - 650 kg"
+                },
+                {
+                  "label": "Hydraulikkaggregat",
+                  "metric": "20-E, 23-D"
+                },
+                {
+                  "label": "Aggregatets effekt",
+                  "metric": "15 / 17 / 22 kW"
+                }
+              ]
+            }
+          ],
+          "note": "",
+          "source": "Opplysningene er hentet fra Marinis brosjyre og fra marinidrills.com.",
+          "gen": true
+        },
+        {
+          "type": "related",
+          "title": "Se også",
           "items": [
             {
               "href": "/produkter/marini/släntstabilisering/mr-3"

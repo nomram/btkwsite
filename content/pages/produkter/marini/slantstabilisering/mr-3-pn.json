@@ -5,8 +5,6 @@
   "order": 15,
   "published": true,
   "hideIn": [
-    "es",
-    "no",
     "lt",
     "lv",
     "et",
@@ -41,6 +39,7 @@
           "alt": "Marini MR 3 PN",
           "label": "Marini MR 3 PN, 3D-modell",
           "size": "1,5 MB",
+          "yaw": -90,
           "gen": true
         },
         {
@@ -188,6 +187,7 @@
           "alt": "Marini MR 3 PN",
           "label": "Marini MR 3 PN, 3D model",
           "size": "1.5 MB",
+          "yaw": -90,
           "gen": true
         },
         {
@@ -301,6 +301,302 @@
         {
           "type": "related",
           "title": "See also",
+          "items": [
+            {
+              "href": "/produkter/marini/släntstabilisering/mr-3"
+            },
+            {
+              "href": "/produkter/marini/släntstabilisering/mr-3-id"
+            }
+          ],
+          "gen": true
+        }
+      ]
+    },
+    "es": {
+      "title": "MR 3 PN",
+      "h1": "Marini MR 3 PN",
+      "seoTitle": "Marini MR 3 PN perforadora para taludes | Betongakuten",
+      "description": "MR 3 PN es una unidad de perforación neumática de la serie MR de Marini para estabilización de taludes y micropilotes. Véala en 3D, con datos técnicos y folleto.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Logotipo de Marini",
+          "href": "/produkter/marini",
+          "width": 637,
+          "height": 86,
+          "src": "/assets/img/logo-marini.webp",
+          "gen": true
+        },
+        {
+          "type": "model3d",
+          "src": "/assets/3d/marini-mr-3-pn.bkm",
+          "poster": "/assets/img/marini-mr-mr-3-pn-iso.webp",
+          "alt": "Marini MR 3 PN",
+          "label": "Marini MR 3 PN, modelo 3D",
+          "size": "1,5 MB",
+          "yaw": -90,
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "MR 3 PN es una unidad de perforación neumática para taludes empinados. El amplio bastidor tubular se apoya en patines que se deslizan sobre el terreno irregular al desplazar el equipo. Admite una cabeza de rotación neumática para martillos de fondo de 2, 3 y 4 pulgadas o un martillo perforador neumático, y el avance lo mueve un motor neumático de pistón.",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Accionamiento: Neumático (aire comprimido)",
+            "Fuerza de retroceso: 9,5 kN",
+            "Peso: 300 kg"
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Equipos compatibles",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Cabezas de rotación: EP 120",
+            "Martillos perforadores: MA 100 S 3R"
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Contáctenos</a> para precio, plazo de entrega o ayuda para elegir el modelo adecuado.",
+          "gen": true
+        },
+        {
+          "type": "carousel",
+          "autoplay": true,
+          "interval": 6,
+          "items": [
+            {
+              "src": "/assets/img/marini-mr-mr-3-pn-p1.webp",
+              "alt": "Marini MR 3 PN (1/5)",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/marini-mr-mr-3-pn-p2.webp",
+              "alt": "Marini MR 3 PN (2/5)",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/marini-mr-mr-3-pn-p3.webp",
+              "alt": "Marini MR 3 PN (3/5)",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/marini-mr-mr-3-pn-p4.webp",
+              "alt": "Marini MR 3 PN (4/5)",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/marini-mr-mr-3-pn-p5.webp",
+              "alt": "Marini MR 3 PN (5/5)",
+              "width": 1400,
+              "height": 1050
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Folleto (neumático)",
+          "href": "/assets/docs/marini-slantstabilisering-mr-3-broschyr-2.pdf",
+          "gen": true
+        },
+        {
+          "type": "datasheet",
+          "title": "Datos técnicos",
+          "tagline": "Marini MR 3 PN",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Especificaciones",
+              "rows": [
+                {
+                  "label": "Accionamiento",
+                  "metric": "Neumático (aire comprimido)"
+                },
+                {
+                  "label": "Fuerza de retroceso",
+                  "metric": "9,5 kN"
+                },
+                {
+                  "label": "Peso",
+                  "metric": "300 kg"
+                }
+              ]
+            }
+          ],
+          "note": "",
+          "source": "Los datos proceden del folleto de Marini y de marinidrills.com.",
+          "gen": true
+        },
+        {
+          "type": "related",
+          "title": "Ver también",
+          "items": [
+            {
+              "href": "/produkter/marini/släntstabilisering/mr-3"
+            },
+            {
+              "href": "/produkter/marini/släntstabilisering/mr-3-id"
+            }
+          ],
+          "gen": true
+        }
+      ]
+    },
+    "no": {
+      "title": "MR 3 PN",
+      "h1": "Marini MR 3 PN",
+      "seoTitle": "Marini MR 3 PN borerigg for skråningsstabilisering | Betongakuten",
+      "description": "MR 3 PN er en pneumatisk boreenhet fra Marinis MR-serie for skråningsstabilisering og mikropeling. Se den i 3D, med teknisk data og brosjyre.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Marini logo",
+          "href": "/produkter/marini",
+          "width": 637,
+          "height": 86,
+          "src": "/assets/img/logo-marini.webp",
+          "gen": true
+        },
+        {
+          "type": "model3d",
+          "src": "/assets/3d/marini-mr-3-pn.bkm",
+          "poster": "/assets/img/marini-mr-mr-3-pn-iso.webp",
+          "alt": "Marini MR 3 PN",
+          "label": "Marini MR 3 PN, 3D-modell",
+          "size": "1,5 MB",
+          "yaw": -90,
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "MR 3 PN er en pneumatisk boreenhet for bratte skråninger. Den brede rørrammen står på meier som glir over ujevnt terreng når riggen flyttes. Den kan utstyres med et pneumatisk rotasjonshode for senkhammere på 2, 3 og 4 tommer eller med en pneumatisk borhammer, og matingen drives av en pneumatisk stempelmotor.",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Drift: Pneumatisk (trykkluft)",
+            "Trekkraft (tilbaketrekk): 9,5 kN",
+            "Vekt: 300 kg"
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Passende utstyr",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Rotasjonshoder: EP 120",
+            "Borhammere: MA 100 S 3R"
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Kontakt oss</a> for pris, leveringstid eller hjelp til å velge riktig modell.",
+          "gen": true
+        },
+        {
+          "type": "carousel",
+          "autoplay": true,
+          "interval": 6,
+          "items": [
+            {
+              "src": "/assets/img/marini-mr-mr-3-pn-p1.webp",
+              "alt": "Marini MR 3 PN (1/5)",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/marini-mr-mr-3-pn-p2.webp",
+              "alt": "Marini MR 3 PN (2/5)",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/marini-mr-mr-3-pn-p3.webp",
+              "alt": "Marini MR 3 PN (3/5)",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/marini-mr-mr-3-pn-p4.webp",
+              "alt": "Marini MR 3 PN (4/5)",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/marini-mr-mr-3-pn-p5.webp",
+              "alt": "Marini MR 3 PN (5/5)",
+              "width": 1400,
+              "height": 1050
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Brosjyre (pneumatisk)",
+          "href": "/assets/docs/marini-slantstabilisering-mr-3-broschyr-2.pdf",
+          "gen": true
+        },
+        {
+          "type": "datasheet",
+          "title": "Teknisk data",
+          "tagline": "Marini MR 3 PN",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Spesifikasjoner",
+              "rows": [
+                {
+                  "label": "Drift",
+                  "metric": "Pneumatisk (trykkluft)"
+                },
+                {
+                  "label": "Trekkraft (tilbaketrekk)",
+                  "metric": "9,5 kN"
+                },
+                {
+                  "label": "Vekt",
+                  "metric": "300 kg"
+                }
+              ]
+            }
+          ],
+          "note": "",
+          "source": "Opplysningene er hentet fra Marinis brosjyre og fra marinidrills.com.",
+          "gen": true
+        },
+        {
+          "type": "related",
+          "title": "Se også",
           "items": [
             {
               "href": "/produkter/marini/släntstabilisering/mr-3"

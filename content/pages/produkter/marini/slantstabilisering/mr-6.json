@@ -346,6 +346,46 @@
           "html": "<a href=\"/kontakta-oss\">Contáctenos</a> para más información."
         },
         {
+          "type": "heading",
+          "level": 2,
+          "text": "Modelos MR 6",
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 2,
+          "square": true,
+          "more": false,
+          "items": [
+            {
+              "title": "MR 6 PN",
+              "image": "/assets/img/marini-mr-mr-6-pn-tile.webp",
+              "alt": "Marini MR 6 PN",
+              "href": "/produkter/marini/släntstabilisering/mr-6-pn",
+              "bullets": [
+                "Neumática",
+                "Peso: 300 - 330 kg"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "MR 6 ID",
+              "image": "/assets/img/marini-mr-mr-6-id-tile.webp",
+              "alt": "Marini MR 6 ID",
+              "href": "/produkter/marini/släntstabilisering/mr-6-id",
+              "bullets": [
+                "Hidráulica",
+                "Peso: 300 - 330 kg"
+              ],
+              "width": 1000,
+              "height": 1000
+            }
+          ],
+          "gen": true
+        },
+        {
           "type": "modules",
           "layout": "cards",
           "columns": 3,
@@ -455,6 +495,46 @@
         {
           "type": "text",
           "html": "<a href=\"/kontakta-oss\">Kontakt oss</a> for mer informasjon."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Modeller MR 6",
+          "gen": true
+        },
+        {
+          "type": "modules",
+          "layout": "tiles",
+          "columns": 2,
+          "square": true,
+          "more": false,
+          "items": [
+            {
+              "title": "MR 6 PN",
+              "image": "/assets/img/marini-mr-mr-6-pn-tile.webp",
+              "alt": "Marini MR 6 PN",
+              "href": "/produkter/marini/släntstabilisering/mr-6-pn",
+              "bullets": [
+                "Pneumatisk",
+                "Vekt: 300 - 330 kg"
+              ],
+              "width": 1000,
+              "height": 1000
+            },
+            {
+              "title": "MR 6 ID",
+              "image": "/assets/img/marini-mr-mr-6-id-tile.webp",
+              "alt": "Marini MR 6 ID",
+              "href": "/produkter/marini/släntstabilisering/mr-6-id",
+              "bullets": [
+                "Hydraulisk",
+                "Vekt: 300 - 330 kg"
+              ],
+              "width": 1000,
+              "height": 1000
+            }
+          ],
+          "gen": true
         },
         {
           "type": "modules",

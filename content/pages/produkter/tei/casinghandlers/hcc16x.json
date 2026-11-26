@@ -4,14 +4,6 @@
   "template": "product",
   "order": 1,
   "published": true,
-  "hideIn": [
-    "es",
-    "no",
-    "lt",
-    "lv",
-    "et",
-    "ru"
-  ],
   "hero": {
     "image": "/assets/img/tei-casinghandlers-hcc16x-falt.webp"
   },
@@ -223,6 +215,672 @@
             {
               "src": "/assets/img/tei-casinghandlers-hcc16x-styrning.webp",
               "alt": "The joystick in the cab",
+              "width": 1200,
+              "height": 1600
+            }
+          ]
+        },
+        {
+          "type": "related",
+          "items": [
+            {
+              "href": "/produkter/tei/casinghandlers/hcc10x"
+            },
+            {
+              "href": "/produkter/tei/borrmaster"
+            }
+          ]
+        }
+      ]
+    },
+    "es": {
+      "title": "HCC16X",
+      "h1": "HCC16X",
+      "seoTitle": "TEI HCC16X, manipuladores de tubería | Betongakuten",
+      "description": "HCC16X es el manipulador de tubería más grande de TEI, para excavadoras de 14 a 18 t. Maneja tubería de 76 a 406 mm y herramientas de hasta 1360 kg.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "TEI Rock Drills",
+          "href": "/produkter/tei",
+          "width": 1920,
+          "height": 1117,
+          "src": "/assets/img/tei-2.webp"
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Folleto HCC16X (ENG)",
+          "href": "/assets/docs/tei-casinghandlers-hcc16x-broschyr-eng.pdf"
+        },
+        {
+          "type": "datasheet",
+          "title": "Datos técnicos",
+          "note": "Las especificaciones técnicas de TEI suponen una pérdida de potencia hidráulica del 40 %.",
+          "tagline": "Manipulador hidráulico de tubería y herramientas para excavadora",
+          "intro": [
+            "HCC16X es el más grande de los manipuladores de TEI, para excavadoras de 14 a 18 t. Las garras sujetan tubos de 76 a 406 mm sin bastidores, con 10 000 ft-lbs de fuerza de sujeción.",
+            "El peso de herramienta que puede manejar depende de la excavadora: hasta 907 kg con una de 15 t y hasta 1360 kg con una de 20 t."
+          ],
+          "groups": [
+            {
+              "title": "Especificaciones",
+              "rows": [
+                {
+                  "label": "Diámetro de tubería",
+                  "metric": "76-406 mm"
+                },
+                {
+                  "label": "Peso máx. de herramienta",
+                  "metric": "907-1360 kg"
+                },
+                {
+                  "label": "Fuerza de sujeción",
+                  "metric": "10 000 ft-lbs"
+                },
+                {
+                  "label": "Caudal hidráulico",
+                  "metric": "19-30 l/min"
+                },
+                {
+                  "label": "Presión hidráulica",
+                  "metric": "207 bar"
+                },
+                {
+                  "label": "Sistema eléctrico",
+                  "metric": "12 V o 24 V"
+                },
+                {
+                  "label": "Peso",
+                  "metric": "1177 kg"
+                },
+                {
+                  "label": "Excavadora",
+                  "metric": "14-18 t"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "carousel",
+          "items": [
+            {
+              "src": "/assets/img/tei-casinghandlers.webp",
+              "alt": "Manipulador de tubería HCC16X",
+              "width": 1500,
+              "height": 1500
+            },
+            {
+              "src": "/assets/img/tei-casinghandlers-hcc16x-falt.webp",
+              "alt": "HCC16X en una excavadora con tubería",
+              "width": 2400,
+              "height": 1667
+            },
+            {
+              "src": "/assets/img/tei-casinghandlers-hcc16x-matt.webp",
+              "alt": "HCC16X, plano de dimensiones",
+              "width": 1405,
+              "height": 907
+            },
+            {
+              "src": "/assets/img/tei-casinghandlers-hcc16x-styrning.webp",
+              "alt": "El joystick en la cabina",
+              "width": 1200,
+              "height": 1600
+            }
+          ]
+        },
+        {
+          "type": "related",
+          "items": [
+            {
+              "href": "/produkter/tei/casinghandlers/hcc10x"
+            },
+            {
+              "href": "/produkter/tei/borrmaster"
+            }
+          ]
+        }
+      ]
+    },
+    "no": {
+      "title": "HCC16X",
+      "h1": "HCC16X",
+      "seoTitle": "TEI HCC16X, rørhåndterere | Betongakuten",
+      "description": "HCC16X er TEIs større rørhåndterer for gravemaskiner på 14-18 tonn. Den håndterer foringsrør fra 76 til 406 mm og verktøy opptil 1360 kg.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "TEI Rock Drills",
+          "href": "/produkter/tei",
+          "width": 1920,
+          "height": 1117,
+          "src": "/assets/img/tei-2.webp"
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Brosjyre HCC16X (ENG)",
+          "href": "/assets/docs/tei-casinghandlers-hcc16x-broschyr-eng.pdf"
+        },
+        {
+          "type": "datasheet",
+          "title": "Tekniske data",
+          "note": "TEIs tekniske data forutsetter 40 % hydraulisk effekttap.",
+          "tagline": "Hydraulisk rørhåndterer for gravemaskin",
+          "intro": [
+            "HCC16X er den største av TEIs rørhåndterere, for gravemaskiner på 14-18 tonn. Klørne tar rør fra 76 opptil 406 mm uten rørstativ, og klemkraften er 10 000 ft-lbs.",
+            "Hvor tungt verktøy den kan håndtere avhenger av gravemaskinen: opptil 907 kg på en 15-tonner og opptil 1360 kg på en 20-tonner."
+          ],
+          "groups": [
+            {
+              "title": "Spesifikasjoner",
+              "rows": [
+                {
+                  "label": "Diameter foringsrør",
+                  "metric": "76-406 mm"
+                },
+                {
+                  "label": "Maks verktøyvekt",
+                  "metric": "907-1360 kg"
+                },
+                {
+                  "label": "Klemkraft",
+                  "metric": "10 000 ft-lbs"
+                },
+                {
+                  "label": "Hydraulikkflyt",
+                  "metric": "19-30 l/min"
+                },
+                {
+                  "label": "Hydraulikktrykk",
+                  "metric": "207 bar"
+                },
+                {
+                  "label": "Elsystem",
+                  "metric": "12 V eller 24 V"
+                },
+                {
+                  "label": "Vekt",
+                  "metric": "1177 kg"
+                },
+                {
+                  "label": "Gravemaskin",
+                  "metric": "14-18 tonn"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "carousel",
+          "items": [
+            {
+              "src": "/assets/img/tei-casinghandlers.webp",
+              "alt": "HCC16X rørhåndterer",
+              "width": 1500,
+              "height": 1500
+            },
+            {
+              "src": "/assets/img/tei-casinghandlers-hcc16x-falt.webp",
+              "alt": "HCC16X på gravemaskin med foringsrør",
+              "width": 2400,
+              "height": 1667
+            },
+            {
+              "src": "/assets/img/tei-casinghandlers-hcc16x-matt.webp",
+              "alt": "HCC16X, målskisse",
+              "width": 1405,
+              "height": 907
+            },
+            {
+              "src": "/assets/img/tei-casinghandlers-hcc16x-styrning.webp",
+              "alt": "Styrespaken i førerhuset",
+              "width": 1200,
+              "height": 1600
+            }
+          ]
+        },
+        {
+          "type": "related",
+          "items": [
+            {
+              "href": "/produkter/tei/casinghandlers/hcc10x"
+            },
+            {
+              "href": "/produkter/tei/borrmaster"
+            }
+          ]
+        }
+      ]
+    },
+    "lt": {
+      "title": "HCC16X",
+      "h1": "HCC16X",
+      "seoTitle": "TEI HCC16X, vamzdžių manipuliatoriai | Betongakuten",
+      "description": "HCC16X yra didesnis TEI vamzdžių manipuliatorius 14–18 t ekskavatoriams. Jis dirba su 76–406 mm vamzdžiais ir iki 1360 kg įrankiais.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "TEI Rock Drills",
+          "href": "/produkter/tei",
+          "width": 1920,
+          "height": 1117,
+          "src": "/assets/img/tei-2.webp"
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Brošiūra HCC16X (ENG)",
+          "href": "/assets/docs/tei-casinghandlers-hcc16x-broschyr-eng.pdf"
+        },
+        {
+          "type": "datasheet",
+          "title": "Techniniai duomenys",
+          "note": "TEI techniniai duomenys numato 40 % hidraulinės galios nuostolių.",
+          "tagline": "Hidraulinis vamzdžių ir įrankių manipuliatorius ekskavatoriui",
+          "intro": [
+            "HCC16X yra didesnis TEI manipuliatorius, skirtas 14–18 t ekskavatoriams. Gniaužtai suima 76–406 mm vamzdžius be stovų, o suspaudimo jėga siekia 10 000 ft-lbs.",
+            "Kokį sunkų įrankį jis gali valdyti, priklauso nuo ekskavatoriaus: iki 907 kg su 15 t mašina ir iki 1360 kg su 20 t mašina."
+          ],
+          "groups": [
+            {
+              "title": "Specifikacijos",
+              "rows": [
+                {
+                  "label": "Vamzdžio skersmuo",
+                  "metric": "76-406 mm"
+                },
+                {
+                  "label": "Didž. įrankio masė",
+                  "metric": "907-1360 kg"
+                },
+                {
+                  "label": "Suspaudimo jėga",
+                  "metric": "10 000 ft-lbs"
+                },
+                {
+                  "label": "Hidraulinis srautas",
+                  "metric": "19-30 l/min"
+                },
+                {
+                  "label": "Hidraulinis slėgis",
+                  "metric": "207 bar"
+                },
+                {
+                  "label": "Elektros sistema",
+                  "metric": "12 V arba 24 V"
+                },
+                {
+                  "label": "Masė",
+                  "metric": "1177 kg"
+                },
+                {
+                  "label": "Ekskavatorius",
+                  "metric": "14-18 t"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "carousel",
+          "items": [
+            {
+              "src": "/assets/img/tei-casinghandlers.webp",
+              "alt": "HCC16X vamzdžių manipuliatorius",
+              "width": 1500,
+              "height": 1500
+            },
+            {
+              "src": "/assets/img/tei-casinghandlers-hcc16x-falt.webp",
+              "alt": "HCC16X ant ekskavatoriaus su vamzdžiu",
+              "width": 2400,
+              "height": 1667
+            },
+            {
+              "src": "/assets/img/tei-casinghandlers-hcc16x-matt.webp",
+              "alt": "HCC16X, matmenų brėžinys",
+              "width": 1405,
+              "height": 907
+            },
+            {
+              "src": "/assets/img/tei-casinghandlers-hcc16x-styrning.webp",
+              "alt": "Vairasvirtė kabinoje",
+              "width": 1200,
+              "height": 1600
+            }
+          ]
+        },
+        {
+          "type": "related",
+          "items": [
+            {
+              "href": "/produkter/tei/casinghandlers/hcc10x"
+            },
+            {
+              "href": "/produkter/tei/borrmaster"
+            }
+          ]
+        }
+      ]
+    },
+    "lv": {
+      "title": "HCC16X",
+      "h1": "HCC16X",
+      "seoTitle": "TEI HCC16X, cauruļu manipulatori | Betongakuten",
+      "description": "HCC16X ir lielākais TEI cauruļu manipulators 14–18 t ekskavatoriem. Tas strādā ar 76–406 mm caurulēm un instrumentiem līdz 1360 kg.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "TEI Rock Drills",
+          "href": "/produkter/tei",
+          "width": 1920,
+          "height": 1117,
+          "src": "/assets/img/tei-2.webp"
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Brošūra HCC16X (ENG)",
+          "href": "/assets/docs/tei-casinghandlers-hcc16x-broschyr-eng.pdf"
+        },
+        {
+          "type": "datasheet",
+          "title": "Tehniskie dati",
+          "note": "TEI tehniskie dati paredz 40 % hidrauliskās jaudas zudumu.",
+          "tagline": "Hidrauliskais cauruļu un instrumentu manipulators ekskavatoram",
+          "intro": [
+            "HCC16X ir lielākais TEI manipulators, paredzēts 14–18 t ekskavatoriem. Spīles satver 76–406 mm caurules bez statīviem, un satveršanas spēks ir 10 000 ft-lbs.",
+            "Cik smagu instrumentu tas var pārvietot, atkarīgs no ekskavatora: līdz 907 kg ar 15 t mašīnu un līdz 1360 kg ar 20 t mašīnu."
+          ],
+          "groups": [
+            {
+              "title": "Specifikācijas",
+              "rows": [
+                {
+                  "label": "Caurules diametrs",
+                  "metric": "76-406 mm"
+                },
+                {
+                  "label": "Maks. instrumenta svars",
+                  "metric": "907-1360 kg"
+                },
+                {
+                  "label": "Satveršanas spēks",
+                  "metric": "10 000 ft-lbs"
+                },
+                {
+                  "label": "Hidrauliskā plūsma",
+                  "metric": "19-30 l/min"
+                },
+                {
+                  "label": "Hidrauliskais spiediens",
+                  "metric": "207 bar"
+                },
+                {
+                  "label": "Elektrosistēma",
+                  "metric": "12 V vai 24 V"
+                },
+                {
+                  "label": "Svars",
+                  "metric": "1177 kg"
+                },
+                {
+                  "label": "Ekskavators",
+                  "metric": "14-18 t"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "carousel",
+          "items": [
+            {
+              "src": "/assets/img/tei-casinghandlers.webp",
+              "alt": "HCC16X cauruļu manipulators",
+              "width": 1500,
+              "height": 1500
+            },
+            {
+              "src": "/assets/img/tei-casinghandlers-hcc16x-falt.webp",
+              "alt": "HCC16X uz ekskavatora ar cauruli",
+              "width": 2400,
+              "height": 1667
+            },
+            {
+              "src": "/assets/img/tei-casinghandlers-hcc16x-matt.webp",
+              "alt": "HCC16X, izmēru rasējums",
+              "width": 1405,
+              "height": 907
+            },
+            {
+              "src": "/assets/img/tei-casinghandlers-hcc16x-styrning.webp",
+              "alt": "Vadības svira kabīnē",
+              "width": 1200,
+              "height": 1600
+            }
+          ]
+        },
+        {
+          "type": "related",
+          "items": [
+            {
+              "href": "/produkter/tei/casinghandlers/hcc10x"
+            },
+            {
+              "href": "/produkter/tei/borrmaster"
+            }
+          ]
+        }
+      ]
+    },
+    "et": {
+      "title": "HCC16X",
+      "h1": "HCC16X",
+      "seoTitle": "TEI HCC16X, torumanipulaatorid | Betongakuten",
+      "description": "HCC16X on TEI suurem torumanipulaator 14–18 t ekskavaatoritele. See käsitseb 76–406 mm torusid ja kuni 1360 kg tööriistu.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "TEI Rock Drills",
+          "href": "/produkter/tei",
+          "width": 1920,
+          "height": 1117,
+          "src": "/assets/img/tei-2.webp"
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Brošüür HCC16X (ENG)",
+          "href": "/assets/docs/tei-casinghandlers-hcc16x-broschyr-eng.pdf"
+        },
+        {
+          "type": "datasheet",
+          "title": "Tehnilised andmed",
+          "note": "TEI tehnilised andmed eeldavad 40 % hüdrauliivõimsuse kadu.",
+          "tagline": "Hüdrauliline toru- ja tööriistamanipulaator ekskavaatorile",
+          "intro": [
+            "HCC16X on TEI suurem torumanipulaator 14–18 t ekskavaatoritele. Haaratsid võtavad 76–406 mm torusid ilma alusteta ning haardejõud on 10 000 ft-lbs.",
+            "Kui rasket tööriista see käsitseda saab, sõltub ekskavaatorist: kuni 907 kg 15-tonnise ja kuni 1360 kg 20-tonnise masinaga."
+          ],
+          "groups": [
+            {
+              "title": "Tehnilised andmed",
+              "rows": [
+                {
+                  "label": "Toru läbimõõt",
+                  "metric": "76-406 mm"
+                },
+                {
+                  "label": "Tööriista max mass",
+                  "metric": "907-1360 kg"
+                },
+                {
+                  "label": "Haardejõud",
+                  "metric": "10 000 ft-lbs"
+                },
+                {
+                  "label": "Hüdrovool",
+                  "metric": "19-30 l/min"
+                },
+                {
+                  "label": "Hüdrorõhk",
+                  "metric": "207 bar"
+                },
+                {
+                  "label": "Elektrisüsteem",
+                  "metric": "12 V või 24 V"
+                },
+                {
+                  "label": "Mass",
+                  "metric": "1177 kg"
+                },
+                {
+                  "label": "Ekskavaator",
+                  "metric": "14-18 t"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "carousel",
+          "items": [
+            {
+              "src": "/assets/img/tei-casinghandlers.webp",
+              "alt": "HCC16X torumanipulaator",
+              "width": 1500,
+              "height": 1500
+            },
+            {
+              "src": "/assets/img/tei-casinghandlers-hcc16x-falt.webp",
+              "alt": "HCC16X ekskavaatoril koos toruga",
+              "width": 2400,
+              "height": 1667
+            },
+            {
+              "src": "/assets/img/tei-casinghandlers-hcc16x-matt.webp",
+              "alt": "HCC16X, mõõtjoonis",
+              "width": 1405,
+              "height": 907
+            },
+            {
+              "src": "/assets/img/tei-casinghandlers-hcc16x-styrning.webp",
+              "alt": "Juhtkang kabiinis",
+              "width": 1200,
+              "height": 1600
+            }
+          ]
+        },
+        {
+          "type": "related",
+          "items": [
+            {
+              "href": "/produkter/tei/casinghandlers/hcc10x"
+            },
+            {
+              "href": "/produkter/tei/borrmaster"
+            }
+          ]
+        }
+      ]
+    },
+    "ru": {
+      "title": "HCC16X",
+      "h1": "HCC16X",
+      "seoTitle": "TEI HCC16X, манипуляторы для труб | Betongakuten",
+      "description": "HCC16X — более крупный манипулятор для труб TEI для экскаваторов массой 14–18 т. Он работает с трубами от 76 до 406 мм и инструментом до 1360 кг.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "TEI Rock Drills",
+          "href": "/produkter/tei",
+          "width": 1920,
+          "height": 1117,
+          "src": "/assets/img/tei-2.webp"
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Брошюра HCC16X (ENG)",
+          "href": "/assets/docs/tei-casinghandlers-hcc16x-broschyr-eng.pdf"
+        },
+        {
+          "type": "datasheet",
+          "title": "Технические данные",
+          "note": "Технические данные TEI предполагают потери гидравлической мощности 40 %.",
+          "tagline": "Гидравлический манипулятор для труб и инструмента на экскаватор",
+          "intro": [
+            "HCC16X — более крупный из манипуляторов TEI, для экскаваторов массой 14–18 т. Захваты берут трубы от 76 до 406 мм без стеллажей, усилие зажима составляет 10 000 ft-lbs.",
+            "Масса инструмента зависит от экскаватора: до 907 кг на 15-тонной машине и до 1360 кг на 20-тонной."
+          ],
+          "groups": [
+            {
+              "title": "Спецификации",
+              "rows": [
+                {
+                  "label": "Диаметр трубы",
+                  "metric": "76-406 mm"
+                },
+                {
+                  "label": "Макс. масса инструмента",
+                  "metric": "907-1360 kg"
+                },
+                {
+                  "label": "Усилие зажима",
+                  "metric": "10 000 ft-lbs"
+                },
+                {
+                  "label": "Гидравлический поток",
+                  "metric": "19-30 l/min"
+                },
+                {
+                  "label": "Гидравлическое давление",
+                  "metric": "207 bar"
+                },
+                {
+                  "label": "Электросистема",
+                  "metric": "12 В или 24 В"
+                },
+                {
+                  "label": "Масса",
+                  "metric": "1177 kg"
+                },
+                {
+                  "label": "Экскаватор",
+                  "metric": "14-18 т"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "carousel",
+          "items": [
+            {
+              "src": "/assets/img/tei-casinghandlers.webp",
+              "alt": "Манипулятор для труб HCC16X",
+              "width": 1500,
+              "height": 1500
+            },
+            {
+              "src": "/assets/img/tei-casinghandlers-hcc16x-falt.webp",
+              "alt": "HCC16X на экскаваторе с трубой",
+              "width": 2400,
+              "height": 1667
+            },
+            {
+              "src": "/assets/img/tei-casinghandlers-hcc16x-matt.webp",
+              "alt": "HCC16X, габаритный чертёж",
+              "width": 1405,
+              "height": 907
+            },
+            {
+              "src": "/assets/img/tei-casinghandlers-hcc16x-styrning.webp",
+              "alt": "Джойстик в кабине",
               "width": 1200,
               "height": 1600
             }

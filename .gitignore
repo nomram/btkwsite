@@ -13,3 +13,5 @@ tools/firefox/
 
 # oversized source files (GitHub rejects files over 100 MB)
 assets-src/Kraft Tool Brochure.pdf
+# Marini's original 3D models (1.2 GB, four files over GitHub's 100 MB limit): kept on this machine, the site uses the compact copies in assets-src/3d (tools/glb-compact.mjs)
+assets-src/3d-original/

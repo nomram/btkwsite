@@ -5,8 +5,6 @@
   "order": 11,
   "published": true,
   "hideIn": [
-    "es",
-    "no",
     "lt",
     "lv",
     "et",
@@ -345,6 +343,350 @@
         {
           "type": "related",
           "title": "See also",
+          "items": [
+            {
+              "href": "/produkter/marini/släntstabilisering/mr-2"
+            },
+            {
+              "href": "/produkter/marini/släntstabilisering/mr-2-pn-80"
+            },
+            {
+              "href": "/produkter/marini/släntstabilisering/mr-2-id-80"
+            },
+            {
+              "href": "/produkter/marini/släntstabilisering/mr-2-id-100"
+            }
+          ],
+          "gen": true
+        }
+      ]
+    },
+    "es": {
+      "title": "MR 2 PN",
+      "h1": "Marini MR 2 PN",
+      "seoTitle": "Marini MR 2 PN perforadora para taludes | Betongakuten",
+      "description": "MR 2 PN es una unidad de perforación neumática de la serie MR de Marini para estabilización de taludes y micropilotes. Véala en 3D, con datos técnicos y folleto.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Logotipo de Marini",
+          "href": "/produkter/marini",
+          "width": 637,
+          "height": 86,
+          "src": "/assets/img/logo-marini.webp",
+          "gen": true
+        },
+        {
+          "type": "model3d",
+          "src": "/assets/3d/marini-mr-2-pn.bkm",
+          "poster": "/assets/img/marini-mr-mr-2-pn-iso.webp",
+          "alt": "Marini MR 2 PN",
+          "label": "Marini MR 2 PN, modelo 3D",
+          "size": "1,8 MB",
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "MR 2 PN es el modelo más vendido de Marini: una unidad de perforación neumática para trabajar en taludes empinados. El amplio bastidor tubular se apoya en tres soportes giratorios que se adaptan al terreno irregular, y los soportes giran 90 grados para desplazar el equipo fácilmente hacia los lados. MR 2 PN admite una cabeza de rotación neumática para martillos de fondo de 2, 3 y 4 pulgadas o un martillo perforador neumático. El avance lo mueve un motor neumático de pistón.",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Accionamiento: Neumático (aire comprimido)",
+            "Fuerza de avance: 9,5 kN",
+            "Fuerza de retroceso: 9,5 kN",
+            "Par de rotación: 850 Nm",
+            "Carrera del mástil: 1 260 - 1 760 mm",
+            "Peso: 310 - 340 kg"
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Equipos compatibles",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Cabezas de rotación: EP 120",
+            "Martillos perforadores: MA 100 S 3R"
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Contáctenos</a> para precio, plazo de entrega o ayuda para elegir el modelo adecuado.",
+          "gen": true
+        },
+        {
+          "type": "carousel",
+          "autoplay": true,
+          "interval": 6,
+          "items": [
+            {
+              "src": "/assets/img/marini-mr-mr-2-pn-p1.webp",
+              "alt": "Marini MR 2 PN (1/5)",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/marini-mr-mr-2-pn-p2.webp",
+              "alt": "Marini MR 2 PN (2/5)",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/marini-mr-mr-2-pn-p3.webp",
+              "alt": "Marini MR 2 PN (3/5)",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/marini-mr-mr-2-pn-p4.webp",
+              "alt": "Marini MR 2 PN (4/5)",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/marini-mr-mr-2-pn-p5.webp",
+              "alt": "Marini MR 2 PN (5/5)",
+              "width": 1400,
+              "height": 1050
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Folleto (neumático)",
+          "href": "/assets/docs/marini-slantstabilisering-mr-2-broschyr-2.pdf",
+          "gen": true
+        },
+        {
+          "type": "datasheet",
+          "title": "Datos técnicos",
+          "tagline": "Marini MR 2 PN",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Especificaciones",
+              "rows": [
+                {
+                  "label": "Accionamiento",
+                  "metric": "Neumático (aire comprimido)"
+                },
+                {
+                  "label": "Carrera del mástil",
+                  "metric": "1 260 - 1 760 mm"
+                },
+                {
+                  "label": "Fuerza de avance",
+                  "metric": "9,5 kN"
+                },
+                {
+                  "label": "Fuerza de retroceso",
+                  "metric": "9,5 kN"
+                },
+                {
+                  "label": "Par de rotación",
+                  "metric": "850 Nm"
+                },
+                {
+                  "label": "Velocidad de rotación",
+                  "metric": "40 - 45 rpm"
+                },
+                {
+                  "label": "Peso",
+                  "metric": "310 - 340 kg"
+                }
+              ]
+            }
+          ],
+          "note": "",
+          "source": "Los datos proceden del folleto de Marini y de marinidrills.com.",
+          "gen": true
+        },
+        {
+          "type": "related",
+          "title": "Ver también",
+          "items": [
+            {
+              "href": "/produkter/marini/släntstabilisering/mr-2"
+            },
+            {
+              "href": "/produkter/marini/släntstabilisering/mr-2-pn-80"
+            },
+            {
+              "href": "/produkter/marini/släntstabilisering/mr-2-id-80"
+            },
+            {
+              "href": "/produkter/marini/släntstabilisering/mr-2-id-100"
+            }
+          ],
+          "gen": true
+        }
+      ]
+    },
+    "no": {
+      "title": "MR 2 PN",
+      "h1": "Marini MR 2 PN",
+      "seoTitle": "Marini MR 2 PN borerigg for skråningsstabilisering | Betongakuten",
+      "description": "MR 2 PN er en pneumatisk boreenhet fra Marinis MR-serie for skråningsstabilisering og mikropeling. Se den i 3D, med teknisk data og brosjyre.",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Marini logo",
+          "href": "/produkter/marini",
+          "width": 637,
+          "height": 86,
+          "src": "/assets/img/logo-marini.webp",
+          "gen": true
+        },
+        {
+          "type": "model3d",
+          "src": "/assets/3d/marini-mr-2-pn.bkm",
+          "poster": "/assets/img/marini-mr-mr-2-pn-iso.webp",
+          "alt": "Marini MR 2 PN",
+          "label": "Marini MR 2 PN, 3D-modell",
+          "size": "1,8 MB",
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "MR 2 PN er Marinis bestselger: en pneumatisk boreenhet for arbeid i bratte skråninger. Den brede rørrammen står på tre dreibare støtter som følger ujevnt terreng, og støttene kan dreies 90 grader slik at riggen enkelt flyttes sideveis. MR 2 PN kan utstyres med et pneumatisk rotasjonshode for senkhammere på 2, 3 og 4 tommer eller med en pneumatisk borhammer. Matingen drives av en pneumatisk stempelmotor.",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Drift: Pneumatisk (trykkluft)",
+            "Matekraft: 9,5 kN",
+            "Trekkraft (tilbaketrekk): 9,5 kN",
+            "Dreiemoment, rotasjon: 850 Nm",
+            "Mastens slaglengde: 1 260 - 1 760 mm",
+            "Vekt: 310 - 340 kg"
+          ],
+          "gen": true
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Passende utstyr",
+          "gen": true
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Rotasjonshoder: EP 120",
+            "Borhammere: MA 100 S 3R"
+          ],
+          "gen": true
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/kontakta-oss\">Kontakt oss</a> for pris, leveringstid eller hjelp til å velge riktig modell.",
+          "gen": true
+        },
+        {
+          "type": "carousel",
+          "autoplay": true,
+          "interval": 6,
+          "items": [
+            {
+              "src": "/assets/img/marini-mr-mr-2-pn-p1.webp",
+              "alt": "Marini MR 2 PN (1/5)",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/marini-mr-mr-2-pn-p2.webp",
+              "alt": "Marini MR 2 PN (2/5)",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/marini-mr-mr-2-pn-p3.webp",
+              "alt": "Marini MR 2 PN (3/5)",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/marini-mr-mr-2-pn-p4.webp",
+              "alt": "Marini MR 2 PN (4/5)",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/marini-mr-mr-2-pn-p5.webp",
+              "alt": "Marini MR 2 PN (5/5)",
+              "width": 1400,
+              "height": 1050
+            }
+          ],
+          "gen": true
+        },
+        {
+          "type": "button",
+          "kind": "download",
+          "text": "Brosjyre (pneumatisk)",
+          "href": "/assets/docs/marini-slantstabilisering-mr-2-broschyr-2.pdf",
+          "gen": true
+        },
+        {
+          "type": "datasheet",
+          "title": "Teknisk data",
+          "tagline": "Marini MR 2 PN",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Spesifikasjoner",
+              "rows": [
+                {
+                  "label": "Drift",
+                  "metric": "Pneumatisk (trykkluft)"
+                },
+                {
+                  "label": "Mastens slaglengde",
+                  "metric": "1 260 - 1 760 mm"
+                },
+                {
+                  "label": "Matekraft",
+                  "metric": "9,5 kN"
+                },
+                {
+                  "label": "Trekkraft (tilbaketrekk)",
+                  "metric": "9,5 kN"
+                },
+                {
+                  "label": "Dreiemoment, rotasjon",
+                  "metric": "850 Nm"
+                },
+                {
+                  "label": "Turtall, rotasjon",
+                  "metric": "40 - 45 rpm"
+                },
+                {
+                  "label": "Vekt",
+                  "metric": "310 - 340 kg"
+                }
+              ]
+            }
+          ],
+          "note": "",
+          "source": "Opplysningene er hentet fra Marinis brosjyre og fra marinidrills.com.",
+          "gen": true
+        },
+        {
+          "type": "related",
+          "title": "Se også",
           "items": [
             {
               "href": "/produkter/marini/släntstabilisering/mr-2"
