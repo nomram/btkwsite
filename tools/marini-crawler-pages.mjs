@@ -157,3 +157,5 @@ for (const l of LANGS) {
 fam.updated = date;
 writeJson(famFile, fam);
 console.log(`Marini crawlers: ${DATA.models.length} model pages and the family page`);
+// galleries go after the documents and technical data
+(await import("./gallery-order.mjs")).run();

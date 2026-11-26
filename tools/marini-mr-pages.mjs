@@ -171,3 +171,5 @@ for (const f of fs.readdirSync(path.join(PAGES, "crawlers"))) {
   });
 }
 console.log("written", M.length, "MR pages; släntstabilisering, families and MR-C pages updated");
+// galleries go after the documents and technical data
+(await import("./gallery-order.mjs")).run();

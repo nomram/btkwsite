@@ -401,3 +401,5 @@ for (const pg of PAGESET) {
   console.log(`old quarry brochure: ${hidden} buttons hidden`);
 }
 console.log(`Marini quarry: ${SAWS.length} wire saw pages, ${PAGESET.length} drill rig pages (Voyager, Big Driller, Driller, Hor Drill)`);
+// galleries go after the documents and technical data
+(await import("./gallery-order.mjs")).run();

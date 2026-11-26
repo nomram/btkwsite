@@ -67,38 +67,6 @@
           "gen": true
         },
         {
-          "type": "carousel",
-          "autoplay": false,
-          "interval": 6,
-          "items": [
-            {
-              "src": "/assets/img/marini-drill-hor-drill-id.webp",
-              "alt": "Marini Hor Drill ID (1/4)",
-              "width": 684,
-              "height": 624
-            },
-            {
-              "src": "/assets/img/marini-drill-hor-drill-p1.webp",
-              "alt": "Marini Hor Drill (2/4)",
-              "width": 1268,
-              "height": 817
-            },
-            {
-              "src": "/assets/img/marini-drill-hor-drill-id-p1.webp",
-              "alt": "Marini Hor Drill (3/4)",
-              "width": 360,
-              "height": 338
-            },
-            {
-              "src": "/assets/img/marini-drill-hor-drill-id-p2.webp",
-              "alt": "Marini Hor Drill (4/4)",
-              "width": 286,
-              "height": 284
-            }
-          ],
-          "gen": true
-        },
-        {
           "type": "button",
           "kind": "download",
           "text": "Broschyr Hor Drill (ENG)",
@@ -214,6 +182,38 @@
           "gen": true
         },
         {
+          "type": "carousel",
+          "autoplay": false,
+          "interval": 6,
+          "items": [
+            {
+              "src": "/assets/img/marini-drill-hor-drill-id.webp",
+              "alt": "Marini Hor Drill ID (1/4)",
+              "width": 684,
+              "height": 624
+            },
+            {
+              "src": "/assets/img/marini-drill-hor-drill-p1.webp",
+              "alt": "Marini Hor Drill (2/4)",
+              "width": 1268,
+              "height": 817
+            },
+            {
+              "src": "/assets/img/marini-drill-hor-drill-id-p1.webp",
+              "alt": "Marini Hor Drill (3/4)",
+              "width": 360,
+              "height": 338
+            },
+            {
+              "src": "/assets/img/marini-drill-hor-drill-id-p2.webp",
+              "alt": "Marini Hor Drill (4/4)",
+              "width": 286,
+              "height": 284
+            }
+          ],
+          "gen": true
+        },
+        {
           "type": "related",
           "title": "Se även",
           "items": [
@@ -291,38 +291,6 @@
         {
           "type": "text",
           "html": "<a href=\"/kontakta-oss\">Contact us</a> for price, delivery time or help choosing the right model.",
-          "gen": true
-        },
-        {
-          "type": "carousel",
-          "autoplay": false,
-          "interval": 6,
-          "items": [
-            {
-              "src": "/assets/img/marini-drill-hor-drill-id.webp",
-              "alt": "Marini Hor Drill ID (1/4)",
-              "width": 684,
-              "height": 624
-            },
-            {
-              "src": "/assets/img/marini-drill-hor-drill-p1.webp",
-              "alt": "Marini Hor Drill (2/4)",
-              "width": 1268,
-              "height": 817
-            },
-            {
-              "src": "/assets/img/marini-drill-hor-drill-id-p1.webp",
-              "alt": "Marini Hor Drill (3/4)",
-              "width": 360,
-              "height": 338
-            },
-            {
-              "src": "/assets/img/marini-drill-hor-drill-id-p2.webp",
-              "alt": "Marini Hor Drill (4/4)",
-              "width": 286,
-              "height": 284
-            }
-          ],
           "gen": true
         },
         {
@@ -441,6 +409,38 @@
           "gen": true
         },
         {
+          "type": "carousel",
+          "autoplay": false,
+          "interval": 6,
+          "items": [
+            {
+              "src": "/assets/img/marini-drill-hor-drill-id.webp",
+              "alt": "Marini Hor Drill ID (1/4)",
+              "width": 684,
+              "height": 624
+            },
+            {
+              "src": "/assets/img/marini-drill-hor-drill-p1.webp",
+              "alt": "Marini Hor Drill (2/4)",
+              "width": 1268,
+              "height": 817
+            },
+            {
+              "src": "/assets/img/marini-drill-hor-drill-id-p1.webp",
+              "alt": "Marini Hor Drill (3/4)",
+              "width": 360,
+              "height": 338
+            },
+            {
+              "src": "/assets/img/marini-drill-hor-drill-id-p2.webp",
+              "alt": "Marini Hor Drill (4/4)",
+              "width": 286,
+              "height": 284
+            }
+          ],
+          "gen": true
+        },
+        {
           "type": "related",
           "title": "See also",
           "items": [
@@ -518,38 +518,6 @@
         {
           "type": "text",
           "html": "<a href=\"/kontakta-oss\">Contáctenos</a> para precio, plazo de entrega o ayuda para elegir el modelo adecuado.",
-          "gen": true
-        },
-        {
-          "type": "carousel",
-          "autoplay": false,
-          "interval": 6,
-          "items": [
-            {
-              "src": "/assets/img/marini-drill-hor-drill-id.webp",
-              "alt": "Marini Hor Drill ID (1/4)",
-              "width": 684,
-              "height": 624
-            },
-            {
-              "src": "/assets/img/marini-drill-hor-drill-p1.webp",
-              "alt": "Marini Hor Drill (2/4)",
-              "width": 1268,
-              "height": 817
-            },
-            {
-              "src": "/assets/img/marini-drill-hor-drill-id-p1.webp",
-              "alt": "Marini Hor Drill (3/4)",
-              "width": 360,
-              "height": 338
-            },
-            {
-              "src": "/assets/img/marini-drill-hor-drill-id-p2.webp",
-              "alt": "Marini Hor Drill (4/4)",
-              "width": 286,
-              "height": 284
-            }
-          ],
           "gen": true
         },
         {
@@ -668,6 +636,38 @@
           "gen": true
         },
         {
+          "type": "carousel",
+          "autoplay": false,
+          "interval": 6,
+          "items": [
+            {
+              "src": "/assets/img/marini-drill-hor-drill-id.webp",
+              "alt": "Marini Hor Drill ID (1/4)",
+              "width": 684,
+              "height": 624
+            },
+            {
+              "src": "/assets/img/marini-drill-hor-drill-p1.webp",
+              "alt": "Marini Hor Drill (2/4)",
+              "width": 1268,
+              "height": 817
+            },
+            {
+              "src": "/assets/img/marini-drill-hor-drill-id-p1.webp",
+              "alt": "Marini Hor Drill (3/4)",
+              "width": 360,
+              "height": 338
+            },
+            {
+              "src": "/assets/img/marini-drill-hor-drill-id-p2.webp",
+              "alt": "Marini Hor Drill (4/4)",
+              "width": 286,
+              "height": 284
+            }
+          ],
+          "gen": true
+        },
+        {
           "type": "related",
           "title": "Véase también",
           "items": [
@@ -745,38 +745,6 @@
         {
           "type": "text",
           "html": "<a href=\"/kontakta-oss\">Kontakt oss</a> for pris, leveringstid eller hjelp til å velge riktig modell.",
-          "gen": true
-        },
-        {
-          "type": "carousel",
-          "autoplay": false,
-          "interval": 6,
-          "items": [
-            {
-              "src": "/assets/img/marini-drill-hor-drill-id.webp",
-              "alt": "Marini Hor Drill ID (1/4)",
-              "width": 684,
-              "height": 624
-            },
-            {
-              "src": "/assets/img/marini-drill-hor-drill-p1.webp",
-              "alt": "Marini Hor Drill (2/4)",
-              "width": 1268,
-              "height": 817
-            },
-            {
-              "src": "/assets/img/marini-drill-hor-drill-id-p1.webp",
-              "alt": "Marini Hor Drill (3/4)",
-              "width": 360,
-              "height": 338
-            },
-            {
-              "src": "/assets/img/marini-drill-hor-drill-id-p2.webp",
-              "alt": "Marini Hor Drill (4/4)",
-              "width": 286,
-              "height": 284
-            }
-          ],
           "gen": true
         },
         {
@@ -892,6 +860,38 @@
           ],
           "note": "",
           "source": "Opplysningene er hentet fra Marinis produktkatalog for steinbrudd og brosjyrene for modellene (engelsk).",
+          "gen": true
+        },
+        {
+          "type": "carousel",
+          "autoplay": false,
+          "interval": 6,
+          "items": [
+            {
+              "src": "/assets/img/marini-drill-hor-drill-id.webp",
+              "alt": "Marini Hor Drill ID (1/4)",
+              "width": 684,
+              "height": 624
+            },
+            {
+              "src": "/assets/img/marini-drill-hor-drill-p1.webp",
+              "alt": "Marini Hor Drill (2/4)",
+              "width": 1268,
+              "height": 817
+            },
+            {
+              "src": "/assets/img/marini-drill-hor-drill-id-p1.webp",
+              "alt": "Marini Hor Drill (3/4)",
+              "width": 360,
+              "height": 338
+            },
+            {
+              "src": "/assets/img/marini-drill-hor-drill-id-p2.webp",
+              "alt": "Marini Hor Drill (4/4)",
+              "width": 286,
+              "height": 284
+            }
+          ],
           "gen": true
         },
         {

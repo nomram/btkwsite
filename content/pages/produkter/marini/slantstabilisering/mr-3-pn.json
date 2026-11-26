@@ -78,6 +78,41 @@
           "gen": true
         },
         {
+          "type": "button",
+          "kind": "download",
+          "text": "Broschyr (pneumatisk)",
+          "href": "/assets/docs/marini-slantstabilisering-mr-3-broschyr-2.pdf",
+          "gen": true
+        },
+        {
+          "type": "datasheet",
+          "title": "Teknisk data",
+          "tagline": "Marini MR 3 PN",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Specifikationer",
+              "rows": [
+                {
+                  "label": "Drift",
+                  "metric": "Pneumatisk (tryckluft)"
+                },
+                {
+                  "label": "Dragkraft (indragning)",
+                  "metric": "9,5 kN"
+                },
+                {
+                  "label": "Vikt",
+                  "metric": "300 kg"
+                }
+              ]
+            }
+          ],
+          "note": "",
+          "source": "Uppgifterna är hämtade ur Marinis broschyr och från marinidrills.com.",
+          "gen": true
+        },
+        {
           "type": "carousel",
           "autoplay": true,
           "interval": 6,
@@ -113,41 +148,6 @@
               "height": 1050
             }
           ],
-          "gen": true
-        },
-        {
-          "type": "button",
-          "kind": "download",
-          "text": "Broschyr (pneumatisk)",
-          "href": "/assets/docs/marini-slantstabilisering-mr-3-broschyr-2.pdf",
-          "gen": true
-        },
-        {
-          "type": "datasheet",
-          "title": "Teknisk data",
-          "tagline": "Marini MR 3 PN",
-          "intro": [],
-          "groups": [
-            {
-              "title": "Specifikationer",
-              "rows": [
-                {
-                  "label": "Drift",
-                  "metric": "Pneumatisk (tryckluft)"
-                },
-                {
-                  "label": "Dragkraft (indragning)",
-                  "metric": "9,5 kN"
-                },
-                {
-                  "label": "Vikt",
-                  "metric": "300 kg"
-                }
-              ]
-            }
-          ],
-          "note": "",
-          "source": "Uppgifterna är hämtade ur Marinis broschyr och från marinidrills.com.",
           "gen": true
         },
         {
@@ -226,6 +226,41 @@
           "gen": true
         },
         {
+          "type": "button",
+          "kind": "download",
+          "text": "Brochure (pneumatic)",
+          "href": "/assets/docs/marini-slantstabilisering-mr-3-broschyr-2.pdf",
+          "gen": true
+        },
+        {
+          "type": "datasheet",
+          "title": "Technical data",
+          "tagline": "Marini MR 3 PN",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Specifications",
+              "rows": [
+                {
+                  "label": "Drive",
+                  "metric": "Pneumatic (compressed air)"
+                },
+                {
+                  "label": "Retract force",
+                  "metric": "9.5 kN"
+                },
+                {
+                  "label": "Weight",
+                  "metric": "300 kg"
+                }
+              ]
+            }
+          ],
+          "note": "",
+          "source": "The figures come from Marini's brochure and marinidrills.com.",
+          "gen": true
+        },
+        {
           "type": "carousel",
           "autoplay": true,
           "interval": 6,
@@ -261,41 +296,6 @@
               "height": 1050
             }
           ],
-          "gen": true
-        },
-        {
-          "type": "button",
-          "kind": "download",
-          "text": "Brochure (pneumatic)",
-          "href": "/assets/docs/marini-slantstabilisering-mr-3-broschyr-2.pdf",
-          "gen": true
-        },
-        {
-          "type": "datasheet",
-          "title": "Technical data",
-          "tagline": "Marini MR 3 PN",
-          "intro": [],
-          "groups": [
-            {
-              "title": "Specifications",
-              "rows": [
-                {
-                  "label": "Drive",
-                  "metric": "Pneumatic (compressed air)"
-                },
-                {
-                  "label": "Retract force",
-                  "metric": "9.5 kN"
-                },
-                {
-                  "label": "Weight",
-                  "metric": "300 kg"
-                }
-              ]
-            }
-          ],
-          "note": "",
-          "source": "The figures come from Marini's brochure and marinidrills.com.",
           "gen": true
         },
         {
@@ -374,6 +374,41 @@
           "gen": true
         },
         {
+          "type": "button",
+          "kind": "download",
+          "text": "Folleto (neumático)",
+          "href": "/assets/docs/marini-slantstabilisering-mr-3-broschyr-2.pdf",
+          "gen": true
+        },
+        {
+          "type": "datasheet",
+          "title": "Datos técnicos",
+          "tagline": "Marini MR 3 PN",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Especificaciones",
+              "rows": [
+                {
+                  "label": "Accionamiento",
+                  "metric": "Neumático (aire comprimido)"
+                },
+                {
+                  "label": "Fuerza de retroceso",
+                  "metric": "9,5 kN"
+                },
+                {
+                  "label": "Peso",
+                  "metric": "300 kg"
+                }
+              ]
+            }
+          ],
+          "note": "",
+          "source": "Los datos proceden del folleto de Marini y de marinidrills.com.",
+          "gen": true
+        },
+        {
           "type": "carousel",
           "autoplay": true,
           "interval": 6,
@@ -409,41 +444,6 @@
               "height": 1050
             }
           ],
-          "gen": true
-        },
-        {
-          "type": "button",
-          "kind": "download",
-          "text": "Folleto (neumático)",
-          "href": "/assets/docs/marini-slantstabilisering-mr-3-broschyr-2.pdf",
-          "gen": true
-        },
-        {
-          "type": "datasheet",
-          "title": "Datos técnicos",
-          "tagline": "Marini MR 3 PN",
-          "intro": [],
-          "groups": [
-            {
-              "title": "Especificaciones",
-              "rows": [
-                {
-                  "label": "Accionamiento",
-                  "metric": "Neumático (aire comprimido)"
-                },
-                {
-                  "label": "Fuerza de retroceso",
-                  "metric": "9,5 kN"
-                },
-                {
-                  "label": "Peso",
-                  "metric": "300 kg"
-                }
-              ]
-            }
-          ],
-          "note": "",
-          "source": "Los datos proceden del folleto de Marini y de marinidrills.com.",
           "gen": true
         },
         {
@@ -522,6 +522,41 @@
           "gen": true
         },
         {
+          "type": "button",
+          "kind": "download",
+          "text": "Brosjyre (pneumatisk)",
+          "href": "/assets/docs/marini-slantstabilisering-mr-3-broschyr-2.pdf",
+          "gen": true
+        },
+        {
+          "type": "datasheet",
+          "title": "Teknisk data",
+          "tagline": "Marini MR 3 PN",
+          "intro": [],
+          "groups": [
+            {
+              "title": "Spesifikasjoner",
+              "rows": [
+                {
+                  "label": "Drift",
+                  "metric": "Pneumatisk (trykkluft)"
+                },
+                {
+                  "label": "Trekkraft (tilbaketrekk)",
+                  "metric": "9,5 kN"
+                },
+                {
+                  "label": "Vekt",
+                  "metric": "300 kg"
+                }
+              ]
+            }
+          ],
+          "note": "",
+          "source": "Opplysningene er hentet fra Marinis brosjyre og fra marinidrills.com.",
+          "gen": true
+        },
+        {
           "type": "carousel",
           "autoplay": true,
           "interval": 6,
@@ -557,41 +592,6 @@
               "height": 1050
             }
           ],
-          "gen": true
-        },
-        {
-          "type": "button",
-          "kind": "download",
-          "text": "Brosjyre (pneumatisk)",
-          "href": "/assets/docs/marini-slantstabilisering-mr-3-broschyr-2.pdf",
-          "gen": true
-        },
-        {
-          "type": "datasheet",
-          "title": "Teknisk data",
-          "tagline": "Marini MR 3 PN",
-          "intro": [],
-          "groups": [
-            {
-              "title": "Spesifikasjoner",
-              "rows": [
-                {
-                  "label": "Drift",
-                  "metric": "Pneumatisk (trykkluft)"
-                },
-                {
-                  "label": "Trekkraft (tilbaketrekk)",
-                  "metric": "9,5 kN"
-                },
-                {
-                  "label": "Vekt",
-                  "metric": "300 kg"
-                }
-              ]
-            }
-          ],
-          "note": "",
-          "source": "Opplysningene er hentet fra Marinis brosjyre og fra marinidrills.com.",
           "gen": true
         },
         {

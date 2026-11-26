@@ -167,3 +167,5 @@ for (const slug of slugs) {
   }
 }
 console.log("Ram Board pages built:", slugs.length);
+// galleries go after the documents and technical data
+(await import("./gallery-order.mjs")).run();

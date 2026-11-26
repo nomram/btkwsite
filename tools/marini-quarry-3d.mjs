@@ -42,3 +42,5 @@ for (const [file, models] of Object.entries(MAP)) {
   fs.writeFileSync(f, JSON.stringify(p, null, 2) + (raw.endsWith("\n") ? "\n" : ""));
   console.log("3D:", file, models.map((m) => m[1]).join(" + "));
 }
+// galleries go after the documents and technical data
+(await import("./gallery-order.mjs")).run();

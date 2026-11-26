@@ -32,62 +32,6 @@
           "gen": true
         },
         {
-          "type": "carousel",
-          "autoplay": false,
-          "interval": 6,
-          "items": [
-            {
-              "src": "/assets/img/marini-drill-voyager.webp",
-              "alt": "Marini Voyager (1/8)",
-              "width": 1259,
-              "height": 1800
-            },
-            {
-              "src": "/assets/img/marini-drill-voyager-p1.webp",
-              "alt": "Marini Voyager (2/8)",
-              "width": 1043,
-              "height": 720
-            },
-            {
-              "src": "/assets/img/marini-drill-voyager-p2.webp",
-              "alt": "Marini Voyager (3/8)",
-              "width": 1043,
-              "height": 720
-            },
-            {
-              "src": "/assets/img/marini-mrc-mr-c-10-p1.webp",
-              "alt": "Marini Voyager (4/8)",
-              "width": 1400,
-              "height": 1050
-            },
-            {
-              "src": "/assets/img/marini-mrc-mr-c-10-p2.webp",
-              "alt": "Marini Voyager (5/8)",
-              "width": 1400,
-              "height": 1050
-            },
-            {
-              "src": "/assets/img/marini-mrc-mr-c-10-p3.webp",
-              "alt": "Marini Voyager (6/8)",
-              "width": 1400,
-              "height": 1050
-            },
-            {
-              "src": "/assets/img/marini-mrc-mr-c-10-p4.webp",
-              "alt": "Marini Voyager (7/8)",
-              "width": 1400,
-              "height": 1050
-            },
-            {
-              "src": "/assets/img/marini-mrc-mr-c-10-p5.webp",
-              "alt": "Marini Voyager (8/8)",
-              "width": 1400,
-              "height": 1050
-            }
-          ],
-          "gen": true
-        },
-        {
           "type": "text",
           "html": "Voyager är en hydraulisk, självgående borrenhet på gummiband för horisontella, vertikala och lutande hål. Den drivs av ett hydraulaggregat med diesel- eller bensinmotor på 17 kW eller en elmotor på 15 kW.",
           "gen": true
@@ -281,6 +225,62 @@
           "gen": true
         },
         {
+          "type": "carousel",
+          "autoplay": false,
+          "interval": 6,
+          "items": [
+            {
+              "src": "/assets/img/marini-drill-voyager.webp",
+              "alt": "Marini Voyager (1/8)",
+              "width": 1259,
+              "height": 1800
+            },
+            {
+              "src": "/assets/img/marini-drill-voyager-p1.webp",
+              "alt": "Marini Voyager (2/8)",
+              "width": 1043,
+              "height": 720
+            },
+            {
+              "src": "/assets/img/marini-drill-voyager-p2.webp",
+              "alt": "Marini Voyager (3/8)",
+              "width": 1043,
+              "height": 720
+            },
+            {
+              "src": "/assets/img/marini-mrc-mr-c-10-p1.webp",
+              "alt": "Marini Voyager (4/8)",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/marini-mrc-mr-c-10-p2.webp",
+              "alt": "Marini Voyager (5/8)",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/marini-mrc-mr-c-10-p3.webp",
+              "alt": "Marini Voyager (6/8)",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/marini-mrc-mr-c-10-p4.webp",
+              "alt": "Marini Voyager (7/8)",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/marini-mrc-mr-c-10-p5.webp",
+              "alt": "Marini Voyager (8/8)",
+              "width": 1400,
+              "height": 1050
+            }
+          ],
+          "gen": true
+        },
+        {
           "type": "modules",
           "layout": "tiles",
           "columns": 2,
@@ -363,62 +363,6 @@
           "width": 1522,
           "height": 2021,
           "src": "/assets/img/marini-mrc-mr-c-10-iso.webp",
-          "gen": true
-        },
-        {
-          "type": "carousel",
-          "autoplay": false,
-          "interval": 6,
-          "items": [
-            {
-              "src": "/assets/img/marini-drill-voyager.webp",
-              "alt": "Marini Voyager (1/8)",
-              "width": 1259,
-              "height": 1800
-            },
-            {
-              "src": "/assets/img/marini-drill-voyager-p1.webp",
-              "alt": "Marini Voyager (2/8)",
-              "width": 1043,
-              "height": 720
-            },
-            {
-              "src": "/assets/img/marini-drill-voyager-p2.webp",
-              "alt": "Marini Voyager (3/8)",
-              "width": 1043,
-              "height": 720
-            },
-            {
-              "src": "/assets/img/marini-mrc-mr-c-10-p1.webp",
-              "alt": "Marini Voyager (4/8)",
-              "width": 1400,
-              "height": 1050
-            },
-            {
-              "src": "/assets/img/marini-mrc-mr-c-10-p2.webp",
-              "alt": "Marini Voyager (5/8)",
-              "width": 1400,
-              "height": 1050
-            },
-            {
-              "src": "/assets/img/marini-mrc-mr-c-10-p3.webp",
-              "alt": "Marini Voyager (6/8)",
-              "width": 1400,
-              "height": 1050
-            },
-            {
-              "src": "/assets/img/marini-mrc-mr-c-10-p4.webp",
-              "alt": "Marini Voyager (7/8)",
-              "width": 1400,
-              "height": 1050
-            },
-            {
-              "src": "/assets/img/marini-mrc-mr-c-10-p5.webp",
-              "alt": "Marini Voyager (8/8)",
-              "width": 1400,
-              "height": 1050
-            }
-          ],
           "gen": true
         },
         {
@@ -615,6 +559,62 @@
           "gen": true
         },
         {
+          "type": "carousel",
+          "autoplay": false,
+          "interval": 6,
+          "items": [
+            {
+              "src": "/assets/img/marini-drill-voyager.webp",
+              "alt": "Marini Voyager (1/8)",
+              "width": 1259,
+              "height": 1800
+            },
+            {
+              "src": "/assets/img/marini-drill-voyager-p1.webp",
+              "alt": "Marini Voyager (2/8)",
+              "width": 1043,
+              "height": 720
+            },
+            {
+              "src": "/assets/img/marini-drill-voyager-p2.webp",
+              "alt": "Marini Voyager (3/8)",
+              "width": 1043,
+              "height": 720
+            },
+            {
+              "src": "/assets/img/marini-mrc-mr-c-10-p1.webp",
+              "alt": "Marini Voyager (4/8)",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/marini-mrc-mr-c-10-p2.webp",
+              "alt": "Marini Voyager (5/8)",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/marini-mrc-mr-c-10-p3.webp",
+              "alt": "Marini Voyager (6/8)",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/marini-mrc-mr-c-10-p4.webp",
+              "alt": "Marini Voyager (7/8)",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/marini-mrc-mr-c-10-p5.webp",
+              "alt": "Marini Voyager (8/8)",
+              "width": 1400,
+              "height": 1050
+            }
+          ],
+          "gen": true
+        },
+        {
           "type": "modules",
           "layout": "tiles",
           "columns": 2,
@@ -697,62 +697,6 @@
           "width": 1522,
           "height": 2021,
           "src": "/assets/img/marini-mrc-mr-c-10-iso.webp",
-          "gen": true
-        },
-        {
-          "type": "carousel",
-          "autoplay": false,
-          "interval": 6,
-          "items": [
-            {
-              "src": "/assets/img/marini-drill-voyager.webp",
-              "alt": "Marini Voyager (1/8)",
-              "width": 1259,
-              "height": 1800
-            },
-            {
-              "src": "/assets/img/marini-drill-voyager-p1.webp",
-              "alt": "Marini Voyager (2/8)",
-              "width": 1043,
-              "height": 720
-            },
-            {
-              "src": "/assets/img/marini-drill-voyager-p2.webp",
-              "alt": "Marini Voyager (3/8)",
-              "width": 1043,
-              "height": 720
-            },
-            {
-              "src": "/assets/img/marini-mrc-mr-c-10-p1.webp",
-              "alt": "Marini Voyager (4/8)",
-              "width": 1400,
-              "height": 1050
-            },
-            {
-              "src": "/assets/img/marini-mrc-mr-c-10-p2.webp",
-              "alt": "Marini Voyager (5/8)",
-              "width": 1400,
-              "height": 1050
-            },
-            {
-              "src": "/assets/img/marini-mrc-mr-c-10-p3.webp",
-              "alt": "Marini Voyager (6/8)",
-              "width": 1400,
-              "height": 1050
-            },
-            {
-              "src": "/assets/img/marini-mrc-mr-c-10-p4.webp",
-              "alt": "Marini Voyager (7/8)",
-              "width": 1400,
-              "height": 1050
-            },
-            {
-              "src": "/assets/img/marini-mrc-mr-c-10-p5.webp",
-              "alt": "Marini Voyager (8/8)",
-              "width": 1400,
-              "height": 1050
-            }
-          ],
           "gen": true
         },
         {
@@ -949,6 +893,62 @@
           "gen": true
         },
         {
+          "type": "carousel",
+          "autoplay": false,
+          "interval": 6,
+          "items": [
+            {
+              "src": "/assets/img/marini-drill-voyager.webp",
+              "alt": "Marini Voyager (1/8)",
+              "width": 1259,
+              "height": 1800
+            },
+            {
+              "src": "/assets/img/marini-drill-voyager-p1.webp",
+              "alt": "Marini Voyager (2/8)",
+              "width": 1043,
+              "height": 720
+            },
+            {
+              "src": "/assets/img/marini-drill-voyager-p2.webp",
+              "alt": "Marini Voyager (3/8)",
+              "width": 1043,
+              "height": 720
+            },
+            {
+              "src": "/assets/img/marini-mrc-mr-c-10-p1.webp",
+              "alt": "Marini Voyager (4/8)",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/marini-mrc-mr-c-10-p2.webp",
+              "alt": "Marini Voyager (5/8)",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/marini-mrc-mr-c-10-p3.webp",
+              "alt": "Marini Voyager (6/8)",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/marini-mrc-mr-c-10-p4.webp",
+              "alt": "Marini Voyager (7/8)",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/marini-mrc-mr-c-10-p5.webp",
+              "alt": "Marini Voyager (8/8)",
+              "width": 1400,
+              "height": 1050
+            }
+          ],
+          "gen": true
+        },
+        {
           "type": "modules",
           "layout": "tiles",
           "columns": 2,
@@ -1031,62 +1031,6 @@
           "width": 1522,
           "height": 2021,
           "src": "/assets/img/marini-mrc-mr-c-10-iso.webp",
-          "gen": true
-        },
-        {
-          "type": "carousel",
-          "autoplay": false,
-          "interval": 6,
-          "items": [
-            {
-              "src": "/assets/img/marini-drill-voyager.webp",
-              "alt": "Marini Voyager (1/8)",
-              "width": 1259,
-              "height": 1800
-            },
-            {
-              "src": "/assets/img/marini-drill-voyager-p1.webp",
-              "alt": "Marini Voyager (2/8)",
-              "width": 1043,
-              "height": 720
-            },
-            {
-              "src": "/assets/img/marini-drill-voyager-p2.webp",
-              "alt": "Marini Voyager (3/8)",
-              "width": 1043,
-              "height": 720
-            },
-            {
-              "src": "/assets/img/marini-mrc-mr-c-10-p1.webp",
-              "alt": "Marini Voyager (4/8)",
-              "width": 1400,
-              "height": 1050
-            },
-            {
-              "src": "/assets/img/marini-mrc-mr-c-10-p2.webp",
-              "alt": "Marini Voyager (5/8)",
-              "width": 1400,
-              "height": 1050
-            },
-            {
-              "src": "/assets/img/marini-mrc-mr-c-10-p3.webp",
-              "alt": "Marini Voyager (6/8)",
-              "width": 1400,
-              "height": 1050
-            },
-            {
-              "src": "/assets/img/marini-mrc-mr-c-10-p4.webp",
-              "alt": "Marini Voyager (7/8)",
-              "width": 1400,
-              "height": 1050
-            },
-            {
-              "src": "/assets/img/marini-mrc-mr-c-10-p5.webp",
-              "alt": "Marini Voyager (8/8)",
-              "width": 1400,
-              "height": 1050
-            }
-          ],
           "gen": true
         },
         {
@@ -1280,6 +1224,62 @@
           ],
           "note": "",
           "source": "Opplysningene er hentet fra Marinis produktkatalog for steinbrudd og brosjyrene for modellene (engelsk).",
+          "gen": true
+        },
+        {
+          "type": "carousel",
+          "autoplay": false,
+          "interval": 6,
+          "items": [
+            {
+              "src": "/assets/img/marini-drill-voyager.webp",
+              "alt": "Marini Voyager (1/8)",
+              "width": 1259,
+              "height": 1800
+            },
+            {
+              "src": "/assets/img/marini-drill-voyager-p1.webp",
+              "alt": "Marini Voyager (2/8)",
+              "width": 1043,
+              "height": 720
+            },
+            {
+              "src": "/assets/img/marini-drill-voyager-p2.webp",
+              "alt": "Marini Voyager (3/8)",
+              "width": 1043,
+              "height": 720
+            },
+            {
+              "src": "/assets/img/marini-mrc-mr-c-10-p1.webp",
+              "alt": "Marini Voyager (4/8)",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/marini-mrc-mr-c-10-p2.webp",
+              "alt": "Marini Voyager (5/8)",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/marini-mrc-mr-c-10-p3.webp",
+              "alt": "Marini Voyager (6/8)",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/marini-mrc-mr-c-10-p4.webp",
+              "alt": "Marini Voyager (7/8)",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/marini-mrc-mr-c-10-p5.webp",
+              "alt": "Marini Voyager (8/8)",
+              "width": 1400,
+              "height": 1050
+            }
+          ],
           "gen": true
         },
         {

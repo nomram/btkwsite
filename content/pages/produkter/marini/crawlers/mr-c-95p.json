@@ -33,62 +33,6 @@
           "gen": true
         },
         {
-          "type": "carousel",
-          "autoplay": true,
-          "interval": 6,
-          "items": [
-            {
-              "src": "/assets/img/marini-mrc-mr-c-95-p1.webp",
-              "alt": "Marini MR-C 95P (1/8)",
-              "width": 1400,
-              "height": 1050
-            },
-            {
-              "src": "/assets/img/marini-mrc-mr-c-95-p2.webp",
-              "alt": "Marini MR-C 95P (2/8)",
-              "width": 1400,
-              "height": 1050
-            },
-            {
-              "src": "/assets/img/marini-mrc-mr-c-95-p3.webp",
-              "alt": "Marini MR-C 95P (3/8)",
-              "width": 1400,
-              "height": 1050
-            },
-            {
-              "src": "/assets/img/marini-mrc-mr-c-95-p4.webp",
-              "alt": "Marini MR-C 95P (4/8)",
-              "width": 1400,
-              "height": 1050
-            },
-            {
-              "src": "/assets/img/marini-mrc-mr-c-95-p5.webp",
-              "alt": "Marini MR-C 95P (5/8)",
-              "width": 1400,
-              "height": 1050
-            },
-            {
-              "src": "/assets/img/marini-mrc-mr-c-95-p6.webp",
-              "alt": "Marini MR-C 95P (6/8)",
-              "width": 1400,
-              "height": 1050
-            },
-            {
-              "src": "/assets/img/marini-mrc-mr-c-95-p7.webp",
-              "alt": "Marini MR-C 95P (7/8)",
-              "width": 1400,
-              "height": 1050
-            },
-            {
-              "src": "/assets/img/marini-mrc-mr-c-95-p8.webp",
-              "alt": "Marini MR-C 95P (8/8)",
-              "width": 1400,
-              "height": 1050
-            }
-          ],
-          "gen": true
-        },
-        {
           "type": "text",
           "html": "MR-C 95P är en hydraulisk larvrigg ur Marinis MR-C-serie med 128 kW motor och en vikt på 24 000 kg. P efter modellnumret står för Power: en kraftfullare version av modellen med högre motoreffekt. Konstruerad för större och djupare borrhål, med högre kapacitet och kraft.",
           "gen": true
@@ -184,6 +128,62 @@
           "gen": true
         },
         {
+          "type": "carousel",
+          "autoplay": true,
+          "interval": 6,
+          "items": [
+            {
+              "src": "/assets/img/marini-mrc-mr-c-95-p1.webp",
+              "alt": "Marini MR-C 95P (1/8)",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/marini-mrc-mr-c-95-p2.webp",
+              "alt": "Marini MR-C 95P (2/8)",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/marini-mrc-mr-c-95-p3.webp",
+              "alt": "Marini MR-C 95P (3/8)",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/marini-mrc-mr-c-95-p4.webp",
+              "alt": "Marini MR-C 95P (4/8)",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/marini-mrc-mr-c-95-p5.webp",
+              "alt": "Marini MR-C 95P (5/8)",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/marini-mrc-mr-c-95-p6.webp",
+              "alt": "Marini MR-C 95P (6/8)",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/marini-mrc-mr-c-95-p7.webp",
+              "alt": "Marini MR-C 95P (7/8)",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/marini-mrc-mr-c-95-p8.webp",
+              "alt": "Marini MR-C 95P (8/8)",
+              "width": 1400,
+              "height": 1050
+            }
+          ],
+          "gen": true
+        },
+        {
           "type": "modules",
           "layout": "tiles",
           "columns": 1,
@@ -241,62 +241,6 @@
           "width": 1202,
           "height": 1901,
           "source": "3D model, marinidrills.com",
-          "gen": true
-        },
-        {
-          "type": "carousel",
-          "autoplay": true,
-          "interval": 6,
-          "items": [
-            {
-              "src": "/assets/img/marini-mrc-mr-c-95-p1.webp",
-              "alt": "Marini MR-C 95P (1/8)",
-              "width": 1400,
-              "height": 1050
-            },
-            {
-              "src": "/assets/img/marini-mrc-mr-c-95-p2.webp",
-              "alt": "Marini MR-C 95P (2/8)",
-              "width": 1400,
-              "height": 1050
-            },
-            {
-              "src": "/assets/img/marini-mrc-mr-c-95-p3.webp",
-              "alt": "Marini MR-C 95P (3/8)",
-              "width": 1400,
-              "height": 1050
-            },
-            {
-              "src": "/assets/img/marini-mrc-mr-c-95-p4.webp",
-              "alt": "Marini MR-C 95P (4/8)",
-              "width": 1400,
-              "height": 1050
-            },
-            {
-              "src": "/assets/img/marini-mrc-mr-c-95-p5.webp",
-              "alt": "Marini MR-C 95P (5/8)",
-              "width": 1400,
-              "height": 1050
-            },
-            {
-              "src": "/assets/img/marini-mrc-mr-c-95-p6.webp",
-              "alt": "Marini MR-C 95P (6/8)",
-              "width": 1400,
-              "height": 1050
-            },
-            {
-              "src": "/assets/img/marini-mrc-mr-c-95-p7.webp",
-              "alt": "Marini MR-C 95P (7/8)",
-              "width": 1400,
-              "height": 1050
-            },
-            {
-              "src": "/assets/img/marini-mrc-mr-c-95-p8.webp",
-              "alt": "Marini MR-C 95P (8/8)",
-              "width": 1400,
-              "height": 1050
-            }
-          ],
           "gen": true
         },
         {
@@ -395,6 +339,62 @@
           "gen": true
         },
         {
+          "type": "carousel",
+          "autoplay": true,
+          "interval": 6,
+          "items": [
+            {
+              "src": "/assets/img/marini-mrc-mr-c-95-p1.webp",
+              "alt": "Marini MR-C 95P (1/8)",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/marini-mrc-mr-c-95-p2.webp",
+              "alt": "Marini MR-C 95P (2/8)",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/marini-mrc-mr-c-95-p3.webp",
+              "alt": "Marini MR-C 95P (3/8)",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/marini-mrc-mr-c-95-p4.webp",
+              "alt": "Marini MR-C 95P (4/8)",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/marini-mrc-mr-c-95-p5.webp",
+              "alt": "Marini MR-C 95P (5/8)",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/marini-mrc-mr-c-95-p6.webp",
+              "alt": "Marini MR-C 95P (6/8)",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/marini-mrc-mr-c-95-p7.webp",
+              "alt": "Marini MR-C 95P (7/8)",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/marini-mrc-mr-c-95-p8.webp",
+              "alt": "Marini MR-C 95P (8/8)",
+              "width": 1400,
+              "height": 1050
+            }
+          ],
+          "gen": true
+        },
+        {
           "type": "modules",
           "layout": "tiles",
           "columns": 1,
@@ -452,62 +452,6 @@
           "width": 1202,
           "height": 1901,
           "source": "3D model, marinidrills.com",
-          "gen": true
-        },
-        {
-          "type": "carousel",
-          "autoplay": true,
-          "interval": 6,
-          "items": [
-            {
-              "src": "/assets/img/marini-mrc-mr-c-95-p1.webp",
-              "alt": "Marini MR-C 95P (1/8)",
-              "width": 1400,
-              "height": 1050
-            },
-            {
-              "src": "/assets/img/marini-mrc-mr-c-95-p2.webp",
-              "alt": "Marini MR-C 95P (2/8)",
-              "width": 1400,
-              "height": 1050
-            },
-            {
-              "src": "/assets/img/marini-mrc-mr-c-95-p3.webp",
-              "alt": "Marini MR-C 95P (3/8)",
-              "width": 1400,
-              "height": 1050
-            },
-            {
-              "src": "/assets/img/marini-mrc-mr-c-95-p4.webp",
-              "alt": "Marini MR-C 95P (4/8)",
-              "width": 1400,
-              "height": 1050
-            },
-            {
-              "src": "/assets/img/marini-mrc-mr-c-95-p5.webp",
-              "alt": "Marini MR-C 95P (5/8)",
-              "width": 1400,
-              "height": 1050
-            },
-            {
-              "src": "/assets/img/marini-mrc-mr-c-95-p6.webp",
-              "alt": "Marini MR-C 95P (6/8)",
-              "width": 1400,
-              "height": 1050
-            },
-            {
-              "src": "/assets/img/marini-mrc-mr-c-95-p7.webp",
-              "alt": "Marini MR-C 95P (7/8)",
-              "width": 1400,
-              "height": 1050
-            },
-            {
-              "src": "/assets/img/marini-mrc-mr-c-95-p8.webp",
-              "alt": "Marini MR-C 95P (8/8)",
-              "width": 1400,
-              "height": 1050
-            }
-          ],
           "gen": true
         },
         {
@@ -606,6 +550,62 @@
           "gen": true
         },
         {
+          "type": "carousel",
+          "autoplay": true,
+          "interval": 6,
+          "items": [
+            {
+              "src": "/assets/img/marini-mrc-mr-c-95-p1.webp",
+              "alt": "Marini MR-C 95P (1/8)",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/marini-mrc-mr-c-95-p2.webp",
+              "alt": "Marini MR-C 95P (2/8)",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/marini-mrc-mr-c-95-p3.webp",
+              "alt": "Marini MR-C 95P (3/8)",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/marini-mrc-mr-c-95-p4.webp",
+              "alt": "Marini MR-C 95P (4/8)",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/marini-mrc-mr-c-95-p5.webp",
+              "alt": "Marini MR-C 95P (5/8)",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/marini-mrc-mr-c-95-p6.webp",
+              "alt": "Marini MR-C 95P (6/8)",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/marini-mrc-mr-c-95-p7.webp",
+              "alt": "Marini MR-C 95P (7/8)",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/marini-mrc-mr-c-95-p8.webp",
+              "alt": "Marini MR-C 95P (8/8)",
+              "width": 1400,
+              "height": 1050
+            }
+          ],
+          "gen": true
+        },
+        {
           "type": "modules",
           "layout": "tiles",
           "columns": 1,
@@ -663,62 +663,6 @@
           "width": 1202,
           "height": 1901,
           "source": "3D model, marinidrills.com",
-          "gen": true
-        },
-        {
-          "type": "carousel",
-          "autoplay": true,
-          "interval": 6,
-          "items": [
-            {
-              "src": "/assets/img/marini-mrc-mr-c-95-p1.webp",
-              "alt": "Marini MR-C 95P (1/8)",
-              "width": 1400,
-              "height": 1050
-            },
-            {
-              "src": "/assets/img/marini-mrc-mr-c-95-p2.webp",
-              "alt": "Marini MR-C 95P (2/8)",
-              "width": 1400,
-              "height": 1050
-            },
-            {
-              "src": "/assets/img/marini-mrc-mr-c-95-p3.webp",
-              "alt": "Marini MR-C 95P (3/8)",
-              "width": 1400,
-              "height": 1050
-            },
-            {
-              "src": "/assets/img/marini-mrc-mr-c-95-p4.webp",
-              "alt": "Marini MR-C 95P (4/8)",
-              "width": 1400,
-              "height": 1050
-            },
-            {
-              "src": "/assets/img/marini-mrc-mr-c-95-p5.webp",
-              "alt": "Marini MR-C 95P (5/8)",
-              "width": 1400,
-              "height": 1050
-            },
-            {
-              "src": "/assets/img/marini-mrc-mr-c-95-p6.webp",
-              "alt": "Marini MR-C 95P (6/8)",
-              "width": 1400,
-              "height": 1050
-            },
-            {
-              "src": "/assets/img/marini-mrc-mr-c-95-p7.webp",
-              "alt": "Marini MR-C 95P (7/8)",
-              "width": 1400,
-              "height": 1050
-            },
-            {
-              "src": "/assets/img/marini-mrc-mr-c-95-p8.webp",
-              "alt": "Marini MR-C 95P (8/8)",
-              "width": 1400,
-              "height": 1050
-            }
-          ],
           "gen": true
         },
         {
@@ -814,6 +758,62 @@
           ],
           "note": "",
           "source": "Opplysningene er hentet fra Marinis produktkatalog (engelsk).",
+          "gen": true
+        },
+        {
+          "type": "carousel",
+          "autoplay": true,
+          "interval": 6,
+          "items": [
+            {
+              "src": "/assets/img/marini-mrc-mr-c-95-p1.webp",
+              "alt": "Marini MR-C 95P (1/8)",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/marini-mrc-mr-c-95-p2.webp",
+              "alt": "Marini MR-C 95P (2/8)",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/marini-mrc-mr-c-95-p3.webp",
+              "alt": "Marini MR-C 95P (3/8)",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/marini-mrc-mr-c-95-p4.webp",
+              "alt": "Marini MR-C 95P (4/8)",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/marini-mrc-mr-c-95-p5.webp",
+              "alt": "Marini MR-C 95P (5/8)",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/marini-mrc-mr-c-95-p6.webp",
+              "alt": "Marini MR-C 95P (6/8)",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/marini-mrc-mr-c-95-p7.webp",
+              "alt": "Marini MR-C 95P (7/8)",
+              "width": 1400,
+              "height": 1050
+            },
+            {
+              "src": "/assets/img/marini-mrc-mr-c-95-p8.webp",
+              "alt": "Marini MR-C 95P (8/8)",
+              "width": 1400,
+              "height": 1050
+            }
+          ],
           "gen": true
         },
         {

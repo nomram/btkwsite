@@ -46,6 +46,12 @@
           "html": "<strong>OBS! Skall inte tejpas direkt på golvet.</strong>"
         },
         {
+          "type": "button",
+          "kind": "download",
+          "text": "Broschyr (på svenska)",
+          "href": "/assets/docs/ram-board-broschyr-svenska.pdf"
+        },
+        {
           "type": "carousel",
           "autoplay": false,
           "items": [
@@ -68,12 +74,6 @@
               "height": 300
             }
           ]
-        },
-        {
-          "type": "button",
-          "kind": "download",
-          "text": "Broschyr (på svenska)",
-          "href": "/assets/docs/ram-board-broschyr-svenska.pdf"
         },
         {
           "type": "text",
@@ -137,6 +137,12 @@
           "html": "<strong>Note: do not tape directly onto the floor.</strong>"
         },
         {
+          "type": "button",
+          "kind": "download",
+          "text": "Brochure (in Swedish)",
+          "href": "/assets/docs/ram-board-broschyr-svenska.pdf"
+        },
+        {
           "type": "carousel",
           "autoplay": false,
           "items": [
@@ -159,12 +165,6 @@
               "height": 300
             }
           ]
-        },
-        {
-          "type": "button",
-          "kind": "download",
-          "text": "Brochure (in Swedish)",
-          "href": "/assets/docs/ram-board-broschyr-svenska.pdf"
         },
         {
           "type": "text",
@@ -228,6 +228,12 @@
           "html": "<strong>Atención: no pegar directamente sobre el suelo.</strong>"
         },
         {
+          "type": "button",
+          "kind": "download",
+          "text": "Folleto (en sueco)",
+          "href": "/assets/docs/ram-board-broschyr-svenska.pdf"
+        },
+        {
           "type": "carousel",
           "autoplay": false,
           "items": [
@@ -250,12 +256,6 @@
               "height": 300
             }
           ]
-        },
-        {
-          "type": "button",
-          "kind": "download",
-          "text": "Folleto (en sueco)",
-          "href": "/assets/docs/ram-board-broschyr-svenska.pdf"
         },
         {
           "type": "text",
@@ -319,6 +319,12 @@
           "html": "<strong>Obs! Skal ikke teipes direkte på gulvet.</strong>"
         },
         {
+          "type": "button",
+          "kind": "download",
+          "text": "Brosjyre (på svensk)",
+          "href": "/assets/docs/ram-board-broschyr-svenska.pdf"
+        },
+        {
           "type": "carousel",
           "autoplay": false,
           "items": [
@@ -341,12 +347,6 @@
               "height": 300
             }
           ]
-        },
-        {
-          "type": "button",
-          "kind": "download",
-          "text": "Brosjyre (på svensk)",
-          "href": "/assets/docs/ram-board-broschyr-svenska.pdf"
         },
         {
           "type": "text",

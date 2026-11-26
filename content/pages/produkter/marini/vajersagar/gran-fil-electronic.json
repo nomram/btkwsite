@@ -57,20 +57,6 @@
           "gen": true
         },
         {
-          "type": "carousel",
-          "autoplay": false,
-          "interval": 6,
-          "items": [
-            {
-              "src": "/assets/img/marini-quarry-granite-photo.webp",
-              "alt": "Marini Gran Fil Electronic (1/1)",
-              "width": 1800,
-              "height": 1102
-            }
-          ],
-          "gen": true
-        },
-        {
           "type": "button",
           "kind": "download",
           "text": "Broschyr vajersågar för granit (ENG)",
@@ -178,6 +164,20 @@
           "gen": true
         },
         {
+          "type": "carousel",
+          "autoplay": false,
+          "interval": 6,
+          "items": [
+            {
+              "src": "/assets/img/marini-quarry-granite-photo.webp",
+              "alt": "Marini Gran Fil Electronic (1/1)",
+              "width": 1800,
+              "height": 1102
+            }
+          ],
+          "gen": true
+        },
+        {
           "type": "modules",
           "layout": "tiles",
           "columns": 1,
@@ -264,20 +264,6 @@
         {
           "type": "text",
           "html": "<a href=\"/kontakta-oss\">Contact us</a> for price, delivery time or help choosing the right model.",
-          "gen": true
-        },
-        {
-          "type": "carousel",
-          "autoplay": false,
-          "interval": 6,
-          "items": [
-            {
-              "src": "/assets/img/marini-quarry-granite-photo.webp",
-              "alt": "Marini Gran Fil Electronic (1/1)",
-              "width": 1800,
-              "height": 1102
-            }
-          ],
           "gen": true
         },
         {
@@ -388,6 +374,20 @@
           "gen": true
         },
         {
+          "type": "carousel",
+          "autoplay": false,
+          "interval": 6,
+          "items": [
+            {
+              "src": "/assets/img/marini-quarry-granite-photo.webp",
+              "alt": "Marini Gran Fil Electronic (1/1)",
+              "width": 1800,
+              "height": 1102
+            }
+          ],
+          "gen": true
+        },
+        {
           "type": "modules",
           "layout": "tiles",
           "columns": 1,
@@ -474,20 +474,6 @@
         {
           "type": "text",
           "html": "<a href=\"/kontakta-oss\">Contáctenos</a> para precio, plazo de entrega o ayuda para elegir el modelo adecuado.",
-          "gen": true
-        },
-        {
-          "type": "carousel",
-          "autoplay": false,
-          "interval": 6,
-          "items": [
-            {
-              "src": "/assets/img/marini-quarry-granite-photo.webp",
-              "alt": "Marini Gran Fil Electronic (1/1)",
-              "width": 1800,
-              "height": 1102
-            }
-          ],
           "gen": true
         },
         {
@@ -598,6 +584,20 @@
           "gen": true
         },
         {
+          "type": "carousel",
+          "autoplay": false,
+          "interval": 6,
+          "items": [
+            {
+              "src": "/assets/img/marini-quarry-granite-photo.webp",
+              "alt": "Marini Gran Fil Electronic (1/1)",
+              "width": 1800,
+              "height": 1102
+            }
+          ],
+          "gen": true
+        },
+        {
           "type": "modules",
           "layout": "tiles",
           "columns": 1,
@@ -684,20 +684,6 @@
         {
           "type": "text",
           "html": "<a href=\"/kontakta-oss\">Kontakt oss</a> for pris, leveringstid eller hjelp til å velge riktig modell.",
-          "gen": true
-        },
-        {
-          "type": "carousel",
-          "autoplay": false,
-          "interval": 6,
-          "items": [
-            {
-              "src": "/assets/img/marini-quarry-granite-photo.webp",
-              "alt": "Marini Gran Fil Electronic (1/1)",
-              "width": 1800,
-              "height": 1102
-            }
-          ],
           "gen": true
         },
         {
@@ -804,6 +790,20 @@
               "Elektrisk",
               "Elektrisk"
             ]
+          ],
+          "gen": true
+        },
+        {
+          "type": "carousel",
+          "autoplay": false,
+          "interval": 6,
+          "items": [
+            {
+              "src": "/assets/img/marini-quarry-granite-photo.webp",
+              "alt": "Marini Gran Fil Electronic (1/1)",
+              "width": 1800,
+              "height": 1102
+            }
           ],
           "gen": true
         },
