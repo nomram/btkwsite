@@ -10,28 +10,28 @@
   var figs = [].slice.call(document.querySelectorAll(".m3d"));
   var LANGS = {
     sv: { loading: "Hämtar 3D-modellen", failed: "3D-modellen kunde inte visas i den här webbläsaren.", spin: "Rotera automatiskt", reset: "Startvy", full: "Helskärm", close: "Tillbaka till bilden",
-      orbit: "Vrid", pan: "Flytta", fly: "Flyg", hOrbit: "Dra för att vrida, scrolla eller nyp för att zooma.", hPan: "Dra för att flytta kameran i sidled och höjdled.", hFly: "Dra för att titta runt. W A S D flyttar, Q och E ner och upp, Shift går fortare.",
+      orbit: "Vrid", pan: "Flytta", fly: "Flyg", hOrbit: "Dra för att vrida, scrolla eller nyp för att zooma.", hPan: "Dra för att flytta kameran i sidled och höjdled.", hFly: "Klicka i bilden och styr med musen, som en fri kamera. W A S D flyger dit du tittar, mellanslag och C upp och ner, Shift fortare. Esc släpper musen.",
       fwd: "Framåt", back: "Bakåt", left: "Vänster", right: "Höger", up: "Upp", down: "Ner", modes: "Kameraläge" },
     en: { loading: "Loading the 3D model", failed: "The 3D model cannot be shown in this browser.", spin: "Rotate automatically", reset: "Start view", full: "Full screen", close: "Back to the picture",
-      orbit: "Turn", pan: "Move", fly: "Fly", hOrbit: "Drag to turn, scroll or pinch to zoom.", hPan: "Drag to move the camera sideways and up or down.", hFly: "Drag to look around. W A S D moves, Q and E down and up, Shift goes faster.",
+      orbit: "Turn", pan: "Move", fly: "Fly", hOrbit: "Drag to turn, scroll or pinch to zoom.", hPan: "Drag to move the camera sideways and up or down.", hFly: "Click the view and steer with the mouse, like a free camera. W A S D flies where you look, Space and C up and down, Shift faster. Esc releases the mouse.",
       fwd: "Forward", back: "Back", left: "Left", right: "Right", up: "Up", down: "Down", modes: "Camera mode" },
     es: { loading: "Cargando el modelo 3D", failed: "El modelo 3D no se puede mostrar en este navegador.", spin: "Girar automáticamente", reset: "Vista inicial", full: "Pantalla completa", close: "Volver a la imagen",
-      orbit: "Girar", pan: "Mover", fly: "Volar", hOrbit: "Arrastra para girar, desplaza o pellizca para ampliar.", hPan: "Arrastra para mover la cámara a los lados y en altura.", hFly: "Arrastra para mirar alrededor. W A S D mueve, Q y E bajan y suben, Mayús va más rápido.",
+      orbit: "Girar", pan: "Mover", fly: "Volar", hOrbit: "Arrastra para girar, desplaza o pellizca para ampliar.", hPan: "Arrastra para mover la cámara a los lados y en altura.", hFly: "Haz clic en la vista y dirige con el ratón, como una cámara libre. W A S D vuela hacia donde miras, espacio y C suben y bajan, Mayús más rápido. Esc suelta el ratón.",
       fwd: "Adelante", back: "Atrás", left: "Izquierda", right: "Derecha", up: "Arriba", down: "Abajo", modes: "Modo de cámara" },
     no: { loading: "Henter 3D-modellen", failed: "3D-modellen kan ikke vises i denne nettleseren.", spin: "Roter automatisk", reset: "Startvisning", full: "Fullskjerm", close: "Tilbake til bildet",
-      orbit: "Drei", pan: "Flytt", fly: "Fly", hOrbit: "Dra for å dreie, rull eller klyp for å zoome.", hPan: "Dra for å flytte kameraet sideveis og i høyden.", hFly: "Dra for å se deg rundt. W A S D flytter, Q og E ned og opp, Shift går fortere.",
+      orbit: "Drei", pan: "Flytt", fly: "Fly", hOrbit: "Dra for å dreie, rull eller klyp for å zoome.", hPan: "Dra for å flytte kameraet sideveis og i høyden.", hFly: "Klikk i bildet og styr med musen, som et fritt kamera. W A S D flyr dit du ser, mellomrom og C opp og ned, Shift fortere. Esc slipper musen.",
       fwd: "Fremover", back: "Bakover", left: "Venstre", right: "Høyre", up: "Opp", down: "Ned", modes: "Kameramodus" },
     lt: { loading: "Įkeliamas 3D modelis", failed: "Šioje naršyklėje 3D modelio parodyti nepavyksta.", spin: "Sukti automatiškai", reset: "Pradinis vaizdas", full: "Visas ekranas", close: "Atgal į nuotrauką",
-      orbit: "Sukti", pan: "Perkelti", fly: "Skristi", hOrbit: "Tempkite, kad pasuktumėte, slinkite arba suimkite pirštais, kad priartintumėte.", hPan: "Tempkite, kad perkeltumėte kamerą į šonus ir aukštyn ar žemyn.", hFly: "Tempkite, kad apsidairytumėte. W A S D judina, Q ir E žemyn ir aukštyn, Shift greičiau.",
+      orbit: "Sukti", pan: "Perkelti", fly: "Skristi", hOrbit: "Tempkite, kad pasuktumėte, slinkite arba suimkite pirštais, kad priartintumėte.", hPan: "Tempkite, kad perkeltumėte kamerą į šonus ir aukštyn ar žemyn.", hFly: "Spustelėkite vaizdą ir valdykite pele, kaip laisvą kamerą. W A S D skrenda ten, kur žiūrite, tarpas ir C aukštyn ir žemyn, Shift greičiau. Esc atlaisvina pelę.",
       fwd: "Pirmyn", back: "Atgal", left: "Kairėn", right: "Dešinėn", up: "Aukštyn", down: "Žemyn", modes: "Kameros režimas" },
     lv: { loading: "Ielādē 3D modeli", failed: "Šajā pārlūkā 3D modeli nevar parādīt.", spin: "Griezt automātiski", reset: "Sākuma skats", full: "Pilnekrāns", close: "Atpakaļ uz attēlu",
-      orbit: "Griezt", pan: "Pārvietot", fly: "Lidot", hOrbit: "Velciet, lai pagrieztu, ritiniet vai saspiediet, lai tuvinātu.", hPan: "Velciet, lai pārvietotu kameru uz sāniem un augšup vai lejup.", hFly: "Velciet, lai paskatītos apkārt. W A S D pārvieto, Q un E lejup un augšup, Shift ātrāk.",
+      orbit: "Griezt", pan: "Pārvietot", fly: "Lidot", hOrbit: "Velciet, lai pagrieztu, ritiniet vai saspiediet, lai tuvinātu.", hPan: "Velciet, lai pārvietotu kameru uz sāniem un augšup vai lejup.", hFly: "Noklikšķiniet uz skata un vadiet ar peli kā brīvu kameru. W A S D lido turp, kur skatāties, atstarpe un C augšup un lejup, Shift ātrāk. Esc atbrīvo peli.",
       fwd: "Uz priekšu", back: "Atpakaļ", left: "Pa kreisi", right: "Pa labi", up: "Augšup", down: "Lejup", modes: "Kameras režīms" },
     et: { loading: "3D-mudeli laadimine", failed: "Selles brauseris ei saa 3D-mudelit näidata.", spin: "Pööra automaatselt", reset: "Algvaade", full: "Täisekraan", close: "Tagasi pildi juurde",
-      orbit: "Pööra", pan: "Liiguta", fly: "Lenda", hOrbit: "Lohista pööramiseks, keri või näpista suumimiseks.", hPan: "Lohista, et liigutada kaamerat külgedele ja üles-alla.", hFly: "Lohista ringi vaatamiseks. W A S D liigutab, Q ja E alla ja üles, Shift kiiremini.",
+      orbit: "Pööra", pan: "Liiguta", fly: "Lenda", hOrbit: "Lohista pööramiseks, keri või näpista suumimiseks.", hPan: "Lohista, et liigutada kaamerat külgedele ja üles-alla.", hFly: "Klõpsa vaatel ja juhi hiirega nagu vaba kaamerat. W A S D lendab sinna, kuhu vaatad, tühik ja C üles ja alla, Shift kiiremini. Esc vabastab hiire.",
       fwd: "Edasi", back: "Tagasi", left: "Vasakule", right: "Paremale", up: "Üles", down: "Alla", modes: "Kaamera režiim" },
     ru: { loading: "Загрузка 3D-модели", failed: "В этом браузере 3D-модель показать нельзя.", spin: "Автоматическое вращение", reset: "Исходный вид", full: "Во весь экран", close: "Назад к изображению",
-      orbit: "Вращать", pan: "Сдвигать", fly: "Полёт", hOrbit: "Тяните, чтобы вращать, прокрутите или сведите пальцы для масштаба.", hPan: "Тяните, чтобы сдвигать камеру вбок и вверх или вниз.", hFly: "Тяните, чтобы осмотреться. W A S D — движение, Q и E — вниз и вверх, Shift — быстрее.",
+      orbit: "Вращать", pan: "Сдвигать", fly: "Полёт", hOrbit: "Тяните, чтобы вращать, прокрутите или сведите пальцы для масштаба.", hPan: "Тяните, чтобы сдвигать камеру вбок и вверх или вниз.", hFly: "Щёлкните по изображению и управляйте мышью, как свободной камерой. W A S D — полёт туда, куда вы смотрите, пробел и C — вверх и вниз, Shift — быстрее. Esc отпускает мышь.",
       fwd: "Вперёд", back: "Назад", left: "Влево", right: "Вправо", up: "Вверх", down: "Вниз", modes: "Режим камеры" }
   };
   var lang = (document.documentElement.lang || "en").toLowerCase(), L = LANGS[lang.slice(0, 2)] || (/^(nb|nn)/.test(lang) ? LANGS.no : LANGS.en);
@@ -237,22 +237,33 @@
       if (anim) { var k = Math.min(1, (t - anim.t0) / 700), e = 1 - Math.pow(1 - k, 3); ["th", "ph", "d"].forEach(function (q) { cam[q] = anim.from[q] + (anim.to[q] - anim.from[q]) * e; }); for (var i = 0; i < 3; i++) cam.t[i] = anim.from.t[i] + (anim.to.t[i] - anim.from.t[i]) * e; dirty = true; if (k >= 1) anim = null; }
       if (spin && !drag) { cam.th += dt * 0.22; dirty = true; }
       var kf = (keys.w ? 1 : 0) - (keys.s ? 1 : 0), kr = (keys.d ? 1 : 0) - (keys.a ? 1 : 0), ku = (keys.e ? 1 : 0) - (keys.q ? 1 : 0);
-      if ((kf || kr || ku) && dt) { var sp = size * 0.45 * (keys.shift ? 3 : 1) * dt; move(kf * sp, kr * sp, ku * sp); }
+      if (dt) {
+        var top = size * 0.55 * (keys.shift ? 3 : 1) * (keys.slow ? 0.3 : 1), held = kf || kr || ku, ease = Math.min(1, dt * (held ? 7 : 4.5));
+        vel[0] += (kf * top - vel[0]) * ease; vel[1] += (kr * top - vel[1]) * ease; vel[2] += (ku * top - vel[2]) * ease;
+        if (Math.abs(vel[0]) + Math.abs(vel[1]) + Math.abs(vel[2]) > size * 0.003) move(vel[0] * dt, vel[1] * dt, vel[2] * dt); else vel = [0, 0, 0];
+      }
       if (dirty) { draw(); dirty = false; }
       requestAnimationFrame(frame);
     }
     if (!opt.manual) requestAnimationFrame(frame);
 
     // pointer controls
-    var drag = null, pts = {}, keys = {}, mode = "orbit";
+    var drag = null, pts = {}, keys = {}, mode = "orbit", vel = [0, 0, 0];
+    var locked = function () { return document.pointerLockElement === canvas; };
     function stopSpin() { if (spin) { spin = false; if (opt.onSpin) opt.onSpin(false); } }
     canvas.addEventListener("contextmenu", function (e) { e.preventDefault(); });
     canvas.addEventListener("pointerdown", function (e) {
+      if (mode === "fly" && e.pointerType === "mouse" && e.button === 0) {
+        canvas.focus({ preventScroll: true }); stopSpin(); anim = null; if (opt.onUse) opt.onUse();
+        if (!locked() && canvas.requestPointerLock) { try { var pr = canvas.requestPointerLock(); if (pr && pr.catch) pr.catch(function () {}); } catch (err) { /* drag to look instead */ } }
+        if (locked()) return;
+      }
       canvas.setPointerCapture(e.pointerId); pts[e.pointerId] = { x: e.clientX, y: e.clientY }; canvas.focus({ preventScroll: true });
       drag = { pan: e.button === 2 || (e.shiftKey && mode !== "fly") || mode === "pan", x: e.clientX, y: e.clientY }; stopSpin(); anim = null; if (opt.onUse) opt.onUse();
     });
+    canvas.addEventListener("mousemove", function (e) { if (locked()) { look(e.movementX, e.movementY, 0.0022); } });
     canvas.addEventListener("pointermove", function (e) {
-      if (!pts[e.pointerId]) return;
+      if (locked() || !pts[e.pointerId]) return;
       var ids = Object.keys(pts);
       if (ids.length === 2) { // pinch zoom + two-finger move
         var a = pts[ids[0]], b = pts[ids[1]], d0 = Math.hypot(a.x - b.x, a.y - b.y), mx0 = (a.x + b.x) / 2, my0 = (a.y + b.y) / 2;
@@ -271,12 +282,12 @@
     });
     function up(e) { delete pts[e.pointerId]; if (!Object.keys(pts).length) drag = null; }
     canvas.addEventListener("pointerup", up); canvas.addEventListener("pointercancel", up);
-    canvas.addEventListener("wheel", function (e) { e.preventDefault(); stopSpin(); if (mode === "fly") move(-e.deltaY * (e.deltaMode ? 0.03 : 0.0009) * size, 0, 0); else zoom(Math.exp(e.deltaY * (e.deltaMode ? 0.05 : 0.0012))); }, { passive: false });
+    canvas.addEventListener("wheel", function (e) { e.preventDefault(); stopSpin(); if (mode === "fly") vel[0] += -e.deltaY * (e.deltaMode ? 0.06 : 0.0022) * size; else zoom(Math.exp(e.deltaY * (e.deltaMode ? 0.05 : 0.0012))); }, { passive: false });
     canvas.addEventListener("dblclick", function () { reset(); });
-    var KEYMAP = { w: "w", a: "a", s: "s", d: "d", q: "q", e: "e" };
+    var KEYMAP = { w: "w", a: "a", s: "s", d: "d", q: "q", e: "e", space: "e", c: "q", controlleft: "slow", controlright: "slow" };
     function keyOf(e) { var c = (e.code || "").replace(/^Key/, "").toLowerCase(); return KEYMAP[c] || KEYMAP[(e.key || "").toLowerCase()]; }
     canvas.addEventListener("keyup", function (e) { var k = keyOf(e); if (k) keys[k] = false; keys.shift = e.shiftKey; });
-    canvas.addEventListener("blur", function () { keys = {}; });
+    canvas.addEventListener("blur", function () { if (!locked()) keys = {}; });
     canvas.addEventListener("keydown", function (e) {
       var fk = keyOf(e);
       if (fk) { keys[fk] = true; keys.shift = e.shiftKey; e.preventDefault(); stopSpin(); anim = null; if (opt.onUse) opt.onUse(); return; }
@@ -301,15 +312,16 @@
       dirty = true;
     }
     // fly: turn the view about the camera itself
-    function look(dx, dy) {
-      var e = eye();
-      cam.th -= dx * 0.004; cam.ph = Math.max(-1.4, Math.min(1.4, cam.ph + dy * 0.004));
+    function look(dx, dy, k) {
+      var e = eye(); k = k || 0.004;
+      cam.th -= dx * k; cam.ph = Math.max(-1.48, Math.min(1.48, cam.ph + dy * k));
       var c = Math.cos(cam.ph);
       cam.t = [e[0] - cam.d * c * Math.sin(cam.th), e[1] - cam.d * Math.sin(cam.ph), e[2] - cam.d * c * Math.cos(cam.th)];
       dirty = true;
     }
     function setMode(m) {
-      mode = m; keys = {};
+      mode = m; keys = {}; vel = [0, 0, 0];
+      if (m !== "fly" && locked()) document.exitPointerLock();
       if (m === "fly") { var e = eye(), d = Math.max(size * 0.25, Math.min(cam.d, size * 0.6)), c = Math.cos(cam.ph); cam.d = d; cam.t = [e[0] - d * c * Math.sin(cam.th), e[1] - d * Math.sin(cam.ph), e[2] - d * c * Math.cos(cam.th)]; }
       else cam.ph = Math.max(-0.05, Math.min(1.45, cam.ph));
       stopSpin(); dirty = true;
@@ -323,7 +335,7 @@
       spinning: function () { return spin; },
       redraw: function () { size2(); draw(); },
       view: function (th, ph, d) { cam.th = th; cam.ph = ph; if (d) cam.d = size * d; dirty = true; },
-      destroy: function () { alive = false; var ext = gl.getExtension("WEBGL_lose_context"); if (ext) ext.loseContext(); }
+      destroy: function () { alive = false; if (locked()) document.exitPointerLock(); var ext = gl.getExtension("WEBGL_lose_context"); if (ext) ext.loseContext(); }
     };
   }
   window.BK3D = { fetchModel: fetchModel, Viewer: Viewer };
@@ -357,11 +369,13 @@
       var modes = document.createElement("div"); modes.className = "m3d__modes"; modes.setAttribute("role", "group"); modes.setAttribute("aria-label", L.modes);
       var MB = {};
       ["orbit", "pan", "fly"].forEach(function (m) {
-        var b = document.createElement("button"); b.type = "button"; b.className = "m3d__mode" + (m === "orbit" ? " is-on" : ""); b.setAttribute("aria-pressed", m === "orbit" ? "true" : "false");
-        b.innerHTML = ICON[m] + "<span>" + L[m] + "</span>"; b.title = L["h" + m.charAt(0).toUpperCase() + m.slice(1)];
+        var b = button("m3d__mode" + (m === "orbit" ? " is-on" : ""), L[m], ICON[m]); b.setAttribute("aria-pressed", m === "orbit" ? "true" : "false");
         b.addEventListener("click", function () { pick(m); canvas.focus({ preventScroll: true }); });
         modes.appendChild(b); MB[m] = b;
       });
+      tools.insertBefore(modes, tools.firstChild);
+      var cross = document.createElement("span"); cross.className = "m3d__cross"; cross.setAttribute("aria-hidden", "true");
+      document.addEventListener("pointerlockchange", function () { stage.classList.toggle("is-locked", document.pointerLockElement === canvas); });
       // on-screen flying for touch screens (and anyone without a keyboard)
       var pad = document.createElement("div"); pad.className = "m3d__pad"; pad.hidden = true;
       [["w", L.fwd, 0], ["a", L.left, -90], ["s", L.back, 180], ["d", L.right, 90], ["e", L.up, 0], ["q", L.down, 180]].forEach(function (k) {
@@ -378,7 +392,7 @@
         clearTimeout(pick.t); pick.t = setTimeout(function () { hint.classList.add("is-gone"); }, 7000);
         if (v) { v.mode(m); bSpin.classList.remove("is-on"); bSpin.setAttribute("aria-pressed", "false"); }
       }
-      stage.appendChild(modes); stage.appendChild(pad); stage.appendChild(tools); stage.appendChild(hint);
+      stage.appendChild(pad); stage.appendChild(tools); stage.appendChild(hint); stage.appendChild(cross);
       var v = null;
       try {
         v = Viewer(canvas, model, { yaw: +(fig.getAttribute("data-yaw") || 0), onUse: function () { hint.classList.add("is-gone"); }, onSpin: function (on) { bSpin.classList.toggle("is-on", on); bSpin.setAttribute("aria-pressed", on ? "true" : "false"); } });

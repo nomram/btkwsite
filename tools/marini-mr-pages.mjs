@@ -18,10 +18,10 @@ const PIC = JSON.parse(fs.readFileSync(path.join(ROOT, "crawl/marini/3d-pictures
 const PHOTOS = JSON.parse(fs.readFileSync(path.join(ROOT, "crawl/marini/mr-photos.json"), "utf8"));
 const mb = (f, lang) => { const n = fs.statSync(path.join(ROOT, "assets-src/3d", f)).size / 1e6; return (n < 1 ? n.toFixed(1) : n.toFixed(1)).replace(".", lang === "en" ? "." : ",") + " MB"; };
 const DOC = (n) => `/assets/docs/marini-slantstabilisering-${n}.pdf`;
-const ACC = { ep120: "EP 120", ep95: "EP 95", ep160: "EP 160", ma3r: "MA 100 S 3R", id160: "ID 160", id300: "ID 300", id500: "ID 500", masid: "MA 100 S ID", mas2id: "MA 100 S 2 ID", maid: "MA 100 ID" };
+const ACC = { ep120: "EP 120", ep95: "EP 95", ep160: "EP 160", ma3r: "MA 100 S 3R", ma90: "MA 90", id160: "ID 160", id300: "ID 300", id500: "ID 500", masid: "MA 100 S ID", mas2id: "MA 100 S 2 ID", maid: "MA 100 ID" };
 // spec: drive, stroke (mm), weight (kg), feed (kN), retract (kN), clamp (mm), torque (Nm), speed (rpm), power unit (kW), max passage (mm)
 const M = [
-  { slug: "mr-1-pn", name: "MR 1", fam: null, pneu: true, spec: ["1260 - 1760", "180 - 200", "5.0", "5.0", "", "850", "40"], heads: ["ep120"], drifters: ["ma3r"], doc: [DOC("las-mer"), "short"], photos: "mr-1-pn", wheels: "two",
+  { slug: "mr-1-pn", name: "MR 1", fam: null, pneu: true, spec: ["1260 - 1760", "180 - 200", "5.0", "5.0", "", "850", "40"], heads: ["ep120"], drifters: ["ma3r", "ma90"], doc: [DOC("las-mer"), "short"], photos: "mr-1-pn", wheels: "two",
     sv: "MR 1 är Marinis lättaste borrenhet för branta slänter. Den drivs med tryckluft och står på en rörram med två hjul, så den följer ojämn mark när den flyttas. MR 1 utrustas med en pneumatisk borrhammare, och matningen drivs av en pneumatisk lamell- eller kolvmotor.",
     en: "MR 1 is Marini's lightest drilling unit for steep slopes. It runs on compressed air and stands on a tubular frame with two wheels, so it follows uneven ground as it is moved. MR 1 is fitted with a pneumatic drifter, and the feed is driven by a pneumatic vane or piston motor." },
   { slug: "mr-2-pn", name: "MR 2 PN", fam: "mr-2", pneu: true, spec: ["1260 - 1760", "310 - 340", "9.5", "9.5", "", "850", "40 - 45"], heads: ["ep120"], drifters: ["ma3r"], doc: [DOC("mr-2-broschyr-2"), "pn"], photos: "mr-2-pn",

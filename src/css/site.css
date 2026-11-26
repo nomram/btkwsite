@@ -2907,3 +2907,17 @@ body::before { display: none; }
 .m3d__stage.is-fly .m3d__canvas { cursor: crosshair; }
 .m3d__stage:not(.is-fly) .m3d__hint { max-width: calc(100% - 14rem); }
 @media (max-width: 560px) { .m3d__mode span { display: none; } .m3d__mode { padding: .55rem .7rem; } .m3d__pad { grid-template-columns: repeat(3, 2.3rem) .4rem 2.3rem; grid-template-rows: repeat(2, 2.3rem); } .m3d__stage.is-fly .m3d__hint { display: block; font-size: .72rem !important; } }
+
+/* r43: camera modes as round icons in the toolbar, crosshair while the mouse steers the free camera */
+.m3d__tools .m3d__modes { position: static; display: flex; gap: .45rem; margin-right: .35rem; padding-right: .8rem; border: 0; border-right: 1px solid var(--line); background: none; }
+.m3d__tools .m3d__mode { padding: 0; border: 1px solid var(--line); border-right: 1px solid var(--line); background: rgba(255, 255, 255, .96); color: var(--text); letter-spacing: 0; box-shadow: none; }
+.m3d__tools .m3d__mode:hover { border-color: var(--text); }
+.m3d__tools .m3d__mode.is-on { color: var(--primary); border-color: var(--primary); background: rgba(255, 255, 255, .96); box-shadow: none; }
+.m3d__stage.is-fly .m3d__hint { top: .9rem; }
+.m3d__cross { position: absolute; left: 50%; top: 50%; width: 18px; height: 18px; margin: -9px 0 0 -9px; display: none; pointer-events: none; }
+.m3d__cross::before, .m3d__cross::after { content: ""; position: absolute; background: rgba(35, 31, 32, .7); box-shadow: 0 0 0 1px rgba(255, 255, 255, .6); }
+.m3d__cross::before { left: 8px; top: 0; width: 2px; height: 18px; }
+.m3d__cross::after { top: 8px; left: 0; height: 2px; width: 18px; }
+.m3d__stage.is-locked .m3d__cross { display: block; }
+.m3d__stage.is-locked .m3d__canvas { cursor: none; }
+@media (max-width: 700px) { .m3d__tools { top: .6rem; bottom: auto; right: .6rem; left: .6rem; justify-content: flex-end; flex-wrap: wrap; } .m3d__stage.is-fly .m3d__hint { top: 3.6rem; } .m3d__stage:not(.is-fly) .m3d__hint { max-width: calc(100% - 2rem); } }
