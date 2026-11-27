@@ -20,6 +20,7 @@ export const IC = {
   datasheet: svg('<path d="M6 3h9l4 4v14H6z"/><path d="M9 11h7M9 15h7M9 19h4"/>'),
   columns: svg('<rect x="3" y="4" width="8" height="16" rx="1.5"/><rect x="13" y="4" width="8" height="16" rx="1.5"/>'),
   rangechart: svg('<path d="M3 4v16h18"/><rect x="6" y="7" width="7" height="3" rx=".5"/><rect x="9" y="12" width="9" height="3" rx=".5"/><rect x="5" y="17" width="5" height="2" rx=".5"/>'),
+  rental: svg('<path d="M5 8h14l-1.2 12H6.2z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/><path d="M9.5 13.5l2 2 3.5-4"/>'),
   related: svg('<rect x="3" y="4" width="18" height="6" rx="1"/><rect x="3" y="14" width="18" height="6" rx="1"/><path d="M7 7h6M7 17h6"/>'),
   modules: svg('<rect x="3" y="5" width="5" height="14" rx="1"/><rect x="9.5" y="5" width="5" height="14" rx="1"/><rect x="16" y="5" width="5" height="14" rx="1"/>'),
   finder: svg('<rect x="3" y="4" width="8" height="7" rx="1"/><rect x="13" y="4" width="8" height="7" rx="1"/><path d="M4 15h16M4 19h11"/>'),
@@ -57,7 +58,7 @@ export const IC = {
 export const BLOCK_TYPES = [
   { id: "text", group: "text" }, { id: "heading", group: "text" }, { id: "list", group: "text" }, { id: "stat", group: "text" },
   { id: "image", group: "media" }, { id: "video", group: "media" }, { id: "download", group: "media" },
-  { id: "button", group: "layout" }, { id: "columns", group: "layout" }, { id: "cards", group: "layout" }, { id: "carousel", group: "media" }, { id: "compare", group: "media" }, { id: "finder", group: "data" }, { id: "modules", group: "layout" }, { id: "related", group: "layout" }, { id: "rangechart", group: "data" }, { id: "cta", group: "layout" }, { id: "chips", group: "layout" },
+  { id: "button", group: "layout" }, { id: "columns", group: "layout" }, { id: "cards", group: "layout" }, { id: "carousel", group: "media" }, { id: "compare", group: "media" }, { id: "finder", group: "data" }, { id: "modules", group: "layout" }, { id: "related", group: "layout" }, { id: "rental", group: "layout" }, { id: "rangechart", group: "data" }, { id: "cta", group: "layout" }, { id: "chips", group: "layout" },
   { id: "table", group: "data" }, { id: "datasheet", group: "data" },
   { id: "quote", group: "other" }, { id: "social", group: "other" }, { id: "contact", group: "other" }, { id: "html", group: "other" }
 ];
@@ -98,6 +99,7 @@ export function newBlock(id, lang) {
     case "compare": return { type: "compare", src: "", alt: "", src2: "", alt2: "", label: "", label2: "", caption: "" };
     case "modules": return { type: "modules", layout: "cards", items: [{ title: "", text: "", bullets: [] }] };
     case "related": return { type: "related", items: [{ href: "" }] };
+    case "rental": return { type: "rental", steps: [], items: [{ title: "", bullets: [] }], options: [] };
     case "rangechart": return { type: "rangechart", layout: "bars", unit: "mm", items: [{ label: "", min: "", max: "" }] };
     case "contact": return { type: "contact" };
     default: return { type: "html", html: "" };

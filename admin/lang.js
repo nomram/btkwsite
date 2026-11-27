@@ -128,6 +128,7 @@ const sv = {
   confirm_delete_block: "Ta bort blocket?",
   page_empty: "Sidan har inget innehåll ännu. Gå till fliken Lägg till.",
   structure_hint: "Dra raderna för att ändra ordning. Klicka för att markera.",
+  block_rental: "Hyrespark", block_rental_d: "Maskiner att hyra som i en webbutik: filter, sortering och en förfrågningslista som skickas som hyrförfrågan.", rent_steps: "Steg överst", rent_steps_hint: "Ett steg per rad (tomt = inga steg).", rent_cover: "Fotot fyller rutan (för egna foton, inte bilder på vit bakgrund)", rent_link_hint: "Produktsidan. Den får då märket Finns att hyra och en knapp för hyrofferta.", rent_brand: "Tillverkare", rent_cat: "Kategori (filter)", rent_out: "Inte tillgänglig just nu (gråmarkerad)", rent_item_opts: "Tillval", rent_item_opts_hint: "Koder från listan Tillval nedan, en per rad.", rent_photos: "Egna foton", rent_photos_hint: "Visas i bildvisaren (knappen med antal bilder på kortet).", rent_add: "Lägg till maskin", rent_options: "Tillval", rent_options_hint: "Tillval som kan väljas på maskinerna, t.ex. dataloggare. Koden används i maskinens fält Tillval.", rent_opt_key: "Kod", rent_opt_add: "Lägg till tillval",
   n_cards: "{n} kort", n_rows: "{n} rader", n_added: "{n} tillagda",
   // block inspector
   select_block_hint: "Klicka på ett block på sidan för att ändra dess inställningar.",
@@ -325,6 +326,7 @@ const en = {
   confirm_delete_block: "Delete this block?",
   page_empty: "The page has no content yet. Go to the Add tab.",
   structure_hint: "Drag rows to reorder. Click to select.",
+  block_rental: "Rental fleet", block_rental_d: "Machines to rent, shop style: filters, sorting and a request list that is sent as a rental request.", rent_steps: "Steps at the top", rent_steps_hint: "One step per line (empty = no steps).", rent_cover: "Photo fills the box (for own photos, not pictures on white)", rent_link_hint: "The product page. It then gets the Available to rent mark and a rental quote button.", rent_brand: "Manufacturer", rent_cat: "Category (filter)", rent_out: "Not available right now (greyed out)", rent_item_opts: "Options", rent_item_opts_hint: "Codes from the Options list below, one per line.", rent_photos: "Own photos", rent_photos_hint: "Shown in the picture viewer (the button with the number of photos on the card).", rent_add: "Add machine", rent_options: "Options", rent_options_hint: "Options that can be picked on the machines, e.g. a data logger. The code is used in the machine field Options.", rent_opt_key: "Code", rent_opt_add: "Add option",
   n_cards: "{n} cards", n_rows: "{n} rows", n_added: "{n} added",
   select_block_hint: "Click a block on the page to change its settings.",
   text_hint: "Type directly on the page. Select text for bold, italic and link. Enter starts a new paragraph.", make_heading: "Make heading", make_list: "Make list",

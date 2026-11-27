@@ -57,6 +57,15 @@ function visitBlock(b, pre, P, cb) {
     (it.bullets || []).forEach((x, n) => cb(id(`items.${j}.bullets.${n}`), x, (v) => (it.bullets[n] = v)));
     if (it.doc && it.doc.text) cb(id(`items.${j}.doc.text`), it.doc.text, (v) => (it.doc.text = v));
   });
+  if (b.type === "rental") {
+    (b.steps || []).forEach((x, n) => cb(id(`steps.${n}`), x, (v) => (b.steps[n] = v)));
+    (b.items || []).forEach((it, j) => {
+      for (const k of ["cat", "text", "alt"]) if (it[k]) cb(id(`items.${j}.${k}`), it[k], (v) => (it[k] = v));
+      (it.bullets || []).forEach((x, n) => cb(id(`items.${j}.bullets.${n}`), x, (v) => (it.bullets[n] = v)));
+      (it.photos || []).forEach((p, n) => { if (p.alt) cb(id(`items.${j}.photos.${n}.alt`), p.alt, (v) => (p.alt = v)); });
+    });
+    (b.options || []).forEach((o, j) => { for (const k of ["title", "text"]) if (o[k]) cb(id(`options.${j}.${k}`), o[k], (v) => (o[k] = v)); });
+  }
   if (b.type === "rangechart") for (const k of ["title", "intro", "note", "caution"]) if (b[k]) cb(id(k), b[k], (v) => (b[k] = v));
   if (b.type === "related") {
     if (b.title) cb(id("title"), b.title, (v) => (b.title = v));

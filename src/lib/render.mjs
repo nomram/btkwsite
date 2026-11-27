@@ -796,6 +796,90 @@ function renderModules(ctx, b) {
   return `<ul class="modules modules--${layout}${b.square ? " modules--sq" : ""}${b.narrow ? " modules--narrow" : ""}${b.zoom ? " modules--zoom" : ""}" style="--cols:${cols}">${li}</ul>`;
 }
 
+// ---------- Hyrespark (rental fleet) ----------
+// A shop-like list of the machines that can be rented: filters (category, maker, available only), sorting, and a request list the visitor
+// fills like a cart and sends as one rental request through the quote form (/offert?hyr=<text>). A machine that cannot be rented right now
+// stays in the list, greyed out. Everything is in the page for search engines and without scripts (every card then has a direct
+// "request a rental quote" link); site.js adds the filters, the request list and the picture viewer. The list lives only in this browser tab.
+const rentSlug = (s) => String(s || "").normalize("NFKD").replace(/[̀-ͯ]/g, "").toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+export const rentId = (it, i) => rentSlug(it.id || it.title || (it.href || "").split("/").pop()) || "m" + i;
+// Which product pages are in the rental fleet (for the "in our rental fleet" mark on the product page): href -> { id, out, path }
+function rentalIndex(ctx) {
+  const key = "_rent_" + ctx.lang;
+  if (ctx[key]) return ctx[key];
+  const map = new Map();
+  for (const p of ctx.pages.keys()) {
+    if (!shown(ctx, p)) continue;
+    const t = ctx.tr(p, ctx.lang);
+    for (const b of flatBlocks((t && t.blocks) || [])) if (b && b.type === "rental") (b.items || []).forEach((it, i) => {
+      if (it && it.href && !map.has(it.href)) map.set(it.href, { id: rentId(it, i), out: (it.out || it.status === "out"), path: p, title: it.title });
+    });
+  }
+  return (ctx[key] = map);
+}
+const rentQuoteHref = (ctx, text) => localizeHref(ctx, "/offert") + "?hyr=" + encodeURIComponent(text);
+const X_ICON = '<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>';
+function renderRental(ctx, b) {
+  const items = (b.items || []).filter((it) => it && it.title && !(it.href && ctx.pages && ctx.pages.has(it.href) && !shown(ctx, it.href)));
+  if (!items.length) return "";
+  const u = ctx.ui, T = (k, d) => esc(u[k] || d);
+  const opts = new Map((b.options || []).filter((o) => o && o.key && o.title).map((o) => [o.key, o]));
+  const lvl = ctx._cardLevel || 3;
+  const count = (arr, k) => { const m = new Map(); for (const it of arr) if (it[k]) m.set(it[k], (m.get(it[k]) || 0) + 1); return [...m.entries()]; };
+  const facet = (name, legend, entries) => entries.length < 2 ? "" : `<fieldset class="rent__fs"><legend>${esc(legend)}</legend>` +
+    entries.map(([v, n]) => `<label class="rent__chk"><input type="checkbox" name="${name}" value="${esc(v)}"><span>${esc(v)}</span><span class="rent__n">${n}</span></label>`).join("") + `</fieldset>`;
+  const nOk = items.filter((it) => !(it.out || it.status === "out")).length;
+  const filters = `<details class="rent__filters" open><summary>${T("rent_filter", "Filtrera")}</summary><div class="rent__fbody">` +
+    facet("cat", u.rent_cat || "Kategori", count(items, "cat")) + facet("brand", u.rent_brand || "Tillverkare", count(items, "brand")) +
+    (nOk < items.length ? `<fieldset class="rent__fs"><legend>${T("rent_avail", "Tillgänglighet")}</legend><label class="rent__chk"><input type="checkbox" name="ok" value="1"><span>${T("rent_only_ok", "Visa bara maskiner som finns att hyra")}</span><span class="rent__n">${nOk}</span></label></fieldset>` : "") +
+    `<button type="button" class="linklike rent__reset" hidden>${T("rent_reset", "Rensa filter")}</button></div></details>`;
+  const cards = items.map((it, i) => {
+    const id = rentId(it, i), out = (it.out || it.status === "out");
+    const href = it.href ? localizeHref(ctx, it.href) : "";
+    const image = it.image || (it.href ? relatedInfo(ctx, { href: it.href }).image : "");
+    const info = image && !it.cover ? ctx.image(image) : null;
+    const alt = it.alt || it.title;
+    const img = info && info.tilesq ? `<img class="rcard__img" src="/assets/img/${esc(info.name)}-tilesq.webp" width="640" height="640" alt="${esc(alt)}" loading="lazy" decoding="async">`
+      : image ? imgTag(ctx, image, alt, { cls: "rcard__img", sizes: "(min-width: 900px) 300px, 90vw" }) : "";
+    const photos = (it.photos || []).filter((p) => p && p.src);
+    const more = photos.length ? `<button type="button" class="rcard__pics" data-rent-pics hidden>${ICON.eye}<span>${esc(fmtTpl(u.rent_photos || "{n} bilder", { n: photos.length }))}</span></button>` : "";
+    const media = `<div class="rcard__media${it.cover ? " rcard__media--cover" : ""}">${href ? `<a href="${esc(href)}" tabindex="-1" aria-hidden="true">${img}</a>` : img}<span class="rcard__badge">${T("rent_badge", "Hyrmaskin")}</span>${more}</div>`;
+    const opt = out ? "" : (it.options || []).map((k) => opts.get(k)).filter(Boolean).map((o) =>
+      `<label class="rcard__opt"><input type="checkbox" data-opt="${esc(o.key)}" data-opt-name="${esc(o.title)}"><span><span class="rcard__optk">${T("rent_option", "Tillval")}:</span> ${o.href ? `<a href="${esc(localizeHref(ctx, o.href))}">${esc(o.title)}</a>` : esc(o.title)}${o.text ? `<small>${esc(o.text)}</small>` : ""}</span></label>`).join("");
+    const acts = out
+      ? `<p class="rcard__na">${T("rent_out_btn", "Kan inte hyras just nu")}</p>${href ? `<a class="rcard__link" href="${esc(href)}">${T("rent_more", "Mer om maskinen")}${ICON.arrow}</a>` : ""}`
+      : `<div class="rcard__acts"><button type="button" class="btn btn--sm rcard__add" data-rent-add aria-pressed="false" hidden><span class="rcard__add-t">${T("rent_add", "Lägg i förfrågan")}</span><span class="rcard__add-d">${ICON.check}${T("rent_added", "I förfrågan")}</span></button>` +
+        `<a class="btn btn--sm btn--ghost rcard__quote" href="${esc(rentQuoteHref(ctx, it.title))}">${T("rent_quote", "Begär hyrofferta")}</a></div>${href ? `<a class="rcard__link" href="${esc(href)}">${T("rent_more", "Mer om maskinen")}${ICON.arrow}</a>` : ""}`;
+    const gallery = photos.length ? `<template class="rcard__gal">${photos.map((p) => imgTag(ctx, p.src, p.alt || it.title, { cls: "rent__dlg-img", sizes: "(min-width: 900px) 900px, 100vw" })).join("")}</template>` : "";
+    return `<li class="rcard${out ? " is-out" : ""}" id="${esc(id)}" data-id="${esc(id)}" data-name="${esc(it.title)}" data-cat="${esc(it.cat || "")}" data-brand="${esc(it.brand || "")}" data-ok="${out ? 0 : 1}" data-i="${i}">` +
+      media + `<div class="rcard__body"><p class="rcard__kicker">${esc([it.brand, it.cat].filter(Boolean).join(" · "))}</p>` +
+      `<h${lvl} class="rcard__title">${href ? `<a href="${esc(href)}">${esc(it.title)}</a>` : esc(it.title)}</h${lvl}>` +
+      (it.text ? `<p class="rcard__text">${esc(it.text)}</p>` : "") +
+      ((it.bullets || []).length ? `<ul class="rcard__specs">${it.bullets.map((x) => `<li>${esc(x)}</li>`).join("")}</ul>` : "") +
+      `<p class="rcard__status rcard__status--${out ? "out" : "ok"}"><span aria-hidden="true"></span>${out ? T("rent_out", "Inte tillgänglig just nu") : T("rent_ok", "Finns att hyra")}</p>` +
+      opt + acts + `</div>${gallery}</li>`;
+  }).join("");
+  const steps = (b.steps || []).filter(Boolean);
+  const stepsHtml = steps.length ? `<ol class="rent__steps">${steps.map((s, k) => `<li><span class="rent__stepn" aria-hidden="true">${k + 1}</span><span>${esc(s)}</span></li>`).join("")}</ol>` : "";
+  const lens = String(u.rent_len_opts || "1 dag|1 vecka|2 veckor|1 månad|Längre eller vet inte än").split("|");
+  const cart = `<div class="rent__cart" data-rent-cart hidden role="dialog" aria-labelledby="rent-cart-h" tabindex="-1"><div class="rent__cart-in">` +
+    `<div class="rent__cart-head"><h2 id="rent-cart-h">${T("rent_cart", "Din hyrförfrågan")}</h2><button type="button" class="icon-btn rent__x" data-rent-close aria-label="${T("rent_close", "Stäng")}">${X_ICON}</button></div>` +
+    `<ul class="rent__lines"></ul><p class="rent__empty">${T("rent_cart_empty", "Inga maskiner valda än.")}</p>` +
+    `<div class="rent__form"><p class="qf__f"><label for="rent-from">${T("rent_from", "Önskat startdatum")}</label><input id="rent-from" type="date" name="from"></p>` +
+    `<p class="qf__f"><label for="rent-len">${T("rent_len", "Hyresperiod")}</label><select id="rent-len" name="len"><option value=""></option>${lens.map((x) => `<option>${esc(x)}</option>`).join("")}</select></p>` +
+    `<p class="qf__f"><label for="rent-site">${T("rent_site", "Ort eller arbetsplats")}</label><input id="rent-site" type="text" name="site" autocomplete="address-level2"></p></div>` +
+    `<a class="btn rent__send" href="${esc(localizeHref(ctx, "/offert"))}" data-rent-send>${T("rent_send", "Begär hyrofferta")}${ICON.arrow}</a>` +
+    `<p class="rent__fine">${T("rent_fine", "Inget skickas förrän du skickar formuläret på nästa sida.")}</p></div></div>`;
+  const bar = `<div class="rent__bar"><p class="rent__count" aria-live="polite" data-one="${T("rent_count_one", "1 maskin")}" data-many="${T("rent_count", "{n} maskiner")}">${esc(fmtTpl(u.rent_count || "{n} maskiner", { n: items.length }))}</p>` +
+    `<label class="rent__sort" hidden><span>${T("rent_sort", "Sortera")}</span><select><option value="">${T("rent_sort_rec", "Utvalda")}</option><option value="az">${T("rent_sort_az", "Namn A-Ö")}</option><option value="brand">${T("rent_sort_brand", "Tillverkare")}</option></select></label>` +
+    `<button type="button" class="rent__open" data-rent-open hidden><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 4h6l1 2h3v14H5V6h3z"/><path d="M9 11h6M9 15h4"/></svg><span>${T("rent_cart", "Din hyrförfrågan")}</span><span class="rent__badge">0</span></button></div>`;
+  return `<section class="rent" data-rent data-about="${T("rent_about", "Hyrförfrågan:")}" data-l-from="${T("rent_from", "Önskat startdatum")}" data-l-len="${T("rent_len", "Hyresperiod")}" data-l-site="${T("rent_site", "Ort eller arbetsplats")}" data-l-remove="${T("rent_remove", "Ta bort")}" data-l-prev="${T("carousel_prev", "Föregående")}" data-l-next="${T("carousel_next", "Nästa")}">` +
+    stepsHtml + `<div class="rent__layout"><aside class="rent__side">${filters}</aside><div class="rent__main">${bar}<ul class="rent__grid">${cards}</ul>` +
+    `<p class="rent__none" hidden>${T("rent_none", "Inga maskiner matchar filtret.")} <button type="button" class="linklike rent__reset">${T("rent_reset", "Rensa filter")}</button></p></div></div>${cart}` +
+    `<div class="rent__dock" data-rent-dock hidden><span class="rent__dock-t"><strong class="rent__badge">0</strong> <span>${T("rent_cart", "Din hyrförfrågan")}</span></span><button type="button" class="btn btn--sm" data-rent-open>${T("rent_view", "Visa förfrågan")}</button></div>` +
+    `<dialog class="rent__dlg"><div class="rent__dlg-in"><button type="button" class="icon-btn rent__x" data-rent-dclose aria-label="${T("rent_close", "Stäng")}">${X_ICON}</button><div class="rent__dlg-stage"></div><div class="rent__dlg-thumbs"></div></div></dialog></section>`;
+}
+
 // Image carousel. Native scroll-snap: swipe, trackpad and keyboard work without JavaScript; site.js adds arrows, dots
 // and the optional autoplay (never with prefers-reduced-motion, stops as soon as the visitor touches it).
 // "Find the right machine": cards for the product families; choosing one shows its models, each with its brochure. Without JavaScript
@@ -880,9 +964,9 @@ function renderQuote(ctx, b = {}) {
   };
   const extra = Object.entries(q.extra || {}).map(([k, v]) => `<input type="hidden" name="${esc(k)}" value="${esc(v)}">`).join("");
   return `<section class="quote" id="offert" data-quote data-endpoint="${esc(q.endpoint || "")}" data-key="${esc(q.apiKey || "")}" data-mailto="${esc(c.email || "")}" data-docbase="/assets/docs/" data-lang-label="${esc(langLabel)}" data-hole-short="${T("quote_hole_short", "håldiameter")}" data-v-required="${T("quote_v_required", "Fyll i det här fältet.")}" data-v-email="${T("quote_v_email", "Ange en giltig e-postadress.")}" data-v-consent="${T("quote_v_consent", "Bocka i rutan för att godkänna att vi använder dina uppgifter, så kan du skicka förfrågan.")}" data-guard="${esc(JSON.stringify(guard))}" ` +
-    `data-subject="${T("quote_subject", "Offertförfrågan")}" data-about="${T("quote_about", "Gäller:")}" data-sending="${T("quote_sending", "Skickar…")}" data-ok="${T("quote_ok", "Tack! Vi återkommer så snart vi kan.")}" ` +
+    `data-rent-subject="${T("rent_subject", "Hyrförfrågan")}" data-rent-title="${T("rent_send", "Begär hyrofferta")}" data-rent-about="${T("rent_about", "Hyrförfrågan:")}" data-subject="${T("quote_subject", "Offertförfrågan")}" data-about="${T("quote_about", "Gäller:")}" data-sending="${T("quote_sending", "Skickar…")}" data-ok="${T("quote_ok", "Tack! Vi återkommer så snart vi kan.")}" ` +
     `data-err="${T("quote_err", "Det gick inte att skicka. Ring oss eller skriv till oss direkt.")}" data-mail="${T("quote_mail", "Ditt e-postprogram öppnas med meddelandet ifyllt, tryck på Skicka där.")}">` +
-    `${b.bare ? "" : `<h2>${T("quote_title", "Få offert")}</h2>`}<p class="muted qf__intro">${esc(fmtTpl(u.quote_intro || "Berätta kort vad du behöver, så återkommer vi.", personOf(ctx)))}</p>` +
+    `${b.bare ? "" : `<h2>${T("quote_title", "Få offert")}</h2>`}<p class="qf__rent" hidden><span class="qf__rent-tag">${T("rent_badge", "Hyrmaskin")}</span> ${T("rent_form_note", "Det här är en hyrförfrågan. Vi återkommer med hyrespris, när maskinen är ledig och hur den kommer till er.")} <a href="${esc(localizeHref(ctx, "/hyrespark"))}">${T("rent_back", "Till hyresparken")}</a></p><p class="muted qf__intro">${esc(fmtTpl(u.quote_intro || "Berätta kort vad du behöver, så återkommer vi.", personOf(ctx)))}</p>` +
     `<form class="qf" method="post" action="${esc(q.endpoint || "#")}" novalidate>` +
     `<div class="qf__grid">${f("name", T("quote_name", "Namn"), "text", "name", true)}${f("company", T("quote_company", "Företag"), "text", "organization")}` +
     `${f("email", T("quote_email", "E-post"), "email", "email", true)}${f("phone", T("quote_phone", "Telefon"), "tel", "tel")}</div>` +
@@ -1016,6 +1100,7 @@ function renderBlockInner(ctx, b) {
     case "perfchart": return renderPerfChart(ctx, b, (n) => editFld(ctx, n), (src, alt, o) => imgTag(ctx, src, alt, o));
     case "finder": return renderFinder(ctx, b);
     case "modules": return renderModules(ctx, b);
+    case "rental": return renderRental(ctx, b);
     case "related": return renderRelated(ctx, b);
     case "rangechart": return renderRangeChart(ctx, b);
     case "chips": return renderChips(ctx, b);
@@ -1101,6 +1186,7 @@ export function renderBlocks(ctx, blocks) {
       continue;
     }
     if (b.type === "cta" || b.type === "datasheet" && false) { flushProse(); out.push(renderBlock(ctx, b)); continue; }
+    if (b.type === "rental") { flushProse(); out.push(`<div class="container sect">${renderBlock(ctx, b)}</div>`); continue; }
     if (b.type === "columns" || b.type === "social" || b.type === "quote") { flushProse(); out.push(`<div class="container prose sect">${renderBlock(ctx, b)}</div>`); continue; }
     prose.push(renderBlock(ctx, b));
   }
@@ -1512,7 +1598,19 @@ function productQuoteCta(ctx, page, t, name) {
   // the product name gets a slow orange underline when the band scrolls into view (site.js adds .is-seen): a quiet nudge, not an alarm
   const titleHtml = String(u.quote_cta_title || "Få offert på {name}").split("{name}").map(esc).join(`<span class="cta__name">${esc(name)}</span>`);
   return `<section class="cta"><div class="container cta__inner"><div class="cta__text"><h2>${titleHtml}</h2>${stock ? `<p class="cta__stock cta__stock--${esc(page.stock)}"><span aria-hidden="true"></span>${esc(stock)}</p>` : ""}<p>${esc(fmtTpl(u.quote_cta_text || "Berätta kort vad du behöver, så återkommer vi med pris och leveranstid.", personOf(ctx)))}</p></div>` +
-    `<a class="btn btn--light" href="${esc(href)}">${esc(u.quote_title || "Få offert")}${ICON.arrow}</a></div></section>`;
+    `<div class="cta__btns"><a class="btn btn--light" href="${esc(href)}">${esc(u.quote_title || "Få offert")}${ICON.arrow}</a>${rentBtn(ctx, page)}</div></div></section>`;
+}
+// a machine in the rental fleet: a second button in the closing band, straight to a rental request
+function rentBtn(ctx, page) {
+  const r = page.template === "product" && !ctx.edit ? rentalIndex(ctx).get(page.path) : null;
+  if (!r || r.out) return "";
+  return `<a class="btn btn--ghost-light" href="${esc(rentQuoteHref(ctx, r.title))}">${esc(ctx.ui.rent_quote || "Begär hyrofferta")}</a>`;
+}
+// the mark beside the breadcrumbs: this machine is in the rental fleet (greyed when it cannot be rented right now)
+function rentPill(ctx, page) {
+  const r = page.template === "product" && !ctx.edit ? rentalIndex(ctx).get(page.path) : null;
+  if (!r) return "";
+  return `<a class="rentpill${r.out ? " rentpill--out" : ""}" href="${esc(localizeHref(ctx, r.path))}#${esc(r.id)}"><span aria-hidden="true"></span>${esc(r.out ? ctx.ui.rent_pill_out || "I vår hyrespark, inte ledig just nu" : ctx.ui.rent_pill || "Finns att hyra")}</a>`;
 }
 
 // "Product of Switzerland": only on the first page of a brand (the brand page; further down the small logo sits in this place). Quiet by default,
@@ -1593,7 +1691,8 @@ export function renderMain(ctx, page, t) {
   ctx._noMarquee = !ctx.edit && isHome && introHtml.includes("class=\"lgrid\"");
   let bodyHtml = ctx.edit ? `${splitHtml}${renderBlocks(ctx, rest)}` : prioritise(`${splitHtml}${renderBlocks(ctx, rest)}`);
   if (isArticle) { const aend = `<div class="container"><div class="aend"><a class="aend__back" href="${esc(localizeHref(ctx, "/artiklar"))}">${esc(ctx.ui.article_all || "Alla artiklar")}</a>${artActs.replace("ahead__act", "aend__act ahead__act")}</div></div>`; const ci = bodyHtml.search(/<(section|div) class="cta"/); bodyHtml = ci < 0 ? bodyHtml + aend : bodyHtml.slice(0, ci) + aend + bodyHtml.slice(ci); }
-  const crumbRow = !isArticle && (crumbs || logo || origin || ctx._pfilter) ? `<div class="container crumbs${page.template === "about" && !heroImg ? " crumbs--center" : ""}">${crumbs}${ctx._psearch || ""}${ctx._pfilter || ""}${logo && origin ? `<div class="crumbs__brand">${logo}${origin}</div>` : `${logo}${origin}`}</div>` : "";
+  const rpill = rentPill(ctx, page);
+  const crumbRow = !isArticle && (crumbs || logo || origin || ctx._pfilter) ? `<div class="container crumbs${page.template === "about" && !heroImg ? " crumbs--center" : ""}">${crumbs}${rpill}${ctx._psearch || ""}${ctx._pfilter || ""}${logo && origin ? `<div class="crumbs__brand">${logo}${origin}</div>` : `${logo}${origin}`}</div>` : "";
   const autoRel = !ownRel.length && ctx._relExtra.length ? `<div class="container">${renderRelated(ctx, { type: "related", items: [] })}</div>` : "";
   ctx._relExtra = [];
   const artMeta = !ctx.edit && page.template === "article" ? articleMeta(ctx, page, t) : "";

@@ -99,6 +99,7 @@ const tileWanted = new Map(); // "/assets/img/x.webp" -> { t43, tsq }
   for (const pg of pages.values()) for (const t of Object.values(pg.i18n || {})) for (const b of flatBlocks(t.blocks || [])) {
     if (b.type === "cards") for (const it of b.items || []) if (it && it.image) { want(it.image, "t43"); want(it.image, "tsq"); }
     if (b.type === "modules" && b.layout !== "tiles") for (const it of b.items || []) if (it && it.image) want(it.image, "tsq");
+    if (b.type === "rental") for (const it of b.items || []) if (it && it.image && !it.cover) want(it.image, "tsq");
   }
 }
 const MENU_THUMB = { inner: 88, pad: 4, mul: [244 / 255, 242 / 255, 239 / 255], bg: "#f4f2ef" };

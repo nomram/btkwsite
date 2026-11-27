@@ -24,6 +24,20 @@
     // arrived from a product page: ?produkt=<name> (and the size picked in a chart, ?hal=<mm>) pre-fill the message text (no separate field)
     var product = "", hole = holeFromUrl();
     try { var m = /[?&]produkt=([^&#]*)/.exec(window.location.search); if (m) product = decodeURIComponent(m[1].replace(/\+/g, " ")).slice(0, 120); } catch (e) { /* ignore malformed encoding */ }
+    // arrived from the rental fleet: ?hyr=<the machines, options and dates> makes it a rental request (subject, heading, a note above the form)
+    var rent = "";
+    try { var mr = /[?&]hyr=([^&#]*)/.exec(window.location.search); if (mr) rent = decodeURIComponent(mr[1].replace(/\+/g, " ")).slice(0, 1500); } catch (e) { /* ignore malformed encoding */ }
+    if (rent) {
+      var NL = String.fromCharCode(10);
+      product = rent.split(NL).filter(function (l) { return /^- /.test(l); }).map(function (l) { return l.slice(2); }).join(", ").slice(0, 300) || rent.split(NL)[0].slice(0, 120);
+      hole = 0;
+      box.setAttribute("data-subject", box.getAttribute("data-rent-subject"));
+      var subj = form.querySelector("[name=subject]"); if (subj) subj.value = box.getAttribute("data-rent-subject");
+      var note = box.querySelector(".qf__rent"); if (note) note.hidden = false;
+      var h1 = document.querySelector("main h1, .page-head h1"); if (h1) h1.textContent = box.getAttribute("data-rent-title"); document.title = box.getAttribute("data-rent-title") + document.title.replace(/^[^|]*/, " ");
+      box.classList.add("is-rent");
+      if (ta && !ta.value) ta.value = box.getAttribute("data-rent-about") + NL + rent + NL + NL;
+    }
     if (productInput) productInput.value = product;
     if (ta && !ta.value && (product || hole)) {
       var about = (product || "") + (product && hole ? ", " : "") + (hole ? box.getAttribute("data-hole-short") + " " + hole + " mm" : "");
@@ -149,6 +163,166 @@
     }
   };
   if (storedHole()) window.bkHole.set(storedHole());
+
+  // ---------- Hyrespark: filters, sorting, a request list (like a cart) and a picture viewer ----------
+  // The request list is kept only in this browser tab (sessionStorage) and nothing is sent anywhere: "request a rental quote" opens the
+  // quote form with the machines, options and dates written into the message (?hyr=<text>), and the visitor sends it from there.
+  Array.prototype.forEach.call(document.querySelectorAll("[data-rent]"), function (box) {
+    var KEY = "bk_rent";
+    var grid = box.querySelector(".rent__grid"), cards = [].slice.call(box.querySelectorAll(".rcard"));
+    var cart = box.querySelector("[data-rent-cart]"), dock = box.querySelector("[data-rent-dock]"), lines = box.querySelector(".rent__lines");
+    var countEl = box.querySelector(".rent__count"), none = box.querySelector(".rent__none"), sortSel = box.querySelector(".rent__sort select");
+    var resets = [].slice.call(box.querySelectorAll(".rent__reset")), send = box.querySelector("[data-rent-send]");
+    var fields = { from: box.querySelector("#rent-from"), len: box.querySelector("#rent-len"), site: box.querySelector("#rent-site") };
+    var state = { items: [], from: "", len: "", site: "" };
+    try { var saved = JSON.parse(sessionStorage.getItem(KEY) || "null"); if (saved && Array.isArray(saved.items)) state = saved; } catch (e) { /* private window: the list just isn't kept */ }
+    function save() { try { sessionStorage.setItem(KEY, JSON.stringify(state)); } catch (e) { /* ignore */ } }
+    function card(id) { for (var i = 0; i < cards.length; i++) if (cards[i].getAttribute("data-id") === id) return cards[i]; return null; }
+    state.items = state.items.filter(function (x) { var c = x && card(x.id); return c && c.getAttribute("data-ok") === "1"; });
+    var open = function () {}, close = function () {};
+    [].forEach.call(box.querySelectorAll("[data-rent-add], [data-rent-pics], .rent__sort, .rent__open"), function (el) { el.hidden = false; });
+    // ---- filters ----
+    var boxes = [].slice.call(box.querySelectorAll(".rent__filters input[type=checkbox]"));
+    function picked(name) { return boxes.filter(function (b) { return b.name === name && b.checked; }).map(function (b) { return b.value; }); }
+    function filter() {
+      var cats = picked("cat"), brands = picked("brand"), okOnly = picked("ok").length > 0, n = 0;
+      cards.forEach(function (c) {
+        var show = (!cats.length || cats.indexOf(c.getAttribute("data-cat")) >= 0) && (!brands.length || brands.indexOf(c.getAttribute("data-brand")) >= 0) && (!okOnly || c.getAttribute("data-ok") === "1");
+        c.hidden = !show; if (show) n++;
+      });
+      if (countEl) countEl.textContent = n === 1 ? countEl.getAttribute("data-one") : countEl.getAttribute("data-many").replace("{n}", n);
+      if (none) none.hidden = n > 0;
+      var any = cats.length || brands.length || okOnly;
+      resets.forEach(function (r) { r.hidden = !any && !r.closest(".rent__none"); });
+    }
+    boxes.forEach(function (b) { b.addEventListener("change", filter); });
+    resets.forEach(function (r) { r.addEventListener("click", function () { boxes.forEach(function (b) { b.checked = false; }); filter(); }); });
+    // on phones the filter starts folded
+    var det = box.querySelector(".rent__filters");
+    if (det && window.matchMedia && window.matchMedia("(max-width: 899px)").matches) det.open = false;
+    // ---- sorting ----
+    if (sortSel) sortSel.addEventListener("change", function () {
+      var v = sortSel.value, arr = cards.slice();
+      var name = function (c) { return c.getAttribute("data-name"); };
+      if (v === "az") arr.sort(function (a, b) { return name(a).localeCompare(name(b), document.documentElement.lang || "sv", { numeric: true }); });
+      else if (v === "brand") arr.sort(function (a, b) { return (a.getAttribute("data-brand") + name(a)).localeCompare(b.getAttribute("data-brand") + name(b), document.documentElement.lang || "sv", { numeric: true }); });
+      else arr.sort(function (a, b) { return a.getAttribute("data-i") - b.getAttribute("data-i"); });
+      // machines that cannot be rented go last whatever the order
+      arr.sort(function (a, b) { return b.getAttribute("data-ok") - a.getAttribute("data-ok"); });
+      arr.forEach(function (c) { grid.appendChild(c); });
+    });
+    // ---- the request list ----
+    function inList(id) { for (var i = 0; i < state.items.length; i++) if (state.items[i].id === id) return state.items[i]; return null; }
+    function optsOf(c) { return [].slice.call(c.querySelectorAll("[data-opt]")).filter(function (o) { return o.checked; }).map(function (o) { return o.getAttribute("data-opt"); }); }
+    function optName(c, k) { var o = c.querySelector('[data-opt="' + k + '"]'); return o ? o.getAttribute("data-opt-name") : k; }
+    function lineText(x) { var c = card(x.id); if (!c) return ""; return c.getAttribute("data-name") + (x.opts && x.opts.length ? " + " + x.opts.map(function (k) { return optName(c, k); }).join(" + ") : ""); }
+    function message(list) {
+      var out = list.map(function (x) { return "- " + lineText(x); });
+      if (state.from) out.push(box.getAttribute("data-l-from") + ": " + state.from);
+      if (state.len) out.push(box.getAttribute("data-l-len") + ": " + state.len);
+      if (state.site) out.push(box.getAttribute("data-l-site") + ": " + state.site);
+      return out.join("\n");
+    }
+    function quoteUrl(list) { return send.getAttribute("href").split("?")[0] + "?hyr=" + encodeURIComponent(message(list)); }
+    function render() {
+      var n = state.items.length;
+      [].forEach.call(box.querySelectorAll(".rent__badge"), function (b) { b.textContent = n; });
+      if (dock) dock.hidden = !n || !cart.hidden;
+      box.classList.toggle("has-items", n > 0);
+      lines.innerHTML = "";
+      state.items.forEach(function (x) {
+        var c = card(x.id); if (!c) return;
+        var img = c.querySelector(".rcard__img"), li = document.createElement("li");
+        li.className = "rent__line";
+        li.innerHTML = '<span class="rent__line-img"></span><span class="rent__line-t"><strong></strong><small></small></span><button type="button" class="rent__line-x"></button>';
+        if (img) { var im = document.createElement("img"); im.src = img.currentSrc || img.src; im.alt = ""; li.firstChild.appendChild(im); }
+        li.querySelector("strong").textContent = c.getAttribute("data-name");
+        li.querySelector("small").textContent = (x.opts || []).map(function (k) { return "+ " + optName(c, k); }).join(" ");
+        var bx = li.querySelector("button"); bx.textContent = box.getAttribute("data-l-remove"); bx.setAttribute("aria-label", box.getAttribute("data-l-remove") + ": " + c.getAttribute("data-name"));
+        bx.addEventListener("click", function () { toggle(x.id, false); });
+        lines.appendChild(li);
+      });
+      box.querySelector(".rent__empty").hidden = n > 0;
+      box.querySelector(".rent__form").hidden = !n;
+      send.hidden = !n;
+      if (n) send.href = quoteUrl(state.items);
+      cards.forEach(function (c) {
+        var on = !!inList(c.getAttribute("data-id")), b = c.querySelector("[data-rent-add]");
+        c.classList.toggle("is-in", on);
+        if (b) b.setAttribute("aria-pressed", on ? "true" : "false");
+        // the direct link takes the ticked options along
+        var q = c.querySelector(".rcard__quote");
+        if (q) q.href = quoteUrl([{ id: c.getAttribute("data-id"), opts: optsOf(c) }]);
+      });
+    }
+    function toggle(id, on) {
+      var c = card(id), x = inList(id);
+      if (on && !x) state.items.push({ id: id, opts: c ? optsOf(c) : [] });
+      if (!on && x) state.items.splice(state.items.indexOf(x), 1);
+      save(); render();
+    }
+    cards.forEach(function (c) {
+      var id = c.getAttribute("data-id"), b = c.querySelector("[data-rent-add]");
+      if (b) b.addEventListener("click", function () {
+        var was = !!inList(id);
+        toggle(id, !was);
+        if (!was) { b.classList.remove("is-pop"); void b.offsetWidth; b.classList.add("is-pop"); }
+      });
+      [].forEach.call(c.querySelectorAll("[data-opt]"), function (o) {
+        var x = inList(id); if (x && x.opts) o.checked = x.opts.indexOf(o.getAttribute("data-opt")) >= 0;
+        o.addEventListener("change", function () { var y = inList(id); if (y) { y.opts = optsOf(c); save(); } render(); });
+      });
+    });
+    Object.keys(fields).forEach(function (k) {
+      var f = fields[k]; if (!f) return;
+      if (state[k]) f.value = state[k];
+      f.addEventListener("input", function () { state[k] = String(f.value || "").slice(0, 80); save(); render(); });
+      f.addEventListener("change", function () { state[k] = String(f.value || "").slice(0, 80); save(); render(); });
+    });
+    // the list slides in from the side; Esc or the cross closes it
+    var lastFocus = null;
+    open = function () { lastFocus = document.activeElement; cart.hidden = false; box.classList.add("is-cart"); if (dock) dock.hidden = true; requestAnimationFrame(function () { cart.classList.add("is-open"); cart.focus({ preventScroll: true }); }); };
+    close = function () { cart.classList.remove("is-open"); box.classList.remove("is-cart"); setTimeout(function () { cart.hidden = true; render(); }, 200); if (lastFocus && lastFocus.focus) lastFocus.focus({ preventScroll: true }); };
+    [].forEach.call(box.querySelectorAll("[data-rent-open]"), function (b) { b.addEventListener("click", open); });
+    box.querySelector("[data-rent-close]").addEventListener("click", close);
+    cart.addEventListener("keydown", function (e) { if (e.key === "Escape") close(); });
+    document.addEventListener("click", function (e) { if (!cart.hidden && cart.classList.contains("is-open") && !cart.contains(e.target) && !e.target.closest("[data-rent-open], [data-rent-add], .rent__line-x")) close(); });
+    // ---- picture viewer (the rental unit's own photos) ----
+    var dlg = box.querySelector(".rent__dlg"), stage = dlg && dlg.querySelector(".rent__dlg-stage"), thumbs = dlg && dlg.querySelector(".rent__dlg-thumbs");
+    function show(imgs, k) {
+      stage.innerHTML = ""; stage.appendChild(imgs[k].cloneNode(true));
+      [].forEach.call(thumbs.children, function (t, j) { t.setAttribute("aria-current", j === k ? "true" : "false"); });
+      dlg._k = k;
+    }
+    cards.forEach(function (c) {
+      var pb = c.querySelector("[data-rent-pics]"), tpl = c.querySelector(".rcard__gal");
+      if (!pb || !tpl || !dlg || typeof dlg.showModal !== "function") { if (pb) pb.hidden = true; return; }
+      pb.addEventListener("click", function () {
+        var imgs = [].slice.call(tpl.content.querySelectorAll("img"));
+        imgs.forEach(function (im) { im.loading = "eager"; });
+        thumbs.innerHTML = "";
+        imgs.forEach(function (im, j) {
+          var t = document.createElement("button"); t.type = "button"; t.className = "rent__dlg-thumb";
+          var ti = im.cloneNode(true); ti.removeAttribute("sizes"); ti.sizes = "120px"; ti.alt = ""; t.appendChild(ti);
+          t.setAttribute("aria-label", (j + 1) + " / " + imgs.length);
+          t.addEventListener("click", function () { show(imgs, j); });
+          thumbs.appendChild(t);
+        });
+        dlg._imgs = imgs; dlg.setAttribute("aria-label", c.getAttribute("data-name"));
+        show(imgs, 0); dlg.showModal();
+      });
+    });
+    if (dlg) {
+      dlg.querySelector("[data-rent-dclose]").addEventListener("click", function () { dlg.close(); });
+      dlg.addEventListener("click", function (e) { if (e.target === dlg) dlg.close(); });
+      dlg.addEventListener("keydown", function (e) {
+        if (!dlg._imgs) return;
+        if (e.key === "ArrowRight") show(dlg._imgs, (dlg._k + 1) % dlg._imgs.length);
+        if (e.key === "ArrowLeft") show(dlg._imgs, (dlg._k - 1 + dlg._imgs.length) % dlg._imgs.length);
+      });
+    }
+    filter(); render();
+  });
 
   // ---------- image carousels ----------
   var reduceMotion = !!(window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches);
@@ -1926,7 +2100,7 @@
   document.addEventListener("click", function (e) {
     if (e.target.closest && e.target.closest("[data-consent-open]")) show();
   });
-})();
+})();
 
 // ---------- live page head: a quiet graphite field with formwork tie points; a few small orange squares (the logo's square) light up and fade, one faint warm glow drifts, scrolling adds a little parallax. Nothing is loaded and it pauses out of view ----------
 (function () {

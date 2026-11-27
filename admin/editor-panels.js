@@ -59,6 +59,7 @@ function snippet(b) {
     case "compare": return b.caption || b.alt || t("empty");
     case "modules": return t("n_cards", { n: (b.items || []).length });
     case "related": return t("n_cards", { n: (b.items || []).length });
+    case "rental": return t("n_cards", { n: (b.items || []).length });
     case "rangechart": return b.title || t("n_rows", { n: (b.items || []).length });
     case "video": return b.title || b.id || t("empty");
     case "table": return t("n_rows", { n: (b.rows || []).length });
@@ -156,6 +157,27 @@ function panelBlock() {
           ${F(t("modules_cta"), inp(`items.${ci}.cta`, it.cta))}
         </div>`).join("") +
         `<div class="btnrow"><button class="btn sm primary" data-act="mod-add">${IC.plus}<span>${esc(t("modules_add"))}</span></button></div>`;
+      break;
+    }
+    case "rental": {
+      const items = b.items || [], opts = b.options || [];
+      body = F(t("rent_steps"), `<textarea data-bf="steps" data-t="lines" rows="3">${esc((b.steps || []).join("\n"))}</textarea>`, t("rent_steps_hint")) +
+        items.map((it, ci) => `<div class="sub"><div class="row nowrap">${it.image ? `<img class="thumb" src="${esc(thumbUrl(it.image.replace("/assets/img/", "")))}" alt="">` : ""}<button class="btn sm ghost" data-act="mod-image" data-ci="${ci}">${esc(it.image ? t("change_image") : t("choose_image"))}</button>${ci > 0 ? `<button class="btn sm ghost" data-act="mod-up" data-ci="${ci}" title="${esc(t("move_up"))}">${IC.up}</button>` : ""}<button class="btn sm danger" data-act="mod-rm" data-ci="${ci}" title="${esc(t("delete"))}">${IC.trash}</button></div>
+          <label class="chk"><input type="checkbox" data-bf="items.${ci}.cover" data-t="bool" ${it.cover ? "checked" : ""}> ${esc(t("rent_cover"))}</label>
+          ${F(t("card_title"), inp(`items.${ci}.title`, it.title))}
+          ${F(t("link_to"), `<div class="row nowrap"><input type="text" data-bf="items.${ci}.href" value="${esc(it.href || "")}" placeholder="${esc(t("no_link"))}"><button class="btn sm ghost" data-act="mod-link" data-ci="${ci}">${esc(t("choose"))}</button></div>`, t("rent_link_hint"))}
+          <div class="row nowrap">${F(t("rent_brand"), inp(`items.${ci}.brand`, it.brand))}${F(t("rent_cat"), inp(`items.${ci}.cat`, it.cat))}</div>
+          ${F(t("card_text"), `<textarea data-bf="items.${ci}.text" rows="2">${esc(it.text || "")}</textarea>`)}
+          ${F(t("modules_bullets"), `<textarea data-bf="items.${ci}.bullets" data-t="lines" rows="4">${esc((it.bullets || []).join("\n"))}</textarea>`, t("modules_bullets_hint"))}
+          <label class="chk"><input type="checkbox" data-bf="items.${ci}.out" data-t="bool" ${it.out ? "checked" : ""}> ${esc(t("rent_out"))}</label>
+          ${opts.length ? F(t("rent_item_opts"), `<textarea data-bf="items.${ci}.options" data-t="lines" rows="2" placeholder="${esc(opts.map((o) => o.key).join("\n"))}">${esc((it.options || []).join("\n"))}</textarea>`, t("rent_item_opts_hint")) : ""}
+          ${F(t("rent_photos"), `<div class="row">${(it.photos || []).map((p, pi) => `<span class="row nowrap"><img class="thumb" src="${esc(thumbUrl(String(p.src || "").replace("/assets/img/", "")))}" alt=""><button class="btn sm danger" data-act="rent-photo-rm" data-ci="${ci}" data-pi="${pi}" title="${esc(t("delete"))}">${IC.trash}</button></span>`).join("")}<button class="btn sm ghost" data-act="rent-photo-add" data-ci="${ci}">${IC.plus}<span>${esc(t("choose_image"))}</span></button></div>`, t("rent_photos_hint"))}
+        </div>`).join("") +
+        `<div class="btnrow"><button class="btn sm primary" data-act="rent-add">${IC.plus}<span>${esc(t("rent_add"))}</span></button></div>` +
+        F(t("rent_options"), opts.map((o, oi) => `<div class="sub"><div class="row nowrap">${inp(`options.${oi}.key`, o.key, `placeholder="${esc(t("rent_opt_key"))}" style="width:7rem"`)}${inp(`options.${oi}.title`, o.title, `placeholder="${esc(t("card_title"))}"`)}<button class="btn sm danger" data-act="rent-opt-rm" data-oi="${oi}" title="${esc(t("delete"))}">${IC.trash}</button></div>
+          ${inp(`options.${oi}.text`, o.text, `placeholder="${esc(t("card_text"))}"`)}
+          <div class="row nowrap"><input type="text" data-bf="options.${oi}.href" value="${esc(o.href || "")}" placeholder="${esc(t("no_link"))}"></div></div>`).join("") +
+          `<div class="btnrow"><button class="btn sm ghost" data-act="rent-opt-add">${IC.plus}<span>${esc(t("rent_opt_add"))}</span></button></div>`, t("rent_options_hint"));
       break;
     }
     case "rangechart": {
@@ -469,6 +491,11 @@ export function bindPanel(el) {
       case "mod-image": { const src = await pickImage(); if (src) { setField(i, `items.${b.dataset.ci}.image`, src); panelHooks.rerender(); } return; }
       case "rc-add": mutate(() => { (blk.items = blk.items || []).push({ label: "", min: "", max: "" }); }); return panelHooks.rerender();
       case "rel-add": mutate(() => { (blk.items = blk.items || []).push({ href: "" }); }); return panelHooks.rerender();
+      case "rent-add": mutate(() => { (blk.items = blk.items || []).push({ title: "", bullets: [] }); }); return panelHooks.rerender();
+      case "rent-opt-add": mutate(() => { (blk.options = blk.options || []).push({ key: "", title: "" }); }); return panelHooks.rerender();
+      case "rent-opt-rm": mutate(() => { blk.options.splice(+b.dataset.oi, 1); }); return panelHooks.rerender();
+      case "rent-photo-add": { const src = await pickImage(); if (src) { mutate(() => { const it = blk.items[+b.dataset.ci]; (it.photos = it.photos || []).push({ src, alt: humanizeFilename(src.split("/").pop()) }); }); panelHooks.rerender(); } return; }
+      case "rent-photo-rm": mutate(() => { blk.items[+b.dataset.ci].photos.splice(+b.dataset.pi, 1); }); return panelHooks.rerender();
       case "mod-link": {
         const path = `items.${b.dataset.ci}.href`;
         const v = await pickLink({ current: getPath(blk, path) || "", allowRemove: true });

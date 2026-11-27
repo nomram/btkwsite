@@ -1,0 +1,165 @@
+#!/usr/bin/env node
+// Builds content/pages/hyrespark.json: the rental fleet page (Hyrespark), a shop-like list of the machines that can be rented.
+//   node tools/hyrespark-page.mjs
+// The page is edited in the CMS afterwards (block "Hyrespark"); running this again overwrites those edits.
+// Each machine points at its product page, which then shows "available to rent" and a rental quote button (render.mjs, rentalIndex).
+// out: true = listed but greyed out (cannot be rented right now). Shown in sv, en, es, no (the product pages of the fleet exist there).
+import fs from "node:fs";
+import path from "node:path";
+
+const ROOT = path.resolve(import.meta.dirname, "..");
+const OUT = path.join(ROOT, "content/pages/hyrespark.json");
+const LANGS = ["sv", "en", "es", "no"];
+const L = (sv, en, es, no) => ({ sv, en, es, no });
+
+const CAT = {
+  attach: L("Borraggregat", "Drilling attachments", "Equipos de perforación", "Boreaggregater"),
+  rig: L("Borriggar", "Drill rigs", "Perforadoras", "Borerigger"),
+  grout: L("Injektering", "Grouting", "Inyección", "Injisering"),
+};
+const DPVH = { sv: "Visar och loggar tryck, flöde och volym (USB).", en: "Shows and logs pressure, flow and volume (USB).", es: "Muestra y registra presión, caudal y volumen (USB).", no: "Viser og logger trykk, strømning og volum (USB)." };
+
+const MACHINES = [
+  {
+    id: "hemh1000-20", title: "TEI HEMH1000-20", brand: "TEI Rock Drills", cat: "attach", href: "/produkter/tei/borrmaster/hemh",
+    image: "/assets/img/hyr-hemh1000-1.webp", cover: true,
+    alt: L("TEI HEMH1000-20 med vinsch, klar för leverans", "TEI HEMH1000-20 with winch, ready for delivery", "TEI HEMH1000-20 con cabrestante, lista para la entrega", "TEI HEMH1000-20 med vinsj, klar for levering"),
+    text: L("Borrmast för grävmaskin, komplett utrustad för stagborrning.", "Excavator drill mast, fully equipped for anchor drilling.", "Mástil de perforación para excavadora, completamente equipado para anclajes.", "Boremast for gravemaskin, komplett utstyrt for stagboring."),
+    bullets: {
+      sv: ["Slaglängd 6 m (längd 7,2 m)", "Grävmaskin över 25 ton", "Topphammare TE1000 med T76-nacke, för stag typ Ischebeck T52, T73 och T103", "Vinsch, centraliserare samt klämma och brytare (265 mm)", "Fäste S60, lätt att byta tack vare bultplatta"],
+      en: ["Stroke 6 m (length 7.2 m)", "Excavator over 25 tonnes", "TE1000 drifter with T76 shank, for anchors such as Ischebeck T52, T73 and T103", "Winch, centralisers, clamp and breaker (265 mm)", "S60 mount, easy to change thanks to a bolt plate"],
+      es: ["Carrera 6 m (longitud 7,2 m)", "Excavadora de más de 25 toneladas", "Martillo TE1000 con culata T76, para anclajes tipo Ischebeck T52, T73 y T103", "Cabrestante, centradores, mordaza y rompedor (265 mm)", "Enganche S60, fácil de cambiar gracias a la placa atornillada"],
+      no: ["Slaglengde 6 m (lengde 7,2 m)", "Gravemaskin over 25 tonn", "Topphammer TE1000 med T76-nakke, for stag type Ischebeck T52, T73 og T103", "Vinsj, sentralisatorer samt klemme og bryter (265 mm)", "Feste S60, lett å bytte takket være boltplate"],
+    },
+    photos: [
+      ["/assets/img/hyr-hemh1000-1.webp", L("TEI HEMH1000-20 med vinsch och borrstänger", "TEI HEMH1000-20 with winch and drill rods", "TEI HEMH1000-20 con cabrestante y barras", "TEI HEMH1000-20 med vinsj og borestenger")],
+      ["/assets/img/hyr-hemh1000-2.webp", L("HEMH1000-20 hopfälld på pallar", "HEMH1000-20 folded on pallets", "HEMH1000-20 plegada sobre palés", "HEMH1000-20 sammenfoldet på paller")],
+      ["/assets/img/hyr-hemh1000-3.webp", L("Topphammaren TE1000 och fästet", "The TE1000 drifter and the mount", "El martillo TE1000 y el enganche", "Topphammeren TE1000 og festet")],
+      ["/assets/img/hyr-hemh1000-4.webp", L("Fäste och styrenhet på HEMH1000-20", "Mount and control unit of the HEMH1000-20", "Enganche y unidad de control de la HEMH1000-20", "Feste og styreenhet på HEMH1000-20")],
+    ],
+  },
+  {
+    id: "mr-6-pn", title: "Marini MR 6 PN", brand: "Marini", cat: "rig", href: "/produkter/marini/släntstabilisering/mr-6-pn",
+    image: "/assets/img/marini-mr-mr-6-pn-tile.webp",
+    text: L("Kompakt, portabel pneumatisk mast för trånga utrymmen. Färdigmonterad för 1 m-stag, kan kortas för 0,5 m-stag.", "Compact, portable pneumatic mast for tight spaces. Set up for 1 m anchors, can be shortened for 0.5 m anchors.", "Mástil neumático compacto y portátil para espacios reducidos. Montado para anclajes de 1 m, se puede acortar para 0,5 m.", "Kompakt, portabel pneumatisk mast for trange rom. Ferdigmontert for 1 m stag, kan kortes for 0,5 m stag."),
+    bullets: {
+      sv: ["Slaglängd upp till 1,2 m", "Stänger T40 (kan justeras till T30 och T52)", "Topphammare MA 100S 3R (pneumatisk)", "Luftbehov minst 10 000 l/min vid 6 bar", "Vikt cirka 300 kg"],
+      en: ["Stroke up to 1.2 m", "T40 rods (can be adjusted to T30 and T52)", "MA 100S 3R drifter (pneumatic)", "Air demand at least 10,000 l/min at 6 bar", "Weight about 300 kg"],
+      es: ["Carrera hasta 1,2 m", "Barras T40 (ajustable a T30 y T52)", "Martillo MA 100S 3R (neumático)", "Aire necesario mínimo 10 000 l/min a 6 bar", "Peso aprox. 300 kg"],
+      no: ["Slaglengde opptil 1,2 m", "Stenger T40 (kan justeres til T30 og T52)", "Topphammer MA 100S 3R (pneumatisk)", "Luftbehov minst 10 000 l/min ved 6 bar", "Vekt cirka 300 kg"],
+    },
+    photos: [
+      ["/assets/img/hyr-mr6pn-1.webp", L("Marini MR 6 PN i ett källarplan", "Marini MR 6 PN in a basement", "Marini MR 6 PN en un sótano", "Marini MR 6 PN i en kjeller")],
+      ["/assets/img/hyr-mr6pn-2.webp", L("Marini MR 6 PN på hjul", "Marini MR 6 PN on wheels", "Marini MR 6 PN sobre ruedas", "Marini MR 6 PN på hjul")],
+    ],
+  },
+  {
+    id: "vd100", title: "VibroDrill VD100", brand: "Terra Infrastructure", cat: "attach", href: "/produkter/terra-infrastructure/vibrodrill/vibrodrill-vd100",
+    image: "/assets/img/terra-infrastructure-vibrodrill-vibrodrill-vd100.webp",
+    text: L("Rotation med kontrollerad vibration för mikropålar och självborrande stag i svåra jordlager.", "Rotation with controlled vibration for micropiles and self-drilling anchors in difficult soils.", "Rotación con vibración controlada para micropilotes y anclajes autoperforantes en suelos difíciles.", "Rotasjon med kontrollert vibrasjon for mikropeler og selvborende stag i vanskelige jordlag."),
+    bullets: {
+      sv: ["Borrdjup ner till 80 m", "Vridmoment max 15 kNm", "Dragkraft upp till 100 kN", "Bärare cirka 12-16 ton", "Vikt 1 050 kg"],
+      en: ["Drilling depth down to 80 m", "Torque max 15 kNm", "Pull force up to 100 kN", "Carrier about 12-16 tonnes", "Weight 1,050 kg"],
+      es: ["Profundidad hasta 80 m", "Par máx. 15 kNm", "Fuerza de tiro hasta 100 kN", "Portador aprox. 12-16 toneladas", "Peso 1 050 kg"],
+      no: ["Boredybde ned til 80 m", "Dreiemoment maks 15 kNm", "Trekkraft opptil 100 kN", "Bærer cirka 12-16 tonn", "Vekt 1 050 kg"],
+    },
+  },
+  {
+    id: "ic-310", title: "HÄNY IC 310", brand: "HÄNY", cat: "grout", href: "/produkter/haeny/manuella-pumpar/ic-310-ic-311", options: ["dpvh"],
+    image: "/assets/img/haeny-ic310-tile.webp",
+    text: L("Kompakt injekteringsanläggning för cementslurry: mixer, omrörare och pump i en enhet.", "Compact grouting plant for cement grout: mixer, agitator and pump in one unit.", "Planta de inyección compacta para lechada de cemento: mezclador, agitador y bomba en una unidad.", "Kompakt injiseringsanlegg for sementslurry: mikser, rører og pumpe i én enhet."),
+    bullets: {
+      sv: ["Pumpkapacitet 1,5 m³/h", "Maxtryck 100 bar", "Mixer 100 l, omrörare 150 l", "Vikt 625 kg"],
+      en: ["Pump capacity 1.5 m³/h", "Max pressure 100 bar", "Mixer 100 l, agitator 150 l", "Weight 625 kg"],
+      es: ["Caudal 1,5 m³/h", "Presión máx. 100 bar", "Mezclador 100 l, agitador 150 l", "Peso 625 kg"],
+      no: ["Pumpekapasitet 1,5 m³/t", "Maks trykk 100 bar", "Mikser 100 l, rører 150 l", "Vekt 625 kg"],
+    },
+  },
+  {
+    id: "ic-650-712", title: "HÄNY IC 650/712", brand: "HÄNY", cat: "grout", href: "/produkter/haeny/manuella-pumpar/ic-650-712v", options: ["dpvh"],
+    image: "/assets/img/haeny-ic650-712v-tile.webp",
+    text: L("Större kompakt injekteringsanläggning för stag, jordspik och berginjektering.", "Larger compact grouting plant for anchors, soil nails and rock grouting.", "Planta de inyección compacta más grande para anclajes, bulones e inyección en roca.", "Større kompakt injiseringsanlegg for stag, jordspiker og fjellinjisering."),
+    bullets: {
+      sv: ["Pumpkapacitet 4,9 m³/h", "Maxtryck 88 bar", "Mixer 260 l, omrörare 350 l", "Vikt 1 130 kg"],
+      en: ["Pump capacity 4.9 m³/h", "Max pressure 88 bar", "Mixer 260 l, agitator 350 l", "Weight 1,130 kg"],
+      es: ["Caudal 4,9 m³/h", "Presión máx. 88 bar", "Mezclador 260 l, agitador 350 l", "Peso 1 130 kg"],
+      no: ["Pumpekapasitet 4,9 m³/t", "Maks trykk 88 bar", "Mikser 260 l, rører 350 l", "Vekt 1 130 kg"],
+    },
+  },
+  {
+    id: "ic-325", title: "HÄNY IC 325", brand: "HÄNY", cat: "grout", href: "/produkter/haeny/manuella-pumpar/ic-325-ic325-ccp", options: ["dpvh"],
+    image: "/assets/img/haeny-ic325-tile.webp",
+    text: L("Som IC 310 men med dubbelpump för ett jämnare flöde.", "Like the IC 310 but with a double pump for a smoother flow.", "Como la IC 310 pero con bomba doble para un caudal más uniforme.", "Som IC 310, men med dobbelpumpe for jevnere strømning."),
+    bullets: {
+      sv: ["Pumpkapacitet 2 m³/h", "Maxtryck 100 bar", "Två kolvar (dubbelpump)", "Vikt 700 kg"],
+      en: ["Pump capacity 2 m³/h", "Max pressure 100 bar", "Two pistons (double pump)", "Weight 700 kg"],
+      es: ["Caudal 2 m³/h", "Presión máx. 100 bar", "Dos pistones (bomba doble)", "Peso 700 kg"],
+      no: ["Pumpekapasitet 2 m³/t", "Maks trykk 100 bar", "To stempler (dobbelpumpe)", "Vekt 700 kg"],
+    },
+  },
+  {
+    id: "mr-c-30", title: "Marini MR-C 30", brand: "Marini", cat: "rig", href: "/produkter/marini/crawlers/mr-c-30", out: true,
+    image: "/assets/img/marini-mrc-mr-c-30-tile.webp",
+    text: L("Hydraulisk larvrigg, anpassad för inomhusarbete.", "Hydraulic crawler rig, built for indoor work.", "Perforadora hidráulica sobre orugas, pensada para trabajos en interiores.", "Hydraulisk beltebor, tilpasset innendørsarbeid."),
+    bullets: {
+      sv: ["Motoreffekt 33-55 kW", "Matningskraft 35 kN", "Slaglängd 1 200-2 200 mm", "Vikt 3 000 + 2 000 kg"],
+      en: ["Engine power 33-55 kW", "Feed force 35 kN", "Stroke 1,200-2,200 mm", "Weight 3,000 + 2,000 kg"],
+      es: ["Potencia 33-55 kW", "Fuerza de avance 35 kN", "Carrera 1 200-2 200 mm", "Peso 3 000 + 2 000 kg"],
+      no: ["Motoreffekt 33-55 kW", "Matekraft 35 kN", "Slaglengde 1 200-2 200 mm", "Vekt 3 000 + 2 000 kg"],
+    },
+  },
+];
+
+const PAGE = {
+  sv: {
+    title: "Hyrespark", h1: "Hyrespark",
+    lead: "Hyr borraggregat, borriggar och injekteringsanläggningar. Välj maskiner, lägg dem i din förfrågan och få ett hyrespris.",
+    description: "Hyr borrmast för grävmaskin, borriggar och injekteringsanläggningar från TEI, Marini, HÄNY och Terra. Lägg maskinerna i en förfrågan och få hyrespris.",
+    steps: ["Välj maskiner och tillval", "Ange startdatum, hyresperiod och ort", "Vi återkommer med hyrespris och när maskinen är ledig"],
+  },
+  en: {
+    title: "Rental fleet", h1: "Rental fleet",
+    lead: "Rent drilling attachments, drill rigs and grouting plants. Pick machines, add them to your request and get a rental price.",
+    description: "Rent an excavator drill mast, drill rigs and grouting plants from TEI, Marini, HÄNY and Terra. Add the machines to one request and get a rental price.",
+    steps: ["Pick machines and options", "Give a start date, rental period and place", "We come back with the rental price and when the machine is free"],
+  },
+  es: {
+    title: "Parque de alquiler", h1: "Parque de alquiler", navShort: "Alquiler",
+    lead: "Alquile equipos de perforación, perforadoras y plantas de inyección. Elija las máquinas, añádalas a su solicitud y reciba un precio de alquiler.",
+    description: "Alquile un mástil de perforación para excavadora, perforadoras y plantas de inyección de TEI, Marini, HÄNY y Terra. Una sola solicitud, precio de alquiler.",
+    steps: ["Elija máquinas y opciones", "Indique fecha de inicio, periodo y lugar", "Le respondemos con el precio y cuándo está libre la máquina"],
+  },
+  no: {
+    title: "Utleiepark", h1: "Utleiepark",
+    lead: "Lei boreaggregater, borerigger og injiseringsanlegg. Velg maskiner, legg dem i forespørselen og få en leiepris.",
+    description: "Lei boremast for gravemaskin, borerigger og injiseringsanlegg fra TEI, Marini, HÄNY og Terra. Legg maskinene i én forespørsel og få leiepris.",
+    steps: ["Velg maskiner og tilvalg", "Oppgi startdato, leieperiode og sted", "Vi kommer tilbake med leiepris og når maskinen er ledig"],
+  },
+};
+
+const i18n = {};
+for (const l of LANGS) {
+  const p = PAGE[l];
+  const items = MACHINES.map((m) => {
+    const it = { id: m.id, title: m.title, brand: m.brand, cat: CAT[m.cat][l], href: m.href, image: m.image };
+    if (m.cover) it.cover = true;
+    if (m.alt) it.alt = m.alt[l];
+    it.text = m.text[l];
+    it.bullets = m.bullets[l];
+    if (m.out) it.out = true;
+    if (m.options) it.options = m.options;
+    if (m.photos) it.photos = m.photos.map(([src, alt]) => ({ src, alt: alt[l] }));
+    return it;
+  });
+  i18n[l] = {
+    title: p.title, h1: p.h1, ...(p.navShort ? { navShort: p.navShort } : {}), lead: p.lead, description: p.description,
+    blocks: [{ type: "rental", steps: p.steps, items, options: [{ key: "dpvh", title: "DPV-H dataloggare".replace("dataloggare", { sv: "dataloggare", en: "data logger", es: "registrador de datos", no: "datalogger" }[l]), text: DPVH[l], href: "/produkter/haeny/manuella-pumpar/dataloggare-dpv" }] }],
+  };
+}
+
+const page = {
+  path: "/hyrespark", updated: new Date().toISOString().slice(0, 10), template: "page", order: 2.5, published: true,
+  hideIn: ["lt", "lv", "et", "ru"], i18n,
+};
+fs.writeFileSync(OUT, JSON.stringify(page, null, 2) + "\n");
+console.log("wrote", path.relative(ROOT, OUT));

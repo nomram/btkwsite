@@ -2942,3 +2942,157 @@ body::before { display: none; }
 .m3d__scope { position: absolute; inset: 0; display: none; pointer-events: none; background: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)) center / 100% 1px no-repeat, linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)) center / 1px 100% no-repeat, radial-gradient(circle closest-side, transparent 0 95%, rgba(0, 0, 0, .55) 97%, #000 100%); }
 .m3d__stage.is-scoped .m3d__scope { display: block; }
 .m3d__stage.is-scoped .m3d__cross { display: none !important; }
+/* r48: Hyrespark (rental fleet): filters left, machine cards, a request list that slides in from the right */
+.rent { --rent-ok: #1d7a3a; padding-block: .5rem 2rem; }
+.rent__steps { list-style: none; margin: 0 0 1.6rem; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0; border: 1px solid var(--line); }
+.rent__steps li { display: flex; align-items: center; gap: .8rem; padding: .85rem 1.1rem; font-size: .9rem; font-weight: 500; line-height: 1.4; }
+.rent__steps li + li { border-left: 1px solid var(--line); }
+.rent__stepn { flex: none; display: grid; place-items: center; width: 1.9rem; height: 1.9rem; border-radius: 50%; background: #fff1e0; color: var(--dark); font-weight: 700; font-size: .85rem; box-shadow: inset 0 0 0 2px var(--primary); }
+.rent__layout { display: grid; grid-template-columns: 15rem minmax(0, 1fr); gap: 2rem; align-items: start; }
+.rent__side { position: sticky; top: calc(var(--header-h) + 1rem); }
+.rent__filters > summary { list-style: none; cursor: pointer; font-weight: 700; font-size: .95rem; padding-bottom: .6rem; border-bottom: 2px solid var(--dark); }
+.rent__filters > summary::-webkit-details-marker { display: none; }
+.rent__fs { border: 0; margin: 0; padding: .9rem 0 .6rem; border-bottom: 1px solid var(--line); }
+.rent__fs legend { padding: 0; font-weight: 700; font-size: .8rem; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); margin-bottom: .4rem; float: left; width: 100%; }
+.rent__fs legend + * { clear: both; }
+.rent__chk { display: flex; align-items: flex-start; gap: .55rem; padding: .28rem 0; font-size: .9rem; line-height: 1.35; cursor: pointer; }
+.rent__chk input { flex: none; width: 1.05rem; height: 1.05rem; margin: .1rem 0 0; accent-color: var(--primary); }
+.rent__chk span:first-of-type { flex: 1; }
+.rent__n { color: var(--muted); font-size: .8rem; font-variant-numeric: tabular-nums; }
+.rent__reset { margin-top: .8rem; font-size: .85rem; }
+.rent__bar { display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; padding-bottom: .8rem; margin-bottom: 1.1rem; border-bottom: 1px solid var(--line); }
+.rent__count { margin: 0; font-weight: 600; font-size: .95rem; margin-right: auto; }
+.rent__sort { display: inline-flex; align-items: center; gap: .5rem; font-size: .85rem; color: var(--muted); }
+.rent__sort select, .rent__form select, .rent__form input { font: inherit; font-size: .9rem; padding: .5rem .6rem; border: 1px solid #cfc9c1; border-radius: var(--radius); background: #fff; color: var(--text); }
+.rent__sort[hidden], .rent__open[hidden] { display: none; }
+.rent__open { position: relative; display: inline-flex; align-items: center; gap: .5rem; padding: .5rem .9rem; font: 600 .85rem/1.2 var(--font); color: var(--dark); background: #fff; border: 1px solid var(--line); border-radius: var(--radius); cursor: pointer; }
+.rent__open:hover { border-color: var(--primary); }
+.rent__badge { display: inline-grid; place-items: center; min-width: 1.35rem; height: 1.35rem; padding: 0 .3rem; border-radius: 999px; background: #e9e6e2; color: var(--dark); font-size: .75rem; font-weight: 700; font-variant-numeric: tabular-nums; }
+.rent.has-items .rent__badge { background: var(--primary); color: #fff; }
+.rent__grid { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(15.5rem, 1fr)); gap: 1.25rem; }
+.rcard { position: relative; display: flex; flex-direction: column; background: #fff; border: 1px solid var(--line); border-radius: var(--radius); transition: box-shadow .2s, border-color .2s; scroll-margin-top: calc(var(--header-h) + 1rem); }
+.rcard:hover { box-shadow: var(--shadow); border-color: #d6d0c8; }
+.rcard[hidden] { display: none; }
+.rcard:target { border-color: var(--primary); box-shadow: 0 0 0 2px var(--primary); }
+.rcard__media { position: relative; aspect-ratio: 1; background: var(--tile-grad); overflow: hidden; border-bottom: 1px solid var(--line); }
+.rcard__media a { display: block; height: 100%; }
+.rcard__img { width: 100%; height: 100%; object-fit: contain; transition: transform .35s ease; }
+.rcard__media--cover .rcard__img { object-fit: cover; }
+.rcard:hover .rcard__img { transform: scale(1.03); }
+.rcard__badge { position: absolute; left: 0; top: .8rem; padding: .28rem .65rem .28rem .55rem; background: var(--primary); color: var(--dark); font-size: .72rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; }
+.rcard__pics { position: absolute; right: .6rem; bottom: .6rem; display: inline-flex; align-items: center; gap: .4rem; padding: .35rem .65rem; font: 600 .78rem/1.2 var(--font); color: #fff; background: rgba(35, 31, 32, .78); border: 0; border-radius: var(--radius); cursor: pointer; }
+.rcard__pics:hover { background: var(--dark); }
+.rcard__pics[hidden] { display: none; }
+.rcard__body { display: flex; flex-direction: column; flex: 1; padding: 1rem 1.1rem 1.15rem; }
+.rcard__kicker { margin: 0 0 .2rem; font-size: .74rem; font-weight: 600; letter-spacing: .04em; color: var(--muted); }
+.rcard__title { margin: 0 0 .45rem; font-size: 1.12rem; line-height: 1.3; font-weight: 700; }
+.rcard__title a { text-decoration: none; }
+.rcard__title a:hover { text-decoration: underline; text-decoration-color: var(--primary); }
+.rcard__text { margin: 0 0 .6rem; font-size: .86rem; line-height: 1.5; color: var(--muted); }
+.rcard__specs { list-style: none; margin: 0 0 .8rem; padding: 0; font-size: .84rem; line-height: 1.45; }
+.rcard__specs li { position: relative; padding: .18rem 0 .18rem 1rem; }
+.rcard__specs li::before { content: ""; position: absolute; left: 0; top: .72em; width: .42rem; height: 2px; background: var(--primary); }
+.rcard__status { display: flex; align-items: center; gap: .45rem; margin: auto 0 .7rem; padding-top: .3rem; font-size: .86rem; font-weight: 600; }
+.rcard__status span { width: .55rem; height: .55rem; border-radius: 50%; background: currentColor; }
+.rcard__status--ok { color: var(--rent-ok); }
+.rcard__status--out { color: var(--muted); }
+.rcard__opt { display: flex; align-items: flex-start; gap: .55rem; margin: 0 0 .8rem; padding: .6rem .7rem; font-size: .84rem; line-height: 1.4; background: var(--surface); border-radius: var(--radius); cursor: pointer; }
+.rcard__opt input { flex: none; width: 1.05rem; height: 1.05rem; margin: .1rem 0 0; accent-color: var(--primary); }
+.rcard__opt small { display: block; color: var(--muted); font-size: .78rem; margin-top: .1rem; }
+.rcard__optk { font-weight: 700; }
+.rcard__acts { display: grid; gap: .5rem; }
+.rcard__acts .btn { width: 100%; }
+.rcard__add[hidden] { display: none; }
+.rcard__add-d { display: none; align-items: center; gap: .4rem; }
+.rcard.is-in .rcard__add { background: var(--dark); border-color: var(--dark); color: #fff; box-shadow: inset 4px 0 0 var(--primary); }
+.rcard.is-in .rcard__add-t { display: none; }
+.rcard.is-in .rcard__add-d { display: inline-flex; }
+.rcard__add.is-pop { animation: rentpop .35s ease; }
+@keyframes rentpop { 40% { transform: scale(1.04); } }
+.rcard.is-in { border-color: var(--primary); }
+.rcard__link { display: inline-flex; align-items: center; gap: .35rem; margin-top: .75rem; font-size: .84rem; font-weight: 600; text-decoration: none; align-self: flex-start; }
+.rcard__link:hover { text-decoration: underline; text-decoration-color: var(--primary); }
+.rcard__na { margin: 0; padding: .55rem .8rem; font-size: .84rem; font-weight: 600; text-align: center; color: var(--muted); background: #f1efec; border-radius: var(--radius); }
+/* a machine that cannot be rented right now: still listed, greyed out */
+.rcard.is-out { background: #fbfaf9; }
+.rcard.is-out .rcard__img { filter: grayscale(1); opacity: .5; }
+.rcard.is-out .rcard__badge { background: #cfcac4; }
+.rcard.is-out .rcard__title, .rcard.is-out .rcard__specs, .rcard.is-out .rcard__text { color: #8a837e; }
+.rcard.is-out .rcard__specs li::before { background: #cfcac4; }
+.rcard.is-out:hover { box-shadow: none; }
+.rcard.is-out:hover .rcard__img { transform: none; }
+.rent__none { margin: 1.5rem 0; color: var(--muted); }
+/* the request list */
+.rent__cart { position: fixed; top: 0; right: 0; bottom: 0; z-index: 120; width: min(26rem, 100%); background: #fff; box-shadow: -12px 0 40px rgba(35, 31, 32, .18); transform: translateX(100%); transition: transform .2s ease; overflow-y: auto; outline: none; }
+.rent__cart.is-open { transform: none; }
+.rent__cart[hidden] { display: none; }
+.rent__cart-in { padding: 1.3rem 1.4rem 2rem; }
+.rent__cart-head { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding-bottom: .8rem; margin-bottom: .6rem; border-bottom: 2px solid var(--dark); }
+.rent__cart-head h2 { margin: 0; font-size: 1.15rem; }
+.rent__lines { list-style: none; margin: 0 0 1rem; padding: 0; }
+.rent__line { display: flex; align-items: center; gap: .8rem; padding: .7rem 0; border-bottom: 1px solid var(--line); }
+.rent__line-img { flex: none; width: 3.6rem; height: 3.6rem; background: var(--tile-grad); border: 1px solid var(--line); }
+.rent__line-img img { width: 100%; height: 100%; object-fit: contain; }
+.rent__line-t { flex: 1; min-width: 0; line-height: 1.35; }
+.rent__line-t strong { display: block; font-size: .92rem; }
+.rent__line-t small { color: var(--muted); font-size: .8rem; }
+.rent__line-x { flex: none; background: none; border: 0; padding: .3rem; font: 500 .8rem/1 var(--font); color: var(--muted); text-decoration: underline; text-underline-offset: .2em; cursor: pointer; }
+.rent__line-x:hover { color: var(--dark); text-decoration-color: var(--primary); }
+.rent__empty { color: var(--muted); font-size: .92rem; }
+.rent__form .qf__f { margin-bottom: .8rem; }
+.rent__form label { display: block; font-weight: 600; font-size: .85rem; margin-bottom: .25rem; }
+.rent__form input, .rent__form select { width: 100%; }
+.rent__send { width: 100%; margin-top: .4rem; }
+.rent__send[hidden] { display: none; }
+.rent__fine { margin: .7rem 0 0; font-size: .78rem; color: var(--muted); }
+.rent__x { flex: none; }
+.rent__dock { position: fixed; left: 50%; bottom: 1rem; z-index: 110; transform: translateX(-50%); display: flex; align-items: center; gap: 1rem; padding: .55rem .6rem .55rem 1rem; background: var(--dark); color: #fff; border-radius: var(--radius); box-shadow: 0 8px 28px rgba(35, 31, 32, .28); font-size: .9rem; white-space: nowrap; }
+.rent__dock[hidden] { display: none; }
+.rent__dock-t { display: inline-flex; align-items: center; gap: .45rem; }
+.rent__dock .btn { background: #fff; border-color: #fff; }
+.rent__dock .btn:hover { background: #ffe0b8; border-color: #ffe0b8; }
+/* picture viewer */
+.rent__dlg { width: min(60rem, calc(100% - 2rem)); max-height: calc(100% - 2rem); padding: 0; border: 0; border-radius: var(--radius); background: #fff; }
+.rent__dlg::backdrop { background: rgba(20, 18, 17, .72); }
+.rent__dlg-in { position: relative; padding: 1rem; }
+.rent__dlg .rent__x { position: absolute; right: .6rem; top: .6rem; z-index: 2; background: #fff; }
+.rent__dlg-stage { display: grid; place-items: center; height: min(70vh, 44rem); background: #f4f2ef; }
+.rent__dlg-stage img { max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain; }
+.rent__dlg-thumbs { display: flex; gap: .5rem; margin-top: .7rem; overflow-x: auto; }
+.rent__dlg-thumb { flex: none; width: 4.5rem; height: 4.5rem; padding: 0; border: 2px solid transparent; background: #f4f2ef; cursor: pointer; }
+.rent__dlg-thumb[aria-current="true"] { border-color: var(--primary); }
+.rent__dlg-thumb img { width: 100%; height: 100%; object-fit: cover; }
+@media (max-width: 899px) {
+  .rent__layout { grid-template-columns: 1fr; gap: 1rem; }
+  .rent__side { position: static; }
+  .rent__filters > summary { display: inline-flex; align-items: center; gap: .5rem; padding: .55rem .9rem; border: 1px solid var(--line); border-radius: var(--radius); font-size: .88rem; }
+  .rent__filters[open] > summary { border-color: var(--dark); }
+  .rent__steps { grid-template-columns: 1fr; }
+  .rent__steps li + li { border-left: 0; border-top: 1px solid var(--line); }
+  .rent__grid { grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr)); gap: 1rem; }
+}
+@media (max-width: 520px) { .rent__open span:not(.rent__badge) { display: none; } .rent__dock { left: 1rem; right: 1rem; transform: none; justify-content: space-between; } }
+/* product page: this machine is in the rental fleet */
+.rentpill { display: inline-flex; align-items: center; gap: .45rem; margin-left: auto; padding: .3rem .7rem; font-size: .8rem; font-weight: 600; color: #1d7a3a; text-decoration: none; border: 1px solid currentColor; border-radius: var(--radius); white-space: nowrap; }
+.rentpill span { width: .5rem; height: .5rem; border-radius: 50%; background: currentColor; }
+.rentpill:hover { background: #eef7f0; }
+.rentpill--out { color: var(--muted); }
+.rentpill--out:hover { background: var(--surface); }
+.crumbs .rentpill + .crumbs__logo, .crumbs .rentpill + .crumbs__brand { margin-left: 0; }
+.cta__btns { display: flex; gap: .7rem; flex-wrap: wrap; }
+/* the quote form when it is a rental request */
+.qf__rent { margin: 0 0 1rem; padding: .8rem 1rem; font-size: .9rem; line-height: 1.5; background: #fff7ee; border-left: 4px solid var(--primary); }
+.qf__rent[hidden] { display: none; }
+.qf__rent-tag { display: inline-block; margin-right: .35rem; padding: .1rem .45rem; font-size: .7rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; background: var(--primary); color: var(--dark); vertical-align: .1em; }
+.cta .btn--ghost-light { background: transparent; border-color: var(--primary); box-shadow: none; }
+.cta .btn--ghost-light:hover { background: var(--primary); border-color: var(--primary); }
+/* r48: round dots in the rental fleet (status dots, step numbers, the count on the request button) */
+.rcard__status span, .rentpill span, .rent__stepn { border-radius: 50% !important; }
+.rent__badge { border-radius: 999px !important; }
+.crumbs .rentpill, .crumbs .rentpill span { color: #1d7a3a; }
+.crumbs .rentpill--out, .crumbs .rentpill--out span { color: var(--muted); }
+.rent__dlg-stage { overflow: hidden; }
+.rent__dlg-stage img { width: 100%; height: 100%; max-width: none; max-height: none; object-fit: contain; }
+.rent__dlg-stage { position: relative; display: block; }
+.rent__dlg-stage img { position: absolute; inset: 0; }
+@media (max-width: 899px) { .rent__steps li { padding: .55rem .8rem; font-size: .84rem; } .rent__stepn { width: 1.6rem; height: 1.6rem; font-size: .78rem; } }
