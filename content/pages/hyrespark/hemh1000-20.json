@@ -1,0 +1,53 @@
+{
+  "path": "/hyrespark/hemh1000-20",
+  "updated": "2026-11-27",
+  "template": "page",
+  "order": 1,
+  "published": true,
+  "i18n": {
+    "sv": {
+      "title": "TEI HEMH1000-20",
+      "h1": "TEI HEMH1000-20",
+      "description": "Borrmast för grävmaskin, komplett utrustad för stagborrning. Slaglängd 6 m (längd 7,2 m), Grävmaskin över 25 ton, Topphammare TE1000 med T76-nacke.",
+      "blocks": [
+        {
+          "type": "rentitem",
+          "id": "hemh1000-20"
+        }
+      ]
+    },
+    "en": {
+      "title": "TEI HEMH1000-20",
+      "h1": "TEI HEMH1000-20",
+      "description": "Excavator drill mast, fully equipped for anchor drilling. Stroke 6 m (length 7.2 m), Excavator over 25 tonnes, TE1000 drifter with T76 shank, for.",
+      "blocks": [
+        {
+          "type": "rentitem",
+          "id": "hemh1000-20"
+        }
+      ]
+    },
+    "es": {
+      "title": "TEI HEMH1000-20",
+      "h1": "TEI HEMH1000-20",
+      "description": "Mástil de perforación para excavadora, completamente equipado para anclajes. Carrera 6 m (longitud 7,2 m), Excavadora de más de 25 toneladas, Martillo.",
+      "blocks": [
+        {
+          "type": "rentitem",
+          "id": "hemh1000-20"
+        }
+      ]
+    },
+    "no": {
+      "title": "TEI HEMH1000-20",
+      "h1": "TEI HEMH1000-20",
+      "description": "Boremast for gravemaskin, komplett utstyrt for stagboring. Slaglengde 6 m (lengde 7,2 m), Gravemaskin over 25 tonn, Topphammer TE1000 med T76-nakke.",
+      "blocks": [
+        {
+          "type": "rentitem",
+          "id": "hemh1000-20"
+        }
+      ]
+    }
+  }
+}

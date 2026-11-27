@@ -1,0 +1,53 @@
+{
+  "path": "/hyrespark/ic-310",
+  "updated": "2026-11-27",
+  "template": "page",
+  "order": 4,
+  "published": true,
+  "i18n": {
+    "sv": {
+      "title": "HÄNY IC 310",
+      "h1": "HÄNY IC 310",
+      "description": "Kompakt injekteringsanläggning för cementslurry: mixer, omrörare och pump i en enhet. Pumpkapacitet 1,5 m³/h, Maxtryck 100 bar, Mixer 100 l, omrörare 150 l.",
+      "blocks": [
+        {
+          "type": "rentitem",
+          "id": "ic-310"
+        }
+      ]
+    },
+    "en": {
+      "title": "HÄNY IC 310",
+      "h1": "HÄNY IC 310",
+      "description": "Compact grouting plant for cement grout: mixer, agitator and pump in one unit. Pump capacity 1.5 m³/h, Max pressure 100 bar, Mixer 100 l, agitator 150 l.",
+      "blocks": [
+        {
+          "type": "rentitem",
+          "id": "ic-310"
+        }
+      ]
+    },
+    "es": {
+      "title": "HÄNY IC 310",
+      "h1": "HÄNY IC 310",
+      "description": "Planta de inyección compacta para lechada de cemento: mezclador, agitador y bomba en una unidad. Caudal 1,5 m³/h, Presión máx. 100 bar, Mezclador 100.",
+      "blocks": [
+        {
+          "type": "rentitem",
+          "id": "ic-310"
+        }
+      ]
+    },
+    "no": {
+      "title": "HÄNY IC 310",
+      "h1": "HÄNY IC 310",
+      "description": "Kompakt injiseringsanlegg for sementslurry: mikser, rører og pumpe i én enhet. Pumpekapasitet 1,5 m³/t, Maks trykk 100 bar, Mikser 100 l, rører 150 l.",
+      "blocks": [
+        {
+          "type": "rentitem",
+          "id": "ic-310"
+        }
+      ]
+    }
+  }
+}

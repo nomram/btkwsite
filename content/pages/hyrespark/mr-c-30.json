@@ -1,0 +1,53 @@
+{
+  "path": "/hyrespark/mr-c-30",
+  "updated": "2026-11-27",
+  "template": "page",
+  "order": 7,
+  "published": true,
+  "i18n": {
+    "sv": {
+      "title": "Marini MR-C 30",
+      "h1": "Marini MR-C 30",
+      "description": "Hydraulisk larvrigg, anpassad för inomhusarbete. Motoreffekt 33-55 kW, Matningskraft 35 kN, Slaglängd 1 200-2 200 mm.",
+      "blocks": [
+        {
+          "type": "rentitem",
+          "id": "mr-c-30"
+        }
+      ]
+    },
+    "en": {
+      "title": "Marini MR-C 30",
+      "h1": "Marini MR-C 30",
+      "description": "Hydraulic crawler rig, built for indoor work. Engine power 33-55 kW, Feed force 35 kN, Stroke 1,200-2,200 mm.",
+      "blocks": [
+        {
+          "type": "rentitem",
+          "id": "mr-c-30"
+        }
+      ]
+    },
+    "es": {
+      "title": "Marini MR-C 30",
+      "h1": "Marini MR-C 30",
+      "description": "Perforadora hidráulica sobre orugas, pensada para trabajos en interiores. Potencia 33-55 kW, Fuerza de avance 35 kN, Carrera 1 200-2 200 mm.",
+      "blocks": [
+        {
+          "type": "rentitem",
+          "id": "mr-c-30"
+        }
+      ]
+    },
+    "no": {
+      "title": "Marini MR-C 30",
+      "h1": "Marini MR-C 30",
+      "description": "Hydraulisk beltebor, tilpasset innendørsarbeid. Motoreffekt 33-55 kW, Matekraft 35 kN, Slaglengde 1 200-2 200 mm.",
+      "blocks": [
+        {
+          "type": "rentitem",
+          "id": "mr-c-30"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "path": "/hyrespark/ic-325",
+  "updated": "2026-11-27",
+  "template": "page",
+  "order": 6,
+  "published": true,
+  "i18n": {
+    "sv": {
+      "title": "HÄNY IC 325",
+      "h1": "HÄNY IC 325",
+      "description": "Som IC 310 men med dubbelpump för ett jämnare flöde. Pumpkapacitet 2 m³/h, Maxtryck 100 bar, Två kolvar (dubbelpump).",
+      "blocks": [
+        {
+          "type": "rentitem",
+          "id": "ic-325"
+        }
+      ]
+    },
+    "en": {
+      "title": "HÄNY IC 325",
+      "h1": "HÄNY IC 325",
+      "description": "Like the IC 310 but with a double pump for a smoother flow. Pump capacity 2 m³/h, Max pressure 100 bar, Two pistons (double pump).",
+      "blocks": [
+        {
+          "type": "rentitem",
+          "id": "ic-325"
+        }
+      ]
+    },
+    "es": {
+      "title": "HÄNY IC 325",
+      "h1": "HÄNY IC 325",
+      "description": "Como la IC 310 pero con bomba doble para un caudal más uniforme. Caudal 2 m³/h, Presión máx. 100 bar, Dos pistones (bomba doble).",
+      "blocks": [
+        {
+          "type": "rentitem",
+          "id": "ic-325"
+        }
+      ]
+    },
+    "no": {
+      "title": "HÄNY IC 325",
+      "h1": "HÄNY IC 325",
+      "description": "Som IC 310, men med dobbelpumpe for jevnere strømning. Pumpekapasitet 2 m³/t, Maks trykk 100 bar, To stempler (dobbelpumpe).",
+      "blocks": [
+        {
+          "type": "rentitem",
+          "id": "ic-325"
+        }
+      ]
+    }
+  }
+}

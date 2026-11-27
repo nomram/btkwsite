@@ -60,6 +60,7 @@ function snippet(b) {
     case "modules": return t("n_cards", { n: (b.items || []).length });
     case "related": return t("n_cards", { n: (b.items || []).length });
     case "rental": return t("n_cards", { n: (b.items || []).length });
+    case "rentitem": return b.id || t("empty");
     case "rangechart": return b.title || t("n_rows", { n: (b.items || []).length });
     case "video": return b.title || b.id || t("empty");
     case "table": return t("n_rows", { n: (b.rows || []).length });
@@ -161,7 +162,7 @@ function panelBlock() {
     }
     case "rental": {
       const items = b.items || [], opts = b.options || [];
-      body = F(t("rent_steps"), `<textarea data-bf="steps" data-t="lines" rows="3">${esc((b.steps || []).join("\n"))}</textarea>`, t("rent_steps_hint")) +
+      body = F(t("rent_look"), `<select data-bf="look">${[["a", t("rent_look_a")], ["b", t("rent_look_b")], ["c", t("rent_look_c")], ["d", t("rent_look_d")], ["e", t("rent_look_e")]].map(([v, l]) => `<option value="${v}" ${(b.look || "a") === v ? "selected" : ""}>${esc(l)}</option>`).join("")}</select>`, t("rent_look_hint")) + F(t("rent_steps"), `<textarea data-bf="steps" data-t="lines" rows="3">${esc((b.steps || []).join("\n"))}</textarea>`, t("rent_steps_hint")) +
         items.map((it, ci) => `<div class="sub"><div class="row nowrap">${it.image ? `<img class="thumb" src="${esc(thumbUrl(it.image.replace("/assets/img/", "")))}" alt="">` : ""}<button class="btn sm ghost" data-act="mod-image" data-ci="${ci}">${esc(it.image ? t("change_image") : t("choose_image"))}</button>${ci > 0 ? `<button class="btn sm ghost" data-act="mod-up" data-ci="${ci}" title="${esc(t("move_up"))}">${IC.up}</button>` : ""}<button class="btn sm danger" data-act="mod-rm" data-ci="${ci}" title="${esc(t("delete"))}">${IC.trash}</button></div>
           <label class="chk"><input type="checkbox" data-bf="items.${ci}.cover" data-t="bool" ${it.cover ? "checked" : ""}> ${esc(t("rent_cover"))}</label>
           ${F(t("card_title"), inp(`items.${ci}.title`, it.title))}
@@ -180,6 +181,9 @@ function panelBlock() {
           `<div class="btnrow"><button class="btn sm ghost" data-act="rent-opt-add">${IC.plus}<span>${esc(t("rent_opt_add"))}</span></button></div>`, t("rent_options_hint"));
       break;
     }
+    case "rentitem":
+      body = F(t("rent_item_id"), inp("id", b.id), t("rent_item_id_hint"));
+      break;
     case "rangechart": {
       const items = b.items || [];
       const num = (path, v, ph) => `<input type="number" step="any" min="0" data-bf="${esc(path)}" value="${esc(v ?? "")}" placeholder="${esc(ph)}" style="width:5.2rem">`;

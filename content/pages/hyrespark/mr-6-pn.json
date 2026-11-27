@@ -1,0 +1,53 @@
+{
+  "path": "/hyrespark/mr-6-pn",
+  "updated": "2026-11-27",
+  "template": "page",
+  "order": 2,
+  "published": true,
+  "i18n": {
+    "sv": {
+      "title": "Marini MR 6 PN",
+      "h1": "Marini MR 6 PN",
+      "description": "Kompakt, portabel pneumatisk mast för trånga utrymmen. Färdigmonterad för 1 m-stag, kan kortas för 0,5 m-stag. Slaglängd upp till 1,2 m, Stänger T40.",
+      "blocks": [
+        {
+          "type": "rentitem",
+          "id": "mr-6-pn"
+        }
+      ]
+    },
+    "en": {
+      "title": "Marini MR 6 PN",
+      "h1": "Marini MR 6 PN",
+      "description": "Compact, portable pneumatic mast for tight spaces. Set up for 1 m anchors, can be shortened for 0.5 m anchors. Stroke up to 1.2 m, T40 rods (can be.",
+      "blocks": [
+        {
+          "type": "rentitem",
+          "id": "mr-6-pn"
+        }
+      ]
+    },
+    "es": {
+      "title": "Marini MR 6 PN",
+      "h1": "Marini MR 6 PN",
+      "description": "Mástil neumático compacto y portátil para espacios reducidos. Montado para anclajes de 1 m, se puede acortar para 0,5 m. Carrera hasta 1,2 m, Barras.",
+      "blocks": [
+        {
+          "type": "rentitem",
+          "id": "mr-6-pn"
+        }
+      ]
+    },
+    "no": {
+      "title": "Marini MR 6 PN",
+      "h1": "Marini MR 6 PN",
+      "description": "Kompakt, portabel pneumatisk mast for trange rom. Ferdigmontert for 1 m stag, kan kortes for 0,5 m stag. Slaglengde opptil 1,2 m, Stenger T40 (kan.",
+      "blocks": [
+        {
+          "type": "rentitem",
+          "id": "mr-6-pn"
+        }
+      ]
+    }
+  }
+}

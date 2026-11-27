@@ -10,6 +10,7 @@
     "et",
     "ru"
   ],
+  "noMenu": true,
   "i18n": {
     "sv": {
       "title": "Hyrespark",
@@ -45,19 +46,23 @@
               "photos": [
                 {
                   "src": "/assets/img/hyr-hemh1000-1.webp",
-                  "alt": "TEI HEMH1000-20 med vinsch och borrstänger"
+                  "alt": "TEI HEMH1000-20 med vinsch och borrstänger",
+                  "own": true
                 },
                 {
                   "src": "/assets/img/hyr-hemh1000-2.webp",
-                  "alt": "HEMH1000-20 hopfälld på pallar"
+                  "alt": "HEMH1000-20 hopfälld på pallar",
+                  "own": true
                 },
                 {
                   "src": "/assets/img/hyr-hemh1000-3.webp",
-                  "alt": "Topphammaren TE1000 och fästet"
+                  "alt": "Topphammaren TE1000 och fästet",
+                  "own": true
                 },
                 {
                   "src": "/assets/img/hyr-hemh1000-4.webp",
-                  "alt": "Fäste och styrenhet på HEMH1000-20"
+                  "alt": "Fäste och styrenhet på HEMH1000-20",
+                  "own": true
                 }
               ]
             },
@@ -79,11 +84,33 @@
               "photos": [
                 {
                   "src": "/assets/img/hyr-mr6pn-1.webp",
-                  "alt": "Marini MR 6 PN i ett källarplan"
+                  "alt": "Marini MR 6 PN i ett källarplan",
+                  "own": true
                 },
                 {
                   "src": "/assets/img/hyr-mr6pn-2.webp",
-                  "alt": "Marini MR 6 PN på hjul"
+                  "alt": "Marini MR 6 PN på hjul",
+                  "own": true
+                },
+                {
+                  "src": "/assets/img/marini-mr-mr-6-pn-iso.webp",
+                  "alt": "Marini MR 6 PN, bild 3"
+                },
+                {
+                  "src": "/assets/img/marini-mr-mr-6-pn-p1.webp",
+                  "alt": "Marini MR 6 PN, bild 4"
+                },
+                {
+                  "src": "/assets/img/marini-mr-mr-6-pn-p5.webp",
+                  "alt": "Marini MR 6 PN, bild 5"
+                },
+                {
+                  "src": "/assets/img/marini-mr-mr-6-pn-p3.webp",
+                  "alt": "Marini MR 6 PN, bild 6"
+                },
+                {
+                  "src": "/assets/img/marini-mr-mr-6-pn-p4.webp",
+                  "alt": "Marini MR 6 PN, bild 7"
                 }
               ]
             },
@@ -101,6 +128,24 @@
                 "Dragkraft upp till 100 kN",
                 "Bärare cirka 12-16 ton",
                 "Vikt 1 050 kg"
+              ],
+              "photos": [
+                {
+                  "src": "/assets/img/terra-infrastructure-vibrodrill-vibrodrill-vd100.webp",
+                  "alt": "VibroDrill VD100, bild 1"
+                },
+                {
+                  "src": "/assets/img/terra-infrastructure-vibrodrill-vibrodrill-vd100-hero.webp",
+                  "alt": "VibroDrill VD100, bild 2"
+                },
+                {
+                  "src": "/assets/img/terra-infrastructure-vibrodrill-4.webp",
+                  "alt": "VibroDrill VD100, bild 3"
+                },
+                {
+                  "src": "/assets/img/terra-infrastructure-vibrodrill-vibrodrill-vd100-2.webp",
+                  "alt": "VibroDrill VD100, bild 4"
+                }
               ]
             },
             {
@@ -119,6 +164,32 @@
               ],
               "options": [
                 "dpvh"
+              ],
+              "photos": [
+                {
+                  "src": "/assets/img/haeny-manuella-pumpar-ic-310-ic-311-2.webp",
+                  "alt": "HÄNY IC 310, bild 1"
+                },
+                {
+                  "src": "/assets/img/haeny-manuella-pumpar-ic-310-ic-311-3.webp",
+                  "alt": "HÄNY IC 310, bild 2"
+                },
+                {
+                  "src": "/assets/img/haeny-manuella-pumpar-ic-310-ic-311-4.webp",
+                  "alt": "HÄNY IC 310, bild 3"
+                },
+                {
+                  "src": "/assets/img/haeny-manuella-pumpar-ic-310-ic-311-5.webp",
+                  "alt": "HÄNY IC 310, bild 4"
+                },
+                {
+                  "src": "/assets/img/haeny-manuella-pumpar-ic-310-ic-311-6.webp",
+                  "alt": "HÄNY IC 310, bild 5"
+                },
+                {
+                  "src": "/assets/img/haeny-ic310-dim.webp",
+                  "alt": "HÄNY IC 310, bild 6"
+                }
               ]
             },
             {
@@ -137,6 +208,16 @@
               ],
               "options": [
                 "dpvh"
+              ],
+              "photos": [
+                {
+                  "src": "/assets/img/haeny-ic650-712v-model.webp",
+                  "alt": "HÄNY IC 650/712, bild 1"
+                },
+                {
+                  "src": "/assets/img/haeny-ic650-712v-dim.webp",
+                  "alt": "HÄNY IC 650/712, bild 2"
+                }
               ]
             },
             {
@@ -155,6 +236,16 @@
               ],
               "options": [
                 "dpvh"
+              ],
+              "photos": [
+                {
+                  "src": "/assets/img/haeny-manuella-pumpar-ic-325-ic325-ccp-2.webp",
+                  "alt": "HÄNY IC 325, bild 1"
+                },
+                {
+                  "src": "/assets/img/haeny-ic325-dim.webp",
+                  "alt": "HÄNY IC 325, bild 2"
+                }
               ]
             },
             {
@@ -171,7 +262,29 @@
                 "Slaglängd 1 200-2 200 mm",
                 "Vikt 3 000 + 2 000 kg"
               ],
-              "out": true
+              "out": true,
+              "photos": [
+                {
+                  "src": "/assets/img/marini-mrc-mr-c-30-iso.webp",
+                  "alt": "Marini MR-C 30, bild 1"
+                },
+                {
+                  "src": "/assets/img/marini-mrc-mr-c-30-p1.webp",
+                  "alt": "Marini MR-C 30, bild 2"
+                },
+                {
+                  "src": "/assets/img/marini-mrc-mr-c-30-p2.webp",
+                  "alt": "Marini MR-C 30, bild 3"
+                },
+                {
+                  "src": "/assets/img/marini-mrc-mr-c-30-p3.webp",
+                  "alt": "Marini MR-C 30, bild 4"
+                },
+                {
+                  "src": "/assets/img/marini-mrc-mr-c-30-side.webp",
+                  "alt": "Marini MR-C 30, bild 5"
+                }
+              ]
             }
           ],
           "options": [
@@ -219,19 +332,23 @@
               "photos": [
                 {
                   "src": "/assets/img/hyr-hemh1000-1.webp",
-                  "alt": "TEI HEMH1000-20 with winch and drill rods"
+                  "alt": "TEI HEMH1000-20 with winch and drill rods",
+                  "own": true
                 },
                 {
                   "src": "/assets/img/hyr-hemh1000-2.webp",
-                  "alt": "HEMH1000-20 folded on pallets"
+                  "alt": "HEMH1000-20 folded on pallets",
+                  "own": true
                 },
                 {
                   "src": "/assets/img/hyr-hemh1000-3.webp",
-                  "alt": "The TE1000 drifter and the mount"
+                  "alt": "The TE1000 drifter and the mount",
+                  "own": true
                 },
                 {
                   "src": "/assets/img/hyr-hemh1000-4.webp",
-                  "alt": "Mount and control unit of the HEMH1000-20"
+                  "alt": "Mount and control unit of the HEMH1000-20",
+                  "own": true
                 }
               ]
             },
@@ -253,11 +370,33 @@
               "photos": [
                 {
                   "src": "/assets/img/hyr-mr6pn-1.webp",
-                  "alt": "Marini MR 6 PN in a basement"
+                  "alt": "Marini MR 6 PN in a basement",
+                  "own": true
                 },
                 {
                   "src": "/assets/img/hyr-mr6pn-2.webp",
-                  "alt": "Marini MR 6 PN on wheels"
+                  "alt": "Marini MR 6 PN on wheels",
+                  "own": true
+                },
+                {
+                  "src": "/assets/img/marini-mr-mr-6-pn-iso.webp",
+                  "alt": "Marini MR 6 PN, picture 3"
+                },
+                {
+                  "src": "/assets/img/marini-mr-mr-6-pn-p1.webp",
+                  "alt": "Marini MR 6 PN, picture 4"
+                },
+                {
+                  "src": "/assets/img/marini-mr-mr-6-pn-p5.webp",
+                  "alt": "Marini MR 6 PN, picture 5"
+                },
+                {
+                  "src": "/assets/img/marini-mr-mr-6-pn-p3.webp",
+                  "alt": "Marini MR 6 PN, picture 6"
+                },
+                {
+                  "src": "/assets/img/marini-mr-mr-6-pn-p4.webp",
+                  "alt": "Marini MR 6 PN, picture 7"
                 }
               ]
             },
@@ -275,6 +414,24 @@
                 "Pull force up to 100 kN",
                 "Carrier about 12-16 tonnes",
                 "Weight 1,050 kg"
+              ],
+              "photos": [
+                {
+                  "src": "/assets/img/terra-infrastructure-vibrodrill-vibrodrill-vd100.webp",
+                  "alt": "VibroDrill VD100, picture 1"
+                },
+                {
+                  "src": "/assets/img/terra-infrastructure-vibrodrill-vibrodrill-vd100-hero.webp",
+                  "alt": "VibroDrill VD100, picture 2"
+                },
+                {
+                  "src": "/assets/img/terra-infrastructure-vibrodrill-4.webp",
+                  "alt": "VibroDrill VD100, picture 3"
+                },
+                {
+                  "src": "/assets/img/terra-infrastructure-vibrodrill-vibrodrill-vd100-2.webp",
+                  "alt": "VibroDrill VD100, picture 4"
+                }
               ]
             },
             {
@@ -293,6 +450,32 @@
               ],
               "options": [
                 "dpvh"
+              ],
+              "photos": [
+                {
+                  "src": "/assets/img/haeny-manuella-pumpar-ic-310-ic-311-2.webp",
+                  "alt": "HÄNY IC 310, picture 1"
+                },
+                {
+                  "src": "/assets/img/haeny-manuella-pumpar-ic-310-ic-311-3.webp",
+                  "alt": "HÄNY IC 310, picture 2"
+                },
+                {
+                  "src": "/assets/img/haeny-manuella-pumpar-ic-310-ic-311-4.webp",
+                  "alt": "HÄNY IC 310, picture 3"
+                },
+                {
+                  "src": "/assets/img/haeny-manuella-pumpar-ic-310-ic-311-5.webp",
+                  "alt": "HÄNY IC 310, picture 4"
+                },
+                {
+                  "src": "/assets/img/haeny-manuella-pumpar-ic-310-ic-311-6.webp",
+                  "alt": "HÄNY IC 310, picture 5"
+                },
+                {
+                  "src": "/assets/img/haeny-ic310-dim.webp",
+                  "alt": "HÄNY IC 310, picture 6"
+                }
               ]
             },
             {
@@ -311,6 +494,16 @@
               ],
               "options": [
                 "dpvh"
+              ],
+              "photos": [
+                {
+                  "src": "/assets/img/haeny-ic650-712v-model.webp",
+                  "alt": "HÄNY IC 650/712, picture 1"
+                },
+                {
+                  "src": "/assets/img/haeny-ic650-712v-dim.webp",
+                  "alt": "HÄNY IC 650/712, picture 2"
+                }
               ]
             },
             {
@@ -329,6 +522,16 @@
               ],
               "options": [
                 "dpvh"
+              ],
+              "photos": [
+                {
+                  "src": "/assets/img/haeny-manuella-pumpar-ic-325-ic325-ccp-2.webp",
+                  "alt": "HÄNY IC 325, picture 1"
+                },
+                {
+                  "src": "/assets/img/haeny-ic325-dim.webp",
+                  "alt": "HÄNY IC 325, picture 2"
+                }
               ]
             },
             {
@@ -345,7 +548,29 @@
                 "Stroke 1,200-2,200 mm",
                 "Weight 3,000 + 2,000 kg"
               ],
-              "out": true
+              "out": true,
+              "photos": [
+                {
+                  "src": "/assets/img/marini-mrc-mr-c-30-iso.webp",
+                  "alt": "Marini MR-C 30, picture 1"
+                },
+                {
+                  "src": "/assets/img/marini-mrc-mr-c-30-p1.webp",
+                  "alt": "Marini MR-C 30, picture 2"
+                },
+                {
+                  "src": "/assets/img/marini-mrc-mr-c-30-p2.webp",
+                  "alt": "Marini MR-C 30, picture 3"
+                },
+                {
+                  "src": "/assets/img/marini-mrc-mr-c-30-p3.webp",
+                  "alt": "Marini MR-C 30, picture 4"
+                },
+                {
+                  "src": "/assets/img/marini-mrc-mr-c-30-side.webp",
+                  "alt": "Marini MR-C 30, picture 5"
+                }
+              ]
             }
           ],
           "options": [
@@ -394,19 +619,23 @@
               "photos": [
                 {
                   "src": "/assets/img/hyr-hemh1000-1.webp",
-                  "alt": "TEI HEMH1000-20 con cabrestante y barras"
+                  "alt": "TEI HEMH1000-20 con cabrestante y barras",
+                  "own": true
                 },
                 {
                   "src": "/assets/img/hyr-hemh1000-2.webp",
-                  "alt": "HEMH1000-20 plegada sobre palés"
+                  "alt": "HEMH1000-20 plegada sobre palés",
+                  "own": true
                 },
                 {
                   "src": "/assets/img/hyr-hemh1000-3.webp",
-                  "alt": "El martillo TE1000 y el enganche"
+                  "alt": "El martillo TE1000 y el enganche",
+                  "own": true
                 },
                 {
                   "src": "/assets/img/hyr-hemh1000-4.webp",
-                  "alt": "Enganche y unidad de control de la HEMH1000-20"
+                  "alt": "Enganche y unidad de control de la HEMH1000-20",
+                  "own": true
                 }
               ]
             },
@@ -428,11 +657,33 @@
               "photos": [
                 {
                   "src": "/assets/img/hyr-mr6pn-1.webp",
-                  "alt": "Marini MR 6 PN en un sótano"
+                  "alt": "Marini MR 6 PN en un sótano",
+                  "own": true
                 },
                 {
                   "src": "/assets/img/hyr-mr6pn-2.webp",
-                  "alt": "Marini MR 6 PN sobre ruedas"
+                  "alt": "Marini MR 6 PN sobre ruedas",
+                  "own": true
+                },
+                {
+                  "src": "/assets/img/marini-mr-mr-6-pn-iso.webp",
+                  "alt": "Marini MR 6 PN, imagen 3"
+                },
+                {
+                  "src": "/assets/img/marini-mr-mr-6-pn-p1.webp",
+                  "alt": "Marini MR 6 PN, imagen 4"
+                },
+                {
+                  "src": "/assets/img/marini-mr-mr-6-pn-p5.webp",
+                  "alt": "Marini MR 6 PN, imagen 5"
+                },
+                {
+                  "src": "/assets/img/marini-mr-mr-6-pn-p3.webp",
+                  "alt": "Marini MR 6 PN, imagen 6"
+                },
+                {
+                  "src": "/assets/img/marini-mr-mr-6-pn-p4.webp",
+                  "alt": "Marini MR 6 PN, imagen 7"
                 }
               ]
             },
@@ -450,6 +701,24 @@
                 "Fuerza de tiro hasta 100 kN",
                 "Portador aprox. 12-16 toneladas",
                 "Peso 1 050 kg"
+              ],
+              "photos": [
+                {
+                  "src": "/assets/img/terra-infrastructure-vibrodrill-vibrodrill-vd100.webp",
+                  "alt": "VibroDrill VD100, imagen 1"
+                },
+                {
+                  "src": "/assets/img/terra-infrastructure-vibrodrill-vibrodrill-vd100-hero.webp",
+                  "alt": "VibroDrill VD100, imagen 2"
+                },
+                {
+                  "src": "/assets/img/terra-infrastructure-vibrodrill-4.webp",
+                  "alt": "VibroDrill VD100, imagen 3"
+                },
+                {
+                  "src": "/assets/img/terra-infrastructure-vibrodrill-vibrodrill-vd100-2.webp",
+                  "alt": "VibroDrill VD100, imagen 4"
+                }
               ]
             },
             {
@@ -468,6 +737,32 @@
               ],
               "options": [
                 "dpvh"
+              ],
+              "photos": [
+                {
+                  "src": "/assets/img/haeny-manuella-pumpar-ic-310-ic-311-2.webp",
+                  "alt": "HÄNY IC 310, imagen 1"
+                },
+                {
+                  "src": "/assets/img/haeny-manuella-pumpar-ic-310-ic-311-3.webp",
+                  "alt": "HÄNY IC 310, imagen 2"
+                },
+                {
+                  "src": "/assets/img/haeny-manuella-pumpar-ic-310-ic-311-4.webp",
+                  "alt": "HÄNY IC 310, imagen 3"
+                },
+                {
+                  "src": "/assets/img/haeny-manuella-pumpar-ic-310-ic-311-5.webp",
+                  "alt": "HÄNY IC 310, imagen 4"
+                },
+                {
+                  "src": "/assets/img/haeny-manuella-pumpar-ic-310-ic-311-6.webp",
+                  "alt": "HÄNY IC 310, imagen 5"
+                },
+                {
+                  "src": "/assets/img/haeny-ic310-dim.webp",
+                  "alt": "HÄNY IC 310, imagen 6"
+                }
               ]
             },
             {
@@ -486,6 +781,16 @@
               ],
               "options": [
                 "dpvh"
+              ],
+              "photos": [
+                {
+                  "src": "/assets/img/haeny-ic650-712v-model.webp",
+                  "alt": "HÄNY IC 650/712, imagen 1"
+                },
+                {
+                  "src": "/assets/img/haeny-ic650-712v-dim.webp",
+                  "alt": "HÄNY IC 650/712, imagen 2"
+                }
               ]
             },
             {
@@ -504,6 +809,16 @@
               ],
               "options": [
                 "dpvh"
+              ],
+              "photos": [
+                {
+                  "src": "/assets/img/haeny-manuella-pumpar-ic-325-ic325-ccp-2.webp",
+                  "alt": "HÄNY IC 325, imagen 1"
+                },
+                {
+                  "src": "/assets/img/haeny-ic325-dim.webp",
+                  "alt": "HÄNY IC 325, imagen 2"
+                }
               ]
             },
             {
@@ -520,7 +835,29 @@
                 "Carrera 1 200-2 200 mm",
                 "Peso 3 000 + 2 000 kg"
               ],
-              "out": true
+              "out": true,
+              "photos": [
+                {
+                  "src": "/assets/img/marini-mrc-mr-c-30-iso.webp",
+                  "alt": "Marini MR-C 30, imagen 1"
+                },
+                {
+                  "src": "/assets/img/marini-mrc-mr-c-30-p1.webp",
+                  "alt": "Marini MR-C 30, imagen 2"
+                },
+                {
+                  "src": "/assets/img/marini-mrc-mr-c-30-p2.webp",
+                  "alt": "Marini MR-C 30, imagen 3"
+                },
+                {
+                  "src": "/assets/img/marini-mrc-mr-c-30-p3.webp",
+                  "alt": "Marini MR-C 30, imagen 4"
+                },
+                {
+                  "src": "/assets/img/marini-mrc-mr-c-30-side.webp",
+                  "alt": "Marini MR-C 30, imagen 5"
+                }
+              ]
             }
           ],
           "options": [
@@ -568,19 +905,23 @@
               "photos": [
                 {
                   "src": "/assets/img/hyr-hemh1000-1.webp",
-                  "alt": "TEI HEMH1000-20 med vinsj og borestenger"
+                  "alt": "TEI HEMH1000-20 med vinsj og borestenger",
+                  "own": true
                 },
                 {
                   "src": "/assets/img/hyr-hemh1000-2.webp",
-                  "alt": "HEMH1000-20 sammenfoldet på paller"
+                  "alt": "HEMH1000-20 sammenfoldet på paller",
+                  "own": true
                 },
                 {
                   "src": "/assets/img/hyr-hemh1000-3.webp",
-                  "alt": "Topphammeren TE1000 og festet"
+                  "alt": "Topphammeren TE1000 og festet",
+                  "own": true
                 },
                 {
                   "src": "/assets/img/hyr-hemh1000-4.webp",
-                  "alt": "Feste og styreenhet på HEMH1000-20"
+                  "alt": "Feste og styreenhet på HEMH1000-20",
+                  "own": true
                 }
               ]
             },
@@ -602,11 +943,33 @@
               "photos": [
                 {
                   "src": "/assets/img/hyr-mr6pn-1.webp",
-                  "alt": "Marini MR 6 PN i en kjeller"
+                  "alt": "Marini MR 6 PN i en kjeller",
+                  "own": true
                 },
                 {
                   "src": "/assets/img/hyr-mr6pn-2.webp",
-                  "alt": "Marini MR 6 PN på hjul"
+                  "alt": "Marini MR 6 PN på hjul",
+                  "own": true
+                },
+                {
+                  "src": "/assets/img/marini-mr-mr-6-pn-iso.webp",
+                  "alt": "Marini MR 6 PN, bilde 3"
+                },
+                {
+                  "src": "/assets/img/marini-mr-mr-6-pn-p1.webp",
+                  "alt": "Marini MR 6 PN, bilde 4"
+                },
+                {
+                  "src": "/assets/img/marini-mr-mr-6-pn-p5.webp",
+                  "alt": "Marini MR 6 PN, bilde 5"
+                },
+                {
+                  "src": "/assets/img/marini-mr-mr-6-pn-p3.webp",
+                  "alt": "Marini MR 6 PN, bilde 6"
+                },
+                {
+                  "src": "/assets/img/marini-mr-mr-6-pn-p4.webp",
+                  "alt": "Marini MR 6 PN, bilde 7"
                 }
               ]
             },
@@ -624,6 +987,24 @@
                 "Trekkraft opptil 100 kN",
                 "Bærer cirka 12-16 tonn",
                 "Vekt 1 050 kg"
+              ],
+              "photos": [
+                {
+                  "src": "/assets/img/terra-infrastructure-vibrodrill-vibrodrill-vd100.webp",
+                  "alt": "VibroDrill VD100, bilde 1"
+                },
+                {
+                  "src": "/assets/img/terra-infrastructure-vibrodrill-vibrodrill-vd100-hero.webp",
+                  "alt": "VibroDrill VD100, bilde 2"
+                },
+                {
+                  "src": "/assets/img/terra-infrastructure-vibrodrill-4.webp",
+                  "alt": "VibroDrill VD100, bilde 3"
+                },
+                {
+                  "src": "/assets/img/terra-infrastructure-vibrodrill-vibrodrill-vd100-2.webp",
+                  "alt": "VibroDrill VD100, bilde 4"
+                }
               ]
             },
             {
@@ -642,6 +1023,32 @@
               ],
               "options": [
                 "dpvh"
+              ],
+              "photos": [
+                {
+                  "src": "/assets/img/haeny-manuella-pumpar-ic-310-ic-311-2.webp",
+                  "alt": "HÄNY IC 310, bilde 1"
+                },
+                {
+                  "src": "/assets/img/haeny-manuella-pumpar-ic-310-ic-311-3.webp",
+                  "alt": "HÄNY IC 310, bilde 2"
+                },
+                {
+                  "src": "/assets/img/haeny-manuella-pumpar-ic-310-ic-311-4.webp",
+                  "alt": "HÄNY IC 310, bilde 3"
+                },
+                {
+                  "src": "/assets/img/haeny-manuella-pumpar-ic-310-ic-311-5.webp",
+                  "alt": "HÄNY IC 310, bilde 4"
+                },
+                {
+                  "src": "/assets/img/haeny-manuella-pumpar-ic-310-ic-311-6.webp",
+                  "alt": "HÄNY IC 310, bilde 5"
+                },
+                {
+                  "src": "/assets/img/haeny-ic310-dim.webp",
+                  "alt": "HÄNY IC 310, bilde 6"
+                }
               ]
             },
             {
@@ -660,6 +1067,16 @@
               ],
               "options": [
                 "dpvh"
+              ],
+              "photos": [
+                {
+                  "src": "/assets/img/haeny-ic650-712v-model.webp",
+                  "alt": "HÄNY IC 650/712, bilde 1"
+                },
+                {
+                  "src": "/assets/img/haeny-ic650-712v-dim.webp",
+                  "alt": "HÄNY IC 650/712, bilde 2"
+                }
               ]
             },
             {
@@ -678,6 +1095,16 @@
               ],
               "options": [
                 "dpvh"
+              ],
+              "photos": [
+                {
+                  "src": "/assets/img/haeny-manuella-pumpar-ic-325-ic325-ccp-2.webp",
+                  "alt": "HÄNY IC 325, bilde 1"
+                },
+                {
+                  "src": "/assets/img/haeny-ic325-dim.webp",
+                  "alt": "HÄNY IC 325, bilde 2"
+                }
               ]
             },
             {
@@ -694,7 +1121,29 @@
                 "Slaglengde 1 200-2 200 mm",
                 "Vekt 3 000 + 2 000 kg"
               ],
-              "out": true
+              "out": true,
+              "photos": [
+                {
+                  "src": "/assets/img/marini-mrc-mr-c-30-iso.webp",
+                  "alt": "Marini MR-C 30, bilde 1"
+                },
+                {
+                  "src": "/assets/img/marini-mrc-mr-c-30-p1.webp",
+                  "alt": "Marini MR-C 30, bilde 2"
+                },
+                {
+                  "src": "/assets/img/marini-mrc-mr-c-30-p2.webp",
+                  "alt": "Marini MR-C 30, bilde 3"
+                },
+                {
+                  "src": "/assets/img/marini-mrc-mr-c-30-p3.webp",
+                  "alt": "Marini MR-C 30, bilde 4"
+                },
+                {
+                  "src": "/assets/img/marini-mrc-mr-c-30-side.webp",
+                  "alt": "Marini MR-C 30, bilde 5"
+                }
+              ]
             }
           ],
           "options": [

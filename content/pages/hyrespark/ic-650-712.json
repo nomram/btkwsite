@@ -1,0 +1,53 @@
+{
+  "path": "/hyrespark/ic-650-712",
+  "updated": "2026-11-27",
+  "template": "page",
+  "order": 5,
+  "published": true,
+  "i18n": {
+    "sv": {
+      "title": "HÄNY IC 650/712",
+      "h1": "HÄNY IC 650/712",
+      "description": "Större kompakt injekteringsanläggning för stag, jordspik och berginjektering. Pumpkapacitet 4,9 m³/h, Maxtryck 88 bar, Mixer 260 l, omrörare 350 l.",
+      "blocks": [
+        {
+          "type": "rentitem",
+          "id": "ic-650-712"
+        }
+      ]
+    },
+    "en": {
+      "title": "HÄNY IC 650/712",
+      "h1": "HÄNY IC 650/712",
+      "description": "Larger compact grouting plant for anchors, soil nails and rock grouting. Pump capacity 4.9 m³/h, Max pressure 88 bar, Mixer 260 l, agitator 350 l.",
+      "blocks": [
+        {
+          "type": "rentitem",
+          "id": "ic-650-712"
+        }
+      ]
+    },
+    "es": {
+      "title": "HÄNY IC 650/712",
+      "h1": "HÄNY IC 650/712",
+      "description": "Planta de inyección compacta más grande para anclajes, bulones e inyección en roca. Caudal 4,9 m³/h, Presión máx. 88 bar, Mezclador 260 l, agitador 350 l.",
+      "blocks": [
+        {
+          "type": "rentitem",
+          "id": "ic-650-712"
+        }
+      ]
+    },
+    "no": {
+      "title": "HÄNY IC 650/712",
+      "h1": "HÄNY IC 650/712",
+      "description": "Større kompakt injiseringsanlegg for stag, jordspiker og fjellinjisering. Pumpekapasitet 4,9 m³/t, Maks trykk 88 bar, Mikser 260 l, rører 350 l.",
+      "blocks": [
+        {
+          "type": "rentitem",
+          "id": "ic-650-712"
+        }
+      ]
+    }
+  }
+}

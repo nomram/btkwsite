@@ -797,87 +797,165 @@ function renderModules(ctx, b) {
 }
 
 // ---------- Hyrespark (rental fleet) ----------
-// A shop-like list of the machines that can be rented: filters (category, maker, available only), sorting, and a request list the visitor
-// fills like a cart and sends as one rental request through the quote form (/offert?hyr=<text>). A machine that cannot be rented right now
-// stays in the list, greyed out. Everything is in the page for search engines and without scripts (every card then has a direct
-// "request a rental quote" link); site.js adds the filters, the request list and the picture viewer. The list lives only in this browser tab.
+// A shop-like list of the machines that can be rented (block "rental") and one page per rental machine (block "rentitem", child pages
+// /hyrespark/<id>): filters (category, maker, available only), sorting, and a request list the visitor fills like a cart and sends as one
+// rental request through the quote form (/offert?hyr=<text>). A machine that cannot be rented right now stays listed, greyed out.
+// Everything is in the page for search engines and without scripts (every machine then has a direct "request a rental quote" link);
+// site.js adds the filters, the request list, the galleries and the picture viewer. The list lives only in this browser tab.
+// The list has five looks for comparison (data-v a to e: grid, list, table, catalogue, gallery), switched in the preview pill or ?hyrv=.
 const rentSlug = (s) => String(s || "").normalize("NFKD").replace(/[̀-ͯ]/g, "").toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
 export const rentId = (it, i) => rentSlug(it.id || it.title || (it.href || "").split("/").pop()) || "m" + i;
-// Which product pages are in the rental fleet (for the "in our rental fleet" mark on the product page): href -> { id, out, path }
+const rentOut = (it) => !!(it && (it.out || it.status === "out"));
+// every machine of the fleet in this language: by product page (href) and by id, with the page of its own (if there is one)
 function rentalIndex(ctx) {
   const key = "_rent_" + ctx.lang;
   if (ctx[key]) return ctx[key];
-  const map = new Map();
+  const byHref = new Map(), byId = new Map();
   for (const p of ctx.pages.keys()) {
     if (!shown(ctx, p)) continue;
     const t = ctx.tr(p, ctx.lang);
     for (const b of flatBlocks((t && t.blocks) || [])) if (b && b.type === "rental") (b.items || []).forEach((it, i) => {
-      if (it && it.href && !map.has(it.href)) map.set(it.href, { id: rentId(it, i), out: (it.out || it.status === "out"), path: p, title: it.title });
+      if (!it || !it.title) return;
+      const id = rentId(it, i), own = p + "/" + id;
+      const rec = { id, it, i, block: b, list: p, page: ctx.pages.has(own) && shown(ctx, own) ? own : "", out: rentOut(it), title: it.title };
+      if (!byId.has(id)) byId.set(id, rec);
+      if (it.href && !byHref.has(it.href)) byHref.set(it.href, rec);
     });
   }
-  return (ctx[key] = map);
+  return (ctx[key] = { byHref, byId, get: (h) => byHref.get(h) });
 }
 const rentQuoteHref = (ctx, text) => localizeHref(ctx, "/offert") + "?hyr=" + encodeURIComponent(text);
 const X_ICON = '<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>';
-function renderRental(ctx, b) {
-  const items = (b.items || []).filter((it) => it && it.title && !(it.href && ctx.pages && ctx.pages.has(it.href) && !shown(ctx, it.href)));
-  if (!items.length) return "";
-  const u = ctx.ui, T = (k, d) => esc(u[k] || d);
-  const opts = new Map((b.options || []).filter((o) => o && o.key && o.title).map((o) => [o.key, o]));
-  const lvl = ctx._cardLevel || 3;
-  const count = (arr, k) => { const m = new Map(); for (const it of arr) if (it[k]) m.set(it[k], (m.get(it[k]) || 0) + 1); return [...m.entries()]; };
-  const facet = (name, legend, entries) => entries.length < 2 ? "" : `<fieldset class="rent__fs"><legend>${esc(legend)}</legend>` +
-    entries.map(([v, n]) => `<label class="rent__chk"><input type="checkbox" name="${name}" value="${esc(v)}"><span>${esc(v)}</span><span class="rent__n">${n}</span></label>`).join("") + `</fieldset>`;
-  const nOk = items.filter((it) => !(it.out || it.status === "out")).length;
-  const filters = `<details class="rent__filters" open><summary>${T("rent_filter", "Filtrera")}</summary><div class="rent__fbody">` +
-    facet("cat", u.rent_cat || "Kategori", count(items, "cat")) + facet("brand", u.rent_brand || "Tillverkare", count(items, "brand")) +
-    (nOk < items.length ? `<fieldset class="rent__fs"><legend>${T("rent_avail", "Tillgänglighet")}</legend><label class="rent__chk"><input type="checkbox" name="ok" value="1"><span>${T("rent_only_ok", "Visa bara maskiner som finns att hyra")}</span><span class="rent__n">${nOk}</span></label></fieldset>` : "") +
-    `<button type="button" class="linklike rent__reset" hidden>${T("rent_reset", "Rensa filter")}</button></div></details>`;
-  const cards = items.map((it, i) => {
-    const id = rentId(it, i), out = (it.out || it.status === "out");
-    const href = it.href ? localizeHref(ctx, it.href) : "";
-    const image = it.image || (it.href ? relatedInfo(ctx, { href: it.href }).image : "");
-    const info = image && !it.cover ? ctx.image(image) : null;
-    const alt = it.alt || it.title;
-    const img = info && info.tilesq ? `<img class="rcard__img" src="/assets/img/${esc(info.name)}-tilesq.webp" width="640" height="640" alt="${esc(alt)}" loading="lazy" decoding="async">`
-      : image ? imgTag(ctx, image, alt, { cls: "rcard__img", sizes: "(min-width: 900px) 300px, 90vw" }) : "";
-    const photos = (it.photos || []).filter((p) => p && p.src);
-    const more = photos.length ? `<button type="button" class="rcard__pics" data-rent-pics hidden>${ICON.eye}<span>${esc(fmtTpl(u.rent_photos || "{n} bilder", { n: photos.length }))}</span></button>` : "";
-    const media = `<div class="rcard__media${it.cover ? " rcard__media--cover" : ""}">${href ? `<a href="${esc(href)}" tabindex="-1" aria-hidden="true">${img}</a>` : img}<span class="rcard__badge">${T("rent_badge", "Hyrmaskin")}</span>${more}</div>`;
-    const opt = out ? "" : (it.options || []).map((k) => opts.get(k)).filter(Boolean).map((o) =>
-      `<label class="rcard__opt"><input type="checkbox" data-opt="${esc(o.key)}" data-opt-name="${esc(o.title)}"><span><span class="rcard__optk">${T("rent_option", "Tillval")}:</span> ${o.href ? `<a href="${esc(localizeHref(ctx, o.href))}">${esc(o.title)}</a>` : esc(o.title)}${o.text ? `<small>${esc(o.text)}</small>` : ""}</span></label>`).join("");
-    const acts = out
-      ? `<p class="rcard__na">${T("rent_out_btn", "Kan inte hyras just nu")}</p>${href ? `<a class="rcard__link" href="${esc(href)}">${T("rent_more", "Mer om maskinen")}${ICON.arrow}</a>` : ""}`
-      : `<div class="rcard__acts"><button type="button" class="btn btn--sm rcard__add" data-rent-add aria-pressed="false" hidden><span class="rcard__add-t">${T("rent_add", "Lägg i förfrågan")}</span><span class="rcard__add-d">${ICON.check}${T("rent_added", "I förfrågan")}</span></button>` +
-        `<a class="btn btn--sm btn--ghost rcard__quote" href="${esc(rentQuoteHref(ctx, it.title))}">${T("rent_quote", "Begär hyrofferta")}</a></div>${href ? `<a class="rcard__link" href="${esc(href)}">${T("rent_more", "Mer om maskinen")}${ICON.arrow}</a>` : ""}`;
-    const gallery = photos.length ? `<template class="rcard__gal">${photos.map((p) => imgTag(ctx, p.src, p.alt || it.title, { cls: "rent__dlg-img", sizes: "(min-width: 900px) 900px, 100vw" })).join("")}</template>` : "";
-    return `<li class="rcard${out ? " is-out" : ""}" id="${esc(id)}" data-id="${esc(id)}" data-name="${esc(it.title)}" data-cat="${esc(it.cat || "")}" data-brand="${esc(it.brand || "")}" data-ok="${out ? 0 : 1}" data-i="${i}">` +
-      media + `<div class="rcard__body"><p class="rcard__kicker">${esc([it.brand, it.cat].filter(Boolean).join(" · "))}</p>` +
-      `<h${lvl} class="rcard__title">${href ? `<a href="${esc(href)}">${esc(it.title)}</a>` : esc(it.title)}</h${lvl}>` +
-      (it.text ? `<p class="rcard__text">${esc(it.text)}</p>` : "") +
-      ((it.bullets || []).length ? `<ul class="rcard__specs">${it.bullets.map((x) => `<li>${esc(x)}</li>`).join("")}</ul>` : "") +
-      `<p class="rcard__status rcard__status--${out ? "out" : "ok"}"><span aria-hidden="true"></span>${out ? T("rent_out", "Inte tillgänglig just nu") : T("rent_ok", "Finns att hyra")}</p>` +
-      opt + acts + `</div>${gallery}</li>`;
-  }).join("");
-  const steps = (b.steps || []).filter(Boolean);
-  const stepsHtml = steps.length ? `<ol class="rent__steps">${steps.map((s, k) => `<li><span class="rent__stepn" aria-hidden="true">${k + 1}</span><span>${esc(s)}</span></li>`).join("")}</ol>` : "";
-  const lens = String(u.rent_len_opts || "1 dag|1 vecka|2 veckor|1 månad|Längre eller vet inte än").split("|");
-  const cart = `<div class="rent__cart" data-rent-cart hidden role="dialog" aria-labelledby="rent-cart-h" tabindex="-1"><div class="rent__cart-in">` +
+const LIST_ICON = '<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 4h6l1 2h3v14H5V6h3z"/><path d="M9 11h6M9 15h4"/></svg>';
+// the picture of a machine: the finished square (on white) for product pictures, the photo itself for own photos (cover)
+function rentImg(ctx, it, cls, sizes) {
+  const image = it.image || (it.href ? relatedInfo(ctx, { href: it.href }).image : "");
+  if (!image) return { html: "", src: "" };
+  const info = !it.cover ? ctx.image(image) : null;
+  const alt = it.alt || it.title;
+  if (info && info.tilesq) { const src = `/assets/img/${info.name}-tilesq.webp`; return { src, html: `<img class="${cls}" src="${esc(src)}" width="640" height="640" alt="${esc(alt)}" loading="lazy" decoding="async">` }; }
+  const html = imgTag(ctx, image, alt, { cls, sizes });
+  const m = /\ssrc="([^"]+)"/.exec(html);
+  return { html, src: m ? m[1].replace(/&amp;/g, "&") : image };
+}
+// the options of one machine (tick boxes) and the add / quote buttons; shared by the cards and the machine page
+function rentOpts(ctx, it, block) {
+  if (rentOut(it)) return "";
+  const opts = new Map(((block && block.options) || []).filter((o) => o && o.key && o.title).map((o) => [o.key, o]));
+  return (it.options || []).map((k) => opts.get(k)).filter(Boolean).map((o) =>
+    `<label class="rcard__opt"><input type="checkbox" data-opt="${esc(o.key)}" data-opt-name="${esc(o.title)}"><span><span class="rcard__optk">${esc(ctx.ui.rent_option || "Tillval")}:</span> ${o.href ? `<a href="${esc(localizeHref(ctx, o.href))}">${esc(o.title)}</a>` : esc(o.title)}${o.text ? `<small>${esc(o.text)}</small>` : ""}</span></label>`).join("");
+}
+function rentActs(ctx, it, big) {
+  const T = (k, d) => esc(ctx.ui[k] || d);
+  if (rentOut(it)) return `<p class="rcard__na">${T("rent_out_btn", "Kan inte hyras just nu")}</p>`;
+  return `<div class="rcard__acts"><button type="button" class="btn${big ? "" : " btn--sm"} rcard__add" data-rent-add aria-pressed="false" hidden><span class="rcard__add-t">${T("rent_add", "Lägg i förfrågan")}</span><span class="rcard__add-d">${ICON.check}${T("rent_added", "I förfrågan")}</span></button>` +
+    `<a class="btn${big ? "" : " btn--sm"} btn--ghost rcard__quote" href="${esc(rentQuoteHref(ctx, it.title))}">${T("rent_quote", "Begär hyrofferta")}</a></div>`;
+}
+// the request list (slides in from the side), the bar at the bottom and the picture viewer: once per page
+function rentCart(ctx) {
+  const T = (k, d) => esc(ctx.ui[k] || d);
+  const lens = String(ctx.ui.rent_len_opts || "1 dag|1 vecka|2 veckor|1 månad|Längre eller vet inte än").split("|");
+  return `<div class="rent__cart" data-rent-cart hidden role="dialog" aria-labelledby="rent-cart-h" tabindex="-1"><div class="rent__cart-in">` +
     `<div class="rent__cart-head"><h2 id="rent-cart-h">${T("rent_cart", "Din hyrförfrågan")}</h2><button type="button" class="icon-btn rent__x" data-rent-close aria-label="${T("rent_close", "Stäng")}">${X_ICON}</button></div>` +
     `<ul class="rent__lines"></ul><p class="rent__empty">${T("rent_cart_empty", "Inga maskiner valda än.")}</p>` +
     `<div class="rent__form"><p class="qf__f"><label for="rent-from">${T("rent_from", "Önskat startdatum")}</label><input id="rent-from" type="date" name="from"></p>` +
     `<p class="qf__f"><label for="rent-len">${T("rent_len", "Hyresperiod")}</label><select id="rent-len" name="len"><option value=""></option>${lens.map((x) => `<option>${esc(x)}</option>`).join("")}</select></p>` +
     `<p class="qf__f"><label for="rent-site">${T("rent_site", "Ort eller arbetsplats")}</label><input id="rent-site" type="text" name="site" autocomplete="address-level2"></p></div>` +
     `<a class="btn rent__send" href="${esc(localizeHref(ctx, "/offert"))}" data-rent-send>${T("rent_send", "Begär hyrofferta")}${ICON.arrow}</a>` +
-    `<p class="rent__fine">${T("rent_fine", "Inget skickas förrän du skickar formuläret på nästa sida.")}</p></div></div>`;
+    `<p class="rent__fine">${T("rent_fine", "Inget skickas förrän du skickar formuläret på nästa sida.")}</p></div></div>` +
+    `<div class="rent__dock" data-rent-dock hidden><span class="rent__dock-t"><strong class="rent__badge">0</strong> <span>${T("rent_cart", "Din hyrförfrågan")}</span></span><button type="button" class="btn btn--sm" data-rent-open>${T("rent_view", "Visa förfrågan")}</button></div>` +
+    `<dialog class="rent__dlg"><div class="rent__dlg-in"><button type="button" class="icon-btn rent__x" data-rent-dclose aria-label="${T("rent_close", "Stäng")}">${X_ICON}</button><div class="rent__dlg-stage"></div><div class="rent__dlg-thumbs"></div></div></dialog>`;
+}
+const rentRootAttrs = (ctx) => { const T = (k, d) => esc(ctx.ui[k] || d); return `data-rent-root data-about="${T("rent_about", "Hyrförfrågan:")}" data-l-from="${T("rent_from", "Önskat startdatum")}" data-l-len="${T("rent_len", "Hyresperiod")}" data-l-site="${T("rent_site", "Ort eller arbetsplats")}" data-l-remove="${T("rent_remove", "Ta bort")}"`; };
+function renderRental(ctx, b) {
+  const items = (b.items || []).filter((it) => it && it.title && !(it.href && ctx.pages && ctx.pages.has(it.href) && !shown(ctx, it.href)));
+  if (!items.length) return "";
+  const u = ctx.ui, T = (k, d) => esc(u[k] || d);
+  const lvl = ctx._cardLevel || 3;
+  const here = ctx._page ? ctx._page.path : "/hyrespark";
+  const count = (arr, k) => { const m = new Map(); for (const it of arr) if (it[k]) m.set(it[k], (m.get(it[k]) || 0) + 1); return [...m.entries()]; };
+  const facet = (name, legend, entries) => entries.length < 2 ? "" : `<fieldset class="rent__fs"><legend>${esc(legend)}</legend>` +
+    entries.map(([v, n]) => `<label class="rent__chk"><input type="checkbox" name="${name}" value="${esc(v)}"><span>${esc(v)}</span><span class="rent__n">${n}</span></label>`).join("") + `</fieldset>`;
+  const nOk = items.filter((it) => !rentOut(it)).length;
+  const filters = `<details class="rent__filters" open><summary>${T("rent_filter", "Filtrera")}</summary><div class="rent__fbody">` +
+    facet("cat", u.rent_cat || "Kategori", count(items, "cat")) + facet("brand", u.rent_brand || "Tillverkare", count(items, "brand")) +
+    (nOk < items.length ? `<fieldset class="rent__fs"><legend>${T("rent_avail", "Tillgänglighet")}</legend><label class="rent__chk"><input type="checkbox" name="ok" value="1"><span>${T("rent_only_ok", "Visa bara maskiner som finns att hyra")}</span><span class="rent__n">${nOk}</span></label></fieldset>` : "") +
+    `<button type="button" class="linklike rent__reset" hidden>${T("rent_reset", "Rensa filter")}</button></div></details>`;
+  const cards = items.map((it, i) => {
+    const id = rentId(it, i), out = rentOut(it);
+    const own = here + "/" + id;
+    const page = ctx.pages.has(own) && shown(ctx, own) ? localizeHref(ctx, own) : it.href ? localizeHref(ctx, it.href) : "";
+    const im = rentImg(ctx, it, "rcard__img", "(min-width: 900px) 300px, 90vw");
+    const photos = (it.photos || []).filter((p) => p && p.src);
+    const more = photos.length ? `<button type="button" class="rcard__pics" data-rent-pics hidden>${ICON.eye}<span>${esc(fmtTpl(u.rent_photos || "{n} bilder", { n: photos.length }))}</span></button>` : "";
+    const media = `<div class="rcard__media${it.cover ? " rcard__media--cover" : ""}">${page ? `<a href="${esc(page)}" tabindex="-1" aria-hidden="true">${im.html}</a>` : im.html}<span class="rcard__badge">${T("rent_badge", "Hyrmaskin")}</span>${more}</div>`;
+    const gallery = photos.length ? `<template class="rcard__gal">${photos.map((p) => imgTag(ctx, p.src, p.alt || it.title, { cls: "rent__dlg-img", sizes: "(min-width: 900px) 900px, 100vw" })).join("")}</template>` : "";
+    return `<li class="rcard${out ? " is-out" : ""}" id="${esc(id)}" data-rent-item data-id="${esc(id)}" data-name="${esc(it.title)}" data-img="${esc(im.src)}" data-href="${esc(page)}" data-cat="${esc(it.cat || "")}" data-brand="${esc(it.brand || "")}" data-ok="${out ? 0 : 1}" data-i="${i}">` +
+      media + `<div class="rcard__body"><div class="rcard__main"><p class="rcard__kicker">${esc([it.brand, it.cat].filter(Boolean).join(" · "))}</p>` +
+      `<h${lvl} class="rcard__title">${page ? `<a href="${esc(page)}">${esc(it.title)}</a>` : esc(it.title)}</h${lvl}>` +
+      (it.text ? `<p class="rcard__text">${esc(it.text)}</p>` : "") +
+      ((it.bullets || []).length ? `<ul class="rcard__specs">${it.bullets.map((x) => `<li>${esc(x)}</li>`).join("")}</ul>` : "") + `</div>` +
+      `<div class="rcard__side"><p class="rcard__status rcard__status--${out ? "out" : "ok"}"><span aria-hidden="true"></span>${out ? T("rent_out", "Inte tillgänglig just nu") : T("rent_ok", "Finns att hyra")}</p>` +
+      rentOpts(ctx, it, b) + rentActs(ctx, it) + (page ? `<a class="rcard__link" href="${esc(page)}">${T("rent_more", "Mer om maskinen")}${ICON.arrow}</a>` : "") + `</div></div>${gallery}</li>`;
+  }).join("");
+  const steps = (b.steps || []).filter(Boolean);
+  const stepsHtml = steps.length ? `<ol class="rent__steps">${steps.map((s, k) => `<li><span class="rent__stepn" aria-hidden="true">${k + 1}</span><span>${esc(s)}</span></li>`).join("")}</ol>` : "";
   const bar = `<div class="rent__bar"><p class="rent__count" aria-live="polite" data-one="${T("rent_count_one", "1 maskin")}" data-many="${T("rent_count", "{n} maskiner")}">${esc(fmtTpl(u.rent_count || "{n} maskiner", { n: items.length }))}</p>` +
     `<label class="rent__sort" hidden><span>${T("rent_sort", "Sortera")}</span><select><option value="">${T("rent_sort_rec", "Utvalda")}</option><option value="az">${T("rent_sort_az", "Namn A-Ö")}</option><option value="brand">${T("rent_sort_brand", "Tillverkare")}</option></select></label>` +
-    `<button type="button" class="rent__open" data-rent-open hidden><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 4h6l1 2h3v14H5V6h3z"/><path d="M9 11h6M9 15h4"/></svg><span>${T("rent_cart", "Din hyrförfrågan")}</span><span class="rent__badge">0</span></button></div>`;
-  return `<section class="rent" data-rent data-about="${T("rent_about", "Hyrförfrågan:")}" data-l-from="${T("rent_from", "Önskat startdatum")}" data-l-len="${T("rent_len", "Hyresperiod")}" data-l-site="${T("rent_site", "Ort eller arbetsplats")}" data-l-remove="${T("rent_remove", "Ta bort")}" data-l-prev="${T("carousel_prev", "Föregående")}" data-l-next="${T("carousel_next", "Nästa")}">` +
+    `<button type="button" class="rent__open" data-rent-open hidden>${LIST_ICON}<span>${T("rent_cart", "Din hyrförfrågan")}</span><span class="rent__badge">0</span></button></div>`;
+  const v = /^[a-e]$/.test(b.look || "") ? b.look : "a";
+  return `<section class="rent" data-rent data-v="${v}" ${rentRootAttrs(ctx)}>` +
     stepsHtml + `<div class="rent__layout"><aside class="rent__side">${filters}</aside><div class="rent__main">${bar}<ul class="rent__grid">${cards}</ul>` +
-    `<p class="rent__none" hidden>${T("rent_none", "Inga maskiner matchar filtret.")} <button type="button" class="linklike rent__reset">${T("rent_reset", "Rensa filter")}</button></p></div></div>${cart}` +
-    `<div class="rent__dock" data-rent-dock hidden><span class="rent__dock-t"><strong class="rent__badge">0</strong> <span>${T("rent_cart", "Din hyrförfrågan")}</span></span><button type="button" class="btn btn--sm" data-rent-open>${T("rent_view", "Visa förfrågan")}</button></div>` +
-    `<dialog class="rent__dlg"><div class="rent__dlg-in"><button type="button" class="icon-btn rent__x" data-rent-dclose aria-label="${T("rent_close", "Stäng")}">${X_ICON}</button><div class="rent__dlg-stage"></div><div class="rent__dlg-thumbs"></div></div></dialog></section>`;
+    `<p class="rent__none" hidden>${T("rent_none", "Inga maskiner matchar filtret.")} <button type="button" class="linklike rent__reset">${T("rent_reset", "Rensa filter")}</button></p></div></div>${rentCart(ctx)}</section>`;
+}
+// The page of one rental machine, like a shop's product page: its pictures (own photos of the unit first), what it is and can do,
+// a box to rent it (status, options, add to the request, rental quote), the model's technical data and documents from its product
+// page, and the other machines of the fleet.
+function renderRentItem(ctx, b) {
+  const idx = rentalIndex(ctx), rec = idx.byId.get(rentSlug(b.id || ""));
+  if (!rec) return "";
+  const it = rec.it, u = ctx.ui, T = (k, d) => esc(u[k] || d), out = rec.out;
+  const pics = (it.photos || []).filter((p) => p && p.src);
+  if (!pics.length) { const im = it.image || (it.href ? relatedInfo(ctx, { href: it.href }).image : ""); if (im) pics.push({ src: im, alt: it.alt || it.title }); }
+  const im = rentImg(ctx, it, "rentitem__thumbimg", "80px");
+  const stage = pics.map((p, k) => `<figure class="rentitem__pic${k ? "" : " is-on"}" data-k="${k}">${imgTag(ctx, p.src, p.alt || it.title, { cls: "rentitem__img", sizes: "(min-width: 1100px) 560px, 100vw" }).replace(k ? "" : 'loading="lazy"', k ? "" : 'loading="eager"')}${p.own ? `<figcaption class="rentitem__own">${T("rent_own_photo", "Foto av vår hyrmaskin")}</figcaption>` : ""}</figure>`).join("");
+  const thumbs = pics.length > 1 ? `<div class="rentitem__thumbs" role="group" aria-label="${T("rent_photos_label", "Bilder")}">${pics.map((p, k) => `<a class="rentitem__thumb${k ? "" : " is-on"}" href="${esc(p.src)}" data-k="${k}" aria-label="${k + 1} / ${pics.length}">${imgTag(ctx, p.src, "", { sizes: "96px" }).replace("loading=\"lazy\"", "loading=\"eager\"")}</a>`).join("")}</div>` : "";
+  const nav = pics.length > 1 ? `<button type="button" class="carousel__btn carousel__btn--prev rentitem__prev" aria-label="${T("carousel_prev", "Föregående")}" hidden>${ICON.prev}</button><button type="button" class="carousel__btn carousel__btn--next rentitem__next" aria-label="${T("carousel_next", "Nästa")}" hidden>${ICON.next}</button><button type="button" class="rentitem__zoom" data-rent-zoom hidden>${ICON.eye}<span>${esc(fmtTpl(u.rent_photos || "{n} bilder", { n: pics.length }))}</span></button>` : "";
+  const gal = `<template class="rcard__gal">${pics.map((p) => imgTag(ctx, p.src, p.alt || it.title, { cls: "rent__dlg-img", sizes: "(min-width: 900px) 900px, 100vw" })).join("")}</template>`;
+  const product = it.href && ctx.pages.has(it.href) && shown(ctx, it.href) ? localizeHref(ctx, it.href) : "";
+  const listUrl = localizeHref(ctx, rec.list);
+  const info = `<div class="rentitem__info"><p class="rcard__kicker">${esc([it.brand, it.cat].filter(Boolean).join(" · "))}</p>` +
+    `<p class="rcard__status rcard__status--${out ? "out" : "ok"}"><span aria-hidden="true"></span>${out ? T("rent_out", "Inte tillgänglig just nu") : T("rent_ok", "Finns att hyra")}</p>` +
+    (it.text ? `<p class="rentitem__lead">${esc(it.text)}</p>` : "") +
+    ((it.bullets || []).length ? `<h2 class="rentitem__h">${T("rent_specs", "Det här ingår")}</h2><ul class="rcard__specs rentitem__specs">${it.bullets.map((x) => `<li>${esc(x)}</li>`).join("")}</ul>` : "") +
+    (product ? `<p class="rentitem__model"><a href="${esc(product)}">${esc(fmtTpl(u.rent_model || "Om modellen {name}", { name: navTitleOf(ctx, it.href) }))}${ICON.arrow}</a></p>` : "") + `</div>`;
+  const buy = `<aside class="rentitem__buy"><span class="rcard__badge rentitem__badge">${T("rent_badge", "Hyrmaskin")}</span>` +
+    `<p class="rentitem__buyt">${esc(it.title)}</p>` +
+    `<p class="rcard__status rcard__status--${out ? "out" : "ok"}"><span aria-hidden="true"></span>${out ? T("rent_out", "Inte tillgänglig just nu") : T("rent_ok", "Finns att hyra")}</p>` +
+    `<p class="rentitem__price">${T(out ? "rent_price_out" : "rent_price", out ? "Fråga oss när den blir ledig igen." : "Pris efter hyresperiod och plats. Du får en offert, normalt inom en arbetsdag.")}</p>` +
+    rentOpts(ctx, it, rec.block) + rentActs(ctx, it, true) +
+    `<button type="button" class="linklike rentitem__view" data-rent-open hidden>${LIST_ICON}<span>${T("rent_cart", "Din hyrförfrågan")}</span> <span class="rent__badge">0</span></button>` +
+    `<a class="rentitem__back" href="${esc(listUrl)}">${T("rent_all", "Alla hyrmaskiner")}</a></aside>`;
+  // the model's data sheet and documents, from its product page in this language
+  let more = "";
+  if (it.href && ctx.pages.has(it.href)) {
+    const pt = ctx.tr(it.href, ctx.lang) || ctx.tr(it.href, ctx.defaultLang);
+    const fl = flatBlocks((pt && pt.blocks) || []);
+    const ds = fl.find((x) => x.type === "datasheet");
+    const docs = fl.filter((x) => x.type === "button" && x.kind === "download" && !x.hidden && !(ctx.lang !== ctx.defaultLang && docLang(ctx, x) === "sv"));
+    if (ds) more += `<div class="rentitem__ds">${renderDatasheet(ctx, { ...ds, title: u.rent_model_data || ds.title })}</div>`;
+    if (docs.length) more += `<div class="rentitem__docs"><h2 class="rentitem__h">${T("documents", "Dokument")}</h2><ul class="docs">${docs.map((d) => renderDoc(ctx, d)).join("")}</ul></div>`;
+  }
+  // the rest of the fleet
+  const others = [...idx.byId.values()].filter((r) => r.id !== rec.id && r.list === rec.list);
+  const rail = others.length ? `<section class="rentitem__others"><h2 class="rentitem__h">${T("rent_others", "Fler hyrmaskiner")}</h2><ul class="rentitem__rail">${others.map((r) => {
+    const href = r.page ? localizeHref(ctx, r.page) : r.it.href ? localizeHref(ctx, r.it.href) : listUrl;
+    const oi = rentImg(ctx, r.it, "rentitem__railimg", "200px");
+    return `<li class="${r.out ? "is-out" : ""}"><a href="${esc(href)}"><span class="rentitem__railpic${r.it.cover ? " is-cover" : ""}">${oi.html}</span><span class="rentitem__railt">${esc(r.title)}</span><span class="rcard__status rcard__status--${r.out ? "out" : "ok"}"><span aria-hidden="true"></span>${r.out ? T("rent_out", "Inte tillgänglig just nu") : T("rent_ok", "Finns att hyra")}</span></a></li>`;
+  }).join("")}</ul></section>` : "";
+  return `<section class="rentitem${out ? " is-out" : ""}" ${rentRootAttrs(ctx)}><div class="rentitem__top" data-rent-item data-id="${esc(rec.id)}" data-name="${esc(it.title)}" data-img="${esc(im.src)}" data-href="${esc(ctx._page ? localizeHref(ctx, ctx._page.path) : "")}" data-ok="${out ? 0 : 1}">` +
+    `<div class="rentitem__gallery" data-rent-gallery><div class="rentitem__stage">${stage}${nav}</div>${thumbs}${gal}</div>${info}${buy}</div>` +
+    (more ? `<div class="rentitem__more">${more}</div>` : "") + rail + rentCart(ctx) + `</section>`;
 }
 
 // Image carousel. Native scroll-snap: swipe, trackpad and keyboard work without JavaScript; site.js adds arrows, dots
@@ -1101,6 +1179,7 @@ function renderBlockInner(ctx, b) {
     case "finder": return renderFinder(ctx, b);
     case "modules": return renderModules(ctx, b);
     case "rental": return renderRental(ctx, b);
+    case "rentitem": return renderRentItem(ctx, b);
     case "related": return renderRelated(ctx, b);
     case "rangechart": return renderRangeChart(ctx, b);
     case "chips": return renderChips(ctx, b);
@@ -1186,7 +1265,7 @@ export function renderBlocks(ctx, blocks) {
       continue;
     }
     if (b.type === "cta" || b.type === "datasheet" && false) { flushProse(); out.push(renderBlock(ctx, b)); continue; }
-    if (b.type === "rental") { flushProse(); out.push(`<div class="container sect">${renderBlock(ctx, b)}</div>`); continue; }
+    if (b.type === "rental" || b.type === "rentitem") { flushProse(); out.push(`<div class="container sect">${renderBlock(ctx, b)}</div>`); continue; }
     if (b.type === "columns" || b.type === "social" || b.type === "quote") { flushProse(); out.push(`<div class="container prose sect">${renderBlock(ctx, b)}</div>`); continue; }
     prose.push(renderBlock(ctx, b));
   }
@@ -1610,7 +1689,7 @@ function rentBtn(ctx, page) {
 function rentPill(ctx, page) {
   const r = page.template === "product" && !ctx.edit ? rentalIndex(ctx).get(page.path) : null;
   if (!r) return "";
-  return `<a class="rentpill${r.out ? " rentpill--out" : ""}" href="${esc(localizeHref(ctx, r.path))}#${esc(r.id)}"><span aria-hidden="true"></span>${esc(r.out ? ctx.ui.rent_pill_out || "I vår hyrespark, inte ledig just nu" : ctx.ui.rent_pill || "Finns att hyra")}</a>`;
+  return `<a class="rentpill${r.out ? " rentpill--out" : ""}" href="${esc(r.page ? localizeHref(ctx, r.page) : localizeHref(ctx, r.list) + "#" + r.id)}"><span aria-hidden="true"></span>${esc(r.out ? ctx.ui.rent_pill_out || "I vår hyrespark, inte ledig just nu" : ctx.ui.rent_pill || "Finns att hyra")}</a>`;
 }
 
 // "Product of Switzerland": only on the first page of a brand (the brand page; further down the small logo sits in this place). Quiet by default,

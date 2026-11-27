@@ -21,6 +21,7 @@ export const IC = {
   columns: svg('<rect x="3" y="4" width="8" height="16" rx="1.5"/><rect x="13" y="4" width="8" height="16" rx="1.5"/>'),
   rangechart: svg('<path d="M3 4v16h18"/><rect x="6" y="7" width="7" height="3" rx=".5"/><rect x="9" y="12" width="9" height="3" rx=".5"/><rect x="5" y="17" width="5" height="2" rx=".5"/>'),
   rental: svg('<path d="M5 8h14l-1.2 12H6.2z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/><path d="M9.5 13.5l2 2 3.5-4"/>'),
+  rentitem: svg('<rect x="3" y="4" width="9" height="9" rx="1"/><path d="M15 5h6M15 9h6M15 13h4M3 17h18M3 20h12"/>'),
   related: svg('<rect x="3" y="4" width="18" height="6" rx="1"/><rect x="3" y="14" width="18" height="6" rx="1"/><path d="M7 7h6M7 17h6"/>'),
   modules: svg('<rect x="3" y="5" width="5" height="14" rx="1"/><rect x="9.5" y="5" width="5" height="14" rx="1"/><rect x="16" y="5" width="5" height="14" rx="1"/>'),
   finder: svg('<rect x="3" y="4" width="8" height="7" rx="1"/><rect x="13" y="4" width="8" height="7" rx="1"/><path d="M4 15h16M4 19h11"/>'),
@@ -99,6 +100,7 @@ export function newBlock(id, lang) {
     case "compare": return { type: "compare", src: "", alt: "", src2: "", alt2: "", label: "", label2: "", caption: "" };
     case "modules": return { type: "modules", layout: "cards", items: [{ title: "", text: "", bullets: [] }] };
     case "related": return { type: "related", items: [{ href: "" }] };
+    case "rentitem": return { type: "rentitem", id: "" };
     case "rental": return { type: "rental", steps: [], items: [{ title: "", bullets: [] }], options: [] };
     case "rangechart": return { type: "rangechart", layout: "bars", unit: "mm", items: [{ label: "", min: "", max: "" }] };
     case "contact": return { type: "contact" };

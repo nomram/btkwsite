@@ -41,6 +41,7 @@ const MACHINES = [
   {
     id: "mr-6-pn", title: "Marini MR 6 PN", brand: "Marini", cat: "rig", href: "/produkter/marini/släntstabilisering/mr-6-pn",
     image: "/assets/img/marini-mr-mr-6-pn-tile.webp",
+    pics: ["/assets/img/marini-mr-mr-6-pn-iso.webp", "/assets/img/marini-mr-mr-6-pn-p1.webp", "/assets/img/marini-mr-mr-6-pn-p5.webp", "/assets/img/marini-mr-mr-6-pn-p3.webp", "/assets/img/marini-mr-mr-6-pn-p4.webp"],
     text: L("Kompakt, portabel pneumatisk mast för trånga utrymmen. Färdigmonterad för 1 m-stag, kan kortas för 0,5 m-stag.", "Compact, portable pneumatic mast for tight spaces. Set up for 1 m anchors, can be shortened for 0.5 m anchors.", "Mástil neumático compacto y portátil para espacios reducidos. Montado para anclajes de 1 m, se puede acortar para 0,5 m.", "Kompakt, portabel pneumatisk mast for trange rom. Ferdigmontert for 1 m stag, kan kortes for 0,5 m stag."),
     bullets: {
       sv: ["Slaglängd upp till 1,2 m", "Stänger T40 (kan justeras till T30 och T52)", "Topphammare MA 100S 3R (pneumatisk)", "Luftbehov minst 10 000 l/min vid 6 bar", "Vikt cirka 300 kg"],
@@ -56,6 +57,7 @@ const MACHINES = [
   {
     id: "vd100", title: "VibroDrill VD100", brand: "Terra Infrastructure", cat: "attach", href: "/produkter/terra-infrastructure/vibrodrill/vibrodrill-vd100",
     image: "/assets/img/terra-infrastructure-vibrodrill-vibrodrill-vd100.webp",
+    pics: ["/assets/img/terra-infrastructure-vibrodrill-vibrodrill-vd100.webp", "/assets/img/terra-infrastructure-vibrodrill-vibrodrill-vd100-hero.webp", "/assets/img/terra-infrastructure-vibrodrill-4.webp", "/assets/img/terra-infrastructure-vibrodrill-vibrodrill-vd100-2.webp"],
     text: L("Rotation med kontrollerad vibration för mikropålar och självborrande stag i svåra jordlager.", "Rotation with controlled vibration for micropiles and self-drilling anchors in difficult soils.", "Rotación con vibración controlada para micropilotes y anclajes autoperforantes en suelos difíciles.", "Rotasjon med kontrollert vibrasjon for mikropeler og selvborende stag i vanskelige jordlag."),
     bullets: {
       sv: ["Borrdjup ner till 80 m", "Vridmoment max 15 kNm", "Dragkraft upp till 100 kN", "Bärare cirka 12-16 ton", "Vikt 1 050 kg"],
@@ -67,6 +69,7 @@ const MACHINES = [
   {
     id: "ic-310", title: "HÄNY IC 310", brand: "HÄNY", cat: "grout", href: "/produkter/haeny/manuella-pumpar/ic-310-ic-311", options: ["dpvh"],
     image: "/assets/img/haeny-ic310-tile.webp",
+    pics: ["/assets/img/haeny-manuella-pumpar-ic-310-ic-311-2.webp", "/assets/img/haeny-manuella-pumpar-ic-310-ic-311-3.webp", "/assets/img/haeny-manuella-pumpar-ic-310-ic-311-4.webp", "/assets/img/haeny-manuella-pumpar-ic-310-ic-311-5.webp", "/assets/img/haeny-manuella-pumpar-ic-310-ic-311-6.webp", "/assets/img/haeny-ic310-dim.webp"],
     text: L("Kompakt injekteringsanläggning för cementslurry: mixer, omrörare och pump i en enhet.", "Compact grouting plant for cement grout: mixer, agitator and pump in one unit.", "Planta de inyección compacta para lechada de cemento: mezclador, agitador y bomba en una unidad.", "Kompakt injiseringsanlegg for sementslurry: mikser, rører og pumpe i én enhet."),
     bullets: {
       sv: ["Pumpkapacitet 1,5 m³/h", "Maxtryck 100 bar", "Mixer 100 l, omrörare 150 l", "Vikt 625 kg"],
@@ -78,6 +81,7 @@ const MACHINES = [
   {
     id: "ic-650-712", title: "HÄNY IC 650/712", brand: "HÄNY", cat: "grout", href: "/produkter/haeny/manuella-pumpar/ic-650-712v", options: ["dpvh"],
     image: "/assets/img/haeny-ic650-712v-tile.webp",
+    pics: ["/assets/img/haeny-ic650-712v-model.webp", "/assets/img/haeny-ic650-712v-dim.webp"],
     text: L("Större kompakt injekteringsanläggning för stag, jordspik och berginjektering.", "Larger compact grouting plant for anchors, soil nails and rock grouting.", "Planta de inyección compacta más grande para anclajes, bulones e inyección en roca.", "Større kompakt injiseringsanlegg for stag, jordspiker og fjellinjisering."),
     bullets: {
       sv: ["Pumpkapacitet 4,9 m³/h", "Maxtryck 88 bar", "Mixer 260 l, omrörare 350 l", "Vikt 1 130 kg"],
@@ -89,6 +93,7 @@ const MACHINES = [
   {
     id: "ic-325", title: "HÄNY IC 325", brand: "HÄNY", cat: "grout", href: "/produkter/haeny/manuella-pumpar/ic-325-ic325-ccp", options: ["dpvh"],
     image: "/assets/img/haeny-ic325-tile.webp",
+    pics: ["/assets/img/haeny-manuella-pumpar-ic-325-ic325-ccp-2.webp", "/assets/img/haeny-ic325-dim.webp"],
     text: L("Som IC 310 men med dubbelpump för ett jämnare flöde.", "Like the IC 310 but with a double pump for a smoother flow.", "Como la IC 310 pero con bomba doble para un caudal más uniforme.", "Som IC 310, men med dobbelpumpe for jevnere strømning."),
     bullets: {
       sv: ["Pumpkapacitet 2 m³/h", "Maxtryck 100 bar", "Två kolvar (dubbelpump)", "Vikt 700 kg"],
@@ -100,6 +105,7 @@ const MACHINES = [
   {
     id: "mr-c-30", title: "Marini MR-C 30", brand: "Marini", cat: "rig", href: "/produkter/marini/crawlers/mr-c-30", out: true,
     image: "/assets/img/marini-mrc-mr-c-30-tile.webp",
+    pics: ["/assets/img/marini-mrc-mr-c-30-iso.webp", "/assets/img/marini-mrc-mr-c-30-p1.webp", "/assets/img/marini-mrc-mr-c-30-p2.webp", "/assets/img/marini-mrc-mr-c-30-p3.webp", "/assets/img/marini-mrc-mr-c-30-side.webp"],
     text: L("Hydraulisk larvrigg, anpassad för inomhusarbete.", "Hydraulic crawler rig, built for indoor work.", "Perforadora hidráulica sobre orugas, pensada para trabajos en interiores.", "Hydraulisk beltebor, tilpasset innendørsarbeid."),
     bullets: {
       sv: ["Motoreffekt 33-55 kW", "Matningskraft 35 kN", "Slaglängd 1 200-2 200 mm", "Vikt 3 000 + 2 000 kg"],
@@ -137,6 +143,7 @@ const PAGE = {
   },
 };
 
+const PIC = L("bild", "picture", "imagen", "bilde");
 const i18n = {};
 for (const l of LANGS) {
   const p = PAGE[l];
@@ -148,7 +155,10 @@ for (const l of LANGS) {
     it.bullets = m.bullets[l];
     if (m.out) it.out = true;
     if (m.options) it.options = m.options;
-    if (m.photos) it.photos = m.photos.map(([src, alt]) => ({ src, alt: alt[l] }));
+    // the gallery: own photos of the rental unit first, then pictures of the model from its product page (checked: no people)
+    const gal = (m.photos || []).map(([src, alt]) => ({ src, alt: alt[l], own: true }));
+    (m.pics || []).forEach((src) => gal.push({ src, alt: `${m.title}, ${PIC[l]} ${gal.length + 1}` }));
+    if (gal.length) it.photos = gal;
     return it;
   });
   i18n[l] = {
@@ -159,7 +169,23 @@ for (const l of LANGS) {
 
 const page = {
   path: "/hyrespark", updated: new Date().toISOString().slice(0, 10), template: "page", order: 2.5, published: true,
-  hideIn: ["lt", "lv", "et", "ru"], i18n,
+  hideIn: ["lt", "lv", "et", "ru"], noMenu: true, i18n,
 };
 fs.writeFileSync(OUT, JSON.stringify(page, null, 2) + "\n");
 console.log("wrote", path.relative(ROOT, OUT));
+
+// one page per machine: /hyrespark/<id> (block "rentitem" shows that machine from the list above, so its texts live in one place)
+const DIR = path.join(ROOT, "content/pages/hyrespark");
+fs.mkdirSync(DIR, { recursive: true });
+for (const f of fs.readdirSync(DIR)) if (f.endsWith(".json") && !MACHINES.some((m) => m.id + ".json" === f)) fs.unlinkSync(path.join(DIR, f));
+MACHINES.forEach((m, n) => {
+  const tr = {};
+  for (const l of LANGS) {
+    let desc = `${m.text[l]} ${m.bullets[l].slice(0, 3).join(", ")}.`.replace(/\s+/g, " ");
+    if (desc.length > 158) desc = desc.slice(0, desc.lastIndexOf(" ", 150)).replace(/[,.]$/, "") + ".";
+    tr[l] = { title: m.title, h1: m.title, description: desc, blocks: [{ type: "rentitem", id: m.id }] };
+  }
+  const p = { path: "/hyrespark/" + m.id, updated: page.updated, template: "page", order: n + 1, published: true, i18n: tr };
+  fs.writeFileSync(path.join(DIR, m.id + ".json"), JSON.stringify(p, null, 2) + "\n");
+});
+console.log("wrote", MACHINES.length, "machine pages");

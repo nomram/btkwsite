@@ -1,0 +1,53 @@
+{
+  "path": "/hyrespark/vd100",
+  "updated": "2026-11-27",
+  "template": "page",
+  "order": 3,
+  "published": true,
+  "i18n": {
+    "sv": {
+      "title": "VibroDrill VD100",
+      "h1": "VibroDrill VD100",
+      "description": "Rotation med kontrollerad vibration för mikropålar och självborrande stag i svåra jordlager. Borrdjup ner till 80 m, Vridmoment max 15 kNm, Dragkraft.",
+      "blocks": [
+        {
+          "type": "rentitem",
+          "id": "vd100"
+        }
+      ]
+    },
+    "en": {
+      "title": "VibroDrill VD100",
+      "h1": "VibroDrill VD100",
+      "description": "Rotation with controlled vibration for micropiles and self-drilling anchors in difficult soils. Drilling depth down to 80 m, Torque max 15 kNm, Pull.",
+      "blocks": [
+        {
+          "type": "rentitem",
+          "id": "vd100"
+        }
+      ]
+    },
+    "es": {
+      "title": "VibroDrill VD100",
+      "h1": "VibroDrill VD100",
+      "description": "Rotación con vibración controlada para micropilotes y anclajes autoperforantes en suelos difíciles. Profundidad hasta 80 m, Par máx. 15 kNm, Fuerza de.",
+      "blocks": [
+        {
+          "type": "rentitem",
+          "id": "vd100"
+        }
+      ]
+    },
+    "no": {
+      "title": "VibroDrill VD100",
+      "h1": "VibroDrill VD100",
+      "description": "Rotasjon med kontrollert vibrasjon for mikropeler og selvborende stag i vanskelige jordlag. Boredybde ned til 80 m, Dreiemoment maks 15 kNm, Trekkraft.",
+      "blocks": [
+        {
+          "type": "rentitem",
+          "id": "vd100"
+        }
+      ]
+    }
+  }
+}
